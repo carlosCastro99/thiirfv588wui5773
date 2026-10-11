@@ -18,7 +18,7 @@
 :root{
   --bg:#EDF1F6; --paper:#FBFCFE; --grid:#E0E7F1; --ink:#1B2433; --muted:#5E6A7D; --line:#D3DBE6;
   --pen:#1F5FD1; --pen-ink:#FFFFFF; --red:#D64533; --hl:rgba(255,206,40,.55); --ok:#138A5E; --flame:#E08A00;
-  --t-elec:#B57E00; --t-tron:#12805C; --t-mech:#C2410C; --t-sci:#6D3FC4; --t-ai:#C0267A; --t-hist:#8A5A2B; --t-world:#00838F; --t-eng:#3F3FB5;
+  --t-elec:#B57E00; --t-tron:#12805C; --t-mech:#C2410C; --t-sci:#6D3FC4; --t-ai:#C0267A; --t-hist:#8A5A2B; --t-world:#00838F; --t-eng:#3F3FB5; --t-gen:#4D7C0F; --t-corp:#475569;
   --f-display:"Archivo","Avenir Next","Segoe UI",system-ui,sans-serif;
   --f-hand:"Caveat","Bradley Hand","Segoe Print","Comic Sans MS",cursive;
   --f-ui:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -28,11 +28,11 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0A1424; --paper:#0F2139; --grid:#183052; --ink:#E4ECF7; --muted:#93A4BD; --line:#22395A;
   --pen:#7DB3FF; --pen-ink:#0A1424; --red:#FF8B78; --hl:rgba(255,206,40,.28); --ok:#4FD39A; --flame:#F5B53A;
-  --t-elec:#F2C14E; --t-tron:#5CD6A6; --t-mech:#FB8B5B; --t-sci:#B79BFF; --t-ai:#F78DC2; --t-hist:#E0AE78; --t-world:#4DD0E1; --t-eng:#A9A9FF; color-scheme:dark}}
+  --t-elec:#F2C14E; --t-tron:#5CD6A6; --t-mech:#FB8B5B; --t-sci:#B79BFF; --t-ai:#F78DC2; --t-hist:#E0AE78; --t-world:#4DD0E1; --t-eng:#A9A9FF; --t-gen:#A3D95B; --t-corp:#A9B8CC; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0A1424; --paper:#0F2139; --grid:#183052; --ink:#E4ECF7; --muted:#93A4BD; --line:#22395A;
   --pen:#7DB3FF; --pen-ink:#0A1424; --red:#FF8B78; --hl:rgba(255,206,40,.28); --ok:#4FD39A; --flame:#F5B53A;
-  --t-elec:#F2C14E; --t-tron:#5CD6A6; --t-mech:#FB8B5B; --t-sci:#B79BFF; --t-ai:#F78DC2; --t-hist:#E0AE78; --t-world:#4DD0E1; --t-eng:#A9A9FF; color-scheme:dark}
+  --t-elec:#F2C14E; --t-tron:#5CD6A6; --t-mech:#FB8B5B; --t-sci:#B79BFF; --t-ai:#F78DC2; --t-hist:#E0AE78; --t-world:#4DD0E1; --t-eng:#A9A9FF; --t-gen:#A3D95B; --t-corp:#A9B8CC; color-scheme:dark}
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15.5px;line-height:1.5;-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
@@ -64,7 +64,7 @@ p{margin:0}
 .pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:650;border:1px solid var(--line)}
 .pill.on{color:var(--ok);border-color:var(--ok)} .pill.off{color:var(--red);border-color:var(--red)}
 [data-t]{--topic:var(--pen)}
-[data-t="elec"]{--topic:var(--t-elec)}[data-t="tron"]{--topic:var(--t-tron)}[data-t="mech"]{--topic:var(--t-mech)}[data-t="sci"]{--topic:var(--t-sci)}[data-t="ai"]{--topic:var(--t-ai)}[data-t="hist"]{--topic:var(--t-hist)}[data-t="world"]{--topic:var(--t-world)}[data-t="eng"]{--topic:var(--t-eng)}
+[data-t="elec"]{--topic:var(--t-elec)}[data-t="tron"]{--topic:var(--t-tron)}[data-t="mech"]{--topic:var(--t-mech)}[data-t="sci"]{--topic:var(--t-sci)}[data-t="ai"]{--topic:var(--t-ai)}[data-t="hist"]{--topic:var(--t-hist)}[data-t="world"]{--topic:var(--t-world)}[data-t="eng"]{--topic:var(--t-eng)}[data-t="gen"]{--topic:var(--t-gen)}[data-t="corp"]{--topic:var(--t-corp)}
 .tlabel{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--topic)}
 .tdot{width:8px;height:8px;border-radius:2px;background:var(--topic);flex:none;transform:rotate(45deg)}
 .bar{display:block;height:6px;border-radius:9px;background:var(--line);overflow:hidden}
@@ -250,9 +250,9 @@ p{margin:0}
 
 <script>
 "use strict";
-const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 2, "lessons": 20, "cards": 200, "quiz": 62, "kb": 111}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 2, "lessons": 20, "cards": 200, "quiz": 69, "kb": 126}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 2, "lessons": 20, "cards": 200, "quiz": 65, "kb": 105}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 97}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}];
+const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 2, "lessons": 20, "cards": 200, "quiz": 62, "kb": 111}, {"id": "genai", "topic": "gen", "title": "Generative AI", "blurb": "How models that write, draw and talk work, and how to use them well.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 88}, {"id": "corpai", "topic": "corp", "title": "Corporate AI", "blurb": "Bringing AI into a company: use cases, architecture, governance and value.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 84}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 2, "lessons": 20, "cards": 200, "quiz": 69, "kb": 126}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 2, "lessons": 20, "cards": 200, "quiz": 65, "kb": 105}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 97}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}];
 const BUNDLE={};
-const TOPICS={ai:"AI",eng:"English",elec:"Electricity",tron:"Electronics",mech:"Engineering",sci:"Physics",hist:"History",world:"World"};
+const TOPICS={ai:"AI",gen:"Generative AI",corp:"Corporate AI",eng:"English",elec:"Electricity",tron:"Electronics",mech:"Engineering",sci:"Physics",hist:"History",world:"World"};
 const TYPES={concept:"Concept",formula:"Formula",fact:"Fact",example:"Worked example",widget:"Try it",quiz:"Quiz"};
 
 /* ---------- storage ---------- */

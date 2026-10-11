@@ -1,6 +1,6 @@
 # Spark Notebook
 
-Offline-first, illustrated learning app (science, engineering, electricity, electronics). No accounts, no server code. Everything (progress, quiz history, saved cards, downloaded topics) is stored on the device.
+Offline-first, illustrated learning app: 18 topics (AI, Generative AI, Corporate AI, English, Electricity, Electronics, Engineering, Physics, Space, Maths & Logic, Human Body, Nature, Psychology, Philosophy, Money, History, World, Art & Culture), plus a TikTok-style **Feed** tab: swipe up through cards and quick questions, double-tap to save, filter by category; "For you" learns which topics you linger on. No accounts, no server code. Everything (progress, quiz history, saved cards, downloaded topics) is stored on the device.
 
 ## Files
 - `index.html` – the whole app
@@ -28,7 +28,7 @@ Copy any file in `packs/`, change `id`, `topic`, `title` and the ideas, then eit
 - add it to `catalog.json` on your server so it appears in Library, or
 - in the app, **Learn → Import topic file**.
 
-Topic keys: `elec`, `tron`, `mech`, `sci`. Sketches are inline SVG; use the classes `s` (ink), `a` (blue pen), `r` (red pen), `y` (highlighter), `bgf` (paper fill) so they follow light and dark mode.
+Topic keys: `ai`, `gen`, `corp`, `eng`, `elec`, `tron`, `mech`, `sci`, `space`, `math`, `body`, `nature`, `psy`, `phil`, `money`, `hist`, `world`, `art`. Sketches are inline SVG; use the classes `s` (ink), `a` (blue pen), `r` (red pen), `y` (highlighter), `bgf` (paper fill) so they follow light and dark mode.
 
 ## Keeping your history safe
 **You → Save backup file** writes everything to one JSON file; **Restore from file** brings it back on any device. Installing to the home screen also stops iOS from clearing site data after a week of no use.

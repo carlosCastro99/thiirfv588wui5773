@@ -153,6 +153,35 @@ p{margin:0}
 .tabs button svg{width:22px;height:22px}
 .tabs button[aria-current="page"]{color:var(--pen)}
 
+
+/* deep dive sheet */
+.deep{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);animation:dIn .22s ease}
+@keyframes dIn{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+.dtop{max-width:640px;width:100%;margin:0 auto;padding:10px 16px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dscroll{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:4px 16px 28px}
+.dcard{max-width:600px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--topic);border-radius:22px;padding:20px 20px 24px;display:flex;flex-direction:column;gap:14px}
+.dcard>*{flex-shrink:0}
+.dcard h2{font-size:26px;line-height:1.15}
+.dcard h3{font-family:var(--f-display);font-size:18px;margin-top:6px;color:var(--topic)}
+.dcard p,.dcard li{font-size:16.5px;line-height:1.62}
+.dcard ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.dlead{background:color-mix(in srgb,var(--topic) 8%,transparent);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.dlead .eyebrow,.dsec{color:var(--topic)}
+.dsec{font-family:var(--f-mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;display:flex;align-items:center;gap:8px;margin-top:4px}
+.dsec::after{content:"";flex:1;height:1px;background:var(--line)}
+.dkey{border-left:4px solid var(--topic);padding:8px 12px;background:color-mix(in srgb,var(--topic) 7%,transparent);border-radius:0 12px 12px 0;font-size:16.5px;line-height:1.55}
+.dkey b,.dfact b{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px;color:var(--topic)}
+.dmyth{display:grid;gap:6px;border:1.5px solid var(--line);border-radius:14px;padding:10px 12px}
+.dmyth div{display:flex;gap:8px;align-items:baseline;font-size:16px;line-height:1.5}
+.dmyth i{font-style:normal;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;padding:2px 6px;border-radius:5px;flex:none}
+.dmyth .m i{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)} .dmyth .m span{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--red) 60%,transparent);color:var(--muted)}
+.dmyth .t i{background:color-mix(in srgb,var(--pen) 16%,transparent);color:var(--pen)}
+.dfact{border:1.5px dashed var(--topic);border-radius:14px;padding:10px 12px;font-size:16px;line-height:1.55}
+.dfoot{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.deepbtn{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--topic);color:var(--topic);background:color-mix(in srgb,var(--topic) 8%,transparent);border-radius:999px;padding:9px 16px;font-weight:700;font-size:15px}
+.deepbtn svg{width:18px;height:18px}
+.fbtn.deepf svg{border-color:var(--topic);color:var(--topic);background:color-mix(in srgb,var(--topic) 10%,var(--paper))}
+.fbtn.deepf span{color:var(--topic)}
 /* reader */
 .reader{position:fixed;inset:0;z-index:40;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 .rtop{max-width:600px;width:100%;margin:0 auto;padding:10px 16px 8px;display:flex;flex-direction:column;gap:10px}
@@ -276,12 +305,13 @@ body.feedmode{overflow:hidden}
 <div id="feed" class="feed" hidden></div>
 <div class="tabs"><nav id="tabs" aria-label="Main"></nav></div>
 <div id="reader" class="reader" hidden></div>
+<div id="deep" class="deep" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 <input type="file" id="filein" accept=".json,application/json" hidden>
 
 <script>
 "use strict";
-const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 2, "lessons": 20, "cards": 200, "quiz": 62, "kb": 111}, {"id": "genai", "topic": "gen", "title": "Generative AI", "blurb": "How models that write, draw and talk work, and how to use them well.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 88}, {"id": "corpai", "topic": "corp", "title": "Corporate AI", "blurb": "Bringing AI into a company: use cases, architecture, governance and value.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 84}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 2, "lessons": 20, "cards": 200, "quiz": 69, "kb": 126}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 2, "lessons": 20, "cards": 200, "quiz": 65, "kb": 105}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 97}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "space", "topic": "space", "title": "Space", "blurb": "Planets, stars, galaxies and the search for life.", "version": 3, "lessons": 20, "cards": 200, "quiz": 46, "kb": 82}, {"id": "maths", "topic": "math", "title": "Maths & Logic", "blurb": "Numbers, chance, shapes, statistics and clear thinking.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "body", "topic": "body", "title": "Human Body", "blurb": "How your heart, brain, gut, immune system and senses work.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 76}, {"id": "nature", "topic": "nature", "title": "Nature & Animals", "blurb": "Evolution, amazing animals, plants, ecosystems and climate.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "psychology", "topic": "psy", "title": "Psychology", "blurb": "Biases, memory, habits, social influence and emotions.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "philosophy", "topic": "phil", "title": "Philosophy", "blurb": "Big questions, ethics, the mind, ways to live and good arguments.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 77}, {"id": "money", "topic": "money", "title": "Money", "blurb": "How money works, budgeting, compound interest and investing basics.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 81}, {"id": "art", "topic": "art", "title": "Art & Culture", "blurb": "Painting, music, literature, cinema and architecture.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 76}];
+const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 2, "lessons": 20, "cards": 200, "quiz": 62, "kb": 111}, {"id": "genai", "topic": "gen", "title": "Generative AI", "blurb": "How models that write, draw and talk work, and how to use them well.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 88}, {"id": "corpai", "topic": "corp", "title": "Corporate AI", "blurb": "Bringing AI into a company: use cases, architecture, governance and value.", "version": 2, "lessons": 20, "cards": 200, "quiz": 60, "kb": 84}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 2, "lessons": 20, "cards": 200, "quiz": 69, "kb": 126}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 2, "lessons": 20, "cards": 200, "quiz": 65, "kb": 105}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 97}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 102}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 2, "lessons": 20, "cards": 200, "quiz": 64, "kb": 108}, {"id": "space", "topic": "space", "title": "Space", "blurb": "Planets, stars, galaxies and the search for life.", "version": 4, "lessons": 20, "cards": 200, "quiz": 46, "kb": 100}, {"id": "maths", "topic": "math", "title": "Maths & Logic", "blurb": "Numbers, chance, shapes, statistics and clear thinking.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "body", "topic": "body", "title": "Human Body", "blurb": "How your heart, brain, gut, immune system and senses work.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 76}, {"id": "nature", "topic": "nature", "title": "Nature & Animals", "blurb": "Evolution, amazing animals, plants, ecosystems and climate.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "psychology", "topic": "psy", "title": "Psychology", "blurb": "Biases, memory, habits, social influence and emotions.", "version": 3, "lessons": 20, "cards": 200, "quiz": 45, "kb": 78}, {"id": "philosophy", "topic": "phil", "title": "Philosophy", "blurb": "Big questions, ethics, the mind, ways to live and good arguments.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 77}, {"id": "money", "topic": "money", "title": "Money", "blurb": "How money works, budgeting, compound interest and investing basics.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 81}, {"id": "art", "topic": "art", "title": "Art & Culture", "blurb": "Painting, music, literature, cinema and architecture.", "version": 3, "lessons": 20, "cards": 200, "quiz": 44, "kb": 76}];
 const BUNDLE={};
 const TOPICS={ai:"AI",gen:"Generative AI",corp:"Corporate AI",eng:"English",elec:"Electricity",tron:"Electronics",mech:"Engineering",sci:"Physics",space:"Space",math:"Maths & Logic",body:"Human Body",nature:"Nature",psy:"Psychology",phil:"Philosophy",money:"Money",hist:"History",world:"World",art:"Art & Culture"};
 const TYPES={concept:"Concept",formula:"Formula",fact:"Fact",example:"Worked example",widget:"Try it",quiz:"Quiz"};
@@ -342,7 +372,7 @@ const canSpeak="speechSynthesis" in window;
 function speak(text){if(!canSpeak)return toast("Listening isn't available on this device");try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";u.rate=.9;const vs=speechSynthesis.getVoices();const v=vs.find(v=>/^en[-_]GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){toast("Listening isn't available on this device")}}
 const dueReview=()=>Object.entries(S.review).filter(([id,t])=>t<=Date.now()&&QUIZ[id]).map(([id])=>id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const md=t=>esc(t).replace(/\*([^*\n]+)\*/g,"<em>$1</em>");
+const md=t=>esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>").replace(/\*([^*\n]+)\*/g,"<em>$1</em>");
 function fmt(text){
   return String(text||"").split(/\n\n+/).map(par=>{const lines=par.split("\n");
     if(lines.some(l=>l.startsWith("• "))){const head=lines.filter(l=>!l.startsWith("• ")),items=lines.filter(l=>l.startsWith("• "));
@@ -478,7 +508,7 @@ const FEED=(()=>{
       <div class="text ftext">${fmt(full?short(c.text):c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}
       ${full?`<button class="link fmore" data-fmore="${c.id}">Read more</button>`:""}
       <span class="fsrc">Lesson: ${esc(L.title)}</span></div>
-      <div class="frail"><button class="fbtn ${on?"on":""}" data-ffav="${c.id}" aria-label="${on?"Remove from favourites":"Add to favourites"}">${I.star}<span>${on?"Saved":"Save"}</span></button>
+      <div class="frail">${c.deep?`<button class="fbtn deepf" data-deep="${c.id}" aria-label="Go deeper">${I.deep}<span>Deeper</span></button>`:""}<button class="fbtn ${on?"on":""}" data-ffav="${c.id}" aria-label="${on?"Remove from favourites":"Add to favourites"}">${I.star}<span>${on?"Saved":"Save"}</span></button>
       ${canSpeak&&c.say?`<button class="fbtn" data-fsay="${c.id}" aria-label="Listen">${I.sound}<span>Listen</span></button>`:""}
       <button class="fbtn" data-flesson="${c.id}" aria-label="Open the lesson">${I.learn}<span>Lesson</span></button>
       <button class="fbtn" data-fshare="${c.id}" aria-label="Share">${I.share}<span>Share</span></button></div>
@@ -536,10 +566,37 @@ const FEED=(()=>{
 })();
 
 function sketch(c,extra=""){if(!c)return "";if(c.sketch)return `<div class="sk paper" ${extra}>${c.sketch}</div>`;if(c.viz){const g=VZ(c.viz);return g?`<div class="sk paper" ${extra}>${g}</div>`:""}return ""}
+/* ---------- deep dive ---------- */
+const dEl=()=>document.getElementById("deep");
+function deepBlock(b){switch(b.t){
+  case "p":return `<p>${md(b.x)}</p>`;
+  case "ul":return `<ul>${b.x.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`;
+  case "h":return `<h3>${esc(b.x)}</h3>`;
+  case "viz":{const g=VZ(b.v);return g?`<div class="sk paper">${g}</div>`:""}
+  case "key":return `<div class="dkey"><b>Key idea</b>${md(b.x)}</div>`;
+  case "myth":return `<div class="dmyth"><div class="m"><i>Myth</i><span>${md(b.w)}</span></div><div class="t"><i>Reality</i><span>${md(b.r)}</span></div></div>`;
+  case "fact":return `<div class="dfact"><b>Did you know?</b>${md(b.x)}</div>`;
+  case "ex":return `<div class="ex"><span class="eyebrow">Worked example</span>${b.x.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`;
+  case "f":return `<div class="formula">${esc(b.x)}</div>`;
+  default:return ""}}
+function openDeep(id){const c=CARDS[id];if(!c||!c.deep)return;const el=dEl(),L=LESSONS[c.lesson],on=S.saved.includes(id);el.dataset.t=c.topic;
+  el.innerHTML=`<div class="dtop"><button class="iconbtn" data-dclose aria-label="Close">${I.close}</button><span class="eyebrow" style="text-align:center;min-width:0">Deep dive · ${esc(TOPICS[c.topic])}</span><span style="width:44px"></span></div>
+  <div class="dscroll"><article class="dcard"><span class="ctype">${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}
+  <div class="dlead"><span class="eyebrow">In short</span>${fmt(c.text)}</div><span class="dsec">In depth</span>${c.deep.map(deepBlock).join("")}
+  <div class="dfoot"><button class="btn ghost" data-dsave="${id}">${on?"★ Saved":"☆ Save card"}</button>${canSpeak&&c.say?`<button class="btn ghost" data-dsay="${id}">Listen</button>`:""}<button class="btn" data-dclose>Back</button></div>
+  <span class="muted sm">Lesson: ${esc(L.title)}</span></article></div>`;
+  el.hidden=false;el.querySelector(".dscroll").scrollTop=0;markRead(id);S.deepRead=S.deepRead||{};S.deepRead[id]=Date.now();save()}
+function closeDeep(){const el=dEl();if(el)el.hidden=true}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-deep],[data-dclose],[data-dsave],[data-dsay]");if(!t)return;const d=t.dataset;
+  if(d.deep){e.stopPropagation();return openDeep(d.deep)}
+  if("dclose" in d)return closeDeep();
+  if(d.dsave){const on=toggleFav(d.dsave,"c");t.textContent=on?"★ Saved":"☆ Save card";return}
+  if(d.dsay)return speak(CARDS[d.dsay].say)},true);
 function thumb(c){if(c.sketch||c.viz)return sketch(c);const w=WSK[c.widget];return w?`<div class="sk paper">${w}</div>`:`<div class="thumbph paper" data-t="${c.topic}">${esc(TYPES[c.type])}</div>`}
 
 /* ---------- icons ---------- */
 const I={
+ deep:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>',
  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>',
  learn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M8 7h7M8 11h5"/></svg>',
  feed:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>',
@@ -816,7 +873,7 @@ function drawReader(){
   let inner;
   if(it.k==="c"){
     const c=CARDS[it.id];markRead(c.id);
-    inner=`<span class="ctype">${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}${c.formula?`<div class="formula"${c.formula.length>16?' style="font-size:21px"':""}>${esc(c.formula)}</div>`:""}${c.type==="widget"?widgetHTML(c):""}<div class="text">${fmt(c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}`;
+    inner=`<span class="ctype">${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}${c.formula?`<div class="formula"${c.formula.length>16?' style="font-size:21px"':""}>${esc(c.formula)}</div>`:""}${c.type==="widget"?widgetHTML(c):""}<div class="text">${fmt(c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}${c.deep?`<button class="deepbtn" data-deep="${c.id}">${I.deep}Go deeper</button>`:""}`;
   }else{
     const q=QUIZ[it.id],a=R.ans[it.id],answered=a!==undefined;
     inner=`<span class="ctype">${R.mode==="review"?"Review":"Quiz"}</span><h2>${esc(q.q)}</h2><div class="opts">${q.options.map((o,k)=>`<button class="opt ${answered?(k===q.answer?"right":k===a?"wrong":""):""}" data-ans="${k}" ${answered?"disabled":""}><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div>
@@ -843,7 +900,7 @@ rEl.addEventListener("click",e=>{
     if(ok)delete S.review[id];else{const t=new Date();t.setHours(24,0,0,0);S.review[id]=R.mode==="review"?t.getTime():t.getTime()}
     markRead(id,false);drawReader()}
 });
-document.addEventListener("keydown",e=>{if((!R||rEl.hidden)&&view.tab==="feed"&&!e.target.matches("input")){if(e.key==="ArrowDown"||e.key==="j"){e.preventDefault();FEED.next(1)}else if(e.key==="ArrowUp"||e.key==="k"){e.preventDefault();FEED.next(-1)}return}if(!R||rEl.hidden)return;if(e.target.matches("input"))return;
+document.addEventListener("keydown",e=>{const de=document.getElementById("deep");if(de&&!de.hidden){if(e.key==="Escape")closeDeep();return}if((!R||rEl.hidden)&&view.tab==="feed"&&!e.target.matches("input")){if(e.key==="ArrowDown"||e.key==="j"){e.preventDefault();FEED.next(1)}else if(e.key==="ArrowUp"||e.key==="k"){e.preventDefault();FEED.next(-1)}return}if(!R||rEl.hidden)return;if(e.target.matches("input"))return;
   if(e.key==="ArrowRight"){e.preventDefault();step(1)}else if(e.key==="ArrowLeft")step(-1);else if(e.key==="Escape")closeReader();
   else if(/^[1-4]$/.test(e.key)){const b=rEl.querySelector(`[data-ans="${+e.key-1}"]:not(:disabled)`);b&&b.click()}});
 function swipe(card){

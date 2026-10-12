@@ -1,0 +1,2394 @@
+// Deep dives for pack 'electricity' (exported from packs/electricity.json)
+
+== el-basics
+
+# Electricity is moving charge
+Electric current is a flow of electric charge. In metal wires, the charges that move are electrons, which are loosely bound to their atoms and can drift through the metal lattice.
+@viz {"k": "flow", "steps": ["Battery pushes electrons", "Electrons drift through wire", "Push travels almost instantly", "Lamp lights at once"]}
+### Slow electrons, fast signal
+Each electron drifts surprisingly slowly: in a household wire carrying a few amps, its average drift is well under a millimetre per second. But the "push" travels along the wire at a large fraction of the speed of light, because the wire is already full of electrons, like a hose already full of water.
+@viz {"k": "nums", "items": [{"v": "~0.1 mm/s", "l": "typical electron drift speed"}, {"v": "~2/3 of light speed", "l": "how fast the signal travels in a cable"}, {"v": "6.24 × 10^18", "l": "electrons per second in 1 amp"}]}
+### Conventional current
+@viz {"k": "cmp", "l": {"t": "Conventional current", "items": ["drawn from + to −", "used on all diagrams"]}, "r": {"t": "Electron flow", "items": ["actually − to +", "electrons are negative"]}}
+Benjamin Franklin labelled charges "positive" and "negative" in the 1740s, before electrons were discovered in 1897. His guess about direction stuck.
+> Current is charge on the move; the push is fast even when the charges are slow.
+
+# The water analogy
+Electricity is invisible, so a water system makes a handy mental model. It isn't perfect, but it captures the key relationships.
+@viz {"k": "pairs", "items": [{"a": "Voltage", "b": "water pressure"}, {"a": "Current", "b": "flow rate"}, {"a": "Resistance", "b": "narrow pipe"}, {"a": "Battery", "b": "pump"}, {"a": "Switch", "b": "valve"}, {"a": "Wire", "b": "wide pipe"}]}
+### What it explains well
+• More pressure (voltage) pushes more flow (current)
+• A narrower pipe (more resistance) reduces flow
+• Flow is the same everywhere in a single pipe loop, just as current is the same everywhere in a series circuit
+### Where it breaks down
+@viz {"k": "list", "items": ["No leaks from open ends", "Wires don't empty", "Magnetic effects", "Alternating current"]}
+An open switch doesn't spill electricity on the floor, and AC has no simple water equivalent.
+### Units
+@viz {"k": "pairs", "items": [{"a": "volt (V)", "b": "pressure"}, {"a": "amp (A)", "b": "flow"}, {"a": "ohm (Ω)", "b": "restriction"}, {"a": "watt (W)", "b": "rate of work"}]}
+> Voltage pushes, current flows, resistance restricts.
+
+# Ohm's law
+Georg Ohm published his law in 1827: in many materials, current is proportional to voltage. The ratio between them is the resistance.
+@viz {"k": "terms", "f": "V = I × R", "items": [{"s": "V", "m": "voltage in volts"}, {"s": "I", "m": "current in amps"}, {"s": "R", "m": "resistance in ohms"}]}
+### The triangle
+@viz {"k": "pairs", "items": [{"a": "V", "b": "I × R"}, {"a": "I", "b": "V ÷ R"}, {"a": "R", "b": "V ÷ I"}]}
+### Worked examples
+ex: A 230 V kettle element of 24 Ω | I = 230 ÷ 24 | ≈ 9.6 A
+ex: A LED resistor: 5 V supply, 3 V LED, 20 mA wanted | R = (5 − 3) ÷ 0.02 | = 100 Ω
+### Where it doesn't apply
+Ohm's law holds for metals and resistors at constant temperature. Diodes, LEDs and transistors are "non-ohmic": their current doesn't rise in proportion to voltage. A lamp filament's resistance also rises as it heats up.
+> Know any two of V, I and R, and you can find the third.
+
+# Try it: dim the bulb
+The simulator shows how voltage and resistance together set the current, and how the current turns into power in the bulb.
+@viz {"k": "terms", "f": "P = V × I = I² × R = V² ÷ R", "items": [{"s": "P", "m": "power in watts"}, {"s": "V", "m": "volts"}, {"s": "I", "m": "amps"}, {"s": "R", "m": "ohms"}]}
+### What to try
+• Double the voltage with the same resistance: current doubles and power quadruples
+• Double the resistance with the same voltage: current and power halve
+• Find the setting where the bulb glows brightly without "burning out"
+### Why power rises so fast
+@viz {"k": "bars", "unit": "power in a 10 Ω bulb, W", "items": [{"l": "5 V", "v": 2.5}, {"l": "10 V", "v": 10.0}, {"l": "15 V", "v": 22.5}, {"l": "20 V", "v": 40.0, "hi": true}]}
+Power grows with the square of voltage, which is why a small overvoltage can quickly burn out a component.
+### Dimmers
+Real dimmers don't add a resistor (that would waste energy as heat). They switch the power on and off very fast, or control LED drivers electronically.
+> Power rises with the square of voltage or current.
+
+# It's the current that hurts
+The danger of electric shock depends on the current flowing through the body, its path and how long it lasts. Voltage matters because it drives that current through your body's resistance.
+@viz {"k": "bars", "unit": "effect of current through the body, mA (approx.)", "items": [{"l": "Tingle", "v": 1.0}, {"l": "Can't let go", "v": 10.0}, {"l": "RCD trips", "v": 30.0}, {"l": "Fibrillation", "v": 75.0, "hi": true}]}
+### Your body's resistance
+@viz {"k": "pairs", "items": [{"a": "Dry skin", "b": "thousands of ohms or more"}, {"a": "Wet or broken skin", "b": "can drop below 1,000 Ω"}, {"a": "Inside the body", "b": "roughly 500–1,000 Ω"}]}
+ex: 230 V across wet hands, about 1,000 Ω | I = 230 ÷ 1,000 | ≈ 230 mA: potentially lethal
+### Path and time
+• Hand to hand or hand to foot crosses the chest and heart
+• Longer exposure greatly increases harm, which is why speed of disconnection matters
+• Alternating current at 50 Hz is especially good at triggering heart fibrillation
+### RCD protection
+A 30 mA RCD must trip within 300 milliseconds at its rated current, and much faster at higher leakage. It limits both current and time.
+!! Low voltage means safe => around 50 V AC can be dangerous in wet conditions; that's why bathrooms and pools use even lower "safety extra-low voltage"
+
+# Conductors and insulators
+Materials differ enormously in how easily current flows through them. The difference comes from how tightly electrons are bound to atoms.
+@viz {"k": "cmp", "l": {"t": "Conductors", "items": ["copper", "aluminium", "silver", "gold", "free electrons"]}, "r": {"t": "Insulators", "items": ["plastic", "rubber", "glass", "dry wood", "bound electrons"]}}
+### Best conductors
+@viz {"k": "bars", "unit": "resistivity, nΩ·m (lower is better)", "items": [{"l": "Silver", "v": 15.9, "hi": true}, {"l": "Copper", "v": 16.8}, {"l": "Gold", "v": 24.4}, {"l": "Aluminium", "v": 26.5}, {"l": "Iron", "v": 97.0}]}
+### Why copper?
+Silver conducts slightly better but costs far more. Copper is the best balance of conductivity, cost, flexibility and corrosion resistance. Aluminium is lighter and cheaper, so overhead power lines use it.
+### In between
+@viz {"k": "list", "items": ["Semiconductors: silicon", "Water with salts: conducts", "Human body: conducts", "Carbon: graphite conducts"]}
+### Superconductors
+Some materials, cooled to very low temperatures, conduct with zero resistance. MRI scanners use superconducting coils cooled by liquid helium.
+> Pure water is a poor conductor; the dissolved salts in real water make it dangerous.
+
+# Resistance of a wire
+A wire's resistance depends on its material, length and cross-section. Longer wires resist more; thicker wires resist less.
+@viz {"k": "terms", "f": "R = ρ × L ÷ A", "items": [{"s": "ρ", "m": "resistivity of the material"}, {"s": "L", "m": "length"}, {"s": "A", "m": "cross-sectional area"}]}
+### Example
+ex: 50 m of 2.5 mm² copper (25 m there and back) | R = 1.68×10⁻⁸ × 50 ÷ 2.5×10⁻⁶ | ≈ 0.34 Ω
+At 16 A, that's a voltage drop of about 5.4 V, around 2% of 230 V.
+### Why it matters
+• Voltage drop: long runs deliver less voltage at the far end
+• Heat: current through resistance produces heat (P = I²R)
+• Wiring rules limit voltage drop, typically to a few percent
+### Common sizes in homes
+@viz {"k": "pairs", "items": [{"a": "1.5 mm²", "b": "lighting circuits"}, {"a": "2.5 mm²", "b": "general sockets"}, {"a": "4–6 mm²", "b": "ovens, hobs, water heaters"}, {"a": "10 mm² and up", "b": "main supply and EV chargers"}]}
+### Warm extension leads
+A thin, coiled extension lead powering a heater can overheat: high current, small cross-section, and a coil that traps the heat.
+> Long run or big load? Use a thicker cable.
+
+# Measuring with units
+Electrical quantities span huge ranges, from microamps in sensors to kiloamps in power stations. Metric prefixes keep numbers manageable.
+@viz {"k": "pairs", "items": [{"a": "µ (micro)", "b": "one millionth"}, {"a": "m (milli)", "b": "one thousandth"}, {"a": "k (kilo)", "b": "one thousand"}, {"a": "M (mega)", "b": "one million"}, {"a": "G (giga)", "b": "one billion"}]}
+### Typical values
+@viz {"k": "pairs", "items": [{"a": "Sensor", "b": "about 10 µA"}, {"a": "LED", "b": "about 20 mA"}, {"a": "Kettle", "b": "about 10 A"}, {"a": "Grid line", "b": "1,000 A or more"}]}
+### Real-world voltages
+@viz {"k": "pairs", "items": [{"a": "Phone battery", "b": "about 3.7 V"}, {"a": "USB", "b": "5 V (up to 48 V with fast charging)"}, {"a": "Home", "b": "230 V"}, {"a": "Portuguese transmission grid", "b": "up to 400 kV"}]}
+### Converting
+ex: 2,500 mA | ÷ 1,000 | = 2.5 A
+### Instruments
+A multimeter measures volts, amps and ohms. Voltage is measured across a component; current is measured by putting the meter in the loop.
+> Mind the prefix: a milliamp and a megawatt are worlds apart.
+
+# Short circuits
+A short circuit creates a path with almost no resistance between conductors at different voltages. By Ohm's law, the current becomes enormous.
+@viz {"k": "flow", "steps": ["Insulation damaged", "Live touches neutral", "Resistance tiny", "Current thousands of amps", "Breaker trips in milliseconds"]}
+### How big?
+ex: 230 V across 0.1 Ω of wiring | I = 230 ÷ 0.1 | = 2,300 A
+Home breakers are rated to safely interrupt fault currents of several thousand amps; the "6000" printed on many breakers means 6 kA.
+### Causes
+@viz {"k": "list", "items": ["Damaged insulation", "Nails through cables", "Water ingress", "Loose connections", "Faulty appliances"]}
+### Earth faults
+A live wire touching a metal appliance case is an earth fault. With proper earthing, current flows to earth and the breaker or RCD trips, instead of the case becoming live.
+> Fuses and breakers exist to cut a short circuit before the cable becomes a heater.
+
+# Open and closed circuits
+Current only flows around a complete loop from the source and back. Break the loop anywhere and the current stops everywhere in that loop.
+@viz {"k": "cmp", "l": {"t": "Closed circuit", "items": ["complete loop", "current flows", "lamp on"]}, "r": {"t": "Open circuit", "items": ["gap in loop", "no current", "lamp off"]}}
+### Ways a circuit opens
+@viz {"k": "list", "items": ["Switch turned off", "Blown fuse", "Tripped breaker", "Broken wire", "Loose terminal"]}
+### Troubleshooting
+When something doesn't work, check the loop step by step: supply, protection, switch, wiring, then the device.
+@viz {"k": "flow", "steps": ["Is there power?", "Breaker or fuse OK?", "Switch working?", "Connections tight?", "Device faulty?"]}
+### Safety note
+An open switch on the neutral side would leave a lamp holder live even when "off". That's why switches must break the live conductor.
+> No loop, no current.
+
+== el-home
+
+# Series vs. parallel
+Components can be connected one after another (series) or side by side (parallel). Homes use parallel wiring, but both arrangements appear in electronics.
+@viz {"k": "cmp", "l": {"t": "Series", "items": ["one loop", "same current", "voltage shared", "one break stops all"]}, "r": {"t": "Parallel", "items": ["separate paths", "full voltage each", "independent"]}}
+### Resistances
+@viz {"k": "pairs", "items": [{"a": "Series", "b": "R total = R1 + R2 + …"}, {"a": "Parallel", "b": "1/R total = 1/R1 + 1/R2 + …"}]}
+ex: Two 100 Ω resistors | Series: 200 Ω | Parallel: 50 Ω
+### Christmas lights
+Old strings wired in series went completely dark when one bulb failed. Modern strings use shunts or parallel sections so one failure doesn't kill the rest.
+### Batteries
+• In series, voltages add: two 1.5 V cells give 3 V
+• In parallel, capacity adds at the same voltage
+> Series shares voltage; parallel shares current.
+
+# Your house is wired in parallel
+Every socket and light in your home is connected in parallel between live and neutral, so each gets the full 230 V and works independently.
+@viz {"k": "flow", "steps": ["Supply", "Meter", "Main switch", "Breakers", "Circuits", "Sockets and lights in parallel"]}
+### Colours of the wires
+@viz {"k": "pairs", "items": [{"a": "Brown (or black or grey)", "b": "live (phase)"}, {"a": "Blue", "b": "neutral"}, {"a": "Green-yellow", "b": "protective earth"}]}
+### Total current adds
+ex: Kettle 9.6 A + toaster 4 A + microwave 5 A | = 18.6 A on the circuit | A 16 A breaker may trip
+### Ring and radial circuits
+Portugal and most of Europe use radial circuits: each runs out from the board to its sockets. The UK commonly uses ring circuits, which loop back to the board, with fused plugs.
+> Parallel wiring lets each appliance work alone, but all share the supply.
+
+# Power
+Power is the rate at which energy is converted, measured in watts. For electrical devices, it's voltage times current.
+@viz {"k": "terms", "f": "P = V × I", "items": [{"s": "P", "m": "power in watts"}, {"s": "V", "m": "voltage"}, {"s": "I", "m": "current"}]}
+### Typical appliances
+@viz {"k": "bars", "unit": "power, W", "items": [{"l": "LED bulb", "v": 8.0}, {"l": "Laptop", "v": 60.0}, {"l": "TV", "v": 100.0}, {"l": "Microwave", "v": 1000.0}, {"l": "Kettle", "v": 2200.0, "hi": true}]}
+### Current drawn at 230 V
+@viz {"k": "pairs", "items": [{"a": "LED bulb 8 W", "b": "0.03 A"}, {"a": "Laptop 60 W", "b": "0.26 A"}, {"a": "Kettle 2,200 W", "b": "9.6 A"}, {"a": "Oven 3,500 W", "b": "15 A"}]}
+### Heat appliances are hungry
+Anything that heats (kettle, oven, heater, iron, hair dryer, water heater) draws large currents. Electronics draw little.
+### Watts vs volt-amps
+For motors and some electronics, voltage and current aren't perfectly in step, so "apparent power" (VA) can be higher than real power (W). Contracted power in Portugal is in kVA for this reason.
+> Heating is power-hungry; electronics sip.
+
+# Breakers vs. RCDs
+A home consumer unit has two kinds of protection that do different jobs: breakers protect cables, RCDs protect people.
+@viz {"k": "cmp", "l": {"t": "Breaker (MCB)", "items": ["too much current", "protects cables from overheating"]}, "r": {"t": "RCD", "items": ["current leaking to earth", "protects people from shock"]}}
+### How a breaker works
+@viz {"k": "pairs", "items": [{"a": "Thermal trip", "b": "a bimetal strip bends with sustained overload"}, {"a": "Magnetic trip", "b": "a coil reacts instantly to short circuits"}]}
+### How an RCD works
+It compares current on live and neutral. Normally they're equal. If 30 mA goes missing, it must be leaking somewhere, possibly through a person, so the RCD trips within a fraction of a second.
+### The test button
+@viz {"k": "flow", "steps": ["Press T button monthly or as advised", "RCD should trip", "Reset", "If not: call an electrician"]}
+### In Portugal
+Portuguese rules require 30 mA residual current protection for socket circuits in homes. RCBOs combine breaker and RCD in one device.
+> Breakers save cables; RCDs save lives.
+
+# Reading your bill: kWh
+You pay for energy, not power. Energy is power multiplied by time, measured in kilowatt-hours (kWh).
+@viz {"k": "terms", "f": "E = P × t", "items": [{"s": "E", "m": "energy in kWh"}, {"s": "P", "m": "power in kW"}, {"s": "t", "m": "time in hours"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "2 kW heater for 3 hours", "b": "6 kWh"}, {"a": "10 W LED for 100 hours", "b": "1 kWh"}, {"a": "2.2 kW kettle for 3 minutes", "b": "0.11 kWh"}, {"a": "150 W fridge average for a day", "b": "3.6 kWh"}]}
+### What it costs
+ex: 6 kWh | × €0.20 per kWh (approx.) | = €1.20
+### Your bill in Portugal
+@viz {"k": "list", "items": ["Energy (€/kWh)", "Fixed daily power charge", "Network access", "Taxes and levies", "IVA"]}
+### Time-of-use tariffs
+Bi-hourly and tri-hourly tariffs ("bi-horário", "tri-horário") make night electricity cheaper. Running washing machines, dishwashers and EV charging at night saves money if you choose these tariffs.
+> Watts tell you how fast; kilowatt-hours tell you how much.
+
+# Typical home circuits
+Homes are divided into several circuits, each with its own breaker, so a fault on one doesn't shut down the house and cables are sized for their load.
+@viz {"k": "bars", "unit": "typical breaker rating, A", "items": [{"l": "Lighting", "v": 10.0}, {"l": "Sockets", "v": 16.0}, {"l": "Kitchen sockets", "v": 20.0}, {"l": "Oven", "v": 25.0}, {"l": "Water heater", "v": 20.0}]}
+### Why separate circuits
+• Each cable is sized for its breaker
+• A fault trips only one area
+• Heavy loads don't share with lights
+### A typical Portuguese board
+@viz {"k": "list", "items": ["Main switch", "RCD 30 mA", "Lighting breakers", "Socket breakers", "Dedicated appliance breakers", "Surge protection"]}
+### Labelling
+Each breaker should be labelled. When work is needed, you know which one to switch off, and electricians work faster.
+> One circuit per job keeps faults local.
+
+# Standby power
+Many devices keep drawing power when "off" or in standby: TVs, routers, chargers, set-top boxes, coffee machines. Individually small, together they add up.
+@viz {"k": "terms", "f": "Yearly kWh = watts × 8,760 hours ÷ 1,000", "items": [{"s": "watts", "m": "standby draw"}, {"s": "8,760", "m": "hours in a year"}]}
+### Example
+ex: 30 W of combined standby | × 8,760 h = 263 kWh a year | × €0.20 ≈ €53 a year
+### Typical standby draws
+@viz {"k": "bars", "unit": "standby, W (approx.)", "items": [{"l": "Modern TV", "v": 0.5}, {"l": "Router", "v": 8.0}, {"l": "Set-top box", "v": 10.0}, {"l": "Old charger", "v": 1.0}, {"l": "Coffee machine", "v": 2.0}]}
+### EU rules
+EU ecodesign rules limit standby to 0.5 W for many products, with higher limits for networked devices that must stay connected.
+### Cutting it
+• Switchable power strips for TV and audio
+• Unplug rarely used devices
+• Check settings like "quick start" that keep devices warm
+> The cheapest kilowatt-hour is the one you don't waste in standby.
+
+# Contracted power
+In Portugal, households contract a maximum power with their supplier. If total demand exceeds it, the supply is limited and the main breaker or meter cuts off.
+@viz {"k": "bars", "unit": "contracted power options, kVA (common)", "items": [{"l": "3.45", "v": 3.45}, {"l": "4.6", "v": 4.6}, {"l": "5.75", "v": 5.75}, {"l": "6.9", "v": 6.9, "hi": true}, {"l": "10.35", "v": 10.35}]}
+### Current available
+@viz {"k": "pairs", "items": [{"a": "3.45 kVA", "b": "15 A"}, {"a": "6.9 kVA", "b": "30 A"}, {"a": "10.35 kVA", "b": "45 A"}]}
+### The fixed charge
+Higher contracted power means a higher fixed daily charge, whether you use it or not. Many households overpay by contracting more than they need.
+### Choosing
+@viz {"k": "flow", "steps": ["List appliances used at the same time", "Add their power", "Add a margin", "Choose the next step up"]}
+• Avoid running oven, dishwasher and heaters simultaneously to stay on a lower step
+• An EV charger or heat pump may require a higher level, or three-phase supply
+> Contract for your real peak, not the sum of everything you own.
+
+# Will it trip?
+A worked example shows how quickly appliances add up to your contracted power.
+@viz {"k": "bars", "unit": "power in use, kW", "items": [{"l": "Oven", "v": 2.0}, {"l": "Kettle", "v": 2.2}, {"l": "Washing machine", "v": 2.0}, {"l": "Heater", "v": 2.0}, {"l": "Limit 6.9 kVA", "v": 6.9, "hi": true}]}
+### Adding up
+ex: Oven 2 + kettle 2.2 + washer 2 | = 6.2 kW | Under 6.9 kVA, close to the limit
+ex: Add a 2 kW heater | = 8.2 kW | Over the limit: the main breaker trips
+### kVA vs kW
+For heating appliances, kW and kVA are almost the same. For motors and electronics, the kVA can be a little higher than the kW.
+### Smart habits
+@viz {"k": "list", "items": ["Stagger heavy appliances", "Use timers at night", "Avoid heaters with the oven", "Consider a load manager"]}
+Load managers can automatically pause an EV charger or water heater when other appliances push the total near the limit.
+> If the lights go out when the kettle goes on, look at what else is running.
+
+# Plugs and sockets
+Countries use different plug and socket designs, reflecting history, safety standards and voltage.
+@viz {"k": "cmp", "l": {"t": "Portugal (type F, Schuko)", "items": ["two round pins", "side earth clips", "16 A"]}, "r": {"t": "UK (type G)", "items": ["three rectangular pins", "fuse in plug", "13 A"]}}
+### Common types in Europe
+@viz {"k": "pairs", "items": [{"a": "Type C (Europlug)", "b": "two pins, no earth, small devices"}, {"a": "Type F (Schuko)", "b": "Portugal, Spain, Germany"}, {"a": "Type E", "b": "France, Belgium: earth pin in socket"}, {"a": "Type G", "b": "UK, Ireland, Malta"}]}
+### The UK's fused plug
+Because UK ring circuits can be protected by 32 A breakers, each plug contains a fuse (usually 3 A or 13 A) to protect the appliance's thin flex.
+### Travel adapters
+• Adapters change the shape only, not the voltage
+• Most chargers accept 100–240 V and work worldwide
+• Heating appliances from 120 V countries can be damaged at 230 V
+!? There are around 15 main plug types in use worldwide, labelled A to N by the US International Trade Administration.
+
+== el-acdc
+
+# Direct current
+Direct current (DC) flows in one direction at a steady voltage. It's what batteries, solar panels and USB chargers provide, and what all electronics use internally.
+@viz {"k": "cmp", "l": {"t": "DC", "items": ["one direction", "steady voltage", "batteries", "electronics"]}, "r": {"t": "AC", "items": ["alternating direction", "wave", "mains", "grid"]}}
+### Sources of DC
+@viz {"k": "list", "items": ["Batteries", "Solar panels", "Fuel cells", "USB chargers", "Car electrical systems"]}
+### Common DC voltages
+@viz {"k": "pairs", "items": [{"a": "1.5 V", "b": "AA battery"}, {"a": "3.7 V", "b": "phone battery"}, {"a": "5 V", "b": "USB"}, {"a": "12 V", "b": "car battery"}, {"a": "400–800 V", "b": "electric car battery"}]}
+### Inside electronics
+Chips need precise, steady DC, often 1–5 V. Power supplies convert mains AC to clean DC for them.
+> Electronics run on DC; the grid runs on AC.
+
+# Alternating current
+In alternating current (AC), the voltage rises and falls in a smooth wave, reversing direction many times a second.
+@viz {"k": "nums", "items": [{"v": "50 Hz", "l": "European mains frequency"}, {"v": "20 ms", "l": "duration of one cycle"}, {"v": "100", "l": "reversals per second"}]}
+### One cycle
+@viz {"k": "flow", "steps": ["Voltage rises to +325 V", "Falls through zero", "Reaches −325 V", "Returns to zero", "Repeats 50 times a second"]}
+### Why lights don't flicker visibly
+Incandescent filaments stay hot between peaks. LED lamps need a good driver to avoid flicker at 100 Hz, which some people can perceive.
+### Hertz
+The unit honours Heinrich Hertz, who demonstrated radio waves in the 1880s. One hertz means one cycle per second.
+> AC is a wave; 50 Hz means 50 full cycles every second.
+
+# Why 230 V isn't the peak
+Mains voltage is quoted as an RMS (root mean square) value: the DC voltage that would produce the same heating effect. The actual peaks are higher.
+@viz {"k": "terms", "f": "V peak = V RMS × √2", "items": [{"s": "V RMS", "m": "230 V"}, {"s": "√2", "m": "about 1.414"}, {"s": "V peak", "m": "about 325 V"}]}
+### The numbers
+@viz {"k": "pairs", "items": [{"a": "RMS", "b": "230 V"}, {"a": "Peak", "b": "about 325 V"}, {"a": "Peak to peak", "b": "about 650 V"}]}
+### Why RMS?
+RMS lets you use the same formulas as for DC. A 2,300 W heater on 230 V AC draws 10 A RMS and produces the same heat as on 230 V DC.
+### Practical consequences
+• Insulation and components must withstand the peaks, not just 230 V
+• Multimeters usually display RMS values
+• "True RMS" meters measure correctly even when the waveform isn't a perfect sine
+!? Europe harmonised mains at 230 V in the late 1980s, bridging older 220 V and 240 V systems; tolerances allow roughly 207–253 V.
+
+# The war of the currents
+In the 1880s and 1890s, Thomas Edison and George Westinghouse fought over which kind of current would power the world.
+@viz {"k": "time", "events": [{"y": "1882", "l": "Edison's DC Pearl Street station"}, {"y": "1888", "l": "Tesla's AC motor patents"}, {"y": "1893", "l": "AC lights Chicago World's Fair"}, {"y": "1896", "l": "Niagara Falls AC power"}]}
+### Edison's DC
+Edison's DC systems worked well but had to be near customers: low-voltage DC couldn't travel far without big losses, so power stations were needed every mile or so.
+### Westinghouse and Tesla's AC
+Westinghouse bought Nikola Tesla's AC motor patents. With transformers, AC could be sent at high voltage over long distances and stepped down for homes.
+### The fight
+@viz {"k": "list", "items": ["Edison campaigned on AC dangers", "Public demonstrations", "Electric chair controversy", "Price wars"]}
+### The outcome
+@viz {"k": "cmp", "l": {"t": "DC (Edison)", "items": ["short distances", "many stations"]}, "r": {"t": "AC (Westinghouse)", "items": ["long distances", "transformers", "won the grid"]}}
+!? Edison's company later merged into General Electric, which itself went on to build AC systems.
+
+# Why AC for the grid?
+Power losses in cables depend on the square of the current. Sending the same power at higher voltage means lower current and much smaller losses.
+@viz {"k": "terms", "f": "Loss = I² × R", "items": [{"s": "I", "m": "current in the line"}, {"s": "R", "m": "resistance of the line"}]}
+### The effect of voltage
+@viz {"k": "pairs", "items": [{"a": "1 kV", "b": "losses × 10,000"}, {"a": "10 kV", "b": "losses × 100"}, {"a": "100 kV", "b": "losses × 1"}]}
+Ten times the voltage means a tenth of the current and a hundredth of the losses.
+### Transformers
+A transformer uses two coils on an iron core. A changing current in one induces a voltage in the other, stepped up or down by the ratio of turns. It only works with changing current, which is why AC won.
+@viz {"k": "flow", "steps": ["Power station 15–20 kV", "Step-up to 400 kV", "Transmission", "Step-down substations", "230 V homes"]}
+### In Portugal
+REN operates the transmission grid at 150, 220 and 400 kV; distribution networks then step down to medium and low voltage.
+> High voltage for distance, low voltage for safety.
+
+# Converters everywhere
+Power electronics convert between AC and DC, and between voltages, everywhere around us.
+@viz {"k": "cmp", "l": {"t": "Rectifier", "items": ["AC to DC", "chargers", "power supplies"]}, "r": {"t": "Inverter", "items": ["DC to AC", "solar", "batteries", "motor drives"]}}
+### Inside a charger
+@viz {"k": "flow", "steps": ["230 V AC", "Rectify to DC", "Chop at high frequency", "Small transformer", "Rectify", "Regulated 5–20 V DC"]}
+### Why chargers got small
+Switch-mode supplies run at tens or hundreds of kilohertz, so their transformers are tiny. New gallium nitride (GaN) chargers are even smaller and more efficient.
+### Other converters
+@viz {"k": "list", "items": ["DC-DC converters in phones", "Inverters in solar systems", "Variable speed drives", "EV on-board chargers"]}
+> Almost every device contains at least one converter.
+
+# DC is coming back
+Modern power electronics convert DC efficiently, so DC is returning for very long links, data centres, electric vehicles and solar systems.
+@viz {"k": "list", "items": ["HVDC links", "Data centres", "EVs", "Solar and batteries", "LED lighting"]}
+### HVDC
+High-voltage DC lines have lower losses over very long distances and are the only practical option for long undersea cables, where AC suffers from cable capacitance.
+@viz {"k": "pairs", "items": [{"a": "North Sea Link", "b": "Norway–UK, 720 km, 2021"}, {"a": "Viking Link", "b": "UK–Denmark, 765 km, 2023"}, {"a": "China's UHVDC lines", "b": "up to ±1,100 kV over 3,000+ km"}, {"a": "INELFE", "b": "Spain–France link, 2015"}]}
+### Why DC suits long lines
+@viz {"k": "cmp", "l": {"t": "AC", "items": ["needs reactive compensation", "capacitive losses in cables"]}, "r": {"t": "DC", "items": ["no reactive power", "fewer conductors", "lower losses"]}}
+### Local DC
+Homes with solar panels, batteries and EVs handle much of their energy as DC. Some designers propose DC microgrids to avoid repeated conversions.
+> DC lost the 1890s battle but is winning new ones.
+
+# Frequency is shared
+Every generator on a synchronous grid spins in lockstep. Grid frequency is a real-time measure of the balance between supply and demand.
+@viz {"k": "scale", "lo": 49.0, "hi": 51.0, "unit": "Hz", "items": [{"l": "Load shedding", "v": 49.0}, {"l": "Alert", "v": 49.8}, {"l": "Normal", "v": 50.0, "hi": true}, {"l": "Too much supply", "v": 50.2}]}
+### Supply and demand
+@viz {"k": "flow", "steps": ["Demand exceeds supply", "Generators slow slightly", "Frequency drops", "Reserves add power", "Back to 50 Hz"]}
+### Continental Europe
+Portugal and Spain are part of the continental European synchronous area, which stretches from Iberia to Turkey and Ukraine.
+### Inertia
+Large spinning generators store energy that cushions sudden changes. Grids with lots of solar and wind need new sources of fast response, such as batteries and grid-forming inverters.
+### The 2025 Iberian blackout
+On 28 April 2025, a cascade of generator disconnections linked to voltage problems left mainland Portugal and Spain without power for many hours. It highlighted the importance of grid stability services.
+> Frequency is the grid's heartbeat: it shows the balance every second.
+
+# The sine wave
+Generators produce a sine wave naturally: as a coil rotates in a magnetic field, the induced voltage rises and falls smoothly with the angle.
+@viz {"k": "terms", "f": "v(t) = V peak × sin(2πft)", "items": [{"s": "V peak", "m": "about 325 V"}, {"s": "f", "m": "50 Hz"}, {"s": "t", "m": "time in seconds"}]}
+### Speed and poles
+@viz {"k": "pairs", "items": [{"a": "2 poles", "b": "3,000 rpm for 50 Hz"}, {"a": "4 poles", "b": "1,500 rpm"}, {"a": "Many poles", "b": "slow hydro turbines, e.g. 100–300 rpm"}]}
+### Why sine waves are useful
+• Transformers and motors work most efficiently with sine waves
+• Mathematics of sine waves makes calculations easier
+• Any periodic waveform can be built from sine waves (Fourier)
+### Distortion
+@viz {"k": "cmp", "l": {"t": "Clean sine", "items": ["generators", "good grids"]}, "r": {"t": "Distorted", "items": ["some electronics draw current in pulses", "harmonics"]}}
+> Rotation in a magnetic field naturally makes a sine wave.
+
+# Different countries, different mains
+Mains voltage and frequency vary between countries, a legacy of early choices that became too expensive to change.
+@viz {"k": "bars", "unit": "mains voltage, V", "items": [{"l": "Europe", "v": 230.0, "hi": true}, {"l": "UK", "v": 230.0}, {"l": "Brazil (varies)", "v": 127.0}, {"l": "USA", "v": 120.0}, {"l": "Japan", "v": 100.0}]}
+### Frequency
+@viz {"k": "pairs", "items": [{"a": "Europe, Africa, most of Asia", "b": "50 Hz"}, {"a": "North America", "b": "60 Hz"}, {"a": "Japan east", "b": "50 Hz"}, {"a": "Japan west", "b": "60 Hz"}, {"a": "Brazil", "b": "60 Hz"}]}
+### Japan's split
+In the 1890s, Tokyo bought generators from Germany (50 Hz) while Osaka bought American ones (60 Hz). The two halves are still linked only through frequency converter stations.
+### For travellers
+• Check device labels: "100–240 V, 50/60 Hz" means it works anywhere
+• Clocks and some motors depending on frequency can run fast or slow
+• Hair dryers and kettles are usually single-voltage
+> Read the label: most electronics are now universal.
+
+== el-magnet
+
+# Magnetic fields
+A magnet produces a magnetic field around it. Opposite poles attract and like poles repel. Field lines run from north to south outside the magnet.
+@viz {"k": "cmp", "l": {"t": "Opposite poles", "items": ["N–S attract"]}, "r": {"t": "Like poles", "items": ["N–N or S–S repel"]}}
+### Field lines
+Iron filings sprinkled near a magnet line up along the field, showing curved lines that bunch together where the field is strongest, near the poles.
+### Units
+@viz {"k": "pairs", "items": [{"a": "Earth's field", "b": "about 25–65 microtesla"}, {"a": "Fridge magnet", "b": "about 5 millitesla"}, {"a": "Neodymium magnet", "b": "about 1 tesla"}, {"a": "MRI scanner", "b": "1.5–3 tesla"}]}
+### Where magnetism comes from
+Magnetism comes from moving charges and from the "spin" of electrons. In iron, nickel and cobalt, electron spins line up in regions called domains.
+@viz {"k": "flow", "steps": ["Unmagnetised: domains random", "Strong field applied", "Domains align", "Permanent magnet"]}
+!? Cutting a magnet in half doesn't separate north and south: you get two smaller magnets, each with both poles.
+
+# Earth is a magnet
+Earth's magnetic field is generated by moving molten iron in the outer core, acting like a giant dynamo. A compass needle lines up with this field.
+@viz {"k": "flow", "steps": ["Liquid iron moves in outer core", "Electric currents", "Magnetic field", "Compass needle aligns"]}
+### Magnetic vs geographic north
+The magnetic north pole wanders. During the 20th century it drifted across northern Canada, and since the 1990s it has moved quickly towards Siberia, at tens of kilometres a year.
+### Declination
+@viz {"k": "pairs", "items": [{"a": "Declination", "b": "angle between magnetic and true north"}, {"a": "In Portugal", "b": "currently small, around 1° west"}, {"a": "Some places", "b": "more than 10°"}]}
+### Field reversals
+@viz {"k": "time", "events": [{"y": "780,000 years ago", "l": "last full reversal"}, {"y": "Today", "l": "field weakening slightly"}, {"y": "Future", "l": "reversal timing unknown"}]}
+### Protection
+The magnetic field deflects much of the solar wind and cosmic radiation, helping protect the atmosphere and life.
+> Earth's core is a dynamo; your compass is reading it.
+
+# Current makes a field
+In 1820, Danish physicist Hans Christian Ørsted noticed that a compass needle moved when placed near a wire carrying current. It was the first proof that electricity and magnetism are linked.
+@viz {"k": "time", "events": [{"y": "1820", "l": "Ørsted's discovery"}, {"y": "1820", "l": "Ampère's laws"}, {"y": "1831", "l": "Faraday's induction"}, {"y": "1865", "l": "Maxwell unifies both"}]}
+### The right-hand grip rule
+Point your right thumb along the current; your curled fingers show the direction of the magnetic field circling the wire.
+### Field strength
+@viz {"k": "pairs", "items": [{"a": "More current", "b": "stronger field"}, {"a": "Closer to wire", "b": "stronger field"}, {"a": "Coiled wire", "b": "fields add up"}]}
+### Electromagnetism
+James Clerk Maxwell later showed that electricity, magnetism and light are all aspects of one electromagnetic field, described by four equations.
+> Every current creates a magnetic field.
+
+# Electromagnets
+Coil a wire and the fields from each turn add up. Put an iron core inside and the field becomes hundreds or thousands of times stronger. Turn off the current, and the magnet turns off.
+@viz {"k": "list", "items": ["More turns", "More current", "Iron core", "Switchable", "Adjustable strength"]}
+### Strength
+@viz {"k": "terms", "f": "B ∝ N × I", "items": [{"s": "B", "m": "field strength"}, {"s": "N", "m": "number of turns"}, {"s": "I", "m": "current"}]}
+### Soft vs hard iron
+@viz {"k": "cmp", "l": {"t": "Soft iron core", "items": ["magnetises and demagnetises easily", "electromagnets"]}, "r": {"t": "Hard magnetic materials", "items": ["keep magnetism", "permanent magnets"]}}
+### First electromagnet
+William Sturgeon built the first electromagnet in 1824; Joseph Henry soon made much stronger ones by insulating wire and winding many turns.
+> An electromagnet is a magnet with an on/off switch.
+
+# Where electromagnets work
+Electromagnets are hidden in countless everyday devices, wherever something must move, lock, sound or switch electrically.
+@viz {"k": "tree", "root": "Electromagnets", "items": ["Switching: relays, contactors", "Sound: loudspeakers, headphones", "Locking: door locks", "Medicine: MRI scanners", "Lifting: scrapyard cranes"]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Loudspeaker", "b": "current varies, cone moves, sound produced"}, {"a": "Contactor", "b": "coil closes heavy switch for motors"}, {"a": "Solenoid valve", "b": "opens washing machine water inlet"}, {"a": "MRI", "b": "superconducting coil, very strong field"}]}
+### Maglev trains
+Maglev trains use powerful electromagnets to float above the track and propel themselves. Shanghai's airport maglev, opened in 2004, runs at up to about 300 km/h in regular service.
+> Wherever electricity makes something move, look for a coil.
+
+# Relays
+A relay is an electrically operated switch. A small current through a coil pulls a contact closed, switching a separate, often much larger circuit.
+@viz {"k": "flow", "steps": ["3.3 V signal from microcontroller", "Coil energised", "Armature pulled", "Contacts close", "230 V heater on"]}
+### Why use a relay
+@viz {"k": "list", "items": ["Isolation between circuits", "Small signal controls large load", "Switch AC with DC", "Multiple contacts at once"]}
+### Types
+@viz {"k": "cmp", "l": {"t": "Mechanical relay", "items": ["audible click", "isolated", "wears out"]}, "r": {"t": "Solid-state relay", "items": ["silent", "no moving parts", "heats up"]}}
+### Protecting electronics
+When the coil switches off, it produces a voltage spike. A diode across the coil (flyback diode) protects the transistor driving it.
+!? Early computers such as the Harvard Mark I (1944) used thousands of relays to perform calculations.
+
+# Induction
+In 1831, Michael Faraday discovered that a changing magnetic field induces a voltage in a nearby conductor. It's the principle behind generators, transformers and induction hobs.
+@viz {"k": "flow", "steps": ["Magnet moves into coil", "Field through coil changes", "Voltage induced", "Current flows"]}
+### Faraday's law
+@viz {"k": "terms", "f": "Induced voltage ∝ rate of change of magnetic flux", "items": [{"s": "Faster change", "m": "higher voltage"}, {"s": "More turns", "m": "higher voltage"}]}
+### Key point: change
+A stationary magnet next to a coil induces nothing. Only changing fields induce voltage, which is why transformers need AC.
+### Applications
+@viz {"k": "list", "items": ["Generators", "Transformers", "Induction hobs", "Wireless charging", "Metal detectors", "Electric guitar pickups"]}
+### Lenz's law
+The induced current opposes the change that caused it. Drop a magnet through a copper tube and it falls slowly, braked by its own induced currents.
+> Changing magnetism makes electricity.
+
+# Induction hobs
+An induction hob heats the pan directly. High-frequency current in a coil under the glass creates a rapidly changing magnetic field, which induces currents in the pan's base.
+@viz {"k": "flow", "steps": ["AC at 20–100 kHz in coil", "Changing field", "Eddy currents in iron pan", "Pan heats", "Glass stays cooler"]}
+### Efficiency
+@viz {"k": "bars", "unit": "approx. energy reaching the food, %", "items": [{"l": "Gas", "v": 40.0}, {"l": "Electric ceramic", "v": 70.0}, {"l": "Induction", "v": 85.0, "hi": true}]}
+### The pan test
+If a magnet sticks firmly to the base, the pan works on induction. Cast iron and most stainless steel work; aluminium, copper and glass don't, unless they have a magnetic base layer.
+### Advantages
+@viz {"k": "list", "items": ["Fast heating", "Precise control", "Cooler surface", "Easy cleaning", "No combustion indoors"]}
+### Safety
+The hob only heats when a suitable pan is present, and the glass gets hot only from contact with the pan.
+> The hob doesn't heat; the pan heats itself.
+
+# Wireless charging
+Wireless chargers use induction: a coil in the pad creates a changing magnetic field, which induces current in a coil inside the phone.
+@viz {"k": "cmp", "l": {"t": "Wireless", "items": ["convenient", "no cable wear", "less efficient", "needs alignment"]}, "r": {"t": "Cable", "items": ["more efficient", "faster", "plug wear"]}}
+### The Qi standard
+The Wireless Power Consortium's Qi standard is used by most phones. Qi2, introduced in 2023, adds magnets to align the phone and charger automatically.
+### Efficiency
+@viz {"k": "bars", "unit": "typical charging efficiency, % (approx.)", "items": [{"l": "Cable", "v": 85.0}, {"l": "Aligned wireless", "v": 70.0}, {"l": "Misaligned", "v": 50.0}]}
+### Heat
+Lost energy becomes heat, which is why phones warm up on pads. Heat is bad for battery life, so chargers slow down when the phone gets warm.
+### Other uses
+@viz {"k": "list", "items": ["Electric toothbrushes", "Smartwatches", "Earbuds", "Some electric buses", "Medical implants"]}
+> Wireless charging trades some efficiency for convenience.
+
+# Magnetic storage
+Magnetic storage records information by magnetising tiny regions of a material in one direction or the other, representing ones and zeros.
+@viz {"k": "pairs", "items": [{"a": "Hard disk", "b": "tiny magnetic grains on spinning platters"}, {"a": "Magnetic stripe", "b": "cards and tickets"}, {"a": "Cassette tape", "b": "audio as varying magnetisation"}, {"a": "LTO tape", "b": "data backup"}]}
+### Hard drives today
+@viz {"k": "nums", "items": [{"v": "1956", "l": "IBM's first hard drive, 3.75 MB"}, {"v": "30+ TB", "l": "capacity of large drives in 2025"}, {"v": "Billions", "l": "bits per square millimetre"}]}
+### Tape is still alive
+Magnetic tape remains one of the cheapest and most durable ways to archive huge amounts of data. Large cloud providers still use tape libraries for backups.
+### Keep magnets away?
+Strong magnets can erase card stripes and damage old tapes. Modern hard drives are well shielded from everyday magnets, and SSDs and chip cards don't use magnetic storage.
+> Every bit on a hard drive is a tiny magnet pointing one way or the other.
+
+== el-motors
+
+# The motor effect
+A wire carrying current inside a magnetic field feels a force at right angles to both. Bend the wire into a loop on an axle and the forces turn it.
+@viz {"k": "terms", "f": "F = B × I × L", "items": [{"s": "F", "m": "force in newtons"}, {"s": "B", "m": "magnetic field in tesla"}, {"s": "I", "m": "current"}, {"s": "L", "m": "length of wire in the field"}]}
+### From force to rotation
+@viz {"k": "flow", "steps": ["Current in loop", "One side pushed up, other side down", "Torque", "Loop turns"]}
+### Direction
+Fleming's left-hand rule: thumb for motion, first finger for field, second finger for current, all at right angles.
+### History
+Michael Faraday demonstrated the first electric motor in 1821: a wire rotating around a magnet in a cup of mercury.
+### Stronger motors
+@viz {"k": "list", "items": ["Stronger magnets", "More current", "More turns", "Longer conductors in field"]}
+> Current plus magnetic field equals force.
+
+# DC motors
+Simple DC motors use a commutator, a split ring that reverses the current in the coil every half turn, so it keeps spinning the same way.
+@viz {"k": "cmp", "l": {"t": "Brushed DC", "items": ["commutator and brushes", "simple", "brushes wear"]}, "r": {"t": "Brushless DC", "items": ["electronic switching", "long life", "efficient"]}}
+### Where they're used
+@viz {"k": "pairs", "items": [{"a": "Brushed", "b": "cheap toys, car windows, small tools"}, {"a": "Brushless", "b": "drones, computer fans, cordless tools, EVs"}]}
+### Speed control
+The speed of a DC motor rises with voltage. Electronic controllers vary the average voltage by switching very fast (pulse-width modulation).
+### Brush wear
+Brushes are carbon blocks that rub against the commutator. They spark, wear down and create electrical noise, which is why brushless designs have taken over in quality products.
+> Brushless motors replaced brushes with electronics.
+
+# Generators
+A generator is a motor in reverse: turn a coil in a magnetic field, or a magnet inside coils, and a voltage is induced.
+@viz {"k": "flow", "steps": ["Steam, water or wind", "Turbine spins", "Generator rotor turns", "Voltage induced in stator", "Electricity to grid"]}
+### Prime movers
+@viz {"k": "list", "items": ["Steam turbines (gas, coal, nuclear)", "Hydro turbines", "Wind turbines", "Gas turbines", "Diesel engines"]}
+### Big machines
+@viz {"k": "nums", "items": [{"v": "~1,750 MW", "l": "largest single generators (nuclear)"}, {"v": "~99%", "l": "efficiency of large generators"}, {"v": "15–20 kV", "l": "typical generator output voltage"}]}
+### Solar is different
+Solar panels are the main exception: they produce electricity directly from light, with no moving parts or generator.
+### Bicycle dynamos
+A bicycle dynamo is a tiny generator: the wheel spins a magnet inside a coil, lighting the lamp.
+> Almost all our electricity comes from something spinning a magnet.
+
+# Induction motors
+The AC induction motor is the workhorse of industry. It has no brushes and a simple, tough rotor, and it starts directly from the mains.
+@viz {"k": "flow", "steps": ["Three-phase current in stator", "Rotating magnetic field", "Currents induced in rotor bars", "Rotor follows the field"]}
+### Slip
+The rotor always turns slightly slower than the rotating field, typically 2–5% slower. That difference, called slip, is what induces current in the rotor.
+ex: 4-pole motor at 50 Hz | Field speed 1,500 rpm | Rotor about 1,450 rpm
+### Inventors
+Galileo Ferraris and Nikola Tesla independently developed induction motors in the late 1880s. Tesla's patents were bought by Westinghouse.
+### Squirrel cage
+@viz {"k": "cmp", "l": {"t": "Rotor", "items": ["copper or aluminium bars shorted at both ends", "looks like a hamster wheel"]}, "r": {"t": "Advantages", "items": ["no brushes", "rugged", "cheap", "low maintenance"]}}
+> Spin a magnetic field and the rotor chases it.
+
+# Motors use a lot of electricity
+Electric motors are everywhere in industry and buildings. According to the International Energy Agency, motor-driven systems use roughly 40–45% of the world's electricity.
+@viz {"k": "nums", "items": [{"v": "40–45%", "l": "of global electricity used by motors"}, {"v": "~70%", "l": "of industrial electricity"}, {"v": "Pumps, fans, compressors", "l": "biggest users"}]}
+### Where it goes
+@viz {"k": "list", "items": ["Compressors", "Pumps", "Fans", "Conveyors and machines", "Lifts and escalators"]}
+### Saving potential
+Upgrading to high-efficiency motors and adding speed control can cut motor energy use by 20–30% in many systems.
+### EU rules
+Since 2021, EU ecodesign rules require most new industrial motors to meet efficiency class IE3, with IE4 required for many mid-sized motors since 2023.
+> Efficient motors are one of the biggest, least visible energy savings.
+
+# Variable speed drives
+A variable frequency drive (VFD) controls an AC motor's speed by changing the frequency of the power it supplies. It saves energy wherever full speed isn't needed.
+@viz {"k": "terms", "f": "Power ∝ speed³", "items": [{"s": "for fans and pumps", "m": "halving speed cuts power to an eighth"}]}
+### The cube law
+@viz {"k": "bars", "unit": "power needed by a fan, % of full", "items": [{"l": "100% speed", "v": 100.0}, {"l": "80% speed", "v": 51.0, "hi": true}, {"l": "60% speed", "v": 22.0}, {"l": "50% speed", "v": 13.0}]}
+### Without a drive
+Traditionally, flow was reduced with valves or dampers while the motor ran at full speed: like driving with the brake on.
+### Other benefits
+@viz {"k": "list", "items": ["Soft starting", "Less mechanical stress", "Precise control", "Reduced noise", "Lower peak demand"]}
+### Where they're used
+HVAC fans, water pumps, compressors, conveyors, elevators and electric vehicles all use variable speed drives.
+> Slowing a fan by 20% roughly halves its power.
+
+# EV motors
+Electric vehicles use compact, highly efficient motors, usually permanent-magnet synchronous motors or induction motors.
+@viz {"k": "bars", "unit": "efficiency from energy source to wheels, % (approx.)", "items": [{"l": "Petrol engine", "v": 25.0}, {"l": "Diesel engine", "v": 30.0}, {"l": "EV motor and drive", "v": 90.0, "hi": true}]}
+### Torque from standstill
+Electric motors deliver maximum torque from zero speed, giving instant acceleration without a gearbox. Most EVs use a single fixed gear.
+### Motor types
+@viz {"k": "cmp", "l": {"t": "Permanent magnet", "items": ["highest efficiency", "uses rare-earth magnets"]}, "r": {"t": "Induction", "items": ["no magnets", "robust", "slightly less efficient at low load"]}}
+### Rare earths
+Permanent magnets often contain neodymium and dysprosium, mostly processed in China. Manufacturers are developing motors that reduce or avoid rare earths.
+> Most of an EV's energy goes to the wheels, not to heat.
+
+# Regenerative braking
+When an EV or hybrid slows down, its motor acts as a generator, turning the car's kinetic energy back into electricity to recharge the battery.
+@viz {"k": "cycle", "steps": ["Accelerate: battery powers motor", "Coast", "Brake: motor becomes generator", "Battery recharged", "Accelerate"]}
+### How much it recovers
+In stop-and-go city traffic, regenerative braking can recover a substantial share of the energy used for acceleration, noticeably extending range. On motorways, with little braking, it helps less.
+### One-pedal driving
+@viz {"k": "pairs", "items": [{"a": "Lift off accelerator", "b": "strong regenerative braking"}, {"a": "Mechanical brakes", "b": "for hard stops and final hold"}, {"a": "Benefit", "b": "less brake wear, more range"}]}
+### Limits
+@viz {"k": "list", "items": ["Full battery can't absorb much", "Very cold battery limits charging", "Emergency braking still uses friction brakes"]}
+### Trains and lifts
+Electric trains and some lifts also regenerate energy, feeding it back to the grid or to other trains.
+> Braking that charges the battery instead of heating the discs.
+
+# Stepper motors and servos
+Stepper motors and servos are designed for precise positioning rather than continuous power.
+@viz {"k": "cmp", "l": {"t": "Stepper", "items": ["moves in fixed steps", "open loop", "3D printers", "CNC"]}, "r": {"t": "Servo", "items": ["feedback holds exact position", "robot arms", "RC planes"]}}
+### Stepper motors
+@viz {"k": "pairs", "items": [{"a": "Typical step", "b": "1.8°, so 200 steps per revolution"}, {"a": "Microstepping", "b": "divides steps for smoother motion"}, {"a": "Weakness", "b": "can lose steps if overloaded"}]}
+### Servos
+A servo combines a motor, gearbox, position sensor and controller. It compares actual position with the target and corrects continuously.
+@viz {"k": "flow", "steps": ["Target position", "Controller compares", "Motor moves", "Sensor measures", "Error corrected"]}
+### Hobby servos
+Small hobby servos take a pulse every 20 ms; the pulse width (about 1–2 ms) sets the angle. They're used in robotics kits and Arduino projects.
+> Steppers count; servos check.
+
+# Motor nameplates
+Every motor carries a nameplate listing the information needed to install, protect and run it correctly.
+@viz {"k": "pairs", "items": [{"a": "Rated power", "b": "kW output at the shaft"}, {"a": "Voltage", "b": "e.g. 230/400 V"}, {"a": "Current", "b": "full-load amps"}, {"a": "Speed", "b": "rpm at full load"}, {"a": "Efficiency class", "b": "IE1 to IE5"}]}
+### Efficiency classes
+@viz {"k": "bars", "unit": "efficiency of a typical 11 kW motor, % (approx.)", "items": [{"l": "IE1", "v": 87.6}, {"l": "IE2", "v": 89.8}, {"l": "IE3", "v": 91.4}, {"l": "IE4", "v": 92.6}, {"l": "IE5", "v": 94.0, "hi": true}]}
+### Other nameplate data
+@viz {"k": "list", "items": ["Power factor (cos φ)", "Frequency", "Duty type", "Insulation class", "Protection rating (IP)"]}
+### Star and delta
+Many three-phase motors can be connected in star or delta, which is why nameplates show two voltages: 230 V in delta or 400 V in star.
+> The nameplate tells you the supply, protection and efficiency the motor needs.
+
+== el-grid
+
+# Generation, transmission, distribution
+The power grid has three main stages: making electricity, moving it long distances at high voltage, and distributing it locally at lower voltages.
+@viz {"k": "flow", "steps": ["Power stations and wind or solar farms", "Step-up transformers", "High-voltage transmission", "Substations", "Distribution", "Homes and businesses"]}
+### Voltage levels in Portugal
+@viz {"k": "pairs", "items": [{"a": "Transmission (REN)", "b": "150, 220 and 400 kV"}, {"a": "Medium voltage", "b": "10–30 kV"}, {"a": "Low voltage", "b": "400 V three-phase, 230 V single-phase"}, {"a": "Large industry", "b": "connected at higher voltages"}]}
+### Who does what
+@viz {"k": "list", "items": ["Producers: generate", "REN: transmission and system balance", "E-REDES: distribution", "Suppliers: sell to customers", "ERSE: regulator"]}
+### Losses
+Transmission and distribution losses in European grids are typically several percent of electricity generated, mostly in the lower-voltage distribution networks.
+> Electricity is made far away, moved fast at high voltage and delivered gently at low voltage.
+
+# Transformers
+A transformer changes AC voltage using two coils wound on an iron core. The ratio of turns sets the ratio of voltages.
+@viz {"k": "terms", "f": "Vs / Vp = Ns / Np", "items": [{"s": "Vp, Vs", "m": "primary and secondary voltage"}, {"s": "Np, Ns", "m": "number of turns"}]}
+### Example
+ex: Primary 10,000 V, 1,000 turns | Secondary 23 turns | ≈ 230 V
+### Energy conserved
+@viz {"k": "cmp", "l": {"t": "Step up", "items": ["higher voltage", "lower current"]}, "r": {"t": "Step down", "items": ["lower voltage", "higher current"]}}
+Power in ≈ power out: big transformers are over 99% efficient.
+### Where you see them
+@viz {"k": "list", "items": ["Pole-mounted transformers", "Neighbourhood substations", "Phone chargers (tiny ones)", "Welding machines"]}
+### The hum
+The 100 Hz hum near transformers comes from the iron core changing size slightly with each magnetic cycle, an effect called magnetostriction.
+> Transformers trade voltage for current, almost without loss.
+
+# Why high voltage?
+Line losses depend on the square of the current. Raising the voltage lowers the current for the same power, slashing losses.
+@viz {"k": "terms", "f": "Loss = I² × R", "items": [{"s": "I", "m": "current"}, {"s": "R", "m": "line resistance"}]}
+### Doubling voltage
+@viz {"k": "bars", "unit": "relative losses for the same power, %", "items": [{"l": "200 kV", "v": 100.0}, {"l": "400 kV", "v": 25.0, "hi": true}]}
+Doubling voltage halves the current and cuts losses to a quarter.
+### Trade-offs
+• Higher voltages need taller towers and bigger insulators
+• Wider clearances to the ground and buildings
+• More expensive equipment at substations
+### Typical choices
+@viz {"k": "pairs", "items": [{"a": "Long-distance", "b": "400 kV or more"}, {"a": "Regional", "b": "60–150 kV"}, {"a": "Towns", "b": "10–30 kV"}, {"a": "Streets", "b": "400/230 V"}]}
+> High voltage carries power far; transformers make it safe at home.
+
+# Balancing supply and demand
+Electricity must be produced at the same moment it's consumed. Grid operators balance supply and demand continuously, second by second.
+@viz {"k": "cycle", "steps": ["Forecast demand", "Schedule generation", "Monitor frequency", "Adjust reserves", "Forecast again"]}
+### Tools for balance
+@viz {"k": "list", "items": ["Flexible power plants", "Hydro and pumped storage", "Batteries", "Imports and exports", "Demand response"]}
+### Reserves
+@viz {"k": "pairs", "items": [{"a": "Primary", "b": "automatic response in seconds"}, {"a": "Secondary", "b": "within minutes"}, {"a": "Tertiary", "b": "replaces earlier reserves over longer periods"}]}
+### Forecasting
+Operators forecast demand using weather, calendars and past patterns, and forecast wind and solar output from weather models. Errors are covered by reserves.
+### Demand response
+Large consumers, and increasingly households with smart devices, can reduce or shift use when the grid is stressed, often for payment.
+> The grid is a balancing act that never stops.
+
+# The daily demand curve
+Electricity demand follows daily rhythms. Solar power has changed when electricity is cheapest, shifting cheap hours to midday.
+@viz {"k": "time", "events": [{"y": "Night", "l": "low demand"}, {"y": "Morning", "l": "rise"}, {"y": "Midday", "l": "solar peak"}, {"y": "Evening", "l": "demand peak"}, {"y": "Late night", "l": "falls"}]}
+### The duck curve
+@viz {"k": "cmp", "l": {"t": "Without solar", "items": ["midday demand met by plants"]}, "r": {"t": "With lots of solar", "items": ["midday net demand dips", "steep evening ramp"]}}
+The shape of net demand (demand minus solar) looks like a duck, first described in California around 2013.
+### What it means for prices
+• Midday prices can fall very low, even negative, on sunny days
+• Evening peaks become more expensive
+• Batteries charge at midday and discharge in the evening
+### For homes
+@viz {"k": "list", "items": ["Run appliances at midday with solar", "Use timers", "Choose time-of-use tariffs", "Charge EVs off-peak"]}
+> The cheapest electricity is moving from night to midday.
+
+# Portugal's renewable mix
+Portugal is one of Europe's renewable leaders. Hydro and wind provide most renewable electricity, and solar is growing fastest.
+@viz {"k": "nums", "items": [{"v": "~71%", "l": "renewables' share of consumption in 2024 (REN)"}, {"v": "2021", "l": "last coal plants closed"}, {"v": "149 hours", "l": "renewables-only run in 2023"}]}
+### Main sources
+@viz {"k": "list", "items": ["Hydro", "Wind", "Solar", "Biomass", "Natural gas (backup)", "Imports"]}
+### Year-to-year swings
+Hydro output depends strongly on rainfall. In dry years, gas and imports fill the gap; in wet, windy years, renewables can exceed 70%.
+### Milestones
+@viz {"k": "time", "events": [{"y": "2016", "l": "four days on renewables only"}, {"y": "2021", "l": "Sines and Pego coal plants close"}, {"y": "2023", "l": "six days on renewables only"}, {"y": "2024", "l": "renewables about 71%"}]}
+### Challenges
+• Storage and flexibility for low-wind, low-rain periods
+• Grid connections for new solar and wind
+• Limited interconnection with the rest of Europe
+> In Portugal, rain and wind largely decide the electricity mix.
+
+# Interconnections
+Interconnections link national grids so countries can trade electricity, share reserves and absorb surpluses. Portugal connects to Spain; Spain connects to France and Morocco.
+@viz {"k": "flow", "steps": ["Portugal", "Spain", "France", "Rest of Europe"]}
+### The "energy island"
+@viz {"k": "nums", "items": [{"v": "~3%", "l": "Spain–France interconnection vs Spain's generating capacity"}, {"v": "15%", "l": "EU target for 2030"}, {"v": "2028", "l": "expected Bay of Biscay link (approx.)"}]}
+The Iberian Peninsula is often called an "energy island" because its links to France are small relative to its size.
+### Benefits
+@viz {"k": "list", "items": ["Share surplus wind and solar", "Lower prices overall", "Back-up in emergencies", "Fewer reserves needed"]}
+### Iberian market
+Portugal and Spain share a single wholesale electricity market, MIBEL, with prices set by the OMIE exchange. Prices are often identical in both countries.
+> More connections mean a more resilient, cheaper grid.
+
+# The April 2025 blackout
+On 28 April 2025, shortly after 12:30 in Spain (11:30 in Portugal), a cascade of disconnections left almost all of mainland Spain and Portugal without power, in one of Europe's largest blackouts in decades.
+@viz {"k": "time", "events": [{"y": "11", "l": "33: grid collapses in Iberia"}, {"y": "Afternoon", "l": "restoration begins"}, {"y": "Night", "l": "most supply restored"}, {"y": "Next morning", "l": "full service"}]}
+### What happened
+Investigations pointed to voltage control problems: rising voltages caused generators to disconnect in sequence, and the grid lost synchronism with France within seconds.
+### Black start
+@viz {"k": "flow", "steps": ["Plants with black-start ability start without grid", "Energise lines", "Reconnect other plants", "Reconnect customers step by step"]}
+In Portugal, hydro and gas plants able to start without external power were used to rebuild the grid.
+### Effects
+@viz {"k": "list", "items": ["Trains and metros stopped", "Traffic lights off", "Mobile networks failed", "Hospitals on generators", "Shops closed"]}
+> A modern society runs on electricity; restoring it from zero takes hours.
+
+# Storage on the grid
+Storage lets grids save surplus energy for later. Pumped hydro has dominated for decades; batteries are now growing rapidly.
+@viz {"k": "cmp", "l": {"t": "Pumped hydro", "items": ["huge capacity", "hours to days", "needs mountains and reservoirs"]}, "r": {"t": "Batteries", "items": ["fast response in milliseconds", "usually 1–4 hours", "easy to site"]}}
+### Pumped hydro in Portugal
+Portugal has several pumped-storage plants, including Alqueva and the Tâmega system, whose Gouvães plant came online in the early 2020s with about 880 MW.
+### Round-trip efficiency
+@viz {"k": "bars", "unit": "energy returned, % (approx.)", "items": [{"l": "Pumped hydro", "v": 78.0}, {"l": "Lithium batteries", "v": 88.0, "hi": true}, {"l": "Hydrogen", "v": 35.0}]}
+### Other options
+@viz {"k": "list", "items": ["Compressed air", "Thermal storage", "Flywheels", "Green hydrogen", "EVs feeding the grid"]}
+!? Pumped hydro still provides the large majority of the world's grid energy storage capacity.
+
+# Smart grids
+A smart grid uses sensors, communication and automation to monitor and control electricity flows in real time, integrating rooftop solar, batteries and EVs.
+@viz {"k": "list", "items": ["Smart meters", "Grid sensors", "Automated switches", "Demand response", "Distributed energy"]}
+### Smart meters
+Most Portuguese homes now have smart meters that read consumption remotely, enable time-of-use tariffs and let the distributor change contracted power without visits.
+### Self-healing networks
+@viz {"k": "flow", "steps": ["Fault occurs", "Sensors locate it", "Switches isolate section", "Power rerouted", "Fewer customers affected"]}
+### Two-way flows
+@viz {"k": "cmp", "l": {"t": "Old grid", "items": ["power flows one way", "big plants to homes"]}, "r": {"t": "Smart grid", "items": ["two-way flows", "homes produce and store"]}}
+### Privacy and security
+Detailed consumption data can reveal household habits, so it's protected under GDPR. Grid automation also needs strong cybersecurity.
+> A smart grid sees, decides and reacts in real time.
+
+== el-batteries
+
+# How a battery works
+A battery converts chemical energy into electrical energy. Two electrodes with different chemical potential are separated by an electrolyte that lets ions move but not electrons.
+@viz {"k": "flow", "steps": ["Chemical reaction at anode releases electrons", "Electrons flow through your circuit", "Ions move through electrolyte", "Electrons rejoin at cathode"]}
+### In a lithium-ion cell
+@viz {"k": "pairs", "items": [{"a": "Discharging", "b": "lithium ions move from anode (graphite) to cathode"}, {"a": "Charging", "b": "charger pushes them back to the anode"}, {"a": "Separator", "b": "thin porous film keeping electrodes apart"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1800", "l": "Volta's pile"}, {"y": "1859", "l": "lead-acid battery"}, {"y": "1991", "l": "Sony sells first Li-ion"}, {"y": "2019", "l": "Nobel Prize for Li-ion"}]}
+### Primary vs secondary
+@viz {"k": "cmp", "l": {"t": "Primary", "items": ["single use", "alkaline AA"]}, "r": {"t": "Secondary", "items": ["rechargeable", "Li-ion", "lead-acid", "NiMH"]}}
+> A battery is a controlled chemical reaction that pushes electrons through your circuit.
+
+# Capacity: Ah and Wh
+Battery capacity is quoted in amp-hours (Ah) or milliamp-hours (mAh), but energy in watt-hours (Wh) is the fair way to compare batteries of different voltages.
+@viz {"k": "terms", "f": "Wh = Ah × V", "items": [{"s": "Ah", "m": "charge capacity"}, {"s": "V", "m": "nominal voltage"}, {"s": "Wh", "m": "energy stored"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Phone 5,000 mAh at 3.85 V", "b": "about 19 Wh"}, {"a": "Laptop", "b": "50–100 Wh"}, {"a": "E-bike", "b": "400–700 Wh"}, {"a": "Electric car", "b": "40–100 kWh"}]}
+### Power banks
+A 10,000 mAh power bank stores about 37 Wh at 3.7 V. After conversion losses, it can deliver roughly 60–70% of that to a phone.
+### Airline rules
+Airlines generally allow power banks up to 100 Wh in cabin baggage without approval, and between 100 and 160 Wh with airline approval. They're banned from checked bags.
+> Compare batteries in watt-hours, not milliamp-hours.
+
+# Battery chemistries
+Different battery chemistries trade energy density, cost, safety and lifespan.
+@viz {"k": "bars", "unit": "energy density, Wh/kg (approx., cell level)", "items": [{"l": "Lead-acid", "v": 35.0}, {"l": "NiMH", "v": 80.0}, {"l": "LFP", "v": 160.0}, {"l": "NMC", "v": 250.0, "hi": true}, {"l": "Sodium-ion", "v": 140.0}]}
+### Common types
+@viz {"k": "pairs", "items": [{"a": "Lead-acid", "b": "cheap, heavy, car starter batteries"}, {"a": "NiMH", "b": "older hybrids, AA rechargeables"}, {"a": "LFP", "b": "safe, long-life, storage and many EVs"}, {"a": "NMC", "b": "high energy, premium EVs, laptops"}]}
+### LFP's rise
+Lithium iron phosphate cells contain no cobalt or nickel, are cheaper and tolerate more cycles. They now power a large share of EVs, especially in China, and most home batteries.
+### New chemistries
+@viz {"k": "list", "items": ["Sodium-ion: no lithium", "Solid-state: higher energy, safer", "Lithium-sulphur: lighter"]}
+> The best chemistry depends on whether you need energy, cost, safety or life.
+
+# C-rate
+The C-rate expresses charge or discharge current relative to capacity. It shows how hard a battery is being worked.
+@viz {"k": "terms", "f": "Current = C-rate × capacity", "items": [{"s": "1C", "m": "full in about 1 hour"}, {"s": "0.5C", "m": "2 hours"}, {"s": "2C", "m": "30 minutes"}]}
+### Examples
+ex: 3,000 mAh battery at 1C | = 3 A | about 1 hour to charge or discharge
+ex: 75 kWh EV charging at 150 kW | = 2C | 10–80% in roughly 20–30 minutes
+### Why it matters
+@viz {"k": "cmp", "l": {"t": "Low C-rate", "items": ["cool", "gentle", "long life"]}, "r": {"t": "High C-rate", "items": ["heat", "stress", "faster ageing"]}}
+### Charging curve
+Fast charging slows down above about 80%, because the cell's voltage rises and the charger reduces current to protect it. That's why EV charging stops are often 10–80%.
+> High C-rates are fast but hard on batteries.
+
+# State of charge and cycles
+Lithium-ion batteries age faster when kept at very high or very low charge for long periods, especially when warm.
+@viz {"k": "scale", "lo": 0.0, "hi": 100.0, "unit": "% charge", "items": [{"l": "Stressful low", "v": 5.0}, {"l": "Sweet spot start", "v": 20.0}, {"l": "Sweet spot end", "v": 80.0}, {"l": "Stressful high", "v": 100.0, "hi": true}]}
+### Practical advice
+• For daily use, charging to about 80% extends life
+• Charge to 100% before long trips, then drive soon after
+• Avoid leaving devices fully charged in hot cars or sun
+• Store long-term at around 40–60%
+### Phone features
+Many phones offer "optimised charging", pausing at 80% overnight and finishing just before you wake.
+### LFP is different
+LFP batteries tolerate 100% charge better, and some manufacturers recommend charging them fully regularly so the battery management system can calibrate.
+> Middle charge, moderate temperature: that's where lithium is happiest.
+
+# Why batteries age
+Every charge and discharge causes tiny, irreversible chemical changes that slowly reduce capacity and increase internal resistance.
+@viz {"k": "list", "items": ["Electrolyte breakdown", "Protective layer growth", "Lithium plating", "Cathode cracking", "Heat"]}
+### Main stress factors
+@viz {"k": "bars", "unit": "relative ageing effect (illustrative)", "items": [{"l": "Heat", "v": 10.0}, {"l": "High charge", "v": 7.0}, {"l": "Fast charging", "v": 6.0}, {"l": "Deep discharge", "v": 5.0}, {"l": "Time alone", "v": 3.0}]}
+### Calendar vs cycle ageing
+@viz {"k": "cmp", "l": {"t": "Calendar ageing", "items": ["happens even unused", "worse when hot and full"]}, "r": {"t": "Cycle ageing", "items": ["from use", "worse with deep cycles and fast charging"]}}
+### End of life
+A battery is usually considered "worn out" at 70–80% of original capacity. EV batteries at that point can find a second life in stationary storage.
+> Heat is a battery's worst enemy.
+
+# Cycle life
+Cycle life is the number of full charge-discharge cycles before capacity falls to a threshold, often 80%.
+@viz {"k": "bars", "unit": "typical cycles to 80% capacity (approx.)", "items": [{"l": "Lead-acid", "v": 500.0}, {"l": "NMC", "v": 1500.0}, {"l": "LFP", "v": 4000.0, "hi": true}]}
+### What it means for EVs
+ex: 1,500 cycles × 400 km per cycle | = 600,000 km | well beyond most cars' lifetime
+### Partial cycles
+Two charges from 50% to 100% count roughly as one full cycle. Shallow cycles are gentler than deep ones.
+### Real-world data
+Studies of real EV fleets show many batteries keep around 90% of capacity after 100,000–200,000 km, better than many early predictions.
+> For home storage cycling every day, LFP's long life is a big advantage.
+
+# Battery management systems
+A battery management system (BMS) monitors and protects every cell in a lithium pack. Large lithium packs should never run without one.
+@viz {"k": "list", "items": ["Monitor cell voltages", "Measure temperatures", "Balance cells", "Limit current", "Disconnect on faults", "Estimate charge"]}
+### Cell balancing
+Cells in a pack drift apart slightly. The BMS balances them so no cell is overcharged or over-discharged while others are still mid-range.
+@viz {"k": "flow", "steps": ["Measure every cell", "Find highest", "Bleed or redistribute charge", "All cells aligned"]}
+### State of charge
+The BMS estimates remaining charge from voltage, current and temperature. That's the percentage on your phone or EV dashboard.
+### Protection
+@viz {"k": "pairs", "items": [{"a": "Overcharge", "b": "stop charging"}, {"a": "Over-discharge", "b": "cut load"}, {"a": "Over-temperature", "b": "reduce power or stop"}, {"a": "Short circuit", "b": "disconnect instantly"}]}
+> The BMS is the battery's brain and bodyguard.
+
+# Thermal runaway
+Thermal runaway is a self-heating chain reaction in a lithium cell. Once started, it releases heat and flammable gases and can spread to neighbouring cells.
+@viz {"k": "flow", "steps": ["Damage, overcharge or overheating", "Internal short", "Heat", "Electrolyte decomposes", "More heat", "Fire and gas", "Spreads to next cell"]}
+### Causes
+@viz {"k": "list", "items": ["Physical damage", "Manufacturing defects", "Overcharging", "External heat", "Poor quality chargers"]}
+### Why fires are hard
+Burning cells produce their own oxygen from the cathode, so smothering doesn't work well. EV fires need large amounts of water for cooling and can reignite hours or days later.
+### LFP is safer
+@viz {"k": "cmp", "l": {"t": "NMC", "items": ["runaway at lower temperatures", "more energetic"]}, "r": {"t": "LFP", "items": ["more stable chemistry", "runaway much harder to trigger"]}}
+### Warning signs
+• Swelling or bulging
+• Unusual heat
+• Hissing or sweet smell
+> A swollen battery is a warning: stop using it and dispose of it safely.
+
+# Series and parallel packs
+Battery packs combine cells in series to raise voltage and in parallel to raise capacity and current.
+@viz {"k": "cmp", "l": {"t": "Series", "items": ["voltages add", "same capacity"]}, "r": {"t": "Parallel", "items": ["capacities add", "same voltage"]}}
+### Notation
+@viz {"k": "pairs", "items": [{"a": "4S", "b": "four cells in series, about 14.8 V"}, {"a": "2P", "b": "two cells in parallel"}, {"a": "4S2P", "b": "eight cells: 14.8 V, double capacity"}, {"a": "96S", "b": "typical EV pack, about 350–400 V"}]}
+### EV voltages
+Most EVs use around 400 V packs. Some newer cars use 800 V architectures, allowing faster charging with lower current and thinner cables.
+@viz {"k": "bars", "unit": "nominal pack voltage, V (approx.)", "items": [{"l": "E-bike", "v": 36.0}, {"l": "Home battery", "v": 50.0}, {"l": "Typical EV", "v": 400.0}, {"l": "800 V EV", "v": 800.0, "hi": true}]}
+### Weakest link
+In series, the weakest cell limits the whole string, which is why matched cells and good balancing matter.
+> Series for voltage, parallel for capacity.
+
+== el-solar
+
+# The photovoltaic effect
+A solar cell turns light directly into electricity. Photons knock electrons loose in silicon, and a built-in electric field at the junction pushes them in one direction.
+@viz {"k": "flow", "steps": ["Photon hits silicon", "Electron freed", "Junction field separates charges", "Current flows in external circuit"]}
+### The junction
+@viz {"k": "pairs", "items": [{"a": "n-type layer", "b": "extra electrons (doped with phosphorus)"}, {"a": "p-type layer", "b": "\"holes\" (doped with boron)"}, {"a": "Junction", "b": "built-in field pushes electrons one way"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1839", "l": "Becquerel discovers effect"}, {"y": "1954", "l": "Bell Labs' first practical silicon cell"}, {"y": "1958", "l": "Vanguard 1 satellite uses solar"}, {"y": "2020s", "l": "cheapest electricity in history"}]}
+### Efficiency
+@viz {"k": "nums", "items": [{"v": "~22%", "l": "typical commercial panel efficiency today"}, {"v": "~6%", "l": "Bell Labs cell in 1954"}, {"v": "30%+", "l": "silicon–perovskite lab records"}]}
+!? Einstein's 1921 Nobel Prize was awarded for explaining the photoelectric effect, a related phenomenon, not for relativity.
+
+# Cells, panels, strings
+Solar cells are combined into panels, and panels into strings, to reach useful voltages and powers.
+@viz {"k": "flow", "steps": ["Cell: about 0.6 V", "Panel: 54–144 cells", "String: several panels in series", "Inverter"]}
+### Typical values
+@viz {"k": "pairs", "items": [{"a": "One cell", "b": "about 0.5–0.6 V, several watts"}, {"a": "Residential panel", "b": "400–450 Wp, about 1.7–2 m²"}, {"a": "String", "b": "8–20 panels, 300–800 V DC"}]}
+### Half-cut cells
+Many modern panels use cells cut in half, which reduces current per cell, lowers losses and improves shade tolerance.
+### Safety
+DC strings carry high voltages whenever the sun shines and can't simply be "switched off" at the panels. Installation must follow strict rules.
+> Cells in series raise the voltage to something an inverter can use.
+
+# Watt-peak
+Panels are rated in watt-peak (Wp): their output under standard test conditions (STC). Real-world output is usually lower.
+@viz {"k": "nums", "items": [{"v": "1,000 W/m²", "l": "STC sunlight intensity"}, {"v": "25 °C", "l": "STC cell temperature"}, {"v": "1.5", "l": "air mass (sun angle) at STC"}]}
+### Why real output is lower
+@viz {"k": "list", "items": ["Heat", "Lower sunlight", "Angle", "Dust", "Inverter and cable losses"]}
+### Typical performance
+@viz {"k": "bars", "unit": "output of a 400 Wp panel, W (approx.)", "items": [{"l": "STC rating", "v": 400.0}, {"l": "Clear summer noon", "v": 330.0}, {"l": "Hazy day", "v": 200.0}, {"l": "Winter noon", "v": 250.0}]}
+### Price trends
+Solar module prices fell by roughly 90% between 2010 and 2020 and kept falling in the 2020s, making solar one of the cheapest sources of new electricity.
+> Wp is a lab rating; real panels rarely hit it.
+
+# How much will it produce?
+In Portugal, each kilowatt-peak of well-oriented panels produces roughly 1,400–1,700 kWh a year, one of the best yields in Europe.
+@viz {"k": "terms", "f": "Annual kWh ≈ kWp × specific yield", "items": [{"s": "kWp", "m": "installed size"}, {"s": "Specific yield", "m": "kWh per kWp per year"}]}
+### Regional yields
+@viz {"k": "bars", "unit": "specific yield, kWh/kWp/year (approx.)", "items": [{"l": "Germany", "v": 950.0}, {"l": "Northern Portugal", "v": 1400.0}, {"l": "Lisbon", "v": 1550.0}, {"l": "Algarve", "v": 1700.0, "hi": true}]}
+### Example
+ex: 4 kWp system in Lisbon | × 1,550 kWh/kWp | ≈ 6,200 kWh a year
+That's more than a typical Portuguese household uses in a year, though production and use don't match in time.
+### Seasons
+@viz {"k": "pairs", "items": [{"a": "Summer month", "b": "up to twice the winter output"}, {"a": "Winter month", "b": "shorter days, lower sun"}]}
+> Portugal's sun makes each solar panel worth about 60% more than in Germany.
+
+# Orientation and tilt
+Panel orientation and tilt determine how much sunlight they capture over the year.
+@viz {"k": "bars", "unit": "annual output vs optimal, % (approx., Portugal)", "items": [{"l": "South 30–35°", "v": 100.0, "hi": true}, {"l": "South-east or south-west", "v": 95.0}, {"l": "East–west", "v": 85.0}, {"l": "Flat", "v": 88.0}, {"l": "Vertical south", "v": 70.0}]}
+### The optimum
+In Portugal, south-facing panels tilted at roughly 30–35° collect the most energy over the year, close to the latitude minus a few degrees.
+### East–west layouts
+@viz {"k": "cmp", "l": {"t": "South", "items": ["maximum total energy", "peak at noon"]}, "r": {"t": "East–west", "items": ["less total", "morning and evening production", "matches household use"]}}
+### Flat roofs
+Panels on flat roofs are usually tilted on frames, or laid flatter in east–west rows to fit more panels on the roof.
+> South at 30–35° maximises energy; east–west better matches daily use.
+
+# Shade matters
+Shading even a small part of a solar panel can reduce output disproportionately, because cells in series all carry the same current.
+@viz {"k": "flow", "steps": ["Leaf shades one cell", "Cell can't pass full current", "Whole string limited", "Bypass diode skips section", "Partial loss"]}
+### Bypass diodes
+Panels contain bypass diodes, typically three per panel, that route current around shaded sections, limiting the loss to part of the panel.
+### Optimisers and microinverters
+@viz {"k": "cmp", "l": {"t": "String inverter only", "items": ["shade on one panel affects the string"]}, "r": {"t": "Optimisers or microinverters", "items": ["each panel works independently"]}}
+### Hot spots
+A shaded cell forced to carry current can heat up and be damaged. Persistent partial shading, such as from a chimney, should be avoided in design.
+> Check for chimneys, trees and antennas before deciding where panels go.
+
+# Heat lowers output
+Solar cells work better when cool. Silicon panels lose about 0.3–0.4% of output for every °C above 25 °C.
+@viz {"k": "terms", "f": "Loss ≈ temperature coefficient × (T cell − 25 °C)", "items": [{"s": "Coefficient", "m": "about −0.35%/°C"}, {"s": "T cell", "m": "often 20–35 °C above air temperature"}]}
+### Example
+ex: Cell at 60 °C | 35 °C above STC × 0.35% | ≈ 12% less output
+### Cooling helps
+• Mounting with air gaps behind panels
+• Panels on light-coloured roofs
+• Breezy locations
+### Best months
+In Portugal, spring often gives excellent output: strong sun, long days and cooler temperatures than midsummer.
+!? Floating solar farms on reservoirs, such as Alqueva's, benefit from water cooling, which slightly improves efficiency.
+
+# Self-consumption
+Solar power is most valuable when used directly at home, because exported electricity earns much less than imported electricity costs.
+@viz {"k": "list", "items": ["Run dishwasher at midday", "Heat water with solar", "Charge the EV", "Pre-cool or pre-heat the home", "Use timers"]}
+### The economics
+@viz {"k": "pairs", "items": [{"a": "Electricity bought", "b": "about €0.15–0.25 per kWh"}, {"a": "Surplus sold", "b": "often well under €0.10 per kWh"}, {"a": "Self-consumed", "b": "saves the full purchase price"}]}
+### In Portugal
+Household systems operate under the self-consumption regime (UPAC). Surplus can be sold to a supplier, and renewable energy communities let neighbours share solar.
+### Batteries
+@viz {"k": "cmp", "l": {"t": "Without battery", "items": ["maybe 30–50% self-consumption"]}, "r": {"t": "With battery", "items": ["often 60–80% self-consumption"]}}
+> Use solar when the sun shines; export only what you can't.
+
+# Inverters
+Inverters convert DC from panels into AC for the home and grid. They also optimise panel output and monitor performance.
+@viz {"k": "cmp", "l": {"t": "String inverter", "items": ["one per string", "cheapest", "simple"]}, "r": {"t": "Microinverters", "items": ["one per panel", "shade tolerant", "panel-level monitoring"]}}
+### Hybrid inverters
+A hybrid inverter connects panels, a battery and the grid, deciding where energy goes moment by moment.
+### Maximum power point tracking
+@viz {"k": "flow", "steps": ["Measure voltage and current", "Adjust operating point", "Find maximum power", "Repeat continuously"]}
+### Lifespan
+@viz {"k": "pairs", "items": [{"a": "Panels", "b": "25–30 years warranty"}, {"a": "Inverters", "b": "often 10–15 years"}, {"a": "Batteries", "b": "usually 10-year warranty"}]}
+> The inverter is the brain of a solar system, and often the first part to replace.
+
+# Payback
+In Portugal's sunny climate, home solar systems often pay back their cost in roughly 5–8 years, then produce cheap electricity for decades.
+@viz {"k": "nums", "items": [{"v": "5–8 years", "l": "typical payback in Portugal"}, {"v": "25 years", "l": "common performance warranty"}, {"v": "~80–90%", "l": "output guaranteed after 25 years"}]}
+### What drives payback
+@viz {"k": "list", "items": ["System price", "Self-consumption share", "Electricity prices", "Export tariff", "Orientation and shade"]}
+### Example
+ex: 4 kWp for €5,000 | 60% self-consumed: 3,700 kWh × €0.18 ≈ €670 a year | Payback ≈ 7 years
+### Degradation
+Panels lose about 0.3–0.5% of output per year. After 25 years, good panels still produce more than 80% of their original output.
+> Sun, self-consumption and price decide how fast solar pays back.
+
+== el-cables
+
+# Cables heat up
+Every cable has resistance, so current through it produces heat. Size the cable correctly and the heat is harmless; undersize it and insulation degrades or melts.
+@viz {"k": "flow", "steps": ["Too much current", "Heat (I²R)", "Insulation softens", "Short circuit or fire"]}
+### Doubling the current
+@viz {"k": "terms", "f": "Heat ∝ I²", "items": [{"s": "2× current", "m": "4× heat"}, {"s": "3× current", "m": "9× heat"}]}
+### What limits current
+@viz {"k": "list", "items": ["Conductor size", "Insulation temperature rating", "How heat escapes", "Ambient temperature", "Number of cables bundled"]}
+### Insulation ratings
+@viz {"k": "pairs", "items": [{"a": "PVC", "b": "usually 70 °C maximum conductor temperature"}, {"a": "XLPE", "b": "90 °C"}, {"a": "Silicone", "b": "higher, for special uses"}]}
+> A cable's capacity is really its ability to get rid of heat.
+
+# Cross-section in mm²
+Cable size is given by the copper cross-sectional area in square millimetres. Larger area means lower resistance and more current capacity.
+@viz {"k": "bars", "unit": "approx. current capacity, A (typical conditions)", "items": [{"l": "1.5 mm²", "v": 16.0}, {"l": "2.5 mm²", "v": 22.0}, {"l": "4 mm²", "v": 30.0}, {"l": "6 mm²", "v": 38.0}, {"l": "10 mm²", "v": 52.0, "hi": true}]}
+### Resistance per metre
+@viz {"k": "pairs", "items": [{"a": "1.5 mm²", "b": "about 12 mΩ per metre"}, {"a": "2.5 mm²", "b": "about 7.4 mΩ per metre"}, {"a": "6 mm²", "b": "about 3 mΩ per metre"}]}
+### Diameter vs area
+Area grows with the square of diameter: a 6 mm² conductor has four times the area of 1.5 mm², but only twice the diameter.
+### Not AWG
+North America uses AWG gauge numbers, where bigger numbers mean thinner wires. Europe uses mm² directly.
+> Capacities depend on installation: always use the official tables.
+
+# Typical sizes at home
+Typical residential practice in Portugal follows the RTIEBT technical rules. Sizes depend on load, length and installation method, so installers must calculate.
+@viz {"k": "pairs", "items": [{"a": "Lighting", "b": "1.5 mm², 10 A breaker"}, {"a": "Sockets", "b": "2.5 mm², 16 A breaker"}, {"a": "Oven, water heater", "b": "4 mm², 20–25 A"}, {"a": "EV charger, heat pump", "b": "6 mm² or more"}]}
+### Supply cable
+The cable from the meter to the board is sized for the contracted power, often 10 mm² or larger for single phase.
+### Long runs
+ex: 40 m run to a garden studio at 16 A | Voltage drop on 2.5 mm² ≈ 4% | Upsize to 4 mm²
+### Certification
+New installations in Portugal require a project or declaration by a qualified electrician and inspection by an authorised body before connection.
+> Typical sizes are a starting point; the calculation decides.
+
+# The breaker protects the cable
+A breaker's rating must never exceed what the cable can safely carry. Its job is to trip before the cable overheats.
+@viz {"k": "fix", "items": [{"w": "Breaker keeps tripping, fit a bigger one", "r": "Find the cause: overload or fault"}]}
+### Matching
+@viz {"k": "pairs", "items": [{"a": "1.5 mm² cable", "b": "10 A breaker (typical)"}, {"a": "2.5 mm²", "b": "16 A"}, {"a": "4 mm²", "b": "20–25 A"}, {"a": "6 mm²", "b": "32 A"}]}
+### Why upsizing is dangerous
+@viz {"k": "flow", "steps": ["25 A breaker on 1.5 mm² cable", "Cable carries 20 A", "Overheats", "Breaker never trips", "Fire risk hidden in walls"]}
+### Real causes of tripping
+@viz {"k": "list", "items": ["Too many appliances on one circuit", "Faulty appliance", "Damaged cable", "Moisture", "Loose connection"]}
+> If a breaker trips, it's doing its job: listen to it.
+
+# Voltage drop
+Long cables lose voltage along their length. Too much drop makes motors struggle, lights dim and electronics misbehave.
+@viz {"k": "terms", "f": "ΔV ≈ 2 × L × I × r", "items": [{"s": "L", "m": "one-way length in m"}, {"s": "I", "m": "current"}, {"s": "r", "m": "resistance per metre"}, {"s": "2", "m": "out and back"}]}
+### Example
+ex: 30 m, 16 A, 2.5 mm² (r ≈ 0.0074 Ω/m) | ΔV ≈ 2 × 30 × 16 × 0.0074 ≈ 7.1 V | ≈ 3.1% of 230 V
+### Limits
+@viz {"k": "pairs", "items": [{"a": "Lighting", "b": "commonly limited to about 3%"}, {"a": "Other uses", "b": "commonly up to about 5%"}]}
+### Fixes
+@viz {"k": "list", "items": ["Thicker cable", "Shorter route", "Three-phase supply", "Lower current per circuit"]}
+> For long runs, voltage drop often decides the cable size, not heat.
+
+# Installation method matters
+How a cable is installed affects how well it sheds heat, and therefore how much current it can safely carry.
+@viz {"k": "bars", "unit": "relative capacity of the same cable, % (illustrative)", "items": [{"l": "Open air", "v": 100.0, "hi": true}, {"l": "Clipped to wall", "v": 95.0}, {"l": "In conduit in wall", "v": 80.0}, {"l": "Bundled with others", "v": 70.0}, {"l": "In thermal insulation", "v": 50.0}]}
+### Derating
+Cable tables give base capacities, then correction factors for grouping, ambient temperature and thermal insulation.
+### Hot spots
+• Cables buried in loft insulation
+• Bundles of many circuits in one trunking
+• Cables near hot water pipes or in sunny areas
+### Planning
+@viz {"k": "flow", "steps": ["Choose route", "Note grouping and insulation", "Apply correction factors", "Select cable size"]}
+> The same cable can be safe in air and overheated in insulation.
+
+# Colours
+Conductor colours help identify their function. In Europe, harmonised colours have been standard for decades, but older installations may differ.
+@viz {"k": "pairs", "items": [{"a": "Brown", "b": "live (phase L1)"}, {"a": "Black", "b": "phase L2 (three-phase)"}, {"a": "Grey", "b": "phase L3 (three-phase)"}, {"a": "Blue", "b": "neutral"}, {"a": "Green-yellow", "b": "protective earth"}]}
+### Never trust colours alone
+Older or altered installations may use non-standard colours, and DIY work can swap them. Always test before touching.
+@viz {"k": "flow", "steps": ["Switch off", "Lock or label breaker", "Test with a proper tester", "Confirm dead", "Work"]}
+### Green-yellow is only for earth
+The green-and-yellow conductor must never be used for anything other than protective earth.
+> Colours are a guide, not a guarantee.
+
+# Flexible vs rigid
+Cables are built differently depending on whether they stay fixed or move.
+@viz {"k": "cmp", "l": {"t": "Rigid", "items": ["solid or few strands", "fixed wiring in walls", "cheaper"]}, "r": {"t": "Flexible", "items": ["many fine strands", "appliance leads", "extension cords", "survives bending"]}}
+### Using the wrong one
+• Rigid cable in a moving application cracks over time
+• Flexible strands need ferrules in screw terminals to avoid loose strands
+### Common types in Portugal
+@viz {"k": "list", "items": ["H07V-U (rigid single core)", "H07V-K (flexible single core)", "H05VV-F (flexible sheathed)", "XV (armoured underground)"]}
+### Outdoors
+Outdoor cables need UV-resistant, waterproof sheaths, and buried cables need protection or armouring.
+> Fixed wiring stays rigid; anything that moves must be flexible.
+
+# Extension leads
+Extension leads are convenient but often misused. Many electrical fires start with overloaded or damaged extensions.
+@viz {"k": "list", "items": ["Unroll reels fully", "Don't daisy-chain", "Check ratings", "Avoid heaters on extensions", "Replace damaged leads"]}
+### Reels
+@viz {"k": "bars", "unit": "typical reel rating, W", "items": [{"l": "Wound up", "v": 1000.0}, {"l": "Fully unrolled", "v": 3500.0, "hi": true}]}
+A coiled reel traps heat; most have two ratings printed on them.
+### Multi-plug adapters
+Plugging a heater, kettle and toaster into one adapter can exceed 16 A, overheating the adapter and the socket.
+### Warning signs
+@viz {"k": "pairs", "items": [{"a": "Warm plug", "b": "loose contact or overload"}, {"a": "Discoloured socket", "b": "overheating history"}, {"a": "Burning smell", "b": "switch off immediately"}]}
+> High-power appliances belong in wall sockets, not on extensions.
+
+# Aluminium vs copper
+Copper and aluminium are the main conductor metals. Each has its uses.
+@viz {"k": "cmp", "l": {"t": "Copper", "items": ["better conductor", "strong", "home wiring"]}, "r": {"t": "Aluminium", "items": ["about 61% of copper's conductivity", "lighter", "cheaper", "power lines"]}}
+### Weight advantage
+For the same resistance, an aluminium conductor weighs about half as much as copper, which is why overhead lines use aluminium, often reinforced with a steel core.
+### Problems in homes
+@viz {"k": "list", "items": ["Oxidation at terminals", "Creep under pressure", "Thermal expansion", "Galvanic corrosion with copper"]}
+Aluminium wiring in some 1960s–70s homes in North America caused connection fires; special connectors are needed.
+### Today
+Aluminium is widely used in large supply cables and distribution networks, with proper terminations.
+> Copper inside homes; aluminium on poles and pylons.
+
+== el-earthing
+
+# What earthing does
+Earthing connects exposed metal parts of appliances and installations to the ground. If a fault makes them live, current flows to earth and protection trips, rather than through a person.
+@viz {"k": "flow", "steps": ["Live wire touches metal case", "Current flows through earth wire", "RCD or breaker trips", "Case safe to touch"]}
+### Without earthing
+A live metal case would wait for someone to touch it. The person would become the path to earth.
+### Equipotential bonding
+@viz {"k": "list", "items": ["Water pipes", "Gas pipes", "Metal baths", "Structural steel"]}
+Bonding connects metal parts together so no dangerous voltage can appear between them.
+### Earthing systems
+@viz {"k": "pairs", "items": [{"a": "TT", "b": "earth via a local electrode, common in Portuguese homes"}, {"a": "TN-S", "b": "separate earth conductor from supply"}, {"a": "TN-C-S", "b": "combined neutral and earth in supply"}]}
+> Earthing gives fault current a safe path that isn't you.
+
+# The earth electrode
+Many homes, including most in Portugal, connect to earth through a local electrode: a copper rod, plate or ring buried in the ground.
+@viz {"k": "flow", "steps": ["Main earth terminal", "Earthing conductor", "Test link", "Earth electrode in soil"]}
+### Resistance matters
+@viz {"k": "terms", "f": "R earth × I RCD ≤ 50 V", "items": [{"s": "R earth", "m": "electrode resistance"}, {"s": "I RCD", "m": "RCD rated current"}, {"s": "50 V", "m": "safe touch voltage"}]}
+With a 30 mA RCD, the limit is in theory up to about 1,600 Ω, but good practice aims far lower for reliability.
+### Soil affects it
+@viz {"k": "list", "items": ["Moisture", "Salt content", "Temperature", "Rock vs clay", "Depth of rod"]}
+### Testing
+Electricians measure earth resistance with special testers. It can change over time as soil dries or electrodes corrode.
+> In a TT system, the RCD does most of the protecting.
+
+# Miniature circuit breakers
+A miniature circuit breaker (MCB) protects a circuit against overloads and short circuits. It has two tripping mechanisms.
+@viz {"k": "cmp", "l": {"t": "Thermal", "items": ["bimetal strip bends", "slow overloads", "seconds to minutes"]}, "r": {"t": "Magnetic", "items": ["coil pulls trip", "short circuits", "milliseconds"]}}
+### Ratings
+@viz {"k": "pairs", "items": [{"a": "Rated current", "b": "e.g. 10, 16, 20, 25, 32 A"}, {"a": "Curve", "b": "B, C or D"}, {"a": "Breaking capacity", "b": "e.g. 6 kA"}]}
+### Why two mechanisms
+• A small, sustained overload heats the cable slowly, so a slow trip is fine
+• A short circuit needs instant disconnection
+### Resettable
+@viz {"k": "cmp", "l": {"t": "Fuse", "items": ["melts", "replace"]}, "r": {"t": "Breaker", "items": ["trips", "reset after fixing the cause"]}}
+> An MCB is a fuse you can reset.
+
+# MCB curves
+The curve letter sets how much current is needed to trip the breaker's magnetic mechanism instantly. It must suit the load's inrush current.
+@viz {"k": "bars", "unit": "instant trip threshold, multiples of rating", "items": [{"l": "Type B", "v": 5.0}, {"l": "Type C", "v": 10.0}, {"l": "Type D", "v": 20.0, "hi": true}]}
+### Choosing
+@viz {"k": "pairs", "items": [{"a": "Type B", "b": "homes, sockets, lighting"}, {"a": "Type C", "b": "motors, big LED lighting, commercial"}, {"a": "Type D", "b": "transformers, welders, heavy motors"}]}
+### Inrush current
+Motors, transformers and LED drivers draw a brief surge when switched on. A type B breaker may trip unnecessarily on large inrush loads.
+### Trade-off
+@viz {"k": "cmp", "l": {"t": "Lower curve", "items": ["trips faster on faults", "may nuisance trip"]}, "r": {"t": "Higher curve", "items": ["tolerates inrush", "needs lower circuit impedance"]}}
+> Match the curve to what the circuit powers.
+
+# RCD types
+Residual current devices come in types that detect different kinds of leakage current. Modern electronics can produce leakage that older types can't see.
+@viz {"k": "stack", "items": ["Type B: smooth DC too", "Type F: higher frequencies", "Type A: pulsing DC", "Type AC: pure AC only"]}
+### Where they're needed
+@viz {"k": "pairs", "items": [{"a": "Type AC", "b": "basic, increasingly restricted"}, {"a": "Type A", "b": "most homes"}, {"a": "Type F", "b": "washing machines, heat pumps with inverters"}, {"a": "Type B", "b": "EV chargers, some solar inverters"}]}
+### EV chargers
+Many EV chargers include a 6 mA DC detection device, allowing a Type A RCD upstream instead of a Type B.
+### Sensitivity
+@viz {"k": "list", "items": ["10 mA: special locations", "30 mA: personal protection", "300 mA: fire protection"]}
+> Electronics changed leakage currents; RCD types changed to match.
+
+# RCBOs
+An RCBO combines an MCB and an RCD in one device, giving each circuit both overcurrent and leakage protection.
+@viz {"k": "cmp", "l": {"t": "Shared RCD", "items": ["one fault trips several circuits"]}, "r": {"t": "RCBOs", "items": ["a fault trips only its own circuit"]}}
+### Benefits
+• Fewer nuisance trips across the house
+• Easier fault-finding
+• Fridge and freezer not affected by a fault elsewhere
+### Cost
+RCBOs cost more than separate devices, but are increasingly common in new installations.
+### Typical board
+@viz {"k": "flow", "steps": ["Main switch", "Surge protection", "RCBOs for each circuit"]}
+> One circuit, one RCBO: faults stay local.
+
+# Surge protection
+Lightning strikes and grid switching can cause voltage spikes of thousands of volts lasting microseconds. Surge protection devices (SPDs) divert them to earth.
+@viz {"k": "flow", "steps": ["Surge enters supply", "SPD conducts", "Energy diverted to earth", "Voltage limited", "Electronics protected"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Type 1", "b": "direct lightning risk, at origin"}, {"a": "Type 2", "b": "most homes, in the board"}, {"a": "Type 3", "b": "near sensitive equipment"}]}
+### What's at risk
+@viz {"k": "list", "items": ["Routers", "TVs", "Computers", "Boilers and heat pumps", "Solar inverters"]}
+### SPDs wear out
+Each surge consumes a little of the device's capacity. Many SPDs have indicator windows that change colour when they need replacing.
+> A small device in the board can save thousands of euros of electronics.
+
+# Test your RCD
+RCDs have a test button that simulates a leakage current. Pressing it periodically checks the mechanism isn't stuck.
+@viz {"k": "list", "items": ["Press test button", "RCD should trip", "Reset", "If not, call electrician"]}
+### How often
+Manufacturers commonly recommend testing every few months. It takes seconds.
+### What the button tests
+@viz {"k": "cmp", "l": {"t": "Test button", "items": ["mechanism works"]}, "r": {"t": "Electrician's tester", "items": ["trip time and sensitivity"]}}
+### Tip
+Testing switches off the protected circuits, so reset clocks and check the fridge and freezer afterwards.
+> A stuck RCD gives no protection until you need it.
+
+# Double insulation
+Some appliances have no earth wire because they're double insulated (Class II). Two independent layers of insulation protect the user instead.
+@viz {"k": "pairs", "items": [{"a": "Class I", "b": "earthed metal case, three-core cable"}, {"a": "Class II", "b": "double insulated, two-core cable, square-in-square symbol"}, {"a": "Class III", "b": "extra-low voltage supply"}]}
+### Examples
+@viz {"k": "list", "items": ["Hair dryers", "Power tools", "TVs", "Chargers", "Lamps"]}
+### The symbol
+A square inside a square on the label means double insulation. It doesn't need an earth connection.
+### Damage
+If the outer casing cracks, the double insulation is compromised. Damaged Class II appliances should be repaired or replaced.
+> No earth pin doesn't mean less safe, if it's double insulated.
+
+# Fuses
+A fuse is a thin conductor designed to melt when current exceeds its rating, breaking the circuit. It works once and must then be replaced.
+@viz {"k": "cmp", "l": {"t": "Fuse", "items": ["simple", "reliable", "single use"]}, "r": {"t": "Breaker", "items": ["resettable", "easier", "slightly more complex"]}}
+### Replacing correctly
+@viz {"k": "fix", "items": [{"w": "Replace with a higher rating or wire", "r": "Replace with the same rating"}]}
+### Types
+@viz {"k": "list", "items": ["Rewireable", "Cartridge", "Plug fuses (UK)", "Car blade fuses", "Electronics glass fuses"]}
+### Old installations
+Older Portuguese homes may still have fuse boards and no RCD. Upgrading to modern breakers and RCDs is one of the most valuable electrical safety improvements.
+> If a fuse blows repeatedly, the fault is elsewhere.
+
+== el-3phase
+
+# Three waves, offset
+Three-phase power uses three alternating voltages of the same frequency, each shifted by a third of a cycle (120°). Together they deliver power smoothly and efficiently.
+@viz {"k": "cycle", "steps": ["L1 peaks", "120° later: L2 peaks", "120° later: L3 peaks", "back to L1"]}
+### Why smooth matters
+@viz {"k": "cmp", "l": {"t": "Single-phase", "items": ["power pulses 100 times a second", "drops to zero"]}, "r": {"t": "Three-phase", "items": ["total power almost constant", "never zero"]}}
+Constant power means motors run smoothly with less vibration.
+### Balanced loads
+When the three phases carry equal loads, their currents cancel in the neutral, which then carries almost nothing.
+### Invention
+Polyphase AC systems were developed in the late 1880s by Nikola Tesla, Galileo Ferraris and Mikhail Dolivo-Dobrovolsky, who built the first three-phase transmission line in Germany in 1891.
+> Three overlapping waves deliver smooth, continuous power.
+
+# 230 V and 400 V
+A three-phase supply provides two voltages: 230 V between any phase and neutral, and 400 V between any two phases.
+@viz {"k": "terms", "f": "V line = √3 × V phase", "items": [{"s": "V phase", "m": "230 V"}, {"s": "√3", "m": "about 1.732"}, {"s": "V line", "m": "about 400 V"}]}
+### Using both
+@viz {"k": "pairs", "items": [{"a": "Phase to neutral", "b": "230 V: sockets, lights"}, {"a": "Phase to phase", "b": "400 V: three-phase motors, big heaters"}, {"a": "Three phases together", "b": "EV chargers, heat pumps"}]}
+### Why √3?
+Because the waves are 120° apart, the difference between two phases is √3 times the voltage of one phase, not double.
+### At home
+Even in a three-phase home, normal sockets still provide 230 V. Only special outlets or appliances use 400 V.
+> 230 V to neutral, 400 V between phases.
+
+# Three-phase power
+Three-phase systems carry about three times the power of a single phase using the same current per conductor, with only modest extra copper.
+@viz {"k": "terms", "f": "P = √3 × V line × I × cos φ", "items": [{"s": "V line", "m": "400 V"}, {"s": "I", "m": "current per phase"}, {"s": "cos φ", "m": "power factor"}]}
+### Examples
+ex: 16 A three-phase at 400 V | P = 1.732 × 400 × 16 | ≈ 11 kW
+ex: 32 A three-phase at 400 V | P ≈ 22 kW
+### Comparison
+@viz {"k": "bars", "unit": "max power at 32 A per conductor, kW", "items": [{"l": "Single-phase", "v": 7.4}, {"l": "Three-phase", "v": 22.0, "hi": true}]}
+### Copper efficiency
+@viz {"k": "cmp", "l": {"t": "Three single-phase circuits", "items": ["six conductors"]}, "r": {"t": "One three-phase circuit", "items": ["three or four conductors", "same power"]}}
+> Same current per wire, three times the power.
+
+# Why industry loves it
+Three-phase power is the standard for generation, transmission and industrial loads worldwide.
+@viz {"k": "list", "items": ["Self-starting motors", "Smaller motors", "Less copper", "Smoother power", "Efficient transmission"]}
+### Motors
+Three-phase currents create a rotating magnetic field naturally. Induction motors start and run without extra starting devices, and are smaller than single-phase motors of the same power.
+### Transmission
+@viz {"k": "cmp", "l": {"t": "Single-phase", "items": ["two conductors", "pulsating power"]}, "r": {"t": "Three-phase", "items": ["three conductors", "constant power", "less copper per kW"]}}
+### Why not more phases?
+Six or twelve phases are possible, but three is the best compromise between smoothness and the number of conductors.
+> Three phases: the sweet spot of power engineering.
+
+# Three-phase at home
+Many Portuguese homes have single-phase supply, but larger homes and those with heavy loads can opt for three-phase.
+@viz {"k": "cmp", "l": {"t": "Single-phase", "items": ["simpler", "up to about 10.35 kVA", "enough for most flats"]}, "r": {"t": "Three-phase", "items": ["higher contracted power", "11–22 kW EV charging", "big heat pumps"]}}
+### When it makes sense
+@viz {"k": "list", "items": ["Fast EV charging", "Large heat pumps", "Workshops with machines", "Large houses", "Big solar systems"]}
+### Costs
+• Installation changes and possibly a new meter
+• Fixed charges depend on contracted power, not the number of phases
+### Distributing circuits
+Circuits are spread across the three phases so each carries a similar load.
+!? Some EVs can only charge at 7.4 kW on single phase but 11 kW on three-phase, cutting home charging time significantly.
+
+# Balancing the phases
+Loads should be spread evenly across the three phases. Unbalance wastes capacity and puts extra current on the neutral.
+@viz {"k": "bars", "unit": "example current per phase, A", "items": [{"l": "L1 (overloaded)", "v": 28.0, "hi": true}, {"l": "L2", "v": 8.0}, {"l": "L3", "v": 6.0}]}
+### Problems with unbalance
+• One phase trips while others have spare capacity
+• Neutral carries the imbalance current
+• Three-phase motors run hotter and less efficiently
+### Planning
+@viz {"k": "flow", "steps": ["List circuits and loads", "Assign to phases", "Check peak per phase", "Adjust", "Verify with clamp meter"]}
+### Harmonics
+Some electronic loads produce harmonic currents that add up in the neutral instead of cancelling, so neutrals in office buildings may carry high currents even when phases are balanced.
+> Share the load and every phase does its fair part.
+
+# Phase rotation
+The order in which the three phases peak (L1, L2, L3) is called phase rotation or sequence. It determines which way a three-phase motor spins.
+@viz {"k": "fix", "items": [{"w": "Motor runs backwards after installation", "r": "Swap any two phases"}]}
+### Why it matters
+@viz {"k": "list", "items": ["Pumps", "Fans", "Conveyors", "Compressors", "Lifts"]}
+A pump running backwards may move little water and can be damaged; a conveyor may run the wrong way.
+### Checking
+Electricians use a phase rotation tester before connecting motors.
+@viz {"k": "flow", "steps": ["Connect tester to L1, L2, L3", "Indicator shows clockwise or anticlockwise", "Correct if needed"]}
+> Swap two phases, reverse the motor.
+
+# Star and delta
+Three-phase windings can be connected in two ways, each giving a different voltage across each winding.
+@viz {"k": "cmp", "l": {"t": "Star (Y)", "items": ["one end of each winding joined", "230 V per winding on 400 V supply", "lower current"]}, "r": {"t": "Delta (Δ)", "items": ["windings in a triangle", "400 V per winding", "full power"]}}
+### Star-delta starting
+@viz {"k": "flow", "steps": ["Start in star: lower voltage per winding", "Starting current about a third", "Motor reaches speed", "Switch to delta: full power"]}
+### Why reduce starting current
+Large motors draw five to seven times their rated current when starting, causing voltage dips. Star-delta starters, soft starters and drives reduce this.
+### Transformers too
+Distribution transformers often use delta on the high-voltage side and star on the low-voltage side, providing a neutral for 230 V loads.
+> Star to start gently, delta to run at full power.
+
+# Grids are three-phase worldwide
+From generator to street transformer, power travels as three-phase. Single-phase homes are connected to one of the three phases.
+@viz {"k": "flow", "steps": ["Generator (3-phase)", "Transmission (3 conductors)", "Distribution", "Street transformer", "Each home on one phase"]}
+### Spreading homes across phases
+Distribution companies connect neighbouring homes to different phases to balance the load on each transformer.
+### Why your neighbour may have power
+In a fault affecting one phase, some homes in a street lose power while neighbours on other phases don't.
+### Overhead lines
+@viz {"k": "pairs", "items": [{"a": "Three wires", "b": "three phases (high voltage)"}, {"a": "Four wires", "b": "three phases plus neutral (low voltage)"}, {"a": "Extra wire on top", "b": "earth wire for lightning"}]}
+> Your single phase is one third of a three-phase system.
+
+# Spotting it
+You can recognise a three-phase installation by its board, meter and outlets.
+@viz {"k": "list", "items": ["Three- or four-pole breakers", "Three-phase meter", "Red CEE sockets", "Five-core cables", "Three-phase RCDs"]}
+### CEE sockets
+@viz {"k": "pairs", "items": [{"a": "Blue CEE", "b": "230 V single-phase, outdoor or caravan"}, {"a": "Red CEE", "b": "400 V three-phase, 5 pins"}, {"a": "Sizes", "b": "16 A, 32 A, 63 A"}]}
+### Cables
+Three-phase supply cables have five cores: three phases (brown, black, grey), neutral (blue) and earth (green-yellow).
+### Meter
+A three-phase smart meter displays readings per phase and total.
+> Five-core cables and red sockets mean three-phase.
+
+== el-pf
+
+# Real and apparent power
+When voltage and current don't rise and fall together, volts times amps (apparent power) exceeds the power doing useful work (real power).
+@viz {"k": "terms", "f": "Real power (W) = V × I × cos φ", "items": [{"s": "V × I", "m": "apparent power in VA"}, {"s": "cos φ", "m": "power factor"}, {"s": "φ", "m": "angle between voltage and current"}]}
+### Example
+ex: Motor draws 10 A at 230 V | Apparent power = 2,300 VA | With power factor 0.8: real power = 1,840 W
+### What's happening
+@viz {"k": "cmp", "l": {"t": "Resistive load", "items": ["voltage and current in step", "PF = 1"]}, "r": {"t": "Inductive load", "items": ["current lags voltage", "PF < 1"]}}
+### Why it costs
+The extra current still flows through cables and transformers, causing losses and taking capacity, even though it does no useful work.
+> Power factor measures how usefully current is used.
+
+# The beer analogy
+A glass of beer helps visualise power factor: liquid, foam and the whole glass.
+@viz {"k": "stack", "items": ["Whole glass: apparent power (VA)", "Foam: reactive power (var)", "Beer: real power (W)"]}
+### Reading the analogy
+@viz {"k": "pairs", "items": [{"a": "Real power", "b": "the beer: does the work"}, {"a": "Reactive power", "b": "the foam: takes space, no work"}, {"a": "Apparent power", "b": "the full glass: what the system must carry"}]}
+### Less foam is better
+A high power factor means mostly beer: the same glass delivers more useful power.
+### Where it falls short
+Reactive power isn't truly wasted: it sustains magnetic fields that motors and transformers need. It just flows back and forth without being consumed.
+> Pay for the beer, but the glass must hold the foam too.
+
+# What causes it
+Low power factor comes from loads that store energy in magnetic or electric fields, or that draw current in pulses.
+@viz {"k": "cmp", "l": {"t": "Displacement", "items": ["motors, transformers", "current lags voltage"]}, "r": {"t": "Distortion", "items": ["cheap electronics", "current in pulses", "harmonics"]}}
+### Inductive loads
+@viz {"k": "list", "items": ["Induction motors", "Transformers", "Fluorescent ballasts", "Welding machines"]}
+Coils store energy in magnetic fields during part of each cycle and release it later, so their current lags the voltage.
+### Electronics
+Simple power supplies charge a capacitor only near the voltage peak, drawing short spikes of current. This distortion also lowers power factor.
+### Capacitive loads
+Long underground cables and some LED drivers draw leading current, partly offsetting inductive loads.
+> Coils make current lag; cheap electronics make it spiky.
+
+# Why it matters
+A low power factor means more current for the same useful work, increasing losses and requiring bigger equipment.
+@viz {"k": "bars", "unit": "current needed for 10 kW at 400 V three-phase, A", "items": [{"l": "PF 1.0", "v": 14.4, "hi": true}, {"l": "PF 0.9", "v": 16.0}, {"l": "PF 0.8", "v": 18.0}, {"l": "PF 0.6", "v": 24.0}]}
+### Consequences
+@viz {"k": "list", "items": ["Bigger cables", "Higher losses", "Larger transformers", "Voltage drop", "Penalty charges"]}
+### Utility charges
+In Portugal, larger commercial and industrial customers are charged for reactive energy when their power factor falls below set thresholds, encouraging correction.
+### Grid perspective
+Reactive power also affects voltage levels across the grid. Operators manage it carefully, and inverters at solar farms help regulate it.
+> Poor power factor makes everything carry more current than necessary.
+
+# Correction with capacitors
+Capacitors draw current that leads the voltage, cancelling the lagging current of motors. Factories install capacitor banks to keep the power factor close to 1.
+@viz {"k": "flow", "steps": ["Motor current lags", "Capacitor current leads", "They cancel", "Supply sees mostly real power"]}
+### Types of correction
+@viz {"k": "pairs", "items": [{"a": "Fixed", "b": "one capacitor per motor"}, {"a": "Automatic banks", "b": "switch capacitors in steps as load changes"}, {"a": "Active filters", "b": "electronics that correct dynamically"}]}
+### Typical target
+Many installations aim for a power factor of 0.95 or above, avoiding penalties and freeing capacity.
+### Caution
+Over-correction makes the power factor leading, which can cause overvoltage. Capacitors can also resonate with harmonics, so design matters.
+> Capacitors supply the reactive power locally so the grid doesn't have to.
+
+# Units: W, VA, var
+Three related units describe the components of AC power.
+@viz {"k": "pairs", "items": [{"a": "W (watt)", "b": "real power: does work"}, {"a": "var", "b": "reactive power: oscillates"}, {"a": "VA (volt-ampere)", "b": "apparent power: what wiring carries"}, {"a": "Wh / kWh", "b": "energy over time"}]}
+### Why VA ratings
+UPS units, generators and transformers are rated in VA or kVA because their windings and electronics must handle the total current, whatever the power factor.
+ex: UPS rated 1,000 VA, power factor 0.6 | Maximum real power = 600 W
+### Generators
+Generators are usually rated in kVA at a power factor of 0.8. A 10 kVA generator delivers about 8 kW of real power.
+> Watts do the work; VA sizes the equipment.
+
+# The power triangle
+Real power and reactive power are at right angles, like two sides of a right-angled triangle. Apparent power is the hypotenuse.
+@viz {"k": "terms", "f": "VA² = W² + var²", "items": [{"s": "W", "m": "real power"}, {"s": "var", "m": "reactive power"}, {"s": "VA", "m": "apparent power"}, {"s": "", "m": "cos φ = W ÷ VA"}]}
+### Example
+ex: Real power 8 kW, reactive 6 kvar | Apparent = √(64 + 36) = 10 kVA | Power factor = 0.8
+### Using it
+@viz {"k": "pairs", "items": [{"a": "Known W and PF", "b": "find VA = W ÷ PF"}, {"a": "Known VA and PF", "b": "find W = VA × PF"}, {"a": "Correction needed", "b": "reduce var"}]}
+### Angle
+@viz {"k": "scale", "lo": 0.0, "hi": 90.0, "unit": "degrees", "items": [{"l": "PF 1.0", "v": 0.0, "hi": true}, {"l": "PF 0.9", "v": 26.0}, {"l": "PF 0.8", "v": 37.0}, {"l": "PF 0.5", "v": 60.0}]}
+> The smaller the angle, the closer to 1 the power factor.
+
+# Your home bill
+Portuguese households pay only for active energy (kWh), not reactive energy. But contracted power is in kVA, which reflects current capacity.
+@viz {"k": "cmp", "l": {"t": "Households", "items": ["pay kWh", "contracted power in kVA", "no reactive charges"]}, "r": {"t": "Businesses", "items": ["pay kWh", "reactive energy charges above thresholds"]}}
+### Why kVA for contracted power
+The limit protects cables and network capacity, which depend on current, not on how useful that current is. kVA captures current directly.
+ex: 6.9 kVA | ÷ 230 V | = 30 A
+### At home
+Most household loads are resistive or have power factor correction, so kW and kVA are similar. Old motors and cheap electronics lower it slightly.
+> At home you pay for watts; your limit is in volt-amps.
+
+# Power factor of devices
+Different appliances have very different power factors, depending on how they draw current.
+@viz {"k": "bars", "unit": "typical power factor (approx.)", "items": [{"l": "Kettle, heater", "v": 1.0, "hi": true}, {"l": "Laptop with PFC", "v": 0.95}, {"l": "Motor full load", "v": 0.85}, {"l": "Motor light load", "v": 0.4}, {"l": "Cheap LED bulb", "v": 0.5}]}
+### Lightly loaded motors
+A motor running at a fraction of its rated load still needs its magnetising current, so its power factor drops sharply. Oversized motors waste capacity.
+### Small electronics
+Small LED bulbs and phone chargers often have low power factors, but their currents are tiny, so the impact is small.
+### Measuring
+Plug-in energy monitors often display power factor, a fun way to explore appliances at home.
+> Resistive loads are perfect; motors and cheap electronics are not.
+
+# PFC in chargers
+Power factor correction (PFC) circuits make electronic power supplies draw current that follows the voltage wave smoothly, instead of in spikes.
+@viz {"k": "flow", "steps": ["AC input", "PFC stage shapes current", "DC bus", "Converter", "Device"]}
+### Why required
+EU rules on harmonic currents (standard EN 61000-3-2) set limits for equipment above about 75 W, effectively requiring PFC in larger power supplies.
+### Benefits
+@viz {"k": "list", "items": ["Less current for same power", "Fewer harmonics", "Less heat in wiring", "Better use of grid capacity"]}
+### Active vs passive
+@viz {"k": "cmp", "l": {"t": "Passive PFC", "items": ["inductors", "simple", "heavier"]}, "r": {"t": "Active PFC", "items": ["electronics", "power factor above 0.95", "compact"]}}
+> Good chargers draw current as smoothly as a heater.
+
+== el-meter
+
+# One tool, many meters
+A multimeter combines a voltmeter, ammeter and ohmmeter in one instrument, plus extra functions.
+@viz {"k": "tree", "root": "Multimeter", "items": ["Voltage: AC and DC", "Current: mA and A", "Resistance: ohms", "Continuity: beeper", "Extras: diodes, capacitance, temperature"]}
+### Parts
+@viz {"k": "pairs", "items": [{"a": "Rotary dial", "b": "selects function and range"}, {"a": "COM socket", "b": "black lead, always"}, {"a": "V/Ω socket", "b": "red lead for most measurements"}, {"a": "A or mA socket", "b": "red lead for current only"}]}
+### Digital vs analogue
+@viz {"k": "cmp", "l": {"t": "Digital", "items": ["precise reading", "auto-range", "cheap"]}, "r": {"t": "Analogue", "items": ["needle shows trends", "harder to read"]}}
+### Choosing one
+• Auto-ranging and True RMS for convenience and accuracy
+• CAT III 600 V or better for household use
+• Fused current inputs
+> One instrument, many measurements: choose the function before touching anything.
+
+# Measuring voltage
+Voltage is measured across a component or between two points, with the meter in parallel. The meter's high resistance means it barely affects the circuit.
+@viz {"k": "flow", "steps": ["Choose V AC or V DC", "Black lead to COM, red to V", "Probes across two points", "Read"]}
+### AC or DC
+@viz {"k": "pairs", "items": [{"a": "Mains sockets", "b": "V AC (~)"}, {"a": "Batteries, USB, electronics", "b": "V DC (⎓)"}, {"a": "Solar panels", "b": "V DC"}]}
+### Typical readings
+@viz {"k": "bars", "unit": "typical voltages, V", "items": [{"l": "AA battery", "v": 1.5}, {"l": "USB", "v": 5.0}, {"l": "Car battery", "v": 12.6}, {"l": "Socket", "v": 230.0, "hi": true}]}
+### Safety
+• Hold probes by the insulated grips, fingers behind the guards
+• Connect black first, red second; remove red first
+• Never measure voltage with leads in the current socket
+> Voltage is measured across, in parallel.
+
+# Measuring current
+Current must flow through the meter: you break the circuit and insert the meter in series.
+@viz {"k": "cmp", "l": {"t": "Voltage", "items": ["in parallel", "across points"]}, "r": {"t": "Current", "items": ["in series", "break the circuit"]}}
+### Steps
+@viz {"k": "flow", "steps": ["Switch off", "Move red lead to A or mA", "Break circuit", "Insert meter", "Switch on", "Read", "Restore everything"]}
+### The classic mistake
+Leaving the red lead in the A socket and then measuring voltage creates a near short circuit through the meter, blowing its fuse or worse.
+@viz {"k": "fix", "items": [{"w": "Measure voltage with lead in A socket", "r": "Always return red lead to V socket"}]}
+### Easier options
+For mains currents, a clamp meter is safer and faster. For small electronics, the mA range is fine.
+> Current goes through the meter, so the circuit must be opened.
+
+# Resistance and continuity
+Resistance and continuity measurements use the meter's own small battery, so the circuit must be unpowered.
+@viz {"k": "list", "items": ["Switch off", "Disconnect if possible", "Measure", "Beep means continuity", "Check fuses and cables"]}
+### Uses
+@viz {"k": "pairs", "items": [{"a": "Continuity", "b": "find broken wires, check fuses, identify cables"}, {"a": "Resistance", "b": "check heating elements, resistors, sensors"}, {"a": "Diode test", "b": "check diodes and LEDs"}]}
+### Example
+ex: Kettle element at 230 V, 2.2 kW | Expected R = V² ÷ P ≈ 24 Ω | Open circuit (OL) = broken element
+### Why unpowered
+Measuring resistance on a live circuit gives wrong readings and can damage the meter.
+> Continuity mode is the fastest way to find a broken wire.
+
+# CAT ratings
+Measurement categories (CAT) indicate where a meter can safely be used. The closer to the supply origin, the higher the possible energy of transients.
+@viz {"k": "stack", "items": ["CAT IV: supply origin, meters, service cable", "CAT III: fixed installation, distribution boards", "CAT II: plug-in appliances", "CAT I: protected electronics"]}
+### Why it matters
+A high-energy voltage spike on a fuse board can make a poorly rated meter fail violently. CAT ratings guarantee the meter's insulation and protection can handle it.
+### Recommendation
+@viz {"k": "pairs", "items": [{"a": "Household fuse boards", "b": "at least CAT III 600 V"}, {"a": "Electronics bench", "b": "CAT II is fine"}, {"a": "Utility work", "b": "CAT IV"}]}
+### Leads count too
+Test leads have their own CAT ratings. The system rating is the lowest of meter and leads.
+> A cheap meter on a fuse board is a hazard, not a bargain.
+
+# Clamp meters
+A clamp meter measures current by sensing the magnetic field around a conductor, without breaking the circuit.
+@viz {"k": "fix", "items": [{"w": "Clamp around whole cable", "r": "Clamp around one conductor only"}]}
+### Why only one conductor
+Live and neutral carry equal currents in opposite directions. Clamp both and their fields cancel, reading zero.
+### Uses
+@viz {"k": "list", "items": ["Check circuit loads", "Find which appliance draws most", "Check phase balance", "Diagnose tripping breakers"]}
+### Leakage clamps
+Sensitive clamp meters can measure milliamp leakage by clamping both live and neutral: any reading is current escaping to earth, useful for finding nuisance RCD trips.
+### AC and DC
+Basic clamp meters measure only AC. DC clamps use Hall-effect sensors, useful for solar and battery systems.
+> Clamp one wire to measure current safely and quickly.
+
+# Auto-range and True RMS
+Two features that make a multimeter more convenient and more accurate.
+@viz {"k": "cmp", "l": {"t": "Manual range", "items": ["you choose the scale"]}, "r": {"t": "Auto-range", "items": ["meter chooses for you"]}}
+### True RMS
+@viz {"k": "cmp", "l": {"t": "Average-responding", "items": ["accurate only for pure sine waves"]}, "r": {"t": "True RMS", "items": ["accurate for distorted waveforms"]}}
+### Why it matters today
+Modern electrical systems are full of distorted waveforms from inverters, LED drivers, variable speed drives and chargers. Average-responding meters can be off by 30% or more on such signals.
+### When it doesn't matter
+For DC measurements and resistive loads on clean mains, any decent meter is accurate.
+> For modern electronics and inverters, True RMS is worth paying for.
+
+# Checking a socket
+A multimeter can check that a socket is live and correctly wired, though dedicated socket testers check more.
+@viz {"k": "pairs", "items": [{"a": "Live to neutral", "b": "about 230 V"}, {"a": "Live to earth", "b": "about 230 V"}, {"a": "Neutral to earth", "b": "near 0 V"}]}
+### What readings mean
+@viz {"k": "pairs", "items": [{"a": "L–N 230 V, L–E 0 V", "b": "earth missing"}, {"a": "L–N 0 V", "b": "no supply or open circuit"}, {"a": "N–E high", "b": "neutral fault"}]}
+### Socket testers
+Plug-in testers show wiring faults with lights, and some can trigger the RCD to check it trips. They're cheaper and faster for routine checks.
+### Safety
+Use proper probes with shrouded tips, CAT-rated, and never insert probes in a damaged socket.
+> Three measurements tell you if a socket is healthy.
+
+# Prove dead before you touch
+The most important electrical safety procedure: prove a circuit is dead before working on it. Never trust switches, labels or assumptions.
+@viz {"k": "flow", "steps": ["Identify circuit", "Isolate", "Lock off and label", "Test tester on known live", "Test circuit dead", "Re-test tester", "Work"]}
+### Why test the tester
+A broken tester reads "0 V" on a live circuit. Checking it on a known live source before and after proves it was working.
+### Common traps
+@viz {"k": "list", "items": ["Mislabelled breakers", "Shared neutrals", "Two-way lighting circuits", "Backfeed from solar or generators", "Capacitors holding charge"]}
+### Voltage indicators
+@viz {"k": "cmp", "l": {"t": "Non-contact pen", "items": ["quick indication", "can give false negatives"]}, "r": {"t": "Two-pole voltage tester", "items": ["reliable proof of dead"]}}
+> If you haven't tested it, assume it's live.
+
+# Reading batteries and sensors
+Multimeters are invaluable for electronics and battery checks.
+@viz {"k": "bars", "unit": "12 V lead-acid resting voltage vs charge", "items": [{"l": "12.6+ V", "v": 100.0}, {"l": "12.4 V", "v": 75.0}, {"l": "12.2 V", "v": 50.0}, {"l": "12.0 V", "v": 25.0}]}
+### Other batteries
+@viz {"k": "pairs", "items": [{"a": "Li-ion cell", "b": "4.2 V full, about 3.0 V empty"}, {"a": "AA alkaline", "b": "1.5–1.6 V new, below 1.2 V weak"}, {"a": "Coin cell CR2032", "b": "3.0 V new"}]}
+### Electronics
+• Check a 3.3 V rail on an ESP32 or Arduino board
+• Read sensor outputs, such as 0–10 V or 4–20 mA signals
+• Find which pin is ground
+### Load matters
+A weak battery can show normal voltage with no load but collapse under load. Testing under load gives a truer picture.
+> Resting voltage is a quick health check; load testing tells the full story.
+
+== el-ev
+
+# AC charging
+With AC charging, the car receives alternating current and converts it to DC with its own on-board charger. Most home and street charging is AC.
+@viz {"k": "flow", "steps": ["Grid AC", "Wallbox or socket", "Car's on-board charger converts to DC", "Battery"]}
+### Limits
+@viz {"k": "pairs", "items": [{"a": "On-board charger", "b": "usually 7–11 kW, some 22 kW"}, {"a": "Single-phase wallbox", "b": "up to 7.4 kW"}, {"a": "Three-phase wallbox", "b": "up to 11 or 22 kW"}]}
+### Charging speed is the lowest of
+@viz {"k": "list", "items": ["Wallbox power", "Supply capacity", "Car's on-board charger", "Cable rating"]}
+### Typical time
+ex: 50 kWh to add at 7.4 kW | ≈ 7 hours | ideal overnight
+> For AC, the car's own charger sets the speed.
+
+# DC fast charging
+DC fast chargers convert AC to DC inside the station and feed the battery directly, bypassing the car's on-board charger.
+@viz {"k": "cmp", "l": {"t": "AC", "items": ["car converts", "2–22 kW", "homes, streets"]}, "r": {"t": "DC", "items": ["station converts", "50–400 kW", "motorways, hubs"]}}
+### Power levels
+@viz {"k": "bars", "unit": "typical DC charger power, kW", "items": [{"l": "Older", "v": 50.0}, {"l": "Standard", "v": 150.0}, {"l": "High power", "v": 350.0, "hi": true}]}
+### Cost
+DC fast charging is usually more expensive per kWh than home charging, reflecting the costly equipment and grid connections.
+### Battery health
+Frequent fast charging adds some stress, but modern battery management limits power when the battery is cold or nearly full. Real-world data show modest effects for typical use.
+> DC is for journeys; AC is for daily life.
+
+# Charging power options
+Charging speed depends on the power available. Even slow charging covers most daily driving overnight.
+@viz {"k": "bars", "unit": "charging power, kW", "items": [{"l": "Normal socket", "v": 2.3}, {"l": "Single-phase wallbox", "v": 7.4}, {"l": "Three-phase 16 A", "v": 11.0}, {"l": "Three-phase 32 A", "v": 22.0}, {"l": "DC fast", "v": 150.0, "hi": true}]}
+### Range added per hour
+@viz {"k": "pairs", "items": [{"a": "2.3 kW socket", "b": "about 12–15 km per hour"}, {"a": "7.4 kW", "b": "about 40–50 km per hour"}, {"a": "11 kW", "b": "about 60–70 km per hour"}, {"a": "150 kW DC", "b": "several hundred km per hour"}]}
+### Domestic sockets
+A normal Schuko socket can charge slowly, but long sessions at 10 A heat sockets and plugs. A dedicated circuit or wallbox is safer for regular use.
+> Most people need only a modest home charger.
+
+# How long will it take?
+Estimating charging time is simple arithmetic, with a margin for losses and the slower final stage.
+@viz {"k": "terms", "f": "Time ≈ energy needed ÷ charging power × 1.1", "items": [{"s": "Energy", "m": "kWh to add"}, {"s": "Power", "m": "kW"}, {"s": "1.1", "m": "about 10% losses"}]}
+### Examples
+ex: 40 kWh at 7.4 kW | 40 ÷ 7.4 × 1.1 | ≈ 6 hours
+ex: 40 kWh at 11 kW | 40 ÷ 11 × 1.1 | ≈ 4 hours
+### Daily needs
+ex: 40 km a day × 0.16 kWh/km | = 6.4 kWh | about 1 hour at 7.4 kW
+### Practical tip
+Most EV owners don't charge from empty to full. They plug in at night and top up what they used that day.
+> Daily driving usually needs only an hour or two of home charging.
+
+# The charging curve
+DC charging power isn't constant. It's highest at low charge and tapers as the battery fills, to protect the cells.
+@viz {"k": "time", "events": [{"y": "10%", "l": "near peak power"}, {"y": "50%", "l": "still high"}, {"y": "80%", "l": "power falling"}, {"y": "100%", "l": "very slow"}]}
+### Why it tapers
+As the battery fills, cell voltage rises close to its limit. The BMS reduces current to avoid stressing the cells and causing lithium plating.
+### Road trip strategy
+@viz {"k": "pairs", "items": [{"a": "Arrive low", "b": "around 10–20%"}, {"a": "Charge to", "b": "about 80%"}, {"a": "Leave", "b": "the last 20% takes as long as the first 70%"}]}
+### Temperature
+Cold batteries charge slowly. Many EVs pre-condition the battery when you navigate to a fast charger, warming it for faster charging.
+> On trips, charge 10–80% often rather than to 100%.
+
+# 400 V and 800 V cars
+Most EVs use battery packs of around 400 V. Some newer models use 800 V architectures for faster charging and lighter wiring.
+@viz {"k": "terms", "f": "P = V × I", "items": [{"s": "Same power", "m": "double voltage, half current"}]}
+### Benefits of 800 V
+@viz {"k": "list", "items": ["Faster charging", "Thinner cables", "Less heat", "Lighter wiring"]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "800 V", "b": "Porsche Taycan, Hyundai Ioniq 5, Kia EV6, Audi e-tron GT"}, {"a": "400 V", "b": "most other EVs"}]}
+### Compatibility
+800 V cars can use 400 V chargers through internal converters or by switching battery halves, sometimes at reduced power.
+> Higher voltage lets the same cable carry more power.
+
+# Connectors in Europe
+Europe has standardised EV connectors, which makes charging simpler than in some other regions.
+@viz {"k": "pairs", "items": [{"a": "Type 2 (Mennekes)", "b": "AC standard in Europe"}, {"a": "CCS2", "b": "Type 2 plus two DC pins, fast charging"}, {"a": "CHAdeMO", "b": "older Japanese DC standard"}, {"a": "Schuko", "b": "household socket, slow"}]}
+### EU rules
+EU law requires public AC chargers to provide Type 2 and DC fast chargers to provide CCS2, ensuring compatibility across countries.
+### Tesla in Europe
+Tesla cars sold in Europe use CCS2, and many Tesla Superchargers in Europe are open to other brands.
+### Cables
+@viz {"k": "cmp", "l": {"t": "Tethered", "items": ["cable attached to charger"]}, "r": {"t": "Untethered", "items": ["bring your own Type 2 cable"]}}
+> In Europe, Type 2 and CCS2 cover almost every car and charger.
+
+# Smart charging at home
+Smart wallboxes adjust charging to prices, solar production and household load, saving money and avoiding tripping the main breaker.
+@viz {"k": "list", "items": ["Follow cheap tariffs", "Use solar surplus", "Balance household load", "Schedule by app", "Monitor energy"]}
+### Load balancing
+@viz {"k": "flow", "steps": ["Sensor measures house consumption", "Wallbox reduces charging when oven is on", "Increases again later", "Main breaker never trips"]}
+### Solar charging
+In solar mode, the wallbox charges only with surplus solar power. Most cars need at least about 1.4 kW (6 A) to charge, so there must be enough surplus.
+### Requirements in Portugal
+A wallbox should be installed on a dedicated circuit with appropriate RCD protection by a certified installer. Condominium rules allow residents to install chargers in their parking spaces under specific procedures.
+> Smart charging uses cheap, clean hours without tripping the house.
+
+# Mobi.E in Portugal
+Portugal's public charging network is coordinated by Mobi.E, which manages the platform that connects charging operators, electricity suppliers for mobility and users.
+@viz {"k": "flow", "steps": ["User with card or app", "Charger operator", "Mobi.E platform", "Supplier bills user", "Fees to operator and network"]}
+### The players
+@viz {"k": "pairs", "items": [{"a": "OPC", "b": "charging point operator"}, {"a": "CEME", "b": "mobility electricity supplier"}, {"a": "Mobi.E", "b": "managing entity"}, {"a": "User", "b": "pays through supplier or app"}]}
+### What you pay
+@viz {"k": "list", "items": ["Energy (CEME)", "Operator fee (OPC)", "Network access", "Mobi.E fee", "Taxes"]}
+### Changing rules
+EU rules (AFIR) now require new fast chargers to accept card payments directly, and Portugal has been reforming its charging model to make ad-hoc payment simpler.
+!? Mobi.E was launched in 2010, making Portugal one of the first countries with a nationwide interoperable charging network.
+
+# Efficiency and losses
+Not all energy from the grid reaches the battery. Some is lost as heat in the charger, cables and battery.
+@viz {"k": "bars", "unit": "energy reaching the battery, % (approx.)", "items": [{"l": "AC 2.3 kW", "v": 85.0}, {"l": "AC 7–11 kW", "v": 90.0, "hi": true}, {"l": "DC fast", "v": 92.0}]}
+### Why low power is less efficient
+The car's electronics, pumps and battery management run during charging. At low power, these fixed losses form a larger share.
+### What it means
+ex: Wallbox meter shows 55 kWh | Battery receives about 50 kWh | Losses about 10%
+### Reducing losses
+@viz {"k": "list", "items": ["Charge at moderate power", "Avoid very cold batteries", "Keep cables short", "Use quality equipment"]}
+> Pay for the kWh at the plug, not only what reaches the battery.
+
+== el-tariffs
+
+# Reading the bill
+A Portuguese electricity bill has several components. Understanding them helps choose the right tariff and contracted power.
+@viz {"k": "tree", "root": "Bill", "items": ["Fixed charge: contracted power per day", "Energy: price per kWh", "Network access: grid costs", "Taxes: IVA, IEC, DGEG fee", "Audiovisual contribution: RTP funding"]}
+### Typical breakdown
+@viz {"k": "bars", "unit": "share of a typical bill, % (illustrative)", "items": [{"l": "Energy", "v": 55.0, "hi": true}, {"l": "Fixed power charge", "v": 15.0}, {"l": "Network costs", "v": 15.0}, {"l": "Taxes and fees", "v": 15.0}]}
+### Taxes
+@viz {"k": "pairs", "items": [{"a": "IVA", "b": "reduced rate on part of consumption for smaller contracts, 23% on the rest"}, {"a": "CAV", "b": "audiovisual contribution, a few euros a month"}, {"a": "IEC", "b": "small special consumption tax per kWh"}]}
+### Social tariff
+Low-income households can receive the "tarifa social", a significant automatic discount on electricity.
+> Look at both the kWh price and the fixed daily charge when comparing offers.
+
+# Time-of-use tariffs
+Time-of-use tariffs charge different prices at different times of day. Cheaper off-peak hours reward shifting consumption.
+@viz {"k": "cmp", "l": {"t": "Simple", "items": ["same price all day"]}, "r": {"t": "Bi-horário", "items": ["cheaper off-peak (vazio), mostly at night and weekends", "Tri-horário: peak, shoulder and off-peak"]}}
+### Daily vs weekly cycles
+@viz {"k": "pairs", "items": [{"a": "Daily cycle", "b": "off-peak hours at the same times every day"}, {"a": "Weekly cycle", "b": "more off-peak hours on weekends"}]}
+### Typical off-peak window
+In the daily cycle, off-peak typically runs overnight (for example 22:00–08:00). Exact times depend on the cycle and season.
+### Dynamic tariffs
+Some suppliers offer prices that follow the wholesale market hour by hour (indexed tariffs), which can be very cheap at midday on sunny days or at night.
+> The best tariff depends on when you use electricity.
+
+# When bi-horário pays off
+Bi-horário tariffs have cheaper off-peak prices but more expensive peak prices than simple tariffs. They pay off only if you shift enough consumption.
+@viz {"k": "list", "items": ["EV charging", "Water heater on timer", "Washing machine", "Dishwasher", "Tumble dryer"]}
+### Break-even
+ex: Off-peak 40% of use | Typically close to break-even | Above 40%: bi-horário usually wins
+### Calculate
+@viz {"k": "flow", "steps": ["Check smart meter data", "Split by hours", "Compare tariffs with simulators", "Choose"]}
+### Simulators
+ERSE, the Portuguese energy regulator, provides an online simulator to compare tariffs and suppliers.
+> Shift heavy, flexible loads to night and bi-horário can save real money.
+
+# Where the kWh go
+Household electricity use depends on whether heating and hot water are electric, and on appliances and habits.
+@viz {"k": "bars", "unit": "typical share of household electricity, % (illustrative)", "items": [{"l": "Hot water and heating", "v": 35.0, "hi": true}, {"l": "Cooking", "v": 15.0}, {"l": "Fridge and freezer", "v": 15.0}, {"l": "Laundry and dishes", "v": 12.0}, {"l": "Lighting", "v": 6.0}, {"l": "Electronics", "v": 17.0}]}
+### An EV changes everything
+ex: 15,000 km a year × 0.16 kWh/km | = 2,400 kWh | similar to a typical home's total consumption
+### Where savings are biggest
+@viz {"k": "list", "items": ["Heating and hot water", "Old fridges", "Tumble dryers", "Standby", "Lighting"]}
+### Measure first
+A plug-in energy monitor or smart meter data reveals your real big users.
+> Heat is usually the biggest slice of the electricity pie.
+
+# The fridge runs all year
+Fridges and freezers run 24 hours a day, every day. Even small differences in efficiency add up over their 10–15-year lifetime.
+@viz {"k": "bars", "unit": "yearly consumption, kWh (approx.)", "items": [{"l": "Efficient new", "v": 180.0}, {"l": "Average", "v": 300.0}, {"l": "Old (15+ years)", "v": 550.0, "hi": true}]}
+### Lifetime cost
+ex: Old fridge: 550 kWh vs new: 180 kWh | Difference 370 kWh × €0.20 = €74 a year | Over 10 years: €740
+### Good habits
+@viz {"k": "list", "items": ["Set fridge to about 4 °C", "Freezer to −18 °C", "Keep coils clean", "Check door seals", "Let food cool before storing"]}
+### Position
+Keep fridges away from ovens, radiators and direct sun, with space for air to circulate around the coils.
+> An old fridge can cost more to run than to replace.
+
+# Energy labels
+EU energy labels show an appliance's efficiency class and annual consumption, letting you compare models at a glance.
+@viz {"k": "stack", "items": ["A: most efficient", "B", "C", "D", "E", "F", "G: least efficient"]}
+### The 2021 rescale
+@viz {"k": "cmp", "l": {"t": "Old label", "items": ["A+++ to D", "most products at the top"]}, "r": {"t": "New label", "items": ["A to G", "few products reach A at launch"]}}
+So a new "C" fridge can be better than an old "A+++" one.
+### What the label shows
+@viz {"k": "list", "items": ["Efficiency class", "Annual energy use (kWh)", "Capacity or size", "Noise", "QR code to EU database"]}
+### Products covered
+@viz {"k": "pairs", "items": [{"a": "Rescaled in 2021", "b": "fridges, dishwashers, washing machines, TVs, lamps"}, {"a": "Older scales", "b": "ovens, water heaters, air conditioners (being updated)"}]}
+> Compare kWh per year, not just the letter.
+
+# LED lighting
+LED bulbs use around 80–90% less electricity than incandescent bulbs for the same light, and last far longer.
+@viz {"k": "bars", "unit": "power for about 800 lumens, W", "items": [{"l": "Incandescent", "v": 60.0}, {"l": "Halogen", "v": 42.0}, {"l": "CFL", "v": 13.0}, {"l": "LED", "v": 8.0, "hi": true}]}
+### Lumens not watts
+Light output is measured in lumens. About 800 lumens equals an old 60 W bulb; 1,500 lumens equals 100 W.
+### Colour temperature
+@viz {"k": "pairs", "items": [{"a": "2,700 K", "b": "warm white, homely"}, {"a": "4,000 K", "b": "neutral white, kitchens, offices"}, {"a": "6,500 K", "b": "cool daylight, workshops"}]}
+### Lifespan
+@viz {"k": "nums", "items": [{"v": "1,000 hours", "l": "incandescent lifespan"}, {"v": "15,000–25,000 hours", "l": "LED lifespan"}, {"v": "2018", "l": "EU phased out most halogen bulbs"}]}
+> Swap the most-used bulbs first: they save the most.
+
+# Water heaters
+Electric water heaters (termoacumuladores) are often among the largest single electricity users in Portuguese homes.
+@viz {"k": "bars", "unit": "yearly energy for a family's hot water, kWh (approx.)", "items": [{"l": "Electric heater", "v": 2500.0}, {"l": "Heat pump water heater", "v": 850.0, "hi": true}]}
+### Saving tips
+@viz {"k": "list", "items": ["Timer for off-peak hours", "Thermostat around 55–60 °C", "Insulate pipes", "Shorter showers", "Low-flow showerheads"]}
+### Hygiene
+Very low storage temperatures can encourage Legionella bacteria. Many guidelines recommend storing at 60 °C, or heating to that level regularly.
+### Heat pump water heaters
+@viz {"k": "cmp", "l": {"t": "Electric resistance", "items": ["1 kWh in, 1 kWh heat"]}, "r": {"t": "Heat pump", "items": ["1 kWh in, about 3 kWh heat"]}}
+### Solar thermal
+Solar water heating panels are common in Portugal and can cover a large share of hot water needs, especially from spring to autumn.
+> A timer and the right temperature are the cheapest upgrades.
+
+# Monitoring
+Seeing consumption in real time reveals hidden loads and expensive habits. Smart meters and home monitors make it easy.
+@viz {"k": "flow", "steps": ["Smart meter or clamp sensor", "App or Home Assistant", "Live and historical data", "Insights", "Changes"]}
+### Options
+@viz {"k": "pairs", "items": [{"a": "Supplier app", "b": "daily and monthly data from smart meter"}, {"a": "Plug-in monitor", "b": "one appliance"}, {"a": "Clamp monitor", "b": "whole house in real time"}, {"a": "Home Assistant", "b": "integrates everything"}]}
+### What people discover
+@viz {"k": "list", "items": ["High standby at night", "Old fridge or freezer", "Water heater running at peak", "Forgotten heaters", "Pool pumps"]}
+### Base load
+Check consumption at 3 am when nothing should be running. That "base load" reveals always-on devices, often 100–300 W.
+> You can't save what you can't see.
+
+# Self-consumption communities
+Portugal allows renewable energy communities (CER) and collective self-consumption: neighbours, businesses and municipalities share solar production through the grid.
+@viz {"k": "flow", "steps": ["Solar on a roof", "Production measured", "Shared among members by agreed rules", "Members' bills reduced"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Collective self-consumption", "b": "e.g. a building's residents share rooftop solar"}, {"a": "Renewable energy community", "b": "wider group, legal entity"}, {"a": "Network fees", "b": "paid on energy shared through the grid"}]}
+### Benefits
+@viz {"k": "list", "items": ["Use roofs without owners' own consumption", "Lower bills", "Local energy", "Help vulnerable households"]}
+### Legal basis
+Decree-Law 15/2022 set the framework for self-consumption and energy communities in Portugal, building on EU rules.
+> Sunshine on one roof can lower bills across a neighbourhood.
+
+== el-heat
+
+# Resistive heating
+Resistive heaters turn electricity into heat as current flows through a resistance. Every kilowatt-hour of electricity becomes a kilowatt-hour of heat: 100% efficient, but not the cheapest way to heat.
+@viz {"k": "flow", "steps": ["Current through element", "Resistance", "Electrical energy becomes heat", "Room, water or food warms"]}
+### Where it's used
+@viz {"k": "list", "items": ["Kettles", "Ovens", "Water heaters", "Portable heaters", "Hair dryers", "Irons"]}
+### 100% efficient but expensive
+@viz {"k": "cmp", "l": {"t": "Resistive heater", "items": ["1 kWh in, 1 kWh heat"]}, "r": {"t": "Heat pump", "items": ["1 kWh in, 3–4 kWh heat"]}}
+A heater converts all its electricity to heat, but a heat pump moves extra heat from outside, delivering several times more heat for the same electricity.
+### When resistive makes sense
+• Small, occasional needs: a bathroom heater for a few minutes
+• Very well-insulated homes with tiny heating demand
+• Kettles and cooking, where heat is needed fast and locally
+> Converting electricity to heat is easy; moving heat is smarter.
+
+# Heat pumps: 3 to 4 times better
+A heat pump uses electricity to move heat from outside into the home, like a fridge working in reverse. It delivers far more heat than the electricity it uses.
+@viz {"k": "bars", "unit": "heat delivered per kWh of electricity, kWh", "items": [{"l": "Resistive heater", "v": 1.0}, {"l": "Heat pump, cold day", "v": 2.5}, {"l": "Heat pump, average", "v": 3.5, "hi": true}, {"l": "Heat pump, mild day", "v": 4.5}]}
+### How it works
+@viz {"k": "flow", "steps": ["Refrigerant absorbs heat from outside air", "Compressor raises its temperature", "Releases heat indoors", "Expands and cools", "Repeats"]}
+### COP and SCOP
+@viz {"k": "pairs", "items": [{"a": "COP", "b": "efficiency at one moment"}, {"a": "SCOP", "b": "average over a heating season"}, {"a": "Higher", "b": "better"}, {"a": "Typical SCOP", "b": "3–4 in mild climates"}]}
+### Portugal's advantage
+Mild winters make heat pumps especially efficient in Portugal: the warmer the outside air, the less work the compressor must do.
+> A heat pump is a heat mover, not a heat maker.
+
+# Air-to-air vs air-to-water
+Heat pumps come in two main types, depending on how they deliver heat indoors.
+@viz {"k": "cmp", "l": {"t": "Air-to-air", "items": ["split air conditioners", "heat and cool air", "quick", "cheaper"]}, "r": {"t": "Air-to-water", "items": ["heat water for radiators, underfloor heating, hot taps"]}}
+### Choosing
+@viz {"k": "pairs", "items": [{"a": "Flat without radiators", "b": "air-to-air splits"}, {"a": "House with radiators", "b": "air-to-water"}, {"a": "Underfloor heating", "b": "air-to-water, very efficient"}, {"a": "Hot water only", "b": "heat pump water heater"}]}
+### Underfloor heating
+Underfloor systems need water at only 30–40 °C, which lets heat pumps work at their most efficient.
+### Cooling bonus
+Air-to-air units also cool in summer, increasingly useful during Portuguese heatwaves.
+> Splits for rooms; air-to-water for whole-house systems.
+
+# Oil-filled vs convector vs radiant
+All resistive heaters turn one kilowatt-hour into one kilowatt-hour of heat. They differ in how they deliver it and how it feels.
+@viz {"k": "pairs", "items": [{"a": "Oil-filled radiator", "b": "slow to warm, retains heat, gentle"}, {"a": "Convector", "b": "warms air fast, quick response"}, {"a": "Radiant panel", "b": "warms people and objects directly"}, {"a": "Fan heater", "b": "fast and noisy"}]}
+### Which to choose
+@viz {"k": "list", "items": ["Short-term warmth: fan or radiant", "All-evening heat: oil-filled", "Bathroom: wall-mounted radiant", "Large room: none, consider heat pump"]}
+### Marketing claims
+@viz {"k": "fix", "items": [{"w": "\"Our heater is 30% more efficient\"", "r": "All resistive heaters are 100% efficient, savings come from control"}]}
+Better thermostats and timers can save energy; the heating element itself can't beat physics.
+### Safety
+• Keep clear of curtains and furniture
+• Plug directly into a wall socket
+• Choose models with tip-over and overheat protection
+> All resistive heaters cost the same per kWh; control is what differs.
+
+# Kettles: heat only what you need
+Kettles are fast and efficient at heating water, but boiling more than you need wastes energy and time.
+@viz {"k": "terms", "f": "E = m × c × ΔT", "items": [{"s": "m", "m": "mass of water in kg"}, {"s": "c", "m": "4,186 J/kg·°C"}, {"s": "ΔT", "m": "temperature rise"}]}
+### Example
+ex: 1 litre from 15 °C to 100 °C | 1 × 4,186 × 85 ≈ 356 kJ ≈ 0.1 kWh | About 3 minutes at 2 kW
+### Full kettle vs one cup
+@viz {"k": "bars", "unit": "energy to boil, Wh", "items": [{"l": "One cup (250 ml)", "v": 25.0}, {"l": "Half kettle", "v": 85.0}, {"l": "Full kettle (1.7 l)", "v": 170.0, "hi": true}]}
+### Tips
+@viz {"k": "list", "items": ["Boil only what you need", "Descale regularly", "Use the lid on pans too", "Don't reboil repeatedly"]}
+!? A kettle is more efficient than a gas hob for boiling water, because the element sits inside the water.
+
+# Induction vs ceramic vs gas
+Cooking methods differ greatly in how much energy reaches the food.
+@viz {"k": "bars", "unit": "approx. efficiency, %", "items": [{"l": "Gas", "v": 45.0}, {"l": "Ceramic", "v": 70.0}, {"l": "Induction", "v": 88.0, "hi": true}]}
+### Why induction wins
+Induction heats the pan base directly, wasting less heat into the air. Ceramic hobs heat the glass first, then the pan; gas flames lose much heat around the pan.
+### Speed and control
+@viz {"k": "cmp", "l": {"t": "Induction", "items": ["very fast", "instant control", "cool surface"]}, "r": {"t": "Gas", "items": ["instant control", "open flame", "heats the kitchen"]}}
+### Indoor air
+Gas cooking releases nitrogen dioxide and other pollutants indoors. Good ventilation or a cooker hood vented outside reduces exposure.
+### Switching cost
+Induction may require new pans (magnetic bases) and sometimes a higher contracted power or dedicated circuit.
+> Induction puts the heat where the food is.
+
+# Ovens and air fryers
+A large oven uses energy heating its whole cavity and walls before cooking starts. Smaller appliances heat less volume and are often far more efficient for small portions.
+@viz {"k": "bars", "unit": "approx. energy for a small portion, kWh", "items": [{"l": "Electric oven", "v": 1.0}, {"l": "Air fryer", "v": 0.3}, {"l": "Microwave", "v": 0.15, "hi": true}]}
+### When the oven makes sense
+@viz {"k": "list", "items": ["Large batches", "Several dishes at once", "Bread and roasts", "Long slow cooking"]}
+### Oven tips
+• Avoid opening the door: each opening loses heat
+• Use fan ovens at lower temperatures
+• Cook several things at once
+• Switch off a few minutes early and use residual heat
+### Microwaves
+Microwaves heat water molecules in food directly, with little wasted heat. They're very efficient for reheating and small quantities.
+> Match the appliance to the portion size.
+
+# Thermostats and timers
+Controlling when and how much you heat often saves more than changing the heater itself.
+@viz {"k": "list", "items": ["Lower set point", "Timers", "Room-by-room control", "Smart thermostats", "Presence detection"]}
+### Each degree counts
+ex: Lowering from 21 °C to 20 °C | Saves roughly 5–10% of heating energy | depending on climate and insulation
+### Smart thermostats
+@viz {"k": "flow", "steps": ["Learn your schedule", "Heat before you arrive", "Lower when away", "Adjust for weather", "Report savings"]}
+### Comfort tips
+@viz {"k": "pairs", "items": [{"a": "Thermostat", "b": "19–20 °C in living areas"}, {"a": "Bedrooms", "b": "cooler, 16–18 °C"}, {"a": "Clothing", "b": "a jumper is cheaper than a degree"}]}
+> Heat the rooms you use, when you use them.
+
+# Insulation first
+Reducing heat loss is usually the cheapest way to cut heating bills. A smaller heating demand also makes heat pumps and solar more effective.
+@viz {"k": "stack", "items": ["1. Draught sealing", "2. Roof insulation", "3. Windows", "4. Wall insulation", "5. Efficient heating"]}
+### Where heat escapes
+@viz {"k": "bars", "unit": "typical heat loss in an uninsulated house, % (approx.)", "items": [{"l": "Walls", "v": 35.0, "hi": true}, {"l": "Roof", "v": 25.0}, {"l": "Windows", "v": 15.0}, {"l": "Draughts", "v": 15.0}, {"l": "Floor", "v": 10.0}]}
+### Quick wins
+@viz {"k": "list", "items": ["Seal gaps around windows and doors", "Thick curtains", "Insulate the attic", "Reflective panels behind radiators"]}
+### Summer benefit
+Good insulation also keeps homes cooler in summer, reducing the need for air conditioning during heatwaves.
+> The cheapest kWh is the one you never need.
+
+# Portugal's cold homes
+Despite mild winters, many Portuguese homes are cold indoors. Older buildings often lack insulation and efficient heating.
+@viz {"k": "flow", "steps": ["Mild climate", "Little insulation in older homes", "Expensive to heat", "People underheat", "Cold, damp homes"]}
+### Energy poverty
+@viz {"k": "nums", "items": [{"v": "~1 in 5", "l": "Portuguese people unable to keep home adequately warm in recent EU surveys"}, {"v": "~1 in 10", "l": "EU average"}, {"v": "1990", "l": "first Portuguese thermal building regulations"}]}
+### Health effects
+Cold, damp homes increase respiratory and cardiovascular illness. Portugal has historically had high excess winter mortality compared with colder northern countries.
+### Programmes
+@viz {"k": "list", "items": ["Subsidies for insulation", "Heat pump support", "Efficient window replacement", "Vouchers for vulnerable families", "Energy certificates"]}
+> In Portugal, the problem isn't the climate; it's the buildings.
+
+== el-static
+
+# Static charge
+Static electricity is charge that builds up on a surface and stays there. Rubbing materials together transfers electrons from one to the other.
+@viz {"k": "flow", "steps": ["Rub two materials", "Electrons move from one to the other", "One negative, one positive", "Charge stays until discharged"]}
+### The triboelectric series
+@viz {"k": "cmp", "l": {"t": "Tend to gain positive charge", "items": ["hair", "wool", "glass", "nylon"]}, "r": {"t": "Tend to gain negative charge", "items": ["rubber", "PVC", "polyester", "Teflon"]}}
+### Everyday examples
+@viz {"k": "list", "items": ["Balloon on hair", "Clothes in a dryer", "Plastic film clinging", "Sparks from a jumper"]}
+### Why dry weather
+Humid air helps charge leak away. In dry winter air or air-conditioned buildings, charge builds up more easily.
+> Static is electricity standing still, waiting to jump.
+
+# Why you get shocks
+Walking across carpet in dry weather can charge your body to thousands of volts. Touching metal discharges it in a quick spark.
+@viz {"k": "nums", "items": [{"v": "3,000 V", "l": "roughly where you start to feel a spark"}, {"v": "Up to 35,000 V", "l": "body charge walking on carpet in very dry air"}, {"v": "Microseconds", "l": "duration of discharge"}]}
+### Why it doesn't hurt you
+The charge is tiny and flows for microseconds, so the energy is very small, even though the voltage is high.
+### Reducing shocks
+@viz {"k": "list", "items": ["Humidify dry rooms", "Wear natural fibres", "Touch metal with a key first", "Anti-static mats"]}
+### Cars
+Sliding across a car seat builds charge. Touching the metal door frame as you get out discharges you gradually.
+> High voltage, tiny energy: that's why static stings but doesn't harm.
+
+# ESD and electronics
+Electrostatic discharge (ESD) can damage electronic components with voltages too small for you to feel.
+@viz {"k": "list", "items": ["Anti-static bags", "Wrist straps", "ESD mats", "Grounded workbenches", "Humidity control"]}
+### Sensitivity
+@viz {"k": "bars", "unit": "voltage that can damage (approx.), V", "items": [{"l": "You feel it", "v": 3000.0}, {"l": "Many chips damaged", "v": 500.0}, {"l": "Most sensitive parts", "v": 100.0, "hi": true}]}
+### Hidden damage
+ESD can cause immediate failure or latent damage that shortens a component's life, causing mysterious failures later.
+### Good practice at home
+• Touch a grounded metal object before handling boards
+• Keep components in their bags until needed
+• Avoid working on carpet in dry weather
+> If you can feel it, it's already strong enough to kill a chip.
+
+# How lightning forms
+Lightning is a giant spark that releases charge built up inside storm clouds.
+@viz {"k": "flow", "steps": ["Strong updrafts", "Ice crystals and graupel collide", "Charge separates", "Top positive, bottom negative", "Air breaks down", "Lightning"]}
+### Steps of a strike
+@viz {"k": "pairs", "items": [{"a": "Stepped leader", "b": "faint channel zigzags down from the cloud"}, {"a": "Upward streamer", "b": "rises from tall objects"}, {"a": "Return stroke", "b": "bright flash when they meet"}, {"a": "Thunder", "b": "air expanding explosively"}]}
+### Types
+@viz {"k": "list", "items": ["Cloud-to-ground", "Intra-cloud", "Cloud-to-cloud", "Ground-to-cloud"]}
+### Thunder distance
+ex: Count seconds between flash and thunder | ÷ 3 | ≈ distance in km
+> Lightning is the atmosphere's way of balancing charge.
+
+# Lightning numbers
+Lightning involves extreme currents, voltages and temperatures for a fraction of a second.
+@viz {"k": "nums", "items": [{"v": "~30,000 A", "l": "typical current"}, {"v": "~30,000 °C", "l": "channel temperature"}, {"v": "~5×", "l": "hotter than the Sun's surface"}, {"v": "~44", "l": "flashes per second worldwide"}]}
+### Scale
+@viz {"k": "pairs", "items": [{"a": "Voltage", "b": "hundreds of millions of volts"}, {"a": "Duration", "b": "microseconds per stroke"}, {"a": "Channel width", "b": "a few centimetres"}, {"a": "Flashes per year", "b": "over a billion worldwide"}]}
+### Where it strikes most
+Lake Maracaibo in Venezuela holds the record for the most frequent lightning, with storms on most nights of the year.
+### Energy
+Despite its power, a single bolt's energy is brief. It's not practical to capture lightning as an energy source.
+> Lightning is hotter than the Sun's surface, for millionths of a second.
+
+# Lightning rods
+A lightning rod (air terminal) provides a preferred, low-resistance path for lightning to reach the ground safely.
+@viz {"k": "flow", "steps": ["Strike hits rod", "Down conductor", "Earth electrode", "Current dissipates in ground"]}
+### Benjamin Franklin
+@viz {"k": "time", "events": [{"y": "1752", "l": "Franklin's kite experiment"}, {"y": "1753", "l": "lightning rods promoted"}, {"y": "Today", "l": "standard protection"}]}
+Franklin proposed that pointed metal rods could protect buildings, and they spread quickly in Europe and America.
+### What rods don't do
+• They don't attract lightning from far away
+• They don't prevent strikes
+• They give the strike a safe path
+### Modern protection
+@viz {"k": "list", "items": ["Air terminals", "Down conductors", "Earth electrodes", "Bonding", "Surge protection"]}
+> A lightning rod doesn't stop lightning; it guides it safely.
+
+# Safe in a car
+A metal car is a good place to shelter from lightning, thanks to the Faraday cage effect, not the rubber tyres.
+@viz {"k": "fix", "items": [{"w": "Rubber tyres insulate the car", "r": "The metal body carries current around the occupants"}]}
+### How it works
+Current flows over the outer metal surface and jumps to the ground. The inside stays largely protected.
+### Exceptions
+@viz {"k": "list", "items": ["Convertibles", "Fibreglass or plastic bodies", "Bicycles and motorbikes", "Open vehicles"]}
+### Planes too
+Aircraft are struck by lightning roughly once a year on average. Their metal or conductive skins carry the current around the cabin.
+> Tyres are a few centimetres; lightning has crossed kilometres of air.
+
+# Outdoor safety
+Lightning can strike several kilometres from the storm. If you hear thunder, you're close enough to be struck.
+@viz {"k": "list", "items": ["Go indoors", "Or into a metal car", "Avoid isolated trees", "Avoid hilltops", "Get out of water"]}
+### The 30-minute rule
+@viz {"k": "flow", "steps": ["Hear thunder", "Seek shelter", "Wait 30 minutes after last thunder", "Resume"]}
+### If caught outside
+• Avoid open fields, ridges and water
+• Don't shelter under lone trees
+• Keep away from metal fences and poles
+• Groups should spread out
+### First aid
+People struck by lightning don't carry charge and can be touched safely. Call 112 and start CPR if needed.
+> When thunder roars, go indoors.
+
+# Surges into homes
+Lightning nearby can induce large voltage surges in power, telephone and antenna lines, damaging electronics even without a direct strike.
+@viz {"k": "flow", "steps": ["Strike nearby", "Induced surge in lines", "Travels into home", "Damages routers, TVs, appliances"]}
+### Protection layers
+@viz {"k": "pairs", "items": [{"a": "Fuse board SPD", "b": "protects whole installation"}, {"a": "Plug-in protectors", "b": "for sensitive devices"}, {"a": "Unplugging", "b": "during storms, the safest option"}]}
+### Vulnerable equipment
+@viz {"k": "list", "items": ["Routers and modems", "TVs", "Gate motors", "Heat pump electronics", "Alarm systems"]}
+### Insurance
+Many home insurance policies cover electrical damage from storms, but may require evidence of surge protection.
+> Protect electronics at the board and the plug.
+
+# Static in industry
+In industry, static electricity can ignite flammable vapours, gases and dusts. Earthing and bonding prevent dangerous sparks.
+@viz {"k": "list", "items": ["Fuel handling", "Powder processing", "Paint spraying", "Plastic films", "Grain silos"]}
+### How sparks happen
+@viz {"k": "flow", "steps": ["Fuel or powder flows", "Charge separates", "Builds on containers", "Spark to nearby metal", "Vapour or dust ignites"]}
+### Controls
+@viz {"k": "pairs", "items": [{"a": "Bonding", "b": "connecting containers so no spark gap"}, {"a": "Earthing", "b": "discharging charge safely"}, {"a": "Humidity", "b": "reducing build-up"}, {"a": "Slow flow", "b": "less charge generation"}]}
+### At petrol stations
+Static from a person can, rarely, ignite fuel vapour. Touch the car's metal before refuelling and don't get back into the car mid-fill.
+> In explosive atmospheres, a static spark is a lit match.
+
+== el-safety
+
+# Three dangers
+Electricity can harm people and property in three main ways.
+@viz {"k": "tree", "root": "Electrical hazards", "items": ["Shock: current through the body", "Burns: arcs, hot surfaces", "Fire: overheating cables and connections"]}
+### Arc flash
+An arc flash is an explosive release of energy when current jumps through air. It can reach thousands of degrees and cause severe burns even without contact.
+### Fire
+@viz {"k": "list", "items": ["Overloaded circuits", "Loose connections", "Damaged cables", "Faulty appliances", "Misused extensions"]}
+### Protection
+@viz {"k": "pairs", "items": [{"a": "Shock", "b": "RCDs, insulation, earthing"}, {"a": "Fire", "b": "correct cables, breakers, inspections"}, {"a": "Burns", "b": "isolation and protective equipment"}]}
+> Shock, burns and fire: different hazards, different protections.
+
+# Current path matters
+The path current takes through the body determines how dangerous it is. Paths across the chest risk the heart.
+@viz {"k": "cmp", "l": {"t": "Most dangerous", "items": ["hand to hand", "hand to foot", "across the chest"]}, "r": {"t": "Less dangerous", "items": ["within one hand or limb"]}}
+### Wet skin
+@viz {"k": "bars", "unit": "body resistance, Ω (approx.)", "items": [{"l": "Dry skin", "v": 100000.0}, {"l": "Damp skin", "v": 5000.0}, {"l": "Wet skin", "v": 1000.0, "hi": true}]}
+Water dramatically lowers skin resistance, so the same voltage drives much more current.
+### Time
+Even moderate currents become dangerous when they last longer. Fast disconnection by RCDs is crucial.
+> Wet hands and a path across the chest are the deadliest combination.
+
+# Water and electricity
+Bathrooms, kitchens, pools and outdoor areas need extra protection because water lowers body resistance and connects people to earth.
+@viz {"k": "list", "items": ["Zones around baths and showers", "30 mA RCDs", "IP-rated fittings", "No sockets near water", "Bonding of metal parts"]}
+### Bathroom zones
+@viz {"k": "pairs", "items": [{"a": "Zone 0", "b": "inside the bath or shower tray"}, {"a": "Zone 1", "b": "above it, up to about 2.25 m"}, {"a": "Zone 2", "b": "60 cm around zone 1"}, {"a": "Outside zones", "b": "normal equipment allowed"}]}
+### IP ratings
+@viz {"k": "pairs", "items": [{"a": "IP44", "b": "splash-proof"}, {"a": "IP65", "b": "jet-proof"}, {"a": "IP67", "b": "temporary immersion"}, {"a": "IP68", "b": "continuous immersion"}]}
+### Common mistakes
+@viz {"k": "list", "items": ["Extension leads in bathrooms", "Hair dryers near filled baths", "Phones charging in the bath", "Outdoor sockets without covers"]}
+> Water plus electricity needs extra layers of protection.
+
+# Loose connections
+Loose connections are a leading cause of electrical fires. A small contact area has higher resistance, which heats up and makes things worse.
+@viz {"k": "cycle", "steps": ["Loose terminal", "Higher resistance", "Heat", "Oxidation", "Even higher resistance", "More heat"]}
+### Why it's dangerous
+The heat is concentrated at one point, often hidden in a socket box or switch. A breaker doesn't trip, because current is normal.
+### Warning signs
+@viz {"k": "list", "items": ["Warm socket", "Discoloured plastic", "Flickering lights", "Crackling", "Burning smell"]}
+### Prevention
+• Correct tightening torque for terminals
+• Ferrules on flexible conductors
+• Periodic inspection with thermal cameras in larger installations
+> Fires often start where cables connect, not in the cables themselves.
+
+# Warning signs
+Your installation often warns you before a serious problem. Acting early prevents fires and shocks.
+@viz {"k": "list", "items": ["Scorch marks", "Burning smell", "Crackling or buzzing", "Warm sockets or switches", "Repeated tripping", "Tingles from appliances"]}
+### What to do
+@viz {"k": "flow", "steps": ["Notice sign", "Switch off affected circuit", "Don't use it", "Call qualified electrician"]}
+### Older installations
+@viz {"k": "pairs", "items": [{"a": "No RCD", "b": "upgrade urgently"}, {"a": "Fuse boards", "b": "consider replacement"}, {"a": "Cloth-insulated cables", "b": "likely need rewiring"}, {"a": "Two-pin sockets without earth", "b": "old wiring"}]}
+### Inspections
+Periodic inspection by a qualified electrician is recommended for older homes, before buying a house, and after renovations.
+> If something smells, crackles or feels warm, switch it off.
+
+# If someone is being shocked
+Helping a person being electrocuted can make you the next victim. Break the circuit first.
+@viz {"k": "flow", "steps": ["Don't touch them", "Switch off power", "Or separate with dry non-conductive object", "Call 112", "Start CPR if needed"]}
+### Separating safely
+@viz {"k": "list", "items": ["Dry wooden broom", "Plastic chair", "Rolled newspaper", "Rubber mat underfoot"]}
+### High voltage
+For overhead lines or substations, stay well away (at least several metres) and call 112. Don't try to help until the operator confirms the line is dead.
+### After the shock
+Anyone who received a significant shock should be checked by a doctor, as heart rhythm problems and internal burns can appear later.
+> Break the circuit before touching the victim.
+
+# DIY limits
+Simple tasks are fine for anyone; work on the fixed installation should be done by qualified electricians.
+@viz {"k": "cmp", "l": {"t": "Fine for anyone", "items": ["change bulbs", "plug in appliances", "reset breakers", "test RCDs"]}, "r": {"t": "Electrician only", "items": ["new circuits", "fuse board work", "new sockets", "bathrooms"]}}
+### Why
+@viz {"k": "list", "items": ["Hidden hazards", "Correct cable sizing", "Protection coordination", "Insurance requirements", "Legal certification"]}
+### Portugal
+New electrical installations and major alterations must be designed and executed by qualified professionals and inspected before connection to the grid.
+### Insurance
+Home insurers may refuse claims for fires caused by non-compliant DIY electrical work.
+> If it's behind a wall or in the fuse board, call a professional.
+
+# Overloaded adapters
+Multi-way adapters spread one socket's capacity across several appliances. Plugging in several heaters, kettles or irons can overload them.
+@viz {"k": "fix", "items": [{"w": "Heater, kettle and iron on one adapter", "r": "Each in its own wall socket"}]}
+### The arithmetic
+ex: Heater 2 kW + kettle 2.2 kW + iron 1.8 kW | = 6 kW ≈ 26 A | far above a 16 A socket
+### Signs of overload
+@viz {"k": "list", "items": ["Warm adapter", "Discoloured plug", "Burning smell", "Tripping breaker"]}
+### Better solutions
+• Install more sockets where needed
+• Use fused power strips with overload protection
+• Keep high-power appliances on wall sockets
+> One socket, one heater.
+
+# Overhead lines
+Overhead power lines carry dangerous voltages, and high voltage can arc across air without direct contact.
+@viz {"k": "list", "items": ["Drones", "Kites", "Ladders", "Boat masts", "Cranes and tipper trucks", "Fishing rods"]}
+### Safe distances
+@viz {"k": "pairs", "items": [{"a": "Low voltage", "b": "keep several metres away"}, {"a": "Medium voltage", "b": "keep well clear"}, {"a": "High voltage", "b": "arcs can jump significant gaps"}]}
+### Agricultural risk
+Farm machinery, irrigation pipes and tipper trailers touching lines cause many accidents in rural areas.
+### Fallen lines
+If a line falls, stay at least 10 metres away, keep others away and call 112 or the distribution company. Treat every fallen line as live.
+> Look up before you lift anything long.
+
+# The 230 V myth
+"It's only 230 volts" is a dangerous belief. Household voltage can easily drive a lethal current through the body.
+@viz {"k": "terms", "f": "I = V ÷ R", "items": [{"s": "V", "m": "230 V"}, {"s": "R", "m": "body resistance, about 1,000 Ω when wet"}, {"s": "I", "m": "about 230 mA"}]}
+### What that current does
+@viz {"k": "bars", "unit": "effect, mA", "items": [{"l": "Feel", "v": 1.0}, {"l": "Can't let go", "v": 10.0}, {"l": "Heart risk", "v": 50.0}, {"l": "Wet-skin 230 V", "v": 230.0, "hi": true}]}
+### Why it kills
+50 Hz alternating current is especially likely to disrupt the heart's rhythm, causing ventricular fibrillation within a fraction of a second.
+### Protection
+@viz {"k": "list", "items": ["30 mA RCDs", "Earthing", "Double insulation", "Never working live", "Dry hands"]}
+> 230 V doesn't need to be "high voltage" to be lethal.
+
+== el-backup
+
+# Why a home battery?
+A home battery stores electricity for later. With solar panels, it saves midday surplus for the evening; with time-of-use tariffs, it shifts cheap energy to expensive hours.
+@viz {"k": "flow", "steps": ["Midday solar surplus", "Battery charges", "Evening demand", "Battery supplies home", "Less grid import"]}
+### Uses
+@viz {"k": "list", "items": ["Raise solar self-consumption", "Shift cheap night energy", "Backup during outages", "Reduce peak demand", "Grid services"]}
+### Self-consumption boost
+@viz {"k": "bars", "unit": "solar energy used at home, % (approx.)", "items": [{"l": "Without battery", "v": 35.0}, {"l": "With battery", "v": 70.0, "hi": true}]}
+### After the 2025 blackout
+Interest in home batteries with backup capability rose in Portugal and Spain after the April 2025 blackout.
+> A battery moves energy in time.
+
+# Sizing a battery
+Size a battery to cover your evening and night consumption, not your whole day. Bigger isn't always better.
+@viz {"k": "terms", "f": "Battery size ≈ evening + night use ÷ usable depth", "items": [{"s": "Evening and night use", "m": "kWh from sunset to sunrise"}, {"s": "Usable depth", "m": "about 90%"}]}
+### Example
+ex: Evening use 4 kWh + night 2 kWh | ÷ 0.9 | ≈ 6.7 kWh battery
+### Oversizing
+@viz {"k": "cmp", "l": {"t": "Too small", "items": ["empty by midnight"]}, "r": {"t": "Too large", "items": ["rarely full in winter", "slow payback"]}}
+### Seasonal reality
+In winter, solar may not fill even a small battery. In summer, a large one fills easily. Size for typical, not extreme, days.
+> Measure your evening use before choosing a size.
+
+# Hybrid inverters
+A hybrid inverter manages panels, battery, house and grid together, deciding where power goes moment by moment.
+@viz {"k": "flow", "steps": ["Solar produces", "House uses first", "Surplus charges battery", "Battery full: export", "Evening: battery supplies house"]}
+### Priorities
+@viz {"k": "pairs", "items": [{"a": "Self-consumption mode", "b": "maximise own use"}, {"a": "Time-of-use mode", "b": "charge cheap, discharge expensive"}, {"a": "Backup mode", "b": "keep reserve for outages"}]}
+### AC vs DC coupling
+@viz {"k": "cmp", "l": {"t": "DC-coupled", "items": ["battery on hybrid inverter", "fewer conversions"]}, "r": {"t": "AC-coupled", "items": ["separate battery inverter", "easy retrofit"]}}
+### Monitoring
+Most hybrid inverters have apps showing flows in real time and history.
+> The hybrid inverter is the traffic controller of a solar home.
+
+# Backup is not automatic
+Many people assume solar panels keep the lights on during a blackout. Usually they don't: grid-tied systems switch off for safety.
+@viz {"k": "cmp", "l": {"t": "Grid-tied only", "items": ["shuts down in blackout", "protects line workers"]}, "r": {"t": "Backup-capable", "items": ["islands the house", "powers selected circuits"]}}
+### Why they switch off
+If panels kept feeding power into a dead grid, they could electrocute workers repairing lines. Anti-islanding protection is mandatory.
+### What backup needs
+@viz {"k": "list", "items": ["Backup-capable inverter", "Battery", "Automatic transfer switch", "Separate backup circuit", "Proper earthing in island mode"]}
+### Switching time
+Some systems switch in milliseconds (unnoticed by electronics); others take seconds, briefly resetting clocks and computers.
+> Solar panels alone don't keep the lights on in a blackout.
+
+# Essential loads
+Backing up a whole house needs large batteries and inverters. Many systems instead back up a selected "essential loads" circuit.
+@viz {"k": "list", "items": ["Fridge and freezer", "Lights", "Router", "Boiler and heat pump controls", "A few sockets", "Medical devices"]}
+### Typical consumption
+@viz {"k": "bars", "unit": "essential loads, W (approx.)", "items": [{"l": "Router", "v": 15.0}, {"l": "Lights", "v": 100.0}, {"l": "Fridge", "v": 150.0}, {"l": "Boiler controls", "v": 50.0}, {"l": "Laptop", "v": 60.0}]}
+### How long
+ex: 10 kWh battery, 400 W average essential load | 10,000 ÷ 400 | ≈ 25 hours
+### Avoid on backup
+Ovens, water heaters, EV chargers and heaters drain batteries quickly and are usually excluded.
+> Back up what matters, not everything.
+
+# UPS for electronics
+An uninterruptible power supply (UPS) keeps computers and network equipment running through short outages and protects against power disturbances.
+@viz {"k": "flow", "steps": ["Mains normal", "UPS charges battery", "Mains fails", "Battery takes over instantly", "Clean shutdown or bridge to restoration"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Standby", "b": "switches to battery when needed, cheap"}, {"a": "Line-interactive", "b": "also corrects voltage, common"}, {"a": "Online (double conversion)", "b": "always via inverter, best protection"}]}
+### Sizing
+ex: Computer and monitor 200 W | 600 VA UPS | about 10–15 minutes runtime
+### Uses
+@viz {"k": "list", "items": ["Home office", "Network equipment", "NAS storage", "Alarm systems", "Medical equipment"]}
+> A UPS buys time to save work and shut down safely.
+
+# Generators
+Portable generators provide backup power for long outages, but they must be used safely.
+@viz {"k": "fix", "items": [{"w": "Running a generator in the garage or indoors", "r": "Always outdoors, far from windows and doors"}]}
+### Carbon monoxide
+Engines produce carbon monoxide, an invisible, odourless gas that can kill within minutes in enclosed spaces. Use CO alarms.
+### Connecting to the house
+@viz {"k": "cmp", "l": {"t": "Unsafe", "items": ["plug into a socket backwards", "can feed the grid"]}, "r": {"t": "Safe", "items": ["changeover switch installed by electrician"]}}
+Back-feeding through a socket can electrocute line workers and damage the generator.
+### Sizing
+@viz {"k": "list", "items": ["List essential loads", "Add up watts", "Allow for motor starting surges", "Choose a margin"]}
+> Generators belong outside, connected through a proper switch.
+
+# Vehicle-to-home
+Electric car batteries are large energy stores. Bidirectional charging lets some EVs power appliances or even a whole home.
+@viz {"k": "pairs", "items": [{"a": "V2L", "b": "vehicle-to-load: sockets on the car power appliances"}, {"a": "V2H", "b": "vehicle-to-home: car powers house through a bidirectional charger"}, {"a": "V2G", "b": "vehicle-to-grid: car supports the grid"}]}
+### Scale
+@viz {"k": "bars", "unit": "energy stored, kWh", "items": [{"l": "Home battery", "v": 10.0}, {"l": "Typical EV", "v": 70.0, "hi": true}, {"l": "Daily home use", "v": 10.0}]}
+### Requirements
+@viz {"k": "list", "items": ["Compatible car", "Bidirectional charger", "Transfer switch", "Utility approval for V2G"]}
+### Examples
+Several models offer V2L sockets (such as some Hyundai, Kia and MG cars), while V2H requires compatible cars and chargers, still relatively rare in Europe.
+> Your car's battery could keep the house running for days.
+
+# Economics
+Home batteries don't always pay for themselves through savings alone. The business case depends on how they're used.
+@viz {"k": "list", "items": ["Large evening consumption", "Time-of-use tariffs", "Low export prices", "Need for backup", "Falling battery prices"]}
+### A simple estimate
+ex: 7 kWh battery cycling 300 days a year | 6 kWh × 300 × €0.12 saved per kWh | ≈ €215 a year
+With a battery costing several thousand euros, simple payback can exceed ten years.
+### What improves the case
+@viz {"k": "pairs", "items": [{"a": "Low feed-in price", "b": "more value in storing"}, {"a": "High evening tariff", "b": "more savings"}, {"a": "Dynamic tariffs", "b": "arbitrage opportunities"}, {"a": "Backup value", "b": "hard to price but real"}]}
+> Batteries often make more sense for resilience than for pure savings.
+
+# Safety and placement
+Home batteries store a lot of energy. Proper placement and installation reduce fire risk and extend battery life.
+@viz {"k": "list", "items": ["Cool, dry place", "Ventilation", "Away from bedrooms and exits", "Clearances as specified", "Certified installer"]}
+### Chemistry choice
+@viz {"k": "cmp", "l": {"t": "LFP", "items": ["more thermally stable", "long life", "preferred for homes"]}, "r": {"t": "NMC", "items": ["more energy dense", "slightly higher fire risk"]}}
+### Temperature
+@viz {"k": "pairs", "items": [{"a": "Ideal", "b": "about 15–25 °C"}, {"a": "Too hot", "b": "faster ageing, higher risk"}, {"a": "Too cold", "b": "reduced capacity and charging"}]}
+### Certification
+Choose batteries certified to recognised safety standards and installed by qualified installers, with proper protection and isolation.
+> A well-placed LFP battery is a safe neighbour.
+
+== el-history
+
+# Amber and the word "electric"
+Electricity's name comes from amber. Ancient Greeks noticed that rubbed amber attracted light objects like feathers and straw.
+@viz {"k": "time", "events": [{"y": "c. 600 BC", "l": "Thales notes amber's attraction"}, {"y": "1600", "l": "Gilbert coins \"electricus\""}, {"y": "1646", "l": "Thomas Browne uses \"electricity\""}]}
+### Gilbert's work
+English physician William Gilbert's 1600 book "De Magnete" studied magnetism and static electricity, coining the Latin word "electricus" (amber-like) for materials that attract when rubbed.
+### Elektron
+@viz {"k": "pairs", "items": [{"a": "ēlektron", "b": "Greek for amber"}, {"a": "electricus", "b": "Gilbert's Latin, 1600"}, {"a": "electricity", "b": "first used in English by Thomas Browne, 1646"}, {"a": "electron", "b": "named in 1891"}]}
+### Early experiments
+@viz {"k": "list", "items": ["Rubbed amber", "Glass rods", "Friction machines", "Leyden jars (1745)"]}
+> Electricity is named after a fossilised tree resin.
+
+# Volta's battery, 1800
+Alessandro Volta's "voltaic pile" was the first source of steady electric current, opening the door to modern electrical science.
+@viz {"k": "flow", "steps": ["Zinc disc", "Brine-soaked cloth", "Copper disc", "Repeat stack", "Steady current"]}
+### The frog debate
+Luigi Galvani had observed frog legs twitching with metals and believed in "animal electricity". Volta argued the metals generated the electricity and built the pile to prove it.
+### Consequences
+@viz {"k": "list", "items": ["Electrolysis", "New elements discovered", "Electromagnetism", "Telegraph"]}
+Humphry Davy used powerful batteries to isolate sodium and potassium in 1807.
+### Honour
+The volt is named after Volta. Napoleon made him a count in recognition of his work.
+> The battery turned electricity from sparks into a steady flow.
+
+# Faraday's discoveries
+Michael Faraday, largely self-taught, made some of the most important discoveries in electrical science.
+@viz {"k": "nums", "items": [{"v": "1821", "l": "first electric motor"}, {"v": "1831", "l": "electromagnetic induction"}, {"v": "1791", "l": "born to a blacksmith's family in London"}]}
+### From apprentice to scientist
+Faraday left school early and became a bookbinder's apprentice, reading the books he bound. He attended Humphry Davy's lectures and became his assistant at the Royal Institution.
+### His legacy
+@viz {"k": "list", "items": ["Electric motor", "Generator", "Transformer principle", "Electrolysis laws", "Field lines concept"]}
+### The farad
+The unit of capacitance, the farad, honours him.
+!? Faraday started the Royal Institution's Christmas Lectures for young people in 1825; they continue today.
+
+# Maxwell's equations
+In the 1860s, James Clerk Maxwell described electricity, magnetism and light in one theory. It remains one of the greatest achievements in physics.
+@viz {"k": "time", "events": [{"y": "1861–1865", "l": "Maxwell's equations published"}, {"y": "1884", "l": "Heaviside writes them as four"}, {"y": "1887", "l": "Hertz produces radio waves"}, {"y": "1895", "l": "Marconi's radio experiments"}]}
+### The prediction
+Maxwell's equations showed that changing electric and magnetic fields create waves travelling at the speed of light, so light itself must be an electromagnetic wave.
+### The four equations in words
+@viz {"k": "pairs", "items": [{"a": "Gauss's law", "b": "charges create electric fields"}, {"a": "No monopoles", "b": "magnetic field lines have no start or end"}, {"a": "Faraday's law", "b": "changing magnetic fields create electric fields"}, {"a": "Ampère–Maxwell law", "b": "currents and changing electric fields create magnetic fields"}]}
+### Impact
+@viz {"k": "list", "items": ["Radio", "Television", "Radar", "Mobile phones", "Wi-Fi"]}
+> Maxwell revealed that light is electricity and magnetism dancing together.
+
+# Light bulbs
+Electric light transformed daily life. Many inventors contributed, but Edison and Swan produced the first practical long-lasting bulbs around 1879.
+@viz {"k": "time", "events": [{"y": "1802", "l": "Davy's arc light"}, {"y": "1879", "l": "Edison and Swan bulbs"}, {"y": "1904", "l": "tungsten filaments"}, {"y": "1990s", "l": "blue LEDs"}]}
+### Edison's system
+Edison's genius was not only the bulb but the whole system: generators, wiring, meters and fuses. His Pearl Street station in New York opened in 1882.
+### Ediswan
+After a patent dispute in Britain, Edison and Swan merged their British companies in 1883 as "Ediswan".
+### From filaments to LEDs
+@viz {"k": "bars", "unit": "light per watt, lumens/W (approx.)", "items": [{"l": "Carbon filament", "v": 3.0}, {"l": "Incandescent", "v": 15.0}, {"l": "Fluorescent", "v": 60.0}, {"l": "LED", "v": 120.0, "hi": true}]}
+### Nobel Prize
+Isamu Akasaki, Hiroshi Amano and Shuji Nakamura received the 2014 Nobel Prize in Physics for blue LEDs, which made white LED lighting possible.
+> The light bulb needed a whole electrical system to shine.
+
+# Electricity in Portugal
+Electricity reached Portugal in the late 19th century, and hydropower drove electrification across the 20th century.
+@viz {"k": "time", "events": [{"y": "1878", "l": "electric light in Cascais"}, {"y": "1909", "l": "Central Tejo power station in Lisbon"}, {"y": "1951", "l": "Castelo do Bode dam"}, {"y": "2002", "l": "Alqueva dam"}]}
+### Central Tejo
+Lisbon's Central Tejo power station, built in stages from 1909, supplied much of the city's electricity until the 1970s. It's now part of the MAAT museum in Belém.
+### Hydro era
+@viz {"k": "list", "items": ["Castelo do Bode on the Zêzere", "Douro international dams", "Alto Rabagão", "Alqueva on the Guadiana"]}
+### No nuclear
+Portugal never built a nuclear power plant. A project at Ferrel, near Peniche, was abandoned in the 1970s after local protests.
+### Modern era
+@viz {"k": "pairs", "items": [{"a": "2000s", "b": "rapid growth of wind power"}, {"a": "2010s", "b": "solar begins"}, {"a": "2021", "b": "coal plants closed"}, {"a": "2024", "b": "about 71% renewables"}]}
+> Portugal electrified with water, then wind and sun.
+
+# The transistor, 1947
+The transistor, invented at Bell Labs in December 1947, is the foundation of all modern electronics.
+@viz {"k": "flow", "steps": ["Vacuum tubes: large, hot, fragile", "Transistor: small, cool, reliable", "Integrated circuits", "Microprocessors", "Smartphones"]}
+### The inventors
+John Bardeen, Walter Brattain and William Shockley shared the 1956 Nobel Prize in Physics for the transistor.
+### Scale
+@viz {"k": "nums", "items": [{"v": "1", "l": "transistor in 1947"}, {"v": "~2,300", "l": "transistors in Intel's first microprocessor (1971)"}, {"v": "Tens of billions", "l": "in a modern chip"}]}
+### What a transistor does
+@viz {"k": "pairs", "items": [{"a": "Switch", "b": "turns current on or off"}, {"a": "Amplifier", "b": "small signal controls a larger one"}]}
+> Billions of tiny switches now fit on a fingernail-sized chip.
+
+# Nuclear and renewables
+The second half of the 20th century brought nuclear power; the 21st brought the rapid rise of wind and solar.
+@viz {"k": "time", "events": [{"y": "1954", "l": "Obninsk, first grid nuclear plant"}, {"y": "1956", "l": "Calder Hall, UK"}, {"y": "1980s", "l": "modern wind turbines"}, {"y": "2010s", "l": "solar price collapse"}]}
+### Falling costs
+@viz {"k": "bars", "unit": "approx. fall in cost, 2010–2020, %", "items": [{"l": "Solar PV", "v": 85.0, "hi": true}, {"l": "Onshore wind", "v": 55.0}, {"l": "Batteries", "v": 85.0}]}
+### Nuclear today
+Nuclear provides around a tenth of the world's electricity, with low carbon emissions but high construction costs and long build times.
+### Renewables today
+Wind and solar are now the cheapest sources of new electricity in many countries, and their share grows every year.
+> Renewables went from expensive niche to cheapest option in about a decade.
+
+# Units named after people
+Most electrical units honour scientists who made key discoveries.
+@viz {"k": "pairs", "items": [{"a": "volt", "b": "Alessandro Volta"}, {"a": "ampere", "b": "André-Marie Ampère"}, {"a": "ohm", "b": "Georg Ohm"}, {"a": "watt", "b": "James Watt"}, {"a": "hertz", "b": "Heinrich Hertz"}, {"a": "coulomb", "b": "Charles-Augustin de Coulomb"}]}
+### More units
+@viz {"k": "pairs", "items": [{"a": "farad", "b": "Michael Faraday (capacitance)"}, {"a": "henry", "b": "Joseph Henry (inductance)"}, {"a": "tesla", "b": "Nikola Tesla (magnetic field)"}, {"a": "siemens", "b": "Werner von Siemens (conductance)"}, {"a": "weber", "b": "Wilhelm Weber (magnetic flux)"}]}
+### Writing rules
+@viz {"k": "fix", "items": [{"w": "230 Volts, 10 Amps", "r": "230 volts (230 V), 10 amps (10 A)"}]}
+Unit names are lowercase when written out; symbols for units named after people are capitalised.
+!? James Watt worked on steam engines, not electricity, but his name became the universal unit of power.
+
+# What's next
+Electricity is taking over more of the energy system. The challenges now are storage, grids and flexibility.
+@viz {"k": "list", "items": ["Electric vehicles", "Heat pumps", "Electrified industry", "Green hydrogen", "Data centres"]}
+### Electrification
+@viz {"k": "nums", "items": [{"v": "~20%", "l": "electricity's share of global final energy"}, {"v": "Rising", "l": "as cars, heating and industry electrify"}, {"v": "2050", "l": "many plans aim for over 50%"}]}
+### Challenges
+@viz {"k": "pairs", "items": [{"a": "Storage", "b": "match variable supply with demand"}, {"a": "Grids", "b": "connect new renewables and loads"}, {"a": "Flexibility", "b": "shift demand in time"}, {"a": "Materials", "b": "lithium, copper, rare earths"}]}
+### Data centres and AI
+Rapid growth of data centres, driven partly by AI, is increasing electricity demand in several countries, including new projects in Portugal such as at Sines.
+> The future of energy is increasingly electric.

@@ -1,0 +1,2292 @@
+// Deep dives for pack 'mechanics' (exported from packs/mechanics.json)
+
+== me-forces
+
+# Force, mass and weight
+Mass is how much matter something contains; weight is the force gravity exerts on that mass. In everyday speech they're mixed up, but engineers keep them apart.
+@viz {"k": "terms", "f": "W = m × g", "items": [{"s": "W", "m": "weight in newtons"}, {"s": "m", "m": "mass in kg"}, {"s": "g", "m": "about 9.81 m/s² on Earth"}]}
+### Same mass, different weight
+@viz {"k": "bars", "unit": "weight of a 70 kg person, N", "items": [{"l": "Moon", "v": 113.0}, {"l": "Mars", "v": 260.0}, {"l": "Earth", "v": 687.0, "hi": true}, {"l": "Jupiter", "v": 1736.0}]}
+### Newton's second law
+@viz {"k": "terms", "f": "F = m × a", "items": [{"s": "F", "m": "net force in newtons"}, {"s": "m", "m": "mass"}, {"s": "a", "m": "acceleration"}]}
+### Units
+@viz {"k": "pairs", "items": [{"a": "1 newton", "b": "force to accelerate 1 kg by 1 m/s²"}, {"a": "1 kg weight", "b": "about 9.81 N"}, {"a": "1 kN", "b": "about the weight of 100 kg"}]}
+### Why it matters
+Structures and machines must carry weights (forces), so engineers convert masses to newtons before any calculation.
+> Mass is in kilograms; weight is a force, in newtons.
+
+# Levers multiply force
+A lever is a rigid bar that rotates around a pivot. The turning effect of a force (its moment or torque) is force times distance from the pivot.
+@viz {"k": "terms", "f": "Torque = F × d", "items": [{"s": "F", "m": "force"}, {"s": "d", "m": "perpendicular distance to pivot"}]}
+### Balancing
+ex: 600 N child at 1 m vs adult pushing at 3 m | 600 × 1 = 200 × 3 | Adult needs just 200 N
+### Three classes of lever
+@viz {"k": "pairs", "items": [{"a": "Class 1", "b": "pivot in middle: seesaw, scissors"}, {"a": "Class 2", "b": "load in middle: wheelbarrow, nutcracker"}, {"a": "Class 3", "b": "effort in middle: tweezers, your forearm"}]}
+### Everyday levers
+@viz {"k": "list", "items": ["Long spanners", "Door handles", "Crowbars", "Bottle openers", "Oars"]}
+!? Archimedes is said to have boasted, "Give me a place to stand, and I will move the Earth", capturing the power of a long enough lever.
+
+# Try it: balance the seesaw
+A seesaw balances when the moments on each side are equal. Mass alone doesn't decide it: distance from the pivot matters just as much.
+@viz {"k": "terms", "f": "m₁ × d₁ = m₂ × d₂", "items": [{"s": "m", "m": "mass on each side"}, {"s": "d", "m": "distance from pivot"}]}
+### The challenge
+ex: Right side: 6 kg × 1 m = 6 kg·m | Left options: 3 kg at 2 m, 2 kg at 3 m, 12 kg at 0.5 m | All balance
+### Several masses
+With more than one mass on a side, add their moments: the total on each side must be equal.
+### Real seesaws
+@viz {"k": "list", "items": ["Children shift position to balance", "Cranes use counterweights", "Balance scales", "Mobile sculptures"]}
+> Mass times distance on one side must equal mass times distance on the other.
+
+# Pulleys trade distance for force
+Pulleys redirect and divide forces. With movable pulleys, the load is shared between several rope segments, so you pull with less force but over a longer distance.
+@viz {"k": "pairs", "items": [{"a": "Fixed pulley", "b": "changes direction only, MA 1"}, {"a": "Single movable pulley", "b": "MA 2"}, {"a": "Block and tackle with 4 strands", "b": "MA 4"}]}
+### Energy is conserved
+@viz {"k": "terms", "f": "Work = force × distance", "items": [{"s": "Half the force, twice the distance", "m": "same work"}]}
+ex: Lift 100 kg by 1 m with MA 4 | Pull about 245 N | over 4 m of rope
+### Friction
+Real pulleys lose some energy to friction in the bearings and rope bending, so actual force is a bit higher than the ideal.
+### Where you see them
+@viz {"k": "list", "items": ["Cranes", "Sailing boats", "Lifts", "Gym machines", "Flagpoles"]}
+> Machines trade force for distance; they never create energy.
+
+# Gears: speed or torque
+Gears transmit rotation between shafts. Their teeth ratio sets a trade-off between speed and torque.
+@viz {"k": "terms", "f": "Gear ratio = teeth on driven gear ÷ teeth on driver", "items": [{"s": "Ratio > 1", "m": "slower, more torque"}, {"s": "Ratio < 1", "m": "faster, less torque"}]}
+### Example
+ex: 10-tooth gear drives 20-tooth gear | Ratio 2:1 | Half the speed, twice the torque
+### Everyday gears
+@viz {"k": "pairs", "items": [{"a": "Bicycle low gear", "b": "small front, big rear: easy climbing"}, {"a": "Bicycle high gear", "b": "big front, small rear: fast on flats"}, {"a": "Car first gear", "b": "high torque to start"}, {"a": "Drill gearbox", "b": "high torque at low speed"}]}
+### Gear types
+@viz {"k": "list", "items": ["Spur", "Helical", "Bevel", "Worm", "Planetary"]}
+### Ancient gears
+The Antikythera mechanism, an ancient Greek device from around 100 BC, used dozens of bronze gears to predict astronomical positions.
+> Gears let you choose: speed or force.
+
+# Balanced and unbalanced forces
+Newton's first law: an object stays at rest or moves at constant velocity unless a net force acts on it.
+@viz {"k": "cmp", "l": {"t": "Balanced", "items": ["forces cancel", "no acceleration", "at rest or steady speed"]}, "r": {"t": "Unbalanced", "items": ["net force", "accelerates in its direction"]}}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Book on a table", "b": "weight balanced by table's push"}, {"a": "Car at steady 100 km/h", "b": "engine force balances drag and friction"}, {"a": "Car accelerating", "b": "engine force exceeds resistance"}, {"a": "Falling skydiver at terminal speed", "b": "drag balances weight"}]}
+### Free-body diagrams
+@viz {"k": "flow", "steps": ["Isolate the object", "Draw every force acting on it", "Add vectors", "Find net force", "Apply F = m × a"]}
+### Engineering use
+Static structures must have balanced forces at every joint, or they would move.
+> Balanced forces don't mean no forces; they mean no net force.
+
+# Inclined planes
+A ramp lets you raise a load using less force by spreading the work over a longer distance.
+@viz {"k": "terms", "f": "F ≈ W × h ÷ L", "items": [{"s": "F", "m": "push needed (no friction)"}, {"s": "W", "m": "weight"}, {"s": "h", "m": "height"}, {"s": "L", "m": "ramp length"}]}
+### Example
+ex: 1,000 N load raised 1 m | Ramp 4 m long | Push ≈ 250 N (plus friction)
+### Steeper vs longer
+@viz {"k": "cmp", "l": {"t": "Steep ramp", "items": ["short", "more force"]}, "r": {"t": "Gentle ramp", "items": ["long", "less force"]}}
+### Accessibility
+Building rules limit wheelchair ramp slopes, typically to around 1:12 or gentler, so people can push themselves up comfortably.
+### History
+Ancient builders likely used ramps to raise stones for pyramids and temples, trading distance for force.
+> A ramp makes lifting easier by making the journey longer.
+
+# Screws and wedges
+Screws and wedges are variations of the inclined plane that produce large forces.
+@viz {"k": "pairs", "items": [{"a": "Screw", "b": "ramp wrapped around a cylinder"}, {"a": "Wedge", "b": "two ramps back to back"}, {"a": "Pitch", "b": "distance moved per turn"}]}
+### Screw advantage
+ex: Screw jack with 5 mm pitch, 30 cm handle | Handle travels about 1.9 m per turn | Huge force multiplication (minus friction)
+### Wedges
+Axes, chisels, knives and doorstops turn a push into sideways splitting or holding forces. Thinner wedges split more easily but are weaker.
+### Archimedes' screw
+@viz {"k": "flow", "steps": ["Screw turns inside tube", "Water trapped between threads", "Lifted along spiral", "Pours out at top"]}
+Still used to pump water and move grain.
+> A screw is a long ramp you climb by turning.
+
+# Mechanical advantage
+Mechanical advantage (MA) measures how much a machine multiplies force. The price is distance.
+@viz {"k": "terms", "f": "MA = output force ÷ input force", "items": [{"s": "", "m": "Ideal MA = input distance ÷ output distance"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Lever, 5:1 arms", "b": "MA 5"}, {"a": "Four-strand pulley", "b": "MA 4"}, {"a": "Gear 3:1", "b": "torque × 3"}, {"a": "Ramp 4 m for 1 m rise", "b": "MA 4"}]}
+### Efficiency
+@viz {"k": "terms", "f": "Efficiency = actual MA ÷ ideal MA", "items": [{"s": "", "m": "Friction reduces actual MA"}]}
+### Velocity ratio
+Engineers sometimes use velocity ratio: how much farther the input moves than the output. For frictionless machines, MA equals velocity ratio.
+> More force out always means more distance in.
+
+# Torque in practice
+Torque is how bolts are tightened correctly. Too little and they loosen; too much and threads strip or bolts snap.
+@viz {"k": "terms", "f": "Torque = force × lever length", "items": [{"s": "N·m", "m": "newton-metres"}]}
+### Example
+ex: 400 N on a 30 cm wrench | 400 × 0.3 | = 120 N·m: a typical car wheel nut
+### Typical torques
+@viz {"k": "bars", "unit": "torque, N·m (approx.)", "items": [{"l": "Bike stem bolt", "v": 5.0}, {"l": "Spark plug", "v": 25.0}, {"l": "Car wheel nut", "v": 120.0, "hi": true}, {"l": "Truck wheel nut", "v": 600.0}]}
+### Torque wrenches
+A torque wrench clicks or signals when the set torque is reached. Critical bolts (wheels, cylinder heads, structural joints) should always be tightened this way.
+### Sequence
+@viz {"k": "flow", "steps": ["Fit all nuts finger-tight", "Tighten in star pattern", "Final torque in star pattern", "Recheck after use"]}
+> The manual's torque value isn't a suggestion.
+
+== me-structures
+
+# Tension and compression
+Structures resist loads through two basic internal forces: tension (pulling apart) and compression (pushing together).
+@viz {"k": "cmp", "l": {"t": "Tension", "items": ["stretched", "cables", "ties", "bottom of beams"]}, "r": {"t": "Compression", "items": ["squeezed", "columns", "arches", "top of beams"]}}
+### In a beam
+@viz {"k": "flow", "steps": ["Load in middle", "Beam bends", "Top squeezed (compression)", "Bottom stretched (tension)", "Neutral axis feels neither"]}
+### Reinforced concrete
+Concrete is strong in compression but weak in tension, so steel bars are placed where tension occurs, usually near the bottom of beams. Joseph Monier patented reinforced concrete ideas in the 1860s.
+### Materials by strength
+@viz {"k": "pairs", "items": [{"a": "Steel", "b": "strong in both"}, {"a": "Concrete", "b": "compression only"}, {"a": "Cables", "b": "tension only"}, {"a": "Stone", "b": "compression"}]}
+> Know where the tension is, and you know where the steel goes.
+
+# Why engineers love triangles
+A triangle is the only polygon that can't change shape without changing a side's length. That makes it inherently rigid.
+@viz {"k": "cmp", "l": {"t": "Square frame", "items": ["joints rotate", "folds into parallelogram"]}, "r": {"t": "Triangle", "items": ["rigid", "forces travel along members"]}}
+### Trusses
+@viz {"k": "list", "items": ["Roof trusses", "Bridges", "Cranes", "Electricity pylons", "Bike frames"]}
+### Truss types
+@viz {"k": "pairs", "items": [{"a": "Warren", "b": "equilateral triangles"}, {"a": "Pratt", "b": "vertical posts, diagonal ties"}, {"a": "Howe", "b": "diagonals in compression"}, {"a": "K-truss", "b": "for tall structures"}]}
+### Bracing
+Square frames can be made rigid by adding one diagonal brace, turning them into two triangles. That's why buildings use cross-bracing.
+!? The Eiffel Tower (1889) is a giant lattice of triangles, using about 7,300 tonnes of iron for a 300-metre structure.
+
+# Arches push outward
+An arch turns downward loads into compression that flows around its curve to the supports. It's ideal for stone, which is strong in compression.
+@viz {"k": "flow", "steps": ["Load on top", "Compression flows along arch", "Reaches feet", "Pushes down and outward", "Abutments resist"]}
+### The outward thrust
+@viz {"k": "fix", "items": [{"w": "Arch built on weak supports", "r": "Solid abutments or a tie between the feet"}]}
+### Famous arches
+@viz {"k": "list", "items": ["Roman aqueducts", "Gothic cathedrals", "Stone bridges", "Lisbon's Águas Livres Aqueduct"]}
+### Águas Livres
+Lisbon's Águas Livres Aqueduct, completed in the 18th century, has stone arches about 65 m tall across the Alcântara valley. It survived the 1755 earthquake.
+### Keystone
+The central stone at the top locks the arch. Builders support arches on wooden frames (centring) until the keystone is placed.
+> Arches turn weight into compression, and push sideways to do it.
+
+# The I-beam
+When a beam bends, stress is greatest at the top and bottom and lowest near the middle. The I-beam puts material where it works hardest.
+@viz {"k": "cmp", "l": {"t": "Solid rectangle", "items": ["material wasted near middle", "heavy"]}, "r": {"t": "I-beam", "items": ["flanges at top and bottom", "thin web", "light and stiff"]}}
+### Parts
+@viz {"k": "pairs", "items": [{"a": "Flanges", "b": "top and bottom plates: carry most bending stress"}, {"a": "Web", "b": "vertical plate: carries shear, separates flanges"}]}
+### Efficiency
+@viz {"k": "bars", "unit": "relative stiffness for the same weight (illustrative)", "items": [{"l": "Solid square", "v": 1.0}, {"l": "Rectangle on edge", "v": 3.0}, {"l": "I-beam", "v": 8.0, "hi": true}]}
+### Hollow sections
+Tubes and box sections also place material far from the centre and resist twisting better than I-beams.
+> Put the material where the stress is.
+
+# Factor of safety
+Engineers never design right to the breaking point. The factor of safety covers uncertainties in loads, materials, manufacturing and wear.
+@viz {"k": "terms", "f": "Factor of safety = failure load ÷ design load", "items": [{"s": "FoS 2", "m": "twice as strong as needed"}]}
+### Typical values
+@viz {"k": "bars", "unit": "factor of safety (approx.)", "items": [{"l": "Aircraft structure", "v": 1.5}, {"l": "Buildings", "v": 2.0}, {"l": "Pressure vessels", "v": 3.5}, {"l": "Lifting gear", "v": 5.0, "hi": true}, {"l": "Lift cables", "v": 10.0}]}
+### Why so different
+@viz {"k": "pairs", "items": [{"a": "Aircraft", "b": "weight costs fuel, parts tested and inspected"}, {"a": "Lifting gear", "b": "shock loads, wear, human life at risk"}, {"a": "Buildings", "b": "codes apply partial factors to loads and materials"}]}
+### Partial factors
+Modern codes like Europe's Eurocodes increase design loads and reduce material strengths separately, rather than using one overall factor.
+> Safety factors are humility built into numbers.
+
+# Cantilevers
+A cantilever is supported at one end only and projects outward. It must resist both bending and the tendency to rotate.
+@viz {"k": "cmp", "l": {"t": "Cantilever", "items": ["top in tension", "bottom in compression"]}, "r": {"t": "Simply supported beam", "items": ["top in compression", "bottom in tension"]}}
+### Examples
+@viz {"k": "list", "items": ["Balconies", "Diving boards", "Shelf brackets", "Aircraft wings", "Stadium roofs"]}
+### Deflection
+Cantilevers bend much more than beams supported at both ends. The tip deflection rises with the cube of the length.
+### Famous cantilevers
+@viz {"k": "pairs", "items": [{"a": "Forth Bridge", "b": "Scotland, 1890, cantilever railway bridge"}, {"a": "Fallingwater", "b": "Frank Lloyd Wright house, 1939"}, {"a": "Stadium roofs", "b": "column-free views"}]}
+> Cantilevers hang in the air by holding tight at one end.
+
+# Columns and buckling
+Slender columns rarely fail by crushing. They buckle sideways suddenly at a load far below their crushing strength.
+@viz {"k": "terms", "f": "P crit = π² × E × I ÷ L²", "items": [{"s": "E", "m": "stiffness"}, {"s": "I", "m": "section shape"}, {"s": "L", "m": "length"}]}
+### Length matters
+@viz {"k": "bars", "unit": "relative buckling load", "items": [{"l": "Length 1 m", "v": 100.0, "hi": true}, {"l": "2 m", "v": 25.0}, {"l": "3 m", "v": 11.0}]}
+Doubling the length cuts the buckling load to a quarter.
+### Bracing
+@viz {"k": "flow", "steps": ["Long column", "Add bracing at mid-height", "Effective length halved", "Buckling load × 4"]}
+### Euler
+Swiss mathematician Leonhard Euler derived the buckling formula in 1744.
+### Try it
+Press down on a plastic ruler standing on end: it doesn't crush, it bows sideways.
+> Slender columns fail by buckling, not crushing.
+
+# Shells and domes
+Curved shells carry loads through their surface, spreading forces efficiently. Thin shells can span large spaces with little material.
+@viz {"k": "list", "items": ["Eggshells", "Domes", "Barrel vaults", "Cooling towers", "Modern concrete shells"]}
+### The Pantheon
+Rome's Pantheon, completed around 125 AD, has a concrete dome 43 m across. It remains the world's largest unreinforced concrete dome, lightened by coffers and lighter aggregate higher up.
+### Why curves work
+@viz {"k": "cmp", "l": {"t": "Flat roof", "items": ["bends", "needs deep beams"]}, "r": {"t": "Shell", "items": ["membrane forces", "thin and light"]}}
+### Modern examples
+@viz {"k": "pairs", "items": [{"a": "Sydney Opera House", "b": "shell roofs, 1973"}, {"a": "Geodesic domes", "b": "triangulated spheres"}, {"a": "Stadium roofs", "b": "tension and shell structures"}]}
+> Curvature turns a thin surface into a strong one.
+
+# Load paths
+Every load must travel through the structure to the ground. Engineers trace a continuous load path for every force.
+@viz {"k": "flow", "steps": ["Floor slab", "Beams", "Columns", "Foundations", "Ground"]}
+### Missing links
+@viz {"k": "fix", "items": [{"w": "Wall removed during renovation without checking", "r": "Engineer confirms whether it's load-bearing"}]}
+### Hidden load paths
+Removing a load-bearing wall, cutting a beam or overloading a balcony breaks the path. Loads then find another route, or the structure fails.
+### Wind and earthquake
+@viz {"k": "pairs", "items": [{"a": "Vertical loads", "b": "gravity, down to foundations"}, {"a": "Horizontal loads", "b": "wind and earthquakes, through bracing, walls and cores"}]}
+> If you can't trace the load to the ground, something's missing.
+
+# Dead, live and environmental loads
+Structures are designed for several kinds of loads, each with its own uncertainty and safety factor.
+@viz {"k": "tree", "root": "Loads", "items": ["Dead: own weight", "Live: people, furniture", "Snow: on roofs", "Wind: pressure and suction", "Seismic: earthquakes", "Thermal: expansion"]}
+### Typical floor loads
+@viz {"k": "bars", "unit": "design live load, kN/m² (approx.)", "items": [{"l": "Home", "v": 2.0}, {"l": "Office", "v": 3.0}, {"l": "Shop", "v": 4.0}, {"l": "Crowd area", "v": 5.0, "hi": true}]}
+### In Portugal
+Portuguese buildings are designed to the Eurocodes, with special attention to seismic loads, especially in Lisbon, the Algarve and the Azores.
+### Load combinations
+Engineers check combinations: dead plus live, dead plus wind, dead plus earthquake, with factors for each.
+> Structures must carry what they weigh, what we put on them, and what nature throws at them.
+
+== me-materials
+
+# Strength and stiffness are different
+Strength is how much stress a material withstands before failing. Stiffness is how much it resists deforming. A material can be strong but flexible, or stiff but weak.
+@viz {"k": "cmp", "l": {"t": "Strength", "items": ["load before breaking or yielding", "MPa"]}, "r": {"t": "Stiffness", "items": ["resistance to deformation", "Young's modulus", "GPa"]}}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Rubber", "b": "weak and flexible"}, {"a": "Glass", "b": "stiff but brittle"}, {"a": "Steel", "b": "strong and stiff"}, {"a": "Nylon rope", "b": "strong but stretchy"}]}
+### Toughness
+A third property, toughness, is the energy absorbed before fracture. Steel is tough; glass is not.
+### Design implications
+• Bridges must be stiff enough not to sway uncomfortably
+• Ropes must be strong but can stretch
+• Aircraft need strength and stiffness at low weight
+> Strong, stiff and tough are three different virtues.
+
+# Steel
+Steel is iron with a small amount of carbon, usually under 2%. It's the backbone of modern construction and machinery.
+@viz {"k": "list", "items": ["Strong in tension and compression", "Ductile", "Weldable", "Recyclable", "Heavy", "Rusts unprotected"]}
+### Grades
+@viz {"k": "pairs", "items": [{"a": "S235", "b": "structural steel, 235 MPa yield"}, {"a": "S355", "b": "common structural steel, 355 MPa"}, {"a": "Stainless (e.g. 304)", "b": "with chromium, resists corrosion"}, {"a": "High-strength", "b": "690+ MPa"}]}
+### Recycling
+Steel is one of the most recycled materials in the world. Electric arc furnaces melt scrap with much lower emissions than making new steel from ore.
+### Production
+@viz {"k": "flow", "steps": ["Iron ore", "Blast furnace", "Pig iron", "Oxygen converter", "Steel"]}
+> Steel's ductility gives warning before failure.
+
+# Concrete
+Concrete is a mix of cement, water, sand and gravel. It's the world's most used construction material after water.
+@viz {"k": "cmp", "l": {"t": "Strengths", "items": ["cheap", "mouldable", "fire-resistant", "strong in compression"]}, "r": {"t": "Weaknesses", "items": ["weak in tension", "heavy", "high carbon cement"]}}
+### Strength
+@viz {"k": "bars", "unit": "approx. compressive strength, MPa", "items": [{"l": "Ordinary concrete", "v": 30.0}, {"l": "High-strength", "v": 80.0}, {"l": "Tensile strength", "v": 3.0, "hi": true}]}
+Tensile strength is only about a tenth of compressive strength.
+### Curing
+Concrete hardens through a chemical reaction with water, not by drying. It gains most of its strength in about 28 days and must be kept moist while curing.
+### Prestressed concrete
+Steel tendons are tensioned before or after casting, squeezing the concrete so it stays in compression even under load. It allows longer spans.
+> Concrete loves compression; steel handles the tension.
+
+# Wood
+Wood is a natural composite of cellulose fibres in a lignin matrix. It's strong along the grain, light and renewable.
+@viz {"k": "cmp", "l": {"t": "Along the grain", "items": ["strong", "stiff"]}, "r": {"t": "Across the grain", "items": ["weak", "splits easily"]}}
+### Strength for weight
+@viz {"k": "bars", "unit": "approx. strength-to-weight, relative", "items": [{"l": "Concrete", "v": 1.0}, {"l": "Steel", "v": 4.0}, {"l": "Spruce timber", "v": 7.0, "hi": true}]}
+### Engineered timber
+@viz {"k": "pairs", "items": [{"a": "Glulam", "b": "glued laminated beams"}, {"a": "CLT", "b": "cross-laminated timber panels"}, {"a": "LVL", "b": "laminated veneer lumber"}, {"a": "Plywood", "b": "cross-layered veneers"}]}
+### Modern timber buildings
+Engineered timber now enables tall buildings: the Ascent tower in Milwaukee, completed in 2022, reaches about 87 m.
+### Challenges
+@viz {"k": "list", "items": ["Moisture", "Fire", "Insects and fungi", "Movement with humidity"]}
+> Wood is a carbon store you can build with.
+
+# Aluminium
+Aluminium is about a third the density of steel and naturally resists corrosion through a thin oxide layer.
+@viz {"k": "bars", "unit": "density, kg/m³", "items": [{"l": "Aluminium", "v": 2700.0, "hi": true}, {"l": "Titanium", "v": 4500.0}, {"l": "Steel", "v": 7850.0}, {"l": "Copper", "v": 8960.0}]}
+### Strengths and limits
+@viz {"k": "cmp", "l": {"t": "Advantages", "items": ["light", "corrosion resistant", "recyclable", "easy to extrude"]}, "r": {"t": "Limits", "items": ["a third of steel's stiffness", "fatigue", "expensive to produce from ore"]}}
+### Energy
+Making new aluminium uses a lot of electricity. Recycling it uses about 5% of that energy, so recycled aluminium is highly valuable.
+### Uses
+@viz {"k": "list", "items": ["Aircraft", "Window frames", "Cars", "Cans", "Bicycles", "Power lines"]}
+> Light and corrosion-free, but less stiff than steel.
+
+# Plastics and composites
+Plastics are light, cheap and easy to shape. Composites combine materials to get properties neither has alone.
+@viz {"k": "pairs", "items": [{"a": "Thermoplastics", "b": "melt and reshape: PE, PP, PVC, nylon"}, {"a": "Thermosets", "b": "cure permanently: epoxy, polyester"}, {"a": "Fibre composites", "b": "strong fibres in resin"}, {"a": "Carbon fibre", "b": "very stiff and strong for weight"}]}
+### Composites
+@viz {"k": "flow", "steps": ["Strong fibres (carbon, glass)", "Embedded in resin", "Laid in layers", "Cured", "Light, strong part"]}
+### Uses
+@viz {"k": "list", "items": ["Aircraft (e.g. Boeing 787 about 50% composites by weight)", "Wind turbine blades", "Racing bikes", "Boats"]}
+### Drawbacks
+@viz {"k": "cmp", "l": {"t": "Composites", "items": ["high strength-to-weight", "costly", "hard to recycle"]}, "r": {"t": "Metals", "items": ["recyclable", "repairable", "heavier"]}}
+> Composites put strong fibres exactly where the loads go.
+
+# Choosing a material
+Material selection balances many properties against cost and practicality. There's no perfect material, only the best compromise.
+@viz {"k": "list", "items": ["Strength", "Stiffness", "Weight", "Cost", "Durability", "Manufacturability", "Environmental impact"]}
+### Ashby charts
+Engineers use charts plotting properties against each other (like stiffness versus density) to find materials that best fit a requirement.
+### Example
+@viz {"k": "pairs", "items": [{"a": "Bike frame", "b": "steel (cheap, comfortable), aluminium (light), carbon (lightest), titanium (durable)"}, {"a": "Window frame", "b": "aluminium, PVC or wood"}, {"a": "Bridge", "b": "steel, concrete or both"}]}
+### Life-cycle thinking
+@viz {"k": "flow", "steps": ["Raw material", "Production", "Use", "Maintenance", "End of life", "Recycling"]}
+> The best material depends on what matters most for the job.
+
+# Embodied carbon
+Embodied carbon is the greenhouse gas emitted in making materials and building structures. Cement and steel are major sources.
+@viz {"k": "nums", "items": [{"v": "~8%", "l": "global CO₂ from cement (widely cited estimate)"}, {"v": "~7–9%", "l": "from iron and steel"}, {"v": "~0.6 t", "l": "CO₂ per tonne of cement (typical)"}]}
+### Why cement emits
+@viz {"k": "flow", "steps": ["Limestone heated in kiln", "Releases CO₂ chemically", "Plus fuel combustion", "Clinker produced"]}
+About half the emissions come from the chemistry itself, not the fuel.
+### Reductions
+@viz {"k": "list", "items": ["Low-clinker cements", "Recycled steel", "Timber buildings", "Less material through better design", "Carbon capture"]}
+### Design matters
+Optimising structures to use less material can cut embodied carbon substantially at no extra cost.
+> The greenest material is the one you don't need to use.
+
+# Corrosion
+Corrosion is the gradual destruction of metals by chemical reaction with their environment. Rusting steel is the most familiar form.
+@viz {"k": "list", "items": ["Paint", "Galvanising", "Stainless steel", "Concrete cover", "Cathodic protection"]}
+### What drives rust
+@viz {"k": "flow", "steps": ["Steel + oxygen + water", "Iron oxide forms", "Expands and flakes", "Fresh steel exposed", "Continues"]}
+Salt accelerates corrosion, which is why coastal and road-salted structures suffer most.
+### Rebar corrosion
+Rusting steel expands inside concrete, cracking it from within (spalling). Adequate concrete cover and good quality concrete protect rebar.
+### Cost
+Corrosion costs are estimated at around 3% of global GDP each year.
+> Keep water and salt away from steel, and it lasts.
+
+# Glass
+Glass is stiff and strong in compression but brittle. Tiny surface flaws can start cracks that spread instantly.
+@viz {"k": "cmp", "l": {"t": "Annealed glass", "items": ["ordinary", "breaks into sharp shards"]}, "r": {"t": "Tempered glass", "items": ["heat-treated", "about 4–5 times stronger", "breaks into small blunt pieces"]}}
+### Laminated glass
+Two or more sheets bonded with a plastic interlayer stay together when broken. Car windscreens and glass floors use it.
+### Why glass is "weak"
+In theory, glass is extremely strong. In practice, microscopic scratches concentrate stress and start cracks.
+### Uses
+@viz {"k": "list", "items": ["Windows and façades", "Glass floors and stairs", "Phone screens", "Fibre optics"]}
+!? Tempered glass can't be cut after treatment; it must be shaped first.
+
+== me-stress
+
+# Stress
+Stress is force divided by the area carrying it. It tells you how hard the material is working, regardless of size.
+@viz {"k": "terms", "f": "σ = F ÷ A", "items": [{"s": "σ", "m": "stress in pascals (N/m²)"}, {"s": "F", "m": "force"}, {"s": "A", "m": "cross-sectional area"}]}
+### Units
+@viz {"k": "pairs", "items": [{"a": "1 Pa", "b": "1 N/m²"}, {"a": "1 MPa", "b": "1 N/mm²"}, {"a": "Steel yield", "b": "about 235–355 MPa"}, {"a": "Concrete compression", "b": "about 30 MPa"}]}
+### Example
+ex: 10 kN on a 10 mm diameter steel rod | Area ≈ 78.5 mm² | Stress ≈ 127 MPa
+### Types of stress
+@viz {"k": "list", "items": ["Tensile", "Compressive", "Shear", "Bending", "Torsional"]}
+> Stress shows how hard each square millimetre is working.
+
+# Strain
+Strain is the change in length divided by the original length. It's a ratio with no units, usually very small.
+@viz {"k": "terms", "f": "ε = ΔL ÷ L", "items": [{"s": "ΔL", "m": "change in length"}, {"s": "L", "m": "original length"}]}
+### Example
+ex: 2 m steel bar stretches 1 mm | ε = 1 ÷ 2,000 | = 0.0005 (0.05%)
+### Measuring strain
+Strain gauges, thin foil patterns glued to a surface, change resistance as they stretch. They monitor bridges, aircraft and weighing scales.
+### Microstrain
+@viz {"k": "pairs", "items": [{"a": "1 microstrain", "b": "0.000001"}, {"a": "Typical structure", "b": "hundreds of microstrain"}, {"a": "Steel yield", "b": "about 1,200–1,800 microstrain"}]}
+> Strain is stretch per unit length.
+
+# Young's modulus
+Young's modulus measures stiffness: how much stress is needed for a given strain in the elastic range.
+@viz {"k": "terms", "f": "E = σ ÷ ε", "items": [{"s": "E", "m": "Young's modulus"}, {"s": "σ", "m": "stress"}, {"s": "ε", "m": "strain"}]}
+@viz {"k": "bars", "unit": "Young's modulus, GPa", "items": [{"l": "Rubber", "v": 0.01}, {"l": "Wood (along grain)", "v": 11.0}, {"l": "Concrete", "v": 30.0}, {"l": "Aluminium", "v": 70.0}, {"l": "Steel", "v": 200.0, "hi": true}]}
+### What it means
+Steel is about three times stiffer than aluminium. An aluminium part needs to be deeper or thicker to match a steel part's stiffness.
+### History
+Named after English scientist Thomas Young, who described it in 1807, though similar ideas were explored earlier.
+### Hooke's law
+@viz {"k": "terms", "f": "F = k × x", "items": [{"s": "", "m": "Springs stretch in proportion to force"}, {"s": "", "m": "Robert Hooke, 1660s"}]}
+> Young's modulus is a material's stiffness, independent of shape.
+
+# Elastic and plastic
+In the elastic range, materials spring back fully when unloaded. Beyond the yield point, they deform permanently.
+@viz {"k": "flow", "steps": ["Load applied", "Elastic stretch", "Unload: returns to shape", "Exceed yield", "Permanent deformation"]}
+### Everyday examples
+@viz {"k": "pairs", "items": [{"a": "Paper clip bent slightly", "b": "springs back: elastic"}, {"a": "Paper clip bent far", "b": "stays bent: plastic"}, {"a": "Car crumple zone", "b": "designed plastic deformation"}, {"a": "Spring", "b": "always elastic in use"}]}
+### Design principle
+Structures are designed to stay elastic under normal loads. Plastic behaviour provides a reserve in extreme events, like earthquakes.
+> Elastic means it returns; plastic means it remembers.
+
+# The stress–strain curve
+Tensile testing pulls a sample until it breaks, recording a stress-strain curve that reveals key properties.
+@viz {"k": "time", "events": [{"y": "Elastic region", "l": "straight line"}, {"y": "Yield point", "l": "permanent deformation begins"}, {"y": "Strain hardening", "l": "stress rises"}, {"y": "Ultimate strength", "l": "peak"}, {"y": "Fracture", "l": "breaks"}]}
+### Key values from the curve
+@viz {"k": "pairs", "items": [{"a": "Young's modulus", "b": "slope of straight part"}, {"a": "Yield strength", "b": "start of permanent deformation"}, {"a": "Ultimate tensile strength", "b": "maximum stress"}, {"a": "Elongation", "b": "total stretch at failure"}]}
+### Necking
+After the ultimate strength, the bar narrows locally ("necks"), and the force needed drops until fracture.
+### Typical structural steel
+@viz {"k": "bars", "unit": "stress, MPa (S355 steel, approx.)", "items": [{"l": "Yield", "v": 355.0}, {"l": "Ultimate", "v": 510.0, "hi": true}]}
+> One test reveals stiffness, strength and ductility.
+
+# Ductile vs brittle
+Ductile materials stretch and bend significantly before breaking. Brittle materials fracture suddenly with little deformation.
+@viz {"k": "cmp", "l": {"t": "Ductile", "items": ["steel", "copper", "aluminium", "visible warning"]}, "r": {"t": "Brittle", "items": ["glass", "cast iron", "concrete", "sudden failure"]}}
+### Why ductility matters
+A ductile structure bends and sags before collapsing, giving people time to escape and engineers warning signs.
+### Temperature effects
+Some steels become brittle in extreme cold. The Liberty ships of World War II suffered brittle fractures in cold seas, prompting new research into steel toughness.
+### Earthquake design
+Seismic codes require ductile detailing: steel reinforcement arranged so concrete members bend without sudden collapse.
+> Ductility is a material's way of warning you.
+
+# Bending stress
+When a beam bends, stress varies across its depth: zero at the neutral axis, maximum at the top and bottom surfaces.
+@viz {"k": "terms", "f": "σ = M × y ÷ I", "items": [{"s": "M", "m": "bending moment"}, {"s": "y", "m": "distance from neutral axis"}, {"s": "I", "m": "second moment of area"}]}
+### Stress distribution
+@viz {"k": "flow", "steps": ["Top surface: maximum compression", "Neutral axis: zero", "Bottom surface: maximum tension"]}
+### Consequences
+@viz {"k": "list", "items": ["I-beams put material at top and bottom", "Holes near the neutral axis do little harm", "Cracks start at surfaces"]}
+### Maximum moment
+ex: Simply supported beam, central load P, span L | Max moment = P × L ÷ 4 | At mid-span
+> Bending works the surfaces hardest.
+
+# Second moment of area
+The second moment of area (I) describes how a cross-section's shape resists bending. Depth matters enormously.
+@viz {"k": "terms", "f": "I = b × h³ ÷ 12", "items": [{"s": "b", "m": "width"}, {"s": "h", "m": "depth"}, {"s": "", "m": "for a rectangle"}]}
+### Depth vs width
+@viz {"k": "bars", "unit": "relative stiffness of a rectangular section", "items": [{"l": "Original", "v": 1.0}, {"l": "Double width", "v": 2.0}, {"l": "Double depth", "v": 8.0, "hi": true}]}
+### Why joists stand on edge
+ex: 50 × 200 mm joist | On edge: I ∝ 50 × 200³ | Flat: I ∝ 200 × 50³ | On edge is 16 times stiffer
+### Practical lessons
+• Deeper beams are much stiffer for the same material
+• Shelves sag less if they have a deep front lip
+• Ruler: easy to bend flat, very hard on edge
+> Depth is cubed: double it and stiffness rises eightfold.
+
+# Thermal expansion
+Materials expand when heated and contract when cooled. Structures must accommodate this movement.
+@viz {"k": "terms", "f": "ΔL = α × L × ΔT", "items": [{"s": "α", "m": "expansion coefficient"}, {"s": "L", "m": "length"}, {"s": "ΔT", "m": "temperature change"}]}
+### Example
+ex: 100 m steel bridge, α = 12 × 10⁻⁶ /°C | Temperature swing 35 °C | ΔL ≈ 4.2 cm
+### Coefficients
+@viz {"k": "bars", "unit": "expansion, millionths per °C", "items": [{"l": "Concrete", "v": 10.0}, {"l": "Steel", "v": 12.0}, {"l": "Aluminium", "v": 23.0, "hi": true}, {"l": "PVC", "v": 70.0}]}
+### Solutions
+@viz {"k": "list", "items": ["Expansion joints in bridges", "Gaps in rails (or welded, stressed rails)", "Pipe loops", "Movement joints in slabs and tiles"]}
+### Mixing materials
+Steel and concrete expand at almost the same rate, one reason reinforced concrete works so well.
+> Leave room to grow: materials move with temperature.
+
+# Stress concentrations
+Holes, notches and sharp corners concentrate stress locally, sometimes to several times the average. Cracks start there.
+@viz {"k": "fix", "items": [{"w": "Sharp internal corner in a loaded part", "r": "Rounded fillet spreads the stress"}]}
+### Stress concentration factor
+@viz {"k": "bars", "unit": "local stress ÷ average stress (approx.)", "items": [{"l": "Smooth bar", "v": 1.0}, {"l": "Round hole in plate", "v": 3.0}, {"l": "Sharp notch", "v": 5.0, "hi": true}]}
+### The Comet disasters
+In 1954, two de Havilland Comet jet airliners broke up in flight. Investigations traced fatigue cracks to sharp corners of openings in the pressurised fuselage. Since then, aircraft openings and windows have rounded corners.
+### Design practice
+@viz {"k": "list", "items": ["Rounded corners", "Gradual changes in section", "Smooth surfaces", "Stop-drill holes at crack tips"]}
+> Sharp corners are where cracks are born.
+
+== me-friction
+
+# What friction is
+Friction resists sliding between surfaces. At the microscopic level, even polished surfaces are rough, touching only at tiny high points.
+@viz {"k": "flow", "steps": ["Surfaces press together", "Microscopic peaks touch", "Bonds and interlocking", "Resistance to sliding"]}
+### Classic laws
+@viz {"k": "pairs", "items": [{"a": "Amontons (1699)", "b": "friction proportional to normal force"}, {"a": "Independent of area", "b": "for most solid contacts"}, {"a": "Coulomb (1785)", "b": "kinetic friction roughly independent of speed"}]}
+### Leonardo first
+Leonardo da Vinci studied friction around 1500, two centuries before Amontons, but his notes weren't published.
+### Energy
+Friction turns motion into heat. Rub your hands together and feel it.
+> Friction is countless microscopic contacts resisting motion.
+
+# Coefficient of friction
+The friction force is roughly the normal force multiplied by a coefficient (μ) that depends on the two materials.
+@viz {"k": "terms", "f": "F friction = μ × N", "items": [{"s": "μ", "m": "coefficient"}, {"s": "N", "m": "normal force pressing surfaces together"}]}
+@viz {"k": "bars", "unit": "approx. coefficient of friction", "items": [{"l": "Ice on ice", "v": 0.05}, {"l": "Teflon on steel", "v": 0.05}, {"l": "Lubricated steel", "v": 0.1}, {"l": "Wood on wood", "v": 0.4}, {"l": "Rubber on dry road", "v": 0.9, "hi": true}]}
+### Example
+ex: 1,000 N box on wood floor, μ ≈ 0.4 | F ≈ 400 N | to keep it sliding
+### Variability
+Coefficients vary with surface condition, moisture, temperature and contamination. Engineers use conservative values.
+> Friction depends on the pair of materials and how hard they press.
+
+# Static vs kinetic
+It takes more force to start sliding than to keep sliding. Static friction is generally higher than kinetic friction.
+@viz {"k": "cmp", "l": {"t": "Static", "items": ["before motion", "higher", "grips"]}, "r": {"t": "Kinetic", "items": ["during sliding", "lower", "slips"]}}
+### ABS brakes
+@viz {"k": "flow", "steps": ["Hard braking", "Wheel about to lock", "ABS releases briefly", "Tyre keeps static grip", "Shorter stops and steering control"]}
+A rolling tyre uses static friction at the contact patch; a locked, sliding tyre uses lower kinetic friction and can't steer.
+### Stick-slip
+Alternating sticking and slipping causes squeaky doors, creaking floors and violin sounds.
+> Once it starts sliding, it's easier to keep it sliding.
+
+# Brakes
+Brakes convert kinetic energy into heat through friction between pads and discs or drums.
+@viz {"k": "flow", "steps": ["Press pedal", "Hydraulic pressure", "Pads clamp disc", "Friction", "Heat", "Car slows"]}
+### Energy involved
+ex: 1,500 kg car at 100 km/h | Kinetic energy ≈ 580 kJ | All turned to heat in a stop
+### Brake fade
+On long descents, brakes overheat and friction drops. Using lower gears (engine braking) or EV regenerative braking prevents fade.
+### Brake types
+@viz {"k": "pairs", "items": [{"a": "Disc brakes", "b": "good cooling, most cars"}, {"a": "Drum brakes", "b": "cheaper, rear axles, trucks"}, {"a": "Regenerative", "b": "EVs recover energy"}]}
+### Brake dust
+Brake wear releases fine particles, a significant source of urban air pollution. EVs produce less because they brake mostly by regeneration.
+> Brakes turn speed into heat.
+
+# Tyres and grip
+Tyres grip the road through friction and the rubber's slight deformation into the road surface texture.
+@viz {"k": "list", "items": ["Tread depth", "Tyre pressure", "Rubber compound", "Temperature", "Road surface"]}
+### Aquaplaning
+@viz {"k": "flow", "steps": ["Water on road", "Tread can't clear it", "Water film lifts tyre", "No grip", "Loss of control"]}
+### Tread depth
+@viz {"k": "pairs", "items": [{"a": "Legal minimum in EU", "b": "1.6 mm"}, {"a": "Recommended for wet safety", "b": "3 mm or more"}, {"a": "New tyres", "b": "about 7–8 mm"}]}
+### Stopping distances
+@viz {"k": "bars", "unit": "stopping distance from 80 km/h in wet, m (illustrative)", "items": [{"l": "New tyre", "v": 30.0}, {"l": "3 mm tread", "v": 35.0}, {"l": "1.6 mm tread", "v": 45.0, "hi": true}]}
+### Pressure
+Under-inflated tyres overheat, wear unevenly, increase fuel use and reduce grip.
+> Tyres are the only contact between car and road: about four postcards' worth.
+
+# Lubrication
+Lubricants separate surfaces with a thin film, dramatically reducing friction and wear.
+@viz {"k": "cmp", "l": {"t": "Dry contact", "items": ["high friction", "rapid wear", "heat"]}, "r": {"t": "Lubricated", "items": ["low friction", "little wear", "cooling"]}}
+### Lubrication regimes
+@viz {"k": "pairs", "items": [{"a": "Boundary", "b": "thin film, some contact"}, {"a": "Mixed", "b": "partial film"}, {"a": "Hydrodynamic", "b": "full fluid film, no contact"}]}
+### Types
+@viz {"k": "list", "items": ["Oils", "Greases", "Solid lubricants (graphite, PTFE)", "Water in some bearings"]}
+### Engine oil
+Engine oil lubricates, cools, cleans and protects against corrosion. Changing it at recommended intervals prevents expensive wear.
+> A film thinner than a hair separates metal from metal.
+
+# Bearings
+Bearings support rotating shafts with minimal friction. Rolling bearings replace sliding with rolling.
+@viz {"k": "bars", "unit": "approx. friction coefficient", "items": [{"l": "Plain bearing, dry", "v": 0.3}, {"l": "Plain bearing, oiled", "v": 0.05}, {"l": "Ball bearing", "v": 0.002, "hi": true}]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Ball bearings", "b": "high speed, moderate loads"}, {"a": "Roller bearings", "b": "heavy loads"}, {"a": "Plain bearings", "b": "simple, quiet"}, {"a": "Magnetic and air bearings", "b": "no contact"}]}
+### Where they are
+@viz {"k": "list", "items": ["Wheels", "Motors", "Fans", "Hard drives", "Skateboards", "Wind turbines"]}
+### Failure signs
+@viz {"k": "list", "items": ["Noise", "Vibration", "Heat", "Play in the shaft"]}
+> Rolling beats sliding by a factor of a hundred.
+
+# Useful friction
+Friction isn't just an enemy. Much of daily life depends on it, and engineers often add it on purpose.
+@viz {"k": "list", "items": ["Walking", "Driving", "Holding objects", "Nuts staying on bolts", "Knots holding"]}
+### Engineered friction
+@viz {"k": "pairs", "items": [{"a": "Clutch plates", "b": "transmit engine torque"}, {"a": "Belt drives", "b": "grip pulleys"}, {"a": "Non-slip floors", "b": "prevent falls"}, {"a": "Brakes", "b": "controlled stopping"}]}
+### Friction in fasteners
+Bolted joints hold mainly through friction between clamped surfaces, created by bolt tension. That's why correct torque matters.
+### Without friction
+Imagine walking on perfectly frictionless ice: you couldn't start, stop or turn.
+> Friction holds the world together.
+
+# Rolling resistance
+Rolling tyres lose energy because rubber flexes and recovers with each rotation. This rolling resistance affects fuel use and EV range.
+@viz {"k": "bars", "unit": "rolling resistance coefficient (approx.)", "items": [{"l": "Train wheel on rail", "v": 0.001}, {"l": "Bike tyre", "v": 0.005}, {"l": "Car tyre", "v": 0.01, "hi": true}, {"l": "Tyre on sand", "v": 0.3}]}
+### Why trains are efficient
+Steel wheels on steel rails deform very little, giving rolling resistance about a tenth of car tyres.
+### Saving energy
+@viz {"k": "list", "items": ["Correct tyre pressure", "Low rolling resistance tyres", "Less weight", "Narrower tyres"]}
+### EU tyre label
+EU tyre labels rate rolling resistance (energy efficiency), wet grip and noise, helping buyers compare.
+> Pump up your tyres: it's free efficiency.
+
+# Wear costs
+Friction and wear consume a large share of the world's energy and cause huge losses through worn components.
+@viz {"k": "nums", "items": [{"v": "~20%", "l": "world energy used to overcome friction (estimate)"}, {"v": "~3%", "l": "more to replace worn parts"}, {"v": "Tribology", "l": "the science of friction, wear and lubrication"}]}
+### Where energy goes
+@viz {"k": "list", "items": ["Vehicles", "Industrial machines", "Power plants", "Homes"]}
+### Savings potential
+Studies by tribologists such as Kenneth Holmberg and Ali Erdemir suggest new technologies could cut friction losses significantly over decades.
+### Solutions
+@viz {"k": "pairs", "items": [{"a": "Advanced lubricants", "b": "lower friction"}, {"a": "Surface coatings", "b": "harder, smoother"}, {"a": "Better bearings", "b": "less loss"}, {"a": "Electrification", "b": "fewer moving parts"}]}
+> Reducing friction is one of the quietest ways to save energy.
+
+== me-energy
+
+# Work
+In physics, work is done when a force moves something in the direction of the force. It's measured in joules.
+@viz {"k": "terms", "f": "W = F × d", "items": [{"s": "W", "m": "work in joules"}, {"s": "F", "m": "force in newtons"}, {"s": "d", "m": "distance moved in the force's direction"}]}
+### Example
+ex: Lift a 10 kg bag 1 m | Force = 10 × 9.81 ≈ 98 N | Work ≈ 98 J
+### No movement, no work
+Holding a heavy bag still does no physical work, even though your muscles tire. Your muscles use energy to stay tense, but nothing moves.
+### Everyday work
+@viz {"k": "bars", "unit": "approx. work, J", "items": [{"l": "Lift phone to ear", "v": 1.0}, {"l": "Climb one stair", "v": 120.0}, {"l": "Lift 20 kg box to shelf", "v": 300.0}, {"l": "Climb 3 floors", "v": 6000.0, "hi": true}]}
+> Work is force multiplied by distance moved.
+
+# Potential energy
+Raising an object against gravity stores gravitational potential energy, which can be released when it falls.
+@viz {"k": "terms", "f": "PE = m × g × h", "items": [{"s": "m", "m": "mass"}, {"s": "g", "m": "9.81 m/s²"}, {"s": "h", "m": "height raised"}]}
+### Example
+ex: 1,000 kg of water raised 100 m | 1,000 × 9.81 × 100 | ≈ 0.98 MJ ≈ 0.27 kWh
+### Hydroelectric power
+@viz {"k": "flow", "steps": ["Rain fills reservoir", "Water held high", "Released through turbines", "Potential energy becomes electricity"]}
+### Pumped storage
+Portugal's pumped-storage plants pump water uphill when electricity is cheap and release it when needed, storing energy as height.
+### Other forms
+@viz {"k": "list", "items": ["Compressed springs", "Stretched rubber bands", "Wound clocks", "Raised weights in gravity storage systems"]}
+> Height is stored energy.
+
+# Kinetic energy
+Moving objects carry kinetic energy, which grows with the square of speed.
+@viz {"k": "terms", "f": "KE = ½ × m × v²", "items": [{"s": "m", "m": "mass in kg"}, {"s": "v", "m": "speed in m/s"}]}
+### Speed matters most
+@viz {"k": "bars", "unit": "kinetic energy of a 1,500 kg car, kJ", "items": [{"l": "30 km/h", "v": 52.0}, {"l": "50 km/h", "v": 145.0}, {"l": "100 km/h", "v": 579.0}, {"l": "130 km/h", "v": 978.0, "hi": true}]}
+### In crashes
+Doubling speed quadruples the energy a crash must absorb. Going from 50 to 70 km/h nearly doubles crash energy.
+### Braking distance
+Braking distance also rises with the square of speed, because brakes must remove all that energy.
+ex: Braking distance at 50 km/h ≈ 13 m | At 100 km/h | ≈ 52 m on dry road
+> Double the speed, four times the energy.
+
+# Power
+Power is the rate of doing work or using energy, measured in watts: joules per second.
+@viz {"k": "terms", "f": "P = W ÷ t", "items": [{"s": "P", "m": "power in watts"}, {"s": "W", "m": "work in joules"}, {"s": "t", "m": "time in seconds"}]}
+@viz {"k": "bars", "unit": "sustained power, W (approx.)", "items": [{"l": "Resting human", "v": 100.0}, {"l": "Fit cyclist", "v": 250.0}, {"l": "Pro cyclist", "v": 400.0}, {"l": "Small car engine", "v": 70000.0, "hi": true}]}
+### Peak vs sustained
+@viz {"k": "pairs", "items": [{"a": "Sprinter peak", "b": "over 2,000 W for a second"}, {"a": "Pro cyclist", "b": "about 400 W for an hour"}, {"a": "Average adult", "b": "100–200 W sustained effort"}]}
+### Climbing stairs
+ex: 70 kg climbs 3 m in 4 s | Work ≈ 2,060 J | Power ≈ 515 W
+> Power is how fast the work gets done.
+
+# Horsepower
+James Watt defined the horsepower in the 1780s to compare his steam engines with the draft horses they replaced.
+@viz {"k": "pairs", "items": [{"a": "Imperial horsepower (hp)", "b": "about 746 W"}, {"a": "Metric horsepower (cv in Portugal)", "b": "about 735 W"}, {"a": "Kilowatt", "b": "1,000 W"}]}
+### Converting
+ex: 100 kW engine | ÷ 0.735 | ≈ 136 cv
+### Was it realistic?
+Watt estimated a horse could sustain about 33,000 foot-pounds per minute. Real horses can produce more in short bursts but less over a full day.
+### Car specs in Portugal
+Portuguese car advertisements often quote power in cv, while technical documents use kW. EU documents require kW.
+> One horsepower is about three-quarters of a kilowatt.
+
+# Efficiency
+No machine converts all input energy into useful output. Efficiency is the useful output divided by the input.
+@viz {"k": "terms", "f": "Efficiency = useful output ÷ input × 100%", "items": [{"s": "", "m": "The rest becomes heat, noise, vibration"}]}
+@viz {"k": "bars", "unit": "typical efficiency, % (approx.)", "items": [{"l": "Incandescent bulb", "v": 5.0}, {"l": "Petrol engine", "v": 30.0}, {"l": "Human muscle", "v": 25.0}, {"l": "Electric motor", "v": 92.0, "hi": true}, {"l": "Large transformer", "v": 99.0}]}
+### Where losses go
+@viz {"k": "list", "items": ["Friction", "Heat", "Sound", "Electrical resistance", "Air resistance"]}
+### Chains of efficiency
+ex: Power plant 40% × grid 92% × charger 90% × motor 90% | ≈ 30% overall | from fuel to wheel
+> Every conversion loses something; fewer conversions lose less.
+
+# Energy is conserved
+Energy can't be created or destroyed, only converted from one form to another. The total always stays the same.
+@viz {"k": "cycle", "steps": ["Potential at top", "Kinetic as it falls", "Potential as it climbs", "Kinetic again", "Friction slowly turns it to heat"]}
+### Roller coasters
+A roller coaster's first hill is the tallest because no later hill can be higher: friction has already turned some energy into heat.
+### Forms of energy
+@viz {"k": "list", "items": ["Kinetic", "Potential", "Thermal", "Chemical", "Electrical", "Nuclear"]}
+### Perpetual motion
+@viz {"k": "fix", "items": [{"w": "A machine that runs forever with no energy input", "r": "Impossible: friction always turns some energy into heat"}]}
+> Energy changes form but never disappears.
+
+# Joules and kWh
+Engineers and scientists measure energy in joules; electricity bills use kilowatt-hours. Converting between them is simple.
+@viz {"k": "terms", "f": "1 kWh = 3.6 million joules (3.6 MJ)", "items": [{"s": "", "m": "1 kW for 1 hour = 1,000 J/s × 3,600 s"}]}
+### Everyday energy
+@viz {"k": "pairs", "items": [{"a": "Food calorie (kcal)", "b": "4,184 J"}, {"a": "Phone battery", "b": "about 70,000 J (19 Wh)"}, {"a": "Kettle boiling 1 litre", "b": "about 360,000 J (0.1 kWh)"}, {"a": "Litre of petrol", "b": "about 34 MJ (9.5 kWh)"}]}
+### Food vs electricity
+ex: 2,000 kcal daily diet | × 4,184 J | ≈ 8.4 MJ ≈ 2.3 kWh
+A human runs on roughly the energy of a 100 W bulb.
+> 3.6 million joules make one kilowatt-hour.
+
+# Energy in fuels
+Liquid fuels pack a lot of energy into a small volume, which is why they dominated transport for a century.
+@viz {"k": "bars", "unit": "energy density, kWh/kg (approx.)", "items": [{"l": "Li-ion battery", "v": 0.25}, {"l": "Wood", "v": 4.5}, {"l": "Coal", "v": 7.0}, {"l": "Petrol", "v": 12.8, "hi": true}, {"l": "Hydrogen", "v": 33.0}]}
+### Why EVs still compete
+@viz {"k": "cmp", "l": {"t": "Petrol car", "items": ["9 kWh per litre", "25–30% used at wheels"]}, "r": {"t": "EV", "items": ["much lighter energy store", "85–90% used at wheels"]}}
+### Per litre
+@viz {"k": "pairs", "items": [{"a": "Petrol", "b": "about 9.5 kWh per litre"}, {"a": "Diesel", "b": "about 10.7 kWh per litre"}, {"a": "LPG", "b": "about 7 kWh per litre"}]}
+### Hydrogen
+Hydrogen has huge energy per kilo but very little per litre unless compressed or liquefied, making storage hard.
+> Fuel stores lots of energy; electric motors waste less of it.
+
+# Springs
+Springs store energy when stretched or compressed. Within their elastic range, force is proportional to deflection.
+@viz {"k": "terms", "f": "F = k × x; Energy = ½ × k × x²", "items": [{"s": "k", "m": "spring constant"}, {"s": "x", "m": "deflection"}]}
+### Uses
+@viz {"k": "list", "items": ["Car suspensions", "Mattresses", "Weighing scales", "Clocks and watches", "Valves", "Pens"]}
+### Example
+ex: Spring with k = 10,000 N/m compressed 5 cm | Force = 500 N | Energy = 12.5 J
+### Fatigue
+Springs that flex millions of times can fail by fatigue. Valve springs in engines are designed for billions of cycles.
+!? Robert Hooke published his law in 1678 as a Latin anagram, "ceiiinosssttuv", standing for "ut tensio, sic vis": as the extension, so the force.
+
+== me-fluids
+
+# Pressure
+Pressure is force spread over an area. The same force concentrated on a small area produces huge pressure.
+@viz {"k": "terms", "f": "P = F ÷ A", "items": [{"s": "P", "m": "pressure in pascals"}, {"s": "F", "m": "force in newtons"}, {"s": "A", "m": "area in m²"}]}
+### Heel vs elephant
+@viz {"k": "bars", "unit": "pressure on floor, kPa (approx.)", "items": [{"l": "Elephant foot", "v": 120.0}, {"l": "Person standing", "v": 20.0}, {"l": "Stiletto heel", "v": 3000.0, "hi": true}]}
+### Units
+@viz {"k": "pairs", "items": [{"a": "1 Pa", "b": "1 N/m²"}, {"a": "1 bar", "b": "100,000 Pa"}, {"a": "1 atm", "b": "101,325 Pa"}, {"a": "1 psi", "b": "about 6,895 Pa"}]}
+### Applications
+@viz {"k": "list", "items": ["Snowshoes spread weight", "Knives concentrate force", "Drawing pins", "Tracked vehicles on mud"]}
+> Spread force to reduce pressure; concentrate it to cut.
+
+# Pressure in water
+Water pressure increases steadily with depth, because of the weight of water above.
+@viz {"k": "terms", "f": "P = ρ × g × h", "items": [{"s": "ρ", "m": "density (1,000 kg/m³)"}, {"s": "g", "m": "9.81"}, {"s": "h", "m": "depth"}]}
+### Roughly 1 bar per 10 m
+@viz {"k": "bars", "unit": "water pressure (gauge), bar", "items": [{"l": "10 m", "v": 1.0}, {"l": "100 m", "v": 10.0}, {"l": "1,000 m", "v": 100.0}, {"l": "Deepest ocean", "v": 1100.0, "hi": true}]}
+### Dams
+Dams are thicker at the bottom, where water pressure is greatest. Large concrete dams can be many times thicker at the base than at the crest.
+### Divers
+Divers equalise ear pressure as they descend. Every 10 m adds about one atmosphere.
+### Water towers
+@viz {"k": "flow", "steps": ["Water pumped up a tower", "Height creates pressure", "Taps below get pressure without pumps running"]}
+> Every 10 metres of water adds one bar.
+
+# Atmospheric pressure
+The weight of the air above us creates atmospheric pressure, about 1 bar at sea level.
+@viz {"k": "nums", "items": [{"v": "101 kPa", "l": "sea-level pressure"}, {"v": "~10 t", "l": "force on each square metre"}, {"v": "~50%", "l": "pressure at 5,500 m altitude"}]}
+### Why we don't notice
+Pressure acts equally in all directions, and our bodies contain fluids at the same pressure, so forces balance.
+### The Magdeburg hemispheres
+In 1654, Otto von Guericke pumped the air out of two joined copper hemispheres. Teams of horses couldn't pull them apart: atmospheric pressure held them together.
+### With altitude
+@viz {"k": "bars", "unit": "air pressure, % of sea level", "items": [{"l": "Sea level", "v": 100.0}, {"l": "Lisbon (100 m)", "v": 99.0}, {"l": "Serra da Estrela (2 km)", "v": 79.0}, {"l": "Everest", "v": 33.0, "hi": true}]}
+> We live at the bottom of an ocean of air.
+
+# Pascal's principle
+Pressure applied to a confined fluid is transmitted equally throughout. A small force on a small piston creates a large force on a large piston.
+@viz {"k": "terms", "f": "F₂ = F₁ × A₂ ÷ A₁", "items": [{"s": "F", "m": "force"}, {"s": "A", "m": "piston area"}]}
+### Example
+ex: Small piston 1 cm², big piston 100 cm² | Push 100 N | Lift force 10,000 N
+### The trade-off
+The small piston must move 100 times farther than the large one rises. Energy is conserved.
+### History
+Blaise Pascal described the principle in the 1650s. Joseph Bramah patented the hydraulic press in 1795.
+### Fluids are nearly incompressible
+@viz {"k": "cmp", "l": {"t": "Liquids", "items": ["barely compress", "transmit force efficiently"]}, "r": {"t": "Gases", "items": ["compress", "spongy", "air in brake lines is dangerous"]}}
+> Pressure travels; area multiplies force.
+
+# Hydraulics everywhere
+Hydraulic systems multiply and transmit force through fluid in hoses and cylinders. They're compact, powerful and controllable.
+@viz {"k": "list", "items": ["Car brakes", "Excavators", "Lifts", "Presses", "Aircraft controls", "Garage jacks"]}
+### Car brakes
+@viz {"k": "flow", "steps": ["Foot presses pedal", "Master cylinder pressurises fluid", "Fluid travels to callipers", "Pistons clamp pads on discs"]}
+### Why hydraulics
+@viz {"k": "pairs", "items": [{"a": "Power density", "b": "large forces from small cylinders"}, {"a": "Flexibility", "b": "hoses route around obstacles"}, {"a": "Control", "b": "smooth, precise movement"}]}
+### Brake fluid
+Brake fluid absorbs moisture over time, lowering its boiling point. That's why it should be replaced every couple of years.
+> Hydraulics put enormous force at the end of a flexible hose.
+
+# Buoyancy
+Archimedes' principle: an object in a fluid is pushed up by a force equal to the weight of fluid it displaces.
+@viz {"k": "flow", "steps": ["Object enters water", "Displaces water", "Upthrust = weight of displaced water", "Floats if upthrust ≥ weight"]}
+### Why steel ships float
+A steel ship's hollow shape displaces a large volume of water, whose weight equals the ship's weight before the hull is fully submerged.
+### Density decides
+@viz {"k": "pairs", "items": [{"a": "Ice (917 kg/m³)", "b": "floats, about 90% submerged"}, {"a": "Oak wood", "b": "floats"}, {"a": "Steel (7,850 kg/m³)", "b": "sinks as a solid lump"}, {"a": "Human body", "b": "floats in salt water more easily"}]}
+### Submarines
+Submarines flood or empty ballast tanks to change their average density, letting them dive or surface.
+!? According to legend, Archimedes shouted "Eureka!" when he realised in his bath how to test whether a king's crown was pure gold.
+
+# Flow in pipes
+The flow rate of a fluid is its speed multiplied by the pipe's cross-section. In a narrower section, the fluid speeds up.
+@viz {"k": "terms", "f": "Q = A × v", "items": [{"s": "Q", "m": "flow rate"}, {"s": "A", "m": "area"}, {"s": "v", "m": "speed"}]}
+### Squeeze the hose
+ex: Pipe area halves | Speed doubles | Same flow rate
+### Friction losses
+@viz {"k": "cmp", "l": {"t": "Wide pipe", "items": ["low speed", "low friction", "small pressure drop"]}, "r": {"t": "Narrow pipe", "items": ["high speed", "high friction", "large pressure drop"]}}
+Friction losses rise steeply with speed, so undersized pipes waste pumping energy.
+### Home plumbing
+@viz {"k": "list", "items": ["Shower pressure", "Pipe diameters", "Long runs", "Elbows and valves", "Scale build-up"]}
+> Same flow through a smaller pipe means faster water and more friction.
+
+# Bernoulli
+Bernoulli's principle, published by Daniel Bernoulli in 1738, says that where a fluid flows faster, its pressure is lower (along a streamline).
+@viz {"k": "cmp", "l": {"t": "Slow flow", "items": ["higher pressure"]}, "r": {"t": "Fast flow", "items": ["lower pressure"]}}
+### Examples
+@viz {"k": "list", "items": ["Atomisers and spray bottles", "Carburettors", "Venturi meters", "Shower curtains drawn inward", "Chimneys drawing smoke"]}
+### Venturi tube
+@viz {"k": "flow", "steps": ["Fluid enters pipe", "Narrow throat: speed rises, pressure falls", "Widens again", "Pressure difference measures flow"]}
+### Lift and Bernoulli
+Bernoulli's principle helps explain the pressure difference on wings, but popular "equal transit time" explanations are wrong. Lift is best understood as the wing deflecting air downward.
+> Faster flow, lower pressure.
+
+# Siphons
+A siphon moves liquid from a higher container to a lower one, over a barrier, without a pump, once the tube is filled.
+@viz {"k": "flow", "steps": ["Fill tube", "Outlet below source level", "Liquid falls in long leg", "Pulls liquid up short leg", "Flow continues"]}
+### Limits
+@viz {"k": "pairs", "items": [{"a": "Outlet height", "b": "must be below source surface"}, {"a": "Maximum lift", "b": "about 10 m for water at sea level"}, {"a": "Air bubbles", "b": "can break the flow"}]}
+### Uses
+@viz {"k": "list", "items": ["Emptying aquariums", "Draining fuel", "Toilet cisterns", "Irrigation", "Ancient aqueducts"]}
+### How it works
+Gravity pulling liquid down the longer leg, together with atmospheric pressure and the liquid's cohesion, keeps the flow going.
+> Fill the tube, keep the outlet low, and gravity does the pumping.
+
+# Viscosity
+Viscosity is a fluid's resistance to flow: its "thickness". Honey is highly viscous; water isn't.
+@viz {"k": "bars", "unit": "approx. viscosity, mPa·s at room temperature", "items": [{"l": "Water", "v": 1.0}, {"l": "Olive oil", "v": 80.0}, {"l": "Engine oil (warm)", "v": 50.0}, {"l": "Honey", "v": 5000.0, "hi": true}]}
+### Temperature
+Most liquids become thinner when hot and thicker when cold. Engine oil must flow when cold and still protect when hot.
+### Oil grades
+@viz {"k": "pairs", "items": [{"a": "5W", "b": "winter rating: flows well cold"}, {"a": "30", "b": "viscosity at operating temperature"}, {"a": "Lower W", "b": "better cold starts"}, {"a": "Multigrade", "b": "additives keep viscosity steadier"}]}
+### Non-Newtonian fluids
+@viz {"k": "list", "items": ["Ketchup thins when shaken", "Cornflour paste stiffens when hit", "Paint thins when brushed"]}
+> Viscosity is how much a fluid resists flowing.
+
+== me-flight
+
+# Four forces
+In flight, four forces act on an aircraft: lift, weight, thrust and drag.
+@viz {"k": "cmp", "l": {"t": "Vertical", "items": ["lift up", "weight down"]}, "r": {"t": "Horizontal", "items": ["thrust forward", "drag back"]}}
+### Steady flight
+In level flight at constant speed, lift equals weight and thrust equals drag. The plane isn't "pushing harder" than in cruise; forces are balanced.
+### Manoeuvres
+@viz {"k": "pairs", "items": [{"a": "Climb", "b": "more lift or thrust"}, {"a": "Descend", "b": "reduce thrust or lift"}, {"a": "Accelerate", "b": "thrust exceeds drag"}, {"a": "Turn", "b": "bank so lift tilts sideways"}]}
+### Weight changes
+Airliners burn tens of tonnes of fuel on long flights, getting lighter and able to climb to higher, more efficient altitudes.
+> Steady flight is a balance of four forces.
+
+# How wings make lift
+A wing creates lift by deflecting air downward. By Newton's third law, pushing air down pushes the wing up.
+@viz {"k": "flow", "steps": ["Wing at angle of attack", "Air deflected downward", "Lower pressure above, higher below", "Net upward force"]}
+### Two views, one phenomenon
+@viz {"k": "cmp", "l": {"t": "Newton view", "items": ["wing pushes air down", "air pushes wing up"]}, "r": {"t": "Pressure view", "items": ["faster flow above", "lower pressure", "pressure difference lifts"]}}
+Both describe the same physics.
+### A myth
+@viz {"k": "fix", "items": [{"w": "Air over the top must meet the air underneath at the trailing edge", "r": "Air over the top actually arrives sooner, equal transit time is false"}]}
+### Angle of attack
+Even a flat plate generates lift at an angle. The curved shape (camber) makes wings more efficient and gentler at stalling.
+> Wings fly by pushing air down.
+
+# The lift equation
+Lift depends on air density, speed, wing area and a lift coefficient set by wing shape and angle of attack.
+@viz {"k": "terms", "f": "L = ½ × ρ × v² × S × CL", "items": [{"s": "ρ", "m": "air density"}, {"s": "v", "m": "speed"}, {"s": "S", "m": "wing area"}, {"s": "CL", "m": "lift coefficient"}]}
+### Speed squared
+@viz {"k": "bars", "unit": "relative lift at same angle", "items": [{"l": "100 km/h", "v": 1.0}, {"l": "200 km/h", "v": 4.0}, {"l": "300 km/h", "v": 9.0, "hi": true}]}
+### Hot and high
+Hot air and high altitudes mean thinner air. Planes need higher speeds and longer runways to take off from airports such as Mexico City or La Paz.
+### Weight limits
+On hot days at high-altitude airports, airlines sometimes reduce passengers, cargo or fuel to take off safely.
+> Thin air demands more speed for the same lift.
+
+# Stall
+A stall occurs when the wing's angle of attack is too high. Airflow separates from the upper surface and lift drops sharply.
+@viz {"k": "flow", "steps": ["Increasing angle", "Lift rises", "Critical angle (about 15°)", "Flow separates", "Lift collapses"]}
+### Stall isn't engine failure
+@viz {"k": "fix", "items": [{"w": "\"The engine stalled, so the plane fell\"", "r": "An aerodynamic stall is about wing angle, not engines"}]}
+### Recovery
+@viz {"k": "list", "items": ["Lower the nose", "Reduce angle of attack", "Add power", "Level wings"]}
+### Warnings
+Aircraft have stall warning systems: horns, stick shakers and, in modern airliners, protections that limit angle of attack.
+### Air France 447
+In 2009, Air France flight 447 crashed into the Atlantic after the crew failed to recognise and recover from a high-altitude stall, a tragedy that reshaped pilot training.
+> Stall depends on angle, not speed alone.
+
+# Flaps and slats
+Flaps and slats change a wing's shape for slow flight, allowing take-off and landing at lower speeds.
+@viz {"k": "cmp", "l": {"t": "Cruise", "items": ["clean wing", "low drag", "high speed"]}, "r": {"t": "Take-off and landing", "items": ["flaps and slats out", "high lift", "more drag"]}}
+### How they help
+@viz {"k": "pairs", "items": [{"a": "Flaps", "b": "extend from trailing edge, increase area and camber"}, {"a": "Slats", "b": "extend from leading edge, delay stall"}, {"a": "Spoilers", "b": "reduce lift and add drag after landing"}]}
+### Landing speeds
+@viz {"k": "bars", "unit": "approx. landing speed, km/h", "items": [{"l": "Light aircraft", "v": 110.0}, {"l": "Airliner with flaps", "v": 250.0, "hi": true}, {"l": "Same airliner clean", "v": 330.0}]}
+### Watch from the window
+Next time you fly, watch the wing transform before landing: slats move forward, flaps slide back and down, and spoilers pop up on touchdown.
+> Flaps let a fast wing fly slowly.
+
+# Drag
+Drag resists motion through air. It rises with the square of speed, so faster travel costs disproportionately more energy.
+@viz {"k": "terms", "f": "D = ½ × ρ × v² × S × CD", "items": [{"s": "CD", "m": "drag coefficient set by shape"}]}
+@viz {"k": "bars", "unit": "approx. drag coefficient", "items": [{"l": "Flat plate", "v": 1.2}, {"l": "Cyclist", "v": 0.9}, {"l": "SUV", "v": 0.38}, {"l": "Efficient car", "v": 0.23, "hi": true}, {"l": "Teardrop", "v": 0.05}]}
+### Types of drag
+@viz {"k": "pairs", "items": [{"a": "Skin friction", "b": "air rubbing on surfaces"}, {"a": "Form drag", "b": "pressure behind blunt shapes"}, {"a": "Induced drag", "b": "by-product of lift, wingtip vortices"}]}
+### Power needed
+Power to overcome drag rises with the cube of speed: cycling at 30 km/h takes far more effort than at 20 km/h.
+### Winglets
+Upturned wingtips reduce induced drag, saving several percent of fuel on airliners.
+> Speed costs: drag squares it, power cubes it.
+
+# Jet engines
+Modern airliners use turbofan engines: a large fan pushes most air around the engine core, providing most of the thrust efficiently.
+@viz {"k": "flow", "steps": ["Fan draws air", "Some air to core: compressed, burned, expanded", "Core turns turbines", "Turbines drive fan", "Bypass air gives most thrust"]}
+### Bypass ratio
+@viz {"k": "bars", "unit": "bypass ratio (approx.)", "items": [{"l": "1960s turbojet", "v": 0.0}, {"l": "Early turbofan", "v": 1.0}, {"l": "Modern airliner", "v": 11.0, "hi": true}]}
+### Why big fans
+Accelerating a lot of air gently is more efficient than accelerating a little air violently. That's why modern engines have huge fans.
+### Temperatures
+Turbine blades operate in gas hotter than their melting point, protected by cooling air channels and special coatings.
+> Most of a modern jet's thrust comes from its fan.
+
+# Why airliners cruise high
+At 10–12 km altitude, thin air reduces drag, and jet engines run efficiently. Most weather is also below.
+@viz {"k": "nums", "items": [{"v": "10–12 km", "l": "typical cruise altitude"}, {"v": "~30%", "l": "air density vs sea level"}, {"v": "−55 °C", "l": "typical outside temperature"}]}
+### Cabin pressure
+Cabins are pressurised to the equivalent of about 1,800–2,400 m altitude. Newer composite aircraft like the Boeing 787 use lower cabin altitudes and higher humidity for comfort.
+### Above the weather
+@viz {"k": "list", "items": ["Less turbulence than low clouds", "Jet streams can speed up eastbound flights", "Thunderstorms can reach very high"]}
+### Contrails
+Contrails form when hot, humid exhaust meets cold air and water freezes into ice crystals. Their climate effect is an active research area.
+> High altitude means thin air, low drag and efficient engines.
+
+# Control surfaces
+Pilots control an aircraft's attitude around three axes using movable surfaces.
+@viz {"k": "pairs", "items": [{"a": "Ailerons", "b": "on wings, roll left and right"}, {"a": "Elevator", "b": "on tail, pitch nose up and down"}, {"a": "Rudder", "b": "on fin, yaw nose left and right"}]}
+### Coordinated turns
+@viz {"k": "flow", "steps": ["Ailerons bank the plane", "Lift tilts", "Plane turns", "Rudder keeps it coordinated", "Elevator maintains altitude"]}
+### Fly-by-wire
+Modern airliners use fly-by-wire: pilot inputs go to computers, which move control surfaces and protect against dangerous manoeuvres.
+### Trim
+Trim tabs adjust surfaces so the plane flies steadily without constant pilot force.
+> Roll, pitch and yaw: three axes, three controls.
+
+# Drones
+Multirotor drones fly without wings, using spinning propellers for lift and changing their speeds to steer.
+@viz {"k": "flow", "steps": ["Flight controller reads sensors", "Adjusts each motor speed", "Tilt and thrust change", "Drone moves"]}
+### Control by speed differences
+@viz {"k": "pairs", "items": [{"a": "Climb", "b": "all motors faster"}, {"a": "Forward", "b": "rear motors faster, drone tilts"}, {"a": "Rotate", "b": "diagonal pairs change speed"}, {"a": "Hover", "b": "balanced thrust"}]}
+### Sensors
+@viz {"k": "list", "items": ["Gyroscope", "Accelerometer", "Barometer", "GPS", "Cameras and distance sensors"]}
+### Efficiency
+@viz {"k": "cmp", "l": {"t": "Multirotor", "items": ["hovers", "vertical take-off", "short flight times"]}, "r": {"t": "Fixed-wing drone", "items": ["flies longer and farther", "needs forward speed"]}}
+### Rules
+EU drone rules require registration of operators for most drones with cameras, and limit flights near people and airports.
+> Drones steer by changing motor speeds hundreds of times a second.
+
+== me-bridges
+
+# The main bridge types
+Bridge types differ in how they carry loads to the ground: by bending, compression or tension.
+@viz {"k": "tree", "root": "Bridges", "items": ["Beam: bending", "Arch: compression", "Suspension: cable tension", "Cable-stayed: straight cables", "Truss: triangles"]}
+### Typical spans
+@viz {"k": "bars", "unit": "approx. maximum spans, m", "items": [{"l": "Beam", "v": 300.0}, {"l": "Arch", "v": 575.0}, {"l": "Cable-stayed", "v": 1100.0}, {"l": "Suspension", "v": 2000.0, "hi": true}]}
+### Choosing
+@viz {"k": "list", "items": ["Span", "Ground conditions", "Navigation clearance", "Cost", "Aesthetics", "Construction method"]}
+### Record holders
+The world's longest suspension span, the 1915 Çanakkale Bridge in Turkey (2022), spans just over 2 km.
+> Each bridge type uses a different force to cross the gap.
+
+# Beam bridges
+A beam bridge is a horizontal beam resting on supports. It's the simplest and most common bridge type.
+@viz {"k": "pairs", "items": [{"a": "Simple span", "b": "beam on two supports"}, {"a": "Continuous", "b": "beam over several supports"}, {"a": "Box girder", "b": "hollow box, stiff against twisting"}, {"a": "Prestressed concrete", "b": "for longer spans"}]}
+### Limits
+As spans grow, beams must get much deeper to stay stiff, adding weight. Beyond a few hundred metres, other types are more efficient.
+### Viaducts
+Long viaducts are often chains of beam spans on many piers, like motorway viaducts across valleys.
+### Construction
+@viz {"k": "list", "items": ["Precast beams lifted into place", "Balanced cantilever", "Incremental launching", "Cast in situ"]}
+> Beam bridges are simple, cheap and everywhere.
+
+# Arch bridges
+Arch bridges carry loads in compression to strong abutments. Stone arches have lasted for millennia.
+@viz {"k": "pairs", "items": [{"a": "Deck arch", "b": "road above the arch"}, {"a": "Through arch", "b": "road passes through"}, {"a": "Tied arch", "b": "deck ties the feet together"}]}
+### Porto's arches
+@viz {"k": "pairs", "items": [{"a": "Maria Pia Bridge", "b": "1877, iron railway arch by Eiffel's company"}, {"a": "Dom Luís I Bridge", "b": "1886, double-deck iron arch by Théophile Seyrig"}, {"a": "Arrábida Bridge", "b": "1963, concrete arch by Edgar Cardoso"}]}
+### Arrábida
+When it opened in 1963, Edgar Cardoso's Arrábida Bridge had the longest reinforced concrete arch span in the world, about 270 m.
+### Roman legacy
+The Pont du Gard aqueduct in France and Portugal's Roman bridges, like the one at Chaves, still stand after nearly 2,000 years.
+> Porto's bridges are a museum of arch engineering.
+
+# Suspension bridges
+Suspension bridges hang their decks from cables draped over towers and anchored at both ends. They achieve the longest spans.
+@viz {"k": "flow", "steps": ["Deck load", "Hangers", "Main cables in tension", "Towers in compression", "Anchorages in rock or massive blocks"]}
+### Lisbon's 25 de Abril Bridge
+@viz {"k": "nums", "items": [{"v": "1966", "l": "opened (as Ponte Salazar)"}, {"v": "1,013 m", "l": "main span"}, {"v": "1999", "l": "railway deck added beneath road"}]}
+When it opened, it had the longest suspension span outside the United States.
+### Cable construction
+Main cables are spun from thousands of parallel steel wires, compacted and wrapped. Each wire is only about 5 mm thick.
+### Flexibility
+Suspension bridges move noticeably in wind and under traffic; this is normal and designed for.
+> Suspension bridges hang the road from cables in tension.
+
+# Cable-stayed bridges
+Cable-stayed bridges support the deck with straight cables running directly from towers. They're efficient for medium to long spans.
+@viz {"k": "cmp", "l": {"t": "Cable-stayed", "items": ["cables straight to deck", "no anchorages", "faster to build"]}, "r": {"t": "Suspension", "items": ["main cables plus hangers", "anchorages", "longer spans"]}}
+### Patterns
+@viz {"k": "pairs", "items": [{"a": "Fan", "b": "cables from tower top"}, {"a": "Harp", "b": "parallel cables"}, {"a": "Semi-fan", "b": "compromise"}]}
+### Vasco da Gama Bridge
+@viz {"k": "nums", "items": [{"v": "1998", "l": "opened for Expo 98"}, {"v": "12.3 km", "l": "total length"}, {"v": "420 m", "l": "cable-stayed main span"}]}
+It was among the longest bridges in Europe when built, crossing the Tagus estuary.
+### Popularity
+Cable-stayed bridges have become the most popular choice for spans between about 200 and 1,000 m.
+> Straight cables, simple towers, efficient spans.
+
+# Portuguese bridges
+Portugal has a rich bridge heritage, from Roman stone to record-breaking modern spans.
+@viz {"k": "time", "events": [{"y": "1877", "l": "Maria Pia Bridge"}, {"y": "1886", "l": "Dom Luís I Bridge"}, {"y": "1963", "l": "Arrábida Bridge"}, {"y": "1966", "l": "25 de Abril Bridge"}, {"y": "1998", "l": "Vasco da Gama Bridge"}]}
+### Edgar Cardoso
+Engineer Edgar Cardoso (1913–2000) designed many notable Portuguese bridges, including the Arrábida and Edgar Cardoso bridges, and pioneered structural model testing.
+### Eiffel's connection
+@viz {"k": "list", "items": ["Maria Pia Bridge, Porto", "Viana do Castelo road-rail bridge", "Several railway bridges"]}
+### Infante D. Henrique Bridge
+Porto's Infante D. Henrique Bridge (2003), designed by Adão da Fonseca, has a remarkably shallow concrete arch spanning about 280 m beneath a stiff deck.
+> Porto alone shows 150 years of bridge history across one river.
+
+# Wind and Tacoma Narrows
+In November 1940, the Tacoma Narrows Bridge in Washington State twisted itself apart in a wind of about 64 km/h, just months after opening.
+@viz {"k": "flow", "steps": ["Moderate wind", "Deck begins twisting", "Aerodynamic forces feed the motion", "Oscillations grow", "Collapse"]}
+### Flutter, not simple resonance
+The failure is often attributed to resonance, but engineers now describe it as aeroelastic flutter: the deck's motion changed the airflow in a way that kept adding energy.
+### Lessons
+@viz {"k": "list", "items": ["Wind-tunnel testing", "Stiffer, aerodynamic decks", "Open trusses or slotted decks", "Dampers"]}
+### Filmed
+The collapse was filmed and became one of the most famous engineering films ever, still used in teaching.
+> Bridges must be designed for how wind moves them, not just how hard it blows.
+
+# Expansion joints
+Bridges expand and contract with temperature, and move under traffic and wind. Expansion joints and bearings allow this movement safely.
+@viz {"k": "list", "items": ["Finger joints", "Modular joints", "Sliding bearings", "Elastomeric bearings", "Rocker bearings"]}
+### How much movement
+ex: 1 km steel deck, 40 °C range | ΔL = 12 × 10⁻⁶ × 1,000 × 40 | ≈ 48 cm
+### Bearings
+@viz {"k": "pairs", "items": [{"a": "Fixed bearing", "b": "holds position"}, {"a": "Sliding bearing", "b": "allows movement"}, {"a": "Elastomeric bearing", "b": "rubber pads flex"}]}
+### Maintenance
+Joints suffer from traffic impact, debris and water. Damaged joints let water reach bearings and steel, causing corrosion.
+> The clatter as you drive over a joint is the bridge breathing.
+
+# Foundations in rivers
+Bridge piers in rivers must resist scour: fast-flowing water digging away the riverbed around foundations.
+@viz {"k": "flow", "steps": ["Flood", "Faster flow around pier", "Riverbed eroded", "Foundation exposed", "Pier settles or collapses"]}
+### Entre-os-Rios
+On 4 March 2001, the Hintze Ribeiro Bridge over the Douro at Entre-os-Rios collapsed during floods, killing 59 people. Scour around a pier, aggravated by sand extraction from the river, was identified as a key factor.
+### Protection
+@viz {"k": "list", "items": ["Deep foundations", "Rock armour around piers", "Regular underwater inspection", "Scour monitoring sensors"]}
+### After the disaster
+The tragedy led to major changes in Portuguese bridge inspection and management.
+> Many bridges fall because of what happens under the water.
+
+# Inspection and maintenance
+Bridges need regular inspection and maintenance throughout their lives, often 100 years or more.
+@viz {"k": "list", "items": ["Cracks", "Corrosion", "Bearing wear", "Joint damage", "Scour", "Cable condition"]}
+### Inspection levels
+@viz {"k": "pairs", "items": [{"a": "Routine", "b": "frequent visual checks"}, {"a": "Principal", "b": "detailed every few years"}, {"a": "Special", "b": "after floods, earthquakes or impacts"}, {"a": "Underwater", "b": "divers or sonar for piers"}]}
+### Structural health monitoring
+@viz {"k": "flow", "steps": ["Sensors on bridge", "Strain, vibration, tilt measured", "Data streamed", "Alerts on anomalies"]}
+### Genoa 2018
+The collapse of Genoa's Morandi Bridge in August 2018, killing 43 people, intensified attention on ageing bridges and maintenance across Europe.
+> Bridges last a century only with a century of care.
+
+== me-buildings
+
+# Why foundations?
+Foundations transfer a building's loads safely to the ground, spreading them so the soil isn't overloaded and the building doesn't settle unevenly.
+@viz {"k": "flow", "steps": ["Building loads", "Foundations spread load", "Soil carries pressure", "Minimal, even settlement"]}
+### Soil strength
+@viz {"k": "bars", "unit": "approx. allowable bearing pressure, kPa", "items": [{"l": "Soft clay", "v": 50.0}, {"l": "Firm clay", "v": 150.0}, {"l": "Dense sand", "v": 300.0}, {"l": "Rock", "v": 1000.0, "hi": true}]}
+### Site investigation
+@viz {"k": "list", "items": ["Boreholes", "Soil samples", "Groundwater level", "Previous uses", "Nearby structures"]}
+### Design choice
+The weaker the soil, the larger or deeper the foundations must be, sometimes reaching down tens of metres to firm layers.
+> A building is only as good as the ground it stands on.
+
+# Shallow foundations
+Shallow foundations sit near the surface where good soil or rock is close. They're common for houses and low buildings.
+@viz {"k": "pairs", "items": [{"a": "Strip footing", "b": "continuous under walls"}, {"a": "Pad footing", "b": "under individual columns"}, {"a": "Raft", "b": "slab under the whole building"}, {"a": "Ground beams", "b": "connect pads"}]}
+### Frost and moisture
+Foundations must go below the depth affected by seasonal drying, frost or tree roots. In Portugal frost is rarely an issue, but clay shrinkage can be.
+### Raft foundations
+@viz {"k": "cmp", "l": {"t": "Pad footings", "items": ["separate", "economical on good soil"]}, "r": {"t": "Raft", "items": ["one slab", "spreads load on weaker soil", "resists differential settlement"]}}
+> On good ground, simple footings do the job.
+
+# Deep foundations
+Where surface soils are weak, piles carry loads down to stronger layers or develop resistance through friction along their length.
+@viz {"k": "cmp", "l": {"t": "End-bearing piles", "items": ["rest on rock or dense layers"]}, "r": {"t": "Friction piles", "items": ["rely on soil grip along their sides"]}}
+### Pile types
+@viz {"k": "list", "items": ["Driven precast concrete", "Bored cast-in-place", "Steel H-piles", "Screw piles", "Wooden piles (historic)"]}
+### Lisbon's Baixa
+After the 1755 earthquake, the Baixa Pombalina was rebuilt on reclaimed, waterlogged ground using pine piles. Kept below the water table, wood resists rot for centuries.
+### Groundwater risk
+@viz {"k": "fix", "items": [{"w": "Lowering the water table near old wooden piles", "r": "Monitor and protect: exposed piles can rot"}]}
+> Piles reach past weak ground to something solid.
+
+# Settlement
+All buildings settle slightly as the soil compresses. Problems arise when settlement is uneven.
+@viz {"k": "fix", "items": [{"w": "Some settlement means failure", "r": "Uniform settlement is normal, differential settlement causes damage"}]}
+### Signs of differential settlement
+@viz {"k": "list", "items": ["Diagonal cracks near doors and windows", "Sticking doors", "Sloping floors", "Gaps at skirting boards"]}
+### Causes
+@viz {"k": "pairs", "items": [{"a": "Varying soil", "b": "soft and firm areas under one building"}, {"a": "Water changes", "b": "leaks, drainage, droughts"}, {"a": "Nearby excavation", "b": "removes support"}, {"a": "Trees", "b": "roots drying clay"}]}
+### The Leaning Tower of Pisa
+@viz {"k": "time", "events": [{"y": "1173", "l": "construction begins"}, {"y": "1178", "l": "tower starts leaning"}, {"y": "1990–2001", "l": "stabilised by soil extraction"}, {"y": "Today", "l": "leaning about 4°"}]}
+> Even settlement is fine; uneven settlement cracks walls.
+
+# Walls and frames
+Buildings carry loads either through load-bearing walls or through frames of columns and beams.
+@viz {"k": "cmp", "l": {"t": "Load-bearing walls", "items": ["stone, brick", "walls carry loads", "limited openings"]}, "r": {"t": "Frame", "items": ["concrete or steel columns and beams", "walls are infill", "flexible layouts"]}}
+### Traditional Portuguese buildings
+Many older Portuguese buildings have thick stone or brick walls with timber floors. Later ones, from the mid-20th century, use reinforced concrete frames.
+### Renovation caution
+@viz {"k": "fix", "items": [{"w": "Knocking through walls in old buildings", "r": "Check first: walls may carry the floors above"}]}
+### Frame advantages
+@viz {"k": "list", "items": ["Open-plan spaces", "Large windows", "Taller buildings", "Easier alterations"]}
+> Know whether walls hold up the building or just divide rooms.
+
+# The Pombaline cage
+After the 1755 earthquake destroyed much of Lisbon, the city was rebuilt with an innovative earthquake-resistant system: the "gaiola pombalina".
+@viz {"k": "flow", "steps": ["Timber frame of uprights and diagonals", "Embedded in masonry walls", "Lattice holds walls together", "Building flexes without collapsing"]}
+### Who built it
+The reconstruction under the Marquis of Pombal was led by engineers and architects including Manuel da Maia, Eugénio dos Santos and Carlos Mardel.
+### The marching test
+According to historical accounts, troops marched around a model of the timber cage to simulate an earthquake and test its resistance.
+### Legacy
+@viz {"k": "list", "items": ["Standardised building plans", "Prefabricated elements", "Wide grid streets", "Early seismic engineering"]}
+!? The Pombaline Baixa is often cited as one of the first examples of large-scale earthquake-resistant urban construction in the world.
+
+# Earthquake design
+Seismic design aims to let buildings sway and deform without collapsing, protecting lives even in strong earthquakes.
+@viz {"k": "list", "items": ["Ductile connections", "Bracing", "Shear walls", "Regular shapes", "Base isolation", "Dampers"]}
+### Principles
+@viz {"k": "pairs", "items": [{"a": "Stiffness", "b": "limits sway"}, {"a": "Ductility", "b": "bends without breaking"}, {"a": "Regularity", "b": "avoids twisting"}, {"a": "Strong columns, weak beams", "b": "beams yield first, columns stay standing"}]}
+### Base isolation
+@viz {"k": "flow", "steps": ["Rubber and steel bearings under building", "Ground shakes", "Bearings flex", "Building moves much less"]}
+### Portugal
+Portugal applies the European seismic code (Eurocode 8). Many older buildings in Lisbon predate modern codes, making seismic retrofitting a priority.
+> Buildings can't stop earthquakes; they can survive them.
+
+# Wind on tall buildings
+Wind loads grow rapidly with height and can make tall buildings sway uncomfortably. Engineers stiffen and dampen them.
+@viz {"k": "flow", "steps": ["Wind pushes building", "Building sways", "Vortices shed alternately", "Sideways oscillation", "Dampers and shape reduce it"]}
+### Solutions
+@viz {"k": "pairs", "items": [{"a": "Stiff cores", "b": "concrete shafts for lifts and stairs"}, {"a": "Outriggers", "b": "link core to outer columns"}, {"a": "Tuned mass dampers", "b": "giant pendulums counter sway"}, {"a": "Shape", "b": "tapering, twisting, notched corners"}]}
+### Taipei 101
+Taipei 101 has a 660-tonne steel ball suspended near its top as a tuned mass damper, visible to visitors.
+### Comfort
+People feel sway long before it's dangerous. Designers limit accelerations to avoid motion sickness in occupants.
+> Tall buildings are designed to sway safely, and then dampened so you don't notice.
+
+# Moisture and damp
+Water is one of the biggest threats to buildings, causing rot, mould, corrosion and damage to finishes.
+@viz {"k": "list", "items": ["Rising damp", "Penetrating damp", "Leaks", "Condensation", "Poor drainage"]}
+### Types of damp
+@viz {"k": "pairs", "items": [{"a": "Rising damp", "b": "groundwater wicking up walls"}, {"a": "Penetrating damp", "b": "rain through walls or roofs"}, {"a": "Condensation", "b": "moist indoor air on cold surfaces"}, {"a": "Leaks", "b": "pipes and fittings"}]}
+### Portugal's challenge
+Many Portuguese homes suffer condensation and mould in winter, because of poor insulation, cold surfaces and limited heating and ventilation.
+### Solutions
+@viz {"k": "list", "items": ["Damp-proof courses", "Good roofs and gutters", "Ventilation", "Insulation", "Dehumidifiers"]}
+> Keep water out, let moisture out.
+
+# Burj Khalifa
+Dubai's Burj Khalifa, completed in 2010, is the world's tallest building at 828 m.
+@viz {"k": "nums", "items": [{"v": "828 m", "l": "height"}, {"v": "163", "l": "floors"}, {"v": "192", "l": "piles about 1.5 m wide"}, {"v": "2010", "l": "completed"}]}
+### Confusing the wind
+The Y-shaped plan and spiralling setbacks change the building's shape with height, so wind vortices can't organise into a strong rhythm.
+### Structure
+@viz {"k": "pairs", "items": [{"a": "Core", "b": "hexagonal reinforced concrete core"}, {"a": "Wings", "b": "three buttressing wings"}, {"a": "Spire", "b": "steel"}, {"a": "Foundation", "b": "piled raft"}]}
+### Records
+@viz {"k": "list", "items": ["Tallest building", "Highest occupied floor", "Highest outdoor observation deck (at opening)", "Most floors"]}
+### What's next
+Saudi Arabia's Jeddah Tower, under construction, aims to be the first building over 1 km tall.
+> Shape, not just strength, keeps the tallest tower standing.
+
+== me-engines
+
+# The four-stroke cycle
+Most car engines run on the four-stroke cycle patented by Nikolaus Otto's company in 1876. Each cylinder repeats four piston strokes over two crankshaft turns.
+@viz {"k": "cycle", "steps": ["Intake: piston down, mixture in", "Compression: piston up, mixture squeezed", "Power: spark ignites, piston pushed down", "Exhaust: piston up, gases out"]}
+### "Suck, squeeze, bang, blow"
+@viz {"k": "pairs", "items": [{"a": "Intake", "b": "valves open, air and fuel drawn in"}, {"a": "Compression", "b": "valves closed, pressure and temperature rise"}, {"a": "Power", "b": "combustion drives piston"}, {"a": "Exhaust", "b": "burnt gases pushed out"}]}
+### Only one stroke makes power
+Three of the four strokes absorb energy. Multiple cylinders firing in sequence and a heavy flywheel keep rotation smooth.
+### Two-stroke engines
+@viz {"k": "cmp", "l": {"t": "Four-stroke", "items": ["cleaner", "more efficient", "cars"]}, "r": {"t": "Two-stroke", "items": ["power every turn", "simpler", "scooters, chainsaws", "more pollution"]}}
+> Four strokes, two turns, one bang per cylinder.
+
+# Crankshaft
+The crankshaft converts the pistons' up-and-down motion into rotation, just as your legs turn bicycle pedals.
+@viz {"k": "flow", "steps": ["Combustion pushes piston", "Connecting rod", "Crank throw", "Crankshaft rotates", "Flywheel smooths", "Gearbox"]}
+### Engine layouts
+@viz {"k": "pairs", "items": [{"a": "Inline 4", "b": "cylinders in a row, most small cars"}, {"a": "V6, V8", "b": "two banks in a V, compact for more cylinders"}, {"a": "Boxer", "b": "horizontally opposed, Subaru, Porsche"}, {"a": "Inline 6", "b": "very smooth"}]}
+### Balance
+Engines are balanced to reduce vibration. Some four-cylinder engines add balance shafts spinning at twice crank speed.
+### Camshaft
+The camshaft, driven by the crankshaft via a belt or chain, opens and closes the valves in time with the pistons.
+> The crankshaft turns pushes into spin.
+
+# Petrol vs diesel
+Petrol and diesel engines differ in how they ignite fuel. That difference drives their efficiency, sound and emissions.
+@viz {"k": "cmp", "l": {"t": "Petrol", "items": ["spark ignition", "lighter", "revs higher", "lower NOx"]}, "r": {"t": "Diesel", "items": ["compression ignition", "more efficient", "strong low-end torque", "more NOx and soot"]}}
+### Efficiency
+@viz {"k": "bars", "unit": "typical peak efficiency, % (approx.)", "items": [{"l": "Petrol", "v": 35.0}, {"l": "Diesel", "v": 42.0, "hi": true}]}
+### Dieselgate
+In 2015, Volkswagen was found to have used software that detected emissions tests and reduced NOx only during testing. The scandal accelerated Europe's shift away from diesel cars.
+### Where diesel still dominates
+@viz {"k": "list", "items": ["Trucks", "Ships", "Tractors", "Generators", "Trains on unelectrified lines"]}
+> Petrol uses sparks; diesel uses squeeze.
+
+# Compression ratio
+The compression ratio compares cylinder volume with the piston at the bottom and at the top. Higher compression extracts more energy from fuel.
+@viz {"k": "bars", "unit": "typical compression ratio", "items": [{"l": "Old petrol", "v": 8.0}, {"l": "Modern petrol", "v": 11.0}, {"l": "Mazda Skyactiv-G", "v": 14.0}, {"l": "Diesel", "v": 17.0, "hi": true}]}
+### Knock
+@viz {"k": "flow", "steps": ["Compression too high", "Mixture self-ignites before spark", "Pressure spike", "Knocking sound", "Engine damage"]}
+### Octane
+Higher-octane petrol (98 vs 95) resists knock better, letting high-compression engines run safely. It doesn't add energy to normal engines.
+### Diesels need it
+Diesels rely on high compression to heat air enough (over 500 °C) to ignite injected fuel.
+> Squeeze harder, extract more, until knock stops you.
+
+# Turbochargers
+A turbocharger uses exhaust energy to drive a compressor that forces extra air into the engine, allowing small engines to make big power.
+@viz {"k": "flow", "steps": ["Exhaust spins turbine", "Shaft drives compressor", "Intake air compressed", "Intercooler cools it", "More air and fuel per cycle"]}
+### Downsizing
+@viz {"k": "cmp", "l": {"t": "Old", "items": ["2.0 litre naturally aspirated"]}, "r": {"t": "Modern", "items": ["1.0–1.5 litre turbo", "similar power", "lower fuel use in testing"]}}
+### Turbo lag
+Turbos need exhaust flow to spin up, so there's a delay after pressing the accelerator. Smaller turbos, twin turbos and electric assistance reduce lag.
+### Speed
+Turbo shafts spin extremely fast, often over 100,000 rpm, and need good oil lubrication.
+> Turbos recycle exhaust energy into extra air.
+
+# Torque and power
+Torque is twisting force; power is torque multiplied by rotational speed. Both matter, in different ways.
+@viz {"k": "terms", "f": "P (kW) = Torque (N·m) × rpm ÷ 9,549", "items": [{"s": "Torque", "m": "twist"}, {"s": "rpm", "m": "revolutions per minute"}]}
+### Example
+ex: 300 N·m at 3,000 rpm | 300 × 3,000 ÷ 9,549 | ≈ 94 kW (about 128 cv)
+### What you feel
+@viz {"k": "pairs", "items": [{"a": "Torque", "b": "pull from low speed, towing, overtaking without changing gear"}, {"a": "Power", "b": "top speed, sustained acceleration at high revs"}]}
+### Torque curves
+@viz {"k": "cmp", "l": {"t": "Diesel", "items": ["high torque at low rpm"]}, "r": {"t": "Petrol", "items": ["power peaks at high rpm"]}}
+### EVs
+Electric motors give maximum torque from zero rpm, which is why EVs feel so quick from standstill.
+> Torque pushes; power is how fast it keeps pushing.
+
+# Gearboxes
+Combustion engines work efficiently only within a limited speed range. Gearboxes let the engine stay there whatever the road speed.
+@viz {"k": "cmp", "l": {"t": "Manual", "items": ["driver chooses", "clutch pedal", "cheap"]}, "r": {"t": "Automatic", "items": ["torque converter, dual-clutch or CVT", "easier", "often as efficient"]}}
+### Gear ratios
+@viz {"k": "pairs", "items": [{"a": "First gear", "b": "high torque, low speed"}, {"a": "Top gear", "b": "low engine rpm at motorway speed"}, {"a": "Reverse", "b": "separate gear set"}]}
+### Modern automatics
+Many modern automatics have 8–10 gears, keeping engines near their most efficient speed.
+### EVs need one gear
+Electric motors work efficiently from zero to over 15,000 rpm, so most EVs use a single reduction gear.
+> Gearboxes keep engines in their comfort zone.
+
+# Cooling
+Only around a third of fuel energy becomes useful work. The rest leaves as heat, through the cooling system and the exhaust.
+@viz {"k": "bars", "unit": "where petrol energy goes, % (approx.)", "items": [{"l": "Useful work", "v": 30.0, "hi": true}, {"l": "Cooling system", "v": 30.0}, {"l": "Exhaust", "v": 35.0}, {"l": "Friction and other", "v": 5.0}]}
+### The cooling system
+@viz {"k": "flow", "steps": ["Coolant absorbs engine heat", "Water pump circulates", "Thermostat opens when warm", "Radiator releases heat to air", "Coolant returns"]}
+### Why not run cold?
+Engines run most efficiently and cleanly at around 90 °C. The thermostat keeps coolant from the radiator until the engine warms up.
+### Overheating
+@viz {"k": "list", "items": ["Low coolant", "Leaks", "Failed water pump", "Stuck thermostat", "Blocked radiator"]}
+> Most of a fuel's energy heats the world, not the wheels.
+
+# Emissions control
+Modern engines use several technologies to reduce harmful emissions.
+@viz {"k": "pairs", "items": [{"a": "Three-way catalytic converter", "b": "CO, unburnt fuel and NOx into CO₂, water and nitrogen"}, {"a": "Diesel particulate filter", "b": "traps soot"}, {"a": "SCR with AdBlue", "b": "urea solution reduces NOx"}, {"a": "EGR", "b": "recirculates exhaust to lower combustion temperature"}]}
+### Euro standards
+@viz {"k": "time", "events": [{"y": "1992", "l": "Euro 1 makes catalysts standard"}, {"y": "2009", "l": "Euro 5 requires diesel particulate filters"}, {"y": "2014", "l": "Euro 6 tightens NOx"}, {"y": "Euro 7", "l": "adds brake and tyre particles"}]}
+### Catalysts need heat
+Catalytic converters work only when hot. Most emissions on short trips happen in the first minutes after a cold start.
+### Real-world testing
+After Dieselgate, the EU introduced Real Driving Emissions (RDE) tests on public roads.
+> Catalysts clean exhaust only once they're hot.
+
+# Hybrids
+Hybrids combine a combustion engine with an electric motor and battery, recovering braking energy and helping the engine run efficiently.
+@viz {"k": "cmp", "l": {"t": "Full hybrid", "items": ["small battery", "self-charging", "short electric driving"]}, "r": {"t": "Plug-in hybrid", "items": ["bigger battery", "charges from grid", "40–80 km electric"]}}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Mild hybrid", "b": "48 V system, assists engine"}, {"a": "Full hybrid", "b": "can drive slowly on electricity"}, {"a": "Plug-in", "b": "charge at home"}, {"a": "Range extender", "b": "engine only charges battery"}]}
+### History
+The Toyota Prius, launched in 1997, was the first mass-produced hybrid car.
+### Real-world plug-in use
+Studies found plug-in hybrids often emit much more than official figures, because owners charge them less than assumed.
+> Plug-in hybrids save fuel only when plugged in.
+
+== me-ev
+
+# The drivetrain
+An electric car has far fewer moving parts than a combustion car. Its drivetrain is simple: battery, inverter, motor and gear.
+@viz {"k": "flow", "steps": ["Battery (DC)", "Inverter creates three-phase AC", "Motor", "Single-speed reduction gear", "Wheels"]}
+### Parts count
+@viz {"k": "cmp", "l": {"t": "Combustion drivetrain", "items": ["hundreds of moving parts", "engine, gearbox, exhaust"]}, "r": {"t": "EV drivetrain", "items": ["few dozen moving parts", "motor, gear"]}}
+### Motor placement
+@viz {"k": "pairs", "items": [{"a": "Front motor", "b": "front-wheel drive"}, {"a": "Rear motor", "b": "rear-wheel drive, common in performance EVs"}, {"a": "Dual motor", "b": "all-wheel drive"}]}
+### Efficiency
+From battery to wheels, EV drivetrains typically convert 85–90% of energy into motion.
+> Fewer parts, less to go wrong.
+
+# The skateboard platform
+Most dedicated EV platforms place the battery flat under the floor between the axles, like a skateboard.
+@viz {"k": "list", "items": ["Low centre of gravity", "More cabin space", "Stiffer body", "Better crash protection", "Flexible designs"]}
+### Handling
+A low, central battery gives EVs a low centre of gravity, reducing body roll and rollover risk.
+### Space
+With no engine or transmission tunnel, EVs often have flat floors and extra storage front and rear.
+### Structural packs
+@viz {"k": "cmp", "l": {"t": "Separate pack", "items": ["battery bolted into body"]}, "r": {"t": "Cell-to-body", "items": ["battery forms part of the floor structure", "lighter", "stiffer"]}}
+> The battery is the floor.
+
+# Inverters
+The inverter converts battery DC into three-phase AC at the frequency and voltage the motor needs, controlling speed and torque.
+@viz {"k": "flow", "steps": ["Battery DC", "Transistors switch thousands of times a second", "Simulated three-phase sine waves", "Motor speed and torque controlled"]}
+### Silicon carbide
+@viz {"k": "cmp", "l": {"t": "Silicon (IGBT)", "items": ["mature", "cheaper", "more switching losses"]}, "r": {"t": "Silicon carbide (SiC)", "items": ["lower losses", "higher temperatures", "ideal for 800 V"]}}
+Tesla's Model 3 was among the first mass-market cars to use silicon carbide inverters.
+### Regeneration
+The inverter also works in reverse during regenerative braking, converting motor AC into DC to charge the battery.
+> The inverter is the EV's conductor, directing every watt.
+
+# Thermal management
+Batteries perform and last best within a comfortable temperature range. EVs actively heat and cool them.
+@viz {"k": "scale", "lo": -20.0, "hi": 60.0, "unit": "°C", "items": [{"l": "Too cold", "v": 0.0}, {"l": "Ideal start", "v": 20.0}, {"l": "Ideal end", "v": 40.0, "hi": true}, {"l": "Too hot", "v": 50.0}]}
+### Systems
+@viz {"k": "list", "items": ["Liquid cooling plates", "Heat pumps", "Battery heaters", "Pre-conditioning", "Waste heat recovery"]}
+### Pre-conditioning
+@viz {"k": "flow", "steps": ["Navigate to fast charger", "Car warms battery on the way", "Arrive at ideal temperature", "Faster charging"]}
+### Cabin heating
+Heat pumps can heat the cabin using two to three times less energy than resistive heaters, extending winter range.
+> Warm batteries charge fast; hot batteries age fast.
+
+# Efficiency in kWh/100 km
+EV consumption is measured in kWh per 100 km, the equivalent of litres per 100 km for combustion cars.
+@viz {"k": "bars", "unit": "typical consumption, kWh/100 km", "items": [{"l": "Small car", "v": 14.0}, {"l": "Compact", "v": 16.0}, {"l": "Large saloon", "v": 18.0}, {"l": "Large SUV", "v": 23.0, "hi": true}]}
+### What raises it
+@viz {"k": "list", "items": ["High speed", "Cold weather", "Heating and air conditioning", "Wind", "Roof boxes", "Big wheels"]}
+### Cost comparison
+ex: 16 kWh/100 km at €0.15/kWh (home) | ≈ €2.40 per 100 km | vs 6 L petrol at €1.75 ≈ €10.50
+### Speed matters
+@viz {"k": "bars", "unit": "consumption vs speed, kWh/100 km (illustrative)", "items": [{"l": "90 km/h", "v": 14.0}, {"l": "110 km/h", "v": 17.0}, {"l": "130 km/h", "v": 21.0, "hi": true}]}
+> Motorway speed is the biggest range thief.
+
+# Why range drops in winter
+EVs lose range in cold weather because batteries are less efficient and heating the cabin takes energy.
+@viz {"k": "list", "items": ["Higher internal resistance", "Cabin heating", "Battery heating", "Denser air", "Winter tyres"]}
+### How much
+@viz {"k": "bars", "unit": "range retained, % (approx.)", "items": [{"l": "Mild 20 °C", "v": 100.0, "hi": true}, {"l": "Cool 5 °C", "v": 88.0}, {"l": "Freezing 0 °C", "v": 80.0}, {"l": "Very cold −10 °C", "v": 70.0}]}
+### Reducing the loss
+@viz {"k": "pairs", "items": [{"a": "Heat pump", "b": "more efficient cabin heating"}, {"a": "Pre-heat while plugged in", "b": "uses grid, not battery"}, {"a": "Seat and wheel heaters", "b": "warm people, not air"}, {"a": "Eco mode", "b": "gentler heating"}]}
+### In Portugal
+Portugal's mild winters mean range losses are usually modest compared with northern Europe.
+> Heat the people, not the whole cabin.
+
+# Aerodynamics
+At motorway speeds, overcoming air resistance uses most of an EV's energy. Every reduction in drag adds range.
+@viz {"k": "bars", "unit": "drag coefficient (approx.)", "items": [{"l": "Typical SUV", "v": 0.35}, {"l": "Typical car", "v": 0.3}, {"l": "Tesla Model 3", "v": 0.23}, {"l": "Mercedes EQS", "v": 0.2, "hi": true}]}
+### Design features
+@viz {"k": "list", "items": ["Smooth underbody", "Flush door handles", "Aero wheels", "Active grille shutters", "Camera mirrors (some markets)"]}
+### Frontal area matters too
+@viz {"k": "terms", "f": "Drag force ∝ Cd × frontal area × speed²", "items": [{"s": "Cd", "m": "shape"}, {"s": "Area", "m": "size"}, {"s": "Speed", "m": "squared"}]}
+### Small changes add up
+A roof box can increase consumption by 10–25% at motorway speeds.
+> At 120 km/h, an EV spends most of its energy pushing air.
+
+# Regenerative braking
+When slowing down, the motor acts as a generator, recovering part of the car's kinetic energy into the battery.
+@viz {"k": "flow", "steps": ["Lift off accelerator", "Motor becomes generator", "Resistance slows car", "Energy back to battery", "Brake pads barely used"]}
+### Blending
+Modern EVs blend regenerative and friction braking automatically, using regeneration first and friction brakes when needed.
+### Brake life
+@viz {"k": "pairs", "items": [{"a": "EV brake pads", "b": "often last much longer than in combustion cars"}, {"a": "Risk", "b": "discs can rust from lack of use"}, {"a": "Remedy", "b": "occasional firm braking"}]}
+### Efficiency
+Regeneration recovers a meaningful share of energy in city driving, but each conversion loses some: it's better to coast than brake and regenerate.
+> The best braking is no braking; the second best is regeneration.
+
+# Fewer parts, less maintenance
+EVs need much less routine maintenance than combustion cars.
+@viz {"k": "cmp", "l": {"t": "Combustion", "items": ["oil changes", "filters", "spark plugs", "timing belt", "clutch", "exhaust"]}, "r": {"t": "EV", "items": ["tyres", "brake fluid", "cabin filter", "coolant checks"]}}
+### Tyres
+EVs are heavy and torquey, so tyres may wear faster. Rotating them regularly and keeping correct pressures helps.
+### Running costs
+@viz {"k": "list", "items": ["Cheaper energy per km", "Fewer service items", "Less brake wear", "Higher tyre costs", "Insurance varies"]}
+### Still check
+@viz {"k": "pairs", "items": [{"a": "12 V battery", "b": "still needed and can fail"}, {"a": "Brake fluid", "b": "absorbs moisture, replace periodically"}, {"a": "Suspension", "b": "heavier car, check wear"}]}
+> EVs swap oil changes for tyre checks.
+
+# Battery warranties
+Most EV manufacturers guarantee their batteries for about 8 years or 160,000 km, typically to at least 70% of original capacity.
+@viz {"k": "nums", "items": [{"v": "8 years", "l": "typical warranty"}, {"v": "160,000 km", "l": "typical distance"}, {"v": "70%", "l": "typical minimum capacity guaranteed"}]}
+### Real-world degradation
+Data from large fleets suggest most EV batteries lose capacity slowly, often keeping around 90% after 100,000–200,000 km, with the biggest drop in the first years.
+### Protecting the battery
+@viz {"k": "list", "items": ["Avoid sitting at 100% for long", "Limit frequent fast charging in heat", "Park in shade", "Keep software updated"]}
+### EU battery rules
+New EU battery regulations require battery passports and more information on health and durability, making used EV purchases more transparent.
+> EV batteries usually outlast expectations, and warranties cover the rest.
+
+== me-thermo
+
+# Temperature and heat
+Temperature measures how vigorously particles move. Heat is energy transferred because of a temperature difference.
+@viz {"k": "cmp", "l": {"t": "Temperature", "items": ["how hot", "property of a body", "degrees"]}, "r": {"t": "Heat", "items": ["energy transferred", "flows hot to cold", "joules"]}}
+### Three ways heat moves
+@viz {"k": "pairs", "items": [{"a": "Conduction", "b": "through solids by contact"}, {"a": "Convection", "b": "carried by moving fluids"}, {"a": "Radiation", "b": "infrared, even through vacuum"}]}
+### Example
+ex: A bath at 40 °C vs a cup at 90 °C | Cup is hotter | Bath holds far more heat energy
+### Scales
+@viz {"k": "pairs", "items": [{"a": "Celsius", "b": "water freezes 0, boils 100"}, {"a": "Kelvin", "b": "starts at absolute zero"}, {"a": "Fahrenheit", "b": "32 and 212"}]}
+> Temperature is intensity; heat is quantity on the move.
+
+# Absolute zero
+Absolute zero, −273.15 °C, is the lowest possible temperature, where particles have the minimum possible motion.
+@viz {"k": "pairs", "items": [{"a": "0 K", "b": "−273.15 °C"}, {"a": "273.15 K", "b": "0 °C"}, {"a": "373.15 K", "b": "100 °C"}, {"a": "Room temperature", "b": "about 293 K"}]}
+### Can we reach it?
+Absolute zero can be approached but never reached. Laboratories have cooled atoms to billionths of a kelvin.
+### Kelvin
+Lord Kelvin (William Thomson) proposed the absolute temperature scale in 1848. Kelvin degrees are the same size as Celsius degrees.
+### Cold places
+@viz {"k": "pairs", "items": [{"a": "Liquid nitrogen", "b": "77 K"}, {"a": "Liquid helium", "b": "4 K"}, {"a": "Space background", "b": "2.7 K"}, {"a": "Lab records", "b": "below a billionth of a kelvin"}]}
+> At absolute zero, there's no heat left to take away.
+
+# First law
+The first law of thermodynamics is conservation of energy: energy can't be created or destroyed, only transferred or transformed.
+@viz {"k": "terms", "f": "ΔU = Q − W", "items": [{"s": "ΔU", "m": "change in internal energy"}, {"s": "Q", "m": "heat added"}, {"s": "W", "m": "work done by the system"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Heating a gas in a fixed box", "b": "all heat raises internal energy"}, {"a": "Gas expanding in an engine", "b": "heat partly becomes work"}, {"a": "Compressing air", "b": "work raises temperature"}]}
+### Bicycle pump
+@viz {"k": "flow", "steps": ["Push pump", "Work on air", "Air heats up", "Pump barrel gets warm"]}
+### History
+The principle was established in the 1840s through work by James Joule, Julius Mayer and Hermann von Helmholtz.
+> You can't win: energy in equals energy out.
+
+# Second law
+The second law says heat flows naturally from hot to cold, and that every real process increases total disorder (entropy).
+@viz {"k": "flow", "steps": ["Hot coffee", "Heat flows to cooler room", "Coffee cools", "Room warms slightly", "Never reverses on its own"]}
+### Consequences
+@viz {"k": "list", "items": ["No engine can be 100% efficient", "Heat pumps need work to move heat uphill", "Perpetual motion is impossible", "Time has a direction"]}
+### Entropy
+Entropy measures how spread out energy is. Concentrated energy (fuel, a hot object) is useful; spread-out energy (warm room) is hard to use.
+### Popular summary
+@viz {"k": "pairs", "items": [{"a": "First law", "b": "you can't win"}, {"a": "Second law", "b": "you can't break even"}, {"a": "Third law", "b": "you can't quit the game"}]}
+> Heat runs downhill unless you pay to push it up.
+
+# Carnot efficiency
+In 1824, French engineer Sadi Carnot showed that the maximum efficiency of any heat engine depends only on the hot and cold temperatures it works between.
+@viz {"k": "terms", "f": "η max = 1 − T cold ÷ T hot", "items": [{"s": "", "m": "Temperatures in kelvin"}]}
+### Example
+ex: Steam at 600 °C (873 K), cooling water at 30 °C (303 K) | 1 − 303 ÷ 873 | ≈ 65% maximum
+Real power stations reach 40–45%; combined-cycle gas plants over 60%.
+### Lessons
+@viz {"k": "pairs", "items": [{"a": "Hotter source", "b": "higher possible efficiency"}, {"a": "Colder sink", "b": "higher possible efficiency"}, {"a": "Real engines", "b": "always below Carnot limit"}]}
+### Why it matters
+Carnot's insight explains why power stations run hot and why combined-cycle plants reuse exhaust heat in a second cycle.
+> Even a perfect engine wastes heat; the temperature gap sets the limit.
+
+# Heat engines and heat pumps
+Heat engines and heat pumps use the same physics in opposite directions.
+@viz {"k": "cmp", "l": {"t": "Heat engine", "items": ["heat flows hot to cold", "produces work", "car engines, power stations"]}, "r": {"t": "Heat pump", "items": ["uses work", "moves heat cold to hot", "fridges, heat pumps, air conditioners"]}}
+### Coefficient of performance
+@viz {"k": "terms", "f": "COP = heat delivered ÷ work input", "items": [{"s": "Typical heat pump", "m": "3–4"}]}
+### Why heat pumps beat 100%
+A heat pump doesn't create heat; it moves existing heat from outdoors. That's why it can deliver more heat energy than the electricity it uses.
+### Reversible units
+Air conditioners and heat pumps are often the same machine running in reverse, heating in winter and cooling in summer.
+> Engines turn heat into work; heat pumps turn work into moved heat.
+
+# The refrigeration cycle
+Fridges, air conditioners and heat pumps use a refrigerant that evaporates and condenses in a loop to move heat.
+@viz {"k": "cycle", "steps": ["Evaporator: refrigerant boils, absorbs heat", "Compressor: gas squeezed, gets hot", "Condenser: gas releases heat, becomes liquid", "Expansion valve: pressure drops, cools"]}
+### Your fridge
+@viz {"k": "pairs", "items": [{"a": "Inside coils", "b": "evaporator: take heat from food"}, {"a": "Back coils", "b": "condenser: warm to touch"}, {"a": "Compressor", "b": "the humming part"}]}
+### Refrigerants
+@viz {"k": "list", "items": ["R290 (propane)", "R32", "R744 (CO₂)", "R600a (isobutane, fridges)"]}
+EU F-gas rules are phasing down refrigerants with high global warming potential in favour of natural ones.
+### History
+Mechanical refrigeration developed in the 19th century; household fridges became common in the mid-20th century, transforming food storage.
+> Refrigerators pump heat out of a cold box into a warm room.
+
+# Specific heat and storage
+Specific heat capacity is the energy needed to warm 1 kg of a material by 1 °C. Water's is unusually high.
+@viz {"k": "bars", "unit": "specific heat, kJ/kg·°C", "items": [{"l": "Steel", "v": 0.49}, {"l": "Concrete", "v": 0.88}, {"l": "Air", "v": 1.0}, {"l": "Water", "v": 4.18, "hi": true}]}
+### Water as storage
+ex: 200 litre tank heated by 40 °C | 200 × 4.18 × 40 | ≈ 33 MJ ≈ 9.3 kWh stored
+### Thermal mass
+Heavy stone and concrete absorb heat slowly and release it slowly. Thick-walled Alentejo houses stay cool in summer because their walls soak up daytime heat.
+### Climate
+Oceans store enormous heat, moderating coastal climates. That's why Lisbon is milder than inland Madrid.
+> Water and stone are batteries for heat.
+
+# Insulation and U-values
+The U-value measures how much heat passes through a building element per square metre per degree of temperature difference. Lower is better.
+@viz {"k": "terms", "f": "Heat loss = U × A × ΔT", "items": [{"s": "U", "m": "W/m²·°C"}, {"s": "A", "m": "area"}, {"s": "ΔT", "m": "inside minus outside"}]}
+@viz {"k": "bars", "unit": "typical U-value, W/m²·°C", "items": [{"l": "Old solid wall", "v": 1.6}, {"l": "Single glazing", "v": 5.8}, {"l": "Double glazing", "v": 2.8}, {"l": "Insulated wall", "v": 0.3, "hi": true}, {"l": "Low-e double", "v": 1.2}]}
+### Example
+ex: 20 m² wall, U = 1.6, 15 °C difference | 1.6 × 20 × 15 | = 480 W lost continuously
+ex: Insulated, U = 0.3 | 0.3 × 20 × 15 | = 90 W
+### Insulation materials
+@viz {"k": "list", "items": ["Mineral wool", "EPS", "XPS", "Cork (ICB, a Portuguese specialty)", "PIR boards", "Wood fibre"]}
+> Halve the U-value, halve the heat loss.
+
+# Phase changes
+Melting and boiling absorb large amounts of energy without changing temperature. This "latent heat" is released when the change reverses.
+@viz {"k": "bars", "unit": "energy for 1 kg of water, MJ", "items": [{"l": "Heat 0 → 100 °C", "v": 0.42}, {"l": "Melt ice", "v": 0.33}, {"l": "Boil to steam", "v": 2.26, "hi": true}]}
+### Why sweating cools
+Evaporating sweat absorbs latent heat from your skin. In humid air, sweat evaporates poorly, so heat feels worse.
+### Steam burns
+Steam at 100 °C burns worse than boiling water, because condensing on skin releases its large latent heat.
+### Uses
+@viz {"k": "list", "items": ["Refrigeration cycles", "Ice storage for cooling", "Phase-change materials in buildings", "Steam heating"]}
+> Changing state costs energy, even when the thermometer doesn't move.
+
+== me-wood
+
+# Hardwood and softwood
+The terms refer to botany, not hardness: softwoods come from conifers, hardwoods from broadleaf trees.
+@viz {"k": "cmp", "l": {"t": "Softwood", "items": ["conifers", "pine, spruce", "fast-growing", "light", "structure"]}, "r": {"t": "Hardwood", "items": ["broadleaf", "oak, chestnut, eucalyptus", "denser", "durable", "furniture"]}}
+### Exceptions
+Balsa is a hardwood yet extremely light and soft; yew is a softwood yet very hard.
+### Density
+@viz {"k": "bars", "unit": "approx. density, kg/m³", "items": [{"l": "Balsa", "v": 150.0}, {"l": "Maritime pine", "v": 550.0}, {"l": "Chestnut", "v": 600.0}, {"l": "Oak", "v": 700.0}, {"l": "Eucalyptus", "v": 800.0, "hi": true}]}
+### Portuguese woods
+@viz {"k": "pairs", "items": [{"a": "Maritime pine", "b": "construction, pallets"}, {"a": "Chestnut", "b": "beams, furniture, traditional ceilings"}, {"a": "Oak", "b": "barrels, flooring"}, {"a": "Eucalyptus", "b": "paper pulp, some construction"}]}
+> Softwood and hardwood are about leaves, not hardness.
+
+# Moisture content
+Wood contains water. As it dries, it shrinks until it balances with the surrounding air's humidity.
+@viz {"k": "scale", "lo": 0.0, "hi": 60.0, "unit": "% moisture", "items": [{"l": "Kiln-dried furniture", "v": 10.0, "hi": true}, {"l": "Indoor equilibrium", "v": 12.0}, {"l": "Fibre saturation", "v": 28.0}, {"l": "Green timber", "v": 50.0}]}
+### Why dry wood matters
+@viz {"k": "list", "items": ["Prevents shrinkage cracks", "Stronger", "Glues and finishes work", "Resists rot and insects"]}
+### Fibre saturation point
+Below about 25–30% moisture, wood begins to shrink as water leaves the cell walls. Above it, only free water in cell cavities is lost, without shrinking.
+### Measuring
+Moisture meters with pins or sensors give quick readings. Indoor joinery should be at about 8–12% before installation.
+> Wet wood moves; dry wood behaves.
+
+# Wood moves
+Wood shrinks and swells with humidity, much more across the grain than along it. Good carpentry allows for this movement.
+@viz {"k": "bars", "unit": "approx. shrinkage from green to dry, %", "items": [{"l": "Along grain", "v": 0.2}, {"l": "Radial", "v": 4.0}, {"l": "Tangential", "v": 8.0, "hi": true}]}
+### Everyday effects
+@viz {"k": "list", "items": ["Doors stick in damp winters", "Floor gaps in dry summers", "Table tops crack if fixed rigidly", "Drawers jam"]}
+### Designing for movement
+@viz {"k": "pairs", "items": [{"a": "Panel doors", "b": "panels float in grooves"}, {"a": "Table tops", "b": "fixed with slotted brackets"}, {"a": "Wooden floors", "b": "expansion gap at walls"}, {"a": "Quarter-sawn boards", "b": "more stable"}]}
+### Plywood
+Plywood's alternating layers cancel most movement, making it stable in sheet form.
+> Fight wood movement and wood wins; design for it.
+
+# Joints
+Wood joints connect pieces so loads pass between them. Traditional joints interlock; modern ones often add fasteners.
+@viz {"k": "pairs", "items": [{"a": "Mortise and tenon", "b": "tongue fits into slot, frames and furniture"}, {"a": "Dovetail", "b": "interlocking fan shapes, drawers"}, {"a": "Half-lap", "b": "overlapping halves, frames"}, {"a": "Dowel", "b": "round pins, panels"}]}
+### Modern fasteners
+@viz {"k": "list", "items": ["Wood screws", "Biscuits", "Pocket screws", "Metal connectors", "Structural glue"]}
+### Why traditional joints last
+Interlocking joints carry load through wood-to-wood contact and glue, with no metal to rust or loosen.
+### Japanese joinery
+Japanese carpentry developed intricate joints that hold buildings together without nails, some lasting centuries.
+> A good joint lets wood carry load as wood.
+
+# Reading the grain
+Wood fibres run in a direction, the grain. Working with it gives smooth surfaces; working against it tears fibres.
+@viz {"k": "fix", "items": [{"w": "Planing against the grain causes tear-out", "r": "Plane with the grain, like stroking a cat"}]}
+### Knots
+@viz {"k": "pairs", "items": [{"a": "Tight knot", "b": "attached branch base, mostly sound"}, {"a": "Loose knot", "b": "dead branch, may fall out"}, {"a": "Large knots", "b": "weak spots in beams"}]}
+### Grain in structure
+Grade stamps on structural timber reflect knots, slope of grain and defects, determining allowable loads.
+### Splitting
+Screws and nails near board ends can split wood along the grain. Pre-drill holes near ends.
+> Follow the grain and the wood follows you.
+
+# Glulam and CLT
+Engineered timber glues smaller pieces into large, strong, stable elements, enabling tall timber buildings.
+@viz {"k": "cmp", "l": {"t": "Glulam", "items": ["layers in same direction", "beams and columns", "long spans"]}, "r": {"t": "CLT", "items": ["layers at right angles", "panels", "walls and floors"]}}
+### Advantages
+@viz {"k": "list", "items": ["Predictable strength", "Large sizes", "Prefabrication", "Carbon storage", "Fast construction"]}
+### Tall timber
+@viz {"k": "bars", "unit": "height of timber buildings, m (approx.)", "items": [{"l": "Typical house", "v": 8.0}, {"l": "Mid-rise CLT", "v": 30.0}, {"l": "Mjøstårnet, Norway", "v": 85.0}, {"l": "Ascent, USA", "v": 87.0, "hi": true}]}
+### Prefabrication
+CLT panels are cut precisely in factories, with openings for windows and services, and erected quickly on site.
+> Glue and geometry turn trees into skyscraper parts.
+
+# Protecting timber
+Wood decays when moisture lets fungi and insects thrive. Keeping it dry is the most effective protection.
+@viz {"k": "list", "items": ["Keep dry", "Ventilate", "Raise off ground", "Use durable species", "Treat outdoor timber"]}
+### Decay conditions
+@viz {"k": "flow", "steps": ["Moisture above about 20%", "Fungi grow", "Rot weakens wood", "Structural failure"]}
+### Threats in Portugal
+@viz {"k": "pairs", "items": [{"a": "Fungal rot", "b": "from leaks and damp"}, {"a": "Woodworm (caruncho)", "b": "beetles in furniture and beams"}, {"a": "Termites", "b": "subterranean termites in some regions"}, {"a": "Marine borers", "b": "in harbours"}]}
+### Treatments
+@viz {"k": "list", "items": ["Preservative impregnation", "Borate treatments", "Paints and stains", "Design detailing"]}
+> Dry wood lasts centuries; wet wood lasts years.
+
+# Timber in fire
+Large timber members perform surprisingly well in fire. The outside chars, and the char layer insulates the core.
+@viz {"k": "flow", "steps": ["Fire", "Surface ignites", "Char layer forms", "Char insulates inner wood", "Core retains strength"]}
+### Charring rate
+@viz {"k": "terms", "f": "Char depth ≈ rate × time", "items": [{"s": "Typical softwood", "m": "about 0.65–0.8 mm per minute"}]}
+ex: 60-minute fire | Char ≈ 40–50 mm | Engineers add this sacrificial thickness
+### Steel vs timber
+@viz {"k": "cmp", "l": {"t": "Steel", "items": ["doesn't burn", "loses strength fast when hot", "needs protection"]}, "r": {"t": "Large timber", "items": ["burns slowly", "predictable char", "keeps core strength"]}}
+### Small sections
+Thin timber, like studs and battens, burns through quickly. Fire protection relies on plasterboard and compartmentation.
+> Big timber chars; it doesn't suddenly collapse.
+
+# Roof structures
+Traditional Portuguese roofs use timber frameworks under ceramic tiles. Proper design keeps them strong and dry.
+@viz {"k": "flow", "steps": ["Tiles", "Battens", "Rafters", "Ridge and wall plates", "Walls"]}
+### Trusses
+Roof trusses are triangulated frames that span between walls without needing internal supports, spreading loads evenly.
+### Portuguese tiles
+@viz {"k": "pairs", "items": [{"a": "Telha lusa", "b": "traditional curved tile"}, {"a": "Telha marselha", "b": "flat interlocking tile"}, {"a": "Telha de canudo", "b": "half-round \"Moorish\" tiles"}]}
+### Ventilation
+@viz {"k": "fix", "items": [{"w": "Sealed loft with no airflow", "r": "Ventilate eaves and ridge to prevent condensation rot"}]}
+### Common problems
+@viz {"k": "list", "items": ["Broken tiles", "Rotten battens", "Sagging rafters", "Woodworm", "Poor flashing"]}
+> Keep the roof dry and ventilated, and its timbers last for generations.
+
+# Portugal's forests
+Forests cover about a third of Portugal. Eucalyptus, maritime pine and cork oak are the main species.
+@viz {"k": "bars", "unit": "forest area by species, % (approx.)", "items": [{"l": "Eucalyptus", "v": 26.0}, {"l": "Maritime pine", "v": 22.0}, {"l": "Cork oak", "v": 22.0, "hi": true}, {"l": "Holm oak", "v": 11.0}, {"l": "Other", "v": 19.0}]}
+### Cork
+@viz {"k": "nums", "items": [{"v": "~50%", "l": "of world cork production"}, {"v": "2011", "l": "cork oak named Portugal's national tree"}, {"v": "~9 years", "l": "between cork harvests"}]}
+### Cork harvesting
+Cork is stripped from living trees every nine years or so, without felling them. A tree can be harvested for over 150 years.
+### Fire risk
+Large monocultures and abandoned land increase wildfire risk. The 2017 fires, which killed over 100 people, prompted major forest policy reforms.
+> Portugal's forests make paper, timber and half the world's cork.
+
+== me-construction
+
+# The building envelope
+The building envelope is the boundary between inside and outside: walls, roof, floor and windows. Its quality largely determines comfort and energy use.
+@viz {"k": "tree", "root": "Envelope", "items": ["Walls: insulation, mass", "Roof: biggest loss in many homes", "Floor: ground contact", "Windows: glazing, frames, shading", "Airtightness: controlled leaks"]}
+### Goals
+@viz {"k": "list", "items": ["Keep heat in during winter", "Keep heat out in summer", "Control moisture", "Allow fresh air", "Let in light"]}
+### Passive House
+The Passivhaus standard, developed in Germany in the 1990s, uses an excellent envelope to cut heating needs by up to about 90% compared with typical buildings.
+> Get the envelope right, and heating and cooling become easy.
+
+# Where heat escapes
+In an uninsulated house, heat leaves through every part of the envelope. Which part loses most depends on the building's shape.
+@viz {"k": "bars", "unit": "typical heat loss, uninsulated detached house, % (approx.)", "items": [{"l": "Walls", "v": 35.0}, {"l": "Roof", "v": 25.0, "hi": true}, {"l": "Draughts", "v": 15.0}, {"l": "Windows", "v": 15.0}, {"l": "Floor", "v": 10.0}]}
+### Shape matters
+@viz {"k": "pairs", "items": [{"a": "Single-storey or top-floor home", "b": "roof often the biggest loss"}, {"a": "Mid-floor flat", "b": "walls and windows dominate"}, {"a": "Detached house", "b": "all surfaces exposed"}]}
+### Priorities
+Roof insulation is usually cheap and highly effective, so it's often the first upgrade. Draught sealing is even cheaper.
+@viz {"k": "flow", "steps": ["Draught-proof", "Insulate roof", "Upgrade windows", "Insulate walls", "Efficient heating"]}
+> Insulate the cheapest big losses first.
+
+# External insulation (ETICS)
+External thermal insulation composite systems (ETICS), known in Portugal as "capoto", wrap a building in insulation boards finished with render.
+@viz {"k": "cmp", "l": {"t": "External insulation", "items": ["continuous layer", "masonry stays warm", "fewer thermal bridges", "no lost floor area"]}, "r": {"t": "Internal insulation", "items": ["cheaper scaffolding", "loses room space", "harder to avoid bridges"]}}
+### Layers
+@viz {"k": "flow", "steps": ["Masonry wall", "Adhesive", "Insulation boards (EPS, mineral wool)", "Mesh-reinforced base coat", "Finish render"]}
+### Benefits
+@viz {"k": "list", "items": ["Lower heating and cooling bills", "Fewer cold spots and mould", "Improved appearance", "Protects masonry"]}
+### Considerations
+Insulation thickness, fire performance of materials, and detailing around windows and balconies all matter.
+> Wrap the outside, and the whole wall stays warm.
+
+# Thermal bridges
+A thermal bridge is a path where heat bypasses insulation, creating cold spots inside.
+@viz {"k": "list", "items": ["Concrete beams and columns", "Balcony slabs", "Window reveals", "Wall-roof junctions", "Metal fixings"]}
+### Effects
+@viz {"k": "flow", "steps": ["Heat escapes through bridge", "Inside surface cold", "Moisture condenses", "Mould grows"]}
+### Common in Portugal
+Many Portuguese apartment buildings have exposed concrete frames and balcony slabs that act as thermal bridges, causing dark mould lines along ceilings and corners.
+### Fixes
+@viz {"k": "pairs", "items": [{"a": "External insulation", "b": "covers frame elements"}, {"a": "Thermal breaks", "b": "insulated balcony connectors"}, {"a": "Careful detailing", "b": "around windows and junctions"}]}
+> Mould in a corner often marks a thermal bridge.
+
+# Windows
+Windows lose much more heat per square metre than walls, but modern glazing has improved enormously.
+@viz {"k": "bars", "unit": "U-value, W/m²·°C (approx.)", "items": [{"l": "Single glazing", "v": 5.8}, {"l": "Old double", "v": 2.8}, {"l": "Low-e double", "v": 1.2, "hi": true}, {"l": "Triple", "v": 0.7}]}
+### Frames matter
+@viz {"k": "pairs", "items": [{"a": "Aluminium without break", "b": "conducts heat, cold frames"}, {"a": "Thermally broken aluminium", "b": "insulating barrier in frame"}, {"a": "PVC and wood", "b": "good insulators"}]}
+### Shading
+External shading (shutters, blinds, awnings) stops sun before it enters, far more effective than internal curtains for cooling.
+### Portuguese tradition
+Traditional Portuguese "estores" (external roller shutters) are excellent for summer shading and night insulation.
+> The best glass still needs a good frame and good shading.
+
+# Airtightness
+Uncontrolled draughts waste heat and carry moisture into walls. Airtightness is about controlling leaks, not stopping ventilation.
+@viz {"k": "list", "items": ["Gaps around windows", "Pipe and cable penetrations", "Loft hatches", "Floor-wall junctions", "Old chimneys"]}
+### Measuring
+@viz {"k": "pairs", "items": [{"a": "Blower door test", "b": "measures leakage"}, {"a": "n50", "b": "air changes per hour at 50 Pa"}, {"a": "Passive House target", "b": "0.6 or less"}, {"a": "Typical older home", "b": "5–10 or more"}]}
+### Cheap fixes
+@viz {"k": "list", "items": ["Draught strips", "Sealant", "Chimney balloons", "Letterbox brushes", "Keyhole covers"]}
+### Build tight, ventilate right
+@viz {"k": "cmp", "l": {"t": "Leaky house", "items": ["random draughts", "cold spots", "moisture problems"]}, "r": {"t": "Airtight with ventilation", "items": ["controlled fresh air", "comfortable", "efficient"]}}
+> Seal the leaks, then ventilate on purpose.
+
+# Ventilation
+Homes need fresh air to remove moisture, odours and pollutants. A tight house needs controlled ventilation.
+@viz {"k": "flow", "steps": ["Stale moist air out from kitchens and bathrooms", "Fresh air in to living rooms and bedrooms", "Healthy indoor air"]}
+### Options
+@viz {"k": "pairs", "items": [{"a": "Natural", "b": "trickle vents and opening windows"}, {"a": "Extract fans", "b": "bathrooms and kitchens"}, {"a": "MEV", "b": "continuous mechanical extract"}, {"a": "MVHR", "b": "supply and extract with heat recovery"}]}
+### Heat recovery
+MVHR systems recover typically 75–90% of the heat from outgoing air, warming incoming fresh air.
+### CO₂ as indicator
+Indoor CO₂ above about 1,000–1,500 ppm signals poor ventilation, often in bedrooms with closed doors and windows.
+> Fresh air is a necessity, not a luxury.
+
+# Condensation and mould
+Warm indoor air holds moisture. When it touches a cold surface, it cools to its dew point and water condenses, feeding mould.
+@viz {"k": "flow", "steps": ["Cooking, showers, breathing", "Moist air", "Cold wall or window", "Condensation", "Mould"]}
+### Moisture sources
+@viz {"k": "bars", "unit": "water vapour per day in a family home, litres (approx.)", "items": [{"l": "Breathing", "v": 4.0}, {"l": "Cooking", "v": 3.0}, {"l": "Washing and showers", "v": 2.0}, {"l": "Drying clothes indoors", "v": 5.0, "hi": true}]}
+### Prevention
+@viz {"k": "list", "items": ["Ventilate kitchens and bathrooms", "Avoid drying clothes indoors", "Keep temperatures steady", "Insulate cold surfaces", "Use extractor fans"]}
+### Humidity target
+Relative humidity between about 40% and 60% is comfortable and discourages mould and dust mites.
+> Mould is a moisture problem and a cold-surface problem together.
+
+# Summer comfort
+In Portugal, keeping homes cool in summer matters as much as keeping them warm in winter. Passive strategies often beat air conditioning.
+@viz {"k": "list", "items": ["External shading", "Thermal mass", "Light colours", "Night ventilation", "Ceiling fans"]}
+### Night purge
+@viz {"k": "flow", "steps": ["Close shutters and windows during hot day", "Open at night when cooler", "Thermal mass releases heat", "Cooler next morning"]}
+### Light roofs
+Light-coloured roofs reflect more sunlight. Whitewashed Alentejo and Algarve houses use this traditional technique.
+### When cooling is needed
+Efficient heat pump air conditioners, sized correctly and used with shading, provide comfort with modest energy.
+> Keep the sun out and let the night in.
+
+# Energy certificates
+In Portugal, buildings sold or rented need an energy certificate, issued under the national system managed by ADENE.
+@viz {"k": "stack", "items": ["A+: most efficient", "A", "B", "B-", "C", "D", "E", "F: least efficient"]}
+### What it includes
+@viz {"k": "list", "items": ["Energy class", "Estimated consumption", "Recommended improvements", "Insulation and systems"]}
+### Who issues it
+Certificates are issued by qualified experts (peritos qualificados) after inspecting the property, and registered with ADENE.
+### Using it
+@viz {"k": "pairs", "items": [{"a": "Buyers", "b": "compare running costs"}, {"a": "Owners", "b": "see improvement options"}, {"a": "Renovation", "b": "qualify for support programmes"}, {"a": "New buildings", "b": "must meet minimum classes"}]}
+> The certificate tells you how much a home will cost to keep comfortable.
+
+== me-water
+
+# Water pressure at home
+Mains water arrives under pressure from reservoirs, towers or pumps. The right pressure gives good showers without stressing pipes and appliances.
+@viz {"k": "scale", "lo": 0.0, "hi": 8.0, "unit": "bar", "items": [{"l": "Too low", "v": 1.0}, {"l": "Comfortable", "v": 3.0, "hi": true}, {"l": "Upper normal", "v": 5.0}, {"l": "Too high", "v": 7.0}]}
+### Portuguese rules
+Portuguese regulations for building water systems set pressure at points of use between about 1 and 6 bar, ideally around 1.5–3 bar.
+### Problems
+@viz {"k": "pairs", "items": [{"a": "Low pressure", "b": "weak showers, slow-filling cisterns"}, {"a": "High pressure", "b": "hammering, dripping taps, burst hoses"}, {"a": "Fluctuating", "b": "shared supplies, peak demand"}]}
+### Fixes
+@viz {"k": "list", "items": ["Pressure-reducing valve", "Booster pump", "Larger pipes", "Accumulator tank"]}
+### Measuring
+A simple pressure gauge screwed onto a garden tap shows your static pressure in seconds.
+> Two to four bar is the sweet spot for most homes.
+
+# Pipe sizing
+Pipe diameter determines how much water flows and how much pressure is lost along the way.
+@viz {"k": "bars", "unit": "approx. flow at the same pressure loss, relative", "items": [{"l": "15 mm", "v": 1.0}, {"l": "22 mm", "v": 3.0}, {"l": "28 mm", "v": 5.0, "hi": true}]}
+### Friction losses
+@viz {"k": "cmp", "l": {"t": "Small pipe, long run", "items": ["big pressure loss", "weak flow"]}, "r": {"t": "Larger pipe", "items": ["less loss", "strong flow"]}}
+Losses rise with length, flow speed, bends and fittings.
+### Typical home sizes
+@viz {"k": "pairs", "items": [{"a": "Main supply", "b": "25–32 mm"}, {"a": "Distribution", "b": "20–22 mm"}, {"a": "Short branches to basins", "b": "15–16 mm"}, {"a": "Multilayer and PEX", "b": "common in modern Portuguese homes"}]}
+### Velocity limits
+Designers keep water speed modest, often under about 2 m/s, to limit noise and erosion.
+> Long runs need wider pipes.
+
+# Pumps
+Centrifugal pumps use a spinning impeller to throw water outward, raising its pressure. They're the most common pump type.
+@viz {"k": "cmp", "l": {"t": "Centrifugal", "items": ["smooth flow", "high flow", "low to medium pressure"]}, "r": {"t": "Positive displacement", "items": ["fixed volume per stroke", "high pressure", "viscous fluids"]}}
+### Pump curves
+@viz {"k": "flow", "steps": ["More flow", "Less head the pump can provide", "Operating point where pump curve meets system curve"]}
+### Choosing a pump
+@viz {"k": "list", "items": ["Required flow", "Required head", "Efficiency at operating point", "Noise", "Variable speed option"]}
+### Variable speed pumps
+Pumps with variable speed drives adjust output to demand, saving energy and keeping pressure steady, common in modern booster sets and heating circulators.
+> A pump's sweet spot is where its curve meets your system's needs.
+
+# Head and pressure
+Pump "head" is the height of water column it can support. It's another way of expressing pressure.
+@viz {"k": "terms", "f": "Pressure (bar) ≈ head (m) ÷ 10", "items": [{"s": "", "m": "10 m head ≈ 1 bar ≈ 100 kPa"}]}
+### Example
+ex: Water tank on a hill 30 m above the house | 30 ÷ 10 | ≈ 3 bar at the tap (minus pipe losses)
+### Total head
+@viz {"k": "pairs", "items": [{"a": "Static head", "b": "height difference"}, {"a": "Friction head", "b": "losses in pipes and fittings"}, {"a": "Pressure head", "b": "pressure needed at outlet"}, {"a": "Total", "b": "sum of all three"}]}
+### Why engineers use head
+Head is independent of fluid density for pump curves, so the same pump lifts water and lighter liquids to the same height.
+> Ten metres of water is one bar.
+
+# Water hammer
+Water hammer is a pressure surge caused when moving water stops suddenly, for example when a valve slams shut.
+@viz {"k": "flow", "steps": ["Water flowing", "Valve closes fast", "Water's momentum compresses against valve", "Pressure wave travels back and forth", "Bang"]}
+### How big
+ex: Water at 1 m/s stopped instantly | ΔP ≈ density × wave speed × velocity | ≈ 1,000 × 1,400 × 1 ≈ 14 bar spike
+### Sources
+@viz {"k": "list", "items": ["Quick-closing taps", "Washing machine valves", "Dishwasher valves", "Pumps stopping"]}
+### Fixes
+@viz {"k": "pairs", "items": [{"a": "Water hammer arrestor", "b": "small cushion absorbs spike"}, {"a": "Slower valves", "b": "gradual closure"}, {"a": "Pressure reduction", "b": "less energy to stop"}, {"a": "Secure pipes", "b": "less noise"}]}
+> The bang is the water's momentum hitting a closed door.
+
+# Hot water systems
+Homes heat water in several ways, each with different costs and efficiencies.
+@viz {"k": "pairs", "items": [{"a": "Electric storage heater", "b": "tank heated by element, simple, high running cost"}, {"a": "Gas instantaneous", "b": "heats on demand, endless hot water"}, {"a": "Heat pump water heater", "b": "about 3× more efficient than resistive"}, {"a": "Solar thermal", "b": "sun heats water, backup needed"}]}
+### In Portugal
+Solar thermal panels are common and required in some new buildings. In sunny regions they can supply most hot water from spring to autumn.
+### Efficiency comparison
+@viz {"k": "bars", "unit": "energy needed for the same hot water, relative", "items": [{"l": "Electric resistance", "v": 100.0}, {"l": "Gas", "v": 110.0}, {"l": "Heat pump", "v": 33.0, "hi": true}, {"l": "Solar + backup", "v": 30.0}]}
+### Instantaneous vs storage
+@viz {"k": "cmp", "l": {"t": "Instantaneous", "items": ["no standby losses", "limited flow rate"]}, "r": {"t": "Storage", "items": ["big flow", "standby heat losses", "can use cheap hours"]}}
+> Heat pumps and the sun make hot water cheapest.
+
+# Legionella
+Legionella bacteria grow in warm, stagnant water and can cause a serious pneumonia, Legionnaires' disease, when contaminated droplets are inhaled.
+@viz {"k": "scale", "lo": 0.0, "hi": 80.0, "unit": "°C", "items": [{"l": "Dormant", "v": 15.0}, {"l": "Grows fast", "v": 37.0, "hi": true}, {"l": "Dies slowly", "v": 55.0}, {"l": "Dies quickly", "v": 65.0}]}
+### Prevention
+@viz {"k": "list", "items": ["Store hot water at about 60 °C", "Circulate hot water", "Avoid dead legs", "Flush unused outlets", "Keep cold water cold"]}
+### Scald risk
+At 60 °C, water can scald in seconds. Thermostatic mixing valves deliver safe temperatures at taps while storage stays hot.
+### Vila Franca de Xira, 2014
+A Legionella outbreak linked to industrial cooling towers near Vila Franca de Xira infected over 300 people and caused about a dozen deaths, one of Europe's largest outbreaks.
+> Hot water hot, cold water cold, no stagnation.
+
+# Drainage
+Drainage relies on gravity, so pipes must slope continuously, with traps and vents to keep smells out and water flowing.
+@viz {"k": "list", "items": ["Fall of 1–2%", "Traps under fixtures", "Vent pipes", "Access points", "Separate rainwater"]}
+### Traps
+@viz {"k": "flow", "steps": ["U-bend holds water", "Water seal blocks sewer gases", "Vent prevents seal being siphoned"]}
+### Common problems
+@viz {"k": "pairs", "items": [{"a": "Gurgling", "b": "poor venting"}, {"a": "Slow drains", "b": "blockages or insufficient fall"}, {"a": "Smells", "b": "dry or siphoned traps"}, {"a": "Backflow", "b": "undersized drains"}]}
+### Fat and wipes
+@viz {"k": "fix", "items": [{"w": "Pouring cooking fat and flushing wet wipes", "r": "Bin them: they cause blockages and sewer \"fatbergs\""}]}
+> Drains need slope, seals and air.
+
+# Rainwater harvesting
+Collecting roof rainwater for non-drinking uses reduces mains water use, valuable as droughts become more frequent in Portugal.
+@viz {"k": "flow", "steps": ["Roof", "Gutters", "Filter and first-flush diverter", "Storage tank", "Pump", "Toilets, garden, washing machine"]}
+### How much
+@viz {"k": "terms", "f": "Litres per year ≈ roof area × rainfall × 0.8", "items": [{"s": "Roof area", "m": "m²"}, {"s": "Rainfall", "m": "mm per year"}, {"s": "0.8", "m": "losses"}]}
+ex: 100 m² roof, 700 mm rain (Lisbon) | 100 × 700 × 0.8 | ≈ 56,000 litres a year
+### Matching seasons
+Portugal's rain falls mostly in winter, while garden demand peaks in summer. Larger tanks help bridge the gap.
+### Uses
+@viz {"k": "list", "items": ["Toilet flushing", "Garden irrigation", "Car washing", "Washing machines", "Cleaning"]}
+> Every roof is a free water catchment.
+
+# Measuring water levels
+Monitoring tank, well and cistern levels prevents running dry, overflowing or pump damage.
+@viz {"k": "flow", "steps": ["Sensor in tank", "Microcontroller", "Wi-Fi or LoRa", "Dashboard and alerts"]}
+### Sensor options
+@viz {"k": "pairs", "items": [{"a": "Float switch", "b": "simple on/off at set levels"}, {"a": "Pressure sensor", "b": "submersible, measures depth"}, {"a": "Ultrasonic", "b": "non-contact from above (JSN-SR04T)"}, {"a": "Radar", "b": "accurate, unaffected by condensation"}]}
+### Practical tips
+@viz {"k": "list", "items": ["Mount ultrasonic sensors above blind zone", "Protect from condensation", "Compensate for temperature", "Average readings"]}
+### Remote sites
+For farm tanks and wells far from Wi-Fi, LoRa links can send readings several kilometres with a small battery and solar panel.
+> Know your tank level before the tap runs dry.
+
+== me-making
+
+# Four families of processes
+Almost all manufacturing falls into four families of processes.
+@viz {"k": "tree", "root": "Manufacturing", "items": ["Subtractive: machining, cutting", "Formative: casting, forging, moulding", "Joining: welding, bolting, gluing", "Additive: 3D printing"]}
+### Choosing a process
+@viz {"k": "list", "items": ["Material", "Quantity", "Shape complexity", "Tolerances", "Cost per part", "Tooling cost"]}
+### Volume changes everything
+@viz {"k": "cmp", "l": {"t": "One-off", "items": ["3D printing", "machining"]}, "r": {"t": "Millions", "items": ["injection moulding", "stamping", "casting"]}}
+### Combinations
+Most products combine processes: a cast part is machined at key surfaces, then assembled with bolts.
+> How many you need often decides how it's made.
+
+# Casting
+Casting pours molten metal into a mould, where it solidifies in the mould's shape. It's one of the oldest manufacturing methods.
+@viz {"k": "flow", "steps": ["Make pattern", "Form mould", "Melt metal", "Pour", "Cool and solidify", "Break out and finish"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Sand casting", "b": "cheap moulds, large or low-volume parts"}, {"a": "Die casting", "b": "metal forced into steel dies, mass production"}, {"a": "Investment casting", "b": "wax patterns, fine detail"}, {"a": "Continuous casting", "b": "steel slabs and billets"}]}
+### Typical cast parts
+@viz {"k": "list", "items": ["Engine blocks", "Pump housings", "Valve bodies", "Bronze statues", "Bells"]}
+### Defects
+Porosity, shrinkage and cracks can weaken castings, so critical parts are inspected, sometimes by X-ray.
+> Casting turns liquid metal into complex shapes in one step.
+
+# Machining
+Machining removes material with cutting tools to create precise shapes and surfaces.
+@viz {"k": "pairs", "items": [{"a": "Lathe", "b": "rotates the workpiece, cylindrical parts"}, {"a": "Milling machine", "b": "rotating cutter, flat and complex shapes"}, {"a": "Drill", "b": "holes"}, {"a": "Grinder", "b": "very fine finish"}]}
+### CNC
+Computer numerical control (CNC) machines follow programmed paths, producing repeatable parts with tolerances of a few hundredths of a millimetre, or better.
+### From design to part
+@viz {"k": "flow", "steps": ["CAD model", "CAM software plans toolpaths", "G-code", "CNC machine cuts", "Inspection"]}
+### Waste
+Machining can turn much of the starting material into chips. Near-net-shape processes like casting or forging reduce this waste.
+> Machining is precise, but it throws material away.
+
+# Forming
+Forming shapes material by deforming it rather than removing it. It's fast and strong.
+@viz {"k": "cmp", "l": {"t": "Sheet forming", "items": ["bending", "stamping", "deep drawing", "car bodies", "cans"]}, "r": {"t": "Forging", "items": ["hammering or pressing hot metal", "very strong parts"]}}
+### Why forged parts are strong
+Forging aligns the metal's grain flow with the part's shape, giving excellent strength and fatigue resistance.
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Stamped", "b": "car panels, washers, brackets"}, {"a": "Deep drawn", "b": "cans, sinks"}, {"a": "Forged", "b": "crankshafts, connecting rods, spanners"}, {"a": "Extruded", "b": "aluminium window frames"}]}
+### Springback
+Bent metal springs back slightly after forming, so tools are designed to overbend by the right amount.
+> Forming reshapes metal without wasting it.
+
+# Injection moulding
+Injection moulding melts plastic pellets and injects them under high pressure into a steel mould. Parts cool in seconds.
+@viz {"k": "bars", "unit": "cost per part vs quantity, € (illustrative, incl. mould)", "items": [{"l": "100 parts", "v": 200.0}, {"l": "10,000 parts", "v": 3.0}, {"l": "1,000,000 parts", "v": 0.1, "hi": true}]}
+### Why it dominates plastics
+@viz {"k": "list", "items": ["Fast cycle times", "Complex shapes", "Excellent repeatability", "Very low cost per part at volume"]}
+### Mould costs
+Steel moulds can cost from thousands to hundreds of thousands of euros, so injection moulding pays only at large volumes.
+### Portugal's mould industry
+Marinha Grande and Oliveira de Azeméis are internationally known centres of mould making, supplying the automotive and packaging industries worldwide.
+> Expensive moulds, almost free parts.
+
+# Welding
+Welding joins metals by melting their edges together, often with added filler metal.
+@viz {"k": "pairs", "items": [{"a": "MIG", "b": "wire feed and gas, fast, easy to learn"}, {"a": "TIG", "b": "tungsten electrode, precise, clean, thin metals"}, {"a": "Stick (MMA)", "b": "flux-coated rods, works outdoors"}, {"a": "Spot welding", "b": "car body panels"}]}
+### Good welds need
+@viz {"k": "list", "items": ["Clean metal", "Right current and speed", "Correct filler", "Proper joint preparation", "Shielding from air"]}
+### Weld defects
+@viz {"k": "pairs", "items": [{"a": "Porosity", "b": "gas bubbles"}, {"a": "Lack of fusion", "b": "weld didn't bond"}, {"a": "Cracks", "b": "stress or cooling problems"}, {"a": "Undercut", "b": "groove at weld edge"}]}
+### Safety
+Welding produces intense UV light, fumes and heat. Proper helmets, ventilation and fire precautions are essential.
+> A weld is only as good as the preparation behind it.
+
+# 3D printing
+Additive manufacturing builds parts layer by layer from digital models, enabling shapes impossible by other methods.
+@viz {"k": "pairs", "items": [{"a": "FDM", "b": "melts plastic filament, cheap, hobby and prototypes"}, {"a": "Resin (SLA/DLP)", "b": "cures liquid with light, fine detail"}, {"a": "Metal (SLM)", "b": "lasers fuse metal powder, aerospace and medical"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1984", "l": "stereolithography invented by Chuck Hull"}, {"y": "1989", "l": "FDM patented"}, {"y": "2005", "l": "RepRap open-source printers"}, {"y": "2010s", "l": "consumer printers spread"}]}
+### Strengths and limits
+@viz {"k": "pairs", "items": [{"a": "Strengths", "b": "complex shapes, customisation, no tooling"}, {"a": "Limits", "b": "slow, lower strength between layers, size limits"}, {"a": "Best for", "b": "prototypes, custom parts, small batches"}]}
+### Uses
+@viz {"k": "list", "items": ["Prototypes", "Jigs and fixtures", "Medical implants", "Aerospace parts", "Spare parts", "Enclosures"]}
+> 3D printing makes complexity free, but speed costly.
+
+# Design for manufacture
+Design for manufacture (DFM) adapts designs to suit how they'll be made, cutting cost and defects.
+@viz {"k": "list", "items": ["Draft angles for moulding", "Standard drill sizes", "Minimum bend radii", "Uniform wall thickness", "Fewer parts"]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Moulded part", "b": "1–2° draft so it releases from mould"}, {"a": "Sheet metal", "b": "bend radius at least material thickness"}, {"a": "Machined part", "b": "avoid deep narrow pockets"}, {"a": "Assembly", "b": "parts that fit only one way"}]}
+### Fewer parts
+Combining several parts into one moulded or printed part reduces assembly time and failure points.
+### Talk early
+@viz {"k": "flow", "steps": ["Designer drafts part", "Manufacturing engineer reviews", "Adjust design", "Cheaper, more reliable part"]}
+> A part that's easy to make is cheaper and more reliable.
+
+# Mass production
+Mass production uses standardised parts, specialised machines and division of labour to make huge quantities cheaply.
+@viz {"k": "bars", "unit": "hours to assemble a Model T chassis", "items": [{"l": "Before 1913", "v": 12.5}, {"l": "Moving line 1914", "v": 1.5, "hi": true}]}
+### Ford's moving assembly line
+Henry Ford's moving assembly line, introduced in 1913, brought the work to the workers. The Model T's price fell dramatically, making cars affordable for millions.
+### Interchangeable parts
+Earlier, armouries and machine shops pioneered interchangeable parts, essential for assembly lines.
+### Modern factories
+@viz {"k": "list", "items": ["Industrial robots", "Sensors and data", "Lean production", "Just-in-time supply", "Flexible lines"]}
+### Portugal
+Volkswagen's Autoeuropa plant in Palmela is one of Portugal's largest exporters, producing hundreds of thousands of cars a year.
+> Mass production made cars, appliances and phones affordable.
+
+# Quality control
+Quality control ensures parts meet specifications, catching problems before products reach customers.
+@viz {"k": "flow", "steps": ["Measure parts", "Record data", "Statistical analysis", "Detect drift", "Correct process before defects"]}
+### Tools
+@viz {"k": "pairs", "items": [{"a": "Gauges", "b": "quick go/no-go checks"}, {"a": "CMM", "b": "coordinate measuring machine for precise 3D measurement"}, {"a": "Vision systems", "b": "cameras inspect at line speed"}, {"a": "X-ray and ultrasound", "b": "internal defects"}]}
+### Statistical process control
+Walter Shewhart developed control charts at Bell Labs in the 1920s, tracking process measurements to spot problems early.
+### Quality movements
+@viz {"k": "list", "items": ["Total Quality Management", "Six Sigma", "Lean", "ISO 9001"]}
+> Measure the process, not just the product.
+
+== me-measure
+
+# The SI system
+The International System of Units (SI) gives engineers and scientists a common language of measurement.
+@viz {"k": "pairs", "items": [{"a": "metre", "b": "length"}, {"a": "kilogram", "b": "mass"}, {"a": "second", "b": "time"}, {"a": "ampere", "b": "current"}, {"a": "kelvin", "b": "temperature"}, {"a": "mole", "b": "amount"}, {"a": "candela", "b": "light intensity"}]}
+### Derived units
+@viz {"k": "pairs", "items": [{"a": "newton", "b": "kg·m/s²"}, {"a": "pascal", "b": "N/m²"}, {"a": "joule", "b": "N·m"}, {"a": "watt", "b": "J/s"}, {"a": "volt", "b": "W/A"}]}
+### 2019 redefinition
+Since 2019, all SI base units are defined by fixed physical constants. The kilogram is no longer defined by a metal cylinder in France but by Planck's constant.
+### Prefixes
+@viz {"k": "list", "items": ["kilo (10³)", "mega (10⁶)", "giga (10⁹)", "milli (10⁻³)", "micro (10⁻⁶)", "nano (10⁻⁹)"]}
+> One system, understood everywhere.
+
+# The Mars Climate Orbiter
+In September 1999, NASA lost the Mars Climate Orbiter because two teams used different units for the same calculation.
+@viz {"k": "fix", "items": [{"w": "One team in pound-force seconds, the other expecting newton-seconds", "r": "Specify and check units at every interface"}]}
+### What happened
+@viz {"k": "flow", "steps": ["Thruster data in imperial units", "Navigation software assumed metric", "Small errors accumulated", "Orbiter flew too low", "Lost in Mars' atmosphere"]}
+### Cost
+The mission cost about $327 million in total, including the spacecraft, launch and operations.
+### Other unit disasters
+In 1983, an Air Canada Boeing 767, later nicknamed the "Gimli Glider", ran out of fuel mid-flight after a mix-up between pounds and kilograms during refuelling. The pilots glided to a safe landing.
+> Units are part of the number: never leave them out.
+
+# Accuracy vs precision
+Accuracy and precision are different. Good measurements need both.
+@viz {"k": "cmp", "l": {"t": "Accuracy", "items": ["close to the true value", "requires calibration"]}, "r": {"t": "Precision", "items": ["repeatable", "consistent", "tight grouping"]}}
+### The target analogy
+@viz {"k": "pairs", "items": [{"a": "Accurate and precise", "b": "tight cluster at bullseye"}, {"a": "Precise, not accurate", "b": "tight cluster off-centre"}, {"a": "Accurate, not precise", "b": "scattered around bullseye"}, {"a": "Neither", "b": "scattered off-centre"}]}
+### Example
+ex: Scale reads 1.52, 1.52, 1.53 kg | True mass 1.40 kg | Precise but inaccurate: needs calibration
+### Resolution
+A display showing more decimals doesn't guarantee accuracy. A cheap thermometer showing 21.37 °C may be wrong by a whole degree.
+> Precision without accuracy is consistently wrong.
+
+# Tolerances
+No part is made exactly to size. A tolerance specifies the acceptable range of variation.
+@viz {"k": "scale", "lo": 19.9, "hi": 20.1, "unit": "mm", "items": [{"l": "Lower limit", "v": 19.95}, {"l": "Nominal", "v": 20.0, "hi": true}, {"l": "Upper limit", "v": 20.05}]}
+### Cost of tightness
+@viz {"k": "bars", "unit": "relative cost to make (illustrative)", "items": [{"l": "±0.5 mm", "v": 1.0}, {"l": "±0.1 mm", "v": 2.0}, {"l": "±0.01 mm", "v": 5.0}, {"l": "±0.001 mm", "v": 20.0, "hi": true}]}
+### Specify only what matters
+@viz {"k": "pairs", "items": [{"a": "Critical fit", "b": "tight tolerance"}, {"a": "Cosmetic surface", "b": "loose tolerance"}, {"a": "Default", "b": "general tolerance from drawing standard"}]}
+### Geometric tolerances
+Beyond size, engineers specify flatness, roundness, perpendicularity and position using geometric dimensioning and tolerancing (GD&T).
+> Tight tolerances cost money: use them only where they matter.
+
+# Fits
+When shafts fit into holes, the relationship between their tolerances determines whether they slide, fit snugly or press together.
+@viz {"k": "pairs", "items": [{"a": "Clearance fit", "b": "always a gap, slides, e.g. H7/g6"}, {"a": "Transition fit", "b": "may be slight gap or interference, locating, e.g. H7/k6"}, {"a": "Interference fit", "b": "always tight, pressed or heated, e.g. H7/p6"}]}
+### Applications
+@viz {"k": "list", "items": ["Bearings on shafts", "Gears", "Pins and bushings", "Wheel hubs"]}
+### Shrink fits
+@viz {"k": "flow", "steps": ["Heat outer part", "It expands", "Slide over shaft", "Cools and grips tightly"]}
+### ISO 286
+The ISO 286 standard defines tolerance grades and fits, so engineers worldwide can specify and make matching parts.
+> Fits decide whether parts slide, locate or lock.
+
+# Measuring tools
+Choose a measuring tool with resolution at least ten times finer than the tolerance you're checking.
+@viz {"k": "bars", "unit": "resolution, mm", "items": [{"l": "Tape measure", "v": 1.0}, {"l": "Steel rule", "v": 0.5}, {"l": "Calipers", "v": 0.02}, {"l": "Micrometer", "v": 0.001, "hi": true}]}
+### The rule of ten
+ex: Tolerance ±0.05 mm | Tool resolution should be about 0.005 mm or better | Micrometer, not calipers
+### Tools
+@viz {"k": "pairs", "items": [{"a": "Calipers", "b": "outside, inside and depth, quick"}, {"a": "Micrometer", "b": "very precise, one dimension"}, {"a": "Dial indicator", "b": "measures movement and runout"}, {"a": "CMM", "b": "full 3D inspection"}]}
+### Technique
+@viz {"k": "list", "items": ["Clean surfaces", "Consistent pressure", "Measure at room temperature", "Repeat readings", "Zero the tool"]}
+> The tool must be much finer than the tolerance.
+
+# Significant figures
+Significant figures show how precise a measurement is. Reporting extra digits implies precision you don't have.
+@viz {"k": "fix", "items": [{"w": "Rough 2 m measurement reported as 2.0000 m", "r": "Report 2 m, or measure more precisely"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "2 m", "b": "precise to about a metre"}, {"a": "2.0 m", "b": "to about 10 cm"}, {"a": "2.00 m", "b": "to about a centimetre"}, {"a": "2.000 m", "b": "to about a millimetre"}]}
+### Calculations
+ex: 3.2 m × 1.47 m | Calculator: 4.704 m² | Report: 4.7 m² (two significant figures)
+### Engineering practice
+Results shouldn't be more precise than the least precise input. Rounding too early, though, can accumulate errors; round at the end.
+> More digits don't make a measurement more accurate.
+
+# Calibration
+Instruments drift over time. Calibration compares them with a more accurate reference and corrects or documents the difference.
+@viz {"k": "cycle", "steps": ["Use instrument", "Compare with reference", "Adjust or record error", "Certify", "Use until next calibration"]}
+### Traceability
+@viz {"k": "flow", "steps": ["Your gauge", "Calibrated against lab standard", "Lab standard against national standard", "National standard against SI definition"]}
+### What gets calibrated
+@viz {"k": "list", "items": ["Torque wrenches", "Pressure gauges", "Scales", "Thermometers", "Multimeters", "Measuring machines"]}
+### In Portugal
+The Instituto Português da Qualidade (IPQ) maintains national measurement standards and oversees legal metrology, such as fuel pumps and shop scales.
+> A measurement is only as good as its calibration.
+
+# Errors add up
+When parts stack together, their tolerances accumulate. Engineers analyse this "tolerance stack-up".
+@viz {"k": "terms", "f": "Worst case = sum of tolerances; Statistical (RSS) = √(sum of squares)", "items": [{"s": "", "m": "RSS assumes random, independent variations"}]}
+### Example
+ex: 10 parts, each ±0.1 mm | Worst case: ±1.0 mm | Statistical: ±0.32 mm
+### Choosing a method
+@viz {"k": "cmp", "l": {"t": "Worst case", "items": ["guaranteed fit", "tighter part tolerances", "costlier"]}, "r": {"t": "Statistical", "items": ["realistic", "cheaper", "tiny chance of misfit"]}}
+### Reducing stack-up
+@viz {"k": "list", "items": ["Fewer parts in the chain", "Reference from one datum", "Adjustable features", "Tighter tolerances on key parts"]}
+> Tolerances compound: design the chain, not just the parts.
+
+# Imperial units still around
+Despite the metric system's spread, some imperial units persist in specific industries.
+@viz {"k": "pairs", "items": [{"a": "Pipe threads", "b": "inches (e.g. ½\" BSP)"}, {"a": "Tyres", "b": "rim size in inches"}, {"a": "Screens", "b": "diagonal in inches"}, {"a": "Aviation", "b": "altitude in feet, speed in knots"}]}
+### Exact conversions
+@viz {"k": "pairs", "items": [{"a": "1 inch", "b": "exactly 25.4 mm (since 1959)"}, {"a": "1 foot", "b": "0.3048 m"}, {"a": "1 pound", "b": "0.45359237 kg"}, {"a": "1 knot", "b": "1.852 km/h"}]}
+### Pipe sizes confuse
+A "½-inch" pipe doesn't measure half an inch: the name is a historical nominal size, unrelated to the actual diameter.
+### The US
+The United States is one of very few countries that still uses imperial-style units for most everyday purposes.
+> Know the conversions where imperial survives.
+
+== me-failure
+
+# Overload
+Overload failure occurs when the load exceeds what a part can carry. It's the simplest failure mode to understand.
+@viz {"k": "flow", "steps": ["Load exceeds strength", "Yielding or fracture", "Part fails"]}
+### Causes
+@viz {"k": "list", "items": ["Underestimated loads", "Misuse", "Wrong material", "Design errors", "Accidents"]}
+### Prevention
+@viz {"k": "pairs", "items": [{"a": "Safety factors", "b": "margin for uncertainty"}, {"a": "Load limits", "b": "signs and ratings"}, {"a": "Overload protection", "b": "fuses, slip clutches, relief valves"}, {"a": "Testing", "b": "proof loading before use"}]}
+### Ductile vs brittle overload
+@viz {"k": "cmp", "l": {"t": "Ductile", "items": ["stretches, bends", "warning signs"]}, "r": {"t": "Brittle", "items": ["sudden fracture", "no warning"]}}
+> Most overload failures are prevented by honest load estimates.
+
+# Fatigue
+Fatigue is failure under repeated loading at stresses well below the material's static strength. Tiny cracks grow with each cycle until the part breaks.
+@viz {"k": "flow", "steps": ["Repeated loading", "Microscopic crack starts at stress concentration", "Grows a little each cycle", "Remaining section too small", "Sudden fracture"]}
+### How common
+Fatigue is estimated to cause the majority of mechanical failures in machines and structures.
+### History
+@viz {"k": "time", "events": [{"y": "1842", "l": "Versailles rail disaster from axle failure"}, {"y": "1850s–60s", "l": "August Wöhler studies fatigue"}, {"y": "1954", "l": "Comet crashes"}, {"y": "Today", "l": "fatigue design standard practice"}]}
+### S-N curves
+@viz {"k": "pairs", "items": [{"a": "Higher stress", "b": "fewer cycles to failure"}, {"a": "Lower stress", "b": "more cycles"}, {"a": "Endurance limit", "b": "some steels have a stress below which fatigue doesn't occur"}]}
+### Prevention
+@viz {"k": "list", "items": ["Smooth shapes", "Good surface finish", "Avoid notches", "Inspection for cracks", "Lower stress ranges"]}
+> Small loads repeated millions of times can break what one big load cannot.
+
+# Beach marks
+Fatigue fracture surfaces often show characteristic curved "beach marks", recording the crack's progress, and a rougher final fracture zone.
+@viz {"k": "cmp", "l": {"t": "Fatigue zone", "items": ["smooth", "beach marks", "slow growth"]}, "r": {"t": "Final fracture", "items": ["rough", "sudden", "overload of remaining section"]}}
+### Reading a fracture
+@viz {"k": "flow", "steps": ["Find origin (often at surface or corner)", "Follow beach marks outward", "Final rough zone shows last moment"]}
+### What they reveal
+@viz {"k": "pairs", "items": [{"a": "Origin", "b": "where crack started: defect or notch"}, {"a": "Spacing", "b": "changes in loading"}, {"a": "Final zone size", "b": "how high the stress was"}]}
+### Investigators' tool
+Failure analysts use fracture surfaces, microscopes and material tests to reconstruct exactly how and why a part failed.
+> A broken surface tells the story of how it broke.
+
+# Corrosion
+Corrosion destroys metal gradually, reducing its cross-section and creating stress concentrations where cracks can start.
+@viz {"k": "list", "items": ["Uniform rusting", "Pitting", "Galvanic corrosion", "Crevice corrosion", "Stress corrosion cracking"]}
+### Galvanic corrosion
+@viz {"k": "flow", "steps": ["Two dissimilar metals in contact", "Electrolyte (water, salt)", "Less noble metal corrodes faster"]}
+Steel bolts in aluminium, or copper touching galvanised steel, can corrode rapidly without insulation.
+### Corrosion fatigue
+Corrosion and fatigue together are worse than either alone: corrosion creates pits that start fatigue cracks.
+### Coastal Portugal
+Salt-laden air along Portugal's coast accelerates corrosion of steel structures, railings and cars.
+> Corrosion and fatigue are a dangerous partnership.
+
+# Creep
+Creep is slow, permanent deformation under constant load, especially at high temperatures.
+@viz {"k": "time", "events": [{"y": "Primary", "l": "initial fast creep"}, {"y": "Secondary", "l": "steady slow creep"}, {"y": "Tertiary", "l": "accelerating"}, {"y": "Rupture", "l": "failure"}]}
+### High-temperature creep
+@viz {"k": "pairs", "items": [{"a": "Jet turbine blades", "b": "single-crystal nickel superalloys resist creep"}, {"a": "Power plant boiler tubes", "b": "designed for decades of creep life"}, {"a": "Furnace parts", "b": "special alloys"}]}
+### At room temperature
+@viz {"k": "list", "items": ["Lead pipes sag", "Plastic shelves bow", "Bolted plastic joints loosen", "Glaciers flow"]}
+### Design
+Engineers use creep data to ensure parts don't deform excessively over their service life, often decades.
+> Under heat and time, even metal flows.
+
+# The Comet airliner
+The de Havilland Comet, the world's first jet airliner, entered service in 1952. In 1954, two Comets broke up in flight, leading to one of the most famous engineering investigations.
+@viz {"k": "fix", "items": [{"w": "Sharp corners on openings in a pressurised fuselage", "r": "Rounded corners and fatigue testing"}]}
+### The investigation
+@viz {"k": "flow", "steps": ["Wreckage recovered from sea", "Full fuselage pressure-tested in water tank", "Cycles repeated", "Crack grew from corner of an opening", "Cause confirmed"]}
+### Lessons
+@viz {"k": "list", "items": ["Fatigue testing of whole structures", "Rounded openings", "Fail-safe design", "Crack-stopping features"]}
+### Legacy
+The lessons from the Comet shaped the design of every pressurised airliner since. The rounded windows you see today are part of that legacy.
+> The Comet taught aviation to fear fatigue.
+
+# The 2001 Entre-os-Rios bridge collapse
+On 4 March 2001, a pier of the Hintze Ribeiro Bridge over the Douro at Entre-os-Rios collapsed during floods, sending a bus and cars into the river. 59 people died.
+@viz {"k": "flow", "steps": ["Decades of riverbed erosion", "Sand extraction lowered riverbed", "Flood scour around pier", "Foundation undermined", "Collapse"]}
+### Consequences
+@viz {"k": "list", "items": ["Minister resigned", "Nationwide bridge inspections", "New monitoring", "Rules on sand extraction"]}
+### Engineering lessons
+@viz {"k": "pairs", "items": [{"a": "Scour", "b": "a leading cause of bridge failure worldwide"}, {"a": "Underwater inspection", "b": "essential"}, {"a": "River management", "b": "affects structures"}, {"a": "Maintenance", "b": "as important as design"}]}
+### Memorial
+A memorial at Entre-os-Rios honours the victims, and the tragedy remains a reference point in Portuguese engineering.
+> What happens below the water can bring down what stands above.
+
+# Human and organisational factors
+Many engineering disasters stem not from unknown physics but from human and organisational failures.
+@viz {"k": "list", "items": ["Design errors", "Poor communication", "Skipped inspections", "Ignored warnings", "Schedule pressure", "Cost cutting"]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "Hyatt Regency, 1981", "b": "walkway connection changed during construction, 114 died"}, {"a": "Challenger, 1986", "b": "O-ring concerns overruled, 7 died"}, {"a": "Genoa Morandi, 2018", "b": "maintenance and corrosion concerns, 43 died"}]}
+### Learning culture
+Industries like aviation encourage reporting near-misses without blame, learning before accidents happen.
+### Checking
+@viz {"k": "flow", "steps": ["Design", "Independent check", "Construction review", "Inspection", "Feedback"]}
+> Most failures were someone's warning that wasn't heard.
+
+# Redundancy
+Redundancy provides backup so that a single failure doesn't cause disaster.
+@viz {"k": "cmp", "l": {"t": "Single load path", "items": ["one failure collapses the system"]}, "r": {"t": "Redundant", "items": ["other paths carry the load"]}}
+### Examples
+@viz {"k": "list", "items": ["Multiple cables on bridges", "Two engines on airliners", "Multiple hydraulic systems", "Extra bolts in joints", "Backup power"]}
+### Fail-safe vs safe-life
+@viz {"k": "pairs", "items": [{"a": "Safe-life", "b": "parts replaced before expected failure"}, {"a": "Fail-safe", "b": "structure survives a part failing"}, {"a": "Damage-tolerant", "b": "cracks found by inspection before critical"}]}
+### Common-mode failures
+Redundancy fails if both backups share a weakness, such as the same software bug or the same power supply. True redundancy needs independence.
+> Never let one part be the only thing between safety and disaster.
+
+# Root cause analysis
+Root cause analysis looks past the broken part to find why it failed, so the problem doesn't recur.
+@viz {"k": "flow", "steps": ["Failure", "Why?", "Why?", "Why?", "Why?", "Why?", "Root cause", "Corrective action"]}
+### Five Whys example
+ex: Machine stopped > fuse blew > bearing seized > no lubrication > pump strainer clogged | Root cause: no strainer maintenance schedule
+### Tools
+@viz {"k": "pairs", "items": [{"a": "Five Whys", "b": "simple, from Toyota"}, {"a": "Fishbone diagram", "b": "categories of causes (Ishikawa)"}, {"a": "Fault tree", "b": "logical combinations"}, {"a": "Failure analysis lab", "b": "physical evidence"}]}
+### Fix the system
+@viz {"k": "fix", "items": [{"w": "Replace the broken part and move on", "r": "Fix the cause, then share the lesson"}]}
+> Replacing the part fixes today; fixing the cause fixes tomorrow.
+
+== me-design
+
+# Start with the problem
+Good design starts with a clear understanding of the problem and requirements. Rushing to solutions often solves the wrong problem.
+@viz {"k": "list", "items": ["What must it do?", "Under what conditions?", "For whom?", "At what cost?", "By when?", "What constraints?"]}
+### Requirements
+@viz {"k": "pairs", "items": [{"a": "Functional", "b": "what it does"}, {"a": "Performance", "b": "how well"}, {"a": "Constraints", "b": "cost, size, regulations"}, {"a": "Interfaces", "b": "what it connects to"}]}
+### Ask why
+@viz {"k": "flow", "steps": ["Customer asks for a faster pump", "Why?", "Tank empties too slowly", "Actual problem: pipe too narrow", "Cheaper fix"]}
+### User research
+Watching how people actually use things often reveals needs they don't mention.
+> A clear problem is half a solution.
+
+# The design cycle
+Engineering design is iterative. Each loop improves understanding and the solution.
+@viz {"k": "cycle", "steps": ["Define", "Ideate", "Select", "Prototype", "Test", "Learn", "Refine"]}
+### Iteration is normal
+Few good designs emerge from the first attempt. Several loops, each cheaper and faster than the last mistake, are part of the process.
+### Divergence and convergence
+@viz {"k": "cmp", "l": {"t": "Diverge", "items": ["many ideas", "no judgement"]}, "r": {"t": "Converge", "items": ["evaluate", "choose", "refine"]}}
+### Stopping
+Designs are never perfect. Engineers stop iterating when requirements are met with acceptable risk, cost and time.
+> Design is a loop, not a line.
+
+# Requirements: must vs nice
+Separating must-haves from nice-to-haves keeps projects focused and helps choose between options.
+@viz {"k": "cmp", "l": {"t": "Must-haves", "items": ["required for success", "non-negotiable"]}, "r": {"t": "Nice-to-haves", "items": ["add value", "can be dropped"]}}
+### MoSCoW method
+@viz {"k": "pairs", "items": [{"a": "Must", "b": "essential"}, {"a": "Should", "b": "important but not vital"}, {"a": "Could", "b": "desirable if time allows"}, {"a": "Won't", "b": "explicitly excluded this time"}]}
+### Scope creep
+@viz {"k": "flow", "steps": ["Small additions", "More complexity", "Delays and costs", "Project at risk"]}
+A clear, agreed requirements list is the best defence.
+### Measurable requirements
+@viz {"k": "fix", "items": [{"w": "\"It should be light\"", "r": "\"It must weigh under 2 kg\""}]}
+> If it isn't measurable, it isn't a requirement.
+
+# Concept selection
+Engineers compare design concepts systematically using a decision matrix, scoring options against weighted criteria.
+@viz {"k": "bars", "unit": "weighted score (example)", "items": [{"l": "Concept A", "v": 72.0}, {"l": "Concept B", "v": 81.0, "hi": true}, {"l": "Concept C", "v": 64.0}]}
+### How it works
+@viz {"k": "flow", "steps": ["List criteria", "Weight importance", "Score each concept", "Multiply and sum", "Compare"]}
+### Example criteria
+@viz {"k": "pairs", "items": [{"a": "Cost", "b": "weight 30%"}, {"a": "Reliability", "b": "25%"}, {"a": "Weight", "b": "20%"}, {"a": "Ease of manufacture", "b": "15%"}, {"a": "Aesthetics", "b": "10%"}]}
+### Pugh matrix
+Stuart Pugh's method compares concepts against a reference design, marking each criterion better, same or worse.
+> A matrix makes trade-offs visible and decisions defensible.
+
+# Prototyping
+Prototypes let you learn quickly and cheaply before committing to expensive production.
+@viz {"k": "bars", "unit": "relative cost to fix a problem (illustrative)", "items": [{"l": "Concept", "v": 1.0}, {"l": "Prototype", "v": 10.0}, {"l": "Production tooling", "v": 100.0}, {"l": "After launch", "v": 1000.0, "hi": true}]}
+### Types of prototype
+@viz {"k": "pairs", "items": [{"a": "Looks-like", "b": "appearance and ergonomics"}, {"a": "Works-like", "b": "function and performance"}, {"a": "Cardboard and foam", "b": "quick shape tests"}, {"a": "3D prints and breadboards", "b": "rapid functional tests"}]}
+### Fail fast
+@viz {"k": "list", "items": ["Test the riskiest assumptions first", "Use the cheapest method that answers the question", "Expect to throw prototypes away"]}
+> Fail early in cardboard, not late in steel.
+
+# Testing
+Testing checks that designs meet requirements, including at extremes and under misuse.
+@viz {"k": "list", "items": ["Heat and cold", "Vibration", "Water and dust", "Drops and impacts", "Misuse", "Long-term durability"]}
+### Test to failure
+Testing beyond specification to the point of failure reveals real margins and weakest links.
+### Accelerated life testing
+@viz {"k": "flow", "steps": ["Higher temperatures and loads", "Faster ageing", "Years of wear simulated in weeks", "Predict lifetime"]}
+### Certification tests
+@viz {"k": "pairs", "items": [{"a": "CE marking", "b": "European conformity"}, {"a": "IP rating tests", "b": "water and dust"}, {"a": "EMC tests", "b": "electromagnetic compatibility"}, {"a": "Crash tests", "b": "vehicles"}]}
+> Test it harder than any customer will use it.
+
+# Trade-offs
+Every design balances competing goals. There's no perfect design, only the best compromise for a purpose.
+@viz {"k": "pairs", "items": [{"a": "Lighter", "b": "often more expensive"}, {"a": "Stronger", "b": "often heavier"}, {"a": "Cheaper", "b": "often shorter life"}, {"a": "Faster", "b": "often less efficient"}]}
+### The iron triangle
+@viz {"k": "cmp", "l": {"t": "Fast, cheap, good", "items": ["pick two"]}, "r": {"t": "Engineering reality", "items": ["improving one often costs another"]}}
+### Making trade-offs explicit
+@viz {"k": "list", "items": ["Decision matrices", "Weighted requirements", "Cost-benefit analysis", "Prototype comparisons"]}
+### Context matters
+A racing bike and a city bike make opposite trade-offs, both correctly for their purpose.
+> Good engineering is choosing the right compromise.
+
+# Standards and codes
+Standards capture decades of accumulated experience about safety, compatibility and quality.
+@viz {"k": "pairs", "items": [{"a": "EN", "b": "European standards"}, {"a": "ISO", "b": "international standards"}, {"a": "IEC", "b": "electrical standards"}, {"a": "Eurocodes", "b": "European structural design codes"}]}
+### Why follow them
+@viz {"k": "list", "items": ["Safety", "Compatibility", "Legal compliance", "Market access", "Shared language"]}
+### CE marking
+@viz {"k": "flow", "steps": ["Product designed to standards", "Tested and documented", "Declaration of conformity", "CE mark", "Sold in EU"]}
+### Organisations
+@viz {"k": "pairs", "items": [{"a": "ISO", "b": "founded 1947"}, {"a": "IEC", "b": "founded 1906"}, {"a": "CEN", "b": "European standards body"}, {"a": "IPQ", "b": "Portugal's national standards body"}]}
+> Standards are lessons learned, written down.
+
+# Documentation
+Documentation lets others build, check, maintain and improve a design long after its creators have moved on.
+@viz {"k": "list", "items": ["Drawings", "Calculations", "Test reports", "Design decisions", "Bills of materials", "Manuals"]}
+### Why decisions matter
+Recording why a choice was made prevents future engineers from "fixing" something that was deliberately designed that way.
+### Version control
+@viz {"k": "pairs", "items": [{"a": "Drawings", "b": "revision letters"}, {"a": "Software", "b": "Git"}, {"a": "Documents", "b": "change logs"}, {"a": "Approvals", "b": "signatures and dates"}]}
+### Maintenance
+Good documentation reduces errors during repairs and upgrades, especially for long-lived assets like bridges and machinery.
+> If it isn't written down, it didn't happen.
+
+# Systems thinking
+A product is a system of interacting parts. Changing one part can affect many others.
+@viz {"k": "flow", "steps": ["Bigger motor", "More current", "Bigger wires and supply", "More heat", "More cooling", "More weight", "More cost"]}
+### System engineering
+@viz {"k": "pairs", "items": [{"a": "Requirements flow down", "b": "from system to subsystems"}, {"a": "Interfaces", "b": "where parts connect"}, {"a": "Integration", "b": "combining and testing"}, {"a": "Verification", "b": "proving requirements met"}]}
+### The V-model
+@viz {"k": "flow", "steps": ["Requirements", "Design", "Build", "Test components", "Integrate", "Validate against requirements"]}
+### Unintended consequences
+@viz {"k": "list", "items": ["Heat from new electronics", "Vibration from new motors", "Weight affecting handling", "Software updates changing behaviour"]}
+> Change one part, check the whole.

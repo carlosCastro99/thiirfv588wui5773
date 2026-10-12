@@ -1,0 +1,2316 @@
+// Deep dives for pack 'electronics' (exported from packs/electronics.json)
+
+== tr-parts
+
+# Reading a resistor
+Through-hole resistors are marked with coloured bands instead of printed numbers. Once you know the code, you can read any value in seconds.
+@viz {"k": "pairs", "items": [{"a": "Black", "b": "0"}, {"a": "Brown", "b": "1"}, {"a": "Red", "b": "2"}, {"a": "Orange", "b": "3"}, {"a": "Yellow", "b": "4"}, {"a": "Green", "b": "5"}]}
+@viz {"k": "pairs", "items": [{"a": "Blue", "b": "6"}, {"a": "Violet", "b": "7"}, {"a": "Grey", "b": "8"}, {"a": "White", "b": "9"}, {"a": "Gold", "b": "×0.1 or ±5%"}, {"a": "Silver", "b": "×0.01 or ±10%"}]}
+### Reading four bands
+ex: Yellow, violet, red, gold | 4, 7, × 100 | = 4,700 Ω (4.7 kΩ) ±5%
+ex: Brown, black, orange, gold | 1, 0, × 1,000 | = 10 kΩ ±5%
+### Five bands
+Precision resistors use three digit bands, a multiplier and a tolerance band (often brown, ±1%).
+### Which end first?
+The tolerance band (gold or silver) is usually set slightly apart and goes on the right. If in doubt, measure with a multimeter.
+### Surface-mount codes
+@viz {"k": "pairs", "items": [{"a": "103", "b": "10 × 10³ = 10 kΩ"}, {"a": "472", "b": "4.7 kΩ"}, {"a": "4R7", "b": "4.7 Ω"}, {"a": "01C (EIA-96)", "b": "10 kΩ, 1%"}]}
+> Two digits, a multiplier and a tolerance: that's the whole code.
+
+# Every LED needs a resistor
+An LED has an almost fixed forward voltage. Above it, current rises steeply, so without a limit it burns out. A series resistor sets the current.
+@viz {"k": "terms", "f": "R = (V supply − V forward) ÷ I", "items": [{"s": "V supply", "m": "e.g. 3.3 or 5 V"}, {"s": "V forward", "m": "LED's voltage"}, {"s": "I", "m": "desired current"}]}
+### Typical forward voltages
+@viz {"k": "bars", "unit": "approx. forward voltage, V", "items": [{"l": "Red", "v": 2.0}, {"l": "Yellow", "v": 2.1}, {"l": "Green", "v": 3.0}, {"l": "Blue", "v": 3.1}, {"l": "White", "v": 3.1, "hi": true}]}
+### Worked examples
+ex: Red LED on 5 V at 10 mA | (5 − 2) ÷ 0.01 | = 300 Ω, use 330 Ω
+ex: White LED on 3.3 V at 5 mA | (3.3 − 3.0) ÷ 0.005 | = 60 Ω, use 68 Ω
+### How much current?
+Modern LEDs are bright at 2–5 mA. Using less current saves power and keeps microcontroller pins within limits.
+!! Bigger resistor means dimmer and safer => yes, but too big and a white LED on 3.3 V may barely light; check the forward voltage
+
+# Capacitors store charge
+A capacitor stores electric charge on two conductive plates separated by an insulator (the dielectric). It resists sudden changes in voltage.
+@viz {"k": "terms", "f": "Q = C × V", "items": [{"s": "Q", "m": "charge in coulombs"}, {"s": "C", "m": "capacitance in farads"}, {"s": "V", "m": "voltage"}]}
+### Units
+@viz {"k": "pairs", "items": [{"a": "pF (picofarad)", "b": "10⁻¹² F, radio circuits"}, {"a": "nF (nanofarad)", "b": "10⁻⁹ F, decoupling"}, {"a": "µF (microfarad)", "b": "10⁻⁶ F, power smoothing"}, {"a": "F", "b": "supercapacitors"}]}
+### What capacitors do
+@viz {"k": "list", "items": ["Smooth power supply ripple", "Decouple chips", "Block DC, pass AC", "Set timing", "Filter signals", "Store energy briefly"]}
+### Decoupling
+@viz {"k": "flow", "steps": ["Chip switches", "Sudden current demand", "Nearby capacitor supplies it instantly", "Voltage stays stable"]}
+A 100 nF ceramic capacitor close to each chip's power pin is standard practice.
+### Danger
+Large capacitors in power supplies can hold dangerous charge after unplugging. Discharge them safely before working inside.
+> Capacitors are tiny local energy reservoirs.
+
+# Try it: the voltage divider
+Two resistors in series divide a voltage in proportion to their values. It's one of the most common circuits in electronics.
+@viz {"k": "terms", "f": "V out = V in × R2 ÷ (R1 + R2)", "items": [{"s": "R1", "m": "top resistor"}, {"s": "R2", "m": "bottom resistor to ground"}]}
+### Common conversions
+@viz {"k": "pairs", "items": [{"a": "5 V to 3.3 V", "b": "R1 1 kΩ, R2 2 kΩ: 3.33 V"}, {"a": "12 V to 3.3 V", "b": "R1 27 kΩ, R2 10 kΩ: 3.24 V"}, {"a": "Battery monitor", "b": "100 kΩ and 100 kΩ: halves voltage"}]}
+### Loading
+A divider only works if the load draws little current. A load with low resistance pulls the output down. Microcontroller inputs draw almost nothing, so they're fine.
+### Not for power
+@viz {"k": "fix", "items": [{"w": "Use a divider to power a 3.3 V module from 5 V", "r": "Use a voltage regulator"}]}
+### Uses
+@viz {"k": "list", "items": ["Level shifting slow signals", "Measuring battery voltage", "Setting reference voltages", "Reading resistive sensors"]}
+> Two resistors, one ratio: the simplest analogue circuit.
+
+# Standard resistor values
+Resistors come in standard series of preferred values, spaced roughly evenly on a logarithmic scale, so each value covers its tolerance range.
+@viz {"k": "list", "items": ["E12: 10, 12, 15, 18, 22, 27", "E12: 33, 39, 47, 56, 68, 82", "E24: twice as many values, 5%", "E96: 1% precision"]}
+### Why these numbers?
+Each value is about 21% higher than the previous one in the E12 series, matching ±10% tolerance so the ranges overlap.
+### Picking a value
+ex: Calculation gives 290 Ω | Nearest E12 values: 270 or 330 Ω | Choose 330 Ω for an LED (slightly less current)
+### Combining
+If an exact value is needed, combine two standard resistors in series or parallel, or use E96 precision parts.
+> Calculate, then round to the nearest standard value.
+
+# Resistor power rating
+Resistors convert electrical power into heat. Each has a maximum power rating beyond which it overheats.
+@viz {"k": "terms", "f": "P = I² × R = V² ÷ R", "items": [{"s": "P", "m": "power in watts"}, {"s": "I", "m": "current"}, {"s": "R", "m": "resistance"}]}
+### Common ratings
+@viz {"k": "pairs", "items": [{"a": "Through-hole", "b": "¼ W (most common), ½ W, 1 W and up"}, {"a": "SMD 0603", "b": "about 0.1 W"}, {"a": "SMD 1206", "b": "about 0.25 W"}, {"a": "Power resistors", "b": "5–50 W with heatsinks"}]}
+### Example
+ex: 100 Ω resistor with 50 mA | P = 0.05² × 100 | = 0.25 W: use at least ½ W
+### Safety margin
+Choose a rating at least double the calculated power. A resistor at its full rating can get hot enough to burn fingers or discolour the board.
+> Check the watts, not just the ohms.
+
+# Series and parallel resistors
+Combining resistors creates new values. Series adds them; parallel reduces the total.
+@viz {"k": "cmp", "l": {"t": "Series", "items": ["R = R1 + R2", "total larger"]}, "r": {"t": "Parallel", "items": ["1/R = 1/R1 + 1/R2", "total smaller than smallest"]}}
+### Quick rules
+@viz {"k": "pairs", "items": [{"a": "Two equal in parallel", "b": "half the value"}, {"a": "Three equal in parallel", "b": "a third"}, {"a": "Big and small in parallel", "b": "close to the small one"}]}
+### Examples
+ex: 10 kΩ + 4.7 kΩ in series | = 14.7 kΩ
+ex: 10 kΩ ∥ 10 kΩ | = 5 kΩ
+ex: 1 kΩ ∥ 1 MΩ | ≈ 999 Ω
+### Product over sum
+For two resistors in parallel: R = (R1 × R2) ÷ (R1 + R2).
+> Series adds up; parallel always gives less than the smallest.
+
+# Capacitor types
+Different capacitor technologies suit different jobs.
+@viz {"k": "cmp", "l": {"t": "Ceramic", "items": ["small", "cheap", "non-polarised", "pF to µF", "decoupling"]}, "r": {"t": "Electrolytic", "items": ["large values", "polarised", "µF to mF", "power smoothing"]}}
+### More types
+@viz {"k": "pairs", "items": [{"a": "Tantalum", "b": "compact, polarised, can fail short if abused"}, {"a": "Film", "b": "stable, audio and AC"}, {"a": "Supercapacitor", "b": "farads, backup power"}]}
+### Polarity
+@viz {"k": "fix", "items": [{"w": "Electrolytic connected backwards", "r": "Match the stripe (−) to the lower voltage"}]}
+Reversed electrolytics can overheat, leak or burst.
+### Voltage rating
+Always choose a voltage rating comfortably above the circuit voltage, often 1.5–2× for electrolytics.
+### Bulging caps
+Swollen or leaking electrolytic capacitors are a classic cause of failing power supplies and old motherboards.
+> Ceramics decouple; electrolytics store bulk energy.
+
+# RC time constant
+When a resistor charges a capacitor, the voltage rises quickly at first, then slows as the capacitor fills. The time constant τ = R × C describes the pace.
+@viz {"k": "terms", "f": "τ = R × C", "items": [{"s": "τ", "m": "seconds"}, {"s": "R", "m": "ohms"}, {"s": "C", "m": "farads"}]}
+### Charging steps
+@viz {"k": "bars", "unit": "charge reached, %", "items": [{"l": "1 τ", "v": 63.0}, {"l": "2 τ", "v": 86.0}, {"l": "3 τ", "v": 95.0}, {"l": "5 τ", "v": 99.0, "hi": true}]}
+### Example
+ex: 10 kΩ and 100 µF | τ = 10,000 × 0.0001 | = 1 second; full in about 5 s
+### Uses
+@viz {"k": "list", "items": ["Delays and timers", "Debouncing buttons", "Low-pass filters", "Power-on reset circuits"]}
+### Discharge too
+Discharging follows the same curve in reverse: after one time constant, 37% of the voltage remains.
+> One τ: 63%; five τ: done.
+
+# Inductors
+An inductor is a coil of wire that resists changes in current, storing energy in its magnetic field.
+@viz {"k": "pairs", "items": [{"a": "Capacitor", "b": "resists changes in voltage"}, {"a": "Inductor", "b": "resists changes in current"}]}
+### The key equation
+@viz {"k": "terms", "f": "V = L × dI/dt", "items": [{"s": "L", "m": "inductance in henries"}, {"s": "dI/dt", "m": "rate of change of current"}]}
+### Where they're used
+@viz {"k": "list", "items": ["Switching power supplies", "Filters", "Radio circuits", "Chokes against interference", "Wireless charging coils"]}
+### Buck converters
+@viz {"k": "flow", "steps": ["Switch on: current builds in inductor", "Switch off: inductor keeps current flowing", "Output smoothed", "Lower voltage, high efficiency"]}
+### Spikes
+Interrupting current through an inductor suddenly produces a high voltage spike, which is why relay coils need flyback diodes.
+> Inductors are to current what capacitors are to voltage.
+
+== tr-mcu
+
+# Digital vs. analog
+Signals are either digital (discrete states, usually 0 and 1) or analogue (continuously variable). Microcontrollers are digital but have tools to handle analogue.
+@viz {"k": "cmp", "l": {"t": "Digital", "items": ["0 or 1", "noise tolerant", "easy to process"]}, "r": {"t": "Analogue", "items": ["any value in a range", "real-world quantities"]}}
+### Converting
+@viz {"k": "pairs", "items": [{"a": "ADC", "b": "analogue to digital: read sensors"}, {"a": "DAC", "b": "digital to analogue: true analogue output"}, {"a": "PWM", "b": "fake analogue by fast switching"}]}
+### Logic levels
+@viz {"k": "scale", "lo": 0.0, "hi": 3.3, "unit": "V", "items": [{"l": "Low", "v": 0.5}, {"l": "Undefined", "v": 1.6}, {"l": "High", "v": 3.0, "hi": true}]}
+A voltage near the middle is ambiguous: avoid signals that sit there.
+### Noise immunity
+Digital signals survive noise well: a little noise on a 3.3 V "1" is still clearly a 1. That's why digital systems are so reliable.
+> The world is analogue; computers are digital; converters bridge the gap.
+
+# PWM: dimming by blinking
+Pulse-width modulation switches a pin fully on and off rapidly. The load responds to the average, so changing the on-time controls brightness or speed.
+@viz {"k": "terms", "f": "Average V = duty cycle × V supply", "items": [{"s": "Duty cycle", "m": "fraction of time on"}]}
+### Examples
+@viz {"k": "bars", "unit": "average output on 12 V, V", "items": [{"l": "25%", "v": 3.0}, {"l": "50%", "v": 6.0}, {"l": "75%", "v": 9.0}, {"l": "100%", "v": 12.0, "hi": true}]}
+### Frequency choices
+@viz {"k": "pairs", "items": [{"a": "LEDs", "b": "above about 1 kHz to avoid visible flicker"}, {"a": "Motors", "b": "about 20 kHz to be inaudible"}, {"a": "Servos", "b": "50 Hz with 1–2 ms pulses"}]}
+### Why efficient
+A switch fully on has little voltage drop, and fully off has no current, so little power is wasted either way.
+### On the ESP32
+The LEDC peripheral provides many PWM channels with adjustable frequency and resolution, often used for LED dimming and motors.
+> PWM fakes an analogue level by switching faster than the load can notice.
+
+# Pull-up resistors
+An unconnected input pin "floats", picking up noise and reading random values. A pull-up or pull-down resistor gives it a defined default state.
+@viz {"k": "cmp", "l": {"t": "Pull-up", "items": ["pin to 3.3 V", "reads 1", "button pulls to 0"]}, "r": {"t": "Pull-down", "items": ["pin to ground", "reads 0", "button pulls to 1"]}}
+### Typical values
+@viz {"k": "pairs", "items": [{"a": "External", "b": "4.7–10 kΩ"}, {"a": "ESP32 internal", "b": "roughly 45 kΩ"}, {"a": "I²C buses", "b": "2.2–10 kΩ"}]}
+### Why not a wire?
+A direct wire to 3.3 V would short circuit when the button connects the pin to ground. The resistor limits that current to a fraction of a milliamp.
+### In code
+ex: pinMode(4, INPUT_PULLUP) | Button between pin 4 and ground | Pressed reads LOW
+> Never leave an input floating.
+
+# ADC resolution
+An analogue-to-digital converter turns a voltage into a number. Its resolution, in bits, sets how many steps it can distinguish.
+@viz {"k": "terms", "f": "Steps = 2ⁿ; Step size = V range ÷ 2ⁿ", "items": [{"s": "n", "m": "number of bits"}]}
+### Comparison
+@viz {"k": "bars", "unit": "steps", "items": [{"l": "8-bit", "v": 256.0}, {"l": "10-bit (Arduino)", "v": 1024.0}, {"l": "12-bit (ESP32)", "v": 4096.0, "hi": true}]}
+### Step size
+ex: 12-bit over 3.3 V | 3.3 ÷ 4,096 | ≈ 0.8 mV per step
+### ESP32 quirks
+@viz {"k": "list", "items": ["Non-linear near 0 V and top", "Noise", "ADC2 unavailable with Wi-Fi", "Calibration helps", "Attenuation settings"]}
+For precise measurements, use an external ADC such as the ADS1115 (16-bit).
+### Averaging
+Taking many readings and averaging them reduces noise and improves effective resolution.
+> More bits mean finer steps, not necessarily more accuracy.
+
+# GPIO pins
+General-purpose input/output (GPIO) pins are a microcontroller's connection to the outside world. Each can be configured in software.
+@viz {"k": "cmp", "l": {"t": "Input", "items": ["read buttons, sensors"]}, "r": {"t": "Output", "items": ["drive LEDs, signal other chips"]}}
+### Limits on an ESP32
+@viz {"k": "pairs", "items": [{"a": "Voltage", "b": "3.3 V logic, not 5 V tolerant"}, {"a": "Current", "b": "keep to about 10–20 mA per pin"}, {"a": "Total", "b": "limited across all pins"}]}
+### Special pins
+@viz {"k": "list", "items": ["Strapping pins affect boot", "Input-only pins", "ADC-capable pins", "Touch pins", "Pins used by flash memory"]}
+### Driving bigger loads
+@viz {"k": "flow", "steps": ["GPIO pin", "Transistor or MOSFET", "Relay, motor, LED strip"]}
+> GPIO pins signal; transistors do the heavy lifting.
+
+# 3.3 V vs 5 V logic
+Different boards use different logic voltages. Connecting them directly can damage the lower-voltage chip.
+@viz {"k": "fix", "items": [{"w": "5 V sensor output straight into an ESP32 pin", "r": "Use a voltage divider or level shifter"}]}
+### Who uses what
+@viz {"k": "pairs", "items": [{"a": "3.3 V", "b": "ESP32, Raspberry Pi, most modern sensors"}, {"a": "5 V", "b": "Arduino Uno, older modules, many relay boards"}]}
+### Level shifting options
+@viz {"k": "list", "items": ["Voltage divider (one direction, slow signals)", "MOSFET level shifter (bidirectional, I²C)", "Dedicated level-shifter chips", "Optocouplers"]}
+### Going up
+A 3.3 V output often counts as "high" for a 5 V input, but not always. Check the 5 V device's input threshold.
+> Check the logic voltage before connecting two boards.
+
+# Interrupts
+Interrupts let a microcontroller respond instantly to events instead of constantly checking for them.
+@viz {"k": "cmp", "l": {"t": "Polling", "items": ["check repeatedly", "wastes time", "can miss fast events"]}, "r": {"t": "Interrupt", "items": ["hardware triggers code", "instant", "efficient"]}}
+### How it works
+@viz {"k": "flow", "steps": ["Pin changes", "Hardware triggers interrupt", "Main program pauses", "Interrupt routine runs", "Main program resumes"]}
+### Rules for interrupt routines
+• Keep them very short
+• Set a flag; do the heavy work in the main loop
+• Avoid delays, Serial printing and Wi-Fi calls inside them
+• Declare shared variables as volatile
+### Uses
+@viz {"k": "list", "items": ["Button presses", "Rotary encoders", "Pulse counting", "Wake from sleep", "Timers"]}
+> Let hardware call you when something happens.
+
+# Debouncing
+Mechanical contacts bounce when pressed, producing a burst of on-off transitions over a few milliseconds. Debouncing filters this so one press counts once.
+@viz {"k": "flow", "steps": ["Press button", "Contacts bounce for 1–10 ms", "Ignore changes for 20–50 ms", "Register one press"]}
+### Software debouncing
+ex: Record time of last change | Ignore new changes within 50 ms | Count only stable state
+### Hardware debouncing
+@viz {"k": "pairs", "items": [{"a": "RC filter", "b": "resistor and capacitor smooth the signal"}, {"a": "Schmitt trigger", "b": "clean switching thresholds"}, {"a": "Debounce ICs", "b": "for many inputs"}]}
+### Libraries
+Libraries like Bounce2 for Arduino, or ESPHome's filters, handle debouncing for you.
+> One press, one count: debounce every mechanical input.
+
+# Timers and millis()
+Using delay() freezes the program. Checking elapsed time with millis() lets the program do several things at once.
+@viz {"k": "fix", "items": [{"w": "delay(1000) in the loop", "r": "if (millis() − last ≥ 1000) { last = millis(), … }"}]}
+### Why it matters
+@viz {"k": "cmp", "l": {"t": "delay()", "items": ["blocks everything", "buttons ignored"]}, "r": {"t": "millis()", "items": ["loop keeps running", "responsive"]}}
+### Overflow
+millis() overflows after about 49.7 days. Using subtraction (now − last) handles the rollover correctly; comparisons like "now > target" break.
+### Multitasking
+@viz {"k": "list", "items": ["Blink LEDs", "Read sensors", "Handle Wi-Fi", "Update display", "Check buttons"]}
+Each task checks whether its own interval has passed.
+> Never wait when you can check the clock.
+
+# Microcontroller vs computer
+Microcontrollers and single-board computers both run code but serve different purposes.
+@viz {"k": "cmp", "l": {"t": "Microcontroller (ESP32, Arduino)", "items": ["one program", "instant boot", "milliwatts", "real-time"]}, "r": {"t": "Single-board computer (Raspberry Pi)", "items": ["Linux", "more power", "files, screens, networks"]}}
+### Typical specs
+@viz {"k": "pairs", "items": [{"a": "Arduino Uno", "b": "16 MHz, 2 KB RAM"}, {"a": "ESP32", "b": "240 MHz dual core, about 520 KB RAM, Wi-Fi"}, {"a": "Raspberry Pi 5", "b": "2.4 GHz quad core, up to 16 GB RAM"}]}
+### When to use which
+@viz {"k": "list", "items": ["Sensors and switches: microcontroller", "Battery projects: microcontroller", "Video, AI, databases: computer", "Home server: computer"]}
+### Together
+Many projects combine both: microcontrollers handle sensors and timing, a computer runs the dashboard and logic (for example ESPHome with Home Assistant).
+> Microcontrollers react; computers think.
+
+== tr-diodes
+
+# A one-way valve
+A diode lets current flow in one direction (anode to cathode) and blocks it in the other. It's the electronic equivalent of a check valve.
+@viz {"k": "cmp", "l": {"t": "Forward bias", "items": ["anode more positive", "conducts"]}, "r": {"t": "Reverse bias", "items": ["cathode more positive", "blocks"]}}
+### Identifying the cathode
+@viz {"k": "pairs", "items": [{"a": "Band on body", "b": "cathode"}, {"a": "Symbol bar", "b": "cathode"}, {"a": "Arrow", "b": "direction of conventional current"}]}
+### Inside
+A diode is a junction between p-type and n-type semiconductor. The junction creates a barrier that current can cross easily only one way.
+### Common diodes
+@viz {"k": "list", "items": ["1N4148: small signal", "1N4007: rectifier, 1 A", "1N5819: Schottky, 1 A", "Zener diodes", "LEDs"]}
+> The band marks the end where current exits.
+
+# Forward voltage
+A conducting diode drops a roughly fixed voltage, its forward voltage (Vf). The type determines how much.
+@viz {"k": "bars", "unit": "typical forward voltage, V", "items": [{"l": "Schottky", "v": 0.3}, {"l": "Silicon", "v": 0.7}, {"l": "Red LED", "v": 2.0}, {"l": "Blue/white LED", "v": 3.1, "hi": true}]}
+### Why it matters
+ex: Silicon diode with 2 A | 0.7 V × 2 A | = 1.4 W of heat
+ex: Schottky with 2 A | 0.3 V × 2 A | = 0.6 W
+### Schottky trade-offs
+@viz {"k": "cmp", "l": {"t": "Schottky", "items": ["low drop", "fast", "higher leakage", "lower voltage ratings"]}, "r": {"t": "Silicon", "items": ["higher drop", "low leakage", "high voltage ratings"]}}
+### Temperature
+Forward voltage falls about 2 mV for each °C rise, which is used in simple temperature sensors.
+> Every diode costs a little voltage; Schottkys cost less.
+
+# Reverse-polarity protection
+Connecting a battery backwards can destroy a circuit instantly. A diode or MOSFET in the supply line prevents this.
+@viz {"k": "flow", "steps": ["Battery reversed", "Diode blocks", "Circuit protected"]}
+### Options
+@viz {"k": "pairs", "items": [{"a": "Series diode", "b": "simple, loses 0.3–0.7 V"}, {"a": "P-channel MOSFET", "b": "almost no loss, slightly more parts"}, {"a": "Ideal diode IC", "b": "best performance"}]}
+### MOSFET method
+A P-channel MOSFET in the positive line, with its gate to ground, turns on only when polarity is correct, dropping just millivolts.
+### Polarised connectors
+@viz {"k": "list", "items": ["Keyed connectors", "JST plugs", "Barrel jacks with standard polarity", "Clear markings"]}
+> One cheap part can save a whole board from a reversed battery.
+
+# Rectifiers
+Rectifiers convert AC into DC. A bridge of four diodes uses both halves of the AC wave.
+@viz {"k": "flow", "steps": ["AC input", "Bridge rectifier", "Pulsing DC", "Smoothing capacitor", "Near-steady DC"]}
+### Half vs full wave
+@viz {"k": "cmp", "l": {"t": "Half-wave", "items": ["one diode", "uses half the wave", "more ripple"]}, "r": {"t": "Full-wave bridge", "items": ["four diodes", "both halves", "less ripple"]}}
+### Ripple
+@viz {"k": "terms", "f": "Ripple ≈ I ÷ (f × C)", "items": [{"s": "I", "m": "load current"}, {"s": "f", "m": "ripple frequency (100 Hz from 50 Hz full-wave)"}, {"s": "C", "m": "smoothing capacitance"}]}
+### Example
+ex: 12 V AC transformer | Peak ≈ 12 × 1.414 ≈ 17 V | minus two diode drops ≈ 15.6 V DC
+### Modern supplies
+Switch-mode supplies rectify mains directly and then convert at high frequency, avoiding bulky transformers.
+> Diodes turn alternating current into a one-way flow.
+
+# Flyback diodes
+Coils such as relays, solenoids and motors store energy in their magnetic field. When switched off, they produce a voltage spike that can destroy the transistor driving them.
+@viz {"k": "fix", "items": [{"w": "Relay coil driven with no diode", "r": "Diode across coil, cathode to positive"}]}
+### What happens
+@viz {"k": "flow", "steps": ["Transistor switches off", "Coil current must continue", "Voltage spikes to tens or hundreds of volts", "Without diode: transistor damaged", "With diode: current circulates safely"]}
+### Choosing the diode
+@viz {"k": "list", "items": ["1N4007 for relays", "Fast or Schottky diodes for PWM motors", "Rated for coil current"]}
+### Side effect
+The diode slows the relay's release slightly. For fast release, a Zener in series with the diode is sometimes used.
+> Every switched coil needs a flyback diode.
+
+# Zener diodes
+A Zener diode conducts in reverse at a precise breakdown voltage, which makes it useful for references and protection.
+@viz {"k": "flow", "steps": ["Input voltage", "Series resistor", "Zener holds voltage at its rating", "Stable output"]}
+### Common values
+@viz {"k": "list", "items": ["3.3 V", "5.1 V", "9.1 V", "12 V", "15 V"]}
+### Uses
+@viz {"k": "pairs", "items": [{"a": "Voltage reference", "b": "simple fixed voltage"}, {"a": "Input protection", "b": "clamps overvoltage"}, {"a": "Regulator", "b": "for very small loads"}]}
+### Limits
+A Zener regulator wastes power and only suits small currents. Modern circuits usually use linear or switching regulators instead.
+!? Zener diodes are named after American physicist Clarence Zener, who described the breakdown effect in 1934.
+
+# LEDs are diodes
+A light-emitting diode emits light when current flows forward through it. The semiconductor material determines the colour.
+@viz {"k": "pairs", "items": [{"a": "Long leg", "b": "anode (+)"}, {"a": "Short leg", "b": "cathode (−)"}, {"a": "Flat side", "b": "cathode"}]}
+### Colours and materials
+@viz {"k": "pairs", "items": [{"a": "Red", "b": "aluminium gallium arsenide or similar"}, {"a": "Blue and green", "b": "indium gallium nitride"}, {"a": "White", "b": "blue LED plus yellow phosphor"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1962", "l": "first visible (red) LED"}, {"y": "1990s", "l": "bright blue LEDs"}, {"y": "2014", "l": "Nobel Prize for blue LEDs"}, {"y": "Today", "l": "LEDs everywhere"}]}
+### Efficiency
+LEDs convert electricity to light far more efficiently than filaments and last tens of thousands of hours.
+### RGB and addressable
+Addressable LEDs such as WS2812 contain a tiny controller, so each LED in a strip can be set to any colour by a microcontroller.
+> Long leg to positive, always through a resistor.
+
+# Photodiodes and solar cells
+Diodes can also detect light. Photons free electrons in the junction, producing a small current proportional to the light.
+@viz {"k": "list", "items": ["Light sensors", "Remote-control receivers", "Optical communication", "Solar cells", "Camera sensors"]}
+### Modes
+@viz {"k": "cmp", "l": {"t": "Photoconductive", "items": ["reverse biased", "fast", "sensors"]}, "r": {"t": "Photovoltaic", "items": ["no bias", "produces voltage", "solar cells"]}}
+### Remote controls
+Infrared remotes flash an IR LED in coded pulses, typically modulated at around 38 kHz. A receiver module with a photodiode decodes them.
+### Light-dependent resistors
+LDRs are simpler, slower light sensors whose resistance drops in light, common in hobby kits and street-light switches.
+> Every solar panel is a giant photodiode.
+
+# TVS diodes
+Transient voltage suppressor (TVS) diodes clamp very fast voltage spikes, protecting sensitive chips from static discharge and surges.
+@viz {"k": "flow", "steps": ["Spike arrives", "TVS conducts within nanoseconds", "Voltage clamped", "Chip protected"]}
+### Where they're used
+@viz {"k": "list", "items": ["USB ports", "Ethernet", "Long sensor cables", "Automotive electronics", "Antenna inputs"]}
+### Choosing
+@viz {"k": "pairs", "items": [{"a": "Standoff voltage", "b": "above normal signal voltage"}, {"a": "Clamping voltage", "b": "below chip's damage level"}, {"a": "Capacitance", "b": "low for fast data lines"}]}
+### ESD standards
+Many products are tested to IEC 61000-4-2, simulating static discharges of several kilovolts.
+> Ports touched by people need TVS protection.
+
+# Diodes for OR-ing power
+Two diodes can let a circuit draw power from whichever source is higher, such as USB or a battery, without the sources feeding each other.
+@viz {"k": "flow", "steps": ["USB 5 V", "Diode", "Circuit; Battery 3.7 V", "Diode", "Circuit"]}
+### How it works
+The higher voltage forward-biases its diode and reverse-biases the other, so only one source supplies the load.
+### Losses
+@viz {"k": "cmp", "l": {"t": "Schottky diodes", "items": ["simple", "lose 0.3 V"]}, "r": {"t": "Ideal diode controllers", "items": ["MOSFET-based", "millivolt losses"]}}
+### Uses
+@viz {"k": "list", "items": ["USB and battery devices", "Redundant power supplies", "Backup batteries for clocks", "Solar plus battery"]}
+> Diode OR-ing lets the stronger supply win automatically.
+
+== tr-transistors
+
+# Why you need one
+A microcontroller pin can supply only a few milliamps. Motors, relays and LED strips need far more. A transistor lets a small current or voltage control a much larger one.
+@viz {"k": "flow", "steps": ["Microcontroller pin: few mA", "Transistor", "Load: amps"]}
+### Typical needs
+@viz {"k": "bars", "unit": "current needed, mA", "items": [{"l": "GPIO limit", "v": 20.0}, {"l": "Relay coil", "v": 70.0}, {"l": "1 m LED strip", "v": 600.0}, {"l": "Small motor", "v": 1000.0, "hi": true}]}
+### Switch or amplifier
+@viz {"k": "cmp", "l": {"t": "Switch", "items": ["fully on or off", "digital control"]}, "r": {"t": "Amplifier", "items": ["in between", "analogue signals"]}}
+### Families
+@viz {"k": "pairs", "items": [{"a": "BJT", "b": "bipolar, controlled by base current"}, {"a": "MOSFET", "b": "controlled by gate voltage"}, {"a": "IGBT", "b": "high-power switching in drives and EVs"}]}
+> Transistors let tiny signals command big loads.
+
+# BJT: current controls current
+In a bipolar junction transistor (BJT), a small base current controls a larger collector current.
+@viz {"k": "terms", "f": "I collector = hFE × I base", "items": [{"s": "hFE", "m": "current gain, often 100 or more"}]}
+### NPN as a switch
+@viz {"k": "flow", "steps": ["Pin high", "Current through base resistor", "Transistor saturates", "Load current flows collector to emitter"]}
+### Base resistor
+ex: Load 100 mA, hFE 100 | Need ≥ 1 mA base, use 5 mA to saturate | R = (3.3 − 0.7) ÷ 0.005 ≈ 520 Ω, use 470 Ω
+### Common parts
+@viz {"k": "list", "items": ["2N2222", "BC547", "2N3904", "TIP120 (Darlington)"]}
+### Saturation
+In switching use, drive the base hard enough to "saturate" the transistor, minimising collector-emitter voltage (about 0.2 V) and heat.
+> BJTs need base current; give them enough to switch fully.
+
+# MOSFET: voltage controls current
+A MOSFET's gate is insulated, so it's controlled by voltage with almost no steady gate current. When fully on, it behaves like a very small resistor.
+@viz {"k": "cmp", "l": {"t": "BJT", "items": ["base current", "0.2 V drop", "simple"]}, "r": {"t": "MOSFET", "items": ["gate voltage", "milliohm resistance", "efficient at high current"]}}
+### Key specifications
+@viz {"k": "pairs", "items": [{"a": "Rds(on)", "b": "resistance when on"}, {"a": "V gs(th)", "b": "threshold where it starts conducting"}, {"a": "V ds max", "b": "maximum voltage"}, {"a": "I d max", "b": "maximum current"}]}
+### Why MOSFETs dominate power
+ex: 10 A through 10 mΩ MOSFET | Loss = 10² × 0.01 | = 1 W
+A BJT dropping 0.2 V at 10 A would waste 2 W, plus base drive power.
+### Types
+@viz {"k": "cmp", "l": {"t": "N-channel", "items": ["switches ground side", "lower resistance", "most common"]}, "r": {"t": "P-channel", "items": ["switches positive side", "simpler high-side switching"]}}
+> MOSFETs switch big currents with almost no control power.
+
+# Low-side switching
+The simplest MOSFET circuit places an N-channel MOSFET between the load and ground. The microcontroller drives the gate.
+@viz {"k": "flow", "steps": ["+ supply", "Load", "MOSFET drain", "MOSFET source", "Ground; Gate from microcontroller pin"]}
+### Why low side
+An N-channel MOSFET switches on when its gate is several volts above its source. With the source at ground, a 3.3 V pin can drive it directly (with a logic-level part).
+### Common grounds
+@viz {"k": "fix", "items": [{"w": "Separate grounds for microcontroller and 12 V supply", "r": "Connect the grounds together"}]}
+The gate voltage is measured relative to the source, so both circuits must share ground.
+### Limitations
+@viz {"k": "list", "items": ["Load not grounded when off", "Not for loads that need constant ground", "High-side switching needs P-channel or driver"]}
+> Load to positive, MOSFET to ground, grounds connected.
+
+# Logic-level MOSFETs
+Standard MOSFETs need around 10 V on the gate to switch fully on. With a 3.3 V microcontroller, you need a "logic-level" part specified at low gate voltage.
+@viz {"k": "fix", "items": [{"w": "IRF540 driven from a 3.3 V pin", "r": "Logic-level MOSFET rated at 2.5–3.3 V"}]}
+### Read the datasheet
+@viz {"k": "pairs", "items": [{"a": "V gs(th)", "b": "only where it starts to conduct"}, {"a": "R ds(on) at V gs", "b": "the number that matters"}, {"a": "Look for", "b": "R ds(on) specified at 2.5 V or 3.3 V"}]}
+### Examples
+@viz {"k": "pairs", "items": [{"a": "AO3400", "b": "SMD, specified at 2.5 V gate drive"}, {"a": "IRLZ44N", "b": "popular, specified at 4–5 V, only partly on at 3.3 V"}, {"a": "Gate driver", "b": "for large MOSFETs and fast switching"}]}
+### Symptoms of the wrong MOSFET
+A MOSFET that's only partly on gets hot, wastes power and may fail, even though the load seems to work.
+!! A threshold of 2 V means 3.3 V is plenty => the threshold is where conduction starts, not where the MOSFET is fully on
+
+# Gate resistor and pull-down
+Two resistors make a MOSFET switch reliable: one limits gate current, the other keeps it off when the pin is floating.
+@viz {"k": "list", "items": ["Gate resistor ~100 Ω", "Pull-down ~10 kΩ to ground", "Short gate traces"]}
+### Why a gate resistor
+The gate acts like a small capacitor. Charging it suddenly draws a current spike from the pin and can cause ringing. A small series resistor tames this.
+### Why a pull-down
+@viz {"k": "flow", "steps": ["Microcontroller booting", "Pin floating", "Gate picks up noise", "MOSFET half-on", "Load glitches or overheats"]}
+A 10 kΩ pull-down holds the gate at 0 V until the pin takes control.
+### Placement
+@viz {"k": "pairs", "items": [{"a": "Gate resistor", "b": "between pin and gate"}, {"a": "Pull-down", "b": "from gate to source (ground)"}]}
+> Two cheap resistors prevent mysterious glitches.
+
+# Transistors as amplifiers
+Between fully off and fully on, a transistor can amplify: small changes at the input produce larger changes at the output.
+@viz {"k": "cmp", "l": {"t": "Switch", "items": ["off or saturated", "digital"]}, "r": {"t": "Amplifier", "items": ["active region", "analogue"]}}
+### Common-emitter amplifier
+@viz {"k": "flow", "steps": ["Small input signal", "Base current varies", "Collector current varies × gain", "Larger output voltage across resistor"]}
+### Biasing
+Amplifiers need biasing: a steady operating point in the middle of the active region, so the signal can swing both ways without clipping.
+### Where you find them
+@viz {"k": "list", "items": ["Microphone preamps", "Radios", "Audio amplifiers", "Sensor interfaces"]}
+Today, most small-signal amplification uses op-amps, which contain many transistors in one chip.
+> The same transistor can be a switch or an amplifier.
+
+# Heat in switches
+Even efficient switches lose some power as heat. Too much heat damages transistors, so it must be calculated.
+@viz {"k": "terms", "f": "P = I² × R ds(on)", "items": [{"s": "I", "m": "load current"}, {"s": "R ds(on)", "m": "on-resistance"}]}
+### Examples
+@viz {"k": "bars", "unit": "conduction loss at 10 A, W", "items": [{"l": "5 mΩ", "v": 0.5}, {"l": "20 mΩ", "v": 2.0}, {"l": "50 mΩ", "v": 5.0, "hi": true}]}
+### Switching losses
+During each on-off transition, voltage and current overlap briefly, wasting energy. At high PWM frequencies, these losses add up.
+### Heatsinks
+@viz {"k": "pairs", "items": [{"a": "Under about 1 W", "b": "small packages often fine"}, {"a": "1–5 W", "b": "small heatsink"}, {"a": "Above", "b": "larger heatsink or better MOSFET"}]}
+### Temperature
+R ds(on) rises with temperature, often doubling at high temperatures, so hot MOSFETs lose even more.
+> Calculate the watts; size the heatsink.
+
+# Optocouplers and solid-state relays
+An optocoupler transfers a signal through light inside a sealed package, electrically isolating two circuits.
+@viz {"k": "flow", "steps": ["Input current", "LED inside", "Light crosses gap", "Phototransistor conducts", "Output circuit"]}
+### Why isolation
+@viz {"k": "list", "items": ["Safety from mains", "Different ground levels", "Noise immunity", "Protection of microcontrollers"]}
+### Solid-state relays
+@viz {"k": "cmp", "l": {"t": "Mechanical relay", "items": ["click", "contacts wear", "isolated"]}, "r": {"t": "Solid-state relay", "items": ["silent", "no wear", "heat", "small leakage when off"]}}
+### Zero-crossing SSRs
+Some SSRs switch AC loads only when the voltage crosses zero, reducing electrical noise. They're ideal for heaters, not for dimming.
+### Common parts
+@viz {"k": "list", "items": ["PC817 optocoupler", "Fotek-style SSRs", "MOC3021 triac driver"]}
+> Light carries the signal; the circuits never touch.
+
+# Billions on a chip
+Modern processors contain tens of billions of microscopic MOSFETs, each acting as a switch. Computing is billions of these switching billions of times per second.
+@viz {"k": "nums", "items": [{"v": "1947", "l": "first transistor"}, {"v": "1971", "l": "Intel 4004 with 2,300 transistors"}, {"v": "10s of billions", "l": "in today's top chips"}]}
+### Moore's law
+@viz {"k": "time", "events": [{"y": "1965", "l": "Gordon Moore's prediction"}, {"y": "1971", "l": "thousands per chip"}, {"y": "2000", "l": "tens of millions"}, {"y": "2020s", "l": "tens of billions"}]}
+Moore observed that the number of transistors per chip doubled roughly every two years, a trend that held for decades.
+### How small
+Modern "nanometre" process names (like 3 nm) are marketing labels rather than actual feature sizes, but transistors are only tens of atoms wide in places.
+### Same principle
+@viz {"k": "cmp", "l": {"t": "Your LED MOSFET", "items": ["one device", "amps"]}, "r": {"t": "Processor", "items": ["billions", "microamps each", "same physics"]}}
+> The switch that drives your LED strip, shrunk a billion-fold, runs your phone.
+
+== tr-opamps
+
+# What an op-amp is
+An operational amplifier (op-amp) is a chip that amplifies the difference between its two inputs by a huge factor, often 100,000 or more.
+@viz {"k": "terms", "f": "V out = A × (V+ − V−)", "items": [{"s": "A", "m": "open-loop gain, very large"}, {"s": "V+", "m": "non-inverting input"}, {"s": "V−", "m": "inverting input"}]}
+### Pins
+@viz {"k": "pairs", "items": [{"a": "V+ input", "b": "non-inverting"}, {"a": "V− input", "b": "inverting"}, {"a": "Output", "b": "amplified difference"}, {"a": "Power", "b": "positive and negative or ground rails"}]}
+### The name
+The term "operational amplifier" comes from 1940s analogue computers, where they performed mathematical operations like addition, integration and differentiation.
+### Common parts
+@viz {"k": "list", "items": ["LM358", "TL072", "MCP6002", "OPA2333", "μA741"]}
+> An op-amp is a difference amplifier with enormous gain.
+
+# Feedback tames it
+Raw open-loop gain is too large and unpredictable to use directly. Negative feedback, connecting the output back to the inverting input, sets a precise gain.
+@viz {"k": "flow", "steps": ["Output too high", "Feedback raises V−", "Difference shrinks", "Output corrected", "Stable balance"]}
+### Why it works
+The gain then depends only on resistor values, not on the op-amp's variable internal gain. Resistors are precise and stable.
+### Benefits
+@viz {"k": "list", "items": ["Precise gain", "Lower distortion", "Wider bandwidth", "Stable operation"]}
+### Positive feedback
+@viz {"k": "cmp", "l": {"t": "Negative feedback", "items": ["stable amplifiers"]}, "r": {"t": "Positive feedback", "items": ["oscillators and Schmitt triggers"]}}
+> Feedback trades excess gain for precision.
+
+# Non-inverting amplifier
+The non-inverting amplifier boosts a signal without inverting it. The input goes to the + input; two resistors set the gain.
+@viz {"k": "terms", "f": "Gain = 1 + Rf ÷ Rg", "items": [{"s": "Rf", "m": "feedback resistor"}, {"s": "Rg", "m": "resistor to ground"}]}
+### Example
+ex: Sensor gives 0–300 mV, ADC wants 0–3 V | Gain 10 | Rf = 9 kΩ, Rg = 1 kΩ
+### Inverting amplifier
+@viz {"k": "cmp", "l": {"t": "Non-inverting", "items": ["gain ≥ 1", "high input impedance"]}, "r": {"t": "Inverting", "items": ["gain = −Rf ÷ Rin", "output flipped"]}}
+### High input impedance
+The non-inverting input draws almost no current, so it doesn't load delicate sensors.
+> Two resistors set the gain precisely.
+
+# The voltage follower
+Connect the output directly to the inverting input and the gain is exactly 1. The output copies the input, but with much more driving ability.
+@viz {"k": "flow", "steps": ["Weak source", "Op-amp follower", "Same voltage", "Strong output for loads"]}
+### Why it's useful
+@viz {"k": "list", "items": ["Buffer voltage dividers", "Isolate sensors from loads", "Drive ADC inputs", "Reference voltages"]}
+### Example
+A voltage divider with large resistors can't drive a load without its voltage dropping. A follower after it holds the voltage steady.
+@viz {"k": "cmp", "l": {"t": "Without buffer", "items": ["output sags with load"]}, "r": {"t": "With buffer", "items": ["output steady"]}}
+> A gain of 1 can be the most useful gain of all.
+
+# Comparators
+Without feedback, an op-amp acts as a comparator: its output swings fully high or low depending on which input is larger.
+@viz {"k": "flow", "steps": ["Sensor voltage", "Compared with reference", "Higher: output high", "Lower: output low", "Switch something"]}
+### Uses
+@viz {"k": "list", "items": ["Thermostats", "Light-activated switches", "Battery low alarms", "Zero-crossing detection"]}
+### Hysteresis
+@viz {"k": "cmp", "l": {"t": "Plain comparator", "items": ["chatters near threshold"]}, "r": {"t": "With hysteresis (Schmitt trigger)", "items": ["two thresholds", "clean switching"]}}
+A little positive feedback creates two thresholds, preventing rapid on-off chatter.
+### Dedicated comparators
+Chips like the LM393 are designed for comparison: faster, with open-collector outputs suited to logic.
+> A comparator answers one question: which is bigger?
+
+# Two golden rules
+With negative feedback, op-amp circuits can be analysed with two simple rules, popularised by Horowitz and Hill's classic book "The Art of Electronics".
+@viz {"k": "list", "items": ["No current flows into the inputs", "The output makes both inputs equal"]}
+### Applying them
+ex: Non-inverting amp, input 0.2 V, Rf 9 kΩ, Rg 1 kΩ | V− must equal 0.2 V | Output = 0.2 × 10 = 2 V
+### When they fail
+@viz {"k": "pairs", "items": [{"a": "Output at supply rail", "b": "can't make inputs equal"}, {"a": "No feedback", "b": "rules don't apply"}, {"a": "Very high frequencies", "b": "gain runs out"}]}
+### Why they work
+The enormous open-loop gain means only a microscopic difference between inputs is needed for any realistic output.
+> Two rules solve most op-amp circuits.
+
+# Rail-to-rail
+Older op-amps can't drive their outputs close to the supply voltages. On low-voltage circuits this wastes much of the range.
+@viz {"k": "cmp", "l": {"t": "Classic op-amp", "items": ["output stops 1–2 V from rails"]}, "r": {"t": "Rail-to-rail", "items": ["output within millivolts of rails"]}}
+### Why it matters at 3.3 V
+ex: 3.3 V supply, classic op-amp | Output range maybe 0–2 V | Loses a third of the ADC range
+### Input range too
+Rail-to-rail input op-amps also accept input signals near the supply rails. Check both input and output specifications.
+### Examples
+@viz {"k": "list", "items": ["MCP6002", "OPA344", "TLV2372", "LMV358"]}
+> On 3.3 V, pick rail-to-rail.
+
+# Filters
+Op-amps with resistors and capacitors build active filters that shape signals by frequency.
+@viz {"k": "pairs", "items": [{"a": "Low-pass", "b": "removes high-frequency noise"}, {"a": "High-pass", "b": "blocks DC and slow drift"}, {"a": "Band-pass", "b": "keeps a chosen frequency range"}, {"a": "Notch", "b": "removes one frequency, e.g. 50 Hz hum"}]}
+### Cut-off frequency
+@viz {"k": "terms", "f": "f c = 1 ÷ (2π × R × C)", "items": [{"s": "R", "m": "ohms"}, {"s": "C", "m": "farads"}]}
+ex: R = 16 kΩ, C = 10 nF | f c ≈ 1 kHz
+### Active vs passive
+@viz {"k": "cmp", "l": {"t": "Passive RC", "items": ["simple", "loses signal", "loaded by next stage"]}, "r": {"t": "Active", "items": ["gain possible", "buffered", "sharper responses"]}}
+### Common designs
+@viz {"k": "list", "items": ["Sallen-Key", "Multiple feedback", "Butterworth", "Bessel"]}
+> Filters let through what you want and block what you don't.
+
+# Summing and differences
+Op-amps can add several signals or subtract one from another, building blocks for mixers and measurement circuits.
+@viz {"k": "pairs", "items": [{"a": "Summing amplifier", "b": "adds inputs, audio mixers"}, {"a": "Difference amplifier", "b": "subtracts inputs, current sensing"}, {"a": "Instrumentation amplifier", "b": "precise difference with high input impedance"}]}
+### Current sensing
+@viz {"k": "flow", "steps": ["Load current", "Small shunt resistor", "Tiny voltage", "Difference amplifier", "Measurable signal"]}
+### Example
+ex: 2 A through 0.05 Ω shunt | 0.1 V across shunt | Amplify × 20 = 2 V
+### Instrumentation amplifiers
+Chips like the INA128 or the HX711 (for load cells) amplify tiny differences while rejecting noise common to both inputs.
+> Op-amps can do arithmetic on voltages.
+
+# The 741
+The μA741, introduced by Fairchild Semiconductor in 1968, became the most famous op-amp in history and a staple of electronics education.
+@viz {"k": "time", "events": [{"y": "1963", "l": "μA702, early IC op-amp"}, {"y": "1968", "l": "μA741 launched"}, {"y": "1970s", "l": "LM358 and TL07x"}, {"y": "Today", "l": "precision rail-to-rail parts"}]}
+### Why it was popular
+@viz {"k": "list", "items": ["Internal compensation", "Short-circuit protection", "Easy to use", "Cheap"]}
+### Its limits today
+@viz {"k": "pairs", "items": [{"a": "Supply", "b": "needs about ±5 V or more"}, {"a": "Output swing", "b": "not rail-to-rail"}, {"a": "Noise and speed", "b": "modest by modern standards"}]}
+### Still taught
+The 741 remains in textbooks because its behaviour is well documented, even though modern designs use better parts.
+> The 741 taught generations of engineers; modern circuits use its descendants.
+
+== tr-psu
+
+# Why regulate?
+Electronic chips need a stable supply voltage. Batteries sag as they discharge, adapters vary and loads change suddenly. A regulator holds the output steady.
+@viz {"k": "flow", "steps": ["Varying input", "Regulator", "Steady output", "Happy chips"]}
+### How much inputs vary
+@viz {"k": "pairs", "items": [{"a": "Li-ion cell", "b": "4.2 V full to about 3.0 V empty"}, {"a": "USB 2.0", "b": "4.75–5.25 V by specification"}, {"a": "Car \"12 V\"", "b": "11–14.5 V, with spikes"}, {"a": "Solar panel", "b": "varies with light"}]}
+### What chips tolerate
+@viz {"k": "list", "items": ["ESP32: about 3.0–3.6 V", "Most 3.3 V logic: ±10%", "Sensors: often tight limits", "Analogue circuits: sensitive to noise"]}
+### Two families
+@viz {"k": "cmp", "l": {"t": "Linear regulators", "items": ["simple", "quiet", "waste the voltage difference as heat"]}, "r": {"t": "Switching regulators", "items": ["efficient", "small", "some electrical noise"]}}
+> Clean, stable power is the foundation of reliable electronics.
+
+# Linear regulators
+A linear regulator acts like a self-adjusting resistor, dropping the extra voltage and converting it to heat.
+@viz {"k": "terms", "f": "Power wasted = (V in − V out) × I", "items": [{"s": "V in", "m": "input"}, {"s": "V out", "m": "output"}, {"s": "I", "m": "load current"}]}
+### Efficiency
+@viz {"k": "terms", "f": "Efficiency ≈ V out ÷ V in", "items": [{"s": "5 V → 3.3 V", "m": "66%"}, {"s": "12 V → 3.3 V", "m": "27.5%"}]}
+### Example
+ex: 12 V to 5 V at 0.5 A with LM7805 | (12 − 5) × 0.5 | = 3.5 W of heat: needs a heatsink
+### Common parts
+@viz {"k": "pairs", "items": [{"a": "LM7805", "b": "5 V, needs about 2 V headroom"}, {"a": "AMS1117-3.3", "b": "common on ESP32 boards, about 1 V headroom"}, {"a": "LM317", "b": "adjustable"}]}
+### Advantages
+Linear regulators are cheap, simple and produce very little electrical noise, ideal for small currents and sensitive circuits.
+> Linear regulators turn excess voltage into heat.
+
+# LDO regulators
+A low-dropout (LDO) regulator keeps regulating even when the input is only slightly above the output, often by just 0.1–0.3 V.
+@viz {"k": "cmp", "l": {"t": "Standard linear", "items": ["needs 1–2 V headroom"]}, "r": {"t": "LDO", "items": ["needs 0.1–0.3 V headroom"]}}
+### Why it matters for batteries
+ex: Li-ion cell 3.7 V nominal, 3.4 V near empty | Regulator to 3.3 V | Only an LDO can keep working until the battery is nearly flat
+### Quiescent current
+The current an LDO uses itself matters for battery projects. Some draw milliamps; good ones draw a few microamps.
+@viz {"k": "pairs", "items": [{"a": "AMS1117", "b": "about 5 mA quiescent"}, {"a": "MCP1700", "b": "about 1.6 µA"}, {"a": "HT7333", "b": "a few µA"}]}
+### Limits
+LDOs are still linear: efficiency is low when the input is much higher than the output.
+> For battery projects, choose an LDO with tiny quiescent current.
+
+# Buck converters
+A buck converter steps voltage down efficiently by switching rapidly and storing energy in an inductor.
+@viz {"k": "flow", "steps": ["Switch on: inductor charges", "Switch off: inductor releases", "Capacitor smooths", "Lower voltage out"]}
+### Efficiency
+@viz {"k": "bars", "unit": "efficiency 24 V to 3.3 V at 1 A, % (approx.)", "items": [{"l": "Linear", "v": 14.0}, {"l": "Buck converter", "v": 90.0, "hi": true}]}
+### Duty cycle
+@viz {"k": "terms", "f": "V out ≈ duty cycle × V in", "items": [{"s": "Duty cycle", "m": "fraction of time the switch is on"}]}
+### Current out vs in
+Because power is conserved (minus losses), a buck converter delivers more current at the output than it draws from the input.
+ex: 24 V in, 3.3 V out at 2 A (6.6 W) | Input ≈ 6.6 ÷ 0.9 ÷ 24 | ≈ 0.31 A
+### Modules
+Cheap buck modules (such as those based on MP1584 or LM2596) make it easy to power 3.3 V or 5 V circuits from 12–24 V supplies.
+> Buck converters step down voltage with little heat.
+
+# Boost converters
+A boost converter steps voltage up, for example from a 3.7 V battery to 5 V for USB.
+@viz {"k": "terms", "f": "I in ≈ I out × V out ÷ (V in × efficiency)", "items": [{"s": "Higher output voltage", "m": "more input current"}]}
+### Example
+ex: 5 V at 1 A from a 3.7 V battery, 90% efficient | I in ≈ 1 × 5 ÷ (3.7 × 0.9) | ≈ 1.5 A from the battery
+### Uses
+@viz {"k": "list", "items": ["Power banks", "LED drivers", "Single AA-powered gadgets", "Solar chargers"]}
+### Buck-boost
+@viz {"k": "pairs", "items": [{"a": "Buck", "b": "output lower than input"}, {"a": "Boost", "b": "output higher than input"}, {"a": "Buck-boost", "b": "either, as battery voltage crosses the output"}]}
+### Limits
+Boosting large ratios draws heavy input currents and reduces efficiency.
+> Boosting voltage costs extra current from the source.
+
+# Efficiency compared
+For a large voltage drop, switching regulators win easily. For small drops and noise-sensitive circuits, an LDO can be the better choice.
+@viz {"k": "bars", "unit": "efficiency, % (approx.)", "items": [{"l": "Linear 12→3.3 V", "v": 28.0}, {"l": "Linear 5→3.3 V", "v": 66.0}, {"l": "LDO 3.6→3.3 V", "v": 92.0}, {"l": "Buck 12→3.3 V", "v": 90.0, "hi": true}]}
+### Decision guide
+@viz {"k": "pairs", "items": [{"a": "Large drop, high current", "b": "buck converter"}, {"a": "Small drop", "b": "LDO"}, {"a": "Battery boost", "b": "boost converter"}, {"a": "Precision analogue", "b": "LDO or buck followed by LDO"}]}
+### Heat check
+@viz {"k": "flow", "steps": ["Calculate wasted power", "Under 0.5 W: linear fine", "Above: consider switching regulator"]}
+> Match the regulator to the voltage drop and noise needs.
+
+# Ripple and noise
+Switching regulators leave small ripple and noise at their switching frequency and its harmonics. Most digital circuits don't care; sensitive analogue circuits might.
+@viz {"k": "flow", "steps": ["Buck converter", "Ripple at hundreds of kHz", "Filter (LC) or LDO", "Clean supply for ADC or audio"]}
+### Who cares
+@viz {"k": "list", "items": ["Audio circuits", "Precision ADCs", "Radio receivers", "Sensitive sensors"]}
+### Fixes
+@viz {"k": "pairs", "items": [{"a": "Extra capacitors", "b": "reduce ripple"}, {"a": "LC filter", "b": "blocks high-frequency noise"}, {"a": "LDO after buck", "b": "efficient and clean"}, {"a": "Good layout", "b": "short loops, solid ground"}]}
+### Measuring
+An oscilloscope with a short ground spring on the probe reveals ripple accurately; long ground leads pick up extra noise.
+> Buck for efficiency, LDO for cleanliness, both for the best of each.
+
+# Choosing a wall adapter
+The right adapter matches voltage and polarity exactly and can supply at least the current needed.
+@viz {"k": "list", "items": ["Same voltage", "Enough current", "Correct polarity", "AC or DC output", "Right plug"]}
+### Current rating
+@viz {"k": "cmp", "l": {"t": "Adapter current higher than needed", "items": ["fine", "device takes what it needs"]}, "r": {"t": "Lower than needed", "items": ["overheats", "voltage sags"]}}
+### Polarity symbol
+@viz {"k": "pairs", "items": [{"a": "Centre positive", "b": "most common"}, {"a": "Centre negative", "b": "some guitar pedals, older devices"}, {"a": "Symbol", "b": "shows which is centre"}]}
+### Barrel sizes
+Common barrel plugs are 5.5 × 2.1 mm and 5.5 × 2.5 mm. They look similar but fit poorly if mismatched.
+@viz {"k": "fix", "items": [{"w": "12 V adapter on a 5 V device", "r": "Exact voltage match, always"}]}
+> Voltage must match; current can be higher.
+
+# USB power delivery
+USB Power Delivery (USB PD) negotiates higher voltages over USB-C, allowing fast charging of phones and laptops.
+@viz {"k": "bars", "unit": "USB PD fixed voltages, V", "items": [{"l": "Default", "v": 5.0}, {"l": "PD", "v": 9.0}, {"l": "PD", "v": 15.0}, {"l": "PD", "v": 20.0, "hi": true}, {"l": "PD 3.1 EPR", "v": 48.0}]}
+### Power levels
+@viz {"k": "pairs", "items": [{"a": "5 V USB-C default", "b": "up to 3 A, 15 W"}, {"a": "PD 20 V at 5 A", "b": "100 W"}, {"a": "PD 3.1 EPR", "b": "up to 240 W"}]}
+### The handshake
+@viz {"k": "flow", "steps": ["Device connects", "Exchanges capabilities", "Agrees voltage", "Charger switches up", "Higher power delivered"]}
+### For projects
+A "PD trigger" module can request 9, 12 or 20 V from a USB-C charger, turning laptop chargers into flexible bench supplies.
+### Cables
+Cables above 3 A (for 100 W and more) contain a small chip (e-marker) that tells the charger they're rated for 5 A.
+> USB-C gives 5 V by default; higher voltages need negotiation.
+
+# Brown-outs
+A brown-out is a dip in supply voltage below what a chip needs. It can cause resets, crashes or corrupted data.
+@viz {"k": "fix", "items": [{"w": "ESP32 resets when Wi-Fi connects", "r": "Stronger supply and a large capacitor near the board"}]}
+### Why ESP32s brown out
+Wi-Fi transmission causes current spikes of several hundred milliamps. A weak USB cable, thin wires or a small regulator can't keep up, so the voltage dips.
+### Fixes
+@viz {"k": "list", "items": ["Short, thick power wires", "Capacitor 470–1,000 µF near the board", "Better regulator", "Quality USB cable"]}
+### Brown-out detector
+The ESP32 has a built-in brown-out detector that resets the chip safely when voltage falls too low, rather than letting it misbehave.
+> Random resets are usually power problems, not code problems.
+
+== tr-sensors
+
+# From the world to numbers
+A sensor converts a physical quantity into an electrical signal that a microcontroller can read and convert into real-world units.
+@viz {"k": "flow", "steps": ["Physical quantity", "Sensor", "Electrical signal", "Microcontroller", "Number in real units"]}
+### Signal types
+@viz {"k": "pairs", "items": [{"a": "Voltage", "b": "analogue sensors read by ADC"}, {"a": "Resistance", "b": "thermistors, LDRs, via divider"}, {"a": "Pulse length", "b": "ultrasonic sensors"}, {"a": "Digital data", "b": "I²C, SPI, one-wire sensors"}]}
+### Key specifications
+@viz {"k": "list", "items": ["Range", "Resolution", "Accuracy", "Response time", "Power use", "Interface"]}
+### Accuracy vs resolution
+@viz {"k": "cmp", "l": {"t": "Resolution", "items": ["smallest change shown", "e.g. 0.01 °C"]}, "r": {"t": "Accuracy", "items": ["how close to truth", "e.g. ±0.5 °C"]}}
+A sensor can show many decimals and still be wrong by a degree.
+> Sensors are your project's eyes and ears.
+
+# Temperature sensors
+Temperature is the most common thing makers measure. Options range from cheap analogue thermistors to calibrated digital sensors.
+@viz {"k": "pairs", "items": [{"a": "Thermistor (NTC)", "b": "cheap, analogue, needs a divider and maths"}, {"a": "DS18B20", "b": "digital, one-wire, ±0.5 °C, waterproof versions"}, {"a": "BME280", "b": "temperature, humidity, pressure over I²C"}, {"a": "DHT22", "b": "temperature and humidity, slower, less reliable"}]}
+### Accuracy
+@viz {"k": "bars", "unit": "typical accuracy, ± °C", "items": [{"l": "DS18B20", "v": 0.5}, {"l": "BME280", "v": 1.0}, {"l": "DHT22", "v": 0.5}, {"l": "Cheap NTC uncalibrated", "v": 2.0}]}
+### Self-heating
+Sensors inside enclosures with ESP32s and regulators can read several degrees too high. Mount them away from heat sources, ideally outside the box.
+### One-wire chains
+Many DS18B20s can share a single data pin, each with a unique 64-bit address, ideal for multi-zone monitoring.
+> Place temperature sensors away from your own electronics' heat.
+
+# Ultrasonic distance
+Ultrasonic sensors measure distance by timing the echo of a high-frequency sound pulse.
+@viz {"k": "terms", "f": "Distance = speed of sound × echo time ÷ 2", "items": [{"s": "Speed of sound", "m": "about 343 m/s at 20 °C"}, {"s": "÷ 2", "m": "sound goes there and back"}]}
+### Example
+ex: Echo time 5.83 ms | 343 × 0.00583 ÷ 2 | ≈ 1.0 m
+### Common sensors
+@viz {"k": "pairs", "items": [{"a": "HC-SR04", "b": "cheap, about 2–400 cm, not waterproof"}, {"a": "JSN-SR04T", "b": "waterproof probe, good for tanks"}, {"a": "Ultrasonic level sensors", "b": "industrial versions"}]}
+### Uses
+@viz {"k": "list", "items": ["Water tank levels", "Parking sensors", "Robot obstacle detection", "People counting"]}
+> Sound's round trip gives the distance.
+
+# Ultrasonic quirks
+Ultrasonic sensors are simple but have quirks that affect accuracy.
+@viz {"k": "list", "items": ["Speed of sound changes with temperature", "Blind zone close up", "Soft surfaces absorb sound", "Angled surfaces deflect echoes", "Condensation in tanks"]}
+### Temperature compensation
+@viz {"k": "terms", "f": "Speed ≈ 331.3 + 0.606 × T (m/s)", "items": [{"s": "T", "m": "air temperature in °C"}]}
+ex: From 10 °C to 30 °C | Speed changes from about 337 to 349 m/s | ≈ 3.5% distance error if ignored
+### Blind zone
+The JSN-SR04T can't measure closer than about 20–25 cm, because the transducer is still ringing from its own pulse. Mount it high enough above the maximum water level.
+### Filtering
+Take several readings and use the median to ignore occasional false echoes.
+> Correct for temperature and respect the blind zone.
+
+# Motion sensors
+Motion and presence sensors trigger lights, alarms and automations when people move.
+@viz {"k": "cmp", "l": {"t": "PIR", "items": ["detects moving heat", "cheap", "low power", "needs movement"]}, "r": {"t": "Radar (mmWave)", "items": ["detects movement and breathing", "works through thin materials", "presence detection"]}}
+### PIR
+Passive infrared sensors detect changes in infrared radiation as warm bodies move across their segmented lens. They don't detect people sitting still.
+### mmWave radar
+@viz {"k": "pairs", "items": [{"a": "LD2410", "b": "24 GHz, detects stationary presence"}, {"a": "RCWL-0516", "b": "microwave, simple motion"}, {"a": "Use", "b": "rooms where people sit still"}]}
+### Common problems
+@viz {"k": "list", "items": ["Pets triggering PIRs", "Heaters and sunlight", "Radar sensing through walls", "Fans moving curtains"]}
+> PIR for movement; radar for presence.
+
+# Light sensors
+Light sensors measure brightness for automatic lighting, blinds and plant monitoring.
+@viz {"k": "bars", "unit": "typical illuminance, lux", "items": [{"l": "Moonlight", "v": 0.3}, {"l": "Living room", "v": 150.0}, {"l": "Office", "v": 500.0}, {"l": "Overcast day", "v": 2000.0}, {"l": "Direct sun", "v": 100000.0, "hi": true}]}
+### Options
+@viz {"k": "pairs", "items": [{"a": "LDR", "b": "cheap, slow, uncalibrated"}, {"a": "BH1750", "b": "calibrated lux, I²C"}, {"a": "TSL2591", "b": "very wide range"}, {"a": "Photodiode", "b": "fast response"}]}
+### Logarithmic world
+Our eyes perceive brightness roughly logarithmically, so automations often work better with thresholds on a log scale.
+### Placement
+@viz {"k": "list", "items": ["Avoid direct lamp light", "Shield from LED indicators", "Face the area you care about"]}
+> Lux values span six orders of magnitude.
+
+# Current and power sensors
+Measuring current and power lets you monitor appliances, solar output and battery use.
+@viz {"k": "pairs", "items": [{"a": "CT clamp (e.g. SCT-013)", "b": "AC current without cutting wires"}, {"a": "PZEM-004T", "b": "voltage, current, power, energy via Modbus"}, {"a": "INA219 / INA226", "b": "DC current and voltage over I²C"}, {"a": "Shunt resistor", "b": "basic DC measurement"}]}
+### Safety
+@viz {"k": "fix", "items": [{"w": "Wiring a mains module without enclosure", "r": "Fully enclosed, properly fused, ideally by a qualified person"}]}
+### CT clamps
+A current transformer clamps around a single conductor (live or neutral, not both) and produces a small signal proportional to current.
+### Home energy monitoring
+@viz {"k": "flow", "steps": ["CT clamps on main cables", "ESP32 with ESPHome", "Home Assistant", "Energy dashboard"]}
+> Clamp one conductor; never both.
+
+# Analog vs digital sensors
+Sensors either output an analogue signal for the microcontroller's ADC or do the conversion internally and send digital data.
+@viz {"k": "cmp", "l": {"t": "Analogue", "items": ["simple", "cheap", "noise and calibration are your problem"]}, "r": {"t": "Digital", "items": ["calibrated", "noise immune", "needs a bus protocol"]}}
+### Analogue challenges
+@viz {"k": "list", "items": ["ADC accuracy", "Noise on wires", "Reference voltage", "Temperature drift"]}
+### Digital buses
+@viz {"k": "pairs", "items": [{"a": "I²C", "b": "two wires, many devices"}, {"a": "SPI", "b": "fast, more wires"}, {"a": "One-wire", "b": "one data line, many sensors"}, {"a": "UART", "b": "sensors with their own protocol"}]}
+### Long cables
+Digital sensors handle long cables better, though I²C itself has length limits. For long distances, use sensors with RS-485 or wireless.
+> Digital sensors move the hard analogue work inside the chip.
+
+# Calibration
+Cheap sensors often have offsets and gain errors. Comparing them with trusted references and correcting in software improves accuracy dramatically.
+@viz {"k": "flow", "steps": ["Measure reference point 1", "Measure point 2", "Calculate offset and gain", "Apply correction", "Verify"]}
+### Two-point calibration
+ex: Ice water: sensor 0.8 °C (true 0.0) | Room: sensor 21.5 °C (reference 20.4) | Fit a line through both corrections
+### In ESPHome
+ESPHome's calibrate_linear filter lets you enter measured and true values; it applies the correction automatically.
+### Drift
+@viz {"k": "list", "items": ["Humidity sensors drift over years", "Gas sensors age", "pH probes need regular calibration", "Temperature sensors are usually stable"]}
+> Two good reference points beat a datasheet's typical values.
+
+# Sampling and averaging
+How often and how you sample affects accuracy, noise and power consumption.
+@viz {"k": "list", "items": ["Average several readings", "Use median for outliers", "Sample only as fast as needed", "Sleep between readings"]}
+### Filters
+@viz {"k": "pairs", "items": [{"a": "Moving average", "b": "smooths noise, slows response"}, {"a": "Median", "b": "removes spikes"}, {"a": "Exponential", "b": "smooth with little memory"}, {"a": "Delta", "b": "report only on change"}]}
+### Sample rate
+@viz {"k": "cmp", "l": {"t": "Too fast", "items": ["wasted power", "noisy data", "flooded database"]}, "r": {"t": "Appropriate", "items": ["temperature every 30–60 s", "power every few seconds"]}}
+### Database size
+Sending readings every second creates millions of data points a year. Reporting only meaningful changes keeps databases lean.
+> Sample as often as the physics changes, not as fast as the chip can.
+
+== tr-buses
+
+# Why buses?
+Microcontrollers talk to sensors, displays and memory through serial buses that send bits one after another over a few wires.
+@viz {"k": "tree", "root": "Buses", "items": ["UART: two devices, async", "I²C: many devices, two wires", "SPI: fast, more wires", "One-wire: single data line", "RS-485: long distance"]}
+### Serial vs parallel
+@viz {"k": "cmp", "l": {"t": "Parallel", "items": ["many wires", "one bit per wire"]}, "r": {"t": "Serial", "items": ["few wires", "bits in sequence", "now dominant"]}}
+### Common across devices
+Standard buses let parts from different manufacturers work together, so a BME280 from one company talks to an ESP32 from another.
+> A few wires and a shared protocol connect everything.
+
+# UART
+UART (universal asynchronous receiver-transmitter) uses one line to send and one to receive, with no shared clock.
+@viz {"k": "flow", "steps": ["Device A TX", "Device B RX; Device B TX", "Device A RX; Common ground"]}
+### Speed
+Both sides must agree on the baud rate in advance. Common rates: 9,600 and 115,200 baud.
+@viz {"k": "pairs", "items": [{"a": "9,600 baud", "b": "about 960 bytes per second"}, {"a": "115,200 baud", "b": "about 11.5 KB per second"}]}
+### Typical format
+@viz {"k": "pairs", "items": [{"a": "8N1", "b": "8 data bits, no parity, 1 stop bit"}, {"a": "Idle line", "b": "high"}, {"a": "Start bit", "b": "low"}]}
+### Voltage levels
+@viz {"k": "fix", "items": [{"w": "Connect RS-232 (±12 V) directly to an ESP32", "r": "Use a level converter such as MAX3232"}]}
+TTL-level UART uses 3.3 V or 5 V; old PC serial ports use RS-232 levels.
+> Cross TX and RX, match the speed, share ground.
+
+# I²C
+I²C (Inter-Integrated Circuit), developed by Philips in 1982, uses two shared lines to connect many devices.
+@viz {"k": "pairs", "items": [{"a": "SDA", "b": "data line"}, {"a": "SCL", "b": "clock line"}, {"a": "Address", "b": "7-bit number per device"}, {"a": "Pull-ups", "b": "required on both lines"}]}
+### Speeds
+@viz {"k": "bars", "unit": "I²C speed, kHz", "items": [{"l": "Standard", "v": 100.0}, {"l": "Fast", "v": 400.0, "hi": true}, {"l": "Fast-plus", "v": 1000.0}]}
+### Common addresses
+@viz {"k": "pairs", "items": [{"a": "BME280", "b": "0x76 or 0x77"}, {"a": "BH1750", "b": "0x23 or 0x5C"}, {"a": "SSD1306 OLED", "b": "0x3C"}, {"a": "ADS1115", "b": "0x48–0x4B"}]}
+### How it works
+@viz {"k": "flow", "steps": ["Controller sends start", "Address", "Device acknowledges", "Data bytes", "Stop"]}
+### Pull-ups
+Lines are open-drain: devices pull them low, resistors pull them high. Typical values are 2.2–10 kΩ; many breakout boards already include them.
+> Two wires, many devices, each with its own address.
+
+# SPI
+SPI (Serial Peripheral Interface) uses separate lines for clock, data in, data out and a chip-select for each device. It's fast and simple.
+@viz {"k": "pairs", "items": [{"a": "SCK", "b": "clock"}, {"a": "MOSI (or COPI)", "b": "controller to device"}, {"a": "MISO (or CIPO)", "b": "device to controller"}, {"a": "CS", "b": "chip select, one per device"}]}
+### Speed
+SPI often runs at tens of megahertz, much faster than I²C, which suits displays, SD cards and flash memory.
+### Trade-offs
+@viz {"k": "cmp", "l": {"t": "I²C", "items": ["two wires", "addresses", "slower"]}, "r": {"t": "SPI", "items": ["more wires", "chip-select per device", "faster", "full duplex"]}}
+### Modes
+SPI has four modes defining clock polarity and phase. Controller and device must use the same mode.
+> SPI trades extra wires for speed.
+
+# Choosing a bus
+Each bus suits different needs. Many projects use several at once.
+@viz {"k": "cmp", "l": {"t": "I²C", "items": ["many slow sensors", "two wires", "short distance"]}, "r": {"t": "SPI", "items": ["displays", "SD cards", "speed"]}}
+### Others
+@viz {"k": "pairs", "items": [{"a": "UART", "b": "GPS, modems, devices with their own protocol"}, {"a": "One-wire", "b": "chains of DS18B20 temperature sensors"}, {"a": "RS-485", "b": "long industrial cables"}, {"a": "CAN", "b": "cars and robust networks"}]}
+### Decision questions
+@viz {"k": "list", "items": ["How fast?", "How far?", "How many devices?", "How many pins free?", "What does the device support?"]}
+> Let the device and distance choose the bus.
+
+# Address clashes
+Two I²C devices with the same address can't share a bus: both would answer at once.
+@viz {"k": "fix", "items": [{"w": "Two BME280s at 0x76 on one bus", "r": "Set one to 0x77 with its address jumper"}]}
+### Solutions
+@viz {"k": "list", "items": ["Address jumpers or pins", "Second I²C bus", "I²C multiplexer", "Different sensor model"]}
+### Multiplexers
+@viz {"k": "flow", "steps": ["ESP32", "TCA9548A multiplexer", "Eight separate channels", "Same-address devices on different channels"]}
+### ESP32 advantage
+The ESP32 has two hardware I²C controllers and can assign them to almost any pins, so two buses are easy.
+> Same address, different bus.
+
+# I²C scanner
+When an I²C device doesn't respond, an I²C scanner tries every address and lists those that acknowledge.
+@viz {"k": "list", "items": ["Run scanner", "Note found addresses", "No device? check wiring", "Wrong address? update config"]}
+### Typical causes of "no device"
+@viz {"k": "pairs", "items": [{"a": "Wiring", "b": "SDA and SCL swapped"}, {"a": "Power", "b": "device not powered or wrong voltage"}, {"a": "Pull-ups", "b": "missing"}, {"a": "Address", "b": "different from expected"}]}
+### In ESPHome
+Setting "scan: true" in the I²C configuration logs all found devices at boot.
+### Example output
+ex: Found device at 0x3C | Found device at 0x76 | OLED display and BME280 detected
+> Scan first, then debug.
+
+# Cable length
+I²C was designed for short connections on a single board. Long wires add capacitance that slows signal edges until communication fails.
+@viz {"k": "bars", "unit": "practical distance, m (approx.)", "items": [{"l": "I²C", "v": 1.0}, {"l": "SPI", "v": 1.0}, {"l": "UART (TTL)", "v": 10.0}, {"l": "RS-485", "v": 1200.0, "hi": true}]}
+### Why I²C fails over distance
+@viz {"k": "flow", "steps": ["Long cable", "More capacitance", "Slower rising edges", "Bits misread", "Errors"]}
+### Workarounds
+@viz {"k": "list", "items": ["Lower speed", "Stronger pull-ups", "I²C bus extenders", "Differential I²C chips"]}
+### Better choices for distance
+For metres to kilometres, use RS-485, CAN or put a microcontroller near the sensor and send data wirelessly.
+> I²C is for centimetres, not metres.
+
+# RS-485 and Modbus
+RS-485 sends data as the voltage difference between two wires, making it highly resistant to noise over long cables.
+@viz {"k": "flow", "steps": ["Device sends", "Differential signal on A/B pair", "Noise affects both wires equally", "Receiver subtracts", "Clean data"]}
+### Capabilities
+@viz {"k": "pairs", "items": [{"a": "Distance", "b": "up to about 1,200 m"}, {"a": "Devices", "b": "up to 32 standard loads on one bus"}, {"a": "Topology", "b": "daisy-chained bus with terminators at both ends"}]}
+### Modbus
+Modbus, created by Modicon in 1979, is a simple protocol widely used in industry. Energy meters, solar inverters and heat pumps often speak Modbus RTU over RS-485.
+### Projects
+@viz {"k": "list", "items": ["Read solar inverter data", "Energy meters", "Industrial sensors", "HVAC equipment"]}
+An ESP32 with a cheap RS-485 module can read these devices into Home Assistant.
+> Differential signalling shrugs off noise over long cables.
+
+# Logic analysers
+A logic analyser records digital signals and decodes protocols into readable data, showing exactly what's on the wires.
+@viz {"k": "flow", "steps": ["Connect probes", "Capture signals", "Decode protocol", "See bytes and addresses", "Find the problem"]}
+### Cheap and useful
+Inexpensive USB logic analysers with 8 channels at around 24 MHz, used with open-source software like PulseView (sigrok), handle most hobby buses.
+### What they reveal
+@viz {"k": "list", "items": ["Wrong addresses", "Missing acknowledgements", "Wrong baud rate", "Timing problems", "Noise glitches"]}
+### Oscilloscope vs logic analyser
+@viz {"k": "cmp", "l": {"t": "Oscilloscope", "items": ["analogue shape", "voltage levels", "noise"]}, "r": {"t": "Logic analyser", "items": ["many channels", "decoded protocols", "timing"]}}
+> When a bus misbehaves, look at the actual bits.
+
+== tr-wireless
+
+# The trade-off triangle
+Every wireless technology balances range, data rate and power consumption. Improving one usually costs another.
+@viz {"k": "cmp", "l": {"t": "High data rate", "items": ["Wi-Fi", "short range or high power"]}, "r": {"t": "Long range, low power", "items": ["LoRa", "tiny data rates"]}}
+### The triangle
+@viz {"k": "pairs", "items": [{"a": "Wi-Fi", "b": "fast, medium range, power-hungry"}, {"a": "BLE", "b": "slow, short range, very low power"}, {"a": "LoRa", "b": "very slow, long range, low power"}, {"a": "Cellular", "b": "medium speed, long range, moderate power plus fees"}]}
+### Physics
+Sending more bits per second requires more signal relative to noise. At long distances, signals are weak, so only low data rates get through reliably.
+> Pick two: range, speed or low power.
+
+# Wi-Fi
+Wi-Fi offers high data rates and direct internet access, but uses significant power, best for mains-powered devices.
+@viz {"k": "nums", "items": [{"v": "2.4 GHz", "l": "band used by ESP32 Wi-Fi"}, {"v": "100–250 mA", "l": "ESP32 current while transmitting"}, {"v": "10s of metres", "l": "typical indoor range"}]}
+### Good uses
+@viz {"k": "list", "items": ["Cameras", "Smart plugs", "Displays", "Mains-powered sensors", "Devices needing internet"]}
+### Bands
+@viz {"k": "cmp", "l": {"t": "2.4 GHz", "items": ["longer range", "through walls", "more crowded"]}, "r": {"t": "5 GHz", "items": ["faster", "shorter range", "less interference"]}}
+### Battery devices
+Wi-Fi on batteries is possible with deep sleep: wake, connect, send, sleep. Connecting takes time and energy, so readings every few minutes work better than every second.
+> Wi-Fi is fast and familiar, but thirsty.
+
+# Bluetooth Low Energy
+Bluetooth Low Energy (BLE) sends small amounts of data over short distances with very little power.
+@viz {"k": "pairs", "items": [{"a": "Range", "b": "about 10–30 m indoors"}, {"a": "Data rate", "b": "up to 2 Mbps, typically much less"}, {"a": "Battery life", "b": "months to years on a coin cell"}]}
+### Common uses
+@viz {"k": "list", "items": ["Fitness trackers", "Smartwatches", "Beacons", "Temperature sensors", "Smart locks"]}
+### Advertising
+Many BLE sensors simply broadcast readings in advertising packets without connecting, saving power. ESP32 boards can listen and forward them to Home Assistant as Bluetooth proxies.
+### Coin cell budget
+ex: CR2032 ≈ 225 mAh | Average draw 20 µA | ≈ 1.3 years
+> BLE trades speed for years of battery life.
+
+# Zigbee and Thread
+Zigbee and Thread are low-power mesh networks for smart homes, built on the IEEE 802.15.4 radio standard.
+@viz {"k": "flow", "steps": ["Battery sensor", "Nearest mains device relays", "Mesh hops", "Coordinator or border router", "Home system"]}
+### Mesh networking
+@viz {"k": "cmp", "l": {"t": "Star (Wi-Fi)", "items": ["every device talks to router"]}, "r": {"t": "Mesh (Zigbee, Thread)", "items": ["mains devices relay messages", "range grows with devices"]}}
+### Zigbee vs Thread
+@viz {"k": "pairs", "items": [{"a": "Zigbee", "b": "mature, widely used, needs coordinator"}, {"a": "Thread", "b": "IP-based, used by Matter, needs border router"}, {"a": "Matter", "b": "application standard over Thread or Wi-Fi, launched 2022"}]}
+### Battery life
+Battery sensors on Zigbee or Thread can last years, because they sleep most of the time and send tiny messages.
+> Mesh networks get stronger as you add mains-powered devices.
+
+# LoRa
+LoRa uses a special chirp spread-spectrum radio technique to send small amounts of data over long distances with very little power.
+@viz {"k": "bars", "unit": "typical range, km (approx.)", "items": [{"l": "Wi-Fi", "v": 0.05}, {"l": "BLE", "v": 0.03}, {"l": "Zigbee", "v": 0.1}, {"l": "LoRa, urban", "v": 3.0}, {"l": "LoRa, rural", "v": 15.0, "hi": true}]}
+### Data rates
+@viz {"k": "pairs", "items": [{"a": "Typical", "b": "hundreds of bits to a few kilobits per second"}, {"a": "Message", "b": "a few to tens of bytes"}, {"a": "Spreading factor", "b": "higher means longer range, slower data"}]}
+### Uses
+@viz {"k": "list", "items": ["Farm sensors", "Water meters", "Tank levels", "Remote weather stations", "Asset tracking"]}
+### Records
+With high-altitude balloons and line of sight, LoRa links have reached hundreds of kilometres.
+> LoRa whispers a few bytes across kilometres.
+
+# LoRa vs LoRaWAN
+LoRa is the radio technology. LoRaWAN is a network protocol that uses LoRa radios with gateways and network servers.
+@viz {"k": "cmp", "l": {"t": "LoRa", "items": ["the radio", "point-to-point possible", "no infrastructure"]}, "r": {"t": "LoRaWAN", "items": ["network", "gateways", "servers", "device management"]}}
+### LoRaWAN architecture
+@viz {"k": "flow", "steps": ["Sensor", "Gateway(s)", "Network server", "Application server", "Your dashboard"]}
+### The Things Network
+The Things Network is a community LoRaWAN network with gateways worldwide, including in Portugal, free for fair use.
+### Point-to-point
+Two LoRa boards can talk directly, for example a sensor at a farm well sending to a receiver in the house, with no network needed.
+> LoRa is the radio; LoRaWAN is the network.
+
+# Frequencies in Europe
+LoRa uses licence-free radio bands, which differ by region. In Europe, it uses the 868 MHz band with duty-cycle limits.
+@viz {"k": "nums", "items": [{"v": "868 MHz", "l": "European LoRa band"}, {"v": "1%", "l": "typical duty-cycle limit"}, {"v": "36 s", "l": "maximum transmit time per hour at 1%"}]}
+### Other regions
+@viz {"k": "pairs", "items": [{"a": "Europe", "b": "868 MHz"}, {"a": "North America", "b": "915 MHz"}, {"a": "Asia", "b": "varies, e.g. 433 or 923 MHz"}]}
+### Why duty cycles
+Shared licence-free bands need fairness. Limiting each device's transmit time stops any one device from hogging the airwaves.
+### Practical impact
+ex: One message takes about 0.4 s at a slow spreading factor | 1% limit | ≈ 90 messages per hour maximum
+> Licence-free doesn't mean rule-free.
+
+# Antennas matter
+A good antenna, well placed, often improves range more than extra transmit power, and more cheaply.
+@viz {"k": "list", "items": ["Mount high", "Keep clear of metal", "Match the frequency", "Use good cables", "Orient correctly"]}
+### Never transmit without an antenna
+Transmitting without an antenna can reflect power back into the radio chip and damage it.
+### Antenna gain
+@viz {"k": "pairs", "items": [{"a": "Small PCB antenna", "b": "compact, modest range"}, {"a": "Whip antenna", "b": "better range"}, {"a": "Directional (Yagi)", "b": "long range in one direction"}]}
+### Cable losses
+Long, thin coaxial cables lose signal at high frequencies. Keep cables short or use low-loss types.
+> Raise the antenna before raising the power.
+
+# Line of sight
+At the frequencies used by Wi-Fi, LoRa and similar radios, signals travel best in straight lines. Obstacles weaken them dramatically.
+@viz {"k": "flow", "steps": ["Antenna low behind hill", "No signal", "Raise antenna a few metres", "Clear line of sight", "Strong link"]}
+### Fresnel zone
+Radio signals need more than a thin line of sight: an elliptical zone around the path should be mostly clear for full strength.
+### Obstacles
+@viz {"k": "bars", "unit": "signal loss, dB (approx.)", "items": [{"l": "Window", "v": 3.0}, {"l": "Wooden wall", "v": 5.0}, {"l": "Brick wall", "v": 10.0}, {"l": "Concrete wall", "v": 20.0, "hi": true}]}
+### Countryside tips
+@viz {"k": "list", "items": ["Use rooftops or masts", "Avoid trees in leaf", "Check terrain profiles", "Consider a relay node"]}
+> Height is the cheapest range booster.
+
+# Cellular IoT
+Where Wi-Fi and gateways are unavailable, cellular IoT technologies send small amounts of data over mobile networks with low power.
+@viz {"k": "pairs", "items": [{"a": "LTE-M", "b": "moderate data, mobility, voice possible"}, {"a": "NB-IoT", "b": "tiny data, deep indoor coverage, very low power"}, {"a": "4G Cat 1", "b": "more data, more power"}]}
+### Costs
+A data SIM for IoT costs a small monthly fee, often a few euros, with low data allowances.
+### Uses
+@viz {"k": "list", "items": ["Remote meters", "Vehicle trackers", "Agricultural sensors", "Alarm systems", "Vending machines"]}
+### Network sunsets
+Older 2G and 3G networks are being switched off in many countries, so new designs should use LTE-M, NB-IoT or 4G.
+> Cellular IoT works anywhere there's mobile coverage, for a monthly fee.
+
+== tr-esphome
+
+# The ESP32
+The ESP32 is a low-cost microcontroller from Shanghai-based Espressif Systems, with built-in Wi-Fi and Bluetooth. It's at the heart of countless DIY and commercial smart devices.
+@viz {"k": "nums", "items": [{"v": "2016", "l": "ESP32 released"}, {"v": "240 MHz", "l": "dual-core clock"}, {"v": "~520 KB", "l": "on-chip RAM"}, {"v": "Under €10", "l": "typical dev board price"}]}
+### Features
+@viz {"k": "list", "items": ["Wi-Fi", "Bluetooth and BLE", "Dozens of GPIO pins", "ADC and DAC", "Touch sensing", "PWM, I²C, SPI, UART"]}
+### History
+The ESP8266 (2014) became popular when makers discovered it could be programmed directly. The ESP32 followed with more power, Bluetooth and better peripherals.
+### Commercial use
+Many smart plugs, lights and appliances contain ESP chips, which is why hobbyists can often re-flash them with open firmware.
+> A powerful, connected microcontroller for the price of a coffee.
+
+# ESPHome in one idea
+ESPHome lets you build firmware for ESP32 devices by describing them in a YAML file instead of writing C++ code.
+@viz {"k": "flow", "steps": ["Write YAML: board, Wi-Fi, sensors", "ESPHome compiles firmware", "Flash device", "Device appears in Home Assistant"]}
+### What you describe
+@viz {"k": "list", "items": ["Board type", "Wi-Fi credentials", "Sensors and pins", "Switches and lights", "Automations"]}
+### Origins
+ESPHome was created by Otto Winter in 2018 and is now maintained under the Open Home Foundation, alongside Home Assistant.
+### Why it's popular
+@viz {"k": "cmp", "l": {"t": "Custom C++", "items": ["flexible", "time-consuming", "bugs"]}, "r": {"t": "ESPHome", "items": ["declarative", "hundreds of components", "quick"]}}
+> Describe the device; ESPHome writes the program.
+
+# A temperature sensor in YAML
+A complete ESPHome device can be just a few lines. The structure is the same for most sensors.
+@viz {"k": "flow", "steps": ["esphome: name", "esp32: board", "wifi: credentials", "api: Home Assistant", "sensor: platform, pin, name"]}
+### Sensor block
+@viz {"k": "pairs", "items": [{"a": "platform", "b": "dht (or dallas_temp, bme280_i2c…)"}, {"a": "pin", "b": "GPIO4"}, {"a": "name", "b": "\"Living room temperature\""}, {"a": "update_interval", "b": "60s"}]}
+### Adding filters
+@viz {"k": "list", "items": ["Moving average", "Calibration", "Throttle reporting", "Delta changes"]}
+### Secrets
+Store Wi-Fi passwords in a separate secrets.yaml file and reference them with !secret, so you can share configurations safely.
+> A few lines of YAML replace hundreds of lines of code.
+
+# Over-the-air updates
+After the first flash over USB, ESPHome updates devices wirelessly. You change the YAML and install from anywhere on the network.
+@viz {"k": "flow", "steps": ["Edit YAML", "Click install", "Compile", "Upload over Wi-Fi", "Device restarts with new firmware"]}
+### Benefits
+@viz {"k": "list", "items": ["No ladders", "No unplugging", "Fix bugs remotely", "Add features later"]}
+### Safety
+@viz {"k": "pairs", "items": [{"a": "OTA password", "b": "prevents unauthorised updates"}, {"a": "Safe mode", "b": "boots into recovery after repeated crashes"}, {"a": "Fallback hotspot", "b": "if Wi-Fi fails"}]}
+### Tip
+Keep enough free flash space for OTA: the device stores the new firmware before switching.
+> Flash once by cable, then update forever over Wi-Fi.
+
+# Native API
+ESPHome devices communicate with Home Assistant through a fast native API, with optional encryption.
+@viz {"k": "cmp", "l": {"t": "Native API", "items": ["fast", "automatic discovery", "encrypted", "no broker"]}, "r": {"t": "MQTT", "items": ["universal", "needs broker", "more setup"]}}
+### Automatic entities
+When a device is adopted, its sensors and switches appear in Home Assistant automatically, with names and units.
+### Local automations
+ESPHome devices can run automations on the device itself, so a thermostat or light switch keeps working even if Home Assistant is offline.
+@viz {"k": "flow", "steps": ["Button pressed", "Device turns on relay itself", "Reports to Home Assistant when available"]}
+> The API ties devices to Home Assistant; on-device automations keep them independent.
+
+# UART devices: the AC example
+ESPHome can talk to appliances over UART. Community projects let an ESP32 control air conditioners, heat pumps and more without cloud services.
+@viz {"k": "flow", "steps": ["ESP32", "UART on CN105 port", "Mitsubishi indoor unit", "Control and read status locally"]}
+### The MitsubishiCN105ESPHome project
+This open-source project connects to the CN105 service port on many Mitsubishi indoor units, giving local control of mode, temperature and fan from Home Assistant.
+### Other examples
+@viz {"k": "list", "items": ["Daikin and other AC adapters", "Heat pump Modbus interfaces", "Energy meters", "Solar inverters", "Pellet stoves"]}
+### Caution
+@viz {"k": "pairs", "items": [{"a": "Warranty", "b": "may be affected"}, {"a": "Voltage", "b": "some ports carry 12 V or 5 V"}, {"a": "Documentation", "b": "community-researched, check carefully"}]}
+> Many appliances already have a serial port waiting for an ESP32.
+
+# Choosing pins carefully
+Not all ESP32 pins are equal. Some have restrictions that cause boot failures or broken features.
+@viz {"k": "fix", "items": [{"w": "Button on GPIO12 stops the board booting", "r": "Avoid strapping pins for inputs held at boot"}]}
+### Pins to watch (original ESP32)
+@viz {"k": "pairs", "items": [{"a": "GPIO 34–39", "b": "input only, no pull-ups"}, {"a": "GPIO 0, 2, 5, 12, 15", "b": "strapping pins affect boot"}, {"a": "GPIO 6–11", "b": "used by flash memory, don't use"}, {"a": "ADC2 pins", "b": "unavailable for analogue while Wi-Fi is on"}]}
+### Safe defaults
+@viz {"k": "list", "items": ["GPIO 4, 13, 14", "GPIO 16–19", "GPIO 21–23", "GPIO 25–27", "GPIO 32–33"]}
+### Variants differ
+Each ESP32 variant (S3, C3, C6) has its own pin restrictions. Always check the specific board's pinout.
+> Check the pinout before soldering.
+
+# Deep sleep in ESPHome
+Deep sleep turns off most of the ESP32, leaving only a tiny timer running. Battery devices wake, measure, send and sleep again.
+@viz {"k": "cycle", "steps": ["Wake", "Connect Wi-Fi", "Read sensor", "Send", "Deep sleep"]}
+### Power comparison
+@viz {"k": "bars", "unit": "current, mA (approx.)", "items": [{"l": "Wi-Fi active", "v": 150.0}, {"l": "Idle", "v": 40.0}, {"l": "Deep sleep chip", "v": 0.01}]}
+### Dev boards
+Many development boards draw milliamps even in deep sleep because of their USB chips and regulators. For long battery life, use boards designed for low power.
+### Battery estimate
+ex: Wake every 10 min, 5 s at 150 mA | Average ≈ 1.3 mA plus sleep | 2,000 mAh lasts about 2 months
+> Deep sleep turns months of battery life into a design choice.
+
+# ESP32 variants
+The ESP32 family has grown into many variants, each optimised for different needs.
+@viz {"k": "pairs", "items": [{"a": "ESP32-S3", "b": "AI acceleration, native USB, cameras"}, {"a": "ESP32-C3", "b": "low-cost RISC-V, Wi-Fi and BLE"}, {"a": "ESP32-C6", "b": "Wi-Fi 6, BLE, Thread and Zigbee radio"}, {"a": "ESP32-H2", "b": "Thread and Zigbee without Wi-Fi"}]}
+### Choosing
+@viz {"k": "list", "items": ["Cameras and voice: S3", "Cheap sensors: C3", "Matter and Thread: C6 or H2", "Classic projects: original ESP32"]}
+### RISC-V
+Espressif's newer chips increasingly use the open RISC-V instruction set instead of the older Xtensa cores.
+### Support
+ESPHome supports most variants, though newer chips may have fewer community examples at first.
+> There's an ESP32 for almost every connected project.
+
+# Local and private
+ESPHome devices work entirely on your local network, with no cloud accounts. Your data stays at home and devices keep working without internet.
+@viz {"k": "list", "items": ["No cloud account", "Works without internet", "Data stays local", "No subscriptions", "Open source"]}
+### Cloud vs local
+@viz {"k": "cmp", "l": {"t": "Cloud devices", "items": ["depend on company servers", "may stop if company exits"]}, "r": {"t": "Local devices", "items": ["keep working", "under your control"]}}
+### Real risk
+Several smart-home companies have shut down cloud services over the years, leaving devices useless. Local control avoids this.
+### Security
+• Use API encryption keys
+• Keep firmware updated
+• Put IoT devices on a separate network or VLAN
+> If it runs locally, it keeps running.
+
+== tr-proto
+
+# Breadboards
+A solderless breadboard lets you build and change circuits quickly. Spring clips under the holes connect components in groups.
+@viz {"k": "pairs", "items": [{"a": "Short rows", "b": "5 holes connected, either side of the centre gap"}, {"a": "Long rails", "b": "power and ground along the sides"}, {"a": "Centre gap", "b": "for chips to straddle"}, {"a": "Sizes", "b": "400 and 830 tie points common"}]}
+### How chips sit
+DIP chips straddle the centre gap so each pin gets its own row of four free holes for connections.
+### Rail gotcha
+@viz {"k": "fix", "items": [{"w": "Assuming the whole rail is connected end to end", "r": "Check: some long boards split the rails in the middle"}]}
+### Good habits
+@viz {"k": "list", "items": ["Red for power, blue or black for ground", "Short wires", "Colour-code signals", "Keep layout tidy"]}
+> Breadboards are for experimenting, not for permanent projects.
+
+# Jumper wires and loose contacts
+Breadboard contacts loosen with use, and long jumper wires add resistance, noise and confusion.
+@viz {"k": "list", "items": ["Push wires fully in", "Replace worn boards", "Use short wires", "Check with multimeter"]}
+### Symptoms
+@viz {"k": "pairs", "items": [{"a": "Works when you touch it", "b": "loose contact"}, {"a": "Random resets", "b": "poor power connection"}, {"a": "Sensor reads garbage", "b": "bad ground or long wires"}, {"a": "Works on the bench, fails later", "b": "vibration"}]}
+### High-frequency limits
+Breadboards add capacitance between rows. Fast signals (tens of MHz) and radio circuits behave poorly on them.
+### Debug order
+@viz {"k": "flow", "steps": ["Check power and ground", "Re-seat wires", "Measure voltages", "Then suspect the code"]}
+> Before blaming your code, wiggle the wires.
+
+# Soldering basics
+Soldering joins metal parts with a molten alloy that wets both surfaces and forms an electrical and mechanical connection.
+@viz {"k": "flow", "steps": ["Clean tip", "Heat pad and lead together", "Feed solder to the joint", "Remove solder", "Remove iron", "Let cool undisturbed"]}
+### The golden rule
+@viz {"k": "fix", "items": [{"w": "Melting solder on the iron and dabbing it on", "r": "Heat the joint, feed solder into the joint"}]}
+Solder flows towards heat. If the pad and lead are hot, solder wets them properly.
+### Flux
+Flux cleans oxide from the metals so solder can flow. Most electronics solder has a flux core; extra flux helps with tricky joints and SMD work.
+### Tools
+@viz {"k": "list", "items": ["Temperature-controlled iron", "Fine solder (0.5–0.8 mm)", "Brass tip cleaner", "Flux pen", "Helping hands"]}
+> A good joint is shiny, smooth and concave, like a small volcano.
+
+# Iron temperature
+The right iron temperature depends on the solder, the joint size and the tip.
+@viz {"k": "scale", "lo": 250.0, "hi": 450.0, "unit": "°C", "items": [{"l": "Leaded melts", "v": 183.0}, {"l": "Lead-free melts", "v": 217.0}, {"l": "Leaded iron", "v": 320.0}, {"l": "Lead-free iron*", "v": 350.0}, {"l": "Too hot", "v": 420.0}]}
+### Leaded vs lead-free
+@viz {"k": "cmp", "l": {"t": "Leaded (Sn63/Pb37)", "items": ["melts at 183 °C", "easy", "restricted in products"]}, "r": {"t": "Lead-free (SAC305)", "items": ["melts about 217 °C", "needs more heat", "RoHS-compliant"]}}
+### Too cold vs too hot
+@viz {"k": "pairs", "items": [{"a": "Too cold", "b": "dull, grainy joints, poor wetting"}, {"a": "Too hot", "b": "burnt flux, lifted pads, oxidised tip"}]}
+### Big joints
+Large pads and ground planes soak up heat. Use a bigger tip rather than turning the temperature up a lot.
+!? The EU's RoHS directive has restricted lead in most electronic products since 2006.
+
+# Bad joints
+Most soldering problems come in a few recognisable forms, and most can be fixed.
+@viz {"k": "pairs", "items": [{"a": "Cold joint", "b": "dull, lumpy, may crack"}, {"a": "Bridge", "b": "solder joins two pads"}, {"a": "Insufficient", "b": "weak, pad not covered"}, {"a": "Too much", "b": "blob hides the joint"}]}
+### Fixing
+@viz {"k": "list", "items": ["Reheat with flux", "Desoldering braid", "Solder pump", "Hot air for SMD"]}
+### Inspection
+@viz {"k": "flow", "steps": ["Look under good light", "Use a magnifier", "Check shape", "Test continuity", "Check for bridges"]}
+### Prevention
+Clean pads, fresh flux and the right tip size prevent most problems.
+> Reheat, add flux, try again: most joints can be saved.
+
+# Perfboard
+Perfboard and stripboard make a circuit permanent without designing a printed circuit board.
+@viz {"k": "cmp", "l": {"t": "Perfboard", "items": ["isolated pads", "connect with wire", "flexible layout"]}, "r": {"t": "Stripboard", "items": ["copper strips", "cut where needed", "faster for some circuits"]}}
+### Planning
+@viz {"k": "flow", "steps": ["Draw layout on paper or software", "Place parts", "Solder", "Add wires", "Cut strips if needed", "Test"]}
+### Tips
+@viz {"k": "list", "items": ["Use sockets for chips", "Plan ground and power rails", "Label connections", "Leave space for fixes"]}
+### When to move to PCB
+If you need several copies, compact size or reliability in vibration, design a PCB instead.
+> Perfboard turns a breadboard prototype into something that lasts.
+
+# Designing a PCB
+Designing your own printed circuit board has become accessible: free software, cheap manufacturing and fast shipping.
+@viz {"k": "flow", "steps": ["Draw schematic", "Assign footprints", "Lay out board", "Route traces", "Design rule check", "Export Gerbers", "Order"]}
+### Tools
+@viz {"k": "pairs", "items": [{"a": "KiCad", "b": "free, open source, professional-grade"}, {"a": "EasyEDA", "b": "browser-based, linked to a manufacturer"}, {"a": "Fusion Electronics", "b": "commercial"}]}
+### Costs
+Small two-layer boards from online manufacturers can cost a few euros for five copies, with delivery in about a week. Assembly services can even solder the SMD parts.
+### Design basics
+@viz {"k": "list", "items": ["Short power traces", "Ground plane", "Decoupling capacitors near chips", "Keep antennas clear of copper", "Mounting holes"]}
+> A PCB turns a tangle of wires into a reliable product.
+
+# Surface-mount parts
+Most modern components are surface-mount devices (SMD), soldered onto pads on the board's surface rather than through holes.
+@viz {"k": "bars", "unit": "size, mm (length)", "items": [{"l": "1206", "v": 3.2}, {"l": "0805", "v": 2.0, "hi": true}, {"l": "0603", "v": 1.6}, {"l": "0402", "v": 1.0}, {"l": "0201", "v": 0.6}]}
+### Hand soldering
+@viz {"k": "pairs", "items": [{"a": "1206 and 0805", "b": "comfortable by hand"}, {"a": "0603", "b": "possible with practice"}, {"a": "0402 and smaller", "b": "hot air or reflow"}]}
+### Techniques
+@viz {"k": "list", "items": ["Tack one side first", "Drag soldering for ICs", "Solder paste and hot air", "Hotplate or reflow oven"]}
+### Why SMD
+@viz {"k": "cmp", "l": {"t": "Through-hole", "items": ["easy to handle", "larger", "slower to assemble"]}, "r": {"t": "SMD", "items": ["small", "cheap", "machine assembled", "better high-frequency behaviour"]}}
+> 0805 is the sweet spot for hand-soldered SMD.
+
+# Enclosures
+A good enclosure protects the circuit, the user and the environment, and affects how well the project works.
+@viz {"k": "list", "items": ["IP-rated boxes", "3D-printed cases", "Cable glands", "Ventilation", "Antenna placement"]}
+### IP ratings
+@viz {"k": "pairs", "items": [{"a": "IP54", "b": "dust protected, splashes"}, {"a": "IP65", "b": "dust tight, water jets"}, {"a": "IP67", "b": "temporary immersion"}, {"a": "IP68", "b": "continuous immersion"}]}
+### Practical issues
+• Heat from regulators builds up in sealed boxes
+• Metal boxes block Wi-Fi and LoRa: put antennas outside
+• Condensation forms inside sealed outdoor boxes; vents with membranes help
+• Sensors need contact with the air they measure
+> Plan the box before you finish the circuit.
+
+# Safety while soldering
+Soldering is safe with simple precautions.
+@viz {"k": "list", "items": ["Iron in its stand", "Ventilation or fume extraction", "Wash hands after", "Eye protection when clipping", "Fire-safe surface"]}
+### Fumes
+The visible smoke is mostly vaporised flux, which can irritate the lungs and cause occupational asthma with long exposure. Use a fan or fume extractor.
+### Lead
+Lead isn't vaporised at soldering temperatures, but it can be ingested from hands. Don't eat at the bench, and wash hands.
+### Burns
+@viz {"k": "pairs", "items": [{"a": "Iron tip", "b": "300–400 °C"}, {"a": "Fresh joint", "b": "stays hot for seconds"}, {"a": "Burn", "b": "cool under running water for 20 minutes"}]}
+> Respect the iron, ventilate the fumes, wash your hands.
+
+== tr-logic
+
+# Bits
+Digital electronics represents all information with bits: binary digits that are either 0 or 1, usually low or high voltage.
+@viz {"k": "nums", "items": [{"v": "8", "l": "bits in a byte"}, {"v": "256", "l": "values in a byte"}, {"v": "2ⁿ", "l": "values with n bits"}]}
+### Powers of two
+@viz {"k": "bars", "unit": "values representable", "items": [{"l": "1 bit", "v": 2.0}, {"l": "4 bits", "v": 16.0}, {"l": "8 bits", "v": 256.0}, {"l": "10 bits", "v": 1024.0, "hi": true}]}
+### What bits encode
+@viz {"k": "list", "items": ["Numbers", "Text (UTF-8)", "Colours", "Sound samples", "Instructions"]}
+### Why binary
+Two states are easy to distinguish reliably even with noise and imperfect components. Claude Shannon showed in 1937 that Boolean logic could be built with switches, founding digital circuit design.
+> Everything digital is ultimately ones and zeros.
+
+# Binary numbers
+In binary, each place is worth twice the place to its right, just as in decimal each place is worth ten times more.
+@viz {"k": "terms", "f": "Value = Σ bit × 2^position", "items": [{"s": "Position", "m": "0 at the right"}]}
+### Example
+ex: 1011 | = 1×8 + 0×4 + 1×2 + 1×1 | = 11
+ex: 11111111 | = 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 | = 255
+### Converting decimal to binary
+@viz {"k": "flow", "steps": ["Divide by 2", "Note remainder", "Repeat with quotient", "Read remainders bottom to top"]}
+### Counting
+@viz {"k": "pairs", "items": [{"a": "0", "b": "0000"}, {"a": "1", "b": "0001"}, {"a": "2", "b": "0010"}, {"a": "3", "b": "0011"}, {"a": "4", "b": "0100"}, {"a": "8", "b": "1000"}]}
+> Each extra bit doubles the range.
+
+# Hexadecimal
+Hexadecimal (base 16) groups four bits into one digit, making binary compact and readable.
+@viz {"k": "pairs", "items": [{"a": "0–9", "b": "same as decimal"}, {"a": "A", "b": "10"}, {"a": "B", "b": "11"}, {"a": "C", "b": "12"}, {"a": "D", "b": "13"}, {"a": "E", "b": "14"}, {"a": "F", "b": "15"}]}
+### Bytes in hex
+@viz {"k": "pairs", "items": [{"a": "0x00", "b": "0"}, {"a": "0x0F", "b": "15"}, {"a": "0x10", "b": "16"}, {"a": "0x7F", "b": "127"}, {"a": "0xFF", "b": "255"}]}
+### Where you see hex
+@viz {"k": "list", "items": ["Memory addresses", "I²C addresses (0x76)", "Web colours (#FF8800)", "MAC addresses", "Error codes"]}
+### Colours
+ex: #FF8800 | Red FF = 255, Green 88 = 136, Blue 00 = 0 | = orange
+> Two hex digits = one byte.
+
+# AND, OR, NOT
+Logic gates are the building blocks of digital circuits. Three basic gates can build any logic.
+@viz {"k": "cmp", "l": {"t": "AND", "items": ["1 only if all inputs are 1"]}, "r": {"t": "OR", "items": ["1 if any input is 1"]}}
+### Truth tables
+@viz {"k": "pairs", "items": [{"a": "0 AND 0", "b": "0"}, {"a": "1 AND 1", "b": "1"}, {"a": "0 OR 1", "b": "1"}, {"a": "NOT 1", "b": "0"}]}
+### Real-life logic
+• AND: the alarm sounds if the door opens AND the system is armed
+• OR: the light turns on if motion is detected OR the switch is pressed
+• NOT: the heater runs if the window is NOT open
+### In code
+@viz {"k": "pairs", "items": [{"a": "AND", "b": "&& (logic) or & (bitwise)"}, {"a": "OR", "b": "|| or |"}, {"a": "NOT", "b": "! or ~"}]}
+!? George Boole described this algebra of logic in 1854, almost a century before electronic computers.
+
+# NAND: the universal gate
+A NAND gate (NOT AND) outputs 0 only when all inputs are 1. Any logic function can be built from NAND gates alone.
+@viz {"k": "flow", "steps": ["NAND with inputs tied = NOT", "NAND + NOT = AND", "NOTs + NAND = OR", "Any circuit"]}
+### Why NAND is everywhere
+In CMOS technology, NAND gates are compact and fast, so they form the basis of much digital logic and of NAND flash memory.
+### NOR is universal too
+@viz {"k": "cmp", "l": {"t": "NAND", "items": ["universal", "basis of NAND flash"]}, "r": {"t": "NOR", "items": ["universal", "basis of NOR flash"]}}
+### Apollo
+The Apollo Guidance Computer, which helped land astronauts on the Moon, was built almost entirely from simple NOR-gate chips.
+> One gate type, enough to build a computer.
+
+# XOR
+Exclusive OR (XOR) outputs 1 when its inputs differ and 0 when they're the same.
+@viz {"k": "pairs", "items": [{"a": "0 XOR 0", "b": "0"}, {"a": "0 XOR 1", "b": "1"}, {"a": "1 XOR 0", "b": "1"}, {"a": "1 XOR 1", "b": "0"}]}
+### Uses
+@viz {"k": "list", "items": ["Binary addition", "Parity checks", "Error detection", "Simple encryption", "Toggling bits"]}
+### Encryption property
+ex: Data XOR key = scrambled | Scrambled XOR same key = data again | The one-time pad uses this
+### Toggling
+In code, value ^ mask flips exactly the bits set in the mask, a handy way to toggle an LED state.
+> XOR asks: are these different?
+
+# Adding with gates
+Binary addition can be built from logic gates. A half adder adds two bits; full adders chain together to add whole numbers.
+@viz {"k": "flow", "steps": ["A, B", "XOR gives sum", "AND gives carry", "Carry passes to next bit"]}
+### Half adder
+@viz {"k": "pairs", "items": [{"a": "0 + 0", "b": "sum 0, carry 0"}, {"a": "0 + 1", "b": "sum 1, carry 0"}, {"a": "1 + 1", "b": "sum 0, carry 1"}]}
+### Full adder
+A full adder also accepts a carry from the previous bit. Chaining 32 or 64 of them adds 32- or 64-bit numbers.
+### Speed tricks
+Simple ripple-carry adders wait for each carry in turn. Real processors use carry-lookahead and other tricks to add in a few gate delays.
+> Arithmetic is just logic gates arranged cleverly.
+
+# Flip-flops: memory from gates
+Connecting gates in a loop creates a circuit that remembers its state. This is the basis of registers and static memory.
+@viz {"k": "flow", "steps": ["Set input", "Output becomes 1", "Feedback holds it", "Remains 1 until reset"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "SR latch", "b": "set and reset inputs"}, {"a": "D flip-flop", "b": "captures data on a clock edge"}, {"a": "JK flip-flop", "b": "versatile"}, {"a": "T flip-flop", "b": "toggles, used in counters"}]}
+### Uses
+@viz {"k": "list", "items": ["Registers", "Counters", "Shift registers", "Static RAM", "State machines"]}
+### History
+The first flip-flop was built with vacuum tubes by William Eccles and Frank Jordan in 1918.
+> Feedback turns logic into memory.
+
+# Clocks
+Digital circuits march in step with a clock signal. On each tick, flip-flops capture new values and the system moves to its next state.
+@viz {"k": "nums", "items": [{"v": "16 MHz", "l": "Arduino Uno clock"}, {"v": "240 MHz", "l": "ESP32"}, {"v": "3–6 GHz", "l": "modern PC processors"}]}
+### Clock speed limits
+@viz {"k": "list", "items": ["Gate delays", "Wire lengths", "Heat", "Power consumption"]}
+### More isn't everything
+@viz {"k": "cmp", "l": {"t": "Clock speed", "items": ["ticks per second"]}, "r": {"t": "Performance", "items": ["work per tick × ticks", "parallelism"]}}
+A modern processor does far more per clock tick than older ones.
+### Power
+Dynamic power rises with clock frequency, so chips slow down when idle to save energy.
+> The clock keeps billions of switches in step.
+
+# Bitwise tricks in code
+Bitwise operations manipulate individual bits, essential for controlling hardware registers and packing data efficiently.
+@viz {"k": "pairs", "items": [{"a": "Set bit 5", "b": "value | (1 << 5)"}, {"a": "Clear bit 5", "b": "value & ~(1 << 5)"}, {"a": "Toggle bit 5", "b": "value ^ (1 << 5)"}, {"a": "Test bit 5", "b": "value & (1 << 5)"}]}
+### Shifts
+@viz {"k": "pairs", "items": [{"a": "x << 1", "b": "multiply by 2"}, {"a": "x >> 1", "b": "divide by 2 (integers)"}, {"a": "1 << n", "b": "2ⁿ"}]}
+### Masks
+ex: Read low 4 bits of a byte | value & 0x0F | keeps bits 0–3
+### Uses
+@viz {"k": "list", "items": ["Hardware registers", "Flags in one byte", "Network protocols", "Graphics", "Compression"]}
+> Bitwise operators speak the hardware's language.
+
+== tr-memory
+
+# RAM: fast and forgetful
+RAM (random-access memory) holds the data and instructions a processor is actively using. It's fast but volatile: power off and it's gone.
+@viz {"k": "cmp", "l": {"t": "RAM", "items": ["fast", "volatile", "working memory"]}, "r": {"t": "Storage", "items": ["slower", "keeps data without power"]}}
+### Random access
+"Random access" means any location can be read in the same time, unlike tape, which must be wound to the right place.
+### Sizes
+@viz {"k": "pairs", "items": [{"a": "ESP32", "b": "about 520 KB"}, {"a": "Raspberry Pi 5", "b": "up to 16 GB"}, {"a": "Laptop", "b": "8–64 GB"}, {"a": "Server", "b": "hundreds of GB to terabytes"}]}
+### Running out
+When RAM is full, computers swap to disk (slow) and microcontrollers crash.
+> RAM is the desk you work on; storage is the filing cabinet.
+
+# SRAM and DRAM
+Two main kinds of RAM trade speed for density.
+@viz {"k": "pairs", "items": [{"a": "SRAM", "b": "flip-flop per bit, fast, caches and microcontrollers"}, {"a": "DRAM", "b": "capacitor per bit, dense, cheap, computer main memory"}]}
+### Transistors per bit
+@viz {"k": "bars", "unit": "transistors per bit", "items": [{"l": "DRAM", "v": 1.0}, {"l": "SRAM", "v": 6.0, "hi": true}]}
+### Refresh
+DRAM capacitors leak, so each row must be refreshed many times a second (typically every 64 ms or less). SRAM holds data as long as power is on.
+### Why both
+@viz {"k": "cmp", "l": {"t": "SRAM", "items": ["speed", "small amounts near CPU"]}, "r": {"t": "DRAM", "items": ["capacity", "gigabytes affordably"]}}
+> SRAM is fast and costly; DRAM is dense and cheap.
+
+# Flash memory
+Flash memory keeps data without power by trapping electrons in insulated cells. It stores programs, photos and files in almost every device.
+@viz {"k": "tree", "root": "Flash", "items": ["NOR: run code directly", "microcontroller program memory", "NAND: dense storage", "SSDs, SD cards, USB sticks"]}
+### Invention
+Flash memory was invented by Fujio Masuoka at Toshiba in the early 1980s. The name reportedly comes from how a whole block is erased "in a flash".
+### How it works
+@viz {"k": "flow", "steps": ["Program: push electrons onto floating gate", "Electrons trapped for years", "Read: trapped charge changes threshold", "Erase: remove charge"]}
+### Bits per cell
+@viz {"k": "pairs", "items": [{"a": "SLC", "b": "1 bit per cell, fastest, longest life"}, {"a": "MLC", "b": "2 bits"}, {"a": "TLC", "b": "3 bits, most consumer SSDs"}, {"a": "QLC", "b": "4 bits, cheapest, shortest life"}]}
+> Flash remembers by trapping electrons.
+
+# Flash wears out
+Each flash cell survives only a limited number of erase cycles before it becomes unreliable.
+@viz {"k": "fix", "items": [{"w": "Writing a log line every second to the same flash location", "r": "Buffer writes, log less often, or use wear levelling"}]}
+### Endurance
+@viz {"k": "bars", "unit": "approx. erase cycles per cell", "items": [{"l": "QLC", "v": 1000.0}, {"l": "TLC", "v": 3000.0}, {"l": "MLC", "v": 10000.0}, {"l": "SLC / NOR", "v": 100000.0, "hi": true}]}
+### Wear levelling
+@viz {"k": "flow", "steps": ["Writes requested", "Controller spreads them across blocks", "No block wears out early", "Longer life"]}
+SSDs and SD cards do this internally; small microcontroller flash may rely on the file system or library.
+### On ESP32
+ESPHome and Home Assistant setups avoid writing state to flash too often, for example by limiting how often a restored state is saved.
+> Flash is for storing, not for scribbling constantly.
+
+# EEPROM
+EEPROM (electrically erasable programmable read-only memory) can rewrite individual bytes, ideal for small settings that change occasionally.
+@viz {"k": "list", "items": ["Calibration values", "Wi-Fi settings", "Counters", "Last state", "Device IDs"]}
+### Endurance
+Dedicated EEPROM chips typically allow hundreds of thousands to a million write cycles per byte, more than flash.
+### On the ESP32
+The ESP32 has no true EEPROM. Libraries emulate it in flash, and the recommended approach is the NVS (non-volatile storage) system, used by the Preferences library.
+### External chips
+@viz {"k": "pairs", "items": [{"a": "AT24C32", "b": "32 Kbit I²C EEPROM"}, {"a": "FRAM", "b": "nearly unlimited writes, fast"}]}
+> Use EEPROM or NVS for settings, not for logs.
+
+# Memory on the ESP32
+The ESP32's memory is limited compared with a computer, so efficient use matters.
+@viz {"k": "bars", "unit": "memory, KB", "items": [{"l": "SRAM", "v": 520.0}, {"l": "Flash (typical)", "v": 4096.0, "hi": true}, {"l": "PSRAM (WROVER)", "v": 8192.0}]}
+### PSRAM
+Modules with PSRAM (such as ESP32-WROVER or many ESP32-S3 boards) add several megabytes of external RAM, useful for cameras, displays and voice.
+### Flash partitions
+@viz {"k": "pairs", "items": [{"a": "App", "b": "firmware"}, {"a": "OTA", "b": "space for updates"}, {"a": "NVS", "b": "settings"}, {"a": "SPIFFS or LittleFS", "b": "files"}]}
+### Tips
+@viz {"k": "list", "items": ["Avoid large String concatenations", "Use PROGMEM for constants", "Monitor free heap", "Choose boards with PSRAM for heavy tasks"]}
+> 520 KB is plenty for sensors, tight for images.
+
+# Stack and heap
+Programs divide RAM into areas. The stack and heap behave very differently.
+@viz {"k": "cmp", "l": {"t": "Stack", "items": ["function calls", "local variables", "automatic", "fast"]}, "r": {"t": "Heap", "items": ["memory allocated at runtime", "flexible", "can fragment"]}}
+### Fragmentation
+@viz {"k": "flow", "steps": ["Many allocations and frees", "Free memory scattered in small pieces", "Large request fails", "Crash after hours"]}
+### On small devices
+• Avoid creating many temporary strings in loops
+• Allocate buffers once and reuse them
+• Watch free heap over time in logs
+### Stack overflow
+Deep recursion or large local arrays can overflow the stack, causing crashes. The ESP32 reports a "stack canary" error when this happens.
+> Long-running microcontroller code should avoid fragmenting the heap.
+
+# Storage hierarchy
+Computers combine memory types in a hierarchy, balancing speed, size and cost.
+@viz {"k": "stack", "items": ["Registers: fastest, tiny", "Cache: nanoseconds", "RAM: tens of nanoseconds", "SSD: tens of microseconds", "Hard disk: milliseconds", "Cloud: network delays"]}
+### Latency in human terms
+@viz {"k": "pairs", "items": [{"a": "If an L1 cache read took 1 second", "b": "RAM read about 2 minutes"}, {"a": "SSD read", "b": "about 1 day"}, {"a": "Hard disk seek", "b": "about 4 months"}]}
+### Why it works
+Programs tend to reuse recent data and nearby data (locality), so small fast caches catch most requests.
+### Cost per GB
+@viz {"k": "cmp", "l": {"t": "Fast memory", "items": ["expensive", "small"]}, "r": {"t": "Slow storage", "items": ["cheap", "huge"]}}
+> Fast and small near the processor; big and slow further away.
+
+# SD cards for logging
+SD cards give microcontrollers gigabytes of storage over SPI, ideal for logging data where there's no network.
+@viz {"k": "list", "items": ["Write in blocks", "Close files properly", "Use FAT32", "Expect failures", "Back up data"]}
+### Reliability
+@viz {"k": "pairs", "items": [{"a": "Consumer cards", "b": "can fail with frequent small writes"}, {"a": "Industrial cards", "b": "more endurance, wider temperatures"}, {"a": "Power loss", "b": "can corrupt files if writing"}]}
+### Buffering
+@viz {"k": "flow", "steps": ["Collect readings in RAM", "Write a block every few minutes", "Flush and close", "Fewer writes, less wear"]}
+### File limits
+FAT32 limits single files to 4 GB, so rotate log files by day or week.
+> Buffer writes and close files: SD cards reward care.
+
+# Units of storage
+Storage units mix decimal (SI) and binary meanings, which explains why drives seem "smaller" than advertised.
+@viz {"k": "pairs", "items": [{"a": "kilobyte (kB)", "b": "1,000 bytes"}, {"a": "kibibyte (KiB)", "b": "1,024 bytes"}, {"a": "megabyte (MB)", "b": "1,000,000 bytes"}, {"a": "mebibyte (MiB)", "b": "1,048,576 bytes"}]}
+### The missing gigabytes
+ex: "1 TB" drive = 1,000,000,000,000 bytes | ÷ 1,073,741,824 bytes per GiB | ≈ 931 GiB shown by Windows
+### Who uses what
+@viz {"k": "cmp", "l": {"t": "Drive makers", "items": ["decimal units"]}, "r": {"t": "Some operating systems", "items": ["binary units, labelled GB"]}}
+### The IEC prefixes
+The IEC introduced kibi, mebi and gibi in 1998 to remove the ambiguity, though many people still say "GB" for both.
+> A "missing" 69 GB is just a difference in counting.
+
+== tr-motors
+
+# Never drive a motor from a pin
+Motors draw far more current than microcontroller pins can supply, and they generate electrical noise and voltage spikes.
+@viz {"k": "flow", "steps": ["Microcontroller pin", "Driver (MOSFET or motor driver chip)", "Motor with flyback protection", "Separate supply"]}
+### What a motor needs
+@viz {"k": "bars", "unit": "current, mA (approx.)", "items": [{"l": "GPIO pin limit", "v": 20.0}, {"l": "Small hobby motor running", "v": 200.0}, {"l": "Same motor starting", "v": 1500.0, "hi": true}]}
+### Driver options
+@viz {"k": "pairs", "items": [{"a": "MOSFET + diode", "b": "one direction, speed via PWM"}, {"a": "H-bridge chip", "b": "both directions"}, {"a": "ESC", "b": "brushless motors"}, {"a": "Stepper driver", "b": "stepper motors"}]}
+### Noise
+Brushed motors spark at their brushes, creating noise that can reset microcontrollers. Small ceramic capacitors across the motor terminals help.
+> Pins send signals; drivers deliver power.
+
+# H-bridge
+An H-bridge uses four switches arranged like the letter H to reverse current through a motor, letting it spin in both directions.
+@viz {"k": "cmp", "l": {"t": "Switches 1 and 4 on", "items": ["current one way", "forward"]}, "r": {"t": "Switches 2 and 3 on", "items": ["current reversed", "backward"]}}
+### Never both on one side
+Turning on both switches on the same side shorts the supply ("shoot-through"). Driver chips prevent this.
+### Common drivers
+@viz {"k": "pairs", "items": [{"a": "L298N", "b": "old bipolar design, drops about 2 V, gets hot"}, {"a": "DRV8833", "b": "efficient MOSFET, low voltage"}, {"a": "TB6612FNG", "b": "efficient, popular for robots"}, {"a": "BTS7960", "b": "high current"}]}
+### Braking
+Turning on both low-side switches shorts the motor terminals, braking it quickly using its own generated voltage.
+> Four switches let a motor go both ways.
+
+# Speed with PWM
+PWM controls motor speed efficiently by switching full voltage on and off rapidly. The motor responds to the average.
+@viz {"k": "bars", "unit": "approx. speed vs duty cycle, %", "items": [{"l": "25%", "v": 20.0}, {"l": "50%", "v": 48.0}, {"l": "75%", "v": 74.0}, {"l": "100%", "v": 100.0, "hi": true}]}
+### Frequency
+@viz {"k": "pairs", "items": [{"a": "Low (100s of Hz)", "b": "audible whine, more torque ripple"}, {"a": "20 kHz or more", "b": "silent, higher switching losses"}]}
+### Minimum duty
+Motors need some minimum duty cycle to overcome friction and start turning. Below it, they just buzz.
+### Soft start
+Ramping PWM up gradually reduces inrush current and mechanical stress.
+> PWM gives smooth speed control with little wasted energy.
+
+# Stall current
+When a motor is blocked or just starting, it isn't generating back-voltage, so current is limited only by winding resistance. This stall current can be many times the running current.
+@viz {"k": "bars", "unit": "current, A (example motor)", "items": [{"l": "Free running", "v": 0.2}, {"l": "Loaded", "v": 0.5}, {"l": "Stall", "v": 2.0, "hi": true}]}
+### Why it matters
+@viz {"k": "list", "items": ["Driver must handle it", "Supply must not sag", "Wires must carry it", "Motor heats quickly if stalled"]}
+### Back-EMF
+@viz {"k": "terms", "f": "I = (V supply − V back-EMF) ÷ R winding", "items": [{"s": "Spinning", "m": "high back-EMF, low current"}, {"s": "Stalled", "m": "zero back-EMF, high current"}]}
+### Protection
+Current-limiting drivers or fuses prevent damage when a motor jams.
+> Size for the stall, not the cruise.
+
+# Servos
+A hobby servo combines a motor, gearbox, position sensor and control circuit. You command an angle with a pulse.
+@viz {"k": "scale", "lo": 0.0, "hi": 180.0, "unit": "degrees", "items": [{"l": "1 ms", "v": 0.0}, {"l": "1.5 ms", "v": 90.0, "hi": true}, {"l": "2 ms", "v": 180.0}]}
+### The signal
+@viz {"k": "pairs", "items": [{"a": "Period", "b": "about 20 ms (50 Hz)"}, {"a": "Pulse width", "b": "1–2 ms (some servos 0.5–2.5 ms)"}, {"a": "Centre", "b": "1.5 ms"}]}
+### Types
+@viz {"k": "cmp", "l": {"t": "Positional servo", "items": ["holds angle", "0–180°"]}, "r": {"t": "Continuous rotation servo", "items": ["pulse sets speed and direction"]}}
+### Power
+Servos draw significant current when moving or holding against load. Power them from a separate 5–6 V supply, not the microcontroller.
+> Pulse width sets the angle.
+
+# Stepper motors
+Stepper motors move in precise fixed steps, making them ideal for positioning without feedback.
+@viz {"k": "terms", "f": "Degrees per step = 360 ÷ steps per revolution", "items": [{"s": "Typical", "m": "200 steps, 1.8° per step"}]}
+### Drivers
+@viz {"k": "pairs", "items": [{"a": "A4988", "b": "simple, up to 1/16 microstepping"}, {"a": "TMC2209", "b": "quiet, up to 1/256 microstepping"}, {"a": "DRV8825", "b": "up to 1/32"}]}
+### Microstepping
+ex: 200 steps × 16 microsteps | = 3,200 positions per revolution | smoother, quieter motion
+### NEMA sizes
+NEMA 17 (1.7-inch faceplate) is the common size in 3D printers and small CNC machines.
+### Losing steps
+If overloaded or accelerated too fast, steppers skip steps without knowing. Closed-loop steppers add encoders to detect this.
+> Steppers count steps; overload them and they lose count.
+
+# Brushless motors
+Brushless DC motors (BLDC) use electronic commutation instead of brushes, making them efficient, quiet and long-lasting.
+@viz {"k": "flow", "steps": ["ESC reads rotor position", "Energises three phases in sequence", "Magnetic field rotates", "Rotor follows"]}
+### Where they're used
+@viz {"k": "list", "items": ["Drones", "Computer fans", "E-bikes and scooters", "Cordless tools", "Hard drives"]}
+### Sensored vs sensorless
+@viz {"k": "cmp", "l": {"t": "Sensored", "items": ["Hall sensors", "smooth at low speed"]}, "r": {"t": "Sensorless", "items": ["uses back-EMF", "simpler", "struggles at very low speeds"]}}
+### KV rating
+@viz {"k": "pairs", "items": [{"a": "KV", "b": "rpm per volt with no load"}, {"a": "High KV", "b": "fast, less torque"}, {"a": "Low KV", "b": "slower, more torque"}]}
+> Electronics replaced brushes, and motors became lighter and longer-lived.
+
+# Separate supplies
+Motors cause current surges and voltage dips. Powering them from the same small regulator as the microcontroller causes resets and erratic behaviour.
+@viz {"k": "fix", "items": [{"w": "Motor powered from the ESP32's 3.3 V pin", "r": "Separate motor supply, common ground"}]}
+### Wiring layout
+@viz {"k": "flow", "steps": ["Battery or adapter", "Motor driver supply", "Separate regulator", "Microcontroller; Grounds joined at one point"]}
+### Capacitors
+@viz {"k": "list", "items": ["Bulk capacitor near driver (100–1,000 µF)", "Ceramic 100 nF near motor", "Ceramic near microcontroller"]}
+### Ground loops
+Join grounds at one point near the supply, so motor currents don't flow through the microcontroller's ground path.
+> Motors and microcontrollers should share ground, not power.
+
+# Encoders
+An encoder on a motor shaft measures position and speed, turning a simple motor into a precise actuator.
+@viz {"k": "cycle", "steps": ["Motor turns", "Encoder pulses", "Controller counts", "Compares with target", "Adjusts motor"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Incremental", "b": "pulses as it turns, counts relative movement"}, {"a": "Absolute", "b": "reports exact angle at any time"}, {"a": "Optical", "b": "slotted disc and light"}, {"a": "Magnetic", "b": "magnet and Hall sensor"}]}
+### Quadrature
+Two outputs offset by a quarter cycle reveal both speed and direction.
+ex: Encoder with 11 pulses per motor turn, 30:1 gearbox | × 4 edges | = 1,320 counts per output turn
+> Feedback turns a cheap motor into a precise one.
+
+# PID control
+A PID controller continuously adjusts an output to bring a measured value to a target, using three terms.
+@viz {"k": "pairs", "items": [{"a": "P (proportional)", "b": "reacts to current error"}, {"a": "I (integral)", "b": "corrects accumulated past error"}, {"a": "D (derivative)", "b": "damps by reacting to rate of change"}]}
+### Example: heater
+@viz {"k": "flow", "steps": ["Target 60 °C", "Measure 55 °C", "Error 5 °C", "PID computes power", "Heater adjusts", "Measure again"]}
+### Tuning
+@viz {"k": "list", "items": ["Start with P only", "Add I to remove offset", "Add D to reduce overshoot", "Adjust gradually"]}
+### Common problems
+@viz {"k": "pairs", "items": [{"a": "Too much P", "b": "oscillation"}, {"a": "Too much I", "b": "slow overshoot, windup"}, {"a": "Too much D", "b": "jitter from noise"}]}
+!? Engineer Nicolas Minorsky formalised PID control in 1922 while studying automatic ship steering.
+
+== tr-power
+
+# Average current is what counts
+Battery life depends on average current, not peak current. Devices that sleep most of the time can last for years.
+@viz {"k": "terms", "f": "Battery life (h) = capacity (mAh) ÷ average current (mA)", "items": [{"s": "Capacity", "m": "from datasheet"}, {"s": "Average", "m": "weighted by time"}]}
+### Example
+ex: 2,000 mAh battery, average 0.1 mA | 2,000 ÷ 0.1 | = 20,000 h ≈ 2.3 years
+### The duty cycle
+A device awake 1 second every 10 minutes sleeps 99.8% of the time. If it sleeps poorly, sleep current dominates the battery drain.
+### Real-world derating
+@viz {"k": "list", "items": ["Self-discharge", "Temperature", "Battery ageing", "Regulator efficiency"]}
+Plan for 70–80% of the theoretical life.
+> Sleep current usually decides battery life.
+
+# Average current
+The average current is each state's current weighted by the fraction of time spent in it.
+@viz {"k": "terms", "f": "I avg = Σ (I state × t state) ÷ t total", "items": [{"s": "I state", "m": "current in each mode"}, {"s": "t state", "m": "time in each mode"}]}
+### Worked example
+ex: Awake 2 s at 120 mA, asleep 598 s at 0.02 mA | (240 + 12) ÷ 600 | ≈ 0.42 mA average
+### Where energy goes
+@viz {"k": "bars", "unit": "charge per cycle, mA·s", "items": [{"l": "Awake", "v": 240.0}, {"l": "Asleep", "v": 12.0, "hi": true}]}
+### Improving it
+@viz {"k": "list", "items": ["Wake less often", "Shorten awake time", "Lower sleep current", "Lower active current"]}
+> Weight each state by how long it lasts.
+
+# Deep sleep
+Deep sleep turns off most of a microcontroller, leaving only a low-power timer and wake-up circuits running.
+@viz {"k": "pairs", "items": [{"a": "Wi-Fi transmitting", "b": "about 160 mA"}, {"a": "Active, no radio", "b": "about 30 mA"}, {"a": "Light sleep", "b": "under 1 mA"}, {"a": "Deep sleep", "b": "about 10 µA (0.01 mA)"}]}
+### Wake sources
+@viz {"k": "list", "items": ["Timer", "External pin", "Touch pad", "ULP coprocessor"]}
+### What's lost
+Deep sleep restarts the program from the beginning on waking. Data to keep must be stored in RTC memory or flash.
+### ULP coprocessor
+The ESP32's ultra-low-power coprocessor can read sensors while the main cores sleep, waking them only when needed.
+> Deep sleep is a reboot with a very long pause.
+
+# The board matters
+A low-power chip on a power-hungry board still drains batteries. Many development boards waste milliamps.
+@viz {"k": "list", "items": ["Power LED", "USB-to-serial chip", "Inefficient regulator", "Pull-up resistors", "Sensors left powered"]}
+### Typical sleep current
+@viz {"k": "pairs", "items": [{"a": "Generic dev board", "b": "often around 10 mA asleep"}, {"a": "Low-power board", "b": "tens of µA"}, {"a": "Bare module, good regulator", "b": "about 10 µA"}]}
+### Fixes
+• Remove or cut the power LED
+• Choose boards designed for battery use
+• Use regulators with microamp quiescent current
+• Power sensors through a switch
+> Measure the whole board, not just the chip's datasheet.
+
+# Switch off the sensors
+Sensors can draw more than the sleeping microcontroller. Powering them only when needed saves a lot.
+@viz {"k": "flow", "steps": ["Wake", "Turn sensor on via GPIO or MOSFET", "Wait to stabilise", "Read", "Turn off", "Sleep"]}
+### Typical sensor draws
+@viz {"k": "pairs", "items": [{"a": "BME280", "b": "µA when idle"}, {"a": "DS18B20", "b": "about 1 mA during conversion"}, {"a": "Ultrasonic sensor", "b": "several mA"}, {"a": "GPS module", "b": "20–50 mA"}]}
+### Stabilising time
+Some sensors need time after power-up: a few milliseconds for digital sensors, seconds for gas sensors.
+### Leakage paths
+Powered-off sensors can be back-powered through data lines. Set pins to inputs or use proper load switches.
+> Power sensors only for the moment you read them.
+
+# Fast Wi-Fi connection
+Connecting to Wi-Fi can take seconds, the most energy-hungry part of each wake-up. Optimising it extends battery life significantly.
+@viz {"k": "bars", "unit": "time to connect and send, s (approx.)", "items": [{"l": "DHCP, scan", "v": 3.0}, {"l": "Static IP", "v": 1.5}, {"l": "Static IP, fixed channel", "v": 0.5, "hi": true}]}
+### Techniques
+@viz {"k": "list", "items": ["Static IP", "Store channel and BSSID", "Fast connect options", "Avoid unnecessary scans"]}
+### Energy saved
+ex: 3 s at 150 mA vs 0.5 s | 450 vs 75 mA·s per wake | Six times less energy
+### Alternatives
+ESP-NOW lets ESP32 boards send short messages to each other without connecting to a Wi-Fi network, in milliseconds.
+> Every second on Wi-Fi costs battery.
+
+# Choose the radio
+Different radios use very different energy per message. For battery sensors, the radio choice often dominates.
+@viz {"k": "bars", "unit": "relative energy per message (illustrative)", "items": [{"l": "Wi-Fi with connect", "v": 100.0}, {"l": "BLE advertisement", "v": 1.0}, {"l": "LoRa (short)", "v": 5.0}, {"l": "Zigbee", "v": 2.0}]}
+### Trade-offs
+@viz {"k": "pairs", "items": [{"a": "Wi-Fi", "b": "no extra hub, high energy"}, {"a": "BLE", "b": "very low energy, short range"}, {"a": "LoRa", "b": "long range, low data"}, {"a": "Zigbee/Thread", "b": "low energy, mesh, needs coordinator"}]}
+### Decision
+@viz {"k": "flow", "steps": ["How far?", "How often?", "How much data?", "Hub available?", "Choose radio"]}
+> For battery sensors, choose the radio first.
+
+# Battery chemistry choice
+Different battery types suit different projects, depending on voltage, recharging, temperature and life.
+@viz {"k": "pairs", "items": [{"a": "Li-ion", "b": "3.0–4.2 V, rechargeable, common"}, {"a": "LiFePO4", "b": "3.2 V nominal, safer, long life"}, {"a": "Alkaline AA", "b": "1.5 V, cheap, poor in cold"}, {"a": "Li-SOCl₂", "b": "3.6 V, years of life, works in extreme cold"}]}
+### Temperature
+@viz {"k": "pairs", "items": [{"a": "Alkaline", "b": "struggles below about −10 °C"}, {"a": "Li-ion", "b": "discharges down to about −20 °C"}, {"a": "Lithium AA", "b": "works to about −40 °C"}, {"a": "Li-SOCl₂", "b": "works to about −55 °C"}]}
+### Self-discharge
+@viz {"k": "pairs", "items": [{"a": "Li-ion", "b": "a few percent per month"}, {"a": "Alkaline", "b": "about 2–3% per year"}, {"a": "Li-SOCl₂", "b": "under 1% per year"}]}
+### Charging safety
+Li-ion and LiFePO4 need proper charge controllers with protection. Never charge damaged cells.
+> Match the chemistry to the climate and the lifespan you need.
+
+# Solar topping up
+A small solar panel can keep a remote sensor running indefinitely, if it's sized for the worst months.
+@viz {"k": "flow", "steps": ["Solar panel", "Charge controller", "Battery", "Regulator", "Device"]}
+### Sizing for winter
+ex: Device uses 20 mAh per day | Winter: about 2 peak sun hours in Portugal | Panel delivering 20 mA in good sun, plus margin
+### Margins
+@viz {"k": "list", "items": ["Cloudy weeks", "Dirty panel", "Battery ageing", "Cold temperatures", "Shading"]}
+### Charge controllers
+@viz {"k": "pairs", "items": [{"a": "TP4056", "b": "simple Li-ion charger"}, {"a": "Solar-specific chargers", "b": "handle weak panels better"}, {"a": "MPPT chargers", "b": "more efficient for larger panels"}]}
+### Lithium charging limits
+Li-ion cells shouldn't be charged below 0 °C. Some chargers include temperature sensing to prevent it.
+> Design solar for December, not June.
+
+# Measure, don't guess
+Datasheet values are best-case. Real circuits have surprises: leaks, floating pins and forgotten LEDs.
+@viz {"k": "list", "items": ["Multimeter in series", "Power profiler", "Long-term logging", "Check each state"]}
+### Tools
+@viz {"k": "pairs", "items": [{"a": "Multimeter", "b": "good for steady currents"}, {"a": "µCurrent adapters", "b": "microamp accuracy"}, {"a": "Power profilers", "b": "see spikes and averages"}, {"a": "Battery logging", "b": "real-world check"}]}
+### Common surprises
+@viz {"k": "list", "items": ["Floating inputs", "Pull-ups to powered-off sensors", "LEDs", "Regulator quiescent current", "Back-powering"]}
+### Burden voltage
+A multimeter in series drops some voltage, which can cause brownouts during wake-ups. Power profilers avoid this.
+> If you haven't measured it, you don't know your battery life.
+
+== tr-datasheets
+
+# Start with the summary
+A datasheet's first page summarises the key features. In a minute you can usually tell whether the part suits your project.
+@viz {"k": "list", "items": ["Supply voltage range", "Interface", "Accuracy", "Current consumption", "Package", "Temperature range"]}
+### Quick filter
+@viz {"k": "flow", "steps": ["Read title and features", "Check supply voltage", "Check interface", "Check package", "Decide: read on or move on"]}
+### Example: BME280
+@viz {"k": "pairs", "items": [{"a": "Supply", "b": "1.71–3.6 V"}, {"a": "Interface", "b": "I²C and SPI"}, {"a": "Humidity accuracy", "b": "±3% RH"}, {"a": "Sleep current", "b": "about 0.1 µA"}]}
+### Don't skip
+Even if the summary looks perfect, check the package: a great sensor in a tiny leadless package may be impossible to hand-solder.
+> The first page tells you if the next fifty are worth reading.
+
+# Absolute maximum ratings
+Absolute maximum ratings are limits that must never be exceeded, even briefly. Beyond them, the manufacturer doesn't guarantee the part survives.
+@viz {"k": "cmp", "l": {"t": "Absolute maximum", "items": ["never exceed", "damage possible"]}, "r": {"t": "Recommended operating", "items": ["normal use", "specs guaranteed"]}}
+### Example
+@viz {"k": "pairs", "items": [{"a": "ESP32 supply", "b": "recommended 3.0–3.6 V"}, {"a": "Absolute maximum", "b": "3.6 V: no headroom above"}, {"a": "GPIO input", "b": "must not exceed supply"}, {"a": "5 V on a pin", "b": "can damage it"}]}
+### Margins
+Designing right at the absolute maximum leaves no margin for spikes, tolerances or temperature. Stay well within recommended conditions.
+### Common violations
+@viz {"k": "list", "items": ["5 V signals into 3.3 V pins", "Reversed supply", "Static discharge", "Excess current from pins", "Overheating"]}
+> Absolute maximum is a cliff edge, not a target.
+
+# Typical vs min and max
+Datasheets give typical values (what most parts do) and minimum or maximum values (what's guaranteed). Robust designs use the guaranteed limits.
+@viz {"k": "bars", "unit": "LED forward voltage spec, V (example)", "items": [{"l": "Min", "v": 2.8}, {"l": "Typical", "v": 3.1}, {"l": "Max", "v": 3.4, "hi": true}]}
+### Why it matters
+ex: Design for typical 3.1 V on a 3.3 V supply | A part at max 3.4 V | May not light at all
+### Temperature
+Many specs are given at 25 °C. At higher or lower temperatures, values can shift significantly.
+### Production variation
+@viz {"k": "cmp", "l": {"t": "Your one prototype", "items": ["may work by luck"]}, "r": {"t": "Hundreds of units", "items": ["will include worst-case parts"]}}
+> Design for the worst case; enjoy the typical.
+
+# Pinouts
+The pinout shows which pin does what. Most dead boards in hobby projects come from wiring mistakes, especially swapped pins.
+@viz {"k": "list", "items": ["Pin 1 marked by dot or notch", "Top view usually", "Count anticlockwise on DIP", "Check the exact package", "Compare with breakout labels"]}
+### Package variants
+@viz {"k": "pairs", "items": [{"a": "Same chip", "b": "different pinouts in different packages"}, {"a": "Breakout boards", "b": "labels may differ from chip names"}, {"a": "Clones", "b": "sometimes swap pin order"}]}
+### Common traps
+@viz {"k": "list", "items": ["VCC and GND swapped", "TX/RX crossed", "SDA/SCL swapped", "Bottom view mistaken for top"]}
+### Check twice
+@viz {"k": "flow", "steps": ["Read pinout", "Mark pin 1", "Wire power last", "Check with multimeter", "Power up"]}
+> Measure twice, power once.
+
+# Application circuit
+Most datasheets include a typical application circuit showing the recommended external components. For regulators, radios and power parts, follow it closely.
+@viz {"k": "flow", "steps": ["Find application circuit", "Copy component values", "Follow layout guidelines", "Adjust only with good reason"]}
+### Why it matters
+Switching regulators and radios are sensitive to capacitor types, inductor values and layout. Deviating can cause instability, noise or poor range.
+### Layout guidelines
+@viz {"k": "list", "items": ["Short loops for switching regulators", "Capacitors close to pins", "Solid ground plane", "Antenna keep-out areas"]}
+### Reference designs
+Manufacturers often publish complete reference designs and evaluation board files, an excellent starting point.
+> The engineers who designed the chip have already solved your circuit.
+
+# Schematic symbols
+Schematics use standard symbols. Learning a dozen covers most hobby circuits.
+@viz {"k": "pairs", "items": [{"a": "Resistor", "b": "zigzag (US) or rectangle (IEC)"}, {"a": "Capacitor", "b": "two parallel plates"}, {"a": "Polarised capacitor", "b": "one plate curved or marked +"}, {"a": "Diode", "b": "triangle and bar"}]}
+@viz {"k": "pairs", "items": [{"a": "Transistor", "b": "circle with arrows"}, {"a": "Ground", "b": "three lines or triangle"}, {"a": "Supply", "b": "arrow or bar with voltage"}, {"a": "Inductor", "b": "series of loops"}]}
+### Reading direction
+Schematics usually flow from inputs on the left to outputs on the right, with power at the top and ground at the bottom.
+### Dots
+@viz {"k": "cmp", "l": {"t": "Dot at crossing", "items": ["wires connected"]}, "r": {"t": "No dot", "items": ["wires cross without connecting"]}}
+> Learn the symbols and schematics read like maps.
+
+# Net labels
+Large schematics use labels instead of drawing every wire. Points with the same label are connected.
+@viz {"k": "flow", "steps": ["Pin labelled SDA on sensor", "Pin labelled SDA on microcontroller", "Connected, even without a drawn line"]}
+### Power symbols
+All points marked with the same supply symbol (such as 3V3 or GND) are connected, across the whole schematic.
+### Hierarchical sheets
+@viz {"k": "pairs", "items": [{"a": "Net label", "b": "connects within a sheet"}, {"a": "Global label", "b": "connects across sheets"}, {"a": "Hierarchical label", "b": "connects through sheet symbols"}]}
+### Common mistakes
+@viz {"k": "list", "items": ["Typo in a label", "Different names for same net", "Unlabelled pins", "Same name for different nets"]}
+> Same name, same wire.
+
+# Graphs tell the truth
+Datasheet graphs show how parameters vary with temperature, voltage, frequency and load. They reveal limitations the tables hide.
+@viz {"k": "list", "items": ["Output vs temperature", "Efficiency vs load", "Current vs voltage", "Accuracy vs range", "Noise vs frequency"]}
+### Example: regulator efficiency
+@viz {"k": "bars", "unit": "efficiency at different loads, % (example)", "items": [{"l": "1 mA", "v": 60.0}, {"l": "10 mA", "v": 80.0}, {"l": "100 mA", "v": 90.0, "hi": true}, {"l": "1 A", "v": 85.0}]}
+A regulator that's efficient at 100 mA may waste most energy at 1 mA, critical for battery projects in sleep.
+### Temperature curves
+Sensors and references drift with temperature. Graphs show how much, so you can judge whether calibration or compensation is needed.
+> The graphs show what happens outside the headline conditions.
+
+# Errata
+Chips sometimes have hardware bugs. Manufacturers publish them in errata documents, with workarounds.
+@viz {"k": "flow", "steps": ["Strange behaviour", "Code checked", "Wiring checked", "Read errata", "Apply workaround"]}
+### Examples of errata topics
+@viz {"k": "list", "items": ["ADC accuracy issues", "Peripheral glitches", "Power-up sequencing", "Silicon revision differences"]}
+### ESP32 revisions
+Espressif publishes errata for ESP32 chip revisions. Later revisions fixed several issues, which is why chip revision numbers matter for some features.
+### Community knowledge
+Forums and GitHub issues often document problems before official errata. Search the exact part number and symptom.
+> When everything looks right but isn't, read the errata.
+
+# Where to find them
+Datasheets are free from manufacturers and distributors. Always use the exact part number printed on the chip.
+@viz {"k": "list", "items": ["Manufacturer website", "Mouser", "DigiKey", "LCSC", "Farnell"]}
+### Exact part numbers
+@viz {"k": "pairs", "items": [{"a": "Suffixes", "b": "package, temperature range, packaging"}, {"a": "Example", "b": "LM358DR vs LM358P: different packages"}, {"a": "Markings", "b": "small chips use short codes"}]}
+### Clones and fakes
+Cheap modules may use clone chips with different behaviour. Check markings and test carefully if something doesn't match the datasheet.
+### Keep a library
+Save datasheets for parts you use in a project folder. Websites change; your copy stays.
+> The exact part number leads to the right datasheet.
+
+== tr-scope
+
+# What a scope shows
+An oscilloscope draws voltage against time, revealing waveforms, glitches, noise and timing that a multimeter can't show.
+@viz {"k": "cmp", "l": {"t": "Multimeter", "items": ["one number", "average or RMS"]}, "r": {"t": "Oscilloscope", "items": ["waveform over time", "shape", "timing"]}}
+### What you can see
+@viz {"k": "list", "items": ["PWM signals", "Communication bits", "Power supply ripple", "Glitches and spikes", "Signal rise times"]}
+### Types
+@viz {"k": "pairs", "items": [{"a": "Bench scope", "b": "standalone, reliable"}, {"a": "USB scope", "b": "cheap, uses a computer"}, {"a": "Handheld", "b": "portable, battery-powered"}, {"a": "Mixed-signal", "b": "adds logic channels"}]}
+### Channels
+Two or four channels let you compare signals, such as a clock and data line, or input and output of an amplifier.
+> A multimeter tells you the value; a scope shows you the story.
+
+# The two axes
+The scope's screen is a grid. The vertical axis shows voltage; the horizontal axis shows time.
+@viz {"k": "pairs", "items": [{"a": "Vertical", "b": "volts per division"}, {"a": "Horizontal", "b": "time per division"}, {"a": "Grid", "b": "usually 8–10 divisions each way"}]}
+### Example
+ex: 3.3 V PWM at 1 kHz | Set 1 V/div and 200 µs/div | Signal fills screen nicely, five cycles visible
+### Offset and position
+Adjust vertical position to centre the signal, and horizontal position to look before or after the trigger.
+### AC and DC coupling
+@viz {"k": "cmp", "l": {"t": "DC coupling", "items": ["shows full voltage including DC"]}, "r": {"t": "AC coupling", "items": ["removes DC", "shows small ripple on a large voltage"]}}
+> Set volts and time so the signal fills the screen.
+
+# Triggering
+The trigger tells the scope when to start capturing, so repeating signals appear stable instead of scrolling.
+@viz {"k": "flow", "steps": ["Signal crosses trigger level", "Scope starts capture", "Same point each time", "Stable display"]}
+### Trigger settings
+@viz {"k": "pairs", "items": [{"a": "Level", "b": "voltage that triggers"}, {"a": "Slope", "b": "rising or falling edge"}, {"a": "Source", "b": "which channel"}, {"a": "Mode", "b": "auto, normal or single"}]}
+### Single shot
+ex: Catching a one-time glitch | Single mode, trigger on a level above normal | Scope freezes on the event
+### Advanced triggers
+@viz {"k": "list", "items": ["Pulse width", "Runt pulses", "Serial protocol patterns", "Timeouts"]}
+> Good triggering turns chaos into a stable picture.
+
+# Bandwidth
+A scope's bandwidth limits how fast a signal it can display accurately. Signals near the bandwidth limit appear smaller and rounder than they really are.
+@viz {"k": "terms", "f": "Bandwidth ≥ 5 × highest frequency of interest", "items": [{"s": "Square waves", "m": "harmonics need more bandwidth"}]}
+### Rise time
+@viz {"k": "terms", "f": "Rise time ≈ 0.35 ÷ bandwidth", "items": [{"s": "100 MHz scope", "m": "about 3.5 ns rise time"}]}
+### What you need
+@viz {"k": "pairs", "items": [{"a": "Audio and slow PWM", "b": "10–20 MHz fine"}, {"a": "Microcontroller signals, I²C, UART", "b": "50–100 MHz"}, {"a": "Fast SPI, USB", "b": "200 MHz or more"}]}
+### Sample rate
+The sample rate should be several times the bandwidth, so fast edges are captured with enough points.
+> A slow scope makes fast signals look prettier than they are.
+
+# Ground lead danger
+A standard oscilloscope's probe ground is connected to mains earth. Clipping it to a point not at earth potential creates a short circuit through the scope.
+@viz {"k": "fix", "items": [{"w": "Probe ground clipped to a mains circuit", "r": "Use a differential probe or isolated scope"}]}
+### What can happen
+@viz {"k": "list", "items": ["Sparks and burnt probes", "Damaged scope", "Damaged circuit", "Personal injury"]}
+### Safe practice
+@viz {"k": "pairs", "items": [{"a": "Battery-powered circuits", "b": "generally safe"}, {"a": "Circuits referenced to earth", "b": "ground clip on ground only"}, {"a": "Mains circuits", "b": "differential probes"}, {"a": "Never", "b": "defeat the scope's earth connection"}]}
+### Short ground springs
+For measuring noise and ripple, replace the long ground clip with a short spring to avoid picking up interference.
+> The ground clip is earth: clip it only to ground.
+
+# Debugging method
+Systematic debugging finds faults faster than random changes. Work from the basics outward.
+@viz {"k": "flow", "steps": ["Power supplies", "Clocks and reset", "Communication", "Signals", "Code logic"]}
+### Principles
+@viz {"k": "list", "items": ["Change one thing at a time", "Write down what you tried", "Compare with a known good unit", "Simplify the circuit"]}
+### Divide and conquer
+@viz {"k": "flow", "steps": ["Problem somewhere in system", "Test the middle", "Find which half fails", "Repeat", "Fault located"]}
+### Check assumptions
+@viz {"k": "pairs", "items": [{"a": "\"It's powered\"", "b": "measure it"}, {"a": "\"It's connected\"", "b": "check continuity"}, {"a": "\"The code uploaded\"", "b": "verify"}, {"a": "\"Nothing changed\"", "b": "check versions"}]}
+> Start with power: most faults are simpler than they seem.
+
+# Serial logging
+Printing values over the serial port is the cheapest and often most effective debugging tool.
+@viz {"k": "list", "items": ["Sensor readings", "Which code path ran", "Timing measurements", "Error codes", "Memory usage"]}
+### Good logging
+@viz {"k": "pairs", "items": [{"a": "Timestamp", "b": "when it happened"}, {"a": "Level", "b": "info, warning, error"}, {"a": "Context", "b": "which module"}, {"a": "Values", "b": "actual numbers, not just \"OK\""}]}
+### In ESPHome
+ESPHome logs are visible over USB or wirelessly in the dashboard. Setting the logger level to DEBUG shows much more detail.
+### Careful
+Too much logging can slow the program, fill buffers or change timing, sometimes hiding the very bug you're chasing.
+> Print what the program sees, not what you think it sees.
+
+# Rubber duck debugging
+Explaining a problem step by step, even to a rubber duck, often reveals the mistake. The technique was popularised by the 1999 book "The Pragmatic Programmer".
+@viz {"k": "flow", "steps": ["Explain what the code should do", "Explain line by line what it does", "Notice the gap", "Fix"]}
+### Why it works
+Explaining forces you to slow down and state assumptions you've been skipping over in your head.
+### Variations
+@viz {"k": "list", "items": ["Explain to a colleague", "Write a forum question", "Write it in a notebook", "Explain to an AI assistant"]}
+### The forum effect
+Many people find the answer while writing a detailed question, before posting it.
+!? One of the earliest recorded computer "bugs" was a real moth found in a relay of the Harvard Mark II computer in 1947, taped into the logbook by Grace Hopper's team.
+
+# Common culprits
+Most electronics problems come from a short list of simple causes. Check these first.
+@viz {"k": "list", "items": ["No common ground", "TX/RX swapped", "Wrong voltage", "Loose wire", "Missing pull-up", "Wrong board in IDE"]}
+### More frequent suspects
+@viz {"k": "pairs", "items": [{"a": "Wrong pin number", "b": "code uses GPIO number vs board label"}, {"a": "Cheap USB cable", "b": "charge-only, no data"}, {"a": "Power too weak", "b": "resets under load"}, {"a": "Library version", "b": "API changed"}]}
+### Checklist approach
+@viz {"k": "flow", "steps": ["Power OK?", "Ground shared?", "Pins correct?", "Right board selected?", "Right baud rate?"]}
+### Humility helps
+Experienced engineers still make these mistakes. Checking basics first isn't beginner behaviour; it's efficient.
+> Check the boring things first.
+
+# Cheap tools go far
+You don't need a lab full of expensive equipment. A few affordable tools cover most hobby debugging.
+@viz {"k": "list", "items": ["Multimeter", "Logic analyser", "USB oscilloscope", "Bench power supply", "Soldering station"]}
+### Typical costs
+@viz {"k": "bars", "unit": "approx. cost, €", "items": [{"l": "Multimeter", "v": 30.0}, {"l": "Logic analyser", "v": 10.0}, {"l": "Bench supply", "v": 50.0}, {"l": "Entry scope", "v": 300.0, "hi": true}]}
+### Bench power supply
+A supply with adjustable current limit protects circuits during first power-up: if something's shorted, the current limit stops damage.
+### Free software
+@viz {"k": "pairs", "items": [{"a": "PulseView (sigrok)", "b": "logic analysis"}, {"a": "KiCad", "b": "PCB design"}, {"a": "Arduino IDE / PlatformIO", "b": "programming"}, {"a": "ESPHome", "b": "device firmware"}]}
+> A current-limited supply is the best insurance for new circuits.
+
+== tr-noise
+
+# Decoupling capacitors
+Every chip needs a small capacitor right next to its power pins. When the chip suddenly draws current, the capacitor supplies it instantly.
+@viz {"k": "flow", "steps": ["Chip switches", "Sudden current demand", "Nearby capacitor delivers", "Supply rail stays stable"]}
+### Typical values
+@viz {"k": "pairs", "items": [{"a": "Standard", "b": "100 nF ceramic per power pin"}, {"a": "Added", "b": "1–10 µF nearby"}, {"a": "Radios and processors", "b": "several values for different frequencies"}]}
+### Placement
+@viz {"k": "fix", "items": [{"w": "Capacitor at the board edge", "r": "As close as possible to the power pin"}]}
+Long traces add inductance, which blocks the fast currents the capacitor is meant to supply.
+### Symptoms without decoupling
+@viz {"k": "list", "items": ["Random resets", "Communication errors", "Noisy ADC readings", "Radio problems"]}
+> One 100 nF capacitor per chip, as close as possible.
+
+# Bulk capacitance
+Besides small decoupling capacitors, boards need larger bulk capacitors where power enters and near heavy loads.
+@viz {"k": "cmp", "l": {"t": "Decoupling", "items": ["100 nF", "fast transients", "at each chip"]}, "r": {"t": "Bulk", "items": ["10–1,000 µF", "slower dips", "at power entry and motors"]}}
+### Where to put bulk capacitors
+@viz {"k": "list", "items": ["Power input", "Near motor drivers", "Near radios", "Near LED strip connections"]}
+### ESP32 example
+ex: Wi-Fi transmit bursts | Several hundred mA for milliseconds | 100–470 µF near the module prevents brownouts
+### LED strips
+Adding a large capacitor (around 1,000 µF) across the supply at the start of an LED strip protects the first LEDs from inrush spikes.
+> Bulk capacitors handle the big gulps; decoupling handles the sips.
+
+# Ground loops
+A ground loop occurs when two parts of a system connect to ground at different points with slightly different voltages. Current flows through the ground wiring, adding noise.
+@viz {"k": "fix", "items": [{"w": "Audio hum from two grounded devices", "r": "Single ground reference or isolation"}]}
+### Causes
+@viz {"k": "list", "items": ["Multiple earth connections", "Long ground cables", "Shielded cables grounded at both ends", "Different power outlets"]}
+### Symptoms
+@viz {"k": "pairs", "items": [{"a": "Audio", "b": "50 Hz hum"}, {"a": "Sensors", "b": "wandering readings"}, {"a": "Communication", "b": "errors"}, {"a": "Video", "b": "rolling bars"}]}
+### Fixes
+@viz {"k": "list", "items": ["Ground at one point", "Isolated interfaces", "Differential signals", "Ground loop isolators"]}
+> Ground should be one reference, not many competing ones.
+
+# Star grounding
+Star grounding brings ground connections from different circuit sections back to one point, so noisy currents don't flow through sensitive ground paths.
+@viz {"k": "tree", "root": "Ground point", "items": ["Motor ground: separate wire", "Power ground: separate wire", "Digital ground: separate wire", "Analogue sensor ground: separate wire"]}
+### Why it helps
+@viz {"k": "cmp", "l": {"t": "Daisy-chained ground", "items": ["motor currents pass through sensor ground", "noise"]}, "r": {"t": "Star ground", "items": ["each returns separately", "sensor ground quiet"]}}
+### On PCBs
+Modern PCBs often use a solid ground plane instead, which gives low impedance everywhere. Careful placement keeps noisy and sensitive circuits apart.
+### For hobby builds
+Run separate ground wires from the motor driver and the sensors back to the power supply's ground terminal.
+> Keep noisy currents out of quiet grounds.
+
+# Long sensor cables
+Long wires act as antennas, picking up interference from motors, mains wiring and radio. Signals degrade with distance.
+@viz {"k": "list", "items": ["Twisted pairs", "Shielded cable", "Lower impedance", "Differential signals", "Digital sensors"]}
+### Twisted pairs
+Twisting signal and ground together means interference affects both equally, and much of it cancels out.
+### Better options for distance
+@viz {"k": "pairs", "items": [{"a": "Analogue voltage", "b": "poor over long distances"}, {"a": "4–20 mA current loop", "b": "industrial standard, very robust"}, {"a": "RS-485", "b": "digital, hundreds of metres"}, {"a": "Wireless", "b": "no cable at all"}]}
+### Protection
+Long outdoor cables can also pick up surges from nearby lightning. Add TVS diodes and series resistors at the microcontroller.
+> Long cables need robust signals.
+
+# Pull-ups and floating inputs
+An unconnected input floats, picking up noise and reading random values. It can even cause extra current draw and oscillation inside the chip.
+@viz {"k": "fix", "items": [{"w": "Unused input left unconnected", "r": "Pull-up, pull-down or set as output"}]}
+### Effects of floating inputs
+@viz {"k": "list", "items": ["Random readings", "Phantom button presses", "Increased power consumption", "Unpredictable wake-ups"]}
+### Long button wires
+Buttons on long cables need stronger pull-ups (lower resistance, such as 4.7 kΩ) and maybe a small capacitor, to resist interference.
+### Unused pins
+In low-power designs, configure unused pins with pull-ups or as outputs to prevent leakage currents.
+> Every input needs a defined level.
+
+# Software filtering
+Even with good hardware, readings jitter. Software filters smooth data and remove outliers.
+@viz {"k": "pairs", "items": [{"a": "Median filter", "b": "removes spikes"}, {"a": "Moving average", "b": "smooths noise"}, {"a": "Exponential smoothing", "b": "smooth with little memory"}, {"a": "Hysteresis", "b": "stops threshold flicker"}]}
+### Example
+ex: Readings 21.1, 21.2, 35.0, 21.1, 21.3 | Median: 21.2 | Average: 23.9, distorted by the spike
+### Trade-offs
+@viz {"k": "cmp", "l": {"t": "More smoothing", "items": ["steadier", "slower to react"]}, "r": {"t": "Less smoothing", "items": ["responsive", "noisier"]}}
+### In ESPHome
+ESPHome sensors support filters such as median, sliding_window_moving_average, exponential_moving_average, delta and throttle.
+> Median for spikes, averages for jitter.
+
+# Hysteresis
+Hysteresis uses two thresholds instead of one, so a system doesn't switch rapidly back and forth when a value hovers near the set point.
+@viz {"k": "scale", "lo": 18.0, "hi": 22.0, "unit": "°C", "items": [{"l": "Heater on", "v": 19.5}, {"l": "Target", "v": 20.0, "hi": true}, {"l": "Heater off", "v": 20.5}]}
+### Without hysteresis
+@viz {"k": "flow", "steps": ["Temperature 19.99 °C", "Heater on", "20.01 °C", "Heater off", "19.99 °C", "On again", "Relay chatters"]}
+### Choosing the band
+@viz {"k": "pairs", "items": [{"a": "Too narrow", "b": "frequent switching, wear"}, {"a": "Too wide", "b": "uncomfortable swings"}, {"a": "Typical heating", "b": "0.5–1 °C"}]}
+### Everywhere
+@viz {"k": "list", "items": ["Thermostats", "Schmitt triggers", "Battery chargers", "Pump controllers", "Fridge compressors"]}
+> Two thresholds stop a system dithering.
+
+# Switching noise
+Buck converters, motors and digital circuits create fast switching edges that radiate electrical noise.
+@viz {"k": "list", "items": ["Small current loops", "Input capacitors close", "Separate from analogue", "Ground plane", "Shielding"]}
+### Why fast edges are noisy
+Fast edges contain high-frequency components that radiate easily from wires and traces acting as antennas.
+### Layout rules
+@viz {"k": "pairs", "items": [{"a": "Switching loop", "b": "keep as small as possible"}, {"a": "Input capacitor", "b": "right at the regulator"}, {"a": "Inductor", "b": "away from sensitive circuits"}, {"a": "Analogue signals", "b": "route away from switching nodes"}]}
+### Ferrites
+Ferrite beads on power lines and cables suppress high-frequency noise, letting DC through.
+> Small loops radiate little; big loops broadcast.
+
+# EMC
+Electromagnetic compatibility (EMC) means a product neither emits excessive interference nor is disturbed by it. Commercial products must prove compliance.
+@viz {"k": "cmp", "l": {"t": "Emissions", "items": ["don't disturb radios and other devices"]}, "r": {"t": "Immunity", "items": ["keep working despite interference"]}}
+### In Europe
+The CE mark shows conformity with EU directives, including EMC and, for radio devices, the Radio Equipment Directive.
+### Tests
+@viz {"k": "list", "items": ["Radiated emissions", "Conducted emissions", "Static discharge", "Surge", "Radio-frequency immunity"]}
+### Hobby projects
+Personal projects aren't sold, but good EMC practice still matters: noisy devices can disrupt Wi-Fi, radio and neighbours' equipment.
+> Good EMC means being a good electromagnetic neighbour.
+
+== tr-displays
+
+# LED brightness and current
+LED brightness depends on current, not voltage. LEDs must be driven with controlled current.
+@viz {"k": "flow", "steps": ["Voltage source", "Resistor or constant-current driver", "Controlled current", "Predictable brightness"]}
+### Why not voltage
+A tiny change in voltage near an LED's forward voltage causes a big change in current. Without control, current runs away and the LED fails.
+### Driver options
+@viz {"k": "pairs", "items": [{"a": "Resistor", "b": "simple, fine for indicators"}, {"a": "Constant-current driver", "b": "efficient, for power LEDs"}, {"a": "PWM", "b": "dimming without colour shift"}]}
+### Brightness perception
+Our eyes perceive brightness logarithmically. Gamma correction makes PWM dimming look smooth to the eye.
+> Control the current, and the LED behaves.
+
+# Addressable LEDs
+Addressable LEDs like the WS2812B contain a tiny controller chip in each LED, so one data wire can set every LED's colour individually.
+@viz {"k": "flow", "steps": ["Microcontroller sends data", "First LED takes its 24 bits", "Passes the rest on", "Each LED takes its share"]}
+### Data format
+@viz {"k": "pairs", "items": [{"a": "Bits per LED", "b": "24 (8 each for green, red, blue)"}, {"a": "Data rate", "b": "800 kHz"}, {"a": "Refresh", "b": "fast enough for smooth animations"}]}
+### Popular types
+@viz {"k": "list", "items": ["WS2812B", "SK6812 (with white)", "WS2815 (12 V)", "APA102 (clock line)"]}
+### Names
+"NeoPixel" is Adafruit's brand name for WS2812-family LEDs, now used generally.
+### In ESPHome
+ESPHome's light platform drives addressable strips with effects, controlled from Home Assistant.
+> One data wire, hundreds of individually coloured LEDs.
+
+# Powering LED strips
+Addressable LED strips can draw a lot of current, and thin copper strips cause voltage drop along their length.
+@viz {"k": "terms", "f": "I max ≈ number of LEDs × 60 mA", "items": [{"s": "60 mA", "m": "one WS2812B at full white"}]}
+### Example
+ex: 5 m strip, 60 LEDs/m = 300 LEDs | 300 × 60 mA | = 18 A at full white
+### Voltage drop
+@viz {"k": "flow", "steps": ["Power at one end", "Voltage drops along strip", "Far end dimmer and yellowish", "Inject power every 1–2 m"]}
+### Practical tips
+@viz {"k": "list", "items": ["Power injection", "Thick wires", "Fuse each section", "Limit brightness in software", "Large capacitor at input"]}
+### 12 V strips
+WS2815 and similar 12 V strips draw a third of the current for the same power, reducing voltage drop on long runs.
+> Plan power for full white, then limit brightness.
+
+# Level shifting the data
+WS2812B strips running at 5 V expect a data "high" of at least about 3.5 V. An ESP32's 3.3 V output may be borderline, causing flicker or wrong colours.
+@viz {"k": "fix", "items": [{"w": "ESP32 data pin straight to 5 V strip, flickering", "r": "Level shifter such as 74AHCT125"}]}
+### Options
+@viz {"k": "list", "items": ["74AHCT125 or 74HCT245 buffer", "Sacrificial first LED at lower voltage", "Short data wire", "Series resistor"]}
+### Series resistor
+A resistor of about 300–500 Ω at the start of the data line reduces reflections on longer data wires.
+### Why it sometimes works anyway
+Many strips accept 3.3 V signals at room temperature with short wires, which is why the problem appears inconsistently.
+> Flickering strips usually need a level shifter.
+
+# Character LCDs
+The classic 16×2 character LCD shows two lines of 16 characters. With an I²C backpack, it needs only four wires.
+@viz {"k": "pairs", "items": [{"a": "Size", "b": "16 characters × 2 lines (also 20×4)"}, {"a": "Controller", "b": "HD44780-compatible"}, {"a": "Backpack", "b": "PCF8574 I²C expander"}, {"a": "Address", "b": "often 0x27 or 0x3F"}]}
+### Contrast
+@viz {"k": "fix", "items": [{"w": "Blank screen with backlight on", "r": "Adjust the contrast potentiometer"}]}
+### Custom characters
+The controller allows eight custom 5×8 pixel characters, enough for icons like degrees or battery levels.
+### Pros and cons
+@viz {"k": "cmp", "l": {"t": "Pros", "items": ["cheap", "readable in daylight", "simple"]}, "r": {"t": "Cons", "items": ["text only", "bulky", "needs backlight power"]}}
+> Contrast pot first, then debug code.
+
+# OLED displays
+Small OLED displays give crisp graphics with no backlight. Each pixel emits its own light.
+@viz {"k": "cmp", "l": {"t": "OLED", "items": ["true blacks", "high contrast", "low power with dark content"]}, "r": {"t": "LCD", "items": ["needs backlight", "blacks glow", "better in direct sun"]}}
+### Common modules
+@viz {"k": "pairs", "items": [{"a": "SSD1306", "b": "0.96\" or 1.3\", 128×64, I²C or SPI"}, {"a": "SH1106", "b": "similar, slightly different addressing"}, {"a": "Colour OLEDs", "b": "SSD1331, SSD1351"}]}
+### Burn-in
+Pixels showing the same bright image for long periods age faster, leaving ghost images. Screen savers, dimming or shifting content help.
+### Power
+ex: Mostly black screen | Uses very little power | Full white uses much more
+> Dark themes save power on OLED.
+
+# E-paper
+E-paper (electronic ink) displays keep their image without power, like an e-reader. They're ideal for battery-powered dashboards.
+@viz {"k": "cmp", "l": {"t": "E-paper", "items": ["zero power to hold image", "readable in sun", "slow refresh"]}, "r": {"t": "OLED and LCD", "items": ["fast", "constant power"]}}
+### How it works
+Tiny charged particles move within microcapsules when voltage is applied, then stay put.
+### Refresh
+@viz {"k": "pairs", "items": [{"a": "Full refresh", "b": "several seconds with flashing"}, {"a": "Partial refresh", "b": "faster, some ghosting"}, {"a": "Colours", "b": "black, white, red or yellow, full colour models are slower"}]}
+### Uses
+@viz {"k": "list", "items": ["Weather dashboards", "Calendars", "Price tags", "Battery sensors", "Door signs"]}
+!? Amazon's first Kindle, launched in 2007, popularised E Ink displays.
+
+# Multiplexing
+Multiplexing drives many LEDs or segments with few pins by lighting rows one at a time, very quickly. Persistence of vision makes it look steady.
+@viz {"k": "flow", "steps": ["Light row 1", "Row 2", "Row 3", "Repeat hundreds of times a second", "Eye sees full image"]}
+### Pin savings
+ex: 8×8 matrix: 64 LEDs | Direct drive: 64 pins | Multiplexed: 16 pins
+### Brightness
+Each row is on for only part of the time, so LEDs need higher instantaneous current to look bright.
+### Driver chips
+@viz {"k": "list", "items": ["MAX7219 for matrices and 7-segment", "HT16K33", "Shift registers like 74HC595", "TM1637 for 7-segment"]}
+> Fast switching tricks the eye into seeing everything at once.
+
+# Colour mixing
+RGB LEDs and screens mix red, green and blue light to create colours. This additive mixing differs from mixing paints.
+@viz {"k": "pairs", "items": [{"a": "Red + green", "b": "yellow"}, {"a": "Green + blue", "b": "cyan"}, {"a": "Red + blue", "b": "magenta"}, {"a": "All three", "b": "white"}]}
+### Additive vs subtractive
+@viz {"k": "cmp", "l": {"t": "Additive (light)", "items": ["red, green, blue", "mix to white"]}, "r": {"t": "Subtractive (paint, ink)", "items": ["cyan, magenta, yellow", "mix to dark"]}}
+### Colour values
+ex: RGB(255, 136, 0) | Hex #FF8800 | Orange
+### Colour accuracy
+Different LEDs vary slightly in colour and brightness. Calibration or colour correction makes strips look uniform.
+> Light adds up to white; paint adds up to dark.
+
+# Displays in ESPHome
+ESPHome supports many displays, letting devices show sensor values, clocks and Home Assistant states.
+@viz {"k": "list", "items": ["SSD1306 OLED", "E-paper", "TFT colour screens", "7-segment", "LCDs"]}
+### Drawing with lambdas
+@viz {"k": "flow", "steps": ["Define display", "Write lambda", "it.printf shows text", "it.line, it.rectangle draw shapes", "Updates on interval"]}
+### Fonts and icons
+ESPHome can use TrueType fonts, including icon fonts like Material Design Icons, rendered at build time.
+### LVGL
+For touchscreens and complex interfaces, ESPHome supports LVGL, a graphics library for buttons, sliders and menus.
+> A few lines turn an ESP32 into a smart display.
+
+== tr-computer
+
+# The CPU loop
+A processor repeats a simple cycle billions of times a second: fetch an instruction, decode it, execute it, then move to the next.
+@viz {"k": "cycle", "steps": ["Fetch instruction", "Decode", "Execute", "Write result", "Next instruction"]}
+### The program counter
+A register called the program counter holds the address of the next instruction. Jumps and branches change it to move elsewhere in the program.
+### Pipelining
+@viz {"k": "cmp", "l": {"t": "Simple", "items": ["one instruction at a time"]}, "r": {"t": "Pipelined", "items": ["several instructions in different stages at once", "much faster"]}}
+### Von Neumann
+@viz {"k": "pairs", "items": [{"a": "Von Neumann architecture", "b": "programs and data in the same memory"}, {"a": "Harvard architecture", "b": "separate memories, many microcontrollers"}]}
+> A computer is a very fast, very simple loop.
+
+# Instructions are simple
+Each machine instruction does something tiny. Complex software is built from enormous numbers of these steps.
+@viz {"k": "list", "items": ["Load from memory", "Store to memory", "Add", "Compare", "Jump", "Logic operations"]}
+### Example
+ex: x = a + b | Load a into register 1 > Load b into register 2 > Add > Store result in x
+### Scale
+@viz {"k": "nums", "items": [{"v": "Billions", "l": "instructions per second on a modern core"}, {"v": "Millions", "l": "instructions to open a web page"}, {"v": "A few", "l": "instructions for a simple addition"}]}
+### Instruction sets
+@viz {"k": "pairs", "items": [{"a": "RISC", "b": "few simple instructions, e.g. ARM, RISC-V"}, {"a": "CISC", "b": "more complex instructions, e.g. x86"}]}
+> Complexity emerges from billions of simple steps.
+
+# Registers and ALU
+Registers are tiny, ultra-fast storage slots inside the CPU. The arithmetic logic unit (ALU) performs calculations on them.
+@viz {"k": "flow", "steps": ["Load values into registers", "ALU computes", "Result to register", "Store to memory if needed"]}
+### Register sizes
+@viz {"k": "pairs", "items": [{"a": "8-bit", "b": "early microcontrollers like the Arduino Uno's AVR"}, {"a": "32-bit", "b": "ESP32"}, {"a": "64-bit", "b": "modern PCs and phones"}]}
+### What the ALU does
+@viz {"k": "list", "items": ["Addition and subtraction", "AND, OR, XOR", "Shifts", "Comparisons"]}
+### Floating point
+Many processors have a separate floating-point unit for decimals. Microcontrollers without one perform floating-point maths slowly in software.
+> Registers are the CPU's hands; the ALU is its calculator.
+
+# Compilers
+Programmers write in high-level languages; compilers and interpreters turn this into machine instructions.
+@viz {"k": "flow", "steps": ["Source code", "Compiler", "Machine code", "CPU executes"]}
+### Compiled vs interpreted
+@viz {"k": "cmp", "l": {"t": "Compiled (C, C++, Rust)", "items": ["translated before running", "fast"]}, "r": {"t": "Interpreted (Python)", "items": ["translated while running", "flexible", "slower"]}}
+### History
+@viz {"k": "time", "events": [{"y": "1952", "l": "Grace Hopper's A-0 compiler"}, {"y": "1957", "l": "FORTRAN"}, {"y": "1972", "l": "C"}, {"y": "1991", "l": "Python"}]}
+### ESPHome
+ESPHome translates YAML into C++ code, then compiles it into firmware for the ESP32.
+### Optimisation
+Modern compilers rearrange and simplify code to run faster, often producing better machine code than hand-written assembly.
+> Compilers translate human intentions into machine steps.
+
+# Cores and threads
+Modern processors contain several cores, each a complete processor, running tasks in parallel.
+@viz {"k": "bars", "unit": "cores (typical)", "items": [{"l": "ESP32", "v": 2.0}, {"l": "Raspberry Pi 5", "v": 4.0}, {"l": "Laptop", "v": 10.0}, {"l": "Server chip", "v": 96.0, "hi": true}]}
+### Threads
+A thread is a sequence of instructions. Operating systems spread threads across cores, and some cores run two threads at once (hyper-threading).
+### Not everything parallelises
+@viz {"k": "cmp", "l": {"t": "Parallel tasks", "items": ["rendering", "servers", "many independent jobs"]}, "r": {"t": "Sequential tasks", "items": ["steps that depend on previous results"]}}
+Amdahl's law (1967) shows that the sequential part of a task limits the total speed-up.
+### On the ESP32
+One core often handles Wi-Fi and Bluetooth while the other runs your application.
+> More cores help only when work can be split.
+
+# Clock speed isn't everything
+Processor performance depends on how much work is done per clock tick and on memory, not just gigahertz.
+@viz {"k": "list", "items": ["Instructions per clock", "Cache size", "Memory speed", "Number of cores", "Specialised units"]}
+### The megahertz myth
+@viz {"k": "cmp", "l": {"t": "2004 desktop", "items": ["3.8 GHz", "one core", "less work per tick"]}, "r": {"t": "2025 laptop", "items": ["3–5 GHz", "many cores", "far faster"]}}
+### Why clocks stopped rising
+Around 2005, power and heat limits stopped clock speeds rising much further. Manufacturers turned to more cores and smarter designs.
+### Specialised hardware
+@viz {"k": "pairs", "items": [{"a": "GPU", "b": "parallel graphics and AI"}, {"a": "NPU", "b": "AI acceleration"}, {"a": "Video encoders", "b": "efficient media"}, {"a": "ESP32-S3 vector instructions", "b": "small AI tasks"}]}
+> Work per tick matters as much as ticks per second.
+
+# Caches
+Caches are small, fast memories close to the CPU core that keep recently used data, avoiding slow trips to main memory.
+@viz {"k": "bars", "unit": "approx. access time, CPU cycles", "items": [{"l": "L1 cache", "v": 4.0}, {"l": "L2 cache", "v": 12.0}, {"l": "L3 cache", "v": 40.0}, {"l": "Main RAM", "v": 200.0, "hi": true}]}
+### Cache levels
+@viz {"k": "pairs", "items": [{"a": "L1", "b": "tens of KB per core, fastest"}, {"a": "L2", "b": "hundreds of KB to a few MB"}, {"a": "L3", "b": "tens of MB shared"}]}
+### Why caches work
+@viz {"k": "list", "items": ["Temporal locality: reuse recent data", "Spatial locality: use nearby data", "Loops", "Arrays"]}
+### Cache misses
+When needed data isn't in cache, the CPU stalls waiting. Writing code that accesses memory sequentially can make programs many times faster.
+> Caches keep the CPU fed.
+
+# Operating systems
+An operating system manages hardware and shares it among programs, giving each the illusion of running alone.
+@viz {"k": "tree", "root": "Operating system", "items": ["Scheduler: shares CPU time", "Memory manager: allocates RAM", "Drivers: talk to devices", "File system: stores files", "Security: separates programs"]}
+### Time slicing
+The scheduler switches between programs thousands of times a second, so many seem to run at once even on few cores.
+### Microcontrollers too
+@viz {"k": "pairs", "items": [{"a": "FreeRTOS", "b": "real-time OS on the ESP32"}, {"a": "Linux", "b": "Raspberry Pi, servers, Android"}, {"a": "No OS", "b": "simple Arduino sketches"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1969", "l": "Unix begins at Bell Labs"}, {"y": "1985", "l": "Windows 1.0"}, {"y": "1991", "l": "Linux kernel"}, {"y": "2008", "l": "Android"}]}
+> The OS is the referee sharing the computer among programs.
+
+# Architectures
+An instruction set architecture defines the instructions a processor understands. A few dominate today.
+@viz {"k": "pairs", "items": [{"a": "x86", "b": "PCs and servers, Intel and AMD"}, {"a": "ARM", "b": "phones, tablets, Apple Macs, many servers"}, {"a": "RISC-V", "b": "open standard, microcontrollers, growing"}]}
+### History
+@viz {"k": "time", "events": [{"y": "1978", "l": "Intel 8086 starts x86"}, {"y": "1985", "l": "first ARM processor"}, {"y": "2010", "l": "RISC-V project begins"}, {"y": "2020", "l": "Apple M1 moves Macs to ARM"}]}
+### Licensing
+@viz {"k": "pairs", "items": [{"a": "x86", "b": "controlled by Intel and AMD"}, {"a": "ARM", "b": "licensed to many chip makers"}, {"a": "RISC-V", "b": "open and royalty-free"}]}
+### Software compatibility
+Programs compiled for one architecture won't run on another without recompiling or emulation.
+> The instruction set is the contract between hardware and software.
+
+# Moore's law
+In 1965, Gordon Moore observed that the number of transistors on a chip was doubling regularly. The trend shaped the computer industry for decades.
+@viz {"k": "time", "events": [{"y": "1965", "l": "Moore's original observation"}, {"y": "1975", "l": "revised to every two years"}, {"y": "2000s", "l": "clock speeds plateau"}, {"y": "2020s", "l": "doubling slows"}]}
+### Its impact
+@viz {"k": "list", "items": ["Cheaper computers", "Smartphones", "Cloud computing", "AI", "Embedded intelligence everywhere"]}
+### Slowing down
+Transistors are now so small that physical limits, heat and cost make doubling harder. Progress continues through new transistor shapes, 3D stacking and specialised chips.
+### More than Moore
+@viz {"k": "pairs", "items": [{"a": "Chiplets", "b": "combining smaller dies"}, {"a": "3D stacking", "b": "layers of memory and logic"}, {"a": "Specialised accelerators", "b": "AI and graphics"}, {"a": "New materials", "b": "beyond silicon"}]}
+> Moore's law was an observation that became an industry's roadmap.

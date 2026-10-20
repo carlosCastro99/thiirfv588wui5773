@@ -1,0 +1,499 @@
+P.title	IA empresarial
+P.blurb	Levar a IA para dentro de uma empresa: casos de uso, arquitetura, governação e valor.
+corp-why.title	Porque é que as empresas adotam IA
+corp-why.summary	As alavancas de valor por trás do hype.
+corp-why.q0.q	Qual destas NÃO é uma das quatro principais alavancas de valor da IA?
+corp-why.q0.o0	Produtividade
+corp-why.q0.o1	Melhores decisões
+corp-why.q0.o2	Substituir todos os gestores
+corp-why.q0.o3	Experiência do cliente
+corp-why.q0.x	As alavancas são produtividade, decisões, experiência do cliente e novas receitas.
+corp-why.q1.q	Porque é que muitos pilotos de IA não chegam a produção?
+corp-why.q1.o0	Os modelos são demasiado fracos
+corp-why.q1.o1	Não se trata dos dados, da integração, da mudança de processos nem da confiança
+corp-why.q1.o2	Orçamento a mais
+corp-why.q1.x	O modelo raramente é o principal obstáculo.
+corp-why.q2.q	Um bom projeto de IA começa por…
+corp-why.q2.o0	Uma tecnologia interessante
+corp-why.q2.o1	Um problema de negócio com um responsável e um resultado mensurável
+corp-why.q2.o2	Uma demo de um fornecedor
+corp-why.q2.x	Primeiro o problema, depois a tecnologia.
+corp-why.c0.title	Quatro alavancas de valor
+corp-why.c0.text	A IA cria valor de negócio de quatro formas principais: fazer o trabalho mais depressa e mais barato, tomar melhores decisões, melhorar a experiência do cliente e permitir novos produtos ou receitas.
+corp-why.c0.viz.root	Valor da IA
+corp-why.c0.viz.items.0	Produtividade
+corp-why.c0.viz.items.1	Melhores decisões
+corp-why.c0.viz.items.2	Experiência do cliente
+corp-why.c0.viz.items.3	Novos produtos e receitas
+corp-why.c1.title	Produtividade
+corp-why.c1.text	Automatizar ou acelerar trabalho intelectual de rotina, como ler documentos, redigir, reconciliar ou responder a perguntas habituais, liberta as pessoas para trabalho de maior valor.
+corp-why.c1.viz.steps.0	Tarefa de rotina
+corp-why.c1.viz.steps.1	A IA faz a primeira passagem
+corp-why.c1.viz.steps.2	Humano revê as exceções
+corp-why.c1.viz.steps.3	Tempo livre para trabalho de critério
+corp-why.c2.title	Melhores decisões
+corp-why.c2.text	Prever com mais precisão a procura, os preços, o risco ou as necessidades de manutenção reduz o desperdício e melhora as margens. No trading, pequenas melhorias nas previsões podem valer muito.
+corp-why.c2.viz.items.0	Previsão da procura
+corp-why.c2.viz.items.1	Sinais de preço e risco
+corp-why.c2.viz.items.2	Manutenção preditiva
+corp-why.c2.viz.items.3	Risco de crédito e de contraparte
+corp-why.c2.viz.items.4	Otimização de inventário
+corp-why.c3.title	Experiência do cliente
+corp-why.c3.text	Respostas mais rápidas e 24/7, recomendações personalizadas e um processamento mais rápido de encomendas e reclamações aumentam a satisfação e a fidelização.
+corp-why.c3.viz.items.0	Respostas 24/7
+corp-why.c3.viz.items.1	Encomendas e reclamações mais rápidas
+corp-why.c3.viz.items.2	Personalização
+corp-why.c3.viz.items.3	Qualidade consistente
+corp-why.c4.title	Risco e conformidade
+corp-why.c4.text	A IA consegue analisar transações à procura de fraude, verificar contratos face às políticas, monitorizar listas de sanções e assinalar anomalias muito mais depressa do que a revisão manual.
+corp-why.c4.viz.steps.0	Milhares de transações
+corp-why.c4.viz.steps.1	A IA assinala anomalias
+corp-why.c4.viz.steps.2	Analistas reveem os poucos assinalados
+corp-why.c4.viz.steps.3	Cobertura mais rápida e ampla
+corp-why.c5.title	Não é só cortar custos
+corp-why.c5.text	Os programas de IA mais fortes tratam a IA como uma capacidade para crescer e trabalhar melhor, não apenas para reduzir pessoal. O enquadramento afeta a adoção: as pessoas abraçam ferramentas que as ajudam.
+corp-why.c5.viz.l.t	Foco no corte de custos
+corp-why.c5.viz.l.items.0	medo
+corp-why.c5.viz.l.items.1	resistência
+corp-why.c5.viz.l.items.2	adoção lenta
+corp-why.c5.viz.r.t	Foco na capacidade
+corp-why.c5.viz.r.items.0	curiosidade
+corp-why.c5.viz.r.items.1	envolvimento
+corp-why.c5.viz.r.items.2	valor mais rápido
+corp-why.c6.title	Onde se concentra o valor
+corp-why.c6.text	O valor tende a concentrar-se em processos centrais com grande volume, decisões repetitivas e muitos documentos ou dados: operações financeiras, apoio ao cliente, cadeia de abastecimento, vendas e desenvolvimento de software.
+corp-why.c6.viz.items.0	Processos de grande volume
+corp-why.c6.viz.items.1	Trabalho com muitos documentos
+corp-why.c6.viz.items.2	Decisões repetitivas
+corp-why.c6.viz.items.3	Operações ricas em dados
+corp-why.c6.viz.items.4	Desenvolvimento de software
+corp-why.c7.title	Hype vs. realidade
+corp-why.c7.text	Muitos pilotos nunca chegam a produção. O problema raramente é o modelo, mas sim os dados, a integração, a mudança de processos e a confiança. Planeia isso desde o primeiro dia.
+corp-why.c7.viz.l.t	Hype
+corp-why.c7.viz.l.items.0	a IA faz tudo
+corp-why.c7.viz.l.items.1	resultados imediatos
+corp-why.c7.viz.r.t	Realidade
+corp-why.c7.viz.r.items.0	trabalho de dados e integração
+corp-why.c7.viz.r.items.1	mudança de processos
+corp-why.c7.viz.r.items.2	ganhos graduais
+corp-why.c8.title	Pressão competitiva
+corp-why.c8.text	À medida que os concorrentes adotam IA, a fasquia de rapidez e custo muda. Esperar pode significar ficar para trás; avançar à pressa sem bases pode desperdiçar dinheiro. Ganha uma abordagem constante e priorizada.
+corp-why.c8.viz.l.t	Demasiado lento
+corp-why.c8.viz.l.items.0	concorrentes passam à frente
+corp-why.c8.viz.r.t	Demasiado rápido
+corp-why.c8.viz.r.items.0	pilotos desperdiçados
+corp-why.c8.viz.r.items.1	incidentes de risco
+corp-why.c9.title	Começa pelo problema
+corp-why.c9.text	Os melhores projetos de IA partem de um problema de negócio com um responsável e um resultado mensurável, e não de uma tecnologia à procura de utilidade.
+corp-why.c9.viz.items.0.w	"precisamos de um chatbot de IA"
+corp-why.c9.viz.items.0.r	"precisamos de reduzir para metade o tempo de processamento de faturas"
+corp-usecases.title	Encontrar casos de uso
+corp-usecases.summary	Identificar e priorizar onde a IA ajuda.
+corp-usecases.q0.q	Que ideias devem normalmente avançar primeiro?
+corp-usecases.q0.o0	As de pouco valor e difíceis
+corp-usecases.q0.o1	As de alto valor e alta viabilidade
+corp-usecases.q0.o2	O que o fornecedor sugerir
+corp-usecases.q0.x	Vitórias rápidas criam dinâmica.
+corp-usecases.q1.q	Uma IA a decidir sobre candidatos a emprego está em que nível de risco?
+corp-usecases.q1.o0	Baixo
+corp-usecases.q1.o1	Médio
+corp-usecases.q1.o2	Alto
+corp-usecases.q1.x	Decisões sobre pessoas são de alto risco.
+corp-usecases.q2.q	A previsão da procura é mais adequada para…
+corp-usecases.q2.o0	IA generativa
+corp-usecases.q2.o1	Machine learning preditivo
+corp-usecases.q2.o2	Regras simples
+corp-usecases.q2.x	Números e histórico adequam-se a modelos preditivos.
+corp-usecases.c0.title	Procura padrões
+corp-usecases.c0.text	Bons candidatos envolvem tarefas repetitivas, muito texto ou documentos, regras claras com muitas exceções, ou decisões baseadas em dados históricos.
+corp-usecases.c0.viz.items.0	Tarefas repetitivas de texto
+corp-usecases.c0.viz.items.1	Processamento de documentos
+corp-usecases.c0.viz.items.2	Decisões com regras e exceções
+corp-usecases.c0.viz.items.3	Previsões a partir do histórico
+corp-usecases.c0.viz.items.4	Pesquisa de conhecimento
+corp-usecases.c1.title	Pergunta a quem faz o trabalho
+corp-usecases.c1.text	As melhores ideias vêm de quem está na linha da frente e sabe onde se perde tempo. Workshops e análises do processo passo a passo fazem-nas surgir depressa.
+corp-usecases.c1.viz.steps.0	Entrevistar equipas
+corp-usecases.c1.viz.steps.1	Mapear o processo
+corp-usecases.c1.viz.steps.2	Detetar estrangulamentos
+corp-usecases.c1.viz.steps.3	Listar oportunidades de IA
+corp-usecases.c2.title	Valor vs. viabilidade
+corp-usecases.c2.text	Pontua cada ideia em valor de negócio e viabilidade (dados disponíveis, dificuldade técnica, risco). Começa pelas ideias de alto valor e alta viabilidade: as vitórias rápidas.
+corp-usecases.c2.viz.l.t	Alto valor, alta viabilidade
+corp-usecases.c2.viz.l.items.0	fazer primeiro
+corp-usecases.c2.viz.l.items.1	vitórias rápidas
+corp-usecases.c2.viz.r.t	Baixo valor, baixa viabilidade
+corp-usecases.c2.viz.r.items.0	abandonar
+corp-usecases.c3.title	A lista de verificação da viabilidade
+corp-usecases.c3.text	Os dados estão disponíveis e são suficientemente bons? O resultado pode ser verificado? O responsável pelo processo está empenhado? Há restrições legais ou regulamentares? Consegue integrar-se com os sistemas existentes?
+corp-usecases.c3.viz.items.0	Dados disponíveis e utilizáveis
+corp-usecases.c3.viz.items.1	Resultado verificável
+corp-usecases.c3.viz.items.2	Responsável de negócio empenhado
+corp-usecases.c3.viz.items.3	Enquadramento legal e regulamentar
+corp-usecases.c3.viz.items.4	Caminho de integração
+corp-usecases.c4.title	Nível de risco
+corp-usecases.c4.text	Classifica cada caso de uso pelo risco: redação interna é de baixo risco; decisões sobre pessoas (contratação, crédito) ou segurança são de alto risco e exigem controlos mais rigorosos.
+corp-usecases.c4.viz.items.0	Alto: decisões sobre pessoas, segurança
+corp-usecases.c4.viz.items.1	Médio: respostas a clientes
+corp-usecases.c4.viz.items.2	Baixo: redação e pesquisa internas
+corp-usecases.c5.title	Generativa vs. preditiva
+corp-usecases.c5.text	Escolhe a ferramenta certa: IA generativa para linguagem e documentos; ML preditivo para números e previsões; regras para lógica simples e determinística. Muitas soluções combinam-nas.
+corp-usecases.c5.viz.items.0.a	ler contratos
+corp-usecases.c5.viz.items.0.b	IA generativa
+corp-usecases.c5.viz.items.1.a	prever a procura
+corp-usecases.c5.viz.items.1.b	ML preditivo
+corp-usecases.c5.viz.items.2.a	limites fixos de aprovação
+corp-usecases.c5.viz.items.2.b	regras
+corp-usecases.c5.viz.items.3.a	triagem de emails
+corp-usecases.c5.viz.items.3.b	classificação
+corp-usecases.c6.title	Copilotos vs. automação
+corp-usecases.c6.text	Os copilotos ajudam uma pessoa (a redigir, a sugerir), mantendo os humanos no controlo. A automação conclui tarefas de ponta a ponta. Os copilotos são mais fáceis de adotar primeiro; a automação traz poupanças maiores quando ganha confiança.
+corp-usecases.c6.viz.l.t	Copiloto
+corp-usecases.c6.viz.l.items.0	ajuda pessoas
+corp-usecases.c6.viz.l.items.1	menor risco
+corp-usecases.c6.viz.l.items.2	adoção mais rápida
+corp-usecases.c6.viz.r.t	Automação
+corp-usecases.c6.viz.r.items.0	ponta a ponta
+corp-usecases.c6.viz.r.items.1	maiores poupanças
+corp-usecases.c6.viz.r.items.2	exige alta fiabilidade
+corp-usecases.c7.title	Portefólio de casos de uso
+corp-usecases.c7.text	Equilibra um portefólio: algumas vitórias rápidas para criar dinâmica, algumas apostas transformadoras maiores e bases que viabilizam tudo (dados, plataforma, competências).
+corp-usecases.c7.viz.unit	parte do esforço (ilustrativo)
+corp-usecases.c7.viz.items.0.l	Vitórias rápidas
+corp-usecases.c7.viz.items.1.l	Transformadoras
+corp-usecases.c7.viz.items.2.l	Bases
+corp-usecases.c8.title	Escreve um resumo de uma página
+corp-usecases.c8.text	Para cada caso de uso: problema, utilizadores, valor esperado, dados necessários, métrica de sucesso, riscos, responsável. Uma página obriga a ter clareza antes de gastar dinheiro.
+corp-usecases.c8.viz.items.0	Problema e utilizadores
+corp-usecases.c8.viz.items.1	Valor esperado
+corp-usecases.c8.viz.items.2	Dados necessários
+corp-usecases.c8.viz.items.3	Métrica de sucesso
+corp-usecases.c8.viz.items.4	Riscos e responsável
+corp-usecases.c9.title	Abandona depressa
+corp-usecases.c9.text	Nem todas as ideias funcionam. Define um prazo curto e critérios de sucesso claros para as experiências, e para as que não os cumprem. O objetivo é aprender depressa.
+corp-usecases.c9.viz.steps.0	Definir critérios de sucesso
+corp-usecases.c9.viz.steps.1	Experiência de 4–8 semanas
+corp-usecases.c9.viz.steps.2	Medir
+corp-usecases.c9.viz.steps.3	Escalar, ajustar ou parar
+corp-build.title	Construir, comprar ou fazer parceria
+corp-build.summary	Escolher como obter capacidades de IA.
+corp-build.q0.q	Quando é que construir faz normalmente sentido?
+corp-build.q0.o0	Para redação genérica de emails
+corp-build.q0.o1	Para processos centrais e diferenciadores com dados próprios
+corp-build.q0.o2	Nunca
+corp-build.q0.x	Constrói onde te diferencias.
+corp-build.q1.q	O que reduz a dependência de um fornecedor?
+corp-build.q1.o0	Um único fornecedor para tudo
+corp-build.q1.o1	Camadas de abstração, normas abertas e seres dono dos teus dados
+corp-build.q1.o2	Contratos mais longos
+corp-build.q1.x	Mantém as opções em aberto.
+corp-build.q2.q	Antes de construir uma nova ferramenta de IA deves verificar…
+corp-build.q2.o0	Nada
+corp-build.q2.o1	Que funcionalidades de IA o teu software atual já oferece
+corp-build.q2.o2	Os logótipos dos concorrentes
+corp-build.q2.x	A IA integrada pode já resolver.
+corp-build.c0.title	Três opções
+corp-build.c0.text	Comprar: usar funcionalidades de IA do software que já tens ou ferramentas SaaS. Construir: desenvolver soluções próprias sobre modelos e plataformas. Parceria: trabalhar com um especialista ou integrador.
+corp-build.c0.viz.root	Aquisição
+corp-build.c0.viz.items.0	Comprar: SaaS e IA integrada
+corp-build.c0.viz.items.1	Construir: soluções próprias em plataformas
+corp-build.c0.viz.items.2	Parceria: especialistas e integradores
+corp-build.c1.title	Quando comprar
+corp-build.c1.text	Compra para necessidades comuns em que não te diferencias: redação de emails, notas de reuniões, chat genérico, funcionalidades padrão de RH ou CRM. É mais rápido e mais barato começar.
+corp-build.c1.viz.items.0	Tarefas comuns, não diferenciadoras
+corp-build.c1.viz.items.1	Existem produtos maduros
+corp-build.c1.viz.items.2	A rapidez importa
+corp-build.c1.viz.items.3	Equipa interna limitada
+corp-build.c2.title	Quando construir
+corp-build.c2.text	Constrói onde a IA toca na tua vantagem competitiva ou em dados próprios, onde a integração com os sistemas centrais é profunda, ou onde as ferramentas prontas não se adaptam ao teu processo.
+corp-build.c2.viz.items.0	Processos centrais diferenciadores
+corp-build.c2.viz.items.1	Dados próprios
+corp-build.c2.viz.items.2	Integração profunda
+corp-build.c2.viz.items.3	Fluxos de trabalho específicos
+corp-build.c3.title	IA integrada nos sistemas centrais
+corp-build.c3.text	ERP, CRM e suites de produtividade incluem cada vez mais IA (Microsoft Copilot, SAP Joule, Salesforce Einstein). Verifica o que já tens licenciado antes de construir.
+corp-build.c3.viz.items.0.a	Microsoft 365
+corp-build.c3.viz.items.0.b	Copilot
+corp-build.c3.viz.items.1.a	SAP
+corp-build.c3.viz.items.1.b	Joule e IA integrada
+corp-build.c3.viz.items.2.a	Salesforce
+corp-build.c3.viz.items.2.b	Einstein / Agentforce
+corp-build.c3.viz.items.3.a	ServiceNow
+corp-build.c3.viz.items.3.b	Now Assist
+corp-build.c4.title	Plataformas, não soluções avulsas
+corp-build.c4.text	Construir cada caso de uso do zero é lento. Uma plataforma de IA partilhada (acesso a modelos, RAG, guardrails, monitorização) permite às equipas construir muitas soluções mais depressa e de forma consistente.
+corp-build.c4.viz.l.t	Soluções avulsas
+corp-build.c4.viz.l.items.0	trabalho repetido
+corp-build.c4.viz.l.items.1	controlos inconsistentes
+corp-build.c4.viz.r.t	Plataforma partilhada
+corp-build.c4.viz.r.items.0	componentes reutilizáveis
+corp-build.c4.viz.r.items.1	segurança comum
+corp-build.c4.viz.r.items.2	entrega mais rápida
+corp-build.c5.title	Dependência de fornecedor
+corp-build.c5.text	Depender de um único modelo ou fornecedor pode ser arriscado, porque o mercado muda depressa. Camadas de abstração, normas abertas e dados portáveis reduzem essa dependência.
+corp-build.c5.viz.items.0	Camada de abstração de modelos
+corp-build.c5.viz.items.1	Normas abertas (ex.: MCP)
+corp-build.c5.viz.items.2	Dados e prompts são teus
+corp-build.c5.viz.items.3	Cláusulas de saída nos contratos
+corp-build.c6.title	Avaliar fornecedores
+corp-build.c6.text	Pede provas com os teus dados: precisão, certificações de segurança, termos de tratamento de dados, opções de integração, preços em escala e roadmap.
+corp-build.c6.viz.items.0	Resultados com os teus dados
+corp-build.c6.viz.items.1	Segurança e certificações
+corp-build.c6.viz.items.2	Termos de uso e retenção de dados
+corp-build.c6.viz.items.3	Opções de integração
+corp-build.c6.viz.items.4	Custo total em escala
+corp-build.c7.title	Custo total
+corp-build.c7.text	Conta mais do que as licenças: integração, preparação de dados, gestão da mudança, monitorização, suporte e custos de utilização dos modelos ao longo de vários anos.
+corp-build.c7.viz.items.0	Licenças ou uso de modelos
+corp-build.c7.viz.items.1	Integração e trabalho de dados
+corp-build.c7.viz.items.2	Gestão da mudança e formação
+corp-build.c7.viz.items.3	Operações e monitorização
+corp-build.c8.title	Parceiros
+corp-build.c8.text	Integradores de sistemas e empresas especializadas trazem experiência e capacidade. Mantém o conhecimento essencial dentro de casa para não dependeres deles para cada mudança.
+corp-build.c8.viz.l.t	O parceiro traz
+corp-build.c8.viz.l.items.0	rapidez
+corp-build.c8.viz.l.items.1	experiência
+corp-build.c8.viz.l.items.2	capacidade extra
+corp-build.c8.viz.r.t	Manter em casa
+corp-build.c8.viz.r.items.0	arquitetura
+corp-build.c8.viz.r.items.1	conhecimento dos dados
+corp-build.c8.viz.r.items.2	competências-chave
+corp-build.c9.title	Revê regularmente
+corp-build.c9.text	O que constróis hoje pode tornar-se um produto banal no próximo ano. Revê as decisões de construir/comprar à medida que o mercado amadurece.
+corp-build.c9.viz.steps.0	Decidir construir ou comprar
+corp-build.c9.viz.steps.1	Entregar valor
+corp-build.c9.viz.steps.2	O mercado amadurece
+corp-build.c9.viz.steps.3	Reavaliar
+corp-roi.title	O business case
+corp-roi.summary	Estimar valor, custo e ROI.
+corp-roi.q0.q	10 000 itens, 0,2 h poupadas em cada, 50 €/h e 50% de adoção dão cerca de…
+corp-roi.q0.o0	100 000 €
+corp-roi.q0.o1	50 000 €
+corp-roi.q0.o2	10 000 €
+corp-roi.q0.x	10 000 × 0,2 × 50 × 0,5 = 50 000 €.
+corp-roi.q1.q	Porque medir primeiro uma linha de base?
+corp-roi.q1.o0	É obrigatório por lei
+corp-roi.q1.o1	Para provar a melhoria mais tarde
+corp-roi.q1.o2	Para atrasar o projeto
+corp-roi.q1.x	Sem ela, não se conseguem demonstrar ganhos.
+corp-roi.q2.q	O tempo poupado torna-se valor real quando…
+corp-roi.q2.o0	É reportado
+corp-roi.q2.o1	É reaproveitado em trabalho valioso ou reduz custos
+corp-roi.q2.o2	As pessoas fazem pausas mais longas
+corp-roi.q2.x	O valor tem de ser concretizado.
+corp-roi.c0.title	Parte de uma linha de base
+corp-roi.c0.text	Mede primeiro o processo atual: tempo por tarefa, volume, taxa de erros, custo, tempo de ciclo. Sem linha de base não consegues provar a melhoria.
+corp-roi.c0.viz.items.0	Tempo por tarefa
+corp-roi.c0.viz.items.1	Volume por mês
+corp-roi.c0.viz.items.2	Taxas de erro e retrabalho
+corp-roi.c0.viz.items.3	Custo por transação
+corp-roi.c0.viz.items.4	Tempo de ciclo
+corp-roi.c1.title	Valor do tempo poupado
+corp-roi.c1.text	Uma estimativa simples: volume × tempo poupado por item × custo por hora × taxa de adoção. Sê conservador.
+corp-roi.c1.example.0	20 000 × 0,1 h × 40 € × 0,7
+corp-roi.c1.example.1	
+corp-roi.c1.example.2	≈ 56 000 € por ano
+corp-roi.c1.viz.f	valor = volume × tempo poupado × custo/hora × adoção
+corp-roi.c1.viz.items.0.m	20 000 faturas/ano
+corp-roi.c1.viz.items.1.m	6 min poupados
+corp-roi.c1.viz.items.2.m	40 €/h
+corp-roi.c1.viz.items.3.m	70% de adoção
+corp-roi.c2.title	Para além do tempo poupado
+corp-roi.c2.text	Inclui melhorias de qualidade (menos erros), ciclos mais curtos (dinheiro recebido mais cedo), redução de risco e melhores decisões. Muitas vezes valem mais do que as horas poupadas.
+corp-roi.c2.viz.items.0	Menos erros e retrabalho
+corp-roi.c2.viz.items.1	Ciclos mais curtos
+corp-roi.c2.viz.items.2	Ganhos de fundo de maneio
+corp-roi.c2.viz.items.3	Risco evitado
+corp-roi.c2.viz.items.4	Melhores decisões
+corp-roi.c3.title	Custos completos
+corp-roi.c3.text	Inclui custos de construção, licenças ou uso de modelos, integração, preparação de dados, gestão da mudança, formação e custos de operação ao longo de vários anos.
+corp-roi.c3.viz.unit	repartição de custos (% ilustrativa)
+corp-roi.c3.viz.items.0.l	Construção e integração
+corp-roi.c3.viz.items.1.l	Modelos e licenças
+corp-roi.c3.viz.items.2.l	Preparação de dados
+corp-roi.c3.viz.items.3.l	Mudança e formação
+corp-roi.c3.viz.items.4.l	Operações
+corp-roi.c4.title	ROI e payback
+corp-roi.c4.text	O ROI compara o ganho líquido com o custo; o payback é o tempo até o valor acumulado cobrir o investimento.
+corp-roi.c4.viz.f	ROI = (valor − custo) ÷ custo
+corp-roi.c4.viz.items.0.s	payback
+corp-roi.c4.viz.items.0.m	meses até valor acumulado ≥ custo
+corp-roi.c5.title	A adoção gera o valor
+corp-roi.c5.text	Uma ferramenta que ninguém usa não entrega nada. Modela o valor com curvas de adoção realistas, a subir ao longo dos meses, e não 100% desde o primeiro dia.
+corp-roi.c5.viz.events.0.y	Mês 1
+corp-roi.c5.viz.events.0.l	20% de adoção
+corp-roi.c5.viz.events.1.y	Mês 3
+corp-roi.c5.viz.events.2.y	Mês 6
+corp-roi.c5.viz.events.3.y	Mês 12
+corp-roi.c6.title	O tempo libertado tem de ser usado
+corp-roi.c6.text	As horas poupadas só se tornam valor se forem reaproveitadas: mais volume tratado, melhor serviço, novo trabalho, ou menos horas extra e subcontratação.
+corp-roi.c6.viz.steps.0	Horas poupadas
+corp-roi.c6.viz.steps.1	Reaproveitadas em trabalho valioso
+corp-roi.c6.viz.steps.2	Resultado mensurável
+corp-roi.c6.viz.steps.3	Valor real
+corp-roi.c7.title	Intervalos, não pontos
+corp-roi.c7.text	Os resultados da IA são incertos. Apresenta cenários baixo, esperado e alto, e os pressupostos de cada um.
+corp-roi.c7.viz.unit	valor anual (k€, ilustrativo)
+corp-roi.c7.viz.items.0.l	Baixo
+corp-roi.c7.viz.items.1.l	Esperado
+corp-roi.c7.viz.items.2.l	Alto
+corp-roi.c8.title	Mede depois do lançamento
+corp-roi.c8.text	Acompanha as mesmas métricas da linha de base depois do lançamento e compara. Reporta resultados reais, incluindo o que não funcionou.
+corp-roi.c8.viz.steps.0	Linha de base
+corp-roi.c8.viz.steps.1	Lançamento
+corp-roi.c8.viz.steps.2	Medir as mesmas métricas
+corp-roi.c8.viz.steps.3	Reportar e ajustar
+corp-roi.c9.title	Valor estratégico
+corp-roi.c9.text	Alguns investimentos, como plataformas de dados ou competências de IA, não se pagam com um único caso de uso, mas viabilizam muitos. Financia-os como bases, com uma visão de portefólio.
+corp-roi.c9.viz.l.t	Caso de uso
+corp-roi.c9.viz.l.items.0	ROI direto
+corp-roi.c9.viz.l.items.1	um processo
+corp-roi.c9.viz.r.t	Base
+corp-roi.c9.viz.r.items.0	viabiliza muitos
+corp-roi.c9.viz.r.items.1	ROI indireto
+corp-roi.c9.viz.r.items.2	custo partilhado
+corp-data.title	Bases de dados
+corp-data.summary	Sem bons dados não há IA.
+corp-data.q0.q	Qual é muitas vezes a parte mais difícil da IA empresarial?
+corp-data.q0.o0	Escolher o modelo
+corp-data.q0.o1	Encontrar, aceder e limpar os dados certos
+corp-data.q0.o2	Comprar GPUs
+corp-data.q0.x	Os dados são normalmente o estrangulamento.
+corp-data.q1.q	O que são dados mestre?
+corp-data.q1.o0	Dados sobre gestores
+corp-data.q1.o1	A versão única e fiável de entidades centrais, como clientes e produtos
+corp-data.q1.o2	Dados de backup
+corp-data.q1.x	Um único registo em todos os sistemas.
+corp-data.q2.q	Porque classificar a sensibilidade dos dados?
+corp-data.q2.o0	Por diversão
+corp-data.q2.o1	Para que as regras de acesso possam ser aplicadas, incluindo às ferramentas de IA
+corp-data.q2.o2	Para os apagar
+corp-data.q2.x	Os utilizadores e a IA só devem ver o que é permitido.
+corp-data.c0.title	Os dados são o estrangulamento
+corp-data.c0.text	Para a maioria das empresas, a parte mais difícil da IA não é o modelo, mas encontrar, aceder, limpar e ligar os dados certos.
+corp-data.c0.viz.items.0	Casos de uso de IA
+corp-data.c0.viz.items.1	Produtos de dados e APIs
+corp-data.c0.viz.items.2	Dados integrados e governados
+corp-data.c0.viz.items.3	Sistemas de origem: ERP, CRM, ficheiros
+corp-data.c1.title	Conhece os teus dados
+corp-data.c1.text	Um catálogo de dados lista que dados existem, onde estão, quem é o dono, o que significam e quão sensíveis são. Sem ele, as equipas perdem semanas à procura.
+corp-data.c1.viz.items.0	Que dados existem
+corp-data.c1.viz.items.1	Onde estão
+corp-data.c1.viz.items.2	Quem é o dono
+corp-data.c1.viz.items.3	Definições
+corp-data.c1.viz.items.4	Nível de sensibilidade
+corp-data.c2.title	Dimensões da qualidade dos dados
+corp-data.c2.text	Qualidade significa exatidão, completude, consistência, atualidade e unicidade. Um painel com a pontuação de qualidade de cada conjunto de dados-chave torna os problemas visíveis.
+corp-data.c2.viz.items.0.a	exatidão
+corp-data.c2.viz.items.0.b	valores corretos
+corp-data.c2.viz.items.1.a	completude
+corp-data.c2.viz.items.1.b	sem campos em falta
+corp-data.c2.viz.items.2.a	consistência
+corp-data.c2.viz.items.2.b	igual em todos os sistemas
+corp-data.c2.viz.items.3.a	atualidade
+corp-data.c2.viz.items.3.b	atualizados
+corp-data.c2.viz.items.4.a	unicidade
+corp-data.c2.viz.items.4.b	sem duplicados
+corp-data.c3.title	Dados mestre
+corp-data.c3.text	Clientes, fornecedores, produtos e materiais devem ter uma única versão fiável em todos os sistemas. Dados mestre desorganizados estragam tanto a análise como a IA.
+corp-data.c3.viz.items.0.w	"Bunge Ltd", "BUNGE", "Bunge S.A." como três fornecedores
+corp-data.c3.viz.items.0.r	um registo mestre com nomes alternativos
+corp-data.c4.title	Dados não estruturados
+corp-data.c4.text	Contratos, emails, PDFs e manuais têm imenso valor para a IA generativa, mas estão muitas vezes espalhados por drives e caixas de correio, com duplicados e versões desatualizadas.
+corp-data.c4.viz.items.0	Contratos e aditamentos
+corp-data.c4.viz.items.1	Políticas e procedimentos
+corp-data.c4.viz.items.2	Emails e chats
+corp-data.c4.viz.items.3	Relatórios e apresentações
+corp-data.c4.viz.items.4	Documentos digitalizados
+corp-data.c5.title	Plataformas de dados
+corp-data.c5.text	As plataformas modernas (data lakehouses como Databricks, Microsoft Fabric ou Snowflake) juntam dados de muitos sistemas num único local governado para análise e IA.
+corp-data.c5.viz.steps.0	ERP, CRM, IoT, ficheiros
+corp-data.c5.viz.steps.1	Ingerir
+corp-data.c5.viz.steps.2	Lakehouse: limpar e modelar
+corp-data.c5.viz.steps.3	Análise e IA
+corp-data.c6.title	Responsabilidade pelos dados
+corp-data.c6.text	Cada conjunto de dados importante precisa de um dono de negócio responsável pela sua qualidade e regras de acesso, apoiado por data stewards.
+corp-data.c6.viz.root	Governação de dados
+corp-data.c6.viz.items.0	Donos dos dados (negócio)
+corp-data.c6.viz.items.1	Data stewards
+corp-data.c6.viz.items.2	Equipa de plataforma (TI)
+corp-data.c6.viz.items.3	Conselho de governação
+corp-data.c7.title	Produtos de dados
+corp-data.c7.text	Trata os conjuntos de dados-chave como produtos: documentados, com qualidade verificada, donos claros e níveis de serviço, para que muitas equipas os possam reutilizar com confiança.
+corp-data.c7.viz.items.0	Dono claro
+corp-data.c7.viz.items.1	Documentação
+corp-data.c7.viz.items.2	Verificações de qualidade
+corp-data.c7.viz.items.3	Acesso via APIs
+corp-data.c7.viz.items.4	Níveis de serviço
+corp-data.c8.title	Linhagem
+corp-data.c8.text	A linhagem mostra de onde vieram os dados e como foram transformados. É essencial para confiar nos resultados da IA e para auditorias.
+corp-data.c8.viz.steps.0	Tabela do ERP
+corp-data.c8.viz.steps.1	Job de limpeza
+corp-data.c8.viz.steps.2	Dataset curado
+corp-data.c8.viz.steps.3	Feature do modelo
+corp-data.c8.viz.steps.4	Previsão
+corp-data.c9.title	Classificação e acesso
+corp-data.c9.text	Classifica os dados (públicos, internos, confidenciais, restritos) e aplica regras de acesso, para que as ferramentas de IA só vejam o que cada utilizador pode ver.
+corp-data.c9.viz.items.0	Restritos
+corp-data.c9.viz.items.1	Confidenciais
+corp-data.c9.viz.items.2	Internos
+corp-data.c9.viz.items.3	Públicos
+corp-arch.title	Arquitetura de IA empresarial
+corp-arch.summary	Os blocos de construção de uma plataforma de IA.
+corp-arch.q0.q	O que oferece um gateway de IA?
+corp-arch.q0.o0	Treino de modelos
+corp-arch.q0.o1	Encaminhamento central, autenticação, registos, quotas e controlo de custos
+corp-arch.q0.o2	Mobiliário de escritório
+corp-arch.q0.x	Um ponto de controlo entre as aplicações e os modelos.
+corp-arch.q1.q	Como devem os agentes aceder ao ERP ou ao CRM?
+corp-arch.q1.o0	Com direitos totais de administrador da base de dados
+corp-arch.q1.o1	Através de APIs ou servidores MCP bem definidos e com privilégio mínimo
+corp-arch.q1.o2	Com palavras-passe partilhadas
+corp-arch.q1.x	Limita o âmbito e regista as chamadas.
+corp-arch.q2.q	O que verificam os guardrails?
+corp-arch.q2.o0	Só a ortografia
+corp-arch.q2.o1	Entradas e saídas, à procura de injeção, dados sensíveis e violações de políticas
+corp-arch.q2.o2	A temperatura das GPUs
+corp-arch.q2.x	Filtram antes e depois do modelo.
+corp-arch.c0.title	Camadas de uma plataforma de IA
+corp-arch.c0.text	Uma plataforma de IA empresarial típica tem: fontes de dados, uma camada de dados, acesso a modelos, uma camada de orquestração (RAG, agentes), guardrails e aplicações, com segurança e monitorização transversais a tudo.
+corp-arch.c0.viz.items.0	Aplicações e copilotos
+corp-arch.c0.viz.items.1	Orquestração: RAG, agentes, ferramentas
+corp-arch.c0.viz.items.2	Acesso a modelos via gateway
+corp-arch.c0.viz.items.3	Camada de dados e conhecimento
+corp-arch.c0.viz.items.4	Sistemas de origem
+corp-arch.c1.title	O gateway de IA
+corp-arch.c1.text	Um gateway central fica entre as aplicações e os modelos. Trata da autenticação, encaminhamento, quotas, registos, controlo de custos e filtros de conteúdo, e permite trocar de modelo de forma centralizada.
+corp-arch.c1.viz.steps.0	Apps
+corp-arch.c1.viz.steps.1	Gateway de IA: autenticação, encaminhamento, registos, quotas
+corp-arch.c1.viz.steps.2	Modelos aprovados
+corp-arch.c1.viz.steps.3	Respostas
+corp-arch.c2.title	Catálogo de modelos
+corp-arch.c2.text	Disponibiliza modelos aprovados através do gateway: alguns modelos gerais de tamanhos diferentes, modelos de embeddings e modelos especializados. Documenta qual usar para quê.
+corp-arch.c2.viz.items.0.a	modelo grande
+corp-arch.c2.viz.items.0.b	raciocínio complexo
+corp-arch.c2.viz.items.1.a	modelo pequeno
+corp-arch.c2.viz.items.1.b	grande volume
+corp-arch.c2.viz.items.2.a	modelo de embeddings
+corp-arch.c2.viz.items.2.b	pesquisa e RAG
+corp-arch.c2.viz.items.3.a	modelo de visão
+corp-arch.c2.viz.items.3.b	documentos e imagens
+corp-arch.c3.title	Camada de conhecimento
+corp-arch.c3.text	Serviços de RAG partilhados indexam coleções de documentos aprovadas com permissões, para que cada equipa não tenha de reconstruir do zero a pesquisa e a divisão em fragmentos.
+corp-arch.c3.viz.steps.0	Fontes de documentos
+corp-arch.c3.viz.steps.1	Ingerir e fragmentar
+corp-arch.c3.viz.steps.2	Indexar com permissões
+corp-arch.c3.viz.steps.3	API de pesquisa partilhada
+corp-arch.c4.title	Ferramentas e integração
+corp-arch.c4.text	Agentes e copilotos precisam de acesso seguro aos sistemas: ERP, CRM, ticketing. Expõe APIs ou servidores MCP bem definidos em vez de acesso amplo à base de dados.
+corp-arch.c4.viz.items.0	APIs bem definidas
+corp-arch.c4.viz.items.1	Servidores MCP
+corp-arch.c4.viz.items.2	Âmbitos de privilégio mínimo
+corp-arch.c4.viz.items.3	Registos de auditoria por chamada
+corp-arch.c5.title	Guardrails
+corp-arch.c5.text	Filtros de entrada e saída procuram prompt injection, dados sensíveis, conteúdo tóxico e violações de políticas. Regras de negócio validam os resultados antes de chegarem a clientes ou sistemas.
+corp-arch.c5.viz.steps.0	Entrada
+corp-arch.c5.viz.steps.1	Verificação de injeção e dados pessoais
+corp-arch.c5.viz.steps.2	Modelo
+corp-arch.c5.viz.steps.3	Verificação e validação da saída
+corp-arch.c5.viz.steps.4	Utilizador ou sistema

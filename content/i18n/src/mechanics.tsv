@@ -1,0 +1,1815 @@
+P.title	Engineering
+P.blurb	Forces, machines and the shapes that keep structures standing.
+me-forces.title	Forces, levers & gears
+me-forces.summary	Why a long spanner works, and how machines trade force for distance.
+me-forces.q0.q	A 50 kg person stands on a scale. Their weight is about…
+me-forces.q0.o0	50 N
+me-forces.q0.o1	490 N
+me-forces.q0.o2	5 N
+me-forces.q0.o3	5000 N
+me-forces.q0.x	W = m × g = 50 × 9.81 ≈ 490 N.
+me-forces.q1.q	4 kg sits 1.5 m from the pivot. How far from the pivot must 2 kg sit to balance?
+me-forces.q1.o0	0.75 m
+me-forces.q1.o1	1.5 m
+me-forces.q1.o2	3 m
+me-forces.q1.o3	6 m
+me-forces.q1.x	4 × 1.5 = 6, so 2 × d = 6 → d = 3 m.
+me-forces.q2.q	A 12-tooth gear drives a 36-tooth gear. The output turns…
+me-forces.q2.o0	3× faster
+me-forces.q2.o1	at the same speed
+me-forces.q2.o2	3× slower with 3× torque
+me-forces.q2.x	The ratio is 36 ÷ 12 = 3: one third of the speed, three times the torque.
+me-forces.q3.q	To lift 200 kg by 1 m with a 5 m ramp (no friction) you need about…
+me-forces.q3.o0	1,962 N
+me-forces.q3.o1	392 N
+me-forces.q3.o2	40 N
+me-forces.q3.x	1,962 × 1 ÷ 5 ≈ 392 N.
+me-forces.q4.q	A torque wrench set to 120 N·m with a 0.4 m handle needs a force of…
+me-forces.q4.o0	48 N
+me-forces.q4.o1	300 N
+me-forces.q4.o2	120 N
+me-forces.q4.x	120 ÷ 0.4 = 300 N.
+me-forces.c0.title	Force, mass and weight
+me-forces.c0.text	A force makes a mass accelerate. Weight is just the force of gravity on a mass: W = m × g, with g ≈ 9.81 m/s² on Earth. Mass is measured in kg; force and weight in newtons (N).
+me-forces.c0.formula	F = m × a
+me-forces.c0.example.0	A 10 kg box
+me-forces.c0.example.1	W = 10 × 9.81
+me-forces.c0.example.2	≈ 98 N
+me-forces.c0.sketch.0	10 kg
+me-forces.c0.sketch.1	W = m·g
+me-forces.c0.sketch.2	≈ 98 N
+me-forces.c0.sketch.3	F = m·a
+me-forces.c1.title	Levers multiply force
+me-forces.c1.text	Turning effect, or torque, is force × distance from the pivot. A small force far from the pivot balances a large force close to it.\n\nThat's why a long spanner loosens a stuck bolt, and why door handles sit far from the hinges.
+me-forces.c1.formula	torque = F × d
+me-forces.c1.sketch.0	2 kg
+me-forces.c1.sketch.1	6 kg
+me-forces.c1.sketch.2	3 m
+me-forces.c1.sketch.3	1 m
+me-forces.c1.sketch.4	2 × 3 = 6 × 1 → balanced
+me-forces.c2.title	Try it: balance the seesaw
+me-forces.c2.text	The right side holds 6 kg at 1 m from the pivot. Change the mass and distance on the left until the beam levels out.
+me-forces.c3.title	Pulleys trade distance for force
+me-forces.c3.text	With a moving pulley, the load hangs from two strands of rope, so each strand carries half the weight. You pull with half the force, but you have to pull twice as much rope.\n\nThe work you do, force × distance, stays the same. Machines never give energy for free; they let you choose how to spend it.
+me-forces.c3.sketch.0	pull 1 m
+me-forces.c3.sketch.1	load rises ½ m
+me-forces.c4.title	Gears: speed or torque
+me-forces.c4.text	When a small gear drives a big one, the big gear turns slower but with more torque. The ratio is the number of teeth: 10 teeth driving 20 gives half the speed and twice the torque.\n\nA bike's low gear, a drill's gearbox and a car's first gear all use this trade.
+me-forces.c4.sketch.0	10 teeth (motor)
+me-forces.c4.sketch.1	20 teeth: ½ speed, 2× torque
+me-forces.c5.title	Balanced and unbalanced forces
+me-forces.c5.text	When forces on an object balance, it stays still or keeps moving at a steady speed. When they don't, it accelerates in the direction of the net force.
+me-forces.c5.viz.l.t	Balanced
+me-forces.c5.viz.l.items.0	no acceleration
+me-forces.c5.viz.l.items.1	book on a table
+me-forces.c5.viz.l.items.2	car at constant speed
+me-forces.c5.viz.r.t	Unbalanced
+me-forces.c5.viz.r.items.0	speeds up or slows
+me-forces.c5.viz.r.items.1	braking
+me-forces.c5.viz.r.items.2	lift-off
+me-forces.c6.title	Inclined planes
+me-forces.c6.text	A ramp lets you raise a load with less force by pushing it over a longer distance. The force needed is roughly the weight times the height divided by the length.
+me-forces.c6.example.0	Lift 100 kg 1 m using a 4 m ramp
+me-forces.c6.example.1	981 × 1 ÷ 4
+me-forces.c6.example.2	≈ 245 N (ignoring friction)
+me-forces.c6.viz.f	F ≈ W × h ÷ L
+me-forces.c6.viz.items.0.s	W
+me-forces.c6.viz.items.0.m	weight
+me-forces.c6.viz.items.1.s	h
+me-forces.c6.viz.items.1.m	height gained
+me-forces.c6.viz.items.2.s	L
+me-forces.c6.viz.items.2.m	length of ramp
+me-forces.c7.title	Screws and wedges
+me-forces.c7.text	A screw is a ramp wrapped around a cylinder: each turn moves it forward a little with great force. A wedge (an axe, a chisel) turns a push into a sideways splitting force.
+me-forces.c7.viz.items.0.a	screw
+me-forces.c7.viz.items.0.b	ramp wrapped round a shaft
+me-forces.c7.viz.items.1.a	wedge
+me-forces.c7.viz.items.1.b	two ramps back to back
+me-forces.c7.viz.items.2.a	car jack
+me-forces.c7.viz.items.2.b	screw for lifting tonnes
+me-forces.c8.title	Mechanical advantage
+me-forces.c8.text	Mechanical advantage is output force divided by input force. A lever with MA = 5 lets you lift 5 times what you push, but you move 5 times farther.
+me-forces.c8.viz.f	MA = output force ÷ input force
+me-forces.c8.viz.items.0.s	MA 5
+me-forces.c8.viz.items.0.m	lift 500 N with 100 N
+me-forces.c8.viz.items.1.s	but
+me-forces.c8.viz.items.1.m	move 5× the distance
+me-forces.c9.title	Torque in practice
+me-forces.c9.text	Bolts are tightened to a specified torque in newton-metres. A wheel nut on a car is often around 100–140 N·m: 400 N on a 30 cm wrench gives 120 N·m.
+me-forces.c9.viz.f	torque = F × r
+me-forces.c9.viz.items.0.s	F
+me-forces.c9.viz.items.0.m	400 N push
+me-forces.c9.viz.items.1.s	r
+me-forces.c9.viz.items.1.m	0.3 m wrench
+me-forces.c9.viz.items.2.m	= 120 N·m
+me-structures.title	How structures stand up
+me-structures.summary	Tension, compression and the shapes engineers use to manage them.
+me-structures.q0.q	A simply supported beam carries a load in the middle. Where is it in tension?
+me-structures.q0.o0	Top face
+me-structures.q0.o1	Bottom face
+me-structures.q0.o2	Exactly along the middle
+me-structures.q0.x	It sags, so the bottom stretches (tension) and the top squeezes (compression).
+me-structures.q1.q	Why are trusses made of triangles?
+me-structures.q1.o0	They use less steel than squares
+me-structures.q1.o1	A triangle can't deform without a side changing length
+me-structures.q1.o2	They look better
+me-structures.q1.x	Fixed side lengths lock a triangle's angles, so pinned joints alone keep it rigid.
+me-structures.q2.q	Rope with a breaking load of 600 kg, used with a factor of safety of 5. Max working load?
+me-structures.q2.o0	3000 kg
+me-structures.q2.o1	120 kg
+me-structures.q2.o2	595 kg
+me-structures.q2.x	Working load = failure load ÷ FoS = 600 ÷ 5 = 120 kg.
+me-structures.q3.q	A balcony fixed only at the wall is a…
+me-structures.q3.o0	Arch
+me-structures.q3.o1	Cantilever
+me-structures.q3.o2	Truss
+me-structures.q3.x	It's supported at one end.
+me-structures.q4.q	What usually makes a tall slender column fail?
+me-structures.q4.o0	Crushing
+me-structures.q4.o1	Buckling sideways
+me-structures.q4.o2	Melting
+me-structures.q4.x	Slender columns buckle before crushing.
+me-structures.c0.title	Tension and compression
+me-structures.c0.text	Load a beam in the middle and it bends. The top gets squeezed (compression) and the bottom gets stretched (tension). Somewhere in between is a neutral line that feels neither.\n\nConcrete is strong in compression but weak in tension, which is why beams have steel bars near the bottom.
+me-structures.c0.sketch.0	load
+me-structures.c0.sketch.1	compression
+me-structures.c0.sketch.2	compression
+me-structures.c0.sketch.3	tension
+me-structures.c1.title	Why engineers love triangles
+me-structures.c1.text	Push the corner of a square frame and it folds into a parallelogram; the joints just rotate. A triangle can't change shape without changing the length of a side.\n\nThat's why cranes, roof trusses, pylons and bike frames are made of triangles.
+me-structures.c1.sketch.0	square folds
+me-structures.c1.sketch.1	triangle holds
+me-structures.c2.title	Arches push outward
+me-structures.c2.text	An arch turns a downward load into compression that runs around its curve to the ground. Stone, which is strong in compression, is perfect for it.\n\nThe catch is that the feet push outward. Without solid abutments or a tie between the feet, the arch spreads and collapses.
+me-structures.c2.sketch.0	load
+me-structures.c2.sketch.1	feet push outward
+me-structures.c3.title	The I-beam
+me-structures.c3.text	When a beam bends, the most stress is at the top and bottom faces and very little in the middle. An I-beam puts most of its steel in the top and bottom flanges and joins them with a thin web.\n\nYou get almost the stiffness of a solid block with a fraction of the weight.
+me-structures.c3.sketch.0	high stress
+me-structures.c3.sketch.1	high stress
+me-structures.c3.sketch.2	low stress
+me-structures.c3.sketch.3	flange
+me-structures.c3.sketch.4	web
+me-structures.c3.sketch.5	flange
+me-structures.c4.title	Factor of safety
+me-structures.c4.text	Engineers never design right up to the breaking point. Materials vary, loads get underestimated and things wear out. The factor of safety is how much stronger something is than it needs to be.\n\nLifting gear often uses 4 or 5; aircraft structures use about 1.5, because extra weight costs fuel and every part is tested closely.
+me-structures.c4.formula	FoS = failure load ÷ working load
+me-structures.c4.example.0	Hook rated for 1 t, breaks at 4 t
+me-structures.c4.example.1	4 ÷ 1
+me-structures.c4.example.2	factor of safety = 4
+me-structures.c4.sketch.0	rated 1 t
+me-structures.c4.sketch.1	breaks at 4 t
+me-structures.c4.sketch.2	4 ÷ 1 = factor of safety 4
+me-structures.c5.title	Cantilevers
+me-structures.c5.text	A cantilever is supported at one end only: balconies, diving boards, shelf brackets. The top is in tension and the bottom in compression, the opposite of a simply supported beam.
+me-structures.c5.viz.l.t	Simply supported beam
+me-structures.c5.viz.l.items.0	bottom in tension
+me-structures.c5.viz.l.items.1	supported at both ends
+me-structures.c5.viz.r.t	Cantilever
+me-structures.c5.viz.r.items.0	top in tension
+me-structures.c5.viz.r.items.1	fixed at one end
+me-structures.c6.title	Columns and buckling
+me-structures.c6.text	A tall slender column doesn't crush; it buckles sideways first. Doubling its length can cut its buckling load to a quarter, which is why columns are braced.
+me-structures.c6.viz.f	load ∝ 1 ÷ length²
+me-structures.c6.viz.items.0.s	2× longer
+me-structures.c6.viz.items.0.m	¼ the buckling load
+me-structures.c6.viz.items.1.s	bracing
+me-structures.c6.viz.items.1.m	shortens the free length
+me-structures.c7.title	Shells and domes
+me-structures.c7.text	Curved shells spread loads through their surface, like an eggshell. Domes from the Pantheon in Rome to modern stadiums cover huge spaces with little material.
+me-structures.c7.viz.items.0	Eggshell: thin but strong
+me-structures.c7.viz.items.1	Pantheon dome (Rome): unreinforced concrete
+me-structures.c7.viz.items.2	Modern shells: stadiums and halls
+me-structures.c8.title	Load paths
+me-structures.c8.text	Every load must travel down through the structure to the ground: floor to beams, beams to columns, columns to foundations. If any link is missing, something fails.
+me-structures.c8.viz.steps.0	Floor load
+me-structures.c8.viz.steps.1	Beams
+me-structures.c8.viz.steps.2	Columns or walls
+me-structures.c8.viz.steps.3	Foundations
+me-structures.c8.viz.steps.4	Ground
+me-structures.c9.title	Dead, live and environmental loads
+me-structures.c9.text	Engineers design for dead load (the structure's own weight), live load (people, furniture, snow), and environmental loads like wind and earthquakes, then add safety factors.
+me-structures.c9.viz.root	Loads
+me-structures.c9.viz.items.0	Dead: own weight
+me-structures.c9.viz.items.1	Live: people, furniture
+me-structures.c9.viz.items.2	Wind and snow
+me-structures.c9.viz.items.3	Earthquakes
+me-materials.title	Engineering materials
+me-materials.summary	Steel, concrete, wood, aluminium and plastics.
+me-materials.q0.q	Why does reinforced concrete contain steel bars?
+me-materials.q0.o0	To make it heavier
+me-materials.q0.o1	Concrete is weak in tension, so steel carries the tensile forces
+me-materials.q0.o2	To conduct electricity
+me-materials.q0.x	Rebar handles the tension.
+me-materials.q1.q	Wood is strongest…
+me-materials.q1.o0	Across the grain
+me-materials.q1.o1	Along the grain
+me-materials.q1.o2	When wet
+me-materials.q1.x	Fibres run along the grain.
+me-materials.q2.q	Which is the lightest per volume?
+me-materials.q2.o0	Steel
+me-materials.q2.o1	Aluminium
+me-materials.q2.o2	Concrete
+me-materials.q2.x	Aluminium is about a third of steel's density.
+me-materials.c0.title	Strength and stiffness are different
+me-materials.c0.text	Strength is how much stress a material takes before it breaks or yields. Stiffness is how much it resists bending or stretching. Rubber is weak and flexible; glass is stiff but brittle.
+me-materials.c0.viz.l.t	Strength
+me-materials.c0.viz.l.items.0	load before failure
+me-materials.c0.viz.l.items.1	steel high, wood moderate
+me-materials.c0.viz.r.t	Stiffness
+me-materials.c0.viz.r.items.0	resistance to stretching
+me-materials.c0.viz.r.items.1	steel stiff, aluminium a third as stiff
+me-materials.c1.title	Steel
+me-materials.c1.text	Steel is iron with a little carbon. It's strong in both tension and compression, ductile (bends before breaking) and recyclable, but heavy and rusts without protection.
+me-materials.c1.viz.items.0	Strong in tension and compression
+me-materials.c1.viz.items.1	Ductile
+me-materials.c1.viz.items.2	Recyclable
+me-materials.c1.viz.items.3	Rusts without protection
+me-materials.c1.viz.items.4	Loses strength in fire
+me-materials.c2.title	Concrete
+me-materials.c2.text	Concrete is cement, water, sand and gravel. It's cheap and very strong in compression but weak in tension, so steel bars (rebar) are added where tension occurs.
+me-materials.c2.viz.l.t	Plain concrete
+me-materials.c2.viz.l.items.0	great in compression
+me-materials.c2.viz.l.items.1	cracks in tension
+me-materials.c2.viz.r.t	Reinforced concrete
+me-materials.c2.viz.r.items.0	steel takes the tension
+me-materials.c2.viz.r.items.1	beams, slabs, columns
+me-materials.c3.title	Wood
+me-materials.c3.text	Wood is strong along the grain and weak across it. For its weight it's remarkably strong, it stores carbon and is easy to work, but moisture, fire and insects must be managed.
+me-materials.c3.viz.l.t	Along the grain
+me-materials.c3.viz.l.items.0	strong
+me-materials.c3.viz.l.items.1	stiff
+me-materials.c3.viz.r.t	Across the grain
+me-materials.c3.viz.r.items.0	splits easily
+me-materials.c3.viz.r.items.1	swells with moisture
+me-materials.c4.title	Aluminium
+me-materials.c4.text	Aluminium is about a third the weight of steel and doesn't rust (a thin oxide layer protects it). It's less stiff, so parts are made thicker or shaped cleverly. Used in aircraft, window frames, cars.
+me-materials.c4.viz.unit	density (g/cm³)
+me-materials.c4.viz.items.0.l	Wood (pine)
+me-materials.c4.viz.items.1.l	Aluminium
+me-materials.c4.viz.items.2.l	Steel
+me-materials.c4.viz.items.3.l	Concrete
+me-materials.c5.title	Plastics and composites
+me-materials.c5.text	Plastics are light, cheap and mouldable. Composites like carbon fibre embed strong fibres in resin, giving very high strength and stiffness for their weight: bikes, aircraft, racing cars.
+me-materials.c5.viz.items.0.a	PVC
+me-materials.c5.viz.items.0.b	pipes, window frames
+me-materials.c5.viz.items.1.a	nylon
+me-materials.c5.viz.items.1.b	gears, bearings
+me-materials.c5.viz.items.2.a	carbon fibre
+me-materials.c5.viz.items.2.b	high-end, light and stiff
+me-materials.c5.viz.items.3.a	fibreglass
+me-materials.c5.viz.items.3.b	boats, tanks
+me-materials.c6.title	Choosing a material
+me-materials.c6.text	Engineers weigh strength, stiffness, weight, cost, durability, ease of manufacture and environmental impact. There's never a perfect material, only the best compromise.
+me-materials.c6.viz.items.0	Strength and stiffness
+me-materials.c6.viz.items.1	Weight
+me-materials.c6.viz.items.2	Cost
+me-materials.c6.viz.items.3	Corrosion and durability
+me-materials.c6.viz.items.4	Manufacturing
+me-materials.c6.viz.items.5	Carbon footprint
+me-materials.c7.title	Embodied carbon
+me-materials.c7.text	Making cement releases a lot of CO₂, about 8% of global emissions according to many estimates. Steel production is also carbon-heavy. That's driving interest in timber buildings and low-carbon cements.
+me-materials.c7.viz.items.0.l	global CO₂ from cement
+me-materials.c7.viz.items.1.l	from steel (approx.)
+me-materials.c8.title	Corrosion
+me-materials.c8.text	Steel rusts when exposed to oxygen and water, especially with salt. Protection includes paint, galvanising (zinc coating), stainless alloys and keeping concrete cover over rebar.
+me-materials.c8.viz.items.0	Paint and coatings
+me-materials.c8.viz.items.1	Galvanising with zinc
+me-materials.c8.viz.items.2	Stainless steel
+me-materials.c8.viz.items.3	Enough concrete cover over rebar
+me-materials.c8.viz.items.4	Avoid trapped water
+me-materials.c9.title	Glass
+me-materials.c9.text	Glass is very strong in compression but brittle: a tiny scratch can start a crack. Tempered glass is heat-treated to be much stronger and shatters into small blunt pieces; laminated glass holds together.
+me-materials.c9.viz.l.t	Tempered
+me-materials.c9.viz.l.items.0	4–5× stronger
+me-materials.c9.viz.l.items.1	breaks into small cubes
+me-materials.c9.viz.l.items.2	car side windows
+me-materials.c9.viz.r.t	Laminated
+me-materials.c9.viz.r.items.0	plastic interlayer
+me-materials.c9.viz.r.items.1	stays in place
+me-materials.c9.viz.r.items.2	windscreens
+me-stress.title	Stress and strain
+me-stress.summary	How materials stretch, bend and break.
+me-stress.q0.q	20 kN on a 400 mm² bar gives a stress of…
+me-stress.q0.o0	5 MPa
+me-stress.q0.o1	50 MPa
+me-stress.q0.o2	8,000 MPa
+me-stress.q0.x	20,000 ÷ 400 = 50 MPa.
+me-stress.q1.q	Turning a plank on edge makes it much stiffer because…
+me-stress.q1.o0	It's heavier
+me-stress.q1.o1	Bending stiffness grows with depth cubed
+me-stress.q1.o2	Wood likes being vertical
+me-stress.q1.x	I = b × h³ ÷ 12.
+me-stress.q2.q	Which material gives warning before breaking?
+me-stress.q2.o0	Glass
+me-stress.q2.o1	Mild steel
+me-stress.q2.o2	Cast iron
+me-stress.q2.x	Ductile steel stretches first.
+me-stress.c0.title	Stress
+me-stress.c0.text	Stress is force divided by the area carrying it. The same force on a thinner bar creates more stress. Units: pascals (N/m²), usually megapascals (MPa).
+me-stress.c0.example.0	10 kN on a 100 mm² steel bar
+me-stress.c0.example.1	10,000 ÷ 100
+me-stress.c0.example.2	= 100 MPa
+me-stress.c0.viz.f	σ = F ÷ A
+me-stress.c0.viz.items.0.s	σ
+me-stress.c0.viz.items.0.m	stress (MPa)
+me-stress.c0.viz.items.1.s	F
+me-stress.c0.viz.items.1.m	force (N)
+me-stress.c0.viz.items.2.s	A
+me-stress.c0.viz.items.2.m	cross-section (mm²)
+me-stress.c1.title	Strain
+me-stress.c1.text	Strain is how much a material stretches compared with its original length. It has no units and is usually tiny.
+me-stress.c1.example.0	A 2 m bar stretches 1 mm
+me-stress.c1.example.1	1 ÷ 2,000
+me-stress.c1.example.2	ε = 0.0005
+me-stress.c1.viz.f	ε = ΔL ÷ L
+me-stress.c1.viz.items.0.s	ΔL
+me-stress.c1.viz.items.0.m	change in length
+me-stress.c1.viz.items.1.s	L
+me-stress.c1.viz.items.1.m	original length
+me-stress.c2.title	Young's modulus
+me-stress.c2.text	Stiffness is measured by Young's modulus: stress divided by strain. Steel is about 200 GPa, aluminium about 70, wood about 10 along the grain.
+me-stress.c2.viz.unit	GPa
+me-stress.c2.viz.items.0.l	Rubber
+me-stress.c2.viz.items.1.l	Wood
+me-stress.c2.viz.items.2.l	Concrete
+me-stress.c2.viz.items.3.l	Aluminium
+me-stress.c2.viz.items.4.l	Steel
+me-stress.c3.title	Elastic and plastic
+me-stress.c3.text	In the elastic range, a material springs back when unloaded. Past the yield point it deforms permanently (plastic). Engineers design structures to stay elastic in normal use.
+me-stress.c3.viz.steps.0	Load increases
+me-stress.c3.viz.steps.1	Elastic: springs back
+me-stress.c3.viz.steps.2	Yield point
+me-stress.c3.viz.steps.3	Plastic: permanent bend
+me-stress.c3.viz.steps.4	Fracture
+me-stress.c4.title	The stress–strain curve
+me-stress.c4.text	Testing a steel bar in a machine draws a curve: a straight elastic line, a yield point, then plastic stretching up to the ultimate strength, and finally fracture.
+me-stress.c4.viz.events.0.y	start
+me-stress.c4.viz.events.0.l	elastic line
+me-stress.c4.viz.events.1.y	yield
+me-stress.c4.viz.events.1.l	permanent deformation
+me-stress.c4.viz.events.2.y	ultimate
+me-stress.c4.viz.events.2.l	max stress
+me-stress.c4.viz.events.3.y	necking
+me-stress.c4.viz.events.3.l	bar thins
+me-stress.c4.viz.events.4.y	fracture
+me-stress.c4.viz.events.4.l	it breaks
+me-stress.c5.title	Ductile vs brittle
+me-stress.c5.text	Ductile materials (steel, copper) stretch a lot before breaking, giving warning. Brittle ones (glass, cast iron, concrete) snap suddenly. Ductility makes structures safer.
+me-stress.c5.viz.l.t	Ductile
+me-stress.c5.viz.l.items.0	bends and stretches
+me-stress.c5.viz.l.items.1	gives warning
+me-stress.c5.viz.l.items.2	steel, copper
+me-stress.c5.viz.r.t	Brittle
+me-stress.c5.viz.r.items.0	snaps suddenly
+me-stress.c5.viz.r.items.1	little warning
+me-stress.c5.viz.r.items.2	glass, cast iron
+me-stress.c6.title	Bending stress
+me-stress.c6.text	When a beam bends, stress is zero at the middle (neutral axis) and greatest at the top and bottom surfaces. That's why I-beams put material far from the middle.
+me-stress.c6.viz.f	σ = M × y ÷ I
+me-stress.c6.viz.items.0.s	M
+me-stress.c6.viz.items.0.m	bending moment
+me-stress.c6.viz.items.1.s	y
+me-stress.c6.viz.items.1.m	distance from neutral axis
+me-stress.c6.viz.items.2.s	I
+me-stress.c6.viz.items.2.m	second moment of area
+me-stress.c7.title	Second moment of area
+me-stress.c7.text	A beam's resistance to bending depends hugely on its depth. For a rectangle, doubling the depth makes it eight times stiffer. That's why joists are placed on edge.
+me-stress.c7.viz.f	I = b × h³ ÷ 12
+me-stress.c7.viz.items.0.s	b
+me-stress.c7.viz.items.0.m	width
+me-stress.c7.viz.items.1.s	h
+me-stress.c7.viz.items.1.m	depth
+me-stress.c7.viz.items.2.s	2× deeper
+me-stress.c7.viz.items.2.m	8× stiffer
+me-stress.c8.title	Thermal expansion
+me-stress.c8.text	Materials grow when heated. A 100 m steel bridge can lengthen about 4 cm between winter and summer, so it has expansion joints. Rails, pipes and concrete slabs need room to move too.
+me-stress.c8.viz.f	ΔL = α × L × ΔT
+me-stress.c8.viz.items.0.s	α
+me-stress.c8.viz.items.0.m	~12 × 10⁻⁶ /°C for steel
+me-stress.c8.viz.items.1.s	L
+me-stress.c8.viz.items.1.m	100 m
+me-stress.c8.viz.items.2.s	ΔT
+me-stress.c8.viz.items.2.m	35 °C → ≈ 4 cm
+me-stress.c9.title	Stress concentrations
+me-stress.c9.text	Sharp corners, holes and notches concentrate stress, sometimes to three times the average. Rounded corners (fillets) spread it out. Aircraft windows are rounded for this reason.
+me-stress.c9.viz.items.0.w	sharp internal corner
+me-stress.c9.viz.items.0.r	rounded fillet
+me-stress.c9.viz.items.1.w	square window in a pressurised cabin
+me-stress.c9.viz.items.1.r	rounded window
+me-friction.title	Friction
+me-friction.summary	The force that grips, slows and wears things down.
+me-friction.q0.q	A 50 kg box (≈490 N) on a floor with μ = 0.4 needs about how much force to slide?
+me-friction.q0.o0	49 N
+me-friction.q0.o1	196 N
+me-friction.q0.o2	490 N
+me-friction.q0.x	0.4 × 490 ≈ 196 N.
+me-friction.q1.q	Why is it harder to start pushing a box than to keep it moving?
+me-friction.q1.o0	Gravity changes
+me-friction.q1.o1	Static friction is higher than kinetic friction
+me-friction.q1.o2	Air resistance
+me-friction.q1.x	Starting needs to overcome static friction.
+me-friction.q2.q	What do ball bearings do?
+me-friction.q2.o0	Increase grip
+me-friction.q2.o1	Replace sliding with low-friction rolling
+me-friction.q2.o2	Add lubrication
+me-friction.q2.x	Rolling resists far less than sliding.
+me-friction.c0.title	What friction is
+me-friction.c0.text	Friction resists sliding between surfaces. At a microscopic level, even smooth surfaces are rough, and bumps catch and briefly bond.
+me-friction.c0.viz.steps.0	Two surfaces touch
+me-friction.c0.viz.steps.1	Microscopic bumps interlock
+me-friction.c0.viz.steps.2	Resistance to sliding
+me-friction.c0.viz.steps.3	Heat and wear
+me-friction.c1.title	Coefficient of friction
+me-friction.c1.text	Friction force is roughly the normal force (how hard surfaces press together) times a coefficient μ that depends on the materials.
+me-friction.c1.viz.unit	μ (approx.)
+me-friction.c1.viz.items.0.l	Ice on ice
+me-friction.c1.viz.items.1.l	Steel on steel (oiled)
+me-friction.c1.viz.items.2.l	Wood on wood
+me-friction.c1.viz.items.3.l	Tyre on dry road
+me-friction.c2.title	Static vs kinetic
+me-friction.c2.text	It takes more force to start something sliding than to keep it going. Static friction is higher than kinetic (sliding) friction. That's why ABS keeps wheels from locking.
+me-friction.c2.viz.l.t	Static
+me-friction.c2.viz.l.items.0	before it moves
+me-friction.c2.viz.l.items.1	higher
+me-friction.c2.viz.r.t	Kinetic
+me-friction.c2.viz.r.items.0	while sliding
+me-friction.c2.viz.r.items.1	lower
+me-friction.c3.title	Brakes
+me-friction.c3.text	Brakes turn motion into heat through friction between pads and discs. On a long descent, brakes can overheat and fade; using engine braking or EV regeneration helps.
+me-friction.c3.viz.steps.0	Pads press on the disc
+me-friction.c3.viz.steps.1	Friction
+me-friction.c3.viz.steps.2	Kinetic energy becomes heat
+me-friction.c3.viz.steps.3	Car slows
+me-friction.c4.title	Tyres and grip
+me-friction.c4.text	Tyres grip through friction and slight deformation of the rubber. On wet roads, tread grooves channel water away; without them, the tyre can aquaplane on a water film.
+me-friction.c4.viz.items.0	Tread depth
+me-friction.c4.viz.items.1	Tyre pressure
+me-friction.c4.viz.items.2	Rubber compound
+me-friction.c4.viz.items.3	Road surface
+me-friction.c4.viz.items.4	Speed in rain
+me-friction.c5.title	Lubrication
+me-friction.c5.text	Oil and grease separate surfaces with a thin film, cutting friction and wear dramatically. Engines, bearings and gearboxes depend on it.
+me-friction.c5.viz.l.t	Dry contact
+me-friction.c5.viz.l.items.0	high friction
+me-friction.c5.viz.l.items.1	rapid wear
+me-friction.c5.viz.l.items.2	heat
+me-friction.c5.viz.r.t	Lubricated
+me-friction.c5.viz.r.items.0	low friction
+me-friction.c5.viz.r.items.1	long life
+me-friction.c5.viz.r.items.2	cooler
+me-friction.c6.title	Bearings
+me-friction.c6.text	Ball and roller bearings replace sliding with rolling, which has far lower friction. They're in wheels, motors, fans and hard drives.
+me-friction.c6.viz.unit	relative friction
+me-friction.c6.viz.items.0.l	Sliding
+me-friction.c6.viz.items.1.l	Plain bearing (oiled)
+me-friction.c6.viz.items.2.l	Ball bearing
+me-friction.c7.title	Useful friction
+me-friction.c7.text	Without friction you couldn't walk, drive, hold a pen or keep a nut on a bolt. Engineers often add friction on purpose: clutch plates, belt drives, non-slip floors.
+me-friction.c7.viz.items.0	Walking and driving
+me-friction.c7.viz.items.1	Clutches and belts
+me-friction.c7.viz.items.2	Nuts and bolts staying tight
+me-friction.c7.viz.items.3	Non-slip floors
+me-friction.c8.title	Rolling resistance
+me-friction.c8.text	Even rolling tyres lose energy as the rubber flexes. Low-rolling-resistance tyres and correct pressure save fuel or EV range.
+me-friction.c8.viz.unit	relative energy loss
+me-friction.c8.viz.items.0.l	Under-inflated tyre
+me-friction.c8.viz.items.1.l	Correct pressure
+me-friction.c8.viz.items.2.l	Low-rolling-resistance tyre
+me-friction.c9.title	Wear costs
+me-friction.c9.text	Friction and wear are estimated to consume around a fifth of the world's energy and cause large losses through worn parts, according to tribology studies. Better lubricants and materials save a lot.
+me-friction.c9.viz.items.0.l	of world energy used to overcome friction (estimate)
+me-energy.title	Work, energy and power
+me-energy.summary	Lifting, moving and how fast it happens.
+me-energy.q0.q	Kinetic energy at 100 km/h compared with 50 km/h is…
+me-energy.q0.o0	Twice
+me-energy.q0.o1	Four times
+me-energy.q0.o2	The same
+me-energy.q0.x	Energy grows with speed squared.
+me-energy.q1.q	Lifting 20 kg by 2 m does about how much work?
+me-energy.q1.o0	40 J
+me-energy.q1.o1	392 J
+me-energy.q1.o2	2,000 J
+me-energy.q1.x	20 × 9.81 × 2 ≈ 392 J.
+me-energy.q2.q	1 kWh equals…
+me-energy.q2.o0	1,000 J
+me-energy.q2.o1	3.6 MJ
+me-energy.q2.o2	60 J
+me-energy.q2.x	1,000 W × 3,600 s.
+me-energy.c0.title	Work
+me-energy.c0.text	Work is done when a force moves something: force times distance. Lift a 10 kg bag 1 m and you do about 98 J of work.
+me-energy.c0.viz.f	W = F × d
+me-energy.c0.viz.items.0.s	F
+me-energy.c0.viz.items.0.m	force (N)
+me-energy.c0.viz.items.1.s	d
+me-energy.c0.viz.items.1.m	distance (m)
+me-energy.c0.viz.items.2.s	W
+me-energy.c0.viz.items.2.m	joules (J)
+me-energy.c1.title	Potential energy
+me-energy.c1.text	Raising something stores energy that can be released when it falls. Hydroelectric dams use this with millions of tonnes of water.
+me-energy.c1.example.0	1 tonne of water falling 100 m
+me-energy.c1.example.1	1,000 × 9.81 × 100
+me-energy.c1.example.2	≈ 0.98 MJ ≈ 0.27 kWh
+me-energy.c1.viz.f	E = m × g × h
+me-energy.c1.viz.items.0.s	m
+me-energy.c1.viz.items.0.m	mass (kg)
+me-energy.c1.viz.items.1.s	g
+me-energy.c1.viz.items.1.m	9.81 m/s²
+me-energy.c1.viz.items.2.s	h
+me-energy.c1.viz.items.2.m	height (m)
+me-energy.c2.title	Kinetic energy
+me-energy.c2.text	Moving objects carry energy that grows with the square of speed. Double the speed and the energy quadruples, which is why speed matters so much in crashes.
+me-energy.c2.example.0	1,500 kg car at 50 km/h vs 100 km/h
+me-energy.c2.example.1	145 kJ vs 579 kJ
+me-energy.c2.example.2	4× the energy
+me-energy.c2.viz.f	E = ½ × m × v²
+me-energy.c2.viz.items.0.s	m
+me-energy.c2.viz.items.0.m	mass
+me-energy.c2.viz.items.1.s	v
+me-energy.c2.viz.items.1.m	speed (m/s)
+me-energy.c3.title	Power
+me-energy.c3.text	Power is how fast work is done: joules per second, or watts. A strong cyclist sustains about 200–300 W; a car engine delivers tens to hundreds of kW.
+me-energy.c3.viz.unit	watts (sustained, approx.)
+me-energy.c3.viz.items.0.l	Person walking
+me-energy.c3.viz.items.1.l	Fit cyclist
+me-energy.c3.viz.items.2.l	Horse
+me-energy.c3.viz.items.3.l	Small car
+me-energy.c4.title	Horsepower
+me-energy.c4.text	James Watt defined horsepower to sell steam engines: about 746 W in the imperial version. The metric horsepower (cv in Portugal) is about 735 W.
+me-energy.c4.viz.items.0.a	1 hp
+me-energy.c4.viz.items.0.b	746 W
+me-energy.c4.viz.items.1.a	1 cv (metric)
+me-energy.c4.viz.items.1.b	735 W
+me-energy.c4.viz.items.2.a	100 kW
+me-energy.c4.viz.items.2.b	about 136 cv
+me-energy.c5.title	Efficiency
+me-energy.c5.text	No machine converts all input energy into useful output; some becomes heat or noise. Efficiency is useful output divided by input.
+me-energy.c5.viz.unit	% efficiency (typical)
+me-energy.c5.viz.items.0.l	Incandescent bulb
+me-energy.c5.viz.items.1.l	Car petrol engine
+me-energy.c5.viz.items.2.l	Electric motor
+me-energy.c5.viz.items.3.l	Big transformer
+me-energy.c6.title	Energy is conserved
+me-energy.c6.text	Energy changes form but the total stays the same. A falling roller coaster turns potential energy into kinetic energy, then back again, minus friction losses.
+me-energy.c6.viz.steps.0	Top of the hill: potential energy
+me-energy.c6.viz.steps.1	Falling: kinetic energy
+me-energy.c6.viz.steps.2	Climbing: back to potential
+me-energy.c6.viz.steps.3	Friction turns some into heat
+me-energy.c7.title	Joules and kWh
+me-energy.c7.text	Engineers use joules; electricity bills use kWh. One kWh is 3.6 million joules, the energy of a 1 kW heater running for an hour.
+me-energy.c7.viz.f	1 kWh = 3.6 MJ
+me-energy.c7.viz.items.0.s	1 kW
+me-energy.c7.viz.items.0.m	power
+me-energy.c7.viz.items.1.s	1 h
+me-energy.c7.viz.items.1.m	3,600 s
+me-energy.c8.title	Energy in fuels
+me-energy.c8.text	A litre of petrol holds about 9 kWh of chemical energy, which is why liquid fuels were so hard to beat. Lithium batteries hold far less per kilo, but electric drivetrains use energy much more efficiently.
+me-energy.c8.viz.unit	kWh per kg (approx.)
+me-energy.c8.viz.items.0.l	Li-ion battery
+me-energy.c8.viz.items.1.l	Wood
+me-energy.c8.viz.items.2.l	Petrol
+me-energy.c8.viz.items.3.l	Hydrogen
+me-energy.c9.title	Springs
+me-energy.c9.text	A spring stores energy when stretched or compressed. Its force is proportional to how far it moves (Hooke's law), used in suspensions, scales and clocks.
+me-energy.c9.viz.f	F = k × x
+me-energy.c9.viz.items.0.s	k
+me-energy.c9.viz.items.0.m	spring stiffness (N/m)
+me-energy.c9.viz.items.1.s	x
+me-energy.c9.viz.items.1.m	displacement (m)
+me-fluids.title	Fluids and hydraulics
+me-fluids.summary	Pressure, buoyancy and the power of liquids.
+me-fluids.q0.q	Roughly how much does pressure increase per 10 m of water depth?
+me-fluids.q0.o0	0.1 bar
+me-fluids.q0.o1	1 bar
+me-fluids.q0.o2	10 bar
+me-fluids.q0.x	About 1 bar every 10 m.
+me-fluids.q1.q	A hydraulic jack with an area ratio of 20 turns 50 N into…
+me-fluids.q1.o0	70 N
+me-fluids.q1.o1	1,000 N
+me-fluids.q1.o2	2.5 N
+me-fluids.q1.x	50 × 20 = 1,000 N.
+me-fluids.q2.q	Why does a steel ship float?
+me-fluids.q2.o0	Steel is light
+me-fluids.q2.o1	Its shape displaces a weight of water greater than its own
+me-fluids.q2.o2	Air pushes it up
+me-fluids.q2.x	Archimedes' principle.
+me-fluids.c0.title	Pressure
+me-fluids.c0.text	Pressure is force spread over an area. A stiletto heel presses far harder on the floor than an elephant's foot, because the area is tiny.
+me-fluids.c0.viz.f	p = F ÷ A
+me-fluids.c0.viz.items.0.s	p
+me-fluids.c0.viz.items.0.m	pascals (N/m²)
+me-fluids.c0.viz.items.1.s	F
+me-fluids.c0.viz.items.1.m	force
+me-fluids.c0.viz.items.2.s	A
+me-fluids.c0.viz.items.2.m	area
+me-fluids.c1.title	Pressure in water
+me-fluids.c1.text	Water pressure increases with depth, about 1 bar every 10 metres. Divers feel it in their ears; dams are thicker at the bottom for the same reason.
+me-fluids.c1.viz.f	p = ρ × g × h
+me-fluids.c1.viz.items.0.s	ρ
+me-fluids.c1.viz.items.0.m	1,000 kg/m³
+me-fluids.c1.viz.items.1.s	g
+me-fluids.c1.viz.items.2.s	h
+me-fluids.c1.viz.items.2.m	depth → 10 m ≈ 1 bar
+me-fluids.c2.title	Atmospheric pressure
+me-fluids.c2.text	Air above us presses down with about 1 bar (101 kPa) at sea level, roughly 10 tonnes on every square metre. We don't notice because it pushes equally from all sides.
+me-fluids.c2.viz.unit	bar (approx.)
+me-fluids.c2.viz.items.0.l	Everest summit
+me-fluids.c2.viz.items.1.l	Lisbon
+me-fluids.c2.viz.items.2.l	10 m underwater
+me-fluids.c2.viz.items.3.l	Car tyre
+me-fluids.c3.title	Pascal's principle
+me-fluids.c3.text	Pressure in a closed liquid spreads equally in all directions. Push a small piston and a big piston feels the same pressure over a larger area, giving a bigger force.
+me-fluids.c3.example.0	100 N on 1 cm², output 50 cm²
+me-fluids.c3.example.1	100 × 50
+me-fluids.c3.example.2	= 5,000 N lifted
+me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
+me-fluids.c3.viz.items.0.s	F₁
+me-fluids.c3.viz.items.0.m	small push
+me-fluids.c3.viz.items.1.s	A₂ ÷ A₁
+me-fluids.c3.viz.items.1.m	area ratio
+me-fluids.c3.viz.items.2.s	F₂
+me-fluids.c3.viz.items.2.m	big lift
+me-fluids.c4.title	Hydraulics everywhere
+me-fluids.c4.text	Car brakes, excavators, lifts and presses use hydraulic fluid to multiply force and transmit it through flexible hoses.
+me-fluids.c4.viz.items.0	Car brakes
+me-fluids.c4.viz.items.1	Excavator arms
+me-fluids.c4.viz.items.2	Car lifts in garages
+me-fluids.c4.viz.items.3	Hydraulic presses
+me-fluids.c4.viz.items.4	Aircraft controls
+me-fluids.c5.title	Buoyancy
+me-fluids.c5.text	An object in a fluid is pushed up by a force equal to the weight of fluid it displaces (Archimedes). If that's more than its own weight, it floats. Steel ships float because their shape displaces a lot of water.
+me-fluids.c5.viz.steps.0	Object displaces water
+me-fluids.c5.viz.steps.1	Upthrust = weight of displaced water
+me-fluids.c5.viz.steps.2	Upthrust
+me-fluids.c5.viz.steps.3	weight: floats
+me-fluids.c6.title	Flow in pipes
+me-fluids.c6.text	Flow rate equals speed times pipe area. Squeeze a hose and the water speeds up. Narrow pipes need more pressure to push the same flow because of friction.
+me-fluids.c6.viz.f	Q = v × A
+me-fluids.c6.viz.items.0.s	Q
+me-fluids.c6.viz.items.0.m	flow rate
+me-fluids.c6.viz.items.1.s	v
+me-fluids.c6.viz.items.1.m	speed
+me-fluids.c6.viz.items.2.s	A
+me-fluids.c6.viz.items.2.m	cross-section area
+me-fluids.c7.title	Bernoulli
+me-fluids.c7.text	Where a fluid moves faster, its pressure drops. This helps explain carburettors, atomisers and part of how wings and sails create lift.
+me-fluids.c7.viz.l.t	Slow fluid
+me-fluids.c7.viz.l.items.0	higher pressure
+me-fluids.c7.viz.r.t	Fast fluid
+me-fluids.c7.viz.r.items.0	lower pressure
+me-fluids.c8.title	Siphons
+me-fluids.c8.text	A siphon moves liquid up over a barrier and down to a lower point without a pump, as long as the outlet is below the source and the tube starts full.
+me-fluids.c8.viz.steps.0	Tube filled with liquid
+me-fluids.c8.viz.steps.1	Outlet below the source
+me-fluids.c8.viz.steps.2	Gravity pulls the long side
+me-fluids.c8.viz.steps.3	Flow continues
+me-fluids.c9.title	Viscosity
+me-fluids.c9.text	Viscosity is a fluid's thickness: honey is viscous, water isn't. Oil grades like 5W-30 describe how viscosity behaves when cold (5W) and hot (30).
+me-fluids.c9.viz.items.0.a	water
+me-fluids.c9.viz.items.0.b	low viscosity
+me-fluids.c9.viz.items.1.a	engine oil
+me-fluids.c9.viz.items.1.b	medium
+me-fluids.c9.viz.items.2.a	honey
+me-fluids.c9.viz.items.2.b	high
+me-fluids.c9.viz.items.3.a	5W-30
+me-fluids.c9.viz.items.3.b	cold rating / hot rating
+me-flight.title	How planes fly
+me-flight.summary	Lift, drag, thrust and weight.
+me-flight.q0.q	What happens in a stall?
+me-flight.q0.o0	The engine stops
+me-flight.q0.o1	The wing's airflow separates and lift drops sharply
+me-flight.q0.o2	The plane speeds up
+me-flight.q0.x	Too high an angle of attack.
+me-flight.q1.q	Doubling speed changes drag by a factor of about…
+me-flight.q1.o0	2
+me-flight.q1.o1	4
+me-flight.q1.o2	8
+me-flight.q1.x	Drag grows with speed squared.
+me-flight.q2.q	Which control surface rolls the plane?
+me-flight.q2.o0	Rudder
+me-flight.q2.o1	Elevator
+me-flight.q2.o2	Ailerons
+me-flight.q2.x	Ailerons move in opposite directions on each wing.
+me-flight.c0.title	Four forces
+me-flight.c0.text	In steady flight, lift balances weight and thrust balances drag. To climb, lift exceeds weight; to speed up, thrust exceeds drag.
+me-flight.c0.viz.l.t	Up and down
+me-flight.c0.viz.l.items.0	lift vs weight
+me-flight.c0.viz.r.t	Forward and back
+me-flight.c0.viz.r.items.0	thrust vs drag
+me-flight.c1.title	How wings make lift
+me-flight.c1.text	A wing is shaped and tilted (angle of attack) to deflect air downwards. Pushing air down pushes the wing up (Newton's third law), with lower pressure above the wing and higher below.
+me-flight.c1.viz.steps.0	Wing tilted into the airflow
+me-flight.c1.viz.steps.1	Air deflected downwards
+me-flight.c1.viz.steps.2	Lower pressure above
+me-flight.c1.viz.steps.3	Lift upwards
+me-flight.c2.title	The lift equation
+me-flight.c2.text	Lift grows with air density, wing area and the square of speed. That's why planes need long runways at hot, high airports where air is thin.
+me-flight.c2.viz.f	L = ½ × ρ × v² × S × CL
+me-flight.c2.viz.items.0.s	ρ
+me-flight.c2.viz.items.0.m	air density
+me-flight.c2.viz.items.1.s	v
+me-flight.c2.viz.items.1.m	speed
+me-flight.c2.viz.items.2.s	S
+me-flight.c2.viz.items.2.m	wing area
+me-flight.c2.viz.items.3.s	CL
+me-flight.c2.viz.items.3.m	lift coefficient
+me-flight.c3.title	Stall
+me-flight.c3.text	Increase the angle of attack too much and the airflow separates from the upper surface. Lift collapses suddenly: a stall. Pilots train to recognise and recover from it.
+me-flight.c3.viz.steps.0	Angle of attack too high
+me-flight.c3.viz.steps.1	Airflow separates
+me-flight.c3.viz.steps.2	Lift drops sharply
+me-flight.c3.viz.steps.3	Lower the nose to recover
+me-flight.c4.title	Flaps and slats
+me-flight.c4.text	For take-off and landing, flaps and slats extend from the wing to increase its area and curvature, giving more lift at low speed.
+me-flight.c4.viz.l.t	Cruise
+me-flight.c4.viz.l.items.0	clean wing
+me-flight.c4.viz.l.items.1	low drag
+me-flight.c4.viz.l.items.2	high speed
+me-flight.c4.viz.r.t	Landing
+me-flight.c4.viz.r.items.0	flaps and slats out
+me-flight.c4.viz.r.items.1	more lift
+me-flight.c4.viz.r.items.2	slow approach
+me-flight.c5.title	Drag
+me-flight.c5.text	Drag comes from friction with the air and from the pressure difference behind the object. It grows with the square of speed, so going faster costs a lot more fuel.
+me-flight.c5.viz.unit	relative drag
+me-flight.c5.viz.items.0.l	100 km/h
+me-flight.c5.viz.items.1.l	200 km/h
+me-flight.c5.viz.items.2.l	300 km/h
+me-flight.c6.title	Jet engines
+me-flight.c6.text	A turbofan sucks in air, compresses it, burns fuel in it and blasts the hot gas out the back. Most thrust in airliners comes from the big fan pushing air around the core.
+me-flight.c6.viz.steps.0	Fan draws air in
+me-flight.c6.viz.steps.1	Compressor squeezes it
+me-flight.c6.viz.steps.2	Combustion
+me-flight.c6.viz.steps.3	Turbine and exhaust push the plane
+me-flight.c7.title	Why airliners cruise high
+me-flight.c7.text	At about 10–12 km altitude, the air is thin, so drag is much lower and jet engines are more efficient. Cabins are pressurised to the equivalent of about 2,000 m.
+me-flight.c7.viz.items.0.v	11 km
+me-flight.c7.viz.items.0.l	typical cruise altitude
+me-flight.c7.viz.items.1.v	−55 °C
+me-flight.c7.viz.items.1.l	outside air
+me-flight.c7.viz.items.2.v	~2,000 m
+me-flight.c7.viz.items.2.l	cabin pressure altitude
+me-flight.c8.title	Control surfaces
+me-flight.c8.text	Ailerons on the wings roll the plane, the elevator on the tail pitches it up and down, and the rudder yaws it left and right.
+me-flight.c8.viz.items.0.a	ailerons
+me-flight.c8.viz.items.0.b	roll
+me-flight.c8.viz.items.1.a	elevator
+me-flight.c8.viz.items.1.b	pitch
+me-flight.c8.viz.items.2.a	rudder
+me-flight.c8.viz.items.2.b	yaw
+me-flight.c8.viz.items.3.a	flaps
+me-flight.c8.viz.items.3.b	extra lift
+me-flight.c9.title	Drones
+me-flight.c9.text	Multirotor drones have no wings; they create lift by spinning propellers. They steer by speeding up some motors and slowing others, with a flight controller adjusting hundreds of times a second.
+me-flight.c9.viz.steps.0	Gyro and accelerometer
+me-flight.c9.viz.steps.1	Flight controller
+me-flight.c9.viz.steps.2	Adjust each motor
+me-flight.c9.viz.steps.3	Stable hover
+me-bridges.title	Bridges
+me-bridges.summary	Beam, arch, suspension and cable-stayed.
+me-bridges.q0.q	Which bridge type carries loads mainly in compression?
+me-bridges.q0.o0	Suspension
+me-bridges.q0.o1	Arch
+me-bridges.q0.o2	Cable-stayed
+me-bridges.q0.x	Arches push loads to abutments.
+me-bridges.q1.q	Lisbon's 25 de Abril bridge is a…
+me-bridges.q1.o0	Beam bridge
+me-bridges.q1.o1	Arch bridge
+me-bridges.q1.o2	Suspension bridge
+me-bridges.q1.x	Main cables hang from towers.
+me-bridges.q2.q	What destroyed the Tacoma Narrows bridge in 1940?
+me-bridges.q2.o0	An earthquake
+me-bridges.q2.o1	Wind-driven twisting oscillations
+me-bridges.q2.o2	A ship collision
+me-bridges.q2.x	Aerodynamic instability.
+me-bridges.c0.title	The main bridge types
+me-bridges.c0.text	Bridges handle loads differently: beams bend, arches compress, suspension cables pull, and cable-stayed towers hold the deck with straight cables.
+me-bridges.c0.viz.root	Bridges
+me-bridges.c0.viz.items.0	Beam
+me-bridges.c0.viz.items.1	Arch
+me-bridges.c0.viz.items.2	Suspension
+me-bridges.c0.viz.items.3	Cable-stayed
+me-bridges.c1.title	Beam bridges
+me-bridges.c1.text	The simplest bridge: a beam on supports. Cheap and quick for short spans, but deep beams are needed as the span grows, so they're often continuous over many piers.
+me-bridges.c1.viz.items.0.a	span
+me-bridges.c1.viz.items.0.b	up to ~250 m (big girders)
+me-bridges.c1.viz.items.1.a	best for
+me-bridges.c1.viz.items.1.b	motorway overpasses
+me-bridges.c1.viz.items.2.a	structure
+me-bridges.c1.viz.items.2.b	bending
+me-bridges.c2.title	Arch bridges
+me-bridges.c2.text	Arches carry loads in compression to strong abutments. Stone arches have lasted for 2,000 years. Porto's Dom Luís I bridge (1886) is a double-deck iron arch over the Douro.
+me-bridges.c2.viz.items.0.a	works by
+me-bridges.c2.viz.items.0.b	compression
+me-bridges.c2.viz.items.1.a	needs
+me-bridges.c2.viz.items.1.b	strong abutments
+me-bridges.c2.viz.items.2.a	example
+me-bridges.c2.viz.items.2.b	Dom Luís I, Porto
+me-bridges.c3.title	Suspension bridges
+me-bridges.c3.text	Main cables hang from tall towers and are anchored at each end; vertical hangers hold the deck. They achieve the longest spans. Lisbon's 25 de Abril bridge (1966) is one.
+me-bridges.c3.viz.steps.0	Deck load
+me-bridges.c3.viz.steps.1	Vertical hangers
+me-bridges.c3.viz.steps.2	Main cables
+me-bridges.c3.viz.steps.3	Towers and anchorages
+me-bridges.c4.title	Cable-stayed bridges
+me-bridges.c4.text	Straight cables run directly from towers to the deck in a fan or harp pattern. Efficient for medium-long spans and quick to build. Lisbon's Vasco da Gama bridge has a cable-stayed main span.
+me-bridges.c4.viz.l.t	Suspension
+me-bridges.c4.viz.l.items.0	cables hang between towers
+me-bridges.c4.viz.l.items.1	longest spans
+me-bridges.c4.viz.r.t	Cable-stayed
+me-bridges.c4.viz.r.items.0	cables straight to deck
+me-bridges.c4.viz.r.items.1	medium-long spans
+me-bridges.c5.title	Portuguese bridges
+me-bridges.c5.text	Portugal has some remarkable bridges, including several by Gustave Eiffel's company and Edgar Cardoso.
+me-bridges.c5.viz.events.0.l	Maria Pia (Eiffel), Porto
+me-bridges.c5.viz.events.1.l	Dom Luís I, Porto
+me-bridges.c5.viz.events.2.l	25 de Abril, Lisbon
+me-bridges.c5.viz.events.3.l	Vasco da Gama, Lisbon (17 km)
+me-bridges.c6.title	Wind and Tacoma Narrows
+me-bridges.c6.text	In 1940 the Tacoma Narrows suspension bridge in the US twisted itself apart in a moderate wind, due to aerodynamic instability. Since then, decks are wind-tunnel tested and shaped to avoid it.
+me-bridges.c6.viz.steps.0	Wind across a flexible deck
+me-bridges.c6.viz.steps.1	Twisting oscillation grows
+me-bridges.c6.viz.steps.2	Collapse (1940)
+me-bridges.c6.viz.steps.3	Wind-tunnel testing ever since
+me-bridges.c7.title	Expansion joints
+me-bridges.c7.text	Bridges grow and shrink with temperature. Expansion joints (the metal teeth you drive over) and sliding bearings let them move without cracking.
+me-bridges.c7.viz.items.0	Expansion joints
+me-bridges.c7.viz.items.1	Sliding bearings
+me-bridges.c7.viz.items.2	Allow for temperature
+me-bridges.c7.viz.items.3	Inspect regularly
+me-bridges.c8.title	Foundations in rivers
+me-bridges.c8.text	Piers in rivers must resist scour: fast water digging away the riverbed around them. Many bridge failures come from scour during floods, not from the structure itself.
+me-bridges.c8.viz.steps.0	Flood water speeds up around pier
+me-bridges.c8.viz.steps.1	Riverbed eroded
+me-bridges.c8.viz.steps.2	Foundation undermined
+me-bridges.c8.viz.steps.3	Collapse risk
+me-bridges.c9.title	Inspection and maintenance
+me-bridges.c9.text	Bridges are inspected regularly for cracks, corrosion, bearing wear and scour. Sensors increasingly monitor strain, vibration and movement in real time.
+me-bridges.c9.viz.items.0	Visual inspections
+me-bridges.c9.viz.items.1	Cable and rebar corrosion checks
+me-bridges.c9.viz.items.2	Underwater scour surveys
+me-bridges.c9.viz.items.3	Structural health monitoring sensors
+me-buildings.title	Buildings and foundations
+me-buildings.summary	From the ground up.
+me-buildings.q0.q	What is differential settlement?
+me-buildings.q0.o0	All parts sinking evenly
+me-buildings.q0.o1	One part of a building sinking more than another
+me-buildings.q0.o2	Settling after rain
+me-buildings.q0.x	It causes cracks.
+me-buildings.q1.q	What was the gaiola pombalina?
+me-buildings.q1.o0	A prison
+me-buildings.q1.o1	A timber lattice inside walls for earthquake resistance
+me-buildings.q1.o2	A type of roof tile
+me-buildings.q1.x	Used in Lisbon's post-1755 rebuild.
+me-buildings.q2.q	When are piles used?
+me-buildings.q2.o0	On solid rock near the surface
+me-buildings.q2.o1	On soft ground, to reach firmer layers
+me-buildings.q2.o2	Only for bridges
+me-buildings.q2.x	They transfer loads to deeper strata.
+me-buildings.c0.title	Why foundations?
+me-buildings.c0.text	Foundations spread a building's weight onto soil that can carry it without sinking unevenly. The weaker the soil, the bigger or deeper the foundations.
+me-buildings.c0.viz.steps.0	Building weight
+me-buildings.c0.viz.steps.1	Foundations spread it
+me-buildings.c0.viz.steps.2	Soil carries it
+me-buildings.c0.viz.steps.3	No uneven settling
+me-buildings.c1.title	Shallow foundations
+me-buildings.c1.text	Strip and pad footings, or a raft slab, work where firm soil or rock is near the surface. They're common for houses.
+me-buildings.c1.viz.items.0.a	strip footing
+me-buildings.c1.viz.items.0.b	under walls
+me-buildings.c1.viz.items.1.a	pad footing
+me-buildings.c1.viz.items.1.b	under columns
+me-buildings.c1.viz.items.2.a	raft
+me-buildings.c1.viz.items.2.b	whole slab, weak soils
+me-buildings.c2.title	Deep foundations
+me-buildings.c2.text	On soft ground, piles are driven or drilled down to firmer layers, carrying loads by end bearing and friction along their sides. Lisbon's Baixa was rebuilt after 1755 on wooden piles.
+me-buildings.c2.viz.l.t	Shallow
+me-buildings.c2.viz.l.items.0	firm soil near surface
+me-buildings.c2.viz.l.items.1	cheap
+me-buildings.c2.viz.l.items.2	houses
+me-buildings.c2.viz.r.t	Piles
+me-buildings.c2.viz.r.items.0	soft ground
+me-buildings.c2.viz.r.items.1	reach deep layers
+me-buildings.c2.viz.r.items.2	towers, bridges
+me-buildings.c3.title	Settlement
+me-buildings.c3.text	All buildings settle a little. Problems come from differential settlement, when one part sinks more than another, cracking walls and jamming doors.
+me-buildings.c3.viz.items.0.w	one corner on soft fill
+me-buildings.c3.viz.items.0.r	deeper foundations there
+me-buildings.c3.viz.items.1.w	cracks widening
+me-buildings.c3.viz.items.1.r	monitor and investigate
+me-buildings.c4.title	Walls and frames
+me-buildings.c4.text	Traditional buildings have load-bearing walls of stone or brick. Modern ones use frames of concrete or steel columns and beams, with walls just filling the gaps.
+me-buildings.c4.viz.l.t	Load-bearing walls
+me-buildings.c4.viz.l.items.0	walls carry the floors
+me-buildings.c4.viz.l.items.1	few openings
+me-buildings.c4.viz.r.t	Frame
+me-buildings.c4.viz.r.items.0	columns and beams carry loads
+me-buildings.c4.viz.r.items.1	walls only enclose
+me-buildings.c5.title	The Pombaline cage
+me-buildings.c5.text	After the 1755 earthquake, Lisbon was rebuilt with the "gaiola pombalina": a timber lattice of diagonal braces inside masonry walls, one of the first earthquake-resistant building systems in Europe.
+me-buildings.c5.viz.steps.0	1755 earthquake
+me-buildings.c5.viz.steps.1	Rebuild of the Baixa
+me-buildings.c5.viz.steps.2	Timber cage inside walls
+me-buildings.c5.viz.steps.3	Better earthquake resistance
+me-buildings.c6.title	Earthquake design
+me-buildings.c6.text	Seismic codes require buildings to sway without collapsing: ductile connections, bracing, shear walls, regular shapes. Some use base isolators that let the ground move beneath them.
+me-buildings.c6.viz.items.0	Ductile frames
+me-buildings.c6.viz.items.1	Shear walls and bracing
+me-buildings.c6.viz.items.2	Regular, symmetric layout
+me-buildings.c6.viz.items.3	Base isolation for key buildings
+me-buildings.c7.title	Wind on tall buildings
+me-buildings.c7.text	Wind pushes on tall buildings and makes them sway. Engineers stiffen them with cores and outriggers, and some skyscrapers use giant tuned mass dampers to cancel motion.
+me-buildings.c7.viz.steps.0	Wind pushes the tower
+me-buildings.c7.viz.steps.1	It sways
+me-buildings.c7.viz.steps.2	Damper moves the other way
+me-buildings.c7.viz.steps.3	Motion reduced
+me-buildings.c8.title	Moisture and damp
+me-buildings.c8.text	Water is the enemy of buildings: rising damp, leaks and condensation cause rot, mould and corrosion. Damp-proof courses, good roofs, gutters and ventilation keep it out.
+me-buildings.c8.viz.items.0	Damp-proof course
+me-buildings.c8.viz.items.1	Sound roof and flashings
+me-buildings.c8.viz.items.2	Gutters and drainage
+me-buildings.c8.viz.items.3	Ventilation
+me-buildings.c8.viz.items.4	Vapour control layers
+me-buildings.c9.title	Burj Khalifa
+me-buildings.c9.text	The world's tallest building, in Dubai, is 828 m high. Its Y-shaped plan and setbacks confuse the wind, and its foundations include 192 piles about 50 m long.
+me-buildings.c9.viz.items.0.v	828 m
+me-buildings.c9.viz.items.0.l	height
+me-buildings.c9.viz.items.1.l	floors
+me-buildings.c9.viz.items.2.l	piles (approx.)
+me-engines.title	Engines
+me-engines.summary	How petrol and diesel engines turn fuel into motion.
+me-engines.q0.q	What ignites the fuel in a diesel engine?
+me-engines.q0.o0	A spark plug
+me-engines.q0.o1	Heat from highly compressed air
+me-engines.q0.o2	The battery
+me-engines.q0.x	Compression ignition.
+me-engines.q1.q	What does a turbocharger use to compress intake air?
+me-engines.q1.o0	Electricity
+me-engines.q1.o1	Exhaust gas energy
+me-engines.q1.o2	Coolant
+me-engines.q1.x	Exhaust spins the turbine.
+me-engines.q2.q	Roughly what share of fuel energy becomes useful work in a petrol car engine?
+me-engines.q2.o0	90%
+me-engines.q2.o1	About 30%
+me-engines.q2.o2	5%
+me-engines.q2.x	The rest is lost as heat.
+me-engines.c0.title	The four-stroke cycle
+me-engines.c0.text	Most car engines repeat four strokes: suck in air and fuel, squeeze it, ignite it so it pushes the piston, and push out the exhaust. "Suck, squeeze, bang, blow."
+me-engines.c0.viz.steps.0	Intake: suck
+me-engines.c0.viz.steps.1	Compression: squeeze
+me-engines.c0.viz.steps.2	Power: bang
+me-engines.c0.viz.steps.3	Exhaust: blow
+me-engines.c1.title	Crankshaft
+me-engines.c1.text	Pistons move up and down; the crankshaft turns that into rotation, like legs pushing bicycle pedals. A flywheel smooths out the pulses.
+me-engines.c1.viz.steps.0	Piston pushed down
+me-engines.c1.viz.steps.1	Connecting rod
+me-engines.c1.viz.steps.2	Crankshaft turns
+me-engines.c1.viz.steps.3	Gearbox and wheels
+me-engines.c2.title	Petrol vs diesel
+me-engines.c2.text	Petrol engines use a spark to ignite the mixture. Diesels compress air so much that it gets hot enough to ignite fuel injected into it. Diesels are more efficient but heavier and produce more NOx and particles.
+me-engines.c2.viz.l.t	Petrol
+me-engines.c2.viz.l.items.0	spark ignition
+me-engines.c2.viz.l.items.1	lighter
+me-engines.c2.viz.l.items.2	revs higher
+me-engines.c2.viz.r.t	Diesel
+me-engines.c2.viz.r.items.0	compression ignition
+me-engines.c2.viz.r.items.1	more efficient
+me-engines.c2.viz.r.items.2	more torque
+me-engines.c3.title	Compression ratio
+me-engines.c3.text	Higher compression extracts more energy from the fuel. Petrol engines run about 10:1, diesels about 15–20:1. Too high in a petrol engine causes knocking.
+me-engines.c3.viz.unit	compression ratio (typical)
+me-engines.c3.viz.items.0.l	Petrol
+me-engines.c3.viz.items.1.l	Modern petrol (direct injection)
+me-engines.c3.viz.items.2.l	Diesel
+me-engines.c4.title	Turbochargers
+me-engines.c4.text	A turbo uses exhaust gas to spin a turbine that compresses intake air, forcing more air and fuel into the cylinders. Small engines can produce big power.
+me-engines.c4.viz.steps.0	Exhaust spins the turbine
+me-engines.c4.viz.steps.1	Compressor forces in air
+me-engines.c4.viz.steps.2	More fuel burned
+me-engines.c4.viz.steps.3	More power
+me-engines.c5.title	Torque and power
+me-engines.c5.text	Torque is the twisting force; power is torque times rotational speed. Diesels deliver strong torque at low rpm; petrol engines often make peak power at high rpm.
+me-engines.c5.viz.f	P = torque × ω
+me-engines.c5.viz.items.0.m	ω = rpm × 2π ÷ 60
+me-engines.c5.viz.items.1.s	300 N·m at 3,000 rpm
+me-engines.c5.viz.items.1.m	≈ 94 kW
+me-engines.c6.title	Gearboxes
+me-engines.c6.text	Engines work best in a narrow speed range. Gears let the engine stay in that range whether the car is crawling or cruising. EV motors spin so widely they usually need just one gear.
+me-engines.c6.viz.l.t	Combustion car
+me-engines.c6.viz.l.items.0	5–10 gears
+me-engines.c6.viz.l.items.1	keeps engine in its sweet spot
+me-engines.c6.viz.r.t	EV
+me-engines.c6.viz.r.items.0	usually one gear
+me-engines.c6.viz.r.items.1	motor works from 0 to ~15,000 rpm
+me-engines.c7.title	Cooling
+me-engines.c7.text	About a third of a fuel's energy leaves as heat through the cooling system, and another third through the exhaust. The radiator, coolant and thermostat keep the engine at its ideal temperature.
+me-engines.c7.viz.unit	% of fuel energy (approx.)
+me-engines.c7.viz.items.0.l	Useful work
+me-engines.c7.viz.items.1.l	Exhaust heat
+me-engines.c7.viz.items.2.l	Cooling system
+me-engines.c7.viz.items.3.l	Friction etc.
+me-engines.c8.title	Emissions control
+me-engines.c8.text	Catalytic converters turn carbon monoxide, unburnt fuel and NOx into less harmful gases. Diesel particulate filters trap soot; AdBlue reduces NOx in diesels.
+me-engines.c8.viz.items.0.a	catalytic converter
+me-engines.c8.viz.items.0.b	CO, HC, NOx cleanup
+me-engines.c8.viz.items.1.a	particulate filter
+me-engines.c8.viz.items.1.b	traps soot
+me-engines.c8.viz.items.2.a	AdBlue (SCR)
+me-engines.c8.viz.items.2.b	cuts diesel NOx
+me-engines.c9.title	Hybrids
+me-engines.c9.text	Hybrids pair a combustion engine with an electric motor and battery, recovering braking energy and helping the engine work efficiently. Plug-in hybrids can drive tens of kilometres on electricity alone.
+me-engines.c9.viz.l.t	Full hybrid
+me-engines.c9.viz.l.items.0	self-charging
+me-engines.c9.viz.l.items.1	small battery
+me-engines.c9.viz.r.t	Plug-in hybrid
+me-engines.c9.viz.r.items.0	charge from the grid
+me-engines.c9.viz.r.items.1	40–80 km electric
+me-ev.title	Engineering an electric car
+me-ev.summary	Battery, motor, inverter and thermal management.
+me-ev.q0.q	Which part converts the battery's DC into AC for the motor?
+me-ev.q0.o0	The gearbox
+me-ev.q0.o1	The inverter
+me-ev.q0.o2	The charger port
+me-ev.q0.x	The inverter drives the motor.
+me-ev.q1.q	Why do EVs lose range in winter?
+me-ev.q1.o0	Tyres shrink
+me-ev.q1.o1	Cold batteries are less efficient and heating uses energy
+me-ev.q1.o2	The motor freezes
+me-ev.q1.x	Both chemistry and cabin heating matter.
+me-ev.q2.q	What's a typical drag coefficient for an efficient EV?
+me-ev.q2.o0	0.8
+me-ev.q2.o1	About 0.2
+me-ev.q2.o2	2.0
+me-ev.q2.x	Smooth shapes give Cd near 0.2.
+me-ev.c0.title	The drivetrain
+me-ev.c0.text	An EV has far fewer moving parts than a combustion car: a battery pack, an inverter that turns DC into three-phase AC, an electric motor and a single-speed reduction gear.
+me-ev.c0.viz.steps.0	Battery pack (DC)
+me-ev.c0.viz.steps.1	Inverter
+me-ev.c0.viz.steps.2	Motor (3-phase AC)
+me-ev.c0.viz.steps.3	Reduction gear
+me-ev.c0.viz.steps.4	Wheels
+me-ev.c1.title	The skateboard platform
+me-ev.c1.text	Most EVs mount the battery flat under the floor between the axles. That lowers the centre of gravity, frees cabin space and stiffens the body.
+me-ev.c1.viz.items.0	Battery under the floor
+me-ev.c1.viz.items.1	Low centre of gravity
+me-ev.c1.viz.items.2	Flat cabin floor
+me-ev.c1.viz.items.3	Motors on the axles
+me-ev.c2.title	Inverters
+me-ev.c2.text	The inverter switches the battery's DC on and off thousands of times a second with silicon or silicon-carbide transistors to create AC at whatever frequency the motor needs. Silicon carbide cuts losses, especially in 800 V cars.
+me-ev.c2.viz.l.t	Silicon IGBT
+me-ev.c2.viz.l.items.0	established
+me-ev.c2.viz.l.items.1	cheaper
+me-ev.c2.viz.r.t	Silicon carbide (SiC)
+me-ev.c2.viz.r.items.0	lower losses
+me-ev.c2.viz.r.items.1	higher voltage
+me-ev.c2.viz.r.items.2	800 V platforms
+me-ev.c3.title	Thermal management
+me-ev.c3.text	Batteries like about 20–40 °C. Liquid cooling plates, heat pumps and pre-conditioning keep them there for fast charging and long life, and reuse waste heat to warm the cabin.
+me-ev.c3.viz.unit	°C
+me-ev.c3.viz.items.0.l	slow charging
+me-ev.c3.viz.items.1.l	ideal
+me-ev.c3.viz.items.2.l	derating
+me-ev.c4.title	Efficiency in kWh/100 km
+me-ev.c4.text	EV consumption is measured in kWh per 100 km. A compact car may use 14–16; a large SUV 20–24. Speed, cold and wind raise it a lot.
+me-ev.c4.viz.unit	kWh/100 km (typical)
+me-ev.c4.viz.items.0.l	Compact hatch
+me-ev.c4.viz.items.1.l	Mid-size saloon
+me-ev.c4.viz.items.2.l	Large SUV
+me-ev.c4.viz.items.3.l	Motorway 130 km/h
+me-ev.c5.title	Why range drops in winter
+me-ev.c5.text	Cold batteries have higher internal resistance, and heating the cabin takes energy. Range can fall by 20–30% in freezing weather; heat pumps reduce the loss.
+me-ev.c5.viz.items.0	Battery chemistry slows in the cold
+me-ev.c5.viz.items.1	Cabin heating
+me-ev.c5.viz.items.2	Denser air, more drag
+me-ev.c5.viz.items.3	Winter tyres
+me-ev.c6.title	Aerodynamics
+me-ev.c6.text	At motorway speeds, most energy goes into pushing air. EVs have smooth underbodies, flush handles and low drag coefficients (Cd around 0.2–0.3).
+me-ev.c6.viz.unit	Cd (approx.)
+me-ev.c6.viz.items.0.l	Boxy SUV
+me-ev.c6.viz.items.1.l	Typical car
+me-ev.c6.viz.items.2.l	Efficient EV
+me-ev.c7.title	Regenerative braking
+me-ev.c7.text	The motor acts as a generator when slowing down, recovering part of the energy. Friction brakes are still there for hard stops and are used less, so they last much longer.
+me-ev.c7.viz.steps.0	Lift off the pedal
+me-ev.c7.viz.steps.1	Motor becomes generator
+me-ev.c7.viz.steps.2	Battery recharges
+me-ev.c7.viz.steps.3	Pads barely used
+me-ev.c8.title	Fewer parts, less maintenance
+me-ev.c8.text	No oil changes, spark plugs, clutch, exhaust or timing belt. Maintenance mostly involves tyres, brakes fluid, cabin filters and coolant.
+me-ev.c8.viz.l.t	Combustion car
+me-ev.c8.viz.l.items.0	oil, filters, belts, exhaust, clutch
+me-ev.c8.viz.r.t	EV
+me-ev.c8.viz.r.items.0	tyres, brake fluid, cabin filter, coolant
+me-ev.c9.title	Battery warranties
+me-ev.c9.text	Most manufacturers guarantee batteries for about 8 years or 160,000 km, typically to at least 70% capacity. Real-world data shows most packs degrade slowly.
+me-ev.c9.viz.items.0.v	8 years
+me-ev.c9.viz.items.0.l	typical warranty
+me-ev.c9.viz.items.1.v	160,000 km
+me-ev.c9.viz.items.1.l	or this distance
+me-ev.c9.viz.items.2.l	guaranteed capacity
+me-thermo.title	Thermodynamics
+me-thermo.summary	Heat, engines and why nothing is 100% efficient.
+me-thermo.q0.q	What's the lowest possible temperature?
+me-thermo.q0.o0	−100 °C
+me-thermo.q0.o1	−273.15 °C (0 K)
+me-thermo.q0.o2	0 °C
+me-thermo.q0.x	Absolute zero.
+me-thermo.q1.q	A heat pump uses work to…
+me-thermo.q1.o0	Destroy heat
+me-thermo.q1.o1	Move heat from a colder place to a warmer one
+me-thermo.q1.o2	Create energy
+me-thermo.q1.x	It runs the refrigeration cycle.
+me-thermo.q2.q	A wall with a lower U-value…
+me-thermo.q2.o0	Loses more heat
+me-thermo.q2.o1	Loses less heat
+me-thermo.q2.o2	Is always thinner
+me-thermo.q2.x	U-value measures heat loss rate.
+me-thermo.c0.title	Temperature and heat
+me-thermo.c0.text	Temperature measures how fast molecules jiggle. Heat is energy flowing from hotter to colder because of a temperature difference.
+me-thermo.c0.viz.l.t	Temperature
+me-thermo.c0.viz.l.items.0	how hot
+me-thermo.c0.viz.l.items.1	°C or K
+me-thermo.c0.viz.r.t	Heat
+me-thermo.c0.viz.r.items.0	energy in transit
+me-thermo.c0.viz.r.items.1	joules
+me-thermo.c1.title	Absolute zero
+me-thermo.c1.text	Nothing can be colder than −273.15 °C, absolute zero, where molecular motion is at a minimum. The kelvin scale starts there: 0 K.
+me-thermo.c1.viz.items.0.a	0 K
+me-thermo.c1.viz.items.0.b	−273.15 °C
+me-thermo.c1.viz.items.1.a	273.15 K
+me-thermo.c1.viz.items.1.b	0 °C
+me-thermo.c1.viz.items.2.a	373.15 K
+me-thermo.c1.viz.items.2.b	100 °C
+me-thermo.c2.title	First law
+me-thermo.c2.text	Energy can't be created or destroyed. Heat added to a system goes into raising its internal energy or doing work.
+me-thermo.c2.viz.f	ΔU = Q − W
+me-thermo.c2.viz.items.0.s	ΔU
+me-thermo.c2.viz.items.0.m	change in internal energy
+me-thermo.c2.viz.items.1.s	Q
+me-thermo.c2.viz.items.1.m	heat added
+me-thermo.c2.viz.items.2.s	W
+me-thermo.c2.viz.items.2.m	work done by the system
+me-thermo.c3.title	Second law
+me-thermo.c3.text	Heat flows naturally from hot to cold, never the reverse on its own. Every real process creates some disorder (entropy), which is why no engine can turn all heat into work.
+me-thermo.c3.viz.steps.0	Hot reservoir
+me-thermo.c3.viz.steps.1	Engine does some work
+me-thermo.c3.viz.steps.2	Rest of the heat dumped
+me-thermo.c3.viz.steps.3	Cold reservoir
+me-thermo.c4.title	Carnot efficiency
+me-thermo.c4.text	The maximum possible efficiency of a heat engine depends only on its hot and cold temperatures, in kelvin.
+me-thermo.c4.example.0	Steam at 550 °C (823 K), river at 20 °C (293 K)
+me-thermo.c4.example.1	1 − 293 ÷ 823
+me-thermo.c4.example.2	≈ 64% maximum
+me-thermo.c4.viz.f	η max = 1 − T cold ÷ T hot
+me-thermo.c4.viz.items.0.s	T
+me-thermo.c4.viz.items.0.m	absolute temperatures (K)
+me-thermo.c5.title	Heat engines and heat pumps
+me-thermo.c5.text	A heat engine uses heat flow to make work. A heat pump does the reverse: uses work to move heat from cold to hot. Same physics, opposite direction.
+me-thermo.c5.viz.l.t	Heat engine
+me-thermo.c5.viz.l.items.0	heat in, work out
+me-thermo.c5.viz.l.items.1	car engine, power station
+me-thermo.c5.viz.r.t	Heat pump
+me-thermo.c5.viz.r.items.0	work in, heat moved
+me-thermo.c5.viz.r.items.1	fridge, air conditioner
+me-thermo.c6.title	The refrigeration cycle
+me-thermo.c6.text	A refrigerant evaporates in the cold side (absorbing heat), is compressed (getting hot), condenses in the hot side (releasing heat) and expands back. Fridges and heat pumps use this loop.
+me-thermo.c6.viz.steps.0	Evaporate: absorbs heat
+me-thermo.c6.viz.steps.1	Compress: gets hot
+me-thermo.c6.viz.steps.2	Condense: releases heat
+me-thermo.c6.viz.steps.3	Expand: cools again
+me-thermo.c7.title	Specific heat and storage
+me-thermo.c7.text	Water stores a lot of heat per kilo, which makes it ideal for heating systems and thermal storage tanks. Stone and concrete store heat too: thermal mass keeps old houses cool in summer.
+me-thermo.c7.viz.unit	J per kg per °C
+me-thermo.c7.viz.items.0.l	Steel
+me-thermo.c7.viz.items.1.l	Concrete
+me-thermo.c7.viz.items.2.l	Air
+me-thermo.c7.viz.items.3.l	Water
+me-thermo.c8.title	Insulation and U-values
+me-thermo.c8.text	Heat loss through walls is measured with U-values: watts lost per m² per degree of difference. Lower is better. A well-insulated modern wall may be below 0.3; an old solid wall can exceed 1.5.
+me-thermo.c8.example.0	50 m² wall, U = 1.5, 15 °C difference
+me-thermo.c8.example.1	1.5 × 50 × 15
+me-thermo.c8.example.2	= 1,125 W lost
+me-thermo.c8.viz.f	Q = U × A × ΔT
+me-thermo.c8.viz.items.0.s	U
+me-thermo.c8.viz.items.0.m	W/m²·K
+me-thermo.c8.viz.items.1.s	A
+me-thermo.c8.viz.items.1.m	area
+me-thermo.c8.viz.items.2.s	ΔT
+me-thermo.c8.viz.items.2.m	inside minus outside
+me-thermo.c9.title	Phase changes
+me-thermo.c9.text	Melting ice and boiling water absorb large amounts of energy without changing temperature. Turning 1 kg of water at 100 °C into steam takes about 2.26 MJ, over five times the energy to heat it from 0 to 100 °C.
+me-thermo.c9.viz.unit	kJ per kg of water
+me-thermo.c9.viz.items.0.l	Heat 0→100 °C
+me-thermo.c9.viz.items.1.l	Boil at 100 °C
+me-wood.title	Wood and carpentry
+me-wood.summary	Grain, moisture, joints and timber in construction.
+me-wood.q0.q	Why leave room for wood to move in a floor?
+me-wood.q0.o0	To save wood
+me-wood.q0.o1	Wood shrinks and swells with humidity
+me-wood.q0.o2	For cables
+me-wood.q0.x	Moisture changes its size.
+me-wood.q1.q	Indoor timber should be dried to about…
+me-wood.q1.o0	50% moisture
+me-wood.q1.o1	8–12% moisture
+me-wood.q1.o2	0% moisture
+me-wood.q1.x	It must match indoor air.
+me-wood.q2.q	Which country is the world's largest cork producer?
+me-wood.q2.o0	Spain
+me-wood.q2.o1	Portugal
+me-wood.q2.o2	France
+me-wood.q2.x	Portugal supplies about half the world's cork.
+me-wood.c0.title	Hardwood and softwood
+me-wood.c0.text	Softwoods come from conifers (pine, spruce): fast-growing, light, used for structure. Hardwoods come from broadleaf trees (oak, chestnut, eucalyptus): usually denser and more durable.
+me-wood.c0.viz.l.t	Softwood
+me-wood.c0.viz.l.items.0	pine, spruce
+me-wood.c0.viz.l.items.1	light
+me-wood.c0.viz.l.items.2	framing and roofs
+me-wood.c0.viz.r.t	Hardwood
+me-wood.c0.viz.r.items.0	oak, chestnut
+me-wood.c0.viz.r.items.1	dense
+me-wood.c0.viz.r.items.2	floors, furniture, beams
+me-wood.c1.title	Moisture content
+me-wood.c1.text	Fresh-cut wood can be over 50% water by weight. It shrinks as it dries until it matches the air's humidity. Indoor timber should be dried to about 8–12% before use.
+me-wood.c1.viz.items.0.l	indoor furniture
+me-wood.c1.viz.items.1.l	outdoor timber
+me-wood.c1.viz.items.2.l	green timber
+me-wood.c2.title	Wood moves
+me-wood.c2.text	Wood shrinks and swells far more across the grain than along it. Doors stick in winter damp, floors gap in dry summers. Good carpentry leaves room for movement.
+me-wood.c2.viz.unit	% shrinkage green to dry (approx.)
+me-wood.c2.viz.items.0.l	Along the grain
+me-wood.c2.viz.items.1.l	Radial
+me-wood.c2.viz.items.2.l	Tangential
+me-wood.c3.title	Joints
+me-wood.c3.text	Traditional joints interlock pieces so the wood carries the load: mortise and tenon, dovetail, half-lap. Modern work also uses screws, dowels, biscuits and metal connectors.
+me-wood.c3.viz.items.0.a	mortise and tenon
+me-wood.c3.viz.items.0.b	frames, beams
+me-wood.c3.viz.items.1.a	dovetail
+me-wood.c3.viz.items.1.b	drawers, resists pulling
+me-wood.c3.viz.items.2.a	half-lap
+me-wood.c3.viz.items.2.b	crossings
+me-wood.c3.viz.items.3.a	dowels
+me-wood.c3.viz.items.3.b	hidden alignment
+me-wood.c4.title	Reading the grain
+me-wood.c4.text	Plane and chisel with the grain, like stroking a cat, to avoid tear-out. Knots are weak points and can fall out of thin boards.
+me-wood.c4.viz.items.0.w	planing against the grain
+me-wood.c4.viz.items.0.r	turn the board, plane downhill
+me-wood.c4.viz.items.1.w	knot at the joint
+me-wood.c4.viz.items.1.r	move the joint
+me-wood.c5.title	Glulam and CLT
+me-wood.c5.text	Engineered timber glues layers together. Glulam makes long, strong beams; cross-laminated timber (CLT) panels have layers at right angles and can form walls and floors of multi-storey buildings.
+me-wood.c5.viz.l.t	Glulam
+me-wood.c5.viz.l.items.0	layers in one direction
+me-wood.c5.viz.l.items.1	long beams and arches
+me-wood.c5.viz.r.t	CLT
+me-wood.c5.viz.r.items.0	crossed layers
+me-wood.c5.viz.r.items.1	wall and floor panels
+me-wood.c5.viz.r.items.2	tall timber buildings
+me-wood.c6.title	Protecting timber
+me-wood.c6.text	Rot needs moisture. Keep timber dry, ventilated and off the ground; use naturally durable species or treated wood outdoors. Woodworm and termites are managed with treatment and inspection.
+me-wood.c6.viz.items.0	Keep it dry
+me-wood.c6.viz.items.1	Ventilate
+me-wood.c6.viz.items.2	Lift it off the ground
+me-wood.c6.viz.items.3	Treat or choose durable species
+me-wood.c6.viz.items.4	Inspect regularly
+me-wood.c7.title	Timber in fire
+me-wood.c7.text	Thick timber chars on the outside, and the char layer insulates the core, so big beams keep their strength surprisingly long in a fire. Engineers design a char allowance into the sections.
+me-wood.c7.viz.steps.0	Fire
+me-wood.c7.viz.steps.1	Outer layer chars
+me-wood.c7.viz.steps.2	Char insulates the core
+me-wood.c7.viz.steps.3	Beam keeps carrying load
+me-wood.c8.title	Roof structures
+me-wood.c8.text	Traditional Portuguese roofs use timber rafters and battens under ceramic tiles. Trusses spread the roof load to the walls; good ventilation stops condensation rot.
+me-wood.c8.viz.steps.0	Tiles
+me-wood.c8.viz.steps.1	Battens
+me-wood.c8.viz.steps.2	Rafters or trusses
+me-wood.c8.viz.steps.3	Wall plates
+me-wood.c8.viz.steps.4	Walls
+me-wood.c9.title	Portugal's forests
+me-wood.c9.text	Eucalyptus, maritime pine and cork oak are Portugal's most common forest trees. Portugal is the world's largest cork producer, supplying roughly half the world's cork.
+me-wood.c9.viz.unit	% of forest area (approx.)
+me-wood.c9.viz.items.0.l	Eucalyptus
+me-wood.c9.viz.items.1.l	Cork oak
+me-wood.c9.viz.items.2.l	Maritime pine
+me-wood.c9.viz.items.3.l	Holm oak
+me-wood.c9.viz.items.4.l	Other
+me-construction.title	Building a comfortable home
+me-construction.summary	Insulation, windows, thermal bridges and ventilation.
+me-construction.q0.q	Where does an uninsulated house often lose a large share of its heat, and is cheap to fix first?
+me-construction.q0.o0	Doors
+me-construction.q0.o1	The roof
+me-construction.q0.o2	The chimney
+me-construction.q0.x	Roof insulation is usually the best first step.
+me-construction.q1.q	What is a thermal bridge?
+me-construction.q1.o0	A wooden bridge
+me-construction.q1.o1	A weak spot where heat bypasses the insulation
+me-construction.q1.o2	A type of window
+me-construction.q1.x	They cause cold spots and mould.
+me-construction.q2.q	What does MVHR do?
+me-construction.q2.o0	Heats water
+me-construction.q2.o1	Ventilates while recovering heat from outgoing air
+me-construction.q2.o2	Cools the roof
+me-construction.q2.x	Mechanical ventilation with heat recovery.
+me-construction.c0.title	The building envelope
+me-construction.c0.text	Walls, roof, floor and windows form the envelope that separates inside from outside. Its insulation, airtightness and shading decide how much energy the home needs.
+me-construction.c0.viz.root	Envelope
+me-construction.c0.viz.items.0	Roof
+me-construction.c0.viz.items.1	Walls
+me-construction.c0.viz.items.2	Windows and doors
+me-construction.c0.viz.items.3	Floor
+me-construction.c1.title	Where heat escapes
+me-construction.c1.text	In an uninsulated house, the roof often loses the most heat, followed by walls, windows and draughts. Insulating the roof first is usually the best value.
+me-construction.c1.viz.unit	% of heat loss (typical uninsulated house)
+me-construction.c1.viz.items.0.l	Roof
+me-construction.c1.viz.items.1.l	Walls
+me-construction.c1.viz.items.2.l	Windows
+me-construction.c1.viz.items.3.l	Floor
+me-construction.c1.viz.items.4.l	Draughts
+me-construction.c2.title	External insulation (ETICS)
+me-construction.c2.text	Insulation boards fixed outside the walls and rendered over (the "capoto" system in Portugal) wrap the house in a continuous layer and keep the masonry warm, reducing thermal bridges.
+me-construction.c2.viz.l.t	External (ETICS/capoto)
+me-construction.c2.viz.l.items.0	continuous layer
+me-construction.c2.viz.l.items.1	no lost floor space
+me-construction.c2.viz.l.items.2	fewer thermal bridges
+me-construction.c2.viz.r.t	Internal
+me-construction.c2.viz.r.items.0	cheaper per room
+me-construction.c2.viz.r.items.1	loses space
+me-construction.c2.viz.r.items.2	harder at junctions
+me-construction.c3.title	Thermal bridges
+me-construction.c3.text	A thermal bridge is a weak spot where heat bypasses the insulation: concrete beams, balcony slabs, window reveals. They cause cold spots, condensation and mould.
+me-construction.c3.viz.items.0	Balcony slabs
+me-construction.c3.viz.items.1	Concrete beams and pillars
+me-construction.c3.viz.items.2	Window and door reveals
+me-construction.c3.viz.items.3	Wall–roof junctions
+me-construction.c4.title	Windows
+me-construction.c4.text	Double glazing with low-emissivity coating and a thermally broken frame loses far less heat than single glazing. External shading keeps summer sun out before it heats the room.
+me-construction.c4.viz.unit	U-value W/m²K (approx.)
+me-construction.c4.viz.items.0.l	Single glazing
+me-construction.c4.viz.items.1.l	Double glazing
+me-construction.c4.viz.items.2.l	Double low-e
+me-construction.c4.viz.items.3.l	Triple
+me-construction.c5.title	Airtightness
+me-construction.c5.text	Uncontrolled draughts waste heat and carry moisture into walls. Sealing gaps around windows, pipes and roof junctions is cheap and effective.
+me-construction.c5.viz.items.0	Seal window frames
+me-construction.c5.viz.items.1	Seal pipe and cable entries
+me-construction.c5.viz.items.2	Tape membranes at joints
+me-construction.c5.viz.items.3	Test with a blower door
+me-construction.c6.title	Ventilation
+me-construction.c6.text	A tight house needs controlled ventilation to remove moisture and stale air. Mechanical ventilation with heat recovery (MVHR) recovers most of the heat from the outgoing air.
+me-construction.c6.viz.steps.0	Stale warm air out
+me-construction.c6.viz.steps.1	Heat exchanger
+me-construction.c6.viz.steps.2	Fresh air warmed
+me-construction.c6.viz.steps.3	Into living rooms
+me-construction.c7.title	Condensation and mould
+me-construction.c7.text	Warm indoor air carries moisture; when it meets a cold surface, it condenses. Ventilation, insulation and avoiding cold spots prevent mould.
+me-construction.c7.viz.steps.0	Warm moist air
+me-construction.c7.viz.steps.1	Cold wall or window
+me-construction.c7.viz.steps.2	Condensation
+me-construction.c7.viz.steps.3	Mould
+me-construction.c8.title	Summer comfort
+me-construction.c8.text	In Portugal, keeping cool matters too: external blinds, shading, thermal mass, light colours and night ventilation often beat air conditioning.
+me-construction.c8.viz.items.0	External shutters
+me-construction.c8.viz.items.1	Overhangs and shading
+me-construction.c8.viz.items.2	Thermal mass
+me-construction.c8.viz.items.3	Night ventilation
+me-construction.c8.viz.items.4	Light-coloured roofs
+me-construction.c9.title	Energy certificates
+me-construction.c9.text	In Portugal, homes for sale or rent need an energy certificate (from A+ to F), issued through ADENE. It also recommends improvements.
+me-construction.c9.viz.items.0	A+ / A: very efficient
+me-construction.c9.viz.items.1	B / B−: good
+me-construction.c9.viz.items.2	C / D: average
+me-construction.c9.viz.items.3	E / F: inefficient
+me-water.title	Water in buildings
+me-water.summary	Pressure, pumps, pipes and drainage.
+me-water.q0.q	About how much pressure is 10 m of water head?
+me-water.q0.o0	0.1 bar
+me-water.q0.o1	1 bar
+me-water.q0.o2	10 bar
+me-water.q0.x	10 m ≈ 1 bar.
+me-water.q1.q	What causes water hammer?
+me-water.q1.o0	Hot water
+me-water.q1.o1	Sudden valve closure stopping moving water
+me-water.q1.o2	Low pressure
+me-water.q1.x	Momentum creates a pressure spike.
+me-water.q2.q	Why should hot water tanks reach about 60 °C periodically?
+me-water.q2.o0	To save energy
+me-water.q2.o1	To kill Legionella bacteria
+me-water.q2.o2	To increase pressure
+me-water.q2.x	Bacteria thrive at 25–45 °C.
+me-water.c0.title	Water pressure at home
+me-water.c0.text	Mains water usually arrives at about 2–5 bar. Too low and showers trickle; too high and taps hammer and appliances wear. A pressure-reducing valve fixes high pressure.
+me-water.c0.viz.unit	bar
+me-water.c0.viz.items.0.l	too low
+me-water.c0.viz.items.1.l	comfortable
+me-water.c0.viz.items.2.l	too high
+me-water.c1.title	Pipe sizing
+me-water.c1.text	Larger pipes carry more flow with less pressure loss. Long runs to an upstairs shower need bigger diameters than a short run to a basin.
+me-water.c1.viz.unit	flow at the same pressure loss (relative)
+me-water.c1.viz.items.0.l	16 mm
+me-water.c1.viz.items.1.l	20 mm
+me-water.c1.viz.items.2.l	26 mm
+me-water.c2.title	Pumps
+me-water.c2.text	Centrifugal pumps spin an impeller to push water. Each has a curve: more flow means less pressure (head). Choose the pump where its curve meets your system's needs.
+me-water.c2.viz.l.t	More flow
+me-water.c2.viz.l.items.0	less head
+me-water.c2.viz.r.t	More head
+me-water.c2.viz.r.items.0	less flow
+me-water.c3.title	Head and pressure
+me-water.c3.text	Pump "head" is the height it can lift water. 10 m of head equals about 1 bar.
+me-water.c3.viz.f	10 m head ≈ 1 bar
+me-water.c3.viz.items.0.s	lift to a tank 20 m up
+me-water.c3.viz.items.0.m	≈ 2 bar plus pipe losses
+me-water.c4.title	Water hammer
+me-water.c4.text	Closing a valve suddenly stops the flow, and the moving water's momentum creates a pressure spike that bangs pipes. Arrestors and slower-closing valves cure it.
+me-water.c4.viz.steps.0	Fast valve closes
+me-water.c4.viz.steps.1	Moving water stops abruptly
+me-water.c4.viz.steps.2	Pressure spike
+me-water.c4.viz.steps.3	Bang in the pipes
+me-water.c5.title	Hot water systems
+me-water.c5.text	Water heaters store hot water in a tank (termoacumulador), or heat it instantly (gas or electric instantaneous). Solar thermal panels and heat pumps can supply most hot water in Portugal.
+me-water.c5.viz.items.0.a	storage tank
+me-water.c5.viz.items.0.b	steady supply, standby losses
+me-water.c5.viz.items.1.a	instantaneous
+me-water.c5.viz.items.1.b	no tank, needs big power
+me-water.c5.viz.items.2.a	solar thermal
+me-water.c5.viz.items.2.b	free heat, needs backup
+me-water.c5.viz.items.3.a	heat pump
+me-water.c5.viz.items.3.b	3× efficient
+me-water.c6.title	Legionella
+me-water.c6.text	Bacteria can grow in stored water between 25 and 45 °C. Storage tanks should reach about 60 °C periodically, and taps should deliver below scalding temperature with mixing valves.
+me-water.c6.viz.unit	°C
+me-water.c6.viz.items.0.l	growth risk
+me-water.c6.viz.items.1.l	store at
+me-water.c6.viz.items.2.l	scalding risk
+me-water.c7.title	Drainage
+me-water.c7.text	Drains work by gravity, so pipes need a fall (slope) of about 1–2%. Traps (U-bends) hold water to block sewer smells, and vents stop them from being sucked dry.
+me-water.c7.viz.items.0	Slope of about 1–2%
+me-water.c7.viz.items.1	Traps under every fixture
+me-water.c7.viz.items.2	Vent pipes
+me-water.c7.viz.items.3	Access for cleaning
+me-water.c8.title	Rainwater harvesting
+me-water.c8.text	Collecting roof rainwater for toilets, gardens and washing machines saves mains water. A filter, a tank and a small pump are the main parts.
+me-water.c8.viz.steps.0	Roof
+me-water.c8.viz.steps.1	Gutters and filter
+me-water.c8.viz.steps.2	Tank
+me-water.c8.viz.steps.3	Pump
+me-water.c8.viz.steps.4	Toilets and garden
+me-water.c9.title	Measuring water levels
+me-water.c9.text	Tanks and wells are monitored with float switches, pressure sensors or ultrasonic sensors such as the JSN-SR04T, which send levels to a dashboard, even over LoRa from remote sites.
+me-water.c9.viz.steps.0	Ultrasonic sensor on the tank lid
+me-water.c9.viz.steps.1	Measure distance
+me-water.c9.viz.steps.2	Convert to level and litres
+me-water.c9.viz.steps.3	Send over LoRa
+me-making.title	How things are made
+me-making.summary	Casting, machining, forming, welding and 3D printing.
+me-making.q0.q	Which process is cheapest per part for very large volumes of plastic parts?
+me-making.q0.o0	3D printing
+me-making.q0.o1	Injection moulding
+me-making.q0.o2	Hand carving
+me-making.q0.x	Moulds are costly but each part is cheap.
+me-making.q1.q	What does a lathe make?
+me-making.q1.o0	Flat sheets
+me-making.q1.o1	Round parts, by spinning the workpiece
+me-making.q1.o2	Welds
+me-making.q1.x	The workpiece rotates against the tool.
+me-making.q2.q	Forging makes parts that are…
+me-making.q2.o0	Weak and light
+me-making.q2.o1	Very strong
+me-making.q2.o2	Transparent
+me-making.q2.x	Hammering refines the metal's structure.
+me-making.c0.title	Four families of processes
+me-making.c0.text	Most manufacturing either removes material (machining), shapes it (forging, bending, casting), joins it (welding, bolting) or adds it layer by layer (3D printing).
+me-making.c0.viz.root	Making things
+me-making.c0.viz.items.0	Remove: machining
+me-making.c0.viz.items.1	Shape: casting, forging
+me-making.c0.viz.items.2	Join: welding, gluing
+me-making.c0.viz.items.3	Add: 3D printing
+me-making.c1.title	Casting
+me-making.c1.text	Molten metal is poured into a mould and solidifies in its shape. Engine blocks, pump housings and art bronzes are cast. Die casting forces metal into steel moulds for mass production.
+me-making.c1.viz.steps.0	Melt the metal
+me-making.c1.viz.steps.1	Pour into a mould
+me-making.c1.viz.steps.2	Cool and solidify
+me-making.c1.viz.steps.3	Remove and finish
+me-making.c2.title	Machining
+me-making.c2.text	Lathes, mills and drills cut material away to precise shapes. CNC machines follow programmed paths and can hold tolerances of a few hundredths of a millimetre.
+me-making.c2.viz.items.0.a	lathe
+me-making.c2.viz.items.0.b	round parts, spinning workpiece
+me-making.c2.viz.items.1.a	mill
+me-making.c2.viz.items.1.b	flat surfaces and pockets
+me-making.c2.viz.items.2.a	drill
+me-making.c2.viz.items.2.b	holes
+me-making.c2.viz.items.3.a	CNC
+me-making.c2.viz.items.3.b	computer-controlled
+me-making.c3.title	Forming
+me-making.c3.text	Sheet metal is bent, stamped and pressed into shape: car bodies, cans, enclosures. Forging hammers hot metal into shape, giving very strong parts like crankshafts.
+me-making.c3.viz.l.t	Stamping
+me-making.c3.viz.l.items.0	sheet metal
+me-making.c3.viz.l.items.1	fast
+me-making.c3.viz.l.items.2	car panels
+me-making.c3.viz.r.t	Forging
+me-making.c3.viz.r.items.0	hot metal hammered
+me-making.c3.viz.r.items.1	very strong
+me-making.c3.viz.r.items.2	crankshafts, tools
+me-making.c4.title	Injection moulding
+me-making.c4.text	Melted plastic is injected into a steel mould and cools in seconds. Moulds are expensive, but each part then costs cents. Most plastic objects around you were made this way.
+me-making.c4.viz.unit	cost per part, € (illustrative)
+me-making.c4.viz.items.0.l	3D print
+me-making.c4.viz.items.1.l	Machined
+me-making.c4.viz.items.2.l	Injection moulded
+me-making.c5.title	Welding
+me-making.c5.text	Welding melts the edges of two metal parts so they fuse. MIG is fast and easy; TIG is precise and clean; stick welding works outdoors. Good welds need clean metal and the right heat.
+me-making.c5.viz.items.0.a	MIG
+me-making.c5.viz.items.0.b	wire feed, fast
+me-making.c5.viz.items.1.a	TIG
+me-making.c5.viz.items.1.b	precise, thin metals
+me-making.c5.viz.items.2.a	stick (MMA)
+me-making.c5.viz.items.2.b	simple, outdoors
+me-making.c5.viz.items.3.a	spot welding
+me-making.c5.viz.items.3.b	car bodies
+me-making.c6.title	3D printing
+me-making.c6.text	Additive manufacturing builds parts layer by layer. FDM printers melt plastic filament; resin printers cure liquid with light; metal printers fuse powder with lasers.
+me-making.c6.viz.l.t	FDM
+me-making.c6.viz.l.items.0	cheap
+me-making.c6.viz.l.items.1	strong enough for brackets
+me-making.c6.viz.l.items.2	visible layers
+me-making.c6.viz.r.t	Resin
+me-making.c6.viz.r.items.0	fine detail
+me-making.c6.viz.r.items.1	brittle
+me-making.c6.viz.r.items.2	messy post-processing
+me-making.c7.title	Design for manufacture
+me-making.c7.text	A part that's easy to design can be hard to make. Engineers adapt designs to the process: draft angles for moulding, standard drill sizes, minimum bend radii for sheet metal.
+me-making.c7.viz.items.0	Standard sizes and fasteners
+me-making.c7.viz.items.1	Draft angles for moulding
+me-making.c7.viz.items.2	Avoid tight internal corners
+me-making.c7.viz.items.3	Fewer parts
+me-making.c8.title	Mass production
+me-making.c8.text	Henry Ford's moving assembly line (1913) cut the time to build a Model T chassis from about 12 hours to about 1.5. Today's factories add robots, sensors and software.
+me-making.c8.viz.unit	hours per Model T chassis (approx.)
+me-making.c8.viz.items.0.l	Before 1913
+me-making.c8.viz.items.1.l	Assembly line
+me-making.c9.title	Quality control
+me-making.c9.text	Factories measure parts with gauges, coordinate measuring machines and cameras. Statistical process control spots drift before parts go out of tolerance.
+me-making.c9.viz.steps.0	Make parts
+me-making.c9.viz.steps.1	Measure samples
+me-making.c9.viz.steps.2	Chart the results
+me-making.c9.viz.steps.3	Correct drift early
+me-measure.title	Measurement and tolerances
+me-measure.summary	Units, precision and making parts fit.
+me-measure.q0.q	A tool is consistent but always reads 2 mm too high. It is…
+me-measure.q0.o0	Accurate but not precise
+me-measure.q0.o1	Precise but not accurate
+me-measure.q0.o2	Both
+me-measure.q0.x	Consistent but offset from the truth.
+me-measure.q1.q	What is an interference fit?
+me-measure.q1.o0	A loose sliding fit
+me-measure.q1.o1	A part pressed into a slightly smaller hole
+me-measure.q1.o2	A painted joint
+me-measure.q1.x	The shaft is slightly larger than the hole.
+me-measure.q2.q	One inch equals exactly…
+me-measure.q2.o0	2.5 cm
+me-measure.q2.o1	25.4 mm
+me-measure.q2.o2	30 mm
+me-measure.q2.x	Defined as 25.4 mm.
+me-measure.c0.title	The SI system
+me-measure.c0.text	Engineering uses SI units: metre, kilogram, second, ampere, kelvin. Derived units build on them: newton, pascal, joule, watt. Mixing units causes expensive mistakes.
+me-measure.c0.viz.items.0.a	metre
+me-measure.c0.viz.items.0.b	length
+me-measure.c0.viz.items.1.a	kilogram
+me-measure.c0.viz.items.1.b	mass
+me-measure.c0.viz.items.2.a	second
+me-measure.c0.viz.items.2.b	time
+me-measure.c0.viz.items.3.a	newton
+me-measure.c0.viz.items.3.b	force
+me-measure.c0.viz.items.4.a	pascal
+me-measure.c0.viz.items.4.b	pressure
+me-measure.c1.title	The Mars Climate Orbiter
+me-measure.c1.text	In 1999 NASA lost a €100-million-plus probe because one team used pound-force seconds and another expected newton-seconds. The spacecraft flew too low into Mars' atmosphere.
+me-measure.c1.viz.items.0.w	one team in imperial, one in metric
+me-measure.c1.viz.items.0.r	agree units and check interfaces
+me-measure.c2.title	Accuracy vs precision
+me-measure.c2.text	Accuracy is how close you are to the true value; precision is how consistent repeated measurements are. A tool can be precise but wrong if it's not calibrated.
+me-measure.c2.viz.l.t	Accurate
+me-measure.c2.viz.l.items.0	close to the true value
+me-measure.c2.viz.r.t	Precise
+me-measure.c2.viz.r.items.0	readings close to each other
+me-measure.c3.title	Tolerances
+me-measure.c3.text	No part is made exactly to size. A tolerance states the acceptable range, such as 20.00 ± 0.05 mm. Tighter tolerances cost more, so use them only where needed.
+me-measure.c3.viz.unit	mm
+me-measure.c3.viz.items.0.l	minimum
+me-measure.c3.viz.items.1.l	nominal
+me-measure.c3.viz.items.2.l	maximum
+me-measure.c4.title	Fits
+me-measure.c4.text	Shafts and holes are matched by fit: clearance (slides freely), transition (snug), or interference (pressed in). Standard fit systems like ISO 286 define them, such as H7/g6.
+me-measure.c4.viz.items.0.a	clearance fit
+me-measure.c4.viz.items.0.b	slides
+me-measure.c4.viz.items.1.a	transition fit
+me-measure.c4.viz.items.1.b	snug, locates
+me-measure.c4.viz.items.2.a	interference fit
+me-measure.c4.viz.items.2.b	pressed or shrunk in
+me-measure.c5.title	Measuring tools
+me-measure.c5.text	A tape measures to about a millimetre; calipers to 0.02 mm; micrometers to 0.001 mm. Choose a tool at least ten times finer than the tolerance you're checking.
+me-measure.c5.viz.unit	resolution (mm)
+me-measure.c5.viz.items.0.l	Tape measure
+me-measure.c5.viz.items.1.l	Calipers
+me-measure.c5.viz.items.2.l	Micrometer
+me-measure.c6.title	Significant figures
+me-measure.c6.text	"2 m" and "2.000 m" mean different precision. Don't report more digits than your measurement supports; a calculator showing 3.14159 doesn't make a rough measurement precise.
+me-measure.c6.viz.items.0.w	2.3456 m from a tape measure
+me-measure.c6.viz.items.0.r	2.35 m
+me-measure.c6.viz.items.1.w	9.8762 kN from rough estimates
+me-measure.c6.viz.items.1.r	about 10 kN
+me-measure.c7.title	Calibration
+me-measure.c7.text	Instruments drift. Calibration compares them against a reference standard and corrects them. Torque wrenches, scales and pressure gauges in industry are calibrated on a schedule.
+me-measure.c7.viz.steps.0	Use the instrument
+me-measure.c7.viz.steps.1	Compare with a reference
+me-measure.c7.viz.steps.2	Adjust or record error
+me-measure.c7.viz.steps.3	Schedule the next check
+me-measure.c8.title	Errors add up
+me-measure.c8.text	When parts stack together, their tolerances add. Ten parts each ±0.1 mm could, in the worst case, be off by ±1 mm together. Statistical tolerancing estimates the realistic spread.
+me-measure.c8.viz.f	worst case = n × tolerance
+me-measure.c8.viz.items.0.s	10 parts × ±0.1 mm
+me-measure.c8.viz.items.0.m	±1.0 mm
+me-measure.c8.viz.items.1.s	statistical (√10 × 0.1)
+me-measure.c8.viz.items.1.m	≈ ±0.32 mm
+me-measure.c9.title	Imperial units still around
+me-measure.c9.text	Pipes, tyres, screens and some bolts still use inches; aviation uses feet and knots. One inch is exactly 25.4 mm.
+me-measure.c9.viz.items.0.a	1 inch
+me-measure.c9.viz.items.0.b	25.4 mm
+me-measure.c9.viz.items.1.a	1 foot
+me-measure.c9.viz.items.1.b	0.3048 m
+me-measure.c9.viz.items.2.a	1 psi
+me-measure.c9.viz.items.2.b	0.069 bar
+me-measure.c9.viz.items.3.a	1 knot
+me-measure.c9.viz.items.3.b	1.852 km/h
+me-failure.title	When things fail
+me-failure.summary	Fatigue, corrosion, creep and famous lessons.
+me-failure.q0.q	What causes most mechanical failures in machines and aircraft?
+me-failure.q0.o0	Overload
+me-failure.q0.o1	Fatigue from repeated loading
+me-failure.q0.o2	Melting
+me-failure.q0.x	Cracks grow with each cycle.
+me-failure.q1.q	Why did the Comet airliner crashes lead to rounded windows?
+me-failure.q1.o0	They look nicer
+me-failure.q1.o1	Square corners concentrated stress and started fatigue cracks
+me-failure.q1.o2	Rounded glass is cheaper
+me-failure.q1.x	Stress concentrations at corners.
+me-failure.q2.q	What is creep?
+me-failure.q2.o0	Rust
+me-failure.q2.o1	Slow permanent stretching under constant load, especially when hot
+me-failure.q2.o2	A fast crack
+me-failure.q2.x	It grows over time.
+me-failure.c0.title	Overload
+me-failure.c0.text	The simplest failure: the load exceeds what the part can carry. Safety factors, good load estimates and checking for misuse prevent most of these.
+me-failure.c0.viz.steps.0	Load grows beyond design
+me-failure.c0.viz.steps.1	Stress exceeds strength
+me-failure.c0.viz.steps.2	Yield or fracture
+me-failure.c1.title	Fatigue
+me-failure.c1.text	Repeated loading, even well below the breaking strength, can grow tiny cracks until a part snaps. Fatigue causes most mechanical failures in machines, aircraft and bridges.
+me-failure.c1.viz.steps.0	Repeated loads
+me-failure.c1.viz.steps.1	Tiny crack at a stress point
+me-failure.c1.viz.steps.2	Crack grows each cycle
+me-failure.c1.viz.steps.3	Sudden fracture
+me-failure.c2.title	Beach marks
+me-failure.c2.text	Fatigue fractures often show curved "beach marks" on the broken surface, recording how the crack advanced, and a rougher final zone where it finally snapped.
+me-failure.c2.viz.l.t	Fatigue zone
+me-failure.c2.viz.l.items.0	smooth with beach marks
+me-failure.c2.viz.l.items.1	slow growth
+me-failure.c2.viz.r.t	Final fracture
+me-failure.c2.viz.r.items.0	rough
+me-failure.c2.viz.r.items.1	sudden
+me-failure.c3.title	Corrosion
+me-failure.c3.text	Corrosion eats away metal, reducing its section and creating stress concentrations. Salt, water and dissimilar metals in contact speed it up.
+me-failure.c3.viz.items.0	Salt and moisture
+me-failure.c3.viz.items.1	Trapped water
+me-failure.c3.viz.items.2	Dissimilar metals (galvanic)
+me-failure.c3.viz.items.3	Damaged coatings
+me-failure.c4.title	Creep
+me-failure.c4.text	Under constant load at high temperature, metals slowly stretch over time. Turbine blades and boiler tubes are designed for creep; even lead pipes and plastic shelves creep at room temperature.
+me-failure.c4.viz.events.0.y	year 0
+me-failure.c4.viz.events.0.l	installed
+me-failure.c4.viz.events.1.y	year 5
+me-failure.c4.viz.events.1.l	slight stretch
+me-failure.c4.viz.events.2.y	year 15
+me-failure.c4.viz.events.2.l	noticeable sag
+me-failure.c4.viz.events.3.y	year 25
+me-failure.c4.viz.events.3.l	replace
+me-failure.c5.title	The Comet airliner
+me-failure.c5.text	The de Havilland Comet, the first jet airliner, suffered fatal crashes in 1954 caused by metal fatigue starting at the corners of square openings in its pressurised cabin. Rounded windows became standard.
+me-failure.c5.viz.items.0.w	square cabin openings
+me-failure.c5.viz.items.0.r	rounded windows and stronger frames
+me-failure.c6.title	The 2001 Entre-os-Rios bridge collapse
+me-failure.c6.text	In March 2001, a pier of the Hintze Ribeiro bridge over the Douro collapsed, killing 59 people. Years of riverbed erosion, aggravated by sand extraction, had undermined its foundation. Portugal tightened bridge inspections afterwards.
+me-failure.c6.viz.steps.0	Sand extraction and floods
+me-failure.c6.viz.steps.1	Riverbed eroded around pier
+me-failure.c6.viz.steps.2	Foundation undermined
+me-failure.c6.viz.steps.3	Collapse, 2001
+me-failure.c7.title	Human and organisational factors
+me-failure.c7.text	Many failures come from design errors, poor maintenance, skipped inspections or ignored warnings, not just materials. Good engineering includes checking and learning from near-misses.
+me-failure.c7.viz.items.0	Design checks by a second engineer
+me-failure.c7.viz.items.1	Maintenance done and recorded
+me-failure.c7.viz.items.2	Warnings acted on
+me-failure.c7.viz.items.3	Learning from near-misses
+me-failure.c8.title	Redundancy
+me-failure.c8.text	Critical systems have backups so one failure doesn't cause disaster: multiple cables on a bridge, two engines on airliners, extra bolts in a joint.
+me-failure.c8.viz.l.t	Single load path
+me-failure.c8.viz.l.items.0	one failure, collapse
+me-failure.c8.viz.r.t	Redundant
+me-failure.c8.viz.r.items.0	others take over
+me-failure.c8.viz.r.items.1	time to repair
+me-failure.c9.title	Root cause analysis
+me-failure.c9.text	After a failure, engineers ask "why?" repeatedly to reach the underlying cause, not just the broken part. Fixing only the symptom lets it happen again.
+me-failure.c9.viz.steps.0	Pump failed
+me-failure.c9.viz.steps.1	Why? Bearing seized
+me-failure.c9.viz.steps.2	Why? No lubrication
+me-failure.c9.viz.steps.3	Why? No maintenance schedule
+me-failure.c9.viz.steps.4	Fix the schedule
+me-design.title	The engineering design process
+me-design.summary	From problem to working product.
+me-design.q0.q	When is fixing a design problem cheapest?
+me-design.q0.o0	In production
+me-design.q0.o1	At the concept stage
+me-design.q0.o2	After customer complaints
+me-design.q0.x	Costs multiply at each later stage.
+me-design.q1.q	What is a decision matrix used for?
+me-design.q1.o0	Drawing parts
+me-design.q1.o1	Comparing design concepts against weighted criteria
+me-design.q1.o2	Testing materials
+me-design.q1.x	It structures concept selection.
+me-design.q2.q	What does CE marking indicate?
+me-design.q2.o0	Made in Europe
+me-design.q2.o1	Conformity with EU safety and other requirements
+me-design.q2.o2	Certified engineer
+me-design.q2.x	It's the EU conformity mark.
+me-design.c0.title	Start with the problem
+me-design.c0.text	Good design starts by defining the problem and the requirements clearly: what must it do, under what conditions, at what cost, by when? A great solution to the wrong problem is worthless.
+me-design.c0.viz.items.0	What must it do?
+me-design.c0.viz.items.1	Under which conditions?
+me-design.c0.viz.items.2	Budget and deadline?
+me-design.c0.viz.items.3	Who will use and maintain it?
+me-design.c1.title	The design cycle
+me-design.c1.text	Design is iterative: define, generate ideas, choose, build a prototype, test, learn, improve. Several loops are normal.
+me-design.c1.viz.steps.0	Define
+me-design.c1.viz.steps.1	Ideate
+me-design.c1.viz.steps.2	Prototype
+me-design.c1.viz.steps.3	Test and learn
+me-design.c2.title	Requirements: must vs nice
+me-design.c2.text	Separate must-haves from nice-to-haves. A clear list helps choose between options and stops scope creep.
+me-design.c2.viz.l.t	Must have
+me-design.c2.viz.l.items.0	safety
+me-design.c2.viz.l.items.1	core function
+me-design.c2.viz.l.items.2	legal compliance
+me-design.c2.viz.r.t	Nice to have
+me-design.c2.viz.r.items.0	extra features
+me-design.c2.viz.r.items.1	finishes
+me-design.c2.viz.r.items.2	future options
+me-design.c3.title	Concept selection
+me-design.c3.text	Engineers compare options with a decision matrix: score each concept against weighted criteria like cost, weight, reliability and ease of manufacture.
+me-design.c3.viz.unit	weighted score
+me-design.c3.viz.items.0.l	Concept A
+me-design.c3.viz.items.1.l	Concept B
+me-design.c3.viz.items.2.l	Concept C
+me-design.c4.title	Prototyping
+me-design.c4.text	Build quick, cheap prototypes to learn early: cardboard, 3D prints, breadboards. Failing early costs little; failing after production costs a lot.
+me-design.c4.viz.unit	relative cost to fix a problem (illustrative)
+me-design.c4.viz.items.0.l	Concept
+me-design.c4.viz.items.1.l	Design
+me-design.c4.viz.items.2.l	Prototype
+me-design.c4.viz.items.3.l	Production
+me-design.c5.title	Testing
+me-design.c5.text	Tests check the design meets its requirements, including extremes: heat, cold, vibration, water, misuse. Many products are tested to failure to learn their real limits.
+me-design.c5.viz.items.0	Functional tests
+me-design.c5.viz.items.1	Environmental tests
+me-design.c5.viz.items.2	Durability and fatigue
+me-design.c5.viz.items.3	Misuse and safety
+me-design.c5.viz.items.4	User trials
+me-design.c6.title	Trade-offs
+me-design.c6.text	Every design balances competing goals: lighter often means more expensive; stronger often means heavier; cheaper may mean shorter life. The engineer's job is the best balance for the purpose.
+me-design.c6.viz.items.0.a	lighter
+me-design.c6.viz.items.0.b	costlier materials
+me-design.c6.viz.items.1.a	stronger
+me-design.c6.viz.items.1.b	heavier
+me-design.c6.viz.items.2.a	cheaper
+me-design.c6.viz.items.2.b	shorter life
+me-design.c6.viz.items.3.a	faster to market
+me-design.c6.viz.items.3.b	less testing
+me-design.c7.title	Standards and codes
+me-design.c7.text	Standards (EN, ISO, IEC) capture decades of lessons. Following them makes products safer, compatible and legally sellable, like CE marking in Europe.
+me-design.c7.viz.items.0.a	EN
+me-design.c7.viz.items.0.b	European standards
+me-design.c7.viz.items.1.a	ISO
+me-design.c7.viz.items.1.b	international standards
+me-design.c7.viz.items.2.a	IEC
+me-design.c7.viz.items.2.b	electrical standards
+me-design.c7.viz.items.3.a	CE
+me-design.c7.viz.items.3.b	EU conformity mark
+me-design.c8.title	Documentation
+me-design.c8.text	Drawings, calculations, test reports and decisions must be recorded so others can build, check, maintain and improve the design later.
+me-design.c8.viz.items.0	Drawings and models
+me-design.c8.viz.items.1	Calculations
+me-design.c8.viz.items.2	Test results
+me-design.c8.viz.items.3	Decision log
+me-design.c8.viz.items.4	Maintenance instructions
+me-design.c9.title	Systems thinking
+me-design.c9.text	A product is a system of parts that interact. Changing one part, such as a bigger motor, can affect power supply, heat, weight and cost elsewhere. Systems engineering keeps the whole in view.
+me-design.c9.viz.steps.0	Bigger motor
+me-design.c9.viz.steps.1	Needs more current
+me-design.c9.viz.steps.2	Bigger cables and battery
+me-design.c9.viz.steps.3	More weight and cost

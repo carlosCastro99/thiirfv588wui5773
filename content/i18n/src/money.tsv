@@ -1,0 +1,1558 @@
+P.title	Money
+P.blurb	How money works, budgeting, compound interest and investing basics.
+mo-basics.title	How money works
+mo-basics.summary	What money is and where it comes from.
+mo-basics.q0.q	Roughly how long does it take for prices to double at 2% inflation?
+mo-basics.q0.o0	10 years
+mo-basics.q0.o1	About 35 years
+mo-basics.q0.o2	72 years
+mo-basics.q0.x	72 ÷ 2 = 36.
+mo-basics.q1.q	What gives euro notes their value today?
+mo-basics.q1.o0	Gold in Frankfurt
+mo-basics.q1.o1	Trust and law
+mo-basics.q1.o2	Silver
+mo-basics.q1.x	It's fiat money.
+mo-basics.q2.q	Most money in the economy exists as…
+mo-basics.q2.o0	coins
+mo-basics.q2.o1	notes
+mo-basics.q2.o2	bank deposits
+mo-basics.q2.x	Digital numbers in accounts.
+mo-basics.c0.title	What money does
+mo-basics.c0.text	Money has three jobs: a medium of exchange (you can buy with it), a unit of account (prices are measured in it) and a store of value (it keeps worth over time).
+mo-basics.c0.viz.root	Money
+mo-basics.c0.viz.items.0	Medium of exchange
+mo-basics.c0.viz.items.1	Unit of account
+mo-basics.c0.viz.items.2	Store of value
+mo-basics.c1.title	From barter to apps
+mo-basics.c1.text	Barter needs a double coincidence of wants: you must find someone who has what you want and wants what you have. Money solved that.
+mo-basics.c1.viz.events.0.y	Prehistory
+mo-basics.c1.viz.events.0.l	barter
+mo-basics.c1.viz.events.1.y	~600 BCE
+mo-basics.c1.viz.events.1.l	coins in Lydia
+mo-basics.c1.viz.events.2.y	~1000 CE
+mo-basics.c1.viz.events.2.l	paper money in China
+mo-basics.c1.viz.events.3.y	1950s
+mo-basics.c1.viz.events.3.l	credit cards
+mo-basics.c1.viz.events.4.y	2010s
+mo-basics.c1.viz.events.4.l	mobile payments
+mo-basics.c2.title	Fiat money
+mo-basics.c2.text	Euro notes aren't backed by gold. Their value comes from trust and from law: governments accept them for taxes and require them to be accepted for debts.
+mo-basics.c2.viz.l.t	Gold standard
+mo-basics.c2.viz.l.items.0	notes backed by gold
+mo-basics.c2.viz.l.items.1	ended 1971
+mo-basics.c2.viz.r.t	Fiat money
+mo-basics.c2.viz.r.items.0	backed by trust and law
+mo-basics.c2.viz.r.items.1	today's euro and dollar
+mo-basics.c3.title	Most money is digital
+mo-basics.c3.text	Physical notes and coins are a small part of the money supply. Most money exists as numbers in bank accounts, created when banks lend.
+mo-basics.c3.viz.unit	% of euro area money (approx.)
+mo-basics.c3.viz.items.0.l	Cash
+mo-basics.c3.viz.items.1.l	Bank deposits
+mo-basics.c4.title	Central banks
+mo-basics.c4.text	The European Central Bank sets interest rates for the euro area, aiming for inflation close to 2% a year. Banco de Portugal is part of this system.
+mo-basics.c4.viz.steps.0	ECB sets rates
+mo-basics.c4.viz.steps.1	Banks' loan costs change
+mo-basics.c4.viz.steps.2	Spending and saving change
+mo-basics.c4.viz.steps.3	Inflation moves
+mo-basics.c5.title	Inflation
+mo-basics.c5.text	Inflation means prices rise over time, so each euro buys less. At 2% a year, prices double in about 35 years.
+mo-basics.c5.viz.unit	price of a basket, € (2% a year)
+mo-basics.c5.viz.items.0.l	Today
+mo-basics.c5.viz.items.1.l	10 years
+mo-basics.c5.viz.items.2.l	20 years
+mo-basics.c5.viz.items.3.l	35 years
+mo-basics.c6.title	The rule of 72
+mo-basics.c6.text	Divide 72 by an annual percentage rate to estimate how many years it takes for something to double. It works for prices, savings and debts.
+mo-basics.c6.formula	years ≈ 72 ÷ rate
+mo-basics.c6.viz.f	years to double ≈ 72 ÷ rate
+mo-basics.c6.viz.items.0.s	rate
+mo-basics.c6.viz.items.0.m	% per year
+mo-basics.c6.viz.items.1.m	about 12 years
+mo-basics.c7.title	Interest
+mo-basics.c7.text	Interest is the price of money. Borrowers pay it; savers earn it. Higher central bank rates usually mean pricier loans and better savings rates.
+mo-basics.c7.viz.l.t	Borrower
+mo-basics.c7.viz.l.items.0	pays interest
+mo-basics.c7.viz.l.items.1	higher rates hurt
+mo-basics.c7.viz.r.t	Saver
+mo-basics.c7.viz.r.items.0	earns interest
+mo-basics.c7.viz.r.items.1	higher rates help
+mo-basics.c8.title	Supply and demand
+mo-basics.c8.text	Prices rise when many people want something scarce, and fall when it's plentiful or unwanted. Concert tickets and summer flights are classic examples.
+mo-basics.c8.viz.items.0.a	High demand, low supply
+mo-basics.c8.viz.items.0.b	prices up
+mo-basics.c8.viz.items.1.a	Low demand, high supply
+mo-basics.c8.viz.items.1.b	prices down
+mo-basics.c8.viz.items.2.a	Both balanced
+mo-basics.c8.viz.items.2.b	stable price
+mo-basics.c9.title	Inflation eats cash
+mo-basics.c9.text	€10,000 kept under the mattress for 10 years with 3% inflation would buy what about €7,400 buys today.
+mo-basics.c9.example.0	Value = 10,000 ÷ 1.03¹⁰
+mo-basics.c9.example.1	1.03¹⁰ ≈ 1.344
+mo-basics.c9.example.2	10,000 ÷ 1.344 ≈ €7,440
+mo-basics.c9.viz.unit	buying power, €
+mo-basics.c9.viz.items.0.l	Today
+mo-basics.c9.viz.items.1.l	After 5 years
+mo-basics.c9.viz.items.2.l	After 10 years
+mo-budget.title	Budgeting
+mo-budget.summary	Making money decisions on purpose.
+mo-budget.q0.q	How big should an emergency fund usually be?
+mo-budget.q0.o0	1 week of costs
+mo-budget.q0.o1	3–6 months of essential costs
+mo-budget.q0.o2	5 years of salary
+mo-budget.q0.x	Kept in easy access.
+mo-budget.q1.q	In 50/30/20, what is the 20% for?
+mo-budget.q1.o0	Wants
+mo-budget.q1.o1	Needs
+mo-budget.q1.o2	Savings and paying off debt
+mo-budget.q1.x	A simple starting split.
+mo-budget.c0.title	Pay yourself first
+mo-budget.c0.text	Move savings out as soon as your salary arrives, not with what's left at the end of the month; there's rarely anything left.
+mo-budget.c0.viz.l.t	Usual
+mo-budget.c0.viz.l.items.0	earn
+mo-budget.c0.viz.l.items.1	spend
+mo-budget.c0.viz.l.items.2	save the leftovers
+mo-budget.c0.viz.r.t	Better
+mo-budget.c0.viz.r.items.0	earn
+mo-budget.c0.viz.r.items.1	save first
+mo-budget.c0.viz.r.items.2	spend the rest
+mo-budget.c1.title	The 50/30/20 rule
+mo-budget.c1.text	A simple starting split of take-home pay: 50% on needs, 30% on wants and 20% on savings or paying off debt. Adjust to your situation.
+mo-budget.c1.viz.unit	% of take-home pay
+mo-budget.c1.viz.items.0.l	Needs
+mo-budget.c1.viz.items.1.l	Wants
+mo-budget.c1.viz.items.2.l	Savings and debt
+mo-budget.c2.title	Needs vs wants
+mo-budget.c2.text	Needs are things you must pay for (rent, food, transport, bills). Wants make life nicer but are optional. Many things have a need part and a want part.
+mo-budget.c2.viz.items.0.a	Rent
+mo-budget.c2.viz.items.0.b	need
+mo-budget.c2.viz.items.1.a	Food shopping
+mo-budget.c2.viz.items.1.b	need
+mo-budget.c2.viz.items.2.a	Restaurant
+mo-budget.c2.viz.items.2.b	want
+mo-budget.c2.viz.items.3.a	Phone
+mo-budget.c2.viz.items.3.b	need, but the latest model is a want
+mo-budget.c3.title	Emergency fund
+mo-budget.c3.text	Keep three to six months of essential expenses in an easy-access savings account. It turns a crisis, like losing a job or a broken car, into an inconvenience.
+mo-budget.c3.viz.items.0.v	3–6 months
+mo-budget.c3.viz.items.0.l	of essential costs
+mo-budget.c3.viz.items.1.v	Easy access
+mo-budget.c3.viz.items.1.l	not invested
+mo-budget.c3.viz.items.2.v	First goal
+mo-budget.c3.viz.items.2.l	before investing
+mo-budget.c4.title	Track first
+mo-budget.c4.text	Most people underestimate small, frequent spending. Track every expense for one month before making a budget; the results usually surprise.
+mo-budget.c4.viz.unit	€ a month
+mo-budget.c4.viz.items.0.l	Coffee out
+mo-budget.c4.viz.items.1.l	Subscriptions
+mo-budget.c4.viz.items.2.l	Delivery apps
+mo-budget.c4.viz.items.3.l	Snacks
+mo-budget.c5.title	Subscriptions creep
+mo-budget.c5.text	Streaming, apps, gym and cloud storage: €8 here, €12 there, and you may be paying for things you don't use. Check bank statements and cancel what you've forgotten.
+mo-budget.c5.viz.items.0	Streaming services
+mo-budget.c5.viz.items.1	Music
+mo-budget.c5.viz.items.2	Cloud storage
+mo-budget.c5.viz.items.3	Gym
+mo-budget.c5.viz.items.4	Apps and games
+mo-budget.c6.title	The latte factor, in perspective
+mo-budget.c6.text	Small daily savings add up, but big decisions, such as rent, car and housing, matter more. Optimise the big three before agonising over a coffee.
+mo-budget.c6.viz.unit	yearly cost, €
+mo-budget.c6.viz.items.0.l	Daily coffee
+mo-budget.c6.viz.items.1.l	Cheaper phone plan
+mo-budget.c6.viz.items.2.l	Smaller car loan
+mo-budget.c7.title	Mental accounting
+mo-budget.c7.text	We treat money differently depending on where it came from: a tax refund feels like "free money" and gets spent. A euro is a euro wherever it comes from.
+mo-budget.c7.viz.items.0.w	"It's a bonus, so I can blow it"
+mo-budget.c7.viz.items.0.r	"A euro is a euro: does this fit my plan?"
+mo-budget.c8.title	Lifestyle inflation
+mo-budget.c8.text	When pay rises, spending tends to rise to match it. Saving half of every raise keeps your lifestyle growing while your savings grow faster.
+mo-budget.c8.viz.steps.0	Pay rise
+mo-budget.c8.viz.steps.1	Save half of it
+mo-budget.c8.viz.steps.2	Enjoy the other half
+mo-budget.c8.viz.steps.3	Savings rate climbs
+mo-budget.c9.title	A simple budget
+mo-budget.c9.text	Take-home pay €1,600. Needs €800, wants €480, savings €320. After six months, €1,920 saved: a start on an emergency fund.
+mo-budget.c9.example.0	50%: €800
+mo-budget.c9.example.1	30%: €480
+mo-budget.c9.example.2	20%: €320
+mo-budget.c9.example.3	6 × €320 = €1,920
+mo-budget.c9.viz.unit	€ a month
+mo-budget.c9.viz.items.0.l	Needs
+mo-budget.c9.viz.items.1.l	Wants
+mo-budget.c9.viz.items.2.l	Savings
+mo-compound.title	Compound interest
+mo-compound.summary	Growth on growth.
+mo-compound.q0.q	What makes compound interest different from simple interest?
+mo-compound.q0.o0	It's taxed
+mo-compound.q0.o1	It earns interest on past interest
+mo-compound.q0.o2	It's only for banks
+mo-compound.q0.x	Growth on growth.
+mo-compound.q1.q	Using the rule of 72, how long does money take to double at 6%?
+mo-compound.q1.o0	6 years
+mo-compound.q1.o1	About 12 years
+mo-compound.q1.o2	72 years
+mo-compound.q1.x	72 ÷ 6 = 12.
+mo-compound.c0.title	Simple vs compound
+mo-compound.c0.text	Simple interest pays only on what you put in. Compound interest also pays on past interest, so growth speeds up over time.
+mo-compound.c0.viz.l.t	Simple
+mo-compound.c0.viz.l.items.0	interest on the deposit only
+mo-compound.c0.viz.l.items.1	straight line
+mo-compound.c0.viz.r.t	Compound
+mo-compound.c0.viz.r.items.0	interest on interest too
+mo-compound.c0.viz.r.items.1	curve upwards
+mo-compound.c1.title	The formula
+mo-compound.c1.text	After n years, money grows by the factor (1 + r) for each year. Small differences in r or n make huge differences.
+mo-compound.c1.formula	A = P(1 + r)ⁿ
+mo-compound.c1.viz.f	A = P(1 + r)ⁿ
+mo-compound.c1.viz.items.0.s	A
+mo-compound.c1.viz.items.0.m	final amount
+mo-compound.c1.viz.items.1.s	P
+mo-compound.c1.viz.items.1.m	starting amount
+mo-compound.c1.viz.items.2.s	r
+mo-compound.c1.viz.items.2.m	yearly return
+mo-compound.c1.viz.items.3.s	n
+mo-compound.c1.viz.items.3.m	years
+mo-compound.c2.title	€1,000 at 5%
+mo-compound.c2.text	After 10 years: €1,629. After 20: €2,653. After 40: €7,040. Most of the growth comes late.
+mo-compound.c2.viz.items.0.l	Start
+mo-compound.c2.viz.items.1.l	10 years
+mo-compound.c2.viz.items.2.l	20 years
+mo-compound.c2.viz.items.3.l	40 years
+mo-compound.c3.title	Time beats amount
+mo-compound.c3.text	Starting early matters more than investing a lot. Someone who invests from 25 to 35 and stops can end up with more than someone who invests from 35 to 65, at the same return.
+mo-compound.c3.viz.l.t	Early starter
+mo-compound.c3.viz.l.items.0	€2,000 a year from 25 to 35
+mo-compound.c3.viz.l.items.1	then stops
+mo-compound.c3.viz.r.t	Late starter
+mo-compound.c3.viz.r.items.0	€2,000 a year from 35 to 65
+mo-compound.c3.viz.r.items.1	three times more paid in
+mo-compound.c4.title	Compounding debt
+mo-compound.c4.text	Compounding works against you on debt. Credit card balances can charge 15–20% a year or more, doubling in about four or five years if unpaid.
+mo-compound.c4.viz.unit	% a year (typical)
+mo-compound.c4.viz.items.0.l	Savings
+mo-compound.c4.viz.items.1.l	Mortgage
+mo-compound.c4.viz.items.2.l	Car loan
+mo-compound.c4.viz.items.3.l	Credit card
+mo-compound.c5.title	Fees matter
+mo-compound.c5.text	A 1% yearly fee sounds tiny but compounds too. Over 30 years it can eat about a quarter of your final pot.
+mo-compound.c5.viz.unit	€ after 30 years, €10,000 at 6%
+mo-compound.c5.viz.items.0.l	No fee
+mo-compound.c5.viz.items.1.l	1% fee
+mo-compound.c6.title	Nominal vs real
+mo-compound.c6.text	A 5% return with 3% inflation is only about 2% of real growth in buying power. Always compare returns with inflation.
+mo-compound.c6.viz.f	real ≈ nominal − inflation
+mo-compound.c6.viz.items.0.s	nominal
+mo-compound.c6.viz.items.0.m	stated return
+mo-compound.c6.viz.items.1.s	inflation
+mo-compound.c6.viz.items.1.m	price rise
+mo-compound.c6.viz.items.2.s	real
+mo-compound.c6.viz.items.2.m	growth in buying power
+mo-compound.c7.title	Einstein's quote?
+mo-compound.c7.text	"Compound interest is the eighth wonder of the world" is often credited to Einstein, but there's no evidence he said it. The maths is real either way.
+mo-compound.c7.viz.items.0.w	Einstein called it the eighth wonder
+mo-compound.c7.viz.items.0.r	No evidence he ever said it
+mo-compound.c8.title	Regular contributions
+mo-compound.c8.text	Adding a fixed amount every month, rather than one lump, smooths the ups and downs of markets. It's called euro-cost averaging.
+mo-compound.c8.viz.steps.0	Same amount every month
+mo-compound.c8.viz.steps.1	Buys more when prices are low
+mo-compound.c8.viz.steps.2	Less when high
+mo-compound.c8.viz.steps.3	Smoother average price
+mo-compound.c9.title	€100 a month
+mo-compound.c9.text	Investing €100 a month at 5% a year for 30 years: you pay in €36,000, and it grows to about €83,000.
+mo-compound.c9.viz.items.0.l	Paid in
+mo-compound.c9.viz.items.1.l	Final value
+mo-invest.title	Investing basics
+mo-invest.summary	Shares, bonds, funds and risk.
+mo-invest.q0.q	What is a share?
+mo-invest.q0.o0	A loan to a company
+mo-invest.q0.o1	A small piece of ownership
+mo-invest.q0.o2	A savings account
+mo-invest.q0.x	Owners can receive dividends.
+mo-invest.q1.q	Why diversify?
+mo-invest.q1.o0	To guarantee profit
+mo-invest.q1.o1	To reduce the damage of any single failure
+mo-invest.q1.o2	To pay fewer taxes
+mo-invest.q1.x	Don't put all eggs in one basket.
+mo-invest.c0.title	Saving vs investing
+mo-invest.c0.text	Saving keeps money safe for the short term. Investing buys assets that can grow over the long term, with the risk of falling in value along the way.
+mo-invest.c0.viz.l.t	Saving
+mo-invest.c0.viz.l.items.0	safe
+mo-invest.c0.viz.l.items.1	easy access
+mo-invest.c0.viz.l.items.2	low return
+mo-invest.c0.viz.l.items.3	short term
+mo-invest.c0.viz.r.t	Investing
+mo-invest.c0.viz.r.items.0	ups and downs
+mo-invest.c0.viz.r.items.1	higher expected return
+mo-invest.c0.viz.r.items.2	long term
+mo-invest.c1.title	Shares
+mo-invest.c1.text	A share is a small piece of ownership in a company. You can gain if its price rises and if it pays dividends, and you can lose if it falls.
+mo-invest.c1.viz.items.0.a	Share
+mo-invest.c1.viz.items.0.b	part-ownership
+mo-invest.c1.viz.items.1.a	Dividend
+mo-invest.c1.viz.items.1.b	share of profits
+mo-invest.c1.viz.items.2.a	Price
+mo-invest.c1.viz.items.2.b	what buyers will pay today
+mo-invest.c2.title	Bonds
+mo-invest.c2.text	A bond is a loan to a government or company. They pay you interest and return the money at the end. Usually steadier than shares, with lower long-term returns.
+mo-invest.c2.viz.steps.0	You lend money
+mo-invest.c2.viz.steps.1	Get regular interest
+mo-invest.c2.viz.steps.2	Money returned at maturity
+mo-invest.c3.title	Risk and return
+mo-invest.c3.text	Higher expected returns come with bigger swings. There's no reliable way to get high returns without accepting risk.
+mo-invest.c3.viz.unit	risk
+mo-invest.c3.viz.items.0.l	Savings account
+mo-invest.c3.viz.items.1.l	Government bonds
+mo-invest.c3.viz.items.2.l	Mixed fund
+mo-invest.c3.viz.items.3.l	Shares
+mo-invest.c4.title	Diversification
+mo-invest.c4.text	Don't put all your eggs in one basket. Spreading money across many companies, countries and asset types reduces the damage any single failure can do.
+mo-invest.c4.viz.root	Diversified portfolio
+mo-invest.c4.viz.items.0	Many companies
+mo-invest.c4.viz.items.1	Many countries
+mo-invest.c4.viz.items.2	Shares and bonds
+mo-invest.c5.title	Index funds
+mo-invest.c5.text	An index fund buys every company in an index, like the S&P 500 or a world index, at very low cost. Most actively managed funds fail to beat their index over long periods.
+mo-invest.c5.viz.l.t	Active fund
+mo-invest.c5.viz.l.items.0	manager picks
+mo-invest.c5.viz.l.items.1	higher fees
+mo-invest.c5.viz.l.items.2	usually lags the index
+mo-invest.c5.viz.r.t	Index fund
+mo-invest.c5.viz.r.items.0	buys everything
+mo-invest.c5.viz.r.items.1	low fees
+mo-invest.c5.viz.r.items.2	matches the market
+mo-invest.c6.title	Time in the market
+mo-invest.c6.text	Markets fall often, sometimes sharply, but have historically recovered and grown over long periods. Missing just the best few days can badly hurt returns.
+mo-invest.c6.viz.items.0.w	"I'll wait for the perfect moment"
+mo-invest.c6.viz.items.0.r	Time in the market beats timing the market
+mo-invest.c7.title	Too good to be true
+mo-invest.c7.text	Promises of high guaranteed returns are a red flag. If it's guaranteed, it's low; if it's high, it isn't guaranteed. Scams often push urgency and secrecy.
+mo-invest.c7.viz.items.0	"Guaranteed" high returns
+mo-invest.c7.viz.items.1	Pressure to act now
+mo-invest.c7.viz.items.2	Hard to withdraw
+mo-invest.c7.viz.items.3	Unregulated sellers
+mo-invest.c8.title	Emotions and investing
+mo-invest.c8.text	Fear makes people sell after crashes and greed makes them buy at peaks: the opposite of "buy low, sell high". A written plan helps you stick to your course.
+mo-invest.c8.viz.steps.0	Prices rise: greed
+mo-invest.c8.viz.steps.1	Buy at the top
+mo-invest.c8.viz.steps.2	Prices fall: fear
+mo-invest.c8.viz.steps.3	Sell at the bottom
+mo-invest.c9.title	Before you invest
+mo-invest.c9.text	A common order: clear expensive debt, build an emergency fund, then invest money you won't need for at least five years. This is general information, not personal advice.
+mo-invest.c9.viz.steps.0	Clear expensive debt
+mo-invest.c9.viz.steps.1	Emergency fund
+mo-invest.c9.viz.steps.2	Invest for 5+ years
+mo-invest.c9.viz.steps.3	Review yearly
+mo-econ.title	Everyday economics
+mo-econ.summary	Big ideas behind the news.
+mo-econ.q0.q	What is opportunity cost?
+mo-econ.q0.o0	The price tag
+mo-econ.q0.o1	What you give up to get something
+mo-econ.q0.o2	A bank fee
+mo-econ.q0.x	The next-best alternative.
+mo-econ.q1.q	If inflation falls from 5% to 2%, prices…
+mo-econ.q1.o0	fall
+mo-econ.q1.o1	still rise, but more slowly
+mo-econ.q1.o2	stay the same
+mo-econ.q1.x	Deflation would mean falling prices.
+mo-econ.c0.title	GDP
+mo-econ.c0.text	Gross domestic product is the total value of goods and services a country produces in a year. It measures the size of an economy, not its wellbeing.
+mo-econ.c0.viz.f	GDP = C + I + G + (X − M)
+mo-econ.c0.viz.items.0.s	C
+mo-econ.c0.viz.items.0.m	consumption
+mo-econ.c0.viz.items.1.s	I
+mo-econ.c0.viz.items.1.m	investment
+mo-econ.c0.viz.items.2.s	G
+mo-econ.c0.viz.items.2.m	government spending
+mo-econ.c0.viz.items.3.s	X − M
+mo-econ.c0.viz.items.3.m	exports minus imports
+mo-econ.c1.title	Recession
+mo-econ.c1.text	A recession is a significant fall in economic activity, often defined as two quarters in a row of falling GDP. Jobs and incomes usually suffer.
+mo-econ.c1.viz.steps.0	Spending falls
+mo-econ.c1.viz.steps.1	Firms sell less
+mo-econ.c1.viz.steps.2	Cut jobs
+mo-econ.c1.viz.steps.3	Spending falls more
+mo-econ.c2.title	Opportunity cost
+mo-econ.c2.text	The real cost of something is what you give up to get it. An evening studying costs the evening out you didn't have.
+mo-econ.c2.viz.items.0.a	University
+mo-econ.c2.viz.items.0.b	years of salary not earned
+mo-econ.c2.viz.items.1.a	New car
+mo-econ.c2.viz.items.1.b	the holiday not taken
+mo-econ.c2.viz.items.2.a	An hour on social media
+mo-econ.c2.viz.items.2.b	an hour of something else
+mo-econ.c3.title	Incentives
+mo-econ.c3.text	People respond to incentives. Taxes on sugary drinks reduce sales; deposits on bottles increase recycling. Badly designed ones backfire.
+mo-econ.c3.viz.items.0	Sugar tax: less sugar
+mo-econ.c3.viz.items.1	Bottle deposit: more recycling
+mo-econ.c3.viz.items.2	Fines: fewer violations
+mo-econ.c4.title	Comparative advantage
+mo-econ.c4.text	Countries gain by specialising in what they're relatively best at and trading, even if one is better at everything. Portugal and England's wine and cloth was Ricardo's 1817 example.
+mo-econ.c4.viz.l.t	Portugal
+mo-econ.c4.viz.l.items.0	wine
+mo-econ.c4.viz.l.items.1	relatively efficient
+mo-econ.c4.viz.r.t	England
+mo-econ.c4.viz.r.items.0	cloth
+mo-econ.c4.viz.r.items.1	relatively efficient
+mo-econ.c5.title	Tragedy of the commons
+mo-econ.c5.text	When a shared resource is free for all, everyone overuses it. Overfishing is a classic example; quotas and ownership rules can help.
+mo-econ.c5.viz.steps.0	Shared resource
+mo-econ.c5.viz.steps.1	Each takes a bit more
+mo-econ.c5.viz.steps.2	Resource collapses
+mo-econ.c5.viz.steps.3	Everyone loses
+mo-econ.c6.title	Taxes
+mo-econ.c6.text	Taxes fund public services. Portugal uses income tax (IRS) with rates that rise with income, VAT (IVA) on purchases at 23% standard in the mainland, and social security contributions.
+mo-econ.c6.viz.items.0.a	IRS
+mo-econ.c6.viz.items.0.b	income tax, progressive
+mo-econ.c6.viz.items.1.a	IVA
+mo-econ.c6.viz.items.1.b	VAT on purchases
+mo-econ.c6.viz.items.2.a	TSU
+mo-econ.c6.viz.items.2.b	social security
+mo-econ.c7.title	Unemployment
+mo-econ.c7.text	Some unemployment is normal as people change jobs. The rate is the share of people who want work and are looking for it but don't have it.
+mo-econ.c7.viz.f	rate = unemployed ÷ labour force
+mo-econ.c7.viz.items.0.s	unemployed
+mo-econ.c7.viz.items.0.m	looking for work
+mo-econ.c7.viz.items.1.s	labour force
+mo-econ.c7.viz.items.1.m	employed + unemployed
+mo-econ.c8.title	Exchange rates
+mo-econ.c8.text	Exchange rates are the price of one currency in another. A stronger euro makes holidays abroad cheaper but Portuguese exports pricier for foreigners.
+mo-econ.c8.viz.l.t	Strong euro
+mo-econ.c8.viz.l.items.0	cheaper imports
+mo-econ.c8.viz.l.items.1	cheaper travel abroad
+mo-econ.c8.viz.r.t	Weak euro
+mo-econ.c8.viz.r.items.0	cheaper exports
+mo-econ.c8.viz.r.items.1	more tourists to Portugal
+mo-econ.c9.title	Reading a headline
+mo-econ.c9.text	"Inflation falls to 2%" doesn't mean prices fell; it means they are rising more slowly. Only negative inflation, called deflation, means prices fall.
+mo-econ.c9.viz.items.0.w	Inflation fell, so prices are lower
+mo-econ.c9.viz.items.0.r	Prices still rose, just more slowly
+mo-debt.title	Debt and credit
+mo-debt.summary	Borrowing without getting burned.
+mo-debt.q0.q	What does APR (TAEG) include?
+mo-debt.q0.o0	Only interest
+mo-debt.q0.o1	Interest plus most fees, as a yearly rate
+mo-debt.q0.o2	Only fees
+mo-debt.q0.x	The fair way to compare loans.
+mo-debt.q1.q	Which debt-repayment method saves the most interest?
+mo-debt.q1.o0	Snowball
+mo-debt.q1.o1	Avalanche
+mo-debt.q1.o2	Paying the minimum
+mo-debt.q1.x	Highest rate first.
+mo-debt.q2.q	Stretching a loan from 5 to 10 years usually…
+mo-debt.q2.o0	saves money
+mo-debt.q2.o1	lowers monthly payments but costs more in total
+mo-debt.q2.o2	has no effect
+mo-debt.q2.x	More time, more interest.
+mo-debt.c0.title	Good and bad debt
+mo-debt.c0.text	Debt can be useful when it buys something that lasts or grows in value, like a home or education. Expensive debt for things that lose value quickly is riskier.
+mo-debt.c0.viz.l.t	Usually sensible
+mo-debt.c0.viz.l.items.0	mortgage
+mo-debt.c0.viz.l.items.1	education
+mo-debt.c0.viz.l.items.2	low rate
+mo-debt.c0.viz.r.t	Usually risky
+mo-debt.c0.viz.r.items.0	credit card balances
+mo-debt.c0.viz.r.items.1	consumer loans for gadgets
+mo-debt.c0.viz.r.items.2	high rate
+mo-debt.c1.title	The real cost: APR
+mo-debt.c1.text	Compare loans by APR (TAEG in Portugal), which includes interest and most fees as a yearly rate. The lowest monthly payment isn't always the cheapest loan.
+mo-debt.c1.viz.items.0.a	Nominal rate
+mo-debt.c1.viz.items.0.b	interest only
+mo-debt.c1.viz.items.1.a	APR / TAEG
+mo-debt.c1.viz.items.1.b	interest plus fees
+mo-debt.c1.viz.items.2.a	Lower APR
+mo-debt.c1.viz.items.2.b	cheaper loan
+mo-debt.c2.title	Longer isn't cheaper
+mo-debt.c2.text	Stretching a loan over more years lowers the monthly payment but raises the total paid. A €10,000 loan at 8% costs about €2,170 interest over 5 years, but €4,560 over 10.
+mo-debt.c2.viz.unit	total interest, €
+mo-debt.c2.viz.items.0.l	3 years
+mo-debt.c2.viz.items.1.l	5 years
+mo-debt.c2.viz.items.2.l	10 years
+mo-debt.c3.title	Minimum payments trap
+mo-debt.c3.text	Paying only the minimum on a credit card can take many years and cost far more than the original purchase. Interest keeps compounding on the balance.
+mo-debt.c3.viz.steps.0	Buy €1,000
+mo-debt.c3.viz.steps.1	Pay only the minimum
+mo-debt.c3.viz.steps.2	Interest compounds
+mo-debt.c3.viz.steps.3	Years of payments
+mo-debt.c4.title	Snowball vs avalanche
+mo-debt.c4.text	Two ways to clear several debts: the snowball pays the smallest balance first for quick wins; the avalanche pays the highest rate first and saves the most money.
+mo-debt.c4.viz.l.t	Snowball
+mo-debt.c4.viz.l.items.0	smallest balance first
+mo-debt.c4.viz.l.items.1	motivation
+mo-debt.c4.viz.r.t	Avalanche
+mo-debt.c4.viz.r.items.0	highest rate first
+mo-debt.c4.viz.r.items.1	least interest
+mo-debt.c5.title	Credit history
+mo-debt.c5.text	Lenders check your record of past loans and repayments. In Portugal, the Banco de Portugal's credit register shows your responsibilities to banks.
+mo-debt.c5.viz.items.0	Pay on time
+mo-debt.c5.viz.items.1	Keep balances low
+mo-debt.c5.viz.items.2	Don't apply for many loans at once
+mo-debt.c5.viz.items.3	Check your record yearly
+mo-debt.c6.title	Debt-to-income ratio
+mo-debt.c6.text	Lenders look at what share of your income goes on debt payments. Banco de Portugal recommends banks generally keep it at or below 50% for new loans.
+mo-debt.c6.viz.f	DSTI = debt payments ÷ net income
+mo-debt.c6.viz.items.0.s	DSTI
+mo-debt.c6.viz.items.0.m	debt service to income
+mo-debt.c6.viz.items.1.s	under ~50%
+mo-debt.c6.viz.items.1.m	generally recommended
+mo-debt.c7.title	Buy now, pay later
+mo-debt.c7.text	Splitting payments into instalments feels painless, but it makes spending easier and can lead to stacked obligations and late fees.
+mo-debt.c7.viz.steps.0	"Pay in 3"
+mo-debt.c7.viz.steps.1	Feels cheap
+mo-debt.c7.viz.steps.2	Several plans at once
+mo-debt.c7.viz.steps.3	Hard to track
+mo-debt.c8.title	Guarantor risk
+mo-debt.c8.text	Being a guarantor (fiador) means you're liable if the borrower can't pay. Only guarantee what you could afford to pay yourself.
+mo-debt.c8.viz.items.0.w	"It's just a signature"
+mo-debt.c8.viz.items.0.r	You may have to pay the whole debt
+mo-debt.c9.title	Clearing a card
+mo-debt.c9.text	€3,000 on a card at 18% APR. Paying €100 a month takes about 40 months and ~€1,000 interest. Paying €200 cuts it to about 17 months and ~€420.
+mo-debt.c9.viz.unit	months to clear €3,000
+mo-debt.c9.viz.items.0.l	€100 a month
+mo-debt.c9.viz.items.1.l	€200 a month
+mo-banks.title	How banks work
+mo-banks.summary	Where your money goes.
+mo-banks.q0.q	How much is guaranteed per depositor per bank in the EU?
+mo-banks.q0.o0	€10,000
+mo-banks.q0.o1	€100,000
+mo-banks.q0.o2	Unlimited
+mo-banks.q0.x	Fundo de Garantia de Depósitos in Portugal.
+mo-banks.q1.q	Most Portuguese mortgage rates are…
+mo-banks.q1.o0	fixed for life
+mo-banks.q1.o1	Euribor plus a spread
+mo-banks.q1.o2	set by the government
+mo-banks.q1.x	Variable, linked to Euribor.
+mo-banks.c0.title	Banks borrow and lend
+mo-banks.c0.text	Banks take deposits and lend most of that money out at higher rates. The difference, the interest margin, is a key source of profit.
+mo-banks.c0.viz.steps.0	Your deposit
+mo-banks.c0.viz.steps.1	Bank lends it out
+mo-banks.c0.viz.steps.2	Borrower pays interest
+mo-banks.c0.viz.steps.3	Bank keeps the margin
+mo-banks.c1.title	Money creation
+mo-banks.c1.text	When a bank makes a loan, it creates a new deposit in the borrower's account. Most money in the economy is created this way, limited by regulation and demand.
+mo-banks.c1.viz.steps.0	Loan approved
+mo-banks.c1.viz.steps.1	New deposit created
+mo-banks.c1.viz.steps.2	Money spent
+mo-banks.c1.viz.steps.3	Circulates in the economy
+mo-banks.c2.title	Fractional reserves
+mo-banks.c2.text	Banks keep only a fraction of deposits as cash and reserves. That's fine normally, but if everyone withdraws at once, a bank run can sink it.
+mo-banks.c2.viz.unit	% (illustrative)
+mo-banks.c2.viz.items.0.l	Lent out or invested
+mo-banks.c2.viz.items.1.l	Kept as reserves
+mo-banks.c3.title	Deposit guarantee
+mo-banks.c3.text	In the EU, deposits are guaranteed up to €100,000 per depositor, per bank. In Portugal, this is the Fundo de Garantia de Depósitos.
+mo-banks.c3.viz.items.0.l	per depositor, per bank
+mo-banks.c3.viz.items.1.v	EU-wide
+mo-banks.c3.viz.items.1.l	same limit
+mo-banks.c3.viz.items.2.v	Within days
+mo-banks.c3.viz.items.2.l	repayment target
+mo-banks.c4.title	Bank runs
+mo-banks.c4.text	In 2023, Silicon Valley Bank collapsed after depositors withdrew $42 billion in a single day, spurred by social media. Speed of digital runs is new.
+mo-banks.c4.viz.steps.0	Worry spreads online
+mo-banks.c4.viz.steps.1	Mass withdrawals
+mo-banks.c4.viz.steps.2	Bank sells assets at a loss
+mo-banks.c4.viz.steps.3	Collapse
+mo-banks.c5.title	Capital requirements
+mo-banks.c5.text	After the 2008 crisis, regulators required banks to hold more of their own capital to absorb losses, so taxpayers don't have to.
+mo-banks.c5.viz.items.0	Bank's own capital: absorbs losses first
+mo-banks.c5.viz.items.1	Bonds
+mo-banks.c5.viz.items.2	Deposits: protected
+mo-banks.c6.title	Spread and fees
+mo-banks.c6.text	Banks also earn from fees: account maintenance, transfers, cards. Comparing fees can save tens of euros a year; Banco de Portugal publishes comparisons.
+mo-banks.c6.viz.items.0	Account maintenance
+mo-banks.c6.viz.items.1	Card fees
+mo-banks.c6.viz.items.2	Transfers
+mo-banks.c6.viz.items.3	Overdrafts
+mo-banks.c7.title	Euribor
+mo-banks.c7.text	Most Portuguese mortgages have variable rates linked to Euribor, the rate at which European banks lend to each other, plus a fixed spread.
+mo-banks.c7.viz.f	your rate = Euribor + spread
+mo-banks.c7.viz.items.0.s	Euribor
+mo-banks.c7.viz.items.0.m	changes over time
+mo-banks.c7.viz.items.1.s	spread
+mo-banks.c7.viz.items.1.m	fixed in your contract
+mo-banks.c8.title	Payments
+mo-banks.c8.text	Instant transfers, MB WAY and cards move money in seconds. Behind the scenes, banks settle with each other through central bank systems.
+mo-banks.c8.viz.steps.0	You tap the card
+mo-banks.c8.viz.steps.1	Card network
+mo-banks.c8.viz.steps.2	Your bank approves
+mo-banks.c8.viz.steps.3	Shop's bank receives
+mo-banks.c9.title	Digital euro
+mo-banks.c9.text	The ECB is preparing a possible digital euro, a central bank currency for everyday digital payments, alongside cash.
+mo-banks.c9.viz.l.t	Bank money
+mo-banks.c9.viz.l.items.0	held at private banks
+mo-banks.c9.viz.r.t	Digital euro
+mo-banks.c9.viz.r.items.0	issued by the central bank
+mo-retire.title	Retirement and pensions
+mo-retire.summary	Planning for the long run.
+mo-retire.q0.q	Who pays for current pensions in a pay-as-you-go system?
+mo-retire.q0.o0	The pensioners themselves
+mo-retire.q0.o1	Today's workers
+mo-retire.q0.o2	Banks
+mo-retire.q0.x	Through Social Security contributions.
+mo-retire.q1.q	What is a PPR in Portugal?
+mo-retire.q1.o0	A type of loan
+mo-retire.q1.o1	A retirement savings plan with tax benefits
+mo-retire.q1.o2	A pension paid by the state
+mo-retire.q1.x	Plano Poupança Reforma.
+mo-retire.c0.title	Pay-as-you-go
+mo-retire.c0.text	Portugal's state pension is mostly pay-as-you-go: today's workers' contributions pay today's retirees. It depends on the ratio of workers to pensioners.
+mo-retire.c0.viz.steps.0	Workers contribute
+mo-retire.c0.viz.steps.1	Social Security
+mo-retire.c0.viz.steps.2	Paid to current pensioners
+mo-retire.c1.title	An ageing population
+mo-retire.c1.text	As people live longer and have fewer children, there are fewer workers per pensioner, putting pressure on pension systems.
+mo-retire.c1.viz.unit	workers per pensioner (approx., Portugal)
+mo-retire.c1.viz.items.0.l	1970s
+mo-retire.c1.viz.items.1.l	Today
+mo-retire.c1.viz.items.2.l	2050 projection
+mo-retire.c2.title	The sustainability factor
+mo-retire.c2.text	Portugal links the retirement age to life expectancy: as people live longer, the statutory age rises gradually, now above 66.
+mo-retire.c2.viz.steps.0	Life expectancy rises
+mo-retire.c2.viz.steps.1	Retirement age adjusts
+mo-retire.c2.viz.steps.2	System more sustainable
+mo-retire.c3.title	Replacement rate
+mo-retire.c3.text	The replacement rate is your pension as a share of your last salary. Projections suggest future retirees in Portugal may receive a lower share than today's.
+mo-retire.c3.viz.f	replacement rate = pension ÷ final salary
+mo-retire.c3.viz.items.0.s	e.g.
+mo-retire.c4.title	Three pillars
+mo-retire.c4.text	Retirement income often rests on three pillars: the state pension, workplace pensions and personal savings.
+mo-retire.c4.viz.items.0	Personal savings
+mo-retire.c4.viz.items.1	Workplace pension
+mo-retire.c4.viz.items.2	State pension
+mo-retire.c5.title	Start early
+mo-retire.c5.text	Thanks to compounding, money saved in your 20s and 30s has decades to grow. Saving €100 a month from 25 can beat €200 a month from 45.
+mo-retire.c5.viz.unit	€ at 65 (5% a year)
+mo-retire.c5.viz.items.0.l	€100 a month from 25
+mo-retire.c5.viz.items.1.l	€200 a month from 45
+mo-retire.c6.title	PPR
+mo-retire.c6.text	In Portugal, the Plano Poupança Reforma (PPR) is a retirement savings product with tax benefits on contributions, within limits, and rules on when you can withdraw.
+mo-retire.c6.viz.items.0	Tax deduction within limits
+mo-retire.c6.viz.items.1	Withdrawal at retirement age or special cases
+mo-retire.c6.viz.items.2	Many types: funds or insurance
+mo-retire.c6.viz.items.3	Compare fees
+mo-retire.c7.title	The 4% rule
+mo-retire.c7.text	A rough guideline from US studies: withdrawing about 4% of a diversified portfolio in the first year, then adjusting for inflation, has historically lasted about 30 years. It's not a guarantee.
+mo-retire.c7.example.0	€500,000 portfolio
+mo-retire.c7.example.1	× 4%
+mo-retire.c7.example.2	= €20,000 in year one
+mo-retire.c7.viz.unit	€ a year from €500,000
+mo-retire.c8.title	Inflation in retirement
+mo-retire.c8.text	Over 25 years of retirement, 2% inflation reduces the buying power of a fixed pension by about 40%. Income that adjusts with inflation is valuable.
+mo-retire.c8.viz.unit	buying power of €1,000
+mo-retire.c8.viz.items.0.l	Year 0
+mo-retire.c8.viz.items.1.l	Year 10
+mo-retire.c8.viz.items.2.l	Year 25
+mo-retire.c9.title	Check your record
+mo-retire.c9.text	In Portugal, the Segurança Social Direta website shows your contribution history and a pension simulation. Checking it early helps planning.
+mo-retire.c9.viz.steps.0	Log in
+mo-retire.c9.viz.steps.1	See contribution years
+mo-retire.c9.viz.steps.2	Run a simulation
+mo-retire.c9.viz.steps.3	Plan the gap
+mo-housing.title	Renting, buying and mortgages
+mo-housing.summary	The biggest money decision.
+mo-housing.q0.q	Early in a mortgage, payments mostly go to…
+mo-housing.q0.o0	principal
+mo-housing.q0.o1	interest
+mo-housing.q0.o2	taxes
+mo-housing.q0.x	Later, mostly principal.
+mo-housing.q1.q	What happened to many variable-rate mortgages in 2022–23?
+mo-housing.q1.o0	Payments fell
+mo-housing.q1.o1	Payments rose as Euribor climbed
+mo-housing.q1.o2	Nothing
+mo-housing.q1.x	Rates rose fast.
+mo-housing.c0.title	Rent vs buy
+mo-housing.c0.text	Buying builds ownership but ties up money and brings costs like taxes, maintenance and interest. Renting gives flexibility. The right answer depends on prices, rates and how long you'll stay.
+mo-housing.c0.viz.l.t	Buying
+mo-housing.c0.viz.l.items.0	builds equity
+mo-housing.c0.viz.l.items.1	stability
+mo-housing.c0.viz.l.items.2	big upfront costs
+mo-housing.c0.viz.r.t	Renting
+mo-housing.c0.viz.r.items.0	flexibility
+mo-housing.c0.viz.r.items.1	no maintenance
+mo-housing.c0.viz.r.items.2	no equity
+mo-housing.c1.title	The deposit
+mo-housing.c1.text	Portuguese banks typically lend up to 90% of the property value for a primary home, so you'll need at least 10% plus costs. Bigger deposits often get better spreads.
+mo-housing.c1.viz.unit	% of the price
+mo-housing.c1.viz.items.0.l	Bank loan, max typical
+mo-housing.c1.viz.items.1.l	Your deposit
+mo-housing.c2.title	Hidden costs
+mo-housing.c2.text	Beyond the deposit, buyers pay transfer tax (IMT, with exemptions for some young and first-time buyers), stamp duty, registration, valuation and bank fees.
+mo-housing.c2.viz.items.0	IMT: property transfer tax
+mo-housing.c2.viz.items.1	Imposto do Selo: stamp duty
+mo-housing.c2.viz.items.2	Registration and deed
+mo-housing.c2.viz.items.3	Bank and valuation fees
+mo-housing.c3.title	How a mortgage payment works
+mo-housing.c3.text	Each monthly payment covers interest plus a slice of the loan. Early on, most goes to interest; later, most goes to repaying the loan.
+mo-housing.c3.viz.l.t	Early years
+mo-housing.c3.viz.l.items.0	mostly interest
+mo-housing.c3.viz.r.t	Later years
+mo-housing.c3.viz.r.items.0	mostly principal
+mo-housing.c4.title	Monthly payment
+mo-housing.c4.text	A €200,000 loan over 30 years at 4% costs about €955 a month. At 3%, about €843. Over 30 years, that 1-point difference adds up to about €40,000.
+mo-housing.c4.viz.unit	€ a month (€200k, 30 years)
+mo-housing.c5.title	Variable vs fixed
+mo-housing.c5.text	Variable rates follow Euribor: cheaper when rates fall, painful when they rise, as in 2022–23. Fixed or mixed rates give certainty at a price.
+mo-housing.c5.viz.l.t	Variable
+mo-housing.c5.viz.l.items.0	follows Euribor
+mo-housing.c5.viz.l.items.1	can rise or fall
+mo-housing.c5.viz.r.t	Fixed
+mo-housing.c5.viz.r.items.0	certainty
+mo-housing.c5.viz.r.items.1	often a higher starting rate
+mo-housing.c6.title	Stress test yourself
+mo-housing.c6.text	Before borrowing, check you could still pay if rates rose by 2–3 points. Many families in 2023 saw payments jump by hundreds of euros.
+mo-housing.c6.viz.unit	€ a month (€200k, 30 years)
+mo-housing.c6.viz.items.0.l	At 2%
+mo-housing.c6.viz.items.1.l	Rates +3 points
+mo-housing.c7.title	Early repayment
+mo-housing.c7.text	Paying extra reduces either the term or the monthly payment. Reducing the term usually saves more interest. Check fees for early repayment.
+mo-housing.c7.viz.l.t	Shorter term
+mo-housing.c7.viz.l.items.0	more interest saved
+mo-housing.c7.viz.r.t	Lower payment
+mo-housing.c7.viz.r.items.0	more monthly breathing room
+mo-housing.c8.title	Price-to-income
+mo-housing.c8.text	Housing in Portuguese cities has become expensive relative to local incomes. Compare the house price with yearly household income to judge affordability.
+mo-housing.c8.viz.f	price-to-income = home price ÷ yearly household income
+mo-housing.c8.viz.items.0.s	lower
+mo-housing.c8.viz.items.0.m	more affordable
+mo-housing.c8.viz.items.1.s	e.g.
+mo-housing.c9.title	Total cost of ownership
+mo-housing.c9.text	Add up mortgage interest, IMI property tax, condominium fees, insurance and maintenance (often ~1% of value a year) before comparing with rent.
+mo-housing.c9.viz.items.0	Mortgage interest
+mo-housing.c9.viz.items.1	IMI
+mo-housing.c9.viz.items.2	Condominium
+mo-housing.c9.viz.items.3	Insurance
+mo-housing.c9.viz.items.4	Maintenance
+mo-crypto.title	Crypto and digital money
+mo-crypto.summary	What it is and what it isn't.
+mo-crypto.q0.q	What is the maximum number of bitcoins?
+mo-crypto.q0.o0	Unlimited
+mo-crypto.q0.o1	21 million
+mo-crypto.q0.o2	1 billion
+mo-crypto.q0.x	Built into the code.
+mo-crypto.q1.q	What is a stablecoin?
+mo-crypto.q1.o0	A slow cryptocurrency
+mo-crypto.q1.o1	A token designed to track a currency
+mo-crypto.q1.o2	A coin made of metal
+mo-crypto.q1.x	Usually backed by reserves.
+mo-crypto.c0.title	What Bitcoin is
+mo-crypto.c0.text	Bitcoin, launched in 2009 by the pseudonymous Satoshi Nakamoto, is a digital currency with no central bank. A shared public ledger, the blockchain, records all transactions.
+mo-crypto.c0.viz.events.0.l	white paper
+mo-crypto.c0.viz.events.1.l	first block
+mo-crypto.c0.viz.events.2.l	10,000 BTC for two pizzas
+mo-crypto.c0.viz.events.3.l	US spot ETFs approved
+mo-crypto.c1.title	The blockchain
+mo-crypto.c1.text	A blockchain is a chain of blocks of transactions, each linked to the last with cryptography. Changing an old block would mean redoing all the work after it.
+mo-crypto.c1.viz.steps.0	Transactions
+mo-crypto.c1.viz.steps.1	Grouped into a block
+mo-crypto.c1.viz.steps.2	Linked to the previous block
+mo-crypto.c1.viz.steps.3	Chain grows
+mo-crypto.c2.title	Mining
+mo-crypto.c2.text	Bitcoin "miners" compete to solve a mathematical puzzle; the winner adds the next block and earns new bitcoins. This proof-of-work uses lots of electricity.
+mo-crypto.c2.viz.steps.0	Collect transactions
+mo-crypto.c2.viz.steps.1	Solve the puzzle
+mo-crypto.c2.viz.steps.2	Add the block
+mo-crypto.c2.viz.steps.3	Earn reward
+mo-crypto.c3.title	Limited supply
+mo-crypto.c3.text	Only 21 million bitcoins will ever exist. The reward for mining halves about every four years, the "halving".
+mo-crypto.c3.viz.items.0.v	21 million
+mo-crypto.c3.viz.items.0.l	maximum bitcoins
+mo-crypto.c3.viz.items.1.v	~4 years
+mo-crypto.c3.viz.items.1.l	between halvings
+mo-crypto.c3.viz.items.2.l	roughly the last one mined
+mo-crypto.c4.title	Volatility
+mo-crypto.c4.text	Crypto prices swing wildly. Bitcoin has fallen more than 70% several times. That makes it a poor short-term store of value for money you'll need.
+mo-crypto.c4.viz.items.0	2011: ~90% fall
+mo-crypto.c4.viz.items.1	2014: ~80% fall
+mo-crypto.c4.viz.items.2	2018: ~80% fall
+mo-crypto.c4.viz.items.3	2022: ~75% fall
+mo-crypto.c5.title	Stablecoins
+mo-crypto.c5.text	Stablecoins are crypto tokens designed to track a currency like the dollar, usually backed by reserves. Some collapsed when their backing failed.
+mo-crypto.c5.viz.l.t	Backed by reserves
+mo-crypto.c5.viz.l.items.0	cash and bonds
+mo-crypto.c5.viz.l.items.1	more stable
+mo-crypto.c5.viz.r.t	Algorithmic
+mo-crypto.c5.viz.r.items.0	maintained by code
+mo-crypto.c5.viz.r.items.1	some collapsed
+mo-crypto.c6.title	Crypto and crime
+mo-crypto.c6.text	Crypto is popular with scammers: fake investment platforms, "pig butchering" romance scams and fake celebrity endorsements. Transactions are hard to reverse.
+mo-crypto.c6.viz.items.0	Fake trading platforms
+mo-crypto.c6.viz.items.1	Romance scams
+mo-crypto.c6.viz.items.2	Fake celebrity ads
+mo-crypto.c6.viz.items.3	Hacked exchanges
+mo-crypto.c7.title	Not your keys
+mo-crypto.c7.text	If a platform holds your crypto, you rely on it staying solvent and honest. When FTX collapsed in 2022, customers lost access to billions.
+mo-crypto.c7.viz.l.t	Exchange holds it
+mo-crypto.c7.viz.l.items.0	easy
+mo-crypto.c7.viz.l.items.1	platform risk
+mo-crypto.c7.viz.r.t	You hold the keys
+mo-crypto.c7.viz.r.items.0	control
+mo-crypto.c7.viz.r.items.1	risk of losing them
+mo-crypto.c8.title	Regulation
+mo-crypto.c8.text	The EU's MiCA regulation, applying from 2024–25, sets rules for crypto providers and stablecoins, including licensing and consumer protections.
+mo-crypto.c8.viz.events.0.l	MiCA adopted
+mo-crypto.c8.viz.events.1.l	stablecoin rules apply
+mo-crypto.c8.viz.events.2.y	Dec 2024
+mo-crypto.c8.viz.events.2.l	full application
+mo-crypto.c9.title	If you dabble
+mo-crypto.c9.text	A common rule of thumb: only invest what you could afford to lose entirely, use regulated platforms, enable two-factor authentication and ignore "guaranteed" returns. Not advice.
+mo-crypto.c9.viz.items.0	Only what you can lose
+mo-crypto.c9.viz.items.1	Regulated platforms
+mo-crypto.c9.viz.items.2	Two-factor authentication
+mo-crypto.c9.viz.items.3	Ignore guaranteed returns
+mo-behaviour.title	Behavioural finance
+mo-behaviour.summary	Why smart people make money mistakes.
+mo-behaviour.q0.q	Holding losing shares too long hoping to break even is called…
+mo-behaviour.q0.o0	herding
+mo-behaviour.q0.o1	the disposition effect
+mo-behaviour.q0.o2	anchoring
+mo-behaviour.q0.x	Driven by loss aversion.
+mo-behaviour.q1.q	What do frequent traders usually earn compared with patient investors?
+mo-behaviour.q1.o0	More
+mo-behaviour.q1.o1	Less
+mo-behaviour.q1.o2	The same
+mo-behaviour.q1.x	Costs and bad timing.
+mo-behaviour.q2.q	Automatic pension enrolment is an example of…
+mo-behaviour.q2.o0	a tax
+mo-behaviour.q2.o1	a nudge
+mo-behaviour.q2.o2	a loan
+mo-behaviour.q2.x	It works by changing the default.
+mo-behaviour.c0.title	Present bias
+mo-behaviour.c0.text	We overvalue rewards now versus later. Most people prefer €100 today to €110 next week, yet prefer €110 in 53 weeks to €100 in 52. The delay is the same.
+mo-behaviour.c0.viz.l.t	Now vs a week
+mo-behaviour.c0.viz.l.items.0	most take €100 now
+mo-behaviour.c0.viz.r.t	Year vs year + a week
+mo-behaviour.c0.viz.r.items.0	most wait for €110
+mo-behaviour.c1.title	Mental accounting
+mo-behaviour.c1.text	We treat money in separate mental "pots". Someone may keep savings at 2% while carrying a card balance at 18%, losing money on the difference.
+mo-behaviour.c1.viz.unit	% a year
+mo-behaviour.c1.viz.items.0.l	Savings earn
+mo-behaviour.c1.viz.items.1.l	Card costs
+mo-behaviour.c2.title	Loss aversion in investing
+mo-behaviour.c2.text	Investors hate losses so much they hold losing shares too long, hoping to break even, and sell winners too early: the disposition effect.
+mo-behaviour.c2.viz.l.t	Losers
+mo-behaviour.c2.viz.l.items.0	held too long
+mo-behaviour.c2.viz.l.items.1	hoping to recover
+mo-behaviour.c2.viz.r.t	Winners
+mo-behaviour.c2.viz.r.items.0	sold too early
+mo-behaviour.c2.viz.r.items.1	to lock in gains
+mo-behaviour.c3.title	Herding
+mo-behaviour.c3.text	When everyone's buying, it feels safe to join; when everyone's selling, panic spreads. Bubbles and crashes are partly herd behaviour.
+mo-behaviour.c3.viz.steps.0	Prices rise
+mo-behaviour.c3.viz.steps.1	More buy in
+mo-behaviour.c3.viz.steps.2	Bubble
+mo-behaviour.c3.viz.steps.3	Crash
+mo-behaviour.c4.title	Overconfidence and trading
+mo-behaviour.c4.text	Investors who trade most often tend to earn less, mostly due to costs and poor timing. A famous study found the most active traders underperformed by several points a year.
+mo-behaviour.c4.viz.unit	yearly return, % (illustrative)
+mo-behaviour.c4.viz.items.0.l	Rarely trade
+mo-behaviour.c4.viz.items.1.l	Trade most
+mo-behaviour.c5.title	Recency bias
+mo-behaviour.c5.text	We assume recent trends will continue: after a good year, people pile in; after a crash, they flee, often at the worst time.
+mo-behaviour.c5.viz.steps.0	Strong year
+mo-behaviour.c5.viz.steps.1	Assume more of the same
+mo-behaviour.c5.viz.steps.2	Buy high
+mo-behaviour.c5.viz.steps.3	Disappointed
+mo-behaviour.c6.title	The endowment effect
+mo-behaviour.c6.text	We value things more once we own them. Mugs given to students were "worth" about twice as much to them as to those asked to buy them.
+mo-behaviour.c6.viz.unit	price, €
+mo-behaviour.c6.viz.items.0.l	Buyers would pay
+mo-behaviour.c6.viz.items.1.l	Owners would sell for
+mo-behaviour.c7.title	Nudges
+mo-behaviour.c7.text	Small changes in how choices are presented can help: automatic pension enrolment and "save more tomorrow" plans boost saving without forcing anyone.
+mo-behaviour.c7.viz.steps.0	Automatic enrolment
+mo-behaviour.c7.viz.steps.1	Most stay in
+mo-behaviour.c7.viz.steps.2	Higher saving
+mo-behaviour.c8.title	Money and happiness
+mo-behaviour.c8.text	Higher income is linked to greater happiness, with some studies showing gains continue at higher incomes. Spending on experiences, others and saving time tends to give more joy.
+mo-behaviour.c8.viz.items.0	Experiences over things
+mo-behaviour.c8.viz.items.1	Spending on others
+mo-behaviour.c8.viz.items.2	Buying time
+mo-behaviour.c8.viz.items.3	Financial security
+mo-behaviour.c9.title	Automate good choices
+mo-behaviour.c9.text	Set up automatic transfers on payday into savings and investments. You can't spend what you don't see, and you skip the willpower battle.
+mo-behaviour.c9.viz.steps.0	Payday
+mo-behaviour.c9.viz.steps.1	Automatic transfer
+mo-behaviour.c9.viz.steps.2	Savings grow
+mo-behaviour.c9.viz.steps.3	Spend the rest
+mo-history.title	Money through history
+mo-history.summary	Crises, bubbles and lessons.
+mo-history.q0.q	How many escudos was one euro worth?
+mo-history.q0.o0	100
+mo-history.q0.o1	200.482
+mo-history.q0.o2	1,000
+mo-history.q0.x	Fixed at the changeover.
+mo-history.q1.q	What triggered the 2008 financial crisis?
+mo-history.q1.o0	Tulips
+mo-history.q1.o1	Risky mortgages bundled into securities
+mo-history.q1.o2	Oil prices
+mo-history.q1.x	House prices fell.
+mo-history.c0.title	Tulip mania
+mo-history.c0.text	In 1630s Holland, rare tulip bulbs reportedly sold for the price of a house before prices collapsed in 1637. Historians now think the mania was smaller than legend says.
+mo-history.c0.viz.events.0.l	prices start rising
+mo-history.c0.viz.events.1.y	Jan 1637
+mo-history.c0.viz.events.1.l	peak
+mo-history.c0.viz.events.2.y	Feb 1637
+mo-history.c0.viz.events.2.l	collapse
+mo-history.c1.title	The South Sea Bubble
+mo-history.c1.text	In 1720 shares in Britain's South Sea Company soared and crashed. Isaac Newton lost a fortune and supposedly said he could calculate the stars but not the madness of people.
+mo-history.c1.viz.unit	share price, £ (approx.)
+mo-history.c1.viz.items.0.l	Jan 1720
+mo-history.c1.viz.items.1.l	Jun 1720
+mo-history.c1.viz.items.2.l	Dec 1720
+mo-history.c2.title	The 1929 crash
+mo-history.c2.text	The US stock market crashed in October 1929, helping trigger the Great Depression. Bank failures and policy mistakes deepened it.
+mo-history.c2.viz.steps.0	Speculative boom
+mo-history.c2.viz.steps.1	October 1929 crash
+mo-history.c2.viz.steps.2	Bank failures
+mo-history.c2.viz.steps.3	Great Depression
+mo-history.c3.title	Hyperinflation
+mo-history.c3.text	When governments print money to cover debts, prices can explode. In Germany in 1923, prices doubled every few days; in Zimbabwe in 2008, faster still.
+mo-history.c3.viz.items.0	Germany 1923
+mo-history.c3.viz.items.1	Hungary 1946
+mo-history.c3.viz.items.2	Zimbabwe 2008
+mo-history.c3.viz.items.3	Venezuela 2010s
+mo-history.c4.title	Bretton Woods
+mo-history.c4.text	In 1944, major economies tied their currencies to the dollar, and the dollar to gold. In 1971 the US ended gold convertibility, starting today's floating currencies.
+mo-history.c4.viz.events.0.l	Bretton Woods
+mo-history.c4.viz.events.1.l	dollar leaves gold
+mo-history.c4.viz.events.2.l	floating rates
+mo-history.c5.title	The dot-com bubble
+mo-history.c5.text	In the late 1990s, internet companies with no profits soared. The Nasdaq fell nearly 80% from 2000 to 2002. A few survivors became giants.
+mo-history.c5.viz.unit	Nasdaq index (approx.)
+mo-history.c5.viz.items.1.l	Mar 2000
+mo-history.c5.viz.items.2.l	Oct 2002
+mo-history.c6.title	The 2008 crisis
+mo-history.c6.text	Risky US mortgages were bundled into complex securities. When house prices fell, losses spread worldwide. Lehman Brothers collapsed in September 2008.
+mo-history.c6.viz.steps.0	Risky mortgages
+mo-history.c6.viz.steps.1	Bundled and sold
+mo-history.c6.viz.steps.2	House prices fall
+mo-history.c6.viz.steps.3	Global banking crisis
+mo-history.c7.title	Portugal's bailout
+mo-history.c7.text	In 2011, during the euro debt crisis, Portugal received a €78 billion rescue from the EU and IMF, with tough austerity conditions. It exited the programme in 2014.
+mo-history.c7.viz.events.0.l	euro debt crisis
+mo-history.c7.viz.events.1.l	€78 billion programme
+mo-history.c7.viz.events.2.l	clean exit
+mo-history.c7.viz.events.3.l	debt below 100% of GDP
+mo-history.c8.title	The euro
+mo-history.c8.text	The euro launched in 1999 for banks and in 2002 as notes and coins. Portugal swapped escudos at 200.482 escudos per euro.
+mo-history.c8.viz.items.0.a	1 euro
+mo-history.c8.viz.items.0.b	200.482 escudos
+mo-history.c8.viz.items.1.b	launched electronically
+mo-history.c8.viz.items.2.b	notes and coins
+mo-history.c9.title	Lessons from crises
+mo-history.c9.text	Crises share patterns: cheap credit, rising prices, "this time is different" stories, then a sudden reversal. Diversification and humility protect you.
+mo-history.c9.viz.steps.0	Cheap credit
+mo-history.c9.viz.steps.1	Boom
+mo-history.c9.viz.steps.2	Euphoria
+mo-history.c9.viz.steps.3	Bust
+mo-business.title	How companies make money
+mo-business.summary	Reading the basics.
+mo-business.q0.q	A café has €6,000 fixed costs and earns €2 per coffee. Break-even is…
+mo-business.q0.o0	1,200
+mo-business.q0.o1	3,000 coffees
+mo-business.q0.o2	6,000
+mo-business.q0.x	Fixed costs ÷ margin.
+mo-business.q1.q	Why can a profitable company run out of cash?
+mo-business.q1.o0	Fraud
+mo-business.q1.o1	Customers pay late while bills are due
+mo-business.q1.o2	High margins
+mo-business.q1.x	Profit isn't cash.
+mo-business.c0.title	Revenue, costs, profit
+mo-business.c0.text	Revenue is money coming in from sales. Subtract costs and you get profit. A company can have huge revenue and still lose money.
+mo-business.c0.viz.f	profit = revenue − costs
+mo-business.c0.viz.items.0.s	revenue
+mo-business.c0.viz.items.0.m	sales
+mo-business.c0.viz.items.1.s	costs
+mo-business.c0.viz.items.1.m	everything spent
+mo-business.c1.title	Gross and net margin
+mo-business.c1.text	Gross margin is what's left after the direct cost of goods. Net margin is what's left after everything, including salaries, rent, interest and tax.
+mo-business.c1.viz.unit	€ of each €100 sold (example)
+mo-business.c1.viz.items.0.l	Revenue
+mo-business.c1.viz.items.1.l	Gross profit
+mo-business.c1.viz.items.2.l	Net profit
+mo-business.c2.title	Fixed and variable costs
+mo-business.c2.text	Fixed costs, like rent, stay the same whatever you sell; variable costs, like ingredients, rise with each sale. Selling more spreads fixed costs.
+mo-business.c2.viz.l.t	Fixed
+mo-business.c2.viz.l.items.0	rent
+mo-business.c2.viz.l.items.1	salaries
+mo-business.c2.viz.l.items.2	insurance
+mo-business.c2.viz.r.t	Variable
+mo-business.c2.viz.r.items.0	materials
+mo-business.c2.viz.r.items.1	packaging
+mo-business.c2.viz.r.items.2	delivery
+mo-business.c3.title	Break-even
+mo-business.c3.text	The break-even point is where revenue covers all costs. A café with €6,000 monthly fixed costs and €2 profit per coffee must sell 3,000 coffees a month.
+mo-business.c3.viz.f	break-even = fixed costs ÷ margin per unit
+mo-business.c3.viz.items.0.m	3,000 coffees
+mo-business.c4.title	Cash flow
+mo-business.c4.text	Profit isn't cash. A business can be profitable on paper but run out of cash if customers pay late. Many small firms fail for this reason.
+mo-business.c4.viz.steps.0	Sale made
+mo-business.c4.viz.steps.1	Invoice sent
+mo-business.c4.viz.steps.2	Wait 60 days
+mo-business.c4.viz.steps.3	Bills due today
+mo-business.c5.title	Business models
+mo-business.c5.text	Companies earn in different ways: selling products, subscriptions, advertising, commissions or licensing.
+mo-business.c5.viz.items.0.a	Product sales
+mo-business.c5.viz.items.0.b	a bakery
+mo-business.c5.viz.items.1.a	Subscription
+mo-business.c5.viz.items.1.b	streaming
+mo-business.c5.viz.items.2.a	Advertising
+mo-business.c5.viz.items.2.b	search engines
+mo-business.c5.viz.items.3.a	Commission
+mo-business.c5.viz.items.3.b	marketplaces
+mo-business.c6.title	Economies of scale
+mo-business.c6.text	Bigger companies can produce each unit more cheaply: bulk buying, specialised machines and spreading fixed costs.
+mo-business.c6.viz.unit	cost per unit, € (illustrative)
+mo-business.c6.viz.items.0.l	100 units
+mo-business.c6.viz.items.1.l	1,000 units
+mo-business.c6.viz.items.2.l	10,000 units
+mo-business.c7.title	Competitive moats
+mo-business.c7.text	Warren Buffett looks for "moats": advantages that protect profits, like brands, network effects, patents or switching costs.
+mo-business.c7.viz.items.0	Strong brand
+mo-business.c7.viz.items.1	Network effects
+mo-business.c7.viz.items.2	Patents
+mo-business.c7.viz.items.3	High switching costs
+mo-business.c8.title	Valuation
+mo-business.c8.text	A company's market value is its share price times the number of shares. The price-to-earnings ratio compares price with profit per share.
+mo-business.c8.viz.f	P/E = share price ÷ earnings per share
+mo-business.c8.viz.items.0.s	high P/E
+mo-business.c8.viz.items.0.m	expectations of growth
+mo-business.c8.viz.items.1.s	low P/E
+mo-business.c8.viz.items.1.m	cheaper or slower
+mo-business.c9.title	A lemonade stand
+mo-business.c9.text	Cups and lemons cost €0.40 per glass; you sell at €1.50. Your stall costs €33 a day. You break even at 30 glasses; glass 31 is profit.
+mo-business.c9.example.0	Margin = €1.50 − €0.40 = €1.10
+mo-business.c9.example.1	€33 ÷ €1.10 = 30 glasses
+mo-business.c9.viz.unit	€ profit
+mo-business.c9.viz.items.0.l	20 glasses
+mo-business.c9.viz.items.1.l	30 glasses
+mo-business.c9.viz.items.2.l	50 glasses
+mo-insurance.title	Insurance and risk
+mo-insurance.summary	Paying a little to avoid a disaster.
+mo-insurance.q0.q	What is a deductible (franquia)?
+mo-insurance.q0.o0	The yearly premium
+mo-insurance.q0.o1	What you pay before insurance covers the rest
+mo-insurance.q0.o2	A tax
+mo-insurance.q0.x	Higher deductible, lower premium.
+mo-insurance.q1.q	Which insurance is compulsory for cars in Portugal?
+mo-insurance.q1.o0	Comprehensive
+mo-insurance.q1.o1	Third-party liability
+mo-insurance.q1.o2	Theft
+mo-insurance.q1.x	Covers damage to others.
+mo-insurance.c0.title	Pooling risk
+mo-insurance.c0.text	Insurance pools many people's small payments to cover the few who suffer big losses. Each pays a predictable premium instead of risking ruin.
+mo-insurance.c0.viz.steps.0	Many pay premiums
+mo-insurance.c0.viz.steps.1	Pool of money
+mo-insurance.c0.viz.steps.2	Few suffer losses
+mo-insurance.c0.viz.steps.3	Pool pays them
+mo-insurance.c1.title	Insure the big stuff
+mo-insurance.c1.text	Insurance is most valuable for losses you couldn't absorb: your home, liability, health, income. For small losses, saving yourself is often cheaper.
+mo-insurance.c1.viz.l.t	Insure
+mo-insurance.c1.viz.l.items.0	house fire
+mo-insurance.c1.viz.l.items.1	liability
+mo-insurance.c1.viz.l.items.2	disability
+mo-insurance.c1.viz.r.t	Self-insure
+mo-insurance.c1.viz.r.items.0	phone screen
+mo-insurance.c1.viz.r.items.1	small repairs
+mo-insurance.c2.title	Premiums and deductibles
+mo-insurance.c2.text	The premium is what you pay regularly. The deductible (franquia) is what you pay before insurance kicks in. A higher deductible usually means a lower premium.
+mo-insurance.c2.viz.l.t	Low deductible
+mo-insurance.c2.viz.l.items.0	higher premium
+mo-insurance.c2.viz.r.t	High deductible
+mo-insurance.c2.viz.r.items.0	lower premium
+mo-insurance.c3.title	Mandatory insurance
+mo-insurance.c3.text	In Portugal, car third-party liability insurance is compulsory. Fire insurance is required for buildings under horizontal property, and banks require it with mortgages.
+mo-insurance.c3.viz.items.0	Car liability: compulsory
+mo-insurance.c3.viz.items.1	Building fire: required in condominiums
+mo-insurance.c3.viz.items.2	Mortgage: life and multi-risk usually required
+mo-insurance.c4.title	Life insurance
+mo-insurance.c4.text	Life insurance pays dependants if you die. It matters most when others rely on your income, like children or a partner with a shared mortgage.
+mo-insurance.c4.viz.steps.0	Dependants rely on income
+mo-insurance.c4.viz.steps.1	Insure that income
+mo-insurance.c4.viz.steps.2	Peace of mind
+mo-insurance.c5.title	Health insurance
+mo-insurance.c5.text	Portugal's SNS provides public healthcare. Private health insurance can cut waiting times for consultations, but check exclusions, caps and waiting periods.
+mo-insurance.c5.viz.l.t	SNS
+mo-insurance.c5.viz.l.items.0	public
+mo-insurance.c5.viz.l.items.1	universal
+mo-insurance.c5.viz.l.items.2	waiting lists
+mo-insurance.c5.viz.r.t	Private insurance
+mo-insurance.c5.viz.r.items.0	faster access
+mo-insurance.c5.viz.r.items.1	exclusions
+mo-insurance.c5.viz.r.items.2	caps
+mo-insurance.c6.title	Read the exclusions
+mo-insurance.c6.text	What's not covered matters as much as what is. Floods, earthquakes and pre-existing conditions are common exclusions.
+mo-insurance.c6.viz.items.0	Earthquakes
+mo-insurance.c6.viz.items.1	Floods
+mo-insurance.c6.viz.items.2	Pre-existing conditions
+mo-insurance.c6.viz.items.3	Wear and tear
+mo-insurance.c7.title	Moral hazard
+mo-insurance.c7.text	Once insured, people may take more risks, knowing someone else pays. Deductibles and co-payments help counter it.
+mo-insurance.c7.viz.steps.0	Insured
+mo-insurance.c7.viz.steps.1	Less careful
+mo-insurance.c7.viz.steps.2	More claims
+mo-insurance.c7.viz.steps.3	Higher premiums for all
+mo-insurance.c8.title	Earthquake cover
+mo-insurance.c8.text	Given the 1755 history, earthquake cover in Portugal is optional and often excluded from standard home policies. Many homes are uninsured for it.
+mo-insurance.c8.viz.items.0.w	"My home policy covers earthquakes"
+mo-insurance.c8.viz.items.0.r	Check: it's often an optional extra
+mo-insurance.c9.title	Shopping around
+mo-insurance.c9.text	Compare policies by cover, exclusions and deductible, not just premium. Review yearly; loyalty is rarely rewarded.
+mo-insurance.c9.viz.items.0	Same cover?
+mo-insurance.c9.viz.items.1	Exclusions
+mo-insurance.c9.viz.items.2	Deductible
+mo-insurance.c9.viz.items.3	Claims reputation
+mo-scams.title	Scams and fraud
+mo-scams.summary	Protecting your money.
+mo-scams.q0.q	Will a real bank ask for your one-time SMS code?
+mo-scams.q0.o0	Yes, to verify you
+mo-scams.q0.o1	No, never
+mo-scams.q0.o2	Only by email
+mo-scams.q0.x	Hang up and call the official number.
+mo-scams.q1.q	Where can you check if an investment company is authorised in Portugal?
+mo-scams.q1.o0	Facebook
+mo-scams.q1.o1	CMVM and Banco de Portugal lists
+mo-scams.q1.o2	The company's own site
+mo-scams.q1.x	Regulators publish warnings.
+mo-scams.c0.title	The urgency trick
+mo-scams.c0.text	Most scams create urgency: "your account will be blocked", "act now". Pressure stops you thinking. Real banks don't rush you like that.
+mo-scams.c0.viz.steps.0	Urgent message
+mo-scams.c0.viz.steps.1	Panic
+mo-scams.c0.viz.steps.2	Act without checking
+mo-scams.c0.viz.steps.3	Money gone
+mo-scams.c1.title	Phishing
+mo-scams.c1.text	Fake emails, SMS or calls pretend to be your bank, the tax authority or a delivery company, asking you to click a link or share codes.
+mo-scams.c1.viz.items.0	Fake bank SMS
+mo-scams.c1.viz.items.1	Fake tax refund email
+mo-scams.c1.viz.items.2	Fake delivery fee
+mo-scams.c1.viz.items.3	Fake tech support call
+mo-scams.c2.title	Never share codes
+mo-scams.c2.text	No real bank will ask for your full card PIN, online banking password or the one-time code sent to your phone. Anyone asking is a scammer.
+mo-scams.c2.viz.items.0.w	"The bank called asking for my code"
+mo-scams.c2.viz.items.0.r	Hang up, call the bank's official number
+mo-scams.c3.title	"Olá pai, olá mãe" scams
+mo-scams.c3.text	Scammers message parents claiming to be their child with a new number, asking urgently for money. Call the child's old number to check.
+mo-scams.c3.viz.steps.0	"Mum, new number, need money!"
+mo-scams.c3.viz.steps.1	Call the old number
+mo-scams.c3.viz.steps.2	Verify
+mo-scams.c3.viz.steps.3	Usually a scam
+mo-scams.c4.title	Investment scams
+mo-scams.c4.text	Fake platforms show impressive returns and let you withdraw small amounts to build trust, then disappear with larger deposits. Check regulators' warning lists.
+mo-scams.c4.viz.steps.0	Small investment
+mo-scams.c4.viz.steps.1	Fake gains shown
+mo-scams.c4.viz.steps.2	Invest more
+mo-scams.c4.viz.steps.3	Can't withdraw
+mo-scams.c5.title	Check the regulator
+mo-scams.c5.text	In Portugal, the CMVM, Banco de Portugal and ASF publish lists of unauthorised entities. If a company isn't registered, don't invest.
+mo-scams.c5.viz.items.0.a	CMVM
+mo-scams.c5.viz.items.0.b	securities and investments
+mo-scams.c5.viz.items.1.a	Banco de Portugal
+mo-scams.c5.viz.items.1.b	banks and credit
+mo-scams.c5.viz.items.2.a	ASF
+mo-scams.c5.viz.items.2.b	insurance and pensions
+mo-scams.c6.title	Romance scams
+mo-scams.c6.text	Scammers build online relationships over weeks, then invent emergencies or investment "opportunities". Never send money to someone you haven't met.
+mo-scams.c6.viz.steps.0	Online romance
+mo-scams.c6.viz.steps.1	Trust built
+mo-scams.c6.viz.steps.2	Sudden crisis
+mo-scams.c6.viz.steps.3	Request for money
+mo-scams.c7.title	Card security
+mo-scams.c7.text	Use contactless and app notifications, set spending limits and use virtual cards for online shopping. Report a lost card immediately.
+mo-scams.c7.viz.items.0	App notifications
+mo-scams.c7.viz.items.1	Spending limits
+mo-scams.c7.viz.items.2	Virtual cards online
+mo-scams.c7.viz.items.3	Report losses fast
+mo-scams.c8.title	MB WAY scams
+mo-scams.c8.text	Scammers posing as buyers on marketplaces ask you to "receive" money via MB WAY but actually guide you to send it or link their phone to your account.
+mo-scams.c8.viz.items.0.w	"Go to the ATM to receive payment"
+mo-scams.c8.viz.items.0.r	Receiving money never requires you to act at an ATM
+mo-scams.c9.title	If it happens
+mo-scams.c9.text	Contact your bank immediately to block cards and transfers, change passwords, report to the police and keep evidence. Speed improves the odds of recovery.
+mo-scams.c9.viz.steps.0	Call your bank
+mo-scams.c9.viz.steps.1	Block cards
+mo-scams.c9.viz.steps.2	Report to police
+mo-scams.c9.viz.steps.3	Keep evidence
+mo-markets.title	How stock markets work
+mo-markets.summary	Buying a slice of companies.
+mo-markets.q0.q	What is a bear market?
+mo-markets.q0.o0	Rising 20%
+mo-markets.q0.o1	A fall of 20% or more from a peak
+mo-markets.q0.o2	A market for animals
+mo-markets.q0.x	Bulls charge up; bears swipe down.
+mo-markets.q1.q	What does an ETF offer?
+mo-markets.q1.o0	Guaranteed returns
+mo-markets.q1.o1	A basket of assets traded like a share
+mo-markets.q1.o2	Bank deposits
+mo-markets.q1.x	Diversification at low cost.
+mo-markets.q2.q	What is Portugal's main stock index?
+mo-markets.q2.o0	DAX
+mo-markets.q2.o1	PSI
+mo-markets.q2.o2	FTSE
+mo-markets.q2.x	On Euronext Lisbon.
+mo-markets.c0.title	Why companies list
+mo-markets.c0.text	Companies sell shares on a stock exchange to raise money for growth. Early investors can also sell their stakes. Listing for the first time is an IPO.
+mo-markets.c0.viz.steps.0	Private company
+mo-markets.c0.viz.steps.1	IPO
+mo-markets.c0.viz.steps.2	Shares trade on exchange
+mo-markets.c0.viz.steps.3	Company gets capital
+mo-markets.c1.title	Exchanges
+mo-markets.c1.text	Stock exchanges are marketplaces matching buyers and sellers. Portugal's is Euronext Lisbon; its main index, the PSI, tracks the largest listed companies.
+mo-markets.c1.viz.items.0.a	Euronext Lisbon
+mo-markets.c1.viz.items.0.b	Portugal's exchange
+mo-markets.c1.viz.items.1.a	PSI
+mo-markets.c1.viz.items.1.b	main Portuguese index
+mo-markets.c1.viz.items.2.a	S&P 500
+mo-markets.c1.viz.items.2.b	500 big US firms
+mo-markets.c1.viz.items.3.a	Euro Stoxx 50
+mo-markets.c1.viz.items.3.b	50 big eurozone firms
+mo-markets.c2.title	What moves prices
+mo-markets.c2.text	Prices move with supply and demand, driven by expected future profits, interest rates, news and sentiment.
+mo-markets.c2.viz.items.0	Profit expectations
+mo-markets.c2.viz.items.1	Interest rates
+mo-markets.c2.viz.items.2	News and events
+mo-markets.c2.viz.items.3	Investor mood
+mo-markets.c3.title	Indices
+mo-markets.c3.text	An index tracks a basket of shares to show how a market is doing. The S&P 500 includes about 500 of the largest US companies, weighted by size.
+mo-markets.c3.viz.steps.0	Pick companies
+mo-markets.c3.viz.steps.1	Weight by size
+mo-markets.c3.viz.steps.2	Track combined value
+mo-markets.c3.viz.steps.3	Index level
+mo-markets.c4.title	Bull and bear markets
+mo-markets.c4.text	A bull market is a sustained rise; a bear market is a fall of 20% or more from a peak. Bulls charge up; bears swipe down.
+mo-markets.c4.viz.l.t	Bull
+mo-markets.c4.viz.l.items.0	rising prices
+mo-markets.c4.viz.l.items.1	optimism
+mo-markets.c4.viz.r.t	Bear
+mo-markets.c4.viz.r.items.0	falls of 20%+
+mo-markets.c4.viz.r.items.1	pessimism
+mo-markets.c5.title	Long-run returns
+mo-markets.c5.text	Over long periods, global shares have returned roughly 5% a year above inflation on average, but with big swings and some long flat periods.
+mo-markets.c5.viz.unit	real return % a year (long-run, approx.)
+mo-markets.c5.viz.items.0.l	Cash
+mo-markets.c5.viz.items.1.l	Bonds
+mo-markets.c5.viz.items.2.l	Shares
+mo-markets.c6.title	Drawdowns
+mo-markets.c6.text	Even good markets have big falls. World shares fell about 50% in 2008–09 and around 34% in weeks in early 2020, then recovered.
+mo-markets.c6.viz.unit	% fall (approx.)
+mo-markets.c7.title	ETFs
+mo-markets.c7.text	Exchange-traded funds hold baskets of assets and trade like shares. A single world ETF can give you thousands of companies at low cost.
+mo-markets.c7.viz.l.t	Single share
+mo-markets.c7.viz.l.items.0	one company
+mo-markets.c7.viz.l.items.1	higher risk
+mo-markets.c7.viz.r.t	World ETF
+mo-markets.c7.viz.r.items.0	thousands of companies
+mo-markets.c7.viz.r.items.1	diversified
+mo-markets.c8.title	Costs
+mo-markets.c8.text	Fund fees (TER), trading commissions, currency conversion and taxes all eat into returns. Over decades, small differences compound.
+mo-markets.c8.viz.items.0	Fund fee (TER)
+mo-markets.c8.viz.items.1	Trading commissions
+mo-markets.c8.viz.items.2	Currency conversion
+mo-markets.c8.viz.items.3	Taxes on gains
+mo-markets.c9.title	Capital gains tax in Portugal
+mo-markets.c9.text	Gains from selling shares and dividends are generally taxed at a flat 28% in Portugal, with the option to include them in income tax. Rules change; check current law.
+mo-markets.c9.viz.f	tax = gain × 28%
+mo-markets.c9.viz.items.0.s	gain
+mo-markets.c9.viz.items.0.m	sale price − purchase price
+mo-markets.c9.viz.items.1.s	€1,000 gain
+mo-markets.c9.viz.items.1.m	€280 tax
+mo-trade.title	The global economy
+mo-trade.summary	Trade, currencies and big forces.
+mo-trade.q0.q	What is a tariff?
+mo-trade.q0.o0	A subsidy
+mo-trade.q0.o1	A tax on imports
+mo-trade.q0.o2	A type of loan
+mo-trade.q0.x	It raises prices for consumers.
+mo-trade.q1.q	Since when has the EU single market existed?
+mo-trade.q1.o0	1957
+mo-trade.q1.o1	1993
+mo-trade.q1.o2	2002
+mo-trade.q1.x	Free movement of goods, services, people and capital.
+mo-trade.c0.title	Why countries trade
+mo-trade.c0.text	Trade lets countries specialise and consumers enjoy cheaper, more varied goods. Portugal exports cars, machinery, cork, wine, clothing and tourism services.
+mo-trade.c0.viz.items.0	Vehicles and parts
+mo-trade.c0.viz.items.1	Machinery
+mo-trade.c0.viz.items.2	Tourism
+mo-trade.c0.viz.items.3	Clothing and shoes
+mo-trade.c0.viz.items.4	Cork and wine
+mo-trade.c1.title	Tourism matters
+mo-trade.c1.text	Tourism is one of Portugal's biggest export earners, bringing in tens of millions of visitors a year, about three times the population.
+mo-trade.c1.viz.unit	millions
+mo-trade.c1.viz.items.0.l	Portugal's population
+mo-trade.c1.viz.items.1.l	Tourist guests a year
+mo-trade.c2.title	Trade deficits
+mo-trade.c2.text	A country with a trade deficit imports more than it exports. It's not automatically bad: it may be investing or consuming with foreign financing.
+mo-trade.c2.viz.l.t	Surplus
+mo-trade.c2.viz.l.items.0	exports > imports
+mo-trade.c2.viz.r.t	Deficit
+mo-trade.c2.viz.r.items.0	imports > exports
+mo-trade.c3.title	Tariffs
+mo-trade.c3.text	A tariff is a tax on imports. It protects some domestic producers but raises prices for consumers and can trigger retaliation.
+mo-trade.c3.viz.steps.0	Tariff on imports
+mo-trade.c3.viz.steps.1	Higher prices
+mo-trade.c3.viz.steps.2	Some local firms protected
+mo-trade.c3.viz.steps.3	Retaliation risk
+mo-trade.c4.title	The EU single market
+mo-trade.c4.text	Since 1993, goods, services, people and capital move freely across EU member states, the world's largest single market by many measures.
+mo-trade.c4.viz.items.0	Free movement of goods
+mo-trade.c4.viz.items.1	Services
+mo-trade.c4.viz.items.2	People
+mo-trade.c4.viz.items.3	Capital
+mo-trade.c5.title	Supply chains
+mo-trade.c5.text	Products cross many borders before you buy them. The pandemic and the 2021 Suez Canal blockage showed how fragile long supply chains can be.
+mo-trade.c5.viz.steps.0	Raw materials
+mo-trade.c5.viz.steps.1	Components abroad
+mo-trade.c5.viz.steps.2	Assembly
+mo-trade.c5.viz.steps.3	Shipping
+mo-trade.c5.viz.steps.4	Your shop
+mo-trade.c6.title	Commodities
+mo-trade.c6.text	Commodities like oil, wheat, coffee and copper are traded globally. Their prices affect inflation, fuel bills and food prices everywhere.
+mo-trade.c6.viz.items.0	Oil and gas
+mo-trade.c6.viz.items.1	Wheat and corn
+mo-trade.c6.viz.items.2	Coffee and sugar
+mo-trade.c6.viz.items.3	Copper and metals
+mo-trade.c7.title	Interest rates worldwide
+mo-trade.c7.text	When the US Federal Reserve or the ECB raises rates, borrowing gets more expensive across the world, affecting currencies, mortgages and markets.
+mo-trade.c7.viz.steps.0	Central bank raises rates
+mo-trade.c7.viz.steps.1	Loans cost more
+mo-trade.c7.viz.steps.2	Spending slows
+mo-trade.c7.viz.steps.3	Inflation eases
+mo-trade.c8.title	Emerging markets
+mo-trade.c8.text	Fast-growing economies like India, Indonesia and Brazil are a growing share of world output. China became the world's largest economy by purchasing power around 2016.
+mo-trade.c8.viz.unit	% of world GDP, PPP (approx.)
+mo-trade.c8.viz.items.0.l	China
+mo-trade.c8.viz.items.1.l	USA
+mo-trade.c8.viz.items.2.l	EU
+mo-trade.c8.viz.items.3.l	India
+mo-trade.c9.title	Remittances
+mo-trade.c9.text	Migrants send money home: remittances to low- and middle-income countries exceed $650 billion a year, more than foreign aid.
+mo-trade.c9.viz.unit	$ billion a year (approx.)
+mo-trade.c9.viz.items.0.l	Foreign aid
+mo-trade.c9.viz.items.1.l	Remittances
+mo-negotiate.title	Negotiation and salary
+mo-negotiate.summary	Getting paid what you're worth.
+mo-negotiate.q0.q	What is a BATNA?
+mo-negotiate.q0.o0	Your salary
+mo-negotiate.q0.o1	Your best alternative if the deal fails
+mo-negotiate.q0.o2	A type of contract
+mo-negotiate.q0.x	A strong BATNA gives leverage.
+mo-negotiate.q1.q	What should you compare between job offers?
+mo-negotiate.q1.o0	Gross pay only
+mo-negotiate.q1.o1	Net pay and the total package
+mo-negotiate.q1.o2	Job titles
+mo-negotiate.q1.x	Benefits matter too.
+mo-negotiate.c0.title	Know your market value
+mo-negotiate.c0.text	Research typical pay for your role, experience and location from job sites, industry surveys and peers. Data beats feelings in negotiation.
+mo-negotiate.c0.viz.items.0	Job sites
+mo-negotiate.c0.viz.items.1	Industry salary surveys
+mo-negotiate.c0.viz.items.2	Recruiters
+mo-negotiate.c0.viz.items.3	Trusted peers
+mo-negotiate.c1.title	BATNA
+mo-negotiate.c1.text	Your BATNA is your best alternative to a negotiated agreement: what you'll do if this deal fails. The stronger it is, the stronger your position.
+mo-negotiate.c1.viz.l.t	Weak BATNA
+mo-negotiate.c1.viz.l.items.0	no other offers
+mo-negotiate.c1.viz.l.items.1	less leverage
+mo-negotiate.c1.viz.r.t	Strong BATNA
+mo-negotiate.c1.viz.r.items.0	other offer
+mo-negotiate.c1.viz.r.items.1	more leverage
+mo-negotiate.c2.title	Anchoring in negotiation
+mo-negotiate.c2.text	The first number tends to anchor the discussion. If you have good data, naming an ambitious but justified number first can work in your favour.
+mo-negotiate.c2.viz.items.0.l	Their first offer
+mo-negotiate.c2.viz.items.1.l	Your anchor*
+mo-negotiate.c2.viz.items.2.l	Final deal
+mo-negotiate.c3.title	Total package
+mo-negotiate.c3.text	Salary isn't everything: bonus, meal allowance, health insurance, remote work, training budget and holidays all have value.
+mo-negotiate.c3.viz.items.0	Base salary
+mo-negotiate.c3.viz.items.1	Bonus
+mo-negotiate.c3.viz.items.2	Meal allowance
+mo-negotiate.c3.viz.items.3	Health insurance
+mo-negotiate.c3.viz.items.4	Remote work
+mo-negotiate.c3.viz.items.5	Training
+mo-negotiate.c4.title	Negotiate the raise
+mo-negotiate.c4.text	The best times to ask are after a big success, during performance reviews or when taking on new responsibilities. Bring evidence of impact.
+mo-negotiate.c4.viz.steps.0	Track your wins
+mo-negotiate.c4.viz.steps.1	Pick the right moment
+mo-negotiate.c4.viz.steps.2	Show impact
+mo-negotiate.c4.viz.steps.3	Make a clear ask
+mo-negotiate.c5.title	Listen more
+mo-negotiate.c5.text	Ask what the other side needs: budget limits, timing, priorities. Creative solutions often satisfy both, like a later start date for a higher salary.
+mo-negotiate.c5.viz.l.t	Your priority
+mo-negotiate.c5.viz.l.items.0	salary
+mo-negotiate.c5.viz.r.t	Their constraint
+mo-negotiate.c5.viz.r.items.0	budget this year
+mo-negotiate.c5.viz.r.items.1	solution: raise after six months
+mo-negotiate.c6.title	Silence is powerful
+mo-negotiate.c6.text	After making an offer or receiving one, pause. People often fill silence with concessions.
+mo-negotiate.c6.viz.steps.0	Make your ask
+mo-negotiate.c6.viz.steps.1	Stay silent
+mo-negotiate.c6.viz.steps.2	Let them respond
+mo-negotiate.c7.title	Gross vs net
+mo-negotiate.c7.text	In Portugal, the gap between gross and net pay includes social security (11% for employees) and IRS withholding. Compare offers in net terms.
+mo-negotiate.c7.viz.unit	€ a month (illustrative)
+mo-negotiate.c7.viz.items.0.l	Gross
+mo-negotiate.c7.viz.items.1.l	Social security
+mo-negotiate.c7.viz.items.2.l	IRS withheld
+mo-negotiate.c7.viz.items.3.l	Net
+mo-negotiate.c8.title	Cost of not negotiating
+mo-negotiate.c8.text	A €2,000 difference in starting salary, compounded through raises over a career, can add up to tens of thousands of euros.
+mo-negotiate.c8.viz.unit	cumulative extra pay, € (3% raises)
+mo-negotiate.c8.viz.items.0.l	After 5 years
+mo-negotiate.c8.viz.items.1.l	After 10 years
+mo-negotiate.c8.viz.items.2.l	After 20 years
+mo-negotiate.c9.title	A script
+mo-negotiate.c9.text	"I'm excited about this role. Based on my research and experience in X, I was expecting something closer to €Y. Is there flexibility?"
+mo-negotiate.c9.viz.steps.0	Show enthusiasm
+mo-negotiate.c9.viz.steps.1	Cite evidence
+mo-negotiate.c9.viz.steps.2	Name your number
+mo-negotiate.c9.viz.steps.3	Ask about flexibility
+mo-goals.title	Financial planning
+mo-goals.summary	Turning goals into a plan.
+mo-goals.q0.q	What is net worth?
+mo-goals.q0.o0	Your salary
+mo-goals.q0.o1	Assets minus liabilities
+mo-goals.q0.o2	Your savings only
+mo-goals.q0.x	Track it yearly.
+mo-goals.q1.q	Where should money needed in two years usually be kept?
+mo-goals.q1.o0	Shares
+mo-goals.q1.o1	Safe deposits or savings accounts
+mo-goals.q1.o2	Crypto
+mo-goals.q1.x	Short horizon, low risk.
+mo-goals.c0.title	SMART goals
+mo-goals.c0.text	Vague goals ("save more") rarely work. Make them specific, measurable, achievable, relevant and time-bound: "save €6,000 for a car by December 2027".
+mo-goals.c0.viz.items.0.a	Specific
+mo-goals.c0.viz.items.0.b	what exactly
+mo-goals.c0.viz.items.1.a	Measurable
+mo-goals.c0.viz.items.1.b	how much
+mo-goals.c0.viz.items.2.a	Achievable
+mo-goals.c0.viz.items.2.b	realistic
+mo-goals.c0.viz.items.3.a	Relevant
+mo-goals.c0.viz.items.3.b	matters to you
+mo-goals.c0.viz.items.4.a	Time-bound
+mo-goals.c0.viz.items.4.b	by when
+mo-goals.c1.title	Net worth
+mo-goals.c1.text	Your net worth is what you own minus what you owe. Tracking it once or twice a year shows if you're moving forward.
+mo-goals.c1.viz.f	net worth = assets − liabilities
+mo-goals.c1.viz.items.0.s	assets
+mo-goals.c1.viz.items.0.m	savings, investments, home
+mo-goals.c1.viz.items.1.s	liabilities
+mo-goals.c1.viz.items.1.m	mortgage, loans, card debt
+mo-goals.c2.title	Order of priorities
+mo-goals.c2.text	A common sequence: build a small buffer, clear expensive debt, build a full emergency fund, then save for goals and invest for the long term.
+mo-goals.c2.viz.items.0	Long-term investing
+mo-goals.c2.viz.items.1	Medium-term goals
+mo-goals.c2.viz.items.2	Full emergency fund
+mo-goals.c2.viz.items.3	Clear expensive debt
+mo-goals.c2.viz.items.4	Small buffer
+mo-goals.c3.title	Time horizons
+mo-goals.c3.text	Money needed within 2–3 years belongs in safe places. Money for 10+ years can tolerate the ups and downs of investing.
+mo-goals.c3.viz.l.t	Short term
+mo-goals.c3.viz.l.items.0	deposits
+mo-goals.c3.viz.l.items.1	savings accounts
+mo-goals.c3.viz.r.t	Long term
+mo-goals.c3.viz.r.items.0	diversified investments
+mo-goals.c4.title	Sinking funds
+mo-goals.c4.text	Save monthly for known irregular costs, like car insurance, holidays or Christmas, so they don't become emergencies.
+mo-goals.c4.viz.unit	€ a month
+mo-goals.c4.viz.items.0.l	Car insurance €480/year
+mo-goals.c4.viz.items.1.l	Holidays €1,200/year
+mo-goals.c4.viz.items.2.l	Christmas €360/year
+mo-goals.c5.title	Savings rate
+mo-goals.c5.text	Your savings rate, the share of income you save, matters more than investment returns early on. Going from 5% to 15% has a huge effect over time.
+mo-goals.c5.viz.f	savings rate = savings ÷ net income
+mo-goals.c5.viz.items.0.s	e.g.
+mo-goals.c6.title	Review yearly
+mo-goals.c6.text	Once a year, review income, spending, debts, insurance, investments and goals. Life changes; your plan should too.
+mo-goals.c6.viz.steps.0	Set goals
+mo-goals.c6.viz.steps.1	Automate
+mo-goals.c6.viz.steps.2	Review yearly
+mo-goals.c6.viz.steps.3	Adjust
+mo-goals.c7.title	Couples and money
+mo-goals.c7.text	Money is a top cause of conflict. Talk openly about goals and habits; many couples use a shared account for joint costs plus personal accounts.
+mo-goals.c7.viz.root	Couple's accounts
+mo-goals.c7.viz.items.0	Joint: rent, bills, food
+mo-goals.c7.viz.items.1	Personal A
+mo-goals.c7.viz.items.2	Personal B
+mo-goals.c8.title	Teaching kids
+mo-goals.c8.text	Pocket money, saving jars and letting children make small mistakes teach money skills early. Habits form by age 7, some research suggests.
+mo-goals.c8.viz.items.0	Pocket money
+mo-goals.c8.viz.items.1	Spend, save, share jars
+mo-goals.c8.viz.items.2	Small choices
+mo-goals.c8.viz.items.3	Talk about money openly
+mo-goals.c9.title	A 1-page plan
+mo-goals.c9.text	On one page: monthly income, fixed costs, savings rate, emergency fund target, debts with rates and two or three goals with dates.
+mo-goals.c9.viz.items.0	Income
+mo-goals.c9.viz.items.1	Fixed costs
+mo-goals.c9.viz.items.2	Savings rate
+mo-goals.c9.viz.items.3	Emergency fund
+mo-goals.c9.viz.items.4	Debts
+mo-goals.c9.viz.items.5	Goals and dates
+mo-tax.title	Taxes in everyday life
+mo-tax.summary	Understanding what you pay.
+mo-tax.q0.q	In a progressive system, a raise into a higher bracket means…
+mo-tax.q0.o0	you take home less
+mo-tax.q0.o1	only the extra income is taxed more
+mo-tax.q0.o2	all income is taxed more
+mo-tax.q0.x	Marginal rates apply to slices.
+mo-tax.q1.q	What is the standard IVA rate in mainland Portugal?
+mo-tax.q1.o0	13%
+mo-tax.q1.o1	21%
+mo-tax.q1.o2	23%
+mo-tax.q1.x	6% and 13% are reduced rates.
+mo-tax.c0.title	Why taxes
+mo-tax.c0.text	Taxes fund public services: healthcare, schools, roads, pensions and defence. In Portugal, taxes and social contributions are roughly 35–38% of GDP.
+mo-tax.c0.viz.items.0	Healthcare
+mo-tax.c0.viz.items.1	Education
+mo-tax.c0.viz.items.2	Pensions
+mo-tax.c0.viz.items.3	Infrastructure
+mo-tax.c0.viz.items.4	Security
+mo-tax.c1.title	Direct and indirect
+mo-tax.c1.text	Direct taxes are on income and wealth, like IRS. Indirect taxes are on spending, like IVA and fuel taxes, and are paid by everyone who buys.
+mo-tax.c1.viz.l.t	Direct
+mo-tax.c1.viz.l.items.0	IRS
+mo-tax.c1.viz.l.items.1	IRC
+mo-tax.c1.viz.l.items.2	IMI
+mo-tax.c1.viz.r.t	Indirect
+mo-tax.c1.viz.r.items.0	IVA
+mo-tax.c1.viz.r.items.1	fuel tax
+mo-tax.c1.viz.r.items.2	tobacco and alcohol taxes
+mo-tax.c2.title	Progressive income tax
+mo-tax.c2.text	IRS is progressive: higher slices of income are taxed at higher rates. Only the income within each bracket pays that bracket's rate.
+mo-tax.c2.viz.items.0	Top slice: highest rate
+mo-tax.c2.viz.items.1	Middle slices
+mo-tax.c2.viz.items.2	First slice: lowest rate
+mo-tax.c3.title	Marginal vs average
+mo-tax.c3.text	Moving into a higher bracket never reduces your take-home pay overall: only the extra income is taxed at the higher rate. Your average rate is always lower than your top rate.
+mo-tax.c3.viz.items.0.w	"A raise pushed me into a higher bracket, so I earn less"
+mo-tax.c3.viz.items.0.r	Only the extra euros are taxed more
+mo-tax.c4.title	IVA rates
+mo-tax.c4.text	Portugal's mainland IVA has three rates: 6% for essentials like basic food, 13% for some items like restaurant food, and 23% standard. The islands have lower rates.
+mo-tax.c4.viz.unit	IVA mainland, %
+mo-tax.c4.viz.items.0.l	Reduced
+mo-tax.c4.viz.items.1.l	Intermediate
+mo-tax.c4.viz.items.2.l	Standard
+mo-tax.c5.title	E-fatura
+mo-tax.c5.text	Asking for an invoice with your NIF lets some spending count for IRS deductions, like health, education and housing, and helps fight tax evasion.
+mo-tax.c5.viz.items.0	Health
+mo-tax.c5.viz.items.1	Education
+mo-tax.c5.viz.items.2	Housing rent
+mo-tax.c5.viz.items.3	Some general expenses
+mo-tax.c6.title	Deductions
+mo-tax.c6.text	Deductions reduce the tax you owe: health, education, rent and dependants are common categories, each with limits.
+mo-tax.c6.viz.steps.0	Expenses with NIF
+mo-tax.c6.viz.steps.1	Validated on e-fatura
+mo-tax.c6.viz.steps.2	Deducted from IRS
+mo-tax.c6.viz.steps.3	Refund or lower bill
+mo-tax.c7.title	IRS Jovem
+mo-tax.c7.text	Portugal offers reduced income tax for young workers in their first years of work, under the IRS Jovem scheme. The rules have changed several times; check current conditions.
+mo-tax.c7.viz.steps.0	Young worker
+mo-tax.c7.viz.steps.1	First years of income
+mo-tax.c7.viz.steps.2	Partial exemption
+mo-tax.c7.viz.steps.3	Lower IRS
+mo-tax.c8.title	Self-employed
+mo-tax.c8.text	Self-employed workers issue "recibos verdes", pay social security quarterly declarations and may use a simplified regime where only part of income is taxed.
+mo-tax.c8.viz.items.0	Issue recibos verdes
+mo-tax.c8.viz.items.1	Social security declarations
+mo-tax.c8.viz.items.2	Simplified regime
+mo-tax.c8.viz.items.3	Keep records
+mo-tax.c9.title	Your annual return
+mo-tax.c9.text	Each spring, check the pre-filled IRS on the Portal das Finanças. Confirm dependants, deductions and income before submitting; automatic IRS suits many.
+mo-tax.c9.viz.steps.0	Log in
+mo-tax.c9.viz.steps.1	Check pre-filled data
+mo-tax.c9.viz.steps.2	Confirm deductions
+mo-tax.c9.viz.steps.3	Submit

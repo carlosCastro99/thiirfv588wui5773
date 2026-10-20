@@ -1,0 +1,1760 @@
+P.title	Physics
+P.blurb	Energy, heat and waves in everyday life.
+ph-energy.title	Energy & heat
+ph-energy.summary	Where energy goes, how heat moves, and why heat pumps beat heaters.
+ph-energy.q0.q	Which way does heat mainly reach you from the Sun?
+ph-energy.q0.o0	Conduction
+ph-energy.q0.o1	Convection
+ph-energy.q0.o2	Radiation
+ph-energy.q0.x	Space is nearly empty, so only radiation can cross it.
+ph-energy.q1.q	A heat pump with a COP of 3 uses 2 kWh of electricity. Heat delivered?
+ph-energy.q1.o0	0.67 kWh
+ph-energy.q1.o1	2 kWh
+ph-energy.q1.o2	6 kWh
+ph-energy.q1.x	Heat out = COP × electricity in = 3 × 2 = 6 kWh.
+ph-energy.q2.q	Heating 2 kg of water by 10 °C needs about…
+ph-energy.q2.o0	84 kJ
+ph-energy.q2.o1	8.4 kJ
+ph-energy.q2.o2	840 kJ
+ph-energy.q2.x	Q = 2 × 4186 × 10 ≈ 83.7 kJ.
+ph-energy.q3.q	Why does ice float?
+ph-energy.q3.o0	It's colder
+ph-energy.q3.o1	Water expands when it freezes, so ice is less dense
+ph-energy.q3.o2	Air bubbles only
+ph-energy.q3.x	Ice is about 9% less dense than water.
+ph-energy.q4.q	How does sweating cool you?
+ph-energy.q4.o0	Water is cold
+ph-energy.q4.o1	Evaporation carries energy away from the skin
+ph-energy.q4.o2	Salt absorbs heat
+ph-energy.q4.x	The fastest molecules leave, taking heat.
+ph-energy.c0.title	Energy changes form
+ph-energy.c0.text	Energy is never created or destroyed, only converted. A battery's chemical energy becomes electrical energy, which a bulb turns into light and heat.\n\nEfficiency is the useful share. An old filament bulb turned about 5% into light; an LED manages several times that, so it runs cooler for the same brightness.
+ph-energy.c0.sketch.0	chemical
+ph-energy.c0.sketch.1	electrical
+ph-energy.c0.sketch.2	light
+ph-energy.c0.sketch.3	heat
+ph-energy.c0.sketch.4	total in = total out
+ph-energy.c1.title	Three ways heat moves
+ph-energy.c1.text	Conduction: heat passes through touching material, from the burner into the pan base.\nConvection: warm fluid rises and cool fluid sinks, setting up loops that stir the water.\nRadiation: infrared light travels across a gap with no material at all, like the warmth you feel beside a fire.
+ph-energy.c1.sketch.0	conduction
+ph-energy.c1.sketch.1	convection
+ph-energy.c1.sketch.2	radiation
+ph-energy.c2.title	Heat pumps move heat
+ph-energy.c2.text	A heat pump doesn't make heat; it moves it. A refrigerant absorbs heat from outside air (even cold air has some), the compressor squeezes it so it gets hotter, and it releases that heat indoors.\n\nBecause most of the heat comes from outside, 1 kWh of electricity can deliver 3–4 kWh of heat. That ratio is the COP.
+ph-energy.c2.sketch.0	compressor
+ph-energy.c2.sketch.1	outside: absorbs
+ph-energy.c2.sketch.2	inside: releases
+ph-energy.c2.sketch.3	1 kWh in
+ph-energy.c2.sketch.4	3–4 kWh heat out
+ph-energy.c3.title	Specific heat
+ph-energy.c3.text	The energy to heat something is mass × specific heat × temperature rise. Water's specific heat is high, about 4186 J per kg per °C, which is why it takes a while to boil and why it stores heat so well.
+ph-energy.c3.formula	Q = m × c × ΔT
+ph-energy.c3.example.0	1 L of water from 20 to 100 °C
+ph-energy.c3.example.1	1 × 4186 × 80 = 335 kJ
+ph-energy.c3.example.2	≈ 0.093 kWh, about 2 cents
+ph-energy.c3.sketch.0	1 L water
+ph-energy.c3.sketch.1	20 → 100 °C
+ph-energy.c3.sketch.2	Q = 1 × 4186 × 80 ≈ 335 kJ
+ph-energy.c4.title	Forms of energy
+ph-energy.c4.text	Energy appears in many forms: kinetic (motion), potential (height, springs), thermal (heat), chemical (fuel, food), electrical, radiant (light) and nuclear. Physics tracks how it moves between them.
+ph-energy.c4.viz.root	Energy
+ph-energy.c4.viz.items.0	Kinetic and potential
+ph-energy.c4.viz.items.1	Thermal
+ph-energy.c4.viz.items.2	Chemical
+ph-energy.c4.viz.items.3	Electrical and radiant
+ph-energy.c4.viz.items.4	Nuclear
+ph-energy.c5.title	Food energy
+ph-energy.c5.text	Food energy is counted in kilocalories (kcal), shown on labels as "Calories". One kcal is about 4.2 kJ. A 2,000 kcal daily diet is about 2.3 kWh, roughly a 100 W bulb running all day.
+ph-energy.c5.viz.f	1 kcal ≈ 4.184 kJ
+ph-energy.c5.viz.items.0.s	2,000 kcal
+ph-energy.c5.viz.items.0.m	≈ 8.4 MJ
+ph-energy.c5.viz.items.1.s	8.4 MJ
+ph-energy.c5.viz.items.1.m	≈ 2.3 kWh
+ph-energy.c5.viz.items.2.s	average body power
+ph-energy.c5.viz.items.2.m	≈ 100 W
+ph-energy.c6.title	Thermal expansion in daily life
+ph-energy.c6.text	Most things expand when heated: railway tracks have gaps, power lines sag in summer, a stuck jar lid loosens under hot water. Water is odd: it expands when it freezes, which is why ice floats and pipes burst.
+ph-energy.c6.viz.items.0	Rails and bridges need gaps
+ph-energy.c6.viz.items.1	Power lines sag in summer
+ph-energy.c6.viz.items.2	Hot water loosens jar lids
+ph-energy.c6.viz.items.3	Freezing water bursts pipes
+ph-energy.c7.title	Insulation and the Thermos
+ph-energy.c7.text	A vacuum flask stops all three kinds of heat transfer: the vacuum blocks conduction and convection, and silvered walls reflect radiation. That's why it keeps coffee hot or drinks cold for hours.
+ph-energy.c7.viz.items.0.a	vacuum
+ph-energy.c7.viz.items.0.b	no conduction or convection
+ph-energy.c7.viz.items.1.a	silver coating
+ph-energy.c7.viz.items.1.b	reflects radiation
+ph-energy.c7.viz.items.2.a	stopper
+ph-energy.c7.viz.items.2.b	blocks evaporation
+ph-energy.c8.title	Evaporation cools
+ph-energy.c8.text	When water evaporates, the fastest molecules escape and take energy with them, so what remains cools down. Sweating, clay water jugs and cooling towers all use it.
+ph-energy.c8.viz.steps.0	Sweat on the skin
+ph-energy.c8.viz.steps.1	Fast molecules evaporate
+ph-energy.c8.viz.steps.2	They carry heat away
+ph-energy.c8.viz.steps.3	Skin cools
+ph-energy.c9.title	Where Earth's energy comes from
+ph-energy.c9.text	Almost all energy we use traces back to the Sun: food, wind, hydro, solar and even fossil fuels (ancient sunlight stored by plants). The exceptions are nuclear, geothermal and tidal energy.
+ph-energy.c9.viz.l.t	From the Sun
+ph-energy.c9.viz.l.items.0	food
+ph-energy.c9.viz.l.items.1	wind, hydro, solar
+ph-energy.c9.viz.l.items.2	fossil fuels
+ph-energy.c9.viz.r.t	Not from the Sun
+ph-energy.c9.viz.r.items.0	nuclear
+ph-energy.c9.viz.r.items.1	geothermal
+ph-energy.c9.viz.r.items.2	tides (Moon)
+ph-waves.title	Waves, sound & light
+ph-waves.summary	One equation that covers guitar strings, Wi-Fi and thunderstorms.
+ph-waves.q0.q	A 343 Hz tone in air (343 m/s) has a wavelength of…
+ph-waves.q0.o0	1 m
+ph-waves.q0.o1	343 m
+ph-waves.q0.o2	1 cm
+ph-waves.q0.x	λ = v ÷ f = 343 ÷ 343 = 1 m.
+ph-waves.q1.q	Thunder arrives 9 seconds after the flash. How far is the strike?
+ph-waves.q1.o0	About 9 km
+ph-waves.q1.o1	About 3 km
+ph-waves.q1.o2	About 1 km
+ph-waves.q1.x	Sound covers about 1 km every 3 s, so 9 s ≈ 3 km.
+ph-waves.q2.q	Which carries the most energy per photon?
+ph-waves.q2.o0	Radio
+ph-waves.q2.o1	Visible light
+ph-waves.q2.o2	X-rays
+ph-waves.q2.x	Shorter wavelength means higher frequency and more energy per photon.
+ph-waves.q3.q	Noise-cancelling headphones work by…
+ph-waves.q3.o0	Blocking all air
+ph-waves.q3.o1	Playing sound that interferes destructively with the noise
+ph-waves.q3.o2	Lowering the volume
+ph-waves.q3.x	Inverted waves cancel.
+ph-waves.q4.q	Why does a siren sound higher as it approaches?
+ph-waves.q4.o0	It gets louder
+ph-waves.q4.o1	Its waves are squashed together (Doppler effect)
+ph-waves.q4.o2	The driver changes it
+ph-waves.q4.x	Shorter wavelength means higher pitch.
+ph-waves.c0.title	Anatomy of a wave
+ph-waves.c0.text	A wave carries energy without carrying stuff along. Its wavelength (λ) is the distance from one crest to the next. Its amplitude is how tall it is, which sets loudness or brightness. Its frequency is how many crests pass each second, in hertz (Hz).
+ph-waves.c0.sketch.0	wavelength λ
+ph-waves.c0.sketch.1	amplitude ↕
+ph-waves.c0.sketch.2	frequency = waves per second (Hz)
+ph-waves.c1.title	Try it: how long is a sound?
+ph-waves.c1.text	Speed equals frequency times wavelength. Sound travels at about 343 m/s in air, so low notes have long waves and high notes have short ones.
+ph-waves.c1.formula	v = f × λ
+ph-waves.c2.title	How far away is the storm?
+ph-waves.c2.text	Light from lightning reaches you almost instantly; it travels about 300 000 km every second. Sound crawls along at about 343 m/s, roughly 1 km every 3 seconds.\n\nCount the seconds between the flash and the thunder and divide by 3 to get the distance in kilometres.
+ph-waves.c2.sketch.0	light ≈ instant
+ph-waves.c2.sketch.1	sound: 1 km / 3 s
+ph-waves.c2.sketch.2	seconds ÷ 3 = km away
+ph-waves.c3.title	The electromagnetic spectrum
+ph-waves.c3.text	Radio, microwaves, infrared, visible light, ultraviolet and X-rays are all the same thing: electromagnetic waves, all moving at the speed of light. Only the wavelength differs.\n\nShorter waves carry more energy per photon. That's why UV can burn skin and X-rays pass through it, while radio is harmless. Wi-Fi at 2.4 GHz has a wavelength of about 12.5 cm.
+ph-waves.c3.sketch.0	radio
+ph-waves.c3.sketch.1	micro
+ph-waves.c3.sketch.2	IR
+ph-waves.c3.sketch.3	light
+ph-waves.c3.sketch.4	UV
+ph-waves.c3.sketch.5	X-ray
+ph-waves.c3.sketch.6	gamma
+ph-waves.c3.sketch.7	Wi-Fi 2.4 GHz ≈ 12.5 cm
+ph-waves.c3.sketch.8	longer waves
+ph-waves.c3.sketch.9	more energy
+ph-waves.c4.title	Transverse and longitudinal
+ph-waves.c4.text	In transverse waves, the medium moves at right angles to the wave (ripples, light). In longitudinal waves, it moves back and forth along the direction of travel (sound).
+ph-waves.c4.viz.l.t	Transverse
+ph-waves.c4.viz.l.items.0	side to side
+ph-waves.c4.viz.l.items.1	light
+ph-waves.c4.viz.l.items.2	waves on a rope
+ph-waves.c4.viz.r.t	Longitudinal
+ph-waves.c4.viz.r.items.0	squeezes and stretches
+ph-waves.c4.viz.r.items.1	sound
+ph-waves.c4.viz.r.items.2	slinky pushes
+ph-waves.c5.title	Reflection and echoes
+ph-waves.c5.text	Waves bounce off surfaces. An echo is reflected sound; sonar and ultrasound imaging time echoes to measure distance and see inside things.
+ph-waves.c5.viz.steps.0	Pulse sent
+ph-waves.c5.viz.steps.1	Bounces off a surface
+ph-waves.c5.viz.steps.2	Echo returns
+ph-waves.c5.viz.steps.3	Time it to find the distance
+ph-waves.c6.title	Interference
+ph-waves.c6.text	When two waves meet, they add up: crests on crests make bigger waves, crests on troughs cancel. Noise-cancelling headphones play an inverted copy of outside noise to cancel it.
+ph-waves.c6.viz.l.t	Constructive
+ph-waves.c6.viz.l.items.0	in step
+ph-waves.c6.viz.l.items.1	waves add up
+ph-waves.c6.viz.l.items.2	louder
+ph-waves.c6.viz.r.t	Destructive
+ph-waves.c6.viz.r.items.0	out of step
+ph-waves.c6.viz.r.items.1	waves cancel
+ph-waves.c6.viz.r.items.2	quieter
+ph-waves.c7.title	Diffraction
+ph-waves.c7.text	Waves bend around obstacles and spread through gaps comparable to their wavelength. That's why you can hear someone round a corner but not see them: sound waves are metres long, light waves less than a micrometre.
+ph-waves.c7.viz.items.0.a	sound wavelength
+ph-waves.c7.viz.items.0.b	~0.02–17 m, bends round corners
+ph-waves.c7.viz.items.1.a	light wavelength
+ph-waves.c7.viz.items.1.b	~0.0005 mm, barely bends
+ph-waves.c8.title	Resonance
+ph-waves.c8.text	Every object has natural frequencies. Push it at the right rhythm and the vibration grows, like pushing a swing. Musical instruments use resonance; engineers avoid it in bridges and machines.
+ph-waves.c8.viz.items.0	Swings and pendulums
+ph-waves.c8.viz.items.1	Guitar bodies
+ph-waves.c8.viz.items.2	Wine glass broken by a voice
+ph-waves.c8.viz.items.3	Bridges and machinery must avoid it
+ph-waves.c9.title	The Doppler effect
+ph-waves.c9.text	A moving source squashes waves ahead of it and stretches them behind. An ambulance siren sounds higher as it approaches and lower as it leaves. Police radar and weather radar use the same effect.
+ph-waves.c9.viz.l.t	Approaching
+ph-waves.c9.viz.l.items.0	waves squashed
+ph-waves.c9.viz.l.items.1	higher pitch
+ph-waves.c9.viz.r.t	Moving away
+ph-waves.c9.viz.r.items.0	waves stretched
+ph-waves.c9.viz.r.items.1	lower pitch
+ph-motion.title	Describing motion
+ph-motion.summary	Speed, velocity and acceleration.
+ph-motion.q0.q	90 km/h in m/s is…
+ph-motion.q0.o0	9 m/s
+ph-motion.q0.o1	25 m/s
+ph-motion.q0.o2	324 m/s
+ph-motion.q0.x	90 ÷ 3.6 = 25 m/s.
+ph-motion.q1.q	If you double your speed, braking distance becomes about…
+ph-motion.q1.o0	Double
+ph-motion.q1.o1	Four times
+ph-motion.q1.o2	The same
+ph-motion.q1.x	It grows with speed squared.
+ph-motion.q2.q	Without air, a hammer and a feather fall…
+ph-motion.q2.o0	Hammer first
+ph-motion.q2.o1	At the same rate
+ph-motion.q2.o2	Feather first
+ph-motion.q2.x	Demonstrated on the Moon in 1971.
+ph-motion.c0.title	Speed
+ph-motion.c0.text	Speed is distance divided by time. A car covering 120 km in 1.5 hours averages 80 km/h. To convert km/h to m/s, divide by 3.6.
+ph-motion.c0.viz.f	v = d ÷ t
+ph-motion.c0.viz.items.0.s	d
+ph-motion.c0.viz.items.0.m	distance
+ph-motion.c0.viz.items.1.s	t
+ph-motion.c0.viz.items.1.m	time
+ph-motion.c0.viz.items.2.s	km/h ÷ 3.6
+ph-motion.c0.viz.items.2.m	= m/s
+ph-motion.c1.title	Speed vs velocity
+ph-motion.c1.text	Velocity is speed with a direction. A car going round a roundabout at constant speed has a changing velocity, because its direction keeps changing.
+ph-motion.c1.viz.l.t	Speed
+ph-motion.c1.viz.l.items.0	how fast
+ph-motion.c1.viz.l.items.1	50 km/h
+ph-motion.c1.viz.r.t	Velocity
+ph-motion.c1.viz.r.items.0	how fast and which way
+ph-motion.c1.viz.r.items.1	50 km/h north
+ph-motion.c2.title	Acceleration
+ph-motion.c2.text	Acceleration is how quickly velocity changes. A car going from 0 to 100 km/h (27.8 m/s) in 8 seconds accelerates at about 3.5 m/s².
+ph-motion.c2.example.0	0 to 27.8 m/s in 8 s
+ph-motion.c2.example.1	27.8 ÷ 8
+ph-motion.c2.example.2	≈ 3.5 m/s²
+ph-motion.c2.viz.f	a = Δv ÷ t
+ph-motion.c2.viz.items.0.s	Δv
+ph-motion.c2.viz.items.0.m	change in velocity
+ph-motion.c2.viz.items.1.s	t
+ph-motion.c2.viz.items.1.m	time taken
+ph-motion.c3.title	Free fall
+ph-motion.c3.text	Near Earth's surface, falling objects speed up by about 9.81 m/s every second, if air resistance is negligible. After 1 s you're falling at about 35 km/h; after 3 s, over 100 km/h.
+ph-motion.c3.viz.unit	speed in km/h
+ph-motion.c3.viz.items.0.l	1 s
+ph-motion.c3.viz.items.1.l	2 s
+ph-motion.c3.viz.items.2.l	3 s
+ph-motion.c4.title	Galileo's insight
+ph-motion.c4.text	Without air resistance, heavy and light objects fall at the same rate. Astronauts on the Moon showed this in 1971 by dropping a hammer and a feather: they landed together.
+ph-motion.c4.viz.l.t	With air
+ph-motion.c4.viz.l.items.0	feather drifts down
+ph-motion.c4.viz.l.items.1	air resistance dominates
+ph-motion.c4.viz.r.t	In a vacuum
+ph-motion.c4.viz.r.items.0	hammer and feather fall together
+ph-motion.c5.title	Terminal velocity
+ph-motion.c5.text	As a falling object speeds up, air resistance grows until it equals the weight. Then it stops accelerating. A skydiver reaches about 200 km/h belly-down; a parachute cuts it to about 20 km/h.
+ph-motion.c5.viz.unit	km/h (approx.)
+ph-motion.c5.viz.items.0.l	Raindrop
+ph-motion.c5.viz.items.1.l	Parachute
+ph-motion.c5.viz.items.2.l	Skydiver belly-down
+ph-motion.c5.viz.items.3.l	Skydiver head-down
+ph-motion.c6.title	Stopping distance
+ph-motion.c6.text	Stopping distance is thinking distance plus braking distance. Braking distance grows with the square of speed: double the speed, four times the braking distance.
+ph-motion.c6.example.0	50 km/h vs 100 km/h
+ph-motion.c6.example.1	13.9² ÷ 14 vs 27.8² ÷ 14
+ph-motion.c6.example.2	≈ 14 m vs 55 m braking
+ph-motion.c6.viz.f	braking d = v² ÷ (2 × a)
+ph-motion.c6.viz.items.0.s	v
+ph-motion.c6.viz.items.0.m	speed (m/s)
+ph-motion.c6.viz.items.1.s	a
+ph-motion.c6.viz.items.1.m	deceleration (~7 m/s² dry road)
+ph-motion.c7.title	Reaction time
+ph-motion.c7.text	A typical driver takes about 1 second to react. At 120 km/h, the car travels over 33 m before the brakes even start working. Phones at the wheel make it much longer.
+ph-motion.c7.viz.unit	metres before braking starts (1 s reaction)
+ph-motion.c7.viz.items.0.l	50 km/h
+ph-motion.c7.viz.items.1.l	90 km/h
+ph-motion.c7.viz.items.2.l	120 km/h
+ph-motion.c8.title	Relative motion
+ph-motion.c8.text	Motion depends on the observer. On a train at 200 km/h, a coffee cup is still relative to you but moving fast relative to the ground. There's no absolute "stillness".
+ph-motion.c8.viz.items.0.a	cup vs passenger
+ph-motion.c8.viz.items.0.b	0 km/h
+ph-motion.c8.viz.items.1.a	cup vs ground
+ph-motion.c8.viz.items.1.b	200 km/h
+ph-motion.c8.viz.items.2.a	Earth vs Sun
+ph-motion.c8.viz.items.2.b	~107,000 km/h
+ph-motion.c9.title	Graphs of motion
+ph-motion.c9.text	On a distance–time graph, slope is speed. On a velocity–time graph, slope is acceleration and the area underneath is distance travelled.
+ph-motion.c9.viz.items.0.a	distance–time slope
+ph-motion.c9.viz.items.0.b	speed
+ph-motion.c9.viz.items.1.a	velocity–time slope
+ph-motion.c9.viz.items.1.b	acceleration
+ph-motion.c9.viz.items.2.a	area under v–t
+ph-motion.c9.viz.items.2.b	distance
+ph-newton.title	Newton's laws
+ph-newton.summary	The three rules behind every push and pull.
+ph-newton.q0.q	A 1,000 kg car with a 2,000 N net force accelerates at…
+ph-newton.q0.o0	0.5 m/s²
+ph-newton.q0.o1	2 m/s²
+ph-newton.q0.o2	2,000 m/s²
+ph-newton.q0.x	a = F ÷ m.
+ph-newton.q1.q	Why do airbags reduce injuries?
+ph-newton.q1.o0	They're soft
+ph-newton.q1.o1	They spread the stop over more time, reducing peak force
+ph-newton.q1.o2	They add mass
+ph-newton.q1.x	Longer stopping time means smaller force.
+ph-newton.q2.q	Which law explains rocket propulsion?
+ph-newton.q2.o0	First
+ph-newton.q2.o1	Second
+ph-newton.q2.o2	Third
+ph-newton.q2.x	Action and reaction.
+ph-newton.c0.title	First law: inertia
+ph-newton.c0.text	An object keeps doing what it's doing, staying still or moving in a straight line at constant speed, unless a net force acts on it. That's why passengers lurch forward when a bus brakes.
+ph-newton.c0.viz.steps.0	Bus brakes
+ph-newton.c0.viz.steps.1	Your body keeps moving
+ph-newton.c0.viz.steps.2	Seat belt applies the force
+ph-newton.c0.viz.steps.3	You stop with the bus
+ph-newton.c1.title	Second law: F = m × a
+ph-newton.c1.text	The acceleration of an object is proportional to the force on it and inversely proportional to its mass. Push twice as hard, it accelerates twice as fast; double the mass, half the acceleration.
+ph-newton.c1.example.0	1,500 kg car, 3,000 N net force
+ph-newton.c1.example.1	3,000 ÷ 1,500
+ph-newton.c1.example.2	a = 2 m/s²
+ph-newton.c1.viz.f	F = m × a
+ph-newton.c1.viz.items.0.s	F
+ph-newton.c1.viz.items.0.m	net force (N)
+ph-newton.c1.viz.items.1.s	m
+ph-newton.c1.viz.items.1.m	mass (kg)
+ph-newton.c1.viz.items.2.s	a
+ph-newton.c1.viz.items.2.m	acceleration (m/s²)
+ph-newton.c2.title	Third law: action and reaction
+ph-newton.c2.text	Every force has an equal and opposite partner. When you push a wall, the wall pushes back on you. Rockets push gas backwards; the gas pushes the rocket forwards.
+ph-newton.c2.viz.l.t	Rocket pushes exhaust
+ph-newton.c2.viz.l.items.0	down and back
+ph-newton.c2.viz.r.t	Exhaust pushes rocket
+ph-newton.c2.viz.r.items.0	up and forward
+ph-newton.c3.title	Mass and weight again
+ph-newton.c3.text	Mass (kg) is the amount of matter and doesn't change. Weight is the force of gravity on it and depends on where you are: on the Moon you'd weigh about a sixth as much.
+ph-newton.c3.viz.unit	weight of a 70 kg person (N)
+ph-newton.c3.viz.items.0.l	Moon
+ph-newton.c3.viz.items.1.l	Mars
+ph-newton.c3.viz.items.2.l	Earth
+ph-newton.c3.viz.items.3.l	Jupiter
+ph-newton.c4.title	Seat belts and airbags
+ph-newton.c4.text	In a crash, your body must lose its speed. Spreading that over a longer time and distance means a smaller force. Seat belts stretch a little and airbags cushion, cutting the peak force dramatically.
+ph-newton.c4.viz.f	F = m × Δv ÷ t
+ph-newton.c4.viz.items.0.s	longer stopping time t
+ph-newton.c4.viz.items.0.m	smaller force F
+ph-newton.c5.title	Circular motion
+ph-newton.c5.text	Moving in a circle needs a force towards the centre (centripetal force). On a roundabout it comes from tyre friction; for the Moon, from Earth's gravity. Without it, objects fly off in a straight line.
+ph-newton.c5.viz.f	F = m × v² ÷ r
+ph-newton.c5.viz.items.0.s	m
+ph-newton.c5.viz.items.0.m	mass
+ph-newton.c5.viz.items.1.s	v
+ph-newton.c5.viz.items.1.m	speed
+ph-newton.c5.viz.items.2.s	r
+ph-newton.c5.viz.items.2.m	radius of the turn
+ph-newton.c6.title	"Centrifugal force"
+ph-newton.c6.text	In a turning car you feel pushed outward. Really, your body is trying to go straight (inertia) while the car turns under you. The "centrifugal force" is how it feels from inside the turning frame.
+ph-newton.c6.viz.items.0.w	a force throws you outward
+ph-newton.c6.viz.items.0.r	your body keeps going straight while the car turns
+ph-newton.c7.title	Friction and Newton
+ph-newton.c7.text	Things slow down on Earth because of friction and air resistance, not because motion naturally stops. In space, a nudged object keeps drifting for ever.
+ph-newton.c7.viz.l.t	On Earth
+ph-newton.c7.viz.l.items.0	friction and air slow things
+ph-newton.c7.viz.l.items.1	motion seems to need a push
+ph-newton.c7.viz.r.t	In space
+ph-newton.c7.viz.r.items.0	almost no friction
+ph-newton.c7.viz.r.items.1	motion continues
+ph-newton.c8.title	Newton's laws in sport
+ph-newton.c8.text	Footballers push the ground backward to accelerate forward; heavier players are harder to stop; a well-timed kick transfers more force through a longer contact.
+ph-newton.c8.viz.items.0	Pushing the ground to run
+ph-newton.c8.viz.items.1	Heavier body, more inertia
+ph-newton.c8.viz.items.2	Follow-through extends contact time
+ph-newton.c8.viz.items.3	Landing with bent knees reduces force
+ph-newton.c9.title	Principia, 1687
+ph-newton.c9.text	Isaac Newton published his laws of motion and universal gravitation in the "Principia Mathematica" in 1687. They explained falling apples and planetary orbits with the same rules.
+ph-newton.c9.viz.events.0.l	Kepler's orbit laws
+ph-newton.c9.viz.events.1.l	Galileo on motion
+ph-newton.c9.viz.events.2.l	Newton's Principia
+ph-newton.c9.viz.events.3.l	Einstein's relativity
+ph-gravity.title	Gravity and orbits
+ph-gravity.summary	Why the Moon doesn't fall down (it does, but misses).
+ph-gravity.q0.q	Why do astronauts float on the ISS?
+ph-gravity.q0.o0	There's no gravity
+ph-gravity.q0.o1	They and the station are in continuous free fall together
+ph-gravity.q0.o2	They're too high
+ph-gravity.q0.x	Gravity is still about 90% there.
+ph-gravity.q1.q	Double the distance between two masses and their gravitational pull becomes…
+ph-gravity.q1.o0	Half
+ph-gravity.q1.o1	A quarter
+ph-gravity.q1.o2	Double
+ph-gravity.q1.x	Inverse square law.
+ph-gravity.q2.q	What causes tides?
+ph-gravity.q2.o0	Wind
+ph-gravity.q2.o1	The Moon's (and Sun's) uneven pull across Earth
+ph-gravity.q2.o2	Earth's rotation alone
+ph-gravity.q2.x	Differential gravity creates two bulges.
+ph-gravity.c0.title	Universal gravitation
+ph-gravity.c0.text	Every mass attracts every other mass. The force grows with both masses and falls with the square of distance: double the distance, a quarter of the force.
+ph-gravity.c0.viz.f	F = G × m₁ × m₂ ÷ r²
+ph-gravity.c0.viz.items.0.s	G
+ph-gravity.c0.viz.items.0.m	gravitational constant
+ph-gravity.c0.viz.items.1.s	m
+ph-gravity.c0.viz.items.1.m	masses
+ph-gravity.c0.viz.items.2.s	r
+ph-gravity.c0.viz.items.2.m	distance between centres
+ph-gravity.c1.title	Orbits are falling
+ph-gravity.c1.text	An orbiting satellite is constantly falling towards Earth but moving sideways so fast that the ground curves away beneath it. Newton imagined a cannon on a mountain firing faster and faster.
+ph-gravity.c1.viz.steps.0	Fire slowly: lands nearby
+ph-gravity.c1.viz.steps.1	Faster: lands farther
+ph-gravity.c1.viz.steps.2	Fast enough: Earth curves away
+ph-gravity.c1.viz.steps.3	Orbit
+ph-gravity.c2.title	Orbital speeds
+ph-gravity.c2.text	The International Space Station orbits about 400 km up at about 28,000 km/h, circling Earth roughly every 90 minutes. Its crew sees about 16 sunrises a day.
+ph-gravity.c2.viz.items.0.v	400 km
+ph-gravity.c2.viz.items.0.l	ISS altitude
+ph-gravity.c2.viz.items.1.v	28,000 km/h
+ph-gravity.c2.viz.items.1.l	speed
+ph-gravity.c2.viz.items.2.v	90 min
+ph-gravity.c2.viz.items.2.l	one orbit
+ph-gravity.c3.title	Weightlessness
+ph-gravity.c3.text	Astronauts in orbit aren't beyond gravity: at the ISS's height, gravity is about 90% as strong as on the ground. They float because they and the station are falling together.
+ph-gravity.c3.viz.l.t	Common belief
+ph-gravity.c3.viz.l.items.0	no gravity in space
+ph-gravity.c3.viz.r.t	Reality
+ph-gravity.c3.viz.r.items.0	90% gravity
+ph-gravity.c3.viz.r.items.1	everything falls together
+ph-gravity.c4.title	Geostationary orbit
+ph-gravity.c4.text	At about 35,786 km above the equator, a satellite takes exactly one day to orbit, so it stays above the same spot. TV and weather satellites use it.
+ph-gravity.c4.viz.unit	altitude (km)
+ph-gravity.c4.viz.items.0.l	ISS
+ph-gravity.c4.viz.items.1.l	GPS satellites
+ph-gravity.c4.viz.items.2.l	Geostationary
+ph-gravity.c5.title	Tides
+ph-gravity.c5.text	The Moon's gravity pulls more strongly on the near side of Earth than the far side, stretching the oceans into two bulges. As Earth rotates, most coasts get two high tides a day.
+ph-gravity.c5.viz.steps.0	Moon pulls the near side harder
+ph-gravity.c5.viz.steps.1	Two ocean bulges
+ph-gravity.c5.viz.steps.2	Earth rotates under them
+ph-gravity.c5.viz.steps.3	Two high tides a day
+ph-gravity.c6.title	Escape velocity
+ph-gravity.c6.text	To leave Earth without further thrust, you'd need about 11.2 km/s (40,300 km/h). Rockets don't reach it instantly; they burn for minutes, climbing and accelerating.
+ph-gravity.c6.viz.unit	escape velocity (km/s)
+ph-gravity.c6.viz.items.0.l	Moon
+ph-gravity.c6.viz.items.1.l	Mars
+ph-gravity.c6.viz.items.2.l	Earth
+ph-gravity.c6.viz.items.3.l	Jupiter
+ph-gravity.c7.title	Kepler's laws
+ph-gravity.c7.text	Planets move in ellipses with the Sun at one focus; they speed up when closer to the Sun; and the farther the planet, the longer its year, following a precise rule.
+ph-gravity.c7.viz.items.0	Orbits are ellipses
+ph-gravity.c7.viz.items.1	Faster near the Sun
+ph-gravity.c7.viz.items.2	Longer years farther out
+ph-gravity.c7.viz.items.3	T² ∝ r³
+ph-gravity.c8.title	Gravity assists
+ph-gravity.c8.text	Space probes swing past planets to gain speed, like a ball bouncing off a moving train. Voyager used Jupiter and Saturn to reach the outer Solar System.
+ph-gravity.c8.viz.steps.0	Approach a planet
+ph-gravity.c8.viz.steps.1	Swing around it
+ph-gravity.c8.viz.steps.2	Steal a little of its orbital energy
+ph-gravity.c8.viz.steps.3	Leave faster
+ph-gravity.c9.title	Gravitational waves
+ph-gravity.c9.text	Einstein predicted that accelerating masses ripple space-time. In 2015 the LIGO detectors first measured these waves, from two black holes merging over a billion light-years away.
+ph-gravity.c9.viz.events.0.l	Einstein predicts them
+ph-gravity.c9.viz.events.1.l	indirect evidence from a pulsar pair
+ph-gravity.c9.viz.events.2.l	LIGO detects them directly
+ph-gravity.c9.viz.events.3.l	Nobel Prize
+ph-momentum.title	Momentum and collisions
+ph-momentum.summary	Why heavy, fast things are hard to stop.
+ph-momentum.q0.q	A 0.5 kg ball at 10 m/s has momentum of…
+ph-momentum.q0.o0	20 kg·m/s
+ph-momentum.q0.o1	5 kg·m/s
+ph-momentum.q0.o2	0.05 kg·m/s
+ph-momentum.q0.x	0.5 × 10 = 5.
+ph-momentum.q1.q	Why do skaters spin faster when they pull their arms in?
+ph-momentum.q1.o0	Less friction
+ph-momentum.q1.o1	Angular momentum is conserved as their shape becomes compact
+ph-momentum.q1.o2	They push harder
+ph-momentum.q1.x	Smaller radius, faster spin.
+ph-momentum.q2.q	What do crumple zones do?
+ph-momentum.q2.o0	Make cars lighter
+ph-momentum.q2.o1	Increase crash time to reduce forces
+ph-momentum.q2.o2	Bounce cars apart
+ph-momentum.q2.x	Same momentum change, smaller force.
+ph-momentum.c0.title	Momentum
+ph-momentum.c0.text	Momentum is mass times velocity. A slow lorry and a fast bullet can both have large momentum.
+ph-momentum.c0.example.0	1,500 kg car at 20 m/s
+ph-momentum.c0.example.1	1,500 × 20
+ph-momentum.c0.example.2	= 30,000 kg·m/s
+ph-momentum.c0.viz.f	p = m × v
+ph-momentum.c0.viz.items.0.s	p
+ph-momentum.c0.viz.items.0.m	momentum (kg·m/s)
+ph-momentum.c0.viz.items.1.s	m
+ph-momentum.c0.viz.items.1.m	mass
+ph-momentum.c0.viz.items.2.s	v
+ph-momentum.c0.viz.items.2.m	velocity
+ph-momentum.c1.title	Conservation of momentum
+ph-momentum.c1.text	In a collision with no outside forces, total momentum before equals total momentum after. It's how investigators reconstruct crashes.
+ph-momentum.c1.viz.steps.0	Total momentum before
+ph-momentum.c1.viz.steps.1	Collision
+ph-momentum.c1.viz.steps.2	Total momentum after
+ph-momentum.c1.viz.steps.3	Same total
+ph-momentum.c2.title	Elastic and inelastic
+ph-momentum.c2.text	In elastic collisions, objects bounce and kinetic energy is conserved (snooker balls, nearly). In inelastic ones, they deform or stick and energy turns into heat and sound (car crashes).
+ph-momentum.c2.viz.l.t	Elastic
+ph-momentum.c2.viz.l.items.0	bounce apart
+ph-momentum.c2.viz.l.items.1	little energy lost
+ph-momentum.c2.viz.l.items.2	snooker balls
+ph-momentum.c2.viz.r.t	Inelastic
+ph-momentum.c2.viz.r.items.0	crumple or stick
+ph-momentum.c2.viz.r.items.1	energy to heat and damage
+ph-momentum.c2.viz.r.items.2	car crashes
+ph-momentum.c3.title	Impulse
+ph-momentum.c3.text	Changing momentum takes a force applied over time: impulse. The same change can come from a big force over a short time or a small force over a long time.
+ph-momentum.c3.viz.f	F × t = Δp
+ph-momentum.c3.viz.items.0.s	F
+ph-momentum.c3.viz.items.0.m	force
+ph-momentum.c3.viz.items.1.s	t
+ph-momentum.c3.viz.items.1.m	time
+ph-momentum.c3.viz.items.2.s	Δp
+ph-momentum.c3.viz.items.2.m	change in momentum
+ph-momentum.c4.title	Crumple zones
+ph-momentum.c4.text	Car fronts are designed to crumple, extending the crash time from a few milliseconds to around a tenth of a second, which reduces the force on passengers.
+ph-momentum.c4.viz.steps.0	Impact
+ph-momentum.c4.viz.steps.1	Crumple zone deforms
+ph-momentum.c4.viz.steps.2	Stop takes longer
+ph-momentum.c4.viz.steps.3	Lower forces on people
+ph-momentum.c5.title	Recoil
+ph-momentum.c5.text	Firing a cannon pushes the cannon backwards: the shell's forward momentum is balanced by the cannon's backward momentum. The heavier cannon moves much more slowly.
+ph-momentum.c5.viz.l.t	Shell
+ph-momentum.c5.viz.l.items.0	small mass
+ph-momentum.c5.viz.l.items.1	high speed forward
+ph-momentum.c5.viz.r.t	Cannon
+ph-momentum.c5.viz.r.items.0	big mass
+ph-momentum.c5.viz.r.items.1	slow speed backward
+ph-momentum.c6.title	Newton's cradle
+ph-momentum.c6.text	Lift one ball, release it, and one ball flies out the other side. Momentum and energy pass through the stationary balls almost perfectly.
+ph-momentum.c6.viz.steps.0	One ball swings in
+ph-momentum.c6.viz.steps.1	Momentum passes through the line
+ph-momentum.c6.viz.steps.2	One ball swings out
+ph-momentum.c7.title	Angular momentum
+ph-momentum.c7.text	Spinning objects have angular momentum. A skater pulling in her arms spins faster, because angular momentum is conserved while her shape becomes more compact.
+ph-momentum.c7.viz.l.t	Arms out
+ph-momentum.c7.viz.l.items.0	slower spin
+ph-momentum.c7.viz.r.t	Arms in
+ph-momentum.c7.viz.r.items.0	faster spin
+ph-momentum.c8.title	Gyroscopes
+ph-momentum.c8.text	Spinning wheels resist changes to their axis. Bicycles are stabilised partly this way; gyroscopes guide ships, aircraft and phones (as tiny vibrating sensors).
+ph-momentum.c8.viz.items.0	Bicycle wheels
+ph-momentum.c8.viz.items.1	Ship and aircraft navigation
+ph-momentum.c8.viz.items.2	Phone orientation sensors
+ph-momentum.c8.viz.items.3	Spacecraft attitude control
+ph-momentum.c9.title	Rockets in space
+ph-momentum.c9.text	Rockets need no air to push against: they push exhaust backwards and gain equal forward momentum. That's why they work even better in the vacuum of space.
+ph-momentum.c9.viz.steps.0	Burn fuel
+ph-momentum.c9.viz.steps.1	Throw exhaust backwards fast
+ph-momentum.c9.viz.steps.2	Equal momentum forwards
+ph-momentum.c9.viz.steps.3	Rocket accelerates
+ph-gases.title	Gases and pressure
+ph-gases.summary	Why tyres, balloons and weather behave as they do.
+ph-gases.q0.q	Why does water boil below 100 °C on a mountain?
+ph-gases.q0.o0	It's colder
+ph-gases.q0.o1	Lower air pressure means it boils at a lower temperature
+ph-gases.q0.o2	The water is purer
+ph-gases.q0.x	Boiling depends on surrounding pressure.
+ph-gases.q1.q	Halve the volume of a gas at constant temperature and its pressure…
+ph-gases.q1.o0	Halves
+ph-gases.q1.o1	Doubles
+ph-gases.q1.o2	Stays the same
+ph-gases.q1.x	Boyle's law: p × V constant.
+ph-gases.q2.q	What pushes your drink up a straw?
+ph-gases.q2.o0	Your suction pulling
+ph-gases.q2.o1	Atmospheric pressure on the drink's surface
+ph-gases.q2.o2	Capillary action
+ph-gases.q2.x	You lower the pressure, the air pushes.
+ph-gases.c0.title	Molecules in motion
+ph-gases.c0.text	A gas is billions of molecules flying around at hundreds of metres per second, bouncing off each other and the walls. Their impacts on the walls are the pressure.
+ph-gases.c0.viz.steps.0	Molecules move fast
+ph-gases.c0.viz.steps.1	Hit the container walls
+ph-gases.c0.viz.steps.2	Many tiny pushes
+ph-gases.c0.viz.steps.3	Pressure
+ph-gases.c1.title	Temperature and pressure
+ph-gases.c1.text	Heat a closed gas and its molecules move faster, hitting the walls harder and more often, so pressure rises. That's why tyre pressures rise after a long drive.
+ph-gases.c1.viz.f	p ÷ T = constant (fixed volume)
+ph-gases.c1.viz.items.0.m	T in kelvin
+ph-gases.c1.viz.items.1.s	20 °C → 50 °C
+ph-gases.c1.viz.items.1.m	≈ +10% pressure
+ph-gases.c2.title	Boyle's law
+ph-gases.c2.text	At constant temperature, squeezing a gas into half the volume doubles its pressure. Bicycle pumps and syringes show it.
+ph-gases.c2.viz.f	p × V = constant
+ph-gases.c2.viz.items.0.s	half the volume
+ph-gases.c2.viz.items.0.m	double the pressure
+ph-gases.c3.title	The ideal gas law
+ph-gases.c3.text	Pressure, volume and temperature are linked in one equation for most gases at everyday conditions.
+ph-gases.c3.viz.f	p × V = n × R × T
+ph-gases.c3.viz.items.0.s	n
+ph-gases.c3.viz.items.0.m	amount of gas (moles)
+ph-gases.c3.viz.items.1.s	R
+ph-gases.c3.viz.items.1.m	8.314 J/mol·K
+ph-gases.c3.viz.items.2.s	T
+ph-gases.c3.viz.items.2.m	kelvin
+ph-gases.c4.title	Air pressure and altitude
+ph-gases.c4.text	Air pressure halves roughly every 5.5 km of altitude. At the top of Serra da Estrela (1,993 m) it's about 80% of sea level; on Everest about a third.
+ph-gases.c4.viz.unit	% of sea-level pressure
+ph-gases.c4.viz.items.0.l	Sea level
+ph-gases.c4.viz.items.1.l	Serra da Estrela
+ph-gases.c4.viz.items.2.l	Mont Blanc
+ph-gases.c4.viz.items.3.l	Everest
+ph-gases.c5.title	Boiling and altitude
+ph-gases.c5.text	Water boils when its vapour pressure equals the air pressure. Up a mountain the air pressure is lower, so water boils below 100 °C and pasta takes longer to cook. Pressure cookers do the opposite.
+ph-gases.c5.viz.unit	boiling point °C
+ph-gases.c5.viz.items.0.l	Everest
+ph-gases.c5.viz.items.1.l	La Paz
+ph-gases.c5.viz.items.2.l	Sea level
+ph-gases.c5.viz.items.3.l	Pressure cooker
+ph-gases.c6.title	Balloons and density
+ph-gases.c6.text	Hot air is less dense than cool air, so a hot-air balloon rises. Helium is lighter than air, so helium balloons float. A submarine changes its density with ballast tanks.
+ph-gases.c6.viz.l.t	Rises
+ph-gases.c6.viz.l.items.0	hot air
+ph-gases.c6.viz.l.items.1	helium
+ph-gases.c6.viz.l.items.2	less dense than surroundings
+ph-gases.c6.viz.r.t	Sinks
+ph-gases.c6.viz.r.items.0	cold air
+ph-gases.c6.viz.r.items.1	carbon dioxide
+ph-gases.c6.viz.r.items.2	denser than surroundings
+ph-gases.c7.title	Suction isn't pulling
+ph-gases.c7.text	A drinking straw doesn't "pull" the drink up. You lower the pressure in your mouth, and the atmosphere pushes the liquid up the straw. That's why a straw can't lift water more than about 10 m.
+ph-gases.c7.viz.steps.0	Lower pressure in your mouth
+ph-gases.c7.viz.steps.1	Air pushes on the drink's surface
+ph-gases.c7.viz.steps.2	Liquid rises in the straw
+ph-gases.c8.title	Compressed air
+ph-gases.c8.text	Compressing air heats it (bike pump barrels get warm); letting it expand cools it (spray cans go cold). Fridges and heat pumps use this with special refrigerants.
+ph-gases.c8.viz.l.t	Compress
+ph-gases.c8.viz.l.items.0	gets hotter
+ph-gases.c8.viz.l.items.1	pump barrel warms
+ph-gases.c8.viz.r.t	Expand
+ph-gases.c8.viz.r.items.0	gets colder
+ph-gases.c8.viz.r.items.1	spray can chills
+ph-gases.c9.title	Weather and pressure
+ph-gases.c9.text	High-pressure areas bring sinking air and usually settled weather; low-pressure areas bring rising air, clouds and rain. Barometers measure it, often in hectopascals (hPa).
+ph-gases.c9.viz.unit	hPa
+ph-gases.c9.viz.items.0.l	storm
+ph-gases.c9.viz.items.1.l	average
+ph-gases.c9.viz.items.2.l	settled high
+ph-light.title	Light and optics
+ph-light.summary	Reflection, refraction, lenses and the eye.
+ph-light.q0.q	Why does a straw look bent in water?
+ph-light.q0.o0	The straw bends
+ph-light.q0.o1	Light refracts as it passes between water and air
+ph-light.q0.o2	Reflection
+ph-light.q0.x	Light changes speed and direction.
+ph-light.q1.q	What carries internet data across oceans using light?
+ph-light.q1.o0	Copper cables
+ph-light.q1.o1	Optical fibres, by total internal reflection
+ph-light.q1.o2	Radio towers
+ph-light.q1.x	Light stays trapped in the glass.
+ph-light.q2.q	Short sight is corrected with…
+ph-light.q2.o0	Convex lenses
+ph-light.q2.o1	Concave lenses
+ph-light.q2.o2	Mirrors
+ph-light.q2.x	Concave lenses spread light so it focuses further back.
+ph-light.c0.title	Light travels fast and straight
+ph-light.c0.text	Light travels at about 300,000 km/s in a vacuum and in straight lines (rays). It takes about 8 minutes 20 seconds to reach us from the Sun.
+ph-light.c0.viz.items.0.v	300,000 km/s
+ph-light.c0.viz.items.0.l	speed of light
+ph-light.c0.viz.items.1.v	8 min 20 s
+ph-light.c0.viz.items.1.l	from the Sun
+ph-light.c0.viz.items.2.v	1.3 s
+ph-light.c0.viz.items.2.l	from the Moon
+ph-light.c1.title	Reflection
+ph-light.c1.text	Light bounces off a mirror at the same angle it hits it: angle of incidence equals angle of reflection. Rough surfaces scatter light in all directions, which is why paper isn't a mirror.
+ph-light.c1.viz.l.t	Smooth mirror
+ph-light.c1.viz.l.items.0	angles equal
+ph-light.c1.viz.l.items.1	clear image
+ph-light.c1.viz.r.t	Rough paper
+ph-light.c1.viz.r.items.0	scatters everywhere
+ph-light.c1.viz.r.items.1	no image
+ph-light.c2.title	Refraction
+ph-light.c2.text	Light slows down in water or glass and bends as it enters at an angle. That's why a straw looks bent in a glass and pools look shallower than they are.
+ph-light.c2.viz.steps.0	Light enters water at an angle
+ph-light.c2.viz.steps.1	Slows down
+ph-light.c2.viz.steps.2	Bends towards the normal
+ph-light.c2.viz.steps.3	Objects look shallower
+ph-light.c3.title	Total internal reflection
+ph-light.c3.text	Inside glass, light hitting the surface at a shallow enough angle is completely reflected. Optical fibres trap light this way, carrying internet data across oceans.
+ph-light.c3.viz.steps.0	Light enters the fibre
+ph-light.c3.viz.steps.1	Hits the wall at a shallow angle
+ph-light.c3.viz.steps.2	Totally reflected
+ph-light.c3.viz.steps.3	Travels kilometres
+ph-light.c4.title	Lenses
+ph-light.c4.text	Convex lenses bend light inwards to a focus: magnifying glasses, cameras, the eye. Concave lenses spread it out, used to correct short sight.
+ph-light.c4.viz.l.t	Convex
+ph-light.c4.viz.l.items.0	converging
+ph-light.c4.viz.l.items.1	magnifiers, cameras
+ph-light.c4.viz.l.items.2	long sight correction
+ph-light.c4.viz.r.t	Concave
+ph-light.c4.viz.r.items.0	diverging
+ph-light.c4.viz.r.items.1	short sight correction
+ph-light.c5.title	The eye
+ph-light.c5.text	The cornea and lens focus light onto the retina, where rods (dim light, no colour) and cones (colour) turn it into nerve signals. The brain flips the upside-down image.
+ph-light.c5.viz.steps.0	Cornea and lens focus
+ph-light.c5.viz.steps.1	Image on the retina
+ph-light.c5.viz.steps.2	Rods and cones
+ph-light.c5.viz.steps.3	Brain interprets
+ph-light.c6.title	Short and long sight
+ph-light.c6.text	Short-sighted (myopic) eyes focus distant objects in front of the retina; concave lenses fix it. Long-sighted eyes focus behind it; convex lenses fix it.
+ph-light.c6.viz.items.0.a	short sight
+ph-light.c6.viz.items.0.b	concave lens
+ph-light.c6.viz.items.1.a	long sight
+ph-light.c6.viz.items.1.b	convex lens
+ph-light.c6.viz.items.2.a	presbyopia
+ph-light.c6.viz.items.2.b	reading glasses with age
+ph-light.c7.title	Cameras
+ph-light.c7.text	A camera works like an eye: a lens focuses light onto a sensor of millions of pixels. Aperture controls how much light enters; shutter speed controls for how long.
+ph-light.c7.viz.items.0.a	aperture
+ph-light.c7.viz.items.0.b	how wide the opening is
+ph-light.c7.viz.items.1.a	shutter speed
+ph-light.c7.viz.items.1.b	how long it's open
+ph-light.c7.viz.items.2.a	ISO
+ph-light.c7.viz.items.2.b	sensor sensitivity
+ph-light.c8.title	Rainbows
+ph-light.c8.text	Sunlight entering raindrops is refracted, reflected inside and refracted again on the way out. Each colour bends by a slightly different amount, spreading white light into a spectrum.
+ph-light.c8.viz.steps.0	Sunlight enters a raindrop
+ph-light.c8.viz.steps.1	Bends and splits by colour
+ph-light.c8.viz.steps.2	Reflects inside
+ph-light.c8.viz.steps.3	Exits as a rainbow
+ph-light.c9.title	Lasers
+ph-light.c9.text	A laser produces light of one colour, in step and in a narrow beam. Used in barcode scanners, fibre optics, surgery, cutting metal and measuring distance (lidar).
+ph-light.c9.viz.items.0	Fibre-optic internet
+ph-light.c9.viz.items.1	Barcode scanners
+ph-light.c9.viz.items.2	Eye surgery
+ph-light.c9.viz.items.3	Metal cutting
+ph-light.c9.viz.items.4	Distance measurement
+ph-colour.title	Colour
+ph-colour.summary	Why the sky is blue and leaves are green.
+ph-colour.q0.q	Why do leaves look green?
+ph-colour.q0.o0	They emit green light
+ph-colour.q0.o1	They reflect green and absorb red and blue
+ph-colour.q0.o2	They're cold
+ph-colour.q0.x	Chlorophyll absorbs red and blue.
+ph-colour.q1.q	Why is the sky blue?
+ph-colour.q1.o0	It reflects the sea
+ph-colour.q1.o1	Air scatters blue light more than red
+ph-colour.q1.o2	Ozone is blue
+ph-colour.q1.x	Rayleigh scattering.
+ph-colour.q2.q	Mixing red, green and blue light gives…
+ph-colour.q2.o0	Black
+ph-colour.q2.o1	White
+ph-colour.q2.o2	Brown
+ph-colour.q2.x	Additive mixing.
+ph-colour.c0.title	White light is a mix
+ph-colour.c0.text	Newton showed with a prism that white light contains all colours. Each colour is light of a different wavelength, from red (about 700 nm) to violet (about 400 nm).
+ph-colour.c0.viz.unit	wavelength (nm, approx.)
+ph-colour.c0.viz.items.0.l	Violet
+ph-colour.c0.viz.items.1.l	Blue
+ph-colour.c0.viz.items.2.l	Green
+ph-colour.c0.viz.items.3.l	Yellow
+ph-colour.c0.viz.items.4.l	Red
+ph-colour.c1.title	Objects absorb and reflect
+ph-colour.c1.text	A leaf looks green because chlorophyll absorbs red and blue light and reflects green. A black shirt absorbs most light (and gets hot in the sun); a white one reflects most.
+ph-colour.c1.viz.l.t	Black
+ph-colour.c1.viz.l.items.0	absorbs most light
+ph-colour.c1.viz.l.items.1	gets hot
+ph-colour.c1.viz.r.t	White
+ph-colour.c1.viz.r.items.0	reflects most light
+ph-colour.c1.viz.r.items.1	stays cooler
+ph-colour.c2.title	Mixing light vs mixing paint
+ph-colour.c2.text	Light mixes additively: red + green + blue make white (screens). Paint mixes subtractively: each pigment absorbs some colours, so mixing many gives a muddy dark colour (printers use cyan, magenta, yellow, black).
+ph-colour.c2.viz.l.t	Light (additive)
+ph-colour.c2.viz.l.items.0	RGB
+ph-colour.c2.viz.l.items.1	adds up to white
+ph-colour.c2.viz.l.items.2	screens
+ph-colour.c2.viz.r.t	Pigment (subtractive)
+ph-colour.c2.viz.r.items.0	CMYK
+ph-colour.c2.viz.r.items.1	adds up to dark
+ph-colour.c2.viz.r.items.2	printing
+ph-colour.c3.title	Why the sky is blue
+ph-colour.c3.text	Air molecules scatter short blue wavelengths much more than red ones (Rayleigh scattering). Scattered blue light reaches your eyes from all directions across the sky.
+ph-colour.c3.viz.steps.0	Sunlight enters the atmosphere
+ph-colour.c3.viz.steps.1	Blue scatters most
+ph-colour.c3.viz.steps.2	Blue comes from all over the sky
+ph-colour.c4.title	Red sunsets
+ph-colour.c4.text	At sunset, light crosses much more atmosphere. Most blue is scattered away before it reaches you, leaving reds and oranges.
+ph-colour.c4.viz.l.t	Midday
+ph-colour.c4.viz.l.items.0	short path
+ph-colour.c4.viz.l.items.1	blue sky
+ph-colour.c4.viz.r.t	Sunset
+ph-colour.c4.viz.r.items.0	long path
+ph-colour.c4.viz.r.items.1	blue scattered out
+ph-colour.c4.viz.r.items.2	red sky
+ph-colour.c5.title	Seeing colour
+ph-colour.c5.text	Your eye has three types of cone, most sensitive to roughly red, green and blue light. Every colour you see is your brain comparing their signals.
+ph-colour.c5.viz.items.0.a	L cones
+ph-colour.c5.viz.items.0.b	long wavelengths (red)
+ph-colour.c5.viz.items.1.a	M cones
+ph-colour.c5.viz.items.1.b	medium (green)
+ph-colour.c5.viz.items.2.a	S cones
+ph-colour.c5.viz.items.2.b	short (blue)
+ph-colour.c6.title	Colour blindness
+ph-colour.c6.text	About 8% of men and 0.5% of women of Northern European descent have some red–green colour vision deficiency, usually inherited. Good design never relies on colour alone.
+ph-colour.c6.viz.items.0.l	of men
+ph-colour.c6.viz.items.1.l	of women
+ph-colour.c7.title	Infrared and ultraviolet
+ph-colour.c7.text	Beyond red is infrared, which we feel as heat and which night cameras see. Beyond violet is ultraviolet, which causes sunburn and makes some materials glow.
+ph-colour.c7.viz.items.0.a	infrared
+ph-colour.c7.viz.items.0.b	heat, remote controls, night vision
+ph-colour.c7.viz.items.1.a	visible
+ph-colour.c7.viz.items.1.b	400–700 nm
+ph-colour.c7.viz.items.2.a	ultraviolet
+ph-colour.c7.viz.items.2.b	sunburn, sterilising
+ph-colour.c8.title	Colour temperature
+ph-colour.c8.text	Light bulbs are described in kelvin: warm white about 2,700 K (yellowish), daylight about 5,000–6,500 K (bluish). Warm light feels cosier in the evening.
+ph-colour.c8.viz.unit	K
+ph-colour.c8.viz.items.0.l	candle
+ph-colour.c8.viz.items.1.l	warm white
+ph-colour.c8.viz.items.2.l	neutral
+ph-colour.c8.viz.items.3.l	daylight
+ph-colour.c9.title	Screens
+ph-colour.c9.text	Every pixel on a screen has red, green and blue sub-pixels. Varying their brightness creates millions of colours. Zoom in on a screen with a magnifier and you can see them.
+ph-colour.c9.viz.steps.0	Red, green, blue sub-pixels
+ph-colour.c9.viz.steps.1	Each set to a brightness
+ph-colour.c9.viz.steps.2	Your eye blends them
+ph-colour.c9.viz.steps.3	Millions of colours
+ph-sound.title	Sound
+ph-sound.summary	Loudness, pitch and how we hear.
+ph-sound.q0.q	Every +10 dB means the sound intensity is…
+ph-sound.q0.o0	Doubled
+ph-sound.q0.o1	Ten times greater
+ph-sound.q0.o2	The same
+ph-sound.q0.x	Decibels are logarithmic.
+ph-sound.q1.q	Sound travels fastest in…
+ph-sound.q1.o0	Air
+ph-sound.q1.o1	Water
+ph-sound.q1.o2	Steel
+ph-sound.q1.x	Stiffer materials carry sound faster.
+ph-sound.q2.q	What makes a violin and flute sound different on the same note?
+ph-sound.q2.o0	Loudness
+ph-sound.q2.o1	Different mixes of overtones (timbre)
+ph-sound.q2.o2	Speed of sound
+ph-sound.q2.x	Timbre comes from harmonics.
+ph-sound.c0.title	What sound is
+ph-sound.c0.text	Sound is a pressure wave: a vibrating object pushes and pulls the air, creating compressions and rarefactions that travel to your ear.
+ph-sound.c0.viz.steps.0	Object vibrates
+ph-sound.c0.viz.steps.1	Air compressed and stretched
+ph-sound.c0.viz.steps.2	Wave travels
+ph-sound.c0.viz.steps.3	Eardrum vibrates
+ph-sound.c1.title	Pitch and frequency
+ph-sound.c1.text	Pitch is how high or low a sound is, set by frequency. Humans hear roughly 20 Hz to 20,000 Hz; the upper limit falls with age.
+ph-sound.c1.viz.unit	Hz (approx.)
+ph-sound.c1.viz.items.0.l	Lowest piano note
+ph-sound.c1.viz.items.1.l	Male voice
+ph-sound.c1.viz.items.2.l	Female voice
+ph-sound.c1.viz.items.3.l	Middle A
+ph-sound.c1.viz.items.4.l	Dog whistle
+ph-sound.c2.title	Loudness and decibels
+ph-sound.c2.text	Loudness is measured in decibels, a logarithmic scale: every +10 dB is ten times the sound intensity and sounds roughly twice as loud.
+ph-sound.c2.viz.unit	dB (approx.)
+ph-sound.c2.viz.items.0.l	Whisper
+ph-sound.c2.viz.items.1.l	Conversation
+ph-sound.c2.viz.items.2.l	Busy traffic
+ph-sound.c2.viz.items.3.l	Concert
+ph-sound.c2.viz.items.4.l	Jet at 30 m
+ph-sound.c3.title	Hearing damage
+ph-sound.c3.text	Long exposure above about 85 dB can permanently damage the tiny hair cells in your inner ear. Concerts and power tools call for earplugs.
+ph-sound.c3.viz.unit	dB
+ph-sound.c3.viz.items.0.l	safe all day
+ph-sound.c3.viz.items.1.l	risk over hours
+ph-sound.c3.viz.items.2.l	pain
+ph-sound.c4.title	Speed of sound
+ph-sound.c4.text	Sound travels about 343 m/s in air, roughly 1,500 m/s in water and around 5,000 m/s in steel. Sound needs a medium: in space, no one can hear you.
+ph-sound.c4.viz.unit	m/s
+ph-sound.c4.viz.items.0.l	Air
+ph-sound.c4.viz.items.1.l	Water
+ph-sound.c4.viz.items.2.l	Steel
+ph-sound.c5.title	Timbre
+ph-sound.c5.text	A violin and a flute playing the same note sound different because each produces a different mix of overtones (harmonics) on top of the main frequency.
+ph-sound.c5.viz.steps.0	Fundamental frequency
+ph-sound.c5.viz.steps.1	Plus overtones
+ph-sound.c5.viz.steps.2	Unique mix
+ph-sound.c5.viz.steps.3	Recognisable timbre
+ph-sound.c6.title	Acoustics of rooms
+ph-sound.c6.text	Hard surfaces reflect sound and make rooms echoey; soft furnishings, curtains and acoustic panels absorb it. Concert halls are designed for the right amount of reverberation.
+ph-sound.c6.viz.l.t	Echoey room
+ph-sound.c6.viz.l.items.0	tiles, glass, bare walls
+ph-sound.c6.viz.l.items.1	long reverberation
+ph-sound.c6.viz.r.t	Quiet room
+ph-sound.c6.viz.r.items.0	curtains, sofas, panels
+ph-sound.c6.viz.r.items.1	short reverberation
+ph-sound.c7.title	Ultrasound
+ph-sound.c7.text	Frequencies above human hearing are used for medical imaging, cleaning baths, distance sensors and by bats and dolphins to navigate.
+ph-sound.c7.viz.items.0	Pregnancy scans
+ph-sound.c7.viz.items.1	Ultrasonic cleaners
+ph-sound.c7.viz.items.2	Parking and level sensors
+ph-sound.c7.viz.items.3	Bat and dolphin echolocation
+ph-sound.c8.title	Infrasound
+ph-sound.c8.text	Very low frequencies below 20 Hz travel huge distances. Elephants communicate with them; volcanoes, earthquakes and nuclear tests are detected by infrasound monitoring stations.
+ph-sound.c8.viz.items.0	Elephant calls
+ph-sound.c8.viz.items.1	Volcanoes
+ph-sound.c8.viz.items.2	Earthquakes
+ph-sound.c8.viz.items.3	Monitoring nuclear tests
+ph-sound.c9.title	How we hear
+ph-sound.c9.text	The eardrum vibrates, three tiny bones amplify the motion, and in the snail-shaped cochlea thousands of hair cells turn vibrations of different frequencies into nerve signals.
+ph-sound.c9.viz.steps.0	Eardrum
+ph-sound.c9.viz.steps.1	Three tiny bones
+ph-sound.c9.viz.steps.2	Cochlea fluid
+ph-sound.c9.viz.steps.3	Hair cells
+ph-sound.c9.viz.steps.4	Auditory nerve
+ph-atoms.title	Atoms
+ph-atoms.summary	What everything is made of.
+ph-atoms.q0.q	What decides which element an atom is?
+ph-atoms.q0.o0	Number of neutrons
+ph-atoms.q0.o1	Number of protons
+ph-atoms.q0.o2	Number of electrons only
+ph-atoms.q0.x	Proton count defines the element.
+ph-atoms.q1.q	Carbon-12 and carbon-14 are…
+ph-atoms.q1.o0	Different elements
+ph-atoms.q1.o1	Isotopes of carbon
+ph-atoms.q1.o2	Molecules
+ph-atoms.q1.x	Same protons, different neutrons.
+ph-atoms.q2.q	Where were most heavy elements, like the iron in your blood, made?
+ph-atoms.q2.o0	In the Big Bang
+ph-atoms.q2.o1	Inside stars and stellar explosions
+ph-atoms.q2.o2	On Earth
+ph-atoms.q2.x	Stars forge heavier elements.
+ph-atoms.c0.title	Tiny and mostly empty
+ph-atoms.c0.text	An atom has a tiny, dense nucleus of protons and neutrons, surrounded by a cloud of electrons. If the nucleus were a marble in the centre of a football stadium, the electrons would be in the outer stands.
+ph-atoms.c0.viz.items.0.v	0.1 nm
+ph-atoms.c0.viz.items.0.l	size of an atom
+ph-atoms.c0.viz.items.1.l	atom wider than its nucleus
+ph-atoms.c1.title	Protons, neutrons, electrons
+ph-atoms.c1.text	Protons are positive, electrons negative, neutrons neutral. Protons and neutrons weigh about the same; an electron weighs about 1/1,836 as much.
+ph-atoms.c1.viz.items.0.a	proton
+ph-atoms.c1.viz.items.0.b	+1 charge, in nucleus
+ph-atoms.c1.viz.items.1.a	neutron
+ph-atoms.c1.viz.items.1.b	no charge, in nucleus
+ph-atoms.c1.viz.items.2.a	electron
+ph-atoms.c1.viz.items.2.b	−1 charge, around nucleus
+ph-atoms.c2.title	Elements
+ph-atoms.c2.text	The number of protons decides the element: 1 is hydrogen, 6 carbon, 8 oxygen, 26 iron, 79 gold. There are 118 known elements.
+ph-atoms.c2.viz.unit	protons
+ph-atoms.c2.viz.items.0.l	Hydrogen
+ph-atoms.c2.viz.items.1.l	Carbon
+ph-atoms.c2.viz.items.2.l	Oxygen
+ph-atoms.c2.viz.items.3.l	Iron
+ph-atoms.c2.viz.items.4.l	Gold
+ph-atoms.c3.title	Isotopes
+ph-atoms.c3.text	Atoms of the same element can have different numbers of neutrons: isotopes. Carbon-12 and carbon-14 are both carbon; carbon-14 is radioactive and used to date ancient remains.
+ph-atoms.c3.viz.l.t	Carbon-12
+ph-atoms.c3.viz.l.items.0	6 protons, 6 neutrons
+ph-atoms.c3.viz.l.items.1	stable
+ph-atoms.c3.viz.r.t	Carbon-14
+ph-atoms.c3.viz.r.items.0	6 protons, 8 neutrons
+ph-atoms.c3.viz.r.items.1	radioactive
+ph-atoms.c4.title	The periodic table
+ph-atoms.c4.text	Mendeleev arranged elements in 1869 by mass and properties, leaving gaps for elements not yet discovered, and predicted their properties. Columns group elements that behave alike.
+ph-atoms.c4.viz.items.0	Rows: periods
+ph-atoms.c4.viz.items.1	Columns: groups with similar chemistry
+ph-atoms.c4.viz.items.2	Metals on the left
+ph-atoms.c4.viz.items.3	Noble gases on the right
+ph-atoms.c5.title	Electron shells
+ph-atoms.c5.text	Electrons sit in energy levels or shells. Chemistry is mostly about the outer electrons: atoms share, give or take them to form bonds and fill their outer shell.
+ph-atoms.c5.viz.steps.0	Outer electrons
+ph-atoms.c5.viz.steps.1	Shared or transferred
+ph-atoms.c5.viz.steps.2	Chemical bond
+ph-atoms.c5.viz.steps.3	Molecule or crystal
+ph-atoms.c6.title	Molecules
+ph-atoms.c6.text	Atoms join into molecules: two hydrogens and an oxygen make water (H₂O); carbon and two oxygens make carbon dioxide (CO₂).
+ph-atoms.c6.viz.items.0.a	H₂O
+ph-atoms.c6.viz.items.0.b	water
+ph-atoms.c6.viz.items.1.a	CO₂
+ph-atoms.c6.viz.items.1.b	carbon dioxide
+ph-atoms.c6.viz.items.2.a	O₂
+ph-atoms.c6.viz.items.2.b	oxygen we breathe
+ph-atoms.c6.viz.items.3.a	CH₄
+ph-atoms.c6.viz.items.3.b	methane, natural gas
+ph-atoms.c7.title	States of matter
+ph-atoms.c7.text	Solids keep their shape, liquids take the container's shape, gases fill it. Heating gives particles more energy to break free. Plasma, a hot ionised gas, is a fourth state, found in stars and lightning.
+ph-atoms.c7.viz.items.0	Plasma: ionised gas
+ph-atoms.c7.viz.items.1	Gas: particles fly free
+ph-atoms.c7.viz.items.2	Liquid: particles slide
+ph-atoms.c7.viz.items.3	Solid: particles fixed
+ph-atoms.c8.title	Seeing atoms
+ph-atoms.c8.text	Atoms are too small for light microscopes, but scanning tunnelling microscopes, invented in 1981, can image and even move individual atoms. IBM famously spelled its logo with 35 xenon atoms in 1989.
+ph-atoms.c8.viz.events.0.l	Dalton's atomic theory
+ph-atoms.c8.viz.events.1.l	electron discovered
+ph-atoms.c8.viz.events.2.l	nucleus discovered
+ph-atoms.c8.viz.events.3.l	atoms imaged
+ph-atoms.c9.title	Where atoms come from
+ph-atoms.c9.text	Hydrogen and helium formed in the Big Bang. Heavier elements were forged inside stars and in stellar explosions. The carbon in you and the iron in your blood were made in stars.
+ph-atoms.c9.viz.steps.0	Big Bang: hydrogen, helium
+ph-atoms.c9.viz.steps.1	Stars fuse heavier elements
+ph-atoms.c9.viz.steps.2	Supernovae scatter them
+ph-atoms.c9.viz.steps.3	New stars, planets, us
+ph-radio.title	Radioactivity
+ph-radio.summary	Unstable nuclei, radiation and half-lives.
+ph-radio.q0.q	Which radiation is stopped by a sheet of paper?
+ph-radio.q0.o0	Alpha
+ph-radio.q0.o1	Beta
+ph-radio.q0.o2	Gamma
+ph-radio.q0.x	Alpha particles are large and heavy.
+ph-radio.q1.q	After 3 half-lives, how much of a sample remains?
+ph-radio.q1.o0	33%
+ph-radio.q1.o1	12.5%
+ph-radio.q1.o2	3%
+ph-radio.q1.x	½ × ½ × ½ = 1/8.
+ph-radio.q2.q	What is the largest natural radiation source for many people?
+ph-radio.q2.o0	Mobile phones
+ph-radio.q2.o1	Radon gas
+ph-radio.q2.o2	Power lines
+ph-radio.q2.x	Radon from rocks like granite.
+ph-radio.c0.title	Unstable nuclei
+ph-radio.c0.text	Some nuclei have an unstable mix of protons and neutrons. They release energy and particles to become more stable: that's radioactive decay.
+ph-radio.c0.viz.steps.0	Unstable nucleus
+ph-radio.c0.viz.steps.1	Emits radiation
+ph-radio.c0.viz.steps.2	Becomes a different nucleus
+ph-radio.c0.viz.steps.3	Eventually stable
+ph-radio.c1.title	Three types of radiation
+ph-radio.c1.text	Alpha particles (2 protons + 2 neutrons) are stopped by paper. Beta particles (electrons) by a few mm of aluminium. Gamma rays (energetic light) need thick lead or concrete.
+ph-radio.c1.viz.items.0	Gamma: thick lead or concrete
+ph-radio.c1.viz.items.1	Beta: a few mm of aluminium
+ph-radio.c1.viz.items.2	Alpha: paper or skin
+ph-radio.c2.title	Half-life
+ph-radio.c2.text	Each radioactive isotope has a half-life: the time for half of a sample to decay. After two half-lives a quarter remains; after ten, less than 0.1%.
+ph-radio.c2.viz.unit	% remaining
+ph-radio.c2.viz.items.1.l	1 half-life
+ph-radio.c3.title	Half-lives vary hugely
+ph-radio.c3.text	Some isotopes decay in seconds, others over billions of years.
+ph-radio.c3.viz.items.0.a	radon-222
+ph-radio.c3.viz.items.0.b	3.8 days
+ph-radio.c3.viz.items.1.a	iodine-131
+ph-radio.c3.viz.items.1.b	8 days
+ph-radio.c3.viz.items.2.a	carbon-14
+ph-radio.c3.viz.items.2.b	5,730 years
+ph-radio.c3.viz.items.3.a	uranium-238
+ph-radio.c3.viz.items.3.b	4.5 billion years
+ph-radio.c4.title	Carbon dating
+ph-radio.c4.text	Living things take in carbon-14 constantly. When they die, it decays with a 5,730-year half-life. Measuring what's left dates organic remains up to about 50,000 years old.
+ph-radio.c4.viz.steps.0	Organism alive: steady C-14
+ph-radio.c4.viz.steps.1	Dies: intake stops
+ph-radio.c4.viz.steps.2	C-14 decays
+ph-radio.c4.viz.steps.3	Measure what's left: age
+ph-radio.c5.title	Background radiation
+ph-radio.c5.text	We're always exposed to low natural radiation from rocks, soil, cosmic rays and our own bodies. Radon gas from granite rocks is the largest natural source, important in northern Portugal.
+ph-radio.c5.viz.unit	mSv/year (approx., world average)
+ph-radio.c5.viz.items.0.l	Radon
+ph-radio.c5.viz.items.1.l	Food and body
+ph-radio.c5.viz.items.2.l	Cosmic
+ph-radio.c5.viz.items.3.l	Rocks and soil
+ph-radio.c5.viz.items.4.l	Medical
+ph-radio.c6.title	Radon at home
+ph-radio.c6.text	Northern Portugal's granite releases radon, which can build up in basements and ground floors. Ventilation and sealing floors reduce it; inexpensive detectors measure it over months.
+ph-radio.c6.viz.items.0	Measure with a detector over 2–3 months
+ph-radio.c6.viz.items.1	Ventilate ground floors
+ph-radio.c6.viz.items.2	Seal floor cracks
+ph-radio.c6.viz.items.3	Sub-floor extraction if high
+ph-radio.c7.title	Measuring dose
+ph-radio.c7.text	Radiation dose to people is measured in sieverts (Sv), usually millisieverts (mSv). A chest X-ray is about 0.02 mSv; a CT scan several mSv; a flight Lisbon–New York about 0.04 mSv.
+ph-radio.c7.viz.unit	mSv (approx.)
+ph-radio.c7.viz.items.0.l	Chest X-ray
+ph-radio.c7.viz.items.1.l	Transatlantic flight
+ph-radio.c7.viz.items.2.l	Yearly natural
+ph-radio.c7.viz.items.3.l	CT scan
+ph-radio.c8.title	Uses of radiation
+ph-radio.c8.text	Radiation saves lives in medicine (X-rays, cancer therapy, sterilising equipment), checks welds in industry, powers spacecraft and detects smoke in alarms.
+ph-radio.c8.viz.items.0	Medical imaging
+ph-radio.c8.viz.items.1	Cancer radiotherapy
+ph-radio.c8.viz.items.2	Sterilising equipment
+ph-radio.c8.viz.items.3	Smoke detectors
+ph-radio.c8.viz.items.4	Space probe power
+ph-radio.c9.title	Marie Curie
+ph-radio.c9.text	Marie Curie discovered polonium and radium with Pierre Curie, coined the word "radioactivity" and won two Nobel Prizes, in physics (1903) and chemistry (1911), the first person to win in two sciences.
+ph-radio.c9.viz.events.0.l	Becquerel finds radioactivity
+ph-radio.c9.viz.events.1.l	Curies discover polonium and radium
+ph-radio.c9.viz.events.2.l	Nobel in Physics
+ph-radio.c9.viz.events.3.l	Nobel in Chemistry
+ph-nuclear.title	Nuclear energy
+ph-nuclear.summary	Fission, fusion and how reactors work.
+ph-nuclear.q0.q	What controls the chain reaction in a reactor?
+ph-nuclear.q0.o0	Steam
+ph-nuclear.q0.o1	Control rods absorbing neutrons
+ph-nuclear.q0.o2	The generator
+ph-nuclear.q0.x	Control rods soak up neutrons.
+ph-nuclear.q1.q	Fusion joins…
+ph-nuclear.q1.o0	Heavy nuclei
+ph-nuclear.q1.o1	Light nuclei like hydrogen
+ph-nuclear.q1.o2	Electrons
+ph-nuclear.q1.x	It powers the Sun.
+ph-nuclear.q2.q	Does Portugal have a nuclear power plant?
+ph-nuclear.q2.o0	Yes, at Ferrel
+ph-nuclear.q2.o1	No, the Ferrel plan was abandoned
+ph-nuclear.q2.o2	Yes, in Lisbon
+ph-nuclear.q2.x	Plans were dropped in the 1970s.
+ph-nuclear.c0.title	E = mc²
+ph-nuclear.c0.text	Einstein showed that mass and energy are equivalent. A tiny amount of mass converts into an enormous amount of energy, because c², the speed of light squared, is huge.
+ph-nuclear.c0.viz.f	E = m × c²
+ph-nuclear.c0.viz.items.0.s	m
+ph-nuclear.c0.viz.items.0.m	mass (kg)
+ph-nuclear.c0.viz.items.1.s	c
+ph-nuclear.c0.viz.items.1.m	300,000,000 m/s
+ph-nuclear.c0.viz.items.2.s	1 g
+ph-nuclear.c0.viz.items.2.m	≈ 90 trillion J
+ph-nuclear.c1.title	Fission
+ph-nuclear.c1.text	A heavy nucleus like uranium-235 absorbs a neutron and splits into two smaller nuclei, releasing energy and two or three more neutrons, which can split more nuclei: a chain reaction.
+ph-nuclear.c1.viz.steps.0	Neutron hits U-235
+ph-nuclear.c1.viz.steps.1	Nucleus splits
+ph-nuclear.c1.viz.steps.2	Energy and new neutrons
+ph-nuclear.c1.viz.steps.3	More fissions
+ph-nuclear.c2.title	Inside a reactor
+ph-nuclear.c2.text	Fuel rods heat water; the heat makes steam, which drives a turbine and generator, just like a coal plant but without combustion. Control rods absorb neutrons to keep the chain reaction steady.
+ph-nuclear.c2.viz.steps.0	Fission heats water
+ph-nuclear.c2.viz.steps.1	Steam
+ph-nuclear.c2.viz.steps.2	Turbine
+ph-nuclear.c2.viz.steps.3	Generator
+ph-nuclear.c2.viz.steps.4	Electricity
+ph-nuclear.c3.title	Energy density
+ph-nuclear.c3.text	One kilogram of uranium fuel can produce about as much energy as thousands of tonnes of coal. Nuclear power uses very little land and emits almost no CO₂ while operating.
+ph-nuclear.c3.viz.items.0.v	24 MJ
+ph-nuclear.c3.viz.items.0.l	per kg of coal
+ph-nuclear.c3.viz.items.1.v	~500,000 MJ
+ph-nuclear.c3.viz.items.1.l	per kg of natural uranium in a typical reactor
+ph-nuclear.c4.title	Nuclear waste
+ph-nuclear.c4.text	Spent fuel is highly radioactive for thousands of years. It's small in volume and stored in cooling pools, then dry casks. Finland's Onkalo is the first deep geological repository being prepared for permanent disposal.
+ph-nuclear.c4.viz.steps.0	Spent fuel
+ph-nuclear.c4.viz.steps.1	Cooling pools for years
+ph-nuclear.c4.viz.steps.2	Dry casks
+ph-nuclear.c4.viz.steps.3	Deep geological repository
+ph-nuclear.c5.title	Accidents
+ph-nuclear.c5.text	The worst accidents were Chernobyl (1986), a flawed reactor design and unsafe test, and Fukushima (2011), where a tsunami knocked out cooling. They shaped strict safety rules worldwide.
+ph-nuclear.c5.viz.events.0.l	Three Mile Island, USA
+ph-nuclear.c5.viz.events.1.l	Chernobyl, USSR
+ph-nuclear.c5.viz.events.2.l	Fukushima, Japan
+ph-nuclear.c6.title	Portugal and nuclear
+ph-nuclear.c6.text	Portugal has never had a nuclear power plant. A plan in the 1970s for one at Ferrel, near Peniche, was abandoned after local protests. It did mine uranium until 2001, at Urgeiriça and other sites.
+ph-nuclear.c6.viz.events.0.l	Ferrel plant protests
+ph-nuclear.c6.viz.events.1.y	1970s
+ph-nuclear.c6.viz.events.1.l	plan abandoned
+ph-nuclear.c6.viz.events.2.l	last uranium mines closed
+ph-nuclear.c7.title	Fusion
+ph-nuclear.c7.text	Fusion joins light nuclei, like hydrogen isotopes, into helium, releasing even more energy per kilo than fission. It powers the Sun. Doing it on Earth needs temperatures over 100 million °C.
+ph-nuclear.c7.viz.l.t	Fission
+ph-nuclear.c7.viz.l.items.0	split heavy nuclei
+ph-nuclear.c7.viz.l.items.1	uranium
+ph-nuclear.c7.viz.l.items.2	working today
+ph-nuclear.c7.viz.r.t	Fusion
+ph-nuclear.c7.viz.r.items.0	join light nuclei
+ph-nuclear.c7.viz.r.items.1	hydrogen
+ph-nuclear.c7.viz.r.items.2	still experimental
+ph-nuclear.c8.title	Fusion reactors
+ph-nuclear.c8.text	Tokamaks like ITER, under construction in France, confine hot plasma with powerful magnets. In 2022 the US National Ignition Facility achieved a fusion reaction releasing more energy than its lasers delivered to the target.
+ph-nuclear.c8.viz.events.0.y	1950s
+ph-nuclear.c8.viz.events.0.l	first tokamak ideas
+ph-nuclear.c8.viz.events.1.l	NIF ignition with lasers
+ph-nuclear.c8.viz.events.2.y	2030s
+ph-nuclear.c8.viz.events.2.l	ITER experiments planned
+ph-nuclear.c9.title	Small modular reactors
+ph-nuclear.c9.text	SMRs are smaller reactors built in factories and shipped to sites, aiming to cut costs and construction times. Several designs are being developed and licensed worldwide.
+ph-nuclear.c9.viz.items.0	Factory-built modules
+ph-nuclear.c9.viz.items.1	Smaller sites
+ph-nuclear.c9.viz.items.2	Passive safety
+ph-nuclear.c9.viz.items.3	Still mostly in development
+ph-relativity.title	Relativity
+ph-relativity.summary	Einstein's ideas about space, time and gravity.
+ph-relativity.q0.q	What stays the same for every observer in relativity?
+ph-relativity.q0.o0	Time
+ph-relativity.q0.o1	Length
+ph-relativity.q0.o2	The speed of light in a vacuum
+ph-relativity.q0.x	All else adjusts around it.
+ph-relativity.q1.q	Why must GPS correct for relativity?
+ph-relativity.q1.o0	Satellites are cold
+ph-relativity.q1.o1	Their clocks tick at a different rate, causing position errors
+ph-relativity.q1.o2	Light is slow
+ph-relativity.q1.x	Uncorrected, errors grow ~10 km per day.
+ph-relativity.q2.q	According to general relativity, gravity is…
+ph-relativity.q2.o0	A magnetic force
+ph-relativity.q2.o1	The curvature of space-time by mass
+ph-relativity.q2.o2	An illusion
+ph-relativity.q2.x	Mass bends space-time.
+ph-relativity.c0.title	Light speed is the same for everyone
+ph-relativity.c0.text	Einstein's 1905 starting point: the speed of light in a vacuum is the same for every observer, however fast they move. That simple rule forces space and time to stretch.
+ph-relativity.c0.viz.steps.0	Light speed fixed for all
+ph-relativity.c0.viz.steps.1	Moving clocks must tick slower
+ph-relativity.c0.viz.steps.2	Moving lengths shrink
+ph-relativity.c1.title	Time dilation
+ph-relativity.c1.text	Moving clocks tick slower. At everyday speeds the effect is tiny, but at 87% of the speed of light, time passes at half the rate.
+ph-relativity.c1.viz.unit	time rate (%)
+ph-relativity.c1.viz.items.0.l	At rest
+ph-relativity.c1.viz.items.1.l	50% of c
+ph-relativity.c1.viz.items.2.l	87% of c
+ph-relativity.c1.viz.items.3.l	99% of c
+ph-relativity.c2.title	The twin paradox
+ph-relativity.c2.text	If one twin flies to a distant star at near light speed and returns, she'll be younger than her twin who stayed on Earth. Experiments with fast particles and atomic clocks on planes confirm it.
+ph-relativity.c2.viz.l.t	Twin who travelled
+ph-relativity.c2.viz.l.items.0	less time passed
+ph-relativity.c2.viz.l.items.1	younger
+ph-relativity.c2.viz.r.t	Twin on Earth
+ph-relativity.c2.viz.r.items.0	more time passed
+ph-relativity.c2.viz.r.items.1	older
+ph-relativity.c3.title	Nothing faster than light
+ph-relativity.c3.text	As an object speeds up, it takes more and more energy to accelerate it further. Reaching light speed would take infinite energy, so nothing with mass can do it.
+ph-relativity.c3.viz.items.0	Light: 300,000 km/s
+ph-relativity.c3.viz.items.1	Fastest spacecraft: ~0.06% of c
+ph-relativity.c3.viz.items.2	Particle accelerators: 99.9999…% of c
+ph-relativity.c3.viz.items.3	Never 100% for mass
+ph-relativity.c4.title	General relativity
+ph-relativity.c4.text	In 1915 Einstein described gravity not as a force but as curved space-time: mass bends space-time, and objects follow the curves. A heavy ball on a trampoline is the usual picture.
+ph-relativity.c4.viz.steps.0	Mass bends space-time
+ph-relativity.c4.viz.steps.1	Objects follow the curves
+ph-relativity.c4.viz.steps.2	We see it as gravity
+ph-relativity.c5.title	Gravity slows time
+ph-relativity.c5.text	Clocks run slower in stronger gravity. A clock at sea level ticks slightly slower than one on a mountain. The effect is tiny but measurable.
+ph-relativity.c5.viz.l.t	Strong gravity
+ph-relativity.c5.viz.l.items.0	clocks slower
+ph-relativity.c5.viz.l.items.1	near Earth's surface
+ph-relativity.c5.viz.r.t	Weaker gravity
+ph-relativity.c5.viz.r.items.0	clocks faster
+ph-relativity.c5.viz.r.items.1	high altitude, orbit
+ph-relativity.c6.title	GPS needs relativity
+ph-relativity.c6.text	GPS satellite clocks run fast by about 38 microseconds a day overall (gravity speeds them up, orbital speed slows them down). Without correction, positions would drift by around 10 km a day.
+ph-relativity.c6.viz.items.0.v	38 µs
+ph-relativity.c6.viz.items.0.l	clock difference per day
+ph-relativity.c6.viz.items.1.v	~10 km
+ph-relativity.c6.viz.items.1.l	daily position error if uncorrected
+ph-relativity.c7.title	Bending light
+ph-relativity.c7.text	Gravity bends light. In 1919, during a solar eclipse, astronomers saw stars near the Sun shifted exactly as Einstein predicted, making him world-famous. Part of the observation was made on Príncipe island.
+ph-relativity.c7.viz.steps.0	Starlight passes the Sun
+ph-relativity.c7.viz.steps.1	Space-time curved
+ph-relativity.c7.viz.steps.2	Light bends
+ph-relativity.c7.viz.steps.3	Star appears shifted
+ph-relativity.c8.title	Black holes
+ph-relativity.c8.text	If enough mass is squeezed into a small space, its gravity becomes so strong that not even light escapes. The boundary is the event horizon. The first image of a black hole was published in 2019.
+ph-relativity.c8.viz.events.0.l	Schwarzschild solution
+ph-relativity.c8.viz.events.1.l	first strong evidence
+ph-relativity.c8.viz.events.2.l	merging black holes detected
+ph-relativity.c8.viz.events.3.l	first image (M87)
+ph-relativity.c9.title	Energy and mass
+ph-relativity.c9.text	Special relativity also gave E = mc². In a nuclear reaction, the products weigh slightly less than the starting material; the missing mass became energy.
+ph-relativity.c9.viz.f	E = m × c²
+ph-relativity.c9.viz.items.0.s	mass difference
+ph-relativity.c9.viz.items.0.m	energy released
+ph-quantum.title	The quantum world
+ph-quantum.summary	How tiny things behave very strangely.
+ph-quantum.q0.q	Why can dim blue light eject electrons when bright red light can't?
+ph-quantum.q0.o0	Blue is louder
+ph-quantum.q0.o1	Each blue photon carries more energy
+ph-quantum.q0.o2	Red light is slower
+ph-quantum.q0.x	Photon energy depends on frequency.
+ph-quantum.q1.q	What happens when you measure a particle in superposition?
+ph-quantum.q1.o0	Nothing
+ph-quantum.q1.o1	You get one definite result
+ph-quantum.q1.o2	It disappears
+ph-quantum.q1.x	Measurement gives a single outcome.
+ph-quantum.q2.q	Which everyday technology relies on quantum physics?
+ph-quantum.q2.o0	A lever
+ph-quantum.q2.o1	LEDs and transistors
+ph-quantum.q2.o2	A pulley
+ph-quantum.q2.x	Semiconductors are quantum devices.
+ph-quantum.c0.title	Energy comes in packets
+ph-quantum.c0.text	At small scales, energy isn't continuous: it comes in packets called quanta. Light consists of photons, each with energy set by its frequency. Blue photons carry more energy than red ones.
+ph-quantum.c0.viz.f	E = h × f
+ph-quantum.c0.viz.items.0.s	h
+ph-quantum.c0.viz.items.0.m	Planck's constant
+ph-quantum.c0.viz.items.1.s	f
+ph-quantum.c0.viz.items.1.m	frequency of the light
+ph-quantum.c1.title	The photoelectric effect
+ph-quantum.c1.text	Shine light on a metal and it can knock out electrons, but only if each photon has enough energy. Dim blue light works; bright red light may not. Einstein explained this in 1905, earning his Nobel Prize.
+ph-quantum.c1.viz.l.t	Red light, even bright
+ph-quantum.c1.viz.l.items.0	photons too weak
+ph-quantum.c1.viz.l.items.1	no electrons
+ph-quantum.c1.viz.r.t	Blue or UV, even dim
+ph-quantum.c1.viz.r.items.0	photons strong enough
+ph-quantum.c1.viz.r.items.1	electrons ejected
+ph-quantum.c2.title	Wave–particle duality
+ph-quantum.c2.text	Light and electrons behave sometimes like particles and sometimes like waves. Fire electrons one at a time through two slits and they still build up a wave interference pattern.
+ph-quantum.c2.viz.steps.0	Single electrons fired
+ph-quantum.c2.viz.steps.1	Through two slits
+ph-quantum.c2.viz.steps.2	Land one by one
+ph-quantum.c2.viz.steps.3	Pattern of waves appears
+ph-quantum.c3.title	Uncertainty
+ph-quantum.c3.text	Heisenberg showed that you can't know both the exact position and the exact momentum of a particle at the same time. The more precisely you know one, the fuzzier the other becomes.
+ph-quantum.c3.viz.l.t	Position known precisely
+ph-quantum.c3.viz.l.items.0	momentum uncertain
+ph-quantum.c3.viz.r.t	Momentum known precisely
+ph-quantum.c3.viz.r.items.0	position uncertain
+ph-quantum.c4.title	Superposition
+ph-quantum.c4.text	A quantum system can be in a combination of states until measured. An electron's spin can be "up and down" at once; measuring it gives one definite answer, with probabilities set by the state.
+ph-quantum.c4.viz.steps.0	Superposition of states
+ph-quantum.c4.viz.steps.1	Measurement
+ph-quantum.c4.viz.steps.2	One definite result
+ph-quantum.c4.viz.steps.3	Probabilities predicted by the theory
+ph-quantum.c5.title	Entanglement
+ph-quantum.c5.text	Two particles can become linked so that measuring one instantly tells you about the other, however far apart. Einstein called it "spooky action at a distance". It can't send messages faster than light.
+ph-quantum.c5.viz.items.0.a	entangled pair
+ph-quantum.c5.viz.items.0.b	linked outcomes
+ph-quantum.c5.viz.items.1.a	measure one
+ph-quantum.c5.viz.items.1.b	know the other
+ph-quantum.c5.viz.items.2.a	faster-than-light messages
+ph-quantum.c5.viz.items.2.b	impossible
+ph-quantum.c6.title	Tunnelling
+ph-quantum.c6.text	Particles can sometimes pass through barriers they classically couldn't cross. Tunnelling powers the Sun's fusion, flash memory and scanning tunnelling microscopes.
+ph-quantum.c6.viz.items.0	Fusion in the Sun
+ph-quantum.c6.viz.items.1	Flash memory cells
+ph-quantum.c6.viz.items.2	Tunnel diodes
+ph-quantum.c6.viz.items.3	Scanning tunnelling microscopes
+ph-quantum.c7.title	Quantum in your pocket
+ph-quantum.c7.text	Quantum physics isn't exotic: transistors, lasers, LEDs, solar cells, MRI scanners and atomic clocks in GPS all rely on it.
+ph-quantum.c7.viz.root	Quantum tech today
+ph-quantum.c7.viz.items.0	Transistors and chips
+ph-quantum.c7.viz.items.1	Lasers and LEDs
+ph-quantum.c7.viz.items.2	Solar cells
+ph-quantum.c7.viz.items.3	MRI and atomic clocks
+ph-quantum.c8.title	Quantum computers
+ph-quantum.c8.text	Quantum computers use qubits that can be in superposition and entangled. For certain problems, like simulating molecules or breaking some encryption, they could vastly outperform normal computers, but building large reliable ones is very hard.
+ph-quantum.c8.viz.l.t	Classical bit
+ph-quantum.c8.viz.l.items.0	0 or 1
+ph-quantum.c8.viz.r.t	Qubit
+ph-quantum.c8.viz.r.items.0	superposition of 0 and 1
+ph-quantum.c8.viz.r.items.1	fragile
+ph-quantum.c8.viz.r.items.2	needs extreme cooling
+ph-quantum.c9.title	Founders of quantum theory
+ph-quantum.c9.text	Planck (1900), Einstein (1905), Bohr (1913), Heisenberg and Schrödinger (1925–26) built quantum mechanics in about 25 years. It's the most precisely tested theory in science.
+ph-quantum.c9.viz.events.0.l	Planck's quanta
+ph-quantum.c9.viz.events.1.l	Einstein's photons
+ph-quantum.c9.viz.events.2.l	Bohr's atom
+ph-quantum.c9.viz.events.3.l	Schrödinger's equation
+ph-solar.title	The Solar System
+ph-solar.summary	Our Sun, eight planets and much more.
+ph-solar.q0.q	Which planet is the hottest?
+ph-solar.q0.o0	Mercury
+ph-solar.q0.o1	Venus
+ph-solar.q0.o2	Mars
+ph-solar.q0.x	Its thick CO₂ atmosphere traps heat.
+ph-solar.q1.q	How far is 1 AU?
+ph-solar.q1.o0	1 million km
+ph-solar.q1.o1	About 150 million km
+ph-solar.q1.o2	1 light-year
+ph-solar.q1.x	The average Earth–Sun distance.
+ph-solar.q2.q	Why was Pluto reclassified in 2006?
+ph-solar.q2.o0	It disappeared
+ph-solar.q2.o1	It became classed as a dwarf planet
+ph-solar.q2.o2	It merged with Neptune
+ph-solar.q2.x	It doesn't clear its orbit of other bodies.
+ph-solar.c0.title	The Sun
+ph-solar.c0.text	The Sun is an ordinary star, 109 times Earth's diameter, holding 99.8% of the Solar System's mass. It fuses about 600 million tonnes of hydrogen into helium every second.
+ph-solar.c0.viz.items.0.l	Earth's diameter
+ph-solar.c0.viz.items.1.l	of the Solar System's mass
+ph-solar.c0.viz.items.2.v	15 million °C
+ph-solar.c0.viz.items.2.l	core temperature
+ph-solar.c1.title	Eight planets
+ph-solar.c1.text	Four small rocky planets (Mercury, Venus, Earth, Mars) and four giants (Jupiter and Saturn of gas, Uranus and Neptune of ice). Pluto was reclassified as a dwarf planet in 2006.
+ph-solar.c1.viz.l.t	Rocky inner planets
+ph-solar.c1.viz.l.items.0	Mercury
+ph-solar.c1.viz.l.items.1	Venus
+ph-solar.c1.viz.l.items.2	Earth
+ph-solar.c1.viz.l.items.3	Mars
+ph-solar.c1.viz.r.t	Giant outer planets
+ph-solar.c1.viz.r.items.0	Jupiter
+ph-solar.c1.viz.r.items.1	Saturn
+ph-solar.c1.viz.r.items.2	Uranus
+ph-solar.c1.viz.r.items.3	Neptune
+ph-solar.c2.title	Distances
+ph-solar.c2.text	Distances are measured in astronomical units (AU): 1 AU is the Earth–Sun distance, about 150 million km. Neptune is about 30 AU away; light takes over 4 hours to get there.
+ph-solar.c2.viz.unit	AU from the Sun
+ph-solar.c2.viz.items.0.l	Mercury
+ph-solar.c2.viz.items.1.l	Earth
+ph-solar.c2.viz.items.2.l	Mars
+ph-solar.c2.viz.items.3.l	Jupiter
+ph-solar.c2.viz.items.4.l	Neptune
+ph-solar.c3.title	Venus: the hothouse
+ph-solar.c3.text	Venus is closer in size to Earth but has a thick CO₂ atmosphere with a crushing 90 bar of pressure and surface temperatures around 465 °C, hotter than Mercury.
+ph-solar.c3.viz.items.0.v	465 °C
+ph-solar.c3.viz.items.0.l	surface
+ph-solar.c3.viz.items.1.v	90 bar
+ph-solar.c3.viz.items.1.l	pressure
+ph-solar.c3.viz.items.2.v	243 days
+ph-solar.c3.viz.items.2.l	one rotation
+ph-solar.c4.title	Mars
+ph-solar.c4.text	Mars is a cold desert with a thin CO₂ atmosphere, the largest volcano in the Solar System (Olympus Mons) and evidence of ancient rivers and lakes. Rovers like Perseverance search for signs of past life.
+ph-solar.c4.viz.items.0	Olympus Mons, ~22 km high
+ph-solar.c4.viz.items.1	Ancient river valleys
+ph-solar.c4.viz.items.2	Polar ice caps
+ph-solar.c4.viz.items.3	Rovers and helicopters exploring
+ph-solar.c5.title	Jupiter and Saturn
+ph-solar.c5.text	Jupiter is so big that all the other planets would fit inside it. Its Great Red Spot is a storm larger than Earth. Saturn's rings are made of ice chunks and would float in a giant bathtub: its average density is less than water.
+ph-solar.c5.viz.items.0.a	Jupiter
+ph-solar.c5.viz.items.0.b	biggest planet, Great Red Spot
+ph-solar.c5.viz.items.1.a	Saturn
+ph-solar.c5.viz.items.1.b	rings of ice, less dense than water
+ph-solar.c5.viz.items.2.a	Europa
+ph-solar.c5.viz.items.2.b	ocean under ice
+ph-solar.c5.viz.items.3.a	Titan
+ph-solar.c5.viz.items.3.b	lakes of methane
+ph-solar.c6.title	Moons
+ph-solar.c6.text	The Solar System has hundreds of known moons. Our Moon probably formed when a Mars-sized body hit the young Earth about 4.5 billion years ago.
+ph-solar.c6.viz.steps.0	Mars-sized body hits young Earth
+ph-solar.c6.viz.steps.1	Debris thrown into orbit
+ph-solar.c6.viz.steps.2	Debris clumps together
+ph-solar.c6.viz.steps.3	Our Moon
+ph-solar.c7.title	Asteroids and comets
+ph-solar.c7.text	The asteroid belt between Mars and Jupiter holds rocky leftovers. Comets are icy bodies from the outer Solar System that grow glowing tails when they near the Sun.
+ph-solar.c7.viz.l.t	Asteroids
+ph-solar.c7.viz.l.items.0	rock and metal
+ph-solar.c7.viz.l.items.1	mostly between Mars and Jupiter
+ph-solar.c7.viz.r.t	Comets
+ph-solar.c7.viz.r.items.0	ice and dust
+ph-solar.c7.viz.r.items.1	tails near the Sun
+ph-solar.c7.viz.r.items.2	from far out
+ph-solar.c8.title	Seasons on other planets
+ph-solar.c8.text	Planets with tilted axes have seasons. Uranus is tipped on its side, so each pole gets about 42 years of continuous sunlight followed by 42 years of darkness.
+ph-solar.c8.viz.unit	axial tilt (degrees)
+ph-solar.c8.viz.items.0.l	Mercury
+ph-solar.c8.viz.items.1.l	Earth
+ph-solar.c8.viz.items.2.l	Mars
+ph-solar.c8.viz.items.3.l	Uranus
+ph-solar.c9.title	Age
+ph-solar.c9.text	The Solar System formed about 4.6 billion years ago from a collapsing cloud of gas and dust. Meteorites give the most precise dates.
+ph-solar.c9.viz.events.0.y	4.6 bn years ago
+ph-solar.c9.viz.events.0.l	Sun forms
+ph-solar.c9.viz.events.1.y	4.5 bn
+ph-solar.c9.viz.events.1.l	Earth and Moon
+ph-solar.c9.viz.events.2.y	3.8 bn
+ph-solar.c9.viz.events.2.l	early life on Earth
+ph-solar.c9.viz.events.3.y	today
+ph-solar.c9.viz.events.3.l	still going
+ph-stars.title	Stars and galaxies
+ph-stars.summary	How stars live and die, and how big the universe is.
+ph-stars.q0.q	A light-year measures…
+ph-stars.q0.o0	Time
+ph-stars.q0.o1	Distance
+ph-stars.q0.o2	Brightness
+ph-stars.q0.x	How far light travels in a year.
+ph-stars.q1.q	What will the Sun eventually become?
+ph-stars.q1.o0	A black hole
+ph-stars.q1.o1	A white dwarf
+ph-stars.q1.o2	A supernova
+ph-stars.q1.x	It's not massive enough to explode.
+ph-stars.q2.q	When we see Andromeda, we see it as it was…
+ph-stars.q2.o0	Now
+ph-stars.q2.o1	About 2.5 million years ago
+ph-stars.q2.o2	8 minutes ago
+ph-stars.q2.x	Its light took that long to arrive.
+ph-stars.c0.title	What a star is
+ph-stars.c0.text	A star is a giant ball of hot gas held together by its own gravity, shining because nuclear fusion in its core converts hydrogen into helium.
+ph-stars.c0.viz.steps.0	Gravity squeezes the core
+ph-stars.c0.viz.steps.1	Fusion starts
+ph-stars.c0.viz.steps.2	Energy pushes outward
+ph-stars.c0.viz.steps.3	Balance: a stable star
+ph-stars.c1.title	Light-years
+ph-stars.c1.text	A light-year is the distance light travels in a year: about 9.5 trillion km. The nearest star after the Sun, Proxima Centauri, is 4.2 light-years away.
+ph-stars.c1.viz.unit	light-years
+ph-stars.c1.viz.items.0.l	Proxima Centauri
+ph-stars.c1.viz.items.1.l	Sirius
+ph-stars.c1.viz.items.2.l	Betelgeuse
+ph-stars.c1.viz.items.3.l	Galactic centre
+ph-stars.c2.title	Colours of stars
+ph-stars.c2.text	A star's colour reveals its temperature: red stars are cooler (about 3,000 °C), our yellow Sun about 5,500 °C, blue stars over 20,000 °C.
+ph-stars.c2.viz.unit	°C
+ph-stars.c2.viz.items.0.l	red dwarf
+ph-stars.c2.viz.items.1.l	Sun
+ph-stars.c2.viz.items.2.l	Sirius
+ph-stars.c2.viz.items.3.l	blue giant
+ph-stars.c3.title	Life of a Sun-like star
+ph-stars.c3.text	A star like the Sun burns hydrogen for about 10 billion years, swells into a red giant, sheds its outer layers and ends as a white dwarf. The Sun is about halfway through.
+ph-stars.c3.viz.steps.0	Nebula
+ph-stars.c3.viz.steps.1	Main-sequence star
+ph-stars.c3.viz.steps.2	Red giant
+ph-stars.c3.viz.steps.3	White dwarf
+ph-stars.c4.title	Massive stars explode
+ph-stars.c4.text	Stars many times the Sun's mass burn fast, then collapse and explode as supernovae, leaving neutron stars or black holes. The explosions spread heavy elements into space.
+ph-stars.c4.viz.steps.0	Massive star
+ph-stars.c4.viz.steps.1	Supergiant
+ph-stars.c4.viz.steps.2	Supernova explosion
+ph-stars.c4.viz.steps.3	Neutron star or black hole
+ph-stars.c5.title	Neutron stars
+ph-stars.c5.text	A neutron star packs more than the Sun's mass into a ball about 20 km across. A teaspoon of it would weigh about a billion tonnes on Earth. Some spin hundreds of times a second as pulsars.
+ph-stars.c5.viz.items.0.v	20 km
+ph-stars.c5.viz.items.0.l	diameter
+ph-stars.c5.viz.items.1.v	1.4+ Suns
+ph-stars.c5.viz.items.1.l	of mass
+ph-stars.c5.viz.items.2.v	~1 billion t
+ph-stars.c5.viz.items.2.l	per teaspoon
+ph-stars.c6.title	The Milky Way
+ph-stars.c6.text	Our galaxy is a barred spiral of perhaps 100–400 billion stars, about 100,000 light-years across. The Sun sits in an outer arm and takes about 230 million years to orbit the centre.
+ph-stars.c6.viz.items.0.v	100–400 bn
+ph-stars.c6.viz.items.0.l	stars
+ph-stars.c6.viz.items.1.v	100,000 ly
+ph-stars.c6.viz.items.1.l	across
+ph-stars.c6.viz.items.2.v	230 M years
+ph-stars.c6.viz.items.2.l	one solar orbit
+ph-stars.c7.title	Galaxies everywhere
+ph-stars.c7.text	The observable universe holds hundreds of billions to around two trillion galaxies. The Andromeda galaxy, 2.5 million light-years away, is visible to the naked eye on dark nights and will merge with ours in about 4–5 billion years.
+ph-stars.c7.viz.items.0	Spiral galaxies
+ph-stars.c7.viz.items.1	Elliptical galaxies
+ph-stars.c7.viz.items.2	Irregular galaxies
+ph-stars.c7.viz.items.3	Clusters and superclusters
+ph-stars.c8.title	Looking back in time
+ph-stars.c8.text	Light takes time to travel, so we see distant objects as they were. We see the Sun as it was 8 minutes ago and Andromeda as it was 2.5 million years ago.
+ph-stars.c8.viz.items.0.a	Moon
+ph-stars.c8.viz.items.0.b	1.3 seconds ago
+ph-stars.c8.viz.items.1.a	Sun
+ph-stars.c8.viz.items.1.b	8 minutes ago
+ph-stars.c8.viz.items.2.a	Proxima Centauri
+ph-stars.c8.viz.items.2.b	4.2 years ago
+ph-stars.c8.viz.items.3.a	Andromeda
+ph-stars.c8.viz.items.3.b	2.5 million years ago
+ph-stars.c9.title	Exoplanets
+ph-stars.c9.text	Since the first confirmed in 1995 around a Sun-like star, over 5,000 planets have been found around other stars, mostly by tiny dips in starlight as they pass in front.
+ph-stars.c9.viz.steps.0	Planet passes in front of its star
+ph-stars.c9.viz.steps.1	Starlight dips slightly
+ph-stars.c9.viz.steps.2	Telescope measures it
+ph-stars.c9.viz.steps.3	Planet size and orbit
+ph-cosmos.title	The universe
+ph-cosmos.summary	The Big Bang, expansion and what we don't know.
+ph-cosmos.q0.q	How old is the universe?
+ph-cosmos.q0.o0	4.6 billion years
+ph-cosmos.q0.o1	About 13.8 billion years
+ph-cosmos.q0.o2	1 trillion years
+ph-cosmos.q0.x	Measured from expansion and the cosmic background.
+ph-cosmos.q1.q	What is most of the universe's content?
+ph-cosmos.q1.o0	Ordinary matter
+ph-cosmos.q1.o1	Dark matter
+ph-cosmos.q1.o2	Dark energy
+ph-cosmos.q1.x	About 68%.
+ph-cosmos.q2.q	Hubble discovered in 1929 that…
+ph-cosmos.q2.o0	The Sun is a star
+ph-cosmos.q2.o1	Distant galaxies are moving away, so space is expanding
+ph-cosmos.q2.o2	Mars has water
+ph-cosmos.q2.x	The expansion of the universe.
+ph-cosmos.c0.title	An expanding universe
+ph-cosmos.c0.text	In 1929 Edwin Hubble found that distant galaxies are moving away from us, faster the farther they are. Space itself is expanding, like dots on an inflating balloon.
+ph-cosmos.c0.viz.steps.0	Distant galaxies
+ph-cosmos.c0.viz.steps.1	Light stretched to red
+ph-cosmos.c0.viz.steps.2	Faster the farther away
+ph-cosmos.c0.viz.steps.3	Space is expanding
+ph-cosmos.c1.title	The Big Bang
+ph-cosmos.c1.text	Running the expansion backwards, the universe was once extremely hot and dense, about 13.8 billion years ago. The Big Bang wasn't an explosion in space but the expansion of space itself.
+ph-cosmos.c1.viz.events.0.y	13.8 bn years ago
+ph-cosmos.c1.viz.events.0.l	Big Bang
+ph-cosmos.c1.viz.events.1.y	3 minutes
+ph-cosmos.c1.viz.events.1.l	first nuclei
+ph-cosmos.c1.viz.events.2.y	380,000 years
+ph-cosmos.c1.viz.events.2.l	first atoms, light set free
+ph-cosmos.c1.viz.events.3.y	200 M years
+ph-cosmos.c1.viz.events.3.l	first stars
+ph-cosmos.c2.title	The cosmic microwave background
+ph-cosmos.c2.text	When the universe cooled enough for atoms to form, light could travel freely. That light, stretched into microwaves, still fills the sky at 2.7 K. Discovered by accident in 1965.
+ph-cosmos.c2.viz.items.0.v	2.7 K
+ph-cosmos.c2.viz.items.0.l	temperature of the background
+ph-cosmos.c2.viz.items.1.l	discovered
+ph-cosmos.c2.viz.items.2.v	380,000 years
+ph-cosmos.c2.viz.items.2.l	after the Big Bang
+ph-cosmos.c3.title	Dark matter
+ph-cosmos.c3.text	Galaxies spin too fast for the visible matter to hold them together. Something unseen adds extra gravity: dark matter. Nobody knows yet what it is.
+ph-cosmos.c3.viz.steps.0	Galaxies spin fast
+ph-cosmos.c3.viz.steps.1	Visible mass too small
+ph-cosmos.c3.viz.steps.2	Extra unseen mass needed
+ph-cosmos.c3.viz.steps.3	Dark matter
+ph-cosmos.c4.title	Dark energy
+ph-cosmos.c4.text	In 1998 astronomers discovered the expansion is accelerating. Whatever drives it is called dark energy. It makes up most of the universe's energy content.
+ph-cosmos.c4.viz.unit	% of the universe's content (approx.)
+ph-cosmos.c4.viz.items.0.l	Ordinary matter
+ph-cosmos.c4.viz.items.1.l	Dark matter
+ph-cosmos.c4.viz.items.2.l	Dark energy
+ph-cosmos.c5.title	How big is it?
+ph-cosmos.c5.text	The observable universe is about 93 billion light-years across, larger than 13.8 billion × 2 because space expanded while light travelled. Beyond it, the universe may be infinite.
+ph-cosmos.c5.viz.items.0.v	93 bn ly
+ph-cosmos.c5.viz.items.0.l	observable universe diameter
+ph-cosmos.c5.viz.items.1.v	13.8 bn years
+ph-cosmos.c5.viz.items.1.l	age
+ph-cosmos.c6.title	Telescopes as time machines
+ph-cosmos.c6.text	The James Webb Space Telescope, launched in 2021, sees infrared light from galaxies formed only a few hundred million years after the Big Bang.
+ph-cosmos.c6.viz.events.0.l	Hubble launched
+ph-cosmos.c6.viz.events.1.l	James Webb launched
+ph-cosmos.c6.viz.events.2.l	first Webb images
+ph-cosmos.c7.title	Elements from the early universe
+ph-cosmos.c7.text	The Big Bang made mostly hydrogen and helium, with a trace of lithium. Everything heavier came later from stars, so the universe is still about 74% hydrogen and 24% helium by mass.
+ph-cosmos.c7.viz.unit	% of ordinary matter by mass
+ph-cosmos.c7.viz.items.0.l	Hydrogen
+ph-cosmos.c7.viz.items.1.l	Helium
+ph-cosmos.c7.viz.items.2.l	Everything else
+ph-cosmos.c8.title	Open questions
+ph-cosmos.c8.text	Physicists still don't know what dark matter and dark energy are, why there's more matter than antimatter, or how to combine quantum mechanics with gravity.
+ph-cosmos.c8.viz.items.0	What is dark matter?
+ph-cosmos.c8.viz.items.1	What is dark energy?
+ph-cosmos.c8.viz.items.2	Why more matter than antimatter?
+ph-cosmos.c8.viz.items.3	How does quantum gravity work?
+ph-cosmos.c9.title	Our cosmic address
+ph-cosmos.c9.text	Earth, Solar System, Orion Arm, Milky Way, Local Group, Virgo Supercluster, Laniakea Supercluster, observable universe.
+ph-cosmos.c9.viz.items.0	Observable universe
+ph-cosmos.c9.viz.items.1	Laniakea Supercluster
+ph-cosmos.c9.viz.items.2	Local Group
+ph-cosmos.c9.viz.items.3	Milky Way
+ph-cosmos.c9.viz.items.4	Solar System
+ph-cosmos.c9.viz.items.5	Earth
+ph-weather.title	The physics of weather
+ph-weather.summary	Wind, clouds, rain and storms.
+ph-weather.q0.q	Why does air rising form clouds?
+ph-weather.q0.o0	It gets warmer
+ph-weather.q0.o1	It expands and cools to its dew point, so vapour condenses
+ph-weather.q0.o2	Wind pushes water up
+ph-weather.q0.x	Cooling leads to condensation.
+ph-weather.q1.q	In the northern hemisphere, winds circle low-pressure systems…
+ph-weather.q1.o0	Clockwise
+ph-weather.q1.o1	Anticlockwise
+ph-weather.q1.o2	Not at all
+ph-weather.q1.x	Due to the Coriolis effect.
+ph-weather.q2.q	What causes a daytime sea breeze?
+ph-weather.q2.o0	Tides
+ph-weather.q2.o1	Land heating faster than the sea
+ph-weather.q2.o2	The Moon
+ph-weather.q2.x	Warm air rises over land, sea air replaces it.
+ph-weather.c0.title	The Sun drives the weather
+ph-weather.c0.text	The Sun heats the equator more than the poles and land more than sea. The atmosphere and oceans constantly move heat around to even it out, and that motion is weather.
+ph-weather.c0.viz.steps.0	Uneven heating
+ph-weather.c0.viz.steps.1	Warm air rises, cool air sinks
+ph-weather.c0.viz.steps.2	Pressure differences
+ph-weather.c0.viz.steps.3	Wind and weather
+ph-weather.c1.title	Wind
+ph-weather.c1.text	Air flows from high pressure to low pressure. Earth's rotation deflects it (the Coriolis effect), so winds spiral around low-pressure systems: anticlockwise in the northern hemisphere.
+ph-weather.c1.viz.steps.0	High pressure
+ph-weather.c1.viz.steps.1	Air flows outward
+ph-weather.c1.viz.steps.2	Deflected by Earth's spin
+ph-weather.c1.viz.steps.3	Spirals into low pressure
+ph-weather.c2.title	Clouds
+ph-weather.c2.text	Rising air expands and cools. When it cools to its dew point, water vapour condenses on dust into droplets: a cloud. Each cloud type tells you something about the air.
+ph-weather.c2.viz.steps.0	Air rises
+ph-weather.c2.viz.steps.1	Expands and cools
+ph-weather.c2.viz.steps.2	Reaches dew point
+ph-weather.c2.viz.steps.3	Water condenses: cloud
+ph-weather.c3.title	Rain
+ph-weather.c3.text	Cloud droplets are tiny. Rain forms when droplets collide and merge, or when ice crystals grow in cold clouds and melt as they fall. A raindrop contains about a million cloud droplets.
+ph-weather.c3.viz.items.0	Droplets collide and merge
+ph-weather.c3.viz.items.1	Ice crystals grow in cold clouds
+ph-weather.c3.viz.items.2	Melt into rain as they fall
+ph-weather.c3.viz.items.3	Or arrive as snow or hail
+ph-weather.c4.title	Humidity and dew
+ph-weather.c4.text	Warm air holds more water vapour than cold air. At night, air cools until it can't hold its vapour, which condenses as dew or fog. Relative humidity compares actual vapour with the maximum possible.
+ph-weather.c4.viz.unit	g of water per m³ of air (max, approx.)
+ph-weather.c4.viz.items.0.l	0 °C
+ph-weather.c4.viz.items.1.l	10 °C
+ph-weather.c4.viz.items.2.l	20 °C
+ph-weather.c4.viz.items.3.l	30 °C
+ph-weather.c5.title	Fronts
+ph-weather.c5.text	Where warm and cold air masses meet, the warm air rises over the cold, forming clouds and rain. Atlantic fronts bring much of Portugal's winter rain, especially to the Minho.
+ph-weather.c5.viz.l.t	Cold front
+ph-weather.c5.viz.l.items.0	sharp, short heavy showers
+ph-weather.c5.viz.l.items.1	temperature drops
+ph-weather.c5.viz.r.t	Warm front
+ph-weather.c5.viz.r.items.0	gradual
+ph-weather.c5.viz.r.items.1	long steady rain
+ph-weather.c5.viz.r.items.2	drizzle
+ph-weather.c6.title	Thunderstorms
+ph-weather.c6.text	Strong updrafts in warm, humid, unstable air build towering cumulonimbus clouds up to 12 km or more. Charge separates, producing lightning, thunder, heavy rain and sometimes hail.
+ph-weather.c6.viz.steps.0	Warm humid air
+ph-weather.c6.viz.steps.1	Strong updraft
+ph-weather.c6.viz.steps.2	Towering cumulonimbus
+ph-weather.c6.viz.steps.3	Lightning, heavy rain, hail
+ph-weather.c7.title	Sea breezes
+ph-weather.c7.text	On sunny days, land heats faster than the sea. Air rises over the land and cooler sea air flows in: a sea breeze. At night it reverses into a land breeze. The Nortada on Portugal's coast is a summer wind linked to these pressure patterns.
+ph-weather.c7.viz.l.t	Day
+ph-weather.c7.viz.l.items.0	land warmer
+ph-weather.c7.viz.l.items.1	sea breeze blows onshore
+ph-weather.c7.viz.r.t	Night
+ph-weather.c7.viz.r.items.0	land cooler
+ph-weather.c7.viz.r.items.1	land breeze blows offshore
+ph-weather.c8.title	Forecasting
+ph-weather.c8.text	Forecasts come from supercomputers solving the physics equations of the atmosphere on a 3D grid, starting from millions of observations. Accuracy for 5 days ahead today is roughly what 1-day forecasts were in the 1980s.
+ph-weather.c8.viz.steps.0	Satellites, balloons, stations
+ph-weather.c8.viz.steps.1	Initial state of the atmosphere
+ph-weather.c8.viz.steps.2	Supercomputer simulation
+ph-weather.c8.viz.steps.3	Forecast
+ph-weather.c9.title	IPMA warnings
+ph-weather.c9.text	In Portugal, IPMA issues weather warnings in yellow, orange and red for rain, wind, heat, cold, sea agitation and more, by district.
+ph-weather.c9.viz.items.0	Red: extreme risk
+ph-weather.c9.viz.items.1	Orange: moderate to high risk
+ph-weather.c9.viz.items.2	Yellow: be aware
+ph-weather.c9.viz.items.3	Green: no warning
+ph-greats.title	Great physicists
+ph-greats.summary	The people who shaped how we understand the world.
+ph-greats.q0.q	Who discovered electromagnetic induction?
+ph-greats.q0.o0	Newton
+ph-greats.q0.o1	Faraday
+ph-greats.q0.o2	Einstein
+ph-greats.q0.x	Faraday, in 1831.
+ph-greats.q1.q	Who united electricity, magnetism and light in four equations?
+ph-greats.q1.o0	Galileo
+ph-greats.q1.o1	Maxwell
+ph-greats.q1.o2	Bohr
+ph-greats.q1.x	Maxwell's equations, 1860s.
+ph-greats.q2.q	Who discovered Jupiter's four largest moons?
+ph-greats.q2.o0	Newton
+ph-greats.q2.o1	Galileo
+ph-greats.q2.o2	Curie
+ph-greats.q2.x	In 1610, with his telescope.
+ph-greats.c0.title	Archimedes (c. 287–212 BCE)
+ph-greats.c0.text	The Greek mathematician from Syracuse discovered the principle of buoyancy and the law of the lever ("Give me a place to stand and I will move the Earth"), and estimated π.
+ph-greats.c0.viz.items.0.a	buoyancy
+ph-greats.c0.viz.items.0.b	Archimedes' principle
+ph-greats.c0.viz.items.1.a	levers
+ph-greats.c0.viz.items.1.b	law of the lever
+ph-greats.c0.viz.items.2.a	π
+ph-greats.c0.viz.items.2.b	estimated between 3 10/71 and 3 1/7
+ph-greats.c1.title	Galileo Galilei (1564–1642)
+ph-greats.c1.text	Galileo used experiments and telescopes to study motion and the sky. He discovered Jupiter's four big moons and the phases of Venus, supporting the idea that Earth orbits the Sun.
+ph-greats.c1.viz.events.0.l	builds his telescope
+ph-greats.c1.viz.events.1.l	Jupiter's moons
+ph-greats.c1.viz.events.2.l	Dialogue
+ph-greats.c1.viz.events.3.l	Two New Sciences
+ph-greats.c2.title	Isaac Newton (1643–1727)
+ph-greats.c2.text	Newton gave us the laws of motion, universal gravitation, calculus (alongside Leibniz) and much of optics, showing that white light contains all colours.
+ph-greats.c2.viz.items.0	Laws of motion
+ph-greats.c2.viz.items.1	Universal gravitation
+ph-greats.c2.viz.items.2	Calculus
+ph-greats.c2.viz.items.3	Optics and the prism
+ph-greats.c2.viz.items.4	Reflecting telescope
+ph-greats.c3.title	Michael Faraday (1791–1867)
+ph-greats.c3.text	Faraday, largely self-taught, discovered electromagnetic induction, invented the first electric motor and dynamo, and introduced the idea of fields.
+ph-greats.c3.viz.items.0	Electromagnetic induction
+ph-greats.c3.viz.items.1	Electric motor
+ph-greats.c3.viz.items.2	Dynamo
+ph-greats.c3.viz.items.3	Field lines
+ph-greats.c3.viz.items.4	Faraday cage
+ph-greats.c4.title	James Clerk Maxwell (1831–1879)
+ph-greats.c4.text	Maxwell united electricity, magnetism and light in four equations and predicted electromagnetic waves, opening the way to radio, TV and Wi-Fi.
+ph-greats.c4.viz.steps.0	Electricity + magnetism
+ph-greats.c4.viz.steps.1	Maxwell's equations
+ph-greats.c4.viz.steps.2	Light is an electromagnetic wave
+ph-greats.c4.viz.steps.3	Radio, TV, Wi-Fi
+ph-greats.c5.title	Marie Curie (1867–1934)
+ph-greats.c5.text	Pioneer of radioactivity, discoverer of polonium and radium, the first woman to win a Nobel Prize and the only person to win in two different sciences.
+ph-greats.c5.viz.items.0.l	Nobel Prizes in different sciences
+ph-greats.c5.viz.items.1.l	Physics
+ph-greats.c5.viz.items.2.l	Chemistry
+ph-greats.c6.title	Albert Einstein (1879–1955)
+ph-greats.c6.text	In 1905 alone he explained the photoelectric effect, Brownian motion and special relativity, including E = mc². In 1915 he published general relativity.
+ph-greats.c6.viz.events.0.l	"miracle year"
+ph-greats.c6.viz.events.1.l	general relativity
+ph-greats.c6.viz.events.2.l	eclipse confirms it
+ph-greats.c6.viz.events.3.l	Nobel Prize
+ph-greats.c7.title	Niels Bohr and Werner Heisenberg
+ph-greats.c7.text	Bohr's 1913 model put electrons in fixed energy levels; Heisenberg's uncertainty principle (1927) and matrix mechanics helped build quantum theory. Their debates with Einstein shaped modern physics.
+ph-greats.c7.viz.items.0.a	Bohr
+ph-greats.c7.viz.items.0.b	atomic model, complementarity
+ph-greats.c7.viz.items.1.a	Heisenberg
+ph-greats.c7.viz.items.1.b	uncertainty principle
+ph-greats.c7.viz.items.2.a	Schrödinger
+ph-greats.c7.viz.items.2.b	wave equation
+ph-greats.c7.viz.items.3.a	Dirac
+ph-greats.c7.viz.items.3.b	antimatter prediction
+ph-greats.c8.title	Richard Feynman (1918–1988)
+ph-greats.c8.text	Feynman helped develop quantum electrodynamics, famous for its precision, and was a celebrated teacher. He showed the cause of the Challenger shuttle disaster with a glass of ice water and an O-ring.
+ph-greats.c8.viz.items.0	Quantum electrodynamics
+ph-greats.c8.viz.items.1	Feynman diagrams
+ph-greats.c8.viz.items.2	Great teacher
+ph-greats.c8.viz.items.3	Challenger investigation
+ph-greats.c9.title	Science is a team effort
+ph-greats.c9.text	Famous names stand on the work of many others: experimenters, instrument makers, mathematicians and students. Today's discoveries, like the Higgs boson in 2012, involve thousands of scientists.
+ph-greats.c9.viz.items.0.l	Higgs boson discovered at CERN
+ph-greats.c9.viz.items.1.v	1000s
+ph-greats.c9.viz.items.1.l	scientists involved

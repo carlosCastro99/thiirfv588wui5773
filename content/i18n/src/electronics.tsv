@@ -1,0 +1,1772 @@
+P.title	Electronics
+P.blurb	Components and signals for tinkering with microcontrollers.
+tr-parts.title	Components you meet first
+tr-parts.summary	Resistors, LEDs, capacitors and the voltage divider: the parts in every maker kit.
+tr-parts.q0.q	A white LED (Vf 3 V) runs from 12 V at 10 mA. Which resistor?
+tr-parts.q0.o0	90 Ω
+tr-parts.q0.o1	300 Ω
+tr-parts.q0.o2	900 Ω
+tr-parts.q0.o3	1.2 kΩ
+tr-parts.q0.x	R = (12 − 3) ÷ 0.010 = 900 Ω. You'd pick the next standard value up, 1 kΩ.
+tr-parts.q1.q	Bands brown, black, orange. What's the value?
+tr-parts.q1.o0	10 Ω
+tr-parts.q1.o1	1 kΩ
+tr-parts.q1.o2	10 kΩ
+tr-parts.q1.o3	103 Ω
+tr-parts.q1.x	Brown 1, black 0, orange ×1000 → 10 × 1000 = 10 kΩ.
+tr-parts.q2.q	In a divider with R1 = R2 and Vin = 10 V, Vout is…
+tr-parts.q2.o0	10 V
+tr-parts.q2.o1	5 V
+tr-parts.q2.o2	2.5 V
+tr-parts.q2.x	Equal resistors split the voltage in half.
+tr-parts.q3.q	Two 1 kΩ resistors in parallel give…
+tr-parts.q3.o0	2 kΩ
+tr-parts.q3.o1	500 Ω
+tr-parts.q3.o2	1 kΩ
+tr-parts.q3.x	Equal resistors in parallel halve the value.
+tr-parts.q4.q	What happens if you connect an electrolytic capacitor backwards?
+tr-parts.q4.o0	Nothing
+tr-parts.q4.o1	It can overheat and burst
+tr-parts.q4.o2	It stores more energy
+tr-parts.q4.x	They're polarised.
+tr-parts.c0.title	Reading a resistor
+tr-parts.c0.text	Resistors are labelled with coloured bands. The first two are digits, the third is a multiplier, and a gold or silver band at the end gives the tolerance.\n\nBlack 0, brown 1, red 2, orange 3, yellow 4, green 5, blue 6, violet 7, grey 8, white 9.
+tr-parts.c0.sketch.4	= 1 000 Ω = 1 kΩ
+tr-parts.c1.title	Every LED needs a resistor
+tr-parts.c1.text	An LED drops a fixed forward voltage (Vf, about 2 V for red, 3 V for white or blue) and will draw as much current as it can get, then burn out. A series resistor takes up the leftover voltage and sets the current.
+tr-parts.c1.formula	R = (Vs − Vf) ÷ I
+tr-parts.c1.example.0	5 V supply, red LED (2 V), 20 mA
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0.020
+tr-parts.c1.example.2	= 150 Ω
+tr-parts.c1.sketch.0	150 Ω
+tr-parts.c1.sketch.1	5 V
+tr-parts.c1.sketch.2	LED 2 V
+tr-parts.c1.sketch.3	20 mA
+tr-parts.c2.title	Capacitors store charge
+tr-parts.c2.text	A capacitor is two plates separated by an insulator. Connect it to a voltage and charge piles up on the plates until it matches the supply. It charges quickly at first, then slows down.\n\nIn practice they smooth out ripples on a power rail and supply short bursts of current, which is why you see one next to almost every chip.
+tr-parts.c2.sketch.2	1 RC
+tr-parts.c2.sketch.4	time
+tr-parts.c2.sketch.5	voltage
+tr-parts.c3.title	Try it: the voltage divider
+tr-parts.c3.text	Two resistors in series split a voltage in proportion to their values. It's the standard way to bring a 5 V or 12 V signal down to the 3.3 V an ESP32 pin can take.
+tr-parts.c3.formula	Vout = Vin × R2 ÷ (R1 + R2)
+tr-parts.c4.title	Standard resistor values
+tr-parts.c4.text	Resistors come in standard series rather than every value. The E12 series has 12 values per decade: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82. Pick the nearest standard value to your calculation.
+tr-parts.c4.viz.items.3	× 1, 10, 100, 1k, 10k…
+tr-parts.c5.title	Resistor power rating
+tr-parts.c5.text	Resistors turn power into heat and have a maximum rating: common through-hole ones are ¼ W. Check P = I² × R and pick a resistor rated comfortably above it.
+tr-parts.c5.example.0	20 mA through 150 Ω
+tr-parts.c5.example.1	0.02² × 150
+tr-parts.c5.example.2	= 0.06 W: a ¼ W part is fine
+tr-parts.c5.viz.f	P = I² × R
+tr-parts.c5.viz.items.0.s	I
+tr-parts.c5.viz.items.0.m	current through it
+tr-parts.c5.viz.items.1.s	R
+tr-parts.c5.viz.items.1.m	resistance
+tr-parts.c6.title	Series and parallel resistors
+tr-parts.c6.text	In series, resistances add up. In parallel, the total is less than the smallest one; two equal resistors in parallel give half the value.
+tr-parts.c6.viz.l.t	Series
+tr-parts.c6.viz.l.items.0	R = R1 + R2
+tr-parts.c6.viz.l.items.1	1k + 1k = 2k
+tr-parts.c6.viz.r.t	Parallel
+tr-parts.c6.viz.r.items.0	1/R = 1/R1 + 1/R2
+tr-parts.c6.viz.r.items.1	1k ∥ 1k = 500 Ω
+tr-parts.c7.title	Capacitor types
+tr-parts.c7.text	Ceramic capacitors are small and cheap, used for decoupling (typically 100 nF). Electrolytic capacitors store more (µF to mF) but are polarised: connect them backwards and they can burst.
+tr-parts.c7.viz.l.t	Ceramic
+tr-parts.c7.viz.l.items.0	small values
+tr-parts.c7.viz.l.items.1	not polarised
+tr-parts.c7.viz.l.items.2	decoupling 100 nF
+tr-parts.c7.viz.r.t	Electrolytic
+tr-parts.c7.viz.r.items.0	large values
+tr-parts.c7.viz.r.items.1	polarised (+/−)
+tr-parts.c7.viz.r.items.2	power supply smoothing
+tr-parts.c8.title	RC time constant
+tr-parts.c8.text	A resistor charging a capacitor takes a predictable time. After one time constant (R × C) the capacitor reaches about 63% of the supply; after five, it's essentially full.
+tr-parts.c8.example.0	10 kΩ and 100 µF
+tr-parts.c8.example.1	10,000 × 0.0001
+tr-parts.c8.example.2	τ = 1 second
+tr-parts.c8.viz.f	τ = R × C
+tr-parts.c8.viz.items.0.s	R
+tr-parts.c8.viz.items.0.m	ohms
+tr-parts.c8.viz.items.1.s	C
+tr-parts.c8.viz.items.1.m	farads
+tr-parts.c8.viz.items.2.s	τ
+tr-parts.c8.viz.items.2.m	seconds
+tr-parts.c9.title	Inductors
+tr-parts.c9.text	An inductor is a coil that resists changes in current, storing energy in its magnetic field. They're key in switching power supplies and filters.
+tr-parts.c9.viz.items.0.a	resistor
+tr-parts.c9.viz.items.0.b	resists current
+tr-parts.c9.viz.items.1.a	capacitor
+tr-parts.c9.viz.items.1.b	resists voltage change
+tr-parts.c9.viz.items.2.a	inductor
+tr-parts.c9.viz.items.2.b	resists current change
+tr-mcu.title	Signals & microcontrollers
+tr-mcu.summary	How a chip like the ESP32 reads and controls the real world.
+tr-mcu.q0.q	A 12 V motor gets PWM at 50% duty. It behaves roughly as if it had…
+tr-mcu.q0.o0	12 V
+tr-mcu.q0.o1	6 V
+tr-mcu.q0.o2	0.5 V
+tr-mcu.q0.o3	24 V
+tr-mcu.q0.x	The average of 12 V on half the time is 6 V.
+tr-mcu.q1.q	What does a 'floating' input do?
+tr-mcu.q1.o0	Always reads 1
+tr-mcu.q1.o1	Always reads 0
+tr-mcu.q1.o2	Reads randomly because it picks up noise
+tr-mcu.q1.x	With nothing defining its level, the pin picks up stray charge. A pull-up or pull-down fixes that.
+tr-mcu.q2.q	How many steps does a 10-bit ADC have?
+tr-mcu.q2.o0	10
+tr-mcu.q2.o1	100
+tr-mcu.q2.o2	1024
+tr-mcu.q2.o3	4096
+tr-mcu.q2.x	2¹⁰ = 1024.
+tr-mcu.q3.q	Why debounce a button?
+tr-mcu.q3.o0	To make it louder
+tr-mcu.q3.o1	Because the contacts bounce and create several false presses
+tr-mcu.q3.o2	To save power
+tr-mcu.q3.x	Bouncing contacts cause multiple pulses.
+tr-mcu.q4.q	What's the risk of putting 5 V into an ESP32 input pin?
+tr-mcu.q4.o0	None
+tr-mcu.q4.o1	It can damage the 3.3 V pin
+tr-mcu.q4.o2	It runs faster
+tr-mcu.q4.x	ESP32 pins are 3.3 V only.
+tr-mcu.c0.title	Digital vs. analog
+tr-mcu.c0.text	A digital signal has two states: low (0) or high (1, often 3.3 V). An analog signal can be any value in a range, like a temperature sensor's output.\n\nMicrocontrollers are digital at heart. To deal with analog they use an ADC to read and PWM to fake an output.
+tr-mcu.c0.sketch.0	digital: 0 or 1
+tr-mcu.c0.sketch.1	analog: any value
+tr-mcu.c1.title	PWM: dimming by blinking
+tr-mcu.c1.text	Pulse-width modulation switches a pin fully on and off very fast. The fraction of time it's on is the duty cycle. An LED or motor responds to the average: 25% duty on a 12 V supply behaves roughly like 3 V.\n\nIt's efficient because the switch is always fully on or fully off, so little energy is wasted as heat.
+tr-mcu.c1.sketch.0	25% duty → dim
+tr-mcu.c1.sketch.1	75% duty → bright
+tr-mcu.c1.sketch.2	dashed = average
+tr-mcu.c2.title	Pull-up resistors
+tr-mcu.c2.text	An input pin connected to nothing 'floats' and picks up noise, randomly reading 0 or 1. A pull-up resistor ties it gently to 3.3 V so it reads 1 by default. Press the button and the pin connects to ground, reading 0.\n\nMost microcontrollers have internal pull-ups you can switch on in code.
+tr-mcu.c2.sketch.0	3.3 V
+tr-mcu.c2.sketch.1	10 kΩ
+tr-mcu.c2.sketch.2	GPIO
+tr-mcu.c2.sketch.3	button
+tr-mcu.c2.sketch.4	idle = 1
+tr-mcu.c2.sketch.5	pressed = 0
+tr-mcu.c3.title	ADC resolution
+tr-mcu.c3.text	An analog-to-digital converter turns a voltage into a number. An n-bit ADC has 2ⁿ steps. The ESP32's 12-bit ADC gives 4096 steps over about 3.3 V.\n\nIts readings are less accurate near 0 V and near the top of the range, so keep signals in the middle where you can.
+tr-mcu.c3.formula	step = Vref ÷ 2ⁿ
+tr-mcu.c3.example.0	12-bit ADC, 3.3 V reference
+tr-mcu.c3.example.1	3.3 ÷ 4096
+tr-mcu.c3.example.2	≈ 0.8 mV per step
+tr-mcu.c3.sketch.0	input voltage
+tr-mcu.c3.sketch.1	reading
+tr-mcu.c3.sketch.2	each step = 1 code
+tr-mcu.c4.title	GPIO pins
+tr-mcu.c4.text	General-purpose input/output pins can be set as inputs (read a button) or outputs (drive an LED). On an ESP32 they work at 3.3 V and can safely supply only a few milliamps each.
+tr-mcu.c4.viz.l.t	Input
+tr-mcu.c4.viz.l.items.0	reads 0 or 1
+tr-mcu.c4.viz.l.items.1	buttons, sensors
+tr-mcu.c4.viz.r.t	Output
+tr-mcu.c4.viz.r.items.0	sets 0 or 3.3 V
+tr-mcu.c4.viz.r.items.1	LEDs, relays via a driver
+tr-mcu.c5.title	3.3 V vs 5 V logic
+tr-mcu.c5.text	Many modern chips (ESP32, Raspberry Pi) use 3.3 V logic; Arduino Uno uses 5 V. Feeding 5 V into a 3.3 V pin can damage it. Use a voltage divider or level shifter between them.
+tr-mcu.c5.viz.items.0.w	5 V sensor straight into ESP32
+tr-mcu.c5.viz.items.0.r	divider or level shifter
+tr-mcu.c5.viz.items.1.w	3.3 V pin drives a 5 V relay coil
+tr-mcu.c5.viz.items.1.r	use a transistor driver
+tr-mcu.c6.title	Interrupts
+tr-mcu.c6.text	Instead of checking a button thousands of times a second (polling), an interrupt makes the chip jump to your code the moment the pin changes. It saves power and never misses a quick event.
+tr-mcu.c6.viz.l.t	Polling
+tr-mcu.c6.viz.l.items.0	keep checking
+tr-mcu.c6.viz.l.items.1	wastes time
+tr-mcu.c6.viz.l.items.2	may miss short events
+tr-mcu.c6.viz.r.t	Interrupt
+tr-mcu.c6.viz.r.items.0	hardware alerts you
+tr-mcu.c6.viz.r.items.1	instant
+tr-mcu.c6.viz.r.items.2	efficient
+tr-mcu.c7.title	Debouncing
+tr-mcu.c7.text	Mechanical buttons bounce: one press produces several rapid on-off pulses in a few milliseconds. Software ignores changes for ~20–50 ms after the first one, or a small capacitor smooths them.
+tr-mcu.c7.viz.steps.0	Press
+tr-mcu.c7.viz.steps.1	Contacts bounce for a few ms
+tr-mcu.c7.viz.steps.2	Ignore changes for ~30 ms
+tr-mcu.c7.viz.steps.3	One clean press
+tr-mcu.c8.title	Timers and millis()
+tr-mcu.c8.text	Rather than freezing the program with delay(), good code checks elapsed time and does other work meanwhile. This keeps sensors, Wi-Fi and displays responsive.
+tr-mcu.c8.viz.items.0.w	delay(1000) blocks everything
+tr-mcu.c8.viz.items.0.r	check elapsed time and keep looping
+tr-mcu.c9.title	Microcontroller vs computer
+tr-mcu.c9.text	A microcontroller (ESP32, Arduino) runs one program directly on the hardware, boots instantly and uses milliwatts. A single-board computer (Raspberry Pi) runs Linux, with more power and complexity.
+tr-mcu.c9.viz.l.t	Microcontroller
+tr-mcu.c9.viz.l.items.0	no OS
+tr-mcu.c9.viz.l.items.1	instant boot
+tr-mcu.c9.viz.l.items.2	milliwatts
+tr-mcu.c9.viz.l.items.3	sensors and control
+tr-mcu.c9.viz.r.t	Single-board computer
+tr-mcu.c9.viz.r.items.0	Linux
+tr-mcu.c9.viz.r.items.1	seconds to boot
+tr-mcu.c9.viz.r.items.2	watts
+tr-mcu.c9.viz.r.items.3	cameras, servers
+tr-diodes.title	Diodes
+tr-diodes.summary	One-way valves for current, and their many uses.
+tr-diodes.q0.q	What does the band on a diode mark?
+tr-diodes.q0.o0	The anode
+tr-diodes.q0.o1	The cathode
+tr-diodes.q0.o2	The voltage
+tr-diodes.q0.x	Current flows towards the band.
+tr-diodes.q1.q	Why fit a diode across a relay coil?
+tr-diodes.q1.o0	To make it brighter
+tr-diodes.q1.o1	To absorb the voltage spike when it switches off
+tr-diodes.q1.o2	To double the voltage
+tr-diodes.q1.x	The flyback diode protects the driver.
+tr-diodes.q2.q	Roughly what does a silicon diode drop when conducting?
+tr-diodes.q2.o0	3 V
+tr-diodes.q2.o1	0.7 V
+tr-diodes.q2.o2	0 V
+tr-diodes.q2.x	About 0.6–0.7 V.
+tr-diodes.c0.title	A one-way valve
+tr-diodes.c0.text	A diode lets current flow in one direction (anode to cathode) and blocks it the other way. The band on the body marks the cathode.
+tr-diodes.c0.viz.l.t	Forward
+tr-diodes.c0.viz.l.items.0	current flows
+tr-diodes.c0.viz.l.items.1	about 0.7 V drop (silicon)
+tr-diodes.c0.viz.r.t	Reverse
+tr-diodes.c0.viz.r.items.0	blocked
+tr-diodes.c0.viz.r.items.1	tiny leakage only
+tr-diodes.c1.title	Forward voltage
+tr-diodes.c1.text	A silicon diode drops about 0.6–0.7 V when conducting; a Schottky diode only 0.2–0.4 V, which wastes less power. LEDs drop more: 2 V for red, about 3 V for blue and white.
+tr-diodes.c1.viz.unit	volts (approx.)
+tr-diodes.c1.viz.items.0.l	Schottky
+tr-diodes.c1.viz.items.1.l	Silicon
+tr-diodes.c1.viz.items.2.l	Red LED
+tr-diodes.c1.viz.items.3.l	Blue/white LED
+tr-diodes.c2.title	Reverse-polarity protection
+tr-diodes.c2.text	A diode in series with a power input stops damage if someone connects the battery backwards. It costs a little voltage; a MOSFET does the same with almost no loss.
+tr-diodes.c2.viz.steps.0	Battery connected backwards
+tr-diodes.c2.viz.steps.1	Diode blocks
+tr-diodes.c2.viz.steps.2	Circuit protected
+tr-diodes.c3.title	Rectifiers
+tr-diodes.c3.text	Four diodes in a bridge turn AC into pulsing DC: both halves of the wave come out positive. Add a big capacitor and it smooths into near-steady DC.
+tr-diodes.c3.viz.steps.0	AC in
+tr-diodes.c3.viz.steps.1	Bridge of 4 diodes
+tr-diodes.c3.viz.steps.2	Pulsing DC
+tr-diodes.c3.viz.steps.3	Capacitor smooths it
+tr-diodes.c4.title	Flyback diodes
+tr-diodes.c4.text	When you switch off a relay or motor coil, its magnetic field collapses and creates a voltage spike that can kill the transistor driving it. A diode across the coil safely absorbs the spike.
+tr-diodes.c4.viz.items.0.w	relay coil with no diode
+tr-diodes.c4.viz.items.0.r	add a diode across the coil, band to +
+tr-diodes.c4.viz.items.1.w	transistor dies after a few weeks
+tr-diodes.c4.viz.items.1.r	flyback diode fitted
+tr-diodes.c5.title	Zener diodes
+tr-diodes.c5.text	A Zener diode conducts backwards at a precise voltage, such as 3.3 V or 5.1 V. With a resistor it makes a simple voltage reference or protects inputs from overvoltage.
+tr-diodes.c5.viz.steps.0	Higher voltage
+tr-diodes.c5.viz.steps.1	Series resistor
+tr-diodes.c5.viz.steps.2	Zener holds 3.3 V
+tr-diodes.c5.viz.steps.3	Protected input
+tr-diodes.c6.title	LEDs are diodes
+tr-diodes.c6.text	A light-emitting diode gives off light when current flows forward. The colour depends on the semiconductor material. Long leg is the anode (+), the flat side marks the cathode (−).
+tr-diodes.c6.viz.items.0.a	long leg
+tr-diodes.c6.viz.items.0.b	anode (+)
+tr-diodes.c6.viz.items.1.a	short leg / flat edge
+tr-diodes.c6.viz.items.1.b	cathode (−)
+tr-diodes.c6.viz.items.2.a	colour
+tr-diodes.c6.viz.items.2.b	set by the material
+tr-diodes.c7.title	Photodiodes and solar cells
+tr-diodes.c7.text	Run in reverse, a diode can detect light: photons free electrons and a tiny current flows. Light sensors, remote-control receivers and solar cells are all photodiodes at heart.
+tr-diodes.c7.viz.items.0	TV remote receivers
+tr-diodes.c7.viz.items.1	Light sensors
+tr-diodes.c7.viz.items.2	Optical fibre receivers
+tr-diodes.c7.viz.items.3	Solar cells
+tr-diodes.c8.title	TVS diodes
+tr-diodes.c8.text	Transient voltage suppressor diodes clamp very fast spikes, like static discharge on a USB port or a surge on a long sensor cable, protecting the chip behind them.
+tr-diodes.c8.viz.steps.0	Spike arrives
+tr-diodes.c8.viz.steps.1	TVS clamps it in nanoseconds
+tr-diodes.c8.viz.steps.2	Excess to ground
+tr-diodes.c8.viz.steps.3	Chip survives
+tr-diodes.c9.title	Diodes for OR-ing power
+tr-diodes.c9.text	Two diodes let a circuit run from whichever supply is higher, such as USB or a battery, without the two feeding into each other.
+tr-diodes.c9.viz.steps.0	USB 5 V via diode
+tr-diodes.c9.viz.steps.1	Battery 3.7 V via diode
+tr-diodes.c9.viz.steps.2	Higher one powers the circuit
+tr-transistors.title	Transistors as switches
+tr-transistors.summary	How a tiny signal controls a big load.
+tr-transistors.q0.q	Why use a logic-level MOSFET with an ESP32?
+tr-transistors.q0.o0	It's cheaper
+tr-transistors.q0.o1	It switches fully on with only 3.3 V on the gate
+tr-transistors.q0.o2	It's waterproof
+tr-transistors.q0.x	Standard MOSFETs may need about 10 V.
+tr-transistors.q1.q	What does a gate pull-down resistor do?
+tr-transistors.q1.o0	Speeds up the CPU
+tr-transistors.q1.o1	Keeps the MOSFET off when the pin is floating
+tr-transistors.q1.o2	Limits the load current
+tr-transistors.q1.x	It holds the gate at 0 V during boot.
+tr-transistors.q2.q	A MOSFET with 50 mΩ carries 4 A. Its heat is…
+tr-transistors.q2.o0	0.2 W
+tr-transistors.q2.o1	0.8 W
+tr-transistors.q2.o2	4 W
+tr-transistors.q2.x	4² × 0.05 = 0.8 W.
+tr-transistors.c0.title	Why you need one
+tr-transistors.c0.text	A microcontroller pin can only supply a few milliamps. A motor, LED strip or relay needs far more. A transistor lets the small pin current control a much larger load current.
+tr-transistors.c0.viz.steps.0	Pin gives 1 mA
+tr-transistors.c0.viz.steps.1	Transistor switches on
+tr-transistors.c0.viz.steps.2	Load gets 500 mA
+tr-transistors.c1.title	BJT: current controls current
+tr-transistors.c1.text	In a bipolar transistor (NPN), a small current into the base lets a much larger current flow from collector to emitter. The ratio, the gain (hFE), is often 100 or more.
+tr-transistors.c1.viz.f	Ic ≈ hFE × Ib
+tr-transistors.c1.viz.items.0.s	Ib
+tr-transistors.c1.viz.items.0.m	base current
+tr-transistors.c1.viz.items.1.s	hFE
+tr-transistors.c1.viz.items.1.m	gain
+tr-transistors.c1.viz.items.2.s	Ic
+tr-transistors.c1.viz.items.2.m	collector current
+tr-transistors.c2.title	MOSFET: voltage controls current
+tr-transistors.c2.text	A MOSFET is controlled by the voltage on its gate, with almost no gate current. When fully on, its resistance can be just milliohms, so it barely heats up. Most power switching uses MOSFETs.
+tr-transistors.c2.viz.l.t	BJT
+tr-transistors.c2.viz.l.items.0	base current controls it
+tr-transistors.c2.viz.l.items.1	~0.2 V drop when on
+tr-transistors.c2.viz.l.items.2	small loads
+tr-transistors.c2.viz.r.t	MOSFET
+tr-transistors.c2.viz.r.items.0	gate voltage controls it
+tr-transistors.c2.viz.r.items.1	milliohms when on
+tr-transistors.c2.viz.r.items.2	big loads
+tr-transistors.c3.title	Low-side switching
+tr-transistors.c3.text	The simplest way: put an N-channel MOSFET between the load and ground. The pin drives the gate; when it's high, the load's ground path closes.
+tr-transistors.c3.viz.steps.0	+12 V
+tr-transistors.c3.viz.steps.1	Load
+tr-transistors.c3.viz.steps.2	N-MOSFET
+tr-transistors.c3.viz.steps.3	Ground (gate driven by the pin)
+tr-transistors.c4.title	Logic-level MOSFETs
+tr-transistors.c4.text	Many MOSFETs need 10 V on the gate to switch fully on. With a 3.3 V microcontroller, choose a logic-level MOSFET specified to be fully on at 2.5–3.3 V, such as the AO3400 or IRLZ44N.
+tr-transistors.c4.viz.items.0.w	IRF540 driven from 3.3 V
+tr-transistors.c4.viz.items.0.r	logic-level MOSFET
+tr-transistors.c4.viz.items.1.w	MOSFET gets hot
+tr-transistors.c4.viz.items.1.r	it's only half on, check gate voltage
+tr-transistors.c5.title	Gate resistor and pull-down
+tr-transistors.c5.text	Add a small resistor (around 100 Ω) between pin and gate to limit current spikes, and a 10 kΩ pull-down from gate to ground so the MOSFET stays off while the microcontroller boots.
+tr-transistors.c5.viz.items.0	~100 Ω gate resistor
+tr-transistors.c5.viz.items.1	10 kΩ gate pull-down
+tr-transistors.c5.viz.items.2	Flyback diode for coils
+tr-transistors.c5.viz.items.3	Logic-level part
+tr-transistors.c6.title	Transistors as amplifiers
+tr-transistors.c6.text	Between fully off and fully on, a transistor can amplify: a small varying signal at the input gives a larger copy at the output. That's how radios and audio amplifiers work.
+tr-transistors.c6.viz.l.t	Switch
+tr-transistors.c6.viz.l.items.0	fully off or on
+tr-transistors.c6.viz.l.items.1	little heat
+tr-transistors.c6.viz.r.t	Amplifier
+tr-transistors.c6.viz.r.items.0	in between
+tr-transistors.c6.viz.r.items.1	copies a signal bigger
+tr-transistors.c6.viz.r.items.2	makes heat
+tr-transistors.c7.title	Heat in switches
+tr-transistors.c7.text	Power lost in a switching MOSFET is I² × R(on). A MOSFET with 20 mΩ carrying 10 A loses 2 W, which needs a small heatsink. Switching fast also matters, because power is lost during each transition.
+tr-transistors.c7.example.0	10 A through 20 mΩ
+tr-transistors.c7.example.1	10² × 0.02
+tr-transistors.c7.example.2	= 2 W of heat
+tr-transistors.c7.viz.f	P = I² × R(on)
+tr-transistors.c7.viz.items.0.s	I
+tr-transistors.c7.viz.items.0.m	load current
+tr-transistors.c7.viz.items.1.s	R(on)
+tr-transistors.c7.viz.items.1.m	on-resistance
+tr-transistors.c8.title	Optocouplers and solid-state relays
+tr-transistors.c8.text	An optocoupler passes a signal through light inside a sealed chip, isolating two circuits electrically. Solid-state relays use the same idea to switch mains loads silently, without moving parts.
+tr-transistors.c8.viz.steps.0	Pin lights an internal LED
+tr-transistors.c8.viz.steps.1	Light crosses a gap
+tr-transistors.c8.viz.steps.2	Detector switches the other side
+tr-transistors.c8.viz.steps.3	Full isolation
+tr-transistors.c9.title	Billions on a chip
+tr-transistors.c9.text	Modern processors contain tens of billions of microscopic MOSFETs acting as switches. The same device that drives your LED strip, shrunk to a few nanometres, does all the computing.
+tr-transistors.c9.viz.items.0.l	first transistor
+tr-transistors.c9.viz.items.1.v	50 billion+
+tr-transistors.c9.viz.items.1.l	on a modern chip
+tr-opamps.title	Op-amps
+tr-opamps.summary	The Swiss army knife of analog electronics.
+tr-opamps.q0.q	A non-inverting amplifier with Rf = 4 kΩ and Rg = 1 kΩ has a gain of…
+tr-opamps.q0.o0	4
+tr-opamps.q0.o1	5
+tr-opamps.q0.o2	0.25
+tr-opamps.q0.x	1 + 4/1 = 5.
+tr-opamps.q1.q	What does a voltage follower do?
+tr-opamps.q1.o0	Doubles the voltage
+tr-opamps.q1.o1	Buffers a weak signal with a gain of 1
+tr-opamps.q1.o2	Converts AC to DC
+tr-opamps.q1.x	It isolates the source from the load.
+tr-opamps.q2.q	Without feedback, an op-amp acts as…
+tr-opamps.q2.o0	A filter
+tr-opamps.q2.o1	A comparator
+tr-opamps.q2.o2	A battery
+tr-opamps.q2.x	It just shows which input is higher.
+tr-opamps.c0.title	What an op-amp is
+tr-opamps.c0.text	An operational amplifier is a chip with two inputs (+ and −) and one output. It amplifies the difference between the inputs by an enormous factor, often 100,000 times or more.
+tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
+tr-opamps.c0.viz.items.0.s	A
+tr-opamps.c0.viz.items.0.m	open-loop gain, huge
+tr-opamps.c0.viz.items.1.s	V+
+tr-opamps.c0.viz.items.1.m	non-inverting input
+tr-opamps.c0.viz.items.2.s	V−
+tr-opamps.c0.viz.items.2.m	inverting input
+tr-opamps.c1.title	Feedback tames it
+tr-opamps.c1.text	On its own, that huge gain is unusable. Feeding part of the output back to the minus input sets a precise, stable gain chosen by two resistors.
+tr-opamps.c1.viz.steps.0	Huge raw gain
+tr-opamps.c1.viz.steps.1	Feed output back to − input
+tr-opamps.c1.viz.steps.2	Gain set by resistors
+tr-opamps.c1.viz.steps.3	Stable, precise amplifier
+tr-opamps.c2.title	Non-inverting amplifier
+tr-opamps.c2.text	The classic way to boost a small sensor signal. The output follows the input, multiplied by a gain set by two resistors.
+tr-opamps.c2.example.0	Rf = 9 kΩ, Rg = 1 kΩ
+tr-opamps.c2.example.1	1 + 9
+tr-opamps.c2.example.2	gain = 10
+tr-opamps.c2.viz.f	Gain = 1 + Rf ÷ Rg
+tr-opamps.c2.viz.items.0.s	Rf
+tr-opamps.c2.viz.items.0.m	feedback resistor
+tr-opamps.c2.viz.items.1.s	Rg
+tr-opamps.c2.viz.items.1.m	resistor to ground
+tr-opamps.c3.title	The voltage follower
+tr-opamps.c3.text	Connect the output straight to the minus input and the gain is 1. Useless? No: it isolates a weak source from a heavy load, a "buffer".
+tr-opamps.c3.viz.steps.0	Weak sensor signal
+tr-opamps.c3.viz.steps.1	Op-amp follower (gain 1)
+tr-opamps.c3.viz.steps.2	Strong copy of the signal
+tr-opamps.c3.viz.steps.3	ADC or long cable
+tr-opamps.c4.title	Comparators
+tr-opamps.c4.text	Without feedback, an op-amp (or a dedicated comparator chip) just tells you which input is higher: output high or low. Great for thermostats and light-activated switches.
+tr-opamps.c4.viz.steps.0	Sensor voltage
+tr-opamps.c4.viz.steps.1	Compare with threshold
+tr-opamps.c4.viz.steps.2	Above: output high
+tr-opamps.c4.viz.steps.3	Below: output low
+tr-opamps.c5.title	Two golden rules
+tr-opamps.c5.text	With negative feedback, analyse op-amp circuits with two rules: no current flows into the inputs, and the output does whatever it takes to make both inputs equal.
+tr-opamps.c5.viz.items.0	No current into the inputs
+tr-opamps.c5.viz.items.1	Output makes V+ equal V−
+tr-opamps.c5.viz.items.2	Only with negative feedback
+tr-opamps.c6.title	Rail-to-rail
+tr-opamps.c6.text	Older op-amps can't swing their output close to the supply rails. On 3.3 V or 5 V circuits, choose a rail-to-rail op-amp so the signal can use the full range.
+tr-opamps.c6.viz.l.t	Classic op-amp
+tr-opamps.c6.viz.l.items.0	needs ±12 V supplies
+tr-opamps.c6.viz.l.items.1	output stops short of the rails
+tr-opamps.c6.viz.r.t	Rail-to-rail
+tr-opamps.c6.viz.r.items.0	works from 3.3 V
+tr-opamps.c6.viz.r.items.1	output reaches near 0 V and 3.3 V
+tr-opamps.c7.title	Filters
+tr-opamps.c7.text	With capacitors, op-amps make active filters: low-pass to remove noise from a sensor, high-pass to block DC, band-pass for a specific frequency.
+tr-opamps.c7.viz.items.0.a	low-pass
+tr-opamps.c7.viz.items.0.b	removes fast noise
+tr-opamps.c7.viz.items.1.a	high-pass
+tr-opamps.c7.viz.items.1.b	removes slow drift and DC
+tr-opamps.c7.viz.items.2.a	band-pass
+tr-opamps.c7.viz.items.2.b	keeps one frequency band
+tr-opamps.c8.title	Summing and differences
+tr-opamps.c8.text	Op-amps can add several signals (audio mixers) or subtract one from another (measuring the small voltage across a current-sense resistor).
+tr-opamps.c8.viz.items.0.a	summing amp
+tr-opamps.c8.viz.items.0.b	mixer
+tr-opamps.c8.viz.items.1.a	difference amp
+tr-opamps.c8.viz.items.1.b	subtract two signals
+tr-opamps.c8.viz.items.2.a	instrumentation amp
+tr-opamps.c8.viz.items.2.b	tiny differences, precise
+tr-opamps.c9.title	The 741
+tr-opamps.c9.text	The μA741, introduced in 1968, became the most famous op-amp ever made and is still taught today, though modern parts are far better for low-voltage circuits.
+tr-opamps.c9.viz.events.0.l	first monolithic op-amp
+tr-opamps.c9.viz.events.1.l	the μA741
+tr-opamps.c9.viz.events.2.y	today
+tr-opamps.c9.viz.events.2.l	rail-to-rail, low-power parts
+tr-psu.title	Power supplies and regulators
+tr-psu.summary	Getting the right voltage, cleanly and efficiently.
+tr-psu.q0.q	A linear regulator drops 9 V to 5 V at 0.2 A. How much heat?
+tr-psu.q0.o0	0.2 W
+tr-psu.q0.o1	0.8 W
+tr-psu.q0.o2	1.8 W
+tr-psu.q0.x	(9 − 5) × 0.2 = 0.8 W.
+tr-psu.q1.q	Which is most efficient for 24 V down to 3.3 V?
+tr-psu.q1.o0	Linear regulator
+tr-psu.q1.o1	Buck converter
+tr-psu.q1.o2	Zener diode
+tr-psu.q1.x	Switching converters waste little power.
+tr-psu.q2.q	An adapter rated 2 A powers a project drawing 0.5 A. Is that OK?
+tr-psu.q2.o0	Yes, it only draws what it needs
+tr-psu.q2.o1	No, it will burn out
+tr-psu.q2.o2	Only with a resistor
+tr-psu.q2.x	The rating is a maximum, not what's forced in.
+tr-psu.c0.title	Why regulate?
+tr-psu.c0.text	Batteries sag as they discharge, and USB can vary between about 4.75 and 5.25 V. Chips want a steady voltage, so a regulator holds it constant whatever the input does.
+tr-psu.c0.viz.steps.0	Varying input 4.2–3.0 V
+tr-psu.c0.viz.steps.1	Regulator
+tr-psu.c0.viz.steps.2	Steady 3.3 V
+tr-psu.c0.viz.steps.3	Happy chip
+tr-psu.c1.title	Linear regulators
+tr-psu.c1.text	A linear regulator (such as an LM7805 or AMS1117) burns off the extra voltage as heat. Simple and quiet, but wasteful when the input is much higher than the output.
+tr-psu.c1.example.0	12 V to 5 V at 0.5 A
+tr-psu.c1.example.1	(12 − 5) × 0.5
+tr-psu.c1.example.2	= 3.5 W of heat
+tr-psu.c1.viz.f	heat = (Vin − Vout) × I
+tr-psu.c1.viz.items.0.s	Vin
+tr-psu.c1.viz.items.0.m	input voltage
+tr-psu.c1.viz.items.1.s	Vout
+tr-psu.c1.viz.items.1.m	output
+tr-psu.c1.viz.items.2.s	I
+tr-psu.c1.viz.items.2.m	load current
+tr-psu.c2.title	LDO regulators
+tr-psu.c2.text	A low-dropout (LDO) regulator works with input only slightly above output, for example 3.6 V in for 3.3 V out. Essential when running from a single lithium cell.
+tr-psu.c2.viz.l.t	Standard linear
+tr-psu.c2.viz.l.items.0	needs ~2 V headroom
+tr-psu.c2.viz.l.items.1	e.g. 7805
+tr-psu.c2.viz.r.t	LDO
+tr-psu.c2.viz.r.items.0	needs ~0.1–0.4 V
+tr-psu.c2.viz.r.items.1	ideal for battery power
+tr-psu.c3.title	Buck converters
+tr-psu.c3.text	A buck converter steps voltage down by switching on and off very fast through an inductor. Efficiency of 85–95% means little heat, even from 24 V to 3.3 V.
+tr-psu.c3.viz.steps.0	12 V in
+tr-psu.c3.viz.steps.1	Switch at ~500 kHz
+tr-psu.c3.viz.steps.2	Inductor and capacitor smooth it
+tr-psu.c3.viz.steps.3	5 V out, ~90% efficient
+tr-psu.c4.title	Boost converters
+tr-psu.c4.text	A boost converter steps voltage up, such as from a 3.7 V battery to 5 V for USB. It draws more current from the battery than it delivers at the output.
+tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
+tr-psu.c4.viz.items.0.s	Vout
+tr-psu.c4.viz.items.0.m	5 V
+tr-psu.c4.viz.items.1.s	Iout
+tr-psu.c4.viz.items.1.m	1 A
+tr-psu.c4.viz.items.2.s	Vin
+tr-psu.c4.viz.items.2.m	3.7 V
+tr-psu.c4.viz.items.3.s	η
+tr-psu.c4.viz.items.3.m	~0.9 → Iin ≈ 1.5 A
+tr-psu.c5.title	Efficiency compared
+tr-psu.c5.text	For a large drop, switching regulators win. For small drops and noise-sensitive analog circuits, an LDO can be better.
+tr-psu.c5.viz.unit	% efficiency, 12 V → 3.3 V
+tr-psu.c5.viz.items.0.l	Linear
+tr-psu.c5.viz.items.1.l	Buck converter
+tr-psu.c6.title	Ripple and noise
+tr-psu.c6.text	Switching regulators leave a small ripple at their switching frequency. Sensitive circuits (audio, precise ADCs) use extra filtering or an LDO after the buck converter.
+tr-psu.c6.viz.steps.0	Buck converter
+tr-psu.c6.viz.steps.1	Small ripple
+tr-psu.c6.viz.steps.2	LC filter or LDO
+tr-psu.c6.viz.steps.3	Clean supply
+tr-psu.c7.title	Choosing a wall adapter
+tr-psu.c7.text	Match the voltage exactly, make sure the current rating is at least what your project needs, and check polarity of the barrel plug. A higher current rating is fine: the device only draws what it needs.
+tr-psu.c7.viz.items.0	Voltage must match
+tr-psu.c7.viz.items.1	Current rating ≥ your need
+tr-psu.c7.viz.items.2	Check centre-positive or negative
+tr-psu.c7.viz.items.3	Prefer certified adapters
+tr-psu.c8.title	USB power delivery
+tr-psu.c8.text	USB-C PD negotiates higher voltages, 9, 15 or 20 V, up to 100 W or more, but only after a digital handshake. A plain USB-C cable without negotiation gives 5 V.
+tr-psu.c8.viz.unit	watts (max, USB standards)
+tr-psu.c8.viz.items.0.l	USB 2.0
+tr-psu.c8.viz.items.1.l	USB 3.0
+tr-psu.c8.viz.items.2.l	USB-C 3 A
+tr-psu.c8.viz.items.3.l	USB-C PD
+tr-psu.c9.title	Brown-outs
+tr-psu.c9.text	If the supply dips below what a chip needs, it can misbehave or reset. ESP32s are famous for resetting on Wi-Fi transmit bursts with a weak supply. A good regulator and a big capacitor near the board fix it.
+tr-psu.c9.viz.items.0.w	ESP32 resets when Wi-Fi starts
+tr-psu.c9.viz.items.0.r	stronger 3.3 V supply and a 470 µF capacitor near the board
+tr-sensors.title	Sensors
+tr-sensors.summary	Measuring temperature, distance, motion and more.
+tr-sensors.q0.q	An ultrasonic echo returns after 2.9 ms. The distance is about…
+tr-sensors.q0.o0	1 m
+tr-sensors.q0.o1	0.5 m
+tr-sensors.q0.o2	2 m
+tr-sensors.q0.x	0.0029 × 343 ÷ 2 ≈ 0.5 m.
+tr-sensors.q1.q	Why can a PIR sensor miss someone sitting still?
+tr-sensors.q1.o0	It's too cold
+tr-sensors.q1.o1	It detects changes in infrared heat from movement
+tr-sensors.q1.o2	It only works at night
+tr-sensors.q1.x	PIR responds to motion.
+tr-sensors.q2.q	A CT clamp measures…
+tr-sensors.q2.o0	DC voltage
+tr-sensors.q2.o1	AC current without cutting the wire
+tr-sensors.q2.o2	Temperature
+tr-sensors.q2.x	It senses the magnetic field.
+tr-sensors.c0.title	From the world to numbers
+tr-sensors.c0.text	A sensor turns a physical quantity into an electrical signal: a voltage, a resistance, a pulse length or digital data. The microcontroller reads it and converts it to real units.
+tr-sensors.c0.viz.steps.0	Physical quantity
+tr-sensors.c0.viz.steps.1	Sensor
+tr-sensors.c0.viz.steps.2	Electrical signal
+tr-sensors.c0.viz.steps.3	Microcontroller converts to units
+tr-sensors.c1.title	Temperature sensors
+tr-sensors.c1.text	Thermistors change resistance with temperature (cheap, analog). The DS18B20 sends digital readings on one wire. The BME280 adds humidity and pressure over I²C.
+tr-sensors.c1.viz.items.0.a	thermistor
+tr-sensors.c1.viz.items.0.b	analog, cheap
+tr-sensors.c1.viz.items.1.a	DS18B20
+tr-sensors.c1.viz.items.1.b	digital, waterproof versions
+tr-sensors.c1.viz.items.2.a	BME280
+tr-sensors.c1.viz.items.2.b	temperature, humidity, pressure
+tr-sensors.c2.title	Ultrasonic distance
+tr-sensors.c2.text	Sensors like the HC-SR04 and the waterproof JSN-SR04T send a 40 kHz ping and time the echo. Distance is half the round trip times the speed of sound.
+tr-sensors.c2.example.0	echo after 5.8 ms
+tr-sensors.c2.example.1	0.0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1.0 m
+tr-sensors.c2.viz.f	distance = time × 343 ÷ 2
+tr-sensors.c2.viz.items.0.s	time
+tr-sensors.c2.viz.items.0.m	echo time in s
+tr-sensors.c2.viz.items.1.m	m/s speed of sound in air
+tr-sensors.c3.title	Ultrasonic quirks
+tr-sensors.c3.text	Speed of sound changes with temperature (about 0.6 m/s per °C), so add temperature compensation for accuracy. The JSN-SR04T has a blind zone of roughly 20–25 cm and needs a clear path.
+tr-sensors.c3.viz.items.0	Compensate for temperature
+tr-sensors.c3.viz.items.1	Respect the minimum distance
+tr-sensors.c3.viz.items.2	Avoid foam and angled surfaces
+tr-sensors.c3.viz.items.3	Average several readings
+tr-sensors.c4.title	Motion sensors
+tr-sensors.c4.text	PIR sensors detect the infrared heat of moving people and animals. Microwave radar sensors detect motion through thin walls and even breathing; they're used for presence detection.
+tr-sensors.c4.viz.l.t	PIR
+tr-sensors.c4.viz.l.items.0	detects moving heat
+tr-sensors.c4.viz.l.items.1	cheap
+tr-sensors.c4.viz.l.items.2	misses still people
+tr-sensors.c4.viz.r.t	mmWave radar
+tr-sensors.c4.viz.r.items.0	detects small movements
+tr-sensors.c4.viz.r.items.1	presence even when still
+tr-sensors.c4.viz.r.items.2	pricier
+tr-sensors.c5.title	Light sensors
+tr-sensors.c5.text	A photoresistor (LDR) is cheap and slow; the BH1750 gives calibrated lux readings over I²C. Useful for automatic lights and blinds.
+tr-sensors.c5.viz.unit	lux (typical)
+tr-sensors.c5.viz.items.0.l	Moonlight
+tr-sensors.c5.viz.items.1.l	Living room
+tr-sensors.c5.viz.items.2.l	Office
+tr-sensors.c5.viz.items.3.l	Overcast day
+tr-sensors.c5.viz.items.4.l	Sunlight
+tr-sensors.c6.title	Current and power sensors
+tr-sensors.c6.text	A current transformer clamp measures AC current without cutting wires; modules like the PZEM-004T report voltage, current, power and energy. INA219 boards measure DC current and voltage.
+tr-sensors.c6.viz.items.0.a	CT clamp
+tr-sensors.c6.viz.items.0.b	AC current, non-invasive
+tr-sensors.c6.viz.items.1.a	PZEM-004T
+tr-sensors.c6.viz.items.1.b	mains power and energy
+tr-sensors.c6.viz.items.2.a	INA219
+tr-sensors.c6.viz.items.2.b	DC current and voltage
+tr-sensors.c7.title	Analog vs digital sensors
+tr-sensors.c7.text	Analog sensors give a voltage you read with the ADC; noise and calibration are your problem. Digital sensors do the conversion inside and send a number over I²C, SPI or one-wire.
+tr-sensors.c7.viz.l.t	Analog
+tr-sensors.c7.viz.l.items.0	voltage out
+tr-sensors.c7.viz.l.items.1	needs ADC
+tr-sensors.c7.viz.l.items.2	simple wiring
+tr-sensors.c7.viz.r.t	Digital
+tr-sensors.c7.viz.r.items.0	sends numbers
+tr-sensors.c7.viz.r.items.1	calibrated inside
+tr-sensors.c7.viz.r.items.2	uses a bus
+tr-sensors.c8.title	Calibration
+tr-sensors.c8.text	Cheap sensors have offsets and drift. Compare with a trusted reference at two points (for example ice water and room temperature) and correct in software.
+tr-sensors.c8.viz.steps.0	Measure a known reference
+tr-sensors.c8.viz.steps.1	Note the offset
+tr-sensors.c8.viz.steps.2	Correct in software
+tr-sensors.c8.viz.steps.3	Re-check later
+tr-sensors.c9.title	Sampling and averaging
+tr-sensors.c9.text	Take several readings and average them, or use a median to ignore outliers. Don't sample faster than you need: it wastes power and adds noise.
+tr-sensors.c9.viz.items.0	Median of 5 removes spikes
+tr-sensors.c9.viz.items.1	Moving average smooths noise
+tr-sensors.c9.viz.items.2	Sample only as often as needed
+tr-sensors.c9.viz.items.3	Log raw data while testing
+tr-buses.title	Talking between chips
+tr-buses.summary	UART, I²C and SPI explained.
+tr-buses.q0.q	Which bus uses SDA and SCL lines?
+tr-buses.q0.o0	SPI
+tr-buses.q0.o1	I²C
+tr-buses.q0.o2	UART
+tr-buses.q0.x	I²C uses data and clock lines.
+tr-buses.q1.q	In UART wiring, TX connects to…
+tr-buses.q1.o0	TX
+tr-buses.q1.o1	RX
+tr-buses.q1.o2	GND only
+tr-buses.q1.x	Transmit goes to receive.
+tr-buses.q2.q	What's best for a 300 m cable to an energy meter?
+tr-buses.q2.o0	I²C
+tr-buses.q2.o1	SPI
+tr-buses.q2.o2	RS-485
+tr-buses.q2.x	RS-485 is differential and handles long runs.
+tr-buses.c0.title	Why buses?
+tr-buses.c0.text	Sensors, displays and memory chips need to exchange data with the microcontroller. Standard serial buses send bits one after another over a few wires.
+tr-buses.c0.viz.root	Serial buses
+tr-buses.c0.viz.items.0	UART (2 wires)
+tr-buses.c0.viz.items.1	I²C (2 wires, many devices)
+tr-buses.c0.viz.items.2	SPI (4 wires, fast)
+tr-buses.c0.viz.items.3	1-Wire (1 wire)
+tr-buses.c1.title	UART
+tr-buses.c1.text	UART uses a TX line and an RX line, crossed between devices (TX to RX). Both sides must agree on the speed, such as 9600 or 115200 baud. GPS modules and serial consoles use it.
+tr-buses.c1.viz.steps.0	Device A TX
+tr-buses.c1.viz.steps.1	to
+tr-buses.c1.viz.steps.2	Device B RX
+tr-buses.c1.viz.steps.3	and back
+tr-buses.c2.title	I²C
+tr-buses.c2.text	I²C uses two lines, SDA (data) and SCL (clock), shared by many devices. Each device has an address, such as 0x76 for a BME280. Both lines need pull-up resistors.
+tr-buses.c2.viz.items.0.a	SDA
+tr-buses.c2.viz.items.0.b	data line
+tr-buses.c2.viz.items.1.a	SCL
+tr-buses.c2.viz.items.1.b	clock line
+tr-buses.c2.viz.items.2.a	address
+tr-buses.c2.viz.items.2.b	which device
+tr-buses.c2.viz.items.3.a	pull-ups
+tr-buses.c2.viz.items.3.b	4.7 kΩ typical
+tr-buses.c3.title	SPI
+tr-buses.c3.text	SPI uses a clock, data out, data in and a chip-select line per device. It's fast, often tens of MHz, so it's used for displays, SD cards and flash memory.
+tr-buses.c3.viz.items.0.a	SCK
+tr-buses.c3.viz.items.0.b	clock
+tr-buses.c3.viz.items.1.a	MOSI
+tr-buses.c3.viz.items.1.b	controller out
+tr-buses.c3.viz.items.2.a	MISO
+tr-buses.c3.viz.items.2.b	controller in
+tr-buses.c3.viz.items.3.a	CS
+tr-buses.c3.viz.items.3.b	chip select per device
+tr-buses.c4.title	Choosing a bus
+tr-buses.c4.text	I²C for many slow sensors on two wires; SPI for speed; UART for modules with their own protocol; one-wire for long chains of temperature sensors.
+tr-buses.c4.viz.l.t	I²C
+tr-buses.c4.viz.l.items.0	2 wires
+tr-buses.c4.viz.l.items.1	many devices
+tr-buses.c4.viz.l.items.2	up to ~400 kHz typical
+tr-buses.c4.viz.r.t	SPI
+tr-buses.c4.viz.r.items.0	4+ wires
+tr-buses.c4.viz.r.items.1	one CS per device
+tr-buses.c4.viz.r.items.2	tens of MHz
+tr-buses.c5.title	Address clashes
+tr-buses.c5.text	Two I²C devices with the same address can't share a bus. Many boards have a jumper to change the address, or you can use an I²C multiplexer.
+tr-buses.c5.viz.items.0.w	two sensors at 0x76
+tr-buses.c5.viz.items.0.r	change one to 0x77 with its address jumper
+tr-buses.c5.viz.items.1.w	still clashing
+tr-buses.c5.viz.items.1.r	add an I²C multiplexer
+tr-buses.c6.title	I²C scanner
+tr-buses.c6.text	When an I²C device doesn't respond, run a scanner sketch that tries every address and lists what answers. No answer usually means wiring, power or missing pull-ups.
+tr-buses.c6.viz.items.0	Check power and ground
+tr-buses.c6.viz.items.1	SDA and SCL not swapped?
+tr-buses.c6.viz.items.2	Pull-ups present?
+tr-buses.c6.viz.items.3	Run a scanner
+tr-buses.c7.title	Cable length
+tr-buses.c7.text	I²C was designed for short connections on one board; beyond about a metre it becomes unreliable. For longer runs use RS-485, CAN or a differential bus extender.
+tr-buses.c7.viz.unit	typical max length (m)
+tr-buses.c7.viz.items.0.l	I²C
+tr-buses.c7.viz.items.1.l	SPI
+tr-buses.c7.viz.items.2.l	UART (TTL)
+tr-buses.c7.viz.items.3.l	RS-485
+tr-buses.c8.title	RS-485 and Modbus
+tr-buses.c8.text	RS-485 sends data as the difference between two wires, which rejects noise over long cables. Industrial devices, energy meters and solar inverters often speak Modbus over RS-485.
+tr-buses.c8.viz.steps.0	Microcontroller UART
+tr-buses.c8.viz.steps.1	RS-485 transceiver
+tr-buses.c8.viz.steps.2	Twisted pair up to 1.2 km
+tr-buses.c8.viz.steps.3	Meter or inverter
+tr-buses.c9.title	Logic analysers
+tr-buses.c9.text	A cheap USB logic analyser records the bits on a bus and decodes them into readable bytes, showing exactly what's being sent. It's the fastest way to debug a stubborn sensor.
+tr-buses.c9.viz.steps.0	Clip onto SDA and SCL
+tr-buses.c9.viz.steps.1	Record
+tr-buses.c9.viz.steps.2	Decode I²C
+tr-buses.c9.viz.steps.3	See addresses and bytes
+tr-wireless.title	Wireless links
+tr-wireless.summary	Wi-Fi, Bluetooth, Zigbee and LoRa compared.
+tr-wireless.q0.q	Which suits a battery sensor sending a reading every 10 minutes from 5 km away?
+tr-wireless.q0.o0	Wi-Fi
+tr-wireless.q0.o1	Bluetooth
+tr-wireless.q0.o2	LoRa
+tr-wireless.q0.x	LoRa offers long range at very low power.
+tr-wireless.q1.q	In a Zigbee mesh, what extends range?
+tr-wireless.q1.o0	Bigger batteries
+tr-wireless.q1.o1	Mains-powered devices relaying messages
+tr-wireless.q1.o2	Higher frequencies
+tr-wireless.q1.x	Each router relays packets.
+tr-wireless.q2.q	What frequency does LoRa use in Europe?
+tr-wireless.q2.o0	2.4 GHz
+tr-wireless.q2.o1	868 MHz
+tr-wireless.q2.o2	5 GHz
+tr-wireless.q2.x	The EU band is 868 MHz.
+tr-wireless.c0.title	The trade-off triangle
+tr-wireless.c0.text	Every wireless technology balances range, data rate and power use. You can't max out all three: long range and low power means very little data.
+tr-wireless.c0.viz.l.t	High data rate
+tr-wireless.c0.viz.l.items.0	Wi-Fi
+tr-wireless.c0.viz.l.items.1	video and files
+tr-wireless.c0.viz.l.items.2	power-hungry
+tr-wireless.c0.viz.r.t	Long range, low power
+tr-wireless.c0.viz.r.items.0	LoRa
+tr-wireless.c0.viz.r.items.1	tiny messages
+tr-wireless.c0.viz.r.items.2	years on a battery
+tr-wireless.c1.title	Wi-Fi
+tr-wireless.c1.text	Wi-Fi offers high speed and connects directly to your network and the internet, but uses a lot of power. Good for mains-powered devices like cameras and smart plugs.
+tr-wireless.c1.viz.items.0.v	2.4 GHz
+tr-wireless.c1.viz.items.0.l	range
+tr-wireless.c1.viz.items.1.v	5 GHz
+tr-wireless.c1.viz.items.1.l	speed
+tr-wireless.c1.viz.items.2.v	~100–250 mA
+tr-wireless.c1.viz.items.2.l	ESP32 while transmitting
+tr-wireless.c2.title	Bluetooth Low Energy
+tr-wireless.c2.text	BLE sends small amounts of data over short distances with very little power. Fitness bands, sensors and beacons use it, often running for a year or more on a coin cell.
+tr-wireless.c2.viz.items.0.a	range
+tr-wireless.c2.viz.items.0.b	~10–50 m indoors
+tr-wireless.c2.viz.items.1.a	power
+tr-wireless.c2.viz.items.1.b	coin cell for months
+tr-wireless.c2.viz.items.2.a	data
+tr-wireless.c2.viz.items.2.b	small packets
+tr-wireless.c3.title	Zigbee and Thread
+tr-wireless.c3.text	Mesh networks for smart homes: each mains-powered device relays messages, extending range. They need a hub or coordinator, and battery sensors last years.
+tr-wireless.c3.viz.steps.0	Battery sensor
+tr-wireless.c3.viz.steps.1	Nearest mains device relays
+tr-wireless.c3.viz.steps.2	Mesh hops
+tr-wireless.c3.viz.steps.3	Hub or coordinator
+tr-wireless.c4.title	LoRa
+tr-wireless.c4.text	LoRa uses a special chirp signal to reach several kilometres with tiny power. Data rates are only hundreds of bits to a few kilobits per second: perfect for occasional sensor readings at remote sites.
+tr-wireless.c4.viz.unit	typical range (km, open country)
+tr-wireless.c4.viz.items.0.l	Wi-Fi
+tr-wireless.c4.viz.items.1.l	BLE
+tr-wireless.c4.viz.items.2.l	Zigbee
+tr-wireless.c4.viz.items.3.l	LoRa
+tr-wireless.c5.title	LoRa vs LoRaWAN
+tr-wireless.c5.text	LoRa is the radio. LoRaWAN is a network protocol with gateways and servers, like The Things Network. Point-to-point LoRa between two boards needs no network at all.
+tr-wireless.c5.viz.l.t	LoRa point-to-point
+tr-wireless.c5.viz.l.items.0	two boards talk directly
+tr-wireless.c5.viz.l.items.1	simple
+tr-wireless.c5.viz.l.items.2	no network
+tr-wireless.c5.viz.r.t	LoRaWAN
+tr-wireless.c5.viz.r.items.0	gateways and servers
+tr-wireless.c5.viz.r.items.1	many devices
+tr-wireless.c5.viz.r.items.2	shared networks
+tr-wireless.c6.title	Frequencies in Europe
+tr-wireless.c6.text	LoRa in Europe uses the 868 MHz licence-free band, with duty-cycle limits (often 1%), so each device may only transmit a small share of the time.
+tr-wireless.c6.viz.items.0.v	868 MHz
+tr-wireless.c6.viz.items.0.l	EU LoRa band
+tr-wireless.c6.viz.items.1.l	typical duty cycle limit
+tr-wireless.c6.viz.items.2.v	25 mW
+tr-wireless.c6.viz.items.2.l	typical max power
+tr-wireless.c7.title	Antennas matter
+tr-wireless.c7.text	A good antenna, mounted high and clear of metal, often doubles range more cheaply than more power. Never transmit without an antenna connected: it can damage the radio.
+tr-wireless.c7.viz.items.0	Mount it high
+tr-wireless.c7.viz.items.1	Keep away from metal
+tr-wireless.c7.viz.items.2	Match the frequency band
+tr-wireless.c7.viz.items.3	Never transmit without an antenna
+tr-wireless.c8.title	Line of sight
+tr-wireless.c8.text	Radio waves at these frequencies are blocked by hills, buildings and water. In the countryside, raising the antenna a few metres can turn no signal into a solid link.
+tr-wireless.c8.viz.steps.0	Antenna on a low wall
+tr-wireless.c8.viz.steps.1	Hill blocks the path
+tr-wireless.c8.viz.steps.2	Raise antenna on a mast
+tr-wireless.c8.viz.steps.3	Clear line of sight
+tr-wireless.c9.title	Cellular IoT
+tr-wireless.c9.text	Where there's no Wi-Fi or gateway, LTE-M and NB-IoT modules send small amounts of data through the mobile network with low power, for a monthly SIM fee.
+tr-wireless.c9.viz.items.0.a	LTE-M
+tr-wireless.c9.viz.items.0.b	mobile, moderate data
+tr-wireless.c9.viz.items.1.a	NB-IoT
+tr-wireless.c9.viz.items.1.b	deep coverage, tiny data
+tr-wireless.c9.viz.items.2.a	SIM
+tr-wireless.c9.viz.items.2.b	monthly cost
+tr-esphome.title	ESP32 and ESPHome
+tr-esphome.summary	Building smart-home devices without writing much code.
+tr-esphome.q0.q	What does ESPHome use to describe a device?
+tr-esphome.q0.o0	A spreadsheet
+tr-esphome.q0.o1	A YAML configuration file
+tr-esphome.q0.o2	A photograph
+tr-esphome.q0.x	You declare components in YAML.
+tr-esphome.q1.q	Why avoid ADC2 pins for analog readings on an ESP32?
+tr-esphome.q1.o0	They're digital only
+tr-esphome.q1.o1	They can't be read while Wi-Fi is active
+tr-esphome.q1.o2	They're 5 V
+tr-esphome.q1.x	Wi-Fi uses ADC2 internally.
+tr-esphome.q2.q	What does deep sleep give a battery device?
+tr-esphome.q2.o0	Faster Wi-Fi
+tr-esphome.q2.o1	Microamp current draw between readings
+tr-esphome.q2.o2	More GPIO pins
+tr-esphome.q2.x	The chip almost entirely powers down.
+tr-esphome.c0.title	The ESP32
+tr-esphome.c0.text	A cheap microcontroller with Wi-Fi and Bluetooth built in, two cores at up to 240 MHz and dozens of GPIO pins. It's the heart of countless DIY smart-home devices.
+tr-esphome.c0.viz.items.0.v	240 MHz
+tr-esphome.c0.viz.items.0.l	dual-core CPU
+tr-esphome.c0.viz.items.1.v	Wi-Fi + BLE
+tr-esphome.c0.viz.items.1.l	built in
+tr-esphome.c0.viz.items.2.l	typical board
+tr-esphome.c1.title	ESPHome in one idea
+tr-esphome.c1.text	Instead of writing C++ code, you describe your device in a YAML file: which board, which sensors on which pins. ESPHome builds the firmware and connects it to Home Assistant.
+tr-esphome.c1.viz.steps.0	YAML file
+tr-esphome.c1.viz.steps.1	ESPHome compiles
+tr-esphome.c1.viz.steps.2	Flash the board
+tr-esphome.c1.viz.steps.3	Appears in Home Assistant
+tr-esphome.c2.title	A temperature sensor in YAML
+tr-esphome.c2.text	A few lines describe the board, Wi-Fi and a sensor: platform dht, pin GPIO4, name "Living room temperature", update interval 60 s. That's the whole program.
+tr-esphome.c2.viz.items.0	esphome: name
+tr-esphome.c2.viz.items.1	esp32: board
+tr-esphome.c2.viz.items.2	wifi: credentials
+tr-esphome.c2.viz.items.3	sensor: platform and pin
+tr-esphome.c2.viz.items.4	update_interval: 60s
+tr-esphome.c3.title	Over-the-air updates
+tr-esphome.c3.text	After the first USB flash, ESPHome updates devices over Wi-Fi. Change the YAML, click install, and the device on the ceiling updates itself.
+tr-esphome.c3.viz.steps.0	Edit YAML
+tr-esphome.c3.viz.steps.1	Compile
+tr-esphome.c3.viz.steps.2	Upload over Wi-Fi
+tr-esphome.c3.viz.steps.3	Device restarts with new firmware
+tr-esphome.c4.title	Native API
+tr-esphome.c4.text	ESPHome devices talk to Home Assistant through a fast native API, with encryption. Entities appear automatically, and automations can run on the device even if Home Assistant is down.
+tr-esphome.c4.viz.l.t	Native API
+tr-esphome.c4.viz.l.items.0	auto-discovery
+tr-esphome.c4.viz.l.items.1	encrypted
+tr-esphome.c4.viz.l.items.2	low latency
+tr-esphome.c4.viz.r.t	MQTT
+tr-esphome.c4.viz.r.items.0	works with any broker
+tr-esphome.c4.viz.r.items.1	more setup
+tr-esphome.c5.title	UART devices: the AC example
+tr-esphome.c5.text	ESPHome can talk to appliances over UART. Projects like MitsubishiCN105ESPHome connect an ESP32 to the CN105 port of a Mitsubishi air conditioner for local control without the cloud.
+tr-esphome.c5.viz.steps.0	ESP32
+tr-esphome.c5.viz.steps.1	UART to the CN105 port
+tr-esphome.c5.viz.steps.2	ESPHome component
+tr-esphome.c5.viz.steps.3	Local control in Home Assistant
+tr-esphome.c6.title	Choosing pins carefully
+tr-esphome.c6.text	Some ESP32 pins are input-only (34–39), some affect boot (0, 2, 12, 15), and ADC2 pins can't be used for analog readings while Wi-Fi is on. Check a pinout before wiring.
+tr-esphome.c6.viz.items.0.w	analog sensor on an ADC2 pin
+tr-esphome.c6.viz.items.0.r	use an ADC1 pin (32–39)
+tr-esphome.c6.viz.items.1.w	button on GPIO12 stops boot
+tr-esphome.c6.viz.items.1.r	move it to a safe pin
+tr-esphome.c7.title	Deep sleep in ESPHome
+tr-esphome.c7.text	Battery devices can wake up, take a reading, send it and go back to deep sleep for minutes. A deep-sleep ESP32 draws microamps instead of tens of milliamps.
+tr-esphome.c7.viz.steps.0	Wake
+tr-esphome.c7.viz.steps.1	Read sensor
+tr-esphome.c7.viz.steps.2	Send over Wi-Fi
+tr-esphome.c7.viz.steps.3	Deep sleep for 10 min
+tr-esphome.c8.title	ESP32 variants
+tr-esphome.c8.text	The family keeps growing: ESP32-S3 adds AI instructions and USB, ESP32-C3 is a low-cost RISC-V version, ESP32-C6 adds Wi-Fi 6 and Thread/Zigbee radio.
+tr-esphome.c8.viz.items.0.a	ESP32
+tr-esphome.c8.viz.items.0.b	classic dual-core
+tr-esphome.c8.viz.items.1.a	S3
+tr-esphome.c8.viz.items.1.b	USB, camera, AI
+tr-esphome.c8.viz.items.2.a	C3
+tr-esphome.c8.viz.items.2.b	cheap RISC-V
+tr-esphome.c8.viz.items.3.a	C6
+tr-esphome.c8.viz.items.3.b	Wi-Fi 6, Thread, Zigbee
+tr-esphome.c9.title	Local and private
+tr-esphome.c9.text	ESPHome devices work entirely on your network, with no cloud account. If the internet goes down, your sensors and switches keep working.
+tr-esphome.c9.viz.items.0	No cloud dependency
+tr-esphome.c9.viz.items.1	Data stays at home
+tr-esphome.c9.viz.items.2	Works during internet outages
+tr-esphome.c9.viz.items.3	Open-source firmware
+tr-proto.title	From breadboard to PCB
+tr-proto.summary	Prototyping, soldering and making it permanent.
+tr-proto.q0.q	Where should you feed the solder?
+tr-proto.q0.o0	Onto the iron tip
+tr-proto.q0.o1	Into the heated joint
+tr-proto.q0.o2	Before heating anything
+tr-proto.q0.x	The joint must be hot enough to melt it.
+tr-proto.q1.q	A dull, lumpy joint is usually…
+tr-proto.q1.o0	Perfect
+tr-proto.q1.o1	A cold joint
+tr-proto.q1.o2	A bridge
+tr-proto.q1.x	It didn't get hot enough.
+tr-proto.q2.q	Which free tool designs PCBs?
+tr-proto.q2.o0	Excel
+tr-proto.q2.o1	KiCad
+tr-proto.q2.o2	Photoshop
+tr-proto.q2.x	KiCad handles schematic and layout.
+tr-proto.c0.title	Breadboards
+tr-proto.c0.text	A breadboard lets you build circuits without soldering. Holes in each short row of five are connected; the long rails along the sides carry power and ground.
+tr-proto.c0.viz.items.0.a	short rows
+tr-proto.c0.viz.items.0.b	5 holes connected
+tr-proto.c0.viz.items.1.a	side rails
+tr-proto.c0.viz.items.1.b	power and ground
+tr-proto.c0.viz.items.2.a	centre gap
+tr-proto.c0.viz.items.2.b	for chips
+tr-proto.c1.title	Jumper wires and loose contacts
+tr-proto.c1.text	Breadboards are great for testing but contacts get loose and add resistance. If a circuit behaves strangely, push the wires in again before rewriting your code.
+tr-proto.c1.viz.items.0	Check every wire is pushed in
+tr-proto.c1.viz.items.1	Keep wires short
+tr-proto.c1.viz.items.2	Use the rails for power
+tr-proto.c1.viz.items.3	Don't run high currents
+tr-proto.c2.title	Soldering basics
+tr-proto.c2.text	Heat the joint (pad and wire together) with the iron, then feed solder into the joint, not onto the iron. A good joint is shiny and shaped like a small volcano.
+tr-proto.c2.viz.steps.0	Clean tip
+tr-proto.c2.viz.steps.1	Heat pad and lead together
+tr-proto.c2.viz.steps.2	Feed solder into the joint
+tr-proto.c2.viz.steps.3	Remove solder, then iron
+tr-proto.c3.title	Iron temperature
+tr-proto.c3.text	For common lead-free solder, around 330–370 °C works well; leaded solder melts lower. Too cold gives dull, grainy joints; too hot burns pads and flux.
+tr-proto.c3.viz.unit	°C
+tr-proto.c3.viz.items.0.l	leaded solder
+tr-proto.c3.viz.items.1.l	lead-free
+tr-proto.c3.viz.items.2.l	too hot
+tr-proto.c4.title	Bad joints
+tr-proto.c4.text	A cold joint looks dull and lumpy and may crack. A bridge connects two pads by accident. Too little solder leaves a weak joint. Desoldering braid or a pump fixes most mistakes.
+tr-proto.c4.viz.items.0.a	cold joint
+tr-proto.c4.viz.items.0.b	dull, lumpy
+tr-proto.c4.viz.items.1.a	bridge
+tr-proto.c4.viz.items.1.b	two pads shorted
+tr-proto.c4.viz.items.2.a	dry joint
+tr-proto.c4.viz.items.2.b	not enough solder
+tr-proto.c4.viz.items.3.a	fix
+tr-proto.c4.viz.items.3.b	braid or pump
+tr-proto.c5.title	Perfboard
+tr-proto.c5.text	Perfboard (stripboard) makes a project permanent without designing a PCB: components soldered in a grid, connected with wire or copper strips.
+tr-proto.c5.viz.l.t	Breadboard
+tr-proto.c5.viz.l.items.0	no soldering
+tr-proto.c5.viz.l.items.1	quick changes
+tr-proto.c5.viz.l.items.2	unreliable long-term
+tr-proto.c5.viz.r.t	Perfboard
+tr-proto.c5.viz.r.items.0	soldered
+tr-proto.c5.viz.r.items.1	permanent
+tr-proto.c5.viz.r.items.2	one-off builds
+tr-proto.c6.title	Designing a PCB
+tr-proto.c6.text	Free tools like KiCad let you draw the schematic and then the board layout. Upload the files to a PCB maker and boards arrive in about a week for a few euros.
+tr-proto.c6.viz.steps.0	Schematic in KiCad
+tr-proto.c6.viz.steps.1	Board layout
+tr-proto.c6.viz.steps.2	Gerber files
+tr-proto.c6.viz.steps.3	Manufactured PCB
+tr-proto.c7.title	Surface-mount parts
+tr-proto.c7.text	Most modern parts are surface-mount (SMD): tiny, soldered onto pads rather than through holes. Sizes like 0805 are manageable by hand; smaller ones need hot air or a reflow oven.
+tr-proto.c7.viz.unit	size (mm, length)
+tr-proto.c8.title	Enclosures
+tr-proto.c8.text	Projects need a box: IP-rated enclosures for outdoors, 3D-printed cases for custom fits. Plan for cable glands, ventilation and antenna placement outside metal boxes.
+tr-proto.c8.viz.items.0	IP65+ for outdoors
+tr-proto.c8.viz.items.1	Cable glands
+tr-proto.c8.viz.items.2	Ventilation for heat
+tr-proto.c8.viz.items.3	Antenna outside metal
+tr-proto.c9.title	Safety while soldering
+tr-proto.c9.text	Use a stand for the iron, ventilate or use fume extraction (flux fumes irritate the lungs), wash hands after handling solder, and wear eye protection when clipping leads.
+tr-proto.c9.viz.items.0	Iron in its stand
+tr-proto.c9.viz.items.1	Fume extraction or open window
+tr-proto.c9.viz.items.2	Wash hands
+tr-proto.c9.viz.items.3	Eye protection when clipping
+tr-logic.title	Logic and binary
+tr-logic.summary	Bits, gates and how chips make decisions.
+tr-logic.q0.q	What is binary 1101 in decimal?
+tr-logic.q0.o0	11
+tr-logic.q0.o1	13
+tr-logic.q0.o2	1,101
+tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
+tr-logic.q1.q	An AND gate with inputs 1 and 0 outputs…
+tr-logic.q1.o0	1
+tr-logic.q1.o1	0
+tr-logic.q1.x	AND needs all inputs at 1.
+tr-logic.q2.q	0xFF in decimal is…
+tr-logic.q2.o0	15
+tr-logic.q2.o1	255
+tr-logic.q2.o2	256
+tr-logic.q2.x	Two hex F's are eight 1 bits = 255.
+tr-logic.c0.title	Bits
+tr-logic.c0.text	Digital electronics represents everything with bits: 0 or 1, low or high voltage. Eight bits make a byte, which can hold 256 different values.
+tr-logic.c0.viz.items.0.v	1 bit
+tr-logic.c0.viz.items.0.l	0 or 1
+tr-logic.c0.viz.items.1.v	8 bits
+tr-logic.c0.viz.items.1.l	1 byte
+tr-logic.c0.viz.items.2.l	values in a byte
+tr-logic.c1.title	Binary numbers
+tr-logic.c1.text	Each binary place is worth double the one to its right: 1, 2, 4, 8, 16… The number 1011 is 8 + 0 + 2 + 1 = 11.
+tr-logic.c1.viz.items.0.m	the eights place
+tr-logic.c1.viz.items.1.m	no fours
+tr-logic.c1.viz.items.2.m	the twos place
+tr-logic.c1.viz.items.3.m	the ones place
+tr-logic.c2.title	Hexadecimal
+tr-logic.c2.text	Hex groups four bits into one digit, 0–9 then A–F. One byte is exactly two hex digits: 0xFF = 255. Addresses and colours (#FF8800) use hex.
+tr-logic.c2.viz.items.0.a	0x0
+tr-logic.c2.viz.items.1.a	0x9
+tr-logic.c2.viz.items.2.a	0xA
+tr-logic.c2.viz.items.3.a	0xF
+tr-logic.c2.viz.items.4.a	0xFF
+tr-logic.c3.title	AND, OR, NOT
+tr-logic.c3.text	The basic gates: AND outputs 1 only if all inputs are 1; OR outputs 1 if any input is 1; NOT flips the input.
+tr-logic.c3.viz.l.t	AND
+tr-logic.c3.viz.l.items.0	both must be 1
+tr-logic.c3.viz.l.items.1	door open AND alarm armed → siren
+tr-logic.c3.viz.r.t	OR
+tr-logic.c3.viz.r.items.0	either is 1
+tr-logic.c3.viz.r.items.1	button A OR button B → light
+tr-logic.c4.title	NAND: the universal gate
+tr-logic.c4.text	Any logic circuit, even a whole processor, can be built from NAND gates alone (AND followed by NOT). It's cheap to make in silicon, so it's everywhere.
+tr-logic.c4.viz.steps.0	NAND gates
+tr-logic.c4.viz.steps.1	Make AND, OR, NOT
+tr-logic.c4.viz.steps.2	Make adders and memory
+tr-logic.c4.viz.steps.3	Make a processor
+tr-logic.c5.title	XOR
+tr-logic.c5.text	Exclusive OR outputs 1 when the inputs differ. It's used for adding binary numbers, parity checks and simple encryption.
+tr-logic.c5.viz.items.0.a	0 XOR 0
+tr-logic.c5.viz.items.1.a	0 XOR 1
+tr-logic.c5.viz.items.2.a	1 XOR 0
+tr-logic.c5.viz.items.3.a	1 XOR 1
+tr-logic.c6.title	Adding with gates
+tr-logic.c6.text	A half adder adds two bits using XOR (for the sum) and AND (for the carry). Chain full adders together and you can add numbers of any size.
+tr-logic.c6.viz.steps.0	Bits A and B
+tr-logic.c6.viz.steps.1	XOR gives the sum
+tr-logic.c6.viz.steps.2	AND gives the carry
+tr-logic.c6.viz.steps.3	Chain for bigger numbers
+tr-logic.c7.title	Flip-flops: memory from gates
+tr-logic.c7.text	Feed two gates back into each other and the circuit remembers its last state. That's a flip-flop, the basis of registers and fast memory.
+tr-logic.c7.viz.steps.0	Two gates cross-connected
+tr-logic.c7.viz.steps.1	Output feeds back
+tr-logic.c7.viz.steps.2	Holds 0 or 1
+tr-logic.c7.viz.steps.3	One bit of memory
+tr-logic.c8.title	Clocks
+tr-logic.c8.text	Digital circuits move in step with a clock signal ticking millions or billions of times a second. On each tick, flip-flops capture new values.
+tr-logic.c8.viz.items.0.v	16 MHz
+tr-logic.c8.viz.items.0.l	Arduino Uno
+tr-logic.c8.viz.items.1.v	240 MHz
+tr-logic.c8.viz.items.1.l	ESP32
+tr-logic.c8.viz.items.2.v	~4 GHz
+tr-logic.c8.viz.items.2.l	desktop CPU
+tr-logic.c9.title	Bitwise tricks in code
+tr-logic.c9.text	Programmers use bitwise operations to set, clear and test individual bits, for example in a register controlling GPIO pins: value | (1<<5) sets bit 5.
+tr-logic.c9.viz.items.0.a	x | (1<<n)
+tr-logic.c9.viz.items.0.b	set bit n
+tr-logic.c9.viz.items.1.a	x & ~(1<<n)
+tr-logic.c9.viz.items.1.b	clear bit n
+tr-logic.c9.viz.items.2.a	x & (1<<n)
+tr-logic.c9.viz.items.2.b	test bit n
+tr-logic.c9.viz.items.3.a	x ^ (1<<n)
+tr-logic.c9.viz.items.3.b	toggle bit n
+tr-memory.title	Memory and storage
+tr-memory.summary	RAM, flash and EEPROM.
+tr-memory.q0.q	What happens to RAM contents when power is lost?
+tr-memory.q0.o0	They're saved
+tr-memory.q0.o1	They're lost
+tr-memory.q0.o2	They move to flash
+tr-memory.q0.x	RAM is volatile.
+tr-memory.q1.q	Why not write to flash every second?
+tr-memory.q1.o0	It's too slow
+tr-memory.q1.o1	Flash cells wear out after many erase cycles
+tr-memory.q1.o2	It uses Wi-Fi
+tr-memory.q1.x	Limited write endurance.
+tr-memory.q2.q	Which is fastest?
+tr-memory.q2.o0	SSD
+tr-memory.q2.o1	RAM
+tr-memory.q2.o2	CPU registers
+tr-memory.q2.x	Registers sit inside the processor.
+tr-memory.c0.title	RAM: fast and forgetful
+tr-memory.c0.text	RAM holds the data a program is working on right now. It's fast but volatile: switch off the power and it's gone.
+tr-memory.c0.viz.l.t	RAM
+tr-memory.c0.viz.l.items.0	fast
+tr-memory.c0.viz.l.items.1	volatile
+tr-memory.c0.viz.l.items.2	working data
+tr-memory.c0.viz.r.t	Flash
+tr-memory.c0.viz.r.items.0	slower
+tr-memory.c0.viz.r.items.1	keeps data unpowered
+tr-memory.c0.viz.r.items.2	program and files
+tr-memory.c1.title	SRAM and DRAM
+tr-memory.c1.text	SRAM stores each bit in a flip-flop: fast, used for caches and microcontroller memory. DRAM stores bits as charge in tiny capacitors: denser and cheaper, used for computer RAM, but must be refreshed constantly.
+tr-memory.c1.viz.items.0.a	SRAM
+tr-memory.c1.viz.items.0.b	flip-flops, fast, caches
+tr-memory.c1.viz.items.1.a	DRAM
+tr-memory.c1.viz.items.1.b	capacitors, dense, PC memory
+tr-memory.c1.viz.items.2.a	refresh
+tr-memory.c1.viz.items.2.b	DRAM rewrites itself thousands of times a second
+tr-memory.c2.title	Flash memory
+tr-memory.c2.text	Flash keeps data without power by trapping charge in insulated cells. Your microcontroller's program, SSDs, SD cards and USB sticks all use it.
+tr-memory.c2.viz.root	Flash memory
+tr-memory.c2.viz.items.0	Microcontroller program
+tr-memory.c2.viz.items.1	SSDs
+tr-memory.c2.viz.items.2	SD cards
+tr-memory.c2.viz.items.3	USB sticks
+tr-memory.c3.title	Flash wears out
+tr-memory.c3.text	Each flash cell survives a limited number of erase cycles, from about 10,000 to 100,000 for small chips. Writing a log line every second to the same spot will kill it; wear levelling spreads writes around.
+tr-memory.c3.viz.items.0.w	write sensor data to flash every second
+tr-memory.c3.viz.items.0.r	keep it in RAM, write in batches
+tr-memory.c3.viz.items.1.w	same block every time
+tr-memory.c3.viz.items.1.r	use wear levelling
+tr-memory.c4.title	EEPROM
+tr-memory.c4.text	EEPROM can rewrite single bytes and is great for small settings like calibration values. On the ESP32 it's emulated in flash, with a library that handles it.
+tr-memory.c4.viz.items.0	Calibration values
+tr-memory.c4.viz.items.1	Wi-Fi credentials
+tr-memory.c4.viz.items.2	Counters and settings
+tr-memory.c4.viz.items.3	Write only when changed
+tr-memory.c5.title	Memory on the ESP32
+tr-memory.c5.text	A classic ESP32 has about 520 KB of SRAM and usually 4 MB of flash. Variants with PSRAM add several MB of extra RAM, handy for cameras and displays.
+tr-memory.c5.viz.unit	KB (approx.)
+tr-memory.c5.viz.items.0.l	Arduino Uno RAM
+tr-memory.c5.viz.items.1.l	ESP32 SRAM
+tr-memory.c5.viz.items.2.l	ESP32 flash
+tr-memory.c5.viz.items.3.l	PSRAM
+tr-memory.c6.title	Stack and heap
+tr-memory.c6.text	Programs use two areas of RAM: the stack for function calls and local variables, the heap for memory requested at runtime. On small devices, fragmenting the heap with many strings can crash the program after hours.
+tr-memory.c6.viz.l.t	Stack
+tr-memory.c6.viz.l.items.0	automatic
+tr-memory.c6.viz.l.items.1	function calls
+tr-memory.c6.viz.l.items.2	fast
+tr-memory.c6.viz.r.t	Heap
+tr-memory.c6.viz.r.items.0	requested at runtime
+tr-memory.c6.viz.r.items.1	can fragment
+tr-memory.c6.viz.r.items.2	watch on small chips
+tr-memory.c7.title	Storage hierarchy
+tr-memory.c7.text	Computers balance speed and size: tiny, ultra-fast registers and caches near the CPU, then RAM, then SSDs, then hard disks or the cloud.
+tr-memory.c7.viz.items.0	Registers
+tr-memory.c7.viz.items.1	CPU cache
+tr-memory.c7.viz.items.2	RAM
+tr-memory.c7.viz.items.3	SSD
+tr-memory.c7.viz.items.4	Hard disk and cloud
+tr-memory.c8.title	SD cards for logging
+tr-memory.c8.text	For long-term data logging, an SD card over SPI offers gigabytes of storage. Write in blocks, close files properly, and expect cheap cards to fail eventually.
+tr-memory.c8.viz.items.0	Write in blocks
+tr-memory.c8.viz.items.1	Flush or close files
+tr-memory.c8.viz.items.2	Use good-quality cards
+tr-memory.c8.viz.items.3	Keep a backup copy
+tr-memory.c9.title	Units of storage
+tr-memory.c9.text	A kilobyte is 1,000 bytes in SI units, but operating systems often count 1,024 (properly a kibibyte, KiB). That's why a "1 TB" drive shows up as about 931 GB.
+tr-memory.c9.viz.items.0.a	1 KB
+tr-memory.c9.viz.items.0.b	1,000 bytes
+tr-memory.c9.viz.items.1.a	1 KiB
+tr-memory.c9.viz.items.1.b	1,024 bytes
+tr-memory.c9.viz.items.2.a	1 TB drive
+tr-memory.c9.viz.items.2.b	shows as ~931 GiB
+tr-motors.title	Driving motors
+tr-motors.summary	H-bridges, servos and steppers.
+tr-motors.q0.q	What lets a DC motor run in both directions?
+tr-motors.q0.o0	A diode
+tr-motors.q0.o1	An H-bridge
+tr-motors.q0.o2	A capacitor
+tr-motors.q0.x	It reverses current with four switches.
+tr-motors.q1.q	A 1.5 ms servo pulse usually means…
+tr-motors.q1.o0	0°
+tr-motors.q1.o1	90° (centre)
+tr-motors.q1.o2	180°
+tr-motors.q1.x	1 ms to 2 ms maps to 0–180°.
+tr-motors.q2.q	Why might an ESP32 reset when a motor starts?
+tr-motors.q2.o0	Wi-Fi interference
+tr-motors.q2.o1	Supply dips from the motor's start-up current
+tr-motors.q2.o2	Software bug only
+tr-motors.q2.x	Use a separate supply and capacitors.
+tr-motors.c0.title	Never drive a motor from a pin
+tr-motors.c0.text	A small DC motor can draw hundreds of milliamps, more at start-up, and makes electrical noise. Always use a driver: a transistor, MOSFET or motor driver chip, plus a flyback diode.
+tr-motors.c0.viz.steps.0	GPIO pin
+tr-motors.c0.viz.steps.1	Driver (MOSFET or chip)
+tr-motors.c0.viz.steps.2	Motor with its own supply
+tr-motors.c0.viz.steps.3	Shared ground
+tr-motors.c1.title	H-bridge
+tr-motors.c1.text	An H-bridge uses four switches to reverse the current through a motor, so it can spin both ways. Chips like the L298N, DRV8833 or TB6612 do it for you.
+tr-motors.c1.viz.l.t	Switches A and D on
+tr-motors.c1.viz.l.items.0	current one way
+tr-motors.c1.viz.l.items.1	forwards
+tr-motors.c1.viz.r.t	Switches B and C on
+tr-motors.c1.viz.r.items.0	current reversed
+tr-motors.c1.viz.r.items.1	backwards
+tr-motors.c2.title	Speed with PWM
+tr-motors.c2.text	Feed PWM into the motor driver and the motor spins at a speed set by the duty cycle. Frequencies of several kHz to 20+ kHz avoid audible whining.
+tr-motors.c2.viz.unit	% speed (approx.)
+tr-motors.c2.viz.items.0.l	25% duty
+tr-motors.c2.viz.items.1.l	50% duty
+tr-motors.c2.viz.items.2.l	75% duty
+tr-motors.c2.viz.items.3.l	100% duty
+tr-motors.c3.title	Stall current
+tr-motors.c3.text	When a motor is blocked or starting, it draws its stall current, often 5–10 times the running current. Size the driver and supply for it.
+tr-motors.c3.viz.unit	amps (example small motor)
+tr-motors.c3.viz.items.0.l	Running
+tr-motors.c3.viz.items.1.l	Starting
+tr-motors.c3.viz.items.2.l	Stalled
+tr-motors.c4.title	Servos
+tr-motors.c4.text	A hobby servo has a motor, gearbox and position sensor in one box. You send a pulse every 20 ms; its width, 1 to 2 ms, sets the angle from 0° to 180°.
+tr-motors.c4.viz.unit	ms
+tr-motors.c5.title	Stepper motors
+tr-motors.c5.text	A stepper moves in fixed steps, typically 200 per revolution (1.8° each). Drivers like the A4988 or TMC2209 take step and direction pulses and can microstep for smoother motion.
+tr-motors.c5.viz.f	steps per mm = (steps/rev × microsteps) ÷ mm per rev
+tr-motors.c5.viz.items.0.m	steps/rev
+tr-motors.c5.viz.items.1.m	microsteps
+tr-motors.c5.viz.items.2.s	8 mm
+tr-motors.c5.viz.items.2.m	lead screw → 400 steps/mm
+tr-motors.c6.title	Brushless motors
+tr-motors.c6.text	Brushless DC motors (drones, fans, e-bikes) need an electronic speed controller (ESC) that switches three phases in sequence. They're efficient and long-lasting.
+tr-motors.c6.viz.steps.0	Controller signal
+tr-motors.c6.viz.steps.1	ESC switches 3 phases
+tr-motors.c6.viz.steps.2	Rotating field
+tr-motors.c6.viz.steps.3	Motor spins
+tr-motors.c7.title	Separate supplies
+tr-motors.c7.text	Power motors from their own supply, not from the microcontroller's 3.3 V regulator, and connect the grounds. Add capacitors near the motor driver to absorb spikes.
+tr-motors.c7.viz.items.0.w	motor on the ESP32 3.3 V pin
+tr-motors.c7.viz.items.0.r	separate motor supply, common ground
+tr-motors.c7.viz.items.1.w	ESP32 resets when motor starts
+tr-motors.c7.viz.items.1.r	add bulk capacitor near the driver
+tr-motors.c8.title	Encoders
+tr-motors.c8.text	An encoder on the motor shaft counts pulses as it turns, so the controller knows the exact position and speed. With feedback, a cheap DC motor becomes a precise actuator.
+tr-motors.c8.viz.steps.0	Set target
+tr-motors.c8.viz.steps.1	Encoder measures position
+tr-motors.c8.viz.steps.2	Controller corrects
+tr-motors.c8.viz.steps.3	Repeat
+tr-motors.c9.title	PID control
+tr-motors.c9.text	A PID controller adjusts output based on the error now (P), accumulated past error (I) and how fast the error is changing (D). It keeps motors, heaters and drones steady.
+tr-motors.c9.viz.items.0.a	P
+tr-motors.c9.viz.items.0.b	react to the current error
+tr-motors.c9.viz.items.1.a	I
+tr-motors.c9.viz.items.1.b	remove steady offset
+tr-motors.c9.viz.items.2.a	D
+tr-motors.c9.viz.items.2.b	damp overshoot
+tr-power.title	Low-power design
+tr-power.summary	Making a battery last for months or years.
+tr-power.q0.q	What matters most for battery life in a device that sleeps 99% of the time?
+tr-power.q0.o0	Peak current
+tr-power.q0.o1	Sleep current and time awake
+tr-power.q0.o2	CPU speed
+tr-power.q0.x	Average current sets battery life.
+tr-power.q1.q	A 2,000 mAh battery and 0.5 mA average current lasts about…
+tr-power.q1.o0	40 hours
+tr-power.q1.o1	4,000 hours (~5.5 months)
+tr-power.q1.o2	4 years
+tr-power.q1.x	2,000 ÷ 0.5 = 4,000 h.
+tr-power.q2.q	How can you reduce the energy of each Wi-Fi wake-up?
+tr-power.q2.o0	Use DHCP
+tr-power.q2.o1	Use a static IP and fixed channel to connect faster
+tr-power.q2.o2	Transmit louder
+tr-power.q2.x	Less time awake, less energy.
+tr-power.c0.title	Average current is what counts
+tr-power.c0.text	Battery life = capacity ÷ average current. A device that wakes for 1 second every 10 minutes spends 99.8% of its time asleep, so sleep current matters enormously.
+tr-power.c0.viz.f	hours = mAh ÷ average mA
+tr-power.c0.viz.items.0.s	mAh
+tr-power.c0.viz.items.0.m	battery capacity
+tr-power.c0.viz.items.1.s	average mA
+tr-power.c0.viz.items.1.m	over the whole cycle
+tr-power.c1.title	Average current
+tr-power.c1.text	Weight each state by how long it lasts.
+tr-power.c1.example.0	2 s at 120 mA, 598 s at 10 µA, per 600 s
+tr-power.c1.example.1	(240 + 6) ÷ 600
+tr-power.c1.example.2	≈ 0.41 mA → 3,000 mAh lasts ~300 days
+tr-power.c1.viz.f	I avg = (I awake × t awake + I sleep × t sleep) ÷ t total
+tr-power.c1.viz.items.0.s	awake
+tr-power.c1.viz.items.0.m	120 mA for 2 s
+tr-power.c1.viz.items.1.s	asleep
+tr-power.c1.viz.items.1.m	0.01 mA for 598 s
+tr-power.c2.title	Deep sleep
+tr-power.c2.text	An ESP32 draws about 100+ mA with Wi-Fi on but only around 10 µA in deep sleep (on a well-designed board). A timer, a pin or a sensor can wake it.
+tr-power.c2.viz.unit	mA (ESP32, approx.)
+tr-power.c2.viz.items.0.l	Wi-Fi transmitting
+tr-power.c2.viz.items.1.l	CPU active
+tr-power.c2.viz.items.2.l	Light sleep
+tr-power.c2.viz.items.3.l	Deep sleep
+tr-power.c3.title	The board matters
+tr-power.c3.text	Many dev boards waste power: a power LED, a USB-serial chip and an inefficient regulator can draw several mA even when the chip sleeps. For battery projects, choose a low-power board or remove the LED.
+tr-power.c3.viz.items.0	Remove the power LED
+tr-power.c3.viz.items.1	Low-quiescent regulator
+tr-power.c3.viz.items.2	No always-on USB chip
+tr-power.c3.viz.items.3	Power sensors only when reading
+tr-power.c4.title	Switch off the sensors
+tr-power.c4.text	Sensors draw current too. Power them from a GPIO pin or a MOSFET switch, turn them on just before reading, and off afterwards.
+tr-power.c4.viz.steps.0	Wake up
+tr-power.c4.viz.steps.1	Power the sensor
+tr-power.c4.viz.steps.2	Read
+tr-power.c4.viz.steps.3	Power it off
+tr-power.c4.viz.steps.4	Sleep
+tr-power.c5.title	Fast Wi-Fi connection
+tr-power.c5.text	Connecting to Wi-Fi can take seconds. Using a static IP, a fixed channel and saved credentials can cut it to under a second, saving a lot of energy per wake-up.
+tr-power.c5.viz.unit	seconds awake (approx.)
+tr-power.c5.viz.items.0.l	DHCP and scan
+tr-power.c5.viz.items.1.l	Static IP
+tr-power.c5.viz.items.2.l	Static IP + fixed channel
+tr-power.c6.title	Choose the radio
+tr-power.c6.text	For frequent readings over long distances on battery, LoRa or BLE use far less energy per message than Wi-Fi.
+tr-power.c6.viz.unit	relative energy per message
+tr-power.c6.viz.items.0.l	Wi-Fi
+tr-power.c6.viz.items.1.l	BLE
+tr-power.c6.viz.items.2.l	LoRa (short message)
+tr-power.c7.title	Battery chemistry choice
+tr-power.c7.text	Li-ion cells give 3.0–4.2 V and recharge; LiFePO4 is safer at 3.2 V nominal; primary lithium (like AA lithium or Li-SOCl₂) suits years without recharging in the cold.
+tr-power.c7.viz.items.0.a	Li-ion 18650
+tr-power.c7.viz.items.0.b	rechargeable, ~3,000 mAh
+tr-power.c7.viz.items.1.a	LiFePO4
+tr-power.c7.viz.items.1.b	safer, 3.2 V
+tr-power.c7.viz.items.2.a	Li-SOCl₂
+tr-power.c7.viz.items.2.b	years, non-rechargeable
+tr-power.c7.viz.items.3.a	alkaline AA
+tr-power.c7.viz.items.3.b	cheap, weak in cold
+tr-power.c8.title	Solar topping up
+tr-power.c8.text	A small solar panel and charge controller can keep a remote sensor running indefinitely. Size the panel for winter, when sun is weakest, with some margin for cloudy weeks.
+tr-power.c8.viz.steps.0	Small panel
+tr-power.c8.viz.steps.1	Charge controller
+tr-power.c8.viz.steps.2	Battery
+tr-power.c8.viz.steps.3	Sleepy sensor
+tr-power.c9.title	Measure, don't guess
+tr-power.c9.text	Use a multimeter in series, or better a power profiler, to measure sleep and active currents. Small surprises like a floating pin or a pull-up can drain a battery in weeks.
+tr-power.c9.viz.items.0	Measure sleep current
+tr-power.c9.viz.items.1	Measure wake time
+tr-power.c9.viz.items.2	Check for floating pins
+tr-power.c9.viz.items.3	Log battery voltage in your data
+tr-datasheets.title	Reading datasheets and schematics
+tr-datasheets.summary	Finding what matters in 60 pages.
+tr-datasheets.q0.q	What are absolute maximum ratings?
+tr-datasheets.q0.o0	Normal operating values
+tr-datasheets.q0.o1	Limits that must never be exceeded
+tr-datasheets.q0.o2	Typical values
+tr-datasheets.q0.x	Exceeding them can damage the part.
+tr-datasheets.q1.q	Two wires labelled "SCL" in different places on a schematic are…
+tr-datasheets.q1.o0	Different signals
+tr-datasheets.q1.o1	Connected
+tr-datasheets.q1.o2	Errors
+tr-datasheets.q1.x	Net labels connect points with the same name.
+tr-datasheets.q2.q	Should you design using typical or worst-case values?
+tr-datasheets.q2.o0	Typical
+tr-datasheets.q2.o1	Worst-case (min/max)
+tr-datasheets.q2.o2	Neither
+tr-datasheets.q2.x	Guarantees are the min and max values.
+tr-datasheets.c0.title	Start with the summary
+tr-datasheets.c0.text	The first page lists the key features: supply range, interface, accuracy, current. If it doesn't fit your project there, you can stop reading.
+tr-datasheets.c0.viz.items.0	Supply voltage range
+tr-datasheets.c0.viz.items.1	Interface (I²C, SPI…)
+tr-datasheets.c0.viz.items.2	Accuracy and range
+tr-datasheets.c0.viz.items.3	Current draw
+tr-datasheets.c0.viz.items.4	Package
+tr-datasheets.c1.title	Absolute maximum ratings
+tr-datasheets.c1.text	These are limits that must never be exceeded, even briefly, or the part may be damaged. They are not normal operating conditions.
+tr-datasheets.c1.viz.l.t	Absolute maximum
+tr-datasheets.c1.viz.l.items.0	never exceed
+tr-datasheets.c1.viz.l.items.1	damage risk
+tr-datasheets.c1.viz.r.t	Recommended operating
+tr-datasheets.c1.viz.r.items.0	where it works as specified
+tr-datasheets.c2.title	Typical vs min and max
+tr-datasheets.c2.text	"Typical" is what most parts do; min and max are guarantees. Design for the worst case, not the typical value.
+tr-datasheets.c2.viz.unit	example: accuracy ±°C
+tr-datasheets.c2.viz.items.0.l	Typical
+tr-datasheets.c2.viz.items.1.l	Maximum
+tr-datasheets.c3.title	Pinouts
+tr-datasheets.c3.text	The pinout diagram shows which pin does what, viewed from above (usually). Pin 1 is marked by a dot or notch. Mistakes here are the most common cause of dead boards.
+tr-datasheets.c3.viz.items.0	Find the pin 1 marker
+tr-datasheets.c3.viz.items.1	Check top or bottom view
+tr-datasheets.c3.viz.items.2	Match power and ground
+tr-datasheets.c3.viz.items.3	Check every signal name
+tr-datasheets.c4.title	Application circuit
+tr-datasheets.c4.text	Most datasheets show a typical application circuit with the exact capacitors and resistors to use. Copy it closely, especially for regulators and radios.
+tr-datasheets.c4.viz.steps.0	Find the application circuit
+tr-datasheets.c4.viz.steps.1	Copy values and layout
+tr-datasheets.c4.viz.steps.2	Adjust only what you understand
+tr-datasheets.c5.title	Schematic symbols
+tr-datasheets.c5.text	Learn the basic symbols: resistor (zigzag or box), capacitor (two plates), diode (triangle and bar), transistor, ground and supply arrows.
+tr-datasheets.c5.viz.items.0.a	zigzag or box
+tr-datasheets.c5.viz.items.0.b	resistor
+tr-datasheets.c5.viz.items.1.a	two plates
+tr-datasheets.c5.viz.items.1.b	capacitor
+tr-datasheets.c5.viz.items.2.a	triangle + bar
+tr-datasheets.c5.viz.items.2.b	diode
+tr-datasheets.c5.viz.items.3.b	ground
+tr-datasheets.c5.viz.items.4.a	arrow up
+tr-datasheets.c5.viz.items.4.b	supply
+tr-datasheets.c6.title	Net labels
+tr-datasheets.c6.text	Large schematics don't draw every wire; they give wires names. Two points labelled "SDA" are connected even if no line joins them.
+tr-datasheets.c6.viz.steps.0	Label a wire "SDA"
+tr-datasheets.c6.viz.steps.1	Same label elsewhere
+tr-datasheets.c6.viz.steps.2	They're connected
+tr-datasheets.c7.title	Graphs tell the truth
+tr-datasheets.c7.text	Graphs show how parameters change with temperature, voltage or load. A sensor accurate at 25 °C may drift at −10 °C; a regulator may sag at high current.
+tr-datasheets.c7.viz.items.0	Accuracy vs temperature
+tr-datasheets.c7.viz.items.1	Current vs voltage
+tr-datasheets.c7.viz.items.2	Efficiency vs load
+tr-datasheets.c7.viz.items.3	Response vs frequency
+tr-datasheets.c8.title	Errata
+tr-datasheets.c8.text	Chips can have known bugs, published in an errata document. If a feature misbehaves despite correct code, check the errata first.
+tr-datasheets.c8.viz.steps.0	Strange behaviour
+tr-datasheets.c8.viz.steps.1	Check wiring
+tr-datasheets.c8.viz.steps.2	Check errata
+tr-datasheets.c8.viz.steps.3	Workaround or different part
+tr-datasheets.c9.title	Where to find them
+tr-datasheets.c9.text	Datasheets are free from the manufacturer's website and distributors like Mouser, DigiKey or LCSC. Search by the exact part number printed on the chip.
+tr-datasheets.c9.viz.items.0	Manufacturer website
+tr-datasheets.c9.viz.items.1	Mouser, DigiKey, LCSC
+tr-datasheets.c9.viz.items.2	Exact part number
+tr-datasheets.c9.viz.items.3	Latest revision
+tr-scope.title	Oscilloscopes and debugging
+tr-scope.summary	Seeing signals and finding faults.
+tr-scope.q0.q	Why is triggering important on a scope?
+tr-scope.q0.o0	It saves power
+tr-scope.q0.o1	It gives a stable picture of repeating signals
+tr-scope.q0.o2	It measures current
+tr-scope.q0.x	It synchronises the display.
+tr-scope.q1.q	What's dangerous about a scope's ground clip?
+tr-scope.q1.o0	It's sharp
+tr-scope.q1.o1	It's tied to earth, so the wrong connection makes a short
+tr-scope.q1.o2	It reverses polarity
+tr-scope.q1.x	Use isolated probes on mains.
+tr-scope.q2.q	Where should debugging start?
+tr-scope.q2.o0	Rewrite the code
+tr-scope.q2.o1	Check the power supply voltages
+tr-scope.q2.o2	Replace the chip
+tr-scope.q2.x	Power problems cause many symptoms.
+tr-scope.c0.title	What a scope shows
+tr-scope.c0.text	A multimeter gives one number; an oscilloscope draws voltage against time, so you can see waveforms, glitches, noise and timing.
+tr-scope.c0.viz.l.t	Multimeter
+tr-scope.c0.viz.l.items.0	one number
+tr-scope.c0.viz.l.items.1	slow changes
+tr-scope.c0.viz.l.items.2	cheap
+tr-scope.c0.viz.r.t	Oscilloscope
+tr-scope.c0.viz.r.items.0	voltage over time
+tr-scope.c0.viz.r.items.1	fast events
+tr-scope.c0.viz.r.items.2	shows shape
+tr-scope.c1.title	The two axes
+tr-scope.c1.text	The vertical axis is volts per division; the horizontal is time per division. Adjust both until the signal fills the screen nicely.
+tr-scope.c1.viz.items.0.a	V/div
+tr-scope.c1.viz.items.0.b	vertical scale
+tr-scope.c1.viz.items.1.a	s/div
+tr-scope.c1.viz.items.1.b	time scale
+tr-scope.c1.viz.items.2.a	trigger
+tr-scope.c1.viz.items.2.b	what starts the trace
+tr-scope.c1.viz.items.3.a	probe ×10
+tr-scope.c1.viz.items.3.b	attenuation setting
+tr-scope.c2.title	Triggering
+tr-scope.c2.text	The trigger tells the scope when to start drawing, such as when the voltage crosses 1.5 V going up. Without it, a repeating signal scrolls and blurs.
+tr-scope.c2.viz.steps.0	Signal rises past trigger level
+tr-scope.c2.viz.steps.1	Scope starts drawing
+tr-scope.c2.viz.steps.2	Stable picture each sweep
+tr-scope.c3.title	Bandwidth
+tr-scope.c3.text	A scope's bandwidth limits how fast a signal it can show accurately. As a rule, choose bandwidth about five times the highest frequency you care about.
+tr-scope.c3.viz.f	bandwidth ≈ 5 × signal frequency
+tr-scope.c3.viz.items.0.s	10 MHz SPI clock
+tr-scope.c3.viz.items.0.m	needs ~50 MHz scope
+tr-scope.c4.title	Ground lead danger
+tr-scope.c4.text	The scope's probe ground is connected to mains earth. Clipping it onto a point that isn't at ground potential, such as in a mains circuit, creates a short circuit. Use isolated or differential probes for mains.
+tr-scope.c4.viz.items.0.w	ground clip on a mains circuit
+tr-scope.c4.viz.items.0.r	differential or isolated probe
+tr-scope.c4.viz.items.1.w	ground on a non-ground node
+tr-scope.c4.viz.items.1.r	short circuit
+tr-scope.c5.title	Debugging method
+tr-scope.c5.text	Work from power outward: check supply voltages, then clocks, then signals. Change one thing at a time and note results.
+tr-scope.c5.viz.steps.0	Check power rails
+tr-scope.c5.viz.steps.1	Check clocks
+tr-scope.c5.viz.steps.2	Check signals
+tr-scope.c5.viz.steps.3	Change one thing at a time
+tr-scope.c6.title	Serial logging
+tr-scope.c6.text	Printing values over the serial port is the cheapest debugger: what's the sensor reading, which branch did the code take, how long did it take?
+tr-scope.c6.viz.items.0	Print key variables
+tr-scope.c6.viz.items.1	Print timestamps
+tr-scope.c6.viz.items.2	Print which branch ran
+tr-scope.c6.viz.items.3	Remove noisy prints later
+tr-scope.c7.title	Rubber duck debugging
+tr-scope.c7.text	Explaining the problem step by step, even to a rubber duck or a colleague, often reveals the mistake. Writing it down works too.
+tr-scope.c7.viz.steps.0	Explain each step aloud
+tr-scope.c7.viz.steps.1	Notice the gap
+tr-scope.c7.viz.steps.2	Find the bug
+tr-scope.c8.title	Common culprits
+tr-scope.c8.text	Many faults are simple: no common ground, swapped TX/RX, wrong voltage, loose breadboard wire, missing pull-up, or the wrong board selected in the IDE.
+tr-scope.c8.viz.items.0	Common ground?
+tr-scope.c8.viz.items.1	TX/RX swapped?
+tr-scope.c8.viz.items.2	Right voltage?
+tr-scope.c8.viz.items.3	Loose wire?
+tr-scope.c8.viz.items.4	Pull-ups present?
+tr-scope.c9.title	Cheap tools go far
+tr-scope.c9.text	A €10 logic analyser, a basic multimeter and a USB oscilloscope or a used bench scope cover most hobby debugging.
+tr-scope.c9.viz.items.0	Multimeter
+tr-scope.c9.viz.items.1	USB logic analyser
+tr-scope.c9.viz.items.2	Entry-level oscilloscope
+tr-scope.c9.viz.items.3	Bench power supply with current limit
+tr-noise.title	Noise, grounding and decoupling
+tr-noise.summary	Why circuits misbehave and how to calm them.
+tr-noise.q0.q	Where should a 100 nF decoupling capacitor go?
+tr-noise.q0.o0	Anywhere on the board
+tr-noise.q0.o1	Right next to the chip's power pins
+tr-noise.q0.o2	At the battery
+tr-noise.q0.x	Short distance means fast local supply.
+tr-noise.q1.q	What does hysteresis prevent?
+tr-noise.q1.o0	Power loss
+tr-noise.q1.o1	Rapid on-off flickering around a threshold
+tr-noise.q1.o2	Ground loops
+tr-noise.q1.x	Separate on and off thresholds.
+tr-noise.q2.q	Why use twisted pair for long sensor cables?
+tr-noise.q2.o0	It's cheaper
+tr-noise.q2.o1	Noise is picked up equally on both wires and cancels
+tr-noise.q2.o2	It carries more current
+tr-noise.q2.x	Twisting cancels induced noise.
+tr-noise.c0.title	Decoupling capacitors
+tr-noise.c0.text	Every chip needs a small capacitor (typically 100 nF) right next to its power pins. When the chip suddenly draws current, the capacitor supplies it locally, preventing dips on the rail.
+tr-noise.c0.viz.steps.0	Chip switches
+tr-noise.c0.viz.steps.1	Sudden current demand
+tr-noise.c0.viz.steps.2	Nearby 100 nF supplies it
+tr-noise.c0.viz.steps.3	Rail stays steady
+tr-noise.c1.title	Bulk capacitance
+tr-noise.c1.text	Besides small decoupling caps, add a larger electrolytic or ceramic (10–470 µF) where power enters the board and near motors or radios, to absorb slower dips.
+tr-noise.c1.viz.l.t	Decoupling 100 nF
+tr-noise.c1.viz.l.items.0	next to each chip
+tr-noise.c1.viz.l.items.1	fast spikes
+tr-noise.c1.viz.r.t	Bulk 10–470 µF
+tr-noise.c1.viz.r.items.0	at the power input
+tr-noise.c1.viz.r.items.1	slower dips
+tr-noise.c2.title	Ground loops
+tr-noise.c2.text	If two parts of a system are grounded at different points with different potentials, current flows through the ground wires, causing hum in audio or errors in sensors.
+tr-noise.c2.viz.items.0.w	ground at two distant points
+tr-noise.c2.viz.items.0.r	single ground point
+tr-noise.c2.viz.items.1.w	audio hum
+tr-noise.c2.viz.items.1.r	break the loop with isolation
+tr-noise.c3.title	Star grounding
+tr-noise.c3.text	Bring grounds from noisy parts (motors, power) and sensitive parts (sensors) back to one point separately, so noisy currents don't flow through sensitive ground paths.
+tr-noise.c3.viz.root	Star ground point
+tr-noise.c3.viz.items.0	Motor driver ground
+tr-noise.c3.viz.items.1	Microcontroller ground
+tr-noise.c3.viz.items.2	Sensor ground
+tr-noise.c4.title	Long sensor cables
+tr-noise.c4.text	Long wires act as antennas. Use twisted pairs, shielded cable, lower impedance signals, or digital and differential signals for long runs.
+tr-noise.c4.viz.items.0	Twisted pair
+tr-noise.c4.viz.items.1	Shielded cable, shield grounded at one end
+tr-noise.c4.viz.items.2	Digital or differential signals
+tr-noise.c4.viz.items.3	Filter at the input
+tr-noise.c5.title	Pull-ups and floating inputs
+tr-noise.c5.text	An unconnected input picks up noise and reads random values, and can even increase power use. Always define its level with a pull-up or pull-down.
+tr-noise.c5.viz.items.0.w	unused input floating
+tr-noise.c5.viz.items.0.r	enable pull-up or pull-down
+tr-noise.c5.viz.items.1.w	button input random
+tr-noise.c5.viz.items.1.r	add pull-up
+tr-noise.c6.title	Software filtering
+tr-noise.c6.text	Even with good hardware, readings may jitter. Median filters remove spikes; moving averages smooth noise; hysteresis stops thresholds from flickering.
+tr-noise.c6.viz.items.0.a	median
+tr-noise.c6.viz.items.0.b	removes spikes
+tr-noise.c6.viz.items.1.a	moving average
+tr-noise.c6.viz.items.1.b	smooths noise
+tr-noise.c6.viz.items.2.a	hysteresis
+tr-noise.c6.viz.items.2.b	stable on/off thresholds
+tr-noise.c7.title	Hysteresis
+tr-noise.c7.text	A thermostat set at 20 °C would click on and off constantly around 20. With hysteresis it turns on at 19.5 and off at 20.5. ESPHome and Home Assistant thermostats support this.
+tr-noise.c7.viz.unit	°C
+tr-noise.c7.viz.items.0.l	heating on
+tr-noise.c7.viz.items.1.l	heating off
+tr-noise.c8.title	Switching noise
+tr-noise.c8.text	Buck converters and motors create fast edges that radiate noise. Keep their loops small, place input capacitors close, and separate them from analog circuits.
+tr-noise.c8.viz.items.0	Small switching loops
+tr-noise.c8.viz.items.1	Input capacitors close by
+tr-noise.c8.viz.items.2	Analog circuits far away
+tr-noise.c8.viz.items.3	Solid ground plane
+tr-noise.c9.title	EMC
+tr-noise.c9.text	Commercial products must pass electromagnetic compatibility (EMC) tests: they mustn't emit too much interference or be upset by it. The CE mark in Europe covers this.
+tr-noise.c9.viz.l.t	Emissions
+tr-noise.c9.viz.l.items.0	don't disturb others
+tr-noise.c9.viz.l.items.1	radio, TV
+tr-noise.c9.viz.r.t	Immunity
+tr-noise.c9.viz.r.items.0	survive interference
+tr-noise.c9.viz.r.items.1	static, surges, nearby radios
+tr-displays.title	Displays and LEDs
+tr-displays.summary	Lighting things up, from one LED to a screen.
+tr-displays.q0.q	How much current can 100 WS2812B LEDs draw at full white?
+tr-displays.q0.o0	0.6 A
+tr-displays.q0.o1	6 A
+tr-displays.q0.o2	60 A
+tr-displays.q0.x	100 × 60 mA = 6 A.
+tr-displays.q1.q	Which display keeps its image with no power?
+tr-displays.q1.o0	OLED
+tr-displays.q1.o1	LCD
+tr-displays.q1.o2	E-paper
+tr-displays.q1.x	E-paper is bistable.
+tr-displays.q2.q	Red light plus green light appears…
+tr-displays.q2.o0	Blue
+tr-displays.q2.o1	Yellow
+tr-displays.q2.o2	White
+tr-displays.q2.x	Additive colour mixing.
+tr-displays.c0.title	LED brightness and current
+tr-displays.c0.text	LED brightness depends on current, so LEDs are driven with a resistor or a constant-current driver, never straight from a voltage source.
+tr-displays.c0.viz.steps.0	Supply voltage
+tr-displays.c0.viz.steps.1	Resistor or current driver
+tr-displays.c0.viz.steps.2	LED at its rated current
+tr-displays.c0.viz.steps.3	Steady brightness
+tr-displays.c1.title	Addressable LEDs
+tr-displays.c1.text	WS2812B ("NeoPixel") strips contain a tiny controller in every LED. One data wire sets the colour of each LED individually, perfect for effects controlled by an ESP32.
+tr-displays.c1.viz.steps.0	ESP32 data pin
+tr-displays.c1.viz.steps.1	LED 1 takes its colour
+tr-displays.c1.viz.steps.2	Passes the rest on
+tr-displays.c1.viz.steps.3	LED 2, LED 3…
+tr-displays.c2.title	Powering LED strips
+tr-displays.c2.text	Each WS2812B can draw about 60 mA at full white. Long strips need thick wires and power injected at several points.
+tr-displays.c2.example.0	5 m × 60 LEDs/m
+tr-displays.c2.example.1	300 × 0.06
+tr-displays.c2.example.2	≈ 18 A at full white: big 5 V supply
+tr-displays.c2.viz.f	I ≈ LEDs × 60 mA
+tr-displays.c2.viz.items.0.s	60 LEDs
+tr-displays.c2.viz.items.0.m	one metre
+tr-displays.c2.viz.items.1.s	≈ 3.6 A
+tr-displays.c2.viz.items.1.m	at full white, 5 V
+tr-displays.c3.title	Level shifting the data
+tr-displays.c3.text	WS2812B strips at 5 V may not reliably read a 3.3 V data signal from an ESP32. A simple level shifter (like a 74AHCT125) or a sacrificial first LED fixes flicker.
+tr-displays.c3.viz.items.0.w	random colours and flicker
+tr-displays.c3.viz.items.0.r	level shifter on the data line
+tr-displays.c3.viz.items.1.w	long data wire
+tr-displays.c3.viz.items.1.r	add a 330 Ω resistor and keep it short
+tr-displays.c4.title	Character LCDs
+tr-displays.c4.text	The classic 16×2 LCD shows two lines of text. With an I²C backpack, it needs only four wires.
+tr-displays.c4.viz.items.0.a	16×2 LCD
+tr-displays.c4.viz.items.0.b	2 lines of 16 characters
+tr-displays.c4.viz.items.1.a	I²C backpack
+tr-displays.c4.viz.items.1.b	4 wires
+tr-displays.c4.viz.items.2.a	backlight
+tr-displays.c4.viz.items.2.b	adjustable
+tr-displays.c5.title	OLED displays
+tr-displays.c5.text	Small OLED screens (like 0.96" SSD1306, 128×64) give crisp graphics with no backlight. Each pixel emits light, so black uses no power. Static images can burn in over time.
+tr-displays.c5.viz.l.t	OLED
+tr-displays.c5.viz.l.items.0	deep blacks
+tr-displays.c5.viz.l.items.1	small
+tr-displays.c5.viz.l.items.2	can burn in
+tr-displays.c5.viz.r.t	LCD/TFT
+tr-displays.c5.viz.r.items.0	backlit
+tr-displays.c5.viz.r.items.1	bigger and cheaper
+tr-displays.c5.viz.r.items.2	colour
+tr-displays.c6.title	E-paper
+tr-displays.c6.text	E-paper displays keep their image with zero power, like a Kindle. They refresh slowly, but are perfect for battery-powered dashboards updated every few minutes.
+tr-displays.c6.viz.l.t	E-paper
+tr-displays.c6.viz.l.items.0	no power to hold image
+tr-displays.c6.viz.l.items.1	slow refresh
+tr-displays.c6.viz.l.items.2	readable in sun
+tr-displays.c6.viz.r.t	TFT
+tr-displays.c6.viz.r.items.0	fast and colourful
+tr-displays.c6.viz.r.items.1	needs constant power
+tr-displays.c7.title	Multiplexing
+tr-displays.c7.text	To drive many LEDs with few pins, light them rows at a time very quickly. Persistence of vision makes the display look steady.
+tr-displays.c7.viz.steps.0	Light row 1
+tr-displays.c7.viz.steps.1	Row 2
+tr-displays.c7.viz.steps.2	Row 3
+tr-displays.c7.viz.steps.3	Repeat hundreds of times a second
+tr-displays.c8.title	Colour mixing
+tr-displays.c8.text	RGB LEDs mix red, green and blue light. Full red + green looks yellow; all three at full make white.
+tr-displays.c8.viz.items.0.a	red + green
+tr-displays.c8.viz.items.0.b	yellow
+tr-displays.c8.viz.items.1.a	green + blue
+tr-displays.c8.viz.items.1.b	cyan
+tr-displays.c8.viz.items.2.a	red + blue
+tr-displays.c8.viz.items.2.b	magenta
+tr-displays.c8.viz.items.3.a	all three
+tr-displays.c8.viz.items.3.b	white
+tr-displays.c9.title	Displays in ESPHome
+tr-displays.c9.text	ESPHome supports many displays: show temperatures, clocks or Home Assistant states with a few lines of configuration and a lambda for drawing.
+tr-displays.c9.viz.items.0	SSD1306 OLED
+tr-displays.c9.viz.items.1	ILI9341 TFT
+tr-displays.c9.viz.items.2	Waveshare e-paper
+tr-displays.c9.viz.items.3	WS2812 strips via light component
+tr-computer.title	How a computer works
+tr-computer.summary	From transistors to running programs.
+tr-computer.q0.q	What are the steps of the CPU cycle?
+tr-computer.q0.o0	Load, save, quit
+tr-computer.q0.o1	Fetch, decode, execute
+tr-computer.q0.o2	Read, write, print
+tr-computer.q0.x	The core loop of every processor.
+tr-computer.q1.q	Why do CPUs have caches?
+tr-computer.q1.o0	To store files
+tr-computer.q1.o1	To keep frequently used data close and fast
+tr-computer.q1.o2	To cool the chip
+tr-computer.q1.x	RAM is slow compared with the CPU.
+tr-computer.q2.q	Which instruction set is open and used in the ESP32-C3?
+tr-computer.q2.o0	x86
+tr-computer.q2.o1	ARM
+tr-computer.q2.o2	RISC-V
+tr-computer.q2.x	RISC-V is open-source.
+tr-computer.c0.title	The CPU loop
+tr-computer.c0.text	A processor repeats one cycle billions of times a second: fetch an instruction from memory, decode it, execute it, and move on.
+tr-computer.c0.viz.steps.0	Fetch instruction
+tr-computer.c0.viz.steps.1	Decode it
+tr-computer.c0.viz.steps.2	Execute it
+tr-computer.c0.viz.steps.3	Next instruction
+tr-computer.c1.title	Instructions are simple
+tr-computer.c1.text	Each instruction does something tiny: add two numbers, compare them, load from memory, jump to another instruction. Everything complex is built from millions of these.
+tr-computer.c1.viz.items.0	Load from memory
+tr-computer.c1.viz.items.1	Add or multiply
+tr-computer.c1.viz.items.2	Compare
+tr-computer.c1.viz.items.3	Jump if condition
+tr-computer.c1.viz.items.4	Store to memory
+tr-computer.c2.title	Registers and ALU
+tr-computer.c2.text	Registers are tiny, ultra-fast storage slots inside the CPU. The arithmetic logic unit (ALU) does the actual maths and logic on them.
+tr-computer.c2.viz.steps.0	Load values into registers
+tr-computer.c2.viz.steps.1	ALU adds them
+tr-computer.c2.viz.steps.2	Result in a register
+tr-computer.c2.viz.steps.3	Store to memory
+tr-computer.c3.title	Compilers
+tr-computer.c3.text	You write code in a language like C++ or Python; a compiler or interpreter turns it into machine instructions the CPU understands.
+tr-computer.c3.viz.steps.0	Source code
+tr-computer.c3.viz.steps.1	Compiler
+tr-computer.c3.viz.steps.2	Machine code
+tr-computer.c3.viz.steps.3	CPU runs it
+tr-computer.c4.title	Cores and threads
+tr-computer.c4.text	Modern chips have several cores, each a complete processor, running separate tasks at the same time. The ESP32 has two; laptops have 8 or more.
+tr-computer.c4.viz.unit	cores (typical)
+tr-computer.c4.viz.items.0.l	Arduino Uno
+tr-computer.c4.viz.items.1.l	ESP32
+tr-computer.c4.viz.items.2.l	Phone
+tr-computer.c4.viz.items.3.l	Laptop
+tr-computer.c4.viz.items.4.l	Server
+tr-computer.c5.title	Clock speed isn't everything
+tr-computer.c5.text	Performance depends on instructions per clock, cache size, memory speed and parallelism, not just GHz. A newer 3 GHz chip can be much faster than an older 4 GHz one.
+tr-computer.c5.viz.items.0	Instructions per clock
+tr-computer.c5.viz.items.1	Cache size
+tr-computer.c5.viz.items.2	Memory bandwidth
+tr-computer.c5.viz.items.3	Number of cores
+tr-computer.c5.viz.items.4	Clock speed
+tr-computer.c6.title	Caches
+tr-computer.c6.text	Fetching data from RAM takes a long time in CPU terms. Caches keep recently used data close to the core. Most programs reuse data, so caches hit most of the time.
+tr-computer.c6.viz.unit	approximate access time (ns)
+tr-computer.c6.viz.items.0.l	L1 cache
+tr-computer.c6.viz.items.1.l	L2 cache
+tr-computer.c6.viz.items.2.l	RAM
+tr-computer.c6.viz.items.3.l	SSD
+tr-computer.c7.title	Operating systems
+tr-computer.c7.text	An operating system shares the CPU, memory and devices between many programs, switching between them thousands of times a second so each seems to run continuously.
+tr-computer.c7.viz.root	Operating system
+tr-computer.c7.viz.items.0	Schedules programs
+tr-computer.c7.viz.items.1	Manages memory
+tr-computer.c7.viz.items.2	Drives devices
+tr-computer.c7.viz.items.3	Handles files and network
+tr-computer.c8.title	Architectures
+tr-computer.c8.text	x86 dominates PCs and servers; ARM dominates phones and is spreading to laptops and data centres; RISC-V is an open instruction set growing in microcontrollers, like the ESP32-C3.
+tr-computer.c8.viz.items.0.a	x86
+tr-computer.c8.viz.items.0.b	PCs and servers
+tr-computer.c8.viz.items.1.a	ARM
+tr-computer.c8.viz.items.1.b	phones, Apple Macs, servers
+tr-computer.c8.viz.items.2.a	RISC-V
+tr-computer.c8.viz.items.2.b	open, microcontrollers
+tr-computer.c8.viz.items.3.a	Xtensa
+tr-computer.c8.viz.items.3.b	original ESP32
+tr-computer.c9.title	Moore's law
+tr-computer.c9.text	In 1965 Gordon Moore observed that the number of transistors on a chip doubled about every two years. The trend held for decades, though it has slowed as transistors approach atomic sizes.
+tr-computer.c9.viz.events.0.l	Intel 4004, 2,300 transistors
+tr-computer.c9.viz.events.1.l	Pentium, 3 million
+tr-computer.c9.viz.events.2.l	~1 billion
+tr-computer.c9.viz.events.3.y	2020s
+tr-computer.c9.viz.events.3.l	50+ billion

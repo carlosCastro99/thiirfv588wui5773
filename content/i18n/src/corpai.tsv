@@ -1,0 +1,1751 @@
+P.title	Corporate AI
+P.blurb	Bringing AI into a company: use cases, architecture, governance and value.
+corp-why.title	Why companies adopt AI
+corp-why.summary	The value levers behind the hype.
+corp-why.q0.q	Which is NOT one of the four main AI value levers?
+corp-why.q0.o0	Productivity
+corp-why.q0.o1	Better decisions
+corp-why.q0.o2	Replacing all managers
+corp-why.q0.o3	Customer experience
+corp-why.q0.x	The levers are productivity, decisions, customer experience, new revenue.
+corp-why.q1.q	Why do many AI pilots fail to reach production?
+corp-why.q1.o0	Models are too weak
+corp-why.q1.o1	Data, integration, process change and trust aren't addressed
+corp-why.q1.o2	Too much budget
+corp-why.q1.x	The model is rarely the main blocker.
+corp-why.q2.q	A good AI project starts from…
+corp-why.q2.o0	A cool technology
+corp-why.q2.o1	A business problem with an owner and measurable outcome
+corp-why.q2.o2	A vendor demo
+corp-why.q2.x	Problem first, technology second.
+corp-why.c0.title	Four value levers
+corp-why.c0.text	AI creates business value in four main ways: doing work faster and cheaper, making better decisions, improving customer experience, and enabling new products or revenue.
+corp-why.c0.viz.root	AI value
+corp-why.c0.viz.items.0	Productivity
+corp-why.c0.viz.items.1	Better decisions
+corp-why.c0.viz.items.2	Customer experience
+corp-why.c0.viz.items.3	New products and revenue
+corp-why.c1.title	Productivity
+corp-why.c1.text	Automating or accelerating routine knowledge work, such as reading documents, drafting, reconciling, answering standard questions, frees people for higher-value work.
+corp-why.c1.viz.steps.0	Routine task
+corp-why.c1.viz.steps.1	AI does the first pass
+corp-why.c1.viz.steps.2	Human reviews exceptions
+corp-why.c1.viz.steps.3	Time freed for judgement work
+corp-why.c2.title	Better decisions
+corp-why.c2.text	Forecasting demand, prices, risk or maintenance needs more accurately reduces waste and improves margins. In trading, small forecast improvements can be worth a lot.
+corp-why.c2.viz.items.0	Demand forecasting
+corp-why.c2.viz.items.1	Price and risk signals
+corp-why.c2.viz.items.2	Predictive maintenance
+corp-why.c2.viz.items.3	Credit and counterparty risk
+corp-why.c2.viz.items.4	Inventory optimisation
+corp-why.c3.title	Customer experience
+corp-why.c3.text	Faster, 24/7 answers, personalised recommendations and quicker processing of orders and claims improve satisfaction and loyalty.
+corp-why.c3.viz.items.0	24/7 answers
+corp-why.c3.viz.items.1	Faster order and claim processing
+corp-why.c3.viz.items.2	Personalisation
+corp-why.c3.viz.items.3	Consistent quality
+corp-why.c4.title	Risk and compliance
+corp-why.c4.text	AI can screen transactions for fraud, check contracts against policies, monitor sanctions lists and flag anomalies far faster than manual review.
+corp-why.c4.viz.steps.0	Thousands of transactions
+corp-why.c4.viz.steps.1	AI flags anomalies
+corp-why.c4.viz.steps.2	Analysts review the few flagged
+corp-why.c4.viz.steps.3	Faster, broader coverage
+corp-why.c5.title	Not just cost cutting
+corp-why.c5.text	The strongest AI programmes treat AI as a capability for growth and better work, not just headcount reduction. Framing affects adoption: people embrace tools that help them.
+corp-why.c5.viz.l.t	Cost-cutting framing
+corp-why.c5.viz.l.items.0	fear
+corp-why.c5.viz.l.items.1	resistance
+corp-why.c5.viz.l.items.2	slow adoption
+corp-why.c5.viz.r.t	Capability framing
+corp-why.c5.viz.r.items.0	curiosity
+corp-why.c5.viz.r.items.1	engagement
+corp-why.c5.viz.r.items.2	faster value
+corp-why.c6.title	Where value concentrates
+corp-why.c6.text	Value tends to concentrate in core processes with high volume, repetitive judgement and lots of documents or data: finance operations, customer service, supply chain, sales and software development.
+corp-why.c6.viz.items.0	High-volume processes
+corp-why.c6.viz.items.1	Document-heavy work
+corp-why.c6.viz.items.2	Repetitive decisions
+corp-why.c6.viz.items.3	Data-rich operations
+corp-why.c6.viz.items.4	Software development
+corp-why.c7.title	Hype vs reality
+corp-why.c7.text	Many pilots never reach production. The gap is usually not the model but data, integration, process change and trust. Plan for those from day one.
+corp-why.c7.viz.l.t	Hype
+corp-why.c7.viz.l.items.0	AI does it all
+corp-why.c7.viz.l.items.1	instant results
+corp-why.c7.viz.r.t	Reality
+corp-why.c7.viz.r.items.0	data and integration work
+corp-why.c7.viz.r.items.1	process change
+corp-why.c7.viz.r.items.2	steady gains
+corp-why.c8.title	Competitive pressure
+corp-why.c8.text	As competitors adopt AI, the baseline for speed and cost shifts. Waiting can mean falling behind; rushing without foundations can waste money. A steady, prioritised approach wins.
+corp-why.c8.viz.l.t	Too slow
+corp-why.c8.viz.l.items.0	competitors pull ahead
+corp-why.c8.viz.r.t	Too fast
+corp-why.c8.viz.r.items.0	wasted pilots
+corp-why.c8.viz.r.items.1	risk incidents
+corp-why.c9.title	Start with the problem
+corp-why.c9.text	The best AI projects start from a business problem with an owner and a measurable outcome, not from a technology looking for a use.
+corp-why.c9.viz.items.0.w	"we need an AI chatbot"
+corp-why.c9.viz.items.0.r	"we need to cut invoice processing time by half"
+corp-usecases.title	Finding use cases
+corp-usecases.summary	Spotting and prioritising where AI helps.
+corp-usecases.q0.q	Which ideas should usually go first?
+corp-usecases.q0.o0	Low value, hard ones
+corp-usecases.q0.o1	High value, high feasibility ones
+corp-usecases.q0.o2	Whatever the vendor suggests
+corp-usecases.q0.x	Quick wins build momentum.
+corp-usecases.q1.q	AI deciding on job applicants is which risk tier?
+corp-usecases.q1.o0	Low
+corp-usecases.q1.o1	Medium
+corp-usecases.q1.o2	High
+corp-usecases.q1.x	Decisions about people are high risk.
+corp-usecases.q2.q	Forecasting demand is best suited to…
+corp-usecases.q2.o0	Generative AI
+corp-usecases.q2.o1	Predictive machine learning
+corp-usecases.q2.o2	Simple rules
+corp-usecases.q2.x	Numbers and history suit predictive models.
+corp-usecases.c0.title	Look for patterns
+corp-usecases.c0.text	Good candidates involve repetitive tasks, lots of text or documents, clear rules with many exceptions, or decisions based on historical data.
+corp-usecases.c0.viz.items.0	Repetitive text tasks
+corp-usecases.c0.viz.items.1	Document processing
+corp-usecases.c0.viz.items.2	Rule-plus-exception decisions
+corp-usecases.c0.viz.items.3	Forecasts from history
+corp-usecases.c0.viz.items.4	Search for knowledge
+corp-usecases.c1.title	Ask the people who do the work
+corp-usecases.c1.text	The best ideas come from front-line staff who know where time is wasted. Workshops and process walkthroughs surface them quickly.
+corp-usecases.c1.viz.steps.0	Interview teams
+corp-usecases.c1.viz.steps.1	Map the process
+corp-usecases.c1.viz.steps.2	Spot bottlenecks
+corp-usecases.c1.viz.steps.3	List AI opportunities
+corp-usecases.c2.title	Value vs feasibility
+corp-usecases.c2.text	Score each idea on business value and feasibility (data available, technical difficulty, risk). Start with high-value, high-feasibility ideas: quick wins.
+corp-usecases.c2.viz.l.t	High value, high feasibility
+corp-usecases.c2.viz.l.items.0	do first
+corp-usecases.c2.viz.l.items.1	quick wins
+corp-usecases.c2.viz.r.t	Low value, low feasibility
+corp-usecases.c2.viz.r.items.0	drop
+corp-usecases.c3.title	The feasibility checklist
+corp-usecases.c3.text	Is the data available and good enough? Can the output be checked? Is the process owner committed? Are there legal or regulatory constraints? Can it integrate with existing systems?
+corp-usecases.c3.viz.items.0	Data available and usable
+corp-usecases.c3.viz.items.1	Output can be verified
+corp-usecases.c3.viz.items.2	Committed business owner
+corp-usecases.c3.viz.items.3	Legal and regulatory fit
+corp-usecases.c3.viz.items.4	Integration path
+corp-usecases.c4.title	Risk tier
+corp-usecases.c4.text	Classify each use case by risk: internal drafting is low risk; decisions about people (hiring, credit) or safety are high risk and need stricter controls.
+corp-usecases.c4.viz.items.0	High: decisions about people, safety
+corp-usecases.c4.viz.items.1	Medium: customer-facing answers
+corp-usecases.c4.viz.items.2	Low: internal drafting and search
+corp-usecases.c5.title	Generative vs predictive
+corp-usecases.c5.text	Choose the right tool: generative AI for language and documents; predictive ML for numbers and forecasts; rules for simple deterministic logic. Many solutions combine them.
+corp-usecases.c5.viz.items.0.a	reading contracts
+corp-usecases.c5.viz.items.0.b	generative AI
+corp-usecases.c5.viz.items.1.a	forecasting demand
+corp-usecases.c5.viz.items.1.b	predictive ML
+corp-usecases.c5.viz.items.2.a	fixed approval thresholds
+corp-usecases.c5.viz.items.2.b	rules
+corp-usecases.c5.viz.items.3.a	email triage
+corp-usecases.c5.viz.items.3.b	classification
+corp-usecases.c6.title	Copilots vs automation
+corp-usecases.c6.text	Copilots assist a person (drafting, suggesting), keeping humans in control. Automation completes tasks end-to-end. Copilots are easier to adopt first; automation delivers bigger savings once trusted.
+corp-usecases.c6.viz.l.t	Copilot
+corp-usecases.c6.viz.l.items.0	assists people
+corp-usecases.c6.viz.l.items.1	lower risk
+corp-usecases.c6.viz.l.items.2	faster adoption
+corp-usecases.c6.viz.r.t	Automation
+corp-usecases.c6.viz.r.items.0	end-to-end
+corp-usecases.c6.viz.r.items.1	bigger savings
+corp-usecases.c6.viz.r.items.2	needs high reliability
+corp-usecases.c7.title	Use-case portfolio
+corp-usecases.c7.text	Balance a portfolio: a few quick wins to build momentum, some larger transformational bets, and enabling foundations (data, platform, skills).
+corp-usecases.c7.viz.unit	share of effort (illustrative)
+corp-usecases.c7.viz.items.0.l	Quick wins
+corp-usecases.c7.viz.items.1.l	Transformational
+corp-usecases.c7.viz.items.2.l	Foundations
+corp-usecases.c8.title	Write a one-page brief
+corp-usecases.c8.text	For each use case: problem, users, expected value, data needed, success metric, risks, owner. A one-pager forces clarity before spending money.
+corp-usecases.c8.viz.items.0	Problem and users
+corp-usecases.c8.viz.items.1	Expected value
+corp-usecases.c8.viz.items.2	Data needed
+corp-usecases.c8.viz.items.3	Success metric
+corp-usecases.c8.viz.items.4	Risks and owner
+corp-usecases.c9.title	Kill fast
+corp-usecases.c9.text	Not every idea works. Set a short timebox and clear success criteria for experiments, and stop those that don't meet them. Learning quickly is the goal.
+corp-usecases.c9.viz.steps.0	Define success criteria
+corp-usecases.c9.viz.steps.1	4–8 week experiment
+corp-usecases.c9.viz.steps.2	Measure
+corp-usecases.c9.viz.steps.3	Scale, adjust or stop
+corp-build.title	Build, buy or partner
+corp-build.summary	Choosing how to get AI capabilities.
+corp-build.q0.q	When does building usually make sense?
+corp-build.q0.o0	For generic email drafting
+corp-build.q0.o1	For core, differentiating processes with proprietary data
+corp-build.q0.o2	Never
+corp-build.q0.x	Build where you differentiate.
+corp-build.q1.q	What reduces vendor lock-in?
+corp-build.q1.o0	One vendor for everything
+corp-build.q1.o1	Abstraction layers, open standards and owning your data
+corp-build.q1.o2	Longer contracts
+corp-build.q1.x	Keep options open.
+corp-build.q2.q	Before building a new AI tool you should check…
+corp-build.q2.o0	Nothing
+corp-build.q2.o1	What AI features your existing software already offers
+corp-build.q2.o2	Competitors' logos
+corp-build.q2.x	Embedded AI may already cover it.
+corp-build.c0.title	Three options
+corp-build.c0.text	Buy: use AI features in software you already have or SaaS tools. Build: develop your own solutions on models and platforms. Partner: work with a specialist or integrator.
+corp-build.c0.viz.root	Sourcing
+corp-build.c0.viz.items.0	Buy: SaaS and embedded AI
+corp-build.c0.viz.items.1	Build: own solutions on platforms
+corp-build.c0.viz.items.2	Partner: specialists and integrators
+corp-build.c1.title	When to buy
+corp-build.c1.text	Buy for common needs where you don't differentiate: email drafting, meeting notes, generic chat, standard HR or CRM features. Faster and cheaper to start.
+corp-build.c1.viz.items.0	Common, non-differentiating tasks
+corp-build.c1.viz.items.1	Mature products exist
+corp-build.c1.viz.items.2	Speed matters
+corp-build.c1.viz.items.3	Limited internal team
+corp-build.c2.title	When to build
+corp-build.c2.text	Build where AI touches your competitive advantage or proprietary data, where integration with core systems is deep, or where off-the-shelf tools don't fit your process.
+corp-build.c2.viz.items.0	Core differentiating processes
+corp-build.c2.viz.items.1	Proprietary data
+corp-build.c2.viz.items.2	Deep integration needs
+corp-build.c2.viz.items.3	Specific workflows
+corp-build.c3.title	Embedded AI in core systems
+corp-build.c3.text	ERP, CRM and productivity suites increasingly include AI (Microsoft Copilot, SAP Joule, Salesforce Einstein). Check what you already license before building.
+corp-build.c3.viz.items.0.a	Microsoft 365
+corp-build.c3.viz.items.0.b	Copilot
+corp-build.c3.viz.items.1.a	SAP
+corp-build.c3.viz.items.1.b	Joule and embedded AI
+corp-build.c3.viz.items.2.a	Salesforce
+corp-build.c3.viz.items.2.b	Einstein / Agentforce
+corp-build.c3.viz.items.3.a	ServiceNow
+corp-build.c3.viz.items.3.b	Now Assist
+corp-build.c4.title	Platforms, not one-offs
+corp-build.c4.text	Building each use case from scratch is slow. A shared AI platform (model access, RAG, guardrails, monitoring) lets teams build many solutions faster and consistently.
+corp-build.c4.viz.l.t	One-off builds
+corp-build.c4.viz.l.items.0	repeated work
+corp-build.c4.viz.l.items.1	inconsistent controls
+corp-build.c4.viz.r.t	Shared platform
+corp-build.c4.viz.r.items.0	reusable components
+corp-build.c4.viz.r.items.1	common security
+corp-build.c4.viz.r.items.2	faster delivery
+corp-build.c5.title	Vendor lock-in
+corp-build.c5.text	Relying on one model or vendor can be risky as the market moves fast. Abstraction layers, open standards and portable data reduce lock-in.
+corp-build.c5.viz.items.0	Model abstraction layer
+corp-build.c5.viz.items.1	Open standards (e.g. MCP)
+corp-build.c5.viz.items.2	Own your data and prompts
+corp-build.c5.viz.items.3	Exit clauses in contracts
+corp-build.c6.title	Evaluating vendors
+corp-build.c6.text	Ask for evidence on your data: accuracy, security certifications, data handling terms, integration options, pricing at scale and roadmap.
+corp-build.c6.viz.items.0	Results on your own data
+corp-build.c6.viz.items.1	Security and certifications
+corp-build.c6.viz.items.2	Data use and retention terms
+corp-build.c6.viz.items.3	Integration options
+corp-build.c6.viz.items.4	Total cost at scale
+corp-build.c7.title	Total cost
+corp-build.c7.text	Count more than licences: integration, data preparation, change management, monitoring, support and model usage costs over several years.
+corp-build.c7.viz.items.0	Licences or model usage
+corp-build.c7.viz.items.1	Integration and data work
+corp-build.c7.viz.items.2	Change management and training
+corp-build.c7.viz.items.3	Operations and monitoring
+corp-build.c8.title	Partners
+corp-build.c8.text	System integrators and specialist firms bring experience and capacity. Keep core knowledge in-house so you aren't dependent on them for every change.
+corp-build.c8.viz.l.t	Partner brings
+corp-build.c8.viz.l.items.0	speed
+corp-build.c8.viz.l.items.1	experience
+corp-build.c8.viz.l.items.2	extra capacity
+corp-build.c8.viz.r.t	Keep in-house
+corp-build.c8.viz.r.items.0	architecture
+corp-build.c8.viz.r.items.1	data knowledge
+corp-build.c8.viz.r.items.2	key skills
+corp-build.c9.title	Revisit regularly
+corp-build.c9.text	What you build today may become a commodity product next year. Review build/buy decisions as the market matures.
+corp-build.c9.viz.steps.0	Decide build or buy
+corp-build.c9.viz.steps.1	Deliver value
+corp-build.c9.viz.steps.2	Market matures
+corp-build.c9.viz.steps.3	Re-evaluate
+corp-roi.title	The business case
+corp-roi.summary	Estimating value, cost and ROI.
+corp-roi.q0.q	10,000 items, 0.2 h saved each, €50/h, 50% adoption gives about…
+corp-roi.q0.o0	€100,000
+corp-roi.q0.o1	€50,000
+corp-roi.q0.o2	€10,000
+corp-roi.q0.x	10,000 × 0.2 × 50 × 0.5 = €50,000.
+corp-roi.q1.q	Why measure a baseline first?
+corp-roi.q1.o0	It's required by law
+corp-roi.q1.o1	To prove the improvement later
+corp-roi.q1.o2	To slow the project
+corp-roi.q1.x	Without it, gains can't be shown.
+corp-roi.q2.q	Saved time becomes real value when…
+corp-roi.q2.o0	It's reported
+corp-roi.q2.o1	It's redeployed to valuable work or reduces costs
+corp-roi.q2.o2	People take longer breaks
+corp-roi.q2.x	Value must be realised.
+corp-roi.c0.title	Start from a baseline
+corp-roi.c0.text	Measure the current process first: time per task, volume, error rate, cost, cycle time. Without a baseline you can't prove improvement.
+corp-roi.c0.viz.items.0	Time per task
+corp-roi.c0.viz.items.1	Volume per month
+corp-roi.c0.viz.items.2	Error and rework rates
+corp-roi.c0.viz.items.3	Cost per transaction
+corp-roi.c0.viz.items.4	Cycle time
+corp-roi.c1.title	Time savings value
+corp-roi.c1.text	A simple estimate: volume × time saved per item × cost per hour × adoption rate. Be conservative.
+corp-roi.c1.example.0	20,000 × 0.1 h × €40 × 0.7
+corp-roi.c1.example.1	
+corp-roi.c1.example.2	≈ €56,000 a year
+corp-roi.c1.viz.f	value = volume × time saved × hourly cost × adoption
+corp-roi.c1.viz.items.0.m	20,000 invoices/yr
+corp-roi.c1.viz.items.1.m	6 min saved
+corp-roi.c1.viz.items.2.m	€40/h
+corp-roi.c1.viz.items.3.m	70% adoption
+corp-roi.c2.title	Beyond time savings
+corp-roi.c2.text	Include quality improvements (fewer errors), faster cycle times (cash collected sooner), risk reduction and better decisions. These are often worth more than hours saved.
+corp-roi.c2.viz.items.0	Fewer errors and rework
+corp-roi.c2.viz.items.1	Faster cycle times
+corp-roi.c2.viz.items.2	Working capital gains
+corp-roi.c2.viz.items.3	Risk avoided
+corp-roi.c2.viz.items.4	Better decisions
+corp-roi.c3.title	Full costs
+corp-roi.c3.text	Include build costs, licences or model usage, integration, data preparation, change management, training and running costs for several years.
+corp-roi.c3.viz.unit	cost split (illustrative %)
+corp-roi.c3.viz.items.0.l	Build and integration
+corp-roi.c3.viz.items.1.l	Model and licences
+corp-roi.c3.viz.items.2.l	Data preparation
+corp-roi.c3.viz.items.3.l	Change and training
+corp-roi.c3.viz.items.4.l	Operations
+corp-roi.c4.title	ROI and payback
+corp-roi.c4.text	ROI compares net gain with cost; payback is how long until cumulative value covers investment.
+corp-roi.c4.viz.f	ROI = (value − cost) ÷ cost
+corp-roi.c4.viz.items.0.s	payback
+corp-roi.c4.viz.items.0.m	months until cumulative value ≥ cost
+corp-roi.c5.title	Adoption drives value
+corp-roi.c5.text	A tool nobody uses delivers nothing. Model value with realistic adoption curves, rising over months, not 100% from day one.
+corp-roi.c5.viz.events.0.y	Month 1
+corp-roi.c5.viz.events.0.l	20% adoption
+corp-roi.c5.viz.events.1.y	Month 3
+corp-roi.c5.viz.events.2.y	Month 6
+corp-roi.c5.viz.events.3.y	Month 12
+corp-roi.c6.title	Freed time must be used
+corp-roi.c6.text	Saved hours only become value if they're redeployed: more volume handled, better service, new work, or reduced overtime and outsourcing.
+corp-roi.c6.viz.steps.0	Hours saved
+corp-roi.c6.viz.steps.1	Redeployed to valuable work
+corp-roi.c6.viz.steps.2	Measurable outcome
+corp-roi.c6.viz.steps.3	Real value
+corp-roi.c7.title	Ranges, not points
+corp-roi.c7.text	AI outcomes are uncertain. Present low, expected and high scenarios, and the assumptions behind each.
+corp-roi.c7.viz.unit	annual value (€k, illustrative)
+corp-roi.c7.viz.items.0.l	Low
+corp-roi.c7.viz.items.1.l	Expected
+corp-roi.c7.viz.items.2.l	High
+corp-roi.c8.title	Measure after launch
+corp-roi.c8.text	Track the same metrics as the baseline after launch and compare. Report real results, including what didn't work.
+corp-roi.c8.viz.steps.0	Baseline
+corp-roi.c8.viz.steps.1	Launch
+corp-roi.c8.viz.steps.2	Measure same metrics
+corp-roi.c8.viz.steps.3	Report and adjust
+corp-roi.c9.title	Strategic value
+corp-roi.c9.text	Some investments, such as data platforms or AI skills, don't pay back on one use case but enable many. Fund them as foundations, with a portfolio view.
+corp-roi.c9.viz.l.t	Use case
+corp-roi.c9.viz.l.items.0	direct ROI
+corp-roi.c9.viz.l.items.1	one process
+corp-roi.c9.viz.r.t	Foundation
+corp-roi.c9.viz.r.items.0	enables many
+corp-roi.c9.viz.r.items.1	indirect ROI
+corp-roi.c9.viz.r.items.2	shared cost
+corp-data.title	Data foundations
+corp-data.summary	No AI without good data.
+corp-data.q0.q	What is often the hardest part of corporate AI?
+corp-data.q0.o0	Choosing the model
+corp-data.q0.o1	Finding, accessing and cleaning the right data
+corp-data.q0.o2	Buying GPUs
+corp-data.q0.x	Data is usually the bottleneck.
+corp-data.q1.q	What is master data?
+corp-data.q1.o0	Data about managers
+corp-data.q1.o1	The single trusted version of core entities like customers and products
+corp-data.q1.o2	Backup data
+corp-data.q1.x	One record across systems.
+corp-data.q2.q	Why classify data sensitivity?
+corp-data.q2.o0	For fun
+corp-data.q2.o1	So access rules can be enforced, including for AI tools
+corp-data.q2.o2	To delete it
+corp-data.q2.x	Users and AI should see only what's allowed.
+corp-data.c0.title	Data is the bottleneck
+corp-data.c0.text	For most companies, the hardest part of AI is not the model but finding, accessing, cleaning and connecting the right data.
+corp-data.c0.viz.items.0	AI use cases
+corp-data.c0.viz.items.1	Data products and APIs
+corp-data.c0.viz.items.2	Integrated, governed data
+corp-data.c0.viz.items.3	Source systems: ERP, CRM, files
+corp-data.c1.title	Know your data
+corp-data.c1.text	A data catalogue lists what data exists, where it lives, who owns it, what it means and how sensitive it is. Without one, teams waste weeks searching.
+corp-data.c1.viz.items.0	What data exists
+corp-data.c1.viz.items.1	Where it lives
+corp-data.c1.viz.items.2	Who owns it
+corp-data.c1.viz.items.3	Definitions
+corp-data.c1.viz.items.4	Sensitivity level
+corp-data.c2.title	Data quality dimensions
+corp-data.c2.text	Quality means accuracy, completeness, consistency, timeliness and uniqueness. A dashboard of quality scores per key dataset makes problems visible.
+corp-data.c2.viz.items.0.a	accuracy
+corp-data.c2.viz.items.0.b	values are correct
+corp-data.c2.viz.items.1.a	completeness
+corp-data.c2.viz.items.1.b	no missing fields
+corp-data.c2.viz.items.2.a	consistency
+corp-data.c2.viz.items.2.b	same across systems
+corp-data.c2.viz.items.3.a	timeliness
+corp-data.c2.viz.items.3.b	up to date
+corp-data.c2.viz.items.4.a	uniqueness
+corp-data.c2.viz.items.4.b	no duplicates
+corp-data.c3.title	Master data
+corp-data.c3.text	Customers, suppliers, products and materials should have one trusted version across systems. Messy master data breaks analytics and AI alike.
+corp-data.c3.viz.items.0.w	"Bunge Ltd", "BUNGE", "Bunge S.A." as three suppliers
+corp-data.c3.viz.items.0.r	one master record with aliases
+corp-data.c4.title	Unstructured data
+corp-data.c4.text	Contracts, emails, PDFs and manuals hold huge value for generative AI but are often scattered across drives and mailboxes, with duplicates and outdated versions.
+corp-data.c4.viz.items.0	Contracts and amendments
+corp-data.c4.viz.items.1	Policies and procedures
+corp-data.c4.viz.items.2	Emails and chats
+corp-data.c4.viz.items.3	Reports and presentations
+corp-data.c4.viz.items.4	Scanned documents
+corp-data.c5.title	Data platforms
+corp-data.c5.text	Modern platforms (data lakehouses such as Databricks, Microsoft Fabric or Snowflake) bring data from many systems into one governed place for analytics and AI.
+corp-data.c5.viz.steps.0	ERP, CRM, IoT, files
+corp-data.c5.viz.steps.1	Ingest
+corp-data.c5.viz.steps.2	Lakehouse: clean and model
+corp-data.c5.viz.steps.3	Analytics and AI
+corp-data.c6.title	Data ownership
+corp-data.c6.text	Each important dataset needs a business owner accountable for its quality and access rules, supported by data stewards.
+corp-data.c6.viz.root	Data governance
+corp-data.c6.viz.items.0	Data owners (business)
+corp-data.c6.viz.items.1	Data stewards
+corp-data.c6.viz.items.2	Platform team (IT)
+corp-data.c6.viz.items.3	Governance council
+corp-data.c7.title	Data products
+corp-data.c7.text	Treat key datasets as products: documented, quality-checked, with clear owners and service levels, so many teams can reuse them reliably.
+corp-data.c7.viz.items.0	Clear owner
+corp-data.c7.viz.items.1	Documentation
+corp-data.c7.viz.items.2	Quality checks
+corp-data.c7.viz.items.3	Access via APIs
+corp-data.c7.viz.items.4	Service levels
+corp-data.c8.title	Lineage
+corp-data.c8.text	Lineage shows where data came from and how it was transformed. It's essential for trusting AI outputs and for audits.
+corp-data.c8.viz.steps.0	ERP table
+corp-data.c8.viz.steps.1	Cleaning job
+corp-data.c8.viz.steps.2	Curated dataset
+corp-data.c8.viz.steps.3	Model feature
+corp-data.c8.viz.steps.4	Prediction
+corp-data.c9.title	Classification and access
+corp-data.c9.text	Classify data (public, internal, confidential, restricted) and enforce access rules, so AI tools only see what each user is allowed to see.
+corp-data.c9.viz.items.0	Restricted
+corp-data.c9.viz.items.1	Confidential
+corp-data.c9.viz.items.2	Internal
+corp-data.c9.viz.items.3	Public
+corp-arch.title	Enterprise AI architecture
+corp-arch.summary	The building blocks of an AI platform.
+corp-arch.q0.q	What does an AI gateway provide?
+corp-arch.q0.o0	Model training
+corp-arch.q0.o1	Central routing, auth, logging, quotas and cost tracking
+corp-arch.q0.o2	Office furniture
+corp-arch.q0.x	A control point between apps and models.
+corp-arch.q1.q	How should agents access ERP or CRM?
+corp-arch.q1.o0	Full database admin rights
+corp-arch.q1.o1	Through well-defined, least-privilege APIs or MCP servers
+corp-arch.q1.o2	Shared passwords
+corp-arch.q1.x	Limit scope and log calls.
+corp-arch.q2.q	What do guardrails check?
+corp-arch.q2.o0	Only spelling
+corp-arch.q2.o1	Inputs and outputs for injection, sensitive data and policy violations
+corp-arch.q2.o2	GPU temperature
+corp-arch.q2.x	They filter before and after the model.
+corp-arch.c0.title	Layers of an AI platform
+corp-arch.c0.text	A typical enterprise AI platform has: data sources, a data layer, model access, an orchestration layer (RAG, agents), guardrails, and applications, with security and monitoring across all.
+corp-arch.c0.viz.items.0	Applications and copilots
+corp-arch.c0.viz.items.1	Orchestration: RAG, agents, tools
+corp-arch.c0.viz.items.2	Model access via gateway
+corp-arch.c0.viz.items.3	Data and knowledge layer
+corp-arch.c0.viz.items.4	Source systems
+corp-arch.c1.title	The AI gateway
+corp-arch.c1.text	A central gateway sits between applications and models. It handles authentication, routing, quotas, logging, cost tracking and content filters, and lets you swap models centrally.
+corp-arch.c1.viz.steps.0	Apps
+corp-arch.c1.viz.steps.1	AI gateway: auth, routing, logging, quotas
+corp-arch.c1.viz.steps.2	Approved models
+corp-arch.c1.viz.steps.3	Responses
+corp-arch.c2.title	Model catalogue
+corp-arch.c2.text	Offer approved models through the gateway: a few general models of different sizes, embedding models, and specialised ones. Document which to use for what.
+corp-arch.c2.viz.items.0.a	large model
+corp-arch.c2.viz.items.0.b	complex reasoning
+corp-arch.c2.viz.items.1.a	small model
+corp-arch.c2.viz.items.1.b	high volume
+corp-arch.c2.viz.items.2.a	embedding model
+corp-arch.c2.viz.items.2.b	search and RAG
+corp-arch.c2.viz.items.3.a	vision model
+corp-arch.c2.viz.items.3.b	documents and images
+corp-arch.c3.title	Knowledge layer
+corp-arch.c3.text	Shared RAG services index approved document collections with permissions, so every team doesn't rebuild search and chunking from scratch.
+corp-arch.c3.viz.steps.0	Document sources
+corp-arch.c3.viz.steps.1	Ingest and chunk
+corp-arch.c3.viz.steps.2	Index with permissions
+corp-arch.c3.viz.steps.3	Shared retrieval API
+corp-arch.c4.title	Tools and integration
+corp-arch.c4.text	Agents and copilots need safe access to systems: ERP, CRM, ticketing. Expose well-defined APIs or MCP servers rather than broad database access.
+corp-arch.c4.viz.items.0	Well-defined APIs
+corp-arch.c4.viz.items.1	MCP servers
+corp-arch.c4.viz.items.2	Least-privilege scopes
+corp-arch.c4.viz.items.3	Audit logs per call
+corp-arch.c5.title	Guardrails
+corp-arch.c5.text	Input and output filters check for prompt injection, sensitive data, toxic content and policy violations. Business rules validate outputs before they reach customers or systems.
+corp-arch.c5.viz.steps.0	Input
+corp-arch.c5.viz.steps.1	Injection and PII checks
+corp-arch.c5.viz.steps.2	Model
+corp-arch.c5.viz.steps.3	Output checks and validation
+corp-arch.c5.viz.steps.4	User or system
+corp-arch.c6.title	Observability
+corp-arch.c6.text	Log prompts, responses, tool calls, latency, costs and user feedback (with privacy controls). Traces help debug failures; dashboards show usage and spend.
+corp-arch.c6.viz.items.0	Traces of each request
+corp-arch.c6.viz.items.1	Latency and errors
+corp-arch.c6.viz.items.2	Cost per app and team
+corp-arch.c6.viz.items.3	User feedback
+corp-arch.c6.viz.items.4	Quality evals
+corp-arch.c7.title	Environments
+corp-arch.c7.text	Separate development, test and production, with evaluation gates before promotion, just like other software.
+corp-arch.c7.viz.steps.0	Development
+corp-arch.c7.viz.steps.1	Automated evals
+corp-arch.c7.viz.steps.2	Test with users
+corp-arch.c7.viz.steps.3	Production with monitoring
+corp-arch.c8.title	Cloud and region
+corp-arch.c8.text	Choose model hosting regions that satisfy data residency rules (for example EU data in EU regions) and contract terms that prohibit training on your data.
+corp-arch.c8.viz.items.0	EU data in EU regions
+corp-arch.c8.viz.items.1	No training on your data
+corp-arch.c8.viz.items.2	Encryption at rest and in transit
+corp-arch.c8.viz.items.3	Private networking
+corp-arch.c8.viz.items.4	Retention controls
+corp-arch.c9.title	Reference architecture
+corp-arch.c9.text	Document a reference architecture and reusable templates so teams can launch new AI applications quickly within guardrails.
+corp-arch.c9.viz.steps.0	Reference architecture
+corp-arch.c9.viz.steps.1	Templates and SDKs
+corp-arch.c9.viz.steps.2	Teams build faster
+corp-arch.c9.viz.steps.3	Consistent security
+corp-security.title	AI security and privacy
+corp-security.summary	New risks and how to manage them.
+corp-security.q0.q	What is shadow AI?
+corp-security.q0.o0	AI in the dark
+corp-security.q0.o1	Employees using unapproved AI tools
+corp-security.q0.o2	A type of model
+corp-security.q0.x	Best countered with good approved tools.
+corp-security.q1.q	Which principle limits damage from a hijacked agent?
+corp-security.q1.o0	Maximum access
+corp-security.q1.o1	Least privilege with approvals for sensitive actions
+corp-security.q1.o2	Faster models
+corp-security.q1.x	Minimal rights limit harm.
+corp-security.q2.q	Which standard defines an AI management system?
+corp-security.q2.o0	ISO 9001
+corp-security.q2.o1	ISO/IEC 42001
+corp-security.q2.o2	ISO 14001
+corp-security.q2.x	Published in 2023.
+corp-security.c0.title	New attack surface
+corp-security.c0.text	AI systems add new risks: prompt injection, data leakage through prompts or outputs, poisoned training or retrieval data, model abuse and insecure tool access.
+corp-security.c0.viz.root	AI security risks
+corp-security.c0.viz.items.0	Prompt injection
+corp-security.c0.viz.items.1	Data leakage
+corp-security.c0.viz.items.2	Poisoned data
+corp-security.c0.viz.items.3	Excessive tool permissions
+corp-security.c1.title	Prompt injection
+corp-security.c1.text	Malicious instructions hidden in emails, web pages or documents can make an AI assistant reveal data or take actions. It's considered a top risk for LLM applications (OWASP).
+corp-security.c1.viz.steps.0	Attacker hides instructions in a document
+corp-security.c1.viz.steps.1	AI reads it
+corp-security.c1.viz.steps.2	Tries to follow them
+corp-security.c1.viz.steps.3	Guardrails and limited permissions stop harm
+corp-security.c2.title	Data leakage
+corp-security.c2.text	Sensitive data can leak if users paste it into unapproved tools, if RAG ignores permissions, or if outputs include confidential details. Controls: approved tools, permission-aware retrieval and output filters.
+corp-security.c2.viz.items.0	Approved enterprise tools only
+corp-security.c2.viz.items.1	Permission-aware retrieval
+corp-security.c2.viz.items.2	PII detection and masking
+corp-security.c2.viz.items.3	Output filtering
+corp-security.c2.viz.items.4	User training
+corp-security.c3.title	Shadow AI
+corp-security.c3.text	Employees using unapproved AI tools ("shadow AI") is common when approved options are lacking. The best defence is providing good approved tools plus clear guidance.
+corp-security.c3.viz.l.t	Ban everything
+corp-security.c3.viz.l.items.0	shadow use grows
+corp-security.c3.viz.l.items.1	no visibility
+corp-security.c3.viz.r.t	Provide approved tools
+corp-security.c3.viz.r.items.0	safer adoption
+corp-security.c3.viz.r.items.1	visibility and control
+corp-security.c4.title	Least privilege for agents
+corp-security.c4.text	Give AI agents the minimum access needed, scoped tokens, rate limits and approval steps for sensitive actions. Treat them like a new employee with very limited rights.
+corp-security.c4.viz.items.0	Minimum permissions
+corp-security.c4.viz.items.1	Scoped, expiring credentials
+corp-security.c4.viz.items.2	Rate and spend limits
+corp-security.c4.viz.items.3	Human approval for sensitive actions
+corp-security.c4.viz.items.4	Full audit trail
+corp-security.c5.title	Supply chain
+corp-security.c5.text	Models, libraries and plugins come from third parties. Vet sources, scan dependencies and pin versions, like any other software supply chain.
+corp-security.c5.viz.items.0	Vetted model sources
+corp-security.c5.viz.items.1	Dependency scanning
+corp-security.c5.viz.items.2	Pinned versions
+corp-security.c5.viz.items.3	Plugin review
+corp-security.c5.viz.items.4	Vendor security assessments
+corp-security.c6.title	Personal data and GDPR
+corp-security.c6.text	Using personal data in AI requires a lawful basis, purpose limitation, minimisation and often a data protection impact assessment (DPIA). Involve the DPO early.
+corp-security.c6.viz.steps.0	New AI use case
+corp-security.c6.viz.steps.1	Personal data involved?
+corp-security.c6.viz.steps.2	DPIA with the DPO
+corp-security.c6.viz.steps.3	Controls and approval
+corp-security.c7.title	Red teaming
+corp-security.c7.text	Before launch, test AI apps adversarially: try injections, jailbreaks, data extraction and misuse. Fix issues and retest.
+corp-security.c7.viz.steps.0	Attack the application
+corp-security.c7.viz.steps.1	Record failures
+corp-security.c7.viz.steps.2	Add controls
+corp-security.c7.viz.steps.3	Retest
+corp-security.c8.title	Incident response
+corp-security.c8.text	Have a plan for AI incidents: harmful outputs, data exposure, agent mistakes. Be able to disable features quickly, investigate logs and notify as required.
+corp-security.c8.viz.steps.0	Detect
+corp-security.c8.viz.steps.1	Contain: disable feature
+corp-security.c8.viz.steps.2	Investigate logs
+corp-security.c8.viz.steps.3	Fix and communicate
+corp-security.c9.title	Security frameworks
+corp-security.c9.text	Use established guidance: OWASP Top 10 for LLM Applications, NIST AI Risk Management Framework, ISO/IEC 42001 for AI management systems, plus your existing ISO 27001 controls.
+corp-security.c9.viz.items.0.a	OWASP LLM Top 10
+corp-security.c9.viz.items.0.b	application risks
+corp-security.c9.viz.items.1.a	NIST AI RMF
+corp-security.c9.viz.items.1.b	risk management
+corp-security.c9.viz.items.2.a	ISO/IEC 42001
+corp-security.c9.viz.items.2.b	AI management system
+corp-security.c9.viz.items.3.a	ISO 27001
+corp-security.c9.viz.items.3.b	information security
+corp-governance.title	AI governance and risk
+corp-governance.summary	Policies, roles and the EU AI Act in practice.
+corp-governance.q0.q	What should an AI inventory record?
+corp-governance.q0.o0	Only model names
+corp-governance.q0.o1	Use case, owner, data, model, risk level and controls
+corp-governance.q0.o2	Employee salaries
+corp-governance.q0.x	It's the basis for governance.
+corp-governance.q1.q	Since February 2025, the EU AI Act requires deployers to ensure…
+corp-governance.q1.o0	Free AI for all
+corp-governance.q1.o1	Sufficient AI literacy among staff using AI
+corp-governance.q1.o2	Only open-source models
+corp-governance.q1.x	The AI literacy obligation.
+corp-governance.q2.q	How should governance treat low-risk use cases?
+corp-governance.q2.o0	Ban them
+corp-governance.q2.o1	Give them a fast lane with light checks
+corp-governance.q2.o2	Same as high-risk
+corp-governance.q2.x	Proportionate governance.
+corp-governance.c0.title	Why governance
+corp-governance.c0.text	Governance makes sure AI is used safely, legally and in line with company values, without slowing everything down. Good governance enables faster adoption by clarifying the rules.
+corp-governance.c0.viz.l.t	Too little or too much
+corp-governance.c0.viz.l.items.0	incidents, or slow approvals and shadow AI
+corp-governance.c0.viz.r.t	Right-sized
+corp-governance.c0.viz.r.items.0	clear rules
+corp-governance.c0.viz.r.items.1	fast lane for low risk
+corp-governance.c0.viz.r.items.2	focus on high risk
+corp-governance.c1.title	AI policy
+corp-governance.c1.text	A short policy covers approved tools, permitted data, human oversight, transparency, prohibited uses and how to request new use cases.
+corp-governance.c1.viz.items.0	Approved tools
+corp-governance.c1.viz.items.1	Data rules
+corp-governance.c1.viz.items.2	Human oversight
+corp-governance.c1.viz.items.3	Prohibited uses
+corp-governance.c1.viz.items.4	How to propose new use cases
+corp-governance.c2.title	Inventory of AI systems
+corp-governance.c2.text	Keep a register of AI systems and use cases: purpose, owner, data used, model, risk level and controls. The EU AI Act effectively requires knowing what you deploy.
+corp-governance.c2.viz.items.0	Use case and purpose
+corp-governance.c2.viz.items.1	Business owner
+corp-governance.c2.viz.items.2	Data and model used
+corp-governance.c2.viz.items.3	Risk classification
+corp-governance.c2.viz.items.4	Controls and reviews
+corp-governance.c3.title	Risk-based review
+corp-governance.c3.text	Low-risk uses get a light self-assessment; high-risk ones go through a full review with legal, security, privacy and business experts.
+corp-governance.c3.viz.steps.0	New use case
+corp-governance.c3.viz.steps.1	Risk triage
+corp-governance.c3.viz.steps.2	Low: fast lane
+corp-governance.c3.viz.steps.3	High: full review board
+corp-governance.c4.title	The EU AI Act for companies
+corp-governance.c4.text	Companies are usually "deployers" of AI. For high-risk systems they must use them as instructed, ensure human oversight, monitor operation, keep logs and inform affected people. Banned practices must be avoided entirely.
+corp-governance.c4.viz.items.0	Avoid prohibited practices
+corp-governance.c4.viz.items.1	Know high-risk uses
+corp-governance.c4.viz.items.2	Human oversight
+corp-governance.c4.viz.items.3	Keep logs
+corp-governance.c4.viz.items.4	Inform affected people
+corp-governance.c5.title	AI literacy duty
+corp-governance.c5.text	Since February 2025, the EU AI Act requires providers and deployers to take measures to ensure sufficient AI literacy among staff who operate or use AI systems.
+corp-governance.c5.viz.items.0.v	Feb 2025
+corp-governance.c5.viz.items.0.l	AI literacy duty applies
+corp-governance.c5.viz.items.1.v	all staff
+corp-governance.c5.viz.items.1.l	using AI systems in scope
+corp-governance.c6.title	Roles and responsibilities
+corp-governance.c6.text	Typical roles: an executive sponsor, an AI governance board, use-case owners, a central AI team, plus legal, privacy, security and risk functions.
+corp-governance.c6.viz.root	AI governance
+corp-governance.c6.viz.items.0	Executive sponsor
+corp-governance.c6.viz.items.1	Governance board
+corp-governance.c6.viz.items.2	Central AI team
+corp-governance.c6.viz.items.3	Use-case owners
+corp-governance.c7.title	Model risk management
+corp-governance.c7.text	Banks and other regulated firms already manage model risk: validation, documentation, performance monitoring. Extend these practices to AI and LLMs.
+corp-governance.c7.viz.steps.0	Develop
+corp-governance.c7.viz.steps.1	Validate independently
+corp-governance.c7.viz.steps.2	Monitor performance
+corp-governance.c7.viz.steps.3	Review periodically
+corp-governance.c8.title	Third-party AI
+corp-governance.c8.text	Many AI risks come through vendors. Contracts should cover data use, security, transparency, incident notification and compliance with laws like the AI Act.
+corp-governance.c8.viz.items.0	Data use and training restrictions
+corp-governance.c8.viz.items.1	Security commitments
+corp-governance.c8.viz.items.2	Incident notification
+corp-governance.c8.viz.items.3	Audit rights
+corp-governance.c8.viz.items.4	Regulatory compliance
+corp-governance.c9.title	Balance speed and control
+corp-governance.c9.text	Pre-approved patterns (approved tools, templates, low-risk categories) let most teams move fast, while scrutiny focuses on high-risk cases.
+corp-governance.c9.viz.l.t	Fast lane
+corp-governance.c9.viz.l.items.0	approved tools
+corp-governance.c9.viz.l.items.1	low-risk data
+corp-governance.c9.viz.l.items.2	self-service
+corp-governance.c9.viz.r.t	Full review
+corp-governance.c9.viz.r.items.0	high-risk uses
+corp-governance.c9.viz.r.items.1	personal decisions
+corp-governance.c9.viz.r.items.2	external impact
+corp-responsible.title	Responsible AI
+corp-responsible.summary	Principles that build trust.
+corp-responsible.q0.q	Which is an acceptable explanation for an AI-assisted decision?
+corp-responsible.q0.o0	"The algorithm decided"
+corp-responsible.q0.o1	"The team decided using an AI recommendation"
+corp-responsible.q0.o2	"No one knows"
+corp-responsible.q0.x	A human or team stays accountable.
+corp-responsible.q1.q	Human-on-the-loop means…
+corp-responsible.q1.o0	No humans
+corp-responsible.q1.o1	Humans monitor and can intervene
+corp-responsible.q1.o2	Humans approve each decision
+corp-responsible.q1.x	Monitoring with intervention ability.
+corp-responsible.q2.q	What should an AI system do when uncertain?
+corp-responsible.q2.o0	Guess confidently
+corp-responsible.q2.o1	Escalate to a human
+corp-responsible.q2.o2	Shut down the company
+corp-responsible.q2.x	Graceful handling of uncertainty.
+corp-responsible.c0.title	Common principles
+corp-responsible.c0.text	Most responsible AI frameworks share principles: fairness, transparency, accountability, privacy, safety and reliability, and human oversight.
+corp-responsible.c0.viz.items.0	Fairness
+corp-responsible.c0.viz.items.1	Transparency
+corp-responsible.c0.viz.items.2	Accountability
+corp-responsible.c0.viz.items.3	Privacy and security
+corp-responsible.c0.viz.items.4	Safety and reliability
+corp-responsible.c0.viz.items.5	Human oversight
+corp-responsible.c1.title	Fairness
+corp-responsible.c1.text	Check that AI doesn't treat people unfairly based on protected characteristics or proxies. Test outcomes across groups for any use affecting people.
+corp-responsible.c1.viz.steps.0	Define fairness criteria
+corp-responsible.c1.viz.steps.1	Test outcomes by group
+corp-responsible.c1.viz.steps.2	Fix disparities
+corp-responsible.c1.viz.steps.3	Monitor over time
+corp-responsible.c2.title	Transparency
+corp-responsible.c2.text	People should know when AI is involved and, for important decisions, understand the main reasons. Internally, document how systems work and their limits.
+corp-responsible.c2.viz.items.0	Disclose AI use
+corp-responsible.c2.viz.items.1	Explain key decisions
+corp-responsible.c2.viz.items.2	Document limits
+corp-responsible.c2.viz.items.3	Model and system cards
+corp-responsible.c3.title	Accountability
+corp-responsible.c3.text	A named person or team is accountable for each AI system's outcomes. "The algorithm decided" is never an acceptable answer.
+corp-responsible.c3.viz.items.0.w	"the AI decided"
+corp-responsible.c3.viz.items.0.r	"the credit team decided, using an AI recommendation"
+corp-responsible.c4.title	Human oversight
+corp-responsible.c4.text	Decide where humans must review: before action (human-in-the-loop), monitoring with the ability to intervene (human-on-the-loop), or periodic audits.
+corp-responsible.c4.viz.items.0.a	human-in-the-loop
+corp-responsible.c4.viz.items.0.b	approves each decision
+corp-responsible.c4.viz.items.1.a	human-on-the-loop
+corp-responsible.c4.viz.items.1.b	monitors, can intervene
+corp-responsible.c4.viz.items.2.a	periodic audit
+corp-responsible.c4.viz.items.2.b	reviews samples
+corp-responsible.c5.title	Reliability
+corp-responsible.c5.text	AI systems should perform consistently within their intended scope, with tested limits and graceful handling when uncertain: escalate rather than guess.
+corp-responsible.c5.viz.steps.0	Low confidence detected
+corp-responsible.c5.viz.steps.1	Don't guess
+corp-responsible.c5.viz.steps.2	Escalate to a human
+corp-responsible.c5.viz.steps.3	Learn from the case
+corp-responsible.c6.title	Workforce impact
+corp-responsible.c6.text	Responsible adoption considers people: communicate openly, involve employees, invest in reskilling, and redesign roles thoughtfully.
+corp-responsible.c6.viz.items.0	Open communication
+corp-responsible.c6.viz.items.1	Involve staff early
+corp-responsible.c6.viz.items.2	Reskilling programmes
+corp-responsible.c6.viz.items.3	Thoughtful role redesign
+corp-responsible.c6.viz.items.4	Measure wellbeing
+corp-responsible.c7.title	Environmental impact
+corp-responsible.c7.text	AI uses energy and water. Choose efficient models, avoid unnecessary use of the largest models and prefer cloud regions powered by clean energy.
+corp-responsible.c7.viz.items.0	Right-size models
+corp-responsible.c7.viz.items.1	Cache and batch
+corp-responsible.c7.viz.items.2	Efficient regions
+corp-responsible.c7.viz.items.3	Track energy where possible
+corp-responsible.c8.title	Model and system cards
+corp-responsible.c8.text	Short documents describing a system's purpose, data, performance, limitations and intended use help users and reviewers understand it.
+corp-responsible.c8.viz.items.0	Purpose and intended use
+corp-responsible.c8.viz.items.1	Data sources
+corp-responsible.c8.viz.items.2	Performance and tests
+corp-responsible.c8.viz.items.3	Known limitations
+corp-responsible.c8.viz.items.4	Contacts and owners
+corp-responsible.c9.title	Trust is the goal
+corp-responsible.c9.text	Responsible AI isn't a brake; it builds the trust that lets customers, regulators and employees accept AI at scale.
+corp-responsible.c9.viz.steps.0	Responsible practices
+corp-responsible.c9.viz.steps.1	Trust
+corp-responsible.c9.viz.steps.2	Adoption
+corp-responsible.c9.viz.steps.3	Value
+corp-ops.title	MLOps and LLMOps
+corp-ops.summary	Running AI reliably in production.
+corp-ops.q0.q	What should happen before a new prompt version is released?
+corp-ops.q0.o0	Nothing
+corp-ops.q0.o1	It should pass automated evaluations
+corp-ops.q0.o2	It needs a press release
+corp-ops.q0.x	Evaluation gates prevent regressions.
+corp-ops.q1.q	What is data drift?
+corp-ops.q1.o0	Data being deleted
+corp-ops.q1.o1	Incoming data changing so model performance degrades
+corp-ops.q1.o2	Faster data
+corp-ops.q1.x	Monitor and retrain.
+corp-ops.q2.q	What lets you switch an AI feature off without redeploying?
+corp-ops.q2.o0	A bigger server
+corp-ops.q2.o1	A feature flag
+corp-ops.q2.o2	A new model
+corp-ops.q2.x	Feature flags give quick control.
+corp-ops.c0.title	Models are living systems
+corp-ops.c0.text	Unlike traditional software, AI behaviour depends on data and models that change. Production AI needs continuous monitoring, retraining and evaluation.
+corp-ops.c0.viz.steps.0	Build
+corp-ops.c0.viz.steps.1	Deploy
+corp-ops.c0.viz.steps.2	Monitor
+corp-ops.c0.viz.steps.3	Improve and redeploy
+corp-ops.c1.title	MLOps
+corp-ops.c1.text	MLOps applies DevOps practices to machine learning: version data and models, automate training pipelines, test before deployment and monitor in production.
+corp-ops.c1.viz.steps.0	Data versioned
+corp-ops.c1.viz.steps.1	Automated training
+corp-ops.c1.viz.steps.2	Validation tests
+corp-ops.c1.viz.steps.3	Deploy
+corp-ops.c1.viz.steps.4	Monitor drift
+corp-ops.c2.title	LLMOps
+corp-ops.c2.text	For generative AI, the moving parts are prompts, retrieval indexes, tools, guardrails and model versions. All should be versioned, tested and monitored.
+corp-ops.c2.viz.items.0	Prompt versions
+corp-ops.c2.viz.items.1	Retrieval indexes
+corp-ops.c2.viz.items.2	Tool definitions
+corp-ops.c2.viz.items.3	Guardrail rules
+corp-ops.c2.viz.items.4	Model versions
+corp-ops.c3.title	Evaluation gates
+corp-ops.c3.text	Every change (new prompt, new model, new data) runs through automated evals before release. If quality drops, the change doesn't ship.
+corp-ops.c3.viz.steps.0	Change proposed
+corp-ops.c3.viz.steps.1	Run eval suite
+corp-ops.c3.viz.steps.2	Compare with current
+corp-ops.c3.viz.steps.3	Ship only if equal or better
+corp-ops.c4.title	Monitoring quality
+corp-ops.c4.text	Track accuracy proxies (user feedback, correction rates, escalation rates), drift in inputs, latency, errors and cost. Sample outputs for human review.
+corp-ops.c4.viz.items.0	User feedback
+corp-ops.c4.viz.items.1	Correction and escalation rates
+corp-ops.c4.viz.items.2	Input drift
+corp-ops.c4.viz.items.3	Latency and errors
+corp-ops.c4.viz.items.4	Cost
+corp-ops.c5.title	Data drift
+corp-ops.c5.text	When incoming data changes (new products, new document formats, new markets), model performance can degrade silently. Drift detection alerts the team.
+corp-ops.c5.viz.events.0.y	Jan
+corp-ops.c5.viz.events.0.l	model accurate
+corp-ops.c5.viz.events.1.y	Apr
+corp-ops.c5.viz.events.1.l	new supplier formats
+corp-ops.c5.viz.events.2.y	Jun
+corp-ops.c5.viz.events.2.l	accuracy slipping
+corp-ops.c5.viz.events.3.y	Jul
+corp-ops.c5.viz.events.3.l	drift alert, retrain
+corp-ops.c6.title	Rollbacks
+corp-ops.c6.text	Keep the previous version ready. If a release causes problems, roll back quickly. Feature flags let you switch AI features off without redeploying.
+corp-ops.c6.viz.steps.0	New version live
+corp-ops.c6.viz.steps.1	Problem detected
+corp-ops.c6.viz.steps.2	Feature flag off or roll back
+corp-ops.c6.viz.steps.3	Investigate
+corp-ops.c7.title	Cost monitoring
+corp-ops.c7.text	Generative AI costs scale with usage. Track spend per application and team, set budgets and alerts, and optimise prompts and model choice.
+corp-ops.c7.viz.items.0	Spend per app and team
+corp-ops.c7.viz.items.1	Budgets and alerts
+corp-ops.c7.viz.items.2	Tokens per request
+corp-ops.c7.viz.items.3	Cache hit rates
+corp-ops.c7.viz.items.4	Model mix
+corp-ops.c8.title	Human feedback loops
+corp-ops.c8.text	Corrections made by users are valuable training and evaluation data. Capture them systematically to improve prompts, retrieval and models.
+corp-ops.c8.viz.steps.0	AI output
+corp-ops.c8.viz.steps.1	User corrects it
+corp-ops.c8.viz.steps.2	Correction logged
+corp-ops.c8.viz.steps.3	Used to improve
+corp-ops.c9.title	Platform teams
+corp-ops.c9.text	A central platform team usually provides the tooling (pipelines, gateway, monitoring, eval frameworks) so product teams can focus on use cases.
+corp-ops.c9.viz.l.t	Platform team
+corp-ops.c9.viz.l.items.0	shared tools
+corp-ops.c9.viz.l.items.1	standards
+corp-ops.c9.viz.l.items.2	reliability
+corp-ops.c9.viz.r.t	Product teams
+corp-ops.c9.viz.r.items.0	use cases
+corp-ops.c9.viz.r.items.1	business outcomes
+corp-ops.c9.viz.r.items.2	user needs
+corp-scale.title	From pilot to production
+corp-scale.summary	Escaping pilot purgatory.
+corp-scale.q0.q	What is "pilot purgatory"?
+corp-scale.q0.o0	A training course
+corp-scale.q0.o1	Many pilots that never reach production
+corp-scale.q0.o2	A security flaw
+corp-scale.q0.x	Pilots stall without owners, integration and proof of value.
+corp-scale.q1.q	Where should an AI tool live for high adoption?
+corp-scale.q1.o0	A separate website
+corp-scale.q1.o1	Inside the workflow tools people already use
+corp-scale.q1.o2	On a poster
+corp-scale.q1.x	Embedded tools get used.
+corp-scale.q2.q	What should happen to low-confidence AI results?
+corp-scale.q2.o0	Auto-approve
+corp-scale.q2.o1	Route them to humans
+corp-scale.q2.o2	Delete them
+corp-scale.q2.x	Exceptions go to people.
+corp-scale.c0.title	Pilot purgatory
+corp-scale.c0.text	Many organisations run dozens of AI pilots that impress in demos but never scale. Common causes: no clear owner, no integration plan, unproven value and unresolved risk questions.
+corp-scale.c0.viz.items.0	No business owner
+corp-scale.c0.viz.items.1	No integration plan
+corp-scale.c0.viz.items.2	Value not measured
+corp-scale.c0.viz.items.3	Risk questions unresolved
+corp-scale.c0.viz.items.4	Team moves on
+corp-scale.c1.title	Design for production from day one
+corp-scale.c1.text	Even in a pilot, use real data, real users, the target architecture and security controls. A demo on clean sample data proves little.
+corp-scale.c1.viz.l.t	Demo pilot
+corp-scale.c1.viz.l.items.0	sample data
+corp-scale.c1.viz.l.items.1	isolated
+corp-scale.c1.viz.l.items.2	impressive slides
+corp-scale.c1.viz.r.t	Production-minded pilot
+corp-scale.c1.viz.r.items.0	real data
+corp-scale.c1.viz.r.items.1	real users
+corp-scale.c1.viz.r.items.2	target platform
+corp-scale.c2.title	Define success upfront
+corp-scale.c2.text	Agree measurable success criteria before starting: accuracy threshold, time saved, user satisfaction, cost per transaction.
+corp-scale.c2.viz.items.0	Accuracy threshold
+corp-scale.c2.viz.items.1	Time saved per task
+corp-scale.c2.viz.items.2	User satisfaction
+corp-scale.c2.viz.items.3	Cost per transaction
+corp-scale.c2.viz.items.4	Adoption rate
+corp-scale.c3.title	Integration is the work
+corp-scale.c3.text	Value appears when AI is inside the workflow: in the ERP screen, the email client, the ticketing tool, not in a separate chat window people forget to use.
+corp-scale.c3.viz.l.t	Separate tool
+corp-scale.c3.viz.l.items.0	extra step
+corp-scale.c3.viz.l.items.1	low adoption
+corp-scale.c3.viz.r.t	Embedded in workflow
+corp-scale.c3.viz.r.items.0	natural use
+corp-scale.c3.viz.r.items.1	high adoption
+corp-scale.c4.title	Handle exceptions
+corp-scale.c4.text	Design for the cases the AI can't handle: low confidence routes to humans, with an easy way to correct and learn.
+corp-scale.c4.viz.steps.0	AI processes item
+corp-scale.c4.viz.steps.1	High confidence: auto
+corp-scale.c4.viz.steps.2	Low confidence: human queue
+corp-scale.c4.viz.steps.3	Corrections feed back
+corp-scale.c5.title	Scale step by step
+corp-scale.c5.text	Expand gradually: one team, one region, one document type, then more. Each step reveals new edge cases and builds confidence.
+corp-scale.c5.viz.events.0.y	Month 1
+corp-scale.c5.viz.events.0.l	one team
+corp-scale.c5.viz.events.1.y	Month 3
+corp-scale.c5.viz.events.1.l	one region
+corp-scale.c5.viz.events.2.y	Month 6
+corp-scale.c5.viz.events.2.l	all regions
+corp-scale.c5.viz.events.3.y	Month 9
+corp-scale.c5.viz.events.3.l	new document types
+corp-scale.c6.title	Operating ownership
+corp-scale.c6.text	After launch someone must own it: monitoring, support, improvements and costs. Without an owner, solutions decay.
+corp-scale.c6.viz.items.0	Business owner
+corp-scale.c6.viz.items.1	Technical owner
+corp-scale.c6.viz.items.2	Support process
+corp-scale.c6.viz.items.3	Improvement backlog
+corp-scale.c6.viz.items.4	Budget for running costs
+corp-scale.c7.title	Industrialise the pattern
+corp-scale.c7.text	Once one use case works, turn it into a reusable pattern (document extraction, knowledge assistant, triage) and apply it across similar processes.
+corp-scale.c7.viz.steps.0	One successful use case
+corp-scale.c7.viz.steps.1	Generalise into a pattern
+corp-scale.c7.viz.steps.2	Reuse in other teams
+corp-scale.c7.viz.steps.3	Faster value
+corp-scale.c8.title	Communicate wins
+corp-scale.c8.text	Share measured results internally: hours saved, errors avoided, user stories. Visible wins build momentum and funding for the next wave.
+corp-scale.c8.viz.items.0	Measured results
+corp-scale.c8.viz.items.1	User testimonials
+corp-scale.c8.viz.items.2	Before-and-after examples
+corp-scale.c8.viz.items.3	Lessons learned
+corp-scale.c9.title	Stop what doesn't work
+corp-scale.c9.text	Not every pilot should scale. A disciplined stop decision frees resources and is a sign of a healthy portfolio.
+corp-scale.c9.viz.steps.0	Review pilot against criteria
+corp-scale.c9.viz.steps.1	Meets them: scale
+corp-scale.c9.viz.steps.2	Close: adjust
+corp-scale.c9.viz.steps.3	Misses: stop and learn
+corp-change.title	Change management and adoption
+corp-change.summary	Helping people actually use AI.
+corp-change.q0.q	Why do many AI tools see low usage?
+corp-change.q0.o0	Bad models
+corp-change.q0.o1	People aren't supported to change how they work
+corp-change.q0.o2	Too many features
+corp-change.q0.x	Adoption needs change management.
+corp-change.q1.q	What is an AI champions network?
+corp-change.q1.o0	A sports team
+corp-change.q1.o1	Early adopters who help and train colleagues
+corp-change.q1.o2	A vendor programme
+corp-change.q1.x	Peer support spreads adoption.
+corp-change.q2.q	What does the "A" at the start of ADKAR stand for?
+corp-change.q2.o0	Ability
+corp-change.q2.o1	Awareness
+corp-change.q2.o2	Adoption
+corp-change.q2.x	Awareness of why change is needed.
+corp-change.c0.title	Technology is the easy part
+corp-change.c0.text	AI projects fail more often because people don't adopt them than because the technology fails. Change management deserves real budget and attention.
+corp-change.c0.viz.l.t	Technology focus only
+corp-change.c0.viz.l.items.0	tool launched
+corp-change.c0.viz.l.items.1	low usage
+corp-change.c0.viz.r.t	Technology + change
+corp-change.c0.viz.r.items.0	training
+corp-change.c0.viz.r.items.1	champions
+corp-change.c0.viz.r.items.2	redesigned processes
+corp-change.c1.title	Address fears openly
+corp-change.c1.text	People worry about job security, being monitored and looking incompetent. Leaders should explain the purpose honestly and how roles will evolve.
+corp-change.c1.viz.items.0	Job security
+corp-change.c1.viz.items.1	Being monitored
+corp-change.c1.viz.items.2	Losing expertise
+corp-change.c1.viz.items.3	Looking incompetent
+corp-change.c1.viz.items.4	Extra workload
+corp-change.c2.title	Champions network
+corp-change.c2.text	Enthusiastic early users in each team help colleagues, share tips and give feedback. Peer learning spreads faster than central training.
+corp-change.c2.viz.steps.0	Recruit champions
+corp-change.c2.viz.steps.1	Train them deeply
+corp-change.c2.viz.steps.2	They help their teams
+corp-change.c2.viz.steps.3	Feedback to the AI team
+corp-change.c3.title	Hands-on training
+corp-change.c3.text	Short, practical sessions with real tasks from people's own work beat generic presentations. Show before-and-after examples.
+corp-change.c3.viz.items.0	Real tasks from their job
+corp-change.c3.viz.items.1	Short sessions
+corp-change.c3.viz.items.2	Prompt templates
+corp-change.c3.viz.items.3	Office hours
+corp-change.c3.viz.items.4	Follow-up tips
+corp-change.c4.title	Redesign the process
+corp-change.c4.text	Dropping AI into an unchanged process gives small gains. Rethinking steps, roles and approvals around AI unlocks bigger ones.
+corp-change.c4.viz.l.t	Bolt-on
+corp-change.c4.viz.l.items.0	same process
+corp-change.c4.viz.l.items.1	small gains
+corp-change.c4.viz.r.t	Redesign
+corp-change.c4.viz.r.items.0	fewer steps
+corp-change.c4.viz.r.items.1	new roles
+corp-change.c4.viz.r.items.2	big gains
+corp-change.c5.title	Leaders go first
+corp-change.c5.text	When leaders visibly use AI tools themselves and talk about it, adoption rises. If they don't, teams conclude it isn't important.
+corp-change.c5.viz.steps.0	Leaders use AI visibly
+corp-change.c5.viz.steps.1	Share examples
+corp-change.c5.viz.steps.2	Teams follow
+corp-change.c5.viz.steps.3	Culture shifts
+corp-change.c6.title	Measure adoption
+corp-change.c6.text	Track active users, frequency, use cases, satisfaction and impact. Low adoption in a team is a signal to investigate, not just push harder.
+corp-change.c6.viz.items.0	Active users
+corp-change.c6.viz.items.1	Frequency of use
+corp-change.c6.viz.items.2	Satisfaction
+corp-change.c6.viz.items.3	Impact metrics
+corp-change.c6.viz.items.4	Team-by-team comparison
+corp-change.c7.title	Make it easy
+corp-change.c7.text	Single sign-on, integration in existing tools, prompt libraries and templates remove friction. Every extra click costs adoption.
+corp-change.c7.viz.items.0	Single sign-on
+corp-change.c7.viz.items.1	Integrated in daily tools
+corp-change.c7.viz.items.2	Prompt and template library
+corp-change.c7.viz.items.3	Good onboarding
+corp-change.c7.viz.items.4	Quick help
+corp-change.c8.title	Celebrate and share
+corp-change.c8.text	Share success stories, run internal showcases or hackathons, and recognise people who find valuable new uses.
+corp-change.c8.viz.items.0	Success stories
+corp-change.c8.viz.items.1	Internal showcases
+corp-change.c8.viz.items.2	Hackathons
+corp-change.c8.viz.items.3	Recognition
+corp-change.c8.viz.items.4	Community channels
+corp-change.c9.title	ADKAR in brief
+corp-change.c9.text	A common change model: Awareness of why, Desire to take part, Knowledge of how, Ability to do it, Reinforcement to make it stick.
+corp-change.c9.viz.items.0	Reinforcement
+corp-change.c9.viz.items.1	Ability
+corp-change.c9.viz.items.2	Knowledge
+corp-change.c9.viz.items.3	Desire
+corp-change.c9.viz.items.4	Awareness
+corp-skills.title	Skills and operating model
+corp-skills.summary	Who does what in an AI-enabled company.
+corp-skills.q0.q	What does an AI Centre of Excellence do?
+corp-skills.q0.o0	Replaces all IT
+corp-skills.q0.o1	Sets standards, builds shared platforms and supports teams
+corp-skills.q0.o2	Sells AI
+corp-skills.q0.x	Central expertise and governance.
+corp-skills.q1.q	In a hub-and-spoke model, spokes are…
+corp-skills.q1.o0	Vendors
+corp-skills.q1.o1	AI teams embedded in business units
+corp-skills.q1.o2	Data centres
+corp-skills.q1.x	Local teams close to processes.
+corp-skills.q2.q	Why are domain experts essential to AI projects?
+corp-skills.q2.o0	They write the code
+corp-skills.q2.o1	They define what good looks like and validate outputs
+corp-skills.q2.o2	They buy GPUs
+corp-skills.q2.x	Business knowledge is key.
+corp-skills.c0.title	AI literacy for all
+corp-skills.c0.text	Everyone using AI needs basic literacy: what it can and can't do, how to prompt, how to check outputs and what data rules apply. The EU AI Act now requires it.
+corp-skills.c0.viz.items.0	What AI can and can't do
+corp-skills.c0.viz.items.1	Prompting basics
+corp-skills.c0.viz.items.2	Checking outputs
+corp-skills.c0.viz.items.3	Data and privacy rules
+corp-skills.c0.viz.items.4	When to escalate
+corp-skills.c1.title	Key roles
+corp-skills.c1.text	Building AI needs a mix: product owners, data engineers, ML/AI engineers, software engineers, designers, and domain experts, plus governance roles.
+corp-skills.c1.viz.items.0.a	product owner
+corp-skills.c1.viz.items.0.b	value and priorities
+corp-skills.c1.viz.items.1.a	data engineer
+corp-skills.c1.viz.items.1.b	pipelines and quality
+corp-skills.c1.viz.items.2.a	AI engineer
+corp-skills.c1.viz.items.2.b	models, RAG, agents
+corp-skills.c1.viz.items.3.a	domain expert
+corp-skills.c1.viz.items.3.b	business knowledge
+corp-skills.c1.viz.items.4.a	designer
+corp-skills.c1.viz.items.4.b	user experience
+corp-skills.c2.title	Centre of Excellence
+corp-skills.c2.text	A central AI CoE sets standards, builds the platform, shares best practice and helps teams. It avoids duplication and inconsistent controls.
+corp-skills.c2.viz.items.0	Standards and guardrails
+corp-skills.c2.viz.items.1	Shared platform
+corp-skills.c2.viz.items.2	Best practices
+corp-skills.c2.viz.items.3	Expert support
+corp-skills.c2.viz.items.4	Training
+corp-skills.c3.title	Hub and spoke
+corp-skills.c3.text	A common model: a central hub (platform, governance, expertise) plus spokes embedded in business units who know local processes and drive use cases.
+corp-skills.c3.viz.root	AI hub
+corp-skills.c3.viz.items.0	Finance spoke
+corp-skills.c3.viz.items.1	Operations spoke
+corp-skills.c3.viz.items.2	Commercial spoke
+corp-skills.c3.viz.items.3	HR spoke
+corp-skills.c4.title	Global teams
+corp-skills.c4.text	Large companies often combine global platform teams with regional delivery hubs, balancing standards with local needs and time zones.
+corp-skills.c4.viz.l.t	Global
+corp-skills.c4.viz.l.items.0	platform
+corp-skills.c4.viz.l.items.1	governance
+corp-skills.c4.viz.l.items.2	shared services
+corp-skills.c4.viz.r.t	Regional
+corp-skills.c4.viz.r.items.0	local use cases
+corp-skills.c4.viz.r.items.1	languages
+corp-skills.c4.viz.r.items.2	regulations
+corp-skills.c5.title	Upskilling engineers
+corp-skills.c5.text	Existing developers can learn AI engineering quickly: APIs, RAG, evaluation, prompt design. Upskilling plus a few specialists often beats hiring only new experts.
+corp-skills.c5.viz.steps.0	Existing engineers
+corp-skills.c5.viz.steps.1	AI engineering training
+corp-skills.c5.viz.steps.2	Pair with specialists
+corp-skills.c5.viz.steps.3	Deliver use cases
+corp-skills.c6.title	Domain experts are essential
+corp-skills.c6.text	Accountants, traders, lawyers and engineers define what "good" looks like, label examples and validate outputs. Without them, AI solutions miss the point.
+corp-skills.c6.viz.items.0	Define success criteria
+corp-skills.c6.viz.items.1	Provide examples
+corp-skills.c6.viz.items.2	Validate outputs
+corp-skills.c6.viz.items.3	Spot edge cases
+corp-skills.c6.viz.items.4	Champion adoption
+corp-skills.c7.title	New roles
+corp-skills.c7.text	New roles are emerging: AI product manager, AI engineer, evaluation specialist, AI governance lead, and agent operations.
+corp-skills.c7.viz.items.0	AI product manager
+corp-skills.c7.viz.items.1	AI engineer
+corp-skills.c7.viz.items.2	Evaluation specialist
+corp-skills.c7.viz.items.3	AI governance lead
+corp-skills.c7.viz.items.4	Agent operations
+corp-skills.c8.title	Career paths
+corp-skills.c8.text	As routine tasks shrink, roles shift toward judgement, exception handling, relationships and supervising AI. Clear career paths reduce anxiety and keep talent.
+corp-skills.c8.viz.l.t	Shrinking
+corp-skills.c8.viz.l.items.0	routine processing
+corp-skills.c8.viz.l.items.1	manual data entry
+corp-skills.c8.viz.r.t	Growing
+corp-skills.c8.viz.r.items.0	exception handling
+corp-skills.c8.viz.r.items.1	analysis
+corp-skills.c8.viz.r.items.2	AI supervision
+corp-skills.c9.title	Continuous learning
+corp-skills.c9.text	AI changes fast. Build learning into the job: communities of practice, internal demos, learning budgets and time to experiment.
+corp-skills.c9.viz.items.0	Communities of practice
+corp-skills.c9.viz.items.1	Internal demos
+corp-skills.c9.viz.items.2	Learning budgets
+corp-skills.c9.viz.items.3	Time to experiment
+corp-skills.c9.viz.items.4	External partners
+corp-finance.title	AI in finance and back office
+corp-finance.summary	Invoices, reconciliations and close.
+corp-finance.q0.q	What is a three-way match?
+corp-finance.q0.o0	Three invoices
+corp-finance.q0.o1	Matching PO, goods receipt and invoice
+corp-finance.q0.o2	Three approvals
+corp-finance.q0.x	Classic AP control.
+corp-finance.q1.q	Why must finance AI keep an audit trail?
+corp-finance.q1.o0	For style
+corp-finance.q1.o1	So auditors can trace every posting to sources and approvals
+corp-finance.q1.o2	To use more storage
+corp-finance.q1.x	Traceability is essential.
+corp-finance.q2.q	What does "touchless rate" measure?
+corp-finance.q2.o0	Screen time
+corp-finance.q2.o1	Share of items processed without human intervention
+corp-finance.q2.o2	Number of users
+corp-finance.q2.x	A key automation KPI.
+corp-finance.c0.title	Invoice processing
+corp-finance.c0.text	AI extracts supplier, dates, amounts, VAT and line items from invoices in any layout, matches them to purchase orders and goods receipts, and flags mismatches.
+corp-finance.c0.viz.steps.0	Invoice arrives
+corp-finance.c0.viz.steps.1	AI extracts fields
+corp-finance.c0.viz.steps.2	Match PO and receipt
+corp-finance.c0.viz.steps.3	Post or flag exception
+corp-finance.c1.title	Three-way match
+corp-finance.c1.text	Classic accounts payable check: invoice, purchase order and goods receipt must agree on quantities and prices. AI speeds matching and explains mismatches.
+corp-finance.c1.viz.root	Three-way match
+corp-finance.c1.viz.items.0	Purchase order
+corp-finance.c1.viz.items.1	Goods receipt
+corp-finance.c1.viz.items.2	Invoice
+corp-finance.c2.title	Reconciliations
+corp-finance.c2.text	Matching bank statements, intercompany balances and ledgers is repetitive. ML can match transactions with fuzzy references and learn from past manual matches.
+corp-finance.c2.viz.steps.0	Bank lines + ledger entries
+corp-finance.c2.viz.steps.1	AI proposes matches
+corp-finance.c2.viz.steps.2	Accountant reviews exceptions
+corp-finance.c2.viz.steps.3	Reconciled
+corp-finance.c3.title	Financial close
+corp-finance.c3.text	AI can draft variance explanations, check journal entries for anomalies and summarise close status, shortening month-end.
+corp-finance.c3.viz.items.0	Variance commentary drafts
+corp-finance.c3.viz.items.1	Journal anomaly detection
+corp-finance.c3.viz.items.2	Close checklist tracking
+corp-finance.c3.viz.items.3	Intercompany matching
+corp-finance.c4.title	Cash forecasting
+corp-finance.c4.text	ML models forecast customer payments and supplier outflows from history, improving cash and working-capital planning.
+corp-finance.c4.viz.steps.0	Payment history
+corp-finance.c4.viz.steps.1	Model predicts payment dates
+corp-finance.c4.viz.steps.2	Cash forecast
+corp-finance.c4.viz.steps.3	Better liquidity planning
+corp-finance.c5.title	Fraud and anomalies
+corp-finance.c5.text	Detect duplicate invoices, unusual payments, changed bank details and suspicious vendors before money leaves.
+corp-finance.c5.viz.items.0	Duplicate invoices
+corp-finance.c5.viz.items.1	Changed bank details
+corp-finance.c5.viz.items.2	Unusual amounts or timing
+corp-finance.c5.viz.items.3	New suspicious vendors
+corp-finance.c5.viz.items.4	Split purchases
+corp-finance.c6.title	Expense audits
+corp-finance.c6.text	AI reads receipts, checks them against policy and flags exceptions, so auditors review the risky few instead of sampling randomly.
+corp-finance.c6.viz.l.t	Manual sampling
+corp-finance.c6.viz.l.items.0	small random sample
+corp-finance.c6.viz.l.items.1	misses issues
+corp-finance.c6.viz.r.t	AI screening
+corp-finance.c6.viz.r.items.0	checks all
+corp-finance.c6.viz.r.items.1	flags risky ones
+corp-finance.c7.title	Controls and auditability
+corp-finance.c7.text	Finance needs full traceability: every AI-proposed posting should show source documents, confidence and who approved it. Auditors must be able to follow the trail.
+corp-finance.c7.viz.steps.0	Source document
+corp-finance.c7.viz.steps.1	AI proposal with confidence
+corp-finance.c7.viz.steps.2	Human approval
+corp-finance.c7.viz.steps.3	Posting with audit trail
+corp-finance.c8.title	ERP integration
+corp-finance.c8.text	Value comes when AI is connected to the ERP (SAP S/4HANA, Oracle, Dynamics): reading master data, proposing postings, updating workflows.
+corp-finance.c8.viz.steps.0	Document AI
+corp-finance.c8.viz.steps.1	ERP APIs
+corp-finance.c8.viz.steps.2	Proposed posting
+corp-finance.c8.viz.steps.3	Workflow approval
+corp-finance.c9.title	Measuring finance AI
+corp-finance.c9.text	Track touchless processing rate, cycle time, error rate, cost per invoice, days to close and early-payment discounts captured.
+corp-finance.c9.viz.unit	% touchless invoices (illustrative journey)
+corp-finance.c9.viz.items.0.l	Before
+corp-finance.c9.viz.items.1.l	Year 1
+corp-finance.c9.viz.items.2.l	Year 2
+corp-supply.title	AI in operations and commodities
+corp-supply.summary	Forecasting, logistics and trading support.
+corp-supply.q0.q	What does predictive maintenance use?
+corp-supply.q0.o0	Random checks
+corp-supply.q0.o1	Sensor data to predict failures
+corp-supply.q0.o2	Weather only
+corp-supply.q0.x	Fix before breakdown.
+corp-supply.q1.q	In trade contracts, what is demurrage?
+corp-supply.q1.o0	A grain type
+corp-supply.q1.o1	A charge per day when a vessel is delayed beyond agreed laytime
+corp-supply.q1.o2	A tax
+corp-supply.q1.x	Typically a daily rate.
+corp-supply.q2.q	Who should make final trading decisions?
+corp-supply.q2.o0	The model
+corp-supply.q2.o1	Experienced people, using AI signals
+corp-supply.q2.o2	Nobody
+corp-supply.q2.x	AI informs; people decide.
+corp-supply.c0.title	Demand forecasting
+corp-supply.c0.text	ML forecasts demand using history, seasonality, prices, weather and events, improving on simple averages and helping plan production and stock.
+corp-supply.c0.viz.unit	forecast error % (illustrative)
+corp-supply.c0.viz.items.0.l	Last year's value
+corp-supply.c0.viz.items.1.l	Statistical model
+corp-supply.c0.viz.items.2.l	ML with external data
+corp-supply.c1.title	Supply chain visibility
+corp-supply.c1.text	AI combines data from ERP, carriers, ports and suppliers to predict delays and suggest actions, such as rerouting or reprioritising orders.
+corp-supply.c1.viz.steps.0	Shipping and port data
+corp-supply.c1.viz.steps.1	Predict delays
+corp-supply.c1.viz.steps.2	Alert planners
+corp-supply.c1.viz.steps.3	Reroute or adjust
+corp-supply.c2.title	Logistics optimisation
+corp-supply.c2.text	Optimisation and ML plan routes, vessel schedules, warehouse picking and truck loading, reducing cost and emissions.
+corp-supply.c2.viz.items.0	Route planning
+corp-supply.c2.viz.items.1	Vessel scheduling
+corp-supply.c2.viz.items.2	Warehouse slotting
+corp-supply.c2.viz.items.3	Load optimisation
+corp-supply.c2.viz.items.4	Emissions tracking
+corp-supply.c3.title	Predictive maintenance
+corp-supply.c3.text	Sensors on machines (vibration, temperature, power) feed models that predict failures, so maintenance happens before breakdowns.
+corp-supply.c3.viz.steps.0	Sensor data
+corp-supply.c3.viz.steps.1	Detect early warning signs
+corp-supply.c3.viz.steps.2	Schedule maintenance
+corp-supply.c3.viz.steps.3	Avoid unplanned downtime
+corp-supply.c4.title	Commodity price signals
+corp-supply.c4.text	Models combine supply and demand data, weather, crop conditions, freight and macro indicators to support analysts' views. They inform, not replace, trading judgement.
+corp-supply.c4.viz.items.0	Weather and crop conditions
+corp-supply.c4.viz.items.1	Supply and demand balances
+corp-supply.c4.viz.items.2	Freight rates
+corp-supply.c4.viz.items.3	Currency and macro data
+corp-supply.c4.viz.items.4	Positioning data
+corp-supply.c5.title	Satellite and weather data
+corp-supply.c5.text	Satellite images and weather forecasts help estimate crop health and yields across regions like Brazil, the US Midwest and the Black Sea before official reports.
+corp-supply.c5.viz.steps.0	Satellite imagery
+corp-supply.c5.viz.steps.1	Vegetation indices
+corp-supply.c5.viz.steps.2	Yield estimates
+corp-supply.c5.viz.steps.3	Supply outlook
+corp-supply.c6.title	Contract intelligence
+corp-supply.c6.text	Generative AI extracts key terms from trade contracts (quantities, quality specs, shipment periods, Incoterms, demurrage, payment terms) and flags unusual clauses.
+corp-supply.c6.viz.items.0.a	quantity
+corp-supply.c6.viz.items.0.b	tonnes and tolerance
+corp-supply.c6.viz.items.1.a	quality
+corp-supply.c6.viz.items.1.b	specs like protein, moisture
+corp-supply.c6.viz.items.2.a	Incoterm
+corp-supply.c6.viz.items.2.b	FOB, CIF, etc.
+corp-supply.c6.viz.items.3.a	demurrage
+corp-supply.c6.viz.items.3.b	rate per day
+corp-supply.c7.title	Trade operations
+corp-supply.c7.text	AI helps with documents (bills of lading, certificates, letters of credit), checking consistency across them and spotting discrepancies before they cause payment delays.
+corp-supply.c7.viz.steps.0	Shipment documents
+corp-supply.c7.viz.steps.1	AI checks consistency
+corp-supply.c7.viz.steps.2	Flags discrepancies
+corp-supply.c7.viz.steps.3	Fix before presentation
+corp-supply.c8.title	Risk and compliance
+corp-supply.c8.text	Sanctions screening, counterparty risk and vessel tracking benefit from AI that monitors news, ownership data and ship movements.
+corp-supply.c8.viz.items.0	Sanctions screening
+corp-supply.c8.viz.items.1	Counterparty monitoring
+corp-supply.c8.viz.items.2	Vessel tracking
+corp-supply.c8.viz.items.3	Adverse news alerts
+corp-supply.c8.viz.items.4	Trade-based fraud signals
+corp-supply.c9.title	Humans in the loop
+corp-supply.c9.text	In trading and operations, AI provides signals and automation, while experienced people make the commercial and risk decisions.
+corp-supply.c9.viz.l.t	AI
+corp-supply.c9.viz.l.items.0	data at scale
+corp-supply.c9.viz.l.items.1	signals
+corp-supply.c9.viz.l.items.2	document processing
+corp-supply.c9.viz.r.t	People
+corp-supply.c9.viz.r.items.0	judgement
+corp-supply.c9.viz.r.items.1	relationships
+corp-supply.c9.viz.r.items.2	accountability
+corp-customer.title	AI in customer service and sales
+corp-customer.summary	Faster answers and better selling.
+corp-customer.q0.q	What does a support copilot do?
+corp-customer.q0.o0	Replaces customers
+corp-customer.q0.o1	Drafts replies for agents to review and send
+corp-customer.q0.o2	Deletes tickets
+corp-customer.q0.x	Agents stay in control.
+corp-customer.q1.q	What must a customer-facing assistant offer?
+corp-customer.q1.o0	Discounts
+corp-customer.q1.o1	A way to reach a human
+corp-customer.q1.o2	Only English
+corp-customer.q1.x	Human handover and disclosure.
+corp-customer.q2.q	What is ticket triage?
+corp-customer.q2.o0	Closing tickets
+corp-customer.q2.o1	Classifying and routing requests automatically
+corp-customer.q2.o2	Writing tickets
+corp-customer.q2.x	Right team, right priority.
+corp-customer.c0.title	Support copilots
+corp-customer.c0.text	AI drafts replies for agents using knowledge bases and case history. Agents edit and send, handling more cases with consistent quality.
+corp-customer.c0.viz.steps.0	Customer email
+corp-customer.c0.viz.steps.1	AI drafts reply with sources
+corp-customer.c0.viz.steps.2	Agent edits
+corp-customer.c0.viz.steps.3	Sent faster
+corp-customer.c1.title	Self-service assistants
+corp-customer.c1.text	Customer-facing assistants answer common questions 24/7 and hand over to humans for complex or sensitive cases, with full context passed on.
+corp-customer.c1.viz.steps.0	Customer question
+corp-customer.c1.viz.steps.1	Assistant answers common cases
+corp-customer.c1.viz.steps.2	Complex: hand to human
+corp-customer.c1.viz.steps.3	Context passed along
+corp-customer.c2.title	Ticket triage
+corp-customer.c2.text	Classify incoming requests by topic, urgency and language, and route them to the right team automatically.
+corp-customer.c2.viz.items.0.a	topic
+corp-customer.c2.viz.items.0.b	billing, delivery, technical
+corp-customer.c2.viz.items.1.a	urgency
+corp-customer.c2.viz.items.1.b	high, normal
+corp-customer.c2.viz.items.2.a	language
+corp-customer.c2.viz.items.2.b	PT, EN, ES
+corp-customer.c2.viz.items.3.a	route
+corp-customer.c2.viz.items.3.b	right team
+corp-customer.c3.title	Sentiment and quality
+corp-customer.c3.text	AI analyses conversations for sentiment, recurring issues and compliance, giving managers insight across all interactions, not just samples.
+corp-customer.c3.viz.items.0	Sentiment trends
+corp-customer.c3.viz.items.1	Recurring complaints
+corp-customer.c3.viz.items.2	Compliance checks
+corp-customer.c3.viz.items.3	Coaching opportunities
+corp-customer.c4.title	Sales assistants
+corp-customer.c4.text	AI prepares account briefings, summarises meetings, drafts proposals and updates the CRM, giving salespeople more time with customers.
+corp-customer.c4.viz.items.0	Account briefings
+corp-customer.c4.viz.items.1	Meeting summaries
+corp-customer.c4.viz.items.2	Proposal drafts
+corp-customer.c4.viz.items.3	CRM updates
+corp-customer.c4.viz.items.4	Follow-up emails
+corp-customer.c5.title	Lead scoring
+corp-customer.c5.text	ML scores leads by likelihood to buy, based on past wins, behaviour and firmographics, so sales focuses on the most promising.
+corp-customer.c5.viz.unit	conversion % by score band (illustrative)
+corp-customer.c5.viz.items.0.l	Low
+corp-customer.c5.viz.items.1.l	Medium
+corp-customer.c5.viz.items.2.l	High
+corp-customer.c6.title	Pricing support
+corp-customer.c6.text	Models suggest prices or discounts based on deal history, demand and competition, within guardrails set by the business.
+corp-customer.c6.viz.steps.0	Deal context
+corp-customer.c6.viz.steps.1	Model suggests price range
+corp-customer.c6.viz.steps.2	Within approved limits
+corp-customer.c6.viz.steps.3	Salesperson decides
+corp-customer.c7.title	Personalisation
+corp-customer.c7.text	Recommending relevant products and content increases conversion, but must respect privacy and avoid being intrusive.
+corp-customer.c7.viz.l.t	Helpful
+corp-customer.c7.viz.l.items.0	relevant
+corp-customer.c7.viz.l.items.1	respects consent
+corp-customer.c7.viz.r.t	Creepy
+corp-customer.c7.viz.r.items.0	too personal
+corp-customer.c7.viz.r.items.1	unexplained
+corp-customer.c7.viz.r.items.2	no consent
+corp-customer.c8.title	Be transparent
+corp-customer.c8.text	Customers should know when they're talking to AI, and should always be able to reach a human. The EU AI Act requires disclosure for chatbots.
+corp-customer.c8.viz.items.0	Say it's AI
+corp-customer.c8.viz.items.1	Offer a human
+corp-customer.c8.viz.items.2	Don't fake empathy
+corp-customer.c8.viz.items.3	Escalate complaints
+corp-customer.c9.title	Measure service AI
+corp-customer.c9.text	Track resolution rate, handling time, customer satisfaction, escalation rate and accuracy of answers. Watch for customers giving up.
+corp-customer.c9.viz.items.0	First-contact resolution
+corp-customer.c9.viz.items.1	Average handling time
+corp-customer.c9.viz.items.2	CSAT
+corp-customer.c9.viz.items.3	Escalation rate
+corp-customer.c9.viz.items.4	Answer accuracy
+corp-hrlegal.title	AI in HR and legal
+corp-hrlegal.summary	Contracts, policies and people processes.
+corp-hrlegal.q0.q	Under the EU AI Act, AI that ranks job candidates is…
+corp-hrlegal.q0.o0	Minimal risk
+corp-hrlegal.q0.o1	High risk
+corp-hrlegal.q0.o2	Not regulated
+corp-hrlegal.q0.x	Employment uses are high-risk.
+corp-hrlegal.q1.q	What does a legal playbook define?
+corp-hrlegal.q1.o0	Office hours
+corp-hrlegal.q1.o1	Preferred, acceptable and unacceptable clause positions
+corp-hrlegal.q1.o2	Salaries
+corp-hrlegal.q1.x	AI applies it consistently.
+corp-hrlegal.q2.q	Which practice is banned at work under the EU AI Act?
+corp-hrlegal.q2.o0	Policy chatbots
+corp-hrlegal.q2.o1	Emotion recognition (with narrow exceptions)
+corp-hrlegal.q2.o2	Contract review
+corp-hrlegal.q2.x	Banned since February 2025.
+corp-hrlegal.c0.title	Contract review
+corp-hrlegal.c0.text	AI extracts key clauses (term, renewal, liability, termination, governing law), compares them with your standard positions and highlights deviations for lawyers.
+corp-hrlegal.c0.viz.steps.0	Contract uploaded
+corp-hrlegal.c0.viz.steps.1	Extract key clauses
+corp-hrlegal.c0.viz.steps.2	Compare with playbook
+corp-hrlegal.c0.viz.steps.3	Flag deviations for review
+corp-hrlegal.c1.title	Clause libraries and playbooks
+corp-hrlegal.c1.text	A legal playbook defines preferred, acceptable and unacceptable positions for each clause. AI applies it consistently across thousands of contracts.
+corp-hrlegal.c1.viz.items.0	Unacceptable: escalate
+corp-hrlegal.c1.viz.items.1	Acceptable fallback
+corp-hrlegal.c1.viz.items.2	Preferred position
+corp-hrlegal.c2.title	Legal research
+corp-hrlegal.c2.text	AI helps search case law and regulations, but citations must be verified: lawyers have been sanctioned for submitting AI-invented cases.
+corp-hrlegal.c2.viz.items.0.w	rely on AI citations
+corp-hrlegal.c2.viz.items.0.r	verify each in official databases
+corp-hrlegal.c3.title	Policy assistants
+corp-hrlegal.c3.text	Employees ask questions about HR policies, travel rules or IT procedures and get answers grounded in official documents, with links.
+corp-hrlegal.c3.viz.steps.0	Employee asks
+corp-hrlegal.c3.viz.steps.1	Retrieve relevant policy
+corp-hrlegal.c3.viz.steps.2	Answer with link
+corp-hrlegal.c3.viz.steps.3	Escalate if unclear
+corp-hrlegal.c4.title	Recruiting: be careful
+corp-hrlegal.c4.text	CV screening and candidate ranking are high-risk under the EU AI Act. Use AI to assist (writing job ads, scheduling, summarising), and keep humans making decisions, with bias testing.
+corp-hrlegal.c4.viz.l.t	Lower risk
+corp-hrlegal.c4.viz.l.items.0	job ad drafts
+corp-hrlegal.c4.viz.l.items.1	scheduling
+corp-hrlegal.c4.viz.l.items.2	FAQs
+corp-hrlegal.c4.viz.r.t	High risk
+corp-hrlegal.c4.viz.r.items.0	ranking candidates
+corp-hrlegal.c4.viz.r.items.1	screening CVs
+corp-hrlegal.c4.viz.r.items.2	needs strict controls
+corp-hrlegal.c5.title	Onboarding
+corp-hrlegal.c5.text	AI assistants guide new employees through systems, policies and first tasks, answering questions any time.
+corp-hrlegal.c5.viz.items.0	Personalised onboarding plans
+corp-hrlegal.c5.viz.items.1	Policy Q&A
+corp-hrlegal.c5.viz.items.2	System how-tos
+corp-hrlegal.c5.viz.items.3	Check-ins
+corp-hrlegal.c6.title	Learning and development
+corp-hrlegal.c6.text	AI creates learning content, quizzes and personalised paths, and acts as a tutor, like this app.
+corp-hrlegal.c6.viz.items.0	Generate learning content
+corp-hrlegal.c6.viz.items.1	Quizzes and practice
+corp-hrlegal.c6.viz.items.2	Personalised paths
+corp-hrlegal.c6.viz.items.3	On-demand tutoring
+corp-hrlegal.c7.title	Employee data privacy
+corp-hrlegal.c7.text	HR data is sensitive. Restrict access, minimise data, avoid emotion recognition at work (banned under the EU AI Act) and involve works councils where required.
+corp-hrlegal.c7.viz.items.0	Strict access control
+corp-hrlegal.c7.viz.items.1	Data minimisation
+corp-hrlegal.c7.viz.items.2	No emotion recognition at work
+corp-hrlegal.c7.viz.items.3	Works council consultation
+corp-hrlegal.c7.viz.items.4	DPIA
+corp-hrlegal.c8.title	Compliance monitoring
+corp-hrlegal.c8.text	AI tracks regulatory changes, maps them to internal policies and flags gaps, helping compliance teams keep up.
+corp-hrlegal.c8.viz.steps.0	New regulation published
+corp-hrlegal.c8.viz.steps.1	AI summarises changes
+corp-hrlegal.c8.viz.steps.2	Map to internal policies
+corp-hrlegal.c8.viz.steps.3	Flag gaps
+corp-hrlegal.c9.title	Lawyers stay accountable
+corp-hrlegal.c9.text	AI speeds legal work, but professional responsibility stays with lawyers. Use it for first drafts, review and research support, with expert sign-off.
+corp-hrlegal.c9.viz.l.t	AI
+corp-hrlegal.c9.viz.l.items.0	first pass
+corp-hrlegal.c9.viz.l.items.1	extraction
+corp-hrlegal.c9.viz.l.items.2	comparison
+corp-hrlegal.c9.viz.r.t	Lawyer
+corp-hrlegal.c9.viz.r.items.0	judgement
+corp-hrlegal.c9.viz.r.items.1	negotiation
+corp-hrlegal.c9.viz.r.items.2	sign-off
+corp-dev.title	AI for software engineering
+corp-dev.summary	Copilots, agents and modernising code.
+corp-dev.q0.q	What should happen to AI-generated code before merging?
+corp-dev.q0.o0	Nothing
+corp-dev.q0.o1	Human review, tests and security scanning
+corp-dev.q0.o2	Print it
+corp-dev.q0.x	Normal quality gates still apply.
+corp-dev.q1.q	What is a "hallucinated package" risk?
+corp-dev.q1.o0	Slow code
+corp-dev.q1.o1	AI suggesting a non-existent library name that attackers could register
+corp-dev.q1.o2	A typo
+corp-dev.q1.x	Supply-chain risk.
+corp-dev.q2.q	Which is a good measure of AI's engineering impact?
+corp-dev.q2.o0	Lines of code generated
+corp-dev.q2.o1	Cycle time and change failure rate
+corp-dev.q2.o2	Number of prompts
+corp-dev.q2.x	Measure outcomes, not output volume.
+corp-dev.c0.title	Coding assistants
+corp-dev.c0.text	Tools like GitHub Copilot, Cursor and Claude Code suggest code, explain it, write tests and fix bugs, inside the developer's editor or terminal.
+corp-dev.c0.viz.items.0	Code completion
+corp-dev.c0.viz.items.1	Explanations
+corp-dev.c0.viz.items.2	Test generation
+corp-dev.c0.viz.items.3	Bug fixing
+corp-dev.c0.viz.items.4	Refactoring
+corp-dev.c1.title	Productivity gains
+corp-dev.c1.text	Controlled studies have found developers complete some coding tasks substantially faster with AI assistants, though gains vary by task, experience and codebase.
+corp-dev.c1.viz.l.t	Bigger gains
+corp-dev.c1.viz.l.items.0	boilerplate
+corp-dev.c1.viz.l.items.1	tests
+corp-dev.c1.viz.l.items.2	unfamiliar languages
+corp-dev.c1.viz.r.t	Smaller gains
+corp-dev.c1.viz.r.items.0	complex architecture
+corp-dev.c1.viz.r.items.1	subtle debugging
+corp-dev.c2.title	Coding agents
+corp-dev.c2.text	Agents take a task (an issue or ticket), plan changes across files, run tests and open a pull request for human review.
+corp-dev.c2.viz.steps.0	Ticket
+corp-dev.c2.viz.steps.1	Agent plans and edits
+corp-dev.c2.viz.steps.2	Runs tests
+corp-dev.c2.viz.steps.3	Pull request
+corp-dev.c2.viz.steps.4	Human review
+corp-dev.c3.title	Code review still matters
+corp-dev.c3.text	AI-generated code can contain bugs, security issues or licence problems. Keep code review, tests and security scanning in the pipeline.
+corp-dev.c3.viz.items.0	Human code review
+corp-dev.c3.viz.items.1	Automated tests
+corp-dev.c3.viz.items.2	Security scanning
+corp-dev.c3.viz.items.3	Licence checks
+corp-dev.c3.viz.items.4	Style and quality gates
+corp-dev.c4.title	Legacy modernisation
+corp-dev.c4.text	AI helps understand and document legacy code (COBOL, old ABAP), suggest migrations and generate tests, speeding up modernisation projects like S/4HANA moves.
+corp-dev.c4.viz.steps.0	Legacy code
+corp-dev.c4.viz.steps.1	AI explains and documents
+corp-dev.c4.viz.steps.2	Generate tests
+corp-dev.c4.viz.steps.3	Refactor or migrate
+corp-dev.c5.title	Documentation
+corp-dev.c5.text	AI writes and updates documentation, API descriptions and runbooks from code and commit history, reducing a chore developers often skip.
+corp-dev.c5.viz.items.0	API docs
+corp-dev.c5.viz.items.1	Code comments
+corp-dev.c5.viz.items.2	Runbooks
+corp-dev.c5.viz.items.3	Architecture summaries
+corp-dev.c5.viz.items.4	Release notes
+corp-dev.c6.title	Testing
+corp-dev.c6.text	AI generates unit tests, test data and edge cases, raising coverage quickly. Developers still check the tests actually test the right thing.
+corp-dev.c6.viz.steps.0	Function
+corp-dev.c6.viz.steps.1	AI proposes tests
+corp-dev.c6.viz.steps.2	Developer reviews
+corp-dev.c6.viz.steps.3	Coverage up
+corp-dev.c7.title	Low-code and citizen developers
+corp-dev.c7.text	AI makes it easier for non-developers to build automations and small apps, but governance is needed for security, data access and maintenance.
+corp-dev.c7.viz.l.t	Benefit
+corp-dev.c7.viz.l.items.0	faster solutions
+corp-dev.c7.viz.l.items.1	closer to business
+corp-dev.c7.viz.r.t	Risk
+corp-dev.c7.viz.r.items.0	shadow IT
+corp-dev.c7.viz.r.items.1	security gaps
+corp-dev.c7.viz.r.items.2	unmaintained apps
+corp-dev.c8.title	Security of AI-written code
+corp-dev.c8.text	Watch for hard-coded secrets, injection flaws, outdated libraries and hallucinated package names that attackers might register.
+corp-dev.c8.viz.items.0	Hard-coded secrets
+corp-dev.c8.viz.items.1	Injection flaws
+corp-dev.c8.viz.items.2	Outdated dependencies
+corp-dev.c8.viz.items.3	Hallucinated packages
+corp-dev.c8.viz.items.4	Missing input validation
+corp-dev.c9.title	Measuring engineering impact
+corp-dev.c9.text	Track cycle time, deployment frequency, change failure rate, developer satisfaction and time spent on toil, not lines of code generated.
+corp-dev.c9.viz.items.0	Lead time for changes
+corp-dev.c9.viz.items.1	Deployment frequency
+corp-dev.c9.viz.items.2	Change failure rate
+corp-dev.c9.viz.items.3	Developer satisfaction
+corp-dev.c9.viz.items.4	Toil reduction
+corp-value.title	Measuring AI value
+corp-value.summary	KPIs, dashboards and honest reporting.
+corp-value.q0.q	Which is an outcome metric?
+corp-value.q0.o0	Number of prompts
+corp-value.q0.o1	Hours saved per month
+corp-value.q0.o2	Pilots launched
+corp-value.q0.x	Outcomes reflect value.
+corp-value.q1.q	Why use control groups?
+corp-value.q1.o0	To slow down
+corp-value.q1.o1	To separate AI's effect from other changes
+corp-value.q1.o2	To confuse auditors
+corp-value.q1.x	Fair comparison.
+corp-value.q2.q	What is a leading indicator of AI value?
+corp-value.q2.o0	Annual profit
+corp-value.q2.o1	Adoption and reduced handling time
+corp-value.q2.o2	Share price
+corp-value.q2.x	Early signals predict later results.
+corp-value.c0.title	Outcome over activity
+corp-value.c0.text	Count outcomes (cost saved, revenue gained, errors avoided, time to serve customers), not activity (number of prompts, pilots launched, users invited).
+corp-value.c0.viz.l.t	Activity metrics
+corp-value.c0.viz.l.items.0	prompts
+corp-value.c0.viz.l.items.1	pilots
+corp-value.c0.viz.l.items.2	licences
+corp-value.c0.viz.r.t	Outcome metrics
+corp-value.c0.viz.r.items.0	euros
+corp-value.c0.viz.r.items.1	hours
+corp-value.c0.viz.r.items.2	errors
+corp-value.c0.viz.r.items.3	satisfaction
+corp-value.c1.title	Three levels of metrics
+corp-value.c1.text	Track usage (are people using it?), performance (is it accurate and fast?) and business impact (is it creating value?).
+corp-value.c1.viz.items.0	Business impact
+corp-value.c1.viz.items.1	Performance and quality
+corp-value.c1.viz.items.2	Usage and adoption
+corp-value.c2.title	Productivity metrics
+corp-value.c2.text	Time per task, throughput per person, touchless rates, backlog size and cycle times show productivity effects.
+corp-value.c2.viz.items.0	Time per task
+corp-value.c2.viz.items.1	Throughput
+corp-value.c2.viz.items.2	Touchless rate
+corp-value.c2.viz.items.3	Backlog
+corp-value.c2.viz.items.4	Cycle time
+corp-value.c3.title	Quality metrics
+corp-value.c3.text	Error rates, rework, compliance findings and customer complaints show whether AI improves or harms quality.
+corp-value.c3.viz.items.0	Error rate
+corp-value.c3.viz.items.1	Rework
+corp-value.c3.viz.items.2	Audit findings
+corp-value.c3.viz.items.3	Complaints
+corp-value.c3.viz.items.4	Accuracy on eval sets
+corp-value.c4.title	Financial metrics
+corp-value.c4.text	Translate gains into money: cost avoided, revenue uplift, working capital released, risk losses avoided, and compare with full costs.
+corp-value.c4.viz.f	net value = gains − total costs
+corp-value.c4.viz.items.0.s	gains
+corp-value.c4.viz.items.0.m	savings, revenue, risk avoided
+corp-value.c4.viz.items.1.s	costs
+corp-value.c4.viz.items.1.m	build, run, change
+corp-value.c5.title	Control groups
+corp-value.c5.text	Where possible, compare teams or periods with and without AI. Otherwise improvements may be due to other changes.
+corp-value.c5.viz.l.t	With AI
+corp-value.c5.viz.l.items.0	team A results
+corp-value.c5.viz.r.t	Without AI
+corp-value.c5.viz.r.items.0	team B baseline
+corp-value.c5.viz.r.items.1	difference = AI effect
+corp-value.c6.title	Dashboards
+corp-value.c6.text	A shared AI value dashboard shows each use case's adoption, quality and value against targets, building transparency for leadership.
+corp-value.c6.viz.items.0	Use case
+corp-value.c6.viz.items.1	Adoption
+corp-value.c6.viz.items.2	Quality
+corp-value.c6.viz.items.3	Value vs target
+corp-value.c6.viz.items.4	Status and owner
+corp-value.c7.title	Leading indicators
+corp-value.c7.text	Value often lags. Early signals like adoption, satisfaction and reduced handling time predict later financial results.
+corp-value.c7.viz.events.0.y	Month 1
+corp-value.c7.viz.events.0.l	adoption
+corp-value.c7.viz.events.1.y	Month 3
+corp-value.c7.viz.events.1.l	time per task drops
+corp-value.c7.viz.events.2.y	Month 6
+corp-value.c7.viz.events.2.l	throughput up
+corp-value.c7.viz.events.3.y	Month 12
+corp-value.c7.viz.events.3.l	cost and revenue impact
+corp-value.c8.title	Honest reporting
+corp-value.c8.text	Report what didn't work, not just successes. Credibility with finance and leadership comes from realistic numbers.
+corp-value.c8.viz.items.0	Report misses too
+corp-value.c8.viz.items.1	Show assumptions
+corp-value.c8.viz.items.2	Use conservative estimates
+corp-value.c8.viz.items.3	Validate with finance
+corp-value.c9.title	Portfolio view
+corp-value.c9.text	Manage AI as a portfolio: some use cases deliver big wins, many modest gains, some fail. The total portfolio return is what matters.
+corp-value.c9.viz.unit	value contribution (illustrative %)
+corp-value.c9.viz.items.0.l	Top 3 use cases
+corp-value.c9.viz.items.1.l	Next 10
+corp-value.c9.viz.items.2.l	Rest
+corp-strategy.title	AI strategy and roadmap
+corp-strategy.summary	Bringing it all together.
+corp-strategy.q0.q	What should an AI strategy serve?
+corp-strategy.q0.o0	The newest model
+corp-strategy.q0.o1	The company's business goals
+corp-strategy.q0.o2	Vendor roadmaps
+corp-strategy.q0.x	AI is a means, not the end.
+corp-strategy.q1.q	When should foundations (data, platform, governance) be built?
+corp-strategy.q1.o0	After all use cases
+corp-strategy.q1.o1	In parallel with use cases
+corp-strategy.q1.o2	Never
+corp-strategy.q1.x	They enable scaling.
+corp-strategy.q2.q	How often should the AI strategy be revisited?
+corp-strategy.q2.o0	Every 10 years
+corp-strategy.q2.o1	At least yearly
+corp-strategy.q2.o2	Never
+corp-strategy.q2.x	The field changes fast.
+corp-strategy.c0.title	Strategy starts with business goals
+corp-strategy.c0.text	An AI strategy should serve the company strategy: growth, efficiency, risk, customer experience. Each AI initiative links to a business goal.
+corp-strategy.c0.viz.steps.0	Business goals
+corp-strategy.c0.viz.steps.1	Where AI helps most
+corp-strategy.c0.viz.steps.2	Prioritised use cases
+corp-strategy.c0.viz.steps.3	Foundations needed
+corp-strategy.c1.title	Ambition levels
+corp-strategy.c1.text	Companies range from experimenting, to scaling selected use cases, to transforming core processes and business models with AI.
+corp-strategy.c1.viz.items.0	Transform: AI-native processes
+corp-strategy.c1.viz.items.1	Scale: AI in core workflows
+corp-strategy.c1.viz.items.2	Experiment: pilots and learning
+corp-strategy.c2.title	The roadmap
+corp-strategy.c2.text	A roadmap sequences use cases and foundations over 12–36 months, with waves: quick wins first, foundations in parallel, bigger transformations later.
+corp-strategy.c2.viz.events.0.y	Q1–Q2
+corp-strategy.c2.viz.events.0.l	quick wins + platform
+corp-strategy.c2.viz.events.1.y	Q3–Q4
+corp-strategy.c2.viz.events.1.l	scale proven cases
+corp-strategy.c2.viz.events.2.y	Year 2
+corp-strategy.c2.viz.events.2.l	core process redesign
+corp-strategy.c2.viz.events.3.y	Year 3
+corp-strategy.c2.viz.events.3.l	new AI-enabled offerings
+corp-strategy.c3.title	Foundations in parallel
+corp-strategy.c3.text	Data, platform, governance, security and skills must be built alongside use cases, not after. Each wave of use cases funds and uses the foundations.
+corp-strategy.c3.viz.items.0	Data foundations
+corp-strategy.c3.viz.items.1	AI platform and gateway
+corp-strategy.c3.viz.items.2	Governance and risk
+corp-strategy.c3.viz.items.3	Security
+corp-strategy.c3.viz.items.4	Skills and change
+corp-strategy.c4.title	Operating model
+corp-strategy.c4.text	Decide who funds, builds, owns and governs AI: central, federated or hybrid. Hybrid hub-and-spoke is common in large global companies.
+corp-strategy.c4.viz.l.t	Central
+corp-strategy.c4.viz.l.items.0	consistent
+corp-strategy.c4.viz.l.items.1	may be slow
+corp-strategy.c4.viz.l.items.2	far from business
+corp-strategy.c4.viz.r.t	Federated
+corp-strategy.c4.viz.r.items.0	close to business
+corp-strategy.c4.viz.r.items.1	risk of duplication
+corp-strategy.c5.title	Partnerships
+corp-strategy.c5.text	Strategic partners (cloud providers, model providers, integrators, startups) speed delivery. Keep architecture and key skills in-house.
+corp-strategy.c5.viz.items.0	Cloud and model providers
+corp-strategy.c5.viz.items.1	Systems integrators
+corp-strategy.c5.viz.items.2	Specialist startups
+corp-strategy.c5.viz.items.3	Universities
+corp-strategy.c6.title	Funding model
+corp-strategy.c6.text	Fund foundations centrally, use cases by business units (with central co-funding to start), and review the portfolio quarterly.
+corp-strategy.c6.viz.items.0.a	foundations
+corp-strategy.c6.viz.items.0.b	central budget
+corp-strategy.c6.viz.items.1.a	use cases
+corp-strategy.c6.viz.items.1.b	business units
+corp-strategy.c6.viz.items.2.a	seed funding
+corp-strategy.c6.viz.items.2.b	central innovation pot
+corp-strategy.c6.viz.items.3.a	reviews
+corp-strategy.c6.viz.items.3.b	quarterly portfolio
+corp-strategy.c7.title	Agents and the future
+corp-strategy.c7.text	As agents mature, more end-to-end processes may be automated with human oversight. Prepare now: clean APIs, clear processes, good data and governance for autonomous actions.
+corp-strategy.c7.viz.items.0	Clean APIs to core systems
+corp-strategy.c7.viz.items.1	Well-documented processes
+corp-strategy.c7.viz.items.2	Reliable data
+corp-strategy.c7.viz.items.3	Agent governance
+corp-strategy.c7.viz.items.4	Monitoring and controls
+corp-strategy.c8.title	Stay adaptable
+corp-strategy.c8.text	Models, prices and regulations change quickly. Revisit the strategy at least yearly, keep architecture flexible and avoid betting everything on one vendor.
+corp-strategy.c8.viz.steps.0	Set strategy
+corp-strategy.c8.viz.steps.1	Execute roadmap
+corp-strategy.c8.viz.steps.2	Measure and learn
+corp-strategy.c8.viz.steps.3	Update yearly
+corp-strategy.c9.title	People at the centre
+corp-strategy.c9.text	The companies that win with AI combine technology with people who know the business, trust built through responsible practices, and a culture of learning.
+corp-strategy.c9.viz.items.0	Business knowledge
+corp-strategy.c9.viz.items.1	Trust and responsibility
+corp-strategy.c9.viz.items.2	Learning culture
+corp-strategy.c9.viz.items.3	Clear leadership
+corp-strategy.c9.viz.items.4	Measured value

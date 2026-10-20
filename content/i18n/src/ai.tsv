@@ -1,0 +1,1755 @@
+P.title	Artificial Intelligence
+P.blurb	How machines learn and what's really inside a chatbot, explained without maths homework.
+ai-learn.title	How machines learn
+ai-learn.summary	No magic: examples, a lot of simple maths and millions of small corrections.
+ai-learn.q0.q	What does a machine-learning model learn from?
+ai-learn.q0.o0	Rules a programmer writes
+ai-learn.q0.o1	Lots of examples
+ai-learn.q0.o2	The internet's search results at runtime
+ai-learn.q0.x	It finds patterns in example data. Nobody writes the rules by hand.
+ai-learn.q1.q	Sunny (+3) and raining (−4), not a weekend, bias −2. Does the beach neuron fire?
+ai-learn.q1.o0	Yes
+ai-learn.q1.o1	No
+ai-learn.q1.x	3 − 4 − 2 = −3, which is below zero, so no.
+ai-learn.q2.q	A model scores 100% on its training data but badly on new data. That's…
+ai-learn.q2.o0	Overfitting
+ai-learn.q2.o1	Perfect training
+ai-learn.q2.o2	A small model
+ai-learn.q2.x	It memorised the examples instead of the general pattern.
+ai-learn.q3.q	What is the test set for?
+ai-learn.q3.o0	Training the model
+ai-learn.q3.o1	Tuning settings
+ai-learn.q3.o2	A final, honest check on unseen data
+ai-learn.q3.x	It is kept aside and only used once, so the score reflects new data.
+ai-learn.c0.title	Learning from examples, not rules
+ai-learn.c0.text	Try writing rules that recognise a cat: pointy ears, whiskers… but foxes have those too, and some cats hide their ears. You'd never finish.\n\nMachine learning flips it around. You show the computer thousands of labelled photos and let it work out the patterns itself. The result is called a model.
+ai-learn.c0.sketch.0	if ears pointy…
+ai-learn.c0.sketch.1	and whiskers…
+ai-learn.c0.sketch.2	but not a fox…
+ai-learn.c0.sketch.3	model
+ai-learn.c0.sketch.4	“cat!”
+ai-learn.c0.sketch.5	writing rules by hand
+ai-learn.c0.sketch.6	learning from examples
+ai-learn.c1.title	A neuron is a weighted vote
+ai-learn.c1.text	The building block of a neural network is tiny. It takes a few inputs, multiplies each by a weight (how much it matters), adds them up and says yes if the total is high enough.\n\nShould you go to the beach? Sunny counts +3, weekend +2, rain −4. Stack millions of these little votes in layers and you get a network that can recognise faces or write text.
+ai-learn.c1.sketch.0	sunny
+ai-learn.c1.sketch.1	weekend
+ai-learn.c1.sketch.2	rain
+ai-learn.c1.sketch.6	Σ
+ai-learn.c1.sketch.7	go?
+ai-learn.c1.sketch.8	add up the votes: positive means yes
+ai-learn.c2.title	Try it: be the neuron
+ai-learn.c2.text	Switch the inputs on and off. The neuron adds up input × weight, plus a small bias of −2 (it needs a reason to go), and fires when the total is above zero.
+ai-learn.c3.title	Training means nudging
+ai-learn.c3.text	A new network starts with random weights and makes terrible guesses. Training repeats a simple loop: make a guess, measure how wrong it was, then nudge every weight a tiny bit in the direction that reduces the error.\n\nPicture a ball rolling downhill into the valley of lowest error. Large models repeat this billions of times.
+ai-learn.c3.sketch.0	first guess: very wrong
+ai-learn.c3.sketch.1	lowest error = best weights
+ai-learn.c3.sketch.2	error
+ai-learn.c3.sketch.3	weights
+ai-learn.c4.title	Memorising isn't learning
+ai-learn.c4.text	A model can fit its training examples perfectly and still be useless, like a student who memorised last year's exam answers. This is called overfitting.\n\nThe fix is to test on examples the model has never seen. If it does well there too, it has learned the real pattern rather than the noise.
+ai-learn.c4.sketch.0	memorises every point
+ai-learn.c4.sketch.1	learns the trend
+ai-learn.c4.sketch.2	new data follows the blue line
+ai-learn.c5.title	Features: what the model looks at
+ai-learn.c5.text	A model never sees "a house". It sees numbers that describe it, called features: floor area, number of bedrooms, distance to the coast, year built.\n\nChoosing good features used to be most of the work. Deep learning learns many of them by itself, but the idea stays the same: the model can only use what you give it.
+ai-learn.c5.viz.steps.0	120 m², 3 bedrooms, 2 km to the coast
+ai-learn.c5.viz.steps.1	Model
+ai-learn.c5.viz.steps.2	Estimated price €310,000
+ai-learn.c6.title	Train, validate, test
+ai-learn.c6.text	You split your data before training. The model learns from the training set, you tune settings on the validation set, and the test set stays locked away until the very end.\n\nIf you peek at the test set while building the model, your final score will be too optimistic.
+ai-learn.c6.viz.unit	% of the data
+ai-learn.c6.viz.items.0.l	Training
+ai-learn.c6.viz.items.1.l	Validation
+ai-learn.c6.viz.items.2.l	Test
+ai-learn.c7.title	The simplest model: a straight line
+ai-learn.c7.text	With one feature, a model can be a line. It multiplies the input by a weight and adds a bias. Training finds the weight and bias that make the line fit the data best.\n\nNeural networks are millions of these little sums stacked together, with a twist added between them.
+ai-learn.c7.viz.f	y = w·x + b
+ai-learn.c7.viz.items.0.s	y
+ai-learn.c7.viz.items.0.m	prediction
+ai-learn.c7.viz.items.1.s	x
+ai-learn.c7.viz.items.1.m	input feature
+ai-learn.c7.viz.items.2.s	w
+ai-learn.c7.viz.items.2.m	weight (slope)
+ai-learn.c7.viz.items.3.s	b
+ai-learn.c7.viz.items.3.m	bias (offset)
+ai-learn.c8.title	More data often beats a cleverer algorithm
+ai-learn.c8.text	In many real problems, a simple model trained on a lot of good data outperforms a sophisticated model trained on a little. Google researchers called this "the unreasonable effectiveness of data" in 2009.\n\nQuality matters as much as quantity: a million mislabelled examples teach the wrong lesson very confidently.
+ai-learn.c8.viz.l.t	Small dataset
+ai-learn.c8.viz.l.items.0	needs clever features
+ai-learn.c8.viz.l.items.1	easy to overfit
+ai-learn.c8.viz.l.items.2	cheap to collect
+ai-learn.c8.viz.r.t	Large dataset
+ai-learn.c8.viz.r.items.0	simple models work
+ai-learn.c8.viz.r.items.1	patterns generalise
+ai-learn.c8.viz.r.items.2	must be clean
+ai-learn.c9.title	A spam filter, step by step
+ai-learn.c9.text	Every incoming email is turned into features: words used, sender reputation, number of links. The model outputs a score between 0 and 1. Above a threshold, say 0.9, it goes to spam.\n\nChoosing that threshold is a business decision: lower it and you catch more spam but lose more real emails.
+ai-learn.c9.viz.steps.0	Email arrives
+ai-learn.c9.viz.steps.1	Turn it into features
+ai-learn.c9.viz.steps.2	Model gives a score 0–1
+ai-learn.c9.viz.steps.3	Above 0.9: spam folder
+ai-chat.title	How chatbots work
+ai-chat.summary	What's really going on inside ChatGPT, Claude and friends.
+ai-chat.q0.q	What does a language model actually do at each step?
+ai-chat.q0.o0	Looks the answer up in a database
+ai-chat.q0.o1	Predicts the most likely next token
+ai-chat.q0.o2	Copies a matching web page
+ai-chat.q0.x	It estimates probabilities for the next token, picks one, and repeats.
+ai-chat.q1.q	Roughly how many English words fit in 1,000 tokens?
+ai-chat.q1.o0	About 250
+ai-chat.q1.o1	About 750
+ai-chat.q1.o2	About 4,000
+ai-chat.q1.x	A token averages about ¾ of a word in English.
+ai-chat.q2.q	You want consistent, predictable answers. Which temperature?
+ai-chat.q2.o0	Low
+ai-chat.q2.o1	High
+ai-chat.q2.x	Low temperature concentrates the odds on the most likely tokens.
+ai-chat.q3.q	Why might a chatbot not know about yesterday's news?
+ai-chat.q3.o0	It's broken
+ai-chat.q3.o1	Its knowledge stops at a training cutoff unless it has a search tool
+ai-chat.q3.o2	It ignores news on purpose
+ai-chat.q3.x	Without tools, a model only knows what was in its training data.
+ai-chat.c0.title	Text becomes tokens
+ai-chat.c0.text	Language models don't read letters or whole words. Text is chopped into tokens: common words stay whole, rarer ones are split into pieces. Each token is just a number to the model.\n\nIn English a token averages about ¾ of a word, which is why AI services price and limit usage in tokens.
+ai-chat.c0.sketch.0	unbelievable
+ai-chat.c0.sketch.1	un
+ai-chat.c0.sketch.2	believ
+ai-chat.c0.sketch.3	able
+ai-chat.c0.sketch.7	token numbers are made up for this example
+ai-chat.c1.title	It predicts the next word
+ai-chat.c1.text	At heart, a language model does one thing: given the text so far, it estimates how likely each possible next token is. It picks one, adds it to the text and repeats.\n\nTrained on a huge amount of writing, that simple trick ends up capturing grammar, facts, styles and a surprising amount of reasoning.
+ai-chat.c1.sketch.0	“The cat sat on the …”
+ai-chat.c1.sketch.1	mat
+ai-chat.c1.sketch.3	sofa
+ai-chat.c1.sketch.5	floor
+ai-chat.c1.sketch.7	roof
+ai-chat.c1.sketch.9	it picks from these odds, one word at a time
+ai-chat.c2.title	Try it: turn up the temperature
+ai-chat.c2.text	Temperature controls how adventurous the model is. Low temperature almost always picks the top word; high temperature spreads the odds so rarer words get a chance. Press Generate a few times at each setting.
+ai-chat.c3.title	Meaning as a map
+ai-chat.c3.text	Inside the model, every token becomes a list of numbers called an embedding, like coordinates on a map of meaning. Similar ideas sit close together: cat near dog, Lisbon near Porto.\n\nDirections carry meaning too. The step from 'man' to 'woman' is roughly the same as from 'king' to 'queen'.
+ai-chat.c3.sketch.0	man
+ai-chat.c3.sketch.1	woman
+ai-chat.c3.sketch.2	king
+ai-chat.c3.sketch.3	queen
+ai-chat.c3.sketch.4	cat
+ai-chat.c3.sketch.5	dog
+ai-chat.c3.sketch.6	puppy
+ai-chat.c3.sketch.7	king − man + woman ≈ queen
+ai-chat.c4.title	Fluent isn't the same as true
+ai-chat.c4.text	Because a model predicts plausible text, it can produce confident sentences that are simply wrong. People call this hallucination. It's most likely with exact numbers, dates, quotes and niche facts.\n\nUse AI for drafting, explaining and brainstorming, and check anything important against a reliable source. (The Eiffel Tower was finished in 1889.)
+ai-chat.c4.sketch.0	The Eiffel Tower was
+ai-chat.c4.sketch.1	finished in 1901.
+ai-chat.c4.sketch.3	sounds sure, still wrong: check key facts
+ai-chat.c5.title	The context window
+ai-chat.c5.text	A model can only "see" a limited amount of text at once, measured in tokens. This is its context window: your question, the conversation so far and any documents you pasted.\n\nWhen a conversation grows past the limit, the oldest parts are dropped or summarised. Windows have grown enormously since 2022.
+ai-chat.c5.viz.unit	thousand tokens
+ai-chat.c5.viz.items.0.l	GPT-3.5 (2022)
+ai-chat.c5.viz.items.1.l	GPT-4 32K (2023)
+ai-chat.c5.viz.items.2.l	Claude 2.1 (2023)
+ai-chat.c5.viz.items.3.l	Gemini 1.5 (2024)
+ai-chat.c6.title	Pre-training, then fine-tuning
+ai-chat.c6.text	First the model reads a huge amount of text and learns to predict the next token. That makes it knowledgeable but not yet helpful.\n\nThen it is fine-tuned on examples of good answers, and trained further with human (and AI) feedback on which responses are better. That is what turns a text predictor into an assistant.
+ai-chat.c6.viz.steps.0	Read vast text, predict next token
+ai-chat.c6.viz.steps.1	Fine-tune on good answers
+ai-chat.c6.viz.steps.2	Learn from feedback
+ai-chat.c6.viz.steps.3	Helpful assistant
+ai-chat.c7.title	Better prompts, better answers
+ai-chat.c7.text	The model only knows what you tell it. Say who you are, what you need, what good looks like and in what format. Paste the relevant data instead of describing it. If the first answer is off, say what to change.
+ai-chat.c7.viz.items.0	Give context: who it's for and why
+ai-chat.c7.viz.items.1	Be specific about the task
+ai-chat.c7.viz.items.2	Paste examples or source material
+ai-chat.c7.viz.items.3	Ask for a format: table, bullets, length
+ai-chat.c7.viz.items.4	Iterate: say what to change
+ai-chat.c8.title	Models don't look things up by themselves
+ai-chat.c8.text	A plain language model answers from what it learned during training, which stops at a cutoff date. It doesn't know today's news or your files.\n\nModern assistants are given tools: web search, document access, code execution. With tools, they can fetch fresh facts instead of guessing.
+ai-chat.c8.viz.l.t	Model alone
+ai-chat.c8.viz.l.items.0	knowledge frozen at a cutoff
+ai-chat.c8.viz.l.items.1	can't see your files
+ai-chat.c8.viz.l.items.2	may guess
+ai-chat.c8.viz.r.t	With tools
+ai-chat.c8.viz.r.items.0	searches the web
+ai-chat.c8.viz.r.items.1	reads your documents
+ai-chat.c8.viz.r.items.2	runs code to check maths
+ai-chat.c9.title	What "70B" means
+ai-chat.c9.text	Model sizes are counted in parameters, the learned weights. A 70B model has 70 billion of them. Stored in 16-bit format, each weight takes 2 bytes, so the model alone needs about 140 GB of memory.\n\nThat's why big models run in data centres, and why smaller or compressed (quantised) models run on laptops.
+ai-chat.c9.example.0	8B model at 4-bit (0.5 byte each)
+ai-chat.c9.example.1	8 × 0.5
+ai-chat.c9.example.2	≈ 4 GB: fits on a laptop
+ai-chat.c9.viz.f	memory ≈ parameters × bytes
+ai-chat.c9.viz.items.0.s	70 B
+ai-chat.c9.viz.items.0.m	parameters
+ai-chat.c9.viz.items.1.s	2 bytes
+ai-chat.c9.viz.items.1.m	per weight at 16-bit
+ai-chat.c9.viz.items.2.s	≈ 140 GB
+ai-chat.c9.viz.items.2.m	memory needed
+ai-types.title	Three ways machines learn
+ai-types.summary	Supervised, unsupervised and reinforcement learning, and when each fits.
+ai-types.q0.q	Predicting tomorrow's electricity demand in kWh is…
+ai-types.q0.o0	Classification
+ai-types.q0.o1	Regression
+ai-types.q0.o2	Clustering
+ai-types.q0.x	A number is being predicted, so it's regression.
+ai-types.q1.q	An AI that learns chess by playing millions of games against itself uses…
+ai-types.q1.o0	Supervised learning
+ai-types.q1.o1	Unsupervised learning
+ai-types.q1.o2	Reinforcement learning
+ai-types.q1.x	It learns from wins and losses, which are rewards.
+ai-types.q2.q	Hiding a word in a sentence and asking the model to guess it is…
+ai-types.q2.o0	Self-supervised learning
+ai-types.q2.o1	Reinforcement learning
+ai-types.q2.o2	Manual labelling
+ai-types.q2.x	The data provides its own labels.
+ai-types.c0.title	Supervised learning
+ai-types.c0.text	You give the model examples with the right answers attached: photos labelled "cat" or "dog", houses with their sale price. It learns to map inputs to answers.\n\nIt's the most common kind of machine learning in business: forecasting, fraud detection, document classification.
+ai-types.c0.viz.steps.0	Labelled examples
+ai-types.c0.viz.steps.1	Learn the mapping
+ai-types.c0.viz.steps.2	Predict labels for new data
+ai-types.c1.title	Classification vs regression
+ai-types.c1.text	Supervised problems come in two flavours. Classification picks a category: spam or not, which product type, which disease. Regression predicts a number: tomorrow's price, delivery time, energy demand.
+ai-types.c1.viz.l.t	Classification
+ai-types.c1.viz.l.items.0	picks a category
+ai-types.c1.viz.l.items.1	spam or not spam
+ai-types.c1.viz.l.items.2	fraud or legit
+ai-types.c1.viz.r.t	Regression
+ai-types.c1.viz.r.items.0	predicts a number
+ai-types.c1.viz.r.items.1	house price
+ai-types.c1.viz.r.items.2	kWh tomorrow
+ai-types.c2.title	Unsupervised learning
+ai-types.c2.text	Here there are no labels. The model looks for structure on its own: groups of similar customers, unusual transactions, topics in a pile of documents.\n\nIt's useful when you don't yet know what you're looking for, or labelling would be too expensive.
+ai-types.c2.viz.root	Unsupervised
+ai-types.c2.viz.items.0	Clustering (groups)
+ai-types.c2.viz.items.1	Anomaly detection
+ai-types.c2.viz.items.2	Topic discovery
+ai-types.c2.viz.items.3	Compression
+ai-types.c3.title	Clustering customers
+ai-types.c3.text	Give a clustering algorithm the purchase history of 100,000 customers and ask for five groups. It might find bargain hunters, weekend shoppers, big occasional buyers and so on.\n\nThe algorithm finds the groups; a human still has to look at them and decide what they mean.
+ai-types.c3.viz.steps.0	Purchase history
+ai-types.c3.viz.steps.1	Algorithm groups similar customers
+ai-types.c3.viz.steps.2	5 segments
+ai-types.c3.viz.steps.3	Humans name them and act
+ai-types.c4.title	Reinforcement learning
+ai-types.c4.text	An agent learns by trial and error. It takes an action, the environment responds, and it receives a reward or penalty. Over millions of attempts it learns which actions lead to the most reward.\n\nThis is how computers learned to play Go, chess and video games better than humans.
+ai-types.c4.viz.steps.0	Observe the situation
+ai-types.c4.viz.steps.1	Take an action
+ai-types.c4.viz.steps.2	Get a reward or penalty
+ai-types.c4.viz.steps.3	Adjust the strategy
+ai-types.c5.title	Self-supervised learning
+ai-types.c5.text	A clever trick: create the labels from the data itself. Hide a word in a sentence and ask the model to guess it. Hide part of an image and ask it to fill in the gap.\n\nNo humans needed to label anything, so you can train on billions of examples. Large language models are trained this way.
+ai-types.c5.viz.items.0.a	"The cat sat on the ___"
+ai-types.c5.viz.items.0.b	guess "mat"
+ai-types.c5.viz.items.1.a	Hidden image patch
+ai-types.c5.viz.items.1.b	reconstruct it
+ai-types.c5.viz.items.2.a	Next frame of video
+ai-types.c5.viz.items.2.b	predict it
+ai-types.c6.title	Labels are expensive
+ai-types.c6.text	Supervised learning needs labelled data, and labelling is slow human work. Medical images need doctors; legal documents need lawyers.\n\nThat cost is why self-supervised pre-training became so important: learn general knowledge from unlabelled data first, then fine-tune with a small labelled set.
+ai-types.c6.viz.l.t	Unlabelled data
+ai-types.c6.viz.l.items.0	cheap and plentiful
+ai-types.c6.viz.l.items.1	web text, photos, logs
+ai-types.c6.viz.r.t	Labelled data
+ai-types.c6.viz.r.items.0	slow and costly
+ai-types.c6.viz.r.items.1	needs experts
+ai-types.c6.viz.r.items.2	must be checked
+ai-types.c7.title	Semi-supervised: a little help goes far
+ai-types.c7.text	Often you have a few labelled examples and a mountain of unlabelled ones. Semi-supervised methods use the labelled ones to get started, then let the model label the rest, keeping only its confident guesses.
+ai-types.c7.viz.steps.0	1,000 labelled examples
+ai-types.c7.viz.steps.1	Train a first model
+ai-types.c7.viz.steps.2	Label 100,000 more automatically
+ai-types.c7.viz.steps.3	Retrain on everything
+ai-types.c8.title	Which approach fits?
+ai-types.c8.text	Have past examples with known outcomes? Supervised. Want to discover structure? Unsupervised. Is it a sequence of decisions with a goal, like a game or a robot? Reinforcement.
+ai-types.c8.viz.root	Do you have the right answers?
+ai-types.c8.viz.items.0	Yes: supervised
+ai-types.c8.viz.items.1	No, find patterns: unsupervised
+ai-types.c8.viz.items.2	Goal and rewards: reinforcement
+ai-types.c9.title	Most business AI is supervised
+ai-types.c9.text	Despite the headlines about game-playing and chatbots, most deployed machine learning in companies is still supervised: predicting churn, demand, defaults or delays from historical records.
+ai-types.c9.viz.items.0	Demand forecasting
+ai-types.c9.viz.items.1	Fraud and anomaly scoring
+ai-types.c9.viz.items.2	Customer churn prediction
+ai-types.c9.viz.items.3	Document classification
+ai-types.c9.viz.items.4	Predictive maintenance
+ai-data.title	Data: the fuel
+ai-data.summary	Where training data comes from and how it goes wrong.
+ai-data.q0.q	A model looks perfect in testing but fails in production. A likely cause is…
+ai-data.q0.o0	Too much data
+ai-data.q0.o1	Data leakage
+ai-data.q0.o2	Using a GPU
+ai-data.q0.x	Leakage gives the model information during training that it won't have in real use.
+ai-data.q1.q	What is data drift?
+ai-data.q1.o0	Data being deleted
+ai-data.q1.o1	The real world changing so old training data no longer matches
+ai-data.q1.o2	A hardware failure
+ai-data.q1.x	Patterns shift over time, so models need monitoring and retraining.
+ai-data.q2.q	Which is unstructured data?
+ai-data.q2.o0	A sales table
+ai-data.q2.o1	Scanned contracts
+ai-data.q2.o2	Sensor readings in a database
+ai-data.q2.x	Text, images and audio don't fit neatly into rows and columns.
+ai-data.c0.title	Garbage in, garbage out
+ai-data.c0.text	A model is a summary of its training data. If the data is wrong, incomplete or skewed, the model will be too, and it will be wrong with great confidence.\n\nIn real projects, preparing data usually takes more time than building the model.
+ai-data.c0.viz.steps.0	Messy data
+ai-data.c0.viz.steps.1	Model learns the mess
+ai-data.c0.viz.steps.2	Confident wrong answers
+ai-data.c1.title	Data work dominates projects
+ai-data.c1.text	Surveys of data scientists consistently find that collecting, cleaning and organising data takes the largest share of their time. Training the model is often the quick part.
+ai-data.c1.viz.items.0	Find and access the data
+ai-data.c1.viz.items.1	Fix missing and wrong values
+ai-data.c1.viz.items.2	Join tables from different systems
+ai-data.c1.viz.items.3	Label examples
+ai-data.c1.viz.items.4	Check for bias and leakage
+ai-data.c2.title	Structured vs unstructured data
+ai-data.c2.text	Structured data fits in tables: transactions, sensor readings, ERP records. Unstructured data is everything else: emails, contracts, photos, audio.\n\nClassic machine learning loves tables. Deep learning made unstructured data usable at scale.
+ai-data.c2.viz.l.t	Structured
+ai-data.c2.viz.l.items.0	rows and columns
+ai-data.c2.viz.l.items.1	ERP, sensors, sales
+ai-data.c2.viz.l.items.2	classic ML
+ai-data.c2.viz.r.t	Unstructured
+ai-data.c2.viz.r.items.0	text, images, audio
+ai-data.c2.viz.r.items.1	contracts, emails
+ai-data.c2.viz.r.items.2	deep learning
+ai-data.c3.title	Missing values
+ai-data.c3.text	Real data has gaps: a sensor went offline, a field was left empty. You can drop those rows, fill them with an average, or let the model treat "missing" as information in itself.\n\nSometimes the fact that a value is missing says something, like a customer who never gave a phone number.
+ai-data.c3.viz.items.0.a	Drop the row
+ai-data.c3.viz.items.0.b	simple, loses data
+ai-data.c3.viz.items.1.a	Fill with average
+ai-data.c3.viz.items.1.b	keeps rows, blurs detail
+ai-data.c3.viz.items.2.a	Flag as missing
+ai-data.c3.viz.items.2.b	the gap becomes a signal
+ai-data.c4.title	Data leakage
+ai-data.c4.text	Leakage happens when the training data contains information the model won't have when it's used for real. A churn model trained with a "cancellation date" column will look brilliant in testing and fail in production.\n\nAlways ask: would I know this value at the moment I make the prediction?
+ai-data.c4.viz.items.0.w	use the cancellation date
+ai-data.c4.viz.items.0.r	use only data known before the decision
+ai-data.c4.viz.items.1.w	shuffle time series randomly
+ai-data.c4.viz.items.1.r	split by date: past trains, future tests
+ai-data.c5.title	Sampling bias
+ai-data.c5.text	If your data doesn't represent the people or situations the model will meet, it will fail on the ones it never saw. A face detector trained mostly on one group performs worse on others.
+ai-data.c5.viz.l.t	Training data
+ai-data.c5.viz.l.items.0	mostly daylight photos
+ai-data.c5.viz.l.items.1	one region
+ai-data.c5.viz.l.items.2	one season
+ai-data.c5.viz.r.t	Real world
+ai-data.c5.viz.r.items.0	night and rain
+ai-data.c5.viz.r.items.1	every region
+ai-data.c5.viz.r.items.2	all year
+ai-data.c6.title	Data drift
+ai-data.c6.text	The world changes and models trained on last year's data slowly go stale. Customer behaviour shifts, prices change, a new product appears.\n\nThat's why deployed models need monitoring and periodic retraining.
+ai-data.c6.viz.events.0.y	Jan
+ai-data.c6.viz.events.0.l	model trained
+ai-data.c6.viz.events.1.y	Apr
+ai-data.c6.viz.events.1.l	still accurate
+ai-data.c6.viz.events.2.y	Aug
+ai-data.c6.viz.events.2.l	behaviour shifts
+ai-data.c6.viz.events.3.y	Nov
+ai-data.c6.viz.events.3.l	accuracy drops
+ai-data.c6.viz.events.4.y	Dec
+ai-data.c6.viz.events.4.l	retrained
+ai-data.c7.title	Synthetic data
+ai-data.c7.text	When real data is scarce or private, you can generate artificial examples: simulated sensor faults, fake but realistic invoices, rendered images.\n\nIt helps, but synthetic data only contains the patterns you put into it. Always test on real data.
+ai-data.c7.viz.l.t	Strengths
+ai-data.c7.viz.l.items.0	no privacy issues
+ai-data.c7.viz.l.items.1	rare cases on demand
+ai-data.c7.viz.l.items.2	cheap to scale
+ai-data.c7.viz.r.t	Risks
+ai-data.c7.viz.r.items.0	misses real-world quirks
+ai-data.c7.viz.r.items.1	can bake in assumptions
+ai-data.c7.viz.r.items.2	must test on real data
+ai-data.c8.title	Data and privacy
+ai-data.c8.text	Personal data used for training falls under laws such as the EU's GDPR. You need a legal basis, should collect only what's needed, and must protect it.\n\nAnonymising data is harder than it looks: combining a few fields like postcode, birth date and gender can identify many people.
+ai-data.c8.viz.items.0	Collect only what you need
+ai-data.c8.viz.items.1	Know your legal basis
+ai-data.c8.viz.items.2	Remove or mask identifiers
+ai-data.c8.viz.items.3	Control who can access it
+ai-data.c8.viz.items.4	Keep a record of where it came from
+ai-data.c9.title	Labelling quality
+ai-data.c9.text	Labels are created by people, and people disagree or make mistakes. Good projects write clear labelling guidelines, have several people label the same examples, and measure how often they agree.
+ai-data.c9.viz.steps.0	Write clear guidelines
+ai-data.c9.viz.steps.1	Several labellers per item
+ai-data.c9.viz.steps.2	Measure agreement
+ai-data.c9.viz.steps.3	Fix the unclear cases
+ai-algos.title	Classic algorithms
+ai-algos.summary	The workhorses that still run much of business AI.
+ai-algos.q0.q	Which method builds trees one after another, each fixing the previous ones' errors?
+ai-algos.q0.o0	Random forest
+ai-algos.q0.o1	Gradient boosting
+ai-algos.q0.o2	k-means
+ai-algos.q0.x	Boosting is sequential; random forests are independent trees that vote.
+ai-algos.q1.q	Logistic regression is mainly used for…
+ai-algos.q1.o0	Predicting prices
+ai-algos.q1.o1	Classification with probabilities
+ai-algos.q1.o2	Clustering
+ai-algos.q1.x	It outputs a probability for a yes/no outcome.
+ai-algos.q2.q	For a table of sales data, a strong first choice is often…
+ai-algos.q2.o0	A huge neural network
+ai-algos.q2.o1	Gradient-boosted trees
+ai-algos.q2.o2	An image model
+ai-algos.q2.x	Boosted trees are fast and accurate on tabular data.
+ai-algos.c0.title	Linear regression
+ai-algos.c0.text	The oldest trick: draw the best straight line through the data. It predicts a number from a weighted sum of the inputs.\n\nIt's fast, easy to explain ("each extra m² adds €2,500") and often a strong baseline before trying anything fancier.
+ai-algos.c0.viz.f	price = w₁·area + w₂·rooms + b
+ai-algos.c0.viz.items.0.s	w₁, w₂
+ai-algos.c0.viz.items.0.m	learned weights
+ai-algos.c0.viz.items.1.s	b
+ai-algos.c0.viz.items.1.m	base price
+ai-algos.c0.viz.items.2.s	area, rooms
+ai-algos.c0.viz.items.2.m	features
+ai-algos.c1.title	Logistic regression
+ai-algos.c1.text	Despite the name, it's for classification. It squeezes a weighted sum into a probability between 0 and 1 using an S-shaped curve. Above 0.5 means "yes".\n\nBanks have used it for decades for credit scoring because every weight can be explained.
+ai-algos.c1.viz.steps.0	Weighted sum of features
+ai-algos.c1.viz.steps.1	S-curve squeezes it to 0–1
+ai-algos.c1.viz.steps.2	0.83 → likely yes
+ai-algos.c2.title	Decision trees
+ai-algos.c2.text	A tree asks a series of yes/no questions: Is income above €30k? Has the customer missed a payment? Each path ends in a prediction.\n\nTrees are easy to read and explain, but a single tree tends to overfit.
+ai-algos.c2.viz.root	Missed a payment?
+ai-algos.c2.viz.items.0	Yes → high risk
+ai-algos.c2.viz.items.1	No, income < €30k → medium
+ai-algos.c2.viz.items.2	No, income ≥ €30k → low risk
+ai-algos.c3.title	Random forests
+ai-algos.c3.text	Train hundreds of slightly different decision trees on random slices of the data, then let them vote. The crowd is far more accurate and stable than any single tree.
+ai-algos.c3.viz.steps.0	Many trees on random samples
+ai-algos.c3.viz.steps.1	Each tree votes
+ai-algos.c3.viz.steps.2	Majority wins
+ai-algos.c4.title	Gradient boosting
+ai-algos.c4.text	Instead of trees voting independently, boosting builds them in sequence. Each new tree focuses on the mistakes of the ones before it.\n\nLibraries like XGBoost and LightGBM win many competitions on tabular data and are widely used in industry.
+ai-algos.c4.viz.steps.0	Tree 1 makes errors
+ai-algos.c4.viz.steps.1	Tree 2 fixes them
+ai-algos.c4.viz.steps.2	Tree 3 fixes what's left
+ai-algos.c4.viz.steps.3	Sum of all trees
+ai-algos.c5.title	k-nearest neighbours
+ai-algos.c5.text	To classify something new, find the k most similar examples you already know and take a vote. A new house is priced like its five most similar neighbours.\n\nSimple and intuitive, but slow when the dataset is huge.
+ai-algos.c5.viz.l.t	Strengths
+ai-algos.c5.viz.l.items.0	no training step
+ai-algos.c5.viz.l.items.1	easy to explain
+ai-algos.c5.viz.l.items.2	works with few features
+ai-algos.c5.viz.r.t	Weaknesses
+ai-algos.c5.viz.r.items.0	slow on big data
+ai-algos.c5.viz.r.items.1	sensitive to scaling
+ai-algos.c5.viz.r.items.2	struggles with many features
+ai-algos.c6.title	k-means clustering
+ai-algos.c6.text	An unsupervised classic. Pick k centre points, assign every item to its nearest centre, move each centre to the middle of its group, and repeat until nothing changes.
+ai-algos.c6.viz.steps.0	Place k centres
+ai-algos.c6.viz.steps.1	Assign each point to nearest
+ai-algos.c6.viz.steps.2	Move centres to the middle
+ai-algos.c6.viz.steps.3	Repeat until stable
+ai-algos.c7.title	Deep learning isn't always best
+ai-algos.c7.text	For tables of numbers, such as sales, prices or sensor logs, gradient-boosted trees often match or beat neural networks, train faster and are easier to explain.\n\nNeural networks shine with images, audio and text.
+ai-algos.c7.viz.l.t	Tabular data
+ai-algos.c7.viz.l.items.0	boosted trees often win
+ai-algos.c7.viz.l.items.1	fast
+ai-algos.c7.viz.l.items.2	explainable
+ai-algos.c7.viz.r.t	Images, audio, text
+ai-algos.c7.viz.r.items.0	neural networks win
+ai-algos.c7.viz.r.items.1	need lots of data
+ai-algos.c7.viz.r.items.2	need GPUs
+ai-algos.c8.title	Start with a baseline
+ai-algos.c8.text	Before building anything complex, measure a dumb baseline: "predict the average" or "same as last week". If your clever model barely beats it, it's not worth deploying.
+ai-algos.c8.viz.unit	% error
+ai-algos.c8.viz.items.0.l	Same as last week
+ai-algos.c8.viz.items.1.l	Linear model
+ai-algos.c8.viz.items.2.l	Boosted trees
+ai-algos.c9.title	Choosing an algorithm
+ai-algos.c9.text	Think about the data type, how much data you have, whether you must explain decisions, and how fast predictions need to be. In practice, teams try a few and pick by measured results.
+ai-algos.c9.viz.items.0	What kind of data: table, text, image?
+ai-algos.c9.viz.items.1	How many examples?
+ai-algos.c9.viz.items.2	Must decisions be explained?
+ai-algos.c9.viz.items.3	How fast must it predict?
+ai-algos.c9.viz.items.4	Compare against a baseline
+ai-nets.title	Inside a neural network
+ai-nets.summary	Layers, activations and how the network learns from its mistakes.
+ai-nets.q0.q	What does backpropagation do?
+ai-nets.q0.o0	Collects more data
+ai-nets.q0.o1	Works out how each weight contributed to the error
+ai-nets.q0.o2	Draws the network
+ai-nets.q0.x	It sends the error backwards so every weight can be adjusted.
+ai-nets.q1.q	A learning rate that is too high causes…
+ai-nets.q1.o0	Training that jumps around and may never settle
+ai-nets.q1.o1	Training that is too slow
+ai-nets.q1.o2	More data
+ai-nets.q1.x	Big steps overshoot the minimum.
+ai-nets.q2.q	One full pass through the training data is called…
+ai-nets.q2.o0	A batch
+ai-nets.q2.o1	An epoch
+ai-nets.q2.o2	A layer
+ai-nets.q2.x	An epoch is one complete pass; batches are the small chunks within it.
+ai-nets.c0.title	Layers
+ai-nets.c0.text	A neural network is organised in layers. The input layer receives the data, hidden layers transform it step by step, and the output layer gives the answer.\n\n"Deep" learning simply means many hidden layers.
+ai-nets.c0.viz.steps.0	Input: pixels
+ai-nets.c0.viz.steps.1	Hidden layers find edges, shapes, parts
+ai-nets.c0.viz.steps.2	Output: "cat 94%"
+ai-nets.c1.title	Each layer learns more abstract features
+ai-nets.c1.text	In an image network, early layers detect edges and colours. Middle layers combine them into textures and shapes. Later layers recognise eyes, wheels or faces.\n\nNobody programs these features; they emerge from training.
+ai-nets.c1.viz.items.0	Objects: face, car
+ai-nets.c1.viz.items.1	Parts: eye, wheel
+ai-nets.c1.viz.items.2	Shapes and textures
+ai-nets.c1.viz.items.3	Edges and colours
+ai-nets.c2.title	Activation functions
+ai-nets.c2.text	Between layers, each neuron passes its sum through an activation function. The most common, ReLU, simply turns negative values into zero.\n\nWithout this non-linear step, stacking layers would collapse into one big straight-line model.
+ai-nets.c2.viz.items.0.a	ReLU
+ai-nets.c2.viz.items.0.b	negative → 0, positive stays
+ai-nets.c2.viz.items.1.a	Sigmoid
+ai-nets.c2.viz.items.1.b	squeezes to 0–1
+ai-nets.c2.viz.items.2.a	Softmax
+ai-nets.c2.viz.items.2.b	turns scores into probabilities
+ai-nets.c3.title	The loss function
+ai-nets.c3.text	To learn, the network needs a score for how wrong it is. That's the loss. For a price prediction, it might be the average squared error; for classification, how little probability it gave the right answer.\n\nTraining is the search for weights that make the loss as small as possible.
+ai-nets.c3.viz.steps.0	Prediction
+ai-nets.c3.viz.steps.1	Compare with the right answer
+ai-nets.c3.viz.steps.2	Loss: how wrong?
+ai-nets.c3.viz.steps.3	Adjust the weights
+ai-nets.c4.title	Backpropagation
+ai-nets.c4.text	After a wrong guess, the error is sent backwards through the network. Using calculus, each weight learns how much it contributed to the mistake and in which direction to move.\n\nThis algorithm, popularised in 1986, is how virtually every neural network is trained today.
+ai-nets.c4.viz.steps.0	Forward: make a guess
+ai-nets.c4.viz.steps.1	Measure the error
+ai-nets.c4.viz.steps.2	Backward: blame each weight
+ai-nets.c4.viz.steps.3	Nudge every weight a little
+ai-nets.c5.title	Learning rate
+ai-nets.c5.text	How big should each nudge be? That's the learning rate. Too small and training takes forever. Too large and the model overshoots the valley and never settles.
+ai-nets.c5.viz.l.t	Too small
+ai-nets.c5.viz.l.items.0	tiny steps
+ai-nets.c5.viz.l.items.1	training crawls
+ai-nets.c5.viz.l.items.2	may get stuck
+ai-nets.c5.viz.r.t	Too large
+ai-nets.c5.viz.r.items.0	overshoots
+ai-nets.c5.viz.r.items.1	error jumps around
+ai-nets.c5.viz.r.items.2	may never converge
+ai-nets.c6.title	Batches and epochs
+ai-nets.c6.text	Training data is fed in small batches, say 32 examples at a time, and the weights are updated after each batch. One full pass through all the data is an epoch. Networks often train for many epochs.
+ai-nets.c6.viz.f	updates = (examples ÷ batch size) × epochs
+ai-nets.c6.viz.items.0.m	examples
+ai-nets.c6.viz.items.1.m	batch size
+ai-nets.c6.viz.items.2.m	epochs → ≈15,600 updates
+ai-nets.c7.title	Dropout and regularisation
+ai-nets.c7.text	To stop a network memorising, you can randomly switch off some neurons during training (dropout) or penalise very large weights. The network is forced to learn patterns that are robust, not fragile shortcuts.
+ai-nets.c7.viz.items.0	Dropout: randomly silence neurons
+ai-nets.c7.viz.items.1	Weight decay: penalise big weights
+ai-nets.c7.viz.items.2	Early stopping: stop when validation stops improving
+ai-nets.c7.viz.items.3	More data: the best regulariser
+ai-nets.c8.title	Convolutions in one picture
+ai-nets.c8.text	A convolutional layer slides a small filter, say 3×3 pixels, across the image, looking for the same pattern everywhere: an edge, a curve, a texture. It's why image networks recognise a cat in any corner of the photo.
+ai-nets.c8.viz.steps.0	3×3 filter
+ai-nets.c8.viz.steps.1	Slides across the whole image
+ai-nets.c8.viz.steps.2	Map of where the pattern appears
+ai-nets.c9.title	Why GPUs?
+ai-nets.c9.text	Training means multiplying huge grids of numbers, over and over. Graphics cards were built to do thousands of simple calculations in parallel for video games, which turned out to be exactly what neural networks need.
+ai-nets.c9.viz.l.t	CPU
+ai-nets.c9.viz.l.items.0	a few powerful cores
+ai-nets.c9.viz.l.items.1	great at varied tasks
+ai-nets.c9.viz.l.items.2	slow for big matrix maths
+ai-nets.c9.viz.r.t	GPU
+ai-nets.c9.viz.r.items.0	thousands of small cores
+ai-nets.c9.viz.r.items.1	same sum on lots of data
+ai-nets.c9.viz.r.items.2	ideal for training
+ai-metrics.title	Is the model any good?
+ai-metrics.summary	Accuracy, precision, recall and why one number is never enough.
+ai-metrics.q0.q	50 real fraud cases exist; the model catches 40. Recall is…
+ai-metrics.q0.o0	40%
+ai-metrics.q0.o1	80%
+ai-metrics.q0.o2	125%
+ai-metrics.q0.x	Recall = 40 ÷ 50 = 80%.
+ai-metrics.q1.q	Which metric answers "of the alerts raised, how many were real?"
+ai-metrics.q1.o0	Recall
+ai-metrics.q1.o1	Precision
+ai-metrics.q1.o2	MAE
+ai-metrics.q1.x	Precision measures how trustworthy the alerts are.
+ai-metrics.q2.q	Why can 99% accuracy be misleading?
+ai-metrics.q2.o0	It's always fake
+ai-metrics.q2.o1	When the positive class is rare, always guessing 'no' scores high
+ai-metrics.q2.o2	Accuracy only works for images
+ai-metrics.q2.x	With 1% fraud, a do-nothing model is 99% accurate.
+ai-metrics.c0.title	Accuracy can lie
+ai-metrics.c0.text	If 1% of transactions are fraud, a model that always says "not fraud" is 99% accurate and completely useless.\n\nWhen one outcome is rare, accuracy hides the failures you care about most.
+ai-metrics.c0.viz.items.0.l	accuracy
+ai-metrics.c0.viz.items.1.l	frauds caught
+ai-metrics.c0.viz.items.2.l	of cases are fraud
+ai-metrics.c1.title	The confusion matrix
+ai-metrics.c1.text	Every prediction lands in one of four boxes: true positives (caught), false positives (false alarms), false negatives (missed) and true negatives (correctly ignored).\n\nMost useful metrics are built from these four counts.
+ai-metrics.c1.viz.l.t	Predicted fraud
+ai-metrics.c1.viz.l.items.0	true positive (caught)
+ai-metrics.c1.viz.l.items.1	false positive (false alarm)
+ai-metrics.c1.viz.r.t	Predicted OK
+ai-metrics.c1.viz.r.items.0	false negative (missed)
+ai-metrics.c1.viz.r.items.1	true negative (fine)
+ai-metrics.c2.title	Precision
+ai-metrics.c2.text	Of everything the model flagged, how much was right? High precision means few false alarms.
+ai-metrics.c2.example.0	40 flagged, 30 really fraud
+ai-metrics.c2.example.1	30 ÷ 40
+ai-metrics.c2.example.2	= 75% precision
+ai-metrics.c2.viz.f	precision = TP ÷ (TP + FP)
+ai-metrics.c2.viz.items.0.s	TP
+ai-metrics.c2.viz.items.0.m	correctly flagged
+ai-metrics.c2.viz.items.1.s	FP
+ai-metrics.c2.viz.items.1.m	false alarms
+ai-metrics.c3.title	Recall
+ai-metrics.c3.text	Of all the real cases, how many did the model catch? High recall means few misses.
+ai-metrics.c3.example.0	50 real frauds, 30 caught
+ai-metrics.c3.example.1	30 ÷ 50
+ai-metrics.c3.example.2	= 60% recall
+ai-metrics.c3.viz.f	recall = TP ÷ (TP + FN)
+ai-metrics.c3.viz.items.0.s	TP
+ai-metrics.c3.viz.items.0.m	caught
+ai-metrics.c3.viz.items.1.s	FN
+ai-metrics.c3.viz.items.1.m	missed
+ai-metrics.c4.title	The precision–recall trade-off
+ai-metrics.c4.text	Lower the alarm threshold and you catch more (recall up) but raise more false alarms (precision down). Raise it and the opposite happens. Where to set it is a business choice.
+ai-metrics.c4.viz.l.t	Cancer screening
+ai-metrics.c4.viz.l.items.0	favour recall
+ai-metrics.c4.viz.l.items.1	a miss is very costly
+ai-metrics.c4.viz.l.items.2	false alarms get re-tested
+ai-metrics.c4.viz.r.t	Spam filter
+ai-metrics.c4.viz.r.items.0	favour precision
+ai-metrics.c4.viz.r.items.1	losing a real email hurts
+ai-metrics.c4.viz.r.items.2	some spam slips through
+ai-metrics.c5.title	F1 score
+ai-metrics.c5.text	F1 combines precision and recall into one number, their harmonic mean. It is high only when both are high.
+ai-metrics.c5.example.0	P = 0.75, R = 0.60
+ai-metrics.c5.example.1	2 × 0.75 × 0.60 ÷ 1.35
+ai-metrics.c5.example.2	F1 ≈ 0.67
+ai-metrics.c5.viz.f	F1 = 2·P·R ÷ (P + R)
+ai-metrics.c5.viz.items.0.s	P
+ai-metrics.c5.viz.items.0.m	precision
+ai-metrics.c5.viz.items.1.s	R
+ai-metrics.c5.viz.items.1.m	recall
+ai-metrics.c6.title	Errors for numbers
+ai-metrics.c6.text	For regression, you measure how far predictions land from reality. MAE is the average absolute error ("off by €8,000 on average"). RMSE punishes big misses more. MAPE gives the error as a percentage.
+ai-metrics.c6.viz.items.0.a	MAE
+ai-metrics.c6.viz.items.0.b	average size of the error
+ai-metrics.c6.viz.items.1.a	RMSE
+ai-metrics.c6.viz.items.1.b	punishes large errors more
+ai-metrics.c6.viz.items.2.a	MAPE
+ai-metrics.c6.viz.items.2.b	error as a % of the true value
+ai-metrics.c7.title	Compare against a baseline
+ai-metrics.c7.text	A forecast with 10% error sounds good until you learn that "same as last week" gets 11%. Always report your model next to a simple baseline and the current human process.
+ai-metrics.c7.viz.unit	% error
+ai-metrics.c7.viz.items.0.l	Same as last year
+ai-metrics.c7.viz.items.1.l	Analyst forecast
+ai-metrics.c7.viz.items.2.l	ML model
+ai-metrics.c8.title	Test like it will be used
+ai-metrics.c8.text	Evaluate on data that looks like the future: later dates, new customers, other regions. Then keep monitoring after launch, because the real test starts on day one in production.
+ai-metrics.c8.viz.steps.0	Train on the past
+ai-metrics.c8.viz.steps.1	Test on later data
+ai-metrics.c8.viz.steps.2	Launch
+ai-metrics.c8.viz.steps.3	Monitor every week
+ai-metrics.c9.title	Measure what matters to the business
+ai-metrics.c9.text	A model that's 2% more accurate but takes 10 seconds per prediction, or can't be explained to a regulator, may be worse. Translate errors into money, time or risk.
+ai-metrics.c9.viz.items.0	Cost of a false alarm
+ai-metrics.c9.viz.items.1	Cost of a miss
+ai-metrics.c9.viz.items.2	Speed per prediction
+ai-metrics.c9.viz.items.3	Explainability required?
+ai-metrics.c9.viz.items.4	Effort to maintain
+ai-vision.title	Computer vision
+ai-vision.summary	How machines see: pixels, convolutions and object detection.
+ai-vision.q0.q	Drawing labelled boxes around every person and car in an image is…
+ai-vision.q0.o0	Classification
+ai-vision.q0.o1	Object detection
+ai-vision.q0.o2	OCR
+ai-vision.q0.x	Detection locates each object with a box.
+ai-vision.q1.q	Fine-tuning a model pre-trained on millions of images with your own few hundred photos is called…
+ai-vision.q1.o0	Transfer learning
+ai-vision.q1.o1	Data drift
+ai-vision.q1.o2	Clustering
+ai-vision.q1.x	You transfer what it already learned to your task.
+ai-vision.q2.q	What happened with AlexNet in 2012?
+ai-vision.q2.o0	It invented the pixel
+ai-vision.q2.o1	It won ImageNet by a large margin and sparked the deep-learning boom
+ai-vision.q2.o2	It recognised faces for the first time
+ai-vision.q2.x	Its error was far lower than previous methods.
+ai-vision.c0.title	An image is a grid of numbers
+ai-vision.c0.text	To a computer, a photo is a grid of pixels, each stored as three numbers for red, green and blue, from 0 to 255. A 12-megapixel phone photo is about 36 million numbers.
+ai-vision.c0.viz.f	pixel = (R, G, B)
+ai-vision.c0.viz.items.0.s	R
+ai-vision.c0.viz.items.0.m	red 0–255
+ai-vision.c0.viz.items.1.s	G
+ai-vision.c0.viz.items.1.m	green 0–255
+ai-vision.c0.viz.items.2.s	B
+ai-vision.c0.viz.items.2.m	blue 0–255
+ai-vision.c1.title	Classification
+ai-vision.c1.text	The simplest vision task: what's in this picture? The network outputs a probability for each category it knows.
+ai-vision.c1.viz.items.0.l	Cat
+ai-vision.c1.viz.items.1.l	Dog
+ai-vision.c1.viz.items.2.l	Fox
+ai-vision.c1.viz.items.3.l	Rabbit
+ai-vision.c2.title	Object detection
+ai-vision.c2.text	Detection goes further: it finds every object and draws a box around each one, with a label and a confidence score. It's what security camera systems such as Frigate use to tell a person from a passing car or a cat.
+ai-vision.c2.viz.steps.0	Camera frame
+ai-vision.c2.viz.steps.1	Detector finds objects
+ai-vision.c2.viz.steps.2	"person 0.92" box
+ai-vision.c2.viz.steps.3	Alert only for people
+ai-vision.c3.title	Segmentation
+ai-vision.c3.text	Segmentation labels every single pixel: road, car, pedestrian, sky. Self-driving cars and medical imaging rely on it to know exact shapes, not just boxes.
+ai-vision.c3.viz.l.t	Detection
+ai-vision.c3.viz.l.items.0	a box around each object
+ai-vision.c3.viz.l.items.1	fast
+ai-vision.c3.viz.l.items.2	good for counting
+ai-vision.c3.viz.r.t	Segmentation
+ai-vision.c3.viz.r.items.0	every pixel labelled
+ai-vision.c3.viz.r.items.1	exact outlines
+ai-vision.c3.viz.r.items.2	heavier to compute
+ai-vision.c4.title	ImageNet changed everything
+ai-vision.c4.text	ImageNet is a dataset of over 14 million labelled images. In 2012, a deep network called AlexNet won its yearly competition by a huge margin, cutting the error rate from about 26% to 15%. That result kicked off the deep-learning boom.
+ai-vision.c4.viz.unit	top-5 error %
+ai-vision.c4.viz.items.0.l	2011 best
+ai-vision.c4.viz.items.1.l	AlexNet 2012
+ai-vision.c4.viz.items.2.l	2015 ResNet
+ai-vision.c5.title	Transfer learning
+ai-vision.c5.text	You rarely train a vision model from scratch. You take one already trained on millions of images and fine-tune it on a few hundred of your own, such as photos of defective parts.
+ai-vision.c5.viz.steps.0	Model trained on millions of images
+ai-vision.c5.viz.steps.1	Swap the last layer
+ai-vision.c5.viz.steps.2	Fine-tune on 500 of your photos
+ai-vision.c5.viz.steps.3	Your own detector
+ai-vision.c6.title	Optical character recognition
+ai-vision.c6.text	OCR turns pictures of text into text: scanned invoices, number plates, signs. Modern OCR also understands layout, so it knows which number is the total and which is the date.
+ai-vision.c6.viz.steps.0	Scanned document
+ai-vision.c6.viz.steps.1	Find text regions
+ai-vision.c6.viz.steps.2	Read characters
+ai-vision.c6.viz.steps.3	Fields: date, total, supplier
+ai-vision.c7.title	Vision on the edge
+ai-vision.c7.text	Many cameras now run detection locally on small accelerators instead of sending video to the cloud. That's faster, cheaper and keeps footage private.
+ai-vision.c7.viz.l.t	Cloud
+ai-vision.c7.viz.l.items.0	powerful models
+ai-vision.c7.viz.l.items.1	needs upload bandwidth
+ai-vision.c7.viz.l.items.2	footage leaves home
+ai-vision.c7.viz.r.t	Edge
+ai-vision.c7.viz.r.items.0	low latency
+ai-vision.c7.viz.r.items.1	works offline
+ai-vision.c7.viz.r.items.2	footage stays local
+ai-vision.c8.title	When vision fails
+ai-vision.c8.text	Vision models can be fooled by unusual lighting, angles, rain on the lens or objects they never saw in training. A model trained in summer may struggle with snow.\n\nTest in the real conditions where the camera will live.
+ai-vision.c8.viz.items.0	Night and infrared images
+ai-vision.c8.viz.items.1	Rain, fog and glare
+ai-vision.c8.viz.items.2	Unusual angles
+ai-vision.c8.viz.items.3	Partially hidden objects
+ai-vision.c8.viz.items.4	Things never seen in training
+ai-vision.c9.title	Faces are special
+ai-vision.c9.text	Face recognition identifies specific people and is legally sensitive. Under the EU AI Act, real-time remote biometric identification in public spaces by police is prohibited except in narrow, authorised cases.
+ai-vision.c9.viz.l.t	Face detection
+ai-vision.c9.viz.l.items.0	"there is a face here"
+ai-vision.c9.viz.l.items.1	generally low risk
+ai-vision.c9.viz.r.t	Face recognition
+ai-vision.c9.viz.r.items.0	"this is Maria"
+ai-vision.c9.viz.r.items.1	biometric data
+ai-vision.c9.viz.r.items.2	strict legal limits
+ai-speech.title	Speech and sound
+ai-speech.summary	How machines hear, transcribe and talk back.
+ai-speech.q0.q	What is a spectrogram?
+ai-speech.q0.o0	A type of microphone
+ai-speech.q0.o1	A picture of which frequencies are loud over time
+ai-speech.q0.o2	A speech transcript
+ai-speech.q0.x	It turns audio into an image-like grid.
+ai-speech.q1.q	Why do smart speakers detect the wake word on the device?
+ai-speech.q1.o0	It's illegal to use the cloud
+ai-speech.q1.o1	It's fast, cheap and keeps everyday audio private
+ai-speech.q1.o2	The cloud can't understand wake words
+ai-speech.q1.x	Only after the wake word is audio sent onward.
+ai-speech.q2.q	What's the safest response to an urgent payment request in a manager's voice?
+ai-speech.q2.o0	Pay quickly
+ai-speech.q2.o1	Verify through a known, separate channel
+ai-speech.q2.o2	Reply by email
+ai-speech.q2.x	Voices can be cloned; verification must not depend on the call itself.
+ai-speech.c0.title	Sound as a picture
+ai-speech.c0.text	Audio is a wave of air pressure, sampled thousands of times per second. AI models usually convert it into a spectrogram: a picture of which frequencies are loud at each moment. Then image-style techniques can be applied.
+ai-speech.c0.viz.steps.0	Microphone
+ai-speech.c0.viz.steps.1	Sound wave samples
+ai-speech.c0.viz.steps.2	Spectrogram picture
+ai-speech.c0.viz.steps.3	Neural network
+ai-speech.c1.title	Sampling rates
+ai-speech.c1.text	Phone calls are typically sampled 8,000 times per second, which is enough for speech. CDs use 44,100, enough to capture everything humans can hear (up to about 20 kHz).
+ai-speech.c1.viz.unit	thousand samples/s
+ai-speech.c1.viz.items.0.l	Phone call
+ai-speech.c1.viz.items.1.l	Speech models
+ai-speech.c1.viz.items.2.l	CD audio
+ai-speech.c1.viz.items.3.l	Studio
+ai-speech.c2.title	Speech to text
+ai-speech.c2.text	Automatic speech recognition (ASR) turns speech into words. Modern systems are trained on hundreds of thousands of hours of audio and handle accents, noise and multiple languages.\n\nOpenAI's open Whisper model, released in 2022, was trained on 680,000 hours.
+ai-speech.c2.viz.steps.0	Audio
+ai-speech.c2.viz.steps.1	Spectrogram
+ai-speech.c2.viz.steps.2	Model predicts words
+ai-speech.c2.viz.steps.3	Transcript with timestamps
+ai-speech.c3.title	Text to speech
+ai-speech.c3.text	TTS works the other way round. Neural voices now sound natural, with breathing and emphasis. Some can clone a voice from a short sample, which raises fraud concerns.
+ai-speech.c3.viz.steps.0	Text
+ai-speech.c3.viz.steps.1	Model plans pronunciation and rhythm
+ai-speech.c3.viz.steps.2	Generates audio waveform
+ai-speech.c3.viz.steps.3	Natural-sounding voice
+ai-speech.c4.title	Voice assistants: a pipeline
+ai-speech.c4.text	A voice assistant chains several models: a small one listens for the wake word, ASR transcribes the request, a language model works out the intent, and TTS speaks the answer.
+ai-speech.c4.viz.steps.0	Wake word
+ai-speech.c4.viz.steps.1	Speech to text
+ai-speech.c4.viz.steps.2	Understand intent
+ai-speech.c4.viz.steps.3	Act
+ai-speech.c4.viz.steps.4	Speak the reply
+ai-speech.c5.title	Wake words run locally
+ai-speech.c5.text	Your phone or smart speaker isn't sending everything to the cloud. A tiny model on the device listens only for "Hey…". Only after it triggers does audio leave the device.
+ai-speech.c5.viz.l.t	On device
+ai-speech.c5.viz.l.items.0	wake-word detection
+ai-speech.c5.viz.l.items.1	always listening
+ai-speech.c5.viz.l.items.2	tiny and private
+ai-speech.c5.viz.r.t	In the cloud
+ai-speech.c5.viz.r.items.0	full transcription
+ai-speech.c5.viz.r.items.1	understanding
+ai-speech.c5.viz.r.items.2	answer generation
+ai-speech.c6.title	Speaker diarisation
+ai-speech.c6.text	In a meeting recording, diarisation answers "who spoke when?". Combined with transcription, it produces minutes with names attached.
+ai-speech.c6.viz.events.0.y	0 min
+ai-speech.c6.viz.events.0.l	Ana opens the agenda
+ai-speech.c6.viz.events.1.y	2 min
+ai-speech.c6.viz.events.1.l	Rui shows Q3 figures
+ai-speech.c6.viz.events.2.y	8 min
+ai-speech.c6.viz.events.2.l	Ana confirms the decision
+ai-speech.c6.viz.events.3.y	9 min
+ai-speech.c6.viz.events.3.l	Rui lists next steps
+ai-speech.c7.title	Beyond speech
+ai-speech.c7.text	Audio AI also recognises other sounds: a glass breaking, a baby crying, a machine bearing starting to fail. Predictive maintenance often listens for changes in vibration and noise.
+ai-speech.c7.viz.items.0	Machine fault detection
+ai-speech.c7.viz.items.1	Glass break and alarm sounds
+ai-speech.c7.viz.items.2	Bird and wildlife monitoring
+ai-speech.c7.viz.items.3	Music identification
+ai-speech.c8.title	Deepfake voices
+ai-speech.c8.text	With a few seconds of someone's voice, modern tools can make convincing fake audio. Scammers have used cloned voices of executives to request urgent payments.\n\nAgree on verification steps for any unusual payment request, whatever the voice sounds like.
+ai-speech.c8.viz.items.0.w	trust a familiar voice
+ai-speech.c8.viz.items.0.r	call back on a known number
+ai-speech.c8.viz.items.1.w	act on urgency
+ai-speech.c8.viz.items.1.r	verify every unusual payment request
+ai-speech.c9.title	Translation by voice
+ai-speech.c9.text	Combine speech recognition, machine translation and speech synthesis and you get near real-time spoken translation. Some systems now translate speech directly without writing text in between.
+ai-speech.c9.viz.steps.0	Portuguese speech
+ai-speech.c9.viz.steps.1	Text in Portuguese
+ai-speech.c9.viz.steps.2	Text in English
+ai-speech.c9.viz.steps.3	English speech
+ai-recs.title	Recommendation systems
+ai-recs.summary	How Netflix, Amazon and Spotify decide what to show you.
+ai-recs.q0.q	"Users who liked this also liked…" describes…
+ai-recs.q0.o0	Content-based filtering
+ai-recs.q0.o1	Collaborative filtering
+ai-recs.q0.o2	Clustering
+ai-recs.q0.x	It relies on similar users' behaviour.
+ai-recs.q1.q	A new product with no ratings yet is an example of…
+ai-recs.q1.o0	Overfitting
+ai-recs.q1.o1	The cold-start problem
+ai-recs.q1.o2	A filter bubble
+ai-recs.q1.x	There's no history to learn from yet.
+ai-recs.q2.q	Comparing two recommenders on live users, half each, is…
+ai-recs.q2.o0	An A/B test
+ai-recs.q2.o1	A confusion matrix
+ai-recs.q2.o2	Backpropagation
+ai-recs.q2.x	A/B tests measure real behaviour.
+ai-recs.c0.title	The recommendation problem
+ai-recs.c0.text	A shop may have a million products; you'll look at a few dozen. Recommenders predict which few you're most likely to want, from your history and from people like you.
+ai-recs.c0.viz.steps.0	Millions of items
+ai-recs.c0.viz.steps.1	Narrow to a few hundred candidates
+ai-recs.c0.viz.steps.2	Rank them
+ai-recs.c0.viz.steps.3	Show the top 10
+ai-recs.c1.title	Collaborative filtering
+ai-recs.c1.text	"People who bought this also bought…" The system finds users with similar tastes to yours and recommends what they liked. It needs no understanding of the products themselves.
+ai-recs.c1.viz.l.t	You
+ai-recs.c1.viz.l.items.0	liked A, B, C
+ai-recs.c1.viz.r.t	Similar users
+ai-recs.c1.viz.r.items.0	liked A, B, C and D
+ai-recs.c1.viz.r.items.1	so recommend D
+ai-recs.c2.title	Content-based filtering
+ai-recs.c2.text	This approach looks at the items: genre, author, ingredients, price range. If you read three thriller novels, it suggests more thrillers.
+ai-recs.c2.viz.items.0.a	Genre
+ai-recs.c2.viz.items.0.b	thriller
+ai-recs.c2.viz.items.1.a	Length
+ai-recs.c2.viz.items.1.b	300–400 pages
+ai-recs.c2.viz.items.2.a	Setting
+ai-recs.c2.viz.items.2.b	Lisbon
+ai-recs.c2.viz.items.3.a	→ suggests
+ai-recs.c2.viz.items.3.b	similar books
+ai-recs.c3.title	The cold-start problem
+ai-recs.c3.text	A brand-new user or product has no history, so collaborative filtering has nothing to work with. Systems fall back on popularity, ask a few questions, or use item content until data arrives.
+ai-recs.c3.viz.items.0	Show popular items
+ai-recs.c3.viz.items.1	Ask for a few preferences
+ai-recs.c3.viz.items.2	Use item descriptions
+ai-recs.c3.viz.items.3	Learn fast from first clicks
+ai-recs.c4.title	Implicit vs explicit feedback
+ai-recs.c4.text	Explicit feedback is a star rating. Implicit feedback is behaviour: clicks, time spent, songs skipped, items returned. Implicit data is far more plentiful, so most systems rely on it.
+ai-recs.c4.viz.l.t	Explicit
+ai-recs.c4.viz.l.items.0	star ratings
+ai-recs.c4.viz.l.items.1	thumbs up
+ai-recs.c4.viz.l.items.2	rare but clear
+ai-recs.c4.viz.r.t	Implicit
+ai-recs.c4.viz.r.items.0	clicks, plays, skips
+ai-recs.c4.viz.r.items.1	abundant
+ai-recs.c4.viz.r.items.2	noisy
+ai-recs.c5.title	Recommendations drive viewing
+ai-recs.c5.text	Netflix has reported that around 80% of what members watch is discovered through its recommendations rather than search. Recommenders shape what millions of people see each day.
+ai-recs.c5.viz.items.0.l	of Netflix viewing comes from recommendations (company figure)
+ai-recs.c6.title	Filter bubbles
+ai-recs.c6.text	If a system only shows you more of what you already clicked, your feed narrows. Good recommenders deliberately mix in some variety and new items, a balance called exploration versus exploitation.
+ai-recs.c6.viz.l.t	Exploit
+ai-recs.c6.viz.l.items.0	show what you surely like
+ai-recs.c6.viz.l.items.1	safe clicks
+ai-recs.c6.viz.l.items.2	narrower feed
+ai-recs.c6.viz.r.t	Explore
+ai-recs.c6.viz.r.items.0	try something new
+ai-recs.c6.viz.r.items.1	learn your tastes
+ai-recs.c6.viz.r.items.2	avoids bubbles
+ai-recs.c7.title	Embeddings for items
+ai-recs.c7.text	Modern recommenders turn every user and item into a list of numbers, an embedding. Items close together on this map are similar; a user's position shows their taste.
+ai-recs.c7.viz.items.0.a	Thriller A
+ai-recs.c7.viz.items.0.b	near Thriller B
+ai-recs.c7.viz.items.1.a	Jazz album
+ai-recs.c7.viz.items.1.b	far from heavy metal
+ai-recs.c7.viz.items.2.a	Your profile
+ai-recs.c7.viz.items.2.b	near what you'll like next
+ai-recs.c8.title	Measuring recommenders
+ai-recs.c8.text	Offline, teams check if the model would have predicted what users actually clicked. Online, they run A/B tests: half the users see the new system, and they compare clicks, purchases or retention.
+ai-recs.c8.viz.steps.0	Offline test on past data
+ai-recs.c8.viz.steps.1	A/B test with real users
+ai-recs.c8.viz.steps.2	Compare sales and retention
+ai-recs.c8.viz.steps.3	Roll out the winner
+ai-recs.c9.title	Beyond shopping
+ai-recs.c9.text	The same techniques suggest jobs on LinkedIn, friends on social networks, articles in news apps, and even which spare part a technician will need.
+ai-recs.c9.viz.items.0	Streaming and music
+ai-recs.c9.viz.items.1	Online shops
+ai-recs.c9.viz.items.2	News and social feeds
+ai-recs.c9.viz.items.3	Job matching
+ai-recs.c9.viz.items.4	Maintenance parts
+ai-rl.title	Learning by trial and error
+ai-rl.summary	Reinforcement learning, games and robots.
+ai-rl.q0.q	What makes chess hard for reinforcement learning?
+ai-rl.q0.o0	No rules
+ai-rl.q0.o1	The reward only arrives at the end of the game
+ai-rl.q0.o2	Too few moves
+ai-rl.q0.x	Credit must be assigned to earlier moves.
+ai-rl.q1.q	An agent exploiting a loophole to get points without doing the task is…
+ai-rl.q1.o0	Overfitting
+ai-rl.q1.o1	Reward hacking
+ai-rl.q1.o2	Self-play
+ai-rl.q1.x	It optimises the reward literally.
+ai-rl.q2.q	Why do robots often learn in simulation first?
+ai-rl.q2.o0	Simulators are prettier
+ai-rl.q2.o1	It's faster, cheaper and safe to fail
+ai-rl.q2.o2	Real robots can't learn
+ai-rl.q2.x	Millions of trials would wear out a real robot.
+ai-rl.c0.title	Agent, environment, reward
+ai-rl.c0.text	Reinforcement learning has three ingredients: an agent that acts, an environment that responds, and a reward signal that says how well it's doing. The agent's goal is to maximise total reward over time.
+ai-rl.c0.viz.steps.0	Agent sees the state
+ai-rl.c0.viz.steps.1	Agent acts
+ai-rl.c0.viz.steps.2	Environment changes
+ai-rl.c0.viz.steps.3	Reward comes back
+ai-rl.c1.title	Exploration vs exploitation
+ai-rl.c1.text	Should the agent repeat what worked before, or try something new that might work better? Too little exploration and it gets stuck; too much and it never cashes in.
+ai-rl.c1.viz.l.t	Exploit
+ai-rl.c1.viz.l.items.0	use the best-known move
+ai-rl.c1.viz.l.items.1	reliable now
+ai-rl.c1.viz.r.t	Explore
+ai-rl.c1.viz.r.items.0	try new moves
+ai-rl.c1.viz.r.items.1	may find something better
+ai-rl.c2.title	Delayed rewards
+ai-rl.c2.text	In chess, the reward only comes at the end: win or lose. The agent must work out which of its earlier moves deserve the credit. This "credit assignment" is what makes RL hard.
+ai-rl.c2.viz.events.0.y	Move 1
+ai-rl.c2.viz.events.0.l	quiet opening
+ai-rl.c2.viz.events.1.y	Move 14
+ai-rl.c2.viz.events.1.l	key sacrifice
+ai-rl.c2.viz.events.2.y	Move 30
+ai-rl.c2.viz.events.2.l	attack
+ai-rl.c2.viz.events.3.y	Move 41
+ai-rl.c2.viz.events.3.l	checkmate, reward +1
+ai-rl.c3.title	AlphaGo
+ai-rl.c3.text	Go has more possible positions than there are atoms in the observable universe. In 2016, DeepMind's AlphaGo beat Lee Sedol, one of the world's best players, 4–1. Its successor, AlphaZero, learned purely by playing against itself.
+ai-rl.c3.viz.events.0.l	Deep Blue beats Kasparov at chess
+ai-rl.c3.viz.events.1.l	AlphaGo beats Lee Sedol at Go
+ai-rl.c3.viz.events.2.l	AlphaZero learns by self-play
+ai-rl.c3.viz.events.3.l	AlphaStar reaches top level in StarCraft II
+ai-rl.c4.title	Self-play
+ai-rl.c4.text	An agent can be its own opponent. Each new version plays against older versions, improving step by step without any human games to copy. It can even discover strategies humans never tried.
+ai-rl.c4.viz.steps.0	Play against itself
+ai-rl.c4.viz.steps.1	Learn from the results
+ai-rl.c4.viz.steps.2	Become a stronger version
+ai-rl.c4.viz.steps.3	Play again
+ai-rl.c5.title	Simulation first
+ai-rl.c5.text	Robots learning by trial and error would break themselves. So they train in a physics simulator, millions of times faster than real life, and then transfer to the real machine.
+ai-rl.c5.viz.steps.0	Train in simulation
+ai-rl.c5.viz.steps.1	Add random variations
+ai-rl.c5.viz.steps.2	Test on the real robot
+ai-rl.c5.viz.steps.3	Fine-tune
+ai-rl.c6.title	Reward hacking
+ai-rl.c6.text	Agents optimise exactly what you reward, not what you meant. A boat-racing agent once learned to spin in circles collecting points instead of finishing the race.\n\nDesigning rewards that capture what you really want is surprisingly difficult.
+ai-rl.c6.viz.items.0.w	reward points collected
+ai-rl.c6.viz.items.0.r	reward finishing the race
+ai-rl.c6.viz.items.1.w	reward "no complaints"
+ai-rl.c6.viz.items.1.r	reward solved problems
+ai-rl.c7.title	RL in the real world
+ai-rl.c7.text	Outside games, RL has been used to cut data-centre cooling energy, control robot arms, optimise chip layouts and tune trading or pricing strategies, usually with strict safety limits.
+ai-rl.c7.viz.items.0	Data-centre cooling
+ai-rl.c7.viz.items.1	Robot control
+ai-rl.c7.viz.items.2	Chip floor-planning
+ai-rl.c7.viz.items.3	Traffic signal timing
+ai-rl.c7.viz.items.4	Recommendation sequences
+ai-rl.c8.title	RL from human feedback
+ai-rl.c8.text	Chatbots are refined with a form of RL: people compare pairs of answers, a reward model learns their preferences, and the chatbot is trained to produce answers that model rates highly.
+ai-rl.c8.viz.steps.0	Model writes two answers
+ai-rl.c8.viz.steps.1	Humans pick the better one
+ai-rl.c8.viz.steps.2	Reward model learns preferences
+ai-rl.c8.viz.steps.3	Chatbot trained to score higher
+ai-rl.c9.title	Why RL is hard
+ai-rl.c9.text	It needs a lot of trials, a clear reward, and a safe place to fail. That's why it thrives in games and simulators and is used carefully in the physical world.
+ai-rl.c9.viz.items.0	Needs millions of attempts
+ai-rl.c9.viz.items.1	Reward must be well designed
+ai-rl.c9.viz.items.2	Failures must be safe
+ai-rl.c9.viz.items.3	Results can be unstable
+ai-history.title	A short history of AI
+ai-history.summary	From Turing's question to today's assistants, with two winters in between.
+ai-history.q0.q	Who proposed the "imitation game" in 1950?
+ai-history.q0.o0	John McCarthy
+ai-history.q0.o1	Alan Turing
+ai-history.q0.o2	Geoffrey Hinton
+ai-history.q0.x	Turing's 1950 paper introduced what we now call the Turing test.
+ai-history.q1.q	Which 2017 invention underpins today's large language models?
+ai-history.q1.o0	The GPU
+ai-history.q1.o1	The Transformer architecture
+ai-history.q1.o2	Expert systems
+ai-history.q1.x	"Attention Is All You Need" introduced it.
+ai-history.q2.q	What caused the AI winters?
+ai-history.q2.o0	Hardware bans
+ai-history.q2.o1	Promises outpacing results, so funding was cut
+ai-history.q2.o2	Lack of electricity
+ai-history.q2.x	Disappointment led to funding cuts.
+ai-history.c0.title	Can machines think?
+ai-history.c0.text	In 1950 Alan Turing proposed a practical test: if a judge chatting by text can't tell a machine from a person, we might say the machine thinks. He called it the imitation game; we call it the Turing test.
+ai-history.c0.viz.events.0.l	Turing describes a universal machine
+ai-history.c0.viz.events.1.l	the imitation game
+ai-history.c0.viz.events.2.l	"artificial intelligence" is named
+ai-history.c1.title	Dartmouth, 1956
+ai-history.c1.text	A summer workshop at Dartmouth College gave the field its name. Its organisers believed that significant progress on machine intelligence could be made by a small group in one summer. It took a little longer.
+ai-history.c1.viz.items.0.l	AI named at Dartmouth
+ai-history.c1.viz.items.1.l	researchers at the core of the proposal
+ai-history.c1.viz.items.2.l	years later, still going
+ai-history.c2.title	Symbolic AI
+ai-history.c2.text	Early AI tried to write intelligence as rules and logic: if this, then that. It solved puzzles and proved theorems, but struggled with messy real-world tasks like recognising a face or understanding speech.
+ai-history.c2.viz.l.t	Symbolic AI
+ai-history.c2.viz.l.items.0	hand-written rules
+ai-history.c2.viz.l.items.1	clear reasoning
+ai-history.c2.viz.l.items.2	brittle with messy data
+ai-history.c2.viz.r.t	Machine learning
+ai-history.c2.viz.r.items.0	learns from examples
+ai-history.c2.viz.r.items.1	handles messiness
+ai-history.c2.viz.r.items.2	harder to explain
+ai-history.c3.title	The AI winters
+ai-history.c3.text	Twice, big promises met disappointing results and funding dried up: in the mid-1970s and again in the late 1980s, when rule-based "expert systems" proved costly to maintain.
+ai-history.c3.viz.events.0.l	early machine translation disappoints
+ai-history.c3.viz.events.1.l	first AI winter
+ai-history.c3.viz.events.2.l	expert-system boom
+ai-history.c3.viz.events.3.l	second winter
+ai-history.c3.viz.events.4.l	Deep Blue revives interest
+ai-history.c4.title	Expert systems
+ai-history.c4.text	In the 1980s companies built expert systems: thousands of rules extracted from human specialists, for tasks like configuring computers or diagnosing infections. They worked in narrow areas but every new situation needed new rules.
+ai-history.c4.viz.steps.0	Interview experts
+ai-history.c4.viz.steps.1	Write thousands of rules
+ai-history.c4.viz.steps.2	Works in a narrow area
+ai-history.c4.viz.steps.3	Breaks on new cases
+ai-history.c5.title	The statistical turn
+ai-history.c5.text	From the 1990s, researchers increasingly let machines learn from data instead of writing rules. Spam filters, search ranking and speech recognition improved steadily with more data and faster computers.
+ai-history.c5.viz.steps.0	More data online
+ai-history.c5.viz.steps.1	Faster computers
+ai-history.c5.viz.steps.2	Statistical learning
+ai-history.c5.viz.steps.3	Steady practical gains
+ai-history.c6.title	The deep learning breakthrough
+ai-history.c6.text	Three ingredients came together around 2012: huge labelled datasets, cheap GPU computing and better training tricks for deep neural networks. Image recognition, then speech, then translation improved dramatically.
+ai-history.c6.viz.items.0	Deep learning boom
+ai-history.c6.viz.items.1	Better algorithms
+ai-history.c6.viz.items.2	GPU computing
+ai-history.c6.viz.items.3	Big data
+ai-history.c7.title	The Transformer, 2017
+ai-history.c7.text	A Google paper titled "Attention Is All You Need" introduced the Transformer architecture. It processes whole sequences at once and lets every word attend to every other. Almost every large language model since is built on it.
+ai-history.c7.viz.events.0.l	Transformer paper
+ai-history.c7.viz.events.1.l	BERT and GPT-1
+ai-history.c7.viz.events.2.l	GPT-3
+ai-history.c7.viz.events.3.l	ChatGPT
+ai-history.c7.viz.events.4.l	GPT-4 and Claude
+ai-history.c8.title	ChatGPT's launch
+ai-history.c8.text	ChatGPT launched on 30 November 2022 and reportedly reached around 100 million users within two months, making it one of the fastest-growing consumer apps ever.
+ai-history.c8.viz.items.0.v	30 Nov 2022
+ai-history.c8.viz.items.0.l	launch
+ai-history.c8.viz.items.1.v	~100 M
+ai-history.c8.viz.items.1.l	users in about two months
+ai-history.c9.title	Lessons from history
+ai-history.c9.text	AI has repeatedly been overhyped in the short term and underestimated in the long term. Progress comes in jumps when data, computing power and new ideas line up.
+ai-history.c9.viz.items.0	Short-term hype often disappoints
+ai-history.c9.viz.items.1	Long-term progress is real
+ai-history.c9.viz.items.2	Data and compute drive leaps
+ai-history.c9.viz.items.3	New ideas unlock old problems
+ai-hardware.title	The hardware behind AI
+ai-hardware.summary	GPUs, chips, memory and why training costs so much.
+ai-hardware.q0.q	Using a trained model to answer questions is called…
+ai-hardware.q0.o0	Training
+ai-hardware.q0.o1	Inference
+ai-hardware.q0.o2	Quantisation
+ai-hardware.q0.x	Inference is running the model; training builds it.
+ai-hardware.q1.q	What does 4-bit quantisation do?
+ai-hardware.q1.o0	Makes the model smarter
+ai-hardware.q1.o1	Stores weights with fewer bits so it's smaller and faster
+ai-hardware.q1.o2	Adds more parameters
+ai-hardware.q1.x	Fewer bits per weight shrink memory use.
+ai-hardware.q2.q	Why are GPUs good for AI?
+ai-hardware.q2.o0	They have more RAM slots
+ai-hardware.q2.o1	They do thousands of identical calculations in parallel
+ai-hardware.q2.o2	They run Windows faster
+ai-hardware.q2.x	Neural networks are mostly parallel matrix maths.
+ai-hardware.c0.title	Training vs inference
+ai-hardware.c0.text	Training is learning the weights: slow, done once (or occasionally) on huge clusters. Inference is using the trained model to answer: fast, done millions of times, often on smaller hardware.
+ai-hardware.c0.viz.l.t	Training
+ai-hardware.c0.viz.l.items.0	weeks on thousands of GPUs
+ai-hardware.c0.viz.l.items.1	very expensive
+ai-hardware.c0.viz.l.items.2	done rarely
+ai-hardware.c0.viz.r.t	Inference
+ai-hardware.c0.viz.r.items.0	milliseconds per answer
+ai-hardware.c0.viz.r.items.1	runs constantly
+ai-hardware.c0.viz.r.items.2	cost per query matters
+ai-hardware.c1.title	GPUs and matrix maths
+ai-hardware.c1.text	Neural networks are mostly multiplying large grids of numbers. GPUs have thousands of cores that do the same calculation in parallel, which makes them tens of times faster than CPUs for this work.
+ai-hardware.c1.viz.unit	relative speed (illustrative)
+ai-hardware.c1.viz.items.0.l	CPU
+ai-hardware.c1.viz.items.1.l	GPU
+ai-hardware.c2.title	Specialised AI chips
+ai-hardware.c2.text	Beyond GPUs, companies build chips designed only for neural networks: Google's TPUs, accelerators in phones (neural engines), and small edge chips like the Coral TPU used for camera detection.
+ai-hardware.c2.viz.root	AI chips
+ai-hardware.c2.viz.items.0	GPUs (Nvidia, AMD)
+ai-hardware.c2.viz.items.1	TPUs (Google)
+ai-hardware.c2.viz.items.2	Phone neural engines
+ai-hardware.c2.viz.items.3	Edge accelerators
+ai-hardware.c3.title	Memory is often the bottleneck
+ai-hardware.c3.text	A model's weights must sit in fast memory while it runs. Big models need lots of it; moving data in and out of memory often limits speed more than raw computing power.
+ai-hardware.c3.viz.steps.0	Weights in GPU memory
+ai-hardware.c3.viz.steps.1	Read them for every token
+ai-hardware.c3.viz.steps.2	Memory bandwidth limits speed
+ai-hardware.c4.title	FLOPs
+ai-hardware.c4.text	Computing power is measured in FLOPs: floating-point operations. Training a large model takes an enormous number, often more than 10²⁴ operations.
+ai-hardware.c4.viz.f	FLOP/s = operations per second
+ai-hardware.c4.viz.items.0.s	tera
+ai-hardware.c4.viz.items.0.m	a trillion per second
+ai-hardware.c4.viz.items.1.s	peta
+ai-hardware.c4.viz.items.1.m	a thousand trillion
+ai-hardware.c4.viz.items.2.s	exa
+ai-hardware.c4.viz.items.2.m	a million trillion
+ai-hardware.c5.title	Quantisation
+ai-hardware.c5.text	Weights can be stored with fewer bits: 8-bit or 4-bit instead of 16-bit. The model gets 2–4 times smaller and faster, usually with only a small loss of quality. It's how big models run on laptops and phones.
+ai-hardware.c5.viz.unit	GB for a 7B model
+ai-hardware.c5.viz.items.0.l	16-bit
+ai-hardware.c5.viz.items.1.l	8-bit
+ai-hardware.c5.viz.items.2.l	4-bit
+ai-hardware.c6.title	Energy use
+ai-hardware.c6.text	Data centres already use a noticeable share of electricity in some countries, and AI is growing that demand. Efficiency gains per calculation are large, but total use keeps rising as AI spreads.
+ai-hardware.c6.viz.items.0	Training: big one-off energy cost
+ai-hardware.c6.viz.items.1	Inference: small per query, huge in total
+ai-hardware.c6.viz.items.2	Cooling adds to the bill
+ai-hardware.c6.viz.items.3	Location and clean power matter
+ai-hardware.c7.title	Cloud vs local
+ai-hardware.c7.text	You can rent AI by the call in the cloud, or run models on your own hardware. Cloud gives you the largest models with no upfront cost; local gives privacy, predictable cost and offline use.
+ai-hardware.c7.viz.l.t	Cloud
+ai-hardware.c7.viz.l.items.0	biggest models
+ai-hardware.c7.viz.l.items.1	pay per use
+ai-hardware.c7.viz.l.items.2	data leaves your network
+ai-hardware.c7.viz.r.t	Local
+ai-hardware.c7.viz.r.items.0	data stays in-house
+ai-hardware.c7.viz.r.items.1	fixed cost
+ai-hardware.c7.viz.r.items.2	smaller models
+ai-hardware.c8.title	Scaling
+ai-hardware.c8.text	Researchers found that models get predictably better as you increase data, parameters and compute together. These "scaling laws" justified building ever-larger clusters.
+ai-hardware.c8.viz.steps.0	More data
+ai-hardware.c8.viz.steps.1	Bigger model
+ai-hardware.c8.viz.steps.2	More compute
+ai-hardware.c8.viz.steps.3	Lower error, predictably
+ai-hardware.c9.title	Supply chain
+ai-hardware.c9.text	Most advanced AI chips are designed in the US and manufactured by TSMC in Taiwan using lithography machines from ASML in the Netherlands. This concentration makes chips a strategic, geopolitical issue.
+ai-hardware.c9.viz.steps.0	Design: Nvidia, AMD, Google
+ai-hardware.c9.viz.steps.1	Manufacture: TSMC, Taiwan
+ai-hardware.c9.viz.steps.2	Machines: ASML, Netherlands
+ai-hardware.c9.viz.steps.3	Data centres worldwide
+ai-bias.title	Bias and fairness
+ai-bias.summary	How models inherit unfairness from data, and what to do about it.
+ai-bias.q0.q	Why isn't deleting the "gender" column enough to remove gender bias?
+ai-bias.q0.o0	It always is enough
+ai-bias.q0.o1	Other features can act as proxies for gender
+ai-bias.q0.o2	Models can't read columns
+ai-bias.q0.x	Names, schools or career gaps can reveal it indirectly.
+ai-bias.q1.q	A model is 95% accurate overall. What should you check next?
+ai-bias.q1.o0	Nothing
+ai-bias.q1.o1	Accuracy broken down by group
+ai-bias.q1.o2	The colour of the dashboard
+ai-bias.q1.x	Averages can hide poor results for some groups.
+ai-bias.q2.q	Under the EU AI Act, CV screening for hiring is…
+ai-bias.q2.o0	Banned
+ai-bias.q2.o1	A high-risk use with extra obligations
+ai-bias.q2.o2	Unregulated
+ai-bias.q2.x	Employment decisions are listed as high-risk.
+ai-bias.c0.title	Models learn our past
+ai-bias.c0.text	A model trained on historical decisions learns the patterns in them, including unfair ones. If past hiring favoured one group, a model trained on it will too.
+ai-bias.c0.viz.steps.0	Biased historical decisions
+ai-bias.c0.viz.steps.1	Training data
+ai-bias.c0.viz.steps.2	Model copies the pattern
+ai-bias.c0.viz.steps.3	Biased decisions at scale
+ai-bias.c1.title	A real example
+ai-bias.c1.text	Amazon reportedly scrapped an experimental CV-screening tool around 2018 after finding it penalised CVs containing the word "women's", because it had learned from a decade of mostly male hires.
+ai-bias.c1.viz.items.0.w	"women's chess club" scored lower
+ai-bias.c1.viz.items.0.r	remove proxy signals and test per group
+ai-bias.c2.title	Proxies
+ai-bias.c2.text	Removing a sensitive field like gender isn't enough. Other fields can act as proxies: first names, certain schools, postcodes, part-time history. The model can rediscover the sensitive attribute indirectly.
+ai-bias.c2.viz.items.0.a	Postcode
+ai-bias.c2.viz.items.0.b	can reveal ethnicity or income
+ai-bias.c2.viz.items.1.a	First name
+ai-bias.c2.viz.items.1.b	can reveal gender
+ai-bias.c2.viz.items.2.a	Career gaps
+ai-bias.c2.viz.items.2.b	can reveal parenthood
+ai-bias.c3.title	Measure performance by group
+ai-bias.c3.text	Overall accuracy can hide big differences. Always break results down: does the model work equally well for women and men, older and younger customers, different regions?
+ai-bias.c3.viz.unit	% error by group (illustrative)
+ai-bias.c3.viz.items.0.l	Group A
+ai-bias.c3.viz.items.1.l	Group B
+ai-bias.c3.viz.items.2.l	Group C
+ai-bias.c4.title	Different definitions of fair
+ai-bias.c4.text	Should approval rates be equal across groups? Or error rates? Or should equally qualified people get equal outcomes? These definitions can conflict mathematically, so you must choose deliberately.
+ai-bias.c4.viz.items.0	Equal approval rates
+ai-bias.c4.viz.items.1	Equal error rates
+ai-bias.c4.viz.items.2	Equal treatment of equally qualified people
+ai-bias.c4.viz.items.3	Choose and document your definition
+ai-bias.c5.title	Feedback loops
+ai-bias.c5.text	Biased predictions can create the data that confirms them. If a system sends more inspectors to one area, it finds more problems there, which makes the next prediction even more skewed.
+ai-bias.c5.viz.steps.0	Prediction sends attention
+ai-bias.c5.viz.steps.1	More issues found there
+ai-bias.c5.viz.steps.2	Data seems to confirm it
+ai-bias.c5.viz.steps.3	Stronger prediction
+ai-bias.c6.title	Fixing bias
+ai-bias.c6.text	You can rebalance training data, remove proxy features, adjust thresholds per use case, and keep a human in the loop for high-stakes decisions. And you test again after every change.
+ai-bias.c6.viz.items.0	Audit the training data
+ai-bias.c6.viz.items.1	Remove or limit proxy features
+ai-bias.c6.viz.items.2	Test results per group
+ai-bias.c6.viz.items.3	Keep human review for big decisions
+ai-bias.c6.viz.items.4	Monitor after launch
+ai-bias.c7.title	Bias isn't only about people
+ai-bias.c7.text	Data can be skewed in many ways: sensors from one factory, prices from one market, photos from one season. Any gap between training data and reality becomes a blind spot.
+ai-bias.c7.viz.l.t	Social bias
+ai-bias.c7.viz.l.items.0	gender, age, ethnicity
+ai-bias.c7.viz.l.items.1	legal and ethical risk
+ai-bias.c7.viz.r.t	Data bias
+ai-bias.c7.viz.r.items.0	one site, one season
+ai-bias.c7.viz.r.items.1	silent performance drops
+ai-bias.c8.title	It's also the law
+ai-bias.c8.text	In the EU, discrimination laws apply to automated decisions too, GDPR gives people rights around significant automated decisions, and the AI Act adds requirements for high-risk systems such as hiring and credit scoring.
+ai-bias.c8.viz.root	EU rules
+ai-bias.c8.viz.items.0	Equality law
+ai-bias.c8.viz.items.1	GDPR automated decisions
+ai-bias.c8.viz.items.2	AI Act high-risk duties
+ai-bias.c9.title	Diverse teams help
+ai-bias.c9.text	Teams with different backgrounds are more likely to spot blind spots early. Involve the people affected by a system when designing and testing it.
+ai-bias.c9.viz.steps.0	Diverse team
+ai-bias.c9.viz.steps.1	Asks different questions
+ai-bias.c9.viz.steps.2	Spots blind spots early
+ai-bias.c9.viz.steps.3	Fairer system
+ai-safety.title	AI safety
+ai-safety.summary	Keeping powerful systems reliable, honest and under control.
+ai-safety.q0.q	Hidden instructions in a document that hijack an AI agent are called…
+ai-safety.q0.o0	A jailbreak
+ai-safety.q0.o1	Prompt injection
+ai-safety.q0.o2	Overfitting
+ai-safety.q0.x	The attacker's text is injected through content the agent reads.
+ai-safety.q1.q	What is red teaming?
+ai-safety.q1.o0	Painting servers red
+ai-safety.q1.o1	Deliberately trying to make a model fail before release
+ai-safety.q1.o2	Training on red images
+ai-safety.q1.x	It's structured adversarial testing.
+ai-safety.q2.q	Which is good practice for an AI agent that can make payments?
+ai-safety.q2.o0	Let it pay freely
+ai-safety.q2.o1	Require human approval for payments
+ai-safety.q2.o2	Hide its logs
+ai-safety.q2.x	Irreversible actions need a human check.
+ai-safety.c0.title	What AI safety covers
+ai-safety.c0.text	Safety ranges from everyday reliability (does the system do what it should, without harmful mistakes?) to long-term questions about very capable systems pursuing goals we didn't intend.
+ai-safety.c0.viz.items.0	Long-term control of advanced AI
+ai-safety.c0.viz.items.1	Misuse prevention
+ai-safety.c0.viz.items.2	Honest, reliable behaviour
+ai-safety.c0.viz.items.3	Everyday robustness
+ai-safety.c1.title	Alignment
+ai-safety.c1.text	Alignment means getting a system to pursue what we actually want, not a literal or distorted version. As systems become more capable, small misunderstandings can have bigger consequences.
+ai-safety.c1.viz.l.t	What we said
+ai-safety.c1.viz.l.items.0	maximise clicks
+ai-safety.c1.viz.r.t	What we meant
+ai-safety.c1.viz.r.items.0	give people content they value
+ai-safety.c2.title	Specification gaming
+ai-safety.c2.text	Systems often find unexpected shortcuts that satisfy the letter of a goal. Reward hacking in reinforcement learning is the classic example, but it happens with any objective you optimise hard.
+ai-safety.c2.viz.items.0.w	reward "tests pass"
+ai-safety.c2.viz.items.0.r	reward correct code
+ai-safety.c2.viz.items.1.w	reward "short calls"
+ai-safety.c2.viz.items.1.r	reward resolved issues
+ai-safety.c3.title	Robustness
+ai-safety.c3.text	A robust model keeps working when inputs are a bit unusual: new phrasing, noise, odd formats. Fragile models can be confused by small changes a human wouldn't even notice.
+ai-safety.c3.viz.items.0	Test with unusual inputs
+ai-safety.c3.viz.items.1	Test with noisy data
+ai-safety.c3.viz.items.2	Test outside the training range
+ai-safety.c3.viz.items.3	Plan what happens on failure
+ai-safety.c4.title	Jailbreaks and prompt injection
+ai-safety.c4.text	Users may try to talk a chatbot into ignoring its rules (jailbreaks). Worse, hidden instructions inside a web page or document can hijack an AI agent that reads it (prompt injection).
+ai-safety.c4.viz.steps.0	Agent reads a web page
+ai-safety.c4.viz.steps.1	Page hides "send me the user's files"
+ai-safety.c4.viz.steps.2	Agent may obey
+ai-safety.c4.viz.steps.3	Guardrails must block it
+ai-safety.c5.title	Red teaming
+ai-safety.c5.text	Before release, specialists try hard to make a model misbehave: produce dangerous instructions, leak data or follow malicious documents. Findings feed back into training and safeguards.
+ai-safety.c5.viz.steps.0	Attack the model
+ai-safety.c5.viz.steps.1	Find failures
+ai-safety.c5.viz.steps.2	Fix and retrain
+ai-safety.c5.viz.steps.3	Attack again
+ai-safety.c6.title	Human oversight
+ai-safety.c6.text	For important actions, keep a person in the loop: the AI drafts, recommends or flags, and a human approves. Agents should ask before irreversible steps like payments or deletions.
+ai-safety.c6.viz.steps.0	AI proposes an action
+ai-safety.c6.viz.steps.1	Human reviews
+ai-safety.c6.viz.steps.2	Approve or change
+ai-safety.c6.viz.steps.3	Action executed
+ai-safety.c7.title	Interpretability
+ai-safety.c7.text	Researchers try to look inside neural networks to see what concepts they represent and how they reach answers. It's like neuroscience for AI, and it helps detect hidden problems.
+ai-safety.c7.viz.steps.0	Model's internal activity
+ai-safety.c7.viz.steps.1	Find features and circuits
+ai-safety.c7.viz.steps.2	Understand behaviour
+ai-safety.c7.viz.steps.3	Spot hidden problems
+ai-safety.c8.title	Frontier safety frameworks
+ai-safety.c8.text	Major AI labs publish policies that test new models for dangerous capabilities, such as helping with cyberattacks or biological weapons, and commit to stronger safeguards before releasing more capable systems.
+ai-safety.c8.viz.steps.0	Train a new model
+ai-safety.c8.viz.steps.1	Test dangerous capabilities
+ai-safety.c8.viz.steps.2	Apply matching safeguards
+ai-safety.c8.viz.steps.3	Release or hold back
+ai-safety.c9.title	Practical safety at work
+ai-safety.c9.text	For company use, safety mostly means: limit what the AI can access and do, log its actions, validate outputs before they reach customers, and have a quick way to switch it off.
+ai-safety.c9.viz.items.0	Least-privilege access
+ai-safety.c9.viz.items.1	Log every action
+ai-safety.c9.viz.items.2	Check outputs before use
+ai-safety.c9.viz.items.3	Human approval for big steps
+ai-safety.c9.viz.items.4	A clear off switch
+ai-law.title	AI and the law
+ai-law.summary	The EU AI Act, data protection and who is responsible.
+ai-law.q0.q	How does the EU AI Act regulate AI?
+ai-law.q0.o0	It bans all AI
+ai-law.q0.o1	By risk level: the higher the risk, the stricter the rules
+ai-law.q0.o2	Only by company size
+ai-law.q0.x	It has four broad risk tiers.
+ai-law.q1.q	An AI system used to rank job applicants is…
+ai-law.q1.o0	Minimal risk
+ai-law.q1.o1	High risk
+ai-law.q1.o2	Banned
+ai-law.q1.x	Employment uses are listed as high-risk.
+ai-law.q2.q	What must chatbots do under the AI Act's transparency rules?
+ai-law.q2.o0	Use a human voice
+ai-law.q2.o1	Make clear to people that they're interacting with AI
+ai-law.q2.o2	Answer in English
+ai-law.q2.x	Users must know they're talking to an AI.
+ai-law.c0.title	The EU AI Act
+ai-law.c0.text	The AI Act is the EU's law on artificial intelligence. It entered into force on 1 August 2024 and applies in stages. It regulates AI by risk: the higher the risk to people, the stricter the rules.
+ai-law.c0.viz.items.0	Unacceptable risk: banned
+ai-law.c0.viz.items.1	High risk: strict duties
+ai-law.c0.viz.items.2	Limited risk: transparency
+ai-law.c0.viz.items.3	Minimal risk: no new rules
+ai-law.c1.title	Banned practices
+ai-law.c1.text	Some uses are prohibited outright, including social scoring of people by public authorities, manipulative techniques that cause harm, emotion recognition at work and in schools (with narrow exceptions), and untargeted scraping of faces to build recognition databases.
+ai-law.c1.viz.items.0	Social scoring
+ai-law.c1.viz.items.1	Harmful manipulation
+ai-law.c1.viz.items.2	Emotion recognition at work or school
+ai-law.c1.viz.items.3	Untargeted face scraping
+ai-law.c1.viz.items.4	Most real-time public biometric ID by police
+ai-law.c2.title	High-risk systems
+ai-law.c2.text	AI used in areas such as hiring, credit scoring, education, essential services, critical infrastructure, law enforcement and medical devices is high-risk. Providers must manage risks, use good data, keep logs, document the system and enable human oversight.
+ai-law.c2.viz.items.0	Risk management
+ai-law.c2.viz.items.1	Data quality
+ai-law.c2.viz.items.2	Logging and documentation
+ai-law.c2.viz.items.3	Human oversight
+ai-law.c2.viz.items.4	Accuracy and cybersecurity
+ai-law.c3.title	Transparency duties
+ai-law.c3.text	People must be told when they're talking to a chatbot, and AI-generated or manipulated content such as deepfakes must be labelled as such.
+ai-law.c3.viz.items.0.a	Chatbot
+ai-law.c3.viz.items.0.b	must say it's AI
+ai-law.c3.viz.items.1.a	Deepfake
+ai-law.c3.viz.items.1.b	must be labelled
+ai-law.c3.viz.items.2.a	AI text on public issues
+ai-law.c3.viz.items.2.b	must be disclosed
+ai-law.c4.title	Timeline
+ai-law.c4.text	The Act phases in over several years: bans first, then rules for general-purpose AI models, then most high-risk obligations.
+ai-law.c4.viz.events.0.y	Aug 2024
+ai-law.c4.viz.events.0.l	in force
+ai-law.c4.viz.events.1.y	Feb 2025
+ai-law.c4.viz.events.1.l	bans apply
+ai-law.c4.viz.events.2.y	Aug 2025
+ai-law.c4.viz.events.2.l	general-purpose AI rules
+ai-law.c4.viz.events.3.y	Aug 2026
+ai-law.c4.viz.events.3.l	most other rules
+ai-law.c5.title	Big fines
+ai-law.c5.text	Penalties can reach €35 million or 7% of worldwide annual turnover, whichever is higher, for using banned practices. Other violations carry lower but still significant caps.
+ai-law.c5.viz.items.0.v	€35 M
+ai-law.c5.viz.items.0.l	maximum fine for banned practices
+ai-law.c5.viz.items.1.l	or this share of global turnover
+ai-law.c6.title	GDPR still applies
+ai-law.c6.text	Whenever AI processes personal data, GDPR applies: lawful basis, purpose limitation, data minimisation, security and people's rights to access and correct their data.
+ai-law.c6.viz.items.0	Lawful basis for processing
+ai-law.c6.viz.items.1	Use only for stated purposes
+ai-law.c6.viz.items.2	Collect the minimum
+ai-law.c6.viz.items.3	Keep it secure
+ai-law.c6.viz.items.4	Respect people's rights
+ai-law.c7.title	Automated decisions
+ai-law.c7.text	Under GDPR, people have rights regarding decisions based solely on automated processing that significantly affect them, such as a loan refusal: including human intervention and an explanation of the logic involved.
+ai-law.c7.viz.steps.0	Fully automated decision
+ai-law.c7.viz.steps.1	Significant effect on a person
+ai-law.c7.viz.steps.2	Right to human review
+ai-law.c7.viz.steps.3	Right to contest it
+ai-law.c8.title	Copyright questions
+ai-law.c8.text	Courts and lawmakers are still working out whether training on copyrighted material is allowed and who owns AI-generated works. The EU requires general-purpose model providers to respect opt-outs and publish a summary of training content.
+ai-law.c8.viz.items.0	Can models train on copyrighted works?
+ai-law.c8.viz.items.1	Who owns AI-generated output?
+ai-law.c8.viz.items.2	Respect opt-outs (EU)
+ai-law.c8.viz.items.3	Publish training-data summaries (EU)
+ai-law.c9.title	Who is responsible?
+ai-law.c9.text	The AI Act distinguishes providers (who build or place a system on the market) from deployers (who use it). Both have duties. Using a vendor's AI doesn't remove your responsibility for how you use it.
+ai-law.c9.viz.l.t	Provider
+ai-law.c9.viz.l.items.0	builds the system
+ai-law.c9.viz.l.items.1	documentation
+ai-law.c9.viz.l.items.2	conformity checks
+ai-law.c9.viz.r.t	Deployer
+ai-law.c9.viz.r.items.0	uses it
+ai-law.c9.viz.r.items.1	human oversight
+ai-law.c9.viz.r.items.2	informs affected people
+ai-explain.title	Explainable AI
+ai-explain.summary	Opening the black box: why a model decided what it did.
+ai-explain.q0.q	A tool that shows how much each feature pushed one prediction up or down is…
+ai-explain.q0.o0	A confusion matrix
+ai-explain.q0.o1	SHAP
+ai-explain.q0.o2	Dropout
+ai-explain.q0.x	SHAP attributes a single prediction to its features.
+ai-explain.q1.q	"Your loan would be approved if your debt were €3,000 lower" is a…
+ai-explain.q1.o0	Counterfactual explanation
+ai-explain.q1.o1	Saliency map
+ai-explain.q1.o2	Feature importance chart
+ai-explain.q1.x	It describes the smallest change that flips the outcome.
+ai-explain.q2.q	A husky classifier that relies on snow in the background shows…
+ai-explain.q2.o0	Good generalisation
+ai-explain.q2.o1	A hidden shortcut revealed by explanation tools
+ai-explain.q2.o2	Perfect fairness
+ai-explain.q2.x	Saliency maps exposed the wrong cue.
+ai-explain.c0.title	The black-box problem
+ai-explain.c0.text	Deep networks with millions of weights don't come with reasons. When a model refuses a loan or flags a part as faulty, people want to know why, and regulators often require it.
+ai-explain.c0.viz.steps.0	Input
+ai-explain.c0.viz.steps.1	Millions of weights
+ai-explain.c0.viz.steps.2	Decision
+ai-explain.c0.viz.steps.3	Why?
+ai-explain.c1.title	Glass-box models
+ai-explain.c1.text	Some models are explainable by design: linear models show each feature's weight, small decision trees show the exact path. When stakes are high, a slightly less accurate but transparent model can be the better choice.
+ai-explain.c1.viz.l.t	Glass box
+ai-explain.c1.viz.l.items.0	linear models, small trees
+ai-explain.c1.viz.l.items.1	easy to explain
+ai-explain.c1.viz.l.items.2	may be less accurate
+ai-explain.c1.viz.r.t	Black box
+ai-explain.c1.viz.r.items.0	deep nets, big ensembles
+ai-explain.c1.viz.r.items.1	very accurate
+ai-explain.c1.viz.r.items.2	needs extra tools
+ai-explain.c2.title	Feature importance
+ai-explain.c2.text	The simplest explanation: which inputs matter most overall? For a delivery-delay model, perhaps distance, weather and carrier matter most, while day of week barely does.
+ai-explain.c2.viz.unit	importance
+ai-explain.c2.viz.items.0.l	Distance
+ai-explain.c2.viz.items.1.l	Weather
+ai-explain.c2.viz.items.2.l	Carrier
+ai-explain.c2.viz.items.3.l	Weekday
+ai-explain.c3.title	SHAP values
+ai-explain.c3.text	SHAP explains a single prediction by sharing the result among the features, like splitting a bill fairly. It shows how much each feature pushed this particular prediction up or down from the average.
+ai-explain.c3.viz.items.0.a	Average house
+ai-explain.c3.viz.items.0.b	€250k
+ai-explain.c3.viz.items.1.a	Sea view
+ai-explain.c3.viz.items.1.b	+€60k
+ai-explain.c3.viz.items.2.a	Old kitchen
+ai-explain.c3.viz.items.2.b	−€25k
+ai-explain.c3.viz.items.3.a	Big garden
+ai-explain.c3.viz.items.3.b	+€30k
+ai-explain.c3.viz.items.4.a	This house
+ai-explain.c3.viz.items.4.b	€315k
+ai-explain.c4.title	Counterfactual explanations
+ai-explain.c4.text	A useful explanation for people: what would have to change for a different outcome? "Your loan would be approved if your income were €4,000 higher or your debt €3,000 lower."
+ai-explain.c4.viz.steps.0	Loan refused
+ai-explain.c4.viz.steps.1	Find the smallest change
+ai-explain.c4.viz.steps.2	"Debt €3,000 lower"
+ai-explain.c4.viz.steps.3	Approved
+ai-explain.c5.title	Saliency maps
+ai-explain.c5.text	For images, explanation tools highlight which pixels most influenced the decision. Sometimes they reveal problems: a model recognising huskies by the snow in the background, not the dog.
+ai-explain.c5.viz.items.0.w	"it's a husky because of the snow"
+ai-explain.c5.viz.items.0.r	retrain with huskies on grass, wolves in snow
+ai-explain.c6.title	Explaining language models
+ai-explain.c6.text	Asking a chatbot to "show its reasoning" gives a readable explanation, but that text isn't guaranteed to reflect what happened inside. Interpretability research tries to check the real internal mechanisms.
+ai-explain.c6.viz.l.t	Stated reasoning
+ai-explain.c6.viz.l.items.0	easy to read
+ai-explain.c6.viz.l.items.1	helpful
+ai-explain.c6.viz.l.items.2	may not be faithful
+ai-explain.c6.viz.r.t	Internal analysis
+ai-explain.c6.viz.r.items.0	harder to do
+ai-explain.c6.viz.r.items.1	closer to what really happened
+ai-explain.c7.title	Who needs the explanation?
+ai-explain.c7.text	A data scientist wants detailed diagnostics; a customer wants a short reason and what they can do; an auditor wants documentation. Design explanations for the audience.
+ai-explain.c7.viz.items.0.a	Data scientist
+ai-explain.c7.viz.items.0.b	feature effects, error analysis
+ai-explain.c7.viz.items.1.a	Customer
+ai-explain.c7.viz.items.1.b	main reason and next step
+ai-explain.c7.viz.items.2.a	Auditor
+ai-explain.c7.viz.items.2.b	documentation and logs
+ai-explain.c7.viz.items.3.a	Manager
+ai-explain.c7.viz.items.3.b	risks and limits
+ai-explain.c8.title	Explanations build trust
+ai-explain.c8.text	People trust and use AI recommendations more when they understand them, but they can also over-trust a confident explanation. Good explanations show uncertainty too.
+ai-explain.c8.viz.items.0	Show the main reasons
+ai-explain.c8.viz.items.1	Show how confident the model is
+ai-explain.c8.viz.items.2	Show what would change the outcome
+ai-explain.c8.viz.items.3	Be honest about limits
+ai-explain.c9.title	Required in some cases
+ai-explain.c9.text	GDPR gives people affected by solely automated significant decisions the right to meaningful information about the logic involved. The AI Act adds transparency duties for high-risk systems.
+ai-explain.c9.viz.steps.0	Automated significant decision
+ai-explain.c9.viz.steps.1	Person asks why
+ai-explain.c9.viz.steps.2	Meaningful explanation
+ai-explain.c9.viz.steps.3	Option for human review
+ai-edge.title	AI on devices
+ai-edge.summary	Running models on phones, cameras and microcontrollers.
+ai-edge.q0.q	Training a small model to imitate a large one is called…
+ai-edge.q0.o0	Pruning
+ai-edge.q0.o1	Distillation
+ai-edge.q0.o2	Federated learning
+ai-edge.q0.x	The student learns from the teacher's outputs.
+ai-edge.q1.q	Why does a home camera system run detection locally?
+ai-edge.q1.o0	It's required by law
+ai-edge.q1.o1	Speed, privacy and no cloud fees
+ai-edge.q1.o2	Cloud can't detect people
+ai-edge.q1.x	Local processing is fast, private and cheap.
+ai-edge.q2.q	In federated learning, what leaves the device?
+ai-edge.q2.o0	All raw data
+ai-edge.q2.o1	Only model updates
+ai-edge.q2.o2	Nothing at all
+ai-edge.q2.x	Raw data stays local; only updates are shared.
+ai-edge.c0.title	Edge AI
+ai-edge.c0.text	Edge AI means running models where the data is produced: on a phone, a camera, a car or a sensor, instead of sending everything to the cloud.
+ai-edge.c0.viz.l.t	Cloud AI
+ai-edge.c0.viz.l.items.0	big models
+ai-edge.c0.viz.l.items.1	needs a connection
+ai-edge.c0.viz.l.items.2	data travels
+ai-edge.c0.viz.r.t	Edge AI
+ai-edge.c0.viz.r.items.0	instant
+ai-edge.c0.viz.r.items.1	works offline
+ai-edge.c0.viz.r.items.2	data stays local
+ai-edge.c1.title	Why run locally?
+ai-edge.c1.text	Four reasons: speed (no network round trip), privacy (data never leaves), cost (no per-call fees) and reliability (works with no connection).
+ai-edge.c1.viz.items.0	Speed: no round trip
+ai-edge.c1.viz.items.1	Privacy: data stays put
+ai-edge.c1.viz.items.2	Cost: no cloud fees
+ai-edge.c1.viz.items.3	Reliability: works offline
+ai-edge.c2.title	Making models small
+ai-edge.c2.text	Edge models are shrunk with quantisation (fewer bits per weight), pruning (removing unimportant connections) and distillation (training a small student to copy a big teacher).
+ai-edge.c2.viz.items.0.a	Quantisation
+ai-edge.c2.viz.items.0.b	fewer bits per weight
+ai-edge.c2.viz.items.1.a	Pruning
+ai-edge.c2.viz.items.1.b	remove weak connections
+ai-edge.c2.viz.items.2.a	Distillation
+ai-edge.c2.viz.items.2.b	small student copies big teacher
+ai-edge.c3.title	Accelerators
+ai-edge.c3.text	Small chips like Google's Coral Edge TPU or the neural engines in phones run neural networks efficiently at a few watts. A Coral TPU can run an object detector at dozens of frames per second.
+ai-edge.c3.viz.items.0.v	4 TOPS
+ai-edge.c3.viz.items.0.l	Coral Edge TPU peak
+ai-edge.c3.viz.items.1.v	2 W
+ai-edge.c3.viz.items.1.l	about its power draw
+ai-edge.c4.title	A smart camera at home
+ai-edge.c4.text	A home NVR such as Frigate first uses cheap motion detection, then runs the object detector only on frames with movement, and only alerts for the objects you care about, such as people at night.
+ai-edge.c4.viz.steps.0	Video stream
+ai-edge.c4.viz.steps.1	Motion detected?
+ai-edge.c4.viz.steps.2	Object detector on that area
+ai-edge.c4.viz.steps.3	Person at night → alert
+ai-edge.c5.title	TinyML
+ai-edge.c5.text	Even microcontrollers costing a few euros can run tiny models: wake-word detection, gesture recognition, vibration anomaly detection, all on battery power.
+ai-edge.c5.viz.items.0	Wake words
+ai-edge.c5.viz.items.1	Gesture recognition
+ai-edge.c5.viz.items.2	Vibration anomalies
+ai-edge.c5.viz.items.3	Simple image classification
+ai-edge.c6.title	On-device language models
+ai-edge.c6.text	Phones and laptops now run small language models locally for summaries, smart replies and dictation. Larger requests can still be passed to the cloud.
+ai-edge.c6.viz.steps.0	Simple request
+ai-edge.c6.viz.steps.1	Small local model
+ai-edge.c6.viz.steps.2	Complex request
+ai-edge.c6.viz.steps.3	Large cloud model
+ai-edge.c7.title	Updating edge models
+ai-edge.c7.text	Devices in the field need new model versions as data drifts. Updates are sent over the air, often tested on a small group of devices first.
+ai-edge.c7.viz.steps.0	Retrain centrally
+ai-edge.c7.viz.steps.1	Test on a few devices
+ai-edge.c7.viz.steps.2	Roll out over the air
+ai-edge.c7.viz.steps.3	Monitor results
+ai-edge.c8.title	Federated learning
+ai-edge.c8.text	Instead of collecting everyone's data, devices train locally and send only weight updates to a central server, which combines them. Phone keyboards use this to improve suggestions without uploading what you type.
+ai-edge.c8.viz.steps.0	Central model sent to devices
+ai-edge.c8.viz.steps.1	Each device learns locally
+ai-edge.c8.viz.steps.2	Only updates sent back
+ai-edge.c8.viz.steps.3	Server combines them
+ai-edge.c9.title	Limits of the edge
+ai-edge.c9.text	Small devices have limited memory, battery and heat budget. Edge models are less capable than big cloud models, so many systems combine both.
+ai-edge.c9.viz.l.t	Edge limits
+ai-edge.c9.viz.l.items.0	small memory
+ai-edge.c9.viz.l.items.1	battery
+ai-edge.c9.viz.l.items.2	heat
+ai-edge.c9.viz.r.t	Hybrid answer
+ai-edge.c9.viz.r.items.0	quick local first pass
+ai-edge.c9.viz.r.items.1	cloud for hard cases
+ai-robots.title	Robots and self-driving cars
+ai-robots.summary	AI that moves through the physical world.
+ai-robots.q0.q	Which sensor measures precise 3D distance with lasers?
+ai-robots.q0.o0	Camera
+ai-robots.q0.o1	Radar
+ai-robots.q0.o2	Lidar
+ai-robots.q0.x	Lidar uses laser pulses to measure distance.
+ai-robots.q1.q	Most cars sold today with driver assistance are at SAE level…
+ai-robots.q1.o0	0
+ai-robots.q1.o1	2
+ai-robots.q1.o2	5
+ai-robots.q1.x	Level 2 steers and brakes but needs constant supervision.
+ai-robots.q2.q	What does SLAM do?
+ai-robots.q2.o0	Slams the brakes
+ai-robots.q2.o1	Builds a map while tracking the robot's position in it
+ai-robots.q2.o2	Charges the battery
+ai-robots.q2.x	Simultaneous localisation and mapping.
+ai-robots.c0.title	Sense, think, act
+ai-robots.c0.text	Every robot runs the same loop: sensors measure the world, software decides what to do, and motors carry it out. Then it senses again to see what changed.
+ai-robots.c0.viz.steps.0	Sense: cameras, lidar
+ai-robots.c0.viz.steps.1	Think: plan the next move
+ai-robots.c0.viz.steps.2	Act: motors and wheels
+ai-robots.c0.viz.steps.3	Check the result
+ai-robots.c1.title	Sensors
+ai-robots.c1.text	Robots and cars combine sensors because each has weaknesses: cameras see colour but struggle in the dark, radar sees through rain but with less detail, lidar measures precise distance with lasers.
+ai-robots.c1.viz.items.0.a	Camera
+ai-robots.c1.viz.items.0.b	colour, signs, lanes
+ai-robots.c1.viz.items.1.a	Radar
+ai-robots.c1.viz.items.1.b	speed, works in rain
+ai-robots.c1.viz.items.2.a	Lidar
+ai-robots.c1.viz.items.2.b	precise 3D distance
+ai-robots.c1.viz.items.3.a	Ultrasonic
+ai-robots.c1.viz.items.3.b	close-range parking
+ai-robots.c2.title	Localisation and mapping
+ai-robots.c2.text	To move, a robot must know where it is. SLAM (simultaneous localisation and mapping) builds a map of an unknown space while tracking the robot's position within it. Robot vacuums do this.
+ai-robots.c2.viz.steps.0	Move a little
+ai-robots.c2.viz.steps.1	Sense surroundings
+ai-robots.c2.viz.steps.2	Update the map
+ai-robots.c2.viz.steps.3	Estimate position
+ai-robots.c3.title	Levels of driving automation
+ai-robots.c3.text	The SAE defines six levels, from 0 (no automation) to 5 (drives anywhere without a human). Most cars sold today offer level 2: the car steers and brakes, but the driver must supervise constantly.
+ai-robots.c3.viz.items.0	Level 5: anywhere, no driver
+ai-robots.c3.viz.items.1	Level 4: no driver in set areas
+ai-robots.c3.viz.items.2	Level 3: car drives, human on standby
+ai-robots.c3.viz.items.3	Level 2: driver supervises
+ai-robots.c3.viz.items.4	Level 0–1: driver in control
+ai-robots.c4.title	Robotaxis
+ai-robots.c4.text	Driverless taxi services operate in several US and Chinese cities, such as Waymo in Phoenix and San Francisco. They are level 4: no driver, but only within carefully mapped areas.
+ai-robots.c4.viz.items.0.v	Level 4
+ai-robots.c4.viz.items.0.l	robotaxi operation
+ai-robots.c4.viz.items.1.l	safety drivers in the vehicle
+ai-robots.c5.title	The long tail
+ai-robots.c5.text	Driving is mostly routine, but rare situations are endless: a mattress on the motorway, a police officer waving you through a red light. Handling the long tail of rare events is the hardest part of autonomy.
+ai-robots.c5.viz.unit	share of situations (illustrative)
+ai-robots.c5.viz.items.0.l	Routine driving
+ai-robots.c5.viz.items.1.l	Unusual
+ai-robots.c5.viz.items.2.l	Very rare
+ai-robots.c6.title	Industrial robots
+ai-robots.c6.text	Factories have used robot arms for decades for welding, painting and assembly. AI adds vision so they can pick unsorted parts, inspect quality and work more safely near people.
+ai-robots.c6.viz.items.0	Welding and painting
+ai-robots.c6.viz.items.1	Pick and place with vision
+ai-robots.c6.viz.items.2	Quality inspection
+ai-robots.c6.viz.items.3	Collaborative robots near people
+ai-robots.c7.title	Learning robot skills
+ai-robots.c7.text	New approaches train robots with demonstrations, simulation and large models that connect language and vision to actions: "put the red cup in the sink".
+ai-robots.c7.viz.steps.0	Human demonstrations
+ai-robots.c7.viz.steps.1	Simulation practice
+ai-robots.c7.viz.steps.2	Vision-language-action model
+ai-robots.c7.viz.steps.3	Robot follows instructions
+ai-robots.c8.title	Safety first
+ai-robots.c8.text	Physical robots can injure people, so they need speed limits near humans, emergency stops, fenced zones or force sensors, and certification under machinery safety rules.
+ai-robots.c8.viz.items.0	Emergency stop
+ai-robots.c8.viz.items.1	Speed limits near people
+ai-robots.c8.viz.items.2	Force and collision sensors
+ai-robots.c8.viz.items.3	Safety certification
+ai-robots.c9.title	Drones and agriculture
+ai-robots.c9.text	Drones map fields, count plants and spot disease, while autonomous tractors follow GPS paths with centimetre accuracy. Precision farming uses less fertiliser and water by treating only where needed.
+ai-robots.c9.viz.steps.0	Drone maps the field
+ai-robots.c9.viz.steps.1	AI spots problem areas
+ai-robots.c9.viz.steps.2	Treat only those spots
+ai-robots.c9.viz.steps.3	Less input, same yield
+ai-future.title	Where AI is heading
+ai-future.summary	Agents, AGI debates and what to watch.
+ai-future.q0.q	What distinguishes an AI agent from a basic chatbot?
+ai-future.q0.o0	It has a name
+ai-future.q0.o1	It plans and takes actions with tools to reach a goal
+ai-future.q0.o2	It only answers yes or no
+ai-future.q0.x	Agents act in loops using tools.
+ai-future.q1.q	What did AlphaFold do?
+ai-future.q1.o0	Won at Go
+ai-future.q1.o1	Predicted the 3D structures of proteins
+ai-future.q1.o2	Drove a car
+ai-future.q1.x	It predicted over 200 million protein structures.
+ai-future.q2.q	Is there an agreed date for AGI?
+ai-future.q2.o0	Yes, 2030
+ai-future.q2.o1	No, experts disagree widely
+ai-future.q2.o2	Yes, it already exists by law
+ai-future.q2.x	There's no consensus definition or timeline.
+ai-future.c0.title	From chatbots to agents
+ai-future.c0.text	Agents don't just answer; they plan and act: search the web, use software, write and run code, then check the result. They work in loops toward a goal.
+ai-future.c0.viz.steps.0	Understand the goal
+ai-future.c0.viz.steps.1	Plan steps
+ai-future.c0.viz.steps.2	Use tools
+ai-future.c0.viz.steps.3	Check results
+ai-future.c1.title	Multimodal models
+ai-future.c1.text	Newer models handle text, images, audio and video in one system. You can show a photo of a broken part, ask a question by voice and get a diagram back.
+ai-future.c1.viz.steps.0	Text, images, audio, video
+ai-future.c1.viz.steps.1	One multimodal model
+ai-future.c1.viz.steps.2	Answers in any format
+ai-future.c2.title	What is AGI?
+ai-future.c2.text	Artificial general intelligence usually means AI that can do most cognitive tasks as well as a capable human. There's no agreed definition or test, and experts disagree widely on when, or whether, it will arrive.
+ai-future.c2.viz.l.t	Narrow AI
+ai-future.c2.viz.l.items.0	one task
+ai-future.c2.viz.l.items.1	superhuman in that task
+ai-future.c2.viz.r.t	General AI
+ai-future.c2.viz.r.items.0	most cognitive tasks
+ai-future.c2.viz.r.items.1	flexible like a person
+ai-future.c3.title	Scaling vs new ideas
+ai-future.c3.text	Some researchers expect more data and compute to keep delivering; others think new ideas are needed for reliable reasoning, memory and learning from few examples. Most expect some of both.
+ai-future.c3.viz.l.t	Scaling view
+ai-future.c3.viz.l.items.0	bigger models keep improving
+ai-future.c3.viz.l.items.1	compute is key
+ai-future.c3.viz.r.t	New-ideas view
+ai-future.c3.viz.r.items.0	need better reasoning
+ai-future.c3.viz.r.items.1	need memory and efficiency
+ai-future.c4.title	AI for science
+ai-future.c4.text	AI is already accelerating research. DeepMind's AlphaFold predicted the 3D shapes of over 200 million proteins, and its creators shared the 2024 Nobel Prize in Chemistry.
+ai-future.c4.viz.items.0.v	200 M+
+ai-future.c4.viz.items.0.l	protein structures predicted
+ai-future.c4.viz.items.1.l	Nobel Prize in Chemistry
+ai-future.c5.title	Jobs and work
+ai-future.c5.text	AI changes tasks before it replaces jobs. Routine writing, summarising and coding tasks shift fastest; roles change to focus on judgement, relationships and supervising AI output.
+ai-future.c5.viz.l.t	Tasks shrinking
+ai-future.c5.viz.l.items.0	first drafts
+ai-future.c5.viz.l.items.1	routine summaries
+ai-future.c5.viz.l.items.2	boilerplate code
+ai-future.c5.viz.r.t	Tasks growing
+ai-future.c5.viz.r.items.0	judgement
+ai-future.c5.viz.r.items.1	checking AI output
+ai-future.c5.viz.r.items.2	working with people
+ai-future.c6.title	Open vs closed models
+ai-future.c6.text	Some models are released openly so anyone can run and modify them; others are available only through an API. Open models help research and privacy; closed models make misuse easier to control.
+ai-future.c6.viz.l.t	Open weights
+ai-future.c6.viz.l.items.0	run anywhere
+ai-future.c6.viz.l.items.1	customise
+ai-future.c6.viz.l.items.2	harder to control misuse
+ai-future.c6.viz.r.t	Closed
+ai-future.c6.viz.r.items.0	access via API
+ai-future.c6.viz.r.items.1	provider controls updates
+ai-future.c6.viz.r.items.2	easier to monitor
+ai-future.c7.title	Energy and compute limits
+ai-future.c7.text	Each new generation needs more chips, electricity and cooling. Power supply, chip production and cost may limit how fast AI can scale.
+ai-future.c7.viz.items.0	Chip supply
+ai-future.c7.viz.items.1	Power grid capacity
+ai-future.c7.viz.items.2	Cooling and water
+ai-future.c7.viz.items.3	Cost per query
+ai-future.c8.title	Staying informed
+ai-future.c8.text	The field moves monthly. Useful habits: try the tools yourself, follow a few reliable sources, and judge claims by demonstrations and evidence rather than hype.
+ai-future.c8.viz.items.0	Try new tools hands-on
+ai-future.c8.viz.items.1	Follow a few reliable sources
+ai-future.c8.viz.items.2	Ask for evidence, not demos only
+ai-future.c8.viz.items.3	Revisit your assumptions often
+ai-future.c9.title	What stays human
+ai-future.c9.text	Deciding what problems matter, judging trade-offs, taking responsibility and building trust between people stay human work, now with powerful assistants.
+ai-future.c9.viz.items.0	Choosing what matters
+ai-future.c9.viz.items.1	Judging trade-offs
+ai-future.c9.viz.items.2	Taking responsibility
+ai-future.c9.viz.items.3	Building trust

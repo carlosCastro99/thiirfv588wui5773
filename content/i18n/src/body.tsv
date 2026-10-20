@@ -1,0 +1,1589 @@
+P.title	Human Body
+P.blurb	How your heart, brain, gut, immune system and senses work.
+bo-heart.title	Heart and blood
+bo-heart.summary	The pump that never stops.
+bo-heart.q0.q	Where does the right side of the heart pump blood?
+bo-heart.q0.o0	To the brain
+bo-heart.q0.o1	To the lungs
+bo-heart.q0.o2	To the legs
+bo-heart.q0.x	To pick up oxygen.
+bo-heart.q1.q	What makes blood red?
+bo-heart.q1.o0	Plasma
+bo-heart.q1.o1	Haemoglobin, which contains iron
+bo-heart.q1.o2	Platelets
+bo-heart.q1.x	Iron-rich haemoglobin carries oxygen.
+bo-heart.q2.q	Which vessels have valves to stop backflow?
+bo-heart.q2.o0	Arteries
+bo-heart.q2.o1	Veins
+bo-heart.q2.o2	Capillaries
+bo-heart.q2.x	Blood in veins is under low pressure.
+bo-heart.c0.title	A double pump
+bo-heart.c0.text	The heart is two pumps side by side. The right side sends blood to the lungs to pick up oxygen; the left side pumps it around the whole body.
+bo-heart.c0.viz.l.t	Right side
+bo-heart.c0.viz.l.items.0	receives used blood
+bo-heart.c0.viz.l.items.1	pumps to the lungs
+bo-heart.c0.viz.r.t	Left side
+bo-heart.c0.viz.r.items.0	receives oxygen-rich blood
+bo-heart.c0.viz.r.items.1	pumps to the body
+bo-heart.c1.title	The circuit
+bo-heart.c1.text	Blood makes a figure of eight: body → right heart → lungs → left heart → body. One full lap takes under a minute at rest.
+bo-heart.c1.viz.steps.0	Body
+bo-heart.c1.viz.steps.1	Right heart
+bo-heart.c1.viz.steps.2	Lungs
+bo-heart.c1.viz.steps.3	Left heart
+bo-heart.c2.title	A lifetime of beats
+bo-heart.c2.text	At around 70 beats per minute, the heart beats about 100,000 times a day and some 2.5–3 billion times in a lifetime.
+bo-heart.c2.viz.items.0.l	beats a minute at rest
+bo-heart.c2.viz.items.1.l	beats a day
+bo-heart.c2.viz.items.2.v	~5 L
+bo-heart.c2.viz.items.2.l	blood pumped a minute
+bo-heart.c3.title	Arteries, veins, capillaries
+bo-heart.c3.text	Arteries carry blood away from the heart under high pressure. Veins bring it back, with valves to stop it flowing backwards. Tiny capillaries in between swap oxygen and waste with cells.
+bo-heart.c3.viz.steps.0	Heart
+bo-heart.c3.viz.steps.1	Arteries
+bo-heart.c3.viz.steps.2	Capillaries
+bo-heart.c3.viz.steps.3	Veins
+bo-heart.c3.viz.steps.4	Heart
+bo-heart.c4.title	What's in blood
+bo-heart.c4.text	Blood is a little over half plasma (water, salts, proteins) and the rest mostly red blood cells, with white cells and platelets.
+bo-heart.c4.viz.unit	% of blood volume
+bo-heart.c4.viz.items.0.l	Plasma
+bo-heart.c4.viz.items.1.l	Red cells
+bo-heart.c4.viz.items.2.l	White cells and platelets
+bo-heart.c5.title	Red blood cells
+bo-heart.c5.text	Red cells carry oxygen using haemoglobin, an iron-rich protein that makes blood red. They have no nucleus, live about 120 days, and you make about 2 million every second.
+bo-heart.c5.viz.items.0.v	120 days
+bo-heart.c5.viz.items.0.l	life of a red cell
+bo-heart.c5.viz.items.1.v	2 million
+bo-heart.c5.viz.items.1.l	made per second
+bo-heart.c5.viz.items.2.v	25 trillion
+bo-heart.c5.viz.items.2.l	in your body
+bo-heart.c6.title	Blood pressure
+bo-heart.c6.text	Blood pressure has two numbers: systolic (as the heart squeezes) and diastolic (as it relaxes). A typical healthy reading is around 120/80 mmHg.
+bo-heart.c6.viz.items.0.a	Top number
+bo-heart.c6.viz.items.0.b	systolic, heart squeezing
+bo-heart.c6.viz.items.1.a	Bottom number
+bo-heart.c6.viz.items.1.b	diastolic, heart resting
+bo-heart.c6.viz.items.2.b	typical healthy
+bo-heart.c7.title	Blood types
+bo-heart.c7.text	Your blood type, A, B, AB or O, depends on markers on red cells; Rh positive or negative adds another. O negative can be given to almost anyone in an emergency.
+bo-heart.c7.viz.root	Blood types
+bo-heart.c7.viz.items.0	A
+bo-heart.c7.viz.items.1	B
+bo-heart.c7.viz.items.2	AB
+bo-heart.c7.viz.items.3	O
+bo-heart.c8.title	The heartbeat's spark
+bo-heart.c8.text	Each beat starts in the sinoatrial node, the heart's natural pacemaker, which sends an electrical pulse across the heart. An ECG records that electricity.
+bo-heart.c8.viz.steps.0	SA node fires
+bo-heart.c8.viz.steps.1	Atria contract
+bo-heart.c8.viz.steps.2	Signal delayed briefly
+bo-heart.c8.viz.steps.3	Ventricles contract
+bo-heart.c9.title	Take your pulse
+bo-heart.c9.text	Press two fingers on the inside of your wrist below the thumb. Count beats for 15 seconds and multiply by 4. Resting rates of 60–100 are typical for adults.
+bo-heart.c9.example.0	Count in 15 s: 18 beats
+bo-heart.c9.example.1	18 × 4 = 72
+bo-heart.c9.example.2	72 beats per minute
+bo-heart.c9.viz.f	bpm = beats in 15 s × 4
+bo-heart.c9.viz.items.0.s	bpm
+bo-heart.c9.viz.items.0.m	beats per minute
+bo-brain.title	The brain and nerves
+bo-brain.summary	86 billion neurons and how they talk.
+bo-brain.q0.q	How many neurons does the human brain have, roughly?
+bo-brain.q0.o0	86 million
+bo-brain.q0.o1	86 billion
+bo-brain.q0.o2	86 trillion
+bo-brain.q0.x	About 86 billion.
+bo-brain.q1.q	What part of the brain coordinates balance?
+bo-brain.q1.o0	Frontal lobe
+bo-brain.q1.o1	Cerebellum
+bo-brain.q1.o2	Brainstem
+bo-brain.q1.x	The "little brain" at the back.
+bo-brain.q2.q	Do we use only 10% of our brain?
+bo-brain.q2.o0	Yes
+bo-brain.q2.o1	No, we use virtually all of it
+bo-brain.q2.o2	Only when asleep
+bo-brain.q2.x	It's a myth.
+bo-brain.c0.title	Neurons
+bo-brain.c0.text	The brain has about 86 billion nerve cells. Each neuron receives signals through branches called dendrites and sends them along a long axon to other neurons.
+bo-brain.c0.viz.steps.0	Dendrites receive
+bo-brain.c0.viz.steps.1	Cell body adds up
+bo-brain.c0.viz.steps.2	Axon sends
+bo-brain.c0.viz.steps.3	Next neuron
+bo-brain.c1.title	Electric and chemical
+bo-brain.c1.text	Inside a neuron, signals travel as electrical pulses, up to about 120 m/s. Between neurons, at the synapse, they cross as chemicals called neurotransmitters.
+bo-brain.c1.viz.l.t	Inside a neuron
+bo-brain.c1.viz.l.items.0	electrical pulse
+bo-brain.c1.viz.l.items.1	fast
+bo-brain.c1.viz.r.t	Between neurons
+bo-brain.c1.viz.r.items.0	chemical messengers
+bo-brain.c1.viz.r.items.1	synapse
+bo-brain.c2.title	Brain regions
+bo-brain.c2.text	The cerebrum handles thinking, senses and movement; the cerebellum coordinates balance; the brainstem runs breathing and heartbeat automatically.
+bo-brain.c2.viz.root	Brain
+bo-brain.c2.viz.items.0	Cerebrum: thinking
+bo-brain.c2.viz.items.1	Cerebellum: balance
+bo-brain.c2.viz.items.2	Brainstem: automatic functions
+bo-brain.c3.title	Four lobes
+bo-brain.c3.text	The cerebrum's cortex has four lobes on each side, each with main jobs, though most tasks use many areas working together.
+bo-brain.c3.viz.items.0.a	Frontal
+bo-brain.c3.viz.items.0.b	planning, decisions
+bo-brain.c3.viz.items.1.a	Parietal
+bo-brain.c3.viz.items.1.b	touch, space
+bo-brain.c3.viz.items.2.a	Temporal
+bo-brain.c3.viz.items.2.b	hearing, memory
+bo-brain.c3.viz.items.3.a	Occipital
+bo-brain.c3.viz.items.3.b	vision
+bo-brain.c4.title	Left and right
+bo-brain.c4.text	Each half of the brain controls the opposite side of the body. The idea of "left-brained logical" and "right-brained creative" people is a myth; both halves work together.
+bo-brain.c4.viz.items.0.w	Left-brained vs right-brained people
+bo-brain.c4.viz.items.0.r	Both halves work together in everyone
+bo-brain.c5.title	The 10% myth
+bo-brain.c5.text	We don't use only 10% of our brain. Scans show activity all over the brain across a day, and damage to almost any area causes problems.
+bo-brain.c5.viz.items.0.w	We only use 10% of our brain
+bo-brain.c5.viz.items.0.r	We use virtually all of it
+bo-brain.c6.title	Energy hungry
+bo-brain.c6.text	The brain is about 2% of body weight but uses roughly 20% of the body's energy, mostly to keep neurons ready to fire.
+bo-brain.c6.viz.items.0.l	Body weight
+bo-brain.c6.viz.items.1.l	Energy used
+bo-brain.c7.title	Reflexes
+bo-brain.c7.text	Touch a hot pan and your hand pulls back before you feel pain. Reflexes travel through the spinal cord without waiting for the brain, saving precious milliseconds.
+bo-brain.c7.viz.steps.0	Heat sensor
+bo-brain.c7.viz.steps.1	Spinal cord
+bo-brain.c7.viz.steps.2	Muscle pulls away
+bo-brain.c7.viz.steps.3	Brain feels pain after
+bo-brain.c8.title	Neuroplasticity
+bo-brain.c8.text	The brain rewires itself throughout life. Learning a skill strengthens connections between neurons that fire together; unused ones weaken.
+bo-brain.c8.viz.steps.0	Practise
+bo-brain.c8.viz.steps.1	Connections strengthen
+bo-brain.c8.viz.steps.2	Skill gets easier
+bo-brain.c8.viz.steps.3	Practise more
+bo-brain.c9.title	Learning to juggle
+bo-brain.c9.text	Studies found that adults who learnt to juggle for three months showed growth in brain areas that track moving objects, which shrank back when they stopped.
+bo-brain.c9.viz.events.0.y	Month 0
+bo-brain.c9.viz.events.0.l	start
+bo-brain.c9.viz.events.1.y	Month 3
+bo-brain.c9.viz.events.1.l	grey matter grows
+bo-brain.c9.viz.events.2.y	Month 6, stopped
+bo-brain.c9.viz.events.2.l	partly shrinks back
+bo-digest.title	Food and digestion
+bo-digest.summary	From your plate to your cells.
+bo-digest.q0.q	Where are most nutrients absorbed?
+bo-digest.q0.o0	Stomach
+bo-digest.q0.o1	Small intestine
+bo-digest.q0.o2	Large intestine
+bo-digest.q0.x	Its villi give a huge surface.
+bo-digest.q1.q	Which nutrient has the most energy per gram?
+bo-digest.q1.o0	Protein
+bo-digest.q1.o1	Carbohydrate
+bo-digest.q1.o2	Fat
+bo-digest.q1.x	About 9 kcal per gram.
+bo-digest.c0.title	The journey
+bo-digest.c0.text	Food travels through about 9 metres of digestive tract, from mouth to exit, over roughly one to three days.
+bo-digest.c0.viz.steps.0	Mouth
+bo-digest.c0.viz.steps.1	Oesophagus
+bo-digest.c0.viz.steps.2	Stomach
+bo-digest.c0.viz.steps.3	Small intestine
+bo-digest.c0.viz.steps.4	Large intestine
+bo-digest.c1.title	Mouth and teeth
+bo-digest.c1.text	Teeth grind food and saliva starts digesting starch. Chewing well means less work for the stomach.
+bo-digest.c1.viz.items.0.a	Incisors
+bo-digest.c1.viz.items.0.b	cut
+bo-digest.c1.viz.items.1.a	Canines
+bo-digest.c1.viz.items.1.b	tear
+bo-digest.c1.viz.items.2.a	Molars
+bo-digest.c1.viz.items.2.b	grind
+bo-digest.c1.viz.items.3.a	Saliva
+bo-digest.c1.viz.items.3.b	starts starch digestion
+bo-digest.c2.title	The stomach
+bo-digest.c2.text	The stomach churns food with strong acid (pH around 1.5–3.5) and enzymes that break down protein. Mucus protects its own lining from being digested.
+bo-digest.c2.viz.unit	pH
+bo-digest.c2.viz.items.0.l	Stomach acid*
+bo-digest.c2.viz.items.1.l	Lemon juice
+bo-digest.c2.viz.items.2.l	Water
+bo-digest.c2.viz.items.3.l	Bleach
+bo-digest.c3.title	Small intestine
+bo-digest.c3.text	Most nutrients are absorbed in the small intestine. Its lining is covered with tiny finger-like villi, giving a huge surface area.
+bo-digest.c3.viz.items.0.v	~6 m
+bo-digest.c3.viz.items.0.l	length
+bo-digest.c3.viz.items.1.v	~30 m²
+bo-digest.c3.viz.items.1.l	surface area
+bo-digest.c3.viz.items.2.v	Most nutrients
+bo-digest.c3.viz.items.2.l	absorbed here
+bo-digest.c4.title	Large intestine
+bo-digest.c4.text	The large intestine absorbs water and salt and is home to trillions of gut bacteria that help digest fibre and make some vitamins.
+bo-digest.c4.viz.items.0	Absorbs water
+bo-digest.c4.viz.items.1	Houses gut bacteria
+bo-digest.c4.viz.items.2	Digests fibre
+bo-digest.c4.viz.items.3	Makes vitamin K
+bo-digest.c5.title	The microbiome
+bo-digest.c5.text	Your gut holds about as many bacterial cells as you have human cells. A varied diet with fibre feeds a varied microbiome.
+bo-digest.c5.viz.l.t	Feeds it
+bo-digest.c5.viz.l.items.0	fibre
+bo-digest.c5.viz.l.items.1	vegetables
+bo-digest.c5.viz.l.items.2	legumes
+bo-digest.c5.viz.l.items.3	fermented foods
+bo-digest.c5.viz.r.t	Starves it
+bo-digest.c5.viz.r.items.0	very low fibre
+bo-digest.c5.viz.r.items.1	little variety
+bo-digest.c6.title	Three macronutrients
+bo-digest.c6.text	Food gives energy from carbohydrates, fats and proteins. Fat has more than twice the energy per gram.
+bo-digest.c6.viz.unit	kcal per gram
+bo-digest.c6.viz.items.0.l	Carbohydrate
+bo-digest.c6.viz.items.1.l	Protein
+bo-digest.c6.viz.items.2.l	Fat
+bo-digest.c7.title	The liver
+bo-digest.c7.text	The liver is the body's chemical factory: it processes nutrients, stores energy as glycogen, makes bile to digest fat and breaks down toxins and alcohol.
+bo-digest.c7.viz.items.0	Stores energy
+bo-digest.c7.viz.items.1	Makes bile
+bo-digest.c7.viz.items.2	Breaks down toxins
+bo-digest.c7.viz.items.3	Makes proteins for blood
+bo-digest.c8.title	Feeling full
+bo-digest.c8.text	After eating, stretch sensors and hormones signal fullness, but it takes about 20 minutes to register. Eating slowly helps you notice it in time.
+bo-digest.c8.viz.steps.0	Eat
+bo-digest.c8.viz.steps.1	Stomach stretches
+bo-digest.c8.viz.steps.2	Hormones released
+bo-digest.c8.viz.steps.3	Brain feels full after ~20 min
+bo-digest.c9.title	Water
+bo-digest.c9.text	Adults need roughly 1.5–2 litres of fluids a day from drinks, more in heat or exercise. About 20% of our water comes from food.
+bo-digest.c9.viz.unit	share of water intake, %
+bo-digest.c9.viz.items.0.l	Drinks
+bo-digest.c9.viz.items.1.l	Food
+bo-immune.title	Immune system
+bo-immune.summary	How your body fights invaders.
+bo-immune.q0.q	What do vaccines train?
+bo-immune.q0.o0	Muscles
+bo-immune.q0.o1	The immune system's memory
+bo-immune.q0.o2	The stomach
+bo-immune.q0.x	Without causing the disease.
+bo-immune.q1.q	Do antibiotics work against viruses like the flu?
+bo-immune.q1.o0	Yes
+bo-immune.q1.o1	No
+bo-immune.q1.o2	Only strong ones
+bo-immune.q1.x	They only kill bacteria.
+bo-immune.c0.title	Lines of defence
+bo-immune.c0.text	The body defends in layers: barriers keep germs out, the innate system attacks anything foreign quickly, and the adaptive system learns specific enemies.
+bo-immune.c0.viz.items.0	Adaptive: antibodies and memory
+bo-immune.c0.viz.items.1	Innate: fast general attack
+bo-immune.c0.viz.items.2	Barriers: skin, mucus, acid
+bo-immune.c1.title	Barriers
+bo-immune.c1.text	Skin, mucus, tears, stomach acid and coughing all stop most germs before they get inside.
+bo-immune.c1.viz.items.0	Skin
+bo-immune.c1.viz.items.1	Mucus and nose hairs
+bo-immune.c1.viz.items.2	Tears and saliva
+bo-immune.c1.viz.items.3	Stomach acid
+bo-immune.c2.title	Inflammation
+bo-immune.c2.text	When germs get in, the area becomes red, warm, swollen and sore. Blood vessels widen to bring in defending cells: it's a sign the immune system is working.
+bo-immune.c2.viz.steps.0	Germs enter
+bo-immune.c2.viz.steps.1	Alarm chemicals
+bo-immune.c2.viz.steps.2	More blood flow
+bo-immune.c2.viz.steps.3	Defenders arrive
+bo-immune.c3.title	White blood cells
+bo-immune.c3.text	Several kinds of white blood cells share the work: some swallow invaders, some make antibodies, and some destroy infected cells.
+bo-immune.c3.viz.items.0.a	Phagocytes
+bo-immune.c3.viz.items.0.b	swallow germs
+bo-immune.c3.viz.items.1.a	B cells
+bo-immune.c3.viz.items.1.b	make antibodies
+bo-immune.c3.viz.items.2.a	T cells
+bo-immune.c3.viz.items.2.b	kill infected cells
+bo-immune.c3.viz.items.3.a	Memory cells
+bo-immune.c3.viz.items.3.b	remember
+bo-immune.c4.title	Antibodies
+bo-immune.c4.text	Antibodies are Y-shaped proteins that lock onto one specific invader, like a key in a lock, marking it for destruction.
+bo-immune.c4.viz.steps.0	Germ enters
+bo-immune.c4.viz.steps.1	B cells make matching antibodies
+bo-immune.c4.viz.steps.2	Antibodies tag germ
+bo-immune.c4.viz.steps.3	Germ destroyed
+bo-immune.c5.title	Immune memory
+bo-immune.c5.text	After an infection, memory cells stay for years. If the same germ returns, the body responds faster and stronger, often before you feel ill.
+bo-immune.c5.viz.l.t	First infection
+bo-immune.c5.viz.l.items.0	slow
+bo-immune.c5.viz.l.items.1	you feel ill
+bo-immune.c5.viz.r.t	Second time
+bo-immune.c5.viz.r.items.0	fast
+bo-immune.c5.viz.r.items.1	often no symptoms
+bo-immune.c6.title	Vaccines
+bo-immune.c6.text	A vaccine shows the immune system a harmless piece or version of a germ, so it builds memory without having the disease. Edward Jenner made the first vaccine, against smallpox, in 1796.
+bo-immune.c6.viz.steps.0	Harmless part of germ
+bo-immune.c6.viz.steps.1	Immune system learns
+bo-immune.c6.viz.steps.2	Memory cells made
+bo-immune.c6.viz.steps.3	Protected
+bo-immune.c7.title	Herd immunity
+bo-immune.c7.text	When enough people are immune, a germ can't spread easily, protecting those who can't be vaccinated, like newborns. Smallpox was eradicated worldwide in 1980.
+bo-immune.c7.viz.events.0.l	Jenner's smallpox vaccine
+bo-immune.c7.viz.events.1.l	Pasteur's rabies vaccine
+bo-immune.c7.viz.events.2.l	polio vaccine
+bo-immune.c7.viz.events.3.l	smallpox eradicated
+bo-immune.c8.title	Bacteria vs viruses
+bo-immune.c8.text	Bacteria are living cells that antibiotics can kill. Viruses are much smaller and hijack our cells to copy themselves; antibiotics don't work on them.
+bo-immune.c8.viz.l.t	Bacteria
+bo-immune.c8.viz.l.items.0	living cells
+bo-immune.c8.viz.l.items.1	antibiotics work
+bo-immune.c8.viz.l.items.2	e.g. strep throat
+bo-immune.c8.viz.r.t	Viruses
+bo-immune.c8.viz.r.items.0	need our cells
+bo-immune.c8.viz.r.items.1	antibiotics don't work
+bo-immune.c8.viz.r.items.2	e.g. flu, colds
+bo-immune.c9.title	Fever
+bo-immune.c9.text	A fever is the body turning up its thermostat. Higher temperature slows many germs and speeds up immune cells.
+bo-immune.c9.viz.unit	°C
+bo-immune.c9.viz.items.0.l	Normal
+bo-immune.c9.viz.items.1.l	Fever
+bo-immune.c9.viz.items.2.l	High fever
+bo-senses.title	Senses and skeleton
+bo-senses.summary	How you sense the world and hold yourself up.
+bo-senses.q0.q	How many bones does an adult have?
+bo-senses.q0.o0	106
+bo-senses.q0.o1	206
+bo-senses.q0.o2	306
+bo-senses.q0.x	Babies have about 300, which fuse.
+bo-senses.q1.q	Why does food taste bland with a cold?
+bo-senses.q1.o0	The tongue stops working
+bo-senses.q1.o1	Most flavour comes from smell
+bo-senses.q1.o2	Saliva disappears
+bo-senses.q1.x	The nose does most of the work.
+bo-senses.c0.title	More than five senses
+bo-senses.c0.text	Besides sight, hearing, smell, taste and touch, you sense balance, temperature, pain and the position of your limbs (proprioception), which lets you touch your nose with eyes closed.
+bo-senses.c0.viz.items.0	Sight
+bo-senses.c0.viz.items.1	Hearing
+bo-senses.c0.viz.items.2	Smell
+bo-senses.c0.viz.items.3	Taste
+bo-senses.c0.viz.items.4	Touch
+bo-senses.c0.viz.items.5	Balance
+bo-senses.c0.viz.items.6	Proprioception
+bo-senses.c1.title	How eyes see
+bo-senses.c1.text	Light enters through the cornea and lens, which focus an upside-down image on the retina. The brain flips it and builds the picture we see.
+bo-senses.c1.viz.steps.0	Light
+bo-senses.c1.viz.steps.1	Cornea and lens
+bo-senses.c1.viz.steps.2	Retina
+bo-senses.c1.viz.steps.3	Optic nerve
+bo-senses.c1.viz.steps.4	Brain
+bo-senses.c2.title	Rods and cones
+bo-senses.c2.text	The retina has rods for dim light and movement, and cones for colour. Three kinds of cones sense red, green and blue light.
+bo-senses.c2.viz.l.t	Rods
+bo-senses.c2.viz.l.items.0	about 120 million
+bo-senses.c2.viz.l.items.1	dim light
+bo-senses.c2.viz.l.items.2	no colour
+bo-senses.c2.viz.r.t	Cones
+bo-senses.c2.viz.r.items.0	about 6 million
+bo-senses.c2.viz.r.items.1	colour
+bo-senses.c2.viz.r.items.2	detail
+bo-senses.c3.title	How ears hear
+bo-senses.c3.text	Sound waves make the eardrum vibrate. Three tiny bones pass the vibration to the fluid-filled cochlea, where hair cells turn it into nerve signals.
+bo-senses.c3.viz.steps.0	Eardrum
+bo-senses.c3.viz.steps.1	Three tiny bones
+bo-senses.c3.viz.steps.2	Cochlea
+bo-senses.c3.viz.steps.3	Auditory nerve
+bo-senses.c4.title	Taste is mostly smell
+bo-senses.c4.text	The tongue detects five basic tastes; most "flavour" actually comes from smell. That's why food tastes bland with a blocked nose.
+bo-senses.c4.viz.items.0	Sweet
+bo-senses.c4.viz.items.1	Salty
+bo-senses.c4.viz.items.2	Sour
+bo-senses.c4.viz.items.3	Bitter
+bo-senses.c4.viz.items.4	Umami
+bo-senses.c5.title	The skeleton
+bo-senses.c5.text	Adults have 206 bones; babies have about 300, which fuse as they grow. More than half of them are in the hands and feet.
+bo-senses.c5.viz.items.0.l	bones in adults
+bo-senses.c5.viz.items.1.l	at birth
+bo-senses.c5.viz.items.2.l	in hands and feet
+bo-senses.c6.title	Bones are alive
+bo-senses.c6.text	Bones are living tissue that constantly rebuild. They store calcium, and the marrow inside makes blood cells. Exercise and weight-bearing make bones stronger.
+bo-senses.c6.viz.items.0	Support and protect
+bo-senses.c6.viz.items.1	Store calcium
+bo-senses.c6.viz.items.2	Make blood cells
+bo-senses.c6.viz.items.3	Rebuild all the time
+bo-senses.c7.title	Muscles
+bo-senses.c7.text	There are about 600 muscles. Skeletal muscles can only pull, never push, so they work in pairs, like the biceps and triceps.
+bo-senses.c7.viz.items.0.a	Biceps
+bo-senses.c7.viz.items.0.b	bends the arm
+bo-senses.c7.viz.items.1.a	Triceps
+bo-senses.c7.viz.items.1.b	straightens it
+bo-senses.c7.viz.items.2.a	Muscles
+bo-senses.c7.viz.items.2.b	can only pull
+bo-senses.c8.title	Three types of muscle
+bo-senses.c8.text	Skeletal muscles move bones by choice; smooth muscle moves food and blood vessels automatically; cardiac muscle in the heart never tires.
+bo-senses.c8.viz.root	Muscle types
+bo-senses.c8.viz.items.0	Skeletal: voluntary
+bo-senses.c8.viz.items.1	Smooth: automatic
+bo-senses.c8.viz.items.2	Cardiac: heart only
+bo-senses.c9.title	Smallest and largest
+bo-senses.c9.text	The smallest bone is the stirrup in the ear, about 3 mm. The largest is the thigh bone, the femur, roughly a quarter of your height.
+bo-senses.c9.viz.unit	length, mm (approx.)
+bo-senses.c9.viz.items.0.l	Stirrup
+bo-senses.c9.viz.items.1.l	Finger bone
+bo-senses.c9.viz.items.2.l	Femur
+bo-lungs.title	Lungs and breathing
+bo-lungs.summary	How every breath keeps you alive.
+bo-lungs.q0.q	What triggers the urge to breathe?
+bo-lungs.q0.o0	Low oxygen only
+bo-lungs.q0.o1	Rising carbon dioxide
+bo-lungs.q0.o2	Hunger
+bo-lungs.q0.x	Sensors in the brainstem.
+bo-lungs.q1.q	Which muscle drives breathing?
+bo-lungs.q1.o0	The heart
+bo-lungs.q1.o1	The diaphragm
+bo-lungs.q1.o2	The biceps
+bo-lungs.q1.x	A dome under the lungs.
+bo-lungs.q2.q	Roughly what percentage of air is oxygen?
+bo-lungs.q2.o0	50%
+bo-lungs.q2.o1	21%
+bo-lungs.q2.o2	78%
+bo-lungs.q2.x	Nitrogen is 78%.
+bo-lungs.c0.title	The airway
+bo-lungs.c0.text	Air goes in through the nose or mouth, down the windpipe (trachea), into two bronchi, then branches again and again into tiny tubes ending in air sacs.
+bo-lungs.c0.viz.steps.0	Nose
+bo-lungs.c0.viz.steps.1	Trachea
+bo-lungs.c0.viz.steps.2	Bronchi
+bo-lungs.c0.viz.steps.3	Bronchioles
+bo-lungs.c0.viz.steps.4	Alveoli
+bo-lungs.c1.title	Alveoli
+bo-lungs.c1.text	The lungs hold about 480 million tiny air sacs called alveoli. Spread flat, their surface would cover roughly a badminton court.
+bo-lungs.c1.viz.items.0.v	~480 million
+bo-lungs.c1.viz.items.0.l	alveoli
+bo-lungs.c1.viz.items.1.v	~70 m²
+bo-lungs.c1.viz.items.1.l	surface area
+bo-lungs.c1.viz.items.2.v	0.5 µm
+bo-lungs.c1.viz.items.2.l	thin wall to the blood
+bo-lungs.c2.title	Gas exchange
+bo-lungs.c2.text	In the alveoli, oxygen passes into the blood and carbon dioxide passes out, simply by moving from where there's more to where there's less.
+bo-lungs.c2.viz.l.t	Into the blood
+bo-lungs.c2.viz.l.items.0	oxygen
+bo-lungs.c2.viz.r.t	Out of the blood
+bo-lungs.c2.viz.r.items.0	carbon dioxide
+bo-lungs.c3.title	The diaphragm
+bo-lungs.c3.text	Breathing is driven mainly by the diaphragm, a dome-shaped muscle under the lungs. It flattens to pull air in and relaxes to let it out.
+bo-lungs.c3.viz.steps.0	Diaphragm contracts
+bo-lungs.c3.viz.steps.1	Chest expands
+bo-lungs.c3.viz.steps.2	Air rushes in
+bo-lungs.c3.viz.steps.3	Diaphragm relaxes, air out
+bo-lungs.c4.title	What triggers breathing
+bo-lungs.c4.text	Your urge to breathe comes mostly from rising carbon dioxide, not falling oxygen. Sensors in the brainstem measure it in the blood.
+bo-lungs.c4.viz.steps.0	CO₂ rises
+bo-lungs.c4.viz.steps.1	Brainstem senses it
+bo-lungs.c4.viz.steps.2	Breathe faster
+bo-lungs.c4.viz.steps.3	CO₂ falls
+bo-lungs.c5.title	Breaths by the numbers
+bo-lungs.c5.text	At rest, adults breathe about 12–20 times a minute, around 20,000 times a day. Each breath moves about half a litre of air.
+bo-lungs.c5.viz.items.0.l	breaths a minute
+bo-lungs.c5.viz.items.1.l	breaths a day
+bo-lungs.c5.viz.items.2.v	~0.5 L
+bo-lungs.c5.viz.items.2.l	per breath at rest
+bo-lungs.c6.title	Air we breathe
+bo-lungs.c6.text	Air is about 78% nitrogen and 21% oxygen. The air you breathe out still has about 16% oxygen, which is why rescue breaths work.
+bo-lungs.c6.viz.unit	% in air
+bo-lungs.c6.viz.items.0.l	Nitrogen
+bo-lungs.c6.viz.items.1.l	Oxygen
+bo-lungs.c6.viz.items.2.l	Argon and others
+bo-lungs.c7.title	Cleaning the air
+bo-lungs.c7.text	Hairs and sticky mucus trap dust and germs. Tiny beating hairs called cilia sweep the mucus up to the throat, where you swallow it.
+bo-lungs.c7.viz.steps.0	Dust and germs
+bo-lungs.c7.viz.steps.1	Trapped in mucus
+bo-lungs.c7.viz.steps.2	Cilia sweep it up
+bo-lungs.c7.viz.steps.3	Swallowed or coughed out
+bo-lungs.c8.title	Altitude
+bo-lungs.c8.text	Higher up, each breath carries less oxygen. Above about 2,500 m some people get altitude sickness. Over weeks, the body makes more red blood cells to adapt.
+bo-lungs.c8.viz.unit	oxygen per breath, % of sea level
+bo-lungs.c8.viz.items.0.l	Sea level
+bo-lungs.c8.viz.items.1.l	2,500 m
+bo-lungs.c8.viz.items.2.l	Everest summit
+bo-lungs.c9.title	Slow breathing
+bo-lungs.c9.text	Breathing slowly, about six breaths a minute with longer exhales, activates the body's calming system and lowers heart rate within minutes.
+bo-lungs.c9.viz.steps.0	In for 4 s
+bo-lungs.c9.viz.steps.1	Out for 6 s
+bo-lungs.c9.viz.steps.2	Repeat for 2 minutes
+bo-lungs.c9.viz.steps.3	Calmer heart
+bo-cells.title	Cells, the building blocks
+bo-cells.summary	Trillions of tiny living factories.
+bo-cells.q0.q	What do mitochondria do?
+bo-cells.q0.o0	Store DNA
+bo-cells.q0.o1	Make energy for the cell
+bo-cells.q0.o2	Fight germs
+bo-cells.q0.x	They produce ATP.
+bo-cells.q1.q	How much DNA is in a single cell?
+bo-cells.q1.o0	2 mm
+bo-cells.q1.o1	About 2 metres
+bo-cells.q1.o2	2 km
+bo-cells.q1.x	Tightly coiled.
+bo-cells.c0.title	How many cells?
+bo-cells.c0.text	An adult body has about 30–37 trillion human cells of more than 200 types, from nerve cells a metre long to tiny red blood cells.
+bo-cells.c0.viz.items.0.v	~30 trillion
+bo-cells.c0.viz.items.0.l	human cells
+bo-cells.c0.viz.items.1.l	cell types
+bo-cells.c0.viz.items.2.v	~38 trillion
+bo-cells.c0.viz.items.2.l	bacteria living on and in you
+bo-cells.c1.title	Inside a cell
+bo-cells.c1.text	A cell is like a factory: the nucleus holds the instructions, mitochondria make energy, ribosomes build proteins and the membrane controls what goes in and out.
+bo-cells.c1.viz.items.0.a	Nucleus
+bo-cells.c1.viz.items.0.b	control room with DNA
+bo-cells.c1.viz.items.1.a	Mitochondria
+bo-cells.c1.viz.items.1.b	power stations
+bo-cells.c1.viz.items.2.a	Ribosomes
+bo-cells.c1.viz.items.2.b	protein builders
+bo-cells.c1.viz.items.3.a	Membrane
+bo-cells.c1.viz.items.3.b	gatekeeper
+bo-cells.c2.title	Mitochondria
+bo-cells.c2.text	Mitochondria turn food and oxygen into ATP, the cell's energy currency. They have their own DNA, inherited only from your mother.
+bo-cells.c2.viz.steps.0	Glucose + oxygen
+bo-cells.c2.viz.steps.1	Mitochondria
+bo-cells.c2.viz.steps.2	ATP energy
+bo-cells.c2.viz.steps.3	Powers the cell
+bo-cells.c3.title	DNA in every cell
+bo-cells.c3.text	Each cell holds about 2 metres of DNA, coiled into 46 chromosomes in a nucleus far smaller than a pinhead.
+bo-cells.c3.viz.items.0.v	2 m
+bo-cells.c3.viz.items.0.l	DNA per cell
+bo-cells.c3.viz.items.1.l	chromosomes
+bo-cells.c3.viz.items.2.l	protein-coding genes
+bo-cells.c4.title	From gene to protein
+bo-cells.c4.text	A gene is copied into messenger RNA, which travels to a ribosome. The ribosome reads it three letters at a time and builds a protein.
+bo-cells.c4.viz.steps.0	DNA gene
+bo-cells.c4.viz.steps.1	mRNA copy
+bo-cells.c4.viz.steps.2	Ribosome reads it
+bo-cells.c4.viz.steps.3	Protein built
+bo-cells.c5.title	Cell division
+bo-cells.c5.text	Cells copy themselves by mitosis: the DNA duplicates, the chromosomes separate and the cell splits into two identical cells.
+bo-cells.c5.viz.steps.0	DNA copied
+bo-cells.c5.viz.steps.1	Chromosomes line up
+bo-cells.c5.viz.steps.2	Pulled apart
+bo-cells.c5.viz.steps.3	Two cells
+bo-cells.c6.title	Cells renew at different rates
+bo-cells.c6.text	Some cells are replaced constantly, others last a lifetime. Most of the neurons in your brain's cortex are as old as you are.
+bo-cells.c6.viz.unit	approximate lifespan, days
+bo-cells.c6.viz.items.0.l	Gut lining
+bo-cells.c6.viz.items.1.l	Skin surface
+bo-cells.c6.viz.items.2.l	Red blood cells
+bo-cells.c6.viz.items.3.l	Fat cells
+bo-cells.c7.title	Stem cells
+bo-cells.c7.text	Stem cells can turn into many other cell types. They repair tissues and are used in treatments like bone-marrow transplants.
+bo-cells.c7.viz.root	Stem cell
+bo-cells.c7.viz.items.0	Blood cells
+bo-cells.c7.viz.items.1	Muscle cells
+bo-cells.c7.viz.items.2	Nerve cells
+bo-cells.c7.viz.items.3	Skin cells
+bo-cells.c8.title	When cells go wrong
+bo-cells.c8.text	Cancer begins when mutations make a cell ignore the signals that control division. It multiplies out of control and may spread.
+bo-cells.c8.viz.steps.0	DNA damage
+bo-cells.c8.viz.steps.1	Growth controls fail
+bo-cells.c8.viz.steps.2	Uncontrolled division
+bo-cells.c8.viz.steps.3	Tumour
+bo-cells.c9.title	Seeing cells
+bo-cells.c9.text	Robert Hooke named "cells" in 1665 after the little rooms he saw in cork. Van Leeuwenhoek first saw living bacteria and sperm cells in the 1670s.
+bo-cells.c9.viz.events.0.l	Hooke names cells
+bo-cells.c9.viz.events.1.y	1670s
+bo-cells.c9.viz.events.1.l	van Leeuwenhoek's microbes
+bo-cells.c9.viz.events.2.l	cell theory
+bo-cells.c9.viz.events.3.l	DNA structure
+bo-sleep.title	Sleep
+bo-sleep.summary	Why we spend a third of life asleep.
+bo-sleep.q0.q	How long is a typical sleep cycle?
+bo-sleep.q0.o0	30 minutes
+bo-sleep.q0.o1	About 90 minutes
+bo-sleep.q0.o2	4 hours
+bo-sleep.q0.x	4–6 cycles a night.
+bo-sleep.q1.q	What does caffeine block?
+bo-sleep.q1.o0	Melatonin
+bo-sleep.q1.o1	Adenosine
+bo-sleep.q1.o2	Adrenaline
+bo-sleep.q1.x	The chemical that builds sleepiness.
+bo-sleep.c0.title	How much sleep?
+bo-sleep.c0.text	Most adults need 7–9 hours a night; teenagers need 8–10; young children even more. Few people truly thrive on less than 6.
+bo-sleep.c0.viz.unit	hours a night
+bo-sleep.c0.viz.items.0.l	Adults
+bo-sleep.c0.viz.items.1.l	Teenagers
+bo-sleep.c0.viz.items.2.l	Young children
+bo-sleep.c1.title	Sleep cycles
+bo-sleep.c1.text	Sleep runs in cycles of about 90 minutes, moving from light sleep to deep sleep and then to REM sleep, when most vivid dreams happen. We go through 4–6 cycles a night.
+bo-sleep.c1.viz.steps.0	Light sleep
+bo-sleep.c1.viz.steps.1	Deep sleep
+bo-sleep.c1.viz.steps.2	Light sleep
+bo-sleep.c1.viz.steps.3	REM: dreaming
+bo-sleep.c2.title	Deep sleep
+bo-sleep.c2.text	In deep sleep, the body repairs tissues, releases growth hormone and the brain's waste-clearing system washes away by-products of the day.
+bo-sleep.c2.viz.items.0	Tissue repair
+bo-sleep.c2.viz.items.1	Growth hormone
+bo-sleep.c2.viz.items.2	Brain clean-up
+bo-sleep.c2.viz.items.3	Memory consolidation
+bo-sleep.c3.title	REM sleep
+bo-sleep.c3.text	During REM, the eyes dart around, the brain is very active and the body's muscles are temporarily paralysed so we don't act out our dreams.
+bo-sleep.c3.viz.items.0.a	Eyes
+bo-sleep.c3.viz.items.0.b	rapid movements
+bo-sleep.c3.viz.items.1.a	Brain
+bo-sleep.c3.viz.items.1.b	very active
+bo-sleep.c3.viz.items.2.a	Muscles
+bo-sleep.c3.viz.items.2.b	paralysed
+bo-sleep.c3.viz.items.3.a	Dreams
+bo-sleep.c3.viz.items.3.b	vivid
+bo-sleep.c4.title	The body clock
+bo-sleep.c4.text	A master clock in the brain keeps a roughly 24-hour circadian rhythm, reset each day mainly by morning light.
+bo-sleep.c4.viz.steps.0	Morning light
+bo-sleep.c4.viz.steps.1	Body clock resets
+bo-sleep.c4.viz.steps.2	Alert in the day
+bo-sleep.c4.viz.steps.3	Melatonin rises at night
+bo-sleep.c5.title	Melatonin
+bo-sleep.c5.text	As darkness falls, the brain releases melatonin, the "darkness hormone". Bright screens late at night can delay it.
+bo-sleep.c5.viz.steps.0	Darkness
+bo-sleep.c5.viz.steps.1	Melatonin rises
+bo-sleep.c5.viz.steps.2	Sleepiness
+bo-sleep.c5.viz.steps.3	Sleep
+bo-sleep.c6.title	Caffeine
+bo-sleep.c6.text	Caffeine blocks adenosine, the chemical that builds sleep pressure during the day. Its half-life is about 5 hours, so an afternoon coffee can still affect sleep at night.
+bo-sleep.c6.viz.unit	caffeine left, mg (from 100 mg at 3 pm)
+bo-sleep.c6.viz.items.0.l	3 pm
+bo-sleep.c6.viz.items.1.l	8 pm
+bo-sleep.c6.viz.items.2.l	1 am
+bo-sleep.c7.title	Sleep debt
+bo-sleep.c7.text	Too little sleep hurts attention, mood, memory and immunity. Being awake for 24 hours impairs driving about as much as being over the legal alcohol limit.
+bo-sleep.c7.viz.items.0	Slower reactions
+bo-sleep.c7.viz.items.1	Worse memory
+bo-sleep.c7.viz.items.2	Lower mood
+bo-sleep.c7.viz.items.3	Weaker immunity
+bo-sleep.c8.title	Larks and owls
+bo-sleep.c8.text	People differ in their natural timing, called chronotype. Larks wake early easily; owls peak later. Teenagers shift later for biological reasons.
+bo-sleep.c8.viz.l.t	Larks
+bo-sleep.c8.viz.l.items.0	early to bed
+bo-sleep.c8.viz.l.items.1	best in the morning
+bo-sleep.c8.viz.r.t	Owls
+bo-sleep.c8.viz.r.items.0	late to bed
+bo-sleep.c8.viz.r.items.1	best in the evening
+bo-sleep.c9.title	Better sleep habits
+bo-sleep.c9.text	Consistent times, morning daylight, a cool dark room, no caffeine after lunch and screens away an hour before bed help most people sleep better.
+bo-sleep.c9.viz.items.0	Same wake-up time daily
+bo-sleep.c9.viz.items.1	Morning light
+bo-sleep.c9.viz.items.2	Cool, dark room
+bo-sleep.c9.viz.items.3	No late caffeine
+bo-sleep.c9.viz.items.4	Screens off before bed
+bo-skin.title	Skin, hair and nails
+bo-skin.summary	Your body's largest organ.
+bo-skin.q0.q	What gives skin its colour?
+bo-skin.q0.o0	Haemoglobin
+bo-skin.q0.o1	Melanin
+bo-skin.q0.o2	Keratin
+bo-skin.q0.x	It absorbs UV light.
+bo-skin.q1.q	About how fast does hair grow?
+bo-skin.q1.o0	1 mm a month
+bo-skin.q1.o1	About 1 cm a month
+bo-skin.q1.o2	10 cm a month
+bo-skin.q1.x	Then it rests and falls out.
+bo-skin.c0.title	The largest organ
+bo-skin.c0.text	Skin is the body's largest organ: about 2 m² and several kilograms in an adult. It protects, senses, controls temperature and makes vitamin D.
+bo-skin.c0.viz.items.0	Barrier against germs
+bo-skin.c0.viz.items.1	Touch and pain sensors
+bo-skin.c0.viz.items.2	Temperature control
+bo-skin.c0.viz.items.3	Makes vitamin D
+bo-skin.c1.title	Three layers
+bo-skin.c1.text	The epidermis is the protective outer layer, the dermis holds nerves, blood vessels, sweat glands and hair roots, and the fatty layer beneath insulates and cushions.
+bo-skin.c1.viz.items.0	Epidermis: protective surface
+bo-skin.c1.viz.items.1	Dermis: nerves, glands, roots
+bo-skin.c1.viz.items.2	Fat layer: insulation
+bo-skin.c2.title	Skin renews
+bo-skin.c2.text	You shed tens of thousands of dead skin cells every minute. The outer layer replaces itself roughly every month; much household dust contains skin flakes.
+bo-skin.c2.viz.steps.0	New cells form at the base
+bo-skin.c2.viz.steps.1	Move upwards
+bo-skin.c2.viz.steps.2	Die and flatten
+bo-skin.c2.viz.steps.3	Flake off
+bo-skin.c3.title	Sweat
+bo-skin.c3.text	Sweat cools you as it evaporates. Humans have 2–4 million sweat glands, one reason we're among the best long-distance runners in the animal world.
+bo-skin.c3.viz.steps.0	Body heats up
+bo-skin.c3.viz.steps.1	Sweat released
+bo-skin.c3.viz.steps.2	Evaporates
+bo-skin.c3.viz.steps.3	Skin cools
+bo-skin.c4.title	Skin colour
+bo-skin.c4.text	Skin colour comes from melanin, which absorbs UV light. Human populations evolved different amounts depending on sunlight where their ancestors lived.
+bo-skin.c4.viz.l.t	More melanin
+bo-skin.c4.viz.l.items.0	strong sun
+bo-skin.c4.viz.l.items.1	better UV protection
+bo-skin.c4.viz.r.t	Less melanin
+bo-skin.c4.viz.r.items.0	weak sun
+bo-skin.c4.viz.r.items.1	makes vitamin D easily
+bo-skin.c5.title	Sun protection
+bo-skin.c5.text	UV radiation damages skin DNA, causing sunburn, ageing and skin cancer. Shade, clothing and sunscreen with SPF 30 or more help, especially at midday.
+bo-skin.c5.viz.items.0	Shade at midday
+bo-skin.c5.viz.items.1	Hat and clothes
+bo-skin.c5.viz.items.2	SPF 30+, reapplied
+bo-skin.c5.viz.items.3	Check the UV index
+bo-skin.c6.title	Hair
+bo-skin.c6.text	You have about 5 million hair follicles, and around 100,000 on your scalp. Each hair grows about 1 cm a month, then rests and falls out.
+bo-skin.c6.viz.items.0.l	scalp hairs
+bo-skin.c6.viz.items.1.v	~1 cm
+bo-skin.c6.viz.items.1.l	growth a month
+bo-skin.c6.viz.items.2.l	hairs lost a day
+bo-skin.c7.title	Goosebumps
+bo-skin.c7.text	Goosebumps are tiny muscles pulling hairs upright. In furry ancestors it trapped warm air or made them look bigger; in us it's mostly a leftover.
+bo-skin.c7.viz.steps.0	Cold or fear
+bo-skin.c7.viz.steps.1	Tiny muscles contract
+bo-skin.c7.viz.steps.2	Hairs stand up
+bo-skin.c7.viz.steps.3	Goosebumps
+bo-skin.c8.title	Nails
+bo-skin.c8.text	Nails are made of keratin, like hair. Fingernails grow about 3 mm a month, faster than toenails, and faster in summer.
+bo-skin.c8.viz.unit	mm a month
+bo-skin.c8.viz.items.0.l	Fingernails
+bo-skin.c8.viz.items.1.l	Toenails
+bo-skin.c9.title	Healing a cut
+bo-skin.c9.text	A cut heals in stages: bleeding stops with a clot, white cells clean the wound, new tissue fills it and a scar slowly remodels over months.
+bo-skin.c9.viz.steps.0	Clot forms
+bo-skin.c9.viz.steps.1	Inflammation cleans
+bo-skin.c9.viz.steps.2	New tissue grows
+bo-skin.c9.viz.steps.3	Scar remodels
+bo-hormones.title	Hormones
+bo-hormones.summary	The body's chemical messengers.
+bo-hormones.q0.q	Which hormone lowers blood sugar?
+bo-hormones.q0.o0	Adrenaline
+bo-hormones.q0.o1	Insulin
+bo-hormones.q0.o2	Cortisol
+bo-hormones.q0.x	Released by the pancreas.
+bo-hormones.q1.q	Why is table salt often iodised?
+bo-hormones.q1.o0	For taste
+bo-hormones.q1.o1	The thyroid needs iodine
+bo-hormones.q1.o2	To preserve it
+bo-hormones.q1.x	Iodine makes thyroid hormones.
+bo-hormones.c0.title	Chemical messages
+bo-hormones.c0.text	Hormones are messengers released into the blood by glands. They travel everywhere but only act on cells with the right receptors, like a key fitting a lock.
+bo-hormones.c0.viz.steps.0	Gland releases hormone
+bo-hormones.c0.viz.steps.1	Travels in blood
+bo-hormones.c0.viz.steps.2	Finds matching receptors
+bo-hormones.c0.viz.steps.3	Cell responds
+bo-hormones.c1.title	Nerves vs hormones
+bo-hormones.c1.text	Nerves send fast, precise signals; hormones send slower, longer-lasting, widespread signals.
+bo-hormones.c1.viz.l.t	Nerves
+bo-hormones.c1.viz.l.items.0	electrical
+bo-hormones.c1.viz.l.items.1	milliseconds
+bo-hormones.c1.viz.l.items.2	precise
+bo-hormones.c1.viz.r.t	Hormones
+bo-hormones.c1.viz.r.items.0	chemical
+bo-hormones.c1.viz.r.items.1	minutes to days
+bo-hormones.c1.viz.r.items.2	widespread
+bo-hormones.c2.title	The glands
+bo-hormones.c2.text	Key glands include the pituitary (the "master gland"), thyroid, adrenals, pancreas and the ovaries or testes.
+bo-hormones.c2.viz.items.0.a	Pituitary
+bo-hormones.c2.viz.items.0.b	controls other glands
+bo-hormones.c2.viz.items.1.a	Thyroid
+bo-hormones.c2.viz.items.1.b	metabolism
+bo-hormones.c2.viz.items.2.a	Adrenals
+bo-hormones.c2.viz.items.2.b	stress hormones
+bo-hormones.c2.viz.items.3.a	Pancreas
+bo-hormones.c2.viz.items.3.b	blood sugar
+bo-hormones.c3.title	Insulin
+bo-hormones.c3.text	After a meal, the pancreas releases insulin, which lets cells take up sugar from the blood. Glucagon does the opposite when sugar runs low.
+bo-hormones.c3.viz.steps.0	Eat
+bo-hormones.c3.viz.steps.1	Blood sugar rises
+bo-hormones.c3.viz.steps.2	Insulin released
+bo-hormones.c3.viz.steps.3	Sugar stored, levels fall
+bo-hormones.c4.title	Adrenaline
+bo-hormones.c4.text	In a fright, the adrenal glands release adrenaline within seconds: faster heart, wider airways, more sugar in the blood. Ready to act.
+bo-hormones.c4.viz.steps.0	Shock
+bo-hormones.c4.viz.steps.1	Adrenaline
+bo-hormones.c4.viz.steps.2	Heart races
+bo-hormones.c4.viz.steps.3	Energy released
+bo-hormones.c5.title	Cortisol
+bo-hormones.c5.text	Cortisol is released during longer stress and follows a daily rhythm, peaking soon after waking. Chronically high levels can affect sleep and immunity.
+bo-hormones.c5.viz.unit	relative cortisol level
+bo-hormones.c5.viz.items.0.l	On waking
+bo-hormones.c5.viz.items.1.l	Midday
+bo-hormones.c5.viz.items.2.l	Evening
+bo-hormones.c5.viz.items.3.l	Midnight
+bo-hormones.c6.title	Thyroid
+bo-hormones.c6.text	The thyroid in your neck sets your metabolic rate, how fast your body uses energy. It needs iodine, which is why table salt is often iodised.
+bo-hormones.c6.viz.steps.0	Iodine
+bo-hormones.c6.viz.steps.1	Thyroid hormones
+bo-hormones.c6.viz.steps.2	Set metabolic rate
+bo-hormones.c6.viz.steps.3	Energy use
+bo-hormones.c7.title	Growth hormone
+bo-hormones.c7.text	Growth hormone from the pituitary drives growth in childhood and is mostly released during deep sleep. It also helps repair tissues in adults.
+bo-hormones.c7.viz.steps.0	Deep sleep
+bo-hormones.c7.viz.steps.1	Growth hormone pulse
+bo-hormones.c7.viz.steps.2	Bones and muscles grow
+bo-hormones.c7.viz.steps.3	Tissue repair
+bo-hormones.c8.title	Hunger hormones
+bo-hormones.c8.text	Ghrelin rises before meals and makes you hungry; leptin, from fat tissue, signals you have enough stored energy.
+bo-hormones.c8.viz.l.t	Ghrelin
+bo-hormones.c8.viz.l.items.0	from the stomach
+bo-hormones.c8.viz.l.items.1	"I'm hungry"
+bo-hormones.c8.viz.r.t	Leptin
+bo-hormones.c8.viz.r.items.0	from fat
+bo-hormones.c8.viz.r.items.1	"I've got enough"
+bo-hormones.c9.title	Feedback loops
+bo-hormones.c9.text	Most hormones work like a thermostat: when a level rises too high, a signal shuts down production, keeping things balanced.
+bo-hormones.c9.viz.steps.0	Level rises
+bo-hormones.c9.viz.steps.1	Detected
+bo-hormones.c9.viz.steps.2	Release slows
+bo-hormones.c9.viz.steps.3	Level falls
+bo-kidneys.title	Kidneys and water balance
+bo-kidneys.summary	Your body's filters.
+bo-kidneys.q0.q	How much blood plasma do the kidneys filter daily?
+bo-kidneys.q0.o0	2 litres
+bo-kidneys.q0.o1	20 litres
+bo-kidneys.q0.o2	About 180 litres
+bo-kidneys.q0.x	Most of it is reabsorbed.
+bo-kidneys.q1.q	Dark urine usually suggests…
+bo-kidneys.q1.o0	too much water
+bo-kidneys.q1.o1	you need to drink more
+bo-kidneys.q1.o2	nothing
+bo-kidneys.q1.x	The body is saving water.
+bo-kidneys.q2.q	Can people live with one kidney?
+bo-kidneys.q2.o0	No
+bo-kidneys.q2.o1	Yes, one healthy kidney is enough
+bo-kidneys.q2.o2	Only for a week
+bo-kidneys.q2.x	That's why living donation works.
+bo-kidneys.c0.title	Two filters
+bo-kidneys.c0.text	You have two fist-sized kidneys at the back of your abdomen. Together they filter about 180 litres of blood plasma a day and return almost all of it.
+bo-kidneys.c0.viz.items.0.v	180 L
+bo-kidneys.c0.viz.items.0.l	filtered a day
+bo-kidneys.c0.viz.items.1.v	~1.5 L
+bo-kidneys.c0.viz.items.1.l	urine a day
+bo-kidneys.c0.viz.items.2.l	kidneys, though one is enough
+bo-kidneys.c1.title	Nephrons
+bo-kidneys.c1.text	Each kidney contains about a million tiny filtering units called nephrons. They let water and small molecules through, then reabsorb what the body needs.
+bo-kidneys.c1.viz.steps.0	Blood in
+bo-kidneys.c1.viz.steps.1	Filtered in the nephron
+bo-kidneys.c1.viz.steps.2	Useful stuff reabsorbed
+bo-kidneys.c1.viz.steps.3	Waste leaves as urine
+bo-kidneys.c2.title	What kidneys remove
+bo-kidneys.c2.text	Kidneys remove urea (from protein breakdown), extra salt, excess water and many medicines, keeping blood chemistry within tight limits.
+bo-kidneys.c2.viz.items.0	Urea
+bo-kidneys.c2.viz.items.1	Extra salt
+bo-kidneys.c2.viz.items.2	Excess water
+bo-kidneys.c2.viz.items.3	Medicines and toxins
+bo-kidneys.c3.title	Water balance
+bo-kidneys.c3.text	When you're short of water, the brain releases a hormone that makes kidneys save it, so urine gets darker. Drink plenty and urine is pale.
+bo-kidneys.c3.viz.l.t	Dehydrated
+bo-kidneys.c3.viz.l.items.0	hormone released
+bo-kidneys.c3.viz.l.items.1	dark, little urine
+bo-kidneys.c3.viz.r.t	Well hydrated
+bo-kidneys.c3.viz.r.items.0	hormone low
+bo-kidneys.c3.viz.r.items.1	pale, more urine
+bo-kidneys.c4.title	Urine colour guide
+bo-kidneys.c4.text	Pale straw colour usually means you're well hydrated; dark amber suggests you need to drink. Some foods and vitamins change colour too.
+bo-kidneys.c4.viz.unit	darkness
+bo-kidneys.c4.viz.items.0.l	Pale straw
+bo-kidneys.c4.viz.items.1.l	Yellow
+bo-kidneys.c4.viz.items.2.l	Dark amber
+bo-kidneys.c5.title	Blood pressure control
+bo-kidneys.c5.text	Kidneys help control blood pressure by adjusting how much salt and water the body keeps, and by releasing hormones that tighten blood vessels.
+bo-kidneys.c5.viz.steps.0	Pressure falls
+bo-kidneys.c5.viz.steps.1	Kidneys release renin
+bo-kidneys.c5.viz.steps.2	Vessels tighten, salt kept
+bo-kidneys.c5.viz.steps.3	Pressure rises
+bo-kidneys.c6.title	More jobs
+bo-kidneys.c6.text	Kidneys also make a hormone that tells bone marrow to make red blood cells, and activate vitamin D for strong bones.
+bo-kidneys.c6.viz.items.0.a	EPO hormone
+bo-kidneys.c6.viz.items.0.b	more red blood cells
+bo-kidneys.c6.viz.items.1.a	Active vitamin D
+bo-kidneys.c6.viz.items.1.b	calcium for bones
+bo-kidneys.c6.viz.items.2.a	Acid balance
+bo-kidneys.c6.viz.items.2.b	stable blood pH
+bo-kidneys.c7.title	Kidney stones
+bo-kidneys.c7.text	Minerals in urine can crystallise into stones, which can be very painful when they move. Drinking enough water is the main prevention.
+bo-kidneys.c7.viz.steps.0	Concentrated urine
+bo-kidneys.c7.viz.steps.1	Minerals crystallise
+bo-kidneys.c7.viz.steps.2	Stone grows
+bo-kidneys.c7.viz.steps.3	Pain as it moves
+bo-kidneys.c8.title	Living with one kidney
+bo-kidneys.c8.text	One healthy kidney can do the work of two, which is why living kidney donation is possible. The first successful kidney transplant was in 1954.
+bo-kidneys.c8.viz.events.0.l	first successful kidney transplant
+bo-kidneys.c8.viz.events.1.y	1960s
+bo-kidneys.c8.viz.events.1.l	dialysis spreads
+bo-kidneys.c8.viz.events.2.y	Today
+bo-kidneys.c8.viz.events.2.l	most common organ transplant
+bo-kidneys.c9.title	The bladder
+bo-kidneys.c9.text	The bladder stores urine, holding about 400–600 ml. Stretch sensors signal the urge to go well before it's full.
+bo-kidneys.c9.viz.items.0.v	400–600 ml
+bo-kidneys.c9.viz.items.0.l	capacity
+bo-kidneys.c9.viz.items.1.v	~150 ml
+bo-kidneys.c9.viz.items.1.l	first urge
+bo-kidneys.c9.viz.items.2.l	trips a day
+bo-muscles.title	Muscles and exercise
+bo-muscles.summary	How movement works and why it matters.
+bo-muscles.q0.q	What causes next-day muscle soreness?
+bo-muscles.q0.o0	Lactic acid
+bo-muscles.q0.o1	Small fibre damage being repaired
+bo-muscles.q0.o2	Dehydration
+bo-muscles.q0.x	It fades as fibres recover.
+bo-muscles.q1.q	How much moderate activity does the WHO recommend weekly?
+bo-muscles.q1.o0	30 minutes
+bo-muscles.q1.o1	150–300 minutes
+bo-muscles.q1.o2	1,000 minutes
+bo-muscles.q1.x	Plus strength training twice a week.
+bo-muscles.c0.title	How muscles contract
+bo-muscles.c0.text	Muscle fibres contain filaments that slide past each other, pulled by tiny molecular "oars". Billions of them shortening together make a muscle contract.
+bo-muscles.c0.viz.steps.0	Nerve signal
+bo-muscles.c0.viz.steps.1	Calcium released
+bo-muscles.c0.viz.steps.2	Filaments slide
+bo-muscles.c0.viz.steps.3	Muscle shortens
+bo-muscles.c1.title	Fast and slow fibres
+bo-muscles.c1.text	Slow-twitch fibres resist fatigue and suit endurance; fast-twitch fibres are powerful but tire quickly. Marathon runners and sprinters have different mixes.
+bo-muscles.c1.viz.l.t	Slow-twitch
+bo-muscles.c1.viz.l.items.0	endurance
+bo-muscles.c1.viz.l.items.1	marathon
+bo-muscles.c1.viz.l.items.2	tire slowly
+bo-muscles.c1.viz.r.t	Fast-twitch
+bo-muscles.c1.viz.r.items.0	power
+bo-muscles.c1.viz.r.items.1	sprint
+bo-muscles.c1.viz.r.items.2	tire fast
+bo-muscles.c2.title	Energy systems
+bo-muscles.c2.text	For a few seconds, muscles use stored fuel; for about a minute, they burn sugar without oxygen, making lactate; beyond that, they rely on oxygen.
+bo-muscles.c2.viz.events.0.y	0–10 s
+bo-muscles.c2.viz.events.0.l	stored ATP and creatine
+bo-muscles.c2.viz.events.1.y	10 s–2 min
+bo-muscles.c2.viz.events.1.l	sugar without oxygen
+bo-muscles.c2.viz.events.2.y	2 min+
+bo-muscles.c2.viz.events.2.l	oxygen-based
+bo-muscles.c3.title	Why muscles grow
+bo-muscles.c3.text	Strength training creates small damage and stress in fibres. During recovery, the body rebuilds them thicker and stronger, if you eat enough protein and rest.
+bo-muscles.c3.viz.steps.0	Train
+bo-muscles.c3.viz.steps.1	Stress fibres
+bo-muscles.c3.viz.steps.2	Rest and protein
+bo-muscles.c3.viz.steps.3	Rebuild stronger
+bo-muscles.c4.title	Use it or lose it
+bo-muscles.c4.text	Without use, muscles shrink quickly; a week in bed can cost noticeable strength. From around 30–40, muscle mass declines slowly unless you train.
+bo-muscles.c4.viz.steps.0	Inactivity
+bo-muscles.c4.viz.steps.1	Muscles shrink
+bo-muscles.c4.viz.steps.2	Weaker
+bo-muscles.c4.viz.steps.3	Less active
+bo-muscles.c5.title	Cardio benefits
+bo-muscles.c5.text	Aerobic exercise strengthens the heart, lowers blood pressure and resting heart rate, and improves mood and sleep.
+bo-muscles.c5.viz.items.0	Stronger heart
+bo-muscles.c5.viz.items.1	Lower blood pressure
+bo-muscles.c5.viz.items.2	Better mood
+bo-muscles.c5.viz.items.3	Better sleep
+bo-muscles.c6.title	Activity guidelines
+bo-muscles.c6.text	The WHO recommends adults get 150–300 minutes of moderate activity a week, plus muscle-strengthening at least twice a week.
+bo-muscles.c6.viz.unit	minutes a week
+bo-muscles.c6.viz.items.0.l	Minimum moderate
+bo-muscles.c6.viz.items.1.l	Upper target
+bo-muscles.c7.title	Stretching and warm-up
+bo-muscles.c7.text	A warm-up raises muscle temperature and readies joints. Dynamic movements before exercise work better than long static stretches.
+bo-muscles.c7.viz.l.t	Before exercise
+bo-muscles.c7.viz.l.items.0	dynamic warm-up
+bo-muscles.c7.viz.l.items.1	leg swings, lunges
+bo-muscles.c7.viz.r.t	After exercise
+bo-muscles.c7.viz.r.items.0	gentle static stretches
+bo-muscles.c8.title	Soreness
+bo-muscles.c8.text	Muscle soreness a day or two after unusual exercise is normal and comes from small fibre damage, not "lactic acid build-up".
+bo-muscles.c8.viz.items.0.w	Lactic acid causes next-day soreness
+bo-muscles.c8.viz.items.0.r	Small fibre damage and repair do
+bo-muscles.c9.title	Small steps count
+bo-muscles.c9.text	Even short bursts help. Taking the stairs, walking during calls and a 10-minute walk after meals add up and improve blood sugar.
+bo-muscles.c9.viz.items.0	Take the stairs
+bo-muscles.c9.viz.items.1	Walk during calls
+bo-muscles.c9.viz.items.2	10 minutes after meals
+bo-muscles.c9.viz.items.3	Stand up every half hour
+bo-life.title	Growing and ageing
+bo-life.summary	From a single cell to old age.
+bo-life.q0.q	When does the brain's planning region finish maturing?
+bo-life.q0.o0	At 12
+bo-life.q0.o1	Around the mid-20s
+bo-life.q0.o2	At birth
+bo-life.q0.x	The prefrontal cortex matures last.
+bo-life.q1.q	How many bones does a newborn have?
+bo-life.q1.o0	206
+bo-life.q1.o1	About 300
+bo-life.q1.o2	150
+bo-life.q1.x	Many fuse later.
+bo-life.c0.title	One cell to trillions
+bo-life.c0.text	You began as a single fertilised egg. By birth, after about 40 weeks, you had trillions of cells organised into organs.
+bo-life.c0.viz.events.0.y	Week 3
+bo-life.c0.viz.events.0.l	heart starts forming
+bo-life.c0.viz.events.1.y	Week 8
+bo-life.c0.viz.events.1.l	major organs present
+bo-life.c0.viz.events.2.y	Week 20
+bo-life.c0.viz.events.2.l	movements felt
+bo-life.c0.viz.events.3.y	Week 40
+bo-life.c0.viz.events.3.l	birth
+bo-life.c1.title	Newborn surprises
+bo-life.c1.text	Newborns have about 300 bones, can't see far and can recognise their mother's voice, heard in the womb.
+bo-life.c1.viz.items.0	~300 bones
+bo-life.c1.viz.items.1	Focus about 20–30 cm away
+bo-life.c1.viz.items.2	Know mother's voice
+bo-life.c1.viz.items.3	Strong grasp reflex
+bo-life.c2.title	Baby brains
+bo-life.c2.text	A baby's brain doubles in size in the first year. Billions of connections form; unused ones are later pruned.
+bo-life.c2.viz.unit	brain size, % of adult
+bo-life.c2.viz.items.0.l	Birth
+bo-life.c2.viz.items.1.l	Age 1
+bo-life.c2.viz.items.2.l	Age 3
+bo-life.c2.viz.items.3.l	Age 6
+bo-life.c3.title	Puberty
+bo-life.c3.text	Hormones from the brain trigger puberty, usually between about 8 and 14. Growth spurts, voice changes and brain reorganisation follow.
+bo-life.c3.viz.steps.0	Brain signals
+bo-life.c3.viz.steps.1	Sex hormones rise
+bo-life.c3.viz.steps.2	Growth spurt
+bo-life.c3.viz.steps.3	Adult body
+bo-life.c4.title	The teenage brain
+bo-life.c4.text	The prefrontal cortex, which handles planning and self-control, keeps maturing until the mid-20s, while reward systems mature earlier.
+bo-life.c4.viz.l.t	Earlier
+bo-life.c4.viz.l.items.0	reward and emotion systems
+bo-life.c4.viz.r.t	Later, mid-20s
+bo-life.c4.viz.r.items.0	planning and impulse control
+bo-life.c5.title	Peak years
+bo-life.c5.text	Different abilities peak at different ages. Speed and muscle often peak in the 20s; vocabulary and knowledge keep growing into the 60s and beyond.
+bo-life.c5.viz.items.0.a	Sprinting
+bo-life.c5.viz.items.0.b	20s
+bo-life.c5.viz.items.1.a	Raw processing speed
+bo-life.c5.viz.items.1.b	20s
+bo-life.c5.viz.items.2.a	Vocabulary
+bo-life.c5.viz.items.2.b	60s+
+bo-life.c5.viz.items.3.a	Emotional understanding
+bo-life.c5.viz.items.3.b	40s–60s
+bo-life.c6.title	Why we age
+bo-life.c6.text	Ageing comes from accumulated damage: DNA errors, worn proteins, shrinking chromosome tips called telomeres and cells that stop dividing.
+bo-life.c6.viz.items.0	DNA damage
+bo-life.c6.viz.items.1	Shorter telomeres
+bo-life.c6.viz.items.2	Worn-out proteins
+bo-life.c6.viz.items.3	"Zombie" senescent cells
+bo-life.c7.title	Life expectancy
+bo-life.c7.text	Life expectancy at birth in Portugal rose from about 63 in 1960 to over 81 today, thanks to vaccines, clean water, nutrition and healthcare.
+bo-life.c7.viz.unit	years at birth, Portugal
+bo-life.c8.title	Blue zones
+bo-life.c8.text	Regions where people often live past 100, like Okinawa and Sardinia, share habits: daily movement, plant-rich diets, strong social ties and purpose.
+bo-life.c8.viz.items.0	Natural daily movement
+bo-life.c8.viz.items.1	Plant-rich diet
+bo-life.c8.viz.items.2	Close community
+bo-life.c8.viz.items.3	A sense of purpose
+bo-life.c9.title	Ageing well
+bo-life.c9.text	Evidence points to a few big levers: stay active, keep muscles strong, sleep well, don't smoke, keep learning and stay connected with people.
+bo-life.c9.viz.items.0	Move daily
+bo-life.c9.viz.items.1	Strength train
+bo-life.c9.viz.items.2	Sleep well
+bo-life.c9.viz.items.3	Don't smoke
+bo-life.c9.viz.items.4	Stay social
+bo-genes.title	Genes and heredity
+bo-genes.summary	Why you look like your family.
+bo-genes.q0.q	Two brown-eyed parents can have a blue-eyed child because…
+bo-genes.q0.o0	of mutations
+bo-genes.q0.o1	both carry a recessive blue version
+bo-genes.q0.o2	it's impossible
+bo-genes.q0.x	A 1 in 4 chance if both are Bb.
+bo-genes.q1.q	Who discovered the basic rules of inheritance?
+bo-genes.q1.o0	Darwin
+bo-genes.q1.o1	Gregor Mendel
+bo-genes.q1.o2	Watson
+bo-genes.q1.x	Using pea plants.
+bo-genes.c0.title	Half from each parent
+bo-genes.c0.text	You inherit 23 chromosomes from your mother and 23 from your father. Each pair carries two versions of most genes.
+bo-genes.c0.viz.l.t	From mother
+bo-genes.c0.viz.l.items.0	23 chromosomes
+bo-genes.c0.viz.l.items.1	mitochondria
+bo-genes.c0.viz.r.t	From father
+bo-genes.c0.viz.r.items.0	23 chromosomes
+bo-genes.c0.viz.r.items.1	X or Y
+bo-genes.c1.title	Mendel's peas
+bo-genes.c1.text	In the 1860s, monk Gregor Mendel bred pea plants and found traits pass in predictable ratios. He's the father of genetics, though ignored until 1900.
+bo-genes.c1.viz.events.0.l	pea experiments
+bo-genes.c1.viz.events.1.l	published
+bo-genes.c1.viz.events.2.l	rediscovered
+bo-genes.c1.viz.events.3.l	DNA structure
+bo-genes.c2.title	Dominant and recessive
+bo-genes.c2.text	A dominant version shows up if you have one copy; a recessive one only shows if you have two. Two brown-eyed parents can have a blue-eyed child.
+bo-genes.c2.viz.items.0.a	Bb
+bo-genes.c2.viz.items.0.b	shows dominant trait
+bo-genes.c2.viz.items.1.a	bb
+bo-genes.c2.viz.items.1.b	shows recessive trait
+bo-genes.c2.viz.items.2.a	Two Bb parents
+bo-genes.c2.viz.items.2.b	1 in 4 chance of bb
+bo-genes.c3.title	Boy or girl
+bo-genes.c3.text	Usually, two X chromosomes lead to female development and an X with a Y to male. The father's sperm carries either an X or a Y.
+bo-genes.c3.viz.l.t	XX
+bo-genes.c3.viz.l.items.0	usually female
+bo-genes.c3.viz.r.t	XY
+bo-genes.c3.viz.r.items.0	usually male
+bo-genes.c4.title	Most traits are complex
+bo-genes.c4.text	Height, intelligence and most diseases are shaped by hundreds of genes plus environment. There's no single "height gene".
+bo-genes.c4.viz.root	Height
+bo-genes.c4.viz.items.0	Hundreds of genes
+bo-genes.c4.viz.items.1	Nutrition
+bo-genes.c4.viz.items.2	Health in childhood
+bo-genes.c5.title	Nature and nurture
+bo-genes.c5.text	Twin studies compare identical and non-identical twins to estimate how much variation comes from genes. For most traits, both matter a lot.
+bo-genes.c5.viz.l.t	Identical twins
+bo-genes.c5.viz.l.items.0	100% shared genes
+bo-genes.c5.viz.r.t	Non-identical twins
+bo-genes.c5.viz.r.items.0	~50% shared genes
+bo-genes.c6.title	The Human Genome Project
+bo-genes.c6.text	Completed in 2003, it read the 3 billion letters of human DNA. The first genome cost about $3 billion; today one costs a few hundred dollars.
+bo-genes.c6.viz.unit	dollars
+bo-genes.c6.viz.items.0.l	First genome, 2003
+bo-genes.c6.viz.items.3.l	Today
+bo-genes.c7.title	We're 99.9% the same
+bo-genes.c7.text	Any two people share about 99.9% of their DNA. Humans also share about 98–99% with chimpanzees and around 60% of genes with bananas.
+bo-genes.c7.viz.unit	% DNA similarity (approx.)
+bo-genes.c7.viz.items.0.l	Two humans
+bo-genes.c7.viz.items.1.l	Chimpanzee
+bo-genes.c7.viz.items.2.l	Mouse genes
+bo-genes.c7.viz.items.3.l	Banana genes
+bo-genes.c8.title	Epigenetics
+bo-genes.c8.text	Chemical tags on DNA switch genes on and off without changing the code. Diet, stress and environment can change these tags.
+bo-genes.c8.viz.steps.0	Environment
+bo-genes.c8.viz.steps.1	Chemical tags on DNA
+bo-genes.c8.viz.steps.2	Genes on or off
+bo-genes.c8.viz.steps.3	Different cell behaviour
+bo-genes.c9.title	Gene editing
+bo-genes.c9.text	CRISPR, developed in 2012, lets scientists cut and edit DNA precisely. In 2023 the first CRISPR-based treatment was approved, for sickle cell disease.
+bo-genes.c9.viz.events.0.l	CRISPR editing shown
+bo-genes.c9.viz.events.1.l	Nobel Prize
+bo-genes.c9.viz.events.2.l	first approved therapy
+bo-teeth.title	Teeth and the mouth
+bo-teeth.summary	Small but mighty tools.
+bo-teeth.q0.q	What is the hardest substance in the body?
+bo-teeth.q0.o0	Bone
+bo-teeth.q0.o1	Tooth enamel
+bo-teeth.q0.o2	Nails
+bo-teeth.q0.x	It covers the crown.
+bo-teeth.q1.q	After brushing, you should…
+bo-teeth.q1.o0	rinse well with water
+bo-teeth.q1.o1	spit but not rinse
+bo-teeth.q1.o2	use mouthwash immediately
+bo-teeth.q1.x	Fluoride stays on your teeth.
+bo-teeth.c0.title	Two sets
+bo-teeth.c0.text	Children have 20 baby teeth; adults have up to 32 permanent ones, including four wisdom teeth that often appear late, or never.
+bo-teeth.c0.viz.unit	teeth
+bo-teeth.c0.viz.items.0.l	Baby teeth
+bo-teeth.c0.viz.items.1.l	Adult teeth
+bo-teeth.c1.title	Layers of a tooth
+bo-teeth.c1.text	Enamel, the hardest substance in the body, covers the crown. Beneath is dentine, and in the centre the pulp with nerves and blood vessels.
+bo-teeth.c1.viz.items.0	Enamel: hardest
+bo-teeth.c1.viz.items.1	Dentine
+bo-teeth.c1.viz.items.2	Pulp: nerves and vessels
+bo-teeth.c1.viz.items.3	Root in the jaw
+bo-teeth.c2.title	How cavities form
+bo-teeth.c2.text	Bacteria in plaque eat sugars and make acid. Acid dissolves enamel; repeated attacks create a hole, a cavity.
+bo-teeth.c2.viz.steps.0	Sugar
+bo-teeth.c2.viz.steps.1	Bacteria make acid
+bo-teeth.c2.viz.steps.2	Enamel dissolves
+bo-teeth.c2.viz.steps.3	Cavity
+bo-teeth.c3.title	How often, not how much
+bo-teeth.c3.text	Each sugary snack starts a 20–30 minute acid attack. Sipping sweet drinks all day is worse for teeth than having the same sugar at once.
+bo-teeth.c3.viz.l.t	Worse
+bo-teeth.c3.viz.l.items.0	sipping all day
+bo-teeth.c3.viz.l.items.1	many attacks
+bo-teeth.c3.viz.r.t	Better
+bo-teeth.c3.viz.r.items.0	with a meal
+bo-teeth.c3.viz.r.items.1	one attack
+bo-teeth.c4.title	Fluoride
+bo-teeth.c4.text	Fluoride makes enamel more resistant to acid and helps repair early damage. Brushing twice daily with fluoride toothpaste is the main protection.
+bo-teeth.c4.viz.steps.0	Fluoride in toothpaste
+bo-teeth.c4.viz.steps.1	Strengthens enamel
+bo-teeth.c4.viz.steps.2	Resists acid
+bo-teeth.c4.viz.steps.3	Fewer cavities
+bo-teeth.c5.title	Brushing well
+bo-teeth.c5.text	Brush for two minutes, twice a day, then spit but don't rinse, so fluoride stays on teeth. Floss or interdental brushes clean between teeth.
+bo-teeth.c5.viz.items.0	2 minutes, twice a day
+bo-teeth.c5.viz.items.1	Spit, don't rinse
+bo-teeth.c5.viz.items.2	Clean between teeth
+bo-teeth.c5.viz.items.3	Change brush every 3 months
+bo-teeth.c6.title	Gums matter
+bo-teeth.c6.text	Gum disease starts with bleeding gums and can lead to tooth loss. It's linked to heart disease and diabetes too.
+bo-teeth.c6.viz.steps.0	Plaque at gum line
+bo-teeth.c6.viz.steps.1	Inflamed, bleeding gums
+bo-teeth.c6.viz.steps.2	Gums recede
+bo-teeth.c6.viz.steps.3	Teeth loosen
+bo-teeth.c7.title	Saliva
+bo-teeth.c7.text	You make about 0.5–1.5 litres of saliva a day. It washes teeth, neutralises acid, starts digestion and helps you taste.
+bo-teeth.c7.viz.items.0	Washes away food
+bo-teeth.c7.viz.items.1	Neutralises acid
+bo-teeth.c7.viz.items.2	Starts digestion
+bo-teeth.c7.viz.items.3	Helps taste and speech
+bo-teeth.c8.title	Tooth types
+bo-teeth.c8.text	Incisors cut, canines tear, premolars and molars crush. Our mix of teeth reflects an omnivore's diet.
+bo-teeth.c8.viz.items.0.a	Incisors
+bo-teeth.c8.viz.items.0.b	cutting
+bo-teeth.c8.viz.items.1.a	Canines
+bo-teeth.c8.viz.items.1.b	tearing
+bo-teeth.c8.viz.items.2.a	Premolars
+bo-teeth.c8.viz.items.2.b	crushing
+bo-teeth.c8.viz.items.3.a	Molars
+bo-teeth.c8.viz.items.3.b	grinding
+bo-teeth.c9.title	Teeth tell stories
+bo-teeth.c9.text	Teeth record your life: archaeologists read diet, age and even where someone grew up from chemicals in tooth enamel.
+bo-teeth.c9.viz.items.0	Age at death
+bo-teeth.c9.viz.items.1	Diet
+bo-teeth.c9.viz.items.2	Childhood illness
+bo-teeth.c9.viz.items.3	Where they grew up
+bo-medicine.title	Milestones of medicine
+bo-medicine.summary	How we learnt to heal.
+bo-medicine.q0.q	Who showed that handwashing saves lives?
+bo-medicine.q0.o0	Pasteur
+bo-medicine.q0.o1	Ignaz Semmelweis
+bo-medicine.q0.o2	Fleming
+bo-medicine.q0.x	In 1847, on maternity wards.
+bo-medicine.q1.q	Who discovered penicillin?
+bo-medicine.q1.o0	Louis Pasteur
+bo-medicine.q1.o1	Alexander Fleming
+bo-medicine.q1.o2	Robert Koch
+bo-medicine.q1.x	In 1928, by accident.
+bo-medicine.q2.q	What did Harvey show in 1628?
+bo-medicine.q2.o0	Germs cause disease
+bo-medicine.q2.o1	Blood circulates in a loop
+bo-medicine.q2.o2	X-rays
+bo-medicine.q2.x	The heart pumps blood around the body.
+bo-medicine.c0.title	Hippocrates
+bo-medicine.c0.text	Around 400 BCE, Hippocrates taught that diseases have natural causes, not divine ones, and that doctors should observe carefully. The Hippocratic Oath is named after him.
+bo-medicine.c0.viz.l.t	Before
+bo-medicine.c0.viz.l.items.0	illness from gods
+bo-medicine.c0.viz.l.items.1	spells
+bo-medicine.c0.viz.r.t	Hippocrates
+bo-medicine.c0.viz.r.items.0	natural causes
+bo-medicine.c0.viz.r.items.1	observation
+bo-medicine.c1.title	Four humours
+bo-medicine.c1.text	For 2,000 years, doctors believed health depended on balancing four fluids: blood, phlegm, yellow bile and black bile. It led to bloodletting, which often did harm.
+bo-medicine.c1.viz.items.0.a	Blood
+bo-medicine.c1.viz.items.0.b	sanguine
+bo-medicine.c1.viz.items.1.a	Phlegm
+bo-medicine.c1.viz.items.1.b	phlegmatic
+bo-medicine.c1.viz.items.2.a	Yellow bile
+bo-medicine.c1.viz.items.2.b	choleric
+bo-medicine.c1.viz.items.3.a	Black bile
+bo-medicine.c1.viz.items.3.b	melancholic
+bo-medicine.c2.title	Anatomy
+bo-medicine.c2.text	In 1543 Andreas Vesalius published accurate drawings of the human body from dissections, correcting many errors that had been believed since ancient times.
+bo-medicine.c2.viz.events.0.y	~170 CE
+bo-medicine.c2.viz.events.0.l	Galen's anatomy
+bo-medicine.c2.viz.events.1.l	Vesalius' Fabrica
+bo-medicine.c2.viz.events.2.l	Harvey's circulation
+bo-medicine.c3.title	Circulation
+bo-medicine.c3.text	In 1628 William Harvey showed that the heart pumps blood around the body in a closed loop, rather than the liver constantly making new blood.
+bo-medicine.c3.viz.steps.0	Heart
+bo-medicine.c3.viz.steps.1	Arteries
+bo-medicine.c3.viz.steps.2	Veins
+bo-medicine.c3.viz.steps.3	Heart
+bo-medicine.c4.title	Germ theory
+bo-medicine.c4.text	In the 1860s, Louis Pasteur and Robert Koch showed that microbes cause many diseases. It transformed medicine, food safety and hygiene.
+bo-medicine.c4.viz.steps.0	Microbes discovered
+bo-medicine.c4.viz.steps.1	Linked to diseases
+bo-medicine.c4.viz.steps.2	Hygiene and vaccines
+bo-medicine.c4.viz.steps.3	Fewer deaths
+bo-medicine.c5.title	Washing hands
+bo-medicine.c5.text	In 1847 Ignaz Semmelweis cut deaths of new mothers dramatically by making doctors wash their hands. Colleagues mocked him; he was proved right after his death.
+bo-medicine.c5.viz.unit	mothers' death rate, %
+bo-medicine.c5.viz.items.0.l	Worst month before
+bo-medicine.c5.viz.items.1.l	After handwashing
+bo-medicine.c6.title	Anaesthesia
+bo-medicine.c6.text	Surgery before 1846 meant enduring pain fully awake. Ether, and then chloroform, made long, careful operations possible.
+bo-medicine.c6.viz.events.0.l	ether in surgery
+bo-medicine.c6.viz.events.1.l	chloroform
+bo-medicine.c6.viz.events.2.l	antiseptic surgery
+bo-medicine.c6.viz.events.3.y	1900s
+bo-medicine.c6.viz.events.3.l	blood transfusions
+bo-medicine.c7.title	Penicillin
+bo-medicine.c7.text	In 1928 Alexander Fleming noticed mould killing bacteria on a plate. Developed into a drug in the 1940s, penicillin and later antibiotics saved hundreds of millions of lives.
+bo-medicine.c7.viz.steps.0	Mould on a plate, 1928
+bo-medicine.c7.viz.steps.1	Bacteria die nearby
+bo-medicine.c7.viz.steps.2	Purified, 1940s
+bo-medicine.c7.viz.steps.3	Antibiotic era
+bo-medicine.c8.title	A Portuguese Nobel
+bo-medicine.c8.text	Egas Moniz won Portugal's first Nobel Prize, in 1949, for the lobotomy, now abandoned and controversial. His invention of cerebral angiography, imaging brain blood vessels, has lasted.
+bo-medicine.c8.viz.l.t	Lasting
+bo-medicine.c8.viz.l.items.0	cerebral angiography, 1927
+bo-medicine.c8.viz.r.t	Abandoned
+bo-medicine.c8.viz.r.items.0	lobotomy, Nobel 1949
+bo-medicine.c9.title	Modern medicine
+bo-medicine.c9.text	Recent decades brought imaging scans, organ transplants, keyhole surgery, mRNA vaccines and targeted cancer drugs.
+bo-medicine.c9.viz.events.0.l	X-rays
+bo-medicine.c9.viz.events.1.y	1970s
+bo-medicine.c9.viz.events.1.l	CT and MRI
+bo-medicine.c9.viz.events.2.l	first IVF baby
+bo-medicine.c9.viz.events.3.l	mRNA vaccines
+bo-nutrition.title	Vitamins and minerals
+bo-nutrition.summary	Small nutrients, big jobs.
+bo-nutrition.q0.q	Which vitamin did sailors lack when they got scurvy?
+bo-nutrition.q0.o0	Vitamin A
+bo-nutrition.q0.o1	Vitamin C
+bo-nutrition.q0.o2	Vitamin D
+bo-nutrition.q0.x	Citrus fruit cures it.
+bo-nutrition.q1.q	What reduces iron absorption from a meal?
+bo-nutrition.q1.o0	Orange juice
+bo-nutrition.q1.o1	Tea or coffee
+bo-nutrition.q1.o2	Water
+bo-nutrition.q1.x	Vitamin C helps; tea hinders.
+bo-nutrition.c0.title	What vitamins are
+bo-nutrition.c0.text	Vitamins are compounds the body needs in tiny amounts but mostly can't make. There are 13, divided into fat-soluble and water-soluble.
+bo-nutrition.c0.viz.l.t	Fat-soluble
+bo-nutrition.c0.viz.l.items.0	A, D, E, K
+bo-nutrition.c0.viz.l.items.1	stored in the body
+bo-nutrition.c0.viz.r.t	Water-soluble
+bo-nutrition.c0.viz.r.items.0	B group and C
+bo-nutrition.c0.viz.r.items.1	need regular intake
+bo-nutrition.c1.title	Scurvy and vitamin C
+bo-nutrition.c1.text	Sailors on long voyages got scurvy: bleeding gums and weakness. In 1747 James Lind showed citrus fruit cured it. Vasco da Gama's crew suffered terribly from it.
+bo-nutrition.c1.viz.steps.0	Long voyage
+bo-nutrition.c1.viz.steps.1	No fresh fruit
+bo-nutrition.c1.viz.steps.2	Lack of vitamin C
+bo-nutrition.c1.viz.steps.3	Scurvy
+bo-nutrition.c2.title	Vitamin D
+bo-nutrition.c2.text	Your skin makes vitamin D in sunlight. It helps absorb calcium for bones. In winter at northern latitudes, many people run low.
+bo-nutrition.c2.viz.steps.0	Sunlight on skin
+bo-nutrition.c2.viz.steps.1	Vitamin D made
+bo-nutrition.c2.viz.steps.2	Calcium absorbed
+bo-nutrition.c2.viz.steps.3	Strong bones
+bo-nutrition.c3.title	Vitamin A
+bo-nutrition.c3.text	Vitamin A is vital for vision in dim light and for immunity. Carrots, sweet potatoes and leafy greens provide it as beta-carotene.
+bo-nutrition.c3.viz.items.0.a	Vitamin A
+bo-nutrition.c3.viz.items.0.b	vision and immunity
+bo-nutrition.c3.viz.items.1.a	Vitamin K
+bo-nutrition.c3.viz.items.1.b	blood clotting
+bo-nutrition.c3.viz.items.2.a	Vitamin B12
+bo-nutrition.c3.viz.items.2.b	nerves and blood
+bo-nutrition.c3.viz.items.3.a	Folate
+bo-nutrition.c3.viz.items.3.b	cell division
+bo-nutrition.c4.title	B12
+bo-nutrition.c4.text	Vitamin B12 is found almost only in animal foods, so people on vegan diets usually need fortified foods or supplements.
+bo-nutrition.c4.viz.items.0	Meat and fish
+bo-nutrition.c4.viz.items.1	Eggs
+bo-nutrition.c4.viz.items.2	Dairy
+bo-nutrition.c4.viz.items.3	Fortified foods
+bo-nutrition.c5.title	Iron
+bo-nutrition.c5.text	Iron carries oxygen in haemoglobin. Vitamin C helps absorb iron from plants; tea and coffee with meals reduce it.
+bo-nutrition.c5.viz.l.t	Helps absorption
+bo-nutrition.c5.viz.l.items.0	vitamin C
+bo-nutrition.c5.viz.l.items.1	meat with vegetables
+bo-nutrition.c5.viz.r.t	Reduces absorption
+bo-nutrition.c5.viz.r.items.0	tea
+bo-nutrition.c5.viz.r.items.1	coffee
+bo-nutrition.c5.viz.r.items.2	with meals
+bo-nutrition.c6.title	Calcium
+bo-nutrition.c6.text	About 99% of the body's calcium is in bones and teeth. Dairy, canned fish with bones, tofu and greens are good sources.
+bo-nutrition.c6.viz.unit	% of body calcium
+bo-nutrition.c6.viz.items.0.l	Bones and teeth
+bo-nutrition.c6.viz.items.1.l	Blood and cells
+bo-nutrition.c7.title	Salt
+bo-nutrition.c7.text	We need some sodium, but most people eat far more than the WHO limit of 5 g of salt a day. Much of it hides in bread, processed meats and ready meals.
+bo-nutrition.c7.viz.unit	grams of salt a day
+bo-nutrition.c7.viz.items.0.l	WHO limit
+bo-nutrition.c7.viz.items.1.l	Typical intake, Portugal
+bo-nutrition.c8.title	Fibre
+bo-nutrition.c8.text	Fibre feeds gut bacteria, keeps digestion regular and helps control blood sugar and cholesterol. Most adults eat too little; aim for about 25–30 g a day.
+bo-nutrition.c8.viz.items.0	Wholegrains
+bo-nutrition.c8.viz.items.1	Beans and lentils
+bo-nutrition.c8.viz.items.2	Vegetables
+bo-nutrition.c8.viz.items.3	Fruit
+bo-nutrition.c8.viz.items.4	Nuts
+bo-nutrition.c9.title	Food first
+bo-nutrition.c9.text	For most healthy people, a varied diet supplies what they need. Supplements help in specific cases, like vitamin D in winter or folic acid in pregnancy; more isn't better.
+bo-nutrition.c9.viz.items.0.w	More vitamins = more health
+bo-nutrition.c9.viz.items.0.r	Varied food first, supplements for specific needs
+bo-stress.title	Stress and the body
+bo-stress.summary	Why stress helps, and when it harms.
+bo-stress.q0.q	What does the Yerkes–Dodson law say?
+bo-stress.q0.o0	Stress is always bad
+bo-stress.q0.o1	Moderate arousal gives the best performance
+bo-stress.q0.o2	Stress improves memory forever
+bo-stress.q0.x	Too little or too much hurts performance.
+bo-stress.q1.q	Which system slows the heart and restarts digestion?
+bo-stress.q1.o0	Fight or flight
+bo-stress.q1.o1	Rest and digest
+bo-stress.q1.o2	Immune system
+bo-stress.q1.x	The parasympathetic system.
+bo-stress.c0.title	The stress response
+bo-stress.c0.text	Stress triggers two systems: a fast nerve response with adrenaline, and a slower hormone response with cortisol, preparing body and mind for a challenge.
+bo-stress.c0.viz.l.t	Fast
+bo-stress.c0.viz.l.items.0	nerves and adrenaline
+bo-stress.c0.viz.l.items.1	seconds
+bo-stress.c0.viz.r.t	Slow
+bo-stress.c0.viz.r.items.0	hormones and cortisol
+bo-stress.c0.viz.r.items.1	minutes to hours
+bo-stress.c1.title	Good stress
+bo-stress.c1.text	Short bursts of stress sharpen focus and performance: think of an exam or a race. The problem is stress that never switches off.
+bo-stress.c1.viz.l.t	Short-term
+bo-stress.c1.viz.l.items.0	sharper focus
+bo-stress.c1.viz.l.items.1	energy
+bo-stress.c1.viz.l.items.2	recovers
+bo-stress.c1.viz.r.t	Chronic
+bo-stress.c1.viz.r.items.0	poor sleep
+bo-stress.c1.viz.r.items.1	weaker immunity
+bo-stress.c1.viz.r.items.2	exhaustion
+bo-stress.c2.title	The performance curve
+bo-stress.c2.text	Performance rises with arousal up to a point, then falls. Too little stress is boring; too much overwhelms. Psychologists call it the Yerkes–Dodson law.
+bo-stress.c2.viz.unit	performance (illustrative)
+bo-stress.c2.viz.items.0.l	Low stress
+bo-stress.c2.viz.items.1.l	Moderate stress
+bo-stress.c2.viz.items.2.l	High stress
+bo-stress.c3.title	Stress and the heart
+bo-stress.c3.text	Long-term stress raises blood pressure and heart-disease risk. Sudden extreme stress can even cause temporary "broken heart syndrome".
+bo-stress.c3.viz.steps.0	Chronic stress
+bo-stress.c3.viz.steps.1	Raised blood pressure
+bo-stress.c3.viz.steps.2	Inflamed vessels
+bo-stress.c3.viz.steps.3	Higher heart risk
+bo-stress.c4.title	Stress and the gut
+bo-stress.c4.text	The gut and brain talk constantly. Stress can cause stomach aches, nausea or bowel changes; "butterflies in the stomach" are real.
+bo-stress.c4.viz.steps.0	Brain senses stress
+bo-stress.c4.viz.steps.1	Signals to the gut
+bo-stress.c4.viz.steps.2	Digestion changes
+bo-stress.c4.viz.steps.3	Butterflies
+bo-stress.c5.title	Stress and immunity
+bo-stress.c5.text	Brief stress mobilises immune cells; chronic stress suppresses immunity. Students catch more colds during exam season.
+bo-stress.c5.viz.l.t	Brief stress
+bo-stress.c5.viz.l.items.0	immunity boosted
+bo-stress.c5.viz.r.t	Chronic stress
+bo-stress.c5.viz.r.items.0	immunity suppressed
+bo-stress.c6.title	Rest and digest
+bo-stress.c6.text	The parasympathetic system is the counterweight to fight-or-flight: it slows the heart and restarts digestion. Slow breathing switches it on.
+bo-stress.c6.viz.l.t	Fight or flight
+bo-stress.c6.viz.l.items.0	heart fast
+bo-stress.c6.viz.l.items.1	digestion off
+bo-stress.c6.viz.r.t	Rest and digest
+bo-stress.c6.viz.r.items.0	heart slow
+bo-stress.c6.viz.r.items.1	digestion on
+bo-stress.c7.title	What helps
+bo-stress.c7.text	Evidence-based stress relievers include exercise, sleep, time in nature, talking to friends, slow breathing and limiting news and alcohol.
+bo-stress.c7.viz.items.0	Exercise
+bo-stress.c7.viz.items.1	Sleep
+bo-stress.c7.viz.items.2	Nature
+bo-stress.c7.viz.items.3	Friends
+bo-stress.c7.viz.items.4	Slow breathing
+bo-stress.c8.title	Reappraisal
+bo-stress.c8.text	Seeing a pounding heart as "my body getting ready" rather than "I'm panicking" improves performance in studies. How you interpret stress matters.
+bo-stress.c8.viz.items.0.w	"I'm so nervous"
+bo-stress.c8.viz.items.0.r	"My body is getting ready to perform"
+bo-stress.c9.title	Box breathing
+bo-stress.c9.text	Used by pilots and athletes: breathe in for 4, hold for 4, out for 4, hold for 4. Repeat four times.
+bo-stress.c9.viz.steps.0	In for 4
+bo-stress.c9.viz.steps.1	Hold for 4
+bo-stress.c9.viz.steps.2	Out for 4
+bo-stress.c9.viz.steps.3	Hold for 4
+bo-pain.title	Pain and the nerves
+bo-pain.summary	Your body's alarm system.
+bo-pain.q0.q	Why does rubbing a bumped elbow help?
+bo-pain.q0.o0	It heals faster
+bo-pain.q0.o1	Touch signals compete with pain signals
+bo-pain.q0.o2	It cools it
+bo-pain.q0.x	The gate theory.
+bo-pain.q1.q	Why can heart problems cause arm pain?
+bo-pain.q1.o0	Blood flows there
+bo-pain.q1.o1	Nerves share pathways: referred pain
+bo-pain.q1.o2	It's unrelated
+bo-pain.q1.x	The brain misreads the source.
+bo-pain.c0.title	Pain is a protector
+bo-pain.c0.text	Pain warns of damage. People born unable to feel pain often injure themselves badly without noticing.
+bo-pain.c0.viz.steps.0	Damage detected
+bo-pain.c0.viz.steps.1	Alarm signal
+bo-pain.c0.viz.steps.2	Brain creates pain
+bo-pain.c0.viz.steps.3	You protect the area
+bo-pain.c1.title	Nociceptors
+bo-pain.c1.text	Special nerve endings called nociceptors detect harmful heat, pressure or chemicals and send signals to the spinal cord and brain.
+bo-pain.c1.viz.items.0	Harmful heat
+bo-pain.c1.viz.items.1	Crushing pressure
+bo-pain.c1.viz.items.2	Chemicals from damaged cells
+bo-pain.c1.viz.items.3	Extreme cold
+bo-pain.c2.title	Fast and slow pain
+bo-pain.c2.text	Stub a toe and you feel a sharp, quick pain first, then a dull ache. They travel along different nerve fibres at different speeds.
+bo-pain.c2.viz.l.t	Fast pain
+bo-pain.c2.viz.l.items.0	sharp
+bo-pain.c2.viz.l.items.1	thick fibres
+bo-pain.c2.viz.l.items.2	quick
+bo-pain.c2.viz.r.t	Slow pain
+bo-pain.c2.viz.r.items.0	dull ache
+bo-pain.c2.viz.r.items.1	thin fibres
+bo-pain.c2.viz.r.items.2	lasts longer
+bo-pain.c3.title	The brain decides
+bo-pain.c3.text	Pain is made by the brain, not the injury alone. Attention, fear and context can turn it up or down. Soldiers have ignored serious wounds in battle.
+bo-pain.c3.viz.steps.0	Signal from body
+bo-pain.c3.viz.steps.1	Brain weighs context
+bo-pain.c3.viz.steps.2	Pain felt, stronger or weaker
+bo-pain.c4.title	The gate theory
+bo-pain.c4.text	Rubbing a bumped elbow helps because touch signals compete with pain signals at "gates" in the spinal cord.
+bo-pain.c4.viz.steps.0	Bump elbow
+bo-pain.c4.viz.steps.1	Rub it
+bo-pain.c4.viz.steps.2	Touch signals block the gate
+bo-pain.c4.viz.steps.3	Less pain
+bo-pain.c5.title	Referred pain
+bo-pain.c5.text	Pain can be felt far from its source. Heart problems can show up as arm or jaw pain because nerves share pathways.
+bo-pain.c5.viz.items.0.a	Heart
+bo-pain.c5.viz.items.0.b	left arm or jaw
+bo-pain.c5.viz.items.1.a	Diaphragm
+bo-pain.c5.viz.items.1.b	shoulder tip
+bo-pain.c5.viz.items.2.a	Appendix
+bo-pain.c5.viz.items.2.b	starts near the navel
+bo-pain.c6.title	Phantom limbs
+bo-pain.c6.text	Many amputees feel the missing limb, sometimes painfully. Mirror therapy, which tricks the brain with a reflection, can help.
+bo-pain.c6.viz.steps.0	Limb lost
+bo-pain.c6.viz.steps.1	Brain map remains
+bo-pain.c6.viz.steps.2	Phantom sensations
+bo-pain.c6.viz.steps.3	Mirror therapy retrains
+bo-pain.c7.title	Painkillers
+bo-pain.c7.text	Paracetamol and anti-inflammatories like ibuprofen work differently. Anti-inflammatories block chemicals that sensitise nerves; opioids act on the brain and spinal cord.
+bo-pain.c7.viz.items.0.a	Anti-inflammatories
+bo-pain.c7.viz.items.0.b	reduce inflammation chemicals
+bo-pain.c7.viz.items.1.a	Paracetamol
+bo-pain.c7.viz.items.1.b	central action, not fully understood
+bo-pain.c7.viz.items.2.a	Opioids
+bo-pain.c7.viz.items.2.b	strong, risk of dependence
+bo-pain.c8.title	Placebo
+bo-pain.c8.text	A sugar pill can reduce pain when people expect it to, because expectation triggers the brain's own pain-relief chemicals. Placebos work best for pain and nausea.
+bo-pain.c8.viz.steps.0	Expect relief
+bo-pain.c8.viz.steps.1	Brain releases endorphins
+bo-pain.c8.viz.steps.2	Pain reduced
+bo-pain.c9.title	Chronic pain
+bo-pain.c9.text	When pain lasts beyond three months, the nervous system itself can become oversensitive. Treatment often combines movement, therapy and medicine.
+bo-pain.c9.viz.items.0	Graded movement
+bo-pain.c9.viz.items.1	Understanding pain
+bo-pain.c9.viz.items.2	Sleep
+bo-pain.c9.viz.items.3	Medicines where suitable
+bo-odd.title	The body's odd facts
+bo-odd.summary	Surprising things about you.
+bo-odd.q0.q	What is the "funny bone"?
+bo-odd.q0.o0	A small bone
+bo-odd.q0.o1	The ulnar nerve
+bo-odd.q0.o2	A tendon
+bo-odd.q0.x	It runs close to the skin.
+bo-odd.q1.q	Why are you taller in the morning?
+bo-odd.q1.o0	You grow at night
+bo-odd.q1.o1	Spinal discs recover overnight
+bo-odd.q1.o2	Your feet swell
+bo-odd.q1.x	About 1 cm.
+bo-odd.c0.title	Why we yawn
+bo-odd.c0.text	Yawning may cool the brain and increase alertness. It's contagious: seeing, hearing or even reading about yawning can make you yawn.
+bo-odd.c0.viz.items.0	Cools the brain
+bo-odd.c0.viz.items.1	Boosts alertness
+bo-odd.c0.viz.items.2	Contagious
+bo-odd.c0.viz.items.3	Even dogs catch it from us
+bo-odd.c1.title	Hiccups
+bo-odd.c1.text	Hiccups are sudden spasms of the diaphragm, with the vocal cords snapping shut to make the "hic". Charles Osborne hiccuped for 68 years.
+bo-odd.c1.viz.steps.0	Diaphragm spasm
+bo-odd.c1.viz.steps.1	Air rushes in
+bo-odd.c1.viz.steps.2	Vocal cords snap shut
+bo-odd.c1.viz.steps.3	"Hic!"
+bo-odd.c2.title	Your stomach lining
+bo-odd.c2.text	Stomach acid is strong enough to dissolve some metals, so the stomach renews its protective lining every few days.
+bo-odd.c2.viz.items.0.v	pH 1.5–3.5
+bo-odd.c2.viz.items.0.l	stomach acid
+bo-odd.c2.viz.items.1.v	few days
+bo-odd.c2.viz.items.1.l	lining renewed
+bo-odd.c2.viz.items.2.v	~1.5 L
+bo-odd.c2.viz.items.2.l	gastric juice a day
+bo-odd.c3.title	Fingerprints
+bo-odd.c3.text	Fingerprints form before birth and are unique, even between identical twins. They may improve grip and touch sensitivity.
+bo-odd.c3.viz.items.0.a	Loops
+bo-odd.c3.viz.items.0.b	most common
+bo-odd.c3.viz.items.1.a	Whorls
+bo-odd.c3.viz.items.1.b	about a third
+bo-odd.c3.viz.items.2.a	Arches
+bo-odd.c3.viz.items.2.b	least common
+bo-odd.c4.title	Funny bone
+bo-odd.c4.text	Hitting your "funny bone" actually hits the ulnar nerve, which runs close to the skin at the elbow. That's why it tingles down to your little finger.
+bo-odd.c4.viz.items.0.w	It's a bone
+bo-odd.c4.viz.items.0.r	It's the ulnar nerve
+bo-odd.c5.title	Taller in the morning
+bo-odd.c5.text	You're about 1 cm taller in the morning: the discs in your spine compress during the day and recover overnight.
+bo-odd.c5.viz.unit	height change, cm
+bo-odd.c5.viz.items.0.l	Morning
+bo-odd.c5.viz.items.1.l	Evening
+bo-odd.c6.title	Stomach rumbles
+bo-odd.c6.text	Borborygmi, stomach rumbles, are gas and fluid moving through the gut. They're loudest when empty because there's less food to muffle them.
+bo-odd.c6.viz.steps.0	Gut muscles squeeze
+bo-odd.c6.viz.steps.1	Gas and fluid move
+bo-odd.c6.viz.steps.2	Rumble
+bo-odd.c6.viz.steps.3	Louder when empty
+bo-odd.c7.title	Brain freeze
+bo-odd.c7.text	Cold food on the roof of your mouth makes blood vessels constrict and then quickly widen, causing a sharp headache for a few seconds.
+bo-odd.c7.viz.steps.0	Cold on palate
+bo-odd.c7.viz.steps.1	Vessels narrow
+bo-odd.c7.viz.steps.2	Then widen fast
+bo-odd.c7.viz.steps.3	Brief headache
+bo-odd.c8.title	Belly button
+bo-odd.c8.text	Your navel is a scar from the umbilical cord. Belly buttons host hundreds of species of bacteria.
+bo-odd.c8.viz.items.0	Scar from the umbilical cord
+bo-odd.c8.viz.items.1	Innies most common
+bo-odd.c8.viz.items.2	Hundreds of bacterial species
+bo-odd.c9.title	Goosebumps from music
+bo-odd.c9.text	About half of people get "frisson", chills from moving music. It's linked to dopamine release at emotional peaks.
+bo-odd.c9.viz.steps.0	Music builds
+bo-odd.c9.viz.steps.1	Surprise or peak
+bo-odd.c9.viz.steps.2	Dopamine release
+bo-odd.c9.viz.steps.3	Chills

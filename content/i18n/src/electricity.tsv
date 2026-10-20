@@ -1,0 +1,1799 @@
+P.title	Electricity
+P.blurb	From Ohm's law to the fuse board in your hallway.
+el-basics.title	Voltage, current & resistance
+el-basics.summary	The three quantities behind every circuit, and the one law that ties them together.
+el-basics.q0.q	A 9 V battery drives current through a 450 Ω resistor. What is the current?
+el-basics.q0.o0	20 mA
+el-basics.q0.o1	2 A
+el-basics.q0.o2	4 mA
+el-basics.q0.o3	50 mA
+el-basics.q0.x	I = V ÷ R = 9 ÷ 450 = 0.02 A, which is 20 mA.
+el-basics.q1.q	In the water analogy, what plays the role of voltage?
+el-basics.q1.o0	How fast the water flows
+el-basics.q1.o1	The water pressure (tank height)
+el-basics.q1.o2	The width of the pipe
+el-basics.q1.x	Voltage is the push, like pressure. Flow is current; pipe narrowness is resistance.
+el-basics.q2.q	You double the resistance and keep the voltage the same. The current…
+el-basics.q2.o0	doubles
+el-basics.q2.o1	stays the same
+el-basics.q2.o2	halves
+el-basics.q2.x	I = V ÷ R. Twice the R with the same V gives half the current.
+el-basics.q3.q	Why do long cable runs need thicker cables?
+el-basics.q3.o0	Thicker cables look better
+el-basics.q3.o1	Resistance grows with length, so a bigger cross-section compensates
+el-basics.q3.o2	Long cables carry less voltage
+el-basics.q3.x	R = ρ × L ÷ A: more area offsets more length.
+el-basics.q4.q	What does a switch do?
+el-basics.q4.o0	Changes the voltage
+el-basics.q4.o1	Opens or closes the circuit
+el-basics.q4.o2	Stores energy
+el-basics.q4.x	Off = open loop, on = closed loop.
+el-basics.c0.title	Electricity is moving charge
+el-basics.c0.text	A current is a flow of electric charge. In a metal wire it's electrons nudging each other along. Each electron drifts slowly, but the push travels through the wire almost instantly, like water already filling a hose.\n\nBy convention, current is drawn flowing from + to −, the opposite way to the electrons. Every circuit diagram uses this convention.
+el-basics.c0.sketch.5	electrons drift this way
+el-basics.c0.sketch.6	current, by convention
+el-basics.c1.title	The water analogy
+el-basics.c1.text	Picture a tank feeding a pipe.\n• Voltage is the pressure, set by how high the water stands.\n• Current is how much water flows per second.\n• Resistance is a narrow section of pipe that limits the flow.\n\nMore pressure pushes more flow; a narrower pipe allows less. That's the whole idea behind Ohm's law.
+el-basics.c1.sketch.0	height ≈ voltage
+el-basics.c1.sketch.1	flow ≈ current
+el-basics.c1.sketch.2	narrow ≈ resistance
+el-basics.c2.title	Ohm's law
+el-basics.c2.text	Voltage (volts, V) equals current (amps, A) times resistance (ohms, Ω). Cover the quantity you want in the triangle and the other two tell you how to get it.
+el-basics.c2.formula	V = I × R
+el-basics.c2.example.0	12 V battery across a 4 Ω heater
+el-basics.c2.example.1	I = V ÷ R = 12 ÷ 4
+el-basics.c2.example.2	= 3 A
+el-basics.c2.sketch.0	V
+el-basics.c2.sketch.1	I
+el-basics.c2.sketch.2	R
+el-basics.c2.sketch.3	V = I × R
+el-basics.c2.sketch.4	I = V ÷ R
+el-basics.c2.sketch.5	R = V ÷ I
+el-basics.c3.title	Try it: dim the bulb
+el-basics.c3.text	Change the voltage and the resistance. Watch the current and the power the bulb turns into light and heat.
+el-basics.c4.title	It's the current that hurts
+el-basics.c4.text	Your body is a resistor too. What matters for safety is how much current passes through it, and which way.\nAround 1 mA you feel a tingle. Near 10 mA muscles can lock and you may not be able to let go. From roughly 50–100 mA across the chest, the heart can go into fibrillation.\n\nThat's why home RCDs trip at 30 mA: well before the dangerous zone.
+el-basics.c4.sketch.0	feel it
+el-basics.c4.sketch.1	can't let go
+el-basics.c4.sketch.2	RCD trips
+el-basics.c4.sketch.3	heart risk
+el-basics.c4.sketch.4	1 mA
+el-basics.c4.sketch.5	10 mA
+el-basics.c4.sketch.6	30 mA
+el-basics.c4.sketch.7	100 mA
+el-basics.c4.sketch.8	current through the body (log scale)
+el-basics.c5.title	Conductors and insulators
+el-basics.c5.text	In metals, some electrons are free to move, so current flows easily: copper, aluminium, silver. In insulators such as plastic, rubber, glass and dry wood, electrons are held tightly and almost no current flows.\n\nCables combine both: a copper core inside a plastic jacket.
+el-basics.c5.viz.l.t	Conductors
+el-basics.c5.viz.l.items.0	copper
+el-basics.c5.viz.l.items.1	aluminium
+el-basics.c5.viz.l.items.2	salt water
+el-basics.c5.viz.r.t	Insulators
+el-basics.c5.viz.r.items.0	PVC plastic
+el-basics.c5.viz.r.items.1	rubber
+el-basics.c5.viz.r.items.2	glass
+el-basics.c6.title	Resistance of a wire
+el-basics.c6.text	A wire's resistance grows with its length and shrinks with its cross-section. That's why long cable runs need thicker cables, and why thin extension leads get warm.
+el-basics.c6.example.0	100 m of 2.5 mm² copper (ρ ≈ 0.0175)
+el-basics.c6.example.1	0.0175 × 100 ÷ 2.5
+el-basics.c6.example.2	≈ 0.7 Ω
+el-basics.c6.viz.f	R = ρ × L ÷ A
+el-basics.c6.viz.items.0.s	ρ
+el-basics.c6.viz.items.0.m	resistivity of the metal
+el-basics.c6.viz.items.1.s	L
+el-basics.c6.viz.items.1.m	length
+el-basics.c6.viz.items.2.s	A
+el-basics.c6.viz.items.2.m	cross-section area
+el-basics.c7.title	Measuring with units
+el-basics.c7.text	Prefixes keep the numbers manageable. A phone charger supplies about 2 A, a sensor draws a few milliamps, and the national grid carries kilovolts.
+el-basics.c7.viz.items.0.a	milli (m)
+el-basics.c7.viz.items.0.b	one thousandth
+el-basics.c7.viz.items.1.a	kilo (k)
+el-basics.c7.viz.items.1.b	one thousand
+el-basics.c7.viz.items.2.a	mega (M)
+el-basics.c7.viz.items.2.b	one million
+el-basics.c7.viz.items.3.a	micro (µ)
+el-basics.c7.viz.items.3.b	one millionth
+el-basics.c8.title	Short circuits
+el-basics.c8.text	A short circuit is a path with almost no resistance between live and neutral. By Ohm's law, the current becomes enormous, heating cables in a fraction of a second. Fuses and breakers exist to cut it off before a fire starts.
+el-basics.c8.viz.steps.0	Insulation fails
+el-basics.c8.viz.steps.1	Live touches neutral
+el-basics.c8.viz.steps.2	Huge current
+el-basics.c8.viz.steps.3	Breaker trips in milliseconds
+el-basics.c9.title	Open and closed circuits
+el-basics.c9.text	Current only flows around a complete loop. A switch simply opens the loop (off) or closes it (on). A broken wire, a blown fuse or a loose terminal all open the circuit.
+el-basics.c9.viz.l.t	Closed circuit
+el-basics.c9.viz.l.items.0	complete loop
+el-basics.c9.viz.l.items.1	current flows
+el-basics.c9.viz.l.items.2	lamp on
+el-basics.c9.viz.r.t	Open circuit
+el-basics.c9.viz.r.items.0	gap in the loop
+el-basics.c9.viz.r.items.1	no current
+el-basics.c9.viz.r.items.2	lamp off
+el-home.title	Circuits at home
+el-home.summary	Series vs parallel, power, and what the breakers in your board actually do.
+el-home.q0.q	Why does each socket in a house get the full 230 V?
+el-home.q0.o0	They're wired in series
+el-home.q0.o1	They're wired in parallel
+el-home.q0.o2	Each socket has its own transformer
+el-home.q0.x	In parallel, every load sits directly between live and neutral, so each sees the full supply voltage.
+el-home.q1.q	A 1150 W heater runs on 230 V. How much current does it draw?
+el-home.q1.o0	0.2 A
+el-home.q1.o1	5 A
+el-home.q1.o2	50 A
+el-home.q1.o3	23 A
+el-home.q1.x	I = P ÷ V = 1150 ÷ 230 = 5 A.
+el-home.q2.q	What makes an RCD trip?
+el-home.q2.o0	Total current above its rating
+el-home.q2.o1	Current going out on live doesn't all return on neutral
+el-home.q2.o2	Voltage drops below 200 V
+el-home.q2.x	An RCD measures the imbalance between live and neutral. Overcurrent is the breaker's job.
+el-home.q3.q	A 1.5 kW oven runs for 4 hours. How much energy is that?
+el-home.q3.o0	6 kWh
+el-home.q3.o1	1.5 kWh
+el-home.q3.o2	375 Wh
+el-home.q3.x	1.5 kW × 4 h = 6 kWh.
+el-home.q4.q	A 6.9 kVA contract allows roughly how much current at 230 V?
+el-home.q4.o0	6.9 A
+el-home.q4.o1	30 A
+el-home.q4.o2	230 A
+el-home.q4.x	6,900 ÷ 230 ≈ 30 A.
+el-home.q5.q	20 W of standby, all year, uses about…
+el-home.q5.o0	20 kWh
+el-home.q5.o1	175 kWh
+el-home.q5.o2	1,750 kWh
+el-home.q5.x	20 × 8,760 ÷ 1,000 ≈ 175 kWh.
+el-home.c0.title	Series vs. parallel
+el-home.c0.text	In series, components share a single loop. The same current flows through each and the voltage is split between them. One break stops everything, like old Christmas lights.\n\nIn parallel, each component has its own path to the supply. Each gets the full voltage and can be switched on or off independently.
+el-home.c0.sketch.0	series
+el-home.c0.sketch.1	one shared path
+el-home.c0.sketch.2	parallel
+el-home.c0.sketch.3	a path each
+el-home.c1.title	Your house is wired in parallel
+el-home.c1.text	Every socket and light hangs between the live (L) and neutral (N) conductors. That's why each appliance gets the full 230 V, and why switching off the kettle doesn't turn off the fridge.\n\nThe more you plug in, the more total current flows in the live wire. That total is what breakers watch.
+el-home.c1.sketch.0	L  230 V
+el-home.c1.sketch.1	N
+el-home.c1.sketch.2	kettle
+el-home.c1.sketch.3	lamp
+el-home.c1.sketch.4	fridge
+el-home.c2.title	Power
+el-home.c2.text	Power (watts) is how fast energy is used. Multiply the voltage by the current. Rearranged, I = P ÷ V tells you how much current an appliance draws.
+el-home.c2.formula	P = V × I
+el-home.c2.example.0	2300 W kettle on 230 V
+el-home.c2.example.1	I = 2300 ÷ 230
+el-home.c2.example.2	= 10 A
+el-home.c2.sketch.0	2300 W
+el-home.c2.sketch.1	÷ 230 V
+el-home.c2.sketch.2	= 10 A
+el-home.c3.title	Breakers vs. RCDs
+el-home.c3.text	A breaker (MCB) protects the cable. If too much current flows, the wire would overheat, so it trips. A 16 A breaker on a socket circuit is typical.\n\nAn RCD protects people. It compares the current going out on live with the current coming back on neutral. If about 30 mA is missing, it has leaked somewhere, maybe through a person, and it trips in a fraction of a second.
+el-home.c3.sketch.0	10.00 A out
+el-home.c3.sketch.1	9.97 A back
+el-home.c3.sketch.2	load
+el-home.c3.sketch.3	30 mA missing → trip!
+el-home.c4.title	Reading your bill: kWh
+el-home.c4.text	You pay for energy, not power. Energy = power × time, measured in kilowatt-hours (kWh). One kWh is 1 kW running for one hour.
+el-home.c4.example.0	2 kW heater for 3 hours
+el-home.c4.example.1	2 kW × 3 h = 6 kWh
+el-home.c4.example.2	at €0.20 per kWh → €1.20
+el-home.c4.sketch.1	kWh
+el-home.c4.sketch.2	energy = power × time
+el-home.c5.title	Typical home circuits
+el-home.c5.text	In Portugal and much of Europe, homes are split into circuits, each with its own breaker: lighting, general sockets, kitchen, and big appliances like the oven or water heater.
+el-home.c5.viz.unit	amps (typical breaker)
+el-home.c5.viz.items.0.l	Lighting
+el-home.c5.viz.items.1.l	Sockets
+el-home.c5.viz.items.2.l	Washing machine
+el-home.c5.viz.items.3.l	Oven
+el-home.c5.viz.items.4.l	EV charger
+el-home.c6.title	Standby power
+el-home.c6.text	Many devices draw power even when "off": TV, router, chargers, coffee machine. Each may use only a few watts, but running all year, it adds up.
+el-home.c6.example.0	30 W of standby in total
+el-home.c6.example.1	30 × 8760 ÷ 1000
+el-home.c6.example.2	≈ 263 kWh a year
+el-home.c6.viz.f	kWh/year = W × 8760 ÷ 1000
+el-home.c6.viz.items.0.s	W
+el-home.c6.viz.items.0.m	standby watts
+el-home.c6.viz.items.1.m	hours in a year
+el-home.c7.title	Contracted power
+el-home.c7.text	In Portugal you contract a maximum power with your supplier, such as 6.9 kVA. If you switch on too many appliances at once, the main breaker (ICP) trips. Higher contracted power means a higher fixed daily charge.
+el-home.c7.viz.unit	kVA (common options)
+el-home.c8.title	Will it trip?
+el-home.c8.text	Contracted power 6.9 kVA ≈ 30 A at 230 V. Oven (2 kW), kettle (2.2 kW) and washing machine heating (2 kW) together make 6.2 kW: close to the limit. Add a 2 kW heater and the main breaker trips.
+el-home.c8.viz.unit	kW in use
+el-home.c8.viz.items.0.l	Oven
+el-home.c8.viz.items.1.l	Kettle
+el-home.c8.viz.items.2.l	Washing machine
+el-home.c8.viz.items.3.l	Heater
+el-home.c9.title	Plugs and sockets
+el-home.c9.text	Portugal uses the Schuko-type socket (type F) with side earth clips. The UK uses type G with three rectangular pins and a fuse inside the plug.
+el-home.c9.viz.l.t	Portugal (type F)
+el-home.c9.viz.l.items.0	two round pins
+el-home.c9.viz.l.items.1	earth clips at the side
+el-home.c9.viz.l.items.2	16 A
+el-home.c9.viz.r.t	UK (type G)
+el-home.c9.viz.r.items.0	three flat pins
+el-home.c9.viz.r.items.1	fuse in the plug
+el-home.c9.viz.r.items.2	13 A
+el-acdc.title	AC and DC
+el-acdc.summary	Why the socket alternates and the battery doesn't.
+el-acdc.q0.q	What does 50 Hz mean?
+el-acdc.q0.o0	50 volts
+el-acdc.q0.o1	The current reverses direction 50 times a second (50 cycles)
+el-acdc.q0.o2	50 amps
+el-acdc.q0.x	Hertz counts cycles per second.
+el-acdc.q1.q	Why did AC win for power grids?
+el-acdc.q1.o0	It's safer to touch
+el-acdc.q1.o1	Transformers can step its voltage up and down easily
+el-acdc.q1.o2	It's cheaper to generate
+el-acdc.q1.x	High voltage cuts transmission losses.
+el-acdc.q2.q	A solar inverter converts…
+el-acdc.q2.o0	AC to DC
+el-acdc.q2.o1	DC to AC
+el-acdc.q2.o2	DC to higher DC
+el-acdc.q2.x	Panels make DC; the house uses AC.
+el-acdc.c0.title	Direct current
+el-acdc.c0.text	In DC, current flows in one direction at a constant voltage. Batteries, solar panels and USB chargers supply DC, and every electronic circuit runs on it internally.
+el-acdc.c0.viz.l.t	DC
+el-acdc.c0.viz.l.items.0	one direction
+el-acdc.c0.viz.l.items.1	steady voltage
+el-acdc.c0.viz.l.items.2	batteries, solar, USB
+el-acdc.c0.viz.r.t	AC
+el-acdc.c0.viz.r.items.0	reverses direction
+el-acdc.c0.viz.r.items.1	voltage swings
+el-acdc.c0.viz.r.items.2	mains sockets
+el-acdc.c1.title	Alternating current
+el-acdc.c1.text	In AC, the voltage swings positive and negative in a smooth wave, reversing direction many times a second. European mains reverses 50 times a second: 50 hertz.
+el-acdc.c1.viz.items.0.v	50 Hz
+el-acdc.c1.viz.items.0.l	Europe
+el-acdc.c1.viz.items.1.v	60 Hz
+el-acdc.c1.viz.items.1.l	USA and parts of Brazil
+el-acdc.c2.title	Why 230 V isn't the peak
+el-acdc.c2.text	Mains is quoted as 230 V, but that's the RMS value: the DC voltage that would deliver the same heating power. The actual peaks reach about 325 V.
+el-acdc.c2.viz.f	V peak = V rms × √2
+el-acdc.c2.viz.items.0.s	230 V
+el-acdc.c2.viz.items.0.m	RMS (quoted)
+el-acdc.c2.viz.items.2.s	≈ 325 V
+el-acdc.c2.viz.items.2.m	peak
+el-acdc.c3.title	The war of the currents
+el-acdc.c3.text	In the 1880s Edison promoted DC; Westinghouse and Tesla backed AC. AC won for power grids because transformers could easily step its voltage up for long-distance transmission and down for homes.
+el-acdc.c3.viz.events.0.l	Edison's DC station in New York
+el-acdc.c3.viz.events.1.l	Tesla's AC motor patents
+el-acdc.c3.viz.events.2.l	AC lights the Chicago World's Fair
+el-acdc.c3.viz.events.3.l	Niagara AC power reaches Buffalo
+el-acdc.c4.title	Why AC for the grid?
+el-acdc.c4.text	Power losses in cables depend on the square of the current. Transformers raise the voltage so the same power flows with far less current, and losses drop dramatically. Transformers only work with AC.
+el-acdc.c4.viz.steps.0	Power station 20 kV
+el-acdc.c4.viz.steps.1	Step up to 400 kV
+el-acdc.c4.viz.steps.2	Long-distance lines
+el-acdc.c4.viz.steps.3	Step down to 230 V
+el-acdc.c5.title	Converters everywhere
+el-acdc.c5.text	Your laptop charger turns AC into DC (a rectifier plus regulator). A solar inverter does the opposite, turning DC from panels into AC for the house.
+el-acdc.c5.viz.l.t	Rectifier / charger
+el-acdc.c5.viz.l.items.0	AC → DC
+el-acdc.c5.viz.l.items.1	phone, laptop, LED driver
+el-acdc.c5.viz.r.t	Inverter
+el-acdc.c5.viz.r.items.0	DC → AC
+el-acdc.c5.viz.r.items.1	solar, batteries, UPS
+el-acdc.c6.title	DC is coming back
+el-acdc.c6.text	Modern electronics can convert DC voltages efficiently, so very long undersea and overland links now use high-voltage DC (HVDC). Data centres and EVs are also largely DC inside.
+el-acdc.c6.viz.items.0	HVDC undersea cables
+el-acdc.c6.viz.items.1	Solar and batteries
+el-acdc.c6.viz.items.2	EV battery packs
+el-acdc.c6.viz.items.3	Data-centre power
+el-acdc.c6.viz.items.4	USB-C power delivery
+el-acdc.c7.title	Frequency is shared
+el-acdc.c7.text	Every generator on a grid spins in sync. If demand suddenly exceeds supply, the frequency drops slightly below 50 Hz, and operators must add power within seconds to bring it back.
+el-acdc.c7.viz.unit	Hz
+el-acdc.c7.viz.items.0.l	normal
+el-acdc.c7.viz.items.1.l	under-frequency alarms
+el-acdc.c7.viz.items.2.l	over-supply
+el-acdc.c8.title	The sine wave
+el-acdc.c8.text	Generators produce a sine wave naturally because their coils rotate through a magnetic field. One full turn of a two-pole generator makes one cycle; at 3,000 rpm that's 50 cycles a second.
+el-acdc.c8.viz.f	f = rpm × pole pairs ÷ 60
+el-acdc.c8.viz.items.0.s	3,000 rpm
+el-acdc.c8.viz.items.0.m	speed
+el-acdc.c8.viz.items.1.m	pole pair
+el-acdc.c8.viz.items.2.s	50 Hz
+el-acdc.c8.viz.items.2.m	frequency
+el-acdc.c9.title	Different countries, different mains
+el-acdc.c9.text	Most of the world uses 220–240 V at 50 Hz. North America uses 120 V at 60 Hz, and Japan is split: 50 Hz in the east, 60 Hz in the west.
+el-acdc.c9.viz.unit	volts
+el-acdc.c9.viz.items.0.l	Europe
+el-acdc.c9.viz.items.1.l	UK
+el-acdc.c9.viz.items.2.l	USA
+el-acdc.c9.viz.items.3.l	Japan
+el-acdc.c9.viz.items.4.l	Brazil
+el-magnet.title	Magnetism and electromagnets
+el-magnet.summary	How current makes magnetic fields and vice versa.
+el-magnet.q0.q	What did Ørsted discover in 1820?
+el-magnet.q0.o0	Batteries
+el-magnet.q0.o1	An electric current creates a magnetic field
+el-magnet.q0.o2	AC power
+el-magnet.q0.x	A compass needle moved near a current.
+el-magnet.q1.q	Why doesn't an aluminium pan work on an induction hob?
+el-magnet.q1.o0	It's too light
+el-magnet.q1.o1	It isn't magnetic enough for the field to heat it efficiently
+el-magnet.q1.o2	Aluminium melts
+el-magnet.q1.x	Induction needs a ferromagnetic base.
+el-magnet.q2.q	A relay lets a small current…
+el-magnet.q2.o0	store energy
+el-magnet.q2.o1	switch a much bigger circuit
+el-magnet.q2.o2	change AC to DC
+el-magnet.q2.x	The coil pulls a separate contact closed.
+el-magnet.c0.title	Magnetic fields
+el-magnet.c0.text	A magnet has a north and a south pole. Opposite poles attract; like poles repel. The invisible region where it acts is its magnetic field, which iron filings make visible as curved lines.
+el-magnet.c0.viz.l.t	Attract
+el-magnet.c0.viz.l.items.0	north + south
+el-magnet.c0.viz.l.items.1	opposite poles
+el-magnet.c0.viz.r.t	Repel
+el-magnet.c0.viz.r.items.0	north + north
+el-magnet.c0.viz.r.items.1	south + south
+el-magnet.c1.title	Earth is a magnet
+el-magnet.c1.text	Earth's molten iron core creates a magnetic field. A compass needle is a tiny magnet that lines up with it. Magnetic north drifts slowly and isn't exactly the geographic North Pole.
+el-magnet.c1.viz.steps.0	Molten iron flows in the core
+el-magnet.c1.viz.steps.1	Electric currents
+el-magnet.c1.viz.steps.2	Earth's magnetic field
+el-magnet.c1.viz.steps.3	Compass points north
+el-magnet.c2.title	Current makes a field
+el-magnet.c2.text	In 1820 Ørsted noticed a compass needle twitch near a wire carrying current. Every current creates a magnetic field circling around it. This links electricity and magnetism.
+el-magnet.c2.viz.events.0.l	Ørsted sees the compass move
+el-magnet.c2.viz.events.1.l	Sturgeon's electromagnet
+el-magnet.c2.viz.events.2.l	Faraday's induction
+el-magnet.c2.viz.events.3.l	Maxwell unifies the theory
+el-magnet.c3.title	Electromagnets
+el-magnet.c3.text	Wind wire into a coil and the fields add up. Put an iron core inside and the field becomes much stronger. Switch off the current and the magnet switches off too.
+el-magnet.c3.viz.items.0	More turns of wire
+el-magnet.c3.viz.items.1	More current
+el-magnet.c3.viz.items.2	An iron core
+el-magnet.c3.viz.items.3	= a stronger magnet
+el-magnet.c4.title	Where electromagnets work
+el-magnet.c4.text	Relays, door locks, loudspeakers, MRI scanners, scrapyard cranes and the contactors in your fuse board all use electromagnets.
+el-magnet.c4.viz.root	Electromagnets
+el-magnet.c4.viz.items.0	Relays and contactors
+el-magnet.c4.viz.items.1	Speakers
+el-magnet.c4.viz.items.2	Door locks
+el-magnet.c4.viz.items.3	MRI scanners
+el-magnet.c5.title	Relays
+el-magnet.c5.text	A relay uses a small current through a coil to pull a switch closed. That lets a 3.3 V microcontroller safely switch a 230 V heater on and off.
+el-magnet.c5.viz.steps.0	Small control current
+el-magnet.c5.viz.steps.1	Coil becomes a magnet
+el-magnet.c5.viz.steps.2	Pulls the contact closed
+el-magnet.c5.viz.steps.3	Big load switched on
+el-magnet.c6.title	Induction
+el-magnet.c6.text	Faraday discovered the reverse in 1831: a changing magnetic field pushes current through a nearby wire. Move a magnet in and out of a coil and current flows. This is how generators and transformers work.
+el-magnet.c6.viz.steps.0	Moving magnet
+el-magnet.c6.viz.steps.1	Changing field through coil
+el-magnet.c6.viz.steps.2	Voltage induced
+el-magnet.c6.viz.steps.3	Current flows
+el-magnet.c7.title	Induction hobs
+el-magnet.c7.text	An induction hob runs high-frequency AC through a coil under the glass. The changing field induces currents directly in the iron pan, which heats up. The glass stays relatively cool, and non-magnetic pans don't work.
+el-magnet.c7.viz.steps.0	AC in the coil
+el-magnet.c7.viz.steps.1	Changing magnetic field
+el-magnet.c7.viz.steps.2	Currents induced in the pan
+el-magnet.c7.viz.steps.3	Pan heats up
+el-magnet.c8.title	Wireless charging
+el-magnet.c8.text	Phone chargers use the same idea: a coil in the pad creates a changing field, and a coil in the phone picks it up. It's convenient but less efficient than a cable, and needs good alignment.
+el-magnet.c8.viz.l.t	Cable
+el-magnet.c8.viz.l.items.0	most efficient
+el-magnet.c8.viz.l.items.1	faster
+el-magnet.c8.viz.r.t	Wireless pad
+el-magnet.c8.viz.r.items.0	convenient
+el-magnet.c8.viz.r.items.1	some energy lost as heat
+el-magnet.c9.title	Magnetic storage
+el-magnet.c9.text	Hard drives store bits as tiny regions magnetised one way or the other. Credit-card stripes and old cassette tapes use the same principle.
+el-magnet.c9.viz.items.0.a	Hard disk
+el-magnet.c9.viz.items.0.b	magnetised regions
+el-magnet.c9.viz.items.1.a	Card stripe
+el-magnet.c9.viz.items.1.b	magnetic pattern
+el-magnet.c9.viz.items.2.a	Cassette tape
+el-magnet.c9.viz.items.2.b	magnetised coating
+el-motors.title	Motors and generators
+el-motors.summary	Turning electricity into motion and back again.
+el-motors.q0.q	A generator is basically…
+el-motors.q0.o0	A battery
+el-motors.q0.o1	A motor working in reverse
+el-motors.q0.o2	A transformer
+el-motors.q0.x	Spinning it induces a voltage.
+el-motors.q1.q	Why do variable speed drives save so much energy on fans?
+el-motors.q1.o0	They use DC
+el-motors.q1.o1	Fan power falls with roughly the cube of speed
+el-motors.q1.o2	They remove friction
+el-motors.q1.x	A small speed cut gives a big power cut.
+el-motors.q2.q	Regenerative braking…
+el-motors.q2.o0	Uses friction pads harder
+el-motors.q2.o1	Turns the motor into a generator to recharge the battery
+el-motors.q2.o2	Disconnects the battery
+el-motors.q2.x	Kinetic energy becomes electricity.
+el-motors.c0.title	The motor effect
+el-motors.c0.text	A wire carrying current inside a magnetic field feels a force. Bend the wire into a loop on an axle and the forces on each side push in opposite directions: it turns.
+el-motors.c0.viz.steps.0	Current in a coil
+el-motors.c0.viz.steps.1	Inside a magnetic field
+el-motors.c0.viz.steps.2	Force on each side
+el-motors.c0.viz.steps.3	The coil rotates
+el-motors.c1.title	DC motors
+el-motors.c1.text	Small DC motors use a commutator, a split ring that reverses the current every half turn so the coil keeps spinning the same way. Brushes rub on it, which causes wear.
+el-motors.c1.viz.l.t	Brushed DC
+el-motors.c1.viz.l.items.0	simple and cheap
+el-motors.c1.viz.l.items.1	brushes wear out
+el-motors.c1.viz.l.items.2	toys, wipers
+el-motors.c1.viz.r.t	Brushless DC
+el-motors.c1.viz.r.items.0	electronic switching
+el-motors.c1.viz.r.items.1	long life
+el-motors.c1.viz.r.items.2	drones, fans
+el-motors.c2.title	Generators
+el-motors.c2.text	A generator is a motor in reverse: spin a coil in a magnetic field (or a magnet inside coils) and a voltage is induced. Turbines driven by steam, water or wind turn generators to make almost all our electricity.
+el-motors.c2.viz.steps.0	Steam, water or wind
+el-motors.c2.viz.steps.1	Turns a turbine
+el-motors.c2.viz.steps.2	Spins the generator
+el-motors.c2.viz.steps.3	Electricity
+el-motors.c3.title	Induction motors
+el-motors.c3.text	Most industrial motors, pumps and fans are AC induction motors. The stator creates a rotating magnetic field; it induces currents in the rotor, which chases the field around. Simple, tough, no brushes.
+el-motors.c3.viz.steps.0	AC in stator coils
+el-motors.c3.viz.steps.1	Rotating magnetic field
+el-motors.c3.viz.steps.2	Currents induced in rotor
+el-motors.c3.viz.steps.3	Rotor follows the field
+el-motors.c4.title	Motors use a lot of electricity
+el-motors.c4.text	Electric motors account for roughly 40–45% of global electricity use, according to the IEA, mostly in industry: pumps, compressors and fans. More efficient motors and speed control save huge amounts of energy.
+el-motors.c4.viz.items.0.l	of world electricity runs motors (IEA estimate)
+el-motors.c5.title	Variable speed drives
+el-motors.c5.text	A variable frequency drive (VFD) changes the frequency fed to an AC motor to control its speed. Since fan and pump power falls steeply with speed, running at 80% speed can use only about half the power.
+el-motors.c5.viz.f	P ∝ speed³
+el-motors.c5.viz.items.0.s	speed 80%
+el-motors.c5.viz.items.1.s	0.8³
+el-motors.c5.viz.items.2.s	power
+el-motors.c5.viz.items.2.m	about half
+el-motors.c6.title	EV motors
+el-motors.c6.text	Electric cars use permanent-magnet or induction motors, often over 90% efficient, versus roughly 20–35% for petrol engines. They deliver full torque from standstill.
+el-motors.c6.viz.unit	% efficiency (typical)
+el-motors.c6.viz.items.0.l	Petrol engine
+el-motors.c6.viz.items.1.l	Diesel engine
+el-motors.c6.viz.items.2.l	EV motor
+el-motors.c7.title	Regenerative braking
+el-motors.c7.text	When an EV slows down, its motor runs as a generator, turning motion back into electricity to recharge the battery. That's why one-pedal driving extends range in city traffic.
+el-motors.c7.viz.steps.0	Accelerate: battery powers motor
+el-motors.c7.viz.steps.1	Brake: motor becomes generator
+el-motors.c7.viz.steps.2	Energy back to battery
+el-motors.c7.viz.steps.3	Accelerate again
+el-motors.c8.title	Stepper motors and servos
+el-motors.c8.text	Stepper motors move in exact steps (3D printers, CNC). Servos use feedback to hold a precise angle (robot arms, RC planes). Both are motion you can control precisely.
+el-motors.c8.viz.l.t	Stepper
+el-motors.c8.viz.l.items.0	fixed steps
+el-motors.c8.viz.l.items.1	no feedback needed
+el-motors.c8.viz.l.items.2	3D printers
+el-motors.c8.viz.r.t	Servo
+el-motors.c8.viz.r.items.0	feedback loop
+el-motors.c8.viz.r.items.1	precise angle
+el-motors.c8.viz.r.items.2	robot joints
+el-motors.c9.title	Motor nameplates
+el-motors.c9.text	Every motor has a nameplate: rated power (kW), voltage, current, speed (rpm) and efficiency class (IE1 to IE5). It tells you what supply and protection it needs.
+el-motors.c9.viz.items.0.a	kW
+el-motors.c9.viz.items.0.b	mechanical output
+el-motors.c9.viz.items.1.a	rpm
+el-motors.c9.viz.items.1.b	rated speed
+el-motors.c9.viz.items.2.a	IE3
+el-motors.c9.viz.items.2.b	efficiency class
+el-motors.c9.viz.items.3.a	cos φ
+el-motors.c9.viz.items.3.b	power factor
+el-grid.title	The power grid
+el-grid.summary	From power station to your socket.
+el-grid.q0.q	Why is electricity transmitted at very high voltage?
+el-grid.q0.o0	It's faster
+el-grid.q0.o1	Less current is needed, so cable losses are much lower
+el-grid.q0.o2	Homes need 400 kV
+el-grid.q0.x	Losses scale with current squared.
+el-grid.q1.q	A transformer works because…
+el-grid.q1.o0	Copper is magnetic
+el-grid.q1.o1	A changing magnetic field induces a voltage in the second coil
+el-grid.q1.o2	It stores charge
+el-grid.q1.x	It relies on AC induction.
+el-grid.q2.q	Pumped hydro storage…
+el-grid.q2.o0	Burns water
+el-grid.q2.o1	Pumps water uphill when power is cheap and generates later
+el-grid.q2.o2	Only works at night
+el-grid.q2.x	It stores energy as height.
+el-grid.c0.title	Generation, transmission, distribution
+el-grid.c0.text	Electricity is generated in power stations and wind or solar farms, carried long distances on high-voltage transmission lines, then distributed at lower voltages to towns and homes.
+el-grid.c0.viz.steps.0	Generation
+el-grid.c0.viz.steps.1	Step-up transformer
+el-grid.c0.viz.steps.2	Transmission 400 kV
+el-grid.c0.viz.steps.3	Distribution 15 kV
+el-grid.c0.viz.steps.4	Your home 230 V
+el-grid.c1.title	Transformers
+el-grid.c1.text	A transformer has two coils around an iron core. AC in the first coil creates a changing field that induces voltage in the second. The ratio of turns sets the ratio of voltages.
+el-grid.c1.example.0	15,000 V to 400 V
+el-grid.c1.example.1	turns ratio 15,000 ÷ 400
+el-grid.c1.example.2	= 37.5 : 1
+el-grid.c1.viz.f	V₂ ÷ V₁ = N₂ ÷ N₁
+el-grid.c1.viz.items.0.s	V
+el-grid.c1.viz.items.0.m	voltage
+el-grid.c1.viz.items.1.s	N
+el-grid.c1.viz.items.1.m	number of turns
+el-grid.c2.title	Why high voltage?
+el-grid.c2.text	Cable losses equal I² × R. Doubling the voltage halves the current for the same power, cutting losses to a quarter.
+el-grid.c2.example.0	10 MW at 10 kV vs 400 kV
+el-grid.c2.example.1	current 1,000 A vs 25 A
+el-grid.c2.example.2	losses 1,600 times lower
+el-grid.c2.viz.f	loss = I² × R
+el-grid.c2.viz.items.0.s	I
+el-grid.c2.viz.items.0.m	current in the line
+el-grid.c2.viz.items.1.s	R
+el-grid.c2.viz.items.1.m	line resistance
+el-grid.c3.title	Balancing supply and demand
+el-grid.c3.text	Electricity is hard to store in bulk, so supply must match demand every second. Grid operators forecast demand and dispatch power plants, imports, storage and demand response to keep the balance.
+el-grid.c3.viz.steps.0	Forecast demand
+el-grid.c3.viz.steps.1	Schedule generation
+el-grid.c3.viz.steps.2	Watch frequency
+el-grid.c3.viz.steps.3	Adjust in seconds
+el-grid.c4.title	The daily demand curve
+el-grid.c4.text	Demand is low at night, rises in the morning and peaks in the evening when people cook and heat homes. Solar output peaks at midday, which is shifting when power is cheapest.
+el-grid.c4.viz.events.0.l	00: night low
+el-grid.c4.viz.events.1.l	00: morning rise
+el-grid.c4.viz.events.2.l	00: solar peak
+el-grid.c4.viz.events.3.l	00: evening peak
+el-grid.c4.viz.events.4.l	00: falling
+el-grid.c5.title	Portugal's renewable mix
+el-grid.c5.text	Renewables (hydro, wind, solar and biomass) supply the majority of Portugal's electricity in a typical year, roughly 60–70% in recent years depending on rainfall and wind. In 2016, the country ran four days straight on renewables alone.
+el-grid.c5.viz.unit	% of Portuguese electricity (approx., recent year)
+el-grid.c5.viz.items.0.l	Wind
+el-grid.c5.viz.items.1.l	Hydro
+el-grid.c5.viz.items.2.l	Solar
+el-grid.c5.viz.items.3.l	Gas
+el-grid.c5.viz.items.4.l	Imports & other
+el-grid.c6.title	Interconnections
+el-grid.c6.text	Portugal's grid is linked to Spain's, and Spain's to France. Interconnections let countries share surplus wind or solar, but the Iberian Peninsula's links to the rest of Europe are relatively limited.
+el-grid.c6.viz.steps.0	Portugal
+el-grid.c6.viz.steps.1	Spain
+el-grid.c6.viz.steps.2	France
+el-grid.c6.viz.steps.3	Rest of Europe
+el-grid.c7.title	The April 2025 blackout
+el-grid.c7.text	On 28 April 2025, a sudden loss of generation triggered a cascade that blacked out almost all of mainland Spain and Portugal for many hours. Restoring a grid from zero ("black start") is slow and delicate.
+el-grid.c7.viz.events.0.l	33: sudden voltage and frequency problems
+el-grid.c7.viz.events.1.y	minutes
+el-grid.c7.viz.events.1.l	cascade disconnects plants
+el-grid.c7.viz.events.2.y	evening
+el-grid.c7.viz.events.2.l	power gradually restored
+el-grid.c7.viz.events.3.y	next day
+el-grid.c7.viz.events.3.l	most supply back
+el-grid.c8.title	Storage on the grid
+el-grid.c8.text	Pumped hydro stores energy by pumping water uphill when power is cheap and releasing it through turbines when needed. Large batteries now respond in milliseconds to stabilise frequency.
+el-grid.c8.viz.l.t	Pumped hydro
+el-grid.c8.viz.l.items.0	huge capacity
+el-grid.c8.viz.l.items.1	hours to days
+el-grid.c8.viz.l.items.2	needs mountains
+el-grid.c8.viz.r.t	Batteries
+el-grid.c8.viz.r.items.0	fast response
+el-grid.c8.viz.r.items.1	minutes to hours
+el-grid.c8.viz.r.items.2	anywhere
+el-grid.c9.title	Smart grids
+el-grid.c9.text	Smart meters, sensors and automation let the grid see where power flows in real time, integrate rooftop solar and EVs, and reroute around faults automatically.
+el-grid.c9.viz.items.0	Smart meters
+el-grid.c9.viz.items.1	Automated fault isolation
+el-grid.c9.viz.items.2	Rooftop solar integration
+el-grid.c9.viz.items.3	EV smart charging
+el-grid.c9.viz.items.4	Demand response
+el-batteries.title	Batteries
+el-batteries.summary	Chemistry, capacity and how to make them last.
+el-batteries.q0.q	A 12 V, 50 Ah battery stores about…
+el-batteries.q0.o0	50 Wh
+el-batteries.q0.o1	600 Wh
+el-batteries.q0.o2	4 Wh
+el-batteries.q0.x	12 × 50 = 600 Wh.
+el-batteries.q1.q	Charging at 0.5C takes roughly…
+el-batteries.q1.o0	30 minutes
+el-batteries.q1.o1	2 hours
+el-batteries.q1.o2	5 hours
+el-batteries.q1.x	1 ÷ 0.5 = 2 hours.
+el-batteries.q2.q	What speeds up battery ageing the most?
+el-batteries.q2.o0	Cold storage at 50%
+el-batteries.q2.o1	Heat and long periods at 100%
+el-batteries.q2.o2	Using it gently
+el-batteries.q2.x	Heat and high states of charge add stress.
+el-batteries.c0.title	How a battery works
+el-batteries.c0.text	A battery has two electrodes separated by an electrolyte. A chemical reaction pushes electrons out of one electrode, through your circuit, and back into the other. Recharging reverses the reaction.
+el-batteries.c0.viz.steps.0	Chemical reaction at the anode
+el-batteries.c0.viz.steps.1	Electrons flow through your device
+el-batteries.c0.viz.steps.2	Ions move through the electrolyte
+el-batteries.c0.viz.steps.3	Back to the cathode
+el-batteries.c1.title	Capacity: Ah and Wh
+el-batteries.c1.text	Amp-hours (Ah) say how much charge a battery holds. Multiply by voltage to get energy in watt-hours (Wh), which is what really matters for comparing batteries.
+el-batteries.c1.example.0	100 Ah battery at 12 V
+el-batteries.c1.example.1	100 × 12
+el-batteries.c1.example.2	= 1,200 Wh = 1.2 kWh
+el-batteries.c1.viz.f	Wh = Ah × V
+el-batteries.c1.viz.items.0.s	Ah
+el-batteries.c1.viz.items.0.m	capacity
+el-batteries.c1.viz.items.1.s	V
+el-batteries.c1.viz.items.1.m	nominal voltage
+el-batteries.c2.title	Battery chemistries
+el-batteries.c2.text	Lead-acid is cheap and heavy (car starter batteries). Lithium-ion packs far more energy per kilo (phones, laptops, EVs). LFP, a lithium iron phosphate variant, trades a little energy density for safety and long life.
+el-batteries.c2.viz.unit	Wh per kg (typical cell)
+el-batteries.c2.viz.items.0.l	Lead-acid
+el-batteries.c2.viz.items.1.l	NiMH
+el-batteries.c2.viz.items.2.l	LFP
+el-batteries.c2.viz.items.3.l	NMC lithium-ion
+el-batteries.c3.title	C-rate
+el-batteries.c3.text	The C-rate compares charge or discharge current with capacity. 1C fully charges or empties a battery in about an hour; 0.5C in two hours; 3C in 20 minutes. High C-rates create heat and wear.
+el-batteries.c3.viz.f	time ≈ 1 ÷ C-rate (hours)
+el-batteries.c3.viz.items.0.s	1C
+el-batteries.c3.viz.items.0.m	1 hour
+el-batteries.c3.viz.items.1.s	0.5C
+el-batteries.c3.viz.items.1.m	2 hours
+el-batteries.c3.viz.items.2.s	2C
+el-batteries.c3.viz.items.2.m	30 minutes
+el-batteries.c4.title	State of charge and cycles
+el-batteries.c4.text	Lithium batteries last longer if kept away from 0% and 100% for long periods. Many EVs recommend charging to 80% for daily use and 100% only before long trips.
+el-batteries.c4.viz.items.0.l	avoid sitting empty
+el-batteries.c4.viz.items.1.l	daily sweet spot
+el-batteries.c4.viz.items.2.l	daily limit
+el-batteries.c4.viz.items.3.l	full for trips
+el-batteries.c5.title	Why batteries age
+el-batteries.c5.text	Each cycle causes tiny chemical changes that slowly reduce capacity. Heat speeds this up a lot. High charge levels and very fast charging add stress too.
+el-batteries.c5.viz.items.0	Heat
+el-batteries.c5.viz.items.1	Long periods at 100%
+el-batteries.c5.viz.items.2	Deep discharges
+el-batteries.c5.viz.items.3	Frequent very fast charging
+el-batteries.c6.title	Cycle life
+el-batteries.c6.text	LFP cells can often manage several thousand full cycles before falling to 80% capacity, which is why they're popular for home storage. Typical NMC cells manage fewer, but store more energy per kilo.
+el-batteries.c6.viz.unit	typical cycles to 80%
+el-batteries.c6.viz.items.0.l	Lead-acid
+el-batteries.c6.viz.items.1.l	NMC
+el-batteries.c6.viz.items.2.l	LFP
+el-batteries.c7.title	Battery management systems
+el-batteries.c7.text	A BMS watches every cell's voltage and temperature, balances them, limits current and disconnects the pack if anything goes wrong. Lithium packs must never be used without one.
+el-batteries.c7.viz.items.0	Monitors cell voltages
+el-batteries.c7.viz.items.1	Balances cells
+el-batteries.c7.viz.items.2	Watches temperature
+el-batteries.c7.viz.items.3	Limits current
+el-batteries.c7.viz.items.4	Cuts off on faults
+el-batteries.c8.title	Thermal runaway
+el-batteries.c8.text	If a lithium cell is damaged, overcharged or overheated, it can start a self-heating reaction that spreads to neighbouring cells. Such fires are hard to extinguish and can reignite.
+el-batteries.c8.viz.steps.0	Damage or overheating
+el-batteries.c8.viz.steps.1	Internal short
+el-batteries.c8.viz.steps.2	Cell heats itself
+el-batteries.c8.viz.steps.3	Spreads to neighbours
+el-batteries.c9.title	Series and parallel packs
+el-batteries.c9.text	Cells in series add voltage; cells in parallel add capacity. An EV pack might combine about 100 groups in series to reach roughly 400 V.
+el-batteries.c9.viz.l.t	Series
+el-batteries.c9.viz.l.items.0	voltages add
+el-batteries.c9.viz.l.items.1	4 × 3.7 V = 14.8 V
+el-batteries.c9.viz.l.items.2	same Ah
+el-batteries.c9.viz.r.t	Parallel
+el-batteries.c9.viz.r.items.0	capacities add
+el-batteries.c9.viz.r.items.1	same voltage
+el-batteries.c9.viz.r.items.2	4 × 5 Ah = 20 Ah
+el-solar.title	Solar power
+el-solar.summary	How panels turn sunlight into electricity.
+el-solar.q0.q	What does "Wp" stand for?
+el-solar.q0.o0	Watts per panel
+el-solar.q0.o1	Watt-peak, output under standard test conditions
+el-solar.q0.o2	Weekly power
+el-solar.q0.x	Rated at 1,000 W/m² and 25 °C.
+el-solar.q1.q	Which direction should panels face in Portugal for maximum yearly energy?
+el-solar.q1.o0	North
+el-solar.q1.o1	South
+el-solar.q1.o2	East
+el-solar.q1.x	The sun crosses the southern sky.
+el-solar.q2.q	Why do hot panels produce less?
+el-solar.q2.o0	Dust melts
+el-solar.q2.o1	Silicon cells lose efficiency as temperature rises
+el-solar.q2.o2	Inverters switch off
+el-solar.q2.x	About 0.35% per °C above 25 °C.
+el-solar.c0.title	The photovoltaic effect
+el-solar.c0.text	A solar cell is a thin slice of silicon with two differently treated layers. Light knocks electrons loose, and the junction between the layers pushes them in one direction: a DC current.
+el-solar.c0.viz.steps.0	Sunlight hits silicon
+el-solar.c0.viz.steps.1	Electrons knocked loose
+el-solar.c0.viz.steps.2	Junction pushes them one way
+el-solar.c0.viz.steps.3	DC current
+el-solar.c1.title	Cells, panels, strings
+el-solar.c1.text	A cell makes about 0.5–0.6 V. Dozens of cells in series make a panel; several panels in series make a string with a few hundred volts, feeding an inverter.
+el-solar.c1.viz.steps.0	Cell ≈ 0.6 V
+el-solar.c1.viz.steps.1	Panel ≈ 40 V
+el-solar.c1.viz.steps.2	String of 10 ≈ 400 V
+el-solar.c1.viz.steps.3	Inverter
+el-solar.c2.title	Watt-peak
+el-solar.c2.text	Panels are rated in watt-peak (Wp): output under standard test conditions of 1,000 W/m² of sunlight at 25 °C. Real output is usually lower because of heat, angle and dust.
+el-solar.c2.viz.items.0.v	1,000 W/m²
+el-solar.c2.viz.items.0.l	test sunlight
+el-solar.c2.viz.items.1.v	25 °C
+el-solar.c2.viz.items.1.l	cell temperature
+el-solar.c2.viz.items.2.v	400–450 Wp
+el-solar.c2.viz.items.2.l	typical modern panel
+el-solar.c3.title	How much will it produce?
+el-solar.c3.text	In Portugal, each kWp of well-oriented panels typically produces around 1,400–1,700 kWh a year, among the best in Europe.
+el-solar.c3.example.0	4 kWp system in northern Portugal (≈1,400)
+el-solar.c3.example.1	4 × 1,400
+el-solar.c3.example.2	≈ 5,600 kWh a year
+el-solar.c3.viz.f	kWh/year ≈ kWp × yield
+el-solar.c3.viz.items.0.s	kWp
+el-solar.c3.viz.items.0.m	installed size
+el-solar.c3.viz.items.1.s	yield
+el-solar.c3.viz.items.1.m	≈ 1,500 kWh per kWp (Portugal)
+el-solar.c4.title	Orientation and tilt
+el-solar.c4.text	In Portugal, panels facing south at around 30–35° give the most energy over a year. East–west layouts produce less in total but spread production across the day.
+el-solar.c4.viz.unit	% of best yield (approx.)
+el-solar.c4.viz.items.0.l	South 30°
+el-solar.c4.viz.items.1.l	South-east
+el-solar.c4.viz.items.2.l	East or west
+el-solar.c4.viz.items.3.l	Flat
+el-solar.c5.title	Shade matters
+el-solar.c5.text	A small shadow on one cell can cut a whole string's output, because cells in series carry the same current. Bypass diodes and optimisers limit the damage.
+el-solar.c5.viz.steps.0	Shadow on one cell
+el-solar.c5.viz.steps.1	Limits current in the string
+el-solar.c5.viz.steps.2	Whole string drops
+el-solar.c5.viz.steps.3	Optimisers or bypass diodes help
+el-solar.c6.title	Heat lowers output
+el-solar.c6.text	Silicon cells lose roughly 0.3–0.4% of output per °C above 25 °C. On a hot summer roof the cells can reach 60 °C, losing over 10%.
+el-solar.c6.example.0	Cells at 60 °C
+el-solar.c6.example.1	0.35% × 35
+el-solar.c6.example.2	≈ 12% less output
+el-solar.c6.viz.f	loss ≈ 0.35% × (T − 25 °C)
+el-solar.c6.viz.items.0.s	T
+el-solar.c6.viz.items.0.m	cell temperature
+el-solar.c7.title	Self-consumption
+el-solar.c7.text	Solar power is worth most when you use it as it's produced, because exported power earns less than imported power costs. Run the dishwasher, heat water or charge the car at midday.
+el-solar.c7.viz.items.0	Shift appliances to midday
+el-solar.c7.viz.items.1	Heat water with surplus
+el-solar.c7.viz.items.2	Charge the EV in the sun
+el-solar.c7.viz.items.3	Add a battery for the evening
+el-solar.c8.title	Inverters
+el-solar.c8.text	String inverters convert DC from the panels into AC for the home. Hybrid inverters can also charge and discharge a battery. Microinverters sit behind each panel.
+el-solar.c8.viz.l.t	String inverter
+el-solar.c8.viz.l.items.0	one box
+el-solar.c8.viz.l.items.1	cheapest
+el-solar.c8.viz.l.items.2	shade affects the string
+el-solar.c8.viz.r.t	Microinverters
+el-solar.c8.viz.r.items.0	one per panel
+el-solar.c8.viz.r.items.1	handles shade
+el-solar.c8.viz.r.items.2	more parts
+el-solar.c9.title	Payback
+el-solar.c9.text	In sunny Portugal, a home system often pays for itself in roughly 5–8 years, depending on price, self-consumption and tariffs. Panels typically carry 25-year performance warranties.
+el-solar.c9.viz.items.0.v	5–8 years
+el-solar.c9.viz.items.0.l	typical payback (PT)
+el-solar.c9.viz.items.1.v	25 years
+el-solar.c9.viz.items.1.l	typical panel warranty
+el-cables.title	Choosing cables
+el-cables.summary	Cross-sections, voltage drop and why size matters.
+el-cables.q0.q	Which wire colour is protective earth in Europe?
+el-cables.q0.o0	Blue
+el-cables.q0.o1	Brown
+el-cables.q0.o2	Green and yellow
+el-cables.q0.x	Brown live, blue neutral, green-yellow earth.
+el-cables.q1.q	A 2.5 mm² socket circuit keeps tripping its 16 A breaker. What's right?
+el-cables.q1.o0	Fit a 32 A breaker
+el-cables.q1.o1	Find the overload or split the circuit
+el-cables.q1.o2	Remove the breaker
+el-cables.q1.x	The breaker protects the cable.
+el-cables.q2.q	Why must a reel extension be unrolled for big loads?
+el-cables.q2.o0	It looks tidier
+el-cables.q2.o1	Coiled cable can't shed heat and may melt
+el-cables.q2.o2	It changes the voltage
+el-cables.q2.x	The coil traps the heat.
+el-cables.c0.title	Cables heat up
+el-cables.c0.text	Every cable has some resistance, so current heats it (I² × R). Too small a cable for the current overheats, damages its insulation and can start a fire.
+el-cables.c0.viz.steps.0	Too much current
+el-cables.c0.viz.steps.1	Cable heats up
+el-cables.c0.viz.steps.2	Insulation degrades
+el-cables.c0.viz.steps.3	Fire risk
+el-cables.c1.title	Cross-section in mm²
+el-cables.c1.text	Cable size is the copper area in square millimetres. Bigger area, lower resistance, more current it can safely carry.
+el-cables.c1.viz.unit	approx. max amps (typical home install)
+el-cables.c1.viz.items.0.l	1.5 mm²
+el-cables.c1.viz.items.1.l	2.5 mm²
+el-cables.c1.viz.items.2.l	4 mm²
+el-cables.c1.viz.items.3.l	6 mm²
+el-cables.c2.title	Typical sizes at home
+el-cables.c2.text	Common practice in Portugal: 1.5 mm² for lighting, 2.5 mm² for sockets, 4 mm² for ovens or water heaters, 6 mm² for an EV charger or big heat pump. Always check the installation rules and the installer's calculation.
+el-cables.c2.viz.items.0.a	1.5 mm²
+el-cables.c2.viz.items.0.b	lighting, 10 A breaker
+el-cables.c2.viz.items.1.a	2.5 mm²
+el-cables.c2.viz.items.1.b	sockets, 16 A
+el-cables.c2.viz.items.2.a	4 mm²
+el-cables.c2.viz.items.2.b	oven, 20–25 A
+el-cables.c2.viz.items.3.a	6 mm²
+el-cables.c2.viz.items.3.b	EV charger, 32 A
+el-cables.c3.title	The breaker protects the cable
+el-cables.c3.text	The breaker must be rated so the cable can never carry more than it safely can. Swapping a 16 A breaker for a 25 A one "because it keeps tripping" removes the protection.
+el-cables.c3.viz.items.0.w	16 A breaker keeps tripping
+el-cables.c3.viz.items.0.r	find the overload
+el-cables.c3.viz.items.1.w	fit a bigger breaker
+el-cables.c3.viz.items.1.r	rewire with thicker cable if needed
+el-cables.c4.title	Voltage drop
+el-cables.c4.text	Long cables lose voltage along the way. Rules usually limit the drop to a few percent. Single-phase drop is roughly twice the length times current times resistance per metre.
+el-cables.c4.example.0	30 m, 16 A, 2.5 mm² (0.0073 Ω/m)
+el-cables.c4.example.1	2 × 30 × 16 × 0.0073
+el-cables.c4.example.2	≈ 7 V, about 3%
+el-cables.c4.viz.f	ΔV ≈ 2 × L × I × r
+el-cables.c4.viz.items.0.s	L
+el-cables.c4.viz.items.0.m	length (m)
+el-cables.c4.viz.items.1.s	I
+el-cables.c4.viz.items.1.m	current (A)
+el-cables.c4.viz.items.2.s	r
+el-cables.c4.viz.items.2.m	Ω per metre of conductor
+el-cables.c5.title	Installation method matters
+el-cables.c5.text	A cable buried in insulation or bundled with others can't shed heat, so it carries less current safely than one in open air.
+el-cables.c5.viz.unit	relative capacity
+el-cables.c5.viz.items.0.l	In free air
+el-cables.c5.viz.items.1.l	In conduit on wall
+el-cables.c5.viz.items.2.l	Bundled
+el-cables.c5.viz.items.3.l	In thermal insulation
+el-cables.c6.title	Colours
+el-cables.c6.text	In Europe: brown is live (phase), blue is neutral, green-and-yellow is protective earth. Older Portuguese installations may use different colours, so never trust colours alone.
+el-cables.c6.viz.items.0.a	brown
+el-cables.c6.viz.items.0.b	live (phase)
+el-cables.c6.viz.items.1.a	blue
+el-cables.c6.viz.items.1.b	neutral
+el-cables.c6.viz.items.2.a	green-yellow
+el-cables.c6.viz.items.2.b	earth
+el-cables.c6.viz.items.3.a	black, grey
+el-cables.c6.viz.items.3.b	other phases
+el-cables.c7.title	Flexible vs rigid
+el-cables.c7.text	Fixed wiring uses solid or stranded rigid conductors. Appliance leads and extension cords use flexible multi-strand cable that survives bending.
+el-cables.c7.viz.l.t	Rigid
+el-cables.c7.viz.l.items.0	fixed in walls
+el-cables.c7.viz.l.items.1	cheaper
+el-cables.c7.viz.l.items.2	doesn't like bending
+el-cables.c7.viz.r.t	Flexible
+el-cables.c7.viz.r.items.0	many fine strands
+el-cables.c7.viz.r.items.1	leads and cords
+el-cables.c7.viz.r.items.2	survives bending
+el-cables.c8.title	Extension leads
+el-cables.c8.text	A reel extension must be fully unrolled for high loads, otherwise the coiled cable traps heat and can melt. Never daisy-chain multi-plug adapters for heaters or kettles.
+el-cables.c8.viz.items.0	Unroll reels fully
+el-cables.c8.viz.items.1	Check the max watts on the label
+el-cables.c8.viz.items.2	No daisy-chaining
+el-cables.c8.viz.items.3	Not for permanent heaters
+el-cables.c9.title	Aluminium vs copper
+el-cables.c9.text	Aluminium conducts about 60% as well as copper, so it needs a bigger cross-section, but it's lighter and cheaper. Overhead power lines use aluminium; home wiring uses copper.
+el-cables.c9.viz.l.t	Copper
+el-cables.c9.viz.l.items.0	better conductor
+el-cables.c9.viz.l.items.1	smaller cables
+el-cables.c9.viz.l.items.2	home wiring
+el-cables.c9.viz.r.t	Aluminium
+el-cables.c9.viz.r.items.0	lighter and cheaper
+el-cables.c9.viz.r.items.1	bigger cables
+el-cables.c9.viz.r.items.2	power lines
+el-earthing.title	Earthing and protection
+el-earthing.summary	Breakers, RCDs, earth and surge protection.
+el-earthing.q0.q	Which RCD detects smooth DC leakage, as needed for many EV chargers?
+el-earthing.q0.o0	Type AC
+el-earthing.q0.o1	Type A
+el-earthing.q0.o2	Type B
+el-earthing.q0.x	Type B covers smooth DC.
+el-earthing.q1.q	Why use RCBOs on each circuit?
+el-earthing.q1.o0	They're cheaper
+el-earthing.q1.o1	A fault only trips that circuit
+el-earthing.q1.o2	They replace earthing
+el-earthing.q1.x	Faults stay local.
+el-earthing.q2.q	What does an SPD protect against?
+el-earthing.q2.o0	Overloads
+el-earthing.q2.o1	Short voltage spikes from lightning or switching
+el-earthing.q2.o2	Leakage to earth
+el-earthing.q2.x	It diverts surges to earth.
+el-earthing.c0.title	What earthing does
+el-earthing.c0.text	Metal cases of appliances are connected to earth. If a live wire touches the case, current rushes to earth instead of through you, and a protective device trips.
+el-earthing.c0.viz.steps.0	Live wire touches metal case
+el-earthing.c0.viz.steps.1	Current flows to earth
+el-earthing.c0.viz.steps.2	RCD or breaker trips
+el-earthing.c0.viz.steps.3	Case is safe again
+el-earthing.c1.title	The earth electrode
+el-earthing.c1.text	In many homes the earth connection ends at a copper rod or ring buried in the ground. Its resistance must be low enough for protective devices to work, and it should be tested periodically.
+el-earthing.c1.viz.steps.0	Appliance case
+el-earthing.c1.viz.steps.1	Earth wire
+el-earthing.c1.viz.steps.2	Main earth terminal
+el-earthing.c1.viz.steps.3	Electrode in the ground
+el-earthing.c2.title	Miniature circuit breakers
+el-earthing.c2.text	An MCB trips two ways: a bimetallic strip for slow overloads (heat), and an electromagnet for short circuits (instant). The letter (B, C, D) sets how sensitive it is to inrush currents.
+el-earthing.c2.viz.l.t	Thermal trip
+el-earthing.c2.viz.l.items.0	slow overloads
+el-earthing.c2.viz.l.items.1	seconds to minutes
+el-earthing.c2.viz.r.t	Magnetic trip
+el-earthing.c2.viz.r.items.0	short circuits
+el-earthing.c2.viz.r.items.1	milliseconds
+el-earthing.c3.title	MCB curves
+el-earthing.c3.text	Type B trips magnetically at 3–5× its rating, good for homes. Type C at 5–10×, for motors and lighting with big inrush. Type D at 10–20×, for heavy industrial motors.
+el-earthing.c3.viz.unit	magnetic trip (× rated current, upper bound)
+el-earthing.c3.viz.items.0.l	B
+el-earthing.c3.viz.items.1.l	C
+el-earthing.c3.viz.items.2.l	D
+el-earthing.c4.title	RCD types
+el-earthing.c4.text	Type AC detects only AC leakage. Type A also detects pulsing DC from electronics. Type B detects smooth DC too, often required for EV chargers and some solar inverters (or Type A with a DC-detection device).
+el-earthing.c4.viz.items.0	Type B: smooth DC too
+el-earthing.c4.viz.items.1	Type A: AC and pulsing DC
+el-earthing.c4.viz.items.2	Type AC: AC only
+el-earthing.c5.title	RCBOs
+el-earthing.c5.text	An RCBO combines an MCB and an RCD in one device, so a fault on one circuit only trips that circuit instead of the whole house.
+el-earthing.c5.viz.l.t	One RCD for many circuits
+el-earthing.c5.viz.l.items.0	cheaper
+el-earthing.c5.viz.l.items.1	one fault cuts everything
+el-earthing.c5.viz.r.t	RCBO per circuit
+el-earthing.c5.viz.r.items.0	more expensive
+el-earthing.c5.viz.r.items.1	only the faulty circuit trips
+el-earthing.c6.title	Surge protection
+el-earthing.c6.text	Lightning and grid switching can cause voltage spikes of thousands of volts for microseconds. A surge protection device (SPD) in the fuse board diverts them to earth, protecting electronics.
+el-earthing.c6.viz.steps.0	Spike on the line
+el-earthing.c6.viz.steps.1	SPD conducts
+el-earthing.c6.viz.steps.2	Diverted to earth
+el-earthing.c6.viz.steps.3	Electronics protected
+el-earthing.c7.title	Test your RCD
+el-earthing.c7.text	RCDs have a test button that simulates a leak. Pressing it every few months checks that the mechanism isn't stuck. If it doesn't trip, call an electrician.
+el-earthing.c7.viz.items.0	Press the T button
+el-earthing.c7.viz.items.1	It should trip at once
+el-earthing.c7.viz.items.2	Switch it back on
+el-earthing.c7.viz.items.3	Repeat every few months
+el-earthing.c8.title	Double insulation
+el-earthing.c8.text	Some appliances have no earth wire: they're double insulated, shown by a square inside a square. Two layers of insulation protect you instead of an earth connection.
+el-earthing.c8.viz.items.0.a	⊡ symbol
+el-earthing.c8.viz.items.0.b	double insulated
+el-earthing.c8.viz.items.1.a	no earth pin
+el-earthing.c8.viz.items.1.b	safe by design
+el-earthing.c8.viz.items.2.a	hair dryer, drill
+el-earthing.c8.viz.items.2.b	typical examples
+el-earthing.c9.title	Fuses
+el-earthing.c9.text	A fuse is a thin wire that melts when too much current flows. It works only once and must be replaced with the same rating. Old Portuguese installations may still have them; modern boards use breakers.
+el-earthing.c9.viz.l.t	Fuse
+el-earthing.c9.viz.l.items.0	melts once
+el-earthing.c9.viz.l.items.1	replace it
+el-earthing.c9.viz.l.items.2	older boards
+el-earthing.c9.viz.r.t	Breaker
+el-earthing.c9.viz.r.items.0	reset it
+el-earthing.c9.viz.r.items.1	reusable
+el-earthing.c9.viz.r.items.2	modern boards
+el-3phase.title	Three-phase power
+el-3phase.summary	Why industry, big heat pumps and fast chargers use three wires.
+el-3phase.q0.q	Voltage between two phases of a European three-phase supply is about…
+el-3phase.q0.o0	230 V
+el-3phase.q0.o1	400 V
+el-3phase.q0.o2	690 V
+el-3phase.q0.x	230 × √3 ≈ 400 V.
+el-3phase.q1.q	How do you reverse a three-phase motor?
+el-3phase.q1.o0	Swap neutral and earth
+el-3phase.q1.o1	Swap any two phases
+el-3phase.q1.o2	Lower the voltage
+el-3phase.q1.x	Changing the phase order reverses the rotating field.
+el-3phase.q2.q	Roughly how much power does 16 A per phase at 400 V give?
+el-3phase.q2.o0	3.7 kW
+el-3phase.q2.o1	11 kW
+el-3phase.q2.o2	22 kW
+el-3phase.q2.x	√3 × 400 × 16 ≈ 11 kW.
+el-3phase.c0.title	Three waves, offset
+el-3phase.c0.text	Three-phase supply has three live conductors, each carrying an AC wave shifted by a third of a cycle (120°). At any moment at least one phase is near its peak, so power flows smoothly.
+el-3phase.c0.viz.steps.0	Phase L1
+el-3phase.c0.viz.steps.1	Phase L2 (+120°)
+el-3phase.c0.viz.steps.2	Phase L3 (+240°)
+el-3phase.c0.viz.steps.3	back to L1
+el-3phase.c1.title	230 V and 400 V
+el-3phase.c1.text	Between any phase and neutral you get 230 V; between two phases you get 400 V. Homes with three-phase supply still use 230 V for normal sockets.
+el-3phase.c1.viz.f	V line = V phase × √3
+el-3phase.c1.viz.items.0.s	230 V
+el-3phase.c1.viz.items.0.m	phase to neutral
+el-3phase.c1.viz.items.2.s	≈ 400 V
+el-3phase.c1.viz.items.2.m	phase to phase
+el-3phase.c2.title	Three-phase power
+el-3phase.c2.text	Three-phase carries about three times the power of a single phase with the same current per wire.
+el-3phase.c2.example.0	16 A per phase at 400 V, cos φ = 1
+el-3phase.c2.example.1	1.732 × 400 × 16
+el-3phase.c2.example.2	≈ 11 kW
+el-3phase.c2.viz.f	P = √3 × V × I × cos φ
+el-3phase.c2.viz.items.0.s	V
+el-3phase.c2.viz.items.0.m	400 V line voltage
+el-3phase.c2.viz.items.1.s	I
+el-3phase.c2.viz.items.1.m	current per phase
+el-3phase.c2.viz.items.2.s	cos φ
+el-3phase.c2.viz.items.2.m	power factor
+el-3phase.c3.title	Why industry loves it
+el-3phase.c3.text	Three-phase motors are simpler, smaller and self-starting, and transmission needs less copper for the same power. Nearly all generation, transmission and industrial loads are three-phase.
+el-3phase.c3.viz.items.0	Smooth power delivery
+el-3phase.c3.viz.items.1	Self-starting motors
+el-3phase.c3.viz.items.2	Less copper per kW
+el-3phase.c3.viz.items.3	Higher power to one building
+el-3phase.c4.title	Three-phase at home
+el-3phase.c4.text	Larger homes in Portugal may have three-phase supply. It allows more contracted power, 11 kW or 22 kW EV charging, and big heat pumps, while circuits are spread across phases.
+el-3phase.c4.viz.l.t	Single-phase
+el-3phase.c4.viz.l.items.0	230 V
+el-3phase.c4.viz.l.items.1	up to ~7.4 kW charging
+el-3phase.c4.viz.l.items.2	most homes
+el-3phase.c4.viz.r.t	Three-phase
+el-3phase.c4.viz.r.items.0	400 V
+el-3phase.c4.viz.r.items.1	11–22 kW charging
+el-3phase.c4.viz.r.items.2	bigger loads
+el-3phase.c5.title	Balancing the phases
+el-3phase.c5.text	Loads should be spread evenly across the three phases. If one phase carries most of the load, it may trip while the others are lightly used, and the neutral carries extra current.
+el-3phase.c5.viz.unit	kW per phase
+el-3phase.c5.viz.items.0.l	L1
+el-3phase.c5.viz.items.1.l	L2
+el-3phase.c5.viz.items.2.l	L3
+el-3phase.c6.title	Phase rotation
+el-3phase.c6.text	The order in which phases peak (L1, L2, L3) sets the direction a three-phase motor turns. Swap any two phases and the motor runs backwards: a classic commissioning check.
+el-3phase.c6.viz.items.0.w	motor turns the wrong way
+el-3phase.c6.viz.items.0.r	swap any two phases
+el-3phase.c6.viz.items.1.w	L1-L2-L3
+el-3phase.c6.viz.items.1.r	L2-L1-L3
+el-3phase.c7.title	Star and delta
+el-3phase.c7.text	Three-phase windings can be connected in star (Y), with a shared neutral point, or delta (Δ), in a triangle. Large motors often start in star to limit current, then switch to delta.
+el-3phase.c7.viz.l.t	Star (Y)
+el-3phase.c7.viz.l.items.0	shared neutral point
+el-3phase.c7.viz.l.items.1	lower voltage per winding
+el-3phase.c7.viz.l.items.2	gentle start
+el-3phase.c7.viz.r.t	Delta (Δ)
+el-3phase.c7.viz.r.items.0	triangle
+el-3phase.c7.viz.r.items.1	full line voltage per winding
+el-3phase.c7.viz.r.items.2	full power
+el-3phase.c8.title	Grids are three-phase worldwide
+el-3phase.c8.text	From the generator to the distribution transformer on your street, power travels as three-phase. Each house on a single-phase supply is connected to one of the three phases.
+el-3phase.c8.viz.steps.0	Three-phase generator
+el-3phase.c8.viz.steps.1	Three-phase transmission
+el-3phase.c8.viz.steps.2	Street transformer
+el-3phase.c8.viz.steps.3	Houses spread across L1, L2, L3
+el-3phase.c9.title	Spotting it
+el-3phase.c9.text	A three-phase board has three-pole or four-pole breakers and often a red CEE socket (5-pin) for machines. Three-phase meters show three readings.
+el-3phase.c9.viz.items.0	Four-pole main breaker
+el-3phase.c9.viz.items.1	Red 5-pin CEE socket
+el-3phase.c9.viz.items.2	Three voltage readings on the meter
+el-3phase.c9.viz.items.3	Brown, black and grey phase wires
+el-pf.title	Power factor
+el-pf.summary	Real power, reactive power and why the grid cares.
+el-pf.q0.q	A load draws 1,000 VA with a power factor of 0.8. Its real power is…
+el-pf.q0.o0	1,000 W
+el-pf.q0.o1	800 W
+el-pf.q0.o2	1,250 W
+el-pf.q0.x	W = VA × cos φ = 800 W.
+el-pf.q1.q	What corrects a lagging power factor in a factory?
+el-pf.q1.o0	Bigger fuses
+el-pf.q1.o1	Capacitor banks
+el-pf.q1.o2	Thicker cables
+el-pf.q1.x	Capacitors cancel the lagging current.
+el-pf.q2.q	Which device has a power factor of about 1?
+el-pf.q2.o0	An idling motor
+el-pf.q2.o1	An electric kettle
+el-pf.q2.o2	An old fluorescent lamp
+el-pf.q2.x	Pure resistance keeps current in step with voltage.
+el-pf.c0.title	Real and apparent power
+el-pf.c0.text	With some loads, current and voltage don't peak at the same time. Then volts × amps (apparent power, in VA) is larger than the useful power that actually does work (real power, in W).
+el-pf.c0.viz.f	W = VA × cos φ
+el-pf.c0.viz.items.0.s	W
+el-pf.c0.viz.items.0.m	real power
+el-pf.c0.viz.items.1.s	VA
+el-pf.c0.viz.items.1.m	apparent power
+el-pf.c0.viz.items.2.s	cos φ
+el-pf.c0.viz.items.2.m	power factor 0–1
+el-pf.c1.title	The beer analogy
+el-pf.c1.text	Picture a glass of beer: the liquid is real power that quenches thirst; the foam is reactive power that takes space but does no work. The whole glass is apparent power.
+el-pf.c1.viz.items.0	Foam: reactive power (var)
+el-pf.c1.viz.items.1	Beer: real power (W)
+el-pf.c1.viz.items.2	Whole glass: apparent power (VA)
+el-pf.c2.title	What causes it
+el-pf.c2.text	Motors, transformers and fluorescent ballasts store energy in magnetic fields each cycle and give it back, so their current lags the voltage. Cheap electronics distort the current wave.
+el-pf.c2.viz.l.t	Lagging loads
+el-pf.c2.viz.l.items.0	motors
+el-pf.c2.viz.l.items.1	transformers
+el-pf.c2.viz.l.items.2	old ballasts
+el-pf.c2.viz.r.t	Distorting loads
+el-pf.c2.viz.r.items.0	cheap power supplies
+el-pf.c2.viz.r.items.1	old LED drivers
+el-pf.c3.title	Why it matters
+el-pf.c3.text	A low power factor means more current for the same useful work: bigger cables, more losses, larger transformers. Utilities charge industrial customers for reactive energy.
+el-pf.c3.viz.unit	amps for 10 kW at 230 V
+el-pf.c3.viz.items.0.l	cos φ 1.0
+el-pf.c3.viz.items.1.l	cos φ 0.9
+el-pf.c3.viz.items.2.l	cos φ 0.7
+el-pf.c4.title	Correction with capacitors
+el-pf.c4.text	Capacitors draw current that leads the voltage, cancelling a motor's lagging current. Factories install capacitor banks to bring the power factor close to 1.
+el-pf.c4.viz.steps.0	Motor current lags
+el-pf.c4.viz.steps.1	Add capacitors
+el-pf.c4.viz.steps.2	Leading current cancels the lag
+el-pf.c4.viz.steps.3	cos φ ≈ 1
+el-pf.c5.title	Units: W, VA, var
+el-pf.c5.text	Real power in watts (W), reactive power in volt-amperes reactive (var), apparent power in volt-amperes (VA). UPS units and generators are rated in VA because their wiring must handle the full current.
+el-pf.c5.viz.items.0.a	W
+el-pf.c5.viz.items.0.b	real, useful power
+el-pf.c5.viz.items.1.a	var
+el-pf.c5.viz.items.1.b	reactive, back-and-forth
+el-pf.c5.viz.items.2.a	VA
+el-pf.c5.viz.items.2.b	apparent, what the wires carry
+el-pf.c6.title	The power triangle
+el-pf.c6.text	Real and reactive power are at right angles, so apparent power is the hypotenuse: VA² = W² + var². The angle between them is φ.
+el-pf.c6.viz.f	VA² = W² + var²
+el-pf.c6.viz.items.0.s	W
+el-pf.c6.viz.items.0.m	real power
+el-pf.c6.viz.items.1.s	var
+el-pf.c6.viz.items.1.m	reactive power
+el-pf.c6.viz.items.2.s	VA
+el-pf.c6.viz.items.2.m	apparent power
+el-pf.c7.title	Your home bill
+el-pf.c7.text	Households in Portugal pay for active energy (kWh) only; reactive energy charges apply to larger commercial and industrial customers. Your contracted power, though, is in kVA.
+el-pf.c7.viz.l.t	Home
+el-pf.c7.viz.l.items.0	pays kWh
+el-pf.c7.viz.l.items.1	contracted kVA
+el-pf.c7.viz.r.t	Industry
+el-pf.c7.viz.r.items.0	pays kWh
+el-pf.c7.viz.r.items.1	plus reactive energy (kvarh)
+el-pf.c8.title	Power factor of devices
+el-pf.c8.text	Resistive loads like kettles and heaters have a power factor of 1. Motors run around 0.8–0.9 at full load and much lower when lightly loaded.
+el-pf.c8.viz.unit	typical power factor
+el-pf.c8.viz.items.0.l	Kettle
+el-pf.c8.viz.items.1.l	Induction motor (full load)
+el-pf.c8.viz.items.2.l	Motor (light load)
+el-pf.c8.viz.items.3.l	Old fluorescent
+el-pf.c9.title	PFC in chargers
+el-pf.c9.text	Larger electronic power supplies, including laptop and EV chargers, contain power factor correction circuits that make the current follow the voltage wave, as required by EU rules.
+el-pf.c9.viz.steps.0	Raw rectifier distorts current
+el-pf.c9.viz.steps.1	PFC circuit shapes it
+el-pf.c9.viz.steps.2	Current follows voltage
+el-pf.c9.viz.steps.3	cos φ ≈ 0.99
+el-meter.title	Using a multimeter
+el-meter.summary	Measuring volts, amps, ohms and continuity safely.
+el-meter.q0.q	To measure current, the meter must be…
+el-meter.q0.o0	Across the load, in parallel
+el-meter.q0.o1	In series, so current flows through it
+el-meter.q0.o2	Disconnected
+el-meter.q0.x	Current is measured in series.
+el-meter.q1.q	Why are clamp meters useful?
+el-meter.q1.o0	They measure resistance
+el-meter.q1.o1	They measure current without breaking the circuit
+el-meter.q1.o2	They are cheaper
+el-meter.q1.x	They sense the magnetic field around a conductor.
+el-meter.q2.q	What must you do before working on a circuit you switched off?
+el-meter.q2.o0	Trust the label
+el-meter.q2.o1	Prove it dead with a tester you've checked on a live source
+el-meter.q2.o2	Touch it quickly
+el-meter.q2.x	Prove dead, and prove the tester works.
+el-meter.c0.title	One tool, many meters
+el-meter.c0.text	A multimeter measures voltage, current and resistance, and usually continuity, diodes and sometimes capacitance and temperature. A rotary dial chooses the function and range.
+el-meter.c0.viz.root	Multimeter
+el-meter.c0.viz.items.0	Volts (V)
+el-meter.c0.viz.items.1	Amps (A)
+el-meter.c0.viz.items.2	Ohms (Ω)
+el-meter.c0.viz.items.3	Continuity beep
+el-meter.c1.title	Measuring voltage
+el-meter.c1.text	Set the dial to V (AC ~ or DC ⎓), put the probes across the two points, in parallel. The meter has very high resistance, so it barely disturbs the circuit.
+el-meter.c1.viz.steps.0	Dial to V~ or V⎓
+el-meter.c1.viz.steps.1	Black probe to COM
+el-meter.c1.viz.steps.2	Red probe to V socket
+el-meter.c1.viz.steps.3	Touch both points
+el-meter.c2.title	Measuring current
+el-meter.c2.text	Current must flow through the meter, in series: break the circuit and insert the meter. Move the red lead to the A or mA socket. Forgetting to move it back is the classic way to blow the meter's fuse.
+el-meter.c2.viz.l.t	Voltage
+el-meter.c2.viz.l.items.0	across the load
+el-meter.c2.viz.l.items.1	parallel
+el-meter.c2.viz.l.items.2	red lead in V
+el-meter.c2.viz.r.t	Current
+el-meter.c2.viz.r.items.0	through the meter
+el-meter.c2.viz.r.items.1	series
+el-meter.c2.viz.r.items.2	red lead in A or mA
+el-meter.c3.title	Resistance and continuity
+el-meter.c3.text	Measure resistance only on unpowered circuits. Continuity mode beeps when the resistance is very low: perfect for finding broken wires or checking which cable is which.
+el-meter.c3.viz.items.0	Power off first
+el-meter.c3.viz.items.1	Dial to Ω or beep
+el-meter.c3.viz.items.2	Touch both ends
+el-meter.c3.viz.items.3	Beep = connected
+el-meter.c4.title	CAT ratings
+el-meter.c4.text	Meters carry a category rating for where they're safe to use. CAT II covers plugged-in appliances, CAT III the fixed installation and fuse boards, CAT IV the supply origin. Use at least CAT III 600 V on house wiring.
+el-meter.c4.viz.items.0	CAT IV: supply origin, meter tails
+el-meter.c4.viz.items.1	CAT III: fuse boards, fixed wiring
+el-meter.c4.viz.items.2	CAT II: sockets and appliances
+el-meter.c4.viz.items.3	CAT I: protected electronics
+el-meter.c5.title	Clamp meters
+el-meter.c5.text	A clamp meter measures current without breaking the circuit: you clamp it around a single conductor and it reads the magnetic field. Clamp around the whole cable and live and neutral cancel out.
+el-meter.c5.viz.items.0.w	clamp around the whole cable
+el-meter.c5.viz.items.0.r	clamp a single conductor
+el-meter.c5.viz.items.1.w	read 0 A
+el-meter.c5.viz.items.1.r	separate live from neutral
+el-meter.c6.title	Auto-range and True RMS
+el-meter.c6.text	Auto-ranging meters pick the range for you. True RMS meters measure non-sinusoidal waveforms (from inverters, LED drivers, VFDs) correctly; cheaper meters can be quite wrong on these.
+el-meter.c6.viz.l.t	Average-responding
+el-meter.c6.viz.l.items.0	fine for pure sine waves
+el-meter.c6.viz.l.items.1	cheaper
+el-meter.c6.viz.r.t	True RMS
+el-meter.c6.viz.r.items.0	correct on distorted waves
+el-meter.c6.viz.r.items.1	recommended
+el-meter.c7.title	Checking a socket
+el-meter.c7.text	To check a socket is live, measure between live and neutral (about 230 V), live and earth (about 230 V) and neutral and earth (near 0 V). Proper socket testers also check earth and RCD.
+el-meter.c7.viz.items.0.a	live–neutral
+el-meter.c7.viz.items.0.b	≈ 230 V
+el-meter.c7.viz.items.1.a	live–earth
+el-meter.c7.viz.items.1.b	≈ 230 V
+el-meter.c7.viz.items.2.a	neutral–earth
+el-meter.c7.viz.items.2.b	≈ 0 V
+el-meter.c8.title	Prove dead before you touch
+el-meter.c8.text	Before working on any circuit: isolate it, lock it off, test it's dead with a proven tester, and re-check the tester on a known live source. Never trust a switch or a label alone.
+el-meter.c8.viz.steps.0	Switch off and lock
+el-meter.c8.viz.steps.1	Test tester on a live source
+el-meter.c8.viz.steps.2	Test the circuit is dead
+el-meter.c8.viz.steps.3	Re-test the tester
+el-meter.c9.title	Reading batteries and sensors
+el-meter.c9.text	Multimeters are great for electronics: battery health (a "12 V" battery should read about 12.6 V when full), sensor outputs, and checking a 3.3 V rail on an ESP32 board.
+el-meter.c9.viz.unit	volts (resting, 12 V lead-acid)
+el-meter.c9.viz.items.0.l	Full
+el-meter.c9.viz.items.3.l	Flat
+el-ev.title	Charging electric cars
+el-ev.summary	AC, DC, kW and why charging slows down.
+el-ev.q0.q	Who converts AC to DC during home AC charging?
+el-ev.q0.o0	The wallbox
+el-ev.q0.o1	The car's on-board charger
+el-ev.q0.o2	The battery
+el-ev.q0.x	AC charging uses the car's own charger.
+el-ev.q1.q	Why does fast charging slow above about 80%?
+el-ev.q1.o0	The charger overheats
+el-ev.q1.o1	To protect the battery as it fills
+el-ev.q1.o2	Electricity costs more
+el-ev.q1.x	The battery management system tapers the current.
+el-ev.q2.q	Adding 40 kWh with an 11 kW charger takes about…
+el-ev.q2.o0	1 hour
+el-ev.q2.o1	3.6 hours
+el-ev.q2.o2	11 hours
+el-ev.q2.x	40 ÷ 11 ≈ 3.6 hours.
+el-ev.c0.title	AC charging
+el-ev.c0.text	At home and on most street posts, the car receives AC and converts it to DC with its own on-board charger. The car's charger limits the speed, usually 7–11 kW.
+el-ev.c0.viz.steps.0	AC from the wallbox
+el-ev.c0.viz.steps.1	On-board charger in the car
+el-ev.c0.viz.steps.2	DC into the battery
+el-ev.c1.title	DC fast charging
+el-ev.c1.text	Fast chargers convert AC to DC in the station and feed the battery directly, bypassing the car's charger. Powers range from 50 kW to 350 kW.
+el-ev.c1.viz.l.t	AC charging
+el-ev.c1.viz.l.items.0	car converts to DC
+el-ev.c1.viz.l.items.1	3.7–22 kW
+el-ev.c1.viz.l.items.2	homes and offices
+el-ev.c1.viz.r.t	DC charging
+el-ev.c1.viz.r.items.0	station converts
+el-ev.c1.viz.r.items.1	50–350 kW
+el-ev.c1.viz.r.items.2	motorways
+el-ev.c2.title	Charging power options
+el-ev.c2.text	A normal socket gives about 2.3 kW (10 A at 230 V), slow but fine overnight for short commutes. A single-phase wallbox at 32 A gives about 7.4 kW.
+el-ev.c2.viz.unit	kW
+el-ev.c2.viz.items.0.l	Domestic socket
+el-ev.c2.viz.items.1.l	Wallbox 1-phase
+el-ev.c2.viz.items.2.l	Wallbox 3-phase
+el-ev.c2.viz.items.3.l	AC 22 kW
+el-ev.c2.viz.items.4.l	DC fast
+el-ev.c3.title	How long will it take?
+el-ev.c3.text	Divide the energy needed by the charging power, then add some margin for losses and the slower final stage.
+el-ev.c3.example.0	Add 50 kWh at 7.4 kW
+el-ev.c3.example.1	50 ÷ 7.4
+el-ev.c3.example.2	≈ 7 hours
+el-ev.c3.viz.f	hours ≈ kWh needed ÷ kW
+el-ev.c3.viz.items.0.s	kWh
+el-ev.c3.viz.items.0.m	energy to add
+el-ev.c3.viz.items.1.s	kW
+el-ev.c3.viz.items.1.m	charging power
+el-ev.c4.title	The charging curve
+el-ev.c4.text	DC charging is fastest at low states of charge and slows down as the battery fills, to protect it. Going from 10% to 80% often takes about as long as 80% to 100%.
+el-ev.c4.viz.events.0.l	full speed
+el-ev.c4.viz.events.1.l	still fast
+el-ev.c4.viz.events.2.l	power drops
+el-ev.c4.viz.events.3.l	slow trickle
+el-ev.c5.title	400 V and 800 V cars
+el-ev.c5.text	Most EVs use about 400 V packs. Some newer cars, such as the XPeng G9 and Porsche Taycan, use 800 V platforms, which allow higher charging power with less current and heat.
+el-ev.c5.viz.f	P = V × I
+el-ev.c5.viz.items.0.s	400 V × 500 A
+el-ev.c5.viz.items.0.m	200 kW
+el-ev.c5.viz.items.1.s	800 V × 500 A
+el-ev.c5.viz.items.1.m	400 kW
+el-ev.c6.title	Connectors in Europe
+el-ev.c6.text	Type 2 is the standard AC plug in Europe. CCS2 adds two big DC pins below it for fast charging. Older Japanese cars may use CHAdeMO.
+el-ev.c6.viz.items.0.a	Type 2
+el-ev.c6.viz.items.0.b	AC charging
+el-ev.c6.viz.items.1.a	CCS2
+el-ev.c6.viz.items.1.b	Type 2 + DC pins
+el-ev.c6.viz.items.2.a	CHAdeMO
+el-ev.c6.viz.items.2.b	older Japanese DC
+el-ev.c7.title	Smart charging at home
+el-ev.c7.text	Smart wallboxes can follow cheaper night tariffs, use surplus solar, and reduce power if the house is near its contracted limit (load balancing), so the main breaker doesn't trip.
+el-ev.c7.viz.items.0	Schedule for cheap hours
+el-ev.c7.viz.items.1	Follow solar surplus
+el-ev.c7.viz.items.2	Load balancing with the house
+el-ev.c7.viz.items.3	App monitoring
+el-ev.c8.title	Mobi.E in Portugal
+el-ev.c8.text	Portugal's public charging network is coordinated by Mobi.E. You can use most public chargers with one card or app from any supplier (CEME), and pay the operator, the supplier and network fees.
+el-ev.c8.viz.steps.0	Choose a supplier card or app
+el-ev.c8.viz.steps.1	Plug in at any Mobi.E point
+el-ev.c8.viz.steps.2	Charge
+el-ev.c8.viz.steps.3	One bill with all fees
+el-ev.c9.title	Efficiency and losses
+el-ev.c9.text	Some energy is lost as heat while charging, typically about 10% for AC home charging, sometimes more at very low power. The meter at the wallbox shows more kWh than the battery receives.
+el-ev.c9.viz.unit	kWh
+el-ev.c9.viz.items.0.l	From the grid
+el-ev.c9.viz.items.1.l	Into the battery
+el-ev.c9.viz.items.2.l	Losses
+el-tariffs.title	Energy at home
+el-tariffs.summary	Bills, tariffs and where the kWh go.
+el-tariffs.q0.q	On a bi-horário tariff, when is energy cheaper?
+el-tariffs.q0.o0	Midday
+el-tariffs.q0.o1	Off-peak hours, mostly at night and weekends
+el-tariffs.q0.o2	It's never cheaper
+el-tariffs.q0.x	Vazio hours are the cheap period.
+el-tariffs.q1.q	Roughly how much less electricity does an LED use than an incandescent bulb for the same light?
+el-tariffs.q1.o0	20%
+el-tariffs.q1.o1	80–90%
+el-tariffs.q1.o2	0%
+el-tariffs.q1.x	About 8 W versus 60 W.
+el-tariffs.q2.q	Which is usually one of the largest single loads at home?
+el-tariffs.q2.o0	Phone charger
+el-tariffs.q2.o1	Electric water heater
+el-tariffs.q2.o2	LED lamp
+el-tariffs.q2.x	Heating water takes a lot of energy.
+el-tariffs.c0.title	Reading the bill
+el-tariffs.c0.text	A Portuguese electricity bill has a fixed part (contracted power, per day), an energy part (per kWh), network access charges, taxes (VAT, the audiovisual contribution) and sometimes discounts.
+el-tariffs.c0.viz.root	Your bill
+el-tariffs.c0.viz.items.0	Fixed: contracted power
+el-tariffs.c0.viz.items.1	Energy: kWh used
+el-tariffs.c0.viz.items.2	Taxes and levies
+el-tariffs.c1.title	Time-of-use tariffs
+el-tariffs.c1.text	Simple tariffs charge the same price all day. Two-period (bi-horário) tariffs have cheaper off-peak (vazio) hours, mostly at night and weekends; three-period (tri-horário) splits peak and shoulder hours too.
+el-tariffs.c1.viz.l.t	Simple
+el-tariffs.c1.viz.l.items.0	one price
+el-tariffs.c1.viz.l.items.1	easy
+el-tariffs.c1.viz.l.items.2	no need to shift
+el-tariffs.c1.viz.r.t	Bi-horário
+el-tariffs.c1.viz.r.items.0	cheaper nights and weekends
+el-tariffs.c1.viz.r.items.1	worth it if you shift load
+el-tariffs.c1.viz.r.items.2	EV, water heater
+el-tariffs.c2.title	When bi-horário pays off
+el-tariffs.c2.text	It usually pays if you can move a good share of your consumption, often around 40% or more, to off-peak hours: EV charging, water heating, washing machine and dishwasher on a timer.
+el-tariffs.c2.viz.items.0	EV charging at night
+el-tariffs.c2.viz.items.1	Water heater on a timer
+el-tariffs.c2.viz.items.2	Washing machine delayed start
+el-tariffs.c2.viz.items.3	Dishwasher overnight
+el-tariffs.c3.title	Where the kWh go
+el-tariffs.c3.text	In a typical home, heating and hot water are the biggest users, followed by cooking, refrigeration, laundry and lighting. An EV can easily double household consumption.
+el-tariffs.c3.viz.unit	% of home use (illustrative)
+el-tariffs.c3.viz.items.0.l	Heating & cooling
+el-tariffs.c3.viz.items.1.l	Hot water
+el-tariffs.c3.viz.items.2.l	Kitchen & fridge
+el-tariffs.c3.viz.items.3.l	Laundry
+el-tariffs.c3.viz.items.4.l	Other
+el-tariffs.c4.title	The fridge runs all year
+el-tariffs.c4.text	A fridge-freezer cycles on and off 24/7. A modern efficient one uses about 150–250 kWh a year; an old one can use two or three times more.
+el-tariffs.c4.viz.unit	kWh per year (typical)
+el-tariffs.c4.viz.items.0.l	New A-class fridge-freezer
+el-tariffs.c4.viz.items.1.l	10-year-old model
+el-tariffs.c4.viz.items.2.l	20-year-old
+el-tariffs.c5.title	Energy labels
+el-tariffs.c5.text	EU energy labels rate appliances from A (best) to G and show annual consumption in kWh. The scale was rescaled in 2021, so a new "C" can be better than an old "A+++".
+el-tariffs.c5.viz.items.0	A: most efficient
+el-tariffs.c5.viz.items.1	B–C: good
+el-tariffs.c5.viz.items.2	D–E: average
+el-tariffs.c5.viz.items.3	F–G: least efficient
+el-tariffs.c6.title	LED lighting
+el-tariffs.c6.text	LED bulbs use about 80–90% less electricity than old incandescent bulbs for the same light and last much longer. Light output is measured in lumens, not watts.
+el-tariffs.c6.viz.unit	watts for ~800 lumens
+el-tariffs.c6.viz.items.0.l	Incandescent
+el-tariffs.c6.viz.items.1.l	Halogen
+el-tariffs.c6.viz.items.2.l	CFL
+el-tariffs.c6.viz.items.3.l	LED
+el-tariffs.c7.title	Water heaters
+el-tariffs.c7.text	An electric water heater (termoacumulador) is often one of the biggest single loads. A timer for cheap hours, a lower thermostat setting (around 50–55 °C), and good insulation cut costs. Heat pump water heaters use about a third of the energy.
+el-tariffs.c7.viz.unit	kWh per year (family of 4, approx.)
+el-tariffs.c7.viz.items.0.l	Electric resistance
+el-tariffs.c7.viz.items.1.l	Heat pump water heater
+el-tariffs.c8.title	Monitoring
+el-tariffs.c8.text	Smart meters and clamp-based monitors (for example with Home Assistant) show consumption in real time, revealing standby loads and expensive habits.
+el-tariffs.c8.viz.steps.0	Clamp sensor on the main cable
+el-tariffs.c8.viz.steps.1	Monitor or Home Assistant
+el-tariffs.c8.viz.steps.2	See live watts
+el-tariffs.c8.viz.steps.3	Spot waste
+el-tariffs.c9.title	Self-consumption communities
+el-tariffs.c9.text	In Portugal, neighbours, businesses and municipalities can form renewable energy communities and share solar production through the grid, paying network fees on shared energy.
+el-tariffs.c9.viz.steps.0	Solar on a roof
+el-tariffs.c9.viz.steps.1	Shared through the grid
+el-tariffs.c9.viz.steps.2	Neighbours use it
+el-tariffs.c9.viz.steps.3	Lower bills for members
+el-heat.title	Heating and cooking with electricity
+el-heat.summary	Resistive heat, heat pumps, ovens and hobs.
+el-heat.q0.q	A heat pump with a SCOP of 4 using 1,000 kWh delivers about…
+el-heat.q0.o0	1,000 kWh of heat
+el-heat.q0.o1	4,000 kWh of heat
+el-heat.q0.o2	250 kWh of heat
+el-heat.q0.x	Heat = SCOP × electricity.
+el-heat.q1.q	Which hob puts the most energy into the pan?
+el-heat.q1.o0	Gas
+el-heat.q1.o1	Ceramic
+el-heat.q1.o2	Induction
+el-heat.q1.x	Induction heats the pan directly.
+el-heat.q2.q	Do all resistive electric heaters give the same heat per kWh?
+el-heat.q2.o0	Yes, 1 kWh in gives 1 kWh of heat
+el-heat.q2.o1	No, oil heaters give double
+el-heat.q2.o2	No, fan heaters give half
+el-heat.q2.x	They differ in delivery, not efficiency.
+el-heat.c0.title	Resistive heating
+el-heat.c0.text	Heaters, kettles, ovens and water heaters turn electricity into heat through resistance: 1 kWh of electricity gives 1 kWh of heat. That's 100% efficient, yet still expensive compared with a heat pump.
+el-heat.c0.viz.steps.0	Current through a resistance
+el-heat.c0.viz.steps.1	I²R heating
+el-heat.c0.viz.steps.2	1 kWh in = 1 kWh of heat
+el-heat.c1.title	Heat pumps: 3 to 4 times better
+el-heat.c1.text	A heat pump moves heat from outside air (or the ground) into the house. Typical seasonal efficiency (SCOP) is 3–4: 1 kWh of electricity delivers 3–4 kWh of heat.
+el-heat.c1.viz.unit	kWh of heat per kWh of electricity
+el-heat.c1.viz.items.0.l	Resistive heater
+el-heat.c1.viz.items.1.l	Air-to-air heat pump
+el-heat.c1.viz.items.2.l	Ground source
+el-heat.c2.title	Air-to-air vs air-to-water
+el-heat.c2.text	Air-to-air heat pumps are the familiar split air conditioners that also heat. Air-to-water units heat water for radiators, underfloor heating and hot taps.
+el-heat.c2.viz.l.t	Air-to-air
+el-heat.c2.viz.l.items.0	split AC units
+el-heat.c2.viz.l.items.1	heats and cools
+el-heat.c2.viz.l.items.2	fast and cheap
+el-heat.c2.viz.r.t	Air-to-water
+el-heat.c2.viz.r.items.0	radiators and floor heating
+el-heat.c2.viz.r.items.1	hot water too
+el-heat.c2.viz.r.items.2	bigger install
+el-heat.c3.title	Oil-filled vs convector vs radiant
+el-heat.c3.text	All resistive heaters give the same heat per kWh. They differ in how they deliver it: oil-filled radiators are slow and steady, convectors warm air quickly, radiant panels warm people and objects directly.
+el-heat.c3.viz.items.0.a	oil-filled
+el-heat.c3.viz.items.0.b	slow, steady, retains heat
+el-heat.c3.viz.items.1.a	convector
+el-heat.c3.viz.items.1.b	fast air heating
+el-heat.c3.viz.items.2.a	radiant panel
+el-heat.c3.viz.items.2.b	warms you directly
+el-heat.c3.viz.items.3.a	fan heater
+el-heat.c3.viz.items.3.b	fast, noisy
+el-heat.c4.title	Kettles: heat only what you need
+el-heat.c4.text	A 2 kW kettle boils 1 litre in about 3 minutes. Boiling a full kettle for one cup wastes energy and time.
+el-heat.c4.viz.f	kWh = litres × 4.19 × ΔT ÷ 3600
+el-heat.c4.viz.items.0.s	1 L
+el-heat.c4.viz.items.0.m	water
+el-heat.c4.viz.items.1.s	80 °C
+el-heat.c4.viz.items.1.m	temperature rise
+el-heat.c4.viz.items.2.s	≈ 0.093 kWh
+el-heat.c4.viz.items.2.m	energy
+el-heat.c5.title	Induction vs ceramic vs gas
+el-heat.c5.text	Induction heats the pan directly and is about 85–90% efficient. Ceramic (radiant) hobs are around 70%, gas burners around 40–55%. Induction is also faster and easier to control.
+el-heat.c5.viz.unit	% of energy into the food (approx.)
+el-heat.c5.viz.items.0.l	Gas
+el-heat.c5.viz.items.1.l	Ceramic
+el-heat.c5.viz.items.2.l	Induction
+el-heat.c6.title	Ovens and air fryers
+el-heat.c6.text	Heating a large oven cavity takes energy before any cooking starts. Small appliances like air fryers and microwaves heat less volume and often use far less energy for small portions.
+el-heat.c6.viz.unit	kWh for a small meal (approx.)
+el-heat.c6.viz.items.0.l	Electric oven
+el-heat.c6.viz.items.1.l	Air fryer
+el-heat.c6.viz.items.2.l	Microwave
+el-heat.c7.title	Thermostats and timers
+el-heat.c7.text	Every degree lower on the thermostat saves roughly 5–10% of heating energy. Timers and smart thermostats heat rooms only when they're used.
+el-heat.c7.viz.items.0	Lower 1 °C ≈ 5–10% saving
+el-heat.c7.viz.items.1	Heat only occupied rooms
+el-heat.c7.viz.items.2	Programme heating times
+el-heat.c7.viz.items.3	Close blinds at night
+el-heat.c8.title	Insulation first
+el-heat.c8.text	The cheapest kWh is the one you don't need. Roof and wall insulation, better windows and draught sealing reduce heating needs before you upgrade the heater.
+el-heat.c8.viz.items.0	Then: efficient heat pump
+el-heat.c8.viz.items.1	Then: windows and draughts
+el-heat.c8.viz.items.2	First: roof and wall insulation
+el-heat.c9.title	Portugal's cold homes
+el-heat.c9.text	Despite the mild climate, many Portuguese homes are poorly insulated and cold in winter. Portugal has had one of the higher rates of energy poverty in the EU, which is why efficiency programmes subsidise insulation and heat pumps.
+el-heat.c9.viz.steps.0	Poor insulation
+el-heat.c9.viz.steps.1	Cold, damp rooms
+el-heat.c9.viz.steps.2	Expensive heating
+el-heat.c9.viz.steps.3	Efficiency grants help
+el-static.title	Static electricity and lightning
+el-static.summary	Sparks, storms and lightning protection.
+el-static.q0.q	Why are you safe inside a car during lightning?
+el-static.q0.o0	The rubber tyres insulate you
+el-static.q0.o1	The metal body conducts the current around you
+el-static.q0.o2	Cars are too low to be hit
+el-static.q0.x	It acts as a Faraday cage.
+el-static.q1.q	Static shocks are more common when…
+el-static.q1.o0	It's humid
+el-static.q1.o1	The air is dry
+el-static.q1.o2	It's raining
+el-static.q1.x	Dry air lets charge build up.
+el-static.q2.q	A typical lightning current is around…
+el-static.q2.o0	30 A
+el-static.q2.o1	30,000 A
+el-static.q2.o2	30 mA
+el-static.q2.x	Tens of thousands of amps for microseconds.
+el-static.c0.title	Static charge
+el-static.c0.text	Rubbing two materials together transfers electrons from one to the other. One becomes negatively charged, the other positively. The charge stays put ("static") until it finds a path.
+el-static.c0.viz.steps.0	Rubbing materials
+el-static.c0.viz.steps.1	Electrons move across
+el-static.c0.viz.steps.2	One side + , one side −
+el-static.c0.viz.steps.3	Spark when a path appears
+el-static.c1.title	Why you get shocks
+el-static.c1.text	Walking on carpet in dry weather builds up charge on your body, sometimes thousands of volts. Touch a metal door handle and it discharges in a tiny spark. Harmless to you, but deadly for electronics.
+el-static.c1.viz.items.0.v	3,000 V
+el-static.c1.viz.items.0.l	about when you feel it
+el-static.c1.viz.items.1.v	10,000+ V
+el-static.c1.viz.items.1.l	possible on dry days
+el-static.c2.title	ESD and electronics
+el-static.c2.text	Electrostatic discharge can destroy chips with voltages too small to feel. That's why boards ship in anti-static bags and technicians wear wrist straps.
+el-static.c2.viz.items.0	Wear a wrist strap
+el-static.c2.viz.items.1	Use anti-static mats and bags
+el-static.c2.viz.items.2	Touch earthed metal first
+el-static.c2.viz.items.3	Avoid dry synthetic clothing
+el-static.c3.title	How lightning forms
+el-static.c3.text	Inside storm clouds, ice crystals and soft hail collide in strong updrafts, separating charge. The top of the cloud becomes positive and the bottom negative, until the air breaks down in a giant spark.
+el-static.c3.viz.steps.0	Updrafts
+el-static.c3.viz.steps.1	Ice particles collide
+el-static.c3.viz.steps.2	Charge separates in the cloud
+el-static.c3.viz.steps.3	Air breaks down: lightning
+el-static.c4.title	Lightning numbers
+el-static.c4.text	A typical lightning bolt carries around 30,000 amps, at hundreds of millions of volts, for a few microseconds, and heats the air to around 30,000 °C, about five times hotter than the Sun's surface.
+el-static.c4.viz.items.0.v	30,000 A
+el-static.c4.viz.items.0.l	typical current
+el-static.c4.viz.items.1.v	~30,000 °C
+el-static.c4.viz.items.1.l	air temperature
+el-static.c4.viz.items.2.l	flashes per second worldwide
+el-static.c5.title	Lightning rods
+el-static.c5.text	A lightning rod offers an easy path to earth, so a strike flows safely down a conductor instead of through the building. Benjamin Franklin popularised them in the 1750s.
+el-static.c5.viz.steps.0	Strike hits the rod
+el-static.c5.viz.steps.1	Down-conductor
+el-static.c5.viz.steps.2	Earth electrode
+el-static.c5.viz.steps.3	Building spared
+el-static.c6.title	Safe in a car
+el-static.c6.text	A metal car body acts as a Faraday cage: current flows around the outside of the metal shell, not through the people inside. It's the metal, not the rubber tyres, that protects you.
+el-static.c6.viz.items.0.w	the rubber tyres protect you
+el-static.c6.viz.items.0.r	the metal body carries the current around you
+el-static.c7.title	Outdoor safety
+el-static.c7.text	If thunder is audible, you're within striking distance. Go indoors or into a car, stay away from tall isolated trees, hilltops and water, and wait 30 minutes after the last thunder.
+el-static.c7.viz.items.0	Hear thunder? Go inside
+el-static.c7.viz.items.1	Avoid lone trees and hilltops
+el-static.c7.viz.items.2	Get out of the water
+el-static.c7.viz.items.3	Wait 30 minutes after the last thunder
+el-static.c8.title	Surges into homes
+el-static.c8.text	A nearby strike can induce surges in power and telephone lines that damage electronics. Surge protection devices at the fuse board and on sensitive equipment help.
+el-static.c8.viz.steps.0	Nearby strike
+el-static.c8.viz.steps.1	Surge on incoming lines
+el-static.c8.viz.steps.2	SPD diverts it to earth
+el-static.c8.viz.steps.3	Devices protected
+el-static.c9.title	Static in industry
+el-static.c9.text	Flowing fuel, powders and plastic films can build up dangerous static. Fuel stations, grain silos and paint shops use earthing and bonding to prevent sparks that could ignite vapours or dust.
+el-static.c9.viz.items.0	Earth tankers before unloading
+el-static.c9.viz.items.1	Bond pipes and containers
+el-static.c9.viz.items.2	Control humidity
+el-static.c9.viz.items.3	Use anti-static materials
+el-safety.title	Electrical safety
+el-safety.summary	Rules that keep people and homes safe.
+el-safety.q0.q	What should you do first if someone is stuck to a live appliance?
+el-safety.q0.o0	Pull them by the arm
+el-safety.q0.o1	Switch off the power or separate them with something dry and non-conductive
+el-safety.q0.o2	Throw water on them
+el-safety.q0.x	Never touch them while they're energised.
+el-safety.q1.q	Why are loose connections dangerous?
+el-safety.q1.o0	They waste water
+el-safety.q1.o1	Higher resistance makes them heat up and can start fires
+el-safety.q1.o2	They lower the voltage to zero
+el-safety.q1.x	Heat and oxidation make them worse.
+el-safety.q2.q	Which job should be left to a qualified electrician?
+el-safety.q2.o0	Changing a bulb
+el-safety.q2.o1	Adding a new circuit to the fuse board
+el-safety.q2.o2	Resetting a breaker
+el-safety.q2.x	Fixed installation work needs a professional.
+el-safety.c0.title	Three dangers
+el-safety.c0.text	Electricity hurts in three ways: electric shock (current through the body), burns (from arcs or hot surfaces) and fire (from overheating cables or connections).
+el-safety.c0.viz.root	Hazards
+el-safety.c0.viz.items.0	Shock
+el-safety.c0.viz.items.1	Burns and arcs
+el-safety.c0.viz.items.2	Fire
+el-safety.c1.title	Current path matters
+el-safety.c1.text	Current from hand to hand or hand to foot crosses the chest and heart, the most dangerous paths. Wet skin has much lower resistance, letting more current flow at the same voltage.
+el-safety.c1.viz.l.t	Dry skin
+el-safety.c1.viz.l.items.0	higher resistance
+el-safety.c1.viz.l.items.1	less current
+el-safety.c1.viz.r.t	Wet skin
+el-safety.c1.viz.r.items.0	much lower resistance
+el-safety.c1.viz.r.items.1	far more current
+el-safety.c2.title	Water and electricity
+el-safety.c2.text	Bathrooms and kitchens have special rules: zones around baths and showers limit which equipment can go where, and all circuits should be protected by a 30 mA RCD.
+el-safety.c2.viz.items.0	No standard sockets near baths
+el-safety.c2.viz.items.1	IP-rated fittings in wet zones
+el-safety.c2.viz.items.2	30 mA RCD protection
+el-safety.c2.viz.items.3	Never use mains devices in the bath
+el-safety.c3.title	Loose connections
+el-safety.c3.text	A loose screw terminal has a small contact area and higher resistance, so it heats up, oxidises and heats further. Many electrical fires start at a connection, not in the middle of a cable.
+el-safety.c3.viz.steps.0	Loose terminal
+el-safety.c3.viz.steps.1	Higher resistance
+el-safety.c3.viz.steps.2	Heat and oxidation
+el-safety.c3.viz.steps.3	Even worse contact
+el-safety.c4.title	Warning signs
+el-safety.c4.text	Call an electrician if you see scorch marks, smell burning plastic, hear crackling, feel warm sockets or switches, or if breakers trip repeatedly.
+el-safety.c4.viz.items.0	Scorch marks
+el-safety.c4.viz.items.1	Burning smell
+el-safety.c4.viz.items.2	Crackling or buzzing
+el-safety.c4.viz.items.3	Warm sockets or plugs
+el-safety.c4.viz.items.4	Repeated tripping
+el-safety.c5.title	If someone is being shocked
+el-safety.c5.text	Don't touch them while they're in contact with the source. Switch off the power or separate them with something dry and non-conductive, call 112, and start CPR if needed.
+el-safety.c5.viz.steps.0	Don't touch them
+el-safety.c5.viz.steps.1	Cut the power
+el-safety.c5.viz.steps.2	Call 112
+el-safety.c5.viz.steps.3	Check breathing, start CPR
+el-safety.c6.title	DIY limits
+el-safety.c6.text	Changing a light bulb or plugging in appliances is fine. New circuits, fuse-board work and anything in the fixed installation should be done by a qualified electrician, and in Portugal new installations need certification.
+el-safety.c6.viz.l.t	DIY OK
+el-safety.c6.viz.l.items.0	bulbs
+el-safety.c6.viz.l.items.1	plugs on appliances
+el-safety.c6.viz.l.items.2	resetting breakers
+el-safety.c6.viz.r.t	Electrician
+el-safety.c6.viz.r.items.0	new circuits
+el-safety.c6.viz.r.items.1	fuse board
+el-safety.c6.viz.r.items.2	EV chargers, solar
+el-safety.c7.title	Overloaded adapters
+el-safety.c7.text	Plugging several high-power appliances into one multi-way adapter can overload it and the socket behind it. Heaters, kettles and irons should each have their own wall socket.
+el-safety.c7.viz.items.0.w	heater + kettle on one adapter
+el-safety.c7.viz.items.0.r	one high-power appliance per wall socket
+el-safety.c8.title	Overhead lines
+el-safety.c8.text	Never fly drones or kites, or raise ladders and boat masts, near overhead power lines. High voltage can arc across the air gap without contact.
+el-safety.c8.viz.items.0	Keep ladders well clear
+el-safety.c8.viz.items.1	No kites or drones near lines
+el-safety.c8.viz.items.2	Watch masts and cranes
+el-safety.c8.viz.items.3	Report fallen lines, don't approach
+el-safety.c9.title	The 230 V myth
+el-safety.c9.text	"Only 230 V" is enough to kill. What matters is the current through the body, and at 230 V a wet hand-to-hand path can easily pass more than the 30–50 mA that can disturb the heart.
+el-safety.c9.viz.f	I = V ÷ R
+el-safety.c9.viz.items.0.s	230 V
+el-safety.c9.viz.items.0.m	mains
+el-safety.c9.viz.items.1.s	~1,000 Ω
+el-safety.c9.viz.items.1.m	wet body path
+el-safety.c9.viz.items.2.s	≈ 230 mA
+el-safety.c9.viz.items.2.m	dangerous current
+el-backup.title	Home batteries and backup
+el-backup.summary	Storing solar power and keeping the lights on.
+el-backup.q0.q	Why do many solar systems switch off during a blackout?
+el-backup.q0.o0	To save panels
+el-backup.q0.o1	To avoid feeding power into lines that workers believe are dead
+el-backup.q0.o2	Because the sun goes down
+el-backup.q0.x	Anti-islanding protects line workers.
+el-backup.q1.q	How should you size a home battery?
+el-backup.q1.o0	Equal to the panel size
+el-backup.q1.o1	Around your evening and night consumption
+el-backup.q1.o2	As big as possible always
+el-backup.q1.x	Store what you'd otherwise buy after sunset.
+el-backup.q2.q	Where must a petrol generator run?
+el-backup.q2.o0	In the garage
+el-backup.q2.o1	Outdoors, away from windows
+el-backup.q2.o2	In the kitchen
+el-backup.q2.x	Carbon monoxide is deadly.
+el-backup.c0.title	Why a home battery?
+el-backup.c0.text	A battery stores midday solar surplus for the evening, raising self-consumption, and can shift cheap night energy to expensive hours. Some systems also provide backup during outages.
+el-backup.c0.viz.steps.0	Solar surplus at noon
+el-backup.c0.viz.steps.1	Charge the battery
+el-backup.c0.viz.steps.2	Evening use
+el-backup.c0.viz.steps.3	Less bought from the grid
+el-backup.c1.title	Sizing a battery
+el-backup.c1.text	Size the battery to your evening and night consumption, not your whole day. Many homes use 5–10 kWh between sunset and sunrise.
+el-backup.c1.viz.f	kWh ≈ evening use ÷ usable depth
+el-backup.c1.viz.items.0.s	6 kWh
+el-backup.c1.viz.items.0.m	evening use
+el-backup.c1.viz.items.1.m	usable depth
+el-backup.c1.viz.items.2.s	≈ 6.7 kWh
+el-backup.c1.viz.items.2.m	battery size
+el-backup.c2.title	Hybrid inverters
+el-backup.c2.text	A hybrid inverter connects panels, battery, house and grid, deciding where power flows: to the house first, then the battery, then export.
+el-backup.c2.viz.steps.0	Panels
+el-backup.c2.viz.steps.1	Hybrid inverter
+el-backup.c2.viz.steps.2	House first
+el-backup.c2.viz.steps.3	Then battery
+el-backup.c2.viz.steps.4	Then grid
+el-backup.c3.title	Backup is not automatic
+el-backup.c3.text	Many grid-tied solar systems shut down during a blackout for safety, so line workers aren't hurt by power fed back. Backup needs an inverter with an islanding switch and a backup circuit.
+el-backup.c3.viz.l.t	Grid-tied only
+el-backup.c3.viz.l.items.0	switches off in a blackout
+el-backup.c3.viz.l.items.1	no backup
+el-backup.c3.viz.r.t	Hybrid with backup
+el-backup.c3.viz.r.items.0	isolates from the grid
+el-backup.c3.viz.r.items.1	powers essentials
+el-backup.c4.title	Essential loads
+el-backup.c4.text	Rather than backing up the whole house, many systems feed an "essential loads" panel: fridge, lights, router, boiler controls, a few sockets.
+el-backup.c4.viz.items.0	Fridge and freezer
+el-backup.c4.viz.items.1	Lights
+el-backup.c4.viz.items.2	Router and network
+el-backup.c4.viz.items.3	Heating controls
+el-backup.c4.viz.items.4	A few sockets
+el-backup.c5.title	UPS for electronics
+el-backup.c5.text	An uninterruptible power supply keeps a computer, NAS or network running for minutes during a cut and allows a clean shutdown. It's rated in VA and in runtime at a given load.
+el-backup.c5.viz.steps.0	Grid fails
+el-backup.c5.viz.steps.1	UPS battery takes over in milliseconds
+el-backup.c5.viz.steps.2	Minutes of runtime
+el-backup.c5.viz.steps.3	Clean shutdown
+el-backup.c6.title	Generators
+el-backup.c6.text	Portable petrol generators provide backup but must never run indoors (carbon monoxide). Connecting one to the house requires a proper changeover switch so it can't feed the grid.
+el-backup.c6.viz.items.0.w	extension lead into the board
+el-backup.c6.viz.items.0.r	changeover switch installed by an electrician
+el-backup.c6.viz.items.1.w	run it in the garage
+el-backup.c6.viz.items.1.r	run it outdoors, away from windows
+el-backup.c7.title	Vehicle-to-home
+el-backup.c7.text	Some EVs can power a home through bidirectional charging (V2H) or supply appliances via a socket (V2L). An EV battery of 70 kWh could run a typical home for days.
+el-backup.c7.viz.items.0.a	V2L
+el-backup.c7.viz.items.0.b	sockets from the car
+el-backup.c7.viz.items.1.a	V2H
+el-backup.c7.viz.items.1.b	powers the house
+el-backup.c7.viz.items.2.a	V2G
+el-backup.c7.viz.items.2.b	feeds the grid
+el-backup.c8.title	Economics
+el-backup.c8.text	Home batteries don't always pay for themselves on savings alone. The case improves with large evening consumption, time-of-use tariffs, low feed-in prices, or a strong need for backup.
+el-backup.c8.viz.items.0	Big evening use
+el-backup.c8.viz.items.1	Big price gap between peak and off-peak
+el-backup.c8.viz.items.2	Low payment for exported solar
+el-backup.c8.viz.items.3	Frequent outages
+el-backup.c9.title	Safety and placement
+el-backup.c9.text	Install batteries in a ventilated, cool, dry place, away from bedrooms and exits, with clearances as the manufacturer specifies. LFP chemistry is preferred for homes because it's more thermally stable.
+el-backup.c9.viz.items.0	Cool, dry, ventilated
+el-backup.c9.viz.items.1	Not blocking exits
+el-backup.c9.viz.items.2	Manufacturer clearances
+el-backup.c9.viz.items.3	Prefer LFP chemistry
+el-history.title	A history of electricity
+el-history.summary	From amber to the smart grid.
+el-history.q0.q	The volt is named after…
+el-history.q0.o0	James Watt
+el-history.q0.o1	Alessandro Volta
+el-history.q0.o2	Michael Faraday
+el-history.q0.x	Volta built the first battery in 1800.
+el-history.q1.q	Who discovered electromagnetic induction in 1831?
+el-history.q1.o0	Edison
+el-history.q1.o1	Faraday
+el-history.q1.o2	Maxwell
+el-history.q1.x	Faraday showed moving magnets induce current.
+el-history.q2.q	What did the 1947 transistor replace?
+el-history.q2.o0	Batteries
+el-history.q2.o1	Vacuum tubes
+el-history.q2.o2	Copper wires
+el-history.q2.x	Transistors made electronics small and reliable.
+el-history.c0.title	Amber and the word "electric"
+el-history.c0.text	Ancient Greeks noticed that rubbed amber attracted feathers. The Greek word for amber, "elektron", gave us "electricity", a term coined by William Gilbert around 1600.
+el-history.c0.viz.events.0.y	~600 BCE
+el-history.c0.viz.events.0.l	Thales and amber
+el-history.c0.viz.events.1.l	Gilbert coins "electricus"
+el-history.c0.viz.events.2.l	Franklin's kite
+el-history.c0.viz.events.3.l	Volta's battery
+el-history.c1.title	Volta's battery, 1800
+el-history.c1.text	Alessandro Volta stacked discs of zinc and copper separated by brine-soaked cloth: the first battery to give a steady current. The volt is named after him.
+el-history.c1.viz.steps.0	Zinc disc
+el-history.c1.viz.steps.1	Brine-soaked cloth
+el-history.c1.viz.steps.2	Copper disc
+el-history.c1.viz.steps.3	Repeat: steady current
+el-history.c2.title	Faraday's discoveries
+el-history.c2.text	In 1831 Michael Faraday showed that moving magnets induce currents, the basis of every generator and transformer. He had little formal education and became one of the greatest experimenters ever.
+el-history.c2.viz.items.0.l	electromagnetic induction
+el-history.c2.viz.items.1.l	discovery behind all generators
+el-history.c3.title	Maxwell's equations
+el-history.c3.text	In the 1860s James Clerk Maxwell wrote four equations unifying electricity, magnetism and light. They predicted radio waves, which Hertz demonstrated in 1887.
+el-history.c3.viz.events.0.l	Maxwell's theory
+el-history.c3.viz.events.1.l	Hertz makes radio waves
+el-history.c3.viz.events.2.l	Marconi's radio
+el-history.c4.title	Light bulbs
+el-history.c4.text	Many inventors worked on electric light. In 1879 Edison and, in Britain, Swan produced practical long-lasting carbon-filament bulbs. Edison also built the power stations and network to sell electricity.
+el-history.c4.viz.events.0.l	practical incandescent bulbs
+el-history.c4.viz.events.1.l	Pearl Street station, New York
+el-history.c4.viz.events.2.y	1920s
+el-history.c4.viz.events.2.l	homes widely electrified in the US
+el-history.c5.title	Electricity in Portugal
+el-history.c5.text	The first electric lights in Portugal were switched on in Cascais in 1878. Large hydroelectric dams from the 1950s onward, on rivers such as the Zêzere and the Douro, powered the country's electrification.
+el-history.c5.viz.events.0.l	first electric lights, Cascais
+el-history.c5.viz.events.1.l	Castelo do Bode dam
+el-history.c5.viz.events.2.y	1960s–70s
+el-history.c5.viz.events.2.l	Douro dams
+el-history.c5.viz.events.3.y	2000s
+el-history.c5.viz.events.3.l	wind boom
+el-history.c6.title	The transistor, 1947
+el-history.c6.text	At Bell Labs, Bardeen, Brattain and Shockley built the first transistor. It replaced bulky vacuum tubes and made modern electronics, computers and phones possible.
+el-history.c6.viz.steps.0	Vacuum tubes
+el-history.c6.viz.steps.1	Transistor 1947
+el-history.c6.viz.steps.2	Integrated circuit 1958
+el-history.c6.viz.steps.3	Billions per chip today
+el-history.c7.title	Nuclear and renewables
+el-history.c7.text	The first nuclear power plants appeared in the 1950s. From the 2000s, wind and then solar grew rapidly as costs fell; solar module prices dropped by around 90% in the 2010s.
+el-history.c7.viz.events.0.l	first grid nuclear plant (Obninsk)
+el-history.c7.viz.events.1.y	1980s
+el-history.c7.viz.events.1.l	early wind farms
+el-history.c7.viz.events.2.y	2010s
+el-history.c7.viz.events.2.l	solar costs fall ~90%
+el-history.c7.viz.events.3.y	2020s
+el-history.c7.viz.events.3.l	renewables lead new capacity
+el-history.c8.title	Units named after people
+el-history.c8.text	Many units honour scientists: volt (Volta), ampere (Ampère), ohm (Ohm), watt (Watt), hertz (Hertz), coulomb (Coulomb), tesla (Tesla).
+el-history.c8.viz.items.0.a	volt
+el-history.c8.viz.items.0.b	Alessandro Volta
+el-history.c8.viz.items.1.a	ampere
+el-history.c8.viz.items.1.b	André-Marie Ampère
+el-history.c8.viz.items.2.a	ohm
+el-history.c8.viz.items.2.b	Georg Ohm
+el-history.c8.viz.items.3.a	watt
+el-history.c8.viz.items.3.b	James Watt
+el-history.c8.viz.items.4.a	hertz
+el-history.c8.viz.items.4.b	Heinrich Hertz
+el-history.c9.title	What's next
+el-history.c9.text	Electricity is taking over more of energy use: cars, heating, industry. The challenges now are storage, grid expansion, and matching variable renewable supply with demand.
+el-history.c9.viz.items.0	Electric transport
+el-history.c9.viz.items.1	Heat pumps
+el-history.c9.viz.items.2	Grid storage
+el-history.c9.viz.items.3	Bigger, smarter grids
+el-history.c9.viz.items.4	Green hydrogen for industry

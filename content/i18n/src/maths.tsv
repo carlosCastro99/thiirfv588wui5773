@@ -1,0 +1,1529 @@
+P.title	Maths & Logic
+P.blurb	Numbers, chance, shapes, statistics and clear thinking.
+ma-numbers.title	Amazing numbers
+ma-numbers.summary	Zero, π, primes and infinity.
+ma-numbers.q0.q	Which of these is a prime number?
+ma-numbers.q0.o0	21
+ma-numbers.q0.o1	23
+ma-numbers.q0.o2	27
+ma-numbers.q0.x	23 has only two divisors.
+ma-numbers.q1.q	What is π?
+ma-numbers.q1.o0	22 exactly
+ma-numbers.q1.o1	Circumference ÷ diameter of a circle
+ma-numbers.q1.o2	The area of a circle
+ma-numbers.q1.x	About 3.14159.
+ma-numbers.q2.q	What comes next: 1, 1, 2, 3, 5, 8, …?
+ma-numbers.q2.o0	11
+ma-numbers.q2.o1	13
+ma-numbers.q2.o2	16
+ma-numbers.q2.x	5 + 8 = 13.
+ma-numbers.c0.title	The invention of zero
+ma-numbers.c0.text	Zero as a number, not just a gap, was developed in India; Brahmagupta wrote rules for it around 628 CE. It reached Europe through Arabic scholars, with Hindu-Arabic numerals.
+ma-numbers.c0.viz.events.0.y	~300 BCE
+ma-numbers.c0.viz.events.0.l	Babylonian placeholder
+ma-numbers.c0.viz.events.1.y	628 CE
+ma-numbers.c0.viz.events.1.l	Brahmagupta's rules
+ma-numbers.c0.viz.events.2.l	al-Khwarizmi
+ma-numbers.c0.viz.events.3.l	Fibonacci brings numerals to Europe
+ma-numbers.c1.title	Place value
+ma-numbers.c1.text	In 352, the 3 means three hundreds because of its place. Roman numerals had no place value, which made arithmetic painful: try CCCLII × XLVII.
+ma-numbers.c1.viz.items.0.b	3 hundreds, 5 tens, 2 units
+ma-numbers.c1.viz.items.1.a	CCCLII
+ma-numbers.c1.viz.items.1.b	same number, hard to multiply
+ma-numbers.c1.viz.items.2.a	Zero
+ma-numbers.c1.viz.items.2.b	makes place value work
+ma-numbers.c2.title	Pi
+ma-numbers.c2.text	π is the ratio of any circle's circumference to its diameter: about 3.14159. Its digits never end or repeat. Archimedes estimated it around 250 BCE.
+ma-numbers.c2.formula	π ≈ 3.14159…
+ma-numbers.c2.viz.f	C = π × d
+ma-numbers.c2.viz.items.0.s	C
+ma-numbers.c2.viz.items.0.m	circumference
+ma-numbers.c2.viz.items.1.s	d
+ma-numbers.c2.viz.items.1.m	diameter
+ma-numbers.c2.viz.items.2.s	π
+ma-numbers.c3.title	Prime numbers
+ma-numbers.c3.text	A prime has exactly two divisors: 1 and itself. 2, 3, 5, 7, 11, 13… Euclid proved around 300 BCE that there are infinitely many.
+ma-numbers.c3.viz.l.t	Prime
+ma-numbers.c3.viz.r.t	Not prime
+ma-numbers.c4.title	Primes protect your data
+ma-numbers.c4.text	Multiplying two huge primes is easy; working backwards to find them is extremely hard. RSA encryption, used online, relies on that.
+ma-numbers.c4.viz.l.t	Easy
+ma-numbers.c4.viz.l.items.0	multiply two big primes
+ma-numbers.c4.viz.r.t	Very hard
+ma-numbers.c4.viz.r.items.0	factor the result back
+ma-numbers.c5.title	The Fibonacci sequence
+ma-numbers.c5.text	Each number is the sum of the two before it: 1, 1, 2, 3, 5, 8, 13, 21… It appears in sunflower seed spirals and pine cones.
+ma-numbers.c6.title	Square numbers
+ma-numbers.c6.text	Square numbers come from multiplying a number by itself: 1, 4, 9, 16, 25. Odd numbers add up to them: 1 + 3 + 5 = 9.
+ma-numbers.c6.viz.unit	n²
+ma-numbers.c6.viz.items.0.l	1²
+ma-numbers.c6.viz.items.1.l	2²
+ma-numbers.c6.viz.items.2.l	3²
+ma-numbers.c6.viz.items.3.l	4²
+ma-numbers.c6.viz.items.4.l	5²
+ma-numbers.c7.title	Infinity
+ma-numbers.c7.text	Some infinities are bigger than others. Georg Cantor showed there are more real numbers (all decimals) than whole numbers, even though both are infinite.
+ma-numbers.c7.viz.l.t	Countable
+ma-numbers.c7.viz.l.items.0	whole numbers
+ma-numbers.c7.viz.l.items.1	fractions
+ma-numbers.c7.viz.r.t	Uncountable
+ma-numbers.c7.viz.r.items.0	all decimals
+ma-numbers.c7.viz.r.items.1	"bigger" infinity
+ma-numbers.c8.title	Negative numbers
+ma-numbers.c8.text	Negative numbers were used in China over 2,000 years ago for debts. Europeans resisted them until the 1600s. Today they're on every thermometer and bank statement.
+ma-numbers.c8.viz.items.0.l	Debt
+ma-numbers.c8.viz.items.1.l	Zero
+ma-numbers.c8.viz.items.2.l	Credit
+ma-numbers.c9.title	A trick with 9
+ma-numbers.c9.text	Multiply 9 by any number from 1 to 10 and the digits of the answer add up to 9: 9 × 7 = 63, and 6 + 3 = 9.
+ma-numbers.c9.example.0	9 × 4 = 36 → 3 + 6 = 9
+ma-numbers.c9.example.1	9 × 8 = 72 → 7 + 2 = 9
+ma-numbers.c9.example.2	9 × 6 = 54 → 5 + 4 = 9
+ma-prob.title	Probability
+ma-prob.summary	Chance, risk and surprising odds.
+ma-prob.q0.q	After 5 heads in a row, the next flip is…
+ma-prob.q0.o0	more likely tails
+ma-prob.q0.o1	more likely heads
+ma-prob.q0.o2	still 50/50
+ma-prob.q0.x	Coins have no memory.
+ma-prob.q1.q	In the Monty Hall problem, switching wins…
+ma-prob.q1.o0	1/3
+ma-prob.q1.o1	1/2
+ma-prob.q1.o2	2/3
+ma-prob.q1.x	The host's choice gives information.
+ma-prob.q2.q	How many people make a shared birthday more likely than not?
+ma-prob.q2.o0	183
+ma-prob.q2.o1	50
+ma-prob.q2.o2	23
+ma-prob.q2.x	The birthday paradox.
+ma-prob.c0.title	Probability basics
+ma-prob.c0.text	Probability is a number from 0 (impossible) to 1 (certain). A fair coin landing heads is 1/2; rolling a six is 1/6.
+ma-prob.c0.viz.items.0.l	Impossible
+ma-prob.c0.viz.items.1.l	Roll a six
+ma-prob.c0.viz.items.2.l	Coin heads
+ma-prob.c0.viz.items.3.l	Certain
+ma-prob.c1.title	And and or
+ma-prob.c1.text	For independent events, multiply for "and": two heads = 1/2 × 1/2 = 1/4. Add for "either", if they can't both happen: a 1 or a 2 on a die = 2/6.
+ma-prob.c1.viz.f	P(A and B) = P(A) × P(B)
+ma-prob.c1.viz.items.0.s	P
+ma-prob.c1.viz.items.0.m	probability
+ma-prob.c1.viz.items.1.s	A, B
+ma-prob.c1.viz.items.1.m	independent events
+ma-prob.c2.title	The gambler's fallacy
+ma-prob.c2.text	After five heads in a row, tails isn't "due". Coins have no memory; the next flip is still 50/50.
+ma-prob.c2.viz.items.0.w	"Red came up 5 times, black is due"
+ma-prob.c2.viz.items.0.r	Each spin is independent: same odds
+ma-prob.c3.title	The birthday paradox
+ma-prob.c3.text	In a group of just 23 people, there's a better than 50% chance two share a birthday. With 70 people, it's over 99.9%.
+ma-prob.c3.viz.unit	% chance of a shared birthday
+ma-prob.c3.viz.items.0.l	10 people
+ma-prob.c3.viz.items.1.l	23 people
+ma-prob.c3.viz.items.2.l	40 people
+ma-prob.c3.viz.items.3.l	70 people
+ma-prob.c4.title	Expected value
+ma-prob.c4.text	Multiply each outcome by its probability and add. A lottery ticket costing €2 with an expected payout of €1 loses €1 on average.
+ma-prob.c4.viz.f	EV = Σ (probability × value)
+ma-prob.c4.viz.items.0.s	EV
+ma-prob.c4.viz.items.0.m	average result per try
+ma-prob.c4.viz.items.1.s	Σ
+ma-prob.c4.viz.items.1.m	add up all outcomes
+ma-prob.c5.title	Lotteries
+ma-prob.c5.text	EuroMillions jackpot odds are about 1 in 140 million. You're far more likely to be struck by lightning in your lifetime.
+ma-prob.c5.viz.items.0.v	1 in 139,838,160
+ma-prob.c5.viz.items.0.l	EuroMillions jackpot
+ma-prob.c5.viz.items.1.v	1 in 2
+ma-prob.c5.viz.items.1.l	coin flip
+ma-prob.c5.viz.items.2.v	1 in 6
+ma-prob.c5.viz.items.2.l	rolling a six
+ma-prob.c6.title	The Monty Hall problem
+ma-prob.c6.text	Pick one of three doors; the host, who knows, opens a losing door and offers a switch. Switching wins 2/3 of the time. Even mathematicians got it wrong at first.
+ma-prob.c6.viz.l.t	Stay
+ma-prob.c6.viz.l.items.0	wins 1/3
+ma-prob.c6.viz.r.t	Switch
+ma-prob.c6.viz.r.items.0	wins 2/3
+ma-prob.c7.title	Base rates
+ma-prob.c7.text	A test is 99% accurate for a disease affecting 1 in 1,000 people. If you test positive, the chance you have it is only about 9%, because false positives from healthy people outnumber true cases.
+ma-prob.c7.viz.unit	people out of 100,000 testing positive
+ma-prob.c7.viz.items.0.l	True positives
+ma-prob.c7.viz.items.1.l	False positives
+ma-prob.c8.title	Law of large numbers
+ma-prob.c8.text	Over a few flips, results can be lopsided. Over thousands, the share of heads gets very close to 50%. Casinos rely on this.
+ma-prob.c8.viz.unit	% heads (example)
+ma-prob.c8.viz.items.0.l	10 flips
+ma-prob.c8.viz.items.1.l	100 flips
+ma-prob.c8.viz.items.2.l	10,000 flips
+ma-prob.c9.title	Risk in perspective
+ma-prob.c9.text	"Doubles the risk" sounds scary, but from 1 in 10,000 to 2 in 10,000 is a tiny absolute change. Always ask: out of how many?
+ma-prob.c9.viz.l.t	Relative
+ma-prob.c9.viz.l.items.0	"100% higher risk!"
+ma-prob.c9.viz.r.t	Absolute
+ma-prob.c9.viz.r.items.0	from 1 to 2 in 10,000
+ma-geo.title	Shapes and space
+ma-geo.summary	Geometry all around us.
+ma-geo.q0.q	What's the hypotenuse of a triangle with sides 3 and 4?
+ma-geo.q0.o0	6
+ma-geo.q0.o1	5
+ma-geo.q0.o2	7
+ma-geo.q0.x	√(9 + 16) = 5.
+ma-geo.q1.q	Double the size of a cube: its volume grows…
+ma-geo.q1.o0	×2
+ma-geo.q1.o1	×4
+ma-geo.q1.o2	×8
+ma-geo.q1.x	2 × 2 × 2.
+ma-geo.c0.title	Pythagoras' theorem
+ma-geo.c0.text	In a right-angled triangle, the square on the longest side equals the sum of the squares on the other two. Builders used 3-4-5 triangles to make square corners.
+ma-geo.c0.formula	a² + b² = c²
+ma-geo.c0.viz.f	a² + b² = c²
+ma-geo.c0.viz.items.0.s	a, b
+ma-geo.c0.viz.items.0.m	shorter sides
+ma-geo.c0.viz.items.1.s	c
+ma-geo.c0.viz.items.1.m	hypotenuse, the longest side
+ma-geo.c1.title	The 3-4-5 triangle
+ma-geo.c1.text	Measure 3 m along one wall and 4 m along the other. If the diagonal is exactly 5 m, the corner is a perfect right angle.
+ma-geo.c1.example.0	3² + 4² = 9 + 16
+ma-geo.c1.example.1	= 25
+ma-geo.c1.example.2	√25 = 5
+ma-geo.c1.viz.items.0.v	3 m
+ma-geo.c1.viz.items.0.l	one side
+ma-geo.c1.viz.items.1.v	4 m
+ma-geo.c1.viz.items.1.l	other side
+ma-geo.c1.viz.items.2.v	5 m
+ma-geo.c1.viz.items.2.l	diagonal
+ma-geo.c2.title	Angles in a triangle
+ma-geo.c2.text	The angles in any triangle add up to 180°. Those in a four-sided shape add up to 360°.
+ma-geo.c2.viz.items.0.a	Triangle
+ma-geo.c2.viz.items.1.a	Quadrilateral
+ma-geo.c2.viz.items.2.a	Pentagon
+ma-geo.c3.title	Area of a circle
+ma-geo.c3.text	A circle's area is π times the radius squared. Doubling the radius makes the area four times bigger: why a 40 cm pizza is more than one and a half 30 cm pizzas.
+ma-geo.c3.viz.unit	area, cm²
+ma-geo.c3.viz.items.0.l	30 cm pizza
+ma-geo.c3.viz.items.1.l	40 cm pizza
+ma-geo.c4.title	Hexagons in nature
+ma-geo.c4.text	Bees build hexagonal cells because hexagons tile a surface with no gaps using the least wall material for the area enclosed.
+ma-geo.c4.viz.l.t	Circles
+ma-geo.c4.viz.l.items.0	leave gaps
+ma-geo.c4.viz.r.t	Hexagons
+ma-geo.c4.viz.r.items.0	no gaps
+ma-geo.c4.viz.r.items.1	least wall per area
+ma-geo.c5.title	Platonic solids
+ma-geo.c5.text	Only five solids have identical regular faces with the same number meeting at each corner: tetrahedron, cube, octahedron, dodecahedron and icosahedron. Dice use them.
+ma-geo.c5.viz.items.0	Tetrahedron: 4 faces
+ma-geo.c5.viz.items.1	Cube: 6
+ma-geo.c5.viz.items.2	Octahedron: 8
+ma-geo.c5.viz.items.3	Dodecahedron: 12
+ma-geo.c5.viz.items.4	Icosahedron: 20
+ma-geo.c6.title	Symmetry
+ma-geo.c6.text	A shape has symmetry if a move, such as a reflection or rotation, leaves it looking the same. Snowflakes have six-fold symmetry; your face is roughly mirror-symmetric.
+ma-geo.c6.viz.items.0.a	Mirror
+ma-geo.c6.viz.items.0.b	butterfly
+ma-geo.c6.viz.items.1.a	Rotational
+ma-geo.c6.viz.items.1.b	snowflake
+ma-geo.c6.viz.items.2.a	Translational
+ma-geo.c6.viz.items.2.b	tiled floor
+ma-geo.c7.title	Scaling
+ma-geo.c7.text	If you double the size of an object, its area grows four times and its volume eight times. That's why giant insects couldn't hold themselves up.
+ma-geo.c7.viz.items.0.l	Length
+ma-geo.c7.viz.items.1.l	Area
+ma-geo.c7.viz.items.2.l	Volume
+ma-geo.c8.title	Map projections
+ma-geo.c8.text	You can't flatten a sphere without distortion. The Mercator map keeps angles right for navigation but makes Greenland look as big as Africa, which is about 14 times larger.
+ma-geo.c8.viz.unit	million km²
+ma-geo.c8.viz.items.0.l	Greenland
+ma-geo.c8.viz.items.1.l	Africa
+ma-geo.c9.title	Fractals
+ma-geo.c9.text	Fractals repeat their pattern at every scale: coastlines, ferns, broccoli and lightning. Zoom in and you see the same shape again.
+ma-geo.c9.viz.steps.0	Branch
+ma-geo.c9.viz.steps.1	Smaller branches
+ma-geo.c9.viz.steps.2	Even smaller
+ma-geo.c9.viz.steps.3	Same shape at every scale
+ma-stats.title	Statistics
+ma-stats.summary	Numbers that tell, and mislead.
+ma-stats.q0.q	Which average is best for describing typical salaries?
+ma-stats.q0.o0	Mean
+ma-stats.q0.o1	Median
+ma-stats.q0.o2	Maximum
+ma-stats.q0.x	A few very high earners pull the mean up.
+ma-stats.q1.q	About what share of values fall within 1 standard deviation in a bell curve?
+ma-stats.q1.o0	50%
+ma-stats.q1.o1	68%
+ma-stats.q1.o2	95%
+ma-stats.q1.x	95% fall within two.
+ma-stats.c0.title	Mean, median, mode
+ma-stats.c0.text	The mean is the average; the median is the middle value; the mode is the most common. They can differ a lot.
+ma-stats.c0.viz.items.0.a	Mean
+ma-stats.c0.viz.items.0.b	add up, divide by count
+ma-stats.c0.viz.items.1.a	Median
+ma-stats.c0.viz.items.1.b	middle value in order
+ma-stats.c0.viz.items.2.a	Mode
+ma-stats.c0.viz.items.2.b	most frequent value
+ma-stats.c1.title	When the mean misleads
+ma-stats.c1.text	If a billionaire walks into a café, the mean wealth of the customers shoots up, but the median barely moves. Salaries are better described by the median.
+ma-stats.c1.viz.unit	€ thousand (example)
+ma-stats.c1.viz.items.0.l	Median salary
+ma-stats.c1.viz.items.1.l	Mean salary
+ma-stats.c2.title	Spread
+ma-stats.c2.text	Two classes can have the same average but very different spreads. The standard deviation measures how far values typically are from the mean.
+ma-stats.c2.viz.l.t	Class A
+ma-stats.c2.viz.l.items.0	average 14
+ma-stats.c2.viz.l.items.1	all between 12 and 16
+ma-stats.c2.viz.r.t	Class B
+ma-stats.c2.viz.r.items.0	average 14
+ma-stats.c2.viz.r.items.1	from 5 to 20
+ma-stats.c3.title	The bell curve
+ma-stats.c3.text	Many measurements, like heights, cluster around an average in a bell shape. About 68% of values fall within one standard deviation and 95% within two.
+ma-stats.c3.viz.unit	% within
+ma-stats.c3.viz.items.0.l	1 SD
+ma-stats.c3.viz.items.1.l	2 SD
+ma-stats.c3.viz.items.2.l	3 SD
+ma-stats.c4.title	Samples
+ma-stats.c4.text	A well-chosen random sample of 1,000 people can represent millions. A big but biased sample can't: who you ask matters more than how many.
+ma-stats.c4.viz.l.t	Good
+ma-stats.c4.viz.l.items.0	random sample
+ma-stats.c4.viz.l.items.1	1,000 people
+ma-stats.c4.viz.r.t	Bad
+ma-stats.c4.viz.r.items.0	online poll
+ma-stats.c4.viz.r.items.1	100,000 self-selected
+ma-stats.c5.title	Margin of error
+ma-stats.c5.text	Polls report a margin of error. With about 1,000 people it's roughly ±3 percentage points, so 51% vs 49% may be a tie.
+ma-stats.c5.viz.items.0.l	Candidate A
+ma-stats.c5.viz.items.1.l	Candidate B
+ma-stats.c6.title	Misleading charts
+ma-stats.c6.text	A chart's y-axis that doesn't start at zero can make a small difference look huge. Always check the scale.
+ma-stats.c6.viz.items.0.w	Bar from 98 to 100 looks double
+ma-stats.c6.viz.items.0.r	Check the axis: it's a 2% difference
+ma-stats.c7.title	Simpson's paradox
+ma-stats.c7.text	A trend in every group can reverse when the groups are combined. A treatment can look better in each hospital but worse overall, if hospitals have different patient mixes.
+ma-stats.c7.viz.steps.0	Each group: A wins
+ma-stats.c7.viz.steps.1	Groups have different sizes
+ma-stats.c7.viz.steps.2	Combined: B seems to win
+ma-stats.c8.title	Regression to the mean
+ma-stats.c8.text	After an extreme result, the next tends to be closer to average. A sports star's record season is often followed by a more ordinary one, without any curse.
+ma-stats.c8.viz.steps.0	Extreme result
+ma-stats.c8.viz.steps.1	Partly luck
+ma-stats.c8.viz.steps.2	Next time: closer to average
+ma-stats.c9.title	Reading a news statistic
+ma-stats.c9.text	Ask four questions: compared with what? Out of how many? Who was measured? Who paid for the study?
+ma-stats.c9.viz.items.0	Compared with what?
+ma-stats.c9.viz.items.1	Out of how many?
+ma-stats.c9.viz.items.2	Who was measured?
+ma-stats.c9.viz.items.3	Who funded it?
+ma-logic.title	Logic and puzzles
+ma-logic.summary	Clear thinking, from paradoxes to computers.
+ma-logic.q0.q	What is 101 in binary as a normal number?
+ma-logic.q0.o0	101
+ma-logic.q0.o1	3
+ma-logic.q0.o2	5
+ma-logic.q0.x	4 + 0 + 1.
+ma-logic.q1.q	"If it rains, the ground is wet. The ground is wet." Does it follow that it rained?
+ma-logic.q1.o0	Yes
+ma-logic.q1.o1	No
+ma-logic.q1.o2	Only in winter
+ma-logic.q1.x	Something else could have wet it.
+ma-logic.c0.title	True and false
+ma-logic.c0.text	Logic works with statements that are true or false and combines them with AND, OR and NOT. Every computer chip is built from these operations.
+ma-logic.c0.viz.items.0.a	AND
+ma-logic.c0.viz.items.0.b	true if both true
+ma-logic.c0.viz.items.1.a	OR
+ma-logic.c0.viz.items.1.b	true if at least one true
+ma-logic.c0.viz.items.2.a	NOT
+ma-logic.c0.viz.items.2.b	flips true and false
+ma-logic.c1.title	If… then…
+ma-logic.c1.text	"If it rains, the ground is wet" doesn't mean "if the ground is wet, it rained": a sprinkler could do that. Confusing the two is a classic logic error.
+ma-logic.c1.viz.items.0.w	Wet ground, so it rained
+ma-logic.c1.viz.items.0.r	Something else could have wet it
+ma-logic.c2.title	Proof by contradiction
+ma-logic.c2.text	Assume the opposite of what you want to prove and show it leads to nonsense. Euclid proved infinitely many primes this way.
+ma-logic.c2.viz.steps.0	Assume the opposite
+ma-logic.c2.viz.steps.1	Follow the logic
+ma-logic.c2.viz.steps.2	Reach a contradiction
+ma-logic.c2.viz.steps.3	So the original is true
+ma-logic.c3.title	The liar paradox
+ma-logic.c3.text	"This sentence is false." If it's true, it's false; if it's false, it's true. Paradoxes like this shook the foundations of logic in the 20th century.
+ma-logic.c3.viz.steps.0	It's true
+ma-logic.c3.viz.steps.1	So it's false
+ma-logic.c3.viz.steps.2	So it's true
+ma-logic.c4.title	Gödel's incompleteness
+ma-logic.c4.text	In 1931 Kurt Gödel proved that any consistent system of rules rich enough for arithmetic has true statements it can't prove. Mathematics can never be complete.
+ma-logic.c4.viz.steps.0	Any consistent system
+ma-logic.c4.viz.steps.1	Rich enough for arithmetic
+ma-logic.c4.viz.steps.2	Contains unprovable truths
+ma-logic.c5.title	Algorithms
+ma-logic.c5.text	An algorithm is a precise step-by-step recipe for solving a problem. The word comes from the name of al-Khwarizmi, a 9th-century mathematician in Baghdad.
+ma-logic.c5.viz.steps.0	Input
+ma-logic.c5.viz.steps.1	Clear steps
+ma-logic.c5.viz.steps.2	Output
+ma-logic.c6.title	Binary
+ma-logic.c6.text	Computers count in base 2, using only 0 and 1. Each place is worth double the one to its right: 1, 2, 4, 8, 16…
+ma-logic.c7.title	Zeno's paradox
+ma-logic.c7.text	To cross a room, you must first cross half, then half of what's left, forever. Zeno said you'd never arrive. The infinite sum 1/2 + 1/4 + 1/8 + … actually equals 1.
+ma-logic.c7.viz.unit	distance covered
+ma-logic.c7.viz.items.0.l	Step 1
+ma-logic.c7.viz.items.1.l	Step 2
+ma-logic.c7.viz.items.2.l	Step 3
+ma-logic.c7.viz.items.3.l	Step 4
+ma-logic.c8.title	Unsolved problems
+ma-logic.c8.text	Some simple-sounding questions remain unsolved, like Goldbach's conjecture: is every even number above 2 the sum of two primes? Tested to huge numbers, never proved.
+ma-logic.c8.example.0	4 = 2 + 2
+ma-logic.c8.example.1	10 = 3 + 7
+ma-logic.c8.example.2	28 = 5 + 23
+ma-logic.c8.viz.items.0	Goldbach's conjecture
+ma-logic.c8.viz.items.1	Twin primes
+ma-logic.c8.viz.items.2	The Riemann hypothesis
+ma-logic.c8.viz.items.3	P vs NP
+ma-logic.c9.title	The river crossing
+ma-logic.c9.text	A farmer must cross a river with a wolf, a goat and a cabbage, taking one at a time. The wolf can't be left with the goat, nor the goat with the cabbage. The trick: bring the goat back.
+ma-logic.c9.viz.steps.0	Take goat over
+ma-logic.c9.viz.steps.1	Take wolf over
+ma-logic.c9.viz.steps.2	Bring goat back
+ma-logic.c9.viz.steps.3	Take cabbage over
+ma-logic.c9.viz.steps.4	Fetch goat
+ma-percent.title	Percentages in real life
+ma-percent.summary	Discounts, interest and headlines.
+ma-percent.q0.q	A €100 item rises 50%, then falls 50%. What does it cost?
+ma-percent.q0.o0	€100
+ma-percent.q0.o1	€75
+ma-percent.q0.o2	€50
+ma-percent.q0.x	€150 × 0.5 = €75.
+ma-percent.q1.q	A price with 23% VAT is €123. What's the price without VAT?
+ma-percent.q1.o0	€94.71
+ma-percent.q1.o1	€100
+ma-percent.q1.o2	€96
+ma-percent.q1.x	Divide by 1.23.
+ma-percent.q2.q	"30% off then 20% off" equals a discount of…
+ma-percent.q2.o0	50%
+ma-percent.q2.o1	44%
+ma-percent.q2.o2	40%
+ma-percent.q2.x	0.7 × 0.8 = 0.56.
+ma-percent.c0.title	What a percentage is
+ma-percent.c0.text	"Per cent" means "out of 100". 25% is 25 out of 100, or a quarter. To find a percentage of a number, multiply by the percentage and divide by 100.
+ma-percent.c0.formula	x% of N = N × x ÷ 100
+ma-percent.c0.viz.f	x% of N = N × x ÷ 100
+ma-percent.c0.viz.items.0.s	x
+ma-percent.c0.viz.items.0.m	the percentage
+ma-percent.c0.viz.items.1.s	N
+ma-percent.c0.viz.items.1.m	the number
+ma-percent.c1.title	Quick tricks
+ma-percent.c1.text	10% is easy: move the decimal point one place left. From there, 5% is half of that and 20% is double.
+ma-percent.c1.example.0	10% of €84 = €8.40
+ma-percent.c1.example.1	5% = €4.20
+ma-percent.c1.example.2	20% = €16.80
+ma-percent.c1.viz.items.0.b	move the point
+ma-percent.c1.viz.items.1.b	half of 10%
+ma-percent.c1.viz.items.2.b	double 10%
+ma-percent.c1.viz.items.3.b	move the point twice
+ma-percent.c2.title	Percentages flip
+ma-percent.c2.text	8% of 25 equals 25% of 8, because multiplication works both ways. Use whichever is easier: 4% of 75 is 75% of 4, which is 3.
+ma-percent.c2.viz.items.0.a	8% of 25
+ma-percent.c2.viz.items.0.b	25% of 8 = 2
+ma-percent.c2.viz.items.1.a	4% of 75
+ma-percent.c2.viz.items.1.b	75% of 4 = 3
+ma-percent.c2.viz.items.2.a	18% of 50
+ma-percent.c2.viz.items.2.b	50% of 18 = 9
+ma-percent.c3.title	Up then down
+ma-percent.c3.text	A 50% rise followed by a 50% fall doesn't return you to the start. €100 becomes €150, then €75.
+ma-percent.c3.viz.items.0.l	Start
+ma-percent.c3.viz.items.1.l	After +50%
+ma-percent.c3.viz.items.2.l	Then −50%
+ma-percent.c4.title	Percentage points
+ma-percent.c4.text	If interest rates go from 2% to 3%, that's a rise of 1 percentage point, but a 50% increase in the rate. Headlines often mix them up.
+ma-percent.c4.viz.l.t	Percentage points
+ma-percent.c4.viz.l.items.0	3% − 2% = 1 point
+ma-percent.c4.viz.r.t	Per cent change
+ma-percent.c5.title	Reverse percentages
+ma-percent.c5.text	A price including 23% VAT is €123. The price before VAT isn't €123 minus 23%; it's €123 ÷ 1.23 = €100.
+ma-percent.c6.title	Discounts stack strangely
+ma-percent.c6.text	"30% off, plus an extra 20% off" is not 50% off. It's 0.7 × 0.8 = 0.56 of the price: a 44% discount.
+ma-percent.c6.viz.unit	price, €
+ma-percent.c6.viz.items.0.l	Original
+ma-percent.c6.viz.items.1.l	30% off
+ma-percent.c6.viz.items.2.l	Then 20% off
+ma-percent.c7.title	Percentage change
+ma-percent.c7.text	Change ÷ original × 100. From 80 to 100 is a 25% rise; from 100 back to 80 is a 20% fall. The starting point matters.
+ma-percent.c7.viz.f	change % = (new − old) ÷ old × 100
+ma-percent.c7.viz.items.0.s	new
+ma-percent.c7.viz.items.0.m	the final value
+ma-percent.c7.viz.items.1.s	old
+ma-percent.c7.viz.items.1.m	the starting value
+ma-percent.c8.title	Tips and splits
+ma-percent.c8.text	To split a €60 bill with a 10% tip among four: €60 × 1.1 = €66, divided by 4 = €16.50 each.
+ma-percent.c8.example.0	€60 × 1.10 = €66
+ma-percent.c8.example.1	€66 ÷ 4 = €16.50 each
+ma-percent.c8.viz.steps.0	Bill
+ma-percent.c8.viz.steps.1	Add tip: × 1.1
+ma-percent.c8.viz.steps.2	Divide by people
+ma-percent.c8.viz.steps.3	Each share
+ma-percent.c9.title	Misleading percentages
+ma-percent.c9.text	"Sales up 200%!" from 1 to 3 units sounds dramatic but means little. Always ask for the actual numbers behind a percentage.
+ma-percent.c9.viz.items.0.w	"Up 200%!"
+ma-percent.c9.viz.items.0.r	From 1 to 3: still tiny
+ma-fractions.title	Fractions, ratios and proportions
+ma-fractions.summary	Sharing, scaling and recipes.
+ma-fractions.q0.q	What is 1/2 + 1/3?
+ma-fractions.q0.o0	2/5
+ma-fractions.q0.o1	5/6
+ma-fractions.q0.o2	1/6
+ma-fractions.q0.x	3/6 + 2/6.
+ma-fractions.q1.q	What is 3 ÷ ½?
+ma-fractions.q1.o0	1.5
+ma-fractions.q1.o1	6
+ma-fractions.q1.o2	3
+ma-fractions.q1.x	How many halves fit in three?
+ma-fractions.c0.title	Fractions are division
+ma-fractions.c0.text	3/4 means 3 divided by 4: three of four equal parts, or 0.75. The bottom number says how many parts; the top says how many you take.
+ma-fractions.c1.title	Equivalent fractions
+ma-fractions.c1.text	Multiplying top and bottom by the same number doesn't change a fraction: 1/2 = 2/4 = 50/100. Simplify by dividing both by a common factor.
+ma-fractions.c1.viz.steps.1	Divide both by 2
+ma-fractions.c2.title	Adding fractions
+ma-fractions.c2.text	To add fractions, give them the same bottom number first: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
+ma-fractions.c2.example.0	1/2 = 3/6
+ma-fractions.c2.example.1	1/3 = 2/6
+ma-fractions.c2.example.2	3/6 + 2/6 = 5/6
+ma-fractions.c2.viz.steps.0	Find a common bottom
+ma-fractions.c2.viz.steps.1	Convert each
+ma-fractions.c2.viz.steps.2	Add the tops
+ma-fractions.c3.title	Multiplying fractions
+ma-fractions.c3.text	Multiply tops together and bottoms together. Half of three-quarters is 1/2 × 3/4 = 3/8. "Of" means multiply.
+ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
+ma-fractions.c3.viz.items.0.s	a, c
+ma-fractions.c3.viz.items.0.m	tops
+ma-fractions.c3.viz.items.1.s	b, d
+ma-fractions.c3.viz.items.1.m	bottoms
+ma-fractions.c4.title	Dividing by a fraction
+ma-fractions.c4.text	Dividing by a fraction means multiplying by its flip. 3 ÷ 1/2 = 6: how many halves fit in 3? Six.
+ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1.5
+ma-fractions.c4.viz.items.0.r	3 ÷ ½ = 6, since six halves make three
+ma-fractions.c5.title	Ratios
+ma-fractions.c5.text	A ratio compares quantities. A 2:3 mix of cement to sand means 2 parts cement for every 3 of sand: 2/5 of the mix is cement.
+ma-fractions.c5.viz.unit	parts
+ma-fractions.c5.viz.items.0.l	Cement
+ma-fractions.c5.viz.items.1.l	Sand
+ma-fractions.c6.title	Scaling recipes
+ma-fractions.c6.text	A recipe for 4 needs 300 g of flour. For 6 people, multiply by 6/4 = 1.5: 450 g.
+ma-fractions.c6.example.0	Scale factor = 6 ÷ 4 = 1.5
+ma-fractions.c6.example.1	300 g × 1.5 = 450 g
+ma-fractions.c6.viz.steps.0	Find the scale factor
+ma-fractions.c6.viz.steps.1	Multiply every ingredient
+ma-fractions.c6.viz.steps.2	Cook
+ma-fractions.c7.title	Unit rates
+ma-fractions.c7.text	Compare deals by price per unit. 500 g for €2.40 is €4.80/kg; 750 g for €3.30 is €4.40/kg. The bigger pack is cheaper here, but not always.
+ma-fractions.c7.viz.unit	€ per kg
+ma-fractions.c7.viz.items.0.l	500 g pack
+ma-fractions.c7.viz.items.1.l	750 g pack
+ma-fractions.c8.title	Map scales
+ma-fractions.c8.text	On a 1:25,000 map, 1 cm is 25,000 cm, which is 250 m on the ground. Hiking maps often use this scale.
+ma-fractions.c8.viz.items.0.a	1 cm on map
+ma-fractions.c8.viz.items.0.b	250 m on the ground
+ma-fractions.c8.viz.items.1.a	4 cm on map
+ma-fractions.c8.viz.items.1.b	1 km
+ma-fractions.c8.viz.items.2.a	Scale
+ma-fractions.c9.title	Direct and inverse proportion
+ma-fractions.c9.text	Twice the hours at the same pay means twice the money: direct proportion. Twice the workers on a job means half the time: inverse proportion, roughly.
+ma-fractions.c9.viz.l.t	Direct
+ma-fractions.c9.viz.l.items.0	one doubles, other doubles
+ma-fractions.c9.viz.l.items.1	hours and pay
+ma-fractions.c9.viz.r.t	Inverse
+ma-fractions.c9.viz.r.items.0	one doubles, other halves
+ma-fractions.c9.viz.r.items.1	workers and time
+ma-mental.title	Mental maths tricks
+ma-mental.summary	Faster sums in your head.
+ma-mental.q0.q	What is 11 × 43?
+ma-mental.q0.o0	443
+ma-mental.q0.o1	473
+ma-mental.q0.o2	4,343
+ma-mental.q0.x	4 _ 3, with 4 + 3 = 7 in the middle.
+ma-mental.q1.q	What is 45²?
+ma-mental.q1.o0	1,625
+ma-mental.q1.o1	2,025
+ma-mental.q1.o2	2,045
+ma-mental.q1.x	4 × 5 = 20, then 25.
+ma-mental.c0.title	Round and adjust
+ma-mental.c0.text	To add 298 + 157, add 300 and take away 2: 457 − 2 = 455. Rounding to friendly numbers makes many sums easy.
+ma-mental.c0.viz.steps.2	Take away 2
+ma-mental.c1.title	Multiply by 5
+ma-mental.c1.text	To multiply by 5, multiply by 10 and halve. 5 × 48 = 480 ÷ 2 = 240.
+ma-mental.c1.example.0	48 × 10 = 480
+ma-mental.c1.example.1	480 ÷ 2 = 240
+ma-mental.c1.viz.items.0.b	× 10, then halve
+ma-mental.c1.viz.items.1.b	× 100, then ÷ 4
+ma-mental.c1.viz.items.2.b	× 100, then halve
+ma-mental.c2.title	Multiply by 11
+ma-mental.c2.text	For a two-digit number, add the digits and put the sum in the middle: 11 × 36 = 3(3+6)6 = 396. If the sum is 10 or more, carry one.
+ma-mental.c2.example.0	11 × 36 → 3 _ 6
+ma-mental.c2.example.1	3 + 6 = 9
+ma-mental.c2.example.2	396
+ma-mental.c2.viz.steps.1	Split: 3 _ 6
+ma-mental.c2.viz.steps.2	Middle: 3 + 6 = 9
+ma-mental.c3.title	Squares ending in 5
+ma-mental.c3.text	To square a number ending in 5, multiply the first part by the next number up and stick 25 on the end: 35² = (3 × 4) then 25 = 1,225.
+ma-mental.c3.example.0	35²: 3 × 4 = 12
+ma-mental.c3.example.1	add 25
+ma-mental.c3.example.2	1,225
+ma-mental.c3.viz.items.0.a	25²
+ma-mental.c3.viz.items.1.a	45²
+ma-mental.c3.viz.items.2.a	65²
+ma-mental.c3.viz.items.3.a	85²
+ma-mental.c4.title	Doubling and halving
+ma-mental.c4.text	Halve one number and double the other: the product stays the same. 16 × 25 = 8 × 50 = 4 × 100 = 400.
+ma-mental.c5.title	Break it apart
+ma-mental.c5.text	Split awkward multiplications: 7 × 48 = 7 × 50 − 7 × 2 = 350 − 14 = 336.
+ma-mental.c5.example.0	7 × 50 = 350
+ma-mental.c5.example.1	7 × 2 = 14
+ma-mental.c5.example.2	350 − 14 = 336
+ma-mental.c6.title	Divisibility tests
+ma-mental.c6.text	A number divides by 3 if its digits add up to a multiple of 3; by 9 if they add up to a multiple of 9; by 4 if its last two digits do.
+ma-mental.c6.viz.items.0.b	last digit even
+ma-mental.c6.viz.items.1.b	digit sum divisible by 3
+ma-mental.c6.viz.items.2.b	ends in 0 or 5
+ma-mental.c6.viz.items.3.b	digit sum divisible by 9
+ma-mental.c7.title	Estimate first
+ma-mental.c7.text	Before calculating, estimate. 49 × 21 is about 50 × 20 = 1,000; if your answer is 10,290, something went wrong.
+ma-mental.c7.viz.steps.0	Round the numbers
+ma-mental.c7.viz.steps.1	Quick estimate
+ma-mental.c7.viz.steps.2	Calculate
+ma-mental.c7.viz.steps.3	Compare
+ma-mental.c8.title	Counting up for change
+ma-mental.c8.text	Shopkeepers give change by counting up. Paying €20 for €13.65: up to €14 is 35 cents, up to €20 is €6, so €6.35.
+ma-mental.c8.viz.steps.3	Change: €6.35
+ma-mental.c9.title	Converting temperatures
+ma-mental.c9.text	Rough Celsius to Fahrenheit: double and add 30. 20 °C ≈ 70 °F (exactly 68). For the exact value, multiply by 1.8 and add 32.
+ma-mental.c9.viz.f	°F = °C × 1.8 + 32
+ma-mental.c9.viz.items.0.s	°C
+ma-mental.c9.viz.items.0.m	Celsius
+ma-mental.c9.viz.items.1.s	°F
+ma-mental.c9.viz.items.1.m	Fahrenheit
+ma-mental.c9.viz.items.2.s	quick version
+ma-mental.c9.viz.items.2.m	double, add 30
+ma-algebra.title	Algebra without fear
+ma-algebra.summary	Letters are just unknown numbers.
+ma-algebra.q0.q	Solve 3x + 4 = 19.
+ma-algebra.q0.o0	x = 3
+ma-algebra.q0.o1	x = 5
+ma-algebra.q0.o2	x = 7
+ma-algebra.q0.x	Subtract 4, then divide by 3.
+ma-algebra.q1.q	What is 5 − (−3)?
+ma-algebra.q1.o0	2
+ma-algebra.q1.o1	8
+ma-algebra.q1.o2	−8
+ma-algebra.q1.x	Subtracting a negative adds.
+ma-algebra.c0.title	What algebra is
+ma-algebra.c0.text	Algebra uses letters for numbers we don't know yet. "A number plus 5 is 12" becomes x + 5 = 12, so x = 7.
+ma-algebra.c0.viz.steps.0	Words
+ma-algebra.c0.viz.steps.1	Equation
+ma-algebra.c0.viz.steps.2	Solve
+ma-algebra.c0.viz.steps.3	x = 7
+ma-algebra.c1.title	Keep it balanced
+ma-algebra.c1.text	An equation is a balance: whatever you do to one side, do to the other. Subtract 5 from both sides of x + 5 = 12 to get x = 7.
+ma-algebra.c1.example.0	x + 5 = 12
+ma-algebra.c1.example.1	x + 5 − 5 = 12 − 5
+ma-algebra.c1.example.2	x = 7
+ma-algebra.c1.viz.l.t	Left side
+ma-algebra.c1.viz.l.items.0	x + 5
+ma-algebra.c1.viz.r.t	Right side
+ma-algebra.c2.title	Two-step equations
+ma-algebra.c2.text	3x + 4 = 19: subtract 4 from both sides (3x = 15), then divide both by 3 (x = 5). Undo operations in reverse order.
+ma-algebra.c2.example.0	3x + 4 = 19
+ma-algebra.c2.example.1	3x = 15
+ma-algebra.c2.example.2	x = 5
+ma-algebra.c2.viz.steps.0	3x + 4 = 19
+ma-algebra.c2.viz.steps.1	Subtract 4
+ma-algebra.c2.viz.steps.2	Divide by 3
+ma-algebra.c2.viz.steps.3	x = 5
+ma-algebra.c3.title	Where it came from
+ma-algebra.c3.text	The word "algebra" comes from *al-jabr*, "restoring", in the title of al-Khwarizmi's 9th-century book in Baghdad. Letters for unknowns came later, with François Viète in the 1590s.
+ma-algebra.c3.viz.events.0.y	~820 CE
+ma-algebra.c3.viz.events.0.l	al-Khwarizmi's book
+ma-algebra.c3.viz.events.1.l	Viète uses letters
+ma-algebra.c3.viz.events.2.l	Descartes' x, y, z
+ma-algebra.c4.title	Formulas are algebra
+ma-algebra.c4.text	Every formula is algebra: area = length × width, speed = distance ÷ time. Rearranging lets you find any missing piece.
+ma-algebra.c4.viz.f	d = s × t
+ma-algebra.c4.viz.items.0.s	d
+ma-algebra.c4.viz.items.0.m	distance
+ma-algebra.c4.viz.items.1.s	s
+ma-algebra.c4.viz.items.1.m	speed
+ma-algebra.c4.viz.items.2.s	t
+ma-algebra.c4.viz.items.2.m	time
+ma-algebra.c4.viz.items.3.m	so s = d ÷ t
+ma-algebra.c5.title	Expanding brackets
+ma-algebra.c5.text	Multiply everything inside by what's outside: 3(x + 4) = 3x + 12. Handy for mental maths too: 3 × 104 = 300 + 12.
+ma-algebra.c5.example.0	3(x + 4)
+ma-algebra.c5.example.1	= 3 × x + 3 × 4
+ma-algebra.c5.example.2	= 3x + 12
+ma-algebra.c5.viz.items.0.a	3 × x
+ma-algebra.c5.viz.items.0.b	3x
+ma-algebra.c5.viz.items.2.a	3(x + 4)
+ma-algebra.c5.viz.items.2.b	3x + 12
+ma-algebra.c6.title	Two unknowns
+ma-algebra.c6.text	Two coffees and a cake cost €5; one coffee and a cake cost €3.50. Subtract: one coffee is €1.50, so the cake is €2. That's a system of equations.
+ma-algebra.c6.example.0	2c + k = 5
+ma-algebra.c6.example.1	c + k = 3.5
+ma-algebra.c6.example.2	c = 1.5, so k = 2
+ma-algebra.c6.viz.l.t	Two coffees and a cake
+ma-algebra.c6.viz.r.t	One coffee and a cake
+ma-algebra.c7.title	Negative signs
+ma-algebra.c7.text	Subtracting a negative is adding: 5 − (−3) = 8. Multiplying two negatives gives a positive: (−2) × (−3) = 6.
+ma-algebra.c8.title	Sequences as formulas
+ma-algebra.c8.text	In 3, 5, 7, 9…, each term is 2n + 1. Find the 100th term without listing: 2 × 100 + 1 = 201.
+ma-algebra.c8.viz.f	term = 2n + 1
+ma-algebra.c8.viz.items.0.s	n
+ma-algebra.c8.viz.items.0.m	position in the sequence
+ma-algebra.c8.viz.items.1.s	term 100
+ma-algebra.c9.title	A real problem
+ma-algebra.c9.text	A phone plan costs €10 a month plus €0.05 per MB. With €15 a month, how many MB? 10 + 0.05m = 15, so m = 100 MB.
+ma-algebra.c9.example.0	10 + 0.05m = 15
+ma-algebra.c9.example.1	0.05m = 5
+ma-algebra.c9.example.2	m = 100
+ma-algebra.c9.viz.unit	monthly bill, €
+ma-algebra.c9.viz.items.0.l	0 MB
+ma-algebra.c9.viz.items.1.l	50 MB
+ma-algebra.c9.viz.items.2.l	100 MB
+ma-growth.title	Exponential growth
+ma-growth.summary	Doubling, viruses and logarithms.
+ma-growth.q0.q	A pond is fully covered on day 30, doubling daily. When was it half covered?
+ma-growth.q0.o0	Day 15
+ma-growth.q0.o1	Day 29
+ma-growth.q0.o2	Day 20
+ma-growth.q0.x	One doubling before the end.
+ma-growth.q1.q	What is log₁₀ 1,000?
+ma-growth.q1.o0	10
+ma-growth.q1.o1	100
+ma-growth.q1.o2	3
+ma-growth.q1.x	10³ = 1,000.
+ma-growth.c0.title	Linear vs exponential
+ma-growth.c0.text	Linear growth adds the same amount each step; exponential growth multiplies. Exponential starts slow and then explodes.
+ma-growth.c0.viz.l.t	Linear
+ma-growth.c0.viz.l.items.0	+2 each step
+ma-growth.c0.viz.r.t	Exponential
+ma-growth.c0.viz.r.items.0	×2 each step
+ma-growth.c1.title	The chessboard legend
+ma-growth.c1.text	Put 1 grain of rice on the first square, 2 on the next, 4, 8… By square 64, you'd need about 18 quintillion grains, far more than all rice ever grown.
+ma-growth.c1.viz.unit	grains on square n
+ma-growth.c1.viz.items.0.l	Square 5
+ma-growth.c1.viz.items.1.l	Square 10
+ma-growth.c1.viz.items.2.l	Square 15
+ma-growth.c2.title	The lily pond
+ma-growth.c2.text	Lilies double daily and cover a pond on day 30. When was it half covered? Day 29. Exponential problems look small until the very end.
+ma-growth.c2.viz.events.0.y	Day 25
+ma-growth.c2.viz.events.0.l	3% covered
+ma-growth.c2.viz.events.1.y	Day 28
+ma-growth.c2.viz.events.2.y	Day 29
+ma-growth.c2.viz.events.3.y	Day 30
+ma-growth.c3.title	Powers
+ma-growth.c3.text	2⁵ means 2 × 2 × 2 × 2 × 2 = 32. Powers are a shorthand for repeated multiplication. Any number to the power 0 is 1.
+ma-growth.c3.viz.items.0.a	2¹
+ma-growth.c3.viz.items.1.a	2⁵
+ma-growth.c3.viz.items.2.a	2¹⁰
+ma-growth.c3.viz.items.3.a	10⁶
+ma-growth.c3.viz.items.3.b	1 million
+ma-growth.c4.title	Logarithms
+ma-growth.c4.text	A logarithm asks: "what power?" log₁₀ 1,000 = 3, because 10³ = 1,000. Logs turn huge multiplications into simple additions.
+ma-growth.c4.viz.f	log₁₀ 1000 = 3
+ma-growth.c4.viz.items.0.s	because
+ma-growth.c4.viz.items.0.m	10³ = 1000
+ma-growth.c4.viz.items.1.s	log asks
+ma-growth.c4.viz.items.1.m	what power?
+ma-growth.c5.title	Log scales around us
+ma-growth.c5.text	The Richter-type earthquake scale, decibels and pH all use logs. Each step up in magnitude means about 32 times more energy released.
+ma-growth.c5.viz.items.0.a	Magnitude +1
+ma-growth.c5.viz.items.0.b	~32× energy
+ma-growth.c5.viz.items.1.a	+10 dB
+ma-growth.c5.viz.items.1.b	10× sound intensity
+ma-growth.c5.viz.items.2.a	pH −1
+ma-growth.c5.viz.items.2.b	10× more acidic
+ma-growth.c6.title	Viruses spread
+ma-growth.c6.text	If each infected person infects 2 others every few days, cases double. Bringing that number below 1 makes an epidemic shrink.
+ma-growth.c6.viz.l.t	R above 1
+ma-growth.c6.viz.l.items.0	cases grow
+ma-growth.c6.viz.l.items.1	exponential
+ma-growth.c6.viz.r.t	R below 1
+ma-growth.c6.viz.r.items.0	cases shrink
+ma-growth.c6.viz.r.items.1	dies out
+ma-growth.c7.title	Moore's law
+ma-growth.c7.text	Gordon Moore noticed in 1965 that the number of transistors on chips doubled about every two years. It held for decades, powering the digital revolution.
+ma-growth.c7.viz.unit	transistors
+ma-growth.c7.viz.items.0.l	Intel 4004 (1971)
+ma-growth.c7.viz.items.1.l	Pentium (1993)
+ma-growth.c7.viz.items.2.l	Apple M-series (2020s)
+ma-growth.c8.title	Half-life
+ma-growth.c8.text	Radioactive substances decay exponentially. After one half-life, half remains; after two, a quarter. Carbon-14's half-life of 5,730 years lets us date ancient remains.
+ma-growth.c8.viz.unit	% remaining
+ma-growth.c8.viz.items.1.l	1 half-life
+ma-growth.c9.title	Paper folding
+ma-growth.c9.text	A sheet of paper about 0.1 mm thick folded 42 times would be over 400,000 km thick, past the Moon. In practice, you can't fold paper more than about 7 times by hand.
+ma-growth.c9.viz.items.0.v	0.1 mm
+ma-growth.c9.viz.items.0.l	paper
+ma-growth.c9.viz.items.1.v	10 folds
+ma-growth.c9.viz.items.1.l	~10 cm
+ma-growth.c9.viz.items.2.v	42 folds
+ma-growth.c9.viz.items.2.l	past the Moon
+ma-functions.title	Graphs and functions
+ma-functions.summary	Seeing relationships at a glance.
+ma-functions.q0.q	In y = mx + c, what does m tell you?
+ma-functions.q0.o0	Where the line starts
+ma-functions.q0.o1	How steep it is
+ma-functions.q0.o2	The y value
+ma-functions.q0.x	The slope.
+ma-functions.q1.q	What shape does y = x² make?
+ma-functions.q1.o0	A straight line
+ma-functions.q1.o1	A U-shaped parabola
+ma-functions.q1.o2	A circle
+ma-functions.q1.x	Thrown balls follow one.
+ma-functions.q2.q	On a distance–time graph, the slope shows…
+ma-functions.q2.o0	the distance
+ma-functions.q2.o1	the speed
+ma-functions.q2.o2	the time
+ma-functions.q2.x	Distance per unit of time.
+ma-functions.c0.title	What a function is
+ma-functions.c0.text	A function is a rule that turns each input into exactly one output, like a machine: put in 3, the rule "double it" gives 6.
+ma-functions.c0.viz.steps.0	Input: 3
+ma-functions.c0.viz.steps.1	Rule: × 2
+ma-functions.c0.viz.steps.2	Output: 6
+ma-functions.c1.title	Coordinates
+ma-functions.c1.text	Descartes' idea: describe any point by two numbers, (x, y): how far across and how far up. It joined algebra and geometry.
+ma-functions.c1.viz.items.0.a	x
+ma-functions.c1.viz.items.0.b	across
+ma-functions.c1.viz.items.1.a	y
+ma-functions.c1.viz.items.1.b	up
+ma-functions.c1.viz.items.2.b	the origin
+ma-functions.c1.viz.items.3.b	3 across, 2 up
+ma-functions.c2.title	Straight lines
+ma-functions.c2.text	y = mx + c draws a straight line: m is the slope (how steep), c is where it crosses the y-axis.
+ma-functions.c2.formula	y = mx + c
+ma-functions.c2.viz.f	y = mx + c
+ma-functions.c2.viz.items.0.s	m
+ma-functions.c2.viz.items.0.m	slope
+ma-functions.c2.viz.items.1.s	c
+ma-functions.c2.viz.items.1.m	where it crosses the y-axis
+ma-functions.c2.viz.items.2.s	x
+ma-functions.c2.viz.items.2.m	input
+ma-functions.c3.title	A taxi fare
+ma-functions.c3.text	A taxi charges €3.50 to start plus €1.20 per km. Fare = 1.2 × km + 3.5: a straight line. 10 km costs €15.50.
+ma-functions.c3.viz.unit	fare, €
+ma-functions.c3.viz.items.0.l	0 km
+ma-functions.c3.viz.items.1.l	5 km
+ma-functions.c3.viz.items.2.l	10 km
+ma-functions.c4.title	Slope means rate
+ma-functions.c4.text	The slope is a rate of change: euros per km, km per hour, degrees per minute. Steeper lines mean faster change.
+ma-functions.c4.viz.items.0.a	Distance–time graph slope
+ma-functions.c4.viz.items.0.b	speed
+ma-functions.c4.viz.items.1.a	Cost–quantity slope
+ma-functions.c4.viz.items.1.b	price per item
+ma-functions.c4.viz.items.2.a	Temperature–time slope
+ma-functions.c4.viz.items.2.b	heating rate
+ma-functions.c5.title	Curves
+ma-functions.c5.text	y = x² makes a U-shaped curve called a parabola. A ball thrown in the air follows one, and satellite dishes use its shape to focus signals.
+ma-functions.c5.viz.unit	y = x²
+ma-functions.c5.viz.items.0.l	x = 0
+ma-functions.c5.viz.items.1.l	x = 1
+ma-functions.c5.viz.items.2.l	x = 2
+ma-functions.c5.viz.items.3.l	x = 3
+ma-functions.c6.title	Reading graphs
+ma-functions.c6.text	Before reading a graph, check what each axis shows, the units and the scale. Then look at the overall shape before the details.
+ma-functions.c6.viz.items.0	What's on each axis?
+ma-functions.c6.viz.items.1	What units?
+ma-functions.c6.viz.items.2	Does the axis start at zero?
+ma-functions.c6.viz.items.3	What's the overall trend?
+ma-functions.c7.title	Shapes of change
+ma-functions.c7.text	Lines show steady change; upward curves show acceleration; curves that level off show saturation, like a phone battery charging.
+ma-functions.c7.viz.root	Shapes of change
+ma-functions.c7.viz.items.0	Straight: steady
+ma-functions.c7.viz.items.1	Curving up: accelerating
+ma-functions.c7.viz.items.2	Levelling off: saturating
+ma-functions.c8.title	Inverse relationships
+ma-functions.c8.text	Some quantities move in opposite directions: travel time falls as speed rises. The graph curves down without ever reaching zero.
+ma-functions.c8.viz.unit	hours for 120 km
+ma-functions.c8.viz.items.0.l	30 km/h
+ma-functions.c8.viz.items.1.l	60 km/h
+ma-functions.c8.viz.items.2.l	120 km/h
+ma-functions.c9.title	Functions in code
+ma-functions.c9.text	Spreadsheets and programs are full of functions: =SUM(), =AVERAGE(). Each takes inputs and returns one output, exactly like the maths.
+ma-functions.c9.viz.steps.0	Cells A1 to A10
+ma-functions.c9.viz.steps.1	SUM function
+ma-functions.c9.viz.steps.2	One total
+ma-games.title	Game theory
+ma-games.summary	The maths of strategy.
+ma-games.q0.q	In the prisoner's dilemma, what usually happens?
+ma-games.q0.o0	Both stay silent
+ma-games.q0.o1	Both betray and are worse off
+ma-games.q0.o2	One goes free
+ma-games.q0.x	Individual logic beats collective good.
+ma-games.q1.q	Which strategy did well in Axelrod's tournaments?
+ma-games.q1.o0	Always betray
+ma-games.q1.o1	Tit for tat
+ma-games.q1.o2	Random
+ma-games.q1.x	Cooperate first, then copy.
+ma-games.c0.title	What game theory studies
+ma-games.c0.text	Game theory studies decisions where your best choice depends on what others do: business, politics, biology, even crossing the road.
+ma-games.c0.viz.items.0	Business pricing
+ma-games.c0.viz.items.1	Negotiations
+ma-games.c0.viz.items.2	Elections
+ma-games.c0.viz.items.3	Animal behaviour
+ma-games.c0.viz.items.4	Traffic
+ma-games.c1.title	The prisoner's dilemma
+ma-games.c1.text	Two suspects can stay silent or betray each other. Betraying is better for each individually, yet if both betray, both end up worse off than if both had stayed silent.
+ma-games.c1.viz.l.t	Both silent
+ma-games.c1.viz.l.items.0	1 year each
+ma-games.c1.viz.l.items.1	best together
+ma-games.c1.viz.r.t	Both betray
+ma-games.c1.viz.r.items.0	5 years each
+ma-games.c1.viz.r.items.1	what usually happens
+ma-games.c2.title	Nash equilibrium
+ma-games.c2.text	A Nash equilibrium is a situation where nobody gains by changing their choice alone. John Nash, subject of *A Beautiful Mind*, defined it in 1950.
+ma-games.c2.viz.steps.0	Each player picks a strategy
+ma-games.c2.viz.steps.1	Nobody can improve alone
+ma-games.c2.viz.steps.2	Equilibrium
+ma-games.c3.title	Repeated games
+ma-games.c3.text	When the game repeats, cooperation can win. In Robert Axelrod's 1980s computer tournaments, "tit for tat" (cooperate first, then copy the other) did remarkably well.
+ma-games.c3.viz.steps.0	Cooperate first
+ma-games.c3.viz.steps.1	Copy their last move
+ma-games.c3.viz.steps.2	Forgive quickly
+ma-games.c3.viz.steps.3	Cooperation spreads
+ma-games.c4.title	Zero-sum games
+ma-games.c4.text	In zero-sum games, one player's gain is exactly the other's loss, like poker or chess. Most of life, including trade, isn't zero-sum: both sides can gain.
+ma-games.c4.viz.l.t	Zero-sum
+ma-games.c4.viz.l.items.0	poker
+ma-games.c4.viz.l.items.1	chess
+ma-games.c4.viz.l.items.2	one wins, one loses
+ma-games.c4.viz.r.t	Positive-sum
+ma-games.c4.viz.r.items.0	trade
+ma-games.c4.viz.r.items.1	teamwork
+ma-games.c4.viz.r.items.2	both can win
+ma-games.c5.title	Chicken
+ma-games.c5.text	Two drivers speed towards each other; whoever swerves loses face, but if neither swerves, both crash. It models stand-offs between countries or companies.
+ma-games.c5.viz.items.0.a	Both swerve
+ma-games.c5.viz.items.0.b	both safe
+ma-games.c5.viz.items.1.a	One swerves
+ma-games.c5.viz.items.1.b	other wins
+ma-games.c5.viz.items.2.a	Neither swerves
+ma-games.c5.viz.items.2.b	disaster
+ma-games.c6.title	First-mover advantage
+ma-games.c6.text	In some games, moving first lets you commit and shape the outcome. In others, waiting lets you learn from the leader's mistakes.
+ma-games.c6.viz.l.t	Move first
+ma-games.c6.viz.l.items.0	set the standard
+ma-games.c6.viz.l.items.1	claim position
+ma-games.c6.viz.r.t	Wait
+ma-games.c6.viz.r.items.0	learn from others
+ma-games.c6.viz.r.items.1	avoid costly errors
+ma-games.c7.title	Auctions
+ma-games.c7.text	Game theory designs auctions for radio spectrum worth billions. In a sealed second-price auction, the best strategy is to bid exactly what it's worth to you.
+ma-games.c7.viz.steps.0	Everyone bids secretly
+ma-games.c7.viz.steps.1	Highest bidder wins
+ma-games.c7.viz.steps.2	Pays the second-highest bid
+ma-games.c8.title	Evolution as a game
+ma-games.c8.text	Animals "play" strategies shaped by evolution: hawks fight, doves share. A mix of both can be stable in a population.
+ma-games.c8.viz.items.0.a	Hawk
+ma-games.c8.viz.items.0.b	always fights
+ma-games.c8.viz.items.1.a	Dove
+ma-games.c8.viz.items.1.b	shares, retreats
+ma-games.c8.viz.items.2.a	Stable
+ma-games.c8.viz.items.2.b	a mix of both
+ma-games.c9.title	Splitting the bill
+ma-games.c9.text	When a group splits a restaurant bill equally, everyone is tempted to order more, since others share the cost. Everyone ends up paying more: a small tragedy of the commons.
+ma-games.c9.viz.steps.0	Split equally
+ma-games.c9.viz.steps.1	Each orders extra
+ma-games.c9.viz.steps.2	Bill grows
+ma-games.c9.viz.steps.3	Everyone pays more
+ma-codes.title	Codes and cryptography
+ma-codes.summary	Secret messages from Caesar to your phone.
+ma-codes.q0.q	What breaks simple substitution ciphers?
+ma-codes.q0.o0	Brute force
+ma-codes.q0.o1	Letter frequency analysis
+ma-codes.q0.o2	Quantum computers
+ma-codes.q0.x	E is the most common letter in English.
+ma-codes.q1.q	In public-key cryptography, which key do you keep secret?
+ma-codes.q1.o0	The public key
+ma-codes.q1.o1	The private key
+ma-codes.q1.o2	Both
+ma-codes.q1.x	The public one is shared.
+ma-codes.c0.title	The Caesar cipher
+ma-codes.c0.text	Julius Caesar shifted each letter three places: A becomes D, B becomes E. Easy to use, and easy to break.
+ma-codes.c0.viz.items.0.a	A
+ma-codes.c0.viz.items.0.b	D
+ma-codes.c0.viz.items.1.a	B
+ma-codes.c0.viz.items.1.b	E
+ma-codes.c0.viz.items.2.a	HELLO
+ma-codes.c0.viz.items.2.b	KHOOR
+ma-codes.c0.viz.items.3.a	Shift
+ma-codes.c0.viz.items.3.b	3 letters
+ma-codes.c1.title	Breaking codes with frequency
+ma-codes.c1.text	In English, E is the most common letter, followed by T and A. Count letters in a coded message and you can guess the substitution. Al-Kindi described this in the 9th century.
+ma-codes.c1.viz.unit	% of letters in English
+ma-codes.c1.viz.items.0.l	E
+ma-codes.c1.viz.items.1.l	T
+ma-codes.c1.viz.items.2.l	A
+ma-codes.c1.viz.items.3.l	O
+ma-codes.c1.viz.items.4.l	Z
+ma-codes.c2.title	Vigenère
+ma-codes.c2.text	The Vigenère cipher uses a keyword to shift each letter by a different amount, defeating simple frequency counts. It was called "the indecipherable cipher" for 300 years.
+ma-codes.c2.viz.steps.0	Keyword: LEMON
+ma-codes.c2.viz.steps.1	Each letter shifts differently
+ma-codes.c2.viz.steps.2	Frequency hidden
+ma-codes.c3.title	Enigma
+ma-codes.c3.text	Germany's Enigma machine used rotors to change the cipher with every key press. Polish mathematicians first cracked it; Alan Turing's team at Bletchley Park broke it at scale.
+ma-codes.c3.viz.events.0.l	Polish break Enigma
+ma-codes.c3.viz.events.1.l	shared with Britain
+ma-codes.c3.viz.events.2.l	Turing's bombe
+ma-codes.c3.viz.events.3.l	war ends
+ma-codes.c4.title	Keys
+ma-codes.c4.text	Modern encryption is public: the method is known, and security comes entirely from a secret key. A 128-bit key has trillions of times more combinations than there are grains of sand on Earth.
+ma-codes.c4.viz.items.0.v	2¹²⁸
+ma-codes.c4.viz.items.0.l	possible 128-bit keys
+ma-codes.c4.viz.items.1.v	3.4 × 10³⁸
+ma-codes.c4.viz.items.1.l	that number
+ma-codes.c4.viz.items.2.v	Billions of years
+ma-codes.c4.viz.items.2.l	to try them all
+ma-codes.c5.title	Public-key cryptography
+ma-codes.c5.text	Your phone uses two keys: a public one anyone can use to lock a message, and a private one only you have to unlock it. Invented in the 1970s.
+ma-codes.c5.viz.l.t	Public key
+ma-codes.c5.viz.l.items.0	shared with everyone
+ma-codes.c5.viz.l.items.1	locks
+ma-codes.c5.viz.r.t	Private key
+ma-codes.c5.viz.r.items.0	kept secret
+ma-codes.c5.viz.r.items.1	unlocks
+ma-codes.c6.title	The padlock analogy
+ma-codes.c6.text	Send someone an open padlock: they lock a box with it, and only you have the key. Nobody needed to share a secret beforehand.
+ma-codes.c6.viz.steps.0	Send open padlock
+ma-codes.c6.viz.steps.1	They lock the box
+ma-codes.c6.viz.steps.2	Send it back
+ma-codes.c6.viz.steps.3	Only you can open it
+ma-codes.c7.title	Hashes
+ma-codes.c7.text	A hash turns any data into a fixed-length fingerprint. Change one letter and the hash changes completely. Websites store password hashes, not passwords.
+ma-codes.c7.viz.steps.0	Password
+ma-codes.c7.viz.steps.1	Hash function
+ma-codes.c7.viz.steps.2	Fingerprint stored
+ma-codes.c7.viz.steps.3	Compare at login
+ma-codes.c8.title	Strong passwords
+ma-codes.c8.text	Length beats complexity. Four random words are easier to remember and harder to crack than "P@ssw0rd1". Use a password manager and two-factor authentication.
+ma-codes.c8.viz.items.0.w	P@ssw0rd1
+ma-codes.c8.viz.items.0.r	four random words, plus a password manager
+ma-codes.c9.title	Quantum threat
+ma-codes.c9.text	Large quantum computers could one day break today's public-key systems. New "post-quantum" algorithms were standardised in 2024 to prepare.
+ma-codes.c9.viz.events.0.l	RSA
+ma-codes.c9.viz.events.1.l	Shor's quantum algorithm
+ma-codes.c9.viz.events.2.l	post-quantum standards
+ma-greats.title	Great mathematicians
+ma-greats.summary	The people behind the ideas.
+ma-greats.q0.q	How did young Gauss sum 1 to 100?
+ma-greats.q0.o0	Counting
+ma-greats.q0.o1	Pairing numbers into 50 pairs of 101
+ma-greats.q0.o2	Using a calculator
+ma-greats.q0.x	5,050.
+ma-greats.q1.q	Who wrote the first published computer program?
+ma-greats.q1.o0	Alan Turing
+ma-greats.q1.o1	Ada Lovelace
+ma-greats.q1.o2	Charles Babbage
+ma-greats.q1.x	In 1843.
+ma-greats.c0.title	Euclid
+ma-greats.c0.text	Around 300 BCE Euclid wrote *Elements*, building geometry from a few basic axioms. It was used as a textbook for over 2,000 years.
+ma-greats.c0.viz.steps.0	Few axioms
+ma-greats.c0.viz.steps.1	Logical proofs
+ma-greats.c0.viz.steps.2	Hundreds of theorems
+ma-greats.c1.title	Archimedes
+ma-greats.c1.text	Archimedes estimated π, worked out volumes of spheres, explained levers and buoyancy, and supposedly shouted "Eureka!" in his bath.
+ma-greats.c1.viz.items.0	Estimated π
+ma-greats.c1.viz.items.1	Sphere volume
+ma-greats.c1.viz.items.2	Law of the lever
+ma-greats.c1.viz.items.3	Buoyancy
+ma-greats.c2.title	Hypatia
+ma-greats.c2.text	Hypatia of Alexandria (c. 360–415 CE) was a mathematician, astronomer and teacher, one of the first women in maths we know by name.
+ma-greats.c2.viz.events.0.y	~360 CE
+ma-greats.c2.viz.events.0.l	born
+ma-greats.c2.viz.events.1.l	leads her school
+ma-greats.c2.viz.events.2.l	killed by a mob
+ma-greats.c3.title	Fibonacci
+ma-greats.c3.text	Leonardo of Pisa, known as Fibonacci, popularised Hindu-Arabic numerals in Europe in 1202 with his *Liber Abaci*, a book for merchants.
+ma-greats.c3.viz.l.t	Roman
+ma-greats.c3.viz.l.items.0	XLVIII × XII
+ma-greats.c3.viz.l.items.1	slow
+ma-greats.c3.viz.r.t	Hindu-Arabic
+ma-greats.c3.viz.r.items.1	fast
+ma-greats.c4.title	Descartes and Fermat
+ma-greats.c4.text	In the 1600s both linked algebra and geometry with coordinates. Fermat also left a famous "last theorem", unproved for 358 years.
+ma-greats.c4.viz.events.0.l	Fermat's note
+ma-greats.c4.viz.events.1.l	Descartes' Geometry
+ma-greats.c4.viz.events.2.l	Wiles' proof published
+ma-greats.c5.title	Newton and Leibniz
+ma-greats.c5.text	Both invented calculus independently in the late 1600s and argued bitterly about who was first. We use Leibniz's notation today.
+ma-greats.c5.viz.l.t	Newton
+ma-greats.c5.viz.l.items.0	physics motivation
+ma-greats.c5.viz.l.items.1	dots for rates
+ma-greats.c5.viz.r.t	Leibniz
+ma-greats.c5.viz.r.items.0	published first
+ma-greats.c5.viz.r.items.1	dx and ∫ notation
+ma-greats.c6.title	Euler
+ma-greats.c6.text	Leonhard Euler was the most prolific mathematician ever, writing over 800 papers even after going blind. His identity e^iπ + 1 = 0 links five key numbers.
+ma-greats.c6.viz.f	e^iπ + 1 = 0
+ma-greats.c6.viz.items.0.s	e
+ma-greats.c6.viz.items.0.m	growth constant
+ma-greats.c6.viz.items.1.s	i
+ma-greats.c6.viz.items.1.m	imaginary unit
+ma-greats.c6.viz.items.2.s	π
+ma-greats.c6.viz.items.2.m	circle constant
+ma-greats.c6.viz.items.3.m	1 and 0
+ma-greats.c7.title	Gauss
+ma-greats.c7.text	As a boy, Gauss supposedly summed 1 to 100 in seconds: pair 1+100, 2+99… into 50 pairs of 101, giving 5,050.
+ma-greats.c7.example.0	1 + 100 = 101
+ma-greats.c7.example.1	50 pairs
+ma-greats.c7.example.2	50 × 101 = 5,050
+ma-greats.c7.viz.items.3.a	50 pairs
+ma-greats.c8.title	Ada Lovelace
+ma-greats.c8.text	In 1843 Ada Lovelace wrote what's considered the first computer program, for Babbage's Analytical Engine, and foresaw computers making music.
+ma-greats.c8.viz.events.0.l	Analytical Engine designed
+ma-greats.c8.viz.events.1.l	Lovelace's notes
+ma-greats.c8.viz.events.2.y	1940s
+ma-greats.c8.viz.events.2.l	first computers
+ma-greats.c9.title	Modern greats
+ma-greats.c9.text	Emmy Noether linked symmetry and conservation laws; Ramanujan found startling formulas with little formal training; Maryam Mirzakhani was the first woman to win the Fields Medal, in 2014.
+ma-greats.c9.viz.items.0.a	Emmy Noether
+ma-greats.c9.viz.items.0.b	symmetry and physics
+ma-greats.c9.viz.items.1.a	Ramanujan
+ma-greats.c9.viz.items.1.b	infinite series
+ma-greats.c9.viz.items.2.a	Maryam Mirzakhani
+ma-greats.c9.viz.items.2.b	Fields Medal 2014
+ma-calculus.title	Calculus intuition
+ma-calculus.summary	The maths of change.
+ma-calculus.q0.q	On a speed–time graph, what does the area under the curve give?
+ma-calculus.q0.o0	Acceleration
+ma-calculus.q0.o1	Distance travelled
+ma-calculus.q0.o2	Time
+ma-calculus.q0.x	Integrals accumulate.
+ma-calculus.q1.q	At the top of a smooth curve, the slope is…
+ma-calculus.q1.o0	infinite
+ma-calculus.q1.o1	zero
+ma-calculus.q1.o2	negative
+ma-calculus.q1.x	Peaks and valleys have zero slope.
+ma-calculus.c0.title	Two big questions
+ma-calculus.c0.text	Calculus answers two questions: how fast is something changing right now (derivatives), and how much has built up over time (integrals).
+ma-calculus.c0.viz.l.t	Derivatives
+ma-calculus.c0.viz.l.items.0	rate of change
+ma-calculus.c0.viz.l.items.1	speed from distance
+ma-calculus.c0.viz.r.t	Integrals
+ma-calculus.c0.viz.r.items.0	accumulation
+ma-calculus.c0.viz.r.items.1	distance from speed
+ma-calculus.c1.title	Instant speed
+ma-calculus.c1.text	Your car's speedometer shows speed at an instant, not an average. Calculus defines it by measuring over shorter and shorter time intervals.
+ma-calculus.c1.viz.steps.0	Average over 1 min
+ma-calculus.c1.viz.steps.1	Over 1 s
+ma-calculus.c1.viz.steps.2	Over 0.001 s
+ma-calculus.c1.viz.steps.3	Instant speed
+ma-calculus.c2.title	Slope of a curve
+ma-calculus.c2.text	A derivative is the slope of a curve at a point: zoom in far enough and any smooth curve looks like a straight line.
+ma-calculus.c2.viz.steps.0	Curve
+ma-calculus.c2.viz.steps.1	Zoom in
+ma-calculus.c2.viz.steps.2	Looks straight
+ma-calculus.c2.viz.steps.3	Its slope is the derivative
+ma-calculus.c3.title	Area under a curve
+ma-calculus.c3.text	An integral adds up tiny slices. On a speed–time graph, the area under the curve is the distance travelled.
+ma-calculus.c3.viz.steps.0	Speed graph
+ma-calculus.c3.viz.steps.1	Cut into thin strips
+ma-calculus.c3.viz.steps.2	Add their areas
+ma-calculus.c3.viz.steps.3	Total distance
+ma-calculus.c4.title	Opposites
+ma-calculus.c4.text	Differentiation and integration undo each other: the fundamental theorem of calculus. Distance → speed → acceleration, and back again.
+ma-calculus.c4.viz.steps.0	Distance
+ma-calculus.c4.viz.steps.1	Differentiate: speed
+ma-calculus.c4.viz.steps.2	Differentiate: acceleration
+ma-calculus.c4.viz.steps.3	Integrate back
+ma-calculus.c5.title	Maxima and minima
+ma-calculus.c5.text	Where a curve peaks or dips, its slope is zero. That's how engineers find the strongest beam or cheapest design.
+ma-calculus.c5.viz.items.0.a	Slope zero
+ma-calculus.c5.viz.items.0.b	peak or valley
+ma-calculus.c5.viz.items.1.a	Peak
+ma-calculus.c5.viz.items.1.b	maximum
+ma-calculus.c5.viz.items.2.a	Valley
+ma-calculus.c5.viz.items.2.b	minimum
+ma-calculus.c6.title	The biggest box
+ma-calculus.c6.text	Cut squares from a 30 cm card's corners and fold up a box. Calculus shows 5 cm squares give the largest volume: 2,000 cm³.
+ma-calculus.c6.viz.unit	volume, cm³
+ma-calculus.c6.viz.items.0.l	Cut 3 cm
+ma-calculus.c6.viz.items.1.l	Cut 5 cm
+ma-calculus.c6.viz.items.2.l	Cut 7 cm
+ma-calculus.c7.title	Change everywhere
+ma-calculus.c7.text	Calculus models population growth, heating and cooling, interest, rocket trajectories and machine learning, which uses derivatives to adjust its weights.
+ma-calculus.c7.viz.items.0	Physics and engineering
+ma-calculus.c7.viz.items.1	Economics
+ma-calculus.c7.viz.items.2	Medicine dosing
+ma-calculus.c7.viz.items.3	Machine learning
+ma-calculus.c8.title	Limits
+ma-calculus.c8.text	Calculus rests on limits: what a value approaches as something gets very small. 1/2 + 1/4 + 1/8… approaches 1, even though no step reaches it.
+ma-calculus.c8.viz.unit	running total
+ma-calculus.c8.viz.items.0.l	1 term
+ma-calculus.c8.viz.items.1.l	2 terms
+ma-calculus.c8.viz.items.2.l	3 terms
+ma-calculus.c8.viz.items.3.l	5 terms
+ma-calculus.c9.title	Who invented it?
+ma-calculus.c9.text	Newton and Leibniz developed calculus independently in the 1660s–1680s, though Archimedes and others had used similar ideas centuries earlier.
+ma-calculus.c9.viz.events.0.y	~250 BCE
+ma-calculus.c9.viz.events.0.l	Archimedes' slices
+ma-calculus.c9.viz.events.1.l	Newton's methods
+ma-calculus.c9.viz.events.2.l	Leibniz publishes
+ma-calculus.c9.viz.events.3.y	1820s
+ma-calculus.c9.viz.events.3.l	limits made rigorous
+ma-networks.title	Networks and graphs
+ma-networks.summary	Bridges, maps and social media.
+ma-networks.q0.q	Who founded graph theory with the Königsberg bridges?
+ma-networks.q0.o0	Newton
+ma-networks.q0.o1	Euler
+ma-networks.q0.o2	Gauss
+ma-networks.q0.x	In 1736.
+ma-networks.q1.q	How many colours are enough to colour any map?
+ma-networks.q1.o0	3
+ma-networks.q1.o1	4
+ma-networks.q1.o2	5
+ma-networks.q1.x	Proved in 1976.
+ma-networks.q2.q	What made Google's PageRank work?
+ma-networks.q2.o0	Keyword counts
+ma-networks.q2.o1	Treating links as votes
+ma-networks.q2.o2	Page length
+ma-networks.q2.x	Links from important pages count more.
+ma-networks.c0.title	Königsberg's bridges
+ma-networks.c0.text	In 1736 Euler proved you couldn't walk across all seven bridges of Königsberg exactly once. To solve it, he reduced the city to dots and lines: graph theory was born.
+ma-networks.c0.viz.steps.0	City map
+ma-networks.c0.viz.steps.1	Land areas become dots
+ma-networks.c0.viz.steps.2	Bridges become lines
+ma-networks.c0.viz.steps.3	Count lines at each dot
+ma-networks.c1.title	Nodes and edges
+ma-networks.c1.text	A graph is a set of nodes (dots) joined by edges (lines). Cities and roads, people and friendships, web pages and links are all graphs.
+ma-networks.c1.viz.items.0.a	Cities
+ma-networks.c1.viz.items.0.b	nodes
+ma-networks.c1.viz.items.1.a	Roads
+ma-networks.c1.viz.items.1.b	edges
+ma-networks.c1.viz.items.2.a	People
+ma-networks.c1.viz.items.2.b	nodes
+ma-networks.c1.viz.items.3.a	Friendships
+ma-networks.c1.viz.items.3.b	edges
+ma-networks.c2.title	Euler's rule
+ma-networks.c2.text	You can trace a network using every edge once only if zero or two nodes have an odd number of edges. Königsberg had four odd nodes.
+ma-networks.c2.viz.items.0.a	0 odd nodes
+ma-networks.c2.viz.items.0.b	possible, end where you start
+ma-networks.c2.viz.items.1.a	2 odd nodes
+ma-networks.c2.viz.items.1.b	possible, start at one
+ma-networks.c2.viz.items.2.a	4 odd nodes
+ma-networks.c2.viz.items.2.b	impossible
+ma-networks.c3.title	Shortest paths
+ma-networks.c3.text	Your map app finds the fastest route with algorithms like Dijkstra's (1956), which explores outward from the start, always extending the shortest path found so far.
+ma-networks.c3.viz.steps.0	Start
+ma-networks.c3.viz.steps.1	Explore nearest unvisited
+ma-networks.c3.viz.steps.2	Update distances
+ma-networks.c3.viz.steps.3	Repeat until destination
+ma-networks.c4.title	The travelling salesman
+ma-networks.c4.text	Find the shortest route visiting every city once. Easy for 5 cities, but the possibilities explode: 20 cities have over 60 quadrillion routes.
+ma-networks.c4.viz.unit	routes
+ma-networks.c4.viz.items.0.l	5 cities
+ma-networks.c4.viz.items.1.l	10 cities
+ma-networks.c4.viz.items.2.l	20 cities*
+ma-networks.c5.title	Six degrees
+ma-networks.c5.text	Stanley Milgram's 1967 experiment suggested any two Americans are linked by about six acquaintances. Facebook data later found an average of about 3.5 steps.
+ma-networks.c5.viz.steps.0	You
+ma-networks.c5.viz.steps.1	A friend
+ma-networks.c5.viz.steps.2	Their friend
+ma-networks.c5.viz.steps.4	Anyone, in about six steps
+ma-networks.c6.title	Hubs
+ma-networks.c6.text	In many networks a few hubs have huge numbers of links: major airports, popular websites, influencers. Attack the hubs and the network breaks.
+ma-networks.c6.viz.root	Lisbon airport hub
+ma-networks.c6.viz.items.0	Porto
+ma-networks.c6.viz.items.1	Madrid
+ma-networks.c6.viz.items.2	London
+ma-networks.c6.viz.items.3	Paris
+ma-networks.c6.viz.items.4	São Paulo
+ma-networks.c7.title	Four colours
+ma-networks.c7.text	Any map can be coloured with just four colours so no neighbouring regions match. Proved in 1976, it was the first major proof that relied on a computer.
+ma-networks.c7.viz.events.0.l	problem posed
+ma-networks.c7.viz.events.1.l	proved by computer
+ma-networks.c7.viz.events.2.l	computer-checked again
+ma-networks.c8.title	PageRank
+ma-networks.c8.text	Google's original idea: a page is important if important pages link to it. It treats the web as a giant graph of votes.
+ma-networks.c8.viz.steps.0	Pages link to each other
+ma-networks.c8.viz.steps.1	Links act as votes
+ma-networks.c8.viz.steps.2	Votes from important pages count more
+ma-networks.c8.viz.steps.3	Ranking
+ma-networks.c9.title	Epidemics on networks
+ma-networks.c9.text	Diseases spread along contact networks. Vaccinating well-connected hubs, like healthcare workers, can protect far more people than random vaccination.
+ma-networks.c9.viz.l.t	Random vaccination
+ma-networks.c9.viz.l.items.0	slower protection
+ma-networks.c9.viz.r.t	Targeting hubs
+ma-networks.c9.viz.r.items.0	breaks chains faster
+ma-estimate.title	Estimation
+ma-estimate.summary	Good-enough answers in your head.
+ma-estimate.q0.q	How long is a billion seconds?
+ma-estimate.q0.o0	About 3 years
+ma-estimate.q0.o1	About 11 days
+ma-estimate.q0.o2	About 32 years
+ma-estimate.q0.x	A million seconds is about 11.5 days.
+ma-estimate.q1.q	What is a Fermi problem?
+ma-estimate.q1.o0	An unsolved maths problem
+ma-estimate.q1.o1	A rough estimate built from simple guesses
+ma-estimate.q1.o2	A physics formula
+ma-estimate.q1.x	Break big questions into parts.
+ma-estimate.c0.title	Fermi problems
+ma-estimate.c0.text	Physicist Enrico Fermi loved questions like "how many piano tuners are in Chicago?" Break them into pieces you can guess, multiply, and you'll often be within a factor of a few.
+ma-estimate.c0.viz.steps.0	Big question
+ma-estimate.c0.viz.steps.1	Break into parts
+ma-estimate.c0.viz.steps.2	Estimate each
+ma-estimate.c0.viz.steps.3	Multiply
+ma-estimate.c1.title	Petrol stations in Portugal
+ma-estimate.c1.text	About 10 million people, roughly 5 million cars, each filling up weekly: 5 million fills a week. If a station handles about 3,000 a week, that's around 1,700 stations; the real number is a few thousand.
+ma-estimate.c1.example.0	5 million fills a week
+ma-estimate.c1.example.1	÷ 3,000 per station
+ma-estimate.c1.example.2	≈ 1,700 stations
+ma-estimate.c1.viz.steps.0	10 million people
+ma-estimate.c1.viz.steps.1	~5 million cars
+ma-estimate.c1.viz.steps.2	5 million fills a week
+ma-estimate.c1.viz.steps.3	÷ 3,000 per station
+ma-estimate.c2.title	Orders of magnitude
+ma-estimate.c2.text	Often the power of 10 matters more than the exact value. Is it hundreds, thousands or millions? Get that right first.
+ma-estimate.c2.viz.items.0.l	A class
+ma-estimate.c2.viz.items.1.l	A village
+ma-estimate.c2.viz.items.2.l	Lisbon city
+ma-estimate.c2.viz.items.3.l	Portugal
+ma-estimate.c3.title	Useful anchors
+ma-estimate.c3.text	Memorise a few reference numbers and you can estimate almost anything.
+ma-estimate.c3.viz.items.0.a	Portugal
+ma-estimate.c3.viz.items.0.b	~10.5 million people
+ma-estimate.c3.viz.items.1.a	World
+ma-estimate.c3.viz.items.1.b	~8 billion people
+ma-estimate.c3.viz.items.2.a	Earth's circumference
+ma-estimate.c3.viz.items.2.b	40,000 km
+ma-estimate.c3.viz.items.3.a	A year
+ma-estimate.c3.viz.items.3.b	~31.5 million seconds
+ma-estimate.c4.title	Round generously
+ma-estimate.c4.text	Round to numbers that are easy to multiply. 47 × 213 ≈ 50 × 200 = 10,000. The real answer is 10,011.
+ma-estimate.c4.viz.steps.1	Round: 50 × 200
+ma-estimate.c4.viz.steps.3	Exact: 10,011
+ma-estimate.c5.title	Over and under cancel
+ma-estimate.c5.text	In multi-step estimates, rounding errors in different directions tend to cancel, so the final answer is often better than any single guess.
+ma-estimate.c5.viz.l.t	One guess
+ma-estimate.c5.viz.l.items.0	often off by 2×
+ma-estimate.c5.viz.r.t	Many rough guesses multiplied
+ma-estimate.c5.viz.r.items.0	errors partly cancel
+ma-estimate.c6.title	Sanity checks
+ma-estimate.c6.text	Estimation catches mistakes. If a spreadsheet says a café uses 40 tonnes of coffee a day, a quick estimate shows something's wrong.
+ma-estimate.c6.viz.items.0.w	Trust the spreadsheet blindly
+ma-estimate.c6.viz.items.0.r	Estimate first, then check
+ma-estimate.c7.title	Estimating crowds
+ma-estimate.c7.text	Count the people in a small area, then multiply by how many such areas the crowd covers. Police and organisers often disagree by a factor of two.
+ma-estimate.c7.viz.steps.0	Count people in 10 m²
+ma-estimate.c7.viz.steps.1	Measure total area
+ma-estimate.c7.viz.steps.2	Multiply
+ma-estimate.c7.viz.steps.3	Crowd size
+ma-estimate.c8.title	How long is a billion seconds?
+ma-estimate.c8.text	A million seconds is about 11.5 days. A billion seconds is about 32 years. Big numbers are very different even if they sound similar.
+ma-estimate.c8.viz.unit	time
+ma-estimate.c8.viz.items.0.l	Thousand s, minutes
+ma-estimate.c8.viz.items.1.l	Million s, days
+ma-estimate.c8.viz.items.2.l	Billion s, years
+ma-estimate.c9.title	Confidence ranges
+ma-estimate.c9.text	Good estimators give ranges: "between 2,000 and 4,000". A range you're 90% sure about is more honest than a single precise-looking number.
+ma-estimate.c9.viz.unit	petrol stations
+ma-estimate.c9.viz.items.0.l	Low guess
+ma-estimate.c9.viz.items.1.l	Best guess
+ma-estimate.c9.viz.items.2.l	High guess
+ma-patterns.title	Sequences and patterns
+ma-patterns.summary	Spotting the rule.
+ma-patterns.q0.q	What comes next: 2, 6, 18, 54, …?
+ma-patterns.q0.o0	108
+ma-patterns.q0.o1	162
+ma-patterns.q0.o2	72
+ma-patterns.q0.x	Multiply by 3.
+ma-patterns.q1.q	What's the 4th triangular number?
+ma-patterns.q1.o0	8
+ma-patterns.q1.o1	10
+ma-patterns.q1.o2	16
+ma-patterns.q1.x	1 + 2 + 3 + 4.
+ma-patterns.c0.title	Arithmetic sequences
+ma-patterns.c0.text	Add the same number each time: 3, 7, 11, 15… (add 4). The nth term is easy to find: 4n − 1.
+ma-patterns.c1.title	Geometric sequences
+ma-patterns.c1.text	Multiply by the same number each time: 2, 6, 18, 54… (×3). They grow much faster than arithmetic sequences.
+ma-patterns.c2.title	Triangular numbers
+ma-patterns.c2.text	1, 3, 6, 10, 15: the number of dots in growing triangles, like bowling pins. The nth is n(n + 1)/2.
+ma-patterns.c2.viz.f	Tₙ = n(n + 1) / 2
+ma-patterns.c2.viz.items.0.s	n
+ma-patterns.c2.viz.items.0.m	row number
+ma-patterns.c2.viz.items.1.s	T₄
+ma-patterns.c2.viz.items.1.m	10 bowling pins
+ma-patterns.c3.title	Fibonacci in nature
+ma-patterns.c3.text	Many sunflowers have 34 and 55 spirals; pine cones show 8 and 13. These Fibonacci numbers pack seeds efficiently.
+ma-patterns.c3.viz.items.0.a	Pine cone
+ma-patterns.c3.viz.items.0.b	8 and 13 spirals
+ma-patterns.c3.viz.items.1.a	Pineapple
+ma-patterns.c3.viz.items.1.b	8 and 13
+ma-patterns.c3.viz.items.2.a	Sunflower
+ma-patterns.c3.viz.items.2.b	34 and 55 or 55 and 89
+ma-patterns.c4.title	The golden ratio
+ma-patterns.c4.text	Divide each Fibonacci number by the one before and you approach 1.618…, the golden ratio φ.
+ma-patterns.c4.viz.unit	ratio
+ma-patterns.c5.title	Pascal's triangle
+ma-patterns.c5.text	Each number is the sum of the two above it. The triangle hides counting numbers, triangular numbers, powers of 2 and probabilities of coin tosses.
+ma-patterns.c6.title	Primes resist patterns
+ma-patterns.c6.text	Primes thin out but never stop, and no simple formula produces them all. Predicting them is one of maths' deepest open problems.
+ma-patterns.c7.title	Tricky sequences
+ma-patterns.c7.text	1, 2, 4, 8, 16… seems obvious, but cut a circle with lines between points and you get 1, 2, 4, 8, 16, then 31. Patterns need proof.
+ma-patterns.c7.viz.l.t	Expect
+ma-patterns.c7.viz.l.items.0	32 regions
+ma-patterns.c7.viz.r.t	Actually
+ma-patterns.c7.viz.r.items.0	31 regions
+ma-patterns.c8.title	Look-and-say
+ma-patterns.c8.text	1, 11, 21, 1211, 111221… Each term describes the last aloud: "one 1", "two 1s", "one 2, one 1". A pattern based on words, not arithmetic.
+ma-patterns.c9.title	Find the rule
+ma-patterns.c9.text	2, 5, 10, 17, 26… The gaps are 3, 5, 7, 9: odd numbers. The rule is n² + 1.
+ma-patterns.c9.example.0	Gaps: 3, 5, 7, 9
+ma-patterns.c9.example.1	Squares: 1, 4, 9, 16, 25
+ma-patterns.c9.example.2	Add 1: n² + 1
+ma-units.title	Measurement and units
+ma-units.summary	Metres, kilos and why they matter.
+ma-units.q0.q	How many litres in 1 m³?
+ma-units.q0.o0	100
+ma-units.q0.o1	1,000
+ma-units.q0.o2	10,000
+ma-units.q0.x	1 m³ = 1,000 litres.
+ma-units.q1.q	Why was the Mars Climate Orbiter lost in 1999?
+ma-units.q1.o0	A meteor
+ma-units.q1.o1	A mix-up of imperial and metric units
+ma-units.q1.o2	Software virus
+ma-units.q1.x	Pound-force vs newtons.
+ma-units.c0.title	The metric system
+ma-units.c0.text	Born in revolutionary France in the 1790s, the metric system uses powers of 10, so converting is just moving the decimal point. Portugal adopted it in 1852.
+ma-units.c0.viz.items.0.a	kilo
+ma-units.c0.viz.items.1.a	centi
+ma-units.c0.viz.items.2.a	milli
+ma-units.c0.viz.items.3.a	micro
+ma-units.c0.viz.items.3.b	÷ 1 million
+ma-units.c1.title	Seven base units
+ma-units.c1.text	All measurements are built from seven SI base units. Since 2019, all are defined by fixed constants of nature, not physical objects.
+ma-units.c1.viz.items.0	Metre: length
+ma-units.c1.viz.items.1	Kilogram: mass
+ma-units.c1.viz.items.2	Second: time
+ma-units.c1.viz.items.3	Ampere: current
+ma-units.c1.viz.items.4	Kelvin: temperature
+ma-units.c1.viz.items.5	Mole: amount
+ma-units.c1.viz.items.6	Candela: light
+ma-units.c2.title	Goodbye, Le Grand K
+ma-units.c2.text	For 130 years the kilogram was a metal cylinder in a vault near Paris. In 2019 it was redefined using the Planck constant.
+ma-units.c2.viz.events.0.l	metal kilogram
+ma-units.c2.viz.events.1.l	decision to redefine
+ma-units.c2.viz.events.2.l	Planck constant definition
+ma-units.c3.title	Area and volume units
+ma-units.c3.text	1 m² is 10,000 cm², not 100. 1 m³ is 1,000 litres. Units square and cube along with the lengths.
+ma-units.c3.viz.items.0.a	1 m
+ma-units.c3.viz.items.0.b	100 cm
+ma-units.c3.viz.items.1.a	1 m²
+ma-units.c3.viz.items.1.b	10,000 cm²
+ma-units.c3.viz.items.2.a	1 m³
+ma-units.c3.viz.items.2.b	1,000,000 cm³ = 1,000 litres
+ma-units.c4.title	Hectares
+ma-units.c4.text	A hectare is 100 m × 100 m = 10,000 m², about one and a half football pitches. Farms and forests are measured in hectares.
+ma-units.c4.viz.items.0.v	10,000 m²
+ma-units.c4.viz.items.0.l	one hectare
+ma-units.c4.viz.items.1.v	100 ha
+ma-units.c4.viz.items.1.l	one km²
+ma-units.c4.viz.items.2.l	football pitches
+ma-units.c5.title	Imperial units
+ma-units.c5.text	The UK and USA still use miles, pounds and Fahrenheit. Quick conversions: 1 mile ≈ 1.6 km, 1 kg ≈ 2.2 lb, 1 inch = 2.54 cm.
+ma-units.c5.viz.items.0.a	1 mile
+ma-units.c5.viz.items.0.b	1.609 km
+ma-units.c5.viz.items.1.a	1 kg
+ma-units.c5.viz.items.1.b	2.205 lb
+ma-units.c5.viz.items.2.a	1 inch
+ma-units.c5.viz.items.2.b	2.54 cm
+ma-units.c5.viz.items.3.a	1 gallon, US
+ma-units.c5.viz.items.3.b	3.79 litres
+ma-units.c6.title	The Mars Climate Orbiter
+ma-units.c6.text	In 1999 a NASA probe was lost at Mars because one team used pound-force and another newtons. The $125 million mistake was a units mix-up.
+ma-units.c6.viz.steps.0	Team A: imperial units
+ma-units.c6.viz.steps.1	Team B: metric
+ma-units.c6.viz.steps.2	Thruster data wrong
+ma-units.c6.viz.steps.3	Probe lost at Mars
+ma-units.c7.title	Significant figures
+ma-units.c7.text	Precision should match the measurement. A room measured as 4.2 m doesn't have an area of 17.64 m² precisely; say about 17.6 m².
+ma-units.c7.viz.items.0.w	17.6400 m²
+ma-units.c7.viz.items.0.r	about 17.6 m²
+ma-units.c8.title	Speed units
+ma-units.c8.text	Divide km/h by 3.6 for metres per second. 120 km/h is about 33 m/s: a car covers a football pitch every three seconds.
+ma-units.c8.viz.f	m/s = km/h ÷ 3.6
+ma-units.c8.viz.items.0.s	km/h
+ma-units.c8.viz.items.0.m	kilometres per hour
+ma-units.c8.viz.items.1.s	m/s
+ma-units.c8.viz.items.1.m	metres per second
+ma-units.c9.title	Energy units
+ma-units.c9.text	A kilowatt-hour runs a 1,000 W heater for an hour. A food Calorie is 1,000 calories, about 4.2 kJ. A hot shower uses about 2–3 kWh.
+ma-units.c9.viz.items.0.a	1 kWh
+ma-units.c9.viz.items.0.b	3.6 million joules
+ma-units.c9.viz.items.1.a	1 kcal
+ma-units.c9.viz.items.1.b	4.18 kJ
+ma-units.c9.viz.items.2.a	Hot shower
+ma-units.c9.viz.items.2.b	about 2–3 kWh
+ma-puzzles.title	Famous puzzles
+ma-puzzles.summary	Brain teasers with deep maths.
+ma-puzzles.q0.q	How many handshakes when 10 people all shake hands once?
+ma-puzzles.q0.o0	90
+ma-puzzles.q0.o1	45
+ma-puzzles.q0.o2	100
+ma-puzzles.q0.x	10 × 9 ÷ 2.
+ma-puzzles.q1.q	Does 0.999… repeating equal 1?
+ma-puzzles.q1.o0	No, it's slightly less
+ma-puzzles.q1.o1	Yes, exactly
+ma-puzzles.q1.o2	Only approximately
+ma-puzzles.q1.x	3 × 0.333… = 0.999… = 1.
+ma-puzzles.c0.title	The Tower of Hanoi
+ma-puzzles.c0.text	Move a stack of discs to another peg, one at a time, never placing a bigger disc on a smaller one. With n discs it takes 2ⁿ − 1 moves.
+ma-puzzles.c0.viz.unit	minimum moves
+ma-puzzles.c0.viz.items.0.l	3 discs
+ma-puzzles.c0.viz.items.1.l	5 discs
+ma-puzzles.c0.viz.items.2.l	7 discs
+ma-puzzles.c0.viz.items.3.l	10 discs
+ma-puzzles.c1.title	Missing square
+ma-puzzles.c1.text	Rearranging four pieces of a triangle seems to create a hole. The trick: the "hypotenuses" aren't straight lines, so the shapes differ slightly.
+ma-puzzles.c1.viz.items.0.w	Area vanished
+ma-puzzles.c1.viz.items.0.r	The edges are slightly bent: the shapes aren't equal
+ma-puzzles.c2.title	The handshake problem
+ma-puzzles.c2.text	If 10 people all shake hands once, how many handshakes? Each shakes 9 hands, but each handshake involves two: 10 × 9 ÷ 2 = 45.
+ma-puzzles.c2.example.0	10 people × 9 others = 90
+ma-puzzles.c2.example.1	Each counted twice
+ma-puzzles.c2.example.2	90 ÷ 2 = 45
+ma-puzzles.c2.viz.f	handshakes = n(n − 1) ÷ 2
+ma-puzzles.c2.viz.items.0.s	n
+ma-puzzles.c2.viz.items.0.m	number of people
+ma-puzzles.c2.viz.items.1.s	10 people
+ma-puzzles.c3.title	Pigeonhole principle
+ma-puzzles.c3.text	If you put 13 socks into 12 drawers, at least one drawer gets two. Simple but powerful: in Lisbon, at least two people have exactly the same number of hairs on their head.
+ma-puzzles.c3.viz.steps.0	More items than boxes
+ma-puzzles.c3.viz.steps.1	At least one box has two
+ma-puzzles.c4.title	The 0.999… puzzle
+ma-puzzles.c4.text	0.999… repeating forever equals exactly 1. One proof: 1/3 = 0.333…, so 3 × 1/3 = 0.999… = 1.
+ma-puzzles.c4.example.0	1/3 = 0.333…
+ma-puzzles.c4.example.1	× 3
+ma-puzzles.c4.example.2	0.999… = 1
+ma-puzzles.c5.title	Hilbert's hotel
+ma-puzzles.c5.text	A hotel with infinitely many rooms is full. A new guest arrives: move everyone from room n to room n + 1, and room 1 is free. Infinity behaves strangely.
+ma-puzzles.c5.viz.steps.0	Hotel full
+ma-puzzles.c5.viz.steps.1	Everyone moves up one room
+ma-puzzles.c5.viz.steps.2	Room 1 free
+ma-puzzles.c5.viz.steps.3	New guest checks in
+ma-puzzles.c6.title	Truth tellers and liars
+ma-puzzles.c6.text	On an island, knights always tell the truth and knaves always lie. Ask either "what would the other say?" and you can reverse the answer to find the truth.
+ma-puzzles.c6.viz.items.0.a	Knight
+ma-puzzles.c6.viz.items.0.b	always truthful
+ma-puzzles.c6.viz.items.1.a	Knave
+ma-puzzles.c6.viz.items.1.b	always lies
+ma-puzzles.c6.viz.items.2.a	Trick
+ma-puzzles.c6.viz.items.2.b	ask about the other's answer
+ma-puzzles.c7.title	Sudoku is logic
+ma-puzzles.c7.text	Sudoku needs no arithmetic, only logic: each row, column and box contains 1 to 9 once. A well-made puzzle has exactly one solution.
+ma-puzzles.c7.viz.items.0	Each row: 1–9
+ma-puzzles.c7.viz.items.1	Each column: 1–9
+ma-puzzles.c7.viz.items.2	Each 3×3 box: 1–9
+ma-puzzles.c7.viz.items.3	One unique solution
+ma-puzzles.c8.title	The Seven Bridges today
+ma-puzzles.c8.text	Euler's idea is used in garbage collection and postal routes: planning paths that cover every street once with as little doubling back as possible.
+ma-puzzles.c8.viz.steps.0	Map of streets
+ma-puzzles.c8.viz.steps.1	Find odd junctions
+ma-puzzles.c8.viz.steps.2	Add shortest repeats
+ma-puzzles.c8.viz.steps.3	Efficient route
+ma-puzzles.c9.title	The wolf, goat and cabbage, solved
+ma-puzzles.c9.text	The key insight was taking something back. Many puzzles need a step that seems to go backwards, a lesson for real problem-solving too.
+ma-puzzles.c9.viz.steps.0	Goat over
+ma-puzzles.c9.viz.steps.1	Wolf over
+ma-puzzles.c9.viz.steps.2	Goat back
+ma-puzzles.c9.viz.steps.3	Cabbage over
+ma-puzzles.c9.viz.steps.4	Goat over

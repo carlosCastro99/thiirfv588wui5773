@@ -1,0 +1,259 @@
+P.title	Matemática e Lógica
+P.blurb	Números, acaso, formas, estatística e pensamento claro.
+ma-numbers.title	Números incríveis
+ma-numbers.summary	O zero, π, os números primos e o infinito.
+ma-numbers.q0.q	Qual destes é um número primo?
+ma-numbers.q0.o0	21
+ma-numbers.q0.o1	23
+ma-numbers.q0.o2	27
+ma-numbers.q0.x	23 tem apenas dois divisores.
+ma-numbers.q1.q	O que é π?
+ma-numbers.q1.o0	Exatamente 22
+ma-numbers.q1.o1	Perímetro ÷ diâmetro de um círculo
+ma-numbers.q1.o2	A área de um círculo
+ma-numbers.q1.x	Cerca de 3.14159.
+ma-numbers.q2.q	O que vem a seguir: 1, 1, 2, 3, 5, 8, …?
+ma-numbers.q2.o0	11
+ma-numbers.q2.o1	13
+ma-numbers.q2.o2	16
+ma-numbers.q2.x	5 + 8 = 13.
+ma-numbers.c0.title	A invenção do zero
+ma-numbers.c0.text	O zero como número, e não apenas como espaço vazio, foi desenvolvido na Índia; Brahmagupta escreveu regras para ele por volta de 628 d.C. Chegou à Europa através de estudiosos árabes, juntamente com os algarismos indo-arábicos.
+ma-numbers.c0.viz.events.0.y	~300 a.C.
+ma-numbers.c0.viz.events.0.l	Marcador babilónico
+ma-numbers.c0.viz.events.1.y	628 d.C.
+ma-numbers.c0.viz.events.1.l	Regras de Brahmagupta
+ma-numbers.c0.viz.events.2.l	al-Khwarizmi
+ma-numbers.c0.viz.events.3.l	Fibonacci leva os algarismos à Europa
+ma-numbers.c1.title	Valor posicional
+ma-numbers.c1.text	Em 352, o 3 significa três centenas por causa da sua posição. A numeração romana não tinha valor posicional, o que tornava as contas penosas: experimenta CCCLII × XLVII.
+ma-numbers.c1.viz.items.0.b	3 centenas, 5 dezenas, 2 unidades
+ma-numbers.c1.viz.items.1.a	CCCLII
+ma-numbers.c1.viz.items.1.b	mesmo número, difícil de multiplicar
+ma-numbers.c1.viz.items.2.a	Zero
+ma-numbers.c1.viz.items.2.b	faz o valor posicional funcionar
+ma-numbers.c2.title	Pi
+ma-numbers.c2.text	π é a razão entre o perímetro de qualquer círculo e o seu diâmetro: cerca de 3.14159. Os seus algarismos nunca acabam nem se repetem. Arquimedes estimou-o por volta de 250 a.C.
+ma-numbers.c2.formula	π ≈ 3.14159…
+ma-numbers.c2.viz.f	C = π × d
+ma-numbers.c2.viz.items.0.s	C
+ma-numbers.c2.viz.items.0.m	perímetro
+ma-numbers.c2.viz.items.1.s	d
+ma-numbers.c2.viz.items.1.m	diâmetro
+ma-numbers.c2.viz.items.2.s	π
+ma-numbers.c3.title	Números primos
+ma-numbers.c3.text	Um número primo tem exatamente dois divisores: 1 e ele próprio. 2, 3, 5, 7, 11, 13… Euclides provou, por volta de 300 a.C., que existem infinitos.
+ma-numbers.c3.viz.l.t	Primo
+ma-numbers.c3.viz.r.t	Não primo
+ma-numbers.c4.title	Os primos protegem os teus dados
+ma-numbers.c4.text	Multiplicar dois primos enormes é fácil; fazer o caminho inverso para os descobrir é extremamente difícil. A encriptação RSA, usada na internet, baseia-se nisso.
+ma-numbers.c4.viz.l.t	Fácil
+ma-numbers.c4.viz.l.items.0	multiplicar dois primos grandes
+ma-numbers.c4.viz.r.t	Muito difícil
+ma-numbers.c4.viz.r.items.0	fatorizar o resultado
+ma-numbers.c5.title	A sucessão de Fibonacci
+ma-numbers.c5.text	Cada número é a soma dos dois anteriores: 1, 1, 2, 3, 5, 8, 13, 21… Aparece nas espirais das sementes de girassol e nas pinhas.
+ma-numbers.c6.title	Quadrados perfeitos
+ma-numbers.c6.text	Os quadrados perfeitos resultam de multiplicar um número por si próprio: 1, 4, 9, 16, 25. Somando números ímpares obténs esses valores: 1 + 3 + 5 = 9.
+ma-numbers.c6.viz.unit	n²
+ma-numbers.c6.viz.items.0.l	1²
+ma-numbers.c6.viz.items.1.l	2²
+ma-numbers.c6.viz.items.2.l	3²
+ma-numbers.c6.viz.items.3.l	4²
+ma-numbers.c6.viz.items.4.l	5²
+ma-numbers.c7.title	O infinito
+ma-numbers.c7.text	Há infinitos maiores do que outros. Georg Cantor mostrou que existem mais números reais (todas as dízimas) do que números inteiros, embora ambos sejam infinitos.
+ma-numbers.c7.viz.l.t	Numerável
+ma-numbers.c7.viz.l.items.0	números inteiros
+ma-numbers.c7.viz.l.items.1	frações
+ma-numbers.c7.viz.r.t	Não numerável
+ma-numbers.c7.viz.r.items.0	todas as dízimas
+ma-numbers.c7.viz.r.items.1	infinito "maior"
+ma-numbers.c8.title	Números negativos
+ma-numbers.c8.text	Os números negativos já eram usados na China há mais de 2,000 anos para registar dívidas. Os europeus resistiram-lhes até ao século XVII. Hoje estão em todos os termómetros e extratos bancários.
+ma-numbers.c8.viz.items.0.l	Dívida
+ma-numbers.c8.viz.items.1.l	Zero
+ma-numbers.c8.viz.items.2.l	Crédito
+ma-numbers.c9.title	Um truque com o 9
+ma-numbers.c9.text	Multiplica 9 por qualquer número de 1 a 10 e os algarismos do resultado somam 9: 9 × 7 = 63, e 6 + 3 = 9.
+ma-numbers.c9.example.0	9 × 4 = 36 → 3 + 6 = 9
+ma-numbers.c9.example.1	9 × 8 = 72 → 7 + 2 = 9
+ma-numbers.c9.example.2	9 × 6 = 54 → 5 + 4 = 9
+ma-prob.title	Probabilidades
+ma-prob.summary	Acaso, risco e probabilidades surpreendentes.
+ma-prob.q0.q	Depois de 5 caras seguidas, o próximo lançamento é…
+ma-prob.q0.o0	mais provavelmente coroa
+ma-prob.q0.o1	mais provavelmente cara
+ma-prob.q0.o2	continua a ser 50/50
+ma-prob.q0.x	As moedas não têm memória.
+ma-prob.q1.q	No problema de Monty Hall, trocar de porta ganha…
+ma-prob.q1.o0	1/3
+ma-prob.q1.o1	1/2
+ma-prob.q1.o2	2/3
+ma-prob.q1.x	A escolha do apresentador dá informação.
+ma-prob.q2.q	Quantas pessoas são precisas para que seja mais provável do que não haver um aniversário partilhado?
+ma-prob.q2.o0	183
+ma-prob.q2.o1	50
+ma-prob.q2.o2	23
+ma-prob.q2.x	O paradoxo do aniversário.
+ma-prob.c0.title	Noções básicas de probabilidade
+ma-prob.c0.text	A probabilidade é um número entre 0 (impossível) e 1 (certo). Uma moeda equilibrada sair cara é 1/2; sair um seis num dado é 1/6.
+ma-prob.c0.viz.items.0.l	Impossível
+ma-prob.c0.viz.items.1.l	Sair um seis
+ma-prob.c0.viz.items.2.l	Sair cara
+ma-prob.c0.viz.items.3.l	Certo
+ma-prob.c1.title	"E" e "ou"
+ma-prob.c1.text	Para acontecimentos independentes, multiplica no caso do "e": duas caras = 1/2 × 1/2 = 1/4. Soma no caso do "ou", se não puderem acontecer os dois: um 1 ou um 2 num dado = 2/6.
+ma-prob.c1.viz.f	P(A e B) = P(A) × P(B)
+ma-prob.c1.viz.items.0.s	P
+ma-prob.c1.viz.items.0.m	probabilidade
+ma-prob.c1.viz.items.1.s	A, B
+ma-prob.c1.viz.items.1.m	acontecimentos independentes
+ma-prob.c2.title	A falácia do jogador
+ma-prob.c2.text	Depois de cinco caras seguidas, a coroa não "tem de sair". As moedas não têm memória; o próximo lançamento continua a ser 50/50.
+ma-prob.c2.viz.items.0.w	"Saiu vermelho 5 vezes, agora tem de sair preto"
+ma-prob.c2.viz.items.0.r	Cada jogada é independente: mesmas probabilidades
+ma-prob.c3.title	O paradoxo do aniversário
+ma-prob.c3.text	Num grupo de apenas 23 pessoas, há mais de 50% de probabilidade de duas fazerem anos no mesmo dia. Com 70 pessoas, passa dos 99.9%.
+ma-prob.c3.viz.unit	% de hipótese de aniversário partilhado
+ma-prob.c3.viz.items.0.l	10 pessoas
+ma-prob.c3.viz.items.1.l	23 pessoas
+ma-prob.c3.viz.items.2.l	40 pessoas
+ma-prob.c3.viz.items.3.l	70 pessoas
+ma-prob.c4.title	Valor esperado
+ma-prob.c4.text	Multiplica cada resultado pela sua probabilidade e soma tudo. Um bilhete de lotaria que custa €2 com um prémio esperado de €1 perde, em média, €1.
+ma-prob.c4.viz.f	VE = Σ (probabilidade × valor)
+ma-prob.c4.viz.items.0.s	VE
+ma-prob.c4.viz.items.0.m	resultado médio por tentativa
+ma-prob.c4.viz.items.1.s	Σ
+ma-prob.c4.viz.items.1.m	somar todos os resultados
+ma-prob.c5.title	Lotarias
+ma-prob.c5.text	A probabilidade de ganhar o jackpot do EuroMilhões é de cerca de 1 em 140 milhões. É muito mais provável seres atingido por um raio ao longo da vida.
+ma-prob.c5.viz.items.0.v	1 em 139,838,160
+ma-prob.c5.viz.items.0.l	jackpot do EuroMilhões
+ma-prob.c5.viz.items.1.v	1 em 2
+ma-prob.c5.viz.items.1.l	lançar uma moeda
+ma-prob.c5.viz.items.2.v	1 em 6
+ma-prob.c5.viz.items.2.l	sair um seis
+ma-prob.c6.title	O problema de Monty Hall
+ma-prob.c6.text	Escolhes uma de três portas; o apresentador, que sabe onde está o prémio, abre uma porta perdedora e oferece-te a troca. Trocar ganha 2/3 das vezes. Até matemáticos se enganaram no início.
+ma-prob.c6.viz.l.t	Ficar
+ma-prob.c6.viz.l.items.0	ganha 1/3
+ma-prob.c6.viz.r.t	Trocar
+ma-prob.c6.viz.r.items.0	ganha 2/3
+ma-prob.c7.title	Taxas de base
+ma-prob.c7.text	Um teste tem 99% de fiabilidade para uma doença que afeta 1 em cada 1,000 pessoas. Se o teu resultado for positivo, a probabilidade de teres a doença é só de cerca de 9%, porque os falsos positivos em pessoas saudáveis superam os casos reais.
+ma-prob.c7.viz.unit	positivos em cada 100,000 pessoas
+ma-prob.c7.viz.items.0.l	Verdadeiros positivos
+ma-prob.c7.viz.items.1.l	Falsos positivos
+ma-prob.c8.title	Lei dos grandes números
+ma-prob.c8.text	Em poucos lançamentos, os resultados podem ser desequilibrados. Em milhares, a proporção de caras aproxima-se muito de 50%. Os casinos contam com isso.
+ma-prob.c8.viz.unit	% de caras (exemplo)
+ma-prob.c8.viz.items.0.l	10 lançamentos
+ma-prob.c8.viz.items.1.l	100 lançamentos
+ma-prob.c8.viz.items.2.l	10,000 lançamentos
+ma-prob.c9.title	O risco em perspetiva
+ma-prob.c9.text	"Duplica o risco" parece assustador, mas passar de 1 em 10,000 para 2 em 10,000 é uma mudança absoluta minúscula. Pergunta sempre: em quantos?
+ma-prob.c9.viz.l.t	Relativo
+ma-prob.c9.viz.l.items.0	"Risco 100% maior!"
+ma-prob.c9.viz.r.t	Absoluto
+ma-prob.c9.viz.r.items.0	de 1 para 2 em 10,000
+ma-geo.title	Formas e espaço
+ma-geo.summary	A geometria à nossa volta.
+ma-geo.q0.q	Qual é a hipotenusa de um triângulo com catetos 3 e 4?
+ma-geo.q0.o0	6
+ma-geo.q0.o1	5
+ma-geo.q0.o2	7
+ma-geo.q0.x	√(9 + 16) = 5.
+ma-geo.q1.q	Se duplicares o tamanho de um cubo, o volume aumenta…
+ma-geo.q1.o0	×2
+ma-geo.q1.o1	×4
+ma-geo.q1.o2	×8
+ma-geo.q1.x	2 × 2 × 2.
+ma-geo.c0.title	Teorema de Pitágoras
+ma-geo.c0.text	Num triângulo retângulo, o quadrado do lado maior é igual à soma dos quadrados dos outros dois. Os construtores usavam triângulos 3-4-5 para fazer cantos em esquadria.
+ma-geo.c0.formula	a² + b² = c²
+ma-geo.c0.viz.f	a² + b² = c²
+ma-geo.c0.viz.items.0.s	a, b
+ma-geo.c0.viz.items.0.m	catetos
+ma-geo.c0.viz.items.1.s	c
+ma-geo.c0.viz.items.1.m	hipotenusa, o lado maior
+ma-geo.c1.title	O triângulo 3-4-5
+ma-geo.c1.text	Mede 3 m ao longo de uma parede e 4 m ao longo da outra. Se a diagonal tiver exatamente 5 m, o canto é um ângulo reto perfeito.
+ma-geo.c1.example.0	3² + 4² = 9 + 16
+ma-geo.c1.example.1	= 25
+ma-geo.c1.example.2	√25 = 5
+ma-geo.c1.viz.items.0.v	3 m
+ma-geo.c1.viz.items.0.l	um lado
+ma-geo.c1.viz.items.1.v	4 m
+ma-geo.c1.viz.items.1.l	outro lado
+ma-geo.c1.viz.items.2.v	5 m
+ma-geo.c1.viz.items.2.l	diagonal
+ma-geo.c2.title	Ângulos de um triângulo
+ma-geo.c2.text	Os ângulos de qualquer triângulo somam 180°. Os de uma figura de quatro lados somam 360°.
+ma-geo.c2.viz.items.0.a	Triângulo
+ma-geo.c2.viz.items.1.a	Quadrilátero
+ma-geo.c2.viz.items.2.a	Pentágono
+ma-geo.c3.title	Área de um círculo
+ma-geo.c3.text	A área de um círculo é π vezes o quadrado do raio. Duplicar o raio torna a área quatro vezes maior: é por isso que uma pizza de 40 cm é mais do que uma pizza e meia de 30 cm.
+ma-geo.c3.viz.unit	área, cm²
+ma-geo.c3.viz.items.0.l	pizza de 30 cm
+ma-geo.c3.viz.items.1.l	pizza de 40 cm
+ma-geo.c4.title	Hexágonos na natureza
+ma-geo.c4.text	As abelhas constroem células hexagonais porque os hexágonos cobrem uma superfície sem deixar espaços, usando o mínimo de material de parede para a área delimitada.
+ma-geo.c4.viz.l.t	Círculos
+ma-geo.c4.viz.l.items.0	deixam espaços
+ma-geo.c4.viz.r.t	Hexágonos
+ma-geo.c4.viz.r.items.0	sem espaços
+ma-geo.c4.viz.r.items.1	menos parede por área
+ma-geo.c5.title	Sólidos platónicos
+ma-geo.c5.text	Só cinco sólidos têm faces regulares idênticas, com o mesmo número a encontrar-se em cada vértice: tetraedro, cubo, octaedro, dodecaedro e icosaedro. Os dados usam-nos.
+ma-geo.c5.viz.items.0	Tetraedro: 4 faces
+ma-geo.c5.viz.items.1	Cubo: 6
+ma-geo.c5.viz.items.2	Octaedro: 8
+ma-geo.c5.viz.items.3	Dodecaedro: 12
+ma-geo.c5.viz.items.4	Icosaedro: 20
+ma-geo.c6.title	Simetria
+ma-geo.c6.text	Uma forma tem simetria se um movimento, como uma reflexão ou uma rotação, a deixar com o mesmo aspeto. Os flocos de neve têm simetria de ordem seis; a tua cara é aproximadamente simétrica em espelho.
+ma-geo.c6.viz.items.0.a	Espelho
+ma-geo.c6.viz.items.0.b	borboleta
+ma-geo.c6.viz.items.1.a	Rotação
+ma-geo.c6.viz.items.1.b	floco de neve
+ma-geo.c6.viz.items.2.a	Translação
+ma-geo.c6.viz.items.2.b	chão em mosaico
+ma-geo.c7.title	Mudança de escala
+ma-geo.c7.text	Se duplicares o tamanho de um objeto, a sua área aumenta quatro vezes e o volume oito vezes. É por isso que insetos gigantes não se conseguiriam aguentar de pé.
+ma-geo.c7.viz.items.0.l	Comprimento
+ma-geo.c7.viz.items.1.l	Área
+ma-geo.c7.viz.items.2.l	Volume
+ma-geo.c8.title	Projeções cartográficas
+ma-geo.c8.text	Não é possível achatar uma esfera sem distorção. O mapa de Mercator mantém os ângulos corretos para a navegação, mas faz a Gronelândia parecer tão grande como África, que é cerca de 14 vezes maior.
+ma-geo.c8.viz.unit	milhões de km²
+ma-geo.c8.viz.items.0.l	Gronelândia
+ma-geo.c8.viz.items.1.l	África
+ma-geo.c9.title	Fractais
+ma-geo.c9.text	Os fractais repetem o seu padrão a todas as escalas: linhas de costa, fetos, brócolos e relâmpagos. Faz zoom e vês a mesma forma outra vez.
+ma-geo.c9.viz.steps.0	Ramo
+ma-geo.c9.viz.steps.1	Ramos mais pequenos
+ma-geo.c9.viz.steps.2	Ainda mais pequenos
+ma-geo.c9.viz.steps.3	A mesma forma a todas as escalas
+ma-stats.title	Estatística
+ma-stats.summary	Números que informam e que enganam.
+ma-stats.q0.q	Que média descreve melhor os salários típicos?
+ma-stats.q0.o0	Média
+ma-stats.q0.o1	Mediana
+ma-stats.q0.o2	Máximo
+ma-stats.q0.x	Alguns salários muito altos puxam a média para cima.
+ma-stats.q1.q	Numa curva em sino, que proporção aproximada dos valores fica a menos de 1 desvio-padrão?
+ma-stats.q1.o0	50%
+ma-stats.q1.o1	68%
+ma-stats.q1.o2	95%
+ma-stats.q1.x	95% ficam a menos de dois.
+ma-stats.c0.title	Média, mediana, moda
+ma-stats.c0.text	A média é o valor médio; a mediana é o valor do meio; a moda é o mais comum. Podem ser muito diferentes.
+ma-stats.c0.viz.items.0.a	Média
+ma-stats.c0.viz.items.0.b	somar, dividir pelo número
+ma-stats.c0.viz.items.1.a	Mediana
+ma-stats.c0.viz.items.1.b	valor do meio, ordenado
+ma-stats.c0.viz.items.2.a	Moda
+ma-stats.c0.viz.items.2.b	valor mais frequente

@@ -65,5 +65,6 @@ def export(pid):
     print(f"{pid}: {n} deep dives -> content/deep/{pid}.txt (round trip OK)")
 
 
-packs = sys.argv[1:] or sorted(os.path.basename(f)[:-5] for f in glob.glob(os.path.join(SITE, "packs", "*.json")) if not f.endswith("catalog.json"))
-for pid in packs: export(pid)
+if __name__ == "__main__":
+    packs = sys.argv[1:] or sorted(os.path.basename(f)[:-5] for f in glob.glob(os.path.join(SITE, "packs", "*.json")) if not f.endswith("catalog.json"))
+    for pid in packs: export(pid)

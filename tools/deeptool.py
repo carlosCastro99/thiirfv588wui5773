@@ -18,6 +18,7 @@ usage: deeptool.py check <pack> files...      (parse+validate only)
        deeptool.py attach <pack> files...     (write into repo, bump version)
 """
 import json, sys, os, re, hashlib
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 SITE = os.environ.get("SITE", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 VIZ_REQ = {
@@ -150,22 +151,8 @@ def write_site(pack):
     p = os.path.join(SITE, "packs", pid + ".json")
     open(p, "w", encoding="utf-8").write(s)
     kb = round(len(s.encode()) / 1024)
-    cp = os.path.join(SITE, "packs", "catalog.json")
-    cat = json.load(open(cp, encoding="utf-8"))
-    for c in cat:
-        if c["id"] == pid: c["version"] = pack["version"]; c["kb"] = kb
-    open(cp, "w", encoding="utf-8").write(json.dumps(cat, ensure_ascii=False))
-    ip = os.path.join(SITE, "index.html")
-    html = open(ip, encoding="utf-8").read()
-    i = html.index("const CATALOG=") + len("const CATALOG=")
-    _, end = json.JSONDecoder().raw_decode(html, i)
-    html = html[:i] + json.dumps(cat, ensure_ascii=False) + html[end:]
-    open(ip, "w", encoding="utf-8").write(html)
-    sp = os.path.join(SITE, "sw.js")
-    sw = open(sp).read()
-    h = hashlib.md5(html.encode()).hexdigest()[:8]
-    sw = re.sub(r"const CACHE='spark-[^']*'", f"const CACHE='spark-{int(h,16)%10**8}'", sw)
-    open(sp, "w").write(sw)
+    import build as _b
+    _b.build()
     return pack["version"], kb
 
 

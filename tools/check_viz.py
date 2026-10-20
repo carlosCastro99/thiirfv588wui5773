@@ -11,14 +11,23 @@ pid = sys.argv[1]
 specs = []
 if len(sys.argv) > 2:
     for f in sys.argv[2:]:
+        if f.endswith(".lessons.txt"):
+            import lessontool
+            for L in lessontool.parse_lessons(f):
+                for c in L["cards"]:
+                    if c.get("viz"): specs.append((f"{L['id']}/{c['title']}#card", c["viz"]))
+                    for i, b in enumerate(c.get("deep", [])):
+                        if b["t"] == "viz": specs.append((f"{L['id']}/{c['title']}#{i}", b["v"]))
+            continue
         for lid, cards in parse_deep(f).items():
             for t, bl in cards.items():
                 for i, b in enumerate(bl):
                     if b["t"] == "viz": specs.append((f"{lid}/{t}#{i}", b["v"]))
 else:
-    p = json.load(open(os.path.join(SITE, "packs", pid + ".json")))
+    p = json.load(open(os.path.join(SITE, "packs", pid + ".json")))   # pid may be "zh/maths"
     for l in p["lessons"]:
         for c in l["cards"]:
+            if c.get("viz"): specs.append((f"{l['id']}/{c['title']}#card", c["viz"]))
             for i, b in enumerate(c.get("deep", [])):
                 if b["t"] == "viz": specs.append((f"{l['id']}/{c['title']}#{i}", b["v"]))
 

@@ -20,7 +20,7 @@
   --pen:#1F5FD1; --pen-ink:#FFFFFF; --red:#D64533; --hl:rgba(255,206,40,.55); --ok:#138A5E; --flame:#E08A00;
   --t-elec:#B57E00; --t-tron:#12805C; --t-mech:#C2410C; --t-sci:#6D3FC4; --t-ai:#C0267A; --t-hist:#8A5A2B; --t-world:#00838F; --t-eng:#3F3FB5; --t-gen:#4D7C0F; --t-corp:#475569; --t-psy:#9333EA; --t-space:#1E3A8A; --t-body:#B91C1C; --t-nature:#15803D; --t-money:#0F766E; --t-phil:#57534E; --t-art:#BE185D; --t-math:#0369A1;
   --f-display:"Archivo","Avenir Next","Segoe UI",system-ui,sans-serif;
-  --f-hand:"Caveat","Bradley Hand","Segoe Print","Comic Sans MS",cursive;
+  --f-hand:"Caveat","Bradley Hand","Segoe Print","Comic Sans MS","PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",cursive;
   --f-ui:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --f-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   color-scheme:light;
@@ -65,6 +65,7 @@ p{margin:0}
 .pill.on{color:var(--ok);border-color:var(--ok)} .pill.off{color:var(--red);border-color:var(--red)}
 [data-t]{--topic:var(--pen)}
 [data-t="elec"]{--topic:var(--t-elec)}[data-t="tron"]{--topic:var(--t-tron)}[data-t="mech"]{--topic:var(--t-mech)}[data-t="sci"]{--topic:var(--t-sci)}[data-t="ai"]{--topic:var(--t-ai)}[data-t="hist"]{--topic:var(--t-hist)}[data-t="world"]{--topic:var(--t-world)}[data-t="eng"]{--topic:var(--t-eng)}[data-t="gen"]{--topic:var(--t-gen)}[data-t="corp"]{--topic:var(--t-corp)}[data-t="psy"]{--topic:var(--t-psy)}[data-t="space"]{--topic:var(--t-space)}[data-t="body"]{--topic:var(--t-body)}[data-t="nature"]{--topic:var(--t-nature)}[data-t="money"]{--topic:var(--t-money)}[data-t="phil"]{--topic:var(--t-phil)}[data-t="art"]{--topic:var(--t-art)}[data-t="math"]{--topic:var(--t-math)}
+[data-t^="c-"]{--topic:#B4530F}@media (prefers-color-scheme:dark){[data-t^="c-"]{--topic:#F59E0B}}
 .tlabel{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--topic)}
 .tdot{width:8px;height:8px;border-radius:2px;background:var(--topic);flex:none;transform:rotate(45deg)}
 .bar{display:block;height:6px;border-radius:9px;background:var(--line);overflow:hidden}
@@ -294,6 +295,27 @@ body.feedmode{overflow:hidden}
 @keyframes hpop{0%{opacity:0;transform:scale(.4)}20%{opacity:.95;transform:scale(1.1)}60%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.3)}}
 .fsentinel{height:2px}
 @media (prefers-reduced-motion: reduce){.fheart.go{animation:none}}
+/* paywall, locks */
+.paywall{position:fixed;inset:0;z-index:70;background:color-mix(in srgb,var(--ink) 45%,transparent);display:flex;align-items:flex-end;justify-content:center}
+.pwbox{position:relative;background:var(--paper);width:100%;max-width:520px;max-height:92vh;overflow:auto;border-radius:22px 22px 0 0;padding:20px 16px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px}
+@media (min-width:600px){.paywall{align-items:center}.pwbox{border-radius:22px}}
+.pwclose{position:absolute;top:12px;right:12px;z-index:1}
+.pwbox h2{font-size:24px}
+.pwstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border:1px solid var(--line);border-radius:16px;padding:18px 8px;text-align:center;margin-top:28px}
+.pwstats span{display:flex;flex-direction:column;font-family:var(--f-hand);font-weight:600;font-size:18px;color:var(--muted)}
+.pwstats b{font-size:38px;line-height:1.1;color:var(--pen)}
+.pwstats span:nth-child(2) b{color:var(--red)}
+.plans{display:flex;flex-direction:column;gap:8px}
+.plan{display:flex;flex-direction:column;gap:2px;text-align:left;background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--ink)}
+.plan.on{border-color:var(--pen);background:color-mix(in srgb,var(--pen) 8%,var(--paper))}
+.plan .pt{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.pwbuy{width:100%;padding:14px 18px;font-size:16px}
+.plusbanner{display:flex;flex-direction:column;gap:4px;text-align:left;width:100%;border:1.5px solid var(--pen);border-radius:16px;padding:14px;background:color-mix(in srgb,var(--pen) 8%,var(--paper));color:var(--ink)}
+.plusbanner b{color:var(--pen);font-size:16px}
+.lesson.locked{opacity:.78}.lesson.locked .num{border-style:dashed;color:var(--muted)}
+.lockmark{display:inline-flex;margin-left:6px;color:var(--muted)}
+.flock .lockblur{filter:blur(5px);opacity:.55;pointer-events:none;max-height:46vh;overflow:hidden}
+.flock .btn{align-self:flex-start}
 /* sheet & toast */
 .toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:650;font-size:14px;z-index:80;max-width:calc(100% - 32px);text-align:center}
 @media (prefers-reduced-motion: reduce){.card{transition:none}}
@@ -306,24 +328,202 @@ body.feedmode{overflow:hidden}
 <div class="tabs"><nav id="tabs" aria-label="Main"></nav></div>
 <div id="reader" class="reader" hidden></div>
 <div id="deep" class="deep" hidden></div>
+<div id="paywall" class="paywall" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 <input type="file" id="filein" accept=".json,application/json" hidden>
 
 <script>
 "use strict";
-const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 12, "lessons": 20, "cards": 200, "quiz": 62, "kb": 396}, {"id": "genai", "topic": "gen", "title": "Generative AI", "blurb": "How models that write, draw and talk work, and how to use them well.", "version": 8, "lessons": 20, "cards": 200, "quiz": 60, "kb": 354}, {"id": "corpai", "topic": "corp", "title": "Corporate AI", "blurb": "Bringing AI into a company: use cases, architecture, governance and value.", "version": 9, "lessons": 20, "cards": 200, "quiz": 60, "kb": 338}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 10, "lessons": 20, "cards": 200, "quiz": 69, "kb": 349}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 7, "lessons": 20, "cards": 200, "quiz": 65, "kb": 323}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 6, "lessons": 20, "cards": 200, "quiz": 64, "kb": 298}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 6, "lessons": 20, "cards": 200, "quiz": 64, "kb": 310}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 467}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 464}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 462}, {"id": "space", "topic": "space", "title": "Space", "blurb": "Planets, stars, galaxies and the search for life.", "version": 15, "lessons": 20, "cards": 200, "quiz": 46, "kb": 387}, {"id": "maths", "topic": "math", "title": "Maths & Logic", "blurb": "Numbers, chance, shapes, statistics and clear thinking.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 433}, {"id": "body", "topic": "body", "title": "Human Body", "blurb": "How your heart, brain, gut, immune system and senses work.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 422}, {"id": "nature", "topic": "nature", "title": "Nature & Animals", "blurb": "Evolution, amazing animals, plants, ecosystems and climate.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 446}, {"id": "psychology", "topic": "psy", "title": "Psychology", "blurb": "Biases, memory, habits, social influence and emotions.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 446}, {"id": "philosophy", "topic": "phil", "title": "Philosophy", "blurb": "Big questions, ethics, the mind, ways to live and good arguments.", "version": 4, "lessons": 20, "cards": 200, "quiz": 44, "kb": 474}, {"id": "money", "topic": "money", "title": "Money", "blurb": "How money works, budgeting, compound interest and investing basics.", "version": 11, "lessons": 20, "cards": 200, "quiz": 44, "kb": 323}, {"id": "art", "topic": "art", "title": "Art & Culture", "blurb": "Painting, music, literature, cinema and architecture.", "version": 4, "lessons": 20, "cards": 200, "quiz": 44, "kb": 456}];
+const CATALOG=[{"id": "ai", "topic": "ai", "title": "Artificial Intelligence", "blurb": "How machines learn and what's really inside a chatbot, explained without maths homework.", "version": 12, "lessons": 20, "cards": 200, "quiz": 62, "kb": 396, "base": "en", "langs": ["en"], "vers": {"en": 12}}, {"id": "genai", "topic": "gen", "title": "Generative AI", "blurb": "How models that write, draw and talk work, and how to use them well.", "version": 8, "lessons": 20, "cards": 200, "quiz": 60, "kb": 354, "base": "en", "langs": ["en"], "vers": {"en": 8}}, {"id": "corpai", "topic": "corp", "title": "Corporate AI", "blurb": "Bringing AI into a company: use cases, architecture, governance and value.", "version": 9, "lessons": 20, "cards": 200, "quiz": 60, "kb": 338, "base": "en", "langs": ["en"], "vers": {"en": 9}}, {"id": "english", "topic": "eng", "title": "English", "blurb": "Gramática e vocabulário em inglês, explicados em português.", "version": 10, "lessons": 20, "cards": 200, "quiz": 69, "kb": 349, "base": "pt-PT", "only": ["pt-PT", "pt-BR"], "langs": ["pt-PT"], "vers": {"pt-PT": 10}}, {"id": "electricity", "topic": "elec", "title": "Electricity", "blurb": "From Ohm's law to the fuse board in your hallway.", "version": 7, "lessons": 20, "cards": 200, "quiz": 65, "kb": 323, "base": "en", "langs": ["en"], "vers": {"en": 7}}, {"id": "electronics", "topic": "tron", "title": "Electronics", "blurb": "Components and signals for tinkering with microcontrollers.", "version": 6, "lessons": 20, "cards": 200, "quiz": 64, "kb": 298, "base": "en", "langs": ["en"], "vers": {"en": 6}}, {"id": "mechanics", "topic": "mech", "title": "Engineering", "blurb": "Forces, machines and the shapes that keep structures standing.", "version": 6, "lessons": 20, "cards": 200, "quiz": 64, "kb": 310, "base": "en", "langs": ["en"], "vers": {"en": 6}}, {"id": "physics", "topic": "sci", "title": "Physics", "blurb": "Energy, heat and waves in everyday life.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 467, "base": "en", "langs": ["en"], "vers": {"en": 3}}, {"id": "history", "topic": "hist", "title": "History", "blurb": "The turning points of humanity, and Portugal's leap into the open ocean.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 464, "base": "en", "langs": ["en"], "vers": {"en": 3}}, {"id": "world", "topic": "world", "title": "World", "blurb": "The planet and its people: seasons, time zones, languages and cities.", "version": 3, "lessons": 20, "cards": 200, "quiz": 64, "kb": 462, "base": "en", "langs": ["en"], "vers": {"en": 3}}, {"id": "space", "topic": "space", "title": "Space", "blurb": "Planets, stars, galaxies and the search for life.", "version": 15, "lessons": 20, "cards": 200, "quiz": 46, "kb": 387, "base": "en", "langs": ["en"], "vers": {"en": 15}}, {"id": "maths", "topic": "math", "title": "Maths & Logic", "blurb": "Numbers, chance, shapes, statistics and clear thinking.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 433, "base": "en", "langs": ["en"], "vers": {"en": 4}}, {"id": "body", "topic": "body", "title": "Human Body", "blurb": "How your heart, brain, gut, immune system and senses work.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 422, "base": "en", "langs": ["en"], "vers": {"en": 4}}, {"id": "nature", "topic": "nature", "title": "Nature & Animals", "blurb": "Evolution, amazing animals, plants, ecosystems and climate.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 446, "base": "en", "langs": ["en"], "vers": {"en": 4}}, {"id": "psychology", "topic": "psy", "title": "Psychology", "blurb": "Biases, memory, habits, social influence and emotions.", "version": 4, "lessons": 20, "cards": 200, "quiz": 45, "kb": 446, "base": "en", "langs": ["en"], "vers": {"en": 4}}, {"id": "philosophy", "topic": "phil", "title": "Philosophy", "blurb": "Big questions, ethics, the mind, ways to live and good arguments.", "version": 4, "lessons": 20, "cards": 200, "quiz": 44, "kb": 474, "base": "en", "langs": ["en"], "vers": {"en": 4}}, {"id": "money", "topic": "money", "title": "Money", "blurb": "How money works, budgeting, compound interest and investing basics.", "version": 11, "lessons": 20, "cards": 200, "quiz": 44, "kb": 323, "base": "en", "langs": ["en"], "vers": {"en": 11}}, {"id": "art", "topic": "art", "title": "Art & Culture", "blurb": "Painting, music, literature, cinema and architecture.", "version": 4, "lessons": 20, "cards": 200, "quiz": 44, "kb": 456, "base": "en", "langs": ["en"], "vers": {"en": 4}}];
 const BUNDLE={};
-const TOPICS={ai:"AI",gen:"Generative AI",corp:"Corporate AI",eng:"English",elec:"Electricity",tron:"Electronics",mech:"Engineering",sci:"Physics",space:"Space",math:"Maths & Logic",body:"Human Body",nature:"Nature",psy:"Psychology",phil:"Philosophy",money:"Money",hist:"History",world:"World",art:"Art & Culture"};
-const TYPES={concept:"Concept",formula:"Formula",fact:"Fact",example:"Worked example",widget:"Try it",quiz:"Quiz"};
+/* ---------- languages ---------- */
+const LANGS={
+  "en":{name:"English",locale:"en-GB"},
+  "pt-PT":{name:"Português (Portugal)",locale:"pt-PT"},
+  "pt-BR":{name:"Português (Brasil)",locale:"pt-BR"},
+  "es":{name:"Español",locale:"es-ES"},
+  "fr":{name:"Français",locale:"fr-FR"},
+  "zh":{name:"简体中文",locale:"zh-CN"}
+};
+const COUNTRIES={PT:"c-pt",BR:"c-br",ES:"c-es",FR:"c-fr",GB:"c-gb",CN:"c-cn"};
+const STR={};
+STR.en={
+  topics:{ai:"AI",gen:"Generative AI",corp:"Corporate AI",eng:"English",elec:"Electricity",tron:"Electronics",mech:"Engineering",sci:"Physics",space:"Space",math:"Maths & Logic",body:"Human Body",nature:"Nature",psy:"Psychology",phil:"Philosophy",money:"Money",hist:"History",world:"World",art:"Art & Culture","c-pt":"Portugal","c-br":"Brazil","c-es":"Spain","c-fr":"France","c-gb":"United Kingdom","c-cn":"China"},
+  types:{concept:"Concept",formula:"Formula",fact:"Fact",example:"Worked example",widget:"Try it",quiz:"Quiz",card:"Card"},
+  deep:{key:"Key idea",myth:"Myth",real:"Reality",fact:"Did you know?",ex:"Worked example",short:"In short",depth:"In depth",title:"Deep dive"},
+  storageFull:"Couldn't save progress: storage is full or blocked.",favAdded:"Added to favourites",favRemoved:"Removed from favourites",noSpeech:"Listening isn't available on this device",
+  forYou:"For you",favourites:"Favourites",quickQ:"Quick question",fromLesson:"From “{t}”",readMore:"Read more",lessonLabel:"Lesson: {t}",deeper:"Deeper",goDeeper:"Go deeper",save:"Save",saved:"Saved",listen:"Listen",lesson:"Lesson",share:"Share",openLesson:"Open the lesson",addFav:"Add to favourites",removeFav:"Remove from favourites",
+  seenAll:"You've seen everything here",seenAllSub:"Pick another category or start again.",shuffle:"Shuffle again",noFavYet:"No favourites yet",nothingYet:"Nothing to show yet",tapStar:"Tap the star on any card to save it here.",downloadToFill:"Download topics in Learn to fill your feed.",goLearn:"Go to Learn",correct:"Correct",notQuite:"Not quite",
+  savedStar:"★ Saved",saveCard:"☆ Save card",back:"Back",close:"Close",
+  tabToday:"Today",tabFeed:"Feed",tabLearn:"Learn",tabFav:"Favourites",tabYou:"You",online:"Online",offline:"Offline",
+  pickTitle:"Pick topics to download",pickSub:"Each topic is a pack of illustrated lessons and quizzes, saved on this device so it works without a connection.",downloadN:{one:"Download {n} topic",other:"Download {n} topics"},nLessons:{one:"{n} lesson",other:"{n} lessons"},
+  morning:"Good morning",afternoon:"Good afternoon",evening:"Good evening",continue:"Continue",upNext:"Up next",lessonN:"Lesson {n}",cardsOf:"{a}/{b} cards",allDone:"You've finished every downloaded lesson. Download another topic in Learn, or review your saved cards.",cardsToday:"CARDS TODAY",streakDays:"{n}-day streak",goalDone:"Daily goal done. Anything more is a bonus.",moreToGoal:"{n} more to reach today's goal",toReview:"Questions to review",toReviewSub:"You missed these before. A quick retry makes them stick.",seeAll:"See all {n}",sketchOfDay:"Sketch of the day",yourTopics:"Your topics",
+  allTopics:"‹ All topics",keepCopy:"Keep a copy",keepCopySub:"Save this topic as a single page with every sketch and answer, to read or print anywhere.",saveAsFile:"Save as file",removeDevice:"Remove from device",keep:"Keep",nCards:{one:"{n} card",other:"{n} cards"},noMatch:"Nothing matches “{q}” in your downloaded topics.",allDownloaded:"All topics downloaded",downloadAll:"Download all ({n})",importTopic:"Import topic file",onDevice:"On device",facts:"{l} LESSONS · {c} CARDS · {q} QUESTIONS · {kb} KB",open:"Open",update:"Update",downloading:"Downloading…",download:"Download",searchPh:"Search: ohm, gears, PWM…",searchCards:"Search cards",usage:"Using {kb} KB on this device",usageProt:" · protected from automatic clearing",notTranslated:"Not translated yet: shown in English",countryTitle:"Your country",countrySub:"History, nature and culture of where you are.",otherCountries:"Other countries",topicsTitle:"Topics",
+  favSub:"Tap the star on any card or lesson to keep it here.",noFavLong:"No favourites yet. Open a lesson and tap the star under a card, or the star next to a lesson.",searchFav:"Search your favourites",all:"All",noFavMatch:"Nothing in your favourites matches “{q}”.",lessons:"Lessons",cards:"Cards",readAll:"Read all {n}",favLessonAdd:"Add lesson to favourites",favLessonRemove:"Remove lesson from favourites",
+  installNote:"Install Spark so it opens like an app and works offline.",install:"Install",iosInstall:"To install: in Safari tap Share, then <b>Add to Home Screen</b>. Installed, it works offline and keeps your history.",cardsLearned:"Cards learned",lessonsFinished:"Lessons finished",dayStreakBest:"Day streak · best {n}",quizAcc:"Quiz accuracy",last14:"Last 14 days",goalPerDay:"goal {n}/day",twoWeeksAgo:"2 weeks ago",todayLow:"today",dailyGoal:"Daily goal",history:"History",showAll:"Show all",histEmpty:"Cards you read appear here, newest first.",backup:"Backup",backupSub:"Progress, history and saved cards live only on this device. Save a backup file to keep them safe or move them to another device.",saveBackup:"Save backup file",restoreFile:"Restore from file",today:"Today",language:"Language",country:"Country",countryHelp:"Used to suggest your country's pack. Nothing leaves this device.",countryNone:"Other / none",
+  dlResult:"{ok} downloaded, {fail} failed. Check the connection and try again.",topicsReady:{one:"{n} topic ready offline",other:"{n} topics ready offline"},lessonTitle:"Lesson {n} · {t}",savedList:"Saved",review:"Review",topicRemoved:"Topic removed. Your progress is kept.",backupRestored:"Backup restored",imported:{one:"{n} topic imported",other:"{n} topics imported"},badFile:"That file isn't a Spark topic or backup.",savedFile:"Saved {name}",updated:{one:"{n} topic updated",other:"{n} topics updated"},langChanged:"Switching to {l}…",
+  perfect:"Perfect score",nicely:"Nicely done",keepGoing:"Keep going",missedBack:"Missed questions come back in Today → Review.",allCorrect:"Everything answered correctly.",allRead:"All read",todayStreak:"{n} cards today · {s}-day streak",inFavs:"★ In favourites",addLessonFav:"☆ Add lesson to favourites",nextLesson:"Next lesson",done:"Done",previous:"Previous",listenEn:"Listen in English",skip:"Skip",finish:"Finish",next:"Next",quiz:"Quiz",
+  locked:"Locked",unlock:"Unlock",free:"Free",lockedTeaser:"Part of the full {topic} pack",lockedLessons:"Lessons 2–{n} are in the full pack",paywallTitle:"Unlock everything",paywallSub:"{n} topics, {c} illustrated cards with deep dives and quizzes. New lessons every month.",planAnnual:"Yearly",planAnnualNote:"7 days free, then {price} a year",perMonth:"{price}/month",planMonthly:"Monthly",planMonthlyNote:"{price} a month",thisPack:"Only {pack}",thisPackNote:"{price} once, yours for good",bestValue:"Best value",startTrial:"Start my free week",buy:"Continue",restore:"Restore purchases",terms:"Terms",privacy:"Privacy",family:"Shared with up to 6 family members.",cancelAnytime:"Cancel anytime in your Apple account settings.",plusActive:"Spark Plus is active",plusSub:"Every topic and every new pack is unlocked.",previewNote:"Preview: purchases are simulated in the web version.",purchased:"Unlocked. Enjoy!",restored:"Purchases restored",nothingRestore:"No purchases to restore",purchaseFailed:"The purchase didn't go through.",subscription:"Subscription",getPlus:"Get Spark Plus",
+  w:{safe:"Safe for a 3.3 V input pin",tooHigh:"Too high for an ESP32 pin (max 3.3 V)",mass:"Mass",distance:"Distance",balanced:"balanced",balancedX:"balanced!",rightWins:"right side wins",leftWins:"left side wins",left:"left",right:"right",sunnyS:"sunny",weekendS:"weekend",rainS:"rain",sunny:"Sunny",weekend:"Weekend",raining:"Raining",bias:"bias",go:"go?",beach:"beach!",stay:"stay",fires:"fires: go to the beach",quiet:"stays quiet",sentence:"The cat sat on the …",gen:"The cat sat on the <b>{w}</b>.",words:["mat","sofa","floor","bed","roof"],temp:"Temp.",generate:"Generate",cautious:"cautious: nearly always “{w}”",adventurous:"adventurous: anything goes",balancedT:"balanced",base:"Lisbon",clockNote:"Winter offsets; daylight saving shifts some of these by an hour in summer.",day:"day",night:"night",cities:["Lisbon","New York","São Paulo","Luanda","Maputo","Moscow","Dubai","Mumbai","Shanghai","Tokyo"],pitch:"Pitch",hearing:"Humans hear roughly 20 Hz to 20 kHz.",cmp:["longer than a bus","taller than a person","about the length of an arm","about the size of a hand","smaller than a coin"]},
+  flip:{means:"means",word:"English",tap:"Tap to see the meaning",listen:"Listen",prev:"Previous word",next:"Next word"}
+};
+STR["pt-PT"]={
+  topics:{ai:"IA",gen:"IA Generativa",corp:"IA nas Empresas",eng:"Inglês",elec:"Eletricidade",tron:"Eletrónica",mech:"Engenharia",sci:"Física",space:"Espaço",math:"Matemática e Lógica",body:"Corpo Humano",nature:"Natureza",psy:"Psicologia",phil:"Filosofia",money:"Dinheiro",hist:"História",world:"Mundo",art:"Arte e Cultura","c-pt":"Portugal","c-br":"Brasil","c-es":"Espanha","c-fr":"França","c-gb":"Reino Unido","c-cn":"China"},
+  types:{concept:"Conceito",formula:"Fórmula",fact:"Facto",example:"Exemplo resolvido",widget:"Experimenta",quiz:"Quiz",card:"Cartão"},
+  deep:{key:"Ideia-chave",myth:"Mito",real:"Realidade",fact:"Sabias que?",ex:"Exemplo resolvido",short:"Em resumo",depth:"Em detalhe",title:"Aprofundar"},
+  storageFull:"Não foi possível guardar o progresso: o armazenamento está cheio ou bloqueado.",favAdded:"Adicionado aos favoritos",favRemoved:"Removido dos favoritos",noSpeech:"Ouvir não está disponível neste dispositivo",
+  forYou:"Para ti",favourites:"Favoritos",quickQ:"Pergunta rápida",fromLesson:"De “{t}”",readMore:"Ler mais",lessonLabel:"Lição: {t}",deeper:"Aprofundar",goDeeper:"Aprofundar",save:"Guardar",saved:"Guardado",listen:"Ouvir",lesson:"Lição",share:"Partilhar",openLesson:"Abrir a lição",addFav:"Adicionar aos favoritos",removeFav:"Remover dos favoritos",
+  seenAll:"Já viste tudo aqui",seenAllSub:"Escolhe outra categoria ou recomeça.",shuffle:"Baralhar de novo",noFavYet:"Ainda sem favoritos",nothingYet:"Ainda não há nada para mostrar",tapStar:"Toca na estrela de qualquer cartão para o guardar aqui.",downloadToFill:"Descarrega temas em Aprender para encher o teu feed.",goLearn:"Ir para Aprender",correct:"Certo",notQuite:"Não exatamente",
+  savedStar:"★ Guardado",saveCard:"☆ Guardar cartão",back:"Voltar",close:"Fechar",
+  tabToday:"Hoje",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Eu",online:"Online",offline:"Offline",
+  pickTitle:"Escolhe os temas a descarregar",pickSub:"Cada tema é um pack de lições ilustradas e quizzes, guardado neste dispositivo para funcionar sem ligação.",downloadN:{one:"Descarregar {n} tema",other:"Descarregar {n} temas"},nLessons:{one:"{n} lição",other:"{n} lições"},
+  morning:"Bom dia",afternoon:"Boa tarde",evening:"Boa noite",continue:"Continuar",upNext:"A seguir",lessonN:"Lição {n}",cardsOf:"{a}/{b} cartões",allDone:"Terminaste todas as lições descarregadas. Descarrega outro tema em Aprender ou revê os cartões guardados.",cardsToday:"CARTÕES HOJE",streakDays:"{n} dias seguidos",goalDone:"Objetivo diário cumprido. O resto é bónus.",moreToGoal:"Faltam {n} para o objetivo de hoje",toReview:"Perguntas para rever",toReviewSub:"Erraste estas antes. Tentar outra vez ajuda a fixar.",seeAll:"Ver todos ({n})",sketchOfDay:"Esboço do dia",yourTopics:"Os teus temas",
+  allTopics:"‹ Todos os temas",keepCopy:"Guardar uma cópia",keepCopySub:"Guarda este tema numa só página, com todos os esboços e respostas, para ler ou imprimir onde quiseres.",saveAsFile:"Guardar ficheiro",removeDevice:"Remover do dispositivo",keep:"Manter",nCards:{one:"{n} cartão",other:"{n} cartões"},noMatch:"Nada corresponde a “{q}” nos temas descarregados.",allDownloaded:"Todos os temas descarregados",downloadAll:"Descarregar todos ({n})",importTopic:"Importar ficheiro de tema",onDevice:"No dispositivo",facts:"{l} LIÇÕES · {c} CARTÕES · {q} PERGUNTAS · {kb} KB",open:"Abrir",update:"Atualizar",downloading:"A descarregar…",download:"Descarregar",searchPh:"Pesquisar: ohm, engrenagens, PWM…",searchCards:"Pesquisar cartões",usage:"A usar {kb} KB neste dispositivo",usageProt:" · protegido contra limpeza automática",notTranslated:"Ainda sem tradução: mostrado em inglês",countryTitle:"O teu país",countrySub:"História, natureza e cultura de onde estás.",otherCountries:"Outros países",topicsTitle:"Temas",
+  favSub:"Toca na estrela de qualquer cartão ou lição para o guardares aqui.",noFavLong:"Ainda sem favoritos. Abre uma lição e toca na estrela por baixo de um cartão, ou na estrela ao lado de uma lição.",searchFav:"Pesquisar nos favoritos",all:"Todos",noFavMatch:"Nada nos favoritos corresponde a “{q}”.",lessons:"Lições",cards:"Cartões",readAll:"Ler os {n}",favLessonAdd:"Adicionar lição aos favoritos",favLessonRemove:"Remover lição dos favoritos",
+  installNote:"Instala o Spark para abrir como uma app e funcionar offline.",install:"Instalar",iosInstall:"Para instalar: no Safari toca em Partilhar e depois em <b>Adicionar ao ecrã principal</b>. Instalado, funciona offline e guarda o teu histórico.",cardsLearned:"Cartões aprendidos",lessonsFinished:"Lições terminadas",dayStreakBest:"Dias seguidos · máximo {n}",quizAcc:"Acerto nos quizzes",last14:"Últimos 14 dias",goalPerDay:"objetivo {n}/dia",twoWeeksAgo:"há 2 semanas",todayLow:"hoje",dailyGoal:"Objetivo diário",history:"Histórico",showAll:"Mostrar tudo",histEmpty:"Os cartões que leres aparecem aqui, do mais recente para o mais antigo.",backup:"Cópia de segurança",backupSub:"O progresso, o histórico e os cartões guardados ficam só neste dispositivo. Guarda uma cópia para não os perderes ou para os passares para outro dispositivo.",saveBackup:"Guardar cópia",restoreFile:"Restaurar de ficheiro",today:"Hoje",language:"Língua",country:"País",countryHelp:"Serve para sugerir o pack do teu país. Nada sai deste dispositivo.",countryNone:"Outro / nenhum",
+  dlResult:"{ok} descarregados, {fail} falharam. Verifica a ligação e tenta outra vez.",topicsReady:{one:"{n} tema pronto offline",other:"{n} temas prontos offline"},lessonTitle:"Lição {n} · {t}",savedList:"Guardados",review:"Revisão",topicRemoved:"Tema removido. O teu progresso fica guardado.",backupRestored:"Cópia restaurada",imported:{one:"{n} tema importado",other:"{n} temas importados"},badFile:"Esse ficheiro não é um tema nem uma cópia do Spark.",savedFile:"Guardado: {name}",updated:{one:"{n} tema atualizado",other:"{n} temas atualizados"},langChanged:"A mudar para {l}…",
+  perfect:"Pontuação perfeita",nicely:"Muito bem",keepGoing:"Continua",missedBack:"As perguntas erradas voltam em Hoje → Revisão.",allCorrect:"Acertaste em tudo.",allRead:"Tudo lido",todayStreak:"{n} cartões hoje · {s} dias seguidos",inFavs:"★ Nos favoritos",addLessonFav:"☆ Adicionar lição aos favoritos",nextLesson:"Próxima lição",done:"Concluir",previous:"Anterior",listenEn:"Ouvir em inglês",skip:"Saltar",finish:"Terminar",next:"Seguinte",quiz:"Quiz",
+  locked:"Bloqueado",unlock:"Desbloquear",free:"Grátis",lockedTeaser:"Faz parte do pack completo de {topic}",lockedLessons:"As lições 2–{n} estão no pack completo",paywallTitle:"Desbloqueia tudo",paywallSub:"{n} temas, {c} cartões ilustrados com aprofundamentos e quizzes. Lições novas todos os meses.",planAnnual:"Anual",planAnnualNote:"7 dias grátis, depois {price} por ano",perMonth:"{price}/mês",planMonthly:"Mensal",planMonthlyNote:"{price} por mês",thisPack:"Só {pack}",thisPackNote:"{price} uma vez, teu para sempre",bestValue:"Mais vantajoso",startTrial:"Começar a semana grátis",buy:"Continuar",restore:"Restaurar compras",terms:"Termos",privacy:"Privacidade",family:"Partilhado com até 6 pessoas da família.",cancelAnytime:"Cancela quando quiseres nas definições da tua conta Apple.",plusActive:"O Spark Plus está ativo",plusSub:"Todos os temas e todos os packs novos estão desbloqueados.",previewNote:"Pré-visualização: na versão web as compras são simuladas.",purchased:"Desbloqueado. Bom proveito!",restored:"Compras restauradas",nothingRestore:"Não há compras para restaurar",purchaseFailed:"A compra não foi concluída.",subscription:"Subscrição",getPlus:"Obter o Spark Plus",
+  w:{safe:"Seguro para um pino de entrada de 3,3 V",tooHigh:"Demasiado alto para um pino do ESP32 (máx. 3,3 V)",mass:"Massa",distance:"Distância",balanced:"equilibrado",balancedX:"equilibrado!",rightWins:"ganha a direita",leftWins:"ganha a esquerda",left:"esquerda",right:"direita",sunnyS:"sol",weekendS:"fim de semana",rainS:"chuva",sunny:"Sol",weekend:"Fim de semana",raining:"Chuva",bias:"viés",go:"ir?",beach:"praia!",stay:"ficar",fires:"dispara: vamos à praia",quiet:"fica em silêncio",sentence:"O gato sentou-se no …",gen:"O gato sentou-se no <b>{w}</b>.",words:["tapete","sofá","chão","sofá-cama","telhado"],temp:"Temp.",generate:"Gerar",cautious:"cauteloso: quase sempre “{w}”",adventurous:"aventureiro: vale tudo",balancedT:"equilibrado",base:"Lisboa",clockNote:"Fusos de inverno; a hora de verão muda alguns destes em uma hora.",day:"dia",night:"noite",cities:["Lisboa","Nova Iorque","São Paulo","Luanda","Maputo","Moscovo","Dubai","Bombaim","Xangai","Tóquio"],pitch:"Tom",hearing:"Os humanos ouvem mais ou menos de 20 Hz a 20 kHz.",cmp:["mais comprido do que um autocarro","mais alto do que uma pessoa","mais ou menos do comprimento de um braço","mais ou menos do tamanho de uma mão","mais pequeno do que uma moeda"]},
+  flip:{means:"significa",word:"Inglês",tap:"Toca para ver o significado",listen:"Ouvir",prev:"Palavra anterior",next:"Palavra seguinte"}
+};
+STR["pt-BR"]={
+  topics:{ai:"IA",gen:"IA Generativa",corp:"IA nas Empresas",eng:"Inglês",elec:"Eletricidade",tron:"Eletrônica",mech:"Engenharia",sci:"Física",space:"Espaço",math:"Matemática e Lógica",body:"Corpo Humano",nature:"Natureza",psy:"Psicologia",phil:"Filosofia",money:"Dinheiro",hist:"História",world:"Mundo",art:"Arte e Cultura","c-pt":"Portugal","c-br":"Brasil","c-es":"Espanha","c-fr":"França","c-gb":"Reino Unido","c-cn":"China"},
+  types:{concept:"Conceito",formula:"Fórmula",fact:"Fato",example:"Exemplo resolvido",widget:"Experimente",quiz:"Quiz",card:"Cartão"},
+  deep:{key:"Ideia-chave",myth:"Mito",real:"Realidade",fact:"Você sabia?",ex:"Exemplo resolvido",short:"Em resumo",depth:"Em detalhe",title:"Aprofundar"},
+  storageFull:"Não foi possível salvar o progresso: o armazenamento está cheio ou bloqueado.",favAdded:"Adicionado aos favoritos",favRemoved:"Removido dos favoritos",noSpeech:"Ouvir não está disponível neste aparelho",
+  forYou:"Para você",favourites:"Favoritos",quickQ:"Pergunta rápida",fromLesson:"De “{t}”",readMore:"Ler mais",lessonLabel:"Lição: {t}",deeper:"Aprofundar",goDeeper:"Aprofundar",save:"Salvar",saved:"Salvo",listen:"Ouvir",lesson:"Lição",share:"Compartilhar",openLesson:"Abrir a lição",addFav:"Adicionar aos favoritos",removeFav:"Remover dos favoritos",
+  seenAll:"Você já viu tudo por aqui",seenAllSub:"Escolha outra categoria ou comece de novo.",shuffle:"Embaralhar de novo",noFavYet:"Nenhum favorito ainda",nothingYet:"Nada para mostrar ainda",tapStar:"Toque na estrela de qualquer cartão para salvá-lo aqui.",downloadToFill:"Baixe temas em Aprender para encher seu feed.",goLearn:"Ir para Aprender",correct:"Certo",notQuite:"Não exatamente",
+  savedStar:"★ Salvo",saveCard:"☆ Salvar cartão",back:"Voltar",close:"Fechar",
+  tabToday:"Hoje",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Você",online:"Online",offline:"Offline",
+  pickTitle:"Escolha os temas para baixar",pickSub:"Cada tema é um pacote de lições ilustradas e quizzes, salvo neste aparelho para funcionar sem conexão.",downloadN:{one:"Baixar {n} tema",other:"Baixar {n} temas"},nLessons:{one:"{n} lição",other:"{n} lições"},
+  morning:"Bom dia",afternoon:"Boa tarde",evening:"Boa noite",continue:"Continuar",upNext:"A seguir",lessonN:"Lição {n}",cardsOf:"{a}/{b} cartões",allDone:"Você terminou todas as lições baixadas. Baixe outro tema em Aprender ou revise os cartões salvos.",cardsToday:"CARTÕES HOJE",streakDays:"{n} dias seguidos",goalDone:"Meta diária cumprida. O resto é bônus.",moreToGoal:"Faltam {n} para a meta de hoje",toReview:"Perguntas para revisar",toReviewSub:"Você errou estas antes. Tentar de novo ajuda a fixar.",seeAll:"Ver todos ({n})",sketchOfDay:"Desenho do dia",yourTopics:"Seus temas",
+  allTopics:"‹ Todos os temas",keepCopy:"Guardar uma cópia",keepCopySub:"Salve este tema em uma única página, com todos os desenhos e respostas, para ler ou imprimir onde quiser.",saveAsFile:"Salvar arquivo",removeDevice:"Remover do aparelho",keep:"Manter",nCards:{one:"{n} cartão",other:"{n} cartões"},noMatch:"Nada corresponde a “{q}” nos temas baixados.",allDownloaded:"Todos os temas baixados",downloadAll:"Baixar todos ({n})",importTopic:"Importar arquivo de tema",onDevice:"No aparelho",facts:"{l} LIÇÕES · {c} CARTÕES · {q} PERGUNTAS · {kb} KB",open:"Abrir",update:"Atualizar",downloading:"Baixando…",download:"Baixar",searchPh:"Buscar: ohm, engrenagens, PWM…",searchCards:"Buscar cartões",usage:"Usando {kb} KB neste aparelho",usageProt:" · protegido contra limpeza automática",notTranslated:"Ainda sem tradução: exibido em inglês",countryTitle:"Seu país",countrySub:"História, natureza e cultura de onde você está.",otherCountries:"Outros países",topicsTitle:"Temas",
+  favSub:"Toque na estrela de qualquer cartão ou lição para guardá-lo aqui.",noFavLong:"Nenhum favorito ainda. Abra uma lição e toque na estrela embaixo de um cartão, ou na estrela ao lado de uma lição.",searchFav:"Buscar nos favoritos",all:"Todos",noFavMatch:"Nada nos favoritos corresponde a “{q}”.",lessons:"Lições",cards:"Cartões",readAll:"Ler os {n}",favLessonAdd:"Adicionar lição aos favoritos",favLessonRemove:"Remover lição dos favoritos",
+  installNote:"Instale o Spark para abrir como um app e funcionar offline.",install:"Instalar",iosInstall:"Para instalar: no Safari toque em Compartilhar e depois em <b>Adicionar à Tela de Início</b>. Instalado, funciona offline e guarda seu histórico.",cardsLearned:"Cartões aprendidos",lessonsFinished:"Lições concluídas",dayStreakBest:"Dias seguidos · recorde {n}",quizAcc:"Acertos nos quizzes",last14:"Últimos 14 dias",goalPerDay:"meta {n}/dia",twoWeeksAgo:"2 semanas atrás",todayLow:"hoje",dailyGoal:"Meta diária",history:"Histórico",showAll:"Mostrar tudo",histEmpty:"Os cartões que você ler aparecem aqui, do mais recente para o mais antigo.",backup:"Backup",backupSub:"O progresso, o histórico e os cartões salvos ficam só neste aparelho. Salve um arquivo de backup para não perdê-los ou para levá-los a outro aparelho.",saveBackup:"Salvar backup",restoreFile:"Restaurar de arquivo",today:"Hoje",language:"Idioma",country:"País",countryHelp:"Usado para sugerir o pacote do seu país. Nada sai deste aparelho.",countryNone:"Outro / nenhum",
+  dlResult:"{ok} baixados, {fail} falharam. Verifique a conexão e tente de novo.",topicsReady:{one:"{n} tema pronto offline",other:"{n} temas prontos offline"},lessonTitle:"Lição {n} · {t}",savedList:"Salvos",review:"Revisão",topicRemoved:"Tema removido. Seu progresso continua salvo.",backupRestored:"Backup restaurado",imported:{one:"{n} tema importado",other:"{n} temas importados"},badFile:"Esse arquivo não é um tema nem um backup do Spark.",savedFile:"Salvo: {name}",updated:{one:"{n} tema atualizado",other:"{n} temas atualizados"},langChanged:"Mudando para {l}…",
+  perfect:"Pontuação perfeita",nicely:"Muito bem",keepGoing:"Continue",missedBack:"As perguntas erradas voltam em Hoje → Revisão.",allCorrect:"Você acertou tudo.",allRead:"Tudo lido",todayStreak:"{n} cartões hoje · {s} dias seguidos",inFavs:"★ Nos favoritos",addLessonFav:"☆ Adicionar lição aos favoritos",nextLesson:"Próxima lição",done:"Concluir",previous:"Anterior",listenEn:"Ouvir em inglês",skip:"Pular",finish:"Terminar",next:"Próximo",quiz:"Quiz",
+  locked:"Bloqueado",unlock:"Desbloquear",free:"Grátis",lockedTeaser:"Faz parte do pacote completo de {topic}",lockedLessons:"As lições 2–{n} estão no pacote completo",paywallTitle:"Desbloqueie tudo",paywallSub:"{n} temas, {c} cartões ilustrados com aprofundamentos e quizzes. Lições novas todo mês.",planAnnual:"Anual",planAnnualNote:"7 dias grátis, depois {price} por ano",perMonth:"{price}/mês",planMonthly:"Mensal",planMonthlyNote:"{price} por mês",thisPack:"Só {pack}",thisPackNote:"{price} uma vez, seu para sempre",bestValue:"Melhor custo-benefício",startTrial:"Começar a semana grátis",buy:"Continuar",restore:"Restaurar compras",terms:"Termos",privacy:"Privacidade",family:"Compartilhado com até 6 pessoas da família.",cancelAnytime:"Cancele quando quiser nos ajustes da sua conta Apple.",plusActive:"O Spark Plus está ativo",plusSub:"Todos os temas e todos os pacotes novos estão desbloqueados.",previewNote:"Prévia: na versão web as compras são simuladas.",purchased:"Desbloqueado. Aproveite!",restored:"Compras restauradas",nothingRestore:"Não há compras para restaurar",purchaseFailed:"A compra não foi concluída.",subscription:"Assinatura",getPlus:"Assinar o Spark Plus",
+  w:{safe:"Seguro para um pino de entrada de 3,3 V",tooHigh:"Alto demais para um pino do ESP32 (máx. 3,3 V)",mass:"Massa",distance:"Distância",balanced:"equilibrado",balancedX:"equilibrado!",rightWins:"o lado direito ganha",leftWins:"o lado esquerdo ganha",left:"esquerda",right:"direita",sunnyS:"sol",weekendS:"fim de semana",rainS:"chuva",sunny:"Sol",weekend:"Fim de semana",raining:"Chuva",bias:"viés",go:"ir?",beach:"praia!",stay:"ficar",fires:"dispara: bora pra praia",quiet:"fica em silêncio",sentence:"O gato sentou no …",gen:"O gato sentou no <b>{w}</b>.",words:["tapete","sofá","chão","colchão","telhado"],temp:"Temp.",generate:"Gerar",cautious:"cauteloso: quase sempre “{w}”",adventurous:"aventureiro: vale tudo",balancedT:"equilibrado",base:"Lisboa",clockNote:"Fusos de inverno; o horário de verão muda alguns destes em uma hora.",day:"dia",night:"noite",cities:["Lisboa","Nova York","São Paulo","Luanda","Maputo","Moscou","Dubai","Mumbai","Xangai","Tóquio"],pitch:"Tom",hearing:"Os humanos ouvem mais ou menos de 20 Hz a 20 kHz.",cmp:["mais comprido que um ônibus","mais alto que uma pessoa","mais ou menos do tamanho de um braço","mais ou menos do tamanho de uma mão","menor que uma moeda"]},
+  flip:{means:"significa",word:"Inglês",tap:"Toque para ver o significado",listen:"Ouvir",prev:"Palavra anterior",next:"Próxima palavra"}
+};
+STR.es={
+  topics:{ai:"IA",gen:"IA generativa",corp:"IA en la empresa",eng:"Inglés",elec:"Electricidad",tron:"Electrónica",mech:"Ingeniería",sci:"Física",space:"Espacio",math:"Matemáticas y lógica",body:"Cuerpo humano",nature:"Naturaleza",psy:"Psicología",phil:"Filosofía",money:"Dinero",hist:"Historia",world:"Mundo",art:"Arte y cultura","c-pt":"Portugal","c-br":"Brasil","c-es":"España","c-fr":"Francia","c-gb":"Reino Unido","c-cn":"China"},
+  types:{concept:"Concepto",formula:"Fórmula",fact:"Dato",example:"Ejemplo resuelto",widget:"Pruébalo",quiz:"Quiz",card:"Tarjeta"},
+  deep:{key:"Idea clave",myth:"Mito",real:"Realidad",fact:"¿Sabías que?",ex:"Ejemplo resuelto",short:"En resumen",depth:"En detalle",title:"A fondo"},
+  storageFull:"No se pudo guardar el progreso: el almacenamiento está lleno o bloqueado.",favAdded:"Añadido a favoritos",favRemoved:"Quitado de favoritos",noSpeech:"Escuchar no está disponible en este dispositivo",
+  forYou:"Para ti",favourites:"Favoritos",quickQ:"Pregunta rápida",fromLesson:"De «{t}»",readMore:"Leer más",lessonLabel:"Lección: {t}",deeper:"A fondo",goDeeper:"Ir a fondo",save:"Guardar",saved:"Guardado",listen:"Escuchar",lesson:"Lección",share:"Compartir",openLesson:"Abrir la lección",addFav:"Añadir a favoritos",removeFav:"Quitar de favoritos",
+  seenAll:"Ya lo has visto todo aquí",seenAllSub:"Elige otra categoría o empieza de nuevo.",shuffle:"Mezclar otra vez",noFavYet:"Aún no hay favoritos",nothingYet:"Aún no hay nada que mostrar",tapStar:"Toca la estrella de cualquier tarjeta para guardarla aquí.",downloadToFill:"Descarga temas en Aprender para llenar tu feed.",goLearn:"Ir a Aprender",correct:"Correcto",notQuite:"No exactamente",
+  savedStar:"★ Guardada",saveCard:"☆ Guardar tarjeta",back:"Volver",close:"Cerrar",
+  tabToday:"Hoy",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Tú",online:"En línea",offline:"Sin conexión",
+  pickTitle:"Elige los temas que quieres descargar",pickSub:"Cada tema es un paquete de lecciones ilustradas y quizzes, guardado en este dispositivo para que funcione sin conexión.",downloadN:{one:"Descargar {n} tema",other:"Descargar {n} temas"},nLessons:{one:"{n} lección",other:"{n} lecciones"},
+  morning:"Buenos días",afternoon:"Buenas tardes",evening:"Buenas noches",continue:"Continuar",upNext:"A continuación",lessonN:"Lección {n}",cardsOf:"{a}/{b} tarjetas",allDone:"Has terminado todas las lecciones descargadas. Descarga otro tema en Aprender o repasa tus tarjetas guardadas.",cardsToday:"TARJETAS HOY",streakDays:"Racha de {n} días",goalDone:"Objetivo diario cumplido. Lo demás es extra.",moreToGoal:"Te faltan {n} para el objetivo de hoy",toReview:"Preguntas para repasar",toReviewSub:"Fallaste estas antes. Repetirlas ayuda a fijarlas.",seeAll:"Ver todo ({n})",sketchOfDay:"Dibujo del día",yourTopics:"Tus temas",
+  allTopics:"‹ Todos los temas",keepCopy:"Guardar una copia",keepCopySub:"Guarda este tema en una sola página, con todos los dibujos y respuestas, para leer o imprimir donde quieras.",saveAsFile:"Guardar archivo",removeDevice:"Quitar del dispositivo",keep:"Mantener",nCards:{one:"{n} tarjeta",other:"{n} tarjetas"},noMatch:"Nada coincide con «{q}» en los temas descargados.",allDownloaded:"Todos los temas descargados",downloadAll:"Descargar todos ({n})",importTopic:"Importar archivo de tema",onDevice:"En el dispositivo",facts:"{l} LECCIONES · {c} TARJETAS · {q} PREGUNTAS · {kb} KB",open:"Abrir",update:"Actualizar",downloading:"Descargando…",download:"Descargar",searchPh:"Buscar: ohmio, engranajes, PWM…",searchCards:"Buscar tarjetas",usage:"Usando {kb} KB en este dispositivo",usageProt:" · protegido contra el borrado automático",notTranslated:"Aún sin traducir: se muestra en inglés",countryTitle:"Tu país",countrySub:"Historia, naturaleza y cultura de donde estás.",otherCountries:"Otros países",topicsTitle:"Temas",
+  favSub:"Toca la estrella de cualquier tarjeta o lección para guardarla aquí.",noFavLong:"Aún no hay favoritos. Abre una lección y toca la estrella bajo una tarjeta, o la estrella junto a una lección.",searchFav:"Buscar en favoritos",all:"Todo",noFavMatch:"Nada en tus favoritos coincide con «{q}».",lessons:"Lecciones",cards:"Tarjetas",readAll:"Leer las {n}",favLessonAdd:"Añadir lección a favoritos",favLessonRemove:"Quitar lección de favoritos",
+  installNote:"Instala Spark para que se abra como una app y funcione sin conexión.",install:"Instalar",iosInstall:"Para instalar: en Safari toca Compartir y luego <b>Añadir a pantalla de inicio</b>. Instalado, funciona sin conexión y guarda tu historial.",cardsLearned:"Tarjetas aprendidas",lessonsFinished:"Lecciones terminadas",dayStreakBest:"Racha de días · récord {n}",quizAcc:"Aciertos en quizzes",last14:"Últimos 14 días",goalPerDay:"objetivo {n}/día",twoWeeksAgo:"hace 2 semanas",todayLow:"hoy",dailyGoal:"Objetivo diario",history:"Historial",showAll:"Ver todo",histEmpty:"Las tarjetas que leas aparecen aquí, de la más reciente a la más antigua.",backup:"Copia de seguridad",backupSub:"El progreso, el historial y las tarjetas guardadas solo están en este dispositivo. Guarda una copia para no perderlos o llevarlos a otro dispositivo.",saveBackup:"Guardar copia",restoreFile:"Restaurar desde archivo",today:"Hoy",language:"Idioma",country:"País",countryHelp:"Sirve para sugerirte el paquete de tu país. Nada sale de este dispositivo.",countryNone:"Otro / ninguno",
+  dlResult:"{ok} descargados, {fail} fallaron. Revisa la conexión e inténtalo de nuevo.",topicsReady:{one:"{n} tema listo sin conexión",other:"{n} temas listos sin conexión"},lessonTitle:"Lección {n} · {t}",savedList:"Guardadas",review:"Repaso",topicRemoved:"Tema quitado. Tu progreso se conserva.",backupRestored:"Copia restaurada",imported:{one:"{n} tema importado",other:"{n} temas importados"},badFile:"Ese archivo no es un tema ni una copia de Spark.",savedFile:"Guardado: {name}",updated:{one:"{n} tema actualizado",other:"{n} temas actualizados"},langChanged:"Cambiando a {l}…",
+  perfect:"Puntuación perfecta",nicely:"Muy bien",keepGoing:"Sigue así",missedBack:"Las preguntas falladas vuelven en Hoy → Repaso.",allCorrect:"Lo has acertado todo.",allRead:"Todo leído",todayStreak:"{n} tarjetas hoy · racha de {s} días",inFavs:"★ En favoritos",addLessonFav:"☆ Añadir lección a favoritos",nextLesson:"Siguiente lección",done:"Hecho",previous:"Anterior",listenEn:"Escuchar en inglés",skip:"Saltar",finish:"Terminar",next:"Siguiente",quiz:"Quiz",
+  locked:"Bloqueado",unlock:"Desbloquear",free:"Gratis",lockedTeaser:"Parte del paquete completo de {topic}",lockedLessons:"Las lecciones 2–{n} están en el paquete completo",paywallTitle:"Desbloquéalo todo",paywallSub:"{n} temas, {c} tarjetas ilustradas con explicaciones a fondo y quizzes. Lecciones nuevas cada mes.",planAnnual:"Anual",planAnnualNote:"7 días gratis, después {price} al año",perMonth:"{price}/mes",planMonthly:"Mensual",planMonthlyNote:"{price} al mes",thisPack:"Solo {pack}",thisPackNote:"{price} una vez, tuyo para siempre",bestValue:"Mejor precio",startTrial:"Empezar la semana gratis",buy:"Continuar",restore:"Restaurar compras",terms:"Términos",privacy:"Privacidad",family:"Compartido con hasta 6 miembros de la familia.",cancelAnytime:"Cancela cuando quieras en los ajustes de tu cuenta de Apple.",plusActive:"Spark Plus está activo",plusSub:"Todos los temas y todos los paquetes nuevos están desbloqueados.",previewNote:"Vista previa: en la versión web las compras son simuladas.",purchased:"Desbloqueado. ¡Que lo disfrutes!",restored:"Compras restauradas",nothingRestore:"No hay compras que restaurar",purchaseFailed:"La compra no se completó.",subscription:"Suscripción",getPlus:"Conseguir Spark Plus",
+  w:{safe:"Seguro para un pin de entrada de 3,3 V",tooHigh:"Demasiado alto para un pin del ESP32 (máx. 3,3 V)",mass:"Masa",distance:"Distancia",balanced:"equilibrado",balancedX:"¡equilibrado!",rightWins:"gana el lado derecho",leftWins:"gana el lado izquierdo",left:"izquierda",right:"derecha",sunnyS:"sol",weekendS:"finde",rainS:"lluvia",sunny:"Sol",weekend:"Fin de semana",raining:"Lluvia",bias:"sesgo",go:"¿ir?",beach:"¡playa!",stay:"quedarse",fires:"se activa: a la playa",quiet:"se queda en silencio",sentence:"El gato se sentó en la …",gen:"El gato se sentó en la <b>{w}</b>.",words:["alfombra","silla","cama","mesa","ventana"],temp:"Temp.",generate:"Generar",cautious:"prudente: casi siempre «{w}»",adventurous:"atrevido: vale todo",balancedT:"equilibrado",base:"Lisboa",clockNote:"Husos de invierno; el horario de verano mueve algunos una hora.",day:"día",night:"noche",cities:["Lisboa","Nueva York","São Paulo","Luanda","Maputo","Moscú","Dubái","Bombay","Shanghái","Tokio"],pitch:"Tono",hearing:"Los humanos oímos más o menos de 20 Hz a 20 kHz.",cmp:["más largo que un autobús","más alto que una persona","como la longitud de un brazo","como el tamaño de una mano","más pequeño que una moneda"]},
+  flip:{means:"significa",word:"Inglés",tap:"Toca para ver el significado",listen:"Escuchar",prev:"Palabra anterior",next:"Palabra siguiente"}
+};
+STR.fr={
+  topics:{ai:"IA",gen:"IA générative",corp:"IA en entreprise",eng:"Anglais",elec:"Électricité",tron:"Électronique",mech:"Ingénierie",sci:"Physique",space:"Espace",math:"Maths et logique",body:"Corps humain",nature:"Nature",psy:"Psychologie",phil:"Philosophie",money:"Argent",hist:"Histoire",world:"Monde",art:"Art et culture","c-pt":"Portugal","c-br":"Brésil","c-es":"Espagne","c-fr":"France","c-gb":"Royaume-Uni","c-cn":"Chine"},
+  types:{concept:"Concept",formula:"Formule",fact:"Le saviez-vous",example:"Exemple résolu",widget:"Essayez",quiz:"Quiz",card:"Carte"},
+  deep:{key:"Idée clé",myth:"Mythe",real:"Réalité",fact:"Le saviez-vous ?",ex:"Exemple résolu",short:"En bref",depth:"En détail",title:"Approfondir"},
+  storageFull:"Impossible d'enregistrer la progression : le stockage est plein ou bloqué.",favAdded:"Ajouté aux favoris",favRemoved:"Retiré des favoris",noSpeech:"L'écoute n'est pas disponible sur cet appareil",
+  forYou:"Pour vous",favourites:"Favoris",quickQ:"Question rapide",fromLesson:"Tiré de « {t} »",readMore:"Lire la suite",lessonLabel:"Leçon : {t}",deeper:"Approfondir",goDeeper:"Approfondir",save:"Garder",saved:"Gardé",listen:"Écouter",lesson:"Leçon",share:"Partager",openLesson:"Ouvrir la leçon",addFav:"Ajouter aux favoris",removeFav:"Retirer des favoris",
+  seenAll:"Vous avez tout vu ici",seenAllSub:"Choisissez une autre catégorie ou recommencez.",shuffle:"Mélanger à nouveau",noFavYet:"Pas encore de favoris",nothingYet:"Rien à afficher pour l'instant",tapStar:"Touchez l'étoile d'une carte pour la garder ici.",downloadToFill:"Téléchargez des thèmes dans Apprendre pour remplir votre feed.",goLearn:"Aller à Apprendre",correct:"Correct",notQuite:"Pas tout à fait",
+  savedStar:"★ Gardée",saveCard:"☆ Garder la carte",back:"Retour",close:"Fermer",
+  tabToday:"Aujourd'hui",tabFeed:"Feed",tabLearn:"Apprendre",tabFav:"Favoris",tabYou:"Moi",online:"En ligne",offline:"Hors ligne",
+  pickTitle:"Choisissez les thèmes à télécharger",pickSub:"Chaque thème est un pack de leçons illustrées et de quiz, enregistré sur cet appareil pour fonctionner sans connexion.",downloadN:{one:"Télécharger {n} thème",other:"Télécharger {n} thèmes"},nLessons:{one:"{n} leçon",other:"{n} leçons"},
+  morning:"Bonjour",afternoon:"Bon après-midi",evening:"Bonsoir",continue:"Continuer",upNext:"À suivre",lessonN:"Leçon {n}",cardsOf:"{a}/{b} cartes",allDone:"Vous avez terminé toutes les leçons téléchargées. Téléchargez un autre thème dans Apprendre ou revoyez vos cartes gardées.",cardsToday:"CARTES AUJOURD'HUI",streakDays:"{n} jours d'affilée",goalDone:"Objectif du jour atteint. Le reste est un bonus.",moreToGoal:"Encore {n} pour l'objectif du jour",toReview:"Questions à revoir",toReviewSub:"Vous les aviez manquées. Réessayer aide à retenir.",seeAll:"Tout voir ({n})",sketchOfDay:"Croquis du jour",yourTopics:"Vos thèmes",
+  allTopics:"‹ Tous les thèmes",keepCopy:"Garder une copie",keepCopySub:"Enregistrez ce thème en une seule page, avec tous les croquis et réponses, à lire ou imprimer n'importe où.",saveAsFile:"Enregistrer le fichier",removeDevice:"Retirer de l'appareil",keep:"Garder",nCards:{one:"{n} carte",other:"{n} cartes"},noMatch:"Aucun résultat pour « {q} » dans vos thèmes téléchargés.",allDownloaded:"Tous les thèmes téléchargés",downloadAll:"Tout télécharger ({n})",importTopic:"Importer un fichier de thème",onDevice:"Sur l'appareil",facts:"{l} LEÇONS · {c} CARTES · {q} QUESTIONS · {kb} KO",open:"Ouvrir",update:"Mettre à jour",downloading:"Téléchargement…",download:"Télécharger",searchPh:"Rechercher : ohm, engrenages, PWM…",searchCards:"Rechercher des cartes",usage:"{kb} Ko utilisés sur cet appareil",usageProt:" · protégé contre l'effacement automatique",notTranslated:"Pas encore traduit : affiché en anglais",countryTitle:"Votre pays",countrySub:"Histoire, nature et culture de là où vous êtes.",otherCountries:"Autres pays",topicsTitle:"Thèmes",
+  favSub:"Touchez l'étoile d'une carte ou d'une leçon pour la garder ici.",noFavLong:"Pas encore de favoris. Ouvrez une leçon et touchez l'étoile sous une carte, ou celle à côté d'une leçon.",searchFav:"Rechercher dans vos favoris",all:"Tout",noFavMatch:"Rien dans vos favoris ne correspond à « {q} ».",lessons:"Leçons",cards:"Cartes",readAll:"Lire les {n}",favLessonAdd:"Ajouter la leçon aux favoris",favLessonRemove:"Retirer la leçon des favoris",
+  installNote:"Installez Spark pour l'ouvrir comme une app et l'utiliser hors ligne.",install:"Installer",iosInstall:"Pour installer : dans Safari, touchez Partager puis <b>Sur l'écran d'accueil</b>. Installée, l'app fonctionne hors ligne et garde votre historique.",cardsLearned:"Cartes apprises",lessonsFinished:"Leçons terminées",dayStreakBest:"Jours d'affilée · record {n}",quizAcc:"Réussite aux quiz",last14:"14 derniers jours",goalPerDay:"objectif {n}/jour",twoWeeksAgo:"il y a 2 semaines",todayLow:"aujourd'hui",dailyGoal:"Objectif quotidien",history:"Historique",showAll:"Tout afficher",histEmpty:"Les cartes que vous lisez apparaissent ici, de la plus récente à la plus ancienne.",backup:"Sauvegarde",backupSub:"La progression, l'historique et les cartes gardées restent sur cet appareil. Enregistrez une sauvegarde pour les protéger ou les transférer vers un autre appareil.",saveBackup:"Enregistrer une sauvegarde",restoreFile:"Restaurer depuis un fichier",today:"Aujourd'hui",language:"Langue",country:"Pays",countryHelp:"Sert à vous proposer le pack de votre pays. Rien ne quitte cet appareil.",countryNone:"Autre / aucun",
+  dlResult:"{ok} téléchargés, {fail} en échec. Vérifiez la connexion et réessayez.",topicsReady:{one:"{n} thème prêt hors ligne",other:"{n} thèmes prêts hors ligne"},lessonTitle:"Leçon {n} · {t}",savedList:"Gardées",review:"Révision",topicRemoved:"Thème retiré. Votre progression est conservée.",backupRestored:"Sauvegarde restaurée",imported:{one:"{n} thème importé",other:"{n} thèmes importés"},badFile:"Ce fichier n'est ni un thème ni une sauvegarde Spark.",savedFile:"Enregistré : {name}",updated:{one:"{n} thème mis à jour",other:"{n} thèmes mis à jour"},langChanged:"Passage en {l}…",
+  perfect:"Score parfait",nicely:"Bien joué",keepGoing:"Continuez",missedBack:"Les questions manquées reviennent dans Aujourd'hui → Révision.",allCorrect:"Tout est juste.",allRead:"Tout lu",todayStreak:"{n} cartes aujourd'hui · {s} jours d'affilée",inFavs:"★ Dans les favoris",addLessonFav:"☆ Ajouter la leçon aux favoris",nextLesson:"Leçon suivante",done:"Terminé",previous:"Précédent",listenEn:"Écouter en anglais",skip:"Passer",finish:"Terminer",next:"Suivant",quiz:"Quiz",
+  locked:"Verrouillé",unlock:"Débloquer",free:"Gratuit",lockedTeaser:"Fait partie du pack complet {topic}",lockedLessons:"Les leçons 2 à {n} sont dans le pack complet",paywallTitle:"Tout débloquer",paywallSub:"{n} thèmes, {c} cartes illustrées avec approfondissements et quiz. De nouvelles leçons chaque mois.",planAnnual:"Annuel",planAnnualNote:"7 jours gratuits, puis {price} par an",perMonth:"{price}/mois",planMonthly:"Mensuel",planMonthlyNote:"{price} par mois",thisPack:"Seulement {pack}",thisPackNote:"{price} une fois, à vous pour toujours",bestValue:"Le plus avantageux",startTrial:"Commencer ma semaine gratuite",buy:"Continuer",restore:"Restaurer les achats",terms:"Conditions",privacy:"Confidentialité",family:"Partagé avec jusqu'à 6 membres de la famille.",cancelAnytime:"Résiliez à tout moment dans les réglages de votre compte Apple.",plusActive:"Spark Plus est actif",plusSub:"Tous les thèmes et tous les nouveaux packs sont débloqués.",previewNote:"Aperçu : dans la version web, les achats sont simulés.",purchased:"Débloqué. Bonne lecture !",restored:"Achats restaurés",nothingRestore:"Aucun achat à restaurer",purchaseFailed:"L'achat n'a pas abouti.",subscription:"Abonnement",getPlus:"Passer à Spark Plus",
+  w:{safe:"Sans danger pour une broche d'entrée 3,3 V",tooHigh:"Trop élevé pour une broche d'ESP32 (3,3 V max.)",mass:"Masse",distance:"Distance",balanced:"équilibré",balancedX:"équilibré !",rightWins:"le côté droit l'emporte",leftWins:"le côté gauche l'emporte",left:"gauche",right:"droite",sunnyS:"soleil",weekendS:"week-end",rainS:"pluie",sunny:"Soleil",weekend:"Week-end",raining:"Pluie",bias:"biais",go:"y aller ?",beach:"plage !",stay:"rester",fires:"s'active : direction la plage",quiet:"reste silencieux",sentence:"Le chat s'est assis sur le …",gen:"Le chat s'est assis sur le <b>{w}</b>.",words:["tapis","canapé","sol","lit","toit"],temp:"Temp.",generate:"Générer",cautious:"prudent : presque toujours « {w} »",adventurous:"audacieux : tout est possible",balancedT:"équilibré",base:"Lisbonne",clockNote:"Décalages d'hiver ; l'heure d'été en décale certains d'une heure.",day:"jour",night:"nuit",cities:["Lisbonne","New York","São Paulo","Luanda","Maputo","Moscou","Dubaï","Bombay","Shanghai","Tokyo"],pitch:"Hauteur",hearing:"L'oreille humaine entend à peu près de 20 Hz à 20 kHz.",cmp:["plus long qu'un bus","plus grand qu'une personne","environ la longueur d'un bras","environ la taille d'une main","plus petit qu'une pièce"]},
+  flip:{means:"signifie",word:"Anglais",tap:"Touchez pour voir le sens",listen:"Écouter",prev:"Mot précédent",next:"Mot suivant"}
+};
+STR.zh={
+  topics:{ai:"人工智能",gen:"生成式 AI",corp:"企业 AI",eng:"英语",elec:"电学",tron:"电子学",mech:"工程",sci:"物理",space:"太空",math:"数学与逻辑",body:"人体",nature:"自然",psy:"心理学",phil:"哲学",money:"金钱",hist:"历史",world:"世界",art:"艺术与文化","c-pt":"葡萄牙","c-br":"巴西","c-es":"西班牙","c-fr":"法国","c-gb":"英国","c-cn":"中国"},
+  types:{concept:"概念",formula:"公式",fact:"事实",example:"例题",widget:"动手试试",quiz:"测验",card:"卡片"},
+  deep:{key:"核心观点",myth:"误区",real:"事实",fact:"你知道吗？",ex:"例题",short:"简而言之",depth:"深入了解",title:"深入"},
+  storageFull:"无法保存进度：存储空间已满或被阻止。",favAdded:"已加入收藏",favRemoved:"已从收藏中移除",noSpeech:"此设备不支持朗读",
+  forYou:"推荐",favourites:"收藏",quickQ:"快问快答",fromLesson:"出自“{t}”",readMore:"阅读更多",lessonLabel:"课程：{t}",deeper:"深入",goDeeper:"深入了解",save:"收藏",saved:"已收藏",listen:"朗读",lesson:"课程",share:"分享",openLesson:"打开课程",addFav:"加入收藏",removeFav:"移出收藏",
+  seenAll:"这里的内容都看完了",seenAllSub:"换个类别，或者重新开始。",shuffle:"重新打乱",noFavYet:"还没有收藏",nothingYet:"暂时没有内容",tapStar:"点任意卡片上的星标，就能收藏到这里。",downloadToFill:"在“学习”中下载主题来填充你的信息流。",goLearn:"去学习",correct:"答对了",notQuite:"不太对",
+  savedStar:"★ 已收藏",saveCard:"☆ 收藏卡片",back:"返回",close:"关闭",
+  tabToday:"今天",tabFeed:"信息流",tabLearn:"学习",tabFav:"收藏",tabYou:"我的",online:"在线",offline:"离线",
+  pickTitle:"选择要下载的主题",pickSub:"每个主题都是一组图解课程和测验，保存在本设备上，没有网络也能用。",downloadN:{other:"下载 {n} 个主题"},nLessons:{other:"{n} 节课"},
+  morning:"早上好",afternoon:"下午好",evening:"晚上好",continue:"继续",upNext:"接下来",lessonN:"第 {n} 课",cardsOf:"{a}/{b} 张卡片",allDone:"已下载的课程全部学完了。去“学习”下载新主题，或复习你收藏的卡片。",cardsToday:"今日卡片",streakDays:"连续 {n} 天",goalDone:"今日目标已完成，多学都是额外收获。",moreToGoal:"还差 {n} 张完成今日目标",toReview:"待复习的题目",toReviewSub:"这些题你之前答错了，再做一次能记得更牢。",seeAll:"查看全部（{n}）",sketchOfDay:"每日一图",yourTopics:"你的主题",
+  allTopics:"‹ 全部主题",keepCopy:"保存副本",keepCopySub:"把这个主题保存成一个包含所有图示和答案的网页，随时阅读或打印。",saveAsFile:"保存为文件",removeDevice:"从设备中删除",keep:"保留",nCards:{other:"{n} 张卡片"},noMatch:"已下载的主题中没有与“{q}”匹配的内容。",allDownloaded:"所有主题都已下载",downloadAll:"全部下载（{n}）",importTopic:"导入主题文件",onDevice:"已在设备上",facts:"{l} 节课 · {c} 张卡片 · {q} 道题 · {kb} KB",open:"打开",update:"更新",downloading:"下载中…",download:"下载",searchPh:"搜索：欧姆、齿轮、PWM…",searchCards:"搜索卡片",usage:"本设备已使用 {kb} KB",usageProt:" · 不会被自动清理",notTranslated:"尚未翻译：以英文显示",countryTitle:"你所在的国家",countrySub:"你所在地的历史、自然与文化。",otherCountries:"其他国家",topicsTitle:"主题",
+  favSub:"点任意卡片或课程上的星标，就能收藏到这里。",noFavLong:"还没有收藏。打开一节课，点卡片下方或课程旁边的星标即可。",searchFav:"搜索收藏",all:"全部",noFavMatch:"收藏中没有与“{q}”匹配的内容。",lessons:"课程",cards:"卡片",readAll:"阅读全部 {n} 张",favLessonAdd:"收藏这节课",favLessonRemove:"取消收藏这节课",
+  installNote:"安装 Spark，像应用一样打开，并可离线使用。",install:"安装",iosInstall:"安装方法：在 Safari 中点“分享”，再点<b>添加到主屏幕</b>。安装后可离线使用，并保留你的学习记录。",cardsLearned:"已学卡片",lessonsFinished:"已完成课程",dayStreakBest:"连续天数 · 最长 {n} 天",quizAcc:"测验正确率",last14:"最近 14 天",goalPerDay:"目标 {n} 张/天",twoWeeksAgo:"2 周前",todayLow:"今天",dailyGoal:"每日目标",history:"学习记录",showAll:"显示全部",histEmpty:"你读过的卡片会按时间倒序显示在这里。",backup:"备份",backupSub:"进度、学习记录和收藏只保存在本设备上。保存一个备份文件，防止丢失，或转移到其他设备。",saveBackup:"保存备份文件",restoreFile:"从文件恢复",today:"今天",language:"语言",country:"国家/地区",countryHelp:"用于推荐你所在国家的主题包。所有数据都留在本设备。",countryNone:"其他 / 不选择",
+  dlResult:"已下载 {ok} 个，{fail} 个失败。请检查网络后重试。",topicsReady:{other:"{n} 个主题可离线使用"},lessonTitle:"第 {n} 课 · {t}",savedList:"收藏",review:"复习",topicRemoved:"主题已删除，学习进度仍会保留。",backupRestored:"备份已恢复",imported:{other:"已导入 {n} 个主题"},badFile:"这个文件不是 Spark 的主题或备份。",savedFile:"已保存 {name}",updated:{other:"已更新 {n} 个主题"},langChanged:"正在切换到{l}…",
+  perfect:"满分",nicely:"做得好",keepGoing:"继续加油",missedBack:"答错的题会出现在“今天 → 复习”中。",allCorrect:"全部答对。",allRead:"全部读完",todayStreak:"今天 {n} 张 · 连续 {s} 天",inFavs:"★ 已收藏",addLessonFav:"☆ 收藏这节课",nextLesson:"下一课",done:"完成",previous:"上一张",listenEn:"用英语朗读",skip:"跳过",finish:"完成",next:"下一张",quiz:"测验",
+  locked:"未解锁",unlock:"解锁",free:"免费",lockedTeaser:"属于完整的“{topic}”主题包",lockedLessons:"第 2–{n} 课在完整主题包中",paywallTitle:"解锁全部内容",paywallSub:"{n} 个主题、{c} 张图解卡片，配有深入讲解和测验。每月更新课程。",planAnnual:"年度",planAnnualNote:"免费 7 天，之后每年 {price}",perMonth:"{price}/月",planMonthly:"月度",planMonthlyNote:"每月 {price}",thisPack:"仅{pack}",thisPackNote:"一次性 {price}，永久拥有",bestValue:"最划算",startTrial:"开始免费试用一周",buy:"继续",restore:"恢复购买",terms:"条款",privacy:"隐私",family:"可与最多 6 位家庭成员共享。",cancelAnytime:"可随时在 Apple 账户设置中取消。",plusActive:"Spark Plus 已开通",plusSub:"所有主题和新主题包均已解锁。",previewNote:"预览：网页版中的购买为模拟操作。",purchased:"已解锁，祝你学得开心！",restored:"已恢复购买",nothingRestore:"没有可恢复的购买",purchaseFailed:"购买未完成。",subscription:"订阅",getPlus:"开通 Spark Plus",
+  w:{safe:"可安全接入 3.3 V 输入引脚",tooHigh:"对 ESP32 引脚来说太高（最高 3.3 V）",mass:"质量",distance:"距离",balanced:"平衡",balancedX:"平衡了！",rightWins:"右边更重",leftWins:"左边更重",left:"左",right:"右",sunnyS:"晴天",weekendS:"周末",rainS:"下雨",sunny:"晴天",weekend:"周末",raining:"下雨",bias:"偏置",go:"去吗？",beach:"去海滩！",stay:"不去",fires:"被激活：去海滩",quiet:"保持沉默",sentence:"小猫坐在……上",gen:"小猫坐在<b>{w}</b>上。",words:["垫子","沙发","地板","床","屋顶"],temp:"温度",generate:"生成",cautious:"保守：几乎总是“{w}”",adventurous:"大胆：什么都可能",balancedT:"均衡",base:"里斯本",clockNote:"按冬令时计算；夏令时会让其中一些城市相差一小时。",day:"白天",night:"夜晚",cities:["里斯本","纽约","圣保罗","罗安达","马普托","莫斯科","迪拜","孟买","上海","东京"],pitch:"音高",hearing:"人耳大约能听到 20 Hz 到 20 kHz 的声音。",cmp:["比公交车还长","比人还高","大约一条手臂长","大约一只手大","比硬币还小"]},
+  flip:{means:"意思是",word:"英语",tap:"点击查看释义",listen:"朗读",prev:"上一个词",next:"下一个词"}
+};
+/* language helpers */
+function detectLang(){
+  const ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"]).map(x=>String(x));
+  for(const l of ls){const s=l.toLowerCase();
+    if(s==="pt-br")return "pt-BR";if(s.startsWith("pt"))return "pt-PT";if(s.startsWith("es"))return "es";if(s.startsWith("fr"))return "fr";if(s.startsWith("zh"))return "zh";if(s.startsWith("en"))return "en"}
+  return "en";
+}
+function detectRegion(){
+  const tz=(()=>{try{return Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){return ""}})();
+  const byTz={"Europe/Lisbon":"PT","Atlantic/Madeira":"PT","Atlantic/Azores":"PT","Europe/Madrid":"ES","Atlantic/Canary":"ES","Africa/Ceuta":"ES","Europe/Paris":"FR","Europe/London":"GB","Asia/Shanghai":"CN","Asia/Urumqi":"CN"};
+  if(byTz[tz])return byTz[tz];
+  if(tz.startsWith("America/")&&/Sao_Paulo|Bahia|Fortaleza|Recife|Belem|Manaus|Cuiaba|Campo_Grande|Porto_Velho|Boa_Vista|Rio_Branco|Maceio|Araguaina|Santarem|Noronha|Eirunepe/.test(tz))return "BR";
+  for(const l of (navigator.languages||[navigator.language||""])){const m=String(l).match(/[-_]([A-Za-z]{2})$/);if(m&&COUNTRIES[m[1].toUpperCase()])return m[1].toUpperCase()}
+  return "";
+}
+let LANG="en";
+const loc=()=>LANGS[LANG].locale;
+function t(k,v){let s=(STR[LANG]&&STR[LANG][k]!==undefined)?STR[LANG][k]:STR.en[k];if(s===undefined)return k;
+  if(typeof s==="object"&&!Array.isArray(s)&&("other" in s)){let form="other";try{form=new Intl.PluralRules(loc()).select(v&&v.n!==undefined?v.n:0)}catch(e){}s=s[form]||s.other}
+  if(typeof s!=="string")return s;return v?s.replace(/\{(\w+)\}/g,(m,x)=>v[x]!==undefined?v[x]:m):s}
+const tw=k=>((STR[LANG].w||{})[k]!==undefined?STR[LANG].w[k]:STR.en.w[k]);
+const tf=k=>((STR[LANG].flip||{})[k]!==undefined?STR[LANG].flip[k]:STR.en.flip[k]);
+
+let TOPICS={...STR.en.topics},TYPES={...STR.en.types};
 
 /* ---------- storage ---------- */
 const KEY="spark-state-v1";
 const dayStr=d=>d.toLocaleDateString("en-CA");
 const today=()=>dayStr(new Date());
-function defaults(){return{feed:{topic:{},seen:{}},saved:[],favL:[],favT:{},seen:{},reads:{},log:[],quiz:{},review:{},done:{},goal:10,best:0}}
+function defaults(){return{feed:{topic:{},seen:{}},saved:[],favL:[],favT:{},seen:{},reads:{},log:[],quiz:{},review:{},done:{},goal:10,best:0,lang:null,region:null,ent:{plus:false,packs:[]}}}
 let S=defaults();
 try{const raw=localStorage.getItem(KEY);if(raw)S=Object.assign(defaults(),JSON.parse(raw))}catch(e){}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){toast("Couldn't save progress: storage is full or blocked.")}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){toast(t("storageFull"))}}
+function applyLang(){LANG=LANGS[S.lang]?S.lang:"en";TOPICS={...STR.en.topics,...(STR[LANG].topics||{})};TYPES={...STR.en.types,...(STR[LANG].types||{})};document.documentElement.lang=LANGS[LANG].locale}
+if(!S.lang)S.lang=detectLang();if(S.region===null)S.region=detectRegion();applyLang();
+
+/* ---------- catalog: language, audience, country ---------- */
+const catOf=id=>CATALOG.find(c=>c.id===id);
+const audienceOK=c=>!c.only||c.only.includes(LANG);
+const visibleCat=()=>CATALOG.filter(audienceOK);
+const isCountry=c=>!!(c&&c.country);
+/* which language a pack should be shown in: the UI language when translated, otherwise its base */
+function packLang(c){if(!c)return "en";const langs=c.langs||[c.base||"en"];if(langs.includes(LANG))return LANG;if(LANG==="pt-BR"&&langs.includes("pt-PT"))return "pt-PT";if(LANG==="pt-PT"&&langs.includes("pt-BR"))return "pt-BR";return c.base||"en"}
+const packURL=(id,lang)=>{const c=catOf(id);return lang===(c&&c.base||"en")?`packs/${id}.json`:`packs/${lang}/${id}.json`};
+const catTitle=c=>(c.i18n&&c.i18n[LANG]&&c.i18n[LANG].title)||c.title;
+const catBlurb=c=>(c.i18n&&c.i18n[LANG]&&c.i18n[LANG].blurb)||c.blurb;
+const catVersion=(c,lang)=>(c.vers&&c.vers[lang])||c.version;
+const catFree=c=>c.free||1;
+
+/* ---------- entitlements (StoreKit in the iOS app; simulated in web preview) ---------- */
+const NATIVE=window.SparkStore||null;
+const GATING=!!NATIVE||(()=>{try{const q=new URLSearchParams(location.search);if(q.has("store"))sessionStorage.setItem("spark-store",q.get("store")||"1");return !!sessionStorage.getItem("spark-store")}catch(e){return false}})();
+const PRICES={plus_y:"€29,99",plus_m:"€4,99",pack:"€4,99"};
+function ownsPack(id){return !GATING||S.ent.plus||S.ent.packs.includes(id)}
+function lessonFree(L){if(!L)return true;const c=catOf(L.pack);return L.n<=catFree(c||{})}
+function lessonOpen(L){return !L||lessonFree(L)||ownsPack(L.pack)}
+const cardOpen=id=>{const c=CARDS[id];return !c||lessonOpen(LESSONS[c.lesson])};
 const DB=(()=>{let p;const open=()=>p||(p=new Promise((res,rej)=>{try{const r=indexedDB.open("spark",1);r.onupgradeneeded=()=>r.result.createObjectStore("packs",{keyPath:"id"});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)}catch(e){rej(e)}}));
   const tx=(m,fn)=>open().then(db=>new Promise((res,rej)=>{const t=db.transaction("packs",m);const r=fn(t.objectStore("packs"));t.oncomplete=()=>res(r&&r.result);t.onerror=()=>rej(t.error)}));
   const LS="spark-packs-fallback",get=()=>{try{return JSON.parse(localStorage.getItem(LS)||"{}")}catch(e){return{}}},set=o=>{try{localStorage.setItem(LS,JSON.stringify(o))}catch(e){}};
@@ -333,23 +533,26 @@ const DB=(()=>{let p;const open=()=>p||(p=new Promise((res,rej)=>{try{const r=in
 let PACKS={},LESSONS={},CARDS={},QUIZ={};
 function indexPacks(){
   LESSONS={};CARDS={};QUIZ={};
-  for(const pk of Object.values(PACKS))pk.lessons.forEach((l,li)=>{
+  for(const pk of Object.values(PACKS)){const c=catOf(pk.id);if(c&&!audienceOK(c))continue;pk.lessons.forEach((l,li)=>{
     const L={...l,pack:pk.id,topic:pk.topic,n:li+1,cardIds:[],quizIds:[]};
     l.cards.forEach((c,k)=>{const id=`${l.id}-c${k}`;CARDS[id]={...c,id,lesson:l.id,topic:pk.topic};L.cardIds.push(id)});
     (l.quiz||[]).forEach((q,k)=>{const id=`${l.id}-q${k}`;QUIZ[id]={...q,id,lesson:l.id,topic:pk.topic};L.quizIds.push(id)});
     LESSONS[l.id]=L;
-  });
+  })}
   try{FEED.refresh()}catch(e){}
 }
 async function loadPacks(){const list=await DB.all();PACKS={};(list||[]).forEach(p=>PACKS[p.id]=p);indexPacks()}
 const validPack=p=>p&&typeof p.id==="string"&&TOPICS[p.topic]&&Array.isArray(p.lessons)&&p.lessons.every(l=>l.id&&Array.isArray(l.cards));
 async function downloadPack(id){
-  let pk=null;
-  try{const r=await fetch(`packs/${id}.json`,{cache:"no-cache"});if(r.ok)pk=await r.json()}catch(e){}
+  const c=catOf(id),base=(c&&c.base)||"en",lang=packLang(c);let pk=null,got=lang;
+  try{const r=await fetch(packURL(id,lang),{cache:"no-cache"});if(r.ok)pk=await r.json()}catch(e){}
+  if(!validPack(pk)&&lang!==base){got=base;try{const r=await fetch(packURL(id,base),{cache:"no-cache"});if(r.ok)pk=await r.json()}catch(e){}}
   if(!validPack(pk))pk=BUNDLE[id];
   if(!validPack(pk))throw new Error("unavailable");
-  pk.downloadedAt=new Date().toISOString();await DB.put(pk);PACKS[pk.id]=pk;indexPacks();
+  pk.lang=pk.lang||got;pk.downloadedAt=new Date().toISOString();await DB.put(pk);PACKS[pk.id]=pk;indexPacks();
 }
+/* packs whose catalog version or language differ from what is on the device */
+const stalePacks=()=>CATALOG.filter(c=>PACKS[c.id]&&audienceOK(c)&&(packLang(c)!==(PACKS[c.id].lang||c.base||"en")||catVersion(c,packLang(c))>(PACKS[c.id].version||0))).map(c=>c.id);
 async function removePack(id){await DB.del(id);delete PACKS[id];indexPacks()}
 
 /* ---------- progress ---------- */
@@ -366,10 +569,10 @@ function nextLesson(){
   return all.find(L=>!S.done[L.id]&&L.cardIds.some(id=>S.seen[id]))||all.find(L=>!S.done[L.id])||null;
 }
 const isFav=id=>S.saved.includes(id)||S.favL.includes(id);
-function toggleFav(id,kind){const k=kind==="l"?"favL":"saved";const on=S[k].includes(id);S[k]=on?S[k].filter(x=>x!==id):[...S[k],id];if(on)delete S.favT[id];else S.favT[id]=Date.now();save();toast(on?"Removed from favourites":"Added to favourites");return !on}
+function toggleFav(id,kind){const k=kind==="l"?"favL":"saved";const on=S[k].includes(id);S[k]=on?S[k].filter(x=>x!==id):[...S[k],id];if(on)delete S.favT[id];else S.favT[id]=Date.now();save();toast(on?t("favRemoved"):t("favAdded"));return !on}
 const byFavT=(a,b)=>(S.favT[b]||0)-(S.favT[a]||0);
 const canSpeak="speechSynthesis" in window;
-function speak(text){if(!canSpeak)return toast("Listening isn't available on this device");try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";u.rate=.9;const vs=speechSynthesis.getVoices();const v=vs.find(v=>/^en[-_]GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){toast("Listening isn't available on this device")}}
+function speak(text){if(!canSpeak)return toast(t("noSpeech"));try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";u.rate=.9;const vs=speechSynthesis.getVoices();const v=vs.find(v=>/^en[-_]GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){toast(t("noSpeech"))}}
 const dueReview=()=>Object.entries(S.review).filter(([id,t])=>t<=Date.now()&&QUIZ[id]).map(([id])=>id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const md=t=>esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>").replace(/\*([^*\n]+)\*/g,"<em>$1</em>");
@@ -382,7 +585,11 @@ function fmt(text){
 /* ---------- generated notebook diagrams (card.viz) ---------- */
 const VZ=(()=>{
   const f=n=>Math.round(n*10)/10, CW=.44;
-  const wrap=(s,max)=>{const out=[];let cur="";for(const w of String(s).split(/\s+/).filter(Boolean)){if(!cur)cur=w;else if((cur+" "+w).length<=max)cur+=" "+w;else{out.push(cur);cur=w}}if(cur)out.push(cur);return out.length?out:[""]};
+  const CJK=/[\u2E80-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF\u3000-\u303F]/;
+  const ln=s=>{let n=0;for(const ch of String(s))n+=CJK.test(ch)?2.25:1;return n};
+  const toks=s=>{const out=[];for(const w of String(s).split(/\s+/).filter(Boolean)){if(!CJK.test(w)){out.push(w);continue}let buf="";for(const ch of w){if(CJK.test(ch)&&!/[，。、；：！？）」』]/.test(ch)){if(buf){out.push(buf);buf=""}out.push(ch)}else if(out.length&&!buf&&/[，。、；：！？）」』]/.test(ch))out[out.length-1]+=ch;else buf+=ch}if(buf)out.push(buf)}return out};
+  const jn=(a,b)=>a+((CJK.test(a.slice(-1))||CJK.test(b[0]))?"":" ")+b;
+  const wrap=(s,max)=>{const out=[];let cur="";for(const w of toks(s)){if(!cur)cur=w;else if(ln(jn(cur,w))<=max)cur=jn(cur,w);else{out.push(cur);cur=w}}if(cur)out.push(cur);return out.length?out:[""]};
   const T=(x,y,s,c="",a="middle",sz=17)=>`<text class="${c}" x="${f(x)}" y="${f(y)}" text-anchor="${a}" style="font-size:${f(sz)}px">${esc(s)}</text>`;
   const TL=(x,y,ls,c,a,sz,lh)=>ls.map((l,i)=>T(x,y+i*lh,l,c,a,sz)).join("");
   const P=(d,c="s")=>`<path class="${c}" d="${d}"/>`;
@@ -393,7 +600,7 @@ const VZ=(()=>{
   const A=(x1,y1,x2,y2,k="a",h=7)=>L(x1,y1,x2,y2,k)+head(x2,y2,Math.atan2(y2-y1,x2-x1),k,h);
   const svg=(sh,tx)=>`<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg"><g class="d">${sh}</g>${tx}</svg>`;
   /* fit text inside w×h, centred on (cx,cy) */
-  const fit=(cx,cy,w,h,s,k="",sz0=17,minsz=11)=>{let sz=sz0,ls;for(;sz>=minsz;sz-=.5){ls=wrap(s,Math.max(4,Math.floor(w/(sz*CW))));const longest=Math.max(...ls.map(l=>l.length));if(ls.length*sz*1.08<=h&&longest*sz*CW<=w+2)break}
+  const fit=(cx,cy,w,h,s,k="",sz0=17,minsz=11)=>{let sz=sz0,ls;for(;sz>=minsz;sz-=.5){ls=wrap(s,Math.max(4,Math.floor(w/(sz*CW))));const longest=Math.max(...ls.map(l=>ln(l)));if(ls.length*sz*1.08<=h&&longest*sz*CW<=w+2)break}
     const lh=sz*1.08;return TL(cx,cy-(ls.length-1)*lh/2+sz*.34,ls,k,"middle",sz,lh)};
   const fitL=(x,y,w,h,s,k="",a="start",sz0=16,minsz=11)=>{let sz=sz0,ls;for(;sz>=minsz;sz-=.5){ls=wrap(s,Math.max(4,Math.floor(w/(sz*CW))));if(ls.length*sz*1.1<=h)break}return{svg:TL(x,y+sz*.8,ls,k,a,sz,sz*1.1),h:ls.length*sz*1.1}};
 
@@ -413,16 +620,16 @@ const VZ=(()=>{
       return svg(sh,tx)},
     time(v){const ev=v.events,n=ev.length;let sh=A(10,92,310,92,"a"),tx="";const sp=n>1?268/(n-1):0,wide=n>=3;
       ev.forEach((e,k)=>{const x=n>1?26+k*sp:160;sh+=C(x,92,5.5,"fred");const up=wide&&k%2===1,cw=Math.min(150,wide?sp*2-10:Math.max(sp-8,90));
-        {const ys=n>5?14:16,yh=String(e.y).length*ys*CW/2;tx+=T(Math.max(4+yh,Math.min(316-yh,x)),up?112:79,e.y,"r","middle",ys)}
+        {const ys=n>5?14:16,yh=ln(e.y)*ys*CW/2;tx+=T(Math.max(4+yh,Math.min(316-yh,x)),up?112:79,e.y,"r","middle",ys)}
         let sz=15,ls;for(;sz>=11;sz-=.5){ls=wrap(e.l,Math.floor(cw/(sz*CW)));if(ls.length<=3)break}
-        const lh=sz*1.08,hw=Math.max(...ls.map(l=>l.length))*sz*CW/2,lx=Math.max(4+hw,Math.min(316-hw,x));if(up){const y0=(wide?62:72)-(ls.length-1)*lh;tx+=TL(lx,y0,ls,"","middle",sz,lh)}else tx+=TL(lx,(wide?120:112)+sz,ls,"","middle",sz,lh)});
+        const lh=sz*1.08,hw=Math.max(...ls.map(l=>ln(l)))*sz*CW/2,lx=Math.max(4+hw,Math.min(316-hw,x));if(up){const y0=(wide?62:72)-(ls.length-1)*lh;tx+=TL(lx,y0,ls,"","middle",sz,lh)}else tx+=TL(lx,(wide?120:112)+sz,ls,"","middle",sz,lh)});
       if(wide)tx=tx; return svg(sh,tx)},
     bars(v){const it=v.items,n=it.length,rh=Math.min(28,148/n),mx=Math.max(...it.map(i=>i.v));let sh="",tx="";const y0=90-n*rh/2;
       it.forEach((i,k)=>{const y=y0+k*rh+rh/2,w=Math.max(3,i.v/mx*150);
-        {let sz=Math.min(15,96/(i.l.length*CW));if(sz>=10.5)tx+=T(102,y+5,i.l,"","end",sz);else{const ls=wrap(i.l,Math.ceil(i.l.length/2)+2);sz=Math.max(9,Math.min(13,96/(Math.max(...ls.map(l=>l.length))*CW)));tx+=TL(102,y+5-sz*.55,ls,"","end",sz,sz*1.05)}}sh+=R(108,y-8,w,16,i.hi?"fred":"fpen",3);tx+=T(114+w,y+5,String(i.t||i.v),"","start",13.5)});
-      if(v.unit)tx+=T(312,172,v.unit,"mono","end",Math.min(11,300/(v.unit.length*.62)));return svg(sh,tx)},
+        {let sz=Math.min(15,96/(ln(i.l)*CW));if(sz>=10.5)tx+=T(102,y+5,i.l,"","end",sz);else{const ls=wrap(i.l,Math.ceil(ln(i.l)/2)+2);sz=Math.max(9,Math.min(13,96/(Math.max(...ls.map(l=>ln(l)))*CW)));tx+=TL(102,y+5-sz*.55,ls,"","end",sz,sz*1.05)}}sh+=R(108,y-8,w,16,i.hi?"fred":"fpen",3);tx+=T(114+w,y+5,String(i.t||i.v),"","start",13.5)});
+      if(v.unit)tx+=T(312,172,v.unit,"mono","end",Math.min(11,300/(ln(v.unit)*.62)));return svg(sh,tx)},
     nums(v){const it=v.items,n=it.length;let tx="";const cw=300/n;
-      it.forEach((i,k)=>{const cx=10+cw*(k+.5),sz=Math.min(n===1?54:n===2?42:34,(cw-8)/(String(i.v).length*.5));
+      it.forEach((i,k)=>{const cx=10+cw*(k+.5),sz=Math.min(n===1?54:n===2?42:34,(cw-8)/(ln(i.v)*.5));
         tx+=T(cx,82,i.v,k%2?"r":"a","middle",sz);tx+=fit(cx,128,cw-12,54,i.l,"",16,11)});
       return svg("",tx)},
     cycle(v){const st=v.steps,n=st.length,cx=160,cy=92,rx=104,ry=60;let sh="",tx="";const ang=k=>-Math.PI/2+k*2*Math.PI/n,pt=a=>[cx+rx*Math.cos(a),cy+ry*Math.sin(a)];
@@ -430,13 +637,13 @@ const VZ=(()=>{
         const[xe,ye]=pt(a2),[xp,yp]=pt(a2-.05);sh+=P(d,"a")+head(xe,ye,Math.atan2(ye-yp,xe-xp),"a")}
       st.forEach((s,k)=>{const[x,y]=pt(ang(k));const w=n>4?84:96,h=n>4?36:40;sh+=R(x-w/2,y-h/2,w,h,"s bgf",10);tx+=fit(x,y,w-8,h-4,s,k===0?"r":"",15,10)});
       return svg(sh,tx)},
-    terms(v){let sh="",tx="";const fs=Math.min(32,280/(v.f.length*.5));const fw=Math.min(300,v.f.length*fs*.5+24);
+    terms(v){let sh="",tx="";const fs=Math.min(32,280/(ln(v.f)*.5));const fw=Math.min(300,ln(v.f)*fs*.5+24);
       sh+=`<rect class="y" x="${f(160-fw/2)}" y="26" width="${f(fw)}" height="${f(fs*1.2)}" rx="4"/>`;tx+=T(160,26+fs*.95,v.f,"","middle",fs);
       const it=v.items,n=it.length,two=n>3,rows=two?Math.ceil(n/2):n,rh=Math.min(28,(172-84)/rows);
       [0,1].forEach(col=>{const grp=it.filter((_,k)=>two?Math.floor(k/rows)===col:col===0);if(!grp.length)return;
-        const x0=two?(col?166:10):24,cw=two?148:276,ss=two?15:17;const sw=Math.min(cw*.5,Math.max(...grp.map(i=>i.s.length))*ss*CW);const xe=x0+sw;
-        grp.forEach((i,r)=>{const y=96+r*rh,s1=Math.min(ss,sw/(i.s.length*CW));tx+=T(xe,y,i.s,"r","end",s1);
-          const room=cw-sw-8,s2=Math.max(10,Math.min(two?13.5:15,room/(i.m.length*CW)));tx+=T(xe+8,y,i.m,"","start",s2)})});
+        const x0=two?(col?166:10):24,cw=two?148:276,ss=two?15:17;const sw=Math.min(cw*.5,Math.max(...grp.map(i=>ln(i.s)))*ss*CW);const xe=x0+sw;
+        grp.forEach((i,r)=>{const y=96+r*rh,s1=Math.min(ss,sw/(ln(i.s)*CW));tx+=T(xe,y,i.s,"r","end",s1);
+          const room=cw-sw-8,s2=Math.max(10,Math.min(two?13.5:15,room/(ln(i.m)*CW)));tx+=T(xe+8,y,i.m,"","start",s2)})});
       return svg(sh,tx)},
     list(v){const it=v.items;let sh="",tx="",sz=17,blocks;
       for(;sz>=11;sz-=.5){blocks=it.map(s=>wrap(s,Math.floor(250/(sz*CW))));const tot=blocks.reduce((a,b)=>a+b.length*sz*1.12+8,0);if(tot<=156)break}
@@ -453,20 +660,20 @@ const VZ=(()=>{
     scale(v){let sh=L(20,98,300,98),tx="";const lg=v.log,lo=v.lo,hi=v.hi,pos=x=>20+280*(lg?(Math.log10(x)-Math.log10(lo))/(Math.log10(hi)-Math.log10(lo)):(x-lo)/(hi-lo));
       sh+=L(20,92,20,104)+L(300,92,300,104);tx+=T(20,120,lo+" "+(v.unit||""),"","start",13)+T(300,120,hi+" "+(v.unit||""),"","end",13);
       v.items.forEach((i,k)=>{const x=Math.max(30,Math.min(290,pos(i.v))),up=k%2===0;sh+=C(x,98,5,i.hi?"fred":"fpen");
-        const ls=wrap(i.l,16),hw=Math.max(...ls.map(l=>l.length))*15*CW/2,lx=Math.max(4+hw,Math.min(316-hw,x));if(up)tx+=TL(lx,80-(ls.length-1)*16,ls,i.hi?"r":"a","middle",15,16);else tx+=TL(lx,140,ls,i.hi?"r":"a","middle",15,16);
-        const vs=String(i.t||i.v),vw=vs.length*3.5;tx+=T(Math.max(4+vw,Math.min(316-vw,x)),up?(80-(ls.length)*16):(140+ls.length*16),vs,"mono","middle",11)});
+        const ls=wrap(i.l,16),hw=Math.max(...ls.map(l=>ln(l)))*15*CW/2,lx=Math.max(4+hw,Math.min(316-hw,x));if(up)tx+=TL(lx,80-(ls.length-1)*16,ls,i.hi?"r":"a","middle",15,16);else tx+=TL(lx,140,ls,i.hi?"r":"a","middle",15,16);
+        const vs=String(i.t||i.v),vw=ln(vs)*3.5;tx+=T(Math.max(4+vw,Math.min(316-vw,x)),up?(80-(ls.length)*16):(140+ls.length*16),vs,"mono","middle",11)});
       return svg(sh,tx)},
-    fix(v){const it=v.items,n=it.length;let sh="",tx="";const long=it.some(p=>p.w.length>17||p.r.length>17);
+    fix(v){const it=v.items,n=it.length;let sh="",tx="";const long=it.some(p=>ln(p.w)>17||ln(p.r)>17);
       if(!long){const rh=Math.min(34,160/n),y0=90-n*rh/2+rh/2;
-        it.forEach((p,k)=>{const y=y0+k*rh+5,sz=Math.min(18,140/(p.w.length*CW));tx+=T(14,y,p.w,"","start",sz);sh+=L(12,y-sz*.32,16+p.w.length*sz*.39,y-sz*.32,"r");
-          sh+=A(160,y-6,182,y-6,"s",6);tx+=T(190,y,p.r,"a","start",Math.min(18,124/(p.r.length*CW)))});return svg(sh,tx)}
+        it.forEach((p,k)=>{const y=y0+k*rh+5,sz=Math.min(18,140/(ln(p.w)*CW));tx+=T(14,y,p.w,"","start",sz);sh+=L(12,y-sz*.32,16+ln(p.w)*sz*.39,y-sz*.32,"r");
+          sh+=A(160,y-6,182,y-6,"s",6);tx+=T(190,y,p.r,"a","start",Math.min(18,124/(ln(p.r)*CW)))});return svg(sh,tx)}
       const rh=Math.min(54,164/n),y0=90-n*rh/2;
-      it.forEach((p,k)=>{const y=y0+k*rh+18,s1=Math.min(16,290/(p.w.length*CW)),s2=Math.min(17,270/(p.r.length*CW));
-        tx+=T(16,y,p.w,"","start",s1);sh+=L(14,y-s1*.32,18+p.w.length*s1*.39,y-s1*.32,"r");
+      it.forEach((p,k)=>{const y=y0+k*rh+18,s1=Math.min(16,290/(ln(p.w)*CW)),s2=Math.min(17,270/(ln(p.r)*CW));
+        tx+=T(16,y,p.w,"","start",s1);sh+=L(14,y-s1*.32,18+ln(p.w)*s1*.39,y-s1*.32,"r");
         sh+=P(`M22 ${f(y+4)} V${f(y+16)} H34`,"s")+A(30,y+16,38,y+16,"s",5);tx+=T(44,y+21,p.r,"a","start",s2)});
       return svg(sh,tx)},
     pairs(v){const it=v.items,n=it.length,rh=Math.min(40,164/n);let sh="",tx="";const y0=90-n*rh/2+rh/2;
-      it.forEach((p,k)=>{const y=y0+k*rh+5,s1=Math.max(10,Math.min(19,128/(p.a.length*CW)));tx+=T(140,y,p.a,"a","end",s1);sh+=A(148,y-6,170,y-6,"s",6);
+      it.forEach((p,k)=>{const y=y0+k*rh+5,s1=Math.max(10,Math.min(19,128/(ln(p.a)*CW)));tx+=T(140,y,p.a,"a","end",s1);sh+=A(148,y-6,170,y-6,"s",6);
         let sz=16,ls;for(;sz>=11;sz-=.5){ls=wrap(p.b,Math.floor(134/(sz*CW)));if(ls.length*sz*1.05<=rh-2||sz<=11)break}
         const lh=sz*1.05;tx+=TL(178,y-(ls.length-1)*lh/2,ls,"","start",sz,lh)});
       return svg(sh,tx)}
@@ -482,44 +689,48 @@ const FEED=(()=>{
   function weight(t){const v=st().topic[t]||0;return Math.max(.25,Math.min(4,1+v))}
   function pool(){
     const cards=Object.values(CARDS).filter(c=>c.type!=="widget"&&(cat==="for"||cat==="fav"||c.topic===cat));
-    if(cat==="fav")return cards.filter(c=>S.saved.includes(c.id));
-    return cards;
+    if(cat==="fav")return cards.filter(c=>S.saved.includes(c.id)&&cardOpen(c.id));
+    return cards.filter(c=>cardOpen(c.id));
   }
   function makeQueue(){
     const F=st(),cs=pool();
     const scored=cs.map(c=>{const seen=F.seen[c.id]?1:0;const w=cat==="for"?weight(c.topic):1;return{c,s:(seen?0.15:1)*w*Math.random()}}).sort((a,b)=>b.s-a.s).map(x=>({k:"c",id:x.c.id}));
     const qs=Object.values(QUIZ).filter(q=>(cat==="for"||cat==="fav"||q.topic===cat)&&!(S.quiz[q.id]&&S.quiz[q.id].ok)).sort(()=>Math.random()-.5);
-    const out=[];let qi=0;scored.forEach((x,i)=>{out.push(x);if(i%6===5&&qi<qs.length)out.push({k:"q",id:qs[qi++].id})});
+    const qs2=qs.filter(q=>lessonOpen(LESSONS[q.lesson]));
+    const locked=GATING&&cat!=="fav"?Object.values(CARDS).filter(c=>c.type!=="widget"&&(cat==="for"||c.topic===cat)&&!cardOpen(c.id)).sort(()=>Math.random()-.5):[];
+    const out=[];let qi=0,li=0;scored.forEach((x,i)=>{out.push(x);if(i%6===5&&qi<qs2.length)out.push({k:"q",id:qs2[qi++].id});if(i%8===7&&li<locked.length)out.push({k:"lock",id:locked[li++].id})});
     return out;
   }
   function chips(){
     const have=[...new Set(Object.values(CARDS).map(c=>c.topic))];
     const order=Object.keys(TOPICS).filter(k=>have.includes(k));
-    return `<div class="fchips" role="tablist">${[["for","For you"],["fav","★ Favourites"],...order.map(k=>[k,TOPICS[k]])].map(([k,l])=>`<button class="fchip" data-fcat="${k}" ${k!=="for"&&k!=="fav"?`data-t="${k}"`:""} aria-pressed="${cat===k}">${esc(l)}</button>`).join("")}</div>`;
+    return `<div class="fchips" role="tablist">${[["for",t("forYou")],["fav","★ "+t("favourites")],...order.map(k=>[k,TOPICS[k]])].map(([k,l])=>`<button class="fchip" data-fcat="${k}" ${k!=="for"&&k!=="fav"?`data-t="${k}"`:""} aria-pressed="${cat===k}">${esc(l)}</button>`).join("")}</div>`;
   }
   function short(text){const p=String(text||"").split(/\n\n+/);return p.slice(0,2).join("\n\n")}
   function itemHTML(it,idx){
     if(it.k==="q"){const q=QUIZ[it.id],L=LESSONS[q.lesson];
-      return `<section class="fitem" data-i="${idx}" data-t="${q.topic}"><div class="fcard fq"><span class="ctype">Quick question · ${esc(TOPICS[q.topic])}</span><h2>${esc(q.q)}</h2><div class="opts">${q.options.map((o,k)=>`<button class="opt" data-fans="${k}" data-q="${q.id}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div><div class="fb" hidden></div><span class="fsrc">From “${esc(L.title)}”</span></div></section>`}
+      return `<section class="fitem" data-i="${idx}" data-t="${q.topic}"><div class="fcard fq"><span class="ctype">${t("quickQ")} · ${esc(TOPICS[q.topic])}</span><h2>${esc(q.q)}</h2><div class="opts">${q.options.map((o,k)=>`<button class="opt" data-fans="${k}" data-q="${q.id}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div><div class="fb" hidden></div><span class="fsrc">${esc(t("fromLesson",{t:L.title}))}</span></div></section>`}
+    if(it.k==="lock"){const c=CARDS[it.id],L=LESSONS[c.lesson];
+      return `<section class="fitem flock" data-i="${idx}" data-t="${c.topic}"><div class="fcard"><span class="ctype">${I.lock} ${esc(TOPICS[c.topic])} · ${esc(t("locked"))}</span><h2>${esc(c.title)}</h2><div class="lockblur">${sketch(c)}<div class="text ftext">${fmt(short(c.text))}</div></div><button class="btn" data-paywall="${L.pack}">${I.lock} ${esc(t("unlock"))}</button><span class="fsrc">${esc(t("lockedTeaser",{topic:TOPICS[c.topic]}))}</span></div></section>`}
     const c=CARDS[it.id],L=LESSONS[c.lesson],on=S.saved.includes(c.id),full=c.text&&c.text.split(/\n\n+/).length>2;
     return `<section class="fitem" data-i="${idx}" data-id="${c.id}" data-t="${c.topic}">
-      <div class="fcard"><span class="ctype">${esc(TOPICS[c.topic])} · ${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${sketch(c)}
+      <div class="fcard"><span class="ctype">${esc(TOPICS[c.topic])} · ${esc(c.tag||TYPES[c.type]||TYPES.card)}</span><h2>${esc(c.title)}</h2>${sketch(c)}
       ${c.formula?`<div class="formula"${c.formula.length>16?' style="font-size:20px"':""}>${esc(c.formula)}</div>`:""}
-      <div class="text ftext">${fmt(full?short(c.text):c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}
-      ${full?`<button class="link fmore" data-fmore="${c.id}">Read more</button>`:""}
-      <span class="fsrc">Lesson: ${esc(L.title)}</span></div>
-      <div class="frail">${c.deep?`<button class="fbtn deepf" data-deep="${c.id}" aria-label="Go deeper">${I.deep}<span>Deeper</span></button>`:""}<button class="fbtn ${on?"on":""}" data-ffav="${c.id}" aria-label="${on?"Remove from favourites":"Add to favourites"}">${I.star}<span>${on?"Saved":"Save"}</span></button>
-      ${canSpeak&&c.say?`<button class="fbtn" data-fsay="${c.id}" aria-label="Listen">${I.sound}<span>Listen</span></button>`:""}
-      <button class="fbtn" data-flesson="${c.id}" aria-label="Open the lesson">${I.learn}<span>Lesson</span></button>
-      <button class="fbtn" data-fshare="${c.id}" aria-label="Share">${I.share}<span>Share</span></button></div>
+      <div class="text ftext">${fmt(full?short(c.text):c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">${TYPES.example}</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}
+      ${full?`<button class="link fmore" data-fmore="${c.id}">${t("readMore")}</button>`:""}
+      <span class="fsrc">${esc(t("lessonLabel",{t:L.title}))}</span></div>
+      <div class="frail">${c.deep?`<button class="fbtn deepf" data-deep="${c.id}" aria-label="${t("goDeeper")}">${I.deep}<span>${t("deeper")}</span></button>`:""}<button class="fbtn ${on?"on":""}" data-ffav="${c.id}" aria-label="${on?t("removeFav"):t("addFav")}">${I.star}<span>${on?t("saved"):t("save")}</span></button>
+      ${canSpeak&&c.say?`<button class="fbtn" data-fsay="${c.id}" aria-label="${t("listen")}">${I.sound}<span>${t("listen")}</span></button>`:""}
+      <button class="fbtn" data-flesson="${c.id}" aria-label="${t("openLesson")}">${I.learn}<span>${t("lesson")}</span></button>
+      <button class="fbtn" data-fshare="${c.id}" aria-label="${t("share")}">${I.share}<span>${t("share")}</span></button></div>
       <div class="fheart" aria-hidden="true">${heart}</div></section>`;
   }
   function append(n=8){const end=Math.min(queue.length,pos+n);let h="";for(let i=pos;i<end;i++)h+=itemHTML(queue[i],i);pos=end;
-    const sent=list.querySelector(".fsentinel");if(sent)sent.remove();list.insertAdjacentHTML("beforeend",h+(pos<queue.length?`<div class="fsentinel"></div>`:`<section class="fitem fend"><div class="fcard" style="text-align:center"><h2>You've seen everything here</h2><p class="muted">Pick another category or start again.</p><button class="btn" data-frestart>Shuffle again</button></div></section>`));
+    const sent=list.querySelector(".fsentinel");if(sent)sent.remove();list.insertAdjacentHTML("beforeend",h+(pos<queue.length?`<div class="fsentinel"></div>`:`<section class="fitem fend"><div class="fcard" style="text-align:center"><h2>${t("seenAll")}</h2><p class="muted">${t("seenAllSub")}</p><button class="btn" data-frestart>${t("shuffle")}</button></div></section>`));
     list.querySelectorAll(".fitem:not([data-obs])").forEach(x=>{x.dataset.obs=1;obs.observe(x)});const s=list.querySelector(".fsentinel");if(s)io.observe(s)}
   function build(newCat){
     cat=newCat||cat||"for";queue=makeQueue();pos=0;seenAt.clear();
-    if(!queue.length){list.innerHTML=`<section class="fitem"><div class="fcard" style="text-align:center"><h2>${cat==="fav"?"No favourites yet":"Nothing to show yet"}</h2><p class="muted">${cat==="fav"?"Tap the star on any card to save it here.":"Download topics in Learn to fill your feed."}</p><button class="btn" data-tab-go="learn">Go to Learn</button></div></section>`;}
+    if(!queue.length){list.innerHTML=`<section class="fitem"><div class="fcard" style="text-align:center"><h2>${cat==="fav"?t("noFavYet"):t("nothingYet")}</h2><p class="muted">${cat==="fav"?t("tapStar"):t("downloadToFill")}</p><button class="btn" data-tab-go="learn">${t("goLearn")}</button></div></section>`;}
     else{list.innerHTML="";append(8)}
     el.querySelector(".ftop").innerHTML=chips();list.scrollTop=0;
     const a=el.querySelector(`[data-fcat="${cat}"]`);if(a)a.scrollIntoView({inline:"center",block:"nearest"});built=true;
@@ -534,27 +745,28 @@ const FEED=(()=>{
     obs=new IntersectionObserver(es=>es.forEach(e=>onVisible(e.target,e.isIntersecting&&e.intersectionRatio>.6)),{root:list,threshold:[0,.6]});
     let lastTap=0;
     el.addEventListener("click",async e=>{
-      const sec=e.target.closest(".fitem");const t=e.target.closest("button");
-      if(!t){if(sec&&sec.dataset.id){const now=Date.now();if(now-lastTap<320){like(sec,true)}lastTap=now}return}
-      const d=t.dataset;
+      const sec=e.target.closest(".fitem");const tg=e.target.closest("button");
+      if(!tg){if(sec&&sec.dataset.id){const now=Date.now();if(now-lastTap<320){like(sec,true)}lastTap=now}return}
+      const d=tg.dataset;
       if(d.fcat){if(d.fcat!==cat)build(d.fcat);return}
       if(d.ffav){like(sec,false);return}
       if(d.fsay)return speak(CARDS[d.fsay].say);
       if(d.flesson)return openCard(d.flesson);
-      if(d.fmore){const c=CARDS[d.fmore];sec.querySelector(".ftext").innerHTML=fmt(c.text);sec.querySelector(".fcard").classList.add("open");t.remove();return}
+      if(d.fmore){const c=CARDS[d.fmore];sec.querySelector(".ftext").innerHTML=fmt(c.text);sec.querySelector(".fcard").classList.add("open");tg.remove();return}
       if(d.fshare){const c=CARDS[d.fshare],txt=`${c.title}\n\n${c.text.replace(/\*/g,"")}\n\n— Spark Notebook`;
         try{if(navigator.share){await navigator.share({title:c.title,text:txt});return}}catch(err){if(err.name==="AbortError")return}copyText(txt);return}
       if(d.fans!==undefined){const q=QUIZ[d.q],a=+d.fans,ok=a===q.answer;S.quiz[q.id]={ok,t:Date.now()};
         if(ok)delete S.review[q.id];else{const tm=new Date();tm.setHours(24,0,0,0);S.review[q.id]=tm.getTime()}markRead(q.id,false);
         sec.querySelectorAll("[data-fans]").forEach(b=>{b.disabled=true;const k=+b.dataset.fans;if(k===q.answer)b.classList.add("right");else if(k===a)b.classList.add("wrong")});
-        const fb=sec.querySelector(".fb");fb.hidden=false;fb.className="fb "+(ok?"ok":"no");fb.innerHTML=`<b>${ok?"Correct":"Not quite"}</b>${esc(q.explain)}`;return}
+        const fb=sec.querySelector(".fb");fb.hidden=false;fb.className="fb "+(ok?"ok":"no");fb.innerHTML=`<b>${ok?t("correct"):t("notQuite")}</b>${esc(q.explain)}`;return}
       if("frestart" in d)return build(cat);
+      if(d.paywall)return openPaywall(d.paywall);
       if(d.tabGo)return go({tab:d.tabGo});
     });
   }
   function like(sec,fromTap){const id=sec.dataset.id;if(!id)return;const c=CARDS[id];const already=S.saved.includes(id);
     if(fromTap&&already){pop(sec);return}
-    const on=toggleFav(id,"c");const b=sec.querySelector("[data-ffav]");b.classList.toggle("on",on);b.querySelector("span").textContent=on?"Saved":"Save";
+    const on=toggleFav(id,"c");const b=sec.querySelector("[data-ffav]");b.classList.toggle("on",on);b.querySelector("span").textContent=on?t("saved"):t("save");
     if(on){pop(sec);const F=st();F.topic[c.topic]=Math.min(3,(F.topic[c.topic]||0)+.5);save()}}
   function pop(sec){const h=sec.querySelector(".fheart");h.classList.remove("go");void h.offsetWidth;h.classList.add("go")}
   return{
@@ -568,7 +780,8 @@ const FEED=(()=>{
 function sketch(c,extra=""){if(!c)return "";if(c.sketch)return `<div class="sk paper" ${extra}>${c.sketch}</div>`;if(c.viz){const g=VZ(c.viz);return g?`<div class="sk paper" ${extra}>${g}</div>`:""}return ""}
 /* ---------- deep dive ---------- */
 const dEl=()=>document.getElementById("deep");
-const DL={en:{key:"Key idea",myth:"Myth",real:"Reality",fact:"Did you know?",ex:"Worked example",short:"In short",depth:"In depth",title:"Deep dive"},pt:{key:"Ideia-chave",myth:"Mito",real:"Realidade",fact:"Sabias que?",ex:"Exemplo",short:"Em resumo",depth:"Em detalhe",title:"Aprofundar"}};let DLc=DL.en;
+/* deep-dive labels follow the content language (the English topic is explained in Portuguese) */
+const dlFor=lang=>({...STR.en.deep,...((STR[lang]||{}).deep||{})});let DLc=dlFor("en");
 function deepBlock(b){const L=DLc;switch(b.t){
   case "p":return `<p>${md(b.x)}</p>`;
   case "ul":return `<ul>${b.x.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`;
@@ -580,20 +793,20 @@ function deepBlock(b){const L=DLc;switch(b.t){
   case "ex":return `<div class="ex"><span class="eyebrow">${L.ex}</span>${b.x.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`;
   case "f":return `<div class="formula">${esc(b.x)}</div>`;
   default:return ""}}
-function openDeep(id){const c=CARDS[id];if(!c||!c.deep)return;DLc=c.topic==="eng"?DL.pt:DL.en;const el=dEl(),L=LESSONS[c.lesson],on=S.saved.includes(id);el.dataset.t=c.topic;
-  el.innerHTML=`<div class="dtop"><button class="iconbtn" data-dclose aria-label="Close">${I.close}</button><span class="eyebrow" style="text-align:center;min-width:0">${DLc.title} · ${esc(TOPICS[c.topic])}</span><span style="width:44px"></span></div>
-  <div class="dscroll"><article class="dcard"><span class="ctype">${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}
-  <div class="dlead"><span class="eyebrow">${DLc.short}</span>${fmt(c.text)}</div><span class="dsec">${DLc.depth}</span>${c.deep.map(deepBlock).join("")}
-  <div class="dfoot"><button class="btn ghost" data-dsave="${id}">${on?"★ Saved":"☆ Save card"}</button>${canSpeak&&c.say?`<button class="btn ghost" data-dsay="${id}">Listen</button>`:""}<button class="btn" data-dclose>Back</button></div>
-  <span class="muted sm">Lesson: ${esc(L.title)}</span></article></div>`;
+function openDeep(id){const c=CARDS[id];if(!c||!c.deep)return;if(!cardOpen(id))return openPaywall(LESSONS[c.lesson].pack);DLc=dlFor(LANG);const el=dEl(),L=LESSONS[c.lesson],on=S.saved.includes(id);el.dataset.t=c.topic;
+  el.innerHTML=`<div class="dtop"><button class="iconbtn" data-dclose aria-label="${t("close")}">${I.close}</button><span class="eyebrow" style="text-align:center;min-width:0">${DLc.title} · ${esc(TOPICS[c.topic])}</span><span style="width:44px"></span></div>
+  <div class="dscroll"><article class="dcard"><span class="ctype">${esc(c.tag||TYPES[c.type]||TYPES.card)}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}
+  <div class="dlead"><span class="eyebrow">${DLc.short}</span>${fmt(c.text)}</div><span class="dsec">${DLc.depth}</span>${c.dl&&c.dl!==LANG?`<p class="muted sm">${t("notTranslated")}</p>`:""}${c.deep.map(deepBlock).join("")}
+  <div class="dfoot"><button class="btn ghost" data-dsave="${id}">${on?t("savedStar"):t("saveCard")}</button>${canSpeak&&c.say?`<button class="btn ghost" data-dsay="${id}">${t("listen")}</button>`:""}<button class="btn" data-dclose>${t("back")}</button></div>
+  <span class="muted sm">${esc(t("lessonLabel",{t:L.title}))}</span></article></div>`;
   el.hidden=false;el.querySelector(".dscroll").scrollTop=0;markRead(id);S.deepRead=S.deepRead||{};S.deepRead[id]=Date.now();save()}
 function closeDeep(){const el=dEl();if(el)el.hidden=true}
-document.addEventListener("click",e=>{const t=e.target.closest("[data-deep],[data-dclose],[data-dsave],[data-dsay]");if(!t)return;const d=t.dataset;
+document.addEventListener("click",e=>{const tg=e.target.closest("[data-deep],[data-dclose],[data-dsave],[data-dsay]");if(!tg)return;const d=tg.dataset;
   if(d.deep){e.stopPropagation();return openDeep(d.deep)}
   if("dclose" in d)return closeDeep();
-  if(d.dsave){const on=toggleFav(d.dsave,"c");t.textContent=on?"★ Saved":"☆ Save card";return}
+  if(d.dsave){const on=toggleFav(d.dsave,"c");tg.textContent=on?t("savedStar"):t("saveCard");return}
   if(d.dsay)return speak(CARDS[d.dsay].say)},true);
-function thumb(c){if(c.sketch||c.viz)return sketch(c);const w=WSK[c.widget];return w?`<div class="sk paper">${w}</div>`:`<div class="thumbph paper" data-t="${c.topic}">${esc(TYPES[c.type])}</div>`}
+function thumb(c){if(c.sketch||c.viz)return sketch(c);const w=WSK()[c.widget];return w?`<div class="sk paper">${w}</div>`:`<div class="thumbph paper" data-t="${c.topic}">${esc(TYPES[c.type])}</div>`}
 
 /* ---------- icons ---------- */
 const I={
@@ -609,15 +822,16 @@ const I={
  close:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
  left:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg>',
  check:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>',
+ lock:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>',
  search:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4" stroke-linecap="round"/></svg>'
 };
 
 /* ---------- router ---------- */
 let view={tab:"home"};
-const TABS=[["home","Today",I.home],["feed","Feed",I.feed],["learn","Learn",I.learn],["fav","Favourites",I.star],["you","You",I.me]];
+const TABS=()=>[["home",t("tabToday"),I.home],["feed",t("tabFeed"),I.feed],["learn",t("tabLearn"),I.learn],["fav",t("tabFav"),I.star],["you",t("tabYou"),I.me]];
 function go(v){view=v;render();scrollTo(0,0)}
 function render(){
-  document.getElementById("tabs").innerHTML=TABS.map(([k,l,ic])=>`<button data-tab="${k}" ${view.tab===k?'aria-current="page"':""}>${ic}<span>${l}</span></button>`).join("");
+  document.getElementById("tabs").innerHTML=TABS().map(([k,l,ic])=>`<button data-tab="${k}" ${view.tab===k?'aria-current="page"':""}>${ic}<span>${l}</span></button>`).join("");
   document.documentElement.style.setProperty("--tabh",document.querySelector(".tabs").offsetHeight+"px");
   const app=document.getElementById("app");
   if(view.tab==="feed"){app.innerHTML="";FEED.show();return}
@@ -627,135 +841,191 @@ function render(){
   if(view.tab==="fav"){const q=app.querySelector("#fq");q&&q.addEventListener("input",()=>{view.fq=q.value;const p=q.selectionStart;render();const n=document.getElementById("fq");n.focus();n.setSelectionRange(p,p)})}
 }
 document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(b)go({tab:b.dataset.tab})});
-const netPill=()=>navigator.onLine?`<span class="pill on">Online</span>`:`<span class="pill off">Offline</span>`;
+const netPill=()=>navigator.onLine?`<span class="pill on">${t("online")}</span>`:`<span class="pill off">${t("offline")}</span>`;
+const lockMark=L=>GATING&&!lessonOpen(L)?`<span class="lockmark" title="${esc(t("locked"))}">${I.lock}</span>`:"";
 
 /* ---------- views ---------- */
 function picker(){
-  const sel=view.pick||CATALOG.map(c=>c.id);
-  return `<div class="pack"><div class="band" style="background:var(--pen)"></div><div class="in"><h2>Pick topics to download</h2>
-  <p class="muted sm">Each topic is a pack of illustrated lessons and quizzes, saved on this device so it works without a connection.</p>
-  <div class="row">${CATALOG.map(c=>`<button class="btn s ${sel.includes(c.id)?"":"ghost"}" data-pick="${c.id}" aria-pressed="${sel.includes(c.id)}">${sel.includes(c.id)?"✓ ":""}${esc(c.title)}</button>`).join("")}</div>
-  <div class="row"><button class="btn" data-dlpicked ${sel.length?"":"disabled"}>Download ${sel.length} topic${sel.length===1?"":"s"}</button><span class="muted sm">${CATALOG.filter(c=>sel.includes(c.id)).reduce((a,c)=>a+c.lessons,0)} lessons</span></div></div></div>`;
+  const local=CATALOG.find(c=>c.country===S.region);
+  const base=visibleCat().filter(c=>!isCountry(c)),opts=local?[local,...base]:base;
+  const sel=view.pick||opts.map(c=>c.id);
+  return `<div class="pack"><div class="band" style="background:var(--pen)"></div><div class="in"><h2>${t("pickTitle")}</h2>
+  <p class="muted sm">${t("pickSub")}</p>
+  <div class="row">${opts.map(c=>`<button class="btn s ${sel.includes(c.id)?"":"ghost"}" data-pick="${c.id}" aria-pressed="${sel.includes(c.id)}">${sel.includes(c.id)?"✓ ":""}${esc(catTitle(c))}</button>`).join("")}</div>
+  <div class="row"><button class="btn" data-dlpicked ${sel.length?"":"disabled"}>${t("downloadN",{n:sel.length})}</button><span class="muted sm">${t("nLessons",{n:opts.filter(c=>sel.includes(c.id)).reduce((a,c)=>a+c.lessons,0)})}</span></div></div></div>`;
 }
+const fmtDate=(d,o)=>{try{return d.toLocaleDateString(loc(),o)}catch(e){return d.toLocaleDateString("en-GB",o)}};
 function vHome(){
-  const h=new Date().getHours(),greet=h<12?"Good morning":h<19?"Good afternoon":"Good evening";
-  const head=`<div class="spread"><div><div class="eyebrow">${new Date().toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"})}</div><h1>${greet}</h1></div>${netPill()}</div>`;
+  const h=new Date().getHours(),greet=h<12?t("morning"):h<19?t("afternoon"):t("evening");
+  const head=`<div class="spread"><div><div class="eyebrow">${fmtDate(new Date(),{weekday:"long",day:"numeric",month:"long"})}</div><h1>${greet}</h1></div>${netPill()}</div>`;
   if(!Object.keys(LESSONS).length)return head+`<div class="section">${picker()}</div>`;
   const n=(S.reads[today()]||[]).length,pct=Math.min(1,n/S.goal),C=2*Math.PI*40,st=streak();
   const days=[...Array(7)].map((_,k)=>{const d=new Date();d.setDate(d.getDate()-(6-k));return d});
   const L=nextLesson(),due=dueReview();
   let cont="";
   if(L){const p=lessonProgress(L),first=CARDS[L.cardIds.find(id=>!S.seen[id])||L.cardIds[0]];
-    cont=`<div class="section"><h2>${p.seen?"Continue":"Up next"}</h2><button class="cont" data-t="${L.topic}" data-lesson="${L.id}">${thumb(first)}<span class="body"><span class="tlabel"><span class="tdot"></span>${TOPICS[L.topic]} · Lesson ${L.n}</span><h3 style="font-size:19px">${esc(L.title)}</h3><span class="muted sm">${esc(L.summary)}</span><span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${p.seen/p.total*100}%"></i></span><span class="eyebrow">${p.seen}/${p.total} cards</span></span></span></button></div>`;}
-  else cont=`<div class="section"><div class="empty">You've finished every downloaded lesson. Download another topic in Learn, or review your saved cards.</div></div>`;
-  const dc=Object.values(CARDS).filter(c=>c.sketch);const seed=[...today()].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);const spot=dc.length?dc[seed%dc.length]:null;
+    cont=`<div class="section"><h2>${p.seen?t("continue"):t("upNext")}</h2><button class="cont" data-t="${L.topic}" data-lesson="${L.id}">${thumb(first)}<span class="body"><span class="tlabel"><span class="tdot"></span>${TOPICS[L.topic]} · ${t("lessonN",{n:L.n})}</span><h3 style="font-size:19px">${esc(L.title)}</h3><span class="muted sm">${esc(L.summary)}</span><span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${p.seen/p.total*100}%"></i></span><span class="eyebrow">${t("cardsOf",{a:p.seen,b:p.total})}</span></span></span></button></div>`;}
+  else cont=`<div class="section"><div class="empty">${t("allDone")}</div></div>`;
+  const dc=Object.values(CARDS).filter(c=>c.sketch&&cardOpen(c.id));const seed=[...today()].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7);const spot=dc.length?dc[seed%dc.length]:null;
   return head+`<div class="hero" style="margin-top:18px">
-    <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="50" cy="50" r="40" fill="none" stroke="var(--pen)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"/></svg><div class="n"><span>${n}/${S.goal}<small>CARDS TODAY</small></span></div></div>
-    <div><div class="flame">${I.home.replace("<svg",'<svg width="18" height="18"')} ${st}-day streak</div>
-      <div class="muted sm">${n>=S.goal?"Daily goal done. Anything more is a bonus.":`${S.goal-n} more to reach today's goal`}</div>
-      <div class="week">${days.map(d=>`<span class="${(S.reads[dayStr(d)]||[]).length?"on":""} ${dayStr(d)===today()?"today":""}">${d.toLocaleDateString("en-GB",{weekday:"narrow"})}</span>`).join("")}</div></div></div>
-  ${due.length?`<div class="section"><button class="rev" data-review><b>${due.length}</b><span class="meta"><h3>Questions to review</h3><span class="muted sm">You missed these before. A quick retry makes them stick.</span></span></button></div>`:""}
+    <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="50" cy="50" r="40" fill="none" stroke="var(--pen)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"/></svg><div class="n"><span>${n}/${S.goal}<small>${t("cardsToday")}</small></span></div></div>
+    <div><div class="flame">${I.home.replace("<svg",'<svg width="18" height="18"')} ${t("streakDays",{n:st})}</div>
+      <div class="muted sm">${n>=S.goal?t("goalDone"):t("moreToGoal",{n:S.goal-n})}</div>
+      <div class="week">${days.map(d=>`<span class="${(S.reads[dayStr(d)]||[]).length?"on":""} ${dayStr(d)===today()?"today":""}">${fmtDate(d,{weekday:"narrow"})}</span>`).join("")}</div></div></div>
+  ${due.length?`<div class="section"><button class="rev" data-review><b>${due.length}</b><span class="meta"><h3>${t("toReview")}</h3><span class="muted sm">${t("toReviewSub")}</span></span></button></div>`:""}
   ${cont}
   ${(()=>{const fl=S.favL.filter(id=>LESSONS[id]).map(id=>({k:"l",id})),fc=S.saved.filter(id=>CARDS[id]).map(id=>({k:"c",id}));const all=[...fl,...fc].sort((a,b)=>byFavT(a.id,b.id)).slice(0,10);if(!all.length)return "";const cl=fc.map(x=>x.id);
-    return `<div class="section"><div class="spread"><h2>Favourites</h2><button class="link" data-tab-go="fav">See all ${fl.length+fc.length}</button></div><div class="fstrip">${all.map(x=>{if(x.k==="c")return favCard(x.id,cl,false);const L=LESSONS[x.id],c=CARDS[L.cardIds[0]];return `<div class="scard" data-t="${L.topic}"><button class="open" data-lesson="${L.id}">${thumb(c)}<span class="t"><span class="tlabel"><span class="tdot"></span>Lesson · ${TOPICS[L.topic]}</span><h3>${esc(L.title)}</h3></span></button></div>`}).join("")}</div></div>`})()}
-  ${spot?`<div class="section"><div class="spread"><h2>Sketch of the day</h2><span class="tlabel" data-t="${spot.topic}"><span class="tdot"></span>${TOPICS[spot.topic]}</span></div><button class="cont" data-t="${spot.topic}" data-card="${spot.id}">${thumb(spot)}<span class="body"><h3>${esc(spot.title)}</h3><span class="muted sm">${esc(LESSONS[spot.lesson].title)}</span></span></button></div>`:""}
-  <div class="section"><h2>Your topics</h2><div class="tgrid">${Object.values(PACKS).map(pk=>{const ls=pk.lessons.map(l=>LESSONS[l.id]);const tot=ls.reduce((a,l)=>a+l.cardIds.length,0),seen=ls.reduce((a,l)=>a+lessonProgress(l).seen,0);return `<button class="tile" data-t="${pk.topic}" data-pack="${pk.id}"><h3>${esc(pk.title)}</h3><span class="bar"><i style="width:${seen/tot*100}%"></i></span><span class="eyebrow">${seen}/${tot} cards</span></button>`}).join("")}</div></div>`;
+    return `<div class="section"><div class="spread"><h2>${t("favourites")}</h2><button class="link" data-tab-go="fav">${t("seeAll",{n:fl.length+fc.length})}</button></div><div class="fstrip">${all.map(x=>{if(x.k==="c")return favCard(x.id,cl,false);const L=LESSONS[x.id],c=CARDS[L.cardIds[0]];return `<div class="scard" data-t="${L.topic}"><button class="open" data-lesson="${L.id}">${thumb(c)}<span class="t"><span class="tlabel"><span class="tdot"></span>${t("lesson")} · ${TOPICS[L.topic]}</span><h3>${esc(L.title)}</h3></span></button></div>`}).join("")}</div></div>`})()}
+  ${spot?`<div class="section"><div class="spread"><h2>${t("sketchOfDay")}</h2><span class="tlabel" data-t="${spot.topic}"><span class="tdot"></span>${TOPICS[spot.topic]}</span></div><button class="cont" data-t="${spot.topic}" data-card="${spot.id}">${thumb(spot)}<span class="body"><h3>${esc(spot.title)}</h3><span class="muted sm">${esc(LESSONS[spot.lesson].title)}</span></span></button></div>`:""}
+  <div class="section"><h2>${t("yourTopics")}</h2><div class="tgrid">${Object.values(PACKS).filter(pk=>pk.lessons.every(l=>LESSONS[l.id])).map(pk=>{const ls=pk.lessons.map(l=>LESSONS[l.id]);const tot=ls.reduce((a,l)=>a+l.cardIds.length,0),seen=ls.reduce((a,l)=>a+lessonProgress(l).seen,0);return `<button class="tile" data-t="${pk.topic}" data-pack="${pk.id}"><h3>${esc(pk.title)}</h3><span class="bar"><i style="width:${seen/tot*100}%"></i></span><span class="eyebrow">${t("cardsOf",{a:seen,b:tot})}</span></button>`}).join("")}</div></div>`;
 }
-function lessonRow(L){const p=lessonProgress(L),d=S.done[L.id],on=S.favL.includes(L.id);
-  return `<div class="lw"><button class="lesson ${p.done?"done":""}" data-t="${L.topic}" data-lesson="${L.id}"><span class="num">${p.done?"✓":L.n}</span><span class="stack" style="gap:6px;min-width:0"><span class="tlabel"><span class="tdot"></span>${TOPICS[L.topic]}</span><h3>${esc(L.title)}</h3><span class="muted sm">${esc(L.summary)}</span>
-  <span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${p.seen/p.total*100}%"></i></span><span class="eyebrow">${d?`quiz ${d.best}/${d.total}`:`${p.seen}/${p.total} cards`}</span></span></span></button><button class="star ${on?"on":""}" data-favl="${L.id}" aria-label="${on?"Remove lesson from favourites":"Add lesson to favourites"}" aria-pressed="${on}">${I.star}</button></div>`}
-function favCard(id,list,x=true){const c=CARDS[id];return `<div class="scard" data-t="${c.topic}"><button class="open" data-open="${id}" data-list="${list.join(",")}">${thumb(c)}<span class="t"><span class="tlabel"><span class="tdot"></span>${TOPICS[c.topic]}</span><h3>${esc(c.title)}</h3></span></button>${x?`<button class="x on" data-unsave="${id}" aria-label="Remove from favourites">${I.star}</button>`:""}</div>`}
+function lessonRow(L){const p=lessonProgress(L),d=S.done[L.id],on=S.favL.includes(L.id),open=lessonOpen(L);
+  return `<div class="lw"><button class="lesson ${p.done?"done":""} ${open?"":"locked"}" data-t="${L.topic}" data-lesson="${L.id}"><span class="num">${!open?I.lock:p.done?"✓":L.n}</span><span class="stack" style="gap:6px;min-width:0"><span class="tlabel"><span class="tdot"></span>${TOPICS[L.topic]}${GATING&&lessonFree(L)&&!ownsPack(L.pack)?` · ${t("free")}`:""}</span><h3>${esc(L.title)}</h3><span class="muted sm">${esc(L.summary)}</span>
+  ${open?`<span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${p.seen/p.total*100}%"></i></span><span class="eyebrow">${d?`${t("quiz")} ${d.best}/${d.total}`:t("cardsOf",{a:p.seen,b:p.total})}</span></span>`:""}</span></button><button class="star ${on?"on":""}" data-favl="${L.id}" aria-label="${on?t("favLessonRemove"):t("favLessonAdd")}" aria-pressed="${on}">${I.star}</button></div>`}
+function favCard(id,list,x=true){const c=CARDS[id];return `<div class="scard" data-t="${c.topic}"><button class="open" data-open="${id}" data-list="${list.join(",")}">${thumb(c)}<span class="t"><span class="tlabel"><span class="tdot"></span>${TOPICS[c.topic]}</span><h3>${esc(c.title)}</h3></span></button>${x?`<button class="x on" data-unsave="${id}" aria-label="${t("removeFav")}">${I.star}</button>`:""}</div>`}
+function packCard(c){const pk=PACKS[c.id],busy=view.busy===c.id,lang=packLang(c),newer=pk&&(catVersion(c,lang)>(pk.version||0)||(pk.lang||c.base||"en")!==lang);
+  const seen=pk&&pk.lessons.every(l=>LESSONS[l.id])?pk.lessons.reduce((a,l)=>a+lessonProgress(LESSONS[l.id]).seen,0):0;
+  const fallback=LANG!=="en"&&lang==="en"&&(c.base||"en")==="en";
+  return `<div class="pack" data-t="${c.topic}"><div class="band"></div><div class="in"><div class="spread" style="align-items:flex-start"><h2>${esc(catTitle(c))}</h2>${pk?`<span class="status">${I.check} ${t("onDevice")}</span>`:""}</div>
+  <p class="muted sm">${esc(catBlurb(c))}</p><div class="facts">${t("facts",{l:c.lessons,c:c.cards,q:c.quiz,kb:c.kb})}</div>${fallback?`<div class="muted sm">${t("notTranslated")}</div>`:""}
+  ${pk?`<span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${seen/c.cards*100}%"></i></span><span class="eyebrow">${seen}/${c.cards}</span></span>`:""}
+  <div class="row">${pk?`<button class="btn s" data-pack="${c.id}">${t("open")}</button>${newer?`<button class="btn s ghost" data-dl="${c.id}">${t("update")}</button>`:""}`:`<button class="btn s" data-dl="${c.id}" ${busy?"disabled":""}>${busy?t("downloading"):t("download")}</button>`}${GATING&&!ownsPack(c.id)?`<button class="btn s ghost" data-paywall="${c.id}">${I.lock} ${t("unlock")}</button>`:""}</div></div></div>`}
 function vLearn(){
-  if(view.pack&&PACKS[view.pack]){
-    const pk=PACKS[view.pack];
-    return `<button class="link" data-tab-go="learn">‹ All topics</button><div data-t="${pk.topic}" style="margin-top:6px"><span class="tlabel"><span class="tdot"></span>${TOPICS[pk.topic]}</span><h1 style="margin-top:4px">${esc(pk.title)}</h1><p class="muted" style="margin-top:6px">${esc(pk.blurb)}</p></div>
+  if(view.pack&&PACKS[view.pack]&&PACKS[view.pack].lessons.every(l=>LESSONS[l.id])){
+    const pk=PACKS[view.pack],c=catOf(pk.id),nLocked=pk.lessons.filter(l=>!lessonOpen(LESSONS[l.id])).length;
+    return `<button class="link" data-tab-go="learn">${t("allTopics")}</button><div data-t="${pk.topic}" style="margin-top:6px"><span class="tlabel"><span class="tdot"></span>${TOPICS[pk.topic]}</span><h1 style="margin-top:4px">${esc(pk.title)}</h1><p class="muted" style="margin-top:6px">${esc(pk.blurb)}</p></div>
+    ${nLocked?`<div class="note row" style="margin-top:14px"><span style="flex:1;min-width:0">${t("lockedLessons",{n:pk.lessons.length})}</span><button class="btn s" data-paywall="${pk.id}">${I.lock} ${t("unlock")}</button></div>`:""}
     <div class="section">${pk.lessons.map(l=>lessonRow(LESSONS[l.id])).join("")}</div>
-    <div class="section"><h2>Keep a copy</h2><p class="muted sm">Save this topic as a single page with every sketch and answer, to read or print anywhere.</p>
-    <div class="row"><button class="btn s" data-export="${pk.id}">Save as file</button>${view.confirmDel===pk.id?`<button class="btn s danger" data-rm="${pk.id}">Remove from device</button><button class="btn s ghost" data-cancelrm>Keep</button>`:`<button class="btn s ghost" data-askrm="${pk.id}">Remove from device</button>`}</div></div>`;
+    <div class="section"><h2>${t("keepCopy")}</h2><p class="muted sm">${t("keepCopySub")}</p>
+    <div class="row">${ownsPack(pk.id)?`<button class="btn s" data-export="${pk.id}">${t("saveAsFile")}</button>`:""}${view.confirmDel===pk.id?`<button class="btn s danger" data-rm="${pk.id}">${t("removeDevice")}</button><button class="btn s ghost" data-cancelrm>${t("keep")}</button>`:`<button class="btn s ghost" data-askrm="${pk.id}">${t("removeDevice")}</button>`}</div></div>`;
   }
   const q=(view.q||"").trim().toLowerCase();
   let body;
   if(q){
     const hits=Object.values(CARDS).filter(c=>(c.title+" "+c.text+" "+(c.formula||"")+" "+LESSONS[c.lesson].title).toLowerCase().includes(q));
-    body=hits.length?`<div class="eyebrow">${hits.length} card${hits.length>1?"s":""}</div>`+hits.map(c=>`<button class="res" data-t="${c.topic}" data-card="${c.id}">${thumb(c)}<span class="stack" style="gap:3px;min-width:0"><span class="tlabel"><span class="tdot"></span>${TOPICS[c.topic]}</span><h3>${esc(c.title)}</h3><span class="muted sm">${esc(LESSONS[c.lesson].title)}</span></span></button>`).join(""):`<div class="empty">Nothing matches “${esc(q)}” in your downloaded topics.</div>`;
+    body=hits.length?`<div class="eyebrow">${t("nCards",{n:hits.length})}</div>`+hits.map(c=>`<button class="res" data-t="${c.topic}" data-card="${c.id}">${thumb(c)}<span class="stack" style="gap:3px;min-width:0"><span class="tlabel"><span class="tdot"></span>${TOPICS[c.topic]}${lockMark(LESSONS[c.lesson])}</span><h3>${esc(c.title)}</h3><span class="muted sm">${esc(LESSONS[c.lesson].title)}</span></span></button>`).join(""):`<div class="empty">${esc(t("noMatch",{q}))}</div>`;
   }else{
-    const down=CATALOG.filter(c=>PACKS[c.id]).length;
-    body=`<div class="row"><button class="btn s" data-dlall ${down===CATALOG.length?"disabled":""}>${down===CATALOG.length?"All topics downloaded":`Download all (${CATALOG.length-down})`}</button><button class="btn s ghost" data-import>Import topic file</button></div><p class="muted sm" id="usage"></p>`+
-    CATALOG.map(c=>{const pk=PACKS[c.id],busy=view.busy===c.id,newer=pk&&c.version>(pk.version||0);
-      const seen=pk?pk.lessons.reduce((a,l)=>a+lessonProgress(LESSONS[l.id]).seen,0):0;
-      return `<div class="pack" data-t="${c.topic}"><div class="band"></div><div class="in"><div class="spread" style="align-items:flex-start"><h2>${esc(c.title)}</h2>${pk?`<span class="status">${I.check} On device</span>`:""}</div>
-      <p class="muted sm">${esc(c.blurb)}</p><div class="facts">${c.lessons} LESSONS · ${c.cards} CARDS · ${c.quiz} QUESTIONS · ${c.kb} KB</div>
-      ${pk?`<span class="row" style="flex-wrap:nowrap"><span class="bar" style="flex:1"><i style="width:${seen/c.cards*100}%"></i></span><span class="eyebrow">${seen}/${c.cards}</span></span>`:""}
-      <div class="row">${pk?`<button class="btn s" data-pack="${c.id}">Open</button>${newer?`<button class="btn s ghost" data-dl="${c.id}">Update</button>`:""}`:`<button class="btn s" data-dl="${c.id}" ${busy?"disabled":""}>${busy?"Downloading…":"Download"}</button>`}</div></div></div>`}).join("");
+    const vis=visibleCat(),topics=vis.filter(c=>!isCountry(c)),countries=vis.filter(isCountry),mine=countries.filter(c=>c.country===S.region),others=countries.filter(c=>c.country!==S.region);
+    const down=topics.filter(c=>PACKS[c.id]).length;
+    body=`${GATING&&!S.ent.plus?`<button class="plusbanner" data-paywall=""><b>${t("getPlus")}</b><span>${t("paywallSub",{n:topics.length,c:topics.reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`:""}
+    ${mine.length?`<h2>${t("countryTitle")}</h2><p class="muted sm" style="margin-top:-6px">${t("countrySub")}</p>${mine.map(packCard).join("")}`:""}
+    <h2>${t("topicsTitle")}</h2><div class="row"><button class="btn s" data-dlall ${down===topics.length?"disabled":""}>${down===topics.length?t("allDownloaded"):t("downloadAll",{n:topics.length-down})}</button><button class="btn s ghost" data-import>${t("importTopic")}</button></div><p class="muted sm" id="usage"></p>`+
+    topics.map(packCard).join("")+(others.length?`<h2>${t("otherCountries")}</h2>`+others.map(packCard).join(""):"");
   }
-  return `<div class="spread"><h1>Learn</h1>${netPill()}</div><label class="search" style="margin-top:16px"><span class="muted">${I.search}</span><input id="q" type="search" placeholder="Search: ohm, gears, PWM…" value="${esc(view.q||"")}" aria-label="Search cards"></label><div class="section">${body}</div>`;
+  return `<div class="spread"><h1>${t("tabLearn")}</h1>${netPill()}</div><label class="search" style="margin-top:16px"><span class="muted">${I.search}</span><input id="q" type="search" placeholder="${esc(t("searchPh"))}" value="${esc(view.q||"")}" aria-label="${esc(t("searchCards"))}"></label><div class="section">${body}</div>`;
 }
 function vFav(){
-  const q=(view.fq||"").trim().toLowerCase(),t=view.ft||"all";
+  const q=(view.fq||"").trim().toLowerCase(),ft=view.ft||"all";
   const allC=S.saved.filter(id=>CARDS[id]).sort(byFavT),allL=S.favL.filter(id=>LESSONS[id]).sort(byFavT);
-  const head=`<h1>Favourites</h1><p class="muted" style="margin-top:6px">Tap the star on any card or lesson to keep it here.</p>`;
-  if(!allC.length&&!allL.length)return head+`<div class="section"><div class="empty">${I.star.replace("<svg",'<svg width="34" height="34"')}<span>No favourites yet. Open a lesson and tap the star under a card, or the star next to a lesson.</span><button class="btn s" data-tab-go="learn">Go to Learn</button></div></div>`;
+  const head=`<h1>${t("favourites")}</h1><p class="muted" style="margin-top:6px">${t("favSub")}</p>`;
+  if(!allC.length&&!allL.length)return head+`<div class="section"><div class="empty">${I.star.replace("<svg",'<svg width="34" height="34"')}<span>${t("noFavLong")}</span><button class="btn s" data-tab-go="learn">${t("goLearn")}</button></div></div>`;
   const topics=[...new Set([...allL.map(id=>LESSONS[id].topic),...allC.map(id=>CARDS[id].topic)])];
   const cnt=k=>allL.filter(id=>LESSONS[id].topic===k).length+allC.filter(id=>CARDS[id].topic===k).length;
   const mq=str=>!q||str.toLowerCase().includes(q);
-  const ls=allL.filter(id=>{const L=LESSONS[id];return(t==="all"||L.topic===t)&&mq(L.title+" "+L.summary)});
-  const cs=allC.filter(id=>{const c=CARDS[id];return(t==="all"||c.topic===t)&&mq(c.title+" "+c.text+" "+(c.formula||"")+" "+LESSONS[c.lesson].title)});
-  const groups=t==="all"?topics.filter(k=>cs.some(id=>CARDS[id].topic===k)):[t];
-  return head+`<label class="search" style="margin-top:16px"><span class="muted">${I.search}</span><input id="fq" type="search" placeholder="Search your favourites" value="${esc(view.fq||"")}" aria-label="Search favourites"></label>
-  <div class="chips" style="margin-top:12px"><button class="chip" data-ft="all" aria-pressed="${t==="all"}">All <span class="n">${allL.length+allC.length}</span></button>${topics.map(k=>`<button class="chip" data-t="${k}" data-ft="${k}" aria-pressed="${t===k}"><span class="tdot"></span>${TOPICS[k]} <span class="n">${cnt(k)}</span></button>`).join("")}</div>
-  ${!ls.length&&!cs.length?`<div class="section"><div class="empty">Nothing in your favourites matches “${esc(q)}”.</div></div>`:""}
-  ${ls.length?`<div class="section"><h2>Lessons</h2>${ls.map(id=>lessonRow(LESSONS[id])).join("")}</div>`:""}
-  ${cs.length?`<div class="section"><div class="spread"><h2>Cards</h2><button class="btn s" data-play="${cs.join(",")}">Read all ${cs.length}</button></div>
-  ${groups.map(k=>{const g=cs.filter(id=>CARDS[id].topic===k);return g.length?`${t==="all"&&groups.length>1?`<div class="ghead" data-t="${k}"><span class="tlabel"><span class="tdot"></span>${TOPICS[k]}</span></div>`:""}<div class="sgrid">${g.map(id=>favCard(id,cs)).join("")}</div>`:""}).join("")}</div>`:""}`;
+  const ls=allL.filter(id=>{const L=LESSONS[id];return(ft==="all"||L.topic===ft)&&mq(L.title+" "+L.summary)});
+  const cs=allC.filter(id=>{const c=CARDS[id];return(ft==="all"||c.topic===ft)&&mq(c.title+" "+c.text+" "+(c.formula||"")+" "+LESSONS[c.lesson].title)});
+  const groups=ft==="all"?topics.filter(k=>cs.some(id=>CARDS[id].topic===k)):[ft];
+  return head+`<label class="search" style="margin-top:16px"><span class="muted">${I.search}</span><input id="fq" type="search" placeholder="${esc(t("searchFav"))}" value="${esc(view.fq||"")}" aria-label="${esc(t("searchFav"))}"></label>
+  <div class="chips" style="margin-top:12px"><button class="chip" data-ft="all" aria-pressed="${ft==="all"}">${t("all")} <span class="n">${allL.length+allC.length}</span></button>${topics.map(k=>`<button class="chip" data-t="${k}" data-ft="${k}" aria-pressed="${ft===k}"><span class="tdot"></span>${TOPICS[k]} <span class="n">${cnt(k)}</span></button>`).join("")}</div>
+  ${!ls.length&&!cs.length?`<div class="section"><div class="empty">${esc(t("noFavMatch",{q}))}</div></div>`:""}
+  ${ls.length?`<div class="section"><h2>${t("lessons")}</h2>${ls.map(id=>lessonRow(LESSONS[id])).join("")}</div>`:""}
+  ${cs.length?`<div class="section"><div class="spread"><h2>${t("cards")}</h2><button class="btn s" data-play="${cs.join(",")}">${t("readAll",{n:cs.length})}</button></div>
+  ${groups.map(k=>{const g=cs.filter(id=>CARDS[id].topic===k);return g.length?`${ft==="all"&&groups.length>1?`<div class="ghead" data-t="${k}"><span class="tlabel"><span class="tdot"></span>${TOPICS[k]}</span></div>`:""}<div class="sgrid">${g.map(id=>favCard(id,cs)).join("")}</div>`:""}).join("")}</div>`:""}`;
 }
 function vYou(){
   const learned=Object.keys(S.seen).filter(id=>CARDS[id]||id.includes("-c")).length,lessons=Object.keys(S.done).length;
   const qs=Object.values(S.quiz),acc=qs.length?Math.round(qs.filter(x=>x.ok).length/qs.length*100):0;
   const days=[...Array(14)].map((_,k)=>{const d=new Date();d.setDate(d.getDate()-(13-k));return(S.reads[dayStr(d)]||[]).length}),max=Math.max(S.goal,...days);
   const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone,ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
-  const install=standalone?"":deferredInstall?`<div class="note row"><span style="flex:1;min-width:0">Install Spark so it opens like an app and works offline.</span><button class="btn s" data-install>Install</button></div>`:ios?`<div class="note">To install: in Safari tap Share, then <b>Add to Home Screen</b>. Installed, it works offline and keeps your history.</div>`:"";
+  const install=standalone||NATIVE?"":deferredInstall?`<div class="note row"><span style="flex:1;min-width:0">${t("installNote")}</span><button class="btn s" data-install>${t("install")}</button></div>`:ios?`<div class="note">${t("iosInstall")}</div>`:"";
   const items=[...S.log].reverse().filter(x=>CARDS[x.id]).slice(0,view.allHist?3000:12);let hist="",last="";
-  for(const x of items){const d=dayStr(new Date(x.t));if(d!==last){last=d;hist+=`<div class="day">${d===today()?"Today":new Date(x.t).toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"})}</div>`}
-    const c=CARDS[x.id];hist+=`<button class="hrow" data-t="${c.topic}" data-card="${c.id}"><span class="tdot"></span><span class="meta"><h3>${esc(c.title)}</h3><span class="muted sm">${esc(LESSONS[c.lesson].title)}</span></span><span class="eyebrow">${new Date(x.t).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}</span></button>`}
-  return `<h1>You</h1>${install?`<div style="margin-top:14px">${install}</div>`:""}
-  <div class="stats" style="margin-top:16px"><div class="stat"><b>${learned}</b><span class="muted">Cards learned</span></div><div class="stat"><b>${lessons}</b><span class="muted">Lessons finished</span></div>
-  <div class="stat"><b style="color:var(--flame)">${streak()}</b><span class="muted">Day streak · best ${Math.max(S.best,streak())}</span></div><div class="stat"><b>${qs.length?acc+"%":"–"}</b><span class="muted">Quiz accuracy</span></div></div>
-  <div class="chart section"><div class="spread"><h2>Last 14 days</h2><span class="eyebrow">goal ${S.goal}/day</span></div><div class="bars">${days.map(n=>`<div title="${n} cards"><i class="${n?"":"zero"}" style="height:${Math.max(4,n/max*100)}%"></i></div>`).join("")}</div><div class="axis"><span>2 weeks ago</span><span>today</span></div></div>
-  <div class="section"><h2>Daily goal</h2><div class="seg" role="group" aria-label="Daily goal">${[5,10,20].map(g=>`<button data-goal="${g}" aria-pressed="${S.goal===g}">${g} cards</button>`).join("")}</div></div>
-  <div class="section"><div class="spread"><h2>History</h2>${S.log.length>12&&!view.allHist?`<button class="link" data-allhist>Show all</button>`:""}</div>${hist||`<div class="empty">Cards you read appear here, newest first.</div>`}</div>
-  <div class="section"><h2>Backup</h2><p class="muted sm">Progress, history and saved cards live only on this device. Save a backup file to keep them safe or move them to another device.</p>
-  <div class="row"><button class="btn s" data-backup>Save backup file</button><button class="btn s ghost" data-import>Restore from file</button></div></div>`;
+  for(const x of items){const d=dayStr(new Date(x.t));if(d!==last){last=d;hist+=`<div class="day">${d===today()?t("today"):fmtDate(new Date(x.t),{weekday:"short",day:"numeric",month:"short"})}</div>`}
+    const c=CARDS[x.id];hist+=`<button class="hrow" data-t="${c.topic}" data-card="${c.id}"><span class="tdot"></span><span class="meta"><h3>${esc(c.title)}</h3><span class="muted sm">${esc(LESSONS[c.lesson].title)}</span></span><span class="eyebrow">${new Date(x.t).toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}</span></button>`}
+  const sub=GATING?`<div class="section"><h2>${t("subscription")}</h2>${S.ent.plus?`<div class="note"><b>${t("plusActive")}</b><br><span class="muted sm">${t("plusSub")}</span></div>`:`<button class="plusbanner" data-paywall=""><b>${t("getPlus")}</b><span>${t("paywallSub",{n:visibleCat().filter(c=>!isCountry(c)).length,c:visibleCat().filter(c=>!isCountry(c)).reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`}<div class="row"><button class="btn s ghost" data-restore>${t("restore")}</button></div></div>`:"";
+  return `<h1>${t("tabYou")}</h1>${install?`<div style="margin-top:14px">${install}</div>`:""}
+  <div class="stats" style="margin-top:16px"><div class="stat"><b>${learned}</b><span class="muted">${t("cardsLearned")}</span></div><div class="stat"><b>${lessons}</b><span class="muted">${t("lessonsFinished")}</span></div>
+  <div class="stat"><b style="color:var(--flame)">${streak()}</b><span class="muted">${t("dayStreakBest",{n:Math.max(S.best,streak())})}</span></div><div class="stat"><b>${qs.length?acc+"%":"–"}</b><span class="muted">${t("quizAcc")}</span></div></div>
+  <div class="chart section"><div class="spread"><h2>${t("last14")}</h2><span class="eyebrow">${t("goalPerDay",{n:S.goal})}</span></div><div class="bars">${days.map(n=>`<div title="${n}"><i class="${n?"":"zero"}" style="height:${Math.max(4,n/max*100)}%"></i></div>`).join("")}</div><div class="axis"><span>${t("twoWeeksAgo")}</span><span>${t("todayLow")}</span></div></div>
+  <div class="section"><h2>${t("dailyGoal")}</h2><div class="seg" role="group" aria-label="${esc(t("dailyGoal"))}">${[5,10,20].map(g=>`<button data-goal="${g}" aria-pressed="${S.goal===g}">${t("nCards",{n:g})}</button>`).join("")}</div></div>
+  <div class="section"><h2>${t("language")}</h2><div class="chips">${Object.entries(LANGS).map(([k,v])=>`<button class="chip" data-lang="${k}" aria-pressed="${LANG===k}">${esc(v.name)}</button>`).join("")}</div>
+  <h2 style="margin-top:8px">${t("country")}</h2><p class="muted sm" style="margin-top:-6px">${t("countryHelp")}</p><div class="chips">${Object.keys(COUNTRIES).map(k=>`<button class="chip" data-region="${k}" aria-pressed="${S.region===k}">${esc(TOPICS[COUNTRIES[k]])}</button>`).join("")}<button class="chip" data-region="none" aria-pressed="${!S.region}">${t("countryNone")}</button></div></div>
+  ${sub}
+  <div class="section"><div class="spread"><h2>${t("history")}</h2>${S.log.length>12&&!view.allHist?`<button class="link" data-allhist>${t("showAll")}</button>`:""}</div>${hist||`<div class="empty">${t("histEmpty")}</div>`}</div>
+  <div class="section"><h2>${t("backup")}</h2><p class="muted sm">${t("backupSub")}</p>
+  <div class="row"><button class="btn s" data-backup>${t("saveBackup")}</button><button class="btn s ghost" data-import>${t("restoreFile")}</button></div></div>`;
 }
+
+/* ---------- paywall ---------- */
+function openPaywall(packId){
+  const el=document.getElementById("paywall"),c=packId?catOf(packId):null,tops=visibleCat().filter(x=>!isCountry(x));
+  const pr=k=>(NATIVE&&NATIVE.price&&NATIVE.price(k))||PRICES[k];
+  view.plan=view.plan||"plus_y";
+  const plan=(k,title,note,badge)=>`<button class="plan ${view.plan===k?"on":""}" data-plan="${k}" aria-pressed="${view.plan===k}"><span class="pt"><b>${title}</b>${badge?`<span class="badge ok">${badge}</span>`:""}</span><span class="muted sm">${note}</span></button>`;
+  el.dataset.pack=packId||"";
+  el.innerHTML=`<div class="pwbox" role="dialog" aria-modal="true" aria-label="${esc(t("paywallTitle"))}"><button class="iconbtn pwclose" data-pwclose aria-label="${esc(t("close"))}">${I.close}</button>
+  <div class="pwstats paper"><span><b>${tops.length}</b>${t("topicsTitle")}</span><span><b>${tops.reduce((a,x)=>a+x.lessons,0)}</b>${t("lessons")}</span><span><b>${tops.reduce((a,x)=>a+x.cards,0).toLocaleString(loc())}</b>${t("cards")}</span></div>
+  <h2>${t("paywallTitle")}</h2><p class="muted">${t("paywallSub",{n:tops.length,c:tops.reduce((a,x)=>a+x.cards,0).toLocaleString(loc())})}</p>
+  <div class="plans">${plan("plus_y",t("planAnnual"),t("planAnnualNote",{price:pr("plus_y")}),t("bestValue"))}${plan("plus_m",t("planMonthly"),t("planMonthlyNote",{price:pr("plus_m")}))}${c?plan("pack:"+c.id,t("thisPack",{pack:catTitle(c)}),t("thisPackNote",{price:pr("pack")})):""}</div>
+  <button class="btn pwbuy" data-pwbuy>${view.plan==="plus_y"?t("startTrial"):t("buy")}</button>
+  <p class="muted sm">${t("family")} ${view.plan.startsWith("plus")?t("cancelAnytime"):""}</p>
+  ${NATIVE?"":`<p class="muted sm">${t("previewNote")}</p>`}
+  <div class="row" style="justify-content:center"><button class="link" data-restore>${t("restore")}</button><a class="link" href="legal/terms.html" target="_blank" rel="noopener">${t("terms")}</a><a class="link" href="legal/privacy.html" target="_blank" rel="noopener">${t("privacy")}</a></div></div>`;
+  el.hidden=false;
+}
+function closePaywall(){const el=document.getElementById("paywall");if(el)el.hidden=true}
+async function buy(plan){
+  try{
+    let res;
+    if(NATIVE)res=await NATIVE.buy(plan.startsWith("pack:")?"spark.pack."+plan.slice(5):plan==="plus_y"?"spark.plus.annual":"spark.plus.monthly");
+    else res={ok:true,plus:plan.startsWith("plus"),pack:plan.startsWith("pack:")?plan.slice(5):null};
+    if(!res||!res.ok)return toast(t("purchaseFailed"));
+    if(res.plus)S.ent.plus=true;if(res.pack&&!S.ent.packs.includes(res.pack))S.ent.packs.push(res.pack);
+    if(res.entitlements)S.ent=Object.assign(S.ent,res.entitlements);
+    save();closePaywall();indexPacks();toast(t("purchased"));if(R)drawReader();else render();
+  }catch(e){toast(t("purchaseFailed"))}
+}
+async function restorePurchases(){
+  try{const ent=NATIVE?await NATIVE.restore():S.ent;if(ent){S.ent={plus:!!ent.plus,packs:ent.packs||[]};save()}
+    toast(S.ent.plus||S.ent.packs.length?t("restored"):t("nothingRestore"));indexPacks();render()}catch(e){toast(t("purchaseFailed"))}
+}
+document.addEventListener("click",e=>{const tg=e.target.closest("[data-paywall],[data-pwclose],[data-plan],[data-pwbuy],[data-restore]");if(!tg)return;const d=tg.dataset;
+  if(d.paywall!==undefined){e.stopPropagation();return openPaywall(d.paywall)}
+  if("pwclose" in d)return closePaywall();
+  if(d.plan){view.plan=d.plan;return openPaywall(document.getElementById("paywall").dataset.pack)}
+  if("pwbuy" in d)return buy(view.plan);
+  if("restore" in d)return restorePurchases()},true);
+async function setLang(l){if(!LANGS[l]||l===S.lang)return;S.lang=l;save();applyLang();indexPacks();render();
+  const st=stalePacks();if(st.length&&navigator.onLine){toast(t("langChanged",{l:LANGS[l].name}));for(const id of st){try{await downloadPack(id)}catch(e){}}render()}}
 
 /* ---------- actions ---------- */
 async function doDownload(ids){
   let ok=0,fail=0;for(const id of ids){view.busy=id;render();try{await downloadPack(id);ok++}catch(e){fail++}}
-  view.busy=null;render();toast(fail?`${ok} downloaded, ${fail} failed. Check the connection and try again.`:`${ok} topic${ok===1?"":"s"} ready offline`);
+  view.busy=null;render();toast(fail?t("dlResult",{ok,fail}):t("topicsReady",{n:ok}));
 }
 function startLesson(lid){
-  const L=LESSONS[lid],p=lessonProgress(L);
+  const L=LESSONS[lid],p=lessonProgress(L);if(!lessonOpen(L))return openPaywall(L.pack);
   const items=[...L.cardIds.map(id=>({k:"c",id})),...L.quizIds.map(id=>({k:"q",id}))];
   let i=L.cardIds.findIndex(id=>!S.seen[id]);if(i<0)i=p.done?0:L.cardIds.length;
-  openReader(items,i,{mode:"lesson",lesson:lid,title:`Lesson ${L.n} · ${L.title}`,topic:L.topic});
+  openReader(items,i,{mode:"lesson",lesson:lid,title:t("lessonTitle",{n:L.n,t:L.title}),topic:L.topic});
 }
-function openCard(id,list){const c=CARDS[id];if(!list){const L=LESSONS[c.lesson];return openReader([...L.cardIds.map(x=>({k:"c",id:x})),...L.quizIds.map(x=>({k:"q",id:x}))],L.cardIds.indexOf(id),{mode:"lesson",lesson:L.id,title:`Lesson ${L.n} · ${L.title}`,topic:L.topic})}
-  openReader(list.map(x=>({k:"c",id:x})),list.indexOf(id),{mode:"list",title:"Saved",topic:c.topic})}
+function openCard(id,list){const c=CARDS[id];if(!cardOpen(id))return openPaywall(LESSONS[c.lesson].pack);if(!list){const L=LESSONS[c.lesson];return openReader([...L.cardIds.map(x=>({k:"c",id:x})),...L.quizIds.map(x=>({k:"q",id:x}))],L.cardIds.indexOf(id),{mode:"lesson",lesson:L.id,title:t("lessonTitle",{n:L.n,t:L.title}),topic:L.topic})}
+  list=list.filter(cardOpen);openReader(list.map(x=>({k:"c",id:x})),list.indexOf(id),{mode:"list",title:t("savedList"),topic:c.topic})}
 document.getElementById("app").addEventListener("click",async e=>{
-  const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+  const tg=e.target.closest("button");if(!tg)return;const d=tg.dataset;
   if(d.lesson)return startLesson(d.lesson);
   if(d.card)return openCard(d.card);
   if(d.open)return openCard(d.open,d.list.split(","));
-  if(d.play){const ids=d.play.split(",");return openReader(ids.map(id=>({k:"c",id})),0,{mode:"list",title:"Saved",topic:CARDS[ids[0]].topic})}
-  if("review" in d){const ids=dueReview();return openReader(ids.map(id=>({k:"q",id})),0,{mode:"review",title:"Review",topic:QUIZ[ids[0]].topic})}
+  if(d.play){const ids=d.play.split(",").filter(cardOpen);if(!ids.length)return;return openReader(ids.map(id=>({k:"c",id})),0,{mode:"list",title:t("savedList"),topic:CARDS[ids[0]].topic})}
+  if("review" in d){const ids=dueReview();return openReader(ids.map(id=>({k:"q",id})),0,{mode:"review",title:t("review"),topic:QUIZ[ids[0]].topic})}
   if(d.pack)return go({tab:"learn",pack:d.pack});
   if(d.tabGo)return go({tab:d.tabGo});
-  if(d.pick){const sel=view.pick||CATALOG.map(c=>c.id);view.pick=sel.includes(d.pick)?sel.filter(x=>x!==d.pick):[...sel,d.pick];return render()}
-  if("dlpicked" in d)return doDownload(view.pick||CATALOG.map(c=>c.id));
+  if(d.pick){const sel=view.pick||[...(CATALOG.find(c=>c.country===S.region)?[CATALOG.find(c=>c.country===S.region).id]:[]),...visibleCat().filter(c=>!isCountry(c)).map(c=>c.id)];view.pick=sel.includes(d.pick)?sel.filter(x=>x!==d.pick):[...sel,d.pick];return render()}
+  if("dlpicked" in d)return doDownload(view.pick||[...(CATALOG.find(c=>c.country===S.region)?[CATALOG.find(c=>c.country===S.region).id]:[]),...visibleCat().filter(c=>!isCountry(c)).map(c=>c.id)]);
   if(d.dl)return doDownload([d.dl]);
-  if("dlall" in d)return doDownload(CATALOG.filter(c=>!PACKS[c.id]).map(c=>c.id));
+  if("dlall" in d)return doDownload(visibleCat().filter(c=>!isCountry(c)&&!PACKS[c.id]).map(c=>c.id));
   if(d.askrm){view.confirmDel=d.askrm;return render()}
   if("cancelrm" in d){view.confirmDel=null;return render()}
-  if(d.rm){await removePack(d.rm);toast("Topic removed. Your progress is kept.");return go({tab:"learn"})}
+  if(d.rm){await removePack(d.rm);toast(t("topicRemoved"));return go({tab:"learn"})}
   if(d.export){const pk=PACKS[d.export];return saveFile(`spark-${pk.id}.html`,packHTML(pk),"text/html")}
   if("import" in d)return document.getElementById("filein").click();
   if("backup" in d)return saveFile(`spark-backup-${today()}.json`,JSON.stringify({kind:"spark-backup",state:S,packs:Object.values(PACKS)}),"application/json");
@@ -763,49 +1033,51 @@ document.getElementById("app").addEventListener("click",async e=>{
   if(d.favl){toggleFav(d.favl,"l");return render()}
   if(d.ft){view.ft=d.ft;return render()}
   if(d.goal){S.goal=+d.goal;save();return render()}
+  if(d.lang)return setLang(d.lang);
+  if(d.region){S.region=d.region==="none"?"":d.region;save();return render()}
   if("allhist" in d){view.allHist=1;return render()}
   if("install" in d&&deferredInstall){deferredInstall.prompt();deferredInstall=null}
 });
 document.getElementById("filein").addEventListener("change",async e=>{
   const f=e.target.files[0];e.target.value="";if(!f)return;
   try{const data=JSON.parse(await f.text());
-    if(data.kind==="spark-backup"){S=Object.assign(defaults(),data.state);save();for(const p of data.packs||[])if(validPack(p))await DB.put(p);await loadPacks();render();return toast("Backup restored")}
+    if(data.kind==="spark-backup"){S=Object.assign(defaults(),data.state);save();applyLang();for(const p of data.packs||[])if(validPack(p))await DB.put(p);await loadPacks();render();return toast(t("backupRestored"))}
     const list=Array.isArray(data.packs)?data.packs:[data];let n=0;
     for(const p of list)if(validPack(p)){p.downloadedAt=new Date().toISOString();await DB.put(p);n++}
-    if(!n)throw 0;await loadPacks();render();toast(`${n} topic${n===1?"":"s"} imported`);
-  }catch(err){toast("That file isn't a Spark topic or backup.")}
+    if(!n)throw 0;await loadPacks();render();toast(t("imported",{n}));
+  }catch(err){toast(t("badFile"))}
 });
-async function showUsage(){const el=document.getElementById("usage");if(!el||!navigator.storage?.estimate)return;try{const {usage}=await navigator.storage.estimate();const per=await navigator.storage.persisted?.();el.textContent=`Using ${(usage/1024).toFixed(0)} KB on this device${per?" · protected from automatic clearing":""}.`}catch(e){}}
+async function showUsage(){const el=document.getElementById("usage");if(!el||!navigator.storage?.estimate)return;try{const {usage}=await navigator.storage.estimate();const per=await navigator.storage.persisted?.();el.textContent=t("usage",{kb:(usage/1024).toFixed(0)})+(per?t("usageProt"):"")}catch(e){}}
 
 /* ---------- widgets ---------- */
-const WSK={
+const WSK=()=>({
  ohm:`<svg viewBox="0 0 320 150"><g class="d"><path class="s" d="M40 70 V25 H120"/><path class="s" d="M120 25 L125 18 L135 32 L145 18 L155 32 L165 18 L170 25"/><path class="s" d="M170 25 H260 V62"/><path class="s" d="M260 98 V130 H40 V90"/><path class="s" d="M27 76 H53 M34 84 H46"/></g><circle data-glow cx="260" cy="80" r="26" fill="var(--hl)"/><g class="d"><circle class="s bgf" cx="260" cy="80" r="17"/><path class="s" d="M249 69 L271 91 M271 69 L249 91"/></g><text x="80" y="84" class="r" data-vt>12 V</text><text x="145" y="52" data-rt>4 Ω</text><text x="160" y="144" class="a" data-it>3 A →</text></svg>`,
  divider:`<svg viewBox="0 0 320 170"><g class="d"><path class="s" d="M90 20 V35"/><path class="s" d="M90 35 L83 41 L97 47 L83 53 L97 59 L83 65 L90 70"/><path class="s" d="M90 70 V90 H200"/><path class="s" d="M90 90 V105"/><path class="s" d="M90 105 L83 111 L97 117 L83 123 L97 129 L83 135 L90 140"/><path class="s" d="M90 140 V152 M76 152 H104 M81 157 H99 M86 162 H94"/><circle class="fi" cx="90" cy="90" r="3.5"/></g><text x="98" y="20" text-anchor="start" class="r" data-vin>Vin 5 V</text><text x="104" y="58" text-anchor="start" data-r1>R1 10 kΩ</text><text x="104" y="128" text-anchor="start" data-r2>R2 18 kΩ</text><text x="208" y="96" text-anchor="start" class="a" data-vo>Vout 3.33 V</text></svg>`,
- lever:`<svg viewBox="0 0 320 170"><g data-beam><g class="d"><rect class="s bgf" x="14" y="104" width="292" height="7" rx="2"/><rect class="s bgf" data-lb x="40" y="74" width="30" height="30" rx="3"/><rect class="s bgf" x="181" y="66" width="38" height="38" rx="3"/></g><text data-lt x="55" y="66">2 kg</text><text x="200" y="58">6 kg</text></g><g class="d"><path class="s bgf" d="M160 111 L144 140 H176 Z"/><path class="s" d="M20 140 H300"/></g><text data-st x="160" y="164" class="a">balanced</text></svg>`,
- neuron:`<svg viewBox="0 0 320 180"><g class="d"><path class="s" d="M82 40 L172 82 M82 90 L170 90 M82 140 L172 98"/><circle class="s bgf" data-in0 cx="70" cy="40" r="11"/><circle class="s bgf" data-in1 cx="70" cy="90" r="11"/><circle class="s bgf" data-in2 cx="70" cy="140" r="11"/><circle class="s bgf" data-node cx="200" cy="90" r="27"/><path class="a" d="M228 90 H262"/></g><text x="56" y="46" text-anchor="end">sunny</text><text x="56" y="96" text-anchor="end">weekend</text><text x="56" y="146" text-anchor="end">rain</text><text x="124" y="54" class="a">+3</text><text x="124" y="84" class="a">+2</text><text x="124" y="138" class="r">−4</text><text x="200" y="97" data-sum style="font-size:22px">Σ</text><text x="268" y="97" text-anchor="start" data-go class="a" style="font-size:22px">go?</text><text x="200" y="140" style="font-size:15px">bias −2</text></svg>`,
- nextword:`<svg viewBox="0 0 320 170"><text x="16" y="28" text-anchor="start" style="font-size:20px">“The cat sat on the …”</text>${["mat","sofa","floor","bed","roof"].map((w,k)=>`<text x="72" y="${60+k*24}" text-anchor="end" style="font-size:17px">${w}</text><rect data-b${k} class="${k?"fpen":"fred"}" x="80" y="${47+k*24}" height="16" rx="3" width="${[180,41,26,15,9][k]}"/><text data-p${k} x="${86+[180,41,26,15,9][k]}" y="${60+k*24}" text-anchor="start" style="font-size:15px">${[62,14,9,5,3][k]}%</text>`).join("")}</svg>`,
- clock:`<svg viewBox="0 0 320 150"><g class="d"><circle class="s bgf" cx="160" cy="75" r="56"/>${[...Array(12)].map((_,k)=>{const a=k*Math.PI/6;return `<path class="s" d="M${(160+48*Math.sin(a)).toFixed(1)} ${(75-48*Math.cos(a)).toFixed(1)} L${(160+54*Math.sin(a)).toFixed(1)} ${(75-54*Math.cos(a)).toFixed(1)}"/>`}).join("")}<path class="s" data-hh d="M160 75 L160 45" style="stroke-width:4"/><path class="r" data-mh d="M160 75 L160 30"/><circle class="fi" cx="160" cy="75" r="3.5"/></g><text x="250" y="80" text-anchor="start" class="a" data-ct>Lisbon</text></svg>`,
+ lever:`<svg viewBox="0 0 320 170"><g data-beam><g class="d"><rect class="s bgf" x="14" y="104" width="292" height="7" rx="2"/><rect class="s bgf" data-lb x="40" y="74" width="30" height="30" rx="3"/><rect class="s bgf" x="181" y="66" width="38" height="38" rx="3"/></g><text data-lt x="55" y="66">2 kg</text><text x="200" y="58">6 kg</text></g><g class="d"><path class="s bgf" d="M160 111 L144 140 H176 Z"/><path class="s" d="M20 140 H300"/></g><text data-st x="160" y="164" class="a">${tw("balanced")}</text></svg>`,
+ neuron:`<svg viewBox="0 0 320 180"><g class="d"><path class="s" d="M82 40 L172 82 M82 90 L170 90 M82 140 L172 98"/><circle class="s bgf" data-in0 cx="70" cy="40" r="11"/><circle class="s bgf" data-in1 cx="70" cy="90" r="11"/><circle class="s bgf" data-in2 cx="70" cy="140" r="11"/><circle class="s bgf" data-node cx="200" cy="90" r="27"/><path class="a" d="M228 90 H262"/></g><text x="56" y="46" text-anchor="end">${tw("sunnyS")}</text><text x="56" y="96" text-anchor="end">${tw("weekendS")}</text><text x="56" y="146" text-anchor="end">${tw("rainS")}</text><text x="124" y="54" class="a">+3</text><text x="124" y="84" class="a">+2</text><text x="124" y="138" class="r">−4</text><text x="200" y="97" data-sum style="font-size:22px">Σ</text><text x="268" y="97" text-anchor="start" data-go class="a" style="font-size:22px">${tw("go")}</text><text x="200" y="140" style="font-size:15px">${tw("bias")} −2</text></svg>`,
+ nextword:`<svg viewBox="0 0 320 170"><text x="16" y="28" text-anchor="start" style="font-size:20px">“${tw("sentence")}”</text>${tw("words").map((w,k)=>`<text x="72" y="${60+k*24}" text-anchor="end" style="font-size:17px">${w}</text><rect data-b${k} class="${k?"fpen":"fred"}" x="80" y="${47+k*24}" height="16" rx="3" width="${[180,41,26,15,9][k]}"/><text data-p${k} x="${86+[180,41,26,15,9][k]}" y="${60+k*24}" text-anchor="start" style="font-size:15px">${[62,14,9,5,3][k]}%</text>`).join("")}</svg>`,
+ clock:`<svg viewBox="0 0 320 150"><g class="d"><circle class="s bgf" cx="160" cy="75" r="56"/>${[...Array(12)].map((_,k)=>{const a=k*Math.PI/6;return `<path class="s" d="M${(160+48*Math.sin(a)).toFixed(1)} ${(75-48*Math.cos(a)).toFixed(1)} L${(160+54*Math.sin(a)).toFixed(1)} ${(75-54*Math.cos(a)).toFixed(1)}"/>`}).join("")}<path class="s" data-hh d="M160 75 L160 45" style="stroke-width:4"/><path class="r" data-mh d="M160 75 L160 30"/><circle class="fi" cx="160" cy="75" r="3.5"/></g><text x="250" y="80" text-anchor="start" class="a" data-ct>${tw("base")}</text></svg>`,
  wave:`<svg viewBox="0 0 320 140"><g class="d"><path class="dash" d="M10 70 H310"/><path class="a" data-wp d="${(()=>{let d="M10 70";for(let px=0;px<=300;px+=3)d+=` L${10+px} ${(70-38*Math.sin(2*Math.PI*px/60)).toFixed(1)}`;return d})()}"/><path class="r" data-wl d=""/></g><text data-wt x="160" y="132" class="r">λ</text></svg>`
-};
+});
 function widgetHTML(c){
   const R=(id,label,min,max,step,val)=>`<div class="ctl"><label for="${id}">${label}</label><input type="range" id="${id}" min="${min}" max="${max}" step="${step}" value="${val}"><output for="${id}"></output></div>`;
   const body={
     ohm:R("w-v","V",1,24,1,12)+R("w-r","R",1,48,1,4)+`<div class="readout" data-out></div>`,
     divider:R("w-vin","Vin",1,24,0.5,5)+R("w-r1","R1",1,100,1,10)+R("w-r2","R2",1,100,1,18)+`<div class="readout" data-out></div><span class="badge" data-badge></span>`,
-    lever:R("w-m","Mass",1,10,1,2)+R("w-d","Distance",0.5,4,0.25,2)+`<div class="readout" data-out></div>`,
-    neuron:`<div class="togs">${[["w-s","Sunny",1],["w-w","Weekend",0],["w-rn","Raining",0]].map(([id,l,on])=>`<label class="tog" for="${id}"><input type="checkbox" id="${id}" ${on?"checked":""}>${l}</label>`).join("")}</div><div class="readout" data-out></div>`,
-    nextword:R("w-t","Temp.",1,20,1,10)+`<div class="row"><button class="btn s" data-gen>Generate</button><span class="muted sm" data-tl></span></div><div class="gen" data-gen-out>The cat sat on the …</div>`,
-    clock:R("w-h","Lisbon",0,95,1,48)+`<div class="cities" data-cities></div><p class="muted sm">Winter offsets; daylight saving shifts some of these by an hour in summer.</p>`,
-    wave:R("w-f","Pitch",0,100,1,47)+`<div class="readout" data-out></div><p class="muted sm">Humans hear roughly 20 Hz to 20 kHz.</p>`
+    lever:R("w-m",tw("mass"),1,10,1,2)+R("w-d",tw("distance"),0.5,4,0.25,2)+`<div class="readout" data-out></div>`,
+    neuron:`<div class="togs">${[["w-s",tw("sunny"),1],["w-w",tw("weekend"),0],["w-rn",tw("raining"),0]].map(([id,l,on])=>`<label class="tog" for="${id}"><input type="checkbox" id="${id}" ${on?"checked":""}>${l}</label>`).join("")}</div><div class="readout" data-out></div>`,
+    nextword:R("w-t",tw("temp"),1,20,1,10)+`<div class="row"><button class="btn s" data-gen>${tw("generate")}</button><span class="muted sm" data-tl></span></div><div class="gen" data-gen-out>${tw("sentence")}</div>`,
+    clock:R("w-h",tw("base"),0,95,1,48)+`<div class="cities" data-cities></div><p class="muted sm">${tw("clockNote")}</p>`,
+    wave:R("w-f",tw("pitch"),0,100,1,47)+`<div class="readout" data-out></div><p class="muted sm">${tw("hearing")}</p>`
   }[c.widget]||"";
-  if(c.widget==="flip")return `<div class="wg" data-widget="flip"><button class="fc paper" data-fc></button><div class="fnav"><button class="btn s ghost" data-fp aria-label="Previous word">‹</button><span class="eyebrow" data-fn style="text-align:center"></span>${canSpeak?`<button class="btn s ghost" data-fs>${I.sound.replace("<svg",'<svg width="16" height="16" style="vertical-align:-3px"')} Ouvir</button>`:"<span></span>"}<button class="btn s" data-fx aria-label="Next word">›</button></div></div>`;
-  return `<div class="wg" data-widget="${c.widget}"><div class="sk paper">${WSK[c.widget]}</div>${body}</div>`;
+  if(c.widget==="flip")return `<div class="wg" data-widget="flip"><button class="fc paper" data-fc></button><div class="fnav"><button class="btn s ghost" data-fp aria-label="${tf("prev")}">‹</button><span class="eyebrow" data-fn style="text-align:center"></span>${canSpeak?`<button class="btn s ghost" data-fs>${I.sound.replace("<svg",'<svg width="16" height="16" style="vertical-align:-3px"')} ${tf("listen")}</button>`:"<span></span>"}<button class="btn s" data-fx aria-label="${tf("next")}">›</button></div></div>`;
+  return `<div class="wg" data-widget="${c.widget}"><div class="sk paper">${WSK()[c.widget]}</div>${body}</div>`;
 }
 const fmtNum=(v,d=2)=>Number(v).toFixed(d).replace(/\.?0+$/,"");
 function initWidget(root){
   const w=root.querySelector("[data-widget]");if(!w)return;const k=w.dataset.widget,$=s=>w.querySelector(s),v=id=>+$(`#${id}`).value;
   if(k==="flip"){const card=CARDS[R.items[R.i].id],it=card.items;let i=0,show=false;
-    const draw=()=>{const [en,pt,note,ex]=it[i];$("[data-fc]").innerHTML=`<span class="eyebrow">${show?"significa":"English"}</span><span class="fw">${esc(en)}</span>`+(show?`<span class="fpt">${esc(pt)}</span>${note?`<span class="muted sm">${esc(note)}</span>`:""}${ex?`<span class="fex">${esc(ex)}</span>`:""}`:`<span class="muted sm">Toca para ver o significado</span>`);$("[data-fn]").textContent=`${i+1} / ${it.length}`};
+    const draw=()=>{const [en,pt,note,ex]=it[i];$("[data-fc]").innerHTML=`<span class="eyebrow">${show?tf("means"):tf("word")}</span><span class="fw">${esc(en)}</span>`+(show?`<span class="fpt">${esc(pt)}</span>${note?`<span class="muted sm">${esc(note)}</span>`:""}${ex?`<span class="fex">${esc(ex)}</span>`:""}`:`<span class="muted sm">${tf("tap")}</span>`);$("[data-fn]").textContent=`${i+1} / ${it.length}`};
     $("[data-fc]").addEventListener("click",()=>{show=!show;draw()});
     $("[data-fp]").addEventListener("click",()=>{i=(i-1+it.length)%it.length;show=false;draw()});
     $("[data-fx]").addEventListener("click",()=>{i=(i+1)%it.length;show=false;draw()});
@@ -820,38 +1092,38 @@ function initWidget(root){
     divider(){const Vi=v("w-vin"),R1=v("w-r1"),R2=v("w-r2"),Vo=Vi*R2/(R1+R2);setOut("w-vin",Vi+" V");setOut("w-r1",R1+" kΩ");setOut("w-r2",R2+" kΩ");
       $("[data-vin]").textContent=`Vin ${Vi} V`;$("[data-r1]").textContent=`R1 ${R1} kΩ`;$("[data-r2]").textContent=`R2 ${R2} kΩ`;$("[data-vo]").textContent=`Vout ${fmtNum(Vo)} V`;
       $("[data-out]").innerHTML=`Vout = ${Vi} × ${R2} ÷ (${R1} + ${R2}) = <b>${fmtNum(Vo)} V</b>`;
-      const b=$("[data-badge]");const ok=Vo<=3.3001;b.className="badge "+(ok?"ok":"no");b.textContent=ok?"Safe for a 3.3 V input pin":"Too high for an ESP32 pin (max 3.3 V)"},
+      const b=$("[data-badge]");const ok=Vo<=3.3001;b.className="badge "+(ok?"ok":"no");b.textContent=ok?tw("safe"):tw("tooHigh")},
     lever(){const m=v("w-m"),d=v("w-d"),tl=m*d,tr=6,ang=Math.max(-14,Math.min(14,(tr-tl)*3));setOut("w-m",m+" kg");setOut("w-d",fmtNum(d)+" m");
       const s=Math.min(46,18+m*3),x=160-d*35-s/2,lb=$("[data-lb]");lb.setAttribute("x",x);lb.setAttribute("y",104-s);lb.setAttribute("width",s);lb.setAttribute("height",s);
       const lt=$("[data-lt]");lt.setAttribute("x",x+s/2);lt.setAttribute("y",98-s);lt.textContent=m+" kg";
       $("[data-beam]").setAttribute("transform",`rotate(${ang} 160 108)`);
-      const bal=Math.abs(tl-tr)<0.01,st=$("[data-st]");st.textContent=bal?"balanced!":tl<tr?"right side wins":"left side wins";st.setAttribute("class",bal?"a":"r");
-      $("[data-out]").innerHTML=`left ${m} × ${fmtNum(d)} = <b>${fmtNum(tl)}</b> · right 6 × 1 = <b>6</b>`},
+      const bal=Math.abs(tl-tr)<0.01,st=$("[data-st]");st.textContent=bal?tw("balancedX"):tl<tr?tw("rightWins"):tw("leftWins");st.setAttribute("class",bal?"a":"r");
+      $("[data-out]").innerHTML=`${tw("left")} ${m} × ${fmtNum(d)} = <b>${fmtNum(tl)}</b> · ${tw("right")} 6 × 1 = <b>6</b>`},
     neuron(){const on=["w-s","w-w","w-rn"].map(id=>$(`#${id}`).checked?1:0),W=[3,2,-4],sum=on.reduce((a,x,i)=>a+x*W[i],0)-2,fire=sum>0;
       on.forEach((x,i)=>$(`[data-in${i}]`).setAttribute("class","s "+(x?"fpen":"bgf")));
       $("[data-node]").setAttribute("class","s "+(fire?"fred":"bgf"));$("[data-sum]").textContent=sum>0?"+"+sum:String(sum).replace("-","−");$("[data-sum]").setAttribute("class",fire?"tp":"");
-      $("[data-go]").textContent=fire?"beach!":"stay";$("[data-go]").setAttribute("class",fire?"a":"r");$("[data-go]").setAttribute("text-anchor","start");
-      $("[data-out]").innerHTML=`${on.map((x,i)=>`${x}×${W[i]}`.replace("-","−")).join(" + ")} − 2 = <b>${String(sum).replace("-","−")}</b> → ${fire?"fires: go to the beach":"stays quiet"}`},
-    nextword(){const T=v("w-t")/10,P=[.62,.14,.09,.05,.03],W=["mat","sofa","floor","bed","roof"],q=P.map(p=>Math.pow(p,1/T)),z=q.reduce((a,b)=>a+b,0),pr=q.map(x=>x/z);
+      $("[data-go]").textContent=fire?tw("beach"):tw("stay");$("[data-go]").setAttribute("class",fire?"a":"r");$("[data-go]").setAttribute("text-anchor","start");
+      $("[data-out]").innerHTML=`${on.map((x,i)=>`${x}×${W[i]}`.replace("-","−")).join(" + ")} − 2 = <b>${String(sum).replace("-","−")}</b> → ${fire?tw("fires"):tw("quiet")}`},
+    nextword(){const T=v("w-t")/10,P=[.62,.14,.09,.05,.03],W=tw("words"),q=P.map(p=>Math.pow(p,1/T)),z=q.reduce((a,b)=>a+b,0),pr=q.map(x=>x/z);
       setOut("w-t",T.toFixed(1));pr.forEach((p,k)=>{const w=Math.max(2,p*290);$(`[data-b${k}]`).setAttribute("width",w);const t=$(`[data-p${k}]`);t.setAttribute("x",86+w);t.textContent=Math.round(p*100)+"%"});
-      $("[data-tl]").textContent=T<0.6?"cautious: nearly always “mat”":T>1.4?"adventurous: anything goes":"balanced";
+      $("[data-tl]").textContent=T<0.6?tw("cautious").replace("{w}",W[0]):T>1.4?tw("adventurous"):tw("balancedT");
       w._pick=()=>{let r=Math.random(),k=0;while(k<pr.length-1&&(r-=pr[k])>0)k++;return W[k]}},
     clock(){const m=v("w-h")*15,fmt=x=>{x=((x%1440)+1440)%1440;return String(Math.floor(x/60)).padStart(2,"0")+":"+String(x%60).padStart(2,"0")};setOut("w-h",fmt(m));
       const hh=$("[data-hh]"),mh=$("[data-mh]"),ha=((m/60)%12)/12*2*Math.PI,ma=(m%60)/60*2*Math.PI;
       hh.setAttribute("d",`M160 75 L${(160+30*Math.sin(ha)).toFixed(1)} ${(75-30*Math.cos(ha)).toFixed(1)}`);mh.setAttribute("d",`M160 75 L${(160+45*Math.sin(ma)).toFixed(1)} ${(75-45*Math.cos(ma)).toFixed(1)}`);
-      const C=[["Lisbon",0],["New York",-5],["São Paulo",-3],["Luanda",1],["Maputo",2],["Moscow",3],["Dubai",4],["Mumbai",5.5],["Shanghai",8],["Tokyo",9]];
+      const C=[0,-5,-3,1,2,3,4,5.5,8,9].map((o,i)=>[tw("cities")[i],o]);
       $("[data-cities]").innerHTML=C.map(([n,o])=>{const t=m+o*60,dayN=Math.floor((((t)%1440)+1440)%1440/60),day=dayN>=7&&dayN<19,dd=Math.floor(t/1440);
-        return `<span class="${o===0?"me":""}">${n} <span class="muted sm">UTC${o>=0?"+":"−"}${String(Math.abs(o)).replace(".5",":30")}</span></span><span class="t">${fmt(t)}${dd>0?" +1d":dd<0?" −1d":""}</span><span class="dn ${day?"sun":"moon"}">${day?"day":"night"}</span>`}).join("")},
+        return `<span class="${o===0?"me":""}">${n} <span class="muted sm">UTC${o>=0?"+":"−"}${String(Math.abs(o)).replace(".5",":30")}</span></span><span class="t">${fmt(t)}${dd>0?" +1d":dd<0?" −1d":""}</span><span class="dn ${day?"sun":"moon"}">${day?tw("day"):tw("night")}</span>`}).join("")},
     wave(){const x=v("w-f"),f=20*Math.pow(10,3*x/100),lam=343/f;setOut("w-f",f>=1000?fmtNum(f/1000,1)+" kHz":Math.round(f)+" Hz");
       const cyc=0.6+9*x/100,lpx=300/cyc;let dd="M10 70";for(let px=0;px<=300;px+=2)dd+=` L${10+px} ${(70-38*Math.sin(2*Math.PI*px/lpx)).toFixed(1)}`;$("[data-wp]").setAttribute("d",dd);
       const x1=10+lpx/4,x2=x1+lpx;$("[data-wl]").setAttribute("d",x2<=310?`M${x1} 20 H${x2} M${x1} 14 V26 M${x2} 14 V26`:"");$("[data-wt]").setAttribute("x",x2<=310?(x1+x2)/2:160);$("[data-wt]").setAttribute("y",x2<=310?14:132);
       const L=lam>=1?fmtNum(lam)+" m":lam>=0.01?fmtNum(lam*100,1)+" cm":fmtNum(lam*1000,1)+" mm";
-      const cmp=lam>8?"longer than a bus":lam>1.6?"taller than a person":lam>0.3?"about the length of an arm":lam>0.05?"about the size of a hand":"smaller than a coin";
+      const cm=tw("cmp"),cmp=lam>8?cm[0]:lam>1.6?cm[1]:lam>0.3?cm[2]:lam>0.05?cm[3]:cm[4];
       $("[data-wt]").textContent="λ = "+L;
       $("[data-out]").innerHTML=`λ = 343 ÷ ${Math.round(f)} = <b>${L}</b><br>${cmp}`}
   }[k];
   if(!upd)return;w.querySelectorAll("input").forEach(i=>i.addEventListener(i.type==="checkbox"?"change":"input",upd));upd();
-  const g=w.querySelector("[data-gen]");if(g)g.addEventListener("click",()=>{const o=w.querySelector("[data-gen-out]");o.innerHTML=`The cat sat on the <b>${w._pick()}</b>.`});
+  const g=w.querySelector("[data-gen]");if(g)g.addEventListener("click",()=>{const o=w.querySelector("[data-gen-out]");o.innerHTML=tw("gen").replace("{w}",esc(w._pick()))});
 }
 
 /* ---------- reader ---------- */
@@ -861,44 +1133,44 @@ function closeReader(){rEl.hidden=true;document.body.style.overflow="";R=null;re
 function drawReader(){
   const it=R.items[R.i],done=R.i>=R.items.length;
   rEl.dataset.t=done?R.topic:(it.k==="c"?CARDS[it.id]:QUIZ[it.id]).topic;
-  const top=`<div class="rtop"><div class="spread"><button class="iconbtn" data-rclose aria-label="Close">${I.close}</button><span class="eyebrow" style="text-align:center;min-width:0">${esc(R.title)}</span><span class="eyebrow" style="width:44px;text-align:right">${done?"":`${R.i+1}/${R.items.length}`}</span></div><div class="prog">${R.items.map((x,k)=>`<i class="${x.k==="q"?"q":""} ${k<=R.i?"on":""}"></i>`).join("")}</div></div>`;
+  const top=`<div class="rtop"><div class="spread"><button class="iconbtn" data-rclose aria-label="${t("close")}">${I.close}</button><span class="eyebrow" style="text-align:center;min-width:0">${esc(R.title)}</span><span class="eyebrow" style="width:44px;text-align:right">${done?"":`${R.i+1}/${R.items.length}`}</span></div><div class="prog">${R.items.map((x,k)=>`<i class="${x.k==="q"?"q":""} ${k<=R.i?"on":""}"></i>`).join("")}</div></div>`;
   if(done){
     const qs=R.items.filter(x=>x.k==="q"),right=qs.filter(x=>R.ans[x.id]===QUIZ[x.id].answer).length;
     if(R.mode==="lesson"&&qs.length){const prev=S.done[R.lesson];S.done[R.lesson]={t:Date.now(),score:right,best:Math.max(right,prev?.best||0),total:qs.length};save()}
     const L=R.mode==="lesson"?LESSONS[R.lesson]:null,pk=L&&PACKS[L.pack],idx=pk?pk.lessons.findIndex(l=>l.id===L.id):-1,nextL=pk&&pk.lessons[idx+1];
-    rEl.innerHTML=top+`<div class="rstage"><div class="card finish">${qs.length?`<span class="big">${right}/${qs.length}</span><h2>${right===qs.length?"Perfect score":right>=qs.length/2?"Nicely done":"Keep going"}</h2><p class="muted">${right<qs.length?"Missed questions come back in Today → Review.":"Everything answered correctly."}</p>`:`<span class="big">✓</span><h2>All read</h2>`}
-      <p class="muted sm">${(S.reads[today()]||[]).length} cards today · ${streak()}-day streak</p>
-      <div class="row" style="justify-content:center">${L?`<button class="btn ghost" data-favl="${L.id}">${S.favL.includes(L.id)?"★ In favourites":"☆ Add lesson to favourites"}</button>`:""}</div><div class="row" style="justify-content:center">${nextL?`<button class="btn" data-nextlesson="${nextL.id}">Next lesson</button>`:""}<button class="btn ${nextL?"ghost":""}" data-rclose>Done</button></div></div></div>`;
+    rEl.innerHTML=top+`<div class="rstage"><div class="card finish">${qs.length?`<span class="big">${right}/${qs.length}</span><h2>${right===qs.length?t("perfect"):right>=qs.length/2?t("nicely"):t("keepGoing")}</h2><p class="muted">${right<qs.length?t("missedBack"):t("allCorrect")}</p>`:`<span class="big">✓</span><h2>${t("allRead")}</h2>`}
+      <p class="muted sm">${t("todayStreak",{n:(S.reads[today()]||[]).length,s:streak()})}</p>
+      <div class="row" style="justify-content:center">${L?`<button class="btn ghost" data-favl="${L.id}">${S.favL.includes(L.id)?t("inFavs"):t("addLessonFav")}</button>`:""}</div><div class="row" style="justify-content:center">${nextL?`<button class="btn" data-nextlesson="${nextL.id}">${lessonOpen(LESSONS[nextL.id])?"":I.lock+" "}${t("nextLesson")}</button>`:""}<button class="btn ${nextL?"ghost":""}" data-rclose>${t("done")}</button></div></div></div>`;
     return;
   }
   let inner;
   if(it.k==="c"){
     const c=CARDS[it.id];markRead(c.id);
-    inner=`<span class="ctype">${esc(c.tag||TYPES[c.type]||"Card")}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}${c.formula?`<div class="formula"${c.formula.length>16?' style="font-size:21px"':""}>${esc(c.formula)}</div>`:""}${c.type==="widget"?widgetHTML(c):""}<div class="text">${fmt(c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}${c.deep?`<button class="deepbtn" data-deep="${c.id}">${I.deep}Go deeper</button>`:""}`;
+    inner=`<span class="ctype">${esc(c.tag||TYPES[c.type]||TYPES.card)}</span><h2>${esc(c.title)}</h2>${c.type!=="widget"?sketch(c):""}${c.formula?`<div class="formula"${c.formula.length>16?' style="font-size:21px"':""}>${esc(c.formula)}</div>`:""}${c.type==="widget"?widgetHTML(c):""}<div class="text">${fmt(c.text)}</div>${c.example?`<div class="ex"><span class="eyebrow">${TYPES.example}</span>${c.example.map(l=>`<span>${esc(l)}</span>`).join("")}</div>`:""}${c.deep?`<button class="deepbtn" data-deep="${c.id}">${I.deep}${t("goDeeper")}</button>`:""}`;
   }else{
     const q=QUIZ[it.id],a=R.ans[it.id],answered=a!==undefined;
-    inner=`<span class="ctype">${R.mode==="review"?"Review":"Quiz"}</span><h2>${esc(q.q)}</h2><div class="opts">${q.options.map((o,k)=>`<button class="opt ${answered?(k===q.answer?"right":k===a?"wrong":""):""}" data-ans="${k}" ${answered?"disabled":""}><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div>
-    ${answered?`<div class="fb ${a===q.answer?"ok":"no"}"><b>${a===q.answer?"Correct":"Not quite"}</b>${esc(q.explain)}</div>`:""}`;
+    inner=`<span class="ctype">${R.mode==="review"?t("review"):t("quiz")}</span><h2>${esc(q.q)}</h2><div class="opts">${q.options.map((o,k)=>`<button class="opt ${answered?(k===q.answer?"right":k===a?"wrong":""):""}" data-ans="${k}" ${answered?"disabled":""}><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div>
+    ${answered?`<div class="fb ${a===q.answer?"ok":"no"}"><b>${a===q.answer?t("correct"):t("notQuite")}</b>${esc(q.explain)}</div>`:""}`;
   }
   const isQ=it.k==="q",answered=isQ&&R.ans[it.id]!==undefined,saved=!isQ&&S.saved.includes(it.id);
   rEl.innerHTML=top+`<div class="rstage"><article class="card" id="card">${inner}</article></div>
-  <div class="ractions"><button class="iconbtn" data-prev aria-label="Previous" ${R.i===0?'disabled style="opacity:.35"':""}>${I.left}</button>
-  <div class="mid">${isQ?"":`<button class="iconbtn ${saved?"saved":""}" data-save aria-label="${saved?"Remove from favourites":"Add to favourites"}" aria-pressed="${saved}">${I.star}</button>`}${!isQ&&canSpeak&&CARDS[it.id].say?`<button class="iconbtn" data-say aria-label="Listen in English">${I.sound}</button>`:""}</div>
-  <button class="btn nextbtn" data-next>${isQ&&!answered?"Skip":R.i===R.items.length-1?"Finish":"Next"}</button></div>`;
+  <div class="ractions"><button class="iconbtn" data-prev aria-label="${t("previous")}" ${R.i===0?'disabled style="opacity:.35"':""}>${I.left}</button>
+  <div class="mid">${isQ?"":`<button class="iconbtn ${saved?"saved":""}" data-save aria-label="${saved?t("removeFav"):t("addFav")}" aria-pressed="${saved}">${I.star}</button>`}${!isQ&&canSpeak&&CARDS[it.id].say?`<button class="iconbtn" data-say aria-label="${t("listenEn")}">${I.sound}</button>`:""}</div>
+  <button class="btn nextbtn" data-next>${isQ&&!answered?t("skip"):R.i===R.items.length-1?t("finish"):t("next")}</button></div>`;
   initWidget(rEl);swipe(document.getElementById("card"));
 }
 function step(n){if(!R)return;R.i=Math.min(R.items.length,Math.max(0,R.i+n));drawReader();const c=document.getElementById("card");if(c)c.scrollTop=0}
 rEl.addEventListener("click",e=>{
-  const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+  const tg=e.target.closest("button");if(!tg)return;const d=tg.dataset;
   if("rclose" in d)return closeReader();
   if("next" in d)return step(1);
   if("prev" in d)return step(-1);
   if(d.nextlesson){closeReader();return startLesson(d.nextlesson)}
-  if("save" in d){toggleFav(R.items[R.i].id,"c");const b=rEl.querySelector("[data-save]"),on=S.saved.includes(R.items[R.i].id);b.classList.toggle("saved",on);b.setAttribute("aria-pressed",on);b.setAttribute("aria-label",on?"Remove from favourites":"Add to favourites");return}
+  if("save" in d){toggleFav(R.items[R.i].id,"c");const b=rEl.querySelector("[data-save]"),on=S.saved.includes(R.items[R.i].id);b.classList.toggle("saved",on);b.setAttribute("aria-pressed",on);b.setAttribute("aria-label",on?t("removeFav"):t("addFav"));return}
   if("say" in d)return speak(CARDS[R.items[R.i].id].say);
   if(d.favl){toggleFav(d.favl,"l");return drawReader()}
   if(d.ans!==undefined){const id=R.items[R.i].id,q=QUIZ[id],a=+d.ans,ok=a===q.answer;R.ans[id]=a;S.quiz[id]={ok,t:Date.now()};
-    if(ok)delete S.review[id];else{const t=new Date();t.setHours(24,0,0,0);S.review[id]=R.mode==="review"?t.getTime():t.getTime()}
+    if(ok)delete S.review[id];else{const tg=new Date();tg.setHours(24,0,0,0);S.review[id]=R.mode==="review"?tg.getTime():tg.getTime()}
     markRead(id,false);drawReader()}
 });
 document.addEventListener("keydown",e=>{const de=document.getElementById("deep");if(de&&!de.hidden){if(e.key==="Escape")closeDeep();return}if((!R||rEl.hidden)&&view.tab==="feed"&&!e.target.matches("input")){if(e.key==="ArrowDown"||e.key==="j"){e.preventDefault();FEED.next(1)}else if(e.key==="ArrowUp"||e.key==="k"){e.preventDefault();FEED.next(-1)}return}if(!R||rEl.hidden)return;if(e.target.matches("input"))return;
@@ -915,10 +1187,10 @@ function swipe(card){
 /* ---------- export a topic as a standalone page ---------- */
 function packHTML(pk){
   const css=[...document.styleSheets[0].cssRules].map(r=>r.cssText).join("\n");
-  const body=pk.lessons.map((l,li)=>`<section><p class="eyebrow">Lesson ${li+1}</p><h2 class="lt">${esc(l.title)}</h2><p class="muted">${esc(l.summary)}</p>
-   ${l.cards.map(c=>`<article class="card xc" data-t="${pk.topic}"><span class="ctype">${esc(c.tag||TYPES[c.type])}</span><h2>${esc(c.title)}</h2>${(c.sketch||c.viz)?sketch(c):c.widget?`<div class="sk paper">${WSK[c.widget]}</div>`:""}${c.formula?`<div class="formula">${esc(c.formula)}</div>`:""}<div class="text">${fmt(c.text)}</div>${c.items?`<div class="text"><ul>${c.items.map(([en,pt,note,ex])=>`<li><b>${esc(en)}</b> = ${esc(pt)}${note?` <span class="muted">(${esc(note)})</span>`:""}${ex?`<br><em>${esc(ex)}</em>`:""}</li>`).join("")}</ul></div>`:""}${c.example?`<div class="ex"><span class="eyebrow">Worked example</span>${c.example.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}</article>`).join("")}
-   ${(l.quiz||[]).length?`<article class="card xc" data-t="${pk.topic}"><span class="ctype">Quiz</span>${l.quiz.map((q,k)=>`<p><b>${k+1}. ${esc(q.q)}</b></p><ul>${q.options.map((o,j)=>`<li>${j===q.answer?"<b>✓ "+esc(o)+"</b>":esc(o)}</li>`).join("")}</ul><p class="muted sm">${esc(q.explain)}</p>`).join("")}</article>`:""}</section>`).join("");
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(pk.title)} · Spark</title><style>${css}
+  const body=pk.lessons.map((l,li)=>`<section><p class="eyebrow">${t("lessonN",{n:li+1})}</p><h2 class="lt">${esc(l.title)}</h2><p class="muted">${esc(l.summary)}</p>
+   ${l.cards.map(c=>`<article class="card xc" data-t="${pk.topic}"><span class="ctype">${esc(c.tag||TYPES[c.type])}</span><h2>${esc(c.title)}</h2>${(c.sketch||c.viz)?sketch(c):c.widget?`<div class="sk paper">${WSK()[c.widget]}</div>`:""}${c.formula?`<div class="formula">${esc(c.formula)}</div>`:""}<div class="text">${fmt(c.text)}</div>${c.items?`<div class="text"><ul>${c.items.map(([en,pt,note,ex])=>`<li><b>${esc(en)}</b> = ${esc(pt)}${note?` <span class="muted">(${esc(note)})</span>`:""}${ex?`<br><em>${esc(ex)}</em>`:""}</li>`).join("")}</ul></div>`:""}${c.example?`<div class="ex"><span class="eyebrow">${TYPES.example}</span>${c.example.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}</article>`).join("")}
+   ${(l.quiz||[]).length?`<article class="card xc" data-t="${pk.topic}"><span class="ctype">${t("quiz")}</span>${l.quiz.map((q,k)=>`<p><b>${k+1}. ${esc(q.q)}</b></p><ul>${q.options.map((o,j)=>`<li>${j===q.answer?"<b>✓ "+esc(o)+"</b>":esc(o)}</li>`).join("")}</ul><p class="muted sm">${esc(q.explain)}</p>`).join("")}</article>`:""}</section>`).join("");
+  return `<!doctype html><html lang="${loc()}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(pk.title)} · Spark</title><style>${css}
   body{padding:24px 16px} main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px} section{display:flex;flex-direction:column;gap:14px} .card.xc{height:auto;overflow:visible} .lt{font-size:26px}</style></head>
   <body>${document.querySelector('svg[aria-hidden]').outerHTML}<main><header data-t="${pk.topic}"><span class="tlabel"><span class="tdot"></span>${TOPICS[pk.topic]}</span><h1>${esc(pk.title)}</h1><p class="muted">${esc(pk.blurb)}</p></header>${body}</main></body></html>`;
 }
@@ -928,15 +1200,16 @@ let tt;function toast(m){const el=document.getElementById("toast");el.textConten
 async function saveFile(name,text,type){
   const blob=new Blob([text],{type}),mobile=/iPhone|iPad|iPod|Android/.test(navigator.userAgent);
   try{const file=new File([blob],name,{type});if(mobile&&navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],title:name});return}}catch(e){if(e.name==="AbortError")return}
-  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1500);toast(`Saved ${name}`);
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1500);toast(t("savedFile",{name}));
 }
 let deferredInstall=null;
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstall=e;if(view.tab==="you")render()});
 addEventListener("online",()=>{if(!R)render()});addEventListener("offline",()=>{if(!R)render()});
 (async()=>{
   try{await loadPacks()}catch(e){}
-  if(navigator.onLine){const stale=CATALOG.filter(c=>PACKS[c.id]&&c.version>(PACKS[c.id].version||0)).map(c=>c.id);
-    if(stale.length)(async()=>{for(const id of stale){try{await downloadPack(id)}catch(e){}}if(!R)render();toast(`${stale.length} topic${stale.length>1?"s":""} updated with new lessons`)})()}
+  if(NATIVE&&NATIVE.entitlements){try{const ent=await NATIVE.entitlements();if(ent){S.ent={plus:!!ent.plus,packs:ent.packs||[]};save();indexPacks()}}catch(e){}}
+  if(navigator.onLine){const stale=stalePacks();
+    if(stale.length)(async()=>{for(const id of stale){try{await downloadPack(id)}catch(e){}}if(!R)render();toast(t("updated",{n:stale.length}))})()}
   try{navigator.storage?.persist?.()}catch(e){}
   if("serviceWorker" in navigator&&(location.protocol==="https:"||["localhost","127.0.0.1"].includes(location.hostname)))navigator.serviceWorker.register("sw.js").catch(()=>{});
   render();

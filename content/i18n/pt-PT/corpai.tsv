@@ -1116,3 +1116,322 @@ corp-skills.c5.viz.steps.3	Entregar casos de uso
 corp-skills.c6.title	Os especialistas do negócio são essenciais
 corp-skills.c6.text	Contabilistas, traders, juristas e engenheiros definem o que é "bom", rotulam exemplos e validam as respostas. Sem eles, as soluções de IA falham o essencial.
 corp-skills.c6.viz.items.0	Definir critérios de sucesso
+corp-skills.c6.viz.items.1	Dar exemplos
+corp-skills.c6.viz.items.2	Validar respostas
+corp-skills.c6.viz.items.3	Detetar casos-limite
+corp-skills.c6.viz.items.4	Promover a adoção
+corp-skills.c7.title	Novos papéis
+corp-skills.c7.text	Estão a surgir novos papéis: gestor de produto de IA, engenheiro de IA, especialista em avaliação, responsável pela governação de IA e operações de agentes.
+corp-skills.c7.viz.items.0	Gestor de produto de IA
+corp-skills.c7.viz.items.1	Engenheiro de IA
+corp-skills.c7.viz.items.2	Especialista em avaliação
+corp-skills.c7.viz.items.3	Líder de governação de IA
+corp-skills.c7.viz.items.4	Operações de agentes
+corp-skills.c8.title	Percursos de carreira
+corp-skills.c8.text	À medida que as tarefas de rotina diminuem, as funções evoluem para o critério, o tratamento de exceções, as relações e a supervisão da IA. Percursos de carreira claros reduzem a ansiedade e retêm talento.
+corp-skills.c8.viz.l.t	A diminuir
+corp-skills.c8.viz.l.items.0	processamento de rotina
+corp-skills.c8.viz.l.items.1	introdução manual de dados
+corp-skills.c8.viz.r.t	A crescer
+corp-skills.c8.viz.r.items.0	tratar exceções
+corp-skills.c8.viz.r.items.1	análise
+corp-skills.c8.viz.r.items.2	supervisão da IA
+corp-skills.c9.title	Aprendizagem contínua
+corp-skills.c9.text	A IA muda depressa. Integra a aprendizagem no trabalho: comunidades de prática, demos internas, orçamentos de formação e tempo para experimentar.
+corp-skills.c9.viz.items.0	Comunidades de prática
+corp-skills.c9.viz.items.1	Demos internas
+corp-skills.c9.viz.items.2	Orçamentos de formação
+corp-skills.c9.viz.items.3	Tempo para experimentar
+corp-skills.c9.viz.items.4	Parceiros externos
+corp-finance.title	IA nas finanças e no back office
+corp-finance.summary	Faturas, reconciliações e fecho.
+corp-finance.q0.q	O que é um three-way match?
+corp-finance.q0.o0	Três faturas
+corp-finance.q0.o1	Cruzar a nota de encomenda, a receção de mercadoria e a fatura
+corp-finance.q0.o2	Três aprovações
+corp-finance.q0.x	Um controlo clássico de contas a pagar.
+corp-finance.q1.q	Porque é que a IA nas finanças tem de manter um registo de auditoria?
+corp-finance.q1.o0	Por estilo
+corp-finance.q1.o1	Para que os auditores possam rastrear cada lançamento até às fontes e aprovações
+corp-finance.q1.o2	Para ocupar mais armazenamento
+corp-finance.q1.x	A rastreabilidade é essencial.
+corp-finance.q2.q	O que mede a "taxa touchless"?
+corp-finance.q2.o0	Tempo de ecrã
+corp-finance.q2.o1	A parte dos itens processados sem intervenção humana
+corp-finance.q2.o2	O número de utilizadores
+corp-finance.q2.x	Um KPI-chave da automação.
+corp-finance.c0.title	Processamento de faturas
+corp-finance.c0.text	A IA extrai fornecedor, datas, montantes, IVA e linhas das faturas em qualquer formato, cruza-as com as notas de encomenda e as receções de mercadoria, e assinala divergências.
+corp-finance.c0.viz.steps.0	Chega a fatura
+corp-finance.c0.viz.steps.1	A IA extrai os campos
+corp-finance.c0.viz.steps.2	Cruzar encomenda e receção
+corp-finance.c0.viz.steps.3	Lançar ou assinalar exceção
+corp-finance.c1.title	Three-way match
+corp-finance.c1.text	Verificação clássica de contas a pagar: fatura, nota de encomenda e receção de mercadoria têm de bater certo em quantidades e preços. A IA acelera o cruzamento e explica as divergências.
+corp-finance.c1.viz.root	Three-way match
+corp-finance.c1.viz.items.0	Nota de encomenda
+corp-finance.c1.viz.items.1	Receção de mercadoria
+corp-finance.c1.viz.items.2	Fatura
+corp-finance.c2.title	Reconciliações
+corp-finance.c2.text	Cruzar extratos bancários, saldos intragrupo e razões é repetitivo. O ML consegue cruzar transações com referências imprecisas e aprender com cruzamentos manuais anteriores.
+corp-finance.c2.viz.steps.0	Linhas bancárias + lançamentos
+corp-finance.c2.viz.steps.1	A IA propõe cruzamentos
+corp-finance.c2.viz.steps.2	Contabilista revê as exceções
+corp-finance.c2.viz.steps.3	Reconciliado
+corp-finance.c3.title	Fecho financeiro
+corp-finance.c3.text	A IA pode redigir explicações de desvios, verificar lançamentos de diário à procura de anomalias e resumir o estado do fecho, encurtando o fim do mês.
+corp-finance.c3.viz.items.0	Rascunhos de análise de desvios
+corp-finance.c3.viz.items.1	Deteção de anomalias no diário
+corp-finance.c3.viz.items.2	Acompanhar a checklist de fecho
+corp-finance.c3.viz.items.3	Cruzamento intragrupo
+corp-finance.c4.title	Previsão de tesouraria
+corp-finance.c4.text	Modelos de ML preveem pagamentos de clientes e saídas para fornecedores a partir do histórico, melhorando o planeamento de tesouraria e de fundo de maneio.
+corp-finance.c4.viz.steps.0	Histórico de pagamentos
+corp-finance.c4.viz.steps.1	Modelo prevê datas de pagamento
+corp-finance.c4.viz.steps.2	Previsão de tesouraria
+corp-finance.c4.viz.steps.3	Melhor gestão de liquidez
+corp-finance.c5.title	Fraude e anomalias
+corp-finance.c5.text	Deteta faturas duplicadas, pagamentos invulgares, dados bancários alterados e fornecedores suspeitos antes de o dinheiro sair.
+corp-finance.c5.viz.items.0	Faturas duplicadas
+corp-finance.c5.viz.items.1	Dados bancários alterados
+corp-finance.c5.viz.items.2	Montantes ou datas invulgares
+corp-finance.c5.viz.items.3	Novos fornecedores suspeitos
+corp-finance.c5.viz.items.4	Compras fracionadas
+corp-finance.c6.title	Auditoria de despesas
+corp-finance.c6.text	A IA lê os recibos, verifica-os face à política e assinala exceções, para que os auditores revejam os poucos casos de risco em vez de fazerem amostragens aleatórias.
+corp-finance.c6.viz.l.t	Amostragem manual
+corp-finance.c6.viz.l.items.0	pequena amostra aleatória
+corp-finance.c6.viz.l.items.1	escapam problemas
+corp-finance.c6.viz.r.t	Triagem com IA
+corp-finance.c6.viz.r.items.0	verifica tudo
+corp-finance.c6.viz.r.items.1	assinala os de risco
+corp-finance.c7.title	Controlos e auditabilidade
+corp-finance.c7.text	As finanças precisam de rastreabilidade total: cada lançamento proposto pela IA deve mostrar os documentos de origem, o grau de confiança e quem o aprovou. Os auditores têm de conseguir seguir o rasto.
+corp-finance.c7.viz.steps.0	Documento de origem
+corp-finance.c7.viz.steps.1	Proposta da IA com confiança
+corp-finance.c7.viz.steps.2	Aprovação humana
+corp-finance.c7.viz.steps.3	Lançamento com registo de auditoria
+corp-finance.c8.title	Integração com o ERP
+corp-finance.c8.text	O valor surge quando a IA está ligada ao ERP (SAP S/4HANA, Oracle, Dynamics): lê dados mestre, propõe lançamentos e atualiza workflows.
+corp-finance.c8.viz.steps.0	IA de documentos
+corp-finance.c8.viz.steps.1	APIs do ERP
+corp-finance.c8.viz.steps.2	Lançamento proposto
+corp-finance.c8.viz.steps.3	Aprovação no workflow
+corp-finance.c9.title	Medir a IA nas finanças
+corp-finance.c9.text	Acompanha a taxa de processamento touchless, o tempo de ciclo, a taxa de erros, o custo por fatura, os dias até ao fecho e os descontos de pronto pagamento obtidos.
+corp-finance.c9.viz.unit	% de faturas touchless (percurso ilustrativo)
+corp-finance.c9.viz.items.0.l	Antes
+corp-finance.c9.viz.items.1.l	Ano 1
+corp-finance.c9.viz.items.2.l	Ano 2
+corp-supply.title	IA nas operações e nas commodities
+corp-supply.summary	Previsão, logística e apoio ao trading.
+corp-supply.q0.q	O que usa a manutenção preditiva?
+corp-supply.q0.o0	Inspeções aleatórias
+corp-supply.q0.o1	Dados de sensores para prever avarias
+corp-supply.q0.o2	Só o tempo meteorológico
+corp-supply.q0.x	Reparar antes da avaria.
+corp-supply.q1.q	Nos contratos de comércio, o que é a sobrestadia (demurrage)?
+corp-supply.q1.o0	Um tipo de cereal
+corp-supply.q1.o1	Um encargo diário quando um navio fica retido para além do tempo de estadia acordado
+corp-supply.q1.o2	Um imposto
+corp-supply.q1.x	Normalmente uma taxa diária.
+corp-supply.q2.q	Quem deve tomar as decisões finais de trading?
+corp-supply.q2.o0	O modelo
+corp-supply.q2.o1	Pessoas experientes, com base nos sinais da IA
+corp-supply.q2.o2	Ninguém
+corp-supply.q2.x	A IA informa; as pessoas decidem.
+corp-supply.c0.title	Previsão da procura
+corp-supply.c0.text	O ML prevê a procura com base no histórico, na sazonalidade, nos preços, no tempo e em eventos, superando médias simples e ajudando a planear produção e stock.
+corp-supply.c0.viz.unit	erro de previsão % (ilustrativo)
+corp-supply.c0.viz.items.0.l	Valor do ano passado
+corp-supply.c0.viz.items.1.l	Modelo estatístico
+corp-supply.c0.viz.items.2.l	ML com dados externos
+corp-supply.c1.title	Visibilidade da cadeia de abastecimento
+corp-supply.c1.text	A IA combina dados do ERP, transportadoras, portos e fornecedores para prever atrasos e sugerir ações, como mudar rotas ou repriorizar encomendas.
+corp-supply.c1.viz.steps.0	Dados de transporte e portos
+corp-supply.c1.viz.steps.1	Prever atrasos
+corp-supply.c1.viz.steps.2	Alertar planeadores
+corp-supply.c1.viz.steps.3	Mudar rota ou ajustar
+corp-supply.c2.title	Otimização logística
+corp-supply.c2.text	A otimização e o ML planeiam rotas, escalas de navios, picking em armazém e carga de camiões, reduzindo custos e emissões.
+corp-supply.c2.viz.items.0	Planeamento de rotas
+corp-supply.c2.viz.items.1	Escalas de navios
+corp-supply.c2.viz.items.2	Arrumação em armazém
+corp-supply.c2.viz.items.3	Otimização de cargas
+corp-supply.c2.viz.items.4	Registo de emissões
+corp-supply.c3.title	Manutenção preditiva
+corp-supply.c3.text	Sensores nas máquinas (vibração, temperatura, potência) alimentam modelos que preveem avarias, para que a manutenção aconteça antes de as máquinas pararem.
+corp-supply.c3.viz.steps.0	Dados de sensores
+corp-supply.c3.viz.steps.1	Detetar sinais de alerta precoces
+corp-supply.c3.viz.steps.2	Agendar manutenção
+corp-supply.c3.viz.steps.3	Evitar paragens não planeadas
+corp-supply.c4.title	Sinais de preço das commodities
+corp-supply.c4.text	Os modelos combinam dados de oferta e procura, tempo, estado das culturas, fretes e indicadores macro para apoiar a visão dos analistas. Informam o critério de trading, não o substituem.
+corp-supply.c4.viz.items.0	Tempo e estado das culturas
+corp-supply.c4.viz.items.1	Balanços de oferta e procura
+corp-supply.c4.viz.items.2	Taxas de frete
+corp-supply.c4.viz.items.3	Câmbios e dados macro
+corp-supply.c4.viz.items.4	Dados de posicionamento
+corp-supply.c5.title	Dados de satélite e meteorológicos
+corp-supply.c5.text	Imagens de satélite e previsões meteorológicas ajudam a estimar a saúde das culturas e as produtividades em regiões como o Brasil, o Midwest dos EUA e o Mar Negro, antes dos relatórios oficiais.
+corp-supply.c5.viz.steps.0	Imagens de satélite
+corp-supply.c5.viz.steps.1	Índices de vegetação
+corp-supply.c5.viz.steps.2	Estimativas de produção
+corp-supply.c5.viz.steps.3	Perspetiva da oferta
+corp-supply.c6.title	Inteligência contratual
+corp-supply.c6.text	A IA generativa extrai os termos-chave dos contratos de comércio (quantidades, especificações de qualidade, períodos de embarque, Incoterms, sobrestadia, condições de pagamento) e assinala cláusulas invulgares.
+corp-supply.c6.viz.items.0.a	quantidade
+corp-supply.c6.viz.items.0.b	toneladas e tolerância
+corp-supply.c6.viz.items.1.a	qualidade
+corp-supply.c6.viz.items.1.b	especificações como proteína, humidade
+corp-supply.c6.viz.items.2.a	Incoterm
+corp-supply.c6.viz.items.2.b	FOB, CIF, etc.
+corp-supply.c6.viz.items.3.a	sobrestadia
+corp-supply.c6.viz.items.3.b	taxa diária
+corp-supply.c7.title	Operações de comércio
+corp-supply.c7.text	A IA ajuda com os documentos (conhecimentos de embarque, certificados, cartas de crédito), verificando a coerência entre eles e detetando discrepâncias antes que atrasem pagamentos.
+corp-supply.c7.viz.steps.0	Documentos de embarque
+corp-supply.c7.viz.steps.1	A IA verifica a coerência
+corp-supply.c7.viz.steps.2	Assinala discrepâncias
+corp-supply.c7.viz.steps.3	Corrigir antes da apresentação
+corp-supply.c8.title	Risco e conformidade
+corp-supply.c8.text	A verificação de sanções, o risco de contraparte e o seguimento de navios beneficiam de IA que monitoriza notícias, dados de propriedade e movimentos de navios.
+corp-supply.c8.viz.items.0	Verificação de sanções
+corp-supply.c8.viz.items.1	Monitorizar contrapartes
+corp-supply.c8.viz.items.2	Seguimento de navios
+corp-supply.c8.viz.items.3	Alertas de notícias negativas
+corp-supply.c8.viz.items.4	Sinais de fraude comercial
+corp-supply.c9.title	Humanos no circuito
+corp-supply.c9.text	No trading e nas operações, a IA fornece sinais e automação, enquanto pessoas experientes tomam as decisões comerciais e de risco.
+corp-supply.c9.viz.l.t	IA
+corp-supply.c9.viz.l.items.0	dados em escala
+corp-supply.c9.viz.l.items.1	sinais
+corp-supply.c9.viz.l.items.2	processar documentos
+corp-supply.c9.viz.r.t	Pessoas
+corp-supply.c9.viz.r.items.0	critério
+corp-supply.c9.viz.r.items.1	relações
+corp-supply.c9.viz.r.items.2	responsabilidade
+corp-customer.title	IA no apoio ao cliente e nas vendas
+corp-customer.summary	Respostas mais rápidas e vendas melhores.
+corp-customer.q0.q	O que faz um copiloto de apoio ao cliente?
+corp-customer.q0.o0	Substitui os clientes
+corp-customer.q0.o1	Redige respostas para os agentes reverem e enviarem
+corp-customer.q0.o2	Apaga tickets
+corp-customer.q0.x	Os agentes mantêm o controlo.
+corp-customer.q1.q	O que tem de oferecer um assistente para clientes?
+corp-customer.q1.o0	Descontos
+corp-customer.q1.o1	Uma forma de falar com um humano
+corp-customer.q1.o2	Só inglês
+corp-customer.q1.x	Passagem para um humano e divulgação.
+corp-customer.q2.q	O que é a triagem de tickets?
+corp-customer.q2.o0	Fechar tickets
+corp-customer.q2.o1	Classificar e encaminhar pedidos automaticamente
+corp-customer.q2.o2	Escrever tickets
+corp-customer.q2.x	A equipa certa, com a prioridade certa.
+corp-customer.c0.title	Copilotos de apoio
+corp-customer.c0.text	A IA redige respostas para os agentes com base nas bases de conhecimento e no histórico dos casos. Os agentes editam e enviam, tratando mais casos com qualidade consistente.
+corp-customer.c0.viz.steps.0	Email do cliente
+corp-customer.c0.viz.steps.1	A IA redige resposta com fontes
+corp-customer.c0.viz.steps.2	Agente edita
+corp-customer.c0.viz.steps.3	Enviada mais depressa
+corp-customer.c1.title	Assistentes de self-service
+corp-customer.c1.text	Os assistentes para clientes respondem a perguntas comuns 24/7 e passam para humanos os casos complexos ou sensíveis, transmitindo todo o contexto.
+corp-customer.c1.viz.steps.0	Pergunta do cliente
+corp-customer.c1.viz.steps.1	Assistente responde aos casos comuns
+corp-customer.c1.viz.steps.2	Complexo: passa a humano
+corp-customer.c1.viz.steps.3	Contexto transmitido
+corp-customer.c2.title	Triagem de tickets
+corp-customer.c2.text	Classifica os pedidos recebidos por tema, urgência e língua, e encaminha-os automaticamente para a equipa certa.
+corp-customer.c2.viz.items.0.a	tema
+corp-customer.c2.viz.items.0.b	faturação, entrega, técnico
+corp-customer.c2.viz.items.1.a	urgência
+corp-customer.c2.viz.items.1.b	alta, normal
+corp-customer.c2.viz.items.2.a	língua
+corp-customer.c2.viz.items.2.b	PT, EN, ES
+corp-customer.c2.viz.items.3.a	encaminhar
+corp-customer.c2.viz.items.3.b	equipa certa
+corp-customer.c3.title	Sentimento e qualidade
+corp-customer.c3.text	A IA analisa as conversas quanto ao sentimento, problemas recorrentes e conformidade, dando aos gestores uma visão sobre todas as interações, e não só sobre amostras.
+corp-customer.c3.viz.items.0	Tendências de sentimento
+corp-customer.c3.viz.items.1	Reclamações recorrentes
+corp-customer.c3.viz.items.2	Verificações de conformidade
+corp-customer.c3.viz.items.3	Oportunidades de coaching
+corp-customer.c4.title	Assistentes de vendas
+corp-customer.c4.text	A IA prepara briefings de clientes, resume reuniões, redige propostas e atualiza o CRM, dando aos comerciais mais tempo com os clientes.
+corp-customer.c4.viz.items.0	Briefings de clientes
+corp-customer.c4.viz.items.1	Resumos de reuniões
+corp-customer.c4.viz.items.2	Rascunhos de propostas
+corp-customer.c4.viz.items.3	Atualizações do CRM
+corp-customer.c4.viz.items.4	Emails de seguimento
+corp-customer.c5.title	Lead scoring
+corp-customer.c5.text	O ML pontua os leads pela probabilidade de compra, com base em vendas ganhas no passado, comportamento e dados da empresa, para que as vendas se concentrem nos mais promissores.
+corp-customer.c5.viz.unit	conversão % por faixa de pontuação (ilustrativo)
+corp-customer.c5.viz.items.0.l	Baixa
+corp-customer.c5.viz.items.1.l	Média
+corp-customer.c5.viz.items.2.l	Alta
+corp-customer.c6.title	Apoio à definição de preços
+corp-customer.c6.text	Os modelos sugerem preços ou descontos com base no histórico de negócios, na procura e na concorrência, dentro de limites definidos pelo negócio.
+corp-customer.c6.viz.steps.0	Contexto do negócio
+corp-customer.c6.viz.steps.1	Modelo sugere intervalo de preço
+corp-customer.c6.viz.steps.2	Dentro dos limites aprovados
+corp-customer.c6.viz.steps.3	O comercial decide
+corp-customer.c7.title	Personalização
+corp-customer.c7.text	Recomendar produtos e conteúdos relevantes aumenta a conversão, mas tem de respeitar a privacidade e evitar ser intrusivo.
+corp-customer.c7.viz.l.t	Útil
+corp-customer.c7.viz.l.items.0	relevante
+corp-customer.c7.viz.l.items.1	respeita o consentimento
+corp-customer.c7.viz.r.t	Assustador
+corp-customer.c7.viz.r.items.0	demasiado pessoal
+corp-customer.c7.viz.r.items.1	sem explicação
+corp-customer.c7.viz.r.items.2	sem consentimento
+corp-customer.c8.title	Sê transparente
+corp-customer.c8.text	Os clientes devem saber quando estão a falar com uma IA e devem poder sempre chegar a um humano. O Regulamento Europeu da IA exige essa divulgação nos chatbots.
+corp-customer.c8.viz.items.0	Dizer que é IA
+corp-customer.c8.viz.items.1	Oferecer um humano
+corp-customer.c8.viz.items.2	Não fingir empatia
+corp-customer.c8.viz.items.3	Escalar reclamações
+corp-customer.c9.title	Medir a IA no apoio
+corp-customer.c9.text	Acompanha a taxa de resolução, o tempo de atendimento, a satisfação dos clientes, a taxa de escalamento e a precisão das respostas. Atenção aos clientes que desistem.
+corp-customer.c9.viz.items.0	Resolução ao primeiro contacto
+corp-customer.c9.viz.items.1	Tempo médio de atendimento
+corp-customer.c9.viz.items.2	CSAT
+corp-customer.c9.viz.items.3	Taxa de escalamento
+corp-customer.c9.viz.items.4	Precisão das respostas
+corp-hrlegal.title	IA nos RH e no jurídico
+corp-hrlegal.summary	Contratos, políticas e processos de pessoas.
+corp-hrlegal.q0.q	Segundo o Regulamento Europeu da IA, uma IA que ordena candidatos a emprego é…
+corp-hrlegal.q0.o0	De risco mínimo
+corp-hrlegal.q0.o1	De alto risco
+corp-hrlegal.q0.o2	Não regulada
+corp-hrlegal.q0.x	Os usos no emprego são de alto risco.
+corp-hrlegal.q1.q	O que define um playbook jurídico?
+corp-hrlegal.q1.o0	O horário do escritório
+corp-hrlegal.q1.o1	As posições preferidas, aceitáveis e inaceitáveis para cada cláusula
+corp-hrlegal.q1.o2	Os salários
+corp-hrlegal.q1.x	A IA aplica-o de forma consistente.
+corp-hrlegal.q2.q	Que prática é proibida no trabalho pelo Regulamento Europeu da IA?
+corp-hrlegal.q2.o0	Chatbots de políticas
+corp-hrlegal.q2.o1	Reconhecimento de emoções (com exceções limitadas)
+corp-hrlegal.q2.o2	Revisão de contratos
+corp-hrlegal.q2.x	Proibido desde fevereiro de 2025.
+corp-hrlegal.c0.title	Revisão de contratos
+corp-hrlegal.c0.text	A IA extrai as cláusulas-chave (prazo, renovação, responsabilidade, rescisão, lei aplicável), compara-as com as tuas posições padrão e destaca os desvios para os juristas.
+corp-hrlegal.c0.viz.steps.0	Contrato carregado
+corp-hrlegal.c0.viz.steps.1	Extrair cláusulas-chave
+corp-hrlegal.c0.viz.steps.2	Comparar com o playbook
+corp-hrlegal.c0.viz.steps.3	Assinalar desvios para revisão
+corp-hrlegal.c1.title	Bibliotecas de cláusulas e playbooks
+corp-hrlegal.c1.text	Um playbook jurídico define as posições preferidas, aceitáveis e inaceitáveis para cada cláusula. A IA aplica-o de forma consistente a milhares de contratos.
+corp-hrlegal.c1.viz.items.0	Inaceitável: escalar
+corp-hrlegal.c1.viz.items.1	Alternativa aceitável
+corp-hrlegal.c1.viz.items.2	Posição preferida
+corp-hrlegal.c2.title	Pesquisa jurídica
+corp-hrlegal.c2.text	A IA ajuda a pesquisar jurisprudência e legislação, mas as citações têm de ser verificadas: já houve advogados sancionados por apresentarem casos inventados pela IA.
+corp-hrlegal.c2.viz.items.0.w	confiar nas citações da IA
+corp-hrlegal.c2.viz.items.0.r	verificar cada uma em bases oficiais
+corp-hrlegal.c3.title	Assistentes de políticas
+corp-hrlegal.c3.text	Os colaboradores fazem perguntas sobre políticas de RH, regras de viagem ou procedimentos de TI e recebem respostas fundamentadas nos documentos oficiais, com links.
+corp-hrlegal.c3.viz.steps.0	Colaborador pergunta
+corp-hrlegal.c3.viz.steps.1	Obter a política relevante
+corp-hrlegal.c3.viz.steps.2	Responder com link
+corp-hrlegal.c3.viz.steps.3	Escalar se não for claro

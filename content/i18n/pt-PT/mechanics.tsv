@@ -1028,3 +1028,273 @@ me-ev.summary	Bateria, motor, inversor e gestão térmica.
 me-ev.q0.q	Que componente converte a corrente contínua (DC) da bateria em alternada (AC) para o motor?
 me-ev.q0.o0	A caixa de velocidades
 me-ev.q0.o1	O inversor
+me-ev.q0.o2	A tomada de carregamento
+me-ev.q0.x	O inversor alimenta o motor.
+me-ev.q1.q	Porque é que os elétricos perdem autonomia no inverno?
+me-ev.q1.o0	Os pneus encolhem
+me-ev.q1.o1	As baterias frias são menos eficientes e o aquecimento gasta energia
+me-ev.q1.o2	O motor congela
+me-ev.q1.x	Contam tanto a química como o aquecimento do habitáculo.
+me-ev.q2.q	Qual é um coeficiente de resistência aerodinâmica típico de um elétrico eficiente?
+me-ev.q2.o0	0.8
+me-ev.q2.o1	Cerca de 0.2
+me-ev.q2.o2	2.0
+me-ev.q2.x	Formas suaves dão um Cd perto de 0.2.
+me-ev.c0.title	A cadeia de tração
+me-ev.c0.text	Um elétrico tem muito menos peças móveis do que um carro a combustão: uma bateria, um inversor que transforma a corrente contínua em alternada trifásica, um motor elétrico e uma redutora de uma só velocidade.
+me-ev.c0.viz.steps.0	Bateria (DC)
+me-ev.c0.viz.steps.1	Inversor
+me-ev.c0.viz.steps.2	Motor (AC trifásica)
+me-ev.c0.viz.steps.3	Redutora
+me-ev.c0.viz.steps.4	Rodas
+me-ev.c1.title	A plataforma "skate"
+me-ev.c1.text	A maioria dos elétricos monta a bateria na horizontal, debaixo do piso, entre os eixos. Isso baixa o centro de gravidade, liberta espaço no habitáculo e torna a carroçaria mais rígida.
+me-ev.c1.viz.items.0	Bateria debaixo do piso
+me-ev.c1.viz.items.1	Centro de gravidade baixo
+me-ev.c1.viz.items.2	Piso do habitáculo plano
+me-ev.c1.viz.items.3	Motores nos eixos
+me-ev.c2.title	Inversores
+me-ev.c2.text	O inversor liga e desliga a corrente contínua da bateria milhares de vezes por segundo, com transístores de silício ou de carboneto de silício, para criar corrente alternada à frequência de que o motor precisa. O carboneto de silício reduz as perdas, sobretudo em carros de 800 V.
+me-ev.c2.viz.l.t	IGBT de silício
+me-ev.c2.viz.l.items.0	consolidado
+me-ev.c2.viz.l.items.1	mais barato
+me-ev.c2.viz.r.t	Carboneto de silício (SiC)
+me-ev.c2.viz.r.items.0	menos perdas
+me-ev.c2.viz.r.items.1	tensão mais alta
+me-ev.c2.viz.r.items.2	plataformas de 800 V
+me-ev.c3.title	Gestão térmica
+me-ev.c3.text	As baterias gostam de cerca de 20–40 °C. Placas de arrefecimento a líquido, bombas de calor e o pré-condicionamento mantêm-nas nessa gama para carregamentos rápidos e vida longa, e reaproveitam o calor residual para aquecer o habitáculo.
+me-ev.c3.viz.unit	°C
+me-ev.c3.viz.items.0.l	carga lenta
+me-ev.c3.viz.items.1.l	ideal
+me-ev.c3.viz.items.2.l	potência limitada
+me-ev.c4.title	Eficiência em kWh/100 km
+me-ev.c4.text	O consumo de um elétrico mede-se em kWh por 100 km. Um compacto pode gastar 14–16; um SUV grande 20–24. A velocidade, o frio e o vento aumentam-no muito.
+me-ev.c4.viz.unit	kWh/100 km (típico)
+me-ev.c4.viz.items.0.l	Compacto
+me-ev.c4.viz.items.1.l	Berlina média
+me-ev.c4.viz.items.2.l	SUV grande
+me-ev.c4.viz.items.3.l	Autoestrada a 130 km/h
+me-ev.c5.title	Porque é que a autonomia cai no inverno
+me-ev.c5.text	As baterias frias têm maior resistência interna, e aquecer o habitáculo gasta energia. Com temperaturas negativas a autonomia pode cair 20–30%; as bombas de calor reduzem a perda.
+me-ev.c5.viz.items.0	A química da bateria abranda com o frio
+me-ev.c5.viz.items.1	Aquecimento do habitáculo
+me-ev.c5.viz.items.2	Ar mais denso, mais resistência
+me-ev.c5.viz.items.3	Pneus de inverno
+me-ev.c6.title	Aerodinâmica
+me-ev.c6.text	A velocidades de autoestrada, a maior parte da energia vai para empurrar o ar. Os elétricos têm fundos lisos, puxadores embutidos e coeficientes de resistência baixos (Cd de cerca de 0.2–0.3).
+me-ev.c6.viz.unit	Cd (aprox.)
+me-ev.c6.viz.items.0.l	SUV quadrado
+me-ev.c6.viz.items.1.l	Carro típico
+me-ev.c6.viz.items.2.l	Elétrico eficiente
+me-ev.c7.title	Travagem regenerativa
+me-ev.c7.text	Ao abrandar, o motor funciona como gerador e recupera parte da energia. Os travões de atrito continuam lá para as travagens fortes e são menos usados, por isso duram muito mais.
+me-ev.c7.viz.steps.0	Tiras o pé do pedal
+me-ev.c7.viz.steps.1	O motor vira gerador
+me-ev.c7.viz.steps.2	A bateria recarrega
+me-ev.c7.viz.steps.3	Pastilhas quase sem uso
+me-ev.c8.title	Menos peças, menos manutenção
+me-ev.c8.text	Sem mudanças de óleo, velas, embraiagem, escape nem correia de distribuição. A manutenção resume-se sobretudo a pneus, líquido dos travões, filtros do habitáculo e líquido de refrigeração.
+me-ev.c8.viz.l.t	Carro a combustão
+me-ev.c8.viz.l.items.0	óleo, filtros, correias, escape, embraiagem
+me-ev.c8.viz.r.t	Elétrico
+me-ev.c8.viz.r.items.0	pneus, líquido dos travões, filtro, refrigerante
+me-ev.c9.title	Garantias das baterias
+me-ev.c9.text	A maioria dos fabricantes garante as baterias por cerca de 8 anos ou 160,000 km, normalmente com pelo menos 70% da capacidade. Os dados reais mostram que a maioria das baterias se degrada devagar.
+me-ev.c9.viz.items.0.v	8 anos
+me-ev.c9.viz.items.0.l	garantia típica
+me-ev.c9.viz.items.1.v	160,000 km
+me-ev.c9.viz.items.1.l	ou esta distância
+me-ev.c9.viz.items.2.l	capacidade garantida
+me-thermo.title	Termodinâmica
+me-thermo.summary	Calor, motores e porque é que nada tem 100% de rendimento.
+me-thermo.q0.q	Qual é a temperatura mais baixa possível?
+me-thermo.q0.o0	−100 °C
+me-thermo.q0.o1	−273.15 °C (0 K)
+me-thermo.q0.o2	0 °C
+me-thermo.q0.x	O zero absoluto.
+me-thermo.q1.q	Uma bomba de calor usa trabalho para…
+me-thermo.q1.o0	Destruir calor
+me-thermo.q1.o1	Mover calor de um sítio mais frio para um mais quente
+me-thermo.q1.o2	Criar energia
+me-thermo.q1.x	Funciona com o ciclo de refrigeração.
+me-thermo.q2.q	Uma parede com um coeficiente U mais baixo…
+me-thermo.q2.o0	Perde mais calor
+me-thermo.q2.o1	Perde menos calor
+me-thermo.q2.o2	É sempre mais fina
+me-thermo.q2.x	O coeficiente U mede o ritmo de perda de calor.
+me-thermo.c0.title	Temperatura e calor
+me-thermo.c0.text	A temperatura mede a rapidez com que as moléculas se agitam. O calor é energia que flui do mais quente para o mais frio por causa de uma diferença de temperatura.
+me-thermo.c0.viz.l.t	Temperatura
+me-thermo.c0.viz.l.items.0	quão quente
+me-thermo.c0.viz.l.items.1	°C ou K
+me-thermo.c0.viz.r.t	Calor
+me-thermo.c0.viz.r.items.0	energia em trânsito
+me-thermo.c0.viz.r.items.1	joules
+me-thermo.c1.title	Zero absoluto
+me-thermo.c1.text	Nada pode estar mais frio do que −273.15 °C, o zero absoluto, onde o movimento molecular é mínimo. A escala kelvin começa aí: 0 K.
+me-thermo.c1.viz.items.0.a	0 K
+me-thermo.c1.viz.items.0.b	−273.15 °C
+me-thermo.c1.viz.items.1.a	273.15 K
+me-thermo.c1.viz.items.1.b	0 °C
+me-thermo.c1.viz.items.2.a	373.15 K
+me-thermo.c1.viz.items.2.b	100 °C
+me-thermo.c2.title	Primeira lei
+me-thermo.c2.text	A energia não se cria nem se destrói. O calor fornecido a um sistema serve para aumentar a sua energia interna ou para realizar trabalho.
+me-thermo.c2.viz.f	ΔU = Q − W
+me-thermo.c2.viz.items.0.s	ΔU
+me-thermo.c2.viz.items.0.m	variação da energia interna
+me-thermo.c2.viz.items.1.s	Q
+me-thermo.c2.viz.items.1.m	calor fornecido
+me-thermo.c2.viz.items.2.s	W
+me-thermo.c2.viz.items.2.m	trabalho feito pelo sistema
+me-thermo.c3.title	Segunda lei
+me-thermo.c3.text	O calor flui naturalmente do quente para o frio, nunca o contrário por si só. Todo o processo real cria alguma desordem (entropia), e é por isso que nenhum motor consegue transformar todo o calor em trabalho.
+me-thermo.c3.viz.steps.0	Fonte quente
+me-thermo.c3.viz.steps.1	O motor faz algum trabalho
+me-thermo.c3.viz.steps.2	O resto do calor é rejeitado
+me-thermo.c3.viz.steps.3	Fonte fria
+me-thermo.c4.title	Rendimento de Carnot
+me-thermo.c4.text	O rendimento máximo possível de um motor térmico depende só das temperaturas quente e fria, em kelvin.
+me-thermo.c4.example.0	Vapor a 550 °C (823 K), rio a 20 °C (293 K)
+me-thermo.c4.example.1	1 − 293 ÷ 823
+me-thermo.c4.example.2	≈ 64% no máximo
+me-thermo.c4.viz.f	η máx = 1 − T fria ÷ T quente
+me-thermo.c4.viz.items.0.s	T
+me-thermo.c4.viz.items.0.m	temperaturas absolutas (K)
+me-thermo.c5.title	Motores térmicos e bombas de calor
+me-thermo.c5.text	Um motor térmico usa um fluxo de calor para produzir trabalho. Uma bomba de calor faz o inverso: usa trabalho para mover calor do frio para o quente. A mesma física, no sentido oposto.
+me-thermo.c5.viz.l.t	Motor térmico
+me-thermo.c5.viz.l.items.0	entra calor, sai trabalho
+me-thermo.c5.viz.l.items.1	motor de carro, central
+me-thermo.c5.viz.r.t	Bomba de calor
+me-thermo.c5.viz.r.items.0	entra trabalho, move calor
+me-thermo.c5.viz.r.items.1	frigorífico, ar condicionado
+me-thermo.c6.title	O ciclo de refrigeração
+me-thermo.c6.text	Um fluido refrigerante evapora do lado frio (absorvendo calor), é comprimido (aquecendo), condensa do lado quente (libertando calor) e volta a expandir-se. Os frigoríficos e as bombas de calor usam este circuito.
+me-thermo.c6.viz.steps.0	Evapora: absorve calor
+me-thermo.c6.viz.steps.1	Comprime: aquece
+me-thermo.c6.viz.steps.2	Condensa: liberta calor
+me-thermo.c6.viz.steps.3	Expande: arrefece outra vez
+me-thermo.c7.title	Calor específico e armazenamento
+me-thermo.c7.text	A água armazena muito calor por quilo, o que a torna ideal para sistemas de aquecimento e depósitos de acumulação. A pedra e o betão também armazenam calor: a inércia térmica mantém as casas antigas frescas no verão.
+me-thermo.c7.viz.unit	J por kg por °C
+me-thermo.c7.viz.items.0.l	Aço
+me-thermo.c7.viz.items.1.l	Betão
+me-thermo.c7.viz.items.2.l	Ar
+me-thermo.c7.viz.items.3.l	Água
+me-thermo.c8.title	Isolamento e coeficientes U
+me-thermo.c8.text	As perdas de calor através das paredes medem-se com o coeficiente U: watts perdidos por m² por grau de diferença. Quanto mais baixo, melhor. Uma parede moderna bem isolada pode ficar abaixo de 0.3; uma parede maciça antiga pode passar de 1.5.
+me-thermo.c8.example.0	Parede de 50 m², U = 1.5, diferença de 15 °C
+me-thermo.c8.example.1	1.5 × 50 × 15
+me-thermo.c8.example.2	= 1,125 W perdidos
+me-thermo.c8.viz.f	Q = U × A × ΔT
+me-thermo.c8.viz.items.0.s	U
+me-thermo.c8.viz.items.0.m	W/m²·K
+me-thermo.c8.viz.items.1.s	A
+me-thermo.c8.viz.items.1.m	área
+me-thermo.c8.viz.items.2.s	ΔT
+me-thermo.c8.viz.items.2.m	interior menos exterior
+me-thermo.c9.title	Mudanças de fase
+me-thermo.c9.text	O gelo a derreter e a água a ferver absorvem grandes quantidades de energia sem mudar de temperatura. Transformar 1 kg de água a 100 °C em vapor exige cerca de 2.26 MJ, mais de cinco vezes a energia para a aquecer de 0 a 100 °C.
+me-thermo.c9.viz.unit	kJ por kg de água
+me-thermo.c9.viz.items.0.l	Aquecer 0→100 °C
+me-thermo.c9.viz.items.1.l	Ferver a 100 °C
+me-wood.title	Madeira e carpintaria
+me-wood.summary	Veio, humidade, ligações e madeira na construção.
+me-wood.q0.q	Porque é que se deixa folga para a madeira se mexer num soalho?
+me-wood.q0.o0	Para poupar madeira
+me-wood.q0.o1	A madeira encolhe e incha com a humidade
+me-wood.q0.o2	Para os cabos
+me-wood.q0.x	A humidade altera as suas dimensões.
+me-wood.q1.q	A madeira para interiores deve ser seca até cerca de…
+me-wood.q1.o0	50% de humidade
+me-wood.q1.o1	8–12% de humidade
+me-wood.q1.o2	0% de humidade
+me-wood.q1.x	Tem de estar de acordo com o ar interior.
+me-wood.q2.q	Qual é o maior produtor mundial de cortiça?
+me-wood.q2.o0	Espanha
+me-wood.q2.o1	Portugal
+me-wood.q2.o2	França
+me-wood.q2.x	Portugal fornece cerca de metade da cortiça do mundo.
+me-wood.c0.title	Madeiras duras e macias
+me-wood.c0.text	As madeiras macias vêm de coníferas (pinho, abeto): crescem depressa, são leves e usam-se em estruturas. As madeiras duras vêm de folhosas (carvalho, castanho, eucalipto): normalmente mais densas e duradouras.
+me-wood.c0.viz.l.t	Macia
+me-wood.c0.viz.l.items.0	pinho, abeto
+me-wood.c0.viz.l.items.1	leve
+me-wood.c0.viz.l.items.2	estruturas e telhados
+me-wood.c0.viz.r.t	Dura
+me-wood.c0.viz.r.items.0	carvalho, castanho
+me-wood.c0.viz.r.items.1	densa
+me-wood.c0.viz.r.items.2	soalhos, móveis, vigas
+me-wood.c1.title	Teor de humidade
+me-wood.c1.text	A madeira acabada de cortar pode ter mais de 50% de água em peso. Encolhe à medida que seca, até ficar em equilíbrio com a humidade do ar. A madeira para interiores deve ser seca até cerca de 8–12% antes de ser usada.
+me-wood.c1.viz.items.0.l	móveis de interior
+me-wood.c1.viz.items.1.l	madeira de exterior
+me-wood.c1.viz.items.2.l	madeira verde
+me-wood.c2.title	A madeira mexe
+me-wood.c2.text	A madeira encolhe e incha muito mais na perpendicular ao veio do que ao longo dele. As portas prendem com a humidade do inverno e os soalhos abrem frinchas nos verões secos. Uma boa carpintaria deixa espaço para o movimento.
+me-wood.c2.viz.unit	% de retração de verde a seca (aprox.)
+me-wood.c2.viz.items.0.l	Ao longo do veio
+me-wood.c2.viz.items.1.l	Radial
+me-wood.c2.viz.items.2.l	Tangencial
+me-wood.c3.title	Ligações
+me-wood.c3.text	As ligações tradicionais encaixam as peças para que seja a madeira a suportar a carga: respiga e mecha, cauda de andorinha, meia-madeira. O trabalho moderno também usa parafusos, cavilhas, lamelas e ligadores metálicos.
+me-wood.c3.viz.items.0.a	respiga e mecha
+me-wood.c3.viz.items.0.b	caixilhos, vigas
+me-wood.c3.viz.items.1.a	cauda de andorinha
+me-wood.c3.viz.items.1.b	gavetas, resiste à tração
+me-wood.c3.viz.items.2.a	meia-madeira
+me-wood.c3.viz.items.2.b	cruzamentos
+me-wood.c3.viz.items.3.a	cavilhas
+me-wood.c3.viz.items.3.b	alinhamento oculto
+me-wood.c4.title	Ler o veio
+me-wood.c4.text	Aplaina e trabalha com o formão a favor do veio, como quem faz festas a um gato, para evitar arrancar fibras. Os nós são pontos fracos e podem cair de tábuas finas.
+me-wood.c4.viz.items.0.w	aplainar contra o veio
+me-wood.c4.viz.items.0.r	vira a tábua, aplaina a favor
+me-wood.c4.viz.items.1.w	nó na ligação
+me-wood.c4.viz.items.1.r	muda a ligação de sítio
+me-wood.c5.title	Lamelado-colado e CLT
+me-wood.c5.text	A madeira de engenharia cola camadas umas às outras. O lamelado-colado dá vigas longas e resistentes; os painéis de madeira lamelada cruzada (CLT) têm camadas em ângulo reto e podem formar paredes e pisos de edifícios de vários andares.
+me-wood.c5.viz.l.t	Lamelado-colado
+me-wood.c5.viz.l.items.0	camadas numa só direção
+me-wood.c5.viz.l.items.1	vigas longas e arcos
+me-wood.c5.viz.r.t	CLT
+me-wood.c5.viz.r.items.0	camadas cruzadas
+me-wood.c5.viz.r.items.1	painéis de parede e piso
+me-wood.c5.viz.r.items.2	edifícios altos de madeira
+me-wood.c6.title	Proteger a madeira
+me-wood.c6.text	A podridão precisa de humidade. Mantém a madeira seca, ventilada e afastada do chão; no exterior usa espécies naturalmente duráveis ou madeira tratada. O caruncho e as térmitas controlam-se com tratamento e inspeção.
+me-wood.c6.viz.items.0	Mantê-la seca
+me-wood.c6.viz.items.1	Ventilar
+me-wood.c6.viz.items.2	Afastá-la do chão
+me-wood.c6.viz.items.3	Tratar ou escolher espécies duráveis
+me-wood.c6.viz.items.4	Inspecionar com regularidade
+me-wood.c7.title	A madeira no fogo
+me-wood.c7.text	A madeira grossa carboniza por fora, e a camada carbonizada isola o núcleo, por isso as vigas grandes mantêm a resistência durante um tempo surpreendente num incêndio. Os engenheiros incluem nas secções uma margem para a carbonização.
+me-wood.c7.viz.steps.0	Fogo
+me-wood.c7.viz.steps.1	A camada exterior carboniza
+me-wood.c7.viz.steps.2	O carvão isola o núcleo
+me-wood.c7.viz.steps.3	A viga continua a suportar a carga
+me-wood.c8.title	Estruturas de telhado
+me-wood.c8.text	Os telhados tradicionais portugueses usam varas e ripas de madeira sob telha cerâmica. As asnas distribuem a carga do telhado pelas paredes; uma boa ventilação evita a podridão por condensação.
+me-wood.c8.viz.steps.0	Telhas
+me-wood.c8.viz.steps.1	Ripas
+me-wood.c8.viz.steps.2	Varas ou asnas
+me-wood.c8.viz.steps.3	Frechais
+me-wood.c8.viz.steps.4	Paredes
+me-wood.c9.title	As florestas de Portugal
+me-wood.c9.text	O eucalipto, o pinheiro-bravo e o sobreiro são as árvores florestais mais comuns em Portugal. Portugal é o maior produtor mundial de cortiça, fornecendo cerca de metade da cortiça do mundo.
+me-wood.c9.viz.unit	% da área florestal (aprox.)
+me-wood.c9.viz.items.0.l	Eucalipto
+me-wood.c9.viz.items.1.l	Sobreiro
+me-wood.c9.viz.items.2.l	Pinheiro-bravo
+me-wood.c9.viz.items.3.l	Azinheira
+me-wood.c9.viz.items.4.l	Outras
+me-construction.title	Construir uma casa confortável
+me-construction.summary	Isolamento, janelas, pontes térmicas e ventilação.
+me-construction.q0.q	Por onde é que uma casa sem isolamento perde muitas vezes uma grande parte do calor, sendo barato corrigir primeiro?
+me-construction.q0.o0	Portas
+me-construction.q0.o1	O telhado
+me-construction.q0.o2	A chaminé
+me-construction.q0.x	Isolar o telhado costuma ser o melhor primeiro passo.

@@ -774,7 +774,7 @@ ai-speech.c3.viz.steps.2	Gera a forma de onda
 ai-speech.c3.viz.steps.3	Voz de som natural
 ai-speech.c4.title	Assistentes de voz: uma cadeia
 ai-speech.c4.text	Um assistente de voz encadeia vários modelos: um pequeno fica à escuta da palavra de ativação, o ASR transcreve o pedido, um modelo de linguagem percebe a intenção e o TTS diz a resposta.
-ai-speech.c4.viz.steps.0	Palavra de ativação
+ai-speech.c4.viz.steps.0	Palavra-chave
 ai-speech.c4.viz.steps.1	Fala para texto
 ai-speech.c4.viz.steps.2	Perceber a intenção
 ai-speech.c4.viz.steps.3	Agir
@@ -905,7 +905,7 @@ ai-recs.c9.text	As mesmas técnicas sugerem empregos no LinkedIn, amigos nas red
 ai-recs.c9.viz.items.0	Streaming e música
 ai-recs.c9.viz.items.1	Lojas online
 ai-recs.c9.viz.items.2	Notícias e redes sociais
-ai-recs.c9.viz.items.3	Correspondência de empregos
+ai-recs.c9.viz.items.3	Ofertas de emprego
 ai-recs.c9.viz.items.4	Peças de manutenção
 ai-rl.title	Aprender por tentativa e erro
 ai-rl.summary	Aprendizagem por reforço, jogos e robôs.
@@ -1007,3 +1007,263 @@ ai-history.q2.q	O que provocou os invernos da IA?
 ai-history.q2.o0	Proibições de hardware
 ai-history.q2.o1	As promessas ultrapassaram os resultados e o financiamento foi cortado
 ai-history.q2.o2	Falta de eletricidade
+ai-history.q2.x	A desilusão levou a cortes no financiamento.
+ai-history.c0.title	As máquinas podem pensar?
+ai-history.c0.text	Em 1950, Alan Turing propôs um teste prático: se um juiz que conversa por texto não consegue distinguir uma máquina de uma pessoa, podemos dizer que a máquina pensa. Chamou-lhe jogo da imitação; nós chamamos-lhe teste de Turing.
+ai-history.c0.viz.events.0.l	Turing descreve uma máquina universal
+ai-history.c0.viz.events.1.l	o jogo da imitação
+ai-history.c0.viz.events.2.l	nasce o nome "inteligência artificial"
+ai-history.c1.title	Dartmouth, 1956
+ai-history.c1.text	Um workshop de verão no Dartmouth College deu nome à área. Os organizadores acreditavam que um pequeno grupo conseguiria progressos significativos na inteligência das máquinas num só verão. Demorou um bocadinho mais.
+ai-history.c1.viz.items.0.l	IA ganha nome em Dartmouth
+ai-history.c1.viz.items.1.l	investigadores no centro da proposta
+ai-history.c1.viz.items.2.l	anos depois, ainda a continuar
+ai-history.c2.title	IA simbólica
+ai-history.c2.text	A IA inicial tentava escrever a inteligência como regras e lógica: se isto, então aquilo. Resolvia quebra-cabeças e demonstrava teoremas, mas tinha dificuldades com tarefas confusas do mundo real, como reconhecer um rosto ou perceber a fala.
+ai-history.c2.viz.l.t	IA simbólica
+ai-history.c2.viz.l.items.0	regras escritas à mão
+ai-history.c2.viz.l.items.1	raciocínio claro
+ai-history.c2.viz.l.items.2	frágil com dados confusos
+ai-history.c2.viz.r.t	Aprendizagem automática
+ai-history.c2.viz.r.items.0	aprende com exemplos
+ai-history.c2.viz.r.items.1	lida com a confusão
+ai-history.c2.viz.r.items.2	mais difícil de explicar
+ai-history.c3.title	Os invernos da IA
+ai-history.c3.text	Por duas vezes, grandes promessas deram resultados dececionantes e o financiamento secou: em meados dos anos 1970 e de novo no final dos anos 1980, quando os "sistemas periciais" baseados em regras se revelaram caros de manter.
+ai-history.c3.viz.events.0.l	primeira tradução automática desilude
+ai-history.c3.viz.events.1.l	primeiro inverno da IA
+ai-history.c3.viz.events.2.l	boom dos sistemas periciais
+ai-history.c3.viz.events.3.l	segundo inverno
+ai-history.c3.viz.events.4.l	Deep Blue reaviva o interesse
+ai-history.c4.title	Sistemas periciais
+ai-history.c4.text	Nos anos 1980, as empresas construíram sistemas periciais: milhares de regras extraídas de especialistas humanos, para tarefas como configurar computadores ou diagnosticar infeções. Funcionavam em áreas restritas, mas cada situação nova exigia regras novas.
+ai-history.c4.viz.steps.0	Entrevistar especialistas
+ai-history.c4.viz.steps.1	Escrever milhares de regras
+ai-history.c4.viz.steps.2	Funciona numa área restrita
+ai-history.c4.viz.steps.3	Falha com casos novos
+ai-history.c5.title	A viragem estatística
+ai-history.c5.text	A partir dos anos 1990, os investigadores passaram cada vez mais a deixar as máquinas aprender com dados em vez de escreverem regras. Os filtros de spam, a ordenação da pesquisa e o reconhecimento de fala foram melhorando de forma constante com mais dados e computadores mais rápidos.
+ai-history.c5.viz.steps.0	Mais dados online
+ai-history.c5.viz.steps.1	Computadores mais rápidos
+ai-history.c5.viz.steps.2	Aprendizagem estatística
+ai-history.c5.viz.steps.3	Ganhos práticos constantes
+ai-history.c6.title	A revolução da aprendizagem profunda
+ai-history.c6.text	Por volta de 2012 juntaram-se três ingredientes: enormes conjuntos de dados etiquetados, computação barata em GPU e melhores truques para treinar redes neuronais profundas. O reconhecimento de imagem, depois a fala e depois a tradução melhoraram de forma dramática.
+ai-history.c6.viz.items.0	Boom da aprendizagem profunda
+ai-history.c6.viz.items.1	Melhores algoritmos
+ai-history.c6.viz.items.2	Computação em GPU
+ai-history.c6.viz.items.3	Big data
+ai-history.c7.title	O Transformer, 2017
+ai-history.c7.text	Um artigo da Google intitulado "Attention Is All You Need" apresentou a arquitetura Transformer. Processa sequências inteiras de uma vez e permite que cada palavra preste atenção a todas as outras. Quase todos os grandes modelos de linguagem desde então assentam nela.
+ai-history.c7.viz.events.0.l	Artigo do Transformer
+ai-history.c7.viz.events.1.l	BERT e GPT-1
+ai-history.c7.viz.events.2.l	GPT-3
+ai-history.c7.viz.events.3.l	ChatGPT
+ai-history.c7.viz.events.4.l	GPT-4 e Claude
+ai-history.c8.title	O lançamento do ChatGPT
+ai-history.c8.text	O ChatGPT foi lançado a 30 de novembro de 2022 e terá chegado a cerca de 100 milhões de utilizadores em dois meses, o que faz dele uma das aplicações de consumo com crescimento mais rápido de sempre.
+ai-history.c8.viz.items.0.v	30 nov. 2022
+ai-history.c8.viz.items.0.l	lançamento
+ai-history.c8.viz.items.1.v	~100 M
+ai-history.c8.viz.items.1.l	utilizadores em cerca de dois meses
+ai-history.c9.title	Lições da história
+ai-history.c9.text	A IA tem sido repetidamente sobrevalorizada a curto prazo e subestimada a longo prazo. O progresso chega aos saltos, quando os dados, o poder de computação e as ideias novas se alinham.
+ai-history.c9.viz.items.0	O hype a curto prazo desilude muitas vezes
+ai-history.c9.viz.items.1	O progresso a longo prazo é real
+ai-history.c9.viz.items.2	Dados e computação geram saltos
+ai-history.c9.viz.items.3	Ideias novas resolvem problemas antigos
+ai-hardware.title	O hardware por trás da IA
+ai-hardware.summary	GPUs, chips, memória e porque é que treinar custa tanto.
+ai-hardware.q0.q	Usar um modelo treinado para responder a perguntas chama-se…
+ai-hardware.q0.o0	Treino
+ai-hardware.q0.o1	Inferência
+ai-hardware.q0.o2	Quantização
+ai-hardware.q0.x	A inferência é pôr o modelo a correr; o treino é construí-lo.
+ai-hardware.q1.q	O que faz a quantização a 4 bits?
+ai-hardware.q1.o0	Torna o modelo mais inteligente
+ai-hardware.q1.o1	Guarda os pesos com menos bits, para ficar mais pequeno e mais rápido
+ai-hardware.q1.o2	Acrescenta mais parâmetros
+ai-hardware.q1.x	Menos bits por peso reduzem o uso de memória.
+ai-hardware.q2.q	Porque é que as GPUs são boas para a IA?
+ai-hardware.q2.o0	Têm mais ranhuras de RAM
+ai-hardware.q2.o1	Fazem milhares de cálculos idênticos em paralelo
+ai-hardware.q2.o2	Correm o Windows mais depressa
+ai-hardware.q2.x	As redes neuronais são sobretudo matemática matricial em paralelo.
+ai-hardware.c0.title	Treino vs. inferência
+ai-hardware.c0.text	O treino é aprender os pesos: lento, feito uma vez (ou de vez em quando) em clusters enormes. A inferência é usar o modelo treinado para responder: rápida, feita milhões de vezes, muitas vezes em hardware mais pequeno.
+ai-hardware.c0.viz.l.t	Treino
+ai-hardware.c0.viz.l.items.0	semanas em milhares de GPUs
+ai-hardware.c0.viz.l.items.1	muito caro
+ai-hardware.c0.viz.l.items.2	feito raramente
+ai-hardware.c0.viz.r.t	Inferência
+ai-hardware.c0.viz.r.items.0	milissegundos por resposta
+ai-hardware.c0.viz.r.items.1	corre sem parar
+ai-hardware.c0.viz.r.items.2	custo por pedido conta
+ai-hardware.c1.title	GPUs e matemática matricial
+ai-hardware.c1.text	As redes neuronais passam a maior parte do tempo a multiplicar grandes grelhas de números. As GPUs têm milhares de núcleos que fazem o mesmo cálculo em paralelo, o que as torna dezenas de vezes mais rápidas do que os CPUs neste trabalho.
+ai-hardware.c1.viz.unit	velocidade relativa (ilustrativa)
+ai-hardware.c1.viz.items.0.l	CPU
+ai-hardware.c1.viz.items.1.l	GPU
+ai-hardware.c2.title	Chips especializados em IA
+ai-hardware.c2.text	Para além das GPUs, as empresas constroem chips feitos só para redes neuronais: as TPUs da Google, aceleradores nos telemóveis (motores neuronais) e pequenos chips de periferia, como a Coral TPU usada na deteção em câmaras.
+ai-hardware.c2.viz.root	Chips de IA
+ai-hardware.c2.viz.items.0	GPUs (Nvidia, AMD)
+ai-hardware.c2.viz.items.1	TPUs (Google)
+ai-hardware.c2.viz.items.2	Motores neuronais de telemóvel
+ai-hardware.c2.viz.items.3	Aceleradores edge
+ai-hardware.c3.title	A memória é muitas vezes o gargalo
+ai-hardware.c3.text	Os pesos de um modelo têm de estar em memória rápida enquanto ele corre. Os modelos grandes precisam de muita; mover dados para dentro e para fora da memória limita muitas vezes a velocidade mais do que o poder de cálculo puro.
+ai-hardware.c3.viz.steps.0	Pesos na memória da GPU
+ai-hardware.c3.viz.steps.1	Lidos a cada token
+ai-hardware.c3.viz.steps.2	Largura de banda limita a velocidade
+ai-hardware.c4.title	FLOPs
+ai-hardware.c4.text	O poder de computação mede-se em FLOPs: operações de vírgula flutuante. Treinar um modelo grande exige um número enorme, muitas vezes mais de 10²⁴ operações.
+ai-hardware.c4.viz.f	FLOP/s = operações por segundo
+ai-hardware.c4.viz.items.0.s	tera
+ai-hardware.c4.viz.items.0.m	um bilião por segundo
+ai-hardware.c4.viz.items.1.s	peta
+ai-hardware.c4.viz.items.1.m	mil biliões
+ai-hardware.c4.viz.items.2.s	exa
+ai-hardware.c4.viz.items.2.m	um milhão de biliões
+ai-hardware.c5.title	Quantização
+ai-hardware.c5.text	Os pesos podem ser guardados com menos bits: 8 ou 4 bits em vez de 16. O modelo fica 2 a 4 vezes mais pequeno e mais rápido, normalmente com apenas uma pequena perda de qualidade. É assim que modelos grandes correm em portáteis e telemóveis.
+ai-hardware.c5.viz.unit	GB para um modelo 7B
+ai-hardware.c5.viz.items.0.l	16 bits
+ai-hardware.c5.viz.items.1.l	8 bits
+ai-hardware.c5.viz.items.2.l	4 bits
+ai-hardware.c6.title	Consumo de energia
+ai-hardware.c6.text	Os centros de dados já usam uma parte considerável da eletricidade em alguns países, e a IA está a fazer crescer essa procura. Os ganhos de eficiência por cálculo são grandes, mas o consumo total continua a subir à medida que a IA se espalha.
+ai-hardware.c6.viz.items.0	Treino: grande custo energético pontual
+ai-hardware.c6.viz.items.1	Inferência: pouco por pedido, enorme no total
+ai-hardware.c6.viz.items.2	O arrefecimento soma à fatura
+ai-hardware.c6.viz.items.3	Local e energia limpa contam
+ai-hardware.c7.title	Nuvem vs. local
+ai-hardware.c7.text	Podes alugar IA por chamada na nuvem ou correr modelos no teu próprio hardware. A nuvem dá-te os maiores modelos sem custo inicial; o local dá privacidade, custo previsível e utilização offline.
+ai-hardware.c7.viz.l.t	Nuvem
+ai-hardware.c7.viz.l.items.0	os maiores modelos
+ai-hardware.c7.viz.l.items.1	paga por uso
+ai-hardware.c7.viz.l.items.2	dados saem da tua rede
+ai-hardware.c7.viz.r.t	Local
+ai-hardware.c7.viz.r.items.0	dados ficam em casa
+ai-hardware.c7.viz.r.items.1	custo fixo
+ai-hardware.c7.viz.r.items.2	modelos menores
+ai-hardware.c8.title	Escala
+ai-hardware.c8.text	Os investigadores descobriram que os modelos melhoram de forma previsível quando se aumentam os dados, os parâmetros e a computação em conjunto. Estas "leis de escala" justificaram a construção de clusters cada vez maiores.
+ai-hardware.c8.viz.steps.0	Mais dados
+ai-hardware.c8.viz.steps.1	Modelo maior
+ai-hardware.c8.viz.steps.2	Mais computação
+ai-hardware.c8.viz.steps.3	Menos erro, previsivelmente
+ai-hardware.c9.title	Cadeia de abastecimento
+ai-hardware.c9.text	A maioria dos chips de IA mais avançados é desenhada nos EUA e fabricada pela TSMC em Taiwan, com máquinas de litografia da ASML nos Países Baixos. Esta concentração faz dos chips uma questão estratégica e geopolítica.
+ai-hardware.c9.viz.steps.0	Design: Nvidia, AMD, Google
+ai-hardware.c9.viz.steps.1	Fabrico: TSMC, Taiwan
+ai-hardware.c9.viz.steps.2	Máquinas: ASML, Países Baixos
+ai-hardware.c9.viz.steps.3	Centros de dados no mundo
+ai-bias.title	Enviesamento e justiça
+ai-bias.summary	Como os modelos herdam injustiças dos dados e o que fazer quanto a isso.
+ai-bias.q0.q	Porque é que apagar a coluna "género" não chega para eliminar o enviesamento de género?
+ai-bias.q0.o0	Chega sempre
+ai-bias.q0.o1	Outras características podem servir de indicadores indiretos do género
+ai-bias.q0.o2	Os modelos não leem colunas
+ai-bias.q0.x	Nomes, escolas ou interrupções na carreira podem revelá-lo indiretamente.
+ai-bias.q1.q	Um modelo tem 95% de exatidão no total. O que deves verificar a seguir?
+ai-bias.q1.o0	Nada
+ai-bias.q1.o1	A exatidão discriminada por grupo
+ai-bias.q1.o2	A cor do painel
+ai-bias.q1.x	As médias podem esconder maus resultados para alguns grupos.
+ai-bias.q2.q	Ao abrigo do Regulamento da IA da UE, a triagem de CV para recrutamento é…
+ai-bias.q2.o0	Proibida
+ai-bias.q2.o1	Uma utilização de risco elevado com obrigações extra
+ai-bias.q2.o2	Não regulada
+ai-bias.q2.x	As decisões de emprego constam da lista de risco elevado.
+ai-bias.c0.title	Os modelos aprendem o nosso passado
+ai-bias.c0.text	Um modelo treinado com decisões históricas aprende os padrões nelas contidos, incluindo os injustos. Se o recrutamento passado favoreceu um grupo, um modelo treinado com ele também o fará.
+ai-bias.c0.viz.steps.0	Decisões históricas enviesadas
+ai-bias.c0.viz.steps.1	Dados de treino
+ai-bias.c0.viz.steps.2	Modelo copia o padrão
+ai-bias.c0.viz.steps.3	Decisões enviesadas em massa
+ai-bias.c1.title	Um exemplo real
+ai-bias.c1.text	A Amazon terá abandonado uma ferramenta experimental de triagem de CV por volta de 2018, depois de descobrir que penalizava CV que continham a palavra "women's" (feminino), porque tinha aprendido com uma década de contratações maioritariamente masculinas.
+ai-bias.c1.viz.items.0.w	"clube de xadrez feminino" pontuava menos
+ai-bias.c1.viz.items.0.r	remover sinais indiretos e testar por grupo
+ai-bias.c2.title	Indicadores indiretos (proxies)
+ai-bias.c2.text	Remover um campo sensível como o género não chega. Outros campos podem servir de indicadores indiretos: nomes próprios, certas escolas, códigos postais, histórico de trabalho a tempo parcial. O modelo pode redescobrir o atributo sensível de forma indireta.
+ai-bias.c2.viz.items.0.a	Código postal
+ai-bias.c2.viz.items.0.b	pode revelar etnia ou rendimento
+ai-bias.c2.viz.items.1.a	Nome próprio
+ai-bias.c2.viz.items.1.b	pode revelar o género
+ai-bias.c2.viz.items.2.a	Pausas na carreira
+ai-bias.c2.viz.items.2.b	podem revelar parentalidade
+ai-bias.c3.title	Mede o desempenho por grupo
+ai-bias.c3.text	A exatidão global pode esconder grandes diferenças. Discrimina sempre os resultados: o modelo funciona igualmente bem para mulheres e homens, clientes mais velhos e mais novos, regiões diferentes?
+ai-bias.c3.viz.unit	% de erro por grupo (ilustrativo)
+ai-bias.c3.viz.items.0.l	Grupo A
+ai-bias.c3.viz.items.1.l	Grupo B
+ai-bias.c3.viz.items.2.l	Grupo C
+ai-bias.c4.title	Diferentes definições de justo
+ai-bias.c4.text	As taxas de aprovação devem ser iguais entre grupos? Ou as taxas de erro? Ou pessoas igualmente qualificadas devem ter resultados iguais? Estas definições podem entrar em conflito matematicamente, por isso tens de escolher de forma deliberada.
+ai-bias.c4.viz.items.0	Taxas de aprovação iguais
+ai-bias.c4.viz.items.1	Taxas de erro iguais
+ai-bias.c4.viz.items.2	Tratamento igual para igual qualificação
+ai-bias.c4.viz.items.3	Escolhe e documenta a tua definição
+ai-bias.c5.title	Ciclos de retroalimentação
+ai-bias.c5.text	Previsões enviesadas podem criar os dados que as confirmam. Se um sistema envia mais inspetores para uma zona, encontra lá mais problemas, o que torna a previsão seguinte ainda mais enviesada.
+ai-bias.c5.viz.steps.0	Previsão direciona a atenção
+ai-bias.c5.viz.steps.1	Acham-se mais problemas ali
+ai-bias.c5.viz.steps.2	Os dados parecem confirmar
+ai-bias.c5.viz.steps.3	Previsão mais forte
+ai-bias.c6.title	Corrigir o enviesamento
+ai-bias.c6.text	Podes reequilibrar os dados de treino, remover características que funcionam como indicadores indiretos, ajustar limiares por caso de uso e manter um humano no circuito para decisões de alto risco. E voltas a testar depois de cada alteração.
+ai-bias.c6.viz.items.0	Auditar os dados de treino
+ai-bias.c6.viz.items.1	Remover ou limitar proxies
+ai-bias.c6.viz.items.2	Testar resultados por grupo
+ai-bias.c6.viz.items.3	Revisão humana nas grandes decisões
+ai-bias.c6.viz.items.4	Monitorizar após o lançamento
+ai-bias.c7.title	O enviesamento não é só sobre pessoas
+ai-bias.c7.text	Os dados podem estar enviesados de muitas formas: sensores de uma só fábrica, preços de um só mercado, fotos de uma só estação. Qualquer diferença entre os dados de treino e a realidade torna-se um ponto cego.
+ai-bias.c7.viz.l.t	Enviesamento social
+ai-bias.c7.viz.l.items.0	género, idade, etnia
+ai-bias.c7.viz.l.items.1	risco legal e ético
+ai-bias.c7.viz.r.t	Enviesamento de dados
+ai-bias.c7.viz.r.items.0	um local, uma estação
+ai-bias.c7.viz.r.items.1	quedas silenciosas
+ai-bias.c8.title	Também é a lei
+ai-bias.c8.text	Na UE, as leis contra a discriminação também se aplicam a decisões automatizadas, o RGPD dá às pessoas direitos face a decisões automatizadas significativas e o Regulamento da IA acrescenta requisitos para sistemas de risco elevado, como o recrutamento e a avaliação de crédito.
+ai-bias.c8.viz.root	Regras da UE
+ai-bias.c8.viz.items.0	Lei da igualdade
+ai-bias.c8.viz.items.1	RGPD: decisões automáticas
+ai-bias.c8.viz.items.2	Reg. IA: deveres de alto risco
+ai-bias.c9.title	Equipas diversas ajudam
+ai-bias.c9.text	Equipas com percursos diferentes têm mais probabilidade de detetar cedo os pontos cegos. Envolve as pessoas afetadas por um sistema quando o desenhas e testas.
+ai-bias.c9.viz.steps.0	Equipa diversa
+ai-bias.c9.viz.steps.1	Faz perguntas diferentes
+ai-bias.c9.viz.steps.2	Deteta pontos cegos cedo
+ai-bias.c9.viz.steps.3	Sistema mais justo
+ai-safety.title	Segurança da IA
+ai-safety.summary	Manter sistemas poderosos fiáveis, honestos e sob controlo.
+ai-safety.q0.q	Instruções escondidas num documento que sequestram um agente de IA chamam-se…
+ai-safety.q0.o0	Um jailbreak
+ai-safety.q0.o1	Injeção de prompts
+ai-safety.q0.o2	Sobreajuste
+ai-safety.q0.x	O texto do atacante é injetado através de conteúdo que o agente lê.
+ai-safety.q1.q	O que é o red teaming?
+ai-safety.q1.o0	Pintar servidores de vermelho
+ai-safety.q1.o1	Tentar deliberadamente fazer um modelo falhar antes do lançamento
+ai-safety.q1.o2	Treinar com imagens vermelhas
+ai-safety.q1.x	São testes adversariais estruturados.
+ai-safety.q2.q	Qual é uma boa prática para um agente de IA que pode fazer pagamentos?
+ai-safety.q2.o0	Deixá-lo pagar à vontade
+ai-safety.q2.o1	Exigir aprovação humana para pagamentos
+ai-safety.q2.o2	Esconder os seus registos
+ai-safety.q2.x	Ações irreversíveis precisam de uma verificação humana.
+ai-safety.c0.title	O que abrange a segurança da IA
+ai-safety.c0.text	A segurança vai da fiabilidade do dia a dia (o sistema faz o que deve, sem erros prejudiciais?) até questões de longo prazo sobre sistemas muito capazes a perseguir objetivos que não pretendíamos.
+ai-safety.c0.viz.items.0	Controlo a longo prazo de IA avançada
+ai-safety.c0.viz.items.1	Prevenção de usos indevidos
+ai-safety.c0.viz.items.2	Comportamento honesto e fiável
+ai-safety.c0.viz.items.3	Robustez no dia a dia
+ai-safety.c1.title	Alinhamento
+ai-safety.c1.text	Alinhamento significa conseguir que um sistema persiga aquilo que realmente queremos e não uma versão literal ou distorcida. À medida que os sistemas se tornam mais capazes, pequenos mal-entendidos podem ter consequências maiores.
+ai-safety.c1.viz.l.t	O que dissemos
+ai-safety.c1.viz.l.items.0	maximizar cliques
+ai-safety.c1.viz.r.t	O que queríamos dizer

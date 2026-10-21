@@ -1186,3 +1186,344 @@ ma-networks.c0.viz.steps.3	Contar linhas em cada ponto
 ma-networks.c1.title	Nós e arestas
 ma-networks.c1.text	Um grafo é um conjunto de nós (pontos) ligados por arestas (linhas). Cidades e estradas, pessoas e amizades, páginas web e ligações: tudo isto são grafos.
 ma-networks.c1.viz.items.0.a	Cidades
+ma-networks.c1.viz.items.0.b	nós
+ma-networks.c1.viz.items.1.a	Estradas
+ma-networks.c1.viz.items.1.b	arestas
+ma-networks.c1.viz.items.2.a	Pessoas
+ma-networks.c1.viz.items.2.b	nós
+ma-networks.c1.viz.items.3.a	Amizades
+ma-networks.c1.viz.items.3.b	arestas
+ma-networks.c2.title	A regra de Euler
+ma-networks.c2.text	Só consegues percorrer uma rede usando cada aresta uma única vez se zero ou dois nós tiverem um número ímpar de arestas. Königsberg tinha quatro nós ímpares.
+ma-networks.c2.viz.items.0.a	0 nós ímpares
+ma-networks.c2.viz.items.0.b	possível, acabas onde começas
+ma-networks.c2.viz.items.1.a	2 nós ímpares
+ma-networks.c2.viz.items.1.b	possível, começa num deles
+ma-networks.c2.viz.items.2.a	4 nós ímpares
+ma-networks.c2.viz.items.2.b	impossível
+ma-networks.c3.title	Caminhos mais curtos
+ma-networks.c3.text	A tua aplicação de mapas encontra o caminho mais rápido com algoritmos como o de Dijkstra (1956), que explora a partir do ponto de partida, alargando sempre o caminho mais curto encontrado até ao momento.
+ma-networks.c3.viz.steps.0	Início
+ma-networks.c3.viz.steps.1	Explorar o mais próximo por visitar
+ma-networks.c3.viz.steps.2	Atualizar distâncias
+ma-networks.c3.viz.steps.3	Repetir até ao destino
+ma-networks.c4.title	O caixeiro-viajante
+ma-networks.c4.text	Encontra o percurso mais curto que visita cada cidade uma vez. É fácil para 5 cidades, mas as possibilidades explodem: 20 cidades têm mais de 60 mil biliões de percursos.
+ma-networks.c4.viz.unit	percursos
+ma-networks.c4.viz.items.0.l	5 cidades
+ma-networks.c4.viz.items.1.l	10 cidades
+ma-networks.c4.viz.items.2.l	20 cidades*
+ma-networks.c5.title	Seis graus de separação
+ma-networks.c5.text	A experiência de Stanley Milgram, em 1967, sugeriu que quaisquer dois norte-americanos estão ligados por cerca de seis conhecidos. Mais tarde, dados do Facebook apontaram para uma média de cerca de 3.5 passos.
+ma-networks.c5.viz.steps.0	Tu
+ma-networks.c5.viz.steps.1	Um amigo
+ma-networks.c5.viz.steps.2	O amigo dele
+ma-networks.c5.viz.steps.4	Qualquer pessoa, em cerca de seis passos
+ma-networks.c6.title	Hubs
+ma-networks.c6.text	Em muitas redes, alguns hubs têm um número enorme de ligações: grandes aeroportos, sites populares, influenciadores. Ataca os hubs e a rede desfaz-se.
+ma-networks.c6.viz.root	Hub do aeroporto de Lisboa
+ma-networks.c6.viz.items.0	Porto
+ma-networks.c6.viz.items.1	Madrid
+ma-networks.c6.viz.items.2	Londres
+ma-networks.c6.viz.items.3	Paris
+ma-networks.c6.viz.items.4	São Paulo
+ma-networks.c7.title	Quatro cores
+ma-networks.c7.text	Qualquer mapa pode ser colorido com apenas quatro cores sem que duas regiões vizinhas fiquem iguais. Provado em 1976, foi a primeira grande demonstração que dependeu de um computador.
+ma-networks.c7.viz.events.0.l	problema proposto
+ma-networks.c7.viz.events.1.l	provado por computador
+ma-networks.c7.viz.events.2.l	reverificado por computador
+ma-networks.c8.title	PageRank
+ma-networks.c8.text	A ideia original da Google: uma página é importante se páginas importantes tiverem ligações para ela. Trata a web como um gigantesco grafo de votos.
+ma-networks.c8.viz.steps.0	As páginas ligam-se entre si
+ma-networks.c8.viz.steps.1	As ligações valem como votos
+ma-networks.c8.viz.steps.2	Votos de páginas importantes contam mais
+ma-networks.c8.viz.steps.3	Classificação
+ma-networks.c9.title	Epidemias em redes
+ma-networks.c9.text	As doenças espalham-se pelas redes de contactos. Vacinar os hubs mais ligados, como os profissionais de saúde, pode proteger muito mais pessoas do que vacinar ao acaso.
+ma-networks.c9.viz.l.t	Vacinação ao acaso
+ma-networks.c9.viz.l.items.0	proteção mais lenta
+ma-networks.c9.viz.r.t	Visar os hubs
+ma-networks.c9.viz.r.items.0	quebra cadeias mais depressa
+ma-estimate.title	Estimativas
+ma-estimate.summary	Respostas boas o suficiente, de cabeça.
+ma-estimate.q0.q	Quanto tempo são mil milhões de segundos?
+ma-estimate.q0.o0	Cerca de 3 anos
+ma-estimate.q0.o1	Cerca de 11 dias
+ma-estimate.q0.o2	Cerca de 32 anos
+ma-estimate.q0.x	Um milhão de segundos são cerca de 11.5 dias.
+ma-estimate.q1.q	O que é um problema de Fermi?
+ma-estimate.q1.o0	Um problema matemático por resolver
+ma-estimate.q1.o1	Uma estimativa grosseira construída a partir de palpites simples
+ma-estimate.q1.o2	Uma fórmula da física
+ma-estimate.q1.x	Divide as grandes perguntas em partes.
+ma-estimate.c0.title	Problemas de Fermi
+ma-estimate.c0.text	O físico Enrico Fermi adorava perguntas como "quantos afinadores de pianos há em Chicago?" Divide-as em partes que consigas adivinhar, multiplica, e muitas vezes ficas a um fator de poucas vezes do valor real.
+ma-estimate.c0.viz.steps.0	Grande pergunta
+ma-estimate.c0.viz.steps.1	Dividir em partes
+ma-estimate.c0.viz.steps.2	Estimar cada uma
+ma-estimate.c0.viz.steps.3	Multiplicar
+ma-estimate.c1.title	Postos de combustível em Portugal
+ma-estimate.c1.text	Cerca de 10 milhões de pessoas, mais ou menos 5 milhões de carros, cada um a abastecer uma vez por semana: 5 milhões de abastecimentos por semana. Se um posto fizer cerca de 3,000 por semana, dá à volta de 1,700 postos; o número real é de alguns milhares.
+ma-estimate.c1.example.0	5 milhões de abastecimentos por semana
+ma-estimate.c1.example.1	÷ 3,000 por posto
+ma-estimate.c1.example.2	≈ 1,700 postos
+ma-estimate.c1.viz.steps.0	10 milhões de pessoas
+ma-estimate.c1.viz.steps.1	~5 milhões de carros
+ma-estimate.c1.viz.steps.2	5 milhões de abastecimentos/semana
+ma-estimate.c1.viz.steps.3	÷ 3,000 por posto
+ma-estimate.c2.title	Ordens de grandeza
+ma-estimate.c2.text	Muitas vezes, a potência de 10 importa mais do que o valor exato. São centenas, milhares ou milhões? Acerta nisso primeiro.
+ma-estimate.c2.viz.items.0.l	Uma turma
+ma-estimate.c2.viz.items.1.l	Uma aldeia
+ma-estimate.c2.viz.items.2.l	Cidade de Lisboa
+ma-estimate.c2.viz.items.3.l	Portugal
+ma-estimate.c3.title	Referências úteis
+ma-estimate.c3.text	Memoriza alguns números de referência e consegues estimar quase tudo.
+ma-estimate.c3.viz.items.0.a	Portugal
+ma-estimate.c3.viz.items.0.b	~10.5 milhões de pessoas
+ma-estimate.c3.viz.items.1.a	Mundo
+ma-estimate.c3.viz.items.1.b	~8 mil milhões de pessoas
+ma-estimate.c3.viz.items.2.a	Perímetro da Terra
+ma-estimate.c3.viz.items.2.b	40,000 km
+ma-estimate.c3.viz.items.3.a	Um ano
+ma-estimate.c3.viz.items.3.b	~31.5 milhões de segundos
+ma-estimate.c4.title	Arredonda sem medo
+ma-estimate.c4.text	Arredonda para números fáceis de multiplicar. 47 × 213 ≈ 50 × 200 = 10,000. A resposta real é 10,011.
+ma-estimate.c4.viz.steps.1	Arredondar: 50 × 200
+ma-estimate.c4.viz.steps.3	Exato: 10,011
+ma-estimate.c5.title	Os excessos e as faltas anulam-se
+ma-estimate.c5.text	Nas estimativas com vários passos, os erros de arredondamento em sentidos diferentes tendem a anular-se, por isso a resposta final é muitas vezes melhor do que qualquer palpite isolado.
+ma-estimate.c5.viz.l.t	Um palpite
+ma-estimate.c5.viz.l.items.0	falha muitas vezes por 2×
+ma-estimate.c5.viz.r.t	Vários palpites multiplicados
+ma-estimate.c5.viz.r.items.0	erros anulam-se em parte
+ma-estimate.c6.title	Verificações de bom senso
+ma-estimate.c6.text	As estimativas apanham erros. Se uma folha de cálculo diz que um café gasta 40 toneladas de café por dia, uma estimativa rápida mostra que algo está mal.
+ma-estimate.c6.viz.items.0.w	Confiar cegamente na folha de cálculo
+ma-estimate.c6.viz.items.0.r	Estimar primeiro, depois verificar
+ma-estimate.c7.title	Estimar multidões
+ma-estimate.c7.text	Conta as pessoas numa pequena área e multiplica pelo número de áreas iguais que a multidão ocupa. A polícia e os organizadores discordam muitas vezes por um fator de dois.
+ma-estimate.c7.viz.steps.0	Contar pessoas em 10 m²
+ma-estimate.c7.viz.steps.1	Medir a área total
+ma-estimate.c7.viz.steps.2	Multiplicar
+ma-estimate.c7.viz.steps.3	Tamanho da multidão
+ma-estimate.c8.title	Quanto tempo são mil milhões de segundos?
+ma-estimate.c8.text	Um milhão de segundos são cerca de 11.5 dias. Mil milhões de segundos são cerca de 32 anos. Os números grandes são muito diferentes, mesmo que soem parecidos.
+ma-estimate.c8.viz.unit	tempo
+ma-estimate.c8.viz.items.0.l	Mil s, minutos
+ma-estimate.c8.viz.items.1.l	Milhão de s, dias
+ma-estimate.c8.viz.items.2.l	Mil milhões de s, anos
+ma-estimate.c9.title	Intervalos de confiança
+ma-estimate.c9.text	Os bons estimadores dão intervalos: "entre 2,000 e 4,000". Um intervalo de que tens 90% de certeza é mais honesto do que um único número com ar de preciso.
+ma-estimate.c9.viz.unit	postos de combustível
+ma-estimate.c9.viz.items.0.l	Estimativa baixa
+ma-estimate.c9.viz.items.1.l	Melhor estimativa
+ma-estimate.c9.viz.items.2.l	Estimativa alta
+ma-patterns.title	Sucessões e padrões
+ma-patterns.summary	Descobrir a regra.
+ma-patterns.q0.q	O que vem a seguir: 2, 6, 18, 54, …?
+ma-patterns.q0.o0	108
+ma-patterns.q0.o1	162
+ma-patterns.q0.o2	72
+ma-patterns.q0.x	Multiplica por 3.
+ma-patterns.q1.q	Qual é o 4.º número triangular?
+ma-patterns.q1.o0	8
+ma-patterns.q1.o1	10
+ma-patterns.q1.o2	16
+ma-patterns.q1.x	1 + 2 + 3 + 4.
+ma-patterns.c0.title	Progressões aritméticas
+ma-patterns.c0.text	Soma sempre o mesmo número: 3, 7, 11, 15… (soma 4). O termo de ordem n é fácil de encontrar: 4n − 1.
+ma-patterns.c1.title	Progressões geométricas
+ma-patterns.c1.text	Multiplica sempre pelo mesmo número: 2, 6, 18, 54… (×3). Crescem muito mais depressa do que as progressões aritméticas.
+ma-patterns.c2.title	Números triangulares
+ma-patterns.c2.text	1, 3, 6, 10, 15: o número de pontos em triângulos cada vez maiores, como os pinos de bowling. O de ordem n é n(n + 1)/2.
+ma-patterns.c2.viz.f	Tₙ = n(n + 1) / 2
+ma-patterns.c2.viz.items.0.s	n
+ma-patterns.c2.viz.items.0.m	número da linha
+ma-patterns.c2.viz.items.1.s	T₄
+ma-patterns.c2.viz.items.1.m	10 pinos de bowling
+ma-patterns.c3.title	Fibonacci na natureza
+ma-patterns.c3.text	Muitos girassóis têm 34 e 55 espirais; as pinhas mostram 8 e 13. Estes números de Fibonacci permitem arrumar as sementes de forma eficiente.
+ma-patterns.c3.viz.items.0.a	Pinha
+ma-patterns.c3.viz.items.0.b	8 e 13 espirais
+ma-patterns.c3.viz.items.1.a	Ananás
+ma-patterns.c3.viz.items.1.b	8 e 13
+ma-patterns.c3.viz.items.2.a	Girassol
+ma-patterns.c3.viz.items.2.b	34 e 55 ou 55 e 89
+ma-patterns.c4.title	O número de ouro
+ma-patterns.c4.text	Divide cada número de Fibonacci pelo anterior e aproximas-te de 1.618…, o número de ouro φ.
+ma-patterns.c4.viz.unit	razão
+ma-patterns.c5.title	O triângulo de Pascal
+ma-patterns.c5.text	Cada número é a soma dos dois que estão por cima. O triângulo esconde os números naturais, os números triangulares, as potências de 2 e as probabilidades de lançamentos de moedas.
+ma-patterns.c6.title	Os primos resistem aos padrões
+ma-patterns.c6.text	Os primos vão ficando mais raros mas nunca acabam, e nenhuma fórmula simples os produz a todos. Prevê-los é um dos problemas em aberto mais profundos da matemática.
+ma-patterns.c7.title	Sucessões traiçoeiras
+ma-patterns.c7.text	1, 2, 4, 8, 16… parece óbvio, mas, se cortares um círculo com linhas entre pontos, obténs 1, 2, 4, 8, 16 e depois 31. Os padrões precisam de prova.
+ma-patterns.c7.viz.l.t	Esperado
+ma-patterns.c7.viz.l.items.0	32 regiões
+ma-patterns.c7.viz.r.t	Na verdade
+ma-patterns.c7.viz.r.items.0	31 regiões
+ma-patterns.c8.title	Diz o que vês
+ma-patterns.c8.text	1, 11, 21, 1211, 111221… Cada termo descreve o anterior em voz alta: "um 1", "dois 1", "um 2, um 1". Um padrão baseado em palavras, não em aritmética.
+ma-patterns.c9.title	Descobre a regra
+ma-patterns.c9.text	2, 5, 10, 17, 26… As diferenças são 3, 5, 7, 9: números ímpares. A regra é n² + 1.
+ma-patterns.c9.example.0	Diferenças: 3, 5, 7, 9
+ma-patterns.c9.example.1	Quadrados: 1, 4, 9, 16, 25
+ma-patterns.c9.example.2	Soma 1: n² + 1
+ma-units.title	Medidas e unidades
+ma-units.summary	Metros, quilos e porque são importantes.
+ma-units.q0.q	Quantos litros há em 1 m³?
+ma-units.q0.o0	100
+ma-units.q0.o1	1,000
+ma-units.q0.o2	10,000
+ma-units.q0.x	1 m³ = 1,000 litros.
+ma-units.q1.q	Porque se perdeu a Mars Climate Orbiter em 1999?
+ma-units.q1.o0	Um meteoro
+ma-units.q1.o1	Uma confusão entre unidades imperiais e métricas
+ma-units.q1.o2	Um vírus informático
+ma-units.q1.x	Libras-força vs newtons.
+ma-units.c0.title	O sistema métrico
+ma-units.c0.text	Nascido na França revolucionária na década de 1790, o sistema métrico usa potências de 10, por isso converter é só mover o separador decimal. Portugal adotou-o em 1852.
+ma-units.c0.viz.items.0.a	quilo
+ma-units.c0.viz.items.1.a	centi
+ma-units.c0.viz.items.2.a	mili
+ma-units.c0.viz.items.3.a	micro
+ma-units.c0.viz.items.3.b	÷ 1 milhão
+ma-units.c1.title	Sete unidades de base
+ma-units.c1.text	Todas as medidas são construídas a partir de sete unidades de base do SI. Desde 2019, todas são definidas por constantes fixas da natureza, e não por objetos físicos.
+ma-units.c1.viz.items.0	Metro: comprimento
+ma-units.c1.viz.items.1	Quilograma: massa
+ma-units.c1.viz.items.2	Segundo: tempo
+ma-units.c1.viz.items.3	Ampere: corrente
+ma-units.c1.viz.items.4	Kelvin: temperatura
+ma-units.c1.viz.items.5	Mole: quantidade
+ma-units.c1.viz.items.6	Candela: luz
+ma-units.c2.title	Adeus, Le Grand K
+ma-units.c2.text	Durante 130 anos, o quilograma foi um cilindro de metal guardado num cofre perto de Paris. Em 2019, foi redefinido com base na constante de Planck.
+ma-units.c2.viz.events.0.l	quilograma de metal
+ma-units.c2.viz.events.1.l	decisão de redefinir
+ma-units.c2.viz.events.2.l	definição pela constante de Planck
+ma-units.c3.title	Unidades de área e de volume
+ma-units.c3.text	1 m² são 10,000 cm², não 100. 1 m³ são 1,000 litros. As unidades ficam ao quadrado e ao cubo juntamente com os comprimentos.
+ma-units.c3.viz.items.0.a	1 m
+ma-units.c3.viz.items.0.b	100 cm
+ma-units.c3.viz.items.1.a	1 m²
+ma-units.c3.viz.items.1.b	10,000 cm²
+ma-units.c3.viz.items.2.a	1 m³
+ma-units.c3.viz.items.2.b	1,000,000 cm³ = 1,000 litros
+ma-units.c4.title	Hectares
+ma-units.c4.text	Um hectare são 100 m × 100 m = 10,000 m², mais ou menos um campo de futebol e meio. As quintas e as florestas medem-se em hectares.
+ma-units.c4.viz.items.0.v	10,000 m²
+ma-units.c4.viz.items.0.l	um hectare
+ma-units.c4.viz.items.1.v	100 ha
+ma-units.c4.viz.items.1.l	um km²
+ma-units.c4.viz.items.2.l	campos de futebol
+ma-units.c5.title	Unidades imperiais
+ma-units.c5.text	O Reino Unido e os EUA ainda usam milhas, libras e graus Fahrenheit. Conversões rápidas: 1 milha ≈ 1.6 km, 1 kg ≈ 2.2 lb, 1 polegada = 2.54 cm.
+ma-units.c5.viz.items.0.a	1 milha
+ma-units.c5.viz.items.0.b	1.609 km
+ma-units.c5.viz.items.1.a	1 kg
+ma-units.c5.viz.items.1.b	2.205 lb
+ma-units.c5.viz.items.2.a	1 polegada
+ma-units.c5.viz.items.2.b	2.54 cm
+ma-units.c5.viz.items.3.a	1 galão, EUA
+ma-units.c5.viz.items.3.b	3.79 litros
+ma-units.c6.title	A Mars Climate Orbiter
+ma-units.c6.text	Em 1999, uma sonda da NASA perdeu-se em Marte porque uma equipa usou libras-força e outra newtons. O erro de $125 milhões foi uma confusão de unidades.
+ma-units.c6.viz.steps.0	Equipa A: unidades imperiais
+ma-units.c6.viz.steps.1	Equipa B: métricas
+ma-units.c6.viz.steps.2	Dados dos propulsores errados
+ma-units.c6.viz.steps.3	Sonda perdida em Marte
+ma-units.c7.title	Algarismos significativos
+ma-units.c7.text	A precisão deve corresponder à da medição. Uma sala medida como tendo 4.2 m não tem uma área de exatamente 17.64 m²; diz antes cerca de 17.6 m².
+ma-units.c7.viz.items.0.w	17.6400 m²
+ma-units.c7.viz.items.0.r	cerca de 17.6 m²
+ma-units.c8.title	Unidades de velocidade
+ma-units.c8.text	Divide os km/h por 3.6 para obteres metros por segundo. 120 km/h são cerca de 33 m/s: um carro percorre um campo de futebol a cada três segundos.
+ma-units.c8.viz.f	m/s = km/h ÷ 3.6
+ma-units.c8.viz.items.0.s	km/h
+ma-units.c8.viz.items.0.m	quilómetros por hora
+ma-units.c8.viz.items.1.s	m/s
+ma-units.c8.viz.items.1.m	metros por segundo
+ma-units.c9.title	Unidades de energia
+ma-units.c9.text	Um quilowatt-hora faz funcionar um aquecedor de 1,000 W durante uma hora. Uma Caloria alimentar são 1,000 calorias, cerca de 4.2 kJ. Um duche quente gasta cerca de 2–3 kWh.
+ma-units.c9.viz.items.0.a	1 kWh
+ma-units.c9.viz.items.0.b	3.6 milhões de joules
+ma-units.c9.viz.items.1.a	1 kcal
+ma-units.c9.viz.items.1.b	4.18 kJ
+ma-units.c9.viz.items.2.a	Duche quente
+ma-units.c9.viz.items.2.b	cerca de 2–3 kWh
+ma-puzzles.title	Enigmas famosos
+ma-puzzles.summary	Quebra-cabeças com matemática profunda.
+ma-puzzles.q0.q	Quantos apertos de mão há quando 10 pessoas se cumprimentam todas uma vez?
+ma-puzzles.q0.o0	90
+ma-puzzles.q0.o1	45
+ma-puzzles.q0.o2	100
+ma-puzzles.q0.x	10 × 9 ÷ 2.
+ma-puzzles.q1.q	0.999…, com os 9 a repetir-se para sempre, é igual a 1?
+ma-puzzles.q1.o0	Não, é ligeiramente menor
+ma-puzzles.q1.o1	Sim, exatamente
+ma-puzzles.q1.o2	Só aproximadamente
+ma-puzzles.q1.x	3 × 0.333… = 0.999… = 1.
+ma-puzzles.c0.title	A Torre de Hanói
+ma-puzzles.c0.text	Move uma pilha de discos para outro pino, um de cada vez, sem nunca pôr um disco maior em cima de um mais pequeno. Com n discos, são precisos 2ⁿ − 1 movimentos.
+ma-puzzles.c0.viz.unit	movimentos mínimos
+ma-puzzles.c0.viz.items.0.l	3 discos
+ma-puzzles.c0.viz.items.1.l	5 discos
+ma-puzzles.c0.viz.items.2.l	7 discos
+ma-puzzles.c0.viz.items.3.l	10 discos
+ma-puzzles.c1.title	O quadrado em falta
+ma-puzzles.c1.text	Reorganizar quatro peças de um triângulo parece criar um buraco. O truque: as "hipotenusas" não são linhas retas, por isso as formas são ligeiramente diferentes.
+ma-puzzles.c1.viz.items.0.w	A área desapareceu
+ma-puzzles.c1.viz.items.0.r	As arestas estão ligeiramente tortas: as formas não são iguais
+ma-puzzles.c2.title	O problema dos apertos de mão
+ma-puzzles.c2.text	Se 10 pessoas se cumprimentarem todas uma vez, quantos apertos de mão há? Cada uma aperta 9 mãos, mas cada aperto envolve duas pessoas: 10 × 9 ÷ 2 = 45.
+ma-puzzles.c2.example.0	10 pessoas × 9 outras = 90
+ma-puzzles.c2.example.1	Cada um contado duas vezes
+ma-puzzles.c2.example.2	90 ÷ 2 = 45
+ma-puzzles.c2.viz.f	apertos de mão = n(n − 1) ÷ 2
+ma-puzzles.c2.viz.items.0.s	n
+ma-puzzles.c2.viz.items.0.m	número de pessoas
+ma-puzzles.c2.viz.items.1.s	10 pessoas
+ma-puzzles.c3.title	Princípio do pombal
+ma-puzzles.c3.text	Se puseres 13 meias em 12 gavetas, pelo menos uma gaveta fica com duas. Simples mas poderoso: em Lisboa, há pelo menos duas pessoas com exatamente o mesmo número de cabelos na cabeça.
+ma-puzzles.c3.viz.steps.0	Mais objetos do que caixas
+ma-puzzles.c3.viz.steps.1	Pelo menos uma caixa tem dois
+ma-puzzles.c4.title	O enigma de 0.999…
+ma-puzzles.c4.text	0.999…, com os 9 a repetir-se para sempre, é exatamente igual a 1. Uma prova: 1/3 = 0.333…, logo 3 × 1/3 = 0.999… = 1.
+ma-puzzles.c4.example.0	1/3 = 0.333…
+ma-puzzles.c4.example.1	× 3
+ma-puzzles.c4.example.2	0.999… = 1
+ma-puzzles.c5.title	O hotel de Hilbert
+ma-puzzles.c5.text	Um hotel com infinitos quartos está cheio. Chega um novo hóspede: muda toda a gente do quarto n para o quarto n + 1 e o quarto 1 fica livre. O infinito comporta-se de forma estranha.
+ma-puzzles.c5.viz.steps.0	Hotel cheio
+ma-puzzles.c5.viz.steps.1	Todos sobem um quarto
+ma-puzzles.c5.viz.steps.2	Quarto 1 livre
+ma-puzzles.c5.viz.steps.3	Entra o novo hóspede
+ma-puzzles.c6.title	Os que dizem a verdade e os mentirosos
+ma-puzzles.c6.text	Numa ilha, os cavaleiros dizem sempre a verdade e os patifes mentem sempre. Pergunta a qualquer um "o que diria o outro?" e basta inverter a resposta para descobrires a verdade.
+ma-puzzles.c6.viz.items.0.a	Cavaleiro
+ma-puzzles.c6.viz.items.0.b	diz sempre a verdade
+ma-puzzles.c6.viz.items.1.a	Patife
+ma-puzzles.c6.viz.items.1.b	mente sempre
+ma-puzzles.c6.viz.items.2.a	Truque
+ma-puzzles.c6.viz.items.2.b	pergunta pela resposta do outro
+ma-puzzles.c7.title	O Sudoku é lógica
+ma-puzzles.c7.text	O Sudoku não precisa de aritmética, só de lógica: cada linha, coluna e quadrado contém os números de 1 a 9 uma vez. Um puzzle bem feito tem exatamente uma solução.
+ma-puzzles.c7.viz.items.0	Cada linha: 1–9
+ma-puzzles.c7.viz.items.1	Cada coluna: 1–9
+ma-puzzles.c7.viz.items.2	Cada quadrado 3×3: 1–9
+ma-puzzles.c7.viz.items.3	Uma única solução
+ma-puzzles.c8.title	As Sete Pontes hoje
+ma-puzzles.c8.text	A ideia de Euler é usada na recolha do lixo e nas rotas dos carteiros: planear percursos que passam por todas as ruas uma vez, voltando atrás o menos possível.
+ma-puzzles.c8.viz.steps.0	Mapa das ruas
+ma-puzzles.c8.viz.steps.1	Achar cruzamentos ímpares
+ma-puzzles.c8.viz.steps.2	Juntar as repetições mais curtas
+ma-puzzles.c8.viz.steps.3	Rota eficiente
+ma-puzzles.c9.title	O lobo, a cabra e a couve: a solução
+ma-puzzles.c9.text	A ideia-chave foi trazer algo de volta. Muitos enigmas precisam de um passo que parece andar para trás, uma lição útil também para resolver problemas reais.
+ma-puzzles.c9.viz.steps.0	Cabra para lá
+ma-puzzles.c9.viz.steps.1	Lobo para lá
+ma-puzzles.c9.viz.steps.2	Cabra para cá
+ma-puzzles.c9.viz.steps.3	Couve para lá
+ma-puzzles.c9.viz.steps.4	Cabra para lá

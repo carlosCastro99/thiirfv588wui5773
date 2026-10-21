@@ -1017,3 +1017,263 @@ tr-logic.c0.text	A eletrónica digital representa tudo com bits: 0 ou 1, tensão
 tr-logic.c0.viz.items.0.v	1 bit
 tr-logic.c0.viz.items.0.l	0 ou 1
 tr-logic.c0.viz.items.1.v	8 bits
+tr-logic.c0.viz.items.1.l	1 byte
+tr-logic.c0.viz.items.2.l	valores num byte
+tr-logic.c1.title	Números binários
+tr-logic.c1.text	Cada posição binária vale o dobro da que está à sua direita: 1, 2, 4, 8, 16… O número 1011 é 8 + 0 + 2 + 1 = 11.
+tr-logic.c1.viz.items.0.m	a casa dos oitos
+tr-logic.c1.viz.items.1.m	sem quatros
+tr-logic.c1.viz.items.2.m	a casa dos dois
+tr-logic.c1.viz.items.3.m	a casa das unidades
+tr-logic.c2.title	Hexadecimal
+tr-logic.c2.text	O hexadecimal agrupa quatro bits num único dígito, de 0 a 9 e depois de A a F. Um byte são exatamente dois dígitos hexadecimais: 0xFF = 255. Endereços e cores (#FF8800) usam hexadecimal.
+tr-logic.c2.viz.items.0.a	0x0
+tr-logic.c2.viz.items.1.a	0x9
+tr-logic.c2.viz.items.2.a	0xA
+tr-logic.c2.viz.items.3.a	0xF
+tr-logic.c2.viz.items.4.a	0xFF
+tr-logic.c3.title	AND, OR, NOT
+tr-logic.c3.text	As portas básicas: a AND dá 1 só se todas as entradas forem 1; a OR dá 1 se alguma entrada for 1; a NOT inverte a entrada.
+tr-logic.c3.viz.l.t	AND
+tr-logic.c3.viz.l.items.0	as duas têm de ser 1
+tr-logic.c3.viz.l.items.1	porta aberta AND alarme ligado → sirene
+tr-logic.c3.viz.r.t	OR
+tr-logic.c3.viz.r.items.0	basta uma ser 1
+tr-logic.c3.viz.r.items.1	botão A OR botão B → luz
+tr-logic.c4.title	NAND: a porta universal
+tr-logic.c4.text	Qualquer circuito lógico, até um processador inteiro, pode ser construído só com portas NAND (AND seguida de NOT). É barata de fabricar em silício, por isso está em todo o lado.
+tr-logic.c4.viz.steps.0	Portas NAND
+tr-logic.c4.viz.steps.1	Fazem AND, OR, NOT
+tr-logic.c4.viz.steps.2	Fazem somadores e memória
+tr-logic.c4.viz.steps.3	Fazem um processador
+tr-logic.c5.title	XOR
+tr-logic.c5.text	O OR exclusivo dá 1 quando as entradas são diferentes. Usa-se para somar números binários, verificações de paridade e cifra simples.
+tr-logic.c5.viz.items.0.a	0 XOR 0
+tr-logic.c5.viz.items.1.a	0 XOR 1
+tr-logic.c5.viz.items.2.a	1 XOR 0
+tr-logic.c5.viz.items.3.a	1 XOR 1
+tr-logic.c6.title	Somar com portas lógicas
+tr-logic.c6.text	Um meio-somador soma dois bits usando XOR (para a soma) e AND (para o transporte). Encadeia somadores completos e podes somar números de qualquer tamanho.
+tr-logic.c6.viz.steps.0	Bits A e B
+tr-logic.c6.viz.steps.1	XOR dá a soma
+tr-logic.c6.viz.steps.2	AND dá o transporte
+tr-logic.c6.viz.steps.3	Encadear para números maiores
+tr-logic.c7.title	Flip-flops: memória feita de portas
+tr-logic.c7.text	Liga duas portas uma à outra em realimentação e o circuito lembra-se do último estado. Isso é um flip-flop, a base dos registos e da memória rápida.
+tr-logic.c7.viz.steps.0	Duas portas cruzadas
+tr-logic.c7.viz.steps.1	A saída realimenta
+tr-logic.c7.viz.steps.2	Guarda 0 ou 1
+tr-logic.c7.viz.steps.3	Um bit de memória
+tr-logic.c8.title	Relógios
+tr-logic.c8.text	Os circuitos digitais avançam ao ritmo de um sinal de relógio que bate milhões ou milhares de milhões de vezes por segundo. Em cada impulso, os flip-flops captam novos valores.
+tr-logic.c8.viz.items.0.v	16 MHz
+tr-logic.c8.viz.items.0.l	Arduino Uno
+tr-logic.c8.viz.items.1.v	240 MHz
+tr-logic.c8.viz.items.1.l	ESP32
+tr-logic.c8.viz.items.2.v	~4 GHz
+tr-logic.c8.viz.items.2.l	CPU de PC
+tr-logic.c9.title	Truques bit a bit no código
+tr-logic.c9.text	Os programadores usam operações bit a bit para ativar, limpar e testar bits individuais, por exemplo num registo que controla pinos GPIO: value | (1<<5) ativa o bit 5.
+tr-logic.c9.viz.items.0.a	x | (1<<n)
+tr-logic.c9.viz.items.0.b	ativa o bit n
+tr-logic.c9.viz.items.1.a	x & ~(1<<n)
+tr-logic.c9.viz.items.1.b	limpa o bit n
+tr-logic.c9.viz.items.2.a	x & (1<<n)
+tr-logic.c9.viz.items.2.b	testa o bit n
+tr-logic.c9.viz.items.3.a	x ^ (1<<n)
+tr-logic.c9.viz.items.3.b	inverte o bit n
+tr-memory.title	Memória e armazenamento
+tr-memory.summary	RAM, flash e EEPROM.
+tr-memory.q0.q	O que acontece ao conteúdo da RAM quando falta a energia?
+tr-memory.q0.o0	Fica guardado
+tr-memory.q0.o1	Perde-se
+tr-memory.q0.o2	Passa para a flash
+tr-memory.q0.x	A RAM é volátil.
+tr-memory.q1.q	Porque não escrever na flash a cada segundo?
+tr-memory.q1.o0	É demasiado lento
+tr-memory.q1.o1	As células de flash gastam-se ao fim de muitos ciclos de apagamento
+tr-memory.q1.o2	Usa Wi-Fi
+tr-memory.q1.x	Resistência limitada a escritas.
+tr-memory.q2.q	Qual é o mais rápido?
+tr-memory.q2.o0	SSD
+tr-memory.q2.o1	RAM
+tr-memory.q2.o2	Registos do CPU
+tr-memory.q2.x	Os registos estão dentro do processador.
+tr-memory.c0.title	RAM: rápida e esquecida
+tr-memory.c0.text	A RAM guarda os dados com que um programa está a trabalhar neste momento. É rápida mas volátil: desliga a energia e desaparece tudo.
+tr-memory.c0.viz.l.t	RAM
+tr-memory.c0.viz.l.items.0	rápida
+tr-memory.c0.viz.l.items.1	volátil
+tr-memory.c0.viz.l.items.2	dados de trabalho
+tr-memory.c0.viz.r.t	Flash
+tr-memory.c0.viz.r.items.0	mais lenta
+tr-memory.c0.viz.r.items.1	guarda dados sem energia
+tr-memory.c0.viz.r.items.2	programa e ficheiros
+tr-memory.c1.title	SRAM e DRAM
+tr-memory.c1.text	A SRAM guarda cada bit num flip-flop: rápida, usada em caches e na memória dos microcontroladores. A DRAM guarda os bits como carga em condensadores minúsculos: mais densa e mais barata, usada na RAM dos computadores, mas tem de ser refrescada constantemente.
+tr-memory.c1.viz.items.0.a	SRAM
+tr-memory.c1.viz.items.0.b	flip-flops, rápida, caches
+tr-memory.c1.viz.items.1.a	DRAM
+tr-memory.c1.viz.items.1.b	condensadores, densa, memória do PC
+tr-memory.c1.viz.items.2.a	refresh
+tr-memory.c1.viz.items.2.b	a DRAM reescreve-se milhares de vezes por segundo
+tr-memory.c2.title	Memória flash
+tr-memory.c2.text	A flash guarda os dados sem energia prendendo carga em células isoladas. O programa do teu microcontrolador, os SSDs, os cartões SD e as pens USB usam-na.
+tr-memory.c2.viz.root	Memória flash
+tr-memory.c2.viz.items.0	Programa do microcontrolador
+tr-memory.c2.viz.items.1	SSDs
+tr-memory.c2.viz.items.2	Cartões SD
+tr-memory.c2.viz.items.3	Pens USB
+tr-memory.c3.title	A flash gasta-se
+tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10,000 a 100,000 nos chips pequenos. Escrever uma linha de registo a cada segundo no mesmo sítio dá cabo dela; o wear levelling espalha as escritas.
+tr-memory.c3.viz.items.0.w	gravar dados do sensor na flash a cada segundo
+tr-memory.c3.viz.items.0.r	guarda-os na RAM e grava em lotes
+tr-memory.c3.viz.items.1.w	sempre o mesmo bloco
+tr-memory.c3.viz.items.1.r	usa wear levelling
+tr-memory.c4.title	EEPROM
+tr-memory.c4.text	A EEPROM permite reescrever bytes individuais e é ótima para pequenas definições, como valores de calibração. No ESP32 é emulada na flash, com uma biblioteca que trata disso.
+tr-memory.c4.viz.items.0	Valores de calibração
+tr-memory.c4.viz.items.1	Credenciais de Wi-Fi
+tr-memory.c4.viz.items.2	Contadores e definições
+tr-memory.c4.viz.items.3	Gravar só quando muda
+tr-memory.c5.title	Memória no ESP32
+tr-memory.c5.text	Um ESP32 clássico tem cerca de 520 KB de SRAM e normalmente 4 MB de flash. As variantes com PSRAM acrescentam vários MB de RAM extra, úteis para câmaras e ecrãs.
+tr-memory.c5.viz.unit	KB (aprox.)
+tr-memory.c5.viz.items.0.l	RAM do Arduino Uno
+tr-memory.c5.viz.items.1.l	SRAM do ESP32
+tr-memory.c5.viz.items.2.l	Flash do ESP32
+tr-memory.c5.viz.items.3.l	PSRAM
+tr-memory.c6.title	Stack e heap
+tr-memory.c6.text	Os programas usam duas zonas da RAM: a stack para chamadas de funções e variáveis locais, a heap para memória pedida durante a execução. Em dispositivos pequenos, fragmentar a heap com muitas strings pode fazer o programa falhar ao fim de horas.
+tr-memory.c6.viz.l.t	Stack
+tr-memory.c6.viz.l.items.0	automática
+tr-memory.c6.viz.l.items.1	chamadas de funções
+tr-memory.c6.viz.l.items.2	rápida
+tr-memory.c6.viz.r.t	Heap
+tr-memory.c6.viz.r.items.0	pedida na execução
+tr-memory.c6.viz.r.items.1	pode fragmentar
+tr-memory.c6.viz.r.items.2	cuidado em chips pequenos
+tr-memory.c7.title	Hierarquia de armazenamento
+tr-memory.c7.text	Os computadores equilibram velocidade e tamanho: registos e caches minúsculos e ultrarrápidos junto ao CPU, depois a RAM, depois os SSDs, depois os discos rígidos ou a cloud.
+tr-memory.c7.viz.items.0	Registos
+tr-memory.c7.viz.items.1	Cache do CPU
+tr-memory.c7.viz.items.2	RAM
+tr-memory.c7.viz.items.3	SSD
+tr-memory.c7.viz.items.4	Disco rígido e cloud
+tr-memory.c8.title	Cartões SD para registo de dados
+tr-memory.c8.text	Para registar dados a longo prazo, um cartão SD por SPI oferece gigabytes de armazenamento. Escreve em blocos, fecha bem os ficheiros e conta com que os cartões baratos acabem por falhar.
+tr-memory.c8.viz.items.0	Escrever em blocos
+tr-memory.c8.viz.items.1	Fazer flush ou fechar
+tr-memory.c8.viz.items.2	Usar cartões de qualidade
+tr-memory.c8.viz.items.3	Manter uma cópia
+tr-memory.c9.title	Unidades de armazenamento
+tr-memory.c9.text	Um kilobyte são 1,000 bytes em unidades SI, mas os sistemas operativos contam muitas vezes 1,024 (que é, rigorosamente, um kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
+tr-memory.c9.viz.items.0.a	1 KB
+tr-memory.c9.viz.items.0.b	1,000 bytes
+tr-memory.c9.viz.items.1.a	1 KiB
+tr-memory.c9.viz.items.1.b	1,024 bytes
+tr-memory.c9.viz.items.2.a	disco de 1 TB
+tr-memory.c9.viz.items.2.b	aparece como ~931 GiB
+tr-motors.title	Controlar motores
+tr-motors.summary	Pontes H, servos e motores de passo.
+tr-motors.q0.q	O que permite a um motor DC rodar nos dois sentidos?
+tr-motors.q0.o0	Um díodo
+tr-motors.q0.o1	Uma ponte H
+tr-motors.q0.o2	Um condensador
+tr-motors.q0.x	Inverte a corrente com quatro interruptores.
+tr-motors.q1.q	Um impulso de servo de 1.5 ms significa normalmente…
+tr-motors.q1.o0	0°
+tr-motors.q1.o1	90° (centro)
+tr-motors.q1.o2	180°
+tr-motors.q1.x	De 1 ms a 2 ms corresponde a 0–180°.
+tr-motors.q2.q	Porque é que um ESP32 pode reiniciar quando um motor arranca?
+tr-motors.q2.o0	Interferência do Wi-Fi
+tr-motors.q2.o1	Quedas na alimentação causadas pela corrente de arranque do motor
+tr-motors.q2.o2	Só um bug de software
+tr-motors.q2.x	Usa uma alimentação separada e condensadores.
+tr-motors.c0.title	Nunca alimentes um motor a partir de um pino
+tr-motors.c0.text	Um pequeno motor DC pode puxar centenas de miliamperes, mais ainda no arranque, e gera ruído elétrico. Usa sempre um driver: um transístor, um MOSFET ou um chip driver de motores, mais um díodo de roda livre.
+tr-motors.c0.viz.steps.0	Pino GPIO
+tr-motors.c0.viz.steps.1	Driver (MOSFET ou chip)
+tr-motors.c0.viz.steps.2	Motor com alimentação própria
+tr-motors.c0.viz.steps.3	Massa comum
+tr-motors.c1.title	Ponte H
+tr-motors.c1.text	Uma ponte H usa quatro interruptores para inverter a corrente que passa num motor, para que possa rodar nos dois sentidos. Chips como o L298N, o DRV8833 ou o TB6612 fazem isso por ti.
+tr-motors.c1.viz.l.t	Interruptores A e D ligados
+tr-motors.c1.viz.l.items.0	corrente num sentido
+tr-motors.c1.viz.l.items.1	para a frente
+tr-motors.c1.viz.r.t	Interruptores B e C ligados
+tr-motors.c1.viz.r.items.0	corrente invertida
+tr-motors.c1.viz.r.items.1	para trás
+tr-motors.c2.title	Velocidade com PWM
+tr-motors.c2.text	Envia PWM para o driver e o motor roda a uma velocidade definida pelo duty cycle. Frequências de vários kHz até mais de 20 kHz evitam o zumbido audível.
+tr-motors.c2.viz.unit	% de velocidade (aprox.)
+tr-motors.c2.viz.items.0.l	duty 25%
+tr-motors.c2.viz.items.1.l	duty 50%
+tr-motors.c2.viz.items.2.l	duty 75%
+tr-motors.c2.viz.items.3.l	duty 100%
+tr-motors.c3.title	Corrente de bloqueio
+tr-motors.c3.text	Quando um motor está bloqueado ou a arrancar, puxa a corrente de bloqueio, muitas vezes 5–10 vezes a corrente em funcionamento. Dimensiona o driver e a alimentação para ela.
+tr-motors.c3.viz.unit	amperes (motor pequeno de exemplo)
+tr-motors.c3.viz.items.0.l	A rodar
+tr-motors.c3.viz.items.1.l	A arrancar
+tr-motors.c3.viz.items.2.l	Bloqueado
+tr-motors.c4.title	Servos
+tr-motors.c4.text	Um servo de modelismo tem um motor, uma caixa de engrenagens e um sensor de posição numa só caixa. Envias um impulso a cada 20 ms; a sua largura, de 1 a 2 ms, define o ângulo de 0° a 180°.
+tr-motors.c4.viz.unit	ms
+tr-motors.c5.title	Motores de passo
+tr-motors.c5.text	Um motor de passo move-se em passos fixos, normalmente 200 por volta (1.8° cada). Drivers como o A4988 ou o TMC2209 recebem impulsos de passo e direção e podem fazer micropassos para um movimento mais suave.
+tr-motors.c5.viz.f	passos por mm = (passos/volta × micropassos) ÷ mm por volta
+tr-motors.c5.viz.items.0.m	passos/volta
+tr-motors.c5.viz.items.1.m	micropassos
+tr-motors.c5.viz.items.2.s	8 mm
+tr-motors.c5.viz.items.2.m	fuso → 400 passos/mm
+tr-motors.c6.title	Motores brushless
+tr-motors.c6.text	Os motores DC brushless (drones, ventoinhas, bicicletas elétricas) precisam de um controlador eletrónico de velocidade (ESC) que comuta três fases em sequência. São eficientes e duradouros.
+tr-motors.c6.viz.steps.0	Sinal do controlador
+tr-motors.c6.viz.steps.1	ESC comuta 3 fases
+tr-motors.c6.viz.steps.2	Campo rotativo
+tr-motors.c6.viz.steps.3	O motor roda
+tr-motors.c7.title	Alimentações separadas
+tr-motors.c7.text	Alimenta os motores com uma fonte própria, não com o regulador de 3.3 V do microcontrolador, e liga as massas. Junta condensadores perto do driver para absorver os picos.
+tr-motors.c7.viz.items.0.w	motor no pino de 3.3 V do ESP32
+tr-motors.c7.viz.items.0.r	alimentação própria do motor, massa comum
+tr-motors.c7.viz.items.1.w	ESP32 reinicia quando o motor arranca
+tr-motors.c7.viz.items.1.r	junta um condensador grande perto do driver
+tr-motors.c8.title	Encoders
+tr-motors.c8.text	Um encoder no veio do motor conta impulsos à medida que roda, para que o controlador saiba a posição e a velocidade exatas. Com realimentação, um motor DC barato torna-se um atuador preciso.
+tr-motors.c8.viz.steps.0	Definir o alvo
+tr-motors.c8.viz.steps.1	Encoder mede a posição
+tr-motors.c8.viz.steps.2	Controlador corrige
+tr-motors.c8.viz.steps.3	Repetir
+tr-motors.c9.title	Controlo PID
+tr-motors.c9.text	Um controlador PID ajusta a saída com base no erro atual (P), no erro acumulado no passado (I) e na rapidez com que o erro está a mudar (D). Mantém estáveis motores, aquecedores e drones.
+tr-motors.c9.viz.items.0.a	P
+tr-motors.c9.viz.items.0.b	reage ao erro atual
+tr-motors.c9.viz.items.1.a	I
+tr-motors.c9.viz.items.1.b	elimina o desvio constante
+tr-motors.c9.viz.items.2.a	D
+tr-motors.c9.viz.items.2.b	amortece o overshoot
+tr-power.title	Design de baixo consumo
+tr-power.summary	Fazer uma bateria durar meses ou anos.
+tr-power.q0.q	O que conta mais para a autonomia de um dispositivo que dorme 99% do tempo?
+tr-power.q0.o0	A corrente de pico
+tr-power.q0.o1	A corrente em sleep e o tempo acordado
+tr-power.q0.o2	A velocidade do CPU
+tr-power.q0.x	É a corrente média que define a autonomia.
+tr-power.q1.q	Uma bateria de 2,000 mAh com uma corrente média de 0.5 mA dura cerca de…
+tr-power.q1.o0	40 horas
+tr-power.q1.o1	4,000 horas (~5.5 meses)
+tr-power.q1.o2	4 anos
+tr-power.q1.x	2,000 ÷ 0.5 = 4,000 h.
+tr-power.q2.q	Como podes reduzir a energia gasta em cada despertar com Wi-Fi?
+tr-power.q2.o0	Usar DHCP
+tr-power.q2.o1	Usar IP estático e canal fixo para ligar mais depressa
+tr-power.q2.o2	Transmitir mais alto
+tr-power.q2.x	Menos tempo acordado, menos energia.
+tr-power.c0.title	O que conta é a corrente média
+tr-power.c0.text	Autonomia = capacidade ÷ corrente média. Um dispositivo que acorda 1 segundo a cada 10 minutos passa 99.8% do tempo a dormir, por isso a corrente em sleep conta imenso.
+tr-power.c0.viz.f	horas = mAh ÷ mA médios
+tr-power.c0.viz.items.0.s	mAh
+tr-power.c0.viz.items.0.m	capacidade da bateria
+tr-power.c0.viz.items.1.s	mA médios

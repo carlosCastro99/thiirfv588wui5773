@@ -1088,3 +1088,243 @@ el-pf.c5.text	Potência ativa em watts (W), potência reativa em volt-amperes re
 el-pf.c5.viz.items.0.a	W
 el-pf.c5.viz.items.0.b	potência ativa, útil
 el-pf.c5.viz.items.1.a	var
+el-pf.c5.viz.items.1.b	reativa, vai e volta
+el-pf.c5.viz.items.2.a	VA
+el-pf.c5.viz.items.2.b	aparente, a que os fios transportam
+el-pf.c6.title	O triângulo das potências
+el-pf.c6.text	A potência ativa e a reativa fazem um ângulo reto, por isso a potência aparente é a hipotenusa: VA² = W² + var². O ângulo entre elas é φ.
+el-pf.c6.viz.f	VA² = W² + var²
+el-pf.c6.viz.items.0.s	W
+el-pf.c6.viz.items.0.m	potência ativa
+el-pf.c6.viz.items.1.s	var
+el-pf.c6.viz.items.1.m	potência reativa
+el-pf.c6.viz.items.2.s	VA
+el-pf.c6.viz.items.2.m	potência aparente
+el-pf.c7.title	A fatura de casa
+el-pf.c7.text	Em Portugal, os clientes domésticos só pagam energia ativa (kWh); a energia reativa só é cobrada a clientes comerciais e industriais maiores. A tua potência contratada, no entanto, está em kVA.
+el-pf.c7.viz.l.t	Casa
+el-pf.c7.viz.l.items.0	paga kWh
+el-pf.c7.viz.l.items.1	kVA contratados
+el-pf.c7.viz.r.t	Indústria
+el-pf.c7.viz.r.items.0	paga kWh
+el-pf.c7.viz.r.items.1	mais energia reativa (kvarh)
+el-pf.c8.title	Fator de potência dos aparelhos
+el-pf.c8.text	As cargas resistivas, como chaleiras e aquecedores, têm um fator de potência de 1. Os motores andam pelos 0.8–0.9 à carga máxima e muito menos quando estão pouco carregados.
+el-pf.c8.viz.unit	fator de potência típico
+el-pf.c8.viz.items.0.l	Chaleira
+el-pf.c8.viz.items.1.l	Motor de indução (plena carga)
+el-pf.c8.viz.items.2.l	Motor (pouca carga)
+el-pf.c8.viz.items.3.l	Fluorescente antiga
+el-pf.c9.title	PFC nos carregadores
+el-pf.c9.text	As fontes de alimentação eletrónicas maiores, incluindo os carregadores de portáteis e de VE, têm circuitos de correção do fator de potência que fazem a corrente seguir a onda da tensão, como exigem as regras da UE.
+el-pf.c9.viz.steps.0	Retificador simples distorce a corrente
+el-pf.c9.viz.steps.1	Circuito PFC dá-lhe forma
+el-pf.c9.viz.steps.2	Corrente segue a tensão
+el-pf.c9.viz.steps.3	cos φ ≈ 0.99
+el-meter.title	Usar um multímetro
+el-meter.summary	Medir volts, amperes, ohms e continuidade em segurança.
+el-meter.q0.q	Para medir corrente, o aparelho tem de estar…
+el-meter.q0.o0	Aos terminais da carga, em paralelo
+el-meter.q0.o1	Em série, para que a corrente passe por ele
+el-meter.q0.o2	Desligado
+el-meter.q0.x	A corrente mede-se em série.
+el-meter.q1.q	Porque é que as pinças amperimétricas são úteis?
+el-meter.q1.o0	Medem resistência
+el-meter.q1.o1	Medem a corrente sem abrir o circuito
+el-meter.q1.o2	São mais baratas
+el-meter.q1.x	Detetam o campo magnético à volta de um condutor.
+el-meter.q2.q	O que tens de fazer antes de mexer num circuito que desligaste?
+el-meter.q2.o0	Confiar na etiqueta
+el-meter.q2.o1	Confirmar que está sem tensão com um detetor que testaste numa fonte com tensão
+el-meter.q2.o2	Tocar-lhe depressa
+el-meter.q2.x	Confirma a ausência de tensão, e confirma que o detetor funciona.
+el-meter.c0.title	Uma ferramenta, muitos aparelhos
+el-meter.c0.text	Um multímetro mede tensão, corrente e resistência, e normalmente também continuidade, díodos e por vezes capacidade e temperatura. Um seletor rotativo escolhe a função e a escala.
+el-meter.c0.viz.root	Multímetro
+el-meter.c0.viz.items.0	Volts (V)
+el-meter.c0.viz.items.1	Amperes (A)
+el-meter.c0.viz.items.2	Ohms (Ω)
+el-meter.c0.viz.items.3	Apito de continuidade
+el-meter.c1.title	Medir tensão
+el-meter.c1.text	Põe o seletor em V (CA ~ ou CC ⎓) e encosta as pontas de prova aos dois pontos, em paralelo. O aparelho tem uma resistência muito alta, por isso quase não perturba o circuito.
+el-meter.c1.viz.steps.0	Seletor em V~ ou V⎓
+el-meter.c1.viz.steps.1	Ponta preta no COM
+el-meter.c1.viz.steps.2	Ponta vermelha na entrada V
+el-meter.c1.viz.steps.3	Toca nos dois pontos
+el-meter.c2.title	Medir corrente
+el-meter.c2.text	A corrente tem de passar pelo aparelho, em série: abre o circuito e intercala o multímetro. Muda a ponta vermelha para a entrada A ou mA. Esquecer de a voltar a mudar é a forma clássica de queimar o fusível do aparelho.
+el-meter.c2.viz.l.t	Tensão
+el-meter.c2.viz.l.items.0	aos terminais da carga
+el-meter.c2.viz.l.items.1	paralelo
+el-meter.c2.viz.l.items.2	ponta vermelha em V
+el-meter.c2.viz.r.t	Corrente
+el-meter.c2.viz.r.items.0	através do aparelho
+el-meter.c2.viz.r.items.1	série
+el-meter.c2.viz.r.items.2	ponta vermelha em A ou mA
+el-meter.c3.title	Resistência e continuidade
+el-meter.c3.text	Mede a resistência só em circuitos sem alimentação. O modo de continuidade apita quando a resistência é muito baixa: perfeito para encontrar fios partidos ou identificar qual cabo é qual.
+el-meter.c3.viz.items.0	Primeiro desliga
+el-meter.c3.viz.items.1	Seletor em Ω ou apito
+el-meter.c3.viz.items.2	Toca nas duas pontas
+el-meter.c3.viz.items.3	Apito = ligado
+el-meter.c4.title	Categorias CAT
+el-meter.c4.text	Os aparelhos de medida têm uma categoria que indica onde é seguro usá-los. CAT II cobre aparelhos ligados à tomada, CAT III a instalação fixa e os quadros elétricos, CAT IV a origem da alimentação. Usa pelo menos CAT III 600 V na instalação de casa.
+el-meter.c4.viz.items.0	CAT IV: origem da alimentação, contador
+el-meter.c4.viz.items.1	CAT III: quadros, instalação fixa
+el-meter.c4.viz.items.2	CAT II: tomadas e aparelhos
+el-meter.c4.viz.items.3	CAT I: eletrónica protegida
+el-meter.c5.title	Pinças amperimétricas
+el-meter.c5.text	Uma pinça amperimétrica mede a corrente sem abrir o circuito: abraças um único condutor e ela lê o campo magnético. Se abraçares o cabo inteiro, a fase e o neutro anulam-se.
+el-meter.c5.viz.items.0.w	abraçar o cabo inteiro
+el-meter.c5.viz.items.0.r	abraça um só condutor
+el-meter.c5.viz.items.1.w	ler 0 A
+el-meter.c5.viz.items.1.r	separa a fase do neutro
+el-meter.c6.title	Escala automática e True RMS
+el-meter.c6.text	Os aparelhos com escala automática escolhem a escala por ti. Os aparelhos True RMS medem corretamente formas de onda não sinusoidais (de inversores, drivers LED, variadores); os aparelhos mais baratos podem errar bastante nestes casos.
+el-meter.c6.viz.l.t	Valor médio
+el-meter.c6.viz.l.items.0	bom para sinusoides puras
+el-meter.c6.viz.l.items.1	mais barato
+el-meter.c6.viz.r.t	True RMS
+el-meter.c6.viz.r.items.0	certo em ondas distorcidas
+el-meter.c6.viz.r.items.1	recomendado
+el-meter.c7.title	Verificar uma tomada
+el-meter.c7.text	Para verificar se uma tomada tem tensão, mede entre fase e neutro (cerca de 230 V), fase e terra (cerca de 230 V) e neutro e terra (perto de 0 V). Os testadores de tomadas a sério também verificam a terra e o diferencial.
+el-meter.c7.viz.items.0.a	fase–neutro
+el-meter.c7.viz.items.0.b	≈ 230 V
+el-meter.c7.viz.items.1.a	fase–terra
+el-meter.c7.viz.items.1.b	≈ 230 V
+el-meter.c7.viz.items.2.a	neutro–terra
+el-meter.c7.viz.items.2.b	≈ 0 V
+el-meter.c8.title	Confirma a ausência de tensão antes de tocar
+el-meter.c8.text	Antes de mexer em qualquer circuito: isola-o, bloqueia-o, testa que está sem tensão com um detetor fiável e volta a testar o detetor numa fonte com tensão conhecida. Nunca confies só num interruptor ou numa etiqueta.
+el-meter.c8.viz.steps.0	Desliga e bloqueia
+el-meter.c8.viz.steps.1	Testa o detetor com tensão
+el-meter.c8.viz.steps.2	Testa que o circuito está sem tensão
+el-meter.c8.viz.steps.3	Volta a testar o detetor
+el-meter.c9.title	Medir baterias e sensores
+el-meter.c9.text	Os multímetros são ótimos para eletrónica: estado das baterias (uma bateria de "12 V" deve marcar cerca de 12.6 V quando cheia), saídas de sensores e verificar a linha de 3.3 V numa placa ESP32.
+el-meter.c9.viz.unit	volts (em repouso, chumbo-ácido 12 V)
+el-meter.c9.viz.items.0.l	Cheia
+el-meter.c9.viz.items.3.l	Vazia
+el-ev.title	Carregar carros elétricos
+el-ev.summary	CA, CC, kW e porque é que o carregamento abranda.
+el-ev.q0.q	Quem converte CA em CC durante o carregamento CA em casa?
+el-ev.q0.o0	A wallbox
+el-ev.q0.o1	O carregador de bordo do carro
+el-ev.q0.o2	A bateria
+el-ev.q0.x	O carregamento CA usa o carregador do próprio carro.
+el-ev.q1.q	Porque é que o carregamento rápido abranda acima dos 80%, mais ou menos?
+el-ev.q1.o0	O carregador sobreaquece
+el-ev.q1.o1	Para proteger a bateria à medida que enche
+el-ev.q1.o2	A eletricidade fica mais cara
+el-ev.q1.x	O sistema de gestão da bateria vai reduzindo a corrente.
+el-ev.q2.q	Juntar 40 kWh com um carregador de 11 kW demora cerca de…
+el-ev.q2.o0	1 hora
+el-ev.q2.o1	3.6 horas
+el-ev.q2.o2	11 horas
+el-ev.q2.x	40 ÷ 11 ≈ 3.6 horas.
+el-ev.c0.title	Carregamento CA
+el-ev.c0.text	Em casa e na maioria dos postos de rua, o carro recebe CA e converte-a em CC com o seu próprio carregador de bordo. É o carregador do carro que limita a velocidade, normalmente 7–11 kW.
+el-ev.c0.viz.steps.0	CA da wallbox
+el-ev.c0.viz.steps.1	Carregador de bordo no carro
+el-ev.c0.viz.steps.2	CC para a bateria
+el-ev.c1.title	Carregamento rápido CC
+el-ev.c1.text	Os carregadores rápidos convertem CA em CC no próprio posto e alimentam diretamente a bateria, contornando o carregador do carro. As potências vão de 50 kW a 350 kW.
+el-ev.c1.viz.l.t	Carregamento CA
+el-ev.c1.viz.l.items.0	carro converte em CC
+el-ev.c1.viz.l.items.1	3.7–22 kW
+el-ev.c1.viz.l.items.2	casas e escritórios
+el-ev.c1.viz.r.t	Carregamento CC
+el-ev.c1.viz.r.items.0	posto converte
+el-ev.c1.viz.r.items.1	50–350 kW
+el-ev.c1.viz.r.items.2	autoestradas
+el-ev.c2.title	Opções de potência de carregamento
+el-ev.c2.text	Uma tomada normal dá cerca de 2.3 kW (10 A a 230 V), lento mas suficiente durante a noite para deslocações curtas. Uma wallbox monofásica a 32 A dá cerca de 7.4 kW.
+el-ev.c2.viz.unit	kW
+el-ev.c2.viz.items.0.l	Tomada doméstica
+el-ev.c2.viz.items.1.l	Wallbox monofásica
+el-ev.c2.viz.items.2.l	Wallbox trifásica
+el-ev.c2.viz.items.3.l	CA 22 kW
+el-ev.c2.viz.items.4.l	CC rápido
+el-ev.c3.title	Quanto tempo vai demorar?
+el-ev.c3.text	Divide a energia necessária pela potência de carregamento e junta alguma margem para as perdas e para a fase final, mais lenta.
+el-ev.c3.example.0	Juntar 50 kWh a 7.4 kW
+el-ev.c3.example.1	50 ÷ 7.4
+el-ev.c3.example.2	≈ 7 horas
+el-ev.c3.viz.f	horas ≈ kWh necessários ÷ kW
+el-ev.c3.viz.items.0.s	kWh
+el-ev.c3.viz.items.0.m	energia a juntar
+el-ev.c3.viz.items.1.s	kW
+el-ev.c3.viz.items.1.m	potência de carga
+el-ev.c4.title	A curva de carregamento
+el-ev.c4.text	O carregamento CC é mais rápido com estados de carga baixos e abranda à medida que a bateria enche, para a proteger. Ir de 10% a 80% demora muitas vezes tanto como ir de 80% a 100%.
+el-ev.c4.viz.events.0.l	velocidade máxima
+el-ev.c4.viz.events.1.l	ainda rápido
+el-ev.c4.viz.events.2.l	potência cai
+el-ev.c4.viz.events.3.l	carga lenta
+el-ev.c5.title	Carros de 400 V e 800 V
+el-ev.c5.text	A maioria dos VE usa packs de cerca de 400 V. Alguns carros mais recentes, como o XPeng G9 e o Porsche Taycan, usam plataformas de 800 V, que permitem mais potência de carregamento com menos corrente e menos calor.
+el-ev.c5.viz.f	P = V × I
+el-ev.c5.viz.items.0.s	400 V × 500 A
+el-ev.c5.viz.items.0.m	200 kW
+el-ev.c5.viz.items.1.s	800 V × 500 A
+el-ev.c5.viz.items.1.m	400 kW
+el-ev.c6.title	Fichas na Europa
+el-ev.c6.text	O Tipo 2 é a ficha CA padrão na Europa. A CCS2 junta-lhe por baixo dois pinos CC grandes para o carregamento rápido. Os carros japoneses mais antigos podem usar CHAdeMO.
+el-ev.c6.viz.items.0.a	Tipo 2
+el-ev.c6.viz.items.0.b	carregamento CA
+el-ev.c6.viz.items.1.a	CCS2
+el-ev.c6.viz.items.1.b	Tipo 2 + pinos CC
+el-ev.c6.viz.items.2.a	CHAdeMO
+el-ev.c6.viz.items.2.b	CC japonês antigo
+el-ev.c7.title	Carregamento inteligente em casa
+el-ev.c7.text	As wallboxes inteligentes conseguem seguir as tarifas noturnas mais baratas, usar o excedente solar e reduzir a potência se a casa estiver perto do limite contratado (balanceamento de carga), para que o disjuntor geral não dispare.
+el-ev.c7.viz.items.0	Programar para horas baratas
+el-ev.c7.viz.items.1	Seguir o excedente solar
+el-ev.c7.viz.items.2	Balanceamento de carga com a casa
+el-ev.c7.viz.items.3	Monitorização na app
+el-ev.c8.title	A Mobi.E em Portugal
+el-ev.c8.text	A rede pública de carregamento em Portugal é coordenada pela Mobi.E. Podes usar a maioria dos carregadores públicos com um só cartão ou app de qualquer comercializador (CEME), e pagas ao operador, ao comercializador e as tarifas de rede.
+el-ev.c8.viz.steps.0	Escolhe um cartão ou app de um CEME
+el-ev.c8.viz.steps.1	Liga a qualquer posto Mobi.E
+el-ev.c8.viz.steps.2	Carrega
+el-ev.c8.viz.steps.3	Uma só fatura com tudo
+el-ev.c9.title	Eficiência e perdas
+el-ev.c9.text	Perde-se alguma energia em calor durante o carregamento, tipicamente cerca de 10% no carregamento CA em casa, por vezes mais a potências muito baixas. O contador da wallbox mostra mais kWh do que a bateria recebe.
+el-ev.c9.viz.unit	kWh
+el-ev.c9.viz.items.0.l	Da rede
+el-ev.c9.viz.items.1.l	Para a bateria
+el-ev.c9.viz.items.2.l	Perdas
+el-tariffs.title	Energia em casa
+el-tariffs.summary	Faturas, tarifas e para onde vão os kWh.
+el-tariffs.q0.q	Numa tarifa bi-horária, quando é que a energia é mais barata?
+el-tariffs.q0.o0	Ao meio-dia
+el-tariffs.q0.o1	Nas horas de vazio, sobretudo à noite e ao fim de semana
+el-tariffs.q0.o2	Nunca é mais barata
+el-tariffs.q0.x	As horas de vazio são o período barato.
+el-tariffs.q1.q	Aproximadamente quanta eletricidade a menos gasta um LED do que uma lâmpada incandescente para a mesma luz?
+el-tariffs.q1.o0	20%
+el-tariffs.q1.o1	80–90%
+el-tariffs.q1.o2	0%
+el-tariffs.q1.x	Cerca de 8 W contra 60 W.
+el-tariffs.q2.q	Qual costuma ser uma das maiores cargas individuais de uma casa?
+el-tariffs.q2.o0	Carregador de telemóvel
+el-tariffs.q2.o1	Termoacumulador elétrico
+el-tariffs.q2.o2	Lâmpada LED
+el-tariffs.q2.x	Aquecer água gasta muita energia.
+el-tariffs.c0.title	Ler a fatura
+el-tariffs.c0.text	Uma fatura de eletricidade portuguesa tem uma parte fixa (potência contratada, por dia), uma parte de energia (por kWh), tarifas de acesso às redes, impostos (IVA, contribuição audiovisual) e por vezes descontos.
+el-tariffs.c0.viz.root	A tua fatura
+el-tariffs.c0.viz.items.0	Fixo: potência contratada
+el-tariffs.c0.viz.items.1	Energia: kWh gastos
+el-tariffs.c0.viz.items.2	Impostos e taxas
+el-tariffs.c1.title	Tarifas por horário
+el-tariffs.c1.text	As tarifas simples cobram o mesmo preço o dia todo. As tarifas bi-horárias têm horas de vazio mais baratas, sobretudo à noite e ao fim de semana; as tri-horárias separam também as horas de ponta e de cheias.
+el-tariffs.c1.viz.l.t	Simples
+el-tariffs.c1.viz.l.items.0	um só preço
+el-tariffs.c1.viz.l.items.1	fácil
+el-tariffs.c1.viz.l.items.2	sem mudar hábitos
+el-tariffs.c1.viz.r.t	Bi-horário
+el-tariffs.c1.viz.r.items.0	noites e fins de semana mais baratos
+el-tariffs.c1.viz.r.items.1	compensa se mudares consumos
+el-tariffs.c1.viz.r.items.2	VE, termoacumulador

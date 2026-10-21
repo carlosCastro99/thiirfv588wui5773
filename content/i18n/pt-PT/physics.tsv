@@ -985,7 +985,7 @@ ph-atoms.c8.text	Os átomos são demasiado pequenos para os microscópios ótico
 ph-atoms.c8.viz.events.0.l	Teoria atómica de Dalton
 ph-atoms.c8.viz.events.1.l	descoberta do eletrão
 ph-atoms.c8.viz.events.2.l	descoberta do núcleo
-ph-atoms.c8.viz.events.3.l	primeiras imagens de átomos
+ph-atoms.c8.viz.events.3.l	átomos fotografados
 ph-atoms.c9.title	De onde vêm os átomos
 ph-atoms.c9.text	O hidrogénio e o hélio formaram-se no Big Bang. Os elementos mais pesados foram forjados no interior das estrelas e em explosões estelares. O carbono do teu corpo e o ferro do teu sangue foram feitos em estrelas.
 ph-atoms.c9.viz.steps.0	Big Bang: hidrogénio, hélio
@@ -1198,3 +1198,283 @@ ph-relativity.c2.viz.r.items.0	passou mais tempo
 ph-relativity.c2.viz.r.items.1	mais velha
 ph-relativity.c3.title	Nada mais rápido do que a luz
 ph-relativity.c3.text	À medida que um objeto acelera, é preciso cada vez mais energia para o acelerar ainda mais. Atingir a velocidade da luz exigiria energia infinita, por isso nada com massa o consegue.
+ph-relativity.c3.viz.items.0	Luz: 300 000 km/s
+ph-relativity.c3.viz.items.1	Nave mais rápida: ~0.06% de c
+ph-relativity.c3.viz.items.2	Aceleradores de partículas: 99.9999…% de c
+ph-relativity.c3.viz.items.3	Nunca 100% com massa
+ph-relativity.c4.title	Relatividade geral
+ph-relativity.c4.text	Em 1915, Einstein descreveu a gravidade não como uma força, mas como espaço-tempo curvo: a massa curva o espaço-tempo e os objetos seguem as curvas. A imagem habitual é a de uma bola pesada num trampolim.
+ph-relativity.c4.viz.steps.0	A massa curva o espaço-tempo
+ph-relativity.c4.viz.steps.1	Os objetos seguem as curvas
+ph-relativity.c4.viz.steps.2	Vemos isso como gravidade
+ph-relativity.c5.title	A gravidade atrasa o tempo
+ph-relativity.c5.text	Os relógios andam mais devagar onde a gravidade é mais forte. Um relógio ao nível do mar anda ligeiramente mais devagar do que um no alto de uma montanha. O efeito é minúsculo, mas mensurável.
+ph-relativity.c5.viz.l.t	Gravidade forte
+ph-relativity.c5.viz.l.items.0	relógios mais lentos
+ph-relativity.c5.viz.l.items.1	perto da superfície
+ph-relativity.c5.viz.r.t	Gravidade fraca
+ph-relativity.c5.viz.r.items.0	relógios mais rápidos
+ph-relativity.c5.viz.r.items.1	altitude, órbita
+ph-relativity.c6.title	O GPS precisa da relatividade
+ph-relativity.c6.text	No total, os relógios dos satélites GPS adiantam-se cerca de 38 microssegundos por dia (a gravidade acelera-os, a velocidade orbital atrasa-os). Sem correção, as posições desviar-se-iam cerca de 10 km por dia.
+ph-relativity.c6.viz.items.0.v	38 µs
+ph-relativity.c6.viz.items.0.l	diferença por dia
+ph-relativity.c6.viz.items.1.v	~10 km
+ph-relativity.c6.viz.items.1.l	erro diário de posição sem correção
+ph-relativity.c7.title	A luz curva-se
+ph-relativity.c7.text	A gravidade curva a luz. Em 1919, durante um eclipse solar, os astrónomos viram estrelas perto do Sol deslocadas exatamente como Einstein previra, o que o tornou famoso em todo o mundo. Parte da observação foi feita na ilha do Príncipe.
+ph-relativity.c7.viz.steps.0	A luz da estrela passa pelo Sol
+ph-relativity.c7.viz.steps.1	Espaço-tempo curvo
+ph-relativity.c7.viz.steps.2	A luz curva-se
+ph-relativity.c7.viz.steps.3	A estrela parece deslocada
+ph-relativity.c8.title	Buracos negros
+ph-relativity.c8.text	Se se comprimir massa suficiente num espaço pequeno, a sua gravidade torna-se tão forte que nem a luz escapa. A fronteira é o horizonte de acontecimentos. A primeira imagem de um buraco negro foi publicada em 2019.
+ph-relativity.c8.viz.events.0.l	Solução de Schwarzschild
+ph-relativity.c8.viz.events.1.l	primeira prova forte
+ph-relativity.c8.viz.events.2.l	deteção da fusão de buracos negros
+ph-relativity.c8.viz.events.3.l	primeira imagem (M87)
+ph-relativity.c9.title	Energia e massa
+ph-relativity.c9.text	A relatividade restrita também deu origem a E = mc². Numa reação nuclear, os produtos pesam ligeiramente menos do que o material inicial; a massa em falta transformou-se em energia.
+ph-relativity.c9.viz.f	E = m × c²
+ph-relativity.c9.viz.items.0.s	diferença de massa
+ph-relativity.c9.viz.items.0.m	energia libertada
+ph-quantum.title	O mundo quântico
+ph-quantum.summary	Como as coisas minúsculas se comportam de forma muito estranha.
+ph-quantum.q0.q	Porque é que uma luz azul fraca consegue arrancar eletrões e uma luz vermelha intensa não?
+ph-quantum.q0.o0	O azul é mais forte
+ph-quantum.q0.o1	Cada fotão azul transporta mais energia
+ph-quantum.q0.o2	A luz vermelha é mais lenta
+ph-quantum.q0.x	A energia do fotão depende da frequência.
+ph-quantum.q1.q	O que acontece quando medes uma partícula em sobreposição?
+ph-quantum.q1.o0	Nada
+ph-quantum.q1.o1	Obténs um resultado definido
+ph-quantum.q1.o2	Desaparece
+ph-quantum.q1.x	A medição dá um único resultado.
+ph-quantum.q2.q	Que tecnologia do dia a dia depende da física quântica?
+ph-quantum.q2.o0	Uma alavanca
+ph-quantum.q2.o1	LED e transístores
+ph-quantum.q2.o2	Uma roldana
+ph-quantum.q2.x	Os semicondutores são dispositivos quânticos.
+ph-quantum.c0.title	A energia vem em pacotes
+ph-quantum.c0.text	A escalas pequenas, a energia não é contínua: vem em pacotes chamados quanta. A luz é feita de fotões, cada um com uma energia definida pela sua frequência. Os fotões azuis transportam mais energia do que os vermelhos.
+ph-quantum.c0.viz.f	E = h × f
+ph-quantum.c0.viz.items.0.s	h
+ph-quantum.c0.viz.items.0.m	constante de Planck
+ph-quantum.c0.viz.items.1.s	f
+ph-quantum.c0.viz.items.1.m	frequência da luz
+ph-quantum.c1.title	O efeito fotoelétrico
+ph-quantum.c1.text	Ilumina um metal e a luz pode arrancar-lhe eletrões, mas só se cada fotão tiver energia suficiente. Uma luz azul fraca funciona; uma luz vermelha intensa pode não funcionar. Einstein explicou isto em 1905, o que lhe valeu o Prémio Nobel.
+ph-quantum.c1.viz.l.t	Luz vermelha, mesmo intensa
+ph-quantum.c1.viz.l.items.0	fotões demasiado fracos
+ph-quantum.c1.viz.l.items.1	sem eletrões
+ph-quantum.c1.viz.r.t	Azul ou UV, mesmo fraca
+ph-quantum.c1.viz.r.items.0	fotões com energia suficiente
+ph-quantum.c1.viz.r.items.1	eletrões arrancados
+ph-quantum.c2.title	Dualidade onda–partícula
+ph-quantum.c2.text	A luz e os eletrões comportam-se umas vezes como partículas e outras como ondas. Dispara eletrões um a um através de duas fendas e, mesmo assim, formam um padrão de interferência de ondas.
+ph-quantum.c2.viz.steps.0	Eletrões disparados um a um
+ph-quantum.c2.viz.steps.1	Por duas fendas
+ph-quantum.c2.viz.steps.2	Chegam um a um
+ph-quantum.c2.viz.steps.3	Surge um padrão de ondas
+ph-quantum.c3.title	Incerteza
+ph-quantum.c3.text	Heisenberg mostrou que não é possível conhecer ao mesmo tempo a posição exata e o momento exato de uma partícula. Quanto mais rigor tens num, mais difuso fica o outro.
+ph-quantum.c3.viz.l.t	Posição conhecida com rigor
+ph-quantum.c3.viz.l.items.0	momento incerto
+ph-quantum.c3.viz.r.t	Momento conhecido com rigor
+ph-quantum.c3.viz.r.items.0	posição incerta
+ph-quantum.c4.title	Sobreposição
+ph-quantum.c4.text	Um sistema quântico pode estar numa combinação de estados até ser medido. O spin de um eletrão pode estar "para cima e para baixo" ao mesmo tempo; medi-lo dá uma resposta definida, com probabilidades determinadas pelo estado.
+ph-quantum.c4.viz.steps.0	Sobreposição de estados
+ph-quantum.c4.viz.steps.1	Medição
+ph-quantum.c4.viz.steps.2	Um resultado definido
+ph-quantum.c4.viz.steps.3	Probabilidades previstas pela teoria
+ph-quantum.c5.title	Entrelaçamento
+ph-quantum.c5.text	Duas partículas podem ficar ligadas de modo que medir uma te diz instantaneamente algo sobre a outra, por mais longe que estejam. Einstein chamou-lhe "ação fantasmagórica à distância". Não permite enviar mensagens mais depressa do que a luz.
+ph-quantum.c5.viz.items.0.a	par entrelaçado
+ph-quantum.c5.viz.items.0.b	resultados ligados
+ph-quantum.c5.viz.items.1.a	medir uma
+ph-quantum.c5.viz.items.1.b	conhecer a outra
+ph-quantum.c5.viz.items.2.a	mensagens mais rápidas que a luz
+ph-quantum.c5.viz.items.2.b	impossíveis
+ph-quantum.c6.title	Efeito túnel
+ph-quantum.c6.text	Às vezes, as partículas conseguem atravessar barreiras que, pela física clássica, não conseguiriam ultrapassar. O efeito túnel está por trás da fusão no Sol, das memórias flash e dos microscópios de efeito túnel.
+ph-quantum.c6.viz.items.0	Fusão no Sol
+ph-quantum.c6.viz.items.1	Células de memória flash
+ph-quantum.c6.viz.items.2	Díodos de túnel
+ph-quantum.c6.viz.items.3	Microscópios de efeito túnel
+ph-quantum.c7.title	O quântico no teu bolso
+ph-quantum.c7.text	A física quântica não é exótica: transístores, lasers, LED, células solares, aparelhos de ressonância magnética e os relógios atómicos do GPS dependem todos dela.
+ph-quantum.c7.viz.root	Tecnologia quântica hoje
+ph-quantum.c7.viz.items.0	Transístores e chips
+ph-quantum.c7.viz.items.1	Lasers e LED
+ph-quantum.c7.viz.items.2	Células solares
+ph-quantum.c7.viz.items.3	Ressonância e relógios atómicos
+ph-quantum.c8.title	Computadores quânticos
+ph-quantum.c8.text	Os computadores quânticos usam qubits, que podem estar em sobreposição e entrelaçados. Para certos problemas, como simular moléculas ou quebrar alguma encriptação, poderiam superar em muito os computadores normais, mas construir computadores grandes e fiáveis é muito difícil.
+ph-quantum.c8.viz.l.t	Bit clássico
+ph-quantum.c8.viz.l.items.0	0 ou 1
+ph-quantum.c8.viz.r.t	Qubit
+ph-quantum.c8.viz.r.items.0	sobreposição de 0 e 1
+ph-quantum.c8.viz.r.items.1	frágil
+ph-quantum.c8.viz.r.items.2	exige frio extremo
+ph-quantum.c9.title	Os fundadores da teoria quântica
+ph-quantum.c9.text	Planck (1900), Einstein (1905), Bohr (1913), Heisenberg e Schrödinger (1925–26) construíram a mecânica quântica em cerca de 25 anos. É a teoria testada com mais precisão em toda a ciência.
+ph-quantum.c9.viz.events.0.l	Os quanta de Planck
+ph-quantum.c9.viz.events.1.l	Os fotões de Einstein
+ph-quantum.c9.viz.events.2.l	O átomo de Bohr
+ph-quantum.c9.viz.events.3.l	Equação de Schrödinger
+ph-solar.title	O Sistema Solar
+ph-solar.summary	O nosso Sol, oito planetas e muito mais.
+ph-solar.q0.q	Qual é o planeta mais quente?
+ph-solar.q0.o0	Mercúrio
+ph-solar.q0.o1	Vénus
+ph-solar.q0.o2	Marte
+ph-solar.q0.x	A sua espessa atmosfera de CO₂ retém o calor.
+ph-solar.q1.q	Quanto é 1 UA?
+ph-solar.q1.o0	1 milhão de km
+ph-solar.q1.o1	Cerca de 150 milhões de km
+ph-solar.q1.o2	1 ano-luz
+ph-solar.q1.x	A distância média Terra–Sol.
+ph-solar.q2.q	Porque é que Plutão foi reclassificado em 2006?
+ph-solar.q2.o0	Desapareceu
+ph-solar.q2.o1	Passou a ser considerado um planeta anão
+ph-solar.q2.o2	Fundiu-se com Neptuno
+ph-solar.q2.x	Não limpa a sua órbita de outros corpos.
+ph-solar.c0.title	O Sol
+ph-solar.c0.text	O Sol é uma estrela comum, com 109 vezes o diâmetro da Terra, e concentra 99.8% da massa do Sistema Solar. Funde cerca de 600 milhões de toneladas de hidrogénio em hélio a cada segundo.
+ph-solar.c0.viz.items.0.l	diâmetro da Terra
+ph-solar.c0.viz.items.1.l	da massa do Sistema Solar
+ph-solar.c0.viz.items.2.v	15 milhões °C
+ph-solar.c0.viz.items.2.l	temperatura do núcleo
+ph-solar.c1.title	Oito planetas
+ph-solar.c1.text	Quatro pequenos planetas rochosos (Mercúrio, Vénus, Terra, Marte) e quatro gigantes (Júpiter e Saturno, de gás; Úrano e Neptuno, de gelo). Plutão foi reclassificado como planeta anão em 2006.
+ph-solar.c1.viz.l.t	Planetas rochosos interiores
+ph-solar.c1.viz.l.items.0	Mercúrio
+ph-solar.c1.viz.l.items.1	Vénus
+ph-solar.c1.viz.l.items.2	Terra
+ph-solar.c1.viz.l.items.3	Marte
+ph-solar.c1.viz.r.t	Planetas gigantes exteriores
+ph-solar.c1.viz.r.items.0	Júpiter
+ph-solar.c1.viz.r.items.1	Saturno
+ph-solar.c1.viz.r.items.2	Úrano
+ph-solar.c1.viz.r.items.3	Neptuno
+ph-solar.c2.title	Distâncias
+ph-solar.c2.text	As distâncias medem-se em unidades astronómicas (UA): 1 UA é a distância Terra–Sol, cerca de 150 milhões de km. Neptuno está a cerca de 30 UA; a luz demora mais de 4 horas a lá chegar.
+ph-solar.c2.viz.unit	UA do Sol
+ph-solar.c2.viz.items.0.l	Mercúrio
+ph-solar.c2.viz.items.1.l	Terra
+ph-solar.c2.viz.items.2.l	Marte
+ph-solar.c2.viz.items.3.l	Júpiter
+ph-solar.c2.viz.items.4.l	Neptuno
+ph-solar.c3.title	Vénus: a estufa
+ph-solar.c3.text	Vénus tem um tamanho mais próximo do da Terra, mas uma atmosfera espessa de CO₂ com uma pressão esmagadora de 90 bar e temperaturas à superfície de cerca de 465 °C, mais quente do que Mercúrio.
+ph-solar.c3.viz.items.0.v	465 °C
+ph-solar.c3.viz.items.0.l	superfície
+ph-solar.c3.viz.items.1.v	90 bar
+ph-solar.c3.viz.items.1.l	pressão
+ph-solar.c3.viz.items.2.v	243 dias
+ph-solar.c3.viz.items.2.l	uma rotação
+ph-solar.c4.title	Marte
+ph-solar.c4.text	Marte é um deserto frio com uma atmosfera fina de CO₂, o maior vulcão do Sistema Solar (Olympus Mons) e indícios de rios e lagos antigos. Robôs como o Perseverance procuram sinais de vida passada.
+ph-solar.c4.viz.items.0	Olympus Mons, ~22 km de altura
+ph-solar.c4.viz.items.1	Antigos vales de rios
+ph-solar.c4.viz.items.2	Calotes polares
+ph-solar.c4.viz.items.3	Robôs e helicópteros a explorar
+ph-solar.c5.title	Júpiter e Saturno
+ph-solar.c5.text	Júpiter é tão grande que todos os outros planetas caberiam lá dentro. A sua Grande Mancha Vermelha é uma tempestade maior do que a Terra. Os anéis de Saturno são feitos de pedaços de gelo, e Saturno flutuaria numa banheira gigante: a sua densidade média é inferior à da água.
+ph-solar.c5.viz.items.0.a	Júpiter
+ph-solar.c5.viz.items.0.b	o maior, Grande Mancha Vermelha
+ph-solar.c5.viz.items.1.a	Saturno
+ph-solar.c5.viz.items.1.b	anéis de gelo, menos denso que a água
+ph-solar.c5.viz.items.2.a	Europa
+ph-solar.c5.viz.items.2.b	oceano sob o gelo
+ph-solar.c5.viz.items.3.a	Titã
+ph-solar.c5.viz.items.3.b	lagos de metano
+ph-solar.c6.title	Luas
+ph-solar.c6.text	O Sistema Solar tem centenas de luas conhecidas. A nossa Lua formou-se provavelmente quando um corpo do tamanho de Marte chocou com a Terra jovem, há cerca de 4.5 mil milhões de anos.
+ph-solar.c6.viz.steps.0	Corpo do tamanho de Marte atinge a Terra
+ph-solar.c6.viz.steps.1	Detritos lançados em órbita
+ph-solar.c6.viz.steps.2	Os detritos juntam-se
+ph-solar.c6.viz.steps.3	A nossa Lua
+ph-solar.c7.title	Asteroides e cometas
+ph-solar.c7.text	A cintura de asteroides entre Marte e Júpiter guarda restos rochosos. Os cometas são corpos gelados do Sistema Solar exterior que ganham caudas brilhantes quando se aproximam do Sol.
+ph-solar.c7.viz.l.t	Asteroides
+ph-solar.c7.viz.l.items.0	rocha e metal
+ph-solar.c7.viz.l.items.1	sobretudo entre Marte e Júpiter
+ph-solar.c7.viz.r.t	Cometas
+ph-solar.c7.viz.r.items.0	gelo e poeira
+ph-solar.c7.viz.r.items.1	caudas perto do Sol
+ph-solar.c7.viz.r.items.2	vêm de longe
+ph-solar.c8.title	Estações noutros planetas
+ph-solar.c8.text	Os planetas com eixos inclinados têm estações. Úrano está deitado de lado, por isso cada polo tem cerca de 42 anos de luz solar contínua seguidos de 42 anos de escuridão.
+ph-solar.c8.viz.unit	inclinação do eixo (graus)
+ph-solar.c8.viz.items.0.l	Mercúrio
+ph-solar.c8.viz.items.1.l	Terra
+ph-solar.c8.viz.items.2.l	Marte
+ph-solar.c8.viz.items.3.l	Úrano
+ph-solar.c9.title	Idade
+ph-solar.c9.text	O Sistema Solar formou-se há cerca de 4.6 mil milhões de anos a partir de uma nuvem de gás e poeira em colapso. Os meteoritos dão as datas mais precisas.
+ph-solar.c9.viz.events.0.y	há 4.6 mil M anos
+ph-solar.c9.viz.events.0.l	nasce o Sol
+ph-solar.c9.viz.events.1.y	4.5 mil M
+ph-solar.c9.viz.events.1.l	Terra e Lua
+ph-solar.c9.viz.events.2.y	3.8 mil M
+ph-solar.c9.viz.events.2.l	primeira vida na Terra
+ph-solar.c9.viz.events.3.y	hoje
+ph-solar.c9.viz.events.3.l	continua
+ph-stars.title	Estrelas e galáxias
+ph-stars.summary	Como as estrelas vivem e morrem, e qual é o tamanho do universo.
+ph-stars.q0.q	Um ano-luz mede…
+ph-stars.q0.o0	Tempo
+ph-stars.q0.o1	Distância
+ph-stars.q0.o2	Brilho
+ph-stars.q0.x	A distância que a luz percorre num ano.
+ph-stars.q1.q	Em que se vai tornar o Sol, um dia?
+ph-stars.q1.o0	Num buraco negro
+ph-stars.q1.o1	Numa anã branca
+ph-stars.q1.o2	Numa supernova
+ph-stars.q1.x	Não tem massa suficiente para explodir.
+ph-stars.q2.q	Quando vemos Andrómeda, vemo-la como era…
+ph-stars.q2.o0	Agora
+ph-stars.q2.o1	Há cerca de 2.5 milhões de anos
+ph-stars.q2.o2	Há 8 minutos
+ph-stars.q2.x	A sua luz demorou esse tempo a chegar.
+ph-stars.c0.title	O que é uma estrela
+ph-stars.c0.text	Uma estrela é uma bola gigante de gás quente mantida pela sua própria gravidade, que brilha porque a fusão nuclear no seu núcleo converte hidrogénio em hélio.
+ph-stars.c0.viz.steps.0	A gravidade comprime o núcleo
+ph-stars.c0.viz.steps.1	Começa a fusão
+ph-stars.c0.viz.steps.2	A energia empurra para fora
+ph-stars.c0.viz.steps.3	Equilíbrio: estrela estável
+ph-stars.c1.title	Anos-luz
+ph-stars.c1.text	Um ano-luz é a distância que a luz percorre num ano: cerca de 9.5 biliões de km. A estrela mais próxima depois do Sol, Próxima do Centauro, está a 4.2 anos-luz.
+ph-stars.c1.viz.unit	anos-luz
+ph-stars.c1.viz.items.0.l	Próxima do Centauro
+ph-stars.c1.viz.items.1.l	Sírio
+ph-stars.c1.viz.items.2.l	Betelgeuse
+ph-stars.c1.viz.items.3.l	Centro da galáxia
+ph-stars.c2.title	As cores das estrelas
+ph-stars.c2.text	A cor de uma estrela revela a sua temperatura: as estrelas vermelhas são mais frias (cerca de 3000 °C), o nosso Sol amarelo tem cerca de 5500 °C e as estrelas azuis mais de 20 000 °C.
+ph-stars.c2.viz.unit	°C
+ph-stars.c2.viz.items.0.l	anã vermelha
+ph-stars.c2.viz.items.1.l	Sol
+ph-stars.c2.viz.items.2.l	Sírio
+ph-stars.c2.viz.items.3.l	gigante azul
+ph-stars.c3.title	A vida de uma estrela como o Sol
+ph-stars.c3.text	Uma estrela como o Sol queima hidrogénio durante cerca de 10 mil milhões de anos, incha até se tornar uma gigante vermelha, liberta as camadas exteriores e acaba como anã branca. O Sol vai mais ou menos a meio.
+ph-stars.c3.viz.steps.0	Nebulosa
+ph-stars.c3.viz.steps.1	Sequência principal
+ph-stars.c3.viz.steps.2	Gigante vermelha
+ph-stars.c3.viz.steps.3	Anã branca
+ph-stars.c4.title	As estrelas massivas explodem
+ph-stars.c4.text	As estrelas com muitas vezes a massa do Sol queimam depressa e depois colapsam e explodem como supernovas, deixando estrelas de neutrões ou buracos negros. As explosões espalham elementos pesados pelo espaço.
+ph-stars.c4.viz.steps.0	Estrela massiva
+ph-stars.c4.viz.steps.1	Supergigante
+ph-stars.c4.viz.steps.2	Explosão de supernova
+ph-stars.c4.viz.steps.3	Estrela de neutrões ou buraco negro
+ph-stars.c5.title	Estrelas de neutrões
+ph-stars.c5.text	Uma estrela de neutrões concentra mais do que a massa do Sol numa bola com cerca de 20 km de diâmetro. Uma colher de chá dela pesaria cerca de mil milhões de toneladas na Terra. Algumas rodam centenas de vezes por segundo, como pulsares.
+ph-stars.c5.viz.items.0.v	20 km
+ph-stars.c5.viz.items.0.l	diâmetro
+ph-stars.c5.viz.items.1.v	1.4+ Sóis
+ph-stars.c5.viz.items.1.l	de massa
+ph-stars.c5.viz.items.2.v	~mil milhões t

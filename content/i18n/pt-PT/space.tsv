@@ -957,3 +957,333 @@ sp-gravity.c4.viz.unit	peso aparente, kg (pessoa de 70 kg)
 sp-gravity.c4.viz.items.0.l	Lua
 sp-gravity.c4.viz.items.1.l	Marte
 sp-gravity.c4.viz.items.2.l	Terra
+sp-gravity.c4.viz.items.3.l	Júpiter
+sp-gravity.c5.title	As leis de Kepler
+sp-gravity.c5.text	Johannes Kepler descobriu que os planetas se movem em elipses, varrem áreas iguais em tempos iguais e que os planetas mais distantes demoram mais a completar a órbita.
+sp-gravity.c5.viz.items.0	As órbitas são elipses
+sp-gravity.c5.viz.items.1	Mais rápido perto do Sol
+sp-gravity.c5.viz.items.2	Mais longe: anos mais longos
+sp-gravity.c6.title	Velocidade de escape
+sp-gravity.c6.text	Para escapar por completo à gravidade da Terra, precisarias de cerca de 11,2 km/s. Na Lua, bastam 2,4 km/s.
+sp-gravity.c6.viz.unit	km/s
+sp-gravity.c6.viz.items.0.l	Lua
+sp-gravity.c6.viz.items.1.l	Marte
+sp-gravity.c6.viz.items.2.l	Terra
+sp-gravity.c6.viz.items.3.l	Júpiter
+sp-gravity.c7.title	Assistências gravitacionais
+sp-gravity.c7.text	As naves passam perto dos planetas para lhes "roubar" um pouco da velocidade orbital, como uma bola a ressaltar num comboio em andamento. A Voyager usou Júpiter e Saturno desta forma.
+sp-gravity.c7.viz.steps.0	Aproximar-se de um planeta
+sp-gravity.c7.viz.steps.1	Contorná-lo
+sp-gravity.c7.viz.steps.2	Ganhar velocidade
+sp-gravity.c7.viz.steps.3	Seguir viagem
+sp-gravity.c8.title	Pontos de Lagrange
+sp-gravity.c8.text	Há cinco pontos onde um objeto pequeno consegue manter a posição em relação a dois corpos grandes. O Webb está em L2, a 1,5 milhões de km da Terra, do lado oposto ao Sol.
+sp-gravity.c8.viz.items.0.a	L1
+sp-gravity.c8.viz.items.0.b	entre o Sol e a Terra, observatórios solares
+sp-gravity.c8.viz.items.1.a	L2
+sp-gravity.c8.viz.items.1.b	para lá da Terra, Webb
+sp-gravity.c8.viz.items.2.a	L4 e L5
+sp-gravity.c8.viz.items.2.b	estáveis, acumulam asteroides
+sp-gravity.c9.title	Órbita geoestacionária
+sp-gravity.c9.text	A cerca de 36 000 km de altitude, um satélite dá uma volta por dia e fica sempre sobre o mesmo ponto. É por isso que as antenas parabólicas de TV apontam para um ponto fixo no céu.
+sp-gravity.c9.viz.unit	km
+sp-gravity.c9.viz.items.0.l	EEI
+sp-gravity.c9.viz.items.1.l	GPS
+sp-gravity.c9.viz.items.2.l	Geoestacionária*
+sp-gravity.c9.viz.items.3.l	Lua
+sp-relativity.title	Tempo, espaço e Einstein
+sp-relativity.summary	A relatividade sem os trabalhos de casa de matemática.
+sp-relativity.q0.q	O que acontece a um relógio que se move muito depressa?
+sp-relativity.q0.o0	Adianta-se
+sp-relativity.q0.o1	Anda mais devagar
+sp-relativity.q0.o2	Nada
+sp-relativity.q0.x	Dilatação do tempo.
+sp-relativity.q1.q	Porque é que o GPS precisa da relatividade?
+sp-relativity.q1.o0	Para poupar energia
+sp-relativity.q1.o1	Os relógios dos satélites andam a um ritmo diferente
+sp-relativity.q1.o2	Não precisa
+sp-relativity.q1.x	Sem correção, os erros crescem quilómetros por dia.
+sp-relativity.c0.title	A velocidade da luz
+sp-relativity.c0.text	A luz viaja a cerca de 300 000 km por segundo no vácuo, e todos os observadores medem a mesma velocidade, por mais depressa que se movam. Este simples facto muda tudo.
+sp-relativity.c0.viz.items.0.v	300 000 km/s
+sp-relativity.c0.viz.items.0.l	velocidade da luz
+sp-relativity.c0.viz.items.1.l	voltas à Terra num segundo
+sp-relativity.c0.viz.items.2.v	1,3 s
+sp-relativity.c0.viz.items.2.l	até à Lua
+sp-relativity.c1.title	Dilatação do tempo
+sp-relativity.c1.text	Os relógios em movimento andam mais devagar. Um astronauta que viajasse perto da velocidade da luz descobriria, ao regressar, que na Terra tinha passado mais tempo do que para ele.
+sp-relativity.c1.viz.l.t	Viajante
+sp-relativity.c1.viz.l.items.0	passa menos tempo
+sp-relativity.c1.viz.l.items.1	mais novo ao voltar
+sp-relativity.c1.viz.r.t	Fica em casa
+sp-relativity.c1.viz.r.items.0	passa mais tempo
+sp-relativity.c1.viz.r.items.1	mais velho
+sp-relativity.c2.title	O paradoxo dos gémeos
+sp-relativity.c2.text	Um gémeo voa até uma estrela a 87% da velocidade da luz e volta; o outro fica em casa. No regresso, o viajante envelheceu cerca de metade. A própria dilatação do tempo já foi confirmada com relógios atómicos levados em aviões.
+sp-relativity.c2.viz.unit	anos envelhecidos
+sp-relativity.c2.viz.items.0.l	Gémeo em casa
+sp-relativity.c2.viz.items.1.l	Gémeo viajante
+sp-relativity.c3.title	Contração do comprimento
+sp-relativity.c3.text	Os objetos que se movem muito depressa ficam mais curtos na direção do movimento, medidos por quem os vê passar. Só se nota perto da velocidade da luz.
+sp-relativity.c3.viz.steps.0	Em repouso: comprimento normal
+sp-relativity.c3.viz.steps.1	50% da vel. da luz: 87%
+sp-relativity.c3.viz.steps.2	90% da vel. da luz: 44%
+sp-relativity.c4.title	E = mc²
+sp-relativity.c4.text	Massa e energia são duas formas da mesma coisa. Uma quantidade minúscula de massa contém uma energia enorme, que alimenta o Sol e os reatores nucleares.
+sp-relativity.c4.formula	E = mc²
+sp-relativity.c4.viz.f	E = mc²
+sp-relativity.c4.viz.items.0.s	E
+sp-relativity.c4.viz.items.0.m	energia
+sp-relativity.c4.viz.items.1.s	m
+sp-relativity.c4.viz.items.1.m	massa
+sp-relativity.c4.viz.items.2.s	c²
+sp-relativity.c4.viz.items.2.m	velocidade da luz ao quadrado, um número enorme
+sp-relativity.c5.title	A gravidade curva o espaço-tempo
+sp-relativity.c5.text	Na relatividade geral (1915), a massa curva o espaço-tempo e os objetos seguem essas curvas. Pensa numa bola pesada num trampolim, a fazer rolar berlindes na sua direção.
+sp-relativity.c5.viz.steps.0	Massa
+sp-relativity.c5.viz.steps.1	Curva o espaço-tempo
+sp-relativity.c5.viz.steps.2	Objetos seguem a curva
+sp-relativity.c5.viz.steps.3	Chamamos-lhe gravidade
+sp-relativity.c6.title	A luz curva-se
+sp-relativity.c6.text	Em 1919, Arthur Eddington mediu a luz das estrelas a curvar-se à volta do Sol durante um eclipse, exatamente como Einstein previra. Isso tornou Einstein famoso no mundo inteiro.
+sp-relativity.c6.viz.events.0.l	relatividade restrita
+sp-relativity.c6.viz.events.1.l	relatividade geral
+sp-relativity.c6.viz.events.2.l	confirmação no eclipse
+sp-relativity.c6.viz.events.3.l	Prémio Nobel
+sp-relativity.c7.title	O GPS precisa da relatividade
+sp-relativity.c7.text	Os relógios dos satélites GPS adiantam-se cerca de 38 microssegundos por dia: andam mais depressa por causa da gravidade mais fraca e mais devagar por causa da velocidade. Sem correções, as posições desviar-se-iam quilómetros por dia.
+sp-relativity.c7.viz.items.0.a	Gravidade mais fraca
+sp-relativity.c7.viz.items.0.b	relógios +45 µs por dia
+sp-relativity.c7.viz.items.1.a	Velocidade orbital
+sp-relativity.c7.viz.items.1.b	relógios −7 µs por dia
+sp-relativity.c7.viz.items.2.a	Total
+sp-relativity.c7.viz.items.2.b	+38 µs, corrigido
+sp-relativity.c8.title	Lentes gravitacionais
+sp-relativity.c8.text	Os enxames de galáxias massivos curvam a luz das galáxias que estão atrás deles, criando arcos e imagens múltiplas. Os astrónomos usam estas lupas naturais.
+sp-relativity.c8.viz.steps.0	Galáxia distante
+sp-relativity.c8.viz.steps.1	Luz passa por um enxame massivo
+sp-relativity.c8.viz.steps.2	Curvada e ampliada
+sp-relativity.c8.viz.steps.3	Arcos na nossa imagem
+sp-relativity.c9.title	Nada é mais rápido do que a luz
+sp-relativity.c9.text	Nada que tenha massa pode atingir a velocidade da luz: quanto mais perto se chega, mais energia custa cada bocadinho extra de velocidade. A informação também não pode viajar mais depressa do que a luz.
+sp-relativity.c9.viz.unit	% da velocidade da luz
+sp-relativity.c9.viz.items.0.l	Sonda mais rápida
+sp-relativity.c9.viz.items.1.l	Aceleradores de partículas
+sp-astronauts.title	A vida de astronauta
+sp-astronauts.summary	Comer, dormir e trabalhar em órbita.
+sp-astronauts.q0.q	Porque é que os astronautas comem tortilhas em vez de pão?
+sp-astronauts.q0.o0	Pelo sabor
+sp-astronauts.q0.o1	As migalhas flutuam e são perigosas
+sp-astronauts.q0.o2	Pelo custo
+sp-astronauts.q0.x	As migalhas podem entrar nos equipamentos.
+sp-astronauts.q1.q	Porque é que os astronautas ficam mais altos no espaço?
+sp-astronauts.q1.o0	Fazem exercício
+sp-astronauts.q1.o1	A coluna estica-se sem gravidade
+sp-astronauts.q1.o2	Comem mais
+sp-astronauts.q1.x	Cerca de 3 cm, temporariamente.
+sp-astronauts.c0.title	Tornar-se astronauta
+sp-astronauts.c0.text	As agências espaciais escolhem um punhado de pessoas entre milhares de candidatos. A seleção de 2022 da ESA recebeu mais de 22 500 candidaturas para 17 lugares, entre astronautas e reservas.
+sp-astronauts.c0.viz.unit	pessoas
+sp-astronauts.c0.viz.items.0.l	Candidatos
+sp-astronauts.c0.viz.items.1.l	Selecionados
+sp-astronauts.c1.title	Treino
+sp-astronauts.c1.text	Os astronautas treinam durante anos: caminhadas espaciais ensaiadas debaixo de água, treino de sobrevivência, russo, robótica e voos em aviões que criam breves momentos de imponderabilidade.
+sp-astronauts.c1.viz.items.0	Treino de caminhadas debaixo de água
+sp-astronauts.c1.viz.items.1	Treino de sobrevivência
+sp-astronauts.c1.viz.items.2	Aulas de russo
+sp-astronauts.c1.viz.items.3	Voos parabólicos
+sp-astronauts.c2.title	Comer no espaço
+sp-astronauts.c2.text	A comida vem em saquetas e latas; as migalhas são perigosas, por isso as tortilhas substituem o pão. Em órbita o paladar fica mais fraco, por isso os astronautas adoram molhos picantes.
+sp-astronauts.c2.viz.items.0.a	Pão
+sp-astronauts.c2.viz.items.0.b	tortilhas
+sp-astronauts.c2.viz.items.1.a	Sal e pimenta
+sp-astronauts.c2.viz.items.1.b	líquidos
+sp-astronauts.c2.viz.items.2.a	Paladar
+sp-astronauts.c2.viz.items.2.b	mais fraco: picante
+sp-astronauts.c3.title	Dormir
+sp-astronauts.c3.text	Os astronautas dormem em pequenas cabines, em sacos-cama presos à parede. Não há "cima", por isso pode-se dormir em qualquer posição.
+sp-astronauts.c3.viz.items.0	Saco-cama preso à parede
+sp-astronauts.c3.viz.items.1	Máscara de olhos
+sp-astronauts.c3.viz.items.2	Tampões
+sp-astronauts.c3.viz.items.3	16 nasceres do sol por dia
+sp-astronauts.c4.title	O corpo no espaço
+sp-astronauts.c4.text	Sem gravidade, os músculos e os ossos enfraquecem, os fluidos deslocam-se para a cabeça e a coluna estica-se; os astronautas ficam temporariamente cerca de 3 cm mais altos.
+sp-astronauts.c4.viz.items.0	Perda óssea: ~1% por mês
+sp-astronauts.c4.viz.items.1	Perda muscular
+sp-astronauts.c4.viz.items.2	Cara inchada
+sp-astronauts.c4.viz.items.3	~3 cm mais alto
+sp-astronauts.c5.title	Exercício
+sp-astronauts.c5.text	Para combater a perda de osso e músculo, as tripulações da EEI fazem cerca de duas horas de exercício por dia numa passadeira com arneses, numa bicicleta e numa máquina de resistência.
+sp-astronauts.c5.viz.items.0.v	2 h
+sp-astronauts.c5.viz.items.0.l	exercício por dia
+sp-astronauts.c5.viz.items.1.l	máquinas
+sp-astronauts.c5.viz.items.2.l	osso perdido/mês sem exercício
+sp-astronauts.c6.title	Reciclagem de água
+sp-astronauts.c6.text	Na EEI, cerca de 98% da água, incluindo o suor e a urina, é reciclada em água potável limpa.
+sp-astronauts.c6.viz.steps.0	Urina e suor
+sp-astronauts.c6.viz.steps.1	Destilar e filtrar
+sp-astronauts.c6.viz.steps.2	Testar a pureza
+sp-astronauts.c6.viz.steps.3	Água potável
+sp-astronauts.c7.title	Caminhadas espaciais
+sp-astronauts.c7.text	As caminhadas espaciais duram seis a oito horas. O fato é uma mininave espacial com oxigénio, arrefecimento e pressão. Os astronautas estão sempre presos por cabos.
+sp-astronauts.c7.viz.items.0.v	6–8 h
+sp-astronauts.c7.viz.items.0.l	caminhada típica
+sp-astronauts.c7.viz.items.1.v	~145 kg
+sp-astronauts.c7.viz.items.1.l	fato na Terra
+sp-astronauts.c7.viz.items.2.l	1.ª caminhada, Leonov
+sp-astronauts.c8.title	O efeito panorâmico
+sp-astronauts.c8.text	Muitos astronautas descrevem uma mudança de perspetiva depois de verem a Terra do espaço: uma frágil bola azul sem fronteiras visíveis.
+sp-astronauts.c8.viz.steps.0	Ver a Terra do espaço
+sp-astronauts.c8.viz.steps.1	Sem fronteiras visíveis
+sp-astronauts.c8.viz.steps.2	Sentir a sua fragilidade
+sp-astronauts.c8.viz.steps.3	Perspetiva mudada
+sp-astronauts.c9.title	Regresso a casa
+sp-astronauts.c9.text	Depois de meses em órbita, os astronautas precisam de semanas para se readaptarem: o equilíbrio falha e tudo parece pesado. Alguns esquecem-se da gravidade e largam objetos no ar.
+sp-astronauts.c9.viz.events.0.y	Aterragem
+sp-astronauts.c9.viz.events.0.l	tonturas e peso
+sp-astronauts.c9.viz.events.1.y	Dias
+sp-astronauts.c9.viz.events.1.l	equilíbrio volta
+sp-astronauts.c9.viz.events.2.y	Semanas a meses
+sp-astronauts.c9.viz.events.2.l	ossos e músculos recuperam
+sp-sky.title	Observar as estrelas
+sp-sky.summary	Orientar-te no céu noturno.
+sp-sky.q0.q	Como se encontra a Estrela Polar?
+sp-sky.q0.o0	Seguindo o cinturão de Orionte
+sp-sky.q0.o1	Usando as estrelas guia da Ursa Maior
+sp-sky.q0.o2	Olhando para sul
+sp-sky.q0.x	Ela marca o norte.
+sp-sky.q1.q	Qual é mais brilhante: magnitude 1 ou magnitude 5?
+sp-sky.q1.o0	5
+sp-sky.q1.o1	1
+sp-sky.q1.o2	Iguais
+sp-sky.q1.x	Números mais baixos são mais brilhantes.
+sp-sky.c0.title	Constelações
+sp-sky.c0.text	As constelações são padrões de estrelas a que culturas antigas deram nomes. Os astrónomos reconhecem 88 oficiais. As suas estrelas normalmente não estão perto umas das outras no espaço.
+sp-sky.c0.viz.items.0.l	constelações oficiais
+sp-sky.c0.viz.items.1.l	listadas por Ptolomeu
+sp-sky.c0.viz.items.2.l	estrelas visíveis numa noite escura
+sp-sky.c1.title	Encontrar a Estrela Polar
+sp-sky.c1.text	Segue as duas estrelas da ponta da "caçarola" da Ursa Maior para cima, cerca de cinco vezes a distância entre elas, até chegares à Estrela Polar, que quase não se mexe e marca o norte.
+sp-sky.c1.viz.steps.0	Encontrar a Ursa Maior
+sp-sky.c1.viz.steps.1	Usar as duas estrelas guia
+sp-sky.c1.viz.steps.2	Avançar 5 vezes a distância
+sp-sky.c1.viz.steps.3	Estrela Polar: norte
+sp-sky.c2.title	O céu roda
+sp-sky.c2.text	As estrelas nascem a leste e põem-se a oeste porque a Terra roda. As fotografias de longa exposição transformam as estrelas em círculos à volta do polo celeste.
+sp-sky.c2.viz.steps.0	Nascem a leste
+sp-sky.c2.viz.steps.1	Mais altas a sul
+sp-sky.c2.viz.steps.2	Põem-se a oeste
+sp-sky.c2.viz.steps.3	Abaixo do horizonte
+sp-sky.c3.title	Estrelas de cada estação
+sp-sky.c3.text	À medida que a Terra orbita o Sol, vemos constelações diferentes à noite ao longo do ano. Orionte domina as noites de inverno; o Escorpião, as de verão.
+sp-sky.c3.viz.items.0.a	Inverno
+sp-sky.c3.viz.items.0.b	Orionte, Touro
+sp-sky.c3.viz.items.1.a	Primavera
+sp-sky.c3.viz.items.1.b	Leão
+sp-sky.c3.viz.items.2.a	Verão
+sp-sky.c3.viz.items.2.b	Escorpião, Triângulo de Verão
+sp-sky.c3.viz.items.3.a	Outono
+sp-sky.c3.viz.items.3.b	Pégaso
+sp-sky.c4.title	Orionte
+sp-sky.c4.text	Orionte é fácil de encontrar: três estrelas brilhantes em linha formam o seu cinturão. A vermelha Betelgeuse marca um ombro e a azul Rigel um pé.
+sp-sky.c4.viz.items.0.a	Betelgeuse
+sp-sky.c4.viz.items.0.b	supergigante vermelha, ombro
+sp-sky.c4.viz.items.1.a	Rigel
+sp-sky.c4.viz.items.1.b	supergigante azul, pé
+sp-sky.c4.viz.items.2.a	Cinturão
+sp-sky.c4.viz.items.2.b	três estrelas em linha
+sp-sky.c5.title	O brilho das estrelas
+sp-sky.c5.text	Os astrónomos medem o brilho em magnitudes: números mais baixos são mais brilhantes. Sírius, a estrela mais brilhante da noite, tem −1,5; as estrelas mais ténues visíveis a olho nu andam pelos +6.
+sp-sky.c5.viz.unit	magnitude
+sp-sky.c5.viz.items.0.l	Vénus
+sp-sky.c5.viz.items.1.l	Sírius
+sp-sky.c5.viz.items.2.l	Estrela Polar
+sp-sky.c5.viz.items.3.l	Mais ténue visível
+sp-sky.c6.title	Os planetas vagueiam
+sp-sky.c6.text	"Planeta" vem da palavra grega para "errante": os planetas deslocam-se em relação às estrelas de fundo ao longo de semanas, sempre perto do caminho do Sol, a eclíptica.
+sp-sky.c6.viz.steps.0	Noite 1
+sp-sky.c6.viz.steps.1	Uma semana depois
+sp-sky.c6.viz.steps.2	Um mês depois: moveu-se entre as estrelas
+sp-sky.c7.title	A faixa da Via Láctea
+sp-sky.c7.text	Numa noite escura, uma faixa pálida atravessa o céu em arco: é a luz combinada de milhares de milhões de estrelas do disco da nossa galáxia, vista de perfil a partir de dentro.
+sp-sky.c7.viz.steps.0	Estamos dentro de um disco plano
+sp-sky.c7.viz.steps.1	Olhar ao longo do disco
+sp-sky.c7.viz.steps.2	Ver uma faixa de luz
+sp-sky.c8.title	Usar os olhos
+sp-sky.c8.text	Os teus olhos precisam de 20–30 minutos no escuro para se adaptarem por completo. Usa uma luz vermelha para ler mapas, porque o vermelho quase não perturba a visão noturna.
+sp-sky.c8.viz.items.0	Esperar 20–30 minutos
+sp-sky.c8.viz.items.1	Só lanterna vermelha
+sp-sky.c8.viz.items.2	Olhar um pouco ao lado de objetos ténues
+sp-sky.c8.viz.items.3	Evitar ecrãs de telemóvel
+sp-sky.c9.title	Uma primeira noite lá fora
+sp-sky.c9.text	Escolhe uma noite sem lua, afasta-te das luzes, começa pela Lua ou por um planeta brilhante e depois procura Orionte ou a Ursa Maior. Uns binóculos mostram muito mais do que esperarias.
+sp-sky.c9.viz.steps.0	Noite sem lua
+sp-sky.c9.viz.steps.1	Local escuro
+sp-sky.c9.viz.steps.2	Deixar os olhos adaptar
+sp-sky.c9.viz.steps.3	Achar uma referência
+sp-sky.c9.viz.steps.4	Binóculos
+sp-impacts.title	Asteroides, cometas e impactos
+sp-impacts.summary	Rochas espaciais e como defendemos a Terra.
+sp-impacts.q0.q	Para onde apontam as caudas de um cometa?
+sp-impacts.q0.o0	Para trás da sua trajetória
+sp-impacts.q0.o1	Para longe do Sol
+sp-impacts.q0.o2	Para a Terra
+sp-impacts.q0.x	São empurradas pela luz solar e pelo vento solar.
+sp-impacts.q1.q	O que mostrou a missão DART da NASA?
+sp-impacts.q1.o0	Que os asteroides são ocos
+sp-impacts.q1.o1	Que uma nave consegue alterar a órbita de um asteroide
+sp-impacts.q1.o2	Que os cometas têm água
+sp-impacts.q1.x	Ao embater em Dimorphos, em 2022.
+sp-impacts.q2.q	Onde fica Ceres?
+sp-impacts.q2.o0	Na Cintura de Kuiper
+sp-impacts.q2.o1	Na cintura de asteroides
+sp-impacts.q2.o2	Em órbita de Marte
+sp-impacts.q2.x	É um planeta anão.
+sp-impacts.c0.title	A cintura de asteroides
+sp-impacts.c0.text	Entre Marte e Júpiter orbitam milhões de corpos rochosos. Ao contrário do que mostram os filmes, estão muito espalhados: as naves atravessam a cintura sem terem de se desviar de nada.
+sp-impacts.c0.viz.items.0.w	Um campo apinhado de rochas a rodopiar
+sp-impacts.c0.viz.items.0.r	Quase só espaço vazio; as sondas passam em segurança
+sp-impacts.c1.title	Ceres
+sp-impacts.c1.text	Ceres, o maior objeto da cintura de asteroides, com cerca de 940 km de largura, é classificado como planeta anão. A sonda Dawn da NASA encontrou depósitos de sal brilhantes na sua superfície.
+sp-impacts.c1.viz.unit	largura, km
+sp-impacts.c1.viz.items.0.l	Vesta
+sp-impacts.c1.viz.items.1.l	Palas
+sp-impacts.c1.viz.items.2.l	Ceres
+sp-impacts.c2.title	Anatomia de um cometa
+sp-impacts.c2.text	Um cometa é uma "bola de neve suja" de gelo e poeira com alguns km de largura. Perto do Sol, o gelo passa a gás, formando uma cabeça brilhante e caudas que apontam sempre para longe do Sol.
+sp-impacts.c2.viz.items.0	Caudas: apontam para longe do Sol
+sp-impacts.c2.viz.items.1	Coma: nuvem brilhante
+sp-impacts.c2.viz.items.2	Núcleo: gelado, alguns km
+sp-impacts.c3.title	O cometa Halley
+sp-impacts.c3.text	Em 1705, Edmond Halley previu que um cometa visto em 1531, 1607 e 1682 voltaria em 1758. Voltou, já depois da sua morte. O próximo regresso é em 2061.
+sp-impacts.c3.viz.events.0.l	Halley observa-o
+sp-impacts.c3.viz.events.1.l	volta como previsto
+sp-impacts.c3.viz.events.2.l	última visita
+sp-impacts.c3.viz.events.3.l	próximo regresso
+sp-impacts.c4.title	De onde vêm os cometas
+sp-impacts.c4.text	Os cometas de período curto vêm da Cintura de Kuiper, para lá de Neptuno; os de período longo vêm da distante Nuvem de Oort, uma camada talvez a um ano-luz de distância.
+sp-impacts.c4.viz.l.t	Cintura de Kuiper
+sp-impacts.c4.viz.l.items.0	para lá de Neptuno
+sp-impacts.c4.viz.l.items.1	órbitas de menos de 200 anos
+sp-impacts.c4.viz.r.t	Nuvem de Oort
+sp-impacts.c4.viz.r.items.0	muito longe
+sp-impacts.c4.viz.r.items.1	órbitas de milhares de anos
+sp-impacts.c5.title	O exterminador dos dinossauros
+sp-impacts.c5.text	Há cerca de 66 milhões de anos, um asteroide com uns 10 km de largura caiu no Iucatão, no México, abrindo a cratera de Chicxulub. A poeira e os incêndios mudaram o clima e acabaram com os dinossauros não avianos.
+sp-impacts.c5.viz.steps.0	Asteroide de 10 km
+sp-impacts.c5.viz.steps.1	Impacto no Iucatão
+sp-impacts.c5.viz.steps.2	Poeira tapa o Sol
+sp-impacts.c5.viz.steps.3	Extinção em massa
+sp-impacts.c6.title	Tunguska
+sp-impacts.c6.text	Em 1908, um objeto explodiu sobre a Sibéria e derrubou cerca de 80 milhões de árvores numa área de 2000 km². Ninguém morreu porque a zona era muito remota.
+sp-impacts.c6.viz.items.0.l	explosão
+sp-impacts.c6.viz.items.1.v	2000 km²
+sp-impacts.c6.viz.items.1.l	floresta arrasada
+sp-impacts.c6.viz.items.2.v	80 milhões
+sp-impacts.c6.viz.items.2.l	árvores derrubadas
+sp-impacts.c7.title	Cheliabinsk
+sp-impacts.c7.text	Em 2013, uma rocha de 20 metros explodiu sobre Cheliabinsk, na Rússia. A onda de choque partiu janelas e feriu cerca de 1500 pessoas, sobretudo com vidros projetados.
+sp-impacts.c7.viz.items.0.v	20 m
+sp-impacts.c7.viz.items.0.l	tamanho do asteroide
+sp-impacts.c7.viz.items.1.l	data
+sp-impacts.c7.viz.items.2.l	pessoas feridas

@@ -497,3 +497,523 @@ tr-psu.c1.viz.items.2.s	I
 tr-psu.c1.viz.items.2.m	corrente da carga
 tr-psu.c2.title	Reguladores LDO
 tr-psu.c2.text	Um regulador de baixa queda (LDO) funciona com a entrada só ligeiramente acima da saída, por exemplo 3.6 V à entrada para 3.3 V à saída. Essencial quando se trabalha com uma única célula de lítio.
+tr-psu.c2.viz.l.t	Linear normal
+tr-psu.c2.viz.l.items.0	precisa de ~2 V de margem
+tr-psu.c2.viz.l.items.1	p. ex. 7805
+tr-psu.c2.viz.r.t	LDO
+tr-psu.c2.viz.r.items.0	precisa de ~0.1–0.4 V
+tr-psu.c2.viz.r.items.1	ideal para baterias
+tr-psu.c3.title	Conversores buck
+tr-psu.c3.text	Um conversor buck baixa a tensão ligando e desligando muito depressa através de uma bobina. Uma eficiência de 85–95% significa pouco calor, mesmo de 24 V para 3.3 V.
+tr-psu.c3.viz.steps.0	Entram 12 V
+tr-psu.c3.viz.steps.1	Comuta a ~500 kHz
+tr-psu.c3.viz.steps.2	Bobina e condensador suavizam
+tr-psu.c3.viz.steps.3	Saem 5 V, ~90% de eficiência
+tr-psu.c4.title	Conversores boost
+tr-psu.c4.text	Um conversor boost sobe a tensão, por exemplo de uma bateria de 3.7 V para os 5 V do USB. Puxa mais corrente da bateria do que a que entrega à saída.
+tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
+tr-psu.c4.viz.items.0.s	Vout
+tr-psu.c4.viz.items.0.m	5 V
+tr-psu.c4.viz.items.1.s	Iout
+tr-psu.c4.viz.items.1.m	1 A
+tr-psu.c4.viz.items.2.s	Vin
+tr-psu.c4.viz.items.2.m	3.7 V
+tr-psu.c4.viz.items.3.s	η
+tr-psu.c4.viz.items.3.m	~0.9 → Iin ≈ 1.5 A
+tr-psu.c5.title	Eficiência comparada
+tr-psu.c5.text	Para uma queda grande, ganham os reguladores comutados. Para quedas pequenas e circuitos analógicos sensíveis ao ruído, um LDO pode ser melhor.
+tr-psu.c5.viz.unit	% de eficiência, 12 V → 3.3 V
+tr-psu.c5.viz.items.0.l	Linear
+tr-psu.c5.viz.items.1.l	Conversor buck
+tr-psu.c6.title	Ripple e ruído
+tr-psu.c6.text	Os reguladores comutados deixam um pequeno ripple à sua frequência de comutação. Os circuitos sensíveis (áudio, ADCs de precisão) usam filtragem extra ou um LDO depois do conversor buck.
+tr-psu.c6.viz.steps.0	Conversor buck
+tr-psu.c6.viz.steps.1	Pequeno ripple
+tr-psu.c6.viz.steps.2	Filtro LC ou LDO
+tr-psu.c6.viz.steps.3	Alimentação limpa
+tr-psu.c7.title	Escolher um transformador
+tr-psu.c7.text	A tensão tem de ser exatamente a mesma, a corrente nominal tem de ser pelo menos a que o projeto precisa, e confirma a polaridade da ficha. Uma corrente nominal mais alta não faz mal: o aparelho só puxa o que precisa.
+tr-psu.c7.viz.items.0	A tensão tem de coincidir
+tr-psu.c7.viz.items.1	Corrente nominal ≥ à necessária
+tr-psu.c7.viz.items.2	Ver se o centro é positivo ou negativo
+tr-psu.c7.viz.items.3	Preferir transformadores certificados
+tr-psu.c8.title	USB Power Delivery
+tr-psu.c8.text	O USB-C PD negoceia tensões mais altas, 9, 15 ou 20 V, até 100 W ou mais, mas só depois de um handshake digital. Um cabo USB-C simples, sem negociação, dá 5 V.
+tr-psu.c8.viz.unit	watts (máx., normas USB)
+tr-psu.c8.viz.items.0.l	USB 2.0
+tr-psu.c8.viz.items.1.l	USB 3.0
+tr-psu.c8.viz.items.2.l	USB-C 3 A
+tr-psu.c8.viz.items.3.l	USB-C PD
+tr-psu.c9.title	Quebras de tensão
+tr-psu.c9.text	Se a alimentação baixar para menos do que um chip precisa, ele pode portar-se mal ou reiniciar. Os ESP32 são famosos por reiniciarem nos picos de transmissão Wi-Fi quando a alimentação é fraca. Um bom regulador e um condensador grande perto da placa resolvem o problema.
+tr-psu.c9.viz.items.0.w	ESP32 reinicia quando o Wi-Fi arranca
+tr-psu.c9.viz.items.0.r	alimentação de 3.3 V mais forte e um condensador de 470 µF perto da placa
+tr-sensors.title	Sensores
+tr-sensors.summary	Medir temperatura, distância, movimento e muito mais.
+tr-sensors.q0.q	Um eco ultrassónico volta ao fim de 2.9 ms. A distância é de cerca de…
+tr-sensors.q0.o0	1 m
+tr-sensors.q0.o1	0.5 m
+tr-sensors.q0.o2	2 m
+tr-sensors.q0.x	0.0029 × 343 ÷ 2 ≈ 0.5 m.
+tr-sensors.q1.q	Porque é que um sensor PIR pode não detetar alguém sentado e quieto?
+tr-sensors.q1.o0	Está demasiado frio
+tr-sensors.q1.o1	Deteta variações do calor infravermelho causadas pelo movimento
+tr-sensors.q1.o2	Só funciona à noite
+tr-sensors.q1.x	O PIR reage ao movimento.
+tr-sensors.q2.q	Uma pinça amperimétrica (CT) mede…
+tr-sensors.q2.o0	Tensão DC
+tr-sensors.q2.o1	Corrente AC sem cortar o fio
+tr-sensors.q2.o2	Temperatura
+tr-sensors.q2.x	Deteta o campo magnético.
+tr-sensors.c0.title	Do mundo para números
+tr-sensors.c0.text	Um sensor transforma uma grandeza física num sinal elétrico: uma tensão, uma resistência, a duração de um impulso ou dados digitais. O microcontrolador lê-o e converte-o em unidades reais.
+tr-sensors.c0.viz.steps.0	Grandeza física
+tr-sensors.c0.viz.steps.1	Sensor
+tr-sensors.c0.viz.steps.2	Sinal elétrico
+tr-sensors.c0.viz.steps.3	Microcontrolador converte em unidades
+tr-sensors.c1.title	Sensores de temperatura
+tr-sensors.c1.text	Os termístores mudam de resistência com a temperatura (baratos, analógicos). O DS18B20 envia leituras digitais por um único fio. O BME280 junta humidade e pressão por I²C.
+tr-sensors.c1.viz.items.0.a	termístor
+tr-sensors.c1.viz.items.0.b	analógico, barato
+tr-sensors.c1.viz.items.1.a	DS18B20
+tr-sensors.c1.viz.items.1.b	digital, versões à prova de água
+tr-sensors.c1.viz.items.2.a	BME280
+tr-sensors.c1.viz.items.2.b	temperatura, humidade, pressão
+tr-sensors.c2.title	Distância por ultrassons
+tr-sensors.c2.text	Sensores como o HC-SR04 e o JSN-SR04T, à prova de água, enviam um impulso de 40 kHz e medem o tempo do eco. A distância é metade do tempo de ida e volta vezes a velocidade do som.
+tr-sensors.c2.example.0	eco ao fim de 5.8 ms
+tr-sensors.c2.example.1	0.0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1.0 m
+tr-sensors.c2.viz.f	distância = tempo × 343 ÷ 2
+tr-sensors.c2.viz.items.0.s	tempo
+tr-sensors.c2.viz.items.0.m	tempo do eco em s
+tr-sensors.c2.viz.items.1.m	m/s, velocidade do som no ar
+tr-sensors.c3.title	Manias dos ultrassons
+tr-sensors.c3.text	A velocidade do som varia com a temperatura (cerca de 0.6 m/s por °C), por isso junta compensação de temperatura para teres precisão. O JSN-SR04T tem uma zona cega de cerca de 20–25 cm e precisa de caminho livre.
+tr-sensors.c3.viz.items.0	Compensar a temperatura
+tr-sensors.c3.viz.items.1	Respeitar a distância mínima
+tr-sensors.c3.viz.items.2	Evitar espuma e superfícies inclinadas
+tr-sensors.c3.viz.items.3	Fazer a média de várias leituras
+tr-sensors.c4.title	Sensores de movimento
+tr-sensors.c4.text	Os sensores PIR detetam o calor infravermelho de pessoas e animais em movimento. Os sensores de radar de micro-ondas detetam movimento através de paredes finas e até a respiração; usam-se para detetar presença.
+tr-sensors.c4.viz.l.t	PIR
+tr-sensors.c4.viz.l.items.0	deteta calor em movimento
+tr-sensors.c4.viz.l.items.1	barato
+tr-sensors.c4.viz.l.items.2	falha pessoas paradas
+tr-sensors.c4.viz.r.t	Radar mmWave
+tr-sensors.c4.viz.r.items.0	deteta movimentos pequenos
+tr-sensors.c4.viz.r.items.1	presença mesmo parado
+tr-sensors.c4.viz.r.items.2	mais caro
+tr-sensors.c5.title	Sensores de luz
+tr-sensors.c5.text	Uma fotorresistência (LDR) é barata e lenta; o BH1750 dá leituras calibradas em lux por I²C. Útil para luzes e estores automáticos.
+tr-sensors.c5.viz.unit	lux (típico)
+tr-sensors.c5.viz.items.0.l	Luar
+tr-sensors.c5.viz.items.1.l	Sala de estar
+tr-sensors.c5.viz.items.2.l	Escritório
+tr-sensors.c5.viz.items.3.l	Dia nublado
+tr-sensors.c5.viz.items.4.l	Luz do sol
+tr-sensors.c6.title	Sensores de corrente e potência
+tr-sensors.c6.text	Uma pinça com transformador de corrente mede corrente AC sem cortar fios; módulos como o PZEM-004T indicam tensão, corrente, potência e energia. As placas INA219 medem corrente e tensão DC.
+tr-sensors.c6.viz.items.0.a	pinça CT
+tr-sensors.c6.viz.items.0.b	corrente AC, não invasiva
+tr-sensors.c6.viz.items.1.a	PZEM-004T
+tr-sensors.c6.viz.items.1.b	potência e energia da rede
+tr-sensors.c6.viz.items.2.a	INA219
+tr-sensors.c6.viz.items.2.b	corrente e tensão DC
+tr-sensors.c7.title	Sensores analógicos vs digitais
+tr-sensors.c7.text	Os sensores analógicos dão uma tensão que lês com o ADC; o ruído e a calibração ficam por tua conta. Os sensores digitais fazem a conversão lá dentro e enviam um número por I²C, SPI ou one-wire.
+tr-sensors.c7.viz.l.t	Analógico
+tr-sensors.c7.viz.l.items.0	saída em tensão
+tr-sensors.c7.viz.l.items.1	precisa de ADC
+tr-sensors.c7.viz.l.items.2	ligação simples
+tr-sensors.c7.viz.r.t	Digital
+tr-sensors.c7.viz.r.items.0	envia números
+tr-sensors.c7.viz.r.items.1	calibrado de fábrica
+tr-sensors.c7.viz.r.items.2	usa um barramento
+tr-sensors.c8.title	Calibração
+tr-sensors.c8.text	Os sensores baratos têm desvios e deriva. Compara com uma referência fiável em dois pontos (por exemplo, água com gelo e temperatura ambiente) e corrige no software.
+tr-sensors.c8.viz.steps.0	Medir uma referência conhecida
+tr-sensors.c8.viz.steps.1	Anotar o desvio
+tr-sensors.c8.viz.steps.2	Corrigir no software
+tr-sensors.c8.viz.steps.3	Verificar de novo
+tr-sensors.c9.title	Amostragem e médias
+tr-sensors.c9.text	Faz várias leituras e calcula a média, ou usa a mediana para ignorar valores anómalos. Não faças amostragem mais rápida do que precisas: gasta energia e acrescenta ruído.
+tr-sensors.c9.viz.items.0	Mediana de 5 elimina picos
+tr-sensors.c9.viz.items.1	Média móvel suaviza o ruído
+tr-sensors.c9.viz.items.2	Amostrar só quando preciso
+tr-sensors.c9.viz.items.3	Registar dados brutos nos testes
+tr-buses.title	Comunicação entre chips
+tr-buses.summary	UART, I²C e SPI explicados.
+tr-buses.q0.q	Que barramento usa as linhas SDA e SCL?
+tr-buses.q0.o0	SPI
+tr-buses.q0.o1	I²C
+tr-buses.q0.o2	UART
+tr-buses.q0.x	O I²C usa uma linha de dados e uma de relógio.
+tr-buses.q1.q	Numa ligação UART, o TX liga-se ao…
+tr-buses.q1.o0	TX
+tr-buses.q1.o1	RX
+tr-buses.q1.o2	Só GND
+tr-buses.q1.x	A transmissão vai para a receção.
+tr-buses.q2.q	Qual é o melhor para um cabo de 300 m até um contador de energia?
+tr-buses.q2.o0	I²C
+tr-buses.q2.o1	SPI
+tr-buses.q2.o2	RS-485
+tr-buses.q2.x	O RS-485 é diferencial e aguenta cabos compridos.
+tr-buses.c0.title	Porquê barramentos?
+tr-buses.c0.text	Sensores, ecrãs e chips de memória precisam de trocar dados com o microcontrolador. Os barramentos série normalizados enviam bits uns atrás dos outros por poucos fios.
+tr-buses.c0.viz.root	Barramentos série
+tr-buses.c0.viz.items.0	UART (2 fios)
+tr-buses.c0.viz.items.1	I²C (2 fios, vários dispositivos)
+tr-buses.c0.viz.items.2	SPI (4 fios, rápido)
+tr-buses.c0.viz.items.3	1-Wire (1 fio)
+tr-buses.c1.title	UART
+tr-buses.c1.text	O UART usa uma linha TX e uma linha RX, cruzadas entre os dispositivos (TX para RX). Os dois lados têm de combinar a velocidade, como 9600 ou 115200 baud. Os módulos GPS e as consolas série usam-no.
+tr-buses.c1.viz.steps.0	TX do dispositivo A
+tr-buses.c1.viz.steps.1	para
+tr-buses.c1.viz.steps.2	RX do dispositivo B
+tr-buses.c1.viz.steps.3	e volta
+tr-buses.c2.title	I²C
+tr-buses.c2.text	O I²C usa duas linhas, SDA (dados) e SCL (relógio), partilhadas por vários dispositivos. Cada dispositivo tem um endereço, como 0x76 para um BME280. As duas linhas precisam de resistências pull-up.
+tr-buses.c2.viz.items.0.a	SDA
+tr-buses.c2.viz.items.0.b	linha de dados
+tr-buses.c2.viz.items.1.a	SCL
+tr-buses.c2.viz.items.1.b	linha de relógio
+tr-buses.c2.viz.items.2.a	endereço
+tr-buses.c2.viz.items.2.b	qual dispositivo
+tr-buses.c2.viz.items.3.a	pull-ups
+tr-buses.c2.viz.items.3.b	tipicamente 4.7 kΩ
+tr-buses.c3.title	SPI
+tr-buses.c3.text	O SPI usa um relógio, uma linha de saída de dados, uma de entrada de dados e uma linha chip-select por dispositivo. É rápido, muitas vezes dezenas de MHz, por isso usa-se para ecrãs, cartões SD e memória flash.
+tr-buses.c3.viz.items.0.a	SCK
+tr-buses.c3.viz.items.0.b	relógio
+tr-buses.c3.viz.items.1.a	MOSI
+tr-buses.c3.viz.items.1.b	saída do controlador
+tr-buses.c3.viz.items.2.a	MISO
+tr-buses.c3.viz.items.2.b	entrada do controlador
+tr-buses.c3.viz.items.3.a	CS
+tr-buses.c3.viz.items.3.b	chip select por dispositivo
+tr-buses.c4.title	Escolher um barramento
+tr-buses.c4.text	I²C para muitos sensores lentos em dois fios; SPI para velocidade; UART para módulos com protocolo próprio; one-wire para cadeias compridas de sensores de temperatura.
+tr-buses.c4.viz.l.t	I²C
+tr-buses.c4.viz.l.items.0	2 fios
+tr-buses.c4.viz.l.items.1	vários dispositivos
+tr-buses.c4.viz.l.items.2	até ~400 kHz, tipicamente
+tr-buses.c4.viz.r.t	SPI
+tr-buses.c4.viz.r.items.0	4+ fios
+tr-buses.c4.viz.r.items.1	um CS por dispositivo
+tr-buses.c4.viz.r.items.2	dezenas de MHz
+tr-buses.c5.title	Conflitos de endereços
+tr-buses.c5.text	Dois dispositivos I²C com o mesmo endereço não podem partilhar um barramento. Muitas placas têm um jumper para mudar o endereço, ou podes usar um multiplexador I²C.
+tr-buses.c5.viz.items.0.w	dois sensores em 0x76
+tr-buses.c5.viz.items.0.r	passa um para 0x77 com o jumper de endereço
+tr-buses.c5.viz.items.1.w	o conflito continua
+tr-buses.c5.viz.items.1.r	junta um multiplexador I²C
+tr-buses.c6.title	Scanner I²C
+tr-buses.c6.text	Quando um dispositivo I²C não responde, corre um sketch de scanner que testa todos os endereços e lista os que respondem. Sem resposta, normalmente o problema é a ligação, a alimentação ou faltarem as pull-ups.
+tr-buses.c6.viz.items.0	Verificar alimentação e massa
+tr-buses.c6.viz.items.1	SDA e SCL não estão trocados?
+tr-buses.c6.viz.items.2	Há pull-ups?
+tr-buses.c6.viz.items.3	Correr um scanner
+tr-buses.c7.title	Comprimento do cabo
+tr-buses.c7.text	O I²C foi pensado para ligações curtas numa só placa; a partir de cerca de um metro torna-se pouco fiável. Para distâncias maiores usa RS-485, CAN ou um extensor de barramento diferencial.
+tr-buses.c7.viz.unit	comprimento máx. típico (m)
+tr-buses.c7.viz.items.0.l	I²C
+tr-buses.c7.viz.items.1.l	SPI
+tr-buses.c7.viz.items.2.l	UART (TTL)
+tr-buses.c7.viz.items.3.l	RS-485
+tr-buses.c8.title	RS-485 e Modbus
+tr-buses.c8.text	O RS-485 envia os dados como a diferença entre dois fios, o que rejeita o ruído em cabos compridos. Equipamentos industriais, contadores de energia e inversores solares falam muitas vezes Modbus sobre RS-485.
+tr-buses.c8.viz.steps.0	UART do microcontrolador
+tr-buses.c8.viz.steps.1	Transceiver RS-485
+tr-buses.c8.viz.steps.2	Par entrançado até 1.2 km
+tr-buses.c8.viz.steps.3	Contador ou inversor
+tr-buses.c9.title	Analisadores lógicos
+tr-buses.c9.text	Um analisador lógico USB barato grava os bits num barramento e descodifica-os em bytes legíveis, mostrando exatamente o que está a ser enviado. É a forma mais rápida de depurar um sensor teimoso.
+tr-buses.c9.viz.steps.0	Prender ao SDA e SCL
+tr-buses.c9.viz.steps.1	Gravar
+tr-buses.c9.viz.steps.2	Descodificar I²C
+tr-buses.c9.viz.steps.3	Ver endereços e bytes
+tr-wireless.title	Ligações sem fios
+tr-wireless.summary	Wi-Fi, Bluetooth, Zigbee e LoRa comparados.
+tr-wireless.q0.q	O que serve para um sensor a bateria que envia uma leitura a cada 10 minutos a 5 km de distância?
+tr-wireless.q0.o0	Wi-Fi
+tr-wireless.q0.o1	Bluetooth
+tr-wireless.q0.o2	LoRa
+tr-wireless.q0.x	O LoRa oferece longo alcance com consumo muito baixo.
+tr-wireless.q1.q	Numa rede mesh Zigbee, o que aumenta o alcance?
+tr-wireless.q1.o0	Baterias maiores
+tr-wireless.q1.o1	Dispositivos ligados à corrente que retransmitem as mensagens
+tr-wireless.q1.o2	Frequências mais altas
+tr-wireless.q1.x	Cada router retransmite os pacotes.
+tr-wireless.q2.q	Que frequência usa o LoRa na Europa?
+tr-wireless.q2.o0	2.4 GHz
+tr-wireless.q2.o1	868 MHz
+tr-wireless.q2.o2	5 GHz
+tr-wireless.q2.x	A banda da UE é 868 MHz.
+tr-wireless.c0.title	O triângulo dos compromissos
+tr-wireless.c0.text	Todas as tecnologias sem fios equilibram alcance, débito e consumo. Não consegues maximizar os três: longo alcance e baixo consumo significam muito poucos dados.
+tr-wireless.c0.viz.l.t	Débito elevado
+tr-wireless.c0.viz.l.items.0	Wi-Fi
+tr-wireless.c0.viz.l.items.1	vídeo e ficheiros
+tr-wireless.c0.viz.l.items.2	gasta muita energia
+tr-wireless.c0.viz.r.t	Longo alcance, baixo consumo
+tr-wireless.c0.viz.r.items.0	LoRa
+tr-wireless.c0.viz.r.items.1	mensagens minúsculas
+tr-wireless.c0.viz.r.items.2	anos com uma bateria
+tr-wireless.c1.title	Wi-Fi
+tr-wireless.c1.text	O Wi-Fi oferece alta velocidade e liga-se diretamente à tua rede e à internet, mas consome muita energia. Bom para dispositivos ligados à corrente, como câmaras e tomadas inteligentes.
+tr-wireless.c1.viz.items.0.v	2.4 GHz
+tr-wireless.c1.viz.items.0.l	alcance
+tr-wireless.c1.viz.items.1.v	5 GHz
+tr-wireless.c1.viz.items.1.l	velocidade
+tr-wireless.c1.viz.items.2.v	~100–250 mA
+tr-wireless.c1.viz.items.2.l	ESP32 a transmitir
+tr-wireless.c2.title	Bluetooth Low Energy
+tr-wireless.c2.text	O BLE envia pequenas quantidades de dados a curtas distâncias com muito pouca energia. Pulseiras de fitness, sensores e beacons usam-no, muitas vezes durante um ano ou mais com uma pilha de botão.
+tr-wireless.c2.viz.items.0.a	alcance
+tr-wireless.c2.viz.items.0.b	~10–50 m em interiores
+tr-wireless.c2.viz.items.1.a	consumo
+tr-wireless.c2.viz.items.1.b	pilha de botão dura meses
+tr-wireless.c2.viz.items.2.a	dados
+tr-wireless.c2.viz.items.2.b	pacotes pequenos
+tr-wireless.c3.title	Zigbee e Thread
+tr-wireless.c3.text	Redes mesh para casas inteligentes: cada dispositivo ligado à corrente retransmite mensagens, aumentando o alcance. Precisam de um hub ou coordenador, e os sensores a bateria duram anos.
+tr-wireless.c3.viz.steps.0	Sensor a bateria
+tr-wireless.c3.viz.steps.1	Dispositivo mais perto retransmite
+tr-wireless.c3.viz.steps.2	Saltos na mesh
+tr-wireless.c3.viz.steps.3	Hub ou coordenador
+tr-wireless.c4.title	LoRa
+tr-wireless.c4.text	O LoRa usa um sinal especial do tipo chirp para chegar a vários quilómetros com uma potência minúscula. Os débitos são de apenas centenas de bits a alguns kilobits por segundo: perfeito para leituras ocasionais de sensores em locais remotos.
+tr-wireless.c4.viz.unit	alcance típico (km, campo aberto)
+tr-wireless.c4.viz.items.0.l	Wi-Fi
+tr-wireless.c4.viz.items.1.l	BLE
+tr-wireless.c4.viz.items.2.l	Zigbee
+tr-wireless.c4.viz.items.3.l	LoRa
+tr-wireless.c5.title	LoRa vs LoRaWAN
+tr-wireless.c5.text	O LoRa é o rádio. O LoRaWAN é um protocolo de rede com gateways e servidores, como a The Things Network. Um LoRa ponto a ponto entre duas placas não precisa de rede nenhuma.
+tr-wireless.c5.viz.l.t	LoRa ponto a ponto
+tr-wireless.c5.viz.l.items.0	duas placas falam diretamente
+tr-wireless.c5.viz.l.items.1	simples
+tr-wireless.c5.viz.l.items.2	sem rede
+tr-wireless.c5.viz.r.t	LoRaWAN
+tr-wireless.c5.viz.r.items.0	gateways e servidores
+tr-wireless.c5.viz.r.items.1	muitos dispositivos
+tr-wireless.c5.viz.r.items.2	redes partilhadas
+tr-wireless.c6.title	Frequências na Europa
+tr-wireless.c6.text	Na Europa, o LoRa usa a banda livre de licença de 868 MHz, com limites de duty cycle (muitas vezes 1%), por isso cada dispositivo só pode transmitir durante uma pequena parte do tempo.
+tr-wireless.c6.viz.items.0.v	868 MHz
+tr-wireless.c6.viz.items.0.l	banda LoRa na UE
+tr-wireless.c6.viz.items.1.l	limite típico de duty cycle
+tr-wireless.c6.viz.items.2.v	25 mW
+tr-wireless.c6.viz.items.2.l	potência máx. típica
+tr-wireless.c7.title	A antena conta
+tr-wireless.c7.text	Uma boa antena, montada no alto e longe de metal, muitas vezes duplica o alcance de forma mais barata do que mais potência. Nunca transmitas sem uma antena ligada: pode danificar o rádio.
+tr-wireless.c7.viz.items.0	Montá-la no alto
+tr-wireless.c7.viz.items.1	Longe de metal
+tr-wireless.c7.viz.items.2	Usar a banda de frequência certa
+tr-wireless.c7.viz.items.3	Nunca transmitir sem antena
+tr-wireless.c8.title	Linha de vista
+tr-wireless.c8.text	As ondas de rádio a estas frequências são bloqueadas por colinas, edifícios e água. No campo, subir a antena uns metros pode transformar a ausência de sinal numa ligação sólida.
+tr-wireless.c8.viz.steps.0	Antena num muro baixo
+tr-wireless.c8.viz.steps.1	Uma colina bloqueia
+tr-wireless.c8.viz.steps.2	Subir a antena num mastro
+tr-wireless.c8.viz.steps.3	Linha de vista livre
+tr-wireless.c9.title	IoT celular
+tr-wireless.c9.text	Onde não há Wi-Fi nem gateway, os módulos LTE-M e NB-IoT enviam pequenas quantidades de dados pela rede móvel com baixo consumo, por uma mensalidade de cartão SIM.
+tr-wireless.c9.viz.items.0.a	LTE-M
+tr-wireless.c9.viz.items.0.b	móvel, dados moderados
+tr-wireless.c9.viz.items.1.a	NB-IoT
+tr-wireless.c9.viz.items.1.b	cobertura profunda, poucos dados
+tr-wireless.c9.viz.items.2.a	SIM
+tr-wireless.c9.viz.items.2.b	custo mensal
+tr-esphome.title	ESP32 e ESPHome
+tr-esphome.summary	Construir dispositivos de casa inteligente sem escrever muito código.
+tr-esphome.q0.q	O que usa o ESPHome para descrever um dispositivo?
+tr-esphome.q0.o0	Uma folha de cálculo
+tr-esphome.q0.o1	Um ficheiro de configuração YAML
+tr-esphome.q0.o2	Uma fotografia
+tr-esphome.q0.x	Declaras os componentes em YAML.
+tr-esphome.q1.q	Porque evitar os pinos ADC2 para leituras analógicas num ESP32?
+tr-esphome.q1.o0	São só digitais
+tr-esphome.q1.o1	Não podem ser lidos com o Wi-Fi ativo
+tr-esphome.q1.o2	São de 5 V
+tr-esphome.q1.x	O Wi-Fi usa o ADC2 internamente.
+tr-esphome.q2.q	O que dá o deep sleep a um dispositivo a bateria?
+tr-esphome.q2.o0	Wi-Fi mais rápido
+tr-esphome.q2.o1	Consumo de microamperes entre leituras
+tr-esphome.q2.o2	Mais pinos GPIO
+tr-esphome.q2.x	O chip desliga-se quase por completo.
+tr-esphome.c0.title	O ESP32
+tr-esphome.c0.text	Um microcontrolador barato com Wi-Fi e Bluetooth integrados, dois núcleos até 240 MHz e dezenas de pinos GPIO. É o coração de inúmeros dispositivos DIY de casa inteligente.
+tr-esphome.c0.viz.items.0.v	240 MHz
+tr-esphome.c0.viz.items.0.l	CPU dual-core
+tr-esphome.c0.viz.items.1.v	Wi-Fi + BLE
+tr-esphome.c0.viz.items.1.l	integrados
+tr-esphome.c0.viz.items.2.l	placa típica
+tr-esphome.c1.title	O ESPHome numa ideia
+tr-esphome.c1.text	Em vez de escrever código C++, descreves o dispositivo num ficheiro YAML: que placa, que sensores em que pinos. O ESPHome gera o firmware e liga-o ao Home Assistant.
+tr-esphome.c1.viz.steps.0	Ficheiro YAML
+tr-esphome.c1.viz.steps.1	ESPHome compila
+tr-esphome.c1.viz.steps.2	Gravar na placa
+tr-esphome.c1.viz.steps.3	Aparece no Home Assistant
+tr-esphome.c2.title	Um sensor de temperatura em YAML
+tr-esphome.c2.text	Umas poucas linhas descrevem a placa, o Wi-Fi e um sensor: platform dht, pin GPIO4, name "Temperatura da sala", update interval 60 s. É o programa todo.
+tr-esphome.c2.viz.items.0	esphome: name
+tr-esphome.c2.viz.items.1	esp32: board
+tr-esphome.c2.viz.items.2	wifi: credenciais
+tr-esphome.c2.viz.items.3	sensor: platform e pin
+tr-esphome.c2.viz.items.4	update_interval: 60s
+tr-esphome.c3.title	Atualizações sem fios (OTA)
+tr-esphome.c3.text	Depois da primeira gravação por USB, o ESPHome atualiza os dispositivos por Wi-Fi. Muda o YAML, carrega em instalar, e o dispositivo no teto atualiza-se sozinho.
+tr-esphome.c3.viz.steps.0	Editar o YAML
+tr-esphome.c3.viz.steps.1	Compilar
+tr-esphome.c3.viz.steps.2	Enviar por Wi-Fi
+tr-esphome.c3.viz.steps.3	Reinicia com o novo firmware
+tr-esphome.c4.title	API nativa
+tr-esphome.c4.text	Os dispositivos ESPHome falam com o Home Assistant através de uma API nativa rápida e cifrada. As entidades aparecem automaticamente, e as automações podem correr no próprio dispositivo mesmo que o Home Assistant esteja em baixo.
+tr-esphome.c4.viz.l.t	API nativa
+tr-esphome.c4.viz.l.items.0	deteção automática
+tr-esphome.c4.viz.l.items.1	cifrada
+tr-esphome.c4.viz.l.items.2	baixa latência
+tr-esphome.c4.viz.r.t	MQTT
+tr-esphome.c4.viz.r.items.0	funciona com qualquer broker
+tr-esphome.c4.viz.r.items.1	mais configuração
+tr-esphome.c5.title	Dispositivos UART: o exemplo do AC
+tr-esphome.c5.text	O ESPHome consegue falar com eletrodomésticos por UART. Projetos como o MitsubishiCN105ESPHome ligam um ESP32 à porta CN105 de um ar condicionado Mitsubishi para controlo local, sem a cloud.
+tr-esphome.c5.viz.steps.0	ESP32
+tr-esphome.c5.viz.steps.1	UART à porta CN105
+tr-esphome.c5.viz.steps.2	Componente ESPHome
+tr-esphome.c5.viz.steps.3	Controlo local no Home Assistant
+tr-esphome.c6.title	Escolher bem os pinos
+tr-esphome.c6.text	Alguns pinos do ESP32 são só de entrada (34–39), alguns afetam o arranque (0, 2, 12, 15), e os pinos ADC2 não podem ser usados para leituras analógicas com o Wi-Fi ligado. Consulta um pinout antes de fazer as ligações.
+tr-esphome.c6.viz.items.0.w	sensor analógico num pino ADC2
+tr-esphome.c6.viz.items.0.r	usa um pino ADC1 (32–39)
+tr-esphome.c6.viz.items.1.w	botão no GPIO12 impede o arranque
+tr-esphome.c6.viz.items.1.r	muda-o para um pino seguro
+tr-esphome.c7.title	Deep sleep no ESPHome
+tr-esphome.c7.text	Os dispositivos a bateria podem acordar, fazer uma leitura, enviá-la e voltar ao deep sleep durante minutos. Um ESP32 em deep sleep consome microamperes em vez de dezenas de miliamperes.
+tr-esphome.c7.viz.steps.0	Acordar
+tr-esphome.c7.viz.steps.1	Ler o sensor
+tr-esphome.c7.viz.steps.2	Enviar por Wi-Fi
+tr-esphome.c7.viz.steps.3	Deep sleep 10 min
+tr-esphome.c8.title	Variantes do ESP32
+tr-esphome.c8.text	A família não para de crescer: o ESP32-S3 acrescenta instruções de IA e USB, o ESP32-C3 é uma versão RISC-V de baixo custo, o ESP32-C6 junta Wi-Fi 6 e rádio Thread/Zigbee.
+tr-esphome.c8.viz.items.0.a	ESP32
+tr-esphome.c8.viz.items.0.b	dual-core clássico
+tr-esphome.c8.viz.items.1.a	S3
+tr-esphome.c8.viz.items.1.b	USB, câmara, IA
+tr-esphome.c8.viz.items.2.a	C3
+tr-esphome.c8.viz.items.2.b	RISC-V barato
+tr-esphome.c8.viz.items.3.a	C6
+tr-esphome.c8.viz.items.3.b	Wi-Fi 6, Thread, Zigbee
+tr-esphome.c9.title	Local e privado
+tr-esphome.c9.text	Os dispositivos ESPHome funcionam inteiramente na tua rede, sem conta na cloud. Se a internet for abaixo, os sensores e interruptores continuam a funcionar.
+tr-esphome.c9.viz.items.0	Sem depender da cloud
+tr-esphome.c9.viz.items.1	Os dados ficam em casa
+tr-esphome.c9.viz.items.2	Funciona sem internet
+tr-esphome.c9.viz.items.3	Firmware open source
+tr-proto.title	Da breadboard à PCB
+tr-proto.summary	Prototipar, soldar e tornar tudo permanente.
+tr-proto.q0.q	Onde deves aplicar a solda?
+tr-proto.q0.o0	Na ponta do ferro
+tr-proto.q0.o1	Na junta já aquecida
+tr-proto.q0.o2	Antes de aquecer o que quer que seja
+tr-proto.q0.x	A junta tem de estar quente o suficiente para a derreter.
+tr-proto.q1.q	Uma soldadura baça e irregular é normalmente…
+tr-proto.q1.o0	Perfeita
+tr-proto.q1.o1	Uma soldadura fria
+tr-proto.q1.o2	Uma ponte
+tr-proto.q1.x	Não aqueceu o suficiente.
+tr-proto.q2.q	Que ferramenta gratuita serve para desenhar PCBs?
+tr-proto.q2.o0	Excel
+tr-proto.q2.o1	KiCad
+tr-proto.q2.o2	Photoshop
+tr-proto.q2.x	O KiCad trata do esquema e do layout.
+tr-proto.c0.title	Breadboards
+tr-proto.c0.text	Uma breadboard permite montar circuitos sem soldar. Os furos de cada fila curta de cinco estão ligados entre si; as linhas compridas nos lados levam a alimentação e a massa.
+tr-proto.c0.viz.items.0.a	filas curtas
+tr-proto.c0.viz.items.0.b	5 furos ligados
+tr-proto.c0.viz.items.1.a	linhas laterais
+tr-proto.c0.viz.items.1.b	alimentação e massa
+tr-proto.c0.viz.items.2.a	canal central
+tr-proto.c0.viz.items.2.b	para chips
+tr-proto.c1.title	Fios jumper e maus contactos
+tr-proto.c1.text	As breadboards são ótimas para testar, mas os contactos ficam folgados e acrescentam resistência. Se um circuito se portar de forma estranha, volta a encaixar os fios antes de reescreveres o código.
+tr-proto.c1.viz.items.0	Ver se todos os fios estão encaixados
+tr-proto.c1.viz.items.1	Fios curtos
+tr-proto.c1.viz.items.2	Usar as linhas para a alimentação
+tr-proto.c1.viz.items.3	Nada de correntes altas
+tr-proto.c2.title	Bases da soldadura
+tr-proto.c2.text	Aquece a junta (pad e fio ao mesmo tempo) com o ferro e depois aplica a solda na junta, não no ferro. Uma boa soldadura é brilhante e tem a forma de um pequeno vulcão.
+tr-proto.c2.viz.steps.0	Limpar a ponta
+tr-proto.c2.viz.steps.1	Aquecer pad e terminal juntos
+tr-proto.c2.viz.steps.2	Aplicar solda na junta
+tr-proto.c2.viz.steps.3	Tirar a solda, depois o ferro
+tr-proto.c3.title	Temperatura do ferro
+tr-proto.c3.text	Para a solda sem chumbo comum, cerca de 330–370 °C funciona bem; a solda com chumbo derrete a uma temperatura mais baixa. Demasiado frio dá soldaduras baças e granuladas; demasiado quente queima os pads e o fluxo.
+tr-proto.c3.viz.unit	°C
+tr-proto.c3.viz.items.0.l	solda com chumbo
+tr-proto.c3.viz.items.1.l	sem chumbo
+tr-proto.c3.viz.items.2.l	quente demais
+tr-proto.c4.title	Más soldaduras
+tr-proto.c4.text	Uma soldadura fria é baça e irregular e pode rachar. Uma ponte liga dois pads por engano. Solda a menos deixa uma junta fraca. Malha de dessoldar ou uma bomba resolvem a maior parte dos erros.
+tr-proto.c4.viz.items.0.a	soldadura fria
+tr-proto.c4.viz.items.0.b	baça, irregular
+tr-proto.c4.viz.items.1.a	ponte
+tr-proto.c4.viz.items.1.b	dois pads em curto
+tr-proto.c4.viz.items.2.a	junta seca
+tr-proto.c4.viz.items.2.b	pouca solda
+tr-proto.c4.viz.items.3.a	solução
+tr-proto.c4.viz.items.3.b	malha ou bomba
+tr-proto.c5.title	Placa perfurada
+tr-proto.c5.text	A placa perfurada (stripboard) torna um projeto permanente sem desenhar uma PCB: os componentes são soldados numa grelha e ligados com fio ou pistas de cobre.
+tr-proto.c5.viz.l.t	Breadboard
+tr-proto.c5.viz.l.items.0	sem soldar
+tr-proto.c5.viz.l.items.1	mudanças rápidas
+tr-proto.c5.viz.l.items.2	pouco fiável a longo prazo
+tr-proto.c5.viz.r.t	Placa perfurada
+tr-proto.c5.viz.r.items.0	soldada
+tr-proto.c5.viz.r.items.1	permanente
+tr-proto.c5.viz.r.items.2	montagens únicas
+tr-proto.c6.title	Desenhar uma PCB
+tr-proto.c6.text	Ferramentas gratuitas como o KiCad permitem desenhar o esquema e depois o layout da placa. Envia os ficheiros a um fabricante de PCBs e as placas chegam em cerca de uma semana por alguns euros.
+tr-proto.c6.viz.steps.0	Esquema no KiCad
+tr-proto.c6.viz.steps.1	Layout da placa
+tr-proto.c6.viz.steps.2	Ficheiros Gerber
+tr-proto.c6.viz.steps.3	PCB fabricada
+tr-proto.c7.title	Componentes de montagem em superfície
+tr-proto.c7.text	A maior parte dos componentes modernos é de montagem em superfície (SMD): minúsculos, soldados sobre pads em vez de atravessarem furos. Tamanhos como 0805 dão para soldar à mão; os mais pequenos precisam de ar quente ou de um forno de refusão.
+tr-proto.c7.viz.unit	tamanho (mm, comprimento)
+tr-proto.c8.title	Caixas
+tr-proto.c8.text	Os projetos precisam de uma caixa: caixas com classificação IP para o exterior, caixas impressas em 3D para medidas à medida. Prevê bucins para os cabos, ventilação e a colocação da antena fora de caixas metálicas.
+tr-proto.c8.viz.items.0	IP65+ para o exterior
+tr-proto.c8.viz.items.1	Bucins para cabos
+tr-proto.c8.viz.items.2	Ventilação para o calor
+tr-proto.c8.viz.items.3	Antena fora do metal
+tr-proto.c9.title	Segurança ao soldar
+tr-proto.c9.text	Usa um suporte para o ferro, areja o espaço ou usa extração de fumos (os fumos do fluxo irritam os pulmões), lava as mãos depois de mexer em solda e usa proteção para os olhos ao cortar terminais.
+tr-proto.c9.viz.items.0	Ferro no suporte
+tr-proto.c9.viz.items.1	Extração de fumos ou janela aberta
+tr-proto.c9.viz.items.2	Lavar as mãos
+tr-proto.c9.viz.items.3	Proteção ocular ao cortar
+tr-logic.title	Lógica e binário
+tr-logic.summary	Bits, portas lógicas e como os chips tomam decisões.
+tr-logic.q0.q	Quanto é 1101 em binário no sistema decimal?
+tr-logic.q0.o0	11
+tr-logic.q0.o1	13
+tr-logic.q0.o2	1,101
+tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
+tr-logic.q1.q	Uma porta AND com entradas 1 e 0 dá na saída…
+tr-logic.q1.o0	1
+tr-logic.q1.o1	0
+tr-logic.q1.x	A AND precisa de todas as entradas a 1.
+tr-logic.q2.q	0xFF em decimal é…
+tr-logic.q2.o0	15
+tr-logic.q2.o1	255
+tr-logic.q2.o2	256
+tr-logic.q2.x	Dois F hexadecimais são oito bits a 1 = 255.
+tr-logic.c0.title	Bits
+tr-logic.c0.text	A eletrónica digital representa tudo com bits: 0 ou 1, tensão baixa ou alta. Oito bits fazem um byte, que pode guardar 256 valores diferentes.
+tr-logic.c0.viz.items.0.v	1 bit
+tr-logic.c0.viz.items.0.l	0 ou 1
+tr-logic.c0.viz.items.1.v	8 bits

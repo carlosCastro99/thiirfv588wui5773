@@ -498,3 +498,533 @@ me-energy.q2.o2	60 J
 me-energy.q2.x	1,000 W × 3,600 s.
 me-energy.c0.title	Trabalho
 me-energy.c0.text	Há trabalho quando uma força desloca algo: força vezes distância. Levanta um saco de 10 kg 1 m e fazes cerca de 98 J de trabalho.
+me-energy.c0.viz.f	W = F × d
+me-energy.c0.viz.items.0.s	F
+me-energy.c0.viz.items.0.m	força (N)
+me-energy.c0.viz.items.1.s	d
+me-energy.c0.viz.items.1.m	distância (m)
+me-energy.c0.viz.items.2.s	W
+me-energy.c0.viz.items.2.m	joules (J)
+me-energy.c1.title	Energia potencial
+me-energy.c1.text	Elevar algo armazena energia que pode ser libertada quando cai. As barragens hidroelétricas aproveitam isto com milhões de toneladas de água.
+me-energy.c1.example.0	1 tonelada de água a cair 100 m
+me-energy.c1.example.1	1,000 × 9.81 × 100
+me-energy.c1.example.2	≈ 0.98 MJ ≈ 0.27 kWh
+me-energy.c1.viz.f	E = m × g × h
+me-energy.c1.viz.items.0.s	m
+me-energy.c1.viz.items.0.m	massa (kg)
+me-energy.c1.viz.items.1.s	g
+me-energy.c1.viz.items.1.m	9.81 m/s²
+me-energy.c1.viz.items.2.s	h
+me-energy.c1.viz.items.2.m	altura (m)
+me-energy.c2.title	Energia cinética
+me-energy.c2.text	Os objetos em movimento transportam energia que cresce com o quadrado da velocidade. Duplica a velocidade e a energia quadruplica, e é por isso que a velocidade conta tanto nos acidentes.
+me-energy.c2.example.0	Carro de 1,500 kg a 50 km/h vs 100 km/h
+me-energy.c2.example.1	145 kJ vs 579 kJ
+me-energy.c2.example.2	4× a energia
+me-energy.c2.viz.f	E = ½ × m × v²
+me-energy.c2.viz.items.0.s	m
+me-energy.c2.viz.items.0.m	massa
+me-energy.c2.viz.items.1.s	v
+me-energy.c2.viz.items.1.m	velocidade (m/s)
+me-energy.c3.title	Potência
+me-energy.c3.text	A potência é a rapidez com que se realiza trabalho: joules por segundo, ou watts. Um ciclista forte aguenta cerca de 200–300 W; o motor de um carro dá dezenas a centenas de kW.
+me-energy.c3.viz.unit	watts (contínuos, aprox.)
+me-energy.c3.viz.items.0.l	Pessoa a andar
+me-energy.c3.viz.items.1.l	Ciclista em forma
+me-energy.c3.viz.items.2.l	Cavalo
+me-energy.c3.viz.items.3.l	Carro pequeno
+me-energy.c4.title	Cavalo-vapor
+me-energy.c4.text	James Watt definiu o cavalo-vapor para vender máquinas a vapor: cerca de 746 W na versão imperial (hp). O cavalo-vapor métrico (cv em Portugal) tem cerca de 735 W.
+me-energy.c4.viz.items.0.a	1 hp
+me-energy.c4.viz.items.0.b	746 W
+me-energy.c4.viz.items.1.a	1 cv (métrico)
+me-energy.c4.viz.items.1.b	735 W
+me-energy.c4.viz.items.2.a	100 kW
+me-energy.c4.viz.items.2.b	cerca de 136 cv
+me-energy.c5.title	Rendimento
+me-energy.c5.text	Nenhuma máquina converte toda a energia que recebe em trabalho útil; parte transforma-se em calor ou ruído. O rendimento é a energia útil a dividir pela energia fornecida.
+me-energy.c5.viz.unit	% de rendimento (típico)
+me-energy.c5.viz.items.0.l	Lâmpada incandescente
+me-energy.c5.viz.items.1.l	Motor a gasolina
+me-energy.c5.viz.items.2.l	Motor elétrico
+me-energy.c5.viz.items.3.l	Grande transformador
+me-energy.c6.title	A energia conserva-se
+me-energy.c6.text	A energia muda de forma mas o total mantém-se. Uma montanha-russa a descer transforma energia potencial em cinética e depois o inverso, menos as perdas por atrito.
+me-energy.c6.viz.steps.0	Topo da subida: energia potencial
+me-energy.c6.viz.steps.1	A descer: energia cinética
+me-energy.c6.viz.steps.2	A subir: volta a potencial
+me-energy.c6.viz.steps.3	O atrito transforma parte em calor
+me-energy.c7.title	Joules e kWh
+me-energy.c7.text	Os engenheiros usam joules; as faturas da eletricidade usam kWh. Um kWh são 3.6 milhões de joules, a energia de um aquecedor de 1 kW ligado durante uma hora.
+me-energy.c7.viz.f	1 kWh = 3.6 MJ
+me-energy.c7.viz.items.0.s	1 kW
+me-energy.c7.viz.items.0.m	potência
+me-energy.c7.viz.items.1.s	1 h
+me-energy.c7.viz.items.1.m	3,600 s
+me-energy.c8.title	A energia dos combustíveis
+me-energy.c8.text	Um litro de gasolina contém cerca de 9 kWh de energia química, e é por isso que os combustíveis líquidos foram tão difíceis de bater. As baterias de lítio guardam muito menos por quilo, mas as motorizações elétricas usam a energia de forma muito mais eficiente.
+me-energy.c8.viz.unit	kWh por kg (aprox.)
+me-energy.c8.viz.items.0.l	Bateria de iões de lítio
+me-energy.c8.viz.items.1.l	Madeira
+me-energy.c8.viz.items.2.l	Gasolina
+me-energy.c8.viz.items.3.l	Hidrogénio
+me-energy.c9.title	Molas
+me-energy.c9.text	Uma mola armazena energia quando é esticada ou comprimida. A sua força é proporcional ao deslocamento (lei de Hooke), o que se aproveita em suspensões, balanças e relógios.
+me-energy.c9.viz.f	F = k × x
+me-energy.c9.viz.items.0.s	k
+me-energy.c9.viz.items.0.m	rigidez da mola (N/m)
+me-energy.c9.viz.items.1.s	x
+me-energy.c9.viz.items.1.m	deslocamento (m)
+me-fluids.title	Fluidos e hidráulica
+me-fluids.summary	Pressão, impulsão e a força dos líquidos.
+me-fluids.q0.q	Quanto aumenta, mais ou menos, a pressão por cada 10 m de profundidade na água?
+me-fluids.q0.o0	0.1 bar
+me-fluids.q0.o1	1 bar
+me-fluids.q0.o2	10 bar
+me-fluids.q0.x	Cerca de 1 bar a cada 10 m.
+me-fluids.q1.q	Um macaco hidráulico com uma relação de áreas de 20 transforma 50 N em…
+me-fluids.q1.o0	70 N
+me-fluids.q1.o1	1,000 N
+me-fluids.q1.o2	2.5 N
+me-fluids.q1.x	50 × 20 = 1,000 N.
+me-fluids.q2.q	Porque é que um navio de aço flutua?
+me-fluids.q2.o0	O aço é leve
+me-fluids.q2.o1	A sua forma desloca um peso de água maior do que o seu
+me-fluids.q2.o2	O ar empurra-o para cima
+me-fluids.q2.x	Princípio de Arquimedes.
+me-fluids.c0.title	Pressão
+me-fluids.c0.text	A pressão é uma força distribuída por uma área. Um salto agulha pressiona o chão com muito mais força do que a pata de um elefante, porque a área é minúscula.
+me-fluids.c0.viz.f	p = F ÷ A
+me-fluids.c0.viz.items.0.s	p
+me-fluids.c0.viz.items.0.m	pascals (N/m²)
+me-fluids.c0.viz.items.1.s	F
+me-fluids.c0.viz.items.1.m	força
+me-fluids.c0.viz.items.2.s	A
+me-fluids.c0.viz.items.2.m	área
+me-fluids.c1.title	A pressão na água
+me-fluids.c1.text	A pressão da água aumenta com a profundidade, cerca de 1 bar a cada 10 metros. Os mergulhadores sentem-na nos ouvidos; as barragens são mais grossas em baixo pela mesma razão.
+me-fluids.c1.viz.f	p = ρ × g × h
+me-fluids.c1.viz.items.0.s	ρ
+me-fluids.c1.viz.items.0.m	1,000 kg/m³
+me-fluids.c1.viz.items.1.s	g
+me-fluids.c1.viz.items.2.s	h
+me-fluids.c1.viz.items.2.m	profundidade → 10 m ≈ 1 bar
+me-fluids.c2.title	Pressão atmosférica
+me-fluids.c2.text	O ar acima de nós pressiona com cerca de 1 bar (101 kPa) ao nível do mar, perto de 10 toneladas em cada metro quadrado. Não damos por isso porque empurra por igual de todos os lados.
+me-fluids.c2.viz.unit	bar (aprox.)
+me-fluids.c2.viz.items.0.l	Cume do Evereste
+me-fluids.c2.viz.items.1.l	Lisboa
+me-fluids.c2.viz.items.2.l	10 m debaixo de água
+me-fluids.c2.viz.items.3.l	Pneu de carro
+me-fluids.c3.title	Princípio de Pascal
+me-fluids.c3.text	A pressão num líquido fechado transmite-se por igual em todas as direções. Empurra um êmbolo pequeno e um êmbolo grande sente a mesma pressão numa área maior, o que dá uma força maior.
+me-fluids.c3.example.0	100 N em 1 cm², saída de 50 cm²
+me-fluids.c3.example.1	100 × 50
+me-fluids.c3.example.2	= 5,000 N levantados
+me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
+me-fluids.c3.viz.items.0.s	F₁
+me-fluids.c3.viz.items.0.m	empurrão pequeno
+me-fluids.c3.viz.items.1.s	A₂ ÷ A₁
+me-fluids.c3.viz.items.1.m	relação de áreas
+me-fluids.c3.viz.items.2.s	F₂
+me-fluids.c3.viz.items.2.m	grande elevação
+me-fluids.c4.title	Hidráulica por todo o lado
+me-fluids.c4.text	Travões de carros, escavadoras, elevadores e prensas usam fluido hidráulico para multiplicar a força e transmiti-la por tubos flexíveis.
+me-fluids.c4.viz.items.0	Travões de carros
+me-fluids.c4.viz.items.1	Braços de escavadoras
+me-fluids.c4.viz.items.2	Elevadores de oficina
+me-fluids.c4.viz.items.3	Prensas hidráulicas
+me-fluids.c4.viz.items.4	Comandos de aviões
+me-fluids.c5.title	Impulsão
+me-fluids.c5.text	Um objeto num fluido é empurrado para cima por uma força igual ao peso do fluido que desloca (Arquimedes). Se for maior do que o seu próprio peso, flutua. Os navios de aço flutuam porque a sua forma desloca muita água.
+me-fluids.c5.viz.steps.0	O objeto desloca água
+me-fluids.c5.viz.steps.1	Impulsão = peso da água deslocada
+me-fluids.c5.viz.steps.2	Impulsão
+me-fluids.c5.viz.steps.3	peso: flutua
+me-fluids.c6.title	Escoamento em tubos
+me-fluids.c6.text	O caudal é a velocidade vezes a área do tubo. Aperta uma mangueira e a água acelera. Os tubos estreitos precisam de mais pressão para empurrar o mesmo caudal, por causa do atrito.
+me-fluids.c6.viz.f	Q = v × A
+me-fluids.c6.viz.items.0.s	Q
+me-fluids.c6.viz.items.0.m	caudal
+me-fluids.c6.viz.items.1.s	v
+me-fluids.c6.viz.items.1.m	velocidade
+me-fluids.c6.viz.items.2.s	A
+me-fluids.c6.viz.items.2.m	área da secção
+me-fluids.c7.title	Bernoulli
+me-fluids.c7.text	Onde um fluido se move mais depressa, a pressão desce. Isto ajuda a explicar carburadores, pulverizadores e parte de como as asas e as velas geram sustentação.
+me-fluids.c7.viz.l.t	Fluido lento
+me-fluids.c7.viz.l.items.0	pressão maior
+me-fluids.c7.viz.r.t	Fluido rápido
+me-fluids.c7.viz.r.items.0	pressão menor
+me-fluids.c8.title	Sifões
+me-fluids.c8.text	Um sifão faz subir um líquido por cima de um obstáculo e descê-lo até um ponto mais baixo sem bomba, desde que a saída fique abaixo da origem e o tubo comece cheio.
+me-fluids.c8.viz.steps.0	Tubo cheio de líquido
+me-fluids.c8.viz.steps.1	Saída abaixo da origem
+me-fluids.c8.viz.steps.2	A gravidade puxa o lado longo
+me-fluids.c8.viz.steps.3	O fluxo continua
+me-fluids.c9.title	Viscosidade
+me-fluids.c9.text	A viscosidade é a "espessura" de um fluido: o mel é viscoso, a água não. As classes de óleo como 5W-30 descrevem como a viscosidade se comporta a frio (5W) e a quente (30).
+me-fluids.c9.viz.items.0.a	água
+me-fluids.c9.viz.items.0.b	viscosidade baixa
+me-fluids.c9.viz.items.1.a	óleo de motor
+me-fluids.c9.viz.items.1.b	média
+me-fluids.c9.viz.items.2.a	mel
+me-fluids.c9.viz.items.2.b	alta
+me-fluids.c9.viz.items.3.a	5W-30
+me-fluids.c9.viz.items.3.b	classe a frio / a quente
+me-flight.title	Como voam os aviões
+me-flight.summary	Sustentação, resistência, tração e peso.
+me-flight.q0.q	O que acontece numa perda?
+me-flight.q0.o0	O motor para
+me-flight.q0.o1	O escoamento do ar descola da asa e a sustentação cai a pique
+me-flight.q0.o2	O avião acelera
+me-flight.q0.x	Ângulo de ataque demasiado elevado.
+me-flight.q1.q	Duplicar a velocidade multiplica a resistência aerodinâmica por cerca de…
+me-flight.q1.o0	2
+me-flight.q1.o1	4
+me-flight.q1.o2	8
+me-flight.q1.x	A resistência cresce com o quadrado da velocidade.
+me-flight.q2.q	Que superfície de comando faz o avião rolar?
+me-flight.q2.o0	Leme de direção
+me-flight.q2.o1	Leme de profundidade
+me-flight.q2.o2	Ailerons
+me-flight.q2.x	Os ailerons movem-se em sentidos opostos em cada asa.
+me-flight.c0.title	Quatro forças
+me-flight.c0.text	Em voo estável, a sustentação equilibra o peso e a tração equilibra a resistência. Para subir, a sustentação supera o peso; para acelerar, a tração supera a resistência.
+me-flight.c0.viz.l.t	Cima e baixo
+me-flight.c0.viz.l.items.0	sustentação vs peso
+me-flight.c0.viz.r.t	Frente e trás
+me-flight.c0.viz.r.items.0	tração vs resistência
+me-flight.c1.title	Como as asas geram sustentação
+me-flight.c1.text	Uma asa tem uma forma e uma inclinação (ângulo de ataque) que desviam o ar para baixo. Empurrar o ar para baixo empurra a asa para cima (terceira lei de Newton), com pressão mais baixa por cima da asa e mais alta por baixo.
+me-flight.c1.viz.steps.0	Asa inclinada contra o ar
+me-flight.c1.viz.steps.1	Ar desviado para baixo
+me-flight.c1.viz.steps.2	Pressão menor por cima
+me-flight.c1.viz.steps.3	Sustentação para cima
+me-flight.c2.title	A equação da sustentação
+me-flight.c2.text	A sustentação cresce com a densidade do ar, a área da asa e o quadrado da velocidade. É por isso que os aviões precisam de pistas longas em aeroportos quentes e altos, onde o ar é rarefeito.
+me-flight.c2.viz.f	L = ½ × ρ × v² × S × CL
+me-flight.c2.viz.items.0.s	ρ
+me-flight.c2.viz.items.0.m	densidade do ar
+me-flight.c2.viz.items.1.s	v
+me-flight.c2.viz.items.1.m	velocidade
+me-flight.c2.viz.items.2.s	S
+me-flight.c2.viz.items.2.m	área da asa
+me-flight.c2.viz.items.3.s	CL
+me-flight.c2.viz.items.3.m	coef. de sustentação
+me-flight.c3.title	Perda
+me-flight.c3.text	Aumenta demasiado o ângulo de ataque e o escoamento descola da superfície superior. A sustentação cai de repente: é a perda. Os pilotos treinam para a reconhecer e recuperar.
+me-flight.c3.viz.steps.0	Ângulo de ataque excessivo
+me-flight.c3.viz.steps.1	O escoamento descola
+me-flight.c3.viz.steps.2	A sustentação cai a pique
+me-flight.c3.viz.steps.3	Baixar o nariz para recuperar
+me-flight.c4.title	Flaps e slats
+me-flight.c4.text	Na descolagem e na aterragem, os flaps e os slats saem da asa para aumentar a sua área e curvatura, o que dá mais sustentação a baixa velocidade.
+me-flight.c4.viz.l.t	Cruzeiro
+me-flight.c4.viz.l.items.0	asa limpa
+me-flight.c4.viz.l.items.1	baixo arrasto
+me-flight.c4.viz.l.items.2	alta velocidade
+me-flight.c4.viz.r.t	Aterragem
+me-flight.c4.viz.r.items.0	flaps e slats de fora
+me-flight.c4.viz.r.items.1	mais sustentação
+me-flight.c4.viz.r.items.2	aproximação lenta
+me-flight.c5.title	Resistência aerodinâmica
+me-flight.c5.text	A resistência vem do atrito com o ar e da diferença de pressão atrás do objeto. Cresce com o quadrado da velocidade, por isso ir mais depressa custa muito mais combustível.
+me-flight.c5.viz.unit	resistência relativa
+me-flight.c5.viz.items.0.l	100 km/h
+me-flight.c5.viz.items.1.l	200 km/h
+me-flight.c5.viz.items.2.l	300 km/h
+me-flight.c6.title	Motores a jato
+me-flight.c6.text	Um turbofan aspira ar, comprime-o, queima combustível nele e expele o gás quente pela traseira. Nos aviões comerciais, a maior parte da tração vem da grande ventoinha que empurra ar à volta do núcleo.
+me-flight.c6.viz.steps.0	A ventoinha aspira ar
+me-flight.c6.viz.steps.1	O compressor aperta-o
+me-flight.c6.viz.steps.2	Combustão
+me-flight.c6.viz.steps.3	Turbina e escape empurram o avião
+me-flight.c7.title	Porque é que os aviões voam tão alto
+me-flight.c7.text	A cerca de 10–12 km de altitude o ar é rarefeito, por isso a resistência é muito menor e os motores a jato são mais eficientes. As cabinas são pressurizadas para o equivalente a cerca de 2,000 m.
+me-flight.c7.viz.items.0.v	11 km
+me-flight.c7.viz.items.0.l	altitude de cruzeiro típica
+me-flight.c7.viz.items.1.v	−55 °C
+me-flight.c7.viz.items.1.l	ar exterior
+me-flight.c7.viz.items.2.v	~2,000 m
+me-flight.c7.viz.items.2.l	altitude de pressão da cabina
+me-flight.c8.title	Superfícies de comando
+me-flight.c8.text	Os ailerons nas asas fazem o avião rolar, o leme de profundidade na cauda inclina o nariz para cima e para baixo, e o leme de direção vira-o para a esquerda e para a direita.
+me-flight.c8.viz.items.0.a	ailerons
+me-flight.c8.viz.items.0.b	rolamento
+me-flight.c8.viz.items.1.a	profundidade
+me-flight.c8.viz.items.1.b	arfagem
+me-flight.c8.viz.items.2.a	leme
+me-flight.c8.viz.items.2.b	guinada
+me-flight.c8.viz.items.3.a	flaps
+me-flight.c8.viz.items.3.b	mais sustentação
+me-flight.c9.title	Drones
+me-flight.c9.text	Os drones multirrotor não têm asas; geram sustentação com hélices a girar. Dirigem-se acelerando uns motores e abrandando outros, com um controlador de voo a fazer ajustes centenas de vezes por segundo.
+me-flight.c9.viz.steps.0	Giroscópio e acelerómetro
+me-flight.c9.viz.steps.1	Controlador de voo
+me-flight.c9.viz.steps.2	Ajusta cada motor
+me-flight.c9.viz.steps.3	Voo pairado estável
+me-bridges.title	Pontes
+me-bridges.summary	De viga, em arco, suspensas e de tirantes.
+me-bridges.q0.q	Que tipo de ponte suporta as cargas sobretudo à compressão?
+me-bridges.q0.o0	Suspensa
+me-bridges.q0.o1	Em arco
+me-bridges.q0.o2	De tirantes
+me-bridges.q0.x	Os arcos empurram as cargas para os encontros.
+me-bridges.q1.q	A ponte 25 de Abril, em Lisboa, é uma…
+me-bridges.q1.o0	Ponte de viga
+me-bridges.q1.o1	Ponte em arco
+me-bridges.q1.o2	Ponte suspensa
+me-bridges.q1.x	Os cabos principais estão suspensos das torres.
+me-bridges.q2.q	O que destruiu a ponte de Tacoma Narrows em 1940?
+me-bridges.q2.o0	Um sismo
+me-bridges.q2.o1	Oscilações de torção provocadas pelo vento
+me-bridges.q2.o2	A colisão de um navio
+me-bridges.q2.x	Instabilidade aerodinâmica.
+me-bridges.c0.title	Os principais tipos de ponte
+me-bridges.c0.text	As pontes lidam com as cargas de formas diferentes: as vigas fletem, os arcos comprimem, os cabos das suspensas puxam e as torres das pontes de tirantes seguram o tabuleiro com cabos retos.
+me-bridges.c0.viz.root	Pontes
+me-bridges.c0.viz.items.0	Viga
+me-bridges.c0.viz.items.1	Arco
+me-bridges.c0.viz.items.2	Suspensa
+me-bridges.c0.viz.items.3	Tirantes
+me-bridges.c1.title	Pontes de viga
+me-bridges.c1.text	A ponte mais simples: uma viga sobre apoios. Barata e rápida para vãos curtos, mas à medida que o vão cresce são precisas vigas mais altas, por isso muitas vezes são contínuas sobre vários pilares.
+me-bridges.c1.viz.items.0.a	vão
+me-bridges.c1.viz.items.0.b	até ~250 m (grandes vigas)
+me-bridges.c1.viz.items.1.a	ideal para
+me-bridges.c1.viz.items.1.b	passagens superiores
+me-bridges.c1.viz.items.2.a	estrutura
+me-bridges.c1.viz.items.2.b	flexão
+me-bridges.c2.title	Pontes em arco
+me-bridges.c2.text	Os arcos levam as cargas à compressão até encontros sólidos. Há arcos de pedra com 2,000 anos. A ponte Dom Luís I, no Porto (1886), é um arco de ferro com dois tabuleiros sobre o Douro.
+me-bridges.c2.viz.items.0.a	funciona por
+me-bridges.c2.viz.items.0.b	compressão
+me-bridges.c2.viz.items.1.a	precisa de
+me-bridges.c2.viz.items.1.b	encontros sólidos
+me-bridges.c2.viz.items.2.a	exemplo
+me-bridges.c2.viz.items.2.b	Dom Luís I, Porto
+me-bridges.c3.title	Pontes suspensas
+me-bridges.c3.text	Os cabos principais pendem de torres altas e estão ancorados em cada extremidade; pendurais verticais seguram o tabuleiro. São as que conseguem os maiores vãos. A ponte 25 de Abril, em Lisboa (1966), é uma delas.
+me-bridges.c3.viz.steps.0	Carga do tabuleiro
+me-bridges.c3.viz.steps.1	Pendurais verticais
+me-bridges.c3.viz.steps.2	Cabos principais
+me-bridges.c3.viz.steps.3	Torres e ancoragens
+me-bridges.c4.title	Pontes de tirantes
+me-bridges.c4.text	Cabos retos vão diretamente das torres ao tabuleiro, em leque ou em harpa. São eficientes para vãos médios a longos e rápidas de construir. A ponte Vasco da Gama, em Lisboa, tem um vão principal de tirantes.
+me-bridges.c4.viz.l.t	Suspensa
+me-bridges.c4.viz.l.items.0	cabos pendem entre torres
+me-bridges.c4.viz.l.items.1	maiores vãos
+me-bridges.c4.viz.r.t	Tirantes
+me-bridges.c4.viz.r.items.0	cabos retos ao tabuleiro
+me-bridges.c4.viz.r.items.1	vãos médios a longos
+me-bridges.c5.title	Pontes portuguesas
+me-bridges.c5.text	Portugal tem pontes notáveis, incluindo várias da empresa de Gustave Eiffel e de Edgar Cardoso.
+me-bridges.c5.viz.events.0.l	Maria Pia (Eiffel), Porto
+me-bridges.c5.viz.events.1.l	Dom Luís I, Porto
+me-bridges.c5.viz.events.2.l	25 de Abril, Lisboa
+me-bridges.c5.viz.events.3.l	Vasco da Gama, Lisboa (17 km)
+me-bridges.c6.title	O vento e Tacoma Narrows
+me-bridges.c6.text	Em 1940, a ponte suspensa de Tacoma Narrows, nos EUA, torceu-se até se desfazer com um vento moderado, devido a instabilidade aerodinâmica. Desde então, os tabuleiros são testados em túnel de vento e desenhados para o evitar.
+me-bridges.c6.viz.steps.0	Vento num tabuleiro flexível
+me-bridges.c6.viz.steps.1	A oscilação de torção cresce
+me-bridges.c6.viz.steps.2	Colapso (1940)
+me-bridges.c6.viz.steps.3	Ensaios em túnel de vento desde então
+me-bridges.c7.title	Juntas de dilatação
+me-bridges.c7.text	As pontes crescem e encolhem com a temperatura. As juntas de dilatação (os dentes metálicos por onde passas de carro) e os aparelhos de apoio deslizantes deixam-nas mexer-se sem fissurar.
+me-bridges.c7.viz.items.0	Juntas de dilatação
+me-bridges.c7.viz.items.1	Apoios deslizantes
+me-bridges.c7.viz.items.2	Prever a temperatura
+me-bridges.c7.viz.items.3	Inspecionar com regularidade
+me-bridges.c8.title	Fundações em rios
+me-bridges.c8.text	Os pilares nos rios têm de resistir à erosão localizada: a água rápida a escavar o leito à sua volta. Muitos colapsos de pontes devem-se a esta erosão durante cheias, e não à própria estrutura.
+me-bridges.c8.viz.steps.0	A água da cheia acelera junto ao pilar
+me-bridges.c8.viz.steps.1	Leito do rio erodido
+me-bridges.c8.viz.steps.2	Fundação descalçada
+me-bridges.c8.viz.steps.3	Risco de colapso
+me-bridges.c9.title	Inspeção e manutenção
+me-bridges.c9.text	As pontes são inspecionadas regularmente à procura de fissuras, corrosão, desgaste dos apoios e erosão. Cada vez mais, sensores monitorizam deformações, vibrações e movimentos em tempo real.
+me-bridges.c9.viz.items.0	Inspeções visuais
+me-bridges.c9.viz.items.1	Controlo da corrosão de cabos e armaduras
+me-bridges.c9.viz.items.2	Inspeções subaquáticas à erosão
+me-bridges.c9.viz.items.3	Sensores de monitorização estrutural
+me-buildings.title	Edifícios e fundações
+me-buildings.summary	A começar pelo chão.
+me-buildings.q0.q	O que é um assentamento diferencial?
+me-buildings.q0.o0	Todas as partes a afundar por igual
+me-buildings.q0.o1	Uma parte do edifício a afundar mais do que outra
+me-buildings.q0.o2	Assentar depois da chuva
+me-buildings.q0.x	Provoca fissuras.
+me-buildings.q1.q	O que era a gaiola pombalina?
+me-buildings.q1.o0	Uma prisão
+me-buildings.q1.o1	Uma estrutura de madeira em treliça dentro das paredes para resistir aos sismos
+me-buildings.q1.o2	Um tipo de telha
+me-buildings.q1.x	Usada na reconstrução de Lisboa depois de 1755.
+me-buildings.q2.q	Quando se usam estacas?
+me-buildings.q2.o0	Sobre rocha sólida perto da superfície
+me-buildings.q2.o1	Em terreno mole, para chegar a camadas mais firmes
+me-buildings.q2.o2	Só em pontes
+me-buildings.q2.x	Transferem as cargas para estratos mais profundos.
+me-buildings.c0.title	Porquê fundações?
+me-buildings.c0.text	As fundações distribuem o peso de um edifício por um solo que o consiga suportar sem afundar de forma desigual. Quanto mais fraco o solo, maiores ou mais profundas as fundações.
+me-buildings.c0.viz.steps.0	Peso do edifício
+me-buildings.c0.viz.steps.1	As fundações distribuem-no
+me-buildings.c0.viz.steps.2	O solo suporta-o
+me-buildings.c0.viz.steps.3	Sem assentamentos desiguais
+me-buildings.c1.title	Fundações superficiais
+me-buildings.c1.text	Sapatas contínuas e isoladas, ou uma laje de ensoleiramento, funcionam onde há solo firme ou rocha perto da superfície. São comuns em moradias.
+me-buildings.c1.viz.items.0.a	sapata contínua
+me-buildings.c1.viz.items.0.b	sob paredes
+me-buildings.c1.viz.items.1.a	sapata isolada
+me-buildings.c1.viz.items.1.b	sob pilares
+me-buildings.c1.viz.items.2.a	ensoleiramento
+me-buildings.c1.viz.items.2.b	laje inteira, solos fracos
+me-buildings.c2.title	Fundações profundas
+me-buildings.c2.text	Em terreno mole, cravam-se ou furam-se estacas até camadas mais firmes, que suportam as cargas pela ponta e pelo atrito lateral. A Baixa de Lisboa foi reconstruída depois de 1755 sobre estacas de madeira.
+me-buildings.c2.viz.l.t	Superficiais
+me-buildings.c2.viz.l.items.0	solo firme à superfície
+me-buildings.c2.viz.l.items.1	baratas
+me-buildings.c2.viz.l.items.2	moradias
+me-buildings.c2.viz.r.t	Estacas
+me-buildings.c2.viz.r.items.0	terreno mole
+me-buildings.c2.viz.r.items.1	chegam fundo
+me-buildings.c2.viz.r.items.2	torres, pontes
+me-buildings.c3.title	Assentamento
+me-buildings.c3.text	Todos os edifícios assentam um pouco. Os problemas surgem com o assentamento diferencial, quando uma parte afunda mais do que outra, fissurando paredes e emperrando portas.
+me-buildings.c3.viz.items.0.w	um canto sobre aterro mole
+me-buildings.c3.viz.items.0.r	fundações mais fundas aí
+me-buildings.c3.viz.items.1.w	fissuras a alargar
+me-buildings.c3.viz.items.1.r	monitorizar e investigar
+me-buildings.c4.title	Paredes e estruturas reticuladas
+me-buildings.c4.text	Os edifícios tradicionais têm paredes resistentes de pedra ou tijolo. Os modernos usam estruturas de pilares e vigas de betão ou aço, e as paredes limitam-se a preencher os espaços.
+me-buildings.c4.viz.l.t	Paredes resistentes
+me-buildings.c4.viz.l.items.0	paredes suportam os pisos
+me-buildings.c4.viz.l.items.1	poucas aberturas
+me-buildings.c4.viz.r.t	Estrutura
+me-buildings.c4.viz.r.items.0	pilares e vigas suportam cargas
+me-buildings.c4.viz.r.items.1	paredes só fecham
+me-buildings.c5.title	A gaiola pombalina
+me-buildings.c5.text	Depois do sismo de 1755, Lisboa foi reconstruída com a "gaiola pombalina": uma treliça de madeira com travamentos diagonais dentro das paredes de alvenaria, um dos primeiros sistemas de construção antissísmica da Europa.
+me-buildings.c5.viz.steps.0	Sismo de 1755
+me-buildings.c5.viz.steps.1	Reconstrução da Baixa
+me-buildings.c5.viz.steps.2	Gaiola de madeira nas paredes
+me-buildings.c5.viz.steps.3	Mais resistência aos sismos
+me-buildings.c6.title	Projeto sísmico
+me-buildings.c6.text	As normas sísmicas exigem que os edifícios oscilem sem colapsar: ligações dúcteis, contraventamentos, paredes resistentes ao corte, formas regulares. Alguns usam isoladores de base que deixam o chão mexer-se por baixo deles.
+me-buildings.c6.viz.items.0	Pórticos dúcteis
+me-buildings.c6.viz.items.1	Paredes de corte e contraventamento
+me-buildings.c6.viz.items.2	Planta regular e simétrica
+me-buildings.c6.viz.items.3	Isolamento de base em edifícios-chave
+me-buildings.c7.title	O vento nos edifícios altos
+me-buildings.c7.text	O vento empurra os edifícios altos e fá-los oscilar. Os engenheiros tornam-nos mais rígidos com núcleos e estabilizadores, e alguns arranha-céus usam enormes amortecedores de massa sintonizada para anular o movimento.
+me-buildings.c7.viz.steps.0	O vento empurra a torre
+me-buildings.c7.viz.steps.1	Ela oscila
+me-buildings.c7.viz.steps.2	O amortecedor move-se ao contrário
+me-buildings.c7.viz.steps.3	Movimento reduzido
+me-buildings.c8.title	Humidade
+me-buildings.c8.text	A água é a inimiga dos edifícios: a humidade ascensional, as infiltrações e a condensação causam podridão, bolor e corrosão. Barreiras contra a humidade, bons telhados, caleiras e ventilação mantêm-na à distância.
+me-buildings.c8.viz.items.0	Barreira contra a humidade
+me-buildings.c8.viz.items.1	Telhado e rufos em bom estado
+me-buildings.c8.viz.items.2	Caleiras e drenagem
+me-buildings.c8.viz.items.3	Ventilação
+me-buildings.c8.viz.items.4	Barreiras pára-vapor
+me-buildings.c9.title	Burj Khalifa
+me-buildings.c9.text	O edifício mais alto do mundo, no Dubai, tem 828 m de altura. A planta em Y e os recuos confundem o vento, e as fundações incluem 192 estacas com cerca de 50 m de comprimento.
+me-buildings.c9.viz.items.0.v	828 m
+me-buildings.c9.viz.items.0.l	altura
+me-buildings.c9.viz.items.1.l	pisos
+me-buildings.c9.viz.items.2.l	estacas (aprox.)
+me-engines.title	Motores
+me-engines.summary	Como os motores a gasolina e a gasóleo transformam combustível em movimento.
+me-engines.q0.q	O que inflama o combustível num motor a gasóleo?
+me-engines.q0.o0	Uma vela de ignição
+me-engines.q0.o1	O calor do ar muito comprimido
+me-engines.q0.o2	A bateria
+me-engines.q0.x	Ignição por compressão.
+me-engines.q1.q	O que usa um turbocompressor para comprimir o ar de admissão?
+me-engines.q1.o0	Eletricidade
+me-engines.q1.o1	A energia dos gases de escape
+me-engines.q1.o2	O líquido de refrigeração
+me-engines.q1.x	O escape faz girar a turbina.
+me-engines.q2.q	Que parte da energia do combustível se torna, mais ou menos, trabalho útil num motor a gasolina?
+me-engines.q2.o0	90%
+me-engines.q2.o1	Cerca de 30%
+me-engines.q2.o2	5%
+me-engines.q2.x	O resto perde-se em calor.
+me-engines.c0.title	O ciclo a quatro tempos
+me-engines.c0.text	A maioria dos motores de automóvel repete quatro tempos: aspira ar e combustível, comprime-os, inflama-os para empurrarem o pistão e expulsa os gases de escape. "Admissão, compressão, explosão, escape."
+me-engines.c0.viz.steps.0	Admissão: aspira
+me-engines.c0.viz.steps.1	Compressão: aperta
+me-engines.c0.viz.steps.2	Explosão: empurra
+me-engines.c0.viz.steps.3	Escape: expulsa
+me-engines.c1.title	Cambota
+me-engines.c1.text	Os pistões sobem e descem; a cambota transforma isso em rotação, como as pernas a empurrar os pedais de uma bicicleta. Um volante de inércia suaviza os impulsos.
+me-engines.c1.viz.steps.0	Pistão empurrado para baixo
+me-engines.c1.viz.steps.1	Biela
+me-engines.c1.viz.steps.2	A cambota roda
+me-engines.c1.viz.steps.3	Caixa e rodas
+me-engines.c2.title	Gasolina vs gasóleo
+me-engines.c2.text	Os motores a gasolina usam uma faísca para inflamar a mistura. Os diesel comprimem tanto o ar que ele fica quente o suficiente para inflamar o combustível injetado. Os diesel são mais eficientes, mas mais pesados, e produzem mais NOx e partículas.
+me-engines.c2.viz.l.t	Gasolina
+me-engines.c2.viz.l.items.0	ignição por faísca
+me-engines.c2.viz.l.items.1	mais leve
+me-engines.c2.viz.l.items.2	mais rotação
+me-engines.c2.viz.r.t	Gasóleo
+me-engines.c2.viz.r.items.0	ignição por compressão
+me-engines.c2.viz.r.items.1	mais eficiente
+me-engines.c2.viz.r.items.2	mais binário
+me-engines.c3.title	Taxa de compressão
+me-engines.c3.text	Uma compressão mais alta extrai mais energia do combustível. Os motores a gasolina andam pelos 10:1, os diesel pelos 15–20:1. Demasiado alta num motor a gasolina provoca detonação.
+me-engines.c3.viz.unit	taxa de compressão (típica)
+me-engines.c3.viz.items.0.l	Gasolina
+me-engines.c3.viz.items.1.l	Gasolina moderno (injeção direta)
+me-engines.c3.viz.items.2.l	Gasóleo
+me-engines.c4.title	Turbocompressores
+me-engines.c4.text	Um turbo usa os gases de escape para fazer girar uma turbina que comprime o ar de admissão, forçando a entrada de mais ar e combustível nos cilindros. Motores pequenos podem dar muita potência.
+me-engines.c4.viz.steps.0	O escape faz girar a turbina
+me-engines.c4.viz.steps.1	O compressor força a entrada de ar
+me-engines.c4.viz.steps.2	Queima-se mais combustível
+me-engines.c4.viz.steps.3	Mais potência
+me-engines.c5.title	Binário e potência
+me-engines.c5.text	O binário é a força de torção; a potência é o binário vezes a velocidade de rotação. Os diesel dão muito binário a baixas rotações; os motores a gasolina atingem muitas vezes a potência máxima a altas rotações.
+me-engines.c5.viz.f	P = binário × ω
+me-engines.c5.viz.items.0.m	ω = rpm × 2π ÷ 60
+me-engines.c5.viz.items.1.s	300 N·m a 3,000 rpm
+me-engines.c5.viz.items.1.m	≈ 94 kW
+me-engines.c6.title	Caixas de velocidades
+me-engines.c6.text	Os motores funcionam melhor numa faixa estreita de rotações. As mudanças deixam o motor ficar nessa faixa, quer o carro vá devagarinho quer vá em velocidade de cruzeiro. Os motores dos elétricos rodam numa faixa tão larga que normalmente só precisam de uma relação.
+me-engines.c6.viz.l.t	Carro a combustão
+me-engines.c6.viz.l.items.0	5–10 mudanças
+me-engines.c6.viz.l.items.1	mantém o motor no ponto ideal
+me-engines.c6.viz.r.t	Elétrico
+me-engines.c6.viz.r.items.0	em geral uma relação
+me-engines.c6.viz.r.items.1	motor rende de 0 a ~15,000 rpm
+me-engines.c7.title	Refrigeração
+me-engines.c7.text	Cerca de um terço da energia do combustível sai como calor pelo sistema de refrigeração, e outro terço pelo escape. O radiador, o líquido de refrigeração e o termóstato mantêm o motor à temperatura ideal.
+me-engines.c7.viz.unit	% da energia do combustível (aprox.)
+me-engines.c7.viz.items.0.l	Trabalho útil
+me-engines.c7.viz.items.1.l	Calor do escape
+me-engines.c7.viz.items.2.l	Refrigeração
+me-engines.c7.viz.items.3.l	Atrito, etc.
+me-engines.c8.title	Controlo de emissões
+me-engines.c8.text	Os catalisadores transformam o monóxido de carbono, o combustível não queimado e os NOx em gases menos nocivos. Os filtros de partículas dos diesel retêm a fuligem; o AdBlue reduz os NOx nos diesel.
+me-engines.c8.viz.items.0.a	catalisador
+me-engines.c8.viz.items.0.b	limpa CO, HC, NOx
+me-engines.c8.viz.items.1.a	filtro de partículas
+me-engines.c8.viz.items.1.b	retém fuligem
+me-engines.c8.viz.items.2.a	AdBlue (SCR)
+me-engines.c8.viz.items.2.b	reduz NOx do diesel
+me-engines.c9.title	Híbridos
+me-engines.c9.text	Os híbridos juntam um motor de combustão a um motor elétrico e a uma bateria, recuperando a energia das travagens e ajudando o motor a trabalhar de forma eficiente. Os híbridos plug-in conseguem fazer dezenas de quilómetros só a eletricidade.
+me-engines.c9.viz.l.t	Híbrido
+me-engines.c9.viz.l.items.0	carrega sozinho
+me-engines.c9.viz.l.items.1	bateria pequena
+me-engines.c9.viz.r.t	Híbrido plug-in
+me-engines.c9.viz.r.items.0	carrega na rede
+me-engines.c9.viz.r.items.1	40–80 km elétricos
+me-ev.title	A engenharia de um carro elétrico
+me-ev.summary	Bateria, motor, inversor e gestão térmica.
+me-ev.q0.q	Que componente converte a corrente contínua (DC) da bateria em alternada (AC) para o motor?
+me-ev.q0.o0	A caixa de velocidades
+me-ev.q0.o1	O inversor

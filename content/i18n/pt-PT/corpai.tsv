@@ -497,3 +497,622 @@ corp-arch.c5.viz.steps.1	Verificação de injeção e dados pessoais
 corp-arch.c5.viz.steps.2	Modelo
 corp-arch.c5.viz.steps.3	Verificação e validação da saída
 corp-arch.c5.viz.steps.4	Utilizador ou sistema
+corp-arch.c6.title	Observabilidade
+corp-arch.c6.text	Regista prompts, respostas, chamadas a ferramentas, latência, custos e feedback dos utilizadores (com controlos de privacidade). Os traces ajudam a depurar falhas; os painéis mostram a utilização e a despesa.
+corp-arch.c6.viz.items.0	Traces de cada pedido
+corp-arch.c6.viz.items.1	Latência e erros
+corp-arch.c6.viz.items.2	Custo por app e por equipa
+corp-arch.c6.viz.items.3	Feedback de uso
+corp-arch.c6.viz.items.4	Avaliações de qualidade
+corp-arch.c7.title	Ambientes
+corp-arch.c7.text	Separa desenvolvimento, testes e produção, com portas de avaliação antes de cada promoção, tal como noutro software.
+corp-arch.c7.viz.steps.0	Desenvolvimento
+corp-arch.c7.viz.steps.1	Avaliações automáticas
+corp-arch.c7.viz.steps.2	Testes com utilizadores
+corp-arch.c7.viz.steps.3	Produção com monitorização
+corp-arch.c8.title	Cloud e região
+corp-arch.c8.text	Escolhe regiões de alojamento dos modelos que cumpram as regras de residência de dados (por exemplo, dados da UE em regiões da UE) e termos contratuais que proíbam o treino com os teus dados.
+corp-arch.c8.viz.items.0	Dados da UE em regiões da UE
+corp-arch.c8.viz.items.1	Sem treino com os teus dados
+corp-arch.c8.viz.items.2	Cifra em repouso e em trânsito
+corp-arch.c8.viz.items.3	Rede privada
+corp-arch.c8.viz.items.4	Controlos de retenção
+corp-arch.c9.title	Arquitetura de referência
+corp-arch.c9.text	Documenta uma arquitetura de referência e modelos reutilizáveis para que as equipas possam lançar novas aplicações de IA rapidamente, dentro dos guardrails.
+corp-arch.c9.viz.steps.0	Arquitetura de referência
+corp-arch.c9.viz.steps.1	Modelos e SDKs
+corp-arch.c9.viz.steps.2	Equipas constroem mais depressa
+corp-arch.c9.viz.steps.3	Segurança consistente
+corp-security.title	Segurança e privacidade na IA
+corp-security.summary	Novos riscos e como geri-los.
+corp-security.q0.q	O que é a shadow AI?
+corp-security.q0.o0	IA às escuras
+corp-security.q0.o1	Colaboradores a usar ferramentas de IA não aprovadas
+corp-security.q0.o2	Um tipo de modelo
+corp-security.q0.x	Combate-se melhor com boas ferramentas aprovadas.
+corp-security.q1.q	Que princípio limita os danos de um agente sequestrado?
+corp-security.q1.o0	Acesso máximo
+corp-security.q1.o1	Privilégio mínimo com aprovações para ações sensíveis
+corp-security.q1.o2	Modelos mais rápidos
+corp-security.q1.x	Direitos mínimos limitam os danos.
+corp-security.q2.q	Que norma define um sistema de gestão de IA?
+corp-security.q2.o0	ISO 9001
+corp-security.q2.o1	ISO/IEC 42001
+corp-security.q2.o2	ISO 14001
+corp-security.q2.x	Publicada em 2023.
+corp-security.c0.title	Nova superfície de ataque
+corp-security.c0.text	Os sistemas de IA trazem novos riscos: prompt injection, fuga de dados através de prompts ou respostas, dados de treino ou de pesquisa envenenados, abuso de modelos e acesso inseguro a ferramentas.
+corp-security.c0.viz.root	Riscos de segurança da IA
+corp-security.c0.viz.items.0	Prompt injection
+corp-security.c0.viz.items.1	Fuga de dados
+corp-security.c0.viz.items.2	Dados envenenados
+corp-security.c0.viz.items.3	Permissões excessivas
+corp-security.c1.title	Prompt injection
+corp-security.c1.text	Instruções maliciosas escondidas em emails, páginas web ou documentos podem levar um assistente de IA a revelar dados ou a executar ações. É considerado um dos principais riscos das aplicações com LLM (OWASP).
+corp-security.c1.viz.steps.0	Atacante esconde instruções num documento
+corp-security.c1.viz.steps.1	A IA lê-o
+corp-security.c1.viz.steps.2	Tenta segui-las
+corp-security.c1.viz.steps.3	Guardrails e permissões limitadas travam o dano
+corp-security.c2.title	Fuga de dados
+corp-security.c2.text	Os dados sensíveis podem fugir se os utilizadores os colarem em ferramentas não aprovadas, se o RAG ignorar permissões ou se as respostas incluírem detalhes confidenciais. Controlos: ferramentas aprovadas, pesquisa que respeita permissões e filtros de saída.
+corp-security.c2.viz.items.0	Só ferramentas empresariais aprovadas
+corp-security.c2.viz.items.1	Pesquisa que respeita permissões
+corp-security.c2.viz.items.2	Deteção e ocultação de dados pessoais
+corp-security.c2.viz.items.3	Filtragem das respostas
+corp-security.c2.viz.items.4	Formar utilizadores
+corp-security.c3.title	Shadow AI
+corp-security.c3.text	É comum os colaboradores usarem ferramentas de IA não aprovadas ("shadow AI") quando faltam opções aprovadas. A melhor defesa é disponibilizar boas ferramentas aprovadas e orientações claras.
+corp-security.c3.viz.l.t	Proibir tudo
+corp-security.c3.viz.l.items.0	o uso às escondidas cresce
+corp-security.c3.viz.l.items.1	sem visibilidade
+corp-security.c3.viz.r.t	Dar ferramentas aprovadas
+corp-security.c3.viz.r.items.0	adoção mais segura
+corp-security.c3.viz.r.items.1	visibilidade e controlo
+corp-security.c4.title	Privilégio mínimo para agentes
+corp-security.c4.text	Dá aos agentes de IA o acesso mínimo necessário, tokens com âmbito limitado, limites de utilização e passos de aprovação para ações sensíveis. Trata-os como um novo colaborador com direitos muito limitados.
+corp-security.c4.viz.items.0	Permissões mínimas
+corp-security.c4.viz.items.1	Credenciais limitadas e com validade
+corp-security.c4.viz.items.2	Limites de pedidos e de despesa
+corp-security.c4.viz.items.3	Aprovação humana para ações sensíveis
+corp-security.c4.viz.items.4	Registo de auditoria completo
+corp-security.c5.title	Cadeia de fornecimento
+corp-security.c5.text	Modelos, bibliotecas e plugins vêm de terceiros. Verifica as fontes, analisa as dependências e fixa versões, como em qualquer outra cadeia de fornecimento de software.
+corp-security.c5.viz.items.0	Fontes de modelos verificadas
+corp-security.c5.viz.items.1	Análise de dependências
+corp-security.c5.viz.items.2	Versões fixas
+corp-security.c5.viz.items.3	Revisão de plugins
+corp-security.c5.viz.items.4	Avaliação de segurança dos fornecedores
+corp-security.c6.title	Dados pessoais e RGPD
+corp-security.c6.text	Usar dados pessoais em IA exige um fundamento jurídico, limitação da finalidade, minimização e muitas vezes uma avaliação de impacto sobre a proteção de dados (AIPD). Envolve o EPD desde cedo.
+corp-security.c6.viz.steps.0	Novo caso de uso de IA
+corp-security.c6.viz.steps.1	Há dados pessoais?
+corp-security.c6.viz.steps.2	AIPD com o EPD
+corp-security.c6.viz.steps.3	Controlos e aprovação
+corp-security.c7.title	Red teaming
+corp-security.c7.text	Antes do lançamento, testa as apps de IA como um adversário: tenta injeções, jailbreaks, extração de dados e utilização abusiva. Corrige os problemas e volta a testar.
+corp-security.c7.viz.steps.0	Atacar a aplicação
+corp-security.c7.viz.steps.1	Registar as falhas
+corp-security.c7.viz.steps.2	Acrescentar controlos
+corp-security.c7.viz.steps.3	Repetir teste
+corp-security.c8.title	Resposta a incidentes
+corp-security.c8.text	Tem um plano para incidentes de IA: respostas prejudiciais, exposição de dados, erros de agentes. Tens de conseguir desativar funcionalidades depressa, investigar os registos e notificar quando for obrigatório.
+corp-security.c8.viz.steps.0	Detetar
+corp-security.c8.viz.steps.1	Conter: desativar a funcionalidade
+corp-security.c8.viz.steps.2	Investigar os registos
+corp-security.c8.viz.steps.3	Corrigir e comunicar
+corp-security.c9.title	Referenciais de segurança
+corp-security.c9.text	Usa orientações consolidadas: OWASP Top 10 for LLM Applications, NIST AI Risk Management Framework, ISO/IEC 42001 para sistemas de gestão de IA, e ainda os teus controlos ISO 27001 existentes.
+corp-security.c9.viz.items.0.a	OWASP LLM Top 10
+corp-security.c9.viz.items.0.b	riscos das aplicações
+corp-security.c9.viz.items.1.a	NIST AI RMF
+corp-security.c9.viz.items.1.b	gestão de risco
+corp-security.c9.viz.items.2.a	ISO/IEC 42001
+corp-security.c9.viz.items.2.b	sistema de gestão de IA
+corp-security.c9.viz.items.3.a	ISO 27001
+corp-security.c9.viz.items.3.b	segurança da informação
+corp-governance.title	Governação e risco da IA
+corp-governance.summary	Políticas, papéis e o Regulamento Europeu da IA na prática.
+corp-governance.q0.q	O que deve registar um inventário de IA?
+corp-governance.q0.o0	Só os nomes dos modelos
+corp-governance.q0.o1	Caso de uso, responsável, dados, modelo, nível de risco e controlos
+corp-governance.q0.o2	Os salários dos colaboradores
+corp-governance.q0.x	É a base da governação.
+corp-governance.q1.q	Desde fevereiro de 2025, o Regulamento Europeu da IA exige que os responsáveis pela implantação garantam…
+corp-governance.q1.o0	IA gratuita para todos
+corp-governance.q1.o1	Literacia em IA suficiente entre o pessoal que usa IA
+corp-governance.q1.o2	Apenas modelos open source
+corp-governance.q1.x	A obrigação de literacia em IA.
+corp-governance.q2.q	Como deve a governação tratar os casos de uso de baixo risco?
+corp-governance.q2.o0	Proibi-los
+corp-governance.q2.o1	Dar-lhes uma via rápida com verificações leves
+corp-governance.q2.o2	Como os de alto risco
+corp-governance.q2.x	Governação proporcional.
+corp-governance.c0.title	Porquê governação
+corp-governance.c0.text	A governação garante que a IA é usada de forma segura, legal e alinhada com os valores da empresa, sem abrandar tudo. Uma boa governação acelera a adoção ao clarificar as regras.
+corp-governance.c0.viz.l.t	Pouca ou demasiada
+corp-governance.c0.viz.l.items.0	incidentes, ou aprovações lentas e shadow AI
+corp-governance.c0.viz.r.t	Na medida certa
+corp-governance.c0.viz.r.items.0	regras claras
+corp-governance.c0.viz.r.items.1	via rápida para baixo risco
+corp-governance.c0.viz.r.items.2	foco no alto risco
+corp-governance.c1.title	Política de IA
+corp-governance.c1.text	Uma política curta cobre as ferramentas aprovadas, os dados permitidos, a supervisão humana, a transparência, os usos proibidos e como pedir novos casos de uso.
+corp-governance.c1.viz.items.0	Ferramentas aprovadas
+corp-governance.c1.viz.items.1	Regras de dados
+corp-governance.c1.viz.items.2	Supervisão humana
+corp-governance.c1.viz.items.3	Usos proibidos
+corp-governance.c1.viz.items.4	Como propor novos casos de uso
+corp-governance.c2.title	Inventário de sistemas de IA
+corp-governance.c2.text	Mantém um registo dos sistemas e casos de uso de IA: finalidade, responsável, dados usados, modelo, nível de risco e controlos. Na prática, o Regulamento Europeu da IA obriga a saber o que implantas.
+corp-governance.c2.viz.items.0	Caso de uso e finalidade
+corp-governance.c2.viz.items.1	Responsável de negócio
+corp-governance.c2.viz.items.2	Dados e modelo usados
+corp-governance.c2.viz.items.3	Classificação de risco
+corp-governance.c2.viz.items.4	Controlos e revisões
+corp-governance.c3.title	Revisão baseada no risco
+corp-governance.c3.text	Os usos de baixo risco têm uma autoavaliação leve; os de alto risco passam por uma revisão completa com especialistas jurídicos, de segurança, de privacidade e do negócio.
+corp-governance.c3.viz.steps.0	Novo caso de uso
+corp-governance.c3.viz.steps.1	Triagem de risco
+corp-governance.c3.viz.steps.2	Baixo: via rápida
+corp-governance.c3.viz.steps.3	Alto: comité de revisão completo
+corp-governance.c4.title	O Regulamento Europeu da IA para empresas
+corp-governance.c4.text	As empresas são normalmente "responsáveis pela implantação" de IA. Nos sistemas de alto risco, têm de os usar conforme as instruções, garantir supervisão humana, monitorizar o funcionamento, guardar registos e informar as pessoas afetadas. As práticas proibidas têm de ser totalmente evitadas.
+corp-governance.c4.viz.items.0	Evitar práticas proibidas
+corp-governance.c4.viz.items.1	Conhecer os usos de alto risco
+corp-governance.c4.viz.items.2	Supervisão humana
+corp-governance.c4.viz.items.3	Guardar registos
+corp-governance.c4.viz.items.4	Informar as pessoas afetadas
+corp-governance.c5.title	Dever de literacia em IA
+corp-governance.c5.text	Desde fevereiro de 2025, o Regulamento Europeu da IA exige que fornecedores e responsáveis pela implantação tomem medidas para garantir literacia em IA suficiente entre o pessoal que opera ou usa sistemas de IA.
+corp-governance.c5.viz.items.0.v	fev. 2025
+corp-governance.c5.viz.items.0.l	aplica-se o dever de literacia em IA
+corp-governance.c5.viz.items.1.v	todo o pessoal
+corp-governance.c5.viz.items.1.l	que usa sistemas de IA abrangidos
+corp-governance.c6.title	Papéis e responsabilidades
+corp-governance.c6.text	Papéis típicos: um patrocinador executivo, um comité de governação de IA, responsáveis pelos casos de uso, uma equipa central de IA, e ainda as funções jurídica, de privacidade, de segurança e de risco.
+corp-governance.c6.viz.root	Governação de IA
+corp-governance.c6.viz.items.0	Patrocinador executivo
+corp-governance.c6.viz.items.1	Comité de governação
+corp-governance.c6.viz.items.2	Equipa central de IA
+corp-governance.c6.viz.items.3	Donos dos casos de uso
+corp-governance.c7.title	Gestão do risco de modelos
+corp-governance.c7.text	Os bancos e outras empresas reguladas já gerem o risco de modelos: validação, documentação, monitorização do desempenho. Alarga estas práticas à IA e aos LLM.
+corp-governance.c7.viz.steps.0	Desenvolver
+corp-governance.c7.viz.steps.1	Validar de forma independente
+corp-governance.c7.viz.steps.2	Monitorizar o desempenho
+corp-governance.c7.viz.steps.3	Rever periodicamente
+corp-governance.c8.title	IA de terceiros
+corp-governance.c8.text	Muitos riscos de IA chegam através de fornecedores. Os contratos devem cobrir o uso dos dados, a segurança, a transparência, a notificação de incidentes e o cumprimento de leis como o Regulamento da IA.
+corp-governance.c8.viz.items.0	Uso de dados e restrições ao treino
+corp-governance.c8.viz.items.1	Compromissos de segurança
+corp-governance.c8.viz.items.2	Notificação de incidentes
+corp-governance.c8.viz.items.3	Direitos de auditoria
+corp-governance.c8.viz.items.4	Conformidade regulamentar
+corp-governance.c9.title	Equilibrar rapidez e controlo
+corp-governance.c9.text	Padrões pré-aprovados (ferramentas aprovadas, modelos, categorias de baixo risco) permitem que a maioria das equipas avance depressa, enquanto o escrutínio se concentra nos casos de alto risco.
+corp-governance.c9.viz.l.t	Via rápida
+corp-governance.c9.viz.l.items.0	ferramentas aprovadas
+corp-governance.c9.viz.l.items.1	dados de baixo risco
+corp-governance.c9.viz.l.items.2	self-service
+corp-governance.c9.viz.r.t	Revisão completa
+corp-governance.c9.viz.r.items.0	usos de alto risco
+corp-governance.c9.viz.r.items.1	decisões sobre pessoas
+corp-governance.c9.viz.r.items.2	impacto externo
+corp-responsible.title	IA responsável
+corp-responsible.summary	Princípios que criam confiança.
+corp-responsible.q0.q	Qual é uma explicação aceitável para uma decisão apoiada por IA?
+corp-responsible.q0.o0	"O algoritmo decidiu"
+corp-responsible.q0.o1	"A equipa decidiu com base numa recomendação da IA"
+corp-responsible.q0.o2	"Ninguém sabe"
+corp-responsible.q0.x	Uma pessoa ou equipa continua a ser responsável.
+corp-responsible.q1.q	Human-on-the-loop significa…
+corp-responsible.q1.o0	Sem humanos
+corp-responsible.q1.o1	Os humanos monitorizam e podem intervir
+corp-responsible.q1.o2	Os humanos aprovam cada decisão
+corp-responsible.q1.x	Monitorização com capacidade de intervir.
+corp-responsible.q2.q	O que deve fazer um sistema de IA quando tem dúvidas?
+corp-responsible.q2.o0	Adivinhar com confiança
+corp-responsible.q2.o1	Escalar para um humano
+corp-responsible.q2.o2	Fechar a empresa
+corp-responsible.q2.x	Lidar bem com a incerteza.
+corp-responsible.c0.title	Princípios comuns
+corp-responsible.c0.text	A maioria dos referenciais de IA responsável partilha princípios: equidade, transparência, responsabilização, privacidade, segurança e fiabilidade, e supervisão humana.
+corp-responsible.c0.viz.items.0	Equidade
+corp-responsible.c0.viz.items.1	Transparência
+corp-responsible.c0.viz.items.2	Responsabilização
+corp-responsible.c0.viz.items.3	Privacidade e segurança
+corp-responsible.c0.viz.items.4	Segurança e fiabilidade
+corp-responsible.c0.viz.items.5	Supervisão humana
+corp-responsible.c1.title	Equidade
+corp-responsible.c1.text	Verifica se a IA não trata as pessoas de forma injusta com base em características protegidas ou em indicadores indiretos. Testa os resultados por grupo em qualquer uso que afete pessoas.
+corp-responsible.c1.viz.steps.0	Definir critérios de equidade
+corp-responsible.c1.viz.steps.1	Testar resultados por grupo
+corp-responsible.c1.viz.steps.2	Corrigir disparidades
+corp-responsible.c1.viz.steps.3	Monitorizar ao longo do tempo
+corp-responsible.c2.title	Transparência
+corp-responsible.c2.text	As pessoas devem saber quando a IA está envolvida e, nas decisões importantes, perceber as principais razões. Internamente, documenta como os sistemas funcionam e quais são os seus limites.
+corp-responsible.c2.viz.items.0	Divulgar o uso de IA
+corp-responsible.c2.viz.items.1	Explicar decisões-chave
+corp-responsible.c2.viz.items.2	Documentar limites
+corp-responsible.c2.viz.items.3	Fichas de modelo e de sistema
+corp-responsible.c3.title	Responsabilização
+corp-responsible.c3.text	Uma pessoa ou equipa identificada é responsável pelos resultados de cada sistema de IA. "O algoritmo decidiu" nunca é uma resposta aceitável.
+corp-responsible.c3.viz.items.0.w	"a IA decidiu"
+corp-responsible.c3.viz.items.0.r	"a equipa de crédito decidiu, com base numa recomendação da IA"
+corp-responsible.c4.title	Supervisão humana
+corp-responsible.c4.text	Decide onde os humanos têm de rever: antes da ação (human-in-the-loop), a monitorizar com capacidade de intervir (human-on-the-loop) ou em auditorias periódicas.
+corp-responsible.c4.viz.items.0.a	human-in-the-loop
+corp-responsible.c4.viz.items.0.b	aprova cada decisão
+corp-responsible.c4.viz.items.1.a	human-on-the-loop
+corp-responsible.c4.viz.items.1.b	monitoriza, pode intervir
+corp-responsible.c4.viz.items.2.a	auditoria periódica
+corp-responsible.c4.viz.items.2.b	revê amostras
+corp-responsible.c5.title	Fiabilidade
+corp-responsible.c5.text	Os sistemas de IA devem ter um desempenho consistente dentro do âmbito previsto, com limites testados e um tratamento adequado da incerteza: escalar em vez de adivinhar.
+corp-responsible.c5.viz.steps.0	Baixa confiança detetada
+corp-responsible.c5.viz.steps.1	Não adivinhar
+corp-responsible.c5.viz.steps.2	Escalar para um humano
+corp-responsible.c5.viz.steps.3	Aprender com o caso
+corp-responsible.c6.title	Impacto nos trabalhadores
+corp-responsible.c6.text	Uma adoção responsável pensa nas pessoas: comunica abertamente, envolve os colaboradores, investe na requalificação e redesenha as funções com cuidado.
+corp-responsible.c6.viz.items.0	Comunicação aberta
+corp-responsible.c6.viz.items.1	Envolver cedo as pessoas
+corp-responsible.c6.viz.items.2	Programas de requalificação
+corp-responsible.c6.viz.items.3	Redesenho cuidadoso das funções
+corp-responsible.c6.viz.items.4	Medir o bem-estar
+corp-responsible.c7.title	Impacto ambiental
+corp-responsible.c7.text	A IA consome energia e água. Escolhe modelos eficientes, evita usar desnecessariamente os maiores modelos e prefere regiões cloud abastecidas por energia limpa.
+corp-responsible.c7.viz.items.0	Modelos à medida
+corp-responsible.c7.viz.items.1	Cache e lotes
+corp-responsible.c7.viz.items.2	Regiões eficientes
+corp-responsible.c7.viz.items.3	Medir a energia quando possível
+corp-responsible.c8.title	Fichas de modelo e de sistema
+corp-responsible.c8.text	Documentos curtos que descrevem a finalidade, os dados, o desempenho, as limitações e o uso previsto de um sistema ajudam utilizadores e revisores a compreendê-lo.
+corp-responsible.c8.viz.items.0	Finalidade e uso previsto
+corp-responsible.c8.viz.items.1	Fontes de dados
+corp-responsible.c8.viz.items.2	Desempenho e testes
+corp-responsible.c8.viz.items.3	Limitações conhecidas
+corp-responsible.c8.viz.items.4	Contactos e responsáveis
+corp-responsible.c9.title	O objetivo é a confiança
+corp-responsible.c9.text	A IA responsável não é um travão; cria a confiança que permite a clientes, reguladores e colaboradores aceitar a IA em escala.
+corp-responsible.c9.viz.steps.0	Práticas responsáveis
+corp-responsible.c9.viz.steps.1	Confiança
+corp-responsible.c9.viz.steps.2	Adoção
+corp-responsible.c9.viz.steps.3	Valor
+corp-ops.title	MLOps e LLMOps
+corp-ops.summary	Pôr a IA a funcionar de forma fiável em produção.
+corp-ops.q0.q	O que deve acontecer antes de lançar uma nova versão de um prompt?
+corp-ops.q0.o0	Nada
+corp-ops.q0.o1	Deve passar nas avaliações automáticas
+corp-ops.q0.o2	Precisa de um comunicado de imprensa
+corp-ops.q0.x	As portas de avaliação evitam regressões.
+corp-ops.q1.q	O que é o data drift?
+corp-ops.q1.o0	Dados a serem apagados
+corp-ops.q1.o1	Os dados de entrada mudam e o desempenho do modelo degrada-se
+corp-ops.q1.o2	Dados mais rápidos
+corp-ops.q1.x	Monitoriza e volta a treinar.
+corp-ops.q2.q	O que te permite desligar uma funcionalidade de IA sem voltar a fazer deploy?
+corp-ops.q2.o0	Um servidor maior
+corp-ops.q2.o1	Uma feature flag
+corp-ops.q2.o2	Um novo modelo
+corp-ops.q2.x	As feature flags dão controlo rápido.
+corp-ops.c0.title	Os modelos são sistemas vivos
+corp-ops.c0.text	Ao contrário do software tradicional, o comportamento da IA depende de dados e modelos que mudam. A IA em produção precisa de monitorização, retreino e avaliação contínuos.
+corp-ops.c0.viz.steps.0	Construir
+corp-ops.c0.viz.steps.1	Implantar
+corp-ops.c0.viz.steps.2	Monitorizar
+corp-ops.c0.viz.steps.3	Melhorar e reimplantar
+corp-ops.c1.title	MLOps
+corp-ops.c1.text	O MLOps aplica práticas de DevOps ao machine learning: versionar dados e modelos, automatizar pipelines de treino, testar antes da implantação e monitorizar em produção.
+corp-ops.c1.viz.steps.0	Dados versionados
+corp-ops.c1.viz.steps.1	Treino automático
+corp-ops.c1.viz.steps.2	Testes de validação
+corp-ops.c1.viz.steps.3	Implantar
+corp-ops.c1.viz.steps.4	Monitorizar o drift
+corp-ops.c2.title	LLMOps
+corp-ops.c2.text	Na IA generativa, as peças que mudam são os prompts, os índices de pesquisa, as ferramentas, os guardrails e as versões dos modelos. Tudo deve ser versionado, testado e monitorizado.
+corp-ops.c2.viz.items.0	Versões de prompts
+corp-ops.c2.viz.items.1	Índices de pesquisa
+corp-ops.c2.viz.items.2	Definições de ferramentas
+corp-ops.c2.viz.items.3	Regras de guardrails
+corp-ops.c2.viz.items.4	Versões de modelos
+corp-ops.c3.title	Portas de avaliação
+corp-ops.c3.text	Cada alteração (novo prompt, novo modelo, novos dados) passa por avaliações automáticas antes do lançamento. Se a qualidade cair, a alteração não avança.
+corp-ops.c3.viz.steps.0	Alteração proposta
+corp-ops.c3.viz.steps.1	Correr as avaliações
+corp-ops.c3.viz.steps.2	Comparar com a atual
+corp-ops.c3.viz.steps.3	Lançar só se igual ou melhor
+corp-ops.c4.title	Monitorizar a qualidade
+corp-ops.c4.text	Acompanha indicadores indiretos de precisão (feedback dos utilizadores, taxas de correção e de escalamento), drift nas entradas, latência, erros e custo. Recolhe amostras de respostas para revisão humana.
+corp-ops.c4.viz.items.0	Feedback dos utilizadores
+corp-ops.c4.viz.items.1	Taxas de correção e escalamento
+corp-ops.c4.viz.items.2	Drift nas entradas
+corp-ops.c4.viz.items.3	Latência e erros
+corp-ops.c4.viz.items.4	Custo
+corp-ops.c5.title	Data drift
+corp-ops.c5.text	Quando os dados de entrada mudam (novos produtos, novos formatos de documentos, novos mercados), o desempenho do modelo pode degradar-se sem dar nas vistas. A deteção de drift alerta a equipa.
+corp-ops.c5.viz.events.0.y	jan.
+corp-ops.c5.viz.events.0.l	modelo preciso
+corp-ops.c5.viz.events.1.y	abr.
+corp-ops.c5.viz.events.1.l	novos formatos de fornecedores
+corp-ops.c5.viz.events.2.y	jun.
+corp-ops.c5.viz.events.2.l	precisão a descer
+corp-ops.c5.viz.events.3.y	jul.
+corp-ops.c5.viz.events.3.l	alerta de drift, retreinar
+corp-ops.c6.title	Rollbacks
+corp-ops.c6.text	Mantém a versão anterior pronta. Se um lançamento causar problemas, reverte depressa. As feature flags permitem desligar funcionalidades de IA sem voltar a fazer deploy.
+corp-ops.c6.viz.steps.0	Nova versão ativa
+corp-ops.c6.viz.steps.1	Problema detetado
+corp-ops.c6.viz.steps.2	Desligar a flag ou reverter
+corp-ops.c6.viz.steps.3	Investigar
+corp-ops.c7.title	Monitorizar os custos
+corp-ops.c7.text	Os custos da IA generativa crescem com a utilização. Acompanha a despesa por aplicação e por equipa, define orçamentos e alertas, e otimiza os prompts e a escolha de modelos.
+corp-ops.c7.viz.items.0	Despesa por app e equipa
+corp-ops.c7.viz.items.1	Orçamentos e alertas
+corp-ops.c7.viz.items.2	Tokens por pedido
+corp-ops.c7.viz.items.3	Taxa de acerto da cache
+corp-ops.c7.viz.items.4	Mistura de modelos
+corp-ops.c8.title	Ciclos de feedback humano
+corp-ops.c8.text	As correções feitas pelos utilizadores são dados valiosos para treino e avaliação. Recolhe-as de forma sistemática para melhorar prompts, pesquisa e modelos.
+corp-ops.c8.viz.steps.0	Resposta da IA
+corp-ops.c8.viz.steps.1	Utilizador corrige
+corp-ops.c8.viz.steps.2	Correção registada
+corp-ops.c8.viz.steps.3	Usada para melhorar
+corp-ops.c9.title	Equipas de plataforma
+corp-ops.c9.text	Uma equipa central de plataforma fornece normalmente as ferramentas (pipelines, gateway, monitorização, frameworks de avaliação) para que as equipas de produto se possam concentrar nos casos de uso.
+corp-ops.c9.viz.l.t	Equipa de plataforma
+corp-ops.c9.viz.l.items.0	ferramentas comuns
+corp-ops.c9.viz.l.items.1	normas
+corp-ops.c9.viz.l.items.2	fiabilidade
+corp-ops.c9.viz.r.t	Equipas de produto
+corp-ops.c9.viz.r.items.0	casos de uso
+corp-ops.c9.viz.r.items.1	resultados de negócio
+corp-ops.c9.viz.r.items.2	necessidades dos utilizadores
+corp-scale.title	Do piloto à produção
+corp-scale.summary	Sair do purgatório dos pilotos.
+corp-scale.q0.q	O que é o "purgatório dos pilotos"?
+corp-scale.q0.o0	Um curso de formação
+corp-scale.q0.o1	Muitos pilotos que nunca chegam a produção
+corp-scale.q0.o2	Uma falha de segurança
+corp-scale.q0.x	Os pilotos encalham sem responsáveis, integração e prova de valor.
+corp-scale.q1.q	Onde deve estar uma ferramenta de IA para ter muita adoção?
+corp-scale.q1.o0	Num site à parte
+corp-scale.q1.o1	Dentro das ferramentas de trabalho que as pessoas já usam
+corp-scale.q1.o2	Num cartaz
+corp-scale.q1.x	As ferramentas integradas são usadas.
+corp-scale.q2.q	O que deve acontecer aos resultados da IA com pouca confiança?
+corp-scale.q2.o0	Aprovação automática
+corp-scale.q2.o1	Encaminhá-los para humanos
+corp-scale.q2.o2	Apagá-los
+corp-scale.q2.x	As exceções vão para as pessoas.
+corp-scale.c0.title	O purgatório dos pilotos
+corp-scale.c0.text	Muitas organizações fazem dezenas de pilotos de IA que impressionam nas demos mas nunca escalam. Causas comuns: nenhum responsável claro, nenhum plano de integração, valor por provar e questões de risco por resolver.
+corp-scale.c0.viz.items.0	Sem responsável de negócio
+corp-scale.c0.viz.items.1	Sem plano de integração
+corp-scale.c0.viz.items.2	Valor não medido
+corp-scale.c0.viz.items.3	Riscos por resolver
+corp-scale.c0.viz.items.4	A equipa muda de foco
+corp-scale.c1.title	Pensa na produção desde o primeiro dia
+corp-scale.c1.text	Mesmo num piloto, usa dados reais, utilizadores reais, a arquitetura-alvo e os controlos de segurança. Uma demo com dados de exemplo limpos prova pouco.
+corp-scale.c1.viz.l.t	Piloto de demonstração
+corp-scale.c1.viz.l.items.0	dados de exemplo
+corp-scale.c1.viz.l.items.1	isolado
+corp-scale.c1.viz.l.items.2	slides impressionantes
+corp-scale.c1.viz.r.t	Piloto a pensar na produção
+corp-scale.c1.viz.r.items.0	dados reais
+corp-scale.c1.viz.r.items.1	utilizadores reais
+corp-scale.c1.viz.r.items.2	plataforma-alvo
+corp-scale.c2.title	Define o sucesso à partida
+corp-scale.c2.text	Acorda critérios de sucesso mensuráveis antes de começar: limiar de precisão, tempo poupado, satisfação dos utilizadores, custo por transação.
+corp-scale.c2.viz.items.0	Limiar de precisão
+corp-scale.c2.viz.items.1	Tempo poupado por tarefa
+corp-scale.c2.viz.items.2	Satisfação dos utilizadores
+corp-scale.c2.viz.items.3	Custo por transação
+corp-scale.c2.viz.items.4	Taxa de adoção
+corp-scale.c3.title	O trabalho é a integração
+corp-scale.c3.text	O valor aparece quando a IA está dentro do fluxo de trabalho: no ecrã do ERP, no cliente de email, na ferramenta de tickets, e não numa janela de chat à parte que as pessoas se esquecem de usar.
+corp-scale.c3.viz.l.t	Ferramenta à parte
+corp-scale.c3.viz.l.items.0	passo extra
+corp-scale.c3.viz.l.items.1	pouca adoção
+corp-scale.c3.viz.r.t	Integrada no fluxo
+corp-scale.c3.viz.r.items.0	uso natural
+corp-scale.c3.viz.r.items.1	muita adoção
+corp-scale.c4.title	Trata as exceções
+corp-scale.c4.text	Desenha para os casos que a IA não consegue tratar: os de baixa confiança vão para humanos, com uma forma fácil de corrigir e aprender.
+corp-scale.c4.viz.steps.0	A IA processa o item
+corp-scale.c4.viz.steps.1	Alta confiança: auto
+corp-scale.c4.viz.steps.2	Baixa confiança: fila humana
+corp-scale.c4.viz.steps.3	Correções realimentam
+corp-scale.c5.title	Escala passo a passo
+corp-scale.c5.text	Expande gradualmente: uma equipa, uma região, um tipo de documento, e depois mais. Cada passo revela novos casos-limite e cria confiança.
+corp-scale.c5.viz.events.0.y	Mês 1
+corp-scale.c5.viz.events.0.l	uma equipa
+corp-scale.c5.viz.events.1.y	Mês 3
+corp-scale.c5.viz.events.1.l	uma região
+corp-scale.c5.viz.events.2.y	Mês 6
+corp-scale.c5.viz.events.2.l	todas as regiões
+corp-scale.c5.viz.events.3.y	Mês 9
+corp-scale.c5.viz.events.3.l	novos tipos de documentos
+corp-scale.c6.title	Responsabilidade pela operação
+corp-scale.c6.text	Depois do lançamento, alguém tem de ser o dono: monitorização, suporte, melhorias e custos. Sem dono, as soluções degradam-se.
+corp-scale.c6.viz.items.0	Responsável de negócio
+corp-scale.c6.viz.items.1	Responsável técnico
+corp-scale.c6.viz.items.2	Processo de suporte
+corp-scale.c6.viz.items.3	Backlog de melhorias
+corp-scale.c6.viz.items.4	Orçamento para operação
+corp-scale.c7.title	Industrializa o padrão
+corp-scale.c7.text	Quando um caso de uso funciona, transforma-o num padrão reutilizável (extração de documentos, assistente de conhecimento, triagem) e aplica-o em processos semelhantes.
+corp-scale.c7.viz.steps.0	Um caso de uso bem-sucedido
+corp-scale.c7.viz.steps.1	Generalizar num padrão
+corp-scale.c7.viz.steps.2	Reutilizar noutras equipas
+corp-scale.c7.viz.steps.3	Valor mais rápido
+corp-scale.c8.title	Comunica as vitórias
+corp-scale.c8.text	Partilha internamente os resultados medidos: horas poupadas, erros evitados, histórias de utilizadores. Vitórias visíveis criam dinâmica e financiamento para a vaga seguinte.
+corp-scale.c8.viz.items.0	Resultados medidos
+corp-scale.c8.viz.items.1	Testemunhos
+corp-scale.c8.viz.items.2	Exemplos antes e depois
+corp-scale.c8.viz.items.3	Lições aprendidas
+corp-scale.c9.title	Para o que não funciona
+corp-scale.c9.text	Nem todos os pilotos devem escalar. Uma decisão disciplinada de parar liberta recursos e é sinal de um portefólio saudável.
+corp-scale.c9.viz.steps.0	Rever o piloto face aos critérios
+corp-scale.c9.viz.steps.1	Cumpre: escalar
+corp-scale.c9.viz.steps.2	Quase: ajustar
+corp-scale.c9.viz.steps.3	Falha: parar e aprender
+corp-change.title	Gestão da mudança e adoção
+corp-change.summary	Ajudar as pessoas a usar mesmo a IA.
+corp-change.q0.q	Porque é que muitas ferramentas de IA são pouco usadas?
+corp-change.q0.o0	Maus modelos
+corp-change.q0.o1	As pessoas não têm apoio para mudar a forma como trabalham
+corp-change.q0.o2	Funcionalidades a mais
+corp-change.q0.x	A adoção exige gestão da mudança.
+corp-change.q1.q	O que é uma rede de embaixadores de IA?
+corp-change.q1.o0	Uma equipa desportiva
+corp-change.q1.o1	Utilizadores pioneiros que ajudam e formam os colegas
+corp-change.q1.o2	Um programa de um fornecedor
+corp-change.q1.x	O apoio entre pares espalha a adoção.
+corp-change.q2.q	O que significa o "A" no início de ADKAR?
+corp-change.q2.o0	Ability (capacidade)
+corp-change.q2.o1	Awareness (consciência)
+corp-change.q2.o2	Adoption (adoção)
+corp-change.q2.x	Consciência de porque é que a mudança é necessária.
+corp-change.c0.title	A tecnologia é a parte fácil
+corp-change.c0.text	Os projetos de IA falham mais vezes porque as pessoas não os adotam do que porque a tecnologia falha. A gestão da mudança merece orçamento e atenção a sério.
+corp-change.c0.viz.l.t	Foco só na tecnologia
+corp-change.c0.viz.l.items.0	ferramenta lançada
+corp-change.c0.viz.l.items.1	pouco uso
+corp-change.c0.viz.r.t	Tecnologia + mudança
+corp-change.c0.viz.r.items.0	formação
+corp-change.c0.viz.r.items.1	embaixadores
+corp-change.c0.viz.r.items.2	processos redesenhados
+corp-change.c1.title	Enfrenta os receios abertamente
+corp-change.c1.text	As pessoas preocupam-se com a segurança no emprego, com serem vigiadas e com parecerem incompetentes. Os líderes devem explicar com honestidade o objetivo e como as funções vão evoluir.
+corp-change.c1.viz.items.0	Segurança no emprego
+corp-change.c1.viz.items.1	Ser vigiado
+corp-change.c1.viz.items.2	Perder competências
+corp-change.c1.viz.items.3	Parecer incompetente
+corp-change.c1.viz.items.4	Trabalho extra
+corp-change.c2.title	Rede de embaixadores
+corp-change.c2.text	Utilizadores pioneiros e entusiastas em cada equipa ajudam os colegas, partilham dicas e dão feedback. A aprendizagem entre pares espalha-se mais depressa do que a formação central.
+corp-change.c2.viz.steps.0	Recrutar embaixadores
+corp-change.c2.viz.steps.1	Formá-los a fundo
+corp-change.c2.viz.steps.2	Ajudam as suas equipas
+corp-change.c2.viz.steps.3	Feedback à equipa de IA
+corp-change.c3.title	Formação prática
+corp-change.c3.text	Sessões curtas e práticas com tarefas reais do trabalho de cada um são melhores do que apresentações genéricas. Mostra exemplos de antes e depois.
+corp-change.c3.viz.items.0	Tarefas reais do seu trabalho
+corp-change.c3.viz.items.1	Sessões curtas
+corp-change.c3.viz.items.2	Modelos de prompts
+corp-change.c3.viz.items.3	Horas de apoio
+corp-change.c3.viz.items.4	Dicas de seguimento
+corp-change.c4.title	Redesenha o processo
+corp-change.c4.text	Meter IA num processo que não muda dá ganhos pequenos. Repensar passos, funções e aprovações à volta da IA desbloqueia ganhos maiores.
+corp-change.c4.viz.l.t	Acrescento
+corp-change.c4.viz.l.items.0	mesmo processo
+corp-change.c4.viz.l.items.1	ganhos pequenos
+corp-change.c4.viz.r.t	Redesenho
+corp-change.c4.viz.r.items.0	menos passos
+corp-change.c4.viz.r.items.1	novas funções
+corp-change.c4.viz.r.items.2	grandes ganhos
+corp-change.c5.title	Os líderes vão à frente
+corp-change.c5.text	Quando os líderes usam visivelmente ferramentas de IA e falam disso, a adoção sobe. Se não o fazem, as equipas concluem que não é importante.
+corp-change.c5.viz.steps.0	Líderes usam IA à vista
+corp-change.c5.viz.steps.1	Partilham exemplos
+corp-change.c5.viz.steps.2	As equipas seguem
+corp-change.c5.viz.steps.3	A cultura muda
+corp-change.c6.title	Mede a adoção
+corp-change.c6.text	Acompanha utilizadores ativos, frequência, casos de uso, satisfação e impacto. Pouca adoção numa equipa é um sinal para investigar, não apenas para pressionar mais.
+corp-change.c6.viz.items.0	Utilizadores ativos
+corp-change.c6.viz.items.1	Frequência de uso
+corp-change.c6.viz.items.2	Satisfação
+corp-change.c6.viz.items.3	Métricas de impacto
+corp-change.c6.viz.items.4	Comparação entre equipas
+corp-change.c7.title	Torna-o fácil
+corp-change.c7.text	Single sign-on, integração nas ferramentas existentes, bibliotecas de prompts e modelos eliminam atrito. Cada clique a mais custa adoção.
+corp-change.c7.viz.items.0	Single sign-on
+corp-change.c7.viz.items.1	Integrado nas ferramentas diárias
+corp-change.c7.viz.items.2	Biblioteca de prompts e modelos
+corp-change.c7.viz.items.3	Boa integração inicial
+corp-change.c7.viz.items.4	Ajuda rápida
+corp-change.c8.title	Celebra e partilha
+corp-change.c8.text	Partilha histórias de sucesso, organiza mostras internas ou hackathons, e reconhece quem descobre novos usos valiosos.
+corp-change.c8.viz.items.0	Histórias de sucesso
+corp-change.c8.viz.items.1	Mostras internas
+corp-change.c8.viz.items.2	Hackathons
+corp-change.c8.viz.items.3	Reconhecimento
+corp-change.c8.viz.items.4	Canais da comunidade
+corp-change.c9.title	ADKAR em resumo
+corp-change.c9.text	Um modelo de mudança comum: Awareness (consciência do porquê), Desire (vontade de participar), Knowledge (saber como), Ability (capacidade de o fazer), Reinforcement (reforço para que perdure).
+corp-change.c9.viz.items.0	Reforço
+corp-change.c9.viz.items.1	Capacidade
+corp-change.c9.viz.items.2	Conhecimento
+corp-change.c9.viz.items.3	Vontade
+corp-change.c9.viz.items.4	Consciência
+corp-skills.title	Competências e modelo operativo
+corp-skills.summary	Quem faz o quê numa empresa com IA.
+corp-skills.q0.q	O que faz um Centro de Excelência de IA?
+corp-skills.q0.o0	Substitui toda a área de TI
+corp-skills.q0.o1	Define normas, constrói plataformas partilhadas e apoia as equipas
+corp-skills.q0.o2	Vende IA
+corp-skills.q0.x	Competência e governação centrais.
+corp-skills.q1.q	Num modelo hub-and-spoke, os spokes são…
+corp-skills.q1.o0	Fornecedores
+corp-skills.q1.o1	Equipas de IA integradas nas unidades de negócio
+corp-skills.q1.o2	Centros de dados
+corp-skills.q1.x	Equipas locais próximas dos processos.
+corp-skills.q2.q	Porque são os especialistas do negócio essenciais nos projetos de IA?
+corp-skills.q2.o0	Escrevem o código
+corp-skills.q2.o1	Definem o que é um bom resultado e validam as respostas
+corp-skills.q2.o2	Compram GPUs
+corp-skills.q2.x	O conhecimento do negócio é fundamental.
+corp-skills.c0.title	Literacia em IA para todos
+corp-skills.c0.text	Todos os que usam IA precisam de uma literacia básica: o que consegue e não consegue fazer, como escrever prompts, como verificar as respostas e que regras de dados se aplicam. O Regulamento Europeu da IA já o exige.
+corp-skills.c0.viz.items.0	O que a IA faz e não faz
+corp-skills.c0.viz.items.1	Básicos de prompts
+corp-skills.c0.viz.items.2	Verificar as respostas
+corp-skills.c0.viz.items.3	Regras de dados e privacidade
+corp-skills.c0.viz.items.4	Quando escalar
+corp-skills.c1.title	Papéis-chave
+corp-skills.c1.text	Construir IA exige uma combinação: product owners, engenheiros de dados, engenheiros de ML/IA, engenheiros de software, designers e especialistas do negócio, além de papéis de governação.
+corp-skills.c1.viz.items.0.a	product owner
+corp-skills.c1.viz.items.0.b	valor e prioridades
+corp-skills.c1.viz.items.1.a	engenheiro de dados
+corp-skills.c1.viz.items.1.b	pipelines e qualidade
+corp-skills.c1.viz.items.2.a	engenheiro de IA
+corp-skills.c1.viz.items.2.b	modelos, RAG, agentes
+corp-skills.c1.viz.items.3.a	especialista do negócio
+corp-skills.c1.viz.items.3.b	conhecimento do negócio
+corp-skills.c1.viz.items.4.a	designer
+corp-skills.c1.viz.items.4.b	experiência do utilizador
+corp-skills.c2.title	Centro de Excelência
+corp-skills.c2.text	Um CoE central de IA define normas, constrói a plataforma, partilha boas práticas e ajuda as equipas. Evita duplicações e controlos inconsistentes.
+corp-skills.c2.viz.items.0	Normas e guardrails
+corp-skills.c2.viz.items.1	Plataforma partilhada
+corp-skills.c2.viz.items.2	Boas práticas
+corp-skills.c2.viz.items.3	Apoio especializado
+corp-skills.c2.viz.items.4	Formação
+corp-skills.c3.title	Hub and spoke
+corp-skills.c3.text	Um modelo comum: um hub central (plataforma, governação, competência) mais spokes integrados nas unidades de negócio, que conhecem os processos locais e impulsionam os casos de uso.
+corp-skills.c3.viz.root	Hub de IA
+corp-skills.c3.viz.items.0	Spoke Finanças
+corp-skills.c3.viz.items.1	Spoke Operações
+corp-skills.c3.viz.items.2	Spoke Comercial
+corp-skills.c3.viz.items.3	Spoke RH
+corp-skills.c4.title	Equipas globais
+corp-skills.c4.text	As grandes empresas combinam muitas vezes equipas globais de plataforma com hubs regionais de entrega, equilibrando as normas com as necessidades locais e os fusos horários.
+corp-skills.c4.viz.l.t	Global
+corp-skills.c4.viz.l.items.0	plataforma
+corp-skills.c4.viz.l.items.1	governação
+corp-skills.c4.viz.l.items.2	serviços partilhados
+corp-skills.c4.viz.r.t	Regional
+corp-skills.c4.viz.r.items.0	casos de uso locais
+corp-skills.c4.viz.r.items.1	línguas
+corp-skills.c4.viz.r.items.2	regulamentação
+corp-skills.c5.title	Requalificar engenheiros
+corp-skills.c5.text	Os programadores existentes conseguem aprender engenharia de IA depressa: APIs, RAG, avaliação, design de prompts. Requalificar e juntar alguns especialistas costuma ser melhor do que contratar apenas novos especialistas.
+corp-skills.c5.viz.steps.0	Engenheiros atuais
+corp-skills.c5.viz.steps.1	Formação em engenharia de IA
+corp-skills.c5.viz.steps.2	Trabalhar com especialistas
+corp-skills.c5.viz.steps.3	Entregar casos de uso
+corp-skills.c6.title	Os especialistas do negócio são essenciais
+corp-skills.c6.text	Contabilistas, traders, juristas e engenheiros definem o que é "bom", rotulam exemplos e validam as respostas. Sem eles, as soluções de IA falham o essencial.
+corp-skills.c6.viz.items.0	Definir critérios de sucesso

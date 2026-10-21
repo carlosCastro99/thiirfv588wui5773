@@ -257,3 +257,932 @@ ma-stats.c0.viz.items.1.a	Mediana
 ma-stats.c0.viz.items.1.b	valor do meio, ordenado
 ma-stats.c0.viz.items.2.a	Moda
 ma-stats.c0.viz.items.2.b	valor mais frequente
+ma-stats.c1.title	Quando a média engana
+ma-stats.c1.text	Se um bilionário entrar num café, a riqueza média dos clientes dispara, mas a mediana quase não mexe. Os salários descrevem-se melhor pela mediana.
+ma-stats.c1.viz.unit	milhares de € (exemplo)
+ma-stats.c1.viz.items.0.l	Salário mediano
+ma-stats.c1.viz.items.1.l	Salário médio
+ma-stats.c2.title	Dispersão
+ma-stats.c2.text	Duas turmas podem ter a mesma média, mas dispersões muito diferentes. O desvio-padrão mede quão longe da média os valores costumam estar.
+ma-stats.c2.viz.l.t	Turma A
+ma-stats.c2.viz.l.items.0	média 14
+ma-stats.c2.viz.l.items.1	todas entre 12 e 16
+ma-stats.c2.viz.r.t	Turma B
+ma-stats.c2.viz.r.items.0	média 14
+ma-stats.c2.viz.r.items.1	de 5 a 20
+ma-stats.c3.title	A curva em sino
+ma-stats.c3.text	Muitas medições, como as alturas, concentram-se à volta de uma média em forma de sino. Cerca de 68% dos valores ficam a menos de um desvio-padrão e 95% a menos de dois.
+ma-stats.c3.viz.unit	% dentro
+ma-stats.c3.viz.items.0.l	1 DP
+ma-stats.c3.viz.items.1.l	2 DP
+ma-stats.c3.viz.items.2.l	3 DP
+ma-stats.c4.title	Amostras
+ma-stats.c4.text	Uma amostra aleatória bem escolhida de 1,000 pessoas pode representar milhões. Uma amostra grande mas enviesada não: importa mais a quem perguntas do que a quantos.
+ma-stats.c4.viz.l.t	Boa
+ma-stats.c4.viz.l.items.0	amostra aleatória
+ma-stats.c4.viz.l.items.1	1,000 pessoas
+ma-stats.c4.viz.r.t	Má
+ma-stats.c4.viz.r.items.0	sondagem online
+ma-stats.c4.viz.r.items.1	100,000 autosselecionados
+ma-stats.c5.title	Margem de erro
+ma-stats.c5.text	As sondagens indicam uma margem de erro. Com cerca de 1,000 pessoas, ronda os ±3 pontos percentuais, por isso 51% contra 49% pode ser um empate.
+ma-stats.c5.viz.items.0.l	Candidato A
+ma-stats.c5.viz.items.1.l	Candidato B
+ma-stats.c6.title	Gráficos enganadores
+ma-stats.c6.text	Um eixo vertical que não começa no zero pode fazer uma pequena diferença parecer enorme. Verifica sempre a escala.
+ma-stats.c6.viz.items.0.w	Barra de 98 a 100 parece o dobro
+ma-stats.c6.viz.items.0.r	Vê o eixo: a diferença é de 2%
+ma-stats.c7.title	O paradoxo de Simpson
+ma-stats.c7.text	Uma tendência presente em todos os grupos pode inverter-se quando os grupos são juntos. Um tratamento pode parecer melhor em cada hospital mas pior no total, se os hospitais tiverem doentes com perfis diferentes.
+ma-stats.c7.viz.steps.0	Em cada grupo: A ganha
+ma-stats.c7.viz.steps.1	Grupos de tamanhos diferentes
+ma-stats.c7.viz.steps.2	Juntos: B parece ganhar
+ma-stats.c8.title	Regressão à média
+ma-stats.c8.text	Depois de um resultado extremo, o seguinte tende a ficar mais perto da média. A época recorde de uma estrela do desporto é muitas vezes seguida de uma mais normal, sem maldição nenhuma.
+ma-stats.c8.viz.steps.0	Resultado extremo
+ma-stats.c8.viz.steps.1	Em parte, sorte
+ma-stats.c8.viz.steps.2	A seguir: mais perto da média
+ma-stats.c9.title	Ler uma estatística nas notícias
+ma-stats.c9.text	Faz quatro perguntas: comparado com quê? Em quantos? Quem foi medido? Quem pagou o estudo?
+ma-stats.c9.viz.items.0	Comparado com quê?
+ma-stats.c9.viz.items.1	Em quantos?
+ma-stats.c9.viz.items.2	Quem foi medido?
+ma-stats.c9.viz.items.3	Quem financiou?
+ma-logic.title	Lógica e enigmas
+ma-logic.summary	Pensamento claro, dos paradoxos aos computadores.
+ma-logic.q0.q	Quanto é 101 em binário, como número normal?
+ma-logic.q0.o0	101
+ma-logic.q0.o1	3
+ma-logic.q0.o2	5
+ma-logic.q0.x	4 + 0 + 1.
+ma-logic.q1.q	"Se chover, o chão fica molhado. O chão está molhado." Daqui conclui-se que choveu?
+ma-logic.q1.o0	Sim
+ma-logic.q1.o1	Não
+ma-logic.q1.o2	Só no inverno
+ma-logic.q1.x	Outra coisa pode tê-lo molhado.
+ma-logic.c0.title	Verdadeiro e falso
+ma-logic.c0.text	A lógica trabalha com afirmações verdadeiras ou falsas e combina-as com E (AND), OU (OR) e NÃO (NOT). Todos os chips de computador são construídos a partir destas operações.
+ma-logic.c0.viz.items.0.a	E
+ma-logic.c0.viz.items.0.b	verdadeiro se ambos o forem
+ma-logic.c0.viz.items.1.a	OU
+ma-logic.c0.viz.items.1.b	verdadeiro se pelo menos um o for
+ma-logic.c0.viz.items.2.a	NÃO
+ma-logic.c0.viz.items.2.b	troca verdadeiro e falso
+ma-logic.c1.title	Se… então…
+ma-logic.c1.text	"Se chover, o chão fica molhado" não significa "se o chão está molhado, choveu": um aspersor também o faz. Confundir as duas é um erro lógico clássico.
+ma-logic.c1.viz.items.0.w	Chão molhado, logo choveu
+ma-logic.c1.viz.items.0.r	Outra coisa pode tê-lo molhado
+ma-logic.c2.title	Prova por contradição
+ma-logic.c2.text	Supõe o contrário do que queres provar e mostra que isso leva a um absurdo. Euclides provou assim que há infinitos números primos.
+ma-logic.c2.viz.steps.0	Supor o contrário
+ma-logic.c2.viz.steps.1	Seguir a lógica
+ma-logic.c2.viz.steps.2	Chegar a uma contradição
+ma-logic.c2.viz.steps.3	Logo, o original é verdadeiro
+ma-logic.c3.title	O paradoxo do mentiroso
+ma-logic.c3.text	"Esta frase é falsa." Se for verdadeira, é falsa; se for falsa, é verdadeira. Paradoxos como este abalaram os alicerces da lógica no século XX.
+ma-logic.c3.viz.steps.0	É verdadeira
+ma-logic.c3.viz.steps.1	Logo, é falsa
+ma-logic.c3.viz.steps.2	Logo, é verdadeira
+ma-logic.c4.title	A incompletude de Gödel
+ma-logic.c4.text	Em 1931, Kurt Gödel provou que qualquer sistema de regras consistente e rico o suficiente para a aritmética tem afirmações verdadeiras que não consegue provar. A matemática nunca poderá ser completa.
+ma-logic.c4.viz.steps.0	Qualquer sistema consistente
+ma-logic.c4.viz.steps.1	Rico o suficiente para a aritmética
+ma-logic.c4.viz.steps.2	Tem verdades indemonstráveis
+ma-logic.c5.title	Algoritmos
+ma-logic.c5.text	Um algoritmo é uma receita precisa, passo a passo, para resolver um problema. A palavra vem do nome de al-Khwarizmi, um matemático de Bagdade do século IX.
+ma-logic.c5.viz.steps.0	Entrada
+ma-logic.c5.viz.steps.1	Passos claros
+ma-logic.c5.viz.steps.2	Saída
+ma-logic.c6.title	Binário
+ma-logic.c6.text	Os computadores contam em base 2, usando apenas 0 e 1. Cada posição vale o dobro da que está à sua direita: 1, 2, 4, 8, 16…
+ma-logic.c7.title	O paradoxo de Zenão
+ma-logic.c7.text	Para atravessares uma sala, tens primeiro de percorrer metade, depois metade do que falta, e assim para sempre. Zenão dizia que nunca chegarias. A soma infinita 1/2 + 1/4 + 1/8 + … é, na verdade, igual a 1.
+ma-logic.c7.viz.unit	distância percorrida
+ma-logic.c7.viz.items.0.l	Passo 1
+ma-logic.c7.viz.items.1.l	Passo 2
+ma-logic.c7.viz.items.2.l	Passo 3
+ma-logic.c7.viz.items.3.l	Passo 4
+ma-logic.c8.title	Problemas por resolver
+ma-logic.c8.text	Algumas perguntas aparentemente simples continuam por resolver, como a conjetura de Goldbach: todo o número par maior do que 2 é a soma de dois primos? Foi testada até números enormes, mas nunca provada.
+ma-logic.c8.example.0	4 = 2 + 2
+ma-logic.c8.example.1	10 = 3 + 7
+ma-logic.c8.example.2	28 = 5 + 23
+ma-logic.c8.viz.items.0	Conjetura de Goldbach
+ma-logic.c8.viz.items.1	Primos gémeos
+ma-logic.c8.viz.items.2	A hipótese de Riemann
+ma-logic.c8.viz.items.3	P vs NP
+ma-logic.c9.title	A travessia do rio
+ma-logic.c9.text	Um agricultor tem de atravessar um rio com um lobo, uma cabra e uma couve, levando um de cada vez. O lobo não pode ficar sozinho com a cabra, nem a cabra com a couve. O truque: trazer a cabra de volta.
+ma-logic.c9.viz.steps.0	Levar a cabra
+ma-logic.c9.viz.steps.1	Levar o lobo
+ma-logic.c9.viz.steps.2	Trazer a cabra de volta
+ma-logic.c9.viz.steps.3	Levar a couve
+ma-logic.c9.viz.steps.4	Ir buscar a cabra
+ma-percent.title	Percentagens no dia a dia
+ma-percent.summary	Descontos, juros e manchetes.
+ma-percent.q0.q	Um artigo de €100 sobe 50% e depois desce 50%. Quanto custa?
+ma-percent.q0.o0	€100
+ma-percent.q0.o1	€75
+ma-percent.q0.o2	€50
+ma-percent.q0.x	€150 × 0.5 = €75.
+ma-percent.q1.q	Um preço com IVA a 23% é €123. Qual é o preço sem IVA?
+ma-percent.q1.o0	€94.71
+ma-percent.q1.o1	€100
+ma-percent.q1.o2	€96
+ma-percent.q1.x	Divide por 1.23.
+ma-percent.q2.q	"30% de desconto e depois mais 20%" equivale a um desconto de…
+ma-percent.q2.o0	50%
+ma-percent.q2.o1	44%
+ma-percent.q2.o2	40%
+ma-percent.q2.x	0.7 × 0.8 = 0.56.
+ma-percent.c0.title	O que é uma percentagem
+ma-percent.c0.text	"Por cento" significa "em cada 100". 25% são 25 em cada 100, ou seja, um quarto. Para calcular uma percentagem de um número, multiplica-o pela percentagem e divide por 100.
+ma-percent.c0.formula	x% de N = N × x ÷ 100
+ma-percent.c0.viz.f	x% de N = N × x ÷ 100
+ma-percent.c0.viz.items.0.s	x
+ma-percent.c0.viz.items.0.m	a percentagem
+ma-percent.c0.viz.items.1.s	N
+ma-percent.c0.viz.items.1.m	o número
+ma-percent.c1.title	Truques rápidos
+ma-percent.c1.text	10% é fácil: move o separador decimal uma casa para a esquerda. A partir daí, 5% é metade disso e 20% é o dobro.
+ma-percent.c1.example.0	10% de €84 = €8.40
+ma-percent.c1.example.1	5% = €4.20
+ma-percent.c1.example.2	20% = €16.80
+ma-percent.c1.viz.items.0.b	mover o separador
+ma-percent.c1.viz.items.1.b	metade de 10%
+ma-percent.c1.viz.items.2.b	o dobro de 10%
+ma-percent.c1.viz.items.3.b	mover o separador duas casas
+ma-percent.c2.title	As percentagens trocam
+ma-percent.c2.text	8% de 25 é igual a 25% de 8, porque a multiplicação funciona nos dois sentidos. Usa a que for mais fácil: 4% de 75 é 75% de 4, ou seja, 3.
+ma-percent.c2.viz.items.0.a	8% de 25
+ma-percent.c2.viz.items.0.b	25% de 8 = 2
+ma-percent.c2.viz.items.1.a	4% de 75
+ma-percent.c2.viz.items.1.b	75% de 4 = 3
+ma-percent.c2.viz.items.2.a	18% de 50
+ma-percent.c2.viz.items.2.b	50% de 18 = 9
+ma-percent.c3.title	Sobe e depois desce
+ma-percent.c3.text	Uma subida de 50% seguida de uma descida de 50% não te leva de volta ao início. €100 passam a €150 e depois a €75.
+ma-percent.c3.viz.items.0.l	Início
+ma-percent.c3.viz.items.1.l	Após +50%
+ma-percent.c3.viz.items.2.l	Depois −50%
+ma-percent.c4.title	Pontos percentuais
+ma-percent.c4.text	Se as taxas de juro passarem de 2% para 3%, é uma subida de 1 ponto percentual, mas um aumento de 50% na taxa. As manchetes confundem muitas vezes as duas coisas.
+ma-percent.c4.viz.l.t	Pontos percentuais
+ma-percent.c4.viz.l.items.0	3% − 2% = 1 ponto
+ma-percent.c4.viz.r.t	Variação percentual
+ma-percent.c5.title	Percentagens ao contrário
+ma-percent.c5.text	Um preço com IVA a 23% incluído é €123. O preço sem IVA não é €123 menos 23%; é €123 ÷ 1.23 = €100.
+ma-percent.c6.title	Descontos acumulam-se de forma estranha
+ma-percent.c6.text	"30% de desconto, mais 20% extra" não é 50% de desconto. É 0.7 × 0.8 = 0.56 do preço: um desconto de 44%.
+ma-percent.c6.viz.unit	preço, €
+ma-percent.c6.viz.items.0.l	Original
+ma-percent.c6.viz.items.1.l	−30%
+ma-percent.c6.viz.items.2.l	Depois mais −20%
+ma-percent.c7.title	Variação percentual
+ma-percent.c7.text	Variação ÷ valor inicial × 100. De 80 para 100 é uma subida de 25%; de 100 de volta a 80 é uma descida de 20%. O ponto de partida conta.
+ma-percent.c7.viz.f	variação % = (novo − antigo) ÷ antigo × 100
+ma-percent.c7.viz.items.0.s	novo
+ma-percent.c7.viz.items.0.m	o valor final
+ma-percent.c7.viz.items.1.s	antigo
+ma-percent.c7.viz.items.1.m	o valor inicial
+ma-percent.c8.title	Gorjetas e divisões
+ma-percent.c8.text	Para dividir uma conta de €60 com 10% de gorjeta por quatro: €60 × 1.1 = €66, a dividir por 4 = €16.50 cada.
+ma-percent.c8.example.0	€60 × 1.10 = €66
+ma-percent.c8.example.1	€66 ÷ 4 = €16.50 cada
+ma-percent.c8.viz.steps.0	Conta
+ma-percent.c8.viz.steps.1	Gorjeta: × 1.1
+ma-percent.c8.viz.steps.2	Dividir por pessoas
+ma-percent.c8.viz.steps.3	Parte de cada um
+ma-percent.c9.title	Percentagens enganadoras
+ma-percent.c9.text	"Vendas sobem 200%!" de 1 para 3 unidades parece dramático, mas significa pouco. Pede sempre os números reais por trás de uma percentagem.
+ma-percent.c9.viz.items.0.w	"Mais 200%!"
+ma-percent.c9.viz.items.0.r	De 1 para 3: continua mínimo
+ma-fractions.title	Frações, razões e proporções
+ma-fractions.summary	Partilhar, mudar de escala e receitas.
+ma-fractions.q0.q	Quanto é 1/2 + 1/3?
+ma-fractions.q0.o0	2/5
+ma-fractions.q0.o1	5/6
+ma-fractions.q0.o2	1/6
+ma-fractions.q0.x	3/6 + 2/6.
+ma-fractions.q1.q	Quanto é 3 ÷ ½?
+ma-fractions.q1.o0	1.5
+ma-fractions.q1.o1	6
+ma-fractions.q1.o2	3
+ma-fractions.q1.x	Quantas metades cabem em três?
+ma-fractions.c0.title	As frações são divisões
+ma-fractions.c0.text	3/4 significa 3 a dividir por 4: três de quatro partes iguais, ou 0.75. O número de baixo diz em quantas partes se divide; o de cima diz quantas tiras.
+ma-fractions.c1.title	Frações equivalentes
+ma-fractions.c1.text	Multiplicar o numerador e o denominador pelo mesmo número não altera uma fração: 1/2 = 2/4 = 50/100. Simplifica dividindo ambos por um fator comum.
+ma-fractions.c1.viz.steps.1	Dividir ambos por 2
+ma-fractions.c2.title	Somar frações
+ma-fractions.c2.text	Para somar frações, dá-lhes primeiro o mesmo denominador: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
+ma-fractions.c2.example.0	1/2 = 3/6
+ma-fractions.c2.example.1	1/3 = 2/6
+ma-fractions.c2.example.2	3/6 + 2/6 = 5/6
+ma-fractions.c2.viz.steps.0	Achar um denominador comum
+ma-fractions.c2.viz.steps.1	Converter cada uma
+ma-fractions.c2.viz.steps.2	Somar numeradores
+ma-fractions.c3.title	Multiplicar frações
+ma-fractions.c3.text	Multiplica os numeradores entre si e os denominadores entre si. Metade de três quartos é 1/2 × 3/4 = 3/8. "De" significa multiplicar.
+ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
+ma-fractions.c3.viz.items.0.s	a, c
+ma-fractions.c3.viz.items.0.m	de cima
+ma-fractions.c3.viz.items.1.s	b, d
+ma-fractions.c3.viz.items.1.m	de baixo
+ma-fractions.c4.title	Dividir por uma fração
+ma-fractions.c4.text	Dividir por uma fração é multiplicar pela fração invertida. 3 ÷ 1/2 = 6: quantas metades cabem em 3? Seis.
+ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1.5
+ma-fractions.c4.viz.items.0.r	3 ÷ ½ = 6, pois seis metades fazem três
+ma-fractions.c5.title	Razões
+ma-fractions.c5.text	Uma razão compara quantidades. Uma mistura de cimento e areia de 2:3 significa 2 partes de cimento por cada 3 de areia: 2/5 da mistura é cimento.
+ma-fractions.c5.viz.unit	partes
+ma-fractions.c5.viz.items.0.l	Cimento
+ma-fractions.c5.viz.items.1.l	Areia
+ma-fractions.c6.title	Adaptar receitas
+ma-fractions.c6.text	Uma receita para 4 leva 300 g de farinha. Para 6 pessoas, multiplica por 6/4 = 1.5: 450 g.
+ma-fractions.c6.example.0	Fator de escala = 6 ÷ 4 = 1.5
+ma-fractions.c6.example.1	300 g × 1.5 = 450 g
+ma-fractions.c6.viz.steps.0	Achar o fator de escala
+ma-fractions.c6.viz.steps.1	Multiplicar cada ingrediente
+ma-fractions.c6.viz.steps.2	Cozinhar
+ma-fractions.c7.title	Preço por unidade
+ma-fractions.c7.text	Compara promoções pelo preço por unidade. 500 g por €2.40 dá €4.80/kg; 750 g por €3.30 dá €4.40/kg. Aqui a embalagem maior é mais barata, mas nem sempre é assim.
+ma-fractions.c7.viz.unit	€ por kg
+ma-fractions.c7.viz.items.0.l	Pacote 500 g
+ma-fractions.c7.viz.items.1.l	Pacote 750 g
+ma-fractions.c8.title	Escalas de mapas
+ma-fractions.c8.text	Num mapa à escala 1:25,000, 1 cm corresponde a 25,000 cm, ou seja, 250 m no terreno. Os mapas de caminhada usam muitas vezes esta escala.
+ma-fractions.c8.viz.items.0.a	1 cm no mapa
+ma-fractions.c8.viz.items.0.b	250 m no terreno
+ma-fractions.c8.viz.items.1.a	4 cm no mapa
+ma-fractions.c8.viz.items.1.b	1 km
+ma-fractions.c8.viz.items.2.a	Escala
+ma-fractions.c9.title	Proporcionalidade direta e inversa
+ma-fractions.c9.text	O dobro das horas ao mesmo valor por hora dá o dobro do dinheiro: proporcionalidade direta. O dobro dos trabalhadores numa tarefa dá metade do tempo: proporcionalidade inversa, mais ou menos.
+ma-fractions.c9.viz.l.t	Direta
+ma-fractions.c9.viz.l.items.0	um duplica, o outro duplica
+ma-fractions.c9.viz.l.items.1	horas e salário
+ma-fractions.c9.viz.r.t	Inversa
+ma-fractions.c9.viz.r.items.0	um duplica, o outro cai a metade
+ma-fractions.c9.viz.r.items.1	trabalhadores e tempo
+ma-mental.title	Truques de cálculo mental
+ma-mental.summary	Contas de cabeça mais rápidas.
+ma-mental.q0.q	Quanto é 11 × 43?
+ma-mental.q0.o0	443
+ma-mental.q0.o1	473
+ma-mental.q0.o2	4,343
+ma-mental.q0.x	4 _ 3, com 4 + 3 = 7 no meio.
+ma-mental.q1.q	Quanto é 45²?
+ma-mental.q1.o0	1,625
+ma-mental.q1.o1	2,025
+ma-mental.q1.o2	2,045
+ma-mental.q1.x	4 × 5 = 20, depois 25.
+ma-mental.c0.title	Arredondar e ajustar
+ma-mental.c0.text	Para somar 298 + 157, soma 300 e tira 2: 457 − 2 = 455. Arredondar para números simpáticos torna muitas contas fáceis.
+ma-mental.c0.viz.steps.2	Tirar 2
+ma-mental.c1.title	Multiplicar por 5
+ma-mental.c1.text	Para multiplicar por 5, multiplica por 10 e divide por 2. 5 × 48 = 480 ÷ 2 = 240.
+ma-mental.c1.example.0	48 × 10 = 480
+ma-mental.c1.example.1	480 ÷ 2 = 240
+ma-mental.c1.viz.items.0.b	× 10, depois metade
+ma-mental.c1.viz.items.1.b	× 100, depois ÷ 4
+ma-mental.c1.viz.items.2.b	× 100, depois metade
+ma-mental.c2.title	Multiplicar por 11
+ma-mental.c2.text	Para um número de dois algarismos, soma os algarismos e põe a soma no meio: 11 × 36 = 3(3+6)6 = 396. Se a soma for 10 ou mais, vai um.
+ma-mental.c2.example.0	11 × 36 → 3 _ 6
+ma-mental.c2.example.1	3 + 6 = 9
+ma-mental.c2.example.2	396
+ma-mental.c2.viz.steps.1	Separar: 3 _ 6
+ma-mental.c2.viz.steps.2	No meio: 3 + 6 = 9
+ma-mental.c3.title	Quadrados terminados em 5
+ma-mental.c3.text	Para elevar ao quadrado um número terminado em 5, multiplica a primeira parte pelo número seguinte e junta 25 no fim: 35² = (3 × 4) e depois 25 = 1,225.
+ma-mental.c3.example.0	35²: 3 × 4 = 12
+ma-mental.c3.example.1	junta 25
+ma-mental.c3.example.2	1,225
+ma-mental.c3.viz.items.0.a	25²
+ma-mental.c3.viz.items.1.a	45²
+ma-mental.c3.viz.items.2.a	65²
+ma-mental.c3.viz.items.3.a	85²
+ma-mental.c4.title	Dobrar e dividir ao meio
+ma-mental.c4.text	Divide um número por 2 e multiplica o outro por 2: o produto mantém-se. 16 × 25 = 8 × 50 = 4 × 100 = 400.
+ma-mental.c5.title	Decompor
+ma-mental.c5.text	Decompõe as multiplicações difíceis: 7 × 48 = 7 × 50 − 7 × 2 = 350 − 14 = 336.
+ma-mental.c5.example.0	7 × 50 = 350
+ma-mental.c5.example.1	7 × 2 = 14
+ma-mental.c5.example.2	350 − 14 = 336
+ma-mental.c6.title	Critérios de divisibilidade
+ma-mental.c6.text	Um número é divisível por 3 se a soma dos seus algarismos for múltiplo de 3; por 9 se for múltiplo de 9; por 4 se os dois últimos algarismos formarem um múltiplo de 4.
+ma-mental.c6.viz.items.0.b	último algarismo par
+ma-mental.c6.viz.items.1.b	soma dos algarismos divisível por 3
+ma-mental.c6.viz.items.2.b	acaba em 0 ou 5
+ma-mental.c6.viz.items.3.b	soma dos algarismos divisível por 9
+ma-mental.c7.title	Estima primeiro
+ma-mental.c7.text	Antes de calcular, faz uma estimativa. 49 × 21 é cerca de 50 × 20 = 1,000; se a tua resposta for 10,290, algo correu mal.
+ma-mental.c7.viz.steps.0	Arredondar os números
+ma-mental.c7.viz.steps.1	Estimativa rápida
+ma-mental.c7.viz.steps.2	Calcular
+ma-mental.c7.viz.steps.3	Comparar
+ma-mental.c8.title	Contar para cima para dar o troco
+ma-mental.c8.text	Os comerciantes dão o troco contando para cima. Pagas €20 por €13.65: até €14 são 35 cêntimos, até €20 são €6, logo €6.35.
+ma-mental.c8.viz.steps.3	Troco: €6.35
+ma-mental.c9.title	Converter temperaturas
+ma-mental.c9.text	De Celsius para Fahrenheit, aproximadamente: duplica e soma 30. 20 °C ≈ 70 °F (exatamente 68). Para o valor exato, multiplica por 1.8 e soma 32.
+ma-mental.c9.viz.f	°F = °C × 1.8 + 32
+ma-mental.c9.viz.items.0.s	°C
+ma-mental.c9.viz.items.0.m	Celsius
+ma-mental.c9.viz.items.1.s	°F
+ma-mental.c9.viz.items.1.m	Fahrenheit
+ma-mental.c9.viz.items.2.s	versão rápida
+ma-mental.c9.viz.items.2.m	dobro, mais 30
+ma-algebra.title	Álgebra sem medo
+ma-algebra.summary	As letras são só números desconhecidos.
+ma-algebra.q0.q	Resolve 3x + 4 = 19.
+ma-algebra.q0.o0	x = 3
+ma-algebra.q0.o1	x = 5
+ma-algebra.q0.o2	x = 7
+ma-algebra.q0.x	Subtrai 4 e depois divide por 3.
+ma-algebra.q1.q	Quanto é 5 − (−3)?
+ma-algebra.q1.o0	2
+ma-algebra.q1.o1	8
+ma-algebra.q1.o2	−8
+ma-algebra.q1.x	Subtrair um negativo é somar.
+ma-algebra.c0.title	O que é a álgebra
+ma-algebra.c0.text	A álgebra usa letras para números que ainda não conhecemos. "Um número mais 5 é 12" passa a x + 5 = 12, logo x = 7.
+ma-algebra.c0.viz.steps.0	Palavras
+ma-algebra.c0.viz.steps.1	Equação
+ma-algebra.c0.viz.steps.2	Resolver
+ma-algebra.c0.viz.steps.3	x = 7
+ma-algebra.c1.title	Manter o equilíbrio
+ma-algebra.c1.text	Uma equação é uma balança: o que fizeres de um lado, faz também do outro. Subtrai 5 a ambos os lados de x + 5 = 12 para obter x = 7.
+ma-algebra.c1.example.0	x + 5 = 12
+ma-algebra.c1.example.1	x + 5 − 5 = 12 − 5
+ma-algebra.c1.example.2	x = 7
+ma-algebra.c1.viz.l.t	Lado esquerdo
+ma-algebra.c1.viz.l.items.0	x + 5
+ma-algebra.c1.viz.r.t	Lado direito
+ma-algebra.c2.title	Equações em dois passos
+ma-algebra.c2.text	3x + 4 = 19: subtrai 4 a ambos os lados (3x = 15) e depois divide ambos por 3 (x = 5). Desfaz as operações pela ordem inversa.
+ma-algebra.c2.example.0	3x + 4 = 19
+ma-algebra.c2.example.1	3x = 15
+ma-algebra.c2.example.2	x = 5
+ma-algebra.c2.viz.steps.0	3x + 4 = 19
+ma-algebra.c2.viz.steps.1	Subtrair 4
+ma-algebra.c2.viz.steps.2	Dividir por 3
+ma-algebra.c2.viz.steps.3	x = 5
+ma-algebra.c3.title	De onde veio
+ma-algebra.c3.text	A palavra "álgebra" vem de *al-jabr*, "restaurar", no título do livro de al-Khwarizmi, escrito em Bagdade no século IX. As letras para as incógnitas vieram mais tarde, com François Viète, na década de 1590.
+ma-algebra.c3.viz.events.0.y	~820 d.C.
+ma-algebra.c3.viz.events.0.l	Livro de al-Khwarizmi
+ma-algebra.c3.viz.events.1.l	Viète usa letras
+ma-algebra.c3.viz.events.2.l	O x, y, z de Descartes
+ma-algebra.c4.title	As fórmulas são álgebra
+ma-algebra.c4.text	Todas as fórmulas são álgebra: área = comprimento × largura, velocidade = distância ÷ tempo. Reorganizá-las permite descobrir qualquer parte em falta.
+ma-algebra.c4.viz.f	d = s × t
+ma-algebra.c4.viz.items.0.s	d
+ma-algebra.c4.viz.items.0.m	distância
+ma-algebra.c4.viz.items.1.s	s
+ma-algebra.c4.viz.items.1.m	velocidade
+ma-algebra.c4.viz.items.2.s	t
+ma-algebra.c4.viz.items.2.m	tempo
+ma-algebra.c4.viz.items.3.m	logo s = d ÷ t
+ma-algebra.c5.title	Desembaraçar parênteses
+ma-algebra.c5.text	Multiplica tudo o que está dentro pelo que está fora: 3(x + 4) = 3x + 12. Também dá jeito no cálculo mental: 3 × 104 = 300 + 12.
+ma-algebra.c5.example.0	3(x + 4)
+ma-algebra.c5.example.1	= 3 × x + 3 × 4
+ma-algebra.c5.example.2	= 3x + 12
+ma-algebra.c5.viz.items.0.a	3 × x
+ma-algebra.c5.viz.items.0.b	3x
+ma-algebra.c5.viz.items.2.a	3(x + 4)
+ma-algebra.c5.viz.items.2.b	3x + 12
+ma-algebra.c6.title	Duas incógnitas
+ma-algebra.c6.text	Dois cafés e um bolo custam €5; um café e um bolo custam €3.50. Subtrai: um café custa €1.50, logo o bolo custa €2. Isto é um sistema de equações.
+ma-algebra.c6.example.0	2c + k = 5
+ma-algebra.c6.example.1	c + k = 3.5
+ma-algebra.c6.example.2	c = 1.5, logo k = 2
+ma-algebra.c6.viz.l.t	Dois cafés e um bolo
+ma-algebra.c6.viz.r.t	Um café e um bolo
+ma-algebra.c7.title	Sinais negativos
+ma-algebra.c7.text	Subtrair um negativo é somar: 5 − (−3) = 8. Multiplicar dois negativos dá um positivo: (−2) × (−3) = 6.
+ma-algebra.c8.title	Sucessões como fórmulas
+ma-algebra.c8.text	Em 3, 5, 7, 9…, cada termo é 2n + 1. Encontra o 100.º termo sem os escrever todos: 2 × 100 + 1 = 201.
+ma-algebra.c8.viz.f	termo = 2n + 1
+ma-algebra.c8.viz.items.0.s	n
+ma-algebra.c8.viz.items.0.m	posição na sucessão
+ma-algebra.c8.viz.items.1.s	termo 100
+ma-algebra.c9.title	Um problema real
+ma-algebra.c9.text	Um tarifário de telemóvel custa €10 por mês mais €0.05 por MB. Com €15 por mês, quantos MB tens? 10 + 0.05m = 15, logo m = 100 MB.
+ma-algebra.c9.example.0	10 + 0.05m = 15
+ma-algebra.c9.example.1	0.05m = 5
+ma-algebra.c9.example.2	m = 100
+ma-algebra.c9.viz.unit	fatura mensal, €
+ma-algebra.c9.viz.items.0.l	0 MB
+ma-algebra.c9.viz.items.1.l	50 MB
+ma-algebra.c9.viz.items.2.l	100 MB
+ma-growth.title	Crescimento exponencial
+ma-growth.summary	Duplicações, vírus e logaritmos.
+ma-growth.q0.q	Um lago fica totalmente coberto no dia 30, e a cobertura duplica todos os dias. Quando estava meio coberto?
+ma-growth.q0.o0	Dia 15
+ma-growth.q0.o1	Dia 29
+ma-growth.q0.o2	Dia 20
+ma-growth.q0.x	Uma duplicação antes do fim.
+ma-growth.q1.q	Quanto é log₁₀ 1,000?
+ma-growth.q1.o0	10
+ma-growth.q1.o1	100
+ma-growth.q1.o2	3
+ma-growth.q1.x	10³ = 1,000.
+ma-growth.c0.title	Linear vs exponencial
+ma-growth.c0.text	O crescimento linear soma a mesma quantidade a cada passo; o exponencial multiplica. O exponencial começa devagar e depois explode.
+ma-growth.c0.viz.l.t	Linear
+ma-growth.c0.viz.l.items.0	+2 por passo
+ma-growth.c0.viz.r.t	Exponencial
+ma-growth.c0.viz.r.items.0	×2 por passo
+ma-growth.c1.title	A lenda do tabuleiro de xadrez
+ma-growth.c1.text	Põe 1 grão de arroz na primeira casa, 2 na seguinte, depois 4, 8… Na casa 64, precisarias de cerca de 18 triliões de grãos, muito mais do que todo o arroz alguma vez cultivado.
+ma-growth.c1.viz.unit	grãos na casa n
+ma-growth.c1.viz.items.0.l	Casa 5
+ma-growth.c1.viz.items.1.l	Casa 10
+ma-growth.c1.viz.items.2.l	Casa 15
+ma-growth.c2.title	O lago dos nenúfares
+ma-growth.c2.text	Os nenúfares duplicam todos os dias e cobrem um lago no dia 30. Quando estava meio coberto? No dia 29. Os problemas exponenciais parecem pequenos até mesmo ao fim.
+ma-growth.c2.viz.events.0.y	Dia 25
+ma-growth.c2.viz.events.0.l	3% coberto
+ma-growth.c2.viz.events.1.y	Dia 28
+ma-growth.c2.viz.events.2.y	Dia 29
+ma-growth.c2.viz.events.3.y	Dia 30
+ma-growth.c3.title	Potências
+ma-growth.c3.text	2⁵ significa 2 × 2 × 2 × 2 × 2 = 32. As potências são uma forma abreviada de escrever multiplicações repetidas. Qualquer número elevado a 0 é 1.
+ma-growth.c3.viz.items.0.a	2¹
+ma-growth.c3.viz.items.1.a	2⁵
+ma-growth.c3.viz.items.2.a	2¹⁰
+ma-growth.c3.viz.items.3.a	10⁶
+ma-growth.c3.viz.items.3.b	1 milhão
+ma-growth.c4.title	Logaritmos
+ma-growth.c4.text	Um logaritmo pergunta: "que potência?" log₁₀ 1,000 = 3, porque 10³ = 1,000. Os logaritmos transformam multiplicações enormes em somas simples.
+ma-growth.c4.viz.f	log₁₀ 1000 = 3
+ma-growth.c4.viz.items.0.s	porque
+ma-growth.c4.viz.items.0.m	10³ = 1000
+ma-growth.c4.viz.items.1.s	o log pergunta
+ma-growth.c4.viz.items.1.m	que potência?
+ma-growth.c5.title	Escalas logarítmicas à nossa volta
+ma-growth.c5.text	A escala de sismos do tipo Richter, os decibéis e o pH usam logaritmos. Cada grau a mais de magnitude significa cerca de 32 vezes mais energia libertada.
+ma-growth.c5.viz.items.0.a	Magnitude +1
+ma-growth.c5.viz.items.0.b	~32× energia
+ma-growth.c5.viz.items.1.a	+10 dB
+ma-growth.c5.viz.items.1.b	10× intensidade sonora
+ma-growth.c5.viz.items.2.a	pH −1
+ma-growth.c5.viz.items.2.b	10× mais ácido
+ma-growth.c6.title	Os vírus espalham-se
+ma-growth.c6.text	Se cada pessoa infetada infetar outras 2 a cada poucos dias, os casos duplicam. Baixar esse número para menos de 1 faz uma epidemia encolher.
+ma-growth.c6.viz.l.t	R acima de 1
+ma-growth.c6.viz.l.items.0	casos sobem
+ma-growth.c6.viz.l.items.1	exponencial
+ma-growth.c6.viz.r.t	R abaixo de 1
+ma-growth.c6.viz.r.items.0	casos descem
+ma-growth.c6.viz.r.items.1	extingue-se
+ma-growth.c7.title	A lei de Moore
+ma-growth.c7.text	Em 1965, Gordon Moore reparou que o número de transístores nos chips duplicava mais ou menos a cada dois anos. Manteve-se durante décadas e impulsionou a revolução digital.
+ma-growth.c7.viz.unit	transístores
+ma-growth.c7.viz.items.0.l	Intel 4004 (1971)
+ma-growth.c7.viz.items.1.l	Pentium (1993)
+ma-growth.c7.viz.items.2.l	Apple série M (anos 2020)
+ma-growth.c8.title	Meia-vida
+ma-growth.c8.text	As substâncias radioativas decaem exponencialmente. Ao fim de uma meia-vida, resta metade; ao fim de duas, um quarto. A meia-vida de 5,730 anos do carbono-14 permite datar restos antigos.
+ma-growth.c8.viz.unit	% restante
+ma-growth.c8.viz.items.1.l	1 meia-vida
+ma-growth.c9.title	Dobrar papel
+ma-growth.c9.text	Uma folha de papel com cerca de 0.1 mm de espessura dobrada 42 vezes teria mais de 400,000 km de espessura, ultrapassando a Lua. Na prática, não consegues dobrar papel à mão mais de umas 7 vezes.
+ma-growth.c9.viz.items.0.v	0.1 mm
+ma-growth.c9.viz.items.0.l	papel
+ma-growth.c9.viz.items.1.v	10 dobras
+ma-growth.c9.viz.items.1.l	~10 cm
+ma-growth.c9.viz.items.2.v	42 dobras
+ma-growth.c9.viz.items.2.l	além da Lua
+ma-functions.title	Gráficos e funções
+ma-functions.summary	Ver relações num relance.
+ma-functions.q0.q	Em y = mx + c, o que te diz o m?
+ma-functions.q0.o0	Onde a reta começa
+ma-functions.q0.o1	Quão inclinada é
+ma-functions.q0.o2	O valor de y
+ma-functions.q0.x	O declive.
+ma-functions.q1.q	Que forma tem y = x²?
+ma-functions.q1.o0	Uma reta
+ma-functions.q1.o1	Uma parábola em forma de U
+ma-functions.q1.o2	Um círculo
+ma-functions.q1.x	As bolas atiradas seguem uma.
+ma-functions.q2.q	Num gráfico distância–tempo, o declive mostra…
+ma-functions.q2.o0	a distância
+ma-functions.q2.o1	a velocidade
+ma-functions.q2.o2	o tempo
+ma-functions.q2.x	Distância por unidade de tempo.
+ma-functions.c0.title	O que é uma função
+ma-functions.c0.text	Uma função é uma regra que transforma cada entrada em exatamente uma saída, como uma máquina: entra 3, a regra "duplicar" dá 6.
+ma-functions.c0.viz.steps.0	Entrada: 3
+ma-functions.c0.viz.steps.1	Regra: × 2
+ma-functions.c0.viz.steps.2	Saída: 6
+ma-functions.c1.title	Coordenadas
+ma-functions.c1.text	A ideia de Descartes: descrever qualquer ponto com dois números, (x, y): quanto para o lado e quanto para cima. Isto uniu a álgebra e a geometria.
+ma-functions.c1.viz.items.0.a	x
+ma-functions.c1.viz.items.0.b	horizontal
+ma-functions.c1.viz.items.1.a	y
+ma-functions.c1.viz.items.1.b	vertical
+ma-functions.c1.viz.items.2.b	a origem
+ma-functions.c1.viz.items.3.b	3 à direita, 2 acima
+ma-functions.c2.title	Retas
+ma-functions.c2.text	y = mx + c desenha uma reta: m é o declive (quão inclinada é), c é onde cruza o eixo y.
+ma-functions.c2.formula	y = mx + c
+ma-functions.c2.viz.f	y = mx + c
+ma-functions.c2.viz.items.0.s	m
+ma-functions.c2.viz.items.0.m	declive
+ma-functions.c2.viz.items.1.s	c
+ma-functions.c2.viz.items.1.m	onde cruza o eixo y
+ma-functions.c2.viz.items.2.s	x
+ma-functions.c2.viz.items.2.m	entrada
+ma-functions.c3.title	Uma corrida de táxi
+ma-functions.c3.text	Um táxi cobra €3.50 de bandeirada mais €1.20 por km. Preço = 1.2 × km + 3.5: uma reta. 10 km custam €15.50.
+ma-functions.c3.viz.unit	preço, €
+ma-functions.c3.viz.items.0.l	0 km
+ma-functions.c3.viz.items.1.l	5 km
+ma-functions.c3.viz.items.2.l	10 km
+ma-functions.c4.title	Declive é ritmo
+ma-functions.c4.text	O declive é uma taxa de variação: euros por km, km por hora, graus por minuto. Retas mais inclinadas significam variações mais rápidas.
+ma-functions.c4.viz.items.0.a	Declive distância–tempo
+ma-functions.c4.viz.items.0.b	velocidade
+ma-functions.c4.viz.items.1.a	Declive custo–quantidade
+ma-functions.c4.viz.items.1.b	preço por unidade
+ma-functions.c4.viz.items.2.a	Declive temperatura–tempo
+ma-functions.c4.viz.items.2.b	ritmo de aquecimento
+ma-functions.c5.title	Curvas
+ma-functions.c5.text	y = x² desenha uma curva em forma de U chamada parábola. Uma bola atirada ao ar segue uma, e as antenas parabólicas usam a sua forma para concentrar os sinais.
+ma-functions.c5.viz.unit	y = x²
+ma-functions.c5.viz.items.0.l	x = 0
+ma-functions.c5.viz.items.1.l	x = 1
+ma-functions.c5.viz.items.2.l	x = 2
+ma-functions.c5.viz.items.3.l	x = 3
+ma-functions.c6.title	Ler gráficos
+ma-functions.c6.text	Antes de leres um gráfico, vê o que mostra cada eixo, as unidades e a escala. Depois olha para a forma geral antes dos pormenores.
+ma-functions.c6.viz.items.0	O que mostra cada eixo?
+ma-functions.c6.viz.items.1	Que unidades?
+ma-functions.c6.viz.items.2	O eixo começa no zero?
+ma-functions.c6.viz.items.3	Qual é a tendência geral?
+ma-functions.c7.title	Formas de variação
+ma-functions.c7.text	As retas mostram variação constante; as curvas a subir mostram aceleração; as curvas que estabilizam mostram saturação, como a bateria de um telemóvel a carregar.
+ma-functions.c7.viz.root	Formas de variação
+ma-functions.c7.viz.items.0	Reta: constante
+ma-functions.c7.viz.items.1	Curva a subir: acelera
+ma-functions.c7.viz.items.2	A estabilizar: satura
+ma-functions.c8.title	Relações inversas
+ma-functions.c8.text	Algumas grandezas variam em sentidos opostos: o tempo de viagem diminui quando a velocidade aumenta. O gráfico curva para baixo sem nunca chegar a zero.
+ma-functions.c8.viz.unit	horas para 120 km
+ma-functions.c8.viz.items.0.l	30 km/h
+ma-functions.c8.viz.items.1.l	60 km/h
+ma-functions.c8.viz.items.2.l	120 km/h
+ma-functions.c9.title	Funções no código
+ma-functions.c9.text	As folhas de cálculo e os programas estão cheios de funções: =SOMA(), =MÉDIA(). Cada uma recebe entradas e devolve uma saída, tal como na matemática.
+ma-functions.c9.viz.steps.0	Células A1 a A10
+ma-functions.c9.viz.steps.1	Função SOMA
+ma-functions.c9.viz.steps.2	Um total
+ma-games.title	Teoria dos jogos
+ma-games.summary	A matemática da estratégia.
+ma-games.q0.q	No dilema do prisioneiro, o que costuma acontecer?
+ma-games.q0.o0	Ambos ficam calados
+ma-games.q0.o1	Ambos traem e ficam pior
+ma-games.q0.o2	Um sai em liberdade
+ma-games.q0.x	A lógica individual vence o bem coletivo.
+ma-games.q1.q	Que estratégia se saiu bem nos torneios de Axelrod?
+ma-games.q1.o0	Trair sempre
+ma-games.q1.o1	Olho por olho
+ma-games.q1.o2	Ao acaso
+ma-games.q1.x	Cooperar primeiro e depois copiar.
+ma-games.c0.title	O que estuda a teoria dos jogos
+ma-games.c0.text	A teoria dos jogos estuda decisões em que a tua melhor escolha depende do que os outros fazem: negócios, política, biologia, até atravessar a rua.
+ma-games.c0.viz.items.0	Preços nas empresas
+ma-games.c0.viz.items.1	Negociações
+ma-games.c0.viz.items.2	Eleições
+ma-games.c0.viz.items.3	Comportamento animal
+ma-games.c0.viz.items.4	Trânsito
+ma-games.c1.title	O dilema do prisioneiro
+ma-games.c1.text	Dois suspeitos podem ficar calados ou trair-se um ao outro. Trair é melhor para cada um individualmente, mas, se ambos traírem, ficam os dois pior do que se tivessem ficado calados.
+ma-games.c1.viz.l.t	Ambos calados
+ma-games.c1.viz.l.items.0	1 ano cada
+ma-games.c1.viz.l.items.1	melhor para os dois
+ma-games.c1.viz.r.t	Ambos traem
+ma-games.c1.viz.r.items.0	5 anos cada
+ma-games.c1.viz.r.items.1	o que costuma acontecer
+ma-games.c2.title	Equilíbrio de Nash
+ma-games.c2.text	Um equilíbrio de Nash é uma situação em que ninguém ganha por mudar sozinho a sua escolha. John Nash, protagonista de *Uma Mente Brilhante*, definiu-o em 1950.
+ma-games.c2.viz.steps.0	Cada jogador escolhe uma estratégia
+ma-games.c2.viz.steps.1	Ninguém melhora sozinho
+ma-games.c2.viz.steps.2	Equilíbrio
+ma-games.c3.title	Jogos repetidos
+ma-games.c3.text	Quando o jogo se repete, a cooperação pode vencer. Nos torneios informáticos de Robert Axelrod, nos anos 1980, o "olho por olho" (cooperar primeiro e depois copiar o outro) saiu-se notavelmente bem.
+ma-games.c3.viz.steps.0	Cooperar primeiro
+ma-games.c3.viz.steps.1	Copiar a última jogada
+ma-games.c3.viz.steps.2	Perdoar depressa
+ma-games.c3.viz.steps.3	A cooperação espalha-se
+ma-games.c4.title	Jogos de soma zero
+ma-games.c4.text	Nos jogos de soma zero, o ganho de um jogador é exatamente a perda do outro, como no póquer ou no xadrez. A maior parte da vida, incluindo o comércio, não é de soma zero: ambos os lados podem ganhar.
+ma-games.c4.viz.l.t	Soma zero
+ma-games.c4.viz.l.items.0	póquer
+ma-games.c4.viz.l.items.1	xadrez
+ma-games.c4.viz.l.items.2	um ganha, outro perde
+ma-games.c4.viz.r.t	Soma positiva
+ma-games.c4.viz.r.items.0	comércio
+ma-games.c4.viz.r.items.1	colaboração
+ma-games.c4.viz.r.items.2	ambos ganham
+ma-games.c5.title	O jogo do cobarde
+ma-games.c5.text	Dois condutores aceleram um contra o outro; quem se desviar perde a face, mas, se nenhum se desviar, os dois chocam. Serve de modelo a braços de ferro entre países ou empresas.
+ma-games.c5.viz.items.0.a	Ambos desviam
+ma-games.c5.viz.items.0.b	ambos a salvo
+ma-games.c5.viz.items.1.a	Um desvia
+ma-games.c5.viz.items.1.b	o outro ganha
+ma-games.c5.viz.items.2.a	Nenhum desvia
+ma-games.c5.viz.items.2.b	desastre
+ma-games.c6.title	A vantagem de jogar primeiro
+ma-games.c6.text	Nalguns jogos, avançar primeiro permite-te comprometer-te e moldar o resultado. Noutros, esperar permite aprender com os erros de quem vai à frente.
+ma-games.c6.viz.l.t	Avançar primeiro
+ma-games.c6.viz.l.items.0	definir o padrão
+ma-games.c6.viz.l.items.1	ocupar posição
+ma-games.c6.viz.r.t	Esperar
+ma-games.c6.viz.r.items.0	aprender com os outros
+ma-games.c6.viz.r.items.1	evitar erros caros
+ma-games.c7.title	Leilões
+ma-games.c7.text	A teoria dos jogos é usada para desenhar leilões de espetro radioelétrico que valem milhares de milhões. Num leilão de segundo preço em carta fechada, a melhor estratégia é licitar exatamente aquilo que o bem vale para ti.
+ma-games.c7.viz.steps.0	Todos licitam em segredo
+ma-games.c7.viz.steps.1	Ganha a oferta mais alta
+ma-games.c7.viz.steps.2	Paga a segunda oferta mais alta
+ma-games.c8.title	A evolução como jogo
+ma-games.c8.text	Os animais "jogam" estratégias moldadas pela evolução: os falcões lutam, as pombas partilham. Uma mistura das duas pode ser estável numa população.
+ma-games.c8.viz.items.0.a	Falcão
+ma-games.c8.viz.items.0.b	luta sempre
+ma-games.c8.viz.items.1.a	Pomba
+ma-games.c8.viz.items.1.b	partilha, recua
+ma-games.c8.viz.items.2.a	Estável
+ma-games.c8.viz.items.2.b	uma mistura de ambos
+ma-games.c9.title	Dividir a conta
+ma-games.c9.text	Quando um grupo divide a conta do restaurante em partes iguais, todos são tentados a pedir mais, já que os outros partilham o custo. No fim, todos pagam mais: uma pequena tragédia dos comuns.
+ma-games.c9.viz.steps.0	Dividir em partes iguais
+ma-games.c9.viz.steps.1	Cada um pede mais
+ma-games.c9.viz.steps.2	A conta cresce
+ma-games.c9.viz.steps.3	Todos pagam mais
+ma-codes.title	Códigos e criptografia
+ma-codes.summary	Mensagens secretas, de César ao teu telemóvel.
+ma-codes.q0.q	O que quebra as cifras de substituição simples?
+ma-codes.q0.o0	Força bruta
+ma-codes.q0.o1	Análise de frequência das letras
+ma-codes.q0.o2	Computadores quânticos
+ma-codes.q0.x	O E é a letra mais comum em inglês.
+ma-codes.q1.q	Na criptografia de chave pública, que chave guardas em segredo?
+ma-codes.q1.o0	A chave pública
+ma-codes.q1.o1	A chave privada
+ma-codes.q1.o2	Ambas
+ma-codes.q1.x	A pública é partilhada.
+ma-codes.c0.title	A cifra de César
+ma-codes.c0.text	Júlio César deslocava cada letra três posições: A passa a D, B passa a E. Fácil de usar e fácil de quebrar.
+ma-codes.c0.viz.items.0.a	A
+ma-codes.c0.viz.items.0.b	D
+ma-codes.c0.viz.items.1.a	B
+ma-codes.c0.viz.items.1.b	E
+ma-codes.c0.viz.items.2.a	HELLO
+ma-codes.c0.viz.items.2.b	KHOOR
+ma-codes.c0.viz.items.3.a	Desvio
+ma-codes.c0.viz.items.3.b	3 letras
+ma-codes.c1.title	Quebrar códigos com frequências
+ma-codes.c1.text	Em inglês, o E é a letra mais comum, seguida do T e do A. Conta as letras de uma mensagem cifrada e consegues adivinhar a substituição. Al-Kindi descreveu este método no século IX.
+ma-codes.c1.viz.unit	% das letras em inglês
+ma-codes.c1.viz.items.0.l	E
+ma-codes.c1.viz.items.1.l	T
+ma-codes.c1.viz.items.2.l	A
+ma-codes.c1.viz.items.3.l	O
+ma-codes.c1.viz.items.4.l	Z
+ma-codes.c2.title	Vigenère
+ma-codes.c2.text	A cifra de Vigenère usa uma palavra-chave para deslocar cada letra um número diferente de posições, o que derrota a simples contagem de frequências. Foi chamada "a cifra indecifrável" durante 300 anos.
+ma-codes.c2.viz.steps.0	Palavra-chave: LEMON
+ma-codes.c2.viz.steps.1	Cada letra desloca-se de forma diferente
+ma-codes.c2.viz.steps.2	Frequência oculta
+ma-codes.c3.title	Enigma
+ma-codes.c3.text	A máquina Enigma alemã usava rotores para mudar a cifra a cada tecla premida. Foram matemáticos polacos que a decifraram primeiro; a equipa de Alan Turing em Bletchley Park quebrou-a em grande escala.
+ma-codes.c3.viz.events.0.l	Polacos quebram a Enigma
+ma-codes.c3.viz.events.1.l	partilhado com o Reino Unido
+ma-codes.c3.viz.events.2.l	A bombe de Turing
+ma-codes.c3.viz.events.3.l	fim da guerra
+ma-codes.c4.title	Chaves
+ma-codes.c4.text	A encriptação moderna é pública: o método é conhecido e a segurança vem inteiramente de uma chave secreta. Uma chave de 128 bits tem biliões de vezes mais combinações do que há grãos de areia na Terra.
+ma-codes.c4.viz.items.0.v	2¹²⁸
+ma-codes.c4.viz.items.0.l	chaves de 128 bits possíveis
+ma-codes.c4.viz.items.1.v	3.4 × 10³⁸
+ma-codes.c4.viz.items.1.l	esse número
+ma-codes.c4.viz.items.2.v	Milhares de milhões de anos
+ma-codes.c4.viz.items.2.l	para as testar todas
+ma-codes.c5.title	Criptografia de chave pública
+ma-codes.c5.text	O teu telemóvel usa duas chaves: uma pública, que qualquer pessoa pode usar para trancar uma mensagem, e uma privada, que só tu tens, para a destrancar. Foi inventada nos anos 1970.
+ma-codes.c5.viz.l.t	Chave pública
+ma-codes.c5.viz.l.items.0	partilhada com todos
+ma-codes.c5.viz.l.items.1	tranca
+ma-codes.c5.viz.r.t	Chave privada
+ma-codes.c5.viz.r.items.0	mantida em segredo
+ma-codes.c5.viz.r.items.1	destranca
+ma-codes.c6.title	A analogia do cadeado
+ma-codes.c6.text	Envia a alguém um cadeado aberto: essa pessoa tranca uma caixa com ele e só tu tens a chave. Ninguém precisou de partilhar um segredo antes.
+ma-codes.c6.viz.steps.0	Enviar o cadeado aberto
+ma-codes.c6.viz.steps.1	Trancam a caixa
+ma-codes.c6.viz.steps.2	Devolvem-na
+ma-codes.c6.viz.steps.3	Só tu a podes abrir
+ma-codes.c7.title	Hashes
+ma-codes.c7.text	Um hash transforma quaisquer dados numa impressão digital de comprimento fixo. Muda uma letra e o hash muda por completo. Os sites guardam hashes das palavras-passe, não as palavras-passe.
+ma-codes.c7.viz.steps.0	Palavra-passe
+ma-codes.c7.viz.steps.1	Função de hash
+ma-codes.c7.viz.steps.2	Impressão guardada
+ma-codes.c7.viz.steps.3	Comparar ao iniciar sessão
+ma-codes.c8.title	Palavras-passe fortes
+ma-codes.c8.text	O comprimento vale mais do que a complexidade. Quatro palavras aleatórias são mais fáceis de memorizar e mais difíceis de quebrar do que "P@ssw0rd1". Usa um gestor de palavras-passe e autenticação de dois fatores.
+ma-codes.c8.viz.items.0.w	P@ssw0rd1
+ma-codes.c8.viz.items.0.r	quatro palavras aleatórias e um gestor de palavras-passe
+ma-codes.c9.title	A ameaça quântica
+ma-codes.c9.text	Computadores quânticos de grande dimensão poderão um dia quebrar os sistemas de chave pública atuais. Para preparar essa mudança, foram normalizados em 2024 novos algoritmos "pós-quânticos".
+ma-codes.c9.viz.events.0.l	RSA
+ma-codes.c9.viz.events.1.l	Algoritmo quântico de Shor
+ma-codes.c9.viz.events.2.l	normas pós-quânticas
+ma-greats.title	Grandes matemáticos
+ma-greats.summary	As pessoas por trás das ideias.
+ma-greats.q0.q	Como é que o jovem Gauss somou os números de 1 a 100?
+ma-greats.q0.o0	A contar
+ma-greats.q0.o1	Juntando os números em 50 pares de 101
+ma-greats.q0.o2	Com uma calculadora
+ma-greats.q0.x	5,050.
+ma-greats.q1.q	Quem escreveu o primeiro programa de computador publicado?
+ma-greats.q1.o0	Alan Turing
+ma-greats.q1.o1	Ada Lovelace
+ma-greats.q1.o2	Charles Babbage
+ma-greats.q1.x	Em 1843.
+ma-greats.c0.title	Euclides
+ma-greats.c0.text	Por volta de 300 a.C., Euclides escreveu os *Elementos*, construindo a geometria a partir de alguns axiomas básicos. Foi usado como manual escolar durante mais de 2,000 anos.
+ma-greats.c0.viz.steps.0	Poucos axiomas
+ma-greats.c0.viz.steps.1	Provas lógicas
+ma-greats.c0.viz.steps.2	Centenas de teoremas
+ma-greats.c1.title	Arquimedes
+ma-greats.c1.text	Arquimedes estimou π, calculou volumes de esferas, explicou as alavancas e a impulsão e, segundo se conta, gritou "Eureka!" no banho.
+ma-greats.c1.viz.items.0	Estimou π
+ma-greats.c1.viz.items.1	Volume da esfera
+ma-greats.c1.viz.items.2	Lei da alavanca
+ma-greats.c1.viz.items.3	Impulsão
+ma-greats.c2.title	Hipátia
+ma-greats.c2.text	Hipátia de Alexandria (c. 360–415 d.C.) foi matemática, astrónoma e professora, uma das primeiras mulheres da matemática que conhecemos pelo nome.
+ma-greats.c2.viz.events.0.y	~360 d.C.
+ma-greats.c2.viz.events.0.l	nasce
+ma-greats.c2.viz.events.1.l	dirige a sua escola
+ma-greats.c2.viz.events.2.l	morta por uma turba
+ma-greats.c3.title	Fibonacci
+ma-greats.c3.text	Leonardo de Pisa, conhecido como Fibonacci, popularizou os algarismos indo-arábicos na Europa em 1202 com o seu *Liber Abaci*, um livro para mercadores.
+ma-greats.c3.viz.l.t	Romana
+ma-greats.c3.viz.l.items.0	XLVIII × XII
+ma-greats.c3.viz.l.items.1	lento
+ma-greats.c3.viz.r.t	Indo-arábica
+ma-greats.c3.viz.r.items.1	rápido
+ma-greats.c4.title	Descartes e Fermat
+ma-greats.c4.text	No século XVII, ambos ligaram a álgebra e a geometria através das coordenadas. Fermat deixou também um famoso "último teorema", que ficou por provar durante 358 anos.
+ma-greats.c4.viz.events.0.l	A nota de Fermat
+ma-greats.c4.viz.events.1.l	A Geometria de Descartes
+ma-greats.c4.viz.events.2.l	Prova de Wiles publicada
+ma-greats.c5.title	Newton e Leibniz
+ma-greats.c5.text	Ambos inventaram o cálculo de forma independente no final do século XVII e discutiram amargamente sobre quem tinha sido o primeiro. Hoje usamos a notação de Leibniz.
+ma-greats.c5.viz.l.t	Newton
+ma-greats.c5.viz.l.items.0	motivação física
+ma-greats.c5.viz.l.items.1	pontos para taxas
+ma-greats.c5.viz.r.t	Leibniz
+ma-greats.c5.viz.r.items.0	publicou primeiro
+ma-greats.c5.viz.r.items.1	notação dx e ∫
+ma-greats.c6.title	Euler
+ma-greats.c6.text	Leonhard Euler foi o matemático mais prolífico de sempre: escreveu mais de 800 artigos, mesmo depois de cegar. A sua identidade e^iπ + 1 = 0 liga cinco números fundamentais.
+ma-greats.c6.viz.f	e^iπ + 1 = 0
+ma-greats.c6.viz.items.0.s	e
+ma-greats.c6.viz.items.0.m	constante de crescimento
+ma-greats.c6.viz.items.1.s	i
+ma-greats.c6.viz.items.1.m	unidade imaginária
+ma-greats.c6.viz.items.2.s	π
+ma-greats.c6.viz.items.2.m	constante do círculo
+ma-greats.c6.viz.items.3.m	1 e 0
+ma-greats.c7.title	Gauss
+ma-greats.c7.text	Em criança, Gauss terá somado os números de 1 a 100 em segundos: juntou 1+100, 2+99… em 50 pares de 101, o que dá 5,050.
+ma-greats.c7.example.0	1 + 100 = 101
+ma-greats.c7.example.1	50 pares
+ma-greats.c7.example.2	50 × 101 = 5,050
+ma-greats.c7.viz.items.3.a	50 pares
+ma-greats.c8.title	Ada Lovelace
+ma-greats.c8.text	Em 1843, Ada Lovelace escreveu aquilo que é considerado o primeiro programa de computador, para a Máquina Analítica de Babbage, e previu que os computadores viriam a fazer música.
+ma-greats.c8.viz.events.0.l	Máquina Analítica projetada
+ma-greats.c8.viz.events.1.l	Notas de Lovelace
+ma-greats.c8.viz.events.2.y	Anos 1940
+ma-greats.c8.viz.events.2.l	primeiros computadores
+ma-greats.c9.title	Grandes nomes modernos
+ma-greats.c9.text	Emmy Noether ligou a simetria às leis de conservação; Ramanujan descobriu fórmulas surpreendentes com pouca formação académica; Maryam Mirzakhani foi a primeira mulher a ganhar a Medalha Fields, em 2014.
+ma-greats.c9.viz.items.0.a	Emmy Noether
+ma-greats.c9.viz.items.0.b	simetria e física
+ma-greats.c9.viz.items.1.a	Ramanujan
+ma-greats.c9.viz.items.1.b	séries infinitas
+ma-greats.c9.viz.items.2.a	Maryam Mirzakhani
+ma-greats.c9.viz.items.2.b	Medalha Fields 2014
+ma-calculus.title	Intuição do cálculo
+ma-calculus.summary	A matemática da mudança.
+ma-calculus.q0.q	Num gráfico velocidade–tempo, o que dá a área debaixo da curva?
+ma-calculus.q0.o0	A aceleração
+ma-calculus.q0.o1	A distância percorrida
+ma-calculus.q0.o2	O tempo
+ma-calculus.q0.x	Os integrais acumulam.
+ma-calculus.q1.q	No topo de uma curva suave, o declive é…
+ma-calculus.q1.o0	infinito
+ma-calculus.q1.o1	zero
+ma-calculus.q1.o2	negativo
+ma-calculus.q1.x	Picos e vales têm declive zero.
+ma-calculus.c0.title	Duas grandes perguntas
+ma-calculus.c0.text	O cálculo responde a duas perguntas: a que ritmo está algo a mudar neste instante (derivadas) e quanto se acumulou ao longo do tempo (integrais).
+ma-calculus.c0.viz.l.t	Derivadas
+ma-calculus.c0.viz.l.items.0	taxa de variação
+ma-calculus.c0.viz.l.items.1	velocidade a partir da distância
+ma-calculus.c0.viz.r.t	Integrais
+ma-calculus.c0.viz.r.items.0	acumulação
+ma-calculus.c0.viz.r.items.1	distância a partir da velocidade
+ma-calculus.c1.title	Velocidade instantânea
+ma-calculus.c1.text	O velocímetro do teu carro mostra a velocidade num instante, não uma média. O cálculo define-a medindo em intervalos de tempo cada vez mais curtos.
+ma-calculus.c1.viz.steps.0	Média em 1 min
+ma-calculus.c1.viz.steps.1	Em 1 s
+ma-calculus.c1.viz.steps.2	Em 0.001 s
+ma-calculus.c1.viz.steps.3	Velocidade instantânea
+ma-calculus.c2.title	O declive de uma curva
+ma-calculus.c2.text	Uma derivada é o declive de uma curva num ponto: amplia o suficiente e qualquer curva suave parece uma reta.
+ma-calculus.c2.viz.steps.0	Curva
+ma-calculus.c2.viz.steps.1	Ampliar
+ma-calculus.c2.viz.steps.2	Parece reta
+ma-calculus.c2.viz.steps.3	O declive é a derivada
+ma-calculus.c3.title	Área debaixo de uma curva
+ma-calculus.c3.text	Um integral soma fatias minúsculas. Num gráfico velocidade–tempo, a área debaixo da curva é a distância percorrida.
+ma-calculus.c3.viz.steps.0	Gráfico da velocidade
+ma-calculus.c3.viz.steps.1	Cortar em tiras finas
+ma-calculus.c3.viz.steps.2	Somar as áreas
+ma-calculus.c3.viz.steps.3	Distância total
+ma-calculus.c4.title	Operações opostas
+ma-calculus.c4.text	A derivação e a integração desfazem-se uma à outra: é o teorema fundamental do cálculo. Distância → velocidade → aceleração, e de volta.
+ma-calculus.c4.viz.steps.0	Distância
+ma-calculus.c4.viz.steps.1	Derivar: velocidade
+ma-calculus.c4.viz.steps.2	Derivar: aceleração
+ma-calculus.c4.viz.steps.3	Integrar de volta
+ma-calculus.c5.title	Máximos e mínimos
+ma-calculus.c5.text	Onde uma curva atinge um pico ou um vale, o declive é zero. É assim que os engenheiros encontram a viga mais resistente ou o design mais barato.
+ma-calculus.c5.viz.items.0.a	Declive zero
+ma-calculus.c5.viz.items.0.b	pico ou vale
+ma-calculus.c5.viz.items.1.a	Pico
+ma-calculus.c5.viz.items.1.b	máximo
+ma-calculus.c5.viz.items.2.a	Vale
+ma-calculus.c5.viz.items.2.b	mínimo
+ma-calculus.c6.title	A maior caixa
+ma-calculus.c6.text	Corta quadrados nos cantos de um cartão de 30 cm e dobra-o para formar uma caixa. O cálculo mostra que quadrados de 5 cm dão o maior volume: 2,000 cm³.
+ma-calculus.c6.viz.unit	volume, cm³
+ma-calculus.c6.viz.items.0.l	Corte 3 cm
+ma-calculus.c6.viz.items.1.l	Corte 5 cm
+ma-calculus.c6.viz.items.2.l	Corte 7 cm
+ma-calculus.c7.title	Mudança por todo o lado
+ma-calculus.c7.text	O cálculo modela o crescimento populacional, o aquecimento e o arrefecimento, os juros, as trajetórias de foguetões e a aprendizagem automática, que usa derivadas para ajustar os seus pesos.
+ma-calculus.c7.viz.items.0	Física e engenharia
+ma-calculus.c7.viz.items.1	Economia
+ma-calculus.c7.viz.items.2	Dosagem de medicamentos
+ma-calculus.c7.viz.items.3	Aprendizagem automática
+ma-calculus.c8.title	Limites
+ma-calculus.c8.text	O cálculo assenta nos limites: o valor de que algo se aproxima quando outra coisa se torna muito pequena. 1/2 + 1/4 + 1/8… aproxima-se de 1, embora nenhum passo lá chegue.
+ma-calculus.c8.viz.unit	soma acumulada
+ma-calculus.c8.viz.items.0.l	1 termo
+ma-calculus.c8.viz.items.1.l	2 termos
+ma-calculus.c8.viz.items.2.l	3 termos
+ma-calculus.c8.viz.items.3.l	5 termos
+ma-calculus.c9.title	Quem o inventou?
+ma-calculus.c9.text	Newton e Leibniz desenvolveram o cálculo de forma independente entre as décadas de 1660 e 1680, embora Arquimedes e outros tivessem usado ideias semelhantes séculos antes.
+ma-calculus.c9.viz.events.0.y	~250 a.C.
+ma-calculus.c9.viz.events.0.l	As fatias de Arquimedes
+ma-calculus.c9.viz.events.1.l	Métodos de Newton
+ma-calculus.c9.viz.events.2.l	Leibniz publica
+ma-calculus.c9.viz.events.3.y	Anos 1820
+ma-calculus.c9.viz.events.3.l	limites com rigor
+ma-networks.title	Redes e grafos
+ma-networks.summary	Pontes, mapas e redes sociais.
+ma-networks.q0.q	Quem fundou a teoria dos grafos com as pontes de Königsberg?
+ma-networks.q0.o0	Newton
+ma-networks.q0.o1	Euler
+ma-networks.q0.o2	Gauss
+ma-networks.q0.x	Em 1736.
+ma-networks.q1.q	Quantas cores bastam para colorir qualquer mapa?
+ma-networks.q1.o0	3
+ma-networks.q1.o1	4
+ma-networks.q1.o2	5
+ma-networks.q1.x	Provado em 1976.
+ma-networks.q2.q	O que fez o PageRank da Google funcionar?
+ma-networks.q2.o0	Contagem de palavras-chave
+ma-networks.q2.o1	Tratar as ligações como votos
+ma-networks.q2.o2	Comprimento da página
+ma-networks.q2.x	As ligações de páginas importantes contam mais.
+ma-networks.c0.title	As pontes de Königsberg
+ma-networks.c0.text	Em 1736, Euler provou que não era possível atravessar as sete pontes de Königsberg passando exatamente uma vez em cada. Para o resolver, reduziu a cidade a pontos e linhas: nasceu a teoria dos grafos.
+ma-networks.c0.viz.steps.0	Mapa da cidade
+ma-networks.c0.viz.steps.1	Zonas de terra viram pontos
+ma-networks.c0.viz.steps.2	Pontes viram linhas
+ma-networks.c0.viz.steps.3	Contar linhas em cada ponto
+ma-networks.c1.title	Nós e arestas
+ma-networks.c1.text	Um grafo é um conjunto de nós (pontos) ligados por arestas (linhas). Cidades e estradas, pessoas e amizades, páginas web e ligações: tudo isto são grafos.
+ma-networks.c1.viz.items.0.a	Cidades

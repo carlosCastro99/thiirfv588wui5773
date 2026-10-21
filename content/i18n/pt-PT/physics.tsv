@@ -150,9 +150,10 @@ ph-waves.c3.sketch.2	IV
 ph-waves.c3.sketch.3	luz
 ph-waves.c3.sketch.4	UV
 ph-waves.c3.sketch.5	raios X
-ph-waves.c3.sketch.6	Wi-Fi 2.4 GHz ≈ 12.5 cm
-ph-waves.c3.sketch.7	ondas mais longas
-ph-waves.c3.sketch.8	mais energia
+ph-waves.c3.sketch.6	gama
+ph-waves.c3.sketch.7	Wi-Fi 2.4 GHz ≈ 12.5 cm
+ph-waves.c3.sketch.8	ondas mais longas
+ph-waves.c3.sketch.9	mais energia
 ph-waves.c4.title	Transversais e longitudinais
 ph-waves.c4.text	Nas ondas transversais, o meio move-se perpendicularmente à onda (ondulações, luz). Nas ondas longitudinais, move-se para a frente e para trás na direção de propagação (som).
 ph-waves.c4.viz.l.t	Transversal
@@ -542,7 +543,7 @@ ph-momentum.c7.title	Momento angular
 ph-momentum.c7.text	Os objetos em rotação têm momento angular. Uma patinadora que encolhe os braços gira mais depressa, porque o momento angular se conserva enquanto o corpo fica mais compacto.
 ph-momentum.c7.viz.l.t	Braços abertos
 ph-momentum.c7.viz.l.items.0	gira mais devagar
-ph-momentum.c7.viz.r.t	Braços encolhidos
+ph-momentum.c7.viz.r.t	Braços fechados
 ph-momentum.c7.viz.r.items.0	gira mais depressa
 ph-momentum.c8.title	Giroscópios
 ph-momentum.c8.text	As rodas em rotação resistem a mudanças do seu eixo. As bicicletas estabilizam-se em parte assim; os giroscópios guiam navios, aviões e telemóveis (como minúsculos sensores vibratórios).
@@ -552,7 +553,7 @@ ph-momentum.c8.viz.items.2	Sensores de orientação do telemóvel
 ph-momentum.c8.viz.items.3	Controlo de atitude de naves
 ph-momentum.c9.title	Foguetões no espaço
 ph-momentum.c9.text	Os foguetões não precisam de ar onde se apoiar: empurram os gases de escape para trás e ganham igual momento para a frente. É por isso que funcionam ainda melhor no vácuo do espaço.
-ph-momentum.c9.viz.steps.0	Queimar combustível
+ph-momentum.c9.viz.steps.0	Queima combustível
 ph-momentum.c9.viz.steps.1	Expelir gases para trás a alta velocidade
 ph-momentum.c9.viz.steps.2	Igual momento para a frente
 ph-momentum.c9.viz.steps.3	O foguetão acelera
@@ -597,3 +598,603 @@ ph-gases.c3.viz.items.0.s	n
 ph-gases.c3.viz.items.0.m	quantidade de gás (moles)
 ph-gases.c3.viz.items.1.s	R
 ph-gases.c3.viz.items.1.m	8.314 J/mol·K
+ph-gases.c3.viz.items.2.s	T
+ph-gases.c3.viz.items.2.m	kelvin
+ph-gases.c4.title	Pressão do ar e altitude
+ph-gases.c4.text	A pressão do ar cai para metade mais ou menos a cada 5.5 km de altitude. No alto da Serra da Estrela (1993 m) é cerca de 80% da do nível do mar; no Evereste, cerca de um terço.
+ph-gases.c4.viz.unit	% da pressão ao nível do mar
+ph-gases.c4.viz.items.0.l	Nível do mar
+ph-gases.c4.viz.items.1.l	Serra da Estrela
+ph-gases.c4.viz.items.2.l	Monte Branco
+ph-gases.c4.viz.items.3.l	Evereste
+ph-gases.c5.title	Ebulição e altitude
+ph-gases.c5.text	A água ferve quando a sua pressão de vapor iguala a pressão do ar. No alto de uma montanha a pressão do ar é mais baixa, por isso a água ferve abaixo dos 100 °C e a massa demora mais a cozer. As panelas de pressão fazem o contrário.
+ph-gases.c5.viz.unit	ponto de ebulição °C
+ph-gases.c5.viz.items.0.l	Evereste
+ph-gases.c5.viz.items.1.l	La Paz
+ph-gases.c5.viz.items.2.l	Nível do mar
+ph-gases.c5.viz.items.3.l	Panela de pressão
+ph-gases.c6.title	Balões e densidade
+ph-gases.c6.text	O ar quente é menos denso do que o ar frio, por isso um balão de ar quente sobe. O hélio é mais leve do que o ar, por isso os balões de hélio flutuam. Um submarino muda a sua densidade com tanques de lastro.
+ph-gases.c6.viz.l.t	Sobe
+ph-gases.c6.viz.l.items.0	ar quente
+ph-gases.c6.viz.l.items.1	hélio
+ph-gases.c6.viz.l.items.2	menos denso que o meio
+ph-gases.c6.viz.r.t	Desce
+ph-gases.c6.viz.r.items.0	ar frio
+ph-gases.c6.viz.r.items.1	dióxido de carbono
+ph-gases.c6.viz.r.items.2	mais denso que o meio
+ph-gases.c7.title	Sugar não é puxar
+ph-gases.c7.text	Uma palhinha não "puxa" a bebida para cima. Tu baixas a pressão na boca e a atmosfera empurra o líquido pela palhinha acima. É por isso que uma palhinha não consegue elevar água mais de cerca de 10 m.
+ph-gases.c7.viz.steps.0	Menos pressão na boca
+ph-gases.c7.viz.steps.1	O ar empurra a superfície da bebida
+ph-gases.c7.viz.steps.2	O líquido sobe na palhinha
+ph-gases.c8.title	Ar comprimido
+ph-gases.c8.text	Comprimir o ar aquece-o (o cilindro da bomba da bicicleta fica quente); deixá-lo expandir arrefece-o (as latas de spray ficam frias). Os frigoríficos e as bombas de calor aproveitam isto com fluidos refrigerantes especiais.
+ph-gases.c8.viz.l.t	Comprimir
+ph-gases.c8.viz.l.items.0	aquece
+ph-gases.c8.viz.l.items.1	a bomba aquece
+ph-gases.c8.viz.r.t	Expandir
+ph-gases.c8.viz.r.items.0	arrefece
+ph-gases.c8.viz.r.items.1	o spray arrefece
+ph-gases.c9.title	Tempo e pressão
+ph-gases.c9.text	As zonas de alta pressão trazem ar descendente e normalmente tempo estável; as de baixa pressão trazem ar ascendente, nuvens e chuva. Os barómetros medem-na, muitas vezes em hectopascais (hPa).
+ph-gases.c9.viz.unit	hPa
+ph-gases.c9.viz.items.0.l	tempestade
+ph-gases.c9.viz.items.1.l	média
+ph-gases.c9.viz.items.2.l	anticiclone
+ph-light.title	Luz e ótica
+ph-light.summary	Reflexão, refração, lentes e o olho.
+ph-light.q0.q	Porque é que uma palhinha parece torta dentro de água?
+ph-light.q0.o0	A palhinha dobra-se
+ph-light.q0.o1	A luz refrata-se ao passar entre a água e o ar
+ph-light.q0.o2	Reflexão
+ph-light.q0.x	A luz muda de velocidade e de direção.
+ph-light.q1.q	O que transporta dados da internet através dos oceanos usando luz?
+ph-light.q1.o0	Cabos de cobre
+ph-light.q1.o1	Fibras óticas, por reflexão interna total
+ph-light.q1.o2	Torres de rádio
+ph-light.q1.x	A luz fica presa no vidro.
+ph-light.q2.q	A miopia corrige-se com…
+ph-light.q2.o0	Lentes convexas
+ph-light.q2.o1	Lentes côncavas
+ph-light.q2.o2	Espelhos
+ph-light.q2.x	As lentes côncavas espalham a luz para que foque mais atrás.
+ph-light.c0.title	A luz viaja depressa e em linha reta
+ph-light.c0.text	A luz viaja a cerca de 300 000 km/s no vácuo e em linha reta (raios). Demora cerca de 8 minutos e 20 segundos a chegar até nós desde o Sol.
+ph-light.c0.viz.items.0.v	300 000 km/s
+ph-light.c0.viz.items.0.l	velocidade da luz
+ph-light.c0.viz.items.1.v	8 min 20 s
+ph-light.c0.viz.items.1.l	desde o Sol
+ph-light.c0.viz.items.2.v	1.3 s
+ph-light.c0.viz.items.2.l	desde a Lua
+ph-light.c1.title	Reflexão
+ph-light.c1.text	A luz ressalta num espelho com o mesmo ângulo com que lhe bate: o ângulo de incidência é igual ao ângulo de reflexão. As superfícies rugosas espalham a luz em todas as direções, e é por isso que o papel não é um espelho.
+ph-light.c1.viz.l.t	Espelho liso
+ph-light.c1.viz.l.items.0	ângulos iguais
+ph-light.c1.viz.l.items.1	imagem nítida
+ph-light.c1.viz.r.t	Papel rugoso
+ph-light.c1.viz.r.items.0	espalha em todo o lado
+ph-light.c1.viz.r.items.1	sem imagem
+ph-light.c2.title	Refração
+ph-light.c2.text	A luz abranda na água ou no vidro e desvia-se quando entra com um ângulo. É por isso que uma palhinha parece torta num copo e as piscinas parecem menos fundas do que são.
+ph-light.c2.viz.steps.0	A luz entra na água inclinada
+ph-light.c2.viz.steps.1	Abranda
+ph-light.c2.viz.steps.2	Desvia-se para a normal
+ph-light.c2.viz.steps.3	Tudo parece menos fundo
+ph-light.c3.title	Reflexão interna total
+ph-light.c3.text	Dentro do vidro, a luz que bate na superfície com um ângulo suficientemente rasante é totalmente refletida. As fibras óticas prendem a luz desta forma e levam dados da internet através dos oceanos.
+ph-light.c3.viz.steps.0	A luz entra na fibra
+ph-light.c3.viz.steps.1	Bate na parede num ângulo rasante
+ph-light.c3.viz.steps.2	Totalmente refletida
+ph-light.c3.viz.steps.3	Percorre quilómetros
+ph-light.c4.title	Lentes
+ph-light.c4.text	As lentes convexas desviam a luz para dentro, até um foco: lupas, câmaras, o olho. As lentes côncavas espalham-na, e usam-se para corrigir a miopia.
+ph-light.c4.viz.l.t	Convexa
+ph-light.c4.viz.l.items.0	convergente
+ph-light.c4.viz.l.items.1	lupas, câmaras
+ph-light.c4.viz.l.items.2	corrige a hipermetropia
+ph-light.c4.viz.r.t	Côncava
+ph-light.c4.viz.r.items.0	divergente
+ph-light.c4.viz.r.items.1	corrige a miopia
+ph-light.c5.title	O olho
+ph-light.c5.text	A córnea e o cristalino focam a luz na retina, onde os bastonetes (luz fraca, sem cor) e os cones (cor) a transformam em sinais nervosos. O cérebro endireita a imagem invertida.
+ph-light.c5.viz.steps.0	Córnea e cristalino focam
+ph-light.c5.viz.steps.1	Imagem na retina
+ph-light.c5.viz.steps.2	Bastonetes e cones
+ph-light.c5.viz.steps.3	O cérebro interpreta
+ph-light.c6.title	Miopia e hipermetropia
+ph-light.c6.text	Os olhos míopes focam os objetos distantes à frente da retina; as lentes côncavas resolvem isso. Os olhos hipermetropes focam atrás dela; as lentes convexas resolvem isso.
+ph-light.c6.viz.items.0.a	miopia
+ph-light.c6.viz.items.0.b	lente côncava
+ph-light.c6.viz.items.1.a	hipermetropia
+ph-light.c6.viz.items.1.b	lente convexa
+ph-light.c6.viz.items.2.a	presbiopia
+ph-light.c6.viz.items.2.b	óculos de leitura com a idade
+ph-light.c7.title	Câmaras
+ph-light.c7.text	Uma câmara funciona como um olho: uma lente foca a luz num sensor com milhões de píxeis. A abertura controla quanta luz entra; a velocidade do obturador controla durante quanto tempo.
+ph-light.c7.viz.items.0.a	abertura
+ph-light.c7.viz.items.0.b	largura da abertura
+ph-light.c7.viz.items.1.a	obturador
+ph-light.c7.viz.items.1.b	tempo que fica aberto
+ph-light.c7.viz.items.2.a	ISO
+ph-light.c7.viz.items.2.b	sensibilidade do sensor
+ph-light.c8.title	Arco-íris
+ph-light.c8.text	A luz do sol que entra nas gotas de chuva é refratada, refletida no interior e novamente refratada à saída. Cada cor desvia-se de forma ligeiramente diferente, espalhando a luz branca num espetro.
+ph-light.c8.viz.steps.0	A luz do sol entra numa gota
+ph-light.c8.viz.steps.1	Desvia-se e separa as cores
+ph-light.c8.viz.steps.2	Reflete-se no interior
+ph-light.c8.viz.steps.3	Sai como arco-íris
+ph-light.c9.title	Lasers
+ph-light.c9.text	Um laser produz luz de uma só cor, em fase e num feixe estreito. Usa-se em leitores de códigos de barras, fibra ótica, cirurgia, corte de metal e medição de distâncias (lidar).
+ph-light.c9.viz.items.0	Internet por fibra ótica
+ph-light.c9.viz.items.1	Leitores de códigos de barras
+ph-light.c9.viz.items.2	Cirurgia ocular
+ph-light.c9.viz.items.3	Corte de metal
+ph-light.c9.viz.items.4	Medição de distâncias
+ph-colour.title	Cor
+ph-colour.summary	Porque é que o céu é azul e as folhas são verdes.
+ph-colour.q0.q	Porque é que as folhas parecem verdes?
+ph-colour.q0.o0	Emitem luz verde
+ph-colour.q0.o1	Refletem o verde e absorvem o vermelho e o azul
+ph-colour.q0.o2	Estão frias
+ph-colour.q0.x	A clorofila absorve o vermelho e o azul.
+ph-colour.q1.q	Porque é que o céu é azul?
+ph-colour.q1.o0	Reflete o mar
+ph-colour.q1.o1	O ar dispersa mais a luz azul do que a vermelha
+ph-colour.q1.o2	O ozono é azul
+ph-colour.q1.x	Dispersão de Rayleigh.
+ph-colour.q2.q	Misturar luz vermelha, verde e azul dá…
+ph-colour.q2.o0	Preto
+ph-colour.q2.o1	Branco
+ph-colour.q2.o2	Castanho
+ph-colour.q2.x	Mistura aditiva.
+ph-colour.c0.title	A luz branca é uma mistura
+ph-colour.c0.text	Newton mostrou com um prisma que a luz branca contém todas as cores. Cada cor é luz com um comprimento de onda diferente, do vermelho (cerca de 700 nm) ao violeta (cerca de 400 nm).
+ph-colour.c0.viz.unit	comprimento de onda (nm, aprox.)
+ph-colour.c0.viz.items.0.l	Violeta
+ph-colour.c0.viz.items.1.l	Azul
+ph-colour.c0.viz.items.2.l	Verde
+ph-colour.c0.viz.items.3.l	Amarelo
+ph-colour.c0.viz.items.4.l	Vermelho
+ph-colour.c1.title	Os objetos absorvem e refletem
+ph-colour.c1.text	Uma folha parece verde porque a clorofila absorve a luz vermelha e azul e reflete a verde. Uma camisola preta absorve a maior parte da luz (e aquece ao sol); uma branca reflete a maior parte.
+ph-colour.c1.viz.l.t	Preto
+ph-colour.c1.viz.l.items.0	absorve quase toda a luz
+ph-colour.c1.viz.l.items.1	aquece
+ph-colour.c1.viz.r.t	Branco
+ph-colour.c1.viz.r.items.0	reflete quase toda a luz
+ph-colour.c1.viz.r.items.1	fica mais fresco
+ph-colour.c2.title	Misturar luz vs misturar tinta
+ph-colour.c2.text	A luz mistura-se de forma aditiva: vermelho + verde + azul dão branco (ecrãs). A tinta mistura-se de forma subtrativa: cada pigmento absorve algumas cores, por isso misturar muitos dá uma cor escura e lamacenta (as impressoras usam ciano, magenta, amarelo e preto).
+ph-colour.c2.viz.l.t	Luz (aditiva)
+ph-colour.c2.viz.l.items.0	RGB
+ph-colour.c2.viz.l.items.1	soma até ao branco
+ph-colour.c2.viz.l.items.2	ecrãs
+ph-colour.c2.viz.r.t	Pigmento (subtrativo)
+ph-colour.c2.viz.r.items.0	CMYK
+ph-colour.c2.viz.r.items.1	soma até ao escuro
+ph-colour.c2.viz.r.items.2	impressão
+ph-colour.c3.title	Porque é que o céu é azul
+ph-colour.c3.text	As moléculas do ar dispersam os comprimentos de onda curtos, azuis, muito mais do que os vermelhos (dispersão de Rayleigh). A luz azul dispersa chega aos teus olhos vinda de todas as direções do céu.
+ph-colour.c3.viz.steps.0	A luz do sol entra na atmosfera
+ph-colour.c3.viz.steps.1	O azul dispersa-se mais
+ph-colour.c3.viz.steps.2	O azul vem de todo o céu
+ph-colour.c4.title	Pores do sol vermelhos
+ph-colour.c4.text	Ao pôr do sol, a luz atravessa muito mais atmosfera. A maior parte do azul é dispersa antes de chegar até ti, e ficam os vermelhos e os laranjas.
+ph-colour.c4.viz.l.t	Meio-dia
+ph-colour.c4.viz.l.items.0	percurso curto
+ph-colour.c4.viz.l.items.1	céu azul
+ph-colour.c4.viz.r.t	Pôr do sol
+ph-colour.c4.viz.r.items.0	percurso longo
+ph-colour.c4.viz.r.items.1	azul disperso
+ph-colour.c4.viz.r.items.2	céu vermelho
+ph-colour.c5.title	Ver a cor
+ph-colour.c5.text	O teu olho tem três tipos de cones, mais sensíveis a luz aproximadamente vermelha, verde e azul. Cada cor que vês é o teu cérebro a comparar os seus sinais.
+ph-colour.c5.viz.items.0.a	cones L
+ph-colour.c5.viz.items.0.b	ondas longas (vermelho)
+ph-colour.c5.viz.items.1.a	cones M
+ph-colour.c5.viz.items.1.b	médias (verde)
+ph-colour.c5.viz.items.2.a	cones S
+ph-colour.c5.viz.items.2.b	curtas (azul)
+ph-colour.c6.title	Daltonismo
+ph-colour.c6.text	Cerca de 8% dos homens e 0.5% das mulheres de ascendência norte-europeia têm alguma deficiência na visão das cores vermelho–verde, normalmente hereditária. Um bom design nunca depende só da cor.
+ph-colour.c6.viz.items.0.l	dos homens
+ph-colour.c6.viz.items.1.l	das mulheres
+ph-colour.c7.title	Infravermelho e ultravioleta
+ph-colour.c7.text	Para lá do vermelho está o infravermelho, que sentimos como calor e que as câmaras noturnas veem. Para lá do violeta está o ultravioleta, que causa queimaduras solares e faz alguns materiais brilhar.
+ph-colour.c7.viz.items.0.a	infravermelho
+ph-colour.c7.viz.items.0.b	calor, comandos, visão noturna
+ph-colour.c7.viz.items.1.a	visível
+ph-colour.c7.viz.items.1.b	400–700 nm
+ph-colour.c7.viz.items.2.a	ultravioleta
+ph-colour.c7.viz.items.2.b	escaldões, esterilização
+ph-colour.c8.title	Temperatura de cor
+ph-colour.c8.text	As lâmpadas descrevem-se em kelvin: branco quente cerca de 2700 K (amarelado), luz do dia cerca de 5000–6500 K (azulado). A luz quente parece mais acolhedora à noite.
+ph-colour.c8.viz.unit	K
+ph-colour.c8.viz.items.0.l	vela
+ph-colour.c8.viz.items.1.l	branco quente
+ph-colour.c8.viz.items.2.l	neutro
+ph-colour.c8.viz.items.3.l	luz do dia
+ph-colour.c9.title	Ecrãs
+ph-colour.c9.text	Cada píxel de um ecrã tem subpíxeis vermelho, verde e azul. Variar o seu brilho cria milhões de cores. Aproxima uma lupa de um ecrã e consegues vê-los.
+ph-colour.c9.viz.steps.0	Subpíxeis vermelho, verde, azul
+ph-colour.c9.viz.steps.1	Cada um com um brilho
+ph-colour.c9.viz.steps.2	O olho mistura-os
+ph-colour.c9.viz.steps.3	Milhões de cores
+ph-sound.title	Som
+ph-sound.summary	Volume, altura e como ouvimos.
+ph-sound.q0.q	Cada +10 dB significa que a intensidade do som…
+ph-sound.q0.o0	Duplica
+ph-sound.q0.o1	Fica dez vezes maior
+ph-sound.q0.o2	Fica igual
+ph-sound.q0.x	Os decibéis são logarítmicos.
+ph-sound.q1.q	O som viaja mais depressa no…
+ph-sound.q1.o0	Ar
+ph-sound.q1.o1	Água
+ph-sound.q1.o2	Aço
+ph-sound.q1.x	Materiais mais rígidos transmitem o som mais depressa.
+ph-sound.q2.q	O que faz um violino e uma flauta soarem diferentes na mesma nota?
+ph-sound.q2.o0	O volume
+ph-sound.q2.o1	Diferentes misturas de harmónicos (timbre)
+ph-sound.q2.o2	A velocidade do som
+ph-sound.q2.x	O timbre vem dos harmónicos.
+ph-sound.c0.title	O que é o som
+ph-sound.c0.text	O som é uma onda de pressão: um objeto a vibrar empurra e puxa o ar, criando compressões e rarefações que viajam até ao teu ouvido.
+ph-sound.c0.viz.steps.0	O objeto vibra
+ph-sound.c0.viz.steps.1	O ar comprime e estica
+ph-sound.c0.viz.steps.2	A onda propaga-se
+ph-sound.c0.viz.steps.3	O tímpano vibra
+ph-sound.c1.title	Altura e frequência
+ph-sound.c1.text	A altura é o quão agudo ou grave é um som, e é definida pela frequência. Os humanos ouvem mais ou menos de 20 Hz a 20 000 Hz; o limite superior desce com a idade.
+ph-sound.c1.viz.unit	Hz (aprox.)
+ph-sound.c1.viz.items.0.l	Nota mais grave do piano
+ph-sound.c1.viz.items.1.l	Voz masculina
+ph-sound.c1.viz.items.2.l	Voz feminina
+ph-sound.c1.viz.items.3.l	Lá central
+ph-sound.c1.viz.items.4.l	Apito para cães
+ph-sound.c2.title	Volume e decibéis
+ph-sound.c2.text	O volume mede-se em decibéis, uma escala logarítmica: cada +10 dB é dez vezes a intensidade do som e parece mais ou menos duas vezes mais alto.
+ph-sound.c2.viz.unit	dB (aprox.)
+ph-sound.c2.viz.items.0.l	Sussurro
+ph-sound.c2.viz.items.1.l	Conversa
+ph-sound.c2.viz.items.2.l	Trânsito intenso
+ph-sound.c2.viz.items.3.l	Concerto
+ph-sound.c2.viz.items.4.l	Avião a 30 m
+ph-sound.c3.title	Lesões auditivas
+ph-sound.c3.text	A exposição prolongada acima de cerca de 85 dB pode danificar para sempre as minúsculas células ciliadas do ouvido interno. Concertos e ferramentas elétricas pedem tampões.
+ph-sound.c3.viz.unit	dB
+ph-sound.c3.viz.items.0.l	seguro todo o dia
+ph-sound.c3.viz.items.1.l	risco ao fim de horas
+ph-sound.c3.viz.items.2.l	dor
+ph-sound.c4.title	Velocidade do som
+ph-sound.c4.text	O som viaja a cerca de 343 m/s no ar, cerca de 1500 m/s na água e à volta de 5000 m/s no aço. O som precisa de um meio: no espaço, ninguém te ouve.
+ph-sound.c4.viz.unit	m/s
+ph-sound.c4.viz.items.0.l	Ar
+ph-sound.c4.viz.items.1.l	Água
+ph-sound.c4.viz.items.2.l	Aço
+ph-sound.c5.title	Timbre
+ph-sound.c5.text	Um violino e uma flauta a tocar a mesma nota soam diferentes porque cada um produz uma mistura diferente de harmónicos por cima da frequência principal.
+ph-sound.c5.viz.steps.0	Frequência fundamental
+ph-sound.c5.viz.steps.1	Mais harmónicos
+ph-sound.c5.viz.steps.2	Mistura única
+ph-sound.c5.viz.steps.3	Timbre reconhecível
+ph-sound.c6.title	Acústica das salas
+ph-sound.c6.text	As superfícies duras refletem o som e fazem as salas ecoar; os estofos, as cortinas e os painéis acústicos absorvem-no. As salas de concertos são concebidas para ter a reverberação certa.
+ph-sound.c6.viz.l.t	Sala com eco
+ph-sound.c6.viz.l.items.0	azulejo, vidro, paredes nuas
+ph-sound.c6.viz.l.items.1	reverberação longa
+ph-sound.c6.viz.r.t	Sala silenciosa
+ph-sound.c6.viz.r.items.0	cortinas, sofás, painéis
+ph-sound.c6.viz.r.items.1	reverberação curta
+ph-sound.c7.title	Ultrassons
+ph-sound.c7.text	As frequências acima da audição humana usam-se em imagiologia médica, banhos de limpeza, sensores de distância, e pelos morcegos e golfinhos para se orientarem.
+ph-sound.c7.viz.items.0	Ecografias na gravidez
+ph-sound.c7.viz.items.1	Limpeza por ultrassons
+ph-sound.c7.viz.items.2	Sensores de estacionamento e nível
+ph-sound.c7.viz.items.3	Ecolocalização de morcegos e golfinhos
+ph-sound.c8.title	Infrassons
+ph-sound.c8.text	As frequências muito baixas, abaixo dos 20 Hz, percorrem distâncias enormes. Os elefantes comunicam com elas; vulcões, sismos e testes nucleares são detetados por estações de monitorização de infrassons.
+ph-sound.c8.viz.items.0	Chamamentos de elefantes
+ph-sound.c8.viz.items.1	Vulcões
+ph-sound.c8.viz.items.2	Sismos
+ph-sound.c8.viz.items.3	Monitorizar testes nucleares
+ph-sound.c9.title	Como ouvimos
+ph-sound.c9.text	O tímpano vibra, três ossinhos amplificam o movimento e, na cóclea em forma de caracol, milhares de células ciliadas transformam vibrações de diferentes frequências em sinais nervosos.
+ph-sound.c9.viz.steps.0	Tímpano
+ph-sound.c9.viz.steps.1	Três ossinhos
+ph-sound.c9.viz.steps.2	Líquido da cóclea
+ph-sound.c9.viz.steps.3	Células ciliadas
+ph-sound.c9.viz.steps.4	Nervo auditivo
+ph-atoms.title	Átomos
+ph-atoms.summary	De que é feito tudo o que existe.
+ph-atoms.q0.q	O que decide qual é o elemento de um átomo?
+ph-atoms.q0.o0	O número de neutrões
+ph-atoms.q0.o1	O número de protões
+ph-atoms.q0.o2	Apenas o número de eletrões
+ph-atoms.q0.x	O número de protões define o elemento.
+ph-atoms.q1.q	O carbono-12 e o carbono-14 são…
+ph-atoms.q1.o0	Elementos diferentes
+ph-atoms.q1.o1	Isótopos do carbono
+ph-atoms.q1.o2	Moléculas
+ph-atoms.q1.x	Os mesmos protões, neutrões diferentes.
+ph-atoms.q2.q	Onde foi produzida a maioria dos elementos pesados, como o ferro do teu sangue?
+ph-atoms.q2.o0	No Big Bang
+ph-atoms.q2.o1	No interior das estrelas e em explosões estelares
+ph-atoms.q2.o2	Na Terra
+ph-atoms.q2.x	As estrelas forjam os elementos mais pesados.
+ph-atoms.c0.title	Minúsculo e quase vazio
+ph-atoms.c0.text	Um átomo tem um núcleo minúsculo e denso de protões e neutrões, rodeado por uma nuvem de eletrões. Se o núcleo fosse um berlinde no centro de um estádio de futebol, os eletrões estariam nas bancadas exteriores.
+ph-atoms.c0.viz.items.0.v	0.1 nm
+ph-atoms.c0.viz.items.0.l	tamanho de um átomo
+ph-atoms.c0.viz.items.1.l	átomo maior que o núcleo
+ph-atoms.c1.title	Protões, neutrões, eletrões
+ph-atoms.c1.text	Os protões são positivos, os eletrões negativos e os neutrões neutros. Os protões e os neutrões pesam mais ou menos o mesmo; um eletrão pesa cerca de 1/1836 disso.
+ph-atoms.c1.viz.items.0.a	protão
+ph-atoms.c1.viz.items.0.b	carga +1, no núcleo
+ph-atoms.c1.viz.items.1.a	neutrão
+ph-atoms.c1.viz.items.1.b	sem carga, no núcleo
+ph-atoms.c1.viz.items.2.a	eletrão
+ph-atoms.c1.viz.items.2.b	carga −1, à volta do núcleo
+ph-atoms.c2.title	Elementos
+ph-atoms.c2.text	O número de protões decide o elemento: 1 é hidrogénio, 6 carbono, 8 oxigénio, 26 ferro, 79 ouro. Conhecem-se 118 elementos.
+ph-atoms.c2.viz.unit	protões
+ph-atoms.c2.viz.items.0.l	Hidrogénio
+ph-atoms.c2.viz.items.1.l	Carbono
+ph-atoms.c2.viz.items.2.l	Oxigénio
+ph-atoms.c2.viz.items.3.l	Ferro
+ph-atoms.c2.viz.items.4.l	Ouro
+ph-atoms.c3.title	Isótopos
+ph-atoms.c3.text	Átomos do mesmo elemento podem ter números diferentes de neutrões: são isótopos. O carbono-12 e o carbono-14 são ambos carbono; o carbono-14 é radioativo e usa-se para datar restos antigos.
+ph-atoms.c3.viz.l.t	Carbono-12
+ph-atoms.c3.viz.l.items.0	6 protões, 6 neutrões
+ph-atoms.c3.viz.l.items.1	estável
+ph-atoms.c3.viz.r.t	Carbono-14
+ph-atoms.c3.viz.r.items.0	6 protões, 8 neutrões
+ph-atoms.c3.viz.r.items.1	radioativo
+ph-atoms.c4.title	A tabela periódica
+ph-atoms.c4.text	Em 1869, Mendeleev organizou os elementos por massa e propriedades, deixando espaços para elementos ainda por descobrir, e previu as suas propriedades. As colunas agrupam elementos que se comportam de forma semelhante.
+ph-atoms.c4.viz.items.0	Linhas: períodos
+ph-atoms.c4.viz.items.1	Colunas: grupos com química semelhante
+ph-atoms.c4.viz.items.2	Metais à esquerda
+ph-atoms.c4.viz.items.3	Gases nobres à direita
+ph-atoms.c5.title	Camadas eletrónicas
+ph-atoms.c5.text	Os eletrões ocupam níveis de energia ou camadas. A química tem sobretudo a ver com os eletrões exteriores: os átomos partilham-nos, cedem-nos ou recebem-nos para formar ligações e completar a camada exterior.
+ph-atoms.c5.viz.steps.0	Eletrões exteriores
+ph-atoms.c5.viz.steps.1	Partilhados ou transferidos
+ph-atoms.c5.viz.steps.2	Ligação química
+ph-atoms.c5.viz.steps.3	Molécula ou cristal
+ph-atoms.c6.title	Moléculas
+ph-atoms.c6.text	Os átomos juntam-se em moléculas: dois hidrogénios e um oxigénio formam água (H₂O); um carbono e dois oxigénios formam dióxido de carbono (CO₂).
+ph-atoms.c6.viz.items.0.a	H₂O
+ph-atoms.c6.viz.items.0.b	água
+ph-atoms.c6.viz.items.1.a	CO₂
+ph-atoms.c6.viz.items.1.b	dióxido de carbono
+ph-atoms.c6.viz.items.2.a	O₂
+ph-atoms.c6.viz.items.2.b	o oxigénio que respiramos
+ph-atoms.c6.viz.items.3.a	CH₄
+ph-atoms.c6.viz.items.3.b	metano, gás natural
+ph-atoms.c7.title	Estados da matéria
+ph-atoms.c7.text	Os sólidos mantêm a forma, os líquidos tomam a forma do recipiente e os gases enchem-no. Aquecer dá às partículas mais energia para se libertarem. O plasma, um gás quente ionizado, é um quarto estado, presente nas estrelas e nos relâmpagos.
+ph-atoms.c7.viz.items.0	Plasma: gás ionizado
+ph-atoms.c7.viz.items.1	Gás: partículas livres
+ph-atoms.c7.viz.items.2	Líquido: partículas deslizam
+ph-atoms.c7.viz.items.3	Sólido: partículas fixas
+ph-atoms.c8.title	Ver átomos
+ph-atoms.c8.text	Os átomos são demasiado pequenos para os microscópios óticos, mas os microscópios de efeito túnel, inventados em 1981, conseguem obter imagens deles e até mover átomos individuais. Em 1989, a IBM escreveu o seu logótipo com 35 átomos de xénon.
+ph-atoms.c8.viz.events.0.l	Teoria atómica de Dalton
+ph-atoms.c8.viz.events.1.l	descoberta do eletrão
+ph-atoms.c8.viz.events.2.l	descoberta do núcleo
+ph-atoms.c8.viz.events.3.l	primeiras imagens de átomos
+ph-atoms.c9.title	De onde vêm os átomos
+ph-atoms.c9.text	O hidrogénio e o hélio formaram-se no Big Bang. Os elementos mais pesados foram forjados no interior das estrelas e em explosões estelares. O carbono do teu corpo e o ferro do teu sangue foram feitos em estrelas.
+ph-atoms.c9.viz.steps.0	Big Bang: hidrogénio, hélio
+ph-atoms.c9.viz.steps.1	Estrelas fundem elementos pesados
+ph-atoms.c9.viz.steps.2	Supernovas espalham-nos
+ph-atoms.c9.viz.steps.3	Novas estrelas, planetas, nós
+ph-radio.title	Radioatividade
+ph-radio.summary	Núcleos instáveis, radiação e semividas.
+ph-radio.q0.q	Que radiação é travada por uma folha de papel?
+ph-radio.q0.o0	Alfa
+ph-radio.q0.o1	Beta
+ph-radio.q0.o2	Gama
+ph-radio.q0.x	As partículas alfa são grandes e pesadas.
+ph-radio.q1.q	Ao fim de 3 semividas, quanto resta de uma amostra?
+ph-radio.q1.o0	33%
+ph-radio.q1.o1	12.5%
+ph-radio.q1.o2	3%
+ph-radio.q1.x	½ × ½ × ½ = 1/8.
+ph-radio.q2.q	Qual é, para muitas pessoas, a maior fonte natural de radiação?
+ph-radio.q2.o0	Telemóveis
+ph-radio.q2.o1	Gás radão
+ph-radio.q2.o2	Linhas de alta tensão
+ph-radio.q2.x	O radão vem de rochas como o granito.
+ph-radio.c0.title	Núcleos instáveis
+ph-radio.c0.text	Alguns núcleos têm uma combinação instável de protões e neutrões. Libertam energia e partículas para se tornarem mais estáveis: é o decaimento radioativo.
+ph-radio.c0.viz.steps.0	Núcleo instável
+ph-radio.c0.viz.steps.1	Emite radiação
+ph-radio.c0.viz.steps.2	Torna-se outro núcleo
+ph-radio.c0.viz.steps.3	Por fim, estável
+ph-radio.c1.title	Três tipos de radiação
+ph-radio.c1.text	As partículas alfa (2 protões + 2 neutrões) são travadas pelo papel. As partículas beta (eletrões), por alguns mm de alumínio. Os raios gama (luz muito energética) exigem chumbo ou betão espessos.
+ph-radio.c1.viz.items.0	Gama: chumbo ou betão espesso
+ph-radio.c1.viz.items.1	Beta: alguns mm de alumínio
+ph-radio.c1.viz.items.2	Alfa: papel ou pele
+ph-radio.c2.title	Semivida
+ph-radio.c2.text	Cada isótopo radioativo tem uma semivida: o tempo que demora metade de uma amostra a decair. Ao fim de duas semividas resta um quarto; ao fim de dez, menos de 0.1%.
+ph-radio.c2.viz.unit	% restante
+ph-radio.c2.viz.items.1.l	1 semivida
+ph-radio.c3.title	As semividas variam imenso
+ph-radio.c3.text	Alguns isótopos decaem em segundos, outros ao longo de milhares de milhões de anos.
+ph-radio.c3.viz.items.0.a	radão-222
+ph-radio.c3.viz.items.0.b	3.8 dias
+ph-radio.c3.viz.items.1.a	iodo-131
+ph-radio.c3.viz.items.1.b	8 dias
+ph-radio.c3.viz.items.2.a	carbono-14
+ph-radio.c3.viz.items.2.b	5730 anos
+ph-radio.c3.viz.items.3.a	urânio-238
+ph-radio.c3.viz.items.3.b	4.5 mil milhões de anos
+ph-radio.c4.title	Datação por carbono
+ph-radio.c4.text	Os seres vivos absorvem carbono-14 constantemente. Quando morrem, este decai com uma semivida de 5730 anos. Medir o que resta permite datar restos orgânicos com até cerca de 50 000 anos.
+ph-radio.c4.viz.steps.0	Organismo vivo: C-14 estável
+ph-radio.c4.viz.steps.1	Morre: deixa de absorver
+ph-radio.c4.viz.steps.2	O C-14 decai
+ph-radio.c4.viz.steps.3	Medir o que resta: a idade
+ph-radio.c5.title	Radiação de fundo
+ph-radio.c5.text	Estamos sempre expostos a uma radiação natural baixa vinda de rochas, solo, raios cósmicos e do nosso próprio corpo. O gás radão das rochas graníticas é a maior fonte natural, e é importante no norte de Portugal.
+ph-radio.c5.viz.unit	mSv/ano (aprox., média mundial)
+ph-radio.c5.viz.items.0.l	Radão
+ph-radio.c5.viz.items.1.l	Alimentos e corpo
+ph-radio.c5.viz.items.2.l	Cósmica
+ph-radio.c5.viz.items.3.l	Rochas e solo
+ph-radio.c5.viz.items.4.l	Médica
+ph-radio.c6.title	Radão em casa
+ph-radio.c6.text	O granito do norte de Portugal liberta radão, que se pode acumular em caves e rés-do-chão. Ventilar e selar os pavimentos reduz o radão; detetores baratos medem-no ao longo de meses.
+ph-radio.c6.viz.items.0	Medir com um detetor durante 2–3 meses
+ph-radio.c6.viz.items.1	Ventilar o rés-do-chão
+ph-radio.c6.viz.items.2	Selar fissuras no pavimento
+ph-radio.c6.viz.items.3	Extração sob o pavimento se for alto
+ph-radio.c7.title	Medir a dose
+ph-radio.c7.text	A dose de radiação nas pessoas mede-se em sieverts (Sv), normalmente milisieverts (mSv). Um raio X ao tórax são cerca de 0.02 mSv; uma TAC, vários mSv; um voo Lisboa–Nova Iorque, cerca de 0.04 mSv.
+ph-radio.c7.viz.unit	mSv (aprox.)
+ph-radio.c7.viz.items.0.l	Raio X ao tórax
+ph-radio.c7.viz.items.1.l	Voo transatlântico
+ph-radio.c7.viz.items.2.l	Natural num ano
+ph-radio.c7.viz.items.3.l	TAC
+ph-radio.c8.title	Usos da radiação
+ph-radio.c8.text	A radiação salva vidas na medicina (raios X, tratamento do cancro, esterilização de equipamento), verifica soldaduras na indústria, alimenta naves espaciais e deteta fumo nos alarmes.
+ph-radio.c8.viz.items.0	Imagiologia médica
+ph-radio.c8.viz.items.1	Radioterapia do cancro
+ph-radio.c8.viz.items.2	Esterilizar equipamento
+ph-radio.c8.viz.items.3	Detetores de fumo
+ph-radio.c8.viz.items.4	Energia de sondas espaciais
+ph-radio.c9.title	Marie Curie
+ph-radio.c9.text	Marie Curie descobriu o polónio e o rádio com Pierre Curie, criou a palavra "radioatividade" e ganhou dois Prémios Nobel, em física (1903) e química (1911), tendo sido a primeira pessoa a ganhar em duas ciências.
+ph-radio.c9.viz.events.0.l	Becquerel descobre a radioatividade
+ph-radio.c9.viz.events.1.l	Os Curie descobrem o polónio e o rádio
+ph-radio.c9.viz.events.2.l	Nobel da Física
+ph-radio.c9.viz.events.3.l	Nobel da Química
+ph-nuclear.title	Energia nuclear
+ph-nuclear.summary	Fissão, fusão e como funcionam os reatores.
+ph-nuclear.q0.q	O que controla a reação em cadeia num reator?
+ph-nuclear.q0.o0	O vapor
+ph-nuclear.q0.o1	Barras de controlo que absorvem neutrões
+ph-nuclear.q0.o2	O gerador
+ph-nuclear.q0.x	As barras de controlo absorvem neutrões.
+ph-nuclear.q1.q	A fusão junta…
+ph-nuclear.q1.o0	Núcleos pesados
+ph-nuclear.q1.o1	Núcleos leves como o hidrogénio
+ph-nuclear.q1.o2	Eletrões
+ph-nuclear.q1.x	É o que alimenta o Sol.
+ph-nuclear.q2.q	Portugal tem uma central nuclear?
+ph-nuclear.q2.o0	Sim, em Ferrel
+ph-nuclear.q2.o1	Não, o plano de Ferrel foi abandonado
+ph-nuclear.q2.o2	Sim, em Lisboa
+ph-nuclear.q2.x	Os planos foram abandonados nos anos 1970.
+ph-nuclear.c0.title	E = mc²
+ph-nuclear.c0.text	Einstein mostrou que a massa e a energia são equivalentes. Uma quantidade minúscula de massa converte-se numa quantidade enorme de energia, porque c², a velocidade da luz ao quadrado, é gigantesco.
+ph-nuclear.c0.viz.f	E = m × c²
+ph-nuclear.c0.viz.items.0.s	m
+ph-nuclear.c0.viz.items.0.m	massa (kg)
+ph-nuclear.c0.viz.items.1.s	c
+ph-nuclear.c0.viz.items.1.m	300 000 000 m/s
+ph-nuclear.c0.viz.items.2.s	1 g
+ph-nuclear.c0.viz.items.2.m	≈ 90 biliões de J
+ph-nuclear.c1.title	Fissão
+ph-nuclear.c1.text	Um núcleo pesado como o urânio-235 absorve um neutrão e divide-se em dois núcleos mais pequenos, libertando energia e mais dois ou três neutrões, que podem dividir outros núcleos: uma reação em cadeia.
+ph-nuclear.c1.viz.steps.0	Neutrão atinge U-235
+ph-nuclear.c1.viz.steps.1	O núcleo divide-se
+ph-nuclear.c1.viz.steps.2	Energia e novos neutrões
+ph-nuclear.c1.viz.steps.3	Mais fissões
+ph-nuclear.c2.title	Dentro de um reator
+ph-nuclear.c2.text	As barras de combustível aquecem a água; o calor produz vapor, que faz girar uma turbina e um gerador, tal como numa central a carvão, mas sem combustão. As barras de controlo absorvem neutrões para manter a reação em cadeia estável.
+ph-nuclear.c2.viz.steps.0	A fissão aquece a água
+ph-nuclear.c2.viz.steps.1	Vapor
+ph-nuclear.c2.viz.steps.2	Turbina
+ph-nuclear.c2.viz.steps.3	Gerador
+ph-nuclear.c2.viz.steps.4	Eletricidade
+ph-nuclear.c3.title	Densidade energética
+ph-nuclear.c3.text	Um quilograma de combustível de urânio pode produzir tanta energia como milhares de toneladas de carvão. A energia nuclear ocupa muito pouco terreno e quase não emite CO₂ durante o funcionamento.
+ph-nuclear.c3.viz.items.0.v	24 MJ
+ph-nuclear.c3.viz.items.0.l	por kg de carvão
+ph-nuclear.c3.viz.items.1.v	~500 000 MJ
+ph-nuclear.c3.viz.items.1.l	por kg de urânio natural num reator típico
+ph-nuclear.c4.title	Resíduos nucleares
+ph-nuclear.c4.text	O combustível usado é altamente radioativo durante milhares de anos. Ocupa pouco volume e é guardado em piscinas de arrefecimento e depois em contentores secos. O Onkalo, na Finlândia, é o primeiro repositório geológico profundo a ser preparado para armazenamento definitivo.
+ph-nuclear.c4.viz.steps.0	Combustível usado
+ph-nuclear.c4.viz.steps.1	Piscinas durante anos
+ph-nuclear.c4.viz.steps.2	Contentores secos
+ph-nuclear.c4.viz.steps.3	Repositório geológico profundo
+ph-nuclear.c5.title	Acidentes
+ph-nuclear.c5.text	Os piores acidentes foram Chernobyl (1986), um reator mal concebido e um teste inseguro, e Fukushima (2011), onde um tsunami deitou abaixo o arrefecimento. Moldaram regras de segurança rigorosas em todo o mundo.
+ph-nuclear.c5.viz.events.0.l	Three Mile Island, EUA
+ph-nuclear.c5.viz.events.1.l	Chernobyl, URSS
+ph-nuclear.c5.viz.events.2.l	Fukushima, Japão
+ph-nuclear.c6.title	Portugal e o nuclear
+ph-nuclear.c6.text	Portugal nunca teve uma central nuclear. Um plano dos anos 1970 para uma central em Ferrel, perto de Peniche, foi abandonado depois de protestos locais. O país explorou minas de urânio até 2001, na Urgeiriça e noutros locais.
+ph-nuclear.c6.viz.events.0.l	Protestos contra Ferrel
+ph-nuclear.c6.viz.events.1.y	anos 1970
+ph-nuclear.c6.viz.events.1.l	plano abandonado
+ph-nuclear.c6.viz.events.2.l	fecham as últimas minas de urânio
+ph-nuclear.c7.title	Fusão
+ph-nuclear.c7.text	A fusão junta núcleos leves, como isótopos do hidrogénio, em hélio, libertando ainda mais energia por quilo do que a fissão. É o que alimenta o Sol. Fazê-la na Terra exige temperaturas acima dos 100 milhões de °C.
+ph-nuclear.c7.viz.l.t	Fissão
+ph-nuclear.c7.viz.l.items.0	divide núcleos pesados
+ph-nuclear.c7.viz.l.items.1	urânio
+ph-nuclear.c7.viz.l.items.2	já em uso
+ph-nuclear.c7.viz.r.t	Fusão
+ph-nuclear.c7.viz.r.items.0	junta núcleos leves
+ph-nuclear.c7.viz.r.items.1	hidrogénio
+ph-nuclear.c7.viz.r.items.2	ainda experimental
+ph-nuclear.c8.title	Reatores de fusão
+ph-nuclear.c8.text	Os tokamaks, como o ITER, em construção em França, confinam plasma quente com ímanes potentes. Em 2022, a National Ignition Facility dos EUA conseguiu uma reação de fusão que libertou mais energia do que a que os seus lasers forneceram ao alvo.
+ph-nuclear.c8.viz.events.0.y	anos 1950
+ph-nuclear.c8.viz.events.0.l	primeiras ideias de tokamak
+ph-nuclear.c8.viz.events.1.l	ignição do NIF com lasers
+ph-nuclear.c8.viz.events.2.y	anos 2030
+ph-nuclear.c8.viz.events.2.l	experiências previstas no ITER
+ph-nuclear.c9.title	Pequenos reatores modulares
+ph-nuclear.c9.text	Os SMR são reatores mais pequenos construídos em fábrica e transportados para o local, com o objetivo de reduzir custos e prazos de construção. Há vários modelos em desenvolvimento e licenciamento em todo o mundo.
+ph-nuclear.c9.viz.items.0	Módulos feitos em fábrica
+ph-nuclear.c9.viz.items.1	Locais mais pequenos
+ph-nuclear.c9.viz.items.2	Segurança passiva
+ph-nuclear.c9.viz.items.3	Ainda sobretudo em desenvolvimento
+ph-relativity.title	Relatividade
+ph-relativity.summary	As ideias de Einstein sobre o espaço, o tempo e a gravidade.
+ph-relativity.q0.q	O que se mantém igual para todos os observadores na relatividade?
+ph-relativity.q0.o0	O tempo
+ph-relativity.q0.o1	O comprimento
+ph-relativity.q0.o2	A velocidade da luz no vácuo
+ph-relativity.q0.x	Tudo o resto se ajusta à volta dela.
+ph-relativity.q1.q	Porque é que o GPS tem de corrigir a relatividade?
+ph-relativity.q1.o0	Os satélites estão frios
+ph-relativity.q1.o1	Os seus relógios andam a outro ritmo, causando erros de posição
+ph-relativity.q1.o2	A luz é lenta
+ph-relativity.q1.x	Sem correção, os erros crescem ~10 km por dia.
+ph-relativity.q2.q	Segundo a relatividade geral, a gravidade é…
+ph-relativity.q2.o0	Uma força magnética
+ph-relativity.q2.o1	A curvatura do espaço-tempo causada pela massa
+ph-relativity.q2.o2	Uma ilusão
+ph-relativity.q2.x	A massa curva o espaço-tempo.
+ph-relativity.c0.title	A velocidade da luz é igual para todos
+ph-relativity.c0.text	O ponto de partida de Einstein, em 1905: a velocidade da luz no vácuo é a mesma para todos os observadores, seja qual for a sua velocidade. Esta regra simples obriga o espaço e o tempo a esticar.
+ph-relativity.c0.viz.steps.0	Luz com velocidade fixa para todos
+ph-relativity.c0.viz.steps.1	Relógios em movimento atrasam-se
+ph-relativity.c0.viz.steps.2	Comprimentos em movimento encolhem
+ph-relativity.c1.title	Dilatação do tempo
+ph-relativity.c1.text	Os relógios em movimento andam mais devagar. Às velocidades do dia a dia o efeito é minúsculo, mas a 87% da velocidade da luz o tempo passa a metade do ritmo.
+ph-relativity.c1.viz.unit	ritmo do tempo (%)
+ph-relativity.c1.viz.items.0.l	Em repouso
+ph-relativity.c1.viz.items.1.l	50% de c
+ph-relativity.c1.viz.items.2.l	87% de c
+ph-relativity.c1.viz.items.3.l	99% de c
+ph-relativity.c2.title	O paradoxo dos gémeos
+ph-relativity.c2.text	Se uma gémea viajar até uma estrela distante perto da velocidade da luz e regressar, estará mais nova do que a irmã que ficou na Terra. Experiências com partículas rápidas e relógios atómicos em aviões confirmam-no.
+ph-relativity.c2.viz.l.t	Gémea que viajou
+ph-relativity.c2.viz.l.items.0	passou menos tempo
+ph-relativity.c2.viz.l.items.1	mais nova
+ph-relativity.c2.viz.r.t	Gémea na Terra
+ph-relativity.c2.viz.r.items.0	passou mais tempo
+ph-relativity.c2.viz.r.items.1	mais velha
+ph-relativity.c3.title	Nada mais rápido do que a luz
+ph-relativity.c3.text	À medida que um objeto acelera, é preciso cada vez mais energia para o acelerar ainda mais. Atingir a velocidade da luz exigiria energia infinita, por isso nada com massa o consegue.

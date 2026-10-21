@@ -498,3 +498,753 @@ gen-images.c5.title	Fraquezas comuns
 gen-images.c5.text	Os modelos de imagem melhoraram depressa, mas ainda podem ter dificuldades com texto exato nas imagens, mãos, contagem de objetos, layouts precisos e diagramas técnicos.
 gen-images.c5.viz.items.0	Texto exato e logótipos
 gen-images.c5.viz.items.1	Contar objetos
+gen-images.c5.viz.items.2	Layouts precisos
+gen-images.c5.viz.items.3	Rigor técnico
+gen-images.c5.viz.items.4	Personagens consistentes
+gen-images.c6.title	Usos no trabalho
+gen-images.c6.text	Mood boards, imagens de conceito de produto, rascunhos de marketing, visuais para apresentações e ilustrações rápidas. Os materiais finais da marca normalmente ainda precisam de um designer.
+gen-images.c6.viz.items.0	Conceitos e mood boards
+gen-images.c6.viz.items.1	Rascunhos de marketing
+gen-images.c6.viz.items.2	Visuais de apresentações
+gen-images.c6.viz.items.3	Maquetas de produto
+gen-images.c6.viz.items.4	Storyboards
+gen-images.c7.title	Direitos de autor
+gen-images.c7.text	O estatuto legal de treinar com imagens protegidas por direitos de autor e de ser dono dos resultados da IA ainda está a ser decidido nos tribunais. Evita imitar estilos de artistas vivos ou marcas reais, e confirma os termos de licença da tua ferramenta.
+gen-images.c7.viz.items.0	Ver termos de licença
+gen-images.c7.viz.items.1	Evitar marcas e logótipos reais
+gen-images.c7.viz.items.2	Não imitar artistas vivos
+gen-images.c7.viz.items.3	Identificar imagens de IA quando exigido
+gen-images.c8.title	Deepfakes
+gen-images.c8.text	Imagens falsas realistas de pessoas reais podem ser usadas para fraude, assédio e desinformação. O Regulamento Europeu da IA exige que os deepfakes sejam identificados, e muitas ferramentas acrescentam marcas de água invisíveis.
+gen-images.c8.viz.steps.0	Imagem falsa de uma pessoa real
+gen-images.c8.viz.steps.1	Partilhada online
+gen-images.c8.viz.steps.2	Marcas de água e rótulos ajudam
+gen-images.c8.viz.steps.3	Verificar antes de confiar
+gen-images.c9.title	Proveniência
+gen-images.c9.text	Normas como a C2PA associam "credenciais de conteúdo" às imagens, registando como foram criadas e editadas, para que quem as vê possa verificar se houve IA envolvida.
+gen-images.c9.viz.steps.0	Imagem criada
+gen-images.c9.viz.steps.1	Credenciais de conteúdo anexadas
+gen-images.c9.viz.steps.2	Edições registadas
+gen-images.c9.viz.steps.3	Quem vê pode ver a origem
+gen-media.title	Geração de voz, música e vídeo
+gen-media.summary	Som sintético e imagens em movimento.
+gen-media.q0.q	Porque é que a clonagem de voz é arriscada?
+gen-media.q0.o0	É cara
+gen-media.q0.o1	Os burlões podem imitar a voz de pessoas reais
+gen-media.q0.o2	Soa robótica
+gen-media.q0.x	Facilita a fraude.
+gen-media.q1.q	Qual é um uso popular da IA de voz no trabalho?
+gen-media.q1.o0	Pintura
+gen-media.q1.o1	Transcrição e resumos de reuniões
+gen-media.q1.o2	Só videojogos
+gen-media.q1.x	Transcrições, resumos e tarefas.
+gen-media.q2.q	O que é mais fiável do que detetar falsificações depois de feitas?
+gen-media.q2.o0	Adivinhar
+gen-media.q2.o1	Proveniência e marcas de água na criação
+gen-media.q2.o2	Perguntar ao autor
+gen-media.q2.x	Uma origem registada pode ser verificada.
+gen-media.c0.title	Texto para voz
+gen-media.c0.text	O TTS neuronal produz vozes naturais, com emoção e respiração. Os sistemas modernos falam muitas línguas e mudam de estilo a pedido.
+gen-media.c0.viz.steps.0	Texto
+gen-media.c0.viz.steps.1	Planear ritmo e entoação
+gen-media.c0.viz.steps.2	Gerar áudio
+gen-media.c0.viz.steps.3	Voz natural
+gen-media.c1.title	Clonagem de voz
+gen-media.c1.text	Alguns segundos a minutos de áudio chegam para clonar uma voz. É útil para dobragem e acessibilidade, mas também para fraude, por isso o consentimento e a verificação são importantes.
+gen-media.c1.viz.l.t	Legítimo
+gen-media.c1.viz.l.items.0	dobragem
+gen-media.c1.viz.l.items.1	acessibilidade
+gen-media.c1.viz.l.items.2	voz própria para quem perde a fala
+gen-media.c1.viz.r.t	Abuso
+gen-media.c1.viz.r.items.0	chamadas de burla
+gen-media.c1.viz.r.items.1	falsos apoios
+gen-media.c1.viz.r.items.2	assédio
+gen-media.c2.title	Voz para voz
+gen-media.c2.text	Os assistentes de voz em tempo real já ouvem e respondem diretamente em voz, com interrupções e alternância natural de vez, em vez de encadearem passos de texto separados.
+gen-media.c2.viz.l.t	Pipeline
+gen-media.c2.viz.l.items.0	voz → texto → LLM → texto → voz
+gen-media.c2.viz.l.items.1	mais lento
+gen-media.c2.viz.r.t	Modelo de voz nativo
+gen-media.c2.viz.r.items.0	direto
+gen-media.c2.viz.r.items.1	mais rápido
+gen-media.c2.viz.r.items.2	mantém o tom
+gen-media.c3.title	Geração de música
+gen-media.c3.text	Os modelos conseguem compor canções com voz a partir de uma descrição em texto. A indústria musical está a negociar licenças e a processar por causa dos dados de treino, por isso os direitos continuam em disputa.
+gen-media.c3.viz.items.0	Música de fundo
+gen-media.c3.viz.items.1	Jingles e maquetas
+gen-media.c3.viz.items.2	Efeitos sonoros
+gen-media.c3.viz.items.3	Direitos ainda em disputa
+gen-media.c4.title	Geração de vídeo
+gen-media.c4.text	Os modelos de vídeo geram clips curtos a partir de texto ou imagens, mantendo os objetos consistentes entre fotogramas. A qualidade melhorou muito depressa desde 2024, embora cenas longas e coerentes continuem a ser difíceis.
+gen-media.c4.viz.steps.0	Prompt ou imagem
+gen-media.c4.viz.steps.1	Gerar fotogramas em conjunto
+gen-media.c4.viz.steps.2	Manter o movimento consistente
+gen-media.c4.viz.steps.3	Clip de vídeo curto
+gen-media.c5.title	Avatares e dobragem
+gen-media.c5.text	Os avatares de IA podem apresentar vídeos de formação, e as ferramentas de dobragem traduzem o vídeo de um orador para outras línguas, com movimentos labiais a condizer.
+gen-media.c5.viz.items.0.a	avatar
+gen-media.c5.viz.items.0.b	apresentador sintético
+gen-media.c5.viz.items.1.a	dobragem
+gen-media.c5.viz.items.1.b	voz traduzida, mesmo orador
+gen-media.c5.viz.items.2.a	lip-sync
+gen-media.c5.viz.items.2.b	boca acompanha a nova língua
+gen-media.c6.title	Transcrição e reuniões
+gen-media.c6.text	O reconhecimento de voz mais os LLM transforma reuniões em transcrições, resumos e tarefas, um dos usos mais populares no trabalho.
+gen-media.c6.viz.steps.0	Áudio da reunião
+gen-media.c6.viz.steps.1	Transcrição com oradores
+gen-media.c6.viz.steps.2	Resumo
+gen-media.c6.viz.steps.3	Tarefas e responsáveis
+gen-media.c7.title	Detetar média sintéticos
+gen-media.c7.text	Detetar áudio e vídeo de IA é difícil e pouco fiável. As marcas de água na criação e as normas de proveniência são mais promissoras do que a deteção depois de feito.
+gen-media.c7.viz.l.t	Deteção
+gen-media.c7.viz.l.items.0	adivinhar depois de feito
+gen-media.c7.viz.l.items.1	pouco fiável
+gen-media.c7.viz.r.t	Proveniência
+gen-media.c7.viz.r.items.0	registada na criação
+gen-media.c7.viz.r.items.1	verificável
+gen-media.c8.title	Protege-te
+gen-media.c8.text	Contra burlas de voz, combina uma palavra-código na família ou na empresa, liga de volta para números conhecidos e nunca ajas perante pedidos urgentes de dinheiro feitos só por voz.
+gen-media.c8.viz.items.0	Combinar uma palavra-código
+gen-media.c8.viz.items.1	Ligar de volta para número conhecido
+gen-media.c8.viz.items.2	Verificar pedidos urgentes de dinheiro
+gen-media.c8.viz.items.3	Desconfiar de videochamadas estranhas
+gen-media.c9.title	Colaboração criativa
+gen-media.c9.text	Muitos criadores usam a IA como um caderno de esboços: geram versões toscas e depois refinam-nas com talento humano. O valor passa para o gosto, a direção e a edição.
+gen-media.c9.viz.steps.0	Ideia
+gen-media.c9.viz.steps.1	Esboços da IA
+gen-media.c9.viz.steps.2	O humano escolhe e refina
+gen-media.c9.viz.steps.3	Peça final
+gen-embed.title	Embeddings e pesquisa semântica
+gen-embed.summary	Transformar significado em números.
+gen-embed.q0.q	O que representa um embedding?
+gen-embed.q0.o0	O tamanho de um ficheiro
+gen-embed.q0.o1	O significado de um texto como um vetor de números
+gen-embed.q0.o2	Uma palavra-passe
+gen-embed.q0.x	Significados parecidos ficam com vetores próximos.
+gen-embed.q1.q	A pesquisa semântica encontra "fatura vencida" quando pesquisas…
+gen-embed.q1.o0	Só "fatura vencida"
+gen-embed.q1.o1	"pagamento em atraso"
+gen-embed.q1.o2	Mais nada
+gen-embed.q1.x	Compara significados, não só palavras.
+gen-embed.q2.q	Porquê acrescentar um re-ranker?
+gen-embed.q2.o0	Para guardar mais dados
+gen-embed.q2.o1	Para ordenar os melhores candidatos com mais exatidão
+gen-embed.q2.o2	Para traduzir
+gen-embed.q2.x	A pesquisa em duas fases melhora a precisão.
+gen-embed.c0.title	Significado como coordenadas
+gen-embed.c0.text	Um modelo de embeddings transforma texto numa lista de números (um vetor), muitas vezes com centenas ou milhares de valores. Textos com significado parecido ficam com vetores próximos.
+gen-embed.c0.viz.items.0.a	"fatura vencida"
+gen-embed.c0.viz.items.0.b	perto de "pagamento atrasado"
+gen-embed.c0.viz.items.1.a	"fatura vencida"
+gen-embed.c0.viz.items.1.b	longe de "previsão do tempo"
+gen-embed.c0.viz.items.2.a	dimensões
+gen-embed.c0.viz.items.2.b	384 a 3,072 é típico
+gen-embed.c1.title	Semelhança
+gen-embed.c1.text	A proximidade costuma medir-se pela semelhança do cosseno: 1 significa a mesma direção, 0 sem relação. Permite aos computadores comparar significados, e não apenas palavras iguais.
+gen-embed.c1.viz.unit	semelhança
+gen-embed.c1.viz.items.0.l	sem relação
+gen-embed.c1.viz.items.1.l	tema relacionado
+gen-embed.c1.viz.items.2.l	mesmo sentido
+gen-embed.c2.title	Pesquisa por palavras vs semântica
+gen-embed.c2.text	A pesquisa por palavras-chave procura as palavras exatas. A pesquisa semântica procura o significado: pesquisar "pagamento em atraso" encontra "fatura vencida". Os melhores sistemas combinam as duas (pesquisa híbrida).
+gen-embed.c2.viz.l.t	Por palavras-chave
+gen-embed.c2.viz.l.items.0	palavras exatas
+gen-embed.c2.viz.l.items.1	boa para códigos e nomes
+gen-embed.c2.viz.r.t	Pesquisa semântica
+gen-embed.c2.viz.r.items.0	significado
+gen-embed.c2.viz.r.items.1	lida com sinónimos e formulações
+gen-embed.c3.title	Bases de dados vetoriais
+gen-embed.c3.text	As bases de dados vetoriais guardam milhões de embeddings e encontram rapidamente os mais próximos de uma consulta, graças a índices engenhosos. Exemplos: pgvector no Postgres, Azure AI Search, Pinecone e Qdrant.
+gen-embed.c3.viz.steps.0	Documentos
+gen-embed.c3.viz.steps.1	Embedding de cada pedaço
+gen-embed.c3.viz.steps.2	Guardar no índice vetorial
+gen-embed.c3.viz.steps.3	Consulta → pedaços próximos
+gen-embed.c4.title	Divisão em pedaços
+gen-embed.c4.text	Os documentos longos são divididos em pedaços (parágrafos ou secções) antes do embedding. Pedaços grandes demais diluem o significado; pequenos demais perdem o contexto.
+gen-embed.c4.viz.l.t	Demasiado grande
+gen-embed.c4.viz.l.items.0	temas misturados
+gen-embed.c4.viz.l.items.1	resultados vagos
+gen-embed.c4.viz.r.t	Demasiado pequeno
+gen-embed.c4.viz.r.items.0	falta contexto
+gen-embed.c4.viz.r.items.1	fragmentos
+gen-embed.c5.title	Outros usos
+gen-embed.c5.text	Os embeddings também alimentam recomendações, agrupamento de pedidos de apoio parecidos, deteção de duplicados, classificação de documentos e deteção de anomalias.
+gen-embed.c5.viz.items.0	Recomendações
+gen-embed.c5.viz.items.1	Agrupar pedidos de apoio
+gen-embed.c5.viz.items.2	Deteção de duplicados
+gen-embed.c5.viz.items.3	Classificação
+gen-embed.c5.viz.items.4	Deteção de anomalias
+gen-embed.c6.title	Embeddings multilingues
+gen-embed.c6.text	Alguns modelos de embeddings colocam línguas diferentes no mesmo espaço, por isso uma pergunta em português pode encontrar um documento em inglês com o mesmo significado.
+gen-embed.c6.viz.steps.0	"Pagamento atrasado"
+gen-embed.c6.viz.steps.1	Mesma zona do espaço vetorial
+gen-embed.c6.viz.steps.2	Encontra o documento "late payment"
+gen-embed.c7.title	Imagens e texto juntos
+gen-embed.c7.text	Modelos como o CLIP colocam imagens e texto num só espaço, o que permite pesquisas como "fotos de um camião vermelho no porto" numa biblioteca de imagens.
+gen-embed.c7.viz.steps.0	Consulta em texto
+gen-embed.c7.viz.steps.1	Espaço de embeddings comum
+gen-embed.c7.viz.steps.2	Imagens mais próximas
+gen-embed.c7.viz.steps.3	Pesquisa visual
+gen-embed.c8.title	Reordenação
+gen-embed.c8.text	Uma pesquisa vetorial rápida devolve, por exemplo, 50 candidatos; depois, um modelo de reordenação (re-ranker), mais lento mas mais inteligente, ordena-os com precisão. Esta abordagem em duas fases melhora a exatidão.
+gen-embed.c8.viz.steps.0	Consulta
+gen-embed.c8.viz.steps.1	Pesquisa vetorial: top 50
+gen-embed.c8.viz.steps.2	O re-ranker pontua cada um
+gen-embed.c8.viz.steps.3	Os 5 melhores ao utilizador
+gen-embed.c9.title	Mantém os embeddings atualizados
+gen-embed.c9.text	Quando os documentos mudam, os seus embeddings têm de ser atualizados. Usa o mesmo modelo de embeddings para documentos e consultas; mudar de modelo implica refazer os embeddings de tudo.
+gen-embed.c9.viz.items.0	Refazer embeddings alterados
+gen-embed.c9.viz.items.1	Mesmo modelo p/ consultas e docs
+gen-embed.c9.viz.items.2	Registar versões
+gen-embed.c9.viz.items.3	Apagar conteúdo removido
+gen-rag.title	Geração aumentada por recuperação
+gen-rag.summary	Fundamentar respostas nos teus próprios documentos.
+gen-rag.q0.q	O que acrescenta o RAG a um prompt?
+gen-rag.q0.o0	Exemplos aleatórios
+gen-rag.q0.o1	Passagens relevantes recuperadas dos teus documentos
+gen-rag.q0.o2	Um modelo maior
+gen-rag.q0.x	Fundamenta as respostas nas tuas fontes.
+gen-rag.q1.q	Factos que mudam com frequência tratam-se melhor com…
+gen-rag.q1.o0	Afinação
+gen-rag.q1.o1	RAG
+gen-rag.q1.o2	Temperatura mais alta
+gen-rag.q1.x	O RAG atualiza-se de imediato quando os documentos mudam.
+gen-rag.q2.q	Porque é que o RAG empresarial tem de verificar permissões?
+gen-rag.q2.o0	Por rapidez
+gen-rag.q2.o1	Para que cada utilizador só veja os documentos a que tem acesso
+gen-rag.q2.o2	Para poupar tokens
+gen-rag.q2.x	A segurança tem de ser aplicada na recuperação.
+gen-rag.c0.title	A ideia
+gen-rag.c0.text	O RAG recupera passagens relevantes dos teus documentos e entrega-as ao modelo juntamente com a pergunta, para que as respostas venham das tuas fontes e não da memória do modelo.
+gen-rag.c0.viz.steps.0	Pergunta
+gen-rag.c0.viz.steps.1	Pesquisar nos teus documentos
+gen-rag.c0.viz.steps.2	Juntar as melhores passagens ao prompt
+gen-rag.c0.viz.steps.3	Resposta fundamentada com fontes
+gen-rag.c1.title	Porque não afinar simplesmente?
+gen-rag.c1.text	A afinação ensina estilo e comportamento, mas é uma má forma de acrescentar factos que mudam. O RAG atualiza-se de imediato quando os documentos mudam e pode citar as fontes.
+gen-rag.c1.viz.l.t	RAG
+gen-rag.c1.viz.l.items.0	conhecimento dos documentos
+gen-rag.c1.viz.l.items.1	atualização imediata
+gen-rag.c1.viz.l.items.2	citações
+gen-rag.c1.viz.r.t	Afinação
+gen-rag.c1.viz.r.items.0	estilo e comportamento
+gen-rag.c1.viz.r.items.1	exige retreino
+gen-rag.c1.viz.r.items.2	sem citações
+gen-rag.c2.title	O pipeline de ingestão
+gen-rag.c2.text	Os documentos são carregados, limpos, divididos em pedaços, enriquecidos com metadados (data, responsável, tipo), convertidos em embeddings e indexados.
+gen-rag.c2.viz.steps.0	Carregar documentos
+gen-rag.c2.viz.steps.1	Limpar e dividir
+gen-rag.c2.viz.steps.2	Juntar metadados
+gen-rag.c2.viz.steps.3	Embeddings
+gen-rag.c2.viz.steps.4	Indexar
+gen-rag.c3.title	A qualidade da recuperação é tudo
+gen-rag.c3.text	Se a recuperação falhar a passagem certa, o modelo não consegue responder bem. A maioria das melhorias em RAG vem de melhor divisão em pedaços, pesquisa híbrida, filtros de metadados e reordenação.
+gen-rag.c3.viz.items.0	Boa divisão em pedaços
+gen-rag.c3.viz.items.1	Pesquisa híbrida palavras + semântica
+gen-rag.c3.viz.items.2	Filtros de metadados
+gen-rag.c3.viz.items.3	Reordenação
+gen-rag.c3.viz.items.4	Reescrita da consulta
+gen-rag.c4.title	Citações
+gen-rag.c4.text	Pedir ao modelo que cite a passagem que sustenta cada afirmação permite aos utilizadores verificar as respostas e cria confiança. Respostas sem suporte devem dizer "Não sei".
+gen-rag.c4.viz.items.0.w	resposta sem fontes
+gen-rag.c4.viz.items.0.r	resposta com passagens citadas
+gen-rag.c4.viz.items.1.w	adivinhar quando nada se encontra
+gen-rag.c4.viz.items.1.r	dizer que não está nos documentos
+gen-rag.c5.title	Controlo de acessos
+gen-rag.c5.text	Numa empresa, o RAG tem de respeitar permissões: cada utilizador só deve recuperar documentos que tem autorização para ver. Filtra pelos direitos do utilizador no momento da recuperação.
+gen-rag.c5.viz.steps.0	Pergunta
+gen-rag.c5.viz.steps.1	Verificar permissões
+gen-rag.c5.viz.steps.2	Pesquisar só documentos permitidos
+gen-rag.c5.viz.steps.3	Responder
+gen-rag.c6.title	Dados estruturados
+gen-rag.c6.text	Para números em bases de dados (vendas, stock), é melhor deixar o modelo escrever uma consulta (SQL) ou chamar uma API do que converter tabelas em texto para embeddings.
+gen-rag.c6.viz.l.t	Não estruturados
+gen-rag.c6.viz.l.items.0	políticas, contratos, emails
+gen-rag.c6.viz.l.items.1	usar RAG
+gen-rag.c6.viz.r.t	Estruturados
+gen-rag.c6.viz.r.items.0	vendas, inventário
+gen-rag.c6.viz.r.items.1	usar SQL ou APIs
+gen-rag.c7.title	Avaliar o RAG
+gen-rag.c7.text	Mede a recuperação (encontrámos as passagens certas?) e a geração (a resposta está correta, completa e fiel às fontes?). Constrói um conjunto de teste com perguntas reais de resposta conhecida.
+gen-rag.c7.viz.items.0.a	recall da recuperação
+gen-rag.c7.viz.items.0.b	passagem certa encontrada?
+gen-rag.c7.viz.items.1.a	fidelidade
+gen-rag.c7.viz.items.1.b	resposta bate com as fontes?
+gen-rag.c7.viz.items.2.a	completude
+gen-rag.c7.viz.items.2.b	respondeu a tudo?
+gen-rag.c7.viz.items.3.a	citações
+gen-rag.c7.viz.items.3.b	referências corretas?
+gen-rag.c8.title	Perguntas sobre contratos
+gen-rag.c8.text	Um trader pergunta: "Qual é a taxa de demurrage do contrato 4471?" O RAG recupera a cláusula relevante, o modelo responde "$18,000 por dia, cláusula 12.3" e dá o link para a página.
+gen-rag.c8.viz.steps.0	Pergunta sobre o contrato
+gen-rag.c8.viz.steps.1	Encontrar a cláusula 12.3
+gen-rag.c8.viz.steps.2	Responder com a taxa
+gen-rag.c8.viz.steps.3	Link para a página de origem
+gen-rag.c9.title	Falhas comuns
+gen-rag.c9.text	Problemas típicos: documentos desatualizados, versões duplicadas, tabelas estragadas pela leitura dos PDF, perguntas que exigem informação de muitos documentos e perguntas vagas dos utilizadores.
+gen-rag.c9.viz.items.0	Documentos desatualizados ou duplicados
+gen-rag.c9.viz.items.1	Má extração de tabelas de PDF
+gen-rag.c9.viz.items.2	Respostas espalhadas por muitos ficheiros
+gen-rag.c9.viz.items.3	Perguntas vagas
+gen-rag.c9.viz.items.4	Permissões em falta
+gen-finetune.title	Adaptar modelos
+gen-finetune.summary	Afinação, LoRA e destilação.
+gen-finetune.q0.q	O que deves experimentar antes de afinar?
+gen-finetune.q0.o0	Nada
+gen-finetune.q0.o1	Prompts e RAG
+gen-finetune.q0.o2	Treinar do zero
+gen-finetune.q0.x	São mais baratos e muitas vezes chegam.
+gen-finetune.q1.q	O que faz o LoRA?
+gen-finetune.q1.o0	Apaga camadas
+gen-finetune.q1.o1	Treina pequenas matrizes adicionais mantendo o modelo base congelado
+gen-finetune.q1.o2	Acrescenta GPU
+gen-finetune.q1.x	Afinação eficiente.
+gen-finetune.q2.q	Na destilação, o modelo pequeno aprende com…
+gen-finetune.q2.o0	Dados aleatórios
+gen-finetune.q2.o1	Os resultados de um modelo professor maior
+gen-finetune.q2.o2	Só com os utilizadores
+gen-finetune.q2.x	O aluno imita o professor.
+gen-finetune.c0.title	Quando afinar
+gen-finetune.c0.text	A afinação (fine-tuning) continua a treinar um modelo com os teus exemplos para mudar o seu comportamento: um formato consistente, um estilo da casa, uma tarefa de classificação específica. Experimenta primeiro prompts e RAG; afina quando não chegarem.
+gen-finetune.c0.viz.items.0	Afinação: mudar comportamento
+gen-finetune.c0.viz.items.1	RAG: juntar conhecimento
+gen-finetune.c0.viz.items.2	Prompts: começa aqui
+gen-finetune.c1.title	Do que precisas
+gen-finetune.c1.text	Algumas centenas a alguns milhares de exemplos de alta qualidade, com entrada e resultado ideal. A qualidade importa muito mais do que a quantidade: exemplos inconsistentes ensinam comportamento inconsistente.
+gen-finetune.c1.viz.items.0	Tarefa bem definida
+gen-finetune.c1.viz.items.1	Centenas de bons exemplos
+gen-finetune.c1.viz.items.2	Formatação consistente
+gen-finetune.c1.viz.items.3	Conjunto de teste à parte
+gen-finetune.c1.viz.items.4	Uma referência a superar
+gen-finetune.c2.title	Afinação completa vs LoRA
+gen-finetune.c2.text	A afinação completa atualiza todos os pesos: é cara. O LoRA (low-rank adaptation) congela o modelo e treina pequenas matrizes adicionais, usando uma ínfima parte da memória e produzindo ficheiros de adaptador pequenos.
+gen-finetune.c2.viz.l.t	Afinação completa
+gen-finetune.c2.viz.l.items.0	todos os pesos
+gen-finetune.c2.viz.l.items.1	cara
+gen-finetune.c2.viz.l.items.2	ficheiros grandes
+gen-finetune.c2.viz.r.t	LoRA
+gen-finetune.c2.viz.r.items.0	adaptadores pequenos
+gen-finetune.c2.viz.r.items.1	barato
+gen-finetune.c2.viz.r.items.2	troca por tarefa
+gen-finetune.c3.title	Destilação
+gen-finetune.c3.text	Um modelo "professor" grande gera respostas; um modelo "aluno" mais pequeno é treinado para as imitar. O aluno é mais barato e mais rápido, e muitas vezes quase tão bom na tarefa pretendida.
+gen-finetune.c3.viz.steps.0	Modelo professor grande
+gen-finetune.c3.viz.steps.1	Gera muitas respostas
+gen-finetune.c3.viz.steps.2	Aluno pequeno aprende
+gen-finetune.c3.viz.steps.3	Modelo rápido e barato
+gen-finetune.c4.title	Afinação por preferências
+gen-finetune.c4.text	Em vez de respostas corretas únicas, podes treinar com pares de respostas melhores e piores (por exemplo, com DPO), moldando o tom e a utilidade.
+gen-finetune.c4.viz.steps.0	Pares de respostas
+gen-finetune.c4.viz.steps.1	Marcar a melhor
+gen-finetune.c4.viz.steps.2	Treino por preferências
+gen-finetune.c4.viz.steps.3	O modelo prefere o teu estilo
+gen-finetune.c5.title	Esquecimento catastrófico
+gen-finetune.c5.text	Afinar demasiado numa tarefa estreita pode tornar um modelo pior noutras coisas. Taxas de aprendizagem mais baixas, LoRA e misturar dados gerais ajudam.
+gen-finetune.c5.viz.items.0.w	treinar a fundo só numa tarefa
+gen-finetune.c5.viz.items.0.r	misturar exemplos gerais e usar LoRA
+gen-finetune.c6.title	Modelos de domínio
+gen-finetune.c6.text	Algumas organizações adaptam modelos a uma área como o direito, a medicina ou as finanças, com vocabulário e documentos do domínio. Muitas vezes, bons modelos gerais com RAG funcionam igual ou melhor.
+gen-finetune.c6.viz.l.t	Modelo de domínio
+gen-finetune.c6.viz.l.items.0	vocabulário especializado
+gen-finetune.c6.viz.l.items.1	caro de criar e manter
+gen-finetune.c6.viz.r.t	Modelo geral + RAG
+gen-finetune.c6.viz.r.items.0	flexível
+gen-finetune.c6.viz.r.items.1	usa os modelos mais recentes
+gen-finetune.c6.viz.r.items.2	mais fácil de atualizar
+gen-finetune.c7.title	Alojar modelos afinados
+gen-finetune.c7.text	Os fornecedores de cloud permitem afinar e alojar certos modelos via API. Os modelos abertos podem ser afinados e servidos nas tuas próprias GPU.
+gen-finetune.c7.viz.items.0.a	afinação na cloud
+gen-finetune.c7.viz.items.0.b	gerida, paga por uso
+gen-finetune.c7.viz.items.1.a	modelo aberto + LoRA
+gen-finetune.c7.viz.items.1.b	controlo total, hardware próprio
+gen-finetune.c7.viz.items.2.a	servir adaptadores
+gen-finetune.c7.viz.items.2.b	muitos LoRA num só modelo base
+gen-finetune.c8.title	Medir o ganho
+gen-finetune.c8.text	Compara o modelo afinado com o modelo base mais um bom prompt, no mesmo conjunto de teste. Se a melhoria for pequena, o custo e a manutenção extra podem não compensar.
+gen-finetune.c8.viz.unit	exatidão % (ilustrativo)
+gen-finetune.c8.viz.items.0.l	Base + prompt simples
+gen-finetune.c8.viz.items.1.l	Base + bom prompt
+gen-finetune.c8.viz.items.2.l	Afinado
+gen-finetune.c9.title	Mantém-te atualizado
+gen-finetune.c9.text	Surgem novos modelos base com frequência. Uma afinação do modelo do ano passado pode ser batida pelo modelo deste ano com um prompt. Mantém os dados de treino e as avaliações prontos a voltar a correr.
+gen-finetune.c9.viz.steps.0	Sai um novo modelo base
+gen-finetune.c9.viz.steps.1	Voltar a correr as avaliações
+gen-finetune.c9.viz.steps.2	Afinar de novo se compensar
+gen-finetune.c9.viz.steps.3	Implementar
+gen-agents.title	Ferramentas e agentes
+gen-agents.summary	Modelos que agem, não só respondem.
+gen-agents.q0.q	O que é a chamada de funções?
+gen-agents.q0.o0	Telefonar ao modelo
+gen-agents.q0.o1	O modelo pedir uma ferramenta definida, com parâmetros, que a aplicação executa
+gen-agents.q0.o2	Escrever funções à mão
+gen-agents.q0.x	A aplicação corre a ferramenta que o modelo pede.
+gen-agents.q1.q	O que faz de algo um "agente" e não um chatbot?
+gen-agents.q1.o0	Um nome
+gen-agents.q1.o1	Funciona em ciclo: planeia, age com ferramentas, observa e continua
+gen-agents.q1.o2	Tem voz
+gen-agents.q1.x	Ação autónoma em vários passos.
+gen-agents.q2.q	De que deve precisar um agente antes de apagar dados ou fazer pagamentos?
+gen-agents.q2.o0	De nada
+gen-agents.q2.o1	De aprovação humana
+gen-agents.q2.o2	De um modelo mais rápido
+gen-agents.q2.x	Ações irreversíveis exigem supervisão.
+gen-agents.c0.title	Uso de ferramentas
+gen-agents.c0.text	Um modelo pode receber ferramentas: funções que pode chamar, como "search_web", "get_order_status" ou "run_sql". Decide quando as chamar e usa os resultados na resposta.
+gen-agents.c0.viz.steps.0	Pergunta
+gen-agents.c0.viz.steps.1	O modelo escolhe uma ferramenta
+gen-agents.c0.viz.steps.2	A app executa-a
+gen-agents.c0.viz.steps.3	O modelo usa o resultado
+gen-agents.c1.title	Como funciona a chamada de funções
+gen-agents.c1.text	O programador descreve cada ferramenta com um nome, uma finalidade e parâmetros. O modelo devolve um pedido estruturado; a aplicação executa-o e devolve o resultado.
+gen-agents.c1.viz.items.0.a	nome
+gen-agents.c1.viz.items.0.b	get_weather
+gen-agents.c1.viz.items.1.a	descrição
+gen-agents.c1.viz.items.1.b	tempo atual numa cidade
+gen-agents.c1.viz.items.2.a	parâmetros
+gen-agents.c1.viz.items.2.b	cidade, unidades
+gen-agents.c1.viz.items.3.a	resultado
+gen-agents.c1.viz.items.3.b	18 °C, nublado
+gen-agents.c2.title	O que faz um agente
+gen-agents.c2.text	Um agente funciona em ciclo: planeia, age com ferramentas, observa os resultados e continua até atingir o objetivo ou precisar de ajuda.
+gen-agents.c2.viz.steps.0	Planear
+gen-agents.c2.viz.steps.1	Agir com uma ferramenta
+gen-agents.c2.viz.steps.2	Observar o resultado
+gen-agents.c2.viz.steps.3	Decidir o passo seguinte
+gen-agents.c3.title	Agentes de programação
+gen-agents.c3.text	Os agentes de programação leem uma base de código, editam ficheiros, correm testes e corrigem erros em ciclo. São um dos usos de agentes mais maduros, porque os testes dão um feedback claro.
+gen-agents.c3.viz.steps.0	Ler a tarefa
+gen-agents.c3.viz.steps.1	Editar código
+gen-agents.c3.viz.steps.2	Correr testes
+gen-agents.c3.viz.steps.3	Corrigir falhas
+gen-agents.c3.viz.steps.4	Abrir um pull request
+gen-agents.c4.title	Uso do browser e do computador
+gen-agents.c4.text	Alguns agentes operam sites e aplicações de computador lendo o ecrã e clicando, o que é útil onde não há API, embora seja mais lento e mais sujeito a erros do que as APIs.
+gen-agents.c4.viz.l.t	Ferramentas API
+gen-agents.c4.viz.l.items.0	rápido
+gen-agents.c4.viz.l.items.1	fiável
+gen-agents.c4.viz.l.items.2	estruturado
+gen-agents.c4.viz.r.t	Controlo do ecrã
+gen-agents.c4.viz.r.items.0	funciona em todo o lado
+gen-agents.c4.viz.r.items.1	mais lento
+gen-agents.c4.viz.r.items.2	frágil
+gen-agents.c5.title	Model Context Protocol
+gen-agents.c5.text	O MCP é uma norma aberta (lançada pela Anthropic em 2024) para ligar assistentes de IA a ferramentas e fontes de dados, de modo que um conector funcione em várias apps de IA.
+gen-agents.c5.viz.steps.0	O teu sistema (CRM, ficheiros, BD)
+gen-agents.c5.viz.steps.1	Servidor MCP
+gen-agents.c5.viz.steps.2	Qualquer assistente de IA compatível com MCP
+gen-agents.c6.title	Sistemas multiagente
+gen-agents.c6.text	Alguns desenhos repartem o trabalho por agentes especializados (investigador, redator, revisor) coordenados por um orquestrador. Mais agentes trazem mais capacidade, mas também mais custo e complexidade.
+gen-agents.c6.viz.root	Orquestrador
+gen-agents.c6.viz.items.0	Agente de pesquisa
+gen-agents.c6.viz.items.1	Agente de escrita
+gen-agents.c6.viz.items.2	Agente de revisão
+gen-agents.c7.title	Salvaguardas para agentes
+gen-agents.c7.text	Os agentes devem ter acesso com privilégio mínimo, limites de gastos, registo de todas as ações e aprovação humana para passos irreversíveis como pagamentos, eliminações ou emails para clientes.
+gen-agents.c7.viz.items.0	Acesso com privilégio mínimo
+gen-agents.c7.viz.items.1	Aprovação de ações irreversíveis
+gen-agents.c7.viz.items.2	Limites de orçamento e de ritmo
+gen-agents.c7.viz.items.3	Registo completo de ações
+gen-agents.c7.viz.items.4	Botão de paragem fácil
+gen-agents.c8.title	Risco de injeção de prompts
+gen-agents.c8.text	Um agente que lê emails ou páginas web pode encontrar instruções escondidas como "reencaminha todas as faturas para este endereço". As defesas incluem isolar o conteúdo não fiável, limitar as ferramentas e exigir confirmação.
+gen-agents.c8.viz.items.0.w	o agente obedece a texto de um email
+gen-agents.c8.viz.items.0.r	tratar texto externo como dados, confirmar ações sensíveis
+gen-agents.c9.title	Onde os agentes já funcionam
+gen-agents.c9.text	Os agentes são mais fiáveis em tarefas com objetivos claros, boas ferramentas e resultados verificáveis: programação, resumos de pesquisa, análise de dados, pedidos de TI e fluxos de back-office.
+gen-agents.c9.viz.items.0	Desenvolvimento de software
+gen-agents.c9.viz.items.1	Pesquisa e relatórios
+gen-agents.c9.viz.items.2	Análise de dados
+gen-agents.c9.viz.items.3	Pedidos de TI e RH
+gen-agents.c9.viz.items.4	Processos de back-office
+gen-evals.title	Avaliar a IA generativa
+gen-evals.summary	Como sabes se é boa?
+gen-evals.q0.q	Qual é o problema de julgar um modelo com base em poucos exemplos?
+gen-evals.q0.o0	É demasiado lento
+gen-evals.q0.o1	As impressões de poucos casos podem enganar muito
+gen-evals.q0.o2	Custa demasiado
+gen-evals.q0.x	São precisas avaliações sistemáticas.
+gen-evals.q1.q	Antes de confiar num LLM juiz, deves…
+gen-evals.q1.o0	Usar o maior modelo
+gen-evals.q1.o1	Confirmar que concorda com avaliações humanas
+gen-evals.q1.o2	Desligar os registos
+gen-evals.q1.x	Calibra o juiz.
+gen-evals.q2.q	Porquê voltar a correr as avaliações ao mudar de modelo?
+gen-evals.q2.o0	A lei obriga
+gen-evals.q2.o1	Para apanhar regressões em que os resultados pioraram
+gen-evals.q2.o2	Para gastar mais tokens
+gen-evals.q2.x	Novos modelos podem mudar o comportamento.
+gen-evals.c0.title	Porque importam as avaliações
+gen-evals.c0.text	Os resultados generativos variam e os modelos mudam. Sem avaliação sistemática, estás a confiar em impressões de poucos exemplos, que podem enganar muito.
+gen-evals.c0.viz.l.t	A olho
+gen-evals.c0.viz.l.items.0	poucos exemplos
+gen-evals.c0.viz.l.items.1	impressões
+gen-evals.c0.viz.l.items.2	enganador
+gen-evals.c0.viz.r.t	Avaliações
+gen-evals.c0.viz.r.items.0	muitos exemplos reais
+gen-evals.c0.viz.r.items.1	pontuadas
+gen-evals.c0.viz.r.items.2	repetíveis
+gen-evals.c1.title	Cria um conjunto de teste
+gen-evals.c1.text	Junta entradas reais do teu caso de uso, com respostas esperadas ou critérios claros. Inclui casos fáceis, difíceis e extremos. 50–200 exemplos bem escolhidos já levam longe.
+gen-evals.c1.viz.items.0	Entradas reais
+gen-evals.c1.viz.items.1	Respostas esperadas ou critérios
+gen-evals.c1.viz.items.2	Casos difíceis e extremos
+gen-evals.c1.viz.items.3	Exemplos de falhas conhecidas
+gen-evals.c1.viz.items.4	Separado dos prompts
+gen-evals.c2.title	Métricas exatas
+gen-evals.c2.text	Para extração e classificação, compara os resultados com as respostas certas: exatidão, precisão, recall, correspondência exata de campos.
+gen-evals.c2.viz.items.0.a	extração
+gen-evals.c2.viz.items.0.b	exatidão por campo
+gen-evals.c2.viz.items.1.a	classificação
+gen-evals.c2.viz.items.1.b	precisão e recall
+gen-evals.c2.viz.items.2.a	resultado estruturado
+gen-evals.c2.viz.items.2.b	validade do esquema
+gen-evals.c2.viz.items.3.a	código
+gen-evals.c2.viz.items.3.b	testes a passar
+gen-evals.c3.title	LLM como juiz
+gen-evals.c3.text	Para texto aberto, outro modelo pode classificar os resultados segundo uma grelha ("É fiel à fonte? O tom está certo?"). Calibra primeiro o juiz com avaliações humanas.
+gen-evals.c3.viz.steps.0	Resultado + grelha
+gen-evals.c3.viz.steps.1	Modelo juiz pontua
+gen-evals.c3.viz.steps.2	Comparar com avaliações humanas
+gen-evals.c3.viz.steps.3	Confiar quando alinhado
+gen-evals.c4.title	Revisão humana
+gen-evals.c4.text	Especialistas a avaliar uma amostra de resultados continuam a ser a referência de qualidade, sobretudo em áreas de alto risco. Usa grelhas claras para manter as avaliações consistentes.
+gen-evals.c4.viz.items.0	Grelha clara
+gen-evals.c4.viz.items.1	Vários revisores
+gen-evals.c4.viz.items.2	Comparações às cegas
+gen-evals.c4.viz.items.3	Medir a concordância
+gen-evals.c4.viz.items.4	Aproveitar os resultados
+gen-evals.c5.title	Testes A/B
+gen-evals.c5.text	Em produção, compara duas versões (prompts ou modelos) com tráfego real: avaliações dos utilizadores, tarefas concluídas, edições necessárias, escalamentos.
+gen-evals.c5.viz.steps.0	Versão A vs B
+gen-evals.c5.viz.steps.1	Dividir utilizadores reais
+gen-evals.c5.viz.steps.2	Medir resultados
+gen-evals.c5.viz.steps.3	Ficar com a vencedora
+gen-evals.c6.title	Testes de regressão
+gen-evals.c6.text	Quando mudas um prompt ou atualizas um modelo, volta a correr o conjunto de avaliação para apanhar o que piorou. Trata os prompts como código, com testes automáticos.
+gen-evals.c6.viz.steps.0	Mudar prompt ou modelo
+gen-evals.c6.viz.steps.1	Correr as avaliações
+gen-evals.c6.viz.steps.2	Comparar pontuações
+gen-evals.c6.viz.steps.3	Lançar só se não piorar
+gen-evals.c7.title	Mede o que importa
+gen-evals.c7.text	A exatidão por si só não chega: mede também a latência, o custo por tarefa, os problemas de segurança, a satisfação dos utilizadores e a frequência com que as pessoas têm de corrigir os resultados.
+gen-evals.c7.viz.items.0	Pontuação de qualidade
+gen-evals.c7.viz.items.1	Latência
+gen-evals.c7.viz.items.2	Custo por tarefa
+gen-evals.c7.viz.items.3	Incidentes de segurança
+gen-evals.c7.viz.items.4	Taxa de correção humana
+gen-evals.c8.title	Benchmarks vs a tua tarefa
+gen-evals.c8.text	Os benchmarks públicos (MMLU, testes de programação) comparam modelos em geral, mas a tua tarefa pode ser diferente. Um modelo que ganha benchmarks nem sempre é o melhor para os teus documentos e utilizadores.
+gen-evals.c8.viz.l.t	Benchmarks públicos
+gen-evals.c8.viz.l.items.0	capacidade geral
+gen-evals.c8.viz.l.items.1	comparação fácil
+gen-evals.c8.viz.l.items.2	podem estar contaminados
+gen-evals.c8.viz.r.t	As tuas avaliações
+gen-evals.c8.viz.r.items.0	os teus dados
+gen-evals.c8.viz.r.items.1	os teus critérios
+gen-evals.c8.viz.r.items.2	o que importa mesmo
+gen-evals.c9.title	Monitorização em produção
+gen-evals.c9.text	Regista entradas e saídas (respeitando a privacidade), tira amostras para rever, vigia desvios e recolhe o feedback dos utilizadores (polegar para cima/baixo) para aumentar o teu conjunto de teste.
+gen-evals.c9.viz.steps.0	Registar interações
+gen-evals.c9.viz.steps.1	Amostrar e rever
+gen-evals.c9.viz.steps.2	Encontrar padrões de falha
+gen-evals.c9.viz.steps.3	Juntar ao conjunto de teste
+gen-halluc.title	Alucinações e fundamentação
+gen-halluc.summary	Porque é que os modelos inventam e como reduzir isso.
+gen-halluc.q0.q	Porque é que os LLM alucinam?
+gen-halluc.q0.o0	São preguiçosos
+gen-halluc.q0.o1	Geram texto plausível em vez de factos verificados
+gen-halluc.q0.o2	Falta-lhes eletricidade
+gen-halluc.q0.x	Fluência não é o mesmo que verdade.
+gen-halluc.q1.q	Que instrução reduz as alucinações em perguntas sobre documentos?
+gen-halluc.q1.o0	"Sê criativo"
+gen-halluc.q1.o1	"Responde só com base nos documentos; diz se não estiver lá"
+gen-halluc.q1.o2	"Sê breve"
+gen-halluc.q1.x	Fundamentação mais permissão para dizer "Não sei".
+gen-halluc.q2.q	Como se devem tratar cálculos exatos?
+gen-halluc.q2.o0	Confiar no modelo
+gen-halluc.q2.o1	Usar uma ferramenta de código ou calculadora
+gen-halluc.q2.o2	Perguntar duas vezes
+gen-halluc.q2.x	As ferramentas são fiáveis para aritmética.
+gen-halluc.c0.title	O que é uma alucinação
+gen-halluc.c0.text	Uma alucinação é um resultado fluente e confiante, mas falso ou sem suporte: citações inventadas, números errados, cláusulas inexistentes. Acontece porque o modelo gera texto plausível, não factos verificados.
+gen-halluc.c0.viz.steps.0	Pergunta
+gen-halluc.c0.viz.steps.1	O modelo gera texto plausível
+gen-halluc.c0.viz.steps.2	Sem fonte para confirmar
+gen-halluc.c0.viz.steps.3	Resposta confiante mas falsa
+gen-halluc.c1.title	Quando é mais provável
+gen-halluc.c1.text	As alucinações aumentam com temas obscuros, números e datas exatos, listas longas, pedidos de citações, acontecimentos posteriores à data-limite e perguntas com premissas falsas.
+gen-halluc.c1.viz.items.0	Factos de nicho
+gen-halluc.c1.viz.items.1	Números e datas exatos
+gen-halluc.c1.viz.items.2	Citações e referências
+gen-halluc.c1.viz.items.3	Acontecimentos recentes
+gen-halluc.c1.viz.items.4	Premissas falsas na pergunta
+gen-halluc.c2.title	Fundamentação
+gen-halluc.c2.text	Dá ao modelo o material de origem e pede-lhe que responda só com base nele. As respostas fundamentadas alucinam muito menos e podem ser verificadas.
+gen-halluc.c2.viz.l.t	Sem fundamento
+gen-halluc.c2.viz.l.items.0	responde de memória
+gen-halluc.c2.viz.l.items.1	difícil de verificar
+gen-halluc.c2.viz.r.t	Fundamentado
+gen-halluc.c2.viz.r.items.0	responde com as fontes dadas
+gen-halluc.c2.viz.r.items.1	verificável
+gen-halluc.c3.title	Permite o "Não sei"
+gen-halluc.c3.text	Diz explicitamente ao modelo que pode dizer que não sabe ou que a resposta não está nos documentos. Caso contrário, pode sentir-se pressionado a produzir alguma coisa.
+gen-halluc.c3.viz.items.0.w	"responde à pergunta"
+gen-halluc.c3.viz.items.0.r	"responde só com base nos documentos; se não estiver lá, diz isso"
+gen-halluc.c4.title	Citações e excertos
+gen-halluc.c4.text	Pede excertos ou citações para cada afirmação. Depois verifica uma amostra: os modelos também inventam citações, por isso confirma que o texto citado existe mesmo.
+gen-halluc.c4.viz.items.0	Pedir excertos de suporte
+gen-halluc.c4.viz.items.1	Link para as páginas de origem
+gen-halluc.c4.viz.items.2	Verificar citações por amostragem
+gen-halluc.c4.viz.items.3	Rejeitar respostas sem suporte
+gen-halluc.c5.title	Ferramentas para factos
+gen-halluc.c5.text	Para cálculos, usa uma ferramenta de código ou uma calculadora. Para dados ao vivo, usa pesquisa ou uma API. Deixa o modelo orquestrar e explicar, não memorizar.
+gen-halluc.c5.viz.items.0.a	aritmética
+gen-halluc.c5.viz.items.0.b	interpretador de código
+gen-halluc.c5.viz.items.1.a	preços atuais
+gen-halluc.c5.viz.items.1.b	API ou pesquisa
+gen-halluc.c5.viz.items.2.a	dados da empresa
+gen-halluc.c5.viz.items.2.b	consulta à base de dados
+gen-halluc.c5.viz.items.3.a	definições
+gen-halluc.c5.viz.items.3.b	documentos via RAG
+gen-halluc.c6.title	O raciocínio ajuda, em parte
+gen-halluc.c6.text	O raciocínio passo a passo e a autoverificação reduzem alguns erros, sobretudo em lógica e matemática, mas não eliminam as alucinações factuais.
+gen-halluc.c6.viz.l.t	Ajuda
+gen-halluc.c6.viz.l.items.0	lógica
+gen-halluc.c6.viz.l.items.1	matemática
+gen-halluc.c6.viz.l.items.2	tarefas de vários passos
+gen-halluc.c6.viz.r.t	Não resolve
+gen-halluc.c6.viz.r.items.0	falta de conhecimento
+gen-halluc.c6.viz.r.items.1	fontes falsas
+gen-halluc.c7.title	Desenha para verificar
+gen-halluc.c7.text	Em usos de alto risco, desenha o fluxo para que uma pessoa confirme os factos-chave antes de serem usados: destaca os valores extraídos ao lado da fonte e assinala a baixa confiança.
+gen-halluc.c7.viz.steps.0	A IA extrai valores
+gen-halluc.c7.viz.steps.1	Mostrar ao lado do texto original
+gen-halluc.c7.viz.steps.2	O humano confirma
+gen-halluc.c7.viz.steps.3	Dados guardados
+gen-halluc.c8.title	Consequências reais
+gen-halluc.c8.text	Advogados nos EUA e noutros países foram sancionados por entregarem peças processuais com citações de casos inventadas pela IA. Verifica sempre antes de confiares profissionalmente num resultado de IA.
+gen-halluc.c8.viz.items.0.w	citar casos sugeridos pela IA
+gen-halluc.c8.viz.items.0.r	verificar cada caso numa base de dados oficial
+gen-halluc.c9.title	As alucinações estão a melhorar, não resolvidas
+gen-halluc.c9.text	Os modelos mais recentes alucinam menos, e a fundamentação mais as ferramentas reduzem-nas ainda mais, mas nenhum modelo atual está livre delas. Trata o resultado da IA como um bom rascunho, não como um facto verificado.
+gen-halluc.c9.viz.items.0	Risco mínimo: fundamentado + revisão humana
+gen-halluc.c9.viz.items.1	Menor: fundamentado em fontes
+gen-halluc.c9.viz.items.2	Máximo: factos de nicho sem fundamento
+gen-context.title	Contexto, memória e documentos longos
+gen-context.summary	O que o modelo consegue ver, e durante quanto tempo.
+gen-context.q0.q	Onde deves pôr a pergunta principal num prompt longo?
+gen-context.q0.o0	Só mesmo no início
+gen-context.q0.o1	Perto do fim, depois dos documentos longos
+gen-context.q0.o2	Em lado nenhum
+gen-context.q0.x	Os modelos prestam boa atenção ao fim.
+gen-context.q1.q	O que poupa o prompt caching?
+gen-context.q1.o0	Espaço em disco
+gen-context.q1.o1	Custo e latência em prefixos longos repetidos
+gen-context.q1.o2	Tempo de treino
+gen-context.q1.x	Os prefixos reutilizados ficam em cache.
+gen-context.q2.q	Como podes resumir um documento demasiado longo para a janela de contexto?
+gen-context.q2.o0	Não podes
+gen-context.q2.o1	Resumir secções e depois combinar os resumos
+gen-context.q2.o2	Usar uma letra maior
+gen-context.q2.x	Resumo map-reduce.
+gen-context.c0.title	A janela de contexto
+gen-context.c0.text	Tudo o que o modelo considera de uma vez (prompt de sistema, conversa, documentos, resultados de ferramentas) tem de caber na sua janela de contexto, medida em tokens. As janelas modernas vão de dezenas de milhares a mais de um milhão de tokens.
+gen-context.c0.viz.items.0	Instruções de sistema
+gen-context.c0.viz.items.1	Histórico da conversa
+gen-context.c0.viz.items.2	Documentos e resultados de ferramentas
+gen-context.c0.viz.items.3	A nova pergunta
+gen-context.c1.title	Maior nem sempre é melhor
+gen-context.c1.text	Contextos muito longos custam mais, demoram mais, e os modelos podem falhar detalhes enterrados no meio. Recuperar só as partes relevantes dá muitas vezes respostas melhores e mais baratas.
+gen-context.c1.viz.l.t	Meter tudo lá dentro
+gen-context.c1.viz.l.items.0	simples
+gen-context.c1.viz.l.items.1	caro
+gen-context.c1.viz.l.items.2	perdem-se detalhes
+gen-context.c1.viz.r.t	Recuperar o relevante
+gen-context.c1.viz.r.items.0	mais barato
+gen-context.c1.viz.r.items.1	focado
+gen-context.c1.viz.r.items.2	exige boa pesquisa
+gen-context.c2.title	Perdido no meio
+gen-context.c2.text	Estudos concluíram que os modelos recordam melhor a informação no início e no fim de contextos longos do que no meio. Põe as instruções principais e a pergunta perto do fim, depois dos documentos longos.
+gen-context.c2.viz.steps.0	Primeiro os documentos longos
+gen-context.c2.viz.steps.1	Instruções principais
+gen-context.c2.viz.steps.2	A pergunta no fim
+gen-context.c3.title	Memória da conversa
+gen-context.c3.text	As apps de chat reenviam as mensagens anteriores ao modelo a cada vez. Quando um chat fica muito longo, as partes mais antigas são resumidas ou descartadas, por isso detalhes iniciais podem ser esquecidos.
+gen-context.c3.viz.steps.0	Vez 1
+gen-context.c3.viz.steps.1	A vez 2 reenvia a vez 1
+gen-context.c3.viz.steps.3	Vezes antigas resumidas
+gen-context.c4.title	Memória de longo prazo
+gen-context.c4.text	Alguns assistentes guardam factos entre conversas, como as tuas preferências ou projetos, e recuperam-nos mais tarde. Deves poder ver e apagar o que é memorizado.
+gen-context.c4.viz.items.0	Preferências guardadas
+gen-context.c4.viz.items.1	Contexto dos projetos
+gen-context.c4.viz.items.2	Recuperado quando relevante
+gen-context.c4.viz.items.3	Visível e apagável
+gen-context.c5.title	Prompt caching
+gen-context.c5.text	Se muitos pedidos partilham o mesmo prefixo longo (instruções, um documento grande), os fornecedores podem guardá-lo em cache, reduzindo o custo e a latência das chamadas repetidas.
+gen-context.c5.viz.unit	custo relativo de um prompt longo
+gen-context.c5.viz.items.0.l	Sem cache
+gen-context.c5.viz.items.1.l	Com prefixo em cache
+gen-context.c6.title	Resumir e map-reduce
+gen-context.c6.text	Para documentos demasiado longos para uma só chamada, resume as secções separadamente e depois combina os resumos: um padrão "map-reduce".
+gen-context.c6.viz.steps.0	Dividir um relatório de 500 páginas
+gen-context.c6.viz.steps.1	Resumir cada capítulo
+gen-context.c6.viz.steps.2	Combinar os resumos
+gen-context.c6.viz.steps.3	Visão geral final
+gen-context.c7.title	Engenharia de contexto
+gen-context.c7.text	Construir boas apps de IA é, em grande parte, decidir o que entra no contexto: que instruções, que passagens recuperadas, que resultados de ferramentas, em que ordem e formato.
+gen-context.c7.viz.items.0	Instruções claras
+gen-context.c7.viz.items.1	Passagens recuperadas relevantes
+gen-context.c7.viz.items.2	Conversa recente
+gen-context.c7.viz.items.3	Resultados de ferramentas
+gen-context.c7.viz.items.4	Formato do resultado
+gen-context.c8.title	Orçamentos de tokens
+gen-context.c8.text	Cada token de entrada custa dinheiro e tempo. Remove texto repetitivo, elimina passagens recuperadas duplicadas e mantém as instruções concisas sem perder clareza.
+gen-context.c8.viz.items.0.w	colar o manual de 200 páginas todas as vezes
+gen-context.c8.viz.items.0.r	recuperar as 3 secções relevantes
+gen-context.c9.title	Privacidade no contexto
+gen-context.c9.text	Tudo o que pões no contexto é enviado ao fornecedor do modelo. Confirma as regras da tua organização sobre dados pessoais e confidenciais, e usa ferramentas empresariais aprovadas.
+gen-context.c9.viz.items.0	Conhecer a classificação dos dados
+gen-context.c9.viz.items.1	Usar ferramentas aprovadas
+gen-context.c9.viz.items.2	Evitar dados pessoais desnecessários
+gen-context.c9.viz.items.3	Ver definições de retenção
+gen-landscape.title	O panorama dos modelos
+gen-landscape.summary	Fechados, abertos e como escolher.
+gen-landscape.q0.q	Qual é uma vantagem dos modelos de pesos abertos?
+gen-landscape.q0.o0	São sempre os mais capazes
+gen-landscape.q0.o1	Podem correr em privado e ser personalizados
+gen-landscape.q0.o2	Não precisam de alojamento
+gen-landscape.q0.x	Controlas a implementação.
+gen-landscape.q1.q	O que faz um router de modelos?
+gen-landscape.q1.o0	Treina modelos
+gen-landscape.q1.o1	Envia cada pedido para o modelo mais adequado
+gen-landscape.q1.o2	Cifra dados
+gen-landscape.q1.x	Faz corresponder tarefas a modelos.
+gen-landscape.q2.q	Como deves escolher um modelo?
+gen-landscape.q2.o0	Escolher o mais famoso
+gen-landscape.q2.o1	Testar candidatos nas tuas próprias tarefas e restrições
+gen-landscape.q2.o2	Escolher o maior
+gen-landscape.q2.x	As tuas avaliações decidem.
+gen-landscape.c0.title	Laboratórios de fronteira
+gen-landscape.c0.text	Um punhado de empresas treina os modelos mais capazes, incluindo a OpenAI (GPT), a Anthropic (Claude), a Google (Gemini) e a Meta (Llama), com forte concorrência de laboratórios como a Mistral, a DeepSeek, a Alibaba (Qwen) e a xAI.
+gen-landscape.c0.viz.items.0	OpenAI: modelos GPT
+gen-landscape.c0.viz.items.1	Anthropic: Claude
+gen-landscape.c0.viz.items.2	Google: Gemini
+gen-landscape.c0.viz.items.3	Meta: Llama (pesos abertos)
+gen-landscape.c0.viz.items.4	Mistral, DeepSeek, Qwen e outros
+gen-landscape.c1.title	Pesos fechados vs abertos
+gen-landscape.c1.text	Os modelos fechados usam-se através de uma API; o fornecedor aloja-os e atualiza-os. Os modelos de pesos abertos podem ser descarregados, corridos em privado e afinados, mas és tu que os operas.
+gen-landscape.c1.viz.l.t	Fechados (API)
+gen-landscape.c1.viz.l.items.0	capacidade de topo
+gen-landscape.c1.viz.l.items.1	sem infraestrutura
+gen-landscape.c1.viz.l.items.2	dados vão ao fornecedor
+gen-landscape.c1.viz.r.t	Pesos abertos
+gen-landscape.c1.viz.r.items.0	correm em qualquer lado
+gen-landscape.c1.viz.r.items.1	personalizar
+gen-landscape.c1.viz.r.items.2	geres o alojamento e a segurança
+gen-landscape.c2.title	Tamanhos e gamas de modelos
+gen-landscape.c2.text	Os fornecedores costumam ter gamas: modelos grandes para raciocínio difícil, médios para a maioria das tarefas, pequenos e rápidos para trabalhos simples em grande volume. Escolher o modelo mais pequeno que faz o trabalho poupa muito.
+gen-landscape.c2.viz.items.0	Grande: tarefas difíceis, lento, caro
+gen-landscape.c2.viz.items.1	Médio: a maior parte do trabalho
+gen-landscape.c2.viz.items.2	Pequeno: rápido, barato, muito volume
+gen-landscape.c3.title	Escolher um modelo
+gen-landscape.c3.text	Testa candidatos nas tuas próprias tarefas. Considera a qualidade, a velocidade, o custo, o comprimento do contexto, a residência dos dados, os termos de privacidade e o encaixe do fornecedor na tua cloud.

@@ -1,0 +1,734 @@
+=== pt-science
+title: Portuguese science and invention
+summary: From navigators' instruments to modern labs: Portugal's scientists and what they discovered.
+
+# Science for the sea
+@viz {"k": "list", "items": ["Quadrant: Pole Star height", "Mariner's astrolabe: Sun", "Cross-staff: quick sightings", "Tables of the Sun's path"]}
+Out of sight of land, 15th-century Portuguese pilots needed to know how far north or south they were. They found latitude by measuring the height of the Pole Star or the noon Sun.
+Simple instruments, printed rules and astronomical tables turned this into a routine that ordinary pilots could learn.
+---
+Longitude, a ship's east–west position, could not be measured reliably at sea until the 18th century. Latitude was easier, because the height of a star above the horizon changes as you sail north or south. Portuguese pilots began using this from about the 1450s–1460s, as voyages pushed down the coast of Africa.
+### From star to Sun
+In the north, the Pole Star sits almost above the North Pole, so its height in degrees roughly equals your latitude. But it sinks towards the horizon near the equator and vanishes south of it. Pilots therefore switched to the Sun at midday, which needed a table of its changing daily position, called its declination.
+@viz {"k": "flow", "steps": ["Measure noon Sun height", "Look up declination", "Apply the rule", "Latitude found"]}
+ex: Noon Sun 60° high, due south | Declination that day 10° north | Latitude = 90° − 60° + 10° = 40° N, near Aveiro
+### Tools of the trade
+• The **quadrant**, a quarter circle with a plumb line, measured the Pole Star
+• The **mariner's astrolabe**, a heavy open bronze wheel, resisted the wind on a rolling deck
+• The **cross-staff** (balestilha) let a pilot sight the horizon and a star at once
+The rules were printed in the "Regiment of the Astrolabe and Quadrant", whose oldest surviving copy dates from about 1509. Its Sun tables drew on Abraão Zacuto, a Jewish astronomer whose Almanach Perpetuum was printed in Leiria in 1496.
+@viz {"k": "time", "events": [{"y": "~1460", "l": "Pole Star by quadrant"}, {"y": "1485", "l": "Sun method tested"}, {"y": "1496", "l": "Zacuto's tables printed"}, {"y": "~1509", "l": "Navigation manual"}]}
+!? An astrolabe from the Esmeralda, a ship of Vasco da Gama's second voyage that sank off Oman in 1503, is thought to be the oldest mariner's astrolabe ever found.
+> Portuguese navigation turned astronomy into a routine any trained pilot could follow with a table and an instrument.
+
+# Pedro Nunes' nonius
+@viz {"k": "cmp", "l": {"t": "Nonius, 1542", "items": ["many fixed arcs", "90, 89, 88… parts", "table to convert"]}, "r": {"t": "Vernier, 1631", "items": ["one sliding scale", "n parts span n−1", "read directly"]}}
+In 1542 the mathematician Pedro Nunes proposed a clever way to read angles more finely than the marks on an instrument allowed.
+His idea, the nonius, used many concentric scales. Simplified a century later, it lives on in the vernier scale of every calliper.
+---
+An astrolabe or quadrant usually showed whole degrees. Dividing them further made the marks too crowded to read. Nunes described his solution in De crepusculis, a 1542 book on the length of twilight, as a tool for astronomers and pilots alike.
+### How the nonius worked
+Inside the main quarter circle he drew dozens of smaller concentric arcs. The outer one was split into 90 equal parts, the next into 89, the next into 88, and so on. When the sighting arm fell between marks on one arc, it would land almost exactly on a mark of another. Knowing which arc and which mark, a short calculation gave the angle to a fraction of a degree.
+@viz {"k": "flow", "steps": ["Arm crosses many arcs", "Find the arc with a hit", "Note arc and mark number", "Calculate exact angle"]}
+### From nonius to vernier
+Engraving dozens of arcs accurately was hard, and the Danish astronomer Tycho Brahe found it impractical. In 1631 the French engineer Pierre Vernier replaced the arcs with a single small sliding scale. The principle is the same: compare two scales with slightly different spacing.
+ex: Main scale marked in mm | 10 vernier marks span 9 mm, so each is 0.9 mm | The mark that lines up gives tenths: 0.1 mm precision
+@viz {"k": "pairs", "items": [{"a": "Main scale", "b": "1 mm divisions"}, {"a": "Vernier scale", "b": "10 marks over 9 mm"}, {"a": "Difference", "b": "0.1 mm per mark"}, {"a": "Reading", "b": "find the line that matches"}]}
+!? In German and Portuguese the sliding scale on a calliper is still called a Nonius or nónio, after Nunes' Latin name, Petrus Nonius.
+> Two scales with slightly different spacing reveal what neither shows alone: that was Nunes' gift to every workshop.
+
+# Garcia de Orta
+@viz {"k": "time", "events": [{"y": "~1501", "l": "Born, Castelo de Vide"}, {"y": "1534", "l": "Sails to India"}, {"y": "1563", "l": "Colóquios printed, Goa"}, {"y": "1580", "l": "Remains burned"}]}
+Garcia de Orta was a Portuguese physician who lived in Goa for over 30 years. In 1563 he published the Colóquios, a book on the medicinal plants and drugs of Asia.
+Written as lively dialogues, it tested old claims against what he saw, tasted and learnt from local healers.
+---
+Orta studied medicine at Salamanca and Alcalá in Spain, taught briefly in Lisbon and sailed to India in 1534 as a ship's doctor. He settled in Goa, treated viceroys and ordinary patients, and grew many of the plants he wrote about in his own garden. He also held a lease on land on the island of Bombay, today's Mumbai.
+### A book of conversations
+His "Colloquies on the Simples and Drugs of India" is a series of conversations between Orta and an imaginary visiting doctor, Ruano. The visitor quotes the ancient Greek and Arab authorities; Orta often replies that experience shows otherwise. It was one of the first books printed in India with European type.
+@viz {"k": "list", "items": ["Pepper, ginger, cinnamon", "Nutmeg, cloves, camphor", "Bhang (cannabis) and opium", "Early account of cholera"]}
+### Across Europe
+In 1567 the Flemish botanist Carolus Clusius published a Latin summary, which was reprinted and translated many times. For about a century it was a standard European reference on Asian medicines.
+@viz {"k": "cmp", "l": {"t": "Old authorities", "items": ["Greek and Arab texts", "repeated, not tested"]}, "r": {"t": "Orta's method", "items": ["observe and taste", "ask local healers"]}}
+### A tragic ending
+Orta came from a family of New Christians, Jews forced to convert. After his death in 1568 the Inquisition, newly active in Goa, pursued his family; his sister Catarina was burned in 1569. In 1580 his own remains were dug up and burned.
+!? A garden in Lisbon's Parque das Nações and a Portuguese scientific journal both bear his name.
+> Orta put first-hand observation ahead of ancient authority, at a time when that could be dangerous.
+
+# Gusmão's flying machine
+type: fact
+@viz {"k": "nums", "items": [{"v": "1709", "l": "balloon shown in Lisbon"}, {"v": "74 years", "l": "before the Montgolfiers"}, {"v": "1685–1724", "l": "Gusmão's life"}]}
+In August 1709 Bartolomeu de Gusmão, a priest born in Brazil, showed King João V a small paper balloon lifted by hot air, indoors in Lisbon.
+He also designed a bird-shaped airship, the Passarola. It almost certainly never flew, but it made him famous as "the Flying Priest".
+---
+Gusmão was born in 1685 in Santos, in Portuguese Brazil, and studied at Coimbra. In 1709 he petitioned the king for exclusive rights to a machine for travelling through the air. The court was intrigued, and he was asked to demonstrate.
+### The demonstration
+Accounts describe several trials at the royal palace in early August 1709. In the best known, a small balloon of thick paper, with a flame burning in a bowl beneath it, rose a few metres before servants knocked it down for fear it would set the curtains alight.
+@viz {"k": "flow", "steps": ["Flame heats the air", "Hot air expands", "Lighter than air around it", "Balloon rises"]}
+### The Passarola
+A famous drawing shows a bird-like ship with wings, a sail and a canopy. Historians think the drawing was at least partly fanciful, perhaps even meant to mislead rivals, rather than a working design. No reliable record says it flew.
+@viz {"k": "fix", "items": [{"w": "The Passarola flew over Lisbon", "r": "Only a small hot-air model rose"}]}
+### A quiet end
+Gusmão later fell under suspicion from the Inquisition, fled to Spain and died in Toledo in 1724. The Montgolfier brothers' first public balloon flight in France came only in 1783.
+!? José Saramago's novel Memorial do Convento (1982) brings Gusmão and his Passarola to life, and in the story the machine really flies.
+> Gusmão showed that hot air could lift an object, three generations before ballooning took off.
+
+# Egas Moniz: Nobel and debate
+@viz {"k": "pairs", "items": [{"a": "1874", "b": "born in Avanca, Estarreja"}, {"a": "1918–19", "b": "minister and peace delegate"}, {"a": "1949", "b": "Nobel Prize in Medicine"}, {"a": "Today", "b": "a case study in ethics"}]}
+Egas Moniz, neurologist and politician, won Portugal's first Nobel Prize in 1949 for the leucotomy, a brain operation for severe mental illness.
+The operation was later abandoned, and his prize is still debated. His story is now used to teach how medicine should test new treatments.
+---
+Born António Caetano de Abreu Freire in 1874, he took the name Egas Moniz from a medieval nobleman. Before medicine made him famous he was a member of parliament, ambassador to Spain and briefly foreign minister, and in 1919 he led Portugal's delegation at the Paris Peace Conference.
+### Why it seemed promising
+In the 1930s asylums were overcrowded and there were almost no effective treatments for severe psychosis or depression. In 1935–36 Moniz and the surgeon Pedro Almeida Lima operated on about 20 patients and reported that most improved. To many doctors, any hope looked better than none.
+### What was missing
+• Small numbers and no comparison group
+• Short follow-up, often weeks rather than years
+• "Improvement" often meant calmer and easier to manage
+• Patients were rarely able to give real consent
+@viz {"k": "cmp", "l": {"t": "1930s practice", "items": ["small case series", "short follow-up", "doctor's judgement"]}, "r": {"t": "Today's standard", "items": ["controlled trials", "long follow-up", "informed consent"]}}
+Today new treatments must pass controlled trials and ethics committees, and patients must give informed consent, following principles set out in the Nuremberg Code (1947) and the Declaration of Helsinki (1964).
+@viz {"k": "flow", "steps": ["Idea", "Small pilot study", "Controlled trial", "Long-term follow-up"]}
+!! Moniz invented the "ice-pick" lobotomy => That crude version was spread in the USA by Walter Freeman; Moniz's operation was done in theatre by a surgeon
+> A Nobel Prize recognises a discovery as judged at the time; good science keeps testing it afterwards.
+
+# Abel Salazar
+@viz {"k": "tree", "root": "Abel Salazar", "items": ["Histologist", "Teacher", "Painter and writer"]}
+Abel Salazar (1889–1946) was a Porto doctor and researcher who studied tissues under the microscope and invented a staining method.
+He was also a painter and writer. In 1935 the dictatorship removed him from his university post for his ideas. He was no relation of the dictator Salazar.
+---
+Born in Guimarães, Salazar graduated in medicine in Porto in 1915 and soon became professor of histology, the study of tissues. He built a laboratory and a school of young researchers, working especially on the structure of the ovary.
+### A new stain
+Cells are mostly transparent, so histologists colour them with chemicals. Salazar developed a method using tannin and then iron salts, known as the tano-ferric method, which revealed fine structures inside cells. It earned him recognition from scientists abroad.
+@viz {"k": "flow", "steps": ["Thin slice of tissue", "Tannin, then iron salts", "Structures turn dark", "Seen under microscope"]}
+### Silenced
+Salazar spoke and wrote for free thought, science education and social justice. In 1935 the Estado Novo regime dismissed him and several other professors. For years he could not teach, and he turned more and more to painting and writing.
+### The artist
+His paintings and drawings show working people: washerwomen, fishermen, labourers and market women, drawn with sympathy and energy.
+@viz {"k": "pairs", "items": [{"a": "ICBAS, Porto", "b": "medical school named after him"}, {"a": "Casa-Museu", "b": "his home, São Mamede de Infesta"}, {"a": "Paintings", "b": "working people of the north"}]}
+!? A saying attributed to him is still quoted to medical students: a doctor who only knows medicine doesn't even know medicine.
+> Abel Salazar believed a scientist should also be a citizen and an artist, and he paid a price for it.
+
+# Science after 1974
+@viz {"k": "bars", "unit": "R&D spending, % of GDP (approx.)", "items": [{"l": "1990", "v": 0.5}, {"l": "2000", "v": 0.7}, {"l": "2010", "v": 1.5}, {"l": "2022", "v": 1.7, "hi": true}]}
+Under the dictatorship, few Portuguese did research. After democracy returned in 1974, and especially from the 1990s, Portugal invested heavily in science.
+Spending on research more than tripled as a share of the economy, and thousands of young people were funded to earn doctorates at home and abroad.
+---
+In the early 1970s Portugal had one of the lowest numbers of researchers per person in Western Europe, and its universities were small. Joining the European Community in 1986 brought funds and partners, and the same year Portugal joined CERN, the particle physics laboratory near Geneva.
+### The Mariano Gago years
+The physicist José Mariano Gago became Portugal's first Minister of Science in 1995 and held the post again from 2005 to 2011. His government created the Foundation for Science and Technology (FCT) in 1997 to fund projects and grants, and launched Ciência Viva to bring science to the public.
+@viz {"k": "time", "events": [{"y": "1986", "l": "Joins EEC and CERN"}, {"y": "1995", "l": "Ministry of Science"}, {"y": "1997", "l": "FCT created"}, {"y": "2000", "l": "Joins ESA"}]}
+### A new generation
+• Doctoral and postdoctoral grants sent thousands abroad, and many came back
+• New institutes grew around universities in Lisbon, Porto, Coimbra, Braga and Aveiro
+• Women make up over 40% of Portugal's researchers, more than the EU average
+ex: R&D about 0.5% of GDP in 1990 | about 1.7% in 2022 | more than three times the share, though still below the EU's ~2.2%
+@viz {"k": "cmp", "l": {"t": "Early 1990s", "items": ["few researchers", "little funding"]}, "r": {"t": "2020s", "items": ["dense lab network", "EU and private money"]}}
+!? In 1993 Portugal launched its first satellite, PoSAT-1, a small microsatellite built with British partners.
+> In a few decades Portugal went from a science latecomer to a country with a dense web of researchers and labs.
+
+# Ciência Viva
+@viz {"k": "list", "items": ["Science centres across Portugal", "Pavilhão do Conhecimento", "Science clubs in schools", "Ciência Viva no Verão"]}
+Ciência Viva, created in 1996, is Portugal's agency for spreading scientific culture. It runs a network of about 20 science centres, from Bragança to the Algarve and the islands.
+Its flagship is the Pavilhão do Conhecimento in Lisbon, a hands-on science museum in a building from Expo '98.
+---
+The programme began in 1996 with a simple idea: science should be done, not just read about. Early projects paid for experiments in school classrooms. Today the agency also supports school science clubs and links pupils with research labs.
+### The centres
+Each centre has its own theme, often tied to its region: astronomy, the sea, forests, energy or geology. The Pavilhão do Conhecimento, opened in 1999 in the Parque das Nações, welcomes large numbers of school groups and families every year.
+@viz {"k": "pairs", "items": [{"a": "Constância", "b": "astronomy park"}, {"a": "Lousal", "b": "inside an old mine"}, {"a": "Estremoz", "b": "Earth sciences"}, {"a": "Proença-a-Nova", "b": "the forest"}]}
+### Science in summer
+Each summer, "Ciência Viva no Verão" offers free or low-cost activities led by scientists: night-sky observations, geology walks, birdwatching and visits to labs and lighthouses. Many are booked online and fill quickly.
+• Secondary pupils can spend a week or two of their holidays working in real research labs
+• Families can join researchers on field trips across the country
+@viz {"k": "flow", "steps": ["School science club", "Visit a centre", "Summer in a lab", "A science career?"]}
+!? During Expo '98 the Pavilhão building, designed by architect João Luís Carrilho da Graça, was the Pavilion of the Knowledge of the Seas.
+> Ciência Viva's idea is that people who have done an experiment themselves understand and enjoy science more.
+
+# The Champalimaud Foundation
+@viz {"k": "nums", "items": [{"v": "2004", "l": "foundation created"}, {"v": "~€500 m", "l": "left in his will"}, {"v": "2010", "l": "Centre opens in Belém"}]}
+When industrialist António Champalimaud died in 2004, he left about a quarter of his fortune, around €500 million, to create a foundation for medical research.
+Its Champalimaud Centre for the Unknown, opened in 2010 on the Tagus at Belém, studies the brain and cancer and treats patients.
+---
+António de Sommer Champalimaud (1918–2004) built a business empire in cement, steel, banking and insurance, lost much of it in the nationalisations of 1975 and rebuilt it later. In his will he asked for a foundation dedicated to biomedical research. Leonor Beleza, a former health minister, has led it since its creation.
+### A building on the river
+The Centre for the Unknown, designed by the Indian architect Charles Correa, stands where the Tagus meets the sea, close to where the navigators set sail. Its name links today's exploration of the brain and body to the voyages of discovery.
+@viz {"k": "cmp", "l": {"t": "Research", "items": ["neuroscience", "cancer biology"]}, "r": {"t": "Clinic", "items": ["cancer diagnosis", "treatment and trials"]}}
+### What it does
+Hundreds of scientists from dozens of countries work there. Neuroscientists study how animals and people make decisions, move and learn, often with mice and fruit flies. The clinic combines treatment with research, so that new methods can reach patients faster.
+### A prize for sight
+Champalimaud wanted to fight blindness. The António Champalimaud Vision Award, worth €1 million, is among the largest prizes in science. In alternate years it rewards research and work against blindness in developing countries.
+@viz {"k": "flow", "steps": ["Private fortune", "Foundation, 2004", "Centre opens, 2010", "Research and patients"]}
+> The Champalimaud Foundation shows how private money can build world-class science when it is given for the long term.
+
+# Research today
+@viz {"k": "pairs", "items": [{"a": "CERN, 1986", "b": "particle physics"}, {"a": "ESA, 2000", "b": "space"}, {"a": "ESO, 2001", "b": "giant telescopes"}, {"a": "INL, Braga", "b": "nanotechnology"}]}
+Portuguese scientists today work in fields from neuroscience and cancer to ocean science, materials and space. Many institutes host international teams.
+Portugal is a member of CERN, the European Space Agency and the European Southern Observatory, and its researchers win competitive European grants.
+---
+Research in Portugal is spread across universities and their institutes, state laboratories, private foundations and, increasingly, companies. Most public money comes from the FCT and from the European Union's research programmes.
+### Strengths
+• Ocean and marine science, from the Azores to the deep Atlantic
+• Biomedicine and neuroscience in Lisbon, Porto and Coimbra
+• Materials and nanotechnology, including the Iberian Nanotechnology Laboratory in Braga, run jointly with Spain since 2009
+@viz {"k": "tree", "root": "Research in Portugal", "items": ["Universities, institutes", "State laboratories", "Foundations", "Companies"]}
+### Into space
+In 2019 Portugal created its own space agency, Portugal Space. Portuguese companies make parts for European rockets and satellites, and in 2024 ISTSat-1, a small satellite built by students at Lisbon's Instituto Superior Técnico, flew on the first launch of the Ariane 6 rocket.
+### Challenges
+Researchers often work on short contracts, salaries are lower than in northern Europe, and many trained scientists leave. Keeping them, or attracting them back, remains a central aim of science policy.
+@viz {"k": "cmp", "l": {"t": "Gains", "items": ["many more researchers", "strong institutes"]}, "r": {"t": "Challenges", "items": ["short contracts", "brain drain"]}}
+> Portuguese science is now international by design, with labs that train and attract researchers from around the world.
+
+?? What did Pedro Nunes' nonius help navigators and astronomers do? | Find longitude at sea | *Read angles more finely | Measure ocean depth || It inspired the vernier scale on callipers.
+?? Who showed King João V a small hot-air balloon in 1709? | Garcia de Orta | *Bartolomeu de Gusmão | Abel Salazar || It rose 74 years before the Montgolfiers' public flight.
+?? What did Egas Moniz win the 1949 Nobel Prize for? | Cerebral angiography | *The leucotomy (lobotomy) | Penicillin || The operation was later abandoned, and the prize is still debated.
+?? Which agency, created in 1996, runs Portugal's network of science centres? | FCT | *Ciência Viva | Portugal Space || Its flagship is Lisbon's Pavilhão do Conhecimento.
+
+=== pt-sport
+title: Sport in Portugal
+summary: Football legends, world-beating roller hockey, giant waves, marathon heroes, cycling and sailing.
+
+# Football's big three
+@viz {"k": "pairs", "items": [{"a": "Benfica (Lisbon)", "b": "most league titles"}, {"a": "FC Porto", "b": "most European trophies"}, {"a": "Sporting (Lisbon)", "b": "famous youth academy"}]}
+Football is Portugal's most popular sport. Three clubs, Benfica, FC Porto and Sporting, have won almost every league title since the league began in the 1930s.
+Only two other clubs have ever been champions: Belenenses in 1946 and Boavista in 2001. Each of the big three has millions of supporters at home and abroad.
+---
+The national league started in 1934–35 and became the First Division in 1938. Benfica has the most titles, followed by Porto and then Sporting. Their rivalry shapes every season: the Lisbon derby between Benfica and Sporting, and "O Clássico" between Benfica and Porto.
+### In Europe
+Benfica won the European Cup in 1961 and 1962 and reached several more finals. Sporting won the Cup Winners' Cup in 1964. Porto won the European Cup in 1987, the UEFA Cup in 2003, the Champions League in 2004 under José Mourinho and the Europa League in 2011.
+@viz {"k": "time", "events": [{"y": "1961", "l": "Benfica, European Cup"}, {"y": "1964", "l": "Sporting, Cup Winners'"}, {"y": "1987", "l": "Porto, European Cup"}, {"y": "2004", "l": "Porto top Europe again"}]}
+### More than football
+All three are multi-sport clubs, with teams in roller hockey, futsal, handball, basketball, volleyball and athletics. Sporting's academy produced both of Portugal's modern Ballon d'Or winners, Luís Figo and Cristiano Ronaldo.
+@viz {"k": "list", "items": ["Football", "Roller hockey", "Futsal and handball", "Basketball and volleyball"]}
+!? A popular legend says coach Béla Guttmann, leaving Benfica in 1962 after a pay dispute, put a curse on the club's European hopes. Benfica has since lost eight European finals.
+> Portuguese football has been led by three clubs for almost a century, and their rivalry is part of national life.
+
+# Eusébio
+@viz {"k": "nums", "items": [{"v": "9", "l": "goals at 1966 World Cup"}, {"v": "1965", "l": "Ballon d'Or"}, {"v": "15 years", "l": "at Benfica, 1960–75"}]}
+Eusébio da Silva Ferreira, born in Mozambique in 1942, became one of the greatest strikers in history with Benfica and Portugal.
+Nicknamed the Black Panther, he won the Ballon d'Or in 1965 and was top scorer at the 1966 World Cup, where Portugal finished third.
+---
+Eusébio grew up in a poor district of Lourenço Marques, today's Maputo, then a Portuguese colony. He played for a local club linked to Sporting, but in 1960 he joined Benfica after a famous tug-of-war between the two Lisbon rivals.
+### 1966
+Portugal's first World Cup, in England, made him a global star. Against North Korea in the quarter-final, Portugal were 3–0 down after 25 minutes; Eusébio scored four goals and Portugal won 5–3. They lost the semi-final to the hosts and beat the Soviet Union for third place.
+@viz {"k": "bars", "unit": "goals, Portugal v North Korea, 1966", "items": [{"l": "North Korea", "v": 3}, {"l": "Eusébio", "v": 4, "hi": true}, {"l": "Rest of Portugal", "v": 1}]}
+### Goals everywhere
+• Top scorer of the Portuguese league seven times
+• First winner of the European Golden Shoe, in 1968, and again in 1973
+• Over 470 goals in official matches for Benfica
+@viz {"k": "time", "events": [{"y": "1942", "l": "Born in Mozambique"}, {"y": "1962", "l": "European Cup winner"}, {"y": "1966", "l": "World Cup top scorer"}, {"y": "2015", "l": "National Pantheon"}]}
+He died in January 2014. A year later his remains were moved to the National Pantheon in Lisbon, an honour given to very few sportspeople. A statue stands outside Benfica's Estádio da Luz.
+> Eusébio's four goals against North Korea in 1966 remain the most famous comeback in Portuguese football.
+
+# Cristiano Ronaldo
+@viz {"k": "time", "events": [{"y": "1985", "l": "Born in Funchal"}, {"y": "2003", "l": "Sporting to Man United"}, {"y": "2009", "l": "Joins Real Madrid"}, {"y": "2018", "l": "Joins Juventus"}, {"y": "2023", "l": "Moves to Al Nassr"}]}
+Cristiano Ronaldo, born in Funchal, Madeira, in 1985, is one of the most successful footballers ever. He has won five Ballon d'Or awards and five Champions League titles.
+He is the top scorer and most capped player in men's international football, and captained Portugal to its first trophies.
+---
+Ronaldo left Madeira at 12 to join Sporting's academy in Lisbon. At 18 he moved to Manchester United, where he won three Premier League titles and his first Champions League. At Real Madrid, from 2009 to 2018, he became the club's all-time top scorer with about 450 goals.
+### Records
+@viz {"k": "nums", "items": [{"v": "200+", "l": "caps for Portugal"}, {"v": "130+", "l": "international goals"}, {"v": "900+", "l": "official career goals"}]}
+• First player to score at five men's World Cups, from 2006 to 2022
+• All-time top scorer in the Champions League
+• First man to reach 200 international caps, in 2023
+### How he stayed at the top
+Ronaldo is known for an intense routine of training, diet and recovery. It helped him reinvent his game with age: from a fast winger who dribbled past defenders to a central striker who scores with very few touches.
+@viz {"k": "cmp", "l": {"t": "Young winger", "items": ["speed and dribbling", "step-overs"]}, "r": {"t": "Older striker", "items": ["positioning", "headers, finishing"]}}
+!? His name was reportedly chosen in honour of US president Ronald Reagan, whom his father admired.
+> Ronaldo's career is a story of talent multiplied by work, lasting more than two decades at the top.
+
+# Trophies at last
+@viz {"k": "time", "events": [{"y": "2004", "l": "Euro final lost at home"}, {"y": "2016", "l": "Wins Euro in France"}, {"y": "2019", "l": "Nations League, Porto"}, {"y": "2025", "l": "Nations League, Munich"}]}
+For decades Portugal's national team played attractive football but won nothing. That changed at Euro 2016 in France, when Portugal beat the hosts 1–0 in the final.
+They added the first UEFA Nations League in 2019, at home in Porto, and won it again in 2025, beating Spain on penalties in Munich.
+---
+Portugal reached semi-finals in 1966, 1984, 2000 and 2006, and lost the Euro 2004 final at home in Lisbon to Greece. Euro 2016 started badly too: three draws in the group, and a place in the knockouts only as one of the best third-placed teams.
+@viz {"k": "flow", "steps": ["Three group draws", "Croatia 1–0 (extra time)", "Poland on penalties", "Wales 2–0", "France 1–0 in final"]}
+### The 2016 final
+At the Stade de France, Ronaldo was injured early and left the pitch in tears. Fernando Santos's team held firm, and in the 109th minute the substitute Éder scored with a low shot from outside the area. Ronaldo spent extra time urging on his team-mates from the touchline.
+### The Nations League
+UEFA created the Nations League in 2018 to replace many friendlies with competitive matches. Portugal hosted the first finals in 2019 and beat the Netherlands 1–0 in Porto, with a goal by Gonçalo Guedes. In June 2025, under Roberto Martínez, they beat Germany and then Spain, drawing 2–2 in the final and winning 5–3 on penalties.
+@viz {"k": "pairs", "items": [{"a": "Euro 2016", "b": "1–0 v France, Paris"}, {"a": "Nations L. 2019", "b": "1–0 v Netherlands, Porto"}, {"a": "Nations L. 2025", "b": "2–2 v Spain, won on pens"}]}
+!? Portugal's women's team has risen too: it played its first World Cup in 2023 and drew 0–0 with the reigning champions, the USA.
+> After many near misses, Portugal became a team that knows how to win finals.
+
+# Roller hockey
+@viz {"k": "nums", "items": [{"v": "15+", "l": "men's world titles"}, {"v": "1947", "l": "first, won in Lisbon"}, {"v": "5", "l": "players a side, incl. keeper"}]}
+Roller hockey, or hóquei em patins, is played on four-wheeled roller skates with a stick and a hard ball. Portugal is one of the sport's great powers.
+Its men's team has won the world championship more than 15 times, rivalled mainly by Spain, Argentina and Italy.
+---
+Teams have four outfield players and a goalkeeper on a rink about 40 m by 20 m, enclosed by a low barrier. The ball is hard and fast, so goalkeepers wear heavy pads. Fouls can bring a blue card, which sends a player off for a short time, as well as direct free hits and penalties.
+@viz {"k": "pairs", "items": [{"a": "Skates", "b": "quads: two pairs of wheels"}, {"a": "Stick", "b": "short and curved"}, {"a": "Ball", "b": "hard, about 155 g"}, {"a": "Team", "b": "4 players + goalkeeper"}]}
+### A golden age
+Portugal won its first world title in 1947, in Lisbon, and dominated the following years, winning almost every championship until the early 1960s. Matches were broadcast on radio and drew huge crowds, and for decades roller hockey was second only to football in popularity.
+@viz {"k": "time", "events": [{"y": "1947", "l": "First world title"}, {"y": "1947–62", "l": "Golden era, 9 titles"}, {"y": "1991, 93", "l": "Back-to-back titles"}, {"y": "2019", "l": "Wins in Barcelona"}]}
+### Clubs and towns
+Benfica, Porto and Sporting all have strong teams, but the sport is also a passion in smaller towns such as Barcelos, Oliveira de Azeméis and Valongo. Portuguese clubs have won Europe's top club competition many times.
+!! Roller hockey is the same as inline hockey => Inline hockey uses inline skates and a puck; roller hockey uses quad skates and a ball
+> Roller hockey is one of the few sports where Portugal has long been among the very best in the world.
+
+# Big waves at Nazaré
+@viz {"k": "flow", "steps": ["Atlantic storm swell", "Nazaré Canyon focuses it", "Waves rise at Praia do Norte", "Tow-in surfers ride them"]}
+In winter, Praia do Norte in Nazaré produces some of the biggest surfable waves on Earth. An undersea canyon focuses the energy of Atlantic storms.
+Surfers towed in by jet-ski have ridden waves of over 25 metres there. Portugal's whole coast, from Peniche to Ericeira, is a surfing destination.
+---
+Nazaré was known for its fishing boats and its fisherwomen in seven skirts until 2011, when the Hawaiian surfer Garrett McNamara rode a wave of about 24 m there. The images went round the world, and the town became a pilgrimage site for big-wave surfers.
+### Records
+@viz {"k": "bars", "unit": "record waves at Nazaré, metres", "items": [{"l": "McNamara, 2011", "v": 23.8}, {"l": "Koxa, 2017", "v": 24.4}, {"l": "Gabeira, 2020", "v": 22.4}, {"l": "Steudtner, 2020", "v": 26.2, "hi": true}]}
+Measuring a moving wave is hard: judges study photos and video to estimate the height from trough to crest. The Brazilian Maya Gabeira holds the women's record and the German Sebastian Steudtner the overall record, both set at Nazaré in 2020.
+### How tow-in works
+Waves this big move too fast to paddle into. A partner on a jet-ski tows the surfer onto the wave, then races back to pull them out of the impact zone. Spotters on the cliff, rescue teams and inflatable vests are essential.
+@viz {"k": "cmp", "l": {"t": "Paddle-in", "items": ["surfer's own arms", "slower waves"]}, "r": {"t": "Tow-in", "items": ["pulled by jet-ski", "fastest, biggest waves"]}}
+### Surfing beyond Nazaré
+• Peniche's Supertubos hosts a World Surf League Championship Tour event
+• Ericeira became Europe's first World Surfing Reserve in 2011
+• Frederico Morais was the first Portuguese surfer to qualify for the Championship Tour, in 2017
+!? The best place to watch is the red lighthouse at the Fort of São Miguel Arcanjo, on the cliff right above the waves.
+> Nazaré turned a fishing town's dangerous winter sea into a world stage for big-wave surfing.
+
+# Marathon heroes
+@viz {"k": "pairs", "items": [{"a": "Carlos Lopes", "b": "Olympic gold, LA 1984"}, {"a": "Rosa Mota", "b": "Olympic gold, Seoul 1988"}, {"a": "Lopes, 1985", "b": "world record, 2:07:12"}]}
+Portugal's first Olympic gold medal came in the marathon: Carlos Lopes won in Los Angeles in 1984, aged 37.
+Four years later Rosa Mota won the women's marathon in Seoul, becoming Portugal's first female Olympic champion. Together they made distance running a national passion.
+---
+Carlos Lopes, born in 1947 near Viseu, was a track and cross-country runner long before he was a marathoner. He won 10,000 m silver at the 1976 Olympics and the World Cross Country Championships in 1976, 1983 and 1984.
+### Los Angeles 1984
+Lopes broke away in the final kilometres and won in 2 hours 9 minutes 21 seconds, an Olympic record that stood for 24 years. In Rotterdam in 1985 he ran 2:07:12, the first marathon under 2 hours 8 minutes.
+@viz {"k": "bars", "unit": "marathon time, minutes", "items": [{"l": "Lopes, LA 1984", "v": 129.4, "t": "2:09:21"}, {"l": "Lopes, 1985", "v": 127.2, "t": "2:07:12", "hi": true}, {"l": "Mota, Seoul 1988", "v": 145.7, "t": "2:25:40"}]}
+### Rosa Mota
+Rosa Mota, from Porto, won the first women's marathon at a European Championship, in Athens in 1982. She went on to win three European titles, the 1987 world title and Olympic bronze in 1984 before her gold in 1988, and won the Boston Marathon three times.
+@viz {"k": "time", "events": [{"y": "1982", "l": "European champion"}, {"y": "1984", "l": "Olympic bronze"}, {"y": "1987", "l": "World champion"}, {"y": "1988", "l": "Olympic gold, Seoul"}]}
+Porto's domed pavilion in the Crystal Palace gardens carries her name, and the city's road races now draw thousands of amateur runners.
+!? Lopes was reportedly knocked down by a car while training in Lisbon about two weeks before the 1984 Games, but escaped with minor injuries.
+> Lopes and Mota proved that a small country could produce the world's best distance runners.
+
+# Olympic champions
+@viz {"k": "time", "events": [{"y": "1996", "l": "Ribeiro, 10,000 m"}, {"y": "2008", "l": "Évora, triple jump"}, {"y": "2021", "l": "Pichardo, triple jump"}, {"y": "2024", "l": "Madison, track cycling"}]}
+After the marathon golds, Fernanda Ribeiro won the 10,000 m in Atlanta in 1996 with a fierce final lap.
+Nelson Évora and Pedro Pichardo later won the triple jump, and in Paris 2024 Iúri Leitão and Rui Oliveira took gold in track cycling. Portugal has won six Olympic golds in all.
+---
+Fernanda Ribeiro, from Penafiel, was world champion at 10,000 m in 1995. In Atlanta she followed China's Wang Junxia until the final lap, then overtook her to win in an Olympic record time. She added a bronze in Sydney in 2000.
+### Jumping for gold
+The triple jump is a hop, a step and a jump from one run-up. Nelson Évora, born in Côte d'Ivoire to Cape Verdean parents and raised in Portugal, won in Beijing in 2008. Pedro Pichardo, born in Cuba and Portuguese since 2017, won in Tokyo in 2021 with 17.98 m, then took silver in Paris.
+@viz {"k": "flow", "steps": ["Run-up", "Hop: land on same foot", "Step: land on other foot", "Jump into the sand"]}
+### Gold on the track
+In Paris in 2024 Iúri Leitão and Rui Oliveira won the madison, a 50 km relay race in the velodrome in which partners take turns, handing over with a hand-sling. Leitão also took silver in the omnium, becoming the first Portuguese to win two medals at one Games.
+@viz {"k": "bars", "unit": "Portugal's Olympic golds by sport", "items": [{"l": "Athletics", "v": 5, "hi": true}, {"l": "Cycling", "v": 1}]}
+!? Portugal first competed at the Olympics in 1912 but had to wait 72 years for its first gold.
+> Six Olympic golds, five of them in athletics, show where Portugal's sporting strength lies beyond football.
+
+# The Volta a Portugal
+@viz {"k": "list", "items": ["First held in 1927", "About ten days in summer", "Key climb: Senhora da Graça", "Torre, Serra da Estrela"]}
+The Volta a Portugal, first held in 1927, is the country's great cycling stage race. Each summer it crosses the country for about ten days, with crowds lining the mountain climbs.
+Portuguese riders have also shone abroad, from Joaquim Agostinho in the Tour de France to world champion Rui Costa and João Almeida.
+---
+The first Volta, in 1927, ran on roads that were mostly unpaved, and riders often had to fix their own bikes. It is one of the oldest national stage races still running, older than Spain's Vuelta.
+### The climbs
+The race is often decided in the mountains. The steep ascent of Senhora da Graça, near Mondim de Basto, and the long climb to Torre in the Serra da Estrela, almost 2,000 m up, are legendary. Summer heat makes them harder still.
+@viz {"k": "bars", "unit": "height of summit, metres (approx.)", "items": [{"l": "Senhora da Graça", "v": 950}, {"l": "Torre", "v": 1990, "hi": true}]}
+### Portuguese riders abroad
+@viz {"k": "pairs", "items": [{"a": "Joaquim Agostinho", "b": "3rd in the Tour, 1978, 1979"}, {"a": "Rui Costa", "b": "world road champion, 2013"}, {"a": "João Almeida", "b": "3rd in the Giro, 2023"}]}
+Agostinho began racing late, after military service in Africa, and won the famous stage to Alpe d'Huez in 1979. He died in 1984 after a crash during the Tour of the Algarve and remains a national idol.
+### A race for the people
+• Villages decorate their streets as the race passes
+• Fans gather for hours on the climbs to see the riders for seconds
+• Live TV brings the landscapes of the interior into homes across the country
+!? The record for Volta wins is four, shared by the Portuguese Marco Chagas and the Spaniard David Blanco.
+> The Volta keeps cycling close to the people, rolling through towns and villages every summer.
+
+# Sailing and the sea
+@viz {"k": "list", "items": ["Olympic medals in 1948 and 1996", "Tall ships in Lisbon", "Ocean race stopovers", "Windsurf and kitesurf spots"]}
+With a long Atlantic coast and a seafaring past, Portugal has a strong sailing tradition. Portuguese sailors won Olympic silver in 1948 and bronze in 1996.
+Lisbon and Cascais regularly host major regattas, and the steady summer north wind makes the coast a favourite for windsurfing and kitesurfing.
+---
+In London in 1948 the brothers Duarte and Fernando Bello won silver in the two-person Swallow class, Portugal's first Olympic sailing medal. In Atlanta in 1996 Hugo Rocha and Nuno Barreto took bronze in the 470 dinghy.
+### Big events
+• Cascais hosted a round of the America's Cup World Series in 2011
+• Lisbon was a stopover of the Volvo Ocean Race in 2012 and 2018
+• The Tall Ships Races have visited Lisbon several times, filling the Tagus with sails
+@viz {"k": "pairs", "items": [{"a": "Cascais", "b": "regattas in a sheltered bay"}, {"a": "Guincho", "b": "strong wind, kitesurfing"}, {"a": "Viana do Castelo", "b": "windsurf, river and sea"}, {"a": "Lagos", "b": "sailing schools, warm water"}]}
+### The Sagres
+The navy's training ship, the NRP Sagres, a three-masted barque with red crosses on its sails, is a floating symbol of Portugal. Built in Germany in 1937, it has sailed for Portugal since 1962 and has gone around the world several times.
+### Learning to sail
+Many coastal towns and river clubs run sailing schools for children, usually starting in the small Optimist dinghy. The windsurfer João Rodrigues competed at seven Olympic Games in a row, from 1992 to 2016.
+@viz {"k": "flow", "steps": ["Optimist dinghy", "Club racing", "ILCA or 470 dinghies", "Olympic classes"]}
+!? The red cross on the Sagres' sails is the Cross of the Order of Christ, the same emblem carried by the caravels of the Discoveries.
+> Portugal's seafaring past lives on in its sailing clubs, regattas and wind-sport beaches.
+
+?? Who scored four goals against North Korea at the 1966 World Cup? | Cristiano Ronaldo | *Eusébio | Luís Figo || Portugal came back from 3–0 down to win 5–3.
+?? Who scored the winning goal in the Euro 2016 final? | Cristiano Ronaldo | Nani | *Éder || His low shot in extra time beat France 1–0.
+?? Which athlete won Portugal's first Olympic gold? | Rosa Mota | *Carlos Lopes | Nelson Évora || Lopes won the marathon in Los Angeles in 1984, aged 37.
+?? Why does Nazaré get such huge waves? | It faces the Mediterranean | *An undersea canyon focuses the swell | A volcano lies offshore || The Nazaré Canyon channels the energy of Atlantic storms.
+
+=== wo-poles
+title: The Arctic and Antarctica
+summary: Ice sheets and sea ice, who owns the poles, polar peoples, research and a melting future.
+
+# Three kinds of polar ice
+@viz {"k": "pairs", "items": [{"a": "Ice sheet", "b": "km-thick ice on land"}, {"a": "Ice shelf", "b": "sheet floating out to sea"}, {"a": "Sea ice", "b": "frozen seawater, metres thick"}]}
+Polar ice comes in different kinds. Ice sheets are vast domes of compacted snow on land, kilometres thick; today only Greenland and Antarctica have them.
+Sea ice is frozen seawater, usually only a few metres thick. Ice shelves are the floating edges of ice sheets, and icebergs break off from them.
+---
+An ice sheet forms where more snow falls each winter than melts each summer. Over thousands of years the snow is buried and squeezed into solid ice. Under its own weight the ice slowly flows outwards, like very thick dough, towards the sea.
+### Two ice sheets
+@viz {"k": "cmp", "l": {"t": "Greenland", "items": ["~1.7 million km²", "up to ~3 km thick", "~7 m of sea level"]}, "r": {"t": "Antarctica", "items": ["~14 million km²", "up to ~4.8 km thick", "~58 m of sea level"]}}
+The weight is so great that it presses the rock beneath down. Much of the bedrock under Greenland's and Antarctica's ice lies below sea level.
+### Floating edges
+Where ice sheets reach the ocean they often carry on as floating ice shelves hundreds of metres thick. Antarctica's Ross Ice Shelf is roughly the size of France. Shelves act like corks, slowing the glaciers behind them; when a shelf breaks up, those glaciers speed up.
+@viz {"k": "flow", "steps": ["Snow piles up on land", "Squeezed into ice", "Ice flows to the coast", "Floats as a shelf", "Icebergs break off"]}
+### Sea ice
+Sea ice forms when the ocean surface freezes at about −1.8 °C. It starts as slushy crystals, thickens into floes and can grow 1–2 m in one winter; ice that survives several years can reach 3–4 m.
+!! Icebergs are frozen seawater => Icebergs break off glaciers and ice shelves, so they are freshwater ice that once fell as snow
+> Ice sheets are ancient snow piled on land; sea ice is the ocean's thin, frozen skin.
+
+# Sea ice through the year
+@viz {"k": "bars", "unit": "sea ice extent, million km² (approx.)", "items": [{"l": "Arctic, March", "v": 15}, {"l": "Arctic, Sept.", "v": 4.5}, {"l": "Antarctic, Feb.", "v": 3}, {"l": "Antarctic, Sept.", "v": 18, "hi": true}]}
+Sea ice grows and shrinks with the seasons. Arctic ice peaks in March and is smallest in September; Antarctic ice does the opposite.
+Each winter the sea around Antarctica freezes over an area larger than the continent itself, then most of it melts again. This yearly pulse is one of the biggest seasonal changes on Earth.
+---
+The two poles behave differently because of geography. Arctic sea ice is hemmed in by land, so some of it survives the summer for years. Antarctic sea ice spreads freely into the open Southern Ocean, where winds and waves break it up, so almost all of it melts each summer.
+### Salt and the deep ocean
+When seawater freezes, most of its salt is pushed out. The cold, extra-salty water left behind is dense and sinks. Around Antarctica and in the far North Atlantic this sinking water feeds deep currents that spread through all the world's oceans.
+@viz {"k": "flow", "steps": ["Seawater freezes", "Salt squeezed out", "Cold salty water sinks", "Feeds deep ocean currents"]}
+### Life on and under the ice
+• Algae grow on the underside of sea ice and feed krill and other small crustaceans
+• Seals rest and give birth on the ice; polar bears hunt seals from it
+• Emperor penguins breed on Antarctic sea ice attached to the coast
+@viz {"k": "cycle", "steps": ["Winter: ice spreads", "Spring: algae bloom", "Summer: ice melts", "Autumn: freeze begins"]}
+### A changing pattern
+Arctic sea ice has clearly shrunk and thinned since satellite records began in 1979. Antarctic sea ice changed little for decades, even growing slightly, then fell to record lows from 2016 and especially in 2023. Scientists are still working out why.
+!? Old Arctic sea ice loses most of its salt over the years, and polar explorers melted it for drinking water.
+> Sea ice breathes in and out every year, and its saltiness helps drive the world's ocean currents.
+
+# Who owns Antarctica?
+@viz {"k": "tree", "root": "Antarctic claims", "items": ["UK, Chile, Argentina overlap", "Norway, Australia", "France, New Zealand", "Unclaimed: Marie Byrd Land"]}
+Seven countries claim parts of Antarctica, and three of the claims overlap. Most other countries, including Portugal, do not recognise any claim.
+The Antarctic Treaty, signed in 1959, puts these claims on hold. Antarctica is the only continent where no country exercises full sovereignty.
+---
+The claims were made between 1908 and the 1940s, mostly as wedge-shaped slices meeting at the South Pole. The British, Chilean and Argentine slices overlap on the Antarctic Peninsula, the part closest to South America. A large area facing the Pacific, Marie Byrd Land, is claimed by no one: the largest unclaimed land on Earth.
+### How the Treaty works
+The treaty grew out of the International Geophysical Year of 1957–58, when scientists from many countries worked in Antarctica in the middle of the Cold War. It applies south of 60° S and came into force in 1961. More than 55 countries have joined, Portugal since 2010.
+@viz {"k": "list", "items": ["Peaceful use only", "Freedom of scientific research", "Claims frozen, none new", "Bases open to inspection"]}
+### Two kinds of members
+Countries that carry out substantial research there become consultative parties, with a vote at the annual meetings, where decisions are taken by consensus. Others, like Portugal, can attend and take part but do not decide.
+@viz {"k": "nums", "items": [{"v": "7", "l": "countries with claims"}, {"v": "60° S", "l": "Treaty boundary"}, {"v": "55+", "l": "countries in the Treaty"}]}
+### The Madrid Protocol
+An environmental protocol signed in Madrid in 1991, in force since 1998, makes Antarctica a natural reserve, bans mining and sets rules on waste, tourism and wildlife.
+!! The mining ban expires in 2048 => It has no end date; from 2048 a member can ask for a review conference, but lifting the ban would be very difficult
+> In Antarctica sovereignty is not settled but suspended, and science is the price of a seat at the table.
+
+# Who governs the Arctic?
+@viz {"k": "list", "items": ["Eight Arctic states", "Law of the sea: 200-mile zones", "Seabed claims to the Pole", "Arctic Council cooperation"]}
+Unlike Antarctica, the Arctic has no special treaty. Its lands belong to eight countries, and its ocean is governed by the international law of the sea.
+Each coastal state controls fishing and resources up to 200 nautical miles out. Several are asking to extend their seabed rights all the way to the North Pole.
+---
+Under the UN Convention on the Law of the Sea, a coastal state has an exclusive economic zone of 200 nautical miles, about 370 km, for fishing, oil and minerals. Beyond that it can claim the seabed if it proves that its continental shelf extends further. The central Arctic Ocean beyond these zones is high seas.
+### Claims to the seabed
+Russia, Denmark (for Greenland) and Canada have all submitted claims to a UN commission that include the Lomonosov Ridge, an underwater mountain chain crossing the Arctic near the North Pole. The commission checks the science; overlapping claims must be settled by the countries themselves.
+@viz {"k": "flow", "steps": ["Map the seabed", "Submit data to UN body", "Commission reviews science", "States settle overlaps"]}
+### The Arctic Council
+Founded in 1996, the Arctic Council brings together the eight Arctic states and six organisations of Indigenous peoples, who sit at the table as permanent participants. It deals with environment, science and rescue, but not military security, and has produced binding agreements on search and rescue, oil spills and scientific cooperation.
+@viz {"k": "tree", "root": "Arctic Council", "items": ["8 Arctic states", "6 Indigenous groups", "Observer countries"]}
+After Russia's full-scale invasion of Ukraine in 2022, the other seven states paused work with Russia; cooperation has since resumed only partly, at a technical level.
+!? In 2007 a Russian mini-submarine planted a titanium flag on the seabed beneath the North Pole, a symbolic gesture with no legal effect.
+> The Arctic is run by ordinary international law and cooperation, not by a special treaty like Antarctica's.
+
+# Arctic peoples today
+@viz {"k": "nums", "items": [{"v": "~4 million", "l": "people live in the Arctic"}, {"v": "~10%", "l": "are Indigenous"}, {"v": "40+", "l": "Indigenous peoples"}]}
+About four million people live in the Arctic, in towns, mining cities and small villages. Around one in ten belongs to an Indigenous people, such as the Inuit, Sámi, Nenets or Chukchi.
+Many Arctic communities now govern themselves, combining modern life with hunting, herding and their own languages.
+---
+Most Arctic residents live in Russia, in cities such as Murmansk and Norilsk, and in northern Scandinavia. Elsewhere the population is small and scattered: Greenland has about 57,000 people, and Canada's vast territory of Nunavut fewer than 40,000.
+### Self-government
+@viz {"k": "time", "events": [{"y": "1979", "l": "Greenland home rule"}, {"y": "1989", "l": "Sámi Parliament, Norway"}, {"y": "1999", "l": "Nunavut created"}, {"y": "2009", "l": "Greenland self-rule"}]}
+Greenland, where most people are Inuit, runs most of its own affairs within the Kingdom of Denmark, and its 2009 self-rule law recognises its right to choose independence. Greenlandic (Kalaallisut) is the official language. In Nunavut, Inuktitut is taught in schools and used in government.
+### Old skills, new pressures
+• Reindeer herding remains central to many Sámi and Nenets families
+• Hunting seals, whales and caribou is still part of food and culture
+• Thinning ice makes travel over the frozen sea less safe and less predictable
+• Mining, oil and gas bring jobs but also disputes over land
+@viz {"k": "cmp", "l": {"t": "Opportunities", "items": ["new jobs, tourism", "shipping, mining"]}, "r": {"t": "Pressures", "items": ["thinning ice", "high living costs"]}}
+!? The Inuit Circumpolar Council represents about 180,000 Inuit in Alaska, Canada, Greenland and Chukotka in Russia as one people across four countries.
+> Arctic peoples are not relics of the past but modern societies shaping their own future in a fast-changing north.
+
+# Light in the polar year
+@viz {"k": "cmp", "l": {"t": "North Pole", "items": ["Sun up: Mar–Sept", "dark: Sept–Mar"]}, "r": {"t": "South Pole", "items": ["Sun up: Sept–Mar", "dark: Mar–Sept"]}}
+The two polar regions take turns. When the Arctic has its midnight sun in June, Antarctica is deep in polar night, and six months later they swap.
+Long twilights soften the change, and in the dark months auroras often light up the sky near both poles.
+---
+At the South Pole the Sun sets once, around the March equinox, and rises once, around September. Scientists who spend the winter at the US Amundsen–Scott station live about six months without seeing the Sun, and no planes normally fly in during that time.
+### Twilight that lasts for weeks
+Darkness does not arrive suddenly. After sunset the sky passes through stages of twilight, depending on how far the Sun is below the horizon. Near the poles the Sun sinks very slowly, so each stage can last days or even weeks.
+@viz {"k": "stack", "items": ["Civil twilight: Sun 0–6° below", "Nautical twilight: 6–12°", "Astronomical twilight: 12–18°", "Full night: over 18°"]}
+### Auroras
+Auroras appear when charged particles from the Sun are steered by Earth's magnetic field into the upper air, where they make oxygen and nitrogen glow green, red and purple. They are most common in a ring around each magnetic pole, which passes over northern Norway, Iceland, Alaska and Antarctica.
+@viz {"k": "flow", "steps": ["Particles from the Sun", "Steered by magnetic field", "Hit air 100–300 km up", "Gases glow"]}
+### Animals adapt
+Arctic reindeer have eyes that change colour with the seasons: a reflective layer at the back turns from gold in summer to deep blue in winter, which seems to help them see in the long twilight.
+!? The southern aurora, the aurora australis, is as bright as the northern one, but few people see it because so little inhabited land lies beneath its ring.
+> The poles share one year of light and dark between them, each enjoying its summer while the other has its night.
+
+# Research stations
+@viz {"k": "pairs", "items": [{"a": "McMurdo (USA)", "b": "largest, ~1,000 in summer"}, {"a": "Amundsen–Scott", "b": "at the South Pole itself"}, {"a": "Concordia", "b": "French–Italian, high plateau"}, {"a": "Ny-Ålesund", "b": "Arctic science village"}]}
+About 30 countries run around 70 research stations in Antarctica. In summer several thousand people live there; in winter about a thousand stay.
+In the Arctic, scientists work in towns and remote camps, from the international village of Ny-Ålesund in Svalbard to stations in Greenland, Canada and Alaska.
+---
+Stations range from small summer huts to small towns. McMurdo, on Ross Island, has a harbour, airstrips on the ice and its own fire station. Others sit on the high plateau, where the air is thin and winter temperatures drop below −70 °C.
+### What they study
+@viz {"k": "list", "items": ["Ice cores and past climate", "Ozone and the atmosphere", "Penguins, seals, krill", "Stars and cosmic particles"]}
+The clean, dry, stable air makes Antarctica superb for astronomy. At the South Pole the IceCube observatory uses a cubic kilometre of ice, fitted with thousands of sensors, to detect ghostly particles called neutrinos. In 1985 scientists of the British Antarctic Survey, using measurements from Halley station, reported the ozone hole.
+### Living there
+• Supplies arrive by ship and aircraft in the short summer
+• Waste must be shipped out under the Madrid Protocol
+• The European Space Agency studies isolated crews at Concordia as practice for missions to Mars
+@viz {"k": "cmp", "l": {"t": "Summer", "items": ["flights and ships", "fieldwork camps"]}, "r": {"t": "Winter", "items": ["small crews", "no flights"]}}
+### Portugal at the poles
+Portugal has no station of its own, but its polar programme, PROPOLAR, sends scientists to work at bases run by partner countries, studying permafrost, glaciers, wildlife and the atmosphere.
+> Antarctica's stations turn a whole continent into a shared laboratory, run by many nations side by side.
+
+# Ice cores
+@viz {"k": "stack", "items": ["Fresh snow on top", "Firn: packed old snow", "Ice with trapped air bubbles", "Oldest ice near bedrock"]}
+Snow falling on ice sheets traps tiny bubbles of air. Layer by layer it builds an archive of the atmosphere going back hundreds of thousands of years.
+By drilling cores kilometres long, scientists can read past temperatures and greenhouse gas levels, and show how unusual today's levels are.
+---
+Drills cut cylinders of ice about 10 cm wide, in sections a few metres long, which are flown in freezers to labs around the world. Near the top, yearly layers can be counted like tree rings; deeper down they are squeezed too thin, and ages come from models and markers such as volcanic ash.
+### What the ice records
+@viz {"k": "pairs", "items": [{"a": "Air bubbles", "b": "past CO2 and methane"}, {"a": "Water isotopes", "b": "past temperature"}, {"a": "Dust", "b": "winds and dry climates"}, {"a": "Ash, sulphate", "b": "old volcanic eruptions"}]}
+### 800,000 years
+The European EPICA core from Dome C, near Concordia station, reaches back about 800,000 years. It shows eight cycles of ice ages and warm periods, with CO₂ swinging between about 180 and 300 parts per million. Today's level, over 420 ppm, is far outside that range.
+@viz {"k": "bars", "unit": "CO2, parts per million (approx.)", "items": [{"l": "Ice-age low", "v": 180}, {"l": "Warm-period high", "v": 300}, {"l": "2025", "v": 425, "hi": true}]}
+### Older still
+In January 2025 the Beyond EPICA team reported reaching bedrock at a new site, Little Dome C, with ice thought to be at least 1.2 million years old. It may help explain why ice-age cycles changed rhythm, from about 41,000 to about 100,000 years, roughly a million years ago.
+!? Ancient glacier ice fizzes and crackles as it melts in a glass, as its squeezed air bubbles burst free.
+> Ice cores are the most direct record of the air our ancestors breathed, and they show how far we have changed it.
+
+# New Arctic sea routes
+@viz {"k": "bars", "unit": "Rotterdam–Yokohama by sea, km", "items": [{"l": "Via Suez", "v": 20700, "t": "~20,700"}, {"l": "Northern Sea Route", "v": 13600, "t": "~13,600", "hi": true}]}
+As Arctic sea ice shrinks, routes along the top of Russia and through Canada's islands stay open longer each summer. They can cut the sea journey between Europe and East Asia by about a third.
+Traffic is still small, because ice, darkness, storms and a lack of ports make them risky and costly.
+---
+There are two main routes. The Northern Sea Route follows Russia's Arctic coast from the Barents Sea to the Bering Strait. The Northwest Passage threads through the Canadian Arctic islands. A third, straight across the Pole, might open later this century if summer ice disappears.
+### A long search
+@viz {"k": "time", "events": [{"y": "1845", "l": "Franklin lost seeking it"}, {"y": "1878–79", "l": "First NE passage"}, {"y": "1903–06", "l": "Amundsen: NW Passage"}, {"y": "2010s", "l": "Regular summer transits"}]}
+For centuries Europeans searched for a northern short cut to Asia. The British Franklin expedition vanished in 1845 with both its ships, whose wrecks were found only in 2014 and 2016. Roald Amundsen finally sailed the Northwest Passage between 1903 and 1906.
+### Why it's not a new Suez yet
+• The routes are open only a few months a year, and ice varies from year to year
+• Many ships need strengthened hulls or icebreaker escorts
+• There are few ports, repair yards or rescue services
+• Insurance is expensive, and an oil spill in ice would be very hard to clean up
+@viz {"k": "cmp", "l": {"t": "Suez route", "items": ["open all year", "many ports"]}, "r": {"t": "Arctic route", "items": ["shorter", "ice, few ports"]}}
+Fewer than about 100 ships a year make a full transit of the Northern Sea Route, against tens of thousands through Suez; most Arctic traffic carries oil, gas and minerals out of the region.
+### Who controls the routes?
+Canada regards the Northwest Passage as its internal waters, while the USA and others see it as an international strait. Russia requires permits for the Northern Sea Route. Since 2017 an international Polar Code has set safety and pollution rules for ships in polar waters.
+> Melting ice is opening northern short cuts, but distance saved is not the same as time or money saved.
+
+# Melting ice, rising seas
+@viz {"k": "nums", "items": [{"v": "~20 cm", "l": "global rise since 1900"}, {"v": "~4 mm", "l": "rise per year now"}, {"v": "~65–70 m", "l": "if all land ice melted"}]}
+Sea level is rising for two main reasons: warmer water takes up more space, and ice on land is melting into the ocean. Greenland and Antarctica are losing hundreds of billions of tonnes of ice a year.
+The rise is speeding up, threatening low coasts, including stretches of Portugal's.
+---
+Since 1900 the global ocean has risen by about 20 cm. The rate has more than doubled since the 1990s, to about 4 mm a year, and melting glaciers and ice sheets now add more than the expansion of warming water.
+ex: About 360 billion tonnes of melted land ice | spread over the whole world ocean | raises sea level by about 1 mm
+### Greenland and Antarctica
+Greenland loses ice mainly through surface melting in summer and glaciers calving into the sea. Antarctica loses less, mostly from West Antarctica, where warmer ocean water eats away at the floating shelves from below.
+@viz {"k": "bars", "unit": "billion tonnes a year, approx.", "items": [{"l": "Greenland", "v": 270, "hi": true}, {"l": "Antarctica", "v": 150}]}
+### Tipping points
+Some glaciers in West Antarctica, such as Thwaites, rest on bedrock that slopes downward inland. Once they retreat past a certain point, the retreat could keep going by itself. Scientists disagree on how fast this could happen, and it is the biggest uncertainty in forecasts.
+@viz {"k": "flow", "steps": ["Warm water under shelf", "Shelf thins", "Glaciers speed up", "More ice into the sea"]}
+### What it means
+Projections for 2100 range from about 30–60 cm if emissions fall fast to about 60 cm–1 m if they stay high, more if ice sheets give way quickly, and the rise will continue for centuries. In Portugal, sandy coasts such as Costa da Caparica, Espinho and Vagueira already suffer erosion.
+!! Sea level rises equally everywhere => Gravity, currents and land rising or sinking make the rise larger on some coasts than others
+> Ice on land is the slow giant of climate change: hard to stop once it starts, and felt on every coast.
+
+?? What is an iceberg made of? | Frozen seawater | *Freshwater ice from glaciers | Compressed sea salt || Icebergs break off glaciers and ice shelves formed from snow.
+?? What did the Antarctic Treaty do with territorial claims? | Shared them out equally | *Put them on hold | Handed them to the UN || Claims are frozen, and no new ones can be made.
+?? When is Arctic sea ice at its smallest? | March | *September | December || It melts through the summer and reaches its minimum in September.
+?? What mainly raises sea level? | Melting floating sea ice | *Melting land ice and warming water | More rain falling on the sea || Floating ice already displaces its own weight of water.
+
+=== na-fungi
+title: Fungi: the hidden kingdom
+summary: Mycelium, mushrooms, root partners, yeast, medicines, lichens and the giants hidden underground.
+
+# Neither plant nor animal
+@viz {"k": "tree", "root": "How fungi feed", "items": ["Decomposers: dead matter", "Parasites: living hosts", "Partners: trade with plants"]}
+Fungi form their own kingdom of life, separate from plants and animals. They cannot make food from sunlight; instead they release enzymes and absorb what they digest outside their bodies.
+They include mushrooms, moulds and yeasts. Scientists have named about 150,000 species, but there may be millions more.
+---
+Early naturalists, from Aristotle to Linnaeus in the 18th century, filed fungi under plants. Only in 1969 did the American ecologist Robert Whittaker give them a kingdom of their own, and DNA studies later confirmed that fungi are closer to animals.
+### Eating from the outside
+A fungus grows into its food, then pours out digestive enzymes. These break big molecules such as cellulose and proteins into small ones that the fungus absorbs through its cell walls. In effect it lives inside its own stomach.
+@viz {"k": "flow", "steps": ["Grow into food", "Release enzymes", "Food broken down outside", "Absorb the nutrients"]}
+### Three ways of life
+• Decomposers feed on dead wood, leaves and dung
+• Parasites attack living hosts: chestnut blight, athlete's foot, the "zombie-ant" fungus
+• Partners trade with plants or algae, as in mycorrhiza and lichens
+@viz {"k": "bars", "unit": "fungal species (approx.)", "items": [{"l": "Named so far", "v": 150000, "t": "~150,000"}, {"l": "Estimated total", "v": 2500000, "t": "2–4 million", "hi": true}]}
+Fungi cause most plant diseases and some serious human infections, but most species are harmless to us, and many are essential to ecosystems.
+!? Some fungi are hunters: the oyster mushroom can paralyse and digest tiny roundworms in the wood it grows on.
+> Fungi are nature's great absorbers: they digest the world from the outside in.
+
+# Mycelium, the hidden body
+@viz {"k": "flow", "steps": ["Spore lands", "Hypha grows from the tip", "Hyphae branch and fuse", "Mycelium network"]}
+The main body of a fungus is the mycelium, a web of microscopic threads called hyphae. It spreads through soil, wood, leaf litter or food, mostly out of sight.
+Hyphae grow at their tips and can fuse with each other, building networks that explore the ground for food.
+---
+Each hypha is a tube a few thousandths of a millimetre wide, far thinner than a human hair. Because it grows only at the tip, it can push its way into wood and between soil grains. A single gram of forest soil can hold tens to hundreds of metres of hyphae.
+### A network that adapts
+When one part of a mycelium finds food, it thickens the threads leading there and lets unproductive ones die back. In lab experiments, wood-rotting fungi given scattered food sources built networks that balanced efficiency and resilience, rather like well-designed transport systems.
+@viz {"k": "cmp", "l": {"t": "Hypha", "items": ["one thread", "grows at its tip"]}, "r": {"t": "Mycelium", "items": ["web of hyphae", "the whole fungus"]}}
+### Long-lived and hard to see
+A mycelium can live for years or centuries, producing mushrooms only when conditions suit. Fairy rings, circles of mushrooms in grass, form as a mycelium grows outward from a centre, using up nutrients behind it. Some rings in Europe are thought to be hundreds of years old.
+### Mycelium as a material
+Grown on farm waste, mycelium binds loose material into light, solid shapes, and some fungi can be grown as food.
+@viz {"k": "list", "items": ["Compostable packaging", "Insulation panels", "Leather-like fabrics", "Meat alternatives"]}
+!! A mushroom is the whole fungus => It is a short-lived fruiting body; the mycelium is the real, long-lived organism
+> The real fungus is the hidden web, not the mushroom you see.
+
+# Mushrooms are fruit
+@viz {"k": "stack", "items": ["Cap protects the spores", "Gills or pores make spores", "Stem lifts them into the air", "Mycelium below ground"]}
+A mushroom is a fruiting body: the part a fungus builds to spread its spores. It can appear overnight because it swells cells that have already formed with water.
+A single mushroom may release billions of microscopic spores, carried away by air, water and animals.
+---
+Mushrooms often spring up after autumn rain because they grow mostly by swelling, not by making new cells. The mycelium prepares a tiny knot of tissue underground, then pumps water into it. That is why mushrooms can even push up through tarmac.
+### Launching spores
+Many mushrooms launch their spores with a drop of water that forms beside each spore. When the drop suddenly merges with a film on the spore, the shift in weight flicks it away with an acceleration thousands of times that of gravity. It travels only a fraction of a millimetre, just enough to fall clear of the gill and drift away.
+@viz {"k": "flow", "steps": ["Water drop forms", "Drop merges with spore", "Spore is flicked off", "Falls and drifts away"]}
+### Many shapes
+@viz {"k": "pairs", "items": [{"a": "Gills", "b": "field mushroom, parasol"}, {"a": "Pores", "b": "ceps and other boletes"}, {"a": "Puffballs", "b": "spores puff out when hit"}, {"a": "Truffles", "b": "underground, found by smell"}]}
+Truffles grow underground and cannot use the wind. Instead they give off strong smells that attract animals, which dig them up, eat them and spread the spores in their droppings. That is why pigs and trained dogs can find them.
+### Spore prints
+Placing a cap gills-down on paper overnight leaves a spore print. Its colour, from white or pink to brown or black, is one of many features experts use in identification, never on its own.
+!? Some mushrooms make their own wind: water evaporating from the cap cools the air beneath it, creating gentle currents that lift spores even on still days.
+> A mushroom is a temporary launch pad, built fast to send spores out into the world.
+
+# Breaking down wood
+@viz {"k": "cmp", "l": {"t": "White rot", "items": ["breaks down lignin", "wood pale and stringy"]}, "r": {"t": "Brown rot", "items": ["leaves lignin behind", "wood cracks in cubes"]}}
+Wood is hard to digest because of lignin, a tough material that stiffens plant cell walls. Fungi are the main organisms able to break it down completely.
+Without them, dead trees would pile up for centuries, and the carbon and nutrients locked inside would be slow to return to the soil and air.
+---
+Wood is mostly cellulose fibres, glued and armoured with lignin. Many organisms can digest cellulose, but lignin is a jumble of chemical rings that few enzymes can attack. White-rot fungi produce powerful oxidising enzymes that tear it apart, which is why rotten logs eventually crumble.
+### A coal mystery
+Much of the world's coal formed about 360 to 300 million years ago, in the Carboniferous period. One hypothesis says this happened partly because fungi able to digest lignin had not yet evolved, so dead trees piled up. Other scientists argue that vast swamps, climate and moving continents explain it better. The debate continues.
+@viz {"k": "fix", "items": [{"w": "No fungi ate wood, so coal formed", "r": "Fungi may be part of it; swamps mattered"}]}
+### Decay at work
+• Shelf fungi on dead trunks are the fruiting bodies of wood-rotters
+• Rotting wood left in forests shelters beetles, birds and bats
+• Compost heaps rely on fungi to break down woody stems and paper
+@viz {"k": "flow", "steps": ["Fungi soften the wood", "Beetles tunnel in", "Wood crumbles to soil", "Seedlings take root"]}
+### When decay hits our homes
+The same skills cause trouble indoors. Dry rot, Serpula lacrymans, can spread through damp timber in old buildings and destroy floors and roofs. Keeping wood dry is the best defence, because fungi need moisture to grow.
+!? Some white-rot fungi can also break down pollutants such as certain dyes and pesticides, and are being tested to clean up contaminated soil.
+> Fungi are the recyclers that can fully unlock wood, returning a tree's carbon and nutrients to the cycle.
+
+# Root partners
+@viz {"k": "cmp", "l": {"t": "Plant gives", "items": ["sugars", "fats"]}, "r": {"t": "Fungus gives", "items": ["water", "phosphorus, nitrogen"]}}
+Most land plants, around 80–90% of species, live in partnership with fungi in and around their roots, called mycorrhiza. Fungal threads extend the roots' reach far into the soil.
+The plant pays in sugars from photosynthesis. The fungi bring water and nutrients such as phosphorus, and can help plants cope with drought and disease.
+---
+Fossils from Scotland's Rhynie chert, about 400 million years old, show fungi inside the cells of some of the earliest land plants. Many scientists think this partnership helped plants leave the water: the first plants had no true roots, and fungi did much of the job.
+### How the trade works
+Fungal threads are far thinner than roots and reach into the tiniest pores of soil. They release acids and enzymes that free phosphorus locked in minerals. In exchange, a plant may pass a sizeable share of its sugars, by some estimates up to about a fifth, to its fungal partners.
+@viz {"k": "flow", "steps": ["Leaves make sugar", "Sugar flows to roots", "Fungus takes its share", "Brings back nutrients"]}
+### Orchids, truffles and pines
+• Orchid seeds are as fine as dust and cannot sprout without a fungus feeding them
+• Truffles are the fruiting bodies of fungi partnered with oak and hazel roots
+• Pines planted in new continents often grew poorly until the right fungi arrived
+### What about the "wood wide web"?
+Fungal networks can link several trees at once. But claims that trees use them to feed their young or send warnings have been questioned: a 2023 review found the evidence weaker than popular books suggest. The partnership is solid; a forest-wide "internet" remains a hypothesis.
+@viz {"k": "fix", "items": [{"w": "Trees chat through fungi", "r": "Links exist; sharing is debated"}]}
+> Most plants on Earth grow with fungal partners underground, a trade at least 400 million years old.
+
+# Lichens: a partnership
+@viz {"k": "tree", "root": "A lichen", "items": ["Fungus: shape, shelter", "Alga or cyanobacterium: food", "Sometimes a yeast too"]}
+A lichen looks like one organism but is a partnership: a fungus living with algae or cyanobacteria. The fungus gives shelter; its partner makes food from sunlight.
+Together they grow on bare rock, bark, roofs and tundra, from deserts to Antarctica. Many are sensitive to air pollution.
+---
+In 1867 the Swiss botanist Simon Schwendener proposed that lichens were partnerships, an idea many experts at first rejected. In 2016 researchers found that many lichens also contain a third partner, a yeast, in their outer layer. A lichen is better thought of as a tiny ecosystem.
+### Pioneers
+About 20,000 lichen species are known. They survive drying out completely and spring back to life with rain. On bare rock they slowly release acids that help break it down, starting the first soil. Some grow a millimetre or less a year, and some crusts are thousands of years old.
+@viz {"k": "flow", "steps": ["Lichen on bare rock", "Acids weaken the rock", "Dust and dead lichen", "First thin soil"]}
+### Pollution detectors
+Many lichens absorb water and nutrients straight from the air, so they also take in pollutants. Shaggy, bushy lichens disappear first where sulphur dioxide is high; tough, crusty ones hang on. In many European cities lichens have returned as coal smoke declined.
+@viz {"k": "scale", "lo": 0, "hi": 10, "unit": "clean air (illus.)", "items": [{"l": "Crusty", "v": 2}, {"l": "Leafy", "v": 5}, {"l": "Shrubby, hairy", "v": 9, "hi": true}]}
+### Useful lichens
+• "Reindeer moss" is a lichen and a key winter food for reindeer
+• Litmus, the classic acid–alkali indicator, comes from lichens
+• Lichens were long used to dye wool, including traditional Scottish tweed
+!? The grey-green beard-like tufts hanging from trees in clean, damp hills, such as those of northern Portugal, are lichens of the genus Usnea.
+> A lichen is a partnership so close that it behaves like one organism and survives where neither partner could alone.
+
+# Yeast, the tiny workhorse
+@viz {"k": "pairs", "items": [{"a": "Baker's yeast", "b": "raises bread dough"}, {"a": "Ale yeast", "b": "warm, top-fermenting"}, {"a": "Lager yeast", "b": "cool, bottom-fermenting"}, {"a": "Lab yeast", "b": "medicines and research"}]}
+Yeasts are single-celled fungi. One species, Saccharomyces cerevisiae, has worked for humans for thousands of years, raising bread and fermenting beer and wine.
+Today it is also one of biology's most important lab organisms, and it is engineered to make medicines such as insulin and vaccines.
+---
+A yeast cell is about five thousandths of a millimetre across, and a small block of fresh baker's yeast contains billions of them. They multiply by budding: a small bulge grows on the cell, receives a copy of its DNA and pinches off.
+### Lager's surprise ancestor
+Lager yeast is a hybrid of brewer's yeast and a cold-loving wild species. That second parent was a mystery until 2011, when scientists found it on southern beech trees in Patagonia. How it reached Europe's breweries is still debated.
+@viz {"k": "flow", "steps": ["Brewer's yeast", "Meets cold-loving wild yeast", "Hybrid forms", "Lager yeast"]}
+### A model for our own cells
+Yeast cells have a nucleus and many of the same genes as human cells, but they grow fast and are easy to study. In 1996 yeast became the first organism with a nucleus to have its whole genome read. Yeast research helped win Nobel Prizes for discoveries about cell division in 2001 and about how cells recycle their parts in 2016.
+@viz {"k": "time", "events": [{"y": "1850s–60s", "l": "Pasteur: living yeast"}, {"y": "1996", "l": "Yeast genome read"}, {"y": "2001", "l": "Nobel: cell division"}, {"y": "2016", "l": "Nobel: cell recycling"}]}
+### Yeast factories
+• Engineered yeast makes a large share of the world's insulin
+• A hepatitis B vaccine has been produced in yeast since the 1980s
+• Yeast also makes flavours, enzymes and some biofuels
+!? Yeast is so like us that some human genes can replace their yeast versions and keep the cells alive.
+> Yeast is both one of humanity's oldest helpers and one of its most modern tools.
+
+# Medicines from moulds
+@viz {"k": "pairs", "items": [{"a": "Penicillin", "b": "antibiotic, Penicillium"}, {"a": "Cephalosporins", "b": "antibiotics, Acremonium"}, {"a": "Ciclosporin", "b": "transplants, soil fungus"}, {"a": "Statins", "b": "cholesterol, first from fungi"}]}
+Fungi fight bacteria and each other with chemicals, and some have become life-saving medicines. Penicillin, from a Penicillium mould, launched the age of antibiotics.
+Other fungal molecules now prevent the rejection of transplanted organs and lower cholesterol. The search for new drugs in fungi continues.
+---
+In the soil, fungi compete with bacteria for food, and many produce substances that kill or slow their rivals. Alexander Fleming noticed this in 1928, when a mould contaminating a dish of bacteria cleared a ring around itself. Turning it into a medicine took Howard Florey, Ernst Chain and their Oxford team until the early 1940s.
+### Finding better moulds
+Early penicillin was made in tiny amounts. In 1943, in Peoria in the USA, a mould on a cantaloupe melon from a local market turned out to produce far more. Its descendants, improved further in the lab, made penicillin cheap enough for millions, and fungi are still grown in huge steel tanks to make it.
+@viz {"k": "flow", "steps": ["Mould on a dish, 1928", "Purified at Oxford", "Better strain on a melon", "Mass production"]}
+### Beyond penicillin
+Cephalosporins, another major family of antibiotics, came from a mould found near a sewage outlet in Sardinia in 1948. Ciclosporin, from a fungus in a Norwegian soil sample, calms the immune system and made organ transplants far more successful from the 1980s. The first statins were discovered in fungi by the Japanese scientist Akira Endo in the 1970s.
+@viz {"k": "time", "events": [{"y": "1928", "l": "Penicillin noticed"}, {"y": "1948", "l": "Cephalosporin mould"}, {"y": "1970s", "l": "First statins"}, {"y": "1983", "l": "Ciclosporin approved"}]}
+### A double edge
+Some fungal chemicals are poisons. The ergot fungus on rye caused outbreaks of poisoning in medieval Europe, yet its compounds later gave medicines for migraine and for bleeding after childbirth.
+> Some of medicine's most important drugs are weapons that fungi evolved against their rivals.
+
+# The humongous fungus
+type: fact
+@viz {"k": "nums", "items": [{"v": "~9.6 km²", "l": "area in Oregon"}, {"v": "2,000+", "l": "years old, maybe far more"}, {"v": "1", "l": "genetic individual"}]}
+In the Blue Mountains of Oregon, USA, a single honey fungus, Armillaria ostoyae, spreads under the forest over almost 10 square kilometres. It may be several thousand years old.
+By area it is one of the largest living organisms known. Above ground you see only clumps of honey-coloured mushrooms in autumn.
+---
+Foresters noticed patches of dying conifers in the Malheur National Forest. Around 2000, scientists sampled the fungus at many points and compared their DNA. Samples across the whole area were genetically identical, meaning they belonged to one individual that had grown outwards for millennia.
+### How it spreads
+Honey fungus sends out black, root-like cords called rhizomorphs, nicknamed "bootlaces", which grow through the soil from tree to tree. It invades roots, kills many trees and then feeds on the dead wood. Under the bark of infected trees lie white sheets of mycelium that smell of mushrooms.
+@viz {"k": "flow", "steps": ["Bootlace cords spread", "Infect tree roots", "Tree weakens and dies", "Fungus feeds on wood"]}
+### Measuring a giant
+@viz {"k": "bars", "unit": "area, hectares (approx.)", "items": [{"l": "Pando aspen, Utah", "v": 43}, {"l": "Michigan fungus", "v": 75}, {"l": "Oregon fungus", "v": 965, "hi": true}]}
+Its age is estimated from its growth rate, at somewhere between about 2,000 and 8,000 years. Its weight is unknown, and which organism counts as "largest" depends on whether you measure area or mass.
+### Closer to home
+Honey fungi are common across Europe, including Portugal, where they attack fruit trees, vines, chestnuts and garden shrubs. Gardeners recognise them by the bootlaces and the clusters of mushrooms at the base of dying trees.
+!? Honey fungus mycelium glows faintly in the dark, the "foxfire" sometimes seen on rotting wood at night.
+> One fungus can quietly occupy an entire forest, visible only as a few mushrooms each autumn.
+
+# Edible or deadly?
+@viz {"k": "fix", "items": [{"w": "Animals eat it, so it's safe", "r": "Many animals tolerate our poisons"}, {"w": "Cooking makes it safe", "r": "Deadly toxins survive cooking"}]}
+Some wild mushrooms are delicious; others can kill. The death cap, Amanita phalloides, causes most fatal mushroom poisonings, and it grows in Portugal under oaks and other trees.
+No simple test tells safe from poisonous. Never eat a wild mushroom unless an expert has identified it in person.
+---
+The death cap looks harmless: a greenish cap, white gills and a ring on the stem, with a cup-like sac at its base that is often hidden in the soil. Its toxins, called amatoxins, are not destroyed by cooking, freezing or drying, and a single mushroom can be enough to kill an adult.
+### Why it is so dangerous
+@viz {"k": "time", "events": [{"y": "0 h", "l": "Meal tastes good"}, {"y": "6–24 h", "l": "Vomiting, diarrhoea"}, {"y": "Day 2–3", "l": "Seems to improve"}, {"y": "Day 3–5", "l": "Liver failure"}]}
+Symptoms start late, often after 6 to 12 hours or more, when the toxins are already in the body. A false recovery can follow before the liver fails. Fast hospital treatment saves many lives, so act at once if poisoning is possible.
+### Myths that kill
+• A silver spoon does not turn black near poisonous mushrooms
+• Peeling the cap does not remove the toxins
+• A pleasant smell or taste proves nothing
+• Mushrooms growing on wood or nibbled by slugs can still be toxic
+@viz {"k": "cmp", "l": {"t": "Safe practice", "items": ["expert checks in person", "keep a sample"]}, "r": {"t": "Risky", "items": ["photo apps alone", "folk tests"]}}
+### In Portugal
+Autumn brings mushroom fairs and guided walks, especially in Trás-os-Montes and the Beiras, where ceps, chanterelles and Caesar's mushrooms are prized. If you suspect poisoning, call the Antipoison Information Centre (CIAV) on 800 250 250 or 112, and keep any leftover mushrooms for identification.
+!! Poisonous mushrooms are brightly coloured => The deadliest, like the death cap and the destroying angel, are pale and plain-looking
+> With wild mushrooms, the only safe rule is expert identification, every single time.
+
+?? What is a mushroom? | The whole fungus | *A fruiting body that spreads spores | A type of plant root || The main body of the fungus is the hidden mycelium.
+?? What do plants give their mycorrhizal fungi? | Water | *Sugars from photosynthesis | Spores || In return the fungi bring water and nutrients such as phosphorus.
+?? Which medicine came from a Penicillium mould? | Aspirin | *Penicillin | Insulin || Fleming noticed its effect on bacteria in 1928.
+?? How can you tell whether a wild mushroom is safe to eat? | It turns a silver spoon black | Animals have nibbled it | *Only by expert identification || No simple test works, and deadly species can look plain.

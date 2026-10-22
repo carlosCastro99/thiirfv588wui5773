@@ -6,8 +6,8 @@ tr-parts.q0.q	Um LED branco (Vf 3 V) é alimentado a 12 V com 10 mA. Que resist�
 tr-parts.q0.o0	90 Ω
 tr-parts.q0.o1	300 Ω
 tr-parts.q0.o2	900 Ω
-tr-parts.q0.o3	1.2 kΩ
-tr-parts.q0.x	R = (12 − 3) ÷ 0.010 = 900 Ω. Escolherias o valor normalizado logo acima, 1 kΩ.
+tr-parts.q0.o3	1,2 kΩ
+tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. Escolherias o valor normalizado logo acima, 1 kΩ.
 tr-parts.q1.q	Faixas castanha, preta, laranja. Qual é o valor?
 tr-parts.q1.o0	10 Ω
 tr-parts.q1.o1	1 kΩ
@@ -17,7 +17,7 @@ tr-parts.q1.x	Castanho 1, preto 0, laranja ×1000 → 10 × 1000 = 10 kΩ.
 tr-parts.q2.q	Num divisor com R1 = R2 e Vin = 10 V, Vout é…
 tr-parts.q2.o0	10 V
 tr-parts.q2.o1	5 V
-tr-parts.q2.o2	2.5 V
+tr-parts.q2.o2	2,5 V
 tr-parts.q2.x	Resistências iguais dividem a tensão ao meio.
 tr-parts.q3.q	Duas resistências de 1 kΩ em paralelo dão…
 tr-parts.q3.o0	2 kΩ
@@ -36,7 +36,7 @@ tr-parts.c1.title	Todo o LED precisa de uma resistência
 tr-parts.c1.text	Um LED provoca uma queda de tensão direta fixa (Vf, cerca de 2 V no vermelho, 3 V no branco ou azul) e puxa toda a corrente que conseguir, até queimar. Uma resistência em série absorve a tensão que sobra e define a corrente.
 tr-parts.c1.formula	R = (Vs − Vf) ÷ I
 tr-parts.c1.example.0	Alimentação de 5 V, LED vermelho (2 V), 20 mA
-tr-parts.c1.example.1	R = (5 − 2) ÷ 0.020
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
 tr-parts.c1.example.2	= 150 Ω
 tr-parts.c1.sketch.0	150 Ω
 tr-parts.c1.sketch.1	5 V
@@ -48,7 +48,7 @@ tr-parts.c2.sketch.2	1 RC
 tr-parts.c2.sketch.4	tempo
 tr-parts.c2.sketch.5	tensão
 tr-parts.c3.title	Experimenta: o divisor de tensão
-tr-parts.c3.text	Duas resistências em série dividem uma tensão na proporção dos seus valores. É a forma habitual de baixar um sinal de 5 V ou 12 V para os 3.3 V que um pino do ESP32 aguenta.
+tr-parts.c3.text	Duas resistências em série dividem uma tensão na proporção dos seus valores. É a forma habitual de baixar um sinal de 5 V ou 12 V para os 3,3 V que um pino do ESP32 aguenta.
 tr-parts.c3.formula	Vout = Vin × R2 ÷ (R1 + R2)
 tr-parts.c4.title	Valores normalizados de resistências
 tr-parts.c4.text	As resistências vêm em séries normalizadas, não em todos os valores. A série E12 tem 12 valores por década: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82. Escolhe o valor normalizado mais próximo do teu cálculo.
@@ -56,8 +56,8 @@ tr-parts.c4.viz.items.3	× 1, 10, 100, 1k, 10k…
 tr-parts.c5.title	Potência de uma resistência
 tr-parts.c5.text	As resistências transformam potência em calor e têm um valor máximo: as comuns de montagem through-hole são de ¼ W. Calcula P = I² × R e escolhe uma resistência com folga acima desse valor.
 tr-parts.c5.example.0	20 mA através de 150 Ω
-tr-parts.c5.example.1	0.02² × 150
-tr-parts.c5.example.2	= 0.06 W: uma de ¼ W serve
+tr-parts.c5.example.1	0,02² × 150
+tr-parts.c5.example.2	= 0,06 W: uma de ¼ W serve
 tr-parts.c5.viz.f	P = I² × R
 tr-parts.c5.viz.items.0.s	I
 tr-parts.c5.viz.items.0.m	corrente que a atravessa
@@ -84,7 +84,7 @@ tr-parts.c7.viz.r.items.2	filtragem da alimentação
 tr-parts.c8.title	Constante de tempo RC
 tr-parts.c8.text	Uma resistência a carregar um condensador demora um tempo previsível. Ao fim de uma constante de tempo (R × C), o condensador chega a cerca de 63% da alimentação; ao fim de cinco, está praticamente cheio.
 tr-parts.c8.example.0	10 kΩ e 100 µF
-tr-parts.c8.example.1	10,000 × 0.0001
+tr-parts.c8.example.1	10 000 × 0,0001
 tr-parts.c8.example.2	τ = 1 segundo
 tr-parts.c8.viz.f	τ = R × C
 tr-parts.c8.viz.items.0.s	R
@@ -106,7 +106,7 @@ tr-mcu.summary	Como um chip como o ESP32 lê e controla o mundo real.
 tr-mcu.q0.q	Um motor de 12 V recebe PWM a 50% de duty cycle. Comporta-se mais ou menos como se tivesse…
 tr-mcu.q0.o0	12 V
 tr-mcu.q0.o1	6 V
-tr-mcu.q0.o2	0.5 V
+tr-mcu.q0.o2	0,5 V
 tr-mcu.q0.o3	24 V
 tr-mcu.q0.x	A média de 12 V ligados metade do tempo é 6 V.
 tr-mcu.q1.q	O que faz uma entrada 'flutuante'?
@@ -127,11 +127,11 @@ tr-mcu.q3.o2	Para poupar energia
 tr-mcu.q3.x	Os contactos a ressaltar provocam vários impulsos.
 tr-mcu.q4.q	Qual é o risco de meter 5 V num pino de entrada do ESP32?
 tr-mcu.q4.o0	Nenhum
-tr-mcu.q4.o1	Pode danificar o pino de 3.3 V
+tr-mcu.q4.o1	Pode danificar o pino de 3,3 V
 tr-mcu.q4.o2	Fica mais rápido
-tr-mcu.q4.x	Os pinos do ESP32 só aguentam 3.3 V.
+tr-mcu.q4.x	Os pinos do ESP32 só aguentam 3,3 V.
 tr-mcu.c0.title	Digital vs. analógico
-tr-mcu.c0.text	Um sinal digital tem dois estados: baixo (0) ou alto (1, muitas vezes 3.3 V). Um sinal analógico pode ter qualquer valor dentro de uma gama, como a saída de um sensor de temperatura.\n\nOs microcontroladores são digitais por natureza. Para lidar com o analógico usam um ADC para ler e PWM para simular uma saída.
+tr-mcu.c0.text	Um sinal digital tem dois estados: baixo (0) ou alto (1, muitas vezes 3,3 V). Um sinal analógico pode ter qualquer valor dentro de uma gama, como a saída de um sensor de temperatura.\n\nOs microcontroladores são digitais por natureza. Para lidar com o analógico usam um ADC para ler e PWM para simular uma saída.
 tr-mcu.c0.sketch.0	digital: 0 ou 1
 tr-mcu.c0.sketch.1	analógico: qualquer valor
 tr-mcu.c1.title	PWM: regular o brilho a piscar
@@ -140,35 +140,35 @@ tr-mcu.c1.sketch.0	duty 25% → fraco
 tr-mcu.c1.sketch.1	duty 75% → forte
 tr-mcu.c1.sketch.2	tracejado = média
 tr-mcu.c2.title	Resistências pull-up
-tr-mcu.c2.text	Um pino de entrada ligado a nada fica 'a flutuar' e apanha ruído, lendo 0 ou 1 ao acaso. Uma resistência pull-up liga-o suavemente a 3.3 V para que leia 1 por omissão. Carrega no botão e o pino liga-se à massa, lendo 0.\n\nA maioria dos microcontroladores tem pull-ups internos que podes ativar no código.
-tr-mcu.c2.sketch.0	3.3 V
+tr-mcu.c2.text	Um pino de entrada ligado a nada fica 'a flutuar' e apanha ruído, lendo 0 ou 1 ao acaso. Uma resistência pull-up liga-o suavemente a 3,3 V para que leia 1 por omissão. Carrega no botão e o pino liga-se à massa, lendo 0.\n\nA maioria dos microcontroladores tem pull-ups internos que podes ativar no código.
+tr-mcu.c2.sketch.0	3,3 V
 tr-mcu.c2.sketch.1	10 kΩ
 tr-mcu.c2.sketch.2	GPIO
 tr-mcu.c2.sketch.3	botão
 tr-mcu.c2.sketch.4	repouso = 1
 tr-mcu.c2.sketch.5	premido = 0
 tr-mcu.c3.title	Resolução do ADC
-tr-mcu.c3.text	Um conversor analógico-digital transforma uma tensão num número. Um ADC de n bits tem 2ⁿ níveis. O ADC de 12 bits do ESP32 dá 4096 níveis em cerca de 3.3 V.\n\nAs leituras são menos exatas perto de 0 V e perto do topo da gama, por isso mantém os sinais a meio sempre que possível.
+tr-mcu.c3.text	Um conversor analógico-digital transforma uma tensão num número. Um ADC de n bits tem 2ⁿ níveis. O ADC de 12 bits do ESP32 dá 4096 níveis em cerca de 3,3 V.\n\nAs leituras são menos exatas perto de 0 V e perto do topo da gama, por isso mantém os sinais a meio sempre que possível.
 tr-mcu.c3.formula	nível = Vref ÷ 2ⁿ
-tr-mcu.c3.example.0	ADC de 12 bits, referência de 3.3 V
-tr-mcu.c3.example.1	3.3 ÷ 4096
-tr-mcu.c3.example.2	≈ 0.8 mV por nível
+tr-mcu.c3.example.0	ADC de 12 bits, referência de 3,3 V
+tr-mcu.c3.example.1	3,3 ÷ 4096
+tr-mcu.c3.example.2	≈ 0,8 mV por nível
 tr-mcu.c3.sketch.0	tensão de entrada
 tr-mcu.c3.sketch.1	leitura
 tr-mcu.c3.sketch.2	cada nível = 1 código
 tr-mcu.c4.title	Pinos GPIO
-tr-mcu.c4.text	Os pinos de entrada/saída de uso geral podem ser configurados como entradas (ler um botão) ou saídas (acender um LED). Num ESP32 funcionam a 3.3 V e só fornecem em segurança alguns miliamperes cada.
+tr-mcu.c4.text	Os pinos de entrada/saída de uso geral podem ser configurados como entradas (ler um botão) ou saídas (acender um LED). Num ESP32 funcionam a 3,3 V e só fornecem em segurança alguns miliamperes cada.
 tr-mcu.c4.viz.l.t	Entrada
 tr-mcu.c4.viz.l.items.0	lê 0 ou 1
 tr-mcu.c4.viz.l.items.1	botões, sensores
 tr-mcu.c4.viz.r.t	Saída
-tr-mcu.c4.viz.r.items.0	põe 0 ou 3.3 V
+tr-mcu.c4.viz.r.items.0	põe 0 ou 3,3 V
 tr-mcu.c4.viz.r.items.1	LEDs, relés com driver
-tr-mcu.c5.title	Lógica de 3.3 V vs 5 V
-tr-mcu.c5.text	Muitos chips modernos (ESP32, Raspberry Pi) usam lógica de 3.3 V; o Arduino Uno usa 5 V. Meter 5 V num pino de 3.3 V pode danificá-lo. Usa um divisor de tensão ou um conversor de nível entre os dois.
+tr-mcu.c5.title	Lógica de 3,3 V vs 5 V
+tr-mcu.c5.text	Muitos chips modernos (ESP32, Raspberry Pi) usam lógica de 3,3 V; o Arduino Uno usa 5 V. Meter 5 V num pino de 3,3 V pode danificá-lo. Usa um divisor de tensão ou um conversor de nível entre os dois.
 tr-mcu.c5.viz.items.0.w	sensor de 5 V direto ao ESP32
 tr-mcu.c5.viz.items.0.r	divisor ou conversor de nível
-tr-mcu.c5.viz.items.1.w	pino de 3.3 V a ligar bobina de relé de 5 V
+tr-mcu.c5.viz.items.1.w	pino de 3,3 V a ligar bobina de relé de 5 V
 tr-mcu.c5.viz.items.1.r	usa um transístor como driver
 tr-mcu.c6.title	Interrupções
 tr-mcu.c6.text	Em vez de verificar um botão milhares de vezes por segundo (polling), uma interrupção faz o chip saltar para o teu código no instante em que o pino muda. Poupa energia e nunca perde um evento rápido.
@@ -216,19 +216,19 @@ tr-diodes.q1.o2	Para duplicar a tensão
 tr-diodes.q1.x	O díodo de roda livre protege o driver.
 tr-diodes.q2.q	Mais ou menos, que queda de tensão tem um díodo de silício a conduzir?
 tr-diodes.q2.o0	3 V
-tr-diodes.q2.o1	0.7 V
+tr-diodes.q2.o1	0,7 V
 tr-diodes.q2.o2	0 V
-tr-diodes.q2.x	Cerca de 0.6–0.7 V.
+tr-diodes.q2.x	Cerca de 0,6–0,7 V.
 tr-diodes.c0.title	Uma válvula de sentido único
 tr-diodes.c0.text	Um díodo deixa a corrente passar num sentido (do ânodo para o cátodo) e bloqueia-a no sentido contrário. A faixa no corpo marca o cátodo.
 tr-diodes.c0.viz.l.t	Direta
 tr-diodes.c0.viz.l.items.0	a corrente passa
-tr-diodes.c0.viz.l.items.1	queda de ~0.7 V (silício)
+tr-diodes.c0.viz.l.items.1	queda de ~0,7 V (silício)
 tr-diodes.c0.viz.r.t	Inversa
 tr-diodes.c0.viz.r.items.0	bloqueada
 tr-diodes.c0.viz.r.items.1	só fuga mínima
 tr-diodes.c1.title	Tensão direta
-tr-diodes.c1.text	Um díodo de silício tem uma queda de cerca de 0.6–0.7 V a conduzir; um díodo Schottky só 0.2–0.4 V, o que desperdiça menos potência. Os LEDs têm quedas maiores: 2 V no vermelho, cerca de 3 V no azul e no branco.
+tr-diodes.c1.text	Um díodo de silício tem uma queda de cerca de 0,6–0,7 V a conduzir; um díodo Schottky só 0,2–0,4 V, o que desperdiça menos potência. Os LEDs têm quedas maiores: 2 V no vermelho, cerca de 3 V no azul e no branco.
 tr-diodes.c1.viz.unit	volts (aprox.)
 tr-diodes.c1.viz.items.0.l	Schottky
 tr-diodes.c1.viz.items.1.l	Silício
@@ -252,10 +252,10 @@ tr-diodes.c4.viz.items.0.r	díodo em paralelo com a bobina, faixa no +
 tr-diodes.c4.viz.items.1.w	transístor morre ao fim de semanas
 tr-diodes.c4.viz.items.1.r	díodo de roda livre montado
 tr-diodes.c5.title	Díodos Zener
-tr-diodes.c5.text	Um díodo Zener conduz no sentido inverso a uma tensão precisa, como 3.3 V ou 5.1 V. Com uma resistência, serve de referência de tensão simples ou protege entradas contra sobretensões.
+tr-diodes.c5.text	Um díodo Zener conduz no sentido inverso a uma tensão precisa, como 3,3 V ou 5,1 V. Com uma resistência, serve de referência de tensão simples ou protege entradas contra sobretensões.
 tr-diodes.c5.viz.steps.0	Tensão mais alta
 tr-diodes.c5.viz.steps.1	Resistência em série
-tr-diodes.c5.viz.steps.2	Zener fixa 3.3 V
+tr-diodes.c5.viz.steps.2	Zener fixa 3,3 V
 tr-diodes.c5.viz.steps.3	Entrada protegida
 tr-diodes.c6.title	Os LEDs são díodos
 tr-diodes.c6.text	Um díodo emissor de luz emite luz quando a corrente passa no sentido direto. A cor depende do material semicondutor. A perna comprida é o ânodo (+) e o lado achatado marca o cátodo (−).
@@ -280,13 +280,13 @@ tr-diodes.c8.viz.steps.3	O chip sobrevive
 tr-diodes.c9.title	Díodos para combinar alimentações (OR)
 tr-diodes.c9.text	Dois díodos permitem que um circuito funcione com a alimentação que for mais alta, como USB ou bateria, sem que uma alimente a outra.
 tr-diodes.c9.viz.steps.0	USB 5 V por um díodo
-tr-diodes.c9.viz.steps.1	Bateria 3.7 V por um díodo
+tr-diodes.c9.viz.steps.1	Bateria 3,7 V por um díodo
 tr-diodes.c9.viz.steps.2	A mais alta alimenta o circuito
 tr-transistors.title	Transístores como interruptores
 tr-transistors.summary	Como um sinal minúsculo controla uma carga grande.
 tr-transistors.q0.q	Porque usar um MOSFET de nível lógico com um ESP32?
 tr-transistors.q0.o0	É mais barato
-tr-transistors.q0.o1	Liga por completo com apenas 3.3 V na gate
+tr-transistors.q0.o1	Liga por completo com apenas 3,3 V na gate
 tr-transistors.q0.o2	É à prova de água
 tr-transistors.q0.x	Os MOSFETs normais podem precisar de cerca de 10 V.
 tr-transistors.q1.q	O que faz uma resistência pull-down na gate?
@@ -295,10 +295,10 @@ tr-transistors.q1.o1	Mantém o MOSFET desligado quando o pino está a flutuar
 tr-transistors.q1.o2	Limita a corrente da carga
 tr-transistors.q1.x	Mantém a gate a 0 V durante o arranque.
 tr-transistors.q2.q	Um MOSFET de 50 mΩ conduz 4 A. O calor que produz é…
-tr-transistors.q2.o0	0.2 W
-tr-transistors.q2.o1	0.8 W
+tr-transistors.q2.o0	0,2 W
+tr-transistors.q2.o1	0,8 W
 tr-transistors.q2.o2	4 W
-tr-transistors.q2.x	4² × 0.05 = 0.8 W.
+tr-transistors.q2.x	4² × 0,05 = 0,8 W.
 tr-transistors.c0.title	Porque precisas de um
 tr-transistors.c0.text	Um pino de microcontrolador só consegue fornecer alguns miliamperes. Um motor, uma fita de LEDs ou um relé precisam de muito mais. Um transístor permite que a pequena corrente do pino controle uma corrente de carga muito maior.
 tr-transistors.c0.viz.steps.0	Pino dá 1 mA
@@ -317,7 +317,7 @@ tr-transistors.c2.title	MOSFET: tensão controla corrente
 tr-transistors.c2.text	Um MOSFET é controlado pela tensão na gate, quase sem corrente na gate. Quando está totalmente ligado, a sua resistência pode ser de apenas miliohms, por isso quase não aquece. A maior parte da comutação de potência usa MOSFETs.
 tr-transistors.c2.viz.l.t	BJT
 tr-transistors.c2.viz.l.items.0	controlado pela corrente de base
-tr-transistors.c2.viz.l.items.1	queda de ~0.2 V ligado
+tr-transistors.c2.viz.l.items.1	queda de ~0,2 V ligado
 tr-transistors.c2.viz.l.items.2	cargas pequenas
 tr-transistors.c2.viz.r.t	MOSFET
 tr-transistors.c2.viz.r.items.0	controlado pela tensão na gate
@@ -330,8 +330,8 @@ tr-transistors.c3.viz.steps.1	Carga
 tr-transistors.c3.viz.steps.2	MOSFET-N
 tr-transistors.c3.viz.steps.3	Massa (gate controlada pelo pino)
 tr-transistors.c4.title	MOSFETs de nível lógico
-tr-transistors.c4.text	Muitos MOSFETs precisam de 10 V na gate para ligar por completo. Com um microcontrolador de 3.3 V, escolhe um MOSFET de nível lógico especificado para estar totalmente ligado a 2.5–3.3 V, como o AO3400 ou o IRLZ44N.
-tr-transistors.c4.viz.items.0.w	IRF540 controlado a 3.3 V
+tr-transistors.c4.text	Muitos MOSFETs precisam de 10 V na gate para ligar por completo. Com um microcontrolador de 3,3 V, escolhe um MOSFET de nível lógico especificado para estar totalmente ligado a 2,5–3,3 V, como o AO3400 ou o IRLZ44N.
+tr-transistors.c4.viz.items.0.w	IRF540 controlado a 3,3 V
 tr-transistors.c4.viz.items.0.r	MOSFET de nível lógico
 tr-transistors.c4.viz.items.1.w	MOSFET aquece
 tr-transistors.c4.viz.items.1.r	está só meio ligado, vê a tensão na gate
@@ -353,7 +353,7 @@ tr-transistors.c6.viz.r.items.2	gera calor
 tr-transistors.c7.title	Calor nos interruptores
 tr-transistors.c7.text	A potência perdida num MOSFET a comutar é I² × R(on). Um MOSFET de 20 mΩ a conduzir 10 A perde 2 W, o que pede um pequeno dissipador. Comutar depressa também conta, porque se perde potência em cada transição.
 tr-transistors.c7.example.0	10 A através de 20 mΩ
-tr-transistors.c7.example.1	10² × 0.02
+tr-transistors.c7.example.1	10² × 0,02
 tr-transistors.c7.example.2	= 2 W de calor
 tr-transistors.c7.viz.f	P = I² × R(on)
 tr-transistors.c7.viz.items.0.s	I
@@ -376,7 +376,7 @@ tr-opamps.summary	O canivete suíço da eletrónica analógica.
 tr-opamps.q0.q	Um amplificador não inversor com Rf = 4 kΩ e Rg = 1 kΩ tem um ganho de…
 tr-opamps.q0.o0	4
 tr-opamps.q0.o1	5
-tr-opamps.q0.o2	0.25
+tr-opamps.q0.o2	0,25
 tr-opamps.q0.x	1 + 4/1 = 5.
 tr-opamps.q1.q	O que faz um seguidor de tensão?
 tr-opamps.q1.o0	Duplica a tensão
@@ -389,7 +389,7 @@ tr-opamps.q2.o1	Um comparador
 tr-opamps.q2.o2	Uma bateria
 tr-opamps.q2.x	Limita-se a indicar qual das entradas está mais alta.
 tr-opamps.c0.title	O que é um ampop
-tr-opamps.c0.text	Um amplificador operacional (ampop) é um chip com duas entradas (+ e −) e uma saída. Amplifica a diferença entre as entradas por um fator enorme, muitas vezes 100,000 vezes ou mais.
+tr-opamps.c0.text	Um amplificador operacional (ampop) é um chip com duas entradas (+ e −) e uma saída. Amplifica a diferença entre as entradas por um fator enorme, muitas vezes 100 000 vezes ou mais.
 tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
 tr-opamps.c0.viz.items.0.s	A
 tr-opamps.c0.viz.items.0.m	ganho em malha aberta, enorme
@@ -431,13 +431,13 @@ tr-opamps.c5.viz.items.0	Não entra corrente nas entradas
 tr-opamps.c5.viz.items.1	A saída iguala V+ a V−
 tr-opamps.c5.viz.items.2	Só com realimentação negativa
 tr-opamps.c6.title	Rail-to-rail
-tr-opamps.c6.text	Os ampops mais antigos não conseguem levar a saída até perto das tensões de alimentação. Em circuitos de 3.3 V ou 5 V, escolhe um ampop rail-to-rail para o sinal poder usar a gama completa.
+tr-opamps.c6.text	Os ampops mais antigos não conseguem levar a saída até perto das tensões de alimentação. Em circuitos de 3,3 V ou 5 V, escolhe um ampop rail-to-rail para o sinal poder usar a gama completa.
 tr-opamps.c6.viz.l.t	Ampop clássico
 tr-opamps.c6.viz.l.items.0	precisa de ±12 V
 tr-opamps.c6.viz.l.items.1	saída não chega aos limites
 tr-opamps.c6.viz.r.t	Rail-to-rail
-tr-opamps.c6.viz.r.items.0	funciona a 3.3 V
-tr-opamps.c6.viz.r.items.1	saída chega perto de 0 V e 3.3 V
+tr-opamps.c6.viz.r.items.0	funciona a 3,3 V
+tr-opamps.c6.viz.r.items.1	saída chega perto de 0 V e 3,3 V
 tr-opamps.c7.title	Filtros
 tr-opamps.c7.text	Com condensadores, os ampops fazem filtros ativos: passa-baixo para tirar o ruído de um sensor, passa-alto para bloquear a DC, passa-banda para uma frequência específica.
 tr-opamps.c7.viz.items.0.a	passa-baixo
@@ -462,32 +462,32 @@ tr-opamps.c9.viz.events.2.y	hoje
 tr-opamps.c9.viz.events.2.l	modelos rail-to-rail e baixo consumo
 tr-psu.title	Fontes de alimentação e reguladores
 tr-psu.summary	Obter a tensão certa, de forma limpa e eficiente.
-tr-psu.q0.q	Um regulador linear baixa 9 V para 5 V a 0.2 A. Quanto calor produz?
-tr-psu.q0.o0	0.2 W
-tr-psu.q0.o1	0.8 W
-tr-psu.q0.o2	1.8 W
-tr-psu.q0.x	(9 − 5) × 0.2 = 0.8 W.
-tr-psu.q1.q	Qual é o mais eficiente para baixar de 24 V para 3.3 V?
+tr-psu.q0.q	Um regulador linear baixa 9 V para 5 V a 0,2 A. Quanto calor produz?
+tr-psu.q0.o0	0,2 W
+tr-psu.q0.o1	0,8 W
+tr-psu.q0.o2	1,8 W
+tr-psu.q0.x	(9 − 5) × 0,2 = 0,8 W.
+tr-psu.q1.q	Qual é o mais eficiente para baixar de 24 V para 3,3 V?
 tr-psu.q1.o0	Regulador linear
 tr-psu.q1.o1	Conversor buck
 tr-psu.q1.o2	Díodo Zener
 tr-psu.q1.x	Os conversores comutados desperdiçam pouca potência.
-tr-psu.q2.q	Um transformador de 2 A alimenta um projeto que consome 0.5 A. Está bem?
+tr-psu.q2.q	Um transformador de 2 A alimenta um projeto que consome 0,5 A. Está bem?
 tr-psu.q2.o0	Sim, o projeto só puxa o que precisa
 tr-psu.q2.o1	Não, vai queimar
 tr-psu.q2.o2	Só com uma resistência
 tr-psu.q2.x	O valor nominal é um máximo, não o que é forçado a passar.
 tr-psu.c0.title	Porquê regular?
-tr-psu.c0.text	As baterias vão baixando a tensão à medida que descarregam, e o USB pode variar entre cerca de 4.75 e 5.25 V. Os chips querem uma tensão estável, por isso um regulador mantém-na constante, faça a entrada o que fizer.
-tr-psu.c0.viz.steps.0	Entrada variável 4.2–3.0 V
+tr-psu.c0.text	As baterias vão baixando a tensão à medida que descarregam, e o USB pode variar entre cerca de 4,75 e 5,25 V. Os chips querem uma tensão estável, por isso um regulador mantém-na constante, faça a entrada o que fizer.
+tr-psu.c0.viz.steps.0	Entrada variável 4,2–3,0 V
 tr-psu.c0.viz.steps.1	Regulador
-tr-psu.c0.viz.steps.2	3.3 V estáveis
+tr-psu.c0.viz.steps.2	3,3 V estáveis
 tr-psu.c0.viz.steps.3	Chip feliz
 tr-psu.c1.title	Reguladores lineares
 tr-psu.c1.text	Um regulador linear (como um LM7805 ou AMS1117) queima a tensão em excesso sob a forma de calor. Simples e silencioso, mas esbanjador quando a entrada é muito mais alta do que a saída.
-tr-psu.c1.example.0	12 V para 5 V a 0.5 A
-tr-psu.c1.example.1	(12 − 5) × 0.5
-tr-psu.c1.example.2	= 3.5 W de calor
+tr-psu.c1.example.0	12 V para 5 V a 0,5 A
+tr-psu.c1.example.1	(12 − 5) × 0,5
+tr-psu.c1.example.2	= 3,5 W de calor
 tr-psu.c1.viz.f	calor = (Vin − Vout) × I
 tr-psu.c1.viz.items.0.s	Vin
 tr-psu.c1.viz.items.0.m	tensão de entrada
@@ -496,33 +496,33 @@ tr-psu.c1.viz.items.1.m	saída
 tr-psu.c1.viz.items.2.s	I
 tr-psu.c1.viz.items.2.m	corrente da carga
 tr-psu.c2.title	Reguladores LDO
-tr-psu.c2.text	Um regulador de baixa queda (LDO) funciona com a entrada só ligeiramente acima da saída, por exemplo 3.6 V à entrada para 3.3 V à saída. Essencial quando se trabalha com uma única célula de lítio.
+tr-psu.c2.text	Um regulador de baixa queda (LDO) funciona com a entrada só ligeiramente acima da saída, por exemplo 3,6 V à entrada para 3,3 V à saída. Essencial quando se trabalha com uma única célula de lítio.
 tr-psu.c2.viz.l.t	Linear normal
 tr-psu.c2.viz.l.items.0	precisa de ~2 V de margem
 tr-psu.c2.viz.l.items.1	p. ex. 7805
 tr-psu.c2.viz.r.t	LDO
-tr-psu.c2.viz.r.items.0	precisa de ~0.1–0.4 V
+tr-psu.c2.viz.r.items.0	precisa de ~0,1–0,4 V
 tr-psu.c2.viz.r.items.1	ideal para baterias
 tr-psu.c3.title	Conversores buck
-tr-psu.c3.text	Um conversor buck baixa a tensão ligando e desligando muito depressa através de uma bobina. Uma eficiência de 85–95% significa pouco calor, mesmo de 24 V para 3.3 V.
+tr-psu.c3.text	Um conversor buck baixa a tensão ligando e desligando muito depressa através de uma bobina. Uma eficiência de 85–95% significa pouco calor, mesmo de 24 V para 3,3 V.
 tr-psu.c3.viz.steps.0	Entram 12 V
 tr-psu.c3.viz.steps.1	Comuta a ~500 kHz
 tr-psu.c3.viz.steps.2	Bobina e condensador suavizam
 tr-psu.c3.viz.steps.3	Saem 5 V, ~90% de eficiência
 tr-psu.c4.title	Conversores boost
-tr-psu.c4.text	Um conversor boost sobe a tensão, por exemplo de uma bateria de 3.7 V para os 5 V do USB. Puxa mais corrente da bateria do que a que entrega à saída.
+tr-psu.c4.text	Um conversor boost sobe a tensão, por exemplo de uma bateria de 3,7 V para os 5 V do USB. Puxa mais corrente da bateria do que a que entrega à saída.
 tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
 tr-psu.c4.viz.items.0.s	Vout
 tr-psu.c4.viz.items.0.m	5 V
 tr-psu.c4.viz.items.1.s	Iout
 tr-psu.c4.viz.items.1.m	1 A
 tr-psu.c4.viz.items.2.s	Vin
-tr-psu.c4.viz.items.2.m	3.7 V
+tr-psu.c4.viz.items.2.m	3,7 V
 tr-psu.c4.viz.items.3.s	η
-tr-psu.c4.viz.items.3.m	~0.9 → Iin ≈ 1.5 A
+tr-psu.c4.viz.items.3.m	~0,9 → Iin ≈ 1,5 A
 tr-psu.c5.title	Eficiência comparada
 tr-psu.c5.text	Para uma queda grande, ganham os reguladores comutados. Para quedas pequenas e circuitos analógicos sensíveis ao ruído, um LDO pode ser melhor.
-tr-psu.c5.viz.unit	% de eficiência, 12 V → 3.3 V
+tr-psu.c5.viz.unit	% de eficiência, 12 V → 3,3 V
 tr-psu.c5.viz.items.0.l	Linear
 tr-psu.c5.viz.items.1.l	Conversor buck
 tr-psu.c6.title	Ripple e ruído
@@ -547,14 +547,14 @@ tr-psu.c8.viz.items.3.l	USB-C PD
 tr-psu.c9.title	Quebras de tensão
 tr-psu.c9.text	Se a alimentação baixar para menos do que um chip precisa, ele pode portar-se mal ou reiniciar. Os ESP32 são famosos por reiniciarem nos picos de transmissão Wi-Fi quando a alimentação é fraca. Um bom regulador e um condensador grande perto da placa resolvem o problema.
 tr-psu.c9.viz.items.0.w	ESP32 reinicia quando o Wi-Fi arranca
-tr-psu.c9.viz.items.0.r	alimentação de 3.3 V mais forte e um condensador de 470 µF perto da placa
+tr-psu.c9.viz.items.0.r	fonte de 3,3 V mais forte + condensador de 470 µF
 tr-sensors.title	Sensores
 tr-sensors.summary	Medir temperatura, distância, movimento e muito mais.
-tr-sensors.q0.q	Um eco ultrassónico volta ao fim de 2.9 ms. A distância é de cerca de…
+tr-sensors.q0.q	Um eco ultrassónico volta ao fim de 2,9 ms. A distância é de cerca de…
 tr-sensors.q0.o0	1 m
-tr-sensors.q0.o1	0.5 m
+tr-sensors.q0.o1	0,5 m
 tr-sensors.q0.o2	2 m
-tr-sensors.q0.x	0.0029 × 343 ÷ 2 ≈ 0.5 m.
+tr-sensors.q0.x	0,0029 × 343 ÷ 2 ≈ 0,5 m.
 tr-sensors.q1.q	Porque é que um sensor PIR pode não detetar alguém sentado e quieto?
 tr-sensors.q1.o0	Está demasiado frio
 tr-sensors.q1.o1	Deteta variações do calor infravermelho causadas pelo movimento
@@ -581,15 +581,15 @@ tr-sensors.c1.viz.items.2.a	BME280
 tr-sensors.c1.viz.items.2.b	temperatura, humidade, pressão
 tr-sensors.c2.title	Distância por ultrassons
 tr-sensors.c2.text	Sensores como o HC-SR04 e o JSN-SR04T, à prova de água, enviam um impulso de 40 kHz e medem o tempo do eco. A distância é metade do tempo de ida e volta vezes a velocidade do som.
-tr-sensors.c2.example.0	eco ao fim de 5.8 ms
-tr-sensors.c2.example.1	0.0058 × 343 ÷ 2
-tr-sensors.c2.example.2	≈ 1.0 m
+tr-sensors.c2.example.0	eco ao fim de 5,8 ms
+tr-sensors.c2.example.1	0,0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1,0 m
 tr-sensors.c2.viz.f	distância = tempo × 343 ÷ 2
 tr-sensors.c2.viz.items.0.s	tempo
 tr-sensors.c2.viz.items.0.m	tempo do eco em s
 tr-sensors.c2.viz.items.1.m	m/s, velocidade do som no ar
 tr-sensors.c3.title	Manias dos ultrassons
-tr-sensors.c3.text	A velocidade do som varia com a temperatura (cerca de 0.6 m/s por °C), por isso junta compensação de temperatura para teres precisão. O JSN-SR04T tem uma zona cega de cerca de 20–25 cm e precisa de caminho livre.
+tr-sensors.c3.text	A velocidade do som varia com a temperatura (cerca de 0,6 m/s por °C), por isso junta compensação de temperatura para teres precisão. O JSN-SR04T tem uma zona cega de cerca de 20–25 cm e precisa de caminho livre.
 tr-sensors.c3.viz.items.0	Compensar a temperatura
 tr-sensors.c3.viz.items.1	Respeitar a distância mínima
 tr-sensors.c3.viz.items.2	Evitar espuma e superfícies inclinadas
@@ -681,7 +681,7 @@ tr-buses.c2.viz.items.1.b	linha de relógio
 tr-buses.c2.viz.items.2.a	endereço
 tr-buses.c2.viz.items.2.b	qual dispositivo
 tr-buses.c2.viz.items.3.a	pull-ups
-tr-buses.c2.viz.items.3.b	tipicamente 4.7 kΩ
+tr-buses.c2.viz.items.3.b	tipicamente 4,7 kΩ
 tr-buses.c3.title	SPI
 tr-buses.c3.text	O SPI usa um relógio, uma linha de saída de dados, uma de entrada de dados e uma linha chip-select por dispositivo. É rápido, muitas vezes dezenas de MHz, por isso usa-se para ecrãs, cartões SD e memória flash.
 tr-buses.c3.viz.items.0.a	SCK
@@ -725,7 +725,7 @@ tr-buses.c8.title	RS-485 e Modbus
 tr-buses.c8.text	O RS-485 envia os dados como a diferença entre dois fios, o que rejeita o ruído em cabos compridos. Equipamentos industriais, contadores de energia e inversores solares falam muitas vezes Modbus sobre RS-485.
 tr-buses.c8.viz.steps.0	UART do microcontrolador
 tr-buses.c8.viz.steps.1	Transceiver RS-485
-tr-buses.c8.viz.steps.2	Par entrançado até 1.2 km
+tr-buses.c8.viz.steps.2	Par entrançado até 1,2 km
 tr-buses.c8.viz.steps.3	Contador ou inversor
 tr-buses.c9.title	Analisadores lógicos
 tr-buses.c9.text	Um analisador lógico USB barato grava os bits num barramento e descodifica-os em bytes legíveis, mostrando exatamente o que está a ser enviado. É a forma mais rápida de depurar um sensor teimoso.
@@ -746,7 +746,7 @@ tr-wireless.q1.o1	Dispositivos ligados à corrente que retransmitem as mensagens
 tr-wireless.q1.o2	Frequências mais altas
 tr-wireless.q1.x	Cada router retransmite os pacotes.
 tr-wireless.q2.q	Que frequência usa o LoRa na Europa?
-tr-wireless.q2.o0	2.4 GHz
+tr-wireless.q2.o0	2,4 GHz
 tr-wireless.q2.o1	868 MHz
 tr-wireless.q2.o2	5 GHz
 tr-wireless.q2.x	A banda da UE é 868 MHz.
@@ -762,7 +762,7 @@ tr-wireless.c0.viz.r.items.1	mensagens minúsculas
 tr-wireless.c0.viz.r.items.2	anos com uma bateria
 tr-wireless.c1.title	Wi-Fi
 tr-wireless.c1.text	O Wi-Fi oferece alta velocidade e liga-se diretamente à tua rede e à internet, mas consome muita energia. Bom para dispositivos ligados à corrente, como câmaras e tomadas inteligentes.
-tr-wireless.c1.viz.items.0.v	2.4 GHz
+tr-wireless.c1.viz.items.0.v	2,4 GHz
 tr-wireless.c1.viz.items.0.l	alcance
 tr-wireless.c1.viz.items.1.v	5 GHz
 tr-wireless.c1.viz.items.1.l	velocidade
@@ -1001,7 +1001,7 @@ tr-logic.summary	Bits, portas lógicas e como os chips tomam decisões.
 tr-logic.q0.q	Quanto é 1101 em binário no sistema decimal?
 tr-logic.q0.o0	11
 tr-logic.q0.o1	13
-tr-logic.q0.o2	1,101
+tr-logic.q0.o2	1101
 tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
 tr-logic.q1.q	Uma porta AND com entradas 1 e 0 dá na saída…
 tr-logic.q1.o0	1
@@ -1125,7 +1125,7 @@ tr-memory.c2.viz.items.1	SSDs
 tr-memory.c2.viz.items.2	Cartões SD
 tr-memory.c2.viz.items.3	Pens USB
 tr-memory.c3.title	A flash gasta-se
-tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10,000 a 100,000 nos chips pequenos. Escrever uma linha de registo a cada segundo no mesmo sítio dá cabo dela; o wear levelling espalha as escritas.
+tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10 000 a 100 000 nos chips pequenos. Escrever uma linha de registo a cada segundo no mesmo sítio dá cabo dela; o wear levelling espalha as escritas.
 tr-memory.c3.viz.items.0.w	gravar dados do sensor na flash a cada segundo
 tr-memory.c3.viz.items.0.r	guarda-os na RAM e grava em lotes
 tr-memory.c3.viz.items.1.w	sempre o mesmo bloco
@@ -1167,11 +1167,11 @@ tr-memory.c8.viz.items.1	Fazer flush ou fechar
 tr-memory.c8.viz.items.2	Usar cartões de qualidade
 tr-memory.c8.viz.items.3	Manter uma cópia
 tr-memory.c9.title	Unidades de armazenamento
-tr-memory.c9.text	Um kilobyte são 1,000 bytes em unidades SI, mas os sistemas operativos contam muitas vezes 1,024 (que é, rigorosamente, um kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
+tr-memory.c9.text	Um kilobyte são 1000 bytes em unidades SI, mas os sistemas operativos contam muitas vezes 1024 (que é, rigorosamente, um kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
 tr-memory.c9.viz.items.0.a	1 KB
-tr-memory.c9.viz.items.0.b	1,000 bytes
+tr-memory.c9.viz.items.0.b	1000 bytes
 tr-memory.c9.viz.items.1.a	1 KiB
-tr-memory.c9.viz.items.1.b	1,024 bytes
+tr-memory.c9.viz.items.1.b	1024 bytes
 tr-memory.c9.viz.items.2.a	disco de 1 TB
 tr-memory.c9.viz.items.2.b	aparece como ~931 GiB
 tr-motors.title	Controlar motores
@@ -1181,7 +1181,7 @@ tr-motors.q0.o0	Um díodo
 tr-motors.q0.o1	Uma ponte H
 tr-motors.q0.o2	Um condensador
 tr-motors.q0.x	Inverte a corrente com quatro interruptores.
-tr-motors.q1.q	Um impulso de servo de 1.5 ms significa normalmente…
+tr-motors.q1.q	Um impulso de servo de 1,5 ms significa normalmente…
 tr-motors.q1.o0	0°
 tr-motors.q1.o1	90° (centro)
 tr-motors.q1.o2	180°
@@ -1222,7 +1222,7 @@ tr-motors.c4.title	Servos
 tr-motors.c4.text	Um servo de modelismo tem um motor, uma caixa de engrenagens e um sensor de posição numa só caixa. Envias um impulso a cada 20 ms; a sua largura, de 1 a 2 ms, define o ângulo de 0° a 180°.
 tr-motors.c4.viz.unit	ms
 tr-motors.c5.title	Motores de passo
-tr-motors.c5.text	Um motor de passo move-se em passos fixos, normalmente 200 por volta (1.8° cada). Drivers como o A4988 ou o TMC2209 recebem impulsos de passo e direção e podem fazer micropassos para um movimento mais suave.
+tr-motors.c5.text	Um motor de passo move-se em passos fixos, normalmente 200 por volta (1,8° cada). Drivers como o A4988 ou o TMC2209 recebem impulsos de passo e direção e podem fazer micropassos para um movimento mais suave.
 tr-motors.c5.viz.f	passos por mm = (passos/volta × micropassos) ÷ mm por volta
 tr-motors.c5.viz.items.0.m	passos/volta
 tr-motors.c5.viz.items.1.m	micropassos
@@ -1235,8 +1235,8 @@ tr-motors.c6.viz.steps.1	ESC comuta 3 fases
 tr-motors.c6.viz.steps.2	Campo rotativo
 tr-motors.c6.viz.steps.3	O motor roda
 tr-motors.c7.title	Alimentações separadas
-tr-motors.c7.text	Alimenta os motores com uma fonte própria, não com o regulador de 3.3 V do microcontrolador, e liga as massas. Junta condensadores perto do driver para absorver os picos.
-tr-motors.c7.viz.items.0.w	motor no pino de 3.3 V do ESP32
+tr-motors.c7.text	Alimenta os motores com uma fonte própria, não com o regulador de 3,3 V do microcontrolador, e liga as massas. Junta condensadores perto do driver para absorver os picos.
+tr-motors.c7.viz.items.0.w	motor no pino de 3,3 V do ESP32
 tr-motors.c7.viz.items.0.r	alimentação própria do motor, massa comum
 tr-motors.c7.viz.items.1.w	ESP32 reinicia quando o motor arranca
 tr-motors.c7.viz.items.1.r	junta um condensador grande perto do driver
@@ -1261,18 +1261,18 @@ tr-power.q0.o0	A corrente de pico
 tr-power.q0.o1	A corrente em sleep e o tempo acordado
 tr-power.q0.o2	A velocidade do CPU
 tr-power.q0.x	É a corrente média que define a autonomia.
-tr-power.q1.q	Uma bateria de 2,000 mAh com uma corrente média de 0.5 mA dura cerca de…
+tr-power.q1.q	Uma bateria de 2000 mAh com uma corrente média de 0,5 mA dura cerca de…
 tr-power.q1.o0	40 horas
-tr-power.q1.o1	4,000 horas (~5.5 meses)
+tr-power.q1.o1	4000 horas (~5,5 meses)
 tr-power.q1.o2	4 anos
-tr-power.q1.x	2,000 ÷ 0.5 = 4,000 h.
+tr-power.q1.x	2000 ÷ 0,5 = 4000 h.
 tr-power.q2.q	Como podes reduzir a energia gasta em cada despertar com Wi-Fi?
 tr-power.q2.o0	Usar DHCP
 tr-power.q2.o1	Usar IP estático e canal fixo para ligar mais depressa
 tr-power.q2.o2	Transmitir mais alto
 tr-power.q2.x	Menos tempo acordado, menos energia.
 tr-power.c0.title	O que conta é a corrente média
-tr-power.c0.text	Autonomia = capacidade ÷ corrente média. Um dispositivo que acorda 1 segundo a cada 10 minutos passa 99.8% do tempo a dormir, por isso a corrente em sleep conta imenso.
+tr-power.c0.text	Autonomia = capacidade ÷ corrente média. Um dispositivo que acorda 1 segundo a cada 10 minutos passa 99,8% do tempo a dormir, por isso a corrente em sleep conta imenso.
 tr-power.c0.viz.f	horas = mAh ÷ mA médios
 tr-power.c0.viz.items.0.s	mAh
 tr-power.c0.viz.items.0.m	capacidade da bateria
@@ -1282,12 +1282,12 @@ tr-power.c1.title	Corrente média
 tr-power.c1.text	Pondera cada estado pelo tempo que dura.
 tr-power.c1.example.0	2 s a 120 mA, 598 s a 10 µA, por cada 600 s
 tr-power.c1.example.1	(240 + 6) ÷ 600
-tr-power.c1.example.2	≈ 0.41 mA → 3,000 mAh duram ~300 dias
-tr-power.c1.viz.f	I méd = (I acordado × t acordado + I sleep × t sleep) ÷ t total
-tr-power.c1.viz.items.0.s	acordado
-tr-power.c1.viz.items.0.m	120 mA durante 2 s
-tr-power.c1.viz.items.1.s	a dormir
-tr-power.c1.viz.items.1.m	0.01 mA durante 598 s
+tr-power.c1.example.2	≈ 0,41 mA → 3000 mAh duram ~300 dias
+tr-power.c1.viz.f	I méd = (I ac × t ac + I sono × t sono) ÷ t
+tr-power.c1.viz.items.0.s	ac
+tr-power.c1.viz.items.0.m	acordado: 120 mA durante 2 s
+tr-power.c1.viz.items.1.s	sono
+tr-power.c1.viz.items.1.m	a dormir: 0,01 mA durante 598 s
 tr-power.c2.title	Deep sleep
 tr-power.c2.text	Um ESP32 consome cerca de 100+ mA com o Wi-Fi ligado, mas só uns 10 µA em deep sleep (numa placa bem desenhada). Pode ser acordado por um temporizador, um pino ou um sensor.
 tr-power.c2.viz.unit	mA (ESP32, aprox.)
@@ -1321,11 +1321,11 @@ tr-power.c6.viz.items.0.l	Wi-Fi
 tr-power.c6.viz.items.1.l	BLE
 tr-power.c6.viz.items.2.l	LoRa (mensagem curta)
 tr-power.c7.title	Escolher a química da bateria
-tr-power.c7.text	As células de iões de lítio dão 3.0–4.2 V e são recarregáveis; as LiFePO4 são mais seguras, com 3.2 V nominais; o lítio primário (como as AA de lítio ou as Li-SOCl₂) serve para anos sem recarregar, mesmo ao frio.
+tr-power.c7.text	As células de iões de lítio dão 3,0–4,2 V e são recarregáveis; as LiFePO4 são mais seguras, com 3,2 V nominais; o lítio primário (como as AA de lítio ou as Li-SOCl₂) serve para anos sem recarregar, mesmo ao frio.
 tr-power.c7.viz.items.0.a	Li-ion 18650
-tr-power.c7.viz.items.0.b	recarregável, ~3,000 mAh
+tr-power.c7.viz.items.0.b	recarregável, ~3000 mAh
 tr-power.c7.viz.items.1.a	LiFePO4
-tr-power.c7.viz.items.1.b	mais segura, 3.2 V
+tr-power.c7.viz.items.1.b	mais segura, 3,2 V
 tr-power.c7.viz.items.2.a	Li-SOCl₂
 tr-power.c7.viz.items.2.b	anos, não recarregável
 tr-power.c7.viz.items.3.a	AA alcalina
@@ -1461,7 +1461,7 @@ tr-scope.c1.viz.items.2.b	o que inicia o traço
 tr-scope.c1.viz.items.3.a	sonda ×10
 tr-scope.c1.viz.items.3.b	atenuação
 tr-scope.c2.title	Trigger
-tr-scope.c2.text	O trigger diz ao osciloscópio quando começar a desenhar, por exemplo quando a tensão passa 1.5 V a subir. Sem ele, um sinal repetitivo desliza e fica desfocado.
+tr-scope.c2.text	O trigger diz ao osciloscópio quando começar a desenhar, por exemplo quando a tensão passa 1,5 V a subir. Sem ele, um sinal repetitivo desliza e fica desfocado.
 tr-scope.c2.viz.steps.0	Sinal passa o nível de trigger
 tr-scope.c2.viz.steps.1	Osciloscópio começa a desenhar
 tr-scope.c2.viz.steps.2	Imagem estável a cada varrimento
@@ -1527,3 +1527,246 @@ tr-noise.c0.title	Condensadores de desacoplamento
 tr-noise.c0.text	Todos os chips precisam de um pequeno condensador (normalmente 100 nF) mesmo ao lado dos pinos de alimentação. Quando o chip puxa corrente de repente, o condensador fornece-a localmente, evitando quedas na linha de alimentação.
 tr-noise.c0.viz.steps.0	O chip comuta
 tr-noise.c0.viz.steps.1	Pedido súbito de corrente
+tr-noise.c0.viz.steps.2	Os 100 nF ao lado fornecem
+tr-noise.c0.viz.steps.3	A linha mantém-se estável
+tr-noise.c1.title	Capacidade de reserva
+tr-noise.c1.text	Além dos pequenos condensadores de desacoplamento, junta um eletrolítico ou cerâmico maior (10–470 µF) onde a alimentação entra na placa e perto de motores ou rádios, para absorver quedas mais lentas.
+tr-noise.c1.viz.l.t	Desacoplamento 100 nF
+tr-noise.c1.viz.l.items.0	ao lado de cada chip
+tr-noise.c1.viz.l.items.1	picos rápidos
+tr-noise.c1.viz.r.t	Reserva 10–470 µF
+tr-noise.c1.viz.r.items.0	na entrada de alimentação
+tr-noise.c1.viz.r.items.1	quedas mais lentas
+tr-noise.c2.title	Malhas de terra
+tr-noise.c2.text	Se duas partes de um sistema estão ligadas à massa em pontos diferentes com potenciais diferentes, passa corrente pelos fios de massa, o que provoca zumbido no áudio ou erros nos sensores.
+tr-noise.c2.viz.items.0.w	massa em dois pontos distantes
+tr-noise.c2.viz.items.0.r	um único ponto de massa
+tr-noise.c2.viz.items.1.w	zumbido no áudio
+tr-noise.c2.viz.items.1.r	quebrar a malha com isolamento
+tr-noise.c3.title	Massa em estrela
+tr-noise.c3.text	Leva as massas das partes ruidosas (motores, potência) e das partes sensíveis (sensores) separadamente até um único ponto, para que as correntes ruidosas não passem pelos caminhos de massa sensíveis.
+tr-noise.c3.viz.root	Ponto de massa em estrela
+tr-noise.c3.viz.items.0	Massa do driver do motor
+tr-noise.c3.viz.items.1	Massa do microcontrolador
+tr-noise.c3.viz.items.2	Massa do sensor
+tr-noise.c4.title	Cabos de sensores compridos
+tr-noise.c4.text	Os fios compridos funcionam como antenas. Em distâncias longas, usa pares entrançados, cabo blindado, sinais de impedância mais baixa, ou sinais digitais e diferenciais.
+tr-noise.c4.viz.items.0	Par entrançado
+tr-noise.c4.viz.items.1	Cabo blindado, malha à massa numa só ponta
+tr-noise.c4.viz.items.2	Sinais digitais ou diferenciais
+tr-noise.c4.viz.items.3	Filtro na entrada
+tr-noise.c5.title	Pull-ups e entradas a flutuar
+tr-noise.c5.text	Uma entrada desligada apanha ruído e lê valores aleatórios, podendo até aumentar o consumo. Define sempre o seu nível com uma pull-up ou uma pull-down.
+tr-noise.c5.viz.items.0.w	entrada não usada a flutuar
+tr-noise.c5.viz.items.0.r	ativa a pull-up ou a pull-down
+tr-noise.c5.viz.items.1.w	entrada do botão aleatória
+tr-noise.c5.viz.items.1.r	junta uma pull-up
+tr-noise.c6.title	Filtragem por software
+tr-noise.c6.text	Mesmo com um bom hardware, as leituras podem oscilar. Os filtros de mediana eliminam picos; as médias móveis suavizam o ruído; a histerese impede que os limiares fiquem a piscar.
+tr-noise.c6.viz.items.0.a	mediana
+tr-noise.c6.viz.items.0.b	elimina picos
+tr-noise.c6.viz.items.1.a	média móvel
+tr-noise.c6.viz.items.1.b	suaviza o ruído
+tr-noise.c6.viz.items.2.a	histerese
+tr-noise.c6.viz.items.2.b	limiares liga/desliga estáveis
+tr-noise.c7.title	Histerese
+tr-noise.c7.text	Um termóstato regulado para 20 °C estaria sempre a ligar e a desligar à volta dos 20. Com histerese, liga aos 19,5 e desliga aos 20,5. Os termóstatos do ESPHome e do Home Assistant suportam isto.
+tr-noise.c7.viz.unit	°C
+tr-noise.c7.viz.items.0.l	liga o aquecimento
+tr-noise.c7.viz.items.1.l	desliga o aquecimento
+tr-noise.c8.title	Ruído de comutação
+tr-noise.c8.text	Os conversores buck e os motores criam flancos rápidos que irradiam ruído. Mantém as suas malhas pequenas, põe os condensadores de entrada perto e afasta-os dos circuitos analógicos.
+tr-noise.c8.viz.items.0	Malhas de comutação pequenas
+tr-noise.c8.viz.items.1	Condensadores de entrada perto
+tr-noise.c8.viz.items.2	Circuitos analógicos longe
+tr-noise.c8.viz.items.3	Plano de massa contínuo
+tr-noise.c9.title	CEM
+tr-noise.c9.text	Os produtos comerciais têm de passar testes de compatibilidade eletromagnética (CEM): não podem emitir demasiada interferência nem ser perturbados por ela. A marcação CE na Europa abrange isto.
+tr-noise.c9.viz.l.t	Emissões
+tr-noise.c9.viz.l.items.0	não perturbar os outros
+tr-noise.c9.viz.l.items.1	rádio, TV
+tr-noise.c9.viz.r.t	Imunidade
+tr-noise.c9.viz.r.items.0	resistir a interferências
+tr-noise.c9.viz.r.items.1	estática, sobretensões, rádios perto
+tr-displays.title	Ecrãs e LEDs
+tr-displays.summary	Acender coisas, de um LED a um ecrã.
+tr-displays.q0.q	Quanta corrente podem puxar 100 LEDs WS2812B em branco total?
+tr-displays.q0.o0	0,6 A
+tr-displays.q0.o1	6 A
+tr-displays.q0.o2	60 A
+tr-displays.q0.x	100 × 60 mA = 6 A.
+tr-displays.q1.q	Que ecrã mantém a imagem sem energia?
+tr-displays.q1.o0	OLED
+tr-displays.q1.o1	LCD
+tr-displays.q1.o2	E-paper
+tr-displays.q1.x	O e-paper é biestável.
+tr-displays.q2.q	Luz vermelha mais luz verde parece…
+tr-displays.q2.o0	Azul
+tr-displays.q2.o1	Amarela
+tr-displays.q2.o2	Branca
+tr-displays.q2.x	Mistura aditiva de cores.
+tr-displays.c0.title	Brilho e corrente dos LEDs
+tr-displays.c0.text	O brilho de um LED depende da corrente, por isso os LEDs são alimentados com uma resistência ou um driver de corrente constante, nunca diretamente de uma fonte de tensão.
+tr-displays.c0.viz.steps.0	Tensão de alimentação
+tr-displays.c0.viz.steps.1	Resistência ou driver de corrente
+tr-displays.c0.viz.steps.2	LED à corrente nominal
+tr-displays.c0.viz.steps.3	Brilho estável
+tr-displays.c1.title	LEDs endereçáveis
+tr-displays.c1.text	As fitas WS2812B ("NeoPixel") têm um controlador minúsculo em cada LED. Um único fio de dados define a cor de cada LED individualmente, perfeito para efeitos controlados por um ESP32.
+tr-displays.c1.viz.steps.0	Pino de dados do ESP32
+tr-displays.c1.viz.steps.1	LED 1 fica com a sua cor
+tr-displays.c1.viz.steps.2	Passa o resto adiante
+tr-displays.c1.viz.steps.3	LED 2, LED 3…
+tr-displays.c2.title	Alimentar fitas de LEDs
+tr-displays.c2.text	Cada WS2812B pode puxar cerca de 60 mA em branco total. As fitas compridas precisam de fios grossos e de alimentação injetada em vários pontos.
+tr-displays.c2.example.0	5 m × 60 LEDs/m
+tr-displays.c2.example.1	300 × 0,06
+tr-displays.c2.example.2	≈ 18 A em branco total: fonte de 5 V grande
+tr-displays.c2.viz.f	I ≈ LEDs × 60 mA
+tr-displays.c2.viz.items.0.s	60 LEDs
+tr-displays.c2.viz.items.0.m	um metro
+tr-displays.c2.viz.items.1.s	≈ 3,6 A
+tr-displays.c2.viz.items.1.m	em branco total, 5 V
+tr-displays.c3.title	Converter o nível dos dados
+tr-displays.c3.text	As fitas WS2812B a 5 V podem não ler bem um sinal de dados de 3,3 V vindo de um ESP32. Um conversor de nível simples (como um 74AHCT125) ou um primeiro LED sacrificado resolve o tremeluzir.
+tr-displays.c3.viz.items.0.w	cores aleatórias e tremeluzir
+tr-displays.c3.viz.items.0.r	conversor de nível na linha de dados
+tr-displays.c3.viz.items.1.w	fio de dados comprido
+tr-displays.c3.viz.items.1.r	junta uma resistência de 330 Ω e encurta-o
+tr-displays.c4.title	LCDs de caracteres
+tr-displays.c4.text	O clássico LCD 16×2 mostra duas linhas de texto. Com um módulo I²C, só precisa de quatro fios.
+tr-displays.c4.viz.items.0.a	LCD 16×2
+tr-displays.c4.viz.items.0.b	2 linhas de 16 caracteres
+tr-displays.c4.viz.items.1.a	módulo I²C
+tr-displays.c4.viz.items.1.b	4 fios
+tr-displays.c4.viz.items.2.a	retroiluminação
+tr-displays.c4.viz.items.2.b	ajustável
+tr-displays.c5.title	Ecrãs OLED
+tr-displays.c5.text	Os pequenos ecrãs OLED (como o SSD1306 de 0,96", 128×64) dão gráficos nítidos sem retroiluminação. Cada píxel emite luz, por isso o preto não gasta energia. As imagens estáticas podem ficar marcadas com o tempo.
+tr-displays.c5.viz.l.t	OLED
+tr-displays.c5.viz.l.items.0	pretos profundos
+tr-displays.c5.viz.l.items.1	pequenos
+tr-displays.c5.viz.l.items.2	podem ficar marcados
+tr-displays.c5.viz.r.t	LCD/TFT
+tr-displays.c5.viz.r.items.0	retroiluminados
+tr-displays.c5.viz.r.items.1	maiores e mais baratos
+tr-displays.c5.viz.r.items.2	a cores
+tr-displays.c6.title	E-paper
+tr-displays.c6.text	Os ecrãs de e-paper mantêm a imagem sem gastar energia nenhuma, como um Kindle. Atualizam devagar, mas são perfeitos para painéis a bateria atualizados de poucos em poucos minutos.
+tr-displays.c6.viz.l.t	E-paper
+tr-displays.c6.viz.l.items.0	sem energia para manter a imagem
+tr-displays.c6.viz.l.items.1	atualização lenta
+tr-displays.c6.viz.l.items.2	legível ao sol
+tr-displays.c6.viz.r.t	TFT
+tr-displays.c6.viz.r.items.0	rápido e colorido
+tr-displays.c6.viz.r.items.1	precisa de energia constante
+tr-displays.c7.title	Multiplexagem
+tr-displays.c7.text	Para controlar muitos LEDs com poucos pinos, acende-os uma linha de cada vez, muito depressa. A persistência da visão faz o ecrã parecer estável.
+tr-displays.c7.viz.steps.0	Acender a linha 1
+tr-displays.c7.viz.steps.1	Linha 2
+tr-displays.c7.viz.steps.2	Linha 3
+tr-displays.c7.viz.steps.3	Repetir centenas de vezes por segundo
+tr-displays.c8.title	Mistura de cores
+tr-displays.c8.text	Os LEDs RGB misturam luz vermelha, verde e azul. Vermelho + verde no máximo parece amarelo; as três no máximo dão branco.
+tr-displays.c8.viz.items.0.a	vermelho + verde
+tr-displays.c8.viz.items.0.b	amarelo
+tr-displays.c8.viz.items.1.a	verde + azul
+tr-displays.c8.viz.items.1.b	ciano
+tr-displays.c8.viz.items.2.a	vermelho + azul
+tr-displays.c8.viz.items.2.b	magenta
+tr-displays.c8.viz.items.3.a	as três
+tr-displays.c8.viz.items.3.b	branco
+tr-displays.c9.title	Ecrãs no ESPHome
+tr-displays.c9.text	O ESPHome suporta muitos ecrãs: mostra temperaturas, relógios ou estados do Home Assistant com umas poucas linhas de configuração e uma lambda para desenhar.
+tr-displays.c9.viz.items.0	OLED SSD1306
+tr-displays.c9.viz.items.1	TFT ILI9341
+tr-displays.c9.viz.items.2	E-paper Waveshare
+tr-displays.c9.viz.items.3	Fitas WS2812 via componente light
+tr-computer.title	Como funciona um computador
+tr-computer.summary	Dos transístores aos programas a correr.
+tr-computer.q0.q	Quais são as etapas do ciclo do CPU?
+tr-computer.q0.o0	Carregar, guardar, sair
+tr-computer.q0.o1	Buscar, descodificar, executar
+tr-computer.q0.o2	Ler, escrever, imprimir
+tr-computer.q0.x	O ciclo central de qualquer processador.
+tr-computer.q1.q	Porque é que os CPUs têm caches?
+tr-computer.q1.o0	Para guardar ficheiros
+tr-computer.q1.o1	Para manter os dados mais usados perto e rápidos
+tr-computer.q1.o2	Para arrefecer o chip
+tr-computer.q1.x	A RAM é lenta em comparação com o CPU.
+tr-computer.q2.q	Que conjunto de instruções é aberto e usado no ESP32-C3?
+tr-computer.q2.o0	x86
+tr-computer.q2.o1	ARM
+tr-computer.q2.o2	RISC-V
+tr-computer.q2.x	O RISC-V é open source.
+tr-computer.c0.title	O ciclo do CPU
+tr-computer.c0.text	Um processador repete um ciclo milhares de milhões de vezes por segundo: vai buscar uma instrução à memória, descodifica-a, executa-a e passa à seguinte.
+tr-computer.c0.viz.steps.0	Buscar a instrução
+tr-computer.c0.viz.steps.1	Descodificá-la
+tr-computer.c0.viz.steps.2	Executá-la
+tr-computer.c0.viz.steps.3	Instrução seguinte
+tr-computer.c1.title	As instruções são simples
+tr-computer.c1.text	Cada instrução faz uma coisa minúscula: somar dois números, compará-los, carregar da memória, saltar para outra instrução. Tudo o que é complexo é construído com milhões destas.
+tr-computer.c1.viz.items.0	Carregar da memória
+tr-computer.c1.viz.items.1	Somar ou multiplicar
+tr-computer.c1.viz.items.2	Comparar
+tr-computer.c1.viz.items.3	Saltar se condição
+tr-computer.c1.viz.items.4	Guardar na memória
+tr-computer.c2.title	Registos e ALU
+tr-computer.c2.text	Os registos são posições de armazenamento minúsculas e ultrarrápidas dentro do CPU. A unidade aritmética e lógica (ALU) faz as contas e a lógica propriamente ditas sobre eles.
+tr-computer.c2.viz.steps.0	Carregar valores nos registos
+tr-computer.c2.viz.steps.1	A ALU soma-os
+tr-computer.c2.viz.steps.2	Resultado num registo
+tr-computer.c2.viz.steps.3	Guardar na memória
+tr-computer.c3.title	Compiladores
+tr-computer.c3.text	Escreves código numa linguagem como C++ ou Python; um compilador ou interpretador transforma-o em instruções de máquina que o CPU entende.
+tr-computer.c3.viz.steps.0	Código-fonte
+tr-computer.c3.viz.steps.1	Compilador
+tr-computer.c3.viz.steps.2	Código máquina
+tr-computer.c3.viz.steps.3	O CPU executa-o
+tr-computer.c4.title	Núcleos e threads
+tr-computer.c4.text	Os chips modernos têm vários núcleos, cada um deles um processador completo, a correr tarefas separadas ao mesmo tempo. O ESP32 tem dois; os portáteis têm 8 ou mais.
+tr-computer.c4.viz.unit	núcleos (típico)
+tr-computer.c4.viz.items.0.l	Arduino Uno
+tr-computer.c4.viz.items.1.l	ESP32
+tr-computer.c4.viz.items.2.l	Telemóvel
+tr-computer.c4.viz.items.3.l	Portátil
+tr-computer.c4.viz.items.4.l	Servidor
+tr-computer.c5.title	A frequência não é tudo
+tr-computer.c5.text	O desempenho depende das instruções por ciclo, do tamanho da cache, da velocidade da memória e do paralelismo, não só dos GHz. Um chip mais recente a 3 GHz pode ser muito mais rápido do que um mais antigo a 4 GHz.
+tr-computer.c5.viz.items.0	Instruções por ciclo
+tr-computer.c5.viz.items.1	Tamanho da cache
+tr-computer.c5.viz.items.2	Largura de banda da memória
+tr-computer.c5.viz.items.3	Número de núcleos
+tr-computer.c5.viz.items.4	Frequência de relógio
+tr-computer.c6.title	Caches
+tr-computer.c6.text	Ir buscar dados à RAM demora muito tempo, à escala do CPU. As caches guardam os dados usados recentemente perto do núcleo. A maioria dos programas reutiliza dados, por isso as caches acertam quase sempre.
+tr-computer.c6.viz.unit	tempo de acesso aproximado (ns)
+tr-computer.c6.viz.items.0.l	Cache L1
+tr-computer.c6.viz.items.1.l	Cache L2
+tr-computer.c6.viz.items.2.l	RAM
+tr-computer.c6.viz.items.3.l	SSD
+tr-computer.c7.title	Sistemas operativos
+tr-computer.c7.text	Um sistema operativo reparte o CPU, a memória e os dispositivos entre muitos programas, alternando entre eles milhares de vezes por segundo para que cada um pareça correr sem parar.
+tr-computer.c7.viz.root	Sistema operativo
+tr-computer.c7.viz.items.0	Agenda os programas
+tr-computer.c7.viz.items.1	Gere a memória
+tr-computer.c7.viz.items.2	Controla dispositivos
+tr-computer.c7.viz.items.3	Trata de ficheiros e rede
+tr-computer.c8.title	Arquiteturas
+tr-computer.c8.text	O x86 domina os PCs e os servidores; o ARM domina os telemóveis e está a chegar aos portáteis e aos centros de dados; o RISC-V é um conjunto de instruções aberto em crescimento nos microcontroladores, como o ESP32-C3.
+tr-computer.c8.viz.items.0.a	x86
+tr-computer.c8.viz.items.0.b	PCs e servidores
+tr-computer.c8.viz.items.1.a	ARM
+tr-computer.c8.viz.items.1.b	telemóveis, Macs da Apple, servidores
+tr-computer.c8.viz.items.2.a	RISC-V
+tr-computer.c8.viz.items.2.b	aberto, microcontroladores
+tr-computer.c8.viz.items.3.a	Xtensa
+tr-computer.c8.viz.items.3.b	ESP32 original
+tr-computer.c9.title	A lei de Moore
+tr-computer.c9.text	Em 1965, Gordon Moore observou que o número de transístores num chip duplicava mais ou menos a cada dois anos. A tendência manteve-se durante décadas, embora tenha abrandado à medida que os transístores se aproximam de tamanhos atómicos.
+tr-computer.c9.viz.events.0.l	Intel 4004, 2300 transístores
+tr-computer.c9.viz.events.1.l	Pentium, 3 milhões
+tr-computer.c9.viz.events.2.l	~mil milhões
+tr-computer.c9.viz.events.3.y	anos 2020
+tr-computer.c9.viz.events.3.l	50+ mil milhões

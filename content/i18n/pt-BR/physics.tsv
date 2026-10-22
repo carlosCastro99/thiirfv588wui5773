@@ -1,0 +1,1269 @@
+P.title	Física
+P.blurb	Energia, calor e ondas no dia a dia.
+ph-energy.title	Energia e calor
+ph-energy.summary	Para onde vai a energia, como o calor se move e por que as bombas de calor superam os aquecedores.
+ph-energy.q0.q	De que forma o calor do Sol chega principalmente até você?
+ph-energy.q0.o0	Condução
+ph-energy.q0.o1	Convecção
+ph-energy.q0.o2	Radiação
+ph-energy.q0.x	O espaço é quase vazio, então só a radiação consegue atravessá-lo.
+ph-energy.q1.q	Uma bomba de calor com COP de 3 consome 2 kWh de eletricidade. Quanto calor ela entrega?
+ph-energy.q1.o0	0,67 kWh
+ph-energy.q1.o1	2 kWh
+ph-energy.q1.o2	6 kWh
+ph-energy.q1.x	Calor entregue = COP × eletricidade consumida = 3 × 2 = 6 kWh.
+ph-energy.q2.q	Aquecer 2 kg de água em 10 °C exige cerca de…
+ph-energy.q2.o0	84 kJ
+ph-energy.q2.o1	8,4 kJ
+ph-energy.q2.o2	840 kJ
+ph-energy.q2.x	Q = 2 × 4186 × 10 ≈ 83,7 kJ.
+ph-energy.q3.q	Por que o gelo flutua?
+ph-energy.q3.o0	Porque é mais frio
+ph-energy.q3.o1	A água se expande ao congelar, então o gelo é menos denso
+ph-energy.q3.o2	Só por causa das bolhas de ar
+ph-energy.q3.x	O gelo é cerca de 9% menos denso que a água.
+ph-energy.q4.q	Como o suor resfria você?
+ph-energy.q4.o0	A água é fria
+ph-energy.q4.o1	A evaporação leva energia embora da pele
+ph-energy.q4.o2	O sal absorve calor
+ph-energy.q4.x	As moléculas mais rápidas escapam, levando calor junto.
+ph-energy.c0.title	A energia muda de forma
+ph-energy.c0.text	A energia nunca é criada nem destruída, apenas convertida. A energia química de uma pilha vira energia elétrica, que uma lâmpada transforma em luz e calor.\n\nA eficiência é a parcela útil. Uma lâmpada incandescente antiga convertia cerca de 5% em luz; um LED consegue várias vezes isso, por isso esquenta menos para o mesmo brilho.
+ph-energy.c0.sketch.0	química
+ph-energy.c0.sketch.1	elétrica
+ph-energy.c0.sketch.2	luz
+ph-energy.c0.sketch.3	calor
+ph-energy.c0.sketch.4	entrada = saída
+ph-energy.c1.title	Três formas de o calor se mover
+ph-energy.c1.text	Condução: o calor passa através do material em contato, da boca do fogão para o fundo da panela.\nConvecção: o fluido quente sobe e o frio desce, criando circuitos que agitam a água.\nRadiação: a luz infravermelha atravessa um espaço sem nenhum material, como o calor que você sente ao lado de uma fogueira.
+ph-energy.c1.sketch.0	condução
+ph-energy.c1.sketch.1	convecção
+ph-energy.c1.sketch.2	radiação
+ph-energy.c2.title	Bombas de calor movem calor
+ph-energy.c2.text	Uma bomba de calor não produz calor; ela o transporta. Um fluido refrigerante absorve calor do ar externo (até o ar frio tem algum), o compressor o comprime para que fique mais quente, e ele libera esse calor dentro de casa.\n\nComo a maior parte do calor vem de fora, 1 kWh de eletricidade pode entregar 3–4 kWh de calor. Essa razão é o COP.
+ph-energy.c2.sketch.0	compressor
+ph-energy.c2.sketch.1	fora: absorve
+ph-energy.c2.sketch.2	dentro: libera
+ph-energy.c2.sketch.3	entra 1 kWh
+ph-energy.c2.sketch.4	saem 3–4 kWh de calor
+ph-energy.c3.title	Calor específico
+ph-energy.c3.text	A energia para aquecer algo é massa × calor específico × aumento de temperatura. O calor específico da água é alto, cerca de 4186 J por kg por °C, e é por isso que ela demora a ferver e armazena calor tão bem.
+ph-energy.c3.formula	Q = m × c × ΔT
+ph-energy.c3.example.0	1 L de água de 20 a 100 °C
+ph-energy.c3.example.1	1 × 4186 × 80 = 335 kJ
+ph-energy.c3.example.2	≈ 0,093 kWh, uns 2 centavos de euro
+ph-energy.c3.sketch.0	1 L de água
+ph-energy.c3.sketch.1	20 → 100 °C
+ph-energy.c3.sketch.2	Q = 1 × 4186 × 80 ≈ 335 kJ
+ph-energy.c4.title	Formas de energia
+ph-energy.c4.text	A energia aparece em muitas formas: cinética (movimento), potencial (altura, molas), térmica (calor), química (combustível, comida), elétrica, radiante (luz) e nuclear. A física acompanha como ela passa de uma para outra.
+ph-energy.c4.viz.root	Energia
+ph-energy.c4.viz.items.0	Cinética e potencial
+ph-energy.c4.viz.items.1	Térmica
+ph-energy.c4.viz.items.2	Química
+ph-energy.c4.viz.items.3	Elétrica e radiante
+ph-energy.c4.viz.items.4	Nuclear
+ph-energy.c5.title	A energia dos alimentos
+ph-energy.c5.text	A energia dos alimentos é contada em quilocalorias (kcal), que aparecem nos rótulos como "Calorias". Uma kcal equivale a cerca de 4,2 kJ. Uma dieta diária de 2.000 kcal dá cerca de 2,3 kWh, mais ou menos uma lâmpada de 100 W acesa o dia todo.
+ph-energy.c5.viz.f	1 kcal ≈ 4,184 kJ
+ph-energy.c5.viz.items.0.s	2.000 kcal
+ph-energy.c5.viz.items.0.m	≈ 8,4 MJ
+ph-energy.c5.viz.items.1.s	8,4 MJ
+ph-energy.c5.viz.items.1.m	≈ 2,3 kWh
+ph-energy.c5.viz.items.2.s	potência média do corpo
+ph-energy.c5.viz.items.2.m	≈ 100 W
+ph-energy.c6.title	Dilatação térmica no dia a dia
+ph-energy.c6.text	A maioria das coisas se expande quando aquecida: os trilhos de trem têm folgas, os fios elétricos ficam mais caídos no verão, uma tampa de pote emperrada se solta sob água quente. A água é estranha: ela se expande ao congelar, e é por isso que o gelo flutua e os canos estouram.
+ph-energy.c6.viz.items.0	Trilhos e pontes precisam de juntas
+ph-energy.c6.viz.items.1	Fios elétricos cedem no verão
+ph-energy.c6.viz.items.2	Água quente solta tampas de pote
+ph-energy.c6.viz.items.3	Água congelando estoura canos
+ph-energy.c7.title	Isolamento e a garrafa térmica
+ph-energy.c7.text	Uma garrafa térmica bloqueia os três tipos de transferência de calor: o vácuo impede a condução e a convecção, e as paredes espelhadas refletem a radiação. É por isso que ela mantém o café quente ou as bebidas geladas por horas.
+ph-energy.c7.viz.items.0.a	vácuo
+ph-energy.c7.viz.items.0.b	sem condução nem convecção
+ph-energy.c7.viz.items.1.a	camada prateada
+ph-energy.c7.viz.items.1.b	reflete a radiação
+ph-energy.c7.viz.items.2.a	tampa
+ph-energy.c7.viz.items.2.b	bloqueia a evaporação
+ph-energy.c8.title	A evaporação resfria
+ph-energy.c8.text	Quando a água evapora, as moléculas mais rápidas escapam e levam energia com elas, então o que sobra esfria. O suor, os potes de barro e as torres de resfriamento usam esse efeito.
+ph-energy.c8.viz.steps.0	Suor na pele
+ph-energy.c8.viz.steps.1	Moléculas rápidas evaporam
+ph-energy.c8.viz.steps.2	Elas levam o calor embora
+ph-energy.c8.viz.steps.3	A pele esfria
+ph-energy.c9.title	De onde vem a energia da Terra
+ph-energy.c9.text	Quase toda a energia que usamos vem, em última análise, do Sol: comida, vento, hidrelétrica, solar e até os combustíveis fósseis (luz solar antiga armazenada por plantas). As exceções são a energia nuclear, a geotérmica e a das marés.
+ph-energy.c9.viz.l.t	Vem do Sol
+ph-energy.c9.viz.l.items.0	comida
+ph-energy.c9.viz.l.items.1	vento, hídrica, solar
+ph-energy.c9.viz.l.items.2	combustíveis fósseis
+ph-energy.c9.viz.r.t	Não vem do Sol
+ph-energy.c9.viz.r.items.0	nuclear
+ph-energy.c9.viz.r.items.1	geotérmica
+ph-energy.c9.viz.r.items.2	marés (Lua)
+ph-waves.title	Ondas, som e luz
+ph-waves.summary	Uma única equação que explica cordas de violão, Wi-Fi e tempestades.
+ph-waves.q0.q	Um tom de 343 Hz no ar (343 m/s) tem comprimento de onda de…
+ph-waves.q0.o0	1 m
+ph-waves.q0.o1	343 m
+ph-waves.q0.o2	1 cm
+ph-waves.q0.x	λ = v ÷ f = 343 ÷ 343 = 1 m.
+ph-waves.q1.q	O trovão chega 9 segundos depois do relâmpago. A que distância caiu o raio?
+ph-waves.q1.o0	Cerca de 9 km
+ph-waves.q1.o1	Cerca de 3 km
+ph-waves.q1.o2	Cerca de 1 km
+ph-waves.q1.x	O som percorre cerca de 1 km a cada 3 s, então 9 s ≈ 3 km.
+ph-waves.q2.q	Qual carrega mais energia por fóton?
+ph-waves.q2.o0	Rádio
+ph-waves.q2.o1	Luz visível
+ph-waves.q2.o2	Raios X
+ph-waves.q2.x	Comprimento de onda menor significa frequência maior e mais energia por fóton.
+ph-waves.q3.q	Fones com cancelamento de ruído funcionam…
+ph-waves.q3.o0	Bloqueando todo o ar
+ph-waves.q3.o1	Tocando um som que interfere destrutivamente com o ruído
+ph-waves.q3.o2	Baixando o volume
+ph-waves.q3.x	Ondas invertidas se cancelam.
+ph-waves.q4.q	Por que uma sirene soa mais aguda quando se aproxima?
+ph-waves.q4.o0	Ela fica mais alta
+ph-waves.q4.o1	Suas ondas ficam comprimidas (efeito Doppler)
+ph-waves.q4.o2	O motorista a altera
+ph-waves.q4.x	Comprimento de onda menor significa som mais agudo.
+ph-waves.c0.title	Anatomia de uma onda
+ph-waves.c0.text	Uma onda transporta energia sem transportar matéria. Seu comprimento de onda (λ) é a distância de uma crista até a próxima. Sua amplitude é a altura dela, que define o volume ou o brilho. Sua frequência é quantas cristas passam por segundo, medida em hertz (Hz).
+ph-waves.c0.sketch.0	comprimento de onda λ
+ph-waves.c0.sketch.1	amplitude ↕
+ph-waves.c0.sketch.2	frequência = ondas por segundo (Hz)
+ph-waves.c1.title	Experimente: qual o tamanho de um som?
+ph-waves.c1.text	A velocidade é igual à frequência vezes o comprimento de onda. O som viaja a cerca de 343 m/s no ar, então as notas graves têm ondas longas e as agudas, ondas curtas.
+ph-waves.c1.formula	v = f × λ
+ph-waves.c2.title	A que distância está a tempestade?
+ph-waves.c2.text	A luz do relâmpago chega até você quase instantaneamente; ela percorre cerca de 300.000 km por segundo. O som se arrasta a cerca de 343 m/s, mais ou menos 1 km a cada 3 segundos.\n\nConte os segundos entre o clarão e o trovão e divida por 3 para obter a distância em quilômetros.
+ph-waves.c2.sketch.0	luz ≈ instantânea
+ph-waves.c2.sketch.1	som: 1 km / 3 s
+ph-waves.c2.sketch.2	segundos ÷ 3 = km
+ph-waves.c3.title	O espectro eletromagnético
+ph-waves.c3.text	Rádio, micro-ondas, infravermelho, luz visível, ultravioleta e raios X são todos a mesma coisa: ondas eletromagnéticas, todas se movendo à velocidade da luz. Só o comprimento de onda muda.\n\nOndas mais curtas carregam mais energia por fóton. É por isso que o UV pode queimar a pele e os raios X a atravessam, enquanto o rádio é inofensivo. O Wi-Fi de 2,4 GHz tem comprimento de onda de cerca de 12,5 cm.
+ph-waves.c3.sketch.0	rádio
+ph-waves.c3.sketch.1	micro
+ph-waves.c3.sketch.2	IV
+ph-waves.c3.sketch.3	luz
+ph-waves.c3.sketch.4	UV
+ph-waves.c3.sketch.5	raio X
+ph-waves.c3.sketch.6	gama
+ph-waves.c3.sketch.7	Wi-Fi 2,4 GHz ≈ 12,5 cm
+ph-waves.c3.sketch.8	ondas mais longas
+ph-waves.c3.sketch.9	mais energia
+ph-waves.c4.title	Transversais e longitudinais
+ph-waves.c4.text	Nas ondas transversais, o meio se move em ângulo reto com a onda (ondulações na água, luz). Nas ondas longitudinais, ele vai e volta na direção de propagação (som).
+ph-waves.c4.viz.l.t	Transversal
+ph-waves.c4.viz.l.items.0	de lado a lado
+ph-waves.c4.viz.l.items.1	luz
+ph-waves.c4.viz.l.items.2	ondas numa corda
+ph-waves.c4.viz.r.t	Longitudinal
+ph-waves.c4.viz.r.items.0	comprime e estica
+ph-waves.c4.viz.r.items.1	som
+ph-waves.c4.viz.r.items.2	mola maluca
+ph-waves.c5.title	Reflexão e eco
+ph-waves.c5.text	As ondas ricocheteiam nas superfícies. Um eco é um som refletido; o sonar e a ultrassonografia cronometram ecos para medir distâncias e enxergar o interior das coisas.
+ph-waves.c5.viz.steps.0	Pulso emitido
+ph-waves.c5.viz.steps.1	Bate numa superfície
+ph-waves.c5.viz.steps.2	O eco volta
+ph-waves.c5.viz.steps.3	O tempo dá a distância
+ph-waves.c6.title	Interferência
+ph-waves.c6.text	Quando duas ondas se encontram, elas se somam: crista com crista forma ondas maiores, crista com vale se cancela. Os fones com cancelamento de ruído tocam uma cópia invertida do ruído externo para anulá-lo.
+ph-waves.c6.viz.l.t	Construtiva
+ph-waves.c6.viz.l.items.0	em fase
+ph-waves.c6.viz.l.items.1	ondas se somam
+ph-waves.c6.viz.l.items.2	mais alto
+ph-waves.c6.viz.r.t	Destrutiva
+ph-waves.c6.viz.r.items.0	fora de fase
+ph-waves.c6.viz.r.items.1	ondas se anulam
+ph-waves.c6.viz.r.items.2	mais baixo
+ph-waves.c7.title	Difração
+ph-waves.c7.text	As ondas contornam obstáculos e se espalham ao passar por aberturas de tamanho comparável ao seu comprimento de onda. É por isso que você consegue ouvir alguém atrás de uma esquina, mas não vê-lo: as ondas sonoras medem metros, as de luz menos de um micrômetro.
+ph-waves.c7.viz.items.0.a	onda sonora
+ph-waves.c7.viz.items.0.b	~0,02–17 m, contorna esquinas
+ph-waves.c7.viz.items.1.a	onda de luz
+ph-waves.c7.viz.items.1.b	~0,0005 mm, quase não curva
+ph-waves.c8.title	Ressonância
+ph-waves.c8.text	Todo objeto tem frequências naturais. Empurre-o no ritmo certo e a vibração cresce, como ao empurrar um balanço. Os instrumentos musicais usam a ressonância; os engenheiros a evitam em pontes e máquinas.
+ph-waves.c8.viz.items.0	Balanços e pêndulos
+ph-waves.c8.viz.items.1	Corpo do violão
+ph-waves.c8.viz.items.2	Taça quebrada pela voz
+ph-waves.c8.viz.items.3	Pontes e máquinas devem evitá-la
+ph-waves.c9.title	O efeito Doppler
+ph-waves.c9.text	Uma fonte em movimento comprime as ondas à sua frente e as estica atrás. A sirene de uma ambulância soa mais aguda quando se aproxima e mais grave quando se afasta. Os radares da polícia e os meteorológicos usam o mesmo efeito.
+ph-waves.c9.viz.l.t	Aproximando
+ph-waves.c9.viz.l.items.0	ondas comprimidas
+ph-waves.c9.viz.l.items.1	mais agudo
+ph-waves.c9.viz.r.t	Afastando
+ph-waves.c9.viz.r.items.0	ondas esticadas
+ph-waves.c9.viz.r.items.1	mais grave
+ph-motion.title	Descrevendo o movimento
+ph-motion.summary	Rapidez, velocidade e aceleração.
+ph-motion.q0.q	90 km/h em m/s são…
+ph-motion.q0.o0	9 m/s
+ph-motion.q0.o1	25 m/s
+ph-motion.q0.o2	324 m/s
+ph-motion.q0.x	90 ÷ 3,6 = 25 m/s.
+ph-motion.q1.q	Se você dobrar a velocidade, a distância de frenagem fica cerca de…
+ph-motion.q1.o0	O dobro
+ph-motion.q1.o1	Quatro vezes maior
+ph-motion.q1.o2	Igual
+ph-motion.q1.x	Ela cresce com o quadrado da velocidade.
+ph-motion.q2.q	Sem ar, um martelo e uma pena caem…
+ph-motion.q2.o0	O martelo primeiro
+ph-motion.q2.o1	Ao mesmo tempo
+ph-motion.q2.o2	A pena primeiro
+ph-motion.q2.x	Isso foi demonstrado na Lua em 1971.
+ph-motion.c0.title	Rapidez
+ph-motion.c0.text	A rapidez (velocidade escalar) é a distância dividida pelo tempo. Um carro que percorre 120 km em 1,5 hora faz uma média de 80 km/h. Para converter km/h em m/s, divida por 3,6.
+ph-motion.c0.viz.f	v = d ÷ t
+ph-motion.c0.viz.items.0.s	d
+ph-motion.c0.viz.items.0.m	distância
+ph-motion.c0.viz.items.1.s	t
+ph-motion.c0.viz.items.1.m	tempo
+ph-motion.c0.viz.items.2.s	km/h ÷ 3,6
+ph-motion.c0.viz.items.2.m	= m/s
+ph-motion.c1.title	Rapidez vs. velocidade
+ph-motion.c1.text	A velocidade (vetorial) é a rapidez com uma direção. Um carro contornando uma rotatória com rapidez constante tem velocidade variável, porque sua direção muda o tempo todo.
+ph-motion.c1.viz.l.t	Rapidez
+ph-motion.c1.viz.l.items.0	quão rápido
+ph-motion.c1.viz.l.items.1	50 km/h
+ph-motion.c1.viz.r.t	Velocidade
+ph-motion.c1.viz.r.items.0	quão rápido e para onde
+ph-motion.c1.viz.r.items.1	50 km/h para o norte
+ph-motion.c2.title	Aceleração
+ph-motion.c2.text	A aceleração mede a rapidez com que a velocidade muda. Um carro que vai de 0 a 100 km/h (27,8 m/s) em 8 segundos acelera a cerca de 3,5 m/s².
+ph-motion.c2.example.0	0 a 27,8 m/s em 8 s
+ph-motion.c2.example.1	27,8 ÷ 8
+ph-motion.c2.example.2	≈ 3,5 m/s²
+ph-motion.c2.viz.f	a = Δv ÷ t
+ph-motion.c2.viz.items.0.s	Δv
+ph-motion.c2.viz.items.0.m	variação da velocidade
+ph-motion.c2.viz.items.1.s	t
+ph-motion.c2.viz.items.1.m	tempo gasto
+ph-motion.c3.title	Queda livre
+ph-motion.c3.text	Perto da superfície da Terra, objetos em queda ganham cerca de 9,81 m/s de velocidade a cada segundo, se a resistência do ar for desprezível. Depois de 1 s você está caindo a cerca de 35 km/h; depois de 3 s, a mais de 100 km/h.
+ph-motion.c3.viz.unit	velocidade em km/h
+ph-motion.c3.viz.items.0.l	1 s
+ph-motion.c3.viz.items.1.l	2 s
+ph-motion.c3.viz.items.2.l	3 s
+ph-motion.c4.title	A grande sacada de Galileu
+ph-motion.c4.text	Sem resistência do ar, objetos pesados e leves caem no mesmo ritmo. Astronautas na Lua mostraram isso em 1971 soltando um martelo e uma pena: os dois chegaram ao chão juntos.
+ph-motion.c4.viz.l.t	Com ar
+ph-motion.c4.viz.l.items.0	a pena flutua devagar
+ph-motion.c4.viz.l.items.1	a resistência do ar domina
+ph-motion.c4.viz.r.t	No vácuo
+ph-motion.c4.viz.r.items.0	martelo e pena caem juntos
+ph-motion.c5.title	Velocidade terminal
+ph-motion.c5.text	À medida que um objeto em queda ganha velocidade, a resistência do ar cresce até igualar o peso. Aí ele para de acelerar. Um paraquedista chega a cerca de 200 km/h de barriga para baixo; o paraquedas reduz isso para uns 20 km/h.
+ph-motion.c5.viz.unit	km/h (aprox.)
+ph-motion.c5.viz.items.0.l	Gota de chuva
+ph-motion.c5.viz.items.1.l	Paraquedas
+ph-motion.c5.viz.items.2.l	Paraquedista de barriga
+ph-motion.c5.viz.items.3.l	Paraquedista de cabeça
+ph-motion.c6.title	Distância de parada
+ph-motion.c6.text	A distância de parada é a distância de reação mais a distância de frenagem. A distância de frenagem cresce com o quadrado da velocidade: dobre a velocidade e ela fica quatro vezes maior.
+ph-motion.c6.example.0	50 km/h vs. 100 km/h
+ph-motion.c6.example.1	13,9² ÷ 14 vs. 27,8² ÷ 14
+ph-motion.c6.example.2	≈ 14 m vs. 55 m de frenagem
+ph-motion.c6.viz.f	d frenagem = v² ÷ (2 × a)
+ph-motion.c6.viz.items.0.s	v
+ph-motion.c6.viz.items.0.m	velocidade (m/s)
+ph-motion.c6.viz.items.1.s	a
+ph-motion.c6.viz.items.1.m	desaceleração (~7 m/s² pista seca)
+ph-motion.c7.title	Tempo de reação
+ph-motion.c7.text	Um motorista típico leva cerca de 1 segundo para reagir. A 120 km/h, o carro percorre mais de 33 m antes mesmo de os freios começarem a agir. Usar o celular ao volante aumenta muito esse tempo.
+ph-motion.c7.viz.unit	metros até começar a frear (reação de 1 s)
+ph-motion.c7.viz.items.0.l	50 km/h
+ph-motion.c7.viz.items.1.l	90 km/h
+ph-motion.c7.viz.items.2.l	120 km/h
+ph-motion.c8.title	Movimento relativo
+ph-motion.c8.text	O movimento depende do observador. Num trem a 200 km/h, uma xícara de café está parada em relação a você, mas se move rápido em relação ao chão. Não existe "repouso" absoluto.
+ph-motion.c8.viz.items.0.a	xícara vs. passageiro
+ph-motion.c8.viz.items.0.b	0 km/h
+ph-motion.c8.viz.items.1.a	xícara vs. chão
+ph-motion.c8.viz.items.1.b	200 km/h
+ph-motion.c8.viz.items.2.a	Terra vs. Sol
+ph-motion.c8.viz.items.2.b	~107.000 km/h
+ph-motion.c9.title	Gráficos do movimento
+ph-motion.c9.text	Num gráfico distância–tempo, a inclinação é a velocidade. Num gráfico velocidade–tempo, a inclinação é a aceleração e a área sob a curva é a distância percorrida.
+ph-motion.c9.viz.items.0.a	inclinação distância–tempo
+ph-motion.c9.viz.items.0.b	velocidade
+ph-motion.c9.viz.items.1.a	inclinação velocidade–tempo
+ph-motion.c9.viz.items.1.b	aceleração
+ph-motion.c9.viz.items.2.a	área sob v–t
+ph-motion.c9.viz.items.2.b	distância
+ph-newton.title	As leis de Newton
+ph-newton.summary	As três regras por trás de todo empurrão e puxão.
+ph-newton.q0.q	Um carro de 1.000 kg com uma força resultante de 2.000 N acelera a…
+ph-newton.q0.o0	0,5 m/s²
+ph-newton.q0.o1	2 m/s²
+ph-newton.q0.o2	2.000 m/s²
+ph-newton.q0.x	a = F ÷ m.
+ph-newton.q1.q	Por que os airbags reduzem as lesões?
+ph-newton.q1.o0	Porque são macios
+ph-newton.q1.o1	Eles distribuem a parada por mais tempo, reduzindo a força máxima
+ph-newton.q1.o2	Eles acrescentam massa
+ph-newton.q1.x	Mais tempo de parada significa menos força.
+ph-newton.q2.q	Qual lei explica a propulsão dos foguetes?
+ph-newton.q2.o0	A primeira
+ph-newton.q2.o1	A segunda
+ph-newton.q2.o2	A terceira
+ph-newton.q2.x	Ação e reação.
+ph-newton.c0.title	Primeira lei: inércia
+ph-newton.c0.text	Um objeto continua fazendo o que está fazendo, parado ou em linha reta com velocidade constante, a menos que uma força resultante atue sobre ele. É por isso que os passageiros são jogados para a frente quando o ônibus freia.
+ph-newton.c0.viz.steps.0	O ônibus freia
+ph-newton.c0.viz.steps.1	Seu corpo continua em movimento
+ph-newton.c0.viz.steps.2	O cinto aplica a força
+ph-newton.c0.viz.steps.3	Você para junto com o ônibus
+ph-newton.c1.title	Segunda lei: F = m × a
+ph-newton.c1.text	A aceleração de um objeto é proporcional à força sobre ele e inversamente proporcional à sua massa. Empurre com o dobro da força e ele acelera o dobro; dobre a massa e a aceleração cai pela metade.
+ph-newton.c1.example.0	Carro de 1.500 kg, força resultante de 3.000 N
+ph-newton.c1.example.1	3.000 ÷ 1.500
+ph-newton.c1.example.2	a = 2 m/s²
+ph-newton.c1.viz.f	F = m × a
+ph-newton.c1.viz.items.0.s	F
+ph-newton.c1.viz.items.0.m	força resultante (N)
+ph-newton.c1.viz.items.1.s	m
+ph-newton.c1.viz.items.1.m	massa (kg)
+ph-newton.c1.viz.items.2.s	a
+ph-newton.c1.viz.items.2.m	aceleração (m/s²)
+ph-newton.c2.title	Terceira lei: ação e reação
+ph-newton.c2.text	Toda força tem uma parceira igual e oposta. Quando você empurra uma parede, a parede empurra você de volta. Os foguetes empurram gás para trás; o gás empurra o foguete para a frente.
+ph-newton.c2.viz.l.t	Foguete empurra o gás
+ph-newton.c2.viz.l.items.0	para baixo e para trás
+ph-newton.c2.viz.r.t	Gás empurra o foguete
+ph-newton.c2.viz.r.items.0	para cima e para a frente
+ph-newton.c3.title	Massa e peso, de novo
+ph-newton.c3.text	A massa (kg) é a quantidade de matéria e não muda. O peso é a força da gravidade sobre ela e depende de onde você está: na Lua, você pesaria cerca de um sexto.
+ph-newton.c3.viz.unit	peso de uma pessoa de 70 kg (N)
+ph-newton.c3.viz.items.0.l	Lua
+ph-newton.c3.viz.items.1.l	Marte
+ph-newton.c3.viz.items.2.l	Terra
+ph-newton.c3.viz.items.3.l	Júpiter
+ph-newton.c4.title	Cintos de segurança e airbags
+ph-newton.c4.text	Numa batida, seu corpo precisa perder a velocidade. Distribuir isso por mais tempo e mais distância significa uma força menor. Os cintos esticam um pouco e os airbags amortecem, reduzindo drasticamente a força máxima.
+ph-newton.c4.viz.f	F = m × Δv ÷ t
+ph-newton.c4.viz.items.0.s	tempo de parada t maior
+ph-newton.c4.viz.items.0.m	força F menor
+ph-newton.c5.title	Movimento circular
+ph-newton.c5.text	Mover-se em círculo exige uma força apontando para o centro (força centrípeta). Numa rotatória, ela vem do atrito dos pneus; para a Lua, da gravidade da Terra. Sem ela, os objetos saem em linha reta.
+ph-newton.c5.viz.f	F = m × v² ÷ r
+ph-newton.c5.viz.items.0.s	m
+ph-newton.c5.viz.items.0.m	massa
+ph-newton.c5.viz.items.1.s	v
+ph-newton.c5.viz.items.1.m	velocidade
+ph-newton.c5.viz.items.2.s	r
+ph-newton.c5.viz.items.2.m	raio da curva
+ph-newton.c6.title	"Força centrífuga"
+ph-newton.c6.text	Num carro fazendo uma curva, você se sente empurrado para fora. Na verdade, seu corpo está tentando seguir reto (inércia) enquanto o carro faz a curva debaixo de você. A "força centrífuga" é como isso parece visto de dentro do referencial que gira.
+ph-newton.c6.viz.items.0.w	uma força joga você para fora
+ph-newton.c6.viz.items.0.r	seu corpo segue reto enquanto o carro vira
+ph-newton.c7.title	O atrito e Newton
+ph-newton.c7.text	Na Terra, as coisas desaceleram por causa do atrito e da resistência do ar, não porque o movimento pare naturalmente. No espaço, um objeto que recebe um empurrãozinho continua flutuando para sempre.
+ph-newton.c7.viz.l.t	Na Terra
+ph-newton.c7.viz.l.items.0	atrito e ar freiam as coisas
+ph-newton.c7.viz.l.items.1	o movimento parece exigir um empurrão
+ph-newton.c7.viz.r.t	No espaço
+ph-newton.c7.viz.r.items.0	quase sem atrito
+ph-newton.c7.viz.r.items.1	o movimento continua
+ph-newton.c8.title	As leis de Newton no esporte
+ph-newton.c8.text	Os jogadores de futebol empurram o chão para trás para acelerar para a frente; jogadores mais pesados são mais difíceis de parar; um chute bem executado transmite mais força com um contato mais longo.
+ph-newton.c8.viz.items.0	Empurrar o chão para correr
+ph-newton.c8.viz.items.1	Corpo mais pesado, mais inércia
+ph-newton.c8.viz.items.2	Acompanhar o chute prolonga o contato
+ph-newton.c8.viz.items.3	Cair com os joelhos dobrados reduz a força
+ph-newton.c9.title	Principia, 1687
+ph-newton.c9.text	Isaac Newton publicou suas leis do movimento e da gravitação universal nos "Principia Mathematica" em 1687. Elas explicavam a queda das maçãs e as órbitas dos planetas com as mesmas regras.
+ph-newton.c9.viz.events.0.l	Leis orbitais de Kepler
+ph-newton.c9.viz.events.1.l	Galileu e o movimento
+ph-newton.c9.viz.events.2.l	Principia de Newton
+ph-newton.c9.viz.events.3.l	Relatividade de Einstein
+ph-gravity.title	Gravidade e órbitas
+ph-gravity.summary	Por que a Lua não cai (ela cai, mas erra o alvo).
+ph-gravity.q0.q	Por que os astronautas flutuam na ISS?
+ph-gravity.q0.o0	Não há gravidade
+ph-gravity.q0.o1	Eles e a estação estão juntos em queda livre contínua
+ph-gravity.q0.o2	Eles estão alto demais
+ph-gravity.q0.x	A gravidade ali ainda é de cerca de 90%.
+ph-gravity.q1.q	Dobrando a distância entre duas massas, a atração gravitacional entre elas fica…
+ph-gravity.q1.o0	Pela metade
+ph-gravity.q1.o1	Um quarto
+ph-gravity.q1.o2	O dobro
+ph-gravity.q1.x	Lei do inverso do quadrado.
+ph-gravity.q2.q	O que causa as marés?
+ph-gravity.q2.o0	O vento
+ph-gravity.q2.o1	A atração desigual da Lua (e do Sol) ao longo da Terra
+ph-gravity.q2.o2	Só a rotação da Terra
+ph-gravity.q2.x	A diferença de gravidade cria duas protuberâncias.
+ph-gravity.c0.title	Gravitação universal
+ph-gravity.c0.text	Toda massa atrai todas as outras. A força cresce com as duas massas e diminui com o quadrado da distância: dobre a distância e a força cai para um quarto.
+ph-gravity.c0.viz.f	F = G × m₁ × m₂ ÷ r²
+ph-gravity.c0.viz.items.0.s	G
+ph-gravity.c0.viz.items.0.m	constante gravitacional
+ph-gravity.c0.viz.items.1.s	m
+ph-gravity.c0.viz.items.1.m	massas
+ph-gravity.c0.viz.items.2.s	r
+ph-gravity.c0.viz.items.2.m	distância entre os centros
+ph-gravity.c1.title	Órbitas são quedas
+ph-gravity.c1.text	Um satélite em órbita está o tempo todo caindo em direção à Terra, mas se move de lado tão rápido que o chão se curva para longe dele. Newton imaginou um canhão no alto de uma montanha disparando cada vez mais rápido.
+ph-gravity.c1.viz.steps.0	Disparo lento: cai perto
+ph-gravity.c1.viz.steps.1	Mais rápido: cai mais longe
+ph-gravity.c1.viz.steps.2	Rápido o bastante: a Terra se curva
+ph-gravity.c1.viz.steps.3	Órbita
+ph-gravity.c2.title	Velocidades orbitais
+ph-gravity.c2.text	A Estação Espacial Internacional orbita a cerca de 400 km de altitude, a uns 28.000 km/h, dando uma volta na Terra a cada 90 minutos, aproximadamente. Sua tripulação vê cerca de 16 nasceres do sol por dia.
+ph-gravity.c2.viz.items.0.v	400 km
+ph-gravity.c2.viz.items.0.l	altitude da ISS
+ph-gravity.c2.viz.items.1.v	28.000 km/h
+ph-gravity.c2.viz.items.1.l	velocidade
+ph-gravity.c2.viz.items.2.v	90 min
+ph-gravity.c2.viz.items.2.l	uma órbita
+ph-gravity.c3.title	Imponderabilidade
+ph-gravity.c3.text	Os astronautas em órbita não estão fora do alcance da gravidade: na altitude da ISS, ela tem cerca de 90% da intensidade que tem no solo. Eles flutuam porque eles e a estação estão caindo juntos.
+ph-gravity.c3.viz.l.t	Crença comum
+ph-gravity.c3.viz.l.items.0	sem gravidade no espaço
+ph-gravity.c3.viz.r.t	Realidade
+ph-gravity.c3.viz.r.items.0	90% da gravidade
+ph-gravity.c3.viz.r.items.1	tudo cai junto
+ph-gravity.c4.title	Órbita geoestacionária
+ph-gravity.c4.text	A cerca de 35.786 km acima do equador, um satélite leva exatamente um dia para completar a órbita, então fica sempre sobre o mesmo ponto. Satélites de TV e meteorológicos a utilizam.
+ph-gravity.c4.viz.unit	altitude (km)
+ph-gravity.c4.viz.items.0.l	ISS
+ph-gravity.c4.viz.items.1.l	Satélites GPS
+ph-gravity.c4.viz.items.2.l	Geoestacionária
+ph-gravity.c5.title	Marés
+ph-gravity.c5.text	A gravidade da Lua puxa com mais força o lado da Terra mais próximo dela do que o lado oposto, esticando os oceanos em duas protuberâncias. Conforme a Terra gira, a maioria dos litorais tem duas marés altas por dia.
+ph-gravity.c5.viz.steps.0	A Lua puxa mais o lado próximo
+ph-gravity.c5.viz.steps.1	Duas protuberâncias no oceano
+ph-gravity.c5.viz.steps.2	A Terra gira por baixo delas
+ph-gravity.c5.viz.steps.3	Duas marés altas por dia
+ph-gravity.c6.title	Velocidade de escape
+ph-gravity.c6.text	Para sair da Terra sem mais propulsão, seriam necessários cerca de 11,2 km/s (40.300 km/h). Os foguetes não chegam a isso de uma vez; eles queimam combustível por minutos, subindo e acelerando.
+ph-gravity.c6.viz.unit	velocidade de escape (km/s)
+ph-gravity.c6.viz.items.0.l	Lua
+ph-gravity.c6.viz.items.1.l	Marte
+ph-gravity.c6.viz.items.2.l	Terra
+ph-gravity.c6.viz.items.3.l	Júpiter
+ph-gravity.c7.title	As leis de Kepler
+ph-gravity.c7.text	Os planetas se movem em elipses, com o Sol num dos focos; eles aceleram quando estão mais perto do Sol; e quanto mais distante o planeta, mais longo é o seu ano, seguindo uma regra precisa.
+ph-gravity.c7.viz.items.0	Órbitas são elipses
+ph-gravity.c7.viz.items.1	Mais rápido perto do Sol
+ph-gravity.c7.viz.items.2	Anos mais longos mais longe
+ph-gravity.c7.viz.items.3	T² ∝ r³
+ph-gravity.c8.title	Assistência gravitacional
+ph-gravity.c8.text	As sondas espaciais passam rente aos planetas para ganhar velocidade, como uma bola quicando num trem em movimento. A Voyager usou Júpiter e Saturno para chegar aos confins do Sistema Solar.
+ph-gravity.c8.viz.steps.0	Aproximar-se de um planeta
+ph-gravity.c8.viz.steps.1	Contorná-lo
+ph-gravity.c8.viz.steps.2	Roubar um pouco de sua energia orbital
+ph-gravity.c8.viz.steps.3	Sair mais rápido
+ph-gravity.c9.title	Ondas gravitacionais
+ph-gravity.c9.text	Einstein previu que massas aceleradas criam ondulações no espaço-tempo. Em 2015, os detectores LIGO mediram essas ondas pela primeira vez, vindas da fusão de dois buracos negros a mais de um bilhão de anos-luz.
+ph-gravity.c9.viz.events.0.l	Einstein as prevê
+ph-gravity.c9.viz.events.1.l	indício indireto de um par de pulsares
+ph-gravity.c9.viz.events.2.l	O LIGO as detecta diretamente
+ph-gravity.c9.viz.events.3.l	Prêmio Nobel
+ph-momentum.title	Momento linear e colisões
+ph-momentum.summary	Por que coisas pesadas e rápidas são difíceis de parar.
+ph-momentum.q0.q	Uma bola de 0,5 kg a 10 m/s tem momento linear de…
+ph-momentum.q0.o0	20 kg·m/s
+ph-momentum.q0.o1	5 kg·m/s
+ph-momentum.q0.o2	0,05 kg·m/s
+ph-momentum.q0.x	0,5 × 10 = 5.
+ph-momentum.q1.q	Por que os patinadores giram mais rápido quando encolhem os braços?
+ph-momentum.q1.o0	Menos atrito
+ph-momentum.q1.o1	O momento angular se conserva quando o corpo fica mais compacto
+ph-momentum.q1.o2	Eles fazem mais força
+ph-momentum.q1.x	Raio menor, giro mais rápido.
+ph-momentum.q2.q	Para que servem as zonas de deformação?
+ph-momentum.q2.o0	Deixar os carros mais leves
+ph-momentum.q2.o1	Aumentar a duração da batida para reduzir as forças
+ph-momentum.q2.o2	Fazer os carros quicarem para longe
+ph-momentum.q2.x	A mesma variação de momento, com força menor.
+ph-momentum.c0.title	Momento linear
+ph-momentum.c0.text	O momento linear (ou quantidade de movimento) é a massa vezes a velocidade. Um caminhão lento e uma bala rápida podem ter, ambos, um momento linear grande.
+ph-momentum.c0.example.0	Carro de 1.500 kg a 20 m/s
+ph-momentum.c0.example.1	1.500 × 20
+ph-momentum.c0.example.2	= 30.000 kg·m/s
+ph-momentum.c0.viz.f	p = m × v
+ph-momentum.c0.viz.items.0.s	p
+ph-momentum.c0.viz.items.0.m	momento (kg·m/s)
+ph-momentum.c0.viz.items.1.s	m
+ph-momentum.c0.viz.items.1.m	massa
+ph-momentum.c0.viz.items.2.s	v
+ph-momentum.c0.viz.items.2.m	velocidade
+ph-momentum.c1.title	Conservação do momento linear
+ph-momentum.c1.text	Numa colisão sem forças externas, o momento total antes é igual ao momento total depois. É assim que os peritos reconstituem acidentes.
+ph-momentum.c1.viz.steps.0	Momento total antes
+ph-momentum.c1.viz.steps.1	Colisão
+ph-momentum.c1.viz.steps.2	Momento total depois
+ph-momentum.c1.viz.steps.3	Mesmo total
+ph-momentum.c2.title	Elásticas e inelásticas
+ph-momentum.c2.text	Nas colisões elásticas, os objetos ricocheteiam e a energia cinética se conserva (quase, nas bolas de sinuca). Nas inelásticas, eles se deformam ou grudam, e a energia vira calor e som (batidas de carro).
+ph-momentum.c2.viz.l.t	Elástica
+ph-momentum.c2.viz.l.items.0	ricocheteiam
+ph-momentum.c2.viz.l.items.1	pouca energia perdida
+ph-momentum.c2.viz.l.items.2	bolas de sinuca
+ph-momentum.c2.viz.r.t	Inelástica
+ph-momentum.c2.viz.r.items.0	amassam ou grudam
+ph-momentum.c2.viz.r.items.1	energia vira calor e estragos
+ph-momentum.c2.viz.r.items.2	batidas de carro
+ph-momentum.c3.title	Impulso
+ph-momentum.c3.text	Mudar o momento exige uma força aplicada ao longo do tempo: o impulso. A mesma mudança pode vir de uma força grande por pouco tempo ou de uma força pequena por muito tempo.
+ph-momentum.c3.viz.f	F × t = Δp
+ph-momentum.c3.viz.items.0.s	F
+ph-momentum.c3.viz.items.0.m	força
+ph-momentum.c3.viz.items.1.s	t
+ph-momentum.c3.viz.items.1.m	tempo
+ph-momentum.c3.viz.items.2.s	Δp
+ph-momentum.c3.viz.items.2.m	variação do momento
+ph-momentum.c4.title	Zonas de deformação
+ph-momentum.c4.text	A frente dos carros é projetada para amassar, estendendo a duração da batida de poucos milissegundos para cerca de um décimo de segundo, o que reduz a força sobre os passageiros.
+ph-momentum.c4.viz.steps.0	Impacto
+ph-momentum.c4.viz.steps.1	A zona de deformação amassa
+ph-momentum.c4.viz.steps.2	A parada demora mais
+ph-momentum.c4.viz.steps.3	Menos força sobre as pessoas
+ph-momentum.c5.title	Recuo
+ph-momentum.c5.text	Disparar um canhão empurra o canhão para trás: o momento do projétil para a frente é equilibrado pelo momento do canhão para trás. O canhão, mais pesado, se move bem mais devagar.
+ph-momentum.c5.viz.l.t	Projétil
+ph-momentum.c5.viz.l.items.0	massa pequena
+ph-momentum.c5.viz.l.items.1	alta velocidade à frente
+ph-momentum.c5.viz.r.t	Canhão
+ph-momentum.c5.viz.r.items.0	massa grande
+ph-momentum.c5.viz.r.items.1	baixa velocidade para trás
+ph-momentum.c6.title	O pêndulo de Newton
+ph-momentum.c6.text	Levante uma bola, solte-a, e uma bola sai voando do outro lado. O momento e a energia passam pelas bolas paradas de forma quase perfeita.
+ph-momentum.c6.viz.steps.0	Uma bola entra balançando
+ph-momentum.c6.viz.steps.1	O momento atravessa a fila
+ph-momentum.c6.viz.steps.2	Uma bola sai balançando
+ph-momentum.c7.title	Momento angular
+ph-momentum.c7.text	Objetos girando têm momento angular. Uma patinadora que encolhe os braços gira mais rápido, porque o momento angular se conserva enquanto seu corpo fica mais compacto.
+ph-momentum.c7.viz.l.t	Braços abertos
+ph-momentum.c7.viz.l.items.0	giro mais lento
+ph-momentum.c7.viz.r.t	Braços fechados
+ph-momentum.c7.viz.r.items.0	giro mais rápido
+ph-momentum.c8.title	Giroscópios
+ph-momentum.c8.text	Rodas girando resistem a mudanças em seu eixo. As bicicletas se estabilizam em parte assim; os giroscópios orientam navios, aviões e celulares (na forma de minúsculos sensores vibratórios).
+ph-momentum.c8.viz.items.0	Rodas de bicicleta
+ph-momentum.c8.viz.items.1	Navegação de navios e aviões
+ph-momentum.c8.viz.items.2	Sensores de orientação do celular
+ph-momentum.c8.viz.items.3	Controle de atitude de naves
+ph-momentum.c9.title	Foguetes no espaço
+ph-momentum.c9.text	Os foguetes não precisam de ar para se apoiar: eles empurram os gases de escape para trás e ganham um momento igual para a frente. É por isso que funcionam ainda melhor no vácuo do espaço.
+ph-momentum.c9.viz.steps.0	Queimar combustível
+ph-momentum.c9.viz.steps.1	Lançar gases rápido para trás
+ph-momentum.c9.viz.steps.2	Momento igual para a frente
+ph-momentum.c9.viz.steps.3	O foguete acelera
+ph-gases.title	Gases e pressão
+ph-gases.summary	Por que pneus, balões e o clima se comportam como se comportam.
+ph-gases.q0.q	Por que a água ferve abaixo de 100 °C numa montanha?
+ph-gases.q0.o0	Porque é mais frio
+ph-gases.q0.o1	Com pressão do ar menor, ela ferve a uma temperatura mais baixa
+ph-gases.q0.o2	A água é mais pura
+ph-gases.q0.x	A fervura depende da pressão ao redor.
+ph-gases.q1.q	Reduzindo pela metade o volume de um gás a temperatura constante, sua pressão…
+ph-gases.q1.o0	Cai pela metade
+ph-gases.q1.o1	Dobra
+ph-gases.q1.o2	Fica igual
+ph-gases.q1.x	Lei de Boyle: p × V constante.
+ph-gases.q2.q	O que faz a bebida subir pelo canudo?
+ph-gases.q2.o0	A sua sucção puxando
+ph-gases.q2.o1	A pressão atmosférica sobre a superfície da bebida
+ph-gases.q2.o2	A capilaridade
+ph-gases.q2.x	Você baixa a pressão, o ar empurra.
+ph-gases.c0.title	Moléculas em movimento
+ph-gases.c0.text	Um gás são bilhões de moléculas voando a centenas de metros por segundo, chocando-se umas com as outras e com as paredes. Os impactos nas paredes são a pressão.
+ph-gases.c0.viz.steps.0	Moléculas se movem rápido
+ph-gases.c0.viz.steps.1	Batem nas paredes do recipiente
+ph-gases.c0.viz.steps.2	Muitos empurrõezinhos
+ph-gases.c0.viz.steps.3	Pressão
+ph-gases.c1.title	Temperatura e pressão
+ph-gases.c1.text	Aqueça um gás fechado e suas moléculas se movem mais rápido, batendo nas paredes com mais força e mais vezes, então a pressão sobe. É por isso que a pressão dos pneus aumenta depois de uma viagem longa.
+ph-gases.c1.viz.f	p ÷ T = constante (volume fixo)
+ph-gases.c1.viz.items.0.m	T em kelvin
+ph-gases.c1.viz.items.1.s	20 °C → 50 °C
+ph-gases.c1.viz.items.1.m	≈ +10% de pressão
+ph-gases.c2.title	Lei de Boyle
+ph-gases.c2.text	A temperatura constante, comprimir um gás até a metade do volume dobra sua pressão. Bombas de bicicleta e seringas mostram isso.
+ph-gases.c2.viz.f	p × V = constante
+ph-gases.c2.viz.items.0.s	metade do volume
+ph-gases.c2.viz.items.0.m	o dobro da pressão
+ph-gases.c3.title	A lei dos gases ideais
+ph-gases.c3.text	Pressão, volume e temperatura estão ligados numa única equação para a maioria dos gases em condições do dia a dia.
+ph-gases.c3.viz.f	p × V = n × R × T
+ph-gases.c3.viz.items.0.s	n
+ph-gases.c3.viz.items.0.m	quantidade de gás (mols)
+ph-gases.c3.viz.items.1.s	R
+ph-gases.c3.viz.items.1.m	8,314 J/mol·K
+ph-gases.c3.viz.items.2.s	T
+ph-gases.c3.viz.items.2.m	kelvin
+ph-gases.c4.title	Pressão do ar e altitude
+ph-gases.c4.text	A pressão do ar cai pela metade a cada 5,5 km de altitude, aproximadamente. No alto da Serra da Estrela (1.993 m), ela é cerca de 80% da pressão ao nível do mar; no Everest, cerca de um terço.
+ph-gases.c4.viz.unit	% da pressão ao nível do mar
+ph-gases.c4.viz.items.0.l	Nível do mar
+ph-gases.c4.viz.items.1.l	Serra da Estrela
+ph-gases.c4.viz.items.2.l	Mont Blanc
+ph-gases.c4.viz.items.3.l	Everest
+ph-gases.c5.title	Fervura e altitude
+ph-gases.c5.text	A água ferve quando a pressão do seu vapor se iguala à pressão do ar. No alto de uma montanha, a pressão do ar é menor, então a água ferve abaixo de 100 °C e o macarrão demora mais para cozinhar. As panelas de pressão fazem o contrário.
+ph-gases.c5.viz.unit	ponto de ebulição °C
+ph-gases.c5.viz.items.0.l	Everest
+ph-gases.c5.viz.items.1.l	La Paz
+ph-gases.c5.viz.items.2.l	Nível do mar
+ph-gases.c5.viz.items.3.l	Panela de pressão
+ph-gases.c6.title	Balões e densidade
+ph-gases.c6.text	O ar quente é menos denso que o ar frio, então um balão de ar quente sobe. O hélio é mais leve que o ar, por isso os balões de hélio flutuam. Um submarino muda sua densidade com tanques de lastro.
+ph-gases.c6.viz.l.t	Sobe
+ph-gases.c6.viz.l.items.0	ar quente
+ph-gases.c6.viz.l.items.1	hélio
+ph-gases.c6.viz.l.items.2	menos denso que o entorno
+ph-gases.c6.viz.r.t	Desce
+ph-gases.c6.viz.r.items.0	ar frio
+ph-gases.c6.viz.r.items.1	dióxido de carbono
+ph-gases.c6.viz.r.items.2	mais denso que o entorno
+ph-gases.c7.title	Sugar não é puxar
+ph-gases.c7.text	Um canudo não "puxa" a bebida para cima. Você baixa a pressão dentro da boca, e a atmosfera empurra o líquido canudo acima. É por isso que um canudo não consegue elevar água a mais de uns 10 m.
+ph-gases.c7.viz.steps.0	Pressão menor na boca
+ph-gases.c7.viz.steps.1	O ar empurra a superfície da bebida
+ph-gases.c7.viz.steps.2	O líquido sobe pelo canudo
+ph-gases.c8.title	Ar comprimido
+ph-gases.c8.text	Comprimir o ar o aquece (o cilindro da bomba de bicicleta esquenta); deixá-lo expandir o resfria (os sprays ficam gelados). Geladeiras e bombas de calor usam isso com refrigerantes especiais.
+ph-gases.c8.viz.l.t	Comprimir
+ph-gases.c8.viz.l.items.0	esquenta
+ph-gases.c8.viz.l.items.1	a bomba aquece
+ph-gases.c8.viz.r.t	Expandir
+ph-gases.c8.viz.r.items.0	esfria
+ph-gases.c8.viz.r.items.1	o spray gela
+ph-gases.c9.title	Tempo e pressão
+ph-gases.c9.text	Áreas de alta pressão trazem ar descendente e geralmente tempo estável; áreas de baixa pressão trazem ar ascendente, nuvens e chuva. Os barômetros a medem, muitas vezes em hectopascais (hPa).
+ph-gases.c9.viz.unit	hPa
+ph-gases.c9.viz.items.0.l	tempestade
+ph-gases.c9.viz.items.1.l	média
+ph-gases.c9.viz.items.2.l	alta estável
+ph-light.title	Luz e óptica
+ph-light.summary	Reflexão, refração, lentes e o olho.
+ph-light.q0.q	Por que um canudo parece torto dentro da água?
+ph-light.q0.o0	O canudo entorta
+ph-light.q0.o1	A luz se refrata ao passar entre a água e o ar
+ph-light.q0.o2	Reflexão
+ph-light.q0.x	A luz muda de velocidade e de direção.
+ph-light.q1.q	O que leva dados da internet através dos oceanos usando luz?
+ph-light.q1.o0	Cabos de cobre
+ph-light.q1.o1	Fibras ópticas, por reflexão interna total
+ph-light.q1.o2	Torres de rádio
+ph-light.q1.x	A luz fica presa dentro do vidro.
+ph-light.q2.q	A miopia é corrigida com…
+ph-light.q2.o0	Lentes convexas
+ph-light.q2.o1	Lentes côncavas
+ph-light.q2.o2	Espelhos
+ph-light.q2.x	As lentes côncavas espalham a luz, para que ela foque mais atrás.
+ph-light.c0.title	A luz viaja rápido e em linha reta
+ph-light.c0.text	A luz viaja a cerca de 300.000 km/s no vácuo e em linhas retas (raios). Ela leva cerca de 8 minutos e 20 segundos para chegar do Sol até nós.
+ph-light.c0.viz.items.0.v	300.000 km/s
+ph-light.c0.viz.items.0.l	velocidade da luz
+ph-light.c0.viz.items.1.v	8 min 20 s
+ph-light.c0.viz.items.1.l	desde o Sol
+ph-light.c0.viz.items.2.v	1,3 s
+ph-light.c0.viz.items.2.l	desde a Lua
+ph-light.c1.title	Reflexão
+ph-light.c1.text	A luz ricocheteia num espelho com o mesmo ângulo com que o atinge: o ângulo de incidência é igual ao ângulo de reflexão. Superfícies ásperas espalham a luz em todas as direções, e é por isso que o papel não é um espelho.
+ph-light.c1.viz.l.t	Espelho liso
+ph-light.c1.viz.l.items.0	ângulos iguais
+ph-light.c1.viz.l.items.1	imagem nítida
+ph-light.c1.viz.r.t	Papel áspero
+ph-light.c1.viz.r.items.0	espalha para todo lado
+ph-light.c1.viz.r.items.1	sem imagem
+ph-light.c2.title	Refração
+ph-light.c2.text	A luz fica mais lenta na água ou no vidro e se desvia quando entra num ângulo. É por isso que um canudo parece torto num copo e as piscinas parecem mais rasas do que são.
+ph-light.c2.viz.steps.0	A luz entra na água inclinada
+ph-light.c2.viz.steps.1	Fica mais lenta
+ph-light.c2.viz.steps.2	Desvia em direção à normal
+ph-light.c2.viz.steps.3	Os objetos parecem mais rasos
+ph-light.c3.title	Reflexão interna total
+ph-light.c3.text	Dentro do vidro, a luz que atinge a superfície num ângulo rasante o bastante é totalmente refletida. As fibras ópticas prendem a luz assim, levando dados da internet através dos oceanos.
+ph-light.c3.viz.steps.0	A luz entra na fibra
+ph-light.c3.viz.steps.1	Bate na parede num ângulo rasante
+ph-light.c3.viz.steps.2	É totalmente refletida
+ph-light.c3.viz.steps.3	Percorre quilômetros
+ph-light.c4.title	Lentes
+ph-light.c4.text	As lentes convexas desviam a luz para dentro, até um foco: lupas, câmeras, o olho. As lentes côncavas a espalham, e são usadas para corrigir a miopia.
+ph-light.c4.viz.l.t	Convexa
+ph-light.c4.viz.l.items.0	convergente
+ph-light.c4.viz.l.items.1	lupas, câmeras
+ph-light.c4.viz.l.items.2	corrige hipermetropia
+ph-light.c4.viz.r.t	Côncava
+ph-light.c4.viz.r.items.0	divergente
+ph-light.c4.viz.r.items.1	corrige miopia
+ph-light.c5.title	O olho
+ph-light.c5.text	A córnea e o cristalino focam a luz na retina, onde os bastonetes (luz fraca, sem cor) e os cones (cor) a transformam em sinais nervosos. O cérebro desvira a imagem, que chega de cabeça para baixo.
+ph-light.c5.viz.steps.0	Córnea e cristalino focam
+ph-light.c5.viz.steps.1	Imagem na retina
+ph-light.c5.viz.steps.2	Bastonetes e cones
+ph-light.c5.viz.steps.3	O cérebro interpreta
+ph-light.c6.title	Miopia e hipermetropia
+ph-light.c6.text	Olhos míopes focam os objetos distantes antes da retina; lentes côncavas corrigem isso. Olhos hipermetropes focam atrás dela; lentes convexas corrigem isso.
+ph-light.c6.viz.items.0.a	miopia
+ph-light.c6.viz.items.0.b	lente côncava
+ph-light.c6.viz.items.1.a	hipermetropia
+ph-light.c6.viz.items.1.b	lente convexa
+ph-light.c6.viz.items.2.a	presbiopia
+ph-light.c6.viz.items.2.b	óculos de leitura com a idade
+ph-light.c7.title	Câmeras
+ph-light.c7.text	Uma câmera funciona como um olho: uma lente foca a luz num sensor de milhões de pixels. A abertura controla quanta luz entra; a velocidade do obturador controla por quanto tempo.
+ph-light.c7.viz.items.0.a	abertura
+ph-light.c7.viz.items.0.b	o tamanho do orifício
+ph-light.c7.viz.items.1.a	velocidade do obturador
+ph-light.c7.viz.items.1.b	quanto tempo fica aberto
+ph-light.c7.viz.items.2.a	ISO
+ph-light.c7.viz.items.2.b	sensibilidade do sensor
+ph-light.c8.title	Arco-íris
+ph-light.c8.text	A luz do sol que entra nas gotas de chuva é refratada, refletida por dentro e refratada de novo na saída. Cada cor se desvia um pouco diferente, abrindo a luz branca num espectro.
+ph-light.c8.viz.steps.0	A luz do sol entra na gota
+ph-light.c8.viz.steps.1	Desvia e se separa por cor
+ph-light.c8.viz.steps.2	Reflete por dentro
+ph-light.c8.viz.steps.3	Sai como arco-íris
+ph-light.c9.title	Lasers
+ph-light.c9.text	Um laser produz luz de uma só cor, em fase e num feixe estreito. É usado em leitores de código de barras, fibras ópticas, cirurgias, corte de metal e medição de distâncias (lidar).
+ph-light.c9.viz.items.0	Internet por fibra óptica
+ph-light.c9.viz.items.1	Leitores de código de barras
+ph-light.c9.viz.items.2	Cirurgia ocular
+ph-light.c9.viz.items.3	Corte de metal
+ph-light.c9.viz.items.4	Medição de distâncias
+ph-colour.title	Cor
+ph-colour.summary	Por que o céu é azul e as folhas são verdes.
+ph-colour.q0.q	Por que as folhas parecem verdes?
+ph-colour.q0.o0	Elas emitem luz verde
+ph-colour.q0.o1	Elas refletem o verde e absorvem o vermelho e o azul
+ph-colour.q0.o2	Elas são frias
+ph-colour.q0.x	A clorofila absorve o vermelho e o azul.
+ph-colour.q1.q	Por que o céu é azul?
+ph-colour.q1.o0	Ele reflete o mar
+ph-colour.q1.o1	O ar espalha a luz azul mais que a vermelha
+ph-colour.q1.o2	O ozônio é azul
+ph-colour.q1.x	Espalhamento de Rayleigh.
+ph-colour.q2.q	Misturar luz vermelha, verde e azul dá…
+ph-colour.q2.o0	Preto
+ph-colour.q2.o1	Branco
+ph-colour.q2.o2	Marrom
+ph-colour.q2.x	Mistura aditiva.
+ph-colour.c0.title	A luz branca é uma mistura
+ph-colour.c0.text	Newton mostrou com um prisma que a luz branca contém todas as cores. Cada cor é luz de um comprimento de onda diferente, do vermelho (cerca de 700 nm) ao violeta (cerca de 400 nm).
+ph-colour.c0.viz.unit	comprimento de onda (nm, aprox.)
+ph-colour.c0.viz.items.0.l	Violeta
+ph-colour.c0.viz.items.1.l	Azul
+ph-colour.c0.viz.items.2.l	Verde
+ph-colour.c0.viz.items.3.l	Amarelo
+ph-colour.c0.viz.items.4.l	Vermelho
+ph-colour.c1.title	Os objetos absorvem e refletem
+ph-colour.c1.text	Uma folha parece verde porque a clorofila absorve a luz vermelha e a azul e reflete a verde. Uma camiseta preta absorve a maior parte da luz (e esquenta no sol); uma branca reflete a maior parte.
+ph-colour.c1.viz.l.t	Preto
+ph-colour.c1.viz.l.items.0	absorve quase toda a luz
+ph-colour.c1.viz.l.items.1	esquenta
+ph-colour.c1.viz.r.t	Branco
+ph-colour.c1.viz.r.items.0	reflete quase toda a luz
+ph-colour.c1.viz.r.items.1	fica mais fresco
+ph-colour.c2.title	Misturar luz vs. misturar tinta
+ph-colour.c2.text	A luz se mistura de forma aditiva: vermelho + verde + azul dão branco (telas). A tinta se mistura de forma subtrativa: cada pigmento absorve algumas cores, então misturar muitas dá uma cor escura e lamacenta (as impressoras usam ciano, magenta, amarelo e preto).
+ph-colour.c2.viz.l.t	Luz (aditiva)
+ph-colour.c2.viz.l.items.0	RGB
+ph-colour.c2.viz.l.items.1	soma dá branco
+ph-colour.c2.viz.l.items.2	telas
+ph-colour.c2.viz.r.t	Pigmento (subtrativa)
+ph-colour.c2.viz.r.items.0	CMYK
+ph-colour.c2.viz.r.items.1	soma dá escuro
+ph-colour.c2.viz.r.items.2	impressão
+ph-colour.c3.title	Por que o céu é azul
+ph-colour.c3.text	As moléculas do ar espalham os comprimentos de onda azuis, mais curtos, muito mais que os vermelhos (espalhamento de Rayleigh). A luz azul espalhada chega aos seus olhos vinda de todas as direções do céu.
+ph-colour.c3.viz.steps.0	A luz do sol entra na atmosfera
+ph-colour.c3.viz.steps.1	O azul se espalha mais
+ph-colour.c3.viz.steps.2	O azul vem de todo o céu
+ph-colour.c4.title	Pores do sol vermelhos
+ph-colour.c4.text	No pôr do sol, a luz atravessa muito mais atmosfera. A maior parte do azul é espalhada antes de chegar até você, sobrando os vermelhos e os laranjas.
+ph-colour.c4.viz.l.t	Meio-dia
+ph-colour.c4.viz.l.items.0	trajeto curto
+ph-colour.c4.viz.l.items.1	céu azul
+ph-colour.c4.viz.r.t	Pôr do sol
+ph-colour.c4.viz.r.items.0	trajeto longo
+ph-colour.c4.viz.r.items.1	azul espalhado
+ph-colour.c4.viz.r.items.2	céu vermelho
+ph-colour.c5.title	Enxergar as cores
+ph-colour.c5.text	Seu olho tem três tipos de cone, mais sensíveis, grosso modo, à luz vermelha, verde e azul. Cada cor que você vê é o seu cérebro comparando os sinais deles.
+ph-colour.c5.viz.items.0.a	cones L
+ph-colour.c5.viz.items.0.b	ondas longas (vermelho)
+ph-colour.c5.viz.items.1.a	cones M
+ph-colour.c5.viz.items.1.b	médias (verde)
+ph-colour.c5.viz.items.2.a	cones S
+ph-colour.c5.viz.items.2.b	curtas (azul)
+ph-colour.c6.title	Daltonismo
+ph-colour.c6.text	Cerca de 8% dos homens e 0,5% das mulheres de ascendência do norte da Europa têm alguma deficiência na visão de vermelho e verde, geralmente hereditária. Um bom design nunca depende só da cor.
+ph-colour.c6.viz.items.0.l	dos homens
+ph-colour.c6.viz.items.1.l	das mulheres
+ph-colour.c7.title	Infravermelho e ultravioleta
+ph-colour.c7.text	Além do vermelho fica o infravermelho, que sentimos como calor e que as câmeras noturnas enxergam. Além do violeta fica o ultravioleta, que causa queimaduras solares e faz alguns materiais brilharem.
+ph-colour.c7.viz.items.0.a	infravermelho
+ph-colour.c7.viz.items.0.b	calor, controles remotos, visão noturna
+ph-colour.c7.viz.items.1.a	visível
+ph-colour.c7.viz.items.1.b	400–700 nm
+ph-colour.c7.viz.items.2.a	ultravioleta
+ph-colour.c7.viz.items.2.b	queimaduras, esterilização
+ph-colour.c8.title	Temperatura de cor
+ph-colour.c8.text	As lâmpadas são descritas em kelvin: branco quente por volta de 2.700 K (amarelado), luz do dia por volta de 5.000–6.500 K (azulado). A luz quente parece mais aconchegante à noite.
+ph-colour.c8.viz.unit	K
+ph-colour.c8.viz.items.0.l	vela
+ph-colour.c8.viz.items.1.l	branco quente
+ph-colour.c8.viz.items.2.l	neutro
+ph-colour.c8.viz.items.3.l	luz do dia
+ph-colour.c9.title	Telas
+ph-colour.c9.text	Cada pixel de uma tela tem subpixels vermelho, verde e azul. Variar o brilho deles cria milhões de cores. Olhe uma tela de perto com uma lupa e você vai conseguir vê-los.
+ph-colour.c9.viz.steps.0	Subpixels vermelho, verde, azul
+ph-colour.c9.viz.steps.1	Cada um com um brilho
+ph-colour.c9.viz.steps.2	Seu olho os mistura
+ph-colour.c9.viz.steps.3	Milhões de cores
+ph-sound.title	Som
+ph-sound.summary	Volume, altura e como ouvimos.
+ph-sound.q0.q	Cada +10 dB significa que a intensidade do som…
+ph-sound.q0.o0	Dobrou
+ph-sound.q0.o1	Ficou dez vezes maior
+ph-sound.q0.o2	Ficou igual
+ph-sound.q0.x	Os decibéis são logarítmicos.
+ph-sound.q1.q	O som viaja mais rápido…
+ph-sound.q1.o0	No ar
+ph-sound.q1.o1	Na água
+ph-sound.q1.o2	No aço
+ph-sound.q1.x	Materiais mais rígidos transmitem o som mais rápido.
+ph-sound.q2.q	O que faz um violino e uma flauta soarem diferentes na mesma nota?
+ph-sound.q2.o0	O volume
+ph-sound.q2.o1	Misturas diferentes de harmônicos (timbre)
+ph-sound.q2.o2	A velocidade do som
+ph-sound.q2.x	O timbre vem dos harmônicos.
+ph-sound.c0.title	O que é o som
+ph-sound.c0.text	O som é uma onda de pressão: um objeto vibrando empurra e puxa o ar, criando compressões e rarefações que viajam até o seu ouvido.
+ph-sound.c0.viz.steps.0	O objeto vibra
+ph-sound.c0.viz.steps.1	O ar é comprimido e esticado
+ph-sound.c0.viz.steps.2	A onda viaja
+ph-sound.c0.viz.steps.3	O tímpano vibra
+ph-sound.c1.title	Altura e frequência
+ph-sound.c1.text	A altura é o quanto um som é agudo ou grave, e é definida pela frequência. Os humanos ouvem mais ou menos de 20 Hz a 20.000 Hz; o limite superior cai com a idade.
+ph-sound.c1.viz.unit	Hz (aprox.)
+ph-sound.c1.viz.items.0.l	Nota mais grave do piano
+ph-sound.c1.viz.items.1.l	Voz masculina
+ph-sound.c1.viz.items.2.l	Voz feminina
+ph-sound.c1.viz.items.3.l	Lá central
+ph-sound.c1.viz.items.4.l	Apito para cães
+ph-sound.c2.title	Volume e decibéis
+ph-sound.c2.text	O volume é medido em decibéis, uma escala logarítmica: cada +10 dB é dez vezes a intensidade sonora e soa mais ou menos duas vezes mais alto.
+ph-sound.c2.viz.unit	dB (aprox.)
+ph-sound.c2.viz.items.0.l	Sussurro
+ph-sound.c2.viz.items.1.l	Conversa
+ph-sound.c2.viz.items.2.l	Trânsito intenso
+ph-sound.c2.viz.items.3.l	Show
+ph-sound.c2.viz.items.4.l	Jato a 30 m
+ph-sound.c3.title	Danos à audição
+ph-sound.c3.text	A exposição prolongada acima de cerca de 85 dB pode danificar permanentemente as minúsculas células ciliadas do ouvido interno. Shows e ferramentas elétricas pedem protetores auriculares.
+ph-sound.c3.viz.unit	dB
+ph-sound.c3.viz.items.0.l	seguro o dia todo
+ph-sound.c3.viz.items.1.l	risco após horas
+ph-sound.c3.viz.items.2.l	dor
+ph-sound.c4.title	Velocidade do som
+ph-sound.c4.text	O som viaja a cerca de 343 m/s no ar, uns 1.500 m/s na água e por volta de 5.000 m/s no aço. O som precisa de um meio: no espaço, ninguém ouve você.
+ph-sound.c4.viz.unit	m/s
+ph-sound.c4.viz.items.0.l	Ar
+ph-sound.c4.viz.items.1.l	Água
+ph-sound.c4.viz.items.2.l	Aço
+ph-sound.c5.title	Timbre
+ph-sound.c5.text	Um violino e uma flauta tocando a mesma nota soam diferentes porque cada um produz uma mistura diferente de harmônicos por cima da frequência principal.
+ph-sound.c5.viz.steps.0	Frequência fundamental
+ph-sound.c5.viz.steps.1	Mais os harmônicos
+ph-sound.c5.viz.steps.2	Mistura única
+ph-sound.c5.viz.steps.3	Timbre reconhecível
+ph-sound.c6.title	Acústica de ambientes
+ph-sound.c6.text	Superfícies duras refletem o som e deixam os ambientes com eco; estofados, cortinas e painéis acústicos o absorvem. As salas de concerto são projetadas para ter a reverberação certa.
+ph-sound.c6.viz.l.t	Sala com eco
+ph-sound.c6.viz.l.items.0	azulejos, vidro, paredes nuas
+ph-sound.c6.viz.l.items.1	reverberação longa
+ph-sound.c6.viz.r.t	Sala silenciosa
+ph-sound.c6.viz.r.items.0	cortinas, sofás, painéis
+ph-sound.c6.viz.r.items.1	reverberação curta
+ph-sound.c7.title	Ultrassom
+ph-sound.c7.text	Frequências acima da audição humana são usadas em exames de imagem médica, cubas de limpeza, sensores de distância e por morcegos e golfinhos para se orientarem.
+ph-sound.c7.viz.items.0	Ultrassons na gravidez
+ph-sound.c7.viz.items.1	Limpadores ultrassônicos
+ph-sound.c7.viz.items.2	Sensores de estacionamento e nível
+ph-sound.c7.viz.items.3	Ecolocalização de morcegos e golfinhos
+ph-sound.c8.title	Infrassom
+ph-sound.c8.text	Frequências muito baixas, abaixo de 20 Hz, percorrem distâncias enormes. Os elefantes se comunicam com elas; vulcões, terremotos e testes nucleares são detectados por estações de monitoramento de infrassom.
+ph-sound.c8.viz.items.0	Chamados de elefantes
+ph-sound.c8.viz.items.1	Vulcões
+ph-sound.c8.viz.items.2	Terremotos
+ph-sound.c8.viz.items.3	Monitorar testes nucleares
+ph-sound.c9.title	Como ouvimos
+ph-sound.c9.text	O tímpano vibra, três ossinhos amplificam o movimento e, na cóclea em forma de caracol, milhares de células ciliadas transformam vibrações de diferentes frequências em sinais nervosos.
+ph-sound.c9.viz.steps.0	Tímpano
+ph-sound.c9.viz.steps.1	Três ossinhos
+ph-sound.c9.viz.steps.2	Líquido da cóclea
+ph-sound.c9.viz.steps.3	Células ciliadas
+ph-sound.c9.viz.steps.4	Nervo auditivo
+ph-atoms.title	Átomos
+ph-atoms.summary	Do que tudo é feito.
+ph-atoms.q0.q	O que define qual elemento um átomo é?
+ph-atoms.q0.o0	O número de nêutrons
+ph-atoms.q0.o1	O número de prótons
+ph-atoms.q0.o2	Só o número de elétrons
+ph-atoms.q0.x	O número de prótons define o elemento.
+ph-atoms.q1.q	O carbono-12 e o carbono-14 são…
+ph-atoms.q1.o0	Elementos diferentes
+ph-atoms.q1.o1	Isótopos do carbono
+ph-atoms.q1.o2	Moléculas
+ph-atoms.q1.x	Mesmos prótons, nêutrons diferentes.
+ph-atoms.q2.q	Onde foi produzida a maioria dos elementos pesados, como o ferro do seu sangue?
+ph-atoms.q2.o0	No Big Bang
+ph-atoms.q2.o1	Dentro de estrelas e em explosões estelares
+ph-atoms.q2.o2	Na Terra
+ph-atoms.q2.x	As estrelas forjam os elementos mais pesados.
+ph-atoms.c0.title	Minúsculo e quase vazio
+ph-atoms.c0.text	Um átomo tem um núcleo minúsculo e denso, de prótons e nêutrons, cercado por uma nuvem de elétrons. Se o núcleo fosse uma bolinha de gude no centro de um estádio de futebol, os elétrons estariam nas arquibancadas mais distantes.
+ph-atoms.c0.viz.items.0.v	0,1 nm
+ph-atoms.c0.viz.items.0.l	tamanho de um átomo
+ph-atoms.c0.viz.items.1.l	átomo maior que o núcleo
+ph-atoms.c1.title	Prótons, nêutrons, elétrons
+ph-atoms.c1.text	Os prótons são positivos, os elétrons negativos e os nêutrons neutros. Prótons e nêutrons pesam mais ou menos o mesmo; um elétron pesa cerca de 1/1.836 disso.
+ph-atoms.c1.viz.items.0.a	próton
+ph-atoms.c1.viz.items.0.b	carga +1, no núcleo
+ph-atoms.c1.viz.items.1.a	nêutron
+ph-atoms.c1.viz.items.1.b	sem carga, no núcleo
+ph-atoms.c1.viz.items.2.a	elétron
+ph-atoms.c1.viz.items.2.b	carga −1, ao redor do núcleo
+ph-atoms.c2.title	Elementos
+ph-atoms.c2.text	O número de prótons define o elemento: 1 é hidrogênio, 6 carbono, 8 oxigênio, 26 ferro, 79 ouro. Existem 118 elementos conhecidos.
+ph-atoms.c2.viz.unit	prótons
+ph-atoms.c2.viz.items.0.l	Hidrogênio
+ph-atoms.c2.viz.items.1.l	Carbono
+ph-atoms.c2.viz.items.2.l	Oxigênio
+ph-atoms.c2.viz.items.3.l	Ferro
+ph-atoms.c2.viz.items.4.l	Ouro
+ph-atoms.c3.title	Isótopos
+ph-atoms.c3.text	Átomos do mesmo elemento podem ter números diferentes de nêutrons: são os isótopos. O carbono-12 e o carbono-14 são ambos carbono; o carbono-14 é radioativo e usado para datar restos antigos.
+ph-atoms.c3.viz.l.t	Carbono-12
+ph-atoms.c3.viz.l.items.0	6 prótons, 6 nêutrons
+ph-atoms.c3.viz.l.items.1	estável
+ph-atoms.c3.viz.r.t	Carbono-14
+ph-atoms.c3.viz.r.items.0	6 prótons, 8 nêutrons
+ph-atoms.c3.viz.r.items.1	radioativo
+ph-atoms.c4.title	A tabela periódica
+ph-atoms.c4.text	Em 1869, Mendeleiev organizou os elementos por massa e propriedades, deixando lacunas para elementos ainda não descobertos, e previu suas propriedades. As colunas agrupam elementos que se comportam de forma parecida.
+ph-atoms.c4.viz.items.0	Linhas: períodos
+ph-atoms.c4.viz.items.1	Colunas: grupos de química parecida
+ph-atoms.c4.viz.items.2	Metais à esquerda
+ph-atoms.c4.viz.items.3	Gases nobres à direita
+ph-atoms.c5.title	Camadas eletrônicas
+ph-atoms.c5.text	Os elétrons ficam em níveis de energia, ou camadas. A química trata principalmente dos elétrons externos: os átomos os compartilham, cedem ou recebem para formar ligações e completar a camada externa.
+ph-atoms.c5.viz.steps.0	Elétrons externos
+ph-atoms.c5.viz.steps.1	Compartilhados ou transferidos
+ph-atoms.c5.viz.steps.2	Ligação química
+ph-atoms.c5.viz.steps.3	Molécula ou cristal
+ph-atoms.c6.title	Moléculas
+ph-atoms.c6.text	Os átomos se juntam em moléculas: dois hidrogênios e um oxigênio formam a água (H₂O); um carbono e dois oxigênios formam o dióxido de carbono (CO₂).
+ph-atoms.c6.viz.items.0.a	H₂O
+ph-atoms.c6.viz.items.0.b	água
+ph-atoms.c6.viz.items.1.a	CO₂
+ph-atoms.c6.viz.items.1.b	dióxido de carbono
+ph-atoms.c6.viz.items.2.a	O₂
+ph-atoms.c6.viz.items.2.b	o oxigênio que respiramos
+ph-atoms.c6.viz.items.3.a	CH₄
+ph-atoms.c6.viz.items.3.b	metano, gás natural
+ph-atoms.c7.title	Estados da matéria
+ph-atoms.c7.text	Os sólidos mantêm a forma, os líquidos assumem a forma do recipiente, os gases o preenchem. Aquecer dá às partículas mais energia para se libertarem. O plasma, um gás quente ionizado, é um quarto estado, presente nas estrelas e nos raios.
+ph-atoms.c7.viz.items.0	Plasma: gás ionizado
+ph-atoms.c7.viz.items.1	Gás: partículas voam livres
+ph-atoms.c7.viz.items.2	Líquido: partículas deslizam
+ph-atoms.c7.viz.items.3	Sólido: partículas fixas
+ph-atoms.c8.title	Enxergar átomos
+ph-atoms.c8.text	Os átomos são pequenos demais para microscópios ópticos, mas os microscópios de tunelamento, inventados em 1981, conseguem fotografar e até mover átomos individuais. A IBM ficou famosa ao escrever seu logotipo com 35 átomos de xenônio em 1989.
+ph-atoms.c8.viz.events.0.l	Teoria atômica de Dalton
+ph-atoms.c8.viz.events.1.l	descoberta do elétron
+ph-atoms.c8.viz.events.2.l	descoberta do núcleo
+ph-atoms.c8.viz.events.3.l	átomos fotografados
+ph-atoms.c9.title	De onde vêm os átomos
+ph-atoms.c9.text	O hidrogênio e o hélio se formaram no Big Bang. Os elementos mais pesados foram forjados dentro das estrelas e em explosões estelares. O carbono do seu corpo e o ferro do seu sangue foram produzidos em estrelas.
+ph-atoms.c9.viz.steps.0	Big Bang: hidrogênio, hélio
+ph-atoms.c9.viz.steps.1	Estrelas fundem elementos pesados
+ph-atoms.c9.viz.steps.2	Supernovas os espalham
+ph-atoms.c9.viz.steps.3	Novas estrelas, planetas, nós
+ph-radio.title	Radioatividade
+ph-radio.summary	Núcleos instáveis, radiação e meias-vidas.
+ph-radio.q0.q	Qual radiação é barrada por uma folha de papel?
+ph-radio.q0.o0	Alfa
+ph-radio.q0.o1	Beta
+ph-radio.q0.o2	Gama
+ph-radio.q0.x	As partículas alfa são grandes e pesadas.
+ph-radio.q1.q	Depois de 3 meias-vidas, quanto resta de uma amostra?
+ph-radio.q1.o0	33%
+ph-radio.q1.o1	12,5%
+ph-radio.q1.o2	3%
+ph-radio.q1.x	½ × ½ × ½ = 1/8.
+ph-radio.q2.q	Qual é a maior fonte natural de radiação para muitas pessoas?
+ph-radio.q2.o0	Celulares
+ph-radio.q2.o1	O gás radônio
+ph-radio.q2.o2	Linhas de transmissão
+ph-radio.q2.x	O radônio vem de rochas como o granito.
+ph-radio.c0.title	Núcleos instáveis
+ph-radio.c0.text	Alguns núcleos têm uma combinação instável de prótons e nêutrons. Eles liberam energia e partículas para ficarem mais estáveis: isso é o decaimento radioativo.
+ph-radio.c0.viz.steps.0	Núcleo instável
+ph-radio.c0.viz.steps.1	Emite radiação
+ph-radio.c0.viz.steps.2	Vira outro núcleo
+ph-radio.c0.viz.steps.3	Por fim, estável
+ph-radio.c1.title	Três tipos de radiação
+ph-radio.c1.text	As partículas alfa (2 prótons + 2 nêutrons) são barradas pelo papel. As partículas beta (elétrons), por alguns mm de alumínio. Os raios gama (luz muito energética) exigem chumbo grosso ou concreto.
+ph-radio.c1.viz.items.0	Gama: chumbo grosso ou concreto
+ph-radio.c1.viz.items.1	Beta: alguns mm de alumínio
+ph-radio.c1.viz.items.2	Alfa: papel ou pele
+ph-radio.c2.title	Meia-vida
+ph-radio.c2.text	Cada isótopo radioativo tem uma meia-vida: o tempo para que metade de uma amostra decaia. Depois de duas meias-vidas, resta um quarto; depois de dez, menos de 0,1%.
+ph-radio.c2.viz.unit	% restante
+ph-radio.c2.viz.items.1.l	1 meia-vida
+ph-radio.c3.title	As meias-vidas variam muito
+ph-radio.c3.text	Alguns isótopos decaem em segundos; outros, ao longo de bilhões de anos.
+ph-radio.c3.viz.items.0.a	radônio-222
+ph-radio.c3.viz.items.0.b	3,8 dias
+ph-radio.c3.viz.items.1.a	iodo-131
+ph-radio.c3.viz.items.1.b	8 dias
+ph-radio.c3.viz.items.2.a	carbono-14
+ph-radio.c3.viz.items.2.b	5.730 anos
+ph-radio.c3.viz.items.3.a	urânio-238
+ph-radio.c3.viz.items.3.b	4,5 bilhões de anos
+ph-radio.c4.title	Datação por carbono
+ph-radio.c4.text	Os seres vivos absorvem carbono-14 o tempo todo. Quando morrem, ele decai com uma meia-vida de 5.730 anos. Medir o que sobrou permite datar restos orgânicos de até cerca de 50.000 anos.
+ph-radio.c4.viz.steps.0	Organismo vivo: C-14 constante
+ph-radio.c4.viz.steps.1	Morre: a absorção para
+ph-radio.c4.viz.steps.2	O C-14 decai
+ph-radio.c4.viz.steps.3	Medir o que sobra: idade
+ph-radio.c5.title	Radiação de fundo
+ph-radio.c5.text	Estamos sempre expostos a uma baixa radiação natural vinda de rochas, do solo, dos raios cósmicos e do nosso próprio corpo. O gás radônio das rochas graníticas é a maior fonte natural, algo importante no norte de Portugal.
+ph-radio.c5.viz.unit	mSv/ano (aprox., média mundial)
+ph-radio.c5.viz.items.0.l	Radônio
+ph-radio.c5.viz.items.1.l	Comida e corpo
+ph-radio.c5.viz.items.2.l	Cósmica
+ph-radio.c5.viz.items.3.l	Rochas e solo
+ph-radio.c5.viz.items.4.l	Médica
+ph-radio.c6.title	Radônio em casa
+ph-radio.c6.text	O granito do norte de Portugal libera radônio, que pode se acumular em porões e no térreo. Ventilar e vedar o piso reduz o problema; detectores baratos o medem ao longo de meses.
+ph-radio.c6.viz.items.0	Medir com detector por 2–3 meses
+ph-radio.c6.viz.items.1	Ventilar o térreo
+ph-radio.c6.viz.items.2	Vedar rachaduras no piso
+ph-radio.c6.viz.items.3	Exaustão sob o piso se for alto
+ph-radio.c7.title	Medindo a dose
+ph-radio.c7.text	A dose de radiação nas pessoas é medida em sieverts (Sv), geralmente em milisieverts (mSv). Um raio X de tórax dá cerca de 0,02 mSv; uma tomografia, vários mSv; um voo Lisboa–Nova York, cerca de 0,04 mSv.
+ph-radio.c7.viz.unit	mSv (aprox.)
+ph-radio.c7.viz.items.0.l	Raio X de tórax
+ph-radio.c7.viz.items.1.l	Voo transatlântico
+ph-radio.c7.viz.items.2.l	Natural por ano
+ph-radio.c7.viz.items.3.l	Tomografia
+ph-radio.c8.title	Usos da radiação
+ph-radio.c8.text	A radiação salva vidas na medicina (raios X, tratamento de câncer, esterilização de equipamentos), inspeciona soldas na indústria, alimenta naves espaciais e detecta fumaça em alarmes.
+ph-radio.c8.viz.items.0	Exames de imagem
+ph-radio.c8.viz.items.1	Radioterapia contra o câncer
+ph-radio.c8.viz.items.2	Esterilização de equipamentos
+ph-radio.c8.viz.items.3	Detectores de fumaça
+ph-radio.c8.viz.items.4	Energia para sondas espaciais
+ph-radio.c9.title	Marie Curie
+ph-radio.c9.text	Marie Curie descobriu o polônio e o rádio com Pierre Curie, criou a palavra "radioatividade" e ganhou dois Prêmios Nobel, em física (1903) e química (1911), sendo a primeira pessoa a ganhar em duas ciências.
+ph-radio.c9.viz.events.0.l	Becquerel descobre a radioatividade
+ph-radio.c9.viz.events.1.l	Os Curie descobrem o polônio e o rádio
+ph-radio.c9.viz.events.2.l	Nobel de Física
+ph-radio.c9.viz.events.3.l	Nobel de Química
+ph-nuclear.title	Energia nuclear
+ph-nuclear.summary	Fissão, fusão e como funcionam os reatores.
+ph-nuclear.q0.q	O que controla a reação em cadeia num reator?
+ph-nuclear.q0.o0	O vapor
+ph-nuclear.q0.o1	Barras de controle que absorvem nêutrons
+ph-nuclear.q0.o2	O gerador
+ph-nuclear.q0.x	As barras de controle absorvem nêutrons.
+ph-nuclear.q1.q	A fusão junta…
+ph-nuclear.q1.o0	Núcleos pesados
+ph-nuclear.q1.o1	Núcleos leves, como o hidrogênio
+ph-nuclear.q1.o2	Elétrons
+ph-nuclear.q1.x	É ela que alimenta o Sol.
+ph-nuclear.q2.q	Portugal tem alguma usina nuclear?
+ph-nuclear.q2.o0	Sim, em Ferrel
+ph-nuclear.q2.o1	Não, o projeto de Ferrel foi abandonado
+ph-nuclear.q2.o2	Sim, em Lisboa
+ph-nuclear.q2.x	Os planos foram abandonados nos anos 1970.
+ph-nuclear.c0.title	E = mc²
+ph-nuclear.c0.text	Einstein mostrou que massa e energia são equivalentes. Uma quantidade minúscula de massa se converte numa quantidade enorme de energia, porque c², a velocidade da luz ao quadrado, é gigantesco.
+ph-nuclear.c0.viz.f	E = m × c²
+ph-nuclear.c0.viz.items.0.s	m
+ph-nuclear.c0.viz.items.0.m	massa (kg)
+ph-nuclear.c0.viz.items.1.s	c
+ph-nuclear.c0.viz.items.1.m	300.000.000 m/s
+ph-nuclear.c0.viz.items.2.s	1 g
+ph-nuclear.c0.viz.items.2.m	≈ 90 trilhões de J
+ph-nuclear.c1.title	Fissão
+ph-nuclear.c1.text	Um núcleo pesado, como o do urânio-235, absorve um nêutron e se divide em dois núcleos menores, liberando energia e mais dois ou três nêutrons, que podem dividir outros núcleos: uma reação em cadeia.
+ph-nuclear.c1.viz.steps.0	Nêutron atinge o U-235
+ph-nuclear.c1.viz.steps.1	O núcleo se divide
+ph-nuclear.c1.viz.steps.2	Energia e novos nêutrons
+ph-nuclear.c1.viz.steps.3	Mais fissões
+ph-nuclear.c2.title	Por dentro de um reator
+ph-nuclear.c2.text	As barras de combustível aquecem a água; o calor gera vapor, que move uma turbina e um gerador, como numa usina a carvão, mas sem combustão. As barras de controle absorvem nêutrons para manter a reação em cadeia estável.
+ph-nuclear.c2.viz.steps.0	A fissão aquece a água
+ph-nuclear.c2.viz.steps.1	Vapor
+ph-nuclear.c2.viz.steps.2	Turbina
+ph-nuclear.c2.viz.steps.3	Gerador
+ph-nuclear.c2.viz.steps.4	Eletricidade
+ph-nuclear.c3.title	Densidade energética
+ph-nuclear.c3.text	Um quilo de combustível de urânio pode produzir mais ou menos tanta energia quanto milhares de toneladas de carvão. A energia nuclear ocupa muito pouco espaço e quase não emite CO₂ durante a operação.
+ph-nuclear.c3.viz.items.0.v	24 MJ
+ph-nuclear.c3.viz.items.0.l	por kg de carvão
+ph-nuclear.c3.viz.items.1.v	~500.000 MJ
+ph-nuclear.c3.viz.items.1.l	por kg de urânio natural num reator típico
+ph-nuclear.c4.title	Lixo nuclear
+ph-nuclear.c4.text	O combustível usado é altamente radioativo por milhares de anos. Ele ocupa pouco volume e é guardado em piscinas de resfriamento e depois em contêineres secos. Onkalo, na Finlândia, é o primeiro repositório geológico profundo sendo preparado para armazenamento definitivo.
+ph-nuclear.c4.viz.steps.0	Combustível usado
+ph-nuclear.c4.viz.steps.1	Piscinas de resfriamento por anos
+ph-nuclear.c4.viz.steps.2	Contêineres secos
+ph-nuclear.c4.viz.steps.3	Repositório geológico profundo
+ph-nuclear.c5.title	Acidentes
+ph-nuclear.c5.text	Os piores acidentes foram Chernobyl (1986), causado por um projeto de reator falho e um teste inseguro, e Fukushima (2011), onde um tsunami derrubou o resfriamento. Eles moldaram regras de segurança rigorosas no mundo todo.
+ph-nuclear.c5.viz.events.0.l	Three Mile Island, EUA
+ph-nuclear.c5.viz.events.1.l	Chernobyl, URSS
+ph-nuclear.c5.viz.events.2.l	Fukushima, Japão
+ph-nuclear.c6.title	Portugal e a energia nuclear
+ph-nuclear.c6.text	Portugal nunca teve uma usina nuclear. Um projeto dos anos 1970 para construir uma em Ferrel, perto de Peniche, foi abandonado depois de protestos locais. O país chegou a minerar urânio até 2001, na Urgeiriça e em outros locais.
+ph-nuclear.c6.viz.events.0.l	Protestos contra a usina de Ferrel
+ph-nuclear.c6.viz.events.1.y	anos 1970
+ph-nuclear.c6.viz.events.1.l	projeto abandonado
+ph-nuclear.c6.viz.events.2.l	fecham as últimas minas de urânio
+ph-nuclear.c7.title	Fusão
+ph-nuclear.c7.text	A fusão junta núcleos leves, como os isótopos de hidrogênio, formando hélio e liberando ainda mais energia por quilo do que a fissão. É ela que alimenta o Sol. Fazê-la na Terra exige temperaturas acima de 100 milhões de °C.
+ph-nuclear.c7.viz.l.t	Fissão
+ph-nuclear.c7.viz.l.items.0	divide núcleos pesados
+ph-nuclear.c7.viz.l.items.1	urânio
+ph-nuclear.c7.viz.l.items.2	já em uso
+ph-nuclear.c7.viz.r.t	Fusão
+ph-nuclear.c7.viz.r.items.0	junta núcleos leves
+ph-nuclear.c7.viz.r.items.1	hidrogênio
+ph-nuclear.c7.viz.r.items.2	ainda experimental
+ph-nuclear.c8.title	Reatores de fusão
+ph-nuclear.c8.text	Tokamaks como o ITER, em construção na França, confinam plasma quente com ímãs poderosos. Em 2022, a National Ignition Facility dos EUA obteve uma reação de fusão que liberou mais energia do que os lasers entregaram ao alvo.
+ph-nuclear.c8.viz.events.0.y	anos 1950
+ph-nuclear.c8.viz.events.0.l	primeiras ideias de tokamak
+ph-nuclear.c8.viz.events.1.l	ignição no NIF com lasers
+ph-nuclear.c8.viz.events.2.y	anos 2030
+ph-nuclear.c8.viz.events.2.l	experimentos previstos no ITER
+ph-nuclear.c9.title	Pequenos reatores modulares
+ph-nuclear.c9.text	Os SMRs são reatores menores, construídos em fábricas e transportados até o local, com o objetivo de reduzir custos e prazos de construção. Vários projetos estão sendo desenvolvidos e licenciados no mundo todo.
+ph-nuclear.c9.viz.items.0	Módulos feitos em fábrica
+ph-nuclear.c9.viz.items.1	Locais menores
+ph-nuclear.c9.viz.items.2	Segurança passiva
+ph-nuclear.c9.viz.items.3	Ainda em desenvolvimento, na maioria
+ph-relativity.title	Relatividade
+ph-relativity.summary	As ideias de Einstein sobre espaço, tempo e gravidade.
+ph-relativity.q0.q	O que permanece igual para todos os observadores na relatividade?
+ph-relativity.q0.o0	O tempo
+ph-relativity.q0.o1	O comprimento
+ph-relativity.q0.o2	A velocidade da luz no vácuo
+ph-relativity.q0.x	Todo o resto se ajusta em torno dela.
+ph-relativity.q1.q	Por que o GPS precisa corrigir os efeitos da relatividade?
+ph-relativity.q1.o0	Os satélites são frios
+ph-relativity.q1.o1	Seus relógios andam num ritmo diferente, causando erros de posição
+ph-relativity.q1.o2	A luz é lenta
+ph-relativity.q1.x	Sem correção, os erros crescem ~10 km por dia.
+ph-relativity.q2.q	Segundo a relatividade geral, a gravidade é…
+ph-relativity.q2.o0	Uma força magnética
+ph-relativity.q2.o1	A curvatura do espaço-tempo causada pela massa
+ph-relativity.q2.o2	Uma ilusão
+ph-relativity.q2.x	A massa curva o espaço-tempo.
+ph-relativity.c0.title	A velocidade da luz é a mesma para todos
+ph-relativity.c0.text	O ponto de partida de Einstein em 1905: a velocidade da luz no vácuo é a mesma para todos os observadores, não importa a que velocidade eles se movam. Essa regra simples obriga o espaço e o tempo a se esticarem.
+ph-relativity.c0.viz.steps.0	Velocidade da luz fixa para todos
+ph-relativity.c0.viz.steps.1	Relógios em movimento atrasam
+ph-relativity.c0.viz.steps.2	Comprimentos em movimento encolhem
+ph-relativity.c1.title	Dilatação do tempo
+ph-relativity.c1.text	Relógios em movimento andam mais devagar. Nas velocidades do dia a dia o efeito é minúsculo, mas a 87% da velocidade da luz o tempo passa na metade do ritmo.
+ph-relativity.c1.viz.unit	ritmo do tempo (%)
+ph-relativity.c1.viz.items.0.l	Em repouso
+ph-relativity.c1.viz.items.1.l	50% de c
+ph-relativity.c1.viz.items.2.l	87% de c
+ph-relativity.c1.viz.items.3.l	99% de c
+ph-relativity.c2.title	O paradoxo dos gêmeos
+ph-relativity.c2.text	Se uma gêmea viajar até uma estrela distante perto da velocidade da luz e voltar, ela estará mais jovem que a irmã que ficou na Terra. Experimentos com partículas rápidas e relógios atômicos em aviões confirmam isso.
+ph-relativity.c2.viz.l.t	Gêmea que viajou
+ph-relativity.c2.viz.l.items.0	passou menos tempo
+ph-relativity.c2.viz.l.items.1	mais jovem
+ph-relativity.c2.viz.r.t	Gêmea na Terra
+ph-relativity.c2.viz.r.items.0	passou mais tempo
+ph-relativity.c2.viz.r.items.1	mais velha
+ph-relativity.c3.title	Nada mais rápido que a luz
+ph-relativity.c3.text	À medida que um objeto ganha velocidade, é preciso cada vez mais energia para acelerá-lo ainda mais. Atingir a velocidade da luz exigiria energia infinita, por isso nada que tenha massa consegue.
+ph-relativity.c3.viz.items.0	Luz: 300.000 km/s
+ph-relativity.c3.viz.items.1	Nave mais rápida: ~0,06% de c
+ph-relativity.c3.viz.items.2	Aceleradores de partículas: 99,9999…% de c
+ph-relativity.c3.viz.items.3	Nunca 100% com massa
+ph-relativity.c4.title	Relatividade geral
+ph-relativity.c4.text	Em 1915, Einstein descreveu a gravidade não como uma força, mas como espaço-tempo curvo: a massa curva o espaço-tempo e os objetos seguem as curvas. Uma bola pesada sobre um trampolim é a imagem habitual.
+ph-relativity.c4.viz.steps.0	A massa curva o espaço-tempo
+ph-relativity.c4.viz.steps.1	Os objetos seguem as curvas
+ph-relativity.c4.viz.steps.2	Vemos isso como gravidade
+ph-relativity.c5.title	A gravidade atrasa o tempo
+ph-relativity.c5.text	Os relógios andam mais devagar onde a gravidade é mais forte. Um relógio ao nível do mar anda um pouquinho mais devagar que um no alto de uma montanha. O efeito é minúsculo, mas mensurável.
+ph-relativity.c5.viz.l.t	Gravidade forte
+ph-relativity.c5.viz.l.items.0	relógios mais lentos
+ph-relativity.c5.viz.l.items.1	perto da superfície
+ph-relativity.c5.viz.r.t	Gravidade fraca
+ph-relativity.c5.viz.r.items.0	relógios mais rápidos
+ph-relativity.c5.viz.r.items.1	grande altitude, órbita
+ph-relativity.c6.title	O GPS precisa da relatividade
+ph-relativity.c6.text	No total, os relógios dos satélites GPS adiantam cerca de 38 microssegundos por dia (a gravidade os acelera, a velocidade orbital os atrasa). Sem correção, as posições desviariam cerca de 10 km por dia.
+ph-relativity.c6.viz.items.0.v	38 µs
+ph-relativity.c6.viz.items.0.l	diferença do relógio por dia
+ph-relativity.c6.viz.items.1.v	~10 km
+ph-relativity.c6.viz.items.1.l	erro diário de posição sem correção
+ph-relativity.c7.title	A luz se curva
+ph-relativity.c7.text	A gravidade curva a luz. Em 1919, durante um eclipse solar, astrônomos viram estrelas perto do Sol deslocadas exatamente como Einstein previra, o que o tornou mundialmente famoso. Parte da observação foi feita na ilha do Príncipe.
+ph-relativity.c7.viz.steps.0	A luz estelar passa pelo Sol
+ph-relativity.c7.viz.steps.1	Espaço-tempo curvo
+ph-relativity.c7.viz.steps.2	A luz se curva
+ph-relativity.c7.viz.steps.3	A estrela parece deslocada
+ph-relativity.c8.title	Buracos negros
+ph-relativity.c8.text	Se massa suficiente for comprimida num espaço pequeno, sua gravidade fica tão forte que nem a luz escapa. A fronteira é o horizonte de eventos. A primeira imagem de um buraco negro foi publicada em 2019.
+ph-relativity.c8.viz.events.0.l	Solução de Schwarzschild
+ph-relativity.c8.viz.events.1.l	primeiras evidências fortes
+ph-relativity.c8.viz.events.2.l	fusão de buracos negros detectada
+ph-relativity.c8.viz.events.3.l	primeira imagem (M87)
+ph-relativity.c9.title	Energia e massa
+ph-relativity.c9.text	A relatividade restrita também nos deu E = mc². Numa reação nuclear, os produtos pesam um pouco menos que o material inicial; a massa que falta virou energia.
+ph-relativity.c9.viz.f	E = m × c²
+ph-relativity.c9.viz.items.0.s	diferença de massa
+ph-relativity.c9.viz.items.0.m	energia liberada
+ph-quantum.title	O mundo quântico
+ph-quantum.summary	Como as coisas minúsculas se comportam de forma muito estranha.
+ph-quantum.q0.q	Por que uma luz azul fraca consegue arrancar elétrons quando uma luz vermelha forte não consegue?
+ph-quantum.q0.o0	O azul é mais barulhento
+ph-quantum.q0.o1	Cada fóton azul carrega mais energia
+ph-quantum.q0.o2	A luz vermelha é mais lenta
+ph-quantum.q0.x	A energia do fóton depende da frequência.
+ph-quantum.q1.q	O que acontece quando você mede uma partícula em superposição?
+ph-quantum.q1.o0	Nada
+ph-quantum.q1.o1	Você obtém um único resultado definido
+ph-quantum.q1.o2	Ela desaparece
+ph-quantum.q1.x	A medição dá um único resultado.
+ph-quantum.q2.q	Qual tecnologia do dia a dia depende da física quântica?
+ph-quantum.q2.o0	Uma alavanca
+ph-quantum.q2.o1	LEDs e transistores
+ph-quantum.q2.o2	Uma roldana
+ph-quantum.q2.x	Os semicondutores são dispositivos quânticos.
+ph-quantum.c0.title	A energia vem em pacotes
+ph-quantum.c0.text	Em escalas pequenas, a energia não é contínua: ela vem em pacotes chamados quanta. A luz é formada por fótons, cada um com uma energia definida pela sua frequência. Os fótons azuis carregam mais energia que os vermelhos.
+ph-quantum.c0.viz.f	E = h × f
+ph-quantum.c0.viz.items.0.s	h
+ph-quantum.c0.viz.items.0.m	constante de Planck
+ph-quantum.c0.viz.items.1.s	f
+ph-quantum.c0.viz.items.1.m	frequência da luz
+ph-quantum.c1.title	O efeito fotoelétrico
+ph-quantum.c1.text	Ilumine um metal e a luz pode arrancar elétrons, mas só se cada fóton tiver energia suficiente. Uma luz azul fraca funciona; uma vermelha forte pode não funcionar. Einstein explicou isso em 1905, o que lhe valeu o Prêmio Nobel.
+ph-quantum.c1.viz.l.t	Luz vermelha, mesmo forte
+ph-quantum.c1.viz.l.items.0	fótons fracos demais
+ph-quantum.c1.viz.l.items.1	sem elétrons

@@ -8,15 +8,15 @@ ph-energy.q0.o1	Convecção
 ph-energy.q0.o2	Radiação
 ph-energy.q0.x	O espaço está quase vazio, por isso só a radiação o consegue atravessar.
 ph-energy.q1.q	Uma bomba de calor com COP de 3 consome 2 kWh de eletricidade. Quanto calor fornece?
-ph-energy.q1.o0	0.67 kWh
+ph-energy.q1.o0	0,67 kWh
 ph-energy.q1.o1	2 kWh
 ph-energy.q1.o2	6 kWh
 ph-energy.q1.x	Calor fornecido = COP × eletricidade consumida = 3 × 2 = 6 kWh.
 ph-energy.q2.q	Aquecer 2 kg de água em 10 °C exige cerca de…
 ph-energy.q2.o0	84 kJ
-ph-energy.q2.o1	8.4 kJ
+ph-energy.q2.o1	8,4 kJ
 ph-energy.q2.o2	840 kJ
-ph-energy.q2.x	Q = 2 × 4186 × 10 ≈ 83.7 kJ.
+ph-energy.q2.x	Q = 2 × 4186 × 10 ≈ 83,7 kJ.
 ph-energy.q3.q	Porque é que o gelo flutua?
 ph-energy.q3.o0	Porque é mais frio
 ph-energy.q3.o1	A água expande-se ao congelar, por isso o gelo é menos denso
@@ -51,7 +51,7 @@ ph-energy.c3.text	A energia para aquecer algo é massa × calor específico × s
 ph-energy.c3.formula	Q = m × c × ΔT
 ph-energy.c3.example.0	1 L de água de 20 a 100 °C
 ph-energy.c3.example.1	1 × 4186 × 80 = 335 kJ
-ph-energy.c3.example.2	≈ 0.093 kWh, cerca de 2 cêntimos
+ph-energy.c3.example.2	≈ 0,093 kWh, cerca de 2 cêntimos
 ph-energy.c3.sketch.0	1 L de água
 ph-energy.c3.sketch.1	20 → 100 °C
 ph-energy.c3.sketch.2	Q = 1 × 4186 × 80 ≈ 335 kJ
@@ -64,12 +64,12 @@ ph-energy.c4.viz.items.2	Química
 ph-energy.c4.viz.items.3	Elétrica e radiante
 ph-energy.c4.viz.items.4	Nuclear
 ph-energy.c5.title	Energia dos alimentos
-ph-energy.c5.text	A energia dos alimentos mede-se em quilocalorias (kcal), que nos rótulos aparecem como "Calorias". Uma kcal são cerca de 4.2 kJ. Uma dieta diária de 2000 kcal são cerca de 2.3 kWh, mais ou menos uma lâmpada de 100 W acesa o dia inteiro.
-ph-energy.c5.viz.f	1 kcal ≈ 4.184 kJ
+ph-energy.c5.text	A energia dos alimentos mede-se em quilocalorias (kcal), que nos rótulos aparecem como "Calorias". Uma kcal são cerca de 4,2 kJ. Uma dieta diária de 2000 kcal são cerca de 2,3 kWh, mais ou menos uma lâmpada de 100 W acesa o dia inteiro.
+ph-energy.c5.viz.f	1 kcal ≈ 4,184 kJ
 ph-energy.c5.viz.items.0.s	2000 kcal
-ph-energy.c5.viz.items.0.m	≈ 8.4 MJ
-ph-energy.c5.viz.items.1.s	8.4 MJ
-ph-energy.c5.viz.items.1.m	≈ 2.3 kWh
+ph-energy.c5.viz.items.0.m	≈ 8,4 MJ
+ph-energy.c5.viz.items.1.s	8,4 MJ
+ph-energy.c5.viz.items.1.m	≈ 2,3 kWh
 ph-energy.c5.viz.items.2.s	potência média do corpo
 ph-energy.c5.viz.items.2.m	≈ 100 W
 ph-energy.c6.title	Dilatação térmica no dia a dia
@@ -143,7 +143,7 @@ ph-waves.c2.sketch.0	luz ≈ instantânea
 ph-waves.c2.sketch.1	som: 1 km / 3 s
 ph-waves.c2.sketch.2	segundos ÷ 3 = km
 ph-waves.c3.title	O espetro eletromagnético
-ph-waves.c3.text	Rádio, micro-ondas, infravermelhos, luz visível, ultravioleta e raios X são todos a mesma coisa: ondas eletromagnéticas, todas a mover-se à velocidade da luz. Só o comprimento de onda muda.\n\nOndas mais curtas transportam mais energia por fotão. É por isso que os UV podem queimar a pele e os raios X a atravessam, enquanto a rádio é inofensiva. O Wi-Fi a 2.4 GHz tem um comprimento de onda de cerca de 12.5 cm.
+ph-waves.c3.text	Rádio, micro-ondas, infravermelhos, luz visível, ultravioleta e raios X são todos a mesma coisa: ondas eletromagnéticas, todas a mover-se à velocidade da luz. Só o comprimento de onda muda.\n\nOndas mais curtas transportam mais energia por fotão. É por isso que os UV podem queimar a pele e os raios X a atravessam, enquanto a rádio é inofensiva. O Wi-Fi a 2,4 GHz tem um comprimento de onda de cerca de 12,5 cm.
 ph-waves.c3.sketch.0	rádio
 ph-waves.c3.sketch.1	micro
 ph-waves.c3.sketch.2	IV
@@ -151,7 +151,7 @@ ph-waves.c3.sketch.3	luz
 ph-waves.c3.sketch.4	UV
 ph-waves.c3.sketch.5	raios X
 ph-waves.c3.sketch.6	gama
-ph-waves.c3.sketch.7	Wi-Fi 2.4 GHz ≈ 12.5 cm
+ph-waves.c3.sketch.7	Wi-Fi 2.4 GHz ≈ 12,5 cm
 ph-waves.c3.sketch.8	ondas mais longas
 ph-waves.c3.sketch.9	mais energia
 ph-waves.c4.title	Transversais e longitudinais
@@ -183,9 +183,9 @@ ph-waves.c6.viz.r.items.2	mais baixo
 ph-waves.c7.title	Difração
 ph-waves.c7.text	As ondas contornam obstáculos e espalham-se por aberturas comparáveis ao seu comprimento de onda. É por isso que consegues ouvir alguém do outro lado de uma esquina, mas não vê-lo: as ondas sonoras medem metros, as de luz menos de um micrómetro.
 ph-waves.c7.viz.items.0.a	onda do som
-ph-waves.c7.viz.items.0.b	~0.02–17 m, contorna esquinas
+ph-waves.c7.viz.items.0.b	~0,02–17 m, contorna esquinas
 ph-waves.c7.viz.items.1.a	onda da luz
-ph-waves.c7.viz.items.1.b	~0.0005 mm, mal se curva
+ph-waves.c7.viz.items.1.b	~0,0005 mm, mal se curva
 ph-waves.c8.title	Ressonância
 ph-waves.c8.text	Todos os objetos têm frequências naturais. Empurra-os no ritmo certo e a vibração cresce, como quando empurras um baloiço. Os instrumentos musicais usam a ressonância; os engenheiros evitam-na em pontes e máquinas.
 ph-waves.c8.viz.items.0	Baloiços e pêndulos
@@ -206,7 +206,7 @@ ph-motion.q0.q	90 km/h em m/s são…
 ph-motion.q0.o0	9 m/s
 ph-motion.q0.o1	25 m/s
 ph-motion.q0.o2	324 m/s
-ph-motion.q0.x	90 ÷ 3.6 = 25 m/s.
+ph-motion.q0.x	90 ÷ 3,6 = 25 m/s.
 ph-motion.q1.q	Se duplicares a velocidade, a distância de travagem passa a ser cerca de…
 ph-motion.q1.o0	O dobro
 ph-motion.q1.o1	Quatro vezes
@@ -218,13 +218,13 @@ ph-motion.q2.o1	Ao mesmo ritmo
 ph-motion.q2.o2	Primeiro a pena
 ph-motion.q2.x	Demonstrado na Lua em 1971.
 ph-motion.c0.title	Rapidez
-ph-motion.c0.text	A rapidez é a distância a dividir pelo tempo. Um carro que percorre 120 km em 1.5 horas faz uma média de 80 km/h. Para converter km/h em m/s, divide por 3.6.
+ph-motion.c0.text	A rapidez é a distância a dividir pelo tempo. Um carro que percorre 120 km em 1,5 horas faz uma média de 80 km/h. Para converter km/h em m/s, divide por 3,6.
 ph-motion.c0.viz.f	v = d ÷ t
 ph-motion.c0.viz.items.0.s	d
 ph-motion.c0.viz.items.0.m	distância
 ph-motion.c0.viz.items.1.s	t
 ph-motion.c0.viz.items.1.m	tempo
-ph-motion.c0.viz.items.2.s	km/h ÷ 3.6
+ph-motion.c0.viz.items.2.s	km/h ÷ 3,6
 ph-motion.c0.viz.items.2.m	= m/s
 ph-motion.c1.title	Rapidez vs velocidade
 ph-motion.c1.text	A velocidade é a rapidez com uma direção. Um carro a dar a volta a uma rotunda a rapidez constante tem uma velocidade variável, porque a direção está sempre a mudar.
@@ -235,17 +235,17 @@ ph-motion.c1.viz.r.t	Velocidade
 ph-motion.c1.viz.r.items.0	quão depressa e para onde
 ph-motion.c1.viz.r.items.1	50 km/h para norte
 ph-motion.c2.title	Aceleração
-ph-motion.c2.text	A aceleração é a rapidez com que a velocidade muda. Um carro que vai de 0 a 100 km/h (27.8 m/s) em 8 segundos acelera a cerca de 3.5 m/s².
-ph-motion.c2.example.0	0 a 27.8 m/s em 8 s
-ph-motion.c2.example.1	27.8 ÷ 8
-ph-motion.c2.example.2	≈ 3.5 m/s²
+ph-motion.c2.text	A aceleração é a rapidez com que a velocidade muda. Um carro que vai de 0 a 100 km/h (27,8 m/s) em 8 segundos acelera a cerca de 3,5 m/s².
+ph-motion.c2.example.0	0 a 27,8 m/s em 8 s
+ph-motion.c2.example.1	27,8 ÷ 8
+ph-motion.c2.example.2	≈ 3,5 m/s²
 ph-motion.c2.viz.f	a = Δv ÷ t
 ph-motion.c2.viz.items.0.s	Δv
 ph-motion.c2.viz.items.0.m	variação da velocidade
 ph-motion.c2.viz.items.1.s	t
 ph-motion.c2.viz.items.1.m	tempo decorrido
 ph-motion.c3.title	Queda livre
-ph-motion.c3.text	Perto da superfície da Terra, os objetos em queda ganham cerca de 9.81 m/s de velocidade a cada segundo, se a resistência do ar for desprezável. Ao fim de 1 s estás a cair a cerca de 35 km/h; ao fim de 3 s, a mais de 100 km/h.
+ph-motion.c3.text	Perto da superfície da Terra, os objetos em queda ganham cerca de 9,81 m/s de velocidade a cada segundo, se a resistência do ar for desprezável. Ao fim de 1 s estás a cair a cerca de 35 km/h; ao fim de 3 s, a mais de 100 km/h.
 ph-motion.c3.viz.unit	velocidade em km/h
 ph-motion.c3.viz.items.0.l	1 s
 ph-motion.c3.viz.items.1.l	2 s
@@ -267,7 +267,7 @@ ph-motion.c5.viz.items.3.l	De cabeça para baixo
 ph-motion.c6.title	Distância de paragem
 ph-motion.c6.text	A distância de paragem é a distância de reação mais a distância de travagem. A distância de travagem cresce com o quadrado da velocidade: o dobro da velocidade, quatro vezes a distância de travagem.
 ph-motion.c6.example.0	50 km/h vs 100 km/h
-ph-motion.c6.example.1	13.9² ÷ 14 vs 27.8² ÷ 14
+ph-motion.c6.example.1	13,9² ÷ 14 vs 27,8² ÷ 14
 ph-motion.c6.example.2	≈ 14 m vs 55 m de travagem
 ph-motion.c6.viz.f	d travagem = v² ÷ (2 × a)
 ph-motion.c6.viz.items.0.s	v
@@ -299,7 +299,7 @@ ph-motion.c9.viz.items.2.b	distância
 ph-newton.title	Leis de Newton
 ph-newton.summary	As três regras por trás de cada empurrão e puxão.
 ph-newton.q0.q	Um carro de 1000 kg com uma força resultante de 2000 N acelera a…
-ph-newton.q0.o0	0.5 m/s²
+ph-newton.q0.o0	0,5 m/s²
 ph-newton.q0.o1	2 m/s²
 ph-newton.q0.o2	2000 m/s²
 ph-newton.q0.x	a = F ÷ m.
@@ -442,7 +442,7 @@ ph-gravity.c5.viz.steps.1	Duas protuberâncias no oceano
 ph-gravity.c5.viz.steps.2	A Terra roda por baixo delas
 ph-gravity.c5.viz.steps.3	Duas marés altas por dia
 ph-gravity.c6.title	Velocidade de escape
-ph-gravity.c6.text	Para sair da Terra sem mais propulsão, precisarias de cerca de 11.2 km/s (40 300 km/h). Os foguetões não a atingem de imediato; queimam combustível durante minutos, subindo e acelerando.
+ph-gravity.c6.text	Para sair da Terra sem mais propulsão, precisarias de cerca de 11,2 km/s (40 300 km/h). Os foguetões não a atingem de imediato; queimam combustível durante minutos, subindo e acelerando.
 ph-gravity.c6.viz.unit	velocidade de escape (km/s)
 ph-gravity.c6.viz.items.0.l	Lua
 ph-gravity.c6.viz.items.1.l	Marte
@@ -468,11 +468,11 @@ ph-gravity.c9.viz.events.2.l	LIGO deteta-as diretamente
 ph-gravity.c9.viz.events.3.l	Prémio Nobel
 ph-momentum.title	Momento linear e colisões
 ph-momentum.summary	Porque é que coisas pesadas e rápidas são difíceis de parar.
-ph-momentum.q0.q	Uma bola de 0.5 kg a 10 m/s tem um momento linear de…
+ph-momentum.q0.q	Uma bola de 0,5 kg a 10 m/s tem um momento linear de…
 ph-momentum.q0.o0	20 kg·m/s
 ph-momentum.q0.o1	5 kg·m/s
-ph-momentum.q0.o2	0.05 kg·m/s
-ph-momentum.q0.x	0.5 × 10 = 5.
+ph-momentum.q0.o2	0,05 kg·m/s
+ph-momentum.q0.x	0,5 × 10 = 5.
 ph-momentum.q1.q	Porque é que os patinadores giram mais depressa quando encolhem os braços?
 ph-momentum.q1.o0	Menos atrito
 ph-momentum.q1.o1	O momento angular conserva-se à medida que o corpo fica mais compacto
@@ -597,11 +597,11 @@ ph-gases.c3.viz.f	p × V = n × R × T
 ph-gases.c3.viz.items.0.s	n
 ph-gases.c3.viz.items.0.m	quantidade de gás (moles)
 ph-gases.c3.viz.items.1.s	R
-ph-gases.c3.viz.items.1.m	8.314 J/mol·K
+ph-gases.c3.viz.items.1.m	8,314 J/mol·K
 ph-gases.c3.viz.items.2.s	T
 ph-gases.c3.viz.items.2.m	kelvin
 ph-gases.c4.title	Pressão do ar e altitude
-ph-gases.c4.text	A pressão do ar cai para metade mais ou menos a cada 5.5 km de altitude. No alto da Serra da Estrela (1993 m) é cerca de 80% da do nível do mar; no Evereste, cerca de um terço.
+ph-gases.c4.text	A pressão do ar cai para metade mais ou menos a cada 5,5 km de altitude. No alto da Serra da Estrela (1993 m) é cerca de 80% da do nível do mar; no Evereste, cerca de um terço.
 ph-gases.c4.viz.unit	% da pressão ao nível do mar
 ph-gases.c4.viz.items.0.l	Nível do mar
 ph-gases.c4.viz.items.1.l	Serra da Estrela
@@ -666,7 +666,7 @@ ph-light.c0.viz.items.0.v	300 000 km/s
 ph-light.c0.viz.items.0.l	velocidade da luz
 ph-light.c0.viz.items.1.v	8 min 20 s
 ph-light.c0.viz.items.1.l	desde o Sol
-ph-light.c0.viz.items.2.v	1.3 s
+ph-light.c0.viz.items.2.v	1,3 s
 ph-light.c0.viz.items.2.l	desde a Lua
 ph-light.c1.title	Reflexão
 ph-light.c1.text	A luz ressalta num espelho com o mesmo ângulo com que lhe bate: o ângulo de incidência é igual ao ângulo de reflexão. As superfícies rugosas espalham a luz em todas as direções, e é por isso que o papel não é um espelho.
@@ -798,7 +798,7 @@ ph-colour.c5.viz.items.1.b	médias (verde)
 ph-colour.c5.viz.items.2.a	cones S
 ph-colour.c5.viz.items.2.b	curtas (azul)
 ph-colour.c6.title	Daltonismo
-ph-colour.c6.text	Cerca de 8% dos homens e 0.5% das mulheres de ascendência norte-europeia têm alguma deficiência na visão das cores vermelho–verde, normalmente hereditária. Um bom design nunca depende só da cor.
+ph-colour.c6.text	Cerca de 8% dos homens e 0,5% das mulheres de ascendência norte-europeia têm alguma deficiência na visão das cores vermelho–verde, normalmente hereditária. Um bom design nunca depende só da cor.
 ph-colour.c6.viz.items.0.l	dos homens
 ph-colour.c6.viz.items.1.l	das mulheres
 ph-colour.c7.title	Infravermelho e ultravioleta
@@ -925,7 +925,7 @@ ph-atoms.q2.o2	Na Terra
 ph-atoms.q2.x	As estrelas forjam os elementos mais pesados.
 ph-atoms.c0.title	Minúsculo e quase vazio
 ph-atoms.c0.text	Um átomo tem um núcleo minúsculo e denso de protões e neutrões, rodeado por uma nuvem de eletrões. Se o núcleo fosse um berlinde no centro de um estádio de futebol, os eletrões estariam nas bancadas exteriores.
-ph-atoms.c0.viz.items.0.v	0.1 nm
+ph-atoms.c0.viz.items.0.v	0,1 nm
 ph-atoms.c0.viz.items.0.l	tamanho de um átomo
 ph-atoms.c0.viz.items.1.l	átomo maior que o núcleo
 ph-atoms.c1.title	Protões, neutrões, eletrões
@@ -1001,7 +1001,7 @@ ph-radio.q0.o2	Gama
 ph-radio.q0.x	As partículas alfa são grandes e pesadas.
 ph-radio.q1.q	Ao fim de 3 semividas, quanto resta de uma amostra?
 ph-radio.q1.o0	33%
-ph-radio.q1.o1	12.5%
+ph-radio.q1.o1	12,5%
 ph-radio.q1.o2	3%
 ph-radio.q1.x	½ × ½ × ½ = 1/8.
 ph-radio.q2.q	Qual é, para muitas pessoas, a maior fonte natural de radiação?
@@ -1021,19 +1021,19 @@ ph-radio.c1.viz.items.0	Gama: chumbo ou betão espesso
 ph-radio.c1.viz.items.1	Beta: alguns mm de alumínio
 ph-radio.c1.viz.items.2	Alfa: papel ou pele
 ph-radio.c2.title	Semivida
-ph-radio.c2.text	Cada isótopo radioativo tem uma semivida: o tempo que demora metade de uma amostra a decair. Ao fim de duas semividas resta um quarto; ao fim de dez, menos de 0.1%.
+ph-radio.c2.text	Cada isótopo radioativo tem uma semivida: o tempo que demora metade de uma amostra a decair. Ao fim de duas semividas resta um quarto; ao fim de dez, menos de 0,1%.
 ph-radio.c2.viz.unit	% restante
 ph-radio.c2.viz.items.1.l	1 semivida
 ph-radio.c3.title	As semividas variam imenso
 ph-radio.c3.text	Alguns isótopos decaem em segundos, outros ao longo de milhares de milhões de anos.
 ph-radio.c3.viz.items.0.a	radão-222
-ph-radio.c3.viz.items.0.b	3.8 dias
+ph-radio.c3.viz.items.0.b	3,8 dias
 ph-radio.c3.viz.items.1.a	iodo-131
 ph-radio.c3.viz.items.1.b	8 dias
 ph-radio.c3.viz.items.2.a	carbono-14
 ph-radio.c3.viz.items.2.b	5730 anos
 ph-radio.c3.viz.items.3.a	urânio-238
-ph-radio.c3.viz.items.3.b	4.5 mil milhões de anos
+ph-radio.c3.viz.items.3.b	4,5 mil milhões de anos
 ph-radio.c4.title	Datação por carbono
 ph-radio.c4.text	Os seres vivos absorvem carbono-14 constantemente. Quando morrem, este decai com uma semivida de 5730 anos. Medir o que resta permite datar restos orgânicos com até cerca de 50 000 anos.
 ph-radio.c4.viz.steps.0	Organismo vivo: C-14 estável
@@ -1055,7 +1055,7 @@ ph-radio.c6.viz.items.1	Ventilar o rés-do-chão
 ph-radio.c6.viz.items.2	Selar fissuras no pavimento
 ph-radio.c6.viz.items.3	Extração sob o pavimento se for alto
 ph-radio.c7.title	Medir a dose
-ph-radio.c7.text	A dose de radiação nas pessoas mede-se em sieverts (Sv), normalmente milisieverts (mSv). Um raio X ao tórax são cerca de 0.02 mSv; uma TAC, vários mSv; um voo Lisboa–Nova Iorque, cerca de 0.04 mSv.
+ph-radio.c7.text	A dose de radiação nas pessoas mede-se em sieverts (Sv), normalmente milisieverts (mSv). Um raio X ao tórax são cerca de 0,02 mSv; uma TAC, vários mSv; um voo Lisboa–Nova Iorque, cerca de 0,04 mSv.
 ph-radio.c7.viz.unit	mSv (aprox.)
 ph-radio.c7.viz.items.0.l	Raio X ao tórax
 ph-radio.c7.viz.items.1.l	Voo transatlântico
@@ -1199,8 +1199,8 @@ ph-relativity.c2.viz.r.items.1	mais velha
 ph-relativity.c3.title	Nada mais rápido do que a luz
 ph-relativity.c3.text	À medida que um objeto acelera, é preciso cada vez mais energia para o acelerar ainda mais. Atingir a velocidade da luz exigiria energia infinita, por isso nada com massa o consegue.
 ph-relativity.c3.viz.items.0	Luz: 300 000 km/s
-ph-relativity.c3.viz.items.1	Nave mais rápida: ~0.06% de c
-ph-relativity.c3.viz.items.2	Aceleradores de partículas: 99.9999…% de c
+ph-relativity.c3.viz.items.1	Nave mais rápida: ~0,06% de c
+ph-relativity.c3.viz.items.2	Aceleradores de partículas: 99,9999…% de c
 ph-relativity.c3.viz.items.3	Nunca 100% com massa
 ph-relativity.c4.title	Relatividade geral
 ph-relativity.c4.text	Em 1915, Einstein descreveu a gravidade não como uma força, mas como espaço-tempo curvo: a massa curva o espaço-tempo e os objetos seguem as curvas. A imagem habitual é a de uma bola pesada num trampolim.
@@ -1341,7 +1341,7 @@ ph-solar.q2.o1	Passou a ser considerado um planeta anão
 ph-solar.q2.o2	Fundiu-se com Neptuno
 ph-solar.q2.x	Não limpa a sua órbita de outros corpos.
 ph-solar.c0.title	O Sol
-ph-solar.c0.text	O Sol é uma estrela comum, com 109 vezes o diâmetro da Terra, e concentra 99.8% da massa do Sistema Solar. Funde cerca de 600 milhões de toneladas de hidrogénio em hélio a cada segundo.
+ph-solar.c0.text	O Sol é uma estrela comum, com 109 vezes o diâmetro da Terra, e concentra 99,8% da massa do Sistema Solar. Funde cerca de 600 milhões de toneladas de hidrogénio em hélio a cada segundo.
 ph-solar.c0.viz.items.0.l	diâmetro da Terra
 ph-solar.c0.viz.items.1.l	da massa do Sistema Solar
 ph-solar.c0.viz.items.2.v	15 milhões °C
@@ -1391,7 +1391,7 @@ ph-solar.c5.viz.items.2.b	oceano sob o gelo
 ph-solar.c5.viz.items.3.a	Titã
 ph-solar.c5.viz.items.3.b	lagos de metano
 ph-solar.c6.title	Luas
-ph-solar.c6.text	O Sistema Solar tem centenas de luas conhecidas. A nossa Lua formou-se provavelmente quando um corpo do tamanho de Marte chocou com a Terra jovem, há cerca de 4.5 mil milhões de anos.
+ph-solar.c6.text	O Sistema Solar tem centenas de luas conhecidas. A nossa Lua formou-se provavelmente quando um corpo do tamanho de Marte chocou com a Terra jovem, há cerca de 4,5 mil milhões de anos.
 ph-solar.c6.viz.steps.0	Corpo do tamanho de Marte atinge a Terra
 ph-solar.c6.viz.steps.1	Detritos lançados em órbita
 ph-solar.c6.viz.steps.2	Os detritos juntam-se
@@ -1413,12 +1413,12 @@ ph-solar.c8.viz.items.1.l	Terra
 ph-solar.c8.viz.items.2.l	Marte
 ph-solar.c8.viz.items.3.l	Úrano
 ph-solar.c9.title	Idade
-ph-solar.c9.text	O Sistema Solar formou-se há cerca de 4.6 mil milhões de anos a partir de uma nuvem de gás e poeira em colapso. Os meteoritos dão as datas mais precisas.
-ph-solar.c9.viz.events.0.y	há 4.6 mil M anos
+ph-solar.c9.text	O Sistema Solar formou-se há cerca de 4,6 mil milhões de anos a partir de uma nuvem de gás e poeira em colapso. Os meteoritos dão as datas mais precisas.
+ph-solar.c9.viz.events.0.y	há 4,6 mil M anos
 ph-solar.c9.viz.events.0.l	nasce o Sol
-ph-solar.c9.viz.events.1.y	4.5 mil M
+ph-solar.c9.viz.events.1.y	4,5 mil M
 ph-solar.c9.viz.events.1.l	Terra e Lua
-ph-solar.c9.viz.events.2.y	3.8 mil M
+ph-solar.c9.viz.events.2.y	3,8 mil M
 ph-solar.c9.viz.events.2.l	primeira vida na Terra
 ph-solar.c9.viz.events.3.y	hoje
 ph-solar.c9.viz.events.3.l	continua
@@ -1436,7 +1436,7 @@ ph-stars.q1.o2	Numa supernova
 ph-stars.q1.x	Não tem massa suficiente para explodir.
 ph-stars.q2.q	Quando vemos Andrómeda, vemo-la como era…
 ph-stars.q2.o0	Agora
-ph-stars.q2.o1	Há cerca de 2.5 milhões de anos
+ph-stars.q2.o1	Há cerca de 2,5 milhões de anos
 ph-stars.q2.o2	Há 8 minutos
 ph-stars.q2.x	A sua luz demorou esse tempo a chegar.
 ph-stars.c0.title	O que é uma estrela
@@ -1446,7 +1446,7 @@ ph-stars.c0.viz.steps.1	Começa a fusão
 ph-stars.c0.viz.steps.2	A energia empurra para fora
 ph-stars.c0.viz.steps.3	Equilíbrio: estrela estável
 ph-stars.c1.title	Anos-luz
-ph-stars.c1.text	Um ano-luz é a distância que a luz percorre num ano: cerca de 9.5 biliões de km. A estrela mais próxima depois do Sol, Próxima do Centauro, está a 4.2 anos-luz.
+ph-stars.c1.text	Um ano-luz é a distância que a luz percorre num ano: cerca de 9,5 biliões de km. A estrela mais próxima depois do Sol, Próxima do Centauro, está a 4,2 anos-luz.
 ph-stars.c1.viz.unit	anos-luz
 ph-stars.c1.viz.items.0.l	Próxima do Centauro
 ph-stars.c1.viz.items.1.l	Sírio
@@ -1475,6 +1475,286 @@ ph-stars.c5.title	Estrelas de neutrões
 ph-stars.c5.text	Uma estrela de neutrões concentra mais do que a massa do Sol numa bola com cerca de 20 km de diâmetro. Uma colher de chá dela pesaria cerca de mil milhões de toneladas na Terra. Algumas rodam centenas de vezes por segundo, como pulsares.
 ph-stars.c5.viz.items.0.v	20 km
 ph-stars.c5.viz.items.0.l	diâmetro
-ph-stars.c5.viz.items.1.v	1.4+ Sóis
+ph-stars.c5.viz.items.1.v	1,4+ Sóis
 ph-stars.c5.viz.items.1.l	de massa
 ph-stars.c5.viz.items.2.v	~mil milhões t
+ph-stars.c5.viz.items.2.l	por colher de chá
+ph-stars.c6.title	A Via Láctea
+ph-stars.c6.text	A nossa galáxia é uma espiral barrada com talvez 100–400 mil milhões de estrelas e cerca de 100 000 anos-luz de diâmetro. O Sol fica num braço exterior e demora cerca de 230 milhões de anos a dar a volta ao centro.
+ph-stars.c6.viz.items.0.v	100–400 mil M
+ph-stars.c6.viz.items.0.l	estrelas
+ph-stars.c6.viz.items.1.v	100 000 a.l.
+ph-stars.c6.viz.items.1.l	de diâmetro
+ph-stars.c6.viz.items.2.v	230 M anos
+ph-stars.c6.viz.items.2.l	uma órbita do Sol
+ph-stars.c7.title	Galáxias por todo o lado
+ph-stars.c7.text	O universo observável contém entre centenas de milhares de milhões e cerca de dois biliões de galáxias. A galáxia de Andrómeda, a 2,5 milhões de anos-luz, vê-se a olho nu em noites escuras e vai fundir-se com a nossa daqui a cerca de 4–5 mil milhões de anos.
+ph-stars.c7.viz.items.0	Galáxias espirais
+ph-stars.c7.viz.items.1	Galáxias elípticas
+ph-stars.c7.viz.items.2	Galáxias irregulares
+ph-stars.c7.viz.items.3	Enxames e superenxames
+ph-stars.c8.title	Olhar para o passado
+ph-stars.c8.text	A luz demora tempo a viajar, por isso vemos os objetos distantes como eram. Vemos o Sol como era há 8 minutos e Andrómeda como era há 2,5 milhões de anos.
+ph-stars.c8.viz.items.0.a	Lua
+ph-stars.c8.viz.items.0.b	há 1,3 segundos
+ph-stars.c8.viz.items.1.a	Sol
+ph-stars.c8.viz.items.1.b	há 8 minutos
+ph-stars.c8.viz.items.2.a	Próxima do Centauro
+ph-stars.c8.viz.items.2.b	há 4,2 anos
+ph-stars.c8.viz.items.3.a	Andrómeda
+ph-stars.c8.viz.items.3.b	há 2,5 milhões de anos
+ph-stars.c9.title	Exoplanetas
+ph-stars.c9.text	Desde o primeiro confirmado, em 1995, à volta de uma estrela como o Sol, já se encontraram mais de 5000 planetas à volta de outras estrelas, sobretudo pelas minúsculas quebras de brilho quando passam à frente delas.
+ph-stars.c9.viz.steps.0	O planeta passa à frente da estrela
+ph-stars.c9.viz.steps.1	O brilho da estrela baixa um pouco
+ph-stars.c9.viz.steps.2	O telescópio mede-o
+ph-stars.c9.viz.steps.3	Tamanho e órbita do planeta
+ph-cosmos.title	O universo
+ph-cosmos.summary	O Big Bang, a expansão e o que ainda não sabemos.
+ph-cosmos.q0.q	Que idade tem o universo?
+ph-cosmos.q0.o0	4,6 mil milhões de anos
+ph-cosmos.q0.o1	Cerca de 13,8 mil milhões de anos
+ph-cosmos.q0.o2	1 bilião de anos
+ph-cosmos.q0.x	Medida a partir da expansão e da radiação cósmica de fundo.
+ph-cosmos.q1.q	Qual é a maior parte do conteúdo do universo?
+ph-cosmos.q1.o0	Matéria comum
+ph-cosmos.q1.o1	Matéria escura
+ph-cosmos.q1.o2	Energia escura
+ph-cosmos.q1.x	Cerca de 68%.
+ph-cosmos.q2.q	Em 1929, Hubble descobriu que…
+ph-cosmos.q2.o0	O Sol é uma estrela
+ph-cosmos.q2.o1	As galáxias distantes se afastam, por isso o espaço está a expandir-se
+ph-cosmos.q2.o2	Marte tem água
+ph-cosmos.q2.x	A expansão do universo.
+ph-cosmos.c0.title	Um universo em expansão
+ph-cosmos.c0.text	Em 1929, Edwin Hubble descobriu que as galáxias distantes se estão a afastar de nós, tanto mais depressa quanto mais longe estão. O próprio espaço está a expandir-se, como pontos num balão a encher.
+ph-cosmos.c0.viz.steps.0	Galáxias distantes
+ph-cosmos.c0.viz.steps.1	Luz esticada para o vermelho
+ph-cosmos.c0.viz.steps.2	Mais longe, mais rápido
+ph-cosmos.c0.viz.steps.3	O espaço expande-se
+ph-cosmos.c1.title	O Big Bang
+ph-cosmos.c1.text	Andando com a expansão para trás, o universo foi em tempos extremamente quente e denso, há cerca de 13,8 mil milhões de anos. O Big Bang não foi uma explosão no espaço, mas a expansão do próprio espaço.
+ph-cosmos.c1.viz.events.0.y	há 13,8 mil M anos
+ph-cosmos.c1.viz.events.0.l	Big Bang
+ph-cosmos.c1.viz.events.1.y	3 minutos
+ph-cosmos.c1.viz.events.1.l	primeiros núcleos
+ph-cosmos.c1.viz.events.2.y	380 000 anos
+ph-cosmos.c1.viz.events.2.l	primeiros átomos, luz liberta
+ph-cosmos.c1.viz.events.3.y	200 M anos
+ph-cosmos.c1.viz.events.3.l	primeiras estrelas
+ph-cosmos.c2.title	A radiação cósmica de fundo
+ph-cosmos.c2.text	Quando o universo arrefeceu o suficiente para se formarem átomos, a luz pôde viajar livremente. Essa luz, esticada até às micro-ondas, ainda enche o céu a 2,7 K. Foi descoberta por acaso em 1965.
+ph-cosmos.c2.viz.items.0.v	2,7 K
+ph-cosmos.c2.viz.items.0.l	temperatura da radiação de fundo
+ph-cosmos.c2.viz.items.1.l	descoberta
+ph-cosmos.c2.viz.items.2.v	380 000 anos
+ph-cosmos.c2.viz.items.2.l	depois do Big Bang
+ph-cosmos.c3.title	Matéria escura
+ph-cosmos.c3.text	As galáxias rodam demasiado depressa para que a matéria visível as mantenha unidas. Algo invisível acrescenta gravidade extra: a matéria escura. Ninguém sabe ainda o que é.
+ph-cosmos.c3.viz.steps.0	Galáxias rodam depressa
+ph-cosmos.c3.viz.steps.1	Massa visível insuficiente
+ph-cosmos.c3.viz.steps.2	Falta massa invisível
+ph-cosmos.c3.viz.steps.3	Matéria escura
+ph-cosmos.c4.title	Energia escura
+ph-cosmos.c4.text	Em 1998, os astrónomos descobriram que a expansão está a acelerar. Aquilo que a impulsiona chama-se energia escura. Constitui a maior parte do conteúdo energético do universo.
+ph-cosmos.c4.viz.unit	% do conteúdo do universo (aprox.)
+ph-cosmos.c4.viz.items.0.l	Matéria comum
+ph-cosmos.c4.viz.items.1.l	Matéria escura
+ph-cosmos.c4.viz.items.2.l	Energia escura
+ph-cosmos.c5.title	Que tamanho tem?
+ph-cosmos.c5.text	O universo observável tem cerca de 93 mil milhões de anos-luz de diâmetro, mais do que 13,8 mil milhões × 2, porque o espaço se expandiu enquanto a luz viajava. Para lá dele, o universo pode ser infinito.
+ph-cosmos.c5.viz.items.0.v	93 mil M a.l.
+ph-cosmos.c5.viz.items.0.l	diâmetro do universo observável
+ph-cosmos.c5.viz.items.1.v	13,8 mil M anos
+ph-cosmos.c5.viz.items.1.l	idade
+ph-cosmos.c6.title	Telescópios como máquinas do tempo
+ph-cosmos.c6.text	O Telescópio Espacial James Webb, lançado em 2021, vê a luz infravermelha de galáxias formadas apenas algumas centenas de milhões de anos depois do Big Bang.
+ph-cosmos.c6.viz.events.0.l	lançamento do Hubble
+ph-cosmos.c6.viz.events.1.l	lançamento do James Webb
+ph-cosmos.c6.viz.events.2.l	primeiras imagens do Webb
+ph-cosmos.c7.title	Elementos do universo primitivo
+ph-cosmos.c7.text	O Big Bang produziu sobretudo hidrogénio e hélio, com vestígios de lítio. Tudo o que é mais pesado veio depois, das estrelas, por isso o universo ainda é cerca de 74% hidrogénio e 24% hélio em massa.
+ph-cosmos.c7.viz.unit	% da matéria comum em massa
+ph-cosmos.c7.viz.items.0.l	Hidrogénio
+ph-cosmos.c7.viz.items.1.l	Hélio
+ph-cosmos.c7.viz.items.2.l	Todo o resto
+ph-cosmos.c8.title	Perguntas em aberto
+ph-cosmos.c8.text	Os físicos ainda não sabem o que são a matéria escura e a energia escura, porque há mais matéria do que antimatéria, nem como juntar a mecânica quântica com a gravidade.
+ph-cosmos.c8.viz.items.0	O que é a matéria escura?
+ph-cosmos.c8.viz.items.1	O que é a energia escura?
+ph-cosmos.c8.viz.items.2	Porquê mais matéria que antimatéria?
+ph-cosmos.c8.viz.items.3	Como funciona a gravidade quântica?
+ph-cosmos.c9.title	O nosso endereço cósmico
+ph-cosmos.c9.text	Terra, Sistema Solar, Braço de Orionte, Via Láctea, Grupo Local, Superenxame de Virgem, Superenxame Laniakea, universo observável.
+ph-cosmos.c9.viz.items.0	Universo observável
+ph-cosmos.c9.viz.items.1	Superenxame Laniakea
+ph-cosmos.c9.viz.items.2	Grupo Local
+ph-cosmos.c9.viz.items.3	Via Láctea
+ph-cosmos.c9.viz.items.4	Sistema Solar
+ph-cosmos.c9.viz.items.5	Terra
+ph-weather.title	A física do tempo
+ph-weather.summary	Vento, nuvens, chuva e tempestades.
+ph-weather.q0.q	Porque é que o ar que sobe forma nuvens?
+ph-weather.q0.o0	Fica mais quente
+ph-weather.q0.o1	Expande-se e arrefece até ao ponto de orvalho, e o vapor condensa
+ph-weather.q0.o2	O vento empurra a água para cima
+ph-weather.q0.x	O arrefecimento leva à condensação.
+ph-weather.q1.q	No hemisfério norte, os ventos rodam à volta das depressões…
+ph-weather.q1.o0	No sentido dos ponteiros do relógio
+ph-weather.q1.o1	No sentido contrário aos ponteiros do relógio
+ph-weather.q1.o2	Não rodam
+ph-weather.q1.x	Por causa do efeito de Coriolis.
+ph-weather.q2.q	O que causa a brisa marítima durante o dia?
+ph-weather.q2.o0	As marés
+ph-weather.q2.o1	A terra aquece mais depressa do que o mar
+ph-weather.q2.o2	A Lua
+ph-weather.q2.x	O ar quente sobe sobre a terra e o ar do mar substitui-o.
+ph-weather.c0.title	O Sol comanda o tempo
+ph-weather.c0.text	O Sol aquece mais o equador do que os polos, e mais a terra do que o mar. A atmosfera e os oceanos estão sempre a deslocar calor para equilibrar isso, e esse movimento é o tempo meteorológico.
+ph-weather.c0.viz.steps.0	Aquecimento desigual
+ph-weather.c0.viz.steps.1	Ar quente sobe, ar frio desce
+ph-weather.c0.viz.steps.2	Diferenças de pressão
+ph-weather.c0.viz.steps.3	Vento e tempo
+ph-weather.c1.title	Vento
+ph-weather.c1.text	O ar flui das altas para as baixas pressões. A rotação da Terra desvia-o (o efeito de Coriolis), por isso os ventos rodam em espiral à volta das depressões: no sentido contrário aos ponteiros do relógio no hemisfério norte.
+ph-weather.c1.viz.steps.0	Alta pressão
+ph-weather.c1.viz.steps.1	O ar flui para fora
+ph-weather.c1.viz.steps.2	Desviado pela rotação da Terra
+ph-weather.c1.viz.steps.3	Espiral para a baixa pressão
+ph-weather.c2.title	Nuvens
+ph-weather.c2.text	O ar que sobe expande-se e arrefece. Quando arrefece até ao ponto de orvalho, o vapor de água condensa em gotículas à volta de poeiras: uma nuvem. Cada tipo de nuvem diz-te algo sobre o ar.
+ph-weather.c2.viz.steps.0	O ar sobe
+ph-weather.c2.viz.steps.1	Expande e arrefece
+ph-weather.c2.viz.steps.2	Atinge o ponto de orvalho
+ph-weather.c2.viz.steps.3	A água condensa: nuvem
+ph-weather.c3.title	Chuva
+ph-weather.c3.text	As gotículas das nuvens são minúsculas. A chuva forma-se quando as gotículas colidem e se juntam, ou quando cristais de gelo crescem em nuvens frias e derretem ao cair. Uma gota de chuva contém cerca de um milhão de gotículas de nuvem.
+ph-weather.c3.viz.items.0	Gotículas colidem e juntam-se
+ph-weather.c3.viz.items.1	Cristais de gelo crescem em nuvens frias
+ph-weather.c3.viz.items.2	Derretem em chuva ao cair
+ph-weather.c3.viz.items.3	Ou chegam como neve ou granizo
+ph-weather.c4.title	Humidade e orvalho
+ph-weather.c4.text	O ar quente contém mais vapor de água do que o ar frio. À noite, o ar arrefece até não conseguir reter o vapor, que condensa em orvalho ou nevoeiro. A humidade relativa compara o vapor existente com o máximo possível.
+ph-weather.c4.viz.unit	g de água por m³ de ar (máx., aprox.)
+ph-weather.c4.viz.items.0.l	0 °C
+ph-weather.c4.viz.items.1.l	10 °C
+ph-weather.c4.viz.items.2.l	20 °C
+ph-weather.c4.viz.items.3.l	30 °C
+ph-weather.c5.title	Frentes
+ph-weather.c5.text	Onde massas de ar quente e frio se encontram, o ar quente sobe por cima do frio, formando nuvens e chuva. As frentes atlânticas trazem grande parte da chuva de inverno de Portugal, sobretudo ao Minho.
+ph-weather.c5.viz.l.t	Frente fria
+ph-weather.c5.viz.l.items.0	aguaceiros fortes e curtos
+ph-weather.c5.viz.l.items.1	a temperatura desce
+ph-weather.c5.viz.r.t	Frente quente
+ph-weather.c5.viz.r.items.0	gradual
+ph-weather.c5.viz.r.items.1	chuva longa e contínua
+ph-weather.c5.viz.r.items.2	chuvisco
+ph-weather.c6.title	Trovoadas
+ph-weather.c6.text	Correntes ascendentes fortes em ar quente, húmido e instável formam enormes nuvens cumulonimbus com 12 km ou mais. As cargas separam-se, produzindo relâmpagos, trovões, chuva forte e por vezes granizo.
+ph-weather.c6.viz.steps.0	Ar quente e húmido
+ph-weather.c6.viz.steps.1	Forte corrente ascendente
+ph-weather.c6.viz.steps.2	Cumulonimbus enorme
+ph-weather.c6.viz.steps.3	Relâmpagos, chuva forte, granizo
+ph-weather.c7.title	Brisas marítimas
+ph-weather.c7.text	Nos dias de sol, a terra aquece mais depressa do que o mar. O ar sobe sobre a terra e entra ar mais fresco vindo do mar: uma brisa marítima. À noite inverte-se e passa a brisa terrestre. A Nortada na costa portuguesa é um vento de verão ligado a estes padrões de pressão.
+ph-weather.c7.viz.l.t	Dia
+ph-weather.c7.viz.l.items.0	terra mais quente
+ph-weather.c7.viz.l.items.1	brisa do mar para terra
+ph-weather.c7.viz.r.t	Noite
+ph-weather.c7.viz.r.items.0	terra mais fria
+ph-weather.c7.viz.r.items.1	brisa da terra para o mar
+ph-weather.c8.title	Previsão
+ph-weather.c8.text	As previsões vêm de supercomputadores que resolvem as equações físicas da atmosfera numa grelha 3D, partindo de milhões de observações. Hoje, a precisão a 5 dias é mais ou menos a que as previsões a 1 dia tinham nos anos 1980.
+ph-weather.c8.viz.steps.0	Satélites, balões, estações
+ph-weather.c8.viz.steps.1	Estado inicial da atmosfera
+ph-weather.c8.viz.steps.2	Simulação em supercomputador
+ph-weather.c8.viz.steps.3	Previsão
+ph-weather.c9.title	Avisos do IPMA
+ph-weather.c9.text	Em Portugal, o IPMA emite avisos meteorológicos amarelos, laranja e vermelhos para chuva, vento, calor, frio, agitação marítima e mais, por distrito.
+ph-weather.c9.viz.items.0	Vermelho: risco extremo
+ph-weather.c9.viz.items.1	Laranja: risco moderado a elevado
+ph-weather.c9.viz.items.2	Amarelo: atenção
+ph-weather.c9.viz.items.3	Verde: sem aviso
+ph-greats.title	Grandes físicos
+ph-greats.summary	As pessoas que moldaram a forma como entendemos o mundo.
+ph-greats.q0.q	Quem descobriu a indução eletromagnética?
+ph-greats.q0.o0	Newton
+ph-greats.q0.o1	Faraday
+ph-greats.q0.o2	Einstein
+ph-greats.q0.x	Faraday, em 1831.
+ph-greats.q1.q	Quem uniu a eletricidade, o magnetismo e a luz em quatro equações?
+ph-greats.q1.o0	Galileu
+ph-greats.q1.o1	Maxwell
+ph-greats.q1.o2	Bohr
+ph-greats.q1.x	As equações de Maxwell, anos 1860.
+ph-greats.q2.q	Quem descobriu as quatro maiores luas de Júpiter?
+ph-greats.q2.o0	Newton
+ph-greats.q2.o1	Galileu
+ph-greats.q2.o2	Curie
+ph-greats.q2.x	Em 1610, com o seu telescópio.
+ph-greats.c0.title	Arquimedes (c. 287–212 a.C.)
+ph-greats.c0.text	O matemático grego de Siracusa descobriu o princípio da impulsão e a lei da alavanca ("Dá-me um ponto de apoio e moverei a Terra"), e estimou o valor de π.
+ph-greats.c0.viz.items.0.a	impulsão
+ph-greats.c0.viz.items.0.b	princípio de Arquimedes
+ph-greats.c0.viz.items.1.a	alavancas
+ph-greats.c0.viz.items.1.b	lei da alavanca
+ph-greats.c0.viz.items.2.a	π
+ph-greats.c0.viz.items.2.b	estimado entre 3 10/71 e 3 1/7
+ph-greats.c1.title	Galileu Galilei (1564–1642)
+ph-greats.c1.text	Galileu usou experiências e telescópios para estudar o movimento e o céu. Descobriu as quatro grandes luas de Júpiter e as fases de Vénus, apoiando a ideia de que a Terra orbita o Sol.
+ph-greats.c1.viz.events.0.l	constrói o seu telescópio
+ph-greats.c1.viz.events.1.l	luas de Júpiter
+ph-greats.c1.viz.events.2.l	Diálogo
+ph-greats.c1.viz.events.3.l	Duas Novas Ciências
+ph-greats.c2.title	Isaac Newton (1643–1727)
+ph-greats.c2.text	Newton deu-nos as leis do movimento, a gravitação universal, o cálculo (a par de Leibniz) e boa parte da ótica, mostrando que a luz branca contém todas as cores.
+ph-greats.c2.viz.items.0	Leis do movimento
+ph-greats.c2.viz.items.1	Gravitação universal
+ph-greats.c2.viz.items.2	Cálculo
+ph-greats.c2.viz.items.3	Ótica e o prisma
+ph-greats.c2.viz.items.4	Telescópio refletor
+ph-greats.c3.title	Michael Faraday (1791–1867)
+ph-greats.c3.text	Faraday, em grande parte autodidata, descobriu a indução eletromagnética, inventou o primeiro motor elétrico e o dínamo, e introduziu a ideia de campo.
+ph-greats.c3.viz.items.0	Indução eletromagnética
+ph-greats.c3.viz.items.1	Motor elétrico
+ph-greats.c3.viz.items.2	Dínamo
+ph-greats.c3.viz.items.3	Linhas de campo
+ph-greats.c3.viz.items.4	Gaiola de Faraday
+ph-greats.c4.title	James Clerk Maxwell (1831–1879)
+ph-greats.c4.text	Maxwell uniu a eletricidade, o magnetismo e a luz em quatro equações e previu as ondas eletromagnéticas, abrindo caminho à rádio, à televisão e ao Wi-Fi.
+ph-greats.c4.viz.steps.0	Eletricidade + magnetismo
+ph-greats.c4.viz.steps.1	Equações de Maxwell
+ph-greats.c4.viz.steps.2	A luz é uma onda eletromagnética
+ph-greats.c4.viz.steps.3	Rádio, TV, Wi-Fi
+ph-greats.c5.title	Marie Curie (1867–1934)
+ph-greats.c5.text	Pioneira da radioatividade, descobridora do polónio e do rádio, foi a primeira mulher a ganhar um Prémio Nobel e a única pessoa a ganhar em duas ciências diferentes.
+ph-greats.c5.viz.items.0.l	Prémios Nobel em ciências diferentes
+ph-greats.c5.viz.items.1.l	Física
+ph-greats.c5.viz.items.2.l	Química
+ph-greats.c6.title	Albert Einstein (1879–1955)
+ph-greats.c6.text	Só em 1905 explicou o efeito fotoelétrico, o movimento browniano e a relatividade restrita, incluindo E = mc². Em 1915 publicou a relatividade geral.
+ph-greats.c6.viz.events.0.l	"ano milagroso"
+ph-greats.c6.viz.events.1.l	relatividade geral
+ph-greats.c6.viz.events.2.l	eclipse confirma-a
+ph-greats.c6.viz.events.3.l	Prémio Nobel
+ph-greats.c7.title	Niels Bohr e Werner Heisenberg
+ph-greats.c7.text	O modelo de Bohr, de 1913, colocou os eletrões em níveis de energia fixos; o princípio da incerteza de Heisenberg (1927) e a mecânica matricial ajudaram a construir a teoria quântica. Os seus debates com Einstein moldaram a física moderna.
+ph-greats.c7.viz.items.0.a	Bohr
+ph-greats.c7.viz.items.0.b	modelo atómico, complementaridade
+ph-greats.c7.viz.items.1.a	Heisenberg
+ph-greats.c7.viz.items.1.b	princípio da incerteza
+ph-greats.c7.viz.items.2.a	Schrödinger
+ph-greats.c7.viz.items.2.b	equação de onda
+ph-greats.c7.viz.items.3.a	Dirac
+ph-greats.c7.viz.items.3.b	previsão da antimatéria
+ph-greats.c8.title	Richard Feynman (1918–1988)
+ph-greats.c8.text	Feynman ajudou a desenvolver a eletrodinâmica quântica, famosa pela sua precisão, e foi um professor célebre. Mostrou a causa do desastre do vaivém Challenger com um copo de água gelada e um O-ring.
+ph-greats.c8.viz.items.0	Eletrodinâmica quântica
+ph-greats.c8.viz.items.1	Diagramas de Feynman
+ph-greats.c8.viz.items.2	Grande professor
+ph-greats.c8.viz.items.3	Investigação do Challenger
+ph-greats.c9.title	A ciência é um trabalho de equipa
+ph-greats.c9.text	Os nomes famosos apoiam-se no trabalho de muitos outros: experimentadores, fabricantes de instrumentos, matemáticos e estudantes. As descobertas de hoje, como o bosão de Higgs em 2012, envolvem milhares de cientistas.
+ph-greats.c9.viz.items.0.l	Bosão de Higgs descoberto no CERN
+ph-greats.c9.viz.items.1.v	milhares
+ph-greats.c9.viz.items.1.l	cientistas envolvidos

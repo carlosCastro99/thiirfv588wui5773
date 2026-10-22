@@ -118,7 +118,7 @@ def source_map():
 
 def problems(k, s, t):
     out = []
-    if not t.strip(): out.append("empty")
+    if not t.strip() and s.strip(): out.append("empty")
     if s.count("\n") != t.count("\n"): out.append(f"line breaks {s.count(chr(10))}→{t.count(chr(10))}")
     if s.count("**") != t.count("**"): out.append("bold markers differ")
     if s.count("• ") != t.count("• "): out.append("bullets differ")
@@ -159,6 +159,8 @@ def apply(lang, only=None):
         need = list(units(p, False)); miss = [k for k, _ in need if ((pid, k) if k.startswith("P.") else k) not in tr]
         if miss:
             if len(miss) < len(need): print(f"{pid}: {len(need)-len(miss)}/{len(need)} card strings translated, not built (first missing: {miss[0]})")
+            stale = os.path.join(PK, lang, pid + ".json")
+            if os.path.exists(stale): os.remove(stale); print(f"  removed stale {lang}/{pid}.json")
             continue
         q = json.loads(json.dumps(p)); q["lang"] = lang; q.pop("only", None)
         g = lambda k: tr[(pid, k) if k.startswith("P.") else k]

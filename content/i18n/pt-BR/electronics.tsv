@@ -1,0 +1,970 @@
+P.title	Eletrônica
+P.blurb	Componentes e sinais para mexer com microcontroladores.
+tr-parts.title	Os primeiros componentes
+tr-parts.summary	Resistores, LEDs, capacitores e o divisor de tensão: as peças de todo kit maker.
+tr-parts.q0.q	Um LED branco (Vf 3 V) funciona com 12 V a 10 mA. Qual resistor usar?
+tr-parts.q0.o0	90 Ω
+tr-parts.q0.o1	300 Ω
+tr-parts.q0.o2	900 Ω
+tr-parts.q0.o3	1,2 kΩ
+tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. Você escolheria o valor padrão logo acima, 1 kΩ.
+tr-parts.q1.q	Faixas marrom, preto, laranja. Qual é o valor?
+tr-parts.q1.o0	10 Ω
+tr-parts.q1.o1	1 kΩ
+tr-parts.q1.o2	10 kΩ
+tr-parts.q1.o3	103 Ω
+tr-parts.q1.x	Marrom 1, preto 0, laranja ×1000 → 10 × 1000 = 10 kΩ.
+tr-parts.q2.q	Em um divisor com R1 = R2 e Vin = 10 V, Vout é…
+tr-parts.q2.o0	10 V
+tr-parts.q2.o1	5 V
+tr-parts.q2.o2	2,5 V
+tr-parts.q2.x	Resistores iguais dividem a tensão ao meio.
+tr-parts.q3.q	Dois resistores de 1 kΩ em paralelo dão…
+tr-parts.q3.o0	2 kΩ
+tr-parts.q3.o1	500 Ω
+tr-parts.q3.o2	1 kΩ
+tr-parts.q3.x	Resistores iguais em paralelo reduzem o valor à metade.
+tr-parts.q4.q	O que acontece se você ligar um capacitor eletrolítico invertido?
+tr-parts.q4.o0	Nada
+tr-parts.q4.o1	Ele pode superaquecer e estourar
+tr-parts.q4.o2	Ele armazena mais energia
+tr-parts.q4.x	Eles são polarizados.
+tr-parts.c0.title	Lendo um resistor
+tr-parts.c0.text	Os resistores são identificados por faixas coloridas. As duas primeiras são dígitos, a terceira é um multiplicador e uma faixa dourada ou prateada no final indica a tolerância.\n\nPreto 0, marrom 1, vermelho 2, laranja 3, amarelo 4, verde 5, azul 6, violeta 7, cinza 8, branco 9.
+tr-parts.c0.sketch.4	= 1 000 Ω = 1 kΩ
+tr-parts.c1.title	Todo LED precisa de um resistor
+tr-parts.c1.text	Um LED tem uma queda de tensão direta fixa (Vf, cerca de 2 V para o vermelho, 3 V para o branco ou azul) e puxa toda a corrente que conseguir, até queimar. Um resistor em série absorve a tensão que sobra e define a corrente.
+tr-parts.c1.formula	R = (Vs − Vf) ÷ I
+tr-parts.c1.example.0	Fonte de 5 V, LED vermelho (2 V), 20 mA
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.2	= 150 Ω
+tr-parts.c1.sketch.0	150 Ω
+tr-parts.c1.sketch.1	5 V
+tr-parts.c1.sketch.2	LED 2 V
+tr-parts.c1.sketch.3	20 mA
+tr-parts.c2.title	Capacitores armazenam carga
+tr-parts.c2.text	Um capacitor são duas placas separadas por um isolante. Ligue-o a uma tensão e a carga se acumula nas placas até igualar a da fonte. No começo ele carrega rápido, depois vai desacelerando.\n\nNa prática, eles suavizam as oscilações em uma linha de alimentação e fornecem picos curtos de corrente, e é por isso que você vê um ao lado de quase todo chip.
+tr-parts.c2.sketch.2	1 RC
+tr-parts.c2.sketch.4	tempo
+tr-parts.c2.sketch.5	tensão
+tr-parts.c3.title	Experimente: o divisor de tensão
+tr-parts.c3.text	Dois resistores em série dividem uma tensão na proporção dos seus valores. É a forma padrão de baixar um sinal de 5 V ou 12 V para os 3,3 V que um pino do ESP32 aguenta.
+tr-parts.c3.formula	Vout = Vin × R2 ÷ (R1 + R2)
+tr-parts.c4.title	Valores padrão de resistores
+tr-parts.c4.text	Os resistores vêm em séries padronizadas, e não em todos os valores. A série E12 tem 12 valores por década: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82. Escolha o valor padrão mais próximo do seu cálculo.
+tr-parts.c4.viz.items.3	× 1, 10, 100, 1k, 10k…
+tr-parts.c5.title	Potência do resistor
+tr-parts.c5.text	Os resistores transformam potência em calor e têm uma potência máxima: os comuns, de furo passante, são de ¼ W. Calcule P = I² × R e escolha um resistor com potência bem acima disso.
+tr-parts.c5.example.0	20 mA por 150 Ω
+tr-parts.c5.example.1	0,02² × 150
+tr-parts.c5.example.2	= 0,06 W: uma peça de ¼ W serve
+tr-parts.c5.viz.f	P = I² × R
+tr-parts.c5.viz.items.0.s	I
+tr-parts.c5.viz.items.0.m	corrente que passa
+tr-parts.c5.viz.items.1.s	R
+tr-parts.c5.viz.items.1.m	resistência
+tr-parts.c6.title	Resistores em série e em paralelo
+tr-parts.c6.text	Em série, as resistências se somam. Em paralelo, o total é menor que a menor delas; dois resistores iguais em paralelo dão metade do valor.
+tr-parts.c6.viz.l.t	Série
+tr-parts.c6.viz.l.items.0	R = R1 + R2
+tr-parts.c6.viz.l.items.1	1k + 1k = 2k
+tr-parts.c6.viz.r.t	Paralelo
+tr-parts.c6.viz.r.items.0	1/R = 1/R1 + 1/R2
+tr-parts.c6.viz.r.items.1	1k ∥ 1k = 500 Ω
+tr-parts.c7.title	Tipos de capacitor
+tr-parts.c7.text	Os capacitores cerâmicos são pequenos e baratos, usados para desacoplamento (normalmente 100 nF). Os eletrolíticos armazenam mais (de µF a mF), mas são polarizados: ligue-os invertidos e eles podem estourar.
+tr-parts.c7.viz.l.t	Cerâmico
+tr-parts.c7.viz.l.items.0	valores pequenos
+tr-parts.c7.viz.l.items.1	não polarizado
+tr-parts.c7.viz.l.items.2	desacopl. 100 nF
+tr-parts.c7.viz.r.t	Eletrolítico
+tr-parts.c7.viz.r.items.0	valores grandes
+tr-parts.c7.viz.r.items.1	polarizado (+/−)
+tr-parts.c7.viz.r.items.2	filtragem da fonte
+tr-parts.c8.title	Constante de tempo RC
+tr-parts.c8.text	Um resistor carregando um capacitor leva um tempo previsível. Depois de uma constante de tempo (R × C), o capacitor chega a cerca de 63% da tensão da fonte; depois de cinco, está praticamente cheio.
+tr-parts.c8.example.0	10 kΩ e 100 µF
+tr-parts.c8.example.1	10.000 × 0,0001
+tr-parts.c8.example.2	τ = 1 segundo
+tr-parts.c8.viz.f	τ = R × C
+tr-parts.c8.viz.items.0.s	R
+tr-parts.c8.viz.items.0.m	ohms
+tr-parts.c8.viz.items.1.s	C
+tr-parts.c8.viz.items.1.m	farads
+tr-parts.c8.viz.items.2.s	τ
+tr-parts.c8.viz.items.2.m	segundos
+tr-parts.c9.title	Indutores
+tr-parts.c9.text	Um indutor é uma bobina que resiste a variações de corrente, armazenando energia no seu campo magnético. Eles são essenciais em fontes chaveadas e filtros.
+tr-parts.c9.viz.items.0.a	resistor
+tr-parts.c9.viz.items.0.b	resiste à corrente
+tr-parts.c9.viz.items.1.a	capacitor
+tr-parts.c9.viz.items.1.b	resiste a Δ tensão
+tr-parts.c9.viz.items.2.a	indutor
+tr-parts.c9.viz.items.2.b	resiste a Δ corrente
+tr-mcu.title	Sinais e microcontroladores
+tr-mcu.summary	Como um chip como o ESP32 lê e controla o mundo real.
+tr-mcu.q0.q	Um motor de 12 V recebe PWM com ciclo de trabalho de 50%. Ele se comporta mais ou menos como se tivesse…
+tr-mcu.q0.o0	12 V
+tr-mcu.q0.o1	6 V
+tr-mcu.q0.o2	0,5 V
+tr-mcu.q0.o3	24 V
+tr-mcu.q0.x	A média de 12 V ligado metade do tempo é 6 V.
+tr-mcu.q1.q	O que faz uma entrada "flutuante"?
+tr-mcu.q1.o0	Sempre lê 1
+tr-mcu.q1.o1	Sempre lê 0
+tr-mcu.q1.o2	Lê valores aleatórios porque capta ruído
+tr-mcu.q1.x	Sem nada que defina o seu nível, o pino capta cargas parasitas. Um pull-up ou pull-down resolve isso.
+tr-mcu.q2.q	Quantos níveis tem um ADC de 10 bits?
+tr-mcu.q2.o0	10
+tr-mcu.q2.o1	100
+tr-mcu.q2.o2	1024
+tr-mcu.q2.o3	4096
+tr-mcu.q2.x	2¹⁰ = 1024.
+tr-mcu.q3.q	Por que fazer debounce de um botão?
+tr-mcu.q3.o0	Para ele fazer mais barulho
+tr-mcu.q3.o1	Porque os contatos trepidam e geram vários toques falsos
+tr-mcu.q3.o2	Para economizar energia
+tr-mcu.q3.x	Contatos que trepidam geram vários pulsos.
+tr-mcu.q4.q	Qual é o risco de colocar 5 V em um pino de entrada do ESP32?
+tr-mcu.q4.o0	Nenhum
+tr-mcu.q4.o1	Pode danificar o pino de 3,3 V
+tr-mcu.q4.o2	Ele fica mais rápido
+tr-mcu.q4.x	Os pinos do ESP32 são só de 3,3 V.
+tr-mcu.c0.title	Digital vs. analógico
+tr-mcu.c0.text	Um sinal digital tem dois estados: baixo (0) ou alto (1, muitas vezes 3,3 V). Um sinal analógico pode ter qualquer valor dentro de uma faixa, como a saída de um sensor de temperatura.\n\nNo fundo, os microcontroladores são digitais. Para lidar com o analógico, eles usam um ADC para ler e PWM para simular uma saída.
+tr-mcu.c0.sketch.0	digital: 0 ou 1
+tr-mcu.c0.sketch.1	analógico: qualquer
+tr-mcu.c1.title	PWM: diminuir o brilho piscando
+tr-mcu.c1.text	A modulação por largura de pulso liga e desliga um pino por completo muito rápido. A fração do tempo em que ele fica ligado é o ciclo de trabalho (duty cycle). Um LED ou motor responde à média: 25% de ciclo em uma fonte de 12 V se comporta mais ou menos como 3 V.\n\nÉ eficiente porque a chave está sempre totalmente ligada ou totalmente desligada, então pouca energia é desperdiçada em calor.
+tr-mcu.c1.sketch.0	25% ciclo → fraco
+tr-mcu.c1.sketch.1	75% ciclo → forte
+tr-mcu.c1.sketch.2	tracejado = média
+tr-mcu.c2.title	Resistores de pull-up
+tr-mcu.c2.text	Um pino de entrada ligado a nada fica "flutuando" e capta ruído, lendo 0 ou 1 aleatoriamente. Um resistor de pull-up o prende suavemente a 3,3 V, para que ele leia 1 por padrão. Aperte o botão e o pino se liga ao terra, lendo 0.\n\nA maioria dos microcontroladores tem pull-ups internos que você pode ativar no código.
+tr-mcu.c2.sketch.0	3,3 V
+tr-mcu.c2.sketch.1	10 kΩ
+tr-mcu.c2.sketch.2	GPIO
+tr-mcu.c2.sketch.3	botão
+tr-mcu.c2.sketch.4	solto = 1
+tr-mcu.c2.sketch.5	apertado = 0
+tr-mcu.c3.title	Resolução do ADC
+tr-mcu.c3.text	Um conversor analógico-digital transforma uma tensão em um número. Um ADC de n bits tem 2ⁿ níveis. O ADC de 12 bits do ESP32 dá 4096 níveis em cerca de 3,3 V.\n\nAs leituras dele são menos precisas perto de 0 V e perto do topo da faixa, então mantenha os sinais no meio sempre que puder.
+tr-mcu.c3.formula	nível = Vref ÷ 2ⁿ
+tr-mcu.c3.example.0	ADC de 12 bits, referência de 3,3 V
+tr-mcu.c3.example.1	3,3 ÷ 4096
+tr-mcu.c3.example.2	≈ 0,8 mV por nível
+tr-mcu.c3.sketch.0	tensão de entrada
+tr-mcu.c3.sketch.1	leitura
+tr-mcu.c3.sketch.2	cada nível = 1 código
+tr-mcu.c4.title	Pinos GPIO
+tr-mcu.c4.text	Os pinos de entrada/saída de uso geral podem ser configurados como entradas (ler um botão) ou saídas (acionar um LED). No ESP32 eles funcionam a 3,3 V e só conseguem fornecer com segurança alguns miliampères cada.
+tr-mcu.c4.viz.l.t	Entrada
+tr-mcu.c4.viz.l.items.0	lê 0 ou 1
+tr-mcu.c4.viz.l.items.1	botões, sensores
+tr-mcu.c4.viz.r.t	Saída
+tr-mcu.c4.viz.r.items.0	define 0 ou 3,3 V
+tr-mcu.c4.viz.r.items.1	LEDs, relés via driver
+tr-mcu.c5.title	Lógica de 3,3 V vs 5 V
+tr-mcu.c5.text	Muitos chips modernos (ESP32, Raspberry Pi) usam lógica de 3,3 V; o Arduino Uno usa 5 V. Colocar 5 V em um pino de 3,3 V pode danificá-lo. Use um divisor de tensão ou um conversor de nível entre eles.
+tr-mcu.c5.viz.items.0.w	sensor 5 V direto no ESP32
+tr-mcu.c5.viz.items.0.r	divisor ou conversor de nível
+tr-mcu.c5.viz.items.1.w	pino 3,3 V aciona bobina de relé 5 V
+tr-mcu.c5.viz.items.1.r	use um driver com transistor
+tr-mcu.c6.title	Interrupções
+tr-mcu.c6.text	Em vez de verificar um botão milhares de vezes por segundo (polling), uma interrupção faz o chip pular para o seu código no instante em que o pino muda. Isso economiza energia e nunca perde um evento rápido.
+tr-mcu.c6.viz.l.t	Polling
+tr-mcu.c6.viz.l.items.0	verifica sem parar
+tr-mcu.c6.viz.l.items.1	perde tempo
+tr-mcu.c6.viz.l.items.2	pode perder eventos curtos
+tr-mcu.c6.viz.r.t	Interrupção
+tr-mcu.c6.viz.r.items.0	o hardware avisa
+tr-mcu.c6.viz.r.items.1	instantâneo
+tr-mcu.c6.viz.r.items.2	eficiente
+tr-mcu.c7.title	Debounce
+tr-mcu.c7.text	Botões mecânicos trepidam: um toque produz vários pulsos rápidos de liga-desliga em poucos milissegundos. O software ignora as mudanças por ~20–50 ms depois da primeira, ou um pequeno capacitor as suaviza.
+tr-mcu.c7.viz.steps.0	Toque
+tr-mcu.c7.viz.steps.1	Contatos trepidam por alguns ms
+tr-mcu.c7.viz.steps.2	Ignorar mudanças por ~30 ms
+tr-mcu.c7.viz.steps.3	Um toque limpo
+tr-mcu.c8.title	Timers e millis()
+tr-mcu.c8.text	Em vez de travar o programa com delay(), um bom código verifica o tempo decorrido e faz outras coisas enquanto isso. Assim, sensores, Wi-Fi e displays continuam respondendo.
+tr-mcu.c8.viz.items.0.w	delay(1000) bloqueia tudo
+tr-mcu.c8.viz.items.0.r	verifique o tempo e siga no loop
+tr-mcu.c9.title	Microcontrolador vs computador
+tr-mcu.c9.text	Um microcontrolador (ESP32, Arduino) roda um único programa direto no hardware, inicia na hora e consome miliwatts. Um computador de placa única (Raspberry Pi) roda Linux, com mais potência e complexidade.
+tr-mcu.c9.viz.l.t	Microcontrolador
+tr-mcu.c9.viz.l.items.0	sem SO
+tr-mcu.c9.viz.l.items.1	boot instantâneo
+tr-mcu.c9.viz.l.items.2	miliwatts
+tr-mcu.c9.viz.l.items.3	sensores e controle
+tr-mcu.c9.viz.r.t	Computador de placa única
+tr-mcu.c9.viz.r.items.0	Linux
+tr-mcu.c9.viz.r.items.1	segundos para iniciar
+tr-mcu.c9.viz.r.items.2	watts
+tr-mcu.c9.viz.r.items.3	câmeras, servidores
+tr-diodes.title	Diodos
+tr-diodes.summary	Válvulas de mão única para a corrente, e os seus muitos usos.
+tr-diodes.q0.q	O que a faixa de um diodo indica?
+tr-diodes.q0.o0	O ânodo
+tr-diodes.q0.o1	O cátodo
+tr-diodes.q0.o2	A tensão
+tr-diodes.q0.x	A corrente flui em direção à faixa.
+tr-diodes.q1.q	Por que colocar um diodo em paralelo com a bobina de um relé?
+tr-diodes.q1.o0	Para ele brilhar mais
+tr-diodes.q1.o1	Para absorver o pico de tensão quando ele desliga
+tr-diodes.q1.o2	Para dobrar a tensão
+tr-diodes.q1.x	O diodo de roda livre (flyback) protege o driver.
+tr-diodes.q2.q	Quanto, aproximadamente, um diodo de silício derruba quando está conduzindo?
+tr-diodes.q2.o0	3 V
+tr-diodes.q2.o1	0,7 V
+tr-diodes.q2.o2	0 V
+tr-diodes.q2.x	Cerca de 0,6–0,7 V.
+tr-diodes.c0.title	Uma válvula de mão única
+tr-diodes.c0.text	Um diodo deixa a corrente passar em um sentido (do ânodo para o cátodo) e a bloqueia no outro. A faixa no corpo indica o cátodo.
+tr-diodes.c0.viz.l.t	Direta
+tr-diodes.c0.viz.l.items.0	a corrente passa
+tr-diodes.c0.viz.l.items.1	queda de ~0,7 V (silício)
+tr-diodes.c0.viz.r.t	Reversa
+tr-diodes.c0.viz.r.items.0	bloqueado
+tr-diodes.c0.viz.r.items.1	só uma fuga mínima
+tr-diodes.c1.title	Tensão direta
+tr-diodes.c1.text	Um diodo de silício derruba cerca de 0,6–0,7 V quando conduz; um diodo Schottky, só 0,2–0,4 V, o que desperdiça menos potência. Os LEDs derrubam mais: 2 V no vermelho, cerca de 3 V no azul e no branco.
+tr-diodes.c1.viz.unit	volts (aprox.)
+tr-diodes.c1.viz.items.0.l	Schottky
+tr-diodes.c1.viz.items.1.l	Silício
+tr-diodes.c1.viz.items.2.l	LED vermelho
+tr-diodes.c1.viz.items.3.l	LED azul/branco
+tr-diodes.c2.title	Proteção contra inversão de polaridade
+tr-diodes.c2.text	Um diodo em série com a entrada de alimentação evita danos se alguém ligar a bateria invertida. Ele custa um pouco de tensão; um MOSFET faz o mesmo quase sem perdas.
+tr-diodes.c2.viz.steps.0	Bateria ligada invertida
+tr-diodes.c2.viz.steps.1	O diodo bloqueia
+tr-diodes.c2.viz.steps.2	Circuito protegido
+tr-diodes.c3.title	Retificadores
+tr-diodes.c3.text	Quatro diodos em ponte transformam CA em CC pulsante: as duas metades da onda saem positivas. Acrescente um capacitor grande e ela se suaviza em uma CC quase constante.
+tr-diodes.c3.viz.steps.0	Entrada CA
+tr-diodes.c3.viz.steps.1	Ponte de 4 diodos
+tr-diodes.c3.viz.steps.2	CC pulsante
+tr-diodes.c3.viz.steps.3	O capacitor suaviza
+tr-diodes.c4.title	Diodos de roda livre (flyback)
+tr-diodes.c4.text	Quando você desliga a bobina de um relé ou de um motor, o campo magnético dela colapsa e cria um pico de tensão que pode matar o transistor que a aciona. Um diodo em paralelo com a bobina absorve o pico com segurança.
+tr-diodes.c4.viz.items.0.w	bobina de relé sem diodo
+tr-diodes.c4.viz.items.0.r	diodo em paralelo com a bobina, faixa no +
+tr-diodes.c4.viz.items.1.w	transistor morre em poucas semanas
+tr-diodes.c4.viz.items.1.r	diodo flyback instalado
+tr-diodes.c5.title	Diodos Zener
+tr-diodes.c5.text	Um diodo Zener conduz no sentido reverso a uma tensão precisa, como 3,3 V ou 5,1 V. Com um resistor, ele forma uma referência de tensão simples ou protege entradas contra sobretensão.
+tr-diodes.c5.viz.steps.0	Tensão mais alta
+tr-diodes.c5.viz.steps.1	Resistor em série
+tr-diodes.c5.viz.steps.2	Zener fixa 3,3 V
+tr-diodes.c5.viz.steps.3	Entrada protegida
+tr-diodes.c6.title	LEDs são diodos
+tr-diodes.c6.text	Um diodo emissor de luz emite luz quando a corrente passa no sentido direto. A cor depende do material semicondutor. A perna longa é o ânodo (+); o lado chanfrado indica o cátodo (−).
+tr-diodes.c6.viz.items.0.a	perna longa
+tr-diodes.c6.viz.items.0.b	ânodo (+)
+tr-diodes.c6.viz.items.1.a	perna curta / lado reto
+tr-diodes.c6.viz.items.1.b	cátodo (−)
+tr-diodes.c6.viz.items.2.a	cor
+tr-diodes.c6.viz.items.2.b	definida pelo material
+tr-diodes.c7.title	Fotodiodos e células solares
+tr-diodes.c7.text	Polarizado no sentido reverso, um diodo consegue detectar luz: os fótons liberam elétrons e passa uma corrente minúscula. Sensores de luz, receptores de controle remoto e células solares são, no fundo, todos fotodiodos.
+tr-diodes.c7.viz.items.0	Receptores de controle da TV
+tr-diodes.c7.viz.items.1	Sensores de luz
+tr-diodes.c7.viz.items.2	Receptores de fibra óptica
+tr-diodes.c7.viz.items.3	Células solares
+tr-diodes.c8.title	Diodos TVS
+tr-diodes.c8.text	Os diodos supressores de tensão transitória (TVS) cortam picos muito rápidos, como uma descarga de estática em uma porta USB ou um surto em um cabo de sensor longo, protegendo o chip que está atrás deles.
+tr-diodes.c8.viz.steps.0	Chega um pico
+tr-diodes.c8.viz.steps.1	O TVS o corta em nanossegundos
+tr-diodes.c8.viz.steps.2	Excesso vai ao terra
+tr-diodes.c8.viz.steps.3	O chip sobrevive
+tr-diodes.c9.title	Diodos para combinar fontes (OR)
+tr-diodes.c9.text	Dois diodos permitem que um circuito funcione com a fonte que estiver mais alta, como USB ou uma bateria, sem que uma alimente a outra.
+tr-diodes.c9.viz.steps.0	USB 5 V via diodo
+tr-diodes.c9.viz.steps.1	Bateria 3,7 V via diodo
+tr-diodes.c9.viz.steps.2	A mais alta alimenta o circuito
+tr-transistors.title	Transistores como chaves
+tr-transistors.summary	Como um sinal minúsculo controla uma carga grande.
+tr-transistors.q0.q	Por que usar um MOSFET de nível lógico com um ESP32?
+tr-transistors.q0.o0	É mais barato
+tr-transistors.q0.o1	Ele liga totalmente com só 3,3 V no gate
+tr-transistors.q0.o2	É à prova d'água
+tr-transistors.q0.x	MOSFETs comuns podem precisar de cerca de 10 V.
+tr-transistors.q1.q	O que faz um resistor de pull-down no gate?
+tr-transistors.q1.o0	Acelera a CPU
+tr-transistors.q1.o1	Mantém o MOSFET desligado quando o pino está flutuando
+tr-transistors.q1.o2	Limita a corrente da carga
+tr-transistors.q1.x	Ele mantém o gate em 0 V durante o boot.
+tr-transistors.q2.q	Um MOSFET com 50 mΩ conduz 4 A. O calor dele é…
+tr-transistors.q2.o0	0,2 W
+tr-transistors.q2.o1	0,8 W
+tr-transistors.q2.o2	4 W
+tr-transistors.q2.x	4² × 0,05 = 0,8 W.
+tr-transistors.c0.title	Por que você precisa de um
+tr-transistors.c0.text	Um pino de microcontrolador só consegue fornecer alguns miliampères. Um motor, uma fita de LED ou um relé precisa de muito mais. Um transistor permite que a pequena corrente do pino controle uma corrente de carga muito maior.
+tr-transistors.c0.viz.steps.0	Pino dá 1 mA
+tr-transistors.c0.viz.steps.1	Transistor liga
+tr-transistors.c0.viz.steps.2	Carga recebe 500 mA
+tr-transistors.c1.title	BJT: corrente controla corrente
+tr-transistors.c1.text	Em um transistor bipolar (NPN), uma pequena corrente na base permite que uma corrente muito maior flua do coletor para o emissor. A razão entre elas, o ganho (hFE), costuma ser 100 ou mais.
+tr-transistors.c1.viz.f	Ic ≈ hFE × Ib
+tr-transistors.c1.viz.items.0.s	Ib
+tr-transistors.c1.viz.items.0.m	corrente de base
+tr-transistors.c1.viz.items.1.s	hFE
+tr-transistors.c1.viz.items.1.m	ganho
+tr-transistors.c1.viz.items.2.s	Ic
+tr-transistors.c1.viz.items.2.m	corrente de coletor
+tr-transistors.c2.title	MOSFET: tensão controla corrente
+tr-transistors.c2.text	Um MOSFET é controlado pela tensão no gate, quase sem corrente de gate. Quando está totalmente ligado, a resistência dele pode ser de só alguns miliohms, então ele quase não esquenta. A maior parte do chaveamento de potência usa MOSFETs.
+tr-transistors.c2.viz.l.t	BJT
+tr-transistors.c2.viz.l.items.0	controlado pela corrente de base
+tr-transistors.c2.viz.l.items.1	queda de ~0,2 V ligado
+tr-transistors.c2.viz.l.items.2	cargas pequenas
+tr-transistors.c2.viz.r.t	MOSFET
+tr-transistors.c2.viz.r.items.0	controlado pela tensão de gate
+tr-transistors.c2.viz.r.items.1	miliohms ligado
+tr-transistors.c2.viz.r.items.2	cargas grandes
+tr-transistors.c3.title	Chaveamento no lado baixo
+tr-transistors.c3.text	O jeito mais simples: coloque um MOSFET de canal N entre a carga e o terra. O pino aciona o gate; quando está em nível alto, o caminho da carga para o terra se fecha.
+tr-transistors.c3.viz.steps.0	+12 V
+tr-transistors.c3.viz.steps.1	Carga
+tr-transistors.c3.viz.steps.2	MOSFET N
+tr-transistors.c3.viz.steps.3	Terra (gate acionado pelo pino)
+tr-transistors.c4.title	MOSFETs de nível lógico
+tr-transistors.c4.text	Muitos MOSFETs precisam de 10 V no gate para ligar totalmente. Com um microcontrolador de 3,3 V, escolha um MOSFET de nível lógico especificado para ficar totalmente ligado com 2,5–3,3 V, como o AO3400 ou o IRLZ44N.
+tr-transistors.c4.viz.items.0.w	IRF540 acionado com 3,3 V
+tr-transistors.c4.viz.items.0.r	MOSFET de nível lógico
+tr-transistors.c4.viz.items.1.w	o MOSFET esquenta
+tr-transistors.c4.viz.items.1.r	está só meio ligado, confira a tensão no gate
+tr-transistors.c5.title	Resistor de gate e pull-down
+tr-transistors.c5.text	Coloque um resistor pequeno (cerca de 100 Ω) entre o pino e o gate para limitar picos de corrente, e um pull-down de 10 kΩ do gate para o terra, para que o MOSFET fique desligado enquanto o microcontrolador inicia.
+tr-transistors.c5.viz.items.0	Resistor de gate ~100 Ω
+tr-transistors.c5.viz.items.1	Pull-down de 10 kΩ no gate
+tr-transistors.c5.viz.items.2	Diodo flyback em bobinas
+tr-transistors.c5.viz.items.3	Peça de nível lógico
+tr-transistors.c6.title	Transistores como amplificadores
+tr-transistors.c6.text	Entre totalmente desligado e totalmente ligado, um transistor consegue amplificar: um pequeno sinal variável na entrada gera uma cópia maior na saída. É assim que funcionam rádios e amplificadores de áudio.
+tr-transistors.c6.viz.l.t	Chave
+tr-transistors.c6.viz.l.items.0	desligado ou ligado
+tr-transistors.c6.viz.l.items.1	pouco calor
+tr-transistors.c6.viz.r.t	Amplificador
+tr-transistors.c6.viz.r.items.0	no meio-termo
+tr-transistors.c6.viz.r.items.1	copia um sinal maior
+tr-transistors.c6.viz.r.items.2	gera calor
+tr-transistors.c7.title	Calor nas chaves
+tr-transistors.c7.text	A potência perdida em um MOSFET chaveando é I² × R(on). Um MOSFET de 20 mΩ conduzindo 10 A perde 2 W, o que pede um pequeno dissipador. Chavear rápido também importa, porque há perda de potência em cada transição.
+tr-transistors.c7.example.0	10 A por 20 mΩ
+tr-transistors.c7.example.1	10² × 0,02
+tr-transistors.c7.example.2	= 2 W de calor
+tr-transistors.c7.viz.f	P = I² × R(on)
+tr-transistors.c7.viz.items.0.s	I
+tr-transistors.c7.viz.items.0.m	corrente da carga
+tr-transistors.c7.viz.items.1.s	R(on)
+tr-transistors.c7.viz.items.1.m	resistência ligado
+tr-transistors.c8.title	Optoacopladores e relés de estado sólido
+tr-transistors.c8.text	Um optoacoplador passa um sinal por meio de luz dentro de um chip selado, isolando eletricamente dois circuitos. Os relés de estado sólido usam a mesma ideia para chavear cargas da rede elétrica em silêncio, sem partes móveis.
+tr-transistors.c8.viz.steps.0	O pino acende um LED interno
+tr-transistors.c8.viz.steps.1	A luz atravessa um vão
+tr-transistors.c8.viz.steps.2	O detector chaveia o outro lado
+tr-transistors.c8.viz.steps.3	Isolamento total
+tr-transistors.c9.title	Bilhões em um chip
+tr-transistors.c9.text	Os processadores modernos contêm dezenas de bilhões de MOSFETs microscópicos funcionando como chaves. O mesmo dispositivo que aciona a sua fita de LED, encolhido a poucos nanômetros, faz toda a computação.
+tr-transistors.c9.viz.items.0.l	primeiro transistor
+tr-transistors.c9.viz.items.1.v	50 bilhões+
+tr-transistors.c9.viz.items.1.l	num chip moderno
+tr-opamps.title	Amplificadores operacionais
+tr-opamps.summary	O canivete suíço da eletrônica analógica.
+tr-opamps.q0.q	Um amplificador não inversor com Rf = 4 kΩ e Rg = 1 kΩ tem ganho de…
+tr-opamps.q0.o0	4
+tr-opamps.q0.o1	5
+tr-opamps.q0.o2	0,25
+tr-opamps.q0.x	1 + 4/1 = 5.
+tr-opamps.q1.q	O que faz um seguidor de tensão?
+tr-opamps.q1.o0	Dobra a tensão
+tr-opamps.q1.o1	Faz de buffer para um sinal fraco, com ganho 1
+tr-opamps.q1.o2	Converte CA em CC
+tr-opamps.q1.x	Ele isola a fonte da carga.
+tr-opamps.q2.q	Sem realimentação, um amp-op funciona como…
+tr-opamps.q2.o0	Um filtro
+tr-opamps.q2.o1	Um comparador
+tr-opamps.q2.o2	Uma bateria
+tr-opamps.q2.x	Ele só mostra qual entrada está mais alta.
+tr-opamps.c0.title	O que é um amp-op
+tr-opamps.c0.text	Um amplificador operacional é um chip com duas entradas (+ e −) e uma saída. Ele amplifica a diferença entre as entradas por um fator enorme, muitas vezes 100.000 vezes ou mais.
+tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
+tr-opamps.c0.viz.items.0.s	A
+tr-opamps.c0.viz.items.0.m	ganho em malha aberta, enorme
+tr-opamps.c0.viz.items.1.s	V+
+tr-opamps.c0.viz.items.1.m	entrada não inversora
+tr-opamps.c0.viz.items.2.s	V−
+tr-opamps.c0.viz.items.2.m	entrada inversora
+tr-opamps.c1.title	A realimentação o domina
+tr-opamps.c1.text	Sozinho, esse ganho enorme é inutilizável. Levar parte da saída de volta à entrada negativa define um ganho preciso e estável, escolhido por dois resistores.
+tr-opamps.c1.viz.steps.0	Ganho bruto enorme
+tr-opamps.c1.viz.steps.1	Saída de volta à entrada −
+tr-opamps.c1.viz.steps.2	Ganho definido por resistores
+tr-opamps.c1.viz.steps.3	Amplificador estável e preciso
+tr-opamps.c2.title	Amplificador não inversor
+tr-opamps.c2.text	A forma clássica de reforçar um sinal pequeno de sensor. A saída acompanha a entrada, multiplicada por um ganho definido por dois resistores.
+tr-opamps.c2.example.0	Rf = 9 kΩ, Rg = 1 kΩ
+tr-opamps.c2.example.1	1 + 9
+tr-opamps.c2.example.2	ganho = 10
+tr-opamps.c2.viz.f	Ganho = 1 + Rf ÷ Rg
+tr-opamps.c2.viz.items.0.s	Rf
+tr-opamps.c2.viz.items.0.m	resistor de realimentação
+tr-opamps.c2.viz.items.1.s	Rg
+tr-opamps.c2.viz.items.1.m	resistor para o terra
+tr-opamps.c3.title	O seguidor de tensão
+tr-opamps.c3.text	Ligue a saída direto na entrada negativa e o ganho fica 1. Inútil? Não: ele isola uma fonte fraca de uma carga pesada, um "buffer".
+tr-opamps.c3.viz.steps.0	Sinal fraco do sensor
+tr-opamps.c3.viz.steps.1	Seguidor com amp-op (ganho 1)
+tr-opamps.c3.viz.steps.2	Cópia forte do sinal
+tr-opamps.c3.viz.steps.3	ADC ou cabo longo
+tr-opamps.c4.title	Comparadores
+tr-opamps.c4.text	Sem realimentação, um amp-op (ou um chip comparador dedicado) só diz qual entrada está mais alta: saída alta ou baixa. Ótimo para termostatos e interruptores acionados por luz.
+tr-opamps.c4.viz.steps.0	Tensão do sensor
+tr-opamps.c4.viz.steps.1	Comparar com o limiar
+tr-opamps.c4.viz.steps.2	Acima: saída alta
+tr-opamps.c4.viz.steps.3	Abaixo: saída baixa
+tr-opamps.c5.title	Duas regras de ouro
+tr-opamps.c5.text	Com realimentação negativa, analise circuitos com amp-op usando duas regras: não entra corrente nas entradas, e a saída faz o que for preciso para deixar as duas entradas iguais.
+tr-opamps.c5.viz.items.0	Não entra corrente nas entradas
+tr-opamps.c5.viz.items.1	A saída iguala V+ a V−
+tr-opamps.c5.viz.items.2	Só com realimentação negativa
+tr-opamps.c6.title	Rail-to-rail
+tr-opamps.c6.text	Os amp-ops mais antigos não conseguem levar a saída perto dos trilhos de alimentação. Em circuitos de 3,3 V ou 5 V, escolha um amp-op rail-to-rail para que o sinal possa usar toda a faixa.
+tr-opamps.c6.viz.l.t	Amp-op clássico
+tr-opamps.c6.viz.l.items.0	precisa de fontes de ±12 V
+tr-opamps.c6.viz.l.items.1	a saída não chega aos trilhos
+tr-opamps.c6.viz.r.t	Rail-to-rail
+tr-opamps.c6.viz.r.items.0	funciona com 3,3 V
+tr-opamps.c6.viz.r.items.1	a saída chega perto de 0 V e 3,3 V
+tr-opamps.c7.title	Filtros
+tr-opamps.c7.text	Com capacitores, os amp-ops formam filtros ativos: passa-baixas para tirar o ruído de um sensor, passa-altas para bloquear CC, passa-faixa para uma frequência específica.
+tr-opamps.c7.viz.items.0.a	passa-baixas
+tr-opamps.c7.viz.items.0.b	tira o ruído rápido
+tr-opamps.c7.viz.items.1.a	passa-altas
+tr-opamps.c7.viz.items.1.b	tira a deriva lenta e a CC
+tr-opamps.c7.viz.items.2.a	passa-faixa
+tr-opamps.c7.viz.items.2.b	mantém uma faixa de frequência
+tr-opamps.c8.title	Somas e diferenças
+tr-opamps.c8.text	Os amp-ops podem somar vários sinais (mixers de áudio) ou subtrair um do outro (medir a pequena tensão sobre um resistor shunt de corrente).
+tr-opamps.c8.viz.items.0.a	amp somador
+tr-opamps.c8.viz.items.0.b	mixer
+tr-opamps.c8.viz.items.1.a	amp diferencial
+tr-opamps.c8.viz.items.1.b	subtrai dois sinais
+tr-opamps.c8.viz.items.2.a	amp de instrumentação
+tr-opamps.c8.viz.items.2.b	diferenças mínimas, preciso
+tr-opamps.c9.title	O 741
+tr-opamps.c9.text	O μA741, lançado em 1968, se tornou o amp-op mais famoso já fabricado e ainda é ensinado hoje, embora as peças modernas sejam muito melhores para circuitos de baixa tensão.
+tr-opamps.c9.viz.events.0.l	primeiro amp-op monolítico
+tr-opamps.c9.viz.events.1.l	o μA741
+tr-opamps.c9.viz.events.2.y	hoje
+tr-opamps.c9.viz.events.2.l	peças rail-to-rail de baixo consumo
+tr-psu.title	Fontes de alimentação e reguladores
+tr-psu.summary	Obter a tensão certa, de forma limpa e eficiente.
+tr-psu.q0.q	Um regulador linear baixa 9 V para 5 V a 0,2 A. Quanto calor gera?
+tr-psu.q0.o0	0,2 W
+tr-psu.q0.o1	0,8 W
+tr-psu.q0.o2	1,8 W
+tr-psu.q0.x	(9 − 5) × 0,2 = 0,8 W.
+tr-psu.q1.q	O que é mais eficiente para baixar de 24 V para 3,3 V?
+tr-psu.q1.o0	Regulador linear
+tr-psu.q1.o1	Conversor buck
+tr-psu.q1.o2	Diodo Zener
+tr-psu.q1.x	Os conversores chaveados desperdiçam pouca potência.
+tr-psu.q2.q	Uma fonte de 2 A alimenta um projeto que consome 0,5 A. Tudo bem?
+tr-psu.q2.o0	Sim, ele só puxa o que precisa
+tr-psu.q2.o1	Não, ele vai queimar
+tr-psu.q2.o2	Só com um resistor
+tr-psu.q2.x	A especificação é um máximo, não o que é forçado no circuito.
+tr-psu.c0.title	Por que regular?
+tr-psu.c0.text	As baterias caem de tensão à medida que descarregam, e a USB pode variar entre cerca de 4,75 e 5,25 V. Os chips querem uma tensão estável, então um regulador a mantém constante, faça a entrada o que fizer.
+tr-psu.c0.viz.steps.0	Entrada variável 4,2–3,0 V
+tr-psu.c0.viz.steps.1	Regulador
+tr-psu.c0.viz.steps.2	3,3 V estáveis
+tr-psu.c0.viz.steps.3	Chip feliz
+tr-psu.c1.title	Reguladores lineares
+tr-psu.c1.text	Um regulador linear (como um LM7805 ou AMS1117) queima a tensão extra em forma de calor. Simples e silencioso, mas desperdiça energia quando a entrada é muito mais alta que a saída.
+tr-psu.c1.example.0	12 V para 5 V a 0,5 A
+tr-psu.c1.example.1	(12 − 5) × 0,5
+tr-psu.c1.example.2	= 3,5 W de calor
+tr-psu.c1.viz.f	calor = (Vin − Vout) × I
+tr-psu.c1.viz.items.0.s	Vin
+tr-psu.c1.viz.items.0.m	tensão de entrada
+tr-psu.c1.viz.items.1.s	Vout
+tr-psu.c1.viz.items.1.m	saída
+tr-psu.c1.viz.items.2.s	I
+tr-psu.c1.viz.items.2.m	corrente da carga
+tr-psu.c2.title	Reguladores LDO
+tr-psu.c2.text	Um regulador de baixa queda (LDO) funciona com a entrada só um pouco acima da saída, por exemplo 3,6 V na entrada para 3,3 V na saída. Essencial quando se usa uma única célula de lítio.
+tr-psu.c2.viz.l.t	Linear comum
+tr-psu.c2.viz.l.items.0	precisa de ~2 V de folga
+tr-psu.c2.viz.l.items.1	ex.: 7805
+tr-psu.c2.viz.r.t	LDO
+tr-psu.c2.viz.r.items.0	precisa de ~0,1–0,4 V
+tr-psu.c2.viz.r.items.1	ideal com bateria
+tr-psu.c3.title	Conversores buck
+tr-psu.c3.text	Um conversor buck abaixa a tensão ligando e desligando muito rápido através de um indutor. Uma eficiência de 85–95% significa pouco calor, mesmo de 24 V para 3,3 V.
+tr-psu.c3.viz.steps.0	Entrada 12 V
+tr-psu.c3.viz.steps.1	Chaveia a ~500 kHz
+tr-psu.c3.viz.steps.2	Indutor e capacitor suavizam
+tr-psu.c3.viz.steps.3	Saída 5 V, ~90% de eficiência
+tr-psu.c4.title	Conversores boost
+tr-psu.c4.text	Um conversor boost eleva a tensão, por exemplo de uma bateria de 3,7 V para 5 V de USB. Ele puxa da bateria mais corrente do que entrega na saída.
+tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
+tr-psu.c4.viz.items.0.s	Vout
+tr-psu.c4.viz.items.0.m	5 V
+tr-psu.c4.viz.items.1.s	Iout
+tr-psu.c4.viz.items.1.m	1 A
+tr-psu.c4.viz.items.2.s	Vin
+tr-psu.c4.viz.items.2.m	3,7 V
+tr-psu.c4.viz.items.3.s	η
+tr-psu.c4.viz.items.3.m	~0,9 → Iin ≈ 1,5 A
+tr-psu.c5.title	Eficiência comparada
+tr-psu.c5.text	Para uma queda grande, os reguladores chaveados ganham. Para quedas pequenas e circuitos analógicos sensíveis a ruído, um LDO pode ser melhor.
+tr-psu.c5.viz.unit	% de eficiência, 12 V → 3,3 V
+tr-psu.c5.viz.items.0.l	Linear
+tr-psu.c5.viz.items.1.l	Conversor buck
+tr-psu.c6.title	Ripple e ruído
+tr-psu.c6.text	Os reguladores chaveados deixam um pequeno ripple na sua frequência de chaveamento. Circuitos sensíveis (áudio, ADCs precisos) usam filtragem extra ou um LDO depois do conversor buck.
+tr-psu.c6.viz.steps.0	Conversor buck
+tr-psu.c6.viz.steps.1	Pequeno ripple
+tr-psu.c6.viz.steps.2	Filtro LC ou LDO
+tr-psu.c6.viz.steps.3	Alimentação limpa
+tr-psu.c7.title	Escolhendo uma fonte de tomada
+tr-psu.c7.text	A tensão tem que ser exatamente a mesma, a corrente nominal tem que ser pelo menos a que o seu projeto precisa, e confira a polaridade do plugue P4. Uma corrente nominal maior não tem problema: o aparelho só puxa o que precisa.
+tr-psu.c7.viz.items.0	A tensão tem que bater
+tr-psu.c7.viz.items.1	Corrente nominal ≥ a necessária
+tr-psu.c7.viz.items.2	Confira centro positivo ou negativo
+tr-psu.c7.viz.items.3	Prefira fontes certificadas
+tr-psu.c8.title	USB Power Delivery
+tr-psu.c8.text	O USB-C PD negocia tensões mais altas, 9, 15 ou 20 V, até 100 W ou mais, mas só depois de um handshake digital. Um cabo USB-C simples, sem negociação, dá 5 V.
+tr-psu.c8.viz.unit	watts (máx., padrões USB)
+tr-psu.c8.viz.items.0.l	USB 2.0
+tr-psu.c8.viz.items.1.l	USB 3.0
+tr-psu.c8.viz.items.2.l	USB-C 3 A
+tr-psu.c8.viz.items.3.l	USB-C PD
+tr-psu.c9.title	Brown-outs (quedas de tensão)
+tr-psu.c9.text	Se a alimentação cair abaixo do que um chip precisa, ele pode se comportar mal ou reiniciar. Os ESP32 são famosos por reiniciar nos picos de transmissão do Wi-Fi quando a fonte é fraca. Um bom regulador e um capacitor grande perto da placa resolvem.
+tr-psu.c9.viz.items.0.w	ESP32 reinicia quando o Wi-Fi liga
+tr-psu.c9.viz.items.0.r	fonte de 3,3 V mais forte e um capacitor de 470 µF perto da placa
+tr-sensors.title	Sensores
+tr-sensors.summary	Medindo temperatura, distância, movimento e muito mais.
+tr-sensors.q0.q	Um eco ultrassônico volta depois de 2,9 ms. A distância é de cerca de…
+tr-sensors.q0.o0	1 m
+tr-sensors.q0.o1	0,5 m
+tr-sensors.q0.o2	2 m
+tr-sensors.q0.x	0,0029 × 343 ÷ 2 ≈ 0,5 m.
+tr-sensors.q1.q	Por que um sensor PIR pode não detectar alguém sentado e parado?
+tr-sensors.q1.o0	Está frio demais
+tr-sensors.q1.o1	Ele detecta variações no calor infravermelho causadas por movimento
+tr-sensors.q1.o2	Só funciona à noite
+tr-sensors.q1.x	O PIR responde a movimento.
+tr-sensors.q2.q	Um sensor de corrente tipo alicate (TC) mede…
+tr-sensors.q2.o0	Tensão CC
+tr-sensors.q2.o1	Corrente CA sem cortar o fio
+tr-sensors.q2.o2	Temperatura
+tr-sensors.q2.x	Ele detecta o campo magnético.
+tr-sensors.c0.title	Do mundo para os números
+tr-sensors.c0.text	Um sensor transforma uma grandeza física em um sinal elétrico: uma tensão, uma resistência, a duração de um pulso ou dados digitais. O microcontrolador o lê e converte em unidades reais.
+tr-sensors.c0.viz.steps.0	Grandeza física
+tr-sensors.c0.viz.steps.1	Sensor
+tr-sensors.c0.viz.steps.2	Sinal elétrico
+tr-sensors.c0.viz.steps.3	Microcontrolador converte em unidades
+tr-sensors.c1.title	Sensores de temperatura
+tr-sensors.c1.text	Os termistores mudam de resistência com a temperatura (baratos, analógicos). O DS18B20 envia leituras digitais por um único fio. O BME280 acrescenta umidade e pressão via I²C.
+tr-sensors.c1.viz.items.0.a	termistor
+tr-sensors.c1.viz.items.0.b	analógico, barato
+tr-sensors.c1.viz.items.1.a	DS18B20
+tr-sensors.c1.viz.items.1.b	digital, versões à prova d'água
+tr-sensors.c1.viz.items.2.a	BME280
+tr-sensors.c1.viz.items.2.b	temperatura, umidade, pressão
+tr-sensors.c2.title	Distância por ultrassom
+tr-sensors.c2.text	Sensores como o HC-SR04 e o JSN-SR04T, à prova d'água, enviam um pulso de 40 kHz e cronometram o eco. A distância é metade do tempo de ida e volta vezes a velocidade do som.
+tr-sensors.c2.example.0	eco após 5,8 ms
+tr-sensors.c2.example.1	0,0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1,0 m
+tr-sensors.c2.viz.f	distância = tempo × 343 ÷ 2
+tr-sensors.c2.viz.items.0.s	tempo
+tr-sensors.c2.viz.items.0.m	tempo do eco em s
+tr-sensors.c2.viz.items.1.m	m/s, velocidade do som no ar
+tr-sensors.c3.title	Manias do ultrassom
+tr-sensors.c3.text	A velocidade do som muda com a temperatura (cerca de 0,6 m/s por °C), então inclua compensação de temperatura para ter precisão. O JSN-SR04T tem uma zona cega de uns 20–25 cm e precisa de um caminho livre.
+tr-sensors.c3.viz.items.0	Compense a temperatura
+tr-sensors.c3.viz.items.1	Respeite a distância mínima
+tr-sensors.c3.viz.items.2	Evite espuma e superfícies inclinadas
+tr-sensors.c3.viz.items.3	Tire a média de várias leituras
+tr-sensors.c4.title	Sensores de movimento
+tr-sensors.c4.text	Os sensores PIR detectam o calor infravermelho de pessoas e animais em movimento. Os sensores de radar de micro-ondas detectam movimento através de paredes finas e até a respiração; são usados para detectar presença.
+tr-sensors.c4.viz.l.t	PIR
+tr-sensors.c4.viz.l.items.0	detecta calor em movimento
+tr-sensors.c4.viz.l.items.1	barato
+tr-sensors.c4.viz.l.items.2	não vê quem está parado
+tr-sensors.c4.viz.r.t	Radar mmWave
+tr-sensors.c4.viz.r.items.0	detecta movimentos pequenos
+tr-sensors.c4.viz.r.items.1	presença mesmo parado
+tr-sensors.c4.viz.r.items.2	mais caro
+tr-sensors.c5.title	Sensores de luz
+tr-sensors.c5.text	Um fotorresistor (LDR) é barato e lento; o BH1750 dá leituras calibradas em lux via I²C. Útil para luzes e persianas automáticas.
+tr-sensors.c5.viz.unit	lux (típico)
+tr-sensors.c5.viz.items.0.l	Luar
+tr-sensors.c5.viz.items.1.l	Sala de estar
+tr-sensors.c5.viz.items.2.l	Escritório
+tr-sensors.c5.viz.items.3.l	Dia nublado
+tr-sensors.c5.viz.items.4.l	Luz do sol
+tr-sensors.c6.title	Sensores de corrente e potência
+tr-sensors.c6.text	Um alicate transformador de corrente mede corrente CA sem cortar fios; módulos como o PZEM-004T informam tensão, corrente, potência e energia. As placas INA219 medem corrente e tensão CC.
+tr-sensors.c6.viz.items.0.a	alicate TC
+tr-sensors.c6.viz.items.0.b	corrente CA, não invasivo
+tr-sensors.c6.viz.items.1.a	PZEM-004T
+tr-sensors.c6.viz.items.1.b	potência e energia da rede
+tr-sensors.c6.viz.items.2.a	INA219
+tr-sensors.c6.viz.items.2.b	corrente e tensão CC
+tr-sensors.c7.title	Sensores analógicos vs digitais
+tr-sensors.c7.text	Os sensores analógicos dão uma tensão que você lê com o ADC; ruído e calibração são problema seu. Os sensores digitais fazem a conversão internamente e enviam um número via I²C, SPI ou one-wire.
+tr-sensors.c7.viz.l.t	Analógico
+tr-sensors.c7.viz.l.items.0	saída em tensão
+tr-sensors.c7.viz.l.items.1	precisa de ADC
+tr-sensors.c7.viz.l.items.2	fiação simples
+tr-sensors.c7.viz.r.t	Digital
+tr-sensors.c7.viz.r.items.0	envia números
+tr-sensors.c7.viz.r.items.1	calibrado por dentro
+tr-sensors.c7.viz.r.items.2	usa um barramento
+tr-sensors.c8.title	Calibração
+tr-sensors.c8.text	Sensores baratos têm offsets e deriva. Compare com uma referência confiável em dois pontos (por exemplo, água com gelo e temperatura ambiente) e corrija no software.
+tr-sensors.c8.viz.steps.0	Meça uma referência conhecida
+tr-sensors.c8.viz.steps.1	Anote o offset
+tr-sensors.c8.viz.steps.2	Corrija no software
+tr-sensors.c8.viz.steps.3	Confira de novo depois
+tr-sensors.c9.title	Amostragem e média
+tr-sensors.c9.text	Faça várias leituras e tire a média, ou use a mediana para ignorar valores fora da curva. Não amostre mais rápido do que precisa: isso gasta energia e acrescenta ruído.
+tr-sensors.c9.viz.items.0	Mediana de 5 remove picos
+tr-sensors.c9.viz.items.1	Média móvel suaviza ruído
+tr-sensors.c9.viz.items.2	Amostre só quando necessário
+tr-sensors.c9.viz.items.3	Registre dados brutos nos testes
+tr-buses.title	Conversa entre chips
+tr-buses.summary	UART, I²C e SPI explicados.
+tr-buses.q0.q	Qual barramento usa as linhas SDA e SCL?
+tr-buses.q0.o0	SPI
+tr-buses.q0.o1	I²C
+tr-buses.q0.o2	UART
+tr-buses.q0.x	O I²C usa uma linha de dados e uma de clock.
+tr-buses.q1.q	Na ligação UART, o TX se conecta ao…
+tr-buses.q1.o0	TX
+tr-buses.q1.o1	RX
+tr-buses.q1.o2	Só ao GND
+tr-buses.q1.x	Quem transmite vai para quem recebe.
+tr-buses.q2.q	O que é melhor para um cabo de 300 m até um medidor de energia?
+tr-buses.q2.o0	I²C
+tr-buses.q2.o1	SPI
+tr-buses.q2.o2	RS-485
+tr-buses.q2.x	O RS-485 é diferencial e aguenta distâncias longas.
+tr-buses.c0.title	Por que barramentos?
+tr-buses.c0.text	Sensores, displays e chips de memória precisam trocar dados com o microcontrolador. Os barramentos seriais padrão enviam bits um depois do outro por poucos fios.
+tr-buses.c0.viz.root	Barramentos seriais
+tr-buses.c0.viz.items.0	UART (2 fios)
+tr-buses.c0.viz.items.1	I²C (2 fios, vários dispositivos)
+tr-buses.c0.viz.items.2	SPI (4 fios, rápido)
+tr-buses.c0.viz.items.3	1-Wire (1 fio)
+tr-buses.c1.title	UART
+tr-buses.c1.text	A UART usa uma linha TX e uma linha RX, cruzadas entre os dispositivos (TX no RX). Os dois lados precisam combinar a velocidade, como 9600 ou 115200 baud. Módulos GPS e consoles seriais usam esse barramento.
+tr-buses.c1.viz.steps.0	TX do dispositivo A
+tr-buses.c1.viz.steps.1	para
+tr-buses.c1.viz.steps.2	RX do dispositivo B
+tr-buses.c1.viz.steps.3	e de volta
+tr-buses.c2.title	I²C
+tr-buses.c2.text	O I²C usa duas linhas, SDA (dados) e SCL (clock), compartilhadas por vários dispositivos. Cada dispositivo tem um endereço, como 0x76 para um BME280. As duas linhas precisam de resistores de pull-up.
+tr-buses.c2.viz.items.0.a	SDA
+tr-buses.c2.viz.items.0.b	linha de dados
+tr-buses.c2.viz.items.1.a	SCL
+tr-buses.c2.viz.items.1.b	linha de clock
+tr-buses.c2.viz.items.2.a	endereço
+tr-buses.c2.viz.items.2.b	qual dispositivo
+tr-buses.c2.viz.items.3.a	pull-ups
+tr-buses.c2.viz.items.3.b	4,7 kΩ típico
+tr-buses.c3.title	SPI
+tr-buses.c3.text	O SPI usa um clock, uma saída de dados, uma entrada de dados e uma linha de chip select por dispositivo. É rápido, muitas vezes dezenas de MHz, por isso é usado para displays, cartões SD e memória flash.
+tr-buses.c3.viz.items.0.a	SCK
+tr-buses.c3.viz.items.0.b	clock
+tr-buses.c3.viz.items.1.a	MOSI
+tr-buses.c3.viz.items.1.b	saída do controlador
+tr-buses.c3.viz.items.2.a	MISO
+tr-buses.c3.viz.items.2.b	entrada do controlador
+tr-buses.c3.viz.items.3.a	CS
+tr-buses.c3.viz.items.3.b	chip select por dispositivo
+tr-buses.c4.title	Escolhendo um barramento
+tr-buses.c4.text	I²C para muitos sensores lentos em dois fios; SPI para velocidade; UART para módulos com protocolo próprio; one-wire para cadeias longas de sensores de temperatura.
+tr-buses.c4.viz.l.t	I²C
+tr-buses.c4.viz.l.items.0	2 fios
+tr-buses.c4.viz.l.items.1	vários dispositivos
+tr-buses.c4.viz.l.items.2	até ~400 kHz típico
+tr-buses.c4.viz.r.t	SPI
+tr-buses.c4.viz.r.items.0	4+ fios
+tr-buses.c4.viz.r.items.1	um CS por dispositivo
+tr-buses.c4.viz.r.items.2	dezenas de MHz
+tr-buses.c5.title	Conflitos de endereço
+tr-buses.c5.text	Dois dispositivos I²C com o mesmo endereço não podem compartilhar um barramento. Muitas placas têm um jumper para mudar o endereço, ou você pode usar um multiplexador I²C.
+tr-buses.c5.viz.items.0.w	dois sensores em 0x76
+tr-buses.c5.viz.items.0.r	mude um para 0x77 com o jumper de endereço
+tr-buses.c5.viz.items.1.w	o conflito continua
+tr-buses.c5.viz.items.1.r	use um multiplexador I²C
+tr-buses.c6.title	Scanner I²C
+tr-buses.c6.text	Quando um dispositivo I²C não responde, rode um sketch scanner que testa todos os endereços e lista quem responde. Nenhuma resposta geralmente indica problema de fiação, de alimentação ou falta de pull-ups.
+tr-buses.c6.viz.items.0	Confira alimentação e terra
+tr-buses.c6.viz.items.1	SDA e SCL não estão trocados?
+tr-buses.c6.viz.items.2	Tem pull-ups?
+tr-buses.c6.viz.items.3	Rode um scanner
+tr-buses.c7.title	Comprimento do cabo
+tr-buses.c7.text	O I²C foi projetado para conexões curtas em uma mesma placa; acima de cerca de um metro ele fica pouco confiável. Para distâncias maiores, use RS-485, CAN ou um extensor de barramento diferencial.
+tr-buses.c7.viz.unit	comprimento máx. típico (m)
+tr-buses.c7.viz.items.0.l	I²C
+tr-buses.c7.viz.items.1.l	SPI
+tr-buses.c7.viz.items.2.l	UART (TTL)
+tr-buses.c7.viz.items.3.l	RS-485
+tr-buses.c8.title	RS-485 e Modbus
+tr-buses.c8.text	O RS-485 envia os dados como a diferença entre dois fios, o que rejeita ruído em cabos longos. Dispositivos industriais, medidores de energia e inversores solares muitas vezes falam Modbus sobre RS-485.
+tr-buses.c8.viz.steps.0	UART do microcontrolador
+tr-buses.c8.viz.steps.1	Transceptor RS-485
+tr-buses.c8.viz.steps.2	Par trançado até 1,2 km
+tr-buses.c8.viz.steps.3	Medidor ou inversor
+tr-buses.c9.title	Analisadores lógicos
+tr-buses.c9.text	Um analisador lógico USB barato grava os bits de um barramento e os decodifica em bytes legíveis, mostrando exatamente o que está sendo enviado. É o jeito mais rápido de depurar um sensor teimoso.
+tr-buses.c9.viz.steps.0	Prenda no SDA e no SCL
+tr-buses.c9.viz.steps.1	Grave
+tr-buses.c9.viz.steps.2	Decodifique o I²C
+tr-buses.c9.viz.steps.3	Veja endereços e bytes
+tr-wireless.title	Conexões sem fio
+tr-wireless.summary	Wi-Fi, Bluetooth, Zigbee e LoRa comparados.
+tr-wireless.q0.q	O que serve para um sensor a bateria que envia uma leitura a cada 10 minutos a 5 km de distância?
+tr-wireless.q0.o0	Wi-Fi
+tr-wireless.q0.o1	Bluetooth
+tr-wireless.q0.o2	LoRa
+tr-wireless.q0.x	O LoRa oferece longo alcance com consumo muito baixo.
+tr-wireless.q1.q	Em uma rede mesh Zigbee, o que aumenta o alcance?
+tr-wireless.q1.o0	Baterias maiores
+tr-wireless.q1.o1	Dispositivos ligados na tomada que retransmitem mensagens
+tr-wireless.q1.o2	Frequências mais altas
+tr-wireless.q1.x	Cada roteador retransmite os pacotes.
+tr-wireless.q2.q	Que frequência o LoRa usa na Europa?
+tr-wireless.q2.o0	2,4 GHz
+tr-wireless.q2.o1	868 MHz
+tr-wireless.q2.o2	5 GHz
+tr-wireless.q2.x	A faixa da UE é 868 MHz.
+tr-wireless.c0.title	O triângulo das concessões
+tr-wireless.c0.text	Toda tecnologia sem fio equilibra alcance, taxa de dados e consumo de energia. Não dá para maximizar os três: longo alcance e baixo consumo significam pouquíssimos dados.
+tr-wireless.c0.viz.l.t	Alta taxa de dados
+tr-wireless.c0.viz.l.items.0	Wi-Fi
+tr-wireless.c0.viz.l.items.1	vídeo e arquivos
+tr-wireless.c0.viz.l.items.2	gasta muita energia
+tr-wireless.c0.viz.r.t	Longo alcance, baixo consumo
+tr-wireless.c0.viz.r.items.0	LoRa
+tr-wireless.c0.viz.r.items.1	mensagens minúsculas
+tr-wireless.c0.viz.r.items.2	anos com uma bateria
+tr-wireless.c1.title	Wi-Fi
+tr-wireless.c1.text	O Wi-Fi oferece alta velocidade e se conecta direto à sua rede e à internet, mas consome muita energia. Bom para aparelhos ligados na tomada, como câmeras e tomadas inteligentes.
+tr-wireless.c1.viz.items.0.v	2,4 GHz
+tr-wireless.c1.viz.items.0.l	alcance
+tr-wireless.c1.viz.items.1.v	5 GHz
+tr-wireless.c1.viz.items.1.l	velocidade
+tr-wireless.c1.viz.items.2.v	~100–250 mA
+tr-wireless.c1.viz.items.2.l	ESP32 transmitindo
+tr-wireless.c2.title	Bluetooth Low Energy
+tr-wireless.c2.text	O BLE envia pequenas quantidades de dados a distâncias curtas com pouquíssima energia. Pulseiras fitness, sensores e beacons usam essa tecnologia, muitas vezes funcionando por um ano ou mais com uma bateria de moeda.
+tr-wireless.c2.viz.items.0.a	alcance
+tr-wireless.c2.viz.items.0.b	~10–50 m em ambiente interno
+tr-wireless.c2.viz.items.1.a	energia
+tr-wireless.c2.viz.items.1.b	bateria de moeda por meses
+tr-wireless.c2.viz.items.2.a	dados
+tr-wireless.c2.viz.items.2.b	pacotes pequenos
+tr-wireless.c3.title	Zigbee e Thread
+tr-wireless.c3.text	Redes mesh para casas inteligentes: cada aparelho ligado na tomada retransmite mensagens, aumentando o alcance. Elas precisam de um hub ou coordenador, e os sensores a bateria duram anos.
+tr-wireless.c3.viz.steps.0	Sensor a bateria
+tr-wireless.c3.viz.steps.1	Aparelho na tomada mais próximo retransmite
+tr-wireless.c3.viz.steps.2	Saltos na mesh
+tr-wireless.c3.viz.steps.3	Hub ou coordenador
+tr-wireless.c4.title	LoRa
+tr-wireless.c4.text	O LoRa usa um sinal especial do tipo chirp para alcançar vários quilômetros com uma potência minúscula. As taxas de dados são de só centenas de bits a alguns kilobits por segundo: perfeito para leituras ocasionais de sensores em locais remotos.
+tr-wireless.c4.viz.unit	alcance típico (km, campo aberto)
+tr-wireless.c4.viz.items.0.l	Wi-Fi
+tr-wireless.c4.viz.items.1.l	BLE
+tr-wireless.c4.viz.items.2.l	Zigbee
+tr-wireless.c4.viz.items.3.l	LoRa
+tr-wireless.c5.title	LoRa vs LoRaWAN
+tr-wireless.c5.text	LoRa é o rádio. LoRaWAN é um protocolo de rede com gateways e servidores, como a The Things Network. O LoRa ponto a ponto entre duas placas não precisa de rede nenhuma.
+tr-wireless.c5.viz.l.t	LoRa ponto a ponto
+tr-wireless.c5.viz.l.items.0	duas placas conversam direto
+tr-wireless.c5.viz.l.items.1	simples
+tr-wireless.c5.viz.l.items.2	sem rede
+tr-wireless.c5.viz.r.t	LoRaWAN
+tr-wireless.c5.viz.r.items.0	gateways e servidores
+tr-wireless.c5.viz.r.items.1	muitos dispositivos
+tr-wireless.c5.viz.r.items.2	redes compartilhadas
+tr-wireless.c6.title	Frequências na Europa
+tr-wireless.c6.text	Na Europa, o LoRa usa a faixa livre de licença de 868 MHz, com limites de ciclo de trabalho (muitas vezes 1%), então cada dispositivo só pode transmitir uma pequena fração do tempo.
+tr-wireless.c6.viz.items.0.v	868 MHz
+tr-wireless.c6.viz.items.0.l	faixa LoRa da UE
+tr-wireless.c6.viz.items.1.l	limite típico de ciclo
+tr-wireless.c6.viz.items.2.v	25 mW
+tr-wireless.c6.viz.items.2.l	potência máx. típica
+tr-wireless.c7.title	A antena faz diferença
+tr-wireless.c7.text	Uma boa antena, instalada no alto e longe de metal, muitas vezes dobra o alcance de forma mais barata do que aumentar a potência. Nunca transmita sem uma antena conectada: isso pode danificar o rádio.
+tr-wireless.c7.viz.items.0	Instale no alto
+tr-wireless.c7.viz.items.1	Mantenha longe de metal
+tr-wireless.c7.viz.items.2	Use a faixa de frequência certa
+tr-wireless.c7.viz.items.3	Nunca transmita sem antena
+tr-wireless.c8.title	Linha de visada
+tr-wireless.c8.text	Nessas frequências, as ondas de rádio são bloqueadas por morros, prédios e água. No campo, levantar a antena alguns metros pode transformar a falta de sinal em uma conexão firme.
+tr-wireless.c8.viz.steps.0	Antena num muro baixo
+tr-wireless.c8.viz.steps.1	Um morro bloqueia o caminho
+tr-wireless.c8.viz.steps.2	Antena erguida num mastro
+tr-wireless.c8.viz.steps.3	Linha de visada livre
+tr-wireless.c9.title	IoT celular
+tr-wireless.c9.text	Onde não há Wi-Fi nem gateway, os módulos LTE-M e NB-IoT enviam pequenas quantidades de dados pela rede móvel com baixo consumo, por uma mensalidade de chip.
+tr-wireless.c9.viz.items.0.a	LTE-M
+tr-wireless.c9.viz.items.0.b	móvel, dados moderados
+tr-wireless.c9.viz.items.1.a	NB-IoT
+tr-wireless.c9.viz.items.1.b	cobertura profunda, poucos dados
+tr-wireless.c9.viz.items.2.a	chip
+tr-wireless.c9.viz.items.2.b	custo mensal
+tr-esphome.title	ESP32 e ESPHome
+tr-esphome.summary	Criando dispositivos de casa inteligente sem escrever muito código.
+tr-esphome.q0.q	O que o ESPHome usa para descrever um dispositivo?
+tr-esphome.q0.o0	Uma planilha
+tr-esphome.q0.o1	Um arquivo de configuração YAML
+tr-esphome.q0.o2	Uma fotografia
+tr-esphome.q0.x	Você declara os componentes em YAML.
+tr-esphome.q1.q	Por que evitar os pinos ADC2 para leituras analógicas no ESP32?
+tr-esphome.q1.o0	Eles são só digitais
+tr-esphome.q1.o1	Eles não podem ser lidos com o Wi-Fi ativo
+tr-esphome.q1.o2	Eles são de 5 V
+tr-esphome.q1.x	O Wi-Fi usa o ADC2 internamente.
+tr-esphome.q2.q	O que o deep sleep dá a um dispositivo a bateria?
+tr-esphome.q2.o0	Wi-Fi mais rápido
+tr-esphome.q2.o1	Consumo de microampères entre as leituras
+tr-esphome.q2.o2	Mais pinos GPIO
+tr-esphome.q2.x	O chip se desliga quase por completo.
+tr-esphome.c0.title	O ESP32
+tr-esphome.c0.text	Um microcontrolador barato com Wi-Fi e Bluetooth integrados, dois núcleos de até 240 MHz e dezenas de pinos GPIO. É o coração de inúmeros dispositivos de casa inteligente feitos em casa.
+tr-esphome.c0.viz.items.0.v	240 MHz
+tr-esphome.c0.viz.items.0.l	CPU dual-core
+tr-esphome.c0.viz.items.1.v	Wi-Fi + BLE
+tr-esphome.c0.viz.items.1.l	integrados
+tr-esphome.c0.viz.items.2.l	placa típica
+tr-esphome.c1.title	O ESPHome em uma ideia
+tr-esphome.c1.text	Em vez de escrever código C++, você descreve o seu dispositivo em um arquivo YAML: qual placa, quais sensores em quais pinos. O ESPHome gera o firmware e o conecta ao Home Assistant.
+tr-esphome.c1.viz.steps.0	Arquivo YAML
+tr-esphome.c1.viz.steps.1	O ESPHome compila
+tr-esphome.c1.viz.steps.2	Grave na placa
+tr-esphome.c1.viz.steps.3	Aparece no Home Assistant
+tr-esphome.c2.title	Um sensor de temperatura em YAML
+tr-esphome.c2.text	Algumas linhas descrevem a placa, o Wi-Fi e um sensor: plataforma dht, pino GPIO4, nome "Temperatura da sala", intervalo de atualização de 60 s. Esse é o programa inteiro.
+tr-esphome.c2.viz.items.0	esphome: nome
+tr-esphome.c2.viz.items.1	esp32: placa
+tr-esphome.c2.viz.items.2	wifi: credenciais
+tr-esphome.c2.viz.items.3	sensor: plataforma e pino
+tr-esphome.c2.viz.items.4	update_interval: 60s
+tr-esphome.c3.title	Atualizações over-the-air (OTA)
+tr-esphome.c3.text	Depois da primeira gravação por USB, o ESPHome atualiza os dispositivos pelo Wi-Fi. Altere o YAML, clique em instalar e o dispositivo no teto se atualiza sozinho.
+tr-esphome.c3.viz.steps.0	Edite o YAML
+tr-esphome.c3.viz.steps.1	Compile
+tr-esphome.c3.viz.steps.2	Envie pelo Wi-Fi
+tr-esphome.c3.viz.steps.3	Reinicia com o novo firmware
+tr-esphome.c4.title	API nativa
+tr-esphome.c4.text	Os dispositivos ESPHome conversam com o Home Assistant por uma API nativa rápida, com criptografia. As entidades aparecem automaticamente, e as automações podem rodar no dispositivo mesmo que o Home Assistant esteja fora do ar.
+tr-esphome.c4.viz.l.t	API nativa
+tr-esphome.c4.viz.l.items.0	descoberta automática
+tr-esphome.c4.viz.l.items.1	criptografada
+tr-esphome.c4.viz.l.items.2	baixa latência
+tr-esphome.c4.viz.r.t	MQTT
+tr-esphome.c4.viz.r.items.0	funciona com qualquer broker
+tr-esphome.c4.viz.r.items.1	mais configuração
+tr-esphome.c5.title	Dispositivos UART: o exemplo do ar-condicionado
+tr-esphome.c5.text	O ESPHome consegue conversar com eletrodomésticos via UART. Projetos como o MitsubishiCN105ESPHome ligam um ESP32 à porta CN105 de um ar-condicionado Mitsubishi para controle local, sem a nuvem.
+tr-esphome.c5.viz.steps.0	ESP32
+tr-esphome.c5.viz.steps.1	UART para a porta CN105
+tr-esphome.c5.viz.steps.2	Componente ESPHome
+tr-esphome.c5.viz.steps.3	Controle local no Home Assistant
+tr-esphome.c6.title	Escolha os pinos com cuidado
+tr-esphome.c6.text	Alguns pinos do ESP32 são só de entrada (34–39), alguns afetam o boot (0, 2, 12, 15), e os pinos ADC2 não podem ser usados para leituras analógicas com o Wi-Fi ligado. Consulte um pinout antes de fazer a fiação.
+tr-esphome.c6.viz.items.0.w	sensor analógico num pino ADC2
+tr-esphome.c6.viz.items.0.r	use um pino ADC1 (32–39)
+tr-esphome.c6.viz.items.1.w	botão no GPIO12 impede o boot
+tr-esphome.c6.viz.items.1.r	mude para um pino seguro
+tr-esphome.c7.title	Deep sleep no ESPHome
+tr-esphome.c7.text	Dispositivos a bateria podem acordar, fazer uma leitura, enviá-la e voltar ao deep sleep por alguns minutos. Um ESP32 em deep sleep consome microampères em vez de dezenas de miliampères.
+tr-esphome.c7.viz.steps.0	Acordar
+tr-esphome.c7.viz.steps.1	Ler o sensor
+tr-esphome.c7.viz.steps.2	Enviar pelo Wi-Fi
+tr-esphome.c7.viz.steps.3	Deep sleep por 10 min
+tr-esphome.c8.title	Variantes do ESP32
+tr-esphome.c8.text	A família não para de crescer: o ESP32-S3 acrescenta instruções de IA e USB, o ESP32-C3 é uma versão RISC-V de baixo custo, e o ESP32-C6 acrescenta Wi-Fi 6 e rádio Thread/Zigbee.
+tr-esphome.c8.viz.items.0.a	ESP32
+tr-esphome.c8.viz.items.0.b	dual-core clássico
+tr-esphome.c8.viz.items.1.a	S3
+tr-esphome.c8.viz.items.1.b	USB, câmera, IA
+tr-esphome.c8.viz.items.2.a	C3
+tr-esphome.c8.viz.items.2.b	RISC-V barato
+tr-esphome.c8.viz.items.3.a	C6
+tr-esphome.c8.viz.items.3.b	Wi-Fi 6, Thread, Zigbee
+tr-esphome.c9.title	Local e privado
+tr-esphome.c9.text	Os dispositivos ESPHome funcionam totalmente na sua rede, sem conta na nuvem. Se a internet cair, os seus sensores e interruptores continuam funcionando.
+tr-esphome.c9.viz.items.0	Sem depender da nuvem
+tr-esphome.c9.viz.items.1	Os dados ficam em casa
+tr-esphome.c9.viz.items.2	Funciona sem internet
+tr-esphome.c9.viz.items.3	Firmware de código aberto
+tr-proto.title	Da protoboard à PCB
+tr-proto.summary	Prototipagem, solda e como tornar tudo permanente.
+tr-proto.q0.q	Onde você deve aplicar a solda?
+tr-proto.q0.o0	Na ponta do ferro
+tr-proto.q0.o1	Na junta já aquecida
+tr-proto.q0.o2	Antes de aquecer qualquer coisa
+tr-proto.q0.x	A junta precisa estar quente o suficiente para derretê-la.
+tr-proto.q1.q	Uma junta fosca e irregular geralmente é…
+tr-proto.q1.o0	Perfeita
+tr-proto.q1.o1	Uma solda fria
+tr-proto.q1.o2	Uma ponte
+tr-proto.q1.x	Ela não esquentou o suficiente.
+tr-proto.q2.q	Qual ferramenta gratuita projeta PCBs?
+tr-proto.q2.o0	Excel
+tr-proto.q2.o1	KiCad
+tr-proto.q2.o2	Photoshop
+tr-proto.q2.x	O KiCad cuida do esquemático e do layout.
+tr-proto.c0.title	Protoboards
+tr-proto.c0.text	Uma protoboard permite montar circuitos sem solda. Os furos de cada fileira curta de cinco estão conectados; os trilhos longos nas laterais levam a alimentação e o terra.
+tr-proto.c0.viz.items.0.a	fileiras curtas
+tr-proto.c0.viz.items.0.b	5 furos conectados
+tr-proto.c0.viz.items.1.a	trilhos laterais
+tr-proto.c0.viz.items.1.b	alimentação e terra
+tr-proto.c0.viz.items.2.a	canal central
+tr-proto.c0.viz.items.2.b	para chips
+tr-proto.c1.title	Jumpers e mau contato
+tr-proto.c1.text	As protoboards são ótimas para testar, mas os contatos ficam frouxos e acrescentam resistência. Se um circuito se comportar de forma estranha, encaixe os fios de novo antes de reescrever o seu código.
+tr-proto.c1.viz.items.0	Confira se todos os fios estão encaixados
+tr-proto.c1.viz.items.1	Use fios curtos
+tr-proto.c1.viz.items.2	Use os trilhos para a alimentação
+tr-proto.c1.viz.items.3	Não passe correntes altas
+tr-proto.c2.title	Noções básicas de solda
+tr-proto.c2.text	Aqueça a junta (ilha e terminal juntos) com o ferro e depois aplique a solda na junta, não no ferro. Uma boa junta é brilhante e tem o formato de um pequeno vulcão.
+tr-proto.c2.viz.steps.0	Ponta limpa
+tr-proto.c2.viz.steps.1	Aqueça ilha e terminal juntos
+tr-proto.c2.viz.steps.2	Aplique a solda na junta
+tr-proto.c2.viz.steps.3	Tire a solda, depois o ferro
+tr-proto.c3.title	Temperatura do ferro
+tr-proto.c3.text	Para a solda sem chumbo comum, cerca de 330–370 °C funciona bem; a solda com chumbo derrete a uma temperatura mais baixa. Frio demais gera juntas foscas e granuladas; quente demais queima as ilhas e o fluxo.
+tr-proto.c3.viz.unit	°C
+tr-proto.c3.viz.items.0.l	solda com chumbo
+tr-proto.c3.viz.items.1.l	sem chumbo
+tr-proto.c3.viz.items.2.l	quente demais
+tr-proto.c4.title	Juntas ruins
+tr-proto.c4.text	Uma solda fria parece fosca e irregular e pode rachar. Uma ponte liga duas ilhas por acidente. Solda de menos deixa a junta fraca. Uma malha dessoldadora ou um sugador de solda resolve a maioria dos erros.
+tr-proto.c4.viz.items.0.a	solda fria
+tr-proto.c4.viz.items.0.b	fosca, irregular
+tr-proto.c4.viz.items.1.a	ponte
+tr-proto.c4.viz.items.1.b	duas ilhas em curto
+tr-proto.c4.viz.items.2.a	junta seca
+tr-proto.c4.viz.items.2.b	solda insuficiente
+tr-proto.c4.viz.items.3.a	solução
+tr-proto.c4.viz.items.3.b	malha ou sugador
+tr-proto.c5.title	Placa perfurada
+tr-proto.c5.text	A placa perfurada (ou placa de ilhas/trilhas) torna um projeto permanente sem precisar projetar uma PCB: os componentes são soldados numa grade e ligados com fios ou trilhas de cobre.
+tr-proto.c5.viz.l.t	Protoboard

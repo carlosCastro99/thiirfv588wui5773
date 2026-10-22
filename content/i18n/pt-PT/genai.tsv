@@ -108,10 +108,10 @@ gen-llm.q1.o0	Mais GPU
 gen-llm.q1.o1	Afinação com instruções e treino com preferências
 gen-llm.q1.o2	Uma janela de contexto maior
 gen-llm.q1.x	A afinação molda o seu comportamento.
-gen-llm.q2.q	Mais ou menos quantas palavras em inglês cabem em 1,000 tokens?
+gen-llm.q2.q	Mais ou menos quantas palavras em inglês cabem em 1000 tokens?
 gen-llm.q2.o0	250
 gen-llm.q2.o1	750
-gen-llm.q2.o2	4,000
+gen-llm.q2.o2	4000
 gen-llm.q2.x	Cerca de ¾ de palavra por token.
 gen-llm.c0.title	Prever o token seguinte
 gen-llm.c0.text	Um LLM é treinado numa só tarefa: prever o token seguinte de um texto. Feito ao longo de biliões de tokens, isto obriga o modelo a absorver gramática, factos, padrões de raciocínio e estilos.
@@ -125,7 +125,7 @@ gen-llm.c1.viz.items.0.a	"learning"
 gen-llm.c1.viz.items.0.b	1 token
 gen-llm.c1.viz.items.1.a	"aprendizagem"
 gen-llm.c1.viz.items.1.b	vários tokens
-gen-llm.c1.viz.items.2.a	1,000 tokens
+gen-llm.c1.viz.items.2.a	1000 tokens
 gen-llm.c1.viz.items.2.b	~750 palavras inglesas
 gen-llm.c2.title	Dados de pré-treino
 gen-llm.c2.text	O pré-treino usa conjuntos de dados enormes: páginas web, livros, código, artigos científicos e mais, filtrados por qualidade. Os modelos de fronteira treinam com muitos biliões de tokens.
@@ -292,7 +292,7 @@ gen-prompt.q2.x	Fundamentar reduz os detalhes inventados.
 gen-prompt.c0.title	O contexto é tudo
 gen-prompt.c0.text	O modelo não sabe nada sobre a tua situação a não ser que lho digas. A maior melhoria de todas é dar contexto: quem és, para quem é, porque precisas disso.
 gen-prompt.c0.viz.items.0.w	"escreve um email ao fornecedor"
-gen-prompt.c0.viz.items.0.r	"escreve um email firme mas educado ao nosso fornecedor de soja sobre um atraso de 5 dias, para manter a relação"
+gen-prompt.c0.viz.items.0.r	"email firme e educado ao fornecedor sobre 5 dias de atraso"
 gen-prompt.c1.title	Sê específico sobre a tarefa
 gen-prompt.c1.text	Diz exatamente o que queres: o formato, a extensão, o público e o tom. "Resume em 5 pontos para um CFO" é melhor do que "resume isto".
 gen-prompt.c1.viz.items.0	O quê: a tarefa
@@ -638,7 +638,7 @@ gen-embed.c0.viz.items.0.b	perto de "pagamento atrasado"
 gen-embed.c0.viz.items.1.a	"fatura vencida"
 gen-embed.c0.viz.items.1.b	longe de "previsão do tempo"
 gen-embed.c0.viz.items.2.a	dimensões
-gen-embed.c0.viz.items.2.b	384 a 3,072 é típico
+gen-embed.c0.viz.items.2.b	384 a 3072 é típico
 gen-embed.c1.title	Semelhança
 gen-embed.c1.text	A proximidade costuma medir-se pela semelhança do cosseno: 1 significa a mesma direção, 0 sem relação. Permite aos computadores comparar significados, e não apenas palavras iguais.
 gen-embed.c1.viz.unit	semelhança
@@ -775,9 +775,9 @@ gen-rag.c7.viz.items.2.b	respondeu a tudo?
 gen-rag.c7.viz.items.3.a	citações
 gen-rag.c7.viz.items.3.b	referências corretas?
 gen-rag.c8.title	Perguntas sobre contratos
-gen-rag.c8.text	Um trader pergunta: "Qual é a taxa de demurrage do contrato 4471?" O RAG recupera a cláusula relevante, o modelo responde "$18,000 por dia, cláusula 12.3" e dá o link para a página.
+gen-rag.c8.text	Um trader pergunta: "Qual é a taxa de demurrage do contrato 4471?" O RAG recupera a cláusula relevante, o modelo responde "$18 000 por dia, cláusula 12,3" e dá o link para a página.
 gen-rag.c8.viz.steps.0	Pergunta sobre o contrato
-gen-rag.c8.viz.steps.1	Encontrar a cláusula 12.3
+gen-rag.c8.viz.steps.1	Encontrar a cláusula 12,3
 gen-rag.c8.viz.steps.2	Responder com a taxa
 gen-rag.c8.viz.steps.3	Link para a página de origem
 gen-rag.c9.title	Falhas comuns
@@ -1274,9 +1274,9 @@ gen-landscape.c6.viz.items.1	Ter avaliações prontas
 gen-landscape.c6.viz.items.2	Versionar prompts
 gen-landscape.c6.viz.items.3	Evitar dependência quando possível
 gen-landscape.c7.title	As licenças importam
-gen-landscape.c7.text	Os modelos de pesos abertos vêm com licenças diferentes: algumas totalmente abertas (Apache 2.0, MIT), outras com restrições de uso ou limites para empresas muito grandes. Confirma antes de uso comercial.
+gen-landscape.c7.text	Os modelos de pesos abertos vêm com licenças diferentes: algumas totalmente abertas (Apache 2,0, MIT), outras com restrições de uso ou limites para empresas muito grandes. Confirma antes de uso comercial.
 gen-landscape.c7.viz.l.t	Permissivas
-gen-landscape.c7.viz.l.items.0	Apache 2.0, MIT
+gen-landscape.c7.viz.l.items.0	Apache 2,0, MIT
 gen-landscape.c7.viz.l.items.1	poucas restrições
 gen-landscape.c7.viz.r.t	Licenças próprias
 gen-landscape.c7.viz.r.items.0	regras de uso
@@ -1306,7 +1306,7 @@ gen-local.q0.q	Mais ou menos quanta memória precisa um modelo de 8B a 4 bits?
 gen-local.q0.o0	1 GB
 gen-local.q0.o1	Cerca de 5 GB
 gen-local.q0.o2	64 GB
-gen-local.q0.x	Cerca de 0.5 bytes por parâmetro, mais a sobrecarga.
+gen-local.q0.x	Cerca de 0,5 bytes por parâmetro, mais a sobrecarga.
 gen-local.q1.q	Qual é a principal vantagem dos modelos locais?
 gen-local.q1.o0	São sempre mais inteligentes
 gen-local.q1.o1	Privacidade, uso offline e nenhum custo por token
@@ -1422,7 +1422,7 @@ gen-cost.c0.viz.items.0.m	prompt e documentos
 gen-cost.c0.viz.items.1.s	saída
 gen-cost.c0.viz.items.1.m	resposta gerada
 gen-cost.c1.title	Um exemplo prático
-gen-cost.c1.text	10,000 pedidos por dia, cada um com 2,000 tokens de entrada e 300 de saída. A $3 por milhão de tokens de entrada e $15 por milhão de saída: $60 + $45 = $105 por dia.
+gen-cost.c1.text	10 000 pedidos por dia, cada um com 2000 tokens de entrada e 300 de saída. A $3 por milhão de tokens de entrada e $15 por milhão de saída: $60 + $45 = $105 por dia.
 gen-cost.c1.viz.f	custo diário = (20 M × $3 + 3 M × $15) ÷ 1 M
 gen-cost.c1.viz.items.0.s	20 M
 gen-cost.c1.viz.items.0.m	tokens de entrada
@@ -1482,7 +1482,7 @@ gen-cost.c8.viz.steps.2	Incluindo correções humanas
 gen-cost.c8.viz.steps.3	Custo por bom resultado
 gen-cost.c9.title	Os preços continuam a descer
 gen-cost.c9.text	O preço de um dado nível de capacidade tem caído de forma drástica ano após ano. Planos que hoje parecem caros demais podem ser acessíveis no próximo ano.
-gen-cost.c9.viz.unit	preço relativo para capacidade semelhante (ilustrativo)
+gen-cost.c9.viz.unit	preço relativo (ilustrativo)
 gen-multimodal.title	IA multimodal
 gen-multimodal.summary	Modelos que veem, ouvem e falam.
 gen-multimodal.q0.q	O que podem receber os modelos multimodais?
@@ -1684,7 +1684,7 @@ gen-daily.c1.viz.items.2	Rascunho da IA: estrutura e 1.ª versão
 gen-daily.c2.title	Resumir para decidir
 gen-daily.c2.text	Pede resumos que apoiem uma decisão: "Quais são as três opções, os custos e riscos de cada uma, e o que falta?"
 gen-daily.c2.viz.items.0.w	"resume este relatório"
-gen-daily.c2.viz.items.0.r	"resume para uma decisão de avançar ou não: opções, custos, riscos, questões em aberto"
+gen-daily.c2.viz.items.0.r	"resume para decidir: opções, custos, riscos"
 gen-daily.c3.title	Aprende mais depressa
 gen-daily.c3.text	A IA é um tutor paciente: pede-lhe que explique um conceito a diferentes níveis, que te faça perguntas ou que dê exemplos da tua área.
 gen-daily.c3.viz.steps.0	Pedir uma explicação

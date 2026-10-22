@@ -1,0 +1,960 @@
+P.title	Inteligência Artificial
+P.blurb	Como as máquinas aprendem e o que realmente existe dentro de um chatbot, explicado sem lição de casa de matemática.
+ai-learn.title	Como as máquinas aprendem
+ai-learn.summary	Sem mágica: exemplos, muita matemática simples e milhões de pequenas correções.
+ai-learn.q0.q	Um modelo de aprendizado de máquina aprende a partir de quê?
+ai-learn.q0.o0	Regras escritas por um programador
+ai-learn.q0.o1	Muitos exemplos
+ai-learn.q0.o2	Resultados de busca da internet em tempo real
+ai-learn.q0.x	Ele encontra padrões nos dados de exemplo. Ninguém escreve as regras à mão.
+ai-learn.q1.q	Ensolarado (+3) e chovendo (−4), não é fim de semana, viés −2. O neurônio da praia dispara?
+ai-learn.q1.o0	Sim
+ai-learn.q1.o1	Não
+ai-learn.q1.x	3 − 4 − 2 = −3, que é menor que zero, então não.
+ai-learn.q2.q	Um modelo acerta 100% nos dados de treino, mas vai mal com dados novos. Isso é…
+ai-learn.q2.o0	Overfitting (sobreajuste)
+ai-learn.q2.o1	Treino perfeito
+ai-learn.q2.o2	Um modelo pequeno
+ai-learn.q2.x	Ele decorou os exemplos em vez de aprender o padrão geral.
+ai-learn.q3.q	Para que serve o conjunto de teste?
+ai-learn.q3.o0	Treinar o modelo
+ai-learn.q3.o1	Ajustar configurações
+ai-learn.q3.o2	Uma verificação final e honesta com dados nunca vistos
+ai-learn.q3.x	Ele fica guardado e só é usado uma vez, então o resultado reflete dados novos.
+ai-learn.c0.title	Aprender com exemplos, não com regras
+ai-learn.c0.text	Tente escrever regras para reconhecer um gato: orelhas pontudas, bigodes… mas as raposas também têm isso, e alguns gatos escondem as orelhas. Você nunca terminaria.\n\nO aprendizado de máquina inverte a lógica. Você mostra ao computador milhares de fotos rotuladas e deixa que ele descubra os padrões sozinho. O resultado se chama modelo.
+ai-learn.c0.sketch.0	se orelhas pontudas…
+ai-learn.c0.sketch.1	e bigodes…
+ai-learn.c0.sketch.2	mas não raposa…
+ai-learn.c0.sketch.3	modelo
+ai-learn.c0.sketch.4	“gato!”
+ai-learn.c0.sketch.5	regras escritas à mão
+ai-learn.c0.sketch.6	aprender com exemplos
+ai-learn.c1.title	Um neurônio é uma votação ponderada
+ai-learn.c1.text	A peça básica de uma rede neural é minúscula. Ela recebe algumas entradas, multiplica cada uma por um peso (o quanto ela importa), soma tudo e diz sim se o total for alto o suficiente.\n\nVale a pena ir à praia? Sol conta +3, fim de semana +2, chuva −4. Empilhe milhões desses pequenos votos em camadas e você terá uma rede capaz de reconhecer rostos ou escrever textos.
+ai-learn.c1.sketch.0	sol
+ai-learn.c1.sketch.1	fim de semana
+ai-learn.c1.sketch.2	chuva
+ai-learn.c1.sketch.6	Σ
+ai-learn.c1.sketch.7	ir?
+ai-learn.c1.sketch.8	some os votos: positivo quer dizer sim
+ai-learn.c2.title	Experimente: seja o neurônio
+ai-learn.c2.text	Ligue e desligue as entradas. O neurônio soma entrada × peso, mais um pequeno viés de −2 (ele precisa de um motivo para ir), e dispara quando o total passa de zero.
+ai-learn.c3.title	Treinar é ir ajustando
+ai-learn.c3.text	Uma rede nova começa com pesos aleatórios e dá palpites péssimos. O treino repete um ciclo simples: dar um palpite, medir o quanto errou e ajustar cada peso um pouquinho na direção que reduz o erro.\n\nImagine uma bola rolando morro abaixo até o vale do menor erro. Os modelos grandes repetem isso bilhões de vezes.
+ai-learn.c3.sketch.0	1º palpite: muito errado
+ai-learn.c3.sketch.1	menor erro = melhores pesos
+ai-learn.c3.sketch.2	erro
+ai-learn.c3.sketch.3	pesos
+ai-learn.c4.title	Decorar não é aprender
+ai-learn.c4.text	Um modelo pode se ajustar perfeitamente aos exemplos de treino e mesmo assim ser inútil, como um aluno que decorou as respostas da prova do ano passado. Isso se chama overfitting (sobreajuste).\n\nA solução é testar com exemplos que o modelo nunca viu. Se ele também for bem neles, aprendeu o padrão real, e não o ruído.
+ai-learn.c4.sketch.0	decora cada ponto
+ai-learn.c4.sketch.1	aprende a tendência
+ai-learn.c4.sketch.2	dados novos seguem a linha azul
+ai-learn.c5.title	Features: o que o modelo observa
+ai-learn.c5.text	Um modelo nunca vê "uma casa". Ele vê números que a descrevem, chamados features (características): área, número de quartos, distância até o litoral, ano de construção.\n\nEscolher boas features costumava ser a maior parte do trabalho. O deep learning aprende muitas delas sozinho, mas a ideia continua a mesma: o modelo só pode usar o que você der a ele.
+ai-learn.c5.viz.steps.0	120 m², 3 quartos, a 2 km do litoral
+ai-learn.c5.viz.steps.1	Modelo
+ai-learn.c5.viz.steps.2	Preço estimado €310.000
+ai-learn.c6.title	Treino, validação, teste
+ai-learn.c6.text	Você divide os dados antes de treinar. O modelo aprende com o conjunto de treino, você ajusta as configurações no conjunto de validação, e o conjunto de teste fica trancado até o final.\n\nSe você espiar o conjunto de teste enquanto constrói o modelo, o resultado final vai sair otimista demais.
+ai-learn.c6.viz.unit	% dos dados
+ai-learn.c6.viz.items.0.l	Treino
+ai-learn.c6.viz.items.1.l	Validação
+ai-learn.c6.viz.items.2.l	Teste
+ai-learn.c7.title	O modelo mais simples: uma reta
+ai-learn.c7.text	Com uma única feature, um modelo pode ser uma reta. Ele multiplica a entrada por um peso e soma um viés. O treino encontra o peso e o viés que fazem a reta se ajustar melhor aos dados.\n\nAs redes neurais são milhões dessas pequenas somas empilhadas, com um toque extra entre elas.
+ai-learn.c7.viz.f	y = w·x + b
+ai-learn.c7.viz.items.0.s	y
+ai-learn.c7.viz.items.0.m	previsão
+ai-learn.c7.viz.items.1.s	x
+ai-learn.c7.viz.items.1.m	feature de entrada
+ai-learn.c7.viz.items.2.s	w
+ai-learn.c7.viz.items.2.m	peso (inclinação)
+ai-learn.c7.viz.items.3.s	b
+ai-learn.c7.viz.items.3.m	viés (deslocamento)
+ai-learn.c8.title	Mais dados muitas vezes superam um algoritmo mais esperto
+ai-learn.c8.text	Em muitos problemas reais, um modelo simples treinado com muitos dados bons supera um modelo sofisticado treinado com poucos. Pesquisadores do Google chamaram isso de "a eficácia irracional dos dados" em 2009.\n\nA qualidade importa tanto quanto a quantidade: um milhão de exemplos mal rotulados ensina a lição errada com muita confiança.
+ai-learn.c8.viz.l.t	Poucos dados
+ai-learn.c8.viz.l.items.0	exige features espertas
+ai-learn.c8.viz.l.items.1	fácil sobreajustar
+ai-learn.c8.viz.l.items.2	barato de coletar
+ai-learn.c8.viz.r.t	Muitos dados
+ai-learn.c8.viz.r.items.0	modelos simples bastam
+ai-learn.c8.viz.r.items.1	padrões generalizam
+ai-learn.c8.viz.r.items.2	precisam ser limpos
+ai-learn.c9.title	Um filtro de spam, passo a passo
+ai-learn.c9.text	Cada e-mail recebido é transformado em features: palavras usadas, reputação do remetente, número de links. O modelo devolve uma pontuação entre 0 e 1. Acima de um limiar, digamos 0,9, ele vai para o spam.\n\nEscolher esse limiar é uma decisão de negócio: abaixe-o e você pega mais spam, mas perde mais e-mails legítimos.
+ai-learn.c9.viz.steps.0	Chega um e-mail
+ai-learn.c9.viz.steps.1	Vira features
+ai-learn.c9.viz.steps.2	Modelo dá nota 0–1
+ai-learn.c9.viz.steps.3	Acima de 0,9: spam
+ai-chat.title	Como funcionam os chatbots
+ai-chat.summary	O que realmente acontece dentro do ChatGPT, do Claude e companhia.
+ai-chat.q0.q	O que um modelo de linguagem realmente faz a cada passo?
+ai-chat.q0.o0	Procura a resposta em um banco de dados
+ai-chat.q0.o1	Prevê o próximo token mais provável
+ai-chat.q0.o2	Copia uma página da web correspondente
+ai-chat.q0.x	Ele estima as probabilidades do próximo token, escolhe um e repete.
+ai-chat.q1.q	Mais ou menos quantas palavras em inglês cabem em 1.000 tokens?
+ai-chat.q1.o0	Cerca de 250
+ai-chat.q1.o1	Cerca de 750
+ai-chat.q1.o2	Cerca de 4.000
+ai-chat.q1.x	Em inglês, um token equivale em média a cerca de ¾ de uma palavra.
+ai-chat.q2.q	Você quer respostas consistentes e previsíveis. Qual temperatura?
+ai-chat.q2.o0	Baixa
+ai-chat.q2.o1	Alta
+ai-chat.q2.x	A temperatura baixa concentra as chances nos tokens mais prováveis.
+ai-chat.q3.q	Por que um chatbot pode não saber das notícias de ontem?
+ai-chat.q3.o0	Está com defeito
+ai-chat.q3.o1	O conhecimento dele para numa data de corte do treino, a menos que tenha uma ferramenta de busca
+ai-chat.q3.o2	Ele ignora notícias de propósito
+ai-chat.q3.x	Sem ferramentas, um modelo só sabe o que estava nos dados de treino.
+ai-chat.c0.title	O texto vira tokens
+ai-chat.c0.text	Os modelos de linguagem não leem letras nem palavras inteiras. O texto é picado em tokens: palavras comuns ficam inteiras, as mais raras são divididas em pedaços. Para o modelo, cada token é só um número.\n\nEm inglês, um token equivale em média a cerca de ¾ de uma palavra, e é por isso que os serviços de IA cobram e limitam o uso em tokens.
+ai-chat.c0.sketch.0	inacreditável
+ai-chat.c0.sketch.1	in
+ai-chat.c0.sketch.2	acredit
+ai-chat.c0.sketch.3	ável
+ai-chat.c0.sketch.7	os números dos tokens são inventados para este exemplo
+ai-chat.c1.title	Ele prevê a próxima palavra
+ai-chat.c1.text	No fundo, um modelo de linguagem faz uma coisa só: dado o texto até agora, estima a probabilidade de cada próximo token possível. Escolhe um, acrescenta ao texto e repete.\n\nTreinado com uma quantidade enorme de textos, esse truque simples acaba captando gramática, fatos, estilos e uma quantidade surpreendente de raciocínio.
+ai-chat.c1.sketch.0	“O gato sentou no …”
+ai-chat.c1.sketch.1	tapete
+ai-chat.c1.sketch.3	sofá
+ai-chat.c1.sketch.5	chão
+ai-chat.c1.sketch.7	telhado
+ai-chat.c1.sketch.9	ele escolhe segundo essas chances, uma palavra por vez
+ai-chat.c2.title	Experimente: aumente a temperatura
+ai-chat.c2.text	A temperatura controla o quanto o modelo é ousado. Com temperatura baixa, ele quase sempre escolhe a palavra do topo; com temperatura alta, as chances se espalham e palavras mais raras têm vez. Aperte Gerar algumas vezes em cada configuração.
+ai-chat.c3.title	O significado como um mapa
+ai-chat.c3.text	Dentro do modelo, cada token vira uma lista de números chamada embedding, como coordenadas num mapa de significados. Ideias parecidas ficam próximas: gato perto de cachorro, Lisboa perto do Porto.\n\nAs direções também têm significado. O passo de 'homem' para 'mulher' é mais ou menos o mesmo que de 'rei' para 'rainha'.
+ai-chat.c3.sketch.0	homem
+ai-chat.c3.sketch.1	mulher
+ai-chat.c3.sketch.2	rei
+ai-chat.c3.sketch.3	rainha
+ai-chat.c3.sketch.4	gato
+ai-chat.c3.sketch.5	cão
+ai-chat.c3.sketch.6	filhote
+ai-chat.c3.sketch.7	rei − homem + mulher ≈ rainha
+ai-chat.c4.title	Fluente não é o mesmo que verdadeiro
+ai-chat.c4.text	Como o modelo prevê textos plausíveis, ele pode produzir frases confiantes que estão simplesmente erradas. Isso se chama alucinação. É mais provável com números exatos, datas, citações e fatos de nicho.\n\nUse a IA para rascunhar, explicar e ter ideias, e confira qualquer coisa importante numa fonte confiável. (A Torre Eiffel foi concluída em 1889.)
+ai-chat.c4.sketch.0	A Torre Eiffel foi
+ai-chat.c4.sketch.1	concluída em 1901.
+ai-chat.c4.sketch.3	parece seguro, mas está errado: confira os fatos
+ai-chat.c5.title	A janela de contexto
+ai-chat.c5.text	Um modelo só consegue "ver" uma quantidade limitada de texto de uma vez, medida em tokens. Essa é a janela de contexto: sua pergunta, a conversa até agora e qualquer documento que você colou.\n\nQuando a conversa passa do limite, as partes mais antigas são descartadas ou resumidas. As janelas cresceram enormemente desde 2022.
+ai-chat.c5.viz.unit	mil tokens
+ai-chat.c5.viz.items.0.l	GPT-3.5 (2022)
+ai-chat.c5.viz.items.1.l	GPT-4 32K (2023)
+ai-chat.c5.viz.items.2.l	Claude 2.1 (2023)
+ai-chat.c5.viz.items.3.l	Gemini 1.5 (2024)
+ai-chat.c6.title	Pré-treino, depois ajuste fino
+ai-chat.c6.text	Primeiro o modelo lê uma quantidade enorme de texto e aprende a prever o próximo token. Isso o torna bem informado, mas ainda não útil.\n\nDepois ele passa por um ajuste fino com exemplos de boas respostas e é treinado mais com feedback humano (e de IA) sobre quais respostas são melhores. É isso que transforma um previsor de texto num assistente.
+ai-chat.c6.viz.steps.0	Ler muito texto, prever o próximo token
+ai-chat.c6.viz.steps.1	Ajuste fino com boas respostas
+ai-chat.c6.viz.steps.2	Aprender com feedback
+ai-chat.c6.viz.steps.3	Assistente útil
+ai-chat.c7.title	Prompts melhores, respostas melhores
+ai-chat.c7.text	O modelo só sabe o que você conta a ele. Diga quem você é, do que precisa, como seria um bom resultado e em que formato. Cole os dados relevantes em vez de descrevê-los. Se a primeira resposta não acertar, diga o que mudar.
+ai-chat.c7.viz.items.0	Dê contexto: para quem e por quê
+ai-chat.c7.viz.items.1	Seja específico sobre a tarefa
+ai-chat.c7.viz.items.2	Cole exemplos ou material de origem
+ai-chat.c7.viz.items.3	Peça um formato: tabela, tópicos, tamanho
+ai-chat.c7.viz.items.4	Itere: diga o que mudar
+ai-chat.c8.title	Os modelos não pesquisam nada sozinhos
+ai-chat.c8.text	Um modelo de linguagem puro responde com base no que aprendeu durante o treino, que para numa data de corte. Ele não sabe as notícias de hoje nem conhece seus arquivos.\n\nOs assistentes modernos recebem ferramentas: busca na web, acesso a documentos, execução de código. Com ferramentas, eles podem buscar fatos atualizados em vez de chutar.
+ai-chat.c8.viz.l.t	Só o modelo
+ai-chat.c8.viz.l.items.0	saber congelado numa data
+ai-chat.c8.viz.l.items.1	não vê seus arquivos
+ai-chat.c8.viz.l.items.2	pode chutar
+ai-chat.c8.viz.r.t	Com ferramentas
+ai-chat.c8.viz.r.items.0	pesquisa na web
+ai-chat.c8.viz.r.items.1	lê seus documentos
+ai-chat.c8.viz.r.items.2	roda código para checar contas
+ai-chat.c9.title	O que significa "70B"
+ai-chat.c9.text	O tamanho dos modelos é contado em parâmetros, os pesos aprendidos. Um modelo 70B tem 70 bilhões deles. Armazenado em formato de 16 bits, cada peso ocupa 2 bytes, então só o modelo precisa de cerca de 140 GB de memória.\n\nPor isso os modelos grandes rodam em data centers, e os modelos menores ou comprimidos (quantizados) rodam em notebooks.
+ai-chat.c9.example.0	Modelo 8B em 4 bits (0,5 byte cada)
+ai-chat.c9.example.1	8 × 0,5
+ai-chat.c9.example.2	≈ 4 GB: cabe num notebook
+ai-chat.c9.viz.f	memória ≈ parâmetros × bytes
+ai-chat.c9.viz.items.0.s	70 B
+ai-chat.c9.viz.items.0.m	parâmetros
+ai-chat.c9.viz.items.1.s	2 bytes
+ai-chat.c9.viz.items.1.m	por peso em 16 bits
+ai-chat.c9.viz.items.2.s	≈ 140 GB
+ai-chat.c9.viz.items.2.m	memória necessária
+ai-types.title	Três formas de as máquinas aprenderem
+ai-types.summary	Aprendizado supervisionado, não supervisionado e por reforço, e quando usar cada um.
+ai-types.q0.q	Prever a demanda de eletricidade de amanhã em kWh é…
+ai-types.q0.o0	Classificação
+ai-types.q0.o1	Regressão
+ai-types.q0.o2	Clusterização
+ai-types.q0.x	Está sendo previsto um número, então é regressão.
+ai-types.q1.q	Uma IA que aprende xadrez jogando milhões de partidas contra si mesma usa…
+ai-types.q1.o0	Aprendizado supervisionado
+ai-types.q1.o1	Aprendizado não supervisionado
+ai-types.q1.o2	Aprendizado por reforço
+ai-types.q1.x	Ela aprende com vitórias e derrotas, que são recompensas.
+ai-types.q2.q	Esconder uma palavra numa frase e pedir ao modelo que a adivinhe é…
+ai-types.q2.o0	Aprendizado autossupervisionado
+ai-types.q2.o1	Aprendizado por reforço
+ai-types.q2.o2	Rotulagem manual
+ai-types.q2.x	Os próprios dados fornecem os rótulos.
+ai-types.c0.title	Aprendizado supervisionado
+ai-types.c0.text	Você dá ao modelo exemplos com as respostas certas junto: fotos rotuladas como "gato" ou "cachorro", casas com o preço de venda. Ele aprende a associar entradas a respostas.\n\nÉ o tipo de aprendizado de máquina mais comum nas empresas: previsão de demanda, detecção de fraude, classificação de documentos.
+ai-types.c0.viz.steps.0	Exemplos rotulados
+ai-types.c0.viz.steps.1	Aprender a relação
+ai-types.c0.viz.steps.2	Prever rótulos para dados novos
+ai-types.c1.title	Classificação vs. regressão
+ai-types.c1.text	Os problemas supervisionados vêm em dois sabores. A classificação escolhe uma categoria: spam ou não, que tipo de produto, qual doença. A regressão prevê um número: o preço de amanhã, o prazo de entrega, a demanda de energia.
+ai-types.c1.viz.l.t	Classificação
+ai-types.c1.viz.l.items.0	escolhe uma categoria
+ai-types.c1.viz.l.items.1	spam ou não spam
+ai-types.c1.viz.l.items.2	fraude ou legítimo
+ai-types.c1.viz.r.t	Regressão
+ai-types.c1.viz.r.items.0	prevê um número
+ai-types.c1.viz.r.items.1	preço da casa
+ai-types.c1.viz.r.items.2	kWh amanhã
+ai-types.c2.title	Aprendizado não supervisionado
+ai-types.c2.text	Aqui não há rótulos. O modelo procura estrutura por conta própria: grupos de clientes parecidos, transações incomuns, temas numa pilha de documentos.\n\nÉ útil quando você ainda não sabe o que está procurando, ou quando rotular sairia caro demais.
+ai-types.c2.viz.root	Não supervisionado
+ai-types.c2.viz.items.0	Clusterização (grupos)
+ai-types.c2.viz.items.1	Detecção de anomalias
+ai-types.c2.viz.items.2	Descoberta de temas
+ai-types.c2.viz.items.3	Compressão
+ai-types.c3.title	Agrupando clientes
+ai-types.c3.text	Dê a um algoritmo de clusterização o histórico de compras de 100.000 clientes e peça cinco grupos. Ele pode encontrar caçadores de promoções, compradores de fim de semana, grandes compradores ocasionais e assim por diante.\n\nO algoritmo encontra os grupos; um ser humano ainda precisa olhar para eles e decidir o que significam.
+ai-types.c3.viz.steps.0	Histórico de compras
+ai-types.c3.viz.steps.1	Algoritmo agrupa clientes parecidos
+ai-types.c3.viz.steps.2	5 segmentos
+ai-types.c3.viz.steps.3	Pessoas os nomeiam e agem
+ai-types.c4.title	Aprendizado por reforço
+ai-types.c4.text	Um agente aprende por tentativa e erro. Ele realiza uma ação, o ambiente responde e ele recebe uma recompensa ou uma penalidade. Ao longo de milhões de tentativas, aprende quais ações levam à maior recompensa.\n\nFoi assim que os computadores aprenderam a jogar Go, xadrez e videogames melhor que os humanos.
+ai-types.c4.viz.steps.0	Observar a situação
+ai-types.c4.viz.steps.1	Realizar uma ação
+ai-types.c4.viz.steps.2	Receber recompensa ou penalidade
+ai-types.c4.viz.steps.3	Ajustar a estratégia
+ai-types.c5.title	Aprendizado autossupervisionado
+ai-types.c5.text	Um truque esperto: criar os rótulos a partir dos próprios dados. Esconda uma palavra numa frase e peça ao modelo que a adivinhe. Esconda parte de uma imagem e peça que ele preencha a lacuna.\n\nNinguém precisa rotular nada, então dá para treinar com bilhões de exemplos. Os grandes modelos de linguagem são treinados assim.
+ai-types.c5.viz.items.0.a	"O gato sentou no ___"
+ai-types.c5.viz.items.0.b	adivinhar "tapete"
+ai-types.c5.viz.items.1.a	Trecho de imagem oculto
+ai-types.c5.viz.items.1.b	reconstruí-lo
+ai-types.c5.viz.items.2.a	Próximo quadro do vídeo
+ai-types.c5.viz.items.2.b	prevê-lo
+ai-types.c6.title	Rótulos custam caro
+ai-types.c6.text	O aprendizado supervisionado precisa de dados rotulados, e rotular é um trabalho humano lento. Imagens médicas precisam de médicos; documentos jurídicos precisam de advogados.\n\nEsse custo é o motivo pelo qual o pré-treino autossupervisionado ficou tão importante: primeiro aprender conhecimento geral com dados não rotulados, depois fazer o ajuste fino com um pequeno conjunto rotulado.
+ai-types.c6.viz.l.t	Dados não rotulados
+ai-types.c6.viz.l.items.0	baratos e abundantes
+ai-types.c6.viz.l.items.1	textos da web, fotos, logs
+ai-types.c6.viz.r.t	Dados rotulados
+ai-types.c6.viz.r.items.0	lentos e caros
+ai-types.c6.viz.r.items.1	exigem especialistas
+ai-types.c6.viz.r.items.2	precisam ser revisados
+ai-types.c7.title	Semissupervisionado: uma ajudinha rende muito
+ai-types.c7.text	Muitas vezes você tem alguns exemplos rotulados e uma montanha de exemplos sem rótulo. Os métodos semissupervisionados usam os rotulados para começar e depois deixam o modelo rotular o resto, mantendo só os palpites em que ele tem confiança.
+ai-types.c7.viz.steps.0	1.000 exemplos rotulados
+ai-types.c7.viz.steps.1	Treinar um 1º modelo
+ai-types.c7.viz.steps.2	Rotular mais 100.000 automaticamente
+ai-types.c7.viz.steps.3	Retreinar com tudo
+ai-types.c8.title	Qual abordagem se encaixa?
+ai-types.c8.text	Tem exemplos passados com resultados conhecidos? Supervisionado. Quer descobrir estrutura? Não supervisionado. É uma sequência de decisões com um objetivo, como um jogo ou um robô? Reforço.
+ai-types.c8.viz.root	Você tem as respostas certas?
+ai-types.c8.viz.items.0	Sim: supervisionado
+ai-types.c8.viz.items.1	Não, achar padrões: não supervisionado
+ai-types.c8.viz.items.2	Objetivo e recompensas: reforço
+ai-types.c9.title	A maior parte da IA nas empresas é supervisionada
+ai-types.c9.text	Apesar das manchetes sobre jogos e chatbots, a maior parte do aprendizado de máquina em produção nas empresas ainda é supervisionada: prever cancelamentos, demanda, inadimplência ou atrasos a partir de registros históricos.
+ai-types.c9.viz.items.0	Previsão de demanda
+ai-types.c9.viz.items.1	Pontuação de fraude e anomalias
+ai-types.c9.viz.items.2	Previsão de cancelamento de clientes
+ai-types.c9.viz.items.3	Classificação de documentos
+ai-types.c9.viz.items.4	Manutenção preditiva
+ai-data.title	Dados: o combustível
+ai-data.summary	De onde vêm os dados de treino e como eles dão errado.
+ai-data.q0.q	Um modelo parece perfeito nos testes, mas falha em produção. Uma causa provável é…
+ai-data.q0.o0	Dados demais
+ai-data.q0.o1	Vazamento de dados
+ai-data.q0.o2	Usar uma GPU
+ai-data.q0.x	O vazamento dá ao modelo, durante o treino, informações que ele não terá no uso real.
+ai-data.q1.q	O que é drift (deriva) de dados?
+ai-data.q1.o0	Dados sendo apagados
+ai-data.q1.o1	O mundo real mudar, de modo que os dados de treino antigos já não correspondem
+ai-data.q1.o2	Uma falha de hardware
+ai-data.q1.x	Os padrões mudam com o tempo, então os modelos precisam de monitoramento e retreino.
+ai-data.q2.q	Qual destes é um dado não estruturado?
+ai-data.q2.o0	Uma tabela de vendas
+ai-data.q2.o1	Contratos digitalizados
+ai-data.q2.o2	Leituras de sensores num banco de dados
+ai-data.q2.x	Textos, imagens e áudio não se encaixam bem em linhas e colunas.
+ai-data.c0.title	Entra lixo, sai lixo
+ai-data.c0.text	Um modelo é um resumo dos seus dados de treino. Se os dados estiverem errados, incompletos ou enviesados, o modelo também estará, e vai errar com muita confiança.\n\nEm projetos reais, preparar os dados costuma levar mais tempo do que construir o modelo.
+ai-data.c0.viz.steps.0	Dados bagunçados
+ai-data.c0.viz.steps.1	Modelo aprende a bagunça
+ai-data.c0.viz.steps.2	Respostas erradas e confiantes
+ai-data.c1.title	O trabalho com dados domina os projetos
+ai-data.c1.text	Pesquisas com cientistas de dados mostram consistentemente que coletar, limpar e organizar dados ocupa a maior parte do tempo deles. Treinar o modelo muitas vezes é a parte rápida.
+ai-data.c1.viz.items.0	Encontrar e acessar os dados
+ai-data.c1.viz.items.1	Corrigir valores ausentes e errados
+ai-data.c1.viz.items.2	Juntar tabelas de sistemas diferentes
+ai-data.c1.viz.items.3	Rotular exemplos
+ai-data.c1.viz.items.4	Verificar vieses e vazamentos
+ai-data.c2.title	Dados estruturados vs. não estruturados
+ai-data.c2.text	Dados estruturados cabem em tabelas: transações, leituras de sensores, registros do ERP. Dados não estruturados são todo o resto: e-mails, contratos, fotos, áudio.\n\nO aprendizado de máquina clássico adora tabelas. O deep learning tornou os dados não estruturados utilizáveis em grande escala.
+ai-data.c2.viz.l.t	Estruturados
+ai-data.c2.viz.l.items.0	linhas e colunas
+ai-data.c2.viz.l.items.1	ERP, sensores, vendas
+ai-data.c2.viz.l.items.2	ML clássico
+ai-data.c2.viz.r.t	Não estruturados
+ai-data.c2.viz.r.items.0	texto, imagem, áudio
+ai-data.c2.viz.r.items.1	contratos, e-mails
+ai-data.c2.viz.r.items.2	deep learning
+ai-data.c3.title	Valores ausentes
+ai-data.c3.text	Dados reais têm lacunas: um sensor ficou offline, um campo ficou em branco. Você pode descartar essas linhas, preenchê-las com uma média ou deixar o modelo tratar o "ausente" como uma informação em si.\n\nÀs vezes, o fato de um valor estar ausente diz algo, como um cliente que nunca informou o telefone.
+ai-data.c3.viz.items.0.a	Descartar a linha
+ai-data.c3.viz.items.0.b	simples, perde dados
+ai-data.c3.viz.items.1.a	Preencher com a média
+ai-data.c3.viz.items.1.b	mantém linhas, borra detalhes
+ai-data.c3.viz.items.2.a	Marcar como ausente
+ai-data.c3.viz.items.2.b	a lacuna vira um sinal
+ai-data.c4.title	Vazamento de dados
+ai-data.c4.text	O vazamento acontece quando os dados de treino contêm informações que o modelo não terá quando for usado de verdade. Um modelo de cancelamento treinado com uma coluna "data de cancelamento" vai parecer brilhante nos testes e falhar em produção.\n\nPergunte sempre: eu saberia este valor no momento em que faço a previsão?
+ai-data.c4.viz.items.0.w	usar a data de cancelamento
+ai-data.c4.viz.items.0.r	usar só dados conhecidos antes da decisão
+ai-data.c4.viz.items.1.w	embaralhar séries temporais
+ai-data.c4.viz.items.1.r	dividir por data: passado treina, futuro testa
+ai-data.c5.title	Viés de amostragem
+ai-data.c5.text	Se os seus dados não representam as pessoas ou situações que o modelo vai encontrar, ele vai falhar nas que nunca viu. Um detector de rostos treinado principalmente com um grupo funciona pior com os outros.
+ai-data.c5.viz.l.t	Dados de treino
+ai-data.c5.viz.l.items.0	quase só fotos de dia
+ai-data.c5.viz.l.items.1	uma região
+ai-data.c5.viz.l.items.2	uma estação
+ai-data.c5.viz.r.t	Mundo real
+ai-data.c5.viz.r.items.0	noite e chuva
+ai-data.c5.viz.r.items.1	todas as regiões
+ai-data.c5.viz.r.items.2	o ano todo
+ai-data.c6.title	Drift de dados
+ai-data.c6.text	O mundo muda, e os modelos treinados com dados do ano passado vão ficando desatualizados aos poucos. O comportamento dos clientes muda, os preços mudam, surge um produto novo.\n\nPor isso os modelos em produção precisam de monitoramento e retreino periódico.
+ai-data.c6.viz.events.0.y	jan
+ai-data.c6.viz.events.0.l	modelo treinado
+ai-data.c6.viz.events.1.y	abr
+ai-data.c6.viz.events.1.l	ainda preciso
+ai-data.c6.viz.events.2.y	ago
+ai-data.c6.viz.events.2.l	comportamento muda
+ai-data.c6.viz.events.3.y	nov
+ai-data.c6.viz.events.3.l	precisão cai
+ai-data.c6.viz.events.4.y	dez
+ai-data.c6.viz.events.4.l	retreinado
+ai-data.c7.title	Dados sintéticos
+ai-data.c7.text	Quando os dados reais são escassos ou privados, você pode gerar exemplos artificiais: falhas de sensor simuladas, notas fiscais falsas mas realistas, imagens renderizadas.\n\nIsso ajuda, mas os dados sintéticos só contêm os padrões que você colocou neles. Teste sempre com dados reais.
+ai-data.c7.viz.l.t	Pontos fortes
+ai-data.c7.viz.l.items.0	sem problemas de privacidade
+ai-data.c7.viz.l.items.1	casos raros sob demanda
+ai-data.c7.viz.l.items.2	barato de escalar
+ai-data.c7.viz.r.t	Riscos
+ai-data.c7.viz.r.items.0	ignora manias do mundo real
+ai-data.c7.viz.r.items.1	pode embutir suposições
+ai-data.c7.viz.r.items.2	testar com dados reais
+ai-data.c8.title	Dados e privacidade
+ai-data.c8.text	Dados pessoais usados em treino estão sujeitos a leis como o RGPD (GDPR) da UE. Você precisa de uma base legal, deve coletar só o necessário e tem de protegê-los.\n\nAnonimizar dados é mais difícil do que parece: combinar alguns campos como código postal, data de nascimento e gênero pode identificar muita gente.
+ai-data.c8.viz.items.0	Coletar só o necessário
+ai-data.c8.viz.items.1	Conhecer a base legal
+ai-data.c8.viz.items.2	Remover ou mascarar identificadores
+ai-data.c8.viz.items.3	Controlar quem tem acesso
+ai-data.c8.viz.items.4	Registrar de onde vieram
+ai-data.c9.title	Qualidade da rotulagem
+ai-data.c9.text	Os rótulos são criados por pessoas, e pessoas discordam ou cometem erros. Bons projetos escrevem diretrizes de rotulagem claras, colocam várias pessoas para rotular os mesmos exemplos e medem com que frequência elas concordam.
+ai-data.c9.viz.steps.0	Escrever diretrizes claras
+ai-data.c9.viz.steps.1	Vários rotuladores por item
+ai-data.c9.viz.steps.2	Medir a concordância
+ai-data.c9.viz.steps.3	Resolver os casos ambíguos
+ai-algos.title	Algoritmos clássicos
+ai-algos.summary	Os burros de carga que ainda movem boa parte da IA nas empresas.
+ai-algos.q0.q	Qual método constrói árvores uma após a outra, cada uma corrigindo os erros das anteriores?
+ai-algos.q0.o0	Random forest
+ai-algos.q0.o1	Gradient boosting
+ai-algos.q0.o2	k-means
+ai-algos.q0.x	O boosting é sequencial; as random forests são árvores independentes que votam.
+ai-algos.q1.q	A regressão logística é usada principalmente para…
+ai-algos.q1.o0	Prever preços
+ai-algos.q1.o1	Classificação com probabilidades
+ai-algos.q1.o2	Clusterização
+ai-algos.q1.x	Ela devolve uma probabilidade para um resultado sim/não.
+ai-algos.q2.q	Para uma tabela de dados de vendas, uma boa primeira escolha costuma ser…
+ai-algos.q2.o0	Uma rede neural enorme
+ai-algos.q2.o1	Árvores com gradient boosting
+ai-algos.q2.o2	Um modelo de imagem
+ai-algos.q2.x	As árvores com boosting são rápidas e precisas com dados tabulares.
+ai-algos.c0.title	Regressão linear
+ai-algos.c0.text	O truque mais antigo: traçar a melhor reta através dos dados. Ela prevê um número a partir de uma soma ponderada das entradas.\n\nÉ rápida, fácil de explicar ("cada m² a mais soma €2.500") e muitas vezes uma boa referência antes de tentar algo mais sofisticado.
+ai-algos.c0.viz.f	preço = w₁·área + w₂·quartos + b
+ai-algos.c0.viz.items.0.s	w₁, w₂
+ai-algos.c0.viz.items.0.m	pesos aprendidos
+ai-algos.c0.viz.items.1.s	b
+ai-algos.c0.viz.items.1.m	preço base
+ai-algos.c0.viz.items.2.s	área, quartos
+ai-algos.c0.viz.items.2.m	features
+ai-algos.c1.title	Regressão logística
+ai-algos.c1.text	Apesar do nome, serve para classificação. Ela espreme uma soma ponderada numa probabilidade entre 0 e 1 usando uma curva em forma de S. Acima de 0,5 significa "sim".\n\nOs bancos a usam há décadas para análise de crédito porque cada peso pode ser explicado.
+ai-algos.c1.viz.steps.0	Soma ponderada das features
+ai-algos.c1.viz.steps.1	Curva em S espreme para 0–1
+ai-algos.c1.viz.steps.2	0,83 → provável sim
+ai-algos.c2.title	Árvores de decisão
+ai-algos.c2.text	Uma árvore faz uma série de perguntas de sim/não: A renda é maior que €30 mil? O cliente já deixou de pagar alguma parcela? Cada caminho termina numa previsão.\n\nAs árvores são fáceis de ler e explicar, mas uma árvore sozinha tende ao overfitting.
+ai-algos.c2.viz.root	Deixou de pagar?
+ai-algos.c2.viz.items.0	Sim → risco alto
+ai-algos.c2.viz.items.1	Não, renda < €30 mil → médio
+ai-algos.c2.viz.items.2	Não, renda ≥ €30 mil → risco baixo
+ai-algos.c3.title	Random forests
+ai-algos.c3.text	Treine centenas de árvores de decisão ligeiramente diferentes com fatias aleatórias dos dados e deixe que elas votem. A multidão é muito mais precisa e estável do que qualquer árvore sozinha.
+ai-algos.c3.viz.steps.0	Muitas árvores em amostras aleatórias
+ai-algos.c3.viz.steps.1	Cada árvore vota
+ai-algos.c3.viz.steps.2	A maioria vence
+ai-algos.c4.title	Gradient boosting
+ai-algos.c4.text	Em vez de as árvores votarem de forma independente, o boosting as constrói em sequência. Cada árvore nova se concentra nos erros das anteriores.\n\nBibliotecas como XGBoost e LightGBM vencem muitas competições com dados tabulares e são muito usadas na indústria.
+ai-algos.c4.viz.steps.0	Árvore 1 comete erros
+ai-algos.c4.viz.steps.1	Árvore 2 os corrige
+ai-algos.c4.viz.steps.2	Árvore 3 corrige o que sobrou
+ai-algos.c4.viz.steps.3	Soma de todas as árvores
+ai-algos.c5.title	k vizinhos mais próximos
+ai-algos.c5.text	Para classificar algo novo, encontre os k exemplos mais parecidos que você já conhece e faça uma votação. Uma casa nova recebe um preço parecido com o das suas cinco vizinhas mais semelhantes.\n\nSimples e intuitivo, mas lento quando o conjunto de dados é enorme.
+ai-algos.c5.viz.l.t	Pontos fortes
+ai-algos.c5.viz.l.items.0	não há etapa de treino
+ai-algos.c5.viz.l.items.1	fácil de explicar
+ai-algos.c5.viz.l.items.2	funciona com poucas features
+ai-algos.c5.viz.r.t	Pontos fracos
+ai-algos.c5.viz.r.items.0	lento com muitos dados
+ai-algos.c5.viz.r.items.1	sensível à escala
+ai-algos.c5.viz.r.items.2	sofre com muitas features
+ai-algos.c6.title	Clusterização k-means
+ai-algos.c6.text	Um clássico não supervisionado. Escolha k pontos centrais, atribua cada item ao centro mais próximo, mova cada centro para o meio do seu grupo e repita até nada mudar.
+ai-algos.c6.viz.steps.0	Posicionar k centros
+ai-algos.c6.viz.steps.1	Ligar cada ponto ao mais próximo
+ai-algos.c6.viz.steps.2	Mover centros para o meio
+ai-algos.c6.viz.steps.3	Repetir até estabilizar
+ai-algos.c7.title	Deep learning nem sempre é o melhor
+ai-algos.c7.text	Para tabelas de números, como vendas, preços ou logs de sensores, as árvores com gradient boosting muitas vezes igualam ou superam as redes neurais, treinam mais rápido e são mais fáceis de explicar.\n\nAs redes neurais brilham com imagens, áudio e texto.
+ai-algos.c7.viz.l.t	Dados tabulares
+ai-algos.c7.viz.l.items.0	boosting costuma vencer
+ai-algos.c7.viz.l.items.1	rápido
+ai-algos.c7.viz.l.items.2	explicável
+ai-algos.c7.viz.r.t	Imagem, áudio, texto
+ai-algos.c7.viz.r.items.0	redes neurais vencem
+ai-algos.c7.viz.r.items.1	exigem muitos dados
+ai-algos.c7.viz.r.items.2	exigem GPUs
+ai-algos.c8.title	Comece com uma referência
+ai-algos.c8.text	Antes de construir algo complexo, meça uma referência boba (baseline): "prever a média" ou "igual à semana passada". Se o seu modelo esperto mal a supera, não vale a pena colocá-lo em produção.
+ai-algos.c8.viz.unit	% de erro
+ai-algos.c8.viz.items.0.l	Igual à semana passada
+ai-algos.c8.viz.items.1.l	Modelo linear
+ai-algos.c8.viz.items.2.l	Árvores com boosting
+ai-algos.c9.title	Escolhendo um algoritmo
+ai-algos.c9.text	Pense no tipo de dado, em quantos dados você tem, se precisa explicar as decisões e em quão rápidas as previsões precisam ser. Na prática, os times testam alguns e escolhem com base nos resultados medidos.
+ai-algos.c9.viz.items.0	Que tipo de dado: tabela, texto, imagem?
+ai-algos.c9.viz.items.1	Quantos exemplos?
+ai-algos.c9.viz.items.2	As decisões precisam ser explicadas?
+ai-algos.c9.viz.items.3	Quão rápido deve prever?
+ai-algos.c9.viz.items.4	Comparar com uma referência
+ai-nets.title	Por dentro de uma rede neural
+ai-nets.summary	Camadas, ativações e como a rede aprende com os próprios erros.
+ai-nets.q0.q	O que a retropropagação faz?
+ai-nets.q0.o0	Coleta mais dados
+ai-nets.q0.o1	Calcula quanto cada peso contribuiu para o erro
+ai-nets.q0.o2	Desenha a rede
+ai-nets.q0.x	Ela envia o erro de trás para frente para que cada peso possa ser ajustado.
+ai-nets.q1.q	Uma taxa de aprendizado alta demais causa…
+ai-nets.q1.o0	Um treino que fica pulando e pode nunca se estabilizar
+ai-nets.q1.o1	Um treino lento demais
+ai-nets.q1.o2	Mais dados
+ai-nets.q1.x	Passos grandes passam do ponto mínimo.
+ai-nets.q2.q	Uma passagem completa pelos dados de treino se chama…
+ai-nets.q2.o0	Um lote (batch)
+ai-nets.q2.o1	Uma época
+ai-nets.q2.o2	Uma camada
+ai-nets.q2.x	Uma época é uma passagem completa; os lotes são os pedacinhos dentro dela.
+ai-nets.c0.title	Camadas
+ai-nets.c0.text	Uma rede neural é organizada em camadas. A camada de entrada recebe os dados, as camadas ocultas os transformam passo a passo e a camada de saída dá a resposta.\n\nAprendizado "profundo" (deep learning) significa simplesmente muitas camadas ocultas.
+ai-nets.c0.viz.steps.0	Entrada: pixels
+ai-nets.c0.viz.steps.1	Camadas ocultas acham bordas, formas, partes
+ai-nets.c0.viz.steps.2	Saída: "gato 94%"
+ai-nets.c1.title	Cada camada aprende features mais abstratas
+ai-nets.c1.text	Numa rede de imagens, as primeiras camadas detectam bordas e cores. As camadas do meio as combinam em texturas e formas. As camadas finais reconhecem olhos, rodas ou rostos.\n\nNinguém programa essas features; elas surgem com o treino.
+ai-nets.c1.viz.items.0	Objetos: rosto, carro
+ai-nets.c1.viz.items.1	Partes: olho, roda
+ai-nets.c1.viz.items.2	Formas e texturas
+ai-nets.c1.viz.items.3	Bordas e cores
+ai-nets.c2.title	Funções de ativação
+ai-nets.c2.text	Entre as camadas, cada neurônio passa a sua soma por uma função de ativação. A mais comum, a ReLU, simplesmente transforma valores negativos em zero.\n\nSem esse passo não linear, empilhar camadas resultaria num único grande modelo linear.
+ai-nets.c2.viz.items.0.a	ReLU
+ai-nets.c2.viz.items.0.b	negativo → 0, positivo fica
+ai-nets.c2.viz.items.1.a	Sigmoide
+ai-nets.c2.viz.items.1.b	espreme para 0–1
+ai-nets.c2.viz.items.2.a	Softmax
+ai-nets.c2.viz.items.2.b	transforma notas em probabilidades
+ai-nets.c3.title	A função de perda
+ai-nets.c3.text	Para aprender, a rede precisa de uma nota que diga o quanto ela está errada. Essa é a perda (loss). Para uma previsão de preço, pode ser o erro quadrático médio; para classificação, o quão pouca probabilidade ela deu à resposta certa.\n\nTreinar é procurar os pesos que deixam a perda o menor possível.
+ai-nets.c3.viz.steps.0	Previsão
+ai-nets.c3.viz.steps.1	Comparar com a resposta certa
+ai-nets.c3.viz.steps.2	Perda: quão errado?
+ai-nets.c3.viz.steps.3	Ajustar os pesos
+ai-nets.c4.title	Retropropagação
+ai-nets.c4.text	Depois de um palpite errado, o erro é enviado de trás para frente pela rede. Usando cálculo, cada peso descobre o quanto contribuiu para o erro e em que direção deve se mover.\n\nEsse algoritmo, popularizado em 1986, é como praticamente todas as redes neurais são treinadas hoje.
+ai-nets.c4.viz.steps.0	Para frente: dar um palpite
+ai-nets.c4.viz.steps.1	Medir o erro
+ai-nets.c4.viz.steps.2	Para trás: culpar cada peso
+ai-nets.c4.viz.steps.3	Ajustar um pouco cada peso
+ai-nets.c5.title	Taxa de aprendizado
+ai-nets.c5.text	Qual deve ser o tamanho de cada ajuste? Essa é a taxa de aprendizado. Pequena demais, e o treino leva uma eternidade. Grande demais, e o modelo passa do vale e nunca se estabiliza.
+ai-nets.c5.viz.l.t	Pequena demais
+ai-nets.c5.viz.l.items.0	passos minúsculos
+ai-nets.c5.viz.l.items.1	treino se arrasta
+ai-nets.c5.viz.l.items.2	pode empacar
+ai-nets.c5.viz.r.t	Grande demais
+ai-nets.c5.viz.r.items.0	passa do ponto
+ai-nets.c5.viz.r.items.1	erro fica pulando
+ai-nets.c5.viz.r.items.2	pode nunca convergir
+ai-nets.c6.title	Lotes e épocas
+ai-nets.c6.text	Os dados de treino entram em pequenos lotes (batches), digamos 32 exemplos por vez, e os pesos são atualizados depois de cada lote. Uma passagem completa por todos os dados é uma época. As redes muitas vezes treinam por muitas épocas.
+ai-nets.c6.viz.f	atualizações = (exemplos ÷ tamanho do lote) × épocas
+ai-nets.c6.viz.items.0.m	exemplos
+ai-nets.c6.viz.items.1.m	tamanho do lote
+ai-nets.c6.viz.items.2.m	épocas → ≈15.600 atualizações
+ai-nets.c7.title	Dropout e regularização
+ai-nets.c7.text	Para impedir que uma rede decore, você pode desligar aleatoriamente alguns neurônios durante o treino (dropout) ou penalizar pesos muito grandes. A rede é forçada a aprender padrões robustos, e não atalhos frágeis.
+ai-nets.c7.viz.items.0	Dropout: silenciar neurônios ao acaso
+ai-nets.c7.viz.items.1	Weight decay: penalizar pesos grandes
+ai-nets.c7.viz.items.2	Early stopping: parar quando a validação para de melhorar
+ai-nets.c7.viz.items.3	Mais dados: o melhor regularizador
+ai-nets.c8.title	Convoluções numa imagem
+ai-nets.c8.text	Uma camada convolucional desliza um pequeno filtro, digamos de 3×3 pixels, pela imagem, procurando o mesmo padrão em toda parte: uma borda, uma curva, uma textura. É por isso que as redes de imagem reconhecem um gato em qualquer canto da foto.
+ai-nets.c8.viz.steps.0	Filtro 3×3
+ai-nets.c8.viz.steps.1	Desliza pela imagem inteira
+ai-nets.c8.viz.steps.2	Mapa de onde o padrão aparece
+ai-nets.c9.title	Por que GPUs?
+ai-nets.c9.text	Treinar significa multiplicar grades enormes de números, sem parar. As placas de vídeo foram feitas para fazer milhares de cálculos simples em paralelo para os videogames, e isso acabou sendo exatamente o que as redes neurais precisam.
+ai-nets.c9.viz.l.t	CPU
+ai-nets.c9.viz.l.items.0	poucos núcleos potentes
+ai-nets.c9.viz.l.items.1	ótima em tarefas variadas
+ai-nets.c9.viz.l.items.2	lenta em contas com matrizes
+ai-nets.c9.viz.r.t	GPU
+ai-nets.c9.viz.r.items.0	milhares de núcleos pequenos
+ai-nets.c9.viz.r.items.1	a mesma conta em muitos dados
+ai-nets.c9.viz.r.items.2	ideal para treinar
+ai-metrics.title	O modelo é bom mesmo?
+ai-metrics.summary	Acurácia, precisão, recall e por que um único número nunca basta.
+ai-metrics.q0.q	Existem 50 casos reais de fraude; o modelo pega 40. O recall é…
+ai-metrics.q0.o0	40%
+ai-metrics.q0.o1	80%
+ai-metrics.q0.o2	125%
+ai-metrics.q0.x	Recall = 40 ÷ 50 = 80%.
+ai-metrics.q1.q	Qual métrica responde "dos alertas disparados, quantos eram reais?"
+ai-metrics.q1.o0	Recall
+ai-metrics.q1.o1	Precisão
+ai-metrics.q1.o2	MAE
+ai-metrics.q1.x	A precisão mede o quanto os alertas são confiáveis.
+ai-metrics.q2.q	Por que 99% de acurácia pode enganar?
+ai-metrics.q2.o0	É sempre falsa
+ai-metrics.q2.o1	Quando a classe positiva é rara, chutar sempre 'não' dá uma nota alta
+ai-metrics.q2.o2	A acurácia só funciona com imagens
+ai-metrics.q2.x	Com 1% de fraude, um modelo que não faz nada tem 99% de acurácia.
+ai-metrics.c0.title	A acurácia pode mentir
+ai-metrics.c0.text	Se 1% das transações são fraude, um modelo que sempre diz "não é fraude" tem 99% de acurácia e é completamente inútil.\n\nQuando um resultado é raro, a acurácia esconde justamente as falhas que mais importam.
+ai-metrics.c0.viz.items.0.l	acurácia
+ai-metrics.c0.viz.items.1.l	fraudes pegas
+ai-metrics.c0.viz.items.2.l	dos casos são fraude
+ai-metrics.c1.title	A matriz de confusão
+ai-metrics.c1.text	Toda previsão cai numa de quatro caixas: verdadeiros positivos (pegos), falsos positivos (alarmes falsos), falsos negativos (deixados passar) e verdadeiros negativos (corretamente ignorados).\n\nA maioria das métricas úteis é construída a partir dessas quatro contagens.
+ai-metrics.c1.viz.l.t	Previsto: fraude
+ai-metrics.c1.viz.l.items.0	verdadeiro positivo (pego)
+ai-metrics.c1.viz.l.items.1	falso positivo (alarme falso)
+ai-metrics.c1.viz.r.t	Previsto: OK
+ai-metrics.c1.viz.r.items.0	falso negativo (passou)
+ai-metrics.c1.viz.r.items.1	verdadeiro negativo (ok)
+ai-metrics.c2.title	Precisão
+ai-metrics.c2.text	De tudo o que o modelo sinalizou, quanto estava certo? Precisão alta significa poucos alarmes falsos.
+ai-metrics.c2.example.0	40 sinalizados, 30 eram mesmo fraude
+ai-metrics.c2.example.1	30 ÷ 40
+ai-metrics.c2.example.2	= 75% de precisão
+ai-metrics.c2.viz.f	precisão = VP ÷ (VP + FP)
+ai-metrics.c2.viz.items.0.s	VP
+ai-metrics.c2.viz.items.0.m	sinalizados corretamente
+ai-metrics.c2.viz.items.1.s	FP
+ai-metrics.c2.viz.items.1.m	alarmes falsos
+ai-metrics.c3.title	Recall (sensibilidade)
+ai-metrics.c3.text	De todos os casos reais, quantos o modelo pegou? Recall alto significa poucos casos deixados passar.
+ai-metrics.c3.example.0	50 fraudes reais, 30 pegas
+ai-metrics.c3.example.1	30 ÷ 50
+ai-metrics.c3.example.2	= 60% de recall
+ai-metrics.c3.viz.f	recall = VP ÷ (VP + FN)
+ai-metrics.c3.viz.items.0.s	VP
+ai-metrics.c3.viz.items.0.m	pegos
+ai-metrics.c3.viz.items.1.s	FN
+ai-metrics.c3.viz.items.1.m	perdidos
+ai-metrics.c4.title	O equilíbrio entre precisão e recall
+ai-metrics.c4.text	Abaixe o limiar do alarme e você pega mais casos (o recall sobe), mas dispara mais alarmes falsos (a precisão cai). Suba-o e acontece o contrário. Onde colocá-lo é uma escolha de negócio.
+ai-metrics.c4.viz.l.t	Rastreio de câncer
+ai-metrics.c4.viz.l.items.0	priorizar o recall
+ai-metrics.c4.viz.l.items.1	um caso perdido custa caro
+ai-metrics.c4.viz.l.items.2	alarmes falsos são retestados
+ai-metrics.c4.viz.r.t	Filtro de spam
+ai-metrics.c4.viz.r.items.0	priorizar a precisão
+ai-metrics.c4.viz.r.items.1	perder um e-mail real dói
+ai-metrics.c4.viz.r.items.2	um pouco de spam passa
+ai-metrics.c5.title	F1 score
+ai-metrics.c5.text	O F1 combina precisão e recall num único número, a média harmônica dos dois. Ele só é alto quando os dois são altos.
+ai-metrics.c5.example.0	P = 0,75, R = 0,60
+ai-metrics.c5.example.1	2 × 0,75 × 0,60 ÷ 1,35
+ai-metrics.c5.example.2	F1 ≈ 0,67
+ai-metrics.c5.viz.f	F1 = 2·P·R ÷ (P + R)
+ai-metrics.c5.viz.items.0.s	P
+ai-metrics.c5.viz.items.0.m	precisão
+ai-metrics.c5.viz.items.1.s	R
+ai-metrics.c5.viz.items.1.m	recall
+ai-metrics.c6.title	Erros para números
+ai-metrics.c6.text	Na regressão, você mede o quão longe as previsões ficam da realidade. O MAE é o erro absoluto médio ("erra por €8.000 em média"). O RMSE pune mais os erros grandes. O MAPE dá o erro em porcentagem.
+ai-metrics.c6.viz.items.0.a	MAE
+ai-metrics.c6.viz.items.0.b	tamanho médio do erro
+ai-metrics.c6.viz.items.1.a	RMSE
+ai-metrics.c6.viz.items.1.b	pune mais os erros grandes
+ai-metrics.c6.viz.items.2.a	MAPE
+ai-metrics.c6.viz.items.2.b	erro como % do valor real
+ai-metrics.c7.title	Compare com uma referência
+ai-metrics.c7.text	Uma previsão com 10% de erro parece boa até você descobrir que "igual à semana passada" tem 11%. Apresente sempre o seu modelo ao lado de uma referência simples e do processo humano atual.
+ai-metrics.c7.viz.unit	% de erro
+ai-metrics.c7.viz.items.0.l	Igual ao ano passado
+ai-metrics.c7.viz.items.1.l	Previsão do analista
+ai-metrics.c7.viz.items.2.l	Modelo de ML
+ai-metrics.c8.title	Teste como ele será usado
+ai-metrics.c8.text	Avalie com dados que se pareçam com o futuro: datas posteriores, clientes novos, outras regiões. Depois continue monitorando após o lançamento, porque o teste de verdade começa no primeiro dia em produção.
+ai-metrics.c8.viz.steps.0	Treinar com o passado
+ai-metrics.c8.viz.steps.1	Testar com dados posteriores
+ai-metrics.c8.viz.steps.2	Lançar
+ai-metrics.c8.viz.steps.3	Monitorar toda semana
+ai-metrics.c9.title	Meça o que importa para o negócio
+ai-metrics.c9.text	Um modelo 2% mais preciso, mas que leva 10 segundos por previsão ou não pode ser explicado a um órgão regulador, pode ser pior. Traduza os erros em dinheiro, tempo ou risco.
+ai-metrics.c9.viz.items.0	Custo de um alarme falso
+ai-metrics.c9.viz.items.1	Custo de um caso perdido
+ai-metrics.c9.viz.items.2	Velocidade por previsão
+ai-metrics.c9.viz.items.3	Precisa ser explicável?
+ai-metrics.c9.viz.items.4	Esforço de manutenção
+ai-vision.title	Visão computacional
+ai-vision.summary	Como as máquinas enxergam: pixels, convoluções e detecção de objetos.
+ai-vision.q0.q	Desenhar caixas rotuladas em volta de cada pessoa e carro numa imagem é…
+ai-vision.q0.o0	Classificação
+ai-vision.q0.o1	Detecção de objetos
+ai-vision.q0.o2	OCR
+ai-vision.q0.x	A detecção localiza cada objeto com uma caixa.
+ai-vision.q1.q	Fazer o ajuste fino de um modelo pré-treinado com milhões de imagens usando algumas centenas de fotos suas se chama…
+ai-vision.q1.o0	Transfer learning (aprendizado por transferência)
+ai-vision.q1.o1	Drift de dados
+ai-vision.q1.o2	Clusterização
+ai-vision.q1.x	Você transfere para a sua tarefa o que ele já aprendeu.
+ai-vision.q2.q	O que aconteceu com a AlexNet em 2012?
+ai-vision.q2.o0	Ela inventou o pixel
+ai-vision.q2.o1	Venceu o ImageNet por uma grande margem e deu início ao boom do deep learning
+ai-vision.q2.o2	Reconheceu rostos pela primeira vez
+ai-vision.q2.x	O erro dela foi muito menor que o dos métodos anteriores.
+ai-vision.c0.title	Uma imagem é uma grade de números
+ai-vision.c0.text	Para um computador, uma foto é uma grade de pixels, cada um guardado como três números para vermelho, verde e azul, de 0 a 255. Uma foto de celular de 12 megapixels tem cerca de 36 milhões de números.
+ai-vision.c0.viz.f	pixel = (R, G, B)
+ai-vision.c0.viz.items.0.s	R
+ai-vision.c0.viz.items.0.m	vermelho 0–255
+ai-vision.c0.viz.items.1.s	G
+ai-vision.c0.viz.items.1.m	verde 0–255
+ai-vision.c0.viz.items.2.s	B
+ai-vision.c0.viz.items.2.m	azul 0–255
+ai-vision.c1.title	Classificação
+ai-vision.c1.text	A tarefa de visão mais simples: o que há nesta imagem? A rede devolve uma probabilidade para cada categoria que conhece.
+ai-vision.c1.viz.items.0.l	Gato
+ai-vision.c1.viz.items.1.l	Cachorro
+ai-vision.c1.viz.items.2.l	Raposa
+ai-vision.c1.viz.items.3.l	Coelho
+ai-vision.c2.title	Detecção de objetos
+ai-vision.c2.text	A detecção vai além: encontra cada objeto e desenha uma caixa em volta de cada um, com um rótulo e uma pontuação de confiança. É o que sistemas de câmeras de segurança como o Frigate usam para distinguir uma pessoa de um carro passando ou de um gato.
+ai-vision.c2.viz.steps.0	Quadro da câmera
+ai-vision.c2.viz.steps.1	Detector acha objetos
+ai-vision.c2.viz.steps.2	Caixa "pessoa 0,92"
+ai-vision.c2.viz.steps.3	Alerta só para pessoas
+ai-vision.c3.title	Segmentação
+ai-vision.c3.text	A segmentação rotula cada pixel: rua, carro, pedestre, céu. Carros autônomos e imagens médicas dependem dela para conhecer as formas exatas, não só caixas.
+ai-vision.c3.viz.l.t	Detecção
+ai-vision.c3.viz.l.items.0	uma caixa por objeto
+ai-vision.c3.viz.l.items.1	rápida
+ai-vision.c3.viz.l.items.2	boa para contar
+ai-vision.c3.viz.r.t	Segmentação
+ai-vision.c3.viz.r.items.0	cada pixel rotulado
+ai-vision.c3.viz.r.items.1	contornos exatos
+ai-vision.c3.viz.r.items.2	mais pesada de calcular
+ai-vision.c4.title	O ImageNet mudou tudo
+ai-vision.c4.text	O ImageNet é um conjunto de dados com mais de 14 milhões de imagens rotuladas. Em 2012, uma rede profunda chamada AlexNet venceu a competição anual por uma margem enorme, reduzindo a taxa de erro de cerca de 26% para 15%. Esse resultado deu a largada no boom do deep learning.
+ai-vision.c4.viz.unit	% de erro top-5
+ai-vision.c4.viz.items.0.l	Melhor de 2011
+ai-vision.c4.viz.items.1.l	AlexNet 2012
+ai-vision.c4.viz.items.2.l	2015 ResNet
+ai-vision.c5.title	Transfer learning
+ai-vision.c5.text	Raramente se treina um modelo de visão do zero. Você pega um já treinado com milhões de imagens e faz o ajuste fino com algumas centenas das suas, como fotos de peças com defeito.
+ai-vision.c5.viz.steps.0	Modelo treinado com milhões de imagens
+ai-vision.c5.viz.steps.1	Trocar a última camada
+ai-vision.c5.viz.steps.2	Ajuste fino com 500 fotos suas
+ai-vision.c5.viz.steps.3	Seu próprio detector
+ai-vision.c6.title	Reconhecimento óptico de caracteres
+ai-vision.c6.text	O OCR transforma imagens de texto em texto: notas fiscais digitalizadas, placas de carro, letreiros. O OCR moderno também entende o layout, então sabe qual número é o total e qual é a data.
+ai-vision.c6.viz.steps.0	Documento digitalizado
+ai-vision.c6.viz.steps.1	Achar áreas de texto
+ai-vision.c6.viz.steps.2	Ler os caracteres
+ai-vision.c6.viz.steps.3	Campos: data, total, fornecedor
+ai-vision.c7.title	Visão na borda (edge)
+ai-vision.c7.text	Muitas câmeras agora rodam a detecção localmente, em pequenos aceleradores, em vez de enviar o vídeo para a nuvem. Isso é mais rápido, mais barato e mantém as imagens privadas.
+ai-vision.c7.viz.l.t	Nuvem
+ai-vision.c7.viz.l.items.0	modelos potentes
+ai-vision.c7.viz.l.items.1	exige banda de upload
+ai-vision.c7.viz.l.items.2	imagens saem de casa
+ai-vision.c7.viz.r.t	Edge
+ai-vision.c7.viz.r.items.0	baixa latência
+ai-vision.c7.viz.r.items.1	funciona offline
+ai-vision.c7.viz.r.items.2	imagens ficam em casa
+ai-vision.c8.title	Quando a visão falha
+ai-vision.c8.text	Os modelos de visão podem ser enganados por iluminação incomum, ângulos estranhos, chuva na lente ou objetos que nunca viram no treino. Um modelo treinado no verão pode ter dificuldade com neve.\n\nTeste nas condições reais em que a câmera vai ficar.
+ai-vision.c8.viz.items.0	Imagens noturnas e infravermelhas
+ai-vision.c8.viz.items.1	Chuva, neblina e reflexos
+ai-vision.c8.viz.items.2	Ângulos incomuns
+ai-vision.c8.viz.items.3	Objetos parcialmente ocultos
+ai-vision.c8.viz.items.4	Coisas nunca vistas no treino
+ai-vision.c9.title	Rostos são um caso especial
+ai-vision.c9.text	O reconhecimento facial identifica pessoas específicas e é sensível do ponto de vista legal. Pelo AI Act da UE, a identificação biométrica remota em tempo real em espaços públicos pela polícia é proibida, exceto em casos restritos e autorizados.
+ai-vision.c9.viz.l.t	Detecção facial
+ai-vision.c9.viz.l.items.0	"há um rosto aqui"
+ai-vision.c9.viz.l.items.1	em geral, baixo risco
+ai-vision.c9.viz.r.t	Reconhecimento facial
+ai-vision.c9.viz.r.items.0	"esta é a Maria"
+ai-vision.c9.viz.r.items.1	dados biométricos
+ai-vision.c9.viz.r.items.2	limites legais rígidos
+ai-speech.title	Fala e som
+ai-speech.summary	Como as máquinas ouvem, transcrevem e respondem falando.
+ai-speech.q0.q	O que é um espectrograma?
+ai-speech.q0.o0	Um tipo de microfone
+ai-speech.q0.o1	Uma imagem de quais frequências estão fortes ao longo do tempo
+ai-speech.q0.o2	Uma transcrição da fala
+ai-speech.q0.x	Ele transforma o áudio numa grade parecida com uma imagem.
+ai-speech.q1.q	Por que os alto-falantes inteligentes detectam a palavra de ativação no próprio aparelho?
+ai-speech.q1.o0	É ilegal usar a nuvem
+ai-speech.q1.o1	É rápido, barato e mantém o áudio do dia a dia privado
+ai-speech.q1.o2	A nuvem não entende palavras de ativação
+ai-speech.q1.x	O áudio só é enviado adiante depois da palavra de ativação.
+ai-speech.q2.q	Qual é a resposta mais segura a um pedido urgente de pagamento com a voz de um gerente?
+ai-speech.q2.o0	Pagar rápido
+ai-speech.q2.o1	Verificar por um canal separado e conhecido
+ai-speech.q2.o2	Responder por e-mail
+ai-speech.q2.x	Vozes podem ser clonadas; a verificação não pode depender da própria ligação.
+ai-speech.c0.title	O som como imagem
+ai-speech.c0.text	O áudio é uma onda de pressão do ar, amostrada milhares de vezes por segundo. Os modelos de IA costumam convertê-lo num espectrograma: uma imagem de quais frequências estão fortes em cada momento. Aí dá para aplicar técnicas de imagem.
+ai-speech.c0.viz.steps.0	Microfone
+ai-speech.c0.viz.steps.1	Amostras da onda sonora
+ai-speech.c0.viz.steps.2	Imagem do espectrograma
+ai-speech.c0.viz.steps.3	Rede neural
+ai-speech.c1.title	Taxas de amostragem
+ai-speech.c1.text	As ligações telefônicas costumam ser amostradas 8.000 vezes por segundo, o que basta para a fala. Os CDs usam 44.100, o suficiente para captar tudo o que os humanos conseguem ouvir (até cerca de 20 kHz).
+ai-speech.c1.viz.unit	mil amostras/s
+ai-speech.c1.viz.items.0.l	Ligação
+ai-speech.c1.viz.items.1.l	Modelos de fala
+ai-speech.c1.viz.items.2.l	Áudio de CD
+ai-speech.c1.viz.items.3.l	Estúdio
+ai-speech.c2.title	Fala para texto
+ai-speech.c2.text	O reconhecimento automático de fala (ASR) transforma fala em palavras. Os sistemas modernos são treinados com centenas de milhares de horas de áudio e lidam com sotaques, ruído e vários idiomas.\n\nO modelo aberto Whisper, da OpenAI, lançado em 2022, foi treinado com 680.000 horas.
+ai-speech.c2.viz.steps.0	Áudio
+ai-speech.c2.viz.steps.1	Espectrograma
+ai-speech.c2.viz.steps.2	Modelo prevê palavras
+ai-speech.c2.viz.steps.3	Transcrição com marcas de tempo
+ai-speech.c3.title	Texto para fala
+ai-speech.c3.text	O TTS faz o caminho inverso. As vozes neurais agora soam naturais, com respiração e ênfase. Algumas conseguem clonar uma voz a partir de uma amostra curta, o que gera preocupações com fraudes.
+ai-speech.c3.viz.steps.0	Texto
+ai-speech.c3.viz.steps.1	Modelo planeja pronúncia e ritmo
+ai-speech.c3.viz.steps.2	Gera a forma de onda
+ai-speech.c3.viz.steps.3	Voz com som natural
+ai-speech.c4.title	Assistentes de voz: uma linha de montagem
+ai-speech.c4.text	Um assistente de voz encadeia vários modelos: um pequeno fica atento à palavra de ativação, o ASR transcreve o pedido, um modelo de linguagem entende a intenção e o TTS fala a resposta.
+ai-speech.c4.viz.steps.0	Palavra de ativação
+ai-speech.c4.viz.steps.1	Fala para texto
+ai-speech.c4.viz.steps.2	Entender a intenção
+ai-speech.c4.viz.steps.3	Agir
+ai-speech.c4.viz.steps.4	Falar a resposta
+ai-speech.c5.title	A palavra de ativação roda localmente
+ai-speech.c5.text	Seu celular ou alto-falante inteligente não está enviando tudo para a nuvem. Um modelo minúsculo no aparelho fica atento só ao "Ei…". O áudio só sai do aparelho depois que ele é acionado.
+ai-speech.c5.viz.l.t	No aparelho
+ai-speech.c5.viz.l.items.0	detecção da palavra
+ai-speech.c5.viz.l.items.1	sempre ouvindo
+ai-speech.c5.viz.l.items.2	minúsculo e privado
+ai-speech.c5.viz.r.t	Na nuvem
+ai-speech.c5.viz.r.items.0	transcrição completa
+ai-speech.c5.viz.r.items.1	compreensão
+ai-speech.c5.viz.r.items.2	geração da resposta
+ai-speech.c6.title	Diarização de locutores
+ai-speech.c6.text	Na gravação de uma reunião, a diarização responde "quem falou quando?". Combinada com a transcrição, ela produz atas com nomes.
+ai-speech.c6.viz.events.0.y	0 min
+ai-speech.c6.viz.events.0.l	Ana abre a pauta
+ai-speech.c6.viz.events.1.y	2 min
+ai-speech.c6.viz.events.1.l	Rui mostra os números do T3
+ai-speech.c6.viz.events.2.y	8 min
+ai-speech.c6.viz.events.2.l	Ana confirma a decisão
+ai-speech.c6.viz.events.3.y	9 min
+ai-speech.c6.viz.events.3.l	Rui lista próximos passos
+ai-speech.c7.title	Além da fala
+ai-speech.c7.text	A IA de áudio também reconhece outros sons: um vidro quebrando, um bebê chorando, o rolamento de uma máquina começando a falhar. A manutenção preditiva muitas vezes fica atenta a mudanças na vibração e no ruído.
+ai-speech.c7.viz.items.0	Detecção de falhas em máquinas
+ai-speech.c7.viz.items.1	Vidro quebrando e alarmes
+ai-speech.c7.viz.items.2	Monitoramento de aves e fauna
+ai-speech.c7.viz.items.3	Identificação de músicas
+ai-speech.c8.title	Vozes deepfake
+ai-speech.c8.text	Com alguns segundos da voz de alguém, as ferramentas modernas conseguem criar áudio falso convincente. Golpistas já usaram vozes clonadas de executivos para pedir pagamentos urgentes.\n\nCombine etapas de verificação para qualquer pedido de pagamento incomum, não importa como a voz soe.
+ai-speech.c8.viz.items.0.w	confiar numa voz conhecida
+ai-speech.c8.viz.items.0.r	ligar de volta num número conhecido
+ai-speech.c8.viz.items.1.w	agir pela urgência
+ai-speech.c8.viz.items.1.r	verificar todo pagamento incomum
+ai-speech.c9.title	Tradução por voz
+ai-speech.c9.text	Junte reconhecimento de fala, tradução automática e síntese de voz e você tem tradução falada quase em tempo real. Alguns sistemas já traduzem a fala diretamente, sem escrever texto no meio do caminho.
+ai-speech.c9.viz.steps.0	Fala em português
+ai-speech.c9.viz.steps.1	Texto em português
+ai-speech.c9.viz.steps.2	Texto em inglês
+ai-speech.c9.viz.steps.3	Fala em inglês
+ai-recs.title	Sistemas de recomendação
+ai-recs.summary	Como Netflix, Amazon e Spotify decidem o que mostrar a você.
+ai-recs.q0.q	"Quem gostou disto também gostou de…" descreve…
+ai-recs.q0.o0	Filtragem baseada em conteúdo
+ai-recs.q0.o1	Filtragem colaborativa
+ai-recs.q0.o2	Clusterização
+ai-recs.q0.x	Ela se baseia no comportamento de usuários parecidos.
+ai-recs.q1.q	Um produto novo, ainda sem avaliações, é um exemplo de…
+ai-recs.q1.o0	Overfitting
+ai-recs.q1.o1	O problema do início a frio (cold start)
+ai-recs.q1.o2	Uma bolha de filtros
+ai-recs.q1.x	Ainda não há histórico com que aprender.
+ai-recs.q2.q	Comparar dois recomendadores com usuários reais, metade para cada um, é…
+ai-recs.q2.o0	Um teste A/B
+ai-recs.q2.o1	Uma matriz de confusão
+ai-recs.q2.o2	Retropropagação
+ai-recs.q2.x	Os testes A/B medem o comportamento real.
+ai-recs.c0.title	O problema da recomendação
+ai-recs.c0.text	Uma loja pode ter um milhão de produtos; você vai olhar umas poucas dezenas. Os recomendadores preveem quais poucos você mais provavelmente vai querer, com base no seu histórico e no de pessoas parecidas com você.
+ai-recs.c0.viz.steps.0	Milhões de itens
+ai-recs.c0.viz.steps.1	Reduzir a umas centenas de candidatos
+ai-recs.c0.viz.steps.2	Ordená-los
+ai-recs.c0.viz.steps.3	Mostrar os 10 primeiros
+ai-recs.c1.title	Filtragem colaborativa
+ai-recs.c1.text	"Quem comprou isto também comprou…" O sistema encontra usuários com gostos parecidos com os seus e recomenda o que eles curtiram. Não precisa entender nada dos produtos em si.
+ai-recs.c1.viz.l.t	Você
+ai-recs.c1.viz.l.items.0	curtiu A, B, C
+ai-recs.c1.viz.r.t	Usuários parecidos
+ai-recs.c1.viz.r.items.0	curtiram A, B, C e D
+ai-recs.c1.viz.r.items.1	então recomendar D
+ai-recs.c2.title	Filtragem baseada em conteúdo
+ai-recs.c2.text	Essa abordagem olha para os itens: gênero, autor, ingredientes, faixa de preço. Se você leu três romances policiais, ela sugere mais policiais.
+ai-recs.c2.viz.items.0.a	Gênero
+ai-recs.c2.viz.items.0.b	policial
+ai-recs.c2.viz.items.1.a	Tamanho
+ai-recs.c2.viz.items.1.b	300–400 páginas
+ai-recs.c2.viz.items.2.a	Cenário
+ai-recs.c2.viz.items.2.b	Lisboa
+ai-recs.c2.viz.items.3.a	→ sugere
+ai-recs.c2.viz.items.3.b	livros parecidos
+ai-recs.c3.title	O problema do início a frio
+ai-recs.c3.text	Um usuário ou produto novinho em folha não tem histórico, então a filtragem colaborativa não tem com o que trabalhar. Os sistemas recorrem à popularidade, fazem algumas perguntas ou usam o conteúdo dos itens até os dados chegarem.
+ai-recs.c3.viz.items.0	Mostrar itens populares
+ai-recs.c3.viz.items.1	Pedir algumas preferências
+ai-recs.c3.viz.items.2	Usar descrições dos itens
+ai-recs.c3.viz.items.3	Aprender rápido com os primeiros cliques
+ai-recs.c4.title	Feedback implícito vs. explícito
+ai-recs.c4.text	O feedback explícito é uma avaliação com estrelas. O feedback implícito é o comportamento: cliques, tempo gasto, músicas puladas, itens devolvidos. Os dados implícitos são muito mais abundantes, então a maioria dos sistemas depende deles.
+ai-recs.c4.viz.l.t	Explícito
+ai-recs.c4.viz.l.items.0	notas com estrelas
+ai-recs.c4.viz.l.items.1	joinha
+ai-recs.c4.viz.l.items.2	raro, mas claro
+ai-recs.c4.viz.r.t	Implícito
+ai-recs.c4.viz.r.items.0	cliques, plays, pulos
+ai-recs.c4.viz.r.items.1	abundante
+ai-recs.c4.viz.r.items.2	ruidoso
+ai-recs.c5.title	As recomendações guiam o que se assiste
+ai-recs.c5.text	A Netflix já informou que cerca de 80% do que os assinantes assistem é descoberto pelas recomendações, e não pela busca. Os recomendadores moldam o que milhões de pessoas veem todos os dias.
+ai-recs.c5.viz.items.0.l	do que se assiste na Netflix vem de recomendações (dado da empresa)
+ai-recs.c6.title	Bolhas de filtros
+ai-recs.c6.text	Se um sistema só mostra mais do que você já clicou, o seu feed se estreita. Bons recomendadores misturam de propósito alguma variedade e itens novos, um equilíbrio chamado exploração versus aproveitamento.
+ai-recs.c6.viz.l.t	Aproveitar
+ai-recs.c6.viz.l.items.0	mostrar o que você com certeza curte
+ai-recs.c6.viz.l.items.1	cliques garantidos
+ai-recs.c6.viz.l.items.2	feed mais estreito
+ai-recs.c6.viz.r.t	Explorar
+ai-recs.c6.viz.r.items.0	tentar algo novo
+ai-recs.c6.viz.r.items.1	aprender seus gostos
+ai-recs.c6.viz.r.items.2	evita bolhas
+ai-recs.c7.title	Embeddings para itens
+ai-recs.c7.text	Os recomendadores modernos transformam cada usuário e cada item numa lista de números, um embedding. Itens próximos nesse mapa são parecidos; a posição de um usuário mostra o gosto dele.
+ai-recs.c7.viz.items.0.a	Policial A
+ai-recs.c7.viz.items.0.b	perto do Policial B
+ai-recs.c7.viz.items.1.a	Álbum de jazz
+ai-recs.c7.viz.items.1.b	longe do heavy metal
+ai-recs.c7.viz.items.2.a	Seu perfil
+ai-recs.c7.viz.items.2.b	perto do que você vai curtir
+ai-recs.c8.title	Medindo recomendadores
+ai-recs.c8.text	Offline, os times verificam se o modelo teria previsto aquilo em que os usuários realmente clicaram. Online, eles fazem testes A/B: metade dos usuários vê o sistema novo, e comparam cliques, compras ou retenção.
+ai-recs.c8.viz.steps.0	Teste offline com dados antigos
+ai-recs.c8.viz.steps.1	Teste A/B com usuários reais
+ai-recs.c8.viz.steps.2	Comparar vendas e retenção
+ai-recs.c8.viz.steps.3	Lançar o vencedor
+ai-recs.c9.title	Além das compras
+ai-recs.c9.text	As mesmas técnicas sugerem vagas no LinkedIn, amigos nas redes sociais, artigos em apps de notícias e até qual peça de reposição um técnico vai precisar.
+ai-recs.c9.viz.items.0	Streaming e música
+ai-recs.c9.viz.items.1	Lojas online
+ai-recs.c9.viz.items.2	Notícias e redes sociais
+ai-recs.c9.viz.items.3	Vagas de emprego
+ai-recs.c9.viz.items.4	Peças de manutenção
+ai-rl.title	Aprender por tentativa e erro
+ai-rl.summary	Aprendizado por reforço, jogos e robôs.
+ai-rl.q0.q	O que torna o xadrez difícil para o aprendizado por reforço?
+ai-rl.q0.o0	Não há regras
+ai-rl.q0.o1	A recompensa só chega no fim da partida
+ai-rl.q0.o2	Há poucos lances
+ai-rl.q0.x	O mérito precisa ser atribuído a lances anteriores.
+ai-rl.q1.q	Um agente que explora uma brecha para ganhar pontos sem fazer a tarefa é…
+ai-rl.q1.o0	Overfitting
+ai-rl.q1.o1	Reward hacking (trapaça na recompensa)
+ai-rl.q1.o2	Self-play
+ai-rl.q1.x	Ele otimiza a recompensa ao pé da letra.
+ai-rl.q2.q	Por que os robôs muitas vezes aprendem primeiro em simulação?
+ai-rl.q2.o0	Os simuladores são mais bonitos
+ai-rl.q2.o1	É mais rápido, mais barato e errar não tem perigo
+ai-rl.q2.o2	Robôs reais não conseguem aprender
+ai-rl.q2.x	Milhões de tentativas desgastariam um robô real.
+ai-rl.c0.title	Agente, ambiente, recompensa
+ai-rl.c0.text	O aprendizado por reforço tem três ingredientes: um agente que age, um ambiente que responde e um sinal de recompensa que diz como ele está se saindo. O objetivo do agente é maximizar a recompensa total ao longo do tempo.
+ai-rl.c0.viz.steps.0	Agente vê o estado
+ai-rl.c0.viz.steps.1	Agente age
+ai-rl.c0.viz.steps.2	Ambiente muda
+ai-rl.c0.viz.steps.3	Vem a recompensa
+ai-rl.c1.title	Exploração vs. aproveitamento
+ai-rl.c1.text	O agente deve repetir o que funcionou antes ou tentar algo novo que pode funcionar melhor? Com pouca exploração, ele empaca; com exploração demais, nunca colhe os frutos.
+ai-rl.c1.viz.l.t	Aproveitar
+ai-rl.c1.viz.l.items.0	usar o melhor lance conhecido
+ai-rl.c1.viz.l.items.1	confiável agora
+ai-rl.c1.viz.r.t	Explorar
+ai-rl.c1.viz.r.items.0	tentar lances novos
+ai-rl.c1.viz.r.items.1	pode achar algo melhor
+ai-rl.c2.title	Recompensas atrasadas
+ai-rl.c2.text	No xadrez, a recompensa só vem no fim: vitória ou derrota. O agente precisa descobrir quais dos seus lances anteriores merecem o mérito. Essa "atribuição de mérito" é o que torna o RL difícil.
+ai-rl.c2.viz.events.0.y	Lance 1
+ai-rl.c2.viz.events.0.l	abertura tranquila
+ai-rl.c2.viz.events.1.y	Lance 14
+ai-rl.c2.viz.events.1.l	sacrifício-chave
+ai-rl.c2.viz.events.2.y	Lance 30
+ai-rl.c2.viz.events.2.l	ataque
+ai-rl.c2.viz.events.3.y	Lance 41
+ai-rl.c2.viz.events.3.l	xeque-mate, recompensa +1
+ai-rl.c3.title	AlphaGo
+ai-rl.c3.text	O Go tem mais posições possíveis do que átomos no universo observável. Em 2016, o AlphaGo, da DeepMind, venceu Lee Sedol, um dos melhores jogadores do mundo, por 4–1. Seu sucessor, o AlphaZero, aprendeu só jogando contra si mesmo.
+ai-rl.c3.viz.events.0.l	Deep Blue vence Kasparov no xadrez
+ai-rl.c3.viz.events.1.l	AlphaGo vence Lee Sedol no Go
+ai-rl.c3.viz.events.2.l	AlphaZero aprende jogando sozinho
+ai-rl.c3.viz.events.3.l	AlphaStar chega ao topo no StarCraft II
+ai-rl.c4.title	Self-play
+ai-rl.c4.text	Um agente pode ser o seu próprio adversário. Cada nova versão joga contra versões mais antigas, melhorando passo a passo sem nenhuma partida humana para copiar. Ele pode até descobrir estratégias que os humanos nunca tentaram.
+ai-rl.c4.viz.steps.0	Jogar contra si mesmo
+ai-rl.c4.viz.steps.1	Aprender com os resultados

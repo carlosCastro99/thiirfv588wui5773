@@ -7,7 +7,7 @@ el-basics.q0.o0	20 mA
 el-basics.q0.o1	2 A
 el-basics.q0.o2	4 mA
 el-basics.q0.o3	50 mA
-el-basics.q0.x	I = V ÷ R = 9 ÷ 450 = 0.02 A, ou seja, 20 mA.
+el-basics.q0.x	I = V ÷ R = 9 ÷ 450 = 0,02 A, ou seja, 20 mA.
 el-basics.q1.q	Na analogia da água, o que faz o papel da tensão?
 el-basics.q1.o0	A rapidez com que a água corre
 el-basics.q1.o1	A pressão da água (altura do depósito)
@@ -74,9 +74,9 @@ el-basics.c5.viz.r.items.1	borracha
 el-basics.c5.viz.r.items.2	vidro
 el-basics.c6.title	A resistência de um fio
 el-basics.c6.text	A resistência de um fio aumenta com o comprimento e diminui com a secção. É por isso que troços longos precisam de cabos mais grossos, e que as extensões finas aquecem.
-el-basics.c6.example.0	100 m de cobre de 2.5 mm² (ρ ≈ 0.0175)
-el-basics.c6.example.1	0.0175 × 100 ÷ 2.5
-el-basics.c6.example.2	≈ 0.7 Ω
+el-basics.c6.example.0	100 m de cobre de 2,5 mm² (ρ ≈ 0,0175)
+el-basics.c6.example.1	0,0175 × 100 ÷ 2,5
+el-basics.c6.example.2	≈ 0,7 Ω
 el-basics.c6.viz.f	R = ρ × L ÷ A
 el-basics.c6.viz.items.0.s	ρ
 el-basics.c6.viz.items.0.m	resistividade do metal
@@ -118,7 +118,7 @@ el-home.q0.o1	Estão ligadas em paralelo
 el-home.q0.o2	Cada tomada tem o seu próprio transformador
 el-home.q0.x	Em paralelo, cada carga fica diretamente entre a fase e o neutro, por isso cada uma recebe a tensão total da alimentação.
 el-home.q1.q	Um aquecedor de 1150 W funciona a 230 V. Quanta corrente consome?
-el-home.q1.o0	0.2 A
+el-home.q1.o0	0,2 A
 el-home.q1.o1	5 A
 el-home.q1.o2	50 A
 el-home.q1.o3	23 A
@@ -128,21 +128,21 @@ el-home.q2.o0	Corrente total acima do seu calibre
 el-home.q2.o1	A corrente que sai pela fase não volta toda pelo neutro
 el-home.q2.o2	A tensão desce abaixo de 200 V
 el-home.q2.x	Um diferencial mede o desequilíbrio entre a fase e o neutro. A sobrecorrente é trabalho do disjuntor.
-el-home.q3.q	Um forno de 1.5 kW funciona durante 4 horas. Quanta energia é isso?
+el-home.q3.q	Um forno de 1,5 kW funciona durante 4 horas. Quanta energia é isso?
 el-home.q3.o0	6 kWh
-el-home.q3.o1	1.5 kWh
+el-home.q3.o1	1,5 kWh
 el-home.q3.o2	375 Wh
-el-home.q3.x	1.5 kW × 4 h = 6 kWh.
-el-home.q4.q	Um contrato de 6.9 kVA permite aproximadamente quanta corrente a 230 V?
-el-home.q4.o0	6.9 A
+el-home.q3.x	1,5 kW × 4 h = 6 kWh.
+el-home.q4.q	Um contrato de 6,9 kVA permite aproximadamente quanta corrente a 230 V?
+el-home.q4.o0	6,9 A
 el-home.q4.o1	30 A
 el-home.q4.o2	230 A
-el-home.q4.x	6,900 ÷ 230 ≈ 30 A.
+el-home.q4.x	6900 ÷ 230 ≈ 30 A.
 el-home.q5.q	20 W em standby, o ano inteiro, gastam cerca de…
 el-home.q5.o0	20 kWh
 el-home.q5.o1	175 kWh
-el-home.q5.o2	1,750 kWh
-el-home.q5.x	20 × 8,760 ÷ 1,000 ≈ 175 kWh.
+el-home.q5.o2	1750 kWh
+el-home.q5.x	20 × 8760 ÷ 1000 ≈ 175 kWh.
 el-home.c0.title	Série vs. paralelo
 el-home.c0.text	Em série, os componentes partilham um único circuito. A mesma corrente passa por todos e a tensão é dividida entre eles. Uma falha para tudo, como as antigas luzes de Natal.\n\nEm paralelo, cada componente tem o seu próprio caminho até à alimentação. Cada um recebe a tensão total e pode ser ligado ou desligado de forma independente.
 el-home.c0.sketch.0	série
@@ -167,15 +167,15 @@ el-home.c2.sketch.1	÷ 230 V
 el-home.c2.sketch.2	= 10 A
 el-home.c3.title	Disjuntores vs. diferenciais
 el-home.c3.text	Um disjuntor protege o cabo. Se passar corrente a mais, o fio aqueceria demasiado, por isso dispara. Um disjuntor de 16 A num circuito de tomadas é o habitual.\n\nUm diferencial protege as pessoas. Compara a corrente que sai pela fase com a que volta pelo neutro. Se faltarem cerca de 30 mA, é porque fugiram por algum lado, talvez através de uma pessoa, e dispara numa fração de segundo.
-el-home.c3.sketch.0	saem 10.00 A
-el-home.c3.sketch.1	voltam 9.97 A
+el-home.c3.sketch.0	saem 10,00 A
+el-home.c3.sketch.1	voltam 9,97 A
 el-home.c3.sketch.2	carga
 el-home.c3.sketch.3	faltam 30 mA → dispara!
 el-home.c4.title	Ler a fatura: kWh
 el-home.c4.text	Pagas energia, não potência. Energia = potência × tempo, medida em quilowatts-hora (kWh). Um kWh é 1 kW a funcionar durante uma hora.
 el-home.c4.example.0	Aquecedor de 2 kW durante 3 horas
 el-home.c4.example.1	2 kW × 3 h = 6 kWh
-el-home.c4.example.2	a €0.20 por kWh → €1.20
+el-home.c4.example.2	a €0,20 por kWh → €1,20
 el-home.c4.sketch.1	kWh
 el-home.c4.sketch.2	energia = potência × tempo
 el-home.c5.title	Circuitos típicos de uma casa
@@ -196,10 +196,10 @@ el-home.c6.viz.items.0.s	W
 el-home.c6.viz.items.0.m	watts em standby
 el-home.c6.viz.items.1.m	horas num ano
 el-home.c7.title	Potência contratada
-el-home.c7.text	Em Portugal contratas uma potência máxima com o teu comercializador, por exemplo 6.9 kVA. Se ligares demasiados aparelhos ao mesmo tempo, o disjuntor geral (ICP) dispara. Mais potência contratada significa um custo fixo diário mais alto.
+el-home.c7.text	Em Portugal contratas uma potência máxima com o teu comercializador, por exemplo 6,9 kVA. Se ligares demasiados aparelhos ao mesmo tempo, o disjuntor geral (ICP) dispara. Mais potência contratada significa um custo fixo diário mais alto.
 el-home.c7.viz.unit	kVA (opções comuns)
 el-home.c8.title	Vai disparar?
-el-home.c8.text	Potência contratada de 6.9 kVA ≈ 30 A a 230 V. Forno (2 kW), chaleira (2.2 kW) e o aquecimento da máquina de lavar (2 kW) juntos dão 6.2 kW: perto do limite. Junta um aquecedor de 2 kW e o disjuntor geral dispara.
+el-home.c8.text	Potência contratada de 6,9 kVA ≈ 30 A a 230 V. Forno (2 kW), chaleira (2,2 kW) e o aquecimento da máquina de lavar (2 kW) juntos dão 6,2 kW: perto do limite. Junta um aquecedor de 2 kW e o disjuntor geral dispara.
 el-home.c8.viz.unit	kW em uso
 el-home.c8.viz.items.0.l	Forno
 el-home.c8.viz.items.1.l	Chaleira
@@ -289,9 +289,9 @@ el-acdc.c7.viz.items.0.l	normal
 el-acdc.c7.viz.items.1.l	alarmes de subfrequência
 el-acdc.c7.viz.items.2.l	excesso de oferta
 el-acdc.c8.title	A onda sinusoidal
-el-acdc.c8.text	Os geradores produzem naturalmente uma onda sinusoidal porque as suas bobinas rodam dentro de um campo magnético. Uma volta completa de um gerador de dois polos faz um ciclo; a 3,000 rpm são 50 ciclos por segundo.
+el-acdc.c8.text	Os geradores produzem naturalmente uma onda sinusoidal porque as suas bobinas rodam dentro de um campo magnético. Uma volta completa de um gerador de dois polos faz um ciclo; a 3000 rpm são 50 ciclos por segundo.
 el-acdc.c8.viz.f	f = rpm × pares de polos ÷ 60
-el-acdc.c8.viz.items.0.s	3,000 rpm
+el-acdc.c8.viz.items.0.s	3000 rpm
 el-acdc.c8.viz.items.0.m	velocidade
 el-acdc.c8.viz.items.1.m	par de polos
 el-acdc.c8.viz.items.2.s	50 Hz
@@ -355,7 +355,7 @@ el-magnet.c4.viz.items.1	Altifalantes
 el-magnet.c4.viz.items.2	Fechaduras
 el-magnet.c4.viz.items.3	Ressonância magnética
 el-magnet.c5.title	Relés
-el-magnet.c5.text	Um relé usa uma pequena corrente numa bobina para puxar e fechar um interruptor. Isso permite que um microcontrolador de 3.3 V ligue e desligue em segurança um aquecedor de 230 V.
+el-magnet.c5.text	Um relé usa uma pequena corrente numa bobina para puxar e fechar um interruptor. Isso permite que um microcontrolador de 3,3 V ligue e desligue em segurança um aquecedor de 230 V.
 el-magnet.c5.viz.steps.0	Pequena corrente de comando
 el-magnet.c5.viz.steps.1	Bobina torna-se íman
 el-magnet.c5.viz.steps.2	Puxa e fecha o contacto
@@ -440,7 +440,7 @@ el-motors.c5.title	Variadores de velocidade
 el-motors.c5.text	Um variador de frequência (VFD) altera a frequência que alimenta um motor CA para controlar a sua velocidade. Como a potência de ventiladores e bombas cai a pique com a velocidade, funcionar a 80% da velocidade pode gastar só cerca de metade da potência.
 el-motors.c5.viz.f	P ∝ velocidade³
 el-motors.c5.viz.items.0.s	velocidade 80%
-el-motors.c5.viz.items.1.s	0.8³
+el-motors.c5.viz.items.1.s	0,8³
 el-motors.c5.viz.items.2.s	potência
 el-motors.c5.viz.items.2.m	cerca de metade
 el-motors.c6.title	Motores de VE
@@ -501,9 +501,9 @@ el-grid.c0.viz.steps.3	Distribuição 15 kV
 el-grid.c0.viz.steps.4	A tua casa 230 V
 el-grid.c1.title	Transformadores
 el-grid.c1.text	Um transformador tem duas bobinas à volta de um núcleo de ferro. A CA na primeira bobina cria um campo variável que induz tensão na segunda. A razão entre o número de espiras define a razão entre as tensões.
-el-grid.c1.example.0	De 15,000 V para 400 V
-el-grid.c1.example.1	razão de espiras 15,000 ÷ 400
-el-grid.c1.example.2	= 37.5 : 1
+el-grid.c1.example.0	De 15 000 V para 400 V
+el-grid.c1.example.1	razão de espiras 15 000 ÷ 400
+el-grid.c1.example.2	= 37,5 : 1
 el-grid.c1.viz.f	V₂ ÷ V₁ = N₂ ÷ N₁
 el-grid.c1.viz.items.0.s	V
 el-grid.c1.viz.items.0.m	tensão
@@ -512,8 +512,8 @@ el-grid.c1.viz.items.1.m	número de espiras
 el-grid.c2.title	Porquê alta tensão?
 el-grid.c2.text	As perdas nos cabos são iguais a I² × R. Duplicar a tensão reduz a corrente para metade com a mesma potência, cortando as perdas para um quarto.
 el-grid.c2.example.0	10 MW a 10 kV vs. 400 kV
-el-grid.c2.example.1	corrente de 1,000 A vs. 25 A
-el-grid.c2.example.2	perdas 1,600 vezes menores
+el-grid.c2.example.1	corrente de 1000 A vs. 25 A
+el-grid.c2.example.2	perdas 1600 vezes menores
 el-grid.c2.viz.f	perdas = I² × R
 el-grid.c2.viz.items.0.s	I
 el-grid.c2.viz.items.0.m	corrente na linha
@@ -527,11 +527,11 @@ el-grid.c3.viz.steps.2	Vigiar a frequência
 el-grid.c3.viz.steps.3	Ajustar em segundos
 el-grid.c4.title	A curva diária da procura
 el-grid.c4.text	A procura é baixa à noite, sobe de manhã e atinge o pico ao fim do dia, quando as pessoas cozinham e aquecem as casas. A produção solar atinge o pico ao meio-dia, o que está a mudar as horas em que a energia é mais barata.
-el-grid.c4.viz.events.0.l	00: mínimo noturno
-el-grid.c4.viz.events.1.l	00: subida matinal
-el-grid.c4.viz.events.2.l	00: pico solar
-el-grid.c4.viz.events.3.l	00: pico da noite
-el-grid.c4.viz.events.4.l	00: a descer
+el-grid.c4.viz.events.0.l	mínimo noturno
+el-grid.c4.viz.events.1.l	subida matinal
+el-grid.c4.viz.events.2.l	pico solar
+el-grid.c4.viz.events.3.l	pico da noite
+el-grid.c4.viz.events.4.l	a descer
 el-grid.c5.title	O mix renovável de Portugal
 el-grid.c5.text	As renováveis (hídrica, eólica, solar e biomassa) fornecem a maior parte da eletricidade de Portugal num ano típico, cerca de 60–70% nos últimos anos, consoante a chuva e o vento. Em 2016, o país funcionou quatro dias seguidos só com renováveis.
 el-grid.c5.viz.unit	% da eletricidade em Portugal (aprox., ano recente)
@@ -548,7 +548,7 @@ el-grid.c6.viz.steps.2	França
 el-grid.c6.viz.steps.3	Resto da Europa
 el-grid.c7.title	O apagão de abril de 2025
 el-grid.c7.text	A 28 de abril de 2025, uma perda súbita de produção desencadeou uma cascata que deixou às escuras quase toda a Espanha continental e Portugal durante muitas horas. Repor uma rede a partir do zero ("black start") é lento e delicado.
-el-grid.c7.viz.events.0.l	33: problemas súbitos de tensão e frequência
+el-grid.c7.viz.events.0.l	problemas súbitos de tensão e frequência
 el-grid.c7.viz.events.1.y	minutos
 el-grid.c7.viz.events.1.l	cascata desliga centrais
 el-grid.c7.viz.events.2.y	fim do dia
@@ -579,11 +579,11 @@ el-batteries.q0.o0	50 Wh
 el-batteries.q0.o1	600 Wh
 el-batteries.q0.o2	4 Wh
 el-batteries.q0.x	12 × 50 = 600 Wh.
-el-batteries.q1.q	Carregar a 0.5C demora cerca de…
+el-batteries.q1.q	Carregar a 0,5C demora cerca de…
 el-batteries.q1.o0	30 minutos
 el-batteries.q1.o1	2 horas
 el-batteries.q1.o2	5 horas
-el-batteries.q1.x	1 ÷ 0.5 = 2 horas.
+el-batteries.q1.x	1 ÷ 0,5 = 2 horas.
 el-batteries.q2.q	O que acelera mais o envelhecimento de uma bateria?
 el-batteries.q2.o0	Guardá-la ao frio a 50%
 el-batteries.q2.o1	Calor e longos períodos a 100%
@@ -599,7 +599,7 @@ el-batteries.c1.title	Capacidade: Ah e Wh
 el-batteries.c1.text	Os amperes-hora (Ah) dizem quanta carga uma bateria guarda. Multiplica pela tensão para obter a energia em watts-hora (Wh), que é o que conta de facto para comparar baterias.
 el-batteries.c1.example.0	Bateria de 100 Ah a 12 V
 el-batteries.c1.example.1	100 × 12
-el-batteries.c1.example.2	= 1,200 Wh = 1.2 kWh
+el-batteries.c1.example.2	= 1200 Wh = 1,2 kWh
 el-batteries.c1.viz.f	Wh = Ah × V
 el-batteries.c1.viz.items.0.s	Ah
 el-batteries.c1.viz.items.0.m	capacidade
@@ -613,11 +613,11 @@ el-batteries.c2.viz.items.1.l	NiMH
 el-batteries.c2.viz.items.2.l	LFP
 el-batteries.c2.viz.items.3.l	Iões de lítio NMC
 el-batteries.c3.title	Taxa C
-el-batteries.c3.text	A taxa C compara a corrente de carga ou descarga com a capacidade. A 1C, uma bateria enche ou esvazia por completo em cerca de uma hora; a 0.5C em duas horas; a 3C em 20 minutos. Taxas C altas geram calor e desgaste.
+el-batteries.c3.text	A taxa C compara a corrente de carga ou descarga com a capacidade. A 1C, uma bateria enche ou esvazia por completo em cerca de uma hora; a 0,5C em duas horas; a 3C em 20 minutos. Taxas C altas geram calor e desgaste.
 el-batteries.c3.viz.f	tempo ≈ 1 ÷ taxa C (horas)
 el-batteries.c3.viz.items.0.s	1C
 el-batteries.c3.viz.items.0.m	1 hora
-el-batteries.c3.viz.items.1.s	0.5C
+el-batteries.c3.viz.items.1.s	0,5C
 el-batteries.c3.viz.items.1.m	2 horas
 el-batteries.c3.viz.items.2.s	2C
 el-batteries.c3.viz.items.2.m	30 minutos
@@ -656,7 +656,7 @@ el-batteries.c9.title	Packs em série e em paralelo
 el-batteries.c9.text	Células em série somam tensão; células em paralelo somam capacidade. Um pack de VE pode combinar cerca de 100 grupos em série para chegar a cerca de 400 V.
 el-batteries.c9.viz.l.t	Série
 el-batteries.c9.viz.l.items.0	tensões somam-se
-el-batteries.c9.viz.l.items.1	4 × 3.7 V = 14.8 V
+el-batteries.c9.viz.l.items.1	4 × 3,7 V = 14,8 V
 el-batteries.c9.viz.l.items.2	mesmos Ah
 el-batteries.c9.viz.r.t	Paralelo
 el-batteries.c9.viz.r.items.0	capacidades somam-se
@@ -668,7 +668,7 @@ el-solar.q0.q	O que significa "Wp"?
 el-solar.q0.o0	Watts por painel
 el-solar.q0.o1	Watt-pico, a produção em condições de teste padrão
 el-solar.q0.o2	Potência semanal
-el-solar.q0.x	Medido a 1,000 W/m² e 25 °C.
+el-solar.q0.x	Medido a 1000 W/m² e 25 °C.
 el-solar.q1.q	Para que lado devem estar virados os painéis em Portugal para o máximo de energia anual?
 el-solar.q1.o0	Norte
 el-solar.q1.o1	Sul
@@ -678,7 +678,7 @@ el-solar.q2.q	Porque é que os painéis quentes produzem menos?
 el-solar.q2.o0	O pó derrete
 el-solar.q2.o1	As células de silício perdem eficiência quando a temperatura sobe
 el-solar.q2.o2	Os inversores desligam-se
-el-solar.q2.x	Cerca de 0.35% por °C acima dos 25 °C.
+el-solar.q2.x	Cerca de 0,35% por °C acima dos 25 °C.
 el-solar.c0.title	O efeito fotovoltaico
 el-solar.c0.text	Uma célula solar é uma fina fatia de silício com duas camadas tratadas de forma diferente. A luz solta eletrões, e a junção entre as camadas empurra-os num só sentido: uma corrente contínua.
 el-solar.c0.viz.steps.0	Luz do sol atinge o silício
@@ -686,29 +686,29 @@ el-solar.c0.viz.steps.1	Eletrões soltam-se
 el-solar.c0.viz.steps.2	Junção empurra-os num sentido
 el-solar.c0.viz.steps.3	Corrente CC
 el-solar.c1.title	Células, painéis, strings
-el-solar.c1.text	Uma célula produz cerca de 0.5–0.6 V. Dezenas de células em série formam um painel; vários painéis em série formam uma string com algumas centenas de volts, que alimenta um inversor.
-el-solar.c1.viz.steps.0	Célula ≈ 0.6 V
+el-solar.c1.text	Uma célula produz cerca de 0,5–0,6 V. Dezenas de células em série formam um painel; vários painéis em série formam uma string com algumas centenas de volts, que alimenta um inversor.
+el-solar.c1.viz.steps.0	Célula ≈ 0,6 V
 el-solar.c1.viz.steps.1	Painel ≈ 40 V
 el-solar.c1.viz.steps.2	String de 10 ≈ 400 V
 el-solar.c1.viz.steps.3	Inversor
 el-solar.c2.title	Watt-pico
-el-solar.c2.text	Os painéis são classificados em watt-pico (Wp): a produção em condições de teste padrão, com 1,000 W/m² de luz solar a 25 °C. A produção real costuma ser menor por causa do calor, do ângulo e do pó.
-el-solar.c2.viz.items.0.v	1,000 W/m²
+el-solar.c2.text	Os painéis são classificados em watt-pico (Wp): a produção em condições de teste padrão, com 1000 W/m² de luz solar a 25 °C. A produção real costuma ser menor por causa do calor, do ângulo e do pó.
+el-solar.c2.viz.items.0.v	1000 W/m²
 el-solar.c2.viz.items.0.l	luz solar de teste
 el-solar.c2.viz.items.1.v	25 °C
 el-solar.c2.viz.items.1.l	temperatura da célula
 el-solar.c2.viz.items.2.v	400–450 Wp
 el-solar.c2.viz.items.2.l	painel moderno típico
 el-solar.c3.title	Quanto vai produzir?
-el-solar.c3.text	Em Portugal, cada kWp de painéis bem orientados produz tipicamente cerca de 1,400–1,700 kWh por ano, dos melhores valores da Europa.
-el-solar.c3.example.0	Sistema de 4 kWp no norte de Portugal (≈1,400)
-el-solar.c3.example.1	4 × 1,400
-el-solar.c3.example.2	≈ 5,600 kWh por ano
+el-solar.c3.text	Em Portugal, cada kWp de painéis bem orientados produz tipicamente cerca de 1400–1700 kWh por ano, dos melhores valores da Europa.
+el-solar.c3.example.0	Sistema de 4 kWp no norte de Portugal (≈1400)
+el-solar.c3.example.1	4 × 1400
+el-solar.c3.example.2	≈ 5600 kWh por ano
 el-solar.c3.viz.f	kWh/ano ≈ kWp × produção
 el-solar.c3.viz.items.0.s	kWp
 el-solar.c3.viz.items.0.m	potência instalada
 el-solar.c3.viz.items.1.s	produção
-el-solar.c3.viz.items.1.m	≈ 1,500 kWh por kWp (Portugal)
+el-solar.c3.viz.items.1.m	≈ 1500 kWh por kWp (Portugal)
 el-solar.c4.title	Orientação e inclinação
 el-solar.c4.text	Em Portugal, painéis virados a sul com cerca de 30–35° de inclinação dão mais energia ao longo do ano. As disposições este–oeste produzem menos no total, mas distribuem a produção pelo dia.
 el-solar.c4.viz.unit	% da melhor produção (aprox.)
@@ -723,11 +723,11 @@ el-solar.c5.viz.steps.1	Limita a corrente na string
 el-solar.c5.viz.steps.2	A string toda cai
 el-solar.c5.viz.steps.3	Otimizadores ou díodos de bypass ajudam
 el-solar.c6.title	O calor baixa a produção
-el-solar.c6.text	As células de silício perdem cerca de 0.3–0.4% da produção por cada °C acima dos 25 °C. Num telhado quente de verão, as células podem chegar aos 60 °C e perder mais de 10%.
+el-solar.c6.text	As células de silício perdem cerca de 0,3–0,4% da produção por cada °C acima dos 25 °C. Num telhado quente de verão, as células podem chegar aos 60 °C e perder mais de 10%.
 el-solar.c6.example.0	Células a 60 °C
-el-solar.c6.example.1	0.35% × 35
+el-solar.c6.example.1	0,35% × 35
 el-solar.c6.example.2	≈ 12% menos produção
-el-solar.c6.viz.f	perda ≈ 0.35% × (T − 25 °C)
+el-solar.c6.viz.f	perda ≈ 0,35% × (T − 25 °C)
 el-solar.c6.viz.items.0.s	T
 el-solar.c6.viz.items.0.m	temperatura da célula
 el-solar.c7.title	Autoconsumo
@@ -759,7 +759,7 @@ el-cables.q0.o0	Azul
 el-cables.q0.o1	Castanho
 el-cables.q0.o2	Verde e amarelo
 el-cables.q0.x	Castanho fase, azul neutro, verde-amarelo terra.
-el-cables.q1.q	Um circuito de tomadas de 2.5 mm² está sempre a disparar o disjuntor de 16 A. O que é correto?
+el-cables.q1.q	Um circuito de tomadas de 2,5 mm² está sempre a disparar o disjuntor de 16 A. O que é correto?
 el-cables.q1.o0	Montar um disjuntor de 32 A
 el-cables.q1.o1	Encontrar a sobrecarga ou dividir o circuito
 el-cables.q1.o2	Tirar o disjuntor
@@ -778,15 +778,15 @@ el-cables.c0.viz.steps.3	Risco de incêndio
 el-cables.c1.title	Secção em mm²
 el-cables.c1.text	O tamanho de um cabo é a área de cobre em milímetros quadrados. Mais área, menos resistência, mais corrente pode transportar em segurança.
 el-cables.c1.viz.unit	amperes máx. aprox. (instalação doméstica típica)
-el-cables.c1.viz.items.0.l	1.5 mm²
-el-cables.c1.viz.items.1.l	2.5 mm²
+el-cables.c1.viz.items.0.l	1,5 mm²
+el-cables.c1.viz.items.1.l	2,5 mm²
 el-cables.c1.viz.items.2.l	4 mm²
 el-cables.c1.viz.items.3.l	6 mm²
 el-cables.c2.title	Secções típicas em casa
-el-cables.c2.text	Prática comum em Portugal: 1.5 mm² para iluminação, 2.5 mm² para tomadas, 4 mm² para fornos ou termoacumuladores, 6 mm² para um carregador de VE ou uma bomba de calor grande. Confirma sempre as regras de instalação e o cálculo do instalador.
-el-cables.c2.viz.items.0.a	1.5 mm²
+el-cables.c2.text	Prática comum em Portugal: 1,5 mm² para iluminação, 2,5 mm² para tomadas, 4 mm² para fornos ou termoacumuladores, 6 mm² para um carregador de VE ou uma bomba de calor grande. Confirma sempre as regras de instalação e o cálculo do instalador.
+el-cables.c2.viz.items.0.a	1,5 mm²
 el-cables.c2.viz.items.0.b	iluminação, disjuntor 10 A
-el-cables.c2.viz.items.1.a	2.5 mm²
+el-cables.c2.viz.items.1.a	2,5 mm²
 el-cables.c2.viz.items.1.b	tomadas, 16 A
 el-cables.c2.viz.items.2.a	4 mm²
 el-cables.c2.viz.items.2.b	forno, 20–25 A
@@ -800,8 +800,8 @@ el-cables.c3.viz.items.1.w	montar um disjuntor maior
 el-cables.c3.viz.items.1.r	refazer com cabo mais grosso se for preciso
 el-cables.c4.title	Queda de tensão
 el-cables.c4.text	Os cabos longos perdem tensão pelo caminho. As regras costumam limitar a queda a uns poucos por cento. Em monofásico, a queda é aproximadamente duas vezes o comprimento vezes a corrente vezes a resistência por metro.
-el-cables.c4.example.0	30 m, 16 A, 2.5 mm² (0.0073 Ω/m)
-el-cables.c4.example.1	2 × 30 × 16 × 0.0073
+el-cables.c4.example.0	30 m, 16 A, 2,5 mm² (0,0073 Ω/m)
+el-cables.c4.example.1	2 × 30 × 16 × 0,0073
 el-cables.c4.example.2	≈ 7 V, cerca de 3%
 el-cables.c4.viz.f	ΔV ≈ 2 × L × I × r
 el-cables.c4.viz.items.0.s	L
@@ -892,7 +892,7 @@ el-earthing.c2.viz.r.items.0	curto-circuitos
 el-earthing.c2.viz.r.items.1	milissegundos
 el-earthing.c3.title	Curvas dos disjuntores
 el-earthing.c3.text	O tipo B dispara magneticamente a 3–5× o seu calibre, bom para casas. O tipo C a 5–10×, para motores e iluminação com grandes correntes de arranque. O tipo D a 10–20×, para motores industriais pesados.
-el-earthing.c3.viz.unit	disparo magnético (× corrente nominal, limite superior)
+el-earthing.c3.viz.unit	disparo (× corrente nominal)
 el-earthing.c3.viz.items.0.l	B
 el-earthing.c3.viz.items.1.l	C
 el-earthing.c3.viz.items.2.l	D
@@ -952,7 +952,7 @@ el-3phase.q1.o1	Trocando duas fases quaisquer
 el-3phase.q1.o2	Baixando a tensão
 el-3phase.q1.x	Mudar a ordem das fases inverte o campo rotativo.
 el-3phase.q2.q	Aproximadamente quanta potência dão 16 A por fase a 400 V?
-el-3phase.q2.o0	3.7 kW
+el-3phase.q2.o0	3,7 kW
 el-3phase.q2.o1	11 kW
 el-3phase.q2.o2	22 kW
 el-3phase.q2.x	√3 × 400 × 16 ≈ 11 kW.
@@ -972,7 +972,7 @@ el-3phase.c1.viz.items.2.m	fase-fase
 el-3phase.c2.title	Potência trifásica
 el-3phase.c2.text	A corrente trifásica transporta cerca de três vezes a potência de uma só fase com a mesma corrente por fio.
 el-3phase.c2.example.0	16 A por fase a 400 V, cos φ = 1
-el-3phase.c2.example.1	1.732 × 400 × 16
+el-3phase.c2.example.1	1,732 × 400 × 16
 el-3phase.c2.example.2	≈ 11 kW
 el-3phase.c2.viz.f	P = √3 × V × I × cos φ
 el-3phase.c2.viz.items.0.s	V
@@ -991,7 +991,7 @@ el-3phase.c4.title	Trifásico em casa
 el-3phase.c4.text	As casas maiores em Portugal podem ter alimentação trifásica. Permite mais potência contratada, carregamento de VE a 11 kW ou 22 kW e bombas de calor grandes, com os circuitos distribuídos pelas fases.
 el-3phase.c4.viz.l.t	Monofásico
 el-3phase.c4.viz.l.items.0	230 V
-el-3phase.c4.viz.l.items.1	carregar até ~7.4 kW
+el-3phase.c4.viz.l.items.1	carregar até ~7,4 kW
 el-3phase.c4.viz.l.items.2	a maioria das casas
 el-3phase.c4.viz.r.t	Trifásico
 el-3phase.c4.viz.r.items.0	400 V
@@ -1033,10 +1033,10 @@ el-3phase.c9.viz.items.2	Três leituras de tensão no contador
 el-3phase.c9.viz.items.3	Fases em castanho, preto e cinzento
 el-pf.title	Fator de potência
 el-pf.summary	Potência ativa, potência reativa e porque é que a rede se preocupa com isso.
-el-pf.q0.q	Uma carga consome 1,000 VA com um fator de potência de 0.8. A sua potência ativa é…
-el-pf.q0.o0	1,000 W
+el-pf.q0.q	Uma carga consome 1000 VA com um fator de potência de 0,8. A sua potência ativa é…
+el-pf.q0.o0	1000 W
 el-pf.q0.o1	800 W
-el-pf.q0.o2	1,250 W
+el-pf.q0.o2	1250 W
 el-pf.q0.x	W = VA × cos φ = 800 W.
 el-pf.q1.q	O que corrige um fator de potência indutivo numa fábrica?
 el-pf.q1.o0	Fusíveis maiores
@@ -1074,9 +1074,9 @@ el-pf.c2.viz.r.items.1	drivers LED antigos
 el-pf.c3.title	Porque é que importa
 el-pf.c3.text	Um fator de potência baixo significa mais corrente para o mesmo trabalho útil: cabos maiores, mais perdas, transformadores maiores. As distribuidoras cobram a energia reativa aos clientes industriais.
 el-pf.c3.viz.unit	amperes para 10 kW a 230 V
-el-pf.c3.viz.items.0.l	cos φ 1.0
-el-pf.c3.viz.items.1.l	cos φ 0.9
-el-pf.c3.viz.items.2.l	cos φ 0.7
+el-pf.c3.viz.items.0.l	cos φ 1,0
+el-pf.c3.viz.items.1.l	cos φ 0,9
+el-pf.c3.viz.items.2.l	cos φ 0,7
 el-pf.c4.title	Correção com condensadores
 el-pf.c4.text	Os condensadores consomem uma corrente adiantada em relação à tensão, que anula a corrente atrasada de um motor. As fábricas instalam baterias de condensadores para aproximar o fator de potência de 1.
 el-pf.c4.viz.steps.0	Corrente do motor atrasada
@@ -1109,7 +1109,7 @@ el-pf.c7.viz.r.t	Indústria
 el-pf.c7.viz.r.items.0	paga kWh
 el-pf.c7.viz.r.items.1	mais energia reativa (kvarh)
 el-pf.c8.title	Fator de potência dos aparelhos
-el-pf.c8.text	As cargas resistivas, como chaleiras e aquecedores, têm um fator de potência de 1. Os motores andam pelos 0.8–0.9 à carga máxima e muito menos quando estão pouco carregados.
+el-pf.c8.text	As cargas resistivas, como chaleiras e aquecedores, têm um fator de potência de 1. Os motores andam pelos 0,8–0,9 à carga máxima e muito menos quando estão pouco carregados.
 el-pf.c8.viz.unit	fator de potência típico
 el-pf.c8.viz.items.0.l	Chaleira
 el-pf.c8.viz.items.1.l	Motor de indução (plena carga)
@@ -1120,7 +1120,7 @@ el-pf.c9.text	As fontes de alimentação eletrónicas maiores, incluindo os carr
 el-pf.c9.viz.steps.0	Retificador simples distorce a corrente
 el-pf.c9.viz.steps.1	Circuito PFC dá-lhe forma
 el-pf.c9.viz.steps.2	Corrente segue a tensão
-el-pf.c9.viz.steps.3	cos φ ≈ 0.99
+el-pf.c9.viz.steps.3	cos φ ≈ 0,99
 el-meter.title	Usar um multímetro
 el-meter.summary	Medir volts, amperes, ohms e continuidade em segurança.
 el-meter.q0.q	Para medir corrente, o aparelho tem de estar…
@@ -1202,7 +1202,7 @@ el-meter.c8.viz.steps.1	Testa o detetor com tensão
 el-meter.c8.viz.steps.2	Testa que o circuito está sem tensão
 el-meter.c8.viz.steps.3	Volta a testar o detetor
 el-meter.c9.title	Medir baterias e sensores
-el-meter.c9.text	Os multímetros são ótimos para eletrónica: estado das baterias (uma bateria de "12 V" deve marcar cerca de 12.6 V quando cheia), saídas de sensores e verificar a linha de 3.3 V numa placa ESP32.
+el-meter.c9.text	Os multímetros são ótimos para eletrónica: estado das baterias (uma bateria de "12 V" deve marcar cerca de 12,6 V quando cheia), saídas de sensores e verificar a linha de 3,3 V numa placa ESP32.
 el-meter.c9.viz.unit	volts (em repouso, chumbo-ácido 12 V)
 el-meter.c9.viz.items.0.l	Cheia
 el-meter.c9.viz.items.3.l	Vazia
@@ -1220,9 +1220,9 @@ el-ev.q1.o2	A eletricidade fica mais cara
 el-ev.q1.x	O sistema de gestão da bateria vai reduzindo a corrente.
 el-ev.q2.q	Juntar 40 kWh com um carregador de 11 kW demora cerca de…
 el-ev.q2.o0	1 hora
-el-ev.q2.o1	3.6 horas
+el-ev.q2.o1	3,6 horas
 el-ev.q2.o2	11 horas
-el-ev.q2.x	40 ÷ 11 ≈ 3.6 horas.
+el-ev.q2.x	40 ÷ 11 ≈ 3,6 horas.
 el-ev.c0.title	Carregamento CA
 el-ev.c0.text	Em casa e na maioria dos postos de rua, o carro recebe CA e converte-a em CC com o seu próprio carregador de bordo. É o carregador do carro que limita a velocidade, normalmente 7–11 kW.
 el-ev.c0.viz.steps.0	CA da wallbox
@@ -1232,14 +1232,14 @@ el-ev.c1.title	Carregamento rápido CC
 el-ev.c1.text	Os carregadores rápidos convertem CA em CC no próprio posto e alimentam diretamente a bateria, contornando o carregador do carro. As potências vão de 50 kW a 350 kW.
 el-ev.c1.viz.l.t	Carregamento CA
 el-ev.c1.viz.l.items.0	carro converte em CC
-el-ev.c1.viz.l.items.1	3.7–22 kW
+el-ev.c1.viz.l.items.1	3,7–22 kW
 el-ev.c1.viz.l.items.2	casas e escritórios
 el-ev.c1.viz.r.t	Carregamento CC
 el-ev.c1.viz.r.items.0	posto converte
 el-ev.c1.viz.r.items.1	50–350 kW
 el-ev.c1.viz.r.items.2	autoestradas
 el-ev.c2.title	Opções de potência de carregamento
-el-ev.c2.text	Uma tomada normal dá cerca de 2.3 kW (10 A a 230 V), lento mas suficiente durante a noite para deslocações curtas. Uma wallbox monofásica a 32 A dá cerca de 7.4 kW.
+el-ev.c2.text	Uma tomada normal dá cerca de 2,3 kW (10 A a 230 V), lento mas suficiente durante a noite para deslocações curtas. Uma wallbox monofásica a 32 A dá cerca de 7,4 kW.
 el-ev.c2.viz.unit	kW
 el-ev.c2.viz.items.0.l	Tomada doméstica
 el-ev.c2.viz.items.1.l	Wallbox monofásica
@@ -1248,8 +1248,8 @@ el-ev.c2.viz.items.3.l	CA 22 kW
 el-ev.c2.viz.items.4.l	CC rápido
 el-ev.c3.title	Quanto tempo vai demorar?
 el-ev.c3.text	Divide a energia necessária pela potência de carregamento e junta alguma margem para as perdas e para a fase final, mais lenta.
-el-ev.c3.example.0	Juntar 50 kWh a 7.4 kW
-el-ev.c3.example.1	50 ÷ 7.4
+el-ev.c3.example.0	Juntar 50 kWh a 7,4 kW
+el-ev.c3.example.1	50 ÷ 7,4
 el-ev.c3.example.2	≈ 7 horas
 el-ev.c3.viz.f	horas ≈ kWh necessários ÷ kW
 el-ev.c3.viz.items.0.s	kWh
@@ -1328,3 +1328,472 @@ el-tariffs.c1.viz.r.t	Bi-horário
 el-tariffs.c1.viz.r.items.0	noites e fins de semana mais baratos
 el-tariffs.c1.viz.r.items.1	compensa se mudares consumos
 el-tariffs.c1.viz.r.items.2	VE, termoacumulador
+el-tariffs.c2.title	Quando compensa o bi-horário
+el-tariffs.c2.text	Costuma compensar se conseguires passar uma boa parte do teu consumo, muitas vezes cerca de 40% ou mais, para as horas de vazio: carregamento do VE, aquecimento de água, máquina de lavar roupa e máquina da loiça com temporizador.
+el-tariffs.c2.viz.items.0	Carregar o VE à noite
+el-tariffs.c2.viz.items.1	Termoacumulador com temporizador
+el-tariffs.c2.viz.items.2	Máquina de lavar com início diferido
+el-tariffs.c2.viz.items.3	Máquina da loiça durante a noite
+el-tariffs.c3.title	Para onde vão os kWh
+el-tariffs.c3.text	Numa casa típica, o aquecimento e as águas quentes são os maiores consumidores, seguidos da cozinha, da refrigeração, da roupa e da iluminação. Um VE pode facilmente duplicar o consumo de uma casa.
+el-tariffs.c3.viz.unit	% do consumo da casa (ilustrativo)
+el-tariffs.c3.viz.items.0.l	Aquecimento e arrefecimento
+el-tariffs.c3.viz.items.1.l	Águas quentes
+el-tariffs.c3.viz.items.2.l	Cozinha e frigorífico
+el-tariffs.c3.viz.items.3.l	Lavar roupa
+el-tariffs.c3.viz.items.4.l	Outros
+el-tariffs.c4.title	O frigorífico trabalha o ano todo
+el-tariffs.c4.text	Um frigorífico combinado liga e desliga 24 horas por dia, 7 dias por semana. Um modelo moderno e eficiente gasta cerca de 150–250 kWh por ano; um antigo pode gastar duas ou três vezes mais.
+el-tariffs.c4.viz.unit	kWh por ano (típico)
+el-tariffs.c4.viz.items.0.l	Combinado novo classe A
+el-tariffs.c4.viz.items.1.l	Modelo com 10 anos
+el-tariffs.c4.viz.items.2.l	Com 20 anos
+el-tariffs.c5.title	Etiquetas energéticas
+el-tariffs.c5.text	As etiquetas energéticas da UE classificam os aparelhos de A (melhor) a G e mostram o consumo anual em kWh. A escala foi revista em 2021, por isso um "C" novo pode ser melhor do que um "A+++" antigo.
+el-tariffs.c5.viz.items.0	A: o mais eficiente
+el-tariffs.c5.viz.items.1	B–C: bom
+el-tariffs.c5.viz.items.2	D–E: médio
+el-tariffs.c5.viz.items.3	F–G: o menos eficiente
+el-tariffs.c6.title	Iluminação LED
+el-tariffs.c6.text	As lâmpadas LED gastam cerca de 80–90% menos eletricidade do que as antigas incandescentes para a mesma luz e duram muito mais. A quantidade de luz mede-se em lúmenes, não em watts.
+el-tariffs.c6.viz.unit	watts para ~800 lúmenes
+el-tariffs.c6.viz.items.0.l	Incandescente
+el-tariffs.c6.viz.items.1.l	Halogéneo
+el-tariffs.c6.viz.items.2.l	LFC
+el-tariffs.c6.viz.items.3.l	LED
+el-tariffs.c7.title	Termoacumuladores
+el-tariffs.c7.text	Um termoacumulador elétrico é muitas vezes uma das maiores cargas individuais da casa. Um temporizador para as horas baratas, um termóstato mais baixo (cerca de 50–55 °C) e um bom isolamento cortam custos. As bombas de calor para águas quentes gastam cerca de um terço da energia.
+el-tariffs.c7.viz.unit	kWh por ano (família de 4, aprox.)
+el-tariffs.c7.viz.items.0.l	Resistência elétrica
+el-tariffs.c7.viz.items.1.l	Bomba de calor para AQS
+el-tariffs.c8.title	Monitorização
+el-tariffs.c8.text	Os contadores inteligentes e os monitores com pinça (por exemplo com o Home Assistant) mostram o consumo em tempo real, revelando consumos em standby e hábitos caros.
+el-tariffs.c8.viz.steps.0	Sensor de pinça no cabo principal
+el-tariffs.c8.viz.steps.1	Monitor ou Home Assistant
+el-tariffs.c8.viz.steps.2	Ver watts em direto
+el-tariffs.c8.viz.steps.3	Detetar desperdício
+el-tariffs.c9.title	Comunidades de autoconsumo
+el-tariffs.c9.text	Em Portugal, vizinhos, empresas e municípios podem formar comunidades de energia renovável e partilhar produção solar através da rede, pagando tarifas de rede sobre a energia partilhada.
+el-tariffs.c9.viz.steps.0	Solar num telhado
+el-tariffs.c9.viz.steps.1	Partilhada pela rede
+el-tariffs.c9.viz.steps.2	Os vizinhos usam-na
+el-tariffs.c9.viz.steps.3	Faturas mais baixas para os membros
+el-heat.title	Aquecer e cozinhar com eletricidade
+el-heat.summary	Aquecimento por resistência, bombas de calor, fornos e placas.
+el-heat.q0.q	Uma bomba de calor com SCOP de 4 que gasta 1000 kWh fornece cerca de…
+el-heat.q0.o0	1000 kWh de calor
+el-heat.q0.o1	4000 kWh de calor
+el-heat.q0.o2	250 kWh de calor
+el-heat.q0.x	Calor = SCOP × eletricidade.
+el-heat.q1.q	Que placa passa mais energia para a panela?
+el-heat.q1.o0	Gás
+el-heat.q1.o1	Vitrocerâmica
+el-heat.q1.o2	Indução
+el-heat.q1.x	A indução aquece diretamente a panela.
+el-heat.q2.q	Todos os aquecedores elétricos de resistência dão o mesmo calor por kWh?
+el-heat.q2.o0	Sim, 1 kWh consumido dá 1 kWh de calor
+el-heat.q2.o1	Não, os aquecedores a óleo dão o dobro
+el-heat.q2.o2	Não, os termoventiladores dão metade
+el-heat.q2.x	Diferem na forma de entregar o calor, não na eficiência.
+el-heat.c0.title	Aquecimento por resistência
+el-heat.c0.text	Aquecedores, chaleiras, fornos e termoacumuladores transformam eletricidade em calor através de uma resistência: 1 kWh de eletricidade dá 1 kWh de calor. É 100% eficiente, mas mesmo assim caro comparado com uma bomba de calor.
+el-heat.c0.viz.steps.0	Corrente numa resistência
+el-heat.c0.viz.steps.1	Aquecimento I²R
+el-heat.c0.viz.steps.2	1 kWh consumido = 1 kWh de calor
+el-heat.c1.title	Bombas de calor: 3 a 4 vezes melhores
+el-heat.c1.text	Uma bomba de calor transporta calor do ar exterior (ou do solo) para dentro de casa. A eficiência sazonal típica (SCOP) é de 3–4: 1 kWh de eletricidade fornece 3–4 kWh de calor.
+el-heat.c1.viz.unit	kWh de calor por kWh de eletricidade
+el-heat.c1.viz.items.0.l	Aquecedor de resistência
+el-heat.c1.viz.items.1.l	Bomba de calor ar-ar
+el-heat.c1.viz.items.2.l	Geotérmica
+el-heat.c2.title	Ar-ar vs. ar-água
+el-heat.c2.text	As bombas de calor ar-ar são os conhecidos aparelhos de ar condicionado split que também aquecem. As unidades ar-água aquecem água para radiadores, piso radiante e torneiras de água quente.
+el-heat.c2.viz.l.t	Ar-ar
+el-heat.c2.viz.l.items.0	ar condicionado split
+el-heat.c2.viz.l.items.1	aquece e arrefece
+el-heat.c2.viz.l.items.2	rápido e barato
+el-heat.c2.viz.r.t	Ar-água
+el-heat.c2.viz.r.items.0	radiadores e piso radiante
+el-heat.c2.viz.r.items.1	também águas quentes
+el-heat.c2.viz.r.items.2	instalação maior
+el-heat.c3.title	A óleo vs. convetor vs. radiante
+el-heat.c3.text	Todos os aquecedores de resistência dão o mesmo calor por kWh. A diferença está na forma como o entregam: os radiadores a óleo são lentos e constantes, os convetores aquecem o ar depressa e os painéis radiantes aquecem diretamente as pessoas e os objetos.
+el-heat.c3.viz.items.0.a	a óleo
+el-heat.c3.viz.items.0.b	lento, constante, guarda o calor
+el-heat.c3.viz.items.1.a	convetor
+el-heat.c3.viz.items.1.b	aquece o ar depressa
+el-heat.c3.viz.items.2.a	painel radiante
+el-heat.c3.viz.items.2.b	aquece-te diretamente
+el-heat.c3.viz.items.3.a	termoventilador
+el-heat.c3.viz.items.3.b	rápido, ruidoso
+el-heat.c4.title	Chaleiras: aquece só o que precisas
+el-heat.c4.text	Uma chaleira de 2 kW ferve 1 litro em cerca de 3 minutos. Ferver uma chaleira cheia para uma chávena desperdiça energia e tempo.
+el-heat.c4.viz.f	kWh = litros × 4,19 × ΔT ÷ 3600
+el-heat.c4.viz.items.0.s	1 L
+el-heat.c4.viz.items.0.m	água
+el-heat.c4.viz.items.1.s	80 °C
+el-heat.c4.viz.items.1.m	subida de temperatura
+el-heat.c4.viz.items.2.s	≈ 0,093 kWh
+el-heat.c4.viz.items.2.m	energia
+el-heat.c5.title	Indução vs. vitrocerâmica vs. gás
+el-heat.c5.text	A indução aquece diretamente a panela e tem cerca de 85–90% de eficiência. As placas vitrocerâmicas (radiantes) andam pelos 70%, os queimadores a gás por 40–55%. A indução é também mais rápida e mais fácil de controlar.
+el-heat.c5.viz.unit	% da energia que chega à comida (aprox.)
+el-heat.c5.viz.items.0.l	Gás
+el-heat.c5.viz.items.1.l	Vitrocerâmica
+el-heat.c5.viz.items.2.l	Indução
+el-heat.c6.title	Fornos e air fryers
+el-heat.c6.text	Aquecer a cavidade de um forno grande gasta energia antes de se começar a cozinhar. Os aparelhos pequenos, como as air fryers e os micro-ondas, aquecem menos volume e gastam muitas vezes bastante menos energia em porções pequenas.
+el-heat.c6.viz.unit	kWh para uma refeição pequena (aprox.)
+el-heat.c6.viz.items.0.l	Forno elétrico
+el-heat.c6.viz.items.1.l	Air fryer
+el-heat.c6.viz.items.2.l	Micro-ondas
+el-heat.c7.title	Termóstatos e temporizadores
+el-heat.c7.text	Cada grau a menos no termóstato poupa cerca de 5–10% da energia de aquecimento. Os temporizadores e os termóstatos inteligentes só aquecem as divisões quando são usadas.
+el-heat.c7.viz.items.0	Menos 1 °C ≈ 5–10% de poupança
+el-heat.c7.viz.items.1	Aquece só as divisões ocupadas
+el-heat.c7.viz.items.2	Programa os horários de aquecimento
+el-heat.c7.viz.items.3	Fecha as persianas à noite
+el-heat.c8.title	Primeiro, o isolamento
+el-heat.c8.text	O kWh mais barato é o que não precisas. O isolamento do telhado e das paredes, janelas melhores e a vedação de frinchas reduzem as necessidades de aquecimento antes de trocares o aquecedor.
+el-heat.c8.viz.items.0	Depois: bomba de calor eficiente
+el-heat.c8.viz.items.1	Depois: janelas e frinchas
+el-heat.c8.viz.items.2	Primeiro: isolar telhado e paredes
+el-heat.c9.title	As casas frias de Portugal
+el-heat.c9.text	Apesar do clima ameno, muitas casas portuguesas estão mal isoladas e são frias no inverno. Portugal tem tido uma das taxas mais altas de pobreza energética da UE, e é por isso que os programas de eficiência subsidiam o isolamento e as bombas de calor.
+el-heat.c9.viz.steps.0	Mau isolamento
+el-heat.c9.viz.steps.1	Divisões frias e húmidas
+el-heat.c9.viz.steps.2	Aquecimento caro
+el-heat.c9.viz.steps.3	Apoios à eficiência ajudam
+el-static.title	Eletricidade estática e raios
+el-static.summary	Faíscas, trovoadas e proteção contra raios.
+el-static.q0.q	Porque é que estás seguro dentro de um carro durante uma trovoada?
+el-static.q0.o0	Os pneus de borracha isolam-te
+el-static.q0.o1	A carroçaria metálica conduz a corrente à tua volta
+el-static.q0.o2	Os carros são demasiado baixos para serem atingidos
+el-static.q0.x	Funciona como uma gaiola de Faraday.
+el-static.q1.q	Os choques de eletricidade estática são mais comuns quando…
+el-static.q1.o0	Está húmido
+el-static.q1.o1	O ar está seco
+el-static.q1.o2	Está a chover
+el-static.q1.x	O ar seco deixa a carga acumular-se.
+el-static.q2.q	A corrente de um raio típico é de cerca de…
+el-static.q2.o0	30 A
+el-static.q2.o1	30 000 A
+el-static.q2.o2	30 mA
+el-static.q2.x	Dezenas de milhares de amperes durante microssegundos.
+el-static.c0.title	Carga estática
+el-static.c0.text	Esfregar dois materiais um no outro transfere eletrões de um para o outro. Um fica com carga negativa, o outro com carga positiva. A carga fica parada ("estática") até encontrar um caminho.
+el-static.c0.viz.steps.0	Esfregar materiais
+el-static.c0.viz.steps.1	Eletrões passam de lado
+el-static.c0.viz.steps.2	Um lado + , outro lado −
+el-static.c0.viz.steps.3	Faísca quando surge um caminho
+el-static.c1.title	Porque é que levas choques
+el-static.c1.text	Andar numa alcatifa com tempo seco acumula carga no teu corpo, por vezes milhares de volts. Toca num puxador de metal e ela descarrega numa pequena faísca. É inofensivo para ti, mas fatal para a eletrónica.
+el-static.c1.viz.items.0.v	3000 V
+el-static.c1.viz.items.0.l	quando começas a sentir
+el-static.c1.viz.items.1.v	10 000+ V
+el-static.c1.viz.items.1.l	possível em dias secos
+el-static.c2.title	Descargas eletrostáticas e eletrónica
+el-static.c2.text	Uma descarga eletrostática (ESD) pode destruir chips com tensões demasiado pequenas para se sentirem. É por isso que as placas são enviadas em sacos antiestáticos e os técnicos usam pulseiras de terra.
+el-static.c2.viz.items.0	Usa uma pulseira antiestática
+el-static.c2.viz.items.1	Usa tapetes e sacos antiestáticos
+el-static.c2.viz.items.2	Toca primeiro em metal ligado à terra
+el-static.c2.viz.items.3	Evita roupa sintética seca
+el-static.c3.title	Como se forma um raio
+el-static.c3.text	Dentro das nuvens de trovoada, cristais de gelo e granizo mole chocam em fortes correntes ascendentes, separando cargas. O topo da nuvem fica positivo e a base negativa, até o ar ceder numa faísca gigante.
+el-static.c3.viz.steps.0	Ar ascendente
+el-static.c3.viz.steps.1	Partículas de gelo chocam
+el-static.c3.viz.steps.2	Cargas separam-se na nuvem
+el-static.c3.viz.steps.3	O ar cede: raio
+el-static.c4.title	Os números de um raio
+el-static.c4.text	Um raio típico transporta cerca de 30 000 amperes, a centenas de milhões de volts, durante alguns microssegundos, e aquece o ar a cerca de 30 000 °C, umas cinco vezes mais do que a superfície do Sol.
+el-static.c4.viz.items.0.v	30 000 A
+el-static.c4.viz.items.0.l	corrente típica
+el-static.c4.viz.items.1.v	~30 000 °C
+el-static.c4.viz.items.1.l	temperatura do ar
+el-static.c4.viz.items.2.l	descargas por segundo no mundo
+el-static.c5.title	Para-raios
+el-static.c5.text	Um para-raios oferece um caminho fácil até à terra, para que a descarga desça em segurança por um condutor em vez de atravessar o edifício. Benjamin Franklin popularizou-os na década de 1750.
+el-static.c5.viz.steps.0	Raio atinge o para-raios
+el-static.c5.viz.steps.1	Condutor de descida
+el-static.c5.viz.steps.2	Elétrodo de terra
+el-static.c5.viz.steps.3	Edifício poupado
+el-static.c6.title	Seguro num carro
+el-static.c6.text	A carroçaria metálica de um carro funciona como uma gaiola de Faraday: a corrente passa pelo exterior da estrutura metálica, não pelas pessoas lá dentro. É o metal, e não os pneus de borracha, que te protege.
+el-static.c6.viz.items.0.w	os pneus de borracha protegem-te
+el-static.c6.viz.items.0.r	a carroçaria metálica leva a corrente à tua volta
+el-static.c7.title	Segurança ao ar livre
+el-static.c7.text	Se ouves trovões, estás ao alcance de um raio. Vai para dentro de casa ou para um carro, afasta-te de árvores altas isoladas, de cumes e da água, e espera 30 minutos depois do último trovão.
+el-static.c7.viz.items.0	Ouves trovões? Vai para dentro
+el-static.c7.viz.items.1	Evita árvores isoladas e cumes
+el-static.c7.viz.items.2	Sai da água
+el-static.c7.viz.items.3	Espera 30 minutos após o último trovão
+el-static.c8.title	Sobretensões nas casas
+el-static.c8.text	Um raio que caia perto pode induzir sobretensões nas linhas elétricas e telefónicas que danificam a eletrónica. Os descarregadores de sobretensões no quadro elétrico e nos equipamentos sensíveis ajudam.
+el-static.c8.viz.steps.0	Raio próximo
+el-static.c8.viz.steps.1	Sobretensão nas linhas de entrada
+el-static.c8.viz.steps.2	SPD desvia-a para a terra
+el-static.c8.viz.steps.3	Aparelhos protegidos
+el-static.c9.title	Estática na indústria
+el-static.c9.text	Combustíveis em movimento, pós e películas de plástico podem acumular estática perigosa. Os postos de abastecimento, os silos de cereais e as oficinas de pintura usam ligações à terra e equipotenciais para evitar faíscas que possam inflamar vapores ou poeiras.
+el-static.c9.viz.items.0	Ligar cisternas à terra antes de descarregar
+el-static.c9.viz.items.1	Ligar tubos e recipientes entre si
+el-static.c9.viz.items.2	Controlar a humidade
+el-static.c9.viz.items.3	Usar materiais antiestáticos
+el-safety.title	Segurança elétrica
+el-safety.summary	Regras que mantêm as pessoas e as casas em segurança.
+el-safety.q0.q	O que deves fazer primeiro se alguém ficar agarrado a um aparelho com tensão?
+el-safety.q0.o0	Puxá-lo pelo braço
+el-safety.q0.o1	Cortar a corrente ou afastá-lo com algo seco e não condutor
+el-safety.q0.o2	Atirar-lhe água
+el-safety.q0.x	Nunca lhe toques enquanto estiver sob tensão.
+el-safety.q1.q	Porque é que as ligações soltas são perigosas?
+el-safety.q1.o0	Desperdiçam água
+el-safety.q1.o1	A resistência mais alta faz com que aqueçam e pode provocar incêndios
+el-safety.q1.o2	Baixam a tensão para zero
+el-safety.q1.x	O calor e a oxidação pioram-nas.
+el-safety.q2.q	Que trabalho deve ficar para um eletricista qualificado?
+el-safety.q2.o0	Trocar uma lâmpada
+el-safety.q2.o1	Acrescentar um circuito novo ao quadro elétrico
+el-safety.q2.o2	Rearmar um disjuntor
+el-safety.q2.x	Trabalhos na instalação fixa precisam de um profissional.
+el-safety.c0.title	Três perigos
+el-safety.c0.text	A eletricidade magoa de três formas: choque elétrico (corrente através do corpo), queimaduras (de arcos ou superfícies quentes) e incêndio (por sobreaquecimento de cabos ou ligações).
+el-safety.c0.viz.root	Perigos
+el-safety.c0.viz.items.0	Choque
+el-safety.c0.viz.items.1	Queimaduras e arcos
+el-safety.c0.viz.items.2	Incêndio
+el-safety.c1.title	O caminho da corrente conta
+el-safety.c1.text	A corrente de mão para mão ou de mão para pé atravessa o peito e o coração, os caminhos mais perigosos. A pele molhada tem uma resistência muito menor, deixando passar mais corrente com a mesma tensão.
+el-safety.c1.viz.l.t	Pele seca
+el-safety.c1.viz.l.items.0	resistência maior
+el-safety.c1.viz.l.items.1	menos corrente
+el-safety.c1.viz.r.t	Pele molhada
+el-safety.c1.viz.r.items.0	resistência muito menor
+el-safety.c1.viz.r.items.1	muito mais corrente
+el-safety.c2.title	Água e eletricidade
+el-safety.c2.text	As casas de banho e as cozinhas têm regras especiais: há zonas à volta das banheiras e dos chuveiros que limitam que equipamento pode ir para onde, e todos os circuitos devem estar protegidos por um diferencial de 30 mA.
+el-safety.c2.viz.items.0	Sem tomadas normais perto da banheira
+el-safety.c2.viz.items.1	Equipamento com índice IP nas zonas molhadas
+el-safety.c2.viz.items.2	Proteção diferencial de 30 mA
+el-safety.c2.viz.items.3	Nunca uses aparelhos ligados à rede no banho
+el-safety.c3.title	Ligações soltas
+el-safety.c3.text	Um terminal de aperto solto tem uma área de contacto pequena e uma resistência maior, por isso aquece, oxida e aquece ainda mais. Muitos incêndios elétricos começam numa ligação, não a meio de um cabo.
+el-safety.c3.viz.steps.0	Terminal solto
+el-safety.c3.viz.steps.1	Resistência maior
+el-safety.c3.viz.steps.2	Calor e oxidação
+el-safety.c3.viz.steps.3	Contacto ainda pior
+el-safety.c4.title	Sinais de alerta
+el-safety.c4.text	Chama um eletricista se vires marcas de queimado, sentires cheiro a plástico queimado, ouvires estalidos, notares tomadas ou interruptores quentes, ou se os disjuntores dispararem repetidamente.
+el-safety.c4.viz.items.0	Marcas de queimado
+el-safety.c4.viz.items.1	Cheiro a queimado
+el-safety.c4.viz.items.2	Estalidos ou zumbidos
+el-safety.c4.viz.items.3	Tomadas ou fichas quentes
+el-safety.c4.viz.items.4	Disparos repetidos
+el-safety.c5.title	Se alguém estiver a apanhar um choque
+el-safety.c5.text	Não lhe toques enquanto estiver em contacto com a fonte. Corta a corrente ou afasta-o com algo seco e não condutor, liga 112 e começa o SBV (reanimação) se for preciso.
+el-safety.c5.viz.steps.0	Não lhe toques
+el-safety.c5.viz.steps.1	Corta a corrente
+el-safety.c5.viz.steps.2	Liga 112
+el-safety.c5.viz.steps.3	Vê se respira, começa o SBV
+el-safety.c6.title	Os limites do faça-você-mesmo
+el-safety.c6.text	Trocar uma lâmpada ou ligar aparelhos à tomada não tem problema. Circuitos novos, trabalhos no quadro elétrico e tudo o que seja instalação fixa devem ser feitos por um eletricista qualificado, e em Portugal as instalações novas precisam de certificação.
+el-safety.c6.viz.l.t	Podes fazer
+el-safety.c6.viz.l.items.0	lâmpadas
+el-safety.c6.viz.l.items.1	fichas dos aparelhos
+el-safety.c6.viz.l.items.2	rearmar disjuntores
+el-safety.c6.viz.r.t	Eletricista
+el-safety.c6.viz.r.items.0	circuitos novos
+el-safety.c6.viz.r.items.1	quadro elétrico
+el-safety.c6.viz.r.items.2	carregadores VE, solar
+el-safety.c7.title	Fichas múltiplas sobrecarregadas
+el-safety.c7.text	Ligar vários aparelhos de alta potência a uma só ficha múltipla pode sobrecarregá-la, e também a tomada onde está ligada. Aquecedores, chaleiras e ferros de engomar devem ter cada um a sua tomada de parede.
+el-safety.c7.viz.items.0.w	aquecedor + chaleira numa só ficha múltipla
+el-safety.c7.viz.items.0.r	um aparelho potente por tomada de parede
+el-safety.c8.title	Linhas aéreas
+el-safety.c8.text	Nunca ponhas drones ou papagaios a voar, nem levantes escadas ou mastros de barcos, perto de linhas elétricas aéreas. A alta tensão pode saltar em arco pelo ar sem haver contacto.
+el-safety.c8.viz.items.0	Mantém as escadas bem afastadas
+el-safety.c8.viz.items.1	Nada de papagaios ou drones perto das linhas
+el-safety.c8.viz.items.2	Atenção a mastros e gruas
+el-safety.c8.viz.items.3	Comunica linhas caídas, não te aproximes
+el-safety.c9.title	O mito dos 230 V
+el-safety.c9.text	"Só 230 V" chegam para matar. O que conta é a corrente através do corpo, e a 230 V um caminho de mão para mão com a pele molhada pode facilmente deixar passar mais do que os 30–50 mA que podem perturbar o coração.
+el-safety.c9.viz.f	I = V ÷ R
+el-safety.c9.viz.items.0.s	230 V
+el-safety.c9.viz.items.0.m	rede
+el-safety.c9.viz.items.1.s	~1000 Ω
+el-safety.c9.viz.items.1.m	corpo molhado
+el-safety.c9.viz.items.2.s	≈ 230 mA
+el-safety.c9.viz.items.2.m	corrente perigosa
+el-backup.title	Baterias domésticas e backup
+el-backup.summary	Guardar energia solar e manter as luzes acesas.
+el-backup.q0.q	Porque é que muitos sistemas solares se desligam durante um apagão?
+el-backup.q0.o0	Para poupar os painéis
+el-backup.q0.o1	Para não injetar energia em linhas que os técnicos julgam estar sem tensão
+el-backup.q0.o2	Porque o sol se põe
+el-backup.q0.x	A proteção anti-ilha protege os técnicos das linhas.
+el-backup.q1.q	Como deves dimensionar uma bateria doméstica?
+el-backup.q1.o0	Igual à potência dos painéis
+el-backup.q1.o1	Em função do teu consumo ao fim do dia e à noite
+el-backup.q1.o2	Sempre o maior possível
+el-backup.q1.x	Guarda o que de outra forma comprarias depois do pôr do sol.
+el-backup.q2.q	Onde deve funcionar um gerador a gasolina?
+el-backup.q2.o0	Na garagem
+el-backup.q2.o1	Ao ar livre, longe das janelas
+el-backup.q2.o2	Na cozinha
+el-backup.q2.x	O monóxido de carbono é mortal.
+el-backup.c0.title	Porquê uma bateria em casa?
+el-backup.c0.text	Uma bateria guarda o excedente solar do meio-dia para a noite, aumentando o autoconsumo, e pode passar energia barata da noite para as horas caras. Alguns sistemas também dão backup durante os cortes de energia.
+el-backup.c0.viz.steps.0	Excedente solar ao meio-dia
+el-backup.c0.viz.steps.1	Carrega a bateria
+el-backup.c0.viz.steps.2	Consumo à noite
+el-backup.c0.viz.steps.3	Compra-se menos à rede
+el-backup.c1.title	Dimensionar uma bateria
+el-backup.c1.text	Dimensiona a bateria para o teu consumo ao fim do dia e à noite, não para o dia inteiro. Muitas casas gastam 5–10 kWh entre o pôr e o nascer do sol.
+el-backup.c1.viz.f	kWh ≈ consumo noturno ÷ profundidade útil
+el-backup.c1.viz.items.0.s	6 kWh
+el-backup.c1.viz.items.0.m	consumo noturno
+el-backup.c1.viz.items.1.m	profundidade útil
+el-backup.c1.viz.items.2.s	≈ 6,7 kWh
+el-backup.c1.viz.items.2.m	capacidade da bateria
+el-backup.c2.title	Inversores híbridos
+el-backup.c2.text	Um inversor híbrido liga os painéis, a bateria, a casa e a rede, e decide para onde vai a energia: primeiro para a casa, depois para a bateria, depois para injeção na rede.
+el-backup.c2.viz.steps.0	Painéis
+el-backup.c2.viz.steps.1	Inversor híbrido
+el-backup.c2.viz.steps.2	Primeiro a casa
+el-backup.c2.viz.steps.3	Depois a bateria
+el-backup.c2.viz.steps.4	Depois a rede
+el-backup.c3.title	O backup não é automático
+el-backup.c3.text	Muitos sistemas solares ligados à rede desligam-se durante um apagão por segurança, para que os técnicos das linhas não sejam feridos por energia injetada de volta. O backup precisa de um inversor com comutador de ilha e de um circuito de backup.
+el-backup.c3.viz.l.t	Só ligado à rede
+el-backup.c3.viz.l.items.0	desliga-se num apagão
+el-backup.c3.viz.l.items.1	sem backup
+el-backup.c3.viz.r.t	Híbrido com backup
+el-backup.c3.viz.r.items.0	isola-se da rede
+el-backup.c3.viz.r.items.1	alimenta o essencial
+el-backup.c4.title	Cargas essenciais
+el-backup.c4.text	Em vez de fazer backup à casa toda, muitos sistemas alimentam um quadro de "cargas essenciais": frigorífico, luzes, router, comandos da caldeira e algumas tomadas.
+el-backup.c4.viz.items.0	Frigorífico e congelador
+el-backup.c4.viz.items.1	Luzes
+el-backup.c4.viz.items.2	Router e rede
+el-backup.c4.viz.items.3	Comandos do aquecimento
+el-backup.c4.viz.items.4	Algumas tomadas
+el-backup.c5.title	UPS para a eletrónica
+el-backup.c5.text	Uma UPS (fonte de alimentação ininterrupta) mantém um computador, um NAS ou a rede a funcionar durante minutos num corte e permite um encerramento seguro. É classificada em VA e em autonomia para uma dada carga.
+el-backup.c5.viz.steps.0	Rede falha
+el-backup.c5.viz.steps.1	Bateria da UPS assume em milissegundos
+el-backup.c5.viz.steps.2	Minutos de autonomia
+el-backup.c5.viz.steps.3	Encerramento seguro
+el-backup.c6.title	Geradores
+el-backup.c6.text	Os geradores portáteis a gasolina dão backup, mas nunca devem funcionar dentro de casa (monóxido de carbono). Ligar um à casa exige um comutador de transferência adequado, para que não possa injetar na rede.
+el-backup.c6.viz.items.0.w	extensão ligada ao quadro
+el-backup.c6.viz.items.0.r	comutador de transferência instalado por um eletricista
+el-backup.c6.viz.items.1.w	pô-lo a trabalhar na garagem
+el-backup.c6.viz.items.1.r	pô-lo a trabalhar lá fora, longe das janelas
+el-backup.c7.title	Do carro para a casa
+el-backup.c7.text	Alguns VE conseguem alimentar uma casa através de carregamento bidirecional (V2H) ou alimentar aparelhos através de uma tomada (V2L). Uma bateria de VE de 70 kWh poderia alimentar uma casa típica durante dias.
+el-backup.c7.viz.items.0.a	V2L
+el-backup.c7.viz.items.0.b	tomadas no carro
+el-backup.c7.viz.items.1.a	V2H
+el-backup.c7.viz.items.1.b	alimenta a casa
+el-backup.c7.viz.items.2.a	V2G
+el-backup.c7.viz.items.2.b	injeta na rede
+el-backup.c8.title	As contas
+el-backup.c8.text	As baterias domésticas nem sempre se pagam só com as poupanças. O caso melhora com um consumo grande ao fim do dia, tarifas por horário, preços baixos de injeção na rede ou uma grande necessidade de backup.
+el-backup.c8.viz.items.0	Grande consumo ao fim do dia
+el-backup.c8.viz.items.1	Grande diferença de preço entre ponta e vazio
+el-backup.c8.viz.items.2	Pouco pago pelo solar injetado
+el-backup.c8.viz.items.3	Cortes de energia frequentes
+el-backup.c9.title	Segurança e localização
+el-backup.c9.text	Instala as baterias num local ventilado, fresco e seco, longe dos quartos e das saídas, com os afastamentos que o fabricante indica. A química LFP é a preferida para casas porque é mais estável termicamente.
+el-backup.c9.viz.items.0	Fresco, seco, ventilado
+el-backup.c9.viz.items.1	Sem bloquear saídas
+el-backup.c9.viz.items.2	Afastamentos do fabricante
+el-backup.c9.viz.items.3	Prefere a química LFP
+el-history.title	Uma história da eletricidade
+el-history.summary	Do âmbar à rede inteligente.
+el-history.q0.q	O volt tem o nome de…
+el-history.q0.o0	James Watt
+el-history.q0.o1	Alessandro Volta
+el-history.q0.o2	Michael Faraday
+el-history.q0.x	Volta construiu a primeira pilha em 1800.
+el-history.q1.q	Quem descobriu a indução eletromagnética em 1831?
+el-history.q1.o0	Edison
+el-history.q1.o1	Faraday
+el-history.q1.o2	Maxwell
+el-history.q1.x	Faraday mostrou que ímanes em movimento induzem corrente.
+el-history.q2.q	O que é que o transístor de 1947 veio substituir?
+el-history.q2.o0	As pilhas
+el-history.q2.o1	As válvulas de vácuo
+el-history.q2.o2	Os fios de cobre
+el-history.q2.x	Os transístores tornaram a eletrónica pequena e fiável.
+el-history.c0.title	O âmbar e a palavra "elétrico"
+el-history.c0.text	Os antigos gregos repararam que o âmbar esfregado atraía penas. A palavra grega para âmbar, "elektron", deu-nos "eletricidade", um termo criado por William Gilbert por volta de 1600.
+el-history.c0.viz.events.0.y	~600 a.C.
+el-history.c0.viz.events.0.l	Tales e o âmbar
+el-history.c0.viz.events.1.l	Gilbert cria "electricus"
+el-history.c0.viz.events.2.l	Papagaio de Franklin
+el-history.c0.viz.events.3.l	Pilha de Volta
+el-history.c1.title	A pilha de Volta, 1800
+el-history.c1.text	Alessandro Volta empilhou discos de zinco e de cobre separados por pano embebido em salmoura: a primeira pilha a dar uma corrente constante. O volt tem o seu nome.
+el-history.c1.viz.steps.0	Disco de zinco
+el-history.c1.viz.steps.1	Pano com salmoura
+el-history.c1.viz.steps.2	Disco de cobre
+el-history.c1.viz.steps.3	Repete: corrente constante
+el-history.c2.title	As descobertas de Faraday
+el-history.c2.text	Em 1831, Michael Faraday mostrou que ímanes em movimento induzem correntes, a base de todos os geradores e transformadores. Teve pouca educação formal e tornou-se um dos maiores experimentalistas de sempre.
+el-history.c2.viz.items.0.l	indução eletromagnética
+el-history.c2.viz.items.1.l	descoberta por trás de todos os geradores
+el-history.c3.title	As equações de Maxwell
+el-history.c3.text	Na década de 1860, James Clerk Maxwell escreveu quatro equações que unificam a eletricidade, o magnetismo e a luz. Previram as ondas de rádio, que Hertz demonstrou em 1887.
+el-history.c3.viz.events.0.l	Teoria de Maxwell
+el-history.c3.viz.events.1.l	Hertz produz ondas de rádio
+el-history.c3.viz.events.2.l	Rádio de Marconi
+el-history.c4.title	Lâmpadas
+el-history.c4.text	Muitos inventores trabalharam na luz elétrica. Em 1879, Edison e, na Grã-Bretanha, Swan produziram lâmpadas práticas e duradouras de filamento de carbono. Edison construiu também as centrais e a rede para vender eletricidade.
+el-history.c4.viz.events.0.l	lâmpadas incandescentes práticas
+el-history.c4.viz.events.1.l	Central de Pearl Street, Nova Iorque
+el-history.c4.viz.events.2.y	anos 1920
+el-history.c4.viz.events.2.l	casas eletrificadas em massa nos EUA
+el-history.c5.title	A eletricidade em Portugal
+el-history.c5.text	As primeiras luzes elétricas em Portugal foram acesas em Cascais em 1878. As grandes barragens hidroelétricas, a partir da década de 1950, em rios como o Zêzere e o Douro, alimentaram a eletrificação do país.
+el-history.c5.viz.events.0.l	primeiras luzes elétricas, Cascais
+el-history.c5.viz.events.1.l	Barragem de Castelo do Bode
+el-history.c5.viz.events.2.y	anos 60–70
+el-history.c5.viz.events.2.l	barragens do Douro
+el-history.c5.viz.events.3.y	anos 2000
+el-history.c5.viz.events.3.l	boom eólico
+el-history.c6.title	O transístor, 1947
+el-history.c6.text	Nos Bell Labs, Bardeen, Brattain e Shockley construíram o primeiro transístor. Substituiu as volumosas válvulas de vácuo e tornou possíveis a eletrónica moderna, os computadores e os telemóveis.
+el-history.c6.viz.steps.0	Válvulas de vácuo
+el-history.c6.viz.steps.1	Transístor 1947
+el-history.c6.viz.steps.2	Circuito integrado 1958
+el-history.c6.viz.steps.3	Milhares de milhões por chip hoje
+el-history.c7.title	Nuclear e renováveis
+el-history.c7.text	As primeiras centrais nucleares surgiram na década de 1950. A partir dos anos 2000, a eólica e depois a solar cresceram rapidamente à medida que os custos caíam; os preços dos módulos solares desceram cerca de 90% na década de 2010.
+el-history.c7.viz.events.0.l	primeira central nuclear ligada à rede (Obninsk)
+el-history.c7.viz.events.1.y	anos 1980
+el-history.c7.viz.events.1.l	primeiros parques eólicos
+el-history.c7.viz.events.2.y	anos 2010
+el-history.c7.viz.events.2.l	custos solares caem ~90%
+el-history.c7.viz.events.3.y	anos 2020
+el-history.c7.viz.events.3.l	renováveis lideram a nova capacidade
+el-history.c8.title	Unidades com nomes de pessoas
+el-history.c8.text	Muitas unidades homenageiam cientistas: volt (Volta), ampere (Ampère), ohm (Ohm), watt (Watt), hertz (Hertz), coulomb (Coulomb), tesla (Tesla).
+el-history.c8.viz.items.0.a	volt
+el-history.c8.viz.items.0.b	Alessandro Volta
+el-history.c8.viz.items.1.a	ampere
+el-history.c8.viz.items.1.b	André-Marie Ampère
+el-history.c8.viz.items.2.a	ohm
+el-history.c8.viz.items.2.b	Georg Ohm
+el-history.c8.viz.items.3.a	watt
+el-history.c8.viz.items.3.b	James Watt
+el-history.c8.viz.items.4.a	hertz
+el-history.c8.viz.items.4.b	Heinrich Hertz
+el-history.c9.title	O que vem a seguir
+el-history.c9.text	A eletricidade está a assumir uma parte cada vez maior do uso de energia: carros, aquecimento, indústria. Os desafios agora são o armazenamento, a expansão da rede e o equilíbrio entre a produção renovável variável e a procura.
+el-history.c9.viz.items.0	Transporte elétrico
+el-history.c9.viz.items.1	Bombas de calor
+el-history.c9.viz.items.2	Armazenamento na rede
+el-history.c9.viz.items.3	Redes maiores e mais inteligentes
+el-history.c9.viz.items.4	Hidrogénio verde para a indústria

@@ -14,6 +14,9 @@ Target: content/i18n/<lang>/<pack>.tsv
 - Quiz options (`.o0`, `.o1`…) stay in the same order. Proper names stay (use the usual local form if one exists:
   Lisbon → Lisboa, London → Londres, Confucius → 孔子).
 - Don't convert currencies or units. Keep € amounts.
+- Number format follows the target language: pt-PT, pt-BR, es and fr use a decimal comma (0,67 kWh; 3,3 V) and a space or
+  point for thousands (2 000 or 2.000; never "2,000"); zh keeps 0.67 and 2,000. Leave version numbers and names alone
+  (Web 2.0, GPT-4, Python 3.12).
 - Natural, fluent, friendly register for a curious adult — not word-for-word:
   - pt-PT: European Portuguese, informal "tu" (as in the app UI), Portuguese spelling (AO90), e.g. "ecrã", "equipa", "facto".
   - pt-BR: Brazilian Portuguese, "você", Brazilian vocabulary ("tela", "time/equipe", "fato", "trem").

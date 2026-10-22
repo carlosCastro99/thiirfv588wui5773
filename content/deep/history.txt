@@ -146,140 +146,6 @@ Still, around a quarter to a third of people remain offline, mostly in poorer, r
 !? Well over 95% of intercontinental data travels through undersea cables, not satellites. Several, such as EllaLink to Brazil, land on Portugal's coast.
 > The internet is the printing press again, but for everyone at once, at almost no cost per copy.
 
-== hi-discovery
-
-# Why Portugal turned to the sea
-Portugal had perhaps a million people in the 1400s, poor soils in much of the country and a long land border with a much bigger Castile. Expansion by land was blocked. But it had a long Atlantic coast, skilled fishermen, and Lisbon, a busy port where Genoese and other merchants brought money and know-how.
-### The motives
-@viz {"k": "tree", "root": "Why sail south?", "items": ["Gold from West Africa", "Spices from Asia", "Christian allies", "Crusade and glory"]}
-West African gold reached Europe through Muslim traders across the Sahara. Reaching it by sea would cut out the middlemen. Europeans also hoped to find "Prester John", a legendary Christian king in Africa or Asia, as an ally against Islam.
-### Step by step
-@viz {"k": "time", "events": [{"y": "1415", "l": "Ceuta captured"}, {"y": "1419", "l": "Madeira reached"}, {"y": "1427", "l": "Azores sighted"}, {"y": "1434", "l": "Cape Bojador passed"}, {"y": "1488", "l": "Cape of Good Hope"}]}
-The capture of Ceuta, a North African port, gave Portugal's nobles a taste for overseas ventures. Islands like Madeira soon paid for themselves with wheat and then sugar, funding further voyages.
-• Peace with Castile from 1411 freed resources for adventures abroad
-• Royal support meant voyages could continue for decades
-!? Cape Bojador, on today's Western Sahara coast, was feared as a point of no return. Gil Eanes finally sailed past it in 1434 and found the sea beyond was perfectly ordinary.
-> Portugal went to sea not because it was strong, but because the ocean was the one direction it could grow.
-
-# The caravel
-The caravel was a small, light ship, typically 20–25 metres long with a crew of about 20. Its **lateen** sails, triangular and set along the length of the ship, came from Mediterranean and Arab sailing traditions.
-@viz {"k": "cmp", "l": {"t": "Square sail", "items": ["great with wind behind", "poor into the wind", "good for cargo ships"]}, "r": {"t": "Lateen sail", "items": ["sails closer to wind", "needs skilled crew", "ideal for exploring"]}}
-### The return problem
-Sailing south along Africa was easy: the trade winds blew that way. Coming back meant beating against them for weeks. The solution was the **volta do mar** ("turn of the sea"): sail far out into the open Atlantic, curve north to the latitude of the Azores, and ride the westerly winds home.
-@viz {"k": "flow", "steps": ["Sail south along Africa", "Head out into Atlantic", "Swing north to Azores", "Westerlies blow you home"]}
-### Shallow and nimble
-A shallow hull let caravels creep along unknown coasts, enter river mouths and avoid sandbanks. They were less useful for heavy cargo, so later fleets mixed caravels with bigger ships.
-• Columbus' Niña and Pinta were caravels
-• The "caravela redonda" added square sails for speed downwind
-• Da Gama's fleet to India used larger naus plus one caravel, the Bérrio
-!! Caravels carried the spice trade => They were exploration ships; the cargo was carried by big naus (carracks) able to hold hundreds of tonnes
-> The caravel's genius was not size but agility: it could go into the wind and into the unknown.
-
-# Finding latitude from the stars
-Latitude is how far north or south of the equator you are. Because Earth is round, the sky looks different at different latitudes. At the North Pole, the Pole Star is overhead (90°); at the equator it sits on the horizon (0°). In between, its height above the horizon matches your latitude.
-### Using the Sun instead
-Below the equator, the Pole Star disappears. The Sun is always there, but its noon height changes with the seasons. Portuguese astronomers produced tables of the Sun's **declination**: how far north or south of the equator it is on each day.
-@viz {"k": "terms", "f": "lat = 90° − h + d", "items": [{"s": "lat", "m": "your latitude"}, {"s": "h", "m": "Sun's height at noon"}, {"s": "d", "m": "Sun's declination (table)"}]}
-ex: 21 June, Sun at noon is 74.7° high | Table says declination = +23.4° | 90 − 74.7 + 23.4 = 38.7° N, the latitude of Lisbon
-### The instruments
-@viz {"k": "pairs", "items": [{"a": "Quadrant", "b": "plumb line marks the angle"}, {"a": "Mariner's astrolabe", "b": "heavy brass ring, sights the Sun"}, {"a": "Cross-staff", "b": "slides to match star height"}]}
-Tables printed in the 1490s, including Abraham Zacuto's almanac, published in Leiria in 1496, made the method reliable.
-### What they couldn't do
-Longitude, your east–west position, needed accurate time at sea. That problem wasn't solved until marine chronometers in the late 1700s. Until then, navigators sailed to the right latitude and then ran east or west along it.
-!? In the 1400s the Pole Star was about 3.5° away from the true pole, so pilots learned a rule, the "regimento do Norte", to correct for its position.
-> A simple angle, measured with care and corrected with tables, told sailors where they were on an empty ocean.
-
-# The great voyages
-Each voyage built on the one before. Pilots, maps and wind knowledge were carefully gathered in Lisbon and often kept secret from rivals.
-@viz {"k": "time", "events": [{"y": "1488", "l": "Dias rounds Africa"}, {"y": "1498", "l": "Da Gama in Calicut"}, {"y": "1500", "l": "Cabral in Brazil"}, {"y": "1522", "l": "Round the world"}]}
-### Dias and da Gama
-Bartolomeu Dias was blown south by a storm and only realised he had passed Africa's tip when he turned north and found the coast on his left. He called it the Cape of Storms; the king renamed it the Cape of Good Hope. Vasco da Gama left Lisbon in July 1497 with four ships and took about ten months to reach Calicut. He made a huge loop through the South Atlantic, months without sight of land. Many of his men died of scurvy; perhaps a third returned in 1499.
-### Cabral and Magellan
-Cabral's fleet of 13 ships landed at Porto Seguro in April 1500, then continued to India. Fernão de Magalhães, after a quarrel with King Manuel I, offered his services to Spain. He found the strait at South America's tip that bears his name, crossed the Pacific, and was killed in the Philippines in 1521. Juan Sebastián Elcano brought the last ship home.
-@viz {"k": "nums", "items": [{"v": "5 ships", "l": "left Spain in 1519"}, {"v": "≈270", "l": "men set out"}, {"v": "18", "l": "came home in 1522"}]}
-!? Magellan named the Pacific ("peaceful") because his crossing met calm weather; it is the largest ocean on Earth.
-> In 34 years, Portuguese navigators turned the edge of the known world into a set of sea routes.
-
-# Splitting the world: Tordesillas
-After Columbus returned in 1493, the Pope issued a bull giving Castile lands west of a line 100 leagues beyond the Azores and Cape Verde. King João II of Portugal protested and negotiated directly with Castile, moving the line much further west.
-@viz {"k": "cmp", "l": {"t": "West of the line", "items": ["went to Castile", "most of the Americas"]}, "r": {"t": "East of the line", "items": ["went to Portugal", "Africa, Asia route, Brazil"]}}
-ex: 370 leagues west of Cape Verde | leagues varied, so about 2,000 km | line at roughly 46° W, cutting through today's Brazil
-### Why move the line?
-Historians debate whether Portugal already suspected land in the west. Either way, the wider sea gave room for the Atlantic loop on the way to India, and it put Brazil's eastern bulge on Portugal's side.
-### What happened next
-@viz {"k": "time", "events": [{"y": "1494", "l": "Treaty of Tordesillas"}, {"y": "1500", "l": "Cabral lands in Brazil"}, {"y": "1529", "l": "Zaragoza: Asian line"}, {"y": "1750", "l": "Madrid: new borders"}]}
-• Other powers like France, England and the Netherlands ignored the treaty
-• Portuguese settlers and explorers pushed far west of the line into the Amazon
-• The Treaty of Madrid in 1750 accepted borders close to Brazil's modern ones
-!! The Pope divided the world between Spain and Portugal => The final line came from a direct treaty between the two crowns; the Pope later confirmed it
-> A line drawn on a map in a small Castilian town decided the language of half of South America.
-
-# Prince Henry's role
-D. Henrique was the third surviving son of King João I and Philippa of Lancaster. He fought at Ceuta in 1415 and became governor of the Order of Christ, a wealthy military-religious order whose income helped pay for ships.
-@viz {"k": "pairs", "items": [{"a": "Funding", "b": "Order of Christ and trade rights"}, {"a": "Base", "b": "Lagos and Sagres, Algarve"}, {"a": "People", "b": "pilots, mapmakers, builders"}, {"a": "Goals", "b": "gold, crusade, knowledge"}]}
-### What he achieved
-Under his sponsorship, expeditions colonised Madeira and the Azores, passed Cape Bojador and reached as far as Sierra Leone by the time he died in 1460. He held monopolies on trade along the coast and took a share of the profits.
-### The myth of Sagres
-@viz {"k": "fix", "items": [{"w": "Ran a navigation school", "r": "Gathered experts; no formal school"}, {"w": "A great sailor", "r": "An organiser who rarely sailed far"}]}
-### A complicated figure
-His ventures also began the Portuguese trade in enslaved Africans: in 1444 captives were sold at Lagos, watched by Henry himself. He was also behind the disastrous attack on Tangier in 1437.
-!? The nickname "the Navigator" was popularised by English and German writers in the 1800s; Portuguese sources usually just call him the Infante.
-@viz {"k": "time", "events": [{"y": "1394", "l": "Born in Porto"}, {"y": "1415", "l": "Fights at Ceuta"}, {"y": "1420", "l": "Heads Order of Christ"}, {"y": "1460", "l": "Dies at Sagres"}]}
-> Henry's real invention was persistence: decades of funded, step-by-step voyages instead of one heroic gamble.
-
-# The spice trade
-In medieval Europe, spices were luxuries and status symbols. Pepper came from India's Malabar coast, cinnamon from Sri Lanka, and cloves and nutmeg only from a few tiny islands in today's Indonesia.
-### The old route
-@viz {"k": "flow", "steps": ["Spice islands", "Indian ports", "Red Sea or Gulf", "Alexandria, Beirut", "Venice, then Europe"]}
-At each stage, a merchant or ruler took a cut, so prices multiplied many times on the way. Venice grew rich as the main European buyer.
-### The Cape route
-@viz {"k": "cmp", "l": {"t": "Overland route", "items": ["many middlemen", "taxes at every port"]}, "r": {"t": "Cape route", "items": ["buy at the source", "one long sea voyage"]}}
-The voyage was dangerous; ships and lives were often lost. But one successful fleet could pay for several failures. The crown controlled imports through the Casa da Índia in Lisbon, and pepper became the state's great business.
-• Lisbon became Europe's pepper market in the early 1500s
-• Venice's trade fell sharply at first but partly recovered later
-• From about 1600 the Dutch and English pushed Portugal aside
-!! Spices were used to hide rotten meat => Those who could afford spices could afford fresh meat; spices were about flavour, medicine and prestige
-> The spice trade was about cutting out middlemen, and whoever controlled the sea route controlled the profit.
-
-# The Portuguese in Asia
-Portugal couldn't conquer Asia's great empires. Instead, governor Afonso de Albuquerque seized a few key ports to control the main sea lanes, creating the **Estado da Índia**, a network of forts, trading posts and fleets.
-@viz {"k": "time", "events": [{"y": "1510", "l": "Goa"}, {"y": "1511", "l": "Malacca"}, {"y": "1515", "l": "Hormuz"}, {"y": "1543", "l": "First reach Japan"}, {"y": "1557", "l": "Macau"}]}
-### How it worked
-Goa was the capital. Malacca controlled the strait to the spice islands, Hormuz the entrance to the Persian Gulf. Portugal forced local ships to buy passes, called **cartazes**, and attacked those without them. It was a sea empire run by violence as well as trade.
-### Long-lasting traces
-@viz {"k": "list", "items": ["Goa Portuguese until 1961", "Macau handed to China in 1999", "Kristang creole in Malacca", "Japanese \"pan\" from pão"]}
-In Japan, Portuguese traders brought firearms, which spread rapidly, and Jesuit missionaries converted many people before Christianity was banned in the early 1600s.
-!! Japanese "arigatō" comes from "obrigado" => The Japanese word existed before the Portuguese arrived; it's a coincidence
-!? Tempura is often linked to Portuguese missionaries' meatless fasting days ("tempora"), though the exact origin is debated.
-> Portugal's Asian empire was a chain of ports, not territory, and its traces are still in Asian food, words and families.
-
-# The dark side
-The Portuguese began trading enslaved people from West Africa in the 1440s. After sugar plantations spread to the Atlantic islands and then Brazil, the trade grew enormously. Enslaved Africans were forced across the ocean in brutal conditions; many died on the way.
-### The scale
-@viz {"k": "bars", "unit": "millions embarked, by ship's flag (est.)", "items": [{"l": "Portugal/Brazil", "v": 5.8, "hi": true}, {"l": "Britain", "v": 3.3}, {"l": "France", "v": 1.4}, {"l": "Spain", "v": 1.1}, {"l": "Netherlands", "v": 0.55}]}
-In total about 12.5 million people were forced onto ships from Africa between the 1500s and 1860s, and about 10.7 million survived the crossing. Brazil received the largest share, about 4.8 million.
-### Ending it
-@viz {"k": "time", "events": [{"y": "1444", "l": "Captives sold in Lagos"}, {"y": "1761", "l": "No new slaves in Portugal"}, {"y": "1869", "l": "Slavery ends in empire"}, {"y": "1888", "l": "Brazil abolishes slavery"}]}
-Brazil was the last country in the Americas to abolish slavery. The legacy lives on in Brazil's population, culture and inequalities, and in African communities shaped by the trade.
-• Lagos opened a museum on the site of its old slave market in 2016
-• Lisbon has planned a memorial to the enslaved people
-!? Estimates come from the Slave Voyages database, built by historians from records of more than 36,000 voyages.
-> The same ships that connected the world also carried the largest forced migration in history.
-
-# Legacy of the discoveries
-The voyages started an exchange of plants, animals, people and germs between continents that had been separate for millennia, often called the **Columbian Exchange**.
-@viz {"k": "cmp", "l": {"t": "To Europe & Asia", "items": ["maize, potatoes", "tomatoes, chillies", "cocoa, tobacco"]}, "r": {"t": "To the Americas", "items": ["wheat, sugar cane", "horses, cattle", "coffee, smallpox"]}}
-### Winners and losers
-New crops helped Europe's and Asia's populations grow. But diseases like smallpox and measles, to which Indigenous Americans had no immunity, killed a huge share of the population, in some regions perhaps up to 90%.
-### Portugal's part
-Portuguese traders carried chillies from Brazil to India and Asia within decades, so curries and Thai food owe something to them. They also brought tea to Europe's attention and spread words, foods and Christianity.
-@viz {"k": "nums", "items": [{"v": "≈260 M", "l": "Portuguese speakers today"}, {"v": "9", "l": "countries in the CPLP"}]}
-• The Portuguese language spread to Brazil, Africa and Asia
-• Mixed communities and creole languages formed in Cabo Verde, Goa and Macau
-• Global trade networks began linking every inhabited continent
-!? In Greek, Turkish and Arabic, the word for orange sounds like "Portugal" (portokáli, portakal, burtuqāl), because Portuguese traders spread the sweet orange.
-> The discoveries made the world one connected system, with gifts and catastrophes travelling along the same routes.
-
 == hi-egypt
 
 # The gift of the Nile
@@ -544,6 +410,152 @@ Greek came into Portuguese through Latin, the Church and science.
 • Alphabet is just the first two Greek letters, alpha and beta
 !? Escola and school come from scholē, which originally meant "leisure": the free time to think and learn.
 > Every time you say "democracia" or "telefone", you speak a little ancient Greek.
+
+== hi-china
+
+# Oracle bones
+The Shang ruled the Yellow River valley from roughly 1600 to 1046 BCE. Their last capital, near modern Anyang in Henan province, has produced more than 150,000 inscribed fragments, the earliest large body of Chinese writing.
+### How a divination worked
+Diviners carved rows of small hollows into the back of a bone or shell. A heated rod pressed into a hollow made the surface crack with a sharp pop, and the shape of the crack was read as yes or no, lucky or unlucky.
+@viz {"k": "pairs", "items": [{"a": "Ox shoulder blade", "b": "large, flat, easy to get"}, {"a": "Turtle plastron", "b": "prized belly shell"}, {"a": "Drilled hollows", "b": "control where cracks run"}, {"a": "Inscription", "b": "date, question, outcome"}]}
+### What kings worried about
+• Will it rain? Will the millet harvest be good?
+• Should we attack this enemy?
+• Will the queen's childbirth be lucky?
+• Why does the king have toothache? Which ancestor is angry?
+One name that appears often is Fu Hao, a royal consort who also led armies. Her tomb, found intact at Anyang in 1976, held hundreds of bronzes and jades.
+@viz {"k": "nums", "items": [{"v": "150,000+", "l": "inscribed fragments"}, {"v": "~4,500", "l": "different characters"}, {"v": "~1/3", "l": "of them deciphered"}]}
+!? The bones were rediscovered around 1899, when scholars noticed carvings on "dragon bones" sold in pharmacies to be ground into medicine.
+!! Chinese characters have not changed in 3,000 years => The writing system is continuous, but the shapes of characters changed greatly and thousands of new ones were added
+> Chinese writing began as a conversation between kings and their ancestors, scratched into bone.
+
+# The First Emperor
+Zheng became king of Qin at about 13 and spent some 25 years conquering the six other major states. The title he invented, huangdi, combined words used for legendary sages and gods, and every Chinese ruler used it until 1912. Many scholars think the Western name "China" comes from Qin.
+### One standard for everything
+@viz {"k": "list", "items": ["One script for official writing", "Round coins with square holes", "Standard weights and lengths", "Same axle width for carts", "Districts run by officials"]}
+Standard axles mattered because carts wore deep ruts into dirt roads, and a cart of the wrong width could not use them. The old noble domains were replaced by commanderies run by officials the emperor could appoint and dismiss.
+### Harsh rule
+Qin followed **Legalism**, a philosophy that kept people in line with strict laws and severe punishments. According to the historian Sima Qian, writing about a century later, the emperor ordered books burned in 213 BCE and scholars killed. Some historians think the account is exaggerated, but the regime was certainly feared. Hundreds of thousands of conscripts built roads, canals, walls and his tomb.
+### The Terracotta Army
+In 1974 farmers digging a well near Xi'an found pieces of a clay soldier. Excavations revealed pits holding an estimated 8,000 life-size soldiers, plus horses and chariots, guarding the emperor in death.
+@viz {"k": "cmp", "l": {"t": "Found so far", "items": ["~8,000 soldiers (est.)", "horses and chariots", "bronze weapons"]}, "r": {"t": "Still unknown", "items": ["tomb never opened", "how to save the paint", "rivers of mercury?"]}}
+!? Sima Qian wrote that the tomb held rivers of mercury. Soil tests over the mound have found unusually high mercury levels, one reason it has not been opened.
+> The Qin dynasty lasted only 15 years, but its standards and its idea of one emperor over one China lasted more than 2,000.
+
+# The Great Walls
+A Chinese government survey published in 2012 counted every wall, trench and natural barrier from all periods and arrived at about 21,000 km, more than half the distance around the Equator. Many stretches are now low earth ridges that are easy to miss.
+@viz {"k": "bars", "unit": "length in km (approx.)", "items": [{"l": "All walls (2012)", "v": 21000.0, "t": "~21,000", "hi": true}, {"l": "Ming walls", "v": 8850.0, "t": "~8,850"}, {"l": "Equator", "v": 40000.0, "t": "~40,000"}]}
+### Building materials
+Builders used whatever was nearby.
+• Rammed earth: soil pounded in layers inside wooden frames
+• In the Gobi desert: layers of gravel with reeds or tamarisk branches
+• Ming sections: fired bricks and cut stone, bonded with lime mortar
+Studies of Ming mortar found sticky rice soup mixed into the lime, which made it stronger and more water-resistant.
+### What walls were for
+@viz {"k": "list", "items": ["Slow down raiders on horseback", "Signal with smoke and fire", "Control trade and taxes", "Watch who comes and goes"]}
+A wall could not stop a determined army, but it slowed raids, funnelled traffic through gates and let watchtowers pass warnings with fire at night and smoke by day. It also marked where settled farming China ended. In 1644 the Manchus came through the Shanhai Pass at its eastern end after a Ming general opened the gate to them.
+!! The Great Wall is visible from space with the naked eye => It is very long but only a few metres wide and the colour of the land; China's first astronaut, Yang Liwei, said in 2003 that he could not see it
+> The Great Wall is a 2,000-year collection of frontiers, each one a snapshot of where China's rulers drew their line.
+
+# The Han and the Silk Road
+In 138 BCE Emperor Wu sent an officer called Zhang Qian west to find allies against the Xiongnu, a nomadic confederation that raided Han lands. He was captured by the Xiongnu and held for about ten years, escaped, and returned around 125 BCE without an alliance but with something more valuable: detailed reports on the kingdoms of Central Asia.
+@viz {"k": "time", "events": [{"y": "138 BCE", "l": "Zhang Qian sets out"}, {"y": "~125 BCE", "l": "He returns with reports"}, {"y": "101 BCE", "l": "Han win Ferghana horses"}, {"y": "97 CE", "l": "Envoy sent towards Rome"}]}
+### Heavenly horses
+Zhang Qian described tall, fast horses in the Ferghana valley, in today's Uzbekistan. Han cavalry needed them to fight the steppe riders, so the emperor sent armies thousands of kilometres to get them. Garrisons and watchtowers were then built along the Gansu corridor to protect the caravans.
+### Two empires that never met
+The Romans knew the Chinese only as the Seres, the "silk people", and the Han knew Rome vaguely as Daqin. In 97 CE an envoy, Gan Ying, was sent to reach it; he got as far as the Persian Gulf or the Black Sea region and turned back. Goods, not people, made the whole journey, passing through Parthian and other middlemen.
+@viz {"k": "nums", "items": [{"v": "~57 million", "l": "people in the Han census of 2 CE"}, {"v": "~400", "l": "years of Han rule"}]}
+!? A Chinese chronicle records that in 166 CE visitors claiming to represent the Roman emperor Andun, probably Marcus Aurelius, arrived by sea. They were most likely enterprising merchants.
+### Ideas on the road
+Buddhism reached China from India along these routes in the 1st century CE. Monks, translators and pilgrims followed the merchants, and cave temples grew up at oasis towns such as Dunhuang.
+> The Han turned a military search for horses and allies into a lasting link between East and West.
+
+# The imperial exams
+Confucius (551–479 BCE) taught that society works when rulers govern by moral example and everyone respects their duties: children to parents, subjects to rulers, friends to friends. Han emperors made his teachings state orthodoxy, and the Sui dynasty began formal exams in 605 CE. The system matured under the Song, when printed books made study more widely possible.
+### Days in a cell
+At the provincial level, candidates were locked into tiny brick cells for about three days, with one board as a desk and another as a bed. The examination hall in Nanjing had about 20,000 cells. Answers were recopied by clerks before marking, so examiners could not recognise handwriting.
+@viz {"k": "pairs", "items": [{"a": "Four Books", "b": "Confucius, Mencius and more"}, {"a": "Five Classics", "b": "poetry, history, rites"}, {"a": "Eight-legged essay", "b": "rigid essay form, from Ming"}, {"a": "Jinshi", "b": "top degree"}]}
+### Very few winners
+Pass rates at the higher levels were often only a few per cent. Men sat the exams again and again, some into old age. Cheating was a constant battle: museums hold silk undershirts covered in thousands of tiny handwritten passages from the classics.
+!! Anyone could rise through the exams => In theory most men could sit them, but women were excluded and years of study cost money, so wealthy families had a big advantage
+### Copied abroad
+@viz {"k": "list", "items": ["Korea and Vietnam: own exams", "Europe: admired by Voltaire", "Britain: civil-service exams", "China today: the gaokao"]}
+Korea and Vietnam adopted similar exams. European writers admired the idea of officials chosen by merit, and Britain's competitive civil-service exams, introduced from the 1850s, were partly inspired by the Chinese example.
+> China's exams made learning the road to power for over a thousand years, an early form of government by merit.
+
+# Four great inventions
+### Paper
+Early paper fragments date from the 2nd century BCE. In 105 CE a court official, Cai Lun, presented an improved recipe: mulberry bark, hemp, rags and old fishing nets, pulped, spread on a screen and dried. Papermaking reached Samarkand in the 700s, Baghdad soon after, and Europe through al-Andalus, where Xàtiva near Valencia was making paper by the 1100s.
+@viz {"k": "flow", "steps": ["China, ~100 CE", "Samarkand, 700s", "Baghdad, ~800", "Al-Andalus, 1100s", "Rest of Europe"]}
+### Printing
+Woodblock printing carved a whole page into one block. The oldest dated printed book, a Buddhist text called the Diamond Sutra, was printed in 868 and found in a cave at Dunhuang. Around 1040 an artisan called Bi Sheng made movable type from baked clay, but with thousands of characters to cast, whole-page blocks often stayed cheaper.
+### Compass
+Chinese thinkers knew that lodestone points south and first used it for divination. In 1088 the scholar Shen Kuo described a magnetised needle, and by about 1100 sailors used one to navigate in cloudy weather.
+### Gunpowder
+Alchemists searching for an elixir of long life noticed that mixing saltpetre, sulphur and charcoal could burn a house down. Fire arrows, bombs and rockets followed.
+@viz {"k": "time", "events": [{"y": "~850", "l": "Text warns of fire risk"}, {"y": "1044", "l": "First written formula"}, {"y": "1200s", "l": "Early metal guns"}, {"y": "1300s", "l": "Cannon in Europe"}]}
+!? China produced many other inventions too, including cast iron, the wheelbarrow, porcelain and an earthquake detector built by Zhang Heng in 132 CE.
+> The four inventions spread knowledge, guided ships and changed warfare, and every one crossed Asia before reaching Europe.
+
+# Tang and Song
+Tang Chang'an had perhaps a million people in and around its walls, laid out on a grid of wide avenues with two great markets. Persians, Sogdians, Arabs, Koreans and Japanese lived there, and Buddhist temples stood near Zoroastrian, Manichaean and Christian ones. Japan copied its layout for its capitals at Nara and Kyoto.
+### Poets and an empress
+Li Bai and Du Fu, still memorised by Chinese schoolchildren, wrote in the 700s. Wu Zetian became the only woman in Chinese history to rule as emperor in her own name, from 690 to 705. Then the An Lushan rebellion (755–763) devastated the empire, and the Tang never fully recovered.
+@viz {"k": "time", "events": [{"y": "618", "l": "Tang founded"}, {"y": "690", "l": "Wu Zetian rules"}, {"y": "755", "l": "An Lushan rebellion"}, {"y": "960", "l": "Song founded"}, {"y": "1279", "l": "Song falls to Mongols"}]}
+### The Song economy
+• Fast-ripening rice from Champa (now in Vietnam) allowed two harvests a year in the south
+• China's population passed 100 million
+• Sichuan merchants used paper notes; the state took over issuing them in 1024
+• Kaifeng and later Hangzhou may each have held around a million people
+@viz {"k": "cycle", "steps": ["More rice", "More people", "More trade", "Bigger cities"]}
+### Painters and scholars
+Song scholar-officials, chosen by exam, also painted, wrote poetry and practised calligraphy. The long scroll *Along the River During the Qingming Festival*, painted in the 1100s, shows more than 800 people going about city life in minute detail.
+!? Despite this wealth, the Song paid large yearly sums of silver and silk to northern neighbours to keep the peace, and still lost the north to the Jurchen in 1127.
+> Tang brought power and openness; Song brought wealth, cities and paper money that later amazed Marco Polo.
+
+# Zheng He's fleets
+Zheng He was born around 1371 into a Muslim family in Yunnan. Captured as a boy when Ming armies conquered the province, he was made a eunuch and served Prince Zhu Di. When the prince seized the throne as the Yongle Emperor, Zheng He became one of his most trusted commanders.
+### Treasure ships
+Ming records describe the largest "treasure ships" as about 120–135 m long. Many historians think that is exaggerated and that 60–75 m is more likely, but even that dwarfed European ships of the time.
+@viz {"k": "bars", "unit": "ship length in m (approx.)", "items": [{"l": "Recorded claim", "v": 127.0, "t": "~120–135"}, {"l": "Likely size", "v": 67.0, "t": "~60–75", "hi": true}, {"l": "Santa María", "v": 20.0, "t": "~20"}]}
+### Where they went
+• Champa, Java, Sumatra and Malacca
+• Sri Lanka and Calicut in India
+• Hormuz, Aden and the Red Sea
+• Mogadishu and Malindi in East Africa
+@viz {"k": "cmp", "l": {"t": "Zheng He, 1405", "items": ["~300 ships", "~28,000 men", "show of power"]}, "r": {"t": "Da Gama, 1497", "items": ["4 ships", "~170 men", "trade and forts"]}}
+!? In 1414 the fleet brought a giraffe from East Africa, via Bengal, to the Ming court. Courtiers presented it as a qilin, a mythical creature said to appear only under a wise ruler.
+### Why it stopped
+After Yongle died in 1424, officials argued that the voyages were hugely expensive and brought back mainly luxuries. The real threat was the Mongols in the north, so money went to walls and to the new capital in Beijing. Later Ming governments even restricted private sea trade.
+!! Zheng He reached America in 1421 => This popular claim from a 2002 book has no evidence behind it and is rejected by historians
+> In the early 1400s China had the greatest navy in the world, and chose to stop using it.
+
+# The Qing dynasty
+The Manchus were a small minority ruling a vast Han majority. They kept many Ming institutions, including the exams, but required Chinese men to shave the front of the head and wear a long braid, the queue, as a sign of loyalty.
+### The high Qing
+Kangxi (ruled 1661–1722) and his grandson Qianlong (1735–1796) had two of the longest reigns in Chinese history. Their campaigns brought Taiwan, Mongolia, Xinjiang and Tibet under Qing control, roughly setting the borders of modern China.
+@viz {"k": "bars", "unit": "population of China, millions (approx.)", "items": [{"l": "1700", "v": 150.0}, {"l": "1800", "v": 300.0}, {"l": "1850", "v": 430.0, "hi": true}]}
+### Trade on China's terms
+From 1757 Western merchants could trade only at Canton (Guangzhou), through licensed Chinese firms. Europeans paid for tea, silk and porcelain mostly in silver. In 1793 a British embassy under Lord Macartney asked for wider access; Qianlong replied that China had no need of British goods.
+### Opium and unequal treaties
+@viz {"k": "flow", "steps": ["Britain pays silver for tea", "Sells Indian opium instead", "China bans opium", "Opium War, 1839–42", "Hong Kong ceded"]}
+The treaties that followed opened more ports, gave foreigners legal privileges and fixed low tariffs. Chinese historians call the era that began then the "century of humiliation".
+The Taiping Rebellion (1850–1864), led by a man who believed he was the younger brother of Jesus, became one of the deadliest wars in history, with an estimated 20–30 million deaths.
+!? Portugal had a presence in Macau from 1557, long before Britain took Hong Kong. It was handed back to China on 20 December 1999, the last European colony in Asia.
+> The Qing built China's largest empire, then struggled to adapt when industrial powers arrived by sea.
+
+# The end of empire, 1912
+For almost half a century real power lay with the Empress Dowager Cixi, who dominated the court from 1861 until her death in 1908. She backed some modernisation, such as arsenals and shipyards, but in 1898 she crushed a burst of reforms by her nephew, the Guangxu Emperor, after only about a hundred days.
+### Shocks from abroad
+@viz {"k": "list", "items": ["1895: defeat by Japan", "1898: reforms crushed", "1900: Boxers besiege embassies", "1901: huge indemnity imposed"]}
+The Boxers, a movement that blamed foreigners and Christians for China's troubles, besieged the foreign legations in Beijing in 1900. An army of eight foreign powers took the city, and China was forced to pay a vast indemnity.
+### Revolution
+Revolutionary groups, many organised by Sun Yat-sen from exile, staged a series of failed uprisings. The one that worked began almost by accident: on 9 October 1911 a bomb went off by mistake in neighbouring Hankou, police found membership lists, and plotters in the Wuchang army rose the next day before they could be arrested. Province after province then declared independence from the Qing.
+@viz {"k": "pairs", "items": [{"a": "Sun Yat-sen", "b": "first provisional president"}, {"a": "Yuan Shikai", "b": "general, arranged abdication"}, {"a": "Puyi", "b": "last emperor, aged six"}]}
+### The last emperor
+Puyi was allowed to live on in the Forbidden City until 1924. Japan later made him puppet ruler of Manchukuo, in north-east China. After years in Soviet and Chinese prisons he lived as an ordinary citizen in Beijing until his death in 1967, a story told in the 1987 film *The Last Emperor*.
+!? Portugal had become a republic on 5 October 1910, so both countries ended their monarchies within about 16 months of each other.
+> The fall of the Qing did not end China's troubles: it opened decades of warlords, invasion and civil war.
 
 == hi-rome
 
@@ -943,123 +955,294 @@ Mértola sits on a steep hill above the Guadiana, which was a river port for Rom
 !? Al-Mu'tamid, a poet-king of Seville born in Beja, governed Silves as a young man and later wrote longingly about its palace.
 > In Silves and Mértola, al-Andalus isn't in a textbook; you can walk through it.
 
-== hi-portugal
+== hi-mongols
 
-# The County of Portucale
-The name **Portucale** joined two places on the Douro: Portus (a port on the north bank, today's Porto) and Cale (on the south bank, near Gaia). In 868 a nobleman, Vímara Peres, took the area back from Muslim control and it became a county, a territory run by a count for the king of León.
-@viz {"k": "flow", "steps": ["Portus + Cale on Douro", "868: county created", "1096: Henry and Teresa", "1128: Afonso takes over", "1143: a kingdom"]}
-### Henry and Teresa
-Around 1096 King Alfonso VI of León and Castile gave the county to **Henry of Burgundy**, a French knight who had come to fight the Muslims. Henry married Teresa, Alfonso's daughter (born outside marriage). The county stretched roughly from the Minho to around Coimbra.
-@viz {"k": "pairs", "items": [{"a": "Henry of Burgundy", "b": "French knight, count"}, {"a": "Teresa", "b": "daughter of Alfonso VI"}, {"a": "Alfonso VI", "b": "king of León and Castile"}, {"a": "Afonso Henriques", "b": "their son, first king"}]}
-### Teresa rules alone
-Henry died in 1112. Teresa ruled the county and called herself "queen". She grew close to a powerful Galician noble, Fernão Peres de Trava, which worried Portuguese barons who feared being swallowed by Galicia.
-!! Portugal was founded by a Portuguese hero against foreigners => Its founders were a French count and a Leonese princess, and the early fight was a family and noble power struggle
-> Portugal began as a frontier county on the Douro, granted by one king to a foreign knight.
+# Temüjin becomes Genghis Khan
+Our main source for his early life is *The Secret History of the Mongols*, written in the 13th century by someone close to the ruling family. It tells of a hard youth: a captured boy who escaped from a wooden collar, a young husband whose wife Börte was kidnapped by a rival clan and rescued with the help of allies.
+### Breaking the old tribes
+Steppe politics had been built on clans and tribes that changed sides constantly. Temüjin replaced them with an army and society organised in units of ten, mixing people from different tribes so that loyalty went to the khan, not to a clan chief.
+@viz {"k": "stack", "items": ["Tumen: 10,000 riders", "Mingghan: 1,000", "Zuun: 100", "Arban: 10"]}
+### Rule by merit and law
+• Commanders were promoted for loyalty and ability, not birth; some former enemies became generals
+• A body of laws, the Great Yasa, governed the army and nobility, though no full text survives
+• Mongolian was first written in a script borrowed from the Uyghurs, still used in Inner Mongolia
+• Religious leaders of many faiths were often exempt from taxes
+@viz {"k": "pairs", "items": [{"a": "Kurultai", "b": "assembly that chose a khan"}, {"a": "Khan", "b": "ruler"}, {"a": "Ordu", "b": "camp, source of 'horde'"}]}
+!? The meaning of "Chinggis", usually written Genghis in English, is still debated: suggestions include "firm", "fierce" and "universal".
+His burial place was kept secret and has never been found. According to tradition, the ground was ridden over by horses to hide it.
+> Genghis Khan's first conquest was of the steppe itself: he turned quarrelling clans into one disciplined people.
 
-# São Mamede, 1128
-On 24 June 1128, near Guimarães, the young **Afonso Henriques**, then about 17–20 years old, beat the forces of his mother Teresa and her ally Fernão Peres de Trava. Teresa left for Galicia, where she died two years later.
-@viz {"k": "cmp", "l": {"t": "Afonso's side", "items": ["Portucale barons", "wanted autonomy"]}, "r": {"t": "Teresa's side", "items": ["Galician Travas", "closer to Galicia"]}}
-### Why it mattered
-It was a modest battle, but it put power in the hands of a ruler backed by the local nobility. From then on Afonso pushed for independence from León and expansion south against the Muslims.
-@viz {"k": "time", "events": [{"y": "1112", "l": "Henry dies"}, {"y": "1128", "l": "São Mamede"}, {"y": "1139", "l": "Ourique, uses 'king'"}, {"y": "1143", "l": "Zamora"}]}
-### The cradle
-Guimarães was the county's main seat. Its castle and the Palace of the Dukes of Braganza sit on the "sacred hill", and a section of the old town wall bears the words "Aqui nasceu Portugal", "Portugal was born here".
-• Afonso's exact birth year and place are uncertain; Guimarães, Viseu and Coimbra all claim him
-• Tradition says he was baptised in the small church of São Miguel by the castle
-!? A later legend says Afonso even chained up his mother; it's a chroniclers' story with little evidence.
-> At São Mamede a son beat his mother, and a county started on the road to being a kingdom.
+# Horse archers
+The Mongol bow was a composite: a wooden core, horn on the belly and sinew on the back, glued together and curved against its natural bend. That stored far more energy than a simple wooden bow of the same size, which mattered on horseback, where a long bow would be clumsy.
+@viz {"k": "cmp", "l": {"t": "Composite bow", "items": ["horn, wood, sinew", "short: fits a rider", "very powerful"]}, "r": {"t": "Simple wooden bow", "items": ["one piece of wood", "long to be strong", "awkward on a horse"]}}
+### Born in the saddle
+Mongol children learned to ride at about three or four and hunted from horseback as they grew. Great organised hunts, in which thousands of riders slowly closed a ring around game, trained the same skills as war: keeping formation over huge distances and closing in on command.
+### Tactics
+• Light cavalry harassed with arrows; heavier cavalry with lances finished the job
+• Flags, drums and later lanterns passed signals between units
+• The feigned retreat drew enemy knights out of formation, into waiting archers
+• Captured Chinese and Persian engineers built catapults for sieges
+@viz {"k": "flow", "steps": ["Arrows break ranks", "Fake retreat", "Enemy chases, spreads out", "Mongols turn and encircle"]}
+!! The Mongols won through huge numbers => They were often outnumbered; speed, discipline, scouting and planning mattered more
+!? A stone inscription from about 1225 records a shot by Genghis Khan's nephew of more than 500 m, though how it was measured is uncertain.
+> The horse archer turned the open steppe into a weapon: fast, hard to catch and able to strike from a distance.
 
-# Recognition: 1143 and 1179
-Medieval kingdoms needed recognition. After victories such as **Ourique** (1139), Afonso began calling himself king. In 1143, at Zamora, his cousin Alfonso VII of León, who called himself "emperor of Spain", accepted Afonso's royal title, with a papal envoy present.
-@viz {"k": "time", "events": [{"y": "1139", "l": "Ourique victory"}, {"y": "1143", "l": "Treaty of Zamora"}, {"y": "1169", "l": "Defeat at Badajoz"}, {"y": "1179", "l": "Pope confirms king"}]}
-### Going over León's head
-Afonso then declared himself a vassal of the Pope and promised an annual tribute of gold. This was clever: owing loyalty directly to Rome meant not owing it to León. The Popes delayed for decades, but in 1179 Alexander III issued the bull **Manifestis Probatum**, calling Afonso king and his land a kingdom.
-@viz {"k": "stack", "items": ["Pope: confirms 1179", "Afonso: vassal of Rome", "León: recognises 1143", "Barons: back Afonso"]}
-### Why the Pope agreed
-Afonso had proved useful: he had taken Lisbon and pushed far south against Muslim rulers, which the Church saw as a crusade. Money and military success made the case.
-!? The Treaty of Zamora is traditionally dated 5 October 1143, the same day of the year the Portuguese Republic was proclaimed in 1910.
-> Portugal became a kingdom in two steps: a neighbour's nod in 1143 and the Pope's seal in 1179.
+# An army on the move
+Each soldier was expected to bring his own horses, weapons and food. Officers inspected kit before campaigns, and a missing item could be punished. Because the horses grazed on grass, even in winter by pawing through snow, the army needed no fodder carts, though it did need good pasture and often campaigned in the seasons that offered it.
+### Planning ahead
+Campaigns were prepared years in advance. Merchants and spies gathered information on roads, rivers, rulers and rivalries, and scouts rode far ahead of the main army. Several columns would march separately over hundreds of kilometres and meet at an agreed place and time.
+@viz {"k": "flow", "steps": ["Spies and merchants report", "Scouts ride ahead", "Columns march apart", "They meet for battle"]}
+### Surrender or else
+The Mongols used terror as a weapon. Cities that surrendered usually paid tribute and were spared; cities that resisted could be destroyed and their people killed, as at Nishapur and Merv in 1221 and Baghdad in 1258. Reports of these massacres made other cities think twice.
+@viz {"k": "cmp", "l": {"t": "City surrenders", "items": ["pays tribute", "keeps its rulers", "craftsmen recruited"]}, "r": {"t": "City resists", "items": ["siege and sack", "mass killings", "used as a warning"]}}
+Skilled workers were often spared and sent east, which is how Persian weavers and Chinese engineers ended up far from home.
+!? In an emergency, a rider could open a small cut in his horse's vein, drink some blood and close it again, as Marco Polo and others reported.
+> Speed was the Mongols' secret weapon, and speed came from an army that carried almost nothing.
 
-# Moving south
-Expansion was both conquest and settlement. Kings granted land and charters (forais) to attract settlers, and military orders such as the Templars, Hospitallers and Order of Santiago held frontier castles.
-@viz {"k": "time", "events": [{"y": "1147", "l": "Santarém and Lisbon"}, {"y": "1165", "l": "Évora taken"}, {"y": "1249", "l": "Faro, Algarve"}, {"y": "1297", "l": "Alcañices border"}]}
-### Lisbon, 1147
-Santarém fell to a surprise night attack in March 1147. That summer, a fleet of crusaders from England, Flanders and Germany, sailing to the Holy Land, stopped in Porto and agreed to help. After a siege of about 17 weeks, Lisbon surrendered in October. The crusaders were paid in plunder, and some stayed.
-### Setbacks
-In 1169 Afonso was wounded and captured at Badajoz, and the Almohads fought back hard in the 1190s. It took four more kings to reach the coast of the Algarve: Afonso III took Faro in 1249.
-@viz {"k": "nums", "items": [{"v": "≈17 weeks", "l": "siege of Lisbon, 1147"}, {"v": "≈160", "l": "crusader ships"}, {"v": "102 years", "l": "from Lisbon to Faro"}]}
-### Fixed borders
-In 1297 King Dinis and Castile signed the Treaty of Alcañices. Portugal gained the Riba-Côa area, and the land border has barely moved since, apart from the disputed town of Olivença, taken by Spain in 1801.
-!? Portugal's land border with Spain is about 1,200 km long and one of the oldest stable borders in Europe.
-> In about 150 years Portugal reached the south coast, and then kept the same shape for more than seven centuries.
+# The largest land empire
+Genghis Khan's armies took northern China's capital, near today's Beijing, in 1215. After a Central Asian ruler killed Mongol envoys and merchants, they destroyed the Khwarazmian Empire in 1219–1221. His sons and grandsons kept going.
+@viz {"k": "time", "events": [{"y": "1215", "l": "Zhongdu (Beijing) falls"}, {"y": "1221", "l": "Khwarazm destroyed"}, {"y": "1240", "l": "Kyiv sacked"}, {"y": "1241", "l": "Poland and Hungary"}, {"y": "1258", "l": "Baghdad sacked"}]}
+### Europe's narrow escape
+In 1241 Mongol armies crushed a Polish-German force at Legnica and the Hungarian army at Mohi. Then they withdrew. News had arrived that the Great Khan Ögedei had died, and the princes rode home to choose a successor. Whether they would have pushed further west remains one of history's great "what ifs".
+### Where the advance stopped
+• 1260: defeated by the Mamluks of Egypt at Ain Jalut, in today's Israel
+• 1274 and 1281: two invasions of Japan wrecked by storms, later called kamikaze, "divine wind"
+• Jungle and heat in Vietnam and Java defeated steppe cavalry
+@viz {"k": "tree", "root": "Limits of conquest", "items": ["Mamluk Egypt", "Japan's storms", "Tropical jungles", "Death of khans"]}
+The human cost was enormous. Estimates of deaths caused by the conquests run into the tens of millions, though all such figures are uncertain.
+!! The Mongol Empire was bigger than any other ever => The British Empire was larger in total, but the Mongol Empire is the largest single unbroken land empire
+> A people of perhaps a million riders came to rule a huge part of Eurasia within about 70 years.
 
-# King Dinis
-Dom Dinis came to the throne in 1279 at 17. With the reconquest finished, he could focus on building the country. He was nicknamed **o Lavrador**, "the Farmer", and also "the Poet King".
-@viz {"k": "tree", "root": "Dinis's legacy", "items": ["Pine forest of Leiria", "University, 1290", "Portuguese in documents", "Order of Christ, 1319"]}
-### Order of Christ
-When the Pope dissolved the Templars in 1312, many kings seized their wealth. Dinis instead created a new order, the **Order of Christ**, in 1319, and handed it the Templars' castles and lands. A century later its money would help pay for Henry the Navigator's voyages, and its red cross flew on the sails.
-### Land and sea
-He set up fairs, protected farmers, rebuilt dozens of castles along the border and hired a Genoese admiral, Manuel Pessanha, in 1317 to organise a navy. The pine forest near Leiria held back moving sand dunes and later supplied timber for ships.
-@viz {"k": "pairs", "items": [{"a": "Pinhal de Leiria", "b": "stops dunes, gives timber"}, {"a": "Estudo Geral", "b": "Lisbon 1290, later Coimbra"}, {"a": "Order of Christ", "b": "Templars' wealth kept"}]}
-### A poet king
-Dinis wrote more than 130 songs (cantigas) in Galician-Portuguese, many of them love songs in a woman's voice. His wife, Isabel of Aragon, became a saint, the Rainha Santa of Coimbra.
-!? About 86% of the Pinhal de Leiria burned in the fires of October 2017; replanting is still under way.
-> Dinis turned a conquered territory into a working kingdom with its own language, schools and forests.
+# The yam relay
+The system was expanded and organised under Ögedei in the 1230s. Stations were set roughly a day's ride apart for ordinary travellers, with smaller posts in between for urgent riders. Local households were assigned to supply horses, food and labour, a heavy duty that was sometimes resented.
+### The paiza
+@viz {"k": "pairs", "items": [{"a": "Gold paiza", "b": "highest rank"}, {"a": "Silver paiza", "b": "senior officials"}, {"a": "Wood or iron", "b": "lesser errands"}]}
+A paiza was a metal or wooden tablet engraved with the khan's order. Its holder could demand horses, food and guides. In effect it was both a passport and a credit card, and misusing one was a serious crime.
+### How fast?
+Riders on urgent business wore bells so the next station could prepare a horse before they arrived. Reports suggest they could cover around 200 km or more in a day, though such figures are hard to check.
+@viz {"k": "nums", "items": [{"v": "~200 km+", "l": "urgent riders per day (reported)"}, {"v": "~40 km", "l": "between main stations (approx.)"}]}
+### More than mail
+The yam carried envoys, merchants with permits, tax records and military orders, and it let a khan in Mongolia keep track of governors thousands of kilometres away. Marco Polo described it with amazement, claiming there were tens of thousands of horses kept ready.
+!? The Russian word "yamshchik", a coachman, comes from the Mongol yam, and the Russian postal relay system long kept its outline.
+> The yam was the Mongol Empire's nervous system, carrying the khan's word across a continent.
 
-# The 1383–85 crisis
-King Fernando died in October 1383. His only heir was his daughter **Beatriz**, aged about 10 and married to Juan I of Castile. If she inherited, Portugal could become part of Castile. Fernando's widow, Leonor Teles, ruled as regent, influenced by a Galician noble, Count Andeiro.
-@viz {"k": "flow", "steps": ["Fernando dies, 1383", "Castile claims throne", "João kills Andeiro", "Lisbon besieged, 1384", "João crowned, 1385"]}
-### Who backed whom
-In December 1383 João, Master of the military Order of Avis and Fernando's half-brother born outside marriage, killed Andeiro in the palace. Lisbon's people rose in support. Much of the high nobility, however, sided with Castile.
-@viz {"k": "cmp", "l": {"t": "For João", "items": ["Lisbon, Porto", "merchants, craftsmen", "younger nobles"]}, "r": {"t": "For Castile", "items": ["many great nobles", "some castles"]}}
-### Holding on
-Castile besieged Lisbon by land and sea in 1384, but plague broke out in its camp and the army withdrew. Meanwhile the young commander Nuno Álvares Pereira won at Atoleiros in the Alentejo. In April 1385 the Cortes in Coimbra chose João as king, after the lawyer João das Regras argued that the throne was vacant.
-!? Most of what we know comes from Fernão Lopes, a royal chronicler writing about 50 years later, who gave unusual attention to ordinary townspeople.
-> The crisis turned a succession quarrel into the first moment of Portuguese national identity.
+# Pax Mongolica
+The khans actively favoured trade. They lent money to merchant partnerships, cut tolls on main routes and protected caravans. In return, trade brought in taxes and luxury goods for the Mongol elite.
+### Who travelled
+• Franciscan friars sent by the Pope, such as John of Plano Carpini (1245) and William of Rubruck (1253)
+• Rabban Bar Sauma, a Christian monk from China, who visited Rome, Paris and the English king in the 1280s
+• Merchants from Venice and Genoa
+• Muslim scholars, doctors and administrators in China
+@viz {"k": "cmp", "l": {"t": "Went west", "items": ["printing know-how", "gunpowder", "Chinese medicine"]}, "r": {"t": "Went east", "items": ["Persian astronomy", "cobalt blue pigment", "Islamic maps"]}}
+### Ideas in motion
+In 1267 the Persian astronomer Jamal al-Din brought instruments and calendars to Kublai Khan. In Persia, the minister Rashid al-Din, a Jewish-born convert to Islam, compiled a *Compendium of Chronicles* with the help of Chinese, Mongol and European informants, often called the first attempt at a history of the whole world.
+!? William of Rubruck described a religious debate in 1254 at the Mongol capital, Karakorum, between Christians, Muslims and Buddhists, organised by the Great Khan Möngke.
+@viz {"k": "pairs", "items": [{"a": "Paper money", "b": "Yuan China, widely used"}, {"a": "Persia, 1294", "b": "paper money fails in weeks"}, {"a": "Persian cobalt", "b": "blue-and-white porcelain"}]}
+Ordinary people felt the effects too. Spices, silks and cotton became more widely available in Persian and Italian markets, and Italian merchants wrote handbooks for the long journey east, listing routes, costs and how to change money along the way.
+> The Mongols conquered with great brutality, then made Eurasia's trade routes safer than they had ever been.
 
-# Aljubarrota, 1385
-Juan I of Castile invaded with a large army, including heavy French cavalry. João I and Nuno Álvares chose to wait for them on ground they had picked, near Aljubarrota, between Leiria and Alcobaça.
-@viz {"k": "nums", "items": [{"v": "≈6,500", "l": "Portuguese and English"}, {"v": "≈20,000+", "l": "Castilians and French"}, {"v": "< 1 hour", "l": "main fighting"}]}
-### Defensive tactics
-The Portuguese stood on foot on a small plateau, with streams protecting the flanks. In front they dug ditches and hidden pits, and English archers shot from the sides. These were the same ideas the English used against the French at Crécy and Poitiers.
-@viz {"k": "stack", "items": ["Archers on the wings", "Infantry square, on foot", "Ditches and hidden pits", "Narrow front, stream flanks"]}
-The Castilian army arrived tired, late in the afternoon of 14 August, and attacked a narrow front. Charging knights fell into the ditches and were cut down. Juan I fled to Santarém and then by sea to Seville.
-!! Brites de Almeida killed seven Castilians with her baker's shovel => It's a much-loved later legend, not a documented event
-!? Numbers for both armies are estimates from chroniclers; historians agree only that Portugal was heavily outnumbered.
-> At Aljubarrota good ground and discipline beat sheer numbers, and Portugal stayed independent.
+# Kublai Khan
+Kublai's claim to the throne was contested by his younger brother Ariq Böke, who had the support of many traditional Mongols. Kublai won the civil war in 1264, but parts of the family never accepted him, and the empire began to split.
+### A Mongol emperor of China
+Kublai adopted Chinese court rituals and gave his dynasty a Chinese name, Yuan, meaning "origin". He kept the Mongols on top, however, ranking his subjects in an unofficial hierarchy.
+@viz {"k": "stack", "items": ["Mongols", "Central Asians and others", "Northern Chinese", "Southern Chinese"]}
+### Two capitals
+Dadu was the winter capital, built on a grand grid plan. Shangdu, the summer capital on the steppe to the north, was known in the West as Xanadu and became a byword for fabulous luxury.
+### Projects and failures
+• Extended the Grand Canal to supply Dadu with rice from the south
+• Commissioned a new script for all the empire's languages, the 'Phags-pa script, in 1269
+• Two invasions of Japan, in 1274 and 1281, ended in disaster
+• Expeditions to Vietnam and Java also failed
+@viz {"k": "cmp", "l": {"t": "Successes", "items": ["unified China", "Grand Canal extended", "trade flourished"]}, "r": {"t": "Failures", "items": ["Japan invasions", "Vietnam and Java", "costly inflation"]}}
+After Kublai, the Yuan weakened through floods, famine, inflation of paper money and rebellions. In 1368 the Ming drove the Mongols back to the steppe.
+!! The Yuan were a foreign dynasty China rejected entirely => China kept much of the Yuan's legacy, including Beijing as capital and the province system
+> Kublai Khan was both a Mongol conqueror and a Chinese emperor, and his capital is still China's capital.
 
-# Batalha monastery
-João I had vowed to build a monastery to the Virgin if he won. Work began in 1386 at a site a few kilometres from the battlefield, and the town that grew around it took the name **Batalha**, simply "battle".
-@viz {"k": "time", "events": [{"y": "1386", "l": "Building begins"}, {"y": "1430s", "l": "Founder's Chapel"}, {"y": "c. 1510", "l": "Manueline portal"}, {"y": "1983", "l": "UNESCO listing"}]}
-### Highlights
-@viz {"k": "pairs", "items": [{"a": "Founder's Chapel", "b": "tombs of João and Philippa"}, {"a": "Chapter House", "b": "vast vault, no pillar"}, {"a": "Unfinished Chapels", "b": "roofless, Manueline"}, {"a": "Royal Cloister", "b": "Gothic + Manueline lace"}]}
-The Chapter House roof is a star vault about 19 m across with no central support. Legend says the architect, Afonso Domingues, now blind, sat under it for three days to prove it would not fall. It now holds the tomb of Portugal's Unknown Soldiers from the First World War, with a guard of honour.
-### Unfinished forever
-King Duarte began a second burial chapel, but later kings moved their money and attention to the Jerónimos in Lisbon. So the Unfinished Chapels still stand open to the sky, with huge carved Manueline doorways.
-!? Henry the Navigator and his brothers lie in the Founder's Chapel, beside their parents.
-> Batalha is a battle turned into stone: a thank-you that took more than a century to build.
+# Marco Polo
+Marco's father Niccolò and uncle Maffeo had already met Kublai on an earlier trip. The khan asked them to come back with Christian scholars. They returned in 1271 with the teenage Marco instead, travelling overland through Persia and Central Asia.
+### What he described
+@viz {"k": "pairs", "items": [{"a": "Paper money", "b": "printed from mulberry bark"}, {"a": "Black stones", "b": "coal, used for heating"}, {"a": "Quinsai", "b": "Hangzhou, a vast city"}, {"a": "The yam", "b": "post-horse relay"}]}
+According to his account he served the khan on missions around the empire. The family finally left by sea, escorting a Mongol princess to marry the ruler of Persia, and reached Venice in 1295 after about 24 years away.
+### Did he really go?
+Some scholars have doubted it. Chinese records do not mention him, and his book says nothing of tea, chopsticks or the Great Wall. But most historians now think he did go, because many details check out, such as the salt tax figures, paper money and the princess's voyage, which matches Persian records.
+@viz {"k": "cmp", "l": {"t": "Reasons to doubt", "items": ["not in Chinese records", "no tea, no Great Wall", "some exaggeration"]}, "r": {"t": "Reasons to believe", "items": ["accurate details", "princess voyage fits", "coins and taxes right"]}}
+### A best-seller before printing
+The book was copied by hand into Latin, French, Italian and other languages, and about 150 manuscripts survive, each slightly different. Many readers treated it as a collection of tall tales, and in Italian it was nicknamed *Il Milione*, perhaps mocking its "million" marvels.
+!? Christopher Columbus owned a copy of Marco Polo's book and filled its margins with notes. It is still kept in Seville.
+> Marco Polo's book gave Europe its first detailed picture of China, and inspired explorers looking for a way to reach it by sea.
 
-# The oldest alliance
-Portugal and England first made an alliance in 1373. After Aljubarrota, where English archers had fought, they signed the **Treaty of Windsor** on 9 May 1386, promising "perpetual friendship" and mutual help.
-@viz {"k": "time", "events": [{"y": "1386", "l": "Treaty of Windsor"}, {"y": "1387", "l": "João weds Philippa"}, {"y": "1808", "l": "British fight Napoleon"}, {"y": "1943", "l": "Azores bases for Allies"}]}
-### A royal marriage
-In 1387 João I married **Philippa of Lancaster**, daughter of John of Gaunt, in Porto Cathedral. She brought English courtiers and customs. Their children, later called the "Ínclita Geração" (illustrious generation), included King Duarte, Prince Pedro and Prince Henry.
-### Using it
-The alliance had rough patches, like Britain's 1890 ultimatum over African territory, which caused outrage in Portugal. But it has been invoked many times.
-@viz {"k": "list", "items": ["Peninsular War, 1808–1814", "First World War", "Azores bases, 1943", "Still cited by both governments"]}
-!? In 1943 neutral Portugal let the Allies use bases in the Azores, citing the old alliance; the Lajes base is still used by the US today.
-> A treaty signed after a medieval battle still links Lisbon and London more than 600 years later.
+# Plague on the trade routes
+In 2022 scientists studied DNA from people buried in 1338–1339 in two Christian cemeteries near Lake Issyk-Kul, in today's Kyrgyzstan. Their gravestones mention a "pestilence", and the bacteria found were close to the ancestor of the Black Death strains. The disease almost certainly started in wild rodents in this region.
+@viz {"k": "nums", "items": [{"v": "1338", "l": "earliest dated victims"}, {"v": "~5,000 km", "l": "to Crimea (approx.)"}]}
+### The siege of Caffa
+In 1346 a Golden Horde army besieged the Genoese trading port of Caffa in Crimea. An Italian writer, who was not there himself, claimed the attackers catapulted corpses over the walls to spread the disease. Whether or not that happened, Genoese ships leaving Caffa and other Black Sea ports carried infected rats, fleas and people.
+!! The Mongols started the Black Death on purpose => Even if bodies were thrown at Caffa, plague spread along many routes with rodents, fleas and travellers
+### A shock to the Mongol world
+@viz {"k": "list", "items": ["Cities of the Golden Horde hit", "Egypt and Syria devastated", "Caravan trade collapses", "Khanates weakened"]}
+The plague killed huge numbers in the Middle East and the Mongol lands, not only in Europe. Trade fell, tax income shrank, and the open routes of the Pax Mongolica closed as the khanates fought each other and broke up.
+Historians still debate whether the plague also struck China in the 1330s and 1340s. Chinese records describe terrible epidemics in those years, but they do not say clearly which disease it was.
+> The connected world the Mongols created carried disease as easily as silk.
 
-# The Avis dynasty
-The House of Avis ruled from 1385 to 1580. With peace with Castile signed in 1411, Portugal's kings, short of land to conquer at home, looked overseas for gold, trade and crusading glory.
-@viz {"k": "time", "events": [{"y": "1415", "l": "Ceuta"}, {"y": "1419", "l": "Madeira"}, {"y": "1434", "l": "Cape Bojador"}, {"y": "1488", "l": "Good Hope"}, {"y": "1498", "l": "India"}]}
-### Why go?
-@viz {"k": "tree", "root": "Reasons to sail", "items": ["African gold and slaves", "Spices without middlemen", "Fight Islam, find allies", "Jobs for nobles"]}
-Ceuta, captured in 1415, was a rich Moroccan port. It turned out to be costly to hold, but it showed what the sea could offer. Henry the Navigator then sponsored voyages down Africa's coast, and Madeira and the Azores were settled. A darker side began early: by the 1440s Portuguese ships were bringing enslaved Africans to Lagos.
-### The end
-The dynasty ended in tragedy. King Sebastião died at Alcácer Quibir in Morocco in 1578, without an heir. His elderly great-uncle, Cardinal Henrique, reigned briefly, and in 1580 Philip II of Spain took the throne.
-!! Henry the Navigator ran a school of navigation at Sagres => He rarely went to sea himself, and the "school of Sagres" is a later myth; he organised and paid for voyages
-> The Avis kings turned a small kingdom into the first global sea power.
+# Break-up and legacy
+Each khanate adapted to the people it ruled. The Ilkhans of Persia became Muslims after Ghazan converted in 1295, and the Golden Horde followed under Özbeg in the early 1300s. The Yuan in China leaned towards Tibetan Buddhism.
+@viz {"k": "time", "events": [{"y": "1335", "l": "Ilkhanate collapses"}, {"y": "1368", "l": "Yuan driven from China"}, {"y": "1480", "l": "Moscow ends Horde rule"}, {"y": "1526", "l": "Mughal Empire founded"}]}
+### Successor states
+• Timur (Tamerlane) built a new empire in Central Asia in the late 1300s, claiming Mongol links
+• Babur, descended from both Timur and Genghis Khan, founded the Mughal Empire in India; "Mughal" means Mongol
+• The Crimean Khanate, a Golden Horde successor, lasted until 1783
+### What remained
+Moscow rose as tax collector for the Golden Horde before throwing it off. Beijing stayed China's capital. Iran's Ilkhans encouraged Persian painting and history writing.
+@viz {"k": "list", "items": ["Beijing as China's capital", "The rise of Moscow", "Trade and ideas across Eurasia", "Words like 'horde'"]}
+!? A 2003 genetic study suggested that about 0.5% of men worldwide share a Y-chromosome lineage that may trace back to Genghis Khan's family, though the link is debated.
+In Mongolia today Genghis Khan is a national hero, on banknotes and the airport's name, while in Iran, Russia and China he is remembered far more darkly.
+The Mongols also left new administrative habits behind: censuses, relay posts and the use of paper money spread through the lands they had ruled, and China's system of provinces dates from the Yuan.
+> The Mongol Empire lasted barely a century as one state, but it rewired Eurasia for centuries afterwards.
+
+== hi-americas
+
+# Built on maize and potatoes
+Maize descends from teosinte, a wild grass of the Balsas river valley in south-west Mexico. About 9,000 years ago people began choosing seeds from the best plants. The earliest cobs were only a few centimetres long; over thousands of years farmers bred them into large ears that cannot even seed themselves without human help.
+@viz {"k": "flow", "steps": ["Wild teosinte", "Farmers pick best seeds", "Bigger cobs", "Modern maize"]}
+### The three sisters
+Mesoamerican farmers often grew maize, beans and squash together in a field called a milpa. The maize stalk supports the climbing beans, the beans add nitrogen to the soil, and squash leaves shade out weeds and keep moisture in.
+### Cooking with lime
+Maize was soaked and cooked with lime or wood ash, a process now called **nixtamalisation**. It softens the grain for tortillas and releases niacin, a B vitamin. When maize spread to Europe without this step, poor people who lived mainly on it developed a disease called pellagra.
+### Potatoes of the Andes
+Potatoes were domesticated near Lake Titicaca, on today's border of Peru and Bolivia, perhaps 7,000–10,000 years ago. Andean farmers grow thousands of varieties at different altitudes. They also invented chuño: potatoes frozen at night, trodden to squeeze out water and dried in the sun, which keeps for years.
+@viz {"k": "nums", "items": [{"v": "~9,000", "l": "years since maize began"}, {"v": "4,000+", "l": "native potato varieties"}]}
+!? In the Maya creation story, the *Popol Vuh*, the gods finally succeed in making human beings out of maize dough.
+> Every great American civilisation rested on a crop that farmers had spent thousands of years shaping.
+
+# Maya cities
+Maya cities were not packed inside walls like European towns. A ceremonial centre of temples and palaces was surrounded by houses, gardens, fields and reservoirs spreading over many square kilometres.
+### Hidden by the forest
+In 2018 archaeologists used **lidar**, laser scanning from aircraft, to look through the forest of northern Guatemala. It revealed more than 60,000 previously unknown structures: houses, causeways, terraces, canals and defensive walls. Population estimates for the Maya lowlands at their peak rose to several million people.
+@viz {"k": "pairs", "items": [{"a": "Tikal", "b": "Guatemala, Temple IV ~65 m"}, {"a": "Palenque", "b": "Mexico, King Pakal's tomb"}, {"a": "Copán", "b": "Honduras, carved stelae"}, {"a": "Chichén Itzá", "b": "Yucatán, later city"}]}
+### The ballgame
+Almost every city had a ball court. Players kept a heavy solid rubber ball in the air using their hips, never their hands. The game could be sport, ritual or both, and sometimes ended in sacrifice. Mesoamericans were making rubber from tree sap thousands of years before Europeans.
+### The Classic collapse
+In the 800s and 900s, many southern cities were abandoned. Lake sediments show a series of severe droughts, which came on top of warfare between cities, deforestation and growing populations. Northern cities such as Chichén Itzá flourished for a while longer.
+@viz {"k": "list", "items": ["Repeated severe droughts", "Endless wars between cities", "Forest cleared, soil eroded", "Kings lose authority"]}
+!! The Maya disappeared => Cities were abandoned, but the people stayed; millions of Maya live in the region today
+> The Maya world was a network of rival cities, much like ancient Greece, set in tropical forest.
+
+# Maya writing
+Maya scribes could write the same word in several ways: with one word sign, with syllable signs spelling it out, or with a mixture. This flexibility made the script beautiful but hard to crack.
+### Burned books
+Maya books, called codices, were folded screens of bark paper coated with fine plaster. Spanish missionaries saw them as works of idolatry. In 1562, at Maní in Yucatán, the friar Diego de Landa burned dozens of them.
+@viz {"k": "list", "items": ["Dresden Codex", "Madrid Codex", "Paris Codex", "Maya Codex of Mexico"]}
+Only four codices are known to survive, named after the cities where they ended up. The fourth, in Mexico, was confirmed as genuine in 2016.
+### Cracking the code
+• 1950s: the Soviet scholar Yuri Knorozov argued many signs stood for syllables
+• 1960: Tatiana Proskouriakoff showed that monuments recorded the lives of real rulers
+• 1970s onwards: teams worked out the dynasties of Palenque and other cities
+@viz {"k": "time", "events": [{"y": "1562", "l": "Landa burns codices"}, {"y": "1952", "l": "Knorozov: syllables"}, {"y": "1960", "l": "Inscriptions = history"}, {"y": "Today", "l": "Most texts readable"}]}
+### Who wrote
+Scribes were high-ranking specialists, sometimes members of royal families, and painted vases show them at work with brushes and shell ink pots. Texts were meant to be seen as well as read: on a single monument, carving and writing form one design.
+!? Landa, who burned the books, also wrote down what he thought was the Maya "alphabet". It was confused, but it later gave decipherers a vital clue.
+> Maya inscriptions turned silent ruins into history, with names, dates and quarrels of real kings.
+
+# The Long Count and zero
+The Maya tracked time with interlocking cycles. A sacred calendar of 260 days ran alongside a solar year of 365 days. The two came back into line only every 52 years, a period known as the Calendar Round.
+@viz {"k": "cycle", "steps": ["260-day sacred count", "365-day solar year", "Both realign", "Every 52 years"]}
+### How the Long Count works
+The Long Count counted days in place-value units, mostly in twenties. A date was written as five numbers, largest unit first.
+• k'in: 1 day
+• winal: 20 days
+• tun: 360 days
+• k'atun: 7,200 days, about 20 years
+• b'ak'tun: 144,000 days, about 394 years
+ex: Date 9.12.11.5.18 | 9×144,000 + 12×7,200 + 11×360 + 5×20 + 18 | = 1,386,478 days since the start, a date in 683 CE
+### Zero
+A place-value system needs a sign for "nothing in this place". The oldest known Long Count dates, from the 1st century BCE in southern Mexico, already imply a zero. Only a few cultures, including Babylon and India, ever invented such a placeholder.
+!! The Maya predicted the end of the world in 2012 => 21 December 2012 simply completed a large cycle of 13 b'ak'tun; Maya texts mention dates thousands of years later
+@viz {"k": "nums", "items": [{"v": "584", "l": "days: Maya Venus cycle"}, {"v": "583.9", "l": "days: modern value"}]}
+> Maya astronomers built a calendar of astonishing precision, with a zero at its heart.
+
+# Tenochtitlan
+According to legend, the Mexica were told to settle where they saw an eagle on a cactus eating a snake. That scene is now on the flag of Mexico. In 1428 Tenochtitlan joined two neighbouring cities in a Triple Alliance that came to dominate central Mexico, collecting tribute from hundreds of towns.
+### A city on water
+• Three causeways linked the island to the shore
+• An aqueduct brought fresh water from springs at Chapultepec
+• Canals served as streets for thousands of canoes
+• The Templo Mayor, a double pyramid, stood at the centre
+@viz {"k": "stack", "items": ["Crops: maize, beans, flowers", "Rich lake mud", "Mats of reeds and plants", "Shallow lake bed"]}
+### How chinampas worked
+Farmers staked out long rectangles in the shallow lake, piled up layers of vegetation and mud, and planted willow trees at the edges whose roots held the soil. Canals kept the fields watered and brought fresh mud. Seedlings were raised in nurseries and transplanted.
+### Sacrifice and markets
+The Mexica believed the gods needed human blood to keep the sun moving, and they sacrificed prisoners of war. Excavations since 2015 near the Templo Mayor have uncovered racks and towers holding hundreds of skulls. Yet daily life centred on trade: Cortés wrote that the market of Tlatelolco drew tens of thousands of people a day, using cacao beans as small change.
+@viz {"k": "pairs", "items": [{"a": "Cacao beans", "b": "small change"}, {"a": "Cotton cloaks", "b": "bigger payments"}, {"a": "Tribute", "b": "feathers, gold, maize"}]}
+!? Chinampas are still farmed at Xochimilco in Mexico City, a UNESCO World Heritage site, while the rest of the city sits on the drained lake bed and is slowly sinking.
+> Tenochtitlan was one of the world's great cities, built on water and fed by fields made by hand.
+
+# The Inca road network
+The Inca called their empire Tawantinsuyu, "the four parts together". It expanded rapidly from the 1430s under Pachacuti and his successors, absorbing many peoples in less than a century.
+### Roads through the mountains
+The road system, the Qhapaq Ñan, had two main routes, one in the highlands and one along the coast, linked by cross-roads. Builders cut stairways into cliffs, paved wet ground and built drainage channels. Since 2014 it has been a UNESCO World Heritage site shared by Peru, Ecuador, Bolivia, Colombia, Chile and Argentina.
+@viz {"k": "pairs", "items": [{"a": "Chasqui", "b": "relay runner"}, {"a": "Tambo", "b": "way station with stores"}, {"a": "Mit'a", "b": "labour owed to the state"}]}
+### Runners and storehouses
+Chasqui runners waited at small posts a few kilometres apart and ran messages, quipus and light goods to the next post. Spanish chroniclers wrote that fresh fish could reach Cusco from the coast in about two days. Tambos along the roads stored food, cloth and weapons for travelling armies and officials.
+### Grass bridges
+Over deep gorges, villagers wove suspension bridges from grass ropes. Each community was responsible for its own bridge.
+@viz {"k": "flow", "steps": ["Families twist grass cord", "Cords braided into cables", "Cables stretched over gorge", "Deck and handrails woven"]}
+!? The Q'eswachaka bridge in southern Peru is still rewoven by local communities every year in a few days, a tradition recognised by UNESCO.
+> The Inca ran an empire without money, wheels or writing, held together by roads, runners and labour.
+
+# Quipu: knots that count
+A quipu usually has a thick main cord with dozens or even hundreds of thinner cords hanging from it, made of cotton or llama and alpaca wool. Specialists called quipucamayocs made and read them, and could report figures to officials from memory with their help.
+### Reading the numbers
+Knots near the bottom of a cord are units, higher up are tens, then hundreds. An empty space means zero. Long knots with several turns show units from 2 to 9.
+ex: Top cluster: 3 single knots = 300 | Middle: no knot = 0 tens | Bottom: long knot of 5 turns = 5 | Cord reads 305
+@viz {"k": "terms", "f": "3 · 0 · 5 = 305", "items": [{"s": "3", "m": "knots at hundreds"}, {"s": "0", "m": "empty tens place"}, {"s": "5", "m": "long knot of 5 turns"}]}
+### Cracked and uncracked
+In 1912 the American scholar Leland Locke showed how quipus record numbers. Some cords add up to totals on other cords, like a spreadsheet. But some quipus do not fit a simple numerical pattern, and several researchers think they may hold names or stories.
+@viz {"k": "cmp", "l": {"t": "Understood", "items": ["base-ten numbers", "totals and subtotals", "census and tribute"]}, "r": {"t": "Still debated", "items": ["names of places?", "histories?", "colour meanings"]}}
+About 1,000 quipus survive, many in museums. In 1583 a church council in Lima ordered some to be destroyed as idolatrous.
+!? Some Andean villages still keep old quipus and bring them out at community ceremonies, though the knowledge to read them fully has been lost.
+> Quipus show that a state can keep detailed accounts with string, and they still hold secrets.
+
+# Machu Picchu
+The site was a retreat for the emperor and his court, with temples, palaces, houses for servants and about 200 buildings in all. Perhaps several hundred people lived there, rising to more when the ruler visited. Radiocarbon dating published in 2021 suggests it was in use from about 1420, a little earlier than once thought.
+### Stone without mortar
+The finest walls are made of granite blocks cut to fit so tightly that a knife blade will not slip between them. In an earthquake the blocks shift slightly and settle back, which is one reason the walls still stand in a seismic zone.
+@viz {"k": "cmp", "l": {"t": "Fine ashlar", "items": ["temples, palaces", "blocks fit exactly", "no mortar"]}, "r": {"t": "Rough stone", "items": ["houses, terraces", "clay mortar", "quicker to build"]}}
+### Engineering hidden below
+• Terraces held up the steep slopes and gave space for crops
+• Layers of stone and gravel under them drained the heavy rain
+• Stone channels carried spring water to a chain of fountains
+@viz {"k": "stack", "items": ["Topsoil for crops", "Sand and gravel", "Rubble drainage layer", "Stone retaining wall"]}
+### Lost city?
+Bingham presented it as a "lost city", but farmers were living and working on the terraces when he arrived, and a local farmer had written his name on a wall in 1902.
+!! Machu Picchu is the ancient name of the site => Researchers have argued from old documents that the Inca probably called it Huayna Picchu, after the nearby peak
+> Machu Picchu survived because the conquerors never found it, and today its biggest challenge is the number of visitors.
+
+# Conquest and epidemics
+Cortés landed in 1519 with about 500 soldiers. He was helped by Malintzin, a Nahua woman who became his interpreter and adviser, and by the Tlaxcalans, enemies of the Mexica, who supplied tens of thousands of warriors. The final siege of Tenochtitlan in 1521 was fought mostly by indigenous armies.
+### Disease ahead of the soldiers
+People in the Americas had never been exposed to smallpox, measles or influenza, so they had no immunity. Smallpox struck Tenochtitlan in 1520 and killed the new Aztec ruler, Cuitláhuac. It reached the Andes even before the Spanish did, killing the Inca ruler Huayna Capac around 1527 and probably his heir.
+@viz {"k": "flow", "steps": ["Inca ruler dies of smallpox", "Two sons fight a civil war", "Atahualpa wins", "Pizarro arrives, 1532"]}
+### Cajamarca
+At Cajamarca in 1532 Pizarro, with fewer than 200 men, ambushed Atahualpa's escort and took him prisoner. Atahualpa filled a room with gold and silver as ransom, but was executed in 1533. Inca resistance continued from Vilcabamba until 1572; the last independent Maya kingdom fell only in 1697.
+### The great dying
+@viz {"k": "bars", "unit": "central Mexico population, millions (est.)", "items": [{"l": "1519", "v": 20.0, "t": "~15–25"}, {"l": "~1600", "v": 1.5, "t": "~1–2", "hi": true}]}
+Repeated epidemics over the 1500s, including the mysterious cocoliztli of 1545 and 1576, cut native populations by perhaps 80–90% in many regions. The figures are estimates and debated, but the catastrophe is not.
+!! A few hundred Spaniards defeated empires alone => Indigenous allies did most of the fighting, and epidemics had already shattered both empires
+> The conquest of the Americas was decided as much by germs and local alliances as by Spanish weapons.
+
+# Legacy today
+Quechua, the language of the Inca administration, is the most widely spoken indigenous language family in the Americas and has official status in Peru and Bolivia. In Guatemala, people of Maya descent make up a large part of the population, and about 30 Maya languages are still spoken across the region.
+### Words we borrowed
+@viz {"k": "cmp", "l": {"t": "From Nahuatl", "items": ["tomato, chocolate", "avocado, chilli", "coyote"]}, "r": {"t": "From Quechua", "items": ["llama, puma", "condor", "jerky (ch'arki)"]}}
+### Traditions that blended
+• The Day of the Dead in Mexico mixes indigenous and Catholic customs, and is UNESCO-listed
+• Inti Raymi, the Inca festival of the sun, has been re-enacted in Cusco every June since 1944
+• Milpa farming of maize, beans and squash continues across Central America
+### Rediscovering the past
+Archaeology keeps changing the picture. In 1978 electricity workers digging in central Mexico City struck a huge carved stone of the goddess Coyolxauhqui, leading to the excavation of the Templo Mayor. Lidar surveys keep finding new Maya settlements under the forest.
+@viz {"k": "list", "items": ["Templo Mayor found, 1978", "Maya script largely read", "Lidar maps hidden cities", "Ancient DNA traces migrations"]}
+Indigenous peoples across the region also face poverty, discrimination and pressure on their land, and many communities campaign to keep their languages taught in schools and used in public life.
+!? Mexico's national flag shows the eagle and cactus from the founding legend of Tenochtitlan, and Peru's tourism draws heavily on Inca sites.
+> The Maya, Aztec and Inca worlds live on in languages, foods, festivals and the faces of millions of their descendants.
 
 == hi-renaissance
 
@@ -2324,148 +2507,6 @@ Russia's invasion of Ukraine in 2022 revived Cold War-style tensions: sanctions,
 @viz {"k": "list", "items": ["Divided Korea", "NATO enlarged", "Arms treaties lapsed", "War in Ukraine"]}
 > The Cold War is over, but its technologies, alliances and unfinished conflicts still shape daily life.
 !! The internet was designed to survive a nuclear war => ARPANET was built to share computers; survivability research only influenced it
-
-== hi-pt20
-
-# Life under the Estado Novo
-António de Oliveira Salazar, an economics professor, became finance minister in 1928 and prime minister in 1932. His 1933 constitution created the **Estado Novo** ("New State"), which lasted until 1974, one of Europe's longest dictatorships.
-@viz {"k": "stack", "items": ["Salazar: unchallenged leader", "Single party: União Nacional", "PIDE, censors, Legion", "Church, Mocidade, family"]}
-### How control worked
-• Censors with the famous "blue pencil" cut newspapers, books, films and songs
-• The PIDE political police used informers, torture and the Tarrafal prison camp in Cape Verde
-• Elections were held, but the opposition was harassed and the results managed
-• Strikes were illegal; workers and bosses were organised in state "corporations"
-### A poor country
-Salazar balanced the budget and kept Portugal out of the Second World War, but he distrusted industry and mass education. Most people lived from small farms; many homes had no electricity or running water.
-@viz {"k": "bars", "unit": "infant deaths per 1,000 births", "items": [{"l": "Portugal 1960", "v": 78.0, "hi": true}, {"l": "Portugal 2023", "v": 2.5}]}
-@viz {"k": "nums", "items": [{"v": "~1/3", "l": "adults illiterate, 1960"}, {"v": "41 years", "l": "Estado Novo, 1933–74"}, {"v": "36 years", "l": "Salazar as PM"}]}
-Women's lives were tightly limited: a married woman needed her husband's permission for some jobs and to travel abroad, and nurses and air hostesses long faced marriage restrictions.
-> The Estado Novo bought stability with silence: no free press, no free parties and very little change.
-!? Opponents later summed up the regime's popular culture as the "three Fs": Fado, Fátima and Futebol.
-
-# Emigration
-Portugal had always sent people abroad, mostly to Brazil. After about 1960 the flow turned to Europe, where France and West Germany were booming and short of workers. Between 1960 and 1974 roughly 1.5 million Portuguese left, out of a population of under 9 million.
-@viz {"k": "flow", "steps": ["Rural poverty", "Fear of 4 years at war", "Cross the border 'a salto'", "Factory or building job"]}
-### Leaving "a salto"
-The state limited legal emigration, so many people went clandestinely. They paid smugglers ("passadores") to guide them on foot over the mountains into Spain and across the Pyrenees into France. Young men also fled to avoid being sent to fight in Africa.
-### Life abroad
-Many first lived in shanty towns, such as the bidonville at Champigny-sur-Marne near Paris, and worked in construction, factories and cleaning. They sent money home, and built houses in their villages that you can still spot today.
-@viz {"k": "pairs", "items": [{"a": "France", "b": "largest destination"}, {"a": "West Germany", "b": "factories, from the 1960s"}, {"a": "Luxembourg", "b": "~1 in 7 residents today"}, {"a": "Brazil, USA", "b": "older routes"}]}
-@viz {"k": "cmp", "l": {"t": "Costs", "items": ["emptying villages", "split families"]}, "r": {"t": "Benefits", "items": ["remittances home", "new skills, ideas"]}}
-> Emigration was the Portuguese people's own way out of poverty and war when the regime offered neither.
-!? Every August, emigrants returning home on holiday became so visible that the month's festivals in northern villages still revolve around "os emigrantes".
-
-# The colonial wars
-While Britain and France were giving up their African colonies, Salazar insisted that Angola, Mozambique and Guinea were "overseas provinces" of one nation "from Minho to Timor". Independence movements, blocked from peaceful change, took up arms.
-@viz {"k": "time", "events": [{"y": "1961", "l": "War in Angola"}, {"y": "1961", "l": "India takes Goa"}, {"y": "1963", "l": "War in Guinea"}, {"y": "1964", "l": "War in Mozambique"}, {"y": "1974", "l": "Revolution ends wars"}]}
-### Three fronts
-@viz {"k": "pairs", "items": [{"a": "Angola", "b": "MPLA, FNLA, UNITA"}, {"a": "Guinea-Bissau", "b": "PAIGC (Amílcar Cabral)"}, {"a": "Mozambique", "b": "FRELIMO"}]}
-Guinea was the hardest front: by the early 1970s the PAIGC controlled much of the countryside. Fighting was mostly guerrilla war: ambushes, mines and raids, with napalm and forced resettlement of villagers on the Portuguese side. Massacres such as Wiriyamu in Mozambique (1972) were exposed abroad.
-### The cost
-@viz {"k": "nums", "items": [{"v": "~800,000", "l": "Portuguese men served"}, {"v": "~9,000", "l": "Portuguese soldiers died"}, {"v": "up to 40%", "l": "of the state budget"}]}
-Conscripts served up to four years. Tens of thousands came back wounded or with lasting trauma, long rarely discussed. African deaths, among fighters and civilians, were far higher, though exact numbers are uncertain.
-> The colonial wars drained Portugal's money and young men, and the soldiers who fought them ended up overthrowing the regime.
-!! The wars were far away and barely touched daily life => Almost every family had a son, brother or husband in Africa
-
-# Humberto Delgado
-Humberto Delgado was an air force general who had served the regime loyally. He had lived in the USA and Canada and came back convinced that Portugal needed democracy. In 1958 he stood for president against the regime's candidate, Admiral Américo Tomás.
-### "Obviously, I'll sack him"
-At a press conference in Lisbon's Café Chave d'Ouro on 10 May 1958, a journalist asked what he would do with Salazar if elected. His answer, "Obviamente, demito-o!", electrified the country. Huge crowds greeted him in Porto and Lisbon, and police charged the crowds.
-@viz {"k": "flow", "steps": ["Joins opposition, 1958", "Huge rallies", "Rigged vote: ~25%", "Exile in Brazil", "Killed by PIDE, 1965"]}
-### Fraud and exile
-The official result gave Delgado about a quarter of the vote. Most historians think the real result was much closer, but there was no free count. Afterwards the regime ended direct presidential elections. Delgado sought asylum in the Brazilian embassy and went into exile.
-@viz {"k": "bars", "unit": "official 1958 result (approx. %)", "items": [{"l": "Américo Tomás", "v": 76.0}, {"l": "Humberto Delgado", "v": 24.0, "hi": true}]}
-### The murder
-In February 1965 PIDE agents lured him to the Spanish border near Badajoz, pretending to be opposition contacts. They killed him and his Brazilian secretary, Arajaryr Campos. Their bodies were found weeks later.
-@viz {"k": "list", "items": ["Nicknamed 'General sem Medo'", "Lisbon airport named after him", "Posthumously made marshal"]}
-> One sentence from a general showed that the regime's support was far thinner than it claimed.
-!? Lisbon's airport has been officially named Aeroporto Humberto Delgado since 2016.
-
-# Salazar to Caetano
-In August 1968 Salazar, then 79, fell from a deckchair at his summer residence in Estoril and later suffered a brain haemorrhage. President Américo Tomás replaced him in September with Marcelo Caetano, a law professor and long-time regime insider.
-@viz {"k": "time", "events": [{"y": "1968", "l": "Salazar's fall"}, {"y": "1968", "l": "Caetano becomes PM"}, {"y": "1970", "l": "Salazar dies"}, {"y": "1973", "l": "Reformists quit"}, {"y": "1974", "l": "Spínola's book"}]}
-### The "Marcelist Spring"
-Caetano's motto was "evolution in continuity". Censorship was eased a little, the PIDE was renamed DGS, some exiles such as Mário Soares were allowed back for a time, and the economy grew. A "liberal wing" of young deputies, including Francisco Sá Carneiro, entered parliament hoping to reform from inside.
-@viz {"k": "cmp", "l": {"t": "Changed", "items": ["names: PIDE became DGS", "some economic opening"]}, "r": {"t": "Unchanged", "items": ["colonial wars", "censorship, one party"]}}
-### Spring turns to winter
-• The wars went on and costs kept rising
-• The liberal deputies resigned in frustration by 1973
-• The 1973 oil shock hit prices hard
-• In February 1974 General António de Spínola published "Portugal e o Futuro", arguing the wars could not be won militarily
-@viz {"k": "flow", "steps": ["Hopes of reform", "Wars continue", "Reformers give up", "Army loses patience"]}
-> Caetano changed the regime's tone but not its core, and the war he would not end brought it down.
-!? Salazar lived until July 1970; according to many accounts those around him never told him he was no longer in charge.
-
-# 25 de Abril, 1974
-The Armed Forces Movement (MFA) began among captains tired of endless war, frozen careers and a regime with no way out. They planned the coup in secret and used radio songs as signals.
-@viz {"k": "time", "events": [{"y": "22:55", "l": "'E Depois do Adeus'"}, {"y": "00:20", "l": "'Grândola' on radio"}, {"y": "Morning", "l": "Troops take Lisbon"}, {"y": "Afternoon", "l": "Carmo barracks siege"}, {"y": "Evening", "l": "Caetano surrenders"}]}
-### The day
-Captain Salgueiro Maia led a column from the cavalry school in Santarém to Lisbon's Terreiro do Paço, then surrounded the Carmo barracks, where Caetano had taken refuge. Despite radio appeals to stay home, crowds poured into the streets to support the soldiers. That evening Caetano handed power to General Spínola.
-### Carnations
-A restaurant worker, Celeste Caeiro, had carnations left over from a cancelled celebration. She gave one to a soldier, who put it in his rifle barrel; others copied, and the red carnation became the symbol of the revolution.
-@viz {"k": "nums", "items": [{"v": "48 years", "l": "of dictatorship ended"}, {"v": "4", "l": "civilians killed by DGS"}, {"v": "1 day", "l": "to topple the regime"}]}
-The only deaths came when DGS agents fired on the crowd outside their Lisbon headquarters. Political prisoners were freed from Caxias and Peniche days later.
-@viz {"k": "list", "items": ["End the wars", "Democratise", "Develop the country"]}
-These "three Ds" summed up the MFA's programme.
-> A coup by soldiers became a revolution because the people joined in.
-!? 25 April is a national holiday, Dia da Liberdade, and every year people still march down Lisbon's Avenida da Liberdade with red carnations.
-
-# Decolonisation
-The MFA wanted to end the wars quickly, and the liberation movements wanted full independence, not the federation Spínola had imagined. Within about 18 months every African colony was independent.
-@viz {"k": "time", "events": [{"y": "Sep 1974", "l": "Guinea-Bissau"}, {"y": "Jun 1975", "l": "Mozambique"}, {"y": "Jul 1975", "l": "Cape Verde, São Tomé"}, {"y": "Nov 1975", "l": "Angola"}]}
-### Angola's tragedy
-In Angola three rival movements fought each other as independence approached, each backed by foreign powers. The civil war that followed lasted, with pauses, until 2002. Mozambique also suffered a long civil war (1977–92).
-### The retornados
-Hundreds of thousands of Portuguese settlers fled, many with only a suitcase. An emergency airlift in 1975 brought many home. They often arrived in a country they barely knew, sometimes facing suspicion, and were housed in hotels, camps and with relatives.
-@viz {"k": "nums", "items": [{"v": "~500,000", "l": "retornados arrived"}, {"v": "~5%", "l": "added to the population"}, {"v": "1975", "l": "peak of the airlift"}]}
-@viz {"k": "cmp", "l": {"t": "Hardship", "items": ["lost homes, savings", "hard to find jobs"]}, "r": {"t": "Contribution", "items": ["new businesses", "skills, energy"]}}
-### Timor and Macau
-East Timor was invaded by Indonesia in December 1975; it won independence only in 2002 after a long struggle that Portugal championed. Macau was handed to China in 1999, ending the Portuguese empire.
-> Decolonisation was fast and chaotic, and its human costs fell on Africans and on returning Portuguese alike.
-!? Portuguese is now an official language in nine countries, and the CPLP links them as a community.
-
-# Building democracy
-The 19 months after the revolution are known as the **PREC** (Processo Revolucionário em Curso). Parties of every kind appeared, banks and big industries were nationalised, and in the Alentejo farm workers occupied large estates.
-@viz {"k": "time", "events": [{"y": "Mar 1975", "l": "Failed Spínola coup"}, {"y": "Apr 1975", "l": "Constituent elections"}, {"y": "Nov 1975", "l": "25 Novembro"}, {"y": "Apr 1976", "l": "Constitution"}]}
-### Hot summer
-In 1975 the country was split. Communists and parts of the military pushed for a revolutionary state, while moderate parties, the Church and much of the north resisted; party offices were burned. On 25 November 1975 moderate officers stopped a radical military uprising, and the path to parliamentary democracy was secured.
-### The first free votes
-@viz {"k": "bars", "unit": "turnout, 25 April 1975 (%)", "items": [{"l": "Constituent vote", "v": 92.0, "hi": true}, {"l": "Legislative 2024", "v": 60.0}]}
-The election of 25 April 1975 had the highest turnout in Portugal's history. The Socialists of Mário Soares came first, ahead of the Popular Democrats; the Communists got about 12%.
-@viz {"k": "stack", "items": ["1976 Constitution", "President: Ramalho Eanes", "Parliament: Soares PM", "Local councils elected"]}
-### Settling down
-The 1982 revision abolished the military Council of the Revolution, putting the armed forces fully under civilian control. Two IMF programmes (1977 and 1983) dealt with debts left by the upheaval.
-> Portugal's democracy emerged from a revolution that was turbulent but, compared with many, remarkably peaceful.
-!! The revolution was over on 25 April 1974 => The struggle over what kind of democracy lasted until at least late 1975
-
-# Joining Europe
-For Mário Soares, joining the European Community was the way to anchor democracy and modernise the economy. Portugal applied in 1977. After long negotiations the treaty was signed at the Jerónimos Monastery in Lisbon on 12 June 1985, and Portugal joined, with Spain, on 1 January 1986.
-@viz {"k": "time", "events": [{"y": "1977", "l": "Portugal applies"}, {"y": "1986", "l": "Joins EEC"}, {"y": "1995", "l": "Schengen begins"}, {"y": "1999", "l": "Euro launched"}, {"y": "2002", "l": "Euro notes and coins"}]}
-### What changed
-Billions of euros in structural and cohesion funds paid for motorways, bridges, sewers, schools and training. Farmers and fishermen had to adapt to European rules and competition. Portugal grew fast in the late 1980s and 1990s.
-@viz {"k": "bars", "unit": "motorway network, km (approx.)", "items": [{"l": "1986", "v": 200.0}, {"l": "Today", "v": 3100.0, "hi": true}]}
-### The euro
-Portugal joined the euro at its launch in 1999. When notes and coins arrived in 2002, people converted every price in their heads.
-= 1 euro = 200.482 escudos
-ex: A coffee at 100 escudos | 100 ÷ 200.482 | ≈ €0.50
-@viz {"k": "cmp", "l": {"t": "Gains", "items": ["roads, schools, ports", "free travel and study"]}, "r": {"t": "Challenges", "items": ["slow growth after 2000", "lost own currency"]}}
-> Europe gave Portugal money, markets and a democratic anchor, and in return Portugal had to compete in a much larger game.
-!? Portugal has held the rotating presidency of the EU Council four times; the 2007 Lisbon Treaty, signed in the Jerónimos Monastery, still sets out how the EU works.
-
-# Expo '98 and modern Portugal
-Expo '98 ran from May to September 1998 on the theme of the oceans, marking 500 years since Vasco da Gama reached India by sea. It turned a run-down industrial area of oil depots and a slaughterhouse in eastern Lisbon into the Parque das Nações.
-@viz {"k": "list", "items": ["Oceanário de Lisboa", "Gare do Oriente station", "Vasco da Gama Bridge, ~12 km", "Pavilhão de Portugal", "New homes and offices"]}
-@viz {"k": "nums", "items": [{"v": "~11 m", "l": "visits to Expo '98"}, {"v": "132 days", "l": "of the exhibition"}, {"v": "1998", "l": "also: Saramago's Nobel"}]}
-### Crisis and recovery
-After 2008, high debt and weak growth caught up with Portugal. In 2011 it needed a €78 billion bailout from the EU and IMF (the "troika"), with deep cuts, tax rises and unemployment peaking around 17% in 2013. Many young people emigrated. Portugal exited the programme in 2014.
-@viz {"k": "flow", "steps": ["Debt crisis", "2011 troika bailout", "Austerity, emigration", "Exit 2014, recovery"]}
-### A new image
-• Tourism boomed, especially in Lisbon, Porto and the Algarve
-• The Web Summit moved to Lisbon in 2016, and start-ups followed
-• Portugal won Euro 2016, and António Guterres became UN Secretary-General in 2017
-• Housing costs rose sharply, a major political issue today
-> In a generation, Portugal went from a closed, poor dictatorship to an open European democracy, with booms and busts along the way.
-!? The Vasco da Gama Bridge, with its viaducts, is about 17 km long; it was the longest in Europe when it opened in 1998.
 
 == hi-modern
 

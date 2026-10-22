@@ -124,13 +124,13 @@ mo-budget.c1.viz.items.2.l	Poupança e dívidas
 mo-budget.c2.title	Necessidades vs desejos
 mo-budget.c2.text	Necessidades são coisas que tens de pagar (renda, comida, transportes, contas). Os desejos tornam a vida mais agradável, mas são opcionais. Muitas coisas têm uma parte de necessidade e uma parte de desejo.
 mo-budget.c2.viz.items.0.a	Renda
-mo-budget.c2.viz.items.0.b	necessidade
+mo-budget.c2.viz.items.0.b	essencial
 mo-budget.c2.viz.items.1.a	Supermercado
-mo-budget.c2.viz.items.1.b	necessidade
+mo-budget.c2.viz.items.1.b	essencial
 mo-budget.c2.viz.items.2.a	Restaurante
 mo-budget.c2.viz.items.2.b	desejo
 mo-budget.c2.viz.items.3.a	Telemóvel
-mo-budget.c2.viz.items.3.b	necessidade, mas o último modelo é desejo
+mo-budget.c2.viz.items.3.b	essencial, mas o último modelo é desejo
 mo-budget.c3.title	Fundo de emergência
 mo-budget.c3.text	Mantém três a seis meses de despesas essenciais numa conta poupança de acesso fácil. Transforma uma crise, como perder o emprego ou avariar o carro, num simples incómodo.
 mo-budget.c3.viz.items.0.v	3–6 meses
@@ -198,3 +198,1361 @@ mo-compound.c0.viz.l.items.0	juros só sobre o depósito
 mo-compound.c0.viz.l.items.1	linha reta
 mo-compound.c0.viz.r.t	Compostos
 mo-compound.c0.viz.r.items.0	juros também sobre juros
+mo-compound.c0.viz.r.items.1	curva ascendente
+mo-compound.c1.title	A fórmula
+mo-compound.c1.text	Ao fim de n anos, o dinheiro cresce pelo fator (1 + r) em cada ano. Pequenas diferenças em r ou n fazem diferenças enormes.
+mo-compound.c1.formula	A = P(1 + r)ⁿ
+mo-compound.c1.viz.f	A = P(1 + r)ⁿ
+mo-compound.c1.viz.items.0.s	A
+mo-compound.c1.viz.items.0.m	montante final
+mo-compound.c1.viz.items.1.s	P
+mo-compound.c1.viz.items.1.m	montante inicial
+mo-compound.c1.viz.items.2.s	r
+mo-compound.c1.viz.items.2.m	retorno anual
+mo-compound.c1.viz.items.3.s	n
+mo-compound.c1.viz.items.3.m	anos
+mo-compound.c2.title	1000 € a 5%
+mo-compound.c2.text	Ao fim de 10 anos: 1629 €. Ao fim de 20: 2653 €. Ao fim de 40: 7040 €. A maior parte do crescimento chega tarde.
+mo-compound.c2.viz.items.0.l	Início
+mo-compound.c2.viz.items.1.l	10 anos
+mo-compound.c2.viz.items.2.l	20 anos
+mo-compound.c2.viz.items.3.l	40 anos
+mo-compound.c3.title	O tempo vence o montante
+mo-compound.c3.text	Começar cedo conta mais do que investir muito. Quem investe dos 25 aos 35 e para pode acabar com mais do que quem investe dos 35 aos 65, com o mesmo retorno.
+mo-compound.c3.viz.l.t	Começa cedo
+mo-compound.c3.viz.l.items.0	2000 € por ano dos 25 aos 35
+mo-compound.c3.viz.l.items.1	depois para
+mo-compound.c3.viz.r.t	Começa tarde
+mo-compound.c3.viz.r.items.0	2000 € por ano dos 35 aos 65
+mo-compound.c3.viz.r.items.1	investe o triplo
+mo-compound.c4.title	Dívida composta
+mo-compound.c4.text	Nas dívidas, a capitalização joga contra ti. Os saldos de cartão de crédito podem custar 15–20% ao ano ou mais, duplicando em cerca de quatro ou cinco anos se não forem pagos.
+mo-compound.c4.viz.unit	% ao ano (típico)
+mo-compound.c4.viz.items.0.l	Poupança
+mo-compound.c4.viz.items.1.l	Crédito casa
+mo-compound.c4.viz.items.2.l	Crédito auto
+mo-compound.c4.viz.items.3.l	Cartão de crédito
+mo-compound.c5.title	As comissões contam
+mo-compound.c5.text	Uma comissão anual de 1% parece minúscula, mas também se capitaliza. Em 30 anos, pode comer cerca de um quarto do teu pé-de-meia final.
+mo-compound.c5.viz.unit	€ ao fim de 30 anos, 10 000 € a 6%
+mo-compound.c5.viz.items.0.l	Sem comissão
+mo-compound.c5.viz.items.1.l	Comissão 1%
+mo-compound.c6.title	Nominal vs real
+mo-compound.c6.text	Um retorno de 5% com 3% de inflação é só cerca de 2% de crescimento real do poder de compra. Compara sempre os retornos com a inflação.
+mo-compound.c6.viz.f	real ≈ nominal − inflação
+mo-compound.c6.viz.items.0.s	nominal
+mo-compound.c6.viz.items.0.m	retorno anunciado
+mo-compound.c6.viz.items.1.s	inflação
+mo-compound.c6.viz.items.1.m	subida de preços
+mo-compound.c6.viz.items.2.s	real
+mo-compound.c6.viz.items.2.m	ganho de poder de compra
+mo-compound.c7.title	A frase de Einstein?
+mo-compound.c7.text	"Os juros compostos são a oitava maravilha do mundo" é muitas vezes atribuída a Einstein, mas não há provas de que a tenha dito. A matemática é real de qualquer forma.
+mo-compound.c7.viz.items.0.w	Einstein chamou-lhe a oitava maravilha
+mo-compound.c7.viz.items.0.r	Não há provas de que o tenha dito
+mo-compound.c8.title	Contribuições regulares
+mo-compound.c8.text	Juntar um valor fixo todos os meses, em vez de tudo de uma vez, suaviza os altos e baixos dos mercados. Chama-se investimento periódico (euro-cost averaging).
+mo-compound.c8.viz.steps.0	Mesmo valor todos os meses
+mo-compound.c8.viz.steps.1	Compra mais com preços baixos
+mo-compound.c8.viz.steps.2	Menos com preços altos
+mo-compound.c8.viz.steps.3	Preço médio mais suave
+mo-compound.c9.title	100 € por mês
+mo-compound.c9.text	Investir 100 € por mês a 5% ao ano durante 30 anos: entregas 36 000 €, que crescem para cerca de 83 000 €.
+mo-compound.c9.viz.items.0.l	Investido
+mo-compound.c9.viz.items.1.l	Valor final
+mo-invest.title	Bases do investimento
+mo-invest.summary	Ações, obrigações, fundos e risco.
+mo-invest.q0.q	O que é uma ação?
+mo-invest.q0.o0	Um empréstimo a uma empresa
+mo-invest.q0.o1	Uma pequena parte da propriedade
+mo-invest.q0.o2	Uma conta poupança
+mo-invest.q0.x	Os donos podem receber dividendos.
+mo-invest.q1.q	Porquê diversificar?
+mo-invest.q1.o0	Para garantir lucro
+mo-invest.q1.o1	Para reduzir o estrago de uma única falha
+mo-invest.q1.o2	Para pagar menos impostos
+mo-invest.q1.x	Não ponhas os ovos todos no mesmo cesto.
+mo-invest.c0.title	Poupar vs investir
+mo-invest.c0.text	Poupar mantém o dinheiro seguro a curto prazo. Investir é comprar ativos que podem crescer a longo prazo, com o risco de perderem valor pelo caminho.
+mo-invest.c0.viz.l.t	Poupar
+mo-invest.c0.viz.l.items.0	seguro
+mo-invest.c0.viz.l.items.1	acesso fácil
+mo-invest.c0.viz.l.items.2	retorno baixo
+mo-invest.c0.viz.l.items.3	curto prazo
+mo-invest.c0.viz.r.t	Investir
+mo-invest.c0.viz.r.items.0	altos e baixos
+mo-invest.c0.viz.r.items.1	retorno esperado maior
+mo-invest.c0.viz.r.items.2	longo prazo
+mo-invest.c1.title	Ações
+mo-invest.c1.text	Uma ação é uma pequena parte da propriedade de uma empresa. Podes ganhar se o preço subir e se pagar dividendos, e podes perder se descer.
+mo-invest.c1.viz.items.0.a	Ação
+mo-invest.c1.viz.items.0.b	parte da empresa
+mo-invest.c1.viz.items.1.a	Dividendo
+mo-invest.c1.viz.items.1.b	parte dos lucros
+mo-invest.c1.viz.items.2.a	Preço
+mo-invest.c1.viz.items.2.b	o que se paga hoje
+mo-invest.c2.title	Obrigações
+mo-invest.c2.text	Uma obrigação é um empréstimo a um Estado ou a uma empresa. Pagam-te juros e devolvem o dinheiro no fim. Costumam ser mais estáveis do que as ações, com retornos mais baixos a longo prazo.
+mo-invest.c2.viz.steps.0	Emprestas dinheiro
+mo-invest.c2.viz.steps.1	Recebes juros regulares
+mo-invest.c2.viz.steps.2	Reembolso na maturidade
+mo-invest.c3.title	Risco e retorno
+mo-invest.c3.text	Retornos esperados mais altos vêm com oscilações maiores. Não há forma fiável de obter retornos altos sem aceitar risco.
+mo-invest.c3.viz.unit	risco
+mo-invest.c3.viz.items.0.l	Conta poupança
+mo-invest.c3.viz.items.1.l	Dívida pública
+mo-invest.c3.viz.items.2.l	Fundo misto
+mo-invest.c3.viz.items.3.l	Ações
+mo-invest.c4.title	Diversificação
+mo-invest.c4.text	Não ponhas os ovos todos no mesmo cesto. Repartir o dinheiro por muitas empresas, países e tipos de ativos reduz o estrago que uma única falha pode fazer.
+mo-invest.c4.viz.root	Carteira diversificada
+mo-invest.c4.viz.items.0	Muitas empresas
+mo-invest.c4.viz.items.1	Muitos países
+mo-invest.c4.viz.items.2	Ações e obrigações
+mo-invest.c5.title	Fundos de índice
+mo-invest.c5.text	Um fundo de índice compra todas as empresas de um índice, como o S&P 500 ou um índice mundial, a um custo muito baixo. A maioria dos fundos de gestão ativa não consegue bater o seu índice em períodos longos.
+mo-invest.c5.viz.l.t	Fundo ativo
+mo-invest.c5.viz.l.items.0	gestor escolhe
+mo-invest.c5.viz.l.items.1	comissões altas
+mo-invest.c5.viz.l.items.2	fica atrás do índice
+mo-invest.c5.viz.r.t	Fundo de índice
+mo-invest.c5.viz.r.items.0	compra tudo
+mo-invest.c5.viz.r.items.1	comissões baixas
+mo-invest.c5.viz.r.items.2	acompanha o mercado
+mo-invest.c6.title	Tempo no mercado
+mo-invest.c6.text	Os mercados caem muitas vezes, por vezes a pique, mas historicamente recuperaram e cresceram em períodos longos. Falhar só os poucos melhores dias pode prejudicar muito os retornos.
+mo-invest.c6.viz.items.0.w	"Vou esperar pelo momento perfeito"
+mo-invest.c6.viz.items.0.r	Estar no mercado vence acertar no momento
+mo-invest.c7.title	Bom demais para ser verdade
+mo-invest.c7.text	Promessas de retornos altos garantidos são um sinal de alarme. Se é garantido, é baixo; se é alto, não é garantido. As burlas costumam apostar na urgência e no secretismo.
+mo-invest.c7.viz.items.0	Retornos altos "garantidos"
+mo-invest.c7.viz.items.1	Pressão para agir já
+mo-invest.c7.viz.items.2	Difícil levantar
+mo-invest.c7.viz.items.3	Vendedores não regulados
+mo-invest.c8.title	Emoções e investimento
+mo-invest.c8.text	O medo leva as pessoas a vender depois das quedas e a ganância a comprar nos picos: o contrário de "comprar barato, vender caro". Um plano escrito ajuda-te a manter o rumo.
+mo-invest.c8.viz.steps.0	Preços sobem: ganância
+mo-invest.c8.viz.steps.1	Compra no topo
+mo-invest.c8.viz.steps.2	Preços caem: medo
+mo-invest.c8.viz.steps.3	Vende no fundo
+mo-invest.c9.title	Antes de investir
+mo-invest.c9.text	Uma ordem comum: liquidar dívidas caras, criar um fundo de emergência e depois investir dinheiro de que não vais precisar durante pelo menos cinco anos. Isto é informação geral, não aconselhamento pessoal.
+mo-invest.c9.viz.steps.0	Liquidar dívida cara
+mo-invest.c9.viz.steps.1	Fundo de emergência
+mo-invest.c9.viz.steps.2	Investir a 5+ anos
+mo-invest.c9.viz.steps.3	Rever todos os anos
+mo-econ.title	Economia do dia a dia
+mo-econ.summary	As grandes ideias por trás das notícias.
+mo-econ.q0.q	O que é o custo de oportunidade?
+mo-econ.q0.o0	O preço na etiqueta
+mo-econ.q0.o1	Aquilo de que abdicas para obter algo
+mo-econ.q0.o2	Uma comissão bancária
+mo-econ.q0.x	A melhor alternativa seguinte.
+mo-econ.q1.q	Se a inflação descer de 5% para 2%, os preços…
+mo-econ.q1.o0	descem
+mo-econ.q1.o1	continuam a subir, mas mais devagar
+mo-econ.q1.o2	ficam iguais
+mo-econ.q1.x	Deflação significaria preços a descer.
+mo-econ.c0.title	PIB
+mo-econ.c0.text	O produto interno bruto é o valor total dos bens e serviços que um país produz num ano. Mede o tamanho de uma economia, não o seu bem-estar.
+mo-econ.c0.viz.f	PIB = C + I + G + (X − M)
+mo-econ.c0.viz.items.0.s	C
+mo-econ.c0.viz.items.0.m	consumo
+mo-econ.c0.viz.items.1.s	I
+mo-econ.c0.viz.items.1.m	investimento
+mo-econ.c0.viz.items.2.s	G
+mo-econ.c0.viz.items.2.m	despesa pública
+mo-econ.c0.viz.items.3.s	X − M
+mo-econ.c0.viz.items.3.m	exportações menos importações
+mo-econ.c1.title	Recessão
+mo-econ.c1.text	Uma recessão é uma queda significativa da atividade económica, muitas vezes definida como dois trimestres seguidos de queda do PIB. O emprego e os rendimentos costumam sofrer.
+mo-econ.c1.viz.steps.0	Consumo cai
+mo-econ.c1.viz.steps.1	Empresas vendem menos
+mo-econ.c1.viz.steps.2	Cortam empregos
+mo-econ.c1.viz.steps.3	Consumo cai mais
+mo-econ.c2.title	Custo de oportunidade
+mo-econ.c2.text	O custo real de algo é aquilo de que abdicas para o obter. Uma noite a estudar custa a saída à noite que não tiveste.
+mo-econ.c2.viz.items.0.a	Universidade
+mo-econ.c2.viz.items.0.b	anos de salário não ganho
+mo-econ.c2.viz.items.1.a	Carro novo
+mo-econ.c2.viz.items.1.b	as férias que não fizeste
+mo-econ.c2.viz.items.2.a	Uma hora nas redes sociais
+mo-econ.c2.viz.items.2.b	uma hora de outra coisa
+mo-econ.c3.title	Incentivos
+mo-econ.c3.text	As pessoas reagem a incentivos. Os impostos sobre bebidas açucaradas reduzem as vendas; a tara recuperável nas garrafas aumenta a reciclagem. Os mal desenhados saem pela culatra.
+mo-econ.c3.viz.items.0	Imposto do açúcar: menos açúcar
+mo-econ.c3.viz.items.1	Tara recuperável: mais reciclagem
+mo-econ.c3.viz.items.2	Multas: menos infrações
+mo-econ.c4.title	Vantagem comparativa
+mo-econ.c4.text	Os países ganham ao especializar-se naquilo em que são relativamente melhores e ao trocar, mesmo que um seja melhor em tudo. O vinho de Portugal e os tecidos de Inglaterra foram o exemplo de Ricardo em 1817.
+mo-econ.c4.viz.l.t	Portugal
+mo-econ.c4.viz.l.items.0	vinho
+mo-econ.c4.viz.l.items.1	relativamente eficiente
+mo-econ.c4.viz.r.t	Inglaterra
+mo-econ.c4.viz.r.items.0	tecidos
+mo-econ.c4.viz.r.items.1	relativamente eficiente
+mo-econ.c5.title	Tragédia dos comuns
+mo-econ.c5.text	Quando um recurso partilhado é livre para todos, todos o usam em excesso. A sobrepesca é um exemplo clássico; quotas e regras de propriedade podem ajudar.
+mo-econ.c5.viz.steps.0	Recurso partilhado
+mo-econ.c5.viz.steps.1	Cada um tira mais um pouco
+mo-econ.c5.viz.steps.2	O recurso colapsa
+mo-econ.c5.viz.steps.3	Todos perdem
+mo-econ.c6.title	Impostos
+mo-econ.c6.text	Os impostos financiam os serviços públicos. Portugal usa o imposto sobre o rendimento (IRS), com taxas que sobem com o rendimento, o IVA sobre as compras, com taxa normal de 23% no continente, e as contribuições para a Segurança Social.
+mo-econ.c6.viz.items.0.a	IRS
+mo-econ.c6.viz.items.0.b	imposto sobre o rendimento, progressivo
+mo-econ.c6.viz.items.1.a	IVA
+mo-econ.c6.viz.items.1.b	imposto sobre as compras
+mo-econ.c6.viz.items.2.a	TSU
+mo-econ.c6.viz.items.2.b	Segurança Social
+mo-econ.c7.title	Desemprego
+mo-econ.c7.text	Algum desemprego é normal, porque as pessoas mudam de emprego. A taxa é a parte das pessoas que querem trabalhar e procuram trabalho, mas não o têm.
+mo-econ.c7.viz.f	taxa = desempregados ÷ população ativa
+mo-econ.c7.viz.items.0.s	desempregados
+mo-econ.c7.viz.items.0.m	à procura de trabalho
+mo-econ.c7.viz.items.1.s	população ativa
+mo-econ.c7.viz.items.1.m	empregados + desempregados
+mo-econ.c8.title	Taxas de câmbio
+mo-econ.c8.text	As taxas de câmbio são o preço de uma moeda noutra. Um euro mais forte torna as férias no estrangeiro mais baratas, mas as exportações portuguesas mais caras para os estrangeiros.
+mo-econ.c8.viz.l.t	Euro forte
+mo-econ.c8.viz.l.items.0	importações mais baratas
+mo-econ.c8.viz.l.items.1	viajar fora fica mais barato
+mo-econ.c8.viz.r.t	Euro fraco
+mo-econ.c8.viz.r.items.0	exportações mais baratas
+mo-econ.c8.viz.r.items.1	mais turistas em Portugal
+mo-econ.c9.title	Ler um título
+mo-econ.c9.text	"Inflação desce para 2%" não significa que os preços desceram; significa que estão a subir mais devagar. Só a inflação negativa, chamada deflação, significa que os preços descem.
+mo-econ.c9.viz.items.0.w	A inflação desceu, logo os preços estão mais baixos
+mo-econ.c9.viz.items.0.r	Os preços subiram na mesma, só que mais devagar
+mo-debt.title	Dívida e crédito
+mo-debt.summary	Pedir emprestado sem te queimares.
+mo-debt.q0.q	O que inclui a TAEG?
+mo-debt.q0.o0	Só os juros
+mo-debt.q0.o1	Juros e a maioria das comissões, como taxa anual
+mo-debt.q0.o2	Só as comissões
+mo-debt.q0.x	A forma justa de comparar empréstimos.
+mo-debt.q1.q	Que método de pagamento de dívidas poupa mais juros?
+mo-debt.q1.o0	Bola de neve
+mo-debt.q1.o1	Avalanche
+mo-debt.q1.o2	Pagar o mínimo
+mo-debt.q1.x	Primeiro a taxa mais alta.
+mo-debt.q2.q	Alargar um empréstimo de 5 para 10 anos geralmente…
+mo-debt.q2.o0	poupa dinheiro
+mo-debt.q2.o1	baixa a prestação mensal, mas custa mais no total
+mo-debt.q2.o2	não tem efeito
+mo-debt.q2.x	Mais tempo, mais juros.
+mo-debt.c0.title	Dívida boa e má
+mo-debt.c0.text	A dívida pode ser útil quando compra algo que dura ou se valoriza, como uma casa ou a educação. Dívida cara para coisas que perdem valor depressa é mais arriscada.
+mo-debt.c0.viz.l.t	Geralmente sensata
+mo-debt.c0.viz.l.items.0	crédito casa
+mo-debt.c0.viz.l.items.1	educação
+mo-debt.c0.viz.l.items.2	taxa baixa
+mo-debt.c0.viz.r.t	Geralmente arriscada
+mo-debt.c0.viz.r.items.0	saldos de cartão de crédito
+mo-debt.c0.viz.r.items.1	crédito ao consumo para gadgets
+mo-debt.c0.viz.r.items.2	taxa alta
+mo-debt.c1.title	O custo real: TAEG
+mo-debt.c1.text	Compara empréstimos pela TAEG (taxa anual de encargos efetiva global), que inclui os juros e a maioria das comissões numa taxa anual. A prestação mensal mais baixa nem sempre é o empréstimo mais barato.
+mo-debt.c1.viz.items.0.a	Taxa nominal
+mo-debt.c1.viz.items.0.b	só juros
+mo-debt.c1.viz.items.1.a	TAEG
+mo-debt.c1.viz.items.1.b	juros e comissões
+mo-debt.c1.viz.items.2.a	TAEG menor
+mo-debt.c1.viz.items.2.b	crédito mais barato
+mo-debt.c2.title	Mais longo não é mais barato
+mo-debt.c2.text	Alargar um empréstimo por mais anos baixa a prestação mensal, mas aumenta o total pago. Um empréstimo de 10 000 € a 8% custa cerca de 2170 € de juros em 5 anos, mas 4560 € em 10.
+mo-debt.c2.viz.unit	juros totais, €
+mo-debt.c2.viz.items.0.l	3 anos
+mo-debt.c2.viz.items.1.l	5 anos
+mo-debt.c2.viz.items.2.l	10 anos
+mo-debt.c3.title	A armadilha do pagamento mínimo
+mo-debt.c3.text	Pagar só o mínimo de um cartão de crédito pode levar muitos anos e custar muito mais do que a compra original. Os juros continuam a capitalizar sobre o saldo.
+mo-debt.c3.viz.steps.0	Compras 1000 €
+mo-debt.c3.viz.steps.1	Pagas só o mínimo
+mo-debt.c3.viz.steps.2	Juros capitalizam
+mo-debt.c3.viz.steps.3	Anos a pagar
+mo-debt.c4.title	Bola de neve vs avalanche
+mo-debt.c4.text	Duas formas de liquidar várias dívidas: a bola de neve paga primeiro o saldo mais pequeno, para vitórias rápidas; a avalanche paga primeiro a taxa mais alta e poupa mais dinheiro.
+mo-debt.c4.viz.l.t	Bola de neve
+mo-debt.c4.viz.l.items.0	menor saldo primeiro
+mo-debt.c4.viz.l.items.1	motivação
+mo-debt.c4.viz.r.t	Avalanche
+mo-debt.c4.viz.r.items.0	maior taxa primeiro
+mo-debt.c4.viz.r.items.1	menos juros
+mo-debt.c5.title	Historial de crédito
+mo-debt.c5.text	Os credores verificam o teu registo de empréstimos e pagamentos anteriores. Em Portugal, a Central de Responsabilidades de Crédito do Banco de Portugal mostra as tuas responsabilidades perante os bancos.
+mo-debt.c5.viz.items.0	Paga a horas
+mo-debt.c5.viz.items.1	Mantém saldos baixos
+mo-debt.c5.viz.items.2	Não peças muitos créditos ao mesmo tempo
+mo-debt.c5.viz.items.3	Consulta o teu registo todos os anos
+mo-debt.c6.title	Taxa de esforço
+mo-debt.c6.text	Os credores veem que parte do teu rendimento vai para pagar dívidas. O Banco de Portugal recomenda que, em geral, os bancos a mantenham em 50% ou menos nos novos créditos.
+mo-debt.c6.viz.f	DSTI = prestações ÷ rendimento líquido
+mo-debt.c6.viz.items.0.s	DSTI
+mo-debt.c6.viz.items.0.m	taxa de esforço
+mo-debt.c6.viz.items.1.s	abaixo de ~50%
+mo-debt.c6.viz.items.1.m	recomendado em geral
+mo-debt.c7.title	Compre agora, pague depois
+mo-debt.c7.text	Dividir pagamentos em prestações parece indolor, mas facilita os gastos e pode levar a compromissos acumulados e penalizações por atraso.
+mo-debt.c7.viz.steps.0	"Paga em 3x"
+mo-debt.c7.viz.steps.1	Parece barato
+mo-debt.c7.viz.steps.2	Vários planos ao mesmo tempo
+mo-debt.c7.viz.steps.3	Difícil de controlar
+mo-debt.c8.title	O risco de ser fiador
+mo-debt.c8.text	Ser fiador significa que és responsável se quem pediu o empréstimo não conseguir pagar. Só sejas fiador do que conseguirias pagar tu próprio.
+mo-debt.c8.viz.items.0.w	"É só uma assinatura"
+mo-debt.c8.viz.items.0.r	Podes ter de pagar a dívida toda
+mo-debt.c9.title	Liquidar um cartão
+mo-debt.c9.text	3000 € num cartão com TAEG de 18%. Pagar 100 € por mês demora cerca de 40 meses e ~1000 € de juros. Pagar 200 € reduz para cerca de 17 meses e ~420 €.
+mo-debt.c9.viz.unit	meses para liquidar 3000 €
+mo-debt.c9.viz.items.0.l	100 € por mês
+mo-debt.c9.viz.items.1.l	200 € por mês
+mo-banks.title	Como funcionam os bancos
+mo-banks.summary	Para onde vai o teu dinheiro.
+mo-banks.q0.q	Quanto está garantido por depositante e por banco na UE?
+mo-banks.q0.o0	10 000 €
+mo-banks.q0.o1	100 000 €
+mo-banks.q0.o2	Sem limite
+mo-banks.q0.x	Em Portugal, pelo Fundo de Garantia de Depósitos.
+mo-banks.q1.q	A maioria das taxas de crédito à habitação em Portugal é…
+mo-banks.q1.o0	fixa para toda a vida
+mo-banks.q1.o1	Euribor mais um spread
+mo-banks.q1.o2	definida pelo Governo
+mo-banks.q1.x	Variável, indexada à Euribor.
+mo-banks.c0.title	Os bancos recebem e emprestam
+mo-banks.c0.text	Os bancos recebem depósitos e emprestam a maior parte desse dinheiro a taxas mais altas. A diferença, a margem financeira, é uma fonte essencial de lucro.
+mo-banks.c0.viz.steps.0	O teu depósito
+mo-banks.c0.viz.steps.1	O banco empresta-o
+mo-banks.c0.viz.steps.2	O devedor paga juros
+mo-banks.c0.viz.steps.3	O banco fica com a margem
+mo-banks.c1.title	Criação de moeda
+mo-banks.c1.text	Quando um banco concede um empréstimo, cria um novo depósito na conta de quem pede. A maior parte do dinheiro na economia é criada assim, limitada pela regulação e pela procura.
+mo-banks.c1.viz.steps.0	Crédito aprovado
+mo-banks.c1.viz.steps.1	Novo depósito criado
+mo-banks.c1.viz.steps.2	Dinheiro gasto
+mo-banks.c1.viz.steps.3	Circula na economia
+mo-banks.c2.title	Reservas fracionárias
+mo-banks.c2.text	Os bancos guardam só uma fração dos depósitos em dinheiro e reservas. Normalmente não há problema, mas se todos levantarem ao mesmo tempo, uma corrida ao banco pode afundá-lo.
+mo-banks.c2.viz.unit	% (ilustrativo)
+mo-banks.c2.viz.items.0.l	Emprestado ou investido
+mo-banks.c2.viz.items.1.l	Guardado em reservas
+mo-banks.c3.title	Garantia de depósitos
+mo-banks.c3.text	Na UE, os depósitos estão garantidos até 100 000 € por depositante e por banco. Em Portugal, é o Fundo de Garantia de Depósitos.
+mo-banks.c3.viz.items.0.l	por depositante, por banco
+mo-banks.c3.viz.items.1.v	Toda a UE
+mo-banks.c3.viz.items.1.l	mesmo limite
+mo-banks.c3.viz.items.2.v	Em dias
+mo-banks.c3.viz.items.2.l	prazo de reembolso
+mo-banks.c4.title	Corridas aos bancos
+mo-banks.c4.text	Em 2023, o Silicon Valley Bank colapsou depois de os depositantes levantarem 42 mil milhões de dólares num único dia, impulsionados pelas redes sociais. A rapidez das corridas digitais é nova.
+mo-banks.c4.viz.steps.0	Receio espalha-se online
+mo-banks.c4.viz.steps.1	Levantamentos em massa
+mo-banks.c4.viz.steps.2	Banco vende ativos com perda
+mo-banks.c4.viz.steps.3	Colapso
+mo-banks.c5.title	Requisitos de capital
+mo-banks.c5.text	Depois da crise de 2008, os reguladores passaram a exigir que os bancos tivessem mais capital próprio para absorver perdas, para que não sejam os contribuintes a fazê-lo.
+mo-banks.c5.viz.items.0	Capital próprio: absorve perdas primeiro
+mo-banks.c5.viz.items.1	Obrigações
+mo-banks.c5.viz.items.2	Depósitos: protegidos
+mo-banks.c6.title	Spread e comissões
+mo-banks.c6.text	Os bancos também ganham com comissões: manutenção de conta, transferências, cartões. Comparar comissões pode poupar dezenas de euros por ano; o Banco de Portugal publica comparações.
+mo-banks.c6.viz.items.0	Manutenção de conta
+mo-banks.c6.viz.items.1	Cartões
+mo-banks.c6.viz.items.2	Transferências
+mo-banks.c6.viz.items.3	Descobertos
+mo-banks.c7.title	Euribor
+mo-banks.c7.text	A maioria dos créditos à habitação em Portugal tem taxa variável indexada à Euribor, a taxa a que os bancos europeus emprestam uns aos outros, mais um spread fixo.
+mo-banks.c7.viz.f	a tua taxa = Euribor + spread
+mo-banks.c7.viz.items.0.s	Euribor
+mo-banks.c7.viz.items.0.m	varia com o tempo
+mo-banks.c7.viz.items.1.s	spread
+mo-banks.c7.viz.items.1.m	fixo no contrato
+mo-banks.c8.title	Pagamentos
+mo-banks.c8.text	Transferências imediatas, MB WAY e cartões movem dinheiro em segundos. Nos bastidores, os bancos fazem a liquidação entre si através dos sistemas do banco central.
+mo-banks.c8.viz.steps.0	Encostas o cartão
+mo-banks.c8.viz.steps.1	Rede do cartão
+mo-banks.c8.viz.steps.2	O teu banco aprova
+mo-banks.c8.viz.steps.3	Banco da loja recebe
+mo-banks.c9.title	Euro digital
+mo-banks.c9.text	O BCE está a preparar um possível euro digital, uma moeda de banco central para pagamentos digitais do dia a dia, a par do numerário.
+mo-banks.c9.viz.l.t	Moeda bancária
+mo-banks.c9.viz.l.items.0	nos bancos privados
+mo-banks.c9.viz.r.t	Euro digital
+mo-banks.c9.viz.r.items.0	emitido pelo banco central
+mo-retire.title	Reforma e pensões
+mo-retire.summary	Planear a longo prazo.
+mo-retire.q0.q	Num sistema de repartição, quem paga as pensões atuais?
+mo-retire.q0.o0	Os próprios pensionistas
+mo-retire.q0.o1	Os trabalhadores de hoje
+mo-retire.q0.o2	Os bancos
+mo-retire.q0.x	Através das contribuições para a Segurança Social.
+mo-retire.q1.q	O que é um PPR em Portugal?
+mo-retire.q1.o0	Um tipo de empréstimo
+mo-retire.q1.o1	Um plano de poupança para a reforma com benefícios fiscais
+mo-retire.q1.o2	Uma pensão paga pelo Estado
+mo-retire.q1.x	Plano Poupança Reforma.
+mo-retire.c0.title	Sistema de repartição
+mo-retire.c0.text	A pensão pública portuguesa funciona sobretudo por repartição: as contribuições dos trabalhadores de hoje pagam os reformados de hoje. Depende do rácio entre trabalhadores e pensionistas.
+mo-retire.c0.viz.steps.0	Trabalhadores contribuem
+mo-retire.c0.viz.steps.1	Segurança Social
+mo-retire.c0.viz.steps.2	Paga aos pensionistas atuais
+mo-retire.c1.title	Uma população envelhecida
+mo-retire.c1.text	Como as pessoas vivem mais tempo e têm menos filhos, há menos trabalhadores por pensionista, o que pressiona os sistemas de pensões.
+mo-retire.c1.viz.unit	trabalhadores por pensionista (aprox., Portugal)
+mo-retire.c1.viz.items.0.l	Anos 70
+mo-retire.c1.viz.items.1.l	Hoje
+mo-retire.c1.viz.items.2.l	Projeção 2050
+mo-retire.c2.title	O fator de sustentabilidade
+mo-retire.c2.text	Portugal liga a idade da reforma à esperança de vida: à medida que as pessoas vivem mais, a idade legal sobe gradualmente, estando agora acima dos 66.
+mo-retire.c2.viz.steps.0	Esperança de vida sobe
+mo-retire.c2.viz.steps.1	Idade da reforma ajusta
+mo-retire.c2.viz.steps.2	Sistema mais sustentável
+mo-retire.c3.title	Taxa de substituição
+mo-retire.c3.text	A taxa de substituição é a pensão em percentagem do último salário. As projeções sugerem que os futuros reformados em Portugal poderão receber uma percentagem menor do que os de hoje.
+mo-retire.c3.viz.f	taxa de substituição = pensão ÷ último salário
+mo-retire.c3.viz.items.0.s	ex.
+mo-retire.c4.title	Três pilares
+mo-retire.c4.text	O rendimento na reforma assenta muitas vezes em três pilares: a pensão pública, as pensões profissionais e a poupança pessoal.
+mo-retire.c4.viz.items.0	Poupança pessoal
+mo-retire.c4.viz.items.1	Pensão profissional
+mo-retire.c4.viz.items.2	Pensão pública
+mo-retire.c5.title	Começa cedo
+mo-retire.c5.text	Graças à capitalização, o dinheiro poupado nos 20 e nos 30 anos tem décadas para crescer. Poupar 100 € por mês a partir dos 25 pode bater 200 € por mês a partir dos 45.
+mo-retire.c5.viz.unit	€ aos 65 (5% ao ano)
+mo-retire.c5.viz.items.0.l	100 €/mês desde os 25
+mo-retire.c5.viz.items.1.l	200 €/mês desde os 45
+mo-retire.c6.title	PPR
+mo-retire.c6.text	Em Portugal, o Plano Poupança Reforma (PPR) é um produto de poupança para a reforma com benefícios fiscais nas entregas, dentro de limites, e regras sobre quando podes resgatar.
+mo-retire.c6.viz.items.0	Dedução fiscal dentro de limites
+mo-retire.c6.viz.items.1	Resgate na idade da reforma ou casos especiais
+mo-retire.c6.viz.items.2	Vários tipos: fundos ou seguros
+mo-retire.c6.viz.items.3	Compara comissões
+mo-retire.c7.title	A regra dos 4%
+mo-retire.c7.text	Uma orientação aproximada de estudos norte-americanos: levantar cerca de 4% de uma carteira diversificada no primeiro ano, ajustando depois à inflação, durou historicamente cerca de 30 anos. Não é uma garantia.
+mo-retire.c7.example.0	Carteira de 500 000 €
+mo-retire.c7.example.1	× 4%
+mo-retire.c7.example.2	= 20 000 € no primeiro ano
+mo-retire.c7.viz.unit	€ por ano de 500 000 €
+mo-retire.c8.title	Inflação na reforma
+mo-retire.c8.text	Em 25 anos de reforma, uma inflação de 2% reduz o poder de compra de uma pensão fixa em cerca de 40%. Um rendimento que se ajusta à inflação vale muito.
+mo-retire.c8.viz.unit	poder de compra de 1000 €
+mo-retire.c8.viz.items.0.l	Ano 0
+mo-retire.c8.viz.items.1.l	Ano 10
+mo-retire.c8.viz.items.2.l	Ano 25
+mo-retire.c9.title	Consulta o teu registo
+mo-retire.c9.text	Em Portugal, o portal Segurança Social Direta mostra o teu histórico de contribuições e uma simulação da pensão. Consultá-lo cedo ajuda a planear.
+mo-retire.c9.viz.steps.0	Inicia sessão
+mo-retire.c9.viz.steps.1	Vê os anos de descontos
+mo-retire.c9.viz.steps.2	Faz uma simulação
+mo-retire.c9.viz.steps.3	Planeia a diferença
+mo-housing.title	Arrendar, comprar e crédito à habitação
+mo-housing.summary	A maior decisão financeira.
+mo-housing.q0.q	No início de um crédito à habitação, as prestações vão sobretudo para…
+mo-housing.q0.o0	capital
+mo-housing.q0.o1	juros
+mo-housing.q0.o2	impostos
+mo-housing.q0.x	Mais tarde, sobretudo capital.
+mo-housing.q1.q	O que aconteceu a muitos créditos à habitação com taxa variável em 2022–23?
+mo-housing.q1.o0	As prestações desceram
+mo-housing.q1.o1	As prestações subiram com a Euribor
+mo-housing.q1.o2	Nada
+mo-housing.q1.x	As taxas subiram depressa.
+mo-housing.c0.title	Arrendar vs comprar
+mo-housing.c0.text	Comprar cria património, mas imobiliza dinheiro e traz custos como impostos, manutenção e juros. Arrendar dá flexibilidade. A resposta certa depende dos preços, das taxas e de quanto tempo vais ficar.
+mo-housing.c0.viz.l.t	Comprar
+mo-housing.c0.viz.l.items.0	cria património
+mo-housing.c0.viz.l.items.1	estabilidade
+mo-housing.c0.viz.l.items.2	custos iniciais altos
+mo-housing.c0.viz.r.t	Arrendar
+mo-housing.c0.viz.r.items.0	flexibilidade
+mo-housing.c0.viz.r.items.1	sem manutenção
+mo-housing.c0.viz.r.items.2	sem património
+mo-housing.c1.title	A entrada
+mo-housing.c1.text	Os bancos portugueses costumam emprestar até 90% do valor do imóvel para habitação própria permanente, por isso vais precisar de pelo menos 10% mais os custos. Entradas maiores conseguem muitas vezes melhores spreads.
+mo-housing.c1.viz.unit	% do preço
+mo-housing.c1.viz.items.0.l	Crédito, máx. habitual
+mo-housing.c1.viz.items.1.l	A tua entrada
+mo-housing.c2.title	Custos escondidos
+mo-housing.c2.text	Além da entrada, quem compra paga o imposto de transmissão (IMT, com isenções para alguns jovens e compradores da primeira casa), Imposto do Selo, registo, avaliação e comissões bancárias.
+mo-housing.c2.viz.items.0	IMT: imposto de transmissão
+mo-housing.c2.viz.items.1	Imposto do Selo
+mo-housing.c2.viz.items.2	Registo e escritura
+mo-housing.c2.viz.items.3	Comissões e avaliação
+mo-housing.c3.title	Como funciona a prestação
+mo-housing.c3.text	Cada prestação mensal cobre os juros e uma fatia do empréstimo. No início, a maior parte vai para juros; mais tarde, a maior parte vai para amortizar o empréstimo.
+mo-housing.c3.viz.l.t	Primeiros anos
+mo-housing.c3.viz.l.items.0	sobretudo juros
+mo-housing.c3.viz.r.t	Anos finais
+mo-housing.c3.viz.r.items.0	sobretudo capital
+mo-housing.c4.title	Prestação mensal
+mo-housing.c4.text	Um empréstimo de 200 000 € a 30 anos a 4% custa cerca de 955 € por mês. A 3%, cerca de 843 €. Em 30 anos, esse ponto de diferença soma cerca de 40 000 €.
+mo-housing.c4.viz.unit	€ por mês (200 mil €, 30 anos)
+mo-housing.c5.title	Variável vs fixa
+mo-housing.c5.text	As taxas variáveis seguem a Euribor: mais baratas quando as taxas descem, dolorosas quando sobem, como em 2022–23. As taxas fixas ou mistas dão certeza, mas têm um preço.
+mo-housing.c5.viz.l.t	Variável
+mo-housing.c5.viz.l.items.0	segue a Euribor
+mo-housing.c5.viz.l.items.1	pode subir ou descer
+mo-housing.c5.viz.r.t	Fixa
+mo-housing.c5.viz.r.items.0	certeza
+mo-housing.c5.viz.r.items.1	taxa inicial muitas vezes maior
+mo-housing.c6.title	Faz o teu teste de stress
+mo-housing.c6.text	Antes de pedir emprestado, confirma que conseguirias pagar se as taxas subissem 2–3 pontos. Em 2023, muitas famílias viram a prestação disparar centenas de euros.
+mo-housing.c6.viz.unit	€ por mês (200 mil €, 30 anos)
+mo-housing.c6.viz.items.0.l	A 2%
+mo-housing.c6.viz.items.1.l	Taxas +3 pontos
+mo-housing.c7.title	Amortização antecipada
+mo-housing.c7.text	Pagar a mais reduz o prazo ou a prestação mensal. Reduzir o prazo costuma poupar mais juros. Verifica as comissões de amortização antecipada.
+mo-housing.c7.viz.l.t	Prazo menor
+mo-housing.c7.viz.l.items.0	poupa mais juros
+mo-housing.c7.viz.r.t	Prestação menor
+mo-housing.c7.viz.r.items.0	mais folga mensal
+mo-housing.c8.title	Preço vs rendimento
+mo-housing.c8.text	A habitação nas cidades portuguesas ficou cara face aos rendimentos locais. Compara o preço da casa com o rendimento anual do agregado para avaliar se é acessível.
+mo-housing.c8.viz.f	rácio = preço da casa ÷ rendimento anual do agregado
+mo-housing.c8.viz.items.0.s	menor
+mo-housing.c8.viz.items.0.m	mais acessível
+mo-housing.c8.viz.items.1.s	ex.
+mo-housing.c9.title	Custo total da propriedade
+mo-housing.c9.text	Soma os juros do crédito, o IMI, o condomínio, os seguros e a manutenção (muitas vezes ~1% do valor por ano) antes de comparar com a renda.
+mo-housing.c9.viz.items.0	Juros do crédito
+mo-housing.c9.viz.items.1	IMI
+mo-housing.c9.viz.items.2	Condomínio
+mo-housing.c9.viz.items.3	Seguros
+mo-housing.c9.viz.items.4	Manutenção
+mo-crypto.title	Cripto e dinheiro digital
+mo-crypto.summary	O que é e o que não é.
+mo-crypto.q0.q	Qual é o número máximo de bitcoins?
+mo-crypto.q0.o0	Ilimitado
+mo-crypto.q0.o1	21 milhões
+mo-crypto.q0.o2	Mil milhões
+mo-crypto.q0.x	Está no próprio código.
+mo-crypto.q1.q	O que é uma stablecoin?
+mo-crypto.q1.o0	Uma criptomoeda lenta
+mo-crypto.q1.o1	Um token feito para acompanhar uma moeda
+mo-crypto.q1.o2	Uma moeda de metal
+mo-crypto.q1.x	Geralmente garantida por reservas.
+mo-crypto.c0.title	O que é a Bitcoin
+mo-crypto.c0.text	A Bitcoin, lançada em 2009 pelo pseudónimo Satoshi Nakamoto, é uma moeda digital sem banco central. Um registo público partilhado, a blockchain, regista todas as transações.
+mo-crypto.c0.viz.events.0.l	white paper
+mo-crypto.c0.viz.events.1.l	primeiro bloco
+mo-crypto.c0.viz.events.2.l	10 000 BTC por duas pizas
+mo-crypto.c0.viz.events.3.l	ETF à vista aprovados nos EUA
+mo-crypto.c1.title	A blockchain
+mo-crypto.c1.text	Uma blockchain é uma cadeia de blocos de transações, cada um ligado ao anterior por criptografia. Alterar um bloco antigo obrigaria a refazer todo o trabalho que veio depois.
+mo-crypto.c1.viz.steps.0	Transações
+mo-crypto.c1.viz.steps.1	Agrupadas num bloco
+mo-crypto.c1.viz.steps.2	Ligado ao bloco anterior
+mo-crypto.c1.viz.steps.3	A cadeia cresce
+mo-crypto.c2.title	Mineração
+mo-crypto.c2.text	Os "mineradores" de Bitcoin competem para resolver um quebra-cabeças matemático; o vencedor acrescenta o bloco seguinte e ganha bitcoins novas. Esta prova de trabalho gasta muita eletricidade.
+mo-crypto.c2.viz.steps.0	Juntar transações
+mo-crypto.c2.viz.steps.1	Resolver o enigma
+mo-crypto.c2.viz.steps.2	Juntar o bloco
+mo-crypto.c2.viz.steps.3	Ganhar a recompensa
+mo-crypto.c3.title	Oferta limitada
+mo-crypto.c3.text	Só vão existir 21 milhões de bitcoins. A recompensa da mineração reduz-se para metade cerca de quatro em quatro anos: o "halving".
+mo-crypto.c3.viz.items.0.v	21 milhões
+mo-crypto.c3.viz.items.0.l	máximo de bitcoins
+mo-crypto.c3.viz.items.1.v	~4 anos
+mo-crypto.c3.viz.items.1.l	entre halvings
+mo-crypto.c3.viz.items.2.l	aprox. a última minerada
+mo-crypto.c4.title	Volatilidade
+mo-crypto.c4.text	Os preços das cripto oscilam loucamente. A Bitcoin já caiu mais de 70% várias vezes. Isso torna-a uma má reserva de valor a curto prazo para dinheiro de que vais precisar.
+mo-crypto.c4.viz.items.0	2011: queda de ~90%
+mo-crypto.c4.viz.items.1	2014: queda de ~80%
+mo-crypto.c4.viz.items.2	2018: queda de ~80%
+mo-crypto.c4.viz.items.3	2022: queda de ~75%
+mo-crypto.c5.title	Stablecoins
+mo-crypto.c5.text	As stablecoins são tokens cripto feitos para acompanhar uma moeda como o dólar, geralmente garantidos por reservas. Algumas colapsaram quando a garantia falhou.
+mo-crypto.c5.viz.l.t	Com reservas
+mo-crypto.c5.viz.l.items.0	dinheiro e obrigações
+mo-crypto.c5.viz.l.items.1	mais estáveis
+mo-crypto.c5.viz.r.t	Algorítmicas
+mo-crypto.c5.viz.r.items.0	mantidas por código
+mo-crypto.c5.viz.r.items.1	algumas colapsaram
+mo-crypto.c6.title	Cripto e crime
+mo-crypto.c6.text	As cripto são populares entre burlões: plataformas de investimento falsas, burlas românticas do tipo "pig butchering" e falsos apoios de celebridades. As transações são difíceis de reverter.
+mo-crypto.c6.viz.items.0	Plataformas falsas
+mo-crypto.c6.viz.items.1	Burlas românticas
+mo-crypto.c6.viz.items.2	Anúncios com falsas celebridades
+mo-crypto.c6.viz.items.3	Corretoras pirateadas
+mo-crypto.c7.title	Sem chaves, não é teu
+mo-crypto.c7.text	Se uma plataforma guarda as tuas cripto, dependes de ela continuar solvente e honesta. Quando a FTX colapsou em 2022, os clientes perderam acesso a milhares de milhões.
+mo-crypto.c7.viz.l.t	A corretora guarda
+mo-crypto.c7.viz.l.items.0	fácil
+mo-crypto.c7.viz.l.items.1	risco da plataforma
+mo-crypto.c7.viz.r.t	Tu guardas as chaves
+mo-crypto.c7.viz.r.items.0	controlo
+mo-crypto.c7.viz.r.items.1	risco de as perder
+mo-crypto.c8.title	Regulação
+mo-crypto.c8.text	O regulamento europeu MiCA, aplicável a partir de 2024–25, define regras para prestadores de cripto e stablecoins, incluindo licenciamento e proteção do consumidor.
+mo-crypto.c8.viz.events.0.l	MiCA aprovado
+mo-crypto.c8.viz.events.1.l	regras de stablecoins
+mo-crypto.c8.viz.events.2.y	Dez. 2024
+mo-crypto.c8.viz.events.2.l	aplicação total
+mo-crypto.c9.title	Se quiseres experimentar
+mo-crypto.c9.text	Uma regra prática comum: investe só o que poderias perder por completo, usa plataformas reguladas, ativa a autenticação de dois fatores e ignora retornos "garantidos". Não é aconselhamento.
+mo-crypto.c9.viz.items.0	Só o que podes perder
+mo-crypto.c9.viz.items.1	Plataformas reguladas
+mo-crypto.c9.viz.items.2	Autenticação de dois fatores
+mo-crypto.c9.viz.items.3	Ignora retornos garantidos
+mo-behaviour.title	Finanças comportamentais
+mo-behaviour.summary	Porque é que pessoas inteligentes erram com o dinheiro.
+mo-behaviour.q0.q	Manter ações em perda demasiado tempo, à espera de recuperar, chama-se…
+mo-behaviour.q0.o0	efeito manada
+mo-behaviour.q0.o1	efeito disposição
+mo-behaviour.q0.o2	ancoragem
+mo-behaviour.q0.x	Movido pela aversão à perda.
+mo-behaviour.q1.q	Quanto ganham, em geral, os investidores que negoceiam muito face aos pacientes?
+mo-behaviour.q1.o0	Mais
+mo-behaviour.q1.o1	Menos
+mo-behaviour.q1.o2	O mesmo
+mo-behaviour.q1.x	Custos e mau timing.
+mo-behaviour.q2.q	A adesão automática a planos de pensões é um exemplo de…
+mo-behaviour.q2.o0	um imposto
+mo-behaviour.q2.o1	um nudge (empurrão)
+mo-behaviour.q2.o2	um empréstimo
+mo-behaviour.q2.x	Funciona ao mudar a opção predefinida.
+mo-behaviour.c0.title	Enviesamento do presente
+mo-behaviour.c0.text	Sobrevalorizamos recompensas agora face a mais tarde. A maioria prefere 100 € hoje a 110 € na próxima semana, mas prefere 110 € daqui a 53 semanas a 100 € daqui a 52. O atraso é o mesmo.
+mo-behaviour.c0.viz.l.t	Agora vs 1 semana
+mo-behaviour.c0.viz.l.items.0	a maioria quer 100 € já
+mo-behaviour.c0.viz.r.t	1 ano vs 1 ano + 1 semana
+mo-behaviour.c0.viz.r.items.0	a maioria espera pelos 110 €
+mo-behaviour.c1.title	Contabilidade mental
+mo-behaviour.c1.text	Tratamos o dinheiro em "potes" mentais separados. Alguém pode ter poupanças a 2% e, ao mesmo tempo, um saldo de cartão a 18%, perdendo dinheiro na diferença.
+mo-behaviour.c1.viz.unit	% ao ano
+mo-behaviour.c1.viz.items.0.l	Poupança rende
+mo-behaviour.c1.viz.items.1.l	Cartão custa
+mo-behaviour.c2.title	Aversão à perda no investimento
+mo-behaviour.c2.text	Os investidores detestam tanto perder que mantêm ações em perda demasiado tempo, à espera de recuperar, e vendem as vencedoras cedo demais: o efeito disposição.
+mo-behaviour.c2.viz.l.t	Em perda
+mo-behaviour.c2.viz.l.items.0	mantidas demasiado
+mo-behaviour.c2.viz.l.items.1	à espera de recuperar
+mo-behaviour.c2.viz.r.t	Em ganho
+mo-behaviour.c2.viz.r.items.0	vendidas cedo demais
+mo-behaviour.c2.viz.r.items.1	para garantir ganhos
+mo-behaviour.c3.title	Efeito manada
+mo-behaviour.c3.text	Quando todos compram, parece seguro entrar; quando todos vendem, o pânico espalha-se. As bolhas e os cracks são, em parte, comportamento de manada.
+mo-behaviour.c3.viz.steps.0	Preços sobem
+mo-behaviour.c3.viz.steps.1	Mais gente compra
+mo-behaviour.c3.viz.steps.2	Bolha
+mo-behaviour.c3.viz.steps.3	Crash
+mo-behaviour.c4.title	Excesso de confiança
+mo-behaviour.c4.text	Os investidores que negoceiam com mais frequência tendem a ganhar menos, sobretudo por causa dos custos e do mau timing. Um estudo famoso concluiu que os mais ativos ficavam vários pontos abaixo por ano.
+mo-behaviour.c4.viz.unit	retorno anual, % (ilustrativo)
+mo-behaviour.c4.viz.items.0.l	Negoceiam pouco
+mo-behaviour.c4.viz.items.1.l	Negoceiam muito
+mo-behaviour.c5.title	Enviesamento da recência
+mo-behaviour.c5.text	Assumimos que as tendências recentes vão continuar: depois de um bom ano, toda a gente entra; depois de um crash, foge, muitas vezes no pior momento.
+mo-behaviour.c5.viz.steps.0	Ano forte
+mo-behaviour.c5.viz.steps.1	Espera-se mais do mesmo
+mo-behaviour.c5.viz.steps.2	Compra-se caro
+mo-behaviour.c5.viz.steps.3	Desilusão
+mo-behaviour.c6.title	O efeito de dotação
+mo-behaviour.c6.text	Valorizamos mais as coisas depois de serem nossas. Canecas oferecidas a estudantes "valiam" para eles cerca do dobro do que para quem as queria comprar.
+mo-behaviour.c6.viz.unit	preço, €
+mo-behaviour.c6.viz.items.0.l	Comprador pagaria
+mo-behaviour.c6.viz.items.1.l	Dono venderia por
+mo-behaviour.c7.title	Nudges
+mo-behaviour.c7.text	Pequenas mudanças na forma como as escolhas são apresentadas podem ajudar: a adesão automática a pensões e os planos "poupa mais amanhã" aumentam a poupança sem obrigar ninguém.
+mo-behaviour.c7.viz.steps.0	Adesão automática
+mo-behaviour.c7.viz.steps.1	A maioria fica
+mo-behaviour.c7.viz.steps.2	Mais poupança
+mo-behaviour.c8.title	Dinheiro e felicidade
+mo-behaviour.c8.text	Um rendimento mais alto está associado a mais felicidade, e alguns estudos mostram que os ganhos continuam em rendimentos elevados. Gastar em experiências, nos outros e em poupar tempo tende a dar mais alegria.
+mo-behaviour.c8.viz.items.0	Experiências, não coisas
+mo-behaviour.c8.viz.items.1	Gastar com os outros
+mo-behaviour.c8.viz.items.2	Comprar tempo
+mo-behaviour.c8.viz.items.3	Segurança financeira
+mo-behaviour.c9.title	Automatiza as boas escolhas
+mo-behaviour.c9.text	Configura transferências automáticas no dia do salário para poupanças e investimentos. Não podes gastar o que não vês, e escapas à luta da força de vontade.
+mo-behaviour.c9.viz.steps.0	Salário entra
+mo-behaviour.c9.viz.steps.1	Transferência automática
+mo-behaviour.c9.viz.steps.2	Poupança cresce
+mo-behaviour.c9.viz.steps.3	Gasta o resto
+mo-history.title	O dinheiro ao longo da história
+mo-history.summary	Crises, bolhas e lições.
+mo-history.q0.q	Quantos escudos valia um euro?
+mo-history.q0.o0	100
+mo-history.q0.o1	200,482
+mo-history.q0.o2	1000
+mo-history.q0.x	Fixado na transição.
+mo-history.q1.q	O que desencadeou a crise financeira de 2008?
+mo-history.q1.o0	Túlipas
+mo-history.q1.o1	Créditos à habitação arriscados agrupados em títulos
+mo-history.q1.o2	O preço do petróleo
+mo-history.q1.x	Os preços das casas caíram.
+mo-history.c0.title	A mania das túlipas
+mo-history.c0.text	Na Holanda da década de 1630, bolbos raros de túlipa terão sido vendidos pelo preço de uma casa, antes de os preços colapsarem em 1637. Os historiadores pensam hoje que a mania foi menor do que diz a lenda.
+mo-history.c0.viz.events.0.l	preços começam a subir
+mo-history.c0.viz.events.1.y	Jan. 1637
+mo-history.c0.viz.events.1.l	pico
+mo-history.c0.viz.events.2.y	Fev. 1637
+mo-history.c0.viz.events.2.l	colapso
+mo-history.c1.title	A Bolha dos Mares do Sul
+mo-history.c1.text	Em 1720, as ações da britânica Companhia dos Mares do Sul dispararam e afundaram. Isaac Newton perdeu uma fortuna e terá dito que conseguia calcular os astros, mas não a loucura das pessoas.
+mo-history.c1.viz.unit	preço da ação, £ (aprox.)
+mo-history.c1.viz.items.0.l	Jan. 1720
+mo-history.c1.viz.items.1.l	Jun. 1720
+mo-history.c1.viz.items.2.l	Dez. 1720
+mo-history.c2.title	O crash de 1929
+mo-history.c2.text	A bolsa norte-americana caiu a pique em outubro de 1929, ajudando a desencadear a Grande Depressão. As falências bancárias e os erros de política agravaram-na.
+mo-history.c2.viz.steps.0	Euforia especulativa
+mo-history.c2.viz.steps.1	Crash de outubro de 1929
+mo-history.c2.viz.steps.2	Falências bancárias
+mo-history.c2.viz.steps.3	Grande Depressão
+mo-history.c3.title	Hiperinflação
+mo-history.c3.text	Quando os governos imprimem dinheiro para pagar dívidas, os preços podem explodir. Na Alemanha, em 1923, os preços duplicavam de poucos em poucos dias; no Zimbabué, em 2008, ainda mais depressa.
+mo-history.c3.viz.items.0	Alemanha 1923
+mo-history.c3.viz.items.1	Hungria 1946
+mo-history.c3.viz.items.2	Zimbabué 2008
+mo-history.c3.viz.items.3	Venezuela, anos 2010
+mo-history.c4.title	Bretton Woods
+mo-history.c4.text	Em 1944, as grandes economias ligaram as suas moedas ao dólar, e o dólar ao ouro. Em 1971, os EUA acabaram com a convertibilidade em ouro, dando início às moedas flutuantes de hoje.
+mo-history.c4.viz.events.0.l	Bretton Woods
+mo-history.c4.viz.events.1.l	dólar larga o ouro
+mo-history.c4.viz.events.2.l	câmbios flutuantes
+mo-history.c5.title	A bolha das dot-com
+mo-history.c5.text	No fim dos anos 90, empresas de internet sem lucros dispararam. O Nasdaq caiu quase 80% entre 2000 e 2002. Algumas sobreviventes tornaram-se gigantes.
+mo-history.c5.viz.unit	índice Nasdaq (aprox.)
+mo-history.c5.viz.items.1.l	Mar. 2000
+mo-history.c5.viz.items.2.l	Out. 2002
+mo-history.c6.title	A crise de 2008
+mo-history.c6.text	Créditos à habitação arriscados nos EUA foram agrupados em títulos complexos. Quando os preços das casas caíram, as perdas espalharam-se pelo mundo. O Lehman Brothers colapsou em setembro de 2008.
+mo-history.c6.viz.steps.0	Créditos arriscados
+mo-history.c6.viz.steps.1	Agrupados e vendidos
+mo-history.c6.viz.steps.2	Casas desvalorizam
+mo-history.c6.viz.steps.3	Crise bancária global
+mo-history.c7.title	O resgate de Portugal
+mo-history.c7.text	Em 2011, durante a crise das dívidas soberanas do euro, Portugal recebeu um resgate de 78 mil milhões de euros da UE e do FMI, com duras condições de austeridade. Saiu do programa em 2014.
+mo-history.c7.viz.events.0.l	crise da dívida do euro
+mo-history.c7.viz.events.1.l	programa de 78 mil M€
+mo-history.c7.viz.events.2.l	saída limpa
+mo-history.c7.viz.events.3.l	dívida abaixo de 100% do PIB
+mo-history.c8.title	O euro
+mo-history.c8.text	O euro nasceu em 1999 para os bancos e em 2002 em notas e moedas. Portugal trocou os escudos a 200,482 escudos por euro.
+mo-history.c8.viz.items.0.a	1 euro
+mo-history.c8.viz.items.0.b	200,482 escudos
+mo-history.c8.viz.items.1.b	lançado em formato eletrónico
+mo-history.c8.viz.items.2.b	notas e moedas
+mo-history.c9.title	Lições das crises
+mo-history.c9.text	As crises têm padrões comuns: crédito barato, preços a subir, histórias de que "desta vez é diferente" e depois uma inversão súbita. A diversificação e a humildade protegem-te.
+mo-history.c9.viz.steps.0	Crédito barato
+mo-history.c9.viz.steps.1	Expansão
+mo-history.c9.viz.steps.2	Euforia
+mo-history.c9.viz.steps.3	Colapso
+mo-business.title	Como as empresas ganham dinheiro
+mo-business.summary	Ler o essencial.
+mo-business.q0.q	Um café tem 6000 € de custos fixos e ganha 2 € por café. O ponto de equilíbrio é…
+mo-business.q0.o0	1200
+mo-business.q0.o1	3000 cafés
+mo-business.q0.o2	6000
+mo-business.q0.x	Custos fixos ÷ margem.
+mo-business.q1.q	Porque é que uma empresa lucrativa pode ficar sem dinheiro?
+mo-business.q1.o0	Fraude
+mo-business.q1.o1	Os clientes pagam tarde e as contas vencem
+mo-business.q1.o2	Margens altas
+mo-business.q1.x	Lucro não é dinheiro em caixa.
+mo-business.c0.title	Receitas, custos, lucro
+mo-business.c0.text	As receitas são o dinheiro que entra das vendas. Subtrai os custos e tens o lucro. Uma empresa pode ter receitas enormes e ainda assim perder dinheiro.
+mo-business.c0.viz.f	lucro = receitas − custos
+mo-business.c0.viz.items.0.s	receitas
+mo-business.c0.viz.items.0.m	vendas
+mo-business.c0.viz.items.1.s	custos
+mo-business.c0.viz.items.1.m	tudo o que se gasta
+mo-business.c1.title	Margem bruta e líquida
+mo-business.c1.text	A margem bruta é o que sobra depois do custo direto dos produtos. A margem líquida é o que sobra depois de tudo, incluindo salários, renda, juros e impostos.
+mo-business.c1.viz.unit	€ por cada 100 € vendidos (exemplo)
+mo-business.c1.viz.items.0.l	Receitas
+mo-business.c1.viz.items.1.l	Lucro bruto
+mo-business.c1.viz.items.2.l	Lucro líquido
+mo-business.c2.title	Custos fixos e variáveis
+mo-business.c2.text	Os custos fixos, como a renda, mantêm-se iguais seja o que for que vendas; os variáveis, como os ingredientes, sobem com cada venda. Vender mais dilui os custos fixos.
+mo-business.c2.viz.l.t	Fixos
+mo-business.c2.viz.l.items.0	renda
+mo-business.c2.viz.l.items.1	salários
+mo-business.c2.viz.l.items.2	seguros
+mo-business.c2.viz.r.t	Variáveis
+mo-business.c2.viz.r.items.0	materiais
+mo-business.c2.viz.r.items.1	embalagens
+mo-business.c2.viz.r.items.2	entregas
+mo-business.c3.title	Ponto de equilíbrio
+mo-business.c3.text	O ponto de equilíbrio é onde as receitas cobrem todos os custos. Um café com 6000 € de custos fixos mensais e 2 € de lucro por café tem de vender 3000 cafés por mês.
+mo-business.c3.viz.f	equilíbrio = custos fixos ÷ margem por unidade
+mo-business.c3.viz.items.0.m	3000 cafés
+mo-business.c4.title	Fluxo de caixa
+mo-business.c4.text	Lucro não é dinheiro em caixa. Um negócio pode ser lucrativo no papel e ficar sem dinheiro se os clientes pagarem tarde. Muitas pequenas empresas falham por isto.
+mo-business.c4.viz.steps.0	Venda feita
+mo-business.c4.viz.steps.1	Fatura enviada
+mo-business.c4.viz.steps.2	Esperar 60 dias
+mo-business.c4.viz.steps.3	Contas vencem hoje
+mo-business.c5.title	Modelos de negócio
+mo-business.c5.text	As empresas ganham de formas diferentes: venda de produtos, subscrições, publicidade, comissões ou licenciamento.
+mo-business.c5.viz.items.0.a	Venda de produtos
+mo-business.c5.viz.items.0.b	uma padaria
+mo-business.c5.viz.items.1.a	Subscrição
+mo-business.c5.viz.items.1.b	streaming
+mo-business.c5.viz.items.2.a	Publicidade
+mo-business.c5.viz.items.2.b	motores de busca
+mo-business.c5.viz.items.3.a	Comissão
+mo-business.c5.viz.items.3.b	marketplaces
+mo-business.c6.title	Economias de escala
+mo-business.c6.text	As empresas maiores conseguem produzir cada unidade mais barato: compras em grande quantidade, máquinas especializadas e diluição dos custos fixos.
+mo-business.c6.viz.unit	custo por unidade, € (ilustrativo)
+mo-business.c6.viz.items.0.l	100 unidades
+mo-business.c6.viz.items.1.l	1000 unidades
+mo-business.c6.viz.items.2.l	10 000 unidades
+mo-business.c7.title	Fossos competitivos
+mo-business.c7.text	Warren Buffett procura "fossos": vantagens que protegem os lucros, como marcas, efeitos de rede, patentes ou custos de mudança.
+mo-business.c7.viz.items.0	Marca forte
+mo-business.c7.viz.items.1	Efeitos de rede
+mo-business.c7.viz.items.2	Patentes
+mo-business.c7.viz.items.3	Custos de mudança altos
+mo-business.c8.title	Avaliação
+mo-business.c8.text	O valor de mercado de uma empresa é o preço da ação vezes o número de ações. O rácio preço/lucro (PER) compara o preço com o lucro por ação.
+mo-business.c8.viz.f	PER = preço da ação ÷ lucro por ação
+mo-business.c8.viz.items.0.s	PER alto
+mo-business.c8.viz.items.0.m	espera-se crescimento
+mo-business.c8.viz.items.1.s	PER baixo
+mo-business.c8.viz.items.1.m	mais barata ou lenta
+mo-business.c9.title	Uma banca de limonada
+mo-business.c9.text	Copos e limões custam 0,40 € por copo; vendes a 1,50 €. A banca custa 33 € por dia. Atinges o equilíbrio aos 30 copos; o copo 31 já é lucro.
+mo-business.c9.example.0	Margem = 1,50 € − 0,40 € = 1,10 €
+mo-business.c9.example.1	33 € ÷ 1,10 € = 30 copos
+mo-business.c9.viz.unit	lucro, €
+mo-business.c9.viz.items.0.l	20 copos
+mo-business.c9.viz.items.1.l	30 copos
+mo-business.c9.viz.items.2.l	50 copos
+mo-insurance.title	Seguros e risco
+mo-insurance.summary	Pagar pouco para evitar um desastre.
+mo-insurance.q0.q	O que é a franquia?
+mo-insurance.q0.o0	O prémio anual
+mo-insurance.q0.o1	O que pagas antes de o seguro cobrir o resto
+mo-insurance.q0.o2	Um imposto
+mo-insurance.q0.x	Franquia maior, prémio menor.
+mo-insurance.q1.q	Que seguro é obrigatório para os carros em Portugal?
+mo-insurance.q1.o0	Danos próprios
+mo-insurance.q1.o1	Responsabilidade civil
+mo-insurance.q1.o2	Furto
+mo-insurance.q1.x	Cobre os danos causados a terceiros.
+mo-insurance.c0.title	Partilhar o risco
+mo-insurance.c0.text	Um seguro junta os pequenos pagamentos de muitas pessoas para cobrir as poucas que sofrem grandes perdas. Cada um paga um prémio previsível em vez de arriscar a ruína.
+mo-insurance.c0.viz.steps.0	Muitos pagam prémios
+mo-insurance.c0.viz.steps.1	Fundo comum
+mo-insurance.c0.viz.steps.2	Poucos têm perdas
+mo-insurance.c0.viz.steps.3	O fundo paga-lhes
+mo-insurance.c1.title	Segura o que é grande
+mo-insurance.c1.text	O seguro vale mais para perdas que não conseguirias absorver: a casa, a responsabilidade civil, a saúde, o rendimento. Para perdas pequenas, poupar tu mesmo sai muitas vezes mais barato.
+mo-insurance.c1.viz.l.t	Segurar
+mo-insurance.c1.viz.l.items.0	incêndio na casa
+mo-insurance.c1.viz.l.items.1	resp. civil
+mo-insurance.c1.viz.l.items.2	invalidez
+mo-insurance.c1.viz.r.t	Assumir tu
+mo-insurance.c1.viz.r.items.0	ecrã do telemóvel
+mo-insurance.c1.viz.r.items.1	pequenas reparações
+mo-insurance.c2.title	Prémios e franquias
+mo-insurance.c2.text	O prémio é o que pagas regularmente. A franquia é o que pagas antes de o seguro entrar em ação. Uma franquia mais alta costuma significar um prémio mais baixo.
+mo-insurance.c2.viz.l.t	Franquia baixa
+mo-insurance.c2.viz.l.items.0	prémio mais alto
+mo-insurance.c2.viz.r.t	Franquia alta
+mo-insurance.c2.viz.r.items.0	prémio mais baixo
+mo-insurance.c3.title	Seguros obrigatórios
+mo-insurance.c3.text	Em Portugal, o seguro automóvel de responsabilidade civil é obrigatório. O seguro de incêndio é exigido nos edifícios em propriedade horizontal, e os bancos exigem-no nos créditos à habitação.
+mo-insurance.c3.viz.items.0	Resp. civil auto: obrigatório
+mo-insurance.c3.viz.items.1	Incêndio: exigido em condomínios
+mo-insurance.c3.viz.items.2	Crédito habitação: vida e multirriscos geralmente exigidos
+mo-insurance.c4.title	Seguro de vida
+mo-insurance.c4.text	O seguro de vida paga aos teus dependentes se morreres. Conta mais quando outros dependem do teu rendimento, como filhos ou um companheiro com quem partilhas um crédito à habitação.
+mo-insurance.c4.viz.steps.0	Dependentes precisam do rendimento
+mo-insurance.c4.viz.steps.1	Segura esse rendimento
+mo-insurance.c4.viz.steps.2	Tranquilidade
+mo-insurance.c5.title	Seguro de saúde
+mo-insurance.c5.text	O SNS português garante cuidados de saúde públicos. Um seguro de saúde privado pode reduzir os tempos de espera para consultas, mas verifica as exclusões, os limites e os períodos de carência.
+mo-insurance.c5.viz.l.t	SNS
+mo-insurance.c5.viz.l.items.0	público
+mo-insurance.c5.viz.l.items.1	universal
+mo-insurance.c5.viz.l.items.2	listas de espera
+mo-insurance.c5.viz.r.t	Seguro privado
+mo-insurance.c5.viz.r.items.0	acesso mais rápido
+mo-insurance.c5.viz.r.items.1	exclusões
+mo-insurance.c5.viz.r.items.2	limites
+mo-insurance.c6.title	Lê as exclusões
+mo-insurance.c6.text	O que não está coberto conta tanto como o que está. Cheias, sismos e doenças preexistentes são exclusões comuns.
+mo-insurance.c6.viz.items.0	Sismos
+mo-insurance.c6.viz.items.1	Cheias
+mo-insurance.c6.viz.items.2	Doenças preexistentes
+mo-insurance.c6.viz.items.3	Desgaste
+mo-insurance.c7.title	Risco moral
+mo-insurance.c7.text	Depois de seguras, as pessoas podem correr mais riscos, sabendo que outra pessoa paga. As franquias e os copagamentos ajudam a contrariar isso.
+mo-insurance.c7.viz.steps.0	Seguro feito
+mo-insurance.c7.viz.steps.1	Menos cuidado
+mo-insurance.c7.viz.steps.2	Mais sinistros
+mo-insurance.c7.viz.steps.3	Prémios mais altos para todos
+mo-insurance.c8.title	Cobertura de sismos
+mo-insurance.c8.text	Apesar da história de 1755, a cobertura de sismos em Portugal é opcional e muitas vezes fica fora das apólices habitação normais. Muitas casas não estão seguras contra sismos.
+mo-insurance.c8.viz.items.0.w	"O meu seguro da casa cobre sismos"
+mo-insurance.c8.viz.items.0.r	Confirma: muitas vezes é um extra opcional
+mo-insurance.c9.title	Comparar ofertas
+mo-insurance.c9.text	Compara apólices pela cobertura, exclusões e franquia, e não só pelo prémio. Revê todos os anos; a fidelidade raramente é recompensada.
+mo-insurance.c9.viz.items.0	Mesma cobertura?
+mo-insurance.c9.viz.items.1	Exclusões
+mo-insurance.c9.viz.items.2	Franquia
+mo-insurance.c9.viz.items.3	Fama nos sinistros
+mo-scams.title	Burlas e fraude
+mo-scams.summary	Proteger o teu dinheiro.
+mo-scams.q0.q	Um banco a sério pede-te o código SMS de utilização única?
+mo-scams.q0.o0	Sim, para te verificar
+mo-scams.q0.o1	Não, nunca
+mo-scams.q0.o2	Só por email
+mo-scams.q0.x	Desliga e liga para o número oficial.
+mo-scams.q1.q	Onde podes confirmar se uma empresa de investimento está autorizada em Portugal?
+mo-scams.q1.o0	No Facebook
+mo-scams.q1.o1	Nas listas da CMVM e do Banco de Portugal
+mo-scams.q1.o2	No site da própria empresa
+mo-scams.q1.x	Os reguladores publicam alertas.
+mo-scams.c0.title	O truque da urgência
+mo-scams.c0.text	A maioria das burlas cria urgência: "a sua conta vai ser bloqueada", "aja já". A pressão impede-te de pensar. Os bancos a sério não te apressam assim.
+mo-scams.c0.viz.steps.0	Mensagem urgente
+mo-scams.c0.viz.steps.1	Pânico
+mo-scams.c0.viz.steps.2	Agir sem verificar
+mo-scams.c0.viz.steps.3	Dinheiro perdido
+mo-scams.c1.title	Phishing
+mo-scams.c1.text	Emails, SMS ou chamadas falsos fazem-se passar pelo teu banco, pelas Finanças ou por uma empresa de entregas, pedindo-te para clicar num link ou partilhar códigos.
+mo-scams.c1.viz.items.0	SMS falso do banco
+mo-scams.c1.viz.items.1	Email falso de reembolso do IRS
+mo-scams.c1.viz.items.2	Falsa taxa de entrega
+mo-scams.c1.viz.items.3	Falso apoio técnico ao telefone
+mo-scams.c2.title	Nunca partilhes códigos
+mo-scams.c2.text	Nenhum banco a sério te pede o PIN completo do cartão, a palavra-passe do homebanking ou o código de utilização única enviado para o telemóvel. Quem pede é burlão.
+mo-scams.c2.viz.items.0.w	"O banco ligou a pedir o meu código"
+mo-scams.c2.viz.items.0.r	Desliga e liga para o número oficial do banco
+mo-scams.c3.title	Burlas "Olá pai, olá mãe"
+mo-scams.c3.text	Os burlões enviam mensagens a pais fazendo-se passar pelo filho com um número novo, a pedir dinheiro com urgência. Liga para o número antigo do filho para confirmar.
+mo-scams.c3.viz.steps.0	"Mãe, número novo, preciso de dinheiro!"
+mo-scams.c3.viz.steps.1	Liga para o número antigo
+mo-scams.c3.viz.steps.2	Confirma
+mo-scams.c3.viz.steps.3	Quase sempre é burla
+mo-scams.c4.title	Burlas de investimento
+mo-scams.c4.text	As plataformas falsas mostram retornos impressionantes e deixam-te levantar pequenas quantias para ganhar confiança, depois desaparecem com depósitos maiores. Consulta as listas de alerta dos reguladores.
+mo-scams.c4.viz.steps.0	Pequeno investimento
+mo-scams.c4.viz.steps.1	Ganhos falsos
+mo-scams.c4.viz.steps.2	Investes mais
+mo-scams.c4.viz.steps.3	Não consegues levantar
+mo-scams.c5.title	Consulta o regulador
+mo-scams.c5.text	Em Portugal, a CMVM, o Banco de Portugal e a ASF publicam listas de entidades não autorizadas. Se uma empresa não está registada, não invistas.
+mo-scams.c5.viz.items.0.a	CMVM
+mo-scams.c5.viz.items.0.b	valores mobiliários e investimentos
+mo-scams.c5.viz.items.1.a	Banco de Portugal
+mo-scams.c5.viz.items.1.b	bancos e crédito
+mo-scams.c5.viz.items.2.a	ASF
+mo-scams.c5.viz.items.2.b	seguros e pensões
+mo-scams.c6.title	Burlas românticas
+mo-scams.c6.text	Os burlões criam relações online durante semanas e depois inventam emergências ou "oportunidades" de investimento. Nunca envies dinheiro a alguém que não conheces pessoalmente.
+mo-scams.c6.viz.steps.0	Romance online
+mo-scams.c6.viz.steps.1	Confiança criada
+mo-scams.c6.viz.steps.2	Crise súbita
+mo-scams.c6.viz.steps.3	Pedido de dinheiro
+mo-scams.c7.title	Segurança do cartão
+mo-scams.c7.text	Usa pagamentos contactless e notificações da app, define limites de gastos e usa cartões virtuais nas compras online. Comunica logo a perda de um cartão.
+mo-scams.c7.viz.items.0	Notificações da app
+mo-scams.c7.viz.items.1	Limites de gastos
+mo-scams.c7.viz.items.2	Cartões virtuais online
+mo-scams.c7.viz.items.3	Comunica perdas depressa
+mo-scams.c8.title	Burlas com MB WAY
+mo-scams.c8.text	Burlões que se fazem passar por compradores em sites de vendas pedem-te para "receber" dinheiro por MB WAY, mas na verdade levam-te a enviá-lo ou a associar o telemóvel deles à tua conta.
+mo-scams.c8.viz.items.0.w	"Vá ao multibanco para receber o pagamento"
+mo-scams.c8.viz.items.0.r	Para receber dinheiro nunca tens de fazer nada no multibanco
+mo-scams.c9.title	Se acontecer
+mo-scams.c9.text	Contacta logo o banco para bloquear cartões e transferências, muda as palavras-passe, apresenta queixa à polícia e guarda as provas. A rapidez aumenta as hipóteses de recuperar.
+mo-scams.c9.viz.steps.0	Liga ao banco
+mo-scams.c9.viz.steps.1	Bloqueia cartões
+mo-scams.c9.viz.steps.2	Queixa à polícia
+mo-scams.c9.viz.steps.3	Guarda provas
+mo-markets.title	Como funciona a bolsa
+mo-markets.summary	Comprar uma fatia de empresas.
+mo-markets.q0.q	O que é um mercado em baixa (bear market)?
+mo-markets.q0.o0	Uma subida de 20%
+mo-markets.q0.o1	Uma queda de 20% ou mais face a um pico
+mo-markets.q0.o2	Um mercado de animais
+mo-markets.q0.x	Os touros investem para cima; os ursos atacam para baixo.
+mo-markets.q1.q	O que oferece um ETF?
+mo-markets.q1.o0	Retornos garantidos
+mo-markets.q1.o1	Um cabaz de ativos negociado como uma ação
+mo-markets.q1.o2	Depósitos bancários
+mo-markets.q1.x	Diversificação a baixo custo.
+mo-markets.q2.q	Qual é o principal índice bolsista português?
+mo-markets.q2.o0	DAX
+mo-markets.q2.o1	PSI
+mo-markets.q2.o2	FTSE
+mo-markets.q2.x	Na Euronext Lisbon.
+mo-markets.c0.title	Porque é que as empresas vão para a bolsa
+mo-markets.c0.text	As empresas vendem ações em bolsa para angariar dinheiro para crescer. Os primeiros investidores também podem vender as suas participações. A primeira cotação é uma IPO (oferta pública inicial).
+mo-markets.c0.viz.steps.0	Empresa privada
+mo-markets.c0.viz.steps.1	IPO
+mo-markets.c0.viz.steps.2	Ações cotadas em bolsa
+mo-markets.c0.viz.steps.3	Empresa recebe capital
+mo-markets.c1.title	Bolsas
+mo-markets.c1.text	As bolsas são mercados que juntam compradores e vendedores. A portuguesa é a Euronext Lisbon; o seu principal índice, o PSI, acompanha as maiores empresas cotadas.
+mo-markets.c1.viz.items.0.a	Euronext Lisbon
+mo-markets.c1.viz.items.0.b	bolsa portuguesa
+mo-markets.c1.viz.items.1.a	PSI
+mo-markets.c1.viz.items.1.b	principal índice português
+mo-markets.c1.viz.items.2.a	S&P 500
+mo-markets.c1.viz.items.2.b	500 grandes empresas dos EUA
+mo-markets.c1.viz.items.3.a	Euro Stoxx 50
+mo-markets.c1.viz.items.3.b	50 grandes da zona euro
+mo-markets.c2.title	O que mexe os preços
+mo-markets.c2.text	Os preços mexem com a oferta e a procura, movidas pelos lucros futuros esperados, pelas taxas de juro, pelas notícias e pelo sentimento.
+mo-markets.c2.viz.items.0	Lucros esperados
+mo-markets.c2.viz.items.1	Taxas de juro
+mo-markets.c2.viz.items.2	Notícias e eventos
+mo-markets.c2.viz.items.3	Humor dos investidores
+mo-markets.c3.title	Índices
+mo-markets.c3.text	Um índice acompanha um cabaz de ações para mostrar como está um mercado. O S&P 500 inclui cerca de 500 das maiores empresas dos EUA, ponderadas pela dimensão.
+mo-markets.c3.viz.steps.0	Escolher empresas
+mo-markets.c3.viz.steps.1	Ponderar pela dimensão
+mo-markets.c3.viz.steps.2	Seguir o valor total
+mo-markets.c3.viz.steps.3	Nível do índice
+mo-markets.c4.title	Mercados em alta e em baixa
+mo-markets.c4.text	Um bull market é uma subida prolongada; um bear market é uma queda de 20% ou mais face a um pico. Os touros investem para cima; os ursos atacam para baixo.
+mo-markets.c4.viz.l.t	Touro
+mo-markets.c4.viz.l.items.0	preços a subir
+mo-markets.c4.viz.l.items.1	otimismo
+mo-markets.c4.viz.r.t	Urso
+mo-markets.c4.viz.r.items.0	quedas de 20%+
+mo-markets.c4.viz.r.items.1	pessimismo
+mo-markets.c5.title	Retornos a longo prazo
+mo-markets.c5.text	Em períodos longos, as ações mundiais renderam em média cerca de 5% ao ano acima da inflação, mas com grandes oscilações e alguns longos períodos estagnados.
+mo-markets.c5.viz.unit	retorno real, % ao ano (longo prazo, aprox.)
+mo-markets.c5.viz.items.0.l	Liquidez
+mo-markets.c5.viz.items.1.l	Obrigações
+mo-markets.c5.viz.items.2.l	Ações
+mo-markets.c6.title	Quedas
+mo-markets.c6.text	Até os bons mercados têm grandes quedas. As ações mundiais caíram cerca de 50% em 2008–09 e cerca de 34% em semanas no início de 2020, e depois recuperaram.
+mo-markets.c6.viz.unit	% de queda (aprox.)
+mo-markets.c7.title	ETF
+mo-markets.c7.text	Os fundos cotados (ETF) detêm cabazes de ativos e negoceiam-se como ações. Um único ETF mundial pode dar-te milhares de empresas a baixo custo.
+mo-markets.c7.viz.l.t	Uma só ação
+mo-markets.c7.viz.l.items.0	uma empresa
+mo-markets.c7.viz.l.items.1	mais risco
+mo-markets.c7.viz.r.t	ETF mundial
+mo-markets.c7.viz.r.items.0	milhares de empresas
+mo-markets.c7.viz.r.items.1	diversificado
+mo-markets.c8.title	Custos
+mo-markets.c8.text	As comissões dos fundos (TER), as comissões de negociação, a conversão cambial e os impostos comem os retornos. Ao longo de décadas, pequenas diferenças capitalizam-se.
+mo-markets.c8.viz.items.0	Comissão do fundo (TER)
+mo-markets.c8.viz.items.1	Comissões de negociação
+mo-markets.c8.viz.items.2	Conversão cambial
+mo-markets.c8.viz.items.3	Impostos sobre ganhos
+mo-markets.c9.title	Imposto sobre mais-valias em Portugal
+mo-markets.c9.text	As mais-valias da venda de ações e os dividendos são, em geral, tributados a uma taxa fixa de 28% em Portugal, com a opção de os englobar no IRS. As regras mudam; confirma a lei em vigor.
+mo-markets.c9.viz.f	imposto = mais-valia × 28%
+mo-markets.c9.viz.items.0.s	mais-valia
+mo-markets.c9.viz.items.0.m	preço de venda − preço de compra
+mo-markets.c9.viz.items.1.s	ganho de 1000 €
+mo-markets.c9.viz.items.1.m	280 € de imposto
+mo-trade.title	A economia global
+mo-trade.summary	Comércio, moedas e grandes forças.
+mo-trade.q0.q	O que é uma tarifa aduaneira?
+mo-trade.q0.o0	Um subsídio
+mo-trade.q0.o1	Um imposto sobre importações
+mo-trade.q0.o2	Um tipo de empréstimo
+mo-trade.q0.x	Faz subir os preços para os consumidores.
+mo-trade.q1.q	Desde quando existe o mercado único da UE?
+mo-trade.q1.o0	1957
+mo-trade.q1.o1	1993
+mo-trade.q1.o2	2002
+mo-trade.q1.x	Livre circulação de bens, serviços, pessoas e capitais.
+mo-trade.c0.title	Porque é que os países trocam
+mo-trade.c0.text	O comércio permite aos países especializar-se e aos consumidores ter bens mais baratos e variados. Portugal exporta automóveis, máquinas, cortiça, vinho, vestuário e serviços de turismo.
+mo-trade.c0.viz.items.0	Veículos e componentes
+mo-trade.c0.viz.items.1	Máquinas
+mo-trade.c0.viz.items.2	Turismo
+mo-trade.c0.viz.items.3	Vestuário e calçado
+mo-trade.c0.viz.items.4	Cortiça e vinho
+mo-trade.c1.title	O turismo conta
+mo-trade.c1.text	O turismo é uma das maiores fontes de receitas de exportação de Portugal, trazendo dezenas de milhões de visitantes por ano, cerca de três vezes a população.
+mo-trade.c1.viz.unit	milhões
+mo-trade.c1.viz.items.0.l	População de Portugal
+mo-trade.c1.viz.items.1.l	Hóspedes por ano
+mo-trade.c2.title	Défices comerciais
+mo-trade.c2.text	Um país com défice comercial importa mais do que exporta. Não é automaticamente mau: pode estar a investir ou a consumir com financiamento externo.
+mo-trade.c2.viz.l.t	Excedente
+mo-trade.c2.viz.l.items.0	exportações > importações
+mo-trade.c2.viz.r.t	Défice
+mo-trade.c2.viz.r.items.0	importações > exportações
+mo-trade.c3.title	Tarifas aduaneiras
+mo-trade.c3.text	Uma tarifa aduaneira é um imposto sobre as importações. Protege alguns produtores nacionais, mas faz subir os preços para os consumidores e pode provocar retaliação.
+mo-trade.c3.viz.steps.0	Tarifa nas importações
+mo-trade.c3.viz.steps.1	Preços mais altos
+mo-trade.c3.viz.steps.2	Algumas empresas protegidas
+mo-trade.c3.viz.steps.3	Risco de retaliação
+mo-trade.c4.title	O mercado único da UE
+mo-trade.c4.text	Desde 1993, bens, serviços, pessoas e capitais circulam livremente entre os Estados-Membros da UE, o maior mercado único do mundo segundo muitos critérios.
+mo-trade.c4.viz.items.0	Livre circulação de bens
+mo-trade.c4.viz.items.1	Serviços
+mo-trade.c4.viz.items.2	Pessoas
+mo-trade.c4.viz.items.3	Capitais
+mo-trade.c5.title	Cadeias de abastecimento
+mo-trade.c5.text	Os produtos atravessam muitas fronteiras antes de os comprares. A pandemia e o bloqueio do Canal do Suez em 2021 mostraram como as cadeias de abastecimento longas podem ser frágeis.
+mo-trade.c5.viz.steps.0	Matérias-primas
+mo-trade.c5.viz.steps.1	Componentes no estrangeiro
+mo-trade.c5.viz.steps.2	Montagem
+mo-trade.c5.viz.steps.3	Transporte
+mo-trade.c5.viz.steps.4	A tua loja
+mo-trade.c6.title	Matérias-primas
+mo-trade.c6.text	Matérias-primas como petróleo, trigo, café e cobre são negociadas a nível global. Os seus preços afetam a inflação, as contas de combustível e os preços dos alimentos em todo o lado.
+mo-trade.c6.viz.items.0	Petróleo e gás
+mo-trade.c6.viz.items.1	Trigo e milho
+mo-trade.c6.viz.items.2	Café e açúcar
+mo-trade.c6.viz.items.3	Cobre e metais
+mo-trade.c7.title	Taxas de juro no mundo
+mo-trade.c7.text	Quando a Reserva Federal dos EUA ou o BCE sobem as taxas, pedir emprestado fica mais caro em todo o mundo, o que afeta moedas, créditos à habitação e mercados.
+mo-trade.c7.viz.steps.0	Banco central sobe taxas
+mo-trade.c7.viz.steps.1	Crédito mais caro
+mo-trade.c7.viz.steps.2	Consumo abranda
+mo-trade.c7.viz.steps.3	Inflação alivia
+mo-trade.c8.title	Mercados emergentes
+mo-trade.c8.text	Economias de crescimento rápido como a Índia, a Indonésia e o Brasil têm um peso crescente na produção mundial. A China tornou-se a maior economia do mundo em paridade de poder de compra por volta de 2016.
+mo-trade.c8.viz.unit	% do PIB mundial, PPC (aprox.)
+mo-trade.c8.viz.items.0.l	China
+mo-trade.c8.viz.items.1.l	EUA
+mo-trade.c8.viz.items.2.l	UE
+mo-trade.c8.viz.items.3.l	Índia
+mo-trade.c9.title	Remessas
+mo-trade.c9.text	Os emigrantes enviam dinheiro para casa: as remessas para países de rendimento baixo e médio ultrapassam 650 mil milhões de dólares por ano, mais do que a ajuda externa.
+mo-trade.c9.viz.unit	mil milhões de $ por ano (aprox.)
+mo-trade.c9.viz.items.0.l	Ajuda externa
+mo-trade.c9.viz.items.1.l	Remessas
+mo-negotiate.title	Negociação e salário
+mo-negotiate.summary	Receber o que vales.
+mo-negotiate.q0.q	O que é a BATNA?
+mo-negotiate.q0.o0	O teu salário
+mo-negotiate.q0.o1	A tua melhor alternativa se o acordo falhar
+mo-negotiate.q0.o2	Um tipo de contrato
+mo-negotiate.q0.x	Uma BATNA forte dá poder negocial.
+mo-negotiate.q1.q	O que deves comparar entre ofertas de emprego?
+mo-negotiate.q1.o0	Só o salário bruto
+mo-negotiate.q1.o1	O salário líquido e o pacote total
+mo-negotiate.q1.o2	Os nomes dos cargos
+mo-negotiate.q1.x	Os benefícios também contam.
+mo-negotiate.c0.title	Conhece o teu valor de mercado
+mo-negotiate.c0.text	Pesquisa o salário típico para a tua função, experiência e localização em sites de emprego, estudos salariais do setor e junto de colegas. Na negociação, os dados vencem as impressões.
+mo-negotiate.c0.viz.items.0	Sites de emprego
+mo-negotiate.c0.viz.items.1	Estudos salariais do setor
+mo-negotiate.c0.viz.items.2	Recrutadores
+mo-negotiate.c0.viz.items.3	Colegas de confiança
+mo-negotiate.c1.title	BATNA
+mo-negotiate.c1.text	A tua BATNA é a melhor alternativa a um acordo negociado: o que vais fazer se este acordo falhar. Quanto mais forte for, mais forte é a tua posição.
+mo-negotiate.c1.viz.l.t	BATNA fraca
+mo-negotiate.c1.viz.l.items.0	sem outras ofertas
+mo-negotiate.c1.viz.l.items.1	menos poder
+mo-negotiate.c1.viz.r.t	BATNA forte
+mo-negotiate.c1.viz.r.items.0	outra oferta
+mo-negotiate.c1.viz.r.items.1	mais poder
+mo-negotiate.c2.title	Ancoragem na negociação
+mo-negotiate.c2.text	O primeiro número tende a ancorar a discussão. Se tiveres bons dados, ser tu a dizer primeiro um número ambicioso mas justificado pode jogar a teu favor.
+mo-negotiate.c2.viz.items.0.l	Primeira oferta deles
+mo-negotiate.c2.viz.items.1.l	A tua âncora*
+mo-negotiate.c2.viz.items.2.l	Acordo final
+mo-negotiate.c3.title	Pacote total
+mo-negotiate.c3.text	O salário não é tudo: prémios, subsídio de refeição, seguro de saúde, teletrabalho, orçamento para formação e férias, tudo tem valor.
+mo-negotiate.c3.viz.items.0	Salário base
+mo-negotiate.c3.viz.items.1	Prémio
+mo-negotiate.c3.viz.items.2	Subsídio de refeição
+mo-negotiate.c3.viz.items.3	Seguro de saúde
+mo-negotiate.c3.viz.items.4	Teletrabalho
+mo-negotiate.c3.viz.items.5	Formação
+mo-negotiate.c4.title	Negocia o aumento
+mo-negotiate.c4.text	As melhores alturas para pedir são depois de um grande sucesso, nas avaliações de desempenho ou quando assumes novas responsabilidades. Leva provas do teu impacto.
+mo-negotiate.c4.viz.steps.0	Regista as vitórias
+mo-negotiate.c4.viz.steps.1	Escolhe o momento
+mo-negotiate.c4.viz.steps.2	Mostra o impacto
+mo-negotiate.c4.viz.steps.3	Faz um pedido claro
+mo-negotiate.c5.title	Ouve mais
+mo-negotiate.c5.text	Pergunta do que a outra parte precisa: limites de orçamento, prazos, prioridades. Soluções criativas satisfazem muitas vezes os dois lados, como começar mais tarde em troca de um salário mais alto.
+mo-negotiate.c5.viz.l.t	A tua prioridade
+mo-negotiate.c5.viz.l.items.0	salário
+mo-negotiate.c5.viz.r.t	A restrição deles
+mo-negotiate.c5.viz.r.items.0	orçamento deste ano
+mo-negotiate.c5.viz.r.items.1	solução: aumento após seis meses
+mo-negotiate.c6.title	O silêncio é poderoso
+mo-negotiate.c6.text	Depois de fazeres uma proposta ou de a receberes, faz uma pausa. As pessoas costumam preencher o silêncio com cedências.
+mo-negotiate.c6.viz.steps.0	Faz o teu pedido
+mo-negotiate.c6.viz.steps.1	Fica em silêncio
+mo-negotiate.c6.viz.steps.2	Deixa-os responder
+mo-negotiate.c7.title	Bruto vs líquido
+mo-negotiate.c7.text	Em Portugal, a diferença entre o salário bruto e o líquido inclui a Segurança Social (11% para os trabalhadores) e a retenção na fonte de IRS. Compara as ofertas em valores líquidos.
+mo-negotiate.c7.viz.unit	€ por mês (ilustrativo)
+mo-negotiate.c7.viz.items.0.l	Bruto
+mo-negotiate.c7.viz.items.1.l	Segurança Social
+mo-negotiate.c7.viz.items.2.l	Retenção de IRS
+mo-negotiate.c7.viz.items.3.l	Líquido
+mo-negotiate.c8.title	O custo de não negociar
+mo-negotiate.c8.text	Uma diferença de 2000 € no salário inicial, acumulada pelos aumentos ao longo de uma carreira, pode somar dezenas de milhares de euros.
+mo-negotiate.c8.viz.unit	salário extra acumulado, € (aumentos de 3%)
+mo-negotiate.c8.viz.items.0.l	Ao fim de 5 anos
+mo-negotiate.c8.viz.items.1.l	Ao fim de 10 anos
+mo-negotiate.c8.viz.items.2.l	Ao fim de 20 anos
+mo-negotiate.c9.title	Um guião
+mo-negotiate.c9.text	"Estou entusiasmado com esta função. Com base na minha pesquisa e na minha experiência em X, esperava algo mais perto de Y €. Há flexibilidade?"
+mo-negotiate.c9.viz.steps.0	Mostra entusiasmo
+mo-negotiate.c9.viz.steps.1	Apresenta provas
+mo-negotiate.c9.viz.steps.2	Diz o teu número
+mo-negotiate.c9.viz.steps.3	Pergunta pela flexibilidade
+mo-goals.title	Planeamento financeiro
+mo-goals.summary	Transformar objetivos num plano.
+mo-goals.q0.q	O que é o património líquido?
+mo-goals.q0.o0	O teu salário
+mo-goals.q0.o1	Ativos menos passivos
+mo-goals.q0.o2	Só as tuas poupanças
+mo-goals.q0.x	Acompanha-o todos os anos.
+mo-goals.q1.q	Onde se deve guardar, em geral, o dinheiro de que vais precisar daqui a dois anos?
+mo-goals.q1.o0	Ações
+mo-goals.q1.o1	Depósitos seguros ou contas poupança
+mo-goals.q1.o2	Cripto
+mo-goals.q1.x	Horizonte curto, risco baixo.
+mo-goals.c0.title	Objetivos SMART
+mo-goals.c0.text	Objetivos vagos ("poupar mais") raramente funcionam. Torna-os específicos, mensuráveis, alcançáveis, relevantes e com prazo: "poupar 6000 € para um carro até dezembro de 2027".
+mo-goals.c0.viz.items.0.a	Específico
+mo-goals.c0.viz.items.0.b	o quê, ao certo
+mo-goals.c0.viz.items.1.a	Mensurável
+mo-goals.c0.viz.items.1.b	quanto
+mo-goals.c0.viz.items.2.a	Alcançável
+mo-goals.c0.viz.items.2.b	realista
+mo-goals.c0.viz.items.3.a	Relevante
+mo-goals.c0.viz.items.3.b	importa-te
+mo-goals.c0.viz.items.4.a	Com prazo
+mo-goals.c0.viz.items.4.b	até quando
+mo-goals.c1.title	Património líquido
+mo-goals.c1.text	O teu património líquido é o que tens menos o que deves. Acompanhá-lo uma ou duas vezes por ano mostra se estás a avançar.
+mo-goals.c1.viz.f	património líquido = ativos − passivos
+mo-goals.c1.viz.items.0.s	ativos
+mo-goals.c1.viz.items.0.m	poupanças, investimentos, casa
+mo-goals.c1.viz.items.1.s	passivos
+mo-goals.c1.viz.items.1.m	crédito casa, empréstimos, cartões
+mo-goals.c2.title	Ordem de prioridades
+mo-goals.c2.text	Uma sequência comum: criar uma pequena almofada, liquidar dívidas caras, completar o fundo de emergência e depois poupar para objetivos e investir a longo prazo.
+mo-goals.c2.viz.items.0	Investir a longo prazo
+mo-goals.c2.viz.items.1	Objetivos a médio prazo
+mo-goals.c2.viz.items.2	Fundo de emergência completo
+mo-goals.c2.viz.items.3	Liquidar dívidas caras
+mo-goals.c2.viz.items.4	Pequena almofada
+mo-goals.c3.title	Horizontes temporais
+mo-goals.c3.text	O dinheiro de que vais precisar nos próximos 2–3 anos deve estar em sítios seguros. O dinheiro para 10+ anos aguenta os altos e baixos do investimento.
+mo-goals.c3.viz.l.t	Curto prazo
+mo-goals.c3.viz.l.items.0	depósitos
+mo-goals.c3.viz.l.items.1	contas poupança
+mo-goals.c3.viz.r.t	Longo prazo
+mo-goals.c3.viz.r.items.0	investimentos diversificados
+mo-goals.c4.title	Fundos para despesas previstas
+mo-goals.c4.text	Poupa todos os meses para custos irregulares conhecidos, como o seguro do carro, as férias ou o Natal, para não se tornarem emergências.
+mo-goals.c4.viz.unit	€ por mês
+mo-goals.c4.viz.items.0.l	Seguro auto 480 €/ano
+mo-goals.c4.viz.items.1.l	Férias 1200 €/ano
+mo-goals.c4.viz.items.2.l	Natal 360 €/ano
+mo-goals.c5.title	Taxa de poupança
+mo-goals.c5.text	A tua taxa de poupança, a parte do rendimento que poupas, conta mais do que os retornos dos investimentos no início. Passar de 5% para 15% tem um efeito enorme ao longo do tempo.
+mo-goals.c5.viz.f	taxa de poupança = poupança ÷ rendimento líquido
+mo-goals.c5.viz.items.0.s	ex.
+mo-goals.c6.title	Revê todos os anos
+mo-goals.c6.text	Uma vez por ano, revê rendimentos, gastos, dívidas, seguros, investimentos e objetivos. A vida muda; o teu plano também deve mudar.
+mo-goals.c6.viz.steps.0	Define objetivos
+mo-goals.c6.viz.steps.1	Automatiza
+mo-goals.c6.viz.steps.2	Revê anualmente
+mo-goals.c6.viz.steps.3	Ajusta
+mo-goals.c7.title	O casal e o dinheiro
+mo-goals.c7.text	O dinheiro é uma das principais causas de conflito. Falem abertamente sobre objetivos e hábitos; muitos casais usam uma conta conjunta para as despesas comuns e contas pessoais.
+mo-goals.c7.viz.root	Contas do casal
+mo-goals.c7.viz.items.0	Conjunta: renda, contas, comida
+mo-goals.c7.viz.items.1	Pessoal A
+mo-goals.c7.viz.items.2	Pessoal B
+mo-goals.c8.title	Ensinar as crianças
+mo-goals.c8.text	A mesada, os mealheiros e deixar as crianças cometer pequenos erros ensinam cedo a lidar com dinheiro. Alguns estudos sugerem que os hábitos se formam até aos 7 anos.
+mo-goals.c8.viz.items.0	Mesada
+mo-goals.c8.viz.items.1	Mealheiros: gastar, poupar, partilhar
+mo-goals.c8.viz.items.2	Pequenas escolhas
+mo-goals.c8.viz.items.3	Falar de dinheiro abertamente
+mo-goals.c9.title	Um plano numa página
+mo-goals.c9.text	Numa página: rendimento mensal, custos fixos, taxa de poupança, meta do fundo de emergência, dívidas com as taxas e dois ou três objetivos com datas.
+mo-goals.c9.viz.items.0	Rendimento
+mo-goals.c9.viz.items.1	Custos fixos
+mo-goals.c9.viz.items.2	Taxa de poupança
+mo-goals.c9.viz.items.3	Fundo de emergência
+mo-goals.c9.viz.items.4	Dívidas
+mo-goals.c9.viz.items.5	Objetivos e datas
+mo-tax.title	Os impostos no dia a dia
+mo-tax.summary	Perceber o que pagas.
+mo-tax.q0.q	Num sistema progressivo, um aumento que te faz subir de escalão significa que…
+mo-tax.q0.o0	levas menos para casa
+mo-tax.q0.o1	só o rendimento extra paga mais imposto
+mo-tax.q0.o2	todo o rendimento paga mais imposto
+mo-tax.q0.x	As taxas marginais aplicam-se por fatias.
+mo-tax.q1.q	Qual é a taxa normal de IVA em Portugal continental?
+mo-tax.q1.o0	13%
+mo-tax.q1.o1	21%
+mo-tax.q1.o2	23%
+mo-tax.q1.x	6% e 13% são taxas reduzida e intermédia.
+mo-tax.c0.title	Porquê impostos
+mo-tax.c0.text	Os impostos financiam os serviços públicos: saúde, escolas, estradas, pensões e defesa. Em Portugal, os impostos e as contribuições sociais rondam 35–38% do PIB.
+mo-tax.c0.viz.items.0	Saúde
+mo-tax.c0.viz.items.1	Educação
+mo-tax.c0.viz.items.2	Pensões
+mo-tax.c0.viz.items.3	Infraestruturas
+mo-tax.c0.viz.items.4	Segurança
+mo-tax.c1.title	Diretos e indiretos
+mo-tax.c1.text	Os impostos diretos incidem sobre o rendimento e o património, como o IRS. Os indiretos incidem sobre o consumo, como o IVA e o imposto sobre os combustíveis, e são pagos por todos os que compram.
+mo-tax.c1.viz.l.t	Diretos
+mo-tax.c1.viz.l.items.0	IRS
+mo-tax.c1.viz.l.items.1	IRC
+mo-tax.c1.viz.l.items.2	IMI
+mo-tax.c1.viz.r.t	Indiretos
+mo-tax.c1.viz.r.items.0	IVA
+mo-tax.c1.viz.r.items.1	ISP (combustíveis)
+mo-tax.c1.viz.r.items.2	impostos sobre tabaco e álcool
+mo-tax.c2.title	IRS progressivo
+mo-tax.c2.text	O IRS é progressivo: as fatias mais altas do rendimento são tributadas a taxas mais altas. Só o rendimento dentro de cada escalão paga a taxa desse escalão.
+mo-tax.c2.viz.items.0	Fatia de topo: taxa mais alta
+mo-tax.c2.viz.items.1	Fatias intermédias
+mo-tax.c2.viz.items.2	Primeira fatia: taxa mais baixa
+mo-tax.c3.title	Taxa marginal vs média
+mo-tax.c3.text	Subir de escalão nunca reduz o teu salário líquido no total: só o rendimento extra é tributado à taxa mais alta. A tua taxa média é sempre inferior à tua taxa máxima.
+mo-tax.c3.viz.items.0.w	"O aumento fez-me subir de escalão, por isso ganho menos"
+mo-tax.c3.viz.items.0.r	Só os euros a mais pagam mais imposto
+mo-tax.c4.title	Taxas de IVA
+mo-tax.c4.text	O IVA no continente tem três taxas: 6% para bens essenciais como alimentos básicos, 13% para alguns produtos como a restauração, e 23% de taxa normal. As ilhas têm taxas mais baixas.
+mo-tax.c4.viz.unit	IVA no continente, %
+mo-tax.c4.viz.items.0.l	Reduzida
+mo-tax.c4.viz.items.1.l	Intermédia
+mo-tax.c4.viz.items.2.l	Normal
+mo-tax.c5.title	E-fatura
+mo-tax.c5.text	Pedir fatura com o teu NIF permite que alguns gastos contem para as deduções de IRS, como saúde, educação e habitação, e ajuda a combater a evasão fiscal.
+mo-tax.c5.viz.items.0	Saúde
+mo-tax.c5.viz.items.1	Educação
+mo-tax.c5.viz.items.2	Rendas de casa
+mo-tax.c5.viz.items.3	Algumas despesas gerais
+mo-tax.c6.title	Deduções
+mo-tax.c6.text	As deduções reduzem o imposto que deves: saúde, educação, rendas e dependentes são categorias comuns, cada uma com limites.
+mo-tax.c6.viz.steps.0	Despesas com NIF
+mo-tax.c6.viz.steps.1	Validadas no e-fatura
+mo-tax.c6.viz.steps.2	Deduzidas no IRS
+mo-tax.c6.viz.steps.3	Reembolso ou menos a pagar
+mo-tax.c7.title	IRS Jovem
+mo-tax.c7.text	Portugal oferece IRS reduzido aos jovens trabalhadores nos primeiros anos de trabalho, através do regime IRS Jovem. As regras já mudaram várias vezes; confirma as condições em vigor.
+mo-tax.c7.viz.steps.0	Jovem trabalhador
+mo-tax.c7.viz.steps.1	Primeiros anos de rendimento
+mo-tax.c7.viz.steps.2	Isenção parcial
+mo-tax.c7.viz.steps.3	Menos IRS
+mo-tax.c8.title	Trabalhadores independentes
+mo-tax.c8.text	Os trabalhadores independentes passam "recibos verdes", entregam declarações trimestrais à Segurança Social e podem usar o regime simplificado, em que só parte do rendimento é tributada.
+mo-tax.c8.viz.items.0	Passar recibos verdes
+mo-tax.c8.viz.items.1	Declarações à Segurança Social
+mo-tax.c8.viz.items.2	Regime simplificado
+mo-tax.c8.viz.items.3	Guardar registos
+mo-tax.c9.title	A tua declaração anual
+mo-tax.c9.text	Todas as primaveras, confere o IRS pré-preenchido no Portal das Finanças. Confirma os dependentes, as deduções e os rendimentos antes de submeter; o IRS automático serve a muita gente.
+mo-tax.c9.viz.steps.0	Entra
+mo-tax.c9.viz.steps.1	Confere os dados
+mo-tax.c9.viz.steps.2	Confirma as deduções
+mo-tax.c9.viz.steps.3	Submete

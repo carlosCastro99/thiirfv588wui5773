@@ -1227,3 +1227,273 @@ ai-bias.c7.viz.l.items.1	risco legal e ético
 ai-bias.c7.viz.r.t	Viés nos dados
 ai-bias.c7.viz.r.items.0	um local, uma estação
 ai-bias.c7.viz.r.items.1	quedas silenciosas
+ai-bias.c8.title	Também é lei
+ai-bias.c8.text	Na UE, as leis contra a discriminação também se aplicam a decisões automatizadas, o RGPD dá às pessoas direitos em relação a decisões automatizadas significativas, e o AI Act acrescenta requisitos para sistemas de alto risco, como contratação e análise de crédito.
+ai-bias.c8.viz.root	Regras da UE
+ai-bias.c8.viz.items.0	Lei de igualdade
+ai-bias.c8.viz.items.1	RGPD: decisões automatizadas
+ai-bias.c8.viz.items.2	AI Act: deveres de alto risco
+ai-bias.c9.title	Times diversos ajudam
+ai-bias.c9.text	Times com origens diferentes têm mais chances de perceber pontos cegos cedo. Envolva as pessoas afetadas por um sistema ao projetá-lo e testá-lo.
+ai-bias.c9.viz.steps.0	Time diverso
+ai-bias.c9.viz.steps.1	Faz perguntas diferentes
+ai-bias.c9.viz.steps.2	Percebe pontos cegos cedo
+ai-bias.c9.viz.steps.3	Sistema mais justo
+ai-safety.title	Segurança da IA
+ai-safety.summary	Manter sistemas poderosos confiáveis, honestos e sob controle.
+ai-safety.q0.q	Instruções escondidas num documento que sequestram um agente de IA se chamam…
+ai-safety.q0.o0	Jailbreak
+ai-safety.q0.o1	Prompt injection (injeção de prompt)
+ai-safety.q0.o2	Overfitting
+ai-safety.q0.x	O texto do atacante é injetado pelo conteúdo que o agente lê.
+ai-safety.q1.q	O que é red teaming?
+ai-safety.q1.o0	Pintar os servidores de vermelho
+ai-safety.q1.o1	Tentar deliberadamente fazer um modelo falhar antes do lançamento
+ai-safety.q1.o2	Treinar com imagens vermelhas
+ai-safety.q1.x	É um teste adversarial estruturado.
+ai-safety.q2.q	Qual é uma boa prática para um agente de IA que pode fazer pagamentos?
+ai-safety.q2.o0	Deixá-lo pagar livremente
+ai-safety.q2.o1	Exigir aprovação humana para pagamentos
+ai-safety.q2.o2	Esconder os logs dele
+ai-safety.q2.x	Ações irreversíveis precisam de uma verificação humana.
+ai-safety.c0.title	O que a segurança da IA abrange
+ai-safety.c0.text	A segurança vai da confiabilidade do dia a dia (o sistema faz o que deve, sem erros prejudiciais?) até questões de longo prazo sobre sistemas muito capazes perseguindo objetivos que não pretendíamos.
+ai-safety.c0.viz.items.0	Controle de longo prazo da IA avançada
+ai-safety.c0.viz.items.1	Prevenção de uso indevido
+ai-safety.c0.viz.items.2	Comportamento honesto e confiável
+ai-safety.c0.viz.items.3	Robustez no dia a dia
+ai-safety.c1.title	Alinhamento
+ai-safety.c1.text	Alinhamento significa fazer um sistema buscar o que realmente queremos, e não uma versão literal ou distorcida. À medida que os sistemas ficam mais capazes, pequenos mal-entendidos podem ter consequências maiores.
+ai-safety.c1.viz.l.t	O que dissemos
+ai-safety.c1.viz.l.items.0	maximizar cliques
+ai-safety.c1.viz.r.t	O que queríamos
+ai-safety.c1.viz.r.items.0	dar às pessoas conteúdo que elas valorizam
+ai-safety.c2.title	Burlar a especificação
+ai-safety.c2.text	Os sistemas muitas vezes encontram atalhos inesperados que cumprem a letra de um objetivo. O reward hacking no aprendizado por reforço é o exemplo clássico, mas isso acontece com qualquer objetivo que você otimize com força.
+ai-safety.c2.viz.items.0.w	recompensar "testes passam"
+ai-safety.c2.viz.items.0.r	recompensar código correto
+ai-safety.c2.viz.items.1.w	recompensar "ligações curtas"
+ai-safety.c2.viz.items.1.r	recompensar problemas resolvidos
+ai-safety.c3.title	Robustez
+ai-safety.c3.text	Um modelo robusto continua funcionando quando as entradas são um pouco incomuns: frases diferentes, ruído, formatos estranhos. Modelos frágeis podem se confundir com pequenas mudanças que um humano nem notaria.
+ai-safety.c3.viz.items.0	Testar com entradas incomuns
+ai-safety.c3.viz.items.1	Testar com dados ruidosos
+ai-safety.c3.viz.items.2	Testar fora da faixa de treino
+ai-safety.c3.viz.items.3	Planejar o que acontece em caso de falha
+ai-safety.c4.title	Jailbreaks e prompt injection
+ai-safety.c4.text	Os usuários podem tentar convencer um chatbot a ignorar as regras dele (jailbreaks). Pior: instruções escondidas numa página da web ou num documento podem sequestrar um agente de IA que os leia (prompt injection).
+ai-safety.c4.viz.steps.0	Agente lê uma página
+ai-safety.c4.viz.steps.1	Página esconde "me envie os arquivos do usuário"
+ai-safety.c4.viz.steps.2	Agente pode obedecer
+ai-safety.c4.viz.steps.3	Proteções devem bloquear
+ai-safety.c5.title	Red teaming
+ai-safety.c5.text	Antes do lançamento, especialistas se esforçam para fazer um modelo se comportar mal: produzir instruções perigosas, vazar dados ou seguir documentos maliciosos. As descobertas voltam para o treino e para as salvaguardas.
+ai-safety.c5.viz.steps.0	Atacar o modelo
+ai-safety.c5.viz.steps.1	Achar falhas
+ai-safety.c5.viz.steps.2	Corrigir e retreinar
+ai-safety.c5.viz.steps.3	Atacar de novo
+ai-safety.c6.title	Supervisão humana
+ai-safety.c6.text	Para ações importantes, mantenha uma pessoa no circuito: a IA rascunha, recomenda ou sinaliza, e um humano aprova. Os agentes devem perguntar antes de passos irreversíveis, como pagamentos ou exclusões.
+ai-safety.c6.viz.steps.0	IA propõe uma ação
+ai-safety.c6.viz.steps.1	Pessoa revisa
+ai-safety.c6.viz.steps.2	Aprovar ou mudar
+ai-safety.c6.viz.steps.3	Ação executada
+ai-safety.c7.title	Interpretabilidade
+ai-safety.c7.text	Os pesquisadores tentam olhar dentro das redes neurais para ver que conceitos elas representam e como chegam às respostas. É como uma neurociência da IA, e ajuda a detectar problemas ocultos.
+ai-safety.c7.viz.steps.0	Atividade interna do modelo
+ai-safety.c7.viz.steps.1	Achar features e circuitos
+ai-safety.c7.viz.steps.2	Entender o comportamento
+ai-safety.c7.viz.steps.3	Detectar problemas ocultos
+ai-safety.c8.title	Políticas de segurança de fronteira
+ai-safety.c8.text	Os grandes laboratórios de IA publicam políticas para testar se os novos modelos têm capacidades perigosas, como ajudar em ciberataques ou armas biológicas, e se comprometem com salvaguardas mais fortes antes de lançar sistemas mais capazes.
+ai-safety.c8.viz.steps.0	Treinar um novo modelo
+ai-safety.c8.viz.steps.1	Testar capacidades perigosas
+ai-safety.c8.viz.steps.2	Aplicar salvaguardas adequadas
+ai-safety.c8.viz.steps.3	Lançar ou segurar
+ai-safety.c9.title	Segurança prática no trabalho
+ai-safety.c9.text	No uso em empresas, segurança significa principalmente: limitar o que a IA pode acessar e fazer, registrar as ações dela, validar as saídas antes que cheguem aos clientes e ter uma forma rápida de desligá-la.
+ai-safety.c9.viz.items.0	Acesso com privilégio mínimo
+ai-safety.c9.viz.items.1	Registrar cada ação
+ai-safety.c9.viz.items.2	Checar as saídas antes do uso
+ai-safety.c9.viz.items.3	Aprovação humana em passos grandes
+ai-safety.c9.viz.items.4	Um botão de desligar claro
+ai-law.title	IA e a lei
+ai-law.summary	O AI Act da UE, a proteção de dados e quem é responsável.
+ai-law.q0.q	Como o AI Act da UE regula a IA?
+ai-law.q0.o0	Proíbe toda IA
+ai-law.q0.o1	Por nível de risco: quanto maior o risco, mais rígidas as regras
+ai-law.q0.o2	Só pelo tamanho da empresa
+ai-law.q0.x	Ele tem quatro grandes níveis de risco.
+ai-law.q1.q	Um sistema de IA usado para ranquear candidatos a emprego é…
+ai-law.q1.o0	De risco mínimo
+ai-law.q1.o1	De alto risco
+ai-law.q1.o2	Proibido
+ai-law.q1.x	Os usos em emprego estão listados como de alto risco.
+ai-law.q2.q	O que os chatbots precisam fazer segundo as regras de transparência do AI Act?
+ai-law.q2.o0	Usar uma voz humana
+ai-law.q2.o1	Deixar claro para as pessoas que estão interagindo com uma IA
+ai-law.q2.o2	Responder em inglês
+ai-law.q2.x	Os usuários precisam saber que estão falando com uma IA.
+ai-law.c0.title	O AI Act da UE
+ai-law.c0.text	O AI Act é a lei da UE sobre inteligência artificial. Entrou em vigor em 1º de agosto de 2024 e se aplica em etapas. Ele regula a IA pelo risco: quanto maior o risco para as pessoas, mais rígidas as regras.
+ai-law.c0.viz.items.0	Risco inaceitável: proibido
+ai-law.c0.viz.items.1	Alto risco: deveres rígidos
+ai-law.c0.viz.items.2	Risco limitado: transparência
+ai-law.c0.viz.items.3	Risco mínimo: sem regras novas
+ai-law.c1.title	Práticas proibidas
+ai-law.c1.text	Alguns usos são proibidos de vez, incluindo a pontuação social de pessoas por autoridades públicas, técnicas manipulativas que causam danos, o reconhecimento de emoções no trabalho e nas escolas (com exceções restritas) e a coleta indiscriminada de rostos para montar bancos de dados de reconhecimento.
+ai-law.c1.viz.items.0	Pontuação social
+ai-law.c1.viz.items.1	Manipulação prejudicial
+ai-law.c1.viz.items.2	Reconhecimento de emoções no trabalho ou na escola
+ai-law.c1.viz.items.3	Coleta indiscriminada de rostos
+ai-law.c1.viz.items.4	Quase toda identificação biométrica pública em tempo real pela polícia
+ai-law.c2.title	Sistemas de alto risco
+ai-law.c2.text	A IA usada em áreas como contratação, análise de crédito, educação, serviços essenciais, infraestrutura crítica, aplicação da lei e dispositivos médicos é de alto risco. Os fornecedores precisam gerenciar riscos, usar bons dados, manter registros, documentar o sistema e permitir a supervisão humana.
+ai-law.c2.viz.items.0	Gestão de riscos
+ai-law.c2.viz.items.1	Qualidade dos dados
+ai-law.c2.viz.items.2	Registros e documentação
+ai-law.c2.viz.items.3	Supervisão humana
+ai-law.c2.viz.items.4	Precisão e cibersegurança
+ai-law.c3.title	Deveres de transparência
+ai-law.c3.text	As pessoas precisam ser avisadas quando estão falando com um chatbot, e conteúdos gerados ou manipulados por IA, como deepfakes, precisam ser identificados como tal.
+ai-law.c3.viz.items.0.a	Chatbot
+ai-law.c3.viz.items.0.b	deve dizer que é IA
+ai-law.c3.viz.items.1.a	Deepfake
+ai-law.c3.viz.items.1.b	deve ser identificado
+ai-law.c3.viz.items.2.a	Texto de IA sobre temas públicos
+ai-law.c3.viz.items.2.b	deve ser divulgado
+ai-law.c4.title	Cronograma
+ai-law.c4.text	A lei entra em vigor gradualmente ao longo de vários anos: primeiro as proibições, depois as regras para modelos de IA de uso geral e, por fim, a maior parte das obrigações de alto risco.
+ai-law.c4.viz.events.0.y	ago 2024
+ai-law.c4.viz.events.0.l	em vigor
+ai-law.c4.viz.events.1.y	fev 2025
+ai-law.c4.viz.events.1.l	proibições valem
+ai-law.c4.viz.events.2.y	ago 2025
+ai-law.c4.viz.events.2.l	regras da IA de uso geral
+ai-law.c4.viz.events.3.y	ago 2026
+ai-law.c4.viz.events.3.l	maioria das demais regras
+ai-law.c5.title	Multas pesadas
+ai-law.c5.text	As penalidades podem chegar a €35 milhões ou 7% do faturamento anual mundial, o que for maior, pelo uso de práticas proibidas. Outras infrações têm tetos menores, mas ainda significativos.
+ai-law.c5.viz.items.0.v	€35 mi
+ai-law.c5.viz.items.0.l	multa máxima por práticas proibidas
+ai-law.c5.viz.items.1.l	ou esta fatia do faturamento global
+ai-law.c6.title	O RGPD continua valendo
+ai-law.c6.text	Sempre que a IA processa dados pessoais, o RGPD se aplica: base legal, limitação da finalidade, minimização de dados, segurança e os direitos das pessoas de acessar e corrigir seus dados.
+ai-law.c6.viz.items.0	Base legal para o tratamento
+ai-law.c6.viz.items.1	Usar só para as finalidades declaradas
+ai-law.c6.viz.items.2	Coletar o mínimo
+ai-law.c6.viz.items.3	Manter tudo seguro
+ai-law.c6.viz.items.4	Respeitar os direitos das pessoas
+ai-law.c7.title	Decisões automatizadas
+ai-law.c7.text	Pelo RGPD, as pessoas têm direitos em relação a decisões baseadas exclusivamente em processamento automatizado que as afetem de forma significativa, como a recusa de um empréstimo: incluindo intervenção humana e uma explicação da lógica envolvida.
+ai-law.c7.viz.steps.0	Decisão totalmente automatizada
+ai-law.c7.viz.steps.1	Efeito significativo numa pessoa
+ai-law.c7.viz.steps.2	Direito a revisão humana
+ai-law.c7.viz.steps.3	Direito de contestar
+ai-law.c8.title	Questões de direitos autorais
+ai-law.c8.text	Tribunais e legisladores ainda estão definindo se é permitido treinar com material protegido por direitos autorais e quem é dono das obras geradas por IA. A UE exige que os fornecedores de modelos de uso geral respeitem os opt-outs e publiquem um resumo do conteúdo de treino.
+ai-law.c8.viz.items.0	Modelos podem treinar com obras protegidas?
+ai-law.c8.viz.items.1	Quem é dono do que a IA gera?
+ai-law.c8.viz.items.2	Respeitar opt-outs (UE)
+ai-law.c8.viz.items.3	Publicar resumos dos dados de treino (UE)
+ai-law.c9.title	Quem é responsável?
+ai-law.c9.text	O AI Act distingue fornecedores (quem constrói um sistema ou o coloca no mercado) de implantadores (quem o usa). Os dois têm deveres. Usar a IA de um fornecedor não elimina a sua responsabilidade pela forma como você a usa.
+ai-law.c9.viz.l.t	Fornecedor
+ai-law.c9.viz.l.items.0	constrói o sistema
+ai-law.c9.viz.l.items.1	documentação
+ai-law.c9.viz.l.items.2	avaliação de conformidade
+ai-law.c9.viz.r.t	Implantador
+ai-law.c9.viz.r.items.0	usa o sistema
+ai-law.c9.viz.r.items.1	supervisão humana
+ai-law.c9.viz.r.items.2	informa os afetados
+ai-explain.title	IA explicável
+ai-explain.summary	Abrindo a caixa-preta: por que um modelo decidiu o que decidiu.
+ai-explain.q0.q	Uma ferramenta que mostra o quanto cada feature empurrou uma previsão para cima ou para baixo é…
+ai-explain.q0.o0	Uma matriz de confusão
+ai-explain.q0.o1	SHAP
+ai-explain.q0.o2	Dropout
+ai-explain.q0.x	O SHAP atribui uma única previsão às suas features.
+ai-explain.q1.q	"Seu empréstimo seria aprovado se sua dívida fosse €3.000 menor" é uma…
+ai-explain.q1.o0	Explicação contrafactual
+ai-explain.q1.o1	Mapa de saliência
+ai-explain.q1.o2	Gráfico de importância de features
+ai-explain.q1.x	Ela descreve a menor mudança que inverte o resultado.
+ai-explain.q2.q	Um classificador de huskies que se apoia na neve ao fundo mostra…
+ai-explain.q2.o0	Boa generalização
+ai-explain.q2.o1	Um atalho oculto revelado por ferramentas de explicação
+ai-explain.q2.o2	Justiça perfeita
+ai-explain.q2.x	Os mapas de saliência expuseram a pista errada.
+ai-explain.c0.title	O problema da caixa-preta
+ai-explain.c0.text	Redes profundas com milhões de pesos não vêm com justificativas. Quando um modelo recusa um empréstimo ou sinaliza uma peça como defeituosa, as pessoas querem saber por quê, e os órgãos reguladores muitas vezes exigem isso.
+ai-explain.c0.viz.steps.0	Entrada
+ai-explain.c0.viz.steps.1	Milhões de pesos
+ai-explain.c0.viz.steps.2	Decisão
+ai-explain.c0.viz.steps.3	Por quê?
+ai-explain.c1.title	Modelos caixa de vidro
+ai-explain.c1.text	Alguns modelos são explicáveis por natureza: os modelos lineares mostram o peso de cada feature, as árvores de decisão pequenas mostram o caminho exato. Quando há muito em jogo, um modelo um pouco menos preciso, mas transparente, pode ser a melhor escolha.
+ai-explain.c1.viz.l.t	Caixa de vidro
+ai-explain.c1.viz.l.items.0	modelos lineares, árvores pequenas
+ai-explain.c1.viz.l.items.1	fácil de explicar
+ai-explain.c1.viz.l.items.2	pode ser menos preciso
+ai-explain.c1.viz.r.t	Caixa-preta
+ai-explain.c1.viz.r.items.0	redes profundas, grandes ensembles
+ai-explain.c1.viz.r.items.1	muito preciso
+ai-explain.c1.viz.r.items.2	exige ferramentas extras
+ai-explain.c2.title	Importância das features
+ai-explain.c2.text	A explicação mais simples: quais entradas importam mais no geral? Num modelo de atraso de entregas, talvez a distância, o clima e a transportadora importem mais, enquanto o dia da semana quase não importa.
+ai-explain.c2.viz.unit	importância
+ai-explain.c2.viz.items.0.l	Distância
+ai-explain.c2.viz.items.1.l	Clima
+ai-explain.c2.viz.items.2.l	Transportadora
+ai-explain.c2.viz.items.3.l	Dia da semana
+ai-explain.c3.title	Valores SHAP
+ai-explain.c3.text	O SHAP explica uma única previsão dividindo o resultado entre as features, como dividir uma conta de forma justa. Ele mostra o quanto cada feature empurrou esta previsão específica para cima ou para baixo em relação à média.
+ai-explain.c3.viz.items.0.a	Casa média
+ai-explain.c3.viz.items.0.b	€250 mil
+ai-explain.c3.viz.items.1.a	Vista para o mar
+ai-explain.c3.viz.items.1.b	+€60 mil
+ai-explain.c3.viz.items.2.a	Cozinha antiga
+ai-explain.c3.viz.items.2.b	−€25 mil
+ai-explain.c3.viz.items.3.a	Jardim grande
+ai-explain.c3.viz.items.3.b	+€30 mil
+ai-explain.c3.viz.items.4.a	Esta casa
+ai-explain.c3.viz.items.4.b	€315 mil
+ai-explain.c4.title	Explicações contrafactuais
+ai-explain.c4.text	Uma explicação útil para as pessoas: o que teria de mudar para um resultado diferente? "Seu empréstimo seria aprovado se sua renda fosse €4.000 maior ou sua dívida €3.000 menor."
+ai-explain.c4.viz.steps.0	Empréstimo recusado
+ai-explain.c4.viz.steps.1	Achar a menor mudança
+ai-explain.c4.viz.steps.2	"Dívida €3.000 menor"
+ai-explain.c4.viz.steps.3	Aprovado
+ai-explain.c5.title	Mapas de saliência
+ai-explain.c5.text	Para imagens, as ferramentas de explicação destacam quais pixels mais influenciaram a decisão. Às vezes elas revelam problemas: um modelo que reconhecia huskies pela neve ao fundo, e não pelo cachorro.
+ai-explain.c5.viz.items.0.w	"é um husky por causa da neve"
+ai-explain.c5.viz.items.0.r	retreinar com huskies na grama e lobos na neve
+ai-explain.c6.title	Explicando modelos de linguagem
+ai-explain.c6.text	Pedir a um chatbot que "mostre o raciocínio" gera uma explicação legível, mas não há garantia de que esse texto reflita o que aconteceu lá dentro. A pesquisa em interpretabilidade tenta verificar os mecanismos internos reais.
+ai-explain.c6.viz.l.t	Raciocínio declarado
+ai-explain.c6.viz.l.items.0	fácil de ler
+ai-explain.c6.viz.l.items.1	útil
+ai-explain.c6.viz.l.items.2	pode não ser fiel
+ai-explain.c6.viz.r.t	Análise interna
+ai-explain.c6.viz.r.items.0	mais difícil de fazer
+ai-explain.c6.viz.r.items.1	mais perto do que aconteceu
+ai-explain.c7.title	Quem precisa da explicação?
+ai-explain.c7.text	Um cientista de dados quer diagnósticos detalhados; um cliente quer um motivo curto e saber o que pode fazer; um auditor quer documentação. Pense as explicações para o público.
+ai-explain.c7.viz.items.0.a	Cientista de dados
+ai-explain.c7.viz.items.0.b	efeitos das features, análise de erros
+ai-explain.c7.viz.items.1.a	Cliente
+ai-explain.c7.viz.items.1.b	motivo principal e próximo passo
+ai-explain.c7.viz.items.2.a	Auditor
+ai-explain.c7.viz.items.2.b	documentação e logs
+ai-explain.c7.viz.items.3.a	Gestor
+ai-explain.c7.viz.items.3.b	riscos e limites
+ai-explain.c8.title	Explicações geram confiança
+ai-explain.c8.text	As pessoas confiam mais nas recomendações da IA e as usam mais quando as entendem, mas também podem confiar demais numa explicação convicta. Boas explicações mostram a incerteza também.
+ai-explain.c8.viz.items.0	Mostrar os motivos principais
+ai-explain.c8.viz.items.1	Mostrar o grau de confiança do modelo
+ai-explain.c8.viz.items.2	Mostrar o que mudaria o resultado
+ai-explain.c8.viz.items.3	Ser honesto sobre os limites
+ai-explain.c9.title	Obrigatório em alguns casos
+ai-explain.c9.text	O RGPD dá às pessoas afetadas por decisões significativas exclusivamente automatizadas o direito a informações relevantes sobre a lógica envolvida. O AI Act acrescenta deveres de transparência para sistemas de alto risco.
+ai-explain.c9.viz.steps.0	Decisão automatizada significativa
+ai-explain.c9.viz.steps.1	Pessoa pergunta por quê

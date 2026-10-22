@@ -599,7 +599,7 @@ na-birds.c1.viz.items.2.a	Penas de voo
 na-birds.c1.viz.items.2.b	sustentação e impulso
 na-birds.c2.title	A inteligência das aves
 na-birds.c2.text	Corvos e papagaios resolvem quebra-cabeças, usam ferramentas e se lembram de rostos. Os corvos-da-nova-caledônia fabricam ganchos com gravetos.
-na-birds.c2.viz.items.0	Uso de ferramentas
+na-birds.c2.viz.items.0	Ferramentas
 na-birds.c2.viz.items.1	Reconhecer rostos
 na-birds.c2.viz.items.2	Planejar o futuro
 na-birds.c2.viz.items.3	Resolver problemas
@@ -637,7 +637,7 @@ na-birds.c7.viz.items.2.l	consegue voar
 na-birds.c8.title	Pinguins
 na-birds.c8.text	Os pinguins "voam" debaixo d'água. Os pinguins-imperadores mergulham a mais de 500 m, e os machos chocam o ovo sobre os pés durante o inverno antártico, sem comer.
 na-birds.c8.viz.items.0.v	500 m+
-na-birds.c8.viz.items.0.l	profundidade de mergulho
+na-birds.c8.viz.items.0.l	prof. de mergulho
 na-birds.c8.viz.items.1.v	~2 meses
 na-birds.c8.viz.items.1.l	machos em jejum sobre o ovo
 na-birds.c8.viz.items.2.v	−40 °C
@@ -951,7 +951,7 @@ na-weather.c7.viz.steps.2	A tempestade gira
 na-weather.c7.viz.steps.3	Furacão
 na-weather.c8.title	A Nortada
 na-weather.c8.text	Os verões da costa oeste de Portugal costumam trazer a Nortada, um vento norte forte movido pelo Anticiclone dos Açores, adorado pelos kitesurfistas e odiado pelos banhistas.
-na-weather.c8.viz.steps.0	Anticiclone dos Açores
+na-weather.c8.viz.steps.0	Alta dos Açores
 na-weather.c8.viz.steps.1	Gradiente de pressão na costa
 na-weather.c8.viz.steps.2	Vento norte forte
 na-weather.c8.viz.steps.3	Ressurgência de água fria
@@ -1111,6 +1111,100 @@ na-land.c9.text	O ponto mais alto de Portugal é a Montanha do Pico, nos Açores
 na-land.c9.viz.unit	metros
 na-land.c9.viz.items.0.l	Torre, Serra da Estrela
 na-land.c9.viz.items.1.l	Montanha do Pico, Açores
+na-fungi.title	Fungos: o reino escondido
+na-fungi.summary	Micélio, cogumelos, parceiros das raízes, leveduras, remédios, líquens e os gigantes escondidos debaixo da terra.
+na-fungi.q0.q	O que é um cogumelo?
+na-fungi.q0.o0	O fungo inteiro
+na-fungi.q0.o1	Um corpo de frutificação que espalha esporos
+na-fungi.q0.o2	Um tipo de raiz de planta
+na-fungi.q0.x	O corpo principal do fungo é o micélio, que fica escondido.
+na-fungi.q1.q	O que as plantas dão aos seus fungos micorrízicos?
+na-fungi.q1.o0	Água
+na-fungi.q1.o1	Açúcares da fotossíntese
+na-fungi.q1.o2	Esporos
+na-fungi.q1.x	Em troca, os fungos trazem água e nutrientes como o fósforo.
+na-fungi.q2.q	Que remédio veio de um bolor do gênero Penicillium?
+na-fungi.q2.o0	Aspirina
+na-fungi.q2.o1	Penicilina
+na-fungi.q2.o2	Insulina
+na-fungi.q2.x	Fleming percebeu o seu efeito sobre as bactérias em 1928.
+na-fungi.q3.q	Como saber se um cogumelo selvagem é seguro para comer?
+na-fungi.q3.o0	Ele deixa uma colher de prata preta
+na-fungi.q3.o1	Animais já o mordiscaram
+na-fungi.q3.o2	Só pela identificação de um especialista
+na-fungi.q3.x	Nenhum teste simples funciona, e espécies mortais podem ter uma aparência comum.
+na-fungi.c0.title	Nem planta nem animal
+na-fungi.c0.text	Os fungos formam o seu próprio reino da vida, separado das plantas e dos animais. Eles não conseguem produzir alimento a partir da luz do sol; em vez disso, liberam enzimas e absorvem o que digerem fora do próprio corpo.\n\nO grupo inclui cogumelos, bolores e leveduras. Os cientistas já deram nome a cerca de 150.000 espécies, mas pode haver milhões a mais.
+na-fungi.c0.viz.root	Como se alimentam
+na-fungi.c0.viz.items.0	Decompositores: matéria morta
+na-fungi.c0.viz.items.1	Parasitas: hospedeiros vivos
+na-fungi.c0.viz.items.2	Parceiros: trocas com plantas
+na-fungi.c1.title	Micélio, o corpo escondido
+na-fungi.c1.text	O corpo principal de um fungo é o micélio, uma rede de filamentos microscópicos chamados hifas. Ele se espalha pelo solo, pela madeira, pelas folhas caídas ou pelos alimentos, quase sempre longe da vista.\n\nAs hifas crescem pelas pontas e podem se fundir umas com as outras, formando redes que exploram o solo em busca de alimento.
+na-fungi.c1.viz.steps.0	Um esporo cai
+na-fungi.c1.viz.steps.1	A hifa cresce pela ponta
+na-fungi.c1.viz.steps.2	Hifas se ramificam e fundem
+na-fungi.c1.viz.steps.3	Rede de micélio
+na-fungi.c2.title	Os cogumelos são frutos
+na-fungi.c2.text	Um cogumelo é um corpo de frutificação: a parte que o fungo constrói para espalhar os seus esporos. Ele pode aparecer de um dia para o outro porque enche de água células que já estavam formadas.\n\nUm único cogumelo pode liberar bilhões de esporos microscópicos, levados pelo ar, pela água e pelos animais.
+na-fungi.c2.viz.items.0	O chapéu protege os esporos
+na-fungi.c2.viz.items.1	Lâminas ou poros fazem esporos
+na-fungi.c2.viz.items.2	O pé os ergue no ar
+na-fungi.c2.viz.items.3	Micélio debaixo da terra
+na-fungi.c3.title	Decompor a madeira
+na-fungi.c3.text	A madeira é difícil de digerir por causa da lignina, um material resistente que endurece as paredes das células vegetais. Os fungos são os principais organismos capazes de decompô-la por completo.\n\nSem eles, as árvores mortas se acumulariam por séculos, e o carbono e os nutrientes presos nelas demorariam a voltar ao solo e ao ar.
+na-fungi.c3.viz.l.t	Podridão branca
+na-fungi.c3.viz.l.items.0	decompõe a lignina
+na-fungi.c3.viz.l.items.1	madeira clara e fibrosa
+na-fungi.c3.viz.r.t	Podridão parda
+na-fungi.c3.viz.r.items.0	deixa a lignina
+na-fungi.c3.viz.r.items.1	madeira racha em cubos
+na-fungi.c4.title	Parceiros das raízes
+na-fungi.c4.text	A maioria das plantas terrestres, cerca de 80–90% das espécies, vive em parceria com fungos dentro e em volta das raízes, a chamada micorriza. Os filamentos dos fungos estendem o alcance das raízes bem fundo no solo.\n\nA planta paga com açúcares da fotossíntese. Os fungos trazem água e nutrientes como o fósforo, e podem ajudar as plantas a enfrentar a seca e as doenças.
+na-fungi.c4.viz.l.t	A planta dá
+na-fungi.c4.viz.l.items.0	açúcares
+na-fungi.c4.viz.l.items.1	gorduras
+na-fungi.c4.viz.r.t	O fungo dá
+na-fungi.c4.viz.r.items.0	água
+na-fungi.c4.viz.r.items.1	fósforo, nitrogênio
+na-fungi.c5.title	Líquens: uma parceria
+na-fungi.c5.text	Um líquen parece um único organismo, mas é uma parceria: um fungo que vive com algas ou cianobactérias. O fungo dá abrigo; o parceiro produz alimento a partir da luz do sol.\n\nJuntos, eles crescem em rocha nua, cascas de árvore, telhados e tundra, dos desertos à Antártida. Muitos são sensíveis à poluição do ar.
+na-fungi.c5.viz.root	Um líquen
+na-fungi.c5.viz.items.0	Fungo: forma, abrigo
+na-fungi.c5.viz.items.1	Alga ou cianobactéria: alimento
+na-fungi.c5.viz.items.2	Às vezes, também uma levedura
+na-fungi.c6.title	A levedura, uma pequena operária
+na-fungi.c6.text	As leveduras são fungos unicelulares. Uma espécie, a Saccharomyces cerevisiae, trabalha para os humanos há milhares de anos, fazendo o pão crescer e fermentando cerveja e vinho.\n\nHoje ela também é um dos organismos de laboratório mais importantes da biologia, e é modificada para produzir remédios como a insulina e vacinas.
+na-fungi.c6.viz.items.0.a	Fermento de pão
+na-fungi.c6.viz.items.0.b	faz a massa crescer
+na-fungi.c6.viz.items.1.a	Levedura de ale
+na-fungi.c6.viz.items.1.b	quente, alta fermentação
+na-fungi.c6.viz.items.2.a	Levedura de lager
+na-fungi.c6.viz.items.2.b	fria, baixa fermentação
+na-fungi.c6.viz.items.3.a	De laboratório
+na-fungi.c6.viz.items.3.b	remédios e pesquisa
+na-fungi.c7.title	Remédios vindos de bolores
+na-fungi.c7.text	Os fungos combatem as bactérias e uns aos outros com substâncias químicas, e algumas viraram remédios que salvam vidas. A penicilina, de um bolor Penicillium, deu início à era dos antibióticos.\n\nOutras moléculas de fungos hoje evitam a rejeição de órgãos transplantados e baixam o colesterol. A busca por novos medicamentos nos fungos continua.
+na-fungi.c7.viz.items.0.a	Penicilina
+na-fungi.c7.viz.items.0.b	antibiótico, Penicillium
+na-fungi.c7.viz.items.1.a	Cefalosporinas
+na-fungi.c7.viz.items.1.b	antibióticos, Acremonium
+na-fungi.c7.viz.items.2.a	Ciclosporina
+na-fungi.c7.viz.items.2.b	transplantes, fungo do solo
+na-fungi.c7.viz.items.3.a	Estatinas
+na-fungi.c7.viz.items.3.b	colesterol, vindas de fungos
+na-fungi.c8.title	O fungo gigantesco
+na-fungi.c8.text	Nas Blue Mountains do Oregon, nos EUA, um único fungo-do-mel, Armillaria ostoyae, se espalha debaixo da floresta por quase 10 quilômetros quadrados. Ele pode ter vários milhares de anos.\n\nEm área, é um dos maiores organismos vivos conhecidos. Acima do solo, só se veem tufos de cogumelos cor de mel no outono.
+na-fungi.c8.viz.items.0.v	~9,6 km²
+na-fungi.c8.viz.items.0.l	de área no Oregon
+na-fungi.c8.viz.items.1.l	anos, talvez bem mais
+na-fungi.c8.viz.items.2.l	indivíduo genético
+na-fungi.c9.title	Comestível ou mortal?
+na-fungi.c9.text	Alguns cogumelos selvagens são deliciosos; outros podem matar. O chapéu-da-morte, Amanita phalloides, causa a maioria das intoxicações fatais por cogumelos, e cresce em Portugal sob carvalhos e outras árvores.\n\nNenhum teste simples distingue os seguros dos venenosos. Nunca coma um cogumelo selvagem a menos que um especialista o tenha identificado pessoalmente.
+na-fungi.c9.viz.items.0.w	Os animais comem, então é seguro
+na-fungi.c9.viz.items.0.r	Muitos animais toleram os nossos venenos
+na-fungi.c9.viz.items.1.w	Cozinhar torna seguro
+na-fungi.c9.viz.items.1.r	As toxinas mortais resistem ao cozimento
 na-microbes.title	Micróbios
 na-microbes.summary	A maioria invisível.
 na-microbes.q0.q	Por quanto tempo os micróbios foram a única vida na Terra?
@@ -1217,97 +1311,299 @@ na-extreme.c0.viz.items.0	Amantes do calor
 na-extreme.c0.viz.items.1	Amantes do frio
 na-extreme.c0.viz.items.2	Amantes do sal
 na-extreme.c0.viz.items.3	Amantes do ácido
-na-fungi.title	Fungos: o reino escondido
-na-fungi.summary	Micélio, cogumelos, parceiros das raízes, leveduras, remédios, líquens e os gigantes escondidos debaixo da terra.
-na-fungi.q0.q	O que é um cogumelo?
-na-fungi.q0.o0	O fungo inteiro
-na-fungi.q0.o1	Um corpo de frutificação que espalha esporos
-na-fungi.q0.o2	Um tipo de raiz de planta
-na-fungi.q0.x	O corpo principal do fungo é o micélio, que fica escondido.
-na-fungi.q1.q	O que as plantas dão aos seus fungos micorrízicos?
-na-fungi.q1.o0	Água
-na-fungi.q1.o1	Açúcares da fotossíntese
-na-fungi.q1.o2	Esporos
-na-fungi.q1.x	Em troca, os fungos trazem água e nutrientes como o fósforo.
-na-fungi.q2.q	Que remédio veio de um bolor do gênero Penicillium?
-na-fungi.q2.o0	Aspirina
-na-fungi.q2.o1	Penicilina
-na-fungi.q2.o2	Insulina
-na-fungi.q2.x	Fleming percebeu o seu efeito sobre as bactérias em 1928.
-na-fungi.q3.q	Como saber se um cogumelo selvagem é seguro para comer?
-na-fungi.q3.o0	Ele deixa uma colher de prata preta
-na-fungi.q3.o1	Animais já o mordiscaram
-na-fungi.q3.o2	Só pela identificação de um especialista
-na-fungi.q3.x	Nenhum teste simples funciona, e espécies mortais podem ter uma aparência comum.
-na-fungi.c0.title	Nem planta nem animal
-na-fungi.c0.text	Os fungos formam o seu próprio reino da vida, separado das plantas e dos animais. Eles não conseguem produzir alimento a partir da luz do sol; em vez disso, liberam enzimas e absorvem o que digerem fora do próprio corpo.\n\nO grupo inclui cogumelos, bolores e leveduras. Os cientistas já deram nome a cerca de 150.000 espécies, mas pode haver milhões a mais.
-na-fungi.c0.viz.root	Como os fungos se alimentam
-na-fungi.c0.viz.items.0	Decompositores: matéria morta
-na-fungi.c0.viz.items.1	Parasitas: hospedeiros vivos
-na-fungi.c0.viz.items.2	Parceiros: trocas com plantas
-na-fungi.c1.title	Micélio, o corpo escondido
-na-fungi.c1.text	O corpo principal de um fungo é o micélio, uma rede de filamentos microscópicos chamados hifas. Ele se espalha pelo solo, pela madeira, pelas folhas caídas ou pelos alimentos, quase sempre longe da vista.\n\nAs hifas crescem pelas pontas e podem se fundir umas com as outras, formando redes que exploram o solo em busca de alimento.
-na-fungi.c1.viz.steps.0	Um esporo cai
-na-fungi.c1.viz.steps.1	A hifa cresce pela ponta
-na-fungi.c1.viz.steps.2	Hifas se ramificam e fundem
-na-fungi.c1.viz.steps.3	Rede de micélio
-na-fungi.c2.title	Os cogumelos são frutos
-na-fungi.c2.text	Um cogumelo é um corpo de frutificação: a parte que o fungo constrói para espalhar os seus esporos. Ele pode aparecer de um dia para o outro porque enche de água células que já estavam formadas.\n\nUm único cogumelo pode liberar bilhões de esporos microscópicos, levados pelo ar, pela água e pelos animais.
-na-fungi.c2.viz.items.0	O chapéu protege os esporos
-na-fungi.c2.viz.items.1	Lâminas ou poros fazem esporos
-na-fungi.c2.viz.items.2	O pé os ergue no ar
-na-fungi.c2.viz.items.3	Micélio debaixo da terra
-na-fungi.c3.title	Decompor a madeira
-na-fungi.c3.text	A madeira é difícil de digerir por causa da lignina, um material resistente que endurece as paredes das células vegetais. Os fungos são os principais organismos capazes de decompô-la por completo.\n\nSem eles, as árvores mortas se acumulariam por séculos, e o carbono e os nutrientes presos nelas demorariam a voltar ao solo e ao ar.
-na-fungi.c3.viz.l.t	Podridão branca
-na-fungi.c3.viz.l.items.0	decompõe a lignina
-na-fungi.c3.viz.l.items.1	madeira clara e fibrosa
-na-fungi.c3.viz.r.t	Podridão parda
-na-fungi.c3.viz.r.items.0	deixa a lignina
-na-fungi.c3.viz.r.items.1	madeira racha em cubos
-na-fungi.c4.title	Parceiros das raízes
-na-fungi.c4.text	A maioria das plantas terrestres, cerca de 80–90% das espécies, vive em parceria com fungos dentro e em volta das raízes, a chamada micorriza. Os filamentos dos fungos estendem o alcance das raízes bem fundo no solo.\n\nA planta paga com açúcares da fotossíntese. Os fungos trazem água e nutrientes como o fósforo, e podem ajudar as plantas a enfrentar a seca e as doenças.
-na-fungi.c4.viz.l.t	A planta dá
-na-fungi.c4.viz.l.items.0	açúcares
-na-fungi.c4.viz.l.items.1	gorduras
-na-fungi.c4.viz.r.t	O fungo dá
-na-fungi.c4.viz.r.items.0	água
-na-fungi.c4.viz.r.items.1	fósforo, nitrogênio
-na-fungi.c5.title	Líquens: uma parceria
-na-fungi.c5.text	Um líquen parece um único organismo, mas é uma parceria: um fungo que vive com algas ou cianobactérias. O fungo dá abrigo; o parceiro produz alimento a partir da luz do sol.\n\nJuntos, eles crescem em rocha nua, cascas de árvore, telhados e tundra, dos desertos à Antártida. Muitos são sensíveis à poluição do ar.
-na-fungi.c5.viz.root	Um líquen
-na-fungi.c5.viz.items.0	Fungo: forma, abrigo
-na-fungi.c5.viz.items.1	Alga ou cianobactéria: alimento
-na-fungi.c5.viz.items.2	Às vezes, também uma levedura
-na-fungi.c6.title	A levedura, uma pequena operária
-na-fungi.c6.text	As leveduras são fungos unicelulares. Uma espécie, a Saccharomyces cerevisiae, trabalha para os humanos há milhares de anos, fazendo o pão crescer e fermentando cerveja e vinho.\n\nHoje ela também é um dos organismos de laboratório mais importantes da biologia, e é modificada para produzir remédios como a insulina e vacinas.
-na-fungi.c6.viz.items.0.a	Fermento de pão
-na-fungi.c6.viz.items.0.b	faz a massa crescer
-na-fungi.c6.viz.items.1.a	Levedura de ale
-na-fungi.c6.viz.items.1.b	quente, alta fermentação
-na-fungi.c6.viz.items.2.a	Levedura de lager
-na-fungi.c6.viz.items.2.b	fria, baixa fermentação
-na-fungi.c6.viz.items.3.a	Levedura de laboratório
-na-fungi.c6.viz.items.3.b	remédios e pesquisa
-na-fungi.c7.title	Remédios vindos de bolores
-na-fungi.c7.text	Os fungos combatem as bactérias e uns aos outros com substâncias químicas, e algumas viraram remédios que salvam vidas. A penicilina, de um bolor Penicillium, deu início à era dos antibióticos.\n\nOutras moléculas de fungos hoje evitam a rejeição de órgãos transplantados e baixam o colesterol. A busca por novos medicamentos nos fungos continua.
-na-fungi.c7.viz.items.0.a	Penicilina
-na-fungi.c7.viz.items.0.b	antibiótico, Penicillium
-na-fungi.c7.viz.items.1.a	Cefalosporinas
-na-fungi.c7.viz.items.1.b	antibióticos, Acremonium
-na-fungi.c7.viz.items.2.a	Ciclosporina
-na-fungi.c7.viz.items.2.b	transplantes, fungo do solo
-na-fungi.c7.viz.items.3.a	Estatinas
-na-fungi.c7.viz.items.3.b	colesterol, vindas de fungos
-na-fungi.c8.title	O fungo gigantesco
-na-fungi.c8.text	Nas Blue Mountains do Oregon, nos EUA, um único fungo-do-mel, Armillaria ostoyae, se espalha debaixo da floresta por quase 10 quilômetros quadrados. Ele pode ter vários milhares de anos.\n\nEm área, é um dos maiores organismos vivos conhecidos. Acima do solo, só se veem tufos de cogumelos cor de mel no outono.
-na-fungi.c8.viz.items.0.v	~9,6 km²
-na-fungi.c8.viz.items.0.l	de área no Oregon
-na-fungi.c8.viz.items.1.l	anos, talvez bem mais
-na-fungi.c8.viz.items.2.l	indivíduo genético
-na-fungi.c9.title	Comestível ou mortal?
-na-fungi.c9.text	Alguns cogumelos selvagens são deliciosos; outros podem matar. O chapéu-da-morte, Amanita phalloides, causa a maioria das intoxicações fatais por cogumelos, e cresce em Portugal sob carvalhos e outras árvores.\n\nNenhum teste simples distingue os seguros dos venenosos. Nunca coma um cogumelo selvagem a menos que um especialista o tenha identificado pessoalmente.
-na-fungi.c9.viz.items.0.w	Os animais comem, então é seguro
-na-fungi.c9.viz.items.0.r	Muitos animais toleram os nossos venenos
-na-fungi.c9.viz.items.1.w	Cozinhar torna seguro
-na-fungi.c9.viz.items.1.r	As toxinas mortais resistem ao cozimento
+na-extreme.c0.viz.items.4	Amantes da pressão
+na-extreme.c1.title	A vida mais quente
+na-extreme.c1.text	Algumas arqueias vivem a cerca de 120 °C perto de fontes hidrotermais do fundo do mar, onde a pressão mantém a água líquida. Suas proteínas são feitas para continuar estáveis sob calor extremo.
+na-extreme.c1.viz.unit	°C
+na-extreme.c1.viz.items.0.l	Corpo humano
+na-extreme.c1.viz.items.1.l	Ofurô
+na-extreme.c1.viz.items.2.l	Água fervendo
+na-extreme.c1.viz.items.3.l	Arqueia Strain 121*
+na-extreme.c2.title	Sobreviver no deserto
+na-extreme.c2.text	Os camelos podem perder até um quarto do peso do corpo em água e se recuperar bebendo cerca de 100 litros em minutos. As corcovas armazenam gordura, não água.
+na-extreme.c2.viz.items.0.w	As corcovas armazenam água
+na-extreme.c2.viz.items.0.r	As corcovas armazenam gordura; o sangue e o corpo aguentam a perda de água
+na-extreme.c3.title	Peixes da Antártida
+na-extreme.c3.text	Os peixes-gelo têm proteínas anticongelantes no sangue e nenhum glóbulo vermelho, dependendo do oxigênio dissolvido na água gelada.
+na-extreme.c3.viz.items.0	Proteínas anticongelantes
+na-extreme.c3.viz.items.1	Sem glóbulos vermelhos
+na-extreme.c3.viz.items.2	Coração grande
+na-extreme.c3.viz.items.3	Água gelada e rica em oxigênio
+na-extreme.c4.title	As rãs-da-floresta
+na-extreme.c4.text	As rãs-da-floresta do Alasca congelam por inteiro no inverno: o coração para, a respiração para. Na primavera, elas descongelam e saem pulando. O açúcar protege as suas células.
+na-extreme.c4.viz.steps.0	Inverno: congela inteira
+na-extreme.c4.viz.steps.1	O coração para
+na-extreme.c4.viz.steps.2	Primavera: descongela
+na-extreme.c4.viz.steps.3	Sai pulando
+na-extreme.c5.title	A vida nas cavernas
+na-extreme.c5.text	Os animais de cavernas escuras muitas vezes perdem os olhos e a cor ao longo das gerações e dependem do tato e do olfato. O proteu, uma salamandra das cavernas, pode viver 100 anos.
+na-extreme.c5.viz.items.0	Sem olhos
+na-extreme.c5.viz.items.1	Pele clara
+na-extreme.c5.viz.items.2	Antenas ou bigodes longos
+na-extreme.c5.viz.items.3	Metabolismo lento
+na-extreme.c6.title	Grandes altitudes
+na-extreme.c6.text	Os gansos-de-cabeça-listrada voam sobre o Himalaia a cerca de 7.000 m. O sangue deles transporta melhor o oxigênio, e as asas batem com eficiência no ar rarefeito.
+na-extreme.c6.viz.unit	metros
+na-extreme.c6.viz.items.0.l	Acampamento-base do Everest
+na-extreme.c6.viz.items.1.l	Gansos-de-cabeça-listrada
+na-extreme.c6.viz.items.2.l	Cume do Everest
+na-extreme.c7.title	Gigantes do fundo do mar
+na-extreme.c7.text	No mar profundo e frio, alguns animais ficam enormes, como a lula-gigante, com até cerca de 12 m, e os isópodes-gigantes. O frio e o metabolismo lento permitem corpos maiores.
+na-extreme.c7.viz.unit	comprimento, m
+na-extreme.c7.viz.items.0.l	Isópode-gigante
+na-extreme.c7.viz.items.1.l	Lula-gigante
+na-extreme.c7.viz.items.2.l	Lula-colossal
+na-extreme.c8.title	Sobreviventes do espaço
+na-extreme.c8.text	Tardígrados e algumas bactérias sobreviveram à exposição ao espaço sideral em satélites. Os líquens também.
+na-extreme.c8.viz.items.0	Tardígrados
+na-extreme.c8.viz.items.1	Esporos de bactérias
+na-extreme.c8.viz.items.2	Líquens
+na-extreme.c9.title	Por que isso importa
+na-extreme.c9.text	Os extremófilos nos ajudam a imaginar a vida em outros mundos e nos dão ferramentas úteis: uma enzima de uma bactéria de fontes termais é a base dos testes de PCR usados na medicina.
+na-extreme.c9.viz.steps.0	Bactéria de fonte termal
+na-extreme.c9.viz.steps.1	Enzima resistente ao calor
+na-extreme.c9.viz.steps.2	Testes de PCR
+na-extreme.c9.viz.steps.3	Diagnóstico médico
+na-forests.title	Florestas e árvores
+na-forests.summary	Os pulmões e as bibliotecas da terra.
+na-forests.q0.q	O que os anéis das árvores mostram?
+na-forests.q0.o0	A altura da árvore
+na-forests.q0.o1	A idade dela e o clima do passado
+na-forests.q0.o2	O tipo de solo
+na-forests.q0.x	Anéis largos indicam anos bons.
+na-forests.q1.q	Qual é a principal causa do desmatamento?
+na-forests.q1.o0	O papel
+na-forests.q1.o1	A agropecuária
+na-forests.q1.o2	A mineração
+na-forests.q1.x	Gado, soja e óleo de palma.
+na-forests.c0.title	A cobertura florestal
+na-forests.c0.text	As florestas cobrem cerca de 31% da terra firme do planeta. Cerca de um terço de Portugal é floresta, e o eucalipto, o pinheiro-bravo e o sobreiro são as árvores mais comuns.
+na-forests.c0.viz.unit	% da área florestal de Portugal (aprox.)
+na-forests.c0.viz.items.0.l	Eucalipto
+na-forests.c0.viz.items.1.l	Sobreiro
+na-forests.c0.viz.items.2.l	Pinheiro-bravo
+na-forests.c0.viz.items.3.l	Azinheira
+na-forests.c0.viz.items.4.l	Outras
+na-forests.c1.title	Como as árvores bebem
+na-forests.c1.text	As árvores puxam a água a mais de 100 metros de altura sem nenhuma bomba: a água que evapora das folhas puxa uma corrente de moléculas de água desde as raízes.
+na-forests.c1.viz.steps.0	A água evapora das folhas
+na-forests.c1.viz.steps.1	Puxa a água pelo tronco
+na-forests.c1.viz.steps.2	As raízes absorvem mais
+na-forests.c2.title	Os anéis das árvores
+na-forests.c2.text	A cada ano, a árvore ganha um anel: largo nos anos bons, estreito nos secos. Contar os anéis permite datar as árvores e revela os climas do passado.
+na-forests.c2.viz.items.0.a	Anel largo
+na-forests.c2.viz.items.0.b	bom ano de crescimento
+na-forests.c2.viz.items.1.a	Anel estreito
+na-forests.c2.viz.items.1.b	seca ou frio
+na-forests.c2.viz.items.2.a	Cicatriz de fogo
+na-forests.c2.viz.items.2.b	incêndio passado
+na-forests.c3.title	Caducifólias vs. perenes
+na-forests.c3.text	As árvores caducifólias perdem as folhas no outono para poupar água no inverno; as perenes mantêm folhas ou agulhas mais resistentes o ano todo.
+na-forests.c3.viz.l.t	Caducifólias
+na-forests.c3.viz.l.items.0	carvalho
+na-forests.c3.viz.l.items.1	castanheiro
+na-forests.c3.viz.l.items.2	folhas caem
+na-forests.c3.viz.r.t	Perenes
+na-forests.c3.viz.r.items.0	pinheiro
+na-forests.c3.viz.r.items.1	sobreiro
+na-forests.c3.viz.r.items.2	folhas ficam
+na-forests.c4.title	Depósitos de carbono
+na-forests.c4.text	As árvores armazenam carbono na madeira. As florestas absorvem algo entre um quarto e um terço do CO₂ que os humanos emitem por ano, mas os incêndios e a exploração de madeira o liberam de novo.
+na-forests.c4.viz.steps.0	CO₂ do ar
+na-forests.c4.viz.steps.1	Fotossíntese
+na-forests.c4.viz.steps.2	Carbono guardado na madeira
+na-forests.c4.viz.steps.3	Liberado se queimar
+na-forests.c5.title	As camadas da floresta tropical
+na-forests.c5.text	As florestas tropicais têm camadas: as árvores gigantes emergentes, um dossel denso onde vive a maior parte da vida, um sub-bosque escuro e o chão da floresta.
+na-forests.c5.viz.items.0	Árvores emergentes
+na-forests.c5.viz.items.1	Dossel: a maior parte da vida
+na-forests.c5.viz.items.2	Sub-bosque
+na-forests.c5.viz.items.3	Chão da floresta
+na-forests.c6.title	Desmatamento
+na-forests.c6.text	Cerca de 10 milhões de hectares de floresta se perdem todo ano, sobretudo para a agropecuária: gado, soja e óleo de palma. As florestas tropicais são as mais atingidas.
+na-forests.c6.viz.items.0	Criação de gado
+na-forests.c6.viz.items.1	Soja
+na-forests.c6.viz.items.2	Óleo de palma
+na-forests.c6.viz.items.3	Madeireiras
+na-forests.c7.title	As árvores conversam?
+na-forests.c7.text	As árvores liberam substâncias químicas quando são atacadas por insetos, o que pode ativar as defesas das árvores vizinhas. Se isso conta como "comunicação" ainda é debatido.
+na-forests.c7.viz.steps.0	Insetos atacam
+na-forests.c7.viz.steps.1	A árvore libera químicos
+na-forests.c7.viz.steps.2	As vizinhas os detectam
+na-forests.c7.viz.steps.3	Reforçam as defesas
+na-forests.c8.title	Árvores antigas
+na-forests.c8.text	Algumas árvores têm milhares de anos. Em Portugal, o Sobreiro Assobiador, em Águas de Moura, plantado em 1783, é o maior sobreiro do mundo e detentor de um recorde do Guinness.
+na-forests.c8.viz.events.0.l	plantado o Assobiador
+na-forests.c8.viz.events.1.l	colheita recorde de cortiça
+na-forests.c8.viz.events.2.l	Árvore Europeia do Ano
+na-forests.c9.title	Florestas e saúde
+na-forests.c9.text	Em estudos, passar tempo entre árvores reduz os hormônios do estresse e a pressão arterial. No Japão, o "banho de floresta" é recomendado para o bem-estar.
+na-forests.c9.viz.items.0	Menos estresse
+na-forests.c9.viz.items.1	Pressão mais baixa
+na-forests.c9.viz.items.2	Melhor humor
+na-forests.c9.viz.items.3	Ar mais limpo
+na-conservation.title	Conservação
+na-conservation.summary	Proteger a vida na Terra.
+na-conservation.q0.q	Qual é a maior ameaça à vida selvagem de modo geral?
+na-conservation.q0.o0	A caça
+na-conservation.q0.o1	A perda de habitat
+na-conservation.q0.o2	Os vulcões
+na-conservation.q0.x	Sobretudo para a agropecuária.
+na-conservation.q1.q	O que significa a meta "30×30"?
+na-conservation.q1.o0	30 novas espécies até 2030
+na-conservation.q1.o1	Proteger 30% da terra e do mar até 2030
+na-conservation.q1.o2	30% menos plástico
+na-conservation.q1.x	Acordada em 2022.
+na-conservation.c0.title	A crise de extinção
+na-conservation.c0.text	As espécies estão desaparecendo muito mais rápido do que o ritmo natural de fundo. Cerca de um milhão de espécies podem enfrentar a extinção nas próximas décadas.
+na-conservation.c0.viz.items.0	Perda de habitat
+na-conservation.c0.viz.items.1	Superexploração
+na-conservation.c0.viz.items.2	Mudanças climáticas
+na-conservation.c0.viz.items.3	Poluição
+na-conservation.c0.viz.items.4	Espécies invasoras
+na-conservation.c1.title	A Lista Vermelha
+na-conservation.c1.text	A Lista Vermelha da IUCN classifica as espécies de "Pouco Preocupante" até "Extinta". Mais de 45.000 espécies estão ameaçadas.
+na-conservation.c1.viz.items.0	Extinta
+na-conservation.c1.viz.items.1	Criticamente em Perigo
+na-conservation.c1.viz.items.2	Em Perigo
+na-conservation.c1.viz.items.3	Vulnerável
+na-conservation.c1.viz.items.4	Pouco Preocupante
+na-conservation.c2.title	O habitat é fundamental
+na-conservation.c2.text	A perda de habitat, sobretudo para a agricultura, é a maior ameaça. Proteger os habitats e ligá-los com corredores permite que a vida selvagem se desloque e se adapte.
+na-conservation.c2.viz.steps.0	Fragmentos de floresta
+na-conservation.c2.viz.steps.1	Ligar com corredores
+na-conservation.c2.viz.steps.2	Os animais circulam
+na-conservation.c2.viz.steps.3	As populações se recuperam
+na-conservation.c3.title	Histórias de sucesso
+na-conservation.c3.text	A conservação funciona. A baleia-jubarte, a águia-americana, o lince-ibérico e o panda-gigante se recuperaram depois de estarem à beira do desastre.
+na-conservation.c3.viz.items.0	Baleias-jubarte
+na-conservation.c3.viz.items.1	Águia-americana
+na-conservation.c3.viz.items.2	Lince-ibérico
+na-conservation.c3.viz.items.3	Panda-gigante
+na-conservation.c4.title	Áreas protegidas
+na-conservation.c4.text	Em 2022, quase 200 países concordaram em proteger 30% da terra e do mar até 2030, a meta "30×30". Hoje, cerca de 17% da terra e 8% dos oceanos estão protegidos.
+na-conservation.c4.viz.unit	% protegido
+na-conservation.c4.viz.items.0.l	Terra, hoje
+na-conservation.c4.viz.items.1.l	Oceano, hoje
+na-conservation.c4.viz.items.2.l	Meta 2030
+na-conservation.c5.title	Renaturalização
+na-conservation.c5.text	A renaturalização restaura processos naturais, muitas vezes trazendo de volta espécies-chave e deixando a natureza se autogerir. O Vale do Côa, em Portugal, é uma área de renaturalização.
+na-conservation.c5.viz.steps.0	Terras agrícolas abandonadas
+na-conservation.c5.viz.steps.1	Reintroduzir espécies-chave
+na-conservation.c5.viz.steps.2	Pastoreio e predação naturais
+na-conservation.c5.viz.steps.3	Natureza autossustentável
+na-conservation.c6.title	Zoológicos e bancos de sementes
+na-conservation.c6.text	Os programas de reprodução e os bancos de sementes guardam cópias de segurança das espécies. O Banco Global de Sementes de Svalbard guarda mais de um milhão de amostras de sementes no permafrost ártico.
+na-conservation.c6.viz.items.0.v	1 milhão+
+na-conservation.c6.viz.items.0.l	amostras de sementes em Svalbard
+na-conservation.c6.viz.items.1.l	abertura do cofre
+na-conservation.c6.viz.items.2.v	−18 °C
+na-conservation.c6.viz.items.2.l	temperatura de armazenamento
+na-conservation.c7.title	Ciência cidadã
+na-conservation.c7.text	Pessoas comuns ajudam a ciência contando aves, registrando avistamentos em apps e monitorando rios. Milhões de registros orientam a conservação.
+na-conservation.c7.viz.items.0	Contagem de aves
+na-conservation.c7.viz.items.1	Apps de avistamentos
+na-conservation.c7.viz.items.2	Censos de borboletas
+na-conservation.c7.viz.items.3	Testes de qualidade da água
+na-conservation.c8.title	O valor da natureza
+na-conservation.c8.text	A natureza fornece alimento, água limpa, polinização, proteção contra enchentes e remédios. Economistas estimam que os seus serviços valem mais do que o PIB mundial.
+na-conservation.c8.viz.items.0.a	Abelhas
+na-conservation.c8.viz.items.0.b	polinização
+na-conservation.c8.viz.items.1.a	Zonas úmidas
+na-conservation.c8.viz.items.1.b	controle de enchentes
+na-conservation.c8.viz.items.2.a	Florestas
+na-conservation.c8.viz.items.2.b	água limpa
+na-conservation.c8.viz.items.3.a	Manguezais
+na-conservation.c8.viz.items.3.b	proteção da costa
+na-conservation.c9.title	O que você pode fazer
+na-conservation.c9.text	Reduza o desperdício de comida, escolha peixe sustentável, apoie as áreas protegidas, plante espécies nativas e participe de projetos locais.
+na-conservation.c9.viz.items.0	Menos desperdício de comida
+na-conservation.c9.viz.items.1	Pescado sustentável
+na-conservation.c9.viz.items.2	Plantas nativas
+na-conservation.c9.viz.items.3	Projetos locais
+na-behaviour.title	Comportamento animal
+na-behaviour.summary	Espertos, sociais e surpreendentes.
+na-behaviour.q0.q	O que Konrad Lorenz mostrou com filhotes de ganso?
+na-behaviour.q0.o0	A migração
+na-behaviour.q0.o1	O imprinting
+na-behaviour.q0.o2	A ecolocalização
+na-behaviour.q0.x	Eles o seguiam como se fosse a mãe.
+na-behaviour.q1.q	Que animais passaram no teste do espelho?
+na-behaviour.q1.o0	Gatos e cachorros
+na-behaviour.q1.o1	Grandes primatas, golfinhos, elefantes, pegas
+na-behaviour.q1.o2	Só os peixes
+na-behaviour.q1.x	Eles se reconhecem.
+na-behaviour.c0.title	Instinto e aprendizagem
+na-behaviour.c0.text	Alguns comportamentos são instintivos, como a aranha tecendo a teia. Outros são aprendidos, como um chimpanzé jovem que copia a forma de quebrar castanhas.
+na-behaviour.c0.viz.l.t	Instinto
+na-behaviour.c0.viz.l.items.0	inato
+na-behaviour.c0.viz.l.items.1	teias de aranha
+na-behaviour.c0.viz.l.items.2	ninhos de aves
+na-behaviour.c0.viz.r.t	Aprendido
+na-behaviour.c0.viz.r.items.0	pela experiência
+na-behaviour.c0.viz.r.items.1	uso de ferramentas
+na-behaviour.c0.viz.r.items.2	canto das aves
+na-behaviour.c1.title	Imprinting
+na-behaviour.c1.text	Os gansos recém-nascidos seguem a primeira coisa que se move que eles veem. Konrad Lorenz tinha filhotes de ganso que o seguiam por toda parte como se ele fosse a "mãe".
+na-behaviour.c1.viz.steps.0	Nascer
+na-behaviour.c1.viz.steps.1	Ver algo se mexer
+na-behaviour.c1.viz.steps.2	Fixar-se nele
+na-behaviour.c1.viz.steps.3	Segui-lo para todo lado
+na-behaviour.c2.title	Uso de ferramentas
+na-behaviour.c2.text	Os chimpanzés "pescam" cupins com gravetos, as lontras-marinhas quebram conchas com pedras e os golfinhos usam esponjas para proteger o focinho enquanto procuram comida.
+na-behaviour.c2.viz.items.0.a	Chimpanzés
+na-behaviour.c2.viz.items.0.b	gravetos para pescar cupins
+na-behaviour.c2.viz.items.1.a	Lontras-marinhas
+na-behaviour.c2.viz.items.1.b	pedras para quebrar conchas
+na-behaviour.c2.viz.items.2.a	Golfinhos
+na-behaviour.c2.viz.items.2.b	esponjas como luvas
+na-behaviour.c2.viz.items.3.a	Corvos
+na-behaviour.c2.viz.items.3.b	gravetos em gancho
+na-behaviour.c3.title	Reconhecer-se
+na-behaviour.c3.text	Poucos animais se reconhecem no espelho: grandes primatas, golfinhos, elefantes e pegas passaram no teste do espelho.
+na-behaviour.c3.viz.items.0	Grandes primatas
+na-behaviour.c3.viz.items.1	Golfinhos
+na-behaviour.c3.viz.items.2	Elefantes-asiáticos
+na-behaviour.c3.viz.items.3	Pegas-rabudas
+na-behaviour.c4.title	Cultura animal
+na-behaviour.c4.text	Grupos diferentes da mesma espécie podem ter tradições diferentes, como os grupos de orcas com métodos de caça e cantos distintos. Essas tradições passam adiante pela aprendizagem.
+na-behaviour.c4.viz.l.t	Grupo A
+na-behaviour.c4.viz.l.items.0	caça focas
+na-behaviour.c4.viz.l.items.1	chamados próprios
+na-behaviour.c4.viz.r.t	Grupo B
+na-behaviour.c4.viz.r.items.0	caça peixes
+na-behaviour.c4.viz.r.items.1	outros chamados
+na-behaviour.c5.title	Cooperação
+na-behaviour.c5.text	Os lobos caçam em alcateia, os suricatos se revezam como sentinelas e os peixes-limpadores limpam peixes maiores em troca de comida.
+na-behaviour.c5.viz.items.0	Caça em grupo
+na-behaviour.c5.viz.items.1	Turnos de sentinela
+na-behaviour.c5.viz.items.2	Estações de limpeza
+na-behaviour.c5.viz.items.3	Cuidado compartilhado
+na-behaviour.c6.title	Corte
+na-behaviour.c6.text	Os pavões abrem a cauda, as aves-jardineiras decoram estruturas elaboradas e algumas aranhas dançam. As fêmeas exigentes impulsionam essas exibições.
+na-behaviour.c6.viz.items.0.a	Pavão
+na-behaviour.c6.viz.items.0.b	exibição da cauda
+na-behaviour.c6.viz.items.1.a	Ave-jardineira
+na-behaviour.c6.viz.items.1.b	caramanchão decorado
+na-behaviour.c6.viz.items.2.a	Aranha-saltadora
+na-behaviour.c6.viz.items.2.b	dança
+na-behaviour.c7.title	Brincadeira
+na-behaviour.c7.text	Muitos mamíferos e aves jovens brincam: isso desenvolve habilidades, condicionamento físico e laços sociais. Os corvos escorregam por telhados com neve, aparentemente por diversão.
+na-behaviour.c7.viz.items.0	Desenvolve habilidades
+na-behaviour.c7.viz.items.1	Cria laços
+na-behaviour.c7.viz.items.2	Exercício
+na-behaviour.c7.viz.items.3	Diversão
+na-behaviour.c8.title	Navegação
+na-behaviour.c8.text	Os salmões voltam ao rio onde nasceram guiados pelo olfato; as tartarugas marinhas leem o campo magnético da Terra; os pombos-correio usam várias pistas.
+na-behaviour.c8.viz.items.0.a	Salmão
+na-behaviour.c8.viz.items.0.b	cheiro do rio natal
+na-behaviour.c8.viz.items.1.a	Tartarugas
+na-behaviour.c8.viz.items.1.b	campo magnético
+na-behaviour.c8.viz.items.2.a	Pombos
+na-behaviour.c8.viz.items.2.b	Sol, magnetismo e marcos
+na-behaviour.c9.title	Emoções animais
+na-behaviour.c9.text	As evidências sugerem que muitos animais sentem medo, prazer e sofrimento. Vários países reconhecem por lei os animais como seres sencientes.
+na-behaviour.c9.viz.items.0	Medo
+na-behaviour.c9.viz.items.1	Prazer
+na-behaviour.c9.viz.items.2	Sofrimento
+na-behaviour.c9.viz.items.3	Laços sociais

@@ -1238,3 +1238,273 @@ tr-motors.c7.title	Fontes separadas
 tr-motors.c7.text	Alimente os motores com uma fonte própria, não pelo regulador de 3,3 V do microcontrolador, e ligue os terras entre si. Coloque capacitores perto do driver do motor para absorver picos.
 tr-motors.c7.viz.items.0.w	motor no pino 3,3 V do ESP32
 tr-motors.c7.viz.items.0.r	fonte separada para o motor, terra comum
+tr-motors.c7.viz.items.1.w	ESP32 reinicia na partida do motor
+tr-motors.c7.viz.items.1.r	capacitor de reserva perto do driver
+tr-motors.c8.title	Encoders
+tr-motors.c8.text	Um encoder no eixo do motor conta pulsos enquanto ele gira, para que o controlador saiba a posição e a velocidade exatas. Com realimentação, um motor CC barato vira um atuador preciso.
+tr-motors.c8.viz.steps.0	Defina o alvo
+tr-motors.c8.viz.steps.1	Encoder mede a posição
+tr-motors.c8.viz.steps.2	Controlador corrige
+tr-motors.c8.viz.steps.3	Repita
+tr-motors.c9.title	Controle PID
+tr-motors.c9.text	Um controlador PID ajusta a saída com base no erro atual (P), no erro acumulado no passado (I) e na rapidez com que o erro está mudando (D). Ele mantém estáveis motores, aquecedores e drones.
+tr-motors.c9.viz.items.0.a	P
+tr-motors.c9.viz.items.0.b	reage ao erro atual
+tr-motors.c9.viz.items.1.a	I
+tr-motors.c9.viz.items.1.b	elimina o erro constante
+tr-motors.c9.viz.items.2.a	D
+tr-motors.c9.viz.items.2.b	amortece o overshoot
+tr-power.title	Projeto de baixo consumo
+tr-power.summary	Como fazer uma bateria durar meses ou anos.
+tr-power.q0.q	O que mais importa para a autonomia de um dispositivo que dorme 99% do tempo?
+tr-power.q0.o0	Corrente de pico
+tr-power.q0.o1	Corrente em sleep e tempo acordado
+tr-power.q0.o2	Velocidade da CPU
+tr-power.q0.x	A corrente média define a autonomia da bateria.
+tr-power.q1.q	Uma bateria de 2.000 mAh com corrente média de 0,5 mA dura cerca de…
+tr-power.q1.o0	40 horas
+tr-power.q1.o1	4.000 horas (~5,5 meses)
+tr-power.q1.o2	4 anos
+tr-power.q1.x	2.000 ÷ 0,5 = 4.000 h.
+tr-power.q2.q	Como reduzir a energia gasta em cada despertar com Wi-Fi?
+tr-power.q2.o0	Usar DHCP
+tr-power.q2.o1	Usar IP fixo e canal fixo para conectar mais rápido
+tr-power.q2.o2	Transmitir mais alto
+tr-power.q2.x	Menos tempo acordado, menos energia.
+tr-power.c0.title	O que conta é a corrente média
+tr-power.c0.text	Autonomia da bateria = capacidade ÷ corrente média. Um dispositivo que acorda por 1 segundo a cada 10 minutos passa 99,8% do tempo dormindo, então a corrente em sleep importa demais.
+tr-power.c0.viz.f	horas = mAh ÷ mA médio
+tr-power.c0.viz.items.0.s	mAh
+tr-power.c0.viz.items.0.m	capacidade da bateria
+tr-power.c0.viz.items.1.s	mA médio
+tr-power.c0.viz.items.1.m	no ciclo inteiro
+tr-power.c1.title	Corrente média
+tr-power.c1.text	Pondere cada estado pelo tempo que ele dura.
+tr-power.c1.example.0	2 s a 120 mA, 598 s a 10 µA, a cada 600 s
+tr-power.c1.example.1	(240 + 6) ÷ 600
+tr-power.c1.example.2	≈ 0,41 mA → 3.000 mAh duram ~300 dias
+tr-power.c1.viz.f	I méd = (I acordado × t acordado + I sleep × t sleep) ÷ t total
+tr-power.c1.viz.items.0.s	acordado
+tr-power.c1.viz.items.0.m	120 mA por 2 s
+tr-power.c1.viz.items.1.s	dormindo
+tr-power.c1.viz.items.1.m	0,01 mA por 598 s
+tr-power.c2.title	Deep sleep
+tr-power.c2.text	Um ESP32 consome uns 100+ mA com o Wi-Fi ligado, mas só cerca de 10 µA em deep sleep (numa placa bem projetada). Um timer, um pino ou um sensor pode acordá-lo.
+tr-power.c2.viz.unit	mA (ESP32, aprox.)
+tr-power.c2.viz.items.0.l	Wi-Fi transmitindo
+tr-power.c2.viz.items.1.l	CPU ativa
+tr-power.c2.viz.items.2.l	Light sleep
+tr-power.c2.viz.items.3.l	Deep sleep
+tr-power.c3.title	A placa faz diferença
+tr-power.c3.text	Muitas placas de desenvolvimento desperdiçam energia: um LED de alimentação, um chip USB-serial e um regulador ineficiente podem puxar vários mA mesmo com o chip dormindo. Para projetos a bateria, escolha uma placa de baixo consumo ou remova o LED.
+tr-power.c3.viz.items.0	Remova o LED de alimentação
+tr-power.c3.viz.items.1	Regulador de baixa corrente quiescente
+tr-power.c3.viz.items.2	Sem chip USB sempre ligado
+tr-power.c3.viz.items.3	Ligue os sensores só na leitura
+tr-power.c4.title	Desligue os sensores
+tr-power.c4.text	Os sensores também consomem corrente. Alimente-os por um pino GPIO ou por uma chave MOSFET, ligue-os logo antes da leitura e desligue-os depois.
+tr-power.c4.viz.steps.0	Acordar
+tr-power.c4.viz.steps.1	Ligar o sensor
+tr-power.c4.viz.steps.2	Ler
+tr-power.c4.viz.steps.3	Desligar o sensor
+tr-power.c4.viz.steps.4	Dormir
+tr-power.c5.title	Conexão Wi-Fi rápida
+tr-power.c5.text	Conectar ao Wi-Fi pode levar segundos. Usar IP fixo, canal fixo e credenciais salvas pode reduzir isso para menos de um segundo, economizando muita energia a cada despertar.
+tr-power.c5.viz.unit	segundos acordado (aprox.)
+tr-power.c5.viz.items.0.l	DHCP e varredura
+tr-power.c5.viz.items.1.l	IP fixo
+tr-power.c5.viz.items.2.l	IP fixo + canal fixo
+tr-power.c6.title	Escolha o rádio
+tr-power.c6.text	Para leituras frequentes a longas distâncias com bateria, o LoRa ou o BLE gastam muito menos energia por mensagem do que o Wi-Fi.
+tr-power.c6.viz.unit	energia relativa por mensagem
+tr-power.c6.viz.items.0.l	Wi-Fi
+tr-power.c6.viz.items.1.l	BLE
+tr-power.c6.viz.items.2.l	LoRa (mensagem curta)
+tr-power.c7.title	Escolhendo a química da bateria
+tr-power.c7.text	As células de íon-lítio dão 3,0–4,2 V e são recarregáveis; as LiFePO4 são mais seguras, com 3,2 V nominais; o lítio primário (como as AA de lítio ou Li-SOCl₂) serve para anos sem recarga no frio.
+tr-power.c7.viz.items.0.a	Li-ion 18650
+tr-power.c7.viz.items.0.b	recarregável, ~3.000 mAh
+tr-power.c7.viz.items.1.a	LiFePO4
+tr-power.c7.viz.items.1.b	mais segura, 3,2 V
+tr-power.c7.viz.items.2.a	Li-SOCl₂
+tr-power.c7.viz.items.2.b	anos, não recarregável
+tr-power.c7.viz.items.3.a	AA alcalina
+tr-power.c7.viz.items.3.b	barata, fraca no frio
+tr-power.c8.title	Recarga solar
+tr-power.c8.text	Um pequeno painel solar e um controlador de carga podem manter um sensor remoto funcionando indefinidamente. Dimensione o painel para o inverno, quando o sol é mais fraco, com alguma margem para semanas nubladas.
+tr-power.c8.viz.steps.0	Painel pequeno
+tr-power.c8.viz.steps.1	Controlador de carga
+tr-power.c8.viz.steps.2	Bateria
+tr-power.c8.viz.steps.3	Sensor dorminhoco
+tr-power.c9.title	Meça, não chute
+tr-power.c9.text	Use um multímetro em série, ou melhor, um power profiler, para medir as correntes em sleep e em atividade. Pequenas surpresas, como um pino flutuando ou um pull-up, podem esgotar uma bateria em semanas.
+tr-power.c9.viz.items.0	Meça a corrente em sleep
+tr-power.c9.viz.items.1	Meça o tempo acordado
+tr-power.c9.viz.items.2	Procure pinos flutuando
+tr-power.c9.viz.items.3	Registre a tensão da bateria nos dados
+tr-datasheets.title	Lendo datasheets e esquemáticos
+tr-datasheets.summary	Encontrando o que importa em 60 páginas.
+tr-datasheets.q0.q	O que são os valores máximos absolutos?
+tr-datasheets.q0.o0	Valores normais de operação
+tr-datasheets.q0.o1	Limites que nunca podem ser ultrapassados
+tr-datasheets.q0.o2	Valores típicos
+tr-datasheets.q0.x	Ultrapassá-los pode danificar a peça.
+tr-datasheets.q1.q	Dois fios com o rótulo "SCL" em lugares diferentes de um esquemático são…
+tr-datasheets.q1.o0	Sinais diferentes
+tr-datasheets.q1.o1	Conectados
+tr-datasheets.q1.o2	Erros
+tr-datasheets.q1.x	Os rótulos de rede (net labels) conectam pontos com o mesmo nome.
+tr-datasheets.q2.q	Você deve projetar usando valores típicos ou de pior caso?
+tr-datasheets.q2.o0	Típicos
+tr-datasheets.q2.o1	Pior caso (mín./máx.)
+tr-datasheets.q2.o2	Nenhum dos dois
+tr-datasheets.q2.x	As garantias são os valores mínimo e máximo.
+tr-datasheets.c0.title	Comece pelo resumo
+tr-datasheets.c0.text	A primeira página lista as características principais: faixa de alimentação, interface, precisão, consumo. Se ali já não serve para o seu projeto, você pode parar de ler.
+tr-datasheets.c0.viz.items.0	Faixa de tensão de alimentação
+tr-datasheets.c0.viz.items.1	Interface (I²C, SPI…)
+tr-datasheets.c0.viz.items.2	Precisão e faixa
+tr-datasheets.c0.viz.items.3	Consumo de corrente
+tr-datasheets.c0.viz.items.4	Encapsulamento
+tr-datasheets.c1.title	Valores máximos absolutos
+tr-datasheets.c1.text	São limites que nunca podem ser ultrapassados, nem por um instante, ou a peça pode ser danificada. Não são condições normais de operação.
+tr-datasheets.c1.viz.l.t	Máximo absoluto
+tr-datasheets.c1.viz.l.items.0	nunca ultrapasse
+tr-datasheets.c1.viz.l.items.1	risco de dano
+tr-datasheets.c1.viz.r.t	Operação recomendada
+tr-datasheets.c1.viz.r.items.0	onde funciona como especificado
+tr-datasheets.c2.title	Típico vs mín. e máx.
+tr-datasheets.c2.text	"Típico" é o que a maioria das peças faz; mínimo e máximo são garantias. Projete para o pior caso, não para o valor típico.
+tr-datasheets.c2.viz.unit	exemplo: precisão ±°C
+tr-datasheets.c2.viz.items.0.l	Típico
+tr-datasheets.c2.viz.items.1.l	Máximo
+tr-datasheets.c3.title	Pinouts
+tr-datasheets.c3.text	O diagrama de pinagem mostra o que cada pino faz, visto de cima (geralmente). O pino 1 é marcado por um ponto ou um chanfro. Erros aqui são a causa mais comum de placas mortas.
+tr-datasheets.c3.viz.items.0	Ache a marca do pino 1
+tr-datasheets.c3.viz.items.1	Vista de cima ou de baixo?
+tr-datasheets.c3.viz.items.2	Confira alimentação e terra
+tr-datasheets.c3.viz.items.3	Confira cada nome de sinal
+tr-datasheets.c4.title	Circuito de aplicação
+tr-datasheets.c4.text	A maioria dos datasheets mostra um circuito de aplicação típico, com os capacitores e resistores exatos a usar. Copie-o fielmente, principalmente no caso de reguladores e rádios.
+tr-datasheets.c4.viz.steps.0	Ache o circuito de aplicação
+tr-datasheets.c4.viz.steps.1	Copie valores e layout
+tr-datasheets.c4.viz.steps.2	Mude só o que você entende
+tr-datasheets.c5.title	Símbolos de esquemático
+tr-datasheets.c5.text	Aprenda os símbolos básicos: resistor (zigue-zague ou retângulo), capacitor (duas placas), diodo (triângulo e barra), transistor, terra e setas de alimentação.
+tr-datasheets.c5.viz.items.0.a	zigue-zague ou retângulo
+tr-datasheets.c5.viz.items.0.b	resistor
+tr-datasheets.c5.viz.items.1.a	duas placas
+tr-datasheets.c5.viz.items.1.b	capacitor
+tr-datasheets.c5.viz.items.2.a	triângulo + barra
+tr-datasheets.c5.viz.items.2.b	diodo
+tr-datasheets.c5.viz.items.3.b	terra
+tr-datasheets.c5.viz.items.4.a	seta para cima
+tr-datasheets.c5.viz.items.4.b	alimentação
+tr-datasheets.c6.title	Rótulos de rede
+tr-datasheets.c6.text	Os esquemáticos grandes não desenham todos os fios; eles dão nomes aos fios. Dois pontos com o rótulo "SDA" estão conectados mesmo que nenhuma linha os ligue.
+tr-datasheets.c6.viz.steps.0	Rotule um fio "SDA"
+tr-datasheets.c6.viz.steps.1	Mesmo rótulo em outro lugar
+tr-datasheets.c6.viz.steps.2	Estão conectados
+tr-datasheets.c7.title	Os gráficos dizem a verdade
+tr-datasheets.c7.text	Os gráficos mostram como os parâmetros mudam com a temperatura, a tensão ou a carga. Um sensor preciso a 25 °C pode derivar a −10 °C; um regulador pode cair de tensão com corrente alta.
+tr-datasheets.c7.viz.items.0	Precisão vs temperatura
+tr-datasheets.c7.viz.items.1	Corrente vs tensão
+tr-datasheets.c7.viz.items.2	Eficiência vs carga
+tr-datasheets.c7.viz.items.3	Resposta vs frequência
+tr-datasheets.c8.title	Errata
+tr-datasheets.c8.text	Os chips podem ter bugs conhecidos, publicados em um documento de errata. Se um recurso se comporta mal apesar de o código estar certo, consulte a errata primeiro.
+tr-datasheets.c8.viz.steps.0	Comportamento estranho
+tr-datasheets.c8.viz.steps.1	Confira a fiação
+tr-datasheets.c8.viz.steps.2	Consulte a errata
+tr-datasheets.c8.viz.steps.3	Contorno ou outra peça
+tr-datasheets.c9.title	Onde encontrá-los
+tr-datasheets.c9.text	Os datasheets estão disponíveis de graça no site do fabricante e em distribuidores como Mouser, DigiKey ou LCSC. Pesquise pelo número de peça exato impresso no chip.
+tr-datasheets.c9.viz.items.0	Site do fabricante
+tr-datasheets.c9.viz.items.1	Mouser, DigiKey, LCSC
+tr-datasheets.c9.viz.items.2	Número de peça exato
+tr-datasheets.c9.viz.items.3	Revisão mais recente
+tr-scope.title	Osciloscópios e depuração
+tr-scope.summary	Vendo sinais e encontrando defeitos.
+tr-scope.q0.q	Por que o trigger é importante em um osciloscópio?
+tr-scope.q0.o0	Economiza energia
+tr-scope.q0.o1	Dá uma imagem estável de sinais repetitivos
+tr-scope.q0.o2	Mede corrente
+tr-scope.q0.x	Ele sincroniza a tela.
+tr-scope.q1.q	O que é perigoso na garra de terra de um osciloscópio?
+tr-scope.q1.o0	Ela é afiada
+tr-scope.q1.o1	Ela está ligada ao terra da rede, então uma conexão errada provoca um curto
+tr-scope.q1.o2	Ela inverte a polaridade
+tr-scope.q1.x	Use pontas isoladas na rede elétrica.
+tr-scope.q2.q	Por onde a depuração deve começar?
+tr-scope.q2.o0	Reescrever o código
+tr-scope.q2.o1	Conferir as tensões da alimentação
+tr-scope.q2.o2	Trocar o chip
+tr-scope.q2.x	Problemas de alimentação causam muitos sintomas.
+tr-scope.c0.title	O que um osciloscópio mostra
+tr-scope.c0.text	Um multímetro dá um número; um osciloscópio desenha a tensão em função do tempo, para você ver formas de onda, glitches, ruído e temporização.
+tr-scope.c0.viz.l.t	Multímetro
+tr-scope.c0.viz.l.items.0	um número
+tr-scope.c0.viz.l.items.1	mudanças lentas
+tr-scope.c0.viz.l.items.2	barato
+tr-scope.c0.viz.r.t	Osciloscópio
+tr-scope.c0.viz.r.items.0	tensão no tempo
+tr-scope.c0.viz.r.items.1	eventos rápidos
+tr-scope.c0.viz.r.items.2	mostra a forma
+tr-scope.c1.title	Os dois eixos
+tr-scope.c1.text	O eixo vertical é em volts por divisão; o horizontal, em tempo por divisão. Ajuste os dois até o sinal preencher bem a tela.
+tr-scope.c1.viz.items.0.a	V/div
+tr-scope.c1.viz.items.0.b	escala vertical
+tr-scope.c1.viz.items.1.a	s/div
+tr-scope.c1.viz.items.1.b	escala de tempo
+tr-scope.c1.viz.items.2.a	trigger
+tr-scope.c1.viz.items.2.b	o que inicia o traço
+tr-scope.c1.viz.items.3.a	ponta ×10
+tr-scope.c1.viz.items.3.b	ajuste de atenuação
+tr-scope.c2.title	Trigger
+tr-scope.c2.text	O trigger diz ao osciloscópio quando começar a desenhar, por exemplo quando a tensão passa de 1,5 V subindo. Sem ele, um sinal repetitivo fica correndo e borrado na tela.
+tr-scope.c2.viz.steps.0	O sinal passa do nível de trigger
+tr-scope.c2.viz.steps.1	O osciloscópio começa a desenhar
+tr-scope.c2.viz.steps.2	Imagem estável a cada varredura
+tr-scope.c3.title	Largura de banda
+tr-scope.c3.text	A largura de banda de um osciloscópio limita a velocidade do sinal que ele consegue mostrar com precisão. Como regra, escolha uma largura de banda de cerca de cinco vezes a frequência mais alta que interessa.
+tr-scope.c3.viz.f	banda ≈ 5 × frequência do sinal
+tr-scope.c3.viz.items.0.s	clock SPI de 10 MHz
+tr-scope.c3.viz.items.0.m	pede um osciloscópio de ~50 MHz
+tr-scope.c4.title	O perigo do fio de terra
+tr-scope.c4.text	O terra da ponta do osciloscópio está ligado ao terra da rede elétrica. Prendê-lo num ponto que não está no potencial de terra, como num circuito da rede elétrica, cria um curto-circuito. Use pontas isoladas ou diferenciais na rede elétrica.
+tr-scope.c4.viz.items.0.w	garra de terra num circuito da rede
+tr-scope.c4.viz.items.0.r	ponta diferencial ou isolada
+tr-scope.c4.viz.items.1.w	terra num nó que não é terra
+tr-scope.c4.viz.items.1.r	curto-circuito
+tr-scope.c5.title	Método de depuração
+tr-scope.c5.text	Comece pela alimentação e vá para fora: confira as tensões de alimentação, depois os clocks, depois os sinais. Mude uma coisa de cada vez e anote os resultados.
+tr-scope.c5.viz.steps.0	Confira as linhas de alimentação
+tr-scope.c5.viz.steps.1	Confira os clocks
+tr-scope.c5.viz.steps.2	Confira os sinais
+tr-scope.c5.viz.steps.3	Mude uma coisa de cada vez
+tr-scope.c6.title	Log pela serial
+tr-scope.c6.text	Imprimir valores pela porta serial é o depurador mais barato: qual é a leitura do sensor, por qual ramo o código passou, quanto tempo levou?
+tr-scope.c6.viz.items.0	Imprima as variáveis-chave
+tr-scope.c6.viz.items.1	Imprima timestamps
+tr-scope.c6.viz.items.2	Imprima qual ramo rodou
+tr-scope.c6.viz.items.3	Tire os prints ruidosos depois
+tr-scope.c7.title	Depuração com patinho de borracha
+tr-scope.c7.text	Explicar o problema passo a passo, mesmo que seja para um patinho de borracha ou um colega, muitas vezes revela o erro. Escrever também funciona.
+tr-scope.c7.viz.steps.0	Explique cada passo em voz alta
+tr-scope.c7.viz.steps.1	Perceba a lacuna
+tr-scope.c7.viz.steps.2	Ache o bug
+tr-scope.c8.title	Os culpados de sempre
+tr-scope.c8.text	Muitos defeitos são simples: falta de terra comum, TX/RX trocados, tensão errada, fio solto na protoboard, falta de pull-up ou a placa errada selecionada na IDE.
+tr-scope.c8.viz.items.0	Terra comum?
+tr-scope.c8.viz.items.1	TX/RX trocados?
+tr-scope.c8.viz.items.2	Tensão certa?
+tr-scope.c8.viz.items.3	Fio solto?
+tr-scope.c8.viz.items.4	Tem pull-ups?
+tr-scope.c9.title	Ferramentas baratas vão longe
+tr-scope.c9.text	Um analisador lógico de € 10, um multímetro básico e um osciloscópio USB ou um osciloscópio de bancada usado dão conta da maior parte da depuração amadora.
+tr-scope.c9.viz.items.0	Multímetro
+tr-scope.c9.viz.items.1	Analisador lógico USB
+tr-scope.c9.viz.items.2	Osciloscópio de entrada
+tr-scope.c9.viz.items.3	Fonte de bancada com limite de corrente
+tr-noise.title	Ruído, aterramento e desacoplamento
+tr-noise.summary	Por que os circuitos se comportam mal e como acalmá-los.

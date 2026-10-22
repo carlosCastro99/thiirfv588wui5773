@@ -1104,7 +1104,7 @@ sp-astronauts.c3.title	Dormir
 sp-astronauts.c3.text	Os astronautas dormem em pequenas cabines, em sacos de dormir presos à parede. Não existe "em cima", então dá para dormir em qualquer posição.
 sp-astronauts.c3.viz.items.0	Saco de dormir preso à parede
 sp-astronauts.c3.viz.items.1	Máscara de olhos
-sp-astronauts.c3.viz.items.2	Tampões de ouvido
+sp-astronauts.c3.viz.items.2	Tampões
 sp-astronauts.c3.viz.items.3	16 nasceres do sol por dia
 sp-astronauts.c4.title	O corpo no espaço
 sp-astronauts.c4.text	Sem gravidade, músculos e ossos enfraquecem, os líquidos sobem para a cabeça e a coluna se estica; os astronautas ficam cerca de 3 cm mais altos, temporariamente.
@@ -1344,3 +1344,269 @@ sp-dark.c3.viz.steps.3	Massa separada do gás
 sp-dark.c4.title	O que poderia ser?
 sp-dark.c4.text	A matéria escura não emite nem absorve luz e quase não interage. Entre os candidatos estão partículas desconhecidas, como WIMPs ou áxions. Detectores no fundo da terra não encontraram nada até agora.
 sp-dark.c4.viz.items.0	WIMPs
+sp-dark.c4.viz.items.1	Áxions
+sp-dark.c4.viz.items.2	Neutrinos estéreis
+sp-dark.c4.viz.items.3	Gravidade modificada, ideia rival
+sp-dark.c5.title	Energia escura
+sp-dark.c5.text	Em 1998, duas equipes descobriram que a expansão do universo está acelerando, e não desacelerando. Algo, chamado energia escura, afasta o espaço. A descoberta ganhou o Prêmio Nobel de 2011.
+sp-dark.c5.viz.steps.0	Medir supernovas distantes
+sp-dark.c5.viz.steps.1	Mais fracas que o esperado
+sp-dark.c5.viz.steps.2	Expansão acelerando
+sp-dark.c5.viz.steps.3	Energia escura
+sp-dark.c6.title	Velas-padrão
+sp-dark.c6.text	As supernovas do tipo Ia atingem todas mais ou menos o mesmo brilho máximo, então o brilho aparente delas nos diz a que distância estão, como estimar a distância de uma lâmpada conhecida.
+sp-dark.c6.viz.items.0.a	Brilho real conhecido
+sp-dark.c6.viz.items.0.b	vela-padrão
+sp-dark.c6.viz.items.1.a	Parece mais fraca
+sp-dark.c6.viz.items.1.b	mais distante
+sp-dark.c6.viz.items.2.a	Comparar com o desvio
+sp-dark.c6.viz.items.2.b	história da expansão
+sp-dark.c7.title	A teia cósmica
+sp-dark.c7.text	Nas maiores escalas, as galáxias formam uma teia de filamentos e paredes em volta de enormes vazios, moldada pela gravidade da matéria escura.
+sp-dark.c7.viz.root	Teia cósmica
+sp-dark.c7.viz.items.0	Filamentos
+sp-dark.c7.viz.items.1	Aglomerados nos nós
+sp-dark.c7.viz.items.2	Vazios enormes
+sp-dark.c8.title	Euclid
+sp-dark.c8.text	O telescópio Euclid, da ESA, lançado em 2023, está mapeando bilhões de galáxias para medir como a matéria escura e a energia escura moldaram o universo.
+sp-dark.c8.viz.items.0.l	lançamento
+sp-dark.c8.viz.items.1.v	1,5 bilhão
+sp-dark.c8.viz.items.1.l	galáxias a mapear
+sp-dark.c8.viz.items.2.v	L2
+sp-dark.c8.viz.items.2.l	onde orbita
+sp-dark.c9.title	Ciência na fronteira
+sp-dark.c9.text	Matéria escura e energia escura são nomes para coisas que conseguimos medir, mas ainda não entendemos. É no não saber que acontece a ciência mais empolgante.
+sp-dark.c9.viz.steps.0	A observação não bate
+sp-dark.c9.viz.steps.1	Dar nome ao mistério
+sp-dark.c9.viz.steps.2	Testar ideias
+sp-dark.c9.viz.steps.3	Física nova?
+sp-satellites.title	Satélites e GPS
+sp-satellites.summary	As máquinas invisíveis acima de nós.
+sp-satellites.q0.q	De quantos satélites o GPS precisa para dar uma posição?
+sp-satellites.q0.o0	1
+sp-satellites.q0.o1	2
+sp-satellites.q0.o2	Pelo menos 4
+sp-satellites.q0.x	O quarto corrige o erro do relógio.
+sp-satellites.q1.q	O sistema europeu de navegação por satélite se chama…
+sp-satellites.q1.o0	Sentinel
+sp-satellites.q1.o1	Galileo
+sp-satellites.q1.o2	Copernicus
+sp-satellites.q1.x	Ele funciona junto com o GPS.
+sp-satellites.c0.title	Quantos são?
+sp-satellites.c0.text	Mais de 10.000 satélites ativos orbitam a Terra, a maioria lançada nos últimos anos para constelações de internet. O primeiro, o Sputnik, foi lançado em 1957.
+sp-satellites.c0.viz.events.0.l	Sputnik 1
+sp-satellites.c0.viz.events.1.l	Telstar retransmite TV
+sp-satellites.c0.viz.events.2.l	primeiro satélite GPS
+sp-satellites.c0.viz.events.3.l	começa o Starlink
+sp-satellites.c1.title	Tipos de órbita
+sp-satellites.c1.text	Os satélites ficam em órbitas diferentes para trabalhos diferentes: órbita baixa para imagens e internet, média para navegação, geoestacionária para TV e meteorologia.
+sp-satellites.c1.viz.unit	km
+sp-satellites.c1.viz.items.0.l	Órbita baixa
+sp-satellites.c1.viz.items.1.l	GPS, média
+sp-satellites.c1.viz.items.2.l	Geoestacionária
+sp-satellites.c2.title	Como o GPS funciona
+sp-satellites.c2.text	Seu celular recebe sinais de tempo de pelo menos quatro satélites. A partir das minúsculas diferenças no tempo de chegada, ele calcula sua posição com precisão de poucos metros.
+sp-satellites.c2.viz.steps.0	Satélites emitem a hora
+sp-satellites.c2.viz.steps.1	O celular mede atrasos
+sp-satellites.c2.viz.steps.2	Calcula distâncias
+sp-satellites.c2.viz.steps.3	Acha a posição
+sp-satellites.c3.title	Por que quatro satélites?
+sp-satellites.c3.text	Três satélites fixam sua posição em 3D; um quarto corrige o relógio barato e impreciso do seu celular. Mais satélites melhoram a precisão.
+sp-satellites.c3.viz.items.0.a	3 satélites
+sp-satellites.c3.viz.items.0.b	posição
+sp-satellites.c3.viz.items.1.a	4º satélite
+sp-satellites.c3.viz.items.1.b	correção do relógio
+sp-satellites.c3.viz.items.2.a	Mais
+sp-satellites.c3.viz.items.2.b	mais precisão
+sp-satellites.c4.title	Galileo
+sp-satellites.c4.text	O sistema de navegação próprio da Europa, o Galileo, tem mais de 25 satélites. Os celulares combinam GPS (EUA), Galileo (UE), GLONASS (Rússia) e BeiDou (China).
+sp-satellites.c4.viz.items.0.a	GPS
+sp-satellites.c4.viz.items.0.b	EUA
+sp-satellites.c4.viz.items.1.a	Galileo
+sp-satellites.c4.viz.items.1.b	União Europeia
+sp-satellites.c4.viz.items.2.a	GLONASS
+sp-satellites.c4.viz.items.2.b	Rússia
+sp-satellites.c4.viz.items.3.a	BeiDou
+sp-satellites.c4.viz.items.3.b	China
+sp-satellites.c5.title	Satélites meteorológicos
+sp-satellites.c5.text	Os satélites geoestacionários fotografam a mesma metade da Terra a cada poucos minutos, enquanto os de órbita polar varrem o planeta inteiro duas vezes por dia. As previsões dependem dos dois.
+sp-satellites.c5.viz.l.t	Geoestacionário
+sp-satellites.c5.viz.l.items.0	mesma vista
+sp-satellites.c5.viz.l.items.1	a cada poucos minutos
+sp-satellites.c5.viz.r.t	Órbita polar
+sp-satellites.c5.viz.r.items.0	Terra inteira
+sp-satellites.c5.viz.r.items.1	duas vezes por dia
+sp-satellites.c6.title	Observação da Terra
+sp-satellites.c6.text	Os satélites Sentinel, do programa europeu Copernicus, monitoram incêndios florestais, enchentes, lavouras, nível do mar e gelo, de graça. Bombeiros e agricultores portugueses usam esses dados.
+sp-satellites.c6.viz.items.0	Incêndios florestais
+sp-satellites.c6.viz.items.1	Enchentes
+sp-satellites.c6.viz.items.2	Saúde das lavouras
+sp-satellites.c6.viz.items.3	Nível do mar e gelo
+sp-satellites.c7.title	Lixo espacial
+sp-satellites.c7.text	Mais de um milhão de fragmentos maiores que 1 cm orbitam a Terra a velocidades de bala. Uma colisão pode gerar milhares de novos fragmentos.
+sp-satellites.c7.viz.steps.0	Colisão
+sp-satellites.c7.viz.steps.1	Fragmentos
+sp-satellites.c7.viz.steps.2	Mais colisões
+sp-satellites.c7.viz.steps.3	Risco de reação em cadeia
+sp-satellites.c8.title	Internet via satélite
+sp-satellites.c8.text	Constelações de milhares de satélites em órbita baixa oferecem internet rápida em qualquer lugar, inclusive em navios, aviões e vilarejos remotos. Os astrônomos se preocupam com os riscos nas suas imagens.
+sp-satellites.c8.viz.l.t	Vantagens
+sp-satellites.c8.viz.l.items.0	internet em todo lugar
+sp-satellites.c8.viz.l.items.1	resposta a desastres
+sp-satellites.c8.viz.r.t	Problemas
+sp-satellites.c8.viz.r.items.0	lixo espacial
+sp-satellites.c8.viz.r.items.1	riscos nas imagens de telescópios
+sp-satellites.c9.title	Portugal no espaço
+sp-satellites.c9.text	Portugal entrou na ESA em 2000, fundou a agência Portugal Space em 2019 e lançou seu primeiro satélite, o microssatélite PoSAT-1, já em 1993.
+sp-satellites.c9.viz.events.0.l	lançamento do PoSAT-1
+sp-satellites.c9.viz.events.1.l	entra na ESA
+sp-satellites.c9.viz.events.2.l	fundação da Portugal Space
+sp-pioneers.title	Os grandes pioneiros da astronomia
+sp-pioneers.summary	Como descobrimos nosso lugar no cosmos.
+sp-pioneers.q0.q	Quem mediu pela primeira vez a circunferência da Terra?
+sp-pioneers.q0.o0	Galileu
+sp-pioneers.q0.o1	Eratóstenes
+sp-pioneers.q0.o2	Newton
+sp-pioneers.q0.x	Usando sombras ao meio-dia.
+sp-pioneers.q1.q	O que Kepler descobriu sobre as órbitas?
+sp-pioneers.q1.o0	São círculos
+sp-pioneers.q1.o1	São elipses
+sp-pioneers.q1.o2	São aleatórias
+sp-pioneers.q1.x	Usando os dados de Tycho Brahe.
+sp-pioneers.c0.title	Astrônomos antigos
+sp-pioneers.c0.text	Os babilônios registraram eclipses durante séculos; os gregos mediram a Terra. Por volta de 240 a.C., Eratóstenes estimou a circunferência da Terra usando as sombras em duas cidades.
+sp-pioneers.c0.viz.steps.0	Meio-dia em Siena: sem sombra
+sp-pioneers.c0.viz.steps.1	Alexandria: sombra de 7°
+sp-pioneers.c0.viz.steps.2	7° é 1/50 do círculo
+sp-pioneers.c0.viz.steps.3	Terra ≈ 50 × distância
+sp-pioneers.c1.title	O modelo de Ptolomeu
+sp-pioneers.c1.text	O modelo de Ptolomeu, com a Terra no centro e os planetas se movendo em círculos sobre círculos, previa as posições bem o bastante para ser usado por 1.400 anos.
+sp-pioneers.c1.viz.l.t	Ptolomeu
+sp-pioneers.c1.viz.l.items.0	Terra no centro
+sp-pioneers.c1.viz.l.items.1	epiciclos
+sp-pioneers.c1.viz.r.t	Copérnico
+sp-pioneers.c1.viz.r.items.0	Sol no centro
+sp-pioneers.c1.viz.r.items.1	ideia mais simples
+sp-pioneers.c2.title	Copérnico
+sp-pioneers.c2.text	Em 1543, Nicolau Copérnico publicou seu modelo com o Sol no centro, tirando a Terra do centro do universo. Levou um século para ser amplamente aceito.
+sp-pioneers.c2.viz.events.0.y	150 d.C.
+sp-pioneers.c2.viz.events.0.l	Ptolomeu
+sp-pioneers.c2.viz.events.1.l	Copérnico
+sp-pioneers.c2.viz.events.2.l	leis de Kepler
+sp-pioneers.c2.viz.events.3.l	descobertas de Galileu
+sp-pioneers.c3.title	Tycho e Kepler
+sp-pioneers.c3.text	Tycho Brahe fez as medições a olho nu mais precisas da história. Seu assistente, Johannes Kepler, usou esses dados para descobrir que os planetas se movem em elipses.
+sp-pioneers.c3.viz.steps.0	Dados precisos de Tycho
+sp-pioneers.c3.viz.steps.1	Análise de Kepler
+sp-pioneers.c3.viz.steps.2	Círculos não batem
+sp-pioneers.c3.viz.steps.3	Elipses batem
+sp-pioneers.c4.title	O julgamento de Galileu
+sp-pioneers.c4.text	O apoio de Galileu a um sistema com o Sol no centro levou ao seu julgamento pela Inquisição em 1633. Ele passou seus últimos anos em prisão domiciliar.
+sp-pioneers.c4.viz.events.0.l	Mensageiro das Estrelas
+sp-pioneers.c4.viz.events.1.l	publica o Diálogo
+sp-pioneers.c4.viz.events.2.l	julgamento
+sp-pioneers.c4.viz.events.3.l	morte
+sp-pioneers.c5.title	Newton
+sp-pioneers.c5.text	Em 1687, os *Principia* de Newton explicaram as leis de Kepler com a gravitação universal e as leis do movimento: a mesma física na Terra e nos céus.
+sp-pioneers.c5.viz.steps.0	Leis de Kepler
+sp-pioneers.c5.viz.steps.1	Gravidade de Newton
+sp-pioneers.c5.viz.steps.2	Uma lei para maçãs e planetas
+sp-pioneers.c6.title	Herschel
+sp-pioneers.c6.text	William Herschel descobriu Urano em 1781, o primeiro planeta encontrado com telescópio. Sua irmã, Caroline Herschel, descobriu vários cometas.
+sp-pioneers.c6.viz.items.0.a	William Herschel
+sp-pioneers.c6.viz.items.0.b	Urano, 1781
+sp-pioneers.c6.viz.items.1.a	Caroline Herschel
+sp-pioneers.c6.viz.items.1.b	cometas e nebulosas
+sp-pioneers.c6.viz.items.2.a	Os dois
+sp-pioneers.c6.viz.items.2.b	mapearam a Via Láctea
+sp-pioneers.c7.title	Henrietta Leavitt
+sp-pioneers.c7.text	Em 1912, Henrietta Leavitt descobriu que o período de certas estrelas pulsantes revela seu brilho real, dando aos astrônomos uma fita métrica cósmica.
+sp-pioneers.c7.viz.steps.0	Pulso mais longo
+sp-pioneers.c7.viz.steps.1	Estrela mais brilhante
+sp-pioneers.c7.viz.steps.2	Comparar com o brilho aparente
+sp-pioneers.c7.viz.steps.3	Distância
+sp-pioneers.c8.title	Hubble e as galáxias
+sp-pioneers.c8.text	Em 1924, Edwin Hubble usou o método de Leavitt para mostrar que Andrômeda fica muito além da Via Láctea. De repente, o universo passou a conter incontáveis galáxias.
+sp-pioneers.c8.viz.l.t	Antes de 1924
+sp-pioneers.c8.viz.l.items.0	a Via Láctea é o universo
+sp-pioneers.c8.viz.r.t	Depois de 1924
+sp-pioneers.c8.viz.r.items.0	uma galáxia entre bilhões
+sp-pioneers.c9.title	Pedro Nunes
+sp-pioneers.c9.text	O matemático português Pedro Nunes (1502–1578) aperfeiçoou a navegação, estudando as linhas de rumo (loxodromias) e inventando o nônio, uma escala para ler ângulos com precisão. Uma cratera lunar leva o seu nome.
+sp-pioneers.c9.viz.items.0	Linhas de rumo
+sp-pioneers.c9.viz.items.1	A escala nônio
+sp-pioneers.c9.viz.items.2	Tábuas de navegação
+sp-pioneers.c9.viz.items.3	Cratera Nonius na Lua
+sp-future.title	O futuro do espaço
+sp-future.summary	Para onde vamos agora.
+sp-future.q0.q	Por que o polo sul da Lua é atraente?
+sp-future.q0.o0	É mais quente
+sp-future.q0.o1	Gelo de água em crateras sombreadas
+sp-future.q0.o2	Vista melhor de Marte
+sp-future.q0.x	Água para ar, para beber e para combustível.
+sp-future.q1.q	Que tratado proíbe os países de reivindicarem a Lua?
+sp-future.q1.o0	Protocolo de Kyoto
+sp-future.q1.o1	O Tratado do Espaço Exterior de 1967
+sp-future.q1.o2	Tratado de Tordesilhas
+sp-future.q1.x	O espaço é de todos.
+sp-future.c0.title	De volta à Lua
+sp-future.c0.text	O programa Artemis, da NASA, quer levar humanos de volta à Lua pela primeira vez desde 1972 e criar uma presença duradoura perto do polo sul.
+sp-future.c0.viz.steps.0	Artemis I: teste sem tripulação
+sp-future.c0.viz.steps.1	Artemis II: tripulação em volta da Lua
+sp-future.c0.viz.steps.2	Artemis III: pouso
+sp-future.c0.viz.steps.3	Acampamento-base
+sp-future.c1.title	Por que o polo sul lunar?
+sp-future.c1.text	Lá, crateras permanentemente na sombra guardam gelo de água, que poderia fornecer água potável, oxigênio e combustível de foguete.
+sp-future.c1.viz.steps.0	Gelo de água
+sp-future.c1.viz.steps.1	Separar em hidrogênio e oxigênio
+sp-future.c1.viz.steps.2	Ar para respirar
+sp-future.c1.viz.steps.3	Combustível de foguete
+sp-future.c2.title	Gateway
+sp-future.c2.text	O Lunar Gateway é uma pequena estação planejada para orbitar a Lua, construída pela NASA, ESA, Japão e Canadá, para apoiar os pousos.
+sp-future.c2.viz.items.0	NASA
+sp-future.c2.viz.items.1	ESA
+sp-future.c2.viz.items.2	JAXA, Japão
+sp-future.c2.viz.items.3	CSA, Canadá
+sp-future.c3.title	Humanos em Marte
+sp-future.c3.text	Mandar pessoas a Marte exige foguetes enormes, proteção contra radiação, suporte de vida por anos e um jeito de voltar. A maioria dos planos mira a década de 2030 ou depois.
+sp-future.c3.viz.items.0	Foguetes enormes
+sp-future.c3.viz.items.1	Proteção contra radiação
+sp-future.c3.viz.items.2	Anos de suporte de vida
+sp-future.c3.viz.items.3	Combustível para a volta
+sp-future.c4.title	Turismo espacial
+sp-future.c4.text	Desde 2021, empresas privadas levam turistas pagantes até a borda do espaço e à órbita. As passagens custam de centenas de milhares a dezenas de milhões de dólares.
+sp-future.c4.viz.l.t	Suborbital
+sp-future.c4.viz.l.items.0	minutos sem peso
+sp-future.c4.viz.l.items.1	borda do espaço
+sp-future.c4.viz.r.t	Orbital
+sp-future.c4.viz.r.items.0	dias em órbita
+sp-future.c4.viz.r.items.1	bem mais caro
+sp-future.c5.title	Mineração de asteroides
+sp-future.c5.text	Alguns asteroides contêm metais como níquel, ferro e platina. Minerá-los poderia abastecer uma futura indústria espacial, mas ainda não compensa economicamente.
+sp-future.c5.viz.steps.0	Achar asteroide rico em metal
+sp-future.c5.viz.steps.1	Enviar robôs mineradores
+sp-future.c5.viz.steps.2	Processar no espaço
+sp-future.c5.viz.steps.3	Construir em órbita
+sp-future.c6.title	Viagem interestelar
+sp-future.c6.text	A estrela mais próxima fica a 4,2 anos-luz; a Voyager levaria cerca de 75.000 anos. Ideias como sondas minúsculas empurradas por lasers poderiam reduzir isso a décadas.
+sp-future.c6.viz.unit	anos até Proxima Centauri
+sp-future.c6.viz.items.0.l	Velocidade da Voyager
+sp-future.c6.viz.items.1.l	Vela a laser
+sp-future.c7.title	Os próximos telescópios espaciais
+sp-future.c7.text	Os telescópios da próxima geração querem fotografar exoplanetas parecidos com a Terra e analisar o ar deles em busca de sinais de vida, como oxigênio e metano juntos.
+sp-future.c7.viz.steps.0	Bloquear o brilho da estrela
+sp-future.c7.viz.steps.1	Fotografar o planeta
+sp-future.c7.viz.steps.2	Decompor sua luz
+sp-future.c7.viz.steps.3	Buscar sinais de vida
+sp-future.c8.title	Direito espacial
+sp-future.c8.text	O Tratado do Espaço Exterior de 1967 diz que nenhum país pode reivindicar a Lua ou os planetas, e que o espaço é livre para todos explorarem pacificamente. A exploração de recursos ainda é debatida.
+sp-future.c8.viz.items.0	Sem posse nacional
+sp-future.c8.viz.items.1	Uso pacífico
+sp-future.c8.viz.items.2	Exploração livre
+sp-future.c8.viz.items.3	Países respondem por suas naves
+sp-future.c9.title	Por que explorar?
+sp-future.c9.text	A pesquisa espacial nos deu navegação por satélite, previsão do tempo, exames de imagem médica melhores e filtros de água, e responde à pergunta mais antiga: estamos sozinhos?
+sp-future.c9.viz.items.0	Dados de tempo e clima
+sp-future.c9.viz.items.1	Navegação
+sp-future.c9.viz.items.2	Tecnologias derivadas
+sp-future.c9.viz.items.3	Inspiração e conhecimento

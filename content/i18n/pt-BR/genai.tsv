@@ -1248,3 +1248,253 @@ gen-landscape.c2.viz.items.1	Médio: a maior parte do trabalho
 gen-landscape.c2.viz.items.2	Pequeno: rápido, barato, alto volume
 gen-landscape.c3.title	Escolhendo um modelo
 gen-landscape.c3.text	Teste os candidatos nas suas próprias tarefas. Considere qualidade, velocidade, custo, tamanho do contexto, residência dos dados, termos de privacidade e como o fornecedor se encaixa na sua nuvem.
+gen-landscape.c3.viz.items.0	Qualidade nas suas avaliações
+gen-landscape.c3.viz.items.1	Latência
+gen-landscape.c3.viz.items.2	Custo por tarefa
+gen-landscape.c3.viz.items.3	Residência dos dados e termos
+gen-landscape.c3.viz.items.4	Integração com sua nuvem
+gen-landscape.c4.title	Acesso corporativo
+gen-landscape.c4.text	Grandes empresas costumam usar os modelos pela sua nuvem: Azure OpenAI, AWS Bedrock ou Google Vertex AI, que oferecem segurança corporativa, hospedagem regional e contratos.
+gen-landscape.c4.viz.items.0.a	Azure AI Foundry
+gen-landscape.c4.viz.items.0.b	OpenAI e outros modelos
+gen-landscape.c4.viz.items.1.a	AWS Bedrock
+gen-landscape.c4.viz.items.1.b	Claude, Llama e outros
+gen-landscape.c4.viz.items.2.a	Google Vertex AI
+gen-landscape.c4.viz.items.2.b	Gemini e outros
+gen-landscape.c5.title	Roteamento de modelos
+gen-landscape.c5.text	Em vez de um único modelo para tudo, um roteador envia cada pedido ao modelo mais adequado: pequeno para consultas simples, grande para as complexas. Um gateway de IA pode cuidar do roteamento, dos registros e das cotas.
+gen-landscape.c5.viz.steps.0	Pedido
+gen-landscape.c5.viz.steps.1	O gateway o classifica
+gen-landscape.c5.viz.steps.2	Simples → modelo pequeno
+gen-landscape.c5.viz.steps.3	Complexo → modelo grande
+gen-landscape.c6.title	Uma área que anda rápido
+gen-landscape.c6.text	Novos modelos surgem a cada poucos meses, muitas vezes igualando o melhor do ano anterior por uma fração do preço. Projete os sistemas para poder trocar de modelo sem reescrever tudo.
+gen-landscape.c6.viz.items.0	Isole o modelo atrás de uma interface
+gen-landscape.c6.viz.items.1	Mantenha as avaliações prontas
+gen-landscape.c6.viz.items.2	Versione os prompts
+gen-landscape.c6.viz.items.3	Evite dependência quando possível
+gen-landscape.c7.title	As licenças importam
+gen-landscape.c7.text	Os modelos de pesos abertos vêm com licenças diferentes: algumas totalmente abertas (Apache 2.0, MIT), outras com restrições de uso ou limites para empresas muito grandes. Confira antes do uso comercial.
+gen-landscape.c7.viz.l.t	Permissivas
+gen-landscape.c7.viz.l.items.0	Apache 2.0, MIT
+gen-landscape.c7.viz.l.items.1	poucas restrições
+gen-landscape.c7.viz.r.t	Licenças próprias
+gen-landscape.c7.viz.r.items.0	regras de uso
+gen-landscape.c7.viz.r.items.1	limites de escala
+gen-landscape.c7.viz.r.items.2	leia com atenção
+gen-landscape.c8.title	Benchmarks e rankings
+gen-landscape.c8.text	Rankings públicos comparam modelos em testes e votos de preferência humana. São sinais úteis, mas podem ser manipulados ou não refletir o seu caso de uso.
+gen-landscape.c8.viz.l.t	Rankings
+gen-landscape.c8.viz.l.items.0	comparação rápida
+gen-landscape.c8.viz.l.items.1	tarefas gerais
+gen-landscape.c8.viz.r.t	Suas avaliações
+gen-landscape.c8.viz.r.items.0	seus dados
+gen-landscape.c8.viz.r.items.1	decisão final
+gen-landscape.c9.title	Custo total de propriedade
+gen-landscape.c9.text	Os custos de API crescem com o uso; a hospedagem própria tem custos fixos de GPUs, engenharia e operação. Com volume baixo ou variável, as APIs costumam sair mais baratas; com volume muito alto e constante, a hospedagem própria pode compensar.
+gen-landscape.c9.viz.l.t	API
+gen-landscape.c9.viz.l.items.0	paga por token
+gen-landscape.c9.viz.l.items.1	sem operação
+gen-landscape.c9.viz.l.items.2	escala na hora
+gen-landscape.c9.viz.r.t	Hospedagem própria
+gen-landscape.c9.viz.r.items.0	GPUs e equipe
+gen-landscape.c9.viz.r.items.1	custo fixo
+gen-landscape.c9.viz.r.items.2	controle total
+gen-local.title	Rodando modelos localmente
+gen-local.summary	IA no seu próprio notebook ou servidor.
+gen-local.q0.q	Mais ou menos quanta memória um modelo de 8B precisa em 4 bits?
+gen-local.q0.o0	1 GB
+gen-local.q0.o1	Cerca de 5 GB
+gen-local.q0.o2	64 GB
+gen-local.q0.x	Mais ou menos 0.5 byte por parâmetro, mais a sobrecarga.
+gen-local.q1.q	Qual é a principal vantagem dos modelos locais?
+gen-local.q1.o0	São sempre mais inteligentes
+gen-local.q1.o1	Privacidade, uso offline e nenhum custo por token
+gen-local.q1.o2	Contexto maior
+gen-local.q1.x	Os dados ficam na sua máquina.
+gen-local.q2.q	Qual ferramenta facilita rodar modelos abertos localmente?
+gen-local.q2.o0	Excel
+gen-local.q2.o1	Ollama
+gen-local.q2.o2	Photoshop
+gen-local.q2.x	CLI simples e API local.
+gen-local.c0.title	Por que rodar localmente?
+gen-local.c0.text	Privacidade (nada sai da sua máquina), uso offline, nenhum custo por token e controle total. A contrapartida: os modelos locais são menores e geralmente menos capazes que os modelos de ponta na nuvem.
+gen-local.c0.viz.l.t	Local
+gen-local.c0.viz.l.items.0	privado
+gen-local.c0.viz.l.items.1	offline
+gen-local.c0.viz.l.items.2	sem custo por uso
+gen-local.c0.viz.l.items.3	modelos menores
+gen-local.c0.viz.r.t	Nuvem
+gen-local.c0.viz.r.items.0	mais capaz
+gen-local.c0.viz.r.items.1	sem hardware
+gen-local.c0.viz.r.items.2	dados saem da máquina
+gen-local.c1.title	Ferramentas
+gen-local.c1.text	O Ollama e o LM Studio facilitam baixar modelos abertos e conversar com eles. O llama.cpp roda modelos de forma eficiente em CPUs e no Apple Silicon; o vLLM serve modelos em escala em GPUs.
+gen-local.c1.viz.items.0.a	Ollama
+gen-local.c1.viz.items.0.b	CLI e API simples
+gen-local.c1.viz.items.1.a	LM Studio
+gen-local.c1.viz.items.1.b	app de desktop
+gen-local.c1.viz.items.2.a	llama.cpp
+gen-local.c1.viz.items.2.b	motor eficiente
+gen-local.c1.viz.items.3.a	vLLM
+gen-local.c1.viz.items.3.b	serviço em GPU de alto volume
+gen-local.c2.title	A memória é o limite
+gen-local.c2.text	Os pesos do modelo precisam caber na RAM ou na memória da GPU. Com quantização de 4 bits, um modelo de 7–8B precisa de cerca de 4–5 GB; um de 70B, cerca de 40 GB.
+gen-local.c2.viz.unit	GB necessários em 4 bits (aprox.)
+gen-local.c2.viz.items.0.l	3B
+gen-local.c2.viz.items.1.l	8B
+gen-local.c2.viz.items.2.l	14B
+gen-local.c2.viz.items.3.l	32B
+gen-local.c2.viz.items.4.l	70B
+gen-local.c3.title	Formatos de quantização
+gen-local.c3.text	Os arquivos GGUF (para llama.cpp e Ollama) guardam pesos quantizados, como Q4_K_M ou Q8_0. Menos bits significam arquivos menores e mais rápidos, com alguma perda de qualidade.
+gen-local.c3.viz.items.0.a	Q8
+gen-local.c3.viz.items.0.b	quase a qualidade original
+gen-local.c3.viz.items.1.a	Q5/Q6
+gen-local.c3.viz.items.1.b	pequena perda
+gen-local.c3.viz.items.2.a	Q4
+gen-local.c3.viz.items.2.b	bom equilíbrio
+gen-local.c3.viz.items.3.a	Q2/Q3
+gen-local.c3.viz.items.3.b	perda perceptível
+gen-local.c4.title	Velocidade
+gen-local.c4.text	A velocidade é medida em tokens por segundo. Macs com Apple Silicon e muita memória unificada e PCs com GPUs grandes rodam modelos médios com folga.
+gen-local.c4.viz.unit	tokens por segundo (ilustrativo, 8B Q4)
+gen-local.c4.viz.items.0.l	CPU de notebook
+gen-local.c4.viz.items.1.l	Apple série M
+gen-local.c4.viz.items.2.l	GPU gamer
+gen-local.c5.title	API local
+gen-local.c5.text	O Ollama e ferramentas parecidas expõem na sua máquina uma API compatível com a da OpenAI, então apps e scripts podem alternar facilmente entre modelos locais e na nuvem.
+gen-local.c5.viz.steps.0	Seu app
+gen-local.c5.viz.steps.1	API em localhost
+gen-local.c5.viz.steps.2	Modelo local
+gen-local.c5.viz.steps.3	Resposta, nada sai da máquina
+gen-local.c6.title	RAG local
+gen-local.c6.text	Combine um modelo de embeddings local, um banco vetorial local e um LLM local para conversar com documentos privados totalmente offline.
+gen-local.c6.viz.steps.0	Documentos privados
+gen-local.c6.viz.steps.1	Embeddings locais
+gen-local.c6.viz.steps.2	Banco vetorial local
+gen-local.c6.viz.steps.3	O LLM local responde
+gen-local.c7.title	IA no homelab
+gen-local.c7.text	Os homelabs rodam modelos locais junto com a automação residencial: resumir eventos das câmeras, assistentes de voz no Home Assistant ou classificar notificações, tudo sem a nuvem.
+gen-local.c7.viz.items.0	Assistente de voz no Home Assistant
+gen-local.c7.viz.items.1	Descrição de eventos das câmeras
+gen-local.c7.viz.items.2	Busca em documentos
+gen-local.c7.viz.items.3	Ajudante de código no editor
+gen-local.c8.title	Bons usos locais
+gen-local.c8.text	Resumir, classificar, extrair, redigir e ajudar com código funcionam bem com modelos locais de porte médio. Raciocínio complexo ou documentos muito longos ainda podem exigir um modelo de ponta.
+gen-local.c8.viz.l.t	Funciona bem local
+gen-local.c8.viz.l.items.0	resumos
+gen-local.c8.viz.l.items.1	classificação
+gen-local.c8.viz.l.items.2	extração
+gen-local.c8.viz.l.items.3	redação
+gen-local.c8.viz.r.t	Melhor na nuvem
+gen-local.c8.viz.r.items.0	raciocínio mais difícil
+gen-local.c8.viz.r.items.1	contextos enormes
+gen-local.c8.viz.r.items.2	conhecimento recente
+gen-local.c9.title	A segurança continua importando
+gen-local.c9.text	Local não significa automaticamente seguro: modelos e ferramentas baixados são software. Use fontes confiáveis, mantenha a API fora da internet pública e atualize com frequência.
+gen-local.c9.viz.items.0	Baixe de fontes confiáveis
+gen-local.c9.viz.items.1	Não exponha a API publicamente
+gen-local.c9.viz.items.2	Atualize as ferramentas
+gen-local.c9.viz.items.3	Monitore o uso de disco e memória
+gen-cost.title	Custo e velocidade
+gen-cost.summary	Tokens, latência e como tornar a IA acessível em escala.
+gen-cost.q0.q	Qual costuma custar mais por token?
+gen-cost.q0.o0	Tokens de entrada
+gen-cost.q0.o1	Tokens de saída
+gen-cost.q0.o2	São sempre iguais
+gen-cost.q0.x	Gerar é mais caro.
+gen-cost.q1.q	Qual é uma opção mais barata para trabalhos em massa sem urgência?
+gen-cost.q1.o0	API em tempo real
+gen-cost.q1.o1	API em lote
+gen-cost.q1.o2	Modelo maior
+gen-cost.q1.x	O processamento em lote troca velocidade por preço.
+gen-cost.q2.q	O que o streaming melhora?
+gen-cost.q2.o0	A precisão
+gen-cost.q2.o1	A sensação de rapidez da resposta para o usuário
+gen-cost.q2.o2	O custo
+gen-cost.q2.x	O texto aparece à medida que é gerado.
+gen-cost.c0.title	Preço por tokens
+gen-cost.c0.text	As APIs cobram por milhão de tokens de entrada e de saída. Os tokens de saída costumam custar várias vezes mais que os de entrada, e modelos maiores custam muito mais que os pequenos.
+gen-cost.c0.viz.f	custo = tokens ent. × preço ent. + tokens saída × preço saída
+gen-cost.c0.viz.items.0.s	ent.
+gen-cost.c0.viz.items.0.m	prompt e documentos
+gen-cost.c0.viz.items.1.s	saída
+gen-cost.c0.viz.items.1.m	resposta gerada
+gen-cost.c1.title	Um exemplo prático
+gen-cost.c1.text	10,000 pedidos por dia, cada um com 2,000 tokens de entrada e 300 de saída. A $3 por milhão de tokens de entrada e $15 por milhão de saída: $60 + $45 = $105 por dia.
+gen-cost.c1.viz.f	custo diário = (20 M × $3 + 3 M × $15) ÷ 1 M
+gen-cost.c1.viz.items.0.s	20 M
+gen-cost.c1.viz.items.0.m	tokens de entrada
+gen-cost.c1.viz.items.1.s	3 M
+gen-cost.c1.viz.items.1.m	tokens de saída
+gen-cost.c1.viz.items.2.m	por dia
+gen-cost.c2.title	Latência
+gen-cost.c2.text	Os usuários sentem dois atrasos: o tempo até o primeiro token (quanto demora para o texto começar) e a velocidade de geração (tokens por segundo). Fazer streaming da resposta faz a espera parecer menor.
+gen-cost.c2.viz.items.0.a	tempo até o 1º token
+gen-cost.c2.viz.items.0.b	atraso inicial
+gen-cost.c2.viz.items.1.a	tokens por segundo
+gen-cost.c2.viz.items.1.b	velocidade de escrita
+gen-cost.c2.viz.items.2.a	streaming
+gen-cost.c2.viz.items.2.b	mostra o texto ao chegar
+gen-cost.c3.title	Use o menor modelo capaz
+gen-cost.c3.text	Modelos pequenos podem ser de 10 a 50 vezes mais baratos que os maiores. Encaminhe as tarefas simples para eles e reserve os modelos grandes para os casos difíceis.
+gen-cost.c3.viz.unit	preço relativo por token (ilustrativo)
+gen-cost.c3.viz.items.0.l	Pequeno
+gen-cost.c3.viz.items.1.l	Médio
+gen-cost.c3.viz.items.2.l	Grande
+gen-cost.c4.title	Encurte o prompt
+gen-cost.c4.text	Enxugue as instruções, recupere menos trechos, porém melhores, e evite reenviar contexto que não mudou. Cada token economizado é economizado em todos os pedidos.
+gen-cost.c4.viz.items.0	Instruções concisas
+gen-cost.c4.viz.items.1	Menos trechos, mais relevantes
+gen-cost.c4.viz.items.2	Remova duplicatas
+gen-cost.c4.viz.items.3	Cache de prefixos comuns
+gen-cost.c4.viz.items.4	Limite o tamanho da saída
+gen-cost.c5.title	Cache
+gen-cost.c5.text	Faça cache de prompts repetidos (cache de prompts) e de respostas repetidas (cache de respostas). Perguntas do tipo FAQ muitas vezes podem ser respondidas a partir de um cache.
+gen-cost.c5.viz.steps.0	Pedido
+gen-cost.c5.viz.steps.1	Já visto antes?
+gen-cost.c5.viz.steps.2	Sim: devolve do cache
+gen-cost.c5.viz.steps.3	Não: chama o modelo
+gen-cost.c6.title	Processamento em lote
+gen-cost.c6.text	Para trabalhos sem urgência, como classificar durante a noite um acúmulo de documentos, as APIs em lote oferecem grandes descontos (muitas vezes cerca de metade do preço) em troca de um prazo de retorno maior.
+gen-cost.c6.viz.l.t	Tempo real
+gen-cost.c6.viz.l.items.0	instantâneo
+gen-cost.c6.viz.l.items.1	preço cheio
+gen-cost.c6.viz.r.t	Lote
+gen-cost.c6.viz.r.items.0	horas
+gen-cost.c6.viz.r.items.1	cerca de 50% mais barato
+gen-cost.c7.title	O custo do raciocínio
+gen-cost.c7.text	Os modelos de raciocínio geram muitos tokens de "pensamento" antes de responder. São mais precisos em tarefas difíceis, porém mais lentos e mais caros, então use-os onde a qualidade extra fizer diferença.
+gen-cost.c7.viz.l.t	Modo padrão
+gen-cost.c7.viz.l.items.0	rápido
+gen-cost.c7.viz.l.items.1	mais barato
+gen-cost.c7.viz.l.items.2	maioria das tarefas
+gen-cost.c7.viz.r.t	Modo raciocínio
+gen-cost.c7.viz.r.items.0	pensa por mais tempo
+gen-cost.c7.viz.r.items.1	mais caro
+gen-cost.c7.viz.r.items.2	problemas difíceis
+gen-cost.c8.title	Meça o custo por resultado
+gen-cost.c8.text	Acompanhe o custo por chamado resolvido, por fatura processada ou por relatório, não só por token. Um modelo mais caro que precisa de menos novas tentativas e correções pode sair mais barato no total.
+gen-cost.c8.viz.steps.0	Tokens usados
+gen-cost.c8.viz.steps.1	Custo por tarefa
+gen-cost.c8.viz.steps.2	Incluindo correções humanas
+gen-cost.c8.viz.steps.3	Custo por bom resultado
+gen-cost.c9.title	Os preços continuam caindo
+gen-cost.c9.text	O preço de um dado nível de capacidade caiu drasticamente ano após ano. Planos que hoje parecem caros demais podem ser viáveis no ano que vem.
+gen-cost.c9.viz.unit	preço relativo para capacidade similar (ilustrativo)
+gen-multimodal.title	IA multimodal
+gen-multimodal.summary	Modelos que veem, ouvem e falam.
+gen-multimodal.q0.q	O que os modelos multimodais aceitam?
+gen-multimodal.q0.o0	Só texto
+gen-multimodal.q0.o1	Texto, imagens, áudio e às vezes vídeo
+gen-multimodal.q0.o2	Só números
+gen-multimodal.q0.x	Vários tipos de entrada.
+gen-multimodal.q1.q	Para obter números exatos de um gráfico, o melhor é…
+gen-multimodal.q1.o0	Confiar em uma captura de tela
+gen-multimodal.q1.o1	Usar os dados de origem
+gen-multimodal.q1.o2	Chutar
+gen-multimodal.q1.x	Capturas de tela dão aproximações.
+gen-multimodal.q2.q	Qual é uma limitação dos modelos de visão?
+gen-multimodal.q2.o0	Ler textos grandes
+gen-multimodal.q2.o1	Contar errado ou ler errado pequenos detalhes

@@ -798,3 +798,203 @@ el-cables.c3.viz.items.0.w	disjuntor de 16 A vive desarmando
 el-cables.c3.viz.items.0.r	encontre a sobrecarga
 el-cables.c3.viz.items.1.w	instalar um disjuntor maior
 el-cables.c3.viz.items.1.r	refazer com cabo mais grosso se preciso
+el-cables.c4.title	Queda de tensão
+el-cables.c4.text	Cabos longos perdem tensão pelo caminho. As normas costumam limitar a queda a poucos por cento. Em monofásico, a queda é aproximadamente duas vezes o comprimento vezes a corrente vezes a resistência por metro.
+el-cables.c4.example.0	30 m, 16 A, 2,5 mm² (0,0073 Ω/m)
+el-cables.c4.example.1	2 × 30 × 16 × 0,0073
+el-cables.c4.example.2	≈ 7 V, cerca de 3%
+el-cables.c4.viz.f	ΔV ≈ 2 × L × I × r
+el-cables.c4.viz.items.0.s	L
+el-cables.c4.viz.items.0.m	comprimento (m)
+el-cables.c4.viz.items.1.s	I
+el-cables.c4.viz.items.1.m	corrente (A)
+el-cables.c4.viz.items.2.s	r
+el-cables.c4.viz.items.2.m	Ω por metro de condutor
+el-cables.c5.title	O método de instalação importa
+el-cables.c5.text	Um cabo embutido em isolamento ou agrupado com outros não consegue dissipar o calor, então conduz com segurança menos corrente do que um ao ar livre.
+el-cables.c5.viz.unit	capacidade relativa
+el-cables.c5.viz.items.0.l	Ao ar livre
+el-cables.c5.viz.items.1.l	Em eletroduto na parede
+el-cables.c5.viz.items.2.l	Agrupado
+el-cables.c5.viz.items.3.l	Em isolamento térmico
+el-cables.c6.title	Cores
+el-cables.c6.text	Na Europa: marrom é a fase, azul é o neutro, verde e amarelo é o terra de proteção. Instalações portuguesas mais antigas podem usar outras cores, então nunca confie só nas cores.
+el-cables.c6.viz.items.0.a	marrom
+el-cables.c6.viz.items.0.b	fase
+el-cables.c6.viz.items.1.a	azul
+el-cables.c6.viz.items.1.b	neutro
+el-cables.c6.viz.items.2.a	verde-amarelo
+el-cables.c6.viz.items.2.b	terra
+el-cables.c6.viz.items.3.a	preto, cinza
+el-cables.c6.viz.items.3.b	outras fases
+el-cables.c7.title	Flexível vs. rígido
+el-cables.c7.text	As instalações fixas usam condutores rígidos, sólidos ou encordoados. Cabos de aparelhos e extensões usam cabo flexível de muitos fios, que aguenta ser dobrado.
+el-cables.c7.viz.l.t	Rígido
+el-cables.c7.viz.l.items.0	fixo nas paredes
+el-cables.c7.viz.l.items.1	mais barato
+el-cables.c7.viz.l.items.2	não gosta de dobras
+el-cables.c7.viz.r.t	Flexível
+el-cables.c7.viz.r.items.0	muitos fios finos
+el-cables.c7.viz.r.items.1	cabos e extensões
+el-cables.c7.viz.r.items.2	aguenta dobras
+el-cables.c8.title	Extensões
+el-cables.c8.text	Uma extensão de carretel precisa ser totalmente desenrolada para cargas altas, senão o cabo enrolado retém o calor e pode derreter. Nunca ligue benjamins ou réguas em cadeia para aquecedores ou chaleiras.
+el-cables.c8.viz.items.0	Desenrole tudo
+el-cables.c8.viz.items.1	Veja os watts máx. na etiqueta
+el-cables.c8.viz.items.2	Nada de ligar em cadeia
+el-cables.c8.viz.items.3	Não para aquecedores fixos
+el-cables.c9.title	Alumínio vs. cobre
+el-cables.c9.text	O alumínio conduz cerca de 60% tão bem quanto o cobre, então precisa de uma seção maior, mas é mais leve e mais barato. As linhas aéreas usam alumínio; as instalações residenciais usam cobre.
+el-cables.c9.viz.l.t	Cobre
+el-cables.c9.viz.l.items.0	melhor condutor
+el-cables.c9.viz.l.items.1	cabos mais finos
+el-cables.c9.viz.l.items.2	uso residencial
+el-cables.c9.viz.r.t	Alumínio
+el-cables.c9.viz.r.items.0	mais leve e barato
+el-cables.c9.viz.r.items.1	cabos mais grossos
+el-cables.c9.viz.r.items.2	linhas aéreas
+el-earthing.title	Aterramento e proteção
+el-earthing.summary	Disjuntores, DRs, aterramento e proteção contra surtos.
+el-earthing.q0.q	Qual DR detecta fugas de corrente contínua pura, como exigem muitos carregadores de VE?
+el-earthing.q0.o0	Tipo AC
+el-earthing.q0.o1	Tipo A
+el-earthing.q0.o2	Tipo B
+el-earthing.q0.x	O tipo B cobre a corrente contínua pura.
+el-earthing.q1.q	Por que usar disjuntores DR (RCBO) em cada circuito?
+el-earthing.q1.o0	São mais baratos
+el-earthing.q1.o1	Uma falha só desarma aquele circuito
+el-earthing.q1.o2	Substituem o aterramento
+el-earthing.q1.x	As falhas ficam localizadas.
+el-earthing.q2.q	Contra o que um DPS protege?
+el-earthing.q2.o0	Sobrecargas
+el-earthing.q2.o1	Picos de tensão curtos causados por raios ou manobras na rede
+el-earthing.q2.o2	Fugas para a terra
+el-earthing.q2.x	Ele desvia os surtos para a terra.
+el-earthing.c0.title	Para que serve o aterramento
+el-earthing.c0.text	As carcaças metálicas dos aparelhos são ligadas à terra. Se um fio de fase encostar na carcaça, a corrente escoa para a terra em vez de passar por você, e um dispositivo de proteção desarma.
+el-earthing.c0.viz.steps.0	Fase encosta na carcaça metálica
+el-earthing.c0.viz.steps.1	Corrente escoa para a terra
+el-earthing.c0.viz.steps.2	DR ou disjuntor desarma
+el-earthing.c0.viz.steps.3	Carcaça volta a ser segura
+el-earthing.c1.title	O eletrodo de aterramento
+el-earthing.c1.text	Em muitas casas, o aterramento termina numa haste ou num anel de cobre enterrado no solo. Sua resistência precisa ser baixa o bastante para que as proteções funcionem, e ela deve ser testada periodicamente.
+el-earthing.c1.viz.steps.0	Carcaça do aparelho
+el-earthing.c1.viz.steps.1	Fio terra
+el-earthing.c1.viz.steps.2	Barramento principal de terra
+el-earthing.c1.viz.steps.3	Eletrodo no solo
+el-earthing.c2.title	Minidisjuntores
+el-earthing.c2.text	Um minidisjuntor (DTM) desarma de duas formas: uma lâmina bimetálica para sobrecargas lentas (calor) e um eletroímã para curtos-circuitos (instantâneo). A letra (B, C, D) define sua sensibilidade às correntes de partida.
+el-earthing.c2.viz.l.t	Disparo térmico
+el-earthing.c2.viz.l.items.0	sobrecargas lentas
+el-earthing.c2.viz.l.items.1	segundos a minutos
+el-earthing.c2.viz.r.t	Disparo magnético
+el-earthing.c2.viz.r.items.0	curtos-circuitos
+el-earthing.c2.viz.r.items.1	milissegundos
+el-earthing.c3.title	Curvas dos disjuntores
+el-earthing.c3.text	O tipo B desarma magneticamente a 3–5× sua corrente nominal, bom para residências. O tipo C a 5–10×, para motores e iluminação com grandes correntes de partida. O tipo D a 10–20×, para motores industriais pesados.
+el-earthing.c3.viz.unit	disparo magnético (× corrente nominal, limite superior)
+el-earthing.c3.viz.items.0.l	B
+el-earthing.c3.viz.items.1.l	C
+el-earthing.c3.viz.items.2.l	D
+el-earthing.c4.title	Tipos de DR
+el-earthing.c4.text	O tipo AC só detecta fugas em corrente alternada. O tipo A também detecta corrente contínua pulsante vinda da eletrônica. O tipo B detecta também corrente contínua pura, e muitas vezes é exigido para carregadores de VE e alguns inversores solares (ou um tipo A com um dispositivo de detecção de CC).
+el-earthing.c4.viz.items.0	Tipo B: também CC pura
+el-earthing.c4.viz.items.1	Tipo A: CA e CC pulsante
+el-earthing.c4.viz.items.2	Tipo AC: só CA
+el-earthing.c5.title	Disjuntores DR (RCBO)
+el-earthing.c5.text	Um RCBO junta um disjuntor e um DR num só dispositivo, então uma falha num circuito só desarma aquele circuito, em vez da casa inteira.
+el-earthing.c5.viz.l.t	Um DR para vários circuitos
+el-earthing.c5.viz.l.items.0	mais barato
+el-earthing.c5.viz.l.items.1	uma falha corta tudo
+el-earthing.c5.viz.r.t	RCBO por circuito
+el-earthing.c5.viz.r.items.0	mais caro
+el-earthing.c5.viz.r.items.1	só desarma o circuito com falha
+el-earthing.c6.title	Proteção contra surtos
+el-earthing.c6.text	Raios e manobras na rede podem causar picos de tensão de milhares de volts durante microssegundos. Um dispositivo de proteção contra surtos (DPS) no quadro de distribuição os desvia para a terra, protegendo a eletrônica.
+el-earthing.c6.viz.steps.0	Pico na linha
+el-earthing.c6.viz.steps.1	DPS conduz
+el-earthing.c6.viz.steps.2	Desviado para a terra
+el-earthing.c6.viz.steps.3	Eletrônica protegida
+el-earthing.c7.title	Teste seu DR
+el-earthing.c7.text	Os DRs têm um botão de teste que simula uma fuga. Apertá-lo a cada poucos meses confirma que o mecanismo não está travado. Se não desarmar, chame um eletricista.
+el-earthing.c7.viz.items.0	Aperte o botão T
+el-earthing.c7.viz.items.1	Deve desarmar na hora
+el-earthing.c7.viz.items.2	Religue-o
+el-earthing.c7.viz.items.3	Repita a cada poucos meses
+el-earthing.c8.title	Isolação dupla
+el-earthing.c8.text	Alguns aparelhos não têm fio terra: eles têm isolação dupla, indicada por um quadrado dentro de outro quadrado. Duas camadas de isolamento protegem você em vez de uma ligação à terra.
+el-earthing.c8.viz.items.0.a	símbolo ⊡
+el-earthing.c8.viz.items.0.b	isolação dupla
+el-earthing.c8.viz.items.1.a	sem pino terra
+el-earthing.c8.viz.items.1.b	seguro por projeto
+el-earthing.c8.viz.items.2.a	secador, furadeira
+el-earthing.c8.viz.items.2.b	exemplos típicos
+el-earthing.c9.title	Fusíveis
+el-earthing.c9.text	Um fusível é um fio fino que derrete quando passa corrente demais. Ele só funciona uma vez e precisa ser substituído por outro de mesma corrente nominal. Instalações portuguesas antigas ainda podem tê-los; quadros modernos usam disjuntores.
+el-earthing.c9.viz.l.t	Fusível
+el-earthing.c9.viz.l.items.0	derrete uma vez
+el-earthing.c9.viz.l.items.1	troca-se
+el-earthing.c9.viz.l.items.2	quadros antigos
+el-earthing.c9.viz.r.t	Disjuntor
+el-earthing.c9.viz.r.items.0	rearma-se
+el-earthing.c9.viz.r.items.1	reutilizável
+el-earthing.c9.viz.r.items.2	quadros modernos
+el-3phase.title	Corrente trifásica
+el-3phase.summary	Por que a indústria, as grandes bombas de calor e os carregadores rápidos usam três fios.
+el-3phase.q0.q	A tensão entre duas fases de uma alimentação trifásica europeia é de cerca de…
+el-3phase.q0.o0	230 V
+el-3phase.q0.o1	400 V
+el-3phase.q0.o2	690 V
+el-3phase.q0.x	230 × √3 ≈ 400 V.
+el-3phase.q1.q	Como inverter o sentido de um motor trifásico?
+el-3phase.q1.o0	Trocando o neutro pelo terra
+el-3phase.q1.o1	Trocando duas fases quaisquer
+el-3phase.q1.o2	Baixando a tensão
+el-3phase.q1.x	Mudar a ordem das fases inverte o campo girante.
+el-3phase.q2.q	Aproximadamente quanta potência dão 16 A por fase em 400 V?
+el-3phase.q2.o0	3,7 kW
+el-3phase.q2.o1	11 kW
+el-3phase.q2.o2	22 kW
+el-3phase.q2.x	√3 × 400 × 16 ≈ 11 kW.
+el-3phase.c0.title	Três ondas, defasadas
+el-3phase.c0.text	Uma alimentação trifásica tem três condutores de fase, cada um com uma onda CA defasada de um terço de ciclo (120°). A qualquer momento há pelo menos uma fase perto do pico, então a potência flui de forma suave.
+el-3phase.c0.viz.steps.0	Fase L1
+el-3phase.c0.viz.steps.1	Fase L2 (+120°)
+el-3phase.c0.viz.steps.2	Fase L3 (+240°)
+el-3phase.c0.viz.steps.3	de volta a L1
+el-3phase.c1.title	230 V e 400 V
+el-3phase.c1.text	Entre qualquer fase e o neutro você tem 230 V; entre duas fases, 400 V. Casas com alimentação trifásica continuam usando 230 V nas tomadas comuns.
+el-3phase.c1.viz.f	V linha = V fase × √3
+el-3phase.c1.viz.items.0.s	230 V
+el-3phase.c1.viz.items.0.m	fase-neutro
+el-3phase.c1.viz.items.2.s	≈ 400 V
+el-3phase.c1.viz.items.2.m	fase-fase
+el-3phase.c2.title	Potência trifásica
+el-3phase.c2.text	O sistema trifásico transporta cerca de três vezes a potência de uma só fase com a mesma corrente por fio.
+el-3phase.c2.example.0	16 A por fase em 400 V, cos φ = 1
+el-3phase.c2.example.1	1,732 × 400 × 16
+el-3phase.c2.example.2	≈ 11 kW
+el-3phase.c2.viz.f	P = √3 × V × I × cos φ
+el-3phase.c2.viz.items.0.s	V
+el-3phase.c2.viz.items.0.m	tensão de linha 400 V
+el-3phase.c2.viz.items.1.s	I
+el-3phase.c2.viz.items.1.m	corrente por fase
+el-3phase.c2.viz.items.2.s	cos φ
+el-3phase.c2.viz.items.2.m	fator de potência
+el-3phase.c3.title	Por que a indústria adora
+el-3phase.c3.text	Os motores trifásicos são mais simples, menores e dão partida sozinhos, e a transmissão precisa de menos cobre para a mesma potência. Quase toda a geração, a transmissão e as cargas industriais são trifásicas.
+el-3phase.c3.viz.items.0	Potência entregue de forma suave
+el-3phase.c3.viz.items.1	Motores com partida própria
+el-3phase.c3.viz.items.2	Menos cobre por kW
+el-3phase.c3.viz.items.3	Mais potência num só prédio
+el-3phase.c4.title	Trifásico em casa
+el-3phase.c4.text	Casas maiores em Portugal podem ter alimentação trifásica. Ela permite mais potência contratada, recarga de VE a 11 kW ou 22 kW e bombas de calor grandes, com os circuitos distribuídos entre as fases.
+el-3phase.c4.viz.l.t	Monofásico
+el-3phase.c4.viz.l.items.0	230 V
+el-3phase.c4.viz.l.items.1	recarga até ~7,4 kW
+el-3phase.c4.viz.l.items.2	a maioria das casas
+el-3phase.c4.viz.r.t	Trifásico
+el-3phase.c4.viz.r.items.0	400 V
+el-3phase.c4.viz.r.items.1	recarga a 11–22 kW
+el-3phase.c4.viz.r.items.2	cargas maiores
+el-3phase.c5.title	Equilibrando as fases

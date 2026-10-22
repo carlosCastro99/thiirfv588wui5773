@@ -1014,3 +1014,282 @@ en-articles.c0.viz.items.4.b	vogal
 en-articles.c1.title	Profissões levam a/an
 en-articles.c1.text	Em português dizemos "sou engenheiro"; em inglês o artigo é obrigatório: *I'm an engineer.* *She's a doctor.*
 en-articles.c1.tag	Regra
+en-articles.c1.viz.items.0.w	I'm engineer
+en-articles.c1.viz.items.0.r	I'm an engineer
+en-articles.c1.viz.items.1.w	She is doctor
+en-articles.c1.viz.items.1.r	She's a doctor
+en-articles.c2.title	Generalizações sem artigo
+en-articles.c2.text	Em português dizemos "Os portugueses gostam de café"; em inglês, generalizações com plural ou incontáveis não levam *the*: *Portuguese people like coffee.* *Life is short.* *Money isn't everything.*
+en-articles.c2.tag	Regra
+en-articles.c2.viz.items.0.w	The life is short
+en-articles.c2.viz.items.0.r	Life is short
+en-articles.c2.viz.items.1.w	The money isn't everything
+en-articles.c2.viz.items.1.r	Money isn't everything
+en-articles.c2.viz.items.2.w	I like the coffee (em geral)
+en-articles.c2.viz.items.2.r	I like coffee
+en-articles.c3.title	Quando usar the
+en-articles.c3.text	*The* aponta para algo específico ou já conhecido: *the report I sent*, *the meeting this morning*, *the sun*, *the best*.
+en-articles.c3.tag	Regra
+en-articles.c3.viz.items.0	Algo já mencionado
+en-articles.c3.viz.items.1	Algo único: the sun, the internet
+en-articles.c3.viz.items.2	Superlativos: the best
+en-articles.c3.viz.items.3	Algo específico: the report I sent
+en-articles.c4.title	Países e lugares
+en-articles.c4.text	Países normalmente vêm sem *the*: *Portugal, France, Brazil*. Levam *the* quando têm "republic, kingdom, states" ou são plurais: *the UK, the USA, the Netherlands*. Rios e oceanos levam *the*: *the Douro, the Atlantic*.
+en-articles.c4.tag	Regra
+en-articles.c4.viz.l.t	sem the
+en-articles.c4.viz.l.items.0	Portugal
+en-articles.c4.viz.l.items.1	France
+en-articles.c4.viz.l.items.2	Lisbon
+en-articles.c4.viz.r.t	com the
+en-articles.c4.viz.r.items.0	the UK
+en-articles.c4.viz.r.items.1	the USA
+en-articles.c4.viz.r.items.2	the Douro
+en-articles.c5.title	Expressões sem artigo
+en-articles.c5.text	Algumas expressões comuns não levam artigo: *go to work*, *at home*, *go to bed*, *by car*, *at school*, *in hospital* (UK), *have breakfast*.
+en-articles.c5.tag	Regra
+en-articles.c5.viz.items.0.w	go to the work
+en-articles.c5.viz.items.0.r	go to work
+en-articles.c5.viz.items.1.w	by the car
+en-articles.c5.viz.items.1.r	by car
+en-articles.c5.viz.items.2.w	have the breakfast
+en-articles.c5.viz.items.2.r	have breakfast
+en-articles.c6.title	Dias, meses e refeições
+en-articles.c6.text	Não levam artigo: *on Monday*, *in May*, *at Christmas*, *have dinner*. Mas: *the Monday after the meeting* (específico).
+en-articles.c6.tag	Regra
+en-articles.c6.viz.items.0.w	on the Monday
+en-articles.c6.viz.items.0.r	on Monday
+en-articles.c6.viz.items.1.w	in the May
+en-articles.c6.viz.items.1.r	in May
+en-articles.c6.viz.items.2.w	have the dinner
+en-articles.c6.viz.items.2.r	have dinner
+en-articles.c7.title	Instrumentos e esportes
+en-articles.c7.text	Instrumentos musicais levam *the*: *play the piano*. Esportes não: *play football*, *play tennis*.
+en-articles.c7.tag	Pratique
+en-articles.c7.viz.l.t	com the
+en-articles.c7.viz.l.items.0	play the piano
+en-articles.c7.viz.l.items.1	play the guitar
+en-articles.c7.viz.r.t	sem the
+en-articles.c7.viz.r.items.0	play football
+en-articles.c7.viz.r.items.1	play tennis
+en-articles.c8.title	O famoso "the" sobrando
+en-articles.c8.text	O erro mais frequente de quem fala português é colocar *the* onde o inglês não usa. Pergunte-se: estou falando de algo específico ou em geral?
+en-articles.c8.tag	Pratique
+en-articles.c8.viz.steps.0	Em geral?
+en-articles.c8.viz.steps.1	Sem artigo
+en-articles.c8.viz.steps.2	Algo específico?
+en-articles.c8.viz.steps.3	the
+en-articles.c9.title	Pronúncia de the
+en-articles.c9.text	*The* soa "dâ" antes de consoante (*the car*) e "di" antes de vogal (*the end*, *the hour*) ou para dar ênfase.
+en-articles.c9.tag	Pratique
+en-articles.c9.viz.items.0.a	the car
+en-articles.c9.viz.items.0.b	"dâ"
+en-articles.c9.viz.items.1.a	the end
+en-articles.c9.viz.items.1.b	"di"
+en-articles.c9.viz.items.2.a	the hour
+en-articles.c9.viz.items.2.b	"di"
+en-articles.c9.viz.items.3.a	the office
+en-articles.c9.viz.items.3.b	"di"
+en-countable.title	Contáveis e incontáveis
+en-countable.summary	Much ou many, some ou any, e as palavras que não têm plural.
+en-countable.q0.q	Qual está correto?
+en-countable.q0.o0	Thanks for the informations.
+en-countable.q0.o1	Thanks for the information.
+en-countable.q0.o2	Thanks for an information.
+en-countable.q0.x	Information é incontável: sem -s e sem a.
+en-countable.q1.q	"Do you have ___ questions?"
+en-countable.q1.o0	some
+en-countable.q1.o1	any
+en-countable.q1.o2	much
+en-countable.q1.x	Em perguntas se usa any.
+en-countable.q2.q	"There's ___ time left, let's hurry." (pouco)
+en-countable.q2.o0	a little
+en-countable.q2.o1	little
+en-countable.q2.o2	few
+en-countable.q2.x	Little sem a = pouco, sentido negativo; few é para contáveis.
+en-countable.c0.title	O que conta e o que não conta
+en-countable.c0.text	Contáveis podem ter número e plural: *one chair, two chairs*. Incontáveis não: *water, money, time, information*. Os incontáveis não levam *a* nem -s.
+en-countable.c0.tag	Regra
+en-countable.c0.viz.l.t	contáveis
+en-countable.c0.viz.l.items.0	a chair
+en-countable.c0.viz.l.items.1	two emails
+en-countable.c0.viz.l.items.2	many ideas
+en-countable.c0.viz.r.t	incontáveis
+en-countable.c0.viz.r.items.0	water
+en-countable.c0.viz.r.items.1	money
+en-countable.c0.viz.r.items.2	information
+en-countable.c1.title	Incontáveis traiçoeiros
+en-countable.c1.text	Em português têm plural; em inglês não:\n• *information* (informações)\n• *advice* (conselhos)\n• *news* (notícias)\n• *furniture* (móveis)\n• *equipment* (equipamentos)\n• *feedback*, *research*, *luggage*
+en-countable.c1.tag	Vocabulário
+en-countable.c1.viz.items.0.w	informations
+en-countable.c1.viz.items.0.r	information
+en-countable.c1.viz.items.1.w	advices
+en-countable.c1.viz.items.1.r	advice / some advice
+en-countable.c1.viz.items.2.w	equipments
+en-countable.c1.viz.items.2.r	equipment
+en-countable.c1.viz.items.3.w	furnitures
+en-countable.c1.viz.items.3.r	furniture
+en-countable.c2.title	Contar o incontável
+en-countable.c2.text	Para contar, use uma unidade: *a piece of advice*, *a piece of information*, *a cup of coffee*, *a bottle of water*, *an item of news*.
+en-countable.c2.tag	Regra
+en-countable.c2.viz.items.0.a	a piece of
+en-countable.c2.viz.items.0.b	advice, information
+en-countable.c2.viz.items.1.a	a cup of
+en-countable.c2.viz.items.1.b	coffee, tea
+en-countable.c2.viz.items.2.a	a bottle of
+en-countable.c2.viz.items.2.b	water, wine
+en-countable.c2.viz.items.3.a	a slice of
+en-countable.c2.viz.items.3.b	bread, cake
+en-countable.c3.title	Much e many
+en-countable.c3.text	*Many* com contáveis, *much* com incontáveis: *many people*, *much time*. Em frases afirmativas soa mais natural *a lot of*: *We have a lot of time.*
+en-countable.c3.tag	Regra
+en-countable.c3.viz.l.t	many
+en-countable.c3.viz.l.items.0	contáveis
+en-countable.c3.viz.l.items.1	many emails
+en-countable.c3.viz.l.items.2	how many?
+en-countable.c3.viz.r.t	much
+en-countable.c3.viz.r.items.0	incontáveis
+en-countable.c3.viz.r.items.1	much time
+en-countable.c3.viz.r.items.2	how much?
+en-countable.c4.title	Some e any
+en-countable.c4.text	*Some* em afirmações e em pedidos/ofertas; *any* em negativas e perguntas: *I have some questions.* *Do you have any questions?* *I don't have any time.* *Would you like some coffee?*
+en-countable.c4.tag	Regra
+en-countable.c4.viz.items.0.a	afirmativa
+en-countable.c4.viz.items.0.b	some
+en-countable.c4.viz.items.1.a	negativa
+en-countable.c4.viz.items.1.b	any
+en-countable.c4.viz.items.2.a	pergunta
+en-countable.c4.viz.items.2.b	any
+en-countable.c4.viz.items.3.a	oferta ou pedido
+en-countable.c4.viz.items.3.b	some
+en-countable.c5.title	Few, little, a few, a little
+en-countable.c5.text	*A few* (contável) e *a little* (incontável) = alguns, um pouco: positivo. Sem *a*, *few* e *little* = poucos, quase nenhum: negativo.
+en-countable.c5.tag	Regra
+en-countable.c5.viz.l.t	positivo
+en-countable.c5.viz.l.items.0	a few ideas
+en-countable.c5.viz.l.items.1	a little time
+en-countable.c5.viz.l.items.2	basta
+en-countable.c5.viz.r.t	negativo
+en-countable.c5.viz.r.items.0	few ideas
+en-countable.c5.viz.r.items.1	little time
+en-countable.c5.viz.r.items.2	não basta
+en-countable.c6.title	People, police, staff
+en-countable.c6.text	*People* é plural: *people are*. *Police* também: *the police are coming*. *Staff* pode ser plural no inglês britânico. E "uma pessoa" é *a person*.
+en-countable.c6.tag	Regra
+en-countable.c6.viz.items.0.w	people is
+en-countable.c6.viz.items.0.r	people are
+en-countable.c6.viz.items.1.w	the police is
+en-countable.c6.viz.items.1.r	the police are
+en-countable.c6.viz.items.2.w	a people
+en-countable.c6.viz.items.2.r	a person
+en-countable.c7.title	Money e hair
+en-countable.c7.text	*Money* é incontável: *the money is*, nunca *moneys*. *Hair* (cabelo da cabeça) também: *Her hair is long.* *Hairs* só para fios individuais.
+en-countable.c7.tag	Regra
+en-countable.c7.viz.items.0.w	the moneys are
+en-countable.c7.viz.items.0.r	the money is
+en-countable.c7.viz.items.1.w	her hairs are long
+en-countable.c7.viz.items.1.r	her hair is long
+en-countable.c8.title	A lot of, lots of, plenty of
+en-countable.c8.text	Formas fáceis que servem para contáveis e incontáveis: *a lot of people*, *a lot of time*, *lots of ideas*, *plenty of space* (mais do que suficiente).
+en-countable.c8.tag	Pratique
+en-countable.c8.viz.items.0.a	a lot of
+en-countable.c8.viz.items.0.b	muito / muitos
+en-countable.c8.viz.items.1.a	lots of
+en-countable.c8.viz.items.1.b	muitos (informal)
+en-countable.c8.viz.items.2.a	plenty of
+en-countable.c8.viz.items.2.b	mais do que suficiente
+en-countable.c8.viz.items.3.a	a bit of
+en-countable.c8.viz.items.3.b	um pouco de
+en-countable.c9.title	No trabalho
+en-countable.c9.text	Frases corretas que aparecem todos os dias: *Thanks for your feedback.* *I need some information about the order.* *We've made a lot of progress.* *Do you have any news?*
+en-countable.c9.tag	Pratique
+en-countable.c9.viz.items.0	Thanks for your feedback.
+en-countable.c9.viz.items.1	I need some information about…
+en-countable.c9.viz.items.2	We've made a lot of progress.
+en-countable.c9.viz.items.3	Do you have any news?
+en-countable.c9.viz.items.4	Any advice would be welcome.
+en-compare.title	Comparar
+en-compare.summary	Comparativos, superlativos e expressões de comparação.
+en-compare.q0.q	"O Porto é menor do que Lisboa."
+en-compare.q0.o0	Porto is more small than Lisbon.
+en-compare.q0.o1	Porto is smaller than Lisbon.
+en-compare.q0.o2	Porto is smaller that Lisbon.
+en-compare.q0.x	Adjetivo curto: -er + than.
+en-compare.q1.q	Superlativo de bad:
+en-compare.q1.o0	the baddest
+en-compare.q1.o1	the worst
+en-compare.q1.o2	the most bad
+en-compare.q1.x	Bad é irregular: worse, the worst.
+en-compare.q2.q	"muito mais caro"
+en-compare.q2.o0	very more expensive
+en-compare.q2.o1	much more expensive
+en-compare.q2.o2	most expensive
+en-compare.q2.x	Se reforça com much ou far, nunca very.
+en-compare.c0.title	Adjetivos curtos: -er e -est
+en-compare.c0.text	Adjetivos de uma sílaba (e de duas terminadas em -y) levam -er e -est: *cheap → cheaper → the cheapest*, *easy → easier → the easiest*.
+en-compare.c0.tag	Regra
+en-compare.c0.viz.items.0.a	cheap
+en-compare.c0.viz.items.0.b	cheaper, the cheapest
+en-compare.c0.viz.items.1.a	fast
+en-compare.c0.viz.items.1.b	faster, the fastest
+en-compare.c0.viz.items.2.a	big
+en-compare.c0.viz.items.2.b	bigger, the biggest
+en-compare.c0.viz.items.3.a	easy
+en-compare.c0.viz.items.3.b	easier, the easiest
+en-compare.c1.title	Adjetivos longos: more e most
+en-compare.c1.text	Com duas ou mais sílabas (exceto -y), use *more* e *the most*: *expensive → more expensive → the most expensive*.
+en-compare.c1.tag	Regra
+en-compare.c1.viz.items.0.w	more cheap
+en-compare.c1.viz.items.0.r	cheaper
+en-compare.c1.viz.items.1.w	expensiver
+en-compare.c1.viz.items.1.r	more expensive
+en-compare.c1.viz.items.2.w	the most big
+en-compare.c1.viz.items.2.r	the biggest
+en-compare.c2.title	Os irregulares
+en-compare.c2.text	Poucos, mas muito usados:\n• *good → better → the best*\n• *bad → worse → the worst*\n• *far → further → the furthest*\n• *much/many → more → the most*
+en-compare.c2.tag	Regra
+en-compare.c2.viz.items.0.a	good
+en-compare.c2.viz.items.0.b	better, the best
+en-compare.c2.viz.items.1.a	bad
+en-compare.c2.viz.items.1.b	worse, the worst
+en-compare.c2.viz.items.2.a	far
+en-compare.c2.viz.items.2.b	further, the furthest
+en-compare.c2.viz.items.3.a	little
+en-compare.c2.viz.items.3.b	less, the least
+en-compare.c3.title	Than, não that
+en-compare.c3.text	"Do que" é *than*: *Porto is smaller than Lisbon.* Um erro muito comum é escrever *that* ou *then*.
+en-compare.c3.tag	Regra
+en-compare.c3.viz.items.0.w	bigger that
+en-compare.c3.viz.items.0.r	bigger than
+en-compare.c3.viz.items.1.w	more expensive then
+en-compare.c3.viz.items.1.r	more expensive than
+en-compare.c3.viz.items.2.w	more good than
+en-compare.c3.viz.items.2.r	better than
+en-compare.c4.title	As… as
+en-compare.c4.text	Para igualdade: *as + adjetivo + as*: *This car is as fast as mine.* Negativa: *not as… as* = menos do que: *It's not as cheap as I thought.*
+en-compare.c4.tag	Regra
+en-compare.c4.viz.items.0.a	as fast as
+en-compare.c4.viz.items.0.b	tão rápido quanto
+en-compare.c4.viz.items.1.a	not as big as
+en-compare.c4.viz.items.1.b	não tão grande quanto
+en-compare.c4.viz.items.2.a	twice as much as
+en-compare.c4.viz.items.2.b	o dobro de
+en-compare.c5.title	Advérbios de comparação
+en-compare.c5.text	Para reforçar: *much / far / a lot bigger* (muito maior), *a bit / slightly cheaper* (um pouco mais barato). Nunca *very bigger*.
+en-compare.c5.tag	Regra
+en-compare.c5.viz.items.0.w	very bigger
+en-compare.c5.viz.items.0.r	much bigger
+en-compare.c5.viz.items.1.w	very more expensive
+en-compare.c5.viz.items.1.r	far more expensive
+en-compare.c6.title	The more…, the more…
+en-compare.c6.text	Para duas coisas que mudam juntas: *The more you practise, the better you get.* (Quanto mais você pratica, melhor fica.) *The sooner, the better.*
+en-compare.c6.tag	Regra
+en-compare.c6.viz.items.0.a	The more you read
+en-compare.c6.viz.items.0.b	the more you learn
+en-compare.c6.viz.items.1.a	The sooner
+en-compare.c6.viz.items.1.b	the better
+en-compare.c6.viz.items.2.a	The bigger the order
+en-compare.c6.viz.items.2.b	the lower the price
+en-compare.c7.title	Superlativo + in / of
+en-compare.c7.text	Depois do superlativo, use *in* para lugares e grupos (*the tallest building in Lisbon*) e *of* para períodos ou conjuntos (*the best day of my life*).
+en-compare.c7.tag	Regra

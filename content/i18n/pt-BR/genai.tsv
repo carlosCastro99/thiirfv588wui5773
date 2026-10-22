@@ -517,7 +517,7 @@ gen-images.c7.viz.items.3	Identifique imagens de IA quando exigido
 gen-images.c8.title	Deepfakes
 gen-images.c8.text	Imagens falsas realistas de pessoas reais podem ser usadas para fraude, assédio e desinformação. O AI Act da UE exige que os deepfakes sejam identificados, e muitas ferramentas adicionam marcas d'água invisíveis.
 gen-images.c8.viz.steps.0	Imagem falsa de pessoa real
-gen-images.c8.viz.steps.1	Compartilhada na internet
+gen-images.c8.viz.steps.1	Compartilhada online
 gen-images.c8.viz.steps.2	Marcas d'água e rótulos ajudam
 gen-images.c8.viz.steps.3	Verifique antes de confiar
 gen-images.c9.title	Proveniência
@@ -735,7 +735,7 @@ gen-rag.c2.text	Os documentos são carregados, limpos, divididos em trechos, enr
 gen-rag.c2.viz.steps.0	Carregar documentos
 gen-rag.c2.viz.steps.1	Limpar e dividir
 gen-rag.c2.viz.steps.2	Adicionar metadados
-gen-rag.c2.viz.steps.3	Gerar embeddings
+gen-rag.c2.viz.steps.3	Embeddings
 gen-rag.c2.viz.steps.4	Indexar
 gen-rag.c3.title	A qualidade da recuperação é tudo
 gen-rag.c3.text	Se a recuperação não encontra o trecho certo, o modelo não consegue responder bem. A maioria das melhorias em RAG vem de uma divisão em trechos melhor, busca híbrida, filtros de metadados e re-ranking.
@@ -870,7 +870,7 @@ gen-finetune.c9.text	Novos modelos base surgem com frequência. Um ajuste fino d
 gen-finetune.c9.viz.steps.0	Sai um novo modelo base
 gen-finetune.c9.viz.steps.1	Rode suas avaliações de novo
 gen-finetune.c9.viz.steps.2	Ajuste de novo se valer a pena
-gen-finetune.c9.viz.steps.3	Coloque em produção
+gen-finetune.c9.viz.steps.3	Implantar
 gen-agents.title	Ferramentas e agentes
 gen-agents.summary	Modelos que agem, e não só respondem.
 gen-agents.q0.q	O que é chamada de funções?
@@ -919,7 +919,7 @@ gen-agents.c3.viz.steps.3	Corrigir falhas
 gen-agents.c3.viz.steps.4	Abrir um pull request
 gen-agents.c4.title	Uso do navegador e do computador
 gen-agents.c4.text	Alguns agentes operam sites e apps de desktop lendo a tela e clicando, o que é útil quando não existe API, embora seja mais lento e mais sujeito a erros que as APIs.
-gen-agents.c4.viz.l.t	Ferramentas via API
+gen-agents.c4.viz.l.t	Ferramentas API
 gen-agents.c4.viz.l.items.0	rápidas
 gen-agents.c4.viz.l.items.1	confiáveis
 gen-agents.c4.viz.l.items.2	estruturadas
@@ -1012,7 +1012,7 @@ gen-evals.c4.viz.items.0	Rubrica clara
 gen-evals.c4.viz.items.1	Vários revisores
 gen-evals.c4.viz.items.2	Comparações às cegas
 gen-evals.c4.viz.items.3	Acompanhar a concordância
-gen-evals.c4.viz.items.4	Usar os resultados para melhorar
+gen-evals.c4.viz.items.4	Aplicar o aprendizado
 gen-evals.c5.title	Testes A/B
 gen-evals.c5.text	Em produção, compare duas versões (prompts ou modelos) com tráfego real: notas dos usuários, conclusão das tarefas, edições necessárias, escalonamentos.
 gen-evals.c5.viz.steps.0	Versão A vs. B
@@ -1195,7 +1195,7 @@ gen-context.c7.text	Criar bons apps de IA é, em grande parte, decidir o que ent
 gen-context.c7.viz.items.0	Instruções claras
 gen-context.c7.viz.items.1	Trechos recuperados relevantes
 gen-context.c7.viz.items.2	Conversa recente
-gen-context.c7.viz.items.3	Resultados de ferramentas
+gen-context.c7.viz.items.3	Saída de ferramentas
 gen-context.c7.viz.items.4	Formato da saída
 gen-context.c8.title	Orçamento de tokens
 gen-context.c8.text	Cada token de entrada custa dinheiro e tempo. Corte o texto padrão desnecessário, elimine trechos recuperados duplicados e mantenha as instruções concisas sem perder clareza.
@@ -1244,7 +1244,7 @@ gen-landscape.c1.viz.r.items.2	você cuida da hospedagem e segurança
 gen-landscape.c2.title	Tamanhos e níveis de modelos
 gen-landscape.c2.text	Os provedores costumam oferecer níveis: modelos grandes para raciocínio difícil, médios para a maioria das tarefas, pequenos e rápidos para trabalhos simples em grande volume. Escolher o menor modelo que dá conta do recado economiza muito.
 gen-landscape.c2.viz.items.0	Grande: tarefas difíceis, lento, caro
-gen-landscape.c2.viz.items.1	Médio: a maior parte do trabalho
+gen-landscape.c2.viz.items.1	Médio: maior parte do trabalho
 gen-landscape.c2.viz.items.2	Pequeno: rápido, barato, alto volume
 gen-landscape.c3.title	Escolhendo um modelo
 gen-landscape.c3.text	Teste os candidatos nas suas próprias tarefas. Considere qualidade, velocidade, custo, tamanho do contexto, residência dos dados, termos de privacidade e como o fornecedor se encaixa na sua nuvem.
@@ -1270,7 +1270,7 @@ gen-landscape.c5.viz.steps.3	Complexo → modelo grande
 gen-landscape.c6.title	Uma área que anda rápido
 gen-landscape.c6.text	Novos modelos surgem a cada poucos meses, muitas vezes igualando o melhor do ano anterior por uma fração do preço. Projete os sistemas para poder trocar de modelo sem reescrever tudo.
 gen-landscape.c6.viz.items.0	Isole o modelo atrás de uma interface
-gen-landscape.c6.viz.items.1	Mantenha as avaliações prontas
+gen-landscape.c6.viz.items.1	Avaliações sempre prontas
 gen-landscape.c6.viz.items.2	Versione os prompts
 gen-landscape.c6.viz.items.3	Evite dependência quando possível
 gen-landscape.c7.title	As licenças importam
@@ -1498,3 +1498,236 @@ gen-multimodal.q1.x	Capturas de tela dão aproximações.
 gen-multimodal.q2.q	Qual é uma limitação dos modelos de visão?
 gen-multimodal.q2.o0	Ler textos grandes
 gen-multimodal.q2.o1	Contar errado ou ler errado pequenos detalhes
+gen-multimodal.q2.o2	Descrever cenas
+gen-multimodal.q2.x	Confira os detalhes críticos para a segurança.
+gen-multimodal.c0.title	Um modelo, muitas entradas
+gen-multimodal.c0.text	Os modelos multimodais aceitam texto, imagens, áudio e às vezes vídeo na mesma conversa, e podem responder em texto, fala ou imagens.
+gen-multimodal.c0.viz.steps.0	Foto + pergunta
+gen-multimodal.c0.viz.steps.1	Um modelo multimodal
+gen-multimodal.c0.viz.steps.2	Resposta em texto ou fala
+gen-multimodal.c1.title	Lendo documentos visualmente
+gen-multimodal.c1.text	Os modelos de visão leem documentos escaneados, formulários, tabelas e gráficos diretamente das imagens, muitas vezes dando conta de layouts que quebravam o OCR antigo.
+gen-multimodal.c1.viz.items.0	Contratos escaneados
+gen-multimodal.c1.viz.items.1	Faturas e recibos
+gen-multimodal.c1.viz.items.2	Gráficos e tabelas
+gen-multimodal.c1.viz.items.3	Anotações à mão
+gen-multimodal.c1.viz.items.4	Capturas de tela
+gen-multimodal.c2.title	Entendendo fotos
+gen-multimodal.c2.text	Mostre a foto de uma peça quebrada, de uma doença de planta, de um quadro branco ou de um quadro de luz e faça perguntas. É útil para técnicos de campo e inspeções, com verificação humana.
+gen-multimodal.c2.viz.items.0	Identificar defeitos em equipamentos
+gen-multimodal.c2.viz.items.1	Do quadro branco a anotações
+gen-multimodal.c2.viz.items.2	Problemas em plantas e lavouras
+gen-multimodal.c2.viz.items.3	Avaliação de danos
+gen-multimodal.c2.viz.items.4	Etiquetas e placas de identificação
+gen-multimodal.c3.title	Gráficos e dashboards
+gen-multimodal.c3.text	Os modelos conseguem descrever e analisar gráficos a partir de capturas de tela, embora possam ler errado os valores exatos. Para números precisos, use os dados de origem.
+gen-multimodal.c3.viz.l.t	De uma captura de tela
+gen-multimodal.c3.viz.l.items.0	visão rápida
+gen-multimodal.c3.viz.l.items.1	valores aproximados
+gen-multimodal.c3.viz.r.t	Dos dados
+gen-multimodal.c3.viz.r.items.0	números exatos
+gen-multimodal.c3.viz.r.items.1	análise confiável
+gen-multimodal.c4.title	Compreensão de vídeo
+gen-multimodal.c4.text	Alguns modelos conseguem assistir a um vídeo e resumi-lo, encontrar momentos ou responder a perguntas sobre ele, o que é útil para conteúdo de treinamento, reuniões e inspeções.
+gen-multimodal.c4.viz.steps.0	Vídeo
+gen-multimodal.c4.viz.steps.1	Amostra quadros e áudio
+gen-multimodal.c4.viz.steps.2	O modelo entende a sequência
+gen-multimodal.c4.viz.steps.3	Resumo e marcações de tempo
+gen-multimodal.c5.title	Voz em tempo real
+gen-multimodal.c5.text	Os modos de voz permitem conversar naturalmente com o assistente, interromper e receber respostas faladas, o que é prático ao dirigir ou com as mãos ocupadas.
+gen-multimodal.c5.viz.items.0	Uso sem as mãos
+gen-multimodal.c5.viz.items.1	Interrupções naturais
+gen-multimodal.c5.viz.items.2	Respostas faladas
+gen-multimodal.c5.viz.items.3	Tradução em movimento
+gen-multimodal.c6.title	Geração de imagens no chat
+gen-multimodal.c6.text	Os assistentes multimodais podem criar e editar imagens dentro da conversa: diagramas, mockups, ilustrações, ajustados com pedidos seguintes.
+gen-multimodal.c6.viz.steps.0	Descreva a imagem
+gen-multimodal.c6.viz.steps.1	Gerar
+gen-multimodal.c6.viz.steps.2	Peça mudanças
+gen-multimodal.c6.viz.steps.3	Imagem refinada
+gen-multimodal.c7.title	Acessibilidade
+gen-multimodal.c7.text	A IA multimodal descreve imagens para pessoas cegas e com baixa visão, lê textos em voz alta e transcreve a fala para pessoas surdas, ampliando o acesso à informação.
+gen-multimodal.c7.viz.items.0	Descrição de imagens
+gen-multimodal.c7.viz.items.1	Leitura de texto em voz alta
+gen-multimodal.c7.viz.items.2	Legendas ao vivo
+gen-multimodal.c7.viz.items.3	Leitura de placas e rótulos
+gen-multimodal.c8.title	Limites
+gen-multimodal.c8.text	Os modelos podem ler errado textos pequenos, contar objetos errado, confundir itens parecidos ou ser enganados por imagens incomuns. Confira tudo o que for crítico para a segurança.
+gen-multimodal.c8.viz.items.0	Texto pequeno ou borrado
+gen-multimodal.c8.viz.items.1	Contagem
+gen-multimodal.c8.viz.items.2	Medidas precisas
+gen-multimodal.c8.viz.items.3	Ângulos incomuns
+gen-multimodal.c8.viz.items.4	Julgamentos críticos de segurança
+gen-multimodal.c9.title	Privacidade nas imagens
+gen-multimodal.c9.text	As fotos podem conter rostos, placas de carro, documentos ou localizações. Confira o que você está compartilhando, principalmente no trabalho.
+gen-multimodal.c9.viz.items.0	Rostos e pessoas
+gen-multimodal.c9.viz.items.1	Placas de carro
+gen-multimodal.c9.viz.items.2	Documentos ao fundo
+gen-multimodal.c9.viz.items.3	Metadados de localização
+gen-risks.title	Riscos e uso responsável
+gen-risks.summary	Mau uso, vieses, propriedade intelectual e segurança das pessoas.
+gen-risks.q0.q	Qual é o principal risco de colar dados confidenciais em um chatbot para consumidores?
+gen-risks.q0.o0	É lento
+gen-risks.q0.o1	Os dados podem sair da organização ou ser usados para treinamento
+gen-risks.q0.o2	Eles são apagados
+gen-risks.q0.x	Use ferramentas corporativas aprovadas.
+gen-risks.q1.q	O que é o viés de automação?
+gen-risks.q1.o0	Viés em contratações
+gen-risks.q1.o1	Confiar demais em resultados automatizados
+gen-risks.q1.o2	Um tipo de modelo
+gen-risks.q1.x	As pessoas confiam demais em uma IA fluente.
+gen-risks.q2.q	O que o AI Act da UE exige dos chatbots?
+gen-risks.q2.o0	Que sejam proibidos
+gen-risks.q2.o1	Que avisem os usuários de que estão interagindo com uma IA
+gen-risks.q2.o2	Que usem inglês
+gen-risks.q2.x	Obrigações de transparência.
+gen-risks.c0.title	Um mapa dos riscos
+gen-risks.c0.text	Os riscos incluem respostas erradas, resultados enviesados, vazamento de dados confidenciais, questões de direitos autorais, deepfakes e fraudes, uso para fins nocivos e dependência excessiva dos usuários.
+gen-risks.c0.viz.root	Riscos da IA generativa
+gen-risks.c0.viz.items.0	Precisão e vieses
+gen-risks.c0.viz.items.1	Privacidade e vazamentos
+gen-risks.c0.viz.items.2	PI e direitos autorais
+gen-risks.c0.viz.items.3	Mau uso e fraudes
+gen-risks.c1.title	Vazamento de dados
+gen-risks.c1.text	Colar dados confidenciais em ferramentas de IA para consumidores pode enviá-los para fora da sua organização. Use ferramentas corporativas aprovadas, que não treinam com os seus dados e atendem aos seus requisitos de segurança.
+gen-risks.c1.viz.l.t	Ferramentas de consumo
+gen-risks.c1.viz.l.items.0	podem treinar com os dados
+gen-risks.c1.viz.l.items.1	sem gestão
+gen-risks.c1.viz.r.t	Ferramentas corporativas
+gen-risks.c1.viz.r.items.0	proteções contratuais
+gen-risks.c1.viz.r.items.1	controles de administração
+gen-risks.c1.viz.r.items.2	registros
+gen-risks.c2.title	Vieses
+gen-risks.c2.text	Os modelos refletem padrões dos seus dados de treinamento e podem produzir resultados estereotipados ou desiguais. Teste os resultados entre diferentes grupos em usos que afetam pessoas, como contratação ou crédito.
+gen-risks.c2.viz.items.0	Teste com exemplos diversos
+gen-risks.c2.viz.items.1	Evite atributos sensíveis
+gen-risks.c2.viz.items.2	Revisão humana em decisões sobre pessoas
+gen-risks.c2.viz.items.3	Acompanhe as reclamações
+gen-risks.c3.title	Propriedade intelectual
+gen-risks.c3.text	Continuam as dúvidas sobre o treinamento com obras protegidas e a propriedade dos resultados de IA. Confira se o texto ou o código gerado não reproduz material protegido e siga a política da sua empresa.
+gen-risks.c3.viz.items.0	Verifique cópias literais
+gen-risks.c3.viz.items.1	Use ferramentas com garantia de PI
+gen-risks.c3.viz.items.2	Respeite as licenças no código
+gen-risks.c3.viz.items.3	Siga a política da empresa
+gen-risks.c4.title	Dependência excessiva
+gen-risks.c4.text	As pessoas tendem a confiar demais em uma IA fluente e confiante, uma forma de viés de automação. Mantenha as pessoas envolvidas e responsáveis, principalmente em decisões importantes.
+gen-risks.c4.viz.l.t	Dependência excessiva
+gen-risks.c4.viz.l.items.0	aceita resultados sem crítica
+gen-risks.c4.viz.l.items.1	erros passam batido
+gen-risks.c4.viz.r.t	Uso saudável
+gen-risks.c4.viz.r.items.0	confere os fatos-chave
+gen-risks.c4.viz.r.items.1	mantém o senso crítico
+gen-risks.c5.title	Proteções contra mau uso
+gen-risks.c5.text	Os provedores treinam os modelos para recusar pedidos claramente nocivos e monitoram abusos, principalmente em torno de armas, ciberataques e segurança infantil. As tentativas de jailbreak são um jogo de gato e rato sem fim.
+gen-risks.c5.viz.steps.0	Pedido nocivo
+gen-risks.c5.viz.steps.1	Treino de segurança e filtros
+gen-risks.c5.viz.steps.2	Recusa ou resposta segura
+gen-risks.c5.viz.steps.3	Monitoramento de abusos
+gen-risks.c6.title	Transparência
+gen-risks.c6.text	Avise as pessoas quando estiverem interagindo com uma IA ou lendo conteúdo gerado por IA, quando isso for relevante. O AI Act da UE exige isso para chatbots e deepfakes.
+gen-risks.c6.viz.items.0	Informe sobre chatbots de IA
+gen-risks.c6.viz.items.1	Identifique mídia sintética
+gen-risks.c6.viz.items.2	Explique decisões com apoio de IA
+gen-risks.c6.viz.items.3	Ofereça um contato humano
+gen-risks.c7.title	Pegada ambiental
+gen-risks.c7.text	Treinar e rodar modelos grandes consome muita eletricidade e água para refrigeração. Modelos eficientes, dimensionamento adequado e energia limpa reduzem essa pegada.
+gen-risks.c7.viz.items.0	Use modelos menores quando possível
+gen-risks.c7.viz.items.1	Use cache e lotes
+gen-risks.c7.viz.items.2	Escolha regiões eficientes
+gen-risks.c7.viz.items.3	Prefira data centers com energia renovável
+gen-risks.c8.title	Políticas no trabalho
+gen-risks.c8.text	Boas políticas de IA são curtas e práticas: quais ferramentas são aprovadas, que dados podem ser usados, quando a revisão humana é obrigatória e como relatar problemas.
+gen-risks.c8.viz.items.0	Lista de ferramentas aprovadas
+gen-risks.c8.viz.items.1	Regras de classificação de dados
+gen-risks.c8.viz.items.2	Exigências de revisão humana
+gen-risks.c8.viz.items.3	Regras de divulgação
+gen-risks.c8.viz.items.4	Como relatar problemas
+gen-risks.c9.title	Use a IA para ajudar, não para enganar
+gen-risks.c9.text	Use a IA generativa para trabalhar melhor, não para forjar provas, se passar por outras pessoas ou enganar. A honestidade sobre o uso de IA gera confiança com colegas e clientes.
+gen-risks.c9.viz.l.t	Bom uso
+gen-risks.c9.viz.l.items.0	redigir
+gen-risks.c9.viz.l.items.1	analisar
+gen-risks.c9.viz.l.items.2	aprender
+gen-risks.c9.viz.r.t	Mau uso
+gen-risks.c9.viz.r.items.0	avaliações falsas
+gen-risks.c9.viz.r.items.1	falsidade ideológica
+gen-risks.c9.viz.r.items.2	provas forjadas
+gen-daily.title	Usando bem a IA generativa
+gen-daily.summary	Hábitos práticos para o trabalho do dia a dia.
+gen-daily.q0.q	Qual é uma boa forma de dividir o trabalho com a IA?
+gen-daily.q0.o0	A IA faz tudo
+gen-daily.q0.o1	A IA rascunha a maior parte, e você aplica seu julgamento ao que importa
+gen-daily.q0.o2	Nunca usar IA
+gen-daily.q0.x	Seu esforço vai para onde o julgamento é necessário.
+gen-daily.q1.q	Um pedido melhor do que "resuma este relatório" é…
+gen-daily.q1.o0	"Resuma brevemente"
+gen-daily.q1.o1	"Resuma para uma decisão de seguir ou não: opções, custos, riscos, questões em aberto"
+gen-daily.q1.o2	"Deixe mais curto"
+gen-daily.q1.x	Vincule o resumo à decisão.
+gen-daily.q2.q	Quando você deve evitar depender da IA?
+gen-daily.q2.o0	Em primeiros rascunhos
+gen-daily.q2.o1	Quando a precisão é crítica e você não consegue verificar
+gen-daily.q2.o2	Em brainstorming
+gen-daily.q2.x	A verificação é essencial.
+gen-daily.c0.title	Comece pelos seus gargalos
+gen-daily.c0.text	Liste as tarefas que tomam seu tempo e envolvem muito texto: e-mails, relatórios, resumos, atas de reunião, pesquisa, planilhas. É ali que a IA costuma ajudar primeiro.
+gen-daily.c0.viz.items.0	E-mails e respostas
+gen-daily.c0.viz.items.1	Atas de reunião
+gen-daily.c0.viz.items.2	Relatórios e resumos
+gen-daily.c0.viz.items.3	Pesquisa
+gen-daily.c0.viz.items.4	Fórmulas e análise de planilhas
+gen-daily.c1.title	Rascunhe, não delegue às cegas
+gen-daily.c1.text	Use a IA para os primeiros 70–80% e dedique seu esforço à parte que exige o seu julgamento: decisões, nuances, relacionamentos.
+gen-daily.c1.viz.items.0	Seu julgamento: decisões e nuances
+gen-daily.c1.viz.items.1	Suas edições: precisão e tom
+gen-daily.c1.viz.items.2	Rascunho da IA: estrutura e 1ª versão
+gen-daily.c2.title	Resuma para decidir
+gen-daily.c2.text	Peça resumos que apoiem uma decisão: "Quais são as três opções, os custos e riscos de cada uma, e o que está faltando?"
+gen-daily.c2.viz.items.0.w	"resuma este relatório"
+gen-daily.c2.viz.items.0.r	"resuma para uma decisão de seguir ou não: opções, custos, riscos, questões em aberto"
+gen-daily.c3.title	Aprenda mais rápido
+gen-daily.c3.text	A IA é uma professora paciente: peça que ela explique um conceito em diferentes níveis, faça perguntas para testar você ou dê exemplos da sua área.
+gen-daily.c3.viz.steps.0	Peça uma explicação
+gen-daily.c3.viz.steps.1	Faça perguntas de acompanhamento
+gen-daily.c3.viz.steps.2	Peça um teste
+gen-daily.c3.viz.steps.3	Pôr em prática
+gen-daily.c4.title	Analise dados
+gen-daily.c4.text	Com um interpretador de código, a IA consegue limpar planilhas, fazer cálculos e desenhar gráficos. Confira o código e os números antes de compartilhar os resultados.
+gen-daily.c4.viz.steps.0	Envie os dados
+gen-daily.c4.viz.steps.1	Faça uma pergunta
+gen-daily.c4.viz.steps.2	A IA escreve e roda o código
+gen-daily.c4.viz.steps.3	Confira e use o gráfico
+gen-daily.c5.title	Escreva melhor, com a sua voz
+gen-daily.c5.text	Dê à IA amostras dos seus textos e peça que ela imite o estilo. Peça que enxugue, esclareça ou deixe o texto mais direto.
+gen-daily.c5.viz.items.0	Forneça amostras de texto
+gen-daily.c5.viz.items.1	Peça para enxugar
+gen-daily.c5.viz.items.2	Peça clareza para o público
+gen-daily.c5.viz.items.3	Mantenha a sua voz
+gen-daily.c6.title	Prepare-se para reuniões
+gen-daily.c6.text	Antes de uma reunião, peça um briefing a partir dos documentos relevantes, as perguntas prováveis e uma proposta de pauta. Depois, transforme as anotações em itens de ação.
+gen-daily.c6.viz.steps.0	Antes: briefing e pauta
+gen-daily.c6.viz.steps.1	Durante: anotações
+gen-daily.c6.viz.steps.2	Depois: resumo e ações
+gen-daily.c6.viz.steps.3	E-mails de acompanhamento
+gen-daily.c7.title	Conhecimento pessoal
+gen-daily.c7.text	Guarde bons prompts em uma biblioteca, salve resultados úteis e crie pequenos assistentes reutilizáveis (GPTs personalizados, projetos do Claude, agentes do Copilot) para tarefas repetidas.
+gen-daily.c7.viz.items.0	Biblioteca de prompts
+gen-daily.c7.viz.items.1	Modelos salvos
+gen-daily.c7.viz.items.2	Projeto com arquivos compartilhados
+gen-daily.c7.viz.items.3	Assistentes próprios para tarefas recorrentes
+gen-daily.c8.title	Saiba quando não usar
+gen-daily.c8.text	Não use IA quando a precisão for crítica e você não puder conferir, quando a confidencialidade proibir ou quando o contato humano for o que importa, como em conversas delicadas.
+gen-daily.c8.viz.l.t	Use IA
+gen-daily.c8.viz.l.items.0	redigir
+gen-daily.c8.viz.l.items.1	resumir
+gen-daily.c8.viz.l.items.2	explorar
+gen-daily.c8.viz.r.t	Evite ou tenha cuidado
+gen-daily.c8.viz.r.items.0	fatos impossíveis de verificar
+gen-daily.c8.viz.r.items.1	dados confidenciais
+gen-daily.c8.viz.r.items.2	momentos pessoais e delicados
+gen-daily.c9.title	Continue melhorando
+gen-daily.c9.text	As ferramentas melhoram a cada poucos meses. Volte a tarefas que não funcionavam antes, compartilhe dicas com os colegas e mantenha alguns experimentos em andamento.
+gen-daily.c9.viz.steps.0	Teste um novo uso
+gen-daily.c9.viz.steps.1	Compartilhe o que funciona
+gen-daily.c9.viz.steps.2	Transforme em hábito
+gen-daily.c9.viz.steps.3	Revise quando as ferramentas melhorarem

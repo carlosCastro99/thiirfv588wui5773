@@ -998,3 +998,203 @@ el-3phase.c4.viz.r.items.0	400 V
 el-3phase.c4.viz.r.items.1	recarga a 11–22 kW
 el-3phase.c4.viz.r.items.2	cargas maiores
 el-3phase.c5.title	Equilibrando as fases
+el-3phase.c5.text	As cargas devem ser distribuídas de forma equilibrada entre as três fases. Se uma fase levar a maior parte da carga, ela pode desarmar enquanto as outras estão pouco usadas, e o neutro passa a conduzir corrente extra.
+el-3phase.c5.viz.unit	kW por fase
+el-3phase.c5.viz.items.0.l	L1
+el-3phase.c5.viz.items.1.l	L2
+el-3phase.c5.viz.items.2.l	L3
+el-3phase.c6.title	Sequência de fases
+el-3phase.c6.text	A ordem em que as fases atingem o pico (L1, L2, L3) define o sentido em que um motor trifásico gira. Troque duas fases quaisquer e o motor gira ao contrário: uma verificação clássica no comissionamento.
+el-3phase.c6.viz.items.0.w	motor gira ao contrário
+el-3phase.c6.viz.items.0.r	troque duas fases
+el-3phase.c6.viz.items.1.w	L1-L2-L3
+el-3phase.c6.viz.items.1.r	L2-L1-L3
+el-3phase.c7.title	Estrela e triângulo
+el-3phase.c7.text	Os enrolamentos trifásicos podem ser ligados em estrela (Y), com um ponto neutro comum, ou em triângulo (Δ). Motores grandes muitas vezes partem em estrela para limitar a corrente e depois passam para triângulo.
+el-3phase.c7.viz.l.t	Estrela (Y)
+el-3phase.c7.viz.l.items.0	ponto neutro comum
+el-3phase.c7.viz.l.items.1	menos tensão por enrolamento
+el-3phase.c7.viz.l.items.2	partida suave
+el-3phase.c7.viz.r.t	Triângulo (Δ)
+el-3phase.c7.viz.r.items.0	triângulo
+el-3phase.c7.viz.r.items.1	tensão de linha em cada enrolamento
+el-3phase.c7.viz.r.items.2	potência total
+el-3phase.c8.title	As redes são trifásicas no mundo todo
+el-3phase.c8.text	Do gerador até o transformador de distribuição da sua rua, a energia viaja em trifásico. Cada casa com alimentação monofásica é ligada a uma das três fases.
+el-3phase.c8.viz.steps.0	Gerador trifásico
+el-3phase.c8.viz.steps.1	Transmissão trifásica
+el-3phase.c8.viz.steps.2	Transformador da rua
+el-3phase.c8.viz.steps.3	Casas distribuídas em L1, L2, L3
+el-3phase.c9.title	Como reconhecer
+el-3phase.c9.text	Um quadro trifásico tem disjuntores tripolares ou tetrapolares e muitas vezes uma tomada CEE vermelha (5 pinos) para máquinas. Os medidores trifásicos mostram três leituras.
+el-3phase.c9.viz.items.0	Disjuntor geral tetrapolar
+el-3phase.c9.viz.items.1	Tomada CEE vermelha de 5 pinos
+el-3phase.c9.viz.items.2	Três leituras de tensão no medidor
+el-3phase.c9.viz.items.3	Fases em marrom, preto e cinza
+el-pf.title	Fator de potência
+el-pf.summary	Potência ativa, potência reativa e por que a rede se importa com isso.
+el-pf.q0.q	Uma carga consome 1.000 VA com um fator de potência de 0,8. Sua potência ativa é…
+el-pf.q0.o0	1.000 W
+el-pf.q0.o1	800 W
+el-pf.q0.o2	1.250 W
+el-pf.q0.x	W = VA × cos φ = 800 W.
+el-pf.q1.q	O que corrige um fator de potência indutivo numa fábrica?
+el-pf.q1.o0	Fusíveis maiores
+el-pf.q1.o1	Bancos de capacitores
+el-pf.q1.o2	Cabos mais grossos
+el-pf.q1.x	Os capacitores anulam a corrente atrasada.
+el-pf.q2.q	Qual aparelho tem um fator de potência de cerca de 1?
+el-pf.q2.o0	Um motor em vazio
+el-pf.q2.o1	Uma chaleira elétrica
+el-pf.q2.o2	Uma lâmpada fluorescente antiga
+el-pf.q2.x	Uma resistência pura mantém a corrente em fase com a tensão.
+el-pf.c0.title	Potência ativa e aparente
+el-pf.c0.text	Com algumas cargas, a corrente e a tensão não atingem o pico ao mesmo tempo. Nesse caso, volts × ampères (potência aparente, em VA) é maior do que a potência útil que realmente realiza trabalho (potência ativa, em W).
+el-pf.c0.viz.f	W = VA × cos φ
+el-pf.c0.viz.items.0.s	W
+el-pf.c0.viz.items.0.m	potência ativa
+el-pf.c0.viz.items.1.s	VA
+el-pf.c0.viz.items.1.m	potência aparente
+el-pf.c0.viz.items.2.s	cos φ
+el-pf.c0.viz.items.2.m	fator de potência 0–1
+el-pf.c1.title	A analogia do chope
+el-pf.c1.text	Imagine um copo de chope: o líquido é a potência ativa, que mata a sede; a espuma é a potência reativa, que ocupa espaço mas não realiza trabalho. O copo inteiro é a potência aparente.
+el-pf.c1.viz.items.0	Espuma: potência reativa (var)
+el-pf.c1.viz.items.1	Chope: potência ativa (W)
+el-pf.c1.viz.items.2	Copo inteiro: potência aparente (VA)
+el-pf.c2.title	O que causa isso
+el-pf.c2.text	Motores, transformadores e reatores de lâmpadas fluorescentes armazenam energia em campos magnéticos a cada ciclo e a devolvem, então sua corrente fica atrasada em relação à tensão. A eletrônica barata distorce a onda da corrente.
+el-pf.c2.viz.l.t	Cargas indutivas
+el-pf.c2.viz.l.items.0	motores
+el-pf.c2.viz.l.items.1	transformadores
+el-pf.c2.viz.l.items.2	reatores antigos
+el-pf.c2.viz.r.t	Cargas não lineares
+el-pf.c2.viz.r.items.0	fontes baratas
+el-pf.c2.viz.r.items.1	drivers LED antigos
+el-pf.c3.title	Por que isso importa
+el-pf.c3.text	Um fator de potência baixo significa mais corrente para o mesmo trabalho útil: cabos maiores, mais perdas, transformadores maiores. As concessionárias cobram a energia reativa dos clientes industriais.
+el-pf.c3.viz.unit	ampères para 10 kW em 230 V
+el-pf.c3.viz.items.0.l	cos φ 1,0
+el-pf.c3.viz.items.1.l	cos φ 0,9
+el-pf.c3.viz.items.2.l	cos φ 0,7
+el-pf.c4.title	Correção com capacitores
+el-pf.c4.text	Os capacitores consomem uma corrente adiantada em relação à tensão, que anula a corrente atrasada de um motor. As fábricas instalam bancos de capacitores para aproximar o fator de potência de 1.
+el-pf.c4.viz.steps.0	Corrente do motor atrasada
+el-pf.c4.viz.steps.1	Adicionar capacitores
+el-pf.c4.viz.steps.2	Corrente adiantada anula o atraso
+el-pf.c4.viz.steps.3	cos φ ≈ 1
+el-pf.c5.title	Unidades: W, VA, var
+el-pf.c5.text	Potência ativa em watts (W), potência reativa em volt-ampères reativos (var), potência aparente em volt-ampères (VA). Nobreaks e geradores são especificados em VA porque sua fiação precisa aguentar a corrente total.
+el-pf.c5.viz.items.0.a	W
+el-pf.c5.viz.items.0.b	potência ativa, útil
+el-pf.c5.viz.items.1.a	var
+el-pf.c5.viz.items.1.b	reativa, vai e volta
+el-pf.c5.viz.items.2.a	VA
+el-pf.c5.viz.items.2.b	aparente, a que os fios conduzem
+el-pf.c6.title	O triângulo de potências
+el-pf.c6.text	A potência ativa e a reativa formam um ângulo reto, então a potência aparente é a hipotenusa: VA² = W² + var². O ângulo entre elas é φ.
+el-pf.c6.viz.f	VA² = W² + var²
+el-pf.c6.viz.items.0.s	W
+el-pf.c6.viz.items.0.m	potência ativa
+el-pf.c6.viz.items.1.s	var
+el-pf.c6.viz.items.1.m	potência reativa
+el-pf.c6.viz.items.2.s	VA
+el-pf.c6.viz.items.2.m	potência aparente
+el-pf.c7.title	A conta de luz de casa
+el-pf.c7.text	Em Portugal, os clientes residenciais só pagam energia ativa (kWh); a energia reativa só é cobrada de clientes comerciais e industriais maiores. Sua potência contratada, porém, é em kVA.
+el-pf.c7.viz.l.t	Casa
+el-pf.c7.viz.l.items.0	paga kWh
+el-pf.c7.viz.l.items.1	kVA contratados
+el-pf.c7.viz.r.t	Indústria
+el-pf.c7.viz.r.items.0	paga kWh
+el-pf.c7.viz.r.items.1	mais energia reativa (kvarh)
+el-pf.c8.title	Fator de potência dos aparelhos
+el-pf.c8.text	Cargas resistivas, como chaleiras e aquecedores, têm um fator de potência de 1. Os motores ficam em torno de 0,8–0,9 a plena carga e bem menos quando estão pouco carregados.
+el-pf.c8.viz.unit	fator de potência típico
+el-pf.c8.viz.items.0.l	Chaleira
+el-pf.c8.viz.items.1.l	Motor de indução (plena carga)
+el-pf.c8.viz.items.2.l	Motor (pouca carga)
+el-pf.c8.viz.items.3.l	Fluorescente antiga
+el-pf.c9.title	PFC nos carregadores
+el-pf.c9.text	As fontes de alimentação eletrônicas maiores, incluindo carregadores de notebook e de VE, têm circuitos de correção do fator de potência que fazem a corrente seguir a onda da tensão, como exigem as regras da UE.
+el-pf.c9.viz.steps.0	Retificador simples distorce a corrente
+el-pf.c9.viz.steps.1	Circuito PFC a modela
+el-pf.c9.viz.steps.2	Corrente segue a tensão
+el-pf.c9.viz.steps.3	cos φ ≈ 0,99
+el-meter.title	Usando um multímetro
+el-meter.summary	Medindo volts, ampères, ohms e continuidade com segurança.
+el-meter.q0.q	Para medir corrente, o aparelho precisa estar…
+el-meter.q0.o0	Nos terminais da carga, em paralelo
+el-meter.q0.o1	Em série, para que a corrente passe por ele
+el-meter.q0.o2	Desconectado
+el-meter.q0.x	A corrente é medida em série.
+el-meter.q1.q	Por que os alicates amperímetros são úteis?
+el-meter.q1.o0	Medem resistência
+el-meter.q1.o1	Medem a corrente sem abrir o circuito
+el-meter.q1.o2	São mais baratos
+el-meter.q1.x	Eles detectam o campo magnético em volta de um condutor.
+el-meter.q2.q	O que você precisa fazer antes de mexer num circuito que desligou?
+el-meter.q2.o0	Confiar na etiqueta
+el-meter.q2.o1	Confirmar que está sem tensão com um testador que você conferiu numa fonte energizada
+el-meter.q2.o2	Tocar rapidinho
+el-meter.q2.x	Confirme a ausência de tensão, e confirme que o testador funciona.
+el-meter.c0.title	Uma ferramenta, vários instrumentos
+el-meter.c0.text	Um multímetro mede tensão, corrente e resistência, e normalmente também continuidade, diodos e às vezes capacitância e temperatura. Uma chave seletora rotativa escolhe a função e a escala.
+el-meter.c0.viz.root	Multímetro
+el-meter.c0.viz.items.0	Volts (V)
+el-meter.c0.viz.items.1	Ampères (A)
+el-meter.c0.viz.items.2	Ohms (Ω)
+el-meter.c0.viz.items.3	Bipe de continuidade
+el-meter.c1.title	Medindo tensão
+el-meter.c1.text	Coloque a chave em V (CA ~ ou CC ⎓) e encoste as pontas de prova nos dois pontos, em paralelo. O aparelho tem uma resistência muito alta, então quase não interfere no circuito.
+el-meter.c1.viz.steps.0	Chave em V~ ou V⎓
+el-meter.c1.viz.steps.1	Ponta preta no COM
+el-meter.c1.viz.steps.2	Ponta vermelha na entrada V
+el-meter.c1.viz.steps.3	Encoste nos dois pontos
+el-meter.c2.title	Medindo corrente
+el-meter.c2.text	A corrente precisa passar pelo aparelho, em série: abra o circuito e intercale o multímetro. Mude a ponta vermelha para a entrada A ou mA. Esquecer de voltá-la depois é o jeito clássico de queimar o fusível do aparelho.
+el-meter.c2.viz.l.t	Tensão
+el-meter.c2.viz.l.items.0	nos terminais da carga
+el-meter.c2.viz.l.items.1	paralelo
+el-meter.c2.viz.l.items.2	ponta vermelha em V
+el-meter.c2.viz.r.t	Corrente
+el-meter.c2.viz.r.items.0	através do aparelho
+el-meter.c2.viz.r.items.1	série
+el-meter.c2.viz.r.items.2	ponta vermelha em A ou mA
+el-meter.c3.title	Resistência e continuidade
+el-meter.c3.text	Meça resistência só em circuitos desenergizados. O modo de continuidade apita quando a resistência é muito baixa: perfeito para achar fios rompidos ou identificar qual cabo é qual.
+el-meter.c3.viz.items.0	Desligue primeiro
+el-meter.c3.viz.items.1	Chave em Ω ou bipe
+el-meter.c3.viz.items.2	Encoste nas duas pontas
+el-meter.c3.viz.items.3	Bipe = conectado
+el-meter.c4.title	Categorias CAT
+el-meter.c4.text	Os instrumentos de medição têm uma categoria que indica onde é seguro usá-los. CAT II cobre aparelhos ligados na tomada, CAT III a instalação fixa e os quadros de distribuição, CAT IV a origem da alimentação. Use pelo menos CAT III 600 V na instalação de casa.
+el-meter.c4.viz.items.0	CAT IV: origem da alimentação, medidor
+el-meter.c4.viz.items.1	CAT III: quadros, instalação fixa
+el-meter.c4.viz.items.2	CAT II: tomadas e aparelhos
+el-meter.c4.viz.items.3	CAT I: eletrônica protegida
+el-meter.c5.title	Alicates amperímetros
+el-meter.c5.text	Um alicate amperímetro mede a corrente sem abrir o circuito: você abraça um único condutor e ele lê o campo magnético. Se abraçar o cabo inteiro, a fase e o neutro se anulam.
+el-meter.c5.viz.items.0.w	abraçar o cabo inteiro
+el-meter.c5.viz.items.0.r	abrace um só condutor
+el-meter.c5.viz.items.1.w	ler 0 A
+el-meter.c5.viz.items.1.r	separe a fase do neutro
+el-meter.c6.title	Escala automática e True RMS
+el-meter.c6.text	Os multímetros com escala automática escolhem a escala para você. Os multímetros True RMS medem corretamente formas de onda não senoidais (de inversores, drivers LED, inversores de frequência); os mais baratos podem errar bastante nesses casos.
+el-meter.c6.viz.l.t	Valor médio
+el-meter.c6.viz.l.items.0	bom para senoides puras
+el-meter.c6.viz.l.items.1	mais barato
+el-meter.c6.viz.r.t	True RMS
+el-meter.c6.viz.r.items.0	certo em ondas distorcidas
+el-meter.c6.viz.r.items.1	recomendado
+el-meter.c7.title	Verificando uma tomada
+el-meter.c7.text	Para verificar se uma tomada está energizada, meça entre fase e neutro (cerca de 230 V), fase e terra (cerca de 230 V) e neutro e terra (perto de 0 V). Testadores de tomada de verdade também verificam o terra e o DR.
+el-meter.c7.viz.items.0.a	fase–neutro
+el-meter.c7.viz.items.0.b	≈ 230 V
+el-meter.c7.viz.items.1.a	fase–terra
+el-meter.c7.viz.items.1.b	≈ 230 V
+el-meter.c7.viz.items.2.a	neutro–terra
+el-meter.c7.viz.items.2.b	≈ 0 V
+el-meter.c8.title	Confirme a ausência de tensão antes de tocar
+el-meter.c8.text	Antes de mexer em qualquer circuito: isole-o, bloqueie-o, teste que está sem tensão com um testador confiável e volte a testar o testador numa fonte sabidamente energizada. Nunca confie só num interruptor ou numa etiqueta.
+el-meter.c8.viz.steps.0	Desligue e bloqueie

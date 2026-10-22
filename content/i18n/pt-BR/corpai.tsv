@@ -1267,3 +1267,253 @@ corp-supply.c3.viz.steps.2	Agendar manutenção
 corp-supply.c3.viz.steps.3	Evitar paradas não planejadas
 corp-supply.c4.title	Sinais de preço das commodities
 corp-supply.c4.text	Os modelos combinam dados de oferta e demanda, clima, condição das lavouras, fretes e indicadores macro para apoiar a visão dos analistas. Eles informam o julgamento de trading, não o substituem.
+corp-supply.c4.viz.items.0	Clima e condição das lavouras
+corp-supply.c4.viz.items.1	Balanços de oferta e demanda
+corp-supply.c4.viz.items.2	Taxas de frete
+corp-supply.c4.viz.items.3	Câmbio e dados macro
+corp-supply.c4.viz.items.4	Dados de posicionamento
+corp-supply.c5.title	Dados de satélite e meteorológicos
+corp-supply.c5.text	Imagens de satélite e previsões meteorológicas ajudam a estimar a saúde das lavouras e as produtividades em regiões como o Brasil, o Meio-Oeste dos EUA e o Mar Negro, antes dos relatórios oficiais.
+corp-supply.c5.viz.steps.0	Imagens de satélite
+corp-supply.c5.viz.steps.1	Índices de vegetação
+corp-supply.c5.viz.steps.2	Estimativas de safra
+corp-supply.c5.viz.steps.3	Perspectiva da oferta
+corp-supply.c6.title	Inteligência contratual
+corp-supply.c6.text	A IA generativa extrai os termos-chave dos contratos de comércio (quantidades, especificações de qualidade, períodos de embarque, Incoterms, demurrage, condições de pagamento) e sinaliza cláusulas incomuns.
+corp-supply.c6.viz.items.0.a	quantidade
+corp-supply.c6.viz.items.0.b	toneladas e tolerância
+corp-supply.c6.viz.items.1.a	qualidade
+corp-supply.c6.viz.items.1.b	especificações como proteína, umidade
+corp-supply.c6.viz.items.2.a	Incoterm
+corp-supply.c6.viz.items.2.b	FOB, CIF, etc.
+corp-supply.c6.viz.items.3.a	demurrage
+corp-supply.c6.viz.items.3.b	taxa diária
+corp-supply.c7.title	Operações de comércio
+corp-supply.c7.text	A IA ajuda com os documentos (conhecimentos de embarque, certificados, cartas de crédito), verificando a coerência entre eles e detectando discrepâncias antes que atrasem pagamentos.
+corp-supply.c7.viz.steps.0	Documentos de embarque
+corp-supply.c7.viz.steps.1	A IA verifica a coerência
+corp-supply.c7.viz.steps.2	Sinaliza discrepâncias
+corp-supply.c7.viz.steps.3	Corrigir antes da apresentação
+corp-supply.c8.title	Risco e compliance
+corp-supply.c8.text	A verificação de sanções, o risco de contraparte e o rastreamento de navios se beneficiam de IA que monitora notícias, dados societários e movimentos de navios.
+corp-supply.c8.viz.items.0	Verificação de sanções
+corp-supply.c8.viz.items.1	Monitorar contrapartes
+corp-supply.c8.viz.items.2	Rastreamento de navios
+corp-supply.c8.viz.items.3	Alertas de notícias negativas
+corp-supply.c8.viz.items.4	Sinais de fraude comercial
+corp-supply.c9.title	Humanos no circuito
+corp-supply.c9.text	No trading e nas operações, a IA fornece sinais e automação, enquanto pessoas experientes tomam as decisões comerciais e de risco.
+corp-supply.c9.viz.l.t	IA
+corp-supply.c9.viz.l.items.0	dados em escala
+corp-supply.c9.viz.l.items.1	sinais
+corp-supply.c9.viz.l.items.2	processar documentos
+corp-supply.c9.viz.r.t	Pessoas
+corp-supply.c9.viz.r.items.0	julgamento
+corp-supply.c9.viz.r.items.1	relacionamentos
+corp-supply.c9.viz.r.items.2	responsabilidade
+corp-customer.title	IA no atendimento ao cliente e em vendas
+corp-customer.summary	Respostas mais rápidas e vendas melhores.
+corp-customer.q0.q	O que faz um copiloto de atendimento ao cliente?
+corp-customer.q0.o0	Substitui os clientes
+corp-customer.q0.o1	Redige respostas para os atendentes revisarem e enviarem
+corp-customer.q0.o2	Apaga tickets
+corp-customer.q0.x	Os atendentes mantêm o controle.
+corp-customer.q1.q	O que um assistente para clientes precisa oferecer?
+corp-customer.q1.o0	Descontos
+corp-customer.q1.o1	Uma forma de falar com um humano
+corp-customer.q1.o2	Só inglês
+corp-customer.q1.x	Transferência para um humano e transparência.
+corp-customer.q2.q	O que é a triagem de tickets?
+corp-customer.q2.o0	Fechar tickets
+corp-customer.q2.o1	Classificar e encaminhar solicitações automaticamente
+corp-customer.q2.o2	Escrever tickets
+corp-customer.q2.x	A equipe certa, com a prioridade certa.
+corp-customer.c0.title	Copilotos de atendimento
+corp-customer.c0.text	A IA redige respostas para os atendentes com base nas bases de conhecimento e no histórico dos casos. Os atendentes editam e enviam, resolvendo mais casos com qualidade consistente.
+corp-customer.c0.viz.steps.0	E-mail do cliente
+corp-customer.c0.viz.steps.1	A IA redige resposta com fontes
+corp-customer.c0.viz.steps.2	Atendente edita
+corp-customer.c0.viz.steps.3	Enviada mais rápido
+corp-customer.c1.title	Assistentes de autoatendimento
+corp-customer.c1.text	Os assistentes para clientes respondem a perguntas comuns 24/7 e transferem para humanos os casos complexos ou sensíveis, passando todo o contexto.
+corp-customer.c1.viz.steps.0	Pergunta do cliente
+corp-customer.c1.viz.steps.1	Assistente responde aos casos comuns
+corp-customer.c1.viz.steps.2	Complexo: vai para humano
+corp-customer.c1.viz.steps.3	Contexto repassado
+corp-customer.c2.title	Triagem de tickets
+corp-customer.c2.text	Classifique as solicitações recebidas por tema, urgência e idioma, e encaminhe-as automaticamente para a equipe certa.
+corp-customer.c2.viz.items.0.a	tema
+corp-customer.c2.viz.items.0.b	cobrança, entrega, técnico
+corp-customer.c2.viz.items.1.a	urgência
+corp-customer.c2.viz.items.1.b	alta, normal
+corp-customer.c2.viz.items.2.a	idioma
+corp-customer.c2.viz.items.2.b	PT, EN, ES
+corp-customer.c2.viz.items.3.a	encaminhar
+corp-customer.c2.viz.items.3.b	equipe certa
+corp-customer.c3.title	Sentimento e qualidade
+corp-customer.c3.text	A IA analisa as conversas quanto a sentimento, problemas recorrentes e compliance, dando aos gestores uma visão de todas as interações, e não só de amostras.
+corp-customer.c3.viz.items.0	Tendências de sentimento
+corp-customer.c3.viz.items.1	Reclamações recorrentes
+corp-customer.c3.viz.items.2	Verificações de compliance
+corp-customer.c3.viz.items.3	Oportunidades de coaching
+corp-customer.c4.title	Assistentes de vendas
+corp-customer.c4.text	A IA prepara briefings de clientes, resume reuniões, redige propostas e atualiza o CRM, dando aos vendedores mais tempo com os clientes.
+corp-customer.c4.viz.items.0	Briefings de clientes
+corp-customer.c4.viz.items.1	Resumos de reuniões
+corp-customer.c4.viz.items.2	Rascunhos de propostas
+corp-customer.c4.viz.items.3	Atualizações do CRM
+corp-customer.c4.viz.items.4	E-mails de follow-up
+corp-customer.c5.title	Lead scoring
+corp-customer.c5.text	O ML dá uma pontuação aos leads pela probabilidade de compra, com base em vendas fechadas no passado, comportamento e dados da empresa, para que o time de vendas se concentre nos mais promissores.
+corp-customer.c5.viz.unit	conversão % por faixa de pontuação (ilustrativo)
+corp-customer.c5.viz.items.0.l	Baixa
+corp-customer.c5.viz.items.1.l	Média
+corp-customer.c5.viz.items.2.l	Alta
+corp-customer.c6.title	Apoio à precificação
+corp-customer.c6.text	Os modelos sugerem preços ou descontos com base no histórico de negócios, na demanda e na concorrência, dentro de limites definidos pelo negócio.
+corp-customer.c6.viz.steps.0	Contexto do negócio
+corp-customer.c6.viz.steps.1	Modelo sugere faixa de preço
+corp-customer.c6.viz.steps.2	Dentro dos limites aprovados
+corp-customer.c6.viz.steps.3	O vendedor decide
+corp-customer.c7.title	Personalização
+corp-customer.c7.text	Recomendar produtos e conteúdos relevantes aumenta a conversão, mas precisa respeitar a privacidade e evitar ser invasivo.
+corp-customer.c7.viz.l.t	Útil
+corp-customer.c7.viz.l.items.0	relevante
+corp-customer.c7.viz.l.items.1	respeita o consentimento
+corp-customer.c7.viz.r.t	Assustador
+corp-customer.c7.viz.r.items.0	pessoal demais
+corp-customer.c7.viz.r.items.1	sem explicação
+corp-customer.c7.viz.r.items.2	sem consentimento
+corp-customer.c8.title	Seja transparente
+corp-customer.c8.text	Os clientes devem saber quando estão falando com uma IA e devem sempre poder chegar a um humano. O AI Act da UE exige essa divulgação nos chatbots.
+corp-customer.c8.viz.items.0	Dizer que é IA
+corp-customer.c8.viz.items.1	Oferecer um humano
+corp-customer.c8.viz.items.2	Não fingir empatia
+corp-customer.c8.viz.items.3	Escalar reclamações
+corp-customer.c9.title	Medir a IA no atendimento
+corp-customer.c9.text	Acompanhe a taxa de resolução, o tempo de atendimento, a satisfação dos clientes, a taxa de escalonamento e a precisão das respostas. Fique de olho nos clientes que desistem.
+corp-customer.c9.viz.items.0	Resolução no primeiro contato
+corp-customer.c9.viz.items.1	Tempo médio de atendimento
+corp-customer.c9.viz.items.2	CSAT
+corp-customer.c9.viz.items.3	Taxa de escalonamento
+corp-customer.c9.viz.items.4	Precisão das respostas
+corp-hrlegal.title	IA no RH e no jurídico
+corp-hrlegal.summary	Contratos, políticas e processos de pessoas.
+corp-hrlegal.q0.q	Segundo o AI Act da UE, uma IA que ranqueia candidatos a emprego é…
+corp-hrlegal.q0.o0	De risco mínimo
+corp-hrlegal.q0.o1	De alto risco
+corp-hrlegal.q0.o2	Não regulada
+corp-hrlegal.q0.x	Os usos no emprego são de alto risco.
+corp-hrlegal.q1.q	O que um playbook jurídico define?
+corp-hrlegal.q1.o0	O horário do escritório
+corp-hrlegal.q1.o1	As posições preferidas, aceitáveis e inaceitáveis para cada cláusula
+corp-hrlegal.q1.o2	Os salários
+corp-hrlegal.q1.x	A IA o aplica de forma consistente.
+corp-hrlegal.q2.q	Qual prática é proibida no trabalho pelo AI Act da UE?
+corp-hrlegal.q2.o0	Chatbots de políticas
+corp-hrlegal.q2.o1	Reconhecimento de emoções (com exceções limitadas)
+corp-hrlegal.q2.o2	Revisão de contratos
+corp-hrlegal.q2.x	Proibido desde fevereiro de 2025.
+corp-hrlegal.c0.title	Revisão de contratos
+corp-hrlegal.c0.text	A IA extrai as cláusulas-chave (prazo, renovação, responsabilidade, rescisão, lei aplicável), compara-as com as suas posições padrão e destaca os desvios para os advogados.
+corp-hrlegal.c0.viz.steps.0	Contrato enviado
+corp-hrlegal.c0.viz.steps.1	Extrair cláusulas-chave
+corp-hrlegal.c0.viz.steps.2	Comparar com o playbook
+corp-hrlegal.c0.viz.steps.3	Sinalizar desvios para revisão
+corp-hrlegal.c1.title	Bibliotecas de cláusulas e playbooks
+corp-hrlegal.c1.text	Um playbook jurídico define as posições preferidas, aceitáveis e inaceitáveis para cada cláusula. A IA o aplica de forma consistente a milhares de contratos.
+corp-hrlegal.c1.viz.items.0	Inaceitável: escalar
+corp-hrlegal.c1.viz.items.1	Alternativa aceitável
+corp-hrlegal.c1.viz.items.2	Posição preferida
+corp-hrlegal.c2.title	Pesquisa jurídica
+corp-hrlegal.c2.text	A IA ajuda a pesquisar jurisprudência e legislação, mas as citações precisam ser verificadas: já houve advogados punidos por apresentar casos inventados pela IA.
+corp-hrlegal.c2.viz.items.0.w	confiar nas citações da IA
+corp-hrlegal.c2.viz.items.0.r	verificar cada uma em bases oficiais
+corp-hrlegal.c3.title	Assistentes de políticas
+corp-hrlegal.c3.text	Os funcionários fazem perguntas sobre políticas de RH, regras de viagem ou procedimentos de TI e recebem respostas fundamentadas nos documentos oficiais, com links.
+corp-hrlegal.c3.viz.steps.0	Funcionário pergunta
+corp-hrlegal.c3.viz.steps.1	Buscar a política relevante
+corp-hrlegal.c3.viz.steps.2	Responder com link
+corp-hrlegal.c3.viz.steps.3	Escalar se não for claro
+corp-hrlegal.c4.title	Recrutamento: cuidado
+corp-hrlegal.c4.text	A triagem de currículos e o ranqueamento de candidatos são de alto risco segundo o AI Act da UE. Use a IA para ajudar (escrever anúncios, agendar, resumir) e mantenha os humanos tomando as decisões, com testes de viés.
+corp-hrlegal.c4.viz.l.t	Risco menor
+corp-hrlegal.c4.viz.l.items.0	rascunhos de anúncios
+corp-hrlegal.c4.viz.l.items.1	agendamento
+corp-hrlegal.c4.viz.l.items.2	FAQ
+corp-hrlegal.c4.viz.r.t	Alto risco
+corp-hrlegal.c4.viz.r.items.0	ranquear candidatos
+corp-hrlegal.c4.viz.r.items.1	triagem de currículos
+corp-hrlegal.c4.viz.r.items.2	exige controles rigorosos
+corp-hrlegal.c5.title	Onboarding de novos funcionários
+corp-hrlegal.c5.text	Os assistentes de IA guiam os novos funcionários pelos sistemas, políticas e primeiras tarefas, respondendo a perguntas a qualquer hora.
+corp-hrlegal.c5.viz.items.0	Planos de onboarding personalizados
+corp-hrlegal.c5.viz.items.1	FAQ de políticas
+corp-hrlegal.c5.viz.items.2	Guias dos sistemas
+corp-hrlegal.c5.viz.items.3	Check-ins
+corp-hrlegal.c6.title	Treinamento e desenvolvimento
+corp-hrlegal.c6.text	A IA cria conteúdos de treinamento, quizzes e trilhas personalizadas, e funciona como tutor, assim como este app.
+corp-hrlegal.c6.viz.items.0	Gerar conteúdos de treinamento
+corp-hrlegal.c6.viz.items.1	Quizzes e prática
+corp-hrlegal.c6.viz.items.2	Trilhas personalizadas
+corp-hrlegal.c6.viz.items.3	Tutoria sob demanda
+corp-hrlegal.c7.title	Privacidade dos dados dos funcionários
+corp-hrlegal.c7.text	Os dados de RH são sensíveis. Restrinja o acesso, minimize os dados, evite o reconhecimento de emoções no trabalho (proibido pelo AI Act da UE) e envolva os conselhos de trabalhadores quando for obrigatório.
+corp-hrlegal.c7.viz.items.0	Controle de acesso rigoroso
+corp-hrlegal.c7.viz.items.1	Minimização de dados
+corp-hrlegal.c7.viz.items.2	Sem reconhecimento de emoções no trabalho
+corp-hrlegal.c7.viz.items.3	Consulta ao conselho de trabalhadores
+corp-hrlegal.c7.viz.items.4	DPIA
+corp-hrlegal.c8.title	Monitoramento de compliance
+corp-hrlegal.c8.text	A IA acompanha as mudanças regulatórias, relaciona-as com as políticas internas e sinaliza lacunas, ajudando as equipes de compliance a se manterem atualizadas.
+corp-hrlegal.c8.viz.steps.0	Nova regulamentação publicada
+corp-hrlegal.c8.viz.steps.1	A IA resume as mudanças
+corp-hrlegal.c8.viz.steps.2	Relacionar com políticas internas
+corp-hrlegal.c8.viz.steps.3	Sinalizar lacunas
+corp-hrlegal.c9.title	Os advogados continuam responsáveis
+corp-hrlegal.c9.text	A IA acelera o trabalho jurídico, mas a responsabilidade profissional continua sendo dos advogados. Use-a para primeiras versões, revisão e apoio à pesquisa, com validação de especialistas.
+corp-hrlegal.c9.viz.l.t	IA
+corp-hrlegal.c9.viz.l.items.0	primeira passada
+corp-hrlegal.c9.viz.l.items.1	extração
+corp-hrlegal.c9.viz.l.items.2	comparação
+corp-hrlegal.c9.viz.r.t	Advogado
+corp-hrlegal.c9.viz.r.items.0	julgamento
+corp-hrlegal.c9.viz.r.items.1	negociação
+corp-hrlegal.c9.viz.r.items.2	aprovação final
+corp-dev.title	IA para engenharia de software
+corp-dev.summary	Copilotos, agentes e modernização de código.
+corp-dev.q0.q	O que deve acontecer com o código gerado por IA antes do merge?
+corp-dev.q0.o0	Nada
+corp-dev.q0.o1	Revisão humana, testes e análise de segurança
+corp-dev.q0.o2	Imprimi-lo
+corp-dev.q0.x	Os controles de qualidade de sempre continuam valendo.
+corp-dev.q1.q	O que é o risco de "pacote alucinado"?
+corp-dev.q1.o0	Código lento
+corp-dev.q1.o1	A IA sugerir o nome de uma biblioteca inexistente que atacantes podem registrar
+corp-dev.q1.o2	Um erro de digitação
+corp-dev.q1.x	Risco na cadeia de suprimentos.
+corp-dev.q2.q	Qual é uma boa medida do impacto da IA na engenharia?
+corp-dev.q2.o0	Linhas de código geradas
+corp-dev.q2.o1	Tempo de ciclo e taxa de falha de mudanças
+corp-dev.q2.o2	Número de prompts
+corp-dev.q2.x	Meça resultados, não volume produzido.
+corp-dev.c0.title	Assistentes de programação
+corp-dev.c0.text	Ferramentas como GitHub Copilot, Cursor e Claude Code sugerem código, explicam-no, escrevem testes e corrigem bugs, dentro do editor ou do terminal do desenvolvedor.
+corp-dev.c0.viz.items.0	Completar código
+corp-dev.c0.viz.items.1	Explicações
+corp-dev.c0.viz.items.2	Gerar testes
+corp-dev.c0.viz.items.3	Corrigir bugs
+corp-dev.c0.viz.items.4	Refatoração
+corp-dev.c1.title	Ganhos de produtividade
+corp-dev.c1.text	Estudos controlados mostraram que os desenvolvedores concluem algumas tarefas de programação bem mais rápido com assistentes de IA, embora os ganhos variem com a tarefa, a experiência e a base de código.
+corp-dev.c1.viz.l.t	Ganhos maiores
+corp-dev.c1.viz.l.items.0	código repetitivo
+corp-dev.c1.viz.l.items.1	testes
+corp-dev.c1.viz.l.items.2	linguagens pouco conhecidas
+corp-dev.c1.viz.r.t	Ganhos menores
+corp-dev.c1.viz.r.items.0	arquitetura complexa
+corp-dev.c1.viz.r.items.1	depuração sutil
+corp-dev.c2.title	Agentes de programação
+corp-dev.c2.text	Os agentes pegam uma tarefa (uma issue ou ticket), planejam mudanças em vários arquivos, rodam os testes e abrem um pull request para revisão humana.
+corp-dev.c2.viz.steps.0	Ticket
+corp-dev.c2.viz.steps.1	Agente planeja e edita

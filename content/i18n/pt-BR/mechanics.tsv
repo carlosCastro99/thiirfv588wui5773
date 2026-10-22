@@ -598,3 +598,303 @@ me-fluids.c0.text	Pressão é a força distribuída sobre uma área. Um salto ag
 me-fluids.c0.viz.f	p = F ÷ A
 me-fluids.c0.viz.items.0.s	p
 me-fluids.c0.viz.items.0.m	pascals (N/m²)
+me-fluids.c0.viz.items.1.s	F
+me-fluids.c0.viz.items.1.m	força
+me-fluids.c0.viz.items.2.s	A
+me-fluids.c0.viz.items.2.m	área
+me-fluids.c1.title	Pressão na água
+me-fluids.c1.text	A pressão da água aumenta com a profundidade, cerca de 1 bar a cada 10 metros. Os mergulhadores sentem isso nos ouvidos; as barragens são mais grossas na base pelo mesmo motivo.
+me-fluids.c1.viz.f	p = ρ × g × h
+me-fluids.c1.viz.items.0.s	ρ
+me-fluids.c1.viz.items.0.m	1.000 kg/m³
+me-fluids.c1.viz.items.1.s	g
+me-fluids.c1.viz.items.2.s	h
+me-fluids.c1.viz.items.2.m	profundidade → 10 m ≈ 1 bar
+me-fluids.c2.title	Pressão atmosférica
+me-fluids.c2.text	O ar acima de nós pressiona com cerca de 1 bar (101 kPa) ao nível do mar, aproximadamente 10 toneladas sobre cada metro quadrado. Não percebemos porque ele empurra igualmente de todos os lados.
+me-fluids.c2.viz.unit	bar (aprox.)
+me-fluids.c2.viz.items.0.l	Topo do Everest
+me-fluids.c2.viz.items.1.l	Lisboa
+me-fluids.c2.viz.items.2.l	10 m debaixo d'água
+me-fluids.c2.viz.items.3.l	Pneu de carro
+me-fluids.c3.title	Princípio de Pascal
+me-fluids.c3.text	A pressão em um líquido confinado se transmite igualmente em todas as direções. Empurre um pistão pequeno e um pistão grande sente a mesma pressão sobre uma área maior, o que dá uma força maior.
+me-fluids.c3.example.0	100 N sobre 1 cm², saída de 50 cm²
+me-fluids.c3.example.1	100 × 50
+me-fluids.c3.example.2	= 5.000 N erguidos
+me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
+me-fluids.c3.viz.items.0.s	F₁
+me-fluids.c3.viz.items.0.m	empurrão pequeno
+me-fluids.c3.viz.items.1.s	A₂ ÷ A₁
+me-fluids.c3.viz.items.1.m	relação de áreas
+me-fluids.c3.viz.items.2.s	F₂
+me-fluids.c3.viz.items.2.m	grande elevação
+me-fluids.c4.title	Hidráulica por toda parte
+me-fluids.c4.text	Freios de carro, escavadeiras, elevadores e prensas usam fluido hidráulico para multiplicar a força e transmiti-la por mangueiras flexíveis.
+me-fluids.c4.viz.items.0	Freios de carro
+me-fluids.c4.viz.items.1	Braços de escavadeira
+me-fluids.c4.viz.items.2	Elevadores automotivos em oficinas
+me-fluids.c4.viz.items.3	Prensas hidráulicas
+me-fluids.c4.viz.items.4	Comandos de aviões
+me-fluids.c5.title	Empuxo
+me-fluids.c5.text	Um objeto em um fluido é empurrado para cima por uma força igual ao peso do fluido que ele desloca (Arquimedes). Se essa força for maior que o seu próprio peso, ele flutua. Os navios de aço flutuam porque sua forma desloca muita água.
+me-fluids.c5.viz.steps.0	O objeto desloca água
+me-fluids.c5.viz.steps.1	Empuxo = peso da água deslocada
+me-fluids.c5.viz.steps.2	Empuxo
+me-fluids.c5.viz.steps.3	peso: flutua
+me-fluids.c6.title	Escoamento em tubos
+me-fluids.c6.text	A vazão é igual à velocidade vezes a área do tubo. Aperte uma mangueira e a água acelera. Tubos estreitos precisam de mais pressão para empurrar a mesma vazão, por causa do atrito.
+me-fluids.c6.viz.f	Q = v × A
+me-fluids.c6.viz.items.0.s	Q
+me-fluids.c6.viz.items.0.m	vazão
+me-fluids.c6.viz.items.1.s	v
+me-fluids.c6.viz.items.1.m	velocidade
+me-fluids.c6.viz.items.2.s	A
+me-fluids.c6.viz.items.2.m	área da seção
+me-fluids.c7.title	Bernoulli
+me-fluids.c7.text	Onde um fluido se move mais rápido, sua pressão cai. Isso ajuda a explicar carburadores, borrifadores e parte de como asas e velas geram sustentação.
+me-fluids.c7.viz.l.t	Fluido lento
+me-fluids.c7.viz.l.items.0	pressão maior
+me-fluids.c7.viz.r.t	Fluido rápido
+me-fluids.c7.viz.r.items.0	pressão menor
+me-fluids.c8.title	Sifões
+me-fluids.c8.text	Um sifão faz o líquido subir por cima de um obstáculo e descer até um ponto mais baixo sem bomba, desde que a saída fique abaixo da fonte e o tubo comece cheio.
+me-fluids.c8.viz.steps.0	Tubo cheio de líquido
+me-fluids.c8.viz.steps.1	Saída abaixo da fonte
+me-fluids.c8.viz.steps.2	A gravidade puxa o lado longo
+me-fluids.c8.viz.steps.3	O fluxo continua
+me-fluids.c9.title	Viscosidade
+me-fluids.c9.text	Viscosidade é o quanto um fluido é "grosso": o mel é viscoso, a água não. Classificações de óleo como 5W-30 descrevem como a viscosidade se comporta a frio (5W) e a quente (30).
+me-fluids.c9.viz.items.0.a	água
+me-fluids.c9.viz.items.0.b	viscosidade baixa
+me-fluids.c9.viz.items.1.a	óleo de motor
+me-fluids.c9.viz.items.1.b	média
+me-fluids.c9.viz.items.2.a	mel
+me-fluids.c9.viz.items.2.b	alta
+me-fluids.c9.viz.items.3.a	5W-30
+me-fluids.c9.viz.items.3.b	índice a frio / a quente
+me-flight.title	Como os aviões voam
+me-flight.summary	Sustentação, arrasto, empuxo e peso.
+me-flight.q0.q	O que acontece em um estol?
+me-flight.q0.o0	O motor para
+me-flight.q0.o1	O fluxo de ar se descola da asa e a sustentação cai bruscamente
+me-flight.q0.o2	O avião acelera
+me-flight.q0.x	Ângulo de ataque alto demais.
+me-flight.q1.q	Dobrar a velocidade multiplica o arrasto por cerca de…
+me-flight.q1.o0	2
+me-flight.q1.o1	4
+me-flight.q1.o2	8
+me-flight.q1.x	O arrasto cresce com o quadrado da velocidade.
+me-flight.q2.q	Qual superfície de comando faz o avião rolar?
+me-flight.q2.o0	Leme de direção
+me-flight.q2.o1	Profundor
+me-flight.q2.o2	Ailerons
+me-flight.q2.x	Os ailerons se movem em sentidos opostos em cada asa.
+me-flight.c0.title	Quatro forças
+me-flight.c0.text	Em voo estável, a sustentação equilibra o peso e o empuxo equilibra o arrasto. Para subir, a sustentação supera o peso; para acelerar, o empuxo supera o arrasto.
+me-flight.c0.viz.l.t	Sobe e desce
+me-flight.c0.viz.l.items.0	sustentação vs. peso
+me-flight.c0.viz.r.t	Frente e trás
+me-flight.c0.viz.r.items.0	empuxo vs. arrasto
+me-flight.c1.title	Como as asas geram sustentação
+me-flight.c1.text	Uma asa tem formato e inclinação (ângulo de ataque) para desviar o ar para baixo. Empurrar o ar para baixo empurra a asa para cima (terceira lei de Newton), com pressão menor acima da asa e maior abaixo.
+me-flight.c1.viz.steps.0	Asa inclinada contra o fluxo de ar
+me-flight.c1.viz.steps.1	Ar desviado para baixo
+me-flight.c1.viz.steps.2	Pressão menor em cima
+me-flight.c1.viz.steps.3	Sustentação para cima
+me-flight.c2.title	A equação da sustentação
+me-flight.c2.text	A sustentação cresce com a densidade do ar, a área da asa e o quadrado da velocidade. É por isso que os aviões precisam de pistas longas em aeroportos quentes e altos, onde o ar é rarefeito.
+me-flight.c2.viz.f	L = ½ × ρ × v² × S × CL
+me-flight.c2.viz.items.0.s	ρ
+me-flight.c2.viz.items.0.m	densidade do ar
+me-flight.c2.viz.items.1.s	v
+me-flight.c2.viz.items.1.m	velocidade
+me-flight.c2.viz.items.2.s	S
+me-flight.c2.viz.items.2.m	área da asa
+me-flight.c2.viz.items.3.s	CL
+me-flight.c2.viz.items.3.m	coeficiente de sustentação
+me-flight.c3.title	Estol
+me-flight.c3.text	Aumente demais o ângulo de ataque e o fluxo de ar se descola da superfície superior. A sustentação desaba de repente: é o estol. Os pilotos treinam para reconhecê-lo e sair dele.
+me-flight.c3.viz.steps.0	Ângulo de ataque alto demais
+me-flight.c3.viz.steps.1	O fluxo de ar se descola
+me-flight.c3.viz.steps.2	A sustentação cai bruscamente
+me-flight.c3.viz.steps.3	Baixar o nariz para recuperar
+me-flight.c4.title	Flapes e slats
+me-flight.c4.text	Na decolagem e no pouso, flapes e slats se estendem da asa para aumentar sua área e curvatura, dando mais sustentação em baixa velocidade.
+me-flight.c4.viz.l.t	Cruzeiro
+me-flight.c4.viz.l.items.0	asa limpa
+me-flight.c4.viz.l.items.1	arrasto baixo
+me-flight.c4.viz.l.items.2	velocidade alta
+me-flight.c4.viz.r.t	Pouso
+me-flight.c4.viz.r.items.0	flapes e slats estendidos
+me-flight.c4.viz.r.items.1	mais sustentação
+me-flight.c4.viz.r.items.2	aproximação lenta
+me-flight.c5.title	Arrasto
+me-flight.c5.text	O arrasto vem do atrito com o ar e da diferença de pressão atrás do objeto. Ele cresce com o quadrado da velocidade, então ir mais rápido custa muito mais combustível.
+me-flight.c5.viz.unit	arrasto relativo
+me-flight.c5.viz.items.0.l	100 km/h
+me-flight.c5.viz.items.1.l	200 km/h
+me-flight.c5.viz.items.2.l	300 km/h
+me-flight.c6.title	Motores a jato
+me-flight.c6.text	Um turbofan aspira ar, comprime-o, queima combustível nele e expele o gás quente pela traseira. A maior parte do empuxo nos aviões comerciais vem do grande fan, que empurra ar em volta do núcleo.
+me-flight.c6.viz.steps.0	O fan aspira o ar
+me-flight.c6.viz.steps.1	O compressor o comprime
+me-flight.c6.viz.steps.2	Combustão
+me-flight.c6.viz.steps.3	Turbina e escape impulsionam o avião
+me-flight.c7.title	Por que os aviões comerciais voam alto
+me-flight.c7.text	A cerca de 10–12 km de altitude, o ar é rarefeito, então o arrasto é muito menor e os motores a jato são mais eficientes. As cabines são pressurizadas para o equivalente a cerca de 2.000 m.
+me-flight.c7.viz.items.0.v	11 km
+me-flight.c7.viz.items.0.l	altitude de cruzeiro típica
+me-flight.c7.viz.items.1.v	−55 °C
+me-flight.c7.viz.items.1.l	ar externo
+me-flight.c7.viz.items.2.v	~2.000 m
+me-flight.c7.viz.items.2.l	altitude de pressão da cabine
+me-flight.c8.title	Superfícies de comando
+me-flight.c8.text	Os ailerons nas asas fazem o avião rolar, o profundor na cauda o inclina para cima e para baixo, e o leme de direção o guina para a esquerda e para a direita.
+me-flight.c8.viz.items.0.a	ailerons
+me-flight.c8.viz.items.0.b	rolagem
+me-flight.c8.viz.items.1.a	profundor
+me-flight.c8.viz.items.1.b	arfagem
+me-flight.c8.viz.items.2.a	leme
+me-flight.c8.viz.items.2.b	guinada
+me-flight.c8.viz.items.3.a	flapes
+me-flight.c8.viz.items.3.b	sustentação extra
+me-flight.c9.title	Drones
+me-flight.c9.text	Os drones multirrotores não têm asas; geram sustentação girando hélices. Eles manobram acelerando alguns motores e desacelerando outros, com uma controladora de voo fazendo ajustes centenas de vezes por segundo.
+me-flight.c9.viz.steps.0	Giroscópio e acelerômetro
+me-flight.c9.viz.steps.1	Controladora de voo
+me-flight.c9.viz.steps.2	Ajusta cada motor
+me-flight.c9.viz.steps.3	Voo pairado estável
+me-bridges.title	Pontes
+me-bridges.summary	Em viga, em arco, pênseis e estaiadas.
+me-bridges.q0.q	Que tipo de ponte suporta as cargas principalmente em compressão?
+me-bridges.q0.o0	Pênsil
+me-bridges.q0.o1	Em arco
+me-bridges.q0.o2	Estaiada
+me-bridges.q0.x	Os arcos transmitem as cargas aos encontros.
+me-bridges.q1.q	A ponte 25 de Abril, em Lisboa, é uma…
+me-bridges.q1.o0	Ponte em viga
+me-bridges.q1.o1	Ponte em arco
+me-bridges.q1.o2	Ponte pênsil
+me-bridges.q1.x	Os cabos principais pendem das torres.
+me-bridges.q2.q	O que destruiu a ponte de Tacoma Narrows em 1940?
+me-bridges.q2.o0	Um terremoto
+me-bridges.q2.o1	Oscilações de torção provocadas pelo vento
+me-bridges.q2.o2	A colisão de um navio
+me-bridges.q2.x	Instabilidade aerodinâmica.
+me-bridges.c0.title	Os principais tipos de ponte
+me-bridges.c0.text	As pontes lidam com as cargas de formas diferentes: as vigas fletem, os arcos trabalham à compressão, os cabos das pênseis são tracionados e, nas estaiadas, as torres sustentam o tabuleiro com cabos retos.
+me-bridges.c0.viz.root	Pontes
+me-bridges.c0.viz.items.0	Em viga
+me-bridges.c0.viz.items.1	Em arco
+me-bridges.c0.viz.items.2	Pênsil
+me-bridges.c0.viz.items.3	Estaiada
+me-bridges.c1.title	Pontes em viga
+me-bridges.c1.text	A ponte mais simples: uma viga sobre apoios. Barata e rápida para vãos curtos, mas exige vigas mais altas à medida que o vão cresce, por isso muitas vezes é contínua sobre vários pilares.
+me-bridges.c1.viz.items.0.a	vão
+me-bridges.c1.viz.items.0.b	até ~250 m (grandes vigas)
+me-bridges.c1.viz.items.1.a	ideal para
+me-bridges.c1.viz.items.1.b	viadutos de rodovias
+me-bridges.c1.viz.items.2.a	estrutura
+me-bridges.c1.viz.items.2.b	flexão
+me-bridges.c2.title	Pontes em arco
+me-bridges.c2.text	Os arcos levam as cargas em compressão até encontros robustos. Arcos de pedra duram há 2.000 anos. A ponte Dom Luís I, no Porto (1886), é um arco de ferro de dois tabuleiros sobre o Douro.
+me-bridges.c2.viz.items.0.a	funciona por
+me-bridges.c2.viz.items.0.b	compressão
+me-bridges.c2.viz.items.1.a	precisa de
+me-bridges.c2.viz.items.1.b	encontros robustos
+me-bridges.c2.viz.items.2.a	exemplo
+me-bridges.c2.viz.items.2.b	Dom Luís I, Porto
+me-bridges.c3.title	Pontes pênseis
+me-bridges.c3.text	Os cabos principais pendem de torres altas e são ancorados em cada extremidade; pendurais verticais sustentam o tabuleiro. Elas alcançam os maiores vãos. A ponte 25 de Abril, em Lisboa (1966), é uma delas.
+me-bridges.c3.viz.steps.0	Carga do tabuleiro
+me-bridges.c3.viz.steps.1	Pendurais verticais
+me-bridges.c3.viz.steps.2	Cabos principais
+me-bridges.c3.viz.steps.3	Torres e ancoragens
+me-bridges.c4.title	Pontes estaiadas
+me-bridges.c4.text	Cabos retos vão diretamente das torres ao tabuleiro, em leque ou em harpa. São eficientes para vãos médios a longos e rápidas de construir. A ponte Vasco da Gama, em Lisboa, tem um vão principal estaiado.
+me-bridges.c4.viz.l.t	Pênsil
+me-bridges.c4.viz.l.items.0	cabos pendem entre as torres
+me-bridges.c4.viz.l.items.1	maiores vãos
+me-bridges.c4.viz.r.t	Estaiada
+me-bridges.c4.viz.r.items.0	cabos retos até o tabuleiro
+me-bridges.c4.viz.r.items.1	vãos médios a longos
+me-bridges.c5.title	Pontes portuguesas
+me-bridges.c5.text	Portugal tem pontes notáveis, incluindo várias da empresa de Gustave Eiffel e de Edgar Cardoso.
+me-bridges.c5.viz.events.0.l	Maria Pia (Eiffel), Porto
+me-bridges.c5.viz.events.1.l	Dom Luís I, Porto
+me-bridges.c5.viz.events.2.l	25 de Abril, Lisboa
+me-bridges.c5.viz.events.3.l	Vasco da Gama, Lisboa (17 km)
+me-bridges.c6.title	O vento e Tacoma Narrows
+me-bridges.c6.text	Em 1940, a ponte pênsil de Tacoma Narrows, nos EUA, se desfez torcendo-se com um vento moderado, por causa de instabilidade aerodinâmica. Desde então, os tabuleiros são testados em túnel de vento e projetados para evitar isso.
+me-bridges.c6.viz.steps.0	Vento sobre um tabuleiro flexível
+me-bridges.c6.viz.steps.1	A oscilação de torção cresce
+me-bridges.c6.viz.steps.2	Colapso (1940)
+me-bridges.c6.viz.steps.3	Testes em túnel de vento desde então
+me-bridges.c7.title	Juntas de dilatação
+me-bridges.c7.text	As pontes crescem e encolhem com a temperatura. Juntas de dilatação (os dentes metálicos por onde você passa de carro) e aparelhos de apoio deslizantes permitem que se movam sem trincar.
+me-bridges.c7.viz.items.0	Juntas de dilatação
+me-bridges.c7.viz.items.1	Apoios deslizantes
+me-bridges.c7.viz.items.2	Prever a temperatura
+me-bridges.c7.viz.items.3	Inspecionar sempre
+me-bridges.c8.title	Fundações em rios
+me-bridges.c8.text	Os pilares em rios precisam resistir à erosão: a água rápida escavando o leito ao redor deles. Muitas falhas de pontes vêm da erosão durante cheias, e não da estrutura em si.
+me-bridges.c8.viz.steps.0	Água da cheia acelera em volta do pilar
+me-bridges.c8.viz.steps.1	Leito do rio erodido
+me-bridges.c8.viz.steps.2	Fundação descalçada
+me-bridges.c8.viz.steps.3	Risco de colapso
+me-bridges.c9.title	Inspeção e manutenção
+me-bridges.c9.text	As pontes são inspecionadas regularmente em busca de trincas, corrosão, desgaste dos apoios e erosão. Cada vez mais, sensores monitoram deformação, vibração e movimento em tempo real.
+me-bridges.c9.viz.items.0	Inspeções visuais
+me-bridges.c9.viz.items.1	Verificar corrosão de cabos e armaduras
+me-bridges.c9.viz.items.2	Levantamentos subaquáticos de erosão
+me-bridges.c9.viz.items.3	Sensores de monitoramento estrutural
+me-buildings.title	Edifícios e fundações
+me-buildings.summary	Do chão para cima.
+me-buildings.q0.q	O que é recalque diferencial?
+me-buildings.q0.o0	Todas as partes afundando por igual
+me-buildings.q0.o1	Uma parte do edifício afundando mais que outra
+me-buildings.q0.o2	Acomodação depois da chuva
+me-buildings.q0.x	Ele causa trincas.
+me-buildings.q1.q	O que era a gaiola pombalina?
+me-buildings.q1.o0	Uma prisão
+me-buildings.q1.o1	Uma treliça de madeira dentro das paredes para resistir a terremotos
+me-buildings.q1.o2	Um tipo de telha
+me-buildings.q1.x	Usada na reconstrução de Lisboa depois de 1755.
+me-buildings.q2.q	Quando se usam estacas?
+me-buildings.q2.o0	Em rocha firme perto da superfície
+me-buildings.q2.o1	Em solo mole, para alcançar camadas mais firmes
+me-buildings.q2.o2	Só em pontes
+me-buildings.q2.x	Elas transferem as cargas para camadas mais profundas.
+me-buildings.c0.title	Por que fundações?
+me-buildings.c0.text	As fundações distribuem o peso de um edifício sobre um solo capaz de suportá-lo sem afundar de forma desigual. Quanto mais fraco o solo, maiores ou mais profundas as fundações.
+me-buildings.c0.viz.steps.0	Peso do edifício
+me-buildings.c0.viz.steps.1	As fundações o distribuem
+me-buildings.c0.viz.steps.2	O solo o suporta
+me-buildings.c0.viz.steps.3	Sem recalque desigual
+me-buildings.c1.title	Fundações rasas
+me-buildings.c1.text	Sapatas corridas e isoladas, ou um radier, funcionam onde há solo firme ou rocha perto da superfície. São comuns em casas.
+me-buildings.c1.viz.items.0.a	sapata corrida
+me-buildings.c1.viz.items.0.b	sob paredes
+me-buildings.c1.viz.items.1.a	sapata isolada
+me-buildings.c1.viz.items.1.b	sob pilares
+me-buildings.c1.viz.items.2.a	radier
+me-buildings.c1.viz.items.2.b	laje inteira, solos fracos
+me-buildings.c2.title	Fundações profundas
+me-buildings.c2.text	Em solo mole, as estacas são cravadas ou perfuradas até camadas mais firmes e suportam as cargas pela ponta e pelo atrito lateral. A Baixa de Lisboa foi reconstruída depois de 1755 sobre estacas de madeira.
+me-buildings.c2.viz.l.t	Rasas
+me-buildings.c2.viz.l.items.0	solo firme perto da superfície
+me-buildings.c2.viz.l.items.1	baratas
+me-buildings.c2.viz.l.items.2	casas
+me-buildings.c2.viz.r.t	Estacas
+me-buildings.c2.viz.r.items.0	solo mole
+me-buildings.c2.viz.r.items.1	alcançam camadas profundas
+me-buildings.c2.viz.r.items.2	torres, pontes
+me-buildings.c3.title	Recalque
+me-buildings.c3.text	Todo edifício recalca um pouco. Os problemas vêm do recalque diferencial, quando uma parte afunda mais que outra, trincando paredes e emperrando portas.
+me-buildings.c3.viz.items.0.w	um canto sobre aterro mole
+me-buildings.c3.viz.items.0.r	fundações mais profundas ali
+me-buildings.c3.viz.items.1.w	trincas aumentando
+me-buildings.c3.viz.items.1.r	monitorar e investigar
+me-buildings.c4.title	Paredes e estruturas
+me-buildings.c4.text	Os edifícios tradicionais têm paredes portantes de pedra ou tijolo. Os modernos usam estruturas de pilares e vigas de concreto ou aço, e as paredes apenas preenchem os vãos.

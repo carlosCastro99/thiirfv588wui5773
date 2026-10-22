@@ -968,3 +968,273 @@ tr-proto.c4.viz.items.3.b	malha ou sugador
 tr-proto.c5.title	Placa perfurada
 tr-proto.c5.text	A placa perfurada (ou placa de ilhas/trilhas) torna um projeto permanente sem precisar projetar uma PCB: os componentes são soldados numa grade e ligados com fios ou trilhas de cobre.
 tr-proto.c5.viz.l.t	Protoboard
+tr-proto.c5.viz.l.items.0	sem solda
+tr-proto.c5.viz.l.items.1	mudanças rápidas
+tr-proto.c5.viz.l.items.2	pouco confiável a longo prazo
+tr-proto.c5.viz.r.t	Placa perfurada
+tr-proto.c5.viz.r.items.0	soldada
+tr-proto.c5.viz.r.items.1	permanente
+tr-proto.c5.viz.r.items.2	montagens únicas
+tr-proto.c6.title	Projetando uma PCB
+tr-proto.c6.text	Ferramentas gratuitas como o KiCad permitem desenhar o esquemático e depois o layout da placa. Envie os arquivos para um fabricante de PCBs e as placas chegam em cerca de uma semana por alguns euros.
+tr-proto.c6.viz.steps.0	Esquemático no KiCad
+tr-proto.c6.viz.steps.1	Layout da placa
+tr-proto.c6.viz.steps.2	Arquivos Gerber
+tr-proto.c6.viz.steps.3	PCB fabricada
+tr-proto.c7.title	Componentes SMD
+tr-proto.c7.text	A maioria dos componentes modernos é de montagem em superfície (SMD): minúsculos, soldados sobre ilhas em vez de atravessar furos. Tamanhos como 0805 dá para soldar à mão; os menores precisam de ar quente ou de um forno de refusão.
+tr-proto.c7.viz.unit	tamanho (mm, compr.)
+tr-proto.c8.title	Caixas
+tr-proto.c8.text	Os projetos precisam de uma caixa: caixas com grau de proteção IP para áreas externas, caixas impressas em 3D para um encaixe sob medida. Planeje prensa-cabos, ventilação e a posição da antena fora de caixas metálicas.
+tr-proto.c8.viz.items.0	IP65+ para áreas externas
+tr-proto.c8.viz.items.1	Prensa-cabos
+tr-proto.c8.viz.items.2	Ventilação para o calor
+tr-proto.c8.viz.items.3	Antena fora do metal
+tr-proto.c9.title	Segurança ao soldar
+tr-proto.c9.text	Use um suporte para o ferro, ventile o ambiente ou use um exaustor de fumaça (a fumaça do fluxo irrita os pulmões), lave as mãos depois de mexer com solda e use óculos de proteção ao cortar terminais.
+tr-proto.c9.viz.items.0	Ferro no suporte
+tr-proto.c9.viz.items.1	Exaustor ou janela aberta
+tr-proto.c9.viz.items.2	Lave as mãos
+tr-proto.c9.viz.items.3	Óculos ao cortar terminais
+tr-logic.title	Lógica e binário
+tr-logic.summary	Bits, portas e como os chips tomam decisões.
+tr-logic.q0.q	Quanto é o binário 1101 em decimal?
+tr-logic.q0.o0	11
+tr-logic.q0.o1	13
+tr-logic.q0.o2	1.101
+tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
+tr-logic.q1.q	Uma porta AND com entradas 1 e 0 dá na saída…
+tr-logic.q1.o0	1
+tr-logic.q1.o1	0
+tr-logic.q1.x	A AND precisa de todas as entradas em 1.
+tr-logic.q2.q	0xFF em decimal é…
+tr-logic.q2.o0	15
+tr-logic.q2.o1	255
+tr-logic.q2.o2	256
+tr-logic.q2.x	Dois F hexadecimais são oito bits em 1 = 255.
+tr-logic.c0.title	Bits
+tr-logic.c0.text	A eletrônica digital representa tudo com bits: 0 ou 1, tensão baixa ou alta. Oito bits formam um byte, que pode guardar 256 valores diferentes.
+tr-logic.c0.viz.items.0.v	1 bit
+tr-logic.c0.viz.items.0.l	0 ou 1
+tr-logic.c0.viz.items.1.v	8 bits
+tr-logic.c0.viz.items.1.l	1 byte
+tr-logic.c0.viz.items.2.l	valores num byte
+tr-logic.c1.title	Números binários
+tr-logic.c1.text	Cada posição binária vale o dobro da que está à sua direita: 1, 2, 4, 8, 16… O número 1011 é 8 + 0 + 2 + 1 = 11.
+tr-logic.c1.viz.items.0.m	a casa do oito
+tr-logic.c1.viz.items.1.m	nenhum quatro
+tr-logic.c1.viz.items.2.m	a casa do dois
+tr-logic.c1.viz.items.3.m	a casa do um
+tr-logic.c2.title	Hexadecimal
+tr-logic.c2.text	O hexadecimal agrupa quatro bits em um dígito, de 0–9 e depois A–F. Um byte é exatamente dois dígitos hexadecimais: 0xFF = 255. Endereços e cores (#FF8800) usam hexadecimal.
+tr-logic.c2.viz.items.0.a	0x0
+tr-logic.c2.viz.items.1.a	0x9
+tr-logic.c2.viz.items.2.a	0xA
+tr-logic.c2.viz.items.3.a	0xF
+tr-logic.c2.viz.items.4.a	0xFF
+tr-logic.c3.title	AND, OR, NOT
+tr-logic.c3.text	As portas básicas: a AND dá 1 só se todas as entradas forem 1; a OR dá 1 se alguma entrada for 1; a NOT inverte a entrada.
+tr-logic.c3.viz.l.t	AND
+tr-logic.c3.viz.l.items.0	as duas em 1
+tr-logic.c3.viz.l.items.1	porta aberta AND alarme ativado → sirene
+tr-logic.c3.viz.r.t	OR
+tr-logic.c3.viz.r.items.0	qualquer uma em 1
+tr-logic.c3.viz.r.items.1	botão A OR botão B → luz
+tr-logic.c4.title	NAND: a porta universal
+tr-logic.c4.text	Qualquer circuito lógico, até um processador inteiro, pode ser construído só com portas NAND (uma AND seguida de uma NOT). Ela é barata de fabricar em silício, por isso está em todo lugar.
+tr-logic.c4.viz.steps.0	Portas NAND
+tr-logic.c4.viz.steps.1	Formam AND, OR, NOT
+tr-logic.c4.viz.steps.2	Formam somadores e memória
+tr-logic.c4.viz.steps.3	Formam um processador
+tr-logic.c5.title	XOR
+tr-logic.c5.text	A OR exclusiva dá 1 quando as entradas são diferentes. É usada para somar números binários, verificar paridade e em criptografia simples.
+tr-logic.c5.viz.items.0.a	0 XOR 0
+tr-logic.c5.viz.items.1.a	0 XOR 1
+tr-logic.c5.viz.items.2.a	1 XOR 0
+tr-logic.c5.viz.items.3.a	1 XOR 1
+tr-logic.c6.title	Somando com portas
+tr-logic.c6.text	Um meio-somador soma dois bits usando XOR (para a soma) e AND (para o "vai um"). Encadeie somadores completos e você consegue somar números de qualquer tamanho.
+tr-logic.c6.viz.steps.0	Bits A e B
+tr-logic.c6.viz.steps.1	XOR dá a soma
+tr-logic.c6.viz.steps.2	AND dá o "vai um"
+tr-logic.c6.viz.steps.3	Encadeie para números maiores
+tr-logic.c7.title	Flip-flops: memória feita de portas
+tr-logic.c7.text	Ligue a saída de duas portas uma na outra e o circuito se lembra do seu último estado. Isso é um flip-flop, a base dos registradores e da memória rápida.
+tr-logic.c7.viz.steps.0	Duas portas em laço cruzado
+tr-logic.c7.viz.steps.1	A saída realimenta
+tr-logic.c7.viz.steps.2	Guarda 0 ou 1
+tr-logic.c7.viz.steps.3	Um bit de memória
+tr-logic.c8.title	Clocks
+tr-logic.c8.text	Os circuitos digitais andam no ritmo de um sinal de clock que pulsa milhões ou bilhões de vezes por segundo. A cada pulso, os flip-flops capturam novos valores.
+tr-logic.c8.viz.items.0.v	16 MHz
+tr-logic.c8.viz.items.0.l	Arduino Uno
+tr-logic.c8.viz.items.1.v	240 MHz
+tr-logic.c8.viz.items.1.l	ESP32
+tr-logic.c8.viz.items.2.v	~4 GHz
+tr-logic.c8.viz.items.2.l	CPU de desktop
+tr-logic.c9.title	Truques bit a bit no código
+tr-logic.c9.text	Os programadores usam operações bit a bit para ligar, limpar e testar bits individuais, por exemplo em um registrador que controla pinos GPIO: valor | (1<<5) liga o bit 5.
+tr-logic.c9.viz.items.0.a	x | (1<<n)
+tr-logic.c9.viz.items.0.b	liga o bit n
+tr-logic.c9.viz.items.1.a	x & ~(1<<n)
+tr-logic.c9.viz.items.1.b	limpa o bit n
+tr-logic.c9.viz.items.2.a	x & (1<<n)
+tr-logic.c9.viz.items.2.b	testa o bit n
+tr-logic.c9.viz.items.3.a	x ^ (1<<n)
+tr-logic.c9.viz.items.3.b	inverte o bit n
+tr-memory.title	Memória e armazenamento
+tr-memory.summary	RAM, flash e EEPROM.
+tr-memory.q0.q	O que acontece com o conteúdo da RAM quando a energia cai?
+tr-memory.q0.o0	É salvo
+tr-memory.q0.o1	É perdido
+tr-memory.q0.o2	Vai para a flash
+tr-memory.q0.x	A RAM é volátil.
+tr-memory.q1.q	Por que não gravar na flash a cada segundo?
+tr-memory.q1.o0	É lento demais
+tr-memory.q1.o1	As células de flash se desgastam depois de muitos ciclos de apagamento
+tr-memory.q1.o2	Usa Wi-Fi
+tr-memory.q1.x	Resistência limitada a gravações.
+tr-memory.q2.q	O que é mais rápido?
+tr-memory.q2.o0	SSD
+tr-memory.q2.o1	RAM
+tr-memory.q2.o2	Registradores da CPU
+tr-memory.q2.x	Os registradores ficam dentro do processador.
+tr-memory.c0.title	RAM: rápida e esquecida
+tr-memory.c0.text	A RAM guarda os dados com que um programa está trabalhando no momento. É rápida, mas volátil: desligue a energia e tudo some.
+tr-memory.c0.viz.l.t	RAM
+tr-memory.c0.viz.l.items.0	rápida
+tr-memory.c0.viz.l.items.1	volátil
+tr-memory.c0.viz.l.items.2	dados em uso
+tr-memory.c0.viz.r.t	Flash
+tr-memory.c0.viz.r.items.0	mais lenta
+tr-memory.c0.viz.r.items.1	guarda dados sem energia
+tr-memory.c0.viz.r.items.2	programa e arquivos
+tr-memory.c1.title	SRAM e DRAM
+tr-memory.c1.text	A SRAM guarda cada bit em um flip-flop: rápida, usada em caches e na memória de microcontroladores. A DRAM guarda os bits como carga em capacitores minúsculos: mais densa e mais barata, usada na RAM dos computadores, mas precisa ser atualizada (refresh) o tempo todo.
+tr-memory.c1.viz.items.0.a	SRAM
+tr-memory.c1.viz.items.0.b	flip-flops, rápida, caches
+tr-memory.c1.viz.items.1.a	DRAM
+tr-memory.c1.viz.items.1.b	capacitores, densa, memória de PC
+tr-memory.c1.viz.items.2.a	refresh
+tr-memory.c1.viz.items.2.b	a DRAM se regrava milhares de vezes por segundo
+tr-memory.c2.title	Memória flash
+tr-memory.c2.text	A flash guarda dados sem energia prendendo carga em células isoladas. O programa do seu microcontrolador, SSDs, cartões SD e pen drives usam essa memória.
+tr-memory.c2.viz.root	Memória flash
+tr-memory.c2.viz.items.0	Programa do microcontrolador
+tr-memory.c2.viz.items.1	SSDs
+tr-memory.c2.viz.items.2	Cartões SD
+tr-memory.c2.viz.items.3	Pen drives
+tr-memory.c3.title	A flash se desgasta
+tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10.000 a 100.000 em chips pequenos. Gravar uma linha de log por segundo no mesmo lugar acaba com ela; o nivelamento de desgaste (wear levelling) distribui as gravações.
+tr-memory.c3.viz.items.0.w	gravar dados do sensor na flash a cada segundo
+tr-memory.c3.viz.items.0.r	mantenha na RAM e grave em lotes
+tr-memory.c3.viz.items.1.w	sempre o mesmo bloco
+tr-memory.c3.viz.items.1.r	use nivelamento de desgaste
+tr-memory.c4.title	EEPROM
+tr-memory.c4.text	A EEPROM consegue regravar bytes individuais e é ótima para configurações pequenas, como valores de calibração. No ESP32 ela é emulada na flash, com uma biblioteca que cuida disso.
+tr-memory.c4.viz.items.0	Valores de calibração
+tr-memory.c4.viz.items.1	Credenciais do Wi-Fi
+tr-memory.c4.viz.items.2	Contadores e configurações
+tr-memory.c4.viz.items.3	Grave só quando mudar
+tr-memory.c5.title	Memória no ESP32
+tr-memory.c5.text	Um ESP32 clássico tem cerca de 520 KB de SRAM e geralmente 4 MB de flash. As variantes com PSRAM acrescentam vários MB de RAM extra, úteis para câmeras e displays.
+tr-memory.c5.viz.unit	KB (aprox.)
+tr-memory.c5.viz.items.0.l	RAM do Arduino Uno
+tr-memory.c5.viz.items.1.l	SRAM do ESP32
+tr-memory.c5.viz.items.2.l	Flash do ESP32
+tr-memory.c5.viz.items.3.l	PSRAM
+tr-memory.c6.title	Stack e heap
+tr-memory.c6.text	Os programas usam duas áreas da RAM: a stack (pilha) para chamadas de função e variáveis locais, e a heap para a memória pedida durante a execução. Em dispositivos pequenos, fragmentar a heap com muitas strings pode travar o programa depois de horas.
+tr-memory.c6.viz.l.t	Stack
+tr-memory.c6.viz.l.items.0	automática
+tr-memory.c6.viz.l.items.1	chamadas de função
+tr-memory.c6.viz.l.items.2	rápida
+tr-memory.c6.viz.r.t	Heap
+tr-memory.c6.viz.r.items.0	pedida em execução
+tr-memory.c6.viz.r.items.1	pode fragmentar
+tr-memory.c6.viz.r.items.2	cuidado em chips pequenos
+tr-memory.c7.title	Hierarquia de armazenamento
+tr-memory.c7.text	Os computadores equilibram velocidade e tamanho: registradores e caches minúsculos e ultrarrápidos perto da CPU, depois a RAM, depois os SSDs, depois os discos rígidos ou a nuvem.
+tr-memory.c7.viz.items.0	Registradores
+tr-memory.c7.viz.items.1	Cache da CPU
+tr-memory.c7.viz.items.2	RAM
+tr-memory.c7.viz.items.3	SSD
+tr-memory.c7.viz.items.4	Disco rígido e nuvem
+tr-memory.c8.title	Cartões SD para registro de dados
+tr-memory.c8.text	Para registrar dados a longo prazo, um cartão SD via SPI oferece gigabytes de armazenamento. Grave em blocos, feche os arquivos direito e conte com a possibilidade de cartões baratos falharem um dia.
+tr-memory.c8.viz.items.0	Grave em blocos
+tr-memory.c8.viz.items.1	Descarregue ou feche os arquivos
+tr-memory.c8.viz.items.2	Use cartões de boa qualidade
+tr-memory.c8.viz.items.3	Mantenha uma cópia de segurança
+tr-memory.c9.title	Unidades de armazenamento
+tr-memory.c9.text	Um kilobyte são 1.000 bytes nas unidades do SI, mas os sistemas operacionais muitas vezes contam 1.024 (o correto seria kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
+tr-memory.c9.viz.items.0.a	1 KB
+tr-memory.c9.viz.items.0.b	1.000 bytes
+tr-memory.c9.viz.items.1.a	1 KiB
+tr-memory.c9.viz.items.1.b	1.024 bytes
+tr-memory.c9.viz.items.2.a	disco de 1 TB
+tr-memory.c9.viz.items.2.b	aparece como ~931 GiB
+tr-motors.title	Acionando motores
+tr-motors.summary	Pontes H, servos e motores de passo.
+tr-motors.q0.q	O que permite que um motor CC gire nos dois sentidos?
+tr-motors.q0.o0	Um diodo
+tr-motors.q0.o1	Uma ponte H
+tr-motors.q0.o2	Um capacitor
+tr-motors.q0.x	Ela inverte a corrente com quatro chaves.
+tr-motors.q1.q	Um pulso de servo de 1,5 ms geralmente significa…
+tr-motors.q1.o0	0°
+tr-motors.q1.o1	90° (centro)
+tr-motors.q1.o2	180°
+tr-motors.q1.x	De 1 ms a 2 ms corresponde a 0–180°.
+tr-motors.q2.q	Por que um ESP32 pode reiniciar quando um motor dá partida?
+tr-motors.q2.o0	Interferência do Wi-Fi
+tr-motors.q2.o1	Quedas na alimentação causadas pela corrente de partida do motor
+tr-motors.q2.o2	Só um bug de software
+tr-motors.q2.x	Use uma fonte separada e capacitores.
+tr-motors.c0.title	Nunca acione um motor direto de um pino
+tr-motors.c0.text	Um pequeno motor CC pode puxar centenas de miliampères, mais na partida, e gera ruído elétrico. Use sempre um driver: um transistor, um MOSFET ou um chip driver de motor, mais um diodo flyback.
+tr-motors.c0.viz.steps.0	Pino GPIO
+tr-motors.c0.viz.steps.1	Driver (MOSFET ou chip)
+tr-motors.c0.viz.steps.2	Motor com fonte própria
+tr-motors.c0.viz.steps.3	Terra em comum
+tr-motors.c1.title	Ponte H
+tr-motors.c1.text	Uma ponte H usa quatro chaves para inverter a corrente que passa por um motor, para que ele gire nos dois sentidos. Chips como o L298N, o DRV8833 ou o TB6612 fazem isso por você.
+tr-motors.c1.viz.l.t	Chaves A e D ligadas
+tr-motors.c1.viz.l.items.0	corrente num sentido
+tr-motors.c1.viz.l.items.1	para frente
+tr-motors.c1.viz.r.t	Chaves B e C ligadas
+tr-motors.c1.viz.r.items.0	corrente invertida
+tr-motors.c1.viz.r.items.1	para trás
+tr-motors.c2.title	Velocidade com PWM
+tr-motors.c2.text	Mande PWM para o driver do motor e o motor gira a uma velocidade definida pelo ciclo de trabalho. Frequências de vários kHz até mais de 20 kHz evitam aquele chiado audível.
+tr-motors.c2.viz.unit	% de velocidade (aprox.)
+tr-motors.c2.viz.items.0.l	25% de ciclo
+tr-motors.c2.viz.items.1.l	50% de ciclo
+tr-motors.c2.viz.items.2.l	75% de ciclo
+tr-motors.c2.viz.items.3.l	100% de ciclo
+tr-motors.c3.title	Corrente de stall
+tr-motors.c3.text	Quando um motor está travado ou dando partida, ele puxa a corrente de stall (rotor bloqueado), muitas vezes 5–10 vezes a corrente em funcionamento. Dimensione o driver e a fonte para ela.
+tr-motors.c3.viz.unit	ampères (ex.: motor pequeno)
+tr-motors.c3.viz.items.0.l	Girando
+tr-motors.c3.viz.items.1.l	Partida
+tr-motors.c3.viz.items.2.l	Travado
+tr-motors.c4.title	Servos
+tr-motors.c4.text	Um servo de modelismo tem motor, caixa de engrenagens e sensor de posição em uma só caixa. Você envia um pulso a cada 20 ms; a largura dele, de 1 a 2 ms, define o ângulo de 0° a 180°.
+tr-motors.c4.viz.unit	ms
+tr-motors.c5.title	Motores de passo
+tr-motors.c5.text	Um motor de passo se move em passos fixos, normalmente 200 por volta (1,8° cada). Drivers como o A4988 ou o TMC2209 recebem pulsos de passo e direção e podem fazer micropasso para um movimento mais suave.
+tr-motors.c5.viz.f	passos por mm = (passos/volta × micropassos) ÷ mm por volta
+tr-motors.c5.viz.items.0.m	passos/volta
+tr-motors.c5.viz.items.1.m	micropassos
+tr-motors.c5.viz.items.2.s	8 mm
+tr-motors.c5.viz.items.2.m	fuso → 400 passos/mm
+tr-motors.c6.title	Motores brushless
+tr-motors.c6.text	Os motores CC sem escovas (brushless), de drones, ventiladores e bicicletas elétricas, precisam de um controlador eletrônico de velocidade (ESC) que chaveia três fases em sequência. São eficientes e duráveis.
+tr-motors.c6.viz.steps.0	Sinal do controlador
+tr-motors.c6.viz.steps.1	ESC chaveia 3 fases
+tr-motors.c6.viz.steps.2	Campo girante
+tr-motors.c6.viz.steps.3	O motor gira
+tr-motors.c7.title	Fontes separadas
+tr-motors.c7.text	Alimente os motores com uma fonte própria, não pelo regulador de 3,3 V do microcontrolador, e ligue os terras entre si. Coloque capacitores perto do driver do motor para absorver picos.
+tr-motors.c7.viz.items.0.w	motor no pino 3,3 V do ESP32
+tr-motors.c7.viz.items.0.r	fonte separada para o motor, terra comum

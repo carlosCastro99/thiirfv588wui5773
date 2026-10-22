@@ -958,3 +958,272 @@ ai-rl.c4.title	Self-play
 ai-rl.c4.text	Um agente pode ser o seu próprio adversário. Cada nova versão joga contra versões mais antigas, melhorando passo a passo sem nenhuma partida humana para copiar. Ele pode até descobrir estratégias que os humanos nunca tentaram.
 ai-rl.c4.viz.steps.0	Jogar contra si mesmo
 ai-rl.c4.viz.steps.1	Aprender com os resultados
+ai-rl.c4.viz.steps.2	Virar uma versão mais forte
+ai-rl.c4.viz.steps.3	Jogar de novo
+ai-rl.c5.title	Primeiro a simulação
+ai-rl.c5.text	Robôs aprendendo por tentativa e erro acabariam se quebrando. Por isso eles treinam num simulador físico, milhões de vezes mais rápido que a vida real, e depois transferem o aprendizado para a máquina real.
+ai-rl.c5.viz.steps.0	Treinar em simulação
+ai-rl.c5.viz.steps.1	Adicionar variações aleatórias
+ai-rl.c5.viz.steps.2	Testar no robô real
+ai-rl.c5.viz.steps.3	Ajuste fino
+ai-rl.c6.title	Reward hacking
+ai-rl.c6.text	Os agentes otimizam exatamente o que você recompensa, não o que você quis dizer. Certa vez, um agente de corrida de barcos aprendeu a girar em círculos coletando pontos em vez de terminar a corrida.\n\nCriar recompensas que captem o que você realmente quer é surpreendentemente difícil.
+ai-rl.c6.viz.items.0.w	recompensar pontos coletados
+ai-rl.c6.viz.items.0.r	recompensar terminar a corrida
+ai-rl.c6.viz.items.1.w	recompensar "zero reclamações"
+ai-rl.c6.viz.items.1.r	recompensar problemas resolvidos
+ai-rl.c7.title	RL no mundo real
+ai-rl.c7.text	Fora dos jogos, o RL já foi usado para reduzir a energia de refrigeração de data centers, controlar braços robóticos, otimizar o layout de chips e ajustar estratégias de trading ou de preços, geralmente com limites de segurança rígidos.
+ai-rl.c7.viz.items.0	Refrigeração de data centers
+ai-rl.c7.viz.items.1	Controle de robôs
+ai-rl.c7.viz.items.2	Planta de chips
+ai-rl.c7.viz.items.3	Tempo de semáforos
+ai-rl.c7.viz.items.4	Sequências de recomendação
+ai-rl.c8.title	RL com feedback humano
+ai-rl.c8.text	Os chatbots são refinados com uma forma de RL: pessoas comparam pares de respostas, um modelo de recompensa aprende as preferências delas e o chatbot é treinado para produzir respostas que esse modelo avalia bem.
+ai-rl.c8.viz.steps.0	Modelo escreve duas respostas
+ai-rl.c8.viz.steps.1	Pessoas escolhem a melhor
+ai-rl.c8.viz.steps.2	Modelo de recompensa aprende preferências
+ai-rl.c8.viz.steps.3	Chatbot treinado para pontuar mais
+ai-rl.c9.title	Por que o RL é difícil
+ai-rl.c9.text	Ele precisa de muitas tentativas, de uma recompensa clara e de um lugar seguro para errar. É por isso que prospera em jogos e simuladores e é usado com cuidado no mundo físico.
+ai-rl.c9.viz.items.0	Exige milhões de tentativas
+ai-rl.c9.viz.items.1	A recompensa deve ser bem pensada
+ai-rl.c9.viz.items.2	As falhas precisam ser seguras
+ai-rl.c9.viz.items.3	Os resultados podem ser instáveis
+ai-history.title	Uma breve história da IA
+ai-history.summary	Da pergunta de Turing aos assistentes de hoje, com dois invernos no meio do caminho.
+ai-history.q0.q	Quem propôs o "jogo da imitação" em 1950?
+ai-history.q0.o0	John McCarthy
+ai-history.q0.o1	Alan Turing
+ai-history.q0.o2	Geoffrey Hinton
+ai-history.q0.x	O artigo de Turing de 1950 apresentou o que hoje chamamos de teste de Turing.
+ai-history.q1.q	Qual invenção de 2017 está na base dos grandes modelos de linguagem atuais?
+ai-history.q1.o0	A GPU
+ai-history.q1.o1	A arquitetura Transformer
+ai-history.q1.o2	Os sistemas especialistas
+ai-history.q1.x	O artigo "Attention Is All You Need" a apresentou.
+ai-history.q2.q	O que causou os invernos da IA?
+ai-history.q2.o0	Proibições de hardware
+ai-history.q2.o1	As promessas foram mais rápidas que os resultados, e o financiamento foi cortado
+ai-history.q2.o2	Falta de eletricidade
+ai-history.q2.x	A decepção levou a cortes de financiamento.
+ai-history.c0.title	As máquinas podem pensar?
+ai-history.c0.text	Em 1950, Alan Turing propôs um teste prático: se um juiz conversando por texto não consegue distinguir uma máquina de uma pessoa, talvez possamos dizer que a máquina pensa. Ele o chamou de jogo da imitação; nós o chamamos de teste de Turing.
+ai-history.c0.viz.events.0.l	Turing descreve uma máquina universal
+ai-history.c0.viz.events.1.l	o jogo da imitação
+ai-history.c0.viz.events.2.l	surge o nome "inteligência artificial"
+ai-history.c1.title	Dartmouth, 1956
+ai-history.c1.text	Um workshop de verão no Dartmouth College deu nome à área. Os organizadores acreditavam que um pequeno grupo poderia fazer avanços significativos em inteligência de máquina em um único verão. Levou um pouco mais.
+ai-history.c1.viz.items.0.l	IA ganha nome em Dartmouth
+ai-history.c1.viz.items.1.l	pesquisadores no centro da proposta
+ai-history.c1.viz.items.2.l	anos depois, ainda em andamento
+ai-history.c2.title	IA simbólica
+ai-history.c2.text	A IA dos primeiros tempos tentou escrever a inteligência como regras e lógica: se isto, então aquilo. Ela resolvia quebra-cabeças e provava teoremas, mas tinha dificuldade com tarefas bagunçadas do mundo real, como reconhecer um rosto ou entender a fala.
+ai-history.c2.viz.l.t	IA simbólica
+ai-history.c2.viz.l.items.0	regras escritas à mão
+ai-history.c2.viz.l.items.1	raciocínio claro
+ai-history.c2.viz.l.items.2	frágil com dados bagunçados
+ai-history.c2.viz.r.t	Aprendizado de máquina
+ai-history.c2.viz.r.items.0	aprende com exemplos
+ai-history.c2.viz.r.items.1	lida com a bagunça
+ai-history.c2.viz.r.items.2	mais difícil de explicar
+ai-history.c3.title	Os invernos da IA
+ai-history.c3.text	Duas vezes, grandes promessas encontraram resultados decepcionantes e o financiamento secou: em meados dos anos 1970 e de novo no fim dos anos 1980, quando os "sistemas especialistas" baseados em regras se mostraram caros de manter.
+ai-history.c3.viz.events.0.l	primeira tradução automática decepciona
+ai-history.c3.viz.events.1.l	primeiro inverno da IA
+ai-history.c3.viz.events.2.l	boom dos sistemas especialistas
+ai-history.c3.viz.events.3.l	segundo inverno
+ai-history.c3.viz.events.4.l	Deep Blue reacende o interesse
+ai-history.c4.title	Sistemas especialistas
+ai-history.c4.text	Nos anos 1980, as empresas construíram sistemas especialistas: milhares de regras extraídas de especialistas humanos, para tarefas como configurar computadores ou diagnosticar infecções. Funcionavam em áreas estreitas, mas cada situação nova exigia regras novas.
+ai-history.c4.viz.steps.0	Entrevistar especialistas
+ai-history.c4.viz.steps.1	Escrever milhares de regras
+ai-history.c4.viz.steps.2	Funciona numa área estreita
+ai-history.c4.viz.steps.3	Quebra com casos novos
+ai-history.c5.title	A virada estatística
+ai-history.c5.text	A partir dos anos 1990, os pesquisadores passaram cada vez mais a deixar as máquinas aprenderem com dados em vez de escrever regras. Filtros de spam, o ranqueamento de buscas e o reconhecimento de fala melhoraram de forma constante com mais dados e computadores mais rápidos.
+ai-history.c5.viz.steps.0	Mais dados online
+ai-history.c5.viz.steps.1	Computadores mais rápidos
+ai-history.c5.viz.steps.2	Aprendizado estatístico
+ai-history.c5.viz.steps.3	Ganhos práticos constantes
+ai-history.c6.title	A revolução do deep learning
+ai-history.c6.text	Três ingredientes se juntaram por volta de 2012: enormes conjuntos de dados rotulados, computação barata em GPU e truques melhores para treinar redes neurais profundas. O reconhecimento de imagens, depois a fala, depois a tradução melhoraram drasticamente.
+ai-history.c6.viz.items.0	Boom do deep learning
+ai-history.c6.viz.items.1	Algoritmos melhores
+ai-history.c6.viz.items.2	Computação em GPU
+ai-history.c6.viz.items.3	Big data
+ai-history.c7.title	O Transformer, 2017
+ai-history.c7.text	Um artigo do Google intitulado "Attention Is All You Need" apresentou a arquitetura Transformer. Ela processa sequências inteiras de uma vez e deixa cada palavra prestar atenção a todas as outras. Quase todos os grandes modelos de linguagem desde então são construídos sobre ela.
+ai-history.c7.viz.events.0.l	Artigo do Transformer
+ai-history.c7.viz.events.1.l	BERT e GPT-1
+ai-history.c7.viz.events.2.l	GPT-3
+ai-history.c7.viz.events.3.l	ChatGPT
+ai-history.c7.viz.events.4.l	GPT-4 e Claude
+ai-history.c8.title	O lançamento do ChatGPT
+ai-history.c8.text	O ChatGPT foi lançado em 30 de novembro de 2022 e, segundo relatos, chegou a cerca de 100 milhões de usuários em dois meses, tornando-se um dos apps de consumo que mais rápido cresceram na história.
+ai-history.c8.viz.items.0.v	30 nov 2022
+ai-history.c8.viz.items.0.l	lançamento
+ai-history.c8.viz.items.1.v	~100 mi
+ai-history.c8.viz.items.1.l	usuários em cerca de dois meses
+ai-history.c9.title	Lições da história
+ai-history.c9.text	A IA foi repetidamente superestimada no curto prazo e subestimada no longo prazo. O progresso vem aos saltos quando dados, poder computacional e ideias novas se alinham.
+ai-history.c9.viz.items.0	O hype de curto prazo costuma decepcionar
+ai-history.c9.viz.items.1	O progresso de longo prazo é real
+ai-history.c9.viz.items.2	Dados e computação geram saltos
+ai-history.c9.viz.items.3	Ideias novas destravam velhos problemas
+ai-hardware.title	O hardware por trás da IA
+ai-hardware.summary	GPUs, chips, memória e por que treinar custa tão caro.
+ai-hardware.q0.q	Usar um modelo treinado para responder perguntas se chama…
+ai-hardware.q0.o0	Treino
+ai-hardware.q0.o1	Inferência
+ai-hardware.q0.o2	Quantização
+ai-hardware.q0.x	A inferência é rodar o modelo; o treino é construí-lo.
+ai-hardware.q1.q	O que a quantização em 4 bits faz?
+ai-hardware.q1.o0	Deixa o modelo mais inteligente
+ai-hardware.q1.o1	Armazena os pesos com menos bits, para que ele fique menor e mais rápido
+ai-hardware.q1.o2	Adiciona mais parâmetros
+ai-hardware.q1.x	Menos bits por peso reduzem o uso de memória.
+ai-hardware.q2.q	Por que as GPUs são boas para IA?
+ai-hardware.q2.o0	Têm mais slots de RAM
+ai-hardware.q2.o1	Fazem milhares de cálculos idênticos em paralelo
+ai-hardware.q2.o2	Rodam o Windows mais rápido
+ai-hardware.q2.x	As redes neurais são, em grande parte, contas com matrizes em paralelo.
+ai-hardware.c0.title	Treino vs. inferência
+ai-hardware.c0.text	O treino é aprender os pesos: lento, feito uma vez (ou de vez em quando) em clusters enormes. A inferência é usar o modelo treinado para responder: rápida, feita milhões de vezes, muitas vezes em hardware menor.
+ai-hardware.c0.viz.l.t	Treino
+ai-hardware.c0.viz.l.items.0	semanas em milhares de GPUs
+ai-hardware.c0.viz.l.items.1	muito caro
+ai-hardware.c0.viz.l.items.2	feito raramente
+ai-hardware.c0.viz.r.t	Inferência
+ai-hardware.c0.viz.r.items.0	milissegundos por resposta
+ai-hardware.c0.viz.r.items.1	roda o tempo todo
+ai-hardware.c0.viz.r.items.2	custo por consulta importa
+ai-hardware.c1.title	GPUs e contas com matrizes
+ai-hardware.c1.text	As redes neurais passam a maior parte do tempo multiplicando grandes grades de números. As GPUs têm milhares de núcleos que fazem o mesmo cálculo em paralelo, o que as torna dezenas de vezes mais rápidas que as CPUs nesse trabalho.
+ai-hardware.c1.viz.unit	velocidade relativa (ilustrativa)
+ai-hardware.c1.viz.items.0.l	CPU
+ai-hardware.c1.viz.items.1.l	GPU
+ai-hardware.c2.title	Chips especializados em IA
+ai-hardware.c2.text	Além das GPUs, as empresas constroem chips feitos só para redes neurais: as TPUs do Google, os aceleradores nos celulares (neural engines) e pequenos chips de borda como a Coral TPU, usada para detecção em câmeras.
+ai-hardware.c2.viz.root	Chips de IA
+ai-hardware.c2.viz.items.0	GPUs (Nvidia, AMD)
+ai-hardware.c2.viz.items.1	TPUs (Google)
+ai-hardware.c2.viz.items.2	Neural engines de celulares
+ai-hardware.c2.viz.items.3	Aceleradores de borda
+ai-hardware.c3.title	A memória costuma ser o gargalo
+ai-hardware.c3.text	Os pesos de um modelo precisam ficar numa memória rápida enquanto ele roda. Modelos grandes precisam de muita memória; mover dados para dentro e para fora dela muitas vezes limita a velocidade mais do que o poder de cálculo bruto.
+ai-hardware.c3.viz.steps.0	Pesos na memória da GPU
+ai-hardware.c3.viz.steps.1	Lidos a cada token
+ai-hardware.c3.viz.steps.2	Banda de memória limita a velocidade
+ai-hardware.c4.title	FLOPs
+ai-hardware.c4.text	O poder computacional é medido em FLOPs: operações de ponto flutuante. Treinar um modelo grande exige um número enorme delas, muitas vezes mais de 10²⁴ operações.
+ai-hardware.c4.viz.f	FLOP/s = operações por segundo
+ai-hardware.c4.viz.items.0.s	tera
+ai-hardware.c4.viz.items.0.m	um trilhão por segundo
+ai-hardware.c4.viz.items.1.s	peta
+ai-hardware.c4.viz.items.1.m	mil trilhões
+ai-hardware.c4.viz.items.2.s	exa
+ai-hardware.c4.viz.items.2.m	um milhão de trilhões
+ai-hardware.c5.title	Quantização
+ai-hardware.c5.text	Os pesos podem ser armazenados com menos bits: 8 ou 4 bits em vez de 16. O modelo fica de 2 a 4 vezes menor e mais rápido, geralmente com uma perda de qualidade pequena. É assim que modelos grandes rodam em notebooks e celulares.
+ai-hardware.c5.viz.unit	GB para um modelo 7B
+ai-hardware.c5.viz.items.0.l	16 bits
+ai-hardware.c5.viz.items.1.l	8 bits
+ai-hardware.c5.viz.items.2.l	4 bits
+ai-hardware.c6.title	Consumo de energia
+ai-hardware.c6.text	Os data centers já consomem uma fatia considerável da eletricidade em alguns países, e a IA está aumentando essa demanda. Os ganhos de eficiência por cálculo são grandes, mas o consumo total continua subindo à medida que a IA se espalha.
+ai-hardware.c6.viz.items.0	Treino: grande custo de energia pontual
+ai-hardware.c6.viz.items.1	Inferência: pouco por consulta, enorme no total
+ai-hardware.c6.viz.items.2	A refrigeração aumenta a conta
+ai-hardware.c6.viz.items.3	Localização e energia limpa importam
+ai-hardware.c7.title	Nuvem vs. local
+ai-hardware.c7.text	Você pode alugar IA por chamada na nuvem ou rodar modelos no seu próprio hardware. A nuvem oferece os maiores modelos sem custo inicial; o local oferece privacidade, custo previsível e uso offline.
+ai-hardware.c7.viz.l.t	Nuvem
+ai-hardware.c7.viz.l.items.0	os maiores modelos
+ai-hardware.c7.viz.l.items.1	paga pelo uso
+ai-hardware.c7.viz.l.items.2	dados saem da sua rede
+ai-hardware.c7.viz.r.t	Local
+ai-hardware.c7.viz.r.items.0	dados ficam em casa
+ai-hardware.c7.viz.r.items.1	custo fixo
+ai-hardware.c7.viz.r.items.2	modelos menores
+ai-hardware.c8.title	Escala
+ai-hardware.c8.text	Os pesquisadores descobriram que os modelos melhoram de forma previsível quando se aumentam juntos os dados, os parâmetros e a computação. Essas "leis de escala" justificaram a construção de clusters cada vez maiores.
+ai-hardware.c8.viz.steps.0	Mais dados
+ai-hardware.c8.viz.steps.1	Modelo maior
+ai-hardware.c8.viz.steps.2	Mais computação
+ai-hardware.c8.viz.steps.3	Erro menor, previsivelmente
+ai-hardware.c9.title	Cadeia de suprimentos
+ai-hardware.c9.text	A maioria dos chips de IA avançados é projetada nos EUA e fabricada pela TSMC em Taiwan, com máquinas de litografia da ASML, da Holanda. Essa concentração faz dos chips uma questão estratégica e geopolítica.
+ai-hardware.c9.viz.steps.0	Projeto: Nvidia, AMD, Google
+ai-hardware.c9.viz.steps.1	Fabricação: TSMC, Taiwan
+ai-hardware.c9.viz.steps.2	Máquinas: ASML, Holanda
+ai-hardware.c9.viz.steps.3	Data centers no mundo todo
+ai-bias.title	Viés e justiça
+ai-bias.summary	Como os modelos herdam injustiças dos dados, e o que fazer a respeito.
+ai-bias.q0.q	Por que apagar a coluna "gênero" não basta para eliminar o viés de gênero?
+ai-bias.q0.o0	Sempre basta
+ai-bias.q0.o1	Outras features podem funcionar como substitutas (proxies) do gênero
+ai-bias.q0.o2	Os modelos não leem colunas
+ai-bias.q0.x	Nomes, escolas ou pausas na carreira podem revelá-lo indiretamente.
+ai-bias.q1.q	Um modelo tem 95% de acurácia no geral. O que você deve verificar em seguida?
+ai-bias.q1.o0	Nada
+ai-bias.q1.o1	A acurácia separada por grupo
+ai-bias.q1.o2	A cor do dashboard
+ai-bias.q1.x	As médias podem esconder resultados ruins para alguns grupos.
+ai-bias.q2.q	Pelo AI Act da UE, a triagem de currículos para contratação é…
+ai-bias.q2.o0	Proibida
+ai-bias.q2.o1	Um uso de alto risco, com obrigações extras
+ai-bias.q2.o2	Não regulamentada
+ai-bias.q2.x	As decisões de emprego estão listadas como de alto risco.
+ai-bias.c0.title	Os modelos aprendem o nosso passado
+ai-bias.c0.text	Um modelo treinado com decisões históricas aprende os padrões delas, inclusive os injustos. Se as contratações do passado favoreciam um grupo, um modelo treinado com elas também vai favorecer.
+ai-bias.c0.viz.steps.0	Decisões históricas enviesadas
+ai-bias.c0.viz.steps.1	Dados de treino
+ai-bias.c0.viz.steps.2	Modelo copia o padrão
+ai-bias.c0.viz.steps.3	Decisões enviesadas em escala
+ai-bias.c1.title	Um exemplo real
+ai-bias.c1.text	A Amazon teria abandonado, por volta de 2018, uma ferramenta experimental de triagem de currículos depois de descobrir que ela penalizava currículos com a palavra "women's" ("feminino"), porque tinha aprendido com uma década de contratações majoritariamente masculinas.
+ai-bias.c1.viz.items.0.w	"clube de xadrez feminino" com nota menor
+ai-bias.c1.viz.items.0.r	remover sinais substitutos e testar por grupo
+ai-bias.c2.title	Proxies (variáveis substitutas)
+ai-bias.c2.text	Remover um campo sensível como o gênero não basta. Outros campos podem funcionar como proxies: primeiros nomes, certas escolas, CEPs, histórico de meio período. O modelo pode redescobrir o atributo sensível indiretamente.
+ai-bias.c2.viz.items.0.a	CEP
+ai-bias.c2.viz.items.0.b	pode revelar etnia ou renda
+ai-bias.c2.viz.items.1.a	Primeiro nome
+ai-bias.c2.viz.items.1.b	pode revelar o gênero
+ai-bias.c2.viz.items.2.a	Pausas na carreira
+ai-bias.c2.viz.items.2.b	podem revelar maternidade/paternidade
+ai-bias.c3.title	Meça o desempenho por grupo
+ai-bias.c3.text	A acurácia geral pode esconder grandes diferenças. Separe sempre os resultados: o modelo funciona igualmente bem para mulheres e homens, clientes mais velhos e mais jovens, regiões diferentes?
+ai-bias.c3.viz.unit	% de erro por grupo (ilustrativo)
+ai-bias.c3.viz.items.0.l	Grupo A
+ai-bias.c3.viz.items.1.l	Grupo B
+ai-bias.c3.viz.items.2.l	Grupo C
+ai-bias.c4.title	Diferentes definições de justo
+ai-bias.c4.text	As taxas de aprovação devem ser iguais entre os grupos? Ou as taxas de erro? Ou pessoas igualmente qualificadas devem ter resultados iguais? Essas definições podem entrar em conflito matematicamente, então você precisa escolher de forma deliberada.
+ai-bias.c4.viz.items.0	Taxas de aprovação iguais
+ai-bias.c4.viz.items.1	Taxas de erro iguais
+ai-bias.c4.viz.items.2	Tratamento igual para pessoas igualmente qualificadas
+ai-bias.c4.viz.items.3	Escolha e documente a sua definição
+ai-bias.c5.title	Ciclos de retroalimentação
+ai-bias.c5.text	Previsões enviesadas podem criar os dados que as confirmam. Se um sistema manda mais fiscais para uma área, encontra mais problemas lá, o que deixa a próxima previsão ainda mais distorcida.
+ai-bias.c5.viz.steps.0	Previsão direciona a atenção
+ai-bias.c5.viz.steps.1	Mais problemas achados ali
+ai-bias.c5.viz.steps.2	Dados parecem confirmar
+ai-bias.c5.viz.steps.3	Previsão mais forte
+ai-bias.c6.title	Corrigindo o viés
+ai-bias.c6.text	Você pode reequilibrar os dados de treino, remover features substitutas, ajustar limiares por caso de uso e manter uma pessoa no circuito para decisões de alto impacto. E testar de novo depois de cada mudança.
+ai-bias.c6.viz.items.0	Auditar os dados de treino
+ai-bias.c6.viz.items.1	Remover ou limitar proxies
+ai-bias.c6.viz.items.2	Testar resultados por grupo
+ai-bias.c6.viz.items.3	Revisão humana em decisões importantes
+ai-bias.c6.viz.items.4	Monitorar após o lançamento
+ai-bias.c7.title	O viés não é só sobre pessoas
+ai-bias.c7.text	Os dados podem ser distorcidos de muitas formas: sensores de uma única fábrica, preços de um único mercado, fotos de uma única estação. Qualquer diferença entre os dados de treino e a realidade vira um ponto cego.
+ai-bias.c7.viz.l.t	Viés social
+ai-bias.c7.viz.l.items.0	gênero, idade, etnia
+ai-bias.c7.viz.l.items.1	risco legal e ético
+ai-bias.c7.viz.r.t	Viés nos dados
+ai-bias.c7.viz.r.items.0	um local, uma estação
+ai-bias.c7.viz.r.items.1	quedas silenciosas

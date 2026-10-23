@@ -46,7 +46,7 @@ mo-basics.c2.viz.r.items.1	o euro e o dólar de hoje
 mo-basics.c3.title	A maior parte do dinheiro é digital
 mo-basics.c3.text	Cédulas e moedas físicas são uma pequena parte da oferta de dinheiro. A maior parte existe como números em contas bancárias, criados quando os bancos emprestam.
 mo-basics.c3.viz.unit	% do dinheiro na zona do euro (aprox.)
-mo-basics.c3.viz.items.0.l	Dinheiro vivo
+mo-basics.c3.viz.items.0.l	Em espécie
 mo-basics.c3.viz.items.1.l	Depósitos bancários
 mo-basics.c4.title	Bancos centrais
 mo-basics.c4.text	O Banco Central Europeu define as taxas de juros da zona do euro, buscando uma inflação próxima de 2% ao ano. O Banco de Portugal faz parte desse sistema.
@@ -124,13 +124,13 @@ mo-budget.c1.viz.items.2.l	Poupança e dívidas
 mo-budget.c2.title	Necessidades vs desejos
 mo-budget.c2.text	Necessidades são o que você precisa pagar (aluguel, comida, transporte, contas). Desejos deixam a vida melhor, mas são opcionais. Muitas coisas têm uma parte necessidade e uma parte desejo.
 mo-budget.c2.viz.items.0.a	Aluguel
-mo-budget.c2.viz.items.0.b	necessidade
+mo-budget.c2.viz.items.0.b	essencial
 mo-budget.c2.viz.items.1.a	Mercado
-mo-budget.c2.viz.items.1.b	necessidade
+mo-budget.c2.viz.items.1.b	essencial
 mo-budget.c2.viz.items.2.a	Restaurante
 mo-budget.c2.viz.items.2.b	desejo
 mo-budget.c2.viz.items.3.a	Celular
-mo-budget.c2.viz.items.3.b	necessidade, mas o último modelo é desejo
+mo-budget.c2.viz.items.3.b	essencial, mas o último modelo é desejo
 mo-budget.c3.title	Reserva de emergência
 mo-budget.c3.text	Mantenha de três a seis meses de gastos essenciais numa conta de poupança com acesso fácil. Ela transforma uma crise, como perder o emprego ou o carro quebrar, num simples incômodo.
 mo-budget.c3.viz.items.0.v	3–6 meses
@@ -165,7 +165,7 @@ mo-budget.c7.viz.items.0.w	"É bônus, então posso torrar"
 mo-budget.c7.viz.items.0.r	"Um euro é um euro: isso cabe no meu plano?"
 mo-budget.c8.title	Inflação do estilo de vida
 mo-budget.c8.text	Quando o salário sobe, os gastos tendem a subir junto. Poupar metade de cada aumento deixa seu padrão de vida crescer enquanto a poupança cresce mais rápido.
-mo-budget.c8.viz.steps.0	Aumento de salário
+mo-budget.c8.viz.steps.0	Aumento salarial
 mo-budget.c8.viz.steps.1	Poupe metade
 mo-budget.c8.viz.steps.2	Aproveite a outra metade
 mo-budget.c8.viz.steps.3	Taxa de poupança sobe
@@ -198,3 +198,233 @@ mo-compound.c0.viz.l.items.0	juros só sobre o depósito
 mo-compound.c0.viz.l.items.1	linha reta
 mo-compound.c0.viz.r.t	Compostos
 mo-compound.c0.viz.r.items.0	juros sobre juros também
+mo-compound.c0.viz.r.items.1	curva para cima
+mo-compound.c1.title	A fórmula
+mo-compound.c1.text	Depois de n anos, o dinheiro cresce pelo fator (1 + r) a cada ano. Pequenas diferenças em r ou n fazem diferenças enormes.
+mo-compound.c1.formula	A = P(1 + r)ⁿ
+mo-compound.c1.viz.f	A = P(1 + r)ⁿ
+mo-compound.c1.viz.items.0.s	A
+mo-compound.c1.viz.items.0.m	valor final
+mo-compound.c1.viz.items.1.s	P
+mo-compound.c1.viz.items.1.m	valor inicial
+mo-compound.c1.viz.items.2.s	r
+mo-compound.c1.viz.items.2.m	retorno anual
+mo-compound.c1.viz.items.3.s	n
+mo-compound.c1.viz.items.3.m	anos
+mo-compound.c2.title	€1.000 a 5%
+mo-compound.c2.text	Depois de 10 anos: €1.629. Depois de 20: €2.653. Depois de 40: €7.040. A maior parte do crescimento vem no final.
+mo-compound.c2.viz.items.0.l	Início
+mo-compound.c2.viz.items.1.l	10 anos
+mo-compound.c2.viz.items.2.l	20 anos
+mo-compound.c2.viz.items.3.l	40 anos
+mo-compound.c3.title	O tempo vence o valor
+mo-compound.c3.text	Começar cedo importa mais do que investir muito. Quem investe dos 25 aos 35 e para pode terminar com mais do que quem investe dos 35 aos 65, com o mesmo retorno.
+mo-compound.c3.viz.l.t	Começa cedo
+mo-compound.c3.viz.l.items.0	€2.000 por ano dos 25 aos 35
+mo-compound.c3.viz.l.items.1	depois para
+mo-compound.c3.viz.r.t	Começa tarde
+mo-compound.c3.viz.r.items.0	€2.000 por ano dos 35 aos 65
+mo-compound.c3.viz.r.items.1	aplica três vezes mais
+mo-compound.c4.title	Dívida que se compõe
+mo-compound.c4.text	Na dívida, os juros compostos jogam contra você. O saldo do cartão de crédito pode cobrar 15–20% ao ano ou mais, dobrando em uns quatro ou cinco anos se não for pago.
+mo-compound.c4.viz.unit	% ao ano (típico)
+mo-compound.c4.viz.items.0.l	Poupança
+mo-compound.c4.viz.items.1.l	Financ. imóvel
+mo-compound.c4.viz.items.2.l	Financ. carro
+mo-compound.c4.viz.items.3.l	Cartão de crédito
+mo-compound.c5.title	As taxas importam
+mo-compound.c5.text	Uma taxa anual de 1% parece pouca coisa, mas também se compõe. Em 30 anos, ela pode comer cerca de um quarto do seu montante final.
+mo-compound.c5.viz.unit	€ após 30 anos, €10.000 a 6%
+mo-compound.c5.viz.items.0.l	Sem taxa
+mo-compound.c5.viz.items.1.l	Taxa de 1%
+mo-compound.c6.title	Nominal vs real
+mo-compound.c6.text	Um retorno de 5% com inflação de 3% dá só cerca de 2% de crescimento real no poder de compra. Sempre compare o retorno com a inflação.
+mo-compound.c6.viz.f	real ≈ nominal − inflação
+mo-compound.c6.viz.items.0.s	nominal
+mo-compound.c6.viz.items.0.m	retorno anunciado
+mo-compound.c6.viz.items.1.s	inflação
+mo-compound.c6.viz.items.1.m	alta de preços
+mo-compound.c6.viz.items.2.s	real
+mo-compound.c6.viz.items.2.m	ganho de poder de compra
+mo-compound.c7.title	Frase do Einstein?
+mo-compound.c7.text	"Os juros compostos são a oitava maravilha do mundo" costuma ser atribuída a Einstein, mas não há provas de que ele tenha dito isso. A matemática é real de qualquer jeito.
+mo-compound.c7.viz.items.0.w	Einstein chamou de oitava maravilha
+mo-compound.c7.viz.items.0.r	Não há provas de que ele disse isso
+mo-compound.c8.title	Aportes regulares
+mo-compound.c8.text	Aplicar um valor fixo todo mês, em vez de tudo de uma vez, suaviza os altos e baixos do mercado. Isso se chama preço médio (euro-cost averaging).
+mo-compound.c8.viz.steps.0	Mesmo valor todo mês
+mo-compound.c8.viz.steps.1	Compra mais com preço baixo
+mo-compound.c8.viz.steps.2	Menos com preço alto
+mo-compound.c8.viz.steps.3	Preço médio mais suave
+mo-compound.c9.title	€100 por mês
+mo-compound.c9.text	Investindo €100 por mês a 5% ao ano durante 30 anos: você aplica €36.000, e isso cresce para cerca de €83.000.
+mo-compound.c9.viz.items.0.l	Aplicado
+mo-compound.c9.viz.items.1.l	Valor final
+mo-invest.title	Básico de investimentos
+mo-invest.summary	Ações, títulos, fundos e risco.
+mo-invest.q0.q	O que é uma ação?
+mo-invest.q0.o0	Um empréstimo a uma empresa
+mo-invest.q0.o1	Um pedacinho da empresa
+mo-invest.q0.o2	Uma conta de poupança
+mo-invest.q0.x	Os donos podem receber dividendos.
+mo-invest.q1.q	Por que diversificar?
+mo-invest.q1.o0	Para garantir lucro
+mo-invest.q1.o1	Para reduzir o estrago de qualquer falha isolada
+mo-invest.q1.o2	Para pagar menos impostos
+mo-invest.q1.x	Não coloque todos os ovos na mesma cesta.
+mo-invest.c0.title	Poupar vs investir
+mo-invest.c0.text	Poupar mantém o dinheiro seguro no curto prazo. Investir é comprar ativos que podem crescer no longo prazo, com o risco de perder valor no caminho.
+mo-invest.c0.viz.l.t	Poupar
+mo-invest.c0.viz.l.items.0	seguro
+mo-invest.c0.viz.l.items.1	acesso fácil
+mo-invest.c0.viz.l.items.2	retorno baixo
+mo-invest.c0.viz.l.items.3	curto prazo
+mo-invest.c0.viz.r.t	Investir
+mo-invest.c0.viz.r.items.0	altos e baixos
+mo-invest.c0.viz.r.items.1	retorno esperado maior
+mo-invest.c0.viz.r.items.2	longo prazo
+mo-invest.c1.title	Ações
+mo-invest.c1.text	Uma ação é um pedacinho de uma empresa. Você pode ganhar se o preço subir e se ela pagar dividendos, e pode perder se o preço cair.
+mo-invest.c1.viz.items.0.a	Ação
+mo-invest.c1.viz.items.0.b	parte da empresa
+mo-invest.c1.viz.items.1.a	Dividendo
+mo-invest.c1.viz.items.1.b	parte do lucro
+mo-invest.c1.viz.items.2.a	Preço
+mo-invest.c1.viz.items.2.b	quanto pagam hoje
+mo-invest.c2.title	Títulos
+mo-invest.c2.text	Um título é um empréstimo a um governo ou empresa. Eles pagam juros a você e devolvem o dinheiro no final. Costumam ser mais estáveis que ações, com retorno menor no longo prazo.
+mo-invest.c2.viz.steps.0	Você empresta dinheiro
+mo-invest.c2.viz.steps.1	Recebe juros regulares
+mo-invest.c2.viz.steps.2	Recebe de volta no vencimento
+mo-invest.c3.title	Risco e retorno
+mo-invest.c3.text	Retornos esperados mais altos vêm com oscilações maiores. Não existe jeito confiável de ter retorno alto sem aceitar risco.
+mo-invest.c3.viz.unit	risco
+mo-invest.c3.viz.items.0.l	Poupança
+mo-invest.c3.viz.items.1.l	Títulos públicos
+mo-invest.c3.viz.items.2.l	Fundo misto
+mo-invest.c3.viz.items.3.l	Ações
+mo-invest.c4.title	Diversificação
+mo-invest.c4.text	Não coloque todos os ovos na mesma cesta. Espalhar o dinheiro por muitas empresas, países e tipos de ativo reduz o estrago que qualquer falha isolada pode causar.
+mo-invest.c4.viz.root	Carteira diversificada
+mo-invest.c4.viz.items.0	Muitas empresas
+mo-invest.c4.viz.items.1	Muitos países
+mo-invest.c4.viz.items.2	Ações e títulos
+mo-invest.c5.title	Fundos de índice
+mo-invest.c5.text	Um fundo de índice compra todas as empresas de um índice, como o S&P 500 ou um índice mundial, a um custo muito baixo. A maioria dos fundos de gestão ativa não consegue bater seu índice em períodos longos.
+mo-invest.c5.viz.l.t	Fundo ativo
+mo-invest.c5.viz.l.items.0	gestor escolhe
+mo-invest.c5.viz.l.items.1	taxas maiores
+mo-invest.c5.viz.l.items.2	costuma ficar atrás
+mo-invest.c5.viz.r.t	Fundo de índice
+mo-invest.c5.viz.r.items.0	compra tudo
+mo-invest.c5.viz.r.items.1	taxas baixas
+mo-invest.c5.viz.r.items.2	acompanha o mercado
+mo-invest.c6.title	Tempo no mercado
+mo-invest.c6.text	Os mercados caem com frequência, às vezes forte, mas historicamente se recuperaram e cresceram em períodos longos. Perder só os poucos melhores dias pode prejudicar muito o retorno.
+mo-invest.c6.viz.items.0.w	"Vou esperar o momento perfeito"
+mo-invest.c6.viz.items.0.r	Tempo no mercado vence tentar acertar o momento
+mo-invest.c7.title	Bom demais para ser verdade
+mo-invest.c7.text	Promessas de retorno alto garantido são um sinal de alerta. Se é garantido, é baixo; se é alto, não é garantido. Golpes costumam apelar para urgência e segredo.
+mo-invest.c7.viz.items.0	Retorno alto "garantido"
+mo-invest.c7.viz.items.1	Pressão para agir já
+mo-invest.c7.viz.items.2	Difícil de resgatar
+mo-invest.c7.viz.items.3	Vendedores sem regulação
+mo-invest.c8.title	Emoções e investimentos
+mo-invest.c8.text	O medo faz as pessoas venderem depois das quedas e a ganância faz comprarem nos picos: o contrário de "comprar barato, vender caro". Um plano por escrito ajuda você a manter o rumo.
+mo-invest.c8.viz.steps.0	Preços sobem: ganância
+mo-invest.c8.viz.steps.1	Compra no topo
+mo-invest.c8.viz.steps.2	Preços caem: medo
+mo-invest.c8.viz.steps.3	Vende no fundo
+mo-invest.c9.title	Antes de investir
+mo-invest.c9.text	Uma ordem comum: quite as dívidas caras, monte uma reserva de emergência e depois invista o dinheiro de que você não vai precisar por pelo menos cinco anos. Isto é informação geral, não aconselhamento pessoal.
+mo-invest.c9.viz.steps.0	Quitar dívidas caras
+mo-invest.c9.viz.steps.1	Reserva de emergência
+mo-invest.c9.viz.steps.2	Investir por 5+ anos
+mo-invest.c9.viz.steps.3	Revisar todo ano
+mo-econ.title	Economia do dia a dia
+mo-econ.summary	As grandes ideias por trás das notícias.
+mo-econ.q0.q	O que é custo de oportunidade?
+mo-econ.q0.o0	O preço na etiqueta
+mo-econ.q0.o1	Aquilo de que você abre mão para ter algo
+mo-econ.q0.o2	Uma tarifa bancária
+mo-econ.q0.x	A melhor alternativa seguinte.
+mo-econ.q1.q	Se a inflação cair de 5% para 2%, os preços…
+mo-econ.q1.o0	caem
+mo-econ.q1.o1	continuam subindo, mas mais devagar
+mo-econ.q1.o2	ficam iguais
+mo-econ.q1.x	Deflação significaria preços caindo.
+mo-econ.c0.title	PIB
+mo-econ.c0.text	O produto interno bruto é o valor total dos bens e serviços que um país produz em um ano. Ele mede o tamanho de uma economia, não o bem-estar dela.
+mo-econ.c0.viz.f	PIB = C + I + G + (X − M)
+mo-econ.c0.viz.items.0.s	C
+mo-econ.c0.viz.items.0.m	consumo
+mo-econ.c0.viz.items.1.s	I
+mo-econ.c0.viz.items.1.m	investimento
+mo-econ.c0.viz.items.2.s	G
+mo-econ.c0.viz.items.2.m	gastos do governo
+mo-econ.c0.viz.items.3.s	X − M
+mo-econ.c0.viz.items.3.m	exportações menos importações
+mo-econ.c1.title	Recessão
+mo-econ.c1.text	Recessão é uma queda significativa da atividade econômica, muitas vezes definida como dois trimestres seguidos de PIB em queda. Empregos e renda costumam sofrer.
+mo-econ.c1.viz.steps.0	Gastos caem
+mo-econ.c1.viz.steps.1	Empresas vendem menos
+mo-econ.c1.viz.steps.2	Cortam vagas
+mo-econ.c1.viz.steps.3	Gastos caem mais
+mo-econ.c2.title	Custo de oportunidade
+mo-econ.c2.text	O custo real de algo é aquilo de que você abre mão para ter. Uma noite estudando custa a saída que você não fez.
+mo-econ.c2.viz.items.0.a	Faculdade
+mo-econ.c2.viz.items.0.b	anos de salário que não entrou
+mo-econ.c2.viz.items.1.a	Carro novo
+mo-econ.c2.viz.items.1.b	a viagem que não rolou
+mo-econ.c2.viz.items.2.a	Uma hora nas redes sociais
+mo-econ.c2.viz.items.2.b	uma hora de outra coisa
+mo-econ.c3.title	Incentivos
+mo-econ.c3.text	As pessoas respondem a incentivos. Impostos sobre bebidas açucaradas reduzem as vendas; o depósito retornável nas garrafas aumenta a reciclagem. Incentivos mal desenhados saem pela culatra.
+mo-econ.c3.viz.items.0	Imposto do açúcar: menos açúcar
+mo-econ.c3.viz.items.1	Depósito na garrafa: mais reciclagem
+mo-econ.c3.viz.items.2	Multas: menos infrações
+mo-econ.c4.title	Vantagem comparativa
+mo-econ.c4.text	Os países ganham ao se especializar naquilo em que são relativamente melhores e trocar, mesmo que um seja melhor em tudo. O vinho de Portugal e o tecido da Inglaterra foram o exemplo de Ricardo em 1817.
+mo-econ.c4.viz.l.t	Portugal
+mo-econ.c4.viz.l.items.0	vinho
+mo-econ.c4.viz.l.items.1	relativamente eficiente
+mo-econ.c4.viz.r.t	Inglaterra
+mo-econ.c4.viz.r.items.0	tecido
+mo-econ.c4.viz.r.items.1	relativamente eficiente
+mo-econ.c5.title	Tragédia dos comuns
+mo-econ.c5.text	Quando um recurso compartilhado é livre para todos, todo mundo usa demais. A pesca predatória é um exemplo clássico; cotas e regras de propriedade podem ajudar.
+mo-econ.c5.viz.steps.0	Recurso compartilhado
+mo-econ.c5.viz.steps.1	Cada um pega um pouco mais
+mo-econ.c5.viz.steps.2	O recurso entra em colapso
+mo-econ.c5.viz.steps.3	Todos perdem
+mo-econ.c6.title	Impostos
+mo-econ.c6.text	Os impostos financiam os serviços públicos. Portugal usa o imposto de renda (IRS), com alíquotas que sobem com a renda, o IVA sobre as compras, com alíquota padrão de 23% no continente, e as contribuições à previdência social.
+mo-econ.c6.viz.items.0.a	IRS
+mo-econ.c6.viz.items.0.b	imposto de renda, progressivo
+mo-econ.c6.viz.items.1.a	IVA
+mo-econ.c6.viz.items.1.b	imposto sobre compras
+mo-econ.c6.viz.items.2.a	TSU
+mo-econ.c6.viz.items.2.b	previdência social
+mo-econ.c7.title	Desemprego
+mo-econ.c7.text	Algum desemprego é normal, já que as pessoas trocam de emprego. A taxa é a parcela de pessoas que querem trabalhar e estão procurando, mas não têm trabalho.
+mo-econ.c7.viz.f	taxa = desempregados ÷ força de trabalho
+mo-econ.c7.viz.items.0.s	desempregados
+mo-econ.c7.viz.items.0.m	procurando trabalho
+mo-econ.c7.viz.items.1.s	força de trabalho
+mo-econ.c7.viz.items.1.m	empregados + desempregados
+mo-econ.c8.title	Câmbio
+mo-econ.c8.text	A taxa de câmbio é o preço de uma moeda em outra. Um euro mais forte deixa as viagens ao exterior mais baratas, mas as exportações portuguesas mais caras para os estrangeiros.
+mo-econ.c8.viz.l.t	Euro forte
+mo-econ.c8.viz.l.items.0	importações mais baratas
+mo-econ.c8.viz.l.items.1	viagens mais baratas
+mo-econ.c8.viz.r.t	Euro fraco
+mo-econ.c8.viz.r.items.0	exportações mais baratas
+mo-econ.c8.viz.r.items.1	mais turistas em Portugal
+mo-econ.c9.title	Lendo uma manchete
+mo-econ.c9.text	"Inflação cai para 2%" não quer dizer que os preços caíram; quer dizer que estão subindo mais devagar. Só a inflação negativa, chamada deflação, significa preços em queda.
+mo-econ.c9.viz.items.0.w	A inflação caiu, então os preços baixaram
+mo-econ.c9.viz.items.0.r	Os preços subiram, só que mais devagar
+mo-debt.title	Dívidas e crédito
+mo-debt.summary	Pegar emprestado sem se queimar.
+mo-debt.q0.q	O que o CET (TAEG) inclui?
+mo-debt.q0.o0	Só os juros

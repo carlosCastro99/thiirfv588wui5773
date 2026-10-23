@@ -681,3 +681,253 @@ gen-embed.c6.viz.steps.1	Misma zona del espacio vectorial
 gen-embed.c6.viz.steps.2	Encuentra el documento «late payment»
 gen-embed.c7.title	Imágenes y texto juntos
 gen-embed.c7.text	Modelos como CLIP sitúan imágenes y texto en un mismo espacio, lo que permite búsquedas como «fotos de un camión rojo en el puerto» en una biblioteca de imágenes.
+gen-embed.c7.viz.steps.0	Consulta de texto
+gen-embed.c7.viz.steps.1	Espacio de embeddings común
+gen-embed.c7.viz.steps.2	Imágenes más cercanas
+gen-embed.c7.viz.steps.3	Búsqueda visual
+gen-embed.c8.title	Reordenación
+gen-embed.c8.text	Una búsqueda vectorial rápida devuelve, por ejemplo, 50 candidatos; después, un modelo reordenador más lento pero más listo los ordena con precisión. Este enfoque en dos fases mejora la exactitud.
+gen-embed.c8.viz.steps.0	Consulta
+gen-embed.c8.viz.steps.1	Búsqueda vectorial: los 50 mejores
+gen-embed.c8.viz.steps.2	El reordenador puntúa cada uno
+gen-embed.c8.viz.steps.3	Los 5 mejores al usuario
+gen-embed.c9.title	Mantén los embeddings al día
+gen-embed.c9.text	Cuando cambian los documentos, hay que actualizar sus embeddings. Usa el mismo modelo de embeddings para documentos y consultas: cambiar de modelo obliga a recalcularlo todo.
+gen-embed.c9.viz.items.0	Recalcula los documentos modificados
+gen-embed.c9.viz.items.1	Mismo modelo para consultas y documentos
+gen-embed.c9.viz.items.2	Controla las versiones
+gen-embed.c9.viz.items.3	Borra el contenido eliminado
+gen-rag.title	Generación aumentada por recuperación
+gen-rag.summary	Respuestas basadas en tus propios documentos.
+gen-rag.q0.q	¿Qué añade RAG a un prompt?
+gen-rag.q0.o0	Ejemplos aleatorios
+gen-rag.q0.o1	Pasajes relevantes recuperados de tus documentos
+gen-rag.q0.o2	Un modelo más grande
+gen-rag.q0.x	Fundamenta las respuestas en tus fuentes.
+gen-rag.q1.q	Los datos que cambian a menudo se gestionan mejor con…
+gen-rag.q1.o0	Ajuste fino
+gen-rag.q1.o1	RAG
+gen-rag.q1.o2	Una temperatura más alta
+gen-rag.q1.x	RAG se actualiza al instante cuando cambian los documentos.
+gen-rag.q2.q	¿Por qué un RAG empresarial debe comprobar permisos?
+gen-rag.q2.o0	Por velocidad
+gen-rag.q2.o1	Para que cada usuario solo vea los documentos a los que tiene acceso
+gen-rag.q2.o2	Para ahorrar tokens
+gen-rag.q2.x	La seguridad debe aplicarse en la recuperación.
+gen-rag.c0.title	La idea
+gen-rag.c0.text	RAG recupera pasajes relevantes de tus documentos y se los da al modelo junto con la pregunta, para que las respuestas salgan de tus fuentes y no de la memoria del modelo.
+gen-rag.c0.viz.steps.0	Pregunta
+gen-rag.c0.viz.steps.1	Busca en tus documentos
+gen-rag.c0.viz.steps.2	Añade los mejores pasajes al prompt
+gen-rag.c0.viz.steps.3	Respuesta fundamentada con fuentes
+gen-rag.c1.title	¿Por qué no hacer solo ajuste fino?
+gen-rag.c1.text	El ajuste fino enseña estilo y comportamiento, pero es una mala forma de añadir datos que cambian. RAG se actualiza al instante cuando cambian los documentos y puede citar sus fuentes.
+gen-rag.c1.viz.l.t	RAG
+gen-rag.c1.viz.l.items.0	conocimiento de documentos
+gen-rag.c1.viz.l.items.1	actualización al instante
+gen-rag.c1.viz.l.items.2	citas
+gen-rag.c1.viz.r.t	Ajuste fino
+gen-rag.c1.viz.r.items.0	estilo y comportamiento
+gen-rag.c1.viz.r.items.1	hay que reentrenar
+gen-rag.c1.viz.r.items.2	sin citas
+gen-rag.c2.title	La canalización de ingesta
+gen-rag.c2.text	Los documentos se cargan, se limpian, se dividen en fragmentos, se enriquecen con metadatos (fecha, responsable, tipo), se convierten en embeddings y se indexan.
+gen-rag.c2.viz.steps.0	Cargar documentos
+gen-rag.c2.viz.steps.1	Limpiar y fragmentar
+gen-rag.c2.viz.steps.2	Añadir metadatos
+gen-rag.c2.viz.steps.3	Embeddings
+gen-rag.c2.viz.steps.4	Indexar
+gen-rag.c3.title	La calidad de la recuperación lo es todo
+gen-rag.c3.text	Si la recuperación no encuentra el pasaje correcto, el modelo no puede responder bien. La mayoría de las mejoras de un RAG vienen de una mejor fragmentación, la búsqueda híbrida, los filtros de metadatos y la reordenación.
+gen-rag.c3.viz.items.0	Buena fragmentación
+gen-rag.c3.viz.items.1	Búsqueda híbrida: palabras clave + semántica
+gen-rag.c3.viz.items.2	Filtros de metadatos
+gen-rag.c3.viz.items.3	Reordenación
+gen-rag.c3.viz.items.4	Reformular la consulta
+gen-rag.c4.title	Citas
+gen-rag.c4.text	Pedir al modelo que cite qué pasaje respalda cada afirmación permite a los usuarios verificar las respuestas y genera confianza. Si no hay respaldo, la respuesta debería ser «No lo sé».
+gen-rag.c4.viz.items.0.w	respuesta sin fuentes
+gen-rag.c4.viz.items.0.r	respuesta con pasajes citados
+gen-rag.c4.viz.items.1.w	adivinar si no encuentra nada
+gen-rag.c4.viz.items.1.r	decir que no está en los documentos
+gen-rag.c5.title	Control de acceso
+gen-rag.c5.text	En una empresa, el RAG debe respetar los permisos: cada usuario solo debe recuperar los documentos que puede ver. Filtra por los derechos del usuario en el momento de la recuperación.
+gen-rag.c5.viz.steps.0	Pregunta
+gen-rag.c5.viz.steps.1	Comprueba sus permisos
+gen-rag.c5.viz.steps.2	Busca solo documentos permitidos
+gen-rag.c5.viz.steps.3	Responde
+gen-rag.c6.title	Datos estructurados
+gen-rag.c6.text	Para cifras guardadas en bases de datos (ventas, existencias), es mejor que el modelo escriba una consulta (SQL) o llame a una API que convertir las tablas en texto para embeddings.
+gen-rag.c6.viz.l.t	No estructurados
+gen-rag.c6.viz.l.items.0	políticas, contratos, correos
+gen-rag.c6.viz.l.items.1	usa RAG
+gen-rag.c6.viz.r.t	Estructurados
+gen-rag.c6.viz.r.items.0	ventas, inventario
+gen-rag.c6.viz.r.items.1	usa SQL o API
+gen-rag.c7.title	Evaluar un RAG
+gen-rag.c7.text	Mide la recuperación (¿encontramos los pasajes correctos?) y la generación (¿la respuesta es correcta, completa y fiel a las fuentes?). Prepara un conjunto de prueba con preguntas reales de respuesta conocida.
+gen-rag.c7.viz.items.0.a	exhaustividad
+gen-rag.c7.viz.items.0.b	¿encontró el pasaje?
+gen-rag.c7.viz.items.1.a	fidelidad
+gen-rag.c7.viz.items.1.b	¿cuadra con las fuentes?
+gen-rag.c7.viz.items.2.a	completitud
+gen-rag.c7.viz.items.2.b	¿responde a todo?
+gen-rag.c7.viz.items.3.a	citas
+gen-rag.c7.viz.items.3.b	¿referencias correctas?
+gen-rag.c8.title	Preguntas sobre contratos
+gen-rag.c8.text	Un trader pregunta: «¿Cuál es la tarifa de demora (demurrage) del contrato 4471?». El RAG recupera la cláusula relevante, el modelo responde «18 000 $ al día, cláusula 12.3» y enlaza a la página.
+gen-rag.c8.viz.steps.0	Pregunta sobre el contrato
+gen-rag.c8.viz.steps.1	Encuentra la cláusula 12.3
+gen-rag.c8.viz.steps.2	Responde con la tarifa
+gen-rag.c8.viz.steps.3	Enlaza a la página fuente
+gen-rag.c9.title	Fallos habituales
+gen-rag.c9.text	Problemas típicos: documentos desfasados, versiones duplicadas, tablas rotas al procesar PDF, preguntas que requieren información de muchos documentos y preguntas vagas de los usuarios.
+gen-rag.c9.viz.items.0	Documentos desfasados o duplicados
+gen-rag.c9.viz.items.1	Mala extracción de tablas de PDF
+gen-rag.c9.viz.items.2	Respuestas repartidas en muchos archivos
+gen-rag.c9.viz.items.3	Preguntas vagas
+gen-rag.c9.viz.items.4	Permisos que faltan
+gen-finetune.title	Adaptar modelos
+gen-finetune.summary	Ajuste fino, LoRA y destilación.
+gen-finetune.q0.q	¿Qué deberías probar antes del ajuste fino?
+gen-finetune.q0.o0	Nada
+gen-finetune.q0.o1	Prompts y RAG
+gen-finetune.q0.o2	Entrenar desde cero
+gen-finetune.q0.x	Son más baratos y a menudo bastan.
+gen-finetune.q1.q	¿Qué hace LoRA?
+gen-finetune.q1.o0	Elimina capas
+gen-finetune.q1.o1	Entrena pequeñas matrices añadidas mientras congela el modelo base
+gen-finetune.q1.o2	Añade GPU
+gen-finetune.q1.x	Ajuste fino eficiente.
+gen-finetune.q2.q	En la destilación, el modelo pequeño aprende de…
+gen-finetune.q2.o0	Datos aleatorios
+gen-finetune.q2.o1	Las respuestas de un modelo maestro más grande
+gen-finetune.q2.o2	Solo de los usuarios
+gen-finetune.q2.x	El alumno imita al maestro.
+gen-finetune.c0.title	Cuándo hacer ajuste fino
+gen-finetune.c0.text	El ajuste fino sigue entrenando un modelo con tus ejemplos para cambiar su comportamiento: un formato constante, un estilo de la casa, una tarea de clasificación concreta. Prueba antes con prompts y RAG; haz ajuste fino cuando no basten.
+gen-finetune.c0.viz.items.0	Ajuste fino: cambia el comportamiento
+gen-finetune.c0.viz.items.1	RAG: añade conocimiento
+gen-finetune.c0.viz.items.2	Prompts: empieza aquí
+gen-finetune.c1.title	Qué necesitas
+gen-finetune.c1.text	Desde unos cientos hasta unos miles de ejemplos de calidad con entrada y salida ideal. La calidad importa mucho más que la cantidad: ejemplos incoherentes enseñan un comportamiento incoherente.
+gen-finetune.c1.viz.items.0	Tarea bien definida
+gen-finetune.c1.viz.items.1	Cientos de buenos ejemplos
+gen-finetune.c1.viz.items.2	Formato coherente
+gen-finetune.c1.viz.items.3	Un conjunto de prueba aparte
+gen-finetune.c1.viz.items.4	Una referencia que superar
+gen-finetune.c2.title	Ajuste fino completo frente a LoRA
+gen-finetune.c2.text	El ajuste fino completo actualiza todos los pesos: es caro. LoRA (adaptación de bajo rango) congela el modelo y entrena pequeñas matrices añadidas, con una fracción mínima de la memoria y generando archivos de adaptador pequeños.
+gen-finetune.c2.viz.l.t	Ajuste completo
+gen-finetune.c2.viz.l.items.0	todos los pesos
+gen-finetune.c2.viz.l.items.1	caro
+gen-finetune.c2.viz.l.items.2	archivos grandes
+gen-finetune.c2.viz.r.t	LoRA
+gen-finetune.c2.viz.r.items.0	adaptadores pequeños
+gen-finetune.c2.viz.r.items.1	barato
+gen-finetune.c2.viz.r.items.2	uno por tarea
+gen-finetune.c3.title	Destilación
+gen-finetune.c3.text	Un modelo «maestro» grande genera respuestas y un modelo «alumno» más pequeño se entrena para imitarlas. El alumno es más barato y rápido, y a menudo casi igual de bueno en la tarea objetivo.
+gen-finetune.c3.viz.steps.0	Modelo maestro grande
+gen-finetune.c3.viz.steps.1	Genera muchas respuestas
+gen-finetune.c3.viz.steps.2	El alumno pequeño aprende
+gen-finetune.c3.viz.steps.3	Modelo rápido y barato
+gen-finetune.c4.title	Ajuste por preferencias
+gen-finetune.c4.text	En lugar de respuestas correctas únicas, puedes entrenar con pares de respuestas mejores y peores (por ejemplo, con DPO), moldeando el tono y la utilidad.
+gen-finetune.c4.viz.steps.0	Pares de respuestas
+gen-finetune.c4.viz.steps.1	Marca la mejor
+gen-finetune.c4.viz.steps.2	Entrenamiento con preferencias
+gen-finetune.c4.viz.steps.3	El modelo prefiere tu estilo
+gen-finetune.c5.title	Olvido catastrófico
+gen-finetune.c5.text	Ajustar demasiado un modelo en una tarea concreta puede empeorarlo en otras cosas. Ayudan las tasas de aprendizaje más bajas, LoRA y mezclar datos generales.
+gen-finetune.c5.viz.items.0.w	entrenar a fondo en una sola tarea
+gen-finetune.c5.viz.items.0.r	mezclar ejemplos generales y usar LoRA
+gen-finetune.c6.title	Modelos de dominio
+gen-finetune.c6.text	Algunas organizaciones adaptan modelos a un campo como el derecho, la medicina o las finanzas, con su vocabulario y sus documentos. A menudo, un buen modelo general con RAG funciona igual o mejor.
+gen-finetune.c6.viz.l.t	Modelo de dominio
+gen-finetune.c6.viz.l.items.0	vocabulario especializado
+gen-finetune.c6.viz.l.items.1	caro de crear y mantener
+gen-finetune.c6.viz.r.t	Modelo general + RAG
+gen-finetune.c6.viz.r.items.0	flexible
+gen-finetune.c6.viz.r.items.1	usa los últimos modelos
+gen-finetune.c6.viz.r.items.2	más fácil de actualizar
+gen-finetune.c7.title	Alojar modelos ajustados
+gen-finetune.c7.text	Los proveedores de nube permiten ajustar y alojar ciertos modelos mediante API. Los modelos abiertos se pueden ajustar y servir en tus propias GPU.
+gen-finetune.c7.viz.items.0.a	ajuste en la nube
+gen-finetune.c7.viz.items.0.b	gestionado, pago por uso
+gen-finetune.c7.viz.items.1.a	modelo abierto + LoRA
+gen-finetune.c7.viz.items.1.b	control total, hardware propio
+gen-finetune.c7.viz.items.2.a	servir adaptadores
+gen-finetune.c7.viz.items.2.b	muchos LoRA sobre un modelo base
+gen-finetune.c8.title	Medir la mejora
+gen-finetune.c8.text	Compara el modelo ajustado con el modelo base y un buen prompt sobre el mismo conjunto de prueba. Si la mejora es pequeña, quizá no compensen el coste extra y el mantenimiento.
+gen-finetune.c8.viz.unit	precisión % (ilustrativo)
+gen-finetune.c8.viz.items.0.l	Base + prompt simple
+gen-finetune.c8.viz.items.1.l	Base + buen prompt
+gen-finetune.c8.viz.items.2.l	Ajustado
+gen-finetune.c9.title	Mantenlo al día
+gen-finetune.c9.text	Salen nuevos modelos base a menudo. Un ajuste fino del modelo del año pasado puede quedar por detrás del modelo de este año con un buen prompt. Ten listos los datos de entrenamiento y las evaluaciones para volver a ejecutarlos.
+gen-finetune.c9.viz.steps.0	Sale un nuevo modelo base
+gen-finetune.c9.viz.steps.1	Repite tus evaluaciones
+gen-finetune.c9.viz.steps.2	Reajusta si compensa
+gen-finetune.c9.viz.steps.3	Despliega
+gen-agents.title	Herramientas y agentes
+gen-agents.summary	Modelos que actúan, no solo responden.
+gen-agents.q0.q	¿Qué es la llamada a funciones?
+gen-agents.q0.o0	Llamar por teléfono al modelo
+gen-agents.q0.o1	Que el modelo pida una herramienta definida con parámetros, y la app la ejecute
+gen-agents.q0.o2	Escribir funciones a mano
+gen-agents.q0.x	La app ejecuta la herramienta que pide el modelo.
+gen-agents.q1.q	¿Qué convierte algo en un «agente» y no en un chatbot?
+gen-agents.q1.o0	Un nombre
+gen-agents.q1.o1	Funciona en bucle: planifica, actúa con herramientas, observa y sigue
+gen-agents.q1.o2	Tiene voz
+gen-agents.q1.x	Acción autónoma en varios pasos.
+gen-agents.q2.q	¿Qué debería necesitar un agente antes de borrar datos o pagar?
+gen-agents.q2.o0	Nada
+gen-agents.q2.o1	Aprobación humana
+gen-agents.q2.o2	Un modelo más rápido
+gen-agents.q2.x	Las acciones irreversibles requieren supervisión.
+gen-agents.c0.title	Uso de herramientas
+gen-agents.c0.text	A un modelo se le pueden dar herramientas: funciones que puede llamar, como «search_web», «get_order_status» o «run_sql». Decide cuándo llamarlas y usa los resultados en su respuesta.
+gen-agents.c0.viz.steps.0	Pregunta
+gen-agents.c0.viz.steps.1	El modelo elige una herramienta
+gen-agents.c0.viz.steps.2	La app la ejecuta
+gen-agents.c0.viz.steps.3	El modelo usa el resultado
+gen-agents.c1.title	Cómo funciona la llamada a funciones
+gen-agents.c1.text	El desarrollador describe cada herramienta con un nombre, un propósito y unos parámetros. El modelo devuelve una petición estructurada; la aplicación la ejecuta y le devuelve el resultado.
+gen-agents.c1.viz.items.0.a	nombre
+gen-agents.c1.viz.items.0.b	get_weather
+gen-agents.c1.viz.items.1.a	descripción
+gen-agents.c1.viz.items.1.b	tiempo actual en una ciudad
+gen-agents.c1.viz.items.2.a	parámetros
+gen-agents.c1.viz.items.2.b	ciudad, unidades
+gen-agents.c1.viz.items.3.a	resultado
+gen-agents.c1.viz.items.3.b	18 °C, nublado
+gen-agents.c2.title	Qué hace a un agente
+gen-agents.c2.text	Un agente funciona en bucle: planifica, actúa con herramientas, observa los resultados y continúa hasta alcanzar el objetivo o necesitar ayuda.
+gen-agents.c2.viz.steps.0	Planificar
+gen-agents.c2.viz.steps.1	Actuar con una herramienta
+gen-agents.c2.viz.steps.2	Observar el resultado
+gen-agents.c2.viz.steps.3	Decidir el siguiente paso
+gen-agents.c3.title	Agentes de programación
+gen-agents.c3.text	Los agentes de programación leen una base de código, editan archivos, ejecutan pruebas y corrigen errores en bucle. Son uno de los usos de agentes más maduros porque las pruebas dan una respuesta clara.
+gen-agents.c3.viz.steps.0	Lee la tarea
+gen-agents.c3.viz.steps.1	Edita el código
+gen-agents.c3.viz.steps.2	Ejecuta pruebas
+gen-agents.c3.viz.steps.3	Corrige fallos
+gen-agents.c3.viz.steps.4	Abre una pull request
+gen-agents.c4.title	Uso del navegador y del ordenador
+gen-agents.c4.text	Algunos agentes manejan webs y aplicaciones de escritorio leyendo la pantalla y haciendo clic, algo útil donde no hay API, aunque es más lento y propenso a errores que una API.
+gen-agents.c4.viz.l.t	Herramientas API
+gen-agents.c4.viz.l.items.0	rápido
+gen-agents.c4.viz.l.items.1	fiable
+gen-agents.c4.viz.l.items.2	estructurado
+gen-agents.c4.viz.r.t	Control de pantalla
+gen-agents.c4.viz.r.items.0	funciona en todo
+gen-agents.c4.viz.r.items.1	más lento
+gen-agents.c4.viz.r.items.2	frágil
+gen-agents.c5.title	Model Context Protocol
+gen-agents.c5.text	MCP es un estándar abierto (presentado por Anthropic en 2024) para conectar asistentes de IA con herramientas y fuentes de datos, de modo que un mismo conector funcione en distintas apps de IA.
+gen-agents.c5.viz.steps.0	Tu sistema (CRM, archivos, BD)
+gen-agents.c5.viz.steps.1	Servidor MCP

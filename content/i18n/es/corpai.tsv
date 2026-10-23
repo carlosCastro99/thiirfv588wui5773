@@ -598,3 +598,303 @@ corp-security.c8.title	Respuesta a incidentes
 corp-security.c8.text	Ten un plan para incidentes de IA: respuestas dañinas, exposición de datos, errores de agentes. Debes poder desactivar funciones rápidamente, investigar los registros y notificar cuando sea obligatorio.
 corp-security.c8.viz.steps.0	Detectar
 corp-security.c8.viz.steps.1	Contener: desactivar la función
+corp-security.c8.viz.steps.2	Investigar registros
+corp-security.c8.viz.steps.3	Corregir y comunicar
+corp-security.c9.title	Marcos de seguridad
+corp-security.c9.text	Usa guías consolidadas: OWASP Top 10 para aplicaciones con LLM, el Marco de Gestión de Riesgos de IA del NIST, ISO/IEC 42001 para sistemas de gestión de la IA y tus controles ISO 27001 actuales.
+corp-security.c9.viz.items.0.a	OWASP LLM Top 10
+corp-security.c9.viz.items.0.b	riesgos de aplicaciones
+corp-security.c9.viz.items.1.a	NIST AI RMF
+corp-security.c9.viz.items.1.b	gestión de riesgos
+corp-security.c9.viz.items.2.a	ISO/IEC 42001
+corp-security.c9.viz.items.2.b	sistema de gestión de IA
+corp-security.c9.viz.items.3.a	ISO 27001
+corp-security.c9.viz.items.3.b	seguridad de la información
+corp-governance.title	Gobernanza y riesgo de la IA
+corp-governance.summary	Políticas, funciones y el Reglamento de IA de la UE en la práctica.
+corp-governance.q0.q	¿Qué debe registrar un inventario de IA?
+corp-governance.q0.o0	Solo los nombres de los modelos
+corp-governance.q0.o1	Caso de uso, responsable, datos, modelo, nivel de riesgo y controles
+corp-governance.q0.o2	Los sueldos de los empleados
+corp-governance.q0.x	Es la base de la gobernanza.
+corp-governance.q1.q	Desde febrero de 2025, el Reglamento de IA de la UE exige a los responsables del despliegue garantizar…
+corp-governance.q1.o0	IA gratuita para todos
+corp-governance.q1.o1	Una alfabetización en IA suficiente del personal que usa IA
+corp-governance.q1.o2	Solo modelos de código abierto
+corp-governance.q1.x	La obligación de alfabetización en IA.
+corp-governance.q2.q	¿Cómo debería tratar la gobernanza los casos de uso de bajo riesgo?
+corp-governance.q2.o0	Prohibirlos
+corp-governance.q2.o1	Darles una vía rápida con controles ligeros
+corp-governance.q2.o2	Igual que los de alto riesgo
+corp-governance.q2.x	Gobernanza proporcionada.
+corp-governance.c0.title	Por qué gobernanza
+corp-governance.c0.text	La gobernanza garantiza que la IA se use de forma segura, legal y acorde con los valores de la empresa, sin frenarlo todo. Una buena gobernanza acelera la adopción porque aclara las reglas.
+corp-governance.c0.viz.l.t	Poca o demasiada
+corp-governance.c0.viz.l.items.0	incidentes, o aprobaciones lentas e IA en la sombra
+corp-governance.c0.viz.r.t	A la medida
+corp-governance.c0.viz.r.items.0	reglas claras
+corp-governance.c0.viz.r.items.1	vía rápida si el riesgo es bajo
+corp-governance.c0.viz.r.items.2	foco en el alto riesgo
+corp-governance.c1.title	Política de IA
+corp-governance.c1.text	Una política breve cubre las herramientas aprobadas, los datos permitidos, la supervisión humana, la transparencia, los usos prohibidos y cómo solicitar nuevos casos de uso.
+corp-governance.c1.viz.items.0	Herramientas aprobadas
+corp-governance.c1.viz.items.1	Reglas sobre datos
+corp-governance.c1.viz.items.2	Supervisión humana
+corp-governance.c1.viz.items.3	Usos prohibidos
+corp-governance.c1.viz.items.4	Cómo proponer casos de uso
+corp-governance.c2.title	Inventario de sistemas de IA
+corp-governance.c2.text	Mantén un registro de sistemas y casos de uso de IA: finalidad, responsable, datos usados, modelo, nivel de riesgo y controles. En la práctica, el Reglamento de IA de la UE exige saber qué despliegas.
+corp-governance.c2.viz.items.0	Caso de uso y finalidad
+corp-governance.c2.viz.items.1	Responsable de negocio
+corp-governance.c2.viz.items.2	Datos y modelo usados
+corp-governance.c2.viz.items.3	Clasificación de riesgo
+corp-governance.c2.viz.items.4	Controles y revisiones
+corp-governance.c3.title	Revisión según el riesgo
+corp-governance.c3.text	Los usos de bajo riesgo pasan una autoevaluación ligera; los de alto riesgo, una revisión completa con expertos legales, de seguridad, de privacidad y de negocio.
+corp-governance.c3.viz.steps.0	Nuevo caso de uso
+corp-governance.c3.viz.steps.1	Triaje de riesgo
+corp-governance.c3.viz.steps.2	Bajo: vía rápida
+corp-governance.c3.viz.steps.3	Alto: comité de revisión
+corp-governance.c4.title	El Reglamento de IA de la UE para empresas
+corp-governance.c4.text	Las empresas suelen ser «responsables del despliegue» de la IA. En los sistemas de alto riesgo deben usarlos según las instrucciones, garantizar la supervisión humana, vigilar su funcionamiento, conservar registros e informar a las personas afectadas. Las prácticas prohibidas deben evitarse por completo.
+corp-governance.c4.viz.items.0	Evitar prácticas prohibidas
+corp-governance.c4.viz.items.1	Conocer usos de alto riesgo
+corp-governance.c4.viz.items.2	Supervisión humana
+corp-governance.c4.viz.items.3	Conservar registros
+corp-governance.c4.viz.items.4	Informar a los afectados
+corp-governance.c5.title	Obligación de alfabetización en IA
+corp-governance.c5.text	Desde febrero de 2025, el Reglamento de IA de la UE exige a proveedores y responsables del despliegue adoptar medidas para garantizar una alfabetización en IA suficiente del personal que opera o usa sistemas de IA.
+corp-governance.c5.viz.items.0.v	feb. 2025
+corp-governance.c5.viz.items.0.l	se aplica la alfabetización en IA
+corp-governance.c5.viz.items.1.v	todo el personal
+corp-governance.c5.viz.items.1.l	que usa sistemas de IA afectados
+corp-governance.c6.title	Funciones y responsabilidades
+corp-governance.c6.text	Funciones típicas: un patrocinador ejecutivo, un comité de gobernanza de IA, responsables de casos de uso, un equipo central de IA y las funciones legal, de privacidad, de seguridad y de riesgos.
+corp-governance.c6.viz.root	Gobernanza de IA
+corp-governance.c6.viz.items.0	Patrocinador ejecutivo
+corp-governance.c6.viz.items.1	Comité de gobernanza
+corp-governance.c6.viz.items.2	Equipo central de IA
+corp-governance.c6.viz.items.3	Responsables de casos
+corp-governance.c7.title	Gestión del riesgo de modelos
+corp-governance.c7.text	Los bancos y otras empresas reguladas ya gestionan el riesgo de modelos: validación, documentación, seguimiento del rendimiento. Extiende estas prácticas a la IA y los LLM.
+corp-governance.c7.viz.steps.0	Desarrollar
+corp-governance.c7.viz.steps.1	Validar de forma independiente
+corp-governance.c7.viz.steps.2	Seguir el rendimiento
+corp-governance.c7.viz.steps.3	Revisar periódicamente
+corp-governance.c8.title	IA de terceros
+corp-governance.c8.text	Muchos riesgos de la IA llegan a través de proveedores. Los contratos deben cubrir el uso de datos, la seguridad, la transparencia, la notificación de incidentes y el cumplimiento de leyes como el Reglamento de IA.
+corp-governance.c8.viz.items.0	Uso de datos y límites de entrenamiento
+corp-governance.c8.viz.items.1	Compromisos de seguridad
+corp-governance.c8.viz.items.2	Notificación de incidentes
+corp-governance.c8.viz.items.3	Derecho de auditoría
+corp-governance.c8.viz.items.4	Cumplimiento normativo
+corp-governance.c9.title	Equilibrar rapidez y control
+corp-governance.c9.text	Los patrones preaprobados (herramientas aprobadas, plantillas, categorías de bajo riesgo) permiten avanzar rápido a la mayoría de los equipos, mientras el escrutinio se centra en los casos de alto riesgo.
+corp-governance.c9.viz.l.t	Vía rápida
+corp-governance.c9.viz.l.items.0	herramientas aprobadas
+corp-governance.c9.viz.l.items.1	datos de bajo riesgo
+corp-governance.c9.viz.l.items.2	autoservicio
+corp-governance.c9.viz.r.t	Revisión completa
+corp-governance.c9.viz.r.items.0	usos de alto riesgo
+corp-governance.c9.viz.r.items.1	decisiones sobre personas
+corp-governance.c9.viz.r.items.2	impacto externo
+corp-responsible.title	IA responsable
+corp-responsible.summary	Principios que generan confianza.
+corp-responsible.q0.q	¿Cuál es una explicación aceptable de una decisión asistida por IA?
+corp-responsible.q0.o0	«Lo decidió el algoritmo»
+corp-responsible.q0.o1	«Lo decidió el equipo usando una recomendación de la IA»
+corp-responsible.q0.o2	«Nadie lo sabe»
+corp-responsible.q0.x	Una persona o un equipo sigue siendo responsable.
+corp-responsible.q1.q	Human-on-the-loop significa…
+corp-responsible.q1.o0	Sin personas
+corp-responsible.q1.o1	Las personas supervisan y pueden intervenir
+corp-responsible.q1.o2	Las personas aprueban cada decisión
+corp-responsible.q1.x	Supervisión con capacidad de intervenir.
+corp-responsible.q2.q	¿Qué debería hacer un sistema de IA cuando no está seguro?
+corp-responsible.q2.o0	Adivinar con aplomo
+corp-responsible.q2.o1	Escalar a una persona
+corp-responsible.q2.o2	Cerrar la empresa
+corp-responsible.q2.x	Gestionar la incertidumbre con elegancia.
+corp-responsible.c0.title	Principios comunes
+corp-responsible.c0.text	La mayoría de los marcos de IA responsable comparten principios: equidad, transparencia, rendición de cuentas, privacidad, seguridad y fiabilidad, y supervisión humana.
+corp-responsible.c0.viz.items.0	Equidad
+corp-responsible.c0.viz.items.1	Transparencia
+corp-responsible.c0.viz.items.2	Rendición de cuentas
+corp-responsible.c0.viz.items.3	Privacidad y seguridad
+corp-responsible.c0.viz.items.4	Seguridad y fiabilidad
+corp-responsible.c0.viz.items.5	Supervisión humana
+corp-responsible.c1.title	Equidad
+corp-responsible.c1.text	Comprueba que la IA no trate injustamente a las personas por características protegidas o variables que las representen. Prueba los resultados por grupos en cualquier uso que afecte a personas.
+corp-responsible.c1.viz.steps.0	Definir criterios de equidad
+corp-responsible.c1.viz.steps.1	Probar resultados por grupo
+corp-responsible.c1.viz.steps.2	Corregir disparidades
+corp-responsible.c1.viz.steps.3	Vigilar en el tiempo
+corp-responsible.c2.title	Transparencia
+corp-responsible.c2.text	Las personas deben saber cuándo interviene la IA y, en decisiones importantes, entender los motivos principales. Internamente, documenta cómo funcionan los sistemas y sus límites.
+corp-responsible.c2.viz.items.0	Informar del uso de IA
+corp-responsible.c2.viz.items.1	Explicar decisiones clave
+corp-responsible.c2.viz.items.2	Documentar límites
+corp-responsible.c2.viz.items.3	Fichas de modelo y sistema
+corp-responsible.c3.title	Rendición de cuentas
+corp-responsible.c3.text	Una persona o un equipo concreto responde de los resultados de cada sistema de IA. «Lo decidió el algoritmo» nunca es una respuesta aceptable.
+corp-responsible.c3.viz.items.0.w	«lo decidió la IA»
+corp-responsible.c3.viz.items.0.r	«lo decidió el equipo de crédito con una recomendación de la IA»
+corp-responsible.c4.title	Supervisión humana
+corp-responsible.c4.text	Decide dónde deben revisar las personas: antes de actuar (human-in-the-loop), supervisando con capacidad de intervenir (human-on-the-loop) o mediante auditorías periódicas.
+corp-responsible.c4.viz.items.0.a	human-in-the-loop
+corp-responsible.c4.viz.items.0.b	aprueba cada decisión
+corp-responsible.c4.viz.items.1.a	human-on-the-loop
+corp-responsible.c4.viz.items.1.b	supervisa, puede intervenir
+corp-responsible.c4.viz.items.2.a	auditoría periódica
+corp-responsible.c4.viz.items.2.b	revisa muestras
+corp-responsible.c5.title	Fiabilidad
+corp-responsible.c5.text	Los sistemas de IA deben funcionar de forma constante dentro de su ámbito previsto, con límites probados y una gestión elegante de la incertidumbre: escalar en lugar de adivinar.
+corp-responsible.c5.viz.steps.0	Baja confianza detectada
+corp-responsible.c5.viz.steps.1	No adivinar
+corp-responsible.c5.viz.steps.2	Escalar a una persona
+corp-responsible.c5.viz.steps.3	Aprender del caso
+corp-responsible.c6.title	Impacto en la plantilla
+corp-responsible.c6.text	Una adopción responsable tiene en cuenta a las personas: comunica con franqueza, implica a los empleados, invierte en recualificación y rediseña los puestos con cuidado.
+corp-responsible.c6.viz.items.0	Comunicación abierta
+corp-responsible.c6.viz.items.1	Implicar pronto al personal
+corp-responsible.c6.viz.items.2	Programas de recualificación
+corp-responsible.c6.viz.items.3	Rediseño cuidadoso de puestos
+corp-responsible.c6.viz.items.4	Medir el bienestar
+corp-responsible.c7.title	Impacto ambiental
+corp-responsible.c7.text	La IA consume energía y agua. Elige modelos eficientes, evita usar sin necesidad los modelos más grandes y da preferencia a regiones de nube alimentadas con energía limpia.
+corp-responsible.c7.viz.items.0	Modelos del tamaño justo
+corp-responsible.c7.viz.items.1	Caché y lotes
+corp-responsible.c7.viz.items.2	Regiones eficientes
+corp-responsible.c7.viz.items.3	Medir la energía si se puede
+corp-responsible.c8.title	Fichas de modelo y sistema
+corp-responsible.c8.text	Documentos breves que describen la finalidad, los datos, el rendimiento, las limitaciones y el uso previsto de un sistema ayudan a usuarios y revisores a entenderlo.
+corp-responsible.c8.viz.items.0	Finalidad y uso previsto
+corp-responsible.c8.viz.items.1	Fuentes de datos
+corp-responsible.c8.viz.items.2	Rendimiento y pruebas
+corp-responsible.c8.viz.items.3	Limitaciones conocidas
+corp-responsible.c8.viz.items.4	Contactos y responsables
+corp-responsible.c9.title	El objetivo es la confianza
+corp-responsible.c9.text	La IA responsable no es un freno: genera la confianza que permite a clientes, reguladores y empleados aceptar la IA a gran escala.
+corp-responsible.c9.viz.steps.0	Prácticas responsables
+corp-responsible.c9.viz.steps.1	Confianza
+corp-responsible.c9.viz.steps.2	Adopción
+corp-responsible.c9.viz.steps.3	Valor
+corp-ops.title	MLOps y LLMOps
+corp-ops.summary	Operar la IA en producción con fiabilidad.
+corp-ops.q0.q	¿Qué debe ocurrir antes de publicar una nueva versión de un prompt?
+corp-ops.q0.o0	Nada
+corp-ops.q0.o1	Debe superar evaluaciones automáticas
+corp-ops.q0.o2	Necesita una nota de prensa
+corp-ops.q0.x	Las puertas de evaluación evitan regresiones.
+corp-ops.q1.q	¿Qué es la deriva de datos?
+corp-ops.q1.o0	Que se borren datos
+corp-ops.q1.o1	Que los datos de entrada cambien y empeore el rendimiento del modelo
+corp-ops.q1.o2	Datos más rápidos
+corp-ops.q1.x	Vigila y reentrena.
+corp-ops.q2.q	¿Qué permite desactivar una función de IA sin volver a desplegar?
+corp-ops.q2.o0	Un servidor más grande
+corp-ops.q2.o1	Un feature flag
+corp-ops.q2.o2	Un modelo nuevo
+corp-ops.q2.x	Los feature flags dan un control rápido.
+corp-ops.c0.title	Los modelos son sistemas vivos
+corp-ops.c0.text	A diferencia del software tradicional, el comportamiento de la IA depende de datos y modelos que cambian. La IA en producción necesita monitorización, reentrenamiento y evaluación continuos.
+corp-ops.c0.viz.steps.0	Desarrollar
+corp-ops.c0.viz.steps.1	Desplegar
+corp-ops.c0.viz.steps.2	Monitorizar
+corp-ops.c0.viz.steps.3	Mejorar y redesplegar
+corp-ops.c1.title	MLOps
+corp-ops.c1.text	MLOps aplica las prácticas DevOps al aprendizaje automático: versionar datos y modelos, automatizar los pipelines de entrenamiento, probar antes de desplegar y monitorizar en producción.
+corp-ops.c1.viz.steps.0	Datos versionados
+corp-ops.c1.viz.steps.1	Entrenamiento automático
+corp-ops.c1.viz.steps.2	Pruebas de validación
+corp-ops.c1.viz.steps.3	Desplegar
+corp-ops.c1.viz.steps.4	Vigilar la deriva
+corp-ops.c2.title	LLMOps
+corp-ops.c2.text	En la IA generativa, las piezas que cambian son los prompts, los índices de recuperación, las herramientas, las salvaguardas y las versiones de los modelos. Todo debe versionarse, probarse y monitorizarse.
+corp-ops.c2.viz.items.0	Versiones de prompts
+corp-ops.c2.viz.items.1	Índices de recuperación
+corp-ops.c2.viz.items.2	Definiciones de herramientas
+corp-ops.c2.viz.items.3	Reglas de salvaguarda
+corp-ops.c2.viz.items.4	Versiones de modelos
+corp-ops.c3.title	Puertas de evaluación
+corp-ops.c3.text	Cada cambio (nuevo prompt, nuevo modelo, nuevos datos) pasa por evaluaciones automáticas antes de publicarse. Si la calidad baja, el cambio no sale.
+corp-ops.c3.viz.steps.0	Cambio propuesto
+corp-ops.c3.viz.steps.1	Ejecutar evaluaciones
+corp-ops.c3.viz.steps.2	Comparar con lo actual
+corp-ops.c3.viz.steps.3	Publicar solo si iguala o mejora
+corp-ops.c4.title	Vigilar la calidad
+corp-ops.c4.text	Sigue indicadores indirectos de precisión (opiniones de usuarios, tasas de corrección y de escalado), la deriva de las entradas, la latencia, los errores y el coste. Toma muestras de respuestas para revisión humana.
+corp-ops.c4.viz.items.0	Opiniones de usuarios
+corp-ops.c4.viz.items.1	Tasas de corrección y escalado
+corp-ops.c4.viz.items.2	Deriva de entradas
+corp-ops.c4.viz.items.3	Latencia y errores
+corp-ops.c4.viz.items.4	Coste
+corp-ops.c5.title	Deriva de datos
+corp-ops.c5.text	Cuando cambian los datos de entrada (nuevos productos, nuevos formatos de documentos, nuevos mercados), el rendimiento del modelo puede degradarse sin que nadie lo note. La detección de deriva alerta al equipo.
+corp-ops.c5.viz.events.0.y	ene
+corp-ops.c5.viz.events.0.l	modelo preciso
+corp-ops.c5.viz.events.1.y	abr
+corp-ops.c5.viz.events.1.l	nuevos formatos de proveedor
+corp-ops.c5.viz.events.2.y	jun
+corp-ops.c5.viz.events.2.l	la precisión cae
+corp-ops.c5.viz.events.3.y	jul
+corp-ops.c5.viz.events.3.l	alerta de deriva, reentrenar
+corp-ops.c6.title	Reversiones
+corp-ops.c6.text	Ten lista la versión anterior. Si una publicación causa problemas, revierte rápido. Los feature flags permiten desactivar funciones de IA sin volver a desplegar.
+corp-ops.c6.viz.steps.0	Nueva versión activa
+corp-ops.c6.viz.steps.1	Problema detectado
+corp-ops.c6.viz.steps.2	Desactivar flag o revertir
+corp-ops.c6.viz.steps.3	Investigar
+corp-ops.c7.title	Control de costes
+corp-ops.c7.text	Los costes de la IA generativa crecen con el uso. Sigue el gasto por aplicación y equipo, fija presupuestos y alertas, y optimiza los prompts y la elección de modelo.
+corp-ops.c7.viz.items.0	Gasto por app y equipo
+corp-ops.c7.viz.items.1	Presupuestos y alertas
+corp-ops.c7.viz.items.2	Tokens por petición
+corp-ops.c7.viz.items.3	Tasa de aciertos de caché
+corp-ops.c7.viz.items.4	Mezcla de modelos
+corp-ops.c8.title	Ciclos de retroalimentación humana
+corp-ops.c8.text	Las correcciones de los usuarios son datos valiosos de entrenamiento y evaluación. Recógelas de forma sistemática para mejorar prompts, recuperación y modelos.
+corp-ops.c8.viz.steps.0	Respuesta de la IA
+corp-ops.c8.viz.steps.1	El usuario la corrige
+corp-ops.c8.viz.steps.2	Corrección registrada
+corp-ops.c8.viz.steps.3	Se usa para mejorar
+corp-ops.c9.title	Equipos de plataforma
+corp-ops.c9.text	Un equipo central de plataforma suele proporcionar las herramientas (pipelines, pasarela, monitorización, marcos de evaluación) para que los equipos de producto se centren en los casos de uso.
+corp-ops.c9.viz.l.t	Equipo de plataforma
+corp-ops.c9.viz.l.items.0	herramientas comunes
+corp-ops.c9.viz.l.items.1	estándares
+corp-ops.c9.viz.l.items.2	fiabilidad
+corp-ops.c9.viz.r.t	Equipos de producto
+corp-ops.c9.viz.r.items.0	casos de uso
+corp-ops.c9.viz.r.items.1	resultados de negocio
+corp-ops.c9.viz.r.items.2	necesidades de usuarios
+corp-scale.title	Del piloto a producción
+corp-scale.summary	Salir del purgatorio de los pilotos.
+corp-scale.q0.q	¿Qué es el «purgatorio de los pilotos»?
+corp-scale.q0.o0	Un curso de formación
+corp-scale.q0.o1	Muchos pilotos que nunca llegan a producción
+corp-scale.q0.o2	Un fallo de seguridad
+corp-scale.q0.x	Los pilotos se estancan sin responsables, integración ni pruebas de valor.
+corp-scale.q1.q	¿Dónde debería estar una herramienta de IA para lograr una adopción alta?
+corp-scale.q1.o0	En una web aparte
+corp-scale.q1.o1	Dentro de las herramientas de trabajo que la gente ya usa
+corp-scale.q1.o2	En un póster
+corp-scale.q1.x	Las herramientas integradas se usan.
+corp-scale.q2.q	¿Qué debe pasar con los resultados de IA de baja confianza?
+corp-scale.q2.o0	Aprobarlos automáticamente
+corp-scale.q2.o1	Derivarlos a personas
+corp-scale.q2.o2	Borrarlos
+corp-scale.q2.x	Las excepciones van a las personas.
+corp-scale.c0.title	El purgatorio de los pilotos
+corp-scale.c0.text	Muchas organizaciones tienen decenas de pilotos de IA que impresionan en las demos pero nunca escalan. Causas habituales: falta de un responsable claro, sin plan de integración, valor no demostrado y cuestiones de riesgo sin resolver.
+corp-scale.c0.viz.items.0	Sin responsable de negocio
+corp-scale.c0.viz.items.1	Sin plan de integración
+corp-scale.c0.viz.items.2	Valor no medido
+corp-scale.c0.viz.items.3	Riesgos sin resolver
+corp-scale.c0.viz.items.4	El equipo pasa a otra cosa
+corp-scale.c1.title	Diseña para producción desde el primer día
+corp-scale.c1.text	Incluso en un piloto, usa datos reales, usuarios reales, la arquitectura objetivo y los controles de seguridad. Una demo con datos de muestra limpios demuestra poco.
+corp-scale.c1.viz.l.t	Piloto de demo
+corp-scale.c1.viz.l.items.0	datos de muestra
+corp-scale.c1.viz.l.items.1	aislado
+corp-scale.c1.viz.l.items.2	diapositivas vistosas

@@ -55,7 +55,7 @@ ai-learn.c5.title	Características: lo que mira el modelo
 ai-learn.c5.text	Un modelo nunca ve «una casa». Ve números que la describen, llamados características: superficie, número de dormitorios, distancia a la costa, año de construcción.\n\nElegir buenas características solía ser la mayor parte del trabajo. El aprendizaje profundo aprende muchas por sí solo, pero la idea sigue siendo la misma: el modelo solo puede usar lo que le das.
 ai-learn.c5.viz.steps.0	120 m², 3 dormitorios, a 2 km de la costa
 ai-learn.c5.viz.steps.1	Modelo
-ai-learn.c5.viz.steps.2	Precio estimado 310.000 €
+ai-learn.c5.viz.steps.2	Precio estimado 310,000 €
 ai-learn.c6.title	Entrenar, validar, probar
 ai-learn.c6.text	Divides los datos antes de entrenar. El modelo aprende del conjunto de entrenamiento, ajustas parámetros con el conjunto de validación y el conjunto de prueba se queda guardado bajo llave hasta el final.\n\nSi echas un vistazo al conjunto de prueba mientras construyes el modelo, tu puntuación final será demasiado optimista.
 ai-learn.c6.viz.unit	% de los datos
@@ -387,7 +387,7 @@ ai-algos.q2.o1	Árboles con gradient boosting
 ai-algos.q2.o2	Un modelo de imágenes
 ai-algos.q2.x	Los árboles con boosting son rápidos y precisos con datos tabulares.
 ai-algos.c0.title	Regresión lineal
-ai-algos.c0.text	El truco más antiguo: trazar la mejor línea recta a través de los datos. Predice un número a partir de una suma ponderada de las entradas.\n\nEs rápida, fácil de explicar («cada m² extra suma 2.500 €») y a menudo es una buena referencia antes de probar algo más sofisticado.
+ai-algos.c0.text	El truco más antiguo: trazar la mejor línea recta a través de los datos. Predice un número a partir de una suma ponderada de las entradas.\n\nEs rápida, fácil de explicar («cada m² extra suma 2,500 €») y a menudo es una buena referencia antes de probar algo más sofisticado.
 ai-algos.c0.viz.f	precio = w₁·superficie + w₂·habitaciones + b
 ai-algos.c0.viz.items.0.s	w₁, w₂
 ai-algos.c0.viz.items.0.m	pesos aprendidos
@@ -401,11 +401,11 @@ ai-algos.c1.viz.steps.0	Suma ponderada de características
 ai-algos.c1.viz.steps.1	La curva en S la lleva a 0–1
 ai-algos.c1.viz.steps.2	0,83 → probablemente sí
 ai-algos.c2.title	Árboles de decisión
-ai-algos.c2.text	Un árbol hace una serie de preguntas de sí o no: ¿los ingresos superan los 30.000 €? ¿El cliente ha dejado de pagar alguna vez? Cada camino termina en una predicción.\n\nLos árboles son fáciles de leer y explicar, pero un único árbol tiende a sobreajustarse.
+ai-algos.c2.text	Un árbol hace una serie de preguntas de sí o no: ¿los ingresos superan los 30,000 €? ¿El cliente ha dejado de pagar alguna vez? Cada camino termina en una predicción.\n\nLos árboles son fáciles de leer y explicar, pero un único árbol tiende a sobreajustarse.
 ai-algos.c2.viz.root	¿Impagó alguna vez?
 ai-algos.c2.viz.items.0	Sí → riesgo alto
-ai-algos.c2.viz.items.1	No, ingresos < 30.000 € → medio
-ai-algos.c2.viz.items.2	No, ingresos ≥ 30.000 € → riesgo bajo
+ai-algos.c2.viz.items.1	No, ingresos < 30,000 € → medio
+ai-algos.c2.viz.items.2	No, ingresos ≥ 30,000 € → riesgo bajo
 ai-algos.c3.title	Bosques aleatorios
 ai-algos.c3.text	Entrena cientos de árboles de decisión ligeramente distintos con porciones aleatorias de los datos y deja que voten. El conjunto es mucho más preciso y estable que cualquier árbol individual.
 ai-algos.c3.viz.steps.0	Muchos árboles con muestras al azar
@@ -898,3 +898,858 @@ ai-recs.c8.title	Medir los recomendadores
 ai-recs.c8.text	Offline, los equipos comprueban si el modelo habría predicho lo que los usuarios realmente pulsaron. Online, hacen tests A/B: la mitad de los usuarios ve el sistema nuevo y se comparan clics, compras o retención.
 ai-recs.c8.viz.steps.0	Prueba offline con datos pasados
 ai-recs.c8.viz.steps.1	Test A/B con usuarios reales
+ai-recs.c8.viz.steps.2	Comparar ventas y retención
+ai-recs.c8.viz.steps.3	Desplegar el ganador
+ai-recs.c9.title	Más allá de las compras
+ai-recs.c9.text	Las mismas técnicas sugieren empleos en LinkedIn, amigos en redes sociales, artículos en apps de noticias e incluso qué pieza de recambio va a necesitar un técnico.
+ai-recs.c9.viz.items.0	Streaming y música
+ai-recs.c9.viz.items.1	Tiendas online
+ai-recs.c9.viz.items.2	Noticias y redes sociales
+ai-recs.c9.viz.items.3	Búsqueda de empleo
+ai-recs.c9.viz.items.4	Piezas de mantenimiento
+ai-rl.title	Aprender por ensayo y error
+ai-rl.summary	Aprendizaje por refuerzo, juegos y robots.
+ai-rl.q0.q	¿Qué hace que el ajedrez sea difícil para el aprendizaje por refuerzo?
+ai-rl.q0.o0	No tiene reglas
+ai-rl.q0.o1	La recompensa solo llega al final de la partida
+ai-rl.q0.o2	Hay muy pocas jugadas
+ai-rl.q0.x	Hay que atribuir el mérito a jugadas anteriores.
+ai-rl.q1.q	Un agente que aprovecha un resquicio para conseguir puntos sin hacer la tarea es…
+ai-rl.q1.o0	Sobreajuste
+ai-rl.q1.o1	Reward hacking (trampa de la recompensa)
+ai-rl.q1.o2	Autojuego
+ai-rl.q1.x	Optimiza la recompensa al pie de la letra.
+ai-rl.q2.q	¿Por qué los robots suelen aprender primero en simulación?
+ai-rl.q2.o0	Los simuladores son más bonitos
+ai-rl.q2.o1	Es más rápido, más barato y fallar no tiene riesgo
+ai-rl.q2.o2	Los robots reales no pueden aprender
+ai-rl.q2.x	Millones de intentos desgastarían un robot real.
+ai-rl.c0.title	Agente, entorno, recompensa
+ai-rl.c0.text	El aprendizaje por refuerzo tiene tres ingredientes: un agente que actúa, un entorno que responde y una señal de recompensa que indica lo bien que lo está haciendo. El objetivo del agente es maximizar la recompensa total a lo largo del tiempo.
+ai-rl.c0.viz.steps.0	El agente ve el estado
+ai-rl.c0.viz.steps.1	El agente actúa
+ai-rl.c0.viz.steps.2	El entorno cambia
+ai-rl.c0.viz.steps.3	Llega la recompensa
+ai-rl.c1.title	Exploración frente a explotación
+ai-rl.c1.text	¿Debe el agente repetir lo que funcionó antes o probar algo nuevo que podría funcionar mejor? Con poca exploración se estanca; con demasiada, nunca saca provecho.
+ai-rl.c1.viz.l.t	Explotar
+ai-rl.c1.viz.l.items.0	usar la mejor jugada conocida
+ai-rl.c1.viz.l.items.1	fiable ahora
+ai-rl.c1.viz.r.t	Explorar
+ai-rl.c1.viz.r.items.0	probar jugadas nuevas
+ai-rl.c1.viz.r.items.1	puede hallar algo mejor
+ai-rl.c2.title	Recompensas diferidas
+ai-rl.c2.text	En el ajedrez, la recompensa solo llega al final: ganar o perder. El agente tiene que averiguar cuáles de sus jugadas anteriores merecen el mérito. Esta «asignación de mérito» es lo que hace difícil el aprendizaje por refuerzo.
+ai-rl.c2.viz.events.0.y	Jugada 1
+ai-rl.c2.viz.events.0.l	apertura tranquila
+ai-rl.c2.viz.events.1.y	Jugada 14
+ai-rl.c2.viz.events.1.l	sacrificio clave
+ai-rl.c2.viz.events.2.y	Jugada 30
+ai-rl.c2.viz.events.2.l	ataque
+ai-rl.c2.viz.events.3.y	Jugada 41
+ai-rl.c2.viz.events.3.l	jaque mate, recompensa +1
+ai-rl.c3.title	AlphaGo
+ai-rl.c3.text	El go tiene más posiciones posibles que átomos hay en el universo observable. En 2016, AlphaGo, de DeepMind, venció 4–1 a Lee Sedol, uno de los mejores jugadores del mundo. Su sucesor, AlphaZero, aprendió únicamente jugando contra sí mismo.
+ai-rl.c3.viz.events.0.l	Deep Blue gana a Kaspárov al ajedrez
+ai-rl.c3.viz.events.1.l	AlphaGo gana a Lee Sedol al go
+ai-rl.c3.viz.events.2.l	AlphaZero aprende jugando solo
+ai-rl.c3.viz.events.3.l	AlphaStar llega al nivel top en StarCraft II
+ai-rl.c4.title	Autojuego
+ai-rl.c4.text	Un agente puede ser su propio rival. Cada nueva versión juega contra versiones anteriores y mejora paso a paso sin partidas humanas que copiar. Incluso puede descubrir estrategias que los humanos nunca probaron.
+ai-rl.c4.viz.steps.0	Jugar contra sí mismo
+ai-rl.c4.viz.steps.1	Aprender de los resultados
+ai-rl.c4.viz.steps.2	Ser una versión más fuerte
+ai-rl.c4.viz.steps.3	Volver a jugar
+ai-rl.c5.title	Primero, la simulación
+ai-rl.c5.text	Los robots que aprendieran por ensayo y error acabarían rompiéndose. Por eso entrenan en un simulador físico, millones de veces más rápido que la vida real, y luego pasan a la máquina real.
+ai-rl.c5.viz.steps.0	Entrenar en simulación
+ai-rl.c5.viz.steps.1	Añadir variaciones al azar
+ai-rl.c5.viz.steps.2	Probar en el robot real
+ai-rl.c5.viz.steps.3	Ajuste fino
+ai-rl.c6.title	Trampas con la recompensa
+ai-rl.c6.text	Los agentes optimizan exactamente lo que recompensas, no lo que querías decir. Un agente de carreras de barcos aprendió una vez a dar vueltas en círculo recogiendo puntos en lugar de terminar la carrera.\n\nDiseñar recompensas que capten lo que de verdad quieres es sorprendentemente difícil.
+ai-rl.c6.viz.items.0.w	premiar puntos recogidos
+ai-rl.c6.viz.items.0.r	premiar terminar la carrera
+ai-rl.c6.viz.items.1.w	premiar «cero quejas»
+ai-rl.c6.viz.items.1.r	premiar problemas resueltos
+ai-rl.c7.title	El refuerzo en el mundo real
+ai-rl.c7.text	Fuera de los juegos, el aprendizaje por refuerzo se ha usado para reducir la energía de refrigeración de centros de datos, controlar brazos robóticos, optimizar el diseño de chips y ajustar estrategias de trading o de precios, normalmente con límites de seguridad estrictos.
+ai-rl.c7.viz.items.0	Refrigeración de centros de datos
+ai-rl.c7.viz.items.1	Control de robots
+ai-rl.c7.viz.items.2	Diseño de chips
+ai-rl.c7.viz.items.3	Tiempos de semáforos
+ai-rl.c7.viz.items.4	Secuencias de recomendaciones
+ai-rl.c8.title	Refuerzo con feedback humano
+ai-rl.c8.text	Los chatbots se pulen con una forma de aprendizaje por refuerzo: las personas comparan pares de respuestas, un modelo de recompensa aprende sus preferencias y el chatbot se entrena para dar respuestas que ese modelo puntúe alto.
+ai-rl.c8.viz.steps.0	El modelo escribe dos respuestas
+ai-rl.c8.viz.steps.1	Las personas eligen la mejor
+ai-rl.c8.viz.steps.2	El modelo de recompensa aprende
+ai-rl.c8.viz.steps.3	El chatbot aprende a puntuar más
+ai-rl.c9.title	Por qué el refuerzo es difícil
+ai-rl.c9.text	Necesita muchísimos intentos, una recompensa clara y un lugar seguro donde fallar. Por eso triunfa en juegos y simuladores y se usa con cuidado en el mundo físico.
+ai-rl.c9.viz.items.0	Requiere millones de intentos
+ai-rl.c9.viz.items.1	La recompensa debe estar bien diseñada
+ai-rl.c9.viz.items.2	Los fallos deben ser seguros
+ai-rl.c9.viz.items.3	Los resultados pueden ser inestables
+ai-history.title	Breve historia de la IA
+ai-history.summary	De la pregunta de Turing a los asistentes de hoy, con dos inviernos por medio.
+ai-history.q0.q	¿Quién propuso el «juego de la imitación» en 1950?
+ai-history.q0.o0	John McCarthy
+ai-history.q0.o1	Alan Turing
+ai-history.q0.o2	Geoffrey Hinton
+ai-history.q0.x	El artículo de Turing de 1950 presentó lo que hoy llamamos test de Turing.
+ai-history.q1.q	¿Qué invento de 2017 es la base de los grandes modelos de lenguaje actuales?
+ai-history.q1.o0	La GPU
+ai-history.q1.o1	La arquitectura Transformer
+ai-history.q1.o2	Los sistemas expertos
+ai-history.q1.x	La presentó el artículo «Attention Is All You Need».
+ai-history.q2.q	¿Qué causó los inviernos de la IA?
+ai-history.q2.o0	Prohibiciones de hardware
+ai-history.q2.o1	Que las promesas fueron más rápido que los resultados, y se recortó la financiación
+ai-history.q2.o2	La falta de electricidad
+ai-history.q2.x	La decepción llevó a recortes de financiación.
+ai-history.c0.title	¿Pueden pensar las máquinas?
+ai-history.c0.text	En 1950, Alan Turing propuso una prueba práctica: si un juez que chatea por texto no puede distinguir una máquina de una persona, podríamos decir que la máquina piensa. Él lo llamó el juego de la imitación; nosotros lo llamamos test de Turing.
+ai-history.c0.viz.events.0.l	Turing describe una máquina universal
+ai-history.c0.viz.events.1.l	el juego de la imitación
+ai-history.c0.viz.events.2.l	nace el término «inteligencia artificial»
+ai-history.c1.title	Dartmouth, 1956
+ai-history.c1.text	Un taller de verano en el Dartmouth College dio nombre a la disciplina. Sus organizadores creían que un pequeño grupo podría lograr avances significativos en inteligencia artificial en un solo verano. Tardaron algo más.
+ai-history.c1.viz.items.0.l	la IA recibe su nombre en Dartmouth
+ai-history.c1.viz.items.1.l	investigadores en el núcleo de la propuesta
+ai-history.c1.viz.items.2.l	años después, sigue en marcha
+ai-history.c2.title	IA simbólica
+ai-history.c2.text	La primera IA intentó escribir la inteligencia como reglas y lógica: si pasa esto, entonces aquello. Resolvía rompecabezas y demostraba teoremas, pero tenía problemas con tareas desordenadas del mundo real, como reconocer una cara o entender el habla.
+ai-history.c2.viz.l.t	IA simbólica
+ai-history.c2.viz.l.items.0	reglas escritas a mano
+ai-history.c2.viz.l.items.1	razonamiento claro
+ai-history.c2.viz.l.items.2	frágil con datos caóticos
+ai-history.c2.viz.r.t	Aprendizaje automático
+ai-history.c2.viz.r.items.0	aprende de ejemplos
+ai-history.c2.viz.r.items.1	tolera el desorden
+ai-history.c2.viz.r.items.2	más difícil de explicar
+ai-history.c3.title	Los inviernos de la IA
+ai-history.c3.text	En dos ocasiones, las grandes promesas se toparon con resultados decepcionantes y la financiación se agotó: a mediados de los años setenta y de nuevo a finales de los ochenta, cuando los «sistemas expertos» basados en reglas resultaron caros de mantener.
+ai-history.c3.viz.events.0.l	decepciona la primera traducción automática
+ai-history.c3.viz.events.1.l	primer invierno de la IA
+ai-history.c3.viz.events.2.l	auge de los sistemas expertos
+ai-history.c3.viz.events.3.l	segundo invierno
+ai-history.c3.viz.events.4.l	Deep Blue reaviva el interés
+ai-history.c4.title	Sistemas expertos
+ai-history.c4.text	En los años ochenta, las empresas construyeron sistemas expertos: miles de reglas extraídas de especialistas humanos, para tareas como configurar ordenadores o diagnosticar infecciones. Funcionaban en ámbitos reducidos, pero cada situación nueva requería reglas nuevas.
+ai-history.c4.viz.steps.0	Entrevistar a expertos
+ai-history.c4.viz.steps.1	Escribir miles de reglas
+ai-history.c4.viz.steps.2	Funciona en un ámbito reducido
+ai-history.c4.viz.steps.3	Falla con casos nuevos
+ai-history.c5.title	El giro estadístico
+ai-history.c5.text	A partir de los años noventa, los investigadores dejaron cada vez más que las máquinas aprendieran de los datos en lugar de escribir reglas. Los filtros de spam, la clasificación de búsquedas y el reconocimiento de voz mejoraron sin parar con más datos y ordenadores más rápidos.
+ai-history.c5.viz.steps.0	Más datos en línea
+ai-history.c5.viz.steps.1	Ordenadores más rápidos
+ai-history.c5.viz.steps.2	Aprendizaje estadístico
+ai-history.c5.viz.steps.3	Avances prácticos constantes
+ai-history.c6.title	La revolución del aprendizaje profundo
+ai-history.c6.text	Hacia 2012 se juntaron tres ingredientes: enormes conjuntos de datos etiquetados, computación barata con GPU y mejores trucos para entrenar redes neuronales profundas. El reconocimiento de imágenes, después el de voz y después la traducción mejoraron de forma espectacular.
+ai-history.c6.viz.items.0	Auge del aprendizaje profundo
+ai-history.c6.viz.items.1	Mejores algoritmos
+ai-history.c6.viz.items.2	Computación con GPU
+ai-history.c6.viz.items.3	Big data
+ai-history.c7.title	El Transformer, 2017
+ai-history.c7.text	Un artículo de Google titulado «Attention Is All You Need» presentó la arquitectura Transformer. Procesa secuencias enteras a la vez y permite que cada palabra preste atención a todas las demás. Casi todos los grandes modelos de lenguaje desde entonces se basan en ella.
+ai-history.c7.viz.events.0.l	artículo del Transformer
+ai-history.c7.viz.events.1.l	BERT y GPT-1
+ai-history.c7.viz.events.2.l	GPT-3
+ai-history.c7.viz.events.3.l	ChatGPT
+ai-history.c7.viz.events.4.l	GPT-4 y Claude
+ai-history.c8.title	El lanzamiento de ChatGPT
+ai-history.c8.text	ChatGPT se lanzó el 30 de noviembre de 2022 y, según se informó, alcanzó unos 100 millones de usuarios en dos meses, lo que la convirtió en una de las aplicaciones de consumo de crecimiento más rápido de la historia.
+ai-history.c8.viz.items.0.v	30 nov 2022
+ai-history.c8.viz.items.0.l	lanzamiento
+ai-history.c8.viz.items.1.v	~100 M
+ai-history.c8.viz.items.1.l	usuarios en unos dos meses
+ai-history.c9.title	Lecciones de la historia
+ai-history.c9.text	La IA se ha sobrevalorado una y otra vez a corto plazo y se ha subestimado a largo plazo. El progreso llega a saltos cuando se alinean los datos, la potencia de cálculo y las ideas nuevas.
+ai-history.c9.viz.items.0	El bombo a corto plazo suele decepcionar
+ai-history.c9.viz.items.1	El progreso a largo plazo es real
+ai-history.c9.viz.items.2	Datos y cálculo impulsan los saltos
+ai-history.c9.viz.items.3	Ideas nuevas resuelven problemas viejos
+ai-hardware.title	El hardware detrás de la IA
+ai-hardware.summary	GPU, chips, memoria y por qué entrenar cuesta tanto.
+ai-hardware.q0.q	Usar un modelo ya entrenado para responder preguntas se llama…
+ai-hardware.q0.o0	Entrenamiento
+ai-hardware.q0.o1	Inferencia
+ai-hardware.q0.o2	Cuantización
+ai-hardware.q0.x	La inferencia es ejecutar el modelo; el entrenamiento lo construye.
+ai-hardware.q1.q	¿Qué hace la cuantización a 4 bits?
+ai-hardware.q1.o0	Hace el modelo más listo
+ai-hardware.q1.o1	Guarda los pesos con menos bits para que sea más pequeño y rápido
+ai-hardware.q1.o2	Añade más parámetros
+ai-hardware.q1.x	Menos bits por peso reducen el uso de memoria.
+ai-hardware.q2.q	¿Por qué las GPU son buenas para la IA?
+ai-hardware.q2.o0	Tienen más ranuras de RAM
+ai-hardware.q2.o1	Hacen miles de cálculos idénticos en paralelo
+ai-hardware.q2.o2	Ejecutan Windows más rápido
+ai-hardware.q2.x	Las redes neuronales son sobre todo cálculo matricial en paralelo.
+ai-hardware.c0.title	Entrenamiento frente a inferencia
+ai-hardware.c0.text	Entrenar es aprender los pesos: lento, se hace una vez (o de vez en cuando) en enormes clústeres. La inferencia es usar el modelo entrenado para responder: rápida, se hace millones de veces, a menudo en hardware más pequeño.
+ai-hardware.c0.viz.l.t	Entrenamiento
+ai-hardware.c0.viz.l.items.0	semanas en miles de GPU
+ai-hardware.c0.viz.l.items.1	carísimo
+ai-hardware.c0.viz.l.items.2	se hace pocas veces
+ai-hardware.c0.viz.r.t	Inferencia
+ai-hardware.c0.viz.r.items.0	milisegundos por respuesta
+ai-hardware.c0.viz.r.items.1	funciona sin parar
+ai-hardware.c0.viz.r.items.2	importa el coste por consulta
+ai-hardware.c1.title	GPU y cálculo matricial
+ai-hardware.c1.text	Las redes neuronales consisten sobre todo en multiplicar grandes cuadrículas de números. Las GPU tienen miles de núcleos que hacen el mismo cálculo en paralelo, lo que las hace decenas de veces más rápidas que las CPU para este trabajo.
+ai-hardware.c1.viz.unit	velocidad relativa (ilustrativa)
+ai-hardware.c1.viz.items.0.l	CPU
+ai-hardware.c1.viz.items.1.l	GPU
+ai-hardware.c2.title	Chips especializados en IA
+ai-hardware.c2.text	Además de las GPU, las empresas fabrican chips diseñados solo para redes neuronales: las TPU de Google, los aceleradores de los móviles (motores neuronales) y pequeños chips para el borde, como la Coral TPU que se usa para la detección en cámaras.
+ai-hardware.c2.viz.root	Chips de IA
+ai-hardware.c2.viz.items.0	GPU (Nvidia, AMD)
+ai-hardware.c2.viz.items.1	TPU (Google)
+ai-hardware.c2.viz.items.2	Motores neuronales de móviles
+ai-hardware.c2.viz.items.3	Aceleradores de borde
+ai-hardware.c3.title	La memoria suele ser el cuello de botella
+ai-hardware.c3.text	Los pesos de un modelo tienen que estar en memoria rápida mientras se ejecuta. Los modelos grandes necesitan mucha; mover datos dentro y fuera de la memoria suele limitar la velocidad más que la potencia de cálculo bruta.
+ai-hardware.c3.viz.steps.0	Pesos en la memoria de la GPU
+ai-hardware.c3.viz.steps.1	Se leen para cada token
+ai-hardware.c3.viz.steps.2	El ancho de banda limita la velocidad
+ai-hardware.c4.title	FLOP
+ai-hardware.c4.text	La potencia de cálculo se mide en FLOP: operaciones de coma flotante. Entrenar un modelo grande requiere una cantidad enorme, a menudo más de 10²⁴ operaciones.
+ai-hardware.c4.viz.f	FLOP/s = operaciones por segundo
+ai-hardware.c4.viz.items.0.s	tera
+ai-hardware.c4.viz.items.0.m	un billón por segundo
+ai-hardware.c4.viz.items.1.s	peta
+ai-hardware.c4.viz.items.1.m	mil billones
+ai-hardware.c4.viz.items.2.s	exa
+ai-hardware.c4.viz.items.2.m	un trillón
+ai-hardware.c5.title	Cuantización
+ai-hardware.c5.text	Los pesos se pueden guardar con menos bits: 8 o 4 bits en lugar de 16. El modelo se vuelve de 2 a 4 veces más pequeño y rápido, normalmente con solo una pequeña pérdida de calidad. Así es como los modelos grandes funcionan en portátiles y móviles.
+ai-hardware.c5.viz.unit	GB para un modelo de 7B
+ai-hardware.c5.viz.items.0.l	16 bits
+ai-hardware.c5.viz.items.1.l	8 bits
+ai-hardware.c5.viz.items.2.l	4 bits
+ai-hardware.c6.title	Consumo de energía
+ai-hardware.c6.text	En algunos países, los centros de datos ya consumen una parte apreciable de la electricidad, y la IA está aumentando esa demanda. Las mejoras de eficiencia por cálculo son grandes, pero el consumo total sigue subiendo a medida que la IA se extiende.
+ai-hardware.c6.viz.items.0	Entrenar: gran coste energético puntual
+ai-hardware.c6.viz.items.1	Inferencia: poco por consulta, enorme en total
+ai-hardware.c6.viz.items.2	La refrigeración suma a la factura
+ai-hardware.c6.viz.items.3	Importan la ubicación y la energía limpia
+ai-hardware.c7.title	Nube frente a local
+ai-hardware.c7.text	Puedes alquilar IA por llamada en la nube o ejecutar modelos en tu propio hardware. La nube te da los modelos más grandes sin inversión inicial; lo local te da privacidad, costes previsibles y uso sin conexión.
+ai-hardware.c7.viz.l.t	Nube
+ai-hardware.c7.viz.l.items.0	los modelos más grandes
+ai-hardware.c7.viz.l.items.1	pago por uso
+ai-hardware.c7.viz.l.items.2	los datos salen de tu red
+ai-hardware.c7.viz.r.t	Local
+ai-hardware.c7.viz.r.items.0	los datos se quedan en casa
+ai-hardware.c7.viz.r.items.1	coste fijo
+ai-hardware.c7.viz.r.items.2	modelos más pequeños
+ai-hardware.c8.title	Escalado
+ai-hardware.c8.text	Los investigadores descubrieron que los modelos mejoran de forma predecible cuando se aumentan a la vez los datos, los parámetros y el cálculo. Estas «leyes de escalado» justificaron construir clústeres cada vez más grandes.
+ai-hardware.c8.viz.steps.0	Más datos
+ai-hardware.c8.viz.steps.1	Modelo más grande
+ai-hardware.c8.viz.steps.2	Más cálculo
+ai-hardware.c8.viz.steps.3	Menos error, de forma predecible
+ai-hardware.c9.title	Cadena de suministro
+ai-hardware.c9.text	La mayoría de los chips de IA más avanzados se diseñan en EE. UU. y los fabrica TSMC en Taiwán con máquinas de litografía de ASML, en los Países Bajos. Esta concentración convierte los chips en una cuestión estratégica y geopolítica.
+ai-hardware.c9.viz.steps.0	Diseño: Nvidia, AMD, Google
+ai-hardware.c9.viz.steps.1	Fabricación: TSMC, Taiwán
+ai-hardware.c9.viz.steps.2	Máquinas: ASML, Países Bajos
+ai-hardware.c9.viz.steps.3	Centros de datos en todo el mundo
+ai-bias.title	Sesgo y equidad
+ai-bias.summary	Cómo heredan los modelos la injusticia de los datos y qué hacer al respecto.
+ai-bias.q0.q	¿Por qué no basta con borrar la columna «sexo» para eliminar el sesgo de género?
+ai-bias.q0.o0	Siempre basta
+ai-bias.q0.o1	Otras características pueden actuar como indicadores indirectos del género
+ai-bias.q0.o2	Los modelos no pueden leer columnas
+ai-bias.q0.x	Los nombres, los centros de estudios o las pausas en la carrera pueden revelarlo indirectamente.
+ai-bias.q1.q	Un modelo tiene un 95 % de exactitud global. ¿Qué deberías comprobar a continuación?
+ai-bias.q1.o0	Nada
+ai-bias.q1.o1	La exactitud desglosada por grupo
+ai-bias.q1.o2	El color del panel
+ai-bias.q1.x	Las medias pueden ocultar malos resultados para algunos grupos.
+ai-bias.q2.q	Según el Reglamento de IA de la UE, el cribado de currículos para contratar es…
+ai-bias.q2.o0	Prohibido
+ai-bias.q2.o1	Un uso de alto riesgo con obligaciones adicionales
+ai-bias.q2.o2	No regulado
+ai-bias.q2.x	Las decisiones de empleo figuran como de alto riesgo.
+ai-bias.c0.title	Los modelos aprenden nuestro pasado
+ai-bias.c0.text	Un modelo entrenado con decisiones históricas aprende sus patrones, incluidos los injustos. Si en el pasado se favoreció a un grupo al contratar, un modelo entrenado con esos datos también lo hará.
+ai-bias.c0.viz.steps.0	Decisiones históricas sesgadas
+ai-bias.c0.viz.steps.1	Datos de entrenamiento
+ai-bias.c0.viz.steps.2	El modelo copia el patrón
+ai-bias.c0.viz.steps.3	Decisiones sesgadas a gran escala
+ai-bias.c1.title	Un ejemplo real
+ai-bias.c1.text	Según se informó, Amazon descartó hacia 2018 una herramienta experimental de cribado de currículos tras descubrir que penalizaba los que contenían la palabra «women's» (de mujeres), porque había aprendido de una década de contrataciones mayoritariamente masculinas.
+ai-bias.c1.viz.items.0.w	«club de ajedrez femenino» puntuaba menos
+ai-bias.c1.viz.items.0.r	quitar señales indirectas y probar por grupo
+ai-bias.c2.title	Variables indirectas
+ai-bias.c2.text	Eliminar un campo sensible como el sexo no basta. Otros campos pueden actuar como indicadores indirectos: nombres de pila, ciertos centros de estudios, códigos postales, historial de jornada parcial. El modelo puede redescubrir el atributo sensible de forma indirecta.
+ai-bias.c2.viz.items.0.a	Código postal
+ai-bias.c2.viz.items.0.b	puede revelar etnia o ingresos
+ai-bias.c2.viz.items.1.a	Nombre de pila
+ai-bias.c2.viz.items.1.b	puede revelar el sexo
+ai-bias.c2.viz.items.2.a	Pausas laborales
+ai-bias.c2.viz.items.2.b	pueden revelar hijos
+ai-bias.c3.title	Mide el rendimiento por grupo
+ai-bias.c3.text	La exactitud global puede ocultar grandes diferencias. Desglosa siempre los resultados: ¿funciona el modelo igual de bien con mujeres y hombres, con clientes mayores y jóvenes, en distintas regiones?
+ai-bias.c3.viz.unit	% de error por grupo (ilustrativo)
+ai-bias.c3.viz.items.0.l	Grupo A
+ai-bias.c3.viz.items.1.l	Grupo B
+ai-bias.c3.viz.items.2.l	Grupo C
+ai-bias.c4.title	Distintas definiciones de justo
+ai-bias.c4.text	¿Deberían ser iguales las tasas de aprobación entre grupos? ¿O las tasas de error? ¿O deberían las personas igual de cualificadas obtener resultados iguales? Estas definiciones pueden entrar en conflicto matemáticamente, así que hay que elegir de forma deliberada.
+ai-bias.c4.viz.items.0	Tasas de aprobación iguales
+ai-bias.c4.viz.items.1	Tasas de error iguales
+ai-bias.c4.viz.items.2	Igual trato a personas igual de cualificadas
+ai-bias.c4.viz.items.3	Elige y documenta tu definición
+ai-bias.c5.title	Bucles de retroalimentación
+ai-bias.c5.text	Las predicciones sesgadas pueden crear los datos que las confirman. Si un sistema envía más inspectores a una zona, encuentra más problemas allí, lo que hace que la siguiente predicción esté todavía más sesgada.
+ai-bias.c5.viz.steps.0	La predicción dirige la atención
+ai-bias.c5.viz.steps.1	Se hallan más problemas allí
+ai-bias.c5.viz.steps.2	Los datos parecen confirmarlo
+ai-bias.c5.viz.steps.3	Predicción más fuerte
+ai-bias.c6.title	Corregir el sesgo
+ai-bias.c6.text	Puedes reequilibrar los datos de entrenamiento, eliminar variables indirectas, ajustar los umbrales según el caso de uso y mantener a una persona en el proceso para las decisiones importantes. Y vuelves a probar tras cada cambio.
+ai-bias.c6.viz.items.0	Auditar los datos de entrenamiento
+ai-bias.c6.viz.items.1	Quitar o limitar variables indirectas
+ai-bias.c6.viz.items.2	Probar resultados por grupo
+ai-bias.c6.viz.items.3	Revisión humana en decisiones clave
+ai-bias.c6.viz.items.4	Vigilar tras el lanzamiento
+ai-bias.c7.title	El sesgo no solo afecta a personas
+ai-bias.c7.text	Los datos pueden estar sesgados de muchas formas: sensores de una sola fábrica, precios de un solo mercado, fotos de una sola estación. Cualquier diferencia entre los datos de entrenamiento y la realidad se convierte en un punto ciego.
+ai-bias.c7.viz.l.t	Sesgo social
+ai-bias.c7.viz.l.items.0	sexo, edad, etnia
+ai-bias.c7.viz.l.items.1	riesgo legal y ético
+ai-bias.c7.viz.r.t	Sesgo de datos
+ai-bias.c7.viz.r.items.0	un sitio, una estación
+ai-bias.c7.viz.r.items.1	caídas silenciosas
+ai-bias.c8.title	También es la ley
+ai-bias.c8.text	En la UE, las leyes contra la discriminación también se aplican a las decisiones automatizadas, el RGPD da a las personas derechos frente a decisiones automatizadas significativas y el Reglamento de IA añade requisitos para sistemas de alto riesgo como la contratación y el scoring de crédito.
+ai-bias.c8.viz.root	Normas de la UE
+ai-bias.c8.viz.items.0	Ley de igualdad
+ai-bias.c8.viz.items.1	RGPD: decisiones automatizadas
+ai-bias.c8.viz.items.2	Reglamento IA: alto riesgo
+ai-bias.c9.title	Los equipos diversos ayudan
+ai-bias.c9.text	Los equipos con perfiles distintos tienen más probabilidades de detectar pronto los puntos ciegos. Implica a las personas afectadas por un sistema al diseñarlo y probarlo.
+ai-bias.c9.viz.steps.0	Equipo diverso
+ai-bias.c9.viz.steps.1	Hace otras preguntas
+ai-bias.c9.viz.steps.2	Ve pronto los puntos ciegos
+ai-bias.c9.viz.steps.3	Sistema más justo
+ai-safety.title	Seguridad de la IA
+ai-safety.summary	Mantener los sistemas potentes fiables, honestos y bajo control.
+ai-safety.q0.q	Las instrucciones ocultas en un documento que secuestran a un agente de IA se llaman…
+ai-safety.q0.o0	Un jailbreak
+ai-safety.q0.o1	Inyección de prompts
+ai-safety.q0.o2	Sobreajuste
+ai-safety.q0.x	El texto del atacante se inyecta a través del contenido que lee el agente.
+ai-safety.q1.q	¿Qué es el red teaming?
+ai-safety.q1.o0	Pintar de rojo los servidores
+ai-safety.q1.o1	Intentar a propósito que un modelo falle antes de lanzarlo
+ai-safety.q1.o2	Entrenar con imágenes rojas
+ai-safety.q1.x	Son pruebas adversarias estructuradas.
+ai-safety.q2.q	¿Qué es una buena práctica para un agente de IA que puede hacer pagos?
+ai-safety.q2.o0	Dejar que pague libremente
+ai-safety.q2.o1	Exigir aprobación humana para los pagos
+ai-safety.q2.o2	Ocultar sus registros
+ai-safety.q2.x	Las acciones irreversibles necesitan una comprobación humana.
+ai-safety.c0.title	Qué abarca la seguridad de la IA
+ai-safety.c0.text	La seguridad va desde la fiabilidad cotidiana (¿hace el sistema lo que debe, sin errores dañinos?) hasta cuestiones a largo plazo sobre sistemas muy capaces que persigan objetivos que no pretendíamos.
+ai-safety.c0.viz.items.0	Control a largo plazo de la IA avanzada
+ai-safety.c0.viz.items.1	Prevención del mal uso
+ai-safety.c0.viz.items.2	Conducta honesta y fiable
+ai-safety.c0.viz.items.3	Robustez cotidiana
+ai-safety.c1.title	Alineamiento
+ai-safety.c1.text	El alineamiento consiste en conseguir que un sistema persiga lo que realmente queremos, no una versión literal o distorsionada. A medida que los sistemas son más capaces, los pequeños malentendidos pueden tener consecuencias mayores.
+ai-safety.c1.viz.l.t	Lo que dijimos
+ai-safety.c1.viz.l.items.0	maximizar clics
+ai-safety.c1.viz.r.t	Lo que queríamos
+ai-safety.c1.viz.r.items.0	dar contenido que la gente valore
+ai-safety.c2.title	Cumplir la letra, no el espíritu
+ai-safety.c2.text	Los sistemas a menudo encuentran atajos inesperados que cumplen la letra de un objetivo. Las trampas con la recompensa en el aprendizaje por refuerzo son el ejemplo clásico, pero ocurre con cualquier objetivo que optimices a fondo.
+ai-safety.c2.viz.items.0.w	premiar «tests superados»
+ai-safety.c2.viz.items.0.r	premiar código correcto
+ai-safety.c2.viz.items.1.w	premiar «llamadas cortas»
+ai-safety.c2.viz.items.1.r	premiar incidencias resueltas
+ai-safety.c3.title	Robustez
+ai-safety.c3.text	Un modelo robusto sigue funcionando cuando las entradas son algo inusuales: otra forma de expresarlo, ruido, formatos raros. Los modelos frágiles pueden confundirse con pequeños cambios que una persona ni notaría.
+ai-safety.c3.viz.items.0	Probar con entradas inusuales
+ai-safety.c3.viz.items.1	Probar con datos con ruido
+ai-safety.c3.viz.items.2	Probar fuera del rango de entrenamiento
+ai-safety.c3.viz.items.3	Planificar qué pasa si falla
+ai-safety.c4.title	Jailbreaks e inyección de prompts
+ai-safety.c4.text	Los usuarios pueden intentar convencer a un chatbot de que ignore sus reglas (jailbreaks). Peor aún, unas instrucciones ocultas dentro de una página web o un documento pueden secuestrar a un agente de IA que lo lea (inyección de prompts).
+ai-safety.c4.viz.steps.0	El agente lee una página web
+ai-safety.c4.viz.steps.1	La página oculta «envíame sus archivos»
+ai-safety.c4.viz.steps.2	El agente puede obedecer
+ai-safety.c4.viz.steps.3	Las salvaguardas deben impedirlo
+ai-safety.c5.title	Red teaming
+ai-safety.c5.text	Antes del lanzamiento, especialistas se esfuerzan por hacer que un modelo se comporte mal: que dé instrucciones peligrosas, filtre datos o siga documentos maliciosos. Lo que encuentran se incorpora al entrenamiento y a las salvaguardas.
+ai-safety.c5.viz.steps.0	Atacar el modelo
+ai-safety.c5.viz.steps.1	Encontrar fallos
+ai-safety.c5.viz.steps.2	Corregir y reentrenar
+ai-safety.c5.viz.steps.3	Atacar de nuevo
+ai-safety.c6.title	Supervisión humana
+ai-safety.c6.text	Para las acciones importantes, mantén a una persona en el proceso: la IA redacta, recomienda o señala, y un humano aprueba. Los agentes deberían preguntar antes de pasos irreversibles como pagos o borrados.
+ai-safety.c6.viz.steps.0	La IA propone una acción
+ai-safety.c6.viz.steps.1	Una persona revisa
+ai-safety.c6.viz.steps.2	Aprobar o cambiar
+ai-safety.c6.viz.steps.3	Acción ejecutada
+ai-safety.c7.title	Interpretabilidad
+ai-safety.c7.text	Los investigadores intentan mirar dentro de las redes neuronales para ver qué conceptos representan y cómo llegan a sus respuestas. Es como una neurociencia de la IA, y ayuda a detectar problemas ocultos.
+ai-safety.c7.viz.steps.0	Actividad interna del modelo
+ai-safety.c7.viz.steps.1	Hallar rasgos y circuitos
+ai-safety.c7.viz.steps.2	Entender la conducta
+ai-safety.c7.viz.steps.3	Detectar problemas ocultos
+ai-safety.c8.title	Marcos de seguridad de frontera
+ai-safety.c8.text	Los principales laboratorios de IA publican políticas para evaluar en los nuevos modelos capacidades peligrosas, como ayudar con ciberataques o armas biológicas, y se comprometen a reforzar las salvaguardas antes de lanzar sistemas más capaces.
+ai-safety.c8.viz.steps.0	Entrenar un modelo nuevo
+ai-safety.c8.viz.steps.1	Evaluar capacidades peligrosas
+ai-safety.c8.viz.steps.2	Aplicar salvaguardas acordes
+ai-safety.c8.viz.steps.3	Lanzar o retener
+ai-safety.c9.title	Seguridad práctica en el trabajo
+ai-safety.c9.text	En el uso empresarial, la seguridad consiste sobre todo en limitar a qué puede acceder la IA y qué puede hacer, registrar sus acciones, validar los resultados antes de que lleguen a los clientes y tener una forma rápida de desactivarla.
+ai-safety.c9.viz.items.0	Acceso con mínimo privilegio
+ai-safety.c9.viz.items.1	Registrar cada acción
+ai-safety.c9.viz.items.2	Revisar resultados antes de usarlos
+ai-safety.c9.viz.items.3	Aprobación humana en pasos grandes
+ai-safety.c9.viz.items.4	Un interruptor de apagado claro
+ai-law.title	La IA y la ley
+ai-law.summary	El Reglamento de IA de la UE, la protección de datos y quién es responsable.
+ai-law.q0.q	¿Cómo regula la IA el Reglamento de IA de la UE?
+ai-law.q0.o0	Prohíbe toda la IA
+ai-law.q0.o1	Por nivel de riesgo: cuanto mayor es el riesgo, más estrictas son las normas
+ai-law.q0.o2	Solo según el tamaño de la empresa
+ai-law.q0.x	Tiene cuatro grandes niveles de riesgo.
+ai-law.q1.q	Un sistema de IA usado para clasificar candidatos a un empleo es de…
+ai-law.q1.o0	Riesgo mínimo
+ai-law.q1.o1	Alto riesgo
+ai-law.q1.o2	Prohibido
+ai-law.q1.x	Los usos en el empleo figuran como de alto riesgo.
+ai-law.q2.q	¿Qué deben hacer los chatbots según las normas de transparencia del Reglamento de IA?
+ai-law.q2.o0	Usar una voz humana
+ai-law.q2.o1	Dejar claro a las personas que están interactuando con una IA
+ai-law.q2.o2	Responder en inglés
+ai-law.q2.x	Los usuarios deben saber que hablan con una IA.
+ai-law.c0.title	El Reglamento de IA de la UE
+ai-law.c0.text	El Reglamento de IA es la ley de la UE sobre inteligencia artificial. Entró en vigor el 1 de agosto de 2024 y se aplica por fases. Regula la IA según el riesgo: cuanto mayor es el riesgo para las personas, más estrictas son las normas.
+ai-law.c0.viz.items.0	Riesgo inaceptable: prohibido
+ai-law.c0.viz.items.1	Alto riesgo: obligaciones estrictas
+ai-law.c0.viz.items.2	Riesgo limitado: transparencia
+ai-law.c0.viz.items.3	Riesgo mínimo: sin normas nuevas
+ai-law.c1.title	Prácticas prohibidas
+ai-law.c1.text	Algunos usos están prohibidos sin más, entre ellos la puntuación social de personas por parte de autoridades públicas, las técnicas manipuladoras que causan daño, el reconocimiento de emociones en el trabajo y en centros educativos (con excepciones limitadas) y la extracción indiscriminada de imágenes faciales para crear bases de datos de reconocimiento.
+ai-law.c1.viz.items.0	Puntuación social
+ai-law.c1.viz.items.1	Manipulación dañina
+ai-law.c1.viz.items.2	Reconocer emociones en trabajo o escuela
+ai-law.c1.viz.items.3	Extracción masiva de caras
+ai-law.c1.viz.items.4	Casi toda la identificación biométrica policial en directo
+ai-law.c2.title	Sistemas de alto riesgo
+ai-law.c2.text	La IA usada en ámbitos como la contratación, el scoring de crédito, la educación, los servicios esenciales, las infraestructuras críticas, la aplicación de la ley y los productos sanitarios es de alto riesgo. Los proveedores deben gestionar los riesgos, usar buenos datos, mantener registros, documentar el sistema y permitir la supervisión humana.
+ai-law.c2.viz.items.0	Gestión de riesgos
+ai-law.c2.viz.items.1	Calidad de los datos
+ai-law.c2.viz.items.2	Registros y documentación
+ai-law.c2.viz.items.3	Supervisión humana
+ai-law.c2.viz.items.4	Precisión y ciberseguridad
+ai-law.c3.title	Obligaciones de transparencia
+ai-law.c3.text	Hay que informar a las personas cuando hablan con un chatbot, y el contenido generado o manipulado por IA, como los deepfakes, debe etiquetarse como tal.
+ai-law.c3.viz.items.0.a	Chatbot
+ai-law.c3.viz.items.0.b	debe decir que es IA
+ai-law.c3.viz.items.1.a	Deepfake
+ai-law.c3.viz.items.1.b	debe etiquetarse
+ai-law.c3.viz.items.2.a	Texto de IA de interés público
+ai-law.c3.viz.items.2.b	debe indicarse
+ai-law.c4.title	Calendario
+ai-law.c4.text	El Reglamento entra en aplicación a lo largo de varios años: primero las prohibiciones, luego las normas para los modelos de IA de uso general y después la mayoría de las obligaciones de alto riesgo.
+ai-law.c4.viz.events.0.y	ago 2024
+ai-law.c4.viz.events.0.l	entra en vigor
+ai-law.c4.viz.events.1.y	feb 2025
+ai-law.c4.viz.events.1.l	prohibiciones
+ai-law.c4.viz.events.2.y	ago 2025
+ai-law.c4.viz.events.2.l	normas IA de uso general
+ai-law.c4.viz.events.3.y	ago 2026
+ai-law.c4.viz.events.3.l	casi todo lo demás
+ai-law.c5.title	Multas cuantiosas
+ai-law.c5.text	Las sanciones pueden llegar a 35 millones de euros o al 7 % del volumen de negocio anual mundial, lo que sea mayor, por usar prácticas prohibidas. Otras infracciones tienen topes más bajos, pero igualmente importantes.
+ai-law.c5.viz.items.0.v	35 M€
+ai-law.c5.viz.items.0.l	multa máxima por prácticas prohibidas
+ai-law.c5.viz.items.1.l	o esta parte de la facturación mundial
+ai-law.c6.title	El RGPD sigue aplicándose
+ai-law.c6.text	Siempre que la IA trata datos personales, se aplica el RGPD: base jurídica, limitación de la finalidad, minimización de datos, seguridad y los derechos de las personas a acceder a sus datos y rectificarlos.
+ai-law.c6.viz.items.0	Base jurídica del tratamiento
+ai-law.c6.viz.items.1	Usar solo para los fines indicados
+ai-law.c6.viz.items.2	Recoger lo mínimo
+ai-law.c6.viz.items.3	Mantenerlos seguros
+ai-law.c6.viz.items.4	Respetar los derechos de las personas
+ai-law.c7.title	Decisiones automatizadas
+ai-law.c7.text	Según el RGPD, las personas tienen derechos frente a decisiones basadas únicamente en el tratamiento automatizado que les afecten de forma significativa, como la denegación de un préstamo: entre ellos, la intervención humana y una explicación de la lógica aplicada.
+ai-law.c7.viz.steps.0	Decisión totalmente automatizada
+ai-law.c7.viz.steps.1	Efecto significativo en una persona
+ai-law.c7.viz.steps.2	Derecho a revisión humana
+ai-law.c7.viz.steps.3	Derecho a impugnarla
+ai-law.c8.title	Cuestiones de derechos de autor
+ai-law.c8.text	Los tribunales y los legisladores aún están decidiendo si se permite entrenar con material protegido por derechos de autor y a quién pertenecen las obras generadas por IA. La UE exige a los proveedores de modelos de uso general que respeten las exclusiones voluntarias y publiquen un resumen del contenido de entrenamiento.
+ai-law.c8.viz.items.0	¿Se puede entrenar con obras protegidas?
+ai-law.c8.viz.items.1	¿De quién es lo que genera la IA?
+ai-law.c8.viz.items.2	Respetar exclusiones (UE)
+ai-law.c8.viz.items.3	Publicar resumen de datos (UE)
+ai-law.c9.title	¿Quién es responsable?
+ai-law.c9.text	El Reglamento de IA distingue entre proveedores (quienes desarrollan un sistema o lo comercializan) y responsables del despliegue (quienes lo usan). Ambos tienen obligaciones. Usar la IA de un proveedor no te exime de responsabilidad por cómo la usas.
+ai-law.c9.viz.l.t	Proveedor
+ai-law.c9.viz.l.items.0	desarrolla el sistema
+ai-law.c9.viz.l.items.1	documentación
+ai-law.c9.viz.l.items.2	evaluación de conformidad
+ai-law.c9.viz.r.t	Usuario
+ai-law.c9.viz.r.items.0	lo utiliza
+ai-law.c9.viz.r.items.1	supervisión humana
+ai-law.c9.viz.r.items.2	informa a los afectados
+ai-explain.title	IA explicable
+ai-explain.summary	Abrir la caja negra: por qué un modelo decidió lo que decidió.
+ai-explain.q0.q	Una herramienta que muestra cuánto empujó cada característica una predicción hacia arriba o hacia abajo es…
+ai-explain.q0.o0	Una matriz de confusión
+ai-explain.q0.o1	SHAP
+ai-explain.q0.o2	Dropout
+ai-explain.q0.x	SHAP atribuye una predicción concreta a sus características.
+ai-explain.q1.q	«Tu préstamo se aprobaría si tu deuda fuera 3000 € menor» es una…
+ai-explain.q1.o0	Explicación contrafactual
+ai-explain.q1.o1	Mapa de saliencia
+ai-explain.q1.o2	Gráfico de importancia de características
+ai-explain.q1.x	Describe el cambio más pequeño que invierte el resultado.
+ai-explain.q2.q	Un clasificador de huskies que se basa en la nieve del fondo demuestra…
+ai-explain.q2.o0	Una buena generalización
+ai-explain.q2.o1	Un atajo oculto que revelan las herramientas de explicación
+ai-explain.q2.o2	Una equidad perfecta
+ai-explain.q2.x	Los mapas de saliencia pusieron al descubierto la pista equivocada.
+ai-explain.c0.title	El problema de la caja negra
+ai-explain.c0.text	Las redes profundas con millones de pesos no vienen con motivos. Cuando un modelo deniega un préstamo o marca una pieza como defectuosa, la gente quiere saber por qué, y los reguladores a menudo lo exigen.
+ai-explain.c0.viz.steps.0	Entrada
+ai-explain.c0.viz.steps.1	Millones de pesos
+ai-explain.c0.viz.steps.2	Decisión
+ai-explain.c0.viz.steps.3	¿Por qué?
+ai-explain.c1.title	Modelos de caja de cristal
+ai-explain.c1.text	Algunos modelos son explicables por diseño: los modelos lineales muestran el peso de cada característica y los árboles de decisión pequeños muestran el camino exacto. Cuando hay mucho en juego, un modelo transparente aunque algo menos preciso puede ser la mejor opción.
+ai-explain.c1.viz.l.t	Caja de cristal
+ai-explain.c1.viz.l.items.0	lineales, árboles pequeños
+ai-explain.c1.viz.l.items.1	fácil de explicar
+ai-explain.c1.viz.l.items.2	puede ser menos preciso
+ai-explain.c1.viz.r.t	Caja negra
+ai-explain.c1.viz.r.items.0	redes profundas, ensembles
+ai-explain.c1.viz.r.items.1	muy preciso
+ai-explain.c1.viz.r.items.2	requiere más herramientas
+ai-explain.c2.title	Importancia de las características
+ai-explain.c2.text	La explicación más sencilla: ¿qué entradas importan más en general? En un modelo de retrasos en entregas, quizá importen sobre todo la distancia, el tiempo y el transportista, mientras que el día de la semana apenas cuenta.
+ai-explain.c2.viz.unit	importancia
+ai-explain.c2.viz.items.0.l	Distancia
+ai-explain.c2.viz.items.1.l	Tiempo
+ai-explain.c2.viz.items.2.l	Transportista
+ai-explain.c2.viz.items.3.l	Día semana
+ai-explain.c3.title	Valores SHAP
+ai-explain.c3.text	SHAP explica una predicción concreta repartiendo el resultado entre las características, como cuando se divide una cuenta de forma justa. Muestra cuánto empujó cada característica esta predicción concreta por encima o por debajo de la media.
+ai-explain.c3.viz.items.0.a	Casa media
+ai-explain.c3.viz.items.0.b	250,000 €
+ai-explain.c3.viz.items.1.a	Vistas al mar
+ai-explain.c3.viz.items.1.b	+60,000 €
+ai-explain.c3.viz.items.2.a	Cocina antigua
+ai-explain.c3.viz.items.2.b	−25,000 €
+ai-explain.c3.viz.items.3.a	Jardín grande
+ai-explain.c3.viz.items.3.b	+30,000 €
+ai-explain.c3.viz.items.4.a	Esta casa
+ai-explain.c3.viz.items.4.b	315,000 €
+ai-explain.c4.title	Explicaciones contrafactuales
+ai-explain.c4.text	Una explicación útil para las personas: ¿qué tendría que cambiar para obtener otro resultado? «Tu préstamo se aprobaría si tus ingresos fueran 4000 € más altos o tu deuda 3000 € más baja».
+ai-explain.c4.viz.steps.0	Préstamo denegado
+ai-explain.c4.viz.steps.1	Buscar el cambio mínimo
+ai-explain.c4.viz.steps.2	«Deuda 3000 € menor»
+ai-explain.c4.viz.steps.3	Aprobado
+ai-explain.c5.title	Mapas de saliencia
+ai-explain.c5.text	En imágenes, las herramientas de explicación resaltan qué píxeles influyeron más en la decisión. A veces revelan problemas: un modelo que reconoce a los huskies por la nieve del fondo, no por el perro.
+ai-explain.c5.viz.items.0.w	«es un husky por la nieve»
+ai-explain.c5.viz.items.0.r	reentrenar con huskies en hierba y lobos en nieve
+ai-explain.c6.title	Explicar los modelos de lenguaje
+ai-explain.c6.text	Pedir a un chatbot que «muestre su razonamiento» da una explicación legible, pero no hay garantía de que ese texto refleje lo que ocurrió por dentro. La investigación en interpretabilidad intenta comprobar los mecanismos internos reales.
+ai-explain.c6.viz.l.t	Razonamiento declarado
+ai-explain.c6.viz.l.items.0	fácil de leer
+ai-explain.c6.viz.l.items.1	útil
+ai-explain.c6.viz.l.items.2	puede no ser fiel
+ai-explain.c6.viz.r.t	Análisis interno
+ai-explain.c6.viz.r.items.0	más difícil de hacer
+ai-explain.c6.viz.r.items.1	más cerca de lo que pasó
+ai-explain.c7.title	¿Quién necesita la explicación?
+ai-explain.c7.text	Un científico de datos quiere diagnósticos detallados; un cliente, un motivo breve y qué puede hacer; un auditor, documentación. Diseña las explicaciones pensando en quién las va a leer.
+ai-explain.c7.viz.items.0.a	Científico de datos
+ai-explain.c7.viz.items.0.b	efectos, análisis de errores
+ai-explain.c7.viz.items.1.a	Cliente
+ai-explain.c7.viz.items.1.b	motivo principal y siguiente paso
+ai-explain.c7.viz.items.2.a	Auditor
+ai-explain.c7.viz.items.2.b	documentación y registros
+ai-explain.c7.viz.items.3.a	Directivo
+ai-explain.c7.viz.items.3.b	riesgos y límites
+ai-explain.c8.title	Las explicaciones generan confianza
+ai-explain.c8.text	La gente confía más en las recomendaciones de la IA y las usa más cuando las entiende, pero también puede fiarse en exceso de una explicación que suena segura. Las buenas explicaciones también muestran la incertidumbre.
+ai-explain.c8.viz.items.0	Muestra los motivos principales
+ai-explain.c8.viz.items.1	Muestra lo seguro que está el modelo
+ai-explain.c8.viz.items.2	Muestra qué cambiaría el resultado
+ai-explain.c8.viz.items.3	Sé honesto con los límites
+ai-explain.c9.title	Obligatorio en algunos casos
+ai-explain.c9.text	El RGPD da a las personas afectadas por decisiones significativas basadas únicamente en el tratamiento automatizado el derecho a recibir información significativa sobre la lógica aplicada. El Reglamento de IA añade obligaciones de transparencia para los sistemas de alto riesgo.
+ai-explain.c9.viz.steps.0	Decisión automatizada significativa
+ai-explain.c9.viz.steps.1	La persona pregunta por qué
+ai-explain.c9.viz.steps.2	Explicación significativa
+ai-explain.c9.viz.steps.3	Opción de revisión humana
+ai-edge.title	IA en los dispositivos
+ai-edge.summary	Ejecutar modelos en móviles, cámaras y microcontroladores.
+ai-edge.q0.q	Entrenar un modelo pequeño para que imite a uno grande se llama…
+ai-edge.q0.o0	Poda
+ai-edge.q0.o1	Destilación
+ai-edge.q0.o2	Aprendizaje federado
+ai-edge.q0.x	El alumno aprende de las salidas del profesor.
+ai-edge.q1.q	¿Por qué un sistema de cámaras doméstico ejecuta la detección en local?
+ai-edge.q1.o0	Lo exige la ley
+ai-edge.q1.o1	Velocidad, privacidad y sin cuotas de la nube
+ai-edge.q1.o2	La nube no puede detectar personas
+ai-edge.q1.x	El procesamiento local es rápido, privado y barato.
+ai-edge.q2.q	En el aprendizaje federado, ¿qué sale del dispositivo?
+ai-edge.q2.o0	Todos los datos en bruto
+ai-edge.q2.o1	Solo las actualizaciones del modelo
+ai-edge.q2.o2	Nada en absoluto
+ai-edge.q2.x	Los datos en bruto se quedan en local; solo se comparten las actualizaciones.
+ai-edge.c0.title	IA en el borde
+ai-edge.c0.text	La IA en el borde (edge AI) consiste en ejecutar los modelos donde se generan los datos: en un móvil, una cámara, un coche o un sensor, en lugar de enviarlo todo a la nube.
+ai-edge.c0.viz.l.t	IA en la nube
+ai-edge.c0.viz.l.items.0	modelos grandes
+ai-edge.c0.viz.l.items.1	requiere conexión
+ai-edge.c0.viz.l.items.2	los datos viajan
+ai-edge.c0.viz.r.t	IA en el borde
+ai-edge.c0.viz.r.items.0	instantánea
+ai-edge.c0.viz.r.items.1	funciona sin conexión
+ai-edge.c0.viz.r.items.2	datos en local
+ai-edge.c1.title	¿Por qué ejecutar en local?
+ai-edge.c1.text	Cuatro motivos: velocidad (sin ida y vuelta por la red), privacidad (los datos nunca salen), coste (sin tarifas por llamada) y fiabilidad (funciona sin conexión).
+ai-edge.c1.viz.items.0	Velocidad: sin ida y vuelta
+ai-edge.c1.viz.items.1	Privacidad: los datos no salen
+ai-edge.c1.viz.items.2	Coste: sin cuotas de nube
+ai-edge.c1.viz.items.3	Fiabilidad: va sin conexión
+ai-edge.c2.title	Hacer pequeños los modelos
+ai-edge.c2.text	Los modelos para el borde se reducen con cuantización (menos bits por peso), poda (eliminar conexiones poco importantes) y destilación (entrenar a un alumno pequeño para que copie a un profesor grande).
+ai-edge.c2.viz.items.0.a	Cuantización
+ai-edge.c2.viz.items.0.b	menos bits por peso
+ai-edge.c2.viz.items.1.a	Poda
+ai-edge.c2.viz.items.1.b	quitar conexiones débiles
+ai-edge.c2.viz.items.2.a	Destilación
+ai-edge.c2.viz.items.2.b	alumno pequeño copia al profesor
+ai-edge.c3.title	Aceleradores
+ai-edge.c3.text	Chips pequeños como la Coral Edge TPU de Google o los motores neuronales de los móviles ejecutan redes neuronales de forma eficiente con unos pocos vatios. Una Coral TPU puede ejecutar un detector de objetos a decenas de fotogramas por segundo.
+ai-edge.c3.viz.items.0.v	4 TOPS
+ai-edge.c3.viz.items.0.l	pico de la Coral Edge TPU
+ai-edge.c3.viz.items.1.v	2 W
+ai-edge.c3.viz.items.1.l	su consumo aproximado
+ai-edge.c4.title	Una cámara inteligente en casa
+ai-edge.c4.text	Un NVR doméstico como Frigate usa primero una detección de movimiento barata, luego ejecuta el detector de objetos solo en los fotogramas con movimiento y solo avisa por los objetos que te interesan, como personas de noche.
+ai-edge.c4.viz.steps.0	Flujo de vídeo
+ai-edge.c4.viz.steps.1	¿Hay movimiento?
+ai-edge.c4.viz.steps.2	Detector de objetos en esa zona
+ai-edge.c4.viz.steps.3	Persona de noche → aviso
+ai-edge.c5.title	TinyML
+ai-edge.c5.text	Incluso microcontroladores que cuestan unos pocos euros pueden ejecutar modelos diminutos: detección de palabras de activación, reconocimiento de gestos, detección de anomalías de vibración, todo con batería.
+ai-edge.c5.viz.items.0	Palabras clave
+ai-edge.c5.viz.items.1	Reconocimiento de gestos
+ai-edge.c5.viz.items.2	Anomalías de vibración
+ai-edge.c5.viz.items.3	Clasificación simple de imágenes
+ai-edge.c6.title	Modelos de lenguaje en el dispositivo
+ai-edge.c6.text	Los móviles y portátiles ya ejecutan pequeños modelos de lenguaje en local para resúmenes, respuestas inteligentes y dictado. Las peticiones más grandes se pueden seguir enviando a la nube.
+ai-edge.c6.viz.steps.0	Petición sencilla
+ai-edge.c6.viz.steps.1	Modelo local pequeño
+ai-edge.c6.viz.steps.2	Petición compleja
+ai-edge.c6.viz.steps.3	Modelo grande en la nube
+ai-edge.c7.title	Actualizar los modelos del borde
+ai-edge.c7.text	Los dispositivos sobre el terreno necesitan nuevas versiones del modelo a medida que los datos derivan. Las actualizaciones se envían de forma inalámbrica (OTA), a menudo probándolas antes en un pequeño grupo de dispositivos.
+ai-edge.c7.viz.steps.0	Reentrenar en central
+ai-edge.c7.viz.steps.1	Probar en unos pocos equipos
+ai-edge.c7.viz.steps.2	Desplegar por OTA
+ai-edge.c7.viz.steps.3	Vigilar resultados
+ai-edge.c8.title	Aprendizaje federado
+ai-edge.c8.text	En lugar de recoger los datos de todo el mundo, los dispositivos entrenan en local y envían solo actualizaciones de pesos a un servidor central, que las combina. Los teclados de los móviles lo usan para mejorar las sugerencias sin subir lo que escribes.
+ai-edge.c8.viz.steps.0	El modelo central va a los equipos
+ai-edge.c8.viz.steps.1	Cada equipo aprende en local
+ai-edge.c8.viz.steps.2	Solo vuelven actualizaciones
+ai-edge.c8.viz.steps.3	El servidor las combina
+ai-edge.c9.title	Los límites del borde
+ai-edge.c9.text	Los dispositivos pequeños tienen memoria, batería y margen térmico limitados. Los modelos del borde son menos capaces que los grandes modelos en la nube, así que muchos sistemas combinan ambos.
+ai-edge.c9.viz.l.t	Límites del borde
+ai-edge.c9.viz.l.items.0	poca memoria
+ai-edge.c9.viz.l.items.1	batería
+ai-edge.c9.viz.l.items.2	calor
+ai-edge.c9.viz.r.t	Solución híbrida
+ai-edge.c9.viz.r.items.0	primer filtro local rápido
+ai-edge.c9.viz.r.items.1	nube para lo difícil
+ai-robots.title	Robots y coches autónomos
+ai-robots.summary	IA que se mueve por el mundo físico.
+ai-robots.q0.q	¿Qué sensor mide distancias 3D precisas con láseres?
+ai-robots.q0.o0	Cámara
+ai-robots.q0.o1	Radar
+ai-robots.q0.o2	Lidar
+ai-robots.q0.x	El lidar usa pulsos láser para medir distancias.
+ai-robots.q1.q	La mayoría de los coches con asistencia a la conducción que se venden hoy son de nivel SAE…
+ai-robots.q1.o0	0
+ai-robots.q1.o1	2
+ai-robots.q1.o2	5
+ai-robots.q1.x	El nivel 2 gira y frena, pero necesita supervisión constante.
+ai-robots.q2.q	¿Qué hace el SLAM?
+ai-robots.q2.o0	Pega un frenazo
+ai-robots.q2.o1	Construye un mapa mientras sigue la posición del robot en él
+ai-robots.q2.o2	Carga la batería
+ai-robots.q2.x	Localización y mapeo simultáneos.
+ai-robots.c0.title	Percibir, pensar, actuar
+ai-robots.c0.text	Todo robot ejecuta el mismo bucle: los sensores miden el mundo, el software decide qué hacer y los motores lo ejecutan. Luego vuelve a percibir para ver qué ha cambiado.
+ai-robots.c0.viz.steps.0	Percibir: cámaras, lidar
+ai-robots.c0.viz.steps.1	Pensar: planear el movimiento
+ai-robots.c0.viz.steps.2	Actuar: motores y ruedas
+ai-robots.c0.viz.steps.3	Comprobar el resultado
+ai-robots.c1.title	Sensores
+ai-robots.c1.text	Los robots y los coches combinan sensores porque cada uno tiene puntos débiles: las cámaras ven el color pero sufren en la oscuridad, el radar ve a través de la lluvia pero con menos detalle y el lidar mide distancias precisas con láseres.
+ai-robots.c1.viz.items.0.a	Cámara
+ai-robots.c1.viz.items.0.b	color, señales, carriles
+ai-robots.c1.viz.items.1.a	Radar
+ai-robots.c1.viz.items.1.b	velocidad, va con lluvia
+ai-robots.c1.viz.items.2.a	Lidar
+ai-robots.c1.viz.items.2.b	distancia 3D precisa
+ai-robots.c1.viz.items.3.a	Ultrasonidos
+ai-robots.c1.viz.items.3.b	aparcar de cerca
+ai-robots.c2.title	Localización y mapeo
+ai-robots.c2.text	Para moverse, un robot tiene que saber dónde está. El SLAM (localización y mapeo simultáneos) construye un mapa de un espacio desconocido mientras sigue la posición del robot dentro de él. Los robots aspiradores lo hacen.
+ai-robots.c2.viz.steps.0	Moverse un poco
+ai-robots.c2.viz.steps.1	Percibir el entorno
+ai-robots.c2.viz.steps.2	Actualizar el mapa
+ai-robots.c2.viz.steps.3	Estimar la posición
+ai-robots.c3.title	Niveles de conducción automatizada
+ai-robots.c3.text	La SAE define seis niveles, del 0 (sin automatización) al 5 (conduce en cualquier lugar sin una persona). La mayoría de los coches que se venden hoy ofrecen el nivel 2: el coche gira y frena, pero el conductor debe supervisar constantemente.
+ai-robots.c3.viz.items.0	Nivel 5: en todas partes, sin conductor
+ai-robots.c3.viz.items.1	Nivel 4: sin conductor en zonas definidas
+ai-robots.c3.viz.items.2	Nivel 3: conduce el coche, humano atento
+ai-robots.c3.viz.items.3	Nivel 2: el conductor supervisa
+ai-robots.c3.viz.items.4	Nivel 0–1: manda el conductor
+ai-robots.c4.title	Robotaxis
+ai-robots.c4.text	Hay servicios de taxis sin conductor en varias ciudades de EE. UU. y China, como Waymo en Phoenix y San Francisco. Son de nivel 4: sin conductor, pero solo dentro de zonas cartografiadas con cuidado.
+ai-robots.c4.viz.items.0.v	Nivel 4
+ai-robots.c4.viz.items.0.l	funcionamiento de robotaxi
+ai-robots.c4.viz.items.1.l	conductores de seguridad a bordo
+ai-robots.c5.title	La larga cola
+ai-robots.c5.text	Conducir es sobre todo rutina, pero las situaciones raras son infinitas: un colchón en la autopista, un policía que te indica que pases con el semáforo en rojo. Gestionar la larga cola de sucesos raros es lo más difícil de la autonomía.
+ai-robots.c5.viz.unit	% de situaciones (ilustrativo)
+ai-robots.c5.viz.items.0.l	Rutina
+ai-robots.c5.viz.items.1.l	Inusual
+ai-robots.c5.viz.items.2.l	Muy raro
+ai-robots.c6.title	Robots industriales
+ai-robots.c6.text	Las fábricas llevan décadas usando brazos robóticos para soldar, pintar y montar. La IA añade visión para que puedan coger piezas desordenadas, inspeccionar la calidad y trabajar con más seguridad cerca de las personas.
+ai-robots.c6.viz.items.0	Soldadura y pintura
+ai-robots.c6.viz.items.1	Coger y colocar con visión
+ai-robots.c6.viz.items.2	Inspección de calidad
+ai-robots.c6.viz.items.3	Robots colaborativos junto a personas
+ai-robots.c7.title	Aprender habilidades robóticas
+ai-robots.c7.text	Los nuevos enfoques entrenan robots con demostraciones, simulación y grandes modelos que conectan el lenguaje y la visión con acciones: «pon la taza roja en el fregadero».
+ai-robots.c7.viz.steps.0	Demostraciones humanas
+ai-robots.c7.viz.steps.1	Práctica en simulación
+ai-robots.c7.viz.steps.2	Modelo visión-lenguaje-acción
+ai-robots.c7.viz.steps.3	El robot sigue instrucciones
+ai-robots.c8.title	La seguridad, lo primero
+ai-robots.c8.text	Los robots físicos pueden herir a las personas, así que necesitan límites de velocidad cerca de humanos, paradas de emergencia, zonas valladas o sensores de fuerza, y certificación conforme a las normas de seguridad de máquinas.
+ai-robots.c8.viz.items.0	Parada de emergencia
+ai-robots.c8.viz.items.1	Límite de velocidad junto a personas
+ai-robots.c8.viz.items.2	Sensores de fuerza y colisión
+ai-robots.c8.viz.items.3	Certificación de seguridad
+ai-robots.c9.title	Drones y agricultura
+ai-robots.c9.text	Los drones cartografían campos, cuentan plantas y detectan enfermedades, mientras que los tractores autónomos siguen rutas GPS con precisión de centímetros. La agricultura de precisión usa menos fertilizante y agua porque trata solo donde hace falta.
+ai-robots.c9.viz.steps.0	El dron cartografía el campo
+ai-robots.c9.viz.steps.1	La IA detecta zonas con problemas
+ai-robots.c9.viz.steps.2	Tratar solo esos puntos
+ai-robots.c9.viz.steps.3	Menos insumos, igual cosecha
+ai-future.title	Hacia dónde va la IA
+ai-future.summary	Agentes, debates sobre la AGI y qué conviene seguir.
+ai-future.q0.q	¿Qué distingue a un agente de IA de un chatbot básico?
+ai-future.q0.o0	Tiene nombre
+ai-future.q0.o1	Planifica y realiza acciones con herramientas para lograr un objetivo
+ai-future.q0.o2	Solo responde sí o no
+ai-future.q0.x	Los agentes actúan en bucles usando herramientas.
+ai-future.q1.q	¿Qué hizo AlphaFold?
+ai-future.q1.o0	Ganar al go
+ai-future.q1.o1	Predecir la estructura 3D de las proteínas
+ai-future.q1.o2	Conducir un coche
+ai-future.q1.x	Predijo más de 200 millones de estructuras de proteínas.
+ai-future.q2.q	¿Hay una fecha acordada para la AGI?
+ai-future.q2.o0	Sí, 2030
+ai-future.q2.o1	No, los expertos discrepan mucho
+ai-future.q2.o2	Sí, ya existe por ley
+ai-future.q2.x	No hay consenso ni sobre la definición ni sobre los plazos.
+ai-future.c0.title	De los chatbots a los agentes
+ai-future.c0.text	Los agentes no solo responden: planifican y actúan. Buscan en la web, usan software, escriben y ejecutan código y luego comprueban el resultado. Trabajan en bucles hacia un objetivo.
+ai-future.c0.viz.steps.0	Entender el objetivo
+ai-future.c0.viz.steps.1	Planear pasos
+ai-future.c0.viz.steps.2	Usar herramientas
+ai-future.c0.viz.steps.3	Revisar resultados
+ai-future.c1.title	Modelos multimodales
+ai-future.c1.text	Los modelos más recientes manejan texto, imágenes, audio y vídeo en un solo sistema. Puedes enseñar la foto de una pieza rota, hacer una pregunta por voz y recibir un diagrama.
+ai-future.c1.viz.steps.0	Texto, imagen, audio, vídeo
+ai-future.c1.viz.steps.1	Un modelo multimodal
+ai-future.c1.viz.steps.2	Respuestas en cualquier formato
+ai-future.c2.title	¿Qué es la AGI?
+ai-future.c2.text	La inteligencia artificial general (AGI) suele referirse a una IA capaz de hacer la mayoría de las tareas cognitivas tan bien como una persona competente. No hay una definición ni una prueba acordadas, y los expertos discrepan mucho sobre cuándo llegará, o si llegará.
+ai-future.c2.viz.l.t	IA específica
+ai-future.c2.viz.l.items.0	una sola tarea
+ai-future.c2.viz.l.items.1	sobrehumana en esa tarea
+ai-future.c2.viz.r.t	IA general
+ai-future.c2.viz.r.items.0	casi todas las tareas cognitivas
+ai-future.c2.viz.r.items.1	flexible como una persona
+ai-future.c3.title	Escalar frente a ideas nuevas
+ai-future.c3.text	Algunos investigadores esperan que más datos y más cálculo sigan dando resultados; otros creen que hacen falta ideas nuevas para lograr un razonamiento fiable, memoria y aprendizaje con pocos ejemplos. La mayoría espera un poco de ambas cosas.
+ai-future.c3.viz.l.t	Visión del escalado
+ai-future.c3.viz.l.items.0	los modelos grandes siguen mejorando
+ai-future.c3.viz.l.items.1	el cálculo es clave
+ai-future.c3.viz.r.t	Visión de ideas nuevas
+ai-future.c3.viz.r.items.0	falta mejor razonamiento
+ai-future.c3.viz.r.items.1	faltan memoria y eficiencia
+ai-future.c4.title	IA para la ciencia
+ai-future.c4.text	La IA ya está acelerando la investigación. AlphaFold, de DeepMind, predijo la forma 3D de más de 200 millones de proteínas, y sus creadores compartieron el Premio Nobel de Química de 2024.
+ai-future.c4.viz.items.0.v	200 M+
+ai-future.c4.viz.items.0.l	estructuras de proteínas predichas
+ai-future.c4.viz.items.1.l	Premio Nobel de Química
+ai-future.c5.title	Empleo y trabajo
+ai-future.c5.text	La IA cambia las tareas antes de sustituir empleos. Las tareas rutinarias de redacción, resumen y programación son las que cambian más rápido; los puestos pasan a centrarse en el criterio, las relaciones y la supervisión de lo que produce la IA.
+ai-future.c5.viz.l.t	Tareas que menguan
+ai-future.c5.viz.l.items.0	primeros borradores
+ai-future.c5.viz.l.items.1	resúmenes rutinarios
+ai-future.c5.viz.l.items.2	código repetitivo
+ai-future.c5.viz.r.t	Tareas que crecen
+ai-future.c5.viz.r.items.0	criterio
+ai-future.c5.viz.r.items.1	revisar lo que hace la IA
+ai-future.c5.viz.r.items.2	trabajar con personas
+ai-future.c6.title	Modelos abiertos frente a cerrados
+ai-future.c6.text	Algunos modelos se publican abiertamente para que cualquiera pueda ejecutarlos y modificarlos; otros solo están disponibles a través de una API. Los modelos abiertos favorecen la investigación y la privacidad; los cerrados facilitan el control del mal uso.
+ai-future.c6.viz.l.t	Pesos abiertos
+ai-future.c6.viz.l.items.0	se ejecutan donde sea
+ai-future.c6.viz.l.items.1	personalizables
+ai-future.c6.viz.l.items.2	mal uso más difícil de controlar
+ai-future.c6.viz.r.t	Cerrados
+ai-future.c6.viz.r.items.0	acceso por API
+ai-future.c6.viz.r.items.1	el proveedor controla las versiones
+ai-future.c6.viz.r.items.2	más fáciles de vigilar
+ai-future.c7.title	Límites de energía y cálculo
+ai-future.c7.text	Cada nueva generación necesita más chips, electricidad y refrigeración. El suministro eléctrico, la producción de chips y el coste pueden limitar la velocidad a la que escala la IA.
+ai-future.c7.viz.items.0	Suministro de chips
+ai-future.c7.viz.items.1	Capacidad de la red eléctrica
+ai-future.c7.viz.items.2	Refrigeración y agua
+ai-future.c7.viz.items.3	Coste por consulta
+ai-future.c8.title	Mantenerse informado
+ai-future.c8.text	Este campo cambia cada mes. Hábitos útiles: prueba las herramientas tú mismo, sigue unas pocas fuentes fiables y juzga las afirmaciones por las demostraciones y las pruebas, no por el bombo.
+ai-future.c8.viz.items.0	Prueba herramientas nuevas tú mismo
+ai-future.c8.viz.items.1	Sigue unas pocas fuentes fiables
+ai-future.c8.viz.items.2	Pide pruebas, no solo demos
+ai-future.c8.viz.items.3	Revisa a menudo tus supuestos
+ai-future.c9.title	Lo que sigue siendo humano
+ai-future.c9.text	Decidir qué problemas importan, sopesar ventajas e inconvenientes, asumir responsabilidades y generar confianza entre personas sigue siendo trabajo humano, ahora con asistentes muy potentes.
+ai-future.c9.viz.items.0	Elegir lo que importa
+ai-future.c9.viz.items.1	Sopesar pros y contras
+ai-future.c9.viz.items.2	Asumir la responsabilidad
+ai-future.c9.viz.items.3	Generar confianza

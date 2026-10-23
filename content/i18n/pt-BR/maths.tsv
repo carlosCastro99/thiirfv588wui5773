@@ -11,7 +11,7 @@ ma-numbers.q1.q	O que é π?
 ma-numbers.q1.o0	Exatamente 22
 ma-numbers.q1.o1	Circunferência ÷ diâmetro de um círculo
 ma-numbers.q1.o2	A área de um círculo
-ma-numbers.q1.x	Cerca de 3.14159.
+ma-numbers.q1.x	Cerca de 3,14159.
 ma-numbers.q2.q	O que vem depois: 1, 1, 2, 3, 5, 8, …?
 ma-numbers.q2.o0	11
 ma-numbers.q2.o1	13
@@ -33,8 +33,8 @@ ma-numbers.c1.viz.items.1.b	mesmo número, difícil de multiplicar
 ma-numbers.c1.viz.items.2.a	Zero
 ma-numbers.c1.viz.items.2.b	faz o valor posicional funcionar
 ma-numbers.c2.title	Pi
-ma-numbers.c2.text	π é a razão entre a circunferência de qualquer círculo e o seu diâmetro: cerca de 3.14159. Seus dígitos nunca terminam nem se repetem. Arquimedes o estimou por volta de 250 a.C.
-ma-numbers.c2.formula	π ≈ 3.14159…
+ma-numbers.c2.text	π é a razão entre a circunferência de qualquer círculo e o seu diâmetro: cerca de 3,14159. Seus dígitos nunca terminam nem se repetem. Arquimedes o estimou por volta de 250 a.C.
+ma-numbers.c2.formula	π ≈ 3,14159…
 ma-numbers.c2.viz.f	C = π × d
 ma-numbers.c2.viz.items.0.s	C
 ma-numbers.c2.viz.items.0.m	circunferência
@@ -114,7 +114,7 @@ ma-prob.c2.text	Depois de cinco caras seguidas, a coroa não "está devendo". Mo
 ma-prob.c2.viz.items.0.w	"Deu vermelho 5 vezes, agora vai dar preto"
 ma-prob.c2.viz.items.0.r	Cada giro é independente: mesmas chances
 ma-prob.c3.title	O paradoxo do aniversário
-ma-prob.c3.text	Num grupo de apenas 23 pessoas, há mais de 50% de chance de duas fazerem aniversário no mesmo dia. Com 70 pessoas, passa de 99.9%.
+ma-prob.c3.text	Num grupo de apenas 23 pessoas, há mais de 50% de chance de duas fazerem aniversário no mesmo dia. Com 70 pessoas, passa de 99,9%.
 ma-prob.c3.viz.unit	% de chance de aniversário em comum
 ma-prob.c3.viz.items.0.l	10 pessoas
 ma-prob.c3.viz.items.1.l	23 pessoas
@@ -129,7 +129,7 @@ ma-prob.c4.viz.items.1.s	Σ
 ma-prob.c4.viz.items.1.m	somar todos os resultados
 ma-prob.c5.title	Loterias
 ma-prob.c5.text	A chance de ganhar o prêmio máximo do EuroMilhões é de cerca de 1 em 140 milhões. É muito mais provável você ser atingido por um raio ao longo da vida.
-ma-prob.c5.viz.items.0.v	1 em 139,838,160
+ma-prob.c5.viz.items.0.v	1 em 139.838.160
 ma-prob.c5.viz.items.0.l	prêmio do EuroMilhões
 ma-prob.c5.viz.items.1.v	1 em 2
 ma-prob.c5.viz.items.1.l	cara ou coroa
@@ -347,7 +347,7 @@ ma-logic.c4.title	A incompletude de Gödel
 ma-logic.c4.text	Em 1931, Kurt Gödel provou que qualquer sistema de regras consistente e rico o bastante para a aritmética tem afirmações verdadeiras que não consegue provar. A matemática nunca pode ser completa.
 ma-logic.c4.viz.steps.0	Todo sistema consistente
 ma-logic.c4.viz.steps.1	Rico o bastante para a aritmética
-ma-logic.c4.viz.steps.2	Tem verdades improváveis
+ma-logic.c4.viz.steps.2	Tem verdades indemonstráveis
 ma-logic.c5.title	Algoritmos
 ma-logic.c5.text	Um algoritmo é uma receita precisa, passo a passo, para resolver um problema. A palavra vem do nome de al-Khwarizmi, um matemático de Bagdá do século IX.
 ma-logic.c5.viz.steps.0	Entrada
@@ -384,17 +384,17 @@ ma-percent.q0.q	Um item de €100 sobe 50% e depois cai 50%. Quanto custa?
 ma-percent.q0.o0	€100
 ma-percent.q0.o1	€75
 ma-percent.q0.o2	€50
-ma-percent.q0.x	€150 × 0.5 = €75.
+ma-percent.q0.x	€150 × 0,5 = €75.
 ma-percent.q1.q	Um preço com 23% de IVA é €123. Qual é o preço sem IVA?
-ma-percent.q1.o0	€94.71
+ma-percent.q1.o0	€94,71
 ma-percent.q1.o1	€100
 ma-percent.q1.o2	€96
-ma-percent.q1.x	Divida por 1.23.
+ma-percent.q1.x	Divida por 1,23.
 ma-percent.q2.q	"30% de desconto e depois mais 20%" equivale a um desconto de…
 ma-percent.q2.o0	50%
 ma-percent.q2.o1	44%
 ma-percent.q2.o2	40%
-ma-percent.q2.x	0.7 × 0.8 = 0.56.
+ma-percent.q2.x	0,7 × 0,8 = 0,56.
 ma-percent.c0.title	O que é uma porcentagem
 ma-percent.c0.text	"Por cento" quer dizer "em cada 100". 25% são 25 em cada 100, ou um quarto. Para calcular a porcentagem de um número, multiplique pela porcentagem e divida por 100.
 ma-percent.c0.formula	x% de N = N × x ÷ 100
@@ -405,9 +405,9 @@ ma-percent.c0.viz.items.1.s	N
 ma-percent.c0.viz.items.1.m	o número
 ma-percent.c1.title	Truques rápidos
 ma-percent.c1.text	10% é fácil: mova a vírgula decimal uma casa para a esquerda. A partir daí, 5% é a metade disso e 20% é o dobro.
-ma-percent.c1.example.0	10% de €84 = €8.40
-ma-percent.c1.example.1	5% = €4.20
-ma-percent.c1.example.2	20% = €16.80
+ma-percent.c1.example.0	10% de €84 = €8,40
+ma-percent.c1.example.1	5% = €4,20
+ma-percent.c1.example.2	20% = €16,80
 ma-percent.c1.viz.items.0.b	mova a vírgula
 ma-percent.c1.viz.items.1.b	metade de 10%
 ma-percent.c1.viz.items.2.b	dobro de 10%
@@ -431,9 +431,9 @@ ma-percent.c4.viz.l.t	Pontos percentuais
 ma-percent.c4.viz.l.items.0	3% − 2% = 1 ponto
 ma-percent.c4.viz.r.t	Variação percentual
 ma-percent.c5.title	Porcentagem reversa
-ma-percent.c5.text	Um preço com 23% de IVA incluído é €123. O preço antes do IVA não é €123 menos 23%; é €123 ÷ 1.23 = €100.
+ma-percent.c5.text	Um preço com 23% de IVA incluído é €123. O preço antes do IVA não é €123 menos 23%; é €123 ÷ 1,23 = €100.
 ma-percent.c6.title	Descontos se acumulam de um jeito estranho
-ma-percent.c6.text	"30% de desconto, mais 20% extra" não é 50% de desconto. É 0.7 × 0.8 = 0.56 do preço: um desconto de 44%.
+ma-percent.c6.text	"30% de desconto, mais 20% extra" não é 50% de desconto. É 0,7 × 0,8 = 0,56 do preço: um desconto de 44%.
 ma-percent.c6.viz.unit	preço, €
 ma-percent.c6.viz.items.0.l	Original
 ma-percent.c6.viz.items.1.l	30% off
@@ -446,11 +446,11 @@ ma-percent.c7.viz.items.0.m	o valor final
 ma-percent.c7.viz.items.1.s	antigo
 ma-percent.c7.viz.items.1.m	o valor inicial
 ma-percent.c8.title	Gorjetas e divisão da conta
-ma-percent.c8.text	Para dividir uma conta de €60 com 10% de gorjeta entre quatro pessoas: €60 × 1.1 = €66, dividido por 4 = €16.50 para cada um.
-ma-percent.c8.example.0	€60 × 1.10 = €66
-ma-percent.c8.example.1	€66 ÷ 4 = €16.50 cada
+ma-percent.c8.text	Para dividir uma conta de €60 com 10% de gorjeta entre quatro pessoas: €60 × 1,1 = €66, dividido por 4 = €16,50 para cada um.
+ma-percent.c8.example.0	€60 × 1,10 = €66
+ma-percent.c8.example.1	€66 ÷ 4 = €16,50 cada
 ma-percent.c8.viz.steps.0	Conta
-ma-percent.c8.viz.steps.1	Some a gorjeta: × 1.1
+ma-percent.c8.viz.steps.1	Some a gorjeta: × 1,1
 ma-percent.c8.viz.steps.2	Divida pelas pessoas
 ma-percent.c8.viz.steps.3	Parte de cada um
 ma-percent.c9.title	Porcentagens enganosas
@@ -465,12 +465,12 @@ ma-fractions.q0.o1	5/6
 ma-fractions.q0.o2	1/6
 ma-fractions.q0.x	3/6 + 2/6.
 ma-fractions.q1.q	Quanto é 3 ÷ ½?
-ma-fractions.q1.o0	1.5
+ma-fractions.q1.o0	1,5
 ma-fractions.q1.o1	6
 ma-fractions.q1.o2	3
 ma-fractions.q1.x	Quantas metades cabem em três?
 ma-fractions.c0.title	Frações são divisões
-ma-fractions.c0.text	3/4 quer dizer 3 dividido por 4: três de quatro partes iguais, ou 0.75. O número de baixo diz em quantas partes se divide; o de cima, quantas você pega.
+ma-fractions.c0.text	3/4 quer dizer 3 dividido por 4: três de quatro partes iguais, ou 0,75. O número de baixo diz em quantas partes se divide; o de cima, quantas você pega.
 ma-fractions.c1.title	Frações equivalentes
 ma-fractions.c1.text	Multiplicar o numerador e o denominador pelo mesmo número não muda a fração: 1/2 = 2/4 = 50/100. Para simplificar, divida os dois por um fator comum.
 ma-fractions.c1.viz.steps.1	Divida ambos por 2
@@ -491,7 +491,7 @@ ma-fractions.c3.viz.items.1.s	b, d
 ma-fractions.c3.viz.items.1.m	embaixo
 ma-fractions.c4.title	Dividir por uma fração
 ma-fractions.c4.text	Dividir por uma fração é multiplicar pela fração invertida. 3 ÷ 1/2 = 6: quantas metades cabem em 3? Seis.
-ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1.5
+ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1,5
 ma-fractions.c4.viz.items.0.r	3 ÷ ½ = 6, pois seis metades fazem três
 ma-fractions.c5.title	Razões
 ma-fractions.c5.text	Uma razão compara quantidades. Uma mistura de cimento e areia na razão 2:3 tem 2 partes de cimento para cada 3 de areia: 2/5 da mistura é cimento.
@@ -499,14 +499,14 @@ ma-fractions.c5.viz.unit	partes
 ma-fractions.c5.viz.items.0.l	Cimento
 ma-fractions.c5.viz.items.1.l	Areia
 ma-fractions.c6.title	Adaptar receitas
-ma-fractions.c6.text	Uma receita para 4 pessoas leva 300 g de farinha. Para 6 pessoas, multiplique por 6/4 = 1.5: 450 g.
-ma-fractions.c6.example.0	Fator de escala = 6 ÷ 4 = 1.5
-ma-fractions.c6.example.1	300 g × 1.5 = 450 g
+ma-fractions.c6.text	Uma receita para 4 pessoas leva 300 g de farinha. Para 6 pessoas, multiplique por 6/4 = 1,5: 450 g.
+ma-fractions.c6.example.0	Fator de escala = 6 ÷ 4 = 1,5
+ma-fractions.c6.example.1	300 g × 1,5 = 450 g
 ma-fractions.c6.viz.steps.0	Ache o fator de escala
 ma-fractions.c6.viz.steps.1	Multiplique cada ingrediente
 ma-fractions.c6.viz.steps.2	Cozinhe
 ma-fractions.c7.title	Preço por unidade
-ma-fractions.c7.text	Compare ofertas pelo preço por unidade. 500 g por €2.40 dá €4.80/kg; 750 g por €3.30 dá €4.40/kg. Aqui o pacote maior sai mais barato, mas nem sempre é assim.
+ma-fractions.c7.text	Compare ofertas pelo preço por unidade. 500 g por €2,40 dá €4,80/kg; 750 g por €3,30 dá €4,40/kg. Aqui o pacote maior sai mais barato, mas nem sempre é assim.
 ma-fractions.c7.viz.unit	€ por kg
 ma-fractions.c7.viz.items.0.l	pacote de 500 g
 ma-fractions.c7.viz.items.1.l	pacote de 750 g
@@ -583,11 +583,11 @@ ma-mental.c7.viz.steps.1	Estimativa rápida
 ma-mental.c7.viz.steps.2	Calcule
 ma-mental.c7.viz.steps.3	Compare
 ma-mental.c8.title	Contar para cima para dar o troco
-ma-mental.c8.text	Os comerciantes dão o troco contando para cima. Pagando €20 por €13.65: até €14 são 35 centavos, até €20 são €6, então €6.35.
-ma-mental.c8.viz.steps.3	Troco: €6.35
+ma-mental.c8.text	Os comerciantes dão o troco contando para cima. Pagando €20 por €13,65: até €14 são 35 centavos, até €20 são €6, então €6,35.
+ma-mental.c8.viz.steps.3	Troco: €6,35
 ma-mental.c9.title	Converter temperaturas
-ma-mental.c9.text	De Celsius para Fahrenheit, aproximadamente: dobre e some 30. 20 °C ≈ 70 °F (exatamente 68). Para o valor exato, multiplique por 1.8 e some 32.
-ma-mental.c9.viz.f	°F = °C × 1.8 + 32
+ma-mental.c9.text	De Celsius para Fahrenheit, aproximadamente: dobre e some 30. 20 °C ≈ 70 °F (exatamente 68). Para o valor exato, multiplique por 1,8 e some 32.
+ma-mental.c9.viz.f	°F = °C × 1,8 + 32
 ma-mental.c9.viz.items.0.s	°C
 ma-mental.c9.viz.items.0.m	Celsius
 ma-mental.c9.viz.items.1.s	°F
@@ -655,10 +655,10 @@ ma-algebra.c5.viz.items.0.b	3x
 ma-algebra.c5.viz.items.2.a	3(x + 4)
 ma-algebra.c5.viz.items.2.b	3x + 12
 ma-algebra.c6.title	Duas incógnitas
-ma-algebra.c6.text	Dois cafés e um bolo custam €5; um café e um bolo custam €3.50. Subtraia: um café custa €1.50, então o bolo custa €2. Isso é um sistema de equações.
+ma-algebra.c6.text	Dois cafés e um bolo custam €5; um café e um bolo custam €3,50. Subtraia: um café custa €1,50, então o bolo custa €2. Isso é um sistema de equações.
 ma-algebra.c6.example.0	2c + k = 5
-ma-algebra.c6.example.1	c + k = 3.5
-ma-algebra.c6.example.2	c = 1.5, então k = 2
+ma-algebra.c6.example.1	c + k = 3,5
+ma-algebra.c6.example.2	c = 1,5, então k = 2
 ma-algebra.c6.viz.l.t	Dois cafés e um bolo
 ma-algebra.c6.viz.r.t	Um café e um bolo
 ma-algebra.c7.title	Sinais negativos
@@ -670,9 +670,9 @@ ma-algebra.c8.viz.items.0.s	n
 ma-algebra.c8.viz.items.0.m	posição na sequência
 ma-algebra.c8.viz.items.1.s	termo 100
 ma-algebra.c9.title	Um problema real
-ma-algebra.c9.text	Um plano de celular custa €10 por mês mais €0.05 por MB. Com €15 por mês, quantos MB você pode usar? 10 + 0.05m = 15, então m = 100 MB.
-ma-algebra.c9.example.0	10 + 0.05m = 15
-ma-algebra.c9.example.1	0.05m = 5
+ma-algebra.c9.text	Um plano de celular custa €10 por mês mais €0,05 por MB. Com €15 por mês, quantos MB você pode usar? 10 + 0,05m = 15, então m = 100 MB.
+ma-algebra.c9.example.0	10 + 0,05m = 15
+ma-algebra.c9.example.1	0,05m = 5
 ma-algebra.c9.example.2	m = 100
 ma-algebra.c9.viz.unit	conta mensal, €
 ma-algebra.c9.viz.items.0.l	0 MB
@@ -750,8 +750,8 @@ ma-growth.c8.text	As substâncias radioativas decaem de forma exponencial. Depoi
 ma-growth.c8.viz.unit	% restante
 ma-growth.c8.viz.items.1.l	1 meia-vida
 ma-growth.c9.title	Dobrar papel
-ma-growth.c9.text	Uma folha de papel com cerca de 0.1 mm de espessura, dobrada 42 vezes, teria mais de 400,000 km de espessura, passando da Lua. Na prática, não dá para dobrar papel mais do que umas 7 vezes à mão.
-ma-growth.c9.viz.items.0.v	0.1 mm
+ma-growth.c9.text	Uma folha de papel com cerca de 0,1 mm de espessura, dobrada 42 vezes, teria mais de 400,000 km de espessura, passando da Lua. Na prática, não dá para dobrar papel mais do que umas 7 vezes à mão.
+ma-growth.c9.viz.items.0.v	0,1 mm
 ma-growth.c9.viz.items.0.l	papel
 ma-growth.c9.viz.items.1.v	10 dobras
 ma-growth.c9.viz.items.1.l	~10 cm
@@ -798,7 +798,7 @@ ma-functions.c2.viz.items.1.m	onde corta o eixo y
 ma-functions.c2.viz.items.2.s	x
 ma-functions.c2.viz.items.2.m	entrada
 ma-functions.c3.title	A corrida de táxi
-ma-functions.c3.text	Um táxi cobra €3.50 de bandeirada mais €1.20 por km. Tarifa = 1.2 × km + 3.5: uma reta. 10 km custam €15.50.
+ma-functions.c3.text	Um táxi cobra €3,50 de bandeirada mais €1,20 por km. Tarifa = 1,2 × km + 3,5: uma reta. 10 km custam €15,50.
 ma-functions.c3.viz.unit	tarifa, €
 ma-functions.c3.viz.items.0.l	0 km
 ma-functions.c3.viz.items.1.l	5 km
@@ -969,7 +969,7 @@ ma-codes.c4.title	Chaves
 ma-codes.c4.text	A criptografia moderna é pública: o método é conhecido, e a segurança vem inteiramente de uma chave secreta. Uma chave de 128 bits tem trilhões de vezes mais combinações do que existem grãos de areia na Terra.
 ma-codes.c4.viz.items.0.v	2¹²⁸
 ma-codes.c4.viz.items.0.l	chaves possíveis de 128 bits
-ma-codes.c4.viz.items.1.v	3.4 × 10³⁸
+ma-codes.c4.viz.items.1.v	3,4 × 10³⁸
 ma-codes.c4.viz.items.1.l	esse número
 ma-codes.c4.viz.items.2.v	Bilhões de anos
 ma-codes.c4.viz.items.2.l	para testar todas
@@ -1105,7 +1105,7 @@ ma-calculus.c1.title	Velocidade instantânea
 ma-calculus.c1.text	O velocímetro do carro mostra a velocidade num instante, não uma média. O cálculo a define medindo em intervalos de tempo cada vez menores.
 ma-calculus.c1.viz.steps.0	Média em 1 min
 ma-calculus.c1.viz.steps.1	Em 1 s
-ma-calculus.c1.viz.steps.2	Em 0.001 s
+ma-calculus.c1.viz.steps.2	Em 0,001 s
 ma-calculus.c1.viz.steps.3	Velocidade instantânea
 ma-calculus.c2.title	A inclinação de uma curva
 ma-calculus.c2.text	Uma derivada é a inclinação de uma curva num ponto: amplie o bastante e qualquer curva suave parece uma reta.
@@ -1214,7 +1214,7 @@ ma-networks.c4.viz.items.0.l	5 cidades
 ma-networks.c4.viz.items.1.l	10 cidades
 ma-networks.c4.viz.items.2.l	20 cidades*
 ma-networks.c5.title	Seis graus de separação
-ma-networks.c5.text	O experimento de Stanley Milgram, de 1967, sugeriu que quaisquer dois americanos estão ligados por cerca de seis conhecidos. Dados do Facebook encontraram depois uma média de cerca de 3.5 passos.
+ma-networks.c5.text	O experimento de Stanley Milgram, de 1967, sugeriu que quaisquer dois americanos estão ligados por cerca de seis conhecidos. Dados do Facebook encontraram depois uma média de cerca de 3,5 passos.
 ma-networks.c5.viz.steps.0	Você
 ma-networks.c5.viz.steps.1	Um amigo
 ma-networks.c5.viz.steps.2	O amigo dele
@@ -1250,7 +1250,7 @@ ma-estimate.q0.q	Quanto tempo dura um bilhão de segundos?
 ma-estimate.q0.o0	Cerca de 3 anos
 ma-estimate.q0.o1	Cerca de 11 dias
 ma-estimate.q0.o2	Cerca de 32 anos
-ma-estimate.q0.x	Um milhão de segundos são cerca de 11.5 dias.
+ma-estimate.q0.x	Um milhão de segundos são cerca de 11,5 dias.
 ma-estimate.q1.q	O que é um problema de Fermi?
 ma-estimate.q1.o0	Um problema de matemática sem solução
 ma-estimate.q1.o1	Uma estimativa aproximada feita a partir de palpites simples
@@ -1280,13 +1280,13 @@ ma-estimate.c2.viz.items.3.l	Portugal
 ma-estimate.c3.title	Referências úteis
 ma-estimate.c3.text	Memorize alguns números de referência e você consegue estimar quase qualquer coisa.
 ma-estimate.c3.viz.items.0.a	Portugal
-ma-estimate.c3.viz.items.0.b	~10.5 milhões de pessoas
+ma-estimate.c3.viz.items.0.b	~10,5 milhões de pessoas
 ma-estimate.c3.viz.items.1.a	Mundo
 ma-estimate.c3.viz.items.1.b	~8 bilhões de pessoas
 ma-estimate.c3.viz.items.2.a	Circunferência da Terra
 ma-estimate.c3.viz.items.2.b	40,000 km
 ma-estimate.c3.viz.items.3.a	Um ano
-ma-estimate.c3.viz.items.3.b	~31.5 milhões de segundos
+ma-estimate.c3.viz.items.3.b	~31,5 milhões de segundos
 ma-estimate.c4.title	Arredonde sem medo
 ma-estimate.c4.text	Arredonde para números fáceis de multiplicar. 47 × 213 ≈ 50 × 200 = 10,000. A resposta real é 10,011.
 ma-estimate.c4.viz.steps.1	Arredonde: 50 × 200
@@ -1308,7 +1308,7 @@ ma-estimate.c7.viz.steps.1	Meça a área total
 ma-estimate.c7.viz.steps.2	Multiplique
 ma-estimate.c7.viz.steps.3	Tamanho da multidão
 ma-estimate.c8.title	Quanto tempo dura um bilhão de segundos?
-ma-estimate.c8.text	Um milhão de segundos são cerca de 11.5 dias. Um bilhão de segundos são cerca de 32 anos. Números grandes são muito diferentes, mesmo que soem parecidos.
+ma-estimate.c8.text	Um milhão de segundos são cerca de 11,5 dias. Um bilhão de segundos são cerca de 32 anos. Números grandes são muito diferentes, mesmo que soem parecidos.
 ma-estimate.c8.viz.unit	tempo
 ma-estimate.c8.viz.items.0.l	Mil s, minutos
 ma-estimate.c8.viz.items.1.l	Milhão de s, dias
@@ -1351,7 +1351,7 @@ ma-patterns.c3.viz.items.1.b	8 e 13
 ma-patterns.c3.viz.items.2.a	Girassol
 ma-patterns.c3.viz.items.2.b	34 e 55 ou 55 e 89
 ma-patterns.c4.title	A razão áurea
-ma-patterns.c4.text	Divida cada número de Fibonacci pelo anterior e você se aproxima de 1.618…, a razão áurea φ.
+ma-patterns.c4.text	Divida cada número de Fibonacci pelo anterior e você se aproxima de 1,618…, a razão áurea φ.
 ma-patterns.c4.viz.unit	razão
 ma-patterns.c5.title	O triângulo de Pascal
 ma-patterns.c5.text	Cada número é a soma dos dois que estão acima dele. O triângulo esconde os números naturais, os números triangulares, as potências de 2 e as probabilidades de lançamentos de moeda.
@@ -1410,7 +1410,7 @@ ma-units.c3.viz.items.0.b	100 cm
 ma-units.c3.viz.items.1.a	1 m²
 ma-units.c3.viz.items.1.b	10,000 cm²
 ma-units.c3.viz.items.2.a	1 m³
-ma-units.c3.viz.items.2.b	1,000,000 cm³ = 1,000 litros
+ma-units.c3.viz.items.2.b	1.000.000 cm³ = 1,000 litros
 ma-units.c4.title	Hectares
 ma-units.c4.text	Um hectare é 100 m × 100 m = 10,000 m², cerca de um campo de futebol e meio. Fazendas e florestas são medidas em hectares.
 ma-units.c4.viz.items.0.v	10,000 m²
@@ -1419,15 +1419,15 @@ ma-units.c4.viz.items.1.v	100 ha
 ma-units.c4.viz.items.1.l	um km²
 ma-units.c4.viz.items.2.l	campos de futebol
 ma-units.c5.title	Unidades imperiais
-ma-units.c5.text	O Reino Unido e os EUA ainda usam milhas, libras e Fahrenheit. Conversões rápidas: 1 milha ≈ 1.6 km, 1 kg ≈ 2.2 lb, 1 polegada = 2.54 cm.
+ma-units.c5.text	O Reino Unido e os EUA ainda usam milhas, libras e Fahrenheit. Conversões rápidas: 1 milha ≈ 1,6 km, 1 kg ≈ 2,2 lb, 1 polegada = 2,54 cm.
 ma-units.c5.viz.items.0.a	1 milha
-ma-units.c5.viz.items.0.b	1.609 km
+ma-units.c5.viz.items.0.b	1,609 km
 ma-units.c5.viz.items.1.a	1 kg
-ma-units.c5.viz.items.1.b	2.205 lb
+ma-units.c5.viz.items.1.b	2,205 lb
 ma-units.c5.viz.items.2.a	1 polegada
-ma-units.c5.viz.items.2.b	2.54 cm
+ma-units.c5.viz.items.2.b	2,54 cm
 ma-units.c5.viz.items.3.a	1 galão americano
-ma-units.c5.viz.items.3.b	3.79 litros
+ma-units.c5.viz.items.3.b	3,79 litros
 ma-units.c6.title	A Mars Climate Orbiter
 ma-units.c6.text	Em 1999, uma sonda da NASA foi perdida em Marte porque uma equipe usou libras-força e outra, newtons. O erro de $125 milhões foi uma confusão de unidades.
 ma-units.c6.viz.steps.0	Equipe A: unidades imperiais
@@ -1435,22 +1435,22 @@ ma-units.c6.viz.steps.1	Equipe B: métricas
 ma-units.c6.viz.steps.2	Dados dos propulsores errados
 ma-units.c6.viz.steps.3	Sonda perdida em Marte
 ma-units.c7.title	Algarismos significativos
-ma-units.c7.text	A precisão deve acompanhar a medição. Um cômodo medido como 4.2 m não tem uma área de exatamente 17.64 m²; diga cerca de 17.6 m².
-ma-units.c7.viz.items.0.w	17.6400 m²
-ma-units.c7.viz.items.0.r	cerca de 17.6 m²
+ma-units.c7.text	A precisão deve acompanhar a medição. Um cômodo medido como 4,2 m não tem uma área de exatamente 17,64 m²; diga cerca de 17,6 m².
+ma-units.c7.viz.items.0.w	17,6400 m²
+ma-units.c7.viz.items.0.r	cerca de 17,6 m²
 ma-units.c8.title	Unidades de velocidade
-ma-units.c8.text	Divida km/h por 3.6 para obter metros por segundo. 120 km/h são cerca de 33 m/s: um carro percorre um campo de futebol a cada três segundos.
-ma-units.c8.viz.f	m/s = km/h ÷ 3.6
+ma-units.c8.text	Divida km/h por 3,6 para obter metros por segundo. 120 km/h são cerca de 33 m/s: um carro percorre um campo de futebol a cada três segundos.
+ma-units.c8.viz.f	m/s = km/h ÷ 3,6
 ma-units.c8.viz.items.0.s	km/h
 ma-units.c8.viz.items.0.m	quilômetros por hora
 ma-units.c8.viz.items.1.s	m/s
 ma-units.c8.viz.items.1.m	metros por segundo
 ma-units.c9.title	Unidades de energia
-ma-units.c9.text	Um quilowatt-hora mantém um aquecedor de 1,000 W ligado por uma hora. Uma Caloria dos alimentos são 1,000 calorias, cerca de 4.2 kJ. Um banho quente gasta cerca de 2–3 kWh.
+ma-units.c9.text	Um quilowatt-hora mantém um aquecedor de 1,000 W ligado por uma hora. Uma Caloria dos alimentos são 1,000 calorias, cerca de 4,2 kJ. Um banho quente gasta cerca de 2–3 kWh.
 ma-units.c9.viz.items.0.a	1 kWh
-ma-units.c9.viz.items.0.b	3.6 milhões de joules
+ma-units.c9.viz.items.0.b	3,6 milhões de joules
 ma-units.c9.viz.items.1.a	1 kcal
-ma-units.c9.viz.items.1.b	4.18 kJ
+ma-units.c9.viz.items.1.b	4,18 kJ
 ma-units.c9.viz.items.2.a	Banho quente
 ma-units.c9.viz.items.2.b	cerca de 2–3 kWh
 ma-puzzles.title	Enigmas famosos
@@ -1460,11 +1460,11 @@ ma-puzzles.q0.o0	90
 ma-puzzles.q0.o1	45
 ma-puzzles.q0.o2	100
 ma-puzzles.q0.x	10 × 9 ÷ 2.
-ma-puzzles.q1.q	0.999… com 9 se repetindo é igual a 1?
+ma-puzzles.q1.q	0,999… com 9 se repetindo é igual a 1?
 ma-puzzles.q1.o0	Não, é um pouco menor
 ma-puzzles.q1.o1	Sim, exatamente
 ma-puzzles.q1.o2	Só aproximadamente
-ma-puzzles.q1.x	3 × 0.333… = 0.999… = 1.
+ma-puzzles.q1.x	3 × 0,333… = 0,999… = 1.
 ma-puzzles.c0.title	A Torre de Hanói
 ma-puzzles.c0.text	Mova uma pilha de discos para outro pino, um de cada vez, sem nunca colocar um disco maior sobre um menor. Com n discos, são necessários 2ⁿ − 1 movimentos.
 ma-puzzles.c0.viz.unit	movimentos mínimos
@@ -1489,11 +1489,11 @@ ma-puzzles.c3.title	O princípio da casa dos pombos
 ma-puzzles.c3.text	Se você colocar 13 meias em 12 gavetas, pelo menos uma gaveta fica com duas. Simples, mas poderoso: em Lisboa, pelo menos duas pessoas têm exatamente o mesmo número de fios de cabelo na cabeça.
 ma-puzzles.c3.viz.steps.0	Mais itens do que caixas
 ma-puzzles.c3.viz.steps.1	Pelo menos uma caixa tem dois
-ma-puzzles.c4.title	O enigma do 0.999…
-ma-puzzles.c4.text	0.999…, com o 9 se repetindo para sempre, é exatamente igual a 1. Uma prova: 1/3 = 0.333…, então 3 × 1/3 = 0.999… = 1.
-ma-puzzles.c4.example.0	1/3 = 0.333…
+ma-puzzles.c4.title	O enigma do 0,999…
+ma-puzzles.c4.text	0,999…, com o 9 se repetindo para sempre, é exatamente igual a 1. Uma prova: 1/3 = 0,333…, então 3 × 1/3 = 0,999… = 1.
+ma-puzzles.c4.example.0	1/3 = 0,333…
 ma-puzzles.c4.example.1	× 3
-ma-puzzles.c4.example.2	0.999… = 1
+ma-puzzles.c4.example.2	0,999… = 1
 ma-puzzles.c5.title	O hotel de Hilbert
 ma-puzzles.c5.text	Um hotel com infinitos quartos está lotado. Chega um novo hóspede: passe todo mundo do quarto n para o quarto n + 1, e o quarto 1 fica livre. O infinito se comporta de um jeito estranho.
 ma-puzzles.c5.viz.steps.0	Hotel lotado

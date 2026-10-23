@@ -97,12 +97,14 @@ def extract(pid, deep=False, lessons=None):
     open(f, "w", encoding="utf-8").write("".join(f"{k}\t{esc(v)}\n" for k, v in rows))
     print(f"{f}: {len(rows)} strings, {sum(len(v) for _, v in rows)} chars")
 
-def read_tsv(f):
+def read_tsv(f, strict=True):
     d = {}
     for n, line in enumerate(open(f, encoding="utf-8"), 1):
         line = line.rstrip("\n")
         if not line.strip() or line.startswith("#"): continue
-        if "\t" not in line: raise SystemExit(f"{f}:{n}: no TAB")
+        if "\t" not in line:
+            if strict: raise SystemExit(f"{f}:{n}: no TAB")
+            continue
         k, v = line.split("\t", 1)
         d[k.strip()] = unesc(v.strip())
     return d
@@ -148,7 +150,7 @@ def apply(lang, only=None):
     tr = {}
     for f in sorted(glob.glob(os.path.join(CT, lang, "*.tsv"))):
         pid = os.path.basename(f).split(".")[0]
-        for k, v in read_tsv(f).items(): tr[(pid, k) if k.startswith("P.") else k] = v
+        for k, v in read_tsv(f, strict=False).items(): tr[(pid, k) if k.startswith("P.") else k] = v
     os.makedirs(os.path.join(PK, lang), exist_ok=True)
     for f in sorted(glob.glob(os.path.join(PK, "*.json"))):
         if f.endswith("catalog.json"): continue

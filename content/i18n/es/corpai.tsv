@@ -1,0 +1,600 @@
+P.title	IA corporativa
+P.blurb	Llevar la IA a una empresa: casos de uso, arquitectura, gobernanza y valor.
+corp-why.title	Por qué las empresas adoptan la IA
+corp-why.summary	Las palancas de valor detrás del bombo.
+corp-why.q0.q	¿Cuál NO es una de las cuatro principales palancas de valor de la IA?
+corp-why.q0.o0	Productividad
+corp-why.q0.o1	Mejores decisiones
+corp-why.q0.o2	Sustituir a todos los directivos
+corp-why.q0.o3	Experiencia del cliente
+corp-why.q0.x	Las palancas son productividad, decisiones, experiencia del cliente y nuevos ingresos.
+corp-why.q1.q	¿Por qué muchos pilotos de IA no llegan a producción?
+corp-why.q1.o0	Los modelos son demasiado débiles
+corp-why.q1.o1	No se abordan los datos, la integración, el cambio de procesos ni la confianza
+corp-why.q1.o2	Demasiado presupuesto
+corp-why.q1.x	El modelo rara vez es el principal obstáculo.
+corp-why.q2.q	Un buen proyecto de IA parte de…
+corp-why.q2.o0	Una tecnología chula
+corp-why.q2.o1	Un problema de negocio con un responsable y un resultado medible
+corp-why.q2.o2	Una demo de un proveedor
+corp-why.q2.x	Primero el problema, después la tecnología.
+corp-why.c0.title	Cuatro palancas de valor
+corp-why.c0.text	La IA crea valor de negocio de cuatro formas principales: hacer el trabajo más rápido y barato, tomar mejores decisiones, mejorar la experiencia del cliente y permitir nuevos productos o ingresos.
+corp-why.c0.viz.root	Valor de la IA
+corp-why.c0.viz.items.0	Productividad
+corp-why.c0.viz.items.1	Mejores decisiones
+corp-why.c0.viz.items.2	Experiencia del cliente
+corp-why.c0.viz.items.3	Nuevos productos e ingresos
+corp-why.c1.title	Productividad
+corp-why.c1.text	Automatizar o acelerar el trabajo intelectual rutinario, como leer documentos, redactar, conciliar o responder preguntas habituales, libera a las personas para tareas de más valor.
+corp-why.c1.viz.steps.0	Tarea rutinaria
+corp-why.c1.viz.steps.1	La IA hace la primera pasada
+corp-why.c1.viz.steps.2	Una persona revisa excepciones
+corp-why.c1.viz.steps.3	Tiempo libre para tareas de criterio
+corp-why.c2.title	Mejores decisiones
+corp-why.c2.text	Prever con más precisión la demanda, los precios, el riesgo o las necesidades de mantenimiento reduce el desperdicio y mejora los márgenes. En trading, pequeñas mejoras en las previsiones pueden valer mucho.
+corp-why.c2.viz.items.0	Previsión de demanda
+corp-why.c2.viz.items.1	Señales de precio y riesgo
+corp-why.c2.viz.items.2	Mantenimiento predictivo
+corp-why.c2.viz.items.3	Riesgo de crédito y contraparte
+corp-why.c2.viz.items.4	Optimización de inventario
+corp-why.c3.title	Experiencia del cliente
+corp-why.c3.text	Respuestas más rápidas y 24/7, recomendaciones personalizadas y una tramitación más ágil de pedidos y reclamaciones mejoran la satisfacción y la fidelidad.
+corp-why.c3.viz.items.0	Respuestas 24/7
+corp-why.c3.viz.items.1	Pedidos y reclamaciones más rápidos
+corp-why.c3.viz.items.2	Personalización
+corp-why.c3.viz.items.3	Calidad constante
+corp-why.c4.title	Riesgo y cumplimiento
+corp-why.c4.text	La IA puede revisar transacciones en busca de fraude, contrastar contratos con las políticas, vigilar listas de sanciones y señalar anomalías mucho más rápido que una revisión manual.
+corp-why.c4.viz.steps.0	Miles de transacciones
+corp-why.c4.viz.steps.1	La IA señala anomalías
+corp-why.c4.viz.steps.2	Analistas revisan las pocas señaladas
+corp-why.c4.viz.steps.3	Cobertura más rápida y amplia
+corp-why.c5.title	No solo recortar costes
+corp-why.c5.text	Los programas de IA más sólidos la tratan como una capacidad para crecer y trabajar mejor, no solo para reducir plantilla. El enfoque influye en la adopción: la gente acoge las herramientas que la ayudan.
+corp-why.c5.viz.l.t	Enfoque de recorte
+corp-why.c5.viz.l.items.0	miedo
+corp-why.c5.viz.l.items.1	resistencia
+corp-why.c5.viz.l.items.2	adopción lenta
+corp-why.c5.viz.r.t	Enfoque de capacidad
+corp-why.c5.viz.r.items.0	curiosidad
+corp-why.c5.viz.r.items.1	implicación
+corp-why.c5.viz.r.items.2	valor más rápido
+corp-why.c6.title	Dónde se concentra el valor
+corp-why.c6.text	El valor suele concentrarse en procesos centrales de gran volumen, con decisiones repetitivas y muchos documentos o datos: operaciones financieras, atención al cliente, cadena de suministro, ventas y desarrollo de software.
+corp-why.c6.viz.items.0	Procesos de gran volumen
+corp-why.c6.viz.items.1	Trabajo con muchos documentos
+corp-why.c6.viz.items.2	Decisiones repetitivas
+corp-why.c6.viz.items.3	Operaciones ricas en datos
+corp-why.c6.viz.items.4	Desarrollo de software
+corp-why.c7.title	Bombo frente a realidad
+corp-why.c7.text	Muchos pilotos nunca llegan a producción. La brecha no suele estar en el modelo, sino en los datos, la integración, el cambio de procesos y la confianza. Planifícalos desde el primer día.
+corp-why.c7.viz.l.t	Bombo
+corp-why.c7.viz.l.items.0	la IA lo hace todo
+corp-why.c7.viz.l.items.1	resultados inmediatos
+corp-why.c7.viz.r.t	Realidad
+corp-why.c7.viz.r.items.0	trabajo de datos e integración
+corp-why.c7.viz.r.items.1	cambio de procesos
+corp-why.c7.viz.r.items.2	mejoras constantes
+corp-why.c8.title	Presión competitiva
+corp-why.c8.text	A medida que la competencia adopta la IA, cambia el listón de velocidad y coste. Esperar puede significar quedarse atrás; precipitarse sin bases puede malgastar dinero. Gana un enfoque constante y priorizado.
+corp-why.c8.viz.l.t	Demasiado lento
+corp-why.c8.viz.l.items.0	la competencia se adelanta
+corp-why.c8.viz.r.t	Demasiado rápido
+corp-why.c8.viz.r.items.0	pilotos desperdiciados
+corp-why.c8.viz.r.items.1	incidentes de riesgo
+corp-why.c9.title	Empieza por el problema
+corp-why.c9.text	Los mejores proyectos de IA parten de un problema de negocio con un responsable y un resultado medible, no de una tecnología en busca de un uso.
+corp-why.c9.viz.items.0.w	«necesitamos un chatbot de IA»
+corp-why.c9.viz.items.0.r	«hay que reducir a la mitad el tiempo de tramitar facturas»
+corp-usecases.title	Encontrar casos de uso
+corp-usecases.summary	Detectar y priorizar dónde ayuda la IA.
+corp-usecases.q0.q	¿Qué ideas deberían ir primero normalmente?
+corp-usecases.q0.o0	Las de poco valor y difíciles
+corp-usecases.q0.o1	Las de mucho valor y alta viabilidad
+corp-usecases.q0.o2	Lo que sugiera el proveedor
+corp-usecases.q0.x	Las victorias rápidas generan impulso.
+corp-usecases.q1.q	Una IA que decide sobre candidatos a un empleo, ¿en qué nivel de riesgo está?
+corp-usecases.q1.o0	Bajo
+corp-usecases.q1.o1	Medio
+corp-usecases.q1.o2	Alto
+corp-usecases.q1.x	Las decisiones sobre personas son de alto riesgo.
+corp-usecases.q2.q	Prever la demanda encaja mejor con…
+corp-usecases.q2.o0	IA generativa
+corp-usecases.q2.o1	Aprendizaje automático predictivo
+corp-usecases.q2.o2	Reglas simples
+corp-usecases.q2.x	Los números y el histórico encajan con los modelos predictivos.
+corp-usecases.c0.title	Busca patrones
+corp-usecases.c0.text	Los buenos candidatos implican tareas repetitivas, mucho texto o documentos, reglas claras con muchas excepciones o decisiones basadas en datos históricos.
+corp-usecases.c0.viz.items.0	Tareas de texto repetitivas
+corp-usecases.c0.viz.items.1	Procesamiento de documentos
+corp-usecases.c0.viz.items.2	Decisiones de regla y excepción
+corp-usecases.c0.viz.items.3	Previsiones a partir del histórico
+corp-usecases.c0.viz.items.4	Búsqueda de conocimiento
+corp-usecases.c1.title	Pregunta a quienes hacen el trabajo
+corp-usecases.c1.text	Las mejores ideas vienen del personal de primera línea, que sabe dónde se pierde el tiempo. Los talleres y los recorridos por los procesos las sacan a la luz rápidamente.
+corp-usecases.c1.viz.steps.0	Entrevistar equipos
+corp-usecases.c1.viz.steps.1	Mapear el proceso
+corp-usecases.c1.viz.steps.2	Detectar cuellos de botella
+corp-usecases.c1.viz.steps.3	Listar oportunidades de IA
+corp-usecases.c2.title	Valor frente a viabilidad
+corp-usecases.c2.text	Puntúa cada idea por valor de negocio y viabilidad (datos disponibles, dificultad técnica, riesgo). Empieza por las de mucho valor y alta viabilidad: victorias rápidas.
+corp-usecases.c2.viz.l.t	Mucho valor, alta viabilidad
+corp-usecases.c2.viz.l.items.0	hacer primero
+corp-usecases.c2.viz.l.items.1	victorias rápidas
+corp-usecases.c2.viz.r.t	Poco valor, baja viabilidad
+corp-usecases.c2.viz.r.items.0	descartar
+corp-usecases.c3.title	La lista de viabilidad
+corp-usecases.c3.text	¿Hay datos disponibles y son lo bastante buenos? ¿Se puede verificar el resultado? ¿Está comprometido el responsable del proceso? ¿Hay restricciones legales o regulatorias? ¿Se puede integrar con los sistemas existentes?
+corp-usecases.c3.viz.items.0	Datos disponibles y utilizables
+corp-usecases.c3.viz.items.1	Resultado verificable
+corp-usecases.c3.viz.items.2	Responsable de negocio implicado
+corp-usecases.c3.viz.items.3	Encaje legal y regulatorio
+corp-usecases.c3.viz.items.4	Vía de integración
+corp-usecases.c4.title	Nivel de riesgo
+corp-usecases.c4.text	Clasifica cada caso de uso por riesgo: la redacción interna es de bajo riesgo; las decisiones sobre personas (contratación, crédito) o la seguridad son de alto riesgo y requieren controles más estrictos.
+corp-usecases.c4.viz.items.0	Alto: decisiones sobre personas, seguridad
+corp-usecases.c4.viz.items.1	Medio: respuestas a clientes
+corp-usecases.c4.viz.items.2	Bajo: redacción y búsqueda internas
+corp-usecases.c5.title	Generativa frente a predictiva
+corp-usecases.c5.text	Elige la herramienta adecuada: IA generativa para lenguaje y documentos; ML predictivo para números y previsiones; reglas para lógica determinista sencilla. Muchas soluciones las combinan.
+corp-usecases.c5.viz.items.0.a	leer contratos
+corp-usecases.c5.viz.items.0.b	IA generativa
+corp-usecases.c5.viz.items.1.a	prever la demanda
+corp-usecases.c5.viz.items.1.b	ML predictivo
+corp-usecases.c5.viz.items.2.a	umbrales fijos de aprobación
+corp-usecases.c5.viz.items.2.b	reglas
+corp-usecases.c5.viz.items.3.a	triaje de correos
+corp-usecases.c5.viz.items.3.b	clasificación
+corp-usecases.c6.title	Copilotos frente a automatización
+corp-usecases.c6.text	Los copilotos ayudan a una persona (redactan, sugieren) y mantienen el control humano. La automatización completa tareas de principio a fin. Los copilotos son más fáciles de adoptar primero; la automatización ahorra más una vez que hay confianza.
+corp-usecases.c6.viz.l.t	Copiloto
+corp-usecases.c6.viz.l.items.0	ayuda a personas
+corp-usecases.c6.viz.l.items.1	menor riesgo
+corp-usecases.c6.viz.l.items.2	adopción más rápida
+corp-usecases.c6.viz.r.t	Automatización
+corp-usecases.c6.viz.r.items.0	de principio a fin
+corp-usecases.c6.viz.r.items.1	más ahorro
+corp-usecases.c6.viz.r.items.2	exige alta fiabilidad
+corp-usecases.c7.title	Cartera de casos de uso
+corp-usecases.c7.text	Equilibra una cartera: algunas victorias rápidas para generar impulso, algunas apuestas transformadoras más grandes y bases habilitadoras (datos, plataforma, competencias).
+corp-usecases.c7.viz.unit	reparto del esfuerzo (ilustrativo)
+corp-usecases.c7.viz.items.0.l	Victorias rápidas
+corp-usecases.c7.viz.items.1.l	Transformadores
+corp-usecases.c7.viz.items.2.l	Bases
+corp-usecases.c8.title	Escribe un resumen de una página
+corp-usecases.c8.text	Para cada caso de uso: problema, usuarios, valor esperado, datos necesarios, métrica de éxito, riesgos y responsable. Una sola página obliga a tener claridad antes de gastar dinero.
+corp-usecases.c8.viz.items.0	Problema y usuarios
+corp-usecases.c8.viz.items.1	Valor esperado
+corp-usecases.c8.viz.items.2	Datos necesarios
+corp-usecases.c8.viz.items.3	Métrica de éxito
+corp-usecases.c8.viz.items.4	Riesgos y responsable
+corp-usecases.c9.title	Descarta rápido
+corp-usecases.c9.text	No todas las ideas funcionan. Fija un plazo corto y criterios de éxito claros para los experimentos, y detén los que no los cumplan. El objetivo es aprender rápido.
+corp-usecases.c9.viz.steps.0	Definir criterios de éxito
+corp-usecases.c9.viz.steps.1	Experimento de 4–8 semanas
+corp-usecases.c9.viz.steps.2	Medir
+corp-usecases.c9.viz.steps.3	Escalar, ajustar o parar
+corp-build.title	Desarrollar, comprar o asociarse
+corp-build.summary	Cómo elegir la forma de obtener capacidades de IA.
+corp-build.q0.q	¿Cuándo suele tener sentido desarrollar?
+corp-build.q0.o0	Para redactar correos genéricos
+corp-build.q0.o1	Para procesos centrales y diferenciadores con datos propios
+corp-build.q0.o2	Nunca
+corp-build.q0.x	Desarrolla donde te diferencias.
+corp-build.q1.q	¿Qué reduce la dependencia de un proveedor?
+corp-build.q1.o0	Un solo proveedor para todo
+corp-build.q1.o1	Capas de abstracción, estándares abiertos y ser dueño de tus datos
+corp-build.q1.o2	Contratos más largos
+corp-build.q1.x	Mantén las opciones abiertas.
+corp-build.q2.q	Antes de desarrollar una nueva herramienta de IA deberías comprobar…
+corp-build.q2.o0	Nada
+corp-build.q2.o1	Qué funciones de IA ofrece ya tu software actual
+corp-build.q2.o2	Los logotipos de la competencia
+corp-build.q2.x	Puede que la IA integrada ya lo cubra.
+corp-build.c0.title	Tres opciones
+corp-build.c0.text	Comprar: usar funciones de IA del software que ya tienes o herramientas SaaS. Desarrollar: crear tus propias soluciones sobre modelos y plataformas. Asociarse: trabajar con un especialista o integrador.
+corp-build.c0.viz.root	Abastecimiento
+corp-build.c0.viz.items.0	Comprar: SaaS e IA integrada
+corp-build.c0.viz.items.1	Desarrollar: soluciones propias
+corp-build.c0.viz.items.2	Asociarse: especialistas e integradores
+corp-build.c1.title	Cuándo comprar
+corp-build.c1.text	Compra para necesidades comunes en las que no te diferencias: redactar correos, notas de reuniones, chat genérico, funciones estándar de RR. HH. o CRM. Es más rápido y barato para empezar.
+corp-build.c1.viz.items.0	Tareas comunes, no diferenciadoras
+corp-build.c1.viz.items.1	Existen productos maduros
+corp-build.c1.viz.items.2	La rapidez importa
+corp-build.c1.viz.items.3	Equipo interno limitado
+corp-build.c2.title	Cuándo desarrollar
+corp-build.c2.text	Desarrolla donde la IA toca tu ventaja competitiva o tus datos propios, donde la integración con los sistemas centrales es profunda o donde las herramientas estándar no encajan con tu proceso.
+corp-build.c2.viz.items.0	Procesos centrales diferenciadores
+corp-build.c2.viz.items.1	Datos propios
+corp-build.c2.viz.items.2	Integración profunda
+corp-build.c2.viz.items.3	Flujos de trabajo específicos
+corp-build.c3.title	IA integrada en los sistemas centrales
+corp-build.c3.text	Los ERP, CRM y paquetes de productividad incluyen cada vez más IA (Microsoft Copilot, SAP Joule, Salesforce Einstein). Comprueba qué licencias ya tienes antes de desarrollar.
+corp-build.c3.viz.items.0.a	Microsoft 365
+corp-build.c3.viz.items.0.b	Copilot
+corp-build.c3.viz.items.1.a	SAP
+corp-build.c3.viz.items.1.b	Joule e IA integrada
+corp-build.c3.viz.items.2.a	Salesforce
+corp-build.c3.viz.items.2.b	Einstein / Agentforce
+corp-build.c3.viz.items.3.a	ServiceNow
+corp-build.c3.viz.items.3.b	Now Assist
+corp-build.c4.title	Plataformas, no soluciones aisladas
+corp-build.c4.text	Desarrollar cada caso de uso desde cero es lento. Una plataforma de IA compartida (acceso a modelos, RAG, salvaguardas, monitorización) permite a los equipos crear muchas soluciones más rápido y de forma coherente.
+corp-build.c4.viz.l.t	Soluciones aisladas
+corp-build.c4.viz.l.items.0	trabajo repetido
+corp-build.c4.viz.l.items.1	controles desiguales
+corp-build.c4.viz.r.t	Plataforma compartida
+corp-build.c4.viz.r.items.0	componentes reutilizables
+corp-build.c4.viz.r.items.1	seguridad común
+corp-build.c4.viz.r.items.2	entrega más rápida
+corp-build.c5.title	Dependencia del proveedor
+corp-build.c5.text	Depender de un solo modelo o proveedor puede ser arriesgado, porque el mercado avanza deprisa. Las capas de abstracción, los estándares abiertos y los datos portables reducen esa dependencia.
+corp-build.c5.viz.items.0	Capa de abstracción de modelos
+corp-build.c5.viz.items.1	Estándares abiertos (p. ej. MCP)
+corp-build.c5.viz.items.2	Sé dueño de datos y prompts
+corp-build.c5.viz.items.3	Cláusulas de salida en contratos
+corp-build.c6.title	Evaluar proveedores
+corp-build.c6.text	Pide pruebas con tus datos: precisión, certificaciones de seguridad, condiciones de tratamiento de datos, opciones de integración, precio a escala y hoja de ruta.
+corp-build.c6.viz.items.0	Resultados con tus propios datos
+corp-build.c6.viz.items.1	Seguridad y certificaciones
+corp-build.c6.viz.items.2	Uso y retención de datos
+corp-build.c6.viz.items.3	Opciones de integración
+corp-build.c6.viz.items.4	Coste total a escala
+corp-build.c7.title	Coste total
+corp-build.c7.text	Cuenta más que las licencias: integración, preparación de datos, gestión del cambio, monitorización, soporte y costes de uso de modelos a lo largo de varios años.
+corp-build.c7.viz.items.0	Licencias o uso de modelos
+corp-build.c7.viz.items.1	Integración y trabajo de datos
+corp-build.c7.viz.items.2	Gestión del cambio y formación
+corp-build.c7.viz.items.3	Operación y monitorización
+corp-build.c8.title	Socios
+corp-build.c8.text	Los integradores de sistemas y las firmas especializadas aportan experiencia y capacidad. Mantén el conocimiento clave en casa para no depender de ellos en cada cambio.
+corp-build.c8.viz.l.t	El socio aporta
+corp-build.c8.viz.l.items.0	rapidez
+corp-build.c8.viz.l.items.1	experiencia
+corp-build.c8.viz.l.items.2	capacidad extra
+corp-build.c8.viz.r.t	Mantener en casa
+corp-build.c8.viz.r.items.0	arquitectura
+corp-build.c8.viz.r.items.1	conocer los datos
+corp-build.c8.viz.r.items.2	competencias clave
+corp-build.c9.title	Revisa con regularidad
+corp-build.c9.text	Lo que desarrollas hoy puede convertirse el año que viene en un producto estándar. Revisa las decisiones de desarrollar o comprar a medida que madura el mercado.
+corp-build.c9.viz.steps.0	Decidir desarrollar o comprar
+corp-build.c9.viz.steps.1	Aportar valor
+corp-build.c9.viz.steps.2	El mercado madura
+corp-build.c9.viz.steps.3	Reevaluar
+corp-roi.title	El caso de negocio
+corp-roi.summary	Estimar valor, coste y retorno de la inversión.
+corp-roi.q0.q	10.000 elementos, 0,2 h ahorradas en cada uno, 50 €/h y 50 % de adopción dan unos…
+corp-roi.q0.o0	100.000 €
+corp-roi.q0.o1	50.000 €
+corp-roi.q0.o2	10.000 €
+corp-roi.q0.x	10.000 × 0,2 × 50 × 0,5 = 50.000 €.
+corp-roi.q1.q	¿Por qué medir primero una línea base?
+corp-roi.q1.o0	Lo exige la ley
+corp-roi.q1.o1	Para demostrar la mejora después
+corp-roi.q1.o2	Para frenar el proyecto
+corp-roi.q1.x	Sin ella no se pueden demostrar las mejoras.
+corp-roi.q2.q	El tiempo ahorrado se convierte en valor real cuando…
+corp-roi.q2.o0	Se reporta
+corp-roi.q2.o1	Se dedica a trabajo valioso o reduce costes
+corp-roi.q2.o2	La gente se toma descansos más largos
+corp-roi.q2.x	El valor hay que materializarlo.
+corp-roi.c0.title	Parte de una línea base
+corp-roi.c0.text	Mide primero el proceso actual: tiempo por tarea, volumen, tasa de errores, coste y tiempo de ciclo. Sin una línea base no puedes demostrar la mejora.
+corp-roi.c0.viz.items.0	Tiempo por tarea
+corp-roi.c0.viz.items.1	Volumen al mes
+corp-roi.c0.viz.items.2	Tasas de error y retrabajo
+corp-roi.c0.viz.items.3	Coste por transacción
+corp-roi.c0.viz.items.4	Tiempo de ciclo
+corp-roi.c1.title	Valor del ahorro de tiempo
+corp-roi.c1.text	Una estimación sencilla: volumen × tiempo ahorrado por elemento × coste por hora × tasa de adopción. Sé prudente.
+corp-roi.c1.example.0	20.000 × 0,1 h × 40 € × 0,7
+corp-roi.c1.example.1
+corp-roi.c1.example.2	≈ 56.000 € al año
+corp-roi.c1.viz.f	valor = volumen × tiempo ahorrado × coste/hora × adopción
+corp-roi.c1.viz.items.0.m	20.000 facturas/año
+corp-roi.c1.viz.items.1.m	6 min ahorrados
+corp-roi.c1.viz.items.2.m	40 €/h
+corp-roi.c1.viz.items.3.m	70 % de adopción
+corp-roi.c2.title	Más allá del ahorro de tiempo
+corp-roi.c2.text	Incluye mejoras de calidad (menos errores), ciclos más cortos (cobrar antes), reducción de riesgos y mejores decisiones. A menudo valen más que las horas ahorradas.
+corp-roi.c2.viz.items.0	Menos errores y retrabajo
+corp-roi.c2.viz.items.1	Ciclos más cortos
+corp-roi.c2.viz.items.2	Mejora del capital circulante
+corp-roi.c2.viz.items.3	Riesgo evitado
+corp-roi.c2.viz.items.4	Mejores decisiones
+corp-roi.c3.title	Costes completos
+corp-roi.c3.text	Incluye costes de desarrollo, licencias o uso de modelos, integración, preparación de datos, gestión del cambio, formación y costes de operación durante varios años.
+corp-roi.c3.viz.unit	reparto de costes (% ilustrativo)
+corp-roi.c3.viz.items.0.l	Desarrollo e integración
+corp-roi.c3.viz.items.1.l	Modelo y licencias
+corp-roi.c3.viz.items.2.l	Preparación de datos
+corp-roi.c3.viz.items.3.l	Cambio y formación
+corp-roi.c3.viz.items.4.l	Operación
+corp-roi.c4.title	ROI y plazo de recuperación
+corp-roi.c4.text	El ROI compara la ganancia neta con el coste; el plazo de recuperación es el tiempo que tarda el valor acumulado en cubrir la inversión.
+corp-roi.c4.viz.f	ROI = (valor − coste) ÷ coste
+corp-roi.c4.viz.items.0.s	recuperación
+corp-roi.c4.viz.items.0.m	meses hasta valor acumulado ≥ coste
+corp-roi.c5.title	La adopción impulsa el valor
+corp-roi.c5.text	Una herramienta que nadie usa no aporta nada. Modela el valor con curvas de adopción realistas, que suben a lo largo de los meses, no con un 100 % desde el primer día.
+corp-roi.c5.viz.events.0.y	Mes 1
+corp-roi.c5.viz.events.0.l	20 % de adopción
+corp-roi.c5.viz.events.1.y	Mes 3
+corp-roi.c5.viz.events.2.y	Mes 6
+corp-roi.c5.viz.events.3.y	Mes 12
+corp-roi.c6.title	El tiempo liberado hay que usarlo
+corp-roi.c6.text	Las horas ahorradas solo se convierten en valor si se reasignan: más volumen atendido, mejor servicio, trabajo nuevo o menos horas extra y externalización.
+corp-roi.c6.viz.steps.0	Horas ahorradas
+corp-roi.c6.viz.steps.1	Reasignadas a trabajo valioso
+corp-roi.c6.viz.steps.2	Resultado medible
+corp-roi.c6.viz.steps.3	Valor real
+corp-roi.c7.title	Rangos, no cifras exactas
+corp-roi.c7.text	Los resultados de la IA son inciertos. Presenta escenarios bajo, esperado y alto, con los supuestos de cada uno.
+corp-roi.c7.viz.unit	valor anual (miles de €, ilustrativo)
+corp-roi.c7.viz.items.0.l	Bajo
+corp-roi.c7.viz.items.1.l	Esperado
+corp-roi.c7.viz.items.2.l	Alto
+corp-roi.c8.title	Mide tras el lanzamiento
+corp-roi.c8.text	Tras el lanzamiento, sigue las mismas métricas que en la línea base y compara. Informa de los resultados reales, incluido lo que no funcionó.
+corp-roi.c8.viz.steps.0	Línea base
+corp-roi.c8.viz.steps.1	Lanzamiento
+corp-roi.c8.viz.steps.2	Medir las mismas métricas
+corp-roi.c8.viz.steps.3	Informar y ajustar
+corp-roi.c9.title	Valor estratégico
+corp-roi.c9.text	Algunas inversiones, como las plataformas de datos o las competencias en IA, no se amortizan con un solo caso de uso, pero hacen posibles muchos. Fináncialas como bases, con visión de cartera.
+corp-roi.c9.viz.l.t	Caso de uso
+corp-roi.c9.viz.l.items.0	ROI directo
+corp-roi.c9.viz.l.items.1	un proceso
+corp-roi.c9.viz.r.t	Base
+corp-roi.c9.viz.r.items.0	habilita muchos
+corp-roi.c9.viz.r.items.1	ROI indirecto
+corp-roi.c9.viz.r.items.2	coste compartido
+corp-data.title	Bases de datos sólidas
+corp-data.summary	Sin buenos datos no hay IA.
+corp-data.q0.q	¿Qué suele ser lo más difícil de la IA corporativa?
+corp-data.q0.o0	Elegir el modelo
+corp-data.q0.o1	Encontrar, acceder y limpiar los datos adecuados
+corp-data.q0.o2	Comprar GPU
+corp-data.q0.x	Los datos suelen ser el cuello de botella.
+corp-data.q1.q	¿Qué son los datos maestros?
+corp-data.q1.o0	Datos sobre los directivos
+corp-data.q1.o1	La versión única y fiable de entidades clave como clientes y productos
+corp-data.q1.o2	Datos de copia de seguridad
+corp-data.q1.x	Un solo registro en todos los sistemas.
+corp-data.q2.q	¿Por qué clasificar la sensibilidad de los datos?
+corp-data.q2.o0	Por diversión
+corp-data.q2.o1	Para poder aplicar reglas de acceso, también a las herramientas de IA
+corp-data.q2.o2	Para borrarlos
+corp-data.q2.x	Usuarios e IA solo deben ver lo permitido.
+corp-data.c0.title	Los datos son el cuello de botella
+corp-data.c0.text	Para la mayoría de las empresas, lo más difícil de la IA no es el modelo, sino encontrar, acceder, limpiar y conectar los datos adecuados.
+corp-data.c0.viz.items.0	Casos de uso de IA
+corp-data.c0.viz.items.1	Productos de datos y API
+corp-data.c0.viz.items.2	Datos integrados y gobernados
+corp-data.c0.viz.items.3	Sistemas origen: ERP, CRM, archivos
+corp-data.c1.title	Conoce tus datos
+corp-data.c1.text	Un catálogo de datos recoge qué datos existen, dónde están, quién es su responsable, qué significan y lo sensibles que son. Sin él, los equipos pierden semanas buscando.
+corp-data.c1.viz.items.0	Qué datos existen
+corp-data.c1.viz.items.1	Dónde están
+corp-data.c1.viz.items.2	Quién es responsable
+corp-data.c1.viz.items.3	Definiciones
+corp-data.c1.viz.items.4	Nivel de sensibilidad
+corp-data.c2.title	Dimensiones de la calidad de datos
+corp-data.c2.text	Calidad significa exactitud, integridad, coherencia, actualidad y unicidad. Un panel con la puntuación de calidad de cada conjunto de datos clave hace visibles los problemas.
+corp-data.c2.viz.items.0.a	exactitud
+corp-data.c2.viz.items.0.b	valores correctos
+corp-data.c2.viz.items.1.a	integridad
+corp-data.c2.viz.items.1.b	sin campos vacíos
+corp-data.c2.viz.items.2.a	coherencia
+corp-data.c2.viz.items.2.b	igual en todos los sistemas
+corp-data.c2.viz.items.3.a	actualidad
+corp-data.c2.viz.items.3.b	al día
+corp-data.c2.viz.items.4.a	unicidad
+corp-data.c2.viz.items.4.b	sin duplicados
+corp-data.c3.title	Datos maestros
+corp-data.c3.text	Clientes, proveedores, productos y materiales deberían tener una única versión fiable en todos los sistemas. Unos datos maestros desordenados estropean tanto la analítica como la IA.
+corp-data.c3.viz.items.0.w	«Bunge Ltd», «BUNGE», «Bunge S.A.» como tres proveedores
+corp-data.c3.viz.items.0.r	un registro maestro con alias
+corp-data.c4.title	Datos no estructurados
+corp-data.c4.text	Contratos, correos, PDF y manuales tienen un enorme valor para la IA generativa, pero suelen estar dispersos por unidades y buzones, con duplicados y versiones obsoletas.
+corp-data.c4.viz.items.0	Contratos y adendas
+corp-data.c4.viz.items.1	Políticas y procedimientos
+corp-data.c4.viz.items.2	Correos y chats
+corp-data.c4.viz.items.3	Informes y presentaciones
+corp-data.c4.viz.items.4	Documentos escaneados
+corp-data.c5.title	Plataformas de datos
+corp-data.c5.text	Las plataformas modernas (data lakehouses como Databricks, Microsoft Fabric o Snowflake) reúnen datos de muchos sistemas en un único lugar gobernado para analítica e IA.
+corp-data.c5.viz.steps.0	ERP, CRM, IoT, archivos
+corp-data.c5.viz.steps.1	Ingesta
+corp-data.c5.viz.steps.2	Lakehouse: limpiar y modelar
+corp-data.c5.viz.steps.3	Analítica e IA
+corp-data.c6.title	Responsabilidad de los datos
+corp-data.c6.text	Cada conjunto de datos importante necesita un responsable de negocio que rinda cuentas de su calidad y sus reglas de acceso, con el apoyo de data stewards.
+corp-data.c6.viz.root	Gobierno del dato
+corp-data.c6.viz.items.0	Responsables (negocio)
+corp-data.c6.viz.items.1	Data stewards
+corp-data.c6.viz.items.2	Equipo de plataforma (TI)
+corp-data.c6.viz.items.3	Comité de gobierno
+corp-data.c7.title	Productos de datos
+corp-data.c7.text	Trata los conjuntos de datos clave como productos: documentados, con controles de calidad, responsables claros y niveles de servicio, para que muchos equipos puedan reutilizarlos con fiabilidad.
+corp-data.c7.viz.items.0	Responsable claro
+corp-data.c7.viz.items.1	Documentación
+corp-data.c7.viz.items.2	Controles de calidad
+corp-data.c7.viz.items.3	Acceso mediante API
+corp-data.c7.viz.items.4	Niveles de servicio
+corp-data.c8.title	Linaje
+corp-data.c8.text	El linaje muestra de dónde vienen los datos y cómo se transformaron. Es esencial para confiar en los resultados de la IA y para las auditorías.
+corp-data.c8.viz.steps.0	Tabla del ERP
+corp-data.c8.viz.steps.1	Proceso de limpieza
+corp-data.c8.viz.steps.2	Conjunto depurado
+corp-data.c8.viz.steps.3	Variable del modelo
+corp-data.c8.viz.steps.4	Predicción
+corp-data.c9.title	Clasificación y acceso
+corp-data.c9.text	Clasifica los datos (públicos, internos, confidenciales, restringidos) y aplica reglas de acceso, para que las herramientas de IA solo vean lo que cada usuario puede ver.
+corp-data.c9.viz.items.0	Restringido
+corp-data.c9.viz.items.1	Confidencial
+corp-data.c9.viz.items.2	Interno
+corp-data.c9.viz.items.3	Público
+corp-arch.title	Arquitectura de IA empresarial
+corp-arch.summary	Los componentes de una plataforma de IA.
+corp-arch.q0.q	¿Qué aporta una pasarela de IA?
+corp-arch.q0.o0	Entrenamiento de modelos
+corp-arch.q0.o1	Enrutamiento central, autenticación, registro, cuotas y control de costes
+corp-arch.q0.o2	Mobiliario de oficina
+corp-arch.q0.x	Un punto de control entre las aplicaciones y los modelos.
+corp-arch.q1.q	¿Cómo deberían acceder los agentes al ERP o al CRM?
+corp-arch.q1.o0	Con derechos completos de administrador de la base de datos
+corp-arch.q1.o1	Mediante API bien definidas o servidores MCP con mínimo privilegio
+corp-arch.q1.o2	Con contraseñas compartidas
+corp-arch.q1.x	Limita el alcance y registra las llamadas.
+corp-arch.q2.q	¿Qué comprueban las salvaguardas?
+corp-arch.q2.o0	Solo la ortografía
+corp-arch.q2.o1	Entradas y salidas en busca de inyecciones, datos sensibles e incumplimientos de políticas
+corp-arch.q2.o2	La temperatura de la GPU
+corp-arch.q2.x	Filtran antes y después del modelo.
+corp-arch.c0.title	Capas de una plataforma de IA
+corp-arch.c0.text	Una plataforma de IA empresarial típica tiene: fuentes de datos, una capa de datos, acceso a modelos, una capa de orquestación (RAG, agentes), salvaguardas y aplicaciones, con seguridad y monitorización transversales.
+corp-arch.c0.viz.items.0	Aplicaciones y copilotos
+corp-arch.c0.viz.items.1	Orquestación: RAG, agentes, herramientas
+corp-arch.c0.viz.items.2	Acceso a modelos vía pasarela
+corp-arch.c0.viz.items.3	Capa de datos y conocimiento
+corp-arch.c0.viz.items.4	Sistemas origen
+corp-arch.c1.title	La pasarela de IA
+corp-arch.c1.text	Una pasarela central se sitúa entre las aplicaciones y los modelos. Gestiona autenticación, enrutamiento, cuotas, registro, control de costes y filtros de contenido, y permite cambiar de modelo de forma centralizada.
+corp-arch.c1.viz.steps.0	Apps
+corp-arch.c1.viz.steps.1	Pasarela de IA: auth, enrutado, registro, cuotas
+corp-arch.c1.viz.steps.2	Modelos aprobados
+corp-arch.c1.viz.steps.3	Respuestas
+corp-arch.c2.title	Catálogo de modelos
+corp-arch.c2.text	Ofrece modelos aprobados a través de la pasarela: unos pocos modelos generales de distintos tamaños, modelos de embeddings y otros especializados. Documenta cuál usar para qué.
+corp-arch.c2.viz.items.0.a	modelo grande
+corp-arch.c2.viz.items.0.b	razonamiento complejo
+corp-arch.c2.viz.items.1.a	modelo pequeño
+corp-arch.c2.viz.items.1.b	gran volumen
+corp-arch.c2.viz.items.2.a	modelo de embeddings
+corp-arch.c2.viz.items.2.b	búsqueda y RAG
+corp-arch.c2.viz.items.3.a	modelo de visión
+corp-arch.c2.viz.items.3.b	documentos e imágenes
+corp-arch.c3.title	Capa de conocimiento
+corp-arch.c3.text	Unos servicios de RAG compartidos indexan colecciones de documentos aprobadas con sus permisos, para que cada equipo no tenga que rehacer desde cero la búsqueda y la fragmentación.
+corp-arch.c3.viz.steps.0	Fuentes de documentos
+corp-arch.c3.viz.steps.1	Ingesta y fragmentación
+corp-arch.c3.viz.steps.2	Índice con permisos
+corp-arch.c3.viz.steps.3	API de recuperación compartida
+corp-arch.c4.title	Herramientas e integración
+corp-arch.c4.text	Agentes y copilotos necesitan un acceso seguro a los sistemas: ERP, CRM, gestión de incidencias. Expón API bien definidas o servidores MCP en lugar de un acceso amplio a la base de datos.
+corp-arch.c4.viz.items.0	API bien definidas
+corp-arch.c4.viz.items.1	Servidores MCP
+corp-arch.c4.viz.items.2	Permisos mínimos
+corp-arch.c4.viz.items.3	Registro de auditoría por llamada
+corp-arch.c5.title	Salvaguardas
+corp-arch.c5.text	Los filtros de entrada y salida detectan inyección de prompts, datos sensibles, contenido tóxico e incumplimientos de políticas. Las reglas de negocio validan las salidas antes de que lleguen a clientes o sistemas.
+corp-arch.c5.viz.steps.0	Entrada
+corp-arch.c5.viz.steps.1	Control de inyección y datos personales
+corp-arch.c5.viz.steps.2	Modelo
+corp-arch.c5.viz.steps.3	Control y validación de salida
+corp-arch.c5.viz.steps.4	Usuario o sistema
+corp-arch.c6.title	Observabilidad
+corp-arch.c6.text	Registra prompts, respuestas, llamadas a herramientas, latencia, costes y opiniones de los usuarios (con controles de privacidad). Las trazas ayudan a depurar fallos; los paneles muestran el uso y el gasto.
+corp-arch.c6.viz.items.0	Trazas de cada petición
+corp-arch.c6.viz.items.1	Latencia y errores
+corp-arch.c6.viz.items.2	Coste por app y equipo
+corp-arch.c6.viz.items.3	Opiniones de usuarios
+corp-arch.c6.viz.items.4	Evaluaciones de calidad
+corp-arch.c7.title	Entornos
+corp-arch.c7.text	Separa desarrollo, pruebas y producción, con puertas de evaluación antes de cada promoción, igual que con cualquier otro software.
+corp-arch.c7.viz.steps.0	Desarrollo
+corp-arch.c7.viz.steps.1	Evaluaciones automáticas
+corp-arch.c7.viz.steps.2	Pruebas con usuarios
+corp-arch.c7.viz.steps.3	Producción monitorizada
+corp-arch.c8.title	Nube y región
+corp-arch.c8.text	Elige regiones de alojamiento de modelos que cumplan las normas de residencia de datos (por ejemplo, datos de la UE en regiones de la UE) y condiciones contractuales que prohíban entrenar con tus datos.
+corp-arch.c8.viz.items.0	Datos de la UE en la UE
+corp-arch.c8.viz.items.1	Sin entrenar con tus datos
+corp-arch.c8.viz.items.2	Cifrado en reposo y en tránsito
+corp-arch.c8.viz.items.3	Red privada
+corp-arch.c8.viz.items.4	Control de retención
+corp-arch.c9.title	Arquitectura de referencia
+corp-arch.c9.text	Documenta una arquitectura de referencia y plantillas reutilizables para que los equipos puedan lanzar rápidamente nuevas aplicaciones de IA dentro de las salvaguardas.
+corp-arch.c9.viz.steps.0	Arquitectura de referencia
+corp-arch.c9.viz.steps.1	Plantillas y SDK
+corp-arch.c9.viz.steps.2	Equipos más rápidos
+corp-arch.c9.viz.steps.3	Seguridad coherente
+corp-security.title	Seguridad y privacidad en IA
+corp-security.summary	Nuevos riesgos y cómo gestionarlos.
+corp-security.q0.q	¿Qué es la IA en la sombra?
+corp-security.q0.o0	IA a oscuras
+corp-security.q0.o1	Empleados que usan herramientas de IA no aprobadas
+corp-security.q0.o2	Un tipo de modelo
+corp-security.q0.x	La mejor respuesta son buenas herramientas aprobadas.
+corp-security.q1.q	¿Qué principio limita el daño de un agente secuestrado?
+corp-security.q1.o0	Acceso máximo
+corp-security.q1.o1	Mínimo privilegio con aprobaciones para acciones sensibles
+corp-security.q1.o2	Modelos más rápidos
+corp-security.q1.x	Unos derechos mínimos limitan el daño.
+corp-security.q2.q	¿Qué norma define un sistema de gestión de la IA?
+corp-security.q2.o0	ISO 9001
+corp-security.q2.o1	ISO/IEC 42001
+corp-security.q2.o2	ISO 14001
+corp-security.q2.x	Publicada en 2023.
+corp-security.c0.title	Nueva superficie de ataque
+corp-security.c0.text	Los sistemas de IA añaden nuevos riesgos: inyección de prompts, fugas de datos a través de prompts o respuestas, datos de entrenamiento o recuperación envenenados, abuso del modelo y acceso inseguro a herramientas.
+corp-security.c0.viz.root	Riesgos de seguridad de la IA
+corp-security.c0.viz.items.0	Inyección de prompts
+corp-security.c0.viz.items.1	Fuga de datos
+corp-security.c0.viz.items.2	Datos envenenados
+corp-security.c0.viz.items.3	Permisos excesivos en herramientas
+corp-security.c1.title	Inyección de prompts
+corp-security.c1.text	Instrucciones maliciosas ocultas en correos, páginas web o documentos pueden hacer que un asistente de IA revele datos o realice acciones. Se considera uno de los principales riesgos de las aplicaciones con LLM (OWASP).
+corp-security.c1.viz.steps.0	El atacante oculta instrucciones en un documento
+corp-security.c1.viz.steps.1	La IA lo lee
+corp-security.c1.viz.steps.2	Intenta seguirlas
+corp-security.c1.viz.steps.3	Salvaguardas y permisos limitados evitan el daño
+corp-security.c2.title	Fuga de datos
+corp-security.c2.text	Los datos sensibles pueden filtrarse si los usuarios los pegan en herramientas no aprobadas, si el RAG ignora los permisos o si las respuestas incluyen detalles confidenciales. Controles: herramientas aprobadas, recuperación con permisos y filtros de salida.
+corp-security.c2.viz.items.0	Solo herramientas corporativas aprobadas
+corp-security.c2.viz.items.1	Recuperación según permisos
+corp-security.c2.viz.items.2	Detección y enmascarado de datos personales
+corp-security.c2.viz.items.3	Filtrado de salida
+corp-security.c2.viz.items.4	Formación de usuarios
+corp-security.c3.title	IA en la sombra
+corp-security.c3.text	Que los empleados usen herramientas de IA no aprobadas («IA en la sombra») es habitual cuando faltan opciones aprobadas. La mejor defensa es ofrecer buenas herramientas aprobadas y pautas claras.
+corp-security.c3.viz.l.t	Prohibirlo todo
+corp-security.c3.viz.l.items.0	crece el uso en la sombra
+corp-security.c3.viz.l.items.1	sin visibilidad
+corp-security.c3.viz.r.t	Ofrecer herramientas aprobadas
+corp-security.c3.viz.r.items.0	adopción más segura
+corp-security.c3.viz.r.items.1	visibilidad y control
+corp-security.c4.title	Mínimo privilegio para agentes
+corp-security.c4.text	Da a los agentes de IA el acceso mínimo necesario, tokens con alcance limitado, límites de uso y pasos de aprobación para acciones sensibles. Trátalos como a un empleado nuevo con derechos muy limitados.
+corp-security.c4.viz.items.0	Permisos mínimos
+corp-security.c4.viz.items.1	Credenciales acotadas y caducables
+corp-security.c4.viz.items.2	Límites de uso y gasto
+corp-security.c4.viz.items.3	Aprobación humana en acciones sensibles
+corp-security.c4.viz.items.4	Registro de auditoría completo
+corp-security.c5.title	Cadena de suministro
+corp-security.c5.text	Modelos, bibliotecas y plugins proceden de terceros. Verifica las fuentes, analiza las dependencias y fija las versiones, como en cualquier otra cadena de suministro de software.
+corp-security.c5.viz.items.0	Fuentes de modelos verificadas
+corp-security.c5.viz.items.1	Análisis de dependencias
+corp-security.c5.viz.items.2	Versiones fijadas
+corp-security.c5.viz.items.3	Revisión de plugins
+corp-security.c5.viz.items.4	Evaluación de seguridad de proveedores
+corp-security.c6.title	Datos personales y RGPD
+corp-security.c6.text	Usar datos personales en IA exige una base jurídica, limitación de la finalidad, minimización y, a menudo, una evaluación de impacto relativa a la protección de datos (EIPD). Implica pronto al DPD.
+corp-security.c6.viz.steps.0	Nuevo caso de uso de IA
+corp-security.c6.viz.steps.1	¿Hay datos personales?
+corp-security.c6.viz.steps.2	EIPD con el DPD
+corp-security.c6.viz.steps.3	Controles y aprobación
+corp-security.c7.title	Red teaming
+corp-security.c7.text	Antes del lanzamiento, pon a prueba las aplicaciones de IA como un adversario: intenta inyecciones, jailbreaks, extracción de datos y usos indebidos. Corrige los problemas y vuelve a probar.
+corp-security.c7.viz.steps.0	Atacar la aplicación
+corp-security.c7.viz.steps.1	Registrar fallos
+corp-security.c7.viz.steps.2	Añadir controles
+corp-security.c7.viz.steps.3	Volver a probar
+corp-security.c8.title	Respuesta a incidentes
+corp-security.c8.text	Ten un plan para incidentes de IA: respuestas dañinas, exposición de datos, errores de agentes. Debes poder desactivar funciones rápidamente, investigar los registros y notificar cuando sea obligatorio.
+corp-security.c8.viz.steps.0	Detectar
+corp-security.c8.viz.steps.1	Contener: desactivar la función

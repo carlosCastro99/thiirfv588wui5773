@@ -266,11 +266,11 @@ corp-build.c9.viz.steps.2	O mercado amadurece
 corp-build.c9.viz.steps.3	Reavaliar
 corp-roi.title	O business case
 corp-roi.summary	Estimar valor, custo e ROI.
-corp-roi.q0.q	10.000 itens, 0,2 h economizadas em cada, 50 €/h e 50% de adoção dão cerca de…
-corp-roi.q0.o0	100.000 €
-corp-roi.q0.o1	50.000 €
-corp-roi.q0.o2	10.000 €
-corp-roi.q0.x	10.000 × 0,2 × 50 × 0,5 = 50.000 €.
+corp-roi.q0.q	10,000 itens, 0,2 h economizadas em cada, 50 €/h e 50% de adoção dão cerca de…
+corp-roi.q0.o0	100,000 €
+corp-roi.q0.o1	50,000 €
+corp-roi.q0.o2	10,000 €
+corp-roi.q0.x	10,000 × 0,2 × 50 × 0,5 = 50,000 €.
 corp-roi.q1.q	Por que medir primeiro uma linha de base?
 corp-roi.q1.o0	É obrigatório por lei
 corp-roi.q1.o1	Para comprovar a melhoria depois
@@ -290,11 +290,11 @@ corp-roi.c0.viz.items.3	Custo por transação
 corp-roi.c0.viz.items.4	Tempo de ciclo
 corp-roi.c1.title	Valor do tempo economizado
 corp-roi.c1.text	Uma estimativa simples: volume × tempo economizado por item × custo por hora × taxa de adoção. Seja conservador.
-corp-roi.c1.example.0	20.000 × 0,1 h × 40 € × 0,7
+corp-roi.c1.example.0	20,000 × 0,1 h × 40 € × 0,7
 corp-roi.c1.example.1	
-corp-roi.c1.example.2	≈ 56.000 € por ano
+corp-roi.c1.example.2	≈ 56,000 € por ano
 corp-roi.c1.viz.f	valor = volume × tempo economizado × custo/hora × adoção
-corp-roi.c1.viz.items.0.m	20.000 faturas/ano
+corp-roi.c1.viz.items.0.m	20,000 faturas/ano
 corp-roi.c1.viz.items.1.m	6 min economizados
 corp-roi.c1.viz.items.2.m	40 €/h
 corp-roi.c1.viz.items.3.m	70% de adoção
@@ -593,7 +593,7 @@ corp-security.c7.text	Antes do lançamento, teste as apps de IA como um adversá
 corp-security.c7.viz.steps.0	Atacar a aplicação
 corp-security.c7.viz.steps.1	Registrar as falhas
 corp-security.c7.viz.steps.2	Adicionar controles
-corp-security.c7.viz.steps.3	Testar de novo
+corp-security.c7.viz.steps.3	Retestar
 corp-security.c8.title	Resposta a incidentes
 corp-security.c8.text	Tenha um plano para incidentes de IA: respostas prejudiciais, exposição de dados, erros de agentes. Você precisa conseguir desativar recursos rapidamente, investigar os logs e notificar quando for obrigatório.
 corp-security.c8.viz.steps.0	Detectar
@@ -1517,3 +1517,235 @@ corp-dev.c2.title	Agentes de programação
 corp-dev.c2.text	Os agentes pegam uma tarefa (uma issue ou ticket), planejam mudanças em vários arquivos, rodam os testes e abrem um pull request para revisão humana.
 corp-dev.c2.viz.steps.0	Ticket
 corp-dev.c2.viz.steps.1	Agente planeja e edita
+corp-dev.c2.viz.steps.2	Roda os testes
+corp-dev.c2.viz.steps.3	Pull request
+corp-dev.c2.viz.steps.4	Revisão humana
+corp-dev.c3.title	A revisão de código continua importante
+corp-dev.c3.text	O código gerado por IA pode conter bugs, falhas de segurança ou problemas de licenciamento. Mantenha a revisão de código, os testes e a análise de segurança no pipeline.
+corp-dev.c3.viz.items.0	Revisão humana do código
+corp-dev.c3.viz.items.1	Testes automáticos
+corp-dev.c3.viz.items.2	Análise de segurança
+corp-dev.c3.viz.items.3	Verificação de licenças
+corp-dev.c3.viz.items.4	Controles de estilo e qualidade
+corp-dev.c4.title	Modernização de sistemas legados
+corp-dev.c4.text	A IA ajuda a entender e documentar código legado (COBOL, ABAP antigo), a sugerir migrações e a gerar testes, acelerando projetos de modernização como as migrações para S/4HANA.
+corp-dev.c4.viz.steps.0	Código legado
+corp-dev.c4.viz.steps.1	A IA explica e documenta
+corp-dev.c4.viz.steps.2	Gerar testes
+corp-dev.c4.viz.steps.3	Refatorar ou migrar
+corp-dev.c5.title	Documentação
+corp-dev.c5.text	A IA escreve e atualiza documentação, descrições de APIs e runbooks a partir do código e do histórico de commits, aliviando uma tarefa que os desenvolvedores muitas vezes pulam.
+corp-dev.c5.viz.items.0	Docs de APIs
+corp-dev.c5.viz.items.1	Comentários no código
+corp-dev.c5.viz.items.2	Runbooks
+corp-dev.c5.viz.items.3	Resumos de arquitetura
+corp-dev.c5.viz.items.4	Notas de versão
+corp-dev.c6.title	Testes
+corp-dev.c6.text	A IA gera testes unitários, dados de teste e casos extremos, aumentando rapidamente a cobertura. Os desenvolvedores continuam verificando se os testes testam de fato o que importa.
+corp-dev.c6.viz.steps.0	Função
+corp-dev.c6.viz.steps.1	A IA propõe testes
+corp-dev.c6.viz.steps.2	Desenvolvedor revisa
+corp-dev.c6.viz.steps.3	Mais cobertura
+corp-dev.c7.title	Low-code e citizen developers
+corp-dev.c7.text	A IA facilita para quem não é programador criar automações e pequenos apps, mas é preciso governança para a segurança, o acesso aos dados e a manutenção.
+corp-dev.c7.viz.l.t	Benefício
+corp-dev.c7.viz.l.items.0	soluções mais rápidas
+corp-dev.c7.viz.l.items.1	mais perto do negócio
+corp-dev.c7.viz.r.t	Risco
+corp-dev.c7.viz.r.items.0	shadow IT
+corp-dev.c7.viz.r.items.1	falhas de segurança
+corp-dev.c7.viz.r.items.2	apps sem manutenção
+corp-dev.c8.title	Segurança do código escrito por IA
+corp-dev.c8.text	Atenção a segredos escritos no código, falhas de injeção, bibliotecas desatualizadas e nomes de pacotes alucinados que atacantes possam registrar.
+corp-dev.c8.viz.items.0	Segredos no código
+corp-dev.c8.viz.items.1	Falhas de injeção
+corp-dev.c8.viz.items.2	Dependências desatualizadas
+corp-dev.c8.viz.items.3	Pacotes alucinados
+corp-dev.c8.viz.items.4	Falta de validação de entradas
+corp-dev.c9.title	Medir o impacto na engenharia
+corp-dev.c9.text	Acompanhe o tempo de ciclo, a frequência de deploys, a taxa de falha de mudanças, a satisfação dos desenvolvedores e o tempo gasto em trabalho repetitivo, não as linhas de código geradas.
+corp-dev.c9.viz.items.0	Lead time das mudanças
+corp-dev.c9.viz.items.1	Frequência de deploys
+corp-dev.c9.viz.items.2	Taxa de falha de mudanças
+corp-dev.c9.viz.items.3	Satisfação dos desenvolvedores
+corp-dev.c9.viz.items.4	Menos trabalho repetitivo
+corp-value.title	Medir o valor da IA
+corp-value.summary	KPIs, painéis e reporte honesto.
+corp-value.q0.q	Qual destas é uma métrica de resultado?
+corp-value.q0.o0	Número de prompts
+corp-value.q0.o1	Horas economizadas por mês
+corp-value.q0.o2	Pilotos lançados
+corp-value.q0.x	Os resultados refletem o valor.
+corp-value.q1.q	Por que usar grupos de controle?
+corp-value.q1.o0	Para desacelerar
+corp-value.q1.o1	Para separar o efeito da IA de outras mudanças
+corp-value.q1.o2	Para confundir os auditores
+corp-value.q1.x	Uma comparação justa.
+corp-value.q2.q	O que é um indicador antecedente do valor da IA?
+corp-value.q2.o0	O lucro anual
+corp-value.q2.o1	A adoção e a redução do tempo de atendimento
+corp-value.q2.o2	A cotação das ações
+corp-value.q2.x	Os sinais precoces antecipam resultados posteriores.
+corp-value.c0.title	Resultados acima de atividade
+corp-value.c0.text	Conte resultados (custos economizados, receitas obtidas, erros evitados, tempo de atendimento aos clientes), não atividade (número de prompts, pilotos lançados, usuários convidados).
+corp-value.c0.viz.l.t	Métricas de atividade
+corp-value.c0.viz.l.items.0	prompts
+corp-value.c0.viz.l.items.1	pilotos
+corp-value.c0.viz.l.items.2	licenças
+corp-value.c0.viz.r.t	Métricas de resultado
+corp-value.c0.viz.r.items.0	euros
+corp-value.c0.viz.r.items.1	horas
+corp-value.c0.viz.r.items.2	erros
+corp-value.c0.viz.r.items.3	satisfação
+corp-value.c1.title	Três níveis de métricas
+corp-value.c1.text	Acompanhe o uso (as pessoas usam?), o desempenho (é preciso e rápido?) e o impacto no negócio (está gerando valor?).
+corp-value.c1.viz.items.0	Impacto no negócio
+corp-value.c1.viz.items.1	Desempenho e qualidade
+corp-value.c1.viz.items.2	Uso e adoção
+corp-value.c2.title	Métricas de produtividade
+corp-value.c2.text	O tempo por tarefa, o volume processado por pessoa, as taxas touchless, o tamanho do backlog e os tempos de ciclo mostram os efeitos na produtividade.
+corp-value.c2.viz.items.0	Tempo por tarefa
+corp-value.c2.viz.items.1	Volume processado
+corp-value.c2.viz.items.2	Taxa touchless
+corp-value.c2.viz.items.3	Backlog
+corp-value.c2.viz.items.4	Tempo de ciclo
+corp-value.c3.title	Métricas de qualidade
+corp-value.c3.text	As taxas de erro, o retrabalho, os apontamentos de compliance e as reclamações de clientes mostram se a IA melhora ou piora a qualidade.
+corp-value.c3.viz.items.0	Taxa de erro
+corp-value.c3.viz.items.1	Retrabalho
+corp-value.c3.viz.items.2	Apontamentos de auditoria
+corp-value.c3.viz.items.3	Reclamações
+corp-value.c3.viz.items.4	Precisão nos testes de avaliação
+corp-value.c4.title	Métricas financeiras
+corp-value.c4.text	Traduza os ganhos em dinheiro: custos evitados, aumento de receitas, capital de giro liberado, perdas de risco evitadas, e compare com os custos totais.
+corp-value.c4.viz.f	valor líquido = ganhos − custos totais
+corp-value.c4.viz.items.0.s	ganhos
+corp-value.c4.viz.items.0.m	economias, receitas, risco evitado
+corp-value.c4.viz.items.1.s	custos
+corp-value.c4.viz.items.1.m	construção, operação, mudança
+corp-value.c5.title	Grupos de controle
+corp-value.c5.text	Sempre que possível, compare equipes ou períodos com e sem IA. Caso contrário, as melhorias podem ser fruto de outras mudanças.
+corp-value.c5.viz.l.t	Com IA
+corp-value.c5.viz.l.items.0	resultados da equipe A
+corp-value.c5.viz.r.t	Sem IA
+corp-value.c5.viz.r.items.0	base da equipe B
+corp-value.c5.viz.r.items.1	diferença = efeito da IA
+corp-value.c6.title	Painéis
+corp-value.c6.text	Um painel compartilhado de valor da IA mostra a adoção, a qualidade e o valor de cada caso de uso em relação às metas, dando transparência à liderança.
+corp-value.c6.viz.items.0	Caso de uso
+corp-value.c6.viz.items.1	Adoção
+corp-value.c6.viz.items.2	Qualidade
+corp-value.c6.viz.items.3	Valor vs. meta
+corp-value.c6.viz.items.4	Status e responsável
+corp-value.c7.title	Indicadores antecedentes
+corp-value.c7.text	O valor muitas vezes chega com atraso. Sinais precoces como a adoção, a satisfação e a redução do tempo de atendimento antecipam os resultados financeiros posteriores.
+corp-value.c7.viz.events.0.y	Mês 1
+corp-value.c7.viz.events.0.l	adoção
+corp-value.c7.viz.events.1.y	Mês 3
+corp-value.c7.viz.events.1.l	o tempo por tarefa cai
+corp-value.c7.viz.events.2.y	Mês 6
+corp-value.c7.viz.events.2.l	mais volume processado
+corp-value.c7.viz.events.3.y	Mês 12
+corp-value.c7.viz.events.3.l	impacto em custos e receitas
+corp-value.c8.title	Reporte honesto
+corp-value.c8.text	Reporte o que não funcionou, e não só os sucessos. A credibilidade junto às finanças e à liderança vem de números realistas.
+corp-value.c8.viz.items.0	Reportar também os fracassos
+corp-value.c8.viz.items.1	Mostrar as premissas
+corp-value.c8.viz.items.2	Usar estimativas conservadoras
+corp-value.c8.viz.items.3	Validar com as finanças
+corp-value.c9.title	Visão de portfólio
+corp-value.c9.text	Gerencie a IA como um portfólio: alguns casos de uso trazem grandes vitórias, muitos trazem ganhos modestos, alguns falham. O que conta é o retorno total do portfólio.
+corp-value.c9.viz.unit	contribuição para o valor (% ilustrativa)
+corp-value.c9.viz.items.0.l	3 principais casos
+corp-value.c9.viz.items.1.l	10 seguintes
+corp-value.c9.viz.items.2.l	Demais
+corp-strategy.title	Estratégia e roadmap de IA
+corp-strategy.summary	Juntando tudo.
+corp-strategy.q0.q	A que uma estratégia de IA deve servir?
+corp-strategy.q0.o0	Ao modelo mais recente
+corp-strategy.q0.o1	Aos objetivos de negócio da empresa
+corp-strategy.q0.o2	Aos roadmaps dos fornecedores
+corp-strategy.q0.x	A IA é um meio, não um fim.
+corp-strategy.q1.q	Quando as bases (dados, plataforma, governança) devem ser construídas?
+corp-strategy.q1.o0	Depois de todos os casos de uso
+corp-strategy.q1.o1	Em paralelo com os casos de uso
+corp-strategy.q1.o2	Nunca
+corp-strategy.q1.x	São elas que permitem escalar.
+corp-strategy.q2.q	Com que frequência a estratégia de IA deve ser revista?
+corp-strategy.q2.o0	A cada 10 anos
+corp-strategy.q2.o1	Pelo menos uma vez por ano
+corp-strategy.q2.o2	Nunca
+corp-strategy.q2.x	A área muda rápido.
+corp-strategy.c0.title	A estratégia começa nos objetivos de negócio
+corp-strategy.c0.text	Uma estratégia de IA deve servir à estratégia da empresa: crescimento, eficiência, risco, experiência do cliente. Cada iniciativa de IA se conecta a um objetivo de negócio.
+corp-strategy.c0.viz.steps.0	Objetivos de negócio
+corp-strategy.c0.viz.steps.1	Onde a IA ajuda mais
+corp-strategy.c0.viz.steps.2	Casos de uso priorizados
+corp-strategy.c0.viz.steps.3	Bases necessárias
+corp-strategy.c1.title	Níveis de ambição
+corp-strategy.c1.text	As empresas vão da experimentação, passando por escalar casos de uso selecionados, até transformar os processos centrais e os modelos de negócio com IA.
+corp-strategy.c1.viz.items.0	Transformar: processos nativos de IA
+corp-strategy.c1.viz.items.1	Escalar: IA nos fluxos centrais
+corp-strategy.c1.viz.items.2	Experimentar: pilotos e aprendizado
+corp-strategy.c2.title	O roadmap
+corp-strategy.c2.text	Um roadmap encadeia casos de uso e bases ao longo de 12–36 meses, em ondas: primeiro as vitórias rápidas, as bases em paralelo, as transformações maiores mais tarde.
+corp-strategy.c2.viz.events.0.y	T1–T2
+corp-strategy.c2.viz.events.0.l	vitórias rápidas + plataforma
+corp-strategy.c2.viz.events.1.y	T3–T4
+corp-strategy.c2.viz.events.1.l	escalar casos comprovados
+corp-strategy.c2.viz.events.2.y	Ano 2
+corp-strategy.c2.viz.events.2.l	redesenho de processos centrais
+corp-strategy.c2.viz.events.3.y	Ano 3
+corp-strategy.c2.viz.events.3.l	novas ofertas com IA
+corp-strategy.c3.title	Bases em paralelo
+corp-strategy.c3.text	Dados, plataforma, governança, segurança e competências precisam ser construídos junto com os casos de uso, e não depois. Cada onda de casos de uso financia e usa as bases.
+corp-strategy.c3.viz.items.0	Bases de dados
+corp-strategy.c3.viz.items.1	Plataforma e gateway de IA
+corp-strategy.c3.viz.items.2	Governança e risco
+corp-strategy.c3.viz.items.3	Segurança
+corp-strategy.c3.viz.items.4	Competências e mudança
+corp-strategy.c4.title	Modelo operacional
+corp-strategy.c4.text	Decida quem financia, constrói, é dono e governa a IA: central, federado ou híbrido. O modelo híbrido hub-and-spoke é comum nas grandes empresas globais.
+corp-strategy.c4.viz.l.t	Central
+corp-strategy.c4.viz.l.items.0	consistente
+corp-strategy.c4.viz.l.items.1	pode ser lento
+corp-strategy.c4.viz.l.items.2	longe do negócio
+corp-strategy.c4.viz.r.t	Federado
+corp-strategy.c4.viz.r.items.0	perto do negócio
+corp-strategy.c4.viz.r.items.1	risco de duplicação
+corp-strategy.c5.title	Parcerias
+corp-strategy.c5.text	Parceiros estratégicos (provedores de nuvem, fornecedores de modelos, integradores, startups) aceleram a entrega. Mantenha a arquitetura e as competências-chave dentro de casa.
+corp-strategy.c5.viz.items.0	Provedores de nuvem e modelos
+corp-strategy.c5.viz.items.1	Integradores de sistemas
+corp-strategy.c5.viz.items.2	Startups especializadas
+corp-strategy.c5.viz.items.3	Universidades
+corp-strategy.c6.title	Modelo de financiamento
+corp-strategy.c6.text	Financie as bases de forma central e os casos de uso pelas unidades de negócio (com cofinanciamento central no início), e revise o portfólio trimestralmente.
+corp-strategy.c6.viz.items.0.a	bases
+corp-strategy.c6.viz.items.0.b	orçamento central
+corp-strategy.c6.viz.items.1.a	casos de uso
+corp-strategy.c6.viz.items.1.b	unidades de negócio
+corp-strategy.c6.viz.items.2.a	capital inicial
+corp-strategy.c6.viz.items.2.b	fundo central de inovação
+corp-strategy.c6.viz.items.3.a	revisões
+corp-strategy.c6.viz.items.3.b	portfólio trimestral
+corp-strategy.c7.title	Os agentes e o futuro
+corp-strategy.c7.text	À medida que os agentes amadurecem, mais processos de ponta a ponta poderão ser automatizados com supervisão humana. Prepare-se desde já: APIs limpas, processos claros, bons dados e governança para ações autônomas.
+corp-strategy.c7.viz.items.0	APIs limpas para os sistemas centrais
+corp-strategy.c7.viz.items.1	Processos bem documentados
+corp-strategy.c7.viz.items.2	Dados confiáveis
+corp-strategy.c7.viz.items.3	Governança de agentes
+corp-strategy.c7.viz.items.4	Monitoramento e controles
+corp-strategy.c8.title	Mantenha a flexibilidade
+corp-strategy.c8.text	Os modelos, os preços e a regulamentação mudam rápido. Revise a estratégia pelo menos uma vez por ano, mantenha a arquitetura flexível e evite apostar tudo em um único fornecedor.
+corp-strategy.c8.viz.steps.0	Definir a estratégia
+corp-strategy.c8.viz.steps.1	Executar o roadmap
+corp-strategy.c8.viz.steps.2	Medir e aprender
+corp-strategy.c8.viz.steps.3	Atualizar todo ano
+corp-strategy.c9.title	As pessoas no centro
+corp-strategy.c9.text	As empresas que ganham com a IA combinam a tecnologia com pessoas que conhecem o negócio, confiança construída por meio de práticas responsáveis e uma cultura de aprendizado.
+corp-strategy.c9.viz.items.0	Conhecimento do negócio
+corp-strategy.c9.viz.items.1	Confiança e responsabilidade
+corp-strategy.c9.viz.items.2	Cultura de aprendizado
+corp-strategy.c9.viz.items.3	Liderança clara
+corp-strategy.c9.viz.items.4	Valor medido

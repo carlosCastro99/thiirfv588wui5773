@@ -55,7 +55,7 @@ ai-learn.c5.title	Features: o que o modelo observa
 ai-learn.c5.text	Um modelo nunca vê "uma casa". Ele vê números que a descrevem, chamados features (características): área, número de quartos, distância até o litoral, ano de construção.\n\nEscolher boas features costumava ser a maior parte do trabalho. O deep learning aprende muitas delas sozinho, mas a ideia continua a mesma: o modelo só pode usar o que você der a ele.
 ai-learn.c5.viz.steps.0	120 m², 3 quartos, a 2 km do litoral
 ai-learn.c5.viz.steps.1	Modelo
-ai-learn.c5.viz.steps.2	Preço estimado €310.000
+ai-learn.c5.viz.steps.2	Preço estimado €310,000
 ai-learn.c6.title	Treino, validação, teste
 ai-learn.c6.text	Você divide os dados antes de treinar. O modelo aprende com o conjunto de treino, você ajusta as configurações no conjunto de validação, e o conjunto de teste fica trancado até o final.\n\nSe você espiar o conjunto de teste enquanto constrói o modelo, o resultado final vai sair otimista demais.
 ai-learn.c6.viz.unit	% dos dados
@@ -96,10 +96,10 @@ ai-chat.q0.o0	Procura a resposta em um banco de dados
 ai-chat.q0.o1	Prevê o próximo token mais provável
 ai-chat.q0.o2	Copia uma página da web correspondente
 ai-chat.q0.x	Ele estima as probabilidades do próximo token, escolhe um e repete.
-ai-chat.q1.q	Mais ou menos quantas palavras em inglês cabem em 1.000 tokens?
+ai-chat.q1.q	Mais ou menos quantas palavras em inglês cabem em 1,000 tokens?
 ai-chat.q1.o0	Cerca de 250
 ai-chat.q1.o1	Cerca de 750
-ai-chat.q1.o2	Cerca de 4.000
+ai-chat.q1.o2	Cerca de 4,000
 ai-chat.q1.x	Em inglês, um token equivale em média a cerca de ¾ de uma palavra.
 ai-chat.q2.q	Você quer respostas consistentes e previsíveis. Qual temperatura?
 ai-chat.q2.o0	Baixa
@@ -224,7 +224,7 @@ ai-types.c2.viz.items.1	Detecção de anomalias
 ai-types.c2.viz.items.2	Descoberta de temas
 ai-types.c2.viz.items.3	Compressão
 ai-types.c3.title	Agrupando clientes
-ai-types.c3.text	Dê a um algoritmo de clusterização o histórico de compras de 100.000 clientes e peça cinco grupos. Ele pode encontrar caçadores de promoções, compradores de fim de semana, grandes compradores ocasionais e assim por diante.\n\nO algoritmo encontra os grupos; um ser humano ainda precisa olhar para eles e decidir o que significam.
+ai-types.c3.text	Dê a um algoritmo de clusterização o histórico de compras de 100,000 clientes e peça cinco grupos. Ele pode encontrar caçadores de promoções, compradores de fim de semana, grandes compradores ocasionais e assim por diante.\n\nO algoritmo encontra os grupos; um ser humano ainda precisa olhar para eles e decidir o que significam.
 ai-types.c3.viz.steps.0	Histórico de compras
 ai-types.c3.viz.steps.1	Algoritmo agrupa clientes parecidos
 ai-types.c3.viz.steps.2	5 segmentos
@@ -254,9 +254,9 @@ ai-types.c6.viz.r.items.1	exigem especialistas
 ai-types.c6.viz.r.items.2	precisam ser revisados
 ai-types.c7.title	Semissupervisionado: uma ajudinha rende muito
 ai-types.c7.text	Muitas vezes você tem alguns exemplos rotulados e uma montanha de exemplos sem rótulo. Os métodos semissupervisionados usam os rotulados para começar e depois deixam o modelo rotular o resto, mantendo só os palpites em que ele tem confiança.
-ai-types.c7.viz.steps.0	1.000 exemplos rotulados
+ai-types.c7.viz.steps.0	1,000 exemplos rotulados
 ai-types.c7.viz.steps.1	Treinar um 1º modelo
-ai-types.c7.viz.steps.2	Rotular mais 100.000 automaticamente
+ai-types.c7.viz.steps.2	Rotular mais 100,000 automaticamente
 ai-types.c7.viz.steps.3	Retreinar com tudo
 ai-types.c8.title	Qual abordagem se encaixa?
 ai-types.c8.text	Tem exemplos passados com resultados conhecidos? Supervisionado. Quer descobrir estrutura? Não supervisionado. É uma sequência de decisões com um objetivo, como um jogo ou um robô? Reforço.
@@ -387,7 +387,7 @@ ai-algos.q2.o1	Árvores com gradient boosting
 ai-algos.q2.o2	Um modelo de imagem
 ai-algos.q2.x	As árvores com boosting são rápidas e precisas com dados tabulares.
 ai-algos.c0.title	Regressão linear
-ai-algos.c0.text	O truque mais antigo: traçar a melhor reta através dos dados. Ela prevê um número a partir de uma soma ponderada das entradas.\n\nÉ rápida, fácil de explicar ("cada m² a mais soma €2.500") e muitas vezes uma boa referência antes de tentar algo mais sofisticado.
+ai-algos.c0.text	O truque mais antigo: traçar a melhor reta através dos dados. Ela prevê um número a partir de uma soma ponderada das entradas.\n\nÉ rápida, fácil de explicar ("cada m² a mais soma €2,500") e muitas vezes uma boa referência antes de tentar algo mais sofisticado.
 ai-algos.c0.viz.f	preço = w₁·área + w₂·quartos + b
 ai-algos.c0.viz.items.0.s	w₁, w₂
 ai-algos.c0.viz.items.0.m	pesos aprendidos
@@ -446,9 +446,9 @@ ai-algos.c7.viz.r.items.2	exigem GPUs
 ai-algos.c8.title	Comece com uma referência
 ai-algos.c8.text	Antes de construir algo complexo, meça uma referência boba (baseline): "prever a média" ou "igual à semana passada". Se o seu modelo esperto mal a supera, não vale a pena colocá-lo em produção.
 ai-algos.c8.viz.unit	% de erro
-ai-algos.c8.viz.items.0.l	Igual à semana passada
+ai-algos.c8.viz.items.0.l	Igual à semana ant.
 ai-algos.c8.viz.items.1.l	Modelo linear
-ai-algos.c8.viz.items.2.l	Árvores com boosting
+ai-algos.c8.viz.items.2.l	Árvores (boosting)
 ai-algos.c9.title	Escolhendo um algoritmo
 ai-algos.c9.text	Pense no tipo de dado, em quantos dados você tem, se precisa explicar as decisões e em quão rápidas as previsões precisam ser. Na prática, os times testam alguns e escolhem com base nos resultados medidos.
 ai-algos.c9.viz.items.0	Que tipo de dado: tabela, texto, imagem?
@@ -519,7 +519,7 @@ ai-nets.c6.text	Os dados de treino entram em pequenos lotes (batches), digamos 3
 ai-nets.c6.viz.f	atualizações = (exemplos ÷ tamanho do lote) × épocas
 ai-nets.c6.viz.items.0.m	exemplos
 ai-nets.c6.viz.items.1.m	tamanho do lote
-ai-nets.c6.viz.items.2.m	épocas → ≈15.600 atualizações
+ai-nets.c6.viz.items.2.m	épocas → ≈15,600 atualizações
 ai-nets.c7.title	Dropout e regularização
 ai-nets.c7.text	Para impedir que uma rede decore, você pode desligar aleatoriamente alguns neurônios durante o treino (dropout) ou penalizar pesos muito grandes. A rede é forçada a aprender padrões robustos, e não atalhos frágeis.
 ai-nets.c7.viz.items.0	Dropout: silenciar neurônios ao acaso
@@ -612,7 +612,7 @@ ai-metrics.c5.viz.items.0.m	precisão
 ai-metrics.c5.viz.items.1.s	R
 ai-metrics.c5.viz.items.1.m	recall
 ai-metrics.c6.title	Erros para números
-ai-metrics.c6.text	Na regressão, você mede o quão longe as previsões ficam da realidade. O MAE é o erro absoluto médio ("erra por €8.000 em média"). O RMSE pune mais os erros grandes. O MAPE dá o erro em porcentagem.
+ai-metrics.c6.text	Na regressão, você mede o quão longe as previsões ficam da realidade. O MAE é o erro absoluto médio ("erra por €8,000 em média"). O RMSE pune mais os erros grandes. O MAPE dá o erro em porcentagem.
 ai-metrics.c6.viz.items.0.a	MAE
 ai-metrics.c6.viz.items.0.b	tamanho médio do erro
 ai-metrics.c6.viz.items.1.a	RMSE
@@ -754,14 +754,14 @@ ai-speech.c0.viz.steps.1	Amostras da onda sonora
 ai-speech.c0.viz.steps.2	Imagem do espectrograma
 ai-speech.c0.viz.steps.3	Rede neural
 ai-speech.c1.title	Taxas de amostragem
-ai-speech.c1.text	As ligações telefônicas costumam ser amostradas 8.000 vezes por segundo, o que basta para a fala. Os CDs usam 44.100, o suficiente para captar tudo o que os humanos conseguem ouvir (até cerca de 20 kHz).
+ai-speech.c1.text	As ligações telefônicas costumam ser amostradas 8,000 vezes por segundo, o que basta para a fala. Os CDs usam 44,100, o suficiente para captar tudo o que os humanos conseguem ouvir (até cerca de 20 kHz).
 ai-speech.c1.viz.unit	mil amostras/s
 ai-speech.c1.viz.items.0.l	Ligação
 ai-speech.c1.viz.items.1.l	Modelos de fala
 ai-speech.c1.viz.items.2.l	Áudio de CD
 ai-speech.c1.viz.items.3.l	Estúdio
 ai-speech.c2.title	Fala para texto
-ai-speech.c2.text	O reconhecimento automático de fala (ASR) transforma fala em palavras. Os sistemas modernos são treinados com centenas de milhares de horas de áudio e lidam com sotaques, ruído e vários idiomas.\n\nO modelo aberto Whisper, da OpenAI, lançado em 2022, foi treinado com 680.000 horas.
+ai-speech.c2.text	O reconhecimento automático de fala (ASR) transforma fala em palavras. Os sistemas modernos são treinados com centenas de milhares de horas de áudio e lidam com sotaques, ruído e vários idiomas.\n\nO modelo aberto Whisper, da OpenAI, lançado em 2022, foi treinado com 680,000 horas.
 ai-speech.c2.viz.steps.0	Áudio
 ai-speech.c2.viz.steps.1	Espectrograma
 ai-speech.c2.viz.steps.2	Modelo prevê palavras
@@ -1413,7 +1413,7 @@ ai-explain.q0.o0	Uma matriz de confusão
 ai-explain.q0.o1	SHAP
 ai-explain.q0.o2	Dropout
 ai-explain.q0.x	O SHAP atribui uma única previsão às suas features.
-ai-explain.q1.q	"Seu empréstimo seria aprovado se sua dívida fosse €3.000 menor" é uma…
+ai-explain.q1.q	"Seu empréstimo seria aprovado se sua dívida fosse €3,000 menor" é uma…
 ai-explain.q1.o0	Explicação contrafactual
 ai-explain.q1.o1	Mapa de saliência
 ai-explain.q1.o2	Gráfico de importância de features
@@ -1459,10 +1459,10 @@ ai-explain.c3.viz.items.3.b	+€30 mil
 ai-explain.c3.viz.items.4.a	Esta casa
 ai-explain.c3.viz.items.4.b	€315 mil
 ai-explain.c4.title	Explicações contrafactuais
-ai-explain.c4.text	Uma explicação útil para as pessoas: o que teria de mudar para um resultado diferente? "Seu empréstimo seria aprovado se sua renda fosse €4.000 maior ou sua dívida €3.000 menor."
+ai-explain.c4.text	Uma explicação útil para as pessoas: o que teria de mudar para um resultado diferente? "Seu empréstimo seria aprovado se sua renda fosse €4,000 maior ou sua dívida €3,000 menor."
 ai-explain.c4.viz.steps.0	Empréstimo recusado
 ai-explain.c4.viz.steps.1	Achar a menor mudança
-ai-explain.c4.viz.steps.2	"Dívida €3.000 menor"
+ai-explain.c4.viz.steps.2	"Dívida €3,000 menor"
 ai-explain.c4.viz.steps.3	Aprovado
 ai-explain.c5.title	Mapas de saliência
 ai-explain.c5.text	Para imagens, as ferramentas de explicação destacam quais pixels mais influenciaram a decisão. Às vezes elas revelam problemas: um modelo que reconhecia huskies pela neve ao fundo, e não pelo cachorro.
@@ -1497,3 +1497,259 @@ ai-explain.c9.title	Obrigatório em alguns casos
 ai-explain.c9.text	O RGPD dá às pessoas afetadas por decisões significativas exclusivamente automatizadas o direito a informações relevantes sobre a lógica envolvida. O AI Act acrescenta deveres de transparência para sistemas de alto risco.
 ai-explain.c9.viz.steps.0	Decisão automatizada significativa
 ai-explain.c9.viz.steps.1	Pessoa pergunta por quê
+ai-explain.c9.viz.steps.2	Explicação relevante
+ai-explain.c9.viz.steps.3	Opção de revisão humana
+ai-edge.title	IA nos dispositivos
+ai-edge.summary	Rodando modelos em celulares, câmeras e microcontroladores.
+ai-edge.q0.q	Treinar um modelo pequeno para imitar um grande se chama…
+ai-edge.q0.o0	Poda (pruning)
+ai-edge.q0.o1	Destilação
+ai-edge.q0.o2	Aprendizado federado
+ai-edge.q0.x	O aluno aprende com as saídas do professor.
+ai-edge.q1.q	Por que um sistema de câmeras doméstico roda a detecção localmente?
+ai-edge.q1.o0	É exigido por lei
+ai-edge.q1.o1	Velocidade, privacidade e nenhuma taxa de nuvem
+ai-edge.q1.o2	A nuvem não consegue detectar pessoas
+ai-edge.q1.x	O processamento local é rápido, privado e barato.
+ai-edge.q2.q	No aprendizado federado, o que sai do dispositivo?
+ai-edge.q2.o0	Todos os dados brutos
+ai-edge.q2.o1	Só as atualizações do modelo
+ai-edge.q2.o2	Absolutamente nada
+ai-edge.q2.x	Os dados brutos ficam no local; só as atualizações são compartilhadas.
+ai-edge.c0.title	Edge AI
+ai-edge.c0.text	Edge AI (IA na borda) significa rodar modelos onde os dados são produzidos: num celular, numa câmera, num carro ou num sensor, em vez de mandar tudo para a nuvem.
+ai-edge.c0.viz.l.t	IA na nuvem
+ai-edge.c0.viz.l.items.0	modelos grandes
+ai-edge.c0.viz.l.items.1	exige conexão
+ai-edge.c0.viz.l.items.2	dados viajam
+ai-edge.c0.viz.r.t	Edge AI
+ai-edge.c0.viz.r.items.0	instantânea
+ai-edge.c0.viz.r.items.1	funciona offline
+ai-edge.c0.viz.r.items.2	dados ficam no local
+ai-edge.c1.title	Por que rodar localmente?
+ai-edge.c1.text	Quatro motivos: velocidade (sem ida e volta pela rede), privacidade (os dados nunca saem), custo (sem taxas por chamada) e confiabilidade (funciona sem conexão).
+ai-edge.c1.viz.items.0	Velocidade: sem ida e volta
+ai-edge.c1.viz.items.1	Privacidade: dados não saem
+ai-edge.c1.viz.items.2	Custo: sem taxas de nuvem
+ai-edge.c1.viz.items.3	Confiabilidade: funciona offline
+ai-edge.c2.title	Deixando os modelos pequenos
+ai-edge.c2.text	Os modelos de borda são encolhidos com quantização (menos bits por peso), poda (remoção de conexões pouco importantes) e destilação (treinar um aluno pequeno para copiar um professor grande).
+ai-edge.c2.viz.items.0.a	Quantização
+ai-edge.c2.viz.items.0.b	menos bits por peso
+ai-edge.c2.viz.items.1.a	Poda
+ai-edge.c2.viz.items.1.b	remover conexões fracas
+ai-edge.c2.viz.items.2.a	Destilação
+ai-edge.c2.viz.items.2.b	aluno pequeno copia professor grande
+ai-edge.c3.title	Aceleradores
+ai-edge.c3.text	Chips pequenos como a Coral Edge TPU do Google ou as neural engines dos celulares rodam redes neurais de forma eficiente com poucos watts. Uma Coral TPU consegue rodar um detector de objetos a dezenas de quadros por segundo.
+ai-edge.c3.viz.items.0.v	4 TOPS
+ai-edge.c3.viz.items.0.l	pico da Coral Edge TPU
+ai-edge.c3.viz.items.1.v	2 W
+ai-edge.c3.viz.items.1.l	consumo aproximado
+ai-edge.c4.title	Uma câmera inteligente em casa
+ai-edge.c4.text	Um NVR doméstico como o Frigate primeiro usa uma detecção de movimento barata, depois roda o detector de objetos só nos quadros com movimento e só alerta para os objetos que importam para você, como pessoas à noite.
+ai-edge.c4.viz.steps.0	Fluxo de vídeo
+ai-edge.c4.viz.steps.1	Movimento detectado?
+ai-edge.c4.viz.steps.2	Detector de objetos nessa área
+ai-edge.c4.viz.steps.3	Pessoa à noite → alerta
+ai-edge.c5.title	TinyML
+ai-edge.c5.text	Até microcontroladores que custam poucos euros conseguem rodar modelos minúsculos: detecção de palavra de ativação, reconhecimento de gestos, detecção de anomalias de vibração, tudo com bateria.
+ai-edge.c5.viz.items.0	Palavras de ativação
+ai-edge.c5.viz.items.1	Reconhecimento de gestos
+ai-edge.c5.viz.items.2	Anomalias de vibração
+ai-edge.c5.viz.items.3	Classificação simples de imagens
+ai-edge.c6.title	Modelos de linguagem no aparelho
+ai-edge.c6.text	Celulares e notebooks agora rodam pequenos modelos de linguagem localmente para resumos, respostas inteligentes e ditado. Pedidos maiores ainda podem ser repassados para a nuvem.
+ai-edge.c6.viz.steps.0	Pedido simples
+ai-edge.c6.viz.steps.1	Modelo local pequeno
+ai-edge.c6.viz.steps.2	Pedido complexo
+ai-edge.c6.viz.steps.3	Modelo grande na nuvem
+ai-edge.c7.title	Atualizando modelos de borda
+ai-edge.c7.text	Os dispositivos em campo precisam de novas versões do modelo à medida que os dados mudam. As atualizações são enviadas pelo ar (OTA), muitas vezes testadas primeiro num pequeno grupo de dispositivos.
+ai-edge.c7.viz.steps.0	Retreinar centralmente
+ai-edge.c7.viz.steps.1	Testar em poucos aparelhos
+ai-edge.c7.viz.steps.2	Distribuir pelo ar
+ai-edge.c7.viz.steps.3	Monitorar resultados
+ai-edge.c8.title	Aprendizado federado
+ai-edge.c8.text	Em vez de coletar os dados de todo mundo, os dispositivos treinam localmente e enviam só as atualizações dos pesos para um servidor central, que as combina. Os teclados de celular usam isso para melhorar as sugestões sem enviar o que você digita.
+ai-edge.c8.viz.steps.0	Modelo central vai aos aparelhos
+ai-edge.c8.viz.steps.1	Cada aparelho aprende localmente
+ai-edge.c8.viz.steps.2	Só as atualizações voltam
+ai-edge.c8.viz.steps.3	Servidor as combina
+ai-edge.c9.title	Limites da borda
+ai-edge.c9.text	Dispositivos pequenos têm memória, bateria e margem térmica limitadas. Os modelos de borda são menos capazes que os grandes modelos na nuvem, então muitos sistemas combinam os dois.
+ai-edge.c9.viz.l.t	Limites da borda
+ai-edge.c9.viz.l.items.0	pouca memória
+ai-edge.c9.viz.l.items.1	bateria
+ai-edge.c9.viz.l.items.2	calor
+ai-edge.c9.viz.r.t	Solução híbrida
+ai-edge.c9.viz.r.items.0	1ª passada local rápida
+ai-edge.c9.viz.r.items.1	nuvem para casos difíceis
+ai-robots.title	Robôs e carros autônomos
+ai-robots.summary	A IA que se move pelo mundo físico.
+ai-robots.q0.q	Qual sensor mede distâncias 3D precisas com lasers?
+ai-robots.q0.o0	Câmera
+ai-robots.q0.o1	Radar
+ai-robots.q0.o2	Lidar
+ai-robots.q0.x	O lidar usa pulsos de laser para medir distâncias.
+ai-robots.q1.q	A maioria dos carros vendidos hoje com assistência ao motorista está no nível SAE…
+ai-robots.q1.o0	0
+ai-robots.q1.o1	2
+ai-robots.q1.o2	5
+ai-robots.q1.x	O nível 2 esterça e freia, mas exige supervisão constante.
+ai-robots.q2.q	O que o SLAM faz?
+ai-robots.q2.o0	Pisa fundo no freio
+ai-robots.q2.o1	Constrói um mapa enquanto acompanha a posição do robô nele
+ai-robots.q2.o2	Carrega a bateria
+ai-robots.q2.x	Localização e mapeamento simultâneos.
+ai-robots.c0.title	Perceber, pensar, agir
+ai-robots.c0.text	Todo robô roda o mesmo ciclo: os sensores medem o mundo, o software decide o que fazer e os motores executam. Depois ele percebe de novo para ver o que mudou.
+ai-robots.c0.viz.steps.0	Perceber: câmeras, lidar
+ai-robots.c0.viz.steps.1	Pensar: planejar o próximo movimento
+ai-robots.c0.viz.steps.2	Agir: motores e rodas
+ai-robots.c0.viz.steps.3	Conferir o resultado
+ai-robots.c1.title	Sensores
+ai-robots.c1.text	Robôs e carros combinam sensores porque cada um tem pontos fracos: as câmeras veem cores mas têm dificuldade no escuro, o radar enxerga através da chuva mas com menos detalhe, e o lidar mede distâncias precisas com lasers.
+ai-robots.c1.viz.items.0.a	Câmera
+ai-robots.c1.viz.items.0.b	cores, placas, faixas
+ai-robots.c1.viz.items.1.a	Radar
+ai-robots.c1.viz.items.1.b	velocidade, funciona na chuva
+ai-robots.c1.viz.items.2.a	Lidar
+ai-robots.c1.viz.items.2.b	distância 3D precisa
+ai-robots.c1.viz.items.3.a	Ultrassom
+ai-robots.c1.viz.items.3.b	estacionar de perto
+ai-robots.c2.title	Localização e mapeamento
+ai-robots.c2.text	Para se mover, um robô precisa saber onde está. O SLAM (localização e mapeamento simultâneos) constrói um mapa de um espaço desconhecido enquanto acompanha a posição do robô dentro dele. Os aspiradores robôs fazem isso.
+ai-robots.c2.viz.steps.0	Mover um pouco
+ai-robots.c2.viz.steps.1	Perceber o entorno
+ai-robots.c2.viz.steps.2	Atualizar o mapa
+ai-robots.c2.viz.steps.3	Estimar a posição
+ai-robots.c3.title	Níveis de automação na direção
+ai-robots.c3.text	A SAE define seis níveis, de 0 (sem automação) a 5 (dirige em qualquer lugar sem um humano). A maioria dos carros vendidos hoje oferece o nível 2: o carro esterça e freia, mas o motorista precisa supervisionar o tempo todo.
+ai-robots.c3.viz.items.0	Nível 5: qualquer lugar, sem motorista
+ai-robots.c3.viz.items.1	Nível 4: sem motorista em áreas definidas
+ai-robots.c3.viz.items.2	Nível 3: o carro dirige, humano a postos
+ai-robots.c3.viz.items.3	Nível 2: motorista supervisiona
+ai-robots.c3.viz.items.4	Nível 0–1: motorista no controle
+ai-robots.c4.title	Robotáxis
+ai-robots.c4.text	Serviços de táxi sem motorista operam em várias cidades dos EUA e da China, como a Waymo em Phoenix e São Francisco. Eles são de nível 4: sem motorista, mas só dentro de áreas cuidadosamente mapeadas.
+ai-robots.c4.viz.items.0.v	Nível 4
+ai-robots.c4.viz.items.0.l	operação de robotáxi
+ai-robots.c4.viz.items.1.l	motoristas de segurança no veículo
+ai-robots.c5.title	A cauda longa
+ai-robots.c5.text	Dirigir é quase sempre rotina, mas as situações raras são infinitas: um colchão na rodovia, um policial mandando você passar no sinal vermelho. Lidar com a cauda longa de eventos raros é a parte mais difícil da autonomia.
+ai-robots.c5.viz.unit	parcela das situações (ilustrativo)
+ai-robots.c5.viz.items.0.l	Direção rotineira
+ai-robots.c5.viz.items.1.l	Incomum
+ai-robots.c5.viz.items.2.l	Muito rara
+ai-robots.c6.title	Robôs industriais
+ai-robots.c6.text	As fábricas usam braços robóticos há décadas para soldar, pintar e montar. A IA acrescenta visão, para que eles peguem peças misturadas, inspecionem a qualidade e trabalhem com mais segurança perto das pessoas.
+ai-robots.c6.viz.items.0	Solda e pintura
+ai-robots.c6.viz.items.1	Pegar e posicionar com visão
+ai-robots.c6.viz.items.2	Inspeção de qualidade
+ai-robots.c6.viz.items.3	Robôs colaborativos perto de pessoas
+ai-robots.c7.title	Robôs aprendendo habilidades
+ai-robots.c7.text	Novas abordagens treinam robôs com demonstrações, simulação e grandes modelos que ligam linguagem e visão a ações: "coloque o copo vermelho na pia".
+ai-robots.c7.viz.steps.0	Demonstrações humanas
+ai-robots.c7.viz.steps.1	Prática em simulação
+ai-robots.c7.viz.steps.2	Modelo visão-linguagem-ação
+ai-robots.c7.viz.steps.3	Robô segue instruções
+ai-robots.c8.title	Segurança em primeiro lugar
+ai-robots.c8.text	Robôs físicos podem ferir pessoas, por isso precisam de limites de velocidade perto de humanos, botões de parada de emergência, áreas cercadas ou sensores de força, e certificação segundo as normas de segurança de máquinas.
+ai-robots.c8.viz.items.0	Parada de emergência
+ai-robots.c8.viz.items.1	Limites de velocidade perto de pessoas
+ai-robots.c8.viz.items.2	Sensores de força e colisão
+ai-robots.c8.viz.items.3	Certificação de segurança
+ai-robots.c9.title	Drones e agricultura
+ai-robots.c9.text	Drones mapeiam lavouras, contam plantas e detectam doenças, enquanto tratores autônomos seguem trajetos de GPS com precisão de centímetros. A agricultura de precisão usa menos fertilizante e água ao tratar só onde é necessário.
+ai-robots.c9.viz.steps.0	Drone mapeia a lavoura
+ai-robots.c9.viz.steps.1	IA acha áreas com problema
+ai-robots.c9.viz.steps.2	Tratar só esses pontos
+ai-robots.c9.viz.steps.3	Menos insumos, mesma colheita
+ai-future.title	Para onde a IA está indo
+ai-future.summary	Agentes, debates sobre AGI e o que acompanhar.
+ai-future.q0.q	O que diferencia um agente de IA de um chatbot básico?
+ai-future.q0.o0	Ele tem um nome
+ai-future.q0.o1	Ele planeja e age com ferramentas para atingir um objetivo
+ai-future.q0.o2	Ele só responde sim ou não
+ai-future.q0.x	Os agentes agem em ciclos usando ferramentas.
+ai-future.q1.q	O que o AlphaFold fez?
+ai-future.q1.o0	Venceu no Go
+ai-future.q1.o1	Previu as estruturas 3D de proteínas
+ai-future.q1.o2	Dirigiu um carro
+ai-future.q1.x	Ele previu mais de 200 milhões de estruturas de proteínas.
+ai-future.q2.q	Existe uma data consensual para a AGI?
+ai-future.q2.o0	Sim, 2030
+ai-future.q2.o1	Não, os especialistas discordam muito
+ai-future.q2.o2	Sim, ela já existe por lei
+ai-future.q2.x	Não há consenso sobre a definição nem sobre o prazo.
+ai-future.c0.title	Dos chatbots aos agentes
+ai-future.c0.text	Os agentes não apenas respondem; eles planejam e agem: pesquisam na web, usam softwares, escrevem e rodam código e depois conferem o resultado. Eles trabalham em ciclos rumo a um objetivo.
+ai-future.c0.viz.steps.0	Entender o objetivo
+ai-future.c0.viz.steps.1	Planejar etapas
+ai-future.c0.viz.steps.2	Usar ferramentas
+ai-future.c0.viz.steps.3	Conferir resultados
+ai-future.c1.title	Modelos multimodais
+ai-future.c1.text	Os modelos mais novos lidam com texto, imagens, áudio e vídeo num único sistema. Você pode mostrar a foto de uma peça quebrada, fazer uma pergunta por voz e receber um diagrama de volta.
+ai-future.c1.viz.steps.0	Texto, imagem, áudio, vídeo
+ai-future.c1.viz.steps.1	Um modelo multimodal
+ai-future.c1.viz.steps.2	Respostas em qualquer formato
+ai-future.c2.title	O que é AGI?
+ai-future.c2.text	Inteligência artificial geral (AGI) costuma significar uma IA capaz de fazer a maioria das tarefas cognitivas tão bem quanto um humano competente. Não há uma definição ou teste consensual, e os especialistas discordam muito sobre quando, ou se, ela vai chegar.
+ai-future.c2.viz.l.t	IA restrita
+ai-future.c2.viz.l.items.0	uma tarefa
+ai-future.c2.viz.l.items.1	sobre-humana nessa tarefa
+ai-future.c2.viz.r.t	IA geral
+ai-future.c2.viz.r.items.0	maioria das tarefas cognitivas
+ai-future.c2.viz.r.items.1	flexível como uma pessoa
+ai-future.c3.title	Escala vs. ideias novas
+ai-future.c3.text	Alguns pesquisadores esperam que mais dados e computação continuem trazendo resultados; outros acham que são necessárias ideias novas para raciocínio confiável, memória e aprendizado com poucos exemplos. A maioria espera um pouco de cada.
+ai-future.c3.viz.l.t	Visão da escala
+ai-future.c3.viz.l.items.0	modelos maiores seguem melhorando
+ai-future.c3.viz.l.items.1	computação é a chave
+ai-future.c3.viz.r.t	Visão das ideias novas
+ai-future.c3.viz.r.items.0	falta raciocínio melhor
+ai-future.c3.viz.r.items.1	falta memória e eficiência
+ai-future.c4.title	IA para a ciência
+ai-future.c4.text	A IA já está acelerando a pesquisa. O AlphaFold, da DeepMind, previu a forma 3D de mais de 200 milhões de proteínas, e seus criadores dividiram o Prêmio Nobel de Química de 2024.
+ai-future.c4.viz.items.0.v	200 mi+
+ai-future.c4.viz.items.0.l	estruturas de proteínas previstas
+ai-future.c4.viz.items.1.l	Prêmio Nobel de Química
+ai-future.c5.title	Empregos e trabalho
+ai-future.c5.text	A IA muda tarefas antes de substituir empregos. Tarefas rotineiras de escrita, resumo e programação mudam mais rápido; as funções passam a se concentrar em julgamento, relacionamentos e supervisão do que a IA produz.
+ai-future.c5.viz.l.t	Tarefas encolhendo
+ai-future.c5.viz.l.items.0	primeiros rascunhos
+ai-future.c5.viz.l.items.1	resumos de rotina
+ai-future.c5.viz.l.items.2	código repetitivo
+ai-future.c5.viz.r.t	Tarefas crescendo
+ai-future.c5.viz.r.items.0	julgamento
+ai-future.c5.viz.r.items.1	revisar o que a IA faz
+ai-future.c5.viz.r.items.2	trabalhar com pessoas
+ai-future.c6.title	Modelos abertos vs. fechados
+ai-future.c6.text	Alguns modelos são lançados abertamente, para que qualquer um possa rodá-los e modificá-los; outros só estão disponíveis por uma API. Os modelos abertos ajudam a pesquisa e a privacidade; os fechados facilitam o controle do uso indevido.
+ai-future.c6.viz.l.t	Pesos abertos
+ai-future.c6.viz.l.items.0	roda em qualquer lugar
+ai-future.c6.viz.l.items.1	personalizar
+ai-future.c6.viz.l.items.2	uso indevido mais difícil de controlar
+ai-future.c6.viz.r.t	Fechados
+ai-future.c6.viz.r.items.0	acesso via API
+ai-future.c6.viz.r.items.1	fornecedor controla atualizações
+ai-future.c6.viz.r.items.2	mais fácil de monitorar
+ai-future.c7.title	Limites de energia e computação
+ai-future.c7.text	Cada nova geração precisa de mais chips, eletricidade e refrigeração. O fornecimento de energia, a produção de chips e o custo podem limitar a velocidade com que a IA consegue escalar.
+ai-future.c7.viz.items.0	Oferta de chips
+ai-future.c7.viz.items.1	Capacidade da rede elétrica
+ai-future.c7.viz.items.2	Refrigeração e água
+ai-future.c7.viz.items.3	Custo por consulta
+ai-future.c8.title	Mantendo-se informado
+ai-future.c8.text	A área muda todo mês. Bons hábitos: experimentar as ferramentas você mesmo, acompanhar algumas fontes confiáveis e julgar as afirmações por demonstrações e evidências, e não pelo hype.
+ai-future.c8.viz.items.0	Testar ferramentas novas na prática
+ai-future.c8.viz.items.1	Seguir algumas fontes confiáveis
+ai-future.c8.viz.items.2	Pedir evidências, não só demos
+ai-future.c8.viz.items.3	Revisar suas suposições com frequência
+ai-future.c9.title	O que continua humano
+ai-future.c9.text	Decidir quais problemas importam, pesar prós e contras, assumir responsabilidades e construir confiança entre as pessoas continuam sendo trabalho humano, agora com assistentes poderosos.
+ai-future.c9.viz.items.0	Escolher o que importa
+ai-future.c9.viz.items.1	Pesar prós e contras
+ai-future.c9.viz.items.2	Assumir responsabilidades
+ai-future.c9.viz.items.3	Construir confiança

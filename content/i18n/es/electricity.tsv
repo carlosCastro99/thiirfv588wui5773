@@ -1,0 +1,600 @@
+P.title	Electricidad
+P.blurb	De la ley de Ohm al cuadro eléctrico de tu pasillo.
+el-basics.title	Tensión, corriente y resistencia
+el-basics.summary	Las tres magnitudes que hay detrás de todo circuito y la ley que las une.
+el-basics.q0.q	Una pila de 9 V hace circular corriente por una resistencia de 450 Ω. ¿Cuál es la corriente?
+el-basics.q0.o0	20 mA
+el-basics.q0.o1	2 A
+el-basics.q0.o2	4 mA
+el-basics.q0.o3	50 mA
+el-basics.q0.x	I = V ÷ R = 9 ÷ 450 = 0,02 A, es decir, 20 mA.
+el-basics.q1.q	En la analogía del agua, ¿qué hace el papel de la tensión?
+el-basics.q1.o0	La rapidez con la que fluye el agua
+el-basics.q1.o1	La presión del agua (altura del depósito)
+el-basics.q1.o2	El ancho de la tubería
+el-basics.q1.x	La tensión es el empuje, como la presión. El caudal es la corriente; el estrechamiento de la tubería es la resistencia.
+el-basics.q2.q	Duplicas la resistencia y mantienes la misma tensión. La corriente…
+el-basics.q2.o0	se duplica
+el-basics.q2.o1	no cambia
+el-basics.q2.o2	se reduce a la mitad
+el-basics.q2.x	I = V ÷ R. El doble de R con la misma V da la mitad de corriente.
+el-basics.q3.q	¿Por qué los tendidos de cable largos necesitan cables más gruesos?
+el-basics.q3.o0	Los cables gruesos quedan mejor
+el-basics.q3.o1	La resistencia crece con la longitud, así que una sección mayor lo compensa
+el-basics.q3.o2	Los cables largos llevan menos tensión
+el-basics.q3.x	R = ρ × L ÷ A: más sección compensa más longitud.
+el-basics.q4.q	¿Qué hace un interruptor?
+el-basics.q4.o0	Cambia la tensión
+el-basics.q4.o1	Abre o cierra el circuito
+el-basics.q4.o2	Almacena energía
+el-basics.q4.x	Apagado = circuito abierto; encendido = circuito cerrado.
+el-basics.c0.title	La electricidad es carga en movimiento
+el-basics.c0.text	Una corriente es un flujo de carga eléctrica. En un cable metálico son electrones que se empujan unos a otros. Cada electrón avanza despacio, pero el empuje recorre el cable casi al instante, como el agua en una manguera que ya está llena.\n\nPor convenio, la corriente se dibuja fluyendo de + a −, en sentido contrario a los electrones. Todos los esquemas eléctricos usan este convenio.
+el-basics.c0.sketch.5	los electrones van así
+el-basics.c0.sketch.6	corriente, por convenio
+el-basics.c1.title	La analogía del agua
+el-basics.c1.text	Imagina un depósito que alimenta una tubería.\n• La tensión es la presión, que depende de la altura del agua.\n• La corriente es cuánta agua pasa por segundo.\n• La resistencia es un tramo estrecho de tubería que limita el caudal.\n\nMás presión empuja más caudal; una tubería más estrecha deja pasar menos. Esa es toda la idea de la ley de Ohm.
+el-basics.c1.sketch.0	altura ≈ tensión
+el-basics.c1.sketch.1	caudal ≈ corriente
+el-basics.c1.sketch.2	estrecho ≈ resistencia
+el-basics.c2.title	La ley de Ohm
+el-basics.c2.text	La tensión (voltios, V) es igual a la corriente (amperios, A) por la resistencia (ohmios, Ω). Tapa en el triángulo la magnitud que buscas y las otras dos te dicen cómo obtenerla.
+el-basics.c2.formula	V = I × R
+el-basics.c2.example.0	Batería de 12 V conectada a un calefactor de 4 Ω
+el-basics.c2.example.1	I = V ÷ R = 12 ÷ 4
+el-basics.c2.example.2	= 3 A
+el-basics.c2.sketch.0	V
+el-basics.c2.sketch.1	I
+el-basics.c2.sketch.2	R
+el-basics.c2.sketch.3	V = I × R
+el-basics.c2.sketch.4	I = V ÷ R
+el-basics.c2.sketch.5	R = V ÷ I
+el-basics.c3.title	Pruébalo: atenúa la bombilla
+el-basics.c3.text	Cambia la tensión y la resistencia. Observa la corriente y la potencia que la bombilla convierte en luz y calor.
+el-basics.c4.title	Lo que hace daño es la corriente
+el-basics.c4.text	Tu cuerpo también es una resistencia. Lo que importa para la seguridad es cuánta corriente lo atraviesa y por dónde.\nHacia 1 mA notas un cosquilleo. Cerca de 10 mA los músculos pueden agarrotarse y quizá no puedas soltarte. A partir de unos 50–100 mA a través del pecho, el corazón puede entrar en fibrilación.\n\nPor eso los diferenciales de casa saltan a 30 mA: mucho antes de la zona peligrosa.
+el-basics.c4.sketch.0	se nota
+el-basics.c4.sketch.1	no sueltas
+el-basics.c4.sketch.2	salta el ID
+el-basics.c4.sketch.3	riesgo cardíaco
+el-basics.c4.sketch.4	1 mA
+el-basics.c4.sketch.5	10 mA
+el-basics.c4.sketch.6	30 mA
+el-basics.c4.sketch.7	100 mA
+el-basics.c4.sketch.8	corriente por el cuerpo (escala log.)
+el-basics.c5.title	Conductores y aislantes
+el-basics.c5.text	En los metales, algunos electrones pueden moverse libremente, así que la corriente fluye con facilidad: cobre, aluminio, plata. En los aislantes, como el plástico, el caucho, el vidrio y la madera seca, los electrones están muy sujetos y apenas circula corriente.\n\nLos cables combinan ambos: un núcleo de cobre dentro de una funda de plástico.
+el-basics.c5.viz.l.t	Conductores
+el-basics.c5.viz.l.items.0	cobre
+el-basics.c5.viz.l.items.1	aluminio
+el-basics.c5.viz.l.items.2	agua salada
+el-basics.c5.viz.r.t	Aislantes
+el-basics.c5.viz.r.items.0	plástico PVC
+el-basics.c5.viz.r.items.1	caucho
+el-basics.c5.viz.r.items.2	vidrio
+el-basics.c6.title	Resistencia de un cable
+el-basics.c6.text	La resistencia de un cable aumenta con su longitud y disminuye con su sección. Por eso los tendidos largos necesitan cables más gruesos, y por eso los alargadores finos se calientan.
+el-basics.c6.example.0	100 m de cobre de 2,5 mm² (ρ ≈ 0,0175)
+el-basics.c6.example.1	0,0175 × 100 ÷ 2,5
+el-basics.c6.example.2	≈ 0,7 Ω
+el-basics.c6.viz.f	R = ρ × L ÷ A
+el-basics.c6.viz.items.0.s	ρ
+el-basics.c6.viz.items.0.m	resistividad del metal
+el-basics.c6.viz.items.1.s	L
+el-basics.c6.viz.items.1.m	longitud
+el-basics.c6.viz.items.2.s	A
+el-basics.c6.viz.items.2.m	área de la sección
+el-basics.c7.title	Medir con unidades
+el-basics.c7.text	Los prefijos mantienen los números manejables. Un cargador de móvil da unos 2 A, un sensor consume unos pocos miliamperios y la red de transporte lleva kilovoltios.
+el-basics.c7.viz.items.0.a	mili (m)
+el-basics.c7.viz.items.0.b	una milésima
+el-basics.c7.viz.items.1.a	kilo (k)
+el-basics.c7.viz.items.1.b	mil
+el-basics.c7.viz.items.2.a	mega (M)
+el-basics.c7.viz.items.2.b	un millón
+el-basics.c7.viz.items.3.a	micro (µ)
+el-basics.c7.viz.items.3.b	una millonésima
+el-basics.c8.title	Cortocircuitos
+el-basics.c8.text	Un cortocircuito es un camino casi sin resistencia entre fase y neutro. Por la ley de Ohm, la corriente se vuelve enorme y calienta los cables en una fracción de segundo. Los fusibles y los magnetotérmicos existen para cortarla antes de que empiece un incendio.
+el-basics.c8.viz.steps.0	Falla el aislamiento
+el-basics.c8.viz.steps.1	Fase toca neutro
+el-basics.c8.viz.steps.2	Corriente enorme
+el-basics.c8.viz.steps.3	El automático salta en ms
+el-basics.c9.title	Circuitos abiertos y cerrados
+el-basics.c9.text	La corriente solo circula por un bucle completo. Un interruptor simplemente abre el bucle (apagado) o lo cierra (encendido). Un cable roto, un fusible fundido o un borne suelto abren el circuito.
+el-basics.c9.viz.l.t	Circuito cerrado
+el-basics.c9.viz.l.items.0	bucle completo
+el-basics.c9.viz.l.items.1	hay corriente
+el-basics.c9.viz.l.items.2	lámpara encendida
+el-basics.c9.viz.r.t	Circuito abierto
+el-basics.c9.viz.r.items.0	hueco en el bucle
+el-basics.c9.viz.r.items.1	sin corriente
+el-basics.c9.viz.r.items.2	lámpara apagada
+el-home.title	Circuitos en casa
+el-home.summary	Serie frente a paralelo, potencia y lo que hacen de verdad los automáticos de tu cuadro.
+el-home.q0.q	¿Por qué cada enchufe de una casa recibe los 230 V completos?
+el-home.q0.o0	Están conectados en serie
+el-home.q0.o1	Están conectados en paralelo
+el-home.q0.o2	Cada enchufe tiene su propio transformador
+el-home.q0.x	En paralelo, cada carga está directamente entre fase y neutro, así que cada una recibe toda la tensión de la red.
+el-home.q1.q	Un calefactor de 1150 W funciona a 230 V. ¿Cuánta corriente consume?
+el-home.q1.o0	0,2 A
+el-home.q1.o1	5 A
+el-home.q1.o2	50 A
+el-home.q1.o3	23 A
+el-home.q1.x	I = P ÷ V = 1150 ÷ 230 = 5 A.
+el-home.q2.q	¿Qué hace saltar un diferencial?
+el-home.q2.o0	Una corriente total superior a su calibre
+el-home.q2.o1	Que no toda la corriente que sale por la fase vuelve por el neutro
+el-home.q2.o2	Que la tensión baje de 200 V
+el-home.q2.x	Un diferencial mide el desequilibrio entre fase y neutro. La sobrecorriente es cosa del magnetotérmico.
+el-home.q3.q	Un horno de 1,5 kW funciona durante 4 horas. ¿Cuánta energía es?
+el-home.q3.o0	6 kWh
+el-home.q3.o1	1,5 kWh
+el-home.q3.o2	375 Wh
+el-home.q3.x	1,5 kW × 4 h = 6 kWh.
+el-home.q4.q	Una potencia contratada de 6,9 kVA permite aproximadamente cuánta corriente a 230 V?
+el-home.q4.o0	6,9 A
+el-home.q4.o1	30 A
+el-home.q4.o2	230 A
+el-home.q4.x	6900 ÷ 230 ≈ 30 A.
+el-home.q5.q	20 W en espera durante todo el año consumen unos…
+el-home.q5.o0	20 kWh
+el-home.q5.o1	175 kWh
+el-home.q5.o2	1750 kWh
+el-home.q5.x	20 × 8760 ÷ 1000 ≈ 175 kWh.
+el-home.c0.title	Serie frente a paralelo
+el-home.c0.text	En serie, los componentes comparten un único bucle. Por todos pasa la misma corriente y la tensión se reparte entre ellos. Un solo corte lo apaga todo, como las antiguas luces de Navidad.\n\nEn paralelo, cada componente tiene su propio camino hasta la alimentación. Cada uno recibe toda la tensión y se puede encender o apagar por separado.
+el-home.c0.sketch.0	serie
+el-home.c0.sketch.1	un camino común
+el-home.c0.sketch.2	paralelo
+el-home.c0.sketch.3	un camino cada uno
+el-home.c1.title	Tu casa está cableada en paralelo
+el-home.c1.text	Cada enchufe y cada luz están conectados entre los conductores de fase (L) y neutro (N). Por eso cada aparato recibe los 230 V completos, y por eso apagar el hervidor no apaga la nevera.\n\nCuantos más aparatos enchufas, más corriente total circula por la fase. Ese total es lo que vigilan los automáticos.
+el-home.c1.sketch.0	L  230 V
+el-home.c1.sketch.1	N
+el-home.c1.sketch.2	hervidor
+el-home.c1.sketch.3	lámpara
+el-home.c1.sketch.4	nevera
+el-home.c2.title	Potencia
+el-home.c2.text	La potencia (vatios) es la rapidez con la que se usa la energía. Multiplica la tensión por la corriente. Despejando, I = P ÷ V te dice cuánta corriente consume un aparato.
+el-home.c2.formula	P = V × I
+el-home.c2.example.0	Hervidor de 2300 W a 230 V
+el-home.c2.example.1	I = 2300 ÷ 230
+el-home.c2.example.2	= 10 A
+el-home.c2.sketch.0	2300 W
+el-home.c2.sketch.1	÷ 230 V
+el-home.c2.sketch.2	= 10 A
+el-home.c3.title	Magnetotérmicos frente a diferenciales
+el-home.c3.text	Un magnetotérmico (PIA) protege el cable. Si circula demasiada corriente, el cable se sobrecalentaría, así que salta. Lo típico en un circuito de enchufes es uno de 16 A.\n\nUn diferencial protege a las personas. Compara la corriente que sale por la fase con la que vuelve por el neutro. Si faltan unos 30 mA, se han fugado por algún sitio, quizá a través de una persona, y salta en una fracción de segundo.
+el-home.c3.sketch.0	salen 10,00 A
+el-home.c3.sketch.1	vuelven 9,97 A
+el-home.c3.sketch.2	carga
+el-home.c3.sketch.3	faltan 30 mA → ¡salta!
+el-home.c4.title	Leer tu factura: kWh
+el-home.c4.text	Pagas energía, no potencia. Energía = potencia × tiempo, y se mide en kilovatios hora (kWh). Un kWh es 1 kW funcionando durante una hora.
+el-home.c4.example.0	Calefactor de 2 kW durante 3 horas
+el-home.c4.example.1	2 kW × 3 h = 6 kWh
+el-home.c4.example.2	a 0,20 € por kWh → 1,20 €
+el-home.c4.sketch.1	kWh
+el-home.c4.sketch.2	energía = potencia × tiempo
+el-home.c5.title	Circuitos típicos de una casa
+el-home.c5.text	En Portugal y en buena parte de Europa, las viviendas se dividen en circuitos, cada uno con su propio automático: alumbrado, enchufes generales, cocina y grandes aparatos como el horno o el termo.
+el-home.c5.viz.unit	amperios (automático típico)
+el-home.c5.viz.items.0.l	Alumbrado
+el-home.c5.viz.items.1.l	Enchufes
+el-home.c5.viz.items.2.l	Lavadora
+el-home.c5.viz.items.3.l	Horno
+el-home.c5.viz.items.4.l	Cargador VE
+el-home.c6.title	Consumo en espera
+el-home.c6.text	Muchos aparatos consumen aunque estén «apagados»: televisor, router, cargadores, cafetera. Cada uno puede gastar solo unos pocos vatios, pero funcionando todo el año, se acumula.
+el-home.c6.example.0	30 W en espera en total
+el-home.c6.example.1	30 × 8760 ÷ 1000
+el-home.c6.example.2	≈ 263 kWh al año
+el-home.c6.viz.f	kWh/año = W × 8760 ÷ 1000
+el-home.c6.viz.items.0.s	W
+el-home.c6.viz.items.0.m	vatios en espera
+el-home.c6.viz.items.1.m	horas en un año
+el-home.c7.title	Potencia contratada
+el-home.c7.text	En Portugal contratas con tu comercializadora una potencia máxima, por ejemplo 6,9 kVA. Si enciendes demasiados aparatos a la vez, salta el interruptor general (ICP). Más potencia contratada implica un término fijo diario más alto.
+el-home.c7.viz.unit	kVA (opciones habituales)
+el-home.c8.title	¿Saltará?
+el-home.c8.text	Una potencia contratada de 6,9 kVA ≈ 30 A a 230 V. El horno (2 kW), el hervidor (2,2 kW) y la lavadora calentando agua (2 kW) suman 6,2 kW: cerca del límite. Añade un calefactor de 2 kW y salta el interruptor general.
+el-home.c8.viz.unit	kW en uso
+el-home.c8.viz.items.0.l	Horno
+el-home.c8.viz.items.1.l	Hervidor
+el-home.c8.viz.items.2.l	Lavadora
+el-home.c8.viz.items.3.l	Calefactor
+el-home.c9.title	Clavijas y enchufes
+el-home.c9.text	Portugal usa el enchufe tipo Schuko (tipo F), con contactos de tierra laterales. Reino Unido usa el tipo G, con tres patillas rectangulares y un fusible dentro de la clavija.
+el-home.c9.viz.l.t	Portugal (tipo F)
+el-home.c9.viz.l.items.0	dos patillas redondas
+el-home.c9.viz.l.items.1	tierra en los laterales
+el-home.c9.viz.l.items.2	16 A
+el-home.c9.viz.r.t	R. Unido (tipo G)
+el-home.c9.viz.r.items.0	tres patillas planas
+el-home.c9.viz.r.items.1	fusible en la clavija
+el-home.c9.viz.r.items.2	13 A
+el-acdc.title	CA y CC
+el-acdc.summary	Por qué el enchufe alterna y la pila no.
+el-acdc.q0.q	¿Qué significa 50 Hz?
+el-acdc.q0.o0	50 voltios
+el-acdc.q0.o1	La corriente cambia de sentido 50 veces por segundo (50 ciclos)
+el-acdc.q0.o2	50 amperios
+el-acdc.q0.x	Los hercios cuentan ciclos por segundo.
+el-acdc.q1.q	¿Por qué ganó la CA en las redes eléctricas?
+el-acdc.q1.o0	Es más segura al tocarla
+el-acdc.q1.o1	Los transformadores pueden subir y bajar su tensión fácilmente
+el-acdc.q1.o2	Es más barata de generar
+el-acdc.q1.x	La alta tensión reduce las pérdidas en el transporte.
+el-acdc.q2.q	Un inversor solar convierte…
+el-acdc.q2.o0	CA en CC
+el-acdc.q2.o1	CC en CA
+el-acdc.q2.o2	CC en CC de mayor tensión
+el-acdc.q2.x	Los paneles producen CC; la casa usa CA.
+el-acdc.c0.title	Corriente continua
+el-acdc.c0.text	En CC, la corriente circula en un solo sentido con una tensión constante. Las pilas, los paneles solares y los cargadores USB dan CC, y todo circuito electrónico funciona con ella por dentro.
+el-acdc.c0.viz.l.t	CC
+el-acdc.c0.viz.l.items.0	un solo sentido
+el-acdc.c0.viz.l.items.1	tensión estable
+el-acdc.c0.viz.l.items.2	pilas, solar, USB
+el-acdc.c0.viz.r.t	CA
+el-acdc.c0.viz.r.items.0	cambia de sentido
+el-acdc.c0.viz.r.items.1	tensión oscilante
+el-acdc.c0.viz.r.items.2	enchufes de red
+el-acdc.c1.title	Corriente alterna
+el-acdc.c1.text	En CA, la tensión oscila entre positiva y negativa en una onda suave y cambia de sentido muchas veces por segundo. La red europea cambia 50 veces por segundo: 50 hercios.
+el-acdc.c1.viz.items.0.v	50 Hz
+el-acdc.c1.viz.items.0.l	Europa
+el-acdc.c1.viz.items.1.v	60 Hz
+el-acdc.c1.viz.items.1.l	EE. UU. y parte de Brasil
+el-acdc.c2.title	Por qué 230 V no es el pico
+el-acdc.c2.text	La red se indica como 230 V, pero ese es el valor eficaz (RMS): la tensión continua que daría la misma potencia calorífica. Los picos reales llegan a unos 325 V.
+el-acdc.c2.viz.f	V pico = V rms × √2
+el-acdc.c2.viz.items.0.s	230 V
+el-acdc.c2.viz.items.0.m	RMS (nominal)
+el-acdc.c2.viz.items.2.s	≈ 325 V
+el-acdc.c2.viz.items.2.m	pico
+el-acdc.c3.title	La guerra de las corrientes
+el-acdc.c3.text	En la década de 1880, Edison defendía la CC; Westinghouse y Tesla apostaban por la CA. La CA ganó en las redes eléctricas porque los transformadores podían subir su tensión con facilidad para el transporte a larga distancia y bajarla para los hogares.
+el-acdc.c3.viz.events.0.l	Central de CC de Edison en Nueva York
+el-acdc.c3.viz.events.1.l	Patentes del motor de CA de Tesla
+el-acdc.c3.viz.events.2.l	La CA ilumina la Exposición de Chicago
+el-acdc.c3.viz.events.3.l	La CA del Niágara llega a Búfalo
+el-acdc.c4.title	¿Por qué CA para la red?
+el-acdc.c4.text	Las pérdidas en los cables dependen del cuadrado de la corriente. Los transformadores elevan la tensión para que la misma potencia circule con mucha menos corriente, y las pérdidas caen de forma drástica. Los transformadores solo funcionan con CA.
+el-acdc.c4.viz.steps.0	Central 20 kV
+el-acdc.c4.viz.steps.1	Subida a 400 kV
+el-acdc.c4.viz.steps.2	Líneas de larga distancia
+el-acdc.c4.viz.steps.3	Bajada a 230 V
+el-acdc.c5.title	Convertidores por todas partes
+el-acdc.c5.text	El cargador de tu portátil convierte CA en CC (un rectificador más un regulador). Un inversor solar hace lo contrario: convierte la CC de los paneles en CA para la casa.
+el-acdc.c5.viz.l.t	Rectificador / cargador
+el-acdc.c5.viz.l.items.0	CA → CC
+el-acdc.c5.viz.l.items.1	móvil, portátil, driver LED
+el-acdc.c5.viz.r.t	Inversor
+el-acdc.c5.viz.r.items.0	CC → CA
+el-acdc.c5.viz.r.items.1	solar, baterías, SAI
+el-acdc.c6.title	La CC vuelve
+el-acdc.c6.text	La electrónica moderna convierte tensiones continuas con eficiencia, así que los enlaces submarinos y terrestres muy largos usan ahora corriente continua de alta tensión (HVDC). Los centros de datos y los VE también funcionan en gran parte con CC por dentro.
+el-acdc.c6.viz.items.0	Cables submarinos HVDC
+el-acdc.c6.viz.items.1	Solar y baterías
+el-acdc.c6.viz.items.2	Baterías de VE
+el-acdc.c6.viz.items.3	Centros de datos
+el-acdc.c6.viz.items.4	Carga USB-C
+el-acdc.c7.title	La frecuencia es compartida
+el-acdc.c7.text	Todos los generadores de una red giran sincronizados. Si la demanda supera de repente a la oferta, la frecuencia baja ligeramente de 50 Hz, y los operadores deben añadir potencia en segundos para recuperarla.
+el-acdc.c7.viz.unit	Hz
+el-acdc.c7.viz.items.0.l	normal
+el-acdc.c7.viz.items.1.l	alarma de subfrecuencia
+el-acdc.c7.viz.items.2.l	exceso de oferta
+el-acdc.c8.title	La onda senoidal
+el-acdc.c8.text	Los generadores producen de forma natural una onda senoidal porque sus bobinas giran dentro de un campo magnético. Una vuelta completa de un generador de dos polos produce un ciclo; a 3000 rpm son 50 ciclos por segundo.
+el-acdc.c8.viz.f	f = rpm × pares de polos ÷ 60
+el-acdc.c8.viz.items.0.s	3000 rpm
+el-acdc.c8.viz.items.0.m	velocidad
+el-acdc.c8.viz.items.1.m	par de polos
+el-acdc.c8.viz.items.2.s	50 Hz
+el-acdc.c8.viz.items.2.m	frecuencia
+el-acdc.c9.title	Distintos países, distintas redes
+el-acdc.c9.text	La mayor parte del mundo usa 220–240 V a 50 Hz. Norteamérica usa 120 V a 60 Hz, y Japón está dividido: 50 Hz en el este y 60 Hz en el oeste.
+el-acdc.c9.viz.unit	voltios
+el-acdc.c9.viz.items.0.l	Europa
+el-acdc.c9.viz.items.1.l	R. Unido
+el-acdc.c9.viz.items.2.l	EE. UU.
+el-acdc.c9.viz.items.3.l	Japón
+el-acdc.c9.viz.items.4.l	Brasil
+el-magnet.title	Magnetismo y electroimanes
+el-magnet.summary	Cómo la corriente crea campos magnéticos y viceversa.
+el-magnet.q0.q	¿Qué descubrió Ørsted en 1820?
+el-magnet.q0.o0	Las pilas
+el-magnet.q0.o1	Que una corriente eléctrica crea un campo magnético
+el-magnet.q0.o2	La corriente alterna
+el-magnet.q0.x	La aguja de una brújula se movió cerca de una corriente.
+el-magnet.q1.q	¿Por qué una sartén de aluminio no funciona en una placa de inducción?
+el-magnet.q1.o0	Es demasiado ligera
+el-magnet.q1.o1	No es lo bastante magnética para que el campo la caliente con eficiencia
+el-magnet.q1.o2	El aluminio se funde
+el-magnet.q1.x	La inducción necesita una base ferromagnética.
+el-magnet.q2.q	Un relé permite que una corriente pequeña…
+el-magnet.q2.o0	almacene energía
+el-magnet.q2.o1	conmute un circuito mucho mayor
+el-magnet.q2.o2	convierta CA en CC
+el-magnet.q2.x	La bobina atrae y cierra un contacto independiente.
+el-magnet.c0.title	Campos magnéticos
+el-magnet.c0.text	Un imán tiene un polo norte y un polo sur. Los polos opuestos se atraen; los iguales se repelen. La región invisible donde actúa es su campo magnético, que las limaduras de hierro hacen visible como líneas curvas.
+el-magnet.c0.viz.l.t	Atracción
+el-magnet.c0.viz.l.items.0	norte + sur
+el-magnet.c0.viz.l.items.1	polos opuestos
+el-magnet.c0.viz.r.t	Repulsión
+el-magnet.c0.viz.r.items.0	norte + norte
+el-magnet.c0.viz.r.items.1	sur + sur
+el-magnet.c1.title	La Tierra es un imán
+el-magnet.c1.text	El núcleo de hierro fundido de la Tierra crea un campo magnético. La aguja de una brújula es un pequeño imán que se alinea con él. El norte magnético se desplaza lentamente y no coincide exactamente con el polo norte geográfico.
+el-magnet.c1.viz.steps.0	Hierro fundido fluye en el núcleo
+el-magnet.c1.viz.steps.1	Corrientes eléctricas
+el-magnet.c1.viz.steps.2	Campo magnético terrestre
+el-magnet.c1.viz.steps.3	La brújula apunta al norte
+el-magnet.c2.title	La corriente crea un campo
+el-magnet.c2.text	En 1820, Ørsted vio que la aguja de una brújula se movía cerca de un cable con corriente. Toda corriente crea un campo magnético que la rodea. Esto une la electricidad y el magnetismo.
+el-magnet.c2.viz.events.0.l	Ørsted ve moverse la brújula
+el-magnet.c2.viz.events.1.l	Electroimán de Sturgeon
+el-magnet.c2.viz.events.2.l	Inducción de Faraday
+el-magnet.c2.viz.events.3.l	Maxwell unifica la teoría
+el-magnet.c3.title	Electroimanes
+el-magnet.c3.text	Enrolla un cable en una bobina y los campos se suman. Pon un núcleo de hierro dentro y el campo se vuelve mucho más fuerte. Corta la corriente y el imán también se apaga.
+el-magnet.c3.viz.items.0	Más espiras de cable
+el-magnet.c3.viz.items.1	Más corriente
+el-magnet.c3.viz.items.2	Un núcleo de hierro
+el-magnet.c3.viz.items.3	= un imán más fuerte
+el-magnet.c4.title	Dónde trabajan los electroimanes
+el-magnet.c4.text	Los relés, las cerraduras eléctricas, los altavoces, los escáneres de resonancia magnética, las grúas de los desguaces y los contactores de tu cuadro eléctrico usan electroimanes.
+el-magnet.c4.viz.root	Electroimanes
+el-magnet.c4.viz.items.0	Relés y contactores
+el-magnet.c4.viz.items.1	Altavoces
+el-magnet.c4.viz.items.2	Cerraduras
+el-magnet.c4.viz.items.3	Resonancia magnética
+el-magnet.c5.title	Relés
+el-magnet.c5.text	Un relé usa una corriente pequeña por una bobina para cerrar un interruptor. Así, un microcontrolador de 3,3 V puede encender y apagar con seguridad un calefactor de 230 V.
+el-magnet.c5.viz.steps.0	Pequeña corriente de mando
+el-magnet.c5.viz.steps.1	La bobina se imanta
+el-magnet.c5.viz.steps.2	Cierra el contacto
+el-magnet.c5.viz.steps.3	Se enciende la carga
+el-magnet.c6.title	Inducción
+el-magnet.c6.text	En 1831, Faraday descubrió lo contrario: un campo magnético variable empuja corriente por un cable cercano. Mete y saca un imán de una bobina y circula corriente. Así funcionan los generadores y los transformadores.
+el-magnet.c6.viz.steps.0	Imán en movimiento
+el-magnet.c6.viz.steps.1	Campo variable en la bobina
+el-magnet.c6.viz.steps.2	Tensión inducida
+el-magnet.c6.viz.steps.3	Circula corriente
+el-magnet.c7.title	Placas de inducción
+el-magnet.c7.text	Una placa de inducción hace pasar CA de alta frecuencia por una bobina bajo el vidrio. El campo variable induce corrientes directamente en la sartén de hierro, que se calienta. El vidrio se mantiene relativamente frío, y las sartenes no magnéticas no funcionan.
+el-magnet.c7.viz.steps.0	CA en la bobina
+el-magnet.c7.viz.steps.1	Campo magnético variable
+el-magnet.c7.viz.steps.2	Corrientes en la sartén
+el-magnet.c7.viz.steps.3	La sartén se calienta
+el-magnet.c8.title	Carga inalámbrica
+el-magnet.c8.text	Los cargadores de móvil usan la misma idea: una bobina en la base crea un campo variable y una bobina en el móvil lo capta. Es cómodo, pero menos eficiente que un cable, y necesita una buena alineación.
+el-magnet.c8.viz.l.t	Cable
+el-magnet.c8.viz.l.items.0	más eficiente
+el-magnet.c8.viz.l.items.1	más rápido
+el-magnet.c8.viz.r.t	Base inalámbrica
+el-magnet.c8.viz.r.items.0	cómoda
+el-magnet.c8.viz.r.items.1	pierde algo en calor
+el-magnet.c9.title	Almacenamiento magnético
+el-magnet.c9.text	Los discos duros guardan los bits como regiones diminutas imantadas en un sentido u otro. Las bandas de las tarjetas de crédito y las antiguas cintas de casete usan el mismo principio.
+el-magnet.c9.viz.items.0.a	Disco duro
+el-magnet.c9.viz.items.0.b	regiones imantadas
+el-magnet.c9.viz.items.1.a	Banda de tarjeta
+el-magnet.c9.viz.items.1.b	patrón magnético
+el-magnet.c9.viz.items.2.a	Cinta de casete
+el-magnet.c9.viz.items.2.b	capa imantada
+el-motors.title	Motores y generadores
+el-motors.summary	Convertir electricidad en movimiento, y al revés.
+el-motors.q0.q	Un generador es básicamente…
+el-motors.q0.o0	Una pila
+el-motors.q0.o1	Un motor funcionando al revés
+el-motors.q0.o2	Un transformador
+el-motors.q0.x	Al hacerlo girar se induce una tensión.
+el-motors.q1.q	¿Por qué los variadores de velocidad ahorran tanta energía en los ventiladores?
+el-motors.q1.o0	Usan CC
+el-motors.q1.o1	La potencia del ventilador baja aproximadamente con el cubo de la velocidad
+el-motors.q1.o2	Eliminan el rozamiento
+el-motors.q1.x	Un pequeño recorte de velocidad da un gran recorte de potencia.
+el-motors.q2.q	El frenado regenerativo…
+el-motors.q2.o0	Aprieta más las pastillas de freno
+el-motors.q2.o1	Convierte el motor en generador para recargar la batería
+el-motors.q2.o2	Desconecta la batería
+el-motors.q2.x	La energía cinética se convierte en electricidad.
+el-motors.c0.title	El efecto motor
+el-motors.c0.text	Un cable con corriente dentro de un campo magnético sufre una fuerza. Dobla el cable en forma de espira sobre un eje y las fuerzas en cada lado empujan en sentidos opuestos: gira.
+el-motors.c0.viz.steps.0	Corriente en una bobina
+el-motors.c0.viz.steps.1	Dentro de un campo magnético
+el-motors.c0.viz.steps.2	Fuerza en cada lado
+el-motors.c0.viz.steps.3	La bobina gira
+el-motors.c1.title	Motores de CC
+el-motors.c1.text	Los motores de CC pequeños usan un conmutador, un anillo partido que invierte la corriente cada media vuelta para que la bobina siga girando en el mismo sentido. Las escobillas rozan sobre él, lo que provoca desgaste.
+el-motors.c1.viz.l.t	CC con escobillas
+el-motors.c1.viz.l.items.0	simple y barato
+el-motors.c1.viz.l.items.1	escobillas se gastan
+el-motors.c1.viz.l.items.2	juguetes, limpiaparabrisas
+el-motors.c1.viz.r.t	CC sin escobillas
+el-motors.c1.viz.r.items.0	conmutación electrónica
+el-motors.c1.viz.r.items.1	larga vida
+el-motors.c1.viz.r.items.2	drones, ventiladores
+el-motors.c2.title	Generadores
+el-motors.c2.text	Un generador es un motor al revés: haz girar una bobina en un campo magnético (o un imán dentro de bobinas) y se induce una tensión. Las turbinas movidas por vapor, agua o viento hacen girar generadores que producen casi toda nuestra electricidad.
+el-motors.c2.viz.steps.0	Vapor, agua o viento
+el-motors.c2.viz.steps.1	Mueve una turbina
+el-motors.c2.viz.steps.2	Gira el generador
+el-motors.c2.viz.steps.3	Electricidad
+el-motors.c3.title	Motores de inducción
+el-motors.c3.text	La mayoría de los motores industriales, bombas y ventiladores son motores de inducción de CA. El estátor crea un campo magnético giratorio que induce corrientes en el rotor, y este persigue al campo. Simples, robustos y sin escobillas.
+el-motors.c3.viz.steps.0	CA en bobinas del estátor
+el-motors.c3.viz.steps.1	Campo magnético giratorio
+el-motors.c3.viz.steps.2	Corrientes en el rotor
+el-motors.c3.viz.steps.3	El rotor sigue al campo
+el-motors.c4.title	Los motores consumen mucha electricidad
+el-motors.c4.text	Los motores eléctricos suponen aproximadamente el 40–45 % del consumo eléctrico mundial, según la AIE, sobre todo en la industria: bombas, compresores y ventiladores. Motores más eficientes y el control de velocidad ahorran enormes cantidades de energía.
+el-motors.c4.viz.items.0.l	de la electricidad mundial va a motores (estimación AIE)
+el-motors.c5.title	Variadores de velocidad
+el-motors.c5.text	Un variador de frecuencia (VFD) cambia la frecuencia que recibe un motor de CA para controlar su velocidad. Como la potencia de ventiladores y bombas cae mucho con la velocidad, funcionar al 80 % de velocidad puede consumir solo cerca de la mitad de potencia.
+el-motors.c5.viz.f	P ∝ velocidad³
+el-motors.c5.viz.items.0.s	velocidad 80 %
+el-motors.c5.viz.items.1.s	0,8³
+el-motors.c5.viz.items.2.s	potencia
+el-motors.c5.viz.items.2.m	cerca de la mitad
+el-motors.c6.title	Motores de VE
+el-motors.c6.text	Los coches eléctricos usan motores de imanes permanentes o de inducción, a menudo con más del 90 % de eficiencia, frente a aproximadamente el 20–35 % de los motores de gasolina. Dan el par máximo desde parado.
+el-motors.c6.viz.unit	% de eficiencia (típica)
+el-motors.c6.viz.items.0.l	Motor de gasolina
+el-motors.c6.viz.items.1.l	Motor diésel
+el-motors.c6.viz.items.2.l	Motor de VE
+el-motors.c7.title	Frenado regenerativo
+el-motors.c7.text	Cuando un VE frena, su motor funciona como generador y convierte el movimiento de nuevo en electricidad para recargar la batería. Por eso la conducción con un solo pedal aumenta la autonomía en ciudad.
+el-motors.c7.viz.steps.0	Acelerar: la batería mueve el motor
+el-motors.c7.viz.steps.1	Frenar: el motor es generador
+el-motors.c7.viz.steps.2	Energía de vuelta a la batería
+el-motors.c7.viz.steps.3	Acelerar de nuevo
+el-motors.c8.title	Motores paso a paso y servos
+el-motors.c8.text	Los motores paso a paso se mueven en pasos exactos (impresoras 3D, CNC). Los servos usan realimentación para mantener un ángulo preciso (brazos robóticos, aviones RC). Ambos dan un movimiento que puedes controlar con precisión.
+el-motors.c8.viz.l.t	Paso a paso
+el-motors.c8.viz.l.items.0	pasos fijos
+el-motors.c8.viz.l.items.1	sin realimentación
+el-motors.c8.viz.l.items.2	impresoras 3D
+el-motors.c8.viz.r.t	Servo
+el-motors.c8.viz.r.items.0	lazo de control
+el-motors.c8.viz.r.items.1	ángulo preciso
+el-motors.c8.viz.r.items.2	articulaciones robot
+el-motors.c9.title	Placas de características
+el-motors.c9.text	Todo motor tiene una placa de características: potencia nominal (kW), tensión, corriente, velocidad (rpm) y clase de eficiencia (IE1 a IE5). Te dice qué alimentación y qué protección necesita.
+el-motors.c9.viz.items.0.a	kW
+el-motors.c9.viz.items.0.b	potencia mecánica
+el-motors.c9.viz.items.1.a	rpm
+el-motors.c9.viz.items.1.b	velocidad nominal
+el-motors.c9.viz.items.2.a	IE3
+el-motors.c9.viz.items.2.b	clase de eficiencia
+el-motors.c9.viz.items.3.a	cos φ
+el-motors.c9.viz.items.3.b	factor de potencia
+el-grid.title	La red eléctrica
+el-grid.summary	De la central a tu enchufe.
+el-grid.q0.q	¿Por qué se transporta la electricidad a muy alta tensión?
+el-grid.q0.o0	Es más rápido
+el-grid.q0.o1	Hace falta menos corriente, así que las pérdidas en los cables son mucho menores
+el-grid.q0.o2	Las casas necesitan 400 kV
+el-grid.q0.x	Las pérdidas crecen con el cuadrado de la corriente.
+el-grid.q1.q	Un transformador funciona porque…
+el-grid.q1.o0	El cobre es magnético
+el-grid.q1.o1	Un campo magnético variable induce una tensión en la segunda bobina
+el-grid.q1.o2	Almacena carga
+el-grid.q1.x	Se basa en la inducción con CA.
+el-grid.q2.q	El almacenamiento por bombeo…
+el-grid.q2.o0	Quema agua
+el-grid.q2.o1	Bombea agua cuesta arriba cuando la electricidad es barata y genera después
+el-grid.q2.o2	Solo funciona de noche
+el-grid.q2.x	Almacena energía en forma de altura.
+el-grid.c0.title	Generación, transporte, distribución
+el-grid.c0.text	La electricidad se genera en centrales y en parques eólicos o solares, se lleva a grandes distancias por líneas de transporte de alta tensión y luego se distribuye a tensiones más bajas a pueblos, ciudades y hogares.
+el-grid.c0.viz.steps.0	Generación
+el-grid.c0.viz.steps.1	Transformador elevador
+el-grid.c0.viz.steps.2	Transporte 400 kV
+el-grid.c0.viz.steps.3	Distribución 15 kV
+el-grid.c0.viz.steps.4	Tu casa 230 V
+el-grid.c1.title	Transformadores
+el-grid.c1.text	Un transformador tiene dos bobinas alrededor de un núcleo de hierro. La CA en la primera bobina crea un campo variable que induce tensión en la segunda. La relación de espiras fija la relación de tensiones.
+el-grid.c1.example.0	De 15 000 V a 400 V
+el-grid.c1.example.1	relación de espiras 15 000 ÷ 400
+el-grid.c1.example.2	= 37,5 : 1
+el-grid.c1.viz.f	V₂ ÷ V₁ = N₂ ÷ N₁
+el-grid.c1.viz.items.0.s	V
+el-grid.c1.viz.items.0.m	tensión
+el-grid.c1.viz.items.1.s	N
+el-grid.c1.viz.items.1.m	número de espiras
+el-grid.c2.title	¿Por qué alta tensión?
+el-grid.c2.text	Las pérdidas en el cable son I² × R. Duplicar la tensión reduce a la mitad la corriente para la misma potencia y deja las pérdidas en una cuarta parte.
+el-grid.c2.example.0	10 MW a 10 kV frente a 400 kV
+el-grid.c2.example.1	corriente 1000 A frente a 25 A
+el-grid.c2.example.2	pérdidas 1600 veces menores
+el-grid.c2.viz.f	pérdidas = I² × R
+el-grid.c2.viz.items.0.s	I
+el-grid.c2.viz.items.0.m	corriente en la línea
+el-grid.c2.viz.items.1.s	R
+el-grid.c2.viz.items.1.m	resistencia de la línea
+el-grid.c3.title	Equilibrar oferta y demanda
+el-grid.c3.text	La electricidad es difícil de almacenar a gran escala, así que la oferta debe igualar a la demanda en cada segundo. Los operadores de la red prevén la demanda y despachan centrales, importaciones, almacenamiento y respuesta de la demanda para mantener el equilibrio.
+el-grid.c3.viz.steps.0	Prever la demanda
+el-grid.c3.viz.steps.1	Programar generación
+el-grid.c3.viz.steps.2	Vigilar la frecuencia
+el-grid.c3.viz.steps.3	Ajustar en segundos
+el-grid.c4.title	La curva de demanda diaria
+el-grid.c4.text	La demanda es baja de noche, sube por la mañana y alcanza el máximo por la tarde-noche, cuando la gente cocina y calienta su casa. La producción solar llega a su pico a mediodía, lo que está cambiando las horas en que la electricidad es más barata.
+el-grid.c4.viz.events.0.l	valle nocturno
+el-grid.c4.viz.events.1.l	subida matinal
+el-grid.c4.viz.events.2.l	pico solar
+el-grid.c4.viz.events.3.l	pico de la tarde
+el-grid.c4.viz.events.4.l	bajada
+el-grid.c5.title	El mix renovable de Portugal
+el-grid.c5.text	Las renovables (hidráulica, eólica, solar y biomasa) aportan la mayor parte de la electricidad de Portugal en un año típico, aproximadamente un 60–70 % en los últimos años según la lluvia y el viento. En 2016, el país funcionó cuatro días seguidos solo con renovables.
+el-grid.c5.viz.unit	% de la electricidad portuguesa (aprox., año reciente)
+el-grid.c5.viz.items.0.l	Eólica
+el-grid.c5.viz.items.1.l	Hidráulica
+el-grid.c5.viz.items.2.l	Solar
+el-grid.c5.viz.items.3.l	Gas
+el-grid.c5.viz.items.4.l	Importación y otros
+el-grid.c6.title	Interconexiones
+el-grid.c6.text	La red de Portugal está conectada con la de España, y la de España con la de Francia. Las interconexiones permiten a los países compartir excedentes eólicos o solares, pero los enlaces de la península ibérica con el resto de Europa son relativamente limitados.
+el-grid.c6.viz.steps.0	Portugal
+el-grid.c6.viz.steps.1	España
+el-grid.c6.viz.steps.2	Francia
+el-grid.c6.viz.steps.3	Resto de Europa
+el-grid.c7.title	El apagón de abril de 2025
+el-grid.c7.text	El 28 de abril de 2025, una pérdida repentina de generación desencadenó una cascada que dejó sin luz casi toda la España peninsular y Portugal continental durante muchas horas. Reponer una red desde cero («arranque autónomo») es lento y delicado.
+el-grid.c7.viz.events.0.l	problemas repentinos de tensión y frecuencia
+el-grid.c7.viz.events.1.y	minutos
+el-grid.c7.viz.events.1.l	la cascada desconecta centrales
+el-grid.c7.viz.events.2.y	tarde
+el-grid.c7.viz.events.2.l	el suministro vuelve poco a poco
+el-grid.c7.viz.events.3.y	día sig.
+el-grid.c7.viz.events.3.l	casi todo restablecido
+el-grid.c8.title	Almacenamiento en la red
+el-grid.c8.text	El bombeo hidráulico almacena energía subiendo agua cuando la electricidad es barata y soltándola por turbinas cuando se necesita. Las grandes baterías responden ahora en milisegundos para estabilizar la frecuencia.
+el-grid.c8.viz.l.t	Bombeo
+el-grid.c8.viz.l.items.0	enorme capacidad
+el-grid.c8.viz.l.items.1	de horas a días
+el-grid.c8.viz.l.items.2	requiere montañas
+el-grid.c8.viz.r.t	Baterías
+el-grid.c8.viz.r.items.0	respuesta rápida
+el-grid.c8.viz.r.items.1	de minutos a horas
+el-grid.c8.viz.r.items.2	en cualquier sitio
+el-grid.c9.title	Redes inteligentes
+el-grid.c9.text	Los contadores inteligentes, los sensores y la automatización permiten a la red ver en tiempo real por dónde fluye la energía, integrar la solar en tejados y los VE, y desviar el flujo automáticamente alrededor de las averías.
+el-grid.c9.viz.items.0	Contadores inteligentes
+el-grid.c9.viz.items.1	Aislamiento auto. de averías
+el-grid.c9.viz.items.2	Integración solar en tejados
+el-grid.c9.viz.items.3	Carga inteligente de VE
+el-grid.c9.viz.items.4	Respuesta de la demanda
+el-batteries.title	Baterías
+el-batteries.summary	Química, capacidad y cómo hacer que duren.
+el-batteries.q0.q	Una batería de 12 V y 50 Ah almacena unos…
+el-batteries.q0.o0	50 Wh
+el-batteries.q0.o1	600 Wh
+el-batteries.q0.o2	4 Wh
+el-batteries.q0.x	12 × 50 = 600 Wh.
+el-batteries.q1.q	Cargar a 0,5C tarda aproximadamente…
+el-batteries.q1.o0	30 minutos
+el-batteries.q1.o1	2 horas
+el-batteries.q1.o2	5 horas
+el-batteries.q1.x	1 ÷ 0,5 = 2 horas.
+el-batteries.q2.q	¿Qué acelera más el envejecimiento de una batería?
+el-batteries.q2.o0	Guardarla en frío al 50 %
+el-batteries.q2.o1	El calor y pasar mucho tiempo al 100 %
+el-batteries.q2.o2	Usarla con suavidad
+el-batteries.q2.x	El calor y los estados de carga altos añaden estrés.
+el-batteries.c0.title	Cómo funciona una batería
+el-batteries.c0.text	Una batería tiene dos electrodos separados por un electrolito. Una reacción química expulsa electrones de un electrodo, los hace pasar por tu circuito y los devuelve al otro. Al recargar, la reacción se invierte.
+el-batteries.c0.viz.steps.0	Reacción química en el ánodo
+el-batteries.c0.viz.steps.1	Los electrones pasan por tu aparato
+el-batteries.c0.viz.steps.2	Los iones cruzan el electrolito
+el-batteries.c0.viz.steps.3	De vuelta al cátodo
+el-batteries.c1.title	Capacidad: Ah y Wh
+el-batteries.c1.text	Los amperios hora (Ah) indican cuánta carga guarda una batería. Multiplica por la tensión para obtener la energía en vatios hora (Wh), que es lo que de verdad importa para comparar baterías.
+el-batteries.c1.example.0	Batería de 100 Ah a 12 V

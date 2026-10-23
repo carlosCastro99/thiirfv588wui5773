@@ -1,0 +1,420 @@
+P.title	Mundo
+P.blurb	El planeta y su gente: estaciones, husos horarios, idiomas y ciudades.
+wo-planet.title	Cómo funciona el planeta
+wo-planet.summary	Estaciones, husos horarios, coordenadas y la calefacción central del océano.
+wo-planet.q0.q	¿Qué causa las estaciones?
+wo-planet.q0.o0	La distancia de la Tierra al Sol
+wo-planet.q0.o1	La inclinación del eje de la Tierra
+wo-planet.q0.o2	Cambios en el brillo del Sol
+wo-planet.q0.x	La inclinación de 23,4° cambia lo directa que llega la luz solar a cada hemisferio a lo largo del año.
+wo-planet.q1.q	Dos lugares están separados por 45° de longitud. ¿Cuántas horas de diferencia hay más o menos entre sus relojes?
+wo-planet.q1.o0	3 horas
+wo-planet.q1.o1	4,5 horas
+wo-planet.q1.o2	45 horas
+wo-planet.q1.x	15° por hora, así que 45 ÷ 15 = 3 horas.
+wo-planet.q2.q	La latitud mide…
+wo-planet.q2.o0	La posición este–oeste
+wo-planet.q2.o1	La posición norte–sur
+wo-planet.q2.o2	La altura sobre el nivel del mar
+wo-planet.q2.x	La latitud va de 0° en el ecuador a 90° en los polos.
+wo-planet.q3.q	¿Por qué sale el Sol por el este?
+wo-planet.q3.o0	El Sol se mueve hacia el este
+wo-planet.q3.o1	La Tierra gira de oeste a este
+wo-planet.q3.o2	El magnetismo
+wo-planet.q3.x	La rotación hace que el Sol parezca moverse.
+wo-planet.q4.q	¿A qué velocidad se mueven, más o menos, las placas tectónicas?
+wo-planet.q4.o0	Metros al día
+wo-planet.q4.o1	Unos pocos centímetros al año
+wo-planet.q4.o2	No se mueven
+wo-planet.q4.x	Más o menos a la velocidad a la que crecen las uñas.
+wo-planet.c0.title	Por qué hay estaciones
+wo-planet.c0.text	No es cuestión de distancia: la Tierra está más cerca del Sol a principios de enero, en pleno invierno para nosotros.\n\nLas estaciones se deben a la inclinación de la Tierra, de unos 23,4°. En junio, el hemisferio norte se inclina hacia el Sol, así que la luz solar le llega de forma más directa y los días son más largos. En diciembre se inclina en sentido contrario.
+wo-planet.c0.sketch.0	Junio
+wo-planet.c0.sketch.1	norte: verano
+wo-planet.c0.sketch.2	Diciembre
+wo-planet.c0.sketch.3	norte: invierno
+wo-planet.c0.sketch.4	la inclinación de 23,4° crea las estaciones
+wo-planet.c1.title	Pruébalo: husos horarios
+wo-planet.c1.text	La Tierra gira 360° al día, así que cada hora de diferencia equivale a unos 15° de longitud. Los países redondean para ajustarse a sus fronteras, y unos pocos, como la India, usan medias horas. Mueve el reloj de Lisboa (hora de invierno) y mira cómo te sigue el mundo.
+wo-planet.c1.formula	360° ÷ 24 h = 15° por hora
+wo-planet.c2.title	Latitud y longitud
+wo-planet.c2.text	Cada lugar de la Tierra tiene dos coordenadas. La latitud indica a qué distancia estás al norte o al sur del ecuador, de 0° a 90°. La longitud indica a qué distancia estás al este o al oeste del meridiano de Greenwich, en Londres, de 0° a 180°.\n\nViana do Castelo está a unos 41,7° N, 8,8° O.
+wo-planet.c2.sketch.0	Viana do Castelo
+wo-planet.c2.sketch.1	41,7° N, 8,8° O
+wo-planet.c2.sketch.2	ecuador 0°
+wo-planet.c2.sketch.3	latitud: N–S · longitud: E–O
+wo-planet.c3.title	La calefacción central del océano
+wo-planet.c3.text	Oporto y Nueva York están casi a la misma latitud, pero los inviernos de Oporto son mucho más suaves. Parte de la razón es la corriente del Golfo y su prolongación, que llevan agua tropical cálida hacia el noreste a través del Atlántico.\n\nLos vientos del oeste que soplan sobre ese océano cálido traen el calor a tierra. El agua fría vuelve hacia el sur y cierra un enorme circuito.
+wo-planet.c3.sketch.0	Nueva York
+wo-planet.c3.sketch.1	Oporto
+wo-planet.c3.sketch.2	corriente cálida
+wo-planet.c3.sketch.3	retorno frío
+wo-planet.c3.sketch.4	Atlántico Norte (esquema)
+wo-planet.c4.title	El día y la noche
+wo-planet.c4.text	La Tierra gira sobre su eje una vez cada 24 horas, más o menos, de oeste a este. Por eso el Sol sale por el este y se pone por el oeste, y por eso en Japón amanece horas antes que en Portugal.
+wo-planet.c4.viz.steps.0	La Tierra gira de O a E
+wo-planet.c4.viz.steps.1	El Sol parece salir por el este
+wo-planet.c4.viz.steps.2	Cruza el cielo
+wo-planet.c4.viz.steps.3	Se pone por el oeste
+wo-planet.c5.title	La línea internacional de cambio de fecha
+wo-planet.c5.text	En algún sitio el calendario tiene que cambiar de día. La línea de cambio de fecha sigue más o menos el meridiano de 180° a través del Pacífico; si la cruzas hacia el oeste, saltas un día hacia delante.
+wo-planet.c5.viz.l.t	Al este de la línea
+wo-planet.c5.viz.l.items.0	aún es lunes
+wo-planet.c5.viz.l.items.1	Samoa Americana
+wo-planet.c5.viz.r.t	Al oeste de la línea
+wo-planet.c5.viz.r.items.0	ya es martes
+wo-planet.c5.viz.r.items.1	Fiyi, Nueva Zelanda
+wo-planet.c6.title	Equinoccios y solsticios
+wo-planet.c6.text	Hacia el 21 de junio, el hemisferio norte tiene su día más largo (solsticio de verano); hacia el 21 de diciembre, el más corto. En los equinoccios de marzo y septiembre, el día y la noche duran casi lo mismo en todas partes.
+wo-planet.c6.viz.events.0.y	20 mar
+wo-planet.c6.viz.events.0.l	equinoccio de primavera
+wo-planet.c6.viz.events.1.y	21 jun
+wo-planet.c6.viz.events.1.l	solsticio de verano
+wo-planet.c6.viz.events.2.y	22 sep
+wo-planet.c6.viz.events.2.l	equinoccio de otoño
+wo-planet.c6.viz.events.3.y	21 dic
+wo-planet.c6.viz.events.3.l	solsticio de invierno
+wo-planet.c7.title	Horas de luz en Portugal
+wo-planet.c7.text	En Lisboa, el día más largo tiene unas 14 h 50 min de luz y el más corto unas 9 h 30 min. Cerca de los polos, el verano trae el sol de medianoche.
+wo-planet.c7.viz.unit	horas de luz, 21 de junio (aprox.)
+wo-planet.c7.viz.items.0.l	Ecuador
+wo-planet.c7.viz.items.1.l	Lisboa
+wo-planet.c7.viz.items.2.l	Londres
+wo-planet.c7.viz.items.3.l	Oslo
+wo-planet.c7.viz.items.4.l	Polo Norte
+wo-planet.c8.title	Las capas de la Tierra
+wo-planet.c8.text	Bajo la fina corteza está el manto caliente, luego un núcleo externo líquido y un núcleo interno sólido casi tan caliente como la superficie del Sol.
+wo-planet.c8.viz.items.0	Corteza: 5–70 km
+wo-planet.c8.viz.items.1	Manto: hasta 2.900 km
+wo-planet.c8.viz.items.2	Núcleo externo: hierro líquido
+wo-planet.c8.viz.items.3	Núcleo interno: hierro sólido, ~5.400 °C
+wo-planet.c9.title	Tectónica de placas
+wo-planet.c9.text	La corteza terrestre está rota en placas que se mueven unos pocos centímetros al año, más o menos lo que crecen las uñas. Donde se encuentran, hay terremotos, volcanes y montañas.
+wo-planet.c9.viz.l.t	Placas que chocan
+wo-planet.c9.viz.l.items.0	montañas, terremotos
+wo-planet.c9.viz.l.items.1	Himalaya
+wo-planet.c9.viz.r.t	Placas que se separan
+wo-planet.c9.viz.r.items.0	nuevo fondo oceánico
+wo-planet.c9.viz.r.items.1	Dorsal Mesoatlántica, Azores
+wo-people.title	Gente y lugares
+wo-people.summary	Quién vive dónde, qué idiomas habla y por qué las ciudades están donde están.
+wo-people.q0.q	¿En qué región vive la mayor parte de la población mundial?
+wo-people.q0.o0	África
+wo-people.q0.o1	Europa
+wo-people.q0.o2	Asia
+wo-people.q0.x	Unas 59 de cada 100 personas viven en Asia.
+wo-people.q1.q	¿Qué idioma tiene más hablantes nativos?
+wo-people.q1.o0	Inglés
+wo-people.q1.o1	Chino mandarín
+wo-people.q1.o2	Español
+wo-people.q1.x	El mandarín gana en hablantes nativos; el inglés gana si se cuenta a quienes lo aprenden.
+wo-people.q2.q	¿Por qué crecieron tantas grandes ciudades junto a ríos y costas?
+wo-people.q2.o0	Clima más fresco
+wo-people.q2.o1	Agua, alimentos y transporte barato para el comercio
+wo-people.q2.o2	Más fáciles de defender desde el aire
+wo-people.q2.x	Durante la mayor parte de la historia, las vías de agua fueron la forma más barata de mover mercancías y personas.
+wo-people.q3.q	¿Qué país pasó a ser el más poblado en 2023?
+wo-people.q3.o0	China
+wo-people.q3.o1	India
+wo-people.q3.o2	EE. UU.
+wo-people.q3.x	La India superó a China.
+wo-people.q4.q	La población mundial llegó a 8.000 millones en…
+wo-people.q4.o0	2000
+wo-people.q4.o1	2011
+wo-people.q4.o2	2022
+wo-people.q4.x	La ONU lo señaló en noviembre de 2022.
+wo-people.c0.title	Si el mundo fuera 100 personas
+wo-people.c0.text	En la Tierra viven unos 8.000 millones de personas; la ONU marcó el hito en noviembre de 2022. Redúcelo a 100 personas y unas 59 viven en Asia, 18 en África, 9 en Europa, 8 en América Latina, 5 en América del Norte y 1 en Oceanía.\n\nSolo la India y China reúnen más de un tercio de la humanidad. África es la región que más rápido crece.
+wo-people.c0.sketch.0	Asia 59
+wo-people.c0.sketch.1	África 18
+wo-people.c0.sketch.2	Europa 9
+wo-people.c0.sketch.3	América Latina 8
+wo-people.c0.sketch.4	América del Norte 5
+wo-people.c0.sketch.5	Oceanía 1
+wo-people.c0.sketch.6	cada punto ≈ 80 millones de personas
+wo-people.c1.title	Los idiomas más hablados
+wo-people.c1.text	Si cuentas a todos los que hablan un idioma, nativos y estudiantes juntos, el inglés va primero y el chino mandarín segundo. Si cuentas solo a los hablantes nativos, el mandarín gana de largo.\n\nEl portugués tiene unos 260 millones de hablantes en todo el mundo, la mayoría en Brasil, lo que lo convierte en el idioma más hablado del hemisferio sur.
+wo-people.c1.sketch.0	Inglés
+wo-people.c1.sketch.1	1.500 M
+wo-people.c1.sketch.2	Mandarín
+wo-people.c1.sketch.3	1.100 M
+wo-people.c1.sketch.4	Hindi
+wo-people.c1.sketch.5	600 M
+wo-people.c1.sketch.6	Español
+wo-people.c1.sketch.7	560 M
+wo-people.c1.sketch.8	Portugués
+wo-people.c1.sketch.9	260 M
+wo-people.c1.sketch.10	hablantes totales, incl. segunda lengua (aprox.)
+wo-people.c2.title	Por qué las ciudades están junto a ríos y costas
+wo-people.c2.text	Antes del ferrocarril y las carreteras, el agua era la autopista. Los ríos y los puertos resguardados ofrecían agua potable, suelo fértil, pescado y, sobre todo, transporte barato para el comercio.\n\nPor eso tantas grandes ciudades están en la desembocadura de un río o en un puerto natural: Lisboa junto al Tajo, Oporto junto al Duero, Londres junto al Támesis, Shanghái en la desembocadura del Yangtsé.
+wo-people.c2.sketch.0	pueblo ribereño
+wo-people.c2.sketch.1	ciudad portuaria
+wo-people.c2.sketch.2	agua · comida · comercio · transporte
+wo-people.c3.title	¿Cuántos países hay?
+wo-people.c3.text	La respuesta habitual es 195: los 193 miembros de las Naciones Unidas más dos Estados observadores, la Ciudad del Vaticano y Palestina. Algunos lugares, como Taiwán y Kosovo, se gobiernan a sí mismos pero no son miembros de la ONU, así que los recuentos varían.\n\nEl más grande es Rusia, con unos 17 millones de km². El más pequeño, la Ciudad del Vaticano, tiene menos de medio kilómetro cuadrado.
+wo-people.c3.sketch.3	miembros ONU
+wo-people.c3.sketch.4	observadores
+wo-people.c3.sketch.5	países
+wo-people.c3.sketch.6	observadores: Vaticano y Palestina
+wo-people.c4.title	El crecimiento de la población
+wo-people.c4.text	La población mundial tardó hasta cerca de 1800 en llegar a 1.000 millones, y luego creció deprisa gracias a una mejor medicina y alimentación: 2.000 millones en 1927, 4.000 millones en 1974 y 8.000 millones en 2022.
+wo-people.c4.viz.events.0.l	1.000 millones
+wo-people.c4.viz.events.1.l	2.000 millones
+wo-people.c4.viz.events.2.l	4.000 millones
+wo-people.c4.viz.events.3.l	8.000 millones
+wo-people.c5.title	Los países más poblados
+wo-people.c5.text	La India superó a China como país más poblado en 2023; cada uno tiene unos 1.400 millones de habitantes. Después vienen EE. UU., Indonesia y Pakistán.
+wo-people.c5.viz.unit	habitantes (millones, aprox.)
+wo-people.c5.viz.items.0.l	India
+wo-people.c5.viz.items.1.l	China
+wo-people.c5.viz.items.2.l	EE. UU.
+wo-people.c5.viz.items.3.l	Indonesia
+wo-people.c5.viz.items.4.l	Pakistán
+wo-people.c6.title	Poblaciones que envejecen
+wo-people.c6.text	Muchos países ricos, como Portugal, Italia y Japón, tienen pocos nacimientos y vidas largas, así que su población envejece. Portugal tiene una de las poblaciones más envejecidas de Europa.
+wo-people.c6.viz.l.t	Países envejecidos
+wo-people.c6.viz.l.items.0	Japón
+wo-people.c6.viz.l.items.1	Italia
+wo-people.c6.viz.l.items.2	Portugal
+wo-people.c6.viz.l.items.3	pocos nacimientos
+wo-people.c6.viz.r.t	Países jóvenes
+wo-people.c6.viz.r.items.0	Níger
+wo-people.c6.viz.r.items.1	Nigeria
+wo-people.c6.viz.r.items.2	muchos nacimientos
+wo-people.c7.title	Esperanza de vida
+wo-people.c7.text	La esperanza de vida mundial se ha más que duplicado desde 1900, de unos 32 años a más de 70. La de Portugal ronda los 81 años.
+wo-people.c7.viz.unit	años (aprox.)
+wo-people.c7.viz.items.0.l	Mundo 1900
+wo-people.c7.viz.items.1.l	Mundo 1950
+wo-people.c7.viz.items.2.l	Mundo hoy
+wo-people.c7.viz.items.3.l	Portugal
+wo-people.c7.viz.items.4.l	Japón
+wo-people.c8.title	Migración
+wo-people.c8.text	Unos 280 millones de personas viven fuera del país en el que nacieron, alrededor del 3,5 % de la humanidad. Portugal ha sido un país de emigración y, más recientemente, también de inmigración.
+wo-people.c8.viz.items.0.v	~280 M
+wo-people.c8.viz.items.0.l	migrantes internacionales
+wo-people.c8.viz.items.1.l	de la población mundial
+wo-people.c9.title	El portugués por el mundo
+wo-people.c9.text	El portugués es lengua oficial en nueve países de cuatro continentes, desde Brasil hasta Angola, Mozambique, Cabo Verde y Timor Oriental. Millones de descendientes de portugueses viven además en Francia, EE. UU., Canadá, Brasil y Suiza.
+wo-people.c9.viz.items.0	Portugal
+wo-people.c9.viz.items.1	Brasil
+wo-people.c9.viz.items.2	Angola y Mozambique
+wo-people.c9.viz.items.3	Cabo Verde, Guinea-Bisáu, Santo Tomé y Príncipe
+wo-people.c9.viz.items.4	Timor Oriental y Guinea Ecuatorial
+wo-continents.title	Continentes y océanos
+wo-continents.summary	Las grandes piezas del mapamundi.
+wo-continents.q0.q	¿Cuál es el océano más grande?
+wo-continents.q0.o0	Atlántico
+wo-continents.q0.o1	Pacífico
+wo-continents.q0.o2	Índico
+wo-continents.q0.x	Es más grande que todas las tierras emergidas juntas.
+wo-continents.q1.q	¿Qué era Pangea?
+wo-continents.q1.o0	Una ciudad antigua
+wo-continents.q1.o1	Un supercontinente que unía todas las tierras
+wo-continents.q1.o2	Un océano
+wo-continents.q1.x	Se fue partiendo a lo largo de millones de años.
+wo-continents.q2.q	¿Qué parte de la superficie de la Tierra es océano?
+wo-continents.q2.o0	50 %
+wo-continents.q2.o1	Alrededor del 71 %
+wo-continents.q2.o2	90 %
+wo-continents.q2.x	La mayor parte del planeta es agua.
+wo-continents.c0.title	Siete continentes
+wo-continents.c0.text	La lista habitual es Asia, África, América del Norte, América del Sur, la Antártida, Europa y Australia/Oceanía. Algunos países cuentan América como un solo continente, o Europa y Asia como Eurasia.
+wo-continents.c0.viz.unit	superficie (millones de km², aprox.)
+wo-continents.c0.viz.items.0.l	Asia
+wo-continents.c0.viz.items.1.l	África
+wo-continents.c0.viz.items.2.l	América del Norte
+wo-continents.c0.viz.items.3.l	América del Sur
+wo-continents.c0.viz.items.4.l	Antártida
+wo-continents.c0.viz.items.5.l	Europa
+wo-continents.c0.viz.items.6.l	Oceanía
+wo-continents.c1.title	Cinco océanos
+wo-continents.c1.text	El Pacífico es el más grande, mayor que todas las tierras emergidas juntas. Le siguen el Atlántico, el Índico, el Austral y el Ártico.
+wo-continents.c1.viz.unit	superficie (millones de km², aprox.)
+wo-continents.c1.viz.items.0.l	Pacífico
+wo-continents.c1.viz.items.1.l	Atlántico
+wo-continents.c1.viz.items.2.l	Índico
+wo-continents.c1.viz.items.3.l	Austral
+wo-continents.c1.viz.items.4.l	Ártico
+wo-continents.c2.title	Casi todo agua
+wo-continents.c2.text	Alrededor del 71 % de la superficie de la Tierra es océano. La mayor parte del agua dulce está atrapada en el hielo; menos del 1 % de toda el agua es dulce y fácil de alcanzar.
+wo-continents.c2.viz.items.0.l	de la superficie es océano
+wo-continents.c2.viz.items.1.l	del agua es salada
+wo-continents.c2.viz.items.2.l	agua dulce accesible
+wo-continents.c3.title	El punto más profundo
+wo-continents.c3.text	El abismo Challenger, en la fosa de las Marianas (Pacífico), tiene unos 11 km de profundidad: es más hondo de lo que el Everest es alto.
+wo-continents.c3.viz.l.t	Everest
+wo-continents.c3.viz.l.items.0	8.849 m sobre el nivel del mar
+wo-continents.c3.viz.r.t	Abismo Challenger
+wo-continents.c3.viz.r.items.0	~10.935 m bajo el nivel del mar
+wo-continents.c4.title	Pangea
+wo-continents.c4.text	Hace unos 300 millones de años, los continentes estaban unidos en un supercontinente llamado Pangea. Se fue partiendo poco a poco; América del Sur y África todavía encajan como piezas de un puzle.
+wo-continents.c4.viz.events.0.y	hace 300 M años
+wo-continents.c4.viz.events.0.l	Pangea
+wo-continents.c4.viz.events.1.y	200 M
+wo-continents.c4.viz.events.1.l	empieza a partirse
+wo-continents.c4.viz.events.2.y	65 M
+wo-continents.c4.viz.events.2.l	continentes casi como hoy
+wo-continents.c4.viz.events.3.y	hoy
+wo-continents.c4.viz.events.3.l	aún en movimiento
+wo-continents.c5.title	¿Dónde termina Europa?
+wo-continents.c5.text	Europa y Asia comparten una misma masa de tierra. Por convención, la frontera sigue los montes Urales, el río Ural, el mar Caspio y el Cáucaso, lo que significa que Rusia y Turquía se extienden por ambos continentes.
+wo-continents.c5.viz.items.0	Montes Urales
+wo-continents.c5.viz.items.1	Río Ural
+wo-continents.c5.viz.items.2	Mar Caspio
+wo-continents.c5.viz.items.3	Montañas del Cáucaso
+wo-continents.c5.viz.items.4	Estrecho del Bósforo en Estambul
+wo-continents.c6.title	Islas
+wo-continents.c6.text	Groenlandia es la isla más grande del mundo. Las islas atlánticas de Portugal, Madeira y las Azores, son volcánicas; las Azores están donde se encuentran tres placas tectónicas.
+wo-continents.c6.viz.unit	superficie (miles de km², aprox.)
+wo-continents.c6.viz.items.0.l	Groenlandia
+wo-continents.c6.viz.items.1.l	Nueva Guinea
+wo-continents.c6.viz.items.2.l	Borneo
+wo-continents.c6.viz.items.3.l	Madagascar
+wo-continents.c6.viz.items.4.l	Gran Bretaña
+wo-continents.c7.title	Corrientes oceánicas
+wo-continents.c7.text	Las corrientes oceánicas funcionan como cintas transportadoras que llevan calor por todo el planeta. La corriente del Golfo calienta Europa occidental; la fría corriente de Canarias baja por la costa portuguesa y mantiene el mar fresco en verano.
+wo-continents.c7.viz.items.0.a	C. del Golfo
+wo-continents.c7.viz.items.0.b	cálida, hacia Europa
+wo-continents.c7.viz.items.1.a	C. de Canarias
+wo-continents.c7.viz.items.1.b	fresca, junto a Portugal
+wo-continents.c7.viz.items.2.a	C. de Humboldt
+wo-continents.c7.viz.items.2.b	fría, frente a Perú
+wo-continents.c7.viz.items.3.a	Kuroshio
+wo-continents.c7.viz.items.3.b	cálida, frente a Japón
+wo-continents.c8.title	Mares y estrechos
+wo-continents.c8.text	Los estrechos son rutas marítimas vitales: Gibraltar (Atlántico–Mediterráneo), el canal de Suez (Mediterráneo–mar Rojo), Ormuz (golfo Pérsico), Malaca (océano Índico–Pacífico) y el canal de Panamá.
+wo-continents.c8.viz.items.0	Estrecho de Gibraltar
+wo-continents.c8.viz.items.1	Canal de Suez
+wo-continents.c8.viz.items.2	Estrecho de Ormuz
+wo-continents.c8.viz.items.3	Estrecho de Malaca
+wo-continents.c8.viz.items.4	Canal de Panamá
+wo-continents.c9.title	La Antártida
+wo-continents.c9.text	La Antártida es el continente más frío, seco y ventoso, cubierto por hielo de hasta 4,8 km de espesor. Contiene alrededor del 70 % del agua dulce del mundo. No pertenece a ningún país: el Tratado Antártico de 1959 la reserva para la ciencia.
+wo-continents.c9.viz.items.0.v	−89,2 °C
+wo-continents.c9.viz.items.0.l	temperatura más baja registrada
+wo-continents.c9.viz.items.1.l	del agua dulce mundial
+wo-continents.c9.viz.items.2.l	Tratado Antártico
+wo-climate.title	Climas y biomas
+wo-climate.summary	Por qué los desiertos, las selvas y la tundra están donde están.
+wo-climate.q0.q	¿Qué clima tiene la mayor parte de Portugal?
+wo-climate.q0.o0	Tropical
+wo-climate.q0.o1	Desértico
+wo-climate.q0.o2	Mediterráneo
+wo-climate.q0.x	Veranos calurosos y secos, inviernos suaves y lluviosos.
+wo-climate.q1.q	¿Cuánto baja más o menos la temperatura por cada 1.000 m de altitud?
+wo-climate.q1.o0	1 °C
+wo-climate.q1.o1	6,5 °C
+wo-climate.q1.o2	20 °C
+wo-climate.q1.x	Es el gradiente térmico vertical medio.
+wo-climate.q2.q	¿Qué causa una sombra pluviométrica?
+wo-climate.q2.o0	Las nubes que tapan el Sol
+wo-climate.q2.o1	Las montañas obligan al aire a subir, y la lluvia cae en un solo lado
+wo-climate.q2.o2	El océano
+wo-climate.q2.x	La ladera de sotavento se queda seca.
+wo-climate.c0.title	Clima frente a tiempo
+wo-climate.c0.text	El tiempo es lo que pasa hoy; el clima es el patrón medio a lo largo de décadas. «El clima es lo que esperas; el tiempo, lo que te toca».
+wo-climate.c0.viz.l.t	Tiempo
+wo-climate.c0.viz.l.items.0	condiciones de hoy
+wo-climate.c0.viz.l.items.1	cambia cada hora
+wo-climate.c0.viz.r.t	Clima
+wo-climate.c0.viz.r.items.0	medias de 30 años
+wo-climate.c0.viz.r.items.1	cambia despacio
+wo-climate.c1.title	Latitud y luz solar
+wo-climate.c1.text	Cerca del ecuador, el Sol está alto todo el año, así que hace calor. Hacia los polos, la luz solar llega con un ángulo bajo y se reparte más, así que hace frío.
+wo-climate.c1.viz.items.0	Polar: frío todo el año
+wo-climate.c1.viz.items.1	Templado: cuatro estaciones
+wo-climate.c1.viz.items.2	Subtropical: veranos secos y cálidos
+wo-climate.c1.viz.items.3	Tropical: calor todo el año
+wo-climate.c2.title	Zonas climáticas
+wo-climate.c2.text	El sistema de Köppen clasifica los climas según la temperatura y la lluvia. La mayor parte de Portugal tiene clima mediterráneo (Csa/Csb): veranos secos, calurosos o templados, e inviernos suaves y lluviosos.
+wo-climate.c2.viz.items.0.a	A
+wo-climate.c2.viz.items.0.b	tropical
+wo-climate.c2.viz.items.1.a	B
+wo-climate.c2.viz.items.1.b	seco (desiertos)
+wo-climate.c2.viz.items.2.a	C
+wo-climate.c2.viz.items.2.b	templado, incl. mediterráneo
+wo-climate.c2.viz.items.3.a	D
+wo-climate.c2.viz.items.3.b	continental
+wo-climate.c2.viz.items.4.a	E
+wo-climate.c2.viz.items.4.b	polar
+wo-climate.c3.title	Desiertos
+wo-climate.c3.text	Los desiertos reciben menos de unos 250 mm de lluvia al año. Muchos están en torno a los 30° de latitud, donde desciende aire seco. El Sáhara es el mayor desierto cálido; técnicamente, la Antártida es el mayor desierto de todos.
+wo-climate.c3.viz.unit	mm de lluvia al año (aprox.)
+wo-climate.c3.viz.items.0.l	Atacama
+wo-climate.c3.viz.items.1.l	Sáhara
+wo-climate.c3.viz.items.2.l	Lisboa
+wo-climate.c3.viz.items.3.l	Miño
+wo-climate.c3.viz.items.4.l	Amazonia
+wo-climate.c4.title	Selvas tropicales
+wo-climate.c4.text	Las selvas tropicales crecen cerca del ecuador, con calor y lluvia todo el año. Cubren alrededor del 6 % de la tierra firme, pero albergan más de la mitad de todas las especies. La Amazonia es la mayor.
+wo-climate.c4.viz.items.0.l	de la tierra firme
+wo-climate.c4.viz.items.1.l	de especies terrestres
+wo-climate.c4.viz.items.2.v	5,5 M km²
+wo-climate.c4.viz.items.2.l	selva amazónica (aprox.)
+wo-climate.c5.title	Biomas
+wo-climate.c5.text	Un bioma es una gran región con clima, plantas y animales parecidos: selva tropical, sabana, desierto, matorral mediterráneo, bosque templado, taiga, tundra, pradera.
+wo-climate.c5.viz.root	Biomas
+wo-climate.c5.viz.items.0	Selva tropical
+wo-climate.c5.viz.items.1	Sabana y pradera
+wo-climate.c5.viz.items.2	Desierto
+wo-climate.c5.viz.items.3	Bosque templado y boreal
+wo-climate.c5.viz.items.4	Tundra
+wo-climate.c6.title	Las montañas cambian el clima
+wo-climate.c6.text	La temperatura baja unos 6,5 °C por cada 1.000 m de altitud. La Serra da Estrela puede estar nevada mientras en Lisboa hace un tiempo suave. Las montañas también obligan al aire a subir, y así una ladera queda húmeda y la otra seca (sombra pluviométrica).
+wo-climate.c6.viz.steps.0	Aire húmedo choca con un monte
+wo-climate.c6.viz.steps.1	Sube y se enfría
+wo-climate.c6.viz.steps.2	Llueve a barlovento
+wo-climate.c6.viz.steps.3	Seco a sotavento
+wo-climate.c7.title	Monzones
+wo-climate.c7.text	En el sur de Asia, los vientos de verano cambian de sentido y soplan desde el océano cálido, trayendo meses de lluvias intensas. Más de 1.000 millones de personas dependen del monzón para la agricultura.
+wo-climate.c7.viz.l.t	Monzón de verano
+wo-climate.c7.viz.l.items.0	viento del mar
+wo-climate.c7.viz.l.items.1	lluvia intensa
+wo-climate.c7.viz.r.t	Monzón de invierno
+wo-climate.c7.viz.r.items.0	viento de tierra
+wo-climate.c7.viz.r.items.1	seco
+wo-climate.c8.title	Los contrastes de Portugal
+wo-climate.c8.text	El noroeste (Miño) es una de las regiones más lluviosas de Europa; el Alentejo interior es cálido y seco, a menudo por encima de 40 °C en verano. La costa atlántica es suave; el interior tiene oscilaciones térmicas mayores.
+wo-climate.c8.viz.unit	mm de lluvia al año (aprox.)
+wo-climate.c8.viz.items.0.l	Faro
+wo-climate.c8.viz.items.1.l	Beja
+wo-climate.c8.viz.items.2.l	Lisboa
+wo-climate.c8.viz.items.3.l	Oporto
+wo-climate.c8.viz.items.4.l	Gerês
+wo-climate.c9.title	Microclimas
+wo-climate.c9.text	Las ciudades son más cálidas que el campo (islas de calor urbanas); los valles acumulan aire frío por la noche; las costas son más suaves. Los viñedos y los huertos aprovechan estas pequeñas diferencias.
+wo-climate.c9.viz.items.0	Islas de calor urbanas
+wo-climate.c9.viz.items.1	Heladas en los valles
+wo-climate.c9.viz.items.2	Costas suavizadas por el mar
+wo-climate.c9.viz.items.3	Laderas orientadas al sur
+wo-rivers.title	Ríos y montañas
+wo-rivers.summary	Los grandes ríos y cordilleras del mundo.
+wo-rivers.q0.q	¿Qué río lleva más agua?
+wo-rivers.q0.o0	Nilo
+wo-rivers.q0.o1	Amazonas
+wo-rivers.q0.o2	Misisipi
+wo-rivers.q0.x	Alrededor de una quinta parte del caudal fluvial del mundo.
+wo-rivers.q1.q	¿Cuál es el punto más alto de Portugal?
+wo-rivers.q1.o0	Torre, Serra da Estrela
+wo-rivers.q1.o1	Montaña del Pico, Azores
+wo-rivers.q1.o2	Gerês
+wo-rivers.q1.x	El Pico tiene 2.351 m.
+wo-rivers.q2.q	¿Cómo se formó el Himalaya?
+wo-rivers.q2.o0	Por volcanes
+wo-rivers.q2.o1	Por el choque de la placa india con Asia
+wo-rivers.q2.o2	Por glaciares
+wo-rivers.q2.x	El choque continúa hoy.
+wo-rivers.c0.title	Los ríos más largos
+wo-rivers.c0.text	El Nilo y el Amazonas se disputan el título de río más largo, con unos 6.400–7.000 km cada uno según cómo se mida. El Amazonas es, con mucha diferencia, el que lleva más agua.
+wo-rivers.c0.viz.unit	longitud (km, aprox.)
+wo-rivers.c0.viz.items.0.l	Nilo
+wo-rivers.c0.viz.items.1.l	Amazonas
+wo-rivers.c0.viz.items.2.l	Yangtsé
+wo-rivers.c0.viz.items.3.l	Misisipi–Misuri
+wo-rivers.c0.viz.items.4.l	Tajo/Tejo
+wo-rivers.c1.title	El caudal del Amazonas
+wo-rivers.c1.text	El Amazonas vierte alrededor del 20 % de toda el agua fluvial que llega a los océanos, más que los siete ríos siguientes juntos.
+wo-rivers.c1.viz.items.0.l	del caudal fluvial mundial
+wo-rivers.c1.viz.items.1.v	~200.000 m³/s
+wo-rivers.c1.viz.items.1.l	caudal medio

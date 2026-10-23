@@ -1,0 +1,650 @@
+P.title	Ingeniería
+P.blurb	Fuerzas, máquinas y las formas que mantienen en pie las estructuras.
+me-forces.title	Fuerzas, palancas y engranajes
+me-forces.summary	Por qué funciona una llave larga y cómo las máquinas cambian fuerza por distancia.
+me-forces.q0.q	Una persona de 50 kg se sube a una báscula. Su peso es de unos…
+me-forces.q0.o0	50 N
+me-forces.q0.o1	490 N
+me-forces.q0.o2	5 N
+me-forces.q0.o3	5000 N
+me-forces.q0.x	W = m × g = 50 × 9,81 ≈ 490 N.
+me-forces.q1.q	Hay 4 kg a 1,5 m del punto de apoyo. ¿A qué distancia del apoyo deben ponerse 2 kg para equilibrarlo?
+me-forces.q1.o0	0,75 m
+me-forces.q1.o1	1,5 m
+me-forces.q1.o2	3 m
+me-forces.q1.o3	6 m
+me-forces.q1.x	4 × 1,5 = 6, así que 2 × d = 6 → d = 3 m.
+me-forces.q2.q	Un engranaje de 12 dientes mueve uno de 36 dientes. La salida gira…
+me-forces.q2.o0	3× más rápido
+me-forces.q2.o1	a la misma velocidad
+me-forces.q2.o2	3× más lento con 3× el par
+me-forces.q2.x	La relación es 36 ÷ 12 = 3: un tercio de la velocidad y el triple de par.
+me-forces.q3.q	Para subir 200 kg a 1 m de altura con una rampa de 5 m (sin rozamiento) necesitas unos…
+me-forces.q3.o0	1962 N
+me-forces.q3.o1	392 N
+me-forces.q3.o2	40 N
+me-forces.q3.x	1962 × 1 ÷ 5 ≈ 392 N.
+me-forces.q4.q	Una llave dinamométrica ajustada a 120 N·m con un mango de 0,4 m necesita una fuerza de…
+me-forces.q4.o0	48 N
+me-forces.q4.o1	300 N
+me-forces.q4.o2	120 N
+me-forces.q4.x	120 ÷ 0,4 = 300 N.
+me-forces.c0.title	Fuerza, masa y peso
+me-forces.c0.text	Una fuerza hace que una masa acelere. El peso no es más que la fuerza de la gravedad sobre una masa: W = m × g, con g ≈ 9,81 m/s² en la Tierra. La masa se mide en kg; la fuerza y el peso, en newtons (N).
+me-forces.c0.formula	F = m × a
+me-forces.c0.example.0	Una caja de 10 kg
+me-forces.c0.example.1	W = 10 × 9,81
+me-forces.c0.example.2	≈ 98 N
+me-forces.c0.sketch.0	10 kg
+me-forces.c0.sketch.1	W = m·g
+me-forces.c0.sketch.2	≈ 98 N
+me-forces.c0.sketch.3	F = m·a
+me-forces.c1.title	Las palancas multiplican la fuerza
+me-forces.c1.text	El efecto de giro, o par (momento), es la fuerza × la distancia al punto de apoyo. Una fuerza pequeña lejos del apoyo equilibra una fuerza grande cerca de él.\n\nPor eso una llave larga afloja un tornillo atascado, y por eso los pomos de las puertas están lejos de las bisagras.
+me-forces.c1.formula	par = F × d
+me-forces.c1.sketch.0	2 kg
+me-forces.c1.sketch.1	6 kg
+me-forces.c1.sketch.2	3 m
+me-forces.c1.sketch.3	1 m
+me-forces.c1.sketch.4	2 × 3 = 6 × 1 → equilibrio
+me-forces.c2.title	Pruébalo: equilibra el balancín
+me-forces.c2.text	El lado derecho tiene 6 kg a 1 m del punto de apoyo. Cambia la masa y la distancia del lado izquierdo hasta que la barra quede nivelada.
+me-forces.c3.title	Las poleas cambian distancia por fuerza
+me-forces.c3.text	Con una polea móvil, la carga cuelga de dos tramos de cuerda, así que cada tramo soporta la mitad del peso. Tiras con la mitad de fuerza, pero tienes que tirar del doble de cuerda.\n\nEl trabajo que haces, fuerza × distancia, sigue siendo el mismo. Las máquinas nunca regalan energía; te dejan elegir cómo gastarla.
+me-forces.c3.sketch.0	tira 1 m
+me-forces.c3.sketch.1	carga sube ½ m
+me-forces.c4.title	Engranajes: velocidad o par
+me-forces.c4.text	Cuando un engranaje pequeño mueve uno grande, el grande gira más despacio pero con más par. La relación es el número de dientes: 10 dientes moviendo 20 dan la mitad de velocidad y el doble de par.\n\nLa marcha corta de una bici, la caja de cambios de un taladro y la primera marcha de un coche usan este intercambio.
+me-forces.c4.sketch.0	10 dientes (motor)
+me-forces.c4.sketch.1	20 dientes: ½ veloc., 2× par
+me-forces.c5.title	Fuerzas equilibradas y desequilibradas
+me-forces.c5.text	Cuando las fuerzas sobre un objeto se equilibran, este sigue quieto o se mueve a velocidad constante. Cuando no, acelera en la dirección de la fuerza resultante.
+me-forces.c5.viz.l.t	Equilibradas
+me-forces.c5.viz.l.items.0	sin aceleración
+me-forces.c5.viz.l.items.1	libro en una mesa
+me-forces.c5.viz.l.items.2	coche a velocidad fija
+me-forces.c5.viz.r.t	Desequilibradas
+me-forces.c5.viz.r.items.0	acelera o frena
+me-forces.c5.viz.r.items.1	frenada
+me-forces.c5.viz.r.items.2	despegue
+me-forces.c6.title	Planos inclinados
+me-forces.c6.text	Una rampa te permite subir una carga con menos fuerza empujándola a lo largo de una distancia mayor. La fuerza necesaria es aproximadamente el peso por la altura dividido por la longitud.
+me-forces.c6.example.0	Subir 100 kg 1 m con una rampa de 4 m
+me-forces.c6.example.1	981 × 1 ÷ 4
+me-forces.c6.example.2	≈ 245 N (sin contar el rozamiento)
+me-forces.c6.viz.f	F ≈ W × h ÷ L
+me-forces.c6.viz.items.0.s	W
+me-forces.c6.viz.items.0.m	peso
+me-forces.c6.viz.items.1.s	h
+me-forces.c6.viz.items.1.m	altura ganada
+me-forces.c6.viz.items.2.s	L
+me-forces.c6.viz.items.2.m	largo de la rampa
+me-forces.c7.title	Tornillos y cuñas
+me-forces.c7.text	Un tornillo es una rampa enrollada alrededor de un cilindro: cada vuelta lo hace avanzar un poco con mucha fuerza. Una cuña (un hacha, un cincel) convierte un empuje en una fuerza lateral que parte el material.
+me-forces.c7.viz.items.0.a	tornillo
+me-forces.c7.viz.items.0.b	rampa enrollada en un eje
+me-forces.c7.viz.items.1.a	cuña
+me-forces.c7.viz.items.1.b	dos rampas espalda con espalda
+me-forces.c7.viz.items.2.a	gato de coche
+me-forces.c7.viz.items.2.b	tornillo que levanta toneladas
+me-forces.c8.title	Ventaja mecánica
+me-forces.c8.text	La ventaja mecánica es la fuerza de salida dividida por la fuerza de entrada. Una palanca con VM = 5 te permite levantar 5 veces lo que empujas, pero te desplazas 5 veces más.
+me-forces.c8.viz.f	VM = fuerza de salida ÷ fuerza de entrada
+me-forces.c8.viz.items.0.s	VM 5
+me-forces.c8.viz.items.0.m	levantar 500 N con 100 N
+me-forces.c8.viz.items.1.s	pero
+me-forces.c8.viz.items.1.m	recorres 5× la distancia
+me-forces.c9.title	El par en la práctica
+me-forces.c9.text	Los tornillos se aprietan a un par especificado en newtons-metro. La tuerca de una rueda de coche suele estar en torno a 100–140 N·m: 400 N sobre una llave de 30 cm dan 120 N·m.
+me-forces.c9.viz.f	par = F × r
+me-forces.c9.viz.items.0.s	F
+me-forces.c9.viz.items.0.m	empuje de 400 N
+me-forces.c9.viz.items.1.s	r
+me-forces.c9.viz.items.1.m	llave de 0,3 m
+me-forces.c9.viz.items.2.m	= 120 N·m
+me-structures.title	Cómo se sostienen las estructuras
+me-structures.summary	Tracción, compresión y las formas que usan los ingenieros para controlarlas.
+me-structures.q0.q	Una viga simplemente apoyada soporta una carga en el centro. ¿Dónde está en tracción?
+me-structures.q0.o0	Cara superior
+me-structures.q0.o1	Cara inferior
+me-structures.q0.o2	Justo en el centro
+me-structures.q0.x	Se comba, así que la parte inferior se estira (tracción) y la superior se comprime (compresión).
+me-structures.q1.q	¿Por qué las celosías están hechas de triángulos?
+me-structures.q1.o0	Usan menos acero que los cuadrados
+me-structures.q1.o1	Un triángulo no puede deformarse sin que cambie la longitud de un lado
+me-structures.q1.o2	Quedan más bonitas
+me-structures.q1.x	Si los lados tienen longitud fija, los ángulos del triángulo quedan bloqueados, así que basta con uniones articuladas para que sea rígido.
+me-structures.q2.q	Una cuerda con una carga de rotura de 600 kg se usa con un factor de seguridad de 5. ¿Carga de trabajo máxima?
+me-structures.q2.o0	3000 kg
+me-structures.q2.o1	120 kg
+me-structures.q2.o2	595 kg
+me-structures.q2.x	Carga de trabajo = carga de rotura ÷ FS = 600 ÷ 5 = 120 kg.
+me-structures.q3.q	Un balcón sujeto solo a la pared es un…
+me-structures.q3.o0	Arco
+me-structures.q3.o1	Voladizo
+me-structures.q3.o2	Celosía
+me-structures.q3.x	Está apoyado en un solo extremo.
+me-structures.q4.q	¿Qué suele hacer fallar a una columna alta y esbelta?
+me-structures.q4.o0	El aplastamiento
+me-structures.q4.o1	El pandeo lateral
+me-structures.q4.o2	La fusión
+me-structures.q4.x	Las columnas esbeltas pandean antes de aplastarse.
+me-structures.c0.title	Tracción y compresión
+me-structures.c0.text	Carga una viga en el centro y se flexiona. La parte superior se comprime (compresión) y la inferior se estira (tracción). En algún punto intermedio hay una línea neutra que no sufre ninguna de las dos.\n\nEl hormigón resiste bien la compresión pero mal la tracción; por eso las vigas llevan barras de acero cerca de la parte inferior.
+me-structures.c0.sketch.0	carga
+me-structures.c0.sketch.1	compresión
+me-structures.c0.sketch.2	compresión
+me-structures.c0.sketch.3	tracción
+me-structures.c1.title	Por qué a los ingenieros les encantan los triángulos
+me-structures.c1.text	Empuja la esquina de un marco cuadrado y se pliega en un paralelogramo; las uniones simplemente giran. Un triángulo no puede cambiar de forma sin cambiar la longitud de un lado.\n\nPor eso las grúas, las cerchas de tejado, las torres eléctricas y los cuadros de bici están hechos de triángulos.
+me-structures.c1.sketch.0	cuadrado cede
+me-structures.c1.sketch.1	triángulo aguanta
+me-structures.c2.title	Los arcos empujan hacia fuera
+me-structures.c2.text	Un arco convierte una carga hacia abajo en compresión que recorre su curva hasta el suelo. La piedra, que resiste muy bien la compresión, es perfecta para ello.\n\nEl problema es que los pies empujan hacia fuera. Sin estribos sólidos o un tirante entre los pies, el arco se abre y se derrumba.
+me-structures.c2.sketch.0	carga
+me-structures.c2.sketch.1	pies empujan fuera
+me-structures.c3.title	La viga en I
+me-structures.c3.text	Cuando una viga se flexiona, la mayor tensión está en las caras superior e inferior y muy poca en el centro. Una viga en I concentra la mayor parte del acero en las alas superior e inferior y las une con un alma delgada.\n\nConsigues casi la rigidez de un bloque macizo con una fracción del peso.
+me-structures.c3.sketch.0	tensión alta
+me-structures.c3.sketch.1	tensión alta
+me-structures.c3.sketch.2	tensión baja
+me-structures.c3.sketch.3	ala
+me-structures.c3.sketch.4	alma
+me-structures.c3.sketch.5	ala
+me-structures.c4.title	Factor de seguridad
+me-structures.c4.text	Los ingenieros nunca diseñan justo hasta el punto de rotura. Los materiales varían, las cargas se subestiman y las cosas se desgastan. El factor de seguridad indica cuánto más resistente es algo de lo que necesita ser.\n\nLos equipos de elevación suelen usar 4 o 5; las estructuras de los aviones usan alrededor de 1,5, porque el peso extra cuesta combustible y cada pieza se inspecciona a fondo.
+me-structures.c4.formula	FS = carga de rotura ÷ carga de trabajo
+me-structures.c4.example.0	Gancho para 1 t, rompe a 4 t
+me-structures.c4.example.1	4 ÷ 1
+me-structures.c4.example.2	factor de seguridad = 4
+me-structures.c4.sketch.0	nominal 1 t
+me-structures.c4.sketch.1	rompe a 4 t
+me-structures.c4.sketch.2	4 ÷ 1 = factor de seguridad 4
+me-structures.c5.title	Voladizos
+me-structures.c5.text	Un voladizo está apoyado en un solo extremo: balcones, trampolines, escuadras de estantería. La parte superior está en tracción y la inferior en compresión, al revés que en una viga simplemente apoyada.
+me-structures.c5.viz.l.t	Viga simplemente apoyada
+me-structures.c5.viz.l.items.0	abajo en tracción
+me-structures.c5.viz.l.items.1	apoyada en ambos extremos
+me-structures.c5.viz.r.t	Voladizo
+me-structures.c5.viz.r.items.0	arriba en tracción
+me-structures.c5.viz.r.items.1	fijo en un extremo
+me-structures.c6.title	Columnas y pandeo
+me-structures.c6.text	Una columna alta y esbelta no se aplasta: primero pandea hacia un lado. Duplicar su longitud puede reducir su carga de pandeo a una cuarta parte; por eso las columnas se arriostran.
+me-structures.c6.viz.f	carga ∝ 1 ÷ longitud²
+me-structures.c6.viz.items.0.s	2× más larga
+me-structures.c6.viz.items.0.m	¼ de carga de pandeo
+me-structures.c6.viz.items.1.s	arriostrar
+me-structures.c6.viz.items.1.m	acorta la longitud libre
+me-structures.c7.title	Láminas y cúpulas
+me-structures.c7.text	Las láminas curvas reparten las cargas por su superficie, como la cáscara de un huevo. Las cúpulas, desde el Panteón de Roma hasta los estadios modernos, cubren espacios enormes con poco material.
+me-structures.c7.viz.items.0	Cáscara de huevo: fina pero fuerte
+me-structures.c7.viz.items.1	Cúpula del Panteón (Roma): hormigón sin armar
+me-structures.c7.viz.items.2	Láminas modernas: estadios y pabellones
+me-structures.c8.title	Recorrido de cargas
+me-structures.c8.text	Toda carga debe bajar por la estructura hasta el suelo: del forjado a las vigas, de las vigas a los pilares, de los pilares a la cimentación. Si falta algún eslabón, algo falla.
+me-structures.c8.viz.steps.0	Carga del forjado
+me-structures.c8.viz.steps.1	Vigas
+me-structures.c8.viz.steps.2	Pilares o muros
+me-structures.c8.viz.steps.3	Cimentación
+me-structures.c8.viz.steps.4	Terreno
+me-structures.c9.title	Cargas permanentes, variables y ambientales
+me-structures.c9.text	Los ingenieros diseñan para la carga permanente (el peso propio de la estructura), la carga variable (personas, muebles, nieve) y las cargas ambientales como el viento y los terremotos, y luego añaden factores de seguridad.
+me-structures.c9.viz.root	Cargas
+me-structures.c9.viz.items.0	Permanente: peso propio
+me-structures.c9.viz.items.1	Variable: personas, muebles
+me-structures.c9.viz.items.2	Viento y nieve
+me-structures.c9.viz.items.3	Terremotos
+me-materials.title	Materiales de ingeniería
+me-materials.summary	Acero, hormigón, madera, aluminio y plásticos.
+me-materials.q0.q	¿Por qué el hormigón armado lleva barras de acero?
+me-materials.q0.o0	Para hacerlo más pesado
+me-materials.q0.o1	El hormigón resiste mal la tracción, así que el acero soporta los esfuerzos de tracción
+me-materials.q0.o2	Para conducir la electricidad
+me-materials.q0.x	Las armaduras absorben la tracción.
+me-materials.q1.q	La madera es más resistente…
+me-materials.q1.o0	Perpendicular a la fibra
+me-materials.q1.o1	En el sentido de la fibra
+me-materials.q1.o2	Cuando está mojada
+me-materials.q1.x	Las fibras van en el sentido de la veta.
+me-materials.q2.q	¿Cuál es el más ligero por volumen?
+me-materials.q2.o0	Acero
+me-materials.q2.o1	Aluminio
+me-materials.q2.o2	Hormigón
+me-materials.q2.x	El aluminio tiene aproximadamente un tercio de la densidad del acero.
+me-materials.c0.title	Resistencia y rigidez no son lo mismo
+me-materials.c0.text	La resistencia es cuánta tensión soporta un material antes de romperse o ceder. La rigidez es cuánto se resiste a doblarse o estirarse. El caucho es poco resistente y flexible; el vidrio es rígido pero frágil.
+me-materials.c0.viz.l.t	Resistencia
+me-materials.c0.viz.l.items.0	carga hasta fallar
+me-materials.c0.viz.l.items.1	acero alta, madera media
+me-materials.c0.viz.r.t	Rigidez
+me-materials.c0.viz.r.items.0	resistencia a estirarse
+me-materials.c0.viz.r.items.1	acero rígido, aluminio un tercio
+me-materials.c1.title	Acero
+me-materials.c1.text	El acero es hierro con un poco de carbono. Resiste bien tanto la tracción como la compresión, es dúctil (se dobla antes de romperse) y reciclable, pero es pesado y se oxida si no se protege.
+me-materials.c1.viz.items.0	Resiste tracción y compresión
+me-materials.c1.viz.items.1	Dúctil
+me-materials.c1.viz.items.2	Reciclable
+me-materials.c1.viz.items.3	Se oxida sin protección
+me-materials.c1.viz.items.4	Pierde resistencia con el fuego
+me-materials.c2.title	Hormigón
+me-materials.c2.text	El hormigón es cemento, agua, arena y grava. Es barato y muy resistente a la compresión, pero débil a la tracción, así que se añaden barras de acero (armaduras) donde aparece la tracción.
+me-materials.c2.viz.l.t	Hormigón en masa
+me-materials.c2.viz.l.items.0	genial a compresión
+me-materials.c2.viz.l.items.1	se fisura a tracción
+me-materials.c2.viz.r.t	Hormigón armado
+me-materials.c2.viz.r.items.0	el acero toma la tracción
+me-materials.c2.viz.r.items.1	vigas, losas, pilares
+me-materials.c3.title	Madera
+me-materials.c3.text	La madera es resistente en el sentido de la fibra y débil en perpendicular. Para su peso es notablemente resistente, almacena carbono y es fácil de trabajar, pero hay que controlar la humedad, el fuego y los insectos.
+me-materials.c3.viz.l.t	En el sentido de la fibra
+me-materials.c3.viz.l.items.0	resistente
+me-materials.c3.viz.l.items.1	rígida
+me-materials.c3.viz.r.t	Perpendicular a la fibra
+me-materials.c3.viz.r.items.0	se raja fácilmente
+me-materials.c3.viz.r.items.1	se hincha con la humedad
+me-materials.c4.title	Aluminio
+me-materials.c4.text	El aluminio pesa aproximadamente un tercio que el acero y no se oxida (una fina capa de óxido lo protege). Es menos rígido, así que las piezas se hacen más gruesas o con formas ingeniosas. Se usa en aviones, marcos de ventanas y coches.
+me-materials.c4.viz.unit	densidad (g/cm³)
+me-materials.c4.viz.items.0.l	Madera (pino)
+me-materials.c4.viz.items.1.l	Aluminio
+me-materials.c4.viz.items.2.l	Acero
+me-materials.c4.viz.items.3.l	Hormigón
+me-materials.c5.title	Plásticos y materiales compuestos
+me-materials.c5.text	Los plásticos son ligeros, baratos y moldeables. Los materiales compuestos, como la fibra de carbono, integran fibras resistentes en una resina, lo que da una resistencia y una rigidez muy altas para su peso: bicis, aviones, coches de carreras.
+me-materials.c5.viz.items.0.a	PVC
+me-materials.c5.viz.items.0.b	tuberías, ventanas
+me-materials.c5.viz.items.1.a	nailon
+me-materials.c5.viz.items.1.b	engranajes, cojinetes
+me-materials.c5.viz.items.2.a	fibra de carbono
+me-materials.c5.viz.items.2.b	gama alta, ligera y rígida
+me-materials.c5.viz.items.3.a	fibra de vidrio
+me-materials.c5.viz.items.3.b	barcos, depósitos
+me-materials.c6.title	Elegir un material
+me-materials.c6.text	Los ingenieros sopesan resistencia, rigidez, peso, coste, durabilidad, facilidad de fabricación e impacto ambiental. Nunca hay un material perfecto, solo el mejor compromiso.
+me-materials.c6.viz.items.0	Resistencia y rigidez
+me-materials.c6.viz.items.1	Peso
+me-materials.c6.viz.items.2	Coste
+me-materials.c6.viz.items.3	Corrosión y durabilidad
+me-materials.c6.viz.items.4	Fabricación
+me-materials.c6.viz.items.5	Huella de carbono
+me-materials.c7.title	Carbono incorporado
+me-materials.c7.text	Fabricar cemento libera mucho CO₂: alrededor del 8 % de las emisiones mundiales, según muchas estimaciones. La producción de acero también emite mucho carbono. Eso está impulsando el interés por los edificios de madera y los cementos bajos en carbono.
+me-materials.c7.viz.items.0.l	CO₂ mundial del cemento
+me-materials.c7.viz.items.1.l	del acero (aprox.)
+me-materials.c8.title	Corrosión
+me-materials.c8.text	El acero se oxida al exponerse al oxígeno y al agua, sobre todo con sal. Se protege con pintura, galvanizado (recubrimiento de zinc), aleaciones inoxidables y manteniendo un recubrimiento de hormigón sobre las armaduras.
+me-materials.c8.viz.items.0	Pintura y recubrimientos
+me-materials.c8.viz.items.1	Galvanizado con zinc
+me-materials.c8.viz.items.2	Acero inoxidable
+me-materials.c8.viz.items.3	Recubrimiento suficiente de las armaduras
+me-materials.c8.viz.items.4	Evitar agua estancada
+me-materials.c9.title	Vidrio
+me-materials.c9.text	El vidrio es muy resistente a la compresión pero frágil: un arañazo diminuto puede iniciar una grieta. El vidrio templado se trata con calor para ser mucho más resistente y se rompe en trocitos pequeños sin filo; el vidrio laminado se mantiene unido.
+me-materials.c9.viz.l.t	Templado
+me-materials.c9.viz.l.items.0	4–5× más resistente
+me-materials.c9.viz.l.items.1	se rompe en cubitos
+me-materials.c9.viz.l.items.2	ventanillas laterales
+me-materials.c9.viz.r.t	Laminado
+me-materials.c9.viz.r.items.0	lámina de plástico
+me-materials.c9.viz.r.items.1	se queda en su sitio
+me-materials.c9.viz.r.items.2	parabrisas
+me-stress.title	Tensión y deformación
+me-stress.summary	Cómo se estiran, se doblan y se rompen los materiales.
+me-stress.q0.q	20 kN sobre una barra de 400 mm² producen una tensión de…
+me-stress.q0.o0	5 MPa
+me-stress.q0.o1	50 MPa
+me-stress.q0.o2	8000 MPa
+me-stress.q0.x	20 000 ÷ 400 = 50 MPa.
+me-stress.q1.q	Poner un tablón de canto lo hace mucho más rígido porque…
+me-stress.q1.o0	Pesa más
+me-stress.q1.o1	La rigidez a flexión crece con el cubo del canto
+me-stress.q1.o2	A la madera le gusta estar vertical
+me-stress.q1.x	I = b × h³ ÷ 12.
+me-stress.q2.q	¿Qué material avisa antes de romperse?
+me-stress.q2.o0	El vidrio
+me-stress.q2.o1	El acero dulce
+me-stress.q2.o2	La fundición
+me-stress.q2.x	El acero dúctil se estira primero.
+me-stress.c0.title	Tensión
+me-stress.c0.text	La tensión es la fuerza dividida por el área que la soporta. La misma fuerza sobre una barra más delgada crea más tensión. Unidades: pascales (N/m²), normalmente megapascales (MPa).
+me-stress.c0.example.0	10 kN sobre una barra de acero de 100 mm²
+me-stress.c0.example.1	10 000 ÷ 100
+me-stress.c0.example.2	= 100 MPa
+me-stress.c0.viz.f	σ = F ÷ A
+me-stress.c0.viz.items.0.s	σ
+me-stress.c0.viz.items.0.m	tensión (MPa)
+me-stress.c0.viz.items.1.s	F
+me-stress.c0.viz.items.1.m	fuerza (N)
+me-stress.c0.viz.items.2.s	A
+me-stress.c0.viz.items.2.m	sección (mm²)
+me-stress.c1.title	Deformación
+me-stress.c1.text	La deformación es cuánto se estira un material en comparación con su longitud original. No tiene unidades y suele ser diminuta.
+me-stress.c1.example.0	Una barra de 2 m se estira 1 mm
+me-stress.c1.example.1	1 ÷ 2000
+me-stress.c1.example.2	ε = 0,0005
+me-stress.c1.viz.f	ε = ΔL ÷ L
+me-stress.c1.viz.items.0.s	ΔL
+me-stress.c1.viz.items.0.m	cambio de longitud
+me-stress.c1.viz.items.1.s	L
+me-stress.c1.viz.items.1.m	longitud original
+me-stress.c2.title	Módulo de Young
+me-stress.c2.text	La rigidez se mide con el módulo de Young: la tensión dividida por la deformación. El acero ronda los 200 GPa, el aluminio unos 70 y la madera unos 10 en el sentido de la fibra.
+me-stress.c2.viz.unit	GPa
+me-stress.c2.viz.items.0.l	Caucho
+me-stress.c2.viz.items.1.l	Madera
+me-stress.c2.viz.items.2.l	Hormigón
+me-stress.c2.viz.items.3.l	Aluminio
+me-stress.c2.viz.items.4.l	Acero
+me-stress.c3.title	Elástico y plástico
+me-stress.c3.text	En el rango elástico, un material recupera su forma al descargarlo. Pasado el límite elástico se deforma de manera permanente (plástico). Los ingenieros diseñan las estructuras para que sigan en el rango elástico en uso normal.
+me-stress.c3.viz.steps.0	Aumenta la carga
+me-stress.c3.viz.steps.1	Elástico: recupera
+me-stress.c3.viz.steps.2	Límite elástico
+me-stress.c3.viz.steps.3	Plástico: queda doblado
+me-stress.c3.viz.steps.4	Rotura
+me-stress.c4.title	La curva tensión–deformación
+me-stress.c4.text	Ensayar una barra de acero en una máquina dibuja una curva: una recta elástica, un límite elástico, luego un estiramiento plástico hasta la resistencia última y, por último, la rotura.
+me-stress.c4.viz.events.0.y	inicio
+me-stress.c4.viz.events.0.l	recta elástica
+me-stress.c4.viz.events.1.y	fluencia
+me-stress.c4.viz.events.1.l	deformación permanente
+me-stress.c4.viz.events.2.y	última
+me-stress.c4.viz.events.2.l	tensión máx.
+me-stress.c4.viz.events.3.y	estricción
+me-stress.c4.viz.events.3.l	la barra adelgaza
+me-stress.c4.viz.events.4.y	rotura
+me-stress.c4.viz.events.4.l	se rompe
+me-stress.c5.title	Dúctil frente a frágil
+me-stress.c5.text	Los materiales dúctiles (acero, cobre) se estiran mucho antes de romperse, lo que sirve de aviso. Los frágiles (vidrio, fundición, hormigón) se rompen de golpe. La ductilidad hace más seguras las estructuras.
+me-stress.c5.viz.l.t	Dúctil
+me-stress.c5.viz.l.items.0	se dobla y se estira
+me-stress.c5.viz.l.items.1	avisa
+me-stress.c5.viz.l.items.2	acero, cobre
+me-stress.c5.viz.r.t	Frágil
+me-stress.c5.viz.r.items.0	se rompe de golpe
+me-stress.c5.viz.r.items.1	apenas avisa
+me-stress.c5.viz.r.items.2	vidrio, fundición
+me-stress.c6.title	Tensión de flexión
+me-stress.c6.text	Cuando una viga se flexiona, la tensión es cero en el centro (eje neutro) y máxima en las superficies superior e inferior. Por eso las vigas en I colocan el material lejos del centro.
+me-stress.c6.viz.f	σ = M × y ÷ I
+me-stress.c6.viz.items.0.s	M
+me-stress.c6.viz.items.0.m	momento flector
+me-stress.c6.viz.items.1.s	y
+me-stress.c6.viz.items.1.m	distancia al eje neutro
+me-stress.c6.viz.items.2.s	I
+me-stress.c6.viz.items.2.m	momento de inercia
+me-stress.c7.title	Momento de inercia
+me-stress.c7.text	La resistencia de una viga a la flexión depende muchísimo de su canto. En un rectángulo, duplicar el canto lo hace ocho veces más rígido. Por eso las viguetas se colocan de canto.
+me-stress.c7.viz.f	I = b × h³ ÷ 12
+me-stress.c7.viz.items.0.s	b
+me-stress.c7.viz.items.0.m	ancho
+me-stress.c7.viz.items.1.s	h
+me-stress.c7.viz.items.1.m	canto
+me-stress.c7.viz.items.2.s	2× canto
+me-stress.c7.viz.items.2.m	8× más rígida
+me-stress.c8.title	Dilatación térmica
+me-stress.c8.text	Los materiales crecen al calentarse. Un puente de acero de 100 m puede alargarse unos 4 cm entre el invierno y el verano, por eso tiene juntas de dilatación. Los raíles, las tuberías y las losas de hormigón también necesitan espacio para moverse.
+me-stress.c8.viz.f	ΔL = α × L × ΔT
+me-stress.c8.viz.items.0.s	α
+me-stress.c8.viz.items.0.m	~12 × 10⁻⁶ /°C en el acero
+me-stress.c8.viz.items.1.s	L
+me-stress.c8.viz.items.1.m	100 m
+me-stress.c8.viz.items.2.s	ΔT
+me-stress.c8.viz.items.2.m	35 °C → ≈ 4 cm
+me-stress.c9.title	Concentraciones de tensión
+me-stress.c9.text	Las esquinas vivas, los agujeros y las entallas concentran la tensión, a veces hasta el triple de la media. Las esquinas redondeadas (acuerdos) la reparten. Por eso las ventanillas de los aviones son redondeadas.
+me-stress.c9.viz.items.0.w	esquina interior viva
+me-stress.c9.viz.items.0.r	acuerdo redondeado
+me-stress.c9.viz.items.1.w	ventana cuadrada en cabina presurizada
+me-stress.c9.viz.items.1.r	ventana redondeada
+me-friction.title	Rozamiento
+me-friction.summary	La fuerza que agarra, frena y desgasta las cosas.
+me-friction.q0.q	Una caja de 50 kg (≈490 N) sobre un suelo con μ = 0,4 necesita aproximadamente qué fuerza para deslizarse?
+me-friction.q0.o0	49 N
+me-friction.q0.o1	196 N
+me-friction.q0.o2	490 N
+me-friction.q0.x	0,4 × 490 ≈ 196 N.
+me-friction.q1.q	¿Por qué cuesta más empezar a empujar una caja que mantenerla en movimiento?
+me-friction.q1.o0	Cambia la gravedad
+me-friction.q1.o1	El rozamiento estático es mayor que el dinámico
+me-friction.q1.o2	La resistencia del aire
+me-friction.q1.x	Para arrancar hay que vencer el rozamiento estático.
+me-friction.q2.q	¿Qué hacen los rodamientos de bolas?
+me-friction.q2.o0	Aumentan el agarre
+me-friction.q2.o1	Sustituyen el deslizamiento por una rodadura de bajo rozamiento
+me-friction.q2.o2	Añaden lubricación
+me-friction.q2.x	Rodar ofrece mucha menos resistencia que deslizar.
+me-friction.c0.title	Qué es el rozamiento
+me-friction.c0.text	El rozamiento se opone al deslizamiento entre superficies. A escala microscópica, incluso las superficies lisas son rugosas, y sus salientes se enganchan y se adhieren brevemente.
+me-friction.c0.viz.steps.0	Dos superficies se tocan
+me-friction.c0.viz.steps.1	Salientes microscópicos encajan
+me-friction.c0.viz.steps.2	Resistencia al deslizamiento
+me-friction.c0.viz.steps.3	Calor y desgaste
+me-friction.c1.title	Coeficiente de rozamiento
+me-friction.c1.text	La fuerza de rozamiento es aproximadamente la fuerza normal (lo fuerte que se aprietan las superficies) por un coeficiente μ que depende de los materiales.
+me-friction.c1.viz.unit	μ (aprox.)
+me-friction.c1.viz.items.0.l	Hielo sobre hielo
+me-friction.c1.viz.items.1.l	Acero sobre acero (aceitado)
+me-friction.c1.viz.items.2.l	Madera sobre madera
+me-friction.c1.viz.items.3.l	Neumático en asfalto seco
+me-friction.c2.title	Estático frente a dinámico
+me-friction.c2.text	Cuesta más fuerza hacer que algo empiece a deslizarse que mantenerlo en marcha. El rozamiento estático es mayor que el dinámico (de deslizamiento). Por eso el ABS evita que las ruedas se bloqueen.
+me-friction.c2.viz.l.t	Estático
+me-friction.c2.viz.l.items.0	antes de moverse
+me-friction.c2.viz.l.items.1	mayor
+me-friction.c2.viz.r.t	Dinámico
+me-friction.c2.viz.r.items.0	mientras desliza
+me-friction.c2.viz.r.items.1	menor
+me-friction.c3.title	Frenos
+me-friction.c3.text	Los frenos convierten el movimiento en calor mediante el rozamiento entre pastillas y discos. En una bajada larga, los frenos pueden sobrecalentarse y perder eficacia; usar el freno motor o la regeneración de un coche eléctrico ayuda.
+me-friction.c3.viz.steps.0	Las pastillas aprietan el disco
+me-friction.c3.viz.steps.1	Rozamiento
+me-friction.c3.viz.steps.2	La energía cinética se vuelve calor
+me-friction.c3.viz.steps.3	El coche frena
+me-friction.c4.title	Neumáticos y agarre
+me-friction.c4.text	Los neumáticos agarran gracias al rozamiento y a una ligera deformación de la goma. Con la carretera mojada, los surcos del dibujo evacuan el agua; sin ellos, el neumático puede hacer aquaplaning sobre una película de agua.
+me-friction.c4.viz.items.0	Profundidad del dibujo
+me-friction.c4.viz.items.1	Presión de los neumáticos
+me-friction.c4.viz.items.2	Compuesto de la goma
+me-friction.c4.viz.items.3	Firme de la carretera
+me-friction.c4.viz.items.4	Velocidad con lluvia
+me-friction.c5.title	Lubricación
+me-friction.c5.text	El aceite y la grasa separan las superficies con una película fina, lo que reduce drásticamente el rozamiento y el desgaste. Los motores, los rodamientos y las cajas de cambios dependen de ella.
+me-friction.c5.viz.l.t	Contacto en seco
+me-friction.c5.viz.l.items.0	rozamiento alto
+me-friction.c5.viz.l.items.1	desgaste rápido
+me-friction.c5.viz.l.items.2	calor
+me-friction.c5.viz.r.t	Lubricado
+me-friction.c5.viz.r.items.0	rozamiento bajo
+me-friction.c5.viz.r.items.1	larga vida
+me-friction.c5.viz.r.items.2	más frío
+me-friction.c6.title	Rodamientos
+me-friction.c6.text	Los rodamientos de bolas y de rodillos sustituyen el deslizamiento por la rodadura, que tiene mucho menos rozamiento. Están en ruedas, motores, ventiladores y discos duros.
+me-friction.c6.viz.unit	rozamiento relativo
+me-friction.c6.viz.items.0.l	Deslizamiento
+me-friction.c6.viz.items.1.l	Cojinete liso (aceitado)
+me-friction.c6.viz.items.2.l	Rodamiento de bolas
+me-friction.c7.title	Rozamiento útil
+me-friction.c7.text	Sin rozamiento no podrías andar, conducir, sujetar un bolígrafo ni mantener una tuerca en un tornillo. Los ingenieros a menudo añaden rozamiento a propósito: discos de embrague, transmisiones por correa, suelos antideslizantes.
+me-friction.c7.viz.items.0	Andar y conducir
+me-friction.c7.viz.items.1	Embragues y correas
+me-friction.c7.viz.items.2	Tuercas que no se aflojan
+me-friction.c7.viz.items.3	Suelos antideslizantes
+me-friction.c8.title	Resistencia a la rodadura
+me-friction.c8.text	Incluso al rodar, los neumáticos pierden energía porque la goma se flexiona. Los neumáticos de baja resistencia a la rodadura y la presión correcta ahorran combustible o autonomía eléctrica.
+me-friction.c8.viz.unit	pérdida de energía relativa
+me-friction.c8.viz.items.0.l	Neumático poco inflado
+me-friction.c8.viz.items.1.l	Presión correcta
+me-friction.c8.viz.items.2.l	Neumático de baja resistencia
+me-friction.c9.title	El coste del desgaste
+me-friction.c9.text	Según estudios de tribología, se estima que el rozamiento y el desgaste consumen alrededor de una quinta parte de la energía mundial y causan grandes pérdidas por piezas desgastadas. Mejores lubricantes y materiales ahorran mucho.
+me-friction.c9.viz.items.0.l	de la energía mundial se usa para vencer el rozamiento (estimación)
+me-energy.title	Trabajo, energía y potencia
+me-energy.summary	Levantar, mover y la rapidez con que ocurre.
+me-energy.q0.q	La energía cinética a 100 km/h comparada con la de 50 km/h es…
+me-energy.q0.o0	El doble
+me-energy.q0.o1	Cuatro veces mayor
+me-energy.q0.o2	La misma
+me-energy.q0.x	La energía crece con el cuadrado de la velocidad.
+me-energy.q1.q	Levantar 20 kg a 2 m de altura supone aproximadamente cuánto trabajo?
+me-energy.q1.o0	40 J
+me-energy.q1.o1	392 J
+me-energy.q1.o2	2000 J
+me-energy.q1.x	20 × 9,81 × 2 ≈ 392 J.
+me-energy.q2.q	1 kWh equivale a…
+me-energy.q2.o0	1000 J
+me-energy.q2.o1	3,6 MJ
+me-energy.q2.o2	60 J
+me-energy.q2.x	1000 W × 3600 s.
+me-energy.c0.title	Trabajo
+me-energy.c0.text	Se realiza trabajo cuando una fuerza mueve algo: fuerza por distancia. Sube una bolsa de 10 kg 1 m y harás unos 98 J de trabajo.
+me-energy.c0.viz.f	W = F × d
+me-energy.c0.viz.items.0.s	F
+me-energy.c0.viz.items.0.m	fuerza (N)
+me-energy.c0.viz.items.1.s	d
+me-energy.c0.viz.items.1.m	distancia (m)
+me-energy.c0.viz.items.2.s	W
+me-energy.c0.viz.items.2.m	julios (J)
+me-energy.c1.title	Energía potencial
+me-energy.c1.text	Elevar algo almacena energía que se libera cuando cae. Las presas hidroeléctricas lo aprovechan con millones de toneladas de agua.
+me-energy.c1.example.0	1 tonelada de agua que cae 100 m
+me-energy.c1.example.1	1000 × 9,81 × 100
+me-energy.c1.example.2	≈ 0,98 MJ ≈ 0,27 kWh
+me-energy.c1.viz.f	E = m × g × h
+me-energy.c1.viz.items.0.s	m
+me-energy.c1.viz.items.0.m	masa (kg)
+me-energy.c1.viz.items.1.s	g
+me-energy.c1.viz.items.1.m	9,81 m/s²
+me-energy.c1.viz.items.2.s	h
+me-energy.c1.viz.items.2.m	altura (m)
+me-energy.c2.title	Energía cinética
+me-energy.c2.text	Los objetos en movimiento llevan una energía que crece con el cuadrado de la velocidad. Si duplicas la velocidad, la energía se multiplica por cuatro; por eso la velocidad importa tanto en los choques.
+me-energy.c2.example.0	Coche de 1500 kg a 50 km/h frente a 100 km/h
+me-energy.c2.example.1	145 kJ frente a 579 kJ
+me-energy.c2.example.2	4× la energía
+me-energy.c2.viz.f	E = ½ × m × v²
+me-energy.c2.viz.items.0.s	m
+me-energy.c2.viz.items.0.m	masa
+me-energy.c2.viz.items.1.s	v
+me-energy.c2.viz.items.1.m	velocidad (m/s)
+me-energy.c3.title	Potencia
+me-energy.c3.text	La potencia es la rapidez con que se realiza un trabajo: julios por segundo, o vatios. Un ciclista fuerte mantiene unos 200–300 W; el motor de un coche da de decenas a cientos de kW.
+me-energy.c3.viz.unit	vatios (sostenidos, aprox.)
+me-energy.c3.viz.items.0.l	Persona andando
+me-energy.c3.viz.items.1.l	Ciclista en forma
+me-energy.c3.viz.items.2.l	Caballo
+me-energy.c3.viz.items.3.l	Coche pequeño
+me-energy.c4.title	Caballos de potencia
+me-energy.c4.text	James Watt definió el caballo de potencia para vender máquinas de vapor: unos 746 W en la versión imperial. El caballo de vapor métrico (CV en España, cv en Portugal) equivale a unos 735 W.
+me-energy.c4.viz.items.0.a	1 hp
+me-energy.c4.viz.items.0.b	746 W
+me-energy.c4.viz.items.1.a	1 CV (métrico)
+me-energy.c4.viz.items.1.b	735 W
+me-energy.c4.viz.items.2.a	100 kW
+me-energy.c4.viz.items.2.b	unos 136 CV
+me-energy.c5.title	Rendimiento
+me-energy.c5.text	Ninguna máquina convierte toda la energía de entrada en energía útil; parte se convierte en calor o ruido. El rendimiento es la energía útil dividida por la de entrada.
+me-energy.c5.viz.unit	% de rendimiento (típico)
+me-energy.c5.viz.items.0.l	Bombilla incandescente
+me-energy.c5.viz.items.1.l	Motor de gasolina
+me-energy.c5.viz.items.2.l	Motor eléctrico
+me-energy.c5.viz.items.3.l	Gran transformador
+me-energy.c6.title	La energía se conserva
+me-energy.c6.text	La energía cambia de forma, pero el total sigue siendo el mismo. Una montaña rusa que cae convierte energía potencial en cinética y luego al revés, menos las pérdidas por rozamiento.
+me-energy.c6.viz.steps.0	En lo alto: energía potencial
+me-energy.c6.viz.steps.1	Al caer: energía cinética
+me-energy.c6.viz.steps.2	Al subir: vuelve a potencial
+me-energy.c6.viz.steps.3	El rozamiento convierte parte en calor
+me-energy.c7.title	Julios y kWh
+me-energy.c7.text	Los ingenieros usan julios; las facturas de la luz, kWh. Un kWh son 3,6 millones de julios, la energía de una estufa de 1 kW funcionando una hora.
+me-energy.c7.viz.f	1 kWh = 3,6 MJ
+me-energy.c7.viz.items.0.s	1 kW
+me-energy.c7.viz.items.0.m	potencia
+me-energy.c7.viz.items.1.s	1 h
+me-energy.c7.viz.items.1.m	3600 s
+me-energy.c8.title	La energía de los combustibles
+me-energy.c8.text	Un litro de gasolina contiene unos 9 kWh de energía química; por eso costaba tanto superar a los combustibles líquidos. Las baterías de litio almacenan mucho menos por kilo, pero los sistemas de propulsión eléctricos aprovechan la energía de forma mucho más eficiente.
+me-energy.c8.viz.unit	kWh por kg (aprox.)
+me-energy.c8.viz.items.0.l	Batería de iones de litio
+me-energy.c8.viz.items.1.l	Madera
+me-energy.c8.viz.items.2.l	Gasolina
+me-energy.c8.viz.items.3.l	Hidrógeno
+me-energy.c9.title	Muelles
+me-energy.c9.text	Un muelle almacena energía cuando se estira o se comprime. Su fuerza es proporcional a lo que se desplaza (ley de Hooke), y se usa en suspensiones, básculas y relojes.
+me-energy.c9.viz.f	F = k × x
+me-energy.c9.viz.items.0.s	k
+me-energy.c9.viz.items.0.m	rigidez del muelle (N/m)
+me-energy.c9.viz.items.1.s	x
+me-energy.c9.viz.items.1.m	desplazamiento (m)
+me-fluids.title	Fluidos e hidráulica
+me-fluids.summary	Presión, flotación y la fuerza de los líquidos.
+me-fluids.q0.q	¿Cuánto aumenta aproximadamente la presión por cada 10 m de profundidad en el agua?
+me-fluids.q0.o0	0,1 bar
+me-fluids.q0.o1	1 bar
+me-fluids.q0.o2	10 bar
+me-fluids.q0.x	Alrededor de 1 bar cada 10 m.
+me-fluids.q1.q	Un gato hidráulico con una relación de áreas de 20 convierte 50 N en…
+me-fluids.q1.o0	70 N
+me-fluids.q1.o1	1000 N
+me-fluids.q1.o2	2,5 N
+me-fluids.q1.x	50 × 20 = 1000 N.
+me-fluids.q2.q	¿Por qué flota un barco de acero?
+me-fluids.q2.o0	El acero es ligero
+me-fluids.q2.o1	Su forma desplaza un peso de agua mayor que el suyo propio
+me-fluids.q2.o2	El aire lo empuja hacia arriba
+me-fluids.q2.x	El principio de Arquímedes.
+me-fluids.c0.title	Presión
+me-fluids.c0.text	La presión es una fuerza repartida sobre un área. Un tacón de aguja aprieta el suelo mucho más que la pata de un elefante, porque el área es diminuta.
+me-fluids.c0.viz.f	p = F ÷ A
+me-fluids.c0.viz.items.0.s	p
+me-fluids.c0.viz.items.0.m	pascales (N/m²)
+me-fluids.c0.viz.items.1.s	F
+me-fluids.c0.viz.items.1.m	fuerza
+me-fluids.c0.viz.items.2.s	A
+me-fluids.c0.viz.items.2.m	área
+me-fluids.c1.title	La presión en el agua
+me-fluids.c1.text	La presión del agua aumenta con la profundidad, alrededor de 1 bar cada 10 metros. Los buceadores la notan en los oídos; las presas son más gruesas en la base por el mismo motivo.
+me-fluids.c1.viz.f	p = ρ × g × h
+me-fluids.c1.viz.items.0.s	ρ
+me-fluids.c1.viz.items.0.m	1000 kg/m³
+me-fluids.c1.viz.items.1.s	g
+me-fluids.c1.viz.items.2.s	h
+me-fluids.c1.viz.items.2.m	prof. → 10 m ≈ 1 bar
+me-fluids.c2.title	Presión atmosférica
+me-fluids.c2.text	El aire que tenemos encima empuja hacia abajo con alrededor de 1 bar (101 kPa) al nivel del mar, unas 10 toneladas por cada metro cuadrado. No lo notamos porque empuja por igual desde todos los lados.
+me-fluids.c2.viz.unit	bar (aprox.)
+me-fluids.c2.viz.items.0.l	Cima del Everest
+me-fluids.c2.viz.items.1.l	Lisboa
+me-fluids.c2.viz.items.2.l	10 m bajo el agua
+me-fluids.c2.viz.items.3.l	Neumático de coche
+me-fluids.c3.title	El principio de Pascal
+me-fluids.c3.text	La presión en un líquido cerrado se transmite por igual en todas las direcciones. Empuja un pistón pequeño y un pistón grande recibe la misma presión sobre un área mayor, lo que da una fuerza mayor.
+me-fluids.c3.example.0	100 N sobre 1 cm², salida de 50 cm²
+me-fluids.c3.example.1	100 × 50
+me-fluids.c3.example.2	= 5000 N levantados
+me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
+me-fluids.c3.viz.items.0.s	F₁
+me-fluids.c3.viz.items.0.m	empuje pequeño
+me-fluids.c3.viz.items.1.s	A₂ ÷ A₁
+me-fluids.c3.viz.items.1.m	relación de áreas
+me-fluids.c3.viz.items.2.s	F₂
+me-fluids.c3.viz.items.2.m	gran elevación
+me-fluids.c4.title	La hidráulica está en todas partes
+me-fluids.c4.text	Los frenos de los coches, las excavadoras, los elevadores y las prensas usan fluido hidráulico para multiplicar la fuerza y transmitirla por mangueras flexibles.
+me-fluids.c4.viz.items.0	Frenos de coche
+me-fluids.c4.viz.items.1	Brazos de excavadora
+me-fluids.c4.viz.items.2	Elevadores de taller
+me-fluids.c4.viz.items.3	Prensas hidráulicas
+me-fluids.c4.viz.items.4	Mandos de avión
+me-fluids.c5.title	Flotación
+me-fluids.c5.text	Un objeto dentro de un fluido recibe un empuje hacia arriba igual al peso del fluido que desplaza (Arquímedes). Si es mayor que su propio peso, flota. Los barcos de acero flotan porque su forma desplaza mucha agua.
+me-fluids.c5.viz.steps.0	El objeto desplaza agua
+me-fluids.c5.viz.steps.1	Empuje = peso del agua desplazada
+me-fluids.c5.viz.steps.2	Empuje
+me-fluids.c5.viz.steps.3	peso: flota
+me-fluids.c6.title	Flujo en tuberías
+me-fluids.c6.text	El caudal es la velocidad por el área de la tubería. Aprieta una manguera y el agua sale más rápido. Las tuberías estrechas necesitan más presión para mover el mismo caudal debido al rozamiento.
+me-fluids.c6.viz.f	Q = v × A
+me-fluids.c6.viz.items.0.s	Q
+me-fluids.c6.viz.items.0.m	caudal
+me-fluids.c6.viz.items.1.s	v

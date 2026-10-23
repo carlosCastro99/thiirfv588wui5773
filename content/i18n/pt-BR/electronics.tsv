@@ -7,7 +7,7 @@ tr-parts.q0.o0	90 Ω
 tr-parts.q0.o1	300 Ω
 tr-parts.q0.o2	900 Ω
 tr-parts.q0.o3	1,2 kΩ
-tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. Você escolheria o valor padrão logo acima, 1 kΩ.
+tr-parts.q0.x	R = (12 − 3) ÷ 10 = 900 Ω. Você escolheria o valor padrão logo acima, 1 kΩ.
 tr-parts.q1.q	Faixas marrom, preto, laranja. Qual é o valor?
 tr-parts.q1.o0	10 Ω
 tr-parts.q1.o1	1 kΩ
@@ -36,7 +36,7 @@ tr-parts.c1.title	Todo LED precisa de um resistor
 tr-parts.c1.text	Um LED tem uma queda de tensão direta fixa (Vf, cerca de 2 V para o vermelho, 3 V para o branco ou azul) e puxa toda a corrente que conseguir, até queimar. Um resistor em série absorve a tensão que sobra e define a corrente.
 tr-parts.c1.formula	R = (Vs − Vf) ÷ I
 tr-parts.c1.example.0	Fonte de 5 V, LED vermelho (2 V), 20 mA
-tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.1	R = (5 − 2) ÷ 20
 tr-parts.c1.example.2	= 150 Ω
 tr-parts.c1.sketch.0	150 Ω
 tr-parts.c1.sketch.1	5 V
@@ -84,7 +84,7 @@ tr-parts.c7.viz.r.items.2	filtragem da fonte
 tr-parts.c8.title	Constante de tempo RC
 tr-parts.c8.text	Um resistor carregando um capacitor leva um tempo previsível. Depois de uma constante de tempo (R × C), o capacitor chega a cerca de 63% da tensão da fonte; depois de cinco, está praticamente cheio.
 tr-parts.c8.example.0	10 kΩ e 100 µF
-tr-parts.c8.example.1	10.000 × 0,0001
+tr-parts.c8.example.1	10,000 × 0,0001
 tr-parts.c8.example.2	τ = 1 segundo
 tr-parts.c8.viz.f	τ = R × C
 tr-parts.c8.viz.items.0.s	R
@@ -389,7 +389,7 @@ tr-opamps.q2.o1	Um comparador
 tr-opamps.q2.o2	Uma bateria
 tr-opamps.q2.x	Ele só mostra qual entrada está mais alta.
 tr-opamps.c0.title	O que é um amp-op
-tr-opamps.c0.text	Um amplificador operacional é um chip com duas entradas (+ e −) e uma saída. Ele amplifica a diferença entre as entradas por um fator enorme, muitas vezes 100.000 vezes ou mais.
+tr-opamps.c0.text	Um amplificador operacional é um chip com duas entradas (+ e −) e uma saída. Ele amplifica a diferença entre as entradas por um fator enorme, muitas vezes 100,000 vezes ou mais.
 tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
 tr-opamps.c0.viz.items.0.s	A
 tr-opamps.c0.viz.items.0.m	ganho em malha aberta, enorme
@@ -1001,7 +1001,7 @@ tr-logic.summary	Bits, portas e como os chips tomam decisões.
 tr-logic.q0.q	Quanto é o binário 1101 em decimal?
 tr-logic.q0.o0	11
 tr-logic.q0.o1	13
-tr-logic.q0.o2	1.101
+tr-logic.q0.o2	1,101
 tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
 tr-logic.q1.q	Uma porta AND com entradas 1 e 0 dá na saída…
 tr-logic.q1.o0	1
@@ -1125,7 +1125,7 @@ tr-memory.c2.viz.items.1	SSDs
 tr-memory.c2.viz.items.2	Cartões SD
 tr-memory.c2.viz.items.3	Pen drives
 tr-memory.c3.title	A flash se desgasta
-tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10.000 a 100.000 em chips pequenos. Gravar uma linha de log por segundo no mesmo lugar acaba com ela; o nivelamento de desgaste (wear levelling) distribui as gravações.
+tr-memory.c3.text	Cada célula de flash aguenta um número limitado de ciclos de apagamento, de cerca de 10,000 a 100,000 em chips pequenos. Gravar uma linha de log por segundo no mesmo lugar acaba com ela; o nivelamento de desgaste (wear levelling) distribui as gravações.
 tr-memory.c3.viz.items.0.w	gravar dados do sensor na flash a cada segundo
 tr-memory.c3.viz.items.0.r	mantenha na RAM e grave em lotes
 tr-memory.c3.viz.items.1.w	sempre o mesmo bloco
@@ -1167,11 +1167,11 @@ tr-memory.c8.viz.items.1	Descarregue ou feche os arquivos
 tr-memory.c8.viz.items.2	Use cartões de boa qualidade
 tr-memory.c8.viz.items.3	Mantenha uma cópia de segurança
 tr-memory.c9.title	Unidades de armazenamento
-tr-memory.c9.text	Um kilobyte são 1.000 bytes nas unidades do SI, mas os sistemas operacionais muitas vezes contam 1.024 (o correto seria kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
+tr-memory.c9.text	Um kilobyte são 1,000 bytes nas unidades do SI, mas os sistemas operacionais muitas vezes contam 1,024 (o correto seria kibibyte, KiB). É por isso que um disco de "1 TB" aparece com cerca de 931 GB.
 tr-memory.c9.viz.items.0.a	1 KB
-tr-memory.c9.viz.items.0.b	1.000 bytes
+tr-memory.c9.viz.items.0.b	1,000 bytes
 tr-memory.c9.viz.items.1.a	1 KiB
-tr-memory.c9.viz.items.1.b	1.024 bytes
+tr-memory.c9.viz.items.1.b	1,024 bytes
 tr-memory.c9.viz.items.2.a	disco de 1 TB
 tr-memory.c9.viz.items.2.b	aparece como ~931 GiB
 tr-motors.title	Acionando motores
@@ -1261,11 +1261,11 @@ tr-power.q0.o0	Corrente de pico
 tr-power.q0.o1	Corrente em sleep e tempo acordado
 tr-power.q0.o2	Velocidade da CPU
 tr-power.q0.x	A corrente média define a autonomia da bateria.
-tr-power.q1.q	Uma bateria de 2.000 mAh com corrente média de 0,5 mA dura cerca de…
+tr-power.q1.q	Uma bateria de 2,000 mAh com corrente média de 0,5 mA dura cerca de…
 tr-power.q1.o0	40 horas
-tr-power.q1.o1	4.000 horas (~5,5 meses)
+tr-power.q1.o1	4,000 horas (~5,5 meses)
 tr-power.q1.o2	4 anos
-tr-power.q1.x	2.000 ÷ 0,5 = 4.000 h.
+tr-power.q1.x	2,000 ÷ 0,5 = 4,000 h.
 tr-power.q2.q	Como reduzir a energia gasta em cada despertar com Wi-Fi?
 tr-power.q2.o0	Usar DHCP
 tr-power.q2.o1	Usar IP fixo e canal fixo para conectar mais rápido
@@ -1282,12 +1282,12 @@ tr-power.c1.title	Corrente média
 tr-power.c1.text	Pondere cada estado pelo tempo que ele dura.
 tr-power.c1.example.0	2 s a 120 mA, 598 s a 10 µA, a cada 600 s
 tr-power.c1.example.1	(240 + 6) ÷ 600
-tr-power.c1.example.2	≈ 0,41 mA → 3.000 mAh duram ~300 dias
-tr-power.c1.viz.f	I méd = (I acordado × t acordado + I sleep × t sleep) ÷ t total
-tr-power.c1.viz.items.0.s	acordado
-tr-power.c1.viz.items.0.m	120 mA por 2 s
-tr-power.c1.viz.items.1.s	dormindo
-tr-power.c1.viz.items.1.m	0,01 mA por 598 s
+tr-power.c1.example.2	≈ 0,41 mA → 3,000 mAh duram ~300 dias
+tr-power.c1.viz.f	I méd = (I at × t at + I sono × t sono) ÷ t
+tr-power.c1.viz.items.0.s	at
+tr-power.c1.viz.items.0.m	ativo: 120 mA por 2 s
+tr-power.c1.viz.items.1.s	sono
+tr-power.c1.viz.items.1.m	dormindo: 0,01 mA por 598 s
 tr-power.c2.title	Deep sleep
 tr-power.c2.text	Um ESP32 consome uns 100+ mA com o Wi-Fi ligado, mas só cerca de 10 µA em deep sleep (numa placa bem projetada). Um timer, um pino ou um sensor pode acordá-lo.
 tr-power.c2.viz.unit	mA (ESP32, aprox.)
@@ -1323,7 +1323,7 @@ tr-power.c6.viz.items.2.l	LoRa (mensagem curta)
 tr-power.c7.title	Escolhendo a química da bateria
 tr-power.c7.text	As células de íon-lítio dão 3,0–4,2 V e são recarregáveis; as LiFePO4 são mais seguras, com 3,2 V nominais; o lítio primário (como as AA de lítio ou Li-SOCl₂) serve para anos sem recarga no frio.
 tr-power.c7.viz.items.0.a	Li-ion 18650
-tr-power.c7.viz.items.0.b	recarregável, ~3.000 mAh
+tr-power.c7.viz.items.0.b	recarregável, ~3,000 mAh
 tr-power.c7.viz.items.1.a	LiFePO4
 tr-power.c7.viz.items.1.b	mais segura, 3,2 V
 tr-power.c7.viz.items.2.a	Li-SOCl₂
@@ -1478,7 +1478,7 @@ tr-scope.c4.viz.items.1.w	terra num nó que não é terra
 tr-scope.c4.viz.items.1.r	curto-circuito
 tr-scope.c5.title	Método de depuração
 tr-scope.c5.text	Comece pela alimentação e vá para fora: confira as tensões de alimentação, depois os clocks, depois os sinais. Mude uma coisa de cada vez e anote os resultados.
-tr-scope.c5.viz.steps.0	Confira as linhas de alimentação
+tr-scope.c5.viz.steps.0	Confira a alimentação
 tr-scope.c5.viz.steps.1	Confira os clocks
 tr-scope.c5.viz.steps.2	Confira os sinais
 tr-scope.c5.viz.steps.3	Mude uma coisa de cada vez
@@ -1508,3 +1508,265 @@ tr-scope.c9.viz.items.2	Osciloscópio de entrada
 tr-scope.c9.viz.items.3	Fonte de bancada com limite de corrente
 tr-noise.title	Ruído, aterramento e desacoplamento
 tr-noise.summary	Por que os circuitos se comportam mal e como acalmá-los.
+tr-noise.q0.q	Onde deve ficar um capacitor de desacoplamento de 100 nF?
+tr-noise.q0.o0	Em qualquer lugar da placa
+tr-noise.q0.o1	Bem ao lado dos pinos de alimentação do chip
+tr-noise.q0.o2	Na bateria
+tr-noise.q0.x	Distância curta significa alimentação local rápida.
+tr-noise.q1.q	O que a histerese evita?
+tr-noise.q1.o0	Perda de energia
+tr-noise.q1.o1	Liga-desliga rápido e intermitente em torno de um limiar
+tr-noise.q1.o2	Loops de terra
+tr-noise.q1.x	Limiares de ligar e desligar separados.
+tr-noise.q2.q	Por que usar par trançado em cabos longos de sensores?
+tr-noise.q2.o0	É mais barato
+tr-noise.q2.o1	O ruído é captado igualmente nos dois fios e se cancela
+tr-noise.q2.o2	Conduz mais corrente
+tr-noise.q2.x	O trançado cancela o ruído induzido.
+tr-noise.c0.title	Capacitores de desacoplamento
+tr-noise.c0.text	Todo chip precisa de um pequeno capacitor (normalmente 100 nF) bem ao lado dos pinos de alimentação. Quando o chip puxa corrente de repente, o capacitor a fornece localmente, evitando quedas na linha de alimentação.
+tr-noise.c0.viz.steps.0	O chip chaveia
+tr-noise.c0.viz.steps.1	Demanda súbita de corrente
+tr-noise.c0.viz.steps.2	100 nF ao lado a fornece
+tr-noise.c0.viz.steps.3	A linha fica estável
+tr-noise.c1.title	Capacitância de reserva
+tr-noise.c1.text	Além dos pequenos capacitores de desacoplamento, coloque um eletrolítico ou cerâmico maior (10–470 µF) onde a alimentação entra na placa e perto de motores ou rádios, para absorver quedas mais lentas.
+tr-noise.c1.viz.l.t	Desacoplamento 100 nF
+tr-noise.c1.viz.l.items.0	ao lado de cada chip
+tr-noise.c1.viz.l.items.1	picos rápidos
+tr-noise.c1.viz.r.t	Reserva 10–470 µF
+tr-noise.c1.viz.r.items.0	na entrada de alimentação
+tr-noise.c1.viz.r.items.1	quedas mais lentas
+tr-noise.c2.title	Loops de terra
+tr-noise.c2.text	Se duas partes de um sistema forem aterradas em pontos diferentes, com potenciais diferentes, passa corrente pelos fios de terra, causando zumbido no áudio ou erros nos sensores.
+tr-noise.c2.viz.items.0.w	terra em dois pontos distantes
+tr-noise.c2.viz.items.0.r	um único ponto de terra
+tr-noise.c2.viz.items.1.w	zumbido no áudio
+tr-noise.c2.viz.items.1.r	quebre o loop com isolamento
+tr-noise.c3.title	Aterramento em estrela
+tr-noise.c3.text	Leve os terras das partes ruidosas (motores, potência) e das partes sensíveis (sensores) separadamente até um único ponto, para que as correntes ruidosas não passem pelos caminhos de terra sensíveis.
+tr-noise.c3.viz.root	Ponto de terra em estrela
+tr-noise.c3.viz.items.0	Terra do driver do motor
+tr-noise.c3.viz.items.1	Terra do microcontrolador
+tr-noise.c3.viz.items.2	Terra do sensor
+tr-noise.c4.title	Cabos longos de sensores
+tr-noise.c4.text	Fios longos funcionam como antenas. Use pares trançados, cabo blindado, sinais de impedância mais baixa, ou sinais digitais e diferenciais para distâncias longas.
+tr-noise.c4.viz.items.0	Par trançado
+tr-noise.c4.viz.items.1	Cabo blindado, blindagem aterrada numa ponta
+tr-noise.c4.viz.items.2	Sinais digitais ou diferenciais
+tr-noise.c4.viz.items.3	Filtro na entrada
+tr-noise.c5.title	Pull-ups e entradas flutuantes
+tr-noise.c5.text	Uma entrada desconectada capta ruído e lê valores aleatórios, e pode até aumentar o consumo. Defina sempre o nível dela com um pull-up ou pull-down.
+tr-noise.c5.viz.items.0.w	entrada não usada flutuando
+tr-noise.c5.viz.items.0.r	ative pull-up ou pull-down
+tr-noise.c5.viz.items.1.w	entrada do botão aleatória
+tr-noise.c5.viz.items.1.r	ponha um pull-up
+tr-noise.c6.title	Filtragem por software
+tr-noise.c6.text	Mesmo com um bom hardware, as leituras podem oscilar. Os filtros de mediana removem picos; as médias móveis suavizam o ruído; a histerese impede que os limiares fiquem piscando.
+tr-noise.c6.viz.items.0.a	mediana
+tr-noise.c6.viz.items.0.b	remove picos
+tr-noise.c6.viz.items.1.a	média móvel
+tr-noise.c6.viz.items.1.b	suaviza ruído
+tr-noise.c6.viz.items.2.a	histerese
+tr-noise.c6.viz.items.2.b	limiares liga/desliga estáveis
+tr-noise.c7.title	Histerese
+tr-noise.c7.text	Um termostato ajustado em 20 °C ficaria ligando e desligando sem parar em torno de 20. Com histerese, ele liga em 19,5 e desliga em 20,5. Os termostatos do ESPHome e do Home Assistant suportam isso.
+tr-noise.c7.viz.unit	°C
+tr-noise.c7.viz.items.0.l	aquecimento liga
+tr-noise.c7.viz.items.1.l	aquecimento desliga
+tr-noise.c8.title	Ruído de chaveamento
+tr-noise.c8.text	Conversores buck e motores criam bordas rápidas que irradiam ruído. Mantenha os laços deles pequenos, coloque os capacitores de entrada perto e separe-os dos circuitos analógicos.
+tr-noise.c8.viz.items.0	Laços de chaveamento pequenos
+tr-noise.c8.viz.items.1	Capacitores de entrada perto
+tr-noise.c8.viz.items.2	Circuitos analógicos longe
+tr-noise.c8.viz.items.3	Plano de terra contínuo
+tr-noise.c9.title	EMC
+tr-noise.c9.text	Os produtos comerciais precisam passar em testes de compatibilidade eletromagnética (EMC): não podem emitir interferência demais nem ser perturbados por ela. Na Europa, a marcação CE cobre isso.
+tr-noise.c9.viz.l.t	Emissões
+tr-noise.c9.viz.l.items.0	não perturbar os outros
+tr-noise.c9.viz.l.items.1	rádio, TV
+tr-noise.c9.viz.r.t	Imunidade
+tr-noise.c9.viz.r.items.0	resistir a interferência
+tr-noise.c9.viz.r.items.1	estática, surtos, rádios próximos
+tr-displays.title	Displays e LEDs
+tr-displays.summary	Acendendo as coisas, de um LED a uma tela.
+tr-displays.q0.q	Quanta corrente 100 LEDs WS2812B podem puxar no branco total?
+tr-displays.q0.o0	0,6 A
+tr-displays.q0.o1	6 A
+tr-displays.q0.o2	60 A
+tr-displays.q0.x	100 × 60 mA = 6 A.
+tr-displays.q1.q	Qual display mantém a imagem sem energia?
+tr-displays.q1.o0	OLED
+tr-displays.q1.o1	LCD
+tr-displays.q1.o2	E-paper
+tr-displays.q1.x	O e-paper é biestável.
+tr-displays.q2.q	Luz vermelha mais luz verde parece…
+tr-displays.q2.o0	Azul
+tr-displays.q2.o1	Amarelo
+tr-displays.q2.o2	Branco
+tr-displays.q2.x	Mistura aditiva de cores.
+tr-displays.c0.title	Brilho e corrente do LED
+tr-displays.c0.text	O brilho de um LED depende da corrente, por isso os LEDs são acionados com um resistor ou um driver de corrente constante, nunca direto de uma fonte de tensão.
+tr-displays.c0.viz.steps.0	Tensão da fonte
+tr-displays.c0.viz.steps.1	Resistor ou driver de corrente
+tr-displays.c0.viz.steps.2	LED na corrente nominal
+tr-displays.c0.viz.steps.3	Brilho estável
+tr-displays.c1.title	LEDs endereçáveis
+tr-displays.c1.text	As fitas WS2812B ("NeoPixel") têm um controlador minúsculo em cada LED. Um único fio de dados define a cor de cada LED individualmente, perfeito para efeitos controlados por um ESP32.
+tr-displays.c1.viz.steps.0	Pino de dados do ESP32
+tr-displays.c1.viz.steps.1	O LED 1 pega a sua cor
+tr-displays.c1.viz.steps.2	Repassa o resto
+tr-displays.c1.viz.steps.3	LED 2, LED 3…
+tr-displays.c2.title	Alimentando fitas de LED
+tr-displays.c2.text	Cada WS2812B pode puxar cerca de 60 mA no branco total. Fitas longas precisam de fios grossos e de alimentação injetada em vários pontos.
+tr-displays.c2.example.0	5 m × 60 LEDs/m
+tr-displays.c2.example.1	300 × 0,06
+tr-displays.c2.example.2	≈ 18 A no branco total: fonte de 5 V grande
+tr-displays.c2.viz.f	I ≈ LEDs × 60 mA
+tr-displays.c2.viz.items.0.s	60 LEDs
+tr-displays.c2.viz.items.0.m	um metro
+tr-displays.c2.viz.items.1.s	≈ 3,6 A
+tr-displays.c2.viz.items.1.m	no branco total, 5 V
+tr-displays.c3.title	Convertendo o nível do sinal de dados
+tr-displays.c3.text	As fitas WS2812B a 5 V podem não ler de forma confiável um sinal de dados de 3,3 V vindo de um ESP32. Um conversor de nível simples (como um 74AHCT125) ou um primeiro LED "de sacrifício" resolve a cintilação.
+tr-displays.c3.viz.items.0.w	cores aleatórias e cintilação
+tr-displays.c3.viz.items.0.r	conversor de nível na linha de dados
+tr-displays.c3.viz.items.1.w	fio de dados longo
+tr-displays.c3.viz.items.1.r	ponha um resistor de 330 Ω e encurte o fio
+tr-displays.c4.title	LCDs de caracteres
+tr-displays.c4.text	O clássico LCD 16×2 mostra duas linhas de texto. Com um módulo I²C acoplado, ele precisa de só quatro fios.
+tr-displays.c4.viz.items.0.a	LCD 16×2
+tr-displays.c4.viz.items.0.b	2 linhas de 16 caracteres
+tr-displays.c4.viz.items.1.a	módulo I²C
+tr-displays.c4.viz.items.1.b	4 fios
+tr-displays.c4.viz.items.2.a	luz de fundo
+tr-displays.c4.viz.items.2.b	ajustável
+tr-displays.c5.title	Displays OLED
+tr-displays.c5.text	As telinhas OLED (como a SSD1306 de 0,96", 128×64) dão gráficos nítidos sem luz de fundo. Cada pixel emite luz, então o preto não gasta energia. Imagens estáticas podem marcar a tela com o tempo.
+tr-displays.c5.viz.l.t	OLED
+tr-displays.c5.viz.l.items.0	pretos profundos
+tr-displays.c5.viz.l.items.1	pequeno
+tr-displays.c5.viz.l.items.2	pode marcar
+tr-displays.c5.viz.r.t	LCD/TFT
+tr-displays.c5.viz.r.items.0	retroiluminado
+tr-displays.c5.viz.r.items.1	maior e mais barato
+tr-displays.c5.viz.r.items.2	colorido
+tr-displays.c6.title	E-paper
+tr-displays.c6.text	Os displays de e-paper mantêm a imagem sem gastar nada de energia, como um Kindle. Eles atualizam devagar, mas são perfeitos para painéis a bateria atualizados a cada poucos minutos.
+tr-displays.c6.viz.l.t	E-paper
+tr-displays.c6.viz.l.items.0	sem energia para manter a imagem
+tr-displays.c6.viz.l.items.1	atualização lenta
+tr-displays.c6.viz.l.items.2	legível no sol
+tr-displays.c6.viz.r.t	TFT
+tr-displays.c6.viz.r.items.0	rápido e colorido
+tr-displays.c6.viz.r.items.1	precisa de energia constante
+tr-displays.c7.title	Multiplexação
+tr-displays.c7.text	Para acionar muitos LEDs com poucos pinos, acenda-os uma fileira de cada vez, bem rápido. A persistência da visão faz o display parecer estável.
+tr-displays.c7.viz.steps.0	Acende a fileira 1
+tr-displays.c7.viz.steps.1	Fileira 2
+tr-displays.c7.viz.steps.2	Fileira 3
+tr-displays.c7.viz.steps.3	Repete centenas de vezes por segundo
+tr-displays.c8.title	Mistura de cores
+tr-displays.c8.text	Os LEDs RGB misturam luz vermelha, verde e azul. Vermelho + verde no máximo parece amarelo; os três no máximo formam o branco.
+tr-displays.c8.viz.items.0.a	vermelho + verde
+tr-displays.c8.viz.items.0.b	amarelo
+tr-displays.c8.viz.items.1.a	verde + azul
+tr-displays.c8.viz.items.1.b	ciano
+tr-displays.c8.viz.items.2.a	vermelho + azul
+tr-displays.c8.viz.items.2.b	magenta
+tr-displays.c8.viz.items.3.a	os três
+tr-displays.c8.viz.items.3.b	branco
+tr-displays.c9.title	Displays no ESPHome
+tr-displays.c9.text	O ESPHome suporta muitos displays: mostre temperaturas, relógios ou estados do Home Assistant com poucas linhas de configuração e uma lambda para desenhar.
+tr-displays.c9.viz.items.0	OLED SSD1306
+tr-displays.c9.viz.items.1	TFT ILI9341
+tr-displays.c9.viz.items.2	E-paper Waveshare
+tr-displays.c9.viz.items.3	Fitas WS2812 via componente light
+tr-computer.title	Como um computador funciona
+tr-computer.summary	Dos transistores aos programas rodando.
+tr-computer.q0.q	Quais são as etapas do ciclo da CPU?
+tr-computer.q0.o0	Carregar, salvar, sair
+tr-computer.q0.o1	Buscar, decodificar, executar
+tr-computer.q0.o2	Ler, escrever, imprimir
+tr-computer.q0.x	O laço central de todo processador.
+tr-computer.q1.q	Por que as CPUs têm caches?
+tr-computer.q1.o0	Para guardar arquivos
+tr-computer.q1.o1	Para manter os dados mais usados perto e com acesso rápido
+tr-computer.q1.o2	Para resfriar o chip
+tr-computer.q1.x	A RAM é lenta comparada com a CPU.
+tr-computer.q2.q	Qual conjunto de instruções é aberto e usado no ESP32-C3?
+tr-computer.q2.o0	x86
+tr-computer.q2.o1	ARM
+tr-computer.q2.o2	RISC-V
+tr-computer.q2.x	O RISC-V é de código aberto.
+tr-computer.c0.title	O ciclo da CPU
+tr-computer.c0.text	Um processador repete um ciclo bilhões de vezes por segundo: busca uma instrução na memória, decodifica, executa e passa para a próxima.
+tr-computer.c0.viz.steps.0	Buscar a instrução
+tr-computer.c0.viz.steps.1	Decodificar
+tr-computer.c0.viz.steps.2	Executar
+tr-computer.c0.viz.steps.3	Próxima instrução
+tr-computer.c1.title	As instruções são simples
+tr-computer.c1.text	Cada instrução faz algo minúsculo: somar dois números, compará-los, carregar da memória, pular para outra instrução. Tudo o que é complexo é feito de milhões delas.
+tr-computer.c1.viz.items.0	Carregar da memória
+tr-computer.c1.viz.items.1	Somar ou multiplicar
+tr-computer.c1.viz.items.2	Comparar
+tr-computer.c1.viz.items.3	Pular se condição
+tr-computer.c1.viz.items.4	Gravar na memória
+tr-computer.c2.title	Registradores e ULA
+tr-computer.c2.text	Os registradores são espaços de armazenamento minúsculos e ultrarrápidos dentro da CPU. A unidade lógica e aritmética (ULA) faz a matemática e a lógica de fato sobre eles.
+tr-computer.c2.viz.steps.0	Carregar valores nos registradores
+tr-computer.c2.viz.steps.1	A ULA os soma
+tr-computer.c2.viz.steps.2	Resultado num registrador
+tr-computer.c2.viz.steps.3	Gravar na memória
+tr-computer.c3.title	Compiladores
+tr-computer.c3.text	Você escreve código em uma linguagem como C++ ou Python; um compilador ou interpretador o transforma em instruções de máquina que a CPU entende.
+tr-computer.c3.viz.steps.0	Código-fonte
+tr-computer.c3.viz.steps.1	Compilador
+tr-computer.c3.viz.steps.2	Código de máquina
+tr-computer.c3.viz.steps.3	A CPU executa
+tr-computer.c4.title	Núcleos e threads
+tr-computer.c4.text	Os chips modernos têm vários núcleos, cada um um processador completo, executando tarefas separadas ao mesmo tempo. O ESP32 tem dois; notebooks têm 8 ou mais.
+tr-computer.c4.viz.unit	núcleos (típico)
+tr-computer.c4.viz.items.0.l	Arduino Uno
+tr-computer.c4.viz.items.1.l	ESP32
+tr-computer.c4.viz.items.2.l	Celular
+tr-computer.c4.viz.items.3.l	Notebook
+tr-computer.c4.viz.items.4.l	Servidor
+tr-computer.c5.title	Clock não é tudo
+tr-computer.c5.text	O desempenho depende das instruções por ciclo de clock, do tamanho do cache, da velocidade da memória e do paralelismo, não só dos GHz. Um chip mais novo de 3 GHz pode ser muito mais rápido que um mais antigo de 4 GHz.
+tr-computer.c5.viz.items.0	Instruções por ciclo
+tr-computer.c5.viz.items.1	Tamanho do cache
+tr-computer.c5.viz.items.2	Largura de banda da memória
+tr-computer.c5.viz.items.3	Número de núcleos
+tr-computer.c5.viz.items.4	Frequência de clock
+tr-computer.c6.title	Caches
+tr-computer.c6.text	Buscar dados na RAM demora muito em termos de CPU. Os caches mantêm os dados usados recentemente perto do núcleo. A maioria dos programas reutiliza dados, então os caches acertam na maior parte das vezes.
+tr-computer.c6.viz.unit	tempo de acesso aprox. (ns)
+tr-computer.c6.viz.items.0.l	Cache L1
+tr-computer.c6.viz.items.1.l	Cache L2
+tr-computer.c6.viz.items.2.l	RAM
+tr-computer.c6.viz.items.3.l	SSD
+tr-computer.c7.title	Sistemas operacionais
+tr-computer.c7.text	Um sistema operacional divide a CPU, a memória e os dispositivos entre muitos programas, alternando entre eles milhares de vezes por segundo para que cada um pareça rodar sem parar.
+tr-computer.c7.viz.root	Sistema operacional
+tr-computer.c7.viz.items.0	Escalona programas
+tr-computer.c7.viz.items.1	Gerencia memória
+tr-computer.c7.viz.items.2	Controla dispositivos
+tr-computer.c7.viz.items.3	Cuida de arquivos e rede
+tr-computer.c8.title	Arquiteturas
+tr-computer.c8.text	O x86 domina PCs e servidores; o ARM domina os celulares e está se espalhando para notebooks e data centers; o RISC-V é um conjunto de instruções aberto que cresce nos microcontroladores, como o ESP32-C3.
+tr-computer.c8.viz.items.0.a	x86
+tr-computer.c8.viz.items.0.b	PCs e servidores
+tr-computer.c8.viz.items.1.a	ARM
+tr-computer.c8.viz.items.1.b	celulares, Macs da Apple, servidores
+tr-computer.c8.viz.items.2.a	RISC-V
+tr-computer.c8.viz.items.2.b	aberto, microcontroladores
+tr-computer.c8.viz.items.3.a	Xtensa
+tr-computer.c8.viz.items.3.b	ESP32 original
+tr-computer.c9.title	A lei de Moore
+tr-computer.c9.text	Em 1965, Gordon Moore observou que o número de transistores em um chip dobrava mais ou menos a cada dois anos. A tendência se manteve por décadas, embora tenha desacelerado à medida que os transistores se aproximam de tamanhos atômicos.
+tr-computer.c9.viz.events.0.l	Intel 4004, 2,300 transistores
+tr-computer.c9.viz.events.1.l	Pentium, 3 milhões
+tr-computer.c9.viz.events.2.l	~1 bilhão
+tr-computer.c9.viz.events.3.y	anos 2020
+tr-computer.c9.viz.events.3.l	50+ bilhões

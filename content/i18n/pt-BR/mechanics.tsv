@@ -20,10 +20,10 @@ me-forces.q2.o1	na mesma velocidade
 me-forces.q2.o2	3× mais devagar, com 3× o torque
 me-forces.q2.x	A relação é 36 ÷ 12 = 3: um terço da velocidade, o triplo do torque.
 me-forces.q3.q	Para levantar 200 kg a 1 m de altura com uma rampa de 5 m (sem atrito), você precisa de cerca de…
-me-forces.q3.o0	1.962 N
+me-forces.q3.o0	1,962 N
 me-forces.q3.o1	392 N
 me-forces.q3.o2	40 N
-me-forces.q3.x	1.962 × 1 ÷ 5 ≈ 392 N.
+me-forces.q3.x	1,962 × 1 ÷ 5 ≈ 392 N.
 me-forces.q4.q	Um torquímetro ajustado para 120 N·m, com um cabo de 0,4 m, exige uma força de…
 me-forces.q4.o0	48 N
 me-forces.q4.o1	300 N
@@ -293,8 +293,8 @@ me-stress.summary	Como os materiais esticam, dobram e se rompem.
 me-stress.q0.q	20 kN em uma barra de 400 mm² geram uma tensão de…
 me-stress.q0.o0	5 MPa
 me-stress.q0.o1	50 MPa
-me-stress.q0.o2	8.000 MPa
-me-stress.q0.x	20.000 ÷ 400 = 50 MPa.
+me-stress.q0.o2	8,000 MPa
+me-stress.q0.x	20,000 ÷ 400 = 50 MPa.
 me-stress.q1.q	Colocar uma tábua em pé (de cutelo) a deixa muito mais rígida porque…
 me-stress.q1.o0	Fica mais pesada
 me-stress.q1.o1	A rigidez à flexão cresce com o cubo da altura
@@ -308,7 +308,7 @@ me-stress.q2.x	O aço dúctil se alonga primeiro.
 me-stress.c0.title	Tensão
 me-stress.c0.text	Tensão é a força dividida pela área que a suporta. A mesma força em uma barra mais fina cria mais tensão. Unidades: pascals (N/m²), geralmente megapascals (MPa).
 me-stress.c0.example.0	10 kN em uma barra de aço de 100 mm²
-me-stress.c0.example.1	10.000 ÷ 100
+me-stress.c0.example.1	10,000 ÷ 100
 me-stress.c0.example.2	= 100 MPa
 me-stress.c0.viz.f	σ = F ÷ A
 me-stress.c0.viz.items.0.s	σ
@@ -320,7 +320,7 @@ me-stress.c0.viz.items.2.m	seção transversal (mm²)
 me-stress.c1.title	Deformação
 me-stress.c1.text	A deformação é quanto um material se alonga em relação ao seu comprimento original. Não tem unidade e costuma ser minúscula.
 me-stress.c1.example.0	Uma barra de 2 m se alonga 1 mm
-me-stress.c1.example.1	1 ÷ 2.000
+me-stress.c1.example.1	1 ÷ 2,000
 me-stress.c1.example.2	ε = 0,0005
 me-stress.c1.viz.f	ε = ΔL ÷ L
 me-stress.c1.viz.items.0.s	ΔL
@@ -489,13 +489,13 @@ me-energy.q0.x	A energia cresce com o quadrado da velocidade.
 me-energy.q1.q	Levantar 20 kg a 2 m de altura exige mais ou menos quanto trabalho?
 me-energy.q1.o0	40 J
 me-energy.q1.o1	392 J
-me-energy.q1.o2	2.000 J
+me-energy.q1.o2	2,000 J
 me-energy.q1.x	20 × 9,81 × 2 ≈ 392 J.
 me-energy.q2.q	1 kWh equivale a…
-me-energy.q2.o0	1.000 J
+me-energy.q2.o0	1,000 J
 me-energy.q2.o1	3,6 MJ
 me-energy.q2.o2	60 J
-me-energy.q2.x	1.000 W × 3.600 s.
+me-energy.q2.x	1,000 W × 3,600 s.
 me-energy.c0.title	Trabalho
 me-energy.c0.text	Há trabalho quando uma força desloca algo: força vezes distância. Levante uma sacola de 10 kg a 1 m de altura e você realiza cerca de 98 J de trabalho.
 me-energy.c0.viz.f	W = F × d
@@ -508,7 +508,7 @@ me-energy.c0.viz.items.2.m	joules (J)
 me-energy.c1.title	Energia potencial
 me-energy.c1.text	Erguer algo armazena energia, que pode ser liberada quando ele cai. As usinas hidrelétricas aproveitam isso com milhões de toneladas de água.
 me-energy.c1.example.0	1 tonelada de água caindo 100 m
-me-energy.c1.example.1	1.000 × 9,81 × 100
+me-energy.c1.example.1	1,000 × 9,81 × 100
 me-energy.c1.example.2	≈ 0,98 MJ ≈ 0,27 kWh
 me-energy.c1.viz.f	E = m × g × h
 me-energy.c1.viz.items.0.s	m
@@ -519,7 +519,7 @@ me-energy.c1.viz.items.2.s	h
 me-energy.c1.viz.items.2.m	altura (m)
 me-energy.c2.title	Energia cinética
 me-energy.c2.text	Objetos em movimento carregam uma energia que cresce com o quadrado da velocidade. Dobre a velocidade e a energia quadruplica, e é por isso que a velocidade pesa tanto nas batidas.
-me-energy.c2.example.0	Carro de 1.500 kg a 50 km/h vs. 100 km/h
+me-energy.c2.example.0	Carro de 1,500 kg a 50 km/h vs. 100 km/h
 me-energy.c2.example.1	145 kJ vs. 579 kJ
 me-energy.c2.example.2	4× a energia
 me-energy.c2.viz.f	E = ½ × m × v²
@@ -561,7 +561,7 @@ me-energy.c7.viz.f	1 kWh = 3,6 MJ
 me-energy.c7.viz.items.0.s	1 kW
 me-energy.c7.viz.items.0.m	potência
 me-energy.c7.viz.items.1.s	1 h
-me-energy.c7.viz.items.1.m	3.600 s
+me-energy.c7.viz.items.1.m	3,600 s
 me-energy.c8.title	A energia dos combustíveis
 me-energy.c8.text	Um litro de gasolina contém cerca de 9 kWh de energia química, e é por isso que os combustíveis líquidos eram tão difíceis de superar. As baterias de lítio armazenam muito menos por quilo, mas os sistemas de tração elétricos usam a energia de forma muito mais eficiente.
 me-energy.c8.viz.unit	kWh por kg (aprox.)
@@ -585,9 +585,9 @@ me-fluids.q0.o2	10 bar
 me-fluids.q0.x	Cerca de 1 bar a cada 10 m.
 me-fluids.q1.q	Um macaco hidráulico com relação de áreas de 20 transforma 50 N em…
 me-fluids.q1.o0	70 N
-me-fluids.q1.o1	1.000 N
+me-fluids.q1.o1	1,000 N
 me-fluids.q1.o2	2,5 N
-me-fluids.q1.x	50 × 20 = 1.000 N.
+me-fluids.q1.x	50 × 20 = 1,000 N.
 me-fluids.q2.q	Por que um navio de aço flutua?
 me-fluids.q2.o0	O aço é leve
 me-fluids.q2.o1	Sua forma desloca um peso de água maior que o seu próprio
@@ -606,7 +606,7 @@ me-fluids.c1.title	Pressão na água
 me-fluids.c1.text	A pressão da água aumenta com a profundidade, cerca de 1 bar a cada 10 metros. Os mergulhadores sentem isso nos ouvidos; as barragens são mais grossas na base pelo mesmo motivo.
 me-fluids.c1.viz.f	p = ρ × g × h
 me-fluids.c1.viz.items.0.s	ρ
-me-fluids.c1.viz.items.0.m	1.000 kg/m³
+me-fluids.c1.viz.items.0.m	1,000 kg/m³
 me-fluids.c1.viz.items.1.s	g
 me-fluids.c1.viz.items.2.s	h
 me-fluids.c1.viz.items.2.m	profundidade → 10 m ≈ 1 bar
@@ -621,7 +621,7 @@ me-fluids.c3.title	Princípio de Pascal
 me-fluids.c3.text	A pressão em um líquido confinado se transmite igualmente em todas as direções. Empurre um pistão pequeno e um pistão grande sente a mesma pressão sobre uma área maior, o que dá uma força maior.
 me-fluids.c3.example.0	100 N sobre 1 cm², saída de 50 cm²
 me-fluids.c3.example.1	100 × 50
-me-fluids.c3.example.2	= 5.000 N erguidos
+me-fluids.c3.example.2	= 5,000 N erguidos
 me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
 me-fluids.c3.viz.items.0.s	F₁
 me-fluids.c3.viz.items.0.m	empurrão pequeno
@@ -742,12 +742,12 @@ me-flight.c6.viz.steps.1	O compressor o comprime
 me-flight.c6.viz.steps.2	Combustão
 me-flight.c6.viz.steps.3	Turbina e escape impulsionam o avião
 me-flight.c7.title	Por que os aviões comerciais voam alto
-me-flight.c7.text	A cerca de 10–12 km de altitude, o ar é rarefeito, então o arrasto é muito menor e os motores a jato são mais eficientes. As cabines são pressurizadas para o equivalente a cerca de 2.000 m.
+me-flight.c7.text	A cerca de 10–12 km de altitude, o ar é rarefeito, então o arrasto é muito menor e os motores a jato são mais eficientes. As cabines são pressurizadas para o equivalente a cerca de 2,000 m.
 me-flight.c7.viz.items.0.v	11 km
 me-flight.c7.viz.items.0.l	altitude de cruzeiro típica
 me-flight.c7.viz.items.1.v	−55 °C
 me-flight.c7.viz.items.1.l	ar externo
-me-flight.c7.viz.items.2.v	~2.000 m
+me-flight.c7.viz.items.2.v	~2,000 m
 me-flight.c7.viz.items.2.l	altitude de pressão da cabine
 me-flight.c8.title	Superfícies de comando
 me-flight.c8.text	Os ailerons nas asas fazem o avião rolar, o profundor na cauda o inclina para cima e para baixo, e o leme de direção o guina para a esquerda e para a direita.
@@ -798,7 +798,7 @@ me-bridges.c1.viz.items.1.b	viadutos de rodovias
 me-bridges.c1.viz.items.2.a	estrutura
 me-bridges.c1.viz.items.2.b	flexão
 me-bridges.c2.title	Pontes em arco
-me-bridges.c2.text	Os arcos levam as cargas em compressão até encontros robustos. Arcos de pedra duram há 2.000 anos. A ponte Dom Luís I, no Porto (1886), é um arco de ferro de dois tabuleiros sobre o Douro.
+me-bridges.c2.text	Os arcos levam as cargas em compressão até encontros robustos. Arcos de pedra duram há 2,000 anos. A ponte Dom Luís I, no Porto (1886), é um arco de ferro de dois tabuleiros sobre o Douro.
 me-bridges.c2.viz.items.0.a	funciona por
 me-bridges.c2.viz.items.0.b	compressão
 me-bridges.c2.viz.items.1.a	precisa de
@@ -898,3 +898,918 @@ me-buildings.c3.viz.items.1.w	trincas aumentando
 me-buildings.c3.viz.items.1.r	monitorar e investigar
 me-buildings.c4.title	Paredes e estruturas
 me-buildings.c4.text	Os edifícios tradicionais têm paredes portantes de pedra ou tijolo. Os modernos usam estruturas de pilares e vigas de concreto ou aço, e as paredes apenas preenchem os vãos.
+me-buildings.c4.viz.l.t	Paredes portantes
+me-buildings.c4.viz.l.items.0	paredes sustentam os pisos
+me-buildings.c4.viz.l.items.1	poucas aberturas
+me-buildings.c4.viz.r.t	Estrutura
+me-buildings.c4.viz.r.items.0	pilares e vigas sustentam as cargas
+me-buildings.c4.viz.r.items.1	paredes só fecham
+me-buildings.c5.title	A gaiola pombalina
+me-buildings.c5.text	Depois do terremoto de 1755, Lisboa foi reconstruída com a "gaiola pombalina": uma treliça de madeira com travamentos diagonais dentro das paredes de alvenaria, um dos primeiros sistemas construtivos antissísmicos da Europa.
+me-buildings.c5.viz.steps.0	Terremoto de 1755
+me-buildings.c5.viz.steps.1	Reconstrução da Baixa
+me-buildings.c5.viz.steps.2	Gaiola de madeira nas paredes
+me-buildings.c5.viz.steps.3	Mais resistência a sismos
+me-buildings.c6.title	Projeto antissísmico
+me-buildings.c6.text	As normas sísmicas exigem que os edifícios oscilem sem desabar: ligações dúcteis, contraventamentos, paredes de cisalhamento, formas regulares. Alguns usam isoladores de base, que deixam o solo se mover por baixo deles.
+me-buildings.c6.viz.items.0	Pórticos dúcteis
+me-buildings.c6.viz.items.1	Paredes de cisalhamento e travamento
+me-buildings.c6.viz.items.2	Planta regular e simétrica
+me-buildings.c6.viz.items.3	Isolamento de base em edifícios-chave
+me-buildings.c7.title	O vento nos edifícios altos
+me-buildings.c7.text	O vento empurra os edifícios altos e os faz oscilar. Os engenheiros os enrijecem com núcleos e outriggers, e alguns arranha-céus usam enormes amortecedores de massa sintonizada para anular o movimento.
+me-buildings.c7.viz.steps.0	O vento empurra a torre
+me-buildings.c7.viz.steps.1	Ela oscila
+me-buildings.c7.viz.steps.2	O amortecedor vai para o outro lado
+me-buildings.c7.viz.steps.3	Movimento reduzido
+me-buildings.c8.title	Umidade e infiltrações
+me-buildings.c8.text	A água é inimiga dos edifícios: umidade ascendente, vazamentos e condensação causam apodrecimento, mofo e corrosão. Barreiras impermeabilizantes, bons telhados, calhas e ventilação a mantêm do lado de fora.
+me-buildings.c8.viz.items.0	Barreira contra umidade
+me-buildings.c8.viz.items.1	Telhado e rufos em bom estado
+me-buildings.c8.viz.items.2	Calhas e drenagem
+me-buildings.c8.viz.items.3	Ventilação
+me-buildings.c8.viz.items.4	Barreiras de vapor
+me-buildings.c9.title	Burj Khalifa
+me-buildings.c9.text	O edifício mais alto do mundo, em Dubai, tem 828 m de altura. Sua planta em Y e seus recuos confundem o vento, e suas fundações incluem 192 estacas de cerca de 50 m de comprimento.
+me-buildings.c9.viz.items.0.v	828 m
+me-buildings.c9.viz.items.0.l	altura
+me-buildings.c9.viz.items.1.l	andares
+me-buildings.c9.viz.items.2.l	estacas (aprox.)
+me-engines.title	Motores
+me-engines.summary	Como os motores a gasolina e a diesel transformam combustível em movimento.
+me-engines.q0.q	O que inflama o combustível em um motor a diesel?
+me-engines.q0.o0	Uma vela de ignição
+me-engines.q0.o1	O calor do ar muito comprimido
+me-engines.q0.o2	A bateria
+me-engines.q0.x	Ignição por compressão.
+me-engines.q1.q	O que um turbocompressor usa para comprimir o ar de admissão?
+me-engines.q1.o0	Eletricidade
+me-engines.q1.o1	A energia dos gases de escape
+me-engines.q1.o2	O líquido de arrefecimento
+me-engines.q1.x	O escape faz a turbina girar.
+me-engines.q2.q	Mais ou menos que parcela da energia do combustível vira trabalho útil no motor a gasolina de um carro?
+me-engines.q2.o0	90%
+me-engines.q2.o1	Cerca de 30%
+me-engines.q2.o2	5%
+me-engines.q2.x	O resto se perde como calor.
+me-engines.c0.title	O ciclo de quatro tempos
+me-engines.c0.text	A maioria dos motores de carro repete quatro tempos: aspira ar e combustível, comprime a mistura, inflama-a para que empurre o pistão e expulsa os gases de escape. "Aspira, comprime, explode, expulsa."
+me-engines.c0.viz.steps.0	Admissão: aspira
+me-engines.c0.viz.steps.1	Compressão: comprime
+me-engines.c0.viz.steps.2	Explosão: expande
+me-engines.c0.viz.steps.3	Escape: expulsa
+me-engines.c1.title	Virabrequim
+me-engines.c1.text	Os pistões sobem e descem; o virabrequim transforma isso em rotação, como as pernas empurrando os pedais de uma bicicleta. Um volante de inércia suaviza os pulsos.
+me-engines.c1.viz.steps.0	Pistão empurrado para baixo
+me-engines.c1.viz.steps.1	Biela
+me-engines.c1.viz.steps.2	O virabrequim gira
+me-engines.c1.viz.steps.3	Câmbio e rodas
+me-engines.c2.title	Gasolina vs. diesel
+me-engines.c2.text	Os motores a gasolina usam uma faísca para inflamar a mistura. Os diesel comprimem tanto o ar que ele fica quente o bastante para inflamar o combustível injetado. Os diesel são mais eficientes, mas mais pesados, e produzem mais NOx e partículas.
+me-engines.c2.viz.l.t	Gasolina
+me-engines.c2.viz.l.items.0	ignição por faísca
+me-engines.c2.viz.l.items.1	mais leve
+me-engines.c2.viz.l.items.2	gira mais alto
+me-engines.c2.viz.r.t	Diesel
+me-engines.c2.viz.r.items.0	ignição por compressão
+me-engines.c2.viz.r.items.1	mais eficiente
+me-engines.c2.viz.r.items.2	mais torque
+me-engines.c3.title	Taxa de compressão
+me-engines.c3.text	Uma compressão maior extrai mais energia do combustível. Os motores a gasolina trabalham com cerca de 10:1, os diesel com cerca de 15–20:1. Alta demais em um motor a gasolina, ela causa batida de pino.
+me-engines.c3.viz.unit	taxa de compressão (típica)
+me-engines.c3.viz.items.0.l	Gasolina
+me-engines.c3.viz.items.1.l	Gasolina moderno (injeção direta)
+me-engines.c3.viz.items.2.l	Diesel
+me-engines.c4.title	Turbocompressores
+me-engines.c4.text	Um turbo usa os gases de escape para girar uma turbina que comprime o ar de admissão, forçando mais ar e combustível para dentro dos cilindros. Motores pequenos podem gerar muita potência.
+me-engines.c4.viz.steps.0	O escape gira a turbina
+me-engines.c4.viz.steps.1	O compressor força a entrada de ar
+me-engines.c4.viz.steps.2	Mais combustível queimado
+me-engines.c4.viz.steps.3	Mais potência
+me-engines.c5.title	Torque e potência
+me-engines.c5.text	Torque é a força de torção; potência é o torque vezes a velocidade de rotação. Os diesel entregam torque forte em baixa rotação; os motores a gasolina costumam atingir a potência máxima em alta rotação.
+me-engines.c5.viz.f	P = torque × ω
+me-engines.c5.viz.items.0.m	ω = rpm × 2π ÷ 60
+me-engines.c5.viz.items.1.s	300 N·m a 3,000 rpm
+me-engines.c5.viz.items.1.m	≈ 94 kW
+me-engines.c6.title	Câmbios
+me-engines.c6.text	Os motores funcionam melhor em uma faixa estreita de rotação. As marchas permitem que o motor fique nessa faixa, esteja o carro se arrastando ou em velocidade de cruzeiro. Os motores dos carros elétricos giram numa faixa tão ampla que geralmente precisam de uma só marcha.
+me-engines.c6.viz.l.t	Carro a combustão
+me-engines.c6.viz.l.items.0	5–10 marchas
+me-engines.c6.viz.l.items.1	mantém o motor na faixa ideal
+me-engines.c6.viz.r.t	Elétrico
+me-engines.c6.viz.r.items.0	geralmente uma marcha
+me-engines.c6.viz.r.items.1	motor vai de 0 a ~15,000 rpm
+me-engines.c7.title	Arrefecimento
+me-engines.c7.text	Cerca de um terço da energia do combustível sai como calor pelo sistema de arrefecimento, e outro terço pelo escape. O radiador, o líquido de arrefecimento e a válvula termostática mantêm o motor na temperatura ideal.
+me-engines.c7.viz.unit	% da energia do combustível (aprox.)
+me-engines.c7.viz.items.0.l	Trabalho útil
+me-engines.c7.viz.items.1.l	Calor do escape
+me-engines.c7.viz.items.2.l	Arrefecimento
+me-engines.c7.viz.items.3.l	Atrito etc.
+me-engines.c8.title	Controle de emissões
+me-engines.c8.text	Os catalisadores transformam monóxido de carbono, combustível não queimado e NOx em gases menos nocivos. Os filtros de partículas do diesel retêm a fuligem; o ARLA 32 (AdBlue) reduz o NOx nos diesel.
+me-engines.c8.viz.items.0.a	catalisador
+me-engines.c8.viz.items.0.b	limpa CO, HC, NOx
+me-engines.c8.viz.items.1.a	filtro de partículas
+me-engines.c8.viz.items.1.b	retém fuligem
+me-engines.c8.viz.items.2.a	AdBlue (SCR)
+me-engines.c8.viz.items.2.b	reduz NOx do diesel
+me-engines.c9.title	Híbridos
+me-engines.c9.text	Os híbridos combinam um motor a combustão com um motor elétrico e uma bateria, recuperando a energia das frenagens e ajudando o motor a trabalhar com eficiência. Os híbridos plug-in podem rodar dezenas de quilômetros só com eletricidade.
+me-engines.c9.viz.l.t	Híbrido pleno
+me-engines.c9.viz.l.items.0	autorrecarregável
+me-engines.c9.viz.l.items.1	bateria pequena
+me-engines.c9.viz.r.t	Híbrido plug-in
+me-engines.c9.viz.r.items.0	carrega na tomada
+me-engines.c9.viz.r.items.1	40–80 km elétricos
+me-ev.title	A engenharia de um carro elétrico
+me-ev.summary	Bateria, motor, inversor e gestão térmica.
+me-ev.q0.q	Que peça converte a corrente contínua da bateria em alternada para o motor?
+me-ev.q0.o0	O câmbio
+me-ev.q0.o1	O inversor
+me-ev.q0.o2	A porta de carregamento
+me-ev.q0.x	O inversor aciona o motor.
+me-ev.q1.q	Por que os carros elétricos perdem autonomia no inverno?
+me-ev.q1.o0	Os pneus encolhem
+me-ev.q1.o1	Baterias frias são menos eficientes e o aquecimento consome energia
+me-ev.q1.o2	O motor congela
+me-ev.q1.x	Tanto a química quanto o aquecimento da cabine pesam.
+me-ev.q2.q	Qual é um coeficiente de arrasto típico para um carro elétrico eficiente?
+me-ev.q2.o0	0,8
+me-ev.q2.o1	Cerca de 0,2
+me-ev.q2.o2	2,0
+me-ev.q2.x	Formas suaves dão um Cd perto de 0,2.
+me-ev.c0.title	O trem de força
+me-ev.c0.text	Um carro elétrico tem muito menos peças móveis do que um carro a combustão: um pacote de baterias, um inversor que transforma corrente contínua em alternada trifásica, um motor elétrico e uma redução de uma só marcha.
+me-ev.c0.viz.steps.0	Baterias (CC)
+me-ev.c0.viz.steps.1	Inversor
+me-ev.c0.viz.steps.2	Motor (CA trifásica)
+me-ev.c0.viz.steps.3	Redução
+me-ev.c0.viz.steps.4	Rodas
+me-ev.c1.title	A plataforma skate
+me-ev.c1.text	A maioria dos carros elétricos monta a bateria plana sob o assoalho, entre os eixos. Isso abaixa o centro de gravidade, libera espaço na cabine e enrijece a carroceria.
+me-ev.c1.viz.items.0	Bateria sob o assoalho
+me-ev.c1.viz.items.1	Centro de gravidade baixo
+me-ev.c1.viz.items.2	Assoalho da cabine plano
+me-ev.c1.viz.items.3	Motores nos eixos
+me-ev.c2.title	Inversores
+me-ev.c2.text	O inversor liga e desliga a corrente contínua da bateria milhares de vezes por segundo, com transistores de silício ou de carbeto de silício, para criar corrente alternada na frequência de que o motor precisa. O carbeto de silício reduz as perdas, principalmente nos carros de 800 V.
+me-ev.c2.viz.l.t	IGBT de silício
+me-ev.c2.viz.l.items.0	consolidado
+me-ev.c2.viz.l.items.1	mais barato
+me-ev.c2.viz.r.t	Carbeto de silício (SiC)
+me-ev.c2.viz.r.items.0	menos perdas
+me-ev.c2.viz.r.items.1	tensão mais alta
+me-ev.c2.viz.r.items.2	plataformas de 800 V
+me-ev.c3.title	Gestão térmica
+me-ev.c3.text	As baterias gostam de cerca de 20–40 °C. Placas de resfriamento líquido, bombas de calor e o pré-condicionamento as mantêm nessa faixa para carregamento rápido e vida longa, e reaproveitam o calor residual para aquecer a cabine.
+me-ev.c3.viz.unit	°C
+me-ev.c3.viz.items.0.l	carga lenta
+me-ev.c3.viz.items.1.l	ideal
+me-ev.c3.viz.items.2.l	limitação
+me-ev.c4.title	Eficiência em kWh/100 km
+me-ev.c4.text	O consumo de um carro elétrico é medido em kWh por 100 km. Um compacto pode gastar 14–16; um SUV grande, 20–24. Velocidade, frio e vento aumentam muito esse número.
+me-ev.c4.viz.unit	kWh/100 km (típico)
+me-ev.c4.viz.items.0.l	Hatch compacto
+me-ev.c4.viz.items.1.l	Sedã médio
+me-ev.c4.viz.items.2.l	SUV grande
+me-ev.c4.viz.items.3.l	Rodovia a 130 km/h
+me-ev.c5.title	Por que a autonomia cai no inverno
+me-ev.c5.text	Baterias frias têm resistência interna maior, e aquecer a cabine consome energia. A autonomia pode cair 20–30% em temperaturas negativas; as bombas de calor reduzem essa perda.
+me-ev.c5.viz.items.0	A química da bateria fica lenta no frio
+me-ev.c5.viz.items.1	Aquecimento da cabine
+me-ev.c5.viz.items.2	Ar mais denso, mais arrasto
+me-ev.c5.viz.items.3	Pneus de inverno
+me-ev.c6.title	Aerodinâmica
+me-ev.c6.text	Em velocidade de rodovia, a maior parte da energia vai para empurrar o ar. Os carros elétricos têm assoalho liso, maçanetas embutidas e coeficientes de arrasto baixos (Cd por volta de 0,2–0,3).
+me-ev.c6.viz.unit	Cd (aprox.)
+me-ev.c6.viz.items.0.l	SUV quadradão
+me-ev.c6.viz.items.1.l	Carro típico
+me-ev.c6.viz.items.2.l	Elétrico eficiente
+me-ev.c7.title	Frenagem regenerativa
+me-ev.c7.text	O motor funciona como gerador ao desacelerar, recuperando parte da energia. Os freios de atrito continuam lá para paradas bruscas e são menos usados, por isso duram muito mais.
+me-ev.c7.viz.steps.0	Tira o pé do pedal
+me-ev.c7.viz.steps.1	O motor vira gerador
+me-ev.c7.viz.steps.2	A bateria recarrega
+me-ev.c7.viz.steps.3	Pastilhas quase sem uso
+me-ev.c8.title	Menos peças, menos manutenção
+me-ev.c8.text	Sem troca de óleo, velas, embreagem, escapamento ou correia dentada. A manutenção envolve principalmente pneus, fluido de freio, filtros da cabine e líquido de arrefecimento.
+me-ev.c8.viz.l.t	Carro a combustão
+me-ev.c8.viz.l.items.0	óleo, filtros, correias, escape, embreagem
+me-ev.c8.viz.r.t	Elétrico
+me-ev.c8.viz.r.items.0	pneus, fluido de freio, filtro da cabine, arrefecimento
+me-ev.c9.title	Garantias das baterias
+me-ev.c9.text	A maioria dos fabricantes garante as baterias por cerca de 8 anos ou 160,000 km, normalmente com pelo menos 70% da capacidade. Dados do mundo real mostram que a maioria das baterias se degrada devagar.
+me-ev.c9.viz.items.0.v	8 anos
+me-ev.c9.viz.items.0.l	garantia típica
+me-ev.c9.viz.items.1.v	160,000 km
+me-ev.c9.viz.items.1.l	ou esta distância
+me-ev.c9.viz.items.2.l	capacidade garantida
+me-thermo.title	Termodinâmica
+me-thermo.summary	Calor, motores e por que nada tem 100% de eficiência.
+me-thermo.q0.q	Qual é a menor temperatura possível?
+me-thermo.q0.o0	−100 °C
+me-thermo.q0.o1	−273,15 °C (0 K)
+me-thermo.q0.o2	0 °C
+me-thermo.q0.x	O zero absoluto.
+me-thermo.q1.q	Uma bomba de calor usa trabalho para…
+me-thermo.q1.o0	Destruir calor
+me-thermo.q1.o1	Mover calor de um lugar mais frio para um mais quente
+me-thermo.q1.o2	Criar energia
+me-thermo.q1.x	Ela executa o ciclo de refrigeração.
+me-thermo.q2.q	Uma parede com valor U menor…
+me-thermo.q2.o0	Perde mais calor
+me-thermo.q2.o1	Perde menos calor
+me-thermo.q2.o2	É sempre mais fina
+me-thermo.q2.x	O valor U mede a taxa de perda de calor.
+me-thermo.c0.title	Temperatura e calor
+me-thermo.c0.text	A temperatura mede a rapidez com que as moléculas se agitam. Calor é energia que flui do mais quente para o mais frio por causa de uma diferença de temperatura.
+me-thermo.c0.viz.l.t	Temperatura
+me-thermo.c0.viz.l.items.0	quão quente
+me-thermo.c0.viz.l.items.1	°C ou K
+me-thermo.c0.viz.r.t	Calor
+me-thermo.c0.viz.r.items.0	energia em trânsito
+me-thermo.c0.viz.r.items.1	joules
+me-thermo.c1.title	Zero absoluto
+me-thermo.c1.text	Nada pode ser mais frio que −273,15 °C, o zero absoluto, em que o movimento molecular é mínimo. A escala kelvin começa ali: 0 K.
+me-thermo.c1.viz.items.0.a	0 K
+me-thermo.c1.viz.items.0.b	−273,15 °C
+me-thermo.c1.viz.items.1.a	273,15 K
+me-thermo.c1.viz.items.1.b	0 °C
+me-thermo.c1.viz.items.2.a	373,15 K
+me-thermo.c1.viz.items.2.b	100 °C
+me-thermo.c2.title	Primeira lei
+me-thermo.c2.text	A energia não pode ser criada nem destruída. O calor fornecido a um sistema serve para aumentar sua energia interna ou para realizar trabalho.
+me-thermo.c2.viz.f	ΔU = Q − W
+me-thermo.c2.viz.items.0.s	ΔU
+me-thermo.c2.viz.items.0.m	variação da energia interna
+me-thermo.c2.viz.items.1.s	Q
+me-thermo.c2.viz.items.1.m	calor fornecido
+me-thermo.c2.viz.items.2.s	W
+me-thermo.c2.viz.items.2.m	trabalho feito pelo sistema
+me-thermo.c3.title	Segunda lei
+me-thermo.c3.text	O calor flui naturalmente do quente para o frio, nunca o contrário sozinho. Todo processo real gera alguma desordem (entropia), e é por isso que nenhum motor consegue transformar todo o calor em trabalho.
+me-thermo.c3.viz.steps.0	Fonte quente
+me-thermo.c3.viz.steps.1	O motor realiza algum trabalho
+me-thermo.c3.viz.steps.2	O resto do calor é descartado
+me-thermo.c3.viz.steps.3	Fonte fria
+me-thermo.c4.title	Eficiência de Carnot
+me-thermo.c4.text	A eficiência máxima possível de uma máquina térmica depende apenas das suas temperaturas quente e fria, em kelvin.
+me-thermo.c4.example.0	Vapor a 550 °C (823 K), rio a 20 °C (293 K)
+me-thermo.c4.example.1	1 − 293 ÷ 823
+me-thermo.c4.example.2	≈ 64% no máximo
+me-thermo.c4.viz.f	η máx = 1 − T fria ÷ T quente
+me-thermo.c4.viz.items.0.s	T
+me-thermo.c4.viz.items.0.m	temperaturas absolutas (K)
+me-thermo.c5.title	Máquinas térmicas e bombas de calor
+me-thermo.c5.text	Uma máquina térmica usa o fluxo de calor para produzir trabalho. Uma bomba de calor faz o contrário: usa trabalho para mover calor do frio para o quente. A mesma física, no sentido oposto.
+me-thermo.c5.viz.l.t	Máquina térmica
+me-thermo.c5.viz.l.items.0	entra calor, sai trabalho
+me-thermo.c5.viz.l.items.1	motor de carro, usina
+me-thermo.c5.viz.r.t	Bomba de calor
+me-thermo.c5.viz.r.items.0	entra trabalho, move calor
+me-thermo.c5.viz.r.items.1	geladeira, ar-condicionado
+me-thermo.c6.title	O ciclo de refrigeração
+me-thermo.c6.text	Um fluido refrigerante evapora no lado frio (absorvendo calor), é comprimido (esquentando), condensa no lado quente (liberando calor) e se expande de novo. Geladeiras e bombas de calor usam esse ciclo.
+me-thermo.c6.viz.steps.0	Evapora: absorve calor
+me-thermo.c6.viz.steps.1	Comprime: esquenta
+me-thermo.c6.viz.steps.2	Condensa: libera calor
+me-thermo.c6.viz.steps.3	Expande: esfria de novo
+me-thermo.c7.title	Calor específico e armazenamento
+me-thermo.c7.text	A água armazena muito calor por quilo, o que a torna ideal para sistemas de aquecimento e reservatórios térmicos. Pedra e concreto também armazenam calor: a inércia térmica mantém as casas antigas frescas no verão.
+me-thermo.c7.viz.unit	J por kg por °C
+me-thermo.c7.viz.items.0.l	Aço
+me-thermo.c7.viz.items.1.l	Concreto
+me-thermo.c7.viz.items.2.l	Ar
+me-thermo.c7.viz.items.3.l	Água
+me-thermo.c8.title	Isolamento e valores U
+me-thermo.c8.text	A perda de calor pelas paredes é medida com valores U: watts perdidos por m² por grau de diferença. Quanto menor, melhor. Uma parede moderna bem isolada pode ficar abaixo de 0,3; uma parede maciça antiga pode passar de 1,5.
+me-thermo.c8.example.0	Parede de 50 m², U = 1,5, diferença de 15 °C
+me-thermo.c8.example.1	1,5 × 50 × 15
+me-thermo.c8.example.2	= 1,125 W perdidos
+me-thermo.c8.viz.f	Q = U × A × ΔT
+me-thermo.c8.viz.items.0.s	U
+me-thermo.c8.viz.items.0.m	W/m²·K
+me-thermo.c8.viz.items.1.s	A
+me-thermo.c8.viz.items.1.m	área
+me-thermo.c8.viz.items.2.s	ΔT
+me-thermo.c8.viz.items.2.m	dentro menos fora
+me-thermo.c9.title	Mudanças de fase
+me-thermo.c9.text	Derreter gelo e ferver água absorve grandes quantidades de energia sem mudar a temperatura. Transformar 1 kg de água a 100 °C em vapor exige cerca de 2,26 MJ, mais de cinco vezes a energia para aquecê-la de 0 a 100 °C.
+me-thermo.c9.viz.unit	kJ por kg de água
+me-thermo.c9.viz.items.0.l	Aquecer 0→100 °C
+me-thermo.c9.viz.items.1.l	Ferver a 100 °C
+me-wood.title	Madeira e carpintaria
+me-wood.summary	Fibras, umidade, encaixes e a madeira na construção.
+me-wood.q0.q	Por que deixar espaço para a madeira se mover em um piso?
+me-wood.q0.o0	Para economizar madeira
+me-wood.q0.o1	A madeira encolhe e incha com a umidade
+me-wood.q0.o2	Para os cabos
+me-wood.q0.x	A umidade muda o seu tamanho.
+me-wood.q1.q	A madeira para uso interno deve ser seca até cerca de…
+me-wood.q1.o0	50% de umidade
+me-wood.q1.o1	8–12% de umidade
+me-wood.q1.o2	0% de umidade
+me-wood.q1.x	Ela precisa estar em equilíbrio com o ar interno.
+me-wood.q2.q	Qual país é o maior produtor mundial de cortiça?
+me-wood.q2.o0	Espanha
+me-wood.q2.o1	Portugal
+me-wood.q2.o2	França
+me-wood.q2.x	Portugal fornece cerca de metade da cortiça do mundo.
+me-wood.c0.title	Madeiras duras e macias
+me-wood.c0.text	As madeiras macias vêm de coníferas (pinho, abeto): crescem rápido, são leves e usadas em estruturas. As madeiras duras vêm de árvores folhosas (carvalho, castanheiro, eucalipto): geralmente mais densas e duráveis.
+me-wood.c0.viz.l.t	Macia
+me-wood.c0.viz.l.items.0	pinho, abeto
+me-wood.c0.viz.l.items.1	leve
+me-wood.c0.viz.l.items.2	estruturas e telhados
+me-wood.c0.viz.r.t	Dura
+me-wood.c0.viz.r.items.0	carvalho, castanheiro
+me-wood.c0.viz.r.items.1	densa
+me-wood.c0.viz.r.items.2	pisos, móveis, vigas
+me-wood.c1.title	Teor de umidade
+me-wood.c1.text	A madeira recém-cortada pode ter mais de 50% de água em peso. Ela encolhe ao secar até entrar em equilíbrio com a umidade do ar. A madeira para uso interno deve ser seca até cerca de 8–12% antes de ser usada.
+me-wood.c1.viz.items.0.l	móveis internos
+me-wood.c1.viz.items.1.l	madeira externa
+me-wood.c1.viz.items.2.l	madeira verde
+me-wood.c2.title	A madeira se mexe
+me-wood.c2.text	A madeira encolhe e incha muito mais no sentido transversal às fibras do que ao longo delas. As portas emperram no inverno úmido e os pisos abrem frestas nos verões secos. Uma boa carpintaria deixa espaço para esse movimento.
+me-wood.c2.viz.unit	% de retração de verde a seca (aprox.)
+me-wood.c2.viz.items.0.l	Ao longo das fibras
+me-wood.c2.viz.items.1.l	Radial
+me-wood.c2.viz.items.2.l	Tangencial
+me-wood.c3.title	Encaixes
+me-wood.c3.text	Os encaixes tradicionais travam as peças entre si para que a própria madeira suporte a carga: espiga e encaixe, rabo de andorinha, meia-madeira. O trabalho moderno também usa parafusos, cavilhas, biscoitos e conectores metálicos.
+me-wood.c3.viz.items.0.a	espiga e encaixe
+me-wood.c3.viz.items.0.b	caixilhos, vigas
+me-wood.c3.viz.items.1.a	malhete
+me-wood.c3.viz.items.1.b	gavetas, resiste à tração
+me-wood.c3.viz.items.2.a	meia-madeira
+me-wood.c3.viz.items.2.b	cruzamentos
+me-wood.c3.viz.items.3.a	cavilhas
+me-wood.c3.viz.items.3.b	alinhamento oculto
+me-wood.c4.title	Ler o veio
+me-wood.c4.text	Aplaine e trabalhe com o formão a favor do veio, como quem faz carinho em um gato, para evitar lascar. Os nós são pontos fracos e podem se soltar de tábuas finas.
+me-wood.c4.viz.items.0.w	aplainar contra o veio
+me-wood.c4.viz.items.0.r	vire a tábua, aplaine a favor
+me-wood.c4.viz.items.1.w	nó no encaixe
+me-wood.c4.viz.items.1.r	mude o encaixe de lugar
+me-wood.c5.title	MLC e CLT
+me-wood.c5.text	A madeira engenheirada cola camadas umas às outras. A madeira lamelada colada (MLC) gera vigas longas e resistentes; os painéis de madeira lamelada cruzada (CLT) têm camadas em ângulo reto e podem formar paredes e pisos de edifícios de vários andares.
+me-wood.c5.viz.l.t	MLC
+me-wood.c5.viz.l.items.0	camadas numa só direção
+me-wood.c5.viz.l.items.1	vigas longas e arcos
+me-wood.c5.viz.r.t	CLT
+me-wood.c5.viz.r.items.0	camadas cruzadas
+me-wood.c5.viz.r.items.1	painéis de parede e piso
+me-wood.c5.viz.r.items.2	prédios altos de madeira
+me-wood.c6.title	Proteger a madeira
+me-wood.c6.text	O apodrecimento precisa de umidade. Mantenha a madeira seca, ventilada e longe do chão; use espécies naturalmente duráveis ou madeira tratada em áreas externas. Carunchos e cupins são controlados com tratamento e inspeção.
+me-wood.c6.viz.items.0	Manter seca
+me-wood.c6.viz.items.1	Ventilar
+me-wood.c6.viz.items.2	Afastar do chão
+me-wood.c6.viz.items.3	Tratar ou escolher espécies duráveis
+me-wood.c6.viz.items.4	Inspecionar regularmente
+me-wood.c7.title	A madeira no fogo
+me-wood.c7.text	A madeira grossa carboniza por fora, e a camada carbonizada isola o miolo, por isso vigas grandes mantêm a resistência por um tempo surpreendentemente longo em um incêndio. Os engenheiros preveem uma margem de carbonização nas seções.
+me-wood.c7.viz.steps.0	Fogo
+me-wood.c7.viz.steps.1	A camada externa carboniza
+me-wood.c7.viz.steps.2	O carvão isola o miolo
+me-wood.c7.viz.steps.3	A viga continua suportando a carga
+me-wood.c8.title	Estruturas de telhado
+me-wood.c8.text	Os telhados tradicionais portugueses usam caibros e ripas de madeira sob telhas cerâmicas. As tesouras distribuem a carga do telhado para as paredes; uma boa ventilação evita o apodrecimento por condensação.
+me-wood.c8.viz.steps.0	Telhas
+me-wood.c8.viz.steps.1	Ripas
+me-wood.c8.viz.steps.2	Caibros ou tesouras
+me-wood.c8.viz.steps.3	Frechais
+me-wood.c8.viz.steps.4	Paredes
+me-wood.c9.title	As florestas de Portugal
+me-wood.c9.text	O eucalipto, o pinheiro-bravo e o sobreiro são as árvores florestais mais comuns de Portugal. Portugal é o maior produtor mundial de cortiça, fornecendo cerca de metade da cortiça do mundo.
+me-wood.c9.viz.unit	% da área florestal (aprox.)
+me-wood.c9.viz.items.0.l	Eucalipto
+me-wood.c9.viz.items.1.l	Sobreiro
+me-wood.c9.viz.items.2.l	Pinheiro-bravo
+me-wood.c9.viz.items.3.l	Azinheira
+me-wood.c9.viz.items.4.l	Outras
+me-construction.title	Construir uma casa confortável
+me-construction.summary	Isolamento, janelas, pontes térmicas e ventilação.
+me-construction.q0.q	Por onde uma casa sem isolamento costuma perder uma grande parte do calor, e é barato corrigir primeiro?
+me-construction.q0.o0	Portas
+me-construction.q0.o1	O telhado
+me-construction.q0.o2	A chaminé
+me-construction.q0.x	Isolar o telhado costuma ser o melhor primeiro passo.
+me-construction.q1.q	O que é uma ponte térmica?
+me-construction.q1.o0	Uma ponte de madeira
+me-construction.q1.o1	Um ponto fraco onde o calor contorna o isolamento
+me-construction.q1.o2	Um tipo de janela
+me-construction.q1.x	Elas causam pontos frios e mofo.
+me-construction.q2.q	O que faz a VMRC?
+me-construction.q2.o0	Aquece a água
+me-construction.q2.o1	Ventila enquanto recupera o calor do ar que sai
+me-construction.q2.o2	Resfria o telhado
+me-construction.q2.x	Ventilação mecânica com recuperação de calor.
+me-construction.c0.title	A envoltória do edifício
+me-construction.c0.text	Paredes, telhado, piso e janelas formam a envoltória que separa o interior do exterior. Seu isolamento, estanqueidade ao ar e sombreamento determinam quanta energia a casa precisa.
+me-construction.c0.viz.root	Envoltória
+me-construction.c0.viz.items.0	Telhado
+me-construction.c0.viz.items.1	Paredes
+me-construction.c0.viz.items.2	Janelas e portas
+me-construction.c0.viz.items.3	Piso
+me-construction.c1.title	Por onde o calor escapa
+me-construction.c1.text	Em uma casa sem isolamento, o telhado costuma ser o que mais perde calor, seguido das paredes, das janelas e das correntes de ar. Isolar o telhado primeiro geralmente é o melhor custo-benefício.
+me-construction.c1.viz.unit	% da perda de calor (casa típica sem isolamento)
+me-construction.c1.viz.items.0.l	Telhado
+me-construction.c1.viz.items.1.l	Paredes
+me-construction.c1.viz.items.2.l	Janelas
+me-construction.c1.viz.items.3.l	Piso
+me-construction.c1.viz.items.4.l	Correntes de ar
+me-construction.c2.title	Isolamento externo (ETICS)
+me-construction.c2.text	Placas isolantes fixadas por fora das paredes e revestidas com reboco (o sistema "capoto", em Portugal) envolvem a casa em uma camada contínua e mantêm a alvenaria aquecida, reduzindo as pontes térmicas.
+me-construction.c2.viz.l.t	Externo (ETICS/capoto)
+me-construction.c2.viz.l.items.0	camada contínua
+me-construction.c2.viz.l.items.1	não perde área útil
+me-construction.c2.viz.l.items.2	menos pontes térmicas
+me-construction.c2.viz.r.t	Interno
+me-construction.c2.viz.r.items.0	mais barato por cômodo
+me-construction.c2.viz.r.items.1	perde espaço
+me-construction.c2.viz.r.items.2	difícil nas junções
+me-construction.c3.title	Pontes térmicas
+me-construction.c3.text	Uma ponte térmica é um ponto fraco onde o calor contorna o isolamento: vigas de concreto, lajes de sacadas, contornos de janelas. Elas causam pontos frios, condensação e mofo.
+me-construction.c3.viz.items.0	Lajes de sacadas
+me-construction.c3.viz.items.1	Vigas e pilares de concreto
+me-construction.c3.viz.items.2	Contornos de janelas e portas
+me-construction.c3.viz.items.3	Junções parede–telhado
+me-construction.c4.title	Janelas
+me-construction.c4.text	O vidro duplo com revestimento de baixa emissividade e caixilho com ruptura térmica perde muito menos calor do que o vidro simples. O sombreamento externo bloqueia o sol do verão antes que ele aqueça o cômodo.
+me-construction.c4.viz.unit	valor U W/m²K (aprox.)
+me-construction.c4.viz.items.0.l	Vidro simples
+me-construction.c4.viz.items.1.l	Vidro duplo
+me-construction.c4.viz.items.2.l	Duplo low-e
+me-construction.c4.viz.items.3.l	Triplo
+me-construction.c5.title	Estanqueidade ao ar
+me-construction.c5.text	Correntes de ar descontroladas desperdiçam calor e levam umidade para dentro das paredes. Vedar as frestas em volta de janelas, tubulações e junções do telhado é barato e eficaz.
+me-construction.c5.viz.items.0	Vedar os caixilhos das janelas
+me-construction.c5.viz.items.1	Vedar passagens de tubos e cabos
+me-construction.c5.viz.items.2	Fita nas juntas das membranas
+me-construction.c5.viz.items.3	Testar com blower door
+me-construction.c6.title	Ventilação
+me-construction.c6.text	Uma casa estanque precisa de ventilação controlada para remover umidade e ar viciado. A ventilação mecânica com recuperação de calor (VMRC) recupera a maior parte do calor do ar que sai.
+me-construction.c6.viz.steps.0	Sai o ar quente viciado
+me-construction.c6.viz.steps.1	Trocador de calor
+me-construction.c6.viz.steps.2	Ar fresco aquecido
+me-construction.c6.viz.steps.3	Para as salas e quartos
+me-construction.c7.title	Condensação e mofo
+me-construction.c7.text	O ar quente interno carrega umidade; quando encontra uma superfície fria, condensa. Ventilação, isolamento e a eliminação de pontos frios evitam o mofo.
+me-construction.c7.viz.steps.0	Ar quente e úmido
+me-construction.c7.viz.steps.1	Parede ou janela fria
+me-construction.c7.viz.steps.2	Condensação
+me-construction.c7.viz.steps.3	Mofo
+me-construction.c8.title	Conforto no verão
+me-construction.c8.text	Em Portugal, manter a casa fresca também importa: persianas externas, sombreamento, inércia térmica, cores claras e ventilação noturna muitas vezes funcionam melhor do que o ar-condicionado.
+me-construction.c8.viz.items.0	Persianas externas
+me-construction.c8.viz.items.1	Beirais e sombreamento
+me-construction.c8.viz.items.2	Inércia térmica
+me-construction.c8.viz.items.3	Ventilação noturna
+me-construction.c8.viz.items.4	Telhados de cor clara
+me-construction.c9.title	Certificados energéticos
+me-construction.c9.text	Em Portugal, as casas à venda ou para alugar precisam de um certificado energético (de A+ a F), emitido pela ADENE. Ele também recomenda melhorias.
+me-construction.c9.viz.items.0	A+ / A: muito eficiente
+me-construction.c9.viz.items.1	B / B−: boa
+me-construction.c9.viz.items.2	C / D: média
+me-construction.c9.viz.items.3	E / F: ineficiente
+me-water.title	A água nos edifícios
+me-water.summary	Pressão, bombas, tubulações e esgoto.
+me-water.q0.q	Mais ou menos quanta pressão correspondem 10 m de coluna d'água?
+me-water.q0.o0	0,1 bar
+me-water.q0.o1	1 bar
+me-water.q0.o2	10 bar
+me-water.q0.x	10 m ≈ 1 bar.
+me-water.q1.q	O que causa o golpe de aríete?
+me-water.q1.o0	Água quente
+me-water.q1.o1	O fechamento brusco de uma válvula, que para a água em movimento
+me-water.q1.o2	Pressão baixa
+me-water.q1.x	A inércia da água cria um pico de pressão.
+me-water.q2.q	Por que os reservatórios de água quente devem chegar periodicamente a cerca de 60 °C?
+me-water.q2.o0	Para economizar energia
+me-water.q2.o1	Para matar a bactéria Legionella
+me-water.q2.o2	Para aumentar a pressão
+me-water.q2.x	As bactérias proliferam entre 25 e 45 °C.
+me-water.c0.title	A pressão da água em casa
+me-water.c0.text	A água da rede costuma chegar a cerca de 2–5 bar. Baixa demais, o chuveiro só pinga; alta demais, as torneiras batem e os aparelhos se desgastam. Uma válvula redutora de pressão resolve a pressão alta.
+me-water.c0.viz.unit	bar
+me-water.c0.viz.items.0.l	baixa demais
+me-water.c0.viz.items.1.l	confortável
+me-water.c0.viz.items.2.l	alta demais
+me-water.c1.title	Dimensionar tubulações
+me-water.c1.text	Tubos maiores levam mais vazão com menos perda de pressão. Trechos longos até um chuveiro no andar de cima precisam de diâmetros maiores do que um trecho curto até uma pia.
+me-water.c1.viz.unit	vazão com a mesma perda de pressão (relativa)
+me-water.c1.viz.items.0.l	16 mm
+me-water.c1.viz.items.1.l	20 mm
+me-water.c1.viz.items.2.l	26 mm
+me-water.c2.title	Bombas
+me-water.c2.text	As bombas centrífugas giram um rotor para empurrar a água. Cada uma tem uma curva: mais vazão significa menos pressão (altura manométrica). Escolha a bomba cuja curva atenda às necessidades do seu sistema.
+me-water.c2.viz.l.t	Mais vazão
+me-water.c2.viz.l.items.0	menos altura
+me-water.c2.viz.r.t	Mais altura
+me-water.c2.viz.r.items.0	menos vazão
+me-water.c3.title	Altura manométrica e pressão
+me-water.c3.text	A "altura manométrica" de uma bomba é a altura até a qual ela consegue elevar a água. 10 m de altura manométrica equivalem a cerca de 1 bar.
+me-water.c3.viz.f	10 m de altura ≈ 1 bar
+me-water.c3.viz.items.0.s	elevar a uma caixa 20 m acima
+me-water.c3.viz.items.0.m	≈ 2 bar mais perdas na tubulação
+me-water.c4.title	Golpe de aríete
+me-water.c4.text	Fechar uma válvula de repente interrompe o fluxo, e a inércia da água em movimento cria um pico de pressão que faz os canos baterem. Amortecedores de golpe e válvulas de fechamento mais lento resolvem o problema.
+me-water.c4.viz.steps.0	Válvula fecha rápido
+me-water.c4.viz.steps.1	A água para de repente
+me-water.c4.viz.steps.2	Pico de pressão
+me-water.c4.viz.steps.3	Batida nos canos
+me-water.c5.title	Sistemas de água quente
+me-water.c5.text	Os aquecedores guardam a água quente em um reservatório (termoacumulador, ou boiler) ou a aquecem na hora (aquecedores de passagem a gás ou elétricos). Painéis solares térmicos e bombas de calor podem fornecer a maior parte da água quente em Portugal.
+me-water.c5.viz.items.0.a	reservatório
+me-water.c5.viz.items.0.b	fornecimento estável, perdas em espera
+me-water.c5.viz.items.1.a	de passagem
+me-water.c5.viz.items.1.b	sem reservatório, exige muita potência
+me-water.c5.viz.items.2.a	solar térmico
+me-water.c5.viz.items.2.b	calor grátis, precisa de apoio
+me-water.c5.viz.items.3.a	bomba de calor
+me-water.c5.viz.items.3.b	3× eficiente
+me-water.c6.title	Legionella
+me-water.c6.text	As bactérias podem se multiplicar na água armazenada entre 25 e 45 °C. Os reservatórios devem chegar periodicamente a cerca de 60 °C, e as torneiras devem fornecer água abaixo da temperatura de escaldadura, com válvulas misturadoras.
+me-water.c6.viz.unit	°C
+me-water.c6.viz.items.0.l	risco de proliferação
+me-water.c6.viz.items.1.l	armazenar a
+me-water.c6.viz.items.2.l	risco de queimadura
+me-water.c7.title	Esgoto
+me-water.c7.text	O esgoto funciona por gravidade, então os tubos precisam de um caimento (inclinação) de cerca de 1–2%. Os sifões retêm água para bloquear o cheiro do esgoto, e as colunas de ventilação impedem que eles sejam esvaziados por sucção.
+me-water.c7.viz.items.0	Caimento de cerca de 1–2%
+me-water.c7.viz.items.1	Sifão em cada aparelho
+me-water.c7.viz.items.2	Tubos de ventilação
+me-water.c7.viz.items.3	Acesso para limpeza
+me-water.c8.title	Aproveitamento da água da chuva
+me-water.c8.text	Captar a água da chuva do telhado para vasos sanitários, jardins e máquinas de lavar economiza água da rede. Um filtro, uma cisterna e uma pequena bomba são as partes principais.
+me-water.c8.viz.steps.0	Telhado
+me-water.c8.viz.steps.1	Calhas e filtro
+me-water.c8.viz.steps.2	Cisterna
+me-water.c8.viz.steps.3	Bomba
+me-water.c8.viz.steps.4	Vasos sanitários e jardim
+me-water.c9.title	Medir o nível da água
+me-water.c9.text	Caixas d'água e poços são monitorados com boias de nível, sensores de pressão ou sensores ultrassônicos como o JSN-SR04T, que enviam os níveis para um painel, até por LoRa a partir de locais remotos.
+me-water.c9.viz.steps.0	Sensor ultrassônico na tampa da caixa
+me-water.c9.viz.steps.1	Mede a distância
+me-water.c9.viz.steps.2	Converte em nível e litros
+me-water.c9.viz.steps.3	Envia por LoRa
+me-making.title	Como as coisas são feitas
+me-making.summary	Fundição, usinagem, conformação, soldagem e impressão 3D.
+me-making.q0.q	Qual processo é o mais barato por peça para volumes muito grandes de peças plásticas?
+me-making.q0.o0	Impressão 3D
+me-making.q0.o1	Moldagem por injeção
+me-making.q0.o2	Entalhe à mão
+me-making.q0.x	Os moldes são caros, mas cada peça sai barata.
+me-making.q1.q	O que um torno faz?
+me-making.q1.o0	Chapas planas
+me-making.q1.o1	Peças redondas, girando a peça de trabalho
+me-making.q1.o2	Soldas
+me-making.q1.x	A peça gira contra a ferramenta.
+me-making.q2.q	O forjamento produz peças…
+me-making.q2.o0	Fracas e leves
+me-making.q2.o1	Muito resistentes
+me-making.q2.o2	Transparentes
+me-making.q2.x	O martelamento refina a estrutura do metal.
+me-making.c0.title	Quatro famílias de processos
+me-making.c0.text	A maior parte da fabricação ou remove material (usinagem), ou lhe dá forma (forjamento, dobra, fundição), ou o une (soldagem, aparafusamento), ou o adiciona camada por camada (impressão 3D).
+me-making.c0.viz.root	Fabricar
+me-making.c0.viz.items.0	Remover: usinagem
+me-making.c0.viz.items.1	Moldar: fundição, forja
+me-making.c0.viz.items.2	Unir: solda, colagem
+me-making.c0.viz.items.3	Adicionar: impressão 3D
+me-making.c1.title	Fundição
+me-making.c1.text	O metal fundido é despejado em um molde e se solidifica na forma dele. Blocos de motor, carcaças de bombas e bronzes artísticos são fundidos. A fundição sob pressão força o metal em moldes de aço para a produção em massa.
+me-making.c1.viz.steps.0	Fundir o metal
+me-making.c1.viz.steps.1	Despejar no molde
+me-making.c1.viz.steps.2	Esfriar e solidificar
+me-making.c1.viz.steps.3	Desmoldar e dar acabamento
+me-making.c2.title	Usinagem
+me-making.c2.text	Tornos, fresadoras e furadeiras removem material para obter formas precisas. As máquinas CNC seguem trajetórias programadas e conseguem manter tolerâncias de alguns centésimos de milímetro.
+me-making.c2.viz.items.0.a	torno
+me-making.c2.viz.items.0.b	peças redondas, peça girando
+me-making.c2.viz.items.1.a	fresadora
+me-making.c2.viz.items.1.b	superfícies planas e cavidades
+me-making.c2.viz.items.2.a	furadeira
+me-making.c2.viz.items.2.b	furos
+me-making.c2.viz.items.3.a	CNC
+me-making.c2.viz.items.3.b	controle por computador
+me-making.c3.title	Conformação
+me-making.c3.text	A chapa metálica é dobrada, estampada e prensada até tomar forma: carrocerias, latas, gabinetes. O forjamento martela o metal quente até dar forma, gerando peças muito resistentes como virabrequins.
+me-making.c3.viz.l.t	Estampagem
+me-making.c3.viz.l.items.0	chapa metálica
+me-making.c3.viz.l.items.1	rápida
+me-making.c3.viz.l.items.2	painéis de carros
+me-making.c3.viz.r.t	Forjamento
+me-making.c3.viz.r.items.0	metal quente martelado
+me-making.c3.viz.r.items.1	muito resistente
+me-making.c3.viz.r.items.2	virabrequins, ferramentas
+me-making.c4.title	Moldagem por injeção
+me-making.c4.text	O plástico derretido é injetado em um molde de aço e esfria em segundos. Os moldes são caros, mas depois cada peça custa centavos. A maioria dos objetos de plástico à sua volta foi feita assim.
+me-making.c4.viz.unit	custo por peça, € (ilustrativo)
+me-making.c4.viz.items.0.l	Impressão 3D
+me-making.c4.viz.items.1.l	Usinada
+me-making.c4.viz.items.2.l	Injetada
+me-making.c5.title	Soldagem
+me-making.c5.text	A soldagem derrete as bordas de duas peças metálicas para que se fundam. A MIG é rápida e fácil; a TIG é precisa e limpa; a solda com eletrodo revestido funciona ao ar livre. Boas soldas exigem metal limpo e o calor certo.
+me-making.c5.viz.items.0.a	MIG
+me-making.c5.viz.items.0.b	alimentação de arame, rápida
+me-making.c5.viz.items.1.a	TIG
+me-making.c5.viz.items.1.b	precisa, metais finos
+me-making.c5.viz.items.2.a	eletrodo (MMA)
+me-making.c5.viz.items.2.b	simples, ao ar livre
+me-making.c5.viz.items.3.a	solda a ponto
+me-making.c5.viz.items.3.b	carrocerias
+me-making.c6.title	Impressão 3D
+me-making.c6.text	A manufatura aditiva constrói as peças camada por camada. As impressoras FDM derretem filamento plástico; as de resina curam um líquido com luz; as de metal fundem pó com lasers.
+me-making.c6.viz.l.t	FDM
+me-making.c6.viz.l.items.0	barata
+me-making.c6.viz.l.items.1	resistente o bastante para suportes
+me-making.c6.viz.l.items.2	camadas visíveis
+me-making.c6.viz.r.t	Resina
+me-making.c6.viz.r.items.0	detalhes finos
+me-making.c6.viz.r.items.1	frágil
+me-making.c6.viz.r.items.2	pós-processamento sujo
+me-making.c7.title	Projeto para fabricação
+me-making.c7.text	Uma peça fácil de projetar pode ser difícil de fabricar. Os engenheiros adaptam os projetos ao processo: ângulos de saída para moldagem, diâmetros de broca padronizados, raios mínimos de dobra para chapas.
+me-making.c7.viz.items.0	Tamanhos e fixadores padronizados
+me-making.c7.viz.items.1	Ângulos de saída para moldagem
+me-making.c7.viz.items.2	Evitar cantos internos apertados
+me-making.c7.viz.items.3	Menos peças
+me-making.c8.title	Produção em massa
+me-making.c8.text	A linha de montagem móvel de Henry Ford (1913) reduziu o tempo para montar um chassi do Modelo T de cerca de 12 horas para cerca de 1,5. As fábricas de hoje acrescentam robôs, sensores e software.
+me-making.c8.viz.unit	horas por chassi do Modelo T (aprox.)
+me-making.c8.viz.items.0.l	Antes de 1913
+me-making.c8.viz.items.1.l	Linha de montagem
+me-making.c9.title	Controle de qualidade
+me-making.c9.text	As fábricas medem as peças com calibradores, máquinas de medição por coordenadas e câmeras. O controle estatístico de processo detecta desvios antes que as peças saiam da tolerância.
+me-making.c9.viz.steps.0	Fabricar peças
+me-making.c9.viz.steps.1	Medir amostras
+me-making.c9.viz.steps.2	Registrar em gráfico
+me-making.c9.viz.steps.3	Corrigir desvios cedo
+me-measure.title	Medição e tolerâncias
+me-measure.summary	Unidades, precisão e peças que se encaixam.
+me-measure.q0.q	Um instrumento é consistente, mas sempre indica 2 mm a mais. Ele é…
+me-measure.q0.o0	Exato, mas não preciso
+me-measure.q0.o1	Preciso, mas não exato
+me-measure.q0.o2	As duas coisas
+me-measure.q0.x	Consistente, mas deslocado do valor real.
+me-measure.q1.q	O que é um ajuste com interferência?
+me-measure.q1.o0	Um ajuste folgado, deslizante
+me-measure.q1.o1	Uma peça prensada em um furo ligeiramente menor
+me-measure.q1.o2	Uma junta pintada
+me-measure.q1.x	O eixo é ligeiramente maior que o furo.
+me-measure.q2.q	Uma polegada equivale exatamente a…
+me-measure.q2.o0	2,5 cm
+me-measure.q2.o1	25,4 mm
+me-measure.q2.o2	30 mm
+me-measure.q2.x	Definida como 25,4 mm.
+me-measure.c0.title	O Sistema Internacional
+me-measure.c0.text	A engenharia usa as unidades do SI: metro, quilograma, segundo, ampere, kelvin. As unidades derivadas se baseiam nelas: newton, pascal, joule, watt. Misturar unidades causa erros caros.
+me-measure.c0.viz.items.0.a	metro
+me-measure.c0.viz.items.0.b	comprimento
+me-measure.c0.viz.items.1.a	quilograma
+me-measure.c0.viz.items.1.b	massa
+me-measure.c0.viz.items.2.a	segundo
+me-measure.c0.viz.items.2.b	tempo
+me-measure.c0.viz.items.3.a	newton
+me-measure.c0.viz.items.3.b	força
+me-measure.c0.viz.items.4.a	pascal
+me-measure.c0.viz.items.4.b	pressão
+me-measure.c1.title	A Mars Climate Orbiter
+me-measure.c1.text	Em 1999, a NASA perdeu uma sonda de mais de 100 milhões de € porque uma equipe usou libra-força segundo e outra esperava newton-segundo. A nave entrou baixo demais na atmosfera de Marte.
+me-measure.c1.viz.items.0.w	uma equipe no sistema imperial, outra no métrico
+me-measure.c1.viz.items.0.r	combinar unidades e verificar interfaces
+me-measure.c2.title	Exatidão vs. precisão
+me-measure.c2.text	Exatidão é o quanto você está perto do valor real; precisão é o quanto medições repetidas são consistentes entre si. Um instrumento pode ser preciso, mas errado, se não estiver calibrado.
+me-measure.c2.viz.l.t	Exato
+me-measure.c2.viz.l.items.0	perto do valor real
+me-measure.c2.viz.r.t	Preciso
+me-measure.c2.viz.r.items.0	leituras próximas entre si
+me-measure.c3.title	Tolerâncias
+me-measure.c3.text	Nenhuma peça é feita exatamente na medida. Uma tolerância indica a faixa aceitável, como 20,00 ± 0,05 mm. Tolerâncias mais apertadas custam mais, então use-as só onde for necessário.
+me-measure.c3.viz.unit	mm
+me-measure.c3.viz.items.0.l	mínimo
+me-measure.c3.viz.items.1.l	nominal
+me-measure.c3.viz.items.2.l	máximo
+me-measure.c4.title	Ajustes
+me-measure.c4.text	Eixos e furos são combinados por ajuste: com folga (desliza livremente), incerto (justo) ou com interferência (prensado). Sistemas de ajustes padronizados como a ISO 286 os definem, por exemplo H7/g6.
+me-measure.c4.viz.items.0.a	ajuste com folga
+me-measure.c4.viz.items.0.b	desliza
+me-measure.c4.viz.items.1.a	ajuste incerto
+me-measure.c4.viz.items.1.b	justo, posiciona
+me-measure.c4.viz.items.2.a	ajuste com interferência
+me-measure.c4.viz.items.2.b	prensado ou encolhido
+me-measure.c5.title	Instrumentos de medição
+me-measure.c5.text	Uma trena mede com cerca de um milímetro de resolução; um paquímetro, 0,02 mm; um micrômetro, 1 mm. Escolha um instrumento pelo menos dez vezes mais fino que a tolerância que você está verificando.
+me-measure.c5.viz.unit	resolução (mm)
+me-measure.c5.viz.items.0.l	Trena
+me-measure.c5.viz.items.1.l	Paquímetro
+me-measure.c5.viz.items.2.l	Micrômetro
+me-measure.c6.title	Algarismos significativos
+me-measure.c6.text	"2 m" e "2,000 m" indicam precisões diferentes. Não informe mais dígitos do que a sua medição permite; uma calculadora mostrando 3,14159 não torna precisa uma medição grosseira.
+me-measure.c6.viz.items.0.w	2,3456 m medidos com trena
+me-measure.c6.viz.items.0.r	2,35 m
+me-measure.c6.viz.items.1.w	9,8762 kN de estimativas grosseiras
+me-measure.c6.viz.items.1.r	cerca de 10 kN
+me-measure.c7.title	Calibração
+me-measure.c7.text	Os instrumentos se desajustam com o tempo. A calibração os compara com um padrão de referência e os corrige. Na indústria, torquímetros, balanças e manômetros são calibrados periodicamente.
+me-measure.c7.viz.steps.0	Usar o instrumento
+me-measure.c7.viz.steps.1	Comparar com uma referência
+me-measure.c7.viz.steps.2	Ajustar ou registrar o erro
+me-measure.c7.viz.steps.3	Agendar a próxima verificação
+me-measure.c8.title	Os erros se somam
+me-measure.c8.text	Quando as peças se empilham, suas tolerâncias se somam. Dez peças de ±0,1 mm cada poderiam, no pior caso, desviar ±1 mm no conjunto. A tolerância estatística estima a dispersão realista.
+me-measure.c8.viz.f	pior caso = n × tolerância
+me-measure.c8.viz.items.0.s	10 peças × ±0,1 mm
+me-measure.c8.viz.items.0.m	±1,0 mm
+me-measure.c8.viz.items.1.s	estatística (√10 × 0,1)
+me-measure.c8.viz.items.1.m	≈ ±0,32 mm
+me-measure.c9.title	Unidades imperiais que resistem
+me-measure.c9.text	Tubos, pneus, telas e alguns parafusos ainda usam polegadas; a aviação usa pés e nós. Uma polegada é exatamente 25,4 mm.
+me-measure.c9.viz.items.0.a	1 polegada
+me-measure.c9.viz.items.0.b	25,4 mm
+me-measure.c9.viz.items.1.a	1 pé
+me-measure.c9.viz.items.1.b	0,3048 m
+me-measure.c9.viz.items.2.a	1 psi
+me-measure.c9.viz.items.2.b	69 bar
+me-measure.c9.viz.items.3.a	1 nó
+me-measure.c9.viz.items.3.b	1,852 km/h
+me-failure.title	Quando as coisas falham
+me-failure.summary	Fadiga, corrosão, fluência e lições famosas.
+me-failure.q0.q	O que causa a maioria das falhas mecânicas em máquinas e aviões?
+me-failure.q0.o0	Sobrecarga
+me-failure.q0.o1	Fadiga por carregamento repetido
+me-failure.q0.o2	Derretimento
+me-failure.q0.x	As trincas crescem a cada ciclo.
+me-failure.q1.q	Por que os acidentes do avião Comet levaram às janelas arredondadas?
+me-failure.q1.o0	São mais bonitas
+me-failure.q1.o1	Os cantos retos concentravam tensão e iniciavam trincas de fadiga
+me-failure.q1.o2	O vidro arredondado é mais barato
+me-failure.q1.x	Concentração de tensões nos cantos.
+me-failure.q2.q	O que é fluência?
+me-failure.q2.o0	Ferrugem
+me-failure.q2.o1	Alongamento lento e permanente sob carga constante, principalmente a quente
+me-failure.q2.o2	Uma trinca rápida
+me-failure.q2.x	Ela aumenta com o tempo.
+me-failure.c0.title	Sobrecarga
+me-failure.c0.text	A falha mais simples: a carga supera o que a peça consegue suportar. Fatores de segurança, boas estimativas de carga e atenção ao mau uso evitam a maioria delas.
+me-failure.c0.viz.steps.0	A carga passa do previsto
+me-failure.c0.viz.steps.1	A tensão supera a resistência
+me-failure.c0.viz.steps.2	Escoamento ou ruptura
+me-failure.c1.title	Fadiga
+me-failure.c1.text	O carregamento repetido, mesmo bem abaixo da resistência à ruptura, pode fazer crescer trincas minúsculas até a peça se partir. A fadiga causa a maioria das falhas mecânicas em máquinas, aviões e pontes.
+me-failure.c1.viz.steps.0	Cargas repetidas
+me-failure.c1.viz.steps.1	Trinca minúscula num ponto de tensão
+me-failure.c1.viz.steps.2	A trinca cresce a cada ciclo
+me-failure.c1.viz.steps.3	Ruptura repentina
+me-failure.c2.title	Marcas de praia
+me-failure.c2.text	As fraturas por fadiga costumam mostrar "marcas de praia" curvas na superfície partida, que registram como a trinca avançou, e uma zona final mais áspera onde ela finalmente rompeu.
+me-failure.c2.viz.l.t	Zona de fadiga
+me-failure.c2.viz.l.items.0	lisa, com marcas de praia
+me-failure.c2.viz.l.items.1	crescimento lento
+me-failure.c2.viz.r.t	Ruptura final
+me-failure.c2.viz.r.items.0	áspera
+me-failure.c2.viz.r.items.1	repentina
+me-failure.c3.title	Corrosão
+me-failure.c3.text	A corrosão corrói o metal, reduzindo sua seção e criando concentrações de tensão. Sal, água e metais diferentes em contato a aceleram.
+me-failure.c3.viz.items.0	Sal e umidade
+me-failure.c3.viz.items.1	Água acumulada
+me-failure.c3.viz.items.2	Metais diferentes (galvânica)
+me-failure.c3.viz.items.3	Revestimentos danificados
+me-failure.c4.title	Fluência
+me-failure.c4.text	Sob carga constante a alta temperatura, os metais se alongam lentamente com o tempo. Pás de turbina e tubos de caldeira são projetados considerando a fluência; até canos de chumbo e prateleiras de plástico sofrem fluência à temperatura ambiente.
+me-failure.c4.viz.events.0.y	ano 0
+me-failure.c4.viz.events.0.l	instalado
+me-failure.c4.viz.events.1.y	ano 5
+me-failure.c4.viz.events.1.l	leve alongamento
+me-failure.c4.viz.events.2.y	ano 15
+me-failure.c4.viz.events.2.l	flecha visível
+me-failure.c4.viz.events.3.y	ano 25
+me-failure.c4.viz.events.3.l	substituir
+me-failure.c5.title	O avião Comet
+me-failure.c5.text	O de Havilland Comet, o primeiro avião comercial a jato, sofreu acidentes fatais em 1954 causados por fadiga do metal iniciada nos cantos das aberturas quadradas da cabine pressurizada. As janelas arredondadas viraram padrão.
+me-failure.c5.viz.items.0.w	aberturas quadradas na cabine
+me-failure.c5.viz.items.0.r	janelas arredondadas e caixilhos mais fortes
+me-failure.c6.title	A queda da ponte de Entre-os-Rios, em 2001
+me-failure.c6.text	Em março de 2001, um pilar da ponte Hintze Ribeiro sobre o Douro desabou, matando 59 pessoas. Anos de erosão do leito do rio, agravada pela extração de areia, tinham descalçado sua fundação. Depois disso, Portugal tornou mais rigorosas as inspeções de pontes.
+me-failure.c6.viz.steps.0	Extração de areia e cheias
+me-failure.c6.viz.steps.1	Leito erodido em volta do pilar
+me-failure.c6.viz.steps.2	Fundação descalçada
+me-failure.c6.viz.steps.3	Colapso, 2001
+me-failure.c7.title	Fatores humanos e organizacionais
+me-failure.c7.text	Muitas falhas vêm de erros de projeto, manutenção ruim, inspeções puladas ou alertas ignorados, e não só dos materiais. A boa engenharia inclui verificar e aprender com os quase acidentes.
+me-failure.c7.viz.items.0	Projeto revisado por um segundo engenheiro
+me-failure.c7.viz.items.1	Manutenção feita e registrada
+me-failure.c7.viz.items.2	Alertas levados a sério
+me-failure.c7.viz.items.3	Aprender com quase acidentes
+me-failure.c8.title	Redundância
+me-failure.c8.text	Os sistemas críticos têm reservas para que uma única falha não cause um desastre: vários cabos em uma ponte, dois motores nos aviões comerciais, parafusos extras em uma junta.
+me-failure.c8.viz.l.t	Caminho de carga único
+me-failure.c8.viz.l.items.0	uma falha, colapso
+me-failure.c8.viz.r.t	Redundante
+me-failure.c8.viz.r.items.0	outros assumem
+me-failure.c8.viz.r.items.1	tempo para reparar
+me-failure.c9.title	Análise de causa raiz
+me-failure.c9.text	Depois de uma falha, os engenheiros perguntam "por quê?" repetidas vezes para chegar à causa de fundo, e não só à peça quebrada. Corrigir apenas o sintoma deixa o problema se repetir.
+me-failure.c9.viz.steps.0	A bomba falhou
+me-failure.c9.viz.steps.1	Por quê? Rolamento travou
+me-failure.c9.viz.steps.2	Por quê? Sem lubrificação
+me-failure.c9.viz.steps.3	Por quê? Sem plano de manutenção
+me-failure.c9.viz.steps.4	Corrigir o plano
+me-design.title	O processo de projeto em engenharia
+me-design.summary	Do problema ao produto funcionando.
+me-design.q0.q	Quando é mais barato corrigir um problema de projeto?
+me-design.q0.o0	Na produção
+me-design.q0.o1	Na fase de conceito
+me-design.q0.o2	Depois das reclamações dos clientes
+me-design.q0.x	Os custos se multiplicam a cada fase posterior.
+me-design.q1.q	Para que serve uma matriz de decisão?
+me-design.q1.o0	Desenhar peças
+me-design.q1.o1	Comparar conceitos de projeto segundo critérios ponderados
+me-design.q1.o2	Testar materiais
+me-design.q1.x	Ela estrutura a escolha do conceito.
+me-design.q2.q	O que indica a marcação CE?
+me-design.q2.o0	Fabricado na Europa
+me-design.q2.o1	Conformidade com os requisitos de segurança e outros da UE
+me-design.q2.o2	Engenheiro certificado
+me-design.q2.x	É a marca de conformidade da UE.
+me-design.c0.title	Comece pelo problema
+me-design.c0.text	Um bom projeto começa definindo com clareza o problema e os requisitos: o que precisa fazer, em que condições, a que custo, até quando? Uma ótima solução para o problema errado não vale nada.
+me-design.c0.viz.items.0	O que precisa fazer?
+me-design.c0.viz.items.1	Em que condições?
+me-design.c0.viz.items.2	Orçamento e prazo?
+me-design.c0.viz.items.3	Quem vai usar e manter?
+me-design.c1.title	O ciclo de projeto
+me-design.c1.text	O projeto é iterativo: definir, gerar ideias, escolher, construir um protótipo, testar, aprender, melhorar. Várias voltas são normais.
+me-design.c1.viz.steps.0	Definir
+me-design.c1.viz.steps.1	Idear
+me-design.c1.viz.steps.2	Prototipar
+me-design.c1.viz.steps.3	Testar e aprender
+me-design.c2.title	Requisitos: obrigatório vs. desejável
+me-design.c2.text	Separe o que é obrigatório do que é desejável. Uma lista clara ajuda a escolher entre opções e evita que o escopo cresça sem controle.
+me-design.c2.viz.l.t	Obrigatório
+me-design.c2.viz.l.items.0	segurança
+me-design.c2.viz.l.items.1	função principal
+me-design.c2.viz.l.items.2	conformidade legal
+me-design.c2.viz.r.t	Desejável
+me-design.c2.viz.r.items.0	recursos extras
+me-design.c2.viz.r.items.1	acabamentos
+me-design.c2.viz.r.items.2	opções futuras
+me-design.c3.title	Escolha do conceito
+me-design.c3.text	Os engenheiros comparam as opções com uma matriz de decisão: dão nota a cada conceito segundo critérios ponderados, como custo, peso, confiabilidade e facilidade de fabricação.
+me-design.c3.viz.unit	nota ponderada
+me-design.c3.viz.items.0.l	Conceito A
+me-design.c3.viz.items.1.l	Conceito B
+me-design.c3.viz.items.2.l	Conceito C
+me-design.c4.title	Prototipagem
+me-design.c4.text	Construa protótipos rápidos e baratos para aprender cedo: papelão, impressões 3D, protoboards. Falhar cedo custa pouco; falhar depois da produção custa muito.
+me-design.c4.viz.unit	custo relativo para corrigir um problema (ilustrativo)
+me-design.c4.viz.items.0.l	Conceito
+me-design.c4.viz.items.1.l	Projeto
+me-design.c4.viz.items.2.l	Protótipo
+me-design.c4.viz.items.3.l	Produção
+me-design.c5.title	Testes
+me-design.c5.text	Os testes verificam se o projeto atende aos requisitos, inclusive em extremos: calor, frio, vibração, água, mau uso. Muitos produtos são testados até a falha para conhecer seus limites reais.
+me-design.c5.viz.items.0	Testes funcionais
+me-design.c5.viz.items.1	Testes ambientais
+me-design.c5.viz.items.2	Durabilidade e fadiga
+me-design.c5.viz.items.3	Mau uso e segurança
+me-design.c5.viz.items.4	Testes com usuários
+me-design.c6.title	Compromissos
+me-design.c6.text	Todo projeto equilibra objetivos concorrentes: mais leve muitas vezes significa mais caro; mais resistente muitas vezes significa mais pesado; mais barato pode significar vida útil menor. O trabalho do engenheiro é achar o melhor equilíbrio para o propósito.
+me-design.c6.viz.items.0.a	mais leve
+me-design.c6.viz.items.0.b	materiais mais caros
+me-design.c6.viz.items.1.a	mais resistente
+me-design.c6.viz.items.1.b	mais pesado
+me-design.c6.viz.items.2.a	mais barato
+me-design.c6.viz.items.2.b	vida útil menor
+me-design.c6.viz.items.3.a	lançar mais rápido
+me-design.c6.viz.items.3.b	menos testes
+me-design.c7.title	Normas e códigos
+me-design.c7.text	As normas (EN, ISO, IEC) reúnem décadas de lições. Segui-las torna os produtos mais seguros, compatíveis e legalmente vendáveis, como a marcação CE na Europa.
+me-design.c7.viz.items.0.a	EN
+me-design.c7.viz.items.0.b	normas europeias
+me-design.c7.viz.items.1.a	ISO
+me-design.c7.viz.items.1.b	normas internacionais
+me-design.c7.viz.items.2.a	IEC
+me-design.c7.viz.items.2.b	normas elétricas
+me-design.c7.viz.items.3.a	CE
+me-design.c7.viz.items.3.b	marca de conformidade da UE
+me-design.c8.title	Documentação
+me-design.c8.text	Desenhos, cálculos, relatórios de ensaio e decisões precisam ser registrados para que outras pessoas possam construir, verificar, manter e melhorar o projeto depois.
+me-design.c8.viz.items.0	Desenhos e modelos
+me-design.c8.viz.items.1	Cálculos
+me-design.c8.viz.items.2	Resultados de testes
+me-design.c8.viz.items.3	Registro de decisões
+me-design.c8.viz.items.4	Instruções de manutenção
+me-design.c9.title	Pensamento sistêmico
+me-design.c9.text	Um produto é um sistema de peças que interagem. Mudar uma peça, como colocar um motor maior, pode afetar a alimentação, o calor, o peso e o custo em outros pontos. A engenharia de sistemas mantém o todo à vista.
+me-design.c9.viz.steps.0	Motor maior
+me-design.c9.viz.steps.1	Precisa de mais corrente
+me-design.c9.viz.steps.2	Cabos e bateria maiores
+me-design.c9.viz.steps.3	Mais peso e custo

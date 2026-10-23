@@ -1,0 +1,569 @@
+P.title	Electrónica
+P.blurb	Componentes y señales para trastear con microcontroladores.
+tr-parts.title	Los primeros componentes
+tr-parts.summary	Resistencias, LED, condensadores y el divisor de tensión: las piezas de cualquier kit maker.
+tr-parts.q0.q	Un LED blanco (Vf 3 V) funciona con 12 V a 10 mA. ¿Qué resistencia necesita?
+tr-parts.q0.o0	90 Ω
+tr-parts.q0.o1	300 Ω
+tr-parts.q0.o2	900 Ω
+tr-parts.q0.o3	1,2 kΩ
+tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. Elegirías el siguiente valor estándar por encima, 1 kΩ.
+tr-parts.q1.q	Bandas marrón, negro, naranja. ¿Qué valor tiene?
+tr-parts.q1.o0	10 Ω
+tr-parts.q1.o1	1 kΩ
+tr-parts.q1.o2	10 kΩ
+tr-parts.q1.o3	103 Ω
+tr-parts.q1.x	Marrón 1, negro 0, naranja ×1000 → 10 × 1000 = 10 kΩ.
+tr-parts.q2.q	En un divisor con R1 = R2 y Vin = 10 V, Vout es…
+tr-parts.q2.o0	10 V
+tr-parts.q2.o1	5 V
+tr-parts.q2.o2	2,5 V
+tr-parts.q2.x	Dos resistencias iguales reparten la tensión a la mitad.
+tr-parts.q3.q	Dos resistencias de 1 kΩ en paralelo dan…
+tr-parts.q3.o0	2 kΩ
+tr-parts.q3.o1	500 Ω
+tr-parts.q3.o2	1 kΩ
+tr-parts.q3.x	Resistencias iguales en paralelo dan la mitad del valor.
+tr-parts.q4.q	¿Qué pasa si conectas un condensador electrolítico al revés?
+tr-parts.q4.o0	Nada
+tr-parts.q4.o1	Puede calentarse y reventar
+tr-parts.q4.o2	Almacena más energía
+tr-parts.q4.x	Tienen polaridad.
+tr-parts.c0.title	Cómo leer una resistencia
+tr-parts.c0.text	Las resistencias se marcan con bandas de colores. Las dos primeras son cifras, la tercera es un multiplicador, y una banda dorada o plateada al final indica la tolerancia.\n\nNegro 0, marrón 1, rojo 2, naranja 3, amarillo 4, verde 5, azul 6, violeta 7, gris 8, blanco 9.
+tr-parts.c0.sketch.4	= 1 000 Ω = 1 kΩ
+tr-parts.c1.title	Todo LED necesita una resistencia
+tr-parts.c1.text	Un LED provoca una caída de tensión directa fija (Vf, unos 2 V en los rojos y 3 V en los blancos o azules) y consume toda la corriente que pueda, hasta quemarse. Una resistencia en serie absorbe la tensión sobrante y fija la corriente.
+tr-parts.c1.formula	R = (Vs − Vf) ÷ I
+tr-parts.c1.example.0	Alimentación de 5 V, LED rojo (2 V), 20 mA
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.2	= 150 Ω
+tr-parts.c1.sketch.0	150 Ω
+tr-parts.c1.sketch.1	5 V
+tr-parts.c1.sketch.2	LED 2 V
+tr-parts.c1.sketch.3	20 mA
+tr-parts.c2.title	Los condensadores almacenan carga
+tr-parts.c2.text	Un condensador son dos placas separadas por un aislante. Conéctalo a una tensión y la carga se acumula en las placas hasta igualar la de la alimentación. Al principio se carga deprisa y luego cada vez más despacio.\n\nEn la práctica suavizan las fluctuaciones de una línea de alimentación y aportan picos cortos de corriente; por eso ves uno junto a casi cada chip.
+tr-parts.c2.sketch.2	1 RC
+tr-parts.c2.sketch.4	tiempo
+tr-parts.c2.sketch.5	tensión
+tr-parts.c3.title	Pruébalo: el divisor de tensión
+tr-parts.c3.text	Dos resistencias en serie reparten una tensión en proporción a sus valores. Es la forma habitual de bajar una señal de 5 V o 12 V a los 3,3 V que admite un pin del ESP32.
+tr-parts.c3.formula	Vout = Vin × R2 ÷ (R1 + R2)
+tr-parts.c4.title	Valores normalizados de resistencias
+tr-parts.c4.text	Las resistencias no se fabrican en todos los valores, sino en series normalizadas. La serie E12 tiene 12 valores por década: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82. Elige el valor normalizado más cercano a tu cálculo.
+tr-parts.c4.viz.items.3	× 1, 10, 100, 1k, 10k…
+tr-parts.c5.title	Potencia de una resistencia
+tr-parts.c5.text	Las resistencias convierten potencia en calor y tienen un máximo admisible: las de inserción más comunes son de ¼ W. Calcula P = I² × R y elige una resistencia con margen de sobra por encima.
+tr-parts.c5.example.0	20 mA a través de 150 Ω
+tr-parts.c5.example.1	0,02² × 150
+tr-parts.c5.example.2	= 0,06 W: una de ¼ W va bien
+tr-parts.c5.viz.f	P = I² × R
+tr-parts.c5.viz.items.0.s	I
+tr-parts.c5.viz.items.0.m	corriente que pasa
+tr-parts.c5.viz.items.1.s	R
+tr-parts.c5.viz.items.1.m	resistencia
+tr-parts.c6.title	Resistencias en serie y en paralelo
+tr-parts.c6.text	En serie, las resistencias se suman. En paralelo, el total es menor que la más pequeña; dos resistencias iguales en paralelo dan la mitad del valor.
+tr-parts.c6.viz.l.t	Serie
+tr-parts.c6.viz.l.items.0	R = R1 + R2
+tr-parts.c6.viz.l.items.1	1k + 1k = 2k
+tr-parts.c6.viz.r.t	Paralelo
+tr-parts.c6.viz.r.items.0	1/R = 1/R1 + 1/R2
+tr-parts.c6.viz.r.items.1	1k ∥ 1k = 500 Ω
+tr-parts.c7.title	Tipos de condensadores
+tr-parts.c7.text	Los condensadores cerámicos son pequeños y baratos, y se usan para desacoplo (normalmente 100 nF). Los electrolíticos almacenan más (de µF a mF) pero tienen polaridad: conéctalos al revés y pueden reventar.
+tr-parts.c7.viz.l.t	Cerámico
+tr-parts.c7.viz.l.items.0	valores bajos
+tr-parts.c7.viz.l.items.1	sin polaridad
+tr-parts.c7.viz.l.items.2	desacoplo 100 nF
+tr-parts.c7.viz.r.t	Electrolítico
+tr-parts.c7.viz.r.items.0	valores altos
+tr-parts.c7.viz.r.items.1	con polaridad (+/−)
+tr-parts.c7.viz.r.items.2	filtrado de fuente
+tr-parts.c8.title	Constante de tiempo RC
+tr-parts.c8.text	Una resistencia que carga un condensador tarda un tiempo predecible. Tras una constante de tiempo (R × C) el condensador llega a cerca del 63 % de la alimentación; tras cinco, está prácticamente lleno.
+tr-parts.c8.example.0	10 kΩ y 100 µF
+tr-parts.c8.example.1	10 000 × 0,0001
+tr-parts.c8.example.2	τ = 1 segundo
+tr-parts.c8.viz.f	τ = R × C
+tr-parts.c8.viz.items.0.s	R
+tr-parts.c8.viz.items.0.m	ohmios
+tr-parts.c8.viz.items.1.s	C
+tr-parts.c8.viz.items.1.m	faradios
+tr-parts.c8.viz.items.2.s	τ
+tr-parts.c8.viz.items.2.m	segundos
+tr-parts.c9.title	Bobinas
+tr-parts.c9.text	Una bobina (o inductor) es un arrollamiento que se opone a los cambios de corriente y almacena energía en su campo magnético. Son clave en las fuentes conmutadas y en los filtros.
+tr-parts.c9.viz.items.0.a	resistencia
+tr-parts.c9.viz.items.0.b	frena la corriente
+tr-parts.c9.viz.items.1.a	condensador
+tr-parts.c9.viz.items.1.b	frena cambios de V
+tr-parts.c9.viz.items.2.a	bobina
+tr-parts.c9.viz.items.2.b	frena cambios de I
+tr-mcu.title	Señales y microcontroladores
+tr-mcu.summary	Cómo un chip como el ESP32 lee y controla el mundo real.
+tr-mcu.q0.q	Un motor de 12 V recibe PWM al 50 % de ciclo de trabajo. Se comporta más o menos como si tuviera…
+tr-mcu.q0.o0	12 V
+tr-mcu.q0.o1	6 V
+tr-mcu.q0.o2	0,5 V
+tr-mcu.q0.o3	24 V
+tr-mcu.q0.x	La media de 12 V la mitad del tiempo es 6 V.
+tr-mcu.q1.q	¿Qué hace una entrada «flotante»?
+tr-mcu.q1.o0	Siempre lee 1
+tr-mcu.q1.o1	Siempre lee 0
+tr-mcu.q1.o2	Lee valores aleatorios porque capta ruido
+tr-mcu.q1.x	Sin nada que fije su nivel, el pin capta cargas parásitas. Una resistencia pull-up o pull-down lo soluciona.
+tr-mcu.q2.q	¿Cuántos pasos tiene un ADC de 10 bits?
+tr-mcu.q2.o0	10
+tr-mcu.q2.o1	100
+tr-mcu.q2.o2	1024
+tr-mcu.q2.o3	4096
+tr-mcu.q2.x	2¹⁰ = 1024.
+tr-mcu.q3.q	¿Por qué hay que hacer debounce de un botón?
+tr-mcu.q3.o0	Para que suene más
+tr-mcu.q3.o1	Porque los contactos rebotan y generan varias pulsaciones falsas
+tr-mcu.q3.o2	Para ahorrar energía
+tr-mcu.q3.x	Los rebotes de los contactos provocan varios pulsos.
+tr-mcu.q4.q	¿Qué riesgo hay en meter 5 V en un pin de entrada del ESP32?
+tr-mcu.q4.o0	Ninguno
+tr-mcu.q4.o1	Puede dañar el pin de 3,3 V
+tr-mcu.q4.o2	Funciona más rápido
+tr-mcu.q4.x	Los pines del ESP32 solo admiten 3,3 V.
+tr-mcu.c0.title	Digital frente a analógico
+tr-mcu.c0.text	Una señal digital tiene dos estados: bajo (0) o alto (1, a menudo 3,3 V). Una señal analógica puede tomar cualquier valor dentro de un rango, como la salida de un sensor de temperatura.\n\nLos microcontroladores son digitales por naturaleza. Para lo analógico usan un ADC para leer y PWM para simular una salida.
+tr-mcu.c0.sketch.0	digital: 0 o 1
+tr-mcu.c0.sketch.1	analógica: cualquiera
+tr-mcu.c1.title	PWM: atenuar parpadeando
+tr-mcu.c1.text	La modulación por ancho de pulso enciende y apaga un pin por completo muy deprisa. La fracción de tiempo que está encendido es el ciclo de trabajo. Un LED o un motor responde a la media: un 25 % de ciclo con 12 V se comporta más o menos como 3 V.\n\nEs eficiente porque el interruptor siempre está totalmente encendido o totalmente apagado, así que se pierde poca energía en forma de calor.
+tr-mcu.c1.sketch.0	25 % ciclo → tenue
+tr-mcu.c1.sketch.1	75 % ciclo → brillante
+tr-mcu.c1.sketch.2	discontinua = media
+tr-mcu.c2.title	Resistencias pull-up
+tr-mcu.c2.text	Un pin de entrada sin conectar a nada «flota» y capta ruido, leyendo 0 o 1 al azar. Una resistencia pull-up lo une suavemente a 3,3 V para que lea 1 por defecto. Pulsa el botón y el pin se conecta a masa, leyendo 0.\n\nLa mayoría de los microcontroladores tienen pull-ups internas que puedes activar por código.
+tr-mcu.c2.sketch.0	3,3 V
+tr-mcu.c2.sketch.1	10 kΩ
+tr-mcu.c2.sketch.2	GPIO
+tr-mcu.c2.sketch.3	botón
+tr-mcu.c2.sketch.4	reposo = 1
+tr-mcu.c2.sketch.5	pulsado = 0
+tr-mcu.c3.title	Resolución del ADC
+tr-mcu.c3.text	Un convertidor analógico-digital transforma una tensión en un número. Un ADC de n bits tiene 2ⁿ pasos. El ADC de 12 bits del ESP32 da 4096 pasos en unos 3,3 V.\n\nSus lecturas son menos precisas cerca de 0 V y cerca del máximo del rango, así que, siempre que puedas, mantén las señales en la zona central.
+tr-mcu.c3.formula	paso = Vref ÷ 2ⁿ
+tr-mcu.c3.example.0	ADC de 12 bits, referencia de 3,3 V
+tr-mcu.c3.example.1	3,3 ÷ 4096
+tr-mcu.c3.example.2	≈ 0,8 mV por paso
+tr-mcu.c3.sketch.0	tensión de entrada
+tr-mcu.c3.sketch.1	lectura
+tr-mcu.c3.sketch.2	cada paso = 1 código
+tr-mcu.c4.title	Pines GPIO
+tr-mcu.c4.text	Los pines de entrada/salida de uso general pueden configurarse como entradas (leer un botón) o salidas (encender un LED). En un ESP32 funcionan a 3,3 V y solo pueden suministrar con seguridad unos pocos miliamperios cada uno.
+tr-mcu.c4.viz.l.t	Entrada
+tr-mcu.c4.viz.l.items.0	lee 0 o 1
+tr-mcu.c4.viz.l.items.1	botones, sensores
+tr-mcu.c4.viz.r.t	Salida
+tr-mcu.c4.viz.r.items.0	pone 0 o 3,3 V
+tr-mcu.c4.viz.r.items.1	LED, relés con driver
+tr-mcu.c5.title	Lógica de 3,3 V frente a 5 V
+tr-mcu.c5.text	Muchos chips modernos (ESP32, Raspberry Pi) usan lógica de 3,3 V; el Arduino Uno usa 5 V. Meter 5 V en un pin de 3,3 V puede dañarlo. Usa un divisor de tensión o un adaptador de nivel entre ambos.
+tr-mcu.c5.viz.items.0.w	sensor de 5 V directo al ESP32
+tr-mcu.c5.viz.items.0.r	divisor o adaptador de nivel
+tr-mcu.c5.viz.items.1.w	pin de 3,3 V mueve bobina de relé de 5 V
+tr-mcu.c5.viz.items.1.r	usa un driver con transistor
+tr-mcu.c6.title	Interrupciones
+tr-mcu.c6.text	En lugar de comprobar un botón miles de veces por segundo (sondeo), una interrupción hace que el chip salte a tu código en cuanto cambia el pin. Ahorra energía y nunca se pierde un evento rápido.
+tr-mcu.c6.viz.l.t	Sondeo
+tr-mcu.c6.viz.l.items.0	comprobar sin parar
+tr-mcu.c6.viz.l.items.1	pierde tiempo
+tr-mcu.c6.viz.l.items.2	puede perder eventos cortos
+tr-mcu.c6.viz.r.t	Interrupción
+tr-mcu.c6.viz.r.items.0	el hardware te avisa
+tr-mcu.c6.viz.r.items.1	instantánea
+tr-mcu.c6.viz.r.items.2	eficiente
+tr-mcu.c7.title	Antirrebote
+tr-mcu.c7.text	Los botones mecánicos rebotan: una pulsación produce varios pulsos rápidos de encendido y apagado en unos milisegundos. El software ignora los cambios durante ~20–50 ms tras el primero, o un pequeño condensador los suaviza.
+tr-mcu.c7.viz.steps.0	Pulsación
+tr-mcu.c7.viz.steps.1	Los contactos rebotan unos ms
+tr-mcu.c7.viz.steps.2	Ignorar cambios ~30 ms
+tr-mcu.c7.viz.steps.3	Una pulsación limpia
+tr-mcu.c8.title	Temporizadores y millis()
+tr-mcu.c8.text	En vez de congelar el programa con delay(), el buen código comprueba el tiempo transcurrido y mientras tanto hace otras tareas. Así los sensores, el wifi y las pantallas siguen respondiendo.
+tr-mcu.c8.viz.items.0.w	delay(1000) lo bloquea todo
+tr-mcu.c8.viz.items.0.r	comprobar el tiempo y seguir el bucle
+tr-mcu.c9.title	Microcontrolador frente a ordenador
+tr-mcu.c9.text	Un microcontrolador (ESP32, Arduino) ejecuta un único programa directamente sobre el hardware, arranca al instante y consume milivatios. Un ordenador de placa única (Raspberry Pi) ejecuta Linux, con más potencia y complejidad.
+tr-mcu.c9.viz.l.t	Microcontrolador
+tr-mcu.c9.viz.l.items.0	sin SO
+tr-mcu.c9.viz.l.items.1	arranque instantáneo
+tr-mcu.c9.viz.l.items.2	milivatios
+tr-mcu.c9.viz.l.items.3	sensores y control
+tr-mcu.c9.viz.r.t	Ordenador de placa única
+tr-mcu.c9.viz.r.items.0	Linux
+tr-mcu.c9.viz.r.items.1	segundos en arrancar
+tr-mcu.c9.viz.r.items.2	vatios
+tr-mcu.c9.viz.r.items.3	cámaras, servidores
+tr-diodes.title	Diodos
+tr-diodes.summary	Válvulas de un solo sentido para la corriente, y sus muchos usos.
+tr-diodes.q0.q	¿Qué indica la banda de un diodo?
+tr-diodes.q0.o0	El ánodo
+tr-diodes.q0.o1	El cátodo
+tr-diodes.q0.o2	La tensión
+tr-diodes.q0.x	La corriente fluye hacia la banda.
+tr-diodes.q1.q	¿Por qué se pone un diodo en paralelo con la bobina de un relé?
+tr-diodes.q1.o0	Para que brille más
+tr-diodes.q1.o1	Para absorber el pico de tensión al desconectarlo
+tr-diodes.q1.o2	Para duplicar la tensión
+tr-diodes.q1.x	El diodo de libre circulación protege al driver.
+tr-diodes.q2.q	¿Qué caída de tensión tiene aproximadamente un diodo de silicio al conducir?
+tr-diodes.q2.o0	3 V
+tr-diodes.q2.o1	0,7 V
+tr-diodes.q2.o2	0 V
+tr-diodes.q2.x	Unos 0,6–0,7 V.
+tr-diodes.c0.title	Una válvula de un solo sentido
+tr-diodes.c0.text	Un diodo deja pasar la corriente en un sentido (de ánodo a cátodo) y la bloquea en el contrario. La banda del cuerpo marca el cátodo.
+tr-diodes.c0.viz.l.t	Directa
+tr-diodes.c0.viz.l.items.0	la corriente fluye
+tr-diodes.c0.viz.l.items.1	caída de ~0,7 V (silicio)
+tr-diodes.c0.viz.r.t	Inversa
+tr-diodes.c0.viz.r.items.0	bloqueada
+tr-diodes.c0.viz.r.items.1	solo fuga mínima
+tr-diodes.c1.title	Tensión directa
+tr-diodes.c1.text	Un diodo de silicio provoca una caída de unos 0,6–0,7 V al conducir; un diodo Schottky solo 0,2–0,4 V, con lo que desperdicia menos potencia. Los LED caen más: 2 V los rojos y unos 3 V los azules y blancos.
+tr-diodes.c1.viz.unit	voltios (aprox.)
+tr-diodes.c1.viz.items.0.l	Schottky
+tr-diodes.c1.viz.items.1.l	Silicio
+tr-diodes.c1.viz.items.2.l	LED rojo
+tr-diodes.c1.viz.items.3.l	LED azul/blanco
+tr-diodes.c2.title	Protección contra inversión de polaridad
+tr-diodes.c2.text	Un diodo en serie con una entrada de alimentación evita daños si alguien conecta la batería al revés. Cuesta un poco de tensión; un MOSFET hace lo mismo casi sin pérdidas.
+tr-diodes.c2.viz.steps.0	Batería conectada al revés
+tr-diodes.c2.viz.steps.1	El diodo bloquea
+tr-diodes.c2.viz.steps.2	Circuito protegido
+tr-diodes.c3.title	Rectificadores
+tr-diodes.c3.text	Cuatro diodos en puente convierten la CA en CC pulsante: las dos mitades de la onda salen positivas. Añade un condensador grande y se suaviza hasta una CC casi constante.
+tr-diodes.c3.viz.steps.0	Entrada CA
+tr-diodes.c3.viz.steps.1	Puente de 4 diodos
+tr-diodes.c3.viz.steps.2	CC pulsante
+tr-diodes.c3.viz.steps.3	El condensador la suaviza
+tr-diodes.c4.title	Diodos de libre circulación
+tr-diodes.c4.text	Cuando desconectas la bobina de un relé o de un motor, su campo magnético se colapsa y genera un pico de tensión que puede cargarse el transistor que la controla. Un diodo en paralelo con la bobina absorbe el pico de forma segura.
+tr-diodes.c4.viz.items.0.w	bobina de relé sin diodo
+tr-diodes.c4.viz.items.0.r	diodo en paralelo con la bobina, banda a +
+tr-diodes.c4.viz.items.1.w	el transistor muere a las pocas semanas
+tr-diodes.c4.viz.items.1.r	diodo de libre circulación puesto
+tr-diodes.c5.title	Diodos Zener
+tr-diodes.c5.text	Un diodo Zener conduce en inversa a una tensión precisa, como 3,3 V o 5,1 V. Con una resistencia forma una referencia de tensión sencilla o protege entradas contra sobretensiones.
+tr-diodes.c5.viz.steps.0	Tensión más alta
+tr-diodes.c5.viz.steps.1	Resistencia en serie
+tr-diodes.c5.viz.steps.2	El Zener fija 3,3 V
+tr-diodes.c5.viz.steps.3	Entrada protegida
+tr-diodes.c6.title	Los LED son diodos
+tr-diodes.c6.text	Un diodo emisor de luz emite luz cuando la corriente circula en sentido directo. El color depende del material semiconductor. La pata larga es el ánodo (+); el lado plano marca el cátodo (−).
+tr-diodes.c6.viz.items.0.a	pata larga
+tr-diodes.c6.viz.items.0.b	ánodo (+)
+tr-diodes.c6.viz.items.1.a	pata corta / lado plano
+tr-diodes.c6.viz.items.1.b	cátodo (−)
+tr-diodes.c6.viz.items.2.a	color
+tr-diodes.c6.viz.items.2.b	según el material
+tr-diodes.c7.title	Fotodiodos y células solares
+tr-diodes.c7.text	Polarizado en inversa, un diodo puede detectar luz: los fotones liberan electrones y circula una corriente diminuta. Los sensores de luz, los receptores de mando a distancia y las células solares son, en el fondo, fotodiodos.
+tr-diodes.c7.viz.items.0	Receptores de mando de TV
+tr-diodes.c7.viz.items.1	Sensores de luz
+tr-diodes.c7.viz.items.2	Receptores de fibra óptica
+tr-diodes.c7.viz.items.3	Células solares
+tr-diodes.c8.title	Diodos TVS
+tr-diodes.c8.text	Los diodos supresores de tensiones transitorias recortan picos muy rápidos, como una descarga electrostática en un puerto USB o una sobretensión en un cable de sensor largo, y protegen el chip que tienen detrás.
+tr-diodes.c8.viz.steps.0	Llega un pico
+tr-diodes.c8.viz.steps.1	El TVS lo recorta en ns
+tr-diodes.c8.viz.steps.2	El exceso va a masa
+tr-diodes.c8.viz.steps.3	El chip sobrevive
+tr-diodes.c9.title	Diodos para combinar alimentaciones
+tr-diodes.c9.text	Dos diodos permiten que un circuito funcione con la alimentación que tenga más tensión, por ejemplo USB o batería, sin que una alimente a la otra.
+tr-diodes.c9.viz.steps.0	USB 5 V por un diodo
+tr-diodes.c9.viz.steps.1	Batería 3,7 V por un diodo
+tr-diodes.c9.viz.steps.2	La más alta alimenta el circuito
+tr-transistors.title	Transistores como interruptores
+tr-transistors.summary	Cómo una señal diminuta controla una carga grande.
+tr-transistors.q0.q	¿Por qué usar un MOSFET de nivel lógico con un ESP32?
+tr-transistors.q0.o0	Es más barato
+tr-transistors.q0.o1	Conduce por completo con solo 3,3 V en la puerta
+tr-transistors.q0.o2	Es resistente al agua
+tr-transistors.q0.x	Los MOSFET estándar pueden necesitar unos 10 V.
+tr-transistors.q1.q	¿Para qué sirve una resistencia pull-down en la puerta?
+tr-transistors.q1.o0	Acelera la CPU
+tr-transistors.q1.o1	Mantiene el MOSFET apagado cuando el pin está flotante
+tr-transistors.q1.o2	Limita la corriente de la carga
+tr-transistors.q1.x	Mantiene la puerta a 0 V durante el arranque.
+tr-transistors.q2.q	Un MOSFET de 50 mΩ conduce 4 A. El calor que disipa es…
+tr-transistors.q2.o0	0,2 W
+tr-transistors.q2.o1	0,8 W
+tr-transistors.q2.o2	4 W
+tr-transistors.q2.x	4² × 0,05 = 0,8 W.
+tr-transistors.c0.title	Por qué lo necesitas
+tr-transistors.c0.text	Un pin de microcontrolador solo puede suministrar unos pocos miliamperios. Un motor, una tira de LED o un relé necesitan mucho más. Un transistor permite que la pequeña corriente del pin controle una corriente de carga mucho mayor.
+tr-transistors.c0.viz.steps.0	El pin da 1 mA
+tr-transistors.c0.viz.steps.1	El transistor conduce
+tr-transistors.c0.viz.steps.2	La carga recibe 500 mA
+tr-transistors.c1.title	BJT: la corriente controla la corriente
+tr-transistors.c1.text	En un transistor bipolar (NPN), una pequeña corriente en la base permite que circule una corriente mucho mayor del colector al emisor. La relación, la ganancia (hFE), suele ser de 100 o más.
+tr-transistors.c1.viz.f	Ic ≈ hFE × Ib
+tr-transistors.c1.viz.items.0.s	Ib
+tr-transistors.c1.viz.items.0.m	corriente de base
+tr-transistors.c1.viz.items.1.s	hFE
+tr-transistors.c1.viz.items.1.m	ganancia
+tr-transistors.c1.viz.items.2.s	Ic
+tr-transistors.c1.viz.items.2.m	corriente de colector
+tr-transistors.c2.title	MOSFET: la tensión controla la corriente
+tr-transistors.c2.text	Un MOSFET se controla con la tensión de su puerta, casi sin corriente de puerta. Cuando conduce por completo, su resistencia puede ser de solo miliohmios, así que apenas se calienta. La mayor parte de la conmutación de potencia usa MOSFET.
+tr-transistors.c2.viz.l.t	BJT
+tr-transistors.c2.viz.l.items.0	lo controla la corriente de base
+tr-transistors.c2.viz.l.items.1	caída de ~0,2 V al conducir
+tr-transistors.c2.viz.l.items.2	cargas pequeñas
+tr-transistors.c2.viz.r.t	MOSFET
+tr-transistors.c2.viz.r.items.0	lo controla la tensión de puerta
+tr-transistors.c2.viz.r.items.1	miliohmios al conducir
+tr-transistors.c2.viz.r.items.2	cargas grandes
+tr-transistors.c3.title	Conmutación en el lado bajo
+tr-transistors.c3.text	La forma más sencilla: pon un MOSFET de canal N entre la carga y masa. El pin controla la puerta; cuando está en alto, se cierra el camino de la carga a masa.
+tr-transistors.c3.viz.steps.0	+12 V
+tr-transistors.c3.viz.steps.1	Carga
+tr-transistors.c3.viz.steps.2	MOSFET N
+tr-transistors.c3.viz.steps.3	Masa (puerta controlada por el pin)
+tr-transistors.c4.title	MOSFET de nivel lógico
+tr-transistors.c4.text	Muchos MOSFET necesitan 10 V en la puerta para conducir por completo. Con un microcontrolador de 3,3 V, elige un MOSFET de nivel lógico especificado para conducir totalmente a 2,5–3,3 V, como el AO3400 o el IRLZ44N.
+tr-transistors.c4.viz.items.0.w	IRF540 controlado desde 3,3 V
+tr-transistors.c4.viz.items.0.r	MOSFET de nivel lógico
+tr-transistors.c4.viz.items.1.w	el MOSFET se calienta
+tr-transistors.c4.viz.items.1.r	solo conduce a medias, revisa la tensión de puerta
+tr-transistors.c5.title	Resistencia de puerta y pull-down
+tr-transistors.c5.text	Añade una resistencia pequeña (unos 100 Ω) entre el pin y la puerta para limitar los picos de corriente, y una pull-down de 10 kΩ de la puerta a masa para que el MOSFET siga apagado mientras arranca el microcontrolador.
+tr-transistors.c5.viz.items.0	Resistencia de puerta ~100 Ω
+tr-transistors.c5.viz.items.1	Pull-down de puerta 10 kΩ
+tr-transistors.c5.viz.items.2	Diodo de libre circulación en bobinas
+tr-transistors.c5.viz.items.3	Componente de nivel lógico
+tr-transistors.c6.title	Transistores como amplificadores
+tr-transistors.c6.text	Entre totalmente apagado y totalmente encendido, un transistor puede amplificar: una pequeña señal variable a la entrada da una copia mayor a la salida. Así funcionan las radios y los amplificadores de audio.
+tr-transistors.c6.viz.l.t	Interruptor
+tr-transistors.c6.viz.l.items.0	apagado o encendido
+tr-transistors.c6.viz.l.items.1	poco calor
+tr-transistors.c6.viz.r.t	Amplificador
+tr-transistors.c6.viz.r.items.0	en medio
+tr-transistors.c6.viz.r.items.1	copia la señal en grande
+tr-transistors.c6.viz.r.items.2	genera calor
+tr-transistors.c7.title	Calor en los interruptores
+tr-transistors.c7.text	La potencia que pierde un MOSFET de conmutación es I² × R(on). Un MOSFET de 20 mΩ que conduce 10 A pierde 2 W, lo que exige un pequeño disipador. Conmutar rápido también importa, porque en cada transición se pierde potencia.
+tr-transistors.c7.example.0	10 A a través de 20 mΩ
+tr-transistors.c7.example.1	10² × 0,02
+tr-transistors.c7.example.2	= 2 W de calor
+tr-transistors.c7.viz.f	P = I² × R(on)
+tr-transistors.c7.viz.items.0.s	I
+tr-transistors.c7.viz.items.0.m	corriente de carga
+tr-transistors.c7.viz.items.1.s	R(on)
+tr-transistors.c7.viz.items.1.m	R en conducción
+tr-transistors.c8.title	Optoacopladores y relés de estado sólido
+tr-transistors.c8.text	Un optoacoplador transmite una señal mediante luz dentro de un chip cerrado, aislando eléctricamente dos circuitos. Los relés de estado sólido usan la misma idea para conmutar cargas de red en silencio, sin piezas móviles.
+tr-transistors.c8.viz.steps.0	El pin enciende un LED interno
+tr-transistors.c8.viz.steps.1	La luz cruza un hueco
+tr-transistors.c8.viz.steps.2	El detector conmuta el otro lado
+tr-transistors.c8.viz.steps.3	Aislamiento total
+tr-transistors.c9.title	Miles de millones en un chip
+tr-transistors.c9.text	Los procesadores modernos contienen decenas de miles de millones de MOSFET microscópicos que actúan como interruptores. El mismo dispositivo que controla tu tira de LED, reducido a unos pocos nanómetros, hace todo el cálculo.
+tr-transistors.c9.viz.items.0.l	primer transistor
+tr-transistors.c9.viz.items.1.v	50 000 millones+
+tr-transistors.c9.viz.items.1.l	en un chip moderno
+tr-opamps.title	Amplificadores operacionales
+tr-opamps.summary	La navaja suiza de la electrónica analógica.
+tr-opamps.q0.q	Un amplificador no inversor con Rf = 4 kΩ y Rg = 1 kΩ tiene una ganancia de…
+tr-opamps.q0.o0	4
+tr-opamps.q0.o1	5
+tr-opamps.q0.o2	0,25
+tr-opamps.q0.x	1 + 4/1 = 5.
+tr-opamps.q1.q	¿Qué hace un seguidor de tensión?
+tr-opamps.q1.o0	Duplica la tensión
+tr-opamps.q1.o1	Hace de búfer para una señal débil con ganancia 1
+tr-opamps.q1.o2	Convierte CA en CC
+tr-opamps.q1.x	Aísla la fuente de la carga.
+tr-opamps.q2.q	Sin realimentación, un amplificador operacional funciona como…
+tr-opamps.q2.o0	Un filtro
+tr-opamps.q2.o1	Un comparador
+tr-opamps.q2.o2	Una batería
+tr-opamps.q2.x	Simplemente indica qué entrada es mayor.
+tr-opamps.c0.title	Qué es un amplificador operacional
+tr-opamps.c0.text	Un amplificador operacional es un chip con dos entradas (+ y −) y una salida. Amplifica la diferencia entre las entradas por un factor enorme, a menudo 100 000 veces o más.
+tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
+tr-opamps.c0.viz.items.0.s	A
+tr-opamps.c0.viz.items.0.m	ganancia en lazo abierto, enorme
+tr-opamps.c0.viz.items.1.s	V+
+tr-opamps.c0.viz.items.1.m	entrada no inversora
+tr-opamps.c0.viz.items.2.s	V−
+tr-opamps.c0.viz.items.2.m	entrada inversora
+tr-opamps.c1.title	La realimentación lo doma
+tr-opamps.c1.text	Por sí sola, esa ganancia enorme es inutilizable. Devolver parte de la salida a la entrada negativa fija una ganancia precisa y estable, elegida con dos resistencias.
+tr-opamps.c1.viz.steps.0	Ganancia bruta enorme
+tr-opamps.c1.viz.steps.1	Salida de vuelta a la entrada −
+tr-opamps.c1.viz.steps.2	Ganancia fijada por resistencias
+tr-opamps.c1.viz.steps.3	Amplificador estable y preciso
+tr-opamps.c2.title	Amplificador no inversor
+tr-opamps.c2.text	La forma clásica de amplificar la pequeña señal de un sensor. La salida sigue a la entrada, multiplicada por una ganancia que fijan dos resistencias.
+tr-opamps.c2.example.0	Rf = 9 kΩ, Rg = 1 kΩ
+tr-opamps.c2.example.1	1 + 9
+tr-opamps.c2.example.2	ganancia = 10
+tr-opamps.c2.viz.f	Ganancia = 1 + Rf ÷ Rg
+tr-opamps.c2.viz.items.0.s	Rf
+tr-opamps.c2.viz.items.0.m	resistencia de realimentación
+tr-opamps.c2.viz.items.1.s	Rg
+tr-opamps.c2.viz.items.1.m	resistencia a masa
+tr-opamps.c3.title	El seguidor de tensión
+tr-opamps.c3.text	Conecta la salida directamente a la entrada negativa y la ganancia es 1. ¿Inútil? No: aísla una fuente débil de una carga pesada; es un «búfer».
+tr-opamps.c3.viz.steps.0	Señal débil del sensor
+tr-opamps.c3.viz.steps.1	Seguidor (ganancia 1)
+tr-opamps.c3.viz.steps.2	Copia fuerte de la señal
+tr-opamps.c3.viz.steps.3	ADC o cable largo
+tr-opamps.c4.title	Comparadores
+tr-opamps.c4.text	Sin realimentación, un amplificador operacional (o un chip comparador específico) solo te dice qué entrada es mayor: salida alta o baja. Ideal para termostatos e interruptores que se activan con la luz.
+tr-opamps.c4.viz.steps.0	Tensión del sensor
+tr-opamps.c4.viz.steps.1	Comparar con umbral
+tr-opamps.c4.viz.steps.2	Por encima: salida alta
+tr-opamps.c4.viz.steps.3	Por debajo: salida baja
+tr-opamps.c5.title	Dos reglas de oro
+tr-opamps.c5.text	Con realimentación negativa, analiza los circuitos con amplificadores operacionales con dos reglas: no entra corriente por las entradas, y la salida hace lo que haga falta para que ambas entradas sean iguales.
+tr-opamps.c5.viz.items.0	No entra corriente por las entradas
+tr-opamps.c5.viz.items.1	La salida iguala V+ y V−
+tr-opamps.c5.viz.items.2	Solo con realimentación negativa
+tr-opamps.c6.title	Rail-to-rail
+tr-opamps.c6.text	Los amplificadores operacionales antiguos no pueden llevar su salida cerca de las tensiones de alimentación. En circuitos de 3,3 V o 5 V, elige uno rail-to-rail para que la señal aproveche todo el rango.
+tr-opamps.c6.viz.l.t	Operacional clásico
+tr-opamps.c6.viz.l.items.0	necesita ±12 V
+tr-opamps.c6.viz.l.items.1	la salida no llega a los raíles
+tr-opamps.c6.viz.r.t	Rail-to-rail
+tr-opamps.c6.viz.r.items.0	funciona desde 3,3 V
+tr-opamps.c6.viz.r.items.1	la salida llega casi a 0 V y 3,3 V
+tr-opamps.c7.title	Filtros
+tr-opamps.c7.text	Con condensadores, los amplificadores operacionales forman filtros activos: paso bajo para quitar ruido de un sensor, paso alto para bloquear la CC y paso banda para una frecuencia concreta.
+tr-opamps.c7.viz.items.0.a	paso bajo
+tr-opamps.c7.viz.items.0.b	quita ruido rápido
+tr-opamps.c7.viz.items.1.a	paso alto
+tr-opamps.c7.viz.items.1.b	quita deriva lenta y CC
+tr-opamps.c7.viz.items.2.a	paso banda
+tr-opamps.c7.viz.items.2.b	deja una banda de frecuencias
+tr-opamps.c8.title	Sumas y diferencias
+tr-opamps.c8.text	Los amplificadores operacionales pueden sumar varias señales (mezcladores de audio) o restar una de otra (medir la pequeña tensión en una resistencia de medida de corriente).
+tr-opamps.c8.viz.items.0.a	sumador
+tr-opamps.c8.viz.items.0.b	mezclador
+tr-opamps.c8.viz.items.1.a	diferencial
+tr-opamps.c8.viz.items.1.b	resta dos señales
+tr-opamps.c8.viz.items.2.a	de instrumentación
+tr-opamps.c8.viz.items.2.b	diferencias mínimas, preciso
+tr-opamps.c9.title	El 741
+tr-opamps.c9.text	El μA741, lanzado en 1968, se convirtió en el amplificador operacional más famoso de la historia y aún se enseña hoy, aunque los componentes modernos son muy superiores para circuitos de baja tensión.
+tr-opamps.c9.viz.events.0.l	primer operacional monolítico
+tr-opamps.c9.viz.events.1.l	el μA741
+tr-opamps.c9.viz.events.2.y	hoy
+tr-opamps.c9.viz.events.2.l	rail-to-rail, bajo consumo
+tr-psu.title	Fuentes de alimentación y reguladores
+tr-psu.summary	Conseguir la tensión correcta, limpia y de forma eficiente.
+tr-psu.q0.q	Un regulador lineal baja de 9 V a 5 V con 0,2 A. ¿Cuánto calor genera?
+tr-psu.q0.o0	0,2 W
+tr-psu.q0.o1	0,8 W
+tr-psu.q0.o2	1,8 W
+tr-psu.q0.x	(9 − 5) × 0,2 = 0,8 W.
+tr-psu.q1.q	¿Qué es más eficiente para bajar de 24 V a 3,3 V?
+tr-psu.q1.o0	Regulador lineal
+tr-psu.q1.o1	Convertidor reductor (buck)
+tr-psu.q1.o2	Diodo Zener
+tr-psu.q1.x	Los convertidores conmutados desperdician poca potencia.
+tr-psu.q2.q	Un adaptador de 2 A alimenta un proyecto que consume 0,5 A. ¿Está bien?
+tr-psu.q2.o0	Sí, solo consume lo que necesita
+tr-psu.q2.o1	No, se quemará
+tr-psu.q2.o2	Solo con una resistencia
+tr-psu.q2.x	La corriente nominal es un máximo, no lo que se fuerza a pasar.
+tr-psu.c0.title	¿Por qué regular?
+tr-psu.c0.text	Las baterías pierden tensión al descargarse, y el USB puede variar entre unos 4,75 y 5,25 V. Los chips quieren una tensión estable, así que un regulador la mantiene constante haga lo que haga la entrada.
+tr-psu.c0.viz.steps.0	Entrada variable 4,2–3,0 V
+tr-psu.c0.viz.steps.1	Regulador
+tr-psu.c0.viz.steps.2	3,3 V estables
+tr-psu.c0.viz.steps.3	Chip contento
+tr-psu.c1.title	Reguladores lineales
+tr-psu.c1.text	Un regulador lineal (como el LM7805 o el AMS1117) quema la tensión sobrante en forma de calor. Sencillo y silencioso, pero derrochador cuando la entrada es mucho mayor que la salida.
+tr-psu.c1.example.0	De 12 V a 5 V con 0,5 A
+tr-psu.c1.example.1	(12 − 5) × 0,5
+tr-psu.c1.example.2	= 3,5 W de calor
+tr-psu.c1.viz.f	calor = (Vin − Vout) × I
+tr-psu.c1.viz.items.0.s	Vin
+tr-psu.c1.viz.items.0.m	tensión de entrada
+tr-psu.c1.viz.items.1.s	Vout
+tr-psu.c1.viz.items.1.m	salida
+tr-psu.c1.viz.items.2.s	I
+tr-psu.c1.viz.items.2.m	corriente de carga
+tr-psu.c2.title	Reguladores LDO
+tr-psu.c2.text	Un regulador de baja caída (LDO) funciona con una entrada solo un poco por encima de la salida, por ejemplo 3,6 V de entrada para 3,3 V de salida. Imprescindible cuando funcionas con una sola celda de litio.
+tr-psu.c2.viz.l.t	Lineal estándar
+tr-psu.c2.viz.l.items.0	necesita ~2 V de margen
+tr-psu.c2.viz.l.items.1	p. ej. 7805
+tr-psu.c2.viz.r.t	LDO
+tr-psu.c2.viz.r.items.0	necesita ~0,1–0,4 V
+tr-psu.c2.viz.r.items.1	ideal con batería
+tr-psu.c3.title	Convertidores reductores (buck)
+tr-psu.c3.text	Un convertidor buck reduce la tensión conmutando muy rápido a través de una bobina. Una eficiencia del 85–95 % significa poco calor, incluso de 24 V a 3,3 V.
+tr-psu.c3.viz.steps.0	Entrada 12 V
+tr-psu.c3.viz.steps.1	Conmuta a ~500 kHz
+tr-psu.c3.viz.steps.2	Bobina y condensador lo suavizan
+tr-psu.c3.viz.steps.3	Salida 5 V, ~90 % eficiente
+tr-psu.c4.title	Convertidores elevadores (boost)
+tr-psu.c4.text	Un convertidor boost eleva la tensión, por ejemplo de una batería de 3,7 V a 5 V para USB. Toma de la batería más corriente de la que entrega a la salida.
+tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
+tr-psu.c4.viz.items.0.s	Vout
+tr-psu.c4.viz.items.0.m	5 V
+tr-psu.c4.viz.items.1.s	Iout
+tr-psu.c4.viz.items.1.m	1 A
+tr-psu.c4.viz.items.2.s	Vin
+tr-psu.c4.viz.items.2.m	3,7 V
+tr-psu.c4.viz.items.3.s	η
+tr-psu.c4.viz.items.3.m	~0,9 → Iin ≈ 1,5 A
+tr-psu.c5.title	Comparación de eficiencia
+tr-psu.c5.text	Para una caída grande, ganan los reguladores conmutados. Para caídas pequeñas y circuitos analógicos sensibles al ruido, un LDO puede ser mejor.
+tr-psu.c5.viz.unit	% eficiencia, 12 V → 3,3 V
+tr-psu.c5.viz.items.0.l	Lineal
+tr-psu.c5.viz.items.1.l	Conversor buck
+tr-psu.c6.title	Rizado y ruido
+tr-psu.c6.text	Los reguladores conmutados dejan un pequeño rizado a su frecuencia de conmutación. Los circuitos sensibles (audio, ADC precisos) usan filtrado adicional o un LDO después del convertidor buck.
+tr-psu.c6.viz.steps.0	Conversor buck
+tr-psu.c6.viz.steps.1	Pequeño rizado
+tr-psu.c6.viz.steps.2	Filtro LC o LDO
+tr-psu.c6.viz.steps.3	Alimentación limpia
+tr-psu.c7.title	Cómo elegir un adaptador de corriente
+tr-psu.c7.text	Haz coincidir la tensión exactamente, asegúrate de que la corriente nominal sea al menos la que necesita tu proyecto y comprueba la polaridad del conector jack. Una corriente nominal mayor no es problema: el dispositivo solo consume lo que necesita.
+tr-psu.c7.viz.items.0	La tensión debe coincidir
+tr-psu.c7.viz.items.1	Corriente nominal ≥ la necesaria
+tr-psu.c7.viz.items.2	Comprueba centro positivo o negativo
+tr-psu.c7.viz.items.3	Mejor adaptadores certificados
+tr-psu.c8.title	USB Power Delivery
+tr-psu.c8.text	USB-C PD negocia tensiones más altas, 9, 15 o 20 V, hasta 100 W o más, pero solo tras un intercambio digital. Un cable USB-C normal sin negociación da 5 V.
+tr-psu.c8.viz.unit	vatios (máx., estándares USB)
+tr-psu.c8.viz.items.0.l	USB 2.0
+tr-psu.c8.viz.items.1.l	USB 3.0
+tr-psu.c8.viz.items.2.l	USB-C 3 A
+tr-psu.c8.viz.items.3.l	USB-C PD
+tr-psu.c9.title	Caídas de tensión (brown-outs)
+tr-psu.c9.text	Si la alimentación baja de lo que necesita un chip, puede comportarse mal o reiniciarse. Los ESP32 son famosos por reiniciarse con los picos de transmisión wifi cuando la fuente es débil. Un buen regulador y un condensador grande cerca de la placa lo solucionan.
+tr-psu.c9.viz.items.0.w	el ESP32 se reinicia al arrancar el wifi
+tr-psu.c9.viz.items.0.r	fuente de 3,3 V más potente y un condensador de 470 µF cerca de la placa
+tr-sensors.title	Sensores
+tr-sensors.summary	Medir temperatura, distancia, movimiento y más.
+tr-sensors.q0.q	Un eco ultrasónico vuelve tras 2,9 ms. La distancia es de aproximadamente…
+tr-sensors.q0.o0	1 m
+tr-sensors.q0.o1	0,5 m
+tr-sensors.q0.o2	2 m
+tr-sensors.q0.x	0,0029 × 343 ÷ 2 ≈ 0,5 m.
+tr-sensors.q1.q	¿Por qué un sensor PIR puede no detectar a alguien sentado e inmóvil?
+tr-sensors.q1.o0	Hace demasiado frío
+tr-sensors.q1.o1	Detecta cambios en el calor infrarrojo causados por el movimiento
+tr-sensors.q1.o2	Solo funciona de noche
+tr-sensors.q1.x	El PIR responde al movimiento.
+tr-sensors.q2.q	Una pinza amperimétrica (CT) mide…
+tr-sensors.q2.o0	Tensión continua
+tr-sensors.q2.o1	Corriente alterna sin cortar el cable
+tr-sensors.q2.o2	Temperatura
+tr-sensors.q2.x	Detecta el campo magnético.
+tr-sensors.c0.title	Del mundo a los números
+tr-sensors.c0.text	Un sensor convierte una magnitud física en una señal eléctrica: una tensión, una resistencia, una duración de pulso o datos digitales. El microcontrolador la lee y la convierte a unidades reales.

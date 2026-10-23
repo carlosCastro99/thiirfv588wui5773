@@ -105,11 +105,11 @@ el-basics.c9.text	La corriente solo circula por un bucle completo. Un interrupto
 el-basics.c9.viz.l.t	Circuito cerrado
 el-basics.c9.viz.l.items.0	bucle completo
 el-basics.c9.viz.l.items.1	hay corriente
-el-basics.c9.viz.l.items.2	lámpara encendida
+el-basics.c9.viz.l.items.2	luz encendida
 el-basics.c9.viz.r.t	Circuito abierto
 el-basics.c9.viz.r.items.0	hueco en el bucle
 el-basics.c9.viz.r.items.1	sin corriente
-el-basics.c9.viz.r.items.2	lámpara apagada
+el-basics.c9.viz.r.items.2	luz apagada
 el-home.title	Circuitos en casa
 el-home.summary	Serie frente a paralelo, potencia y lo que hacen de verdad los automáticos de tu cuadro.
 el-home.q0.q	¿Por qué cada enchufe de una casa recibe los 230 V completos?
@@ -416,7 +416,7 @@ el-motors.c1.text	Los motores de CC pequeños usan un conmutador, un anillo part
 el-motors.c1.viz.l.t	CC con escobillas
 el-motors.c1.viz.l.items.0	simple y barato
 el-motors.c1.viz.l.items.1	escobillas se gastan
-el-motors.c1.viz.l.items.2	juguetes, limpiaparabrisas
+el-motors.c1.viz.l.items.2	juguetes, limpias
 el-motors.c1.viz.r.t	CC sin escobillas
 el-motors.c1.viz.r.items.0	conmutación electrónica
 el-motors.c1.viz.r.items.1	larga vida
@@ -564,7 +564,7 @@ el-grid.c8.viz.l.items.2	requiere montañas
 el-grid.c8.viz.r.t	Baterías
 el-grid.c8.viz.r.items.0	respuesta rápida
 el-grid.c8.viz.r.items.1	de minutos a horas
-el-grid.c8.viz.r.items.2	en cualquier sitio
+el-grid.c8.viz.r.items.2	donde sea
 el-grid.c9.title	Redes inteligentes
 el-grid.c9.text	Los contadores inteligentes, los sensores y la automatización permiten a la red ver en tiempo real por dónde fluye la energía, integrar la solar en tejados y los VE, y desviar el flujo automáticamente alrededor de las averías.
 el-grid.c9.viz.items.0	Contadores inteligentes
@@ -598,3 +598,303 @@ el-batteries.c0.viz.steps.3	De vuelta al cátodo
 el-batteries.c1.title	Capacidad: Ah y Wh
 el-batteries.c1.text	Los amperios hora (Ah) indican cuánta carga guarda una batería. Multiplica por la tensión para obtener la energía en vatios hora (Wh), que es lo que de verdad importa para comparar baterías.
 el-batteries.c1.example.0	Batería de 100 Ah a 12 V
+el-batteries.c1.example.1	100 × 12
+el-batteries.c1.example.2	= 1200 Wh = 1,2 kWh
+el-batteries.c1.viz.f	Wh = Ah × V
+el-batteries.c1.viz.items.0.s	Ah
+el-batteries.c1.viz.items.0.m	capacidad
+el-batteries.c1.viz.items.1.s	V
+el-batteries.c1.viz.items.1.m	tensión nominal
+el-batteries.c2.title	Químicas de batería
+el-batteries.c2.text	El plomo-ácido es barato y pesado (baterías de arranque de coche). El ion-litio almacena mucha más energía por kilo (móviles, portátiles, VE). El LFP, una variante de litio-ferrofosfato, sacrifica un poco de densidad energética a cambio de seguridad y larga vida.
+el-batteries.c2.viz.unit	Wh por kg (celda típica)
+el-batteries.c2.viz.items.0.l	Plomo-ácido
+el-batteries.c2.viz.items.1.l	NiMH
+el-batteries.c2.viz.items.2.l	LFP
+el-batteries.c2.viz.items.3.l	Ion-litio NMC
+el-batteries.c3.title	Tasa C
+el-batteries.c3.text	La tasa C compara la corriente de carga o descarga con la capacidad. A 1C una batería se carga o se vacía por completo en una hora aproximadamente; a 0,5C, en dos horas; a 3C, en 20 minutos. Las tasas C altas generan calor y desgaste.
+el-batteries.c3.viz.f	tiempo ≈ 1 ÷ tasa C (horas)
+el-batteries.c3.viz.items.0.s	1C
+el-batteries.c3.viz.items.0.m	1 hora
+el-batteries.c3.viz.items.1.s	0,5C
+el-batteries.c3.viz.items.1.m	2 horas
+el-batteries.c3.viz.items.2.s	2C
+el-batteries.c3.viz.items.2.m	30 minutos
+el-batteries.c4.title	Estado de carga y ciclos
+el-batteries.c4.text	Las baterías de litio duran más si no pasan mucho tiempo al 0 % ni al 100 %. Muchos VE recomiendan cargar al 80 % para el uso diario y al 100 % solo antes de viajes largos.
+el-batteries.c4.viz.items.0.l	no la dejes vacía
+el-batteries.c4.viz.items.1.l	punto óptimo diario
+el-batteries.c4.viz.items.2.l	límite diario
+el-batteries.c4.viz.items.3.l	llena para viajes
+el-batteries.c5.title	Por qué envejecen las baterías
+el-batteries.c5.text	Cada ciclo provoca pequeños cambios químicos que reducen poco a poco la capacidad. El calor lo acelera mucho. Los niveles de carga altos y la carga muy rápida también añaden estrés.
+el-batteries.c5.viz.items.0	Calor
+el-batteries.c5.viz.items.1	Mucho tiempo al 100 %
+el-batteries.c5.viz.items.2	Descargas profundas
+el-batteries.c5.viz.items.3	Carga muy rápida frecuente
+el-batteries.c6.title	Vida en ciclos
+el-batteries.c6.text	Las celdas LFP suelen aguantar varios miles de ciclos completos antes de bajar al 80 % de capacidad, por eso son populares para el almacenamiento doméstico. Las NMC típicas aguantan menos, pero almacenan más energía por kilo.
+el-batteries.c6.viz.unit	ciclos típicos hasta el 80 %
+el-batteries.c6.viz.items.0.l	Plomo-ácido
+el-batteries.c6.viz.items.1.l	NMC
+el-batteries.c6.viz.items.2.l	LFP
+el-batteries.c7.title	Sistemas de gestión de baterías
+el-batteries.c7.text	Un BMS vigila la tensión y la temperatura de cada celda, las equilibra, limita la corriente y desconecta el paquete si algo va mal. Un paquete de litio nunca debe usarse sin uno.
+el-batteries.c7.viz.items.0	Vigila tensiones de celda
+el-batteries.c7.viz.items.1	Equilibra las celdas
+el-batteries.c7.viz.items.2	Vigila la temperatura
+el-batteries.c7.viz.items.3	Limita la corriente
+el-batteries.c7.viz.items.4	Corta ante fallos
+el-batteries.c8.title	Fuga térmica
+el-batteries.c8.text	Si una celda de litio se daña, se sobrecarga o se sobrecalienta, puede iniciar una reacción que se calienta sola y se extiende a las celdas vecinas. Estos incendios son difíciles de apagar y pueden reavivarse.
+el-batteries.c8.viz.steps.0	Daño o sobrecalentamiento
+el-batteries.c8.viz.steps.1	Cortocircuito interno
+el-batteries.c8.viz.steps.2	La celda se autocalienta
+el-batteries.c8.viz.steps.3	Pasa a las vecinas
+el-batteries.c9.title	Paquetes en serie y en paralelo
+el-batteries.c9.text	Las celdas en serie suman tensión; las celdas en paralelo suman capacidad. Un paquete de VE puede combinar unos 100 grupos en serie para llegar a unos 400 V.
+el-batteries.c9.viz.l.t	Serie
+el-batteries.c9.viz.l.items.0	se suman tensiones
+el-batteries.c9.viz.l.items.1	4 × 3,7 V = 14,8 V
+el-batteries.c9.viz.l.items.2	mismos Ah
+el-batteries.c9.viz.r.t	Paralelo
+el-batteries.c9.viz.r.items.0	se suman capacidades
+el-batteries.c9.viz.r.items.1	misma tensión
+el-batteries.c9.viz.r.items.2	4 × 5 Ah = 20 Ah
+el-solar.title	Energía solar
+el-solar.summary	Cómo los paneles convierten la luz del sol en electricidad.
+el-solar.q0.q	¿Qué significa «Wp»?
+el-solar.q0.o0	Vatios por panel
+el-solar.q0.o1	Vatio pico: la potencia en condiciones estándar de prueba
+el-solar.q0.o2	Potencia semanal
+el-solar.q0.x	Se mide a 1000 W/m² y 25 °C.
+el-solar.q1.q	¿Hacia dónde deben orientarse los paneles en Portugal para obtener la máxima energía anual?
+el-solar.q1.o0	Norte
+el-solar.q1.o1	Sur
+el-solar.q1.o2	Este
+el-solar.q1.x	El sol recorre el cielo por el sur.
+el-solar.q2.q	¿Por qué los paneles calientes producen menos?
+el-solar.q2.o0	El polvo se derrite
+el-solar.q2.o1	Las células de silicio pierden eficiencia al subir la temperatura
+el-solar.q2.o2	Los inversores se apagan
+el-solar.q2.x	Alrededor de un 0,35 % por cada °C por encima de 25 °C.
+el-solar.c0.title	El efecto fotovoltaico
+el-solar.c0.text	Una célula solar es una fina lámina de silicio con dos capas tratadas de forma distinta. La luz libera electrones, y la unión entre las capas los empuja en un sentido: una corriente continua.
+el-solar.c0.viz.steps.0	La luz incide en el silicio
+el-solar.c0.viz.steps.1	Se liberan electrones
+el-solar.c0.viz.steps.2	La unión los empuja en un sentido
+el-solar.c0.viz.steps.3	Corriente continua
+el-solar.c1.title	Células, paneles, strings
+el-solar.c1.text	Una célula produce unos 0,5–0,6 V. Decenas de células en serie forman un panel; varios paneles en serie forman un string de unos cientos de voltios que alimenta un inversor.
+el-solar.c1.viz.steps.0	Célula ≈ 0,6 V
+el-solar.c1.viz.steps.1	Panel ≈ 40 V
+el-solar.c1.viz.steps.2	String de 10 ≈ 400 V
+el-solar.c1.viz.steps.3	Inversor
+el-solar.c2.title	Vatio pico
+el-solar.c2.text	Los paneles se clasifican en vatios pico (Wp): la potencia en condiciones estándar de prueba, con 1000 W/m² de luz solar a 25 °C. La producción real suele ser menor por el calor, el ángulo y el polvo.
+el-solar.c2.viz.items.0.v	1000 W/m²
+el-solar.c2.viz.items.0.l	luz de prueba
+el-solar.c2.viz.items.1.v	25 °C
+el-solar.c2.viz.items.1.l	temperatura de célula
+el-solar.c2.viz.items.2.v	400–450 Wp
+el-solar.c2.viz.items.2.l	panel moderno típico
+el-solar.c3.title	¿Cuánto producirá?
+el-solar.c3.text	En Portugal, cada kWp de paneles bien orientados suele producir unos 1400–1700 kWh al año, de lo mejor de Europa.
+el-solar.c3.example.0	Instalación de 4 kWp en el norte de Portugal (≈1400)
+el-solar.c3.example.1	4 × 1400
+el-solar.c3.example.2	≈ 5600 kWh al año
+el-solar.c3.viz.f	kWh/año ≈ kWp × rendimiento
+el-solar.c3.viz.items.0.s	kWp
+el-solar.c3.viz.items.0.m	potencia instalada
+el-solar.c3.viz.items.1.s	rend.
+el-solar.c3.viz.items.1.m	≈ 1500 kWh por kWp (Portugal)
+el-solar.c4.title	Orientación e inclinación
+el-solar.c4.text	En Portugal, los paneles orientados al sur con unos 30–35° de inclinación dan la máxima energía a lo largo del año. Las disposiciones este–oeste producen menos en total, pero reparten la producción a lo largo del día.
+el-solar.c4.viz.unit	% del mejor rendimiento (aprox.)
+el-solar.c4.viz.items.0.l	Sur 30°
+el-solar.c4.viz.items.1.l	Sureste
+el-solar.c4.viz.items.2.l	Este u oeste
+el-solar.c4.viz.items.3.l	Horizontal
+el-solar.c5.title	La sombra importa
+el-solar.c5.text	Una pequeña sombra sobre una célula puede reducir la producción de todo un string, porque las células en serie llevan la misma corriente. Los diodos de bypass y los optimizadores limitan el daño.
+el-solar.c5.viz.steps.0	Sombra en una célula
+el-solar.c5.viz.steps.1	Limita la corriente del string
+el-solar.c5.viz.steps.2	Cae todo el string
+el-solar.c5.viz.steps.3	Ayudan optimizadores o diodos de bypass
+el-solar.c6.title	El calor reduce la producción
+el-solar.c6.text	Las células de silicio pierden aproximadamente un 0,3–0,4 % de producción por cada °C por encima de 25 °C. En un tejado caluroso de verano, las células pueden llegar a 60 °C y perder más del 10 %.
+el-solar.c6.example.0	Células a 60 °C
+el-solar.c6.example.1	0,35 % × 35
+el-solar.c6.example.2	≈ 12 % menos producción
+el-solar.c6.viz.f	pérdida ≈ 0,35 % × (T − 25 °C)
+el-solar.c6.viz.items.0.s	T
+el-solar.c6.viz.items.0.m	temperatura de célula
+el-solar.c7.title	Autoconsumo
+el-solar.c7.text	La energía solar vale más cuando la usas mientras se produce, porque la que exportas se paga menos de lo que cuesta la que importas. Pon el lavavajillas, calienta agua o carga el coche a mediodía.
+el-solar.c7.viz.items.0	Pasa aparatos a mediodía
+el-solar.c7.viz.items.1	Calienta agua con el excedente
+el-solar.c7.viz.items.2	Carga el VE con sol
+el-solar.c7.viz.items.3	Añade una batería para la noche
+el-solar.c8.title	Inversores
+el-solar.c8.text	Los inversores de string convierten la CC de los paneles en CA para la casa. Los inversores híbridos también pueden cargar y descargar una batería. Los microinversores van detrás de cada panel.
+el-solar.c8.viz.l.t	Inversor de string
+el-solar.c8.viz.l.items.0	una sola caja
+el-solar.c8.viz.l.items.1	el más barato
+el-solar.c8.viz.l.items.2	la sombra afecta al string
+el-solar.c8.viz.r.t	Microinversores
+el-solar.c8.viz.r.items.0	uno por panel
+el-solar.c8.viz.r.items.1	tolera la sombra
+el-solar.c8.viz.r.items.2	más piezas
+el-solar.c9.title	Amortización
+el-solar.c9.text	En un país soleado como Portugal, una instalación doméstica suele amortizarse en unos 5–8 años, según el precio, el autoconsumo y las tarifas. Los paneles suelen tener garantías de rendimiento de 25 años.
+el-solar.c9.viz.items.0.v	5–8 años
+el-solar.c9.viz.items.0.l	amortización típica (PT)
+el-solar.c9.viz.items.1.v	25 años
+el-solar.c9.viz.items.1.l	garantía típica del panel
+el-cables.title	Elegir cables
+el-cables.summary	Secciones, caída de tensión y por qué importa el tamaño.
+el-cables.q0.q	¿Qué color de cable es la tierra de protección en Europa?
+el-cables.q0.o0	Azul
+el-cables.q0.o1	Marrón
+el-cables.q0.o2	Verde y amarillo
+el-cables.q0.x	Marrón fase, azul neutro, verde-amarillo tierra.
+el-cables.q1.q	Un circuito de enchufes de 2,5 mm² hace saltar una y otra vez su automático de 16 A. ¿Qué es lo correcto?
+el-cables.q1.o0	Poner un automático de 32 A
+el-cables.q1.o1	Buscar la sobrecarga o dividir el circuito
+el-cables.q1.o2	Quitar el automático
+el-cables.q1.x	El automático protege el cable.
+el-cables.q2.q	¿Por qué hay que desenrollar del todo un alargador de carrete para cargas grandes?
+el-cables.q2.o0	Queda más ordenado
+el-cables.q2.o1	El cable enrollado no puede disipar el calor y puede fundirse
+el-cables.q2.o2	Cambia la tensión
+el-cables.q2.x	El rollo atrapa el calor.
+el-cables.c0.title	Los cables se calientan
+el-cables.c0.text	Todo cable tiene algo de resistencia, así que la corriente lo calienta (I² × R). Un cable demasiado fino para la corriente se sobrecalienta, daña su aislamiento y puede provocar un incendio.
+el-cables.c0.viz.steps.0	Demasiada corriente
+el-cables.c0.viz.steps.1	El cable se calienta
+el-cables.c0.viz.steps.2	El aislamiento se degrada
+el-cables.c0.viz.steps.3	Riesgo de incendio
+el-cables.c1.title	Sección en mm²
+el-cables.c1.text	El tamaño de un cable es el área de cobre en milímetros cuadrados. Más área, menos resistencia y más corriente puede llevar con seguridad.
+el-cables.c1.viz.unit	amperios máx. aprox. (instalación doméstica típica)
+el-cables.c1.viz.items.0.l	1,5 mm²
+el-cables.c1.viz.items.1.l	2,5 mm²
+el-cables.c1.viz.items.2.l	4 mm²
+el-cables.c1.viz.items.3.l	6 mm²
+el-cables.c2.title	Secciones típicas en casa
+el-cables.c2.text	Práctica habitual en Portugal: 1,5 mm² para alumbrado, 2,5 mm² para enchufes, 4 mm² para hornos o termos, 6 mm² para un cargador de VE o una bomba de calor grande. Comprueba siempre la normativa de instalación y el cálculo del instalador.
+el-cables.c2.viz.items.0.a	1,5 mm²
+el-cables.c2.viz.items.0.b	alumbrado, automático 10 A
+el-cables.c2.viz.items.1.a	2,5 mm²
+el-cables.c2.viz.items.1.b	enchufes, 16 A
+el-cables.c2.viz.items.2.a	4 mm²
+el-cables.c2.viz.items.2.b	horno, 20–25 A
+el-cables.c2.viz.items.3.a	6 mm²
+el-cables.c2.viz.items.3.b	cargador VE, 32 A
+el-cables.c3.title	El automático protege el cable
+el-cables.c3.text	El automático debe tener un calibre tal que el cable nunca lleve más corriente de la que soporta con seguridad. Cambiar un automático de 16 A por uno de 25 A «porque salta mucho» elimina la protección.
+el-cables.c3.viz.items.0.w	el automático de 16 A salta a menudo
+el-cables.c3.viz.items.0.r	busca la sobrecarga
+el-cables.c3.viz.items.1.w	poner un automático mayor
+el-cables.c3.viz.items.1.r	recablear con cable más grueso si hace falta
+el-cables.c4.title	Caída de tensión
+el-cables.c4.text	Los cables largos pierden tensión por el camino. La normativa suele limitar la caída a un pequeño porcentaje. En monofásica, la caída es aproximadamente dos veces la longitud por la corriente por la resistencia por metro.
+el-cables.c4.example.0	30 m, 16 A, 2,5 mm² (0,0073 Ω/m)
+el-cables.c4.example.1	2 × 30 × 16 × 0,0073
+el-cables.c4.example.2	≈ 7 V, cerca del 3 %
+el-cables.c4.viz.f	ΔV ≈ 2 × L × I × r
+el-cables.c4.viz.items.0.s	L
+el-cables.c4.viz.items.0.m	longitud (m)
+el-cables.c4.viz.items.1.s	I
+el-cables.c4.viz.items.1.m	corriente (A)
+el-cables.c4.viz.items.2.s	r
+el-cables.c4.viz.items.2.m	Ω por metro de conductor
+el-cables.c5.title	El método de instalación importa
+el-cables.c5.text	Un cable enterrado en aislante o agrupado con otros no puede disipar el calor, así que lleva con seguridad menos corriente que uno al aire libre.
+el-cables.c5.viz.unit	capacidad relativa
+el-cables.c5.viz.items.0.l	Al aire libre
+el-cables.c5.viz.items.1.l	En tubo sobre pared
+el-cables.c5.viz.items.2.l	Agrupado
+el-cables.c5.viz.items.3.l	En aislante térmico
+el-cables.c6.title	Colores
+el-cables.c6.text	En Europa: el marrón es la fase, el azul es el neutro y el verde y amarillo es la tierra de protección. Las instalaciones portuguesas antiguas pueden usar otros colores, así que nunca te fíes solo de los colores.
+el-cables.c6.viz.items.0.a	marrón
+el-cables.c6.viz.items.0.b	fase
+el-cables.c6.viz.items.1.a	azul
+el-cables.c6.viz.items.1.b	neutro
+el-cables.c6.viz.items.2.a	verde-amarillo
+el-cables.c6.viz.items.2.b	tierra
+el-cables.c6.viz.items.3.a	negro, gris
+el-cables.c6.viz.items.3.b	otras fases
+el-cables.c7.title	Flexible frente a rígido
+el-cables.c7.text	La instalación fija usa conductores rígidos, de un solo hilo o de varios. Los cables de los aparatos y los alargadores usan cable flexible de muchos hilos que aguanta que lo dobles.
+el-cables.c7.viz.l.t	Rígido
+el-cables.c7.viz.l.items.0	fijo en paredes
+el-cables.c7.viz.l.items.1	más barato
+el-cables.c7.viz.l.items.2	no le gusta doblarse
+el-cables.c7.viz.r.t	Flexible
+el-cables.c7.viz.r.items.0	muchos hilos finos
+el-cables.c7.viz.r.items.1	cables y alargadores
+el-cables.c7.viz.r.items.2	aguanta dobleces
+el-cables.c8.title	Alargadores
+el-cables.c8.text	Un alargador de carrete debe desenrollarse del todo para cargas altas; si no, el cable enrollado atrapa el calor y puede fundirse. Nunca encadenes regletas para calefactores o hervidores.
+el-cables.c8.viz.items.0	Desenrolla del todo
+el-cables.c8.viz.items.1	Mira los vatios máx. en la etiqueta
+el-cables.c8.viz.items.2	No encadenes regletas
+el-cables.c8.viz.items.3	No para calefactores fijos
+el-cables.c9.title	Aluminio frente a cobre
+el-cables.c9.text	El aluminio conduce aproximadamente un 60 % de lo que conduce el cobre, así que necesita más sección, pero es más ligero y barato. Las líneas aéreas usan aluminio; la instalación de las casas, cobre.
+el-cables.c9.viz.l.t	Cobre
+el-cables.c9.viz.l.items.0	mejor conductor
+el-cables.c9.viz.l.items.1	cables más finos
+el-cables.c9.viz.l.items.2	instalación doméstica
+el-cables.c9.viz.r.t	Aluminio
+el-cables.c9.viz.r.items.0	más ligero y barato
+el-cables.c9.viz.r.items.1	cables más gruesos
+el-cables.c9.viz.r.items.2	líneas eléctricas
+el-earthing.title	Puesta a tierra y protección
+el-earthing.summary	Magnetotérmicos, diferenciales, tierra y protección contra sobretensiones.
+el-earthing.q0.q	¿Qué diferencial detecta fugas de CC lisa, como exigen muchos cargadores de VE?
+el-earthing.q0.o0	Tipo AC
+el-earthing.q0.o1	Tipo A
+el-earthing.q0.o2	Tipo B
+el-earthing.q0.x	El tipo B cubre la CC lisa.
+el-earthing.q1.q	¿Por qué usar diferenciales con magnetotérmico (RCBO) en cada circuito?
+el-earthing.q1.o0	Son más baratos
+el-earthing.q1.o1	Un fallo solo hace saltar ese circuito
+el-earthing.q1.o2	Sustituyen a la puesta a tierra
+el-earthing.q1.x	Los fallos quedan localizados.
+el-earthing.q2.q	¿Contra qué protege un protector de sobretensiones (SPD)?
+el-earthing.q2.o0	Sobrecargas
+el-earthing.q2.o1	Picos de tensión breves por rayos o maniobras
+el-earthing.q2.o2	Fugas a tierra
+el-earthing.q2.x	Desvía las sobretensiones a tierra.
+el-earthing.c0.title	Para qué sirve la toma de tierra
+el-earthing.c0.text	Las carcasas metálicas de los aparatos están conectadas a tierra. Si un cable de fase toca la carcasa, la corriente se va a tierra en lugar de pasar por ti, y salta un dispositivo de protección.
+el-earthing.c0.viz.steps.0	La fase toca la carcasa
+el-earthing.c0.viz.steps.1	La corriente va a tierra
+el-earthing.c0.viz.steps.2	Salta el diferencial o automático
+el-earthing.c0.viz.steps.3	La carcasa vuelve a ser segura
+el-earthing.c1.title	El electrodo de tierra
+el-earthing.c1.text	En muchas casas, la conexión a tierra termina en una pica o un anillo de cobre enterrado. Su resistencia debe ser lo bastante baja para que funcionen las protecciones, y conviene medirla periódicamente.
+el-earthing.c1.viz.steps.0	Carcasa del aparato
+el-earthing.c1.viz.steps.1	Cable de tierra
+el-earthing.c1.viz.steps.2	Borne principal de tierra
+el-earthing.c1.viz.steps.3	Electrodo en el suelo
+el-earthing.c2.title	Interruptores magnetotérmicos
+el-earthing.c2.text	Un magnetotérmico salta de dos maneras: una lámina bimetálica para sobrecargas lentas (calor) y un electroimán para cortocircuitos (instantáneo). La letra (B, C, D) indica su sensibilidad a las corrientes de arranque.
+el-earthing.c2.viz.l.t	Disparo térmico
+el-earthing.c2.viz.l.items.0	sobrecargas lentas
+el-earthing.c2.viz.l.items.1	de segundos a minutos
+el-earthing.c2.viz.r.t	Disparo magnético
+el-earthing.c2.viz.r.items.0	cortocircuitos
+el-earthing.c2.viz.r.items.1	milisegundos
+el-earthing.c3.title	Curvas de los magnetotérmicos
+el-earthing.c3.text	El tipo B dispara magnéticamente a 3–5 veces su calibre, adecuado para viviendas. El tipo C, a 5–10 veces, para motores e iluminación con gran corriente de arranque. El tipo D, a 10–20 veces, para motores industriales pesados.
+el-earthing.c3.viz.unit	disparo magnético (× corriente nominal, límite superior)
+el-earthing.c3.viz.items.0.l	B
+el-earthing.c3.viz.items.1.l	C
+el-earthing.c3.viz.items.2.l	D
+el-earthing.c4.title	Tipos de diferencial
+el-earthing.c4.text	El tipo AC solo detecta fugas de CA. El tipo A detecta también la CC pulsante de la electrónica. El tipo B detecta además la CC lisa, y a menudo se exige para cargadores de VE y algunos inversores solares (o un tipo A con un dispositivo de detección de CC).

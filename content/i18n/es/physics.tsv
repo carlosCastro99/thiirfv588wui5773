@@ -248,3 +248,253 @@ ph-motion.c3.title	Caída libre
 ph-motion.c3.text	Cerca de la superficie terrestre, los objetos que caen ganan unos 9,81 m/s de velocidad cada segundo, si la resistencia del aire es despreciable. Tras 1 s caes a unos 35 km/h; tras 3 s, a más de 100 km/h.
 ph-motion.c3.viz.unit	velocidad en km/h
 ph-motion.c3.viz.items.0.l	1 s
+ph-motion.c3.viz.items.1.l	2 s
+ph-motion.c3.viz.items.2.l	3 s
+ph-motion.c4.title	La intuición de Galileo
+ph-motion.c4.text	Sin resistencia del aire, los objetos pesados y ligeros caen al mismo ritmo. Los astronautas lo demostraron en la Luna en 1971 dejando caer un martillo y una pluma: llegaron al suelo a la vez.
+ph-motion.c4.viz.l.t	Con aire
+ph-motion.c4.viz.l.items.0	la pluma baja flotando
+ph-motion.c4.viz.l.items.1	domina el rozamiento del aire
+ph-motion.c4.viz.r.t	En el vacío
+ph-motion.c4.viz.r.items.0	martillo y pluma caen a la vez
+ph-motion.c5.title	Velocidad límite
+ph-motion.c5.text	Cuando un objeto que cae acelera, la resistencia del aire aumenta hasta igualar su peso. Entonces deja de acelerar. Un paracaidista boca abajo alcanza unos 200 km/h; el paracaídas la reduce a unos 20 km/h.
+ph-motion.c5.viz.unit	km/h (aprox.)
+ph-motion.c5.viz.items.0.l	Gota de lluvia
+ph-motion.c5.viz.items.1.l	Paracaídas
+ph-motion.c5.viz.items.2.l	Paracaidista boca abajo
+ph-motion.c5.viz.items.3.l	Paracaidista en picado
+ph-motion.c6.title	Distancia de detención
+ph-motion.c6.text	La distancia de detención es la distancia de reacción más la distancia de frenado. La distancia de frenado crece con el cuadrado de la velocidad: con el doble de velocidad, cuatro veces más distancia de frenado.
+ph-motion.c6.example.0	50 km/h frente a 100 km/h
+ph-motion.c6.example.1	13,9² ÷ 14 frente a 27,8² ÷ 14
+ph-motion.c6.example.2	≈ 14 m frente a 55 m de frenado
+ph-motion.c6.viz.f	d frenado = v² ÷ (2 × a)
+ph-motion.c6.viz.items.0.s	v
+ph-motion.c6.viz.items.0.m	velocidad (m/s)
+ph-motion.c6.viz.items.1.s	a
+ph-motion.c6.viz.items.1.m	deceleración (~7 m/s² en seco)
+ph-motion.c7.title	Tiempo de reacción
+ph-motion.c7.text	Un conductor típico tarda alrededor de 1 segundo en reaccionar. A 120 km/h, el coche recorre más de 33 m antes de que los frenos empiecen a actuar. Usar el móvil al volante lo alarga mucho.
+ph-motion.c7.viz.unit	metros antes de frenar (1 s de reacción)
+ph-motion.c7.viz.items.0.l	50 km/h
+ph-motion.c7.viz.items.1.l	90 km/h
+ph-motion.c7.viz.items.2.l	120 km/h
+ph-motion.c8.title	Movimiento relativo
+ph-motion.c8.text	El movimiento depende del observador. En un tren a 200 km/h, una taza de café está quieta respecto a ti, pero se mueve muy deprisa respecto al suelo. No existe un «reposo» absoluto.
+ph-motion.c8.viz.items.0.a	taza / pasajero
+ph-motion.c8.viz.items.0.b	0 km/h
+ph-motion.c8.viz.items.1.a	taza / suelo
+ph-motion.c8.viz.items.1.b	200 km/h
+ph-motion.c8.viz.items.2.a	Tierra / Sol
+ph-motion.c8.viz.items.2.b	~107 000 km/h
+ph-motion.c9.title	Gráficas del movimiento
+ph-motion.c9.text	En una gráfica distancia–tiempo, la pendiente es la velocidad. En una gráfica velocidad–tiempo, la pendiente es la aceleración y el área bajo la curva es la distancia recorrida.
+ph-motion.c9.viz.items.0.a	pendiente distancia–tiempo
+ph-motion.c9.viz.items.0.b	velocidad
+ph-motion.c9.viz.items.1.a	pendiente velocidad–tiempo
+ph-motion.c9.viz.items.1.b	aceleración
+ph-motion.c9.viz.items.2.a	área bajo v–t
+ph-motion.c9.viz.items.2.b	distancia
+ph-newton.title	Las leyes de Newton
+ph-newton.summary	Las tres reglas detrás de cada empujón y cada tirón.
+ph-newton.q0.q	Un coche de 1000 kg con una fuerza neta de 2000 N acelera a…
+ph-newton.q0.o0	0,5 m/s²
+ph-newton.q0.o1	2 m/s²
+ph-newton.q0.o2	2000 m/s²
+ph-newton.q0.x	a = F ÷ m.
+ph-newton.q1.q	¿Por qué los airbags reducen las lesiones?
+ph-newton.q1.o0	Porque son blandos
+ph-newton.q1.o1	Reparten la frenada en más tiempo y reducen la fuerza máxima
+ph-newton.q1.o2	Añaden masa
+ph-newton.q1.x	Más tiempo de frenada significa menos fuerza.
+ph-newton.q2.q	¿Qué ley explica la propulsión de los cohetes?
+ph-newton.q2.o0	La primera
+ph-newton.q2.o1	La segunda
+ph-newton.q2.o2	La tercera
+ph-newton.q2.x	Acción y reacción.
+ph-newton.c0.title	Primera ley: inercia
+ph-newton.c0.text	Un objeto sigue haciendo lo que hace, quieto o moviéndose en línea recta a velocidad constante, salvo que actúe sobre él una fuerza neta. Por eso los pasajeros se van hacia delante cuando el autobús frena.
+ph-newton.c0.viz.steps.0	El autobús frena
+ph-newton.c0.viz.steps.1	Tu cuerpo sigue moviéndose
+ph-newton.c0.viz.steps.2	El cinturón aplica la fuerza
+ph-newton.c0.viz.steps.3	Te detienes con el autobús
+ph-newton.c1.title	Segunda ley: F = m × a
+ph-newton.c1.text	La aceleración de un objeto es proporcional a la fuerza que actúa sobre él e inversamente proporcional a su masa. Empuja el doble de fuerte y acelera el doble; duplica la masa y la aceleración se reduce a la mitad.
+ph-newton.c1.example.0	Coche de 1500 kg, fuerza neta de 3000 N
+ph-newton.c1.example.1	3000 ÷ 1500
+ph-newton.c1.example.2	a = 2 m/s²
+ph-newton.c1.viz.f	F = m × a
+ph-newton.c1.viz.items.0.s	F
+ph-newton.c1.viz.items.0.m	fuerza neta (N)
+ph-newton.c1.viz.items.1.s	m
+ph-newton.c1.viz.items.1.m	masa (kg)
+ph-newton.c1.viz.items.2.s	a
+ph-newton.c1.viz.items.2.m	aceleración (m/s²)
+ph-newton.c2.title	Tercera ley: acción y reacción
+ph-newton.c2.text	Toda fuerza tiene una pareja igual y opuesta. Cuando empujas una pared, la pared te empuja a ti. Los cohetes empujan gas hacia atrás; el gas empuja el cohete hacia delante.
+ph-newton.c2.viz.l.t	El cohete empuja el gas
+ph-newton.c2.viz.l.items.0	abajo y atrás
+ph-newton.c2.viz.r.t	El gas empuja el cohete
+ph-newton.c2.viz.r.items.0	arriba y adelante
+ph-newton.c3.title	Masa y peso, otra vez
+ph-newton.c3.text	La masa (kg) es la cantidad de materia y no cambia. El peso es la fuerza de la gravedad sobre ella y depende de dónde estés: en la Luna pesarías aproximadamente una sexta parte.
+ph-newton.c3.viz.unit	peso de una persona de 70 kg (N)
+ph-newton.c3.viz.items.0.l	Luna
+ph-newton.c3.viz.items.1.l	Marte
+ph-newton.c3.viz.items.2.l	Tierra
+ph-newton.c3.viz.items.3.l	Júpiter
+ph-newton.c4.title	Cinturones y airbags
+ph-newton.c4.text	En un choque, tu cuerpo tiene que perder su velocidad. Repartirlo en más tiempo y más distancia supone una fuerza menor. Los cinturones ceden un poco y los airbags amortiguan, lo que reduce muchísimo la fuerza máxima.
+ph-newton.c4.viz.f	F = m × Δv ÷ t
+ph-newton.c4.viz.items.0.s	más tiempo de frenada t
+ph-newton.c4.viz.items.0.m	menor fuerza F
+ph-newton.c5.title	Movimiento circular
+ph-newton.c5.text	Moverse en círculo requiere una fuerza hacia el centro (fuerza centrípeta). En una rotonda la aporta el rozamiento de los neumáticos; en la Luna, la gravedad terrestre. Sin ella, los objetos salen disparados en línea recta.
+ph-newton.c5.viz.f	F = m × v² ÷ r
+ph-newton.c5.viz.items.0.s	m
+ph-newton.c5.viz.items.0.m	masa
+ph-newton.c5.viz.items.1.s	v
+ph-newton.c5.viz.items.1.m	velocidad
+ph-newton.c5.viz.items.2.s	r
+ph-newton.c5.viz.items.2.m	radio de la curva
+ph-newton.c6.title	La «fuerza centrífuga»
+ph-newton.c6.text	En un coche que gira notas que algo te empuja hacia fuera. En realidad, tu cuerpo intenta seguir recto (inercia) mientras el coche gira bajo ti. La «fuerza centrífuga» es lo que se siente desde dentro del sistema que gira.
+ph-newton.c6.viz.items.0.w	una fuerza te lanza hacia fuera
+ph-newton.c6.viz.items.0.r	tu cuerpo sigue recto mientras el coche gira
+ph-newton.c7.title	El rozamiento y Newton
+ph-newton.c7.text	En la Tierra las cosas se frenan por el rozamiento y la resistencia del aire, no porque el movimiento se detenga por sí solo. En el espacio, un objeto al que das un empujoncito sigue a la deriva para siempre.
+ph-newton.c7.viz.l.t	En la Tierra
+ph-newton.c7.viz.l.items.0	rozamiento y aire frenan
+ph-newton.c7.viz.l.items.1	parece que moverse requiere empujar
+ph-newton.c7.viz.r.t	En el espacio
+ph-newton.c7.viz.r.items.0	casi sin rozamiento
+ph-newton.c7.viz.r.items.1	el movimiento continúa
+ph-newton.c8.title	Las leyes de Newton en el deporte
+ph-newton.c8.text	Los futbolistas empujan el suelo hacia atrás para acelerar hacia delante; a los jugadores más pesados cuesta más pararlos; una patada bien sincronizada transmite más fuerza con un contacto más largo.
+ph-newton.c8.viz.items.0	Empujar el suelo para correr
+ph-newton.c8.viz.items.1	Más masa, más inercia
+ph-newton.c8.viz.items.2	Acompañar alarga el contacto
+ph-newton.c8.viz.items.3	Caer con rodillas flexionadas reduce la fuerza
+ph-newton.c9.title	Principia, 1687
+ph-newton.c9.text	Isaac Newton publicó sus leyes del movimiento y de la gravitación universal en los «Principia Mathematica» en 1687. Explicaban la caída de las manzanas y las órbitas de los planetas con las mismas reglas.
+ph-newton.c9.viz.events.0.l	Leyes orbitales de Kepler
+ph-newton.c9.viz.events.1.l	Galileo y el movimiento
+ph-newton.c9.viz.events.2.l	Principia de Newton
+ph-newton.c9.viz.events.3.l	Relatividad de Einstein
+ph-gravity.title	Gravedad y órbitas
+ph-gravity.summary	Por qué la Luna no se cae (sí se cae, pero no acierta).
+ph-gravity.q0.q	¿Por qué flotan los astronautas en la EEI?
+ph-gravity.q0.o0	No hay gravedad
+ph-gravity.q0.o1	Ellos y la estación están juntos en caída libre continua
+ph-gravity.q0.o2	Están demasiado altos
+ph-gravity.q0.x	La gravedad sigue siendo un 90 % de la de la superficie.
+ph-gravity.q1.q	Si duplicas la distancia entre dos masas, su atracción gravitatoria pasa a ser…
+ph-gravity.q1.o0	La mitad
+ph-gravity.q1.o1	Una cuarta parte
+ph-gravity.q1.o2	El doble
+ph-gravity.q1.x	Ley de la inversa del cuadrado.
+ph-gravity.q2.q	¿Qué causa las mareas?
+ph-gravity.q2.o0	El viento
+ph-gravity.q2.o1	La atracción desigual de la Luna (y del Sol) sobre la Tierra
+ph-gravity.q2.o2	Solo la rotación de la Tierra
+ph-gravity.q2.x	La diferencia de gravedad crea dos abultamientos.
+ph-gravity.c0.title	Gravitación universal
+ph-gravity.c0.text	Toda masa atrae a cualquier otra masa. La fuerza crece con ambas masas y disminuye con el cuadrado de la distancia: con el doble de distancia, una cuarta parte de la fuerza.
+ph-gravity.c0.viz.f	F = G × m₁ × m₂ ÷ r²
+ph-gravity.c0.viz.items.0.s	G
+ph-gravity.c0.viz.items.0.m	constante gravitatoria
+ph-gravity.c0.viz.items.1.s	m
+ph-gravity.c0.viz.items.1.m	masas
+ph-gravity.c0.viz.items.2.s	r
+ph-gravity.c0.viz.items.2.m	distancia entre centros
+ph-gravity.c1.title	Orbitar es caer
+ph-gravity.c1.text	Un satélite en órbita cae continuamente hacia la Tierra, pero se desplaza de lado tan deprisa que el suelo se curva bajo él. Newton imaginó un cañón en una montaña disparando cada vez más rápido.
+ph-gravity.c1.viz.steps.0	Disparo lento: cae cerca
+ph-gravity.c1.viz.steps.1	Más rápido: cae más lejos
+ph-gravity.c1.viz.steps.2	Bastante rápido: la Tierra se curva
+ph-gravity.c1.viz.steps.3	Órbita
+ph-gravity.c2.title	Velocidades orbitales
+ph-gravity.c2.text	La Estación Espacial Internacional orbita a unos 400 km de altura a unos 28 000 km/h y da la vuelta a la Tierra aproximadamente cada 90 minutos. Su tripulación ve unos 16 amaneceres al día.
+ph-gravity.c2.viz.items.0.v	400 km
+ph-gravity.c2.viz.items.0.l	altitud de la EEI
+ph-gravity.c2.viz.items.1.v	28 000 km/h
+ph-gravity.c2.viz.items.1.l	velocidad
+ph-gravity.c2.viz.items.2.v	90 min
+ph-gravity.c2.viz.items.2.l	una órbita
+ph-gravity.c3.title	Ingravidez
+ph-gravity.c3.text	Los astronautas en órbita no están fuera del alcance de la gravedad: a la altura de la EEI, la gravedad es un 90 % de la que hay en el suelo. Flotan porque ellos y la estación caen juntos.
+ph-gravity.c3.viz.l.t	Creencia común
+ph-gravity.c3.viz.l.items.0	no hay gravedad
+ph-gravity.c3.viz.r.t	Realidad
+ph-gravity.c3.viz.r.items.0	90 % de gravedad
+ph-gravity.c3.viz.r.items.1	todo cae a la vez
+ph-gravity.c4.title	Órbita geoestacionaria
+ph-gravity.c4.text	A unos 35 786 km sobre el ecuador, un satélite tarda exactamente un día en dar una vuelta, así que permanece sobre el mismo punto. La usan los satélites de televisión y meteorológicos.
+ph-gravity.c4.viz.unit	altitud (km)
+ph-gravity.c4.viz.items.0.l	EEI
+ph-gravity.c4.viz.items.1.l	Satélites GPS
+ph-gravity.c4.viz.items.2.l	Geoestacionaria
+ph-gravity.c5.title	Las mareas
+ph-gravity.c5.text	La gravedad de la Luna tira con más fuerza de la cara cercana de la Tierra que de la lejana, y estira los océanos en dos abultamientos. Al girar la Tierra, la mayoría de las costas tienen dos mareas altas al día.
+ph-gravity.c5.viz.steps.0	La Luna tira más del lado cercano
+ph-gravity.c5.viz.steps.1	Dos abultamientos oceánicos
+ph-gravity.c5.viz.steps.2	La Tierra gira bajo ellos
+ph-gravity.c5.viz.steps.3	Dos pleamares al día
+ph-gravity.c6.title	Velocidad de escape
+ph-gravity.c6.text	Para salir de la Tierra sin más empuje necesitarías unos 11,2 km/s (40 300 km/h). Los cohetes no la alcanzan de golpe: queman combustible durante minutos mientras suben y aceleran.
+ph-gravity.c6.viz.unit	velocidad de escape (km/s)
+ph-gravity.c6.viz.items.0.l	Luna
+ph-gravity.c6.viz.items.1.l	Marte
+ph-gravity.c6.viz.items.2.l	Tierra
+ph-gravity.c6.viz.items.3.l	Júpiter
+ph-gravity.c7.title	Las leyes de Kepler
+ph-gravity.c7.text	Los planetas describen elipses con el Sol en uno de sus focos; van más rápido cuando están más cerca del Sol; y cuanto más lejos está el planeta, más largo es su año, según una regla precisa.
+ph-gravity.c7.viz.items.0	Las órbitas son elipses
+ph-gravity.c7.viz.items.1	Más rápido cerca del Sol
+ph-gravity.c7.viz.items.2	Años más largos más lejos
+ph-gravity.c7.viz.items.3	T² ∝ r³
+ph-gravity.c8.title	Asistencias gravitatorias
+ph-gravity.c8.text	Las sondas espaciales pasan cerca de los planetas para ganar velocidad, como una pelota que rebota en un tren en marcha. Las Voyager usaron Júpiter y Saturno para llegar a los confines del sistema solar.
+ph-gravity.c8.viz.steps.0	Acercarse a un planeta
+ph-gravity.c8.viz.steps.1	Rodearlo
+ph-gravity.c8.viz.steps.2	Robarle algo de energía orbital
+ph-gravity.c8.viz.steps.3	Salir más rápido
+ph-gravity.c9.title	Ondas gravitacionales
+ph-gravity.c9.text	Einstein predijo que las masas aceleradas crean ondulaciones en el espacio-tiempo. En 2015, los detectores LIGO midieron por primera vez estas ondas, procedentes de la fusión de dos agujeros negros a más de mil millones de años luz.
+ph-gravity.c9.viz.events.0.l	Einstein las predice
+ph-gravity.c9.viz.events.1.l	pruebas indirectas en un púlsar doble
+ph-gravity.c9.viz.events.2.l	LIGO las detecta directamente
+ph-gravity.c9.viz.events.3.l	Premio Nobel
+ph-momentum.title	Cantidad de movimiento y choques
+ph-momentum.summary	Por qué cuesta tanto detener lo que es pesado y rápido.
+ph-momentum.q0.q	Una pelota de 0,5 kg a 10 m/s tiene una cantidad de movimiento de…
+ph-momentum.q0.o0	20 kg·m/s
+ph-momentum.q0.o1	5 kg·m/s
+ph-momentum.q0.o2	0,05 kg·m/s
+ph-momentum.q0.x	0,5 × 10 = 5.
+ph-momentum.q1.q	¿Por qué los patinadores giran más deprisa al recoger los brazos?
+ph-momentum.q1.o0	Menos rozamiento
+ph-momentum.q1.o1	El momento angular se conserva al hacerse su forma más compacta
+ph-momentum.q1.o2	Empujan con más fuerza
+ph-momentum.q1.x	Menor radio, giro más rápido.
+ph-momentum.q2.q	¿Para qué sirven las zonas de deformación?
+ph-momentum.q2.o0	Para aligerar los coches
+ph-momentum.q2.o1	Alargan la duración del choque para reducir las fuerzas
+ph-momentum.q2.o2	Hacen que los coches reboten
+ph-momentum.q2.x	El mismo cambio de cantidad de movimiento, con menos fuerza.
+ph-momentum.c0.title	Cantidad de movimiento
+ph-momentum.c0.text	La cantidad de movimiento es la masa por la velocidad. Un camión lento y una bala rápida pueden tener ambos una gran cantidad de movimiento.
+ph-momentum.c0.example.0	Coche de 1500 kg a 20 m/s
+ph-momentum.c0.example.1	1500 × 20
+ph-momentum.c0.example.2	= 30 000 kg·m/s
+ph-momentum.c0.viz.f	p = m × v
+ph-momentum.c0.viz.items.0.s	p
+ph-momentum.c0.viz.items.0.m	cant. de movimiento (kg·m/s)
+ph-momentum.c0.viz.items.1.s	m
+ph-momentum.c0.viz.items.1.m	masa
+ph-momentum.c0.viz.items.2.s	v
+ph-momentum.c0.viz.items.2.m	velocidad
+ph-momentum.c1.title	Conservación de la cantidad de movimiento
+ph-momentum.c1.text	En un choque sin fuerzas externas, la cantidad de movimiento total antes es igual a la total después. Así reconstruyen los investigadores los accidentes.
+ph-momentum.c1.viz.steps.0	Cantidad de movimiento total antes

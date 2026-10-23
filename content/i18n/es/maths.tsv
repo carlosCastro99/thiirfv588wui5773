@@ -248,3 +248,253 @@ ma-stats.q1.q	En una campana de Gauss, ¿qué proporción aproximada de valores 
 ma-stats.q1.o0	50 %
 ma-stats.q1.o1	68 %
 ma-stats.q1.o2	95 %
+ma-stats.q1.x	El 95 % queda a menos de dos.
+ma-stats.c0.title	Media, mediana y moda
+ma-stats.c0.text	La media es el promedio; la mediana es el valor central; la moda es el más frecuente. Pueden ser muy distintas.
+ma-stats.c0.viz.items.0.a	Media
+ma-stats.c0.viz.items.0.b	sumar y dividir por el total
+ma-stats.c0.viz.items.1.a	Mediana
+ma-stats.c0.viz.items.1.b	valor central ordenado
+ma-stats.c0.viz.items.2.a	Moda
+ma-stats.c0.viz.items.2.b	valor más frecuente
+ma-stats.c1.title	Cuando la media engaña
+ma-stats.c1.text	Si un multimillonario entra en una cafetería, la riqueza media de los clientes se dispara, pero la mediana apenas se mueve. Los salarios se describen mejor con la mediana.
+ma-stats.c1.viz.unit	miles de € (ejemplo)
+ma-stats.c1.viz.items.0.l	Salario mediano
+ma-stats.c1.viz.items.1.l	Salario medio
+ma-stats.c2.title	Dispersión
+ma-stats.c2.text	Dos clases pueden tener la misma media pero una dispersión muy diferente. La desviación típica mide cuánto se alejan normalmente los valores de la media.
+ma-stats.c2.viz.l.t	Clase A
+ma-stats.c2.viz.l.items.0	media 14
+ma-stats.c2.viz.l.items.1	todos entre 12 y 16
+ma-stats.c2.viz.r.t	Clase B
+ma-stats.c2.viz.r.items.0	media 14
+ma-stats.c2.viz.r.items.1	de 5 a 20
+ma-stats.c3.title	La campana de Gauss
+ma-stats.c3.text	Muchas medidas, como la estatura, se agrupan en torno a una media con forma de campana. Aproximadamente el 68 % de los valores queda a menos de una desviación típica y el 95 % a menos de dos.
+ma-stats.c3.viz.unit	% dentro
+ma-stats.c3.viz.items.0.l	1 DT
+ma-stats.c3.viz.items.1.l	2 DT
+ma-stats.c3.viz.items.2.l	3 DT
+ma-stats.c4.title	Muestras
+ma-stats.c4.text	Una muestra aleatoria bien elegida de 1000 personas puede representar a millones. Una muestra grande pero sesgada no: importa más a quién preguntas que a cuántos.
+ma-stats.c4.viz.l.t	Buena
+ma-stats.c4.viz.l.items.0	muestra aleatoria
+ma-stats.c4.viz.l.items.1	1000 personas
+ma-stats.c4.viz.r.t	Mala
+ma-stats.c4.viz.r.items.0	encuesta en línea
+ma-stats.c4.viz.r.items.1	100.000 autoseleccionados
+ma-stats.c5.title	Margen de error
+ma-stats.c5.text	Las encuestas indican un margen de error. Con unas 1000 personas es de aproximadamente ±3 puntos porcentuales, así que un 51 % frente a un 49 % puede ser un empate.
+ma-stats.c5.viz.items.0.l	Candidato A
+ma-stats.c5.viz.items.1.l	Candidato B
+ma-stats.c6.title	Gráficos engañosos
+ma-stats.c6.text	Un gráfico cuyo eje vertical no empieza en cero puede hacer que una pequeña diferencia parezca enorme. Comprueba siempre la escala.
+ma-stats.c6.viz.items.0.w	Barra de 98 a 100 parece el doble
+ma-stats.c6.viz.items.0.r	Mira el eje: es un 2 % de diferencia
+ma-stats.c7.title	La paradoja de Simpson
+ma-stats.c7.text	Una tendencia que se da en cada grupo puede invertirse al combinar los grupos. Un tratamiento puede parecer mejor en cada hospital pero peor en conjunto, si los hospitales tienen distintos tipos de pacientes.
+ma-stats.c7.viz.steps.0	En cada grupo: gana A
+ma-stats.c7.viz.steps.1	Grupos de distinto tamaño
+ma-stats.c7.viz.steps.2	En conjunto: parece ganar B
+ma-stats.c8.title	Regresión a la media
+ma-stats.c8.text	Tras un resultado extremo, el siguiente suele estar más cerca de la media. A la temporada récord de una estrella del deporte suele seguirle otra más normal, sin ninguna maldición.
+ma-stats.c8.viz.steps.0	Resultado extremo
+ma-stats.c8.viz.steps.1	En parte, suerte
+ma-stats.c8.viz.steps.2	Después: más cerca de la media
+ma-stats.c9.title	Cómo leer una estadística en las noticias
+ma-stats.c9.text	Hazte cuatro preguntas: ¿comparado con qué? ¿De cuántos? ¿A quién se midió? ¿Quién pagó el estudio?
+ma-stats.c9.viz.items.0	¿Comparado con qué?
+ma-stats.c9.viz.items.1	¿De cuántos?
+ma-stats.c9.viz.items.2	¿A quién se midió?
+ma-stats.c9.viz.items.3	¿Quién lo financió?
+ma-logic.title	Lógica y acertijos
+ma-logic.summary	Pensar con claridad, de las paradojas a los ordenadores.
+ma-logic.q0.q	¿Qué número normal es 101 en binario?
+ma-logic.q0.o0	101
+ma-logic.q0.o1	3
+ma-logic.q0.o2	5
+ma-logic.q0.x	4 + 0 + 1.
+ma-logic.q1.q	«Si llueve, el suelo se moja. El suelo está mojado». ¿Se deduce que ha llovido?
+ma-logic.q1.o0	Sí
+ma-logic.q1.o1	No
+ma-logic.q1.o2	Solo en invierno
+ma-logic.q1.x	Podría haberlo mojado otra cosa.
+ma-logic.c0.title	Verdadero y falso
+ma-logic.c0.text	La lógica trabaja con afirmaciones verdaderas o falsas y las combina con Y, O y NO. Todos los chips de ordenador están construidos con estas operaciones.
+ma-logic.c0.viz.items.0.a	Y
+ma-logic.c0.viz.items.0.b	cierto si ambos lo son
+ma-logic.c0.viz.items.1.a	O
+ma-logic.c0.viz.items.1.b	cierto si al menos uno lo es
+ma-logic.c0.viz.items.2.a	NO
+ma-logic.c0.viz.items.2.b	invierte verdadero y falso
+ma-logic.c1.title	Si… entonces…
+ma-logic.c1.text	«Si llueve, el suelo se moja» no significa «si el suelo está mojado, ha llovido»: podría haber sido un aspersor. Confundir ambas cosas es un error lógico clásico.
+ma-logic.c1.viz.items.0.w	Suelo mojado, así que ha llovido
+ma-logic.c1.viz.items.0.r	Podría haberlo mojado otra cosa
+ma-logic.c2.title	Demostración por reducción al absurdo
+ma-logic.c2.text	Supón lo contrario de lo que quieres demostrar y muestra que lleva a un sinsentido. Euclides demostró así que hay infinitos primos.
+ma-logic.c2.viz.steps.0	Supón lo contrario
+ma-logic.c2.viz.steps.1	Sigue la lógica
+ma-logic.c2.viz.steps.2	Llega a una contradicción
+ma-logic.c2.viz.steps.3	Luego lo original es cierto
+ma-logic.c3.title	La paradoja del mentiroso
+ma-logic.c3.text	«Esta frase es falsa». Si es verdadera, es falsa; si es falsa, es verdadera. Paradojas como esta sacudieron los cimientos de la lógica en el siglo XX.
+ma-logic.c3.viz.steps.0	Es verdadera
+ma-logic.c3.viz.steps.1	Luego es falsa
+ma-logic.c3.viz.steps.2	Luego es verdadera
+ma-logic.c4.title	La incompletitud de Gödel
+ma-logic.c4.text	En 1931, Kurt Gödel demostró que cualquier sistema de reglas coherente y lo bastante rico para la aritmética contiene afirmaciones verdaderas que no puede demostrar. Las matemáticas nunca pueden ser completas.
+ma-logic.c4.viz.steps.0	Todo sistema coherente
+ma-logic.c4.viz.steps.1	Capaz de hacer aritmética
+ma-logic.c4.viz.steps.2	Tiene verdades indemostrables
+ma-logic.c5.title	Algoritmos
+ma-logic.c5.text	Un algoritmo es una receta precisa, paso a paso, para resolver un problema. La palabra viene del nombre de al-Juarismi, un matemático de Bagdad del siglo IX.
+ma-logic.c5.viz.steps.0	Entrada
+ma-logic.c5.viz.steps.1	Pasos claros
+ma-logic.c5.viz.steps.2	Salida
+ma-logic.c6.title	Binario
+ma-logic.c6.text	Los ordenadores cuentan en base 2, usando solo 0 y 1. Cada posición vale el doble que la de su derecha: 1, 2, 4, 8, 16…
+ma-logic.c7.title	La paradoja de Zenón
+ma-logic.c7.text	Para cruzar una habitación, primero debes recorrer la mitad, luego la mitad de lo que queda, y así sin fin. Zenón decía que nunca llegarías. En realidad, la suma infinita 1/2 + 1/4 + 1/8 + … es igual a 1.
+ma-logic.c7.viz.unit	distancia recorrida
+ma-logic.c7.viz.items.0.l	Paso 1
+ma-logic.c7.viz.items.1.l	Paso 2
+ma-logic.c7.viz.items.2.l	Paso 3
+ma-logic.c7.viz.items.3.l	Paso 4
+ma-logic.c8.title	Problemas sin resolver
+ma-logic.c8.text	Algunas preguntas aparentemente sencillas siguen sin resolverse, como la conjetura de Goldbach: ¿es todo número par mayor que 2 la suma de dos primos? Se ha comprobado hasta números enormes, pero nunca se ha demostrado.
+ma-logic.c8.example.0	4 = 2 + 2
+ma-logic.c8.example.1	10 = 3 + 7
+ma-logic.c8.example.2	28 = 5 + 23
+ma-logic.c8.viz.items.0	Conjetura de Goldbach
+ma-logic.c8.viz.items.1	Primos gemelos
+ma-logic.c8.viz.items.2	La hipótesis de Riemann
+ma-logic.c8.viz.items.3	P frente a NP
+ma-logic.c9.title	Cruzar el río
+ma-logic.c9.text	Un granjero debe cruzar un río con un lobo, una cabra y una col, llevando uno cada vez. No puede dejar al lobo con la cabra, ni a la cabra con la col. El truco: traer la cabra de vuelta.
+ma-logic.c9.viz.steps.0	Lleva la cabra
+ma-logic.c9.viz.steps.1	Lleva el lobo
+ma-logic.c9.viz.steps.2	Trae la cabra
+ma-logic.c9.viz.steps.3	Lleva la col
+ma-logic.c9.viz.steps.4	Vuelve por la cabra
+ma-percent.title	Porcentajes en la vida real
+ma-percent.summary	Descuentos, intereses y titulares.
+ma-percent.q0.q	Un artículo de 100 € sube un 50 % y luego baja un 50 %. ¿Cuánto cuesta?
+ma-percent.q0.o0	100 €
+ma-percent.q0.o1	75 €
+ma-percent.q0.o2	50 €
+ma-percent.q0.x	150 € × 0,5 = 75 €.
+ma-percent.q1.q	Un precio con un 23 % de IVA es de 123 €. ¿Cuál es el precio sin IVA?
+ma-percent.q1.o0	94,71 €
+ma-percent.q1.o1	100 €
+ma-percent.q1.o2	96 €
+ma-percent.q1.x	Divide entre 1,23.
+ma-percent.q2.q	«Un 30 % de descuento y luego un 20 %» equivale a un descuento del…
+ma-percent.q2.o0	50 %
+ma-percent.q2.o1	44 %
+ma-percent.q2.o2	40 %
+ma-percent.q2.x	0,7 × 0,8 = 0,56.
+ma-percent.c0.title	Qué es un porcentaje
+ma-percent.c0.text	«Por ciento» significa «de cada 100». El 25 % es 25 de cada 100, o una cuarta parte. Para calcular un porcentaje de un número, multiplícalo por el porcentaje y divide entre 100.
+ma-percent.c0.formula	x % de N = N × x ÷ 100
+ma-percent.c0.viz.f	x % de N = N × x ÷ 100
+ma-percent.c0.viz.items.0.s	x
+ma-percent.c0.viz.items.0.m	el porcentaje
+ma-percent.c0.viz.items.1.s	N
+ma-percent.c0.viz.items.1.m	el número
+ma-percent.c1.title	Trucos rápidos
+ma-percent.c1.text	El 10 % es fácil: mueve la coma decimal un lugar a la izquierda. A partir de ahí, el 5 % es la mitad y el 20 %, el doble.
+ma-percent.c1.example.0	10 % de 84 € = 8,40 €
+ma-percent.c1.example.1	5 % = 4,20 €
+ma-percent.c1.example.2	20 % = 16,80 €
+ma-percent.c1.viz.items.0.b	mueve la coma
+ma-percent.c1.viz.items.1.b	mitad del 10 %
+ma-percent.c1.viz.items.2.b	doble del 10 %
+ma-percent.c1.viz.items.3.b	mueve la coma dos veces
+ma-percent.c2.title	Los porcentajes se invierten
+ma-percent.c2.text	El 8 % de 25 es igual al 25 % de 8, porque la multiplicación funciona en ambos sentidos. Usa el que te resulte más fácil: el 4 % de 75 es el 75 % de 4, es decir, 3.
+ma-percent.c2.viz.items.0.a	8 % de 25
+ma-percent.c2.viz.items.0.b	25 % de 8 = 2
+ma-percent.c2.viz.items.1.a	4 % de 75
+ma-percent.c2.viz.items.1.b	75 % de 4 = 3
+ma-percent.c2.viz.items.2.a	18 % de 50
+ma-percent.c2.viz.items.2.b	50 % de 18 = 9
+ma-percent.c3.title	Subir y luego bajar
+ma-percent.c3.text	Una subida del 50 % seguida de una bajada del 50 % no te devuelve al punto de partida. 100 € pasan a 150 € y luego a 75 €.
+ma-percent.c3.viz.items.0.l	Inicio
+ma-percent.c3.viz.items.1.l	Tras +50 %
+ma-percent.c3.viz.items.2.l	Luego −50 %
+ma-percent.c4.title	Puntos porcentuales
+ma-percent.c4.text	Si los tipos de interés pasan del 2 % al 3 %, es una subida de 1 punto porcentual, pero un aumento del 50 % del tipo. Los titulares suelen confundirlos.
+ma-percent.c4.viz.l.t	Puntos porcentuales
+ma-percent.c4.viz.l.items.0	3 % − 2 % = 1 punto
+ma-percent.c4.viz.r.t	Variación porcentual
+ma-percent.c5.title	Porcentajes inversos
+ma-percent.c5.text	Un precio con un 23 % de IVA incluido es de 123 €. El precio sin IVA no es 123 € menos el 23 %; es 123 € ÷ 1,23 = 100 €.
+ma-percent.c6.title	Los descuentos se acumulan de forma extraña
+ma-percent.c6.text	«Un 30 % de descuento, más un 20 % adicional» no es un 50 % de descuento. Es 0,7 × 0,8 = 0,56 del precio: un descuento del 44 %.
+ma-percent.c6.viz.unit	precio, €
+ma-percent.c6.viz.items.0.l	Original
+ma-percent.c6.viz.items.1.l	−30 %
+ma-percent.c6.viz.items.2.l	Luego −20 %
+ma-percent.c7.title	Variación porcentual
+ma-percent.c7.text	Variación ÷ valor inicial × 100. De 80 a 100 es una subida del 25 %; de 100 a 80 es una bajada del 20 %. El punto de partida importa.
+ma-percent.c7.viz.f	variación % = (nuevo − antiguo) ÷ antiguo × 100
+ma-percent.c7.viz.items.0.s	nuevo
+ma-percent.c7.viz.items.0.m	el valor final
+ma-percent.c7.viz.items.1.s	antiguo
+ma-percent.c7.viz.items.1.m	el valor inicial
+ma-percent.c8.title	Propinas y repartos
+ma-percent.c8.text	Para repartir entre cuatro una cuenta de 60 € con un 10 % de propina: 60 € × 1,1 = 66 €, dividido entre 4 = 16,50 € cada uno.
+ma-percent.c8.example.0	60 € × 1,10 = 66 €
+ma-percent.c8.example.1	66 € ÷ 4 = 16,50 € cada uno
+ma-percent.c8.viz.steps.0	Cuenta
+ma-percent.c8.viz.steps.1	Suma propina: × 1,1
+ma-percent.c8.viz.steps.2	Divide entre personas
+ma-percent.c8.viz.steps.3	Cada parte
+ma-percent.c9.title	Porcentajes engañosos
+ma-percent.c9.text	«¡Ventas un 200 % más altas!», pasando de 1 a 3 unidades, suena espectacular pero significa poco. Pide siempre las cifras reales que hay detrás de un porcentaje.
+ma-percent.c9.viz.items.0.w	«¡Un 200 % más!»
+ma-percent.c9.viz.items.0.r	De 1 a 3: sigue siendo poco
+ma-fractions.title	Fracciones, razones y proporciones
+ma-fractions.summary	Repartir, escalar y cocinar.
+ma-fractions.q0.q	¿Cuánto es 1/2 + 1/3?
+ma-fractions.q0.o0	2/5
+ma-fractions.q0.o1	5/6
+ma-fractions.q0.o2	1/6
+ma-fractions.q0.x	3/6 + 2/6.
+ma-fractions.q1.q	¿Cuánto es 3 ÷ ½?
+ma-fractions.q1.o0	1,5
+ma-fractions.q1.o1	6
+ma-fractions.q1.o2	3
+ma-fractions.q1.x	¿Cuántas mitades caben en tres?
+ma-fractions.c0.title	Las fracciones son divisiones
+ma-fractions.c0.text	3/4 significa 3 dividido entre 4: tres de cuatro partes iguales, o 0,75. El número de abajo indica en cuántas partes se divide; el de arriba, cuántas tomas.
+ma-fractions.c1.title	Fracciones equivalentes
+ma-fractions.c1.text	Multiplicar el numerador y el denominador por el mismo número no cambia una fracción: 1/2 = 2/4 = 50/100. Para simplificar, divide ambos por un factor común.
+ma-fractions.c1.viz.steps.1	Divide ambos entre 2
+ma-fractions.c2.title	Sumar fracciones
+ma-fractions.c2.text	Para sumar fracciones, primero dales el mismo denominador: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
+ma-fractions.c2.example.0	1/2 = 3/6
+ma-fractions.c2.example.1	1/3 = 2/6
+ma-fractions.c2.example.2	3/6 + 2/6 = 5/6
+ma-fractions.c2.viz.steps.0	Busca un denominador común
+ma-fractions.c2.viz.steps.1	Convierte cada una
+ma-fractions.c2.viz.steps.2	Suma los numeradores
+ma-fractions.c3.title	Multiplicar fracciones
+ma-fractions.c3.text	Multiplica los numeradores entre sí y los denominadores entre sí. La mitad de tres cuartos es 1/2 × 3/4 = 3/8. «De» significa multiplicar.
+ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
+ma-fractions.c3.viz.items.0.s	a, c
+ma-fractions.c3.viz.items.0.m	numeradores
+ma-fractions.c3.viz.items.1.s	b, d
+ma-fractions.c3.viz.items.1.m	denominadores
+ma-fractions.c4.title	Dividir entre una fracción
+ma-fractions.c4.text	Dividir entre una fracción equivale a multiplicar por su inversa. 3 ÷ 1/2 = 6: ¿cuántas mitades caben en 3? Seis.
+ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1,5
+ma-fractions.c4.viz.items.0.r	3 ÷ ½ = 6, pues seis mitades son tres
+ma-fractions.c5.title	Razones
+ma-fractions.c5.text	Una razón compara cantidades. Una mezcla de cemento y arena 2:3 significa 2 partes de cemento por cada 3 de arena: 2/5 de la mezcla es cemento.
+ma-fractions.c5.viz.unit	partes
+ma-fractions.c5.viz.items.0.l	Cemento
+ma-fractions.c5.viz.items.1.l	Arena

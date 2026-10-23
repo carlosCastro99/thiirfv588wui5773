@@ -567,3 +567,233 @@ tr-sensors.q2.o2	Temperatura
 tr-sensors.q2.x	Detecta el campo magnético.
 tr-sensors.c0.title	Del mundo a los números
 tr-sensors.c0.text	Un sensor convierte una magnitud física en una señal eléctrica: una tensión, una resistencia, una duración de pulso o datos digitales. El microcontrolador la lee y la convierte a unidades reales.
+tr-sensors.c0.viz.steps.0	Magnitud física
+tr-sensors.c0.viz.steps.1	Sensor
+tr-sensors.c0.viz.steps.2	Señal eléctrica
+tr-sensors.c0.viz.steps.3	El microcontrolador la pasa a unidades
+tr-sensors.c1.title	Sensores de temperatura
+tr-sensors.c1.text	Los termistores cambian de resistencia con la temperatura (baratos, analógicos). El DS18B20 envía lecturas digitales por un solo cable. El BME280 añade humedad y presión por I²C.
+tr-sensors.c1.viz.items.0.a	termistor
+tr-sensors.c1.viz.items.0.b	analógico, barato
+tr-sensors.c1.viz.items.1.a	DS18B20
+tr-sensors.c1.viz.items.1.b	digital, versiones estancas
+tr-sensors.c1.viz.items.2.a	BME280
+tr-sensors.c1.viz.items.2.b	temperatura, humedad, presión
+tr-sensors.c2.title	Distancia por ultrasonidos
+tr-sensors.c2.text	Sensores como el HC-SR04 y el JSN-SR04T, resistente al agua, emiten un pulso de 40 kHz y cronometran el eco. La distancia es la mitad del tiempo de ida y vuelta por la velocidad del sonido.
+tr-sensors.c2.example.0	eco tras 5,8 ms
+tr-sensors.c2.example.1	0,0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1,0 m
+tr-sensors.c2.viz.f	distancia = tiempo × 343 ÷ 2
+tr-sensors.c2.viz.items.0.s	tiempo
+tr-sensors.c2.viz.items.0.m	tiempo del eco en s
+tr-sensors.c2.viz.items.1.m	m/s, velocidad del sonido en el aire
+tr-sensors.c3.title	Peculiaridades de los ultrasonidos
+tr-sensors.c3.text	La velocidad del sonido cambia con la temperatura (unos 0,6 m/s por °C), así que añade compensación de temperatura si buscas precisión. El JSN-SR04T tiene una zona ciega de unos 20–25 cm y necesita el camino despejado.
+tr-sensors.c3.viz.items.0	Compensa la temperatura
+tr-sensors.c3.viz.items.1	Respeta la distancia mínima
+tr-sensors.c3.viz.items.2	Evita espumas y superficies inclinadas
+tr-sensors.c3.viz.items.3	Promedia varias lecturas
+tr-sensors.c4.title	Sensores de movimiento
+tr-sensors.c4.text	Los sensores PIR detectan el calor infrarrojo de personas y animales en movimiento. Los sensores de radar de microondas detectan movimiento a través de paredes finas e incluso la respiración; se usan para detectar presencia.
+tr-sensors.c4.viz.l.t	PIR
+tr-sensors.c4.viz.l.items.0	detecta calor en movimiento
+tr-sensors.c4.viz.l.items.1	barato
+tr-sensors.c4.viz.l.items.2	no ve a gente quieta
+tr-sensors.c4.viz.r.t	Radar mmWave
+tr-sensors.c4.viz.r.items.0	detecta movimientos pequeños
+tr-sensors.c4.viz.r.items.1	presencia aunque estés quieto
+tr-sensors.c4.viz.r.items.2	más caro
+tr-sensors.c5.title	Sensores de luz
+tr-sensors.c5.text	Una fotorresistencia (LDR) es barata y lenta; el BH1750 da lecturas calibradas en lux por I²C. Útiles para luces y persianas automáticas.
+tr-sensors.c5.viz.unit	lux (típico)
+tr-sensors.c5.viz.items.0.l	Luz de luna
+tr-sensors.c5.viz.items.1.l	Salón
+tr-sensors.c5.viz.items.2.l	Oficina
+tr-sensors.c5.viz.items.3.l	Día nublado
+tr-sensors.c5.viz.items.4.l	Luz solar
+tr-sensors.c6.title	Sensores de corriente y potencia
+tr-sensors.c6.text	Una pinza de transformador de corriente mide corriente alterna sin cortar cables; módulos como el PZEM-004T informan de tensión, corriente, potencia y energía. Las placas INA219 miden corriente y tensión continuas.
+tr-sensors.c6.viz.items.0.a	pinza CT
+tr-sensors.c6.viz.items.0.b	CA, no invasiva
+tr-sensors.c6.viz.items.1.a	PZEM-004T
+tr-sensors.c6.viz.items.1.b	potencia y energía de red
+tr-sensors.c6.viz.items.2.a	INA219
+tr-sensors.c6.viz.items.2.b	corriente y tensión CC
+tr-sensors.c7.title	Sensores analógicos frente a digitales
+tr-sensors.c7.text	Los sensores analógicos dan una tensión que lees con el ADC; el ruido y la calibración son cosa tuya. Los sensores digitales hacen la conversión dentro y envían un número por I²C, SPI o one-wire.
+tr-sensors.c7.viz.l.t	Analógico
+tr-sensors.c7.viz.l.items.0	sale una tensión
+tr-sensors.c7.viz.l.items.1	necesita ADC
+tr-sensors.c7.viz.l.items.2	cableado simple
+tr-sensors.c7.viz.r.t	Digital
+tr-sensors.c7.viz.r.items.0	envía números
+tr-sensors.c7.viz.r.items.1	calibrado de fábrica
+tr-sensors.c7.viz.r.items.2	usa un bus
+tr-sensors.c8.title	Calibración
+tr-sensors.c8.text	Los sensores baratos tienen desviaciones y deriva. Compáralos con una referencia fiable en dos puntos (por ejemplo, agua con hielo y temperatura ambiente) y corrige por software.
+tr-sensors.c8.viz.steps.0	Mide una referencia conocida
+tr-sensors.c8.viz.steps.1	Anota la desviación
+tr-sensors.c8.viz.steps.2	Corrige por software
+tr-sensors.c8.viz.steps.3	Revisa más adelante
+tr-sensors.c9.title	Muestreo y promedios
+tr-sensors.c9.text	Toma varias lecturas y promédialas, o usa la mediana para ignorar valores atípicos. No muestrees más rápido de lo necesario: desperdicia energía y añade ruido.
+tr-sensors.c9.viz.items.0	La mediana de 5 quita picos
+tr-sensors.c9.viz.items.1	La media móvil suaviza el ruido
+tr-sensors.c9.viz.items.2	Muestrea solo lo necesario
+tr-sensors.c9.viz.items.3	Registra datos en bruto al probar
+tr-buses.title	Comunicación entre chips
+tr-buses.summary	UART, I²C y SPI explicados.
+tr-buses.q0.q	¿Qué bus usa las líneas SDA y SCL?
+tr-buses.q0.o0	SPI
+tr-buses.q0.o1	I²C
+tr-buses.q0.o2	UART
+tr-buses.q0.x	I²C usa una línea de datos y otra de reloj.
+tr-buses.q1.q	En el cableado UART, TX se conecta a…
+tr-buses.q1.o0	TX
+tr-buses.q1.o1	RX
+tr-buses.q1.o2	Solo GND
+tr-buses.q1.x	Lo que transmite uno lo recibe el otro.
+tr-buses.q2.q	¿Qué es lo mejor para un cable de 300 m hasta un contador de energía?
+tr-buses.q2.o0	I²C
+tr-buses.q2.o1	SPI
+tr-buses.q2.o2	RS-485
+tr-buses.q2.x	RS-485 es diferencial y soporta tiradas largas.
+tr-buses.c0.title	¿Por qué buses?
+tr-buses.c0.text	Los sensores, las pantallas y los chips de memoria necesitan intercambiar datos con el microcontrolador. Los buses serie estándar envían los bits uno tras otro por unos pocos cables.
+tr-buses.c0.viz.root	Buses serie
+tr-buses.c0.viz.items.0	UART (2 cables)
+tr-buses.c0.viz.items.1	I²C (2 cables, muchos dispositivos)
+tr-buses.c0.viz.items.2	SPI (4 cables, rápido)
+tr-buses.c0.viz.items.3	1-Wire (1 cable)
+tr-buses.c1.title	UART
+tr-buses.c1.text	UART usa una línea TX y una RX, cruzadas entre dispositivos (TX a RX). Ambos lados deben acordar la velocidad, como 9600 o 115200 baudios. La usan los módulos GPS y las consolas serie.
+tr-buses.c1.viz.steps.0	TX del dispositivo A
+tr-buses.c1.viz.steps.1	a
+tr-buses.c1.viz.steps.2	RX del dispositivo B
+tr-buses.c1.viz.steps.3	y vuelta
+tr-buses.c2.title	I²C
+tr-buses.c2.text	I²C usa dos líneas, SDA (datos) y SCL (reloj), compartidas por muchos dispositivos. Cada dispositivo tiene una dirección, como 0x76 para un BME280. Ambas líneas necesitan resistencias pull-up.
+tr-buses.c2.viz.items.0.a	SDA
+tr-buses.c2.viz.items.0.b	línea de datos
+tr-buses.c2.viz.items.1.a	SCL
+tr-buses.c2.viz.items.1.b	línea de reloj
+tr-buses.c2.viz.items.2.a	dirección
+tr-buses.c2.viz.items.2.b	qué dispositivo
+tr-buses.c2.viz.items.3.a	pull-ups
+tr-buses.c2.viz.items.3.b	típico 4,7 kΩ
+tr-buses.c3.title	SPI
+tr-buses.c3.text	SPI usa un reloj, una salida de datos, una entrada de datos y una línea de selección de chip por dispositivo. Es rápido, a menudo decenas de MHz, por lo que se usa en pantallas, tarjetas SD y memorias flash.
+tr-buses.c3.viz.items.0.a	SCK
+tr-buses.c3.viz.items.0.b	reloj
+tr-buses.c3.viz.items.1.a	MOSI
+tr-buses.c3.viz.items.1.b	sale del controlador
+tr-buses.c3.viz.items.2.a	MISO
+tr-buses.c3.viz.items.2.b	entra al controlador
+tr-buses.c3.viz.items.3.a	CS
+tr-buses.c3.viz.items.3.b	selección por dispositivo
+tr-buses.c4.title	Cómo elegir un bus
+tr-buses.c4.text	I²C para muchos sensores lentos con dos cables; SPI para velocidad; UART para módulos con su propio protocolo; one-wire para cadenas largas de sensores de temperatura.
+tr-buses.c4.viz.l.t	I²C
+tr-buses.c4.viz.l.items.0	2 cables
+tr-buses.c4.viz.l.items.1	muchos dispositivos
+tr-buses.c4.viz.l.items.2	hasta ~400 kHz típico
+tr-buses.c4.viz.r.t	SPI
+tr-buses.c4.viz.r.items.0	4+ cables
+tr-buses.c4.viz.r.items.1	un CS por dispositivo
+tr-buses.c4.viz.r.items.2	decenas de MHz
+tr-buses.c5.title	Conflictos de dirección
+tr-buses.c5.text	Dos dispositivos I²C con la misma dirección no pueden compartir bus. Muchas placas tienen un puente para cambiar la dirección; si no, puedes usar un multiplexor I²C.
+tr-buses.c5.viz.items.0.w	dos sensores en 0x76
+tr-buses.c5.viz.items.0.r	pasa uno a 0x77 con su puente de dirección
+tr-buses.c5.viz.items.1.w	sigue habiendo conflicto
+tr-buses.c5.viz.items.1.r	añade un multiplexor I²C
+tr-buses.c6.title	Escáner I²C
+tr-buses.c6.text	Cuando un dispositivo I²C no responde, ejecuta un sketch escáner que prueba todas las direcciones y lista las que contestan. Si nada contesta, suele ser el cableado, la alimentación o la falta de pull-ups.
+tr-buses.c6.viz.items.0	Revisa alimentación y masa
+tr-buses.c6.viz.items.1	¿SDA y SCL sin intercambiar?
+tr-buses.c6.viz.items.2	¿Hay pull-ups?
+tr-buses.c6.viz.items.3	Ejecuta un escáner
+tr-buses.c7.title	Longitud del cable
+tr-buses.c7.text	I²C se diseñó para conexiones cortas dentro de una placa; a partir de un metro aproximadamente deja de ser fiable. Para tiradas más largas usa RS-485, CAN o un extensor de bus diferencial.
+tr-buses.c7.viz.unit	longitud máx. típica (m)
+tr-buses.c7.viz.items.0.l	I²C
+tr-buses.c7.viz.items.1.l	SPI
+tr-buses.c7.viz.items.2.l	UART (TTL)
+tr-buses.c7.viz.items.3.l	RS-485
+tr-buses.c8.title	RS-485 y Modbus
+tr-buses.c8.text	RS-485 envía los datos como la diferencia entre dos cables, lo que rechaza el ruido en cables largos. Los equipos industriales, los contadores de energía y los inversores solares suelen hablar Modbus sobre RS-485.
+tr-buses.c8.viz.steps.0	UART del microcontrolador
+tr-buses.c8.viz.steps.1	Transceptor RS-485
+tr-buses.c8.viz.steps.2	Par trenzado hasta 1,2 km
+tr-buses.c8.viz.steps.3	Contador o inversor
+tr-buses.c9.title	Analizadores lógicos
+tr-buses.c9.text	Un analizador lógico USB barato registra los bits de un bus y los decodifica en bytes legibles, mostrando exactamente lo que se envía. Es la forma más rápida de depurar un sensor rebelde.
+tr-buses.c9.viz.steps.0	Engancha a SDA y SCL
+tr-buses.c9.viz.steps.1	Grabar
+tr-buses.c9.viz.steps.2	Decodificar I²C
+tr-buses.c9.viz.steps.3	Ver direcciones y bytes
+tr-wireless.title	Enlaces inalámbricos
+tr-wireless.summary	Wifi, Bluetooth, Zigbee y LoRa comparados.
+tr-wireless.q0.q	¿Qué conviene a un sensor con batería que envía una lectura cada 10 minutos desde 5 km?
+tr-wireless.q0.o0	Wifi
+tr-wireless.q0.o1	Bluetooth
+tr-wireless.q0.o2	LoRa
+tr-wireless.q0.x	LoRa ofrece largo alcance con muy bajo consumo.
+tr-wireless.q1.q	En una malla Zigbee, ¿qué amplía el alcance?
+tr-wireless.q1.o0	Baterías más grandes
+tr-wireless.q1.o1	Los dispositivos conectados a la red eléctrica que retransmiten mensajes
+tr-wireless.q1.o2	Frecuencias más altas
+tr-wireless.q1.x	Cada router retransmite paquetes.
+tr-wireless.q2.q	¿Qué frecuencia usa LoRa en Europa?
+tr-wireless.q2.o0	2,4 GHz
+tr-wireless.q2.o1	868 MHz
+tr-wireless.q2.o2	5 GHz
+tr-wireless.q2.x	La banda de la UE es 868 MHz.
+tr-wireless.c0.title	El triángulo de compromisos
+tr-wireless.c0.text	Toda tecnología inalámbrica equilibra alcance, velocidad de datos y consumo. No puedes maximizar las tres: largo alcance y bajo consumo implican muy pocos datos.
+tr-wireless.c0.viz.l.t	Alta velocidad
+tr-wireless.c0.viz.l.items.0	Wifi
+tr-wireless.c0.viz.l.items.1	vídeo y archivos
+tr-wireless.c0.viz.l.items.2	consume mucho
+tr-wireless.c0.viz.r.t	Largo alcance, bajo consumo
+tr-wireless.c0.viz.r.items.0	LoRa
+tr-wireless.c0.viz.r.items.1	mensajes diminutos
+tr-wireless.c0.viz.r.items.2	años con una batería
+tr-wireless.c1.title	Wifi
+tr-wireless.c1.text	El wifi ofrece alta velocidad y se conecta directamente a tu red y a internet, pero consume mucha energía. Bueno para dispositivos enchufados a la red, como cámaras y enchufes inteligentes.
+tr-wireless.c1.viz.items.0.v	2,4 GHz
+tr-wireless.c1.viz.items.0.l	alcance
+tr-wireless.c1.viz.items.1.v	5 GHz
+tr-wireless.c1.viz.items.1.l	velocidad
+tr-wireless.c1.viz.items.2.v	~100–250 mA
+tr-wireless.c1.viz.items.2.l	ESP32 al transmitir
+tr-wireless.c2.title	Bluetooth Low Energy
+tr-wireless.c2.text	BLE envía pequeñas cantidades de datos a corta distancia con muy poca energía. Lo usan pulseras de actividad, sensores y balizas, que a menudo funcionan un año o más con una pila de botón.
+tr-wireless.c2.viz.items.0.a	alcance
+tr-wireless.c2.viz.items.0.b	~10–50 m en interior
+tr-wireless.c2.viz.items.1.a	consumo
+tr-wireless.c2.viz.items.1.b	pila de botón para meses
+tr-wireless.c2.viz.items.2.a	datos
+tr-wireless.c2.viz.items.2.b	paquetes pequeños
+tr-wireless.c3.title	Zigbee y Thread
+tr-wireless.c3.text	Redes en malla para el hogar inteligente: cada dispositivo enchufado a la red retransmite mensajes y amplía el alcance. Necesitan un hub o coordinador, y los sensores con batería duran años.
+tr-wireless.c3.viz.steps.0	Sensor con batería
+tr-wireless.c3.viz.steps.1	Retransmite el enchufado más cercano
+tr-wireless.c3.viz.steps.2	Saltos en malla
+tr-wireless.c3.viz.steps.3	Hub o coordinador
+tr-wireless.c4.title	LoRa
+tr-wireless.c4.text	LoRa usa una señal especial de tipo chirp para llegar a varios kilómetros con una potencia mínima. La velocidad de datos es de solo cientos de bits a unos pocos kilobits por segundo: perfecta para lecturas ocasionales de sensores en lugares remotos.
+tr-wireless.c4.viz.unit	alcance típico (km, campo abierto)
+tr-wireless.c4.viz.items.0.l	Wifi
+tr-wireless.c4.viz.items.1.l	BLE
+tr-wireless.c4.viz.items.2.l	Zigbee
+tr-wireless.c4.viz.items.3.l	LoRa
+tr-wireless.c5.title	LoRa frente a LoRaWAN
+tr-wireless.c5.text	LoRa es la radio. LoRaWAN es un protocolo de red con gateways y servidores, como The Things Network. LoRa punto a punto entre dos placas no necesita ninguna red.
+tr-wireless.c5.viz.l.t	LoRa punto a punto
+tr-wireless.c5.viz.l.items.0	dos placas hablan directamente
+tr-wireless.c5.viz.l.items.1	sencillo
+tr-wireless.c5.viz.l.items.2	sin red
+tr-wireless.c5.viz.r.t	LoRaWAN
+tr-wireless.c5.viz.r.items.0	gateways y servidores

@@ -1148,3 +1148,328 @@ el-meter.c0.viz.items.3	Bip de continuité
 el-meter.c1.title	Mesurer une tension
 el-meter.c1.text	Placez le sélecteur sur V (alternatif ~ ou continu ⎓) et posez les pointes de touche aux bornes des deux points, en parallèle. Le multimètre a une très forte résistance, donc il perturbe à peine le circuit.
 el-meter.c1.viz.steps.0	Sélecteur sur V~ ou V⎓
+el-meter.c1.viz.steps.1	Pointe noire sur COM
+el-meter.c1.viz.steps.2	Pointe rouge sur la prise V
+el-meter.c1.viz.steps.3	Toucher les deux points
+el-meter.c2.title	Mesurer un courant
+el-meter.c2.text	Le courant doit traverser le multimètre, en série : ouvrez le circuit et insérez l'appareil. Déplacez le fil rouge sur la prise A ou mA. Oublier de le remettre ensuite est la façon classique de griller le fusible du multimètre.
+el-meter.c2.viz.l.t	Tension
+el-meter.c2.viz.l.items.0	aux bornes de la charge
+el-meter.c2.viz.l.items.1	parallèle
+el-meter.c2.viz.l.items.2	fil rouge sur V
+el-meter.c2.viz.r.t	Courant
+el-meter.c2.viz.r.items.0	à travers l'appareil
+el-meter.c2.viz.r.items.1	série
+el-meter.c2.viz.r.items.2	fil rouge sur A ou mA
+el-meter.c3.title	Résistance et continuité
+el-meter.c3.text	Ne mesurez la résistance que sur des circuits hors tension. Le mode continuité émet un bip lorsque la résistance est très faible : parfait pour trouver des fils coupés ou repérer quel câble est lequel.
+el-meter.c3.viz.items.0	D'abord couper le courant
+el-meter.c3.viz.items.1	Sélecteur sur Ω ou bip
+el-meter.c3.viz.items.2	Toucher les deux extrémités
+el-meter.c3.viz.items.3	Bip = connecté
+el-meter.c4.title	Catégories CAT
+el-meter.c4.text	Les multimètres portent une catégorie qui indique où ils peuvent être utilisés en sécurité. La CAT II couvre les appareils branchés, la CAT III l'installation fixe et les tableaux, la CAT IV l'origine de l'alimentation. Utilisez au moins du CAT III 600 V sur le câblage d'un logement.
+el-meter.c4.viz.items.0	CAT IV : origine de l'alimentation, branchement
+el-meter.c4.viz.items.1	CAT III : tableaux, câblage fixe
+el-meter.c4.viz.items.2	CAT II : prises et appareils
+el-meter.c4.viz.items.3	CAT I : électronique protégée
+el-meter.c5.title	Pinces ampèremétriques
+el-meter.c5.text	Une pince ampèremétrique mesure le courant sans ouvrir le circuit : on la referme autour d'un seul conducteur et elle lit le champ magnétique. Refermée autour du câble entier, la phase et le neutre s'annulent.
+el-meter.c5.viz.items.0.w	pince autour du câble entier
+el-meter.c5.viz.items.0.r	pince sur un seul conducteur
+el-meter.c5.viz.items.1.w	lit 0 A
+el-meter.c5.viz.items.1.r	séparer phase et neutre
+el-meter.c6.title	Autorange et True RMS
+el-meter.c6.text	Les multimètres autorange choisissent le calibre pour vous. Les multimètres True RMS mesurent correctement les formes d'onde non sinusoïdales (onduleurs, drivers LED, variateurs de fréquence) ; les modèles moins chers peuvent se tromper nettement dans ces cas.
+el-meter.c6.viz.l.t	Valeur moyenne
+el-meter.c6.viz.l.items.0	correct pour les sinusoïdes pures
+el-meter.c6.viz.l.items.1	moins cher
+el-meter.c6.viz.r.t	True RMS
+el-meter.c6.viz.r.items.0	juste sur les ondes déformées
+el-meter.c6.viz.r.items.1	recommandé
+el-meter.c7.title	Vérifier une prise
+el-meter.c7.text	Pour vérifier qu'une prise est sous tension, mesurez entre phase et neutre (environ 230 V), phase et terre (environ 230 V) et neutre et terre (proche de 0 V). Les vrais testeurs de prises vérifient aussi la terre et le différentiel.
+el-meter.c7.viz.items.0.a	phase–neutre
+el-meter.c7.viz.items.0.b	≈ 230 V
+el-meter.c7.viz.items.1.a	phase–terre
+el-meter.c7.viz.items.1.b	≈ 230 V
+el-meter.c7.viz.items.2.a	neutre–terre
+el-meter.c7.viz.items.2.b	≈ 0 V
+el-meter.c8.title	Vérifier l'absence de tension avant de toucher
+el-meter.c8.text	Avant d'intervenir sur un circuit : isolez-le, consignez-le, vérifiez l'absence de tension avec un testeur éprouvé, et recontrôlez le testeur sur une source sous tension connue. Ne vous fiez jamais à un interrupteur ou à une étiquette seuls.
+el-meter.c8.viz.steps.0	Couper et consigner
+el-meter.c8.viz.steps.1	Tester le testeur sur une source sous tension
+el-meter.c8.viz.steps.2	Vérifier que le circuit est hors tension
+el-meter.c8.viz.steps.3	Retester le testeur
+el-meter.c9.title	Lire batteries et capteurs
+el-meter.c9.text	Les multimètres sont très utiles en électronique : état d'une batterie (une batterie « 12 V » pleine doit afficher environ 12,6 V), sorties de capteurs, et contrôle d'un rail de 3,3 V sur une carte ESP32.
+el-meter.c9.viz.unit	volts (au repos, plomb-acide 12 V)
+el-meter.c9.viz.items.0.l	Pleine
+el-meter.c9.viz.items.3.l	Vide
+el-ev.title	Recharger les voitures électriques
+el-ev.summary	Alternatif, continu, kW et pourquoi la recharge ralentit.
+el-ev.q0.q	Qui convertit l'alternatif en continu pendant la recharge domestique en alternatif ?
+el-ev.q0.o0	La borne murale
+el-ev.q0.o1	Le chargeur embarqué de la voiture
+el-ev.q0.o2	La batterie
+el-ev.q0.x	La recharge en alternatif utilise le chargeur propre à la voiture.
+el-ev.q1.q	Pourquoi la recharge rapide ralentit-elle au-delà d'environ 80 % ?
+el-ev.q1.o0	Le chargeur surchauffe
+el-ev.q1.o1	Pour protéger la batterie à mesure qu'elle se remplit
+el-ev.q1.o2	L'électricité coûte plus cher
+el-ev.q1.x	Le système de gestion de la batterie réduit progressivement le courant.
+el-ev.q2.q	Ajouter 40 kWh avec un chargeur de 11 kW prend environ…
+el-ev.q2.o0	1 heure
+el-ev.q2.o1	3,6 heures
+el-ev.q2.o2	11 heures
+el-ev.q2.x	40 ÷ 11 ≈ 3,6 heures.
+el-ev.c0.title	Recharge en alternatif
+el-ev.c0.text	À la maison et sur la plupart des bornes de rue, la voiture reçoit de l'alternatif et le convertit en continu avec son propre chargeur embarqué. C'est le chargeur de la voiture qui limite la vitesse, en général 7–11 kW.
+el-ev.c0.viz.steps.0	Alternatif depuis la borne
+el-ev.c0.viz.steps.1	Chargeur embarqué dans la voiture
+el-ev.c0.viz.steps.2	Continu vers la batterie
+el-ev.c1.title	Recharge rapide en continu
+el-ev.c1.text	Les chargeurs rapides convertissent l'alternatif en continu dans la borne et alimentent directement la batterie, en contournant le chargeur de la voiture. Les puissances vont de 50 kW à 350 kW.
+el-ev.c1.viz.l.t	Recharge en alternatif
+el-ev.c1.viz.l.items.0	la voiture convertit en continu
+el-ev.c1.viz.l.items.1	3,7–22 kW
+el-ev.c1.viz.l.items.2	logements et bureaux
+el-ev.c1.viz.r.t	Recharge en continu
+el-ev.c1.viz.r.items.0	la borne convertit
+el-ev.c1.viz.r.items.1	50–350 kW
+el-ev.c1.viz.r.items.2	autoroutes
+el-ev.c2.title	Puissances de recharge
+el-ev.c2.text	Une prise ordinaire donne environ 2,3 kW (10 A sous 230 V), lent mais suffisant pour la nuit si les trajets quotidiens sont courts. Une borne murale monophasée à 32 A donne environ 7,4 kW.
+el-ev.c2.viz.unit	kW
+el-ev.c2.viz.items.0.l	Prise domestique
+el-ev.c2.viz.items.1.l	Borne monophasée
+el-ev.c2.viz.items.2.l	Borne triphasée
+el-ev.c2.viz.items.3.l	Alternatif 22 kW
+el-ev.c2.viz.items.4.l	Continu rapide
+el-ev.c3.title	Combien de temps cela prendra-t-il ?
+el-ev.c3.text	Divisez l'énergie nécessaire par la puissance de recharge, puis ajoutez une marge pour les pertes et la dernière phase, plus lente.
+el-ev.c3.example.0	Ajouter 50 kWh à 7,4 kW
+el-ev.c3.example.1	50 ÷ 7,4
+el-ev.c3.example.2	≈ 7 heures
+el-ev.c3.viz.f	heures ≈ kWh nécessaires ÷ kW
+el-ev.c3.viz.items.0.s	kWh
+el-ev.c3.viz.items.0.m	énergie à ajouter
+el-ev.c3.viz.items.1.s	kW
+el-ev.c3.viz.items.1.m	puissance de recharge
+el-ev.c4.title	La courbe de charge
+el-ev.c4.text	La recharge en continu est la plus rapide aux faibles états de charge et ralentit à mesure que la batterie se remplit, pour la protéger. Passer de 10 % à 80 % prend souvent autant de temps que de 80 % à 100 %.
+el-ev.c4.viz.events.0.l	pleine vitesse
+el-ev.c4.viz.events.1.l	encore rapide
+el-ev.c4.viz.events.2.l	la puissance chute
+el-ev.c4.viz.events.3.l	filet de courant
+el-ev.c5.title	Voitures en 400 V et en 800 V
+el-ev.c5.text	La plupart des VE utilisent des batteries d'environ 400 V. Certaines voitures plus récentes, comme la XPeng G9 et la Porsche Taycan, utilisent des plateformes 800 V, qui permettent une puissance de recharge plus élevée avec moins de courant et de chaleur.
+el-ev.c5.viz.f	P = U × I
+el-ev.c5.viz.items.0.s	400 V × 500 A
+el-ev.c5.viz.items.0.m	200 kW
+el-ev.c5.viz.items.1.s	800 V × 500 A
+el-ev.c5.viz.items.1.m	400 kW
+el-ev.c6.title	Connecteurs en Europe
+el-ev.c6.text	Le type 2 est la prise alternative standard en Europe. Le CCS2 ajoute deux grosses broches pour le continu en dessous, pour la recharge rapide. Les anciennes voitures japonaises peuvent utiliser le CHAdeMO.
+el-ev.c6.viz.items.0.a	Type 2
+el-ev.c6.viz.items.0.b	recharge alternatif
+el-ev.c6.viz.items.1.a	CCS2
+el-ev.c6.viz.items.1.b	Type 2 + broches continu
+el-ev.c6.viz.items.2.a	CHAdeMO
+el-ev.c6.viz.items.2.b	continu japonais ancien
+el-ev.c7.title	Recharge intelligente à la maison
+el-ev.c7.text	Les bornes intelligentes peuvent suivre les tarifs de nuit moins chers, utiliser le surplus solaire et réduire la puissance si le logement approche de sa limite souscrite (équilibrage de charge), afin que le disjoncteur général ne déclenche pas.
+el-ev.c7.viz.items.0	Programmer aux heures creuses
+el-ev.c7.viz.items.1	Suivre le surplus solaire
+el-ev.c7.viz.items.2	Équilibrage avec le logement
+el-ev.c7.viz.items.3	Suivi par appli
+el-ev.c8.title	Mobi.E au Portugal
+el-ev.c8.text	Le réseau de recharge public du Portugal est coordonné par Mobi.E. Vous pouvez utiliser la plupart des bornes publiques avec une seule carte ou appli de n'importe quel fournisseur (CEME), et vous payez l'opérateur, le fournisseur et les frais de réseau.
+el-ev.c8.viz.steps.0	Choisir une carte ou appli de fournisseur
+el-ev.c8.viz.steps.1	Se brancher à n'importe quel point Mobi.E
+el-ev.c8.viz.steps.2	Recharger
+el-ev.c8.viz.steps.3	Une seule facture avec tous les frais
+el-ev.c9.title	Rendement et pertes
+el-ev.c9.text	Une partie de l'énergie se perd en chaleur pendant la recharge, en général environ 10 % pour une recharge domestique en alternatif, parfois plus à très faible puissance. Le compteur de la borne affiche plus de kWh que la batterie n'en reçoit.
+el-ev.c9.viz.unit	kWh
+el-ev.c9.viz.items.0.l	Depuis le réseau
+el-ev.c9.viz.items.1.l	Dans la batterie
+el-ev.c9.viz.items.2.l	Pertes
+el-tariffs.title	L'énergie à la maison
+el-tariffs.summary	Factures, tarifs et où vont les kWh.
+el-tariffs.q0.q	Avec un tarif bi-horário, quand l'énergie est-elle moins chère ?
+el-tariffs.q0.o0	À midi
+el-tariffs.q0.o1	Aux heures creuses, surtout la nuit et le week-end
+el-tariffs.q0.o2	Elle n'est jamais moins chère
+el-tariffs.q0.x	Les heures de vazio sont la période bon marché.
+el-tariffs.q1.q	Environ combien d'électricité en moins une LED consomme-t-elle par rapport à une ampoule à incandescence pour la même lumière ?
+el-tariffs.q1.o0	20 %
+el-tariffs.q1.o1	80–90 %
+el-tariffs.q1.o2	0 %
+el-tariffs.q1.x	Environ 8 W contre 60 W.
+el-tariffs.q2.q	Quelle est généralement l'une des plus grosses charges isolées d'un logement ?
+el-tariffs.q2.o0	Un chargeur de téléphone
+el-tariffs.q2.o1	Un chauffe-eau électrique
+el-tariffs.q2.o2	Une lampe LED
+el-tariffs.q2.x	Chauffer l'eau demande beaucoup d'énergie.
+el-tariffs.c0.title	Lire la facture
+el-tariffs.c0.text	Une facture d'électricité portugaise comprend une part fixe (puissance souscrite, par jour), une part énergie (par kWh), les frais d'accès au réseau, les taxes (TVA, contribution audiovisuelle) et parfois des remises.
+el-tariffs.c0.viz.root	Votre facture
+el-tariffs.c0.viz.items.0	Fixe : puissance souscrite
+el-tariffs.c0.viz.items.1	Énergie : kWh consommés
+el-tariffs.c0.viz.items.2	Taxes et contributions
+el-tariffs.c1.title	Tarifs horaires
+el-tariffs.c1.text	Les tarifs simples facturent le même prix toute la journée. Les tarifs à deux périodes (bi-horário) ont des heures creuses (vazio) moins chères, surtout la nuit et le week-end ; les tarifs à trois périodes (tri-horário) distinguent aussi heures de pointe et heures intermédiaires.
+el-tariffs.c1.viz.l.t	Simple
+el-tariffs.c1.viz.l.items.0	un seul prix
+el-tariffs.c1.viz.l.items.1	facile
+el-tariffs.c1.viz.l.items.2	pas besoin de décaler
+el-tariffs.c1.viz.r.t	Bi-horário
+el-tariffs.c1.viz.r.items.0	moins cher la nuit et le week-end
+el-tariffs.c1.viz.r.items.1	rentable si vous décalez la charge
+el-tariffs.c1.viz.r.items.2	VE, chauffe-eau
+el-tariffs.c2.title	Quand le bi-horário est rentable
+el-tariffs.c2.text	Il est généralement rentable si vous pouvez déplacer une bonne part de votre consommation, souvent environ 40 % ou plus, vers les heures creuses : recharge du VE, chauffe-eau, lave-linge et lave-vaisselle sur minuterie.
+el-tariffs.c2.viz.items.0	Recharge du VE la nuit
+el-tariffs.c2.viz.items.1	Chauffe-eau sur minuterie
+el-tariffs.c2.viz.items.2	Lave-linge à départ différé
+el-tariffs.c2.viz.items.3	Lave-vaisselle la nuit
+el-tariffs.c3.title	Où vont les kWh
+el-tariffs.c3.text	Dans un logement type, le chauffage et l'eau chaude sont les plus gros consommateurs, suivis par la cuisson, la réfrigération, le linge et l'éclairage. Un VE peut facilement doubler la consommation du foyer.
+el-tariffs.c3.viz.unit	% de la consommation du logement (illustratif)
+el-tariffs.c3.viz.items.0.l	Chauffage et clim.
+el-tariffs.c3.viz.items.1.l	Eau chaude
+el-tariffs.c3.viz.items.2.l	Cuisine et frigo
+el-tariffs.c3.viz.items.3.l	Linge
+el-tariffs.c3.viz.items.4.l	Autres
+el-tariffs.c4.title	Le frigo tourne toute l'année
+el-tariffs.c4.text	Un réfrigérateur-congélateur s'enclenche et s'arrête 24 h sur 24. Un modèle moderne et efficace consomme environ 150–250 kWh par an ; un vieux modèle peut consommer deux ou trois fois plus.
+el-tariffs.c4.viz.unit	kWh par an (typique)
+el-tariffs.c4.viz.items.0.l	Réfrigérateur-congélateur neuf classe A
+el-tariffs.c4.viz.items.1.l	Modèle de 10 ans
+el-tariffs.c4.viz.items.2.l	Modèle de 20 ans
+el-tariffs.c5.title	Étiquettes énergie
+el-tariffs.c5.text	Les étiquettes énergie de l'UE classent les appareils de A (meilleur) à G et indiquent la consommation annuelle en kWh. L'échelle a été redéfinie en 2021 : un « C » récent peut donc valoir mieux qu'un ancien « A+++ ».
+el-tariffs.c5.viz.items.0	A : le plus efficace
+el-tariffs.c5.viz.items.1	B–C : bon
+el-tariffs.c5.viz.items.2	D–E : moyen
+el-tariffs.c5.viz.items.3	F–G : le moins efficace
+el-tariffs.c6.title	Éclairage LED
+el-tariffs.c6.text	Les ampoules LED consomment environ 80–90 % d'électricité en moins que les anciennes ampoules à incandescence pour la même lumière, et durent beaucoup plus longtemps. Le flux lumineux se mesure en lumens, pas en watts.
+el-tariffs.c6.viz.unit	watts pour ~800 lumens
+el-tariffs.c6.viz.items.0.l	Incandescence
+el-tariffs.c6.viz.items.1.l	Halogène
+el-tariffs.c6.viz.items.2.l	Fluocompacte
+el-tariffs.c6.viz.items.3.l	LED
+el-tariffs.c7.title	Chauffe-eau
+el-tariffs.c7.text	Un chauffe-eau électrique (termoacumulador) est souvent l'une des plus grosses charges isolées. Une minuterie pour les heures creuses, un réglage plus bas du thermostat (autour de 50–55 °C) et une bonne isolation réduisent les coûts. Les chauffe-eau thermodynamiques consomment environ un tiers de l'énergie.
+el-tariffs.c7.viz.unit	kWh par an (famille de 4, approx.)
+el-tariffs.c7.viz.items.0.l	Résistance électrique
+el-tariffs.c7.viz.items.1.l	Chauffe-eau thermodynamique
+el-tariffs.c8.title	Suivi de la consommation
+el-tariffs.c8.text	Les compteurs intelligents et les moniteurs à pince (par exemple avec Home Assistant) affichent la consommation en temps réel et révèlent les charges en veille et les habitudes coûteuses.
+el-tariffs.c8.viz.steps.0	Pince sur le câble principal
+el-tariffs.c8.viz.steps.1	Moniteur ou Home Assistant
+el-tariffs.c8.viz.steps.2	Voir les watts en direct
+el-tariffs.c8.viz.steps.3	Repérer le gaspillage
+el-tariffs.c9.title	Communautés d'autoconsommation
+el-tariffs.c9.text	Au Portugal, voisins, entreprises et communes peuvent former des communautés d'énergie renouvelable et partager la production solaire via le réseau, en payant des frais de réseau sur l'énergie partagée.
+el-tariffs.c9.viz.steps.0	Solaire sur un toit
+el-tariffs.c9.viz.steps.1	Partagé via le réseau
+el-tariffs.c9.viz.steps.2	Les voisins l'utilisent
+el-tariffs.c9.viz.steps.3	Factures réduites pour les membres
+el-heat.title	Chauffer et cuisiner à l'électricité
+el-heat.summary	Chaleur résistive, pompes à chaleur, fours et plaques.
+el-heat.q0.q	Une pompe à chaleur de SCOP 4 qui consomme 1 000 kWh fournit environ…
+el-heat.q0.o0	1 000 kWh de chaleur
+el-heat.q0.o1	4 000 kWh de chaleur
+el-heat.q0.o2	250 kWh de chaleur
+el-heat.q0.x	Chaleur = SCOP × électricité.
+el-heat.q1.q	Quelle plaque transmet le plus d'énergie à la casserole ?
+el-heat.q1.o0	Le gaz
+el-heat.q1.o1	La vitrocéramique
+el-heat.q1.o2	L'induction
+el-heat.q1.x	L'induction chauffe directement la casserole.
+el-heat.q2.q	Tous les radiateurs électriques résistifs donnent-ils la même chaleur par kWh ?
+el-heat.q2.o0	Oui, 1 kWh consommé donne 1 kWh de chaleur
+el-heat.q2.o1	Non, les radiateurs à bain d'huile en donnent le double
+el-heat.q2.o2	Non, les radiateurs soufflants en donnent la moitié
+el-heat.q2.x	Ils diffèrent par la diffusion, pas par le rendement.
+el-heat.c0.title	Chauffage résistif
+el-heat.c0.text	Les radiateurs, bouilloires, fours et chauffe-eau transforment l'électricité en chaleur par résistance : 1 kWh d'électricité donne 1 kWh de chaleur. C'est un rendement de 100 %, mais cela reste cher comparé à une pompe à chaleur.
+el-heat.c0.viz.steps.0	Courant dans une résistance
+el-heat.c0.viz.steps.1	Chauffe par effet I²R
+el-heat.c0.viz.steps.2	1 kWh consommé = 1 kWh de chaleur
+el-heat.c1.title	Pompes à chaleur : 3 à 4 fois mieux
+el-heat.c1.text	Une pompe à chaleur déplace la chaleur de l'air extérieur (ou du sol) vers la maison. Le rendement saisonnier type (SCOP) est de 3–4 : 1 kWh d'électricité fournit 3–4 kWh de chaleur.
+el-heat.c1.viz.unit	kWh de chaleur par kWh d'électricité
+el-heat.c1.viz.items.0.l	Radiateur résistif
+el-heat.c1.viz.items.1.l	PAC air-air
+el-heat.c1.viz.items.2.l	Géothermique
+el-heat.c2.title	Air-air ou air-eau
+el-heat.c2.text	Les pompes à chaleur air-air sont les climatiseurs split bien connus, qui chauffent aussi. Les modèles air-eau chauffent l'eau pour les radiateurs, le plancher chauffant et les robinets d'eau chaude.
+el-heat.c2.viz.l.t	Air-air
+el-heat.c2.viz.l.items.0	climatiseurs split
+el-heat.c2.viz.l.items.1	chauffe et refroidit
+el-heat.c2.viz.l.items.2	rapide et économique
+el-heat.c2.viz.r.t	Air-eau
+el-heat.c2.viz.r.items.0	radiateurs et plancher chauffant
+el-heat.c2.viz.r.items.1	eau chaude aussi
+el-heat.c2.viz.r.items.2	installation plus lourde
+el-heat.c3.title	Bain d'huile, convecteur ou rayonnant
+el-heat.c3.text	Tous les radiateurs résistifs donnent la même chaleur par kWh. Ils diffèrent par la façon de la diffuser : les radiateurs à bain d'huile sont lents et réguliers, les convecteurs réchauffent vite l'air, les panneaux rayonnants chauffent directement les personnes et les objets.
+el-heat.c3.viz.items.0.a	bain d'huile
+el-heat.c3.viz.items.0.b	lent, régulier, garde la chaleur
+el-heat.c3.viz.items.1.a	convecteur
+el-heat.c3.viz.items.1.b	chauffe vite l'air
+el-heat.c3.viz.items.2.a	panneau rayonnant
+el-heat.c3.viz.items.2.b	vous chauffe directement
+el-heat.c3.viz.items.3.a	radiateur soufflant
+el-heat.c3.viz.items.3.b	rapide, bruyant
+el-heat.c4.title	Bouilloires : ne chauffez que le nécessaire
+el-heat.c4.text	Une bouilloire de 2 kW fait bouillir 1 litre en environ 3 minutes. Faire bouillir une bouilloire pleine pour une seule tasse gaspille de l'énergie et du temps.
+el-heat.c4.viz.f	kWh = litres × 4,19 × ΔT ÷ 3600
+el-heat.c4.viz.items.0.s	1 L
+el-heat.c4.viz.items.0.m	eau
+el-heat.c4.viz.items.1.s	80 °C
+el-heat.c4.viz.items.1.m	élévation de température
+el-heat.c4.viz.items.2.s	≈ 0,093 kWh
+el-heat.c4.viz.items.2.m	énergie
+el-heat.c5.title	Induction, vitrocéramique ou gaz
+el-heat.c5.text	L'induction chauffe directement la casserole et a un rendement d'environ 85–90 %. Les plaques vitrocéramiques (radiantes) tournent autour de 70 %, les brûleurs à gaz autour de 40–55 %. L'induction est aussi plus rapide et plus facile à régler.
+el-heat.c5.viz.unit	% de l'énergie transmise aux aliments (approx.)
+el-heat.c5.viz.items.0.l	Gaz
+el-heat.c5.viz.items.1.l	Vitrocéramique
+el-heat.c5.viz.items.2.l	Induction
+el-heat.c6.title	Fours et friteuses à air chaud
+el-heat.c6.text	Chauffer la cavité d'un grand four demande de l'énergie avant même que la cuisson commence. Les petits appareils comme les friteuses à air chaud et les micro-ondes chauffent un volume moindre et consomment souvent bien moins pour de petites portions.
+el-heat.c6.viz.unit	kWh pour un petit repas (approx.)
+el-heat.c6.viz.items.0.l	Four électrique
+el-heat.c6.viz.items.1.l	Friteuse à air chaud
+el-heat.c6.viz.items.2.l	Micro-ondes
+el-heat.c7.title	Thermostats et minuteries
+el-heat.c7.text	Chaque degré de moins au thermostat économise environ 5–10 % de l'énergie de chauffage. Les minuteries et thermostats intelligents ne chauffent les pièces que lorsqu'elles sont utilisées.
+el-heat.c7.viz.items.0	Baisser de 1 °C ≈ 5–10 % d'économie
+el-heat.c7.viz.items.1	Ne chauffer que les pièces occupées
+el-heat.c7.viz.items.2	Programmer les heures de chauffe
+el-heat.c7.viz.items.3	Fermer les volets la nuit
+el-heat.c8.title	L'isolation d'abord
+el-heat.c8.text	Le kWh le moins cher est celui dont vous n'avez pas besoin. L'isolation du toit et des murs, de meilleures fenêtres et l'étanchéité à l'air réduisent les besoins de chauffage avant même de changer de chauffage.
+el-heat.c8.viz.items.0	Ensuite : pompe à chaleur efficace
+el-heat.c8.viz.items.1	Ensuite : fenêtres et courants d'air
+el-heat.c8.viz.items.2	D'abord : isolation du toit et des murs
+el-heat.c9.title	Les maisons froides du Portugal
+el-heat.c9.text	Malgré un climat doux, de nombreux logements portugais sont mal isolés et froids l'hiver. Le Portugal affiche l'un des taux de précarité énergétique les plus élevés de l'UE, ce qui explique que des programmes d'efficacité subventionnent l'isolation et les pompes à chaleur.
+el-heat.c9.viz.steps.0	Mauvaise isolation
+el-heat.c9.viz.steps.1	Pièces froides et humides
+el-heat.c9.viz.steps.2	Chauffage coûteux
+el-heat.c9.viz.steps.3	Les aides à l'efficacité soutiennent
+el-static.title	Électricité statique et foudre
+el-static.summary	Étincelles, orages et protection contre la foudre.
+el-static.q0.q	Pourquoi êtes-vous en sécurité dans une voiture pendant un orage ?
+el-static.q0.o0	Les pneus en caoutchouc vous isolent
+el-static.q0.o1	La carrosserie métallique conduit le courant autour de vous
+el-static.q0.o2	Les voitures sont trop basses pour être frappées
+el-static.q0.x	Elle fait office de cage de Faraday.
+el-static.q1.q	Les décharges d'électricité statique sont plus fréquentes quand…
+el-static.q1.o0	Il fait humide

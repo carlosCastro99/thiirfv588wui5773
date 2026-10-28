@@ -1145,3 +1145,323 @@ tr-memory.c5.viz.items.2.l	Flash ESP32
 tr-memory.c5.viz.items.3.l	PSRAM
 tr-memory.c6.title	Pile et tas
 tr-memory.c6.text	Les programmes utilisent deux zones de RAM : la pile pour les appels de fonctions et les variables locales, le tas pour la mémoire demandée à l'exécution. Sur de petits appareils, fragmenter le tas avec de nombreuses chaînes peut faire planter le programme au bout de quelques heures.
+tr-memory.c6.viz.l.t	Pile
+tr-memory.c6.viz.l.items.0	automatique
+tr-memory.c6.viz.l.items.1	appels de fonctions
+tr-memory.c6.viz.l.items.2	rapide
+tr-memory.c6.viz.r.t	Tas
+tr-memory.c6.viz.r.items.0	demandé à l'exécution
+tr-memory.c6.viz.r.items.1	peut se fragmenter
+tr-memory.c6.viz.r.items.2	à surveiller sur les petites puces
+tr-memory.c7.title	Hiérarchie de stockage
+tr-memory.c7.text	Les ordinateurs jonglent entre vitesse et taille : registres et caches minuscules et ultra-rapides près du processeur, puis la RAM, puis les SSD, puis les disques durs ou le cloud.
+tr-memory.c7.viz.items.0	Registres
+tr-memory.c7.viz.items.1	Cache du processeur
+tr-memory.c7.viz.items.2	RAM
+tr-memory.c7.viz.items.3	SSD
+tr-memory.c7.viz.items.4	Disque dur et cloud
+tr-memory.c8.title	Cartes SD pour l'enregistrement
+tr-memory.c8.text	Pour l'enregistrement de données à long terme, une carte SD en SPI offre des gigaoctets de stockage. Écrivez par blocs, fermez correctement les fichiers, et attendez-vous à ce que les cartes bon marché finissent par lâcher.
+tr-memory.c8.viz.items.0	Écrire par blocs
+tr-memory.c8.viz.items.1	Vider ou fermer les fichiers
+tr-memory.c8.viz.items.2	Utiliser des cartes de bonne qualité
+tr-memory.c8.viz.items.3	Garder une copie de sauvegarde
+tr-memory.c9.title	Unités de stockage
+tr-memory.c9.text	Un kilooctet vaut 1 000 octets en unités SI, mais les systèmes d'exploitation comptent souvent 1 024 (à proprement parler un kibioctet, Kio). C'est pourquoi un disque de « 1 To » s'affiche à environ 931 Go.
+tr-memory.c9.viz.items.0.a	1 ko
+tr-memory.c9.viz.items.0.b	1 000 octets
+tr-memory.c9.viz.items.1.a	1 Kio
+tr-memory.c9.viz.items.1.b	1 024 octets
+tr-memory.c9.viz.items.2.a	Disque de 1 To
+tr-memory.c9.viz.items.2.b	s'affiche ~931 Gio
+tr-motors.title	Piloter des moteurs
+tr-motors.summary	Ponts en H, servomoteurs et moteurs pas à pas.
+tr-motors.q0.q	Qu'est-ce qui permet à un moteur à courant continu de tourner dans les deux sens ?
+tr-motors.q0.o0	Une diode
+tr-motors.q0.o1	Un pont en H
+tr-motors.q0.o2	Un condensateur
+tr-motors.q0.x	Il inverse le courant avec quatre interrupteurs.
+tr-motors.q1.q	Une impulsion de servo de 1,5 ms signifie généralement…
+tr-motors.q1.o0	0°
+tr-motors.q1.o1	90° (centre)
+tr-motors.q1.o2	180°
+tr-motors.q1.x	De 1 ms à 2 ms correspond à 0–180°.
+tr-motors.q2.q	Pourquoi un ESP32 peut-il redémarrer quand un moteur démarre ?
+tr-motors.q2.o0	Interférences Wi-Fi
+tr-motors.q2.o1	Chutes d'alimentation dues au courant de démarrage du moteur
+tr-motors.q2.o2	Seulement un bogue logiciel
+tr-motors.q2.x	Utilisez une alimentation séparée et des condensateurs.
+tr-motors.c0.title	Ne jamais piloter un moteur depuis une broche
+tr-motors.c0.text	Un petit moteur à courant continu peut appeler des centaines de milliampères, davantage au démarrage, et génère du bruit électrique. Utilisez toujours un driver : un transistor, un MOSFET ou une puce de commande de moteur, plus une diode de roue libre.
+tr-motors.c0.viz.steps.0	Broche GPIO
+tr-motors.c0.viz.steps.1	Driver (MOSFET ou puce)
+tr-motors.c0.viz.steps.2	Moteur avec sa propre alimentation
+tr-motors.c0.viz.steps.3	Masse commune
+tr-motors.c1.title	Pont en H
+tr-motors.c1.text	Un pont en H utilise quatre interrupteurs pour inverser le courant dans un moteur, qui peut ainsi tourner dans les deux sens. Des puces comme le L298N, le DRV8833 ou le TB6612 s'en chargent pour vous.
+tr-motors.c1.viz.l.t	Interrupteurs A et D fermés
+tr-motors.c1.viz.l.items.0	courant dans un sens
+tr-motors.c1.viz.l.items.1	avant
+tr-motors.c1.viz.r.t	Interrupteurs B et C fermés
+tr-motors.c1.viz.r.items.0	courant inversé
+tr-motors.c1.viz.r.items.1	arrière
+tr-motors.c2.title	Vitesse par PWM
+tr-motors.c2.text	Envoyez une PWM au driver du moteur et celui-ci tourne à une vitesse fixée par le rapport cyclique. Des fréquences de plusieurs kHz à plus de 20 kHz évitent les sifflements audibles.
+tr-motors.c2.viz.unit	% de vitesse (approx.)
+tr-motors.c2.viz.items.0.l	25 % de rapport cyclique
+tr-motors.c2.viz.items.1.l	50 % de rapport cyclique
+tr-motors.c2.viz.items.2.l	75 % de rapport cyclique
+tr-motors.c2.viz.items.3.l	100 % de rapport cyclique
+tr-motors.c3.title	Courant de calage
+tr-motors.c3.text	Quand un moteur est bloqué ou démarre, il appelle son courant de calage, souvent 5 à 10 fois le courant en marche. Dimensionnez le driver et l'alimentation en conséquence.
+tr-motors.c3.viz.unit	ampères (exemple de petit moteur)
+tr-motors.c3.viz.items.0.l	En marche
+tr-motors.c3.viz.items.1.l	Au démarrage
+tr-motors.c3.viz.items.2.l	Calé
+tr-motors.c4.title	Servomoteurs
+tr-motors.c4.text	Un servo de loisir réunit moteur, réducteur et capteur de position dans un seul boîtier. Vous envoyez une impulsion toutes les 20 ms ; sa largeur, de 1 à 2 ms, fixe l'angle de 0° à 180°.
+tr-motors.c4.viz.unit	ms
+tr-motors.c5.title	Moteurs pas à pas
+tr-motors.c5.text	Un moteur pas à pas avance par pas fixes, typiquement 200 par tour (1,8° chacun). Des drivers comme l'A4988 ou le TMC2209 reçoivent des impulsions de pas et de direction et peuvent faire du micropas pour un mouvement plus fluide.
+tr-motors.c5.viz.f	pas par mm = (pas/tour × micropas) ÷ mm par tour
+tr-motors.c5.viz.items.0.m	pas/tour
+tr-motors.c5.viz.items.1.m	micropas
+tr-motors.c5.viz.items.2.s	8 mm
+tr-motors.c5.viz.items.2.m	vis mère → 400 pas/mm
+tr-motors.c6.title	Moteurs sans balais
+tr-motors.c6.text	Les moteurs à courant continu sans balais (drones, ventilateurs, vélos électriques) ont besoin d'un contrôleur électronique de vitesse (ESC) qui commute trois phases en séquence. Ils sont efficaces et durables.
+tr-motors.c6.viz.steps.0	Signal du contrôleur
+tr-motors.c6.viz.steps.1	L'ESC commute 3 phases
+tr-motors.c6.viz.steps.2	Champ tournant
+tr-motors.c6.viz.steps.3	Le moteur tourne
+tr-motors.c7.title	Alimentations séparées
+tr-motors.c7.text	Alimentez les moteurs avec leur propre alimentation, pas avec le régulateur 3,3 V du microcontrôleur, et reliez les masses. Ajoutez des condensateurs près du driver du moteur pour absorber les pointes.
+tr-motors.c7.viz.items.0.w	moteur sur la broche 3,3 V de l'ESP32
+tr-motors.c7.viz.items.0.r	alimentation moteur séparée, masse commune
+tr-motors.c7.viz.items.1.w	l'ESP32 redémarre au démarrage du moteur
+tr-motors.c7.viz.items.1.r	ajouter un condensateur de réserve près du driver
+tr-motors.c8.title	Codeurs
+tr-motors.c8.text	Un codeur sur l'arbre du moteur compte les impulsions pendant la rotation, de sorte que le contrôleur connaît la position et la vitesse exactes. Avec un retour d'information, un moteur à courant continu bon marché devient un actionneur précis.
+tr-motors.c8.viz.steps.0	Fixer la cible
+tr-motors.c8.viz.steps.1	Le codeur mesure la position
+tr-motors.c8.viz.steps.2	Le contrôleur corrige
+tr-motors.c8.viz.steps.3	Recommencer
+tr-motors.c9.title	Régulation PID
+tr-motors.c9.text	Un régulateur PID ajuste la sortie selon l'erreur actuelle (P), l'erreur passée cumulée (I) et la vitesse de variation de l'erreur (D). Il stabilise moteurs, chauffages et drones.
+tr-motors.c9.viz.items.0.a	P
+tr-motors.c9.viz.items.0.b	réagir à l'erreur actuelle
+tr-motors.c9.viz.items.1.a	I
+tr-motors.c9.viz.items.1.b	supprimer l'écart permanent
+tr-motors.c9.viz.items.2.a	D
+tr-motors.c9.viz.items.2.b	amortir le dépassement
+tr-power.title	Conception basse consommation
+tr-power.summary	Faire durer une batterie des mois ou des années.
+tr-power.q0.q	Qu'est-ce qui compte le plus pour l'autonomie d'un appareil en veille 99 % du temps ?
+tr-power.q0.o0	Le courant de crête
+tr-power.q0.o1	Le courant de veille et le temps d'éveil
+tr-power.q0.o2	La vitesse du processeur
+tr-power.q0.x	Le courant moyen détermine l'autonomie.
+tr-power.q1.q	Une batterie de 2 000 mAh et un courant moyen de 0,5 mA durent environ…
+tr-power.q1.o0	40 heures
+tr-power.q1.o1	4 000 heures (~5,5 mois)
+tr-power.q1.o2	4 ans
+tr-power.q1.x	2 000 ÷ 0,5 = 4 000 h.
+tr-power.q2.q	Comment réduire l'énergie de chaque réveil Wi-Fi ?
+tr-power.q2.o0	Utiliser le DHCP
+tr-power.q2.o1	Utiliser une IP statique et un canal fixe pour se connecter plus vite
+tr-power.q2.o2	Émettre plus fort
+tr-power.q2.x	Moins de temps éveillé, moins d'énergie.
+tr-power.c0.title	Ce qui compte, c'est le courant moyen
+tr-power.c0.text	Autonomie = capacité ÷ courant moyen. Un appareil qui se réveille 1 seconde toutes les 10 minutes passe 99,8 % de son temps en veille : le courant de veille compte donc énormément.
+tr-power.c0.viz.f	heures = mAh ÷ mA moyen
+tr-power.c0.viz.items.0.s	mAh
+tr-power.c0.viz.items.0.m	capacité de la batterie
+tr-power.c0.viz.items.1.s	mA moyen
+tr-power.c0.viz.items.1.m	sur tout le cycle
+tr-power.c1.title	Courant moyen
+tr-power.c1.text	Pondérez chaque état par sa durée.
+tr-power.c1.example.0	2 s à 120 mA, 598 s à 10 µA, par tranche de 600 s
+tr-power.c1.example.1	(240 + 6) ÷ 600
+tr-power.c1.example.2	≈ 0,41 mA → 3 000 mAh durent ~300 jours
+tr-power.c1.viz.f	I moy = (I éveil × t éveil + I veille × t veille) ÷ t total
+tr-power.c1.viz.items.0.s	éveillé
+tr-power.c1.viz.items.0.m	120 mA pendant 2 s
+tr-power.c1.viz.items.1.s	en veille
+tr-power.c1.viz.items.1.m	0,01 mA pendant 598 s
+tr-power.c2.title	Deep sleep
+tr-power.c2.text	Un ESP32 consomme plus de 100 mA avec le Wi-Fi actif, mais seulement environ 10 µA en deep sleep (sur une carte bien conçue). Une minuterie, une broche ou un capteur peut le réveiller.
+tr-power.c2.viz.unit	mA (ESP32, approx.)
+tr-power.c2.viz.items.0.l	Wi-Fi en émission
+tr-power.c2.viz.items.1.l	Processeur actif
+tr-power.c2.viz.items.2.l	Veille légère
+tr-power.c2.viz.items.3.l	Deep sleep
+tr-power.c3.title	La carte compte
+tr-power.c3.text	Beaucoup de cartes de développement gaspillent de l'énergie : une LED d'alimentation, une puce USB-série et un régulateur peu efficace peuvent consommer plusieurs mA même quand la puce dort. Pour les projets sur batterie, choisissez une carte basse consommation ou retirez la LED.
+tr-power.c3.viz.items.0	Retirer la LED d'alimentation
+tr-power.c3.viz.items.1	Régulateur à faible courant de repos
+tr-power.c3.viz.items.2	Pas de puce USB toujours active
+tr-power.c3.viz.items.3	Alimenter les capteurs seulement pour lire
+tr-power.c4.title	Éteindre les capteurs
+tr-power.c4.text	Les capteurs consomment aussi. Alimentez-les depuis une broche GPIO ou un interrupteur MOSFET, allumez-les juste avant la mesure et éteignez-les ensuite.
+tr-power.c4.viz.steps.0	Se réveiller
+tr-power.c4.viz.steps.1	Alimenter le capteur
+tr-power.c4.viz.steps.2	Lire
+tr-power.c4.viz.steps.3	Le couper
+tr-power.c4.viz.steps.4	Dormir
+tr-power.c5.title	Connexion Wi-Fi rapide
+tr-power.c5.text	Se connecter au Wi-Fi peut prendre plusieurs secondes. Une IP statique, un canal fixe et des identifiants enregistrés peuvent la ramener à moins d'une seconde, ce qui économise beaucoup d'énergie à chaque réveil.
+tr-power.c5.viz.unit	secondes d'éveil (approx.)
+tr-power.c5.viz.items.0.l	DHCP et scan
+tr-power.c5.viz.items.1.l	IP statique
+tr-power.c5.viz.items.2.l	IP statique + canal fixe
+tr-power.c6.title	Choisir la radio
+tr-power.c6.text	Pour des mesures fréquentes sur de longues distances et sur batterie, LoRa ou BLE consomment bien moins d'énergie par message que le Wi-Fi.
+tr-power.c6.viz.unit	énergie relative par message
+tr-power.c6.viz.items.0.l	Wi-Fi
+tr-power.c6.viz.items.1.l	BLE
+tr-power.c6.viz.items.2.l	LoRa (message court)
+tr-power.c7.title	Choix de la chimie de batterie
+tr-power.c7.text	Les cellules Li-ion donnent 3,0–4,2 V et se rechargent ; le LiFePO4 est plus sûr avec 3,2 V nominaux ; le lithium primaire (comme les piles AA au lithium ou le Li-SOCl₂) convient à des années sans recharge par temps froid.
+tr-power.c7.viz.items.0.a	Li-ion 18650
+tr-power.c7.viz.items.0.b	rechargeable, ~3 000 mAh
+tr-power.c7.viz.items.1.a	LiFePO4
+tr-power.c7.viz.items.1.b	plus sûr, 3,2 V
+tr-power.c7.viz.items.2.a	Li-SOCl₂
+tr-power.c7.viz.items.2.b	des années, non rechargeable
+tr-power.c7.viz.items.3.a	alcaline AA
+tr-power.c7.viz.items.3.b	bon marché, faible par temps froid
+tr-power.c8.title	Appoint solaire
+tr-power.c8.text	Un petit panneau solaire et un régulateur de charge peuvent faire fonctionner indéfiniment un capteur isolé. Dimensionnez le panneau pour l'hiver, quand le soleil est le plus faible, avec une marge pour les semaines nuageuses.
+tr-power.c8.viz.steps.0	Petit panneau
+tr-power.c8.viz.steps.1	Régulateur de charge
+tr-power.c8.viz.steps.2	Batterie
+tr-power.c8.viz.steps.3	Capteur endormi
+tr-power.c9.title	Mesurer, ne pas deviner
+tr-power.c9.text	Utilisez un multimètre en série, ou mieux un profileur de consommation, pour mesurer les courants de veille et d'activité. De petites surprises comme une broche flottante ou une résistance de rappel peuvent vider une batterie en quelques semaines.
+tr-power.c9.viz.items.0	Mesurer le courant de veille
+tr-power.c9.viz.items.1	Mesurer la durée d'éveil
+tr-power.c9.viz.items.2	Rechercher les broches flottantes
+tr-power.c9.viz.items.3	Consigner la tension de la batterie dans vos données
+tr-datasheets.title	Lire les fiches techniques et les schémas
+tr-datasheets.summary	Trouver l'essentiel dans 60 pages.
+tr-datasheets.q0.q	Que sont les valeurs maximales absolues ?
+tr-datasheets.q0.o0	Les valeurs de fonctionnement normal
+tr-datasheets.q0.o1	Des limites à ne jamais dépasser
+tr-datasheets.q0.o2	Les valeurs typiques
+tr-datasheets.q0.x	Les dépasser peut endommager le composant.
+tr-datasheets.q1.q	Deux fils étiquetés « SCL » à des endroits différents d'un schéma sont…
+tr-datasheets.q1.o0	Des signaux différents
+tr-datasheets.q1.o1	Reliés
+tr-datasheets.q1.o2	Des erreurs
+tr-datasheets.q1.x	Les étiquettes de réseau relient les points portant le même nom.
+tr-datasheets.q2.q	Faut-il concevoir avec les valeurs typiques ou les pires cas ?
+tr-datasheets.q2.o0	Typiques
+tr-datasheets.q2.o1	Pires cas (min/max)
+tr-datasheets.q2.o2	Ni l'un ni l'autre
+tr-datasheets.q2.x	Les garanties sont les valeurs min et max.
+tr-datasheets.c0.title	Commencer par le résumé
+tr-datasheets.c0.text	La première page énumère les caractéristiques clés : plage d'alimentation, interface, précision, courant. Si le composant ne convient pas à votre projet à ce stade, vous pouvez arrêter de lire.
+tr-datasheets.c0.viz.items.0	Plage de tension d'alimentation
+tr-datasheets.c0.viz.items.1	Interface (I²C, SPI…)
+tr-datasheets.c0.viz.items.2	Précision et plage
+tr-datasheets.c0.viz.items.3	Consommation de courant
+tr-datasheets.c0.viz.items.4	Boîtier
+tr-datasheets.c1.title	Valeurs maximales absolues
+tr-datasheets.c1.text	Ce sont des limites à ne jamais dépasser, même brièvement, sous peine d'endommager le composant. Ce ne sont pas des conditions de fonctionnement normales.
+tr-datasheets.c1.viz.l.t	Maximum absolu
+tr-datasheets.c1.viz.l.items.0	ne jamais dépasser
+tr-datasheets.c1.viz.l.items.1	risque de dommages
+tr-datasheets.c1.viz.r.t	Fonctionnement recommandé
+tr-datasheets.c1.viz.r.items.0	fonctionne comme spécifié
+tr-datasheets.c2.title	Typique, min et max
+tr-datasheets.c2.text	« Typique » est ce que font la plupart des composants ; min et max sont des garanties. Concevez pour le pire cas, pas pour la valeur typique.
+tr-datasheets.c2.viz.unit	exemple : précision ±°C
+tr-datasheets.c2.viz.items.0.l	Typique
+tr-datasheets.c2.viz.items.1.l	Maximum
+tr-datasheets.c3.title	Brochages
+tr-datasheets.c3.text	Le schéma de brochage montre le rôle de chaque broche, vu de dessus (en général). La broche 1 est repérée par un point ou une encoche. Les erreurs ici sont la cause la plus fréquente de cartes mortes.
+tr-datasheets.c3.viz.items.0	Repérer la broche 1
+tr-datasheets.c3.viz.items.1	Vérifier vue de dessus ou de dessous
+tr-datasheets.c3.viz.items.2	Faire correspondre alimentation et masse
+tr-datasheets.c3.viz.items.3	Vérifier chaque nom de signal
+tr-datasheets.c4.title	Circuit d'application
+tr-datasheets.c4.text	La plupart des fiches techniques montrent un circuit d'application typique avec les condensateurs et résistances exacts à utiliser. Copiez-le fidèlement, surtout pour les régulateurs et les radios.
+tr-datasheets.c4.viz.steps.0	Trouver le circuit d'application
+tr-datasheets.c4.viz.steps.1	Copier valeurs et implantation
+tr-datasheets.c4.viz.steps.2	Ne modifier que ce que vous comprenez
+tr-datasheets.c5.title	Symboles de schéma
+tr-datasheets.c5.text	Apprenez les symboles de base : résistance (zigzag ou boîte), condensateur (deux plaques), diode (triangle et barre), transistor, masse et flèches d'alimentation.
+tr-datasheets.c5.viz.items.0.a	zigzag ou boîte
+tr-datasheets.c5.viz.items.0.b	résistance
+tr-datasheets.c5.viz.items.1.a	deux plaques
+tr-datasheets.c5.viz.items.1.b	condensateur
+tr-datasheets.c5.viz.items.2.a	triangle + barre
+tr-datasheets.c5.viz.items.2.b	diode
+tr-datasheets.c5.viz.items.3.b	masse
+tr-datasheets.c5.viz.items.4.a	flèche vers le haut
+tr-datasheets.c5.viz.items.4.b	alimentation
+tr-datasheets.c6.title	Étiquettes de réseau
+tr-datasheets.c6.text	Les grands schémas ne tracent pas chaque fil ; ils donnent des noms aux fils. Deux points étiquetés « SDA » sont reliés même si aucun trait ne les joint.
+tr-datasheets.c6.viz.steps.0	Étiqueter un fil « SDA »
+tr-datasheets.c6.viz.steps.1	Même étiquette ailleurs
+tr-datasheets.c6.viz.steps.2	Ils sont reliés
+tr-datasheets.c7.title	Les courbes disent la vérité
+tr-datasheets.c7.text	Les courbes montrent comment les paramètres varient avec la température, la tension ou la charge. Un capteur précis à 25 °C peut dériver à −10 °C ; un régulateur peut fléchir à fort courant.
+tr-datasheets.c7.viz.items.0	Précision en fonction de la température
+tr-datasheets.c7.viz.items.1	Courant en fonction de la tension
+tr-datasheets.c7.viz.items.2	Rendement en fonction de la charge
+tr-datasheets.c7.viz.items.3	Réponse en fonction de la fréquence
+tr-datasheets.c8.title	Errata
+tr-datasheets.c8.text	Les puces peuvent avoir des bogues connus, publiés dans un document d'errata. Si une fonction se comporte mal malgré un code correct, consultez d'abord l'errata.
+tr-datasheets.c8.viz.steps.0	Comportement étrange
+tr-datasheets.c8.viz.steps.1	Vérifier le câblage
+tr-datasheets.c8.viz.steps.2	Consulter l'errata
+tr-datasheets.c8.viz.steps.3	Contournement ou autre composant
+tr-datasheets.c9.title	Où les trouver
+tr-datasheets.c9.text	Les fiches techniques sont gratuites sur le site du fabricant et chez des distributeurs comme Mouser, DigiKey ou LCSC. Cherchez avec la référence exacte imprimée sur la puce.
+tr-datasheets.c9.viz.items.0	Site du fabricant
+tr-datasheets.c9.viz.items.1	Mouser, DigiKey, LCSC
+tr-datasheets.c9.viz.items.2	Référence exacte
+tr-datasheets.c9.viz.items.3	Dernière révision
+tr-scope.title	Oscilloscopes et débogage
+tr-scope.summary	Voir les signaux et trouver les pannes.
+tr-scope.q0.q	Pourquoi le déclenchement est-il important sur un oscilloscope ?
+tr-scope.q0.o0	Il économise de l'énergie
+tr-scope.q0.o1	Il donne une image stable des signaux répétitifs
+tr-scope.q0.o2	Il mesure le courant
+tr-scope.q0.x	Il synchronise l'affichage.
+tr-scope.q1.q	Qu'a de dangereux la pince de masse d'un oscilloscope ?
+tr-scope.q1.o0	Elle est tranchante
+tr-scope.q1.o1	Elle est reliée à la terre : une mauvaise connexion crée un court-circuit
+tr-scope.q1.o2	Elle inverse la polarité
+tr-scope.q1.x	Utilisez des sondes isolées sur le secteur.
+tr-scope.q2.q	Par où faut-il commencer le débogage ?
+tr-scope.q2.o0	Réécrire le code
+tr-scope.q2.o1	Vérifier les tensions d'alimentation
+tr-scope.q2.o2	Remplacer la puce
+tr-scope.q2.x	Les problèmes d'alimentation causent de nombreux symptômes.
+tr-scope.c0.title	Ce que montre un oscilloscope
+tr-scope.c0.text	Un multimètre donne un seul nombre ; un oscilloscope trace la tension en fonction du temps, de sorte que vous voyez formes d'onde, parasites, bruit et synchronisation.
+tr-scope.c0.viz.l.t	Multimètre
+tr-scope.c0.viz.l.items.0	un seul nombre
+tr-scope.c0.viz.l.items.1	variations lentes
+tr-scope.c0.viz.l.items.2	bon marché
+tr-scope.c0.viz.r.t	Oscilloscope
+tr-scope.c0.viz.r.items.0	tension dans le temps
+tr-scope.c0.viz.r.items.1	événements rapides
+tr-scope.c0.viz.r.items.2	montre la forme
+tr-scope.c1.title	Les deux axes
+tr-scope.c1.text	L'axe vertical est en volts par division ; l'horizontal en temps par division. Réglez les deux jusqu'à ce que le signal remplisse bien l'écran.
+tr-scope.c1.viz.items.0.a	V/div
+tr-scope.c1.viz.items.0.b	échelle verticale
+tr-scope.c1.viz.items.1.a	s/div
+tr-scope.c1.viz.items.1.b	échelle de temps
+tr-scope.c1.viz.items.2.a	déclenchement
+tr-scope.c1.viz.items.2.b	ce qui lance la trace
+tr-scope.c1.viz.items.3.a	sonde ×10
+tr-scope.c1.viz.items.3.b	réglage d'atténuation
+tr-scope.c2.title	Déclenchement
+tr-scope.c2.text	Le déclenchement indique à l'oscilloscope quand commencer à tracer, par exemple quand la tension franchit 1,5 V en montant. Sans lui, un signal répétitif défile et se brouille.
+tr-scope.c2.viz.steps.0	Le signal dépasse le niveau de déclenchement
+tr-scope.c2.viz.steps.1	L'oscilloscope commence à tracer
+tr-scope.c2.viz.steps.2	Image stable à chaque balayage

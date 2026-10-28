@@ -775,9 +775,9 @@ gen-rag.c7.viz.items.2.b	toutes les parties traitées ?
 gen-rag.c7.viz.items.3.a	citations
 gen-rag.c7.viz.items.3.b	références correctes ?
 gen-rag.c8.title	Questions-réponses sur les contrats
-gen-rag.c8.text	Un trader demande : « Quel est le taux de surestaries du contrat 4471 ? » Le RAG récupère la clause pertinente, le modèle répond « 18 000 $ par jour, clause 12.3 » et renvoie vers la page.
+gen-rag.c8.text	Un trader demande : « Quel est le taux de surestaries du contrat 4471 ? » Le RAG récupère la clause pertinente, le modèle répond « 18 000 $ par jour, clause 12,3 » et renvoie vers la page.
 gen-rag.c8.viz.steps.0	Question sur le contrat
-gen-rag.c8.viz.steps.1	Trouver la clause 12.3
+gen-rag.c8.viz.steps.1	Trouver la clause 12,3
 gen-rag.c8.viz.steps.2	Répondre avec le taux
 gen-rag.c8.viz.steps.3	Lien vers la page source
 gen-rag.c9.title	Échecs courants
@@ -1274,9 +1274,9 @@ gen-landscape.c6.viz.items.1	Garder les évaluations prêtes
 gen-landscape.c6.viz.items.2	Versionner les prompts
 gen-landscape.c6.viz.items.3	Éviter l'enfermement si possible
 gen-landscape.c7.title	Les licences comptent
-gen-landscape.c7.text	Les modèles à poids ouverts viennent avec des licences différentes : certaines totalement ouvertes (Apache 2.0, MIT), d'autres avec des restrictions d'usage ou des limites pour les très grandes entreprises. Vérifiez avant tout usage commercial.
+gen-landscape.c7.text	Les modèles à poids ouverts viennent avec des licences différentes : certaines totalement ouvertes (Apache 2,0, MIT), d'autres avec des restrictions d'usage ou des limites pour les très grandes entreprises. Vérifiez avant tout usage commercial.
 gen-landscape.c7.viz.l.t	Permissives
-gen-landscape.c7.viz.l.items.0	Apache 2.0, MIT
+gen-landscape.c7.viz.l.items.0	Apache 2,0, MIT
 gen-landscape.c7.viz.l.items.1	peu de restrictions
 gen-landscape.c7.viz.r.t	Licences spécifiques
 gen-landscape.c7.viz.r.items.0	règles d'usage
@@ -1395,7 +1395,7 @@ gen-local.c9.title	La sécurité compte toujours
 gen-local.c9.text	Local ne veut pas dire automatiquement sûr : les modèles et outils téléchargés sont des logiciels. Utilisez des sources fiables, gardez l'API hors de l'internet public et mettez à jour régulièrement.
 gen-local.c9.viz.items.0	Télécharger de sources fiables
 gen-local.c9.viz.items.1	Ne pas exposer l'API publiquement
-gen-local.c9.viz.items.2	Mettre à jour les outils
+gen-local.c9.viz.items.2	Maj. des outils
 gen-local.c9.viz.items.3	Surveiller disque et mémoire
 gen-cost.title	Coût et vitesse
 gen-cost.summary	Tokens, latence et comment rendre l'IA abordable à grande échelle.
@@ -1469,7 +1469,7 @@ gen-cost.c7.text	Les modèles de raisonnement génèrent de nombreux tokens de �
 gen-cost.c7.viz.l.t	Mode standard
 gen-cost.c7.viz.l.items.0	rapide
 gen-cost.c7.viz.l.items.1	moins cher
-gen-cost.c7.viz.l.items.2	la plupart des tâches
+gen-cost.c7.viz.l.items.2	tâches courantes
 gen-cost.c7.viz.r.t	Mode raisonnement
 gen-cost.c7.viz.r.items.0	réfléchit plus longtemps
 gen-cost.c7.viz.r.items.1	plus coûteux
@@ -1591,7 +1591,7 @@ gen-risks.c0.viz.items.3	Mésusage et fraude
 gen-risks.c1.title	Fuite de données
 gen-risks.c1.text	Coller des données confidentielles dans des outils d'IA grand public peut les envoyer hors de votre organisation. Utilisez des outils d'entreprise approuvés, qui n'entraînent pas leurs modèles sur vos données et respectent vos exigences de sécurité.
 gen-risks.c1.viz.l.t	Outils grand public
-gen-risks.c1.viz.l.items.0	données parfois utilisées pour l'entraînement
+gen-risks.c1.viz.l.items.0	parfois utilisées à l'entraînement
 gen-risks.c1.viz.l.items.1	non encadrés
 gen-risks.c1.viz.r.t	Outils d'entreprise
 gen-risks.c1.viz.r.items.0	protections contractuelles
@@ -1632,7 +1632,7 @@ gen-risks.c6.viz.items.3	Proposer un contact humain
 gen-risks.c7.title	Empreinte environnementale
 gen-risks.c7.text	Entraîner et exécuter de grands modèles consomme beaucoup d'électricité et d'eau de refroidissement. Des modèles efficaces, un bon dimensionnement et une énergie propre réduisent l'empreinte.
 gen-risks.c7.viz.items.0	Petits modèles quand c'est possible
-gen-risks.c7.viz.items.1	Mise en cache et traitement par lots
+gen-risks.c7.viz.items.1	Cache et lots
 gen-risks.c7.viz.items.2	Choisir des régions efficaces
 gen-risks.c7.viz.items.3	Préférer les centres de données renouvelables
 gen-risks.c8.title	Politiques au travail
@@ -1672,7 +1672,7 @@ gen-daily.q2.x	La vérification est essentielle.
 gen-daily.c0.title	Commencez par vos goulots d'étranglement
 gen-daily.c0.text	Listez les tâches qui vous prennent du temps et sont riches en texte : e-mails, rapports, résumés, comptes rendus de réunion, recherches, tableurs. C'est généralement là que l'IA aide en premier.
 gen-daily.c0.viz.items.0	E-mails et réponses
-gen-daily.c0.viz.items.1	Comptes rendus de réunion
+gen-daily.c0.viz.items.1	Notes de réunion
 gen-daily.c0.viz.items.2	Rapports et résumés
 gen-daily.c0.viz.items.3	Recherche
 gen-daily.c0.viz.items.4	Formules et analyses de tableur

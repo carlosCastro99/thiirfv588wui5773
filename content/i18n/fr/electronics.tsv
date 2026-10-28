@@ -546,3 +546,303 @@ tr-psu.c8.viz.items.2.l	USB-C 3 A
 tr-psu.c8.viz.items.3.l	USB-C PD
 tr-psu.c9.title	Chutes de tension
 tr-psu.c9.text	Si l'alimentation tombe sous ce dont une puce a besoin, elle peut mal se comporter ou se réinitialiser. Les ESP32 sont connus pour redémarrer lors des émissions Wi-Fi avec une alimentation faible. Un bon régulateur et un gros condensateur près de la carte règlent le problème.
+tr-psu.c9.viz.items.0.w	l'ESP32 redémarre quand le Wi-Fi démarre
+tr-psu.c9.viz.items.0.r	alimentation 3,3 V plus robuste et condensateur de 470 µF près de la carte
+tr-sensors.title	Capteurs
+tr-sensors.summary	Mesurer la température, la distance, le mouvement et plus encore.
+tr-sensors.q0.q	Un écho ultrasonore revient après 2,9 ms. La distance est d'environ…
+tr-sensors.q0.o0	1 m
+tr-sensors.q0.o1	0,5 m
+tr-sensors.q0.o2	2 m
+tr-sensors.q0.x	0,0029 × 343 ÷ 2 ≈ 0,5 m.
+tr-sensors.q1.q	Pourquoi un capteur PIR peut-il rater quelqu'un d'immobile ?
+tr-sensors.q1.o0	Il fait trop froid
+tr-sensors.q1.o1	Il détecte les variations de chaleur infrarouge dues au mouvement
+tr-sensors.q1.o2	Il ne fonctionne que la nuit
+tr-sensors.q1.x	Le PIR réagit au mouvement.
+tr-sensors.q2.q	Une pince CT mesure…
+tr-sensors.q2.o0	Une tension continue
+tr-sensors.q2.o1	Un courant alternatif sans couper le fil
+tr-sensors.q2.o2	La température
+tr-sensors.q2.x	Elle détecte le champ magnétique.
+tr-sensors.c0.title	Du monde réel aux nombres
+tr-sensors.c0.text	Un capteur transforme une grandeur physique en signal électrique : une tension, une résistance, une durée d'impulsion ou des données numériques. Le microcontrôleur la lit et la convertit en unités réelles.
+tr-sensors.c0.viz.steps.0	Grandeur physique
+tr-sensors.c0.viz.steps.1	Capteur
+tr-sensors.c0.viz.steps.2	Signal électrique
+tr-sensors.c0.viz.steps.3	Le microcontrôleur convertit en unités
+tr-sensors.c1.title	Capteurs de température
+tr-sensors.c1.text	Les thermistances changent de résistance avec la température (bon marché, analogiques). Le DS18B20 envoie des mesures numériques sur un seul fil. Le BME280 ajoute l'humidité et la pression via l'I²C.
+tr-sensors.c1.viz.items.0.a	thermistance
+tr-sensors.c1.viz.items.0.b	analogique, bon marché
+tr-sensors.c1.viz.items.1.a	DS18B20
+tr-sensors.c1.viz.items.1.b	numérique, versions étanches
+tr-sensors.c1.viz.items.2.a	BME280
+tr-sensors.c1.viz.items.2.b	température, humidité, pression
+tr-sensors.c2.title	Distance par ultrasons
+tr-sensors.c2.text	Des capteurs comme le HC-SR04 et le JSN-SR04T étanche émettent une impulsion à 40 kHz et chronométrent l'écho. La distance est la moitié du trajet aller-retour multipliée par la vitesse du son.
+tr-sensors.c2.example.0	écho après 5,8 ms
+tr-sensors.c2.example.1	0,0058 × 343 ÷ 2
+tr-sensors.c2.example.2	≈ 1,0 m
+tr-sensors.c2.viz.f	distance = temps × 343 ÷ 2
+tr-sensors.c2.viz.items.0.s	temps
+tr-sensors.c2.viz.items.0.m	durée de l'écho en s
+tr-sensors.c2.viz.items.1.m	m/s, vitesse du son dans l'air
+tr-sensors.c3.title	Particularités des ultrasons
+tr-sensors.c3.text	La vitesse du son varie avec la température (environ 0,6 m/s par °C) ; ajoutez donc une compensation de température pour la précision. Le JSN-SR04T a une zone aveugle d'environ 20–25 cm et exige un trajet dégagé.
+tr-sensors.c3.viz.items.0	Compenser la température
+tr-sensors.c3.viz.items.1	Respecter la distance minimale
+tr-sensors.c3.viz.items.2	Éviter la mousse et les surfaces inclinées
+tr-sensors.c3.viz.items.3	Moyenner plusieurs mesures
+tr-sensors.c4.title	Détecteurs de mouvement
+tr-sensors.c4.text	Les capteurs PIR détectent la chaleur infrarouge des personnes et animaux en mouvement. Les radars hyperfréquences détectent le mouvement à travers des cloisons minces, et même la respiration ; on les utilise pour la détection de présence.
+tr-sensors.c4.viz.l.t	PIR
+tr-sensors.c4.viz.l.items.0	détecte la chaleur en mouvement
+tr-sensors.c4.viz.l.items.1	bon marché
+tr-sensors.c4.viz.l.items.2	rate les personnes immobiles
+tr-sensors.c4.viz.r.t	Radar mmWave
+tr-sensors.c4.viz.r.items.0	détecte les petits mouvements
+tr-sensors.c4.viz.r.items.1	présence même immobile
+tr-sensors.c4.viz.r.items.2	plus cher
+tr-sensors.c5.title	Capteurs de lumière
+tr-sensors.c5.text	Une photorésistance (LDR) est bon marché et lente ; le BH1750 donne des mesures calibrées en lux via l'I²C. Utile pour les éclairages et stores automatiques.
+tr-sensors.c5.viz.unit	lux (typique)
+tr-sensors.c5.viz.items.0.l	Clair de lune
+tr-sensors.c5.viz.items.1.l	Salon
+tr-sensors.c5.viz.items.2.l	Bureau
+tr-sensors.c5.viz.items.3.l	Jour nuageux
+tr-sensors.c5.viz.items.4.l	Plein soleil
+tr-sensors.c6.title	Capteurs de courant et de puissance
+tr-sensors.c6.text	Une pince à transformateur de courant mesure le courant alternatif sans couper les fils ; des modules comme le PZEM-004T donnent tension, courant, puissance et énergie. Les cartes INA219 mesurent courant et tension continus.
+tr-sensors.c6.viz.items.0.a	Pince CT
+tr-sensors.c6.viz.items.0.b	courant alternatif, non invasif
+tr-sensors.c6.viz.items.1.a	PZEM-004T
+tr-sensors.c6.viz.items.1.b	puissance et énergie secteur
+tr-sensors.c6.viz.items.2.a	INA219
+tr-sensors.c6.viz.items.2.b	courant et tension continus
+tr-sensors.c7.title	Capteurs analogiques ou numériques
+tr-sensors.c7.text	Les capteurs analogiques fournissent une tension que vous lisez avec le CAN ; bruit et calibration sont votre affaire. Les capteurs numériques font la conversion en interne et envoient un nombre par I²C, SPI ou liaison à un fil.
+tr-sensors.c7.viz.l.t	Analogique
+tr-sensors.c7.viz.l.items.0	sortie en tension
+tr-sensors.c7.viz.l.items.1	besoin d'un CAN
+tr-sensors.c7.viz.l.items.2	câblage simple
+tr-sensors.c7.viz.r.t	Numérique
+tr-sensors.c7.viz.r.items.0	envoie des nombres
+tr-sensors.c7.viz.r.items.1	calibré en interne
+tr-sensors.c7.viz.r.items.2	utilise un bus
+tr-sensors.c8.title	Calibration
+tr-sensors.c8.text	Les capteurs bon marché ont des décalages et des dérives. Comparez avec une référence fiable en deux points (par exemple eau glacée et température ambiante) et corrigez par logiciel.
+tr-sensors.c8.viz.steps.0	Mesurer une référence connue
+tr-sensors.c8.viz.steps.1	Noter le décalage
+tr-sensors.c8.viz.steps.2	Corriger par logiciel
+tr-sensors.c8.viz.steps.3	Revérifier plus tard
+tr-sensors.c9.title	Échantillonnage et moyenne
+tr-sensors.c9.text	Prenez plusieurs mesures et faites-en la moyenne, ou utilisez une médiane pour ignorer les valeurs aberrantes. N'échantillonnez pas plus vite que nécessaire : cela gaspille de l'énergie et ajoute du bruit.
+tr-sensors.c9.viz.items.0	La médiane de 5 supprime les pics
+tr-sensors.c9.viz.items.1	La moyenne mobile lisse le bruit
+tr-sensors.c9.viz.items.2	Échantillonner seulement au besoin
+tr-sensors.c9.viz.items.3	Enregistrer les données brutes pendant les tests
+tr-buses.title	Faire dialoguer les puces
+tr-buses.summary	UART, I²C et SPI expliqués.
+tr-buses.q0.q	Quel bus utilise les lignes SDA et SCL ?
+tr-buses.q0.o0	SPI
+tr-buses.q0.o1	I²C
+tr-buses.q0.o2	UART
+tr-buses.q0.x	L'I²C utilise une ligne de données et une d'horloge.
+tr-buses.q1.q	Dans un câblage UART, TX se relie à…
+tr-buses.q1.o0	TX
+tr-buses.q1.o1	RX
+tr-buses.q1.o2	GND seulement
+tr-buses.q1.x	L'émission va vers la réception.
+tr-buses.q2.q	Que choisir pour un câble de 300 m vers un compteur d'énergie ?
+tr-buses.q2.o0	I²C
+tr-buses.q2.o1	SPI
+tr-buses.q2.o2	RS-485
+tr-buses.q2.x	Le RS-485 est différentiel et supporte les longues distances.
+tr-buses.c0.title	Pourquoi des bus ?
+tr-buses.c0.text	Capteurs, écrans et mémoires doivent échanger des données avec le microcontrôleur. Les bus série standard envoient les bits les uns après les autres sur quelques fils.
+tr-buses.c0.viz.root	Bus série
+tr-buses.c0.viz.items.0	UART (2 fils)
+tr-buses.c0.viz.items.1	I²C (2 fils, nombreux périphériques)
+tr-buses.c0.viz.items.2	SPI (4 fils, rapide)
+tr-buses.c0.viz.items.3	1-Wire (1 fil)
+tr-buses.c1.title	UART
+tr-buses.c1.text	L'UART utilise une ligne TX et une ligne RX, croisées entre les appareils (TX vers RX). Les deux côtés doivent s'accorder sur la vitesse, par exemple 9600 ou 115200 bauds. Les modules GPS et les consoles série l'utilisent.
+tr-buses.c1.viz.steps.0	TX de l'appareil A
+tr-buses.c1.viz.steps.1	vers
+tr-buses.c1.viz.steps.2	RX de l'appareil B
+tr-buses.c1.viz.steps.3	et retour
+tr-buses.c2.title	I²C
+tr-buses.c2.text	L'I²C utilise deux lignes, SDA (données) et SCL (horloge), partagées par de nombreux périphériques. Chacun a une adresse, comme 0x76 pour un BME280. Les deux lignes nécessitent des résistances de rappel.
+tr-buses.c2.viz.items.0.a	SDA
+tr-buses.c2.viz.items.0.b	ligne de données
+tr-buses.c2.viz.items.1.a	SCL
+tr-buses.c2.viz.items.1.b	ligne d'horloge
+tr-buses.c2.viz.items.2.a	adresse
+tr-buses.c2.viz.items.2.b	quel périphérique
+tr-buses.c2.viz.items.3.a	rappels
+tr-buses.c2.viz.items.3.b	4,7 kΩ typique
+tr-buses.c3.title	SPI
+tr-buses.c3.text	Le SPI utilise une horloge, une sortie de données, une entrée de données et une ligne de sélection par périphérique. Il est rapide, souvent des dizaines de MHz, d'où son usage pour les écrans, les cartes SD et la mémoire flash.
+tr-buses.c3.viz.items.0.a	SCK
+tr-buses.c3.viz.items.0.b	horloge
+tr-buses.c3.viz.items.1.a	MOSI
+tr-buses.c3.viz.items.1.b	sortie du contrôleur
+tr-buses.c3.viz.items.2.a	MISO
+tr-buses.c3.viz.items.2.b	entrée du contrôleur
+tr-buses.c3.viz.items.3.a	CS
+tr-buses.c3.viz.items.3.b	sélection par périphérique
+tr-buses.c4.title	Choisir un bus
+tr-buses.c4.text	L'I²C pour de nombreux capteurs lents sur deux fils ; le SPI pour la vitesse ; l'UART pour les modules avec leur propre protocole ; le 1-Wire pour de longues chaînes de capteurs de température.
+tr-buses.c4.viz.l.t	I²C
+tr-buses.c4.viz.l.items.0	2 fils
+tr-buses.c4.viz.l.items.1	nombreux périphériques
+tr-buses.c4.viz.l.items.2	jusqu'à ~400 kHz typique
+tr-buses.c4.viz.r.t	SPI
+tr-buses.c4.viz.r.items.0	4 fils ou plus
+tr-buses.c4.viz.r.items.1	un CS par périphérique
+tr-buses.c4.viz.r.items.2	des dizaines de MHz
+tr-buses.c5.title	Conflits d'adresse
+tr-buses.c5.text	Deux périphériques I²C de même adresse ne peuvent pas partager un bus. Beaucoup de cartes ont un cavalier pour changer l'adresse, ou bien vous pouvez utiliser un multiplexeur I²C.
+tr-buses.c5.viz.items.0.w	deux capteurs à 0x76
+tr-buses.c5.viz.items.0.r	passer l'un à 0x77 avec son cavalier d'adresse
+tr-buses.c5.viz.items.1.w	conflit persistant
+tr-buses.c5.viz.items.1.r	ajouter un multiplexeur I²C
+tr-buses.c6.title	Scanner I²C
+tr-buses.c6.text	Quand un périphérique I²C ne répond pas, lancez un programme de scan qui essaie chaque adresse et liste ce qui répond. Pas de réponse signifie généralement un problème de câblage, d'alimentation ou de résistances de rappel manquantes.
+tr-buses.c6.viz.items.0	Vérifier l'alimentation et la masse
+tr-buses.c6.viz.items.1	SDA et SCL inversés ?
+tr-buses.c6.viz.items.2	Résistances de rappel présentes ?
+tr-buses.c6.viz.items.3	Lancer un scan
+tr-buses.c7.title	Longueur de câble
+tr-buses.c7.text	L'I²C a été conçu pour de courtes liaisons sur une même carte ; au-delà d'un mètre environ, il devient peu fiable. Pour de plus longues distances, utilisez le RS-485, le CAN ou un prolongateur de bus différentiel.
+tr-buses.c7.viz.unit	longueur max. typique (m)
+tr-buses.c7.viz.items.0.l	I²C
+tr-buses.c7.viz.items.1.l	SPI
+tr-buses.c7.viz.items.2.l	UART (TTL)
+tr-buses.c7.viz.items.3.l	RS-485
+tr-buses.c8.title	RS-485 et Modbus
+tr-buses.c8.text	Le RS-485 envoie les données sous forme de différence entre deux fils, ce qui rejette le bruit sur de longs câbles. Appareils industriels, compteurs d'énergie et onduleurs solaires parlent souvent Modbus sur RS-485.
+tr-buses.c8.viz.steps.0	UART du microcontrôleur
+tr-buses.c8.viz.steps.1	Transcepteur RS-485
+tr-buses.c8.viz.steps.2	Paire torsadée jusqu'à 1,2 km
+tr-buses.c8.viz.steps.3	Compteur ou onduleur
+tr-buses.c9.title	Analyseurs logiques
+tr-buses.c9.text	Un analyseur logique USB bon marché enregistre les bits d'un bus et les décode en octets lisibles, montrant exactement ce qui est envoyé. C'est le moyen le plus rapide de déboguer un capteur récalcitrant.
+tr-buses.c9.viz.steps.0	Pincer SDA et SCL
+tr-buses.c9.viz.steps.1	Enregistrer
+tr-buses.c9.viz.steps.2	Décoder l'I²C
+tr-buses.c9.viz.steps.3	Voir adresses et octets
+tr-wireless.title	Liaisons sans fil
+tr-wireless.summary	Comparaison du Wi-Fi, du Bluetooth, de Zigbee et de LoRa.
+tr-wireless.q0.q	Que choisir pour un capteur sur batterie qui envoie une mesure toutes les 10 minutes à 5 km de distance ?
+tr-wireless.q0.o0	Wi-Fi
+tr-wireless.q0.o1	Bluetooth
+tr-wireless.q0.o2	LoRa
+tr-wireless.q0.x	LoRa offre une longue portée pour une très faible consommation.
+tr-wireless.q1.q	Dans un réseau maillé Zigbee, qu'est-ce qui étend la portée ?
+tr-wireless.q1.o0	Des batteries plus grosses
+tr-wireless.q1.o1	Des appareils alimentés par le secteur qui relaient les messages
+tr-wireless.q1.o2	Des fréquences plus élevées
+tr-wireless.q1.x	Chaque routeur relaie les paquets.
+tr-wireless.q2.q	Quelle fréquence LoRa utilise-t-il en Europe ?
+tr-wireless.q2.o0	2,4 GHz
+tr-wireless.q2.o1	868 MHz
+tr-wireless.q2.o2	5 GHz
+tr-wireless.q2.x	La bande européenne est de 868 MHz.
+tr-wireless.c0.title	Le triangle des compromis
+tr-wireless.c0.text	Chaque technologie sans fil équilibre portée, débit et consommation. On ne peut pas maximiser les trois : longue portée et faible consommation signifient très peu de données.
+tr-wireless.c0.viz.l.t	Haut débit
+tr-wireless.c0.viz.l.items.0	Wi-Fi
+tr-wireless.c0.viz.l.items.1	vidéo et fichiers
+tr-wireless.c0.viz.l.items.2	gourmand en énergie
+tr-wireless.c0.viz.r.t	Longue portée, faible consommation
+tr-wireless.c0.viz.r.items.0	LoRa
+tr-wireless.c0.viz.r.items.1	messages minuscules
+tr-wireless.c0.viz.r.items.2	des années sur une batterie
+tr-wireless.c1.title	Wi-Fi
+tr-wireless.c1.text	Le Wi-Fi offre un haut débit et se connecte directement à votre réseau et à Internet, mais consomme beaucoup. Convient aux appareils sur secteur comme les caméras et les prises connectées.
+tr-wireless.c1.viz.items.0.v	2,4 GHz
+tr-wireless.c1.viz.items.0.l	portée
+tr-wireless.c1.viz.items.1.v	5 GHz
+tr-wireless.c1.viz.items.1.l	vitesse
+tr-wireless.c1.viz.items.2.v	~100–250 mA
+tr-wireless.c1.viz.items.2.l	ESP32 en émission
+tr-wireless.c2.title	Bluetooth Low Energy
+tr-wireless.c2.text	Le BLE envoie de petites quantités de données sur de courtes distances avec très peu d'énergie. Bracelets de sport, capteurs et balises l'utilisent, fonctionnant souvent un an ou plus sur une pile bouton.
+tr-wireless.c2.viz.items.0.a	portée
+tr-wireless.c2.viz.items.0.b	~10–50 m en intérieur
+tr-wireless.c2.viz.items.1.a	énergie
+tr-wireless.c2.viz.items.1.b	pile bouton pour des mois
+tr-wireless.c2.viz.items.2.a	données
+tr-wireless.c2.viz.items.2.b	petits paquets
+tr-wireless.c3.title	Zigbee et Thread
+tr-wireless.c3.text	Des réseaux maillés pour la maison connectée : chaque appareil sur secteur relaie les messages et étend la portée. Ils nécessitent une passerelle ou un coordinateur, et les capteurs sur pile durent des années.
+tr-wireless.c3.viz.steps.0	Capteur sur pile
+tr-wireless.c3.viz.steps.1	L'appareil secteur le plus proche relaie
+tr-wireless.c3.viz.steps.2	Sauts dans le maillage
+tr-wireless.c3.viz.steps.3	Passerelle ou coordinateur
+tr-wireless.c4.title	LoRa
+tr-wireless.c4.text	LoRa utilise un signal spécial en « chirp » pour atteindre plusieurs kilomètres avec une puissance minuscule. Les débits ne sont que de quelques centaines de bits à quelques kilobits par seconde : parfait pour des mesures occasionnelles de capteurs sur des sites isolés.
+tr-wireless.c4.viz.unit	portée typique (km, terrain dégagé)
+tr-wireless.c4.viz.items.0.l	Wi-Fi
+tr-wireless.c4.viz.items.1.l	BLE
+tr-wireless.c4.viz.items.2.l	Zigbee
+tr-wireless.c4.viz.items.3.l	LoRa
+tr-wireless.c5.title	LoRa et LoRaWAN
+tr-wireless.c5.text	LoRa est la radio. LoRaWAN est un protocole de réseau avec passerelles et serveurs, comme The Things Network. Un LoRa point à point entre deux cartes ne nécessite aucun réseau.
+tr-wireless.c5.viz.l.t	LoRa point à point
+tr-wireless.c5.viz.l.items.0	deux cartes dialoguent directement
+tr-wireless.c5.viz.l.items.1	simple
+tr-wireless.c5.viz.l.items.2	aucun réseau
+tr-wireless.c5.viz.r.t	LoRaWAN
+tr-wireless.c5.viz.r.items.0	passerelles et serveurs
+tr-wireless.c5.viz.r.items.1	nombreux appareils
+tr-wireless.c5.viz.r.items.2	réseaux partagés
+tr-wireless.c6.title	Fréquences en Europe
+tr-wireless.c6.text	En Europe, LoRa utilise la bande libre de licence de 868 MHz, avec des limites de taux d'occupation (souvent 1 %) : chaque appareil ne peut émettre qu'une petite part du temps.
+tr-wireless.c6.viz.items.0.v	868 MHz
+tr-wireless.c6.viz.items.0.l	bande LoRa UE
+tr-wireless.c6.viz.items.1.l	limite de taux d'occupation typique
+tr-wireless.c6.viz.items.2.v	25 mW
+tr-wireless.c6.viz.items.2.l	puissance max. typique
+tr-wireless.c7.title	Les antennes comptent
+tr-wireless.c7.text	Une bonne antenne, placée en hauteur et loin des métaux, double souvent la portée à moindre coût que plus de puissance. N'émettez jamais sans antenne branchée : cela peut endommager la radio.
+tr-wireless.c7.viz.items.0	La placer en hauteur
+tr-wireless.c7.viz.items.1	L'éloigner des métaux
+tr-wireless.c7.viz.items.2	Adapter à la bande de fréquences
+tr-wireless.c7.viz.items.3	Ne jamais émettre sans antenne
+tr-wireless.c8.title	Ligne de vue
+tr-wireless.c8.text	Les ondes radio à ces fréquences sont bloquées par les collines, les bâtiments et l'eau. À la campagne, surélever l'antenne de quelques mètres peut transformer une absence de signal en liaison solide.
+tr-wireless.c8.viz.steps.0	Antenne sur un muret
+tr-wireless.c8.viz.steps.1	Une colline bloque le chemin
+tr-wireless.c8.viz.steps.2	Antenne surélevée sur un mât
+tr-wireless.c8.viz.steps.3	Ligne de vue dégagée
+tr-wireless.c9.title	IoT cellulaire
+tr-wireless.c9.text	Là où il n'y a ni Wi-Fi ni passerelle, les modules LTE-M et NB-IoT envoient de petites quantités de données par le réseau mobile avec peu d'énergie, moyennant un abonnement SIM mensuel.
+tr-wireless.c9.viz.items.0.a	LTE-M
+tr-wireless.c9.viz.items.0.b	mobile, débit modéré
+tr-wireless.c9.viz.items.1.a	NB-IoT
+tr-wireless.c9.viz.items.1.b	couverture profonde, données minuscules
+tr-wireless.c9.viz.items.2.a	SIM
+tr-wireless.c9.viz.items.2.b	coût mensuel
+tr-esphome.title	ESP32 et ESPHome
+tr-esphome.summary	Construire des appareils domotiques sans écrire beaucoup de code.
+tr-esphome.q0.q	Qu'utilise ESPHome pour décrire un appareil ?
+tr-esphome.q0.o0	Un tableur
+tr-esphome.q0.o1	Un fichier de configuration YAML
+tr-esphome.q0.o2	Une photographie
+tr-esphome.q0.x	On déclare les composants en YAML.
+tr-esphome.q1.q	Pourquoi éviter les broches ADC2 pour les mesures analogiques sur un ESP32 ?
+tr-esphome.q1.o0	Elles sont uniquement numériques
+tr-esphome.q1.o1	Elles ne peuvent pas être lues quand le Wi-Fi est actif
+tr-esphome.q1.o2	Elles sont en 5 V
+tr-esphome.q1.x	Le Wi-Fi utilise l'ADC2 en interne.
+tr-esphome.q2.q	Qu'apporte le deep sleep à un appareil sur batterie ?
+tr-esphome.q2.o0	Un Wi-Fi plus rapide
+tr-esphome.q2.o1	Une consommation de l'ordre du microampère entre les mesures
+tr-esphome.q2.o2	Plus de broches GPIO
+tr-esphome.q2.x	La puce s'éteint presque entièrement.
+tr-esphome.c0.title	L'ESP32
+tr-esphome.c0.text	Un microcontrôleur bon marché avec Wi-Fi et Bluetooth intégrés, deux cœurs jusqu'à 240 MHz et des dizaines de broches GPIO. C'est le cœur d'innombrables appareils domotiques faits maison.
+tr-esphome.c0.viz.items.0.v	240 MHz

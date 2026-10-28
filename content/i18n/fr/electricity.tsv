@@ -548,3 +548,303 @@ el-grid.c6.viz.steps.2	France
 el-grid.c6.viz.steps.3	Reste de l'Europe
 el-grid.c7.title	La panne géante d'avril 2025
 el-grid.c7.text	Le 28 avril 2025, une perte soudaine de production a déclenché une cascade qui a plongé presque toute l'Espagne continentale et le Portugal dans le noir pendant de longues heures. Redémarrer un réseau à partir de zéro (« black start ») est lent et délicat.
+el-grid.c7.viz.events.0.l	brusques anomalies de tension et de fréquence
+el-grid.c7.viz.events.1.y	minutes
+el-grid.c7.viz.events.1.l	une cascade déconnecte des centrales
+el-grid.c7.viz.events.2.y	soir
+el-grid.c7.viz.events.2.l	courant rétabli progressivement
+el-grid.c7.viz.events.3.y	lendemain
+el-grid.c7.viz.events.3.l	l'essentiel de l'alimentation revient
+el-grid.c8.title	Le stockage sur le réseau
+el-grid.c8.text	Le pompage-turbinage stocke de l'énergie en pompant de l'eau vers le haut quand l'électricité est bon marché, puis en la relâchant dans des turbines au besoin. De grandes batteries réagissent désormais en quelques millisecondes pour stabiliser la fréquence.
+el-grid.c8.viz.l.t	Pompage-turbinage
+el-grid.c8.viz.l.items.0	énorme capacité
+el-grid.c8.viz.l.items.1	d'heures à jours
+el-grid.c8.viz.l.items.2	il faut des montagnes
+el-grid.c8.viz.r.t	Batteries
+el-grid.c8.viz.r.items.0	réponse rapide
+el-grid.c8.viz.r.items.1	de minutes à heures
+el-grid.c8.viz.r.items.2	n'importe où
+el-grid.c9.title	Réseaux intelligents
+el-grid.c9.text	Compteurs intelligents, capteurs et automatisation permettent au réseau de voir en temps réel où circule l'électricité, d'intégrer le solaire en toiture et les véhicules électriques, et de contourner automatiquement les défauts.
+el-grid.c9.viz.items.0	Compteurs intelligents
+el-grid.c9.viz.items.1	Isolement automatique des défauts
+el-grid.c9.viz.items.2	Intégration du solaire en toiture
+el-grid.c9.viz.items.3	Recharge intelligente des VE
+el-grid.c9.viz.items.4	Effacement de la demande
+el-batteries.title	Batteries
+el-batteries.summary	Chimie, capacité et comment les faire durer.
+el-batteries.q0.q	Une batterie de 12 V et 50 Ah stocke environ…
+el-batteries.q0.o0	50 Wh
+el-batteries.q0.o1	600 Wh
+el-batteries.q0.o2	4 Wh
+el-batteries.q0.x	12 × 50 = 600 Wh.
+el-batteries.q1.q	Une charge à 0,5C prend environ…
+el-batteries.q1.o0	30 minutes
+el-batteries.q1.o1	2 heures
+el-batteries.q1.o2	5 heures
+el-batteries.q1.x	1 ÷ 0,5 = 2 heures.
+el-batteries.q2.q	Qu'est-ce qui accélère le plus le vieillissement d'une batterie ?
+el-batteries.q2.o0	Un stockage au froid à 50 %
+el-batteries.q2.o1	La chaleur et de longues périodes à 100 %
+el-batteries.q2.o2	Une utilisation douce
+el-batteries.q2.x	La chaleur et les états de charge élevés la sollicitent davantage.
+el-batteries.c0.title	Comment fonctionne une batterie
+el-batteries.c0.text	Une batterie possède deux électrodes séparées par un électrolyte. Une réaction chimique pousse des électrons hors d'une électrode, à travers votre circuit, puis dans l'autre. La recharge inverse la réaction.
+el-batteries.c0.viz.steps.0	Réaction chimique à l'anode
+el-batteries.c0.viz.steps.1	Les électrons traversent votre appareil
+el-batteries.c0.viz.steps.2	Les ions traversent l'électrolyte
+el-batteries.c0.viz.steps.3	Retour à la cathode
+el-batteries.c1.title	Capacité : Ah et Wh
+el-batteries.c1.text	Les ampères-heures (Ah) indiquent la charge qu'une batterie contient. Multipliez par la tension pour obtenir l'énergie en wattheures (Wh), ce qui compte vraiment pour comparer des batteries.
+el-batteries.c1.example.0	Batterie de 100 Ah sous 12 V
+el-batteries.c1.example.1	100 × 12
+el-batteries.c1.example.2	= 1 200 Wh = 1,2 kWh
+el-batteries.c1.viz.f	Wh = Ah × V
+el-batteries.c1.viz.items.0.s	Ah
+el-batteries.c1.viz.items.0.m	capacité
+el-batteries.c1.viz.items.1.s	V
+el-batteries.c1.viz.items.1.m	tension nominale
+el-batteries.c2.title	Chimies de batteries
+el-batteries.c2.text	Le plomb-acide est bon marché et lourd (batteries de démarrage de voiture). Le lithium-ion concentre beaucoup plus d'énergie par kilo (téléphones, ordinateurs portables, VE). Le LFP, une variante lithium fer phosphate, sacrifie un peu de densité d'énergie au profit de la sécurité et de la longévité.
+el-batteries.c2.viz.unit	Wh par kg (cellule type)
+el-batteries.c2.viz.items.0.l	Plomb-acide
+el-batteries.c2.viz.items.1.l	NiMH
+el-batteries.c2.viz.items.2.l	LFP
+el-batteries.c2.viz.items.3.l	Lithium-ion NMC
+el-batteries.c3.title	Taux C
+el-batteries.c3.text	Le taux C compare le courant de charge ou de décharge à la capacité. 1C charge ou vide complètement une batterie en environ une heure ; 0,5C en deux heures ; 3C en 20 minutes. Des taux C élevés produisent de la chaleur et de l'usure.
+el-batteries.c3.viz.f	durée ≈ 1 ÷ taux C (heures)
+el-batteries.c3.viz.items.0.s	1C
+el-batteries.c3.viz.items.0.m	1 heure
+el-batteries.c3.viz.items.1.s	0,5C
+el-batteries.c3.viz.items.1.m	2 heures
+el-batteries.c3.viz.items.2.s	2C
+el-batteries.c3.viz.items.2.m	30 minutes
+el-batteries.c4.title	État de charge et cycles
+el-batteries.c4.text	Les batteries au lithium durent plus longtemps si on les tient éloignées de 0 % et de 100 % pendant de longues périodes. De nombreux VE recommandent de charger à 80 % pour l'usage quotidien et à 100 % seulement avant les longs trajets.
+el-batteries.c4.viz.items.0.l	éviter de la laisser vide
+el-batteries.c4.viz.items.1.l	zone idéale au quotidien
+el-batteries.c4.viz.items.2.l	limite quotidienne
+el-batteries.c4.viz.items.3.l	pleine pour les trajets
+el-batteries.c5.title	Pourquoi les batteries vieillissent
+el-batteries.c5.text	Chaque cycle provoque de minuscules changements chimiques qui réduisent lentement la capacité. La chaleur accélère beaucoup ce processus. Les niveaux de charge élevés et la recharge très rapide la sollicitent aussi.
+el-batteries.c5.viz.items.0	Chaleur
+el-batteries.c5.viz.items.1	Longues périodes à 100 %
+el-batteries.c5.viz.items.2	Décharges profondes
+el-batteries.c5.viz.items.3	Recharges très rapides fréquentes
+el-batteries.c6.title	Durée de vie en cycles
+el-batteries.c6.text	Les cellules LFP peuvent souvent supporter plusieurs milliers de cycles complets avant de tomber à 80 % de capacité, ce qui explique leur popularité pour le stockage domestique. Les cellules NMC classiques en supportent moins, mais stockent plus d'énergie par kilo.
+el-batteries.c6.viz.unit	cycles types jusqu'à 80 %
+el-batteries.c6.viz.items.0.l	Plomb-acide
+el-batteries.c6.viz.items.1.l	NMC
+el-batteries.c6.viz.items.2.l	LFP
+el-batteries.c7.title	Systèmes de gestion de batterie
+el-batteries.c7.text	Un BMS surveille la tension et la température de chaque cellule, les équilibre, limite le courant et déconnecte la batterie en cas de problème. Une batterie au lithium ne doit jamais être utilisée sans lui.
+el-batteries.c7.viz.items.0	Surveille la tension des cellules
+el-batteries.c7.viz.items.1	Équilibre les cellules
+el-batteries.c7.viz.items.2	Surveille la température
+el-batteries.c7.viz.items.3	Limite le courant
+el-batteries.c7.viz.items.4	Coupe en cas de défaut
+el-batteries.c8.title	Emballement thermique
+el-batteries.c8.text	Si une cellule au lithium est endommagée, surchargée ou surchauffée, elle peut déclencher une réaction qui s'auto-échauffe et se propage aux cellules voisines. Ces incendies sont difficiles à éteindre et peuvent repartir.
+el-batteries.c8.viz.steps.0	Dommage ou surchauffe
+el-batteries.c8.viz.steps.1	Court-circuit interne
+el-batteries.c8.viz.steps.2	La cellule s'échauffe seule
+el-batteries.c8.viz.steps.3	Se propage aux voisines
+el-batteries.c9.title	Batteries en série et en parallèle
+el-batteries.c9.text	Des cellules en série additionnent la tension ; des cellules en parallèle additionnent la capacité. Une batterie de VE peut combiner une centaine de groupes en série pour atteindre environ 400 V.
+el-batteries.c9.viz.l.t	Série
+el-batteries.c9.viz.l.items.0	les tensions s'additionnent
+el-batteries.c9.viz.l.items.1	4 × 3,7 V = 14,8 V
+el-batteries.c9.viz.l.items.2	mêmes Ah
+el-batteries.c9.viz.r.t	Parallèle
+el-batteries.c9.viz.r.items.0	les capacités s'additionnent
+el-batteries.c9.viz.r.items.1	même tension
+el-batteries.c9.viz.r.items.2	4 × 5 Ah = 20 Ah
+el-solar.title	Énergie solaire
+el-solar.summary	Comment les panneaux transforment la lumière du soleil en électricité.
+el-solar.q0.q	Que signifie « Wc » ?
+el-solar.q0.o0	Watts par panneau
+el-solar.q0.o1	Watt-crête, la puissance dans les conditions d'essai standard
+el-solar.q0.o2	Puissance hebdomadaire
+el-solar.q0.x	Mesuré à 1 000 W/m² et 25 °C.
+el-solar.q1.q	Vers où orienter les panneaux au Portugal pour obtenir le maximum d'énergie sur l'année ?
+el-solar.q1.o0	Le nord
+el-solar.q1.o1	Le sud
+el-solar.q1.o2	L'est
+el-solar.q1.x	Le soleil traverse le ciel du sud.
+el-solar.q2.q	Pourquoi les panneaux chauds produisent-ils moins ?
+el-solar.q2.o0	La poussière fond
+el-solar.q2.o1	Les cellules en silicium perdent en rendement quand la température monte
+el-solar.q2.o2	Les onduleurs s'éteignent
+el-solar.q2.x	Environ 0,35 % par °C au-dessus de 25 °C.
+el-solar.c0.title	L'effet photovoltaïque
+el-solar.c0.text	Une cellule solaire est une fine tranche de silicium composée de deux couches traitées différemment. La lumière arrache des électrons, et la jonction entre les couches les pousse dans un sens : un courant continu.
+el-solar.c0.viz.steps.0	La lumière frappe le silicium
+el-solar.c0.viz.steps.1	Des électrons sont arrachés
+el-solar.c0.viz.steps.2	La jonction les pousse dans un sens
+el-solar.c0.viz.steps.3	Courant continu
+el-solar.c1.title	Cellules, panneaux, chaînes
+el-solar.c1.text	Une cellule produit environ 0,5–0,6 V. Des dizaines de cellules en série forment un panneau ; plusieurs panneaux en série forment une chaîne de quelques centaines de volts, qui alimente un onduleur.
+el-solar.c1.viz.steps.0	Cellule ≈ 0,6 V
+el-solar.c1.viz.steps.1	Panneau ≈ 40 V
+el-solar.c1.viz.steps.2	Chaîne de 10 ≈ 400 V
+el-solar.c1.viz.steps.3	Onduleur
+el-solar.c2.title	Watt-crête
+el-solar.c2.text	Les panneaux sont caractérisés en watt-crête (Wc) : la puissance dans les conditions d'essai standard de 1 000 W/m² d'ensoleillement à 25 °C. La production réelle est généralement plus faible à cause de la chaleur, de l'angle et de la poussière.
+el-solar.c2.viz.items.0.v	1 000 W/m²
+el-solar.c2.viz.items.0.l	soleil d'essai
+el-solar.c2.viz.items.1.v	25 °C
+el-solar.c2.viz.items.1.l	température de cellule
+el-solar.c2.viz.items.2.v	400–450 Wc
+el-solar.c2.viz.items.2.l	panneau moderne type
+el-solar.c3.title	Combien produira-t-il ?
+el-solar.c3.text	Au Portugal, chaque kWc de panneaux bien orientés produit en général environ 1 400–1 700 kWh par an, parmi les meilleurs résultats d'Europe.
+el-solar.c3.example.0	Installation de 4 kWc dans le nord du Portugal (≈1 400)
+el-solar.c3.example.1	4 × 1 400
+el-solar.c3.example.2	≈ 5 600 kWh par an
+el-solar.c3.viz.f	kWh/an ≈ kWc × rendement
+el-solar.c3.viz.items.0.s	kWc
+el-solar.c3.viz.items.0.m	puissance installée
+el-solar.c3.viz.items.1.s	rendement
+el-solar.c3.viz.items.1.m	≈ 1 500 kWh par kWc (Portugal)
+el-solar.c4.title	Orientation et inclinaison
+el-solar.c4.text	Au Portugal, des panneaux orientés au sud avec une inclinaison d'environ 30–35° donnent le plus d'énergie sur l'année. Une disposition est-ouest produit moins au total, mais répartit la production sur la journée.
+el-solar.c4.viz.unit	% du meilleur rendement (approx.)
+el-solar.c4.viz.items.0.l	Sud 30°
+el-solar.c4.viz.items.1.l	Sud-est
+el-solar.c4.viz.items.2.l	Est ou ouest
+el-solar.c4.viz.items.3.l	À plat
+el-solar.c5.title	L'ombre compte
+el-solar.c5.text	Une petite ombre sur une seule cellule peut réduire la production de toute une chaîne, car les cellules en série sont traversées par le même courant. Les diodes de dérivation et les optimiseurs limitent les dégâts.
+el-solar.c5.viz.steps.0	Ombre sur une cellule
+el-solar.c5.viz.steps.1	Limite le courant de la chaîne
+el-solar.c5.viz.steps.2	Toute la chaîne chute
+el-solar.c5.viz.steps.3	Optimiseurs ou diodes de dérivation aident
+el-solar.c6.title	La chaleur réduit la production
+el-solar.c6.text	Les cellules en silicium perdent environ 0,3–0,4 % de leur production par °C au-dessus de 25 °C. Sur un toit chaud en été, les cellules peuvent atteindre 60 °C et perdre plus de 10 %.
+el-solar.c6.example.0	Cellules à 60 °C
+el-solar.c6.example.1	0,35 % × 35
+el-solar.c6.example.2	≈ 12 % de production en moins
+el-solar.c6.viz.f	perte ≈ 0,35 % × (T − 25 °C)
+el-solar.c6.viz.items.0.s	T
+el-solar.c6.viz.items.0.m	température de cellule
+el-solar.c7.title	Autoconsommation
+el-solar.c7.text	L'électricité solaire a le plus de valeur quand vous l'utilisez au moment où elle est produite, car l'électricité exportée rapporte moins que l'électricité importée ne coûte. Lancez le lave-vaisselle, chauffez l'eau ou rechargez la voiture à midi.
+el-solar.c7.viz.items.0	Décaler les appareils à midi
+el-solar.c7.viz.items.1	Chauffer l'eau avec le surplus
+el-solar.c7.viz.items.2	Recharger le VE au soleil
+el-solar.c7.viz.items.3	Ajouter une batterie pour le soir
+el-solar.c8.title	Onduleurs
+el-solar.c8.text	Les onduleurs de chaîne convertissent le courant continu des panneaux en courant alternatif pour la maison. Les onduleurs hybrides peuvent aussi charger et décharger une batterie. Les micro-onduleurs se placent derrière chaque panneau.
+el-solar.c8.viz.l.t	Onduleur de chaîne
+el-solar.c8.viz.l.items.0	un seul boîtier
+el-solar.c8.viz.l.items.1	le moins cher
+el-solar.c8.viz.l.items.2	l'ombre affecte la chaîne
+el-solar.c8.viz.r.t	Micro-onduleurs
+el-solar.c8.viz.r.items.0	un par panneau
+el-solar.c8.viz.r.items.1	gère l'ombre
+el-solar.c8.viz.r.items.2	plus de pièces
+el-solar.c9.title	Retour sur investissement
+el-solar.c9.text	Dans un Portugal ensoleillé, une installation domestique se rentabilise souvent en 5–8 ans environ, selon le prix, l'autoconsommation et les tarifs. Les panneaux sont généralement garantis 25 ans pour leurs performances.
+el-solar.c9.viz.items.0.v	5–8 ans
+el-solar.c9.viz.items.0.l	retour typique (PT)
+el-solar.c9.viz.items.1.v	25 ans
+el-solar.c9.viz.items.1.l	garantie type des panneaux
+el-cables.title	Choisir ses câbles
+el-cables.summary	Sections, chute de tension et pourquoi la taille compte.
+el-cables.q0.q	Quelle couleur de fil correspond à la terre de protection en Europe ?
+el-cables.q0.o0	Bleu
+el-cables.q0.o1	Marron
+el-cables.q0.o2	Vert et jaune
+el-cables.q0.x	Marron phase, bleu neutre, vert-jaune terre.
+el-cables.q1.q	Un circuit de prises en 2,5 mm² fait sans cesse déclencher son disjoncteur de 16 A. Que faire ?
+el-cables.q1.o0	Installer un disjoncteur de 32 A
+el-cables.q1.o1	Trouver la surcharge ou scinder le circuit
+el-cables.q1.o2	Retirer le disjoncteur
+el-cables.q1.x	Le disjoncteur protège le câble.
+el-cables.q2.q	Pourquoi faut-il dérouler complètement un enrouleur pour les fortes charges ?
+el-cables.q2.o0	C'est plus ordonné
+el-cables.q2.o1	Un câble enroulé n'évacue pas la chaleur et peut fondre
+el-cables.q2.o2	Cela change la tension
+el-cables.q2.x	L'enroulement emprisonne la chaleur.
+el-cables.c0.title	Les câbles chauffent
+el-cables.c0.text	Tout câble a une certaine résistance, donc le courant l'échauffe (I² × R). Un câble trop petit pour le courant surchauffe, abîme son isolant et peut provoquer un incendie.
+el-cables.c0.viz.steps.0	Trop de courant
+el-cables.c0.viz.steps.1	Le câble chauffe
+el-cables.c0.viz.steps.2	L'isolant se dégrade
+el-cables.c0.viz.steps.3	Risque d'incendie
+el-cables.c1.title	Section en mm²
+el-cables.c1.text	La taille d'un câble correspond à la surface de cuivre en millimètres carrés. Plus la surface est grande, plus la résistance est faible et plus il peut transporter de courant en toute sécurité.
+el-cables.c1.viz.unit	ampères max. approx. (installation domestique type)
+el-cables.c1.viz.items.0.l	1,5 mm²
+el-cables.c1.viz.items.1.l	2,5 mm²
+el-cables.c1.viz.items.2.l	4 mm²
+el-cables.c1.viz.items.3.l	6 mm²
+el-cables.c2.title	Sections types à la maison
+el-cables.c2.text	Pratique courante au Portugal : 1,5 mm² pour l'éclairage, 2,5 mm² pour les prises, 4 mm² pour les fours ou chauffe-eau, 6 mm² pour une borne de recharge de VE ou une grosse pompe à chaleur. Vérifiez toujours les règles d'installation et le calcul de l'installateur.
+el-cables.c2.viz.items.0.a	1,5 mm²
+el-cables.c2.viz.items.0.b	éclairage, disjoncteur 10 A
+el-cables.c2.viz.items.1.a	2,5 mm²
+el-cables.c2.viz.items.1.b	prises, 16 A
+el-cables.c2.viz.items.2.a	4 mm²
+el-cables.c2.viz.items.2.b	four, 20–25 A
+el-cables.c2.viz.items.3.a	6 mm²
+el-cables.c2.viz.items.3.b	borne VE, 32 A
+el-cables.c3.title	Le disjoncteur protège le câble
+el-cables.c3.text	Le disjoncteur doit être calibré pour que le câble ne puisse jamais transporter plus que ce qu'il supporte en toute sécurité. Remplacer un disjoncteur de 16 A par un de 25 A « parce qu'il n'arrête pas de déclencher » supprime la protection.
+el-cables.c3.viz.items.0.w	le disjoncteur 16 A déclenche sans cesse
+el-cables.c3.viz.items.0.r	trouver la surcharge
+el-cables.c3.viz.items.1.w	poser un disjoncteur plus gros
+el-cables.c3.viz.items.1.r	recâbler en plus gros si besoin
+el-cables.c4.title	Chute de tension
+el-cables.c4.text	Les longs câbles perdent de la tension en chemin. Les règles limitent généralement la chute à quelques pour cent. En monophasé, la chute vaut à peu près deux fois la longueur multipliée par le courant et par la résistance par mètre.
+el-cables.c4.example.0	30 m, 16 A, 2,5 mm² (0,0073 Ω/m)
+el-cables.c4.example.1	2 × 30 × 16 × 0,0073
+el-cables.c4.example.2	≈ 7 V, soit environ 3 %
+el-cables.c4.viz.f	ΔU ≈ 2 × L × I × r
+el-cables.c4.viz.items.0.s	L
+el-cables.c4.viz.items.0.m	longueur (m)
+el-cables.c4.viz.items.1.s	I
+el-cables.c4.viz.items.1.m	courant (A)
+el-cables.c4.viz.items.2.s	r
+el-cables.c4.viz.items.2.m	Ω par mètre de conducteur
+el-cables.c5.title	Le mode de pose compte
+el-cables.c5.text	Un câble noyé dans l'isolation ou regroupé avec d'autres n'évacue pas la chaleur ; il supporte donc moins de courant en sécurité qu'un câble à l'air libre.
+el-cables.c5.viz.unit	capacité relative
+el-cables.c5.viz.items.0.l	À l'air libre
+el-cables.c5.viz.items.1.l	En conduit sur mur
+el-cables.c5.viz.items.2.l	En faisceau
+el-cables.c5.viz.items.3.l	Dans l'isolant thermique
+el-cables.c6.title	Couleurs
+el-cables.c6.text	En Europe : le marron est la phase, le bleu le neutre, le vert-jaune la terre de protection. Les installations portugaises plus anciennes peuvent utiliser d'autres couleurs ; ne vous fiez donc jamais aux seules couleurs.
+el-cables.c6.viz.items.0.a	marron
+el-cables.c6.viz.items.0.b	phase
+el-cables.c6.viz.items.1.a	bleu
+el-cables.c6.viz.items.1.b	neutre
+el-cables.c6.viz.items.2.a	vert-jaune
+el-cables.c6.viz.items.2.b	terre
+el-cables.c6.viz.items.3.a	noir, gris
+el-cables.c6.viz.items.3.b	autres phases
+el-cables.c7.title	Souple ou rigide
+el-cables.c7.text	Le câblage fixe utilise des conducteurs rigides, massifs ou câblés. Les cordons d'appareils et les rallonges utilisent un câble souple à plusieurs brins qui supporte les flexions.
+el-cables.c7.viz.l.t	Rigide
+el-cables.c7.viz.l.items.0	fixé dans les murs
+el-cables.c7.viz.l.items.1	moins cher
+el-cables.c7.viz.l.items.2	n'aime pas être plié
+el-cables.c7.viz.r.t	Souple
+el-cables.c7.viz.r.items.0	nombreux brins fins
+el-cables.c7.viz.r.items.1	cordons et rallonges
+el-cables.c7.viz.r.items.2	supporte les flexions
+el-cables.c8.title	Rallonges
+el-cables.c8.text	Un enrouleur doit être complètement déroulé pour les fortes charges, sinon le câble enroulé emprisonne la chaleur et peut fondre. N'enchaînez jamais des multiprises pour des radiateurs ou des bouilloires.
+el-cables.c8.viz.items.0	Dérouler complètement les enrouleurs
+el-cables.c8.viz.items.1	Vérifier les watts max. sur l'étiquette
+el-cables.c8.viz.items.2	Pas de multiprises en cascade
+el-cables.c8.viz.items.3	Pas pour des radiateurs permanents
+el-cables.c9.title	Aluminium ou cuivre
+el-cables.c9.text	L'aluminium conduit environ 60 % aussi bien que le cuivre ; il exige donc une plus grande section, mais il est plus léger et moins cher. Les lignes aériennes utilisent de l'aluminium ; le câblage domestique utilise du cuivre.
+el-cables.c9.viz.l.t	Cuivre
+el-cables.c9.viz.l.items.0	meilleur conducteur
+el-cables.c9.viz.l.items.1	câbles plus petits

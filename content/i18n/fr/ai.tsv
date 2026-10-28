@@ -1259,7 +1259,7 @@ ai-safety.q2.x	Les actions irréversibles exigent un contrôle humain.
 ai-safety.c0.title	Ce que couvre la sécurité de l'IA
 ai-safety.c0.text	La sécurité va de la fiabilité quotidienne (le système fait-il ce qu'il doit, sans erreurs dommageables ?) aux questions à long terme sur des systèmes très capables qui poursuivent des objectifs que nous n'avions pas voulus.
 ai-safety.c0.viz.items.0	Contrôle à long terme de l'IA avancée
-ai-safety.c0.viz.items.1	Prévention des usages malveillants
+ai-safety.c0.viz.items.1	Prévention des abus
 ai-safety.c0.viz.items.2	Comportement honnête et fiable
 ai-safety.c0.viz.items.3	Robustesse au quotidien
 ai-safety.c1.title	L'alignement
@@ -1346,7 +1346,7 @@ ai-law.c1.viz.items.0	Notation sociale
 ai-law.c1.viz.items.1	Manipulation nuisible
 ai-law.c1.viz.items.2	Reconnaissance des émotions au travail ou à l'école
 ai-law.c1.viz.items.3	Collecte non ciblée de visages
-ai-law.c1.viz.items.4	Identification biométrique publique en temps réel par la police (en majorité)
+ai-law.c1.viz.items.4	Biométrie policière publique en temps réel (en majorité)
 ai-law.c2.title	Les systèmes à haut risque
 ai-law.c2.text	L'IA utilisée dans des domaines comme le recrutement, le scoring de crédit, l'éducation, les services essentiels, les infrastructures critiques, l'application de la loi et les dispositifs médicaux est à haut risque. Les fournisseurs doivent gérer les risques, utiliser de bonnes données, tenir des journaux, documenter le système et permettre une supervision humaine.
 ai-law.c2.viz.items.0	Gestion des risques
@@ -1365,9 +1365,9 @@ ai-law.c3.viz.items.2.b	doit être signalé
 ai-law.c4.title	Calendrier
 ai-law.c4.text	Le règlement entre en vigueur progressivement sur plusieurs années : d'abord les interdictions, puis les règles pour les modèles d'IA à usage général, puis la plupart des obligations des systèmes à haut risque.
 ai-law.c4.viz.events.0.y	Août 2024
-ai-law.c4.viz.events.0.l	entrée en vigueur
+ai-law.c4.viz.events.0.l	en vigueur
 ai-law.c4.viz.events.1.y	Févr. 2025
-ai-law.c4.viz.events.1.l	interdictions applicables
+ai-law.c4.viz.events.1.l	interdictions
 ai-law.c4.viz.events.2.y	Août 2025
 ai-law.c4.viz.events.2.l	règles IA à usage général
 ai-law.c4.viz.events.3.y	Août 2026
@@ -1398,3 +1398,358 @@ ai-law.c8.viz.items.2	Respecter les opt-out (UE)
 ai-law.c8.viz.items.3	Publier des résumés de données (UE)
 ai-law.c9.title	Qui est responsable ?
 ai-law.c9.text	Le règlement sur l'IA distingue les fournisseurs (qui conçoivent un système ou le mettent sur le marché) des déployeurs (qui l'utilisent). Les deux ont des devoirs. Utiliser l'IA d'un fournisseur ne vous décharge pas de votre responsabilité quant à son usage.
+ai-law.c9.viz.l.t	Fournisseur
+ai-law.c9.viz.l.items.0	conçoit le système
+ai-law.c9.viz.l.items.1	documentation
+ai-law.c9.viz.l.items.2	contrôles de conformité
+ai-law.c9.viz.r.t	Déployeur
+ai-law.c9.viz.r.items.0	l'utilise
+ai-law.c9.viz.r.items.1	supervision humaine
+ai-law.c9.viz.r.items.2	informe les personnes concernées
+ai-explain.title	L'IA explicable
+ai-explain.summary	Ouvrir la boîte noire : pourquoi un modèle a décidé ce qu'il a décidé.
+ai-explain.q0.q	Un outil qui montre de combien chaque caractéristique a poussé une prédiction vers le haut ou le bas est…
+ai-explain.q0.o0	Une matrice de confusion
+ai-explain.q0.o1	SHAP
+ai-explain.q0.o2	Le dropout
+ai-explain.q0.x	SHAP attribue une prédiction individuelle à ses caractéristiques.
+ai-explain.q1.q	« Votre prêt serait accepté si votre dette était inférieure de 3 000 € » est une…
+ai-explain.q1.o0	Explication contrefactuelle
+ai-explain.q1.o1	Carte de saillance
+ai-explain.q1.o2	Courbe d'importance des caractéristiques
+ai-explain.q1.x	Elle décrit le plus petit changement qui inverse le résultat.
+ai-explain.q2.q	Un classificateur de huskies qui s'appuie sur la neige à l'arrière-plan montre…
+ai-explain.q2.o0	Une bonne généralisation
+ai-explain.q2.o1	Un raccourci caché révélé par les outils d'explication
+ai-explain.q2.o2	Une équité parfaite
+ai-explain.q2.x	Les cartes de saillance ont exposé le mauvais indice.
+ai-explain.c0.title	Le problème de la boîte noire
+ai-explain.c0.text	Les réseaux profonds avec des millions de poids ne viennent pas avec leurs raisons. Quand un modèle refuse un prêt ou signale une pièce défectueuse, les gens veulent savoir pourquoi, et les régulateurs l'exigent souvent.
+ai-explain.c0.viz.steps.0	Entrée
+ai-explain.c0.viz.steps.1	Des millions de poids
+ai-explain.c0.viz.steps.2	Décision
+ai-explain.c0.viz.steps.3	Pourquoi ?
+ai-explain.c1.title	Les modèles en boîte de verre
+ai-explain.c1.text	Certains modèles sont explicables par conception : les modèles linéaires montrent le poids de chaque caractéristique, les petits arbres de décision montrent le chemin exact. Quand les enjeux sont élevés, un modèle un peu moins précis mais transparent peut être le meilleur choix.
+ai-explain.c1.viz.l.t	Boîte de verre
+ai-explain.c1.viz.l.items.0	modèles linéaires, petits arbres
+ai-explain.c1.viz.l.items.1	faciles à expliquer
+ai-explain.c1.viz.l.items.2	parfois moins précis
+ai-explain.c1.viz.r.t	Boîte noire
+ai-explain.c1.viz.r.items.0	réseaux profonds, gros ensembles
+ai-explain.c1.viz.r.items.1	très précis
+ai-explain.c1.viz.r.items.2	exige des outils en plus
+ai-explain.c2.title	L'importance des caractéristiques
+ai-explain.c2.text	L'explication la plus simple : quelles entrées comptent le plus globalement ? Pour un modèle de retards de livraison, la distance, la météo et le transporteur comptent peut-être le plus, tandis que le jour de la semaine compte à peine.
+ai-explain.c2.viz.unit	importance
+ai-explain.c2.viz.items.0.l	Distance
+ai-explain.c2.viz.items.1.l	Météo
+ai-explain.c2.viz.items.2.l	Transporteur
+ai-explain.c2.viz.items.3.l	Jour
+ai-explain.c3.title	Les valeurs SHAP
+ai-explain.c3.text	SHAP explique une prédiction individuelle en répartissant le résultat entre les caractéristiques, comme on partage équitablement une addition. Il montre de combien chaque caractéristique a poussé cette prédiction précise vers le haut ou le bas par rapport à la moyenne.
+ai-explain.c3.viz.items.0.a	Maison moyenne
+ai-explain.c3.viz.items.0.b	250 k€
+ai-explain.c3.viz.items.1.a	Vue sur mer
+ai-explain.c3.viz.items.1.b	+60 k€
+ai-explain.c3.viz.items.2.a	Cuisine ancienne
+ai-explain.c3.viz.items.2.b	−25 k€
+ai-explain.c3.viz.items.3.a	Grand jardin
+ai-explain.c3.viz.items.3.b	+30 k€
+ai-explain.c3.viz.items.4.a	Cette maison
+ai-explain.c3.viz.items.4.b	315 k€
+ai-explain.c4.title	Les explications contrefactuelles
+ai-explain.c4.text	Une explication utile pour les gens : que faudrait-il changer pour obtenir un autre résultat ? « Votre prêt serait accepté si votre revenu était supérieur de 4 000 € ou votre dette inférieure de 3 000 €. »
+ai-explain.c4.viz.steps.0	Prêt refusé
+ai-explain.c4.viz.steps.1	Trouver le plus petit changement
+ai-explain.c4.viz.steps.2	« Dette inférieure de 3 000 € »
+ai-explain.c4.viz.steps.3	Accepté
+ai-explain.c5.title	Les cartes de saillance
+ai-explain.c5.text	Pour les images, des outils d'explication mettent en évidence les pixels qui ont le plus influencé la décision. Ils révèlent parfois des problèmes : un modèle qui reconnaît les huskies à la neige de l'arrière-plan, pas au chien.
+ai-explain.c5.viz.items.0.w	« c'est un husky à cause de la neige »
+ai-explain.c5.viz.items.0.r	réentraîner avec des huskies sur l'herbe, des loups dans la neige
+ai-explain.c6.title	Expliquer les modèles de langage
+ai-explain.c6.text	Demander à un chatbot de « montrer son raisonnement » donne une explication lisible, mais rien ne garantit que ce texte reflète ce qui s'est passé à l'intérieur. La recherche en interprétabilité essaie de vérifier les vrais mécanismes internes.
+ai-explain.c6.viz.l.t	Raisonnement affiché
+ai-explain.c6.viz.l.items.0	facile à lire
+ai-explain.c6.viz.l.items.1	utile
+ai-explain.c6.viz.l.items.2	pas forcément fidèle
+ai-explain.c6.viz.r.t	Analyse interne
+ai-explain.c6.viz.r.items.0	plus difficile à faire
+ai-explain.c6.viz.r.items.1	plus proche de la réalité
+ai-explain.c7.title	Qui a besoin de l'explication ?
+ai-explain.c7.text	Un data scientist veut des diagnostics détaillés ; un client veut une raison courte et ce qu'il peut faire ; un auditeur veut de la documentation. Concevez les explications pour le public visé.
+ai-explain.c7.viz.items.0.a	Data scientist
+ai-explain.c7.viz.items.0.b	effets des features, analyse d'erreurs
+ai-explain.c7.viz.items.1.a	Client
+ai-explain.c7.viz.items.1.b	raison principale et prochaine étape
+ai-explain.c7.viz.items.2.a	Auditeur
+ai-explain.c7.viz.items.2.b	documentation et journaux
+ai-explain.c7.viz.items.3.a	Responsable
+ai-explain.c7.viz.items.3.b	risques et limites
+ai-explain.c8.title	Les explications créent la confiance
+ai-explain.c8.text	Les gens font plus confiance aux recommandations de l'IA, et les utilisent plus, quand ils les comprennent, mais ils peuvent aussi trop se fier à une explication assurée. Les bonnes explications montrent aussi l'incertitude.
+ai-explain.c8.viz.items.0	Montrer les raisons principales
+ai-explain.c8.viz.items.1	Montrer le degré de confiance du modèle
+ai-explain.c8.viz.items.2	Montrer ce qui changerait le résultat
+ai-explain.c8.viz.items.3	Être honnête sur les limites
+ai-explain.c9.title	Obligatoire dans certains cas
+ai-explain.c9.text	Le RGPD donne aux personnes concernées par des décisions importantes exclusivement automatisées le droit à des informations utiles sur la logique employée. Le règlement sur l'IA ajoute des devoirs de transparence pour les systèmes à haut risque.
+ai-explain.c9.viz.steps.0	Décision importante automatisée
+ai-explain.c9.viz.steps.1	La personne demande pourquoi
+ai-explain.c9.viz.steps.2	Explication utile
+ai-explain.c9.viz.steps.3	Possibilité de revue humaine
+ai-edge.title	L'IA sur les appareils
+ai-edge.summary	Faire tourner des modèles sur téléphones, caméras et microcontrôleurs.
+ai-edge.q0.q	Entraîner un petit modèle à imiter un grand s'appelle…
+ai-edge.q0.o0	L'élagage (pruning)
+ai-edge.q0.o1	La distillation
+ai-edge.q0.o2	L'apprentissage fédéré
+ai-edge.q0.x	L'élève apprend à partir des sorties du maître.
+ai-edge.q1.q	Pourquoi un système de caméras domestique exécute-t-il la détection en local ?
+ai-edge.q1.o0	La loi l'exige
+ai-edge.q1.o1	Rapidité, confidentialité et pas de frais de cloud
+ai-edge.q1.o2	Le cloud ne sait pas détecter les personnes
+ai-edge.q1.x	Le traitement local est rapide, privé et peu coûteux.
+ai-edge.q2.q	En apprentissage fédéré, qu'est-ce qui quitte l'appareil ?
+ai-edge.q2.o0	Toutes les données brutes
+ai-edge.q2.o1	Seulement les mises à jour du modèle
+ai-edge.q2.o2	Rien du tout
+ai-edge.q2.x	Les données brutes restent en local ; seules les mises à jour sont partagées.
+ai-edge.c0.title	L'IA en périphérie
+ai-edge.c0.text	L'IA en périphérie (edge AI) consiste à exécuter les modèles là où les données sont produites : sur un téléphone, une caméra, une voiture ou un capteur, au lieu de tout envoyer dans le cloud.
+ai-edge.c0.viz.l.t	IA dans le cloud
+ai-edge.c0.viz.l.items.0	gros modèles
+ai-edge.c0.viz.l.items.1	exige une connexion
+ai-edge.c0.viz.l.items.2	les données voyagent
+ai-edge.c0.viz.r.t	IA en périphérie
+ai-edge.c0.viz.r.items.0	instantané
+ai-edge.c0.viz.r.items.1	marche hors ligne
+ai-edge.c0.viz.r.items.2	données en local
+ai-edge.c1.title	Pourquoi exécuter en local ?
+ai-edge.c1.text	Quatre raisons : la rapidité (pas d'aller-retour réseau), la confidentialité (les données ne partent jamais), le coût (pas de frais par appel) et la fiabilité (fonctionne sans connexion).
+ai-edge.c1.viz.items.0	Rapidité : pas d'aller-retour
+ai-edge.c1.viz.items.1	Confidentialité : données sur place
+ai-edge.c1.viz.items.2	Coût : pas de frais cloud
+ai-edge.c1.viz.items.3	Fiabilité : marche hors ligne
+ai-edge.c2.title	Rendre les modèles petits
+ai-edge.c2.text	Les modèles en périphérie sont réduits par quantification (moins de bits par poids), élagage (suppression des connexions peu utiles) et distillation (entraîner un petit élève à copier un grand maître).
+ai-edge.c2.viz.items.0.a	Quantification
+ai-edge.c2.viz.items.0.b	moins de bits par poids
+ai-edge.c2.viz.items.1.a	Élagage
+ai-edge.c2.viz.items.1.b	retire les connexions faibles
+ai-edge.c2.viz.items.2.a	Distillation
+ai-edge.c2.viz.items.2.b	le petit élève copie le grand maître
+ai-edge.c3.title	Les accélérateurs
+ai-edge.c3.text	De petites puces comme le Coral Edge TPU de Google ou les neural engines des téléphones exécutent efficacement des réseaux de neurones avec quelques watts. Un Coral TPU peut faire tourner un détecteur d'objets à des dizaines d'images par seconde.
+ai-edge.c3.viz.items.0.v	4 TOPS
+ai-edge.c3.viz.items.0.l	pic du Coral Edge TPU
+ai-edge.c3.viz.items.1.v	2 W
+ai-edge.c3.viz.items.1.l	environ sa consommation
+ai-edge.c4.title	Une caméra intelligente à la maison
+ai-edge.c4.text	Un NVR domestique comme Frigate utilise d'abord une détection de mouvement peu coûteuse, puis n'exécute le détecteur d'objets que sur les images avec mouvement, et n'alerte que pour les objets qui vous intéressent, comme des personnes la nuit.
+ai-edge.c4.viz.steps.0	Flux vidéo
+ai-edge.c4.viz.steps.1	Mouvement détecté ?
+ai-edge.c4.viz.steps.2	Détecteur d'objets sur cette zone
+ai-edge.c4.viz.steps.3	Personne la nuit → alerte
+ai-edge.c5.title	TinyML
+ai-edge.c5.text	Même des microcontrôleurs à quelques euros peuvent faire tourner de minuscules modèles : détection de mot d'éveil, reconnaissance de gestes, détection d'anomalies de vibration, le tout sur batterie.
+ai-edge.c5.viz.items.0	Mots d'éveil
+ai-edge.c5.viz.items.1	Reconnaissance de gestes
+ai-edge.c5.viz.items.2	Anomalies de vibration
+ai-edge.c5.viz.items.3	Classification d'images simple
+ai-edge.c6.title	Les modèles de langage embarqués
+ai-edge.c6.text	Téléphones et portables exécutent désormais de petits modèles de langage en local pour les résumés, les réponses suggérées et la dictée. Les demandes plus lourdes peuvent encore être envoyées au cloud.
+ai-edge.c6.viz.steps.0	Demande simple
+ai-edge.c6.viz.steps.1	Petit modèle local
+ai-edge.c6.viz.steps.2	Demande complexe
+ai-edge.c6.viz.steps.3	Grand modèle cloud
+ai-edge.c7.title	Mettre à jour les modèles en périphérie
+ai-edge.c7.text	Les appareils sur le terrain ont besoin de nouvelles versions du modèle à mesure que les données dérivent. Les mises à jour sont envoyées par voie hertzienne (OTA), souvent testées d'abord sur un petit groupe d'appareils.
+ai-edge.c7.viz.steps.0	Réentraîner au centre
+ai-edge.c7.viz.steps.1	Tester sur quelques appareils
+ai-edge.c7.viz.steps.2	Déployer à distance (OTA)
+ai-edge.c7.viz.steps.3	Surveiller les résultats
+ai-edge.c8.title	L'apprentissage fédéré
+ai-edge.c8.text	Au lieu de collecter les données de tout le monde, les appareils s'entraînent localement et n'envoient que des mises à jour de poids à un serveur central, qui les combine. Les claviers de téléphone s'en servent pour améliorer les suggestions sans téléverser ce que vous tapez.
+ai-edge.c8.viz.steps.0	Modèle central envoyé aux appareils
+ai-edge.c8.viz.steps.1	Chaque appareil apprend en local
+ai-edge.c8.viz.steps.2	Seules les mises à jour reviennent
+ai-edge.c8.viz.steps.3	Le serveur les combine
+ai-edge.c9.title	Les limites de la périphérie
+ai-edge.c9.text	Les petits appareils ont une mémoire, une batterie et un budget thermique limités. Les modèles en périphérie sont moins capables que les grands modèles cloud, donc beaucoup de systèmes combinent les deux.
+ai-edge.c9.viz.l.t	Limites en périphérie
+ai-edge.c9.viz.l.items.0	peu de mémoire
+ai-edge.c9.viz.l.items.1	batterie
+ai-edge.c9.viz.l.items.2	chaleur
+ai-edge.c9.viz.r.t	Réponse hybride
+ai-edge.c9.viz.r.items.0	premier tri local rapide
+ai-edge.c9.viz.r.items.1	cloud pour les cas difficiles
+ai-robots.title	Robots et voitures autonomes
+ai-robots.summary	L'IA qui se déplace dans le monde physique.
+ai-robots.q0.q	Quel capteur mesure avec précision la distance en 3D grâce à des lasers ?
+ai-robots.q0.o0	La caméra
+ai-robots.q0.o1	Le radar
+ai-robots.q0.o2	Le lidar
+ai-robots.q0.x	Le lidar utilise des impulsions laser pour mesurer la distance.
+ai-robots.q1.q	La plupart des voitures vendues aujourd'hui avec aide à la conduite sont au niveau SAE…
+ai-robots.q1.o0	0
+ai-robots.q1.o1	2
+ai-robots.q1.o2	5
+ai-robots.q1.x	Le niveau 2 dirige et freine mais exige une supervision constante.
+ai-robots.q2.q	À quoi sert le SLAM ?
+ai-robots.q2.o0	À claquer les freins
+ai-robots.q2.o1	À construire une carte tout en suivant la position du robot dedans
+ai-robots.q2.o2	À charger la batterie
+ai-robots.q2.x	Localisation et cartographie simultanées (Simultaneous Localisation And Mapping).
+ai-robots.c0.title	Percevoir, penser, agir
+ai-robots.c0.text	Tous les robots exécutent la même boucle : les capteurs mesurent le monde, le logiciel décide quoi faire et les moteurs l'exécutent. Puis il perçoit à nouveau pour voir ce qui a changé.
+ai-robots.c0.viz.steps.0	Percevoir : caméras, lidar
+ai-robots.c0.viz.steps.1	Penser : planifier le prochain geste
+ai-robots.c0.viz.steps.2	Agir : moteurs et roues
+ai-robots.c0.viz.steps.3	Vérifier le résultat
+ai-robots.c1.title	Les capteurs
+ai-robots.c1.text	Les robots et les voitures combinent des capteurs car chacun a ses faiblesses : les caméras voient les couleurs mais peinent dans le noir, le radar voit à travers la pluie mais avec moins de détail, le lidar mesure précisément la distance avec des lasers.
+ai-robots.c1.viz.items.0.a	Caméra
+ai-robots.c1.viz.items.0.b	couleurs, panneaux, voies
+ai-robots.c1.viz.items.1.a	Radar
+ai-robots.c1.viz.items.1.b	vitesse, marche sous la pluie
+ai-robots.c1.viz.items.2.a	Lidar
+ai-robots.c1.viz.items.2.b	distance 3D précise
+ai-robots.c1.viz.items.3.a	Ultrasons
+ai-robots.c1.viz.items.3.b	stationnement à courte portée
+ai-robots.c2.title	Localisation et cartographie
+ai-robots.c2.text	Pour se déplacer, un robot doit savoir où il est. Le SLAM (localisation et cartographie simultanées) construit la carte d'un espace inconnu tout en suivant la position du robot dedans. Les robots aspirateurs le font.
+ai-robots.c2.viz.steps.0	Bouger un peu
+ai-robots.c2.viz.steps.1	Percevoir les alentours
+ai-robots.c2.viz.steps.2	Mettre à jour la carte
+ai-robots.c2.viz.steps.3	Estimer la position
+ai-robots.c3.title	Les niveaux d'automatisation de la conduite
+ai-robots.c3.text	La SAE définit six niveaux, de 0 (aucune automatisation) à 5 (conduit partout sans humain). La plupart des voitures vendues aujourd'hui offrent le niveau 2 : la voiture dirige et freine, mais le conducteur doit superviser en permanence.
+ai-robots.c3.viz.items.0	Niveau 5 : partout, sans conducteur
+ai-robots.c3.viz.items.1	Niveau 4 : sans conducteur en zones définies
+ai-robots.c3.viz.items.2	Niveau 3 : la voiture conduit, humain en veille
+ai-robots.c3.viz.items.3	Niveau 2 : le conducteur supervise
+ai-robots.c3.viz.items.4	Niveau 0–1 : le conducteur a la main
+ai-robots.c4.title	Les robotaxis
+ai-robots.c4.text	Des services de taxis sans conducteur fonctionnent dans plusieurs villes des États-Unis et de Chine, comme Waymo à Phoenix et San Francisco. Ils sont de niveau 4 : pas de conducteur, mais seulement dans des zones soigneusement cartographiées.
+ai-robots.c4.viz.items.0.v	Niveau 4
+ai-robots.c4.viz.items.0.l	exploitation en robotaxi
+ai-robots.c4.viz.items.1.l	conducteurs de sécurité à bord
+ai-robots.c5.title	La longue traîne
+ai-robots.c5.text	Conduire est surtout routinier, mais les situations rares sont infinies : un matelas sur l'autoroute, un policier qui vous fait signe de passer au feu rouge. Gérer la longue traîne des événements rares est la partie la plus difficile de l'autonomie.
+ai-robots.c5.viz.unit	part des situations (illustratif)
+ai-robots.c5.viz.items.0.l	Conduite courante
+ai-robots.c5.viz.items.1.l	Inhabituel
+ai-robots.c5.viz.items.2.l	Très rare
+ai-robots.c6.title	Les robots industriels
+ai-robots.c6.text	Les usines utilisent depuis des décennies des bras robotisés pour la soudure, la peinture et l'assemblage. L'IA ajoute la vision, ce qui leur permet de saisir des pièces en vrac, de contrôler la qualité et de travailler plus sûrement près des personnes.
+ai-robots.c6.viz.items.0	Soudure et peinture
+ai-robots.c6.viz.items.1	Prise et dépose guidées par vision
+ai-robots.c6.viz.items.2	Contrôle qualité
+ai-robots.c6.viz.items.3	Robots collaboratifs près des gens
+ai-robots.c7.title	Apprendre des compétences aux robots
+ai-robots.c7.text	De nouvelles approches entraînent les robots avec des démonstrations, la simulation et de grands modèles qui relient langage et vision à des actions : « mets la tasse rouge dans l'évier ».
+ai-robots.c7.viz.steps.0	Démonstrations humaines
+ai-robots.c7.viz.steps.1	Pratique en simulation
+ai-robots.c7.viz.steps.2	Modèle vision-langage-action
+ai-robots.c7.viz.steps.3	Le robot suit les instructions
+ai-robots.c8.title	La sécurité d'abord
+ai-robots.c8.text	Les robots physiques peuvent blesser des personnes ; ils ont donc besoin de limites de vitesse près des humains, d'arrêts d'urgence, de zones clôturées ou de capteurs de force, et d'une certification selon les règles de sécurité des machines.
+ai-robots.c8.viz.items.0	Arrêt d'urgence
+ai-robots.c8.viz.items.1	Limites de vitesse près des gens
+ai-robots.c8.viz.items.2	Capteurs de force et de collision
+ai-robots.c8.viz.items.3	Certification de sécurité
+ai-robots.c9.title	Drones et agriculture
+ai-robots.c9.text	Les drones cartographient les champs, comptent les plants et repèrent les maladies, tandis que des tracteurs autonomes suivent des trajets GPS avec une précision centimétrique. L'agriculture de précision utilise moins d'engrais et d'eau en ne traitant qu'où c'est nécessaire.
+ai-robots.c9.viz.steps.0	Le drone cartographie le champ
+ai-robots.c9.viz.steps.1	L'IA repère les zones à problème
+ai-robots.c9.viz.steps.2	Traiter seulement ces points
+ai-robots.c9.viz.steps.3	Moins d'intrants, même rendement
+ai-future.title	Vers où va l'IA
+ai-future.summary	Agents, débats sur l'AGI et ce qu'il faut surveiller.
+ai-future.q0.q	Qu'est-ce qui distingue un agent IA d'un simple chatbot ?
+ai-future.q0.o0	Il a un nom
+ai-future.q0.o1	Il planifie et agit avec des outils pour atteindre un objectif
+ai-future.q0.o2	Il ne répond que par oui ou non
+ai-future.q0.x	Les agents agissent en boucles, avec des outils.
+ai-future.q1.q	Qu'a fait AlphaFold ?
+ai-future.q1.o0	Gagné au go
+ai-future.q1.o1	Prédit les structures 3D de protéines
+ai-future.q1.o2	Conduit une voiture
+ai-future.q1.x	Il a prédit plus de 200 millions de structures de protéines.
+ai-future.q2.q	Existe-t-il une date convenue pour l'AGI ?
+ai-future.q2.o0	Oui, 2030
+ai-future.q2.o1	Non, les experts sont très divisés
+ai-future.q2.o2	Oui, elle existe déjà en droit
+ai-future.q2.x	Il n'y a ni définition ni calendrier consensuels.
+ai-future.c0.title	Des chatbots aux agents
+ai-future.c0.text	Les agents ne se contentent pas de répondre ; ils planifient et agissent : chercher sur le web, utiliser des logiciels, écrire et exécuter du code, puis vérifier le résultat. Ils travaillent en boucles vers un objectif.
+ai-future.c0.viz.steps.0	Comprendre l'objectif
+ai-future.c0.viz.steps.1	Planifier les étapes
+ai-future.c0.viz.steps.2	Utiliser des outils
+ai-future.c0.viz.steps.3	Vérifier les résultats
+ai-future.c1.title	Les modèles multimodaux
+ai-future.c1.text	Les modèles récents gèrent texte, images, audio et vidéo dans un seul système. Vous pouvez montrer la photo d'une pièce cassée, poser une question à voix haute et recevoir un schéma en retour.
+ai-future.c1.viz.steps.0	Texte, images, audio, vidéo
+ai-future.c1.viz.steps.1	Un seul modèle multimodal
+ai-future.c1.viz.steps.2	Réponses dans tous les formats
+ai-future.c2.title	Qu'est-ce que l'AGI ?
+ai-future.c2.text	L'intelligence artificielle générale signifie généralement une IA capable d'accomplir la plupart des tâches cognitives aussi bien qu'un humain compétent. Il n'existe ni définition ni test convenus, et les experts divergent beaucoup sur le moment, voire l'éventualité, de son arrivée.
+ai-future.c2.viz.l.t	IA étroite
+ai-future.c2.viz.l.items.0	une seule tâche
+ai-future.c2.viz.l.items.1	surhumaine dans cette tâche
+ai-future.c2.viz.r.t	IA générale
+ai-future.c2.viz.r.items.0	la plupart des tâches cognitives
+ai-future.c2.viz.r.items.1	souple comme une personne
+ai-future.c3.title	Passage à l'échelle ou nouvelles idées
+ai-future.c3.text	Certains chercheurs s'attendent à ce que plus de données et de calcul continuent de porter leurs fruits ; d'autres pensent que de nouvelles idées sont nécessaires pour un raisonnement fiable, la mémoire et l'apprentissage à partir de peu d'exemples. La plupart s'attendent à un peu des deux.
+ai-future.c3.viz.l.t	Thèse de l'échelle
+ai-future.c3.viz.l.items.0	les gros modèles progressent encore
+ai-future.c3.viz.l.items.1	le calcul est la clé
+ai-future.c3.viz.r.t	Thèse des idées neuves
+ai-future.c3.viz.r.items.0	il faut un meilleur raisonnement
+ai-future.c3.viz.r.items.1	il faut mémoire et efficacité
+ai-future.c4.title	L'IA pour la science
+ai-future.c4.text	L'IA accélère déjà la recherche. AlphaFold de DeepMind a prédit les formes 3D de plus de 200 millions de protéines, et ses créateurs ont partagé le prix Nobel de chimie 2024.
+ai-future.c4.viz.items.0.v	200 M+
+ai-future.c4.viz.items.0.l	structures de protéines prédites
+ai-future.c4.viz.items.1.l	prix Nobel de chimie
+ai-future.c5.title	Emplois et travail
+ai-future.c5.text	L'IA change les tâches avant de remplacer les emplois. Les tâches routinières d'écriture, de synthèse et de code évoluent le plus vite ; les rôles se recentrent sur le jugement, les relations et la supervision de la production de l'IA.
+ai-future.c5.viz.l.t	Tâches en recul
+ai-future.c5.viz.l.items.0	premiers jets
+ai-future.c5.viz.l.items.1	résumés courants
+ai-future.c5.viz.l.items.2	code répétitif
+ai-future.c5.viz.r.t	Tâches en hausse
+ai-future.c5.viz.r.items.0	jugement
+ai-future.c5.viz.r.items.1	contrôle des sorties de l'IA
+ai-future.c5.viz.r.items.2	travail avec les gens
+ai-future.c6.title	Modèles ouverts ou fermés
+ai-future.c6.text	Certains modèles sont publiés ouvertement pour que chacun puisse les exécuter et les modifier ; d'autres ne sont disponibles que via une API. Les modèles ouverts aident la recherche et la confidentialité ; les modèles fermés facilitent le contrôle des abus.
+ai-future.c6.viz.l.t	Poids ouverts
+ai-future.c6.viz.l.items.0	tourne partout
+ai-future.c6.viz.l.items.1	personnalisable
+ai-future.c6.viz.l.items.2	abus plus durs à contrôler
+ai-future.c6.viz.r.t	Fermés
+ai-future.c6.viz.r.items.0	accès via API
+ai-future.c6.viz.r.items.1	le fournisseur gère les mises à jour
+ai-future.c6.viz.r.items.2	plus faciles à surveiller
+ai-future.c7.title	Les limites d'énergie et de calcul
+ai-future.c7.text	Chaque nouvelle génération exige plus de puces, d'électricité et de refroidissement. L'alimentation électrique, la production de puces et le coût peuvent limiter la vitesse de montée en puissance de l'IA.
+ai-future.c7.viz.items.0	Approvisionnement en puces
+ai-future.c7.viz.items.1	Capacité du réseau électrique
+ai-future.c7.viz.items.2	Refroidissement et eau
+ai-future.c7.viz.items.3	Coût par requête
+ai-future.c8.title	Rester informé
+ai-future.c8.text	Le domaine évolue chaque mois. Bonnes habitudes : essayer soi-même les outils, suivre quelques sources fiables et juger les affirmations sur des démonstrations et des preuves plutôt que sur le battage.
+ai-future.c8.viz.items.0	Tester soi-même les nouveaux outils
+ai-future.c8.viz.items.1	Suivre quelques sources fiables
+ai-future.c8.viz.items.2	Exiger des preuves, pas que des démos
+ai-future.c8.viz.items.3	Réviser souvent ses hypothèses
+ai-future.c9.title	Ce qui reste humain
+ai-future.c9.text	Décider des problèmes qui comptent, juger les compromis, assumer ses responsabilités et bâtir la confiance entre les gens restent un travail humain, désormais avec de puissants assistants.
+ai-future.c9.viz.items.0	Choisir ce qui compte
+ai-future.c9.viz.items.1	Juger les compromis
+ai-future.c9.viz.items.2	Assumer ses responsabilités
+ai-future.c9.viz.items.3	Bâtir la confiance

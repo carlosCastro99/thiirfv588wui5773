@@ -69,7 +69,7 @@ corp-why.c6.viz.items.3	Opérations riches en données
 corp-why.c6.viz.items.4	Développement logiciel
 corp-why.c7.title	Effet d'annonce et réalité
 corp-why.c7.text	De nombreux pilotes n'arrivent jamais en production. L'écart tient généralement non pas au modèle, mais aux données, à l'intégration, à la conduite du changement et à la confiance. Anticipez-les dès le premier jour.
-corp-why.c7.viz.l.t	Effet d'annonce
+corp-why.c7.viz.l.t	Battage
 corp-why.c7.viz.l.items.0	L'IA fait tout
 corp-why.c7.viz.l.items.1	résultats immédiats
 corp-why.c7.viz.r.t	Réalité
@@ -115,12 +115,12 @@ corp-usecases.c1.title	Interroger ceux qui font le travail
 corp-usecases.c1.text	Les meilleures idées viennent des équipes de terrain, qui savent où l'on perd du temps. Des ateliers et des parcours de processus les font émerger rapidement.
 corp-usecases.c1.viz.steps.0	Interroger les équipes
 corp-usecases.c1.viz.steps.1	Cartographier le processus
-corp-usecases.c1.viz.steps.2	Repérer les goulots d'étranglement
+corp-usecases.c1.viz.steps.2	Repérer les blocages
 corp-usecases.c1.viz.steps.3	Lister les opportunités d'IA
 corp-usecases.c2.title	Valeur et faisabilité
 corp-usecases.c2.text	Évaluez chaque idée selon sa valeur métier et sa faisabilité (données disponibles, difficulté technique, risque). Commencez par les idées à forte valeur et grande faisabilité : les gains rapides.
 corp-usecases.c2.viz.l.t	Forte valeur, forte faisabilité
-corp-usecases.c2.viz.l.items.0	à faire en premier
+corp-usecases.c2.viz.l.items.0	prioritaire
 corp-usecases.c2.viz.l.items.1	gains rapides
 corp-usecases.c2.viz.r.t	Faible valeur, faible faisabilité
 corp-usecases.c2.viz.r.items.0	abandonner
@@ -194,7 +194,7 @@ corp-build.q2.o2	Les logos des concurrents
 corp-build.q2.x	L'IA intégrée couvre peut-être déjà le besoin.
 corp-build.c0.title	Trois options
 corp-build.c0.text	Acheter : utiliser les fonctions d'IA des logiciels que vous avez déjà ou des outils SaaS. Construire : développer vos propres solutions sur des modèles et des plateformes. S'associer : travailler avec un spécialiste ou un intégrateur.
-corp-build.c0.viz.root	Approvisionnement
+corp-build.c0.viz.root	Sourcing
 corp-build.c0.viz.items.0	Acheter : SaaS et IA intégrée
 corp-build.c0.viz.items.1	Construire : solutions propres sur plateformes
 corp-build.c0.viz.items.2	S'associer : spécialistes et intégrateurs
@@ -239,7 +239,7 @@ corp-build.c6.title	Évaluer les fournisseurs
 corp-build.c6.text	Demandez des preuves sur vos données : précision, certifications de sécurité, conditions de traitement des données, options d'intégration, tarification à grande échelle et feuille de route.
 corp-build.c6.viz.items.0	Résultats sur vos propres données
 corp-build.c6.viz.items.1	Sécurité et certifications
-corp-build.c6.viz.items.2	Conditions d'usage et de conservation des données
+corp-build.c6.viz.items.2	Conditions d'usage des données
 corp-build.c6.viz.items.3	Options d'intégration
 corp-build.c6.viz.items.4	Coût total à grande échelle
 corp-build.c7.title	Coût total
@@ -379,7 +379,7 @@ corp-data.c1.title	Connaître vos données
 corp-data.c1.text	Un catalogue de données recense les données existantes, où elles se trouvent, qui en est responsable, ce qu'elles signifient et leur niveau de sensibilité. Sans lui, les équipes perdent des semaines à chercher.
 corp-data.c1.viz.items.0	Quelles données existent
 corp-data.c1.viz.items.1	Où elles se trouvent
-corp-data.c1.viz.items.2	Qui en est responsable
+corp-data.c1.viz.items.2	Responsable
 corp-data.c1.viz.items.3	Définitions
 corp-data.c1.viz.items.4	Niveau de sensibilité
 corp-data.c2.title	Dimensions de la qualité des données
@@ -512,7 +512,7 @@ corp-arch.c7.viz.steps.2	Test avec des utilisateurs
 corp-arch.c7.viz.steps.3	Production avec supervision
 corp-arch.c8.title	Cloud et région
 corp-arch.c8.text	Choisissez des régions d'hébergement des modèles qui respectent les règles de résidence des données (par exemple, données de l'UE dans des régions de l'UE) et des clauses contractuelles interdisant l'entraînement sur vos données.
-corp-arch.c8.viz.items.0	Données de l'UE dans des régions de l'UE
+corp-arch.c8.viz.items.0	Données UE en régions UE
 corp-arch.c8.viz.items.1	Pas d'entraînement sur vos données
 corp-arch.c8.viz.items.2	Chiffrement au repos et en transit
 corp-arch.c8.viz.items.3	Réseau privé
@@ -521,7 +521,7 @@ corp-arch.c9.title	Architecture de référence
 corp-arch.c9.text	Documentez une architecture de référence et des modèles réutilisables afin que les équipes lancent rapidement de nouvelles applications d'IA dans le respect des garde-fous.
 corp-arch.c9.viz.steps.0	Architecture de référence
 corp-arch.c9.viz.steps.1	Modèles et SDK
-corp-arch.c9.viz.steps.2	Les équipes construisent plus vite
+corp-arch.c9.viz.steps.2	Équipes plus rapides
 corp-arch.c9.viz.steps.3	Sécurité cohérente
 corp-security.title	Sécurité et confidentialité de l'IA
 corp-security.summary	De nouveaux risques et comment les gérer.
@@ -559,7 +559,7 @@ corp-security.c2.viz.items.0	Uniquement des outils d'entreprise approuvés
 corp-security.c2.viz.items.1	Recherche tenant compte des permissions
 corp-security.c2.viz.items.2	Détection et masquage des PII
 corp-security.c2.viz.items.3	Filtrage des sorties
-corp-security.c2.viz.items.4	Formation des utilisateurs
+corp-security.c2.viz.items.4	Formation
 corp-security.c3.title	Shadow AI
 corp-security.c3.text	Il est courant que des employés utilisent des outils d'IA non approuvés (« shadow AI ») lorsque les solutions approuvées manquent. La meilleure défense consiste à fournir de bons outils approuvés et des consignes claires.
 corp-security.c3.viz.l.t	Tout interdire
@@ -638,7 +638,7 @@ corp-governance.c0.viz.r.items.2	focus sur le risque élevé
 corp-governance.c1.title	Politique d'IA
 corp-governance.c1.text	Une politique courte couvre les outils approuvés, les données autorisées, la supervision humaine, la transparence, les usages interdits et la façon de demander de nouveaux cas d'usage.
 corp-governance.c1.viz.items.0	Outils approuvés
-corp-governance.c1.viz.items.1	Règles sur les données
+corp-governance.c1.viz.items.1	Règles données
 corp-governance.c1.viz.items.2	Supervision humaine
 corp-governance.c1.viz.items.3	Usages interdits
 corp-governance.c1.viz.items.4	Comment proposer de nouveaux cas d'usage
@@ -652,7 +652,7 @@ corp-governance.c2.viz.items.4	Contrôles et revues
 corp-governance.c3.title	Revue fondée sur le risque
 corp-governance.c3.text	Les usages à faible risque font l'objet d'une autoévaluation légère ; ceux à risque élevé passent par une revue complète avec des experts juridiques, sécurité, confidentialité et métier.
 corp-governance.c3.viz.steps.0	Nouveau cas d'usage
-corp-governance.c3.viz.steps.1	Tri par niveau de risque
+corp-governance.c3.viz.steps.1	Tri des risques
 corp-governance.c3.viz.steps.2	Faible : voie rapide
 corp-governance.c3.viz.steps.3	Élevé : comité de revue complet
 corp-governance.c4.title	L'AI Act de l'UE pour les entreprises
@@ -660,12 +660,12 @@ corp-governance.c4.text	Les entreprises sont généralement des « déployeurs �
 corp-governance.c4.viz.items.0	Éviter les pratiques interdites
 corp-governance.c4.viz.items.1	Connaître les usages à haut risque
 corp-governance.c4.viz.items.2	Supervision humaine
-corp-governance.c4.viz.items.3	Conserver les journaux
+corp-governance.c4.viz.items.3	Journaux
 corp-governance.c4.viz.items.4	Informer les personnes concernées
 corp-governance.c5.title	Obligation de maîtrise de l'IA
 corp-governance.c5.text	Depuis février 2025, l'AI Act de l'UE oblige les fournisseurs et les déployeurs à prendre des mesures pour garantir un niveau suffisant de maîtrise de l'IA chez les personnels qui exploitent ou utilisent des systèmes d'IA.
 corp-governance.c5.viz.items.0.v	Févr. 2025
-corp-governance.c5.viz.items.0.l	L'obligation de maîtrise de l'IA s'applique
+corp-governance.c5.viz.items.0.l	Obligation de maîtrise IA
 corp-governance.c5.viz.items.1.v	tout le personnel
 corp-governance.c5.viz.items.1.l	utilisant des systèmes d'IA concernés
 corp-governance.c6.title	Rôles et responsabilités
@@ -763,7 +763,7 @@ corp-responsible.c6.viz.items.4	Mesurer le bien-être
 corp-responsible.c7.title	Impact environnemental
 corp-responsible.c7.text	L'IA consomme de l'énergie et de l'eau. Choisissez des modèles efficaces, évitez l'usage inutile des plus grands modèles et privilégiez les régions cloud alimentées par une énergie propre.
 corp-responsible.c7.viz.items.0	Dimensionner les modèles
-corp-responsible.c7.viz.items.1	Mise en cache et traitement par lots
+corp-responsible.c7.viz.items.1	Cache et lots
 corp-responsible.c7.viz.items.2	Régions efficaces
 corp-responsible.c7.viz.items.3	Suivre l'énergie si possible
 corp-responsible.c8.title	Fiches de modèle et de système
@@ -819,7 +819,7 @@ corp-ops.c2.viz.items.4	Versions de modèles
 corp-ops.c3.title	Étapes d'évaluation
 corp-ops.c3.text	Chaque changement (nouveau prompt, nouveau modèle, nouvelles données) passe par des évaluations automatisées avant sa publication. Si la qualité baisse, le changement n'est pas livré.
 corp-ops.c3.viz.steps.0	Changement proposé
-corp-ops.c3.viz.steps.1	Lancer la suite d'évaluations
+corp-ops.c3.viz.steps.1	Lancer évaluations
 corp-ops.c3.viz.steps.2	Comparer à l'existant
 corp-ops.c3.viz.steps.3	Livrer seulement si égal ou meilleur
 corp-ops.c4.title	Surveiller la qualité
@@ -851,7 +851,7 @@ corp-ops.c7.viz.items.0	Dépenses par appli et par équipe
 corp-ops.c7.viz.items.1	Budgets et alertes
 corp-ops.c7.viz.items.2	Tokens par requête
 corp-ops.c7.viz.items.3	Taux de succès du cache
-corp-ops.c7.viz.items.4	Répartition des modèles
+corp-ops.c7.viz.items.4	Mix modèles
 corp-ops.c8.title	Boucles de retour humain
 corp-ops.c8.text	Les corrections apportées par les utilisateurs sont de précieuses données d'entraînement et d'évaluation. Collectez-les systématiquement pour améliorer les prompts, la recherche et les modèles.
 corp-ops.c8.viz.steps.0	Sortie de l'IA
@@ -867,7 +867,7 @@ corp-ops.c9.viz.l.items.2	fiabilité
 corp-ops.c9.viz.r.t	Équipes produit
 corp-ops.c9.viz.r.items.0	cas d'usage
 corp-ops.c9.viz.r.items.1	résultats métier
-corp-ops.c9.viz.r.items.2	besoins des utilisateurs
+corp-ops.c9.viz.r.items.2	attentes
 corp-scale.title	Du pilote à la production
 corp-scale.summary	Sortir du purgatoire des pilotes.
 corp-scale.q0.q	Qu'est-ce que le « purgatoire des pilotes » ?
@@ -891,10 +891,10 @@ corp-scale.c0.viz.items.0	Pas de responsable métier
 corp-scale.c0.viz.items.1	Pas de plan d'intégration
 corp-scale.c0.viz.items.2	Valeur non mesurée
 corp-scale.c0.viz.items.3	Questions de risque non résolues
-corp-scale.c0.viz.items.4	L'équipe passe à autre chose
+corp-scale.c0.viz.items.4	Équipe partie
 corp-scale.c1.title	Concevoir pour la production dès le premier jour
 corp-scale.c1.text	Même dans un pilote, utilisez de vraies données, de vrais utilisateurs, l'architecture cible et les contrôles de sécurité. Une démo sur des échantillons propres ne prouve pas grand-chose.
-corp-scale.c1.viz.l.t	Pilote de démonstration
+corp-scale.c1.viz.l.t	Pilote démo
 corp-scale.c1.viz.l.items.0	données d'échantillon
 corp-scale.c1.viz.l.items.1	isolé
 corp-scale.c1.viz.l.items.2	diapositives impressionnantes
@@ -1015,7 +1015,7 @@ corp-change.c4.viz.r.items.1	nouveaux rôles
 corp-change.c4.viz.r.items.2	gros gains
 corp-change.c5.title	Les dirigeants montrent l'exemple
 corp-change.c5.text	Quand les dirigeants utilisent eux-mêmes les outils d'IA de façon visible et en parlent, l'adoption augmente. Sinon, les équipes en concluent que ce n'est pas important.
-corp-change.c5.viz.steps.0	Les dirigeants utilisent l'IA visiblement
+corp-change.c5.viz.steps.0	Dirigeants utilisent l'IA
 corp-change.c5.viz.steps.1	Partager des exemples
 corp-change.c5.viz.steps.2	Les équipes suivent
 corp-change.c5.viz.steps.3	La culture évolue
@@ -1031,7 +1031,7 @@ corp-change.c7.text	L'authentification unique, l'intégration aux outils existan
 corp-change.c7.viz.items.0	Authentification unique
 corp-change.c7.viz.items.1	Intégré aux outils quotidiens
 corp-change.c7.viz.items.2	Bibliothèque de prompts et de modèles
-corp-change.c7.viz.items.3	Bon accueil des nouveaux utilisateurs
+corp-change.c7.viz.items.3	Bon accueil
 corp-change.c7.viz.items.4	Aide rapide
 corp-change.c8.title	Célébrer et partager
 corp-change.c8.text	Partagez des histoires de réussite, organisez des démonstrations internes ou des hackathons, et reconnaissez ceux qui trouvent de nouveaux usages utiles.
@@ -1046,7 +1046,7 @@ corp-change.c9.viz.items.0	Renforcement
 corp-change.c9.viz.items.1	Capacité
 corp-change.c9.viz.items.2	Connaissance
 corp-change.c9.viz.items.3	Désir
-corp-change.c9.viz.items.4	Prise de conscience
+corp-change.c9.viz.items.4	Conscience
 corp-skills.title	Compétences et modèle opérationnel
 corp-skills.summary	Qui fait quoi dans une entreprise dotée d'IA.
 corp-skills.q0.q	Que fait un centre d'excellence en IA ?
@@ -1170,7 +1170,7 @@ corp-finance.c1.title	Rapprochement à trois voies
 corp-finance.c1.text	Contrôle classique des comptes fournisseurs : la facture, le bon de commande et la réception des marchandises doivent concorder sur les quantités et les prix. L'IA accélère le rapprochement et explique les écarts.
 corp-finance.c1.viz.root	Rapprochement à trois voies
 corp-finance.c1.viz.items.0	Bon de commande
-corp-finance.c1.viz.items.1	Réception des marchandises
+corp-finance.c1.viz.items.1	Réception
 corp-finance.c1.viz.items.2	Facture
 corp-finance.c2.title	Rapprochements
 corp-finance.c2.text	Rapprocher relevés bancaires, soldes intragroupe et grands livres est répétitif. Le ML peut apparier des transactions aux références approximatives et apprendre des rapprochements manuels passés.
@@ -1254,9 +1254,9 @@ corp-supply.c1.viz.steps.2	Alerter les planificateurs
 corp-supply.c1.viz.steps.3	Réacheminer ou ajuster
 corp-supply.c2.title	Optimisation logistique
 corp-supply.c2.text	L'optimisation et le ML planifient les itinéraires, les calendriers de navires, la préparation en entrepôt et le chargement des camions, ce qui réduit les coûts et les émissions.
-corp-supply.c2.viz.items.0	Planification d'itinéraires
+corp-supply.c2.viz.items.0	Itinéraires
 corp-supply.c2.viz.items.1	Planification des navires
-corp-supply.c2.viz.items.2	Affectation des emplacements d'entrepôt
+corp-supply.c2.viz.items.2	Emplacements
 corp-supply.c2.viz.items.3	Optimisation du chargement
 corp-supply.c2.viz.items.4	Suivi des émissions
 corp-supply.c3.title	Maintenance prédictive
@@ -1431,7 +1431,7 @@ corp-hrlegal.c2.viz.items.0.w	se fier aux citations de l'IA
 corp-hrlegal.c2.viz.items.0.r	vérifier chacune dans les bases officielles
 corp-hrlegal.c3.title	Assistants de politiques internes
 corp-hrlegal.c3.text	Les employés posent des questions sur les politiques RH, les règles de déplacement ou les procédures informatiques et obtiennent des réponses fondées sur les documents officiels, avec des liens.
-corp-hrlegal.c3.viz.steps.0	L'employé pose une question
+corp-hrlegal.c3.viz.steps.0	Question employé
 corp-hrlegal.c3.viz.steps.1	Récupérer la politique pertinente
 corp-hrlegal.c3.viz.steps.2	Répondre avec un lien
 corp-hrlegal.c3.viz.steps.3	Escalader si flou
@@ -1448,7 +1448,7 @@ corp-hrlegal.c4.viz.r.items.2	exige des contrôles stricts
 corp-hrlegal.c5.title	Intégration des nouveaux
 corp-hrlegal.c5.text	Des assistants d'IA guident les nouveaux employés dans les systèmes, les politiques et les premières tâches, et répondent à leurs questions à tout moment.
 corp-hrlegal.c5.viz.items.0	Plans d'intégration personnalisés
-corp-hrlegal.c5.viz.items.1	Questions-réponses sur les politiques
+corp-hrlegal.c5.viz.items.1	Q&R politiques
 corp-hrlegal.c5.viz.items.2	Tutoriels sur les systèmes
 corp-hrlegal.c5.viz.items.3	Points d'étape
 corp-hrlegal.c6.title	Formation et développement
@@ -1469,7 +1469,7 @@ corp-hrlegal.c8.text	L'IA suit les évolutions réglementaires, les rattache aux
 corp-hrlegal.c8.viz.steps.0	Nouvelle réglementation publiée
 corp-hrlegal.c8.viz.steps.1	L'IA résume les changements
 corp-hrlegal.c8.viz.steps.2	Rattacher aux politiques internes
-corp-hrlegal.c8.viz.steps.3	Signaler les lacunes
+corp-hrlegal.c8.viz.steps.3	Signaler écarts
 corp-hrlegal.c9.title	Les juristes restent responsables
 corp-hrlegal.c9.text	L'IA accélère le travail juridique, mais la responsabilité professionnelle reste celle des juristes. Utilisez-la pour les premiers jets, la relecture et l'aide à la recherche, avec validation par un expert.
 corp-hrlegal.c9.viz.l.t	IA
@@ -1535,7 +1535,7 @@ corp-dev.c4.viz.steps.2	Générer des tests
 corp-dev.c4.viz.steps.3	Refactoriser ou migrer
 corp-dev.c5.title	Documentation
 corp-dev.c5.text	L'IA rédige et met à jour la documentation, les descriptions d'API et les runbooks à partir du code et de l'historique des commits, allégeant une corvée que les développeurs négligent souvent.
-corp-dev.c5.viz.items.0	Documentation d'API
+corp-dev.c5.viz.items.0	Doc d'API
 corp-dev.c5.viz.items.1	Commentaires de code
 corp-dev.c5.viz.items.2	Runbooks
 corp-dev.c5.viz.items.3	Synthèses d'architecture
@@ -1564,11 +1564,11 @@ corp-dev.c8.viz.items.3	Paquets hallucinés
 corp-dev.c8.viz.items.4	Validation des entrées manquante
 corp-dev.c9.title	Mesurer l'impact sur l'ingénierie
 corp-dev.c9.text	Suivez le délai de cycle, la fréquence de déploiement, le taux d'échec des changements, la satisfaction des développeurs et le temps passé en tâches ingrates, plutôt que les lignes de code générées.
-corp-dev.c9.viz.items.0	Délai de mise en œuvre des changements
+corp-dev.c9.viz.items.0	Délai des changements
 corp-dev.c9.viz.items.1	Fréquence de déploiement
 corp-dev.c9.viz.items.2	Taux d'échec des changements
 corp-dev.c9.viz.items.3	Satisfaction des développeurs
-corp-dev.c9.viz.items.4	Réduction des tâches ingrates
+corp-dev.c9.viz.items.4	Moins de corvées
 corp-value.title	Mesurer la valeur de l'IA
 corp-value.summary	Indicateurs, tableaux de bord et reporting honnête.
 corp-value.q0.q	Lequel est un indicateur de résultat ?
@@ -1622,7 +1622,7 @@ corp-value.c4.viz.f	valeur nette = gains − coûts totaux
 corp-value.c4.viz.items.0.s	gains
 corp-value.c4.viz.items.0.m	économies, revenus, risques évités
 corp-value.c4.viz.items.1.s	coûts
-corp-value.c4.viz.items.1.m	construction, exploitation, changement
+corp-value.c4.viz.items.1.m	build, run, changement
 corp-value.c5.title	Groupes témoins
 corp-value.c5.text	Dans la mesure du possible, comparez des équipes ou des périodes avec et sans IA. Sinon, les améliorations peuvent venir d'autres changements.
 corp-value.c5.viz.l.t	Avec l'IA
@@ -1741,7 +1741,7 @@ corp-strategy.c8.text	Les modèles, les prix et les réglementations évoluent v
 corp-strategy.c8.viz.steps.0	Définir la stratégie
 corp-strategy.c8.viz.steps.1	Exécuter la feuille de route
 corp-strategy.c8.viz.steps.2	Mesurer et apprendre
-corp-strategy.c8.viz.steps.3	Mettre à jour chaque année
+corp-strategy.c8.viz.steps.3	Réviser chaque année
 corp-strategy.c9.title	Les personnes au centre
 corp-strategy.c9.text	Les entreprises qui gagnent avec l'IA allient la technologie à des personnes qui connaissent le métier, à une confiance bâtie par des pratiques responsables et à une culture d'apprentissage.
 corp-strategy.c9.viz.items.0	Connaissance du métier

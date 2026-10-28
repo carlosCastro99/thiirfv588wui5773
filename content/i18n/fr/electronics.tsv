@@ -1465,3 +1465,308 @@ tr-scope.c2.text	Le déclenchement indique à l'oscilloscope quand commencer à 
 tr-scope.c2.viz.steps.0	Le signal dépasse le niveau de déclenchement
 tr-scope.c2.viz.steps.1	L'oscilloscope commence à tracer
 tr-scope.c2.viz.steps.2	Image stable à chaque balayage
+tr-scope.c3.title	Bande passante
+tr-scope.c3.text	La bande passante d'un oscilloscope limite la vitesse des signaux qu'il peut afficher fidèlement. En règle générale, choisissez une bande passante d'environ cinq fois la fréquence la plus haute qui vous intéresse.
+tr-scope.c3.viz.f	bande passante ≈ 5 × fréquence du signal
+tr-scope.c3.viz.items.0.s	Horloge SPI 10 MHz
+tr-scope.c3.viz.items.0.m	demande un oscilloscope de ~50 MHz
+tr-scope.c4.title	Danger de la pince de masse
+tr-scope.c4.text	La masse de la sonde de l'oscilloscope est reliée à la terre du secteur. La fixer sur un point qui n'est pas au potentiel de la terre, par exemple dans un circuit secteur, crée un court-circuit. Utilisez des sondes isolées ou différentielles sur le secteur.
+tr-scope.c4.viz.items.0.w	pince de masse sur un circuit secteur
+tr-scope.c4.viz.items.0.r	sonde différentielle ou isolée
+tr-scope.c4.viz.items.1.w	masse sur un nœud qui n'est pas à la masse
+tr-scope.c4.viz.items.1.r	court-circuit
+tr-scope.c5.title	Méthode de débogage
+tr-scope.c5.text	Procédez depuis l'alimentation vers l'extérieur : vérifiez les tensions d'alimentation, puis les horloges, puis les signaux. Ne changez qu'une chose à la fois et notez les résultats.
+tr-scope.c5.viz.steps.0	Vérifier les rails d'alimentation
+tr-scope.c5.viz.steps.1	Vérifier les horloges
+tr-scope.c5.viz.steps.2	Vérifier les signaux
+tr-scope.c5.viz.steps.3	Changer une chose à la fois
+tr-scope.c6.title	Journalisation série
+tr-scope.c6.text	Afficher des valeurs sur le port série est le débogueur le moins cher : que lit le capteur, quelle branche le code a-t-il prise, combien de temps cela a-t-il pris ?
+tr-scope.c6.viz.items.0	Afficher les variables clés
+tr-scope.c6.viz.items.1	Afficher les horodatages
+tr-scope.c6.viz.items.2	Afficher la branche exécutée
+tr-scope.c6.viz.items.3	Retirer les affichages bavards ensuite
+tr-scope.c7.title	Débogage du canard en plastique
+tr-scope.c7.text	Expliquer le problème pas à pas, même à un canard en plastique ou à un collègue, révèle souvent l'erreur. Le mettre par écrit fonctionne aussi.
+tr-scope.c7.viz.steps.0	Expliquer chaque étape à voix haute
+tr-scope.c7.viz.steps.1	Repérer la faille
+tr-scope.c7.viz.steps.2	Trouver le bogue
+tr-scope.c8.title	Les coupables habituels
+tr-scope.c8.text	Beaucoup de pannes sont simples : pas de masse commune, TX/RX inversés, mauvaise tension, fil de platine d'essai mal enfoncé, résistance de rappel manquante, ou mauvaise carte sélectionnée dans l'IDE.
+tr-scope.c8.viz.items.0	Masse commune ?
+tr-scope.c8.viz.items.1	TX/RX inversés ?
+tr-scope.c8.viz.items.2	Bonne tension ?
+tr-scope.c8.viz.items.3	Fil desserré ?
+tr-scope.c8.viz.items.4	Résistances de rappel présentes ?
+tr-scope.c9.title	Des outils bon marché vont loin
+tr-scope.c9.text	Un analyseur logique à 10 €, un multimètre de base et un oscilloscope USB ou un oscilloscope d'établi d'occasion couvrent la plupart des besoins de débogage en loisir.
+tr-scope.c9.viz.items.0	Multimètre
+tr-scope.c9.viz.items.1	Analyseur logique USB
+tr-scope.c9.viz.items.2	Oscilloscope d'entrée de gamme
+tr-scope.c9.viz.items.3	Alimentation de laboratoire avec limitation de courant
+tr-noise.title	Bruit, masse et découplage
+tr-noise.summary	Pourquoi les circuits se comportent mal et comment les calmer.
+tr-noise.q0.q	Où placer un condensateur de découplage de 100 nF ?
+tr-noise.q0.o0	N'importe où sur la carte
+tr-noise.q0.o1	Juste à côté des broches d'alimentation de la puce
+tr-noise.q0.o2	À la batterie
+tr-noise.q0.x	Une courte distance donne une alimentation locale rapide.
+tr-noise.q1.q	Que prévient l'hystérésis ?
+tr-noise.q1.o0	La perte d'alimentation
+tr-noise.q1.o1	Le scintillement rapide marche-arrêt autour d'un seuil
+tr-noise.q1.o2	Les boucles de masse
+tr-noise.q1.x	Des seuils d'enclenchement et de coupure distincts.
+tr-noise.q2.q	Pourquoi utiliser une paire torsadée pour de longs câbles de capteur ?
+tr-noise.q2.o0	C'est moins cher
+tr-noise.q2.o1	Le bruit est capté de la même façon sur les deux fils et s'annule
+tr-noise.q2.o2	Elle transporte plus de courant
+tr-noise.q2.x	Le torsadage annule le bruit induit.
+tr-noise.c0.title	Condensateurs de découplage
+tr-noise.c0.text	Chaque puce a besoin d'un petit condensateur (typiquement 100 nF) juste à côté de ses broches d'alimentation. Quand la puce appelle soudain du courant, le condensateur le fournit localement, ce qui évite les creux sur le rail.
+tr-noise.c0.viz.steps.0	La puce commute
+tr-noise.c0.viz.steps.1	Appel de courant soudain
+tr-noise.c0.viz.steps.2	Le 100 nF voisin le fournit
+tr-noise.c0.viz.steps.3	Le rail reste stable
+tr-noise.c1.title	Capacité de réserve
+tr-noise.c1.text	En plus des petits condensateurs de découplage, ajoutez un électrolytique ou céramique plus gros (10–470 µF) à l'entrée de l'alimentation de la carte et près des moteurs ou des radios, pour absorber les creux plus lents.
+tr-noise.c1.viz.l.t	Découplage 100 nF
+tr-noise.c1.viz.l.items.0	près de chaque puce
+tr-noise.c1.viz.l.items.1	pointes rapides
+tr-noise.c1.viz.r.t	Réserve 10–470 µF
+tr-noise.c1.viz.r.items.0	à l'entrée d'alimentation
+tr-noise.c1.viz.r.items.1	creux plus lents
+tr-noise.c2.title	Boucles de masse
+tr-noise.c2.text	Si deux parties d'un système sont mises à la masse en des points différents, à des potentiels différents, un courant circule dans les fils de masse et provoque du ronflement en audio ou des erreurs dans les capteurs.
+tr-noise.c2.viz.items.0.w	masse en deux points éloignés
+tr-noise.c2.viz.items.0.r	point de masse unique
+tr-noise.c2.viz.items.1.w	ronflement audio
+tr-noise.c2.viz.items.1.r	casser la boucle par isolation
+tr-noise.c3.title	Masse en étoile
+tr-noise.c3.text	Ramenez séparément à un même point les masses des parties bruyantes (moteurs, alimentation) et des parties sensibles (capteurs), pour que les courants parasites ne passent pas par les chemins de masse sensibles.
+tr-noise.c3.viz.root	Point de masse en étoile
+tr-noise.c3.viz.items.0	Masse du driver de moteur
+tr-noise.c3.viz.items.1	Masse du microcontrôleur
+tr-noise.c3.viz.items.2	Masse du capteur
+tr-noise.c4.title	Longs câbles de capteur
+tr-noise.c4.text	Les longs fils se comportent comme des antennes. Utilisez des paires torsadées, du câble blindé, des signaux de plus faible impédance, ou des signaux numériques et différentiels pour les longues distances.
+tr-noise.c4.viz.items.0	Paire torsadée
+tr-noise.c4.viz.items.1	Câble blindé, blindage à la masse d'un seul côté
+tr-noise.c4.viz.items.2	Signaux numériques ou différentiels
+tr-noise.c4.viz.items.3	Filtrer à l'entrée
+tr-noise.c5.title	Résistances de rappel et entrées flottantes
+tr-noise.c5.text	Une entrée non connectée capte du bruit, lit des valeurs aléatoires et peut même augmenter la consommation. Définissez toujours son niveau avec une résistance de rappel vers le haut ou vers le bas.
+tr-noise.c5.viz.items.0.w	entrée inutilisée flottante
+tr-noise.c5.viz.items.0.r	activer un pull-up ou un pull-down
+tr-noise.c5.viz.items.1.w	entrée de bouton aléatoire
+tr-noise.c5.viz.items.1.r	ajouter un pull-up
+tr-noise.c6.title	Filtrage logiciel
+tr-noise.c6.text	Même avec un bon matériel, les mesures peuvent osciller. Les filtres médians éliminent les pointes ; les moyennes mobiles lissent le bruit ; l'hystérésis empêche les seuils de scintiller.
+tr-noise.c6.viz.items.0.a	médiane
+tr-noise.c6.viz.items.0.b	supprime les pointes
+tr-noise.c6.viz.items.1.a	moyenne mobile
+tr-noise.c6.viz.items.1.b	lisse le bruit
+tr-noise.c6.viz.items.2.a	hystérésis
+tr-noise.c6.viz.items.2.b	seuils marche/arrêt stables
+tr-noise.c7.title	Hystérésis
+tr-noise.c7.text	Un thermostat réglé sur 20 °C claquerait sans cesse autour de 20. Avec une hystérésis, il s'enclenche à 19,5 et se coupe à 20,5. Les thermostats d'ESPHome et de Home Assistant le permettent.
+tr-noise.c7.viz.unit	°C
+tr-noise.c7.viz.items.0.l	chauffage allumé
+tr-noise.c7.viz.items.1.l	chauffage éteint
+tr-noise.c8.title	Bruit de commutation
+tr-noise.c8.text	Les convertisseurs buck et les moteurs créent des fronts rapides qui rayonnent du bruit. Gardez leurs boucles petites, placez les condensateurs d'entrée tout près et éloignez-les des circuits analogiques.
+tr-noise.c8.viz.items.0	Petites boucles de commutation
+tr-noise.c8.viz.items.1	Condensateurs d'entrée proches
+tr-noise.c8.viz.items.2	Circuits analogiques éloignés
+tr-noise.c8.viz.items.3	Plan de masse continu
+tr-noise.c9.title	CEM
+tr-noise.c9.text	Les produits commerciaux doivent passer des tests de compatibilité électromagnétique (CEM) : ils ne doivent pas émettre trop de perturbations ni être perturbés par elles. Le marquage CE en Europe couvre cela.
+tr-noise.c9.viz.l.t	Émissions
+tr-noise.c9.viz.l.items.0	ne pas gêner les autres
+tr-noise.c9.viz.l.items.1	radio, TV
+tr-noise.c9.viz.r.t	Immunité
+tr-noise.c9.viz.r.items.0	résister aux perturbations
+tr-noise.c9.viz.r.items.1	décharges, surtensions, radios proches
+tr-displays.title	Écrans et LED
+tr-displays.summary	Tout illuminer, d'une LED à un écran.
+tr-displays.q0.q	Quel courant 100 LED WS2812B peuvent-elles appeler au blanc maximal ?
+tr-displays.q0.o0	0,6 A
+tr-displays.q0.o1	6 A
+tr-displays.q0.o2	60 A
+tr-displays.q0.x	100 × 60 mA = 6 A.
+tr-displays.q1.q	Quel écran conserve son image sans alimentation ?
+tr-displays.q1.o0	OLED
+tr-displays.q1.o1	LCD
+tr-displays.q1.o2	Papier électronique
+tr-displays.q1.x	Le papier électronique est bistable.
+tr-displays.q2.q	De la lumière rouge plus de la lumière verte apparaît…
+tr-displays.q2.o0	Bleue
+tr-displays.q2.o1	Jaune
+tr-displays.q2.o2	Blanche
+tr-displays.q2.x	Mélange additif des couleurs.
+tr-displays.c0.title	Luminosité d'une LED et courant
+tr-displays.c0.text	La luminosité d'une LED dépend du courant ; on l'alimente donc avec une résistance ou un driver à courant constant, jamais directement depuis une source de tension.
+tr-displays.c0.viz.steps.0	Tension d'alimentation
+tr-displays.c0.viz.steps.1	Résistance ou driver de courant
+tr-displays.c0.viz.steps.2	LED à son courant nominal
+tr-displays.c0.viz.steps.3	Luminosité stable
+tr-displays.c1.title	LED adressables
+tr-displays.c1.text	Les rubans WS2812B (« NeoPixel ») contiennent un minuscule contrôleur dans chaque LED. Un seul fil de données fixe la couleur de chaque LED individuellement, parfait pour des effets commandés par un ESP32.
+tr-displays.c1.viz.steps.0	Broche de données de l'ESP32
+tr-displays.c1.viz.steps.1	La LED 1 prend sa couleur
+tr-displays.c1.viz.steps.2	Transmet le reste
+tr-displays.c1.viz.steps.3	LED 2, LED 3…
+tr-displays.c2.title	Alimenter des rubans de LED
+tr-displays.c2.text	Chaque WS2812B peut appeler environ 60 mA au blanc maximal. Les longs rubans demandent des fils épais et une alimentation injectée en plusieurs points.
+tr-displays.c2.example.0	5 m × 60 LED/m
+tr-displays.c2.example.1	300 × 0,06
+tr-displays.c2.example.2	≈ 18 A au blanc maximal : grosse alimentation 5 V
+tr-displays.c2.viz.f	I ≈ LED × 60 mA
+tr-displays.c2.viz.items.0.s	60 LED
+tr-displays.c2.viz.items.0.m	un mètre
+tr-displays.c2.viz.items.1.s	≈ 3,6 A
+tr-displays.c2.viz.items.1.m	au blanc maximal, 5 V
+tr-displays.c3.title	Adapter le niveau des données
+tr-displays.c3.text	Les rubans WS2812B en 5 V peuvent ne pas lire de façon fiable un signal de données 3,3 V venant d'un ESP32. Un simple adaptateur de niveau (comme un 74AHCT125) ou une première LED sacrifiée supprime le scintillement.
+tr-displays.c3.viz.items.0.w	couleurs aléatoires et scintillement
+tr-displays.c3.viz.items.0.r	adaptateur de niveau sur la ligne de données
+tr-displays.c3.viz.items.1.w	long fil de données
+tr-displays.c3.viz.items.1.r	ajouter une résistance de 330 Ω et le garder court
+tr-displays.c4.title	Écrans LCD à caractères
+tr-displays.c4.text	Le classique LCD 16×2 affiche deux lignes de texte. Avec un module I²C, il ne demande que quatre fils.
+tr-displays.c4.viz.items.0.a	LCD 16×2
+tr-displays.c4.viz.items.0.b	2 lignes de 16 caractères
+tr-displays.c4.viz.items.1.a	module I²C
+tr-displays.c4.viz.items.1.b	4 fils
+tr-displays.c4.viz.items.2.a	rétroéclairage
+tr-displays.c4.viz.items.2.b	réglable
+tr-displays.c5.title	Écrans OLED
+tr-displays.c5.text	Les petits écrans OLED (comme le SSD1306 de 0,96", 128×64) offrent des graphismes nets sans rétroéclairage. Chaque pixel émet de la lumière, donc le noir ne consomme rien. Les images fixes peuvent marquer l'écran avec le temps.
+tr-displays.c5.viz.l.t	OLED
+tr-displays.c5.viz.l.items.0	noirs profonds
+tr-displays.c5.viz.l.items.1	petit
+tr-displays.c5.viz.l.items.2	peut marquer
+tr-displays.c5.viz.r.t	LCD/TFT
+tr-displays.c5.viz.r.items.0	rétroéclairé
+tr-displays.c5.viz.r.items.1	plus grand et moins cher
+tr-displays.c5.viz.r.items.2	couleur
+tr-displays.c6.title	Papier électronique
+tr-displays.c6.text	Les écrans à papier électronique conservent leur image sans aucune énergie, comme une liseuse Kindle. Ils se rafraîchissent lentement, mais conviennent parfaitement aux tableaux de bord sur batterie mis à jour toutes les quelques minutes.
+tr-displays.c6.viz.l.t	Papier électronique
+tr-displays.c6.viz.l.items.0	aucune énergie pour garder l'image
+tr-displays.c6.viz.l.items.1	rafraîchissement lent
+tr-displays.c6.viz.l.items.2	lisible au soleil
+tr-displays.c6.viz.r.t	TFT
+tr-displays.c6.viz.r.items.0	rapide et coloré
+tr-displays.c6.viz.r.items.1	alimentation constante requise
+tr-displays.c7.title	Multiplexage
+tr-displays.c7.text	Pour piloter de nombreuses LED avec peu de broches, allumez-les rangée par rangée, très rapidement. La persistance rétinienne donne l'impression d'un affichage stable.
+tr-displays.c7.viz.steps.0	Allumer la rangée 1
+tr-displays.c7.viz.steps.1	Rangée 2
+tr-displays.c7.viz.steps.2	Rangée 3
+tr-displays.c7.viz.steps.3	Répéter des centaines de fois par seconde
+tr-displays.c8.title	Mélange des couleurs
+tr-displays.c8.text	Les LED RVB mélangent lumière rouge, verte et bleue. Rouge + vert à fond donne du jaune ; les trois à fond font du blanc.
+tr-displays.c8.viz.items.0.a	rouge + vert
+tr-displays.c8.viz.items.0.b	jaune
+tr-displays.c8.viz.items.1.a	vert + bleu
+tr-displays.c8.viz.items.1.b	cyan
+tr-displays.c8.viz.items.2.a	rouge + bleu
+tr-displays.c8.viz.items.2.b	magenta
+tr-displays.c8.viz.items.3.a	les trois
+tr-displays.c8.viz.items.3.b	blanc
+tr-displays.c9.title	Écrans dans ESPHome
+tr-displays.c9.text	ESPHome prend en charge de nombreux écrans : affichez températures, horloges ou états de Home Assistant avec quelques lignes de configuration et une lambda pour le dessin.
+tr-displays.c9.viz.items.0	OLED SSD1306
+tr-displays.c9.viz.items.1	TFT ILI9341
+tr-displays.c9.viz.items.2	Papier électronique Waveshare
+tr-displays.c9.viz.items.3	Rubans WS2812 via le composant light
+tr-computer.title	Comment fonctionne un ordinateur
+tr-computer.summary	Des transistors aux programmes en cours d'exécution.
+tr-computer.q0.q	Quelles sont les étapes du cycle du processeur ?
+tr-computer.q0.o0	Charger, enregistrer, quitter
+tr-computer.q0.o1	Chercher, décoder, exécuter
+tr-computer.q0.o2	Lire, écrire, imprimer
+tr-computer.q0.x	C'est la boucle centrale de tout processeur.
+tr-computer.q1.q	Pourquoi les processeurs ont-ils des caches ?
+tr-computer.q1.o0	Pour stocker des fichiers
+tr-computer.q1.o1	Pour garder à proximité et rapidement accessibles les données fréquemment utilisées
+tr-computer.q1.o2	Pour refroidir la puce
+tr-computer.q1.x	La RAM est lente comparée au processeur.
+tr-computer.q2.q	Quel jeu d'instructions, ouvert, est utilisé dans l'ESP32-C3 ?
+tr-computer.q2.o0	x86
+tr-computer.q2.o1	ARM
+tr-computer.q2.o2	RISC-V
+tr-computer.q2.x	RISC-V est open source.
+tr-computer.c0.title	La boucle du processeur
+tr-computer.c0.text	Un processeur répète un cycle des milliards de fois par seconde : chercher une instruction en mémoire, la décoder, l'exécuter, puis passer à la suivante.
+tr-computer.c0.viz.steps.0	Chercher l'instruction
+tr-computer.c0.viz.steps.1	La décoder
+tr-computer.c0.viz.steps.2	L'exécuter
+tr-computer.c0.viz.steps.3	Instruction suivante
+tr-computer.c1.title	Les instructions sont simples
+tr-computer.c1.text	Chaque instruction fait quelque chose de minuscule : additionner deux nombres, les comparer, charger depuis la mémoire, sauter vers une autre instruction. Tout ce qui est complexe est bâti avec des millions d'entre elles.
+tr-computer.c1.viz.items.0	Charger depuis la mémoire
+tr-computer.c1.viz.items.1	Additionner ou multiplier
+tr-computer.c1.viz.items.2	Comparer
+tr-computer.c1.viz.items.3	Sauter si condition
+tr-computer.c1.viz.items.4	Stocker en mémoire
+tr-computer.c2.title	Registres et UAL
+tr-computer.c2.text	Les registres sont de minuscules emplacements de stockage ultra-rapides dans le processeur. L'unité arithmétique et logique (UAL) effectue les calculs et opérations logiques proprement dits sur eux.
+tr-computer.c2.viz.steps.0	Charger des valeurs dans les registres
+tr-computer.c2.viz.steps.1	L'UAL les additionne
+tr-computer.c2.viz.steps.2	Résultat dans un registre
+tr-computer.c2.viz.steps.3	Stocker en mémoire
+tr-computer.c3.title	Compilateurs
+tr-computer.c3.text	Vous écrivez du code dans un langage comme C++ ou Python ; un compilateur ou un interpréteur le transforme en instructions machine que le processeur comprend.
+tr-computer.c3.viz.steps.0	Code source
+tr-computer.c3.viz.steps.1	Compilateur
+tr-computer.c3.viz.steps.2	Code machine
+tr-computer.c3.viz.steps.3	Le processeur l'exécute
+tr-computer.c4.title	Cœurs et threads
+tr-computer.c4.text	Les puces modernes ont plusieurs cœurs, chacun un processeur complet, qui exécutent des tâches distinctes en même temps. L'ESP32 en a deux ; les portables en ont 8 ou plus.
+tr-computer.c4.viz.unit	cœurs (typique)
+tr-computer.c4.viz.items.0.l	Arduino Uno
+tr-computer.c4.viz.items.1.l	ESP32
+tr-computer.c4.viz.items.2.l	Téléphone
+tr-computer.c4.viz.items.3.l	Portable
+tr-computer.c4.viz.items.4.l	Serveur
+tr-computer.c5.title	La fréquence d'horloge n'est pas tout
+tr-computer.c5.text	Les performances dépendent des instructions par cycle, de la taille du cache, de la vitesse de la mémoire et du parallélisme, pas seulement des GHz. Une puce récente à 3 GHz peut être bien plus rapide qu'une ancienne à 4 GHz.
+tr-computer.c5.viz.items.0	Instructions par cycle
+tr-computer.c5.viz.items.1	Taille du cache
+tr-computer.c5.viz.items.2	Bande passante mémoire
+tr-computer.c5.viz.items.3	Nombre de cœurs
+tr-computer.c5.viz.items.4	Fréquence d'horloge
+tr-computer.c6.title	Caches
+tr-computer.c6.text	Aller chercher des données en RAM prend longtemps à l'échelle du processeur. Les caches gardent près du cœur les données récemment utilisées. La plupart des programmes réutilisent leurs données : les caches répondent donc la plupart du temps.
+tr-computer.c6.viz.unit	temps d'accès approximatif (ns)
+tr-computer.c6.viz.items.0.l	Cache L1
+tr-computer.c6.viz.items.1.l	Cache L2
+tr-computer.c6.viz.items.2.l	RAM
+tr-computer.c6.viz.items.3.l	SSD
+tr-computer.c7.title	Systèmes d'exploitation
+tr-computer.c7.text	Un système d'exploitation partage le processeur, la mémoire et les périphériques entre de nombreux programmes, en passant de l'un à l'autre des milliers de fois par seconde, si bien que chacun semble tourner en continu.
+tr-computer.c7.viz.root	Système d'exploitation
+tr-computer.c7.viz.items.0	Planifie les programmes
+tr-computer.c7.viz.items.1	Gère la mémoire
+tr-computer.c7.viz.items.2	Pilote les périphériques
+tr-computer.c7.viz.items.3	Gère fichiers et réseau
+tr-computer.c8.title	Architectures
+tr-computer.c8.text	x86 domine les PC et les serveurs ; ARM domine les téléphones et gagne les portables et les centres de données ; RISC-V est un jeu d'instructions ouvert qui progresse dans les microcontrôleurs, comme l'ESP32-C3.
+tr-computer.c8.viz.items.0.a	x86
+tr-computer.c8.viz.items.0.b	PC et serveurs
+tr-computer.c8.viz.items.1.a	ARM
+tr-computer.c8.viz.items.1.b	téléphones, Mac d'Apple, serveurs
+tr-computer.c8.viz.items.2.a	RISC-V
+tr-computer.c8.viz.items.2.b	ouvert, microcontrôleurs
+tr-computer.c8.viz.items.3.a	Xtensa
+tr-computer.c8.viz.items.3.b	ESP32 d'origine
+tr-computer.c9.title	La loi de Moore
+tr-computer.c9.text	En 1965, Gordon Moore a observé que le nombre de transistors sur une puce doublait environ tous les deux ans. La tendance a tenu pendant des décennies, même si elle ralentit à mesure que les transistors approchent des tailles atomiques.
+tr-computer.c9.viz.events.0.l	Intel 4004, 2 300 transistors
+tr-computer.c9.viz.events.1.l	Pentium, 3 millions
+tr-computer.c9.viz.events.2.l	~1 milliard
+tr-computer.c9.viz.events.3.y	années 2020
+tr-computer.c9.viz.events.3.l	plus de 50 milliards

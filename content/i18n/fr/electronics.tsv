@@ -846,3 +846,302 @@ tr-esphome.q2.x	La puce s'éteint presque entièrement.
 tr-esphome.c0.title	L'ESP32
 tr-esphome.c0.text	Un microcontrôleur bon marché avec Wi-Fi et Bluetooth intégrés, deux cœurs jusqu'à 240 MHz et des dizaines de broches GPIO. C'est le cœur d'innombrables appareils domotiques faits maison.
 tr-esphome.c0.viz.items.0.v	240 MHz
+tr-esphome.c0.viz.items.0.l	processeur double cœur
+tr-esphome.c0.viz.items.1.v	Wi-Fi + BLE
+tr-esphome.c0.viz.items.1.l	intégrés
+tr-esphome.c0.viz.items.2.l	carte typique
+tr-esphome.c1.title	ESPHome en une idée
+tr-esphome.c1.text	Au lieu d'écrire du code C++, vous décrivez votre appareil dans un fichier YAML : quelle carte, quels capteurs sur quelles broches. ESPHome compile le firmware et le connecte à Home Assistant.
+tr-esphome.c1.viz.steps.0	Fichier YAML
+tr-esphome.c1.viz.steps.1	ESPHome compile
+tr-esphome.c1.viz.steps.2	Flasher la carte
+tr-esphome.c1.viz.steps.3	Apparaît dans Home Assistant
+tr-esphome.c2.title	Un capteur de température en YAML
+tr-esphome.c2.text	Quelques lignes décrivent la carte, le Wi-Fi et un capteur : plateforme dht, broche GPIO4, nom « Température du salon », intervalle de mise à jour 60 s. C'est tout le programme.
+tr-esphome.c2.viz.items.0	esphome : nom
+tr-esphome.c2.viz.items.1	esp32 : carte
+tr-esphome.c2.viz.items.2	wifi : identifiants
+tr-esphome.c2.viz.items.3	sensor : plateforme et broche
+tr-esphome.c2.viz.items.4	update_interval: 60s
+tr-esphome.c3.title	Mises à jour par liaison radio (OTA)
+tr-esphome.c3.text	Après le premier flashage par USB, ESPHome met à jour les appareils par Wi-Fi. Modifiez le YAML, cliquez sur installer, et l'appareil au plafond se met à jour tout seul.
+tr-esphome.c3.viz.steps.0	Modifier le YAML
+tr-esphome.c3.viz.steps.1	Compiler
+tr-esphome.c3.viz.steps.2	Envoyer par Wi-Fi
+tr-esphome.c3.viz.steps.3	L'appareil redémarre avec le nouveau firmware
+tr-esphome.c4.title	API native
+tr-esphome.c4.text	Les appareils ESPHome dialoguent avec Home Assistant via une API native rapide et chiffrée. Les entités apparaissent automatiquement, et les automatisations peuvent s'exécuter sur l'appareil même si Home Assistant est hors service.
+tr-esphome.c4.viz.l.t	API native
+tr-esphome.c4.viz.l.items.0	découverte automatique
+tr-esphome.c4.viz.l.items.1	chiffrée
+tr-esphome.c4.viz.l.items.2	faible latence
+tr-esphome.c4.viz.r.t	MQTT
+tr-esphome.c4.viz.r.items.0	fonctionne avec tout broker
+tr-esphome.c4.viz.r.items.1	plus de configuration
+tr-esphome.c5.title	Appareils UART : l'exemple du climatiseur
+tr-esphome.c5.text	ESPHome peut dialoguer avec des appareils électroménagers par UART. Des projets comme MitsubishiCN105ESPHome relient un ESP32 au port CN105 d'un climatiseur Mitsubishi pour un contrôle local, sans le cloud.
+tr-esphome.c5.viz.steps.0	ESP32
+tr-esphome.c5.viz.steps.1	UART vers le port CN105
+tr-esphome.c5.viz.steps.2	Composant ESPHome
+tr-esphome.c5.viz.steps.3	Contrôle local dans Home Assistant
+tr-esphome.c6.title	Bien choisir les broches
+tr-esphome.c6.text	Certaines broches de l'ESP32 sont en entrée seule (34–39), certaines influencent le démarrage (0, 2, 12, 15), et les broches ADC2 ne servent pas aux mesures analogiques quand le Wi-Fi est actif. Consultez un brochage avant de câbler.
+tr-esphome.c6.viz.items.0.w	capteur analogique sur une broche ADC2
+tr-esphome.c6.viz.items.0.r	utiliser une broche ADC1 (32–39)
+tr-esphome.c6.viz.items.1.w	bouton sur GPIO12 bloque le démarrage
+tr-esphome.c6.viz.items.1.r	le déplacer sur une broche sûre
+tr-esphome.c7.title	Deep sleep dans ESPHome
+tr-esphome.c7.text	Les appareils sur batterie peuvent se réveiller, faire une mesure, l'envoyer et retourner en deep sleep pendant plusieurs minutes. Un ESP32 en deep sleep consomme des microampères au lieu de dizaines de milliampères.
+tr-esphome.c7.viz.steps.0	Réveil
+tr-esphome.c7.viz.steps.1	Lire le capteur
+tr-esphome.c7.viz.steps.2	Envoyer par Wi-Fi
+tr-esphome.c7.viz.steps.3	Deep sleep pendant 10 min
+tr-esphome.c8.title	Variantes de l'ESP32
+tr-esphome.c8.text	La famille ne cesse de s'agrandir : l'ESP32-S3 ajoute des instructions d'IA et l'USB, l'ESP32-C3 est une version RISC-V à bas coût, l'ESP32-C6 ajoute le Wi-Fi 6 et la radio Thread/Zigbee.
+tr-esphome.c8.viz.items.0.a	ESP32
+tr-esphome.c8.viz.items.0.b	double cœur classique
+tr-esphome.c8.viz.items.1.a	S3
+tr-esphome.c8.viz.items.1.b	USB, caméra, IA
+tr-esphome.c8.viz.items.2.a	C3
+tr-esphome.c8.viz.items.2.b	RISC-V économique
+tr-esphome.c8.viz.items.3.a	C6
+tr-esphome.c8.viz.items.3.b	Wi-Fi 6, Thread, Zigbee
+tr-esphome.c9.title	Local et privé
+tr-esphome.c9.text	Les appareils ESPHome fonctionnent entièrement sur votre réseau, sans compte cloud. Si Internet tombe, vos capteurs et interrupteurs continuent de marcher.
+tr-esphome.c9.viz.items.0	Aucune dépendance au cloud
+tr-esphome.c9.viz.items.1	Les données restent chez vous
+tr-esphome.c9.viz.items.2	Fonctionne pendant les pannes d'Internet
+tr-esphome.c9.viz.items.3	Firmware open source
+tr-proto.title	De la platine d'essai au circuit imprimé
+tr-proto.summary	Prototypage, soudure et passage au permanent.
+tr-proto.q0.q	Où faut-il amener la soudure ?
+tr-proto.q0.o0	Sur la panne du fer
+tr-proto.q0.o1	Dans la jonction chauffée
+tr-proto.q0.o2	Avant de chauffer quoi que ce soit
+tr-proto.q0.x	La jonction doit être assez chaude pour la faire fondre.
+tr-proto.q1.q	Une soudure terne et grumeleuse est généralement…
+tr-proto.q1.o0	Parfaite
+tr-proto.q1.o1	Une soudure froide
+tr-proto.q1.o2	Un pont de soudure
+tr-proto.q1.x	Elle n'a pas assez chauffé.
+tr-proto.q2.q	Quel outil gratuit permet de concevoir des circuits imprimés ?
+tr-proto.q2.o0	Excel
+tr-proto.q2.o1	KiCad
+tr-proto.q2.o2	Photoshop
+tr-proto.q2.x	KiCad gère le schéma et le routage.
+tr-proto.c0.title	Platines d'essai
+tr-proto.c0.text	Une platine d'essai permet de monter des circuits sans souder. Les trous de chaque courte rangée de cinq sont reliés ; les longs rails sur les côtés portent l'alimentation et la masse.
+tr-proto.c0.viz.items.0.a	rangées courtes
+tr-proto.c0.viz.items.0.b	5 trous reliés
+tr-proto.c0.viz.items.1.a	rails latéraux
+tr-proto.c0.viz.items.1.b	alimentation et masse
+tr-proto.c0.viz.items.2.a	rainure centrale
+tr-proto.c0.viz.items.2.b	pour les puces
+tr-proto.c1.title	Fils de liaison et faux contacts
+tr-proto.c1.text	Les platines d'essai sont idéales pour tester, mais les contacts se desserrent et ajoutent de la résistance. Si un circuit se comporte bizarrement, renfoncez les fils avant de réécrire votre code.
+tr-proto.c1.viz.items.0	Vérifier que chaque fil est bien enfoncé
+tr-proto.c1.viz.items.1	Garder les fils courts
+tr-proto.c1.viz.items.2	Utiliser les rails pour l'alimentation
+tr-proto.c1.viz.items.3	Ne pas faire passer de forts courants
+tr-proto.c2.title	Bases de la soudure
+tr-proto.c2.text	Chauffez la jonction (pastille et fil ensemble) avec le fer, puis amenez la soudure dans la jonction, pas sur le fer. Une bonne soudure est brillante et a la forme d'un petit volcan.
+tr-proto.c2.viz.steps.0	Nettoyer la panne
+tr-proto.c2.viz.steps.1	Chauffer pastille et patte ensemble
+tr-proto.c2.viz.steps.2	Amener la soudure dans la jonction
+tr-proto.c2.viz.steps.3	Retirer la soudure, puis le fer
+tr-proto.c3.title	Température du fer
+tr-proto.c3.text	Pour la soudure courante sans plomb, environ 330–370 °C convient bien ; la soudure au plomb fond plus bas. Trop froid donne des soudures ternes et granuleuses ; trop chaud brûle les pastilles et le flux.
+tr-proto.c3.viz.unit	°C
+tr-proto.c3.viz.items.0.l	soudure au plomb
+tr-proto.c3.viz.items.1.l	sans plomb
+tr-proto.c3.viz.items.2.l	trop chaud
+tr-proto.c4.title	Mauvaises soudures
+tr-proto.c4.text	Une soudure froide est terne, grumeleuse et peut se fissurer. Un pont relie accidentellement deux pastilles. Trop peu de soudure laisse une jonction fragile. Une tresse à dessouder ou une pompe corrige la plupart des erreurs.
+tr-proto.c4.viz.items.0.a	soudure froide
+tr-proto.c4.viz.items.0.b	terne, grumeleuse
+tr-proto.c4.viz.items.1.a	pont
+tr-proto.c4.viz.items.1.b	deux pastilles en court-circuit
+tr-proto.c4.viz.items.2.a	soudure sèche
+tr-proto.c4.viz.items.2.b	pas assez de soudure
+tr-proto.c4.viz.items.3.a	remède
+tr-proto.c4.viz.items.3.b	tresse ou pompe
+tr-proto.c5.title	Plaque à trous
+tr-proto.c5.text	La plaque à trous (ou à pistes) rend un projet permanent sans concevoir de circuit imprimé : composants soudés sur une grille, reliés par des fils ou des bandes de cuivre.
+tr-proto.c5.viz.l.t	Platine d'essai
+tr-proto.c5.viz.l.items.0	sans soudure
+tr-proto.c5.viz.l.items.1	modifications rapides
+tr-proto.c5.viz.l.items.2	peu fiable à long terme
+tr-proto.c5.viz.r.t	Plaque à trous
+tr-proto.c5.viz.r.items.0	soudée
+tr-proto.c5.viz.r.items.1	permanente
+tr-proto.c5.viz.r.items.2	réalisations uniques
+tr-proto.c6.title	Concevoir un circuit imprimé
+tr-proto.c6.text	Des outils gratuits comme KiCad permettent de dessiner le schéma puis le tracé de la carte. Envoyez les fichiers à un fabricant de circuits imprimés et les cartes arrivent en une semaine environ pour quelques euros.
+tr-proto.c6.viz.steps.0	Schéma dans KiCad
+tr-proto.c6.viz.steps.1	Tracé de la carte
+tr-proto.c6.viz.steps.2	Fichiers Gerber
+tr-proto.c6.viz.steps.3	Circuit imprimé fabriqué
+tr-proto.c7.title	Composants montés en surface
+tr-proto.c7.text	La plupart des composants modernes sont montés en surface (CMS) : minuscules, soudés sur des pastilles plutôt que dans des trous. Les tailles comme 0805 se manipulent à la main ; les plus petites demandent de l'air chaud ou un four de refusion.
+tr-proto.c7.viz.unit	taille (mm, longueur)
+tr-proto.c8.title	Boîtiers
+tr-proto.c8.text	Les projets ont besoin d'une boîte : boîtiers à indice IP pour l'extérieur, boîtiers imprimés en 3D pour des formes sur mesure. Prévoyez presse-étoupes, ventilation et placement de l'antenne hors des boîtes métalliques.
+tr-proto.c8.viz.items.0	IP65 ou plus en extérieur
+tr-proto.c8.viz.items.1	Presse-étoupes
+tr-proto.c8.viz.items.2	Ventilation pour la chaleur
+tr-proto.c8.viz.items.3	Antenne hors du métal
+tr-proto.c9.title	Sécurité pendant la soudure
+tr-proto.c9.text	Utilisez un support pour le fer, aérez ou utilisez un extracteur de fumées (les fumées de flux irritent les poumons), lavez-vous les mains après avoir manipulé la soudure et portez des lunettes de protection en coupant les pattes.
+tr-proto.c9.viz.items.0	Fer sur son support
+tr-proto.c9.viz.items.1	Extracteur de fumées ou fenêtre ouverte
+tr-proto.c9.viz.items.2	Se laver les mains
+tr-proto.c9.viz.items.3	Lunettes de protection pour couper
+tr-logic.title	Logique et binaire
+tr-logic.summary	Bits, portes logiques et façon dont les puces prennent des décisions.
+tr-logic.q0.q	Que vaut le binaire 1101 en décimal ?
+tr-logic.q0.o0	11
+tr-logic.q0.o1	13
+tr-logic.q0.o2	1 101
+tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
+tr-logic.q1.q	Une porte ET avec les entrées 1 et 0 donne en sortie…
+tr-logic.q1.o0	1
+tr-logic.q1.o1	0
+tr-logic.q1.x	ET exige que toutes les entrées soient à 1.
+tr-logic.q2.q	0xFF en décimal vaut…
+tr-logic.q2.o0	15
+tr-logic.q2.o1	255
+tr-logic.q2.o2	256
+tr-logic.q2.x	Deux F hexadécimaux, ce sont huit bits à 1 = 255.
+tr-logic.c0.title	Bits
+tr-logic.c0.text	L'électronique numérique représente tout avec des bits : 0 ou 1, tension basse ou haute. Huit bits forment un octet, qui peut contenir 256 valeurs différentes.
+tr-logic.c0.viz.items.0.v	1 bit
+tr-logic.c0.viz.items.0.l	0 ou 1
+tr-logic.c0.viz.items.1.v	8 bits
+tr-logic.c0.viz.items.1.l	1 octet
+tr-logic.c0.viz.items.2.l	valeurs dans un octet
+tr-logic.c1.title	Nombres binaires
+tr-logic.c1.text	Chaque rang binaire vaut le double de celui à sa droite : 1, 2, 4, 8, 16… Le nombre 1011 vaut 8 + 0 + 2 + 1 = 11.
+tr-logic.c1.viz.items.0.m	le rang des huit
+tr-logic.c1.viz.items.1.m	pas de quatre
+tr-logic.c1.viz.items.2.m	le rang des deux
+tr-logic.c1.viz.items.3.m	le rang des unités
+tr-logic.c2.title	Hexadécimal
+tr-logic.c2.text	L'hexadécimal regroupe quatre bits en un chiffre, de 0 à 9 puis de A à F. Un octet fait exactement deux chiffres hexadécimaux : 0xFF = 255. Les adresses et les couleurs (#FF8800) l'utilisent.
+tr-logic.c2.viz.items.0.a	0x0
+tr-logic.c2.viz.items.1.a	0x9
+tr-logic.c2.viz.items.2.a	0xA
+tr-logic.c2.viz.items.3.a	0xF
+tr-logic.c2.viz.items.4.a	0xFF
+tr-logic.c3.title	ET, OU, NON
+tr-logic.c3.text	Les portes de base : ET donne 1 seulement si toutes les entrées sont à 1 ; OU donne 1 si une entrée au moins est à 1 ; NON inverse l'entrée.
+tr-logic.c3.viz.l.t	ET
+tr-logic.c3.viz.l.items.0	les deux doivent valoir 1
+tr-logic.c3.viz.l.items.1	porte ouverte ET alarme armée → sirène
+tr-logic.c3.viz.r.t	OU
+tr-logic.c3.viz.r.items.0	l'une ou l'autre vaut 1
+tr-logic.c3.viz.r.items.1	bouton A OU bouton B → lumière
+tr-logic.c4.title	NON-ET : la porte universelle
+tr-logic.c4.text	Tout circuit logique, même un processeur entier, peut être construit avec des portes NON-ET seules (un ET suivi d'un NON). Elle est peu coûteuse à fabriquer dans le silicium, donc on la trouve partout.
+tr-logic.c4.viz.steps.0	Portes NON-ET
+tr-logic.c4.viz.steps.1	Forment ET, OU, NON
+tr-logic.c4.viz.steps.2	Forment additionneurs et mémoire
+tr-logic.c4.viz.steps.3	Forment un processeur
+tr-logic.c5.title	OU exclusif (XOR)
+tr-logic.c5.text	Le OU exclusif donne 1 quand les entrées diffèrent. On l'utilise pour additionner des nombres binaires, vérifier la parité et chiffrer simplement.
+tr-logic.c5.viz.items.0.a	0 XOR 0
+tr-logic.c5.viz.items.1.a	0 XOR 1
+tr-logic.c5.viz.items.2.a	1 XOR 0
+tr-logic.c5.viz.items.3.a	1 XOR 1
+tr-logic.c6.title	Additionner avec des portes
+tr-logic.c6.text	Un demi-additionneur additionne deux bits avec un XOR (pour la somme) et un ET (pour la retenue). Enchaînez des additionneurs complets et vous pouvez additionner des nombres de toute taille.
+tr-logic.c6.viz.steps.0	Bits A et B
+tr-logic.c6.viz.steps.1	XOR donne la somme
+tr-logic.c6.viz.steps.2	ET donne la retenue
+tr-logic.c6.viz.steps.3	Enchaîner pour de plus grands nombres
+tr-logic.c7.title	Bascules : de la mémoire avec des portes
+tr-logic.c7.text	Rebouclez deux portes l'une sur l'autre et le circuit se souvient de son dernier état. C'est une bascule, base des registres et de la mémoire rapide.
+tr-logic.c7.viz.steps.0	Deux portes croisées
+tr-logic.c7.viz.steps.1	La sortie se reboucle
+tr-logic.c7.viz.steps.2	Garde 0 ou 1
+tr-logic.c7.viz.steps.3	Un bit de mémoire
+tr-logic.c8.title	Horloges
+tr-logic.c8.text	Les circuits numériques avancent au rythme d'un signal d'horloge qui bat des millions ou des milliards de fois par seconde. À chaque top, les bascules capturent de nouvelles valeurs.
+tr-logic.c8.viz.items.0.v	16 MHz
+tr-logic.c8.viz.items.0.l	Arduino Uno
+tr-logic.c8.viz.items.1.v	240 MHz
+tr-logic.c8.viz.items.1.l	ESP32
+tr-logic.c8.viz.items.2.v	~4 GHz
+tr-logic.c8.viz.items.2.l	processeur de PC
+tr-logic.c9.title	Astuces bit à bit dans le code
+tr-logic.c9.text	Les programmeurs utilisent des opérations bit à bit pour activer, effacer et tester des bits individuels, par exemple dans un registre qui commande des broches GPIO : value | (1<<5) active le bit 5.
+tr-logic.c9.viz.items.0.a	x | (1<<n)
+tr-logic.c9.viz.items.0.b	activer le bit n
+tr-logic.c9.viz.items.1.a	x & ~(1<<n)
+tr-logic.c9.viz.items.1.b	effacer le bit n
+tr-logic.c9.viz.items.2.a	x & (1<<n)
+tr-logic.c9.viz.items.2.b	tester le bit n
+tr-logic.c9.viz.items.3.a	x ^ (1<<n)
+tr-logic.c9.viz.items.3.b	inverser le bit n
+tr-memory.title	Mémoire et stockage
+tr-memory.summary	RAM, flash et EEPROM.
+tr-memory.q0.q	Que deviennent les contenus de la RAM en cas de coupure de courant ?
+tr-memory.q0.o0	Ils sont sauvegardés
+tr-memory.q0.o1	Ils sont perdus
+tr-memory.q0.o2	Ils passent en flash
+tr-memory.q0.x	La RAM est volatile.
+tr-memory.q1.q	Pourquoi ne pas écrire en flash chaque seconde ?
+tr-memory.q1.o0	C'est trop lent
+tr-memory.q1.o1	Les cellules flash s'usent après de nombreux cycles d'effacement
+tr-memory.q1.o2	Cela utilise le Wi-Fi
+tr-memory.q1.x	Endurance en écriture limitée.
+tr-memory.q2.q	Qu'est-ce qui est le plus rapide ?
+tr-memory.q2.o0	SSD
+tr-memory.q2.o1	RAM
+tr-memory.q2.o2	Registres du processeur
+tr-memory.q2.x	Les registres se trouvent dans le processeur.
+tr-memory.c0.title	RAM : rapide mais amnésique
+tr-memory.c0.text	La RAM contient les données sur lesquelles un programme travaille en ce moment. Elle est rapide mais volatile : coupez le courant et tout disparaît.
+tr-memory.c0.viz.l.t	RAM
+tr-memory.c0.viz.l.items.0	rapide
+tr-memory.c0.viz.l.items.1	volatile
+tr-memory.c0.viz.l.items.2	données de travail
+tr-memory.c0.viz.r.t	Flash
+tr-memory.c0.viz.r.items.0	plus lente
+tr-memory.c0.viz.r.items.1	conserve les données hors tension
+tr-memory.c0.viz.r.items.2	programme et fichiers
+tr-memory.c1.title	SRAM et DRAM
+tr-memory.c1.text	La SRAM stocke chaque bit dans une bascule : rapide, utilisée pour les caches et la mémoire des microcontrôleurs. La DRAM stocke les bits sous forme de charge dans de minuscules condensateurs : plus dense et moins chère, utilisée pour la RAM des ordinateurs, mais elle doit être rafraîchie en permanence.
+tr-memory.c1.viz.items.0.a	SRAM
+tr-memory.c1.viz.items.0.b	bascules, rapide, caches
+tr-memory.c1.viz.items.1.a	DRAM
+tr-memory.c1.viz.items.1.b	condensateurs, dense, mémoire de PC
+tr-memory.c1.viz.items.2.a	rafraîchissement
+tr-memory.c1.viz.items.2.b	la DRAM se réécrit des milliers de fois par seconde
+tr-memory.c2.title	Mémoire flash
+tr-memory.c2.text	La flash conserve les données sans alimentation en piégeant des charges dans des cellules isolées. Le programme de votre microcontrôleur, les SSD, les cartes SD et les clés USB l'utilisent tous.
+tr-memory.c2.viz.root	Mémoire flash
+tr-memory.c2.viz.items.0	Programme de microcontrôleur
+tr-memory.c2.viz.items.1	SSD
+tr-memory.c2.viz.items.2	Cartes SD
+tr-memory.c2.viz.items.3	Clés USB
+tr-memory.c3.title	La flash s'use
+tr-memory.c3.text	Chaque cellule flash supporte un nombre limité de cycles d'effacement, d'environ 10 000 à 100 000 pour les petites puces. Écrire une ligne de journal chaque seconde au même endroit la tuera ; le nivellement d'usure répartit les écritures.
+tr-memory.c3.viz.items.0.w	écrire les données du capteur en flash chaque seconde
+tr-memory.c3.viz.items.0.r	les garder en RAM, écrire par lots
+tr-memory.c3.viz.items.1.w	le même bloc à chaque fois
+tr-memory.c3.viz.items.1.r	utiliser le nivellement d'usure
+tr-memory.c4.title	EEPROM
+tr-memory.c4.text	L'EEPROM peut réécrire des octets isolés et convient parfaitement aux petits réglages comme les valeurs de calibration. Sur l'ESP32, elle est émulée en flash, avec une bibliothèque qui s'en charge.
+tr-memory.c4.viz.items.0	Valeurs de calibration
+tr-memory.c4.viz.items.1	Identifiants Wi-Fi
+tr-memory.c4.viz.items.2	Compteurs et réglages
+tr-memory.c4.viz.items.3	Écrire seulement en cas de changement
+tr-memory.c5.title	La mémoire de l'ESP32
+tr-memory.c5.text	Un ESP32 classique a environ 520 Ko de SRAM et généralement 4 Mo de flash. Les variantes avec PSRAM ajoutent plusieurs Mo de RAM supplémentaire, pratique pour les caméras et les écrans.
+tr-memory.c5.viz.unit	Ko (approx.)
+tr-memory.c5.viz.items.0.l	RAM Arduino Uno
+tr-memory.c5.viz.items.1.l	SRAM ESP32
+tr-memory.c5.viz.items.2.l	Flash ESP32
+tr-memory.c5.viz.items.3.l	PSRAM
+tr-memory.c6.title	Pile et tas
+tr-memory.c6.text	Les programmes utilisent deux zones de RAM : la pile pour les appels de fonctions et les variables locales, le tas pour la mémoire demandée à l'exécution. Sur de petits appareils, fragmenter le tas avec de nombreuses chaînes peut faire planter le programme au bout de quelques heures.

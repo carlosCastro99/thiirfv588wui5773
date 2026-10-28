@@ -848,3 +848,603 @@ corp-ops.c6.viz.steps.3	Enquêter
 corp-ops.c7.title	Suivi des coûts
 corp-ops.c7.text	Les coûts de l'IA générative évoluent avec l'usage. Suivez les dépenses par application et par équipe, fixez des budgets et des alertes, et optimisez les prompts et le choix du modèle.
 corp-ops.c7.viz.items.0	Dépenses par appli et par équipe
+corp-ops.c7.viz.items.1	Budgets et alertes
+corp-ops.c7.viz.items.2	Tokens par requête
+corp-ops.c7.viz.items.3	Taux de succès du cache
+corp-ops.c7.viz.items.4	Répartition des modèles
+corp-ops.c8.title	Boucles de retour humain
+corp-ops.c8.text	Les corrections apportées par les utilisateurs sont de précieuses données d'entraînement et d'évaluation. Collectez-les systématiquement pour améliorer les prompts, la recherche et les modèles.
+corp-ops.c8.viz.steps.0	Sortie de l'IA
+corp-ops.c8.viz.steps.1	L'utilisateur la corrige
+corp-ops.c8.viz.steps.2	Correction journalisée
+corp-ops.c8.viz.steps.3	Utilisée pour améliorer
+corp-ops.c9.title	Équipes plateforme
+corp-ops.c9.text	Une équipe plateforme centrale fournit généralement l'outillage (pipelines, passerelle, supervision, cadres d'évaluation) pour que les équipes produit se concentrent sur les cas d'usage.
+corp-ops.c9.viz.l.t	Équipe plateforme
+corp-ops.c9.viz.l.items.0	outils partagés
+corp-ops.c9.viz.l.items.1	standards
+corp-ops.c9.viz.l.items.2	fiabilité
+corp-ops.c9.viz.r.t	Équipes produit
+corp-ops.c9.viz.r.items.0	cas d'usage
+corp-ops.c9.viz.r.items.1	résultats métier
+corp-ops.c9.viz.r.items.2	besoins des utilisateurs
+corp-scale.title	Du pilote à la production
+corp-scale.summary	Sortir du purgatoire des pilotes.
+corp-scale.q0.q	Qu'est-ce que le « purgatoire des pilotes » ?
+corp-scale.q0.o0	Une formation
+corp-scale.q0.o1	De nombreux pilotes qui n'arrivent jamais en production
+corp-scale.q0.o2	Une faille de sécurité
+corp-scale.q0.x	Les pilotes s'enlisent sans responsables, sans intégration et sans preuve de valeur.
+corp-scale.q1.q	Où un outil d'IA doit-il se trouver pour être massivement adopté ?
+corp-scale.q1.o0	Sur un site web distinct
+corp-scale.q1.o1	Dans les outils de travail que les gens utilisent déjà
+corp-scale.q1.o2	Sur une affiche
+corp-scale.q1.x	Les outils intégrés sont utilisés.
+corp-scale.q2.q	Que faire des résultats d'IA à faible confiance ?
+corp-scale.q2.o0	Les approuver automatiquement
+corp-scale.q2.o1	Les confier à des humains
+corp-scale.q2.o2	Les supprimer
+corp-scale.q2.x	Les exceptions vont aux personnes.
+corp-scale.c0.title	Le purgatoire des pilotes
+corp-scale.c0.text	De nombreuses organisations mènent des dizaines de pilotes d'IA qui impressionnent en démo mais ne passent jamais à l'échelle. Causes courantes : pas de responsable clair, pas de plan d'intégration, valeur non démontrée et questions de risque non résolues.
+corp-scale.c0.viz.items.0	Pas de responsable métier
+corp-scale.c0.viz.items.1	Pas de plan d'intégration
+corp-scale.c0.viz.items.2	Valeur non mesurée
+corp-scale.c0.viz.items.3	Questions de risque non résolues
+corp-scale.c0.viz.items.4	L'équipe passe à autre chose
+corp-scale.c1.title	Concevoir pour la production dès le premier jour
+corp-scale.c1.text	Même dans un pilote, utilisez de vraies données, de vrais utilisateurs, l'architecture cible et les contrôles de sécurité. Une démo sur des échantillons propres ne prouve pas grand-chose.
+corp-scale.c1.viz.l.t	Pilote de démonstration
+corp-scale.c1.viz.l.items.0	données d'échantillon
+corp-scale.c1.viz.l.items.1	isolé
+corp-scale.c1.viz.l.items.2	diapositives impressionnantes
+corp-scale.c1.viz.r.t	Pilote orienté production
+corp-scale.c1.viz.r.items.0	données réelles
+corp-scale.c1.viz.r.items.1	utilisateurs réels
+corp-scale.c1.viz.r.items.2	plateforme cible
+corp-scale.c2.title	Définir le succès dès le départ
+corp-scale.c2.text	Convenez de critères de succès mesurables avant de commencer : seuil de précision, temps économisé, satisfaction des utilisateurs, coût par transaction.
+corp-scale.c2.viz.items.0	Seuil de précision
+corp-scale.c2.viz.items.1	Temps économisé par tâche
+corp-scale.c2.viz.items.2	Satisfaction des utilisateurs
+corp-scale.c2.viz.items.3	Coût par transaction
+corp-scale.c2.viz.items.4	Taux d'adoption
+corp-scale.c3.title	L'intégration, c'est le vrai travail
+corp-scale.c3.text	La valeur apparaît quand l'IA est dans le flux de travail : dans l'écran de l'ERP, le client de messagerie, l'outil de tickets, et non dans une fenêtre de chat distincte que l'on oublie d'utiliser.
+corp-scale.c3.viz.l.t	Outil distinct
+corp-scale.c3.viz.l.items.0	étape en plus
+corp-scale.c3.viz.l.items.1	faible adoption
+corp-scale.c3.viz.r.t	Intégré au flux de travail
+corp-scale.c3.viz.r.items.0	usage naturel
+corp-scale.c3.viz.r.items.1	forte adoption
+corp-scale.c4.title	Gérer les exceptions
+corp-scale.c4.text	Concevez pour les cas que l'IA ne sait pas traiter : une faible confiance renvoie vers des humains, avec un moyen simple de corriger et d'apprendre.
+corp-scale.c4.viz.steps.0	L'IA traite l'élément
+corp-scale.c4.viz.steps.1	Forte confiance : automatique
+corp-scale.c4.viz.steps.2	Faible confiance : file humaine
+corp-scale.c4.viz.steps.3	Les corrections remontent
+corp-scale.c5.title	Passer à l'échelle pas à pas
+corp-scale.c5.text	Étendez progressivement : une équipe, une région, un type de document, puis davantage. Chaque étape révèle de nouveaux cas limites et renforce la confiance.
+corp-scale.c5.viz.events.0.y	Mois 1
+corp-scale.c5.viz.events.0.l	une équipe
+corp-scale.c5.viz.events.1.y	Mois 3
+corp-scale.c5.viz.events.1.l	une région
+corp-scale.c5.viz.events.2.y	Mois 6
+corp-scale.c5.viz.events.2.l	toutes les régions
+corp-scale.c5.viz.events.3.y	Mois 9
+corp-scale.c5.viz.events.3.l	nouveaux types de documents
+corp-scale.c6.title	Responsabilité d'exploitation
+corp-scale.c6.text	Après le lancement, quelqu'un doit en être responsable : supervision, support, améliorations et coûts. Sans responsable, les solutions se dégradent.
+corp-scale.c6.viz.items.0	Responsable métier
+corp-scale.c6.viz.items.1	Responsable technique
+corp-scale.c6.viz.items.2	Processus de support
+corp-scale.c6.viz.items.3	Backlog d'améliorations
+corp-scale.c6.viz.items.4	Budget pour les coûts d'exploitation
+corp-scale.c7.title	Industrialiser le schéma
+corp-scale.c7.text	Une fois qu'un cas d'usage fonctionne, transformez-le en schéma réutilisable (extraction de documents, assistant de connaissances, tri) et appliquez-le à des processus similaires.
+corp-scale.c7.viz.steps.0	Un cas d'usage réussi
+corp-scale.c7.viz.steps.1	Généraliser en schéma
+corp-scale.c7.viz.steps.2	Réutiliser dans d'autres équipes
+corp-scale.c7.viz.steps.3	Valeur plus rapide
+corp-scale.c8.title	Faire connaître les succès
+corp-scale.c8.text	Partagez en interne les résultats mesurés : heures économisées, erreurs évitées, témoignages d'utilisateurs. Des succès visibles créent une dynamique et du financement pour la vague suivante.
+corp-scale.c8.viz.items.0	Résultats mesurés
+corp-scale.c8.viz.items.1	Témoignages d'utilisateurs
+corp-scale.c8.viz.items.2	Exemples avant/après
+corp-scale.c8.viz.items.3	Enseignements tirés
+corp-scale.c9.title	Arrêter ce qui ne marche pas
+corp-scale.c9.text	Tous les pilotes ne doivent pas passer à l'échelle. Une décision d'arrêt rigoureuse libère des ressources et témoigne d'un portefeuille sain.
+corp-scale.c9.viz.steps.0	Évaluer le pilote selon les critères
+corp-scale.c9.viz.steps.1	Atteints : étendre
+corp-scale.c9.viz.steps.2	Proches : ajuster
+corp-scale.c9.viz.steps.3	Manqués : arrêter et apprendre
+corp-change.title	Conduite du changement et adoption
+corp-change.summary	Aider les gens à utiliser réellement l'IA.
+corp-change.q0.q	Pourquoi de nombreux outils d'IA sont-ils peu utilisés ?
+corp-change.q0.o0	De mauvais modèles
+corp-change.q0.o1	Les gens ne sont pas accompagnés pour changer leur façon de travailler
+corp-change.q0.o2	Trop de fonctionnalités
+corp-change.q0.x	L'adoption exige une conduite du changement.
+corp-change.q1.q	Qu'est-ce qu'un réseau de champions de l'IA ?
+corp-change.q1.o0	Une équipe sportive
+corp-change.q1.o1	Des adoptants précoces qui aident et forment leurs collègues
+corp-change.q1.o2	Un programme de fournisseur
+corp-change.q1.x	L'entraide entre pairs diffuse l'adoption.
+corp-change.q2.q	Que signifie le « A » au début d'ADKAR ?
+corp-change.q2.o0	Ability (capacité)
+corp-change.q2.o1	Awareness (prise de conscience)
+corp-change.q2.o2	Adoption
+corp-change.q2.x	La prise de conscience de la nécessité du changement.
+corp-change.c0.title	La technologie est la partie facile
+corp-change.c0.text	Les projets d'IA échouent plus souvent parce que les gens ne les adoptent pas que parce que la technologie défaille. La conduite du changement mérite un vrai budget et une vraie attention.
+corp-change.c0.viz.l.t	Focus technologie seule
+corp-change.c0.viz.l.items.0	outil lancé
+corp-change.c0.viz.l.items.1	faible usage
+corp-change.c0.viz.r.t	Technologie + changement
+corp-change.c0.viz.r.items.0	formation
+corp-change.c0.viz.r.items.1	champions
+corp-change.c0.viz.r.items.2	processus repensés
+corp-change.c1.title	Aborder les craintes ouvertement
+corp-change.c1.text	Les gens s'inquiètent pour leur emploi, d'être surveillés et de paraître incompétents. Les dirigeants doivent expliquer honnêtement l'objectif et l'évolution des rôles.
+corp-change.c1.viz.items.0	Sécurité de l'emploi
+corp-change.c1.viz.items.1	Être surveillé
+corp-change.c1.viz.items.2	Perdre son expertise
+corp-change.c1.viz.items.3	Paraître incompétent
+corp-change.c1.viz.items.4	Charge de travail en plus
+corp-change.c2.title	Réseau de champions
+corp-change.c2.text	Des utilisateurs précoces enthousiastes dans chaque équipe aident leurs collègues, partagent des astuces et font des retours. L'apprentissage entre pairs se diffuse plus vite que la formation centrale.
+corp-change.c2.viz.steps.0	Recruter des champions
+corp-change.c2.viz.steps.1	Les former en profondeur
+corp-change.c2.viz.steps.2	Ils aident leurs équipes
+corp-change.c2.viz.steps.3	Retours à l'équipe IA
+corp-change.c3.title	Formation pratique
+corp-change.c3.text	De courtes séances pratiques sur des tâches réelles du travail des participants valent mieux que des présentations génériques. Montrez des exemples avant/après.
+corp-change.c3.viz.items.0	Tâches réelles de leur métier
+corp-change.c3.viz.items.1	Séances courtes
+corp-change.c3.viz.items.2	Modèles de prompts
+corp-change.c3.viz.items.3	Permanences d'aide
+corp-change.c3.viz.items.4	Astuces de suivi
+corp-change.c4.title	Repenser le processus
+corp-change.c4.text	Plaquer l'IA sur un processus inchangé donne de petits gains. Repenser les étapes, les rôles et les validations autour de l'IA en débloque de bien plus grands.
+corp-change.c4.viz.l.t	Greffe
+corp-change.c4.viz.l.items.0	même processus
+corp-change.c4.viz.l.items.1	petits gains
+corp-change.c4.viz.r.t	Refonte
+corp-change.c4.viz.r.items.0	moins d'étapes
+corp-change.c4.viz.r.items.1	nouveaux rôles
+corp-change.c4.viz.r.items.2	gros gains
+corp-change.c5.title	Les dirigeants montrent l'exemple
+corp-change.c5.text	Quand les dirigeants utilisent eux-mêmes les outils d'IA de façon visible et en parlent, l'adoption augmente. Sinon, les équipes en concluent que ce n'est pas important.
+corp-change.c5.viz.steps.0	Les dirigeants utilisent l'IA visiblement
+corp-change.c5.viz.steps.1	Partager des exemples
+corp-change.c5.viz.steps.2	Les équipes suivent
+corp-change.c5.viz.steps.3	La culture évolue
+corp-change.c6.title	Mesurer l'adoption
+corp-change.c6.text	Suivez les utilisateurs actifs, la fréquence, les cas d'usage, la satisfaction et l'impact. Une faible adoption dans une équipe est un signal pour enquêter, pas seulement pour pousser plus fort.
+corp-change.c6.viz.items.0	Utilisateurs actifs
+corp-change.c6.viz.items.1	Fréquence d'usage
+corp-change.c6.viz.items.2	Satisfaction
+corp-change.c6.viz.items.3	Indicateurs d'impact
+corp-change.c6.viz.items.4	Comparaison équipe par équipe
+corp-change.c7.title	Faciliter l'usage
+corp-change.c7.text	L'authentification unique, l'intégration aux outils existants, les bibliothèques de prompts et les modèles suppriment les frictions. Chaque clic en plus coûte de l'adoption.
+corp-change.c7.viz.items.0	Authentification unique
+corp-change.c7.viz.items.1	Intégré aux outils quotidiens
+corp-change.c7.viz.items.2	Bibliothèque de prompts et de modèles
+corp-change.c7.viz.items.3	Bon accueil des nouveaux utilisateurs
+corp-change.c7.viz.items.4	Aide rapide
+corp-change.c8.title	Célébrer et partager
+corp-change.c8.text	Partagez des histoires de réussite, organisez des démonstrations internes ou des hackathons, et reconnaissez ceux qui trouvent de nouveaux usages utiles.
+corp-change.c8.viz.items.0	Histoires de réussite
+corp-change.c8.viz.items.1	Démonstrations internes
+corp-change.c8.viz.items.2	Hackathons
+corp-change.c8.viz.items.3	Reconnaissance
+corp-change.c8.viz.items.4	Canaux communautaires
+corp-change.c9.title	ADKAR en bref
+corp-change.c9.text	Un modèle de changement courant : Awareness (comprendre pourquoi), Desire (vouloir participer), Knowledge (savoir comment), Ability (être capable de le faire), Reinforcement (renforcer pour que cela dure).
+corp-change.c9.viz.items.0	Renforcement
+corp-change.c9.viz.items.1	Capacité
+corp-change.c9.viz.items.2	Connaissance
+corp-change.c9.viz.items.3	Désir
+corp-change.c9.viz.items.4	Prise de conscience
+corp-skills.title	Compétences et modèle opérationnel
+corp-skills.summary	Qui fait quoi dans une entreprise dotée d'IA.
+corp-skills.q0.q	Que fait un centre d'excellence en IA ?
+corp-skills.q0.o0	Il remplace toute l'informatique
+corp-skills.q0.o1	Il fixe des standards, construit des plateformes partagées et soutient les équipes
+corp-skills.q0.o2	Il vend de l'IA
+corp-skills.q0.x	Expertise et gouvernance centrales.
+corp-skills.q1.q	Dans un modèle hub-and-spoke, les « spokes » sont…
+corp-skills.q1.o0	Des fournisseurs
+corp-skills.q1.o1	Des équipes d'IA intégrées dans les unités métier
+corp-skills.q1.o2	Des centres de données
+corp-skills.q1.x	Des équipes locales proches des processus.
+corp-skills.q2.q	Pourquoi les experts métier sont-ils essentiels aux projets d'IA ?
+corp-skills.q2.o0	Ils écrivent le code
+corp-skills.q2.o1	Ils définissent ce qu'est un bon résultat et valident les sorties
+corp-skills.q2.o2	Ils achètent des GPU
+corp-skills.q2.x	La connaissance métier est la clé.
+corp-skills.c0.title	La maîtrise de l'IA pour tous
+corp-skills.c0.text	Toute personne qui utilise l'IA a besoin de bases : ce qu'elle peut et ne peut pas faire, comment écrire un prompt, comment vérifier les sorties et quelles règles de données s'appliquent. L'AI Act de l'UE l'exige désormais.
+corp-skills.c0.viz.items.0	Ce que l'IA peut et ne peut pas faire
+corp-skills.c0.viz.items.1	Bases du prompting
+corp-skills.c0.viz.items.2	Vérifier les sorties
+corp-skills.c0.viz.items.3	Règles de données et de confidentialité
+corp-skills.c0.viz.items.4	Quand passer la main
+corp-skills.c1.title	Rôles clés
+corp-skills.c1.text	Construire de l'IA demande un mélange : product owners, data engineers, ingénieurs ML/IA, ingénieurs logiciels, designers et experts métier, plus des rôles de gouvernance.
+corp-skills.c1.viz.items.0.a	product owner
+corp-skills.c1.viz.items.0.b	valeur et priorités
+corp-skills.c1.viz.items.1.a	data engineer
+corp-skills.c1.viz.items.1.b	pipelines et qualité
+corp-skills.c1.viz.items.2.a	ingénieur IA
+corp-skills.c1.viz.items.2.b	modèles, RAG, agents
+corp-skills.c1.viz.items.3.a	expert métier
+corp-skills.c1.viz.items.3.b	connaissance métier
+corp-skills.c1.viz.items.4.a	designer
+corp-skills.c1.viz.items.4.b	expérience utilisateur
+corp-skills.c2.title	Centre d'excellence
+corp-skills.c2.text	Un centre d'excellence IA central fixe les standards, construit la plateforme, partage les bonnes pratiques et aide les équipes. Il évite les doublons et les contrôles incohérents.
+corp-skills.c2.viz.items.0	Standards et garde-fous
+corp-skills.c2.viz.items.1	Plateforme partagée
+corp-skills.c2.viz.items.2	Bonnes pratiques
+corp-skills.c2.viz.items.3	Soutien d'experts
+corp-skills.c2.viz.items.4	Formation
+corp-skills.c3.title	Hub and spoke
+corp-skills.c3.text	Un modèle courant : un hub central (plateforme, gouvernance, expertise) et des « spokes » intégrés dans les unités métier, qui connaissent les processus locaux et portent les cas d'usage.
+corp-skills.c3.viz.root	Hub IA
+corp-skills.c3.viz.items.0	Spoke Finance
+corp-skills.c3.viz.items.1	Spoke Opérations
+corp-skills.c3.viz.items.2	Spoke Commercial
+corp-skills.c3.viz.items.3	Spoke RH
+corp-skills.c4.title	Équipes mondiales
+corp-skills.c4.text	Les grandes entreprises combinent souvent des équipes plateforme mondiales et des pôles de livraison régionaux, pour concilier standards, besoins locaux et fuseaux horaires.
+corp-skills.c4.viz.l.t	Mondial
+corp-skills.c4.viz.l.items.0	plateforme
+corp-skills.c4.viz.l.items.1	gouvernance
+corp-skills.c4.viz.l.items.2	services partagés
+corp-skills.c4.viz.r.t	Régional
+corp-skills.c4.viz.r.items.0	cas d'usage locaux
+corp-skills.c4.viz.r.items.1	langues
+corp-skills.c4.viz.r.items.2	réglementations
+corp-skills.c5.title	Faire monter en compétences les ingénieurs
+corp-skills.c5.text	Les développeurs en place peuvent apprendre rapidement l'ingénierie de l'IA : API, RAG, évaluation, conception de prompts. Monter en compétences et recruter quelques spécialistes vaut souvent mieux que de n'embaucher que de nouveaux experts.
+corp-skills.c5.viz.steps.0	Ingénieurs en place
+corp-skills.c5.viz.steps.1	Formation à l'ingénierie IA
+corp-skills.c5.viz.steps.2	Binômes avec des spécialistes
+corp-skills.c5.viz.steps.3	Livrer des cas d'usage
+corp-skills.c6.title	Les experts métier sont essentiels
+corp-skills.c6.text	Comptables, négociants, juristes et ingénieurs définissent ce qu'est un « bon » résultat, étiquettent des exemples et valident les sorties. Sans eux, les solutions d'IA passent à côté de l'essentiel.
+corp-skills.c6.viz.items.0	Définir les critères de succès
+corp-skills.c6.viz.items.1	Fournir des exemples
+corp-skills.c6.viz.items.2	Valider les sorties
+corp-skills.c6.viz.items.3	Repérer les cas limites
+corp-skills.c6.viz.items.4	Porter l'adoption
+corp-skills.c7.title	Nouveaux rôles
+corp-skills.c7.text	De nouveaux rôles émergent : product manager IA, ingénieur IA, spécialiste de l'évaluation, responsable de la gouvernance de l'IA et exploitation des agents.
+corp-skills.c7.viz.items.0	Product manager IA
+corp-skills.c7.viz.items.1	Ingénieur IA
+corp-skills.c7.viz.items.2	Spécialiste de l'évaluation
+corp-skills.c7.viz.items.3	Responsable gouvernance IA
+corp-skills.c7.viz.items.4	Exploitation des agents
+corp-skills.c8.title	Parcours de carrière
+corp-skills.c8.text	À mesure que les tâches routinières diminuent, les rôles évoluent vers le jugement, la gestion des exceptions, la relation et la supervision de l'IA. Des parcours de carrière clairs réduisent l'anxiété et retiennent les talents.
+corp-skills.c8.viz.l.t	En recul
+corp-skills.c8.viz.l.items.0	traitement routinier
+corp-skills.c8.viz.l.items.1	saisie manuelle de données
+corp-skills.c8.viz.r.t	En croissance
+corp-skills.c8.viz.r.items.0	gestion des exceptions
+corp-skills.c8.viz.r.items.1	analyse
+corp-skills.c8.viz.r.items.2	supervision de l'IA
+corp-skills.c9.title	Apprentissage continu
+corp-skills.c9.text	L'IA évolue vite. Intégrez l'apprentissage au travail : communautés de pratique, démonstrations internes, budgets de formation et temps pour expérimenter.
+corp-skills.c9.viz.items.0	Communautés de pratique
+corp-skills.c9.viz.items.1	Démonstrations internes
+corp-skills.c9.viz.items.2	Budgets de formation
+corp-skills.c9.viz.items.3	Temps pour expérimenter
+corp-skills.c9.viz.items.4	Partenaires externes
+corp-finance.title	L'IA en finance et en back-office
+corp-finance.summary	Factures, rapprochements et clôture.
+corp-finance.q0.q	Qu'est-ce qu'un rapprochement à trois voies (three-way match) ?
+corp-finance.q0.o0	Trois factures
+corp-finance.q0.o1	Rapprocher le bon de commande, la réception des marchandises et la facture
+corp-finance.q0.o2	Trois approbations
+corp-finance.q0.x	Un contrôle classique des comptes fournisseurs.
+corp-finance.q1.q	Pourquoi l'IA en finance doit-elle conserver une piste d'audit ?
+corp-finance.q1.o0	Pour le style
+corp-finance.q1.o1	Pour que les auditeurs puissent remonter chaque écriture jusqu'aux sources et aux approbations
+corp-finance.q1.o2	Pour utiliser plus de stockage
+corp-finance.q1.x	La traçabilité est essentielle.
+corp-finance.q2.q	Que mesure le « taux sans intervention » (touchless rate) ?
+corp-finance.q2.o0	Le temps d'écran
+corp-finance.q2.o1	La part des éléments traités sans intervention humaine
+corp-finance.q2.o2	Le nombre d'utilisateurs
+corp-finance.q2.x	Un indicateur clé d'automatisation.
+corp-finance.c0.title	Traitement des factures
+corp-finance.c0.text	L'IA extrait le fournisseur, les dates, les montants, la TVA et les lignes de factures de toute mise en page, les rapproche des bons de commande et des réceptions de marchandises, et signale les écarts.
+corp-finance.c0.viz.steps.0	La facture arrive
+corp-finance.c0.viz.steps.1	L'IA extrait les champs
+corp-finance.c0.viz.steps.2	Rapprocher commande et réception
+corp-finance.c0.viz.steps.3	Comptabiliser ou signaler l'exception
+corp-finance.c1.title	Rapprochement à trois voies
+corp-finance.c1.text	Contrôle classique des comptes fournisseurs : la facture, le bon de commande et la réception des marchandises doivent concorder sur les quantités et les prix. L'IA accélère le rapprochement et explique les écarts.
+corp-finance.c1.viz.root	Rapprochement à trois voies
+corp-finance.c1.viz.items.0	Bon de commande
+corp-finance.c1.viz.items.1	Réception des marchandises
+corp-finance.c1.viz.items.2	Facture
+corp-finance.c2.title	Rapprochements
+corp-finance.c2.text	Rapprocher relevés bancaires, soldes intragroupe et grands livres est répétitif. Le ML peut apparier des transactions aux références approximatives et apprendre des rapprochements manuels passés.
+corp-finance.c2.viz.steps.0	Lignes bancaires + écritures comptables
+corp-finance.c2.viz.steps.1	L'IA propose des correspondances
+corp-finance.c2.viz.steps.2	Le comptable examine les exceptions
+corp-finance.c2.viz.steps.3	Rapproché
+corp-finance.c3.title	Clôture financière
+corp-finance.c3.text	L'IA peut rédiger des explications d'écarts, vérifier les écritures comptables à la recherche d'anomalies et résumer l'avancement de la clôture, ce qui raccourcit la clôture mensuelle.
+corp-finance.c3.viz.items.0	Brouillons de commentaires d'écarts
+corp-finance.c3.viz.items.1	Détection d'anomalies d'écritures
+corp-finance.c3.viz.items.2	Suivi de la liste de clôture
+corp-finance.c3.viz.items.3	Rapprochement intragroupe
+corp-finance.c4.title	Prévision de trésorerie
+corp-finance.c4.text	Des modèles de ML prévoient les paiements clients et les sorties fournisseurs à partir de l'historique, ce qui améliore la planification de la trésorerie et du fonds de roulement.
+corp-finance.c4.viz.steps.0	Historique des paiements
+corp-finance.c4.viz.steps.1	Le modèle prédit les dates de paiement
+corp-finance.c4.viz.steps.2	Prévision de trésorerie
+corp-finance.c4.viz.steps.3	Meilleure planification de la liquidité
+corp-finance.c5.title	Fraude et anomalies
+corp-finance.c5.text	Détectez les factures en double, les paiements inhabituels, les coordonnées bancaires modifiées et les fournisseurs suspects avant que l'argent ne parte.
+corp-finance.c5.viz.items.0	Factures en double
+corp-finance.c5.viz.items.1	Coordonnées bancaires modifiées
+corp-finance.c5.viz.items.2	Montants ou calendrier inhabituels
+corp-finance.c5.viz.items.3	Nouveaux fournisseurs suspects
+corp-finance.c5.viz.items.4	Achats fractionnés
+corp-finance.c6.title	Audits de notes de frais
+corp-finance.c6.text	L'IA lit les justificatifs, les compare à la politique et signale les exceptions, pour que les auditeurs examinent les quelques cas à risque au lieu d'échantillonner au hasard.
+corp-finance.c6.viz.l.t	Échantillonnage manuel
+corp-finance.c6.viz.l.items.0	petit échantillon aléatoire
+corp-finance.c6.viz.l.items.1	rate des problèmes
+corp-finance.c6.viz.r.t	Filtrage par l'IA
+corp-finance.c6.viz.r.items.0	contrôle tout
+corp-finance.c6.viz.r.items.1	signale les cas à risque
+corp-finance.c7.title	Contrôles et auditabilité
+corp-finance.c7.text	La finance exige une traçabilité complète : chaque écriture proposée par l'IA doit indiquer les documents sources, le niveau de confiance et qui l'a approuvée. Les auditeurs doivent pouvoir suivre la piste.
+corp-finance.c7.viz.steps.0	Document source
+corp-finance.c7.viz.steps.1	Proposition de l'IA avec confiance
+corp-finance.c7.viz.steps.2	Approbation humaine
+corp-finance.c7.viz.steps.3	Écriture avec piste d'audit
+corp-finance.c8.title	Intégration à l'ERP
+corp-finance.c8.text	La valeur apparaît lorsque l'IA est connectée à l'ERP (SAP S/4HANA, Oracle, Dynamics) : lecture des données de référence, proposition d'écritures, mise à jour des flux de travail.
+corp-finance.c8.viz.steps.0	IA documentaire
+corp-finance.c8.viz.steps.1	API de l'ERP
+corp-finance.c8.viz.steps.2	Écriture proposée
+corp-finance.c8.viz.steps.3	Approbation par workflow
+corp-finance.c9.title	Mesurer l'IA en finance
+corp-finance.c9.text	Suivez le taux de traitement sans intervention, le délai de traitement, le taux d'erreur, le coût par facture, le nombre de jours de clôture et les escomptes de paiement anticipé obtenus.
+corp-finance.c9.viz.unit	% de factures sans intervention (parcours illustratif)
+corp-finance.c9.viz.items.0.l	Avant
+corp-finance.c9.viz.items.1.l	Année 1
+corp-finance.c9.viz.items.2.l	Année 2
+corp-supply.title	L'IA dans les opérations et les matières premières
+corp-supply.summary	Prévision, logistique et appui au négoce.
+corp-supply.q0.q	Sur quoi s'appuie la maintenance prédictive ?
+corp-supply.q0.o0	Des contrôles aléatoires
+corp-supply.q0.o1	Des données de capteurs pour prédire les pannes
+corp-supply.q0.o2	La météo uniquement
+corp-supply.q0.x	Réparer avant la panne.
+corp-supply.q1.q	Dans les contrats de négoce, qu'est-ce que la surestarie (demurrage) ?
+corp-supply.q1.o0	Un type de grain
+corp-supply.q1.o1	Une charge par jour lorsqu'un navire est retardé au-delà des staries convenues
+corp-supply.q1.o2	Une taxe
+corp-supply.q1.x	Généralement un tarif journalier.
+corp-supply.q2.q	Qui doit prendre les décisions finales de négoce ?
+corp-supply.q2.o0	Le modèle
+corp-supply.q2.o1	Des personnes expérimentées, aidées par les signaux de l'IA
+corp-supply.q2.o2	Personne
+corp-supply.q2.x	L'IA éclaire ; les personnes décident.
+corp-supply.c0.title	Prévision de la demande
+corp-supply.c0.text	Le ML prévoit la demande à partir de l'historique, de la saisonnalité, des prix, de la météo et des événements, ce qui améliore les simples moyennes et aide à planifier la production et les stocks.
+corp-supply.c0.viz.unit	erreur de prévision en % (illustratif)
+corp-supply.c0.viz.items.0.l	Valeur de l'an dernier
+corp-supply.c0.viz.items.1.l	Modèle statistique
+corp-supply.c0.viz.items.2.l	ML avec données externes
+corp-supply.c1.title	Visibilité de la chaîne d'approvisionnement
+corp-supply.c1.text	L'IA combine les données de l'ERP, des transporteurs, des ports et des fournisseurs pour prédire les retards et suggérer des actions, comme un réacheminement ou une repriorisation des commandes.
+corp-supply.c1.viz.steps.0	Données d'expédition et portuaires
+corp-supply.c1.viz.steps.1	Prédire les retards
+corp-supply.c1.viz.steps.2	Alerter les planificateurs
+corp-supply.c1.viz.steps.3	Réacheminer ou ajuster
+corp-supply.c2.title	Optimisation logistique
+corp-supply.c2.text	L'optimisation et le ML planifient les itinéraires, les calendriers de navires, la préparation en entrepôt et le chargement des camions, ce qui réduit les coûts et les émissions.
+corp-supply.c2.viz.items.0	Planification d'itinéraires
+corp-supply.c2.viz.items.1	Planification des navires
+corp-supply.c2.viz.items.2	Affectation des emplacements d'entrepôt
+corp-supply.c2.viz.items.3	Optimisation du chargement
+corp-supply.c2.viz.items.4	Suivi des émissions
+corp-supply.c3.title	Maintenance prédictive
+corp-supply.c3.text	Des capteurs sur les machines (vibrations, température, puissance) alimentent des modèles qui prédisent les pannes, de sorte que la maintenance a lieu avant la casse.
+corp-supply.c3.viz.steps.0	Données de capteurs
+corp-supply.c3.viz.steps.1	Détecter les signes avant-coureurs
+corp-supply.c3.viz.steps.2	Planifier la maintenance
+corp-supply.c3.viz.steps.3	Éviter les arrêts imprévus
+corp-supply.c4.title	Signaux de prix des matières premières
+corp-supply.c4.text	Les modèles combinent données d'offre et de demande, météo, état des cultures, fret et indicateurs macroéconomiques pour étayer les analyses. Ils éclairent le jugement des négociants, sans le remplacer.
+corp-supply.c4.viz.items.0	Météo et état des cultures
+corp-supply.c4.viz.items.1	Bilans offre-demande
+corp-supply.c4.viz.items.2	Taux de fret
+corp-supply.c4.viz.items.3	Devises et données macro
+corp-supply.c4.viz.items.4	Données de positionnement
+corp-supply.c5.title	Données satellitaires et météo
+corp-supply.c5.text	Les images satellite et les prévisions météo aident à estimer la santé des cultures et les rendements dans des régions comme le Brésil, le Midwest américain et la mer Noire avant les rapports officiels.
+corp-supply.c5.viz.steps.0	Imagerie satellite
+corp-supply.c5.viz.steps.1	Indices de végétation
+corp-supply.c5.viz.steps.2	Estimations de rendement
+corp-supply.c5.viz.steps.3	Perspectives d'offre
+corp-supply.c6.title	Intelligence des contrats
+corp-supply.c6.text	L'IA générative extrait les termes clés des contrats de négoce (quantités, spécifications de qualité, périodes d'expédition, Incoterms, surestaries, conditions de paiement) et signale les clauses inhabituelles.
+corp-supply.c6.viz.items.0.a	quantité
+corp-supply.c6.viz.items.0.b	tonnes et tolérance
+corp-supply.c6.viz.items.1.a	qualité
+corp-supply.c6.viz.items.1.b	spécifications : protéines, humidité
+corp-supply.c6.viz.items.2.a	Incoterm
+corp-supply.c6.viz.items.2.b	FOB, CIF, etc.
+corp-supply.c6.viz.items.3.a	surestarie
+corp-supply.c6.viz.items.3.b	tarif par jour
+corp-supply.c7.title	Opérations de négoce
+corp-supply.c7.text	L'IA aide pour les documents (connaissements, certificats, lettres de crédit), en vérifiant leur cohérence et en repérant les écarts avant qu'ils ne retardent les paiements.
+corp-supply.c7.viz.steps.0	Documents d'expédition
+corp-supply.c7.viz.steps.1	L'IA vérifie la cohérence
+corp-supply.c7.viz.steps.2	Signale les écarts
+corp-supply.c7.viz.steps.3	Corriger avant présentation
+corp-supply.c8.title	Risques et conformité
+corp-supply.c8.text	Le filtrage des sanctions, le risque de contrepartie et le suivi des navires bénéficient d'une IA qui surveille l'actualité, les données de propriété et les mouvements de navires.
+corp-supply.c8.viz.items.0	Filtrage des sanctions
+corp-supply.c8.viz.items.1	Suivi des contreparties
+corp-supply.c8.viz.items.2	Suivi des navires
+corp-supply.c8.viz.items.3	Alertes sur l'actualité négative
+corp-supply.c8.viz.items.4	Signaux de fraude commerciale
+corp-supply.c9.title	Des humains dans la boucle
+corp-supply.c9.text	Dans le négoce et les opérations, l'IA fournit des signaux et de l'automatisation, tandis que des personnes expérimentées prennent les décisions commerciales et de risque.
+corp-supply.c9.viz.l.t	IA
+corp-supply.c9.viz.l.items.0	données à grande échelle
+corp-supply.c9.viz.l.items.1	signaux
+corp-supply.c9.viz.l.items.2	traitement de documents
+corp-supply.c9.viz.r.t	Humains
+corp-supply.c9.viz.r.items.0	jugement
+corp-supply.c9.viz.r.items.1	relations
+corp-supply.c9.viz.r.items.2	responsabilité
+corp-customer.title	L'IA dans le service client et la vente
+corp-customer.summary	Des réponses plus rapides et une meilleure vente.
+corp-customer.q0.q	Que fait un copilote de support ?
+corp-customer.q0.o0	Il remplace les clients
+corp-customer.q0.o1	Il rédige des réponses que les agents relisent et envoient
+corp-customer.q0.o2	Il supprime des tickets
+corp-customer.q0.x	Les agents gardent la main.
+corp-customer.q1.q	Que doit offrir un assistant en contact avec les clients ?
+corp-customer.q1.o0	Des remises
+corp-customer.q1.o1	Un moyen de joindre un humain
+corp-customer.q1.o2	Uniquement l'anglais
+corp-customer.q1.x	Passage à un humain et transparence.
+corp-customer.q2.q	Qu'est-ce que le tri des tickets ?
+corp-customer.q2.o0	Fermer des tickets
+corp-customer.q2.o1	Classer et acheminer automatiquement les demandes
+corp-customer.q2.o2	Rédiger des tickets
+corp-customer.q2.x	La bonne équipe, la bonne priorité.
+corp-customer.c0.title	Copilotes de support
+corp-customer.c0.text	L'IA rédige des réponses pour les agents à partir de bases de connaissances et de l'historique des dossiers. Les agents modifient et envoient, et traitent plus de dossiers avec une qualité constante.
+corp-customer.c0.viz.steps.0	E-mail du client
+corp-customer.c0.viz.steps.1	L'IA rédige une réponse avec ses sources
+corp-customer.c0.viz.steps.2	L'agent modifie
+corp-customer.c0.viz.steps.3	Envoyé plus vite
+corp-customer.c1.title	Assistants en libre-service
+corp-customer.c1.text	Les assistants en contact avec les clients répondent aux questions courantes 24 h/24, 7 j/7 et passent la main à des humains pour les cas complexes ou sensibles, avec tout le contexte transmis.
+corp-customer.c1.viz.steps.0	Question du client
+corp-customer.c1.viz.steps.1	L'assistant répond aux cas courants
+corp-customer.c1.viz.steps.2	Cas complexe : passer à un humain
+corp-customer.c1.viz.steps.3	Contexte transmis
+corp-customer.c2.title	Tri des tickets
+corp-customer.c2.text	Classez les demandes entrantes par sujet, urgence et langue, et acheminez-les automatiquement vers la bonne équipe.
+corp-customer.c2.viz.items.0.a	sujet
+corp-customer.c2.viz.items.0.b	facturation, livraison, technique
+corp-customer.c2.viz.items.1.a	urgence
+corp-customer.c2.viz.items.1.b	élevée, normale
+corp-customer.c2.viz.items.2.a	langue
+corp-customer.c2.viz.items.2.b	PT, EN, ES
+corp-customer.c2.viz.items.3.a	routage
+corp-customer.c2.viz.items.3.b	bonne équipe
+corp-customer.c3.title	Sentiment et qualité
+corp-customer.c3.text	L'IA analyse les conversations pour en tirer le sentiment, les problèmes récurrents et la conformité, offrant aux managers une vision de toutes les interactions, et pas seulement d'échantillons.
+corp-customer.c3.viz.items.0	Tendances du sentiment
+corp-customer.c3.viz.items.1	Réclamations récurrentes
+corp-customer.c3.viz.items.2	Contrôles de conformité
+corp-customer.c3.viz.items.3	Occasions de coaching
+corp-customer.c4.title	Assistants commerciaux
+corp-customer.c4.text	L'IA prépare des fiches de compte, résume les réunions, rédige des propositions et met à jour le CRM, ce qui donne plus de temps aux commerciaux avec leurs clients.
+corp-customer.c4.viz.items.0	Fiches de compte
+corp-customer.c4.viz.items.1	Résumés de réunions
+corp-customer.c4.viz.items.2	Brouillons de propositions
+corp-customer.c4.viz.items.3	Mises à jour du CRM
+corp-customer.c4.viz.items.4	E-mails de relance
+corp-customer.c5.title	Scoring des prospects
+corp-customer.c5.text	Le ML note les prospects selon leur probabilité d'achat, d'après les ventes passées, le comportement et les données firmographiques, pour que les commerciaux se concentrent sur les plus prometteurs.
+corp-customer.c5.viz.unit	conversion en % par tranche de score (illustratif)
+corp-customer.c5.viz.items.0.l	Faible
+corp-customer.c5.viz.items.1.l	Moyen
+corp-customer.c5.viz.items.2.l	Élevé
+corp-customer.c6.title	Aide à la tarification
+corp-customer.c6.text	Des modèles suggèrent des prix ou des remises d'après l'historique des affaires, la demande et la concurrence, dans les limites fixées par l'entreprise.
+corp-customer.c6.viz.steps.0	Contexte de l'affaire
+corp-customer.c6.viz.steps.1	Le modèle suggère une fourchette de prix
+corp-customer.c6.viz.steps.2	Dans les limites approuvées
+corp-customer.c6.viz.steps.3	Le commercial décide
+corp-customer.c7.title	Personnalisation
+corp-customer.c7.text	Recommander des produits et contenus pertinents augmente la conversion, mais doit respecter la vie privée et ne pas être intrusif.
+corp-customer.c7.viz.l.t	Utile
+corp-customer.c7.viz.l.items.0	pertinent
+corp-customer.c7.viz.l.items.1	respecte le consentement
+corp-customer.c7.viz.r.t	Dérangeant
+corp-customer.c7.viz.r.items.0	trop personnel
+corp-customer.c7.viz.r.items.1	inexpliqué
+corp-customer.c7.viz.r.items.2	sans consentement
+corp-customer.c8.title	Être transparent
+corp-customer.c8.text	Les clients doivent savoir quand ils parlent à une IA et pouvoir toujours joindre un humain. L'AI Act de l'UE impose d'en informer l'utilisateur pour les chatbots.
+corp-customer.c8.viz.items.0	Dire que c'est une IA
+corp-customer.c8.viz.items.1	Proposer un humain
+corp-customer.c8.viz.items.2	Ne pas simuler l'empathie
+corp-customer.c8.viz.items.3	Escalader les réclamations
+corp-customer.c9.title	Mesurer l'IA de service
+corp-customer.c9.text	Suivez le taux de résolution, le temps de traitement, la satisfaction client, le taux d'escalade et la justesse des réponses. Surveillez les clients qui abandonnent.
+corp-customer.c9.viz.items.0	Résolution au premier contact
+corp-customer.c9.viz.items.1	Temps moyen de traitement
+corp-customer.c9.viz.items.2	CSAT
+corp-customer.c9.viz.items.3	Taux d'escalade
+corp-customer.c9.viz.items.4	Justesse des réponses
+corp-hrlegal.title	L'IA en RH et en droit
+corp-hrlegal.summary	Contrats, politiques et processus RH.
+corp-hrlegal.q0.q	Selon l'AI Act de l'UE, une IA qui classe des candidats à un emploi est…
+corp-hrlegal.q0.o0	À risque minimal
+corp-hrlegal.q0.o1	À haut risque
+corp-hrlegal.q0.o2	Non réglementée
+corp-hrlegal.q0.x	Les usages liés à l'emploi sont à haut risque.
+corp-hrlegal.q1.q	Que définit un playbook juridique ?
+corp-hrlegal.q1.o0	Les horaires de bureau
+corp-hrlegal.q1.o1	Les positions préférées, acceptables et inacceptables pour chaque clause
+corp-hrlegal.q1.o2	Les salaires
+corp-hrlegal.q1.x	L'IA l'applique de façon cohérente.
+corp-hrlegal.q2.q	Quelle pratique est interdite au travail par l'AI Act de l'UE ?
+corp-hrlegal.q2.o0	Les chatbots de politiques internes
+corp-hrlegal.q2.o1	La reconnaissance des émotions (avec des exceptions limitées)
+corp-hrlegal.q2.o2	La revue de contrats
+corp-hrlegal.q2.x	Interdite depuis février 2025.
+corp-hrlegal.c0.title	Revue de contrats
+corp-hrlegal.c0.text	L'IA extrait les clauses clés (durée, renouvellement, responsabilité, résiliation, droit applicable), les compare à vos positions standard et met en évidence les écarts à l'intention des juristes.
+corp-hrlegal.c0.viz.steps.0	Contrat téléversé
+corp-hrlegal.c0.viz.steps.1	Extraire les clauses clés
+corp-hrlegal.c0.viz.steps.2	Comparer au playbook
+corp-hrlegal.c0.viz.steps.3	Signaler les écarts pour revue
+corp-hrlegal.c1.title	Bibliothèques de clauses et playbooks
+corp-hrlegal.c1.text	Un playbook juridique définit pour chaque clause les positions préférées, acceptables et inacceptables. L'IA l'applique de façon cohérente à des milliers de contrats.
+corp-hrlegal.c1.viz.items.0	Inacceptable : escalader
+corp-hrlegal.c1.viz.items.1	Position de repli acceptable
+corp-hrlegal.c1.viz.items.2	Position préférée
+corp-hrlegal.c2.title	Recherche juridique
+corp-hrlegal.c2.text	L'IA aide à rechercher la jurisprudence et les réglementations, mais les citations doivent être vérifiées : des avocats ont été sanctionnés pour avoir présenté des affaires inventées par l'IA.
+corp-hrlegal.c2.viz.items.0.w	se fier aux citations de l'IA
+corp-hrlegal.c2.viz.items.0.r	vérifier chacune dans les bases officielles
+corp-hrlegal.c3.title	Assistants de politiques internes
+corp-hrlegal.c3.text	Les employés posent des questions sur les politiques RH, les règles de déplacement ou les procédures informatiques et obtiennent des réponses fondées sur les documents officiels, avec des liens.
+corp-hrlegal.c3.viz.steps.0	L'employé pose une question
+corp-hrlegal.c3.viz.steps.1	Récupérer la politique pertinente
+corp-hrlegal.c3.viz.steps.2	Répondre avec un lien
+corp-hrlegal.c3.viz.steps.3	Escalader si flou
+corp-hrlegal.c4.title	Recrutement : prudence
+corp-hrlegal.c4.text	Le tri des CV et le classement des candidats sont à haut risque selon l'AI Act de l'UE. Utilisez l'IA en appui (rédaction d'offres, planification, résumés) et laissez les décisions à des humains, avec des tests de biais.
+corp-hrlegal.c4.viz.l.t	Risque plus faible
+corp-hrlegal.c4.viz.l.items.0	brouillons d'offres
+corp-hrlegal.c4.viz.l.items.1	planification
+corp-hrlegal.c4.viz.l.items.2	FAQ
+corp-hrlegal.c4.viz.r.t	Risque élevé
+corp-hrlegal.c4.viz.r.items.0	classement des candidats
+corp-hrlegal.c4.viz.r.items.1	tri des CV
+corp-hrlegal.c4.viz.r.items.2	exige des contrôles stricts
+corp-hrlegal.c5.title	Intégration des nouveaux
+corp-hrlegal.c5.text	Des assistants d'IA guident les nouveaux employés dans les systèmes, les politiques et les premières tâches, et répondent à leurs questions à tout moment.
+corp-hrlegal.c5.viz.items.0	Plans d'intégration personnalisés

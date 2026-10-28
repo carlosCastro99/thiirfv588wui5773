@@ -848,3 +848,303 @@ el-cables.c9.text	L'aluminium conduit environ 60 % aussi bien que le cuivre ; il
 el-cables.c9.viz.l.t	Cuivre
 el-cables.c9.viz.l.items.0	meilleur conducteur
 el-cables.c9.viz.l.items.1	câbles plus petits
+el-cables.c9.viz.l.items.2	câblage domestique
+el-cables.c9.viz.r.t	Aluminium
+el-cables.c9.viz.r.items.0	plus léger et moins cher
+el-cables.c9.viz.r.items.1	câbles plus gros
+el-cables.c9.viz.r.items.2	lignes électriques
+el-earthing.title	Mise à la terre et protection
+el-earthing.summary	Disjoncteurs, différentiels, terre et protection contre les surtensions.
+el-earthing.q0.q	Quel différentiel détecte les fuites en courant continu lisse, comme l'exigent de nombreuses bornes de recharge de VE ?
+el-earthing.q0.o0	Type AC
+el-earthing.q0.o1	Type A
+el-earthing.q0.o2	Type B
+el-earthing.q0.x	Le type B couvre le courant continu lisse.
+el-earthing.q1.q	Pourquoi utiliser des disjoncteurs différentiels (RCBO) sur chaque circuit ?
+el-earthing.q1.o0	Ils sont moins chers
+el-earthing.q1.o1	Un défaut ne fait déclencher que ce circuit
+el-earthing.q1.o2	Ils remplacent la mise à la terre
+el-earthing.q1.x	Les défauts restent locaux.
+el-earthing.q2.q	Contre quoi un parafoudre (SPD) protège-t-il ?
+el-earthing.q2.o0	Les surcharges
+el-earthing.q2.o1	Les brèves pointes de tension dues à la foudre ou aux manœuvres
+el-earthing.q2.o2	Les fuites à la terre
+el-earthing.q2.x	Il dévie les surtensions vers la terre.
+el-earthing.c0.title	À quoi sert la terre
+el-earthing.c0.text	Les carcasses métalliques des appareils sont reliées à la terre. Si un fil de phase touche la carcasse, le courant file vers la terre plutôt qu'à travers vous, et un dispositif de protection se déclenche.
+el-earthing.c0.viz.steps.0	La phase touche la carcasse métallique
+el-earthing.c0.viz.steps.1	Le courant part à la terre
+el-earthing.c0.viz.steps.2	Le différentiel ou disjoncteur coupe
+el-earthing.c0.viz.steps.3	La carcasse est de nouveau sûre
+el-earthing.c1.title	La prise de terre
+el-earthing.c1.text	Dans de nombreux logements, la liaison à la terre se termine par un piquet ou une boucle de cuivre enterrés dans le sol. Sa résistance doit être assez basse pour que les dispositifs de protection fonctionnent, et elle doit être testée périodiquement.
+el-earthing.c1.viz.steps.0	Carcasse de l'appareil
+el-earthing.c1.viz.steps.1	Fil de terre
+el-earthing.c1.viz.steps.2	Borne principale de terre
+el-earthing.c1.viz.steps.3	Prise de terre dans le sol
+el-earthing.c2.title	Disjoncteurs modulaires
+el-earthing.c2.text	Un disjoncteur modulaire se déclenche de deux façons : une lame bimétallique pour les surcharges lentes (chaleur) et un électroaimant pour les courts-circuits (instantané). La lettre (B, C, D) fixe sa sensibilité aux courants d'appel.
+el-earthing.c2.viz.l.t	Déclenchement thermique
+el-earthing.c2.viz.l.items.0	surcharges lentes
+el-earthing.c2.viz.l.items.1	de secondes à minutes
+el-earthing.c2.viz.r.t	Déclenchement magnétique
+el-earthing.c2.viz.r.items.0	courts-circuits
+el-earthing.c2.viz.r.items.1	millisecondes
+el-earthing.c3.title	Courbes de disjoncteurs
+el-earthing.c3.text	Le type B déclenche magnétiquement à 3–5 fois son calibre, adapté aux logements. Le type C à 5–10 fois, pour les moteurs et l'éclairage à fort courant d'appel. Le type D à 10–20 fois, pour les gros moteurs industriels.
+el-earthing.c3.viz.unit	déclenchement magnétique (× courant nominal, borne haute)
+el-earthing.c3.viz.items.0.l	B
+el-earthing.c3.viz.items.1.l	C
+el-earthing.c3.viz.items.2.l	D
+el-earthing.c4.title	Types de différentiels
+el-earthing.c4.text	Le type AC ne détecte que les fuites en alternatif. Le type A détecte aussi le courant continu pulsé issu de l'électronique. Le type B détecte aussi le continu lisse, souvent exigé pour les bornes de VE et certains onduleurs solaires (ou un type A avec un dispositif de détection de courant continu).
+el-earthing.c4.viz.items.0	Type B : aussi le continu lisse
+el-earthing.c4.viz.items.1	Type A : alternatif et continu pulsé
+el-earthing.c4.viz.items.2	Type AC : alternatif seulement
+el-earthing.c5.title	Disjoncteurs différentiels RCBO
+el-earthing.c5.text	Un RCBO combine un disjoncteur et un différentiel en un seul appareil : un défaut sur un circuit ne fait déclencher que ce circuit, et non toute la maison.
+el-earthing.c5.viz.l.t	Un différentiel pour plusieurs circuits
+el-earthing.c5.viz.l.items.0	moins cher
+el-earthing.c5.viz.l.items.1	un défaut coupe tout
+el-earthing.c5.viz.r.t	Un RCBO par circuit
+el-earthing.c5.viz.r.items.0	plus cher
+el-earthing.c5.viz.r.items.1	seul le circuit défaillant coupe
+el-earthing.c6.title	Protection contre les surtensions
+el-earthing.c6.text	La foudre et les manœuvres du réseau peuvent provoquer des pointes de tension de milliers de volts pendant quelques microsecondes. Un parafoudre (SPD) dans le tableau les dévie vers la terre et protège l'électronique.
+el-earthing.c6.viz.steps.0	Pointe sur la ligne
+el-earthing.c6.viz.steps.1	Le parafoudre conduit
+el-earthing.c6.viz.steps.2	Déviée vers la terre
+el-earthing.c6.viz.steps.3	Électronique protégée
+el-earthing.c7.title	Testez votre différentiel
+el-earthing.c7.text	Les différentiels ont un bouton de test qui simule une fuite. L'appuyer tous les quelques mois vérifie que le mécanisme n'est pas bloqué. S'il ne déclenche pas, appelez un électricien.
+el-earthing.c7.viz.items.0	Appuyer sur le bouton T
+el-earthing.c7.viz.items.1	Il doit déclencher aussitôt
+el-earthing.c7.viz.items.2	Le réenclencher
+el-earthing.c7.viz.items.3	Répéter tous les quelques mois
+el-earthing.c8.title	Double isolation
+el-earthing.c8.text	Certains appareils n'ont pas de fil de terre : ils sont à double isolation, signalée par un carré dans un carré. Deux couches d'isolant vous protègent à la place d'une liaison à la terre.
+el-earthing.c8.viz.items.0.a	symbole ⊡
+el-earthing.c8.viz.items.0.b	double isolation
+el-earthing.c8.viz.items.1.a	pas de broche de terre
+el-earthing.c8.viz.items.1.b	sûr par conception
+el-earthing.c8.viz.items.2.a	sèche-cheveux, perceuse
+el-earthing.c8.viz.items.2.b	exemples typiques
+el-earthing.c9.title	Fusibles
+el-earthing.c9.text	Un fusible est un fil fin qui fond quand le courant est trop élevé. Il ne fonctionne qu'une fois et doit être remplacé par un fusible de même calibre. Les anciennes installations portugaises en ont parfois encore ; les tableaux modernes utilisent des disjoncteurs.
+el-earthing.c9.viz.l.t	Fusible
+el-earthing.c9.viz.l.items.0	fond une fois
+el-earthing.c9.viz.l.items.1	à remplacer
+el-earthing.c9.viz.l.items.2	anciens tableaux
+el-earthing.c9.viz.r.t	Disjoncteur
+el-earthing.c9.viz.r.items.0	se réarme
+el-earthing.c9.viz.r.items.1	réutilisable
+el-earthing.c9.viz.r.items.2	tableaux modernes
+el-3phase.title	Courant triphasé
+el-3phase.summary	Pourquoi l'industrie, les grosses pompes à chaleur et les chargeurs rapides utilisent trois fils.
+el-3phase.q0.q	La tension entre deux phases d'une alimentation triphasée européenne est d'environ…
+el-3phase.q0.o0	230 V
+el-3phase.q0.o1	400 V
+el-3phase.q0.o2	690 V
+el-3phase.q0.x	230 × √3 ≈ 400 V.
+el-3phase.q1.q	Comment inverse-t-on le sens d'un moteur triphasé ?
+el-3phase.q1.o0	En permutant neutre et terre
+el-3phase.q1.o1	En permutant deux phases quelconques
+el-3phase.q1.o2	En baissant la tension
+el-3phase.q1.x	Changer l'ordre des phases inverse le champ tournant.
+el-3phase.q2.q	Quelle puissance donnent à peu près 16 A par phase sous 400 V ?
+el-3phase.q2.o0	3,7 kW
+el-3phase.q2.o1	11 kW
+el-3phase.q2.o2	22 kW
+el-3phase.q2.x	√3 × 400 × 16 ≈ 11 kW.
+el-3phase.c0.title	Trois ondes décalées
+el-3phase.c0.text	Une alimentation triphasée comporte trois conducteurs de phase, chacun portant une onde alternative décalée d'un tiers de cycle (120°). À tout instant, au moins une phase est proche de son maximum, si bien que la puissance circule de façon régulière.
+el-3phase.c0.viz.steps.0	Phase L1
+el-3phase.c0.viz.steps.1	Phase L2 (+120°)
+el-3phase.c0.viz.steps.2	Phase L3 (+240°)
+el-3phase.c0.viz.steps.3	retour à L1
+el-3phase.c1.title	230 V et 400 V
+el-3phase.c1.text	Entre une phase quelconque et le neutre, on obtient 230 V ; entre deux phases, 400 V. Les logements en triphasé utilisent toujours 230 V pour les prises ordinaires.
+el-3phase.c1.viz.f	U composée = U simple × √3
+el-3phase.c1.viz.items.0.s	230 V
+el-3phase.c1.viz.items.0.m	phase-neutre
+el-3phase.c1.viz.items.2.s	≈ 400 V
+el-3phase.c1.viz.items.2.m	phase-phase
+el-3phase.c2.title	Puissance triphasée
+el-3phase.c2.text	Le triphasé transporte environ trois fois la puissance du monophasé, avec le même courant par fil.
+el-3phase.c2.example.0	16 A par phase sous 400 V, cos φ = 1
+el-3phase.c2.example.1	1,732 × 400 × 16
+el-3phase.c2.example.2	≈ 11 kW
+el-3phase.c2.viz.f	P = √3 × U × I × cos φ
+el-3phase.c2.viz.items.0.s	U
+el-3phase.c2.viz.items.0.m	tension composée 400 V
+el-3phase.c2.viz.items.1.s	I
+el-3phase.c2.viz.items.1.m	courant par phase
+el-3phase.c2.viz.items.2.s	cos φ
+el-3phase.c2.viz.items.2.m	facteur de puissance
+el-3phase.c3.title	Pourquoi l'industrie l'adore
+el-3phase.c3.text	Les moteurs triphasés sont plus simples, plus petits et démarrent seuls, et le transport demande moins de cuivre pour la même puissance. Presque toute la production, le transport et les charges industrielles sont en triphasé.
+el-3phase.c3.viz.items.0	Puissance fournie de façon régulière
+el-3phase.c3.viz.items.1	Moteurs à démarrage automatique
+el-3phase.c3.viz.items.2	Moins de cuivre par kW
+el-3phase.c3.viz.items.3	Plus de puissance pour un bâtiment
+el-3phase.c4.title	Le triphasé à la maison
+el-3phase.c4.text	Les grands logements au Portugal peuvent avoir une alimentation triphasée. Elle permet une puissance souscrite plus élevée, une recharge de VE à 11 kW ou 22 kW et de grosses pompes à chaleur, tout en répartissant les circuits sur les phases.
+el-3phase.c4.viz.l.t	Monophasé
+el-3phase.c4.viz.l.items.0	230 V
+el-3phase.c4.viz.l.items.1	recharge jusqu'à ~7,4 kW
+el-3phase.c4.viz.l.items.2	la plupart des logements
+el-3phase.c4.viz.r.t	Triphasé
+el-3phase.c4.viz.r.items.0	400 V
+el-3phase.c4.viz.r.items.1	recharge 11–22 kW
+el-3phase.c4.viz.r.items.2	charges plus grosses
+el-3phase.c5.title	Équilibrer les phases
+el-3phase.c5.text	Les charges doivent être réparties uniformément sur les trois phases. Si une phase supporte l'essentiel de la charge, elle peut déclencher alors que les autres sont peu utilisées, et le neutre transporte un courant supplémentaire.
+el-3phase.c5.viz.unit	kW par phase
+el-3phase.c5.viz.items.0.l	L1
+el-3phase.c5.viz.items.1.l	L2
+el-3phase.c5.viz.items.2.l	L3
+el-3phase.c6.title	Ordre des phases
+el-3phase.c6.text	L'ordre dans lequel les phases atteignent leur maximum (L1, L2, L3) fixe le sens de rotation d'un moteur triphasé. Permutez deux phases quelconques et le moteur tourne à l'envers : un contrôle classique à la mise en service.
+el-3phase.c6.viz.items.0.w	le moteur tourne à l'envers
+el-3phase.c6.viz.items.0.r	permuter deux phases
+el-3phase.c6.viz.items.1.w	L1-L2-L3
+el-3phase.c6.viz.items.1.r	L2-L1-L3
+el-3phase.c7.title	Étoile et triangle
+el-3phase.c7.text	Les enroulements triphasés peuvent être couplés en étoile (Y), avec un point neutre commun, ou en triangle (Δ). Les gros moteurs démarrent souvent en étoile pour limiter le courant, puis passent en triangle.
+el-3phase.c7.viz.l.t	Étoile (Y)
+el-3phase.c7.viz.l.items.0	point neutre commun
+el-3phase.c7.viz.l.items.1	tension plus basse par enroulement
+el-3phase.c7.viz.l.items.2	démarrage doux
+el-3phase.c7.viz.r.t	Triangle (Δ)
+el-3phase.c7.viz.r.items.0	triangle
+el-3phase.c7.viz.r.items.1	pleine tension composée par enroulement
+el-3phase.c7.viz.r.items.2	pleine puissance
+el-3phase.c8.title	Les réseaux sont triphasés dans le monde entier
+el-3phase.c8.text	Du générateur au transformateur de distribution de votre rue, l'électricité circule en triphasé. Chaque maison alimentée en monophasé est reliée à l'une des trois phases.
+el-3phase.c8.viz.steps.0	Générateur triphasé
+el-3phase.c8.viz.steps.1	Transport triphasé
+el-3phase.c8.viz.steps.2	Transformateur de rue
+el-3phase.c8.viz.steps.3	Maisons réparties sur L1, L2, L3
+el-3phase.c9.title	Le reconnaître
+el-3phase.c9.text	Un tableau triphasé a des disjoncteurs tripolaires ou tétrapolaires et souvent une prise CEE rouge (5 broches) pour les machines. Les compteurs triphasés affichent trois valeurs.
+el-3phase.c9.viz.items.0	Disjoncteur général tétrapolaire
+el-3phase.c9.viz.items.1	Prise CEE rouge à 5 broches
+el-3phase.c9.viz.items.2	Trois tensions affichées sur le compteur
+el-3phase.c9.viz.items.3	Fils de phase marron, noir et gris
+el-pf.title	Facteur de puissance
+el-pf.summary	Puissance active, puissance réactive et pourquoi le réseau s'en soucie.
+el-pf.q0.q	Une charge appelle 1 000 VA avec un facteur de puissance de 0,8. Sa puissance active est de…
+el-pf.q0.o0	1 000 W
+el-pf.q0.o1	800 W
+el-pf.q0.o2	1 250 W
+el-pf.q0.x	W = VA × cos φ = 800 W.
+el-pf.q1.q	Qu'est-ce qui corrige un facteur de puissance en retard dans une usine ?
+el-pf.q1.o0	Des fusibles plus gros
+el-pf.q1.o1	Des batteries de condensateurs
+el-pf.q1.o2	Des câbles plus épais
+el-pf.q1.x	Les condensateurs compensent le courant en retard.
+el-pf.q2.q	Quel appareil a un facteur de puissance proche de 1 ?
+el-pf.q2.o0	Un moteur à vide
+el-pf.q2.o1	Une bouilloire électrique
+el-pf.q2.o2	Une ancienne lampe fluorescente
+el-pf.q2.x	Une résistance pure garde le courant en phase avec la tension.
+el-pf.c0.title	Puissance active et apparente
+el-pf.c0.text	Avec certaines charges, le courant et la tension n'atteignent pas leur maximum en même temps. Alors les volts × ampères (puissance apparente, en VA) dépassent la puissance utile qui produit réellement du travail (puissance active, en W).
+el-pf.c0.viz.f	W = VA × cos φ
+el-pf.c0.viz.items.0.s	W
+el-pf.c0.viz.items.0.m	puissance active
+el-pf.c0.viz.items.1.s	VA
+el-pf.c0.viz.items.1.m	puissance apparente
+el-pf.c0.viz.items.2.s	cos φ
+el-pf.c0.viz.items.2.m	facteur de puissance 0–1
+el-pf.c1.title	L'analogie de la bière
+el-pf.c1.text	Imaginez un verre de bière : le liquide est la puissance active qui étanche la soif ; la mousse est la puissance réactive, qui prend de la place mais ne produit aucun travail. Le verre entier est la puissance apparente.
+el-pf.c1.viz.items.0	Mousse : puissance réactive (var)
+el-pf.c1.viz.items.1	Bière : puissance active (W)
+el-pf.c1.viz.items.2	Verre entier : puissance apparente (VA)
+el-pf.c2.title	Ce qui la provoque
+el-pf.c2.text	Les moteurs, les transformateurs et les ballasts de lampes fluorescentes stockent de l'énergie dans des champs magnétiques à chaque cycle puis la restituent, si bien que leur courant est en retard sur la tension. L'électronique bon marché déforme l'onde de courant.
+el-pf.c2.viz.l.t	Charges en retard
+el-pf.c2.viz.l.items.0	moteurs
+el-pf.c2.viz.l.items.1	transformateurs
+el-pf.c2.viz.l.items.2	anciens ballasts
+el-pf.c2.viz.r.t	Charges déformantes
+el-pf.c2.viz.r.items.0	alimentations bon marché
+el-pf.c2.viz.r.items.1	anciens drivers LED
+el-pf.c3.title	Pourquoi c'est important
+el-pf.c3.text	Un faible facteur de puissance signifie plus de courant pour le même travail utile : câbles plus gros, plus de pertes, transformateurs plus grands. Les fournisseurs facturent l'énergie réactive aux clients industriels.
+el-pf.c3.viz.unit	ampères pour 10 kW sous 230 V
+el-pf.c3.viz.items.0.l	cos φ 1,0
+el-pf.c3.viz.items.1.l	cos φ 0,9
+el-pf.c3.viz.items.2.l	cos φ 0,7
+el-pf.c4.title	Correction par condensateurs
+el-pf.c4.text	Les condensateurs appellent un courant en avance sur la tension, ce qui annule le courant en retard d'un moteur. Les usines installent des batteries de condensateurs pour ramener le facteur de puissance près de 1.
+el-pf.c4.viz.steps.0	Le courant du moteur est en retard
+el-pf.c4.viz.steps.1	Ajout de condensateurs
+el-pf.c4.viz.steps.2	Le courant en avance annule le retard
+el-pf.c4.viz.steps.3	cos φ ≈ 1
+el-pf.c5.title	Unités : W, VA, var
+el-pf.c5.text	Puissance active en watts (W), puissance réactive en voltampères réactifs (var), puissance apparente en voltampères (VA). Les onduleurs de secours et les groupes électrogènes sont calibrés en VA parce que leur câblage doit supporter le courant total.
+el-pf.c5.viz.items.0.a	W
+el-pf.c5.viz.items.0.b	active, utile
+el-pf.c5.viz.items.1.a	var
+el-pf.c5.viz.items.1.b	réactive, va-et-vient
+el-pf.c5.viz.items.2.a	VA
+el-pf.c5.viz.items.2.b	apparente, ce que transportent les fils
+el-pf.c6.title	Le triangle des puissances
+el-pf.c6.text	Les puissances active et réactive sont à angle droit, donc la puissance apparente est l'hypoténuse : VA² = W² + var². L'angle entre elles est φ.
+el-pf.c6.viz.f	VA² = W² + var²
+el-pf.c6.viz.items.0.s	W
+el-pf.c6.viz.items.0.m	puissance active
+el-pf.c6.viz.items.1.s	var
+el-pf.c6.viz.items.1.m	puissance réactive
+el-pf.c6.viz.items.2.s	VA
+el-pf.c6.viz.items.2.m	puissance apparente
+el-pf.c7.title	Votre facture domestique
+el-pf.c7.text	Au Portugal, les particuliers ne paient que l'énergie active (kWh) ; la facturation de l'énergie réactive s'applique aux gros clients commerciaux et industriels. Votre puissance souscrite, en revanche, est en kVA.
+el-pf.c7.viz.l.t	Logement
+el-pf.c7.viz.l.items.0	paie des kWh
+el-pf.c7.viz.l.items.1	kVA souscrits
+el-pf.c7.viz.r.t	Industrie
+el-pf.c7.viz.r.items.0	paie des kWh
+el-pf.c7.viz.r.items.1	plus l'énergie réactive (kvarh)
+el-pf.c8.title	Facteur de puissance des appareils
+el-pf.c8.text	Les charges résistives comme les bouilloires et les radiateurs ont un facteur de puissance de 1. Les moteurs tournent autour de 0,8–0,9 à pleine charge et bien plus bas à faible charge.
+el-pf.c8.viz.unit	facteur de puissance type
+el-pf.c8.viz.items.0.l	Bouilloire
+el-pf.c8.viz.items.1.l	Moteur asynchrone (pleine charge)
+el-pf.c8.viz.items.2.l	Moteur (faible charge)
+el-pf.c8.viz.items.3.l	Ancienne fluorescente
+el-pf.c9.title	Correction du facteur de puissance dans les chargeurs
+el-pf.c9.text	Les alimentations électroniques plus puissantes, dont les chargeurs d'ordinateurs portables et de VE, contiennent des circuits de correction du facteur de puissance qui font suivre à l'intensité l'onde de tension, comme l'exigent les règles de l'UE.
+el-pf.c9.viz.steps.0	Le redresseur brut déforme le courant
+el-pf.c9.viz.steps.1	Le circuit PFC le remodèle
+el-pf.c9.viz.steps.2	Le courant suit la tension
+el-pf.c9.viz.steps.3	cos φ ≈ 0,99
+el-meter.title	Utiliser un multimètre
+el-meter.summary	Mesurer en toute sécurité volts, ampères, ohms et continuité.
+el-meter.q0.q	Pour mesurer un courant, le multimètre doit être…
+el-meter.q0.o0	Aux bornes de la charge, en parallèle
+el-meter.q0.o1	En série, pour que le courant le traverse
+el-meter.q0.o2	Déconnecté
+el-meter.q0.x	Le courant se mesure en série.
+el-meter.q1.q	Pourquoi les pinces ampèremétriques sont-elles utiles ?
+el-meter.q1.o0	Elles mesurent la résistance
+el-meter.q1.o1	Elles mesurent le courant sans ouvrir le circuit
+el-meter.q1.o2	Elles sont moins chères
+el-meter.q1.x	Elles détectent le champ magnétique autour d'un conducteur.
+el-meter.q2.q	Que devez-vous faire avant d'intervenir sur un circuit que vous avez coupé ?
+el-meter.q2.o0	Se fier à l'étiquette
+el-meter.q2.o1	Vérifier l'absence de tension avec un testeur lui-même contrôlé sur une source sous tension
+el-meter.q2.o2	Le toucher rapidement
+el-meter.q2.x	Vérifiez l'absence de tension, et vérifiez que le testeur fonctionne.
+el-meter.c0.title	Un outil, plusieurs appareils
+el-meter.c0.text	Un multimètre mesure la tension, le courant et la résistance, et généralement la continuité, les diodes et parfois la capacité et la température. Un sélecteur rotatif choisit la fonction et le calibre.
+el-meter.c0.viz.root	Multimètre
+el-meter.c0.viz.items.0	Volts (V)
+el-meter.c0.viz.items.1	Ampères (A)
+el-meter.c0.viz.items.2	Ohms (Ω)
+el-meter.c0.viz.items.3	Bip de continuité
+el-meter.c1.title	Mesurer une tension
+el-meter.c1.text	Placez le sélecteur sur V (alternatif ~ ou continu ⎓) et posez les pointes de touche aux bornes des deux points, en parallèle. Le multimètre a une très forte résistance, donc il perturbe à peine le circuit.
+el-meter.c1.viz.steps.0	Sélecteur sur V~ ou V⎓

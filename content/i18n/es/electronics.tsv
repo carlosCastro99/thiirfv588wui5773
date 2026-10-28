@@ -1037,3 +1037,503 @@ tr-logic.c3.text	Las puertas básicas: AND da 1 solo si todas las entradas son 1
 tr-logic.c3.viz.l.t	AND
 tr-logic.c3.viz.l.items.0	las dos deben ser 1
 tr-logic.c3.viz.l.items.1	puerta abierta Y alarma activada → sirena
+tr-logic.c3.viz.r.t	OR
+tr-logic.c3.viz.r.items.0	basta con una a 1
+tr-logic.c3.viz.r.items.1	botón A O botón B → luz
+tr-logic.c4.title	NAND: la puerta universal
+tr-logic.c4.text	Cualquier circuito lógico, incluso un procesador entero, se puede construir solo con puertas NAND (AND seguida de NOT). Es barata de fabricar en silicio, así que está por todas partes.
+tr-logic.c4.viz.steps.0	Puertas NAND
+tr-logic.c4.viz.steps.1	Forman AND, OR, NOT
+tr-logic.c4.viz.steps.2	Forman sumadores y memoria
+tr-logic.c4.viz.steps.3	Forman un procesador
+tr-logic.c5.title	XOR
+tr-logic.c5.text	La OR exclusiva da 1 cuando las entradas son distintas. Se usa para sumar números binarios, en comprobaciones de paridad y en cifrados sencillos.
+tr-logic.c5.viz.items.0.a	0 XOR 0
+tr-logic.c5.viz.items.1.a	0 XOR 1
+tr-logic.c5.viz.items.2.a	1 XOR 0
+tr-logic.c5.viz.items.3.a	1 XOR 1
+tr-logic.c6.title	Sumar con puertas
+tr-logic.c6.text	Un semisumador suma dos bits usando XOR (para la suma) y AND (para el acarreo). Encadena sumadores completos y podrás sumar números de cualquier tamaño.
+tr-logic.c6.viz.steps.0	Bits A y B
+tr-logic.c6.viz.steps.1	XOR da la suma
+tr-logic.c6.viz.steps.2	AND da el acarreo
+tr-logic.c6.viz.steps.3	Encadenar para números mayores
+tr-logic.c7.title	Biestables: memoria con puertas
+tr-logic.c7.text	Conecta dos puertas realimentándose entre sí y el circuito recuerda su último estado. Eso es un biestable (flip-flop), la base de los registros y de la memoria rápida.
+tr-logic.c7.viz.steps.0	Dos puertas cruzadas
+tr-logic.c7.viz.steps.1	La salida se realimenta
+tr-logic.c7.viz.steps.2	Guarda 0 o 1
+tr-logic.c7.viz.steps.3	Un bit de memoria
+tr-logic.c8.title	Relojes
+tr-logic.c8.text	Los circuitos digitales avanzan al ritmo de una señal de reloj que late millones o miles de millones de veces por segundo. En cada pulso, los biestables capturan nuevos valores.
+tr-logic.c8.viz.items.0.v	16 MHz
+tr-logic.c8.viz.items.0.l	Arduino Uno
+tr-logic.c8.viz.items.1.v	240 MHz
+tr-logic.c8.viz.items.1.l	ESP32
+tr-logic.c8.viz.items.2.v	~4 GHz
+tr-logic.c8.viz.items.2.l	CPU de sobremesa
+tr-logic.c9.title	Trucos a nivel de bit en el código
+tr-logic.c9.text	Los programadores usan operaciones a nivel de bit para poner a 1, borrar y comprobar bits sueltos, por ejemplo en un registro que controla pines GPIO: value | (1<<5) pone a 1 el bit 5.
+tr-logic.c9.viz.items.0.a	x | (1<<n)
+tr-logic.c9.viz.items.0.b	pone a 1 el bit n
+tr-logic.c9.viz.items.1.a	x & ~(1<<n)
+tr-logic.c9.viz.items.1.b	borra el bit n
+tr-logic.c9.viz.items.2.a	x & (1<<n)
+tr-logic.c9.viz.items.2.b	comprueba el bit n
+tr-logic.c9.viz.items.3.a	x ^ (1<<n)
+tr-logic.c9.viz.items.3.b	invierte el bit n
+tr-memory.title	Memoria y almacenamiento
+tr-memory.summary	RAM, flash y EEPROM.
+tr-memory.q0.q	¿Qué le pasa al contenido de la RAM cuando se va la alimentación?
+tr-memory.q0.o0	Se guarda
+tr-memory.q0.o1	Se pierde
+tr-memory.q0.o2	Pasa a la flash
+tr-memory.q0.x	La RAM es volátil.
+tr-memory.q1.q	¿Por qué no escribir en la flash cada segundo?
+tr-memory.q1.o0	Es demasiado lenta
+tr-memory.q1.o1	Las celdas flash se desgastan tras muchos ciclos de borrado
+tr-memory.q1.o2	Usa el wifi
+tr-memory.q1.x	Su resistencia a la escritura es limitada.
+tr-memory.q2.q	¿Qué es lo más rápido?
+tr-memory.q2.o0	SSD
+tr-memory.q2.o1	RAM
+tr-memory.q2.o2	Registros de la CPU
+tr-memory.q2.x	Los registros están dentro del procesador.
+tr-memory.c0.title	RAM: rápida y olvidadiza
+tr-memory.c0.text	La RAM guarda los datos con los que trabaja un programa en este momento. Es rápida pero volátil: corta la alimentación y desaparecen.
+tr-memory.c0.viz.l.t	RAM
+tr-memory.c0.viz.l.items.0	rápida
+tr-memory.c0.viz.l.items.1	volátil
+tr-memory.c0.viz.l.items.2	datos en uso
+tr-memory.c0.viz.r.t	Flash
+tr-memory.c0.viz.r.items.0	más lenta
+tr-memory.c0.viz.r.items.1	conserva sin alimentación
+tr-memory.c0.viz.r.items.2	programa y archivos
+tr-memory.c1.title	SRAM y DRAM
+tr-memory.c1.text	La SRAM guarda cada bit en un biestable: rápida, se usa en cachés y en la memoria de los microcontroladores. La DRAM guarda los bits como carga en condensadores diminutos: más densa y barata, se usa en la RAM de los ordenadores, pero hay que refrescarla constantemente.
+tr-memory.c1.viz.items.0.a	SRAM
+tr-memory.c1.viz.items.0.b	biestables, rápida, cachés
+tr-memory.c1.viz.items.1.a	DRAM
+tr-memory.c1.viz.items.1.b	condensadores, densa, memoria del PC
+tr-memory.c1.viz.items.2.a	refresco
+tr-memory.c1.viz.items.2.b	la DRAM se reescribe miles de veces por segundo
+tr-memory.c2.title	Memoria flash
+tr-memory.c2.text	La flash conserva los datos sin alimentación atrapando carga en celdas aisladas. La usan el programa de tu microcontrolador, los SSD, las tarjetas SD y los pinchos USB.
+tr-memory.c2.viz.root	Memoria flash
+tr-memory.c2.viz.items.0	Programa del microcontrolador
+tr-memory.c2.viz.items.1	SSD
+tr-memory.c2.viz.items.2	Tarjetas SD
+tr-memory.c2.viz.items.3	Pinchos USB
+tr-memory.c3.title	La flash se desgasta
+tr-memory.c3.text	Cada celda flash aguanta un número limitado de ciclos de borrado, de unos 10 000 a 100 000 en los chips pequeños. Escribir una línea de registro cada segundo en el mismo sitio acabará con ella; la nivelación de desgaste reparte las escrituras.
+tr-memory.c3.viz.items.0.w	escribir datos del sensor en flash cada segundo
+tr-memory.c3.viz.items.0.r	guárdalos en RAM y escribe por lotes
+tr-memory.c3.viz.items.1.w	siempre el mismo bloque
+tr-memory.c3.viz.items.1.r	usa nivelación de desgaste
+tr-memory.c4.title	EEPROM
+tr-memory.c4.text	La EEPROM puede reescribir bytes sueltos y es ideal para pequeños ajustes como valores de calibración. En el ESP32 se emula en la flash, con una biblioteca que se encarga de ello.
+tr-memory.c4.viz.items.0	Valores de calibración
+tr-memory.c4.viz.items.1	Credenciales wifi
+tr-memory.c4.viz.items.2	Contadores y ajustes
+tr-memory.c4.viz.items.3	Escribe solo si cambia
+tr-memory.c5.title	La memoria del ESP32
+tr-memory.c5.text	Un ESP32 clásico tiene unos 520 KB de SRAM y normalmente 4 MB de flash. Las variantes con PSRAM añaden varios MB de RAM extra, muy útiles para cámaras y pantallas.
+tr-memory.c5.viz.unit	KB (aprox.)
+tr-memory.c5.viz.items.0.l	RAM del Arduino Uno
+tr-memory.c5.viz.items.1.l	SRAM del ESP32
+tr-memory.c5.viz.items.2.l	Flash del ESP32
+tr-memory.c5.viz.items.3.l	PSRAM
+tr-memory.c6.title	Pila y heap
+tr-memory.c6.text	Los programas usan dos zonas de RAM: la pila (stack), para las llamadas a funciones y las variables locales, y el heap, para la memoria que se pide en tiempo de ejecución. En dispositivos pequeños, fragmentar el heap con muchas cadenas puede colgar el programa al cabo de horas.
+tr-memory.c6.viz.l.t	Pila
+tr-memory.c6.viz.l.items.0	automática
+tr-memory.c6.viz.l.items.1	llamadas a funciones
+tr-memory.c6.viz.l.items.2	rápida
+tr-memory.c6.viz.r.t	Heap
+tr-memory.c6.viz.r.items.0	se pide al ejecutar
+tr-memory.c6.viz.r.items.1	se fragmenta
+tr-memory.c6.viz.r.items.2	ojo en chips pequeños
+tr-memory.c7.title	Jerarquía de almacenamiento
+tr-memory.c7.text	Los ordenadores equilibran velocidad y tamaño: registros y cachés diminutos y ultrarrápidos junto a la CPU, luego la RAM, luego los SSD y después los discos duros o la nube.
+tr-memory.c7.viz.items.0	Registros
+tr-memory.c7.viz.items.1	Caché de la CPU
+tr-memory.c7.viz.items.2	RAM
+tr-memory.c7.viz.items.3	SSD
+tr-memory.c7.viz.items.4	Disco duro y nube
+tr-memory.c8.title	Tarjetas SD para registrar datos
+tr-memory.c8.text	Para registrar datos a largo plazo, una tarjeta SD por SPI ofrece gigabytes de almacenamiento. Escribe por bloques, cierra bien los archivos y cuenta con que las tarjetas baratas acaben fallando.
+tr-memory.c8.viz.items.0	Escribe por bloques
+tr-memory.c8.viz.items.1	Vacía o cierra los archivos
+tr-memory.c8.viz.items.2	Usa tarjetas de calidad
+tr-memory.c8.viz.items.3	Guarda una copia de seguridad
+tr-memory.c9.title	Unidades de almacenamiento
+tr-memory.c9.text	Un kilobyte son 1000 bytes en unidades del SI, pero los sistemas operativos a menudo cuentan 1024 (en rigor, un kibibyte, KiB). Por eso un disco de «1 TB» aparece como unos 931 GB.
+tr-memory.c9.viz.items.0.a	1 KB
+tr-memory.c9.viz.items.0.b	1000 bytes
+tr-memory.c9.viz.items.1.a	1 KiB
+tr-memory.c9.viz.items.1.b	1024 bytes
+tr-memory.c9.viz.items.2.a	disco de 1 TB
+tr-memory.c9.viz.items.2.b	aparece como ~931 GiB
+tr-motors.title	Control de motores
+tr-motors.summary	Puentes H, servos y motores paso a paso.
+tr-motors.q0.q	¿Qué permite que un motor de CC gire en ambos sentidos?
+tr-motors.q0.o0	Un diodo
+tr-motors.q0.o1	Un puente H
+tr-motors.q0.o2	Un condensador
+tr-motors.q0.x	Invierte la corriente con cuatro interruptores.
+tr-motors.q1.q	Un pulso de servo de 1,5 ms suele significar…
+tr-motors.q1.o0	0°
+tr-motors.q1.o1	90° (centro)
+tr-motors.q1.o2	180°
+tr-motors.q1.x	De 1 ms a 2 ms corresponde a 0–180°.
+tr-motors.q2.q	¿Por qué puede reiniciarse un ESP32 cuando arranca un motor?
+tr-motors.q2.o0	Interferencias del wifi
+tr-motors.q2.o1	Caídas de tensión por la corriente de arranque del motor
+tr-motors.q2.o2	Solo por un fallo de software
+tr-motors.q2.x	Usa una alimentación aparte y condensadores.
+tr-motors.c0.title	Nunca alimentes un motor desde un pin
+tr-motors.c0.text	Un motor de CC pequeño puede consumir cientos de miliamperios, más al arrancar, y genera ruido eléctrico. Usa siempre un driver: un transistor, un MOSFET o un chip controlador de motores, además de un diodo de libre circulación.
+tr-motors.c0.viz.steps.0	Pin GPIO
+tr-motors.c0.viz.steps.1	Driver (MOSFET o chip)
+tr-motors.c0.viz.steps.2	Motor con su propia fuente
+tr-motors.c0.viz.steps.3	Masa común
+tr-motors.c1.title	Puente H
+tr-motors.c1.text	Un puente H usa cuatro interruptores para invertir la corriente que pasa por un motor, de modo que pueda girar en ambos sentidos. Chips como el L298N, el DRV8833 o el TB6612 lo hacen por ti.
+tr-motors.c1.viz.l.t	Interruptores A y D cerrados
+tr-motors.c1.viz.l.items.0	corriente en un sentido
+tr-motors.c1.viz.l.items.1	adelante
+tr-motors.c1.viz.r.t	Interruptores B y C cerrados
+tr-motors.c1.viz.r.items.0	corriente invertida
+tr-motors.c1.viz.r.items.1	atrás
+tr-motors.c2.title	Velocidad con PWM
+tr-motors.c2.text	Envía PWM al driver del motor y este girará a una velocidad fijada por el ciclo de trabajo. Las frecuencias de varios kHz a más de 20 kHz evitan el pitido audible.
+tr-motors.c2.viz.unit	% velocidad (aprox.)
+tr-motors.c2.viz.items.0.l	25 % ciclo
+tr-motors.c2.viz.items.1.l	50 % ciclo
+tr-motors.c2.viz.items.2.l	75 % ciclo
+tr-motors.c2.viz.items.3.l	100 % ciclo
+tr-motors.c3.title	Corriente de bloqueo
+tr-motors.c3.text	Cuando un motor está bloqueado o arrancando, consume su corriente de bloqueo, a menudo de 5 a 10 veces la corriente en marcha. Dimensiona el driver y la fuente para ella.
+tr-motors.c3.viz.unit	amperios (motor pequeño de ejemplo)
+tr-motors.c3.viz.items.0.l	En marcha
+tr-motors.c3.viz.items.1.l	Arranque
+tr-motors.c3.viz.items.2.l	Bloqueado
+tr-motors.c4.title	Servos
+tr-motors.c4.text	Un servo de modelismo lleva un motor, una reductora y un sensor de posición en una sola caja. Le envías un pulso cada 20 ms; su anchura, de 1 a 2 ms, fija el ángulo de 0° a 180°.
+tr-motors.c4.viz.unit	ms
+tr-motors.c5.title	Motores paso a paso
+tr-motors.c5.text	Un motor paso a paso se mueve en pasos fijos, normalmente 200 por vuelta (1,8° cada uno). Drivers como el A4988 o el TMC2209 reciben pulsos de paso y dirección y pueden hacer micropasos para un movimiento más suave.
+tr-motors.c5.viz.f	pasos por mm = (pasos/vuelta × micropasos) ÷ mm por vuelta
+tr-motors.c5.viz.items.0.m	pasos/vuelta
+tr-motors.c5.viz.items.1.m	micropasos
+tr-motors.c5.viz.items.2.s	8 mm
+tr-motors.c5.viz.items.2.m	husillo → 400 pasos/mm
+tr-motors.c6.title	Motores sin escobillas
+tr-motors.c6.text	Los motores de CC sin escobillas (drones, ventiladores, bicis eléctricas) necesitan un variador electrónico (ESC) que conmuta tres fases en secuencia. Son eficientes y duraderos.
+tr-motors.c6.viz.steps.0	Señal del controlador
+tr-motors.c6.viz.steps.1	El ESC conmuta 3 fases
+tr-motors.c6.viz.steps.2	Campo giratorio
+tr-motors.c6.viz.steps.3	El motor gira
+tr-motors.c7.title	Alimentaciones separadas
+tr-motors.c7.text	Alimenta los motores con su propia fuente, no con el regulador de 3,3 V del microcontrolador, y une las masas. Añade condensadores cerca del driver del motor para absorber los picos.
+tr-motors.c7.viz.items.0.w	motor en el pin de 3,3 V del ESP32
+tr-motors.c7.viz.items.0.r	fuente aparte para el motor, masa común
+tr-motors.c7.viz.items.1.w	el ESP32 se reinicia al arrancar el motor
+tr-motors.c7.viz.items.1.r	añade un condensador grande junto al driver
+tr-motors.c8.title	Encoders
+tr-motors.c8.text	Un encoder en el eje del motor cuenta pulsos mientras gira, de modo que el controlador conoce la posición y la velocidad exactas. Con realimentación, un motor de CC barato se convierte en un actuador preciso.
+tr-motors.c8.viz.steps.0	Fija el objetivo
+tr-motors.c8.viz.steps.1	El encoder mide la posición
+tr-motors.c8.viz.steps.2	El controlador corrige
+tr-motors.c8.viz.steps.3	Repetir
+tr-motors.c9.title	Control PID
+tr-motors.c9.text	Un controlador PID ajusta la salida según el error actual (P), el error acumulado en el pasado (I) y la rapidez con que cambia el error (D). Mantiene estables motores, calefactores y drones.
+tr-motors.c9.viz.items.0.a	P
+tr-motors.c9.viz.items.0.b	reacciona al error actual
+tr-motors.c9.viz.items.1.a	I
+tr-motors.c9.viz.items.1.b	elimina el desvío fijo
+tr-motors.c9.viz.items.2.a	D
+tr-motors.c9.viz.items.2.b	amortigua el sobreimpulso
+tr-power.title	Diseño de bajo consumo
+tr-power.summary	Cómo hacer que una batería dure meses o años.
+tr-power.q0.q	¿Qué es lo que más influye en la autonomía de un dispositivo que duerme el 99 % del tiempo?
+tr-power.q0.o0	La corriente de pico
+tr-power.q0.o1	La corriente en reposo y el tiempo despierto
+tr-power.q0.o2	La velocidad de la CPU
+tr-power.q0.x	La corriente media determina la autonomía.
+tr-power.q1.q	Una batería de 2000 mAh con 0,5 mA de corriente media dura unas…
+tr-power.q1.o0	40 horas
+tr-power.q1.o1	4000 horas (~5,5 meses)
+tr-power.q1.o2	4 años
+tr-power.q1.x	2000 ÷ 0,5 = 4000 h.
+tr-power.q2.q	¿Cómo puedes reducir la energía de cada despertar con wifi?
+tr-power.q2.o0	Usar DHCP
+tr-power.q2.o1	Usar IP estática y canal fijo para conectar más rápido
+tr-power.q2.o2	Transmitir más fuerte
+tr-power.q2.x	Menos tiempo despierto, menos energía.
+tr-power.c0.title	Lo que cuenta es la corriente media
+tr-power.c0.text	Autonomía = capacidad ÷ corriente media. Un dispositivo que se despierta 1 segundo cada 10 minutos pasa el 99,8 % del tiempo dormido, así que la corriente en reposo importa muchísimo.
+tr-power.c0.viz.f	horas = mAh ÷ mA medios
+tr-power.c0.viz.items.0.s	mAh
+tr-power.c0.viz.items.0.m	capacidad de la batería
+tr-power.c0.viz.items.1.s	mA medios
+tr-power.c0.viz.items.1.m	en todo el ciclo
+tr-power.c1.title	Corriente media
+tr-power.c1.text	Pondera cada estado por lo que dura.
+tr-power.c1.example.0	2 s a 120 mA, 598 s a 10 µA, cada 600 s
+tr-power.c1.example.1	(240 + 6) ÷ 600
+tr-power.c1.example.2	≈ 0,41 mA → 3000 mAh duran ~300 días
+tr-power.c1.viz.f	I media = (I despierto × t despierto + I reposo × t reposo) ÷ t total
+tr-power.c1.viz.items.0.s	despierto
+tr-power.c1.viz.items.0.m	120 mA durante 2 s
+tr-power.c1.viz.items.1.s	dormido
+tr-power.c1.viz.items.1.m	0,01 mA durante 598 s
+tr-power.c2.title	Deep sleep
+tr-power.c2.text	Un ESP32 consume más de 100 mA con el wifi activado, pero solo unos 10 µA en deep sleep (en una placa bien diseñada). Puede despertarlo un temporizador, un pin o un sensor.
+tr-power.c2.viz.unit	mA (ESP32, aprox.)
+tr-power.c2.viz.items.0.l	Wifi transmitiendo
+tr-power.c2.viz.items.1.l	CPU activa
+tr-power.c2.viz.items.2.l	Light sleep
+tr-power.c2.viz.items.3.l	Deep sleep
+tr-power.c3.title	La placa importa
+tr-power.c3.text	Muchas placas de desarrollo desperdician energía: un LED de encendido, un chip USB-serie y un regulador poco eficiente pueden consumir varios mA aunque el chip duerma. Para proyectos con batería, elige una placa de bajo consumo o quita el LED.
+tr-power.c3.viz.items.0	Quita el LED de encendido
+tr-power.c3.viz.items.1	Regulador de bajo consumo en reposo
+tr-power.c3.viz.items.2	Sin chip USB siempre activo
+tr-power.c3.viz.items.3	Alimenta los sensores solo al leer
+tr-power.c4.title	Apaga los sensores
+tr-power.c4.text	Los sensores también consumen corriente. Aliméntalos desde un pin GPIO o con un MOSFET como interruptor, enciéndelos justo antes de leer y apágalos después.
+tr-power.c4.viz.steps.0	Despertar
+tr-power.c4.viz.steps.1	Alimentar el sensor
+tr-power.c4.viz.steps.2	Leer
+tr-power.c4.viz.steps.3	Apagarlo
+tr-power.c4.viz.steps.4	Dormir
+tr-power.c5.title	Conexión wifi rápida
+tr-power.c5.text	Conectarse al wifi puede llevar segundos. Usar una IP estática, un canal fijo y credenciales guardadas puede reducirlo a menos de un segundo, ahorrando mucha energía en cada despertar.
+tr-power.c5.viz.unit	segundos despierto (aprox.)
+tr-power.c5.viz.items.0.l	DHCP y escaneo
+tr-power.c5.viz.items.1.l	IP estática
+tr-power.c5.viz.items.2.l	IP estática + canal fijo
+tr-power.c6.title	Elige la radio
+tr-power.c6.text	Para lecturas frecuentes a larga distancia con batería, LoRa o BLE gastan mucha menos energía por mensaje que el wifi.
+tr-power.c6.viz.unit	energía relativa por mensaje
+tr-power.c6.viz.items.0.l	Wifi
+tr-power.c6.viz.items.1.l	BLE
+tr-power.c6.viz.items.2.l	LoRa (mensaje corto)
+tr-power.c7.title	Qué química de batería elegir
+tr-power.c7.text	Las celdas de iones de litio dan 3,0–4,2 V y son recargables; las LiFePO4 son más seguras, con 3,2 V nominales; el litio primario (como las AA de litio o las Li-SOCl₂) sirve para aguantar años sin recargar y con frío.
+tr-power.c7.viz.items.0.a	Li-ion 18650
+tr-power.c7.viz.items.0.b	recargable, ~3000 mAh
+tr-power.c7.viz.items.1.a	LiFePO4
+tr-power.c7.viz.items.1.b	más segura, 3,2 V
+tr-power.c7.viz.items.2.a	Li-SOCl₂
+tr-power.c7.viz.items.2.b	años, no recargable
+tr-power.c7.viz.items.3.a	AA alcalina
+tr-power.c7.viz.items.3.b	barata, floja con frío
+tr-power.c8.title	Recarga solar
+tr-power.c8.text	Un pequeño panel solar con un regulador de carga puede mantener un sensor remoto funcionando indefinidamente. Dimensiona el panel para el invierno, cuando el sol es más débil, con algo de margen para semanas nubladas.
+tr-power.c8.viz.steps.0	Panel pequeño
+tr-power.c8.viz.steps.1	Regulador de carga
+tr-power.c8.viz.steps.2	Batería
+tr-power.c8.viz.steps.3	Sensor dormilón
+tr-power.c9.title	Mide, no adivines
+tr-power.c9.text	Usa un multímetro en serie, o mejor un perfilador de consumo, para medir las corrientes en reposo y en actividad. Pequeñas sorpresas, como un pin flotante o una pull-up, pueden agotar una batería en semanas.
+tr-power.c9.viz.items.0	Mide la corriente en reposo
+tr-power.c9.viz.items.1	Mide el tiempo despierto
+tr-power.c9.viz.items.2	Busca pines flotantes
+tr-power.c9.viz.items.3	Registra la tensión de la batería en tus datos
+tr-datasheets.title	Leer hojas de datos y esquemas
+tr-datasheets.summary	Encontrar lo importante en 60 páginas.
+tr-datasheets.q0.q	¿Qué son los valores máximos absolutos?
+tr-datasheets.q0.o0	Valores normales de funcionamiento
+tr-datasheets.q0.o1	Límites que nunca se deben superar
+tr-datasheets.q0.o2	Valores típicos
+tr-datasheets.q0.x	Superarlos puede dañar el componente.
+tr-datasheets.q1.q	Dos cables etiquetados como "SCL" en distintos lugares de un esquema…
+tr-datasheets.q1.o0	Son señales distintas
+tr-datasheets.q1.o1	Están conectados
+tr-datasheets.q1.o2	Son errores
+tr-datasheets.q1.x	Las etiquetas de red conectan los puntos con el mismo nombre.
+tr-datasheets.q2.q	¿Debes diseñar con los valores típicos o con los del peor caso?
+tr-datasheets.q2.o0	Típicos
+tr-datasheets.q2.o1	Peor caso (mín./máx.)
+tr-datasheets.q2.o2	Ninguno
+tr-datasheets.q2.x	Lo garantizado son los valores mínimo y máximo.
+tr-datasheets.c0.title	Empieza por el resumen
+tr-datasheets.c0.text	La primera página enumera las características clave: rango de alimentación, interfaz, precisión, consumo. Si ahí ya no encaja con tu proyecto, puedes dejar de leer.
+tr-datasheets.c0.viz.items.0	Rango de tensión de alimentación
+tr-datasheets.c0.viz.items.1	Interfaz (I²C, SPI…)
+tr-datasheets.c0.viz.items.2	Precisión y rango
+tr-datasheets.c0.viz.items.3	Consumo de corriente
+tr-datasheets.c0.viz.items.4	Encapsulado
+tr-datasheets.c1.title	Valores máximos absolutos
+tr-datasheets.c1.text	Son límites que nunca se deben superar, ni siquiera brevemente, o el componente puede dañarse. No son condiciones normales de funcionamiento.
+tr-datasheets.c1.viz.l.t	Máximo absoluto
+tr-datasheets.c1.viz.l.items.0	no superar nunca
+tr-datasheets.c1.viz.l.items.1	riesgo de daño
+tr-datasheets.c1.viz.r.t	Funcionamiento recomendado
+tr-datasheets.c1.viz.r.items.0	donde cumple lo especificado
+tr-datasheets.c2.title	Típico frente a mínimo y máximo
+tr-datasheets.c2.text	"Típico" es lo que hacen la mayoría de las unidades; el mínimo y el máximo son garantías. Diseña para el peor caso, no para el valor típico.
+tr-datasheets.c2.viz.unit	ejemplo: precisión ±°C
+tr-datasheets.c2.viz.items.0.l	Típico
+tr-datasheets.c2.viz.items.1.l	Máximo
+tr-datasheets.c3.title	Patillajes
+tr-datasheets.c3.text	El diagrama de patillaje muestra qué hace cada pin, visto desde arriba (normalmente). El pin 1 está marcado con un punto o una muesca. Los errores aquí son la causa más común de placas muertas.
+tr-datasheets.c3.viz.items.0	Localiza la marca del pin 1
+tr-datasheets.c3.viz.items.1	¿Vista superior o inferior?
+tr-datasheets.c3.viz.items.2	Cuadra alimentación y masa
+tr-datasheets.c3.viz.items.3	Revisa cada nombre de señal
+tr-datasheets.c4.title	Circuito de aplicación
+tr-datasheets.c4.text	La mayoría de las hojas de datos incluyen un circuito de aplicación típico con los condensadores y resistencias exactos que hay que usar. Cópialo fielmente, sobre todo en reguladores y radios.
+tr-datasheets.c4.viz.steps.0	Busca el circuito de aplicación
+tr-datasheets.c4.viz.steps.1	Copia valores y disposición
+tr-datasheets.c4.viz.steps.2	Ajusta solo lo que entiendas
+tr-datasheets.c5.title	Símbolos de esquema
+tr-datasheets.c5.text	Aprende los símbolos básicos: resistencia (zigzag o rectángulo), condensador (dos placas), diodo (triángulo y barra), transistor, y las flechas de masa y alimentación.
+tr-datasheets.c5.viz.items.0.a	zigzag o rectángulo
+tr-datasheets.c5.viz.items.0.b	resistencia
+tr-datasheets.c5.viz.items.1.a	dos placas
+tr-datasheets.c5.viz.items.1.b	condensador
+tr-datasheets.c5.viz.items.2.a	triángulo + barra
+tr-datasheets.c5.viz.items.2.b	diodo
+tr-datasheets.c5.viz.items.3.b	masa
+tr-datasheets.c5.viz.items.4.a	flecha arriba
+tr-datasheets.c5.viz.items.4.b	alimentación
+tr-datasheets.c6.title	Etiquetas de red
+tr-datasheets.c6.text	Los esquemas grandes no dibujan todos los cables; les ponen nombre. Dos puntos etiquetados "SDA" están conectados aunque no los una ninguna línea.
+tr-datasheets.c6.viz.steps.0	Etiqueta un cable "SDA"
+tr-datasheets.c6.viz.steps.1	La misma etiqueta en otro sitio
+tr-datasheets.c6.viz.steps.2	Están conectados
+tr-datasheets.c7.title	Las gráficas dicen la verdad
+tr-datasheets.c7.text	Las gráficas muestran cómo cambian los parámetros con la temperatura, la tensión o la carga. Un sensor preciso a 25 °C puede desviarse a −10 °C; un regulador puede perder tensión con corriente alta.
+tr-datasheets.c7.viz.items.0	Precisión frente a temperatura
+tr-datasheets.c7.viz.items.1	Corriente frente a tensión
+tr-datasheets.c7.viz.items.2	Eficiencia frente a carga
+tr-datasheets.c7.viz.items.3	Respuesta frente a frecuencia
+tr-datasheets.c8.title	Erratas
+tr-datasheets.c8.text	Los chips pueden tener fallos conocidos, publicados en un documento de erratas. Si una función se comporta mal pese a que el código es correcto, revisa primero las erratas.
+tr-datasheets.c8.viz.steps.0	Comportamiento extraño
+tr-datasheets.c8.viz.steps.1	Revisa el cableado
+tr-datasheets.c8.viz.steps.2	Revisa las erratas
+tr-datasheets.c8.viz.steps.3	Solución alternativa u otro componente
+tr-datasheets.c9.title	Dónde encontrarlas
+tr-datasheets.c9.text	Las hojas de datos son gratuitas en la web del fabricante y en distribuidores como Mouser, DigiKey o LCSC. Busca por la referencia exacta impresa en el chip.
+tr-datasheets.c9.viz.items.0	Web del fabricante
+tr-datasheets.c9.viz.items.1	Mouser, DigiKey, LCSC
+tr-datasheets.c9.viz.items.2	Referencia exacta
+tr-datasheets.c9.viz.items.3	Última revisión
+tr-scope.title	Osciloscopios y depuración
+tr-scope.summary	Ver las señales y encontrar averías.
+tr-scope.q0.q	¿Por qué es importante el disparo (trigger) en un osciloscopio?
+tr-scope.q0.o0	Ahorra energía
+tr-scope.q0.o1	Da una imagen estable de las señales repetitivas
+tr-scope.q0.o2	Mide corriente
+tr-scope.q0.x	Sincroniza la pantalla.
+tr-scope.q1.q	¿Qué tiene de peligroso la pinza de masa de un osciloscopio?
+tr-scope.q1.o0	Pincha
+tr-scope.q1.o1	Está unida a tierra, así que una conexión errónea provoca un cortocircuito
+tr-scope.q1.o2	Invierte la polaridad
+tr-scope.q1.x	Usa sondas aisladas en la red eléctrica.
+tr-scope.q2.q	¿Por dónde hay que empezar a depurar?
+tr-scope.q2.o0	Reescribir el código
+tr-scope.q2.o1	Comprobar las tensiones de alimentación
+tr-scope.q2.o2	Cambiar el chip
+tr-scope.q2.x	Los problemas de alimentación causan muchos síntomas.
+tr-scope.c0.title	Qué muestra un osciloscopio
+tr-scope.c0.text	Un multímetro da un número; un osciloscopio dibuja la tensión frente al tiempo, así que puedes ver formas de onda, glitches, ruido y tiempos.
+tr-scope.c0.viz.l.t	Multímetro
+tr-scope.c0.viz.l.items.0	un número
+tr-scope.c0.viz.l.items.1	cambios lentos
+tr-scope.c0.viz.l.items.2	barato
+tr-scope.c0.viz.r.t	Osciloscopio
+tr-scope.c0.viz.r.items.0	tensión en el tiempo
+tr-scope.c0.viz.r.items.1	eventos rápidos
+tr-scope.c0.viz.r.items.2	muestra la forma
+tr-scope.c1.title	Los dos ejes
+tr-scope.c1.text	El eje vertical son voltios por división; el horizontal, tiempo por división. Ajusta ambos hasta que la señal llene bien la pantalla.
+tr-scope.c1.viz.items.0.a	V/div
+tr-scope.c1.viz.items.0.b	escala vertical
+tr-scope.c1.viz.items.1.a	s/div
+tr-scope.c1.viz.items.1.b	escala de tiempo
+tr-scope.c1.viz.items.2.a	disparo
+tr-scope.c1.viz.items.2.b	lo que inicia el trazo
+tr-scope.c1.viz.items.3.a	sonda ×10
+tr-scope.c1.viz.items.3.b	ajuste de atenuación
+tr-scope.c2.title	El disparo
+tr-scope.c2.text	El disparo indica al osciloscopio cuándo empezar a dibujar, por ejemplo cuando la tensión cruza 1,5 V subiendo. Sin él, una señal repetitiva se desplaza y se ve borrosa.
+tr-scope.c2.viz.steps.0	La señal supera el nivel de disparo
+tr-scope.c2.viz.steps.1	El osciloscopio empieza a dibujar
+tr-scope.c2.viz.steps.2	Imagen estable en cada barrido
+tr-scope.c3.title	Ancho de banda
+tr-scope.c3.text	El ancho de banda de un osciloscopio limita lo rápida que puede ser una señal para mostrarla con precisión. Como regla, elige un ancho de banda de unas cinco veces la frecuencia más alta que te interese.
+tr-scope.c3.viz.f	ancho de banda ≈ 5 × frecuencia de la señal
+tr-scope.c3.viz.items.0.s	reloj SPI de 10 MHz
+tr-scope.c3.viz.items.0.m	pide un osciloscopio de ~50 MHz
+tr-scope.c4.title	El peligro del cable de masa
+tr-scope.c4.text	La masa de la sonda del osciloscopio está conectada a la tierra de la red. Engancharla a un punto que no esté a potencial de masa, como en un circuito de red, provoca un cortocircuito. Usa sondas aisladas o diferenciales en la red eléctrica.
+tr-scope.c4.viz.items.0.w	pinza de masa en un circuito de red
+tr-scope.c4.viz.items.0.r	sonda diferencial o aislada
+tr-scope.c4.viz.items.1.w	masa en un nodo que no es masa
+tr-scope.c4.viz.items.1.r	cortocircuito
+tr-scope.c5.title	Método de depuración
+tr-scope.c5.text	Trabaja desde la alimentación hacia fuera: comprueba las tensiones de alimentación, luego los relojes y después las señales. Cambia una sola cosa cada vez y anota los resultados.
+tr-scope.c5.viz.steps.0	Revisa la alimentación
+tr-scope.c5.viz.steps.1	Revisa los relojes
+tr-scope.c5.viz.steps.2	Revisa las señales
+tr-scope.c5.viz.steps.3	Cambia una cosa cada vez
+tr-scope.c6.title	Registro por puerto serie
+tr-scope.c6.text	Imprimir valores por el puerto serie es el depurador más barato: ¿qué lee el sensor, por qué rama ha ido el código, cuánto ha tardado?
+tr-scope.c6.viz.items.0	Imprime las variables clave
+tr-scope.c6.viz.items.1	Imprime marcas de tiempo
+tr-scope.c6.viz.items.2	Imprime qué rama se ejecutó
+tr-scope.c6.viz.items.3	Quita luego los prints ruidosos
+tr-scope.c7.title	Depuración con patito de goma
+tr-scope.c7.text	Explicar el problema paso a paso, aunque sea a un patito de goma o a un compañero, a menudo revela el error. Escribirlo también funciona.
+tr-scope.c7.viz.steps.0	Explica cada paso en voz alta
+tr-scope.c7.viz.steps.1	Detecta el hueco
+tr-scope.c7.viz.steps.2	Encuentra el fallo
+tr-scope.c8.title	Los sospechosos habituales
+tr-scope.c8.text	Muchas averías son sencillas: falta de masa común, TX/RX intercambiados, tensión equivocada, un cable flojo en la protoboard, una pull-up que falta o la placa equivocada seleccionada en el IDE.
+tr-scope.c8.viz.items.0	¿Masa común?
+tr-scope.c8.viz.items.1	¿TX/RX intercambiados?
+tr-scope.c8.viz.items.2	¿Tensión correcta?
+tr-scope.c8.viz.items.3	¿Cable flojo?
+tr-scope.c8.viz.items.4	¿Hay pull-ups?
+tr-scope.c9.title	Herramientas baratas que rinden mucho
+tr-scope.c9.text	Un analizador lógico de 10 €, un multímetro básico y un osciloscopio USB o uno de sobremesa de segunda mano cubren la mayor parte de la depuración de aficionado.
+tr-scope.c9.viz.items.0	Multímetro
+tr-scope.c9.viz.items.1	Analizador lógico USB
+tr-scope.c9.viz.items.2	Osciloscopio básico
+tr-scope.c9.viz.items.3	Fuente de laboratorio con límite de corriente
+tr-noise.title	Ruido, masas y desacoplo
+tr-noise.summary	Por qué los circuitos se portan mal y cómo calmarlos.
+tr-noise.q0.q	¿Dónde debe ir un condensador de desacoplo de 100 nF?
+tr-noise.q0.o0	En cualquier parte de la placa
+tr-noise.q0.o1	Justo al lado de los pines de alimentación del chip
+tr-noise.q0.o2	En la batería
+tr-noise.q0.x	A poca distancia, la alimentación local es rápida.
+tr-noise.q1.q	¿Qué evita la histéresis?
+tr-noise.q1.o0	Pérdidas de potencia
+tr-noise.q1.o1	El parpadeo rápido de encendido y apagado en torno a un umbral
+tr-noise.q1.o2	Los bucles de masa
+tr-noise.q1.x	Separa los umbrales de encendido y apagado.
+tr-noise.q2.q	¿Por qué usar par trenzado en cables largos de sensores?
+tr-noise.q2.o0	Es más barato
+tr-noise.q2.o1	El ruido se capta por igual en ambos hilos y se cancela
+tr-noise.q2.o2	Lleva más corriente
+tr-noise.q2.x	El trenzado cancela el ruido inducido.
+tr-noise.c0.title	Condensadores de desacoplo
+tr-noise.c0.text	Todo chip necesita un pequeño condensador (normalmente de 100 nF) justo al lado de sus pines de alimentación. Cuando el chip pide corriente de golpe, el condensador la suministra localmente y evita caídas en la línea.
+tr-noise.c0.viz.steps.0	El chip conmuta
+tr-noise.c0.viz.steps.1	Demanda brusca de corriente
+tr-noise.c0.viz.steps.2	El 100 nF cercano la aporta
+tr-noise.c0.viz.steps.3	La línea se mantiene estable
+tr-noise.c1.title	Capacidad de reserva
+tr-noise.c1.text	Además de los pequeños condensadores de desacoplo, añade uno electrolítico o cerámico más grande (10–470 µF) donde entra la alimentación a la placa y cerca de motores o radios, para absorber caídas más lentas.
+tr-noise.c1.viz.l.t	Desacoplo 100 nF
+tr-noise.c1.viz.l.items.0	junto a cada chip
+tr-noise.c1.viz.l.items.1	picos rápidos
+tr-noise.c1.viz.r.t	Reserva 10–470 µF
+tr-noise.c1.viz.r.items.0	en la entrada de alimentación
+tr-noise.c1.viz.r.items.1	caídas más lentas

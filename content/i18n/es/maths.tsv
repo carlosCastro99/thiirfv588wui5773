@@ -757,3 +757,523 @@ ma-growth.c9.viz.items.1.v	10 dobleces
 ma-growth.c9.viz.items.1.l	~10 cm
 ma-growth.c9.viz.items.2.v	42 dobleces
 ma-growth.c9.viz.items.2.l	más allá de la Luna
+ma-functions.title	Gráficas y funciones
+ma-functions.summary	Ver relaciones de un vistazo.
+ma-functions.q0.q	En y = mx + c, ¿qué te indica m?
+ma-functions.q0.o0	Dónde empieza la recta
+ma-functions.q0.o1	Lo inclinada que está
+ma-functions.q0.o2	El valor de y
+ma-functions.q0.x	La pendiente.
+ma-functions.q1.q	¿Qué forma tiene y = x²?
+ma-functions.q1.o0	Una línea recta
+ma-functions.q1.o1	Una parábola en forma de U
+ma-functions.q1.o2	Un círculo
+ma-functions.q1.x	Las pelotas lanzadas siguen una.
+ma-functions.q2.q	En una gráfica distancia-tiempo, la pendiente muestra…
+ma-functions.q2.o0	la distancia
+ma-functions.q2.o1	la velocidad
+ma-functions.q2.o2	el tiempo
+ma-functions.q2.x	Distancia por unidad de tiempo.
+ma-functions.c0.title	Qué es una función
+ma-functions.c0.text	Una función es una regla que convierte cada entrada en exactamente una salida, como una máquina: si metes un 3, la regla «multiplica por dos» da 6.
+ma-functions.c0.viz.steps.0	Entrada: 3
+ma-functions.c0.viz.steps.1	Regla: × 2
+ma-functions.c0.viz.steps.2	Salida: 6
+ma-functions.c1.title	Coordenadas
+ma-functions.c1.text	La idea de Descartes: describir cualquier punto con dos números, (x, y): cuánto a la derecha y cuánto hacia arriba. Así unió el álgebra y la geometría.
+ma-functions.c1.viz.items.0.a	x
+ma-functions.c1.viz.items.0.b	derecha
+ma-functions.c1.viz.items.1.a	y
+ma-functions.c1.viz.items.1.b	arriba
+ma-functions.c1.viz.items.2.b	el origen
+ma-functions.c1.viz.items.3.b	3 a la dcha., 2 arriba
+ma-functions.c2.title	Líneas rectas
+ma-functions.c2.text	y = mx + c dibuja una línea recta: m es la pendiente (lo inclinada que está) y c es el punto donde corta el eje y.
+ma-functions.c2.formula	y = mx + c
+ma-functions.c2.viz.f	y = mx + c
+ma-functions.c2.viz.items.0.s	m
+ma-functions.c2.viz.items.0.m	pendiente
+ma-functions.c2.viz.items.1.s	c
+ma-functions.c2.viz.items.1.m	dónde corta el eje y
+ma-functions.c2.viz.items.2.s	x
+ma-functions.c2.viz.items.2.m	entrada
+ma-functions.c3.title	La tarifa de un taxi
+ma-functions.c3.text	Un taxi cobra 3,50 € de bajada de bandera más 1,20 € por km. Tarifa = 1,2 × km + 3,5: una línea recta. 10 km cuestan 15,50 €.
+ma-functions.c3.viz.unit	tarifa, €
+ma-functions.c3.viz.items.0.l	0 km
+ma-functions.c3.viz.items.1.l	5 km
+ma-functions.c3.viz.items.2.l	10 km
+ma-functions.c4.title	Pendiente es ritmo
+ma-functions.c4.text	La pendiente es un ritmo de cambio: euros por km, km por hora, grados por minuto. Cuanto más inclinada la recta, más rápido el cambio.
+ma-functions.c4.viz.items.0.a	Pendiente distancia-tiempo
+ma-functions.c4.viz.items.0.b	velocidad
+ma-functions.c4.viz.items.1.a	Pendiente coste-cantidad
+ma-functions.c4.viz.items.1.b	precio por unidad
+ma-functions.c4.viz.items.2.a	Pendiente temperatura-tiempo
+ma-functions.c4.viz.items.2.b	ritmo de calentamiento
+ma-functions.c5.title	Curvas
+ma-functions.c5.text	y = x² forma una curva en U llamada parábola. Una pelota lanzada al aire sigue una, y las antenas parabólicas usan su forma para concentrar las señales.
+ma-functions.c5.viz.unit	y = x²
+ma-functions.c5.viz.items.0.l	x = 0
+ma-functions.c5.viz.items.1.l	x = 1
+ma-functions.c5.viz.items.2.l	x = 2
+ma-functions.c5.viz.items.3.l	x = 3
+ma-functions.c6.title	Leer gráficas
+ma-functions.c6.text	Antes de leer una gráfica, comprueba qué muestra cada eje, las unidades y la escala. Luego fíjate en la forma general antes que en los detalles.
+ma-functions.c6.viz.items.0	¿Qué hay en cada eje?
+ma-functions.c6.viz.items.1	¿Qué unidades?
+ma-functions.c6.viz.items.2	¿El eje empieza en cero?
+ma-functions.c6.viz.items.3	¿Cuál es la tendencia general?
+ma-functions.c7.title	Formas del cambio
+ma-functions.c7.text	Las rectas indican un cambio constante; las curvas que suben, aceleración; las curvas que se aplanan, saturación, como la batería de un móvil cargándose.
+ma-functions.c7.viz.root	Formas del cambio
+ma-functions.c7.viz.items.0	Recta: constante
+ma-functions.c7.viz.items.1	Curva hacia arriba: acelera
+ma-functions.c7.viz.items.2	Se aplana: se satura
+ma-functions.c8.title	Relaciones inversas
+ma-functions.c8.text	Algunas magnitudes se mueven en sentidos opuestos: el tiempo de viaje baja cuando sube la velocidad. La gráfica desciende en curva sin llegar nunca a cero.
+ma-functions.c8.viz.unit	horas para 120 km
+ma-functions.c8.viz.items.0.l	30 km/h
+ma-functions.c8.viz.items.1.l	60 km/h
+ma-functions.c8.viz.items.2.l	120 km/h
+ma-functions.c9.title	Funciones en el código
+ma-functions.c9.text	Las hojas de cálculo y los programas están llenos de funciones: =SUMA(), =PROMEDIO(). Cada una recibe entradas y devuelve una salida, exactamente como en matemáticas.
+ma-functions.c9.viz.steps.0	Celdas A1 a A10
+ma-functions.c9.viz.steps.1	Función SUMA
+ma-functions.c9.viz.steps.2	Un total
+ma-games.title	Teoría de juegos
+ma-games.summary	Las matemáticas de la estrategia.
+ma-games.q0.q	En el dilema del prisionero, ¿qué suele ocurrir?
+ma-games.q0.o0	Los dos callan
+ma-games.q0.o1	Los dos se traicionan y salen perdiendo
+ma-games.q0.o2	Uno queda libre
+ma-games.q0.x	La lógica individual se impone al bien colectivo.
+ma-games.q1.q	¿Qué estrategia funcionó bien en los torneos de Axelrod?
+ma-games.q1.o0	Traicionar siempre
+ma-games.q1.o1	Toma y daca
+ma-games.q1.o2	Al azar
+ma-games.q1.x	Coopera primero y luego imita.
+ma-games.c0.title	Qué estudia la teoría de juegos
+ma-games.c0.text	La teoría de juegos estudia decisiones en las que tu mejor opción depende de lo que hagan los demás: negocios, política, biología e incluso cruzar la calle.
+ma-games.c0.viz.items.0	Fijación de precios
+ma-games.c0.viz.items.1	Negociaciones
+ma-games.c0.viz.items.2	Elecciones
+ma-games.c0.viz.items.3	Conducta animal
+ma-games.c0.viz.items.4	Tráfico
+ma-games.c1.title	El dilema del prisionero
+ma-games.c1.text	Dos sospechosos pueden callar o traicionarse. A cada uno, por separado, le conviene traicionar; pero si ambos traicionan, los dos acaban peor que si ambos hubieran callado.
+ma-games.c1.viz.l.t	Ambos callan
+ma-games.c1.viz.l.items.0	1 año cada uno
+ma-games.c1.viz.l.items.1	lo mejor juntos
+ma-games.c1.viz.r.t	Ambos traicionan
+ma-games.c1.viz.r.items.0	5 años cada uno
+ma-games.c1.viz.r.items.1	lo que suele pasar
+ma-games.c2.title	Equilibrio de Nash
+ma-games.c2.text	Un equilibrio de Nash es una situación en la que nadie gana cambiando su decisión por su cuenta. John Nash, protagonista de *Una mente maravillosa*, lo definió en 1950.
+ma-games.c2.viz.steps.0	Cada jugador elige estrategia
+ma-games.c2.viz.steps.1	Nadie mejora por su cuenta
+ma-games.c2.viz.steps.2	Equilibrio
+ma-games.c3.title	Juegos repetidos
+ma-games.c3.text	Cuando el juego se repite, la cooperación puede ganar. En los torneos informáticos de Robert Axelrod en los años ochenta, el «toma y daca» (cooperar primero y luego imitar al otro) obtuvo resultados notables.
+ma-games.c3.viz.steps.0	Coopera primero
+ma-games.c3.viz.steps.1	Imita su última jugada
+ma-games.c3.viz.steps.2	Perdona rápido
+ma-games.c3.viz.steps.3	La cooperación se extiende
+ma-games.c4.title	Juegos de suma cero
+ma-games.c4.text	En los juegos de suma cero, lo que gana un jugador es exactamente lo que pierde el otro, como en el póquer o el ajedrez. Casi todo en la vida, incluido el comercio, no es de suma cero: ambas partes pueden ganar.
+ma-games.c4.viz.l.t	Suma cero
+ma-games.c4.viz.l.items.0	póquer
+ma-games.c4.viz.l.items.1	ajedrez
+ma-games.c4.viz.l.items.2	uno gana, otro pierde
+ma-games.c4.viz.r.t	Suma positiva
+ma-games.c4.viz.r.items.0	comercio
+ma-games.c4.viz.r.items.1	en equipo
+ma-games.c4.viz.r.items.2	ambos pueden ganar
+ma-games.c5.title	El juego de la gallina
+ma-games.c5.text	Dos conductores se lanzan el uno contra el otro; quien se aparta queda en ridículo, pero si ninguno lo hace, chocan. Sirve de modelo para pulsos entre países o empresas.
+ma-games.c5.viz.items.0.a	Ambos se apartan
+ma-games.c5.viz.items.0.b	ambos a salvo
+ma-games.c5.viz.items.1.a	Uno se aparta
+ma-games.c5.viz.items.1.b	el otro gana
+ma-games.c5.viz.items.2.a	Ninguno se aparta
+ma-games.c5.viz.items.2.b	desastre
+ma-games.c6.title	Ventaja de mover primero
+ma-games.c6.text	En algunos juegos, mover primero te permite comprometerte y determinar el resultado. En otros, esperar te permite aprender de los errores del líder.
+ma-games.c6.viz.l.t	Mover primero
+ma-games.c6.viz.l.items.0	fijar el estándar
+ma-games.c6.viz.l.items.1	ocupar posición
+ma-games.c6.viz.r.t	Esperar
+ma-games.c6.viz.r.items.0	aprender de otros
+ma-games.c6.viz.r.items.1	evitar errores caros
+ma-games.c7.title	Subastas
+ma-games.c7.text	La teoría de juegos diseña subastas de espectro radioeléctrico valoradas en miles de millones. En una subasta en sobre cerrado al segundo precio, la mejor estrategia es pujar exactamente lo que vale para ti.
+ma-games.c7.viz.steps.0	Todos pujan en secreto
+ma-games.c7.viz.steps.1	Gana la puja más alta
+ma-games.c7.viz.steps.2	Paga la segunda puja más alta
+ma-games.c8.title	La evolución como juego
+ma-games.c8.text	Los animales «juegan» estrategias moldeadas por la evolución: los halcones luchan, las palomas comparten. Una mezcla de ambos puede ser estable en una población.
+ma-games.c8.viz.items.0.a	Halcón
+ma-games.c8.viz.items.0.b	siempre lucha
+ma-games.c8.viz.items.1.a	Paloma
+ma-games.c8.viz.items.1.b	comparte, se retira
+ma-games.c8.viz.items.2.a	Estable
+ma-games.c8.viz.items.2.b	una mezcla de ambos
+ma-games.c9.title	Pagar a escote
+ma-games.c9.text	Cuando un grupo divide a partes iguales la cuenta del restaurante, todos tienen la tentación de pedir más, porque el coste se reparte. Al final todos pagan más: una pequeña tragedia de los comunes.
+ma-games.c9.viz.steps.0	A partes iguales
+ma-games.c9.viz.steps.1	Cada uno pide más
+ma-games.c9.viz.steps.2	La cuenta crece
+ma-games.c9.viz.steps.3	Todos pagan más
+ma-codes.title	Códigos y criptografía
+ma-codes.summary	Mensajes secretos, de César a tu móvil.
+ma-codes.q0.q	¿Qué permite romper los cifrados por sustitución simples?
+ma-codes.q0.o0	La fuerza bruta
+ma-codes.q0.o1	El análisis de frecuencia de letras
+ma-codes.q0.o2	Los ordenadores cuánticos
+ma-codes.q0.x	La E es la letra más frecuente en inglés.
+ma-codes.q1.q	En la criptografía de clave pública, ¿qué clave guardas en secreto?
+ma-codes.q1.o0	La clave pública
+ma-codes.q1.o1	La clave privada
+ma-codes.q1.o2	Ambas
+ma-codes.q1.x	La pública se comparte.
+ma-codes.c0.title	El cifrado César
+ma-codes.c0.text	Julio César desplazaba cada letra tres posiciones: la A se convierte en D, la B en E. Fácil de usar, y fácil de romper.
+ma-codes.c0.viz.items.0.a	A
+ma-codes.c0.viz.items.0.b	D
+ma-codes.c0.viz.items.1.a	B
+ma-codes.c0.viz.items.1.b	E
+ma-codes.c0.viz.items.2.a	HOLA
+ma-codes.c0.viz.items.2.b	KROD
+ma-codes.c0.viz.items.3.a	Desplaz.
+ma-codes.c0.viz.items.3.b	3 letras
+ma-codes.c1.title	Romper códigos con la frecuencia
+ma-codes.c1.text	En inglés, la E es la letra más frecuente, seguida de la T y la A. Cuenta las letras de un mensaje cifrado y podrás adivinar la sustitución. Al-Kindi lo describió en el siglo IX.
+ma-codes.c1.viz.unit	% de letras en inglés
+ma-codes.c1.viz.items.0.l	E
+ma-codes.c1.viz.items.1.l	T
+ma-codes.c1.viz.items.2.l	A
+ma-codes.c1.viz.items.3.l	O
+ma-codes.c1.viz.items.4.l	Z
+ma-codes.c2.title	Vigenère
+ma-codes.c2.text	El cifrado de Vigenère usa una palabra clave para desplazar cada letra una cantidad distinta, lo que burla el simple recuento de frecuencias. Durante 300 años lo llamaron «el cifrado indescifrable».
+ma-codes.c2.viz.steps.0	Clave: LIMÓN
+ma-codes.c2.viz.steps.1	Cada letra se desplaza distinto
+ma-codes.c2.viz.steps.2	Frecuencia oculta
+ma-codes.c3.title	Enigma
+ma-codes.c3.text	La máquina alemana Enigma usaba rotores para cambiar el cifrado con cada pulsación. Unos matemáticos polacos fueron los primeros en descifrarla; el equipo de Alan Turing en Bletchley Park la rompió a gran escala.
+ma-codes.c3.viz.events.0.l	Polacos rompen Enigma
+ma-codes.c3.viz.events.1.l	compartido con Reino Unido
+ma-codes.c3.viz.events.2.l	La bombe de Turing
+ma-codes.c3.viz.events.3.l	fin de la guerra
+ma-codes.c4.title	Claves
+ma-codes.c4.text	El cifrado moderno es público: el método se conoce y la seguridad depende por completo de una clave secreta. Una clave de 128 bits tiene billones de veces más combinaciones que granos de arena hay en la Tierra.
+ma-codes.c4.viz.items.0.v	2¹²⁸
+ma-codes.c4.viz.items.0.l	claves de 128 bits posibles
+ma-codes.c4.viz.items.1.v	3,4 × 10³⁸
+ma-codes.c4.viz.items.1.l	ese número
+ma-codes.c4.viz.items.2.v	Miles de millones de años
+ma-codes.c4.viz.items.2.l	para probarlas todas
+ma-codes.c5.title	Criptografía de clave pública
+ma-codes.c5.text	Tu móvil usa dos claves: una pública, que cualquiera puede usar para cerrar un mensaje, y una privada, que solo tú tienes, para abrirlo. Se inventó en los años setenta.
+ma-codes.c5.viz.l.t	Clave pública
+ma-codes.c5.viz.l.items.0	compartida con todos
+ma-codes.c5.viz.l.items.1	cierra
+ma-codes.c5.viz.r.t	Clave privada
+ma-codes.c5.viz.r.items.0	guardada en secreto
+ma-codes.c5.viz.r.items.1	abre
+ma-codes.c6.title	La analogía del candado
+ma-codes.c6.text	Envía a alguien un candado abierto: lo usa para cerrar una caja, y solo tú tienes la llave. Nadie ha tenido que compartir un secreto antes.
+ma-codes.c6.viz.steps.0	Envía el candado abierto
+ma-codes.c6.viz.steps.1	Cierran la caja
+ma-codes.c6.viz.steps.2	Te la devuelven
+ma-codes.c6.viz.steps.3	Solo tú puedes abrirla
+ma-codes.c7.title	Hashes
+ma-codes.c7.text	Un hash convierte cualquier dato en una huella de longitud fija. Cambia una letra y el hash cambia por completo. Las webs guardan hashes de las contraseñas, no las contraseñas.
+ma-codes.c7.viz.steps.0	Contraseña
+ma-codes.c7.viz.steps.1	Función hash
+ma-codes.c7.viz.steps.2	Se guarda la huella
+ma-codes.c7.viz.steps.3	Se compara al entrar
+ma-codes.c8.title	Contraseñas seguras
+ma-codes.c8.text	La longitud gana a la complejidad. Cuatro palabras al azar son más fáciles de recordar y más difíciles de descifrar que «P@ssw0rd1». Usa un gestor de contraseñas y la autenticación en dos pasos.
+ma-codes.c8.viz.items.0.w	P@ssw0rd1
+ma-codes.c8.viz.items.0.r	cuatro palabras al azar y un gestor de contraseñas
+ma-codes.c9.title	La amenaza cuántica
+ma-codes.c9.text	Algún día, los grandes ordenadores cuánticos podrían romper los sistemas de clave pública actuales. Para prepararse, en 2024 se estandarizaron nuevos algoritmos «poscuánticos».
+ma-codes.c9.viz.events.0.l	RSA
+ma-codes.c9.viz.events.1.l	Algoritmo cuántico de Shor
+ma-codes.c9.viz.events.2.l	estándares poscuánticos
+ma-greats.title	Grandes matemáticos
+ma-greats.summary	Las personas detrás de las ideas.
+ma-greats.q0.q	¿Cómo sumó el joven Gauss los números del 1 al 100?
+ma-greats.q0.o0	Contando
+ma-greats.q0.o1	Emparejando números en 50 pares de 101
+ma-greats.q0.o2	Con una calculadora
+ma-greats.q0.x	5050.
+ma-greats.q1.q	¿Quién escribió el primer programa informático publicado?
+ma-greats.q1.o0	Alan Turing
+ma-greats.q1.o1	Ada Lovelace
+ma-greats.q1.o2	Charles Babbage
+ma-greats.q1.x	En 1843.
+ma-greats.c0.title	Euclides
+ma-greats.c0.text	Hacia el 300 a. C., Euclides escribió los *Elementos*, donde construyó la geometría a partir de unos pocos axiomas básicos. Se usó como libro de texto durante más de 2000 años.
+ma-greats.c0.viz.steps.0	Pocos axiomas
+ma-greats.c0.viz.steps.1	Pruebas lógicas
+ma-greats.c0.viz.steps.2	Cientos de teoremas
+ma-greats.c1.title	Arquímedes
+ma-greats.c1.text	Arquímedes estimó π, calculó el volumen de la esfera, explicó la palanca y la flotabilidad y, según se cuenta, gritó «¡Eureka!» en la bañera.
+ma-greats.c1.viz.items.0	Estimó π
+ma-greats.c1.viz.items.1	Volumen de la esfera
+ma-greats.c1.viz.items.2	Ley de la palanca
+ma-greats.c1.viz.items.3	Flotabilidad
+ma-greats.c2.title	Hipatia
+ma-greats.c2.text	Hipatia de Alejandría (c. 360–415 d. C.) fue matemática, astrónoma y maestra, una de las primeras mujeres de las matemáticas cuyo nombre conocemos.
+ma-greats.c2.viz.events.0.y	~360 d. C.
+ma-greats.c2.viz.events.0.l	nace
+ma-greats.c2.viz.events.1.l	dirige su escuela
+ma-greats.c2.viz.events.2.l	asesinada por una turba
+ma-greats.c3.title	Fibonacci
+ma-greats.c3.text	Leonardo de Pisa, conocido como Fibonacci, popularizó los numerales indoarábigos en Europa en 1202 con su *Liber Abaci*, un libro para comerciantes.
+ma-greats.c3.viz.l.t	Romanos
+ma-greats.c3.viz.l.items.0	XLVIII × XII
+ma-greats.c3.viz.l.items.1	lento
+ma-greats.c3.viz.r.t	Indoarábigos
+ma-greats.c3.viz.r.items.1	rápido
+ma-greats.c4.title	Descartes y Fermat
+ma-greats.c4.text	En el siglo XVII, ambos unieron el álgebra y la geometría mediante coordenadas. Fermat dejó además un famoso «último teorema» que estuvo sin demostrar 358 años.
+ma-greats.c4.viz.events.0.l	Nota de Fermat
+ma-greats.c4.viz.events.1.l	La Geometría de Descartes
+ma-greats.c4.viz.events.2.l	Se publica la prueba de Wiles
+ma-greats.c5.title	Newton y Leibniz
+ma-greats.c5.text	Ambos inventaron el cálculo de forma independiente a finales del siglo XVII y discutieron con amargura sobre quién fue el primero. Hoy usamos la notación de Leibniz.
+ma-greats.c5.viz.l.t	Newton
+ma-greats.c5.viz.l.items.0	motivación física
+ma-greats.c5.viz.l.items.1	puntos para ritmos
+ma-greats.c5.viz.r.t	Leibniz
+ma-greats.c5.viz.r.items.0	publicó primero
+ma-greats.c5.viz.r.items.1	notación dx y ∫
+ma-greats.c6.title	Euler
+ma-greats.c6.text	Leonhard Euler fue el matemático más prolífico de la historia: escribió más de 800 artículos, incluso después de quedarse ciego. Su identidad e^iπ + 1 = 0 relaciona cinco números clave.
+ma-greats.c6.viz.f	e^iπ + 1 = 0
+ma-greats.c6.viz.items.0.s	e
+ma-greats.c6.viz.items.0.m	constante del crecimiento
+ma-greats.c6.viz.items.1.s	i
+ma-greats.c6.viz.items.1.m	unidad imaginaria
+ma-greats.c6.viz.items.2.s	π
+ma-greats.c6.viz.items.2.m	constante del círculo
+ma-greats.c6.viz.items.3.m	1 y 0
+ma-greats.c7.title	Gauss
+ma-greats.c7.text	Se cuenta que, de niño, Gauss sumó del 1 al 100 en segundos: emparejó 1+100, 2+99… en 50 pares de 101, lo que da 5050.
+ma-greats.c7.example.0	1 + 100 = 101
+ma-greats.c7.example.1	50 pares
+ma-greats.c7.example.2	50 × 101 = 5050
+ma-greats.c7.viz.items.3.a	50 pares
+ma-greats.c8.title	Ada Lovelace
+ma-greats.c8.text	En 1843, Ada Lovelace escribió el que se considera el primer programa informático, para la máquina analítica de Babbage, y previó que los ordenadores harían música.
+ma-greats.c8.viz.events.0.l	Se diseña la máquina analítica
+ma-greats.c8.viz.events.1.l	Notas de Lovelace
+ma-greats.c8.viz.events.2.y	Años 40
+ma-greats.c8.viz.events.2.l	primeros ordenadores
+ma-greats.c9.title	Grandes figuras modernas
+ma-greats.c9.text	Emmy Noether relacionó la simetría con las leyes de conservación; Ramanujan halló fórmulas asombrosas con poca formación académica; Maryam Mirzakhani fue la primera mujer en ganar la Medalla Fields, en 2014.
+ma-greats.c9.viz.items.0.a	Emmy Noether
+ma-greats.c9.viz.items.0.b	simetría y física
+ma-greats.c9.viz.items.1.a	Ramanujan
+ma-greats.c9.viz.items.1.b	series infinitas
+ma-greats.c9.viz.items.2.a	Maryam Mirzakhani
+ma-greats.c9.viz.items.2.b	Medalla Fields 2014
+ma-calculus.title	Intuición del cálculo
+ma-calculus.summary	Las matemáticas del cambio.
+ma-calculus.q0.q	En una gráfica velocidad-tiempo, ¿qué da el área bajo la curva?
+ma-calculus.q0.o0	La aceleración
+ma-calculus.q0.o1	La distancia recorrida
+ma-calculus.q0.o2	El tiempo
+ma-calculus.q0.x	Las integrales acumulan.
+ma-calculus.q1.q	En lo alto de una curva suave, la pendiente es…
+ma-calculus.q1.o0	infinita
+ma-calculus.q1.o1	cero
+ma-calculus.q1.o2	negativa
+ma-calculus.q1.x	En cimas y valles la pendiente es cero.
+ma-calculus.c0.title	Dos grandes preguntas
+ma-calculus.c0.text	El cálculo responde a dos preguntas: a qué ritmo cambia algo en este instante (derivadas) y cuánto se ha acumulado con el tiempo (integrales).
+ma-calculus.c0.viz.l.t	Derivadas
+ma-calculus.c0.viz.l.items.0	ritmo de cambio
+ma-calculus.c0.viz.l.items.1	velocidad a partir de distancia
+ma-calculus.c0.viz.r.t	Integrales
+ma-calculus.c0.viz.r.items.0	acumulación
+ma-calculus.c0.viz.r.items.1	distancia a partir de velocidad
+ma-calculus.c1.title	Velocidad instantánea
+ma-calculus.c1.text	El velocímetro del coche muestra la velocidad en un instante, no una media. El cálculo la define midiendo en intervalos de tiempo cada vez más cortos.
+ma-calculus.c1.viz.steps.0	Media en 1 min
+ma-calculus.c1.viz.steps.1	En 1 s
+ma-calculus.c1.viz.steps.2	En 0,001 s
+ma-calculus.c1.viz.steps.3	Velocidad instantánea
+ma-calculus.c2.title	La pendiente de una curva
+ma-calculus.c2.text	Una derivada es la pendiente de una curva en un punto: si te acercas lo suficiente, cualquier curva suave parece una línea recta.
+ma-calculus.c2.viz.steps.0	Curva
+ma-calculus.c2.viz.steps.1	Acércate
+ma-calculus.c2.viz.steps.2	Parece recta
+ma-calculus.c2.viz.steps.3	Su pendiente es la derivada
+ma-calculus.c3.title	El área bajo una curva
+ma-calculus.c3.text	Una integral suma porciones diminutas. En una gráfica velocidad-tiempo, el área bajo la curva es la distancia recorrida.
+ma-calculus.c3.viz.steps.0	Gráfica de velocidad
+ma-calculus.c3.viz.steps.1	Corta en franjas finas
+ma-calculus.c3.viz.steps.2	Suma sus áreas
+ma-calculus.c3.viz.steps.3	Distancia total
+ma-calculus.c4.title	Operaciones opuestas
+ma-calculus.c4.text	Derivar e integrar se deshacen mutuamente: es el teorema fundamental del cálculo. Distancia → velocidad → aceleración, y vuelta atrás.
+ma-calculus.c4.viz.steps.0	Distancia
+ma-calculus.c4.viz.steps.1	Deriva: velocidad
+ma-calculus.c4.viz.steps.2	Deriva: aceleración
+ma-calculus.c4.viz.steps.3	Integra de vuelta
+ma-calculus.c5.title	Máximos y mínimos
+ma-calculus.c5.text	Donde una curva alcanza una cima o un valle, su pendiente es cero. Así encuentran los ingenieros la viga más resistente o el diseño más barato.
+ma-calculus.c5.viz.items.0.a	Pendiente cero
+ma-calculus.c5.viz.items.0.b	cima o valle
+ma-calculus.c5.viz.items.1.a	Cima
+ma-calculus.c5.viz.items.1.b	máximo
+ma-calculus.c5.viz.items.2.a	Valle
+ma-calculus.c5.viz.items.2.b	mínimo
+ma-calculus.c6.title	La caja más grande
+ma-calculus.c6.text	Recorta cuadrados en las esquinas de una cartulina de 30 cm y dobla los lados para formar una caja. El cálculo demuestra que con cuadrados de 5 cm se obtiene el mayor volumen: 2000 cm³.
+ma-calculus.c6.viz.unit	volumen, cm³
+ma-calculus.c6.viz.items.0.l	Corte de 3 cm
+ma-calculus.c6.viz.items.1.l	Corte de 5 cm
+ma-calculus.c6.viz.items.2.l	Corte de 7 cm
+ma-calculus.c7.title	El cambio está en todas partes
+ma-calculus.c7.text	El cálculo modela el crecimiento de poblaciones, el calentamiento y el enfriamiento, los intereses, las trayectorias de cohetes y el aprendizaje automático, que usa derivadas para ajustar sus pesos.
+ma-calculus.c7.viz.items.0	Física e ingeniería
+ma-calculus.c7.viz.items.1	Economía
+ma-calculus.c7.viz.items.2	Dosis de fármacos
+ma-calculus.c7.viz.items.3	Aprendizaje automático
+ma-calculus.c8.title	Límites
+ma-calculus.c8.text	El cálculo se basa en los límites: el valor al que se acerca algo cuando otra cosa se hace muy pequeña. 1/2 + 1/4 + 1/8… se acerca a 1, aunque ningún paso llegue a alcanzarlo.
+ma-calculus.c8.viz.unit	total acumulado
+ma-calculus.c8.viz.items.0.l	1 término
+ma-calculus.c8.viz.items.1.l	2 términos
+ma-calculus.c8.viz.items.2.l	3 términos
+ma-calculus.c8.viz.items.3.l	5 términos
+ma-calculus.c9.title	¿Quién lo inventó?
+ma-calculus.c9.text	Newton y Leibniz desarrollaron el cálculo de forma independiente entre las décadas de 1660 y 1680, aunque Arquímedes y otros ya habían usado ideas parecidas siglos antes.
+ma-calculus.c9.viz.events.0.y	~250 a. C.
+ma-calculus.c9.viz.events.0.l	Porciones de Arquímedes
+ma-calculus.c9.viz.events.1.l	Métodos de Newton
+ma-calculus.c9.viz.events.2.l	Leibniz publica
+ma-calculus.c9.viz.events.3.y	Años 1820
+ma-calculus.c9.viz.events.3.l	límites rigurosos
+ma-networks.title	Redes y grafos
+ma-networks.summary	Puentes, mapas y redes sociales.
+ma-networks.q0.q	¿Quién fundó la teoría de grafos con los puentes de Königsberg?
+ma-networks.q0.o0	Newton
+ma-networks.q0.o1	Euler
+ma-networks.q0.o2	Gauss
+ma-networks.q0.x	En 1736.
+ma-networks.q1.q	¿Cuántos colores bastan para colorear cualquier mapa?
+ma-networks.q1.o0	3
+ma-networks.q1.o1	4
+ma-networks.q1.o2	5
+ma-networks.q1.x	Se demostró en 1976.
+ma-networks.q2.q	¿Qué hizo funcionar el PageRank de Google?
+ma-networks.q2.o0	Contar palabras clave
+ma-networks.q2.o1	Tratar los enlaces como votos
+ma-networks.q2.o2	La longitud de la página
+ma-networks.q2.x	Los enlaces desde páginas importantes cuentan más.
+ma-networks.c0.title	Los puentes de Königsberg
+ma-networks.c0.text	En 1736, Euler demostró que no se podían cruzar los siete puentes de Königsberg pasando exactamente una vez por cada uno. Para resolverlo, redujo la ciudad a puntos y líneas: así nació la teoría de grafos.
+ma-networks.c0.viz.steps.0	Plano de la ciudad
+ma-networks.c0.viz.steps.1	Zonas de tierra: puntos
+ma-networks.c0.viz.steps.2	Puentes: líneas
+ma-networks.c0.viz.steps.3	Cuenta líneas por punto
+ma-networks.c1.title	Nodos y aristas
+ma-networks.c1.text	Un grafo es un conjunto de nodos (puntos) unidos por aristas (líneas). Ciudades y carreteras, personas y amistades, páginas web y enlaces: todos son grafos.
+ma-networks.c1.viz.items.0.a	Ciudades
+ma-networks.c1.viz.items.0.b	nodos
+ma-networks.c1.viz.items.1.a	Carreteras
+ma-networks.c1.viz.items.1.b	aristas
+ma-networks.c1.viz.items.2.a	Personas
+ma-networks.c1.viz.items.2.b	nodos
+ma-networks.c1.viz.items.3.a	Amistades
+ma-networks.c1.viz.items.3.b	aristas
+ma-networks.c2.title	La regla de Euler
+ma-networks.c2.text	Puedes recorrer una red usando cada arista una sola vez solo si hay cero o dos nodos con un número impar de aristas. Königsberg tenía cuatro nodos impares.
+ma-networks.c2.viz.items.0.a	0 nodos impares
+ma-networks.c2.viz.items.0.b	posible, acabas donde empiezas
+ma-networks.c2.viz.items.1.a	2 nodos impares
+ma-networks.c2.viz.items.1.b	posible, empieza en uno
+ma-networks.c2.viz.items.2.a	4 nodos impares
+ma-networks.c2.viz.items.2.b	imposible
+ma-networks.c3.title	Caminos más cortos
+ma-networks.c3.text	Tu app de mapas encuentra la ruta más rápida con algoritmos como el de Dijkstra (1956), que explora hacia fuera desde el inicio, ampliando siempre el camino más corto encontrado hasta el momento.
+ma-networks.c3.viz.steps.0	Inicio
+ma-networks.c3.viz.steps.1	Explora el más cercano
+ma-networks.c3.viz.steps.2	Actualiza distancias
+ma-networks.c3.viz.steps.3	Repite hasta el destino
+ma-networks.c4.title	El viajante de comercio
+ma-networks.c4.text	Encuentra la ruta más corta que visite cada ciudad una vez. Es fácil con 5 ciudades, pero las posibilidades se disparan: 20 ciudades tienen más de 60.000 billones de rutas.
+ma-networks.c4.viz.unit	rutas
+ma-networks.c4.viz.items.0.l	5 ciudades
+ma-networks.c4.viz.items.1.l	10 ciudades
+ma-networks.c4.viz.items.2.l	20 ciudades*
+ma-networks.c5.title	Seis grados
+ma-networks.c5.text	El experimento de Stanley Milgram de 1967 sugirió que dos estadounidenses cualesquiera están conectados por unos seis conocidos. Más tarde, los datos de Facebook hallaron una media de unos 3,5 pasos.
+ma-networks.c5.viz.steps.0	Tú
+ma-networks.c5.viz.steps.1	Un amigo
+ma-networks.c5.viz.steps.2	Su amigo
+ma-networks.c5.viz.steps.4	Cualquiera, en unos seis pasos
+ma-networks.c6.title	Nodos centrales
+ma-networks.c6.text	En muchas redes, unos pocos nodos centrales tienen muchísimos enlaces: grandes aeropuertos, webs populares, influencers. Si atacas esos nodos, la red se rompe.
+ma-networks.c6.viz.root	Aeropuerto de Lisboa
+ma-networks.c6.viz.items.0	Oporto
+ma-networks.c6.viz.items.1	Madrid
+ma-networks.c6.viz.items.2	Londres
+ma-networks.c6.viz.items.3	París
+ma-networks.c6.viz.items.4	São Paulo
+ma-networks.c7.title	Cuatro colores
+ma-networks.c7.text	Cualquier mapa puede colorearse con solo cuatro colores sin que dos regiones vecinas coincidan. Se demostró en 1976 y fue la primera gran demostración que dependió de un ordenador.
+ma-networks.c7.viz.events.0.l	se plantea
+ma-networks.c7.viz.events.1.l	demostrado por ordenador
+ma-networks.c7.viz.events.2.l	reverificado por ordenador
+ma-networks.c8.title	PageRank
+ma-networks.c8.text	La idea original de Google: una página es importante si la enlazan páginas importantes. Trata la web como un enorme grafo de votos.
+ma-networks.c8.viz.steps.0	Las páginas se enlazan entre sí
+ma-networks.c8.viz.steps.1	Los enlaces son votos
+ma-networks.c8.viz.steps.2	Los votos de páginas importantes valen más
+ma-networks.c8.viz.steps.3	Clasificación
+ma-networks.c9.title	Epidemias en redes
+ma-networks.c9.text	Las enfermedades se propagan por las redes de contactos. Vacunar a los nodos más conectados, como el personal sanitario, puede proteger a muchas más personas que vacunar al azar.
+ma-networks.c9.viz.l.t	Vacunación al azar
+ma-networks.c9.viz.l.items.0	protección más lenta
+ma-networks.c9.viz.r.t	Centrarse en nodos clave
+ma-networks.c9.viz.r.items.0	corta cadenas antes
+ma-estimate.title	Estimación
+ma-estimate.summary	Respuestas suficientemente buenas, de cabeza.
+ma-estimate.q0.q	¿Cuánto son mil millones de segundos?
+ma-estimate.q0.o0	Unos 3 años
+ma-estimate.q0.o1	Unos 11 días
+ma-estimate.q0.o2	Unos 32 años
+ma-estimate.q0.x	Un millón de segundos son unos 11,5 días.
+ma-estimate.q1.q	¿Qué es un problema de Fermi?
+ma-estimate.q1.o0	Un problema matemático sin resolver
+ma-estimate.q1.o1	Una estimación aproximada a partir de suposiciones sencillas
+ma-estimate.q1.o2	Una fórmula de física
+ma-estimate.q1.x	Divide las grandes preguntas en partes.
+ma-estimate.c0.title	Problemas de Fermi
+ma-estimate.c0.text	Al físico Enrico Fermi le encantaban preguntas como «¿cuántos afinadores de pianos hay en Chicago?». Divídelas en partes que puedas estimar, multiplica, y a menudo no te desviarás más que unas pocas veces del valor real.
+ma-estimate.c0.viz.steps.0	Gran pregunta
+ma-estimate.c0.viz.steps.1	Divide en partes
+ma-estimate.c0.viz.steps.2	Estima cada una
+ma-estimate.c0.viz.steps.3	Multiplica
+ma-estimate.c1.title	Gasolineras en Portugal
+ma-estimate.c1.text	Unos 10 millones de habitantes, aproximadamente 5 millones de coches y cada uno reposta una vez por semana: 5 millones de repostajes semanales. Si una gasolinera atiende unos 3000 a la semana, salen unas 1700 gasolineras; la cifra real es de unos pocos miles.
+ma-estimate.c1.example.0	5 millones de repostajes a la semana
+ma-estimate.c1.example.1	÷ 3000 por gasolinera
+ma-estimate.c1.example.2	≈ 1700 gasolineras
+ma-estimate.c1.viz.steps.0	10 millones de personas
+ma-estimate.c1.viz.steps.1	~5 millones de coches
+ma-estimate.c1.viz.steps.2	5 millones de repostajes/semana
+ma-estimate.c1.viz.steps.3	÷ 3000 por gasolinera
+ma-estimate.c2.title	Órdenes de magnitud
+ma-estimate.c2.text	A menudo importa más la potencia de 10 que el valor exacto. ¿Son cientos, miles o millones? Acierta eso primero.
+ma-estimate.c2.viz.items.0.l	Una clase
+ma-estimate.c2.viz.items.1.l	Un pueblo
+ma-estimate.c2.viz.items.2.l	Ciudad de Lisboa
+ma-estimate.c2.viz.items.3.l	Portugal

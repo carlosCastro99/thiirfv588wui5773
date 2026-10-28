@@ -1,0 +1,558 @@
+P.title	Dinero
+P.blurb	Cómo funciona el dinero, presupuestos, interés compuesto y nociones básicas de inversión.
+mo-basics.title	Cómo funciona el dinero
+mo-basics.summary	Qué es el dinero y de dónde sale.
+mo-basics.q0.q	Con una inflación del 2 %, ¿cuánto tardan más o menos los precios en duplicarse?
+mo-basics.q0.o0	10 años
+mo-basics.q0.o1	Unos 35 años
+mo-basics.q0.o2	72 años
+mo-basics.q0.x	72 ÷ 2 = 36.
+mo-basics.q1.q	¿Qué da valor hoy a los billetes de euro?
+mo-basics.q1.o0	El oro guardado en Fráncfort
+mo-basics.q1.o1	La confianza y la ley
+mo-basics.q1.o2	La plata
+mo-basics.q1.x	Es dinero fiduciario.
+mo-basics.q2.q	La mayor parte del dinero de la economía existe en forma de…
+mo-basics.q2.o0	monedas
+mo-basics.q2.o1	billetes
+mo-basics.q2.o2	depósitos bancarios
+mo-basics.q2.x	Números digitales en cuentas.
+mo-basics.c0.title	Para qué sirve el dinero
+mo-basics.c0.text	El dinero tiene tres funciones: medio de intercambio (con él puedes comprar), unidad de cuenta (los precios se miden en él) y depósito de valor (conserva su valor con el tiempo).
+mo-basics.c0.viz.root	Dinero
+mo-basics.c0.viz.items.0	Medio de intercambio
+mo-basics.c0.viz.items.1	Unidad de cuenta
+mo-basics.c0.viz.items.2	Depósito de valor
+mo-basics.c1.title	Del trueque a las apps
+mo-basics.c1.text	El trueque exige una doble coincidencia de deseos: tienes que encontrar a alguien que tenga lo que tú quieres y que quiera lo que tú tienes. El dinero resolvió ese problema.
+mo-basics.c1.viz.events.0.y	Prehistoria
+mo-basics.c1.viz.events.0.l	trueque
+mo-basics.c1.viz.events.1.y	~600 a. C.
+mo-basics.c1.viz.events.1.l	monedas en Lidia
+mo-basics.c1.viz.events.2.y	~1000 d. C.
+mo-basics.c1.viz.events.2.l	papel moneda en China
+mo-basics.c1.viz.events.3.y	Años 50
+mo-basics.c1.viz.events.3.l	tarjetas de crédito
+mo-basics.c1.viz.events.4.y	Años 2010
+mo-basics.c1.viz.events.4.l	pagos con el móvil
+mo-basics.c2.title	Dinero fiduciario
+mo-basics.c2.text	Los billetes de euro no están respaldados por oro. Su valor procede de la confianza y de la ley: los gobiernos los aceptan para pagar impuestos y obligan a aceptarlos para saldar deudas.
+mo-basics.c2.viz.l.t	Patrón oro
+mo-basics.c2.viz.l.items.0	billetes respaldados por oro
+mo-basics.c2.viz.l.items.1	terminó en 1971
+mo-basics.c2.viz.r.t	Dinero fiduciario
+mo-basics.c2.viz.r.items.0	respaldado por confianza y ley
+mo-basics.c2.viz.r.items.1	el euro y el dólar de hoy
+mo-basics.c3.title	Casi todo el dinero es digital
+mo-basics.c3.text	Los billetes y monedas físicos son una pequeña parte de la masa monetaria. La mayor parte del dinero existe como números en cuentas bancarias, creados cuando los bancos prestan.
+mo-basics.c3.viz.unit	% del dinero de la zona euro (aprox.)
+mo-basics.c3.viz.items.0.l	Efectivo
+mo-basics.c3.viz.items.1.l	Depósitos bancarios
+mo-basics.c4.title	Bancos centrales
+mo-basics.c4.text	El Banco Central Europeo fija los tipos de interés de la zona euro con el objetivo de una inflación cercana al 2 % anual. El Banco de Portugal forma parte de este sistema.
+mo-basics.c4.viz.steps.0	El BCE fija los tipos
+mo-basics.c4.viz.steps.1	Cambia el coste de los préstamos
+mo-basics.c4.viz.steps.2	Cambian gasto y ahorro
+mo-basics.c4.viz.steps.3	La inflación se mueve
+mo-basics.c5.title	Inflación
+mo-basics.c5.text	La inflación significa que los precios suben con el tiempo, así que cada euro compra menos. Al 2 % anual, los precios se duplican en unos 35 años.
+mo-basics.c5.viz.unit	precio de una cesta, € (2 % anual)
+mo-basics.c5.viz.items.0.l	Hoy
+mo-basics.c5.viz.items.1.l	10 años
+mo-basics.c5.viz.items.2.l	20 años
+mo-basics.c5.viz.items.3.l	35 años
+mo-basics.c6.title	La regla del 72
+mo-basics.c6.text	Divide 72 entre un porcentaje anual para estimar cuántos años tarda algo en duplicarse. Sirve para precios, ahorros y deudas.
+mo-basics.c6.formula	años ≈ 72 ÷ tasa
+mo-basics.c6.viz.f	años para duplicar ≈ 72 ÷ tasa
+mo-basics.c6.viz.items.0.s	tasa
+mo-basics.c6.viz.items.0.m	% anual
+mo-basics.c6.viz.items.1.m	unos 12 años
+mo-basics.c7.title	Interés
+mo-basics.c7.text	El interés es el precio del dinero. Quien pide prestado lo paga; quien ahorra lo cobra. Unos tipos más altos del banco central suelen significar préstamos más caros y mejor remuneración del ahorro.
+mo-basics.c7.viz.l.t	Prestatario
+mo-basics.c7.viz.l.items.0	paga intereses
+mo-basics.c7.viz.l.items.1	le perjudican tipos altos
+mo-basics.c7.viz.r.t	Ahorrador
+mo-basics.c7.viz.r.items.0	cobra intereses
+mo-basics.c7.viz.r.items.1	le benefician tipos altos
+mo-basics.c8.title	Oferta y demanda
+mo-basics.c8.text	Los precios suben cuando mucha gente quiere algo escaso y bajan cuando abunda o nadie lo quiere. Las entradas de conciertos y los vuelos de verano son ejemplos clásicos.
+mo-basics.c8.viz.items.0.a	Mucha demanda, poca oferta
+mo-basics.c8.viz.items.0.b	precios al alza
+mo-basics.c8.viz.items.1.a	Poca demanda, mucha oferta
+mo-basics.c8.viz.items.1.b	precios a la baja
+mo-basics.c8.viz.items.2.a	Ambas equilibradas
+mo-basics.c8.viz.items.2.b	precio estable
+mo-basics.c9.title	La inflación se come el efectivo
+mo-basics.c9.text	10.000 € guardados bajo el colchón durante 10 años con un 3 % de inflación comprarían lo que hoy compran unos 7.400 €.
+mo-basics.c9.example.0	Valor = 10.000 ÷ 1,03¹⁰
+mo-basics.c9.example.1	1,03¹⁰ ≈ 1,344
+mo-basics.c9.example.2	10.000 ÷ 1,344 ≈ 7.440 €
+mo-basics.c9.viz.unit	poder adquisitivo, €
+mo-basics.c9.viz.items.0.l	Hoy
+mo-basics.c9.viz.items.1.l	A los 5 años
+mo-basics.c9.viz.items.2.l	A los 10 años
+mo-budget.title	Presupuestos
+mo-budget.summary	Tomar decisiones de dinero a propósito.
+mo-budget.q0.q	¿De qué tamaño suele recomendarse un fondo de emergencia?
+mo-budget.q0.o0	1 semana de gastos
+mo-budget.q0.o1	3–6 meses de gastos esenciales
+mo-budget.q0.o2	5 años de sueldo
+mo-budget.q0.x	Guardado con acceso fácil.
+mo-budget.q1.q	En la regla 50/30/20, ¿para qué es el 20 %?
+mo-budget.q1.o0	Caprichos
+mo-budget.q1.o1	Necesidades
+mo-budget.q1.o2	Ahorro y pago de deudas
+mo-budget.q1.x	Un reparto sencillo para empezar.
+mo-budget.c0.title	Págate a ti primero
+mo-budget.c0.text	Aparta el ahorro en cuanto llegue el sueldo, no con lo que sobre a final de mes: casi nunca sobra nada.
+mo-budget.c0.viz.l.t	Lo habitual
+mo-budget.c0.viz.l.items.0	ganar
+mo-budget.c0.viz.l.items.1	gastar
+mo-budget.c0.viz.l.items.2	ahorrar lo que sobra
+mo-budget.c0.viz.r.t	Mejor
+mo-budget.c0.viz.r.items.0	ganar
+mo-budget.c0.viz.r.items.1	ahorrar primero
+mo-budget.c0.viz.r.items.2	gastar el resto
+mo-budget.c1.title	La regla 50/30/20
+mo-budget.c1.text	Un reparto inicial sencillo del sueldo neto: 50 % para necesidades, 30 % para caprichos y 20 % para ahorrar o pagar deudas. Ajústalo a tu situación.
+mo-budget.c1.viz.unit	% del sueldo neto
+mo-budget.c1.viz.items.0.l	Necesidades
+mo-budget.c1.viz.items.1.l	Caprichos
+mo-budget.c1.viz.items.2.l	Ahorro y deudas
+mo-budget.c2.title	Necesidades y caprichos
+mo-budget.c2.text	Las necesidades son lo que tienes que pagar sí o sí (alquiler, comida, transporte, facturas). Los caprichos hacen la vida más agradable, pero son opcionales. Muchas cosas tienen una parte de necesidad y otra de capricho.
+mo-budget.c2.viz.items.0.a	Alquiler
+mo-budget.c2.viz.items.0.b	necesidad
+mo-budget.c2.viz.items.1.a	Compra de comida
+mo-budget.c2.viz.items.1.b	necesidad
+mo-budget.c2.viz.items.2.a	Restaurante
+mo-budget.c2.viz.items.2.b	capricho
+mo-budget.c2.viz.items.3.a	Móvil
+mo-budget.c2.viz.items.3.b	necesidad, pero el último modelo es capricho
+mo-budget.c3.title	Fondo de emergencia
+mo-budget.c3.text	Ten entre tres y seis meses de gastos esenciales en una cuenta de ahorro de acceso fácil. Convierte una crisis, como perder el trabajo o una avería del coche, en un simple contratiempo.
+mo-budget.c3.viz.items.0.v	3–6 meses
+mo-budget.c3.viz.items.0.l	de gastos esenciales
+mo-budget.c3.viz.items.1.v	Acceso fácil
+mo-budget.c3.viz.items.1.l	sin invertir
+mo-budget.c3.viz.items.2.v	Primer objetivo
+mo-budget.c3.viz.items.2.l	antes de invertir
+mo-budget.c4.title	Primero, apunta
+mo-budget.c4.text	Casi todo el mundo subestima los gastos pequeños y frecuentes. Apunta cada gasto durante un mes antes de hacer un presupuesto; el resultado suele sorprender.
+mo-budget.c4.viz.unit	€ al mes
+mo-budget.c4.viz.items.0.l	Cafés fuera
+mo-budget.c4.viz.items.1.l	Suscripciones
+mo-budget.c4.viz.items.2.l	Apps de comida
+mo-budget.c4.viz.items.3.l	Picoteo
+mo-budget.c5.title	Las suscripciones se acumulan
+mo-budget.c5.text	Streaming, apps, gimnasio y almacenamiento en la nube: 8 € por aquí, 12 € por allá, y quizá pagues cosas que no usas. Revisa los extractos del banco y cancela lo que hayas olvidado.
+mo-budget.c5.viz.items.0	Plataformas de streaming
+mo-budget.c5.viz.items.1	Música
+mo-budget.c5.viz.items.2	Almacenamiento en la nube
+mo-budget.c5.viz.items.3	Gimnasio
+mo-budget.c5.viz.items.4	Apps y juegos
+mo-budget.c6.title	El «efecto café», en perspectiva
+mo-budget.c6.text	Los pequeños ahorros diarios suman, pero las grandes decisiones, como el alquiler, el coche y la vivienda, pesan más. Optimiza esas tres antes de agobiarte por un café.
+mo-budget.c6.viz.unit	coste anual, €
+mo-budget.c6.viz.items.0.l	Café diario
+mo-budget.c6.viz.items.1.l	Tarifa móvil más barata
+mo-budget.c6.viz.items.2.l	Préstamo de coche menor
+mo-budget.c7.title	Contabilidad mental
+mo-budget.c7.text	Tratamos el dinero de forma distinta según de dónde venga: la devolución de Hacienda parece «dinero gratis» y se gasta. Un euro es un euro, venga de donde venga.
+mo-budget.c7.viz.items.0.w	«Es un extra, puedo fundírmelo»
+mo-budget.c7.viz.items.0.r	«Un euro es un euro: ¿encaja en mi plan?»
+mo-budget.c8.title	Inflación del estilo de vida
+mo-budget.c8.text	Cuando sube el sueldo, el gasto tiende a subir al mismo ritmo. Ahorrar la mitad de cada aumento permite que tu nivel de vida mejore mientras tus ahorros crecen más deprisa.
+mo-budget.c8.viz.steps.0	Subida de sueldo
+mo-budget.c8.viz.steps.1	Ahorra la mitad
+mo-budget.c8.viz.steps.2	Disfruta la otra mitad
+mo-budget.c8.viz.steps.3	Sube la tasa de ahorro
+mo-budget.c9.title	Un presupuesto sencillo
+mo-budget.c9.text	Sueldo neto: 1.600 €. Necesidades 800 €, caprichos 480 €, ahorro 320 €. A los seis meses, 1.920 € ahorrados: un primer paso hacia el fondo de emergencia.
+mo-budget.c9.example.0	50 %: 800 €
+mo-budget.c9.example.1	30 %: 480 €
+mo-budget.c9.example.2	20 %: 320 €
+mo-budget.c9.example.3	6 × 320 € = 1.920 €
+mo-budget.c9.viz.unit	€ al mes
+mo-budget.c9.viz.items.0.l	Necesidades
+mo-budget.c9.viz.items.1.l	Caprichos
+mo-budget.c9.viz.items.2.l	Ahorro
+mo-compound.title	Interés compuesto
+mo-compound.summary	Crecimiento sobre crecimiento.
+mo-compound.q0.q	¿Qué diferencia el interés compuesto del simple?
+mo-compound.q0.o0	Paga impuestos
+mo-compound.q0.o1	Genera intereses sobre intereses pasados
+mo-compound.q0.o2	Solo es para bancos
+mo-compound.q0.x	Crecimiento sobre crecimiento.
+mo-compound.q1.q	Según la regla del 72, ¿cuánto tarda el dinero en duplicarse al 6 %?
+mo-compound.q1.o0	6 años
+mo-compound.q1.o1	Unos 12 años
+mo-compound.q1.o2	72 años
+mo-compound.q1.x	72 ÷ 6 = 12.
+mo-compound.c0.title	Simple y compuesto
+mo-compound.c0.text	El interés simple solo se paga sobre lo que aportas. El compuesto también se paga sobre los intereses anteriores, así que el crecimiento se acelera con el tiempo.
+mo-compound.c0.viz.l.t	Simple
+mo-compound.c0.viz.l.items.0	interés solo sobre el depósito
+mo-compound.c0.viz.l.items.1	línea recta
+mo-compound.c0.viz.r.t	Compuesto
+mo-compound.c0.viz.r.items.0	también interés sobre interés
+mo-compound.c0.viz.r.items.1	curva ascendente
+mo-compound.c1.title	La fórmula
+mo-compound.c1.text	Al cabo de n años, el dinero se multiplica por el factor (1 + r) cada año. Pequeñas diferencias en r o en n producen diferencias enormes.
+mo-compound.c1.formula	A = P(1 + r)ⁿ
+mo-compound.c1.viz.f	A = P(1 + r)ⁿ
+mo-compound.c1.viz.items.0.s	A
+mo-compound.c1.viz.items.0.m	importe final
+mo-compound.c1.viz.items.1.s	P
+mo-compound.c1.viz.items.1.m	importe inicial
+mo-compound.c1.viz.items.2.s	r
+mo-compound.c1.viz.items.2.m	rentabilidad anual
+mo-compound.c1.viz.items.3.s	n
+mo-compound.c1.viz.items.3.m	años
+mo-compound.c2.title	1.000 € al 5 %
+mo-compound.c2.text	A los 10 años: 1.629 €. A los 20: 2.653 €. A los 40: 7.040 €. La mayor parte del crecimiento llega al final.
+mo-compound.c2.viz.items.0.l	Inicio
+mo-compound.c2.viz.items.1.l	10 años
+mo-compound.c2.viz.items.2.l	20 años
+mo-compound.c2.viz.items.3.l	40 años
+mo-compound.c3.title	El tiempo gana a la cantidad
+mo-compound.c3.text	Empezar pronto importa más que invertir mucho. Quien invierte de los 25 a los 35 y luego para puede acabar con más que quien invierte de los 35 a los 65, con la misma rentabilidad.
+mo-compound.c3.viz.l.t	Empieza pronto
+mo-compound.c3.viz.l.items.0	2.000 € al año de 25 a 35
+mo-compound.c3.viz.l.items.1	luego para
+mo-compound.c3.viz.r.t	Empieza tarde
+mo-compound.c3.viz.r.items.0	2.000 € al año de 35 a 65
+mo-compound.c3.viz.r.items.1	aporta tres veces más
+mo-compound.c4.title	Deuda que se compone
+mo-compound.c4.text	En las deudas, el interés compuesto juega en tu contra. El saldo de una tarjeta de crédito puede costar un 15–20 % anual o más, y duplicarse en unos cuatro o cinco años si no se paga.
+mo-compound.c4.viz.unit	% anual (típico)
+mo-compound.c4.viz.items.0.l	Ahorro
+mo-compound.c4.viz.items.1.l	Hipoteca
+mo-compound.c4.viz.items.2.l	Préstamo coche
+mo-compound.c4.viz.items.3.l	Tarjeta de crédito
+mo-compound.c5.title	Las comisiones importan
+mo-compound.c5.text	Una comisión anual del 1 % parece minúscula, pero también se compone. En 30 años puede llevarse alrededor de una cuarta parte de tu capital final.
+mo-compound.c5.viz.unit	€ a 30 años, 10.000 € al 6 %
+mo-compound.c5.viz.items.0.l	Sin comisión
+mo-compound.c5.viz.items.1.l	Comisión 1 %
+mo-compound.c6.title	Nominal y real
+mo-compound.c6.text	Una rentabilidad del 5 % con un 3 % de inflación supone solo un 2 % aproximado de crecimiento real del poder adquisitivo. Compara siempre la rentabilidad con la inflación.
+mo-compound.c6.viz.f	real ≈ nominal − inflación
+mo-compound.c6.viz.items.0.s	nominal
+mo-compound.c6.viz.items.0.m	rentabilidad declarada
+mo-compound.c6.viz.items.1.s	inflación
+mo-compound.c6.viz.items.1.m	subida de precios
+mo-compound.c6.viz.items.2.s	real
+mo-compound.c6.viz.items.2.m	aumento del poder adquisitivo
+mo-compound.c7.title	¿La frase de Einstein?
+mo-compound.c7.text	«El interés compuesto es la octava maravilla del mundo» se atribuye a menudo a Einstein, pero no hay pruebas de que lo dijera. Las matemáticas son reales de todos modos.
+mo-compound.c7.viz.items.0.w	Einstein lo llamó la octava maravilla
+mo-compound.c7.viz.items.0.r	No hay pruebas de que lo dijera
+mo-compound.c8.title	Aportaciones periódicas
+mo-compound.c8.text	Aportar una cantidad fija cada mes, en lugar de todo de golpe, suaviza los altibajos del mercado. Se llama promediar el coste en euros.
+mo-compound.c8.viz.steps.0	La misma cantidad cada mes
+mo-compound.c8.viz.steps.1	Compra más con precios bajos
+mo-compound.c8.viz.steps.2	Menos con precios altos
+mo-compound.c8.viz.steps.3	Precio medio más estable
+mo-compound.c9.title	100 € al mes
+mo-compound.c9.text	Invertir 100 € al mes al 5 % anual durante 30 años: aportas 36.000 € y se convierten en unos 83.000 €.
+mo-compound.c9.viz.items.0.l	Aportado
+mo-compound.c9.viz.items.1.l	Valor final
+mo-invest.title	Nociones de inversión
+mo-invest.summary	Acciones, bonos, fondos y riesgo.
+mo-invest.q0.q	¿Qué es una acción?
+mo-invest.q0.o0	Un préstamo a una empresa
+mo-invest.q0.o1	Una pequeña parte de la propiedad
+mo-invest.q0.o2	Una cuenta de ahorro
+mo-invest.q0.x	Los propietarios pueden recibir dividendos.
+mo-invest.q1.q	¿Por qué diversificar?
+mo-invest.q1.o0	Para garantizar beneficios
+mo-invest.q1.o1	Para reducir el daño de cualquier fallo aislado
+mo-invest.q1.o2	Para pagar menos impuestos
+mo-invest.q1.x	No pongas todos los huevos en la misma cesta.
+mo-invest.c0.title	Ahorrar e invertir
+mo-invest.c0.text	Ahorrar mantiene el dinero seguro a corto plazo. Invertir es comprar activos que pueden crecer a largo plazo, con el riesgo de que pierdan valor por el camino.
+mo-invest.c0.viz.l.t	Ahorrar
+mo-invest.c0.viz.l.items.0	seguro
+mo-invest.c0.viz.l.items.1	acceso fácil
+mo-invest.c0.viz.l.items.2	baja rentabilidad
+mo-invest.c0.viz.l.items.3	corto plazo
+mo-invest.c0.viz.r.t	Invertir
+mo-invest.c0.viz.r.items.0	altibajos
+mo-invest.c0.viz.r.items.1	más rentabilidad esperada
+mo-invest.c0.viz.r.items.2	largo plazo
+mo-invest.c1.title	Acciones
+mo-invest.c1.text	Una acción es una pequeña parte de la propiedad de una empresa. Puedes ganar si su precio sube y si reparte dividendos, y perder si baja.
+mo-invest.c1.viz.items.0.a	Acción
+mo-invest.c1.viz.items.0.b	propiedad parcial
+mo-invest.c1.viz.items.1.a	Dividendo
+mo-invest.c1.viz.items.1.b	parte de los beneficios
+mo-invest.c1.viz.items.2.a	Precio
+mo-invest.c1.viz.items.2.b	lo que pagan hoy los compradores
+mo-invest.c2.title	Bonos
+mo-invest.c2.text	Un bono es un préstamo a un gobierno o a una empresa. Te pagan intereses y te devuelven el dinero al final. Suelen ser más estables que las acciones, con menor rentabilidad a largo plazo.
+mo-invest.c2.viz.steps.0	Prestas dinero
+mo-invest.c2.viz.steps.1	Recibes intereses periódicos
+mo-invest.c2.viz.steps.2	Te devuelven el dinero al vencimiento
+mo-invest.c3.title	Riesgo y rentabilidad
+mo-invest.c3.text	Una mayor rentabilidad esperada viene con mayores vaivenes. No hay una forma fiable de conseguir rentabilidades altas sin aceptar riesgo.
+mo-invest.c3.viz.unit	riesgo
+mo-invest.c3.viz.items.0.l	Cuenta de ahorro
+mo-invest.c3.viz.items.1.l	Bonos del Estado
+mo-invest.c3.viz.items.2.l	Fondo mixto
+mo-invest.c3.viz.items.3.l	Acciones
+mo-invest.c4.title	Diversificación
+mo-invest.c4.text	No pongas todos los huevos en la misma cesta. Repartir el dinero entre muchas empresas, países y tipos de activos reduce el daño que puede hacer cualquier fallo aislado.
+mo-invest.c4.viz.root	Cartera diversificada
+mo-invest.c4.viz.items.0	Muchas empresas
+mo-invest.c4.viz.items.1	Muchos países
+mo-invest.c4.viz.items.2	Acciones y bonos
+mo-invest.c5.title	Fondos indexados
+mo-invest.c5.text	Un fondo indexado compra todas las empresas de un índice, como el S&P 500 o un índice mundial, con un coste muy bajo. La mayoría de los fondos de gestión activa no consiguen batir a su índice a largo plazo.
+mo-invest.c5.viz.l.t	Fondo activo
+mo-invest.c5.viz.l.items.0	elige el gestor
+mo-invest.c5.viz.l.items.1	comisiones más altas
+mo-invest.c5.viz.l.items.2	suele quedar por debajo del índice
+mo-invest.c5.viz.r.t	Fondo indexado
+mo-invest.c5.viz.r.items.0	lo compra todo
+mo-invest.c5.viz.r.items.1	comisiones bajas
+mo-invest.c5.viz.r.items.2	iguala al mercado
+mo-invest.c6.title	Tiempo en el mercado
+mo-invest.c6.text	Los mercados caen a menudo, a veces con fuerza, pero históricamente se han recuperado y han crecido a largo plazo. Perderse solo los mejores días puede dañar mucho la rentabilidad.
+mo-invest.c6.viz.items.0.w	«Esperaré al momento perfecto»
+mo-invest.c6.viz.items.0.r	Estar en el mercado gana a adivinar el momento
+mo-invest.c7.title	Demasiado bueno para ser verdad
+mo-invest.c7.text	Las promesas de rentabilidades altas garantizadas son una señal de alarma. Si está garantizada, es baja; si es alta, no está garantizada. Las estafas suelen meter prisa y pedir secreto.
+mo-invest.c7.viz.items.0	Rentabilidad alta «garantizada»
+mo-invest.c7.viz.items.1	Presión para actuar ya
+mo-invest.c7.viz.items.2	Difícil retirar el dinero
+mo-invest.c7.viz.items.3	Vendedores no regulados
+mo-invest.c8.title	Emociones e inversión
+mo-invest.c8.text	El miedo hace vender tras los desplomes y la codicia hace comprar en los máximos: justo lo contrario de «comprar barato, vender caro». Un plan por escrito te ayuda a mantener el rumbo.
+mo-invest.c8.viz.steps.0	Suben los precios: codicia
+mo-invest.c8.viz.steps.1	Compras en máximos
+mo-invest.c8.viz.steps.2	Bajan los precios: miedo
+mo-invest.c8.viz.steps.3	Vendes en mínimos
+mo-invest.c9.title	Antes de invertir
+mo-invest.c9.text	Un orden habitual: liquidar la deuda cara, crear un fondo de emergencia y después invertir el dinero que no vayas a necesitar en al menos cinco años. Esto es información general, no asesoramiento personal.
+mo-invest.c9.viz.steps.0	Liquida la deuda cara
+mo-invest.c9.viz.steps.1	Fondo de emergencia
+mo-invest.c9.viz.steps.2	Invierte a 5+ años
+mo-invest.c9.viz.steps.3	Revisa cada año
+mo-econ.title	Economía cotidiana
+mo-econ.summary	Las grandes ideas detrás de las noticias.
+mo-econ.q0.q	¿Qué es el coste de oportunidad?
+mo-econ.q0.o0	El precio de la etiqueta
+mo-econ.q0.o1	Aquello a lo que renuncias para conseguir algo
+mo-econ.q0.o2	Una comisión bancaria
+mo-econ.q0.x	La mejor alternativa siguiente.
+mo-econ.q1.q	Si la inflación baja del 5 % al 2 %, los precios…
+mo-econ.q1.o0	bajan
+mo-econ.q1.o1	siguen subiendo, pero más despacio
+mo-econ.q1.o2	se quedan igual
+mo-econ.q1.x	La deflación significaría precios a la baja.
+mo-econ.c0.title	PIB
+mo-econ.c0.text	El producto interior bruto es el valor total de los bienes y servicios que un país produce en un año. Mide el tamaño de una economía, no su bienestar.
+mo-econ.c0.viz.f	PIB = C + I + G + (X − M)
+mo-econ.c0.viz.items.0.s	C
+mo-econ.c0.viz.items.0.m	consumo
+mo-econ.c0.viz.items.1.s	I
+mo-econ.c0.viz.items.1.m	inversión
+mo-econ.c0.viz.items.2.s	G
+mo-econ.c0.viz.items.2.m	gasto público
+mo-econ.c0.viz.items.3.s	X − M
+mo-econ.c0.viz.items.3.m	exportaciones menos importaciones
+mo-econ.c1.title	Recesión
+mo-econ.c1.text	Una recesión es una caída importante de la actividad económica, que a menudo se define como dos trimestres seguidos de caída del PIB. El empleo y los ingresos suelen resentirse.
+mo-econ.c1.viz.steps.0	Cae el gasto
+mo-econ.c1.viz.steps.1	Las empresas venden menos
+mo-econ.c1.viz.steps.2	Despiden
+mo-econ.c1.viz.steps.3	El gasto cae más
+mo-econ.c2.title	Coste de oportunidad
+mo-econ.c2.text	El coste real de algo es aquello a lo que renuncias para conseguirlo. Una tarde de estudio cuesta la salida que no hiciste.
+mo-econ.c2.viz.items.0.a	Universidad
+mo-econ.c2.viz.items.0.b	años de sueldo no cobrado
+mo-econ.c2.viz.items.1.a	Coche nuevo
+mo-econ.c2.viz.items.1.b	las vacaciones que no haces
+mo-econ.c2.viz.items.2.a	Una hora en redes sociales
+mo-econ.c2.viz.items.2.b	una hora de otra cosa
+mo-econ.c3.title	Incentivos
+mo-econ.c3.text	La gente responde a los incentivos. Los impuestos a las bebidas azucaradas reducen las ventas; los depósitos por envase aumentan el reciclaje. Los mal diseñados salen el tiro por la culata.
+mo-econ.c3.viz.items.0	Impuesto al azúcar: menos azúcar
+mo-econ.c3.viz.items.1	Depósito por envase: más reciclaje
+mo-econ.c3.viz.items.2	Multas: menos infracciones
+mo-econ.c4.title	Ventaja comparativa
+mo-econ.c4.text	Los países ganan especializándose en lo que hacen relativamente mejor y comerciando, aunque uno sea mejor en todo. El vino y los paños de Portugal e Inglaterra fueron el ejemplo de Ricardo en 1817.
+mo-econ.c4.viz.l.t	Portugal
+mo-econ.c4.viz.l.items.0	vino
+mo-econ.c4.viz.l.items.1	relativamente eficiente
+mo-econ.c4.viz.r.t	Inglaterra
+mo-econ.c4.viz.r.items.0	paños
+mo-econ.c4.viz.r.items.1	relativamente eficiente
+mo-econ.c5.title	La tragedia de los comunes
+mo-econ.c5.text	Cuando un recurso compartido es gratis para todos, todo el mundo lo sobreexplota. La sobrepesca es un ejemplo clásico; las cuotas y las normas de propiedad pueden ayudar.
+mo-econ.c5.viz.steps.0	Recurso compartido
+mo-econ.c5.viz.steps.1	Cada uno coge un poco más
+mo-econ.c5.viz.steps.2	El recurso se agota
+mo-econ.c5.viz.steps.3	Todos pierden
+mo-econ.c6.title	Impuestos
+mo-econ.c6.text	Los impuestos financian los servicios públicos. Portugal aplica un impuesto sobre la renta (IRS) con tipos que suben con los ingresos, el IVA sobre las compras, con un tipo general del 23 % en el continente, y cotizaciones a la seguridad social.
+mo-econ.c6.viz.items.0.a	IRS
+mo-econ.c6.viz.items.0.b	renta, progresivo
+mo-econ.c6.viz.items.1.a	IVA
+mo-econ.c6.viz.items.1.b	IVA sobre las compras
+mo-econ.c6.viz.items.2.a	TSU
+mo-econ.c6.viz.items.2.b	seguridad social
+mo-econ.c7.title	Desempleo
+mo-econ.c7.text	Cierto desempleo es normal porque la gente cambia de trabajo. La tasa es la proporción de personas que quieren trabajar y buscan empleo, pero no lo tienen.
+mo-econ.c7.viz.f	tasa = parados ÷ población activa
+mo-econ.c7.viz.items.0.s	parados
+mo-econ.c7.viz.items.0.m	buscan trabajo
+mo-econ.c7.viz.items.1.s	población activa
+mo-econ.c7.viz.items.1.m	ocupados + parados
+mo-econ.c8.title	Tipos de cambio
+mo-econ.c8.text	El tipo de cambio es el precio de una moneda en otra. Un euro más fuerte abarata las vacaciones en el extranjero, pero encarece las exportaciones portuguesas para los extranjeros.
+mo-econ.c8.viz.l.t	Euro fuerte
+mo-econ.c8.viz.l.items.0	importaciones más baratas
+mo-econ.c8.viz.l.items.1	viajar fuera, más barato
+mo-econ.c8.viz.r.t	Euro débil
+mo-econ.c8.viz.r.items.0	exportaciones más baratas
+mo-econ.c8.viz.r.items.1	más turistas en Portugal
+mo-econ.c9.title	Leer un titular
+mo-econ.c9.text	«La inflación baja al 2 %» no significa que los precios hayan bajado, sino que suben más despacio. Solo una inflación negativa, llamada deflación, significa que los precios bajan.
+mo-econ.c9.viz.items.0.w	La inflación bajó, así que los precios son menores
+mo-econ.c9.viz.items.0.r	Los precios siguieron subiendo, solo que más despacio
+mo-debt.title	Deuda y crédito
+mo-debt.summary	Pedir prestado sin quemarse.
+mo-debt.q0.q	¿Qué incluye la TAE (TAEG)?
+mo-debt.q0.o0	Solo los intereses
+mo-debt.q0.o1	Intereses y la mayoría de comisiones, como tasa anual
+mo-debt.q0.o2	Solo las comisiones
+mo-debt.q0.x	La forma justa de comparar préstamos.
+mo-debt.q1.q	¿Qué método de pago de deudas ahorra más intereses?
+mo-debt.q1.o0	Bola de nieve
+mo-debt.q1.o1	Avalancha
+mo-debt.q1.o2	Pagar el mínimo
+mo-debt.q1.x	Primero el tipo más alto.
+mo-debt.q2.q	Alargar un préstamo de 5 a 10 años normalmente…
+mo-debt.q2.o0	ahorra dinero
+mo-debt.q2.o1	baja la cuota mensual, pero cuesta más en total
+mo-debt.q2.o2	no tiene efecto
+mo-debt.q2.x	Más tiempo, más intereses.
+mo-debt.c0.title	Deuda buena y deuda mala
+mo-debt.c0.text	La deuda puede ser útil cuando compra algo que dura o gana valor, como una vivienda o la formación. La deuda cara para cosas que pierden valor rápido es más arriesgada.
+mo-debt.c0.viz.l.t	Suele ser sensata
+mo-debt.c0.viz.l.items.0	hipoteca
+mo-debt.c0.viz.l.items.1	formación
+mo-debt.c0.viz.l.items.2	tipo bajo
+mo-debt.c0.viz.r.t	Suele ser arriesgada
+mo-debt.c0.viz.r.items.0	saldos de tarjetas de crédito
+mo-debt.c0.viz.r.items.1	créditos al consumo para aparatos
+mo-debt.c0.viz.r.items.2	tipo alto
+mo-debt.c1.title	El coste real: la TAE
+mo-debt.c1.text	Compara los préstamos por la TAE (TAEG en Portugal), que incluye los intereses y la mayoría de las comisiones como tasa anual. La cuota mensual más baja no siempre es el préstamo más barato.
+mo-debt.c1.viz.items.0.a	Tipo nominal
+mo-debt.c1.viz.items.0.b	solo intereses
+mo-debt.c1.viz.items.1.a	TAE / TAEG
+mo-debt.c1.viz.items.1.b	intereses y comisiones
+mo-debt.c1.viz.items.2.a	TAE más baja
+mo-debt.c1.viz.items.2.b	préstamo más barato
+mo-debt.c2.title	Más largo no es más barato
+mo-debt.c2.text	Alargar un préstamo más años baja la cuota mensual, pero sube el total pagado. Un préstamo de 10.000 € al 8 % cuesta unos 2.170 € de intereses a 5 años, pero 4.560 € a 10.
+mo-debt.c2.viz.unit	intereses totales, €
+mo-debt.c2.viz.items.0.l	3 años
+mo-debt.c2.viz.items.1.l	5 años
+mo-debt.c2.viz.items.2.l	10 años
+mo-debt.c3.title	La trampa del pago mínimo
+mo-debt.c3.text	Pagar solo el mínimo de una tarjeta de crédito puede llevar muchos años y costar mucho más que la compra original. Los intereses siguen componiéndose sobre el saldo.
+mo-debt.c3.viz.steps.0	Compras 1.000 €
+mo-debt.c3.viz.steps.1	Pagas solo el mínimo
+mo-debt.c3.viz.steps.2	Los intereses se componen
+mo-debt.c3.viz.steps.3	Años de pagos
+mo-debt.c4.title	Bola de nieve o avalancha
+mo-debt.c4.text	Dos formas de liquidar varias deudas: la bola de nieve paga primero el saldo más pequeño para lograr victorias rápidas; la avalancha paga primero el tipo más alto y ahorra más dinero.
+mo-debt.c4.viz.l.t	Bola de nieve
+mo-debt.c4.viz.l.items.0	primero el saldo menor
+mo-debt.c4.viz.l.items.1	motivación
+mo-debt.c4.viz.r.t	Avalancha
+mo-debt.c4.viz.r.items.0	primero el tipo más alto
+mo-debt.c4.viz.r.items.1	menos intereses
+mo-debt.c5.title	Historial crediticio
+mo-debt.c5.text	Los prestamistas revisan tu historial de préstamos y pagos. En Portugal, la central de riesgos del Banco de Portugal muestra tus responsabilidades con los bancos.
+mo-debt.c5.viz.items.0	Paga a tiempo
+mo-debt.c5.viz.items.1	Mantén saldos bajos
+mo-debt.c5.viz.items.2	No pidas muchos préstamos a la vez
+mo-debt.c5.viz.items.3	Revisa tu historial cada año
+mo-debt.c6.title	Ratio de endeudamiento
+mo-debt.c6.text	Los prestamistas miran qué parte de tus ingresos se va en pagar deudas. El Banco de Portugal recomienda que los bancos, en general, la mantengan en el 50 % o menos para los nuevos préstamos.
+mo-debt.c6.viz.f	DSTI = pagos de deuda ÷ ingresos netos
+mo-debt.c6.viz.items.0.s	DSTI
+mo-debt.c6.viz.items.0.m	servicio de deuda / ingresos
+mo-debt.c6.viz.items.1.s	menos del ~50 %
+mo-debt.c6.viz.items.1.m	recomendado en general
+mo-debt.c7.title	Compra ahora, paga después
+mo-debt.c7.text	Dividir los pagos en plazos parece indoloro, pero facilita gastar y puede llevar a acumular obligaciones y recargos por demora.
+mo-debt.c7.viz.steps.0	«Paga en 3 plazos»
+mo-debt.c7.viz.steps.1	Parece barato
+mo-debt.c7.viz.steps.2	Varios planes a la vez
+mo-debt.c7.viz.steps.3	Difícil de controlar
+mo-debt.c8.title	El riesgo de avalar
+mo-debt.c8.text	Ser avalista (fiador) significa que respondes si el prestatario no puede pagar. Avala solo lo que tú mismo podrías permitirte pagar.
+mo-debt.c8.viz.items.0.w	«Es solo una firma»
+mo-debt.c8.viz.items.0.r	Puede que tengas que pagar toda la deuda
+mo-debt.c9.title	Liquidar una tarjeta
+mo-debt.c9.text	3.000 € en una tarjeta al 18 % TAE. Pagando 100 € al mes tardas unos 40 meses y pagas ~1.000 € de intereses. Pagando 200 €, bajas a unos 17 meses y ~420 €.
+mo-debt.c9.viz.unit	meses para liquidar 3.000 €
+mo-debt.c9.viz.items.0.l	100 € al mes
+mo-debt.c9.viz.items.1.l	200 € al mes
+mo-banks.title	Cómo funcionan los bancos
+mo-banks.summary	Adónde va tu dinero.
+mo-banks.q0.q	¿Cuánto se garantiza por depositante y por banco en la UE?
+mo-banks.q0.o0	10.000 €
+mo-banks.q0.o1	100.000 €
+mo-banks.q0.o2	Sin límite
+mo-banks.q0.x	El Fundo de Garantia de Depósitos en Portugal.
+mo-banks.q1.q	La mayoría de las hipotecas portuguesas tienen un tipo…
+mo-banks.q1.o0	fijo para siempre
+mo-banks.q1.o1	de Euríbor más un diferencial
+mo-banks.q1.o2	fijado por el Gobierno
+mo-banks.q1.x	Variable, ligado al Euríbor.
+mo-banks.c0.title	Los bancos captan y prestan
+mo-banks.c0.text	Los bancos reciben depósitos y prestan la mayor parte de ese dinero a tipos más altos. La diferencia, el margen de intereses, es una fuente clave de beneficios.
+mo-banks.c0.viz.steps.0	Tu depósito
+mo-banks.c0.viz.steps.1	El banco lo presta
+mo-banks.c0.viz.steps.2	El prestatario paga intereses
+mo-banks.c0.viz.steps.3	El banco se queda el margen
+mo-banks.c1.title	Creación de dinero
+mo-banks.c1.text	Cuando un banco concede un préstamo, crea un nuevo depósito en la cuenta del prestatario. La mayor parte del dinero de la economía se crea así, con los límites de la regulación y la demanda.
+mo-banks.c1.viz.steps.0	Préstamo aprobado
+mo-banks.c1.viz.steps.1	Se crea un depósito nuevo
+mo-banks.c1.viz.steps.2	Se gasta el dinero
+mo-banks.c1.viz.steps.3	Circula por la economía
+mo-banks.c2.title	Reserva fraccionaria
+mo-banks.c2.text	Los bancos guardan solo una fracción de los depósitos como efectivo y reservas. Normalmente no pasa nada, pero si todos retiran a la vez, un pánico bancario puede hundirlo.
+mo-banks.c2.viz.unit	% (ilustrativo)
+mo-banks.c2.viz.items.0.l	Prestado o invertido
+mo-banks.c2.viz.items.1.l	En reservas
+mo-banks.c3.title	Garantía de depósitos
+mo-banks.c3.text	En la UE, los depósitos están garantizados hasta 100.000 € por depositante y por banco. En Portugal, lo cubre el Fundo de Garantia de Depósitos.
+mo-banks.c3.viz.items.0.l	por depositante y banco
+mo-banks.c3.viz.items.1.v	En toda la UE
+mo-banks.c3.viz.items.1.l	mismo límite
+mo-banks.c3.viz.items.2.v	En pocos días
+mo-banks.c3.viz.items.2.l	plazo de reembolso
+mo-banks.c4.title	Pánicos bancarios
+mo-banks.c4.text	En 2023, Silicon Valley Bank quebró después de que los depositantes retiraran 42.000 millones de dólares en un solo día, empujados por las redes sociales. La velocidad de los pánicos digitales es algo nuevo.
+mo-banks.c4.viz.steps.0	La alarma se propaga en redes
+mo-banks.c4.viz.steps.1	Retiradas masivas
+mo-banks.c4.viz.steps.2	El banco vende activos con pérdidas
+mo-banks.c4.viz.steps.3	Quiebra
+mo-banks.c5.title	Requisitos de capital
+mo-banks.c5.text	Tras la crisis de 2008, los reguladores exigieron a los bancos tener más capital propio para absorber pérdidas, de modo que no tengan que hacerlo los contribuyentes.
+mo-banks.c5.viz.items.0	Capital propio: absorbe primero las pérdidas
+mo-banks.c5.viz.items.1	Bonos
+mo-banks.c5.viz.items.2	Depósitos: protegidos
+mo-banks.c6.title	Márgenes y comisiones
+mo-banks.c6.text	Los bancos también ganan con las comisiones: mantenimiento de cuenta, transferencias, tarjetas. Comparar comisiones puede ahorrarte decenas de euros al año; el Banco de Portugal publica comparativas.

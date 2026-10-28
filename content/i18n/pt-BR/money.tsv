@@ -678,3 +678,573 @@ mo-housing.c2.viz.items.0	IMT: imposto de transmissão
 mo-housing.c2.viz.items.1	Imposto do Selo: imposto do selo
 mo-housing.c2.viz.items.2	Registro e escritura
 mo-housing.c2.viz.items.3	Tarifas do banco e avaliação
+mo-housing.c3.title	Como funciona a parcela do financiamento
+mo-housing.c3.text	Cada parcela mensal cobre os juros mais uma fatia do empréstimo. No começo, a maior parte vai para os juros; mais tarde, a maior parte vai para amortizar o empréstimo.
+mo-housing.c3.viz.l.t	Primeiros anos
+mo-housing.c3.viz.l.items.0	sobretudo juros
+mo-housing.c3.viz.r.t	Anos finais
+mo-housing.c3.viz.r.items.0	sobretudo principal
+mo-housing.c4.title	Parcela mensal
+mo-housing.c4.text	Um empréstimo de €200.000 em 30 anos a 4% custa cerca de €955 por mês. A 3%, cerca de €843. Em 30 anos, essa diferença de 1 ponto soma cerca de €40.000.
+mo-housing.c4.viz.unit	€ por mês (€200 mil, 30 anos)
+mo-housing.c5.title	Variável vs fixa
+mo-housing.c5.text	As taxas variáveis acompanham a Euribor: ficam mais baratas quando os juros caem e doem quando sobem, como em 2022–23. Taxas fixas ou mistas dão previsibilidade, mas têm um preço.
+mo-housing.c5.viz.l.t	Variável
+mo-housing.c5.viz.l.items.0	segue a Euribor
+mo-housing.c5.viz.l.items.1	pode subir ou cair
+mo-housing.c5.viz.r.t	Fixa
+mo-housing.c5.viz.r.items.0	previsibilidade
+mo-housing.c5.viz.r.items.1	taxa inicial muitas vezes maior
+mo-housing.c6.title	Faça seu teste de estresse
+mo-housing.c6.text	Antes de pegar o empréstimo, verifique se você ainda conseguiria pagar se as taxas subissem 2–3 pontos. Muitas famílias em 2023 viram a parcela saltar centenas de euros.
+mo-housing.c6.viz.unit	€ por mês (€200 mil, 30 anos)
+mo-housing.c6.viz.items.0.l	A 2%
+mo-housing.c6.viz.items.1.l	Taxas +3 pontos
+mo-housing.c7.title	Amortização antecipada
+mo-housing.c7.text	Pagar a mais reduz o prazo ou a parcela mensal. Reduzir o prazo costuma economizar mais juros. Confira as tarifas de amortização antecipada.
+mo-housing.c7.viz.l.t	Prazo menor
+mo-housing.c7.viz.l.items.0	mais juros economizados
+mo-housing.c7.viz.r.t	Parcela menor
+mo-housing.c7.viz.r.items.0	mais folga no mês
+mo-housing.c8.title	Preço vs renda
+mo-housing.c8.text	A moradia nas cidades portuguesas ficou cara em relação à renda local. Compare o preço do imóvel com a renda anual da família para avaliar se cabe no bolso.
+mo-housing.c8.viz.f	preço/renda = preço do imóvel ÷ renda familiar anual
+mo-housing.c8.viz.items.0.s	menor
+mo-housing.c8.viz.items.0.m	mais acessível
+mo-housing.c8.viz.items.1.s	ex.:
+mo-housing.c9.title	Custo total da propriedade
+mo-housing.c9.text	Some os juros do financiamento, o IMI (imposto sobre o imóvel), o condomínio, o seguro e a manutenção (muitas vezes ~1% do valor por ano) antes de comparar com o aluguel.
+mo-housing.c9.viz.items.0	Juros do financiamento
+mo-housing.c9.viz.items.1	IMI
+mo-housing.c9.viz.items.2	Condomínio
+mo-housing.c9.viz.items.3	Seguro
+mo-housing.c9.viz.items.4	Manutenção
+mo-crypto.title	Cripto e dinheiro digital
+mo-crypto.summary	O que é e o que não é.
+mo-crypto.q0.q	Qual é o número máximo de bitcoins?
+mo-crypto.q0.o0	Ilimitado
+mo-crypto.q0.o1	21 milhões
+mo-crypto.q0.o2	1 bilhão
+mo-crypto.q0.x	Está gravado no código.
+mo-crypto.q1.q	O que é uma stablecoin?
+mo-crypto.q1.o0	Uma criptomoeda lenta
+mo-crypto.q1.o1	Um token feito para acompanhar uma moeda
+mo-crypto.q1.o2	Uma moeda de metal
+mo-crypto.q1.x	Geralmente lastreada em reservas.
+mo-crypto.c0.title	O que é o Bitcoin
+mo-crypto.c0.text	O Bitcoin, lançado em 2009 pelo pseudônimo Satoshi Nakamoto, é uma moeda digital sem banco central. Um livro-razão público e compartilhado, a blockchain, registra todas as transações.
+mo-crypto.c0.viz.events.0.l	white paper
+mo-crypto.c0.viz.events.1.l	primeiro bloco
+mo-crypto.c0.viz.events.2.l	10.000 BTC por duas pizzas
+mo-crypto.c0.viz.events.3.l	ETFs à vista aprovados nos EUA
+mo-crypto.c1.title	A blockchain
+mo-crypto.c1.text	Uma blockchain é uma cadeia de blocos de transações, cada um ligado ao anterior por criptografia. Alterar um bloco antigo exigiria refazer todo o trabalho que veio depois dele.
+mo-crypto.c1.viz.steps.0	Transações
+mo-crypto.c1.viz.steps.1	Agrupadas num bloco
+mo-crypto.c1.viz.steps.2	Ligado ao bloco anterior
+mo-crypto.c1.viz.steps.3	A cadeia cresce
+mo-crypto.c2.title	Mineração
+mo-crypto.c2.text	Os "mineradores" de Bitcoin competem para resolver um quebra-cabeça matemático; o vencedor adiciona o próximo bloco e ganha bitcoins novos. Essa prova de trabalho consome muita eletricidade.
+mo-crypto.c2.viz.steps.0	Reunir transações
+mo-crypto.c2.viz.steps.1	Resolver o desafio
+mo-crypto.c2.viz.steps.2	Adicionar o bloco
+mo-crypto.c2.viz.steps.3	Ganhar a recompensa
+mo-crypto.c3.title	Oferta limitada
+mo-crypto.c3.text	Só vão existir 21 milhões de bitcoins. A recompensa da mineração cai pela metade a cada quatro anos, mais ou menos: o "halving".
+mo-crypto.c3.viz.items.0.v	21 milhões
+mo-crypto.c3.viz.items.0.l	máximo de bitcoins
+mo-crypto.c3.viz.items.1.v	~4 anos
+mo-crypto.c3.viz.items.1.l	entre halvings
+mo-crypto.c3.viz.items.2.l	aprox. o último minerado
+mo-crypto.c4.title	Volatilidade
+mo-crypto.c4.text	Os preços das criptos oscilam loucamente. O Bitcoin já caiu mais de 70% várias vezes. Isso faz dele uma péssima reserva de valor de curto prazo para dinheiro de que você vai precisar.
+mo-crypto.c4.viz.items.0	2011: queda de ~90%
+mo-crypto.c4.viz.items.1	2014: queda de ~80%
+mo-crypto.c4.viz.items.2	2018: queda de ~80%
+mo-crypto.c4.viz.items.3	2022: queda de ~75%
+mo-crypto.c5.title	Stablecoins
+mo-crypto.c5.text	Stablecoins são tokens cripto feitos para acompanhar uma moeda como o dólar, geralmente lastreados em reservas. Algumas quebraram quando o lastro falhou.
+mo-crypto.c5.viz.l.t	Lastreadas em reservas
+mo-crypto.c5.viz.l.items.0	dinheiro e títulos
+mo-crypto.c5.viz.l.items.1	mais estáveis
+mo-crypto.c5.viz.r.t	Algorítmicas
+mo-crypto.c5.viz.r.items.0	mantidas por código
+mo-crypto.c5.viz.r.items.1	algumas quebraram
+mo-crypto.c6.title	Cripto e crime
+mo-crypto.c6.text	Cripto é popular entre golpistas: plataformas de investimento falsas, golpes românticos do tipo "pig butchering" e falsos endossos de famosos. As transações são difíceis de reverter.
+mo-crypto.c6.viz.items.0	Plataformas de trading falsas
+mo-crypto.c6.viz.items.1	Golpes românticos
+mo-crypto.c6.viz.items.2	Anúncios falsos com famosos
+mo-crypto.c6.viz.items.3	Corretoras hackeadas
+mo-crypto.c7.title	Sem chaves, sem cripto
+mo-crypto.c7.text	Se uma plataforma guarda suas criptos, você depende de ela continuar solvente e honesta. Quando a FTX quebrou em 2022, os clientes perderam acesso a bilhões.
+mo-crypto.c7.viz.l.t	A corretora guarda
+mo-crypto.c7.viz.l.items.0	fácil
+mo-crypto.c7.viz.l.items.1	risco da plataforma
+mo-crypto.c7.viz.r.t	Você guarda as chaves
+mo-crypto.c7.viz.r.items.0	controle
+mo-crypto.c7.viz.r.items.1	risco de perdê-las
+mo-crypto.c8.title	Regulação
+mo-crypto.c8.text	O regulamento MiCA da UE, aplicado a partir de 2024–25, define regras para prestadores de serviços cripto e stablecoins, incluindo licenças e proteção ao consumidor.
+mo-crypto.c8.viz.events.0.l	MiCA aprovado
+mo-crypto.c8.viz.events.1.l	regras de stablecoins valem
+mo-crypto.c8.viz.events.2.y	dez. 2024
+mo-crypto.c8.viz.events.2.l	aplicação total
+mo-crypto.c9.title	Se for experimentar
+mo-crypto.c9.text	Uma regra prática comum: invista só o que você poderia perder por inteiro, use plataformas reguladas, ative a autenticação em dois fatores e ignore retornos "garantidos". Não é recomendação.
+mo-crypto.c9.viz.items.0	Só o que pode perder
+mo-crypto.c9.viz.items.1	Plataformas reguladas
+mo-crypto.c9.viz.items.2	Autenticação em dois fatores
+mo-crypto.c9.viz.items.3	Ignore retornos garantidos
+mo-behaviour.title	Finanças comportamentais
+mo-behaviour.summary	Por que gente inteligente erra com dinheiro.
+mo-behaviour.q0.q	Segurar ações no prejuízo por tempo demais, esperando empatar, se chama…
+mo-behaviour.q0.o0	efeito manada
+mo-behaviour.q0.o1	efeito disposição
+mo-behaviour.q0.o2	ancoragem
+mo-behaviour.q0.x	Movido pela aversão à perda.
+mo-behaviour.q1.q	Quanto quem negocia com frequência costuma ganhar em comparação com o investidor paciente?
+mo-behaviour.q1.o0	Mais
+mo-behaviour.q1.o1	Menos
+mo-behaviour.q1.o2	O mesmo
+mo-behaviour.q1.x	Custos e mau timing.
+mo-behaviour.q2.q	A adesão automática à previdência é um exemplo de…
+mo-behaviour.q2.o0	um imposto
+mo-behaviour.q2.o1	um nudge (empurrãozinho)
+mo-behaviour.q2.o2	um empréstimo
+mo-behaviour.q2.x	Funciona mudando a opção padrão.
+mo-behaviour.c0.title	Viés do presente
+mo-behaviour.c0.text	Supervalorizamos recompensas agora em vez de depois. A maioria prefere €100 hoje a €110 na semana que vem, mas prefere €110 daqui a 53 semanas a €100 daqui a 52. A espera é a mesma.
+mo-behaviour.c0.viz.l.t	Agora vs 1 semana
+mo-behaviour.c0.viz.l.items.0	a maioria pega €100 já
+mo-behaviour.c0.viz.r.t	1 ano vs 1 ano + 1 semana
+mo-behaviour.c0.viz.r.items.0	a maioria espera €110
+mo-behaviour.c1.title	Contabilidade mental
+mo-behaviour.c1.text	Tratamos o dinheiro em "potes" mentais separados. Alguém pode deixar a poupança rendendo 2% enquanto carrega um saldo no cartão a 18%, perdendo dinheiro na diferença.
+mo-behaviour.c1.viz.unit	% ao ano
+mo-behaviour.c1.viz.items.0.l	Poupança rende
+mo-behaviour.c1.viz.items.1.l	Cartão custa
+mo-behaviour.c2.title	Aversão à perda nos investimentos
+mo-behaviour.c2.text	Os investidores odeiam tanto perder que seguram ações no prejuízo por tempo demais, esperando empatar, e vendem as vencedoras cedo demais: o efeito disposição.
+mo-behaviour.c2.viz.l.t	Perdedoras
+mo-behaviour.c2.viz.l.items.0	mantidas demais
+mo-behaviour.c2.viz.l.items.1	na esperança de voltar
+mo-behaviour.c2.viz.r.t	Vencedoras
+mo-behaviour.c2.viz.r.items.0	vendidas cedo
+mo-behaviour.c2.viz.r.items.1	para garantir o ganho
+mo-behaviour.c3.title	Efeito manada
+mo-behaviour.c3.text	Quando todo mundo está comprando, entrar parece seguro; quando todo mundo está vendendo, o pânico se espalha. Bolhas e quebras são, em parte, comportamento de manada.
+mo-behaviour.c3.viz.steps.0	Preços sobem
+mo-behaviour.c3.viz.steps.1	Mais gente compra
+mo-behaviour.c3.viz.steps.2	Bolha
+mo-behaviour.c3.viz.steps.3	Quebra
+mo-behaviour.c4.title	Excesso de confiança e trading
+mo-behaviour.c4.text	Os investidores que mais negociam tendem a ganhar menos, sobretudo por causa dos custos e do mau timing. Um estudo famoso mostrou que os traders mais ativos ficavam vários pontos atrás por ano.
+mo-behaviour.c4.viz.unit	retorno anual, % (ilustrativo)
+mo-behaviour.c4.viz.items.0.l	Negociam pouco
+mo-behaviour.c4.viz.items.1.l	Negociam muito
+mo-behaviour.c5.title	Viés de recência
+mo-behaviour.c5.text	Achamos que as tendências recentes vão continuar: depois de um ano bom, todo mundo entra; depois de uma quebra, todo mundo foge, muitas vezes na pior hora.
+mo-behaviour.c5.viz.steps.0	Ano forte
+mo-behaviour.c5.viz.steps.1	Espera mais do mesmo
+mo-behaviour.c5.viz.steps.2	Compra caro
+mo-behaviour.c5.viz.steps.3	Decepção
+mo-behaviour.c6.title	O efeito dotação
+mo-behaviour.c6.text	Damos mais valor às coisas depois que elas são nossas. Canecas dadas a estudantes "valiam" para eles cerca do dobro do que para quem foi convidado a comprá-las.
+mo-behaviour.c6.viz.unit	preço, €
+mo-behaviour.c6.viz.items.0.l	Compradores pagariam
+mo-behaviour.c6.viz.items.1.l	Donos venderiam por
+mo-behaviour.c7.title	Nudges
+mo-behaviour.c7.text	Pequenas mudanças na forma de apresentar as escolhas podem ajudar: a adesão automática à previdência e planos do tipo "poupe mais amanhã" aumentam a poupança sem obrigar ninguém.
+mo-behaviour.c7.viz.steps.0	Adesão automática
+mo-behaviour.c7.viz.steps.1	A maioria fica
+mo-behaviour.c7.viz.steps.2	Mais poupança
+mo-behaviour.c8.title	Dinheiro e felicidade
+mo-behaviour.c8.text	Renda maior está ligada a mais felicidade, e alguns estudos mostram que o ganho continua em rendas mais altas. Gastar com experiências, com os outros e para ganhar tempo tende a trazer mais alegria.
+mo-behaviour.c8.viz.items.0	Experiências mais que coisas
+mo-behaviour.c8.viz.items.1	Gastar com os outros
+mo-behaviour.c8.viz.items.2	Comprar tempo
+mo-behaviour.c8.viz.items.3	Segurança financeira
+mo-behaviour.c9.title	Automatize as boas escolhas
+mo-behaviour.c9.text	Programe transferências automáticas no dia do pagamento para a poupança e os investimentos. Você não gasta o que não vê, e evita a batalha da força de vontade.
+mo-behaviour.c9.viz.steps.0	Salário cai
+mo-behaviour.c9.viz.steps.1	Transferência automática
+mo-behaviour.c9.viz.steps.2	A poupança cresce
+mo-behaviour.c9.viz.steps.3	Gaste o resto
+mo-history.title	O dinheiro através da história
+mo-history.summary	Crises, bolhas e lições.
+mo-history.q0.q	Quantos escudos valia um euro?
+mo-history.q0.o0	100
+mo-history.q0.o1	200,482
+mo-history.q0.o2	1.000
+mo-history.q0.x	Fixado na troca de moeda.
+mo-history.q1.q	O que desencadeou a crise financeira de 2008?
+mo-history.q1.o0	Tulipas
+mo-history.q1.o1	Financiamentos imobiliários arriscados empacotados em títulos
+mo-history.q1.o2	Preço do petróleo
+mo-history.q1.x	Os preços dos imóveis caíram.
+mo-history.c0.title	A mania das tulipas
+mo-history.c0.text	Na Holanda dos anos 1630, bulbos raros de tulipa teriam sido vendidos pelo preço de uma casa, antes de os preços despencarem em 1637. Hoje os historiadores acham que a mania foi menor do que diz a lenda.
+mo-history.c0.viz.events.0.l	preços começam a subir
+mo-history.c0.viz.events.1.y	jan. 1637
+mo-history.c0.viz.events.1.l	pico
+mo-history.c0.viz.events.2.y	fev. 1637
+mo-history.c0.viz.events.2.l	colapso
+mo-history.c1.title	A Bolha dos Mares do Sul
+mo-history.c1.text	Em 1720, as ações da britânica Companhia dos Mares do Sul dispararam e despencaram. Isaac Newton perdeu uma fortuna e teria dito que conseguia calcular o movimento das estrelas, mas não a loucura das pessoas.
+mo-history.c1.viz.unit	preço da ação, £ (aprox.)
+mo-history.c1.viz.items.0.l	jan. 1720
+mo-history.c1.viz.items.1.l	jun. 1720
+mo-history.c1.viz.items.2.l	dez. 1720
+mo-history.c2.title	A quebra de 1929
+mo-history.c2.text	A bolsa americana quebrou em outubro de 1929, ajudando a desencadear a Grande Depressão. Falências de bancos e erros de política econômica a aprofundaram.
+mo-history.c2.viz.steps.0	Boom especulativo
+mo-history.c2.viz.steps.1	Quebra de outubro de 1929
+mo-history.c2.viz.steps.2	Falências de bancos
+mo-history.c2.viz.steps.3	Grande Depressão
+mo-history.c3.title	Hiperinflação
+mo-history.c3.text	Quando os governos imprimem dinheiro para cobrir dívidas, os preços podem explodir. Na Alemanha em 1923, os preços dobravam a cada poucos dias; no Zimbábue em 2008, mais rápido ainda.
+mo-history.c3.viz.items.0	Alemanha 1923
+mo-history.c3.viz.items.1	Hungria 1946
+mo-history.c3.viz.items.2	Zimbábue 2008
+mo-history.c3.viz.items.3	Venezuela anos 2010
+mo-history.c4.title	Bretton Woods
+mo-history.c4.text	Em 1944, as grandes economias atrelaram suas moedas ao dólar, e o dólar ao ouro. Em 1971, os EUA acabaram com a conversibilidade em ouro, dando início às moedas flutuantes de hoje.
+mo-history.c4.viz.events.0.l	Bretton Woods
+mo-history.c4.viz.events.1.l	dólar deixa o ouro
+mo-history.c4.viz.events.2.l	câmbio flutuante
+mo-history.c5.title	A bolha das ponto-com
+mo-history.c5.text	No fim dos anos 1990, empresas de internet sem lucro dispararam. O Nasdaq caiu quase 80% de 2000 a 2002. Algumas sobreviventes viraram gigantes.
+mo-history.c5.viz.unit	índice Nasdaq (aprox.)
+mo-history.c5.viz.items.1.l	mar. 2000
+mo-history.c5.viz.items.2.l	out. 2002
+mo-history.c6.title	A crise de 2008
+mo-history.c6.text	Financiamentos imobiliários arriscados nos EUA foram empacotados em títulos complexos. Quando os preços dos imóveis caíram, as perdas se espalharam pelo mundo. O Lehman Brothers quebrou em setembro de 2008.
+mo-history.c6.viz.steps.0	Financiamentos arriscados
+mo-history.c6.viz.steps.1	Empacotados e vendidos
+mo-history.c6.viz.steps.2	Imóveis se desvalorizam
+mo-history.c6.viz.steps.3	Crise bancária global
+mo-history.c7.title	O resgate de Portugal
+mo-history.c7.text	Em 2011, durante a crise da dívida do euro, Portugal recebeu um resgate de €78 bilhões da UE e do FMI, com duras condições de austeridade. Saiu do programa em 2014.
+mo-history.c7.viz.events.0.l	crise da dívida do euro
+mo-history.c7.viz.events.1.l	programa de €78 bilhões
+mo-history.c7.viz.events.2.l	saída limpa
+mo-history.c7.viz.events.3.l	dívida abaixo de 100% do PIB
+mo-history.c8.title	O euro
+mo-history.c8.text	O euro foi lançado em 1999 para os bancos e em 2002 em cédulas e moedas. Portugal trocou os escudos a 200,482 escudos por euro.
+mo-history.c8.viz.items.0.a	1 euro
+mo-history.c8.viz.items.0.b	200,482 escudos
+mo-history.c8.viz.items.1.b	lançado eletronicamente
+mo-history.c8.viz.items.2.b	cédulas e moedas
+mo-history.c9.title	Lições das crises
+mo-history.c9.text	As crises seguem padrões: crédito barato, preços subindo, histórias de "desta vez é diferente" e depois uma virada repentina. Diversificação e humildade protegem você.
+mo-history.c9.viz.steps.0	Crédito barato
+mo-history.c9.viz.steps.1	Boom
+mo-history.c9.viz.steps.2	Euforia
+mo-history.c9.viz.steps.3	Estouro
+mo-business.title	Como as empresas ganham dinheiro
+mo-business.summary	Lendo o básico.
+mo-business.q0.q	Um café tem €6.000 de custos fixos e ganha €2 por cafezinho. O ponto de equilíbrio é…
+mo-business.q0.o0	1.200
+mo-business.q0.o1	3.000 cafés
+mo-business.q0.o2	6.000
+mo-business.q0.x	Custos fixos ÷ margem.
+mo-business.q1.q	Por que uma empresa lucrativa pode ficar sem caixa?
+mo-business.q1.o0	Fraude
+mo-business.q1.o1	Os clientes pagam atrasado enquanto as contas vencem
+mo-business.q1.o2	Margens altas
+mo-business.q1.x	Lucro não é caixa.
+mo-business.c0.title	Receita, custos, lucro
+mo-business.c0.text	Receita é o dinheiro que entra com as vendas. Subtraia os custos e você tem o lucro. Uma empresa pode ter uma receita enorme e mesmo assim perder dinheiro.
+mo-business.c0.viz.f	lucro = receita − custos
+mo-business.c0.viz.items.0.s	receita
+mo-business.c0.viz.items.0.m	vendas
+mo-business.c0.viz.items.1.s	custos
+mo-business.c0.viz.items.1.m	tudo o que se gasta
+mo-business.c1.title	Margem bruta e líquida
+mo-business.c1.text	A margem bruta é o que sobra depois do custo direto das mercadorias. A margem líquida é o que sobra depois de tudo, incluindo salários, aluguel, juros e impostos.
+mo-business.c1.viz.unit	€ de cada €100 vendidos (exemplo)
+mo-business.c1.viz.items.0.l	Receita
+mo-business.c1.viz.items.1.l	Lucro bruto
+mo-business.c1.viz.items.2.l	Lucro líquido
+mo-business.c2.title	Custos fixos e variáveis
+mo-business.c2.text	Os custos fixos, como o aluguel, são os mesmos não importa quanto você venda; os variáveis, como os ingredientes, sobem a cada venda. Vender mais dilui os custos fixos.
+mo-business.c2.viz.l.t	Fixos
+mo-business.c2.viz.l.items.0	aluguel
+mo-business.c2.viz.l.items.1	salários
+mo-business.c2.viz.l.items.2	seguros
+mo-business.c2.viz.r.t	Variáveis
+mo-business.c2.viz.r.items.0	materiais
+mo-business.c2.viz.r.items.1	embalagem
+mo-business.c2.viz.r.items.2	entrega
+mo-business.c3.title	Ponto de equilíbrio
+mo-business.c3.text	O ponto de equilíbrio é onde a receita cobre todos os custos. Um café com €6.000 de custos fixos por mês e €2 de lucro por cafezinho precisa vender 3.000 cafés por mês.
+mo-business.c3.viz.f	equilíbrio = custos fixos ÷ margem por unidade
+mo-business.c3.viz.items.0.m	3.000 cafés
+mo-business.c4.title	Fluxo de caixa
+mo-business.c4.text	Lucro não é caixa. Uma empresa pode ser lucrativa no papel, mas ficar sem caixa se os clientes pagarem atrasado. Muitas pequenas empresas quebram por esse motivo.
+mo-business.c4.viz.steps.0	Venda feita
+mo-business.c4.viz.steps.1	Fatura enviada
+mo-business.c4.viz.steps.2	Esperar 60 dias
+mo-business.c4.viz.steps.3	Contas vencem hoje
+mo-business.c5.title	Modelos de negócio
+mo-business.c5.text	As empresas ganham de jeitos diferentes: vendendo produtos, assinaturas, publicidade, comissões ou licenciamento.
+mo-business.c5.viz.items.0.a	Venda de produtos
+mo-business.c5.viz.items.0.b	uma padaria
+mo-business.c5.viz.items.1.a	Assinatura
+mo-business.c5.viz.items.1.b	streaming
+mo-business.c5.viz.items.2.a	Publicidade
+mo-business.c5.viz.items.2.b	buscadores
+mo-business.c5.viz.items.3.a	Comissão
+mo-business.c5.viz.items.3.b	marketplaces
+mo-business.c6.title	Economias de escala
+mo-business.c6.text	Empresas maiores conseguem produzir cada unidade mais barato: compras em grande volume, máquinas especializadas e custos fixos diluídos.
+mo-business.c6.viz.unit	custo por unidade, € (ilustrativo)
+mo-business.c6.viz.items.0.l	100 unidades
+mo-business.c6.viz.items.1.l	1.000 unidades
+mo-business.c6.viz.items.2.l	10.000 unidades
+mo-business.c7.title	Fossos competitivos
+mo-business.c7.text	Warren Buffett procura "fossos": vantagens que protegem os lucros, como marcas, efeitos de rede, patentes ou custos de troca.
+mo-business.c7.viz.items.0	Marca forte
+mo-business.c7.viz.items.1	Efeitos de rede
+mo-business.c7.viz.items.2	Patentes
+mo-business.c7.viz.items.3	Custos de troca altos
+mo-business.c8.title	Valuation
+mo-business.c8.text	O valor de mercado de uma empresa é o preço da ação vezes o número de ações. O índice preço/lucro (P/L) compara o preço com o lucro por ação.
+mo-business.c8.viz.f	P/L = preço da ação ÷ lucro por ação
+mo-business.c8.viz.items.0.s	P/L alto
+mo-business.c8.viz.items.0.m	expectativa de crescimento
+mo-business.c8.viz.items.1.s	P/L baixo
+mo-business.c8.viz.items.1.m	mais barata ou mais lenta
+mo-business.c9.title	Uma barraca de limonada
+mo-business.c9.text	Copos e limões custam €0,40 por copo; você vende a €1,50. A barraca custa €33 por dia. Você empata com 30 copos; o copo 31 já é lucro.
+mo-business.c9.example.0	Margem = €1,50 − €0,40 = €1,10
+mo-business.c9.example.1	€33 ÷ €1,10 = 30 copos
+mo-business.c9.viz.unit	lucro, €
+mo-business.c9.viz.items.0.l	20 copos
+mo-business.c9.viz.items.1.l	30 copos
+mo-business.c9.viz.items.2.l	50 copos
+mo-insurance.title	Seguros e risco
+mo-insurance.summary	Pagar pouco para evitar um desastre.
+mo-insurance.q0.q	O que é a franquia?
+mo-insurance.q0.o0	O prêmio anual
+mo-insurance.q0.o1	O que você paga antes de o seguro cobrir o resto
+mo-insurance.q0.o2	Um imposto
+mo-insurance.q0.x	Franquia maior, prêmio menor.
+mo-insurance.q1.q	Qual seguro é obrigatório para carros em Portugal?
+mo-insurance.q1.o0	Cobertura total
+mo-insurance.q1.o1	Responsabilidade civil
+mo-insurance.q1.o2	Roubo
+mo-insurance.q1.x	Cobre danos a terceiros.
+mo-insurance.c0.title	Dividir o risco
+mo-insurance.c0.text	O seguro junta os pequenos pagamentos de muita gente para cobrir os poucos que sofrem grandes perdas. Cada um paga um prêmio previsível em vez de arriscar a ruína.
+mo-insurance.c0.viz.steps.0	Muitos pagam prêmios
+mo-insurance.c0.viz.steps.1	Fundo comum
+mo-insurance.c0.viz.steps.2	Poucos têm perdas
+mo-insurance.c0.viz.steps.3	O fundo paga
+mo-insurance.c1.title	Segure o que é grande
+mo-insurance.c1.text	O seguro vale mais para perdas que você não conseguiria absorver: sua casa, responsabilidade civil, saúde, renda. Para perdas pequenas, guardar dinheiro você mesmo costuma sair mais barato.
+mo-insurance.c1.viz.l.t	Fazer seguro
+mo-insurance.c1.viz.l.items.0	incêndio em casa
+mo-insurance.c1.viz.l.items.1	resp. civil
+mo-insurance.c1.viz.l.items.2	invalidez
+mo-insurance.c1.viz.r.t	Arcar sozinho
+mo-insurance.c1.viz.r.items.0	tela do celular
+mo-insurance.c1.viz.r.items.1	pequenos reparos
+mo-insurance.c2.title	Prêmios e franquias
+mo-insurance.c2.text	O prêmio é o que você paga regularmente. A franquia é o que você paga antes de o seguro entrar em ação. Uma franquia maior costuma significar um prêmio menor.
+mo-insurance.c2.viz.l.t	Franquia baixa
+mo-insurance.c2.viz.l.items.0	prêmio maior
+mo-insurance.c2.viz.r.t	Franquia alta
+mo-insurance.c2.viz.r.items.0	prêmio menor
+mo-insurance.c3.title	Seguros obrigatórios
+mo-insurance.c3.text	Em Portugal, o seguro de responsabilidade civil do carro é obrigatório. O seguro contra incêndio é exigido para prédios em propriedade horizontal (condomínios), e os bancos o exigem nos financiamentos imobiliários.
+mo-insurance.c3.viz.items.0	Resp. civil do carro: obrigatório
+mo-insurance.c3.viz.items.1	Incêndio do prédio: exigido em condomínios
+mo-insurance.c3.viz.items.2	Financiamento: vida e multirrisco geralmente exigidos
+mo-insurance.c4.title	Seguro de vida
+mo-insurance.c4.text	O seguro de vida paga aos seus dependentes se você morrer. Ele importa mais quando outras pessoas dependem da sua renda, como filhos ou um parceiro com quem você divide o financiamento.
+mo-insurance.c4.viz.steps.0	Dependentes contam com a renda
+mo-insurance.c4.viz.steps.1	Segure essa renda
+mo-insurance.c4.viz.steps.2	Tranquilidade
+mo-insurance.c5.title	Plano de saúde
+mo-insurance.c5.text	O SNS de Portugal oferece saúde pública. Um seguro de saúde privado pode reduzir a espera por consultas, mas confira exclusões, limites e carências.
+mo-insurance.c5.viz.l.t	SNS
+mo-insurance.c5.viz.l.items.0	público
+mo-insurance.c5.viz.l.items.1	universal
+mo-insurance.c5.viz.l.items.2	filas de espera
+mo-insurance.c5.viz.r.t	Seguro privado
+mo-insurance.c5.viz.r.items.0	acesso mais rápido
+mo-insurance.c5.viz.r.items.1	exclusões
+mo-insurance.c5.viz.r.items.2	limites
+mo-insurance.c6.title	Leia as exclusões
+mo-insurance.c6.text	O que não está coberto importa tanto quanto o que está. Enchentes, terremotos e doenças preexistentes são exclusões comuns.
+mo-insurance.c6.viz.items.0	Terremotos
+mo-insurance.c6.viz.items.1	Enchentes
+mo-insurance.c6.viz.items.2	Doenças preexistentes
+mo-insurance.c6.viz.items.3	Desgaste natural
+mo-insurance.c7.title	Risco moral
+mo-insurance.c7.text	Depois de fazer o seguro, as pessoas podem correr mais riscos, sabendo que outro vai pagar. Franquias e coparticipação ajudam a evitar isso.
+mo-insurance.c7.viz.steps.0	Com seguro
+mo-insurance.c7.viz.steps.1	Menos cuidado
+mo-insurance.c7.viz.steps.2	Mais sinistros
+mo-insurance.c7.viz.steps.3	Prêmios maiores para todos
+mo-insurance.c8.title	Cobertura contra terremotos
+mo-insurance.c8.text	Apesar da história de 1755, a cobertura contra terremotos em Portugal é opcional e muitas vezes fica fora das apólices residenciais padrão. Muitas casas não têm seguro para isso.
+mo-insurance.c8.viz.items.0.w	"Meu seguro residencial cobre terremotos"
+mo-insurance.c8.viz.items.0.r	Confira: muitas vezes é um adicional opcional
+mo-insurance.c9.title	Compare antes
+mo-insurance.c9.text	Compare apólices pela cobertura, pelas exclusões e pela franquia, não só pelo prêmio. Revise todo ano; a fidelidade raramente é recompensada.
+mo-insurance.c9.viz.items.0	Mesma cobertura?
+mo-insurance.c9.viz.items.1	Exclusões
+mo-insurance.c9.viz.items.2	Franquia
+mo-insurance.c9.viz.items.3	Fama no pagamento de sinistros
+mo-scams.title	Golpes e fraudes
+mo-scams.summary	Protegendo seu dinheiro.
+mo-scams.q0.q	Um banco de verdade pede seu código de SMS de uso único?
+mo-scams.q0.o0	Sim, para confirmar quem é você
+mo-scams.q0.o1	Não, nunca
+mo-scams.q0.o2	Só por e-mail
+mo-scams.q0.x	Desligue e ligue para o número oficial.
+mo-scams.q1.q	Onde você pode conferir se uma empresa de investimentos é autorizada em Portugal?
+mo-scams.q1.o0	Facebook
+mo-scams.q1.o1	Listas da CMVM e do Banco de Portugal
+mo-scams.q1.o2	O site da própria empresa
+mo-scams.q1.x	Os reguladores publicam alertas.
+mo-scams.c0.title	O truque da urgência
+mo-scams.c0.text	A maioria dos golpes cria urgência: "sua conta vai ser bloqueada", "aja agora". A pressão impede você de pensar. Bancos de verdade não apressam você assim.
+mo-scams.c0.viz.steps.0	Mensagem urgente
+mo-scams.c0.viz.steps.1	Pânico
+mo-scams.c0.viz.steps.2	Age sem conferir
+mo-scams.c0.viz.steps.3	Dinheiro perdido
+mo-scams.c1.title	Phishing
+mo-scams.c1.text	E-mails, SMS ou ligações falsas fingem ser do seu banco, da Receita ou de uma transportadora e pedem que você clique num link ou compartilhe códigos.
+mo-scams.c1.viz.items.0	SMS falso do banco
+mo-scams.c1.viz.items.1	E-mail falso de restituição
+mo-scams.c1.viz.items.2	Taxa de entrega falsa
+mo-scams.c1.viz.items.3	Falso suporte técnico ao telefone
+mo-scams.c2.title	Nunca compartilhe códigos
+mo-scams.c2.text	Nenhum banco de verdade vai pedir a senha completa do cartão, a senha do internet banking ou o código de uso único enviado ao seu celular. Quem pede é golpista.
+mo-scams.c2.viz.items.0.w	"O banco ligou pedindo meu código"
+mo-scams.c2.viz.items.0.r	Desligue e ligue no número oficial do banco
+mo-scams.c3.title	Golpe do "Olá pai, olá mãe"
+mo-scams.c3.text	Golpistas mandam mensagens a pais fingindo ser o filho com um número novo e pedindo dinheiro com urgência. Ligue para o número antigo do filho para confirmar.
+mo-scams.c3.viz.steps.0	"Mãe, número novo, preciso de dinheiro!"
+mo-scams.c3.viz.steps.1	Ligue para o número antigo
+mo-scams.c3.viz.steps.2	Confirme
+mo-scams.c3.viz.steps.3	Quase sempre é golpe
+mo-scams.c4.title	Golpes de investimento
+mo-scams.c4.text	Plataformas falsas mostram retornos impressionantes e deixam você sacar valores pequenos para ganhar confiança, depois somem com depósitos maiores. Confira as listas de alerta dos reguladores.
+mo-scams.c4.viz.steps.0	Investimento pequeno
+mo-scams.c4.viz.steps.1	Ganhos falsos na tela
+mo-scams.c4.viz.steps.2	Investe mais
+mo-scams.c4.viz.steps.3	Não consegue sacar
+mo-scams.c5.title	Consulte o regulador
+mo-scams.c5.text	Em Portugal, a CMVM, o Banco de Portugal e a ASF publicam listas de entidades não autorizadas. Se a empresa não estiver registrada, não invista.
+mo-scams.c5.viz.items.0.a	CMVM
+mo-scams.c5.viz.items.0.b	valores mobiliários e investimentos
+mo-scams.c5.viz.items.1.a	Banco de Portugal
+mo-scams.c5.viz.items.1.b	bancos e crédito
+mo-scams.c5.viz.items.2.a	ASF
+mo-scams.c5.viz.items.2.b	seguros e previdência
+mo-scams.c6.title	Golpes românticos
+mo-scams.c6.text	Golpistas constroem relacionamentos online ao longo de semanas e depois inventam emergências ou "oportunidades" de investimento. Nunca mande dinheiro para alguém que você não conhece pessoalmente.
+mo-scams.c6.viz.steps.0	Romance online
+mo-scams.c6.viz.steps.1	Confiança construída
+mo-scams.c6.viz.steps.2	Crise repentina
+mo-scams.c6.viz.steps.3	Pedido de dinheiro
+mo-scams.c7.title	Segurança do cartão
+mo-scams.c7.text	Use pagamento por aproximação e notificações do app, defina limites de gasto e use cartões virtuais nas compras online. Comunique a perda do cartão imediatamente.
+mo-scams.c7.viz.items.0	Notificações do app
+mo-scams.c7.viz.items.1	Limites de gasto
+mo-scams.c7.viz.items.2	Cartão virtual online
+mo-scams.c7.viz.items.3	Comunique perdas rápido
+mo-scams.c8.title	Golpes com MB WAY
+mo-scams.c8.text	Golpistas que se passam por compradores em sites de classificados pedem que você "receba" dinheiro pelo MB WAY, mas na verdade guiam você para enviar dinheiro ou vincular o celular deles à sua conta.
+mo-scams.c8.viz.items.0.w	"Vá ao caixa eletrônico para receber o pagamento"
+mo-scams.c8.viz.items.0.r	Receber dinheiro nunca exige que você faça nada num caixa eletrônico
+mo-scams.c9.title	Se acontecer
+mo-scams.c9.text	Fale com seu banco imediatamente para bloquear cartões e transferências, troque as senhas, registre ocorrência na polícia e guarde as provas. Agir rápido aumenta as chances de recuperar o dinheiro.
+mo-scams.c9.viz.steps.0	Ligue para o banco
+mo-scams.c9.viz.steps.1	Bloqueie os cartões
+mo-scams.c9.viz.steps.2	Registre na polícia
+mo-scams.c9.viz.steps.3	Guarde as provas
+mo-markets.title	Como a bolsa funciona
+mo-markets.summary	Comprar um pedaço das empresas.
+mo-markets.q0.q	O que é um bear market?
+mo-markets.q0.o0	Uma alta de 20%
+mo-markets.q0.o1	Uma queda de 20% ou mais a partir de um pico
+mo-markets.q0.o2	Um mercado de animais
+mo-markets.q0.x	O touro ataca para cima; o urso golpeia para baixo.
+mo-markets.q1.q	O que um ETF oferece?
+mo-markets.q1.o0	Retorno garantido
+mo-markets.q1.o1	Uma cesta de ativos negociada como uma ação
+mo-markets.q1.o2	Depósitos bancários
+mo-markets.q1.x	Diversificação a baixo custo.
+mo-markets.q2.q	Qual é o principal índice da bolsa de Portugal?
+mo-markets.q2.o0	DAX
+mo-markets.q2.o1	PSI
+mo-markets.q2.o2	FTSE
+mo-markets.q2.x	Na Euronext Lisboa.
+mo-markets.c0.title	Por que as empresas abrem capital
+mo-markets.c0.text	As empresas vendem ações na bolsa para levantar dinheiro e crescer. Os primeiros investidores também podem vender suas participações. A primeira listagem é o IPO.
+mo-markets.c0.viz.steps.0	Empresa fechada
+mo-markets.c0.viz.steps.1	IPO
+mo-markets.c0.viz.steps.2	Ações negociadas na bolsa
+mo-markets.c0.viz.steps.3	Empresa recebe capital
+mo-markets.c1.title	Bolsas
+mo-markets.c1.text	As bolsas de valores são mercados que juntam compradores e vendedores. A de Portugal é a Euronext Lisboa; seu principal índice, o PSI, acompanha as maiores empresas listadas.
+mo-markets.c1.viz.items.0.a	Euronext Lisboa
+mo-markets.c1.viz.items.0.b	a bolsa de Portugal
+mo-markets.c1.viz.items.1.a	PSI
+mo-markets.c1.viz.items.1.b	principal índice português
+mo-markets.c1.viz.items.2.a	S&P 500
+mo-markets.c1.viz.items.2.b	500 grandes empresas dos EUA
+mo-markets.c1.viz.items.3.a	Euro Stoxx 50
+mo-markets.c1.viz.items.3.b	50 grandes empresas da zona do euro
+mo-markets.c2.title	O que move os preços
+mo-markets.c2.text	Os preços se movem com a oferta e a demanda, guiadas pelos lucros futuros esperados, pelas taxas de juros, pelas notícias e pelo humor do mercado.
+mo-markets.c2.viz.items.0	Expectativa de lucro
+mo-markets.c2.viz.items.1	Taxas de juros
+mo-markets.c2.viz.items.2	Notícias e eventos
+mo-markets.c2.viz.items.3	Humor dos investidores
+mo-markets.c3.title	Índices
+mo-markets.c3.text	Um índice acompanha uma cesta de ações para mostrar como está um mercado. O S&P 500 inclui cerca de 500 das maiores empresas dos EUA, ponderadas pelo tamanho.
+mo-markets.c3.viz.steps.0	Escolher empresas
+mo-markets.c3.viz.steps.1	Ponderar pelo tamanho
+mo-markets.c3.viz.steps.2	Somar o valor
+mo-markets.c3.viz.steps.3	Nível do índice
+mo-markets.c4.title	Mercado de touro e de urso
+mo-markets.c4.text	Um bull market é uma alta sustentada; um bear market é uma queda de 20% ou mais a partir de um pico. O touro ataca para cima; o urso golpeia para baixo.
+mo-markets.c4.viz.l.t	Touro
+mo-markets.c4.viz.l.items.0	preços subindo
+mo-markets.c4.viz.l.items.1	otimismo
+mo-markets.c4.viz.r.t	Urso
+mo-markets.c4.viz.r.items.0	quedas de 20%+
+mo-markets.c4.viz.r.items.1	pessimismo
+mo-markets.c5.title	Retorno de longo prazo
+mo-markets.c5.text	Em períodos longos, as ações globais renderam em média cerca de 5% ao ano acima da inflação, mas com grandes oscilações e alguns longos períodos de lado.
+mo-markets.c5.viz.unit	retorno real % ao ano (longo prazo, aprox.)
+mo-markets.c5.viz.items.0.l	Liquidez
+mo-markets.c5.viz.items.1.l	Títulos
+mo-markets.c5.viz.items.2.l	Ações
+mo-markets.c6.title	Quedas
+mo-markets.c6.text	Até os bons mercados têm grandes quedas. As ações mundiais caíram cerca de 50% em 2008–09 e uns 34% em poucas semanas no começo de 2020, e depois se recuperaram.
+mo-markets.c6.viz.unit	% de queda (aprox.)
+mo-markets.c7.title	ETFs
+mo-markets.c7.text	Os fundos negociados em bolsa (ETFs) têm cestas de ativos e são negociados como ações. Um único ETF mundial pode dar a você milhares de empresas a baixo custo.
+mo-markets.c7.viz.l.t	Uma ação
+mo-markets.c7.viz.l.items.0	uma empresa
+mo-markets.c7.viz.l.items.1	risco maior
+mo-markets.c7.viz.r.t	ETF mundial
+mo-markets.c7.viz.r.items.0	milhares de empresas
+mo-markets.c7.viz.r.items.1	diversificado
+mo-markets.c8.title	Custos
+mo-markets.c8.text	Taxas dos fundos (TER), corretagem, conversão de moeda e impostos comem o retorno. Ao longo de décadas, pequenas diferenças se compõem.
+mo-markets.c8.viz.items.0	Taxa do fundo (TER)
+mo-markets.c8.viz.items.1	Corretagem
+mo-markets.c8.viz.items.2	Conversão de moeda
+mo-markets.c8.viz.items.3	Imposto sobre ganhos
+mo-markets.c9.title	Imposto sobre ganhos de capital em Portugal
+mo-markets.c9.text	Os ganhos com a venda de ações e os dividendos são, em geral, tributados a uma taxa fixa de 28% em Portugal, com a opção de incluí-los no imposto de renda. As regras mudam; confira a lei em vigor.
+mo-markets.c9.viz.f	imposto = ganho × 28%

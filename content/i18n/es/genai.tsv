@@ -1201,3 +1201,533 @@ gen-context.c8.title	Presupuesto de tokens
 gen-context.c8.text	Cada token de entrada cuesta dinero y tiempo. Elimina el texto de relleno, quita duplicados de los pasajes recuperados y mantén las instrucciones concisas sin perder claridad.
 gen-context.c8.viz.items.0.w	pegar el manual entero de 200 páginas cada vez
 gen-context.c8.viz.items.0.r	recuperar las 3 secciones relevantes
+gen-context.c9.title	La privacidad en el contexto
+gen-context.c9.text	Todo lo que pones en el contexto se envía al proveedor del modelo. Revisa las normas de tu organización sobre datos personales y confidenciales, y usa herramientas empresariales aprobadas.
+gen-context.c9.viz.items.0	Conoce la clasificación de tus datos
+gen-context.c9.viz.items.1	Usa herramientas aprobadas
+gen-context.c9.viz.items.2	Evita datos personales innecesarios
+gen-context.c9.viz.items.3	Revisa la retención de datos
+gen-landscape.title	El panorama de modelos
+gen-landscape.summary	Cerrados, abiertos y cómo elegir.
+gen-landscape.q0.q	¿Qué ventaja tienen los modelos de pesos abiertos?
+gen-landscape.q0.o0	Siempre son los más capaces
+gen-landscape.q0.o1	Se pueden ejecutar en privado y personalizar
+gen-landscape.q0.o2	No necesitan alojamiento
+gen-landscape.q0.x	Tú controlas el despliegue.
+gen-landscape.q1.q	¿Qué hace un enrutador de modelos?
+gen-landscape.q1.o0	Entrena modelos
+gen-landscape.q1.o1	Envía cada petición al modelo más adecuado
+gen-landscape.q1.o2	Cifra los datos
+gen-landscape.q1.x	Asigna cada tarea a un modelo.
+gen-landscape.q2.q	¿Cómo deberías elegir un modelo?
+gen-landscape.q2.o0	Elegir el más famoso
+gen-landscape.q2.o1	Probar los candidatos con tus propias tareas y restricciones
+gen-landscape.q2.o2	Elegir el más grande
+gen-landscape.q2.x	Deciden tus evaluaciones.
+gen-landscape.c0.title	Los laboratorios punteros
+gen-landscape.c0.text	Un puñado de empresas entrena los modelos más capaces, entre ellas OpenAI (GPT), Anthropic (Claude), Google (Gemini) y Meta (Llama), con fuerte competencia de laboratorios como Mistral, DeepSeek, Alibaba (Qwen) y xAI.
+gen-landscape.c0.viz.items.0	OpenAI: modelos GPT
+gen-landscape.c0.viz.items.1	Anthropic: Claude
+gen-landscape.c0.viz.items.2	Google: Gemini
+gen-landscape.c0.viz.items.3	Meta: Llama (pesos abiertos)
+gen-landscape.c0.viz.items.4	Mistral, DeepSeek, Qwen y otros
+gen-landscape.c1.title	Pesos cerrados frente a abiertos
+gen-landscape.c1.text	Los modelos cerrados se usan mediante una API; el proveedor los aloja y actualiza. Los modelos de pesos abiertos se pueden descargar, ejecutar en privado y ajustar, pero los gestionas tú.
+gen-landscape.c1.viz.l.t	Cerrados (API)
+gen-landscape.c1.viz.l.items.0	máxima capacidad
+gen-landscape.c1.viz.l.items.1	sin infraestructura
+gen-landscape.c1.viz.l.items.2	datos al proveedor
+gen-landscape.c1.viz.r.t	Pesos abiertos
+gen-landscape.c1.viz.r.items.0	en cualquier sitio
+gen-landscape.c1.viz.r.items.1	personalizables
+gen-landscape.c1.viz.r.items.2	tú gestionas alojamiento y seguridad
+gen-landscape.c2.title	Tamaños y gamas de modelos
+gen-landscape.c2.text	Los proveedores suelen ofrecer gamas: modelos grandes para el razonamiento difícil, medianos para la mayoría de tareas y pequeños y rápidos para trabajos sencillos de gran volumen. Elegir el modelo más pequeño que cumple ahorra mucho.
+gen-landscape.c2.viz.items.0	Grande: tareas difíciles, lento, caro
+gen-landscape.c2.viz.items.1	Mediano: casi todo
+gen-landscape.c2.viz.items.2	Pequeño: rápido, barato, gran volumen
+gen-landscape.c3.title	Elegir un modelo
+gen-landscape.c3.text	Prueba los candidatos con tus propias tareas. Ten en cuenta la calidad, la velocidad, el coste, la longitud de contexto, la residencia de los datos, las condiciones de privacidad y cómo encaja el proveedor con tu nube.
+gen-landscape.c3.viz.items.0	Calidad en tus evaluaciones
+gen-landscape.c3.viz.items.1	Latencia
+gen-landscape.c3.viz.items.2	Coste por tarea
+gen-landscape.c3.viz.items.3	Residencia de datos y condiciones
+gen-landscape.c3.viz.items.4	Integración con tu nube
+gen-landscape.c4.title	Acceso empresarial
+gen-landscape.c4.text	Las grandes empresas suelen usar los modelos a través de su nube: Azure OpenAI, AWS Bedrock o Google Vertex AI, que ofrecen seguridad empresarial, alojamiento regional y contratos.
+gen-landscape.c4.viz.items.0.a	Azure AI Foundry
+gen-landscape.c4.viz.items.0.b	OpenAI y otros modelos
+gen-landscape.c4.viz.items.1.a	AWS Bedrock
+gen-landscape.c4.viz.items.1.b	Claude, Llama y otros
+gen-landscape.c4.viz.items.2.a	Google Vertex AI
+gen-landscape.c4.viz.items.2.b	Gemini y otros
+gen-landscape.c5.title	Enrutamiento de modelos
+gen-landscape.c5.text	En lugar de un único modelo para todo, un enrutador envía cada petición al modelo más adecuado: pequeño para consultas sencillas, grande para las complejas. Una pasarela de IA puede encargarse del enrutamiento, los registros y las cuotas.
+gen-landscape.c5.viz.steps.0	Petición
+gen-landscape.c5.viz.steps.1	La pasarela la clasifica
+gen-landscape.c5.viz.steps.2	Sencilla → modelo pequeño
+gen-landscape.c5.viz.steps.3	Compleja → modelo grande
+gen-landscape.c6.title	Un campo que avanza rápido
+gen-landscape.c6.text	Cada pocos meses aparecen modelos nuevos que a menudo igualan al mejor del año anterior por una fracción del precio. Diseña los sistemas para poder cambiar de modelo sin reescribirlo todo.
+gen-landscape.c6.viz.items.0	Abstrae el modelo tras una interfaz
+gen-landscape.c6.viz.items.1	Ten listas las evaluaciones
+gen-landscape.c6.viz.items.2	Versiona los prompts
+gen-landscape.c6.viz.items.3	Evita la dependencia de un proveedor
+gen-landscape.c7.title	Las licencias importan
+gen-landscape.c7.text	Los modelos de pesos abiertos tienen licencias distintas: unas totalmente abiertas (Apache 2.0, MIT) y otras con restricciones de uso o límites para empresas muy grandes. Compruébalo antes de un uso comercial.
+gen-landscape.c7.viz.l.t	Permisivas
+gen-landscape.c7.viz.l.items.0	Apache 2.0, MIT
+gen-landscape.c7.viz.l.items.1	pocas restricciones
+gen-landscape.c7.viz.r.t	Licencias propias
+gen-landscape.c7.viz.r.items.0	normas de uso
+gen-landscape.c7.viz.r.items.1	límites de escala
+gen-landscape.c7.viz.r.items.2	léelas con calma
+gen-landscape.c8.title	Benchmarks y clasificaciones
+gen-landscape.c8.text	Las clasificaciones públicas comparan modelos con pruebas y votos de preferencia humana. Son señales útiles, pero pueden manipularse o no corresponder a tu caso de uso.
+gen-landscape.c8.viz.l.t	Clasificaciones
+gen-landscape.c8.viz.l.items.0	comparación rápida
+gen-landscape.c8.viz.l.items.1	tareas generales
+gen-landscape.c8.viz.r.t	Tus evaluaciones
+gen-landscape.c8.viz.r.items.0	tus datos
+gen-landscape.c8.viz.r.items.1	decisión final
+gen-landscape.c9.title	Coste total de propiedad
+gen-landscape.c9.text	Los costes de API crecen con el uso; el alojamiento propio tiene costes fijos de GPU, ingeniería y operación. Con volumen bajo o variable, las API suelen ser más baratas; con un volumen muy alto y estable, el alojamiento propio puede salir ganando.
+gen-landscape.c9.viz.l.t	API
+gen-landscape.c9.viz.l.items.0	pago por token
+gen-landscape.c9.viz.l.items.1	sin operación
+gen-landscape.c9.viz.l.items.2	escala al instante
+gen-landscape.c9.viz.r.t	Alojamiento propio
+gen-landscape.c9.viz.r.items.0	GPU y personal
+gen-landscape.c9.viz.r.items.1	coste fijo
+gen-landscape.c9.viz.r.items.2	control total
+gen-local.title	Ejecutar modelos en local
+gen-local.summary	IA en tu propio portátil o servidor.
+gen-local.q0.q	¿Cuánta memoria necesita aproximadamente un modelo de 8B a 4 bits?
+gen-local.q0.o0	1 GB
+gen-local.q0.o1	Unos 5 GB
+gen-local.q0.o2	64 GB
+gen-local.q0.x	Más o menos 0,5 bytes por parámetro más algo de margen.
+gen-local.q1.q	¿Cuál es la principal ventaja de los modelos locales?
+gen-local.q1.o0	Siempre son más listos
+gen-local.q1.o1	Privacidad, uso sin conexión y sin coste por token
+gen-local.q1.o2	Más contexto
+gen-local.q1.x	Los datos se quedan en tu máquina.
+gen-local.q2.q	¿Qué herramienta facilita ejecutar modelos abiertos en local?
+gen-local.q2.o0	Excel
+gen-local.q2.o1	Ollama
+gen-local.q2.o2	Photoshop
+gen-local.q2.x	CLI sencilla y API local.
+gen-local.c0.title	¿Por qué en local?
+gen-local.c0.text	Privacidad (nada sale de tu máquina), uso sin conexión, sin coste por token y control total. La contrapartida: los modelos locales son más pequeños y suelen ser menos capaces que los modelos punteros en la nube.
+gen-local.c0.viz.l.t	Local
+gen-local.c0.viz.l.items.0	privado
+gen-local.c0.viz.l.items.1	sin conexión
+gen-local.c0.viz.l.items.2	gratis por uso
+gen-local.c0.viz.l.items.3	modelos menores
+gen-local.c0.viz.r.t	Nube
+gen-local.c0.viz.r.items.0	los más capaces
+gen-local.c0.viz.r.items.1	sin hardware
+gen-local.c0.viz.r.items.2	los datos salen de tu equipo
+gen-local.c1.title	Herramientas
+gen-local.c1.text	Ollama y LM Studio facilitan descargar modelos abiertos y chatear con ellos. llama.cpp ejecuta modelos de forma eficiente en CPU y Apple Silicon; vLLM sirve modelos a gran escala en GPU.
+gen-local.c1.viz.items.0.a	Ollama
+gen-local.c1.viz.items.0.b	CLI y API sencillas
+gen-local.c1.viz.items.1.a	LM Studio
+gen-local.c1.viz.items.1.b	app de escritorio
+gen-local.c1.viz.items.2.a	llama.cpp
+gen-local.c1.viz.items.2.b	motor eficiente
+gen-local.c1.viz.items.3.a	vLLM
+gen-local.c1.viz.items.3.b	servicio en GPU de alto rendimiento
+gen-local.c2.title	El límite es la memoria
+gen-local.c2.text	Los pesos del modelo deben caber en la RAM o en la memoria de la GPU. Con cuantización a 4 bits, un modelo de 7–8B necesita unos 4–5 GB; uno de 70B, unos 40 GB.
+gen-local.c2.viz.unit	GB necesarios a 4 bits (aprox.)
+gen-local.c2.viz.items.0.l	3B
+gen-local.c2.viz.items.1.l	8B
+gen-local.c2.viz.items.2.l	14B
+gen-local.c2.viz.items.3.l	32B
+gen-local.c2.viz.items.4.l	70B
+gen-local.c3.title	Formatos de cuantización
+gen-local.c3.text	Los archivos GGUF (para llama.cpp y Ollama) guardan pesos cuantizados como Q4_K_M o Q8_0. Menos bits significa archivos más pequeños y rápidos, con cierta pérdida de calidad.
+gen-local.c3.viz.items.0.a	Q8
+gen-local.c3.viz.items.0.b	casi como el original
+gen-local.c3.viz.items.1.a	Q5/Q6
+gen-local.c3.viz.items.1.b	poca pérdida
+gen-local.c3.viz.items.2.a	Q4
+gen-local.c3.viz.items.2.b	buen equilibrio
+gen-local.c3.viz.items.3.a	Q2/Q3
+gen-local.c3.viz.items.3.b	pérdida notable
+gen-local.c4.title	Velocidad
+gen-local.c4.text	La velocidad se mide en tokens por segundo. Los Mac con Apple Silicon y mucha memoria unificada, y los PC con GPU potentes, ejecutan con soltura modelos medianos.
+gen-local.c4.viz.unit	tokens por segundo (ilustrativo, 8B Q4)
+gen-local.c4.viz.items.0.l	CPU de portátil
+gen-local.c4.viz.items.1.l	Apple serie M
+gen-local.c4.viz.items.2.l	GPU gaming
+gen-local.c5.title	API local
+gen-local.c5.text	Ollama y herramientas similares ofrecen en tu máquina una API compatible con la de OpenAI, así que las apps y los scripts pueden pasar fácilmente de modelos locales a modelos en la nube.
+gen-local.c5.viz.steps.0	Tu app
+gen-local.c5.viz.steps.1	API en localhost
+gen-local.c5.viz.steps.2	Modelo local
+gen-local.c5.viz.steps.3	Respuesta, nada sale de la máquina
+gen-local.c6.title	RAG local
+gen-local.c6.text	Combina un modelo de embeddings local, un almacén vectorial local y un LLM local para chatear con documentos privados totalmente sin conexión.
+gen-local.c6.viz.steps.0	Documentos privados
+gen-local.c6.viz.steps.1	Embeddings locales
+gen-local.c6.viz.steps.2	Almacén vectorial local
+gen-local.c6.viz.steps.3	Responde el LLM local
+gen-local.c7.title	IA en el homelab
+gen-local.c7.text	En los homelabs se ejecutan modelos locales junto a la domótica: resumir eventos de cámaras, asistentes de voz en Home Assistant o clasificar notificaciones, todo sin la nube.
+gen-local.c7.viz.items.0	Asistente de voz en Home Assistant
+gen-local.c7.viz.items.1	Descripción de eventos de cámaras
+gen-local.c7.viz.items.2	Búsqueda de documentos
+gen-local.c7.viz.items.3	Ayuda de código en el editor
+gen-local.c8.title	Buenos usos en local
+gen-local.c8.text	Resumir, clasificar, extraer, redactar y ayudar con el código funciona bien con modelos locales medianos. El razonamiento complejo o los documentos muy largos pueden seguir necesitando un modelo puntero.
+gen-local.c8.viz.l.t	Bien en local
+gen-local.c8.viz.l.items.0	resúmenes
+gen-local.c8.viz.l.items.1	clasificación
+gen-local.c8.viz.l.items.2	extracción
+gen-local.c8.viz.l.items.3	borradores
+gen-local.c8.viz.r.t	Mejor en la nube
+gen-local.c8.viz.r.items.0	razonamiento difícil
+gen-local.c8.viz.r.items.1	contextos enormes
+gen-local.c8.viz.r.items.2	lo más reciente
+gen-local.c9.title	La seguridad sigue importando
+gen-local.c9.text	Local no significa seguro automáticamente: los modelos y herramientas que descargas son software. Usa fuentes de confianza, no expongas la API a internet y actualiza con regularidad.
+gen-local.c9.viz.items.0	Descarga de fuentes de confianza
+gen-local.c9.viz.items.1	No expongas la API en público
+gen-local.c9.viz.items.2	Actualiza todo
+gen-local.c9.viz.items.3	Vigila el uso de disco y memoria
+gen-cost.title	Coste y velocidad
+gen-cost.summary	Tokens, latencia y cómo hacer la IA asequible a escala.
+gen-cost.q0.q	¿Qué suele costar más por token?
+gen-cost.q0.o0	Los tokens de entrada
+gen-cost.q0.o1	Los tokens de salida
+gen-cost.q0.o2	Siempre cuestan lo mismo
+gen-cost.q0.x	Generar es más caro.
+gen-cost.q1.q	¿Qué opción es más barata para trabajos masivos sin urgencia?
+gen-cost.q1.o0	API en tiempo real
+gen-cost.q1.o1	API por lotes
+gen-cost.q1.o2	Un modelo más grande
+gen-cost.q1.x	El procesamiento por lotes cambia velocidad por precio.
+gen-cost.q2.q	¿Qué mejora el streaming?
+gen-cost.q2.o0	La precisión
+gen-cost.q2.o1	Lo rápida que le parece la respuesta al usuario
+gen-cost.q2.o2	El coste
+gen-cost.q2.x	El texto aparece a medida que se genera.
+gen-cost.c0.title	Precio por tokens
+gen-cost.c0.text	Las API cobran por millón de tokens de entrada y de salida. Los tokens de salida suelen costar varias veces más que los de entrada, y los modelos grandes cuestan mucho más que los pequeños.
+gen-cost.c0.viz.f	coste = tokens ent. × precio ent. + tokens sal. × precio sal.
+gen-cost.c0.viz.items.0.s	ent.
+gen-cost.c0.viz.items.0.m	prompt y documentos
+gen-cost.c0.viz.items.1.s	sal.
+gen-cost.c0.viz.items.1.m	respuesta generada
+gen-cost.c1.title	Un ejemplo con números
+gen-cost.c1.text	10 000 peticiones al día, cada una con 2000 tokens de entrada y 300 de salida. A 3 $ por millón de tokens de entrada y 15 $ por millón de salida: 60 $ + 45 $ = 105 $ al día.
+gen-cost.c1.viz.f	coste diario = (20 M × 3 $ + 3 M × 15 $) ÷ 1 M
+gen-cost.c1.viz.items.0.s	20 M
+gen-cost.c1.viz.items.0.m	tokens de entrada
+gen-cost.c1.viz.items.1.s	3 M
+gen-cost.c1.viz.items.1.m	tokens de salida
+gen-cost.c1.viz.items.2.m	al día
+gen-cost.c2.title	Latencia
+gen-cost.c2.text	Los usuarios notan dos esperas: el tiempo hasta el primer token (cuánto tarda en empezar el texto) y la velocidad de generación (tokens por segundo). Mostrar la respuesta en streaming hace que la espera parezca más corta.
+gen-cost.c2.viz.items.0.a	tiempo al primer token
+gen-cost.c2.viz.items.0.b	espera inicial
+gen-cost.c2.viz.items.1.a	tokens por segundo
+gen-cost.c2.viz.items.1.b	velocidad de escritura
+gen-cost.c2.viz.items.2.a	streaming
+gen-cost.c2.viz.items.2.b	texto según llega
+gen-cost.c3.title	Usa el modelo más pequeño que sirva
+gen-cost.c3.text	Los modelos pequeños pueden ser de 10 a 50 veces más baratos que los más grandes. Envíales las tareas sencillas y reserva los modelos grandes para los casos difíciles.
+gen-cost.c3.viz.unit	precio relativo por token (ilustrativo)
+gen-cost.c3.viz.items.0.l	Pequeño
+gen-cost.c3.viz.items.1.l	Mediano
+gen-cost.c3.viz.items.2.l	Grande
+gen-cost.c4.title	Acorta el prompt
+gen-cost.c4.text	Recorta las instrucciones, recupera menos pasajes pero mejores y evita reenviar contexto que no ha cambiado. Cada token que ahorras se ahorra en cada petición.
+gen-cost.c4.viz.items.0	Instrucciones concisas
+gen-cost.c4.viz.items.1	Menos pasajes, mejores
+gen-cost.c4.viz.items.2	Quita duplicados
+gen-cost.c4.viz.items.3	Caché de prefijos comunes
+gen-cost.c4.viz.items.4	Limita la longitud de salida
+gen-cost.c5.title	Caché
+gen-cost.c5.text	Guarda en caché los prompts repetidos (caché de prompts) y las respuestas repetidas (caché de respuestas). Las preguntas tipo FAQ a menudo se pueden responder desde una caché.
+gen-cost.c5.viz.steps.0	Petición
+gen-cost.c5.viz.steps.1	¿Ya vista?
+gen-cost.c5.viz.steps.2	Sí: respuesta en caché
+gen-cost.c5.viz.steps.3	No: llama al modelo
+gen-cost.c6.title	Procesamiento por lotes
+gen-cost.c6.text	Para trabajos sin urgencia, como clasificar de noche un montón de documentos pendientes, las API por lotes ofrecen grandes descuentos (a menudo, en torno a la mitad de precio) a cambio de tardar más.
+gen-cost.c6.viz.l.t	Tiempo real
+gen-cost.c6.viz.l.items.0	al instante
+gen-cost.c6.viz.l.items.1	precio completo
+gen-cost.c6.viz.r.t	Por lotes
+gen-cost.c6.viz.r.items.0	horas
+gen-cost.c6.viz.r.items.1	un 50 % más barato aprox.
+gen-cost.c7.title	El coste de razonar
+gen-cost.c7.text	Los modelos de razonamiento generan muchos tokens de «pensamiento» antes de responder. Son más precisos en tareas difíciles, pero más lentos y caros, así que úsalos donde la calidad extra importe.
+gen-cost.c7.viz.l.t	Modo estándar
+gen-cost.c7.viz.l.items.0	rápido
+gen-cost.c7.viz.l.items.1	más barato
+gen-cost.c7.viz.l.items.2	casi todo
+gen-cost.c7.viz.r.t	Modo razonamiento
+gen-cost.c7.viz.r.items.0	piensa más
+gen-cost.c7.viz.r.items.1	más caro
+gen-cost.c7.viz.r.items.2	problemas difíciles
+gen-cost.c8.title	Mide el coste por resultado
+gen-cost.c8.text	Mide el coste por incidencia resuelta, por factura procesada o por informe, no solo por token. Un modelo más caro que necesita menos reintentos y correcciones puede salir más barato en conjunto.
+gen-cost.c8.viz.steps.0	Tokens usados
+gen-cost.c8.viz.steps.1	Coste por tarea
+gen-cost.c8.viz.steps.2	Con las correcciones humanas
+gen-cost.c8.viz.steps.3	Coste por buen resultado
+gen-cost.c9.title	Los precios no dejan de bajar
+gen-cost.c9.text	El precio de un mismo nivel de capacidad ha caído de forma drástica año tras año. Planes que hoy parecen demasiado caros pueden ser asequibles el año que viene.
+gen-cost.c9.viz.unit	precio relativo a capacidad similar (ilustrativo)
+gen-multimodal.title	IA multimodal
+gen-multimodal.summary	Modelos que ven, oyen y hablan.
+gen-multimodal.q0.q	¿Qué pueden recibir los modelos multimodales?
+gen-multimodal.q0.o0	Solo texto
+gen-multimodal.q0.o1	Texto, imágenes, audio y a veces vídeo
+gen-multimodal.q0.o2	Solo números
+gen-multimodal.q0.x	Varios tipos de entrada.
+gen-multimodal.q1.q	Para obtener cifras exactas de un gráfico, lo mejor es…
+gen-multimodal.q1.o0	Fiarse de una captura de pantalla
+gen-multimodal.q1.o1	Usar los datos subyacentes
+gen-multimodal.q1.o2	Adivinar
+gen-multimodal.q1.x	Las capturas dan valores aproximados.
+gen-multimodal.q2.q	¿Cuál es un límite de los modelos de visión?
+gen-multimodal.q2.o0	Leer texto grande
+gen-multimodal.q2.o1	Contar mal o leer mal detalles pequeños
+gen-multimodal.q2.o2	Describir escenas
+gen-multimodal.q2.x	Verifica los detalles críticos para la seguridad.
+gen-multimodal.c0.title	Un modelo, muchas entradas
+gen-multimodal.c0.text	Los modelos multimodales aceptan texto, imágenes, audio y a veces vídeo en la misma conversación, y pueden responder con texto, voz o imágenes.
+gen-multimodal.c0.viz.steps.0	Foto + pregunta
+gen-multimodal.c0.viz.steps.1	Un modelo multimodal
+gen-multimodal.c0.viz.steps.2	Respuesta en texto o voz
+gen-multimodal.c1.title	Leer documentos visualmente
+gen-multimodal.c1.text	Los modelos de visión leen documentos escaneados, formularios, tablas y gráficos directamente desde imágenes, y a menudo manejan maquetaciones con las que el OCR antiguo fallaba.
+gen-multimodal.c1.viz.items.0	Contratos escaneados
+gen-multimodal.c1.viz.items.1	Facturas y recibos
+gen-multimodal.c1.viz.items.2	Gráficos y tablas
+gen-multimodal.c1.viz.items.3	Notas manuscritas
+gen-multimodal.c1.viz.items.4	Capturas de pantalla
+gen-multimodal.c2.title	Entender fotos
+gen-multimodal.c2.text	Muestra una foto de una pieza rota, una enfermedad de una planta, una pizarra o un cuadro eléctrico y haz preguntas. Es útil para técnicos de campo e inspecciones, con verificación humana.
+gen-multimodal.c2.viz.items.0	Identificar averías de equipos
+gen-multimodal.c2.viz.items.1	De pizarra a notas
+gen-multimodal.c2.viz.items.2	Problemas de plantas y cultivos
+gen-multimodal.c2.viz.items.3	Evaluación de daños
+gen-multimodal.c2.viz.items.4	Etiquetas y placas
+gen-multimodal.c3.title	Gráficos y paneles
+gen-multimodal.c3.text	Los modelos pueden describir y analizar gráficos a partir de capturas de pantalla, aunque pueden leer mal los valores exactos. Para cifras precisas, usa los datos subyacentes.
+gen-multimodal.c3.viz.l.t	Desde una captura
+gen-multimodal.c3.viz.l.items.0	idea rápida
+gen-multimodal.c3.viz.l.items.1	valores aproximados
+gen-multimodal.c3.viz.r.t	Desde los datos
+gen-multimodal.c3.viz.r.items.0	cifras exactas
+gen-multimodal.c3.viz.r.items.1	análisis fiable
+gen-multimodal.c4.title	Entender vídeo
+gen-multimodal.c4.text	Algunos modelos pueden ver un vídeo y resumirlo, localizar momentos o responder preguntas sobre él, algo útil para contenidos formativos, reuniones e inspecciones.
+gen-multimodal.c4.viz.steps.0	Vídeo
+gen-multimodal.c4.viz.steps.1	Muestrea fotogramas y audio
+gen-multimodal.c4.viz.steps.2	El modelo entiende la secuencia
+gen-multimodal.c4.viz.steps.3	Resumen y marcas de tiempo
+gen-multimodal.c5.title	Voz en tiempo real
+gen-multimodal.c5.text	Los modos de voz te permiten hablar con naturalidad con el asistente, interrumpirlo y recibir respuestas habladas, algo práctico mientras conduces o trabajas con las manos.
+gen-multimodal.c5.viz.items.0	Uso con manos libres
+gen-multimodal.c5.viz.items.1	Interrupciones naturales
+gen-multimodal.c5.viz.items.2	Respuestas habladas
+gen-multimodal.c5.viz.items.3	Traducción sobre la marcha
+gen-multimodal.c6.title	Generar imágenes en el chat
+gen-multimodal.c6.text	Los asistentes multimodales pueden crear y editar imágenes dentro de la conversación (diagramas, maquetas, ilustraciones) y ajustarlas con peticiones posteriores.
+gen-multimodal.c6.viz.steps.0	Describe la imagen
+gen-multimodal.c6.viz.steps.1	Genera
+gen-multimodal.c6.viz.steps.2	Pide cambios
+gen-multimodal.c6.viz.steps.3	Imagen pulida
+gen-multimodal.c7.title	Accesibilidad
+gen-multimodal.c7.text	La IA multimodal describe imágenes para personas ciegas o con baja visión, lee textos en voz alta y transcribe la voz para personas sordas, ampliando el acceso a la información.
+gen-multimodal.c7.viz.items.0	Descripción de imágenes
+gen-multimodal.c7.viz.items.1	Lectura en voz alta
+gen-multimodal.c7.viz.items.2	Subtítulos en directo
+gen-multimodal.c7.viz.items.3	Lectura de señales y etiquetas
+gen-multimodal.c8.title	Límites
+gen-multimodal.c8.text	Los modelos pueden leer mal el texto pequeño, contar mal objetos, confundir elementos parecidos o dejarse engañar por imágenes inusuales. Verifica todo lo que sea crítico para la seguridad.
+gen-multimodal.c8.viz.items.0	Texto pequeño o borroso
+gen-multimodal.c8.viz.items.1	Contar
+gen-multimodal.c8.viz.items.2	Medidas precisas
+gen-multimodal.c8.viz.items.3	Ángulos inusuales
+gen-multimodal.c8.viz.items.4	Juicios críticos de seguridad
+gen-multimodal.c9.title	Privacidad con imágenes
+gen-multimodal.c9.text	Las fotos pueden contener caras, matrículas, documentos o ubicaciones. Revisa lo que compartes, sobre todo en el trabajo.
+gen-multimodal.c9.viz.items.0	Caras y personas
+gen-multimodal.c9.viz.items.1	Matrículas
+gen-multimodal.c9.viz.items.2	Documentos al fondo
+gen-multimodal.c9.viz.items.3	Metadatos de ubicación
+gen-risks.title	Riesgos y uso responsable
+gen-risks.summary	Mal uso, sesgos, propiedad intelectual y la seguridad de las personas.
+gen-risks.q0.q	¿Cuál es el principal riesgo de pegar datos confidenciales en un chatbot de consumo?
+gen-risks.q0.o0	Es lento
+gen-risks.q0.o1	Los datos pueden salir de la organización o usarse para entrenar
+gen-risks.q0.o2	Se borran
+gen-risks.q0.x	Usa herramientas empresariales aprobadas.
+gen-risks.q1.q	¿Qué es el sesgo de automatización?
+gen-risks.q1.o0	Un sesgo en la contratación
+gen-risks.q1.o1	Confiar demasiado en los resultados automáticos
+gen-risks.q1.o2	Un tipo de modelo
+gen-risks.q1.x	La gente confía de más en una IA que suena fluida.
+gen-risks.q2.q	¿Qué exige la Ley de IA de la UE a los chatbots?
+gen-risks.q2.o0	Prohibirlos
+gen-risks.q2.o1	Informar a los usuarios de que interactúan con una IA
+gen-risks.q2.o2	Usar el inglés
+gen-risks.q2.x	Obligaciones de transparencia.
+gen-risks.c0.title	Un mapa de riesgos
+gen-risks.c0.text	Entre los riesgos están las respuestas erróneas, los resultados sesgados, la filtración de datos confidenciales, los problemas de derechos de autor, los deepfakes y el fraude, el mal uso con fines dañinos y la dependencia excesiva de los usuarios.
+gen-risks.c0.viz.root	Riesgos de la IA gen.
+gen-risks.c0.viz.items.0	Exactitud y sesgo
+gen-risks.c0.viz.items.1	Privacidad y fugas de datos
+gen-risks.c0.viz.items.2	PI y derechos de autor
+gen-risks.c0.viz.items.3	Mal uso y fraude
+gen-risks.c1.title	Fuga de datos
+gen-risks.c1.text	Pegar datos confidenciales en herramientas de IA de consumo puede enviarlos fuera de tu organización. Usa herramientas empresariales aprobadas que no entrenen con tus datos y cumplan tus requisitos de seguridad.
+gen-risks.c1.viz.l.t	De consumo
+gen-risks.c1.viz.l.items.0	pueden entrenar con tus datos
+gen-risks.c1.viz.l.items.1	sin gestionar
+gen-risks.c1.viz.r.t	Empresariales
+gen-risks.c1.viz.r.items.0	garantías contractuales
+gen-risks.c1.viz.r.items.1	controles de admin.
+gen-risks.c1.viz.r.items.2	registros
+gen-risks.c2.title	Sesgos
+gen-risks.c2.text	Los modelos reflejan patrones de sus datos de entrenamiento y pueden producir resultados estereotipados o desiguales. En usos que afectan a personas, como la contratación o el crédito, comprueba los resultados para distintos grupos.
+gen-risks.c2.viz.items.0	Prueba con ejemplos diversos
+gen-risks.c2.viz.items.1	Evita atributos sensibles
+gen-risks.c2.viz.items.2	Revisión humana en decisiones sobre personas
+gen-risks.c2.viz.items.3	Vigila las quejas
+gen-risks.c3.title	Propiedad intelectual
+gen-risks.c3.text	Sigue habiendo dudas sobre entrenar con obras protegidas y sobre la propiedad de los resultados de la IA. Comprueba que el texto o el código generados no reproducen material protegido y sigue la política de tu empresa.
+gen-risks.c3.viz.items.0	Busca copias literales
+gen-risks.c3.viz.items.1	Herramientas con indemnización de PI
+gen-risks.c3.viz.items.2	Respeta las licencias del código
+gen-risks.c3.viz.items.3	Sigue la política de la empresa
+gen-risks.c4.title	Dependencia excesiva
+gen-risks.c4.text	La gente tiende a confiar demasiado en una IA fluida y segura de sí misma, una forma de sesgo de automatización. Mantén a las personas implicadas y responsables, sobre todo en las decisiones importantes.
+gen-risks.c4.viz.l.t	Dependencia excesiva
+gen-risks.c4.viz.l.items.0	acepta todo sin criticar
+gen-risks.c4.viz.l.items.1	se cuelan errores
+gen-risks.c4.viz.r.t	Uso sano
+gen-risks.c4.viz.r.items.0	comprueba lo clave
+gen-risks.c4.viz.r.items.1	mantiene el criterio
+gen-risks.c5.title	Salvaguardas contra el mal uso
+gen-risks.c5.text	Los proveedores entrenan los modelos para rechazar peticiones claramente dañinas y vigilan los abusos, sobre todo en armas, ciberataques y protección de menores. Los intentos de jailbreak son un juego continuo del gato y el ratón.
+gen-risks.c5.viz.steps.0	Petición dañina
+gen-risks.c5.viz.steps.1	Entrenamiento de seguridad y filtros
+gen-risks.c5.viz.steps.2	Rechazo o respuesta segura
+gen-risks.c5.viz.steps.3	Vigilancia de abusos
+gen-risks.c6.title	Transparencia
+gen-risks.c6.text	Cuando sea relevante, avisa a la gente de que está interactuando con una IA o leyendo contenido generado por IA. La Ley de IA de la UE lo exige para chatbots y deepfakes.
+gen-risks.c6.viz.items.0	Indica que es un chatbot de IA
+gen-risks.c6.viz.items.1	Etiqueta los medios sintéticos
+gen-risks.c6.viz.items.2	Explica las decisiones con IA
+gen-risks.c6.viz.items.3	Ofrece un contacto humano
+gen-risks.c7.title	Huella ambiental
+gen-risks.c7.text	Entrenar y ejecutar modelos grandes consume mucha electricidad y agua para refrigeración. Los modelos eficientes, el dimensionamiento adecuado y la energía limpia reducen la huella.
+gen-risks.c7.viz.items.0	Usa modelos más pequeños si puedes
+gen-risks.c7.viz.items.1	Caché y lotes
+gen-risks.c7.viz.items.2	Elige regiones eficientes
+gen-risks.c7.viz.items.3	Prefiere centros de datos con renovables
+gen-risks.c8.title	Políticas en el trabajo
+gen-risks.c8.text	Las buenas políticas de IA son breves y prácticas: qué herramientas están aprobadas, qué datos se pueden usar, cuándo hace falta revisión humana y cómo comunicar incidencias.
+gen-risks.c8.viz.items.0	Lista de herramientas aprobadas
+gen-risks.c8.viz.items.1	Normas de clasificación de datos
+gen-risks.c8.viz.items.2	Cuándo hace falta revisión humana
+gen-risks.c8.viz.items.3	Normas de divulgación
+gen-risks.c8.viz.items.4	Cómo comunicar problemas
+gen-risks.c9.title	Usa la IA para ayudar, no para engañar
+gen-risks.c9.text	Usa la IA generativa para trabajar mejor, no para falsificar pruebas, suplantar a personas o confundir. Ser honesto sobre el uso de la IA genera confianza con compañeros y clientes.
+gen-risks.c9.viz.l.t	Buen uso
+gen-risks.c9.viz.l.items.0	redactar
+gen-risks.c9.viz.l.items.1	analizar
+gen-risks.c9.viz.l.items.2	aprender
+gen-risks.c9.viz.r.t	Mal uso
+gen-risks.c9.viz.r.items.0	reseñas falsas
+gen-risks.c9.viz.r.items.1	suplantación
+gen-risks.c9.viz.r.items.2	pruebas inventadas
+gen-daily.title	Usar bien la IA generativa
+gen-daily.summary	Hábitos prácticos para el trabajo diario.
+gen-daily.q0.q	¿Cuál es una buena forma de repartir el trabajo con la IA?
+gen-daily.q0.o0	La IA lo hace todo
+gen-daily.q0.o1	La IA redacta casi todo y tú aplicas tu criterio en lo importante
+gen-daily.q0.o2	No usar nunca la IA
+gen-daily.q0.x	Tu esfuerzo va donde hace falta criterio.
+gen-daily.q1.q	Una petición mejor que «resume este informe» es…
+gen-daily.q1.o0	«Resume brevemente»
+gen-daily.q1.o1	«Resume para decidir si seguir o no: opciones, costes, riesgos, preguntas abiertas»
+gen-daily.q1.o2	«Hazlo más corto»
+gen-daily.q1.x	Vincula el resumen a la decisión.
+gen-daily.q2.q	¿Cuándo deberías evitar depender de la IA?
+gen-daily.q2.o0	Para primeros borradores
+gen-daily.q2.o1	Cuando la exactitud es crítica y no puedes verificar
+gen-daily.q2.o2	Para lluvias de ideas
+gen-daily.q2.x	Verificar es imprescindible.
+gen-daily.c0.title	Empieza por tus cuellos de botella
+gen-daily.c0.text	Haz una lista de las tareas que te quitan tiempo y tienen mucho texto: correos, informes, resúmenes, actas de reuniones, investigación, hojas de cálculo. Ahí es donde la IA suele ayudar primero.
+gen-daily.c0.viz.items.0	Correos y respuestas
+gen-daily.c0.viz.items.1	Actas de reuniones
+gen-daily.c0.viz.items.2	Informes y resúmenes
+gen-daily.c0.viz.items.3	Investigación
+gen-daily.c0.viz.items.4	Fórmulas y análisis en hojas de cálculo
+gen-daily.c1.title	Borradores, no delegación a ciegas
+gen-daily.c1.text	Usa la IA para el primer 70–80 % y dedica tu esfuerzo a la parte que necesita tu criterio: decisiones, matices, relaciones.
+gen-daily.c1.viz.items.0	Tu criterio: decisiones y matices
+gen-daily.c1.viz.items.1	Tus ediciones: exactitud y tono
+gen-daily.c1.viz.items.2	Borrador de IA: estructura y primera pasada
+gen-daily.c2.title	Resume para decidir
+gen-daily.c2.text	Pide resúmenes que ayuden a tomar una decisión: «¿Cuáles son las tres opciones, los costes y riesgos de cada una, y qué falta?».
+gen-daily.c2.viz.items.0.w	«resume este informe»
+gen-daily.c2.viz.items.0.r	«resume para decidir si seguir o no: opciones, costes, riesgos, preguntas abiertas»
+gen-daily.c3.title	Aprende más rápido
+gen-daily.c3.text	La IA es un tutor paciente: pídele que te explique un concepto a distintos niveles, que te ponga a prueba o que te dé ejemplos de tu campo.
+gen-daily.c3.viz.steps.0	Pide una explicación
+gen-daily.c3.viz.steps.1	Haz preguntas de seguimiento
+gen-daily.c3.viz.steps.2	Ponte a prueba
+gen-daily.c3.viz.steps.3	Aplícalo
+gen-daily.c4.title	Analiza datos
+gen-daily.c4.text	Con un intérprete de código, la IA puede limpiar hojas de cálculo, hacer cálculos y dibujar gráficos. Revisa el código y las cifras antes de compartir los resultados.
+gen-daily.c4.viz.steps.0	Sube los datos
+gen-daily.c4.viz.steps.1	Haz una pregunta
+gen-daily.c4.viz.steps.2	La IA escribe y ejecuta código
+gen-daily.c4.viz.steps.3	Revisa y usa el gráfico
+gen-daily.c5.title	Escribe mejor, con tu voz
+gen-daily.c5.text	Dale a la IA muestras de cómo escribes y pídele que imite el estilo. Pídele que condense, aclare o haga el texto más directo.
+gen-daily.c5.viz.items.0	Da muestras de tu escritura
+gen-daily.c5.viz.items.1	Pide que condense
+gen-daily.c5.viz.items.2	Pide claridad para el público
+gen-daily.c5.viz.items.3	Mantén tu propia voz
+gen-daily.c6.title	Prepara las reuniones
+gen-daily.c6.text	Antes de una reunión, pide un resumen informativo a partir de los documentos relevantes, posibles preguntas y una propuesta de orden del día. Después, convierte las notas en tareas.
+gen-daily.c6.viz.steps.0	Antes: resumen y orden del día
+gen-daily.c6.viz.steps.1	Durante: notas
+gen-daily.c6.viz.steps.2	Después: resumen y tareas
+gen-daily.c6.viz.steps.3	Correos de seguimiento
+gen-daily.c7.title	Conocimiento personal
+gen-daily.c7.text	Guarda los buenos prompts en una biblioteca, conserva los resultados útiles y crea pequeños asistentes reutilizables (GPT personalizados, proyectos de Claude, agentes de Copilot) para tareas repetidas.
+gen-daily.c7.viz.items.0	Biblioteca de prompts
+gen-daily.c7.viz.items.1	Plantillas guardadas
+gen-daily.c7.viz.items.2	Proyecto con archivos compartidos
+gen-daily.c7.viz.items.3	Asistentes propios para tareas recurrentes
+gen-daily.c8.title	Sabe cuándo no usarla
+gen-daily.c8.text	No uses la IA cuando la exactitud es crítica y no puedes comprobarla, cuando la confidencialidad lo impide o cuando lo importante es el contacto humano, como en conversaciones delicadas.
+gen-daily.c8.viz.l.t	Usa la IA
+gen-daily.c8.viz.l.items.0	redactar
+gen-daily.c8.viz.l.items.1	resumir
+gen-daily.c8.viz.l.items.2	explorar
+gen-daily.c8.viz.r.t	Evita o con cuidado
+gen-daily.c8.viz.r.items.0	datos no verificables
+gen-daily.c8.viz.r.items.1	datos confidenciales
+gen-daily.c8.viz.r.items.2	momentos personales delicados
+gen-daily.c9.title	Sigue mejorando
+gen-daily.c9.text	Las herramientas mejoran cada pocos meses. Vuelve a probar tareas que antes no funcionaban, comparte trucos con tus compañeros y mantén algunos experimentos en marcha.
+gen-daily.c9.viz.steps.0	Prueba un uso nuevo
+gen-daily.c9.viz.steps.1	Comparte lo que funciona
+gen-daily.c9.viz.steps.2	Conviértelo en hábito
+gen-daily.c9.viz.steps.3	Revisa al mejorar las herramientas

@@ -1046,7 +1046,7 @@ mo-insurance.c1.title	Asegura lo grande
 mo-insurance.c1.text	El seguro es más valioso para las pérdidas que no podrías asumir: tu casa, la responsabilidad civil, la salud, los ingresos. Para pérdidas pequeñas, ahorrar por tu cuenta suele ser más barato.
 mo-insurance.c1.viz.l.t	Asegurar
 mo-insurance.c1.viz.l.items.0	incendio de la casa
-mo-insurance.c1.viz.l.items.1	responsabilidad civil
+mo-insurance.c1.viz.l.items.1	resp. civil
 mo-insurance.c1.viz.l.items.2	invalidez
 mo-insurance.c1.viz.r.t	Autoasegurar
 mo-insurance.c1.viz.r.items.0	pantalla del móvil
@@ -1064,3 +1064,263 @@ mo-insurance.c3.viz.items.1	Edificio, incendio: obligatorio en comunidades
 mo-insurance.c3.viz.items.2	Hipoteca: suele exigirse vida y multirriesgo
 mo-insurance.c4.title	Seguro de vida
 mo-insurance.c4.text	El seguro de vida paga a las personas dependientes si falleces. Importa sobre todo cuando otros dependen de tus ingresos, como los hijos o una pareja con hipoteca compartida.
+mo-insurance.c4.viz.steps.0	Dependen de tus ingresos
+mo-insurance.c4.viz.steps.1	Asegura esos ingresos
+mo-insurance.c4.viz.steps.2	Tranquilidad
+mo-insurance.c5.title	Seguro de salud
+mo-insurance.c5.text	El SNS de Portugal ofrece sanidad pública. Un seguro de salud privado puede reducir las esperas para consultas, pero revisa las exclusiones, los límites y los periodos de carencia.
+mo-insurance.c5.viz.l.t	SNS
+mo-insurance.c5.viz.l.items.0	público
+mo-insurance.c5.viz.l.items.1	universal
+mo-insurance.c5.viz.l.items.2	listas de espera
+mo-insurance.c5.viz.r.t	Seguro privado
+mo-insurance.c5.viz.r.items.0	acceso más rápido
+mo-insurance.c5.viz.r.items.1	exclusiones
+mo-insurance.c5.viz.r.items.2	límites
+mo-insurance.c6.title	Lee las exclusiones
+mo-insurance.c6.text	Lo que no cubre importa tanto como lo que cubre. Las inundaciones, los terremotos y las enfermedades preexistentes son exclusiones habituales.
+mo-insurance.c6.viz.items.0	Terremotos
+mo-insurance.c6.viz.items.1	Inundaciones
+mo-insurance.c6.viz.items.2	Enfermedades preexistentes
+mo-insurance.c6.viz.items.3	Desgaste
+mo-insurance.c7.title	Riesgo moral
+mo-insurance.c7.text	Una vez asegurada, la gente puede asumir más riesgos, sabiendo que paga otro. Las franquicias y los copagos ayudan a contrarrestarlo.
+mo-insurance.c7.viz.steps.0	Asegurado
+mo-insurance.c7.viz.steps.1	Menos cuidado
+mo-insurance.c7.viz.steps.2	Más siniestros
+mo-insurance.c7.viz.steps.3	Primas más altas para todos
+mo-insurance.c8.title	Cobertura de terremotos
+mo-insurance.c8.text	Dado el historial de 1755, la cobertura de terremotos en Portugal es opcional y a menudo queda excluida de los seguros de hogar estándar. Muchas viviendas no están aseguradas contra ellos.
+mo-insurance.c8.viz.items.0.w	«Mi seguro de hogar cubre terremotos»
+mo-insurance.c8.viz.items.0.r	Compruébalo: suele ser un extra opcional
+mo-insurance.c9.title	Comparar ofertas
+mo-insurance.c9.text	Compara las pólizas por cobertura, exclusiones y franquicia, no solo por la prima. Revísalas cada año; la fidelidad rara vez se premia.
+mo-insurance.c9.viz.items.0	¿Misma cobertura?
+mo-insurance.c9.viz.items.1	Exclusiones
+mo-insurance.c9.viz.items.2	Franquicia
+mo-insurance.c9.viz.items.3	Fama en siniestros
+mo-scams.title	Estafas y fraudes
+mo-scams.summary	Proteger tu dinero.
+mo-scams.q0.q	¿Te pedirá un banco de verdad tu código SMS de un solo uso?
+mo-scams.q0.o0	Sí, para verificarte
+mo-scams.q0.o1	No, nunca
+mo-scams.q0.o2	Solo por correo electrónico
+mo-scams.q0.x	Cuelga y llama al número oficial.
+mo-scams.q1.q	¿Dónde puedes comprobar si una empresa de inversión está autorizada en Portugal?
+mo-scams.q1.o0	Facebook
+mo-scams.q1.o1	Las listas de la CMVM y del Banco de Portugal
+mo-scams.q1.o2	La web de la propia empresa
+mo-scams.q1.x	Los reguladores publican avisos.
+mo-scams.c0.title	El truco de la urgencia
+mo-scams.c0.text	La mayoría de las estafas crean urgencia: «tu cuenta será bloqueada», «actúa ya». La presión te impide pensar. Los bancos de verdad no te meten prisa así.
+mo-scams.c0.viz.steps.0	Mensaje urgente
+mo-scams.c0.viz.steps.1	Pánico
+mo-scams.c0.viz.steps.2	Actúas sin comprobar
+mo-scams.c0.viz.steps.3	Dinero perdido
+mo-scams.c1.title	Phishing
+mo-scams.c1.text	Correos, SMS o llamadas falsos se hacen pasar por tu banco, Hacienda o una empresa de reparto y te piden que pulses un enlace o compartas códigos.
+mo-scams.c1.viz.items.0	SMS falso del banco
+mo-scams.c1.viz.items.1	Correo falso de devolución de impuestos
+mo-scams.c1.viz.items.2	Falsa tasa de envío
+mo-scams.c1.viz.items.3	Falsa llamada de soporte técnico
+mo-scams.c2.title	Nunca compartas códigos
+mo-scams.c2.text	Ningún banco de verdad te pedirá el PIN completo de tu tarjeta, la contraseña de la banca online ni el código de un solo uso que llega a tu móvil. Quien lo pida es un estafador.
+mo-scams.c2.viz.items.0.w	«El banco me llamó para pedirme mi código»
+mo-scams.c2.viz.items.0.r	Cuelga y llama al número oficial del banco
+mo-scams.c3.title	Estafas «Olá pai, olá mãe»
+mo-scams.c3.text	Los estafadores escriben a padres y madres haciéndose pasar por su hijo con un número nuevo y piden dinero con urgencia. Llama al número antiguo del hijo para comprobarlo.
+mo-scams.c3.viz.steps.0	«¡Mamá, número nuevo, necesito dinero!»
+mo-scams.c3.viz.steps.1	Llama al número antiguo
+mo-scams.c3.viz.steps.2	Verifica
+mo-scams.c3.viz.steps.3	Suele ser una estafa
+mo-scams.c4.title	Estafas de inversión
+mo-scams.c4.text	Las plataformas falsas muestran rentabilidades impresionantes y te dejan retirar pequeñas cantidades para ganarse tu confianza, y luego desaparecen con los depósitos mayores. Consulta las listas de avisos de los reguladores.
+mo-scams.c4.viz.steps.0	Pequeña inversión
+mo-scams.c4.viz.steps.1	Ganancias falsas
+mo-scams.c4.viz.steps.2	Inviertes más
+mo-scams.c4.viz.steps.3	No puedes retirar
+mo-scams.c5.title	Comprueba el regulador
+mo-scams.c5.text	En Portugal, la CMVM, el Banco de Portugal y la ASF publican listas de entidades no autorizadas. Si una empresa no está registrada, no inviertas.
+mo-scams.c5.viz.items.0.a	CMVM
+mo-scams.c5.viz.items.0.b	valores e inversiones
+mo-scams.c5.viz.items.1.a	Banco de Portugal
+mo-scams.c5.viz.items.1.b	bancos y crédito
+mo-scams.c5.viz.items.2.a	ASF
+mo-scams.c5.viz.items.2.b	seguros y pensiones
+mo-scams.c6.title	Estafas románticas
+mo-scams.c6.text	Los estafadores construyen una relación en línea durante semanas y luego inventan emergencias u «oportunidades» de inversión. Nunca envíes dinero a alguien que no conoces en persona.
+mo-scams.c6.viz.steps.0	Romance en línea
+mo-scams.c6.viz.steps.1	Se gana confianza
+mo-scams.c6.viz.steps.2	Crisis repentina
+mo-scams.c6.viz.steps.3	Petición de dinero
+mo-scams.c7.title	Seguridad de la tarjeta
+mo-scams.c7.text	Usa el pago sin contacto y las notificaciones de la app, fija límites de gasto y usa tarjetas virtuales para comprar por internet. Comunica de inmediato la pérdida de una tarjeta.
+mo-scams.c7.viz.items.0	Notificaciones en la app
+mo-scams.c7.viz.items.1	Límites de gasto
+mo-scams.c7.viz.items.2	Tarjetas virtuales online
+mo-scams.c7.viz.items.3	Avisa rápido de pérdidas
+mo-scams.c8.title	Estafas de MB WAY
+mo-scams.c8.text	Estafadores que se hacen pasar por compradores en marketplaces te piden «recibir» dinero por MB WAY, pero en realidad te guían para enviarlo o para vincular su móvil a tu cuenta.
+mo-scams.c8.viz.items.0.w	«Ve al cajero para recibir el pago»
+mo-scams.c8.viz.items.0.r	Recibir dinero nunca exige que hagas nada en un cajero
+mo-scams.c9.title	Si te pasa
+mo-scams.c9.text	Contacta con tu banco de inmediato para bloquear tarjetas y transferencias, cambia las contraseñas, denuncia a la policía y guarda las pruebas. Ser rápido mejora las posibilidades de recuperar el dinero.
+mo-scams.c9.viz.steps.0	Llama a tu banco
+mo-scams.c9.viz.steps.1	Bloquea las tarjetas
+mo-scams.c9.viz.steps.2	Denuncia a la policía
+mo-scams.c9.viz.steps.3	Guarda las pruebas
+mo-markets.title	Cómo funcionan las bolsas
+mo-markets.summary	Comprar un trocito de empresas.
+mo-markets.q0.q	¿Qué es un mercado bajista?
+mo-markets.q0.o0	Una subida del 20 %
+mo-markets.q0.o1	Una caída del 20 % o más desde un máximo
+mo-markets.q0.o2	Un mercado de animales
+mo-markets.q0.x	Los toros embisten hacia arriba; los osos zarpean hacia abajo.
+mo-markets.q1.q	¿Qué ofrece un ETF?
+mo-markets.q1.o0	Rentabilidad garantizada
+mo-markets.q1.o1	Una cesta de activos que cotiza como una acción
+mo-markets.q1.o2	Depósitos bancarios
+mo-markets.q1.x	Diversificación a bajo coste.
+mo-markets.q2.q	¿Cuál es el principal índice bursátil de Portugal?
+mo-markets.q2.o0	DAX
+mo-markets.q2.o1	PSI
+mo-markets.q2.o2	FTSE
+mo-markets.q2.x	En Euronext Lisboa.
+mo-markets.c0.title	Por qué cotizan las empresas
+mo-markets.c0.text	Las empresas venden acciones en una bolsa para captar dinero con el que crecer. Los primeros inversores también pueden vender sus participaciones. Cotizar por primera vez es una OPV.
+mo-markets.c0.viz.steps.0	Empresa privada
+mo-markets.c0.viz.steps.1	OPV
+mo-markets.c0.viz.steps.2	Las acciones cotizan en bolsa
+mo-markets.c0.viz.steps.3	La empresa obtiene capital
+mo-markets.c1.title	Bolsas
+mo-markets.c1.text	Las bolsas son mercados que emparejan compradores y vendedores. La de Portugal es Euronext Lisboa; su índice principal, el PSI, sigue a las mayores empresas cotizadas.
+mo-markets.c1.viz.items.0.a	Euronext Lisboa
+mo-markets.c1.viz.items.0.b	bolsa de Portugal
+mo-markets.c1.viz.items.1.a	PSI
+mo-markets.c1.viz.items.1.b	índice portugués principal
+mo-markets.c1.viz.items.2.a	S&P 500
+mo-markets.c1.viz.items.2.b	500 grandes empresas de EE. UU.
+mo-markets.c1.viz.items.3.a	Euro Stoxx 50
+mo-markets.c1.viz.items.3.b	50 grandes empresas de la eurozona
+mo-markets.c2.title	Qué mueve los precios
+mo-markets.c2.text	Los precios se mueven con la oferta y la demanda, impulsadas por los beneficios futuros esperados, los tipos de interés, las noticias y el ánimo del mercado.
+mo-markets.c2.viz.items.0	Expectativas de beneficios
+mo-markets.c2.viz.items.1	Tipos de interés
+mo-markets.c2.viz.items.2	Noticias y sucesos
+mo-markets.c2.viz.items.3	Ánimo inversor
+mo-markets.c3.title	Índices
+mo-markets.c3.text	Un índice sigue una cesta de acciones para mostrar cómo va un mercado. El S&P 500 incluye unas 500 de las mayores empresas de EE. UU., ponderadas por tamaño.
+mo-markets.c3.viz.steps.0	Elegir empresas
+mo-markets.c3.viz.steps.1	Ponderar por tamaño
+mo-markets.c3.viz.steps.2	Seguir el valor conjunto
+mo-markets.c3.viz.steps.3	Nivel del índice
+mo-markets.c4.title	Mercados alcistas y bajistas
+mo-markets.c4.text	Un mercado alcista es una subida sostenida; uno bajista, una caída del 20 % o más desde un máximo. Los toros embisten hacia arriba; los osos zarpean hacia abajo.
+mo-markets.c4.viz.l.t	Alcista
+mo-markets.c4.viz.l.items.0	precios al alza
+mo-markets.c4.viz.l.items.1	optimismo
+mo-markets.c4.viz.r.t	Bajista
+mo-markets.c4.viz.r.items.0	caídas del 20 %+
+mo-markets.c4.viz.r.items.1	pesimismo
+mo-markets.c5.title	Rentabilidad a largo plazo
+mo-markets.c5.text	A lo largo de periodos largos, las acciones mundiales han rendido de media en torno a un 5 % anual por encima de la inflación, pero con grandes vaivenes y algunos periodos largos sin avance.
+mo-markets.c5.viz.unit	rentabilidad real % anual (largo plazo, aprox.)
+mo-markets.c5.viz.items.0.l	Efectivo
+mo-markets.c5.viz.items.1.l	Bonos
+mo-markets.c5.viz.items.2.l	Acciones
+mo-markets.c6.title	Caídas desde máximos
+mo-markets.c6.text	Incluso los buenos mercados tienen grandes caídas. Las acciones mundiales cayeron un 50 % aprox. en 2008–09 y un 34 % en pocas semanas a principios de 2020, y después se recuperaron.
+mo-markets.c6.viz.unit	% de caída (aprox.)
+mo-markets.c7.title	ETF
+mo-markets.c7.text	Los fondos cotizados (ETF) contienen cestas de activos y cotizan como acciones. Un solo ETF mundial puede darte miles de empresas a bajo coste.
+mo-markets.c7.viz.l.t	Una acción
+mo-markets.c7.viz.l.items.0	una empresa
+mo-markets.c7.viz.l.items.1	más riesgo
+mo-markets.c7.viz.r.t	ETF mundial
+mo-markets.c7.viz.r.items.0	miles de empresas
+mo-markets.c7.viz.r.items.1	diversificado
+mo-markets.c8.title	Costes
+mo-markets.c8.text	Las comisiones del fondo (TER), las de compraventa, el cambio de divisa y los impuestos reducen la rentabilidad. A lo largo de décadas, las pequeñas diferencias se acumulan.
+mo-markets.c8.viz.items.0	Comisión del fondo (TER)
+mo-markets.c8.viz.items.1	Comisiones de compraventa
+mo-markets.c8.viz.items.2	Cambio de divisa
+mo-markets.c8.viz.items.3	Impuestos sobre ganancias
+mo-markets.c9.title	Impuesto sobre plusvalías en Portugal
+mo-markets.c9.text	Las ganancias por venta de acciones y los dividendos tributan por lo general a un tipo fijo del 28 % en Portugal, con la opción de incluirlos en el impuesto sobre la renta. Las normas cambian; consulta la ley vigente.
+mo-markets.c9.viz.f	impuesto = ganancia × 28 %
+mo-markets.c9.viz.items.0.s	ganancia
+mo-markets.c9.viz.items.0.m	precio de venta − precio de compra
+mo-markets.c9.viz.items.1.s	1.000 € de ganancia
+mo-markets.c9.viz.items.1.m	280 € de impuesto
+mo-trade.title	La economía global
+mo-trade.summary	Comercio, divisas y grandes fuerzas.
+mo-trade.q0.q	¿Qué es un arancel?
+mo-trade.q0.o0	Una subvención
+mo-trade.q0.o1	Un impuesto a las importaciones
+mo-trade.q0.o2	Un tipo de préstamo
+mo-trade.q0.x	Sube los precios para los consumidores.
+mo-trade.q1.q	¿Desde cuándo existe el mercado único de la UE?
+mo-trade.q1.o0	1957
+mo-trade.q1.o1	1993
+mo-trade.q1.o2	2002
+mo-trade.q1.x	Libre circulación de bienes, servicios, personas y capitales.
+mo-trade.c0.title	Por qué comercian los países
+mo-trade.c0.text	El comercio permite que los países se especialicen y que los consumidores disfruten de bienes más baratos y variados. Portugal exporta coches, maquinaria, corcho, vino, ropa y servicios turísticos.
+mo-trade.c0.viz.items.0	Vehículos y piezas
+mo-trade.c0.viz.items.1	Maquinaria
+mo-trade.c0.viz.items.2	Turismo
+mo-trade.c0.viz.items.3	Ropa y calzado
+mo-trade.c0.viz.items.4	Corcho y vino
+mo-trade.c1.title	El turismo importa
+mo-trade.c1.text	El turismo es una de las mayores fuentes de exportaciones de Portugal: trae decenas de millones de visitantes al año, unas tres veces la población.
+mo-trade.c1.viz.unit	millones
+mo-trade.c1.viz.items.0.l	Población de Portugal
+mo-trade.c1.viz.items.1.l	Huéspedes turistas al año
+mo-trade.c2.title	Déficits comerciales
+mo-trade.c2.text	Un país con déficit comercial importa más de lo que exporta. No es malo de forma automática: puede estar invirtiendo o consumiendo con financiación extranjera.
+mo-trade.c2.viz.l.t	Superávit
+mo-trade.c2.viz.l.items.0	exportaciones > importaciones
+mo-trade.c2.viz.r.t	Déficit
+mo-trade.c2.viz.r.items.0	importaciones > exportaciones
+mo-trade.c3.title	Aranceles
+mo-trade.c3.text	Un arancel es un impuesto a las importaciones. Protege a algunos productores locales, pero sube los precios para los consumidores y puede provocar represalias.
+mo-trade.c3.viz.steps.0	Arancel a importaciones
+mo-trade.c3.viz.steps.1	Precios más altos
+mo-trade.c3.viz.steps.2	Algunas empresas locales protegidas
+mo-trade.c3.viz.steps.3	Riesgo de represalias
+mo-trade.c4.title	El mercado único de la UE
+mo-trade.c4.text	Desde 1993, los bienes, servicios, personas y capitales circulan libremente entre los Estados miembros de la UE, el mayor mercado único del mundo según muchos criterios.
+mo-trade.c4.viz.items.0	Libre circulación de bienes
+mo-trade.c4.viz.items.1	Servicios
+mo-trade.c4.viz.items.2	Personas
+mo-trade.c4.viz.items.3	Capitales
+mo-trade.c5.title	Cadenas de suministro
+mo-trade.c5.text	Los productos cruzan muchas fronteras antes de que los compres. La pandemia y el bloqueo del canal de Suez en 2021 mostraron lo frágiles que pueden ser las cadenas de suministro largas.
+mo-trade.c5.viz.steps.0	Materias primas
+mo-trade.c5.viz.steps.1	Componentes en el extranjero
+mo-trade.c5.viz.steps.2	Montaje
+mo-trade.c5.viz.steps.3	Transporte
+mo-trade.c5.viz.steps.4	Tu tienda
+mo-trade.c6.title	Materias primas
+mo-trade.c6.text	Las materias primas como el petróleo, el trigo, el café y el cobre se comercian en todo el mundo. Sus precios afectan a la inflación, a la factura de combustible y a los alimentos en todas partes.
+mo-trade.c6.viz.items.0	Petróleo y gas
+mo-trade.c6.viz.items.1	Trigo y maíz
+mo-trade.c6.viz.items.2	Café y azúcar
+mo-trade.c6.viz.items.3	Cobre y metales
+mo-trade.c7.title	Tipos de interés en el mundo
+mo-trade.c7.text	Cuando la Reserva Federal de EE. UU. o el BCE suben los tipos, endeudarse se encarece en todo el mundo, lo que afecta a las divisas, las hipotecas y los mercados.
+mo-trade.c7.viz.steps.0	El banco central sube los tipos
+mo-trade.c7.viz.steps.1	Los préstamos cuestan más
+mo-trade.c7.viz.steps.2	El gasto se frena
+mo-trade.c7.viz.steps.3	Cede la inflación
+mo-trade.c8.title	Mercados emergentes
+mo-trade.c8.text	Economías de rápido crecimiento como India, Indonesia y Brasil suponen una parte creciente de la producción mundial. China se convirtió en la mayor economía del mundo por paridad de poder adquisitivo hacia 2016.
+mo-trade.c8.viz.unit	% del PIB mundial, PPA (aprox.)
+mo-trade.c8.viz.items.0.l	China
+mo-trade.c8.viz.items.1.l	EE. UU.
+mo-trade.c8.viz.items.2.l	UE
+mo-trade.c8.viz.items.3.l	India
+mo-trade.c9.title	Remesas
+mo-trade.c9.text	Los migrantes envían dinero a casa: las remesas a países de renta baja y media superan los 650.000 millones de dólares al año, más que la ayuda exterior.
+mo-trade.c9.viz.unit	miles de millones de $ al año (aprox.)
+mo-trade.c9.viz.items.0.l	Ayuda exterior

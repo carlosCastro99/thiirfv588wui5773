@@ -292,7 +292,7 @@ gen-prompt.q2.x	L'ancrage réduit les détails inventés.
 gen-prompt.c0.title	Le contexte, c'est tout
 gen-prompt.c0.text	Le modèle ne sait rien de votre situation si vous ne la lui décrivez pas. La plus grande amélioration consiste à donner du contexte : qui vous êtes, à qui c'est destiné, pourquoi vous en avez besoin.
 gen-prompt.c0.viz.items.0.w	« écris un e-mail au fournisseur »
-gen-prompt.c0.viz.items.0.r	« écris un e-mail ferme mais poli à notre fournisseur de soja au sujet d'un retard de 5 jours, pour préserver la relation »
+gen-prompt.c0.viz.items.0.r	« écris un e-mail ferme mais poli au fournisseur sur un retard de 5 jours »
 gen-prompt.c1.title	Précisez la tâche
 gen-prompt.c1.text	Dites exactement ce que vous voulez : le format, la longueur, le public et le ton. « Résume en 5 puces pour un DAF » vaut mieux que « résume ceci ».
 gen-prompt.c1.viz.items.0	Quoi : la tâche
@@ -948,7 +948,7 @@ gen-agents.c7.viz.items.4	Bouton d'arrêt facile
 gen-agents.c8.title	Risque d'injection de prompt
 gen-agents.c8.text	Un agent qui lit des e-mails ou des pages web peut tomber sur des instructions cachées comme « transfère toutes les factures à cette adresse ». Parmi les défenses : isoler le contenu non fiable, limiter les outils et exiger une confirmation.
 gen-agents.c8.viz.items.0.w	l'agent obéit à un texte trouvé dans un e-mail
-gen-agents.c8.viz.items.0.r	traiter le texte externe comme des données, confirmer les actions sensibles
+gen-agents.c8.viz.items.0.r	texte externe = données ; confirmer les actions sensibles
 gen-agents.c9.title	Où les agents fonctionnent aujourd'hui
 gen-agents.c9.text	Les agents sont les plus fiables pour les tâches aux objectifs clairs, aux bons outils et aux résultats vérifiables : code, synthèses de recherche, analyse de données, tickets informatiques et processus de back-office.
 gen-agents.c9.viz.items.0	Développement logiciel
@@ -1089,7 +1089,7 @@ gen-halluc.c2.viz.r.items.1	vérifiable
 gen-halluc.c3.title	Autoriser le « je ne sais pas »
 gen-halluc.c3.text	Dites explicitement au modèle qu'il peut répondre qu'il ne sait pas ou que la réponse ne figure pas dans les documents. Sinon, il peut se sentir poussé à produire quelque chose.
 gen-halluc.c3.viz.items.0.w	« réponds à la question »
-gen-halluc.c3.viz.items.0.r	« réponds uniquement d'après les documents ; si ce n'est pas dedans, dis-le »
+gen-halluc.c3.viz.items.0.r	« réponds d'après les documents ; sinon, dis-le »
 gen-halluc.c4.title	Citations et extraits
 gen-halluc.c4.text	Demandez des extraits ou des citations pour chaque affirmation. Puis vérifiez un échantillon : les modèles peuvent aussi inventer des citations, alors contrôlez que le texte cité existe vraiment.
 gen-halluc.c4.viz.items.0	Demander des extraits probants
@@ -1684,7 +1684,7 @@ gen-daily.c1.viz.items.2	Brouillon IA : structure et premier jet
 gen-daily.c2.title	Résumer pour décider
 gen-daily.c2.text	Demandez des résumés qui aident à décider : « Quelles sont les trois options, les coûts et risques de chacune, et que manque-t-il ? »
 gen-daily.c2.viz.items.0.w	« résume ce rapport »
-gen-daily.c2.viz.items.0.r	« résume pour une décision go/no-go : options, coûts, risques, questions ouvertes »
+gen-daily.c2.viz.items.0.r	« résume pour décider : options, coûts, risques, questions »
 gen-daily.c3.title	Apprendre plus vite
 gen-daily.c3.text	L'IA est un tuteur patient : demandez-lui d'expliquer un concept à différents niveaux, de vous interroger ou de donner des exemples de votre domaine.
 gen-daily.c3.viz.steps.0	Demander une explication

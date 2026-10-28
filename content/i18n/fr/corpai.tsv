@@ -1448,3 +1448,304 @@ corp-hrlegal.c4.viz.r.items.2	exige des contrôles stricts
 corp-hrlegal.c5.title	Intégration des nouveaux
 corp-hrlegal.c5.text	Des assistants d'IA guident les nouveaux employés dans les systèmes, les politiques et les premières tâches, et répondent à leurs questions à tout moment.
 corp-hrlegal.c5.viz.items.0	Plans d'intégration personnalisés
+corp-hrlegal.c5.viz.items.1	Questions-réponses sur les politiques
+corp-hrlegal.c5.viz.items.2	Tutoriels sur les systèmes
+corp-hrlegal.c5.viz.items.3	Points d'étape
+corp-hrlegal.c6.title	Formation et développement
+corp-hrlegal.c6.text	L'IA crée du contenu pédagogique, des quiz et des parcours personnalisés, et joue le rôle de tuteur, comme cette appli.
+corp-hrlegal.c6.viz.items.0	Générer du contenu pédagogique
+corp-hrlegal.c6.viz.items.1	Quiz et exercices
+corp-hrlegal.c6.viz.items.2	Parcours personnalisés
+corp-hrlegal.c6.viz.items.3	Tutorat à la demande
+corp-hrlegal.c7.title	Confidentialité des données des employés
+corp-hrlegal.c7.text	Les données RH sont sensibles. Restreignez l'accès, minimisez les données, évitez la reconnaissance des émotions au travail (interdite par l'AI Act de l'UE) et associez les représentants du personnel lorsque c'est requis.
+corp-hrlegal.c7.viz.items.0	Contrôle d'accès strict
+corp-hrlegal.c7.viz.items.1	Minimisation des données
+corp-hrlegal.c7.viz.items.2	Pas de reconnaissance des émotions au travail
+corp-hrlegal.c7.viz.items.3	Consultation des représentants du personnel
+corp-hrlegal.c7.viz.items.4	AIPD
+corp-hrlegal.c8.title	Veille de conformité
+corp-hrlegal.c8.text	L'IA suit les évolutions réglementaires, les rattache aux politiques internes et signale les lacunes, ce qui aide les équipes de conformité à suivre le rythme.
+corp-hrlegal.c8.viz.steps.0	Nouvelle réglementation publiée
+corp-hrlegal.c8.viz.steps.1	L'IA résume les changements
+corp-hrlegal.c8.viz.steps.2	Rattacher aux politiques internes
+corp-hrlegal.c8.viz.steps.3	Signaler les lacunes
+corp-hrlegal.c9.title	Les juristes restent responsables
+corp-hrlegal.c9.text	L'IA accélère le travail juridique, mais la responsabilité professionnelle reste celle des juristes. Utilisez-la pour les premiers jets, la relecture et l'aide à la recherche, avec validation par un expert.
+corp-hrlegal.c9.viz.l.t	IA
+corp-hrlegal.c9.viz.l.items.0	premier jet
+corp-hrlegal.c9.viz.l.items.1	extraction
+corp-hrlegal.c9.viz.l.items.2	comparaison
+corp-hrlegal.c9.viz.r.t	Juriste
+corp-hrlegal.c9.viz.r.items.0	jugement
+corp-hrlegal.c9.viz.r.items.1	négociation
+corp-hrlegal.c9.viz.r.items.2	validation
+corp-dev.title	L'IA pour l'ingénierie logicielle
+corp-dev.summary	Copilotes, agents et modernisation du code.
+corp-dev.q0.q	Que doit-il arriver au code généré par l'IA avant la fusion ?
+corp-dev.q0.o0	Rien
+corp-dev.q0.o1	Revue humaine, tests et analyse de sécurité
+corp-dev.q0.o2	L'imprimer
+corp-dev.q0.x	Les contrôles qualité habituels s'appliquent toujours.
+corp-dev.q1.q	Qu'est-ce que le risque de « paquet halluciné » ?
+corp-dev.q1.o0	Du code lent
+corp-dev.q1.o1	Une IA qui suggère le nom d'une bibliothèque inexistante que des attaquants pourraient enregistrer
+corp-dev.q1.o2	Une faute de frappe
+corp-dev.q1.x	Un risque de chaîne d'approvisionnement.
+corp-dev.q2.q	Quelle est une bonne mesure de l'impact de l'IA sur l'ingénierie ?
+corp-dev.q2.o0	Les lignes de code générées
+corp-dev.q2.o1	Le délai de cycle et le taux d'échec des changements
+corp-dev.q2.o2	Le nombre de prompts
+corp-dev.q2.x	Mesurez les résultats, pas le volume produit.
+corp-dev.c0.title	Assistants de codage
+corp-dev.c0.text	Des outils comme GitHub Copilot, Cursor et Claude Code suggèrent du code, l'expliquent, écrivent des tests et corrigent des bogues, dans l'éditeur ou le terminal du développeur.
+corp-dev.c0.viz.items.0	Complétion de code
+corp-dev.c0.viz.items.1	Explications
+corp-dev.c0.viz.items.2	Génération de tests
+corp-dev.c0.viz.items.3	Correction de bogues
+corp-dev.c0.viz.items.4	Refactorisation
+corp-dev.c1.title	Gains de productivité
+corp-dev.c1.text	Des études contrôlées ont montré que les développeurs accomplissent certaines tâches de codage nettement plus vite avec des assistants d'IA, même si les gains varient selon la tâche, l'expérience et la base de code.
+corp-dev.c1.viz.l.t	Gains plus importants
+corp-dev.c1.viz.l.items.0	code répétitif
+corp-dev.c1.viz.l.items.1	tests
+corp-dev.c1.viz.l.items.2	langages peu familiers
+corp-dev.c1.viz.r.t	Gains plus faibles
+corp-dev.c1.viz.r.items.0	architecture complexe
+corp-dev.c1.viz.r.items.1	débogage subtil
+corp-dev.c2.title	Agents de codage
+corp-dev.c2.text	Les agents prennent une tâche (une issue ou un ticket), planifient les modifications sur plusieurs fichiers, exécutent les tests et ouvrent une pull request pour revue humaine.
+corp-dev.c2.viz.steps.0	Ticket
+corp-dev.c2.viz.steps.1	L'agent planifie et modifie
+corp-dev.c2.viz.steps.2	Exécute les tests
+corp-dev.c2.viz.steps.3	Pull request
+corp-dev.c2.viz.steps.4	Revue humaine
+corp-dev.c3.title	La revue de code reste essentielle
+corp-dev.c3.text	Le code généré par l'IA peut contenir des bogues, des failles de sécurité ou des problèmes de licence. Conservez la revue de code, les tests et l'analyse de sécurité dans la chaîne de livraison.
+corp-dev.c3.viz.items.0	Revue de code humaine
+corp-dev.c3.viz.items.1	Tests automatisés
+corp-dev.c3.viz.items.2	Analyse de sécurité
+corp-dev.c3.viz.items.3	Contrôles de licences
+corp-dev.c3.viz.items.4	Contrôles de style et de qualité
+corp-dev.c4.title	Modernisation de l'existant
+corp-dev.c4.text	L'IA aide à comprendre et documenter le code hérité (COBOL, ancien ABAP), à suggérer des migrations et à générer des tests, ce qui accélère des projets de modernisation comme les migrations vers S/4HANA.
+corp-dev.c4.viz.steps.0	Code hérité
+corp-dev.c4.viz.steps.1	L'IA explique et documente
+corp-dev.c4.viz.steps.2	Générer des tests
+corp-dev.c4.viz.steps.3	Refactoriser ou migrer
+corp-dev.c5.title	Documentation
+corp-dev.c5.text	L'IA rédige et met à jour la documentation, les descriptions d'API et les runbooks à partir du code et de l'historique des commits, allégeant une corvée que les développeurs négligent souvent.
+corp-dev.c5.viz.items.0	Documentation d'API
+corp-dev.c5.viz.items.1	Commentaires de code
+corp-dev.c5.viz.items.2	Runbooks
+corp-dev.c5.viz.items.3	Synthèses d'architecture
+corp-dev.c5.viz.items.4	Notes de version
+corp-dev.c6.title	Tests
+corp-dev.c6.text	L'IA génère des tests unitaires, des jeux de données de test et des cas limites, ce qui augmente vite la couverture. Les développeurs vérifient toujours que les tests testent bien ce qu'il faut.
+corp-dev.c6.viz.steps.0	Fonction
+corp-dev.c6.viz.steps.1	L'IA propose des tests
+corp-dev.c6.viz.steps.2	Le développeur relit
+corp-dev.c6.viz.steps.3	Couverture en hausse
+corp-dev.c7.title	Low-code et développeurs citoyens
+corp-dev.c7.text	L'IA permet plus facilement à des non-développeurs de créer des automatisations et de petites applis, mais une gouvernance est nécessaire pour la sécurité, l'accès aux données et la maintenance.
+corp-dev.c7.viz.l.t	Avantage
+corp-dev.c7.viz.l.items.0	solutions plus rapides
+corp-dev.c7.viz.l.items.1	plus proche du métier
+corp-dev.c7.viz.r.t	Risque
+corp-dev.c7.viz.r.items.0	shadow IT
+corp-dev.c7.viz.r.items.1	failles de sécurité
+corp-dev.c7.viz.r.items.2	applis non maintenues
+corp-dev.c8.title	Sécurité du code écrit par l'IA
+corp-dev.c8.text	Surveillez les secrets codés en dur, les failles d'injection, les bibliothèques obsolètes et les noms de paquets hallucinés que des attaquants pourraient enregistrer.
+corp-dev.c8.viz.items.0	Secrets codés en dur
+corp-dev.c8.viz.items.1	Failles d'injection
+corp-dev.c8.viz.items.2	Dépendances obsolètes
+corp-dev.c8.viz.items.3	Paquets hallucinés
+corp-dev.c8.viz.items.4	Validation des entrées manquante
+corp-dev.c9.title	Mesurer l'impact sur l'ingénierie
+corp-dev.c9.text	Suivez le délai de cycle, la fréquence de déploiement, le taux d'échec des changements, la satisfaction des développeurs et le temps passé en tâches ingrates, plutôt que les lignes de code générées.
+corp-dev.c9.viz.items.0	Délai de mise en œuvre des changements
+corp-dev.c9.viz.items.1	Fréquence de déploiement
+corp-dev.c9.viz.items.2	Taux d'échec des changements
+corp-dev.c9.viz.items.3	Satisfaction des développeurs
+corp-dev.c9.viz.items.4	Réduction des tâches ingrates
+corp-value.title	Mesurer la valeur de l'IA
+corp-value.summary	Indicateurs, tableaux de bord et reporting honnête.
+corp-value.q0.q	Lequel est un indicateur de résultat ?
+corp-value.q0.o0	Le nombre de prompts
+corp-value.q0.o1	Les heures économisées par mois
+corp-value.q0.o2	Les pilotes lancés
+corp-value.q0.x	Les résultats reflètent la valeur.
+corp-value.q1.q	Pourquoi utiliser des groupes témoins ?
+corp-value.q1.o0	Pour ralentir
+corp-value.q1.o1	Pour distinguer l'effet de l'IA des autres changements
+corp-value.q1.o2	Pour embrouiller les auditeurs
+corp-value.q1.x	Une comparaison équitable.
+corp-value.q2.q	Qu'est-ce qu'un indicateur avancé de la valeur de l'IA ?
+corp-value.q2.o0	Le bénéfice annuel
+corp-value.q2.o1	L'adoption et la réduction du temps de traitement
+corp-value.q2.o2	Le cours de l'action
+corp-value.q2.x	Les signaux précoces annoncent les résultats futurs.
+corp-value.c0.title	Les résultats avant l'activité
+corp-value.c0.text	Comptez les résultats (coûts économisés, revenus gagnés, erreurs évitées, délai de service aux clients), pas l'activité (nombre de prompts, pilotes lancés, utilisateurs invités).
+corp-value.c0.viz.l.t	Indicateurs d'activité
+corp-value.c0.viz.l.items.0	prompts
+corp-value.c0.viz.l.items.1	pilotes
+corp-value.c0.viz.l.items.2	licences
+corp-value.c0.viz.r.t	Indicateurs de résultat
+corp-value.c0.viz.r.items.0	euros
+corp-value.c0.viz.r.items.1	heures
+corp-value.c0.viz.r.items.2	erreurs
+corp-value.c0.viz.r.items.3	satisfaction
+corp-value.c1.title	Trois niveaux d'indicateurs
+corp-value.c1.text	Suivez l'usage (les gens l'utilisent-ils ?), la performance (est-ce précis et rapide ?) et l'impact métier (cela crée-t-il de la valeur ?).
+corp-value.c1.viz.items.0	Impact métier
+corp-value.c1.viz.items.1	Performance et qualité
+corp-value.c1.viz.items.2	Usage et adoption
+corp-value.c2.title	Indicateurs de productivité
+corp-value.c2.text	Le temps par tâche, le débit par personne, les taux sans intervention, la taille du backlog et les délais de traitement montrent les effets sur la productivité.
+corp-value.c2.viz.items.0	Temps par tâche
+corp-value.c2.viz.items.1	Débit
+corp-value.c2.viz.items.2	Taux sans intervention
+corp-value.c2.viz.items.3	Backlog
+corp-value.c2.viz.items.4	Délai de traitement
+corp-value.c3.title	Indicateurs de qualité
+corp-value.c3.text	Les taux d'erreur, les reprises, les constats de conformité et les réclamations clients montrent si l'IA améliore ou dégrade la qualité.
+corp-value.c3.viz.items.0	Taux d'erreur
+corp-value.c3.viz.items.1	Reprises
+corp-value.c3.viz.items.2	Constats d'audit
+corp-value.c3.viz.items.3	Réclamations
+corp-value.c3.viz.items.4	Précision sur les jeux d'évaluation
+corp-value.c4.title	Indicateurs financiers
+corp-value.c4.text	Traduisez les gains en argent : coûts évités, hausse des revenus, fonds de roulement libéré, pertes de risque évitées, et comparez-les aux coûts complets.
+corp-value.c4.viz.f	valeur nette = gains − coûts totaux
+corp-value.c4.viz.items.0.s	gains
+corp-value.c4.viz.items.0.m	économies, revenus, risques évités
+corp-value.c4.viz.items.1.s	coûts
+corp-value.c4.viz.items.1.m	construction, exploitation, changement
+corp-value.c5.title	Groupes témoins
+corp-value.c5.text	Dans la mesure du possible, comparez des équipes ou des périodes avec et sans IA. Sinon, les améliorations peuvent venir d'autres changements.
+corp-value.c5.viz.l.t	Avec l'IA
+corp-value.c5.viz.l.items.0	résultats de l'équipe A
+corp-value.c5.viz.r.t	Sans l'IA
+corp-value.c5.viz.r.items.0	référence de l'équipe B
+corp-value.c5.viz.r.items.1	différence = effet de l'IA
+corp-value.c6.title	Tableaux de bord
+corp-value.c6.text	Un tableau de bord partagé de la valeur de l'IA montre l'adoption, la qualité et la valeur de chaque cas d'usage par rapport aux objectifs, ce qui crée de la transparence pour la direction.
+corp-value.c6.viz.items.0	Cas d'usage
+corp-value.c6.viz.items.1	Adoption
+corp-value.c6.viz.items.2	Qualité
+corp-value.c6.viz.items.3	Valeur vs objectif
+corp-value.c6.viz.items.4	Statut et responsable
+corp-value.c7.title	Indicateurs avancés
+corp-value.c7.text	La valeur arrive souvent avec retard. Des signaux précoces comme l'adoption, la satisfaction et la réduction du temps de traitement annoncent les résultats financiers futurs.
+corp-value.c7.viz.events.0.y	Mois 1
+corp-value.c7.viz.events.0.l	adoption
+corp-value.c7.viz.events.1.y	Mois 3
+corp-value.c7.viz.events.1.l	le temps par tâche baisse
+corp-value.c7.viz.events.2.y	Mois 6
+corp-value.c7.viz.events.2.l	débit en hausse
+corp-value.c7.viz.events.3.y	Mois 12
+corp-value.c7.viz.events.3.l	impact sur les coûts et les revenus
+corp-value.c8.title	Un reporting honnête
+corp-value.c8.text	Rapportez ce qui n'a pas fonctionné, pas seulement les réussites. La crédibilité auprès de la finance et de la direction vient de chiffres réalistes.
+corp-value.c8.viz.items.0	Rapporter aussi les échecs
+corp-value.c8.viz.items.1	Montrer les hypothèses
+corp-value.c8.viz.items.2	Utiliser des estimations prudentes
+corp-value.c8.viz.items.3	Valider avec la finance
+corp-value.c9.title	Vision de portefeuille
+corp-value.c9.text	Gérez l'IA comme un portefeuille : certains cas d'usage apportent de gros gains, beaucoup des gains modestes, d'autres échouent. C'est le rendement global du portefeuille qui compte.
+corp-value.c9.viz.unit	contribution à la valeur (% illustratifs)
+corp-value.c9.viz.items.0.l	3 premiers cas d'usage
+corp-value.c9.viz.items.1.l	10 suivants
+corp-value.c9.viz.items.2.l	Le reste
+corp-strategy.title	Stratégie et feuille de route IA
+corp-strategy.summary	Tout rassembler.
+corp-strategy.q0.q	À quoi doit servir une stratégie d'IA ?
+corp-strategy.q0.o0	Au modèle le plus récent
+corp-strategy.q0.o1	Aux objectifs métier de l'entreprise
+corp-strategy.q0.o2	Aux feuilles de route des fournisseurs
+corp-strategy.q0.x	L'IA est un moyen, pas une fin.
+corp-strategy.q1.q	Quand faut-il construire les fondations (données, plateforme, gouvernance) ?
+corp-strategy.q1.o0	Après tous les cas d'usage
+corp-strategy.q1.o1	En parallèle des cas d'usage
+corp-strategy.q1.o2	Jamais
+corp-strategy.q1.x	Elles permettent le passage à l'échelle.
+corp-strategy.q2.q	À quelle fréquence faut-il réexaminer la stratégie d'IA ?
+corp-strategy.q2.o0	Tous les 10 ans
+corp-strategy.q2.o1	Au moins une fois par an
+corp-strategy.q2.o2	Jamais
+corp-strategy.q2.x	Le domaine évolue vite.
+corp-strategy.c0.title	La stratégie part des objectifs métier
+corp-strategy.c0.text	Une stratégie d'IA doit servir la stratégie de l'entreprise : croissance, efficacité, risque, expérience client. Chaque initiative d'IA est reliée à un objectif métier.
+corp-strategy.c0.viz.steps.0	Objectifs métier
+corp-strategy.c0.viz.steps.1	Où l'IA aide le plus
+corp-strategy.c0.viz.steps.2	Cas d'usage hiérarchisés
+corp-strategy.c0.viz.steps.3	Fondations nécessaires
+corp-strategy.c1.title	Niveaux d'ambition
+corp-strategy.c1.text	Les entreprises vont de l'expérimentation à la mise à l'échelle de certains cas d'usage, jusqu'à la transformation de processus clés et de modèles économiques grâce à l'IA.
+corp-strategy.c1.viz.items.0	Transformer : processus natifs IA
+corp-strategy.c1.viz.items.1	Étendre : l'IA dans les flux clés
+corp-strategy.c1.viz.items.2	Expérimenter : pilotes et apprentissage
+corp-strategy.c2.title	La feuille de route
+corp-strategy.c2.text	Une feuille de route échelonne cas d'usage et fondations sur 12 à 36 mois, par vagues : gains rapides d'abord, fondations en parallèle, transformations plus ambitieuses ensuite.
+corp-strategy.c2.viz.events.0.y	T1–T2
+corp-strategy.c2.viz.events.0.l	gains rapides + plateforme
+corp-strategy.c2.viz.events.1.y	T3–T4
+corp-strategy.c2.viz.events.1.l	étendre les cas éprouvés
+corp-strategy.c2.viz.events.2.y	Année 2
+corp-strategy.c2.viz.events.2.l	refonte des processus clés
+corp-strategy.c2.viz.events.3.y	Année 3
+corp-strategy.c2.viz.events.3.l	nouvelles offres basées sur l'IA
+corp-strategy.c3.title	Fondations en parallèle
+corp-strategy.c3.text	Les données, la plateforme, la gouvernance, la sécurité et les compétences doivent être construites en même temps que les cas d'usage, pas après. Chaque vague de cas d'usage finance et utilise les fondations.
+corp-strategy.c3.viz.items.0	Fondations de données
+corp-strategy.c3.viz.items.1	Plateforme et passerelle d'IA
+corp-strategy.c3.viz.items.2	Gouvernance et risques
+corp-strategy.c3.viz.items.3	Sécurité
+corp-strategy.c3.viz.items.4	Compétences et changement
+corp-strategy.c4.title	Modèle opérationnel
+corp-strategy.c4.text	Décidez qui finance, construit, détient et gouverne l'IA : modèle central, fédéré ou hybride. Le modèle hybride hub-and-spoke est courant dans les grandes entreprises mondiales.
+corp-strategy.c4.viz.l.t	Central
+corp-strategy.c4.viz.l.items.0	cohérent
+corp-strategy.c4.viz.l.items.1	peut être lent
+corp-strategy.c4.viz.l.items.2	loin du métier
+corp-strategy.c4.viz.r.t	Fédéré
+corp-strategy.c4.viz.r.items.0	proche du métier
+corp-strategy.c4.viz.r.items.1	risque de doublons
+corp-strategy.c5.title	Partenariats
+corp-strategy.c5.text	Les partenaires stratégiques (fournisseurs cloud, fournisseurs de modèles, intégrateurs, startups) accélèrent la livraison. Gardez l'architecture et les compétences clés en interne.
+corp-strategy.c5.viz.items.0	Fournisseurs de cloud et de modèles
+corp-strategy.c5.viz.items.1	Intégrateurs de systèmes
+corp-strategy.c5.viz.items.2	Startups spécialisées
+corp-strategy.c5.viz.items.3	Universités
+corp-strategy.c6.title	Modèle de financement
+corp-strategy.c6.text	Financez les fondations de façon centrale, les cas d'usage par les unités métier (avec un cofinancement central au démarrage) et revoyez le portefeuille chaque trimestre.
+corp-strategy.c6.viz.items.0.a	fondations
+corp-strategy.c6.viz.items.0.b	budget central
+corp-strategy.c6.viz.items.1.a	cas d'usage
+corp-strategy.c6.viz.items.1.b	unités métier
+corp-strategy.c6.viz.items.2.a	financement d'amorçage
+corp-strategy.c6.viz.items.2.b	enveloppe centrale d'innovation
+corp-strategy.c6.viz.items.3.a	revues
+corp-strategy.c6.viz.items.3.b	portefeuille trimestriel
+corp-strategy.c7.title	Les agents et l'avenir
+corp-strategy.c7.text	À mesure que les agents mûrissent, davantage de processus de bout en bout pourront être automatisés sous supervision humaine. Préparez-vous dès maintenant : API propres, processus clairs, bonnes données et gouvernance des actions autonomes.
+corp-strategy.c7.viz.items.0	API propres vers les systèmes clés
+corp-strategy.c7.viz.items.1	Processus bien documentés
+corp-strategy.c7.viz.items.2	Données fiables
+corp-strategy.c7.viz.items.3	Gouvernance des agents
+corp-strategy.c7.viz.items.4	Supervision et contrôles
+corp-strategy.c8.title	Rester adaptable
+corp-strategy.c8.text	Les modèles, les prix et les réglementations évoluent vite. Réexaminez la stratégie au moins une fois par an, gardez une architecture flexible et ne misez pas tout sur un seul fournisseur.
+corp-strategy.c8.viz.steps.0	Définir la stratégie
+corp-strategy.c8.viz.steps.1	Exécuter la feuille de route
+corp-strategy.c8.viz.steps.2	Mesurer et apprendre
+corp-strategy.c8.viz.steps.3	Mettre à jour chaque année
+corp-strategy.c9.title	Les personnes au centre
+corp-strategy.c9.text	Les entreprises qui gagnent avec l'IA allient la technologie à des personnes qui connaissent le métier, à une confiance bâtie par des pratiques responsables et à une culture d'apprentissage.
+corp-strategy.c9.viz.items.0	Connaissance du métier
+corp-strategy.c9.viz.items.1	Confiance et responsabilité
+corp-strategy.c9.viz.items.2	Culture d'apprentissage
+corp-strategy.c9.viz.items.3	Leadership clair
+corp-strategy.c9.viz.items.4	Valeur mesurée

@@ -292,7 +292,7 @@ gen-prompt.q2.x	Fundamentar reduce los detalles inventados.
 gen-prompt.c0.title	El contexto lo es todo
 gen-prompt.c0.text	El modelo no sabe nada de tu situación salvo que se lo digas. La mayor mejora, con diferencia, es dar contexto: quién eres, para quién es, por qué lo necesitas.
 gen-prompt.c0.viz.items.0.w	«escribe un correo al proveedor»
-gen-prompt.c0.viz.items.0.r	«escribe un correo firme pero educado a nuestro proveedor de soja sobre un retraso de 5 días, para cuidar la relación»
+gen-prompt.c0.viz.items.0.r	«correo firme y educado al proveedor sobre 5 días de retraso»
 gen-prompt.c1.title	Concreta la tarea
 gen-prompt.c1.text	Di exactamente lo que quieres: formato, extensión, público y tono. «Resume en 5 viñetas para un director financiero» funciona mejor que «resume esto».
 gen-prompt.c1.viz.items.0	Qué: la tarea
@@ -775,9 +775,9 @@ gen-rag.c7.viz.items.2.b	¿responde a todo?
 gen-rag.c7.viz.items.3.a	citas
 gen-rag.c7.viz.items.3.b	¿referencias correctas?
 gen-rag.c8.title	Preguntas sobre contratos
-gen-rag.c8.text	Un trader pregunta: «¿Cuál es la tarifa de demora (demurrage) del contrato 4471?». El RAG recupera la cláusula relevante, el modelo responde «18 000 $ al día, cláusula 12.3» y enlaza a la página.
+gen-rag.c8.text	Un trader pregunta: «¿Cuál es la tarifa de demora (demurrage) del contrato 4471?». El RAG recupera la cláusula relevante, el modelo responde «18 000 $ al día, cláusula 12,3» y enlaza a la página.
 gen-rag.c8.viz.steps.0	Pregunta sobre el contrato
-gen-rag.c8.viz.steps.1	Encuentra la cláusula 12.3
+gen-rag.c8.viz.steps.1	Encuentra la cláusula 12,3
 gen-rag.c8.viz.steps.2	Responde con la tarifa
 gen-rag.c8.viz.steps.3	Enlaza a la página fuente
 gen-rag.c9.title	Fallos habituales
@@ -1274,9 +1274,9 @@ gen-landscape.c6.viz.items.1	Ten listas las evaluaciones
 gen-landscape.c6.viz.items.2	Versiona los prompts
 gen-landscape.c6.viz.items.3	Evita la dependencia de un proveedor
 gen-landscape.c7.title	Las licencias importan
-gen-landscape.c7.text	Los modelos de pesos abiertos tienen licencias distintas: unas totalmente abiertas (Apache 2.0, MIT) y otras con restricciones de uso o límites para empresas muy grandes. Compruébalo antes de un uso comercial.
+gen-landscape.c7.text	Los modelos de pesos abiertos tienen licencias distintas: unas totalmente abiertas (Apache 2,0, MIT) y otras con restricciones de uso o límites para empresas muy grandes. Compruébalo antes de un uso comercial.
 gen-landscape.c7.viz.l.t	Permisivas
-gen-landscape.c7.viz.l.items.0	Apache 2.0, MIT
+gen-landscape.c7.viz.l.items.0	Apache 2,0, MIT
 gen-landscape.c7.viz.l.items.1	pocas restricciones
 gen-landscape.c7.viz.r.t	Licencias propias
 gen-landscape.c7.viz.r.items.0	normas de uso
@@ -1684,7 +1684,7 @@ gen-daily.c1.viz.items.2	Borrador de IA: estructura y primera pasada
 gen-daily.c2.title	Resume para decidir
 gen-daily.c2.text	Pide resúmenes que ayuden a tomar una decisión: «¿Cuáles son las tres opciones, los costes y riesgos de cada una, y qué falta?».
 gen-daily.c2.viz.items.0.w	«resume este informe»
-gen-daily.c2.viz.items.0.r	«resume para decidir si seguir o no: opciones, costes, riesgos, preguntas abiertas»
+gen-daily.c2.viz.items.0.r	«resume para decidir: opciones, costes, riesgos»
 gen-daily.c3.title	Aprende más rápido
 gen-daily.c3.text	La IA es un tutor paciente: pídele que te explique un concepto a distintos niveles, que te ponga a prueba o que te dé ejemplos de tu campo.
 gen-daily.c3.viz.steps.0	Pide una explicación

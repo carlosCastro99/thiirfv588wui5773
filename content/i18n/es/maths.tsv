@@ -1179,7 +1179,7 @@ ma-networks.q2.o2	La longitud de la página
 ma-networks.q2.x	Los enlaces desde páginas importantes cuentan más.
 ma-networks.c0.title	Los puentes de Königsberg
 ma-networks.c0.text	En 1736, Euler demostró que no se podían cruzar los siete puentes de Königsberg pasando exactamente una vez por cada uno. Para resolverlo, redujo la ciudad a puntos y líneas: así nació la teoría de grafos.
-ma-networks.c0.viz.steps.0	Plano de la ciudad
+ma-networks.c0.viz.steps.0	Plano urbano
 ma-networks.c0.viz.steps.1	Zonas de tierra: puntos
 ma-networks.c0.viz.steps.2	Puentes: líneas
 ma-networks.c0.viz.steps.3	Cuenta líneas por punto
@@ -1277,3 +1277,253 @@ ma-estimate.c2.viz.items.0.l	Una clase
 ma-estimate.c2.viz.items.1.l	Un pueblo
 ma-estimate.c2.viz.items.2.l	Ciudad de Lisboa
 ma-estimate.c2.viz.items.3.l	Portugal
+ma-estimate.c3.title	Referencias útiles
+ma-estimate.c3.text	Memoriza unas cuantas cifras de referencia y podrás estimar casi cualquier cosa.
+ma-estimate.c3.viz.items.0.a	Portugal
+ma-estimate.c3.viz.items.0.b	~10,5 millones de personas
+ma-estimate.c3.viz.items.1.a	Mundo
+ma-estimate.c3.viz.items.1.b	~8000 millones de personas
+ma-estimate.c3.viz.items.2.a	Circunferencia de la Tierra
+ma-estimate.c3.viz.items.2.b	40.000 km
+ma-estimate.c3.viz.items.3.a	Un año
+ma-estimate.c3.viz.items.3.b	~31,5 millones de segundos
+ma-estimate.c4.title	Redondea sin miedo
+ma-estimate.c4.text	Redondea a números fáciles de multiplicar. 47 × 213 ≈ 50 × 200 = 10.000. La respuesta real es 10.011.
+ma-estimate.c4.viz.steps.1	Redondea: 50 × 200
+ma-estimate.c4.viz.steps.3	Exacto: 10.011
+ma-estimate.c5.title	Los excesos y defectos se compensan
+ma-estimate.c5.text	En las estimaciones de varios pasos, los errores de redondeo en sentidos distintos tienden a compensarse, así que el resultado final suele ser mejor que cualquier suposición aislada.
+ma-estimate.c5.viz.l.t	Una suposición
+ma-estimate.c5.viz.l.items.0	a menudo falla por 2×
+ma-estimate.c5.viz.r.t	Muchas suposiciones multiplicadas
+ma-estimate.c5.viz.r.items.0	los errores se compensan
+ma-estimate.c6.title	Comprobaciones de sentido común
+ma-estimate.c6.text	Estimar detecta errores. Si una hoja de cálculo dice que una cafetería gasta 40 toneladas de café al día, una estimación rápida muestra que algo falla.
+ma-estimate.c6.viz.items.0.w	Fiarse ciegamente de la hoja de cálculo
+ma-estimate.c6.viz.items.0.r	Estima primero y luego comprueba
+ma-estimate.c7.title	Estimar multitudes
+ma-estimate.c7.text	Cuenta las personas en una zona pequeña y multiplica por el número de zonas así que ocupa la multitud. La policía y los organizadores suelen discrepar en un factor de dos.
+ma-estimate.c7.viz.steps.0	Cuenta personas en 10 m²
+ma-estimate.c7.viz.steps.1	Mide el área total
+ma-estimate.c7.viz.steps.2	Multiplica
+ma-estimate.c7.viz.steps.3	Asistentes
+ma-estimate.c8.title	¿Cuánto son mil millones de segundos?
+ma-estimate.c8.text	Un millón de segundos son unos 11,5 días. Mil millones de segundos son unos 32 años. Los números grandes son muy distintos aunque suenen parecido.
+ma-estimate.c8.viz.unit	tiempo
+ma-estimate.c8.viz.items.0.l	Mil s: minutos
+ma-estimate.c8.viz.items.1.l	Un millón de s: días
+ma-estimate.c8.viz.items.2.l	Mil millones de s: años
+ma-estimate.c9.title	Intervalos de confianza
+ma-estimate.c9.text	Los buenos estimadores dan intervalos: «entre 2000 y 4000». Un intervalo del que estás seguro al 90 % es más honesto que una sola cifra de aspecto preciso.
+ma-estimate.c9.viz.unit	gasolineras
+ma-estimate.c9.viz.items.0.l	Estimación baja
+ma-estimate.c9.viz.items.1.l	Mejor estimación
+ma-estimate.c9.viz.items.2.l	Estimación alta
+ma-patterns.title	Sucesiones y patrones
+ma-patterns.summary	Descubrir la regla.
+ma-patterns.q0.q	¿Qué viene después: 2, 6, 18, 54, …?
+ma-patterns.q0.o0	108
+ma-patterns.q0.o1	162
+ma-patterns.q0.o2	72
+ma-patterns.q0.x	Multiplica por 3.
+ma-patterns.q1.q	¿Cuál es el 4.º número triangular?
+ma-patterns.q1.o0	8
+ma-patterns.q1.o1	10
+ma-patterns.q1.o2	16
+ma-patterns.q1.x	1 + 2 + 3 + 4.
+ma-patterns.c0.title	Progresiones aritméticas
+ma-patterns.c0.text	Suma el mismo número cada vez: 3, 7, 11, 15… (suma 4). El término n-ésimo es fácil de hallar: 4n − 1.
+ma-patterns.c1.title	Progresiones geométricas
+ma-patterns.c1.text	Multiplica por el mismo número cada vez: 2, 6, 18, 54… (×3). Crecen mucho más deprisa que las progresiones aritméticas.
+ma-patterns.c2.title	Números triangulares
+ma-patterns.c2.text	1, 3, 6, 10, 15: el número de puntos de triángulos cada vez mayores, como los bolos. El n-ésimo es n(n + 1)/2.
+ma-patterns.c2.viz.f	Tₙ = n(n + 1) / 2
+ma-patterns.c2.viz.items.0.s	n
+ma-patterns.c2.viz.items.0.m	número de fila
+ma-patterns.c2.viz.items.1.s	T₄
+ma-patterns.c2.viz.items.1.m	10 bolos
+ma-patterns.c3.title	Fibonacci en la naturaleza
+ma-patterns.c3.text	Muchos girasoles tienen 34 y 55 espirales; las piñas muestran 8 y 13. Estos números de Fibonacci permiten empaquetar las semillas de forma eficiente.
+ma-patterns.c3.viz.items.0.a	Piña de pino
+ma-patterns.c3.viz.items.0.b	8 y 13 espirales
+ma-patterns.c3.viz.items.1.a	Piña tropical
+ma-patterns.c3.viz.items.1.b	8 y 13
+ma-patterns.c3.viz.items.2.a	Girasol
+ma-patterns.c3.viz.items.2.b	34 y 55 o 55 y 89
+ma-patterns.c4.title	El número áureo
+ma-patterns.c4.text	Divide cada número de Fibonacci entre el anterior y te acercarás a 1,618…, el número áureo φ.
+ma-patterns.c4.viz.unit	razón
+ma-patterns.c5.title	El triángulo de Pascal
+ma-patterns.c5.text	Cada número es la suma de los dos que tiene encima. El triángulo esconde los números naturales, los números triangulares, las potencias de 2 y las probabilidades al lanzar monedas.
+ma-patterns.c6.title	Los primos se resisten a los patrones
+ma-patterns.c6.text	Los primos son cada vez más escasos pero nunca se acaban, y ninguna fórmula sencilla los genera todos. Predecirlos es uno de los problemas abiertos más profundos de las matemáticas.
+ma-patterns.c7.title	Sucesiones engañosas
+ma-patterns.c7.text	1, 2, 4, 8, 16… parece obvio, pero si cortas un círculo con rectas que unen puntos de su borde obtienes 1, 2, 4, 8, 16 y luego 31. Los patrones necesitan demostración.
+ma-patterns.c7.viz.l.t	Esperas
+ma-patterns.c7.viz.l.items.0	32 regiones
+ma-patterns.c7.viz.r.t	En realidad
+ma-patterns.c7.viz.r.items.0	31 regiones
+ma-patterns.c8.title	Mira y di
+ma-patterns.c8.text	1, 11, 21, 1211, 111221… Cada término describe en voz alta el anterior: «un 1», «dos 1», «un 2, un 1». Un patrón basado en palabras, no en aritmética.
+ma-patterns.c9.title	Encuentra la regla
+ma-patterns.c9.text	2, 5, 10, 17, 26… Las diferencias son 3, 5, 7, 9: números impares. La regla es n² + 1.
+ma-patterns.c9.example.0	Diferencias: 3, 5, 7, 9
+ma-patterns.c9.example.1	Cuadrados: 1, 4, 9, 16, 25
+ma-patterns.c9.example.2	Suma 1: n² + 1
+ma-units.title	Medidas y unidades
+ma-units.summary	Metros, kilos y por qué importan.
+ma-units.q0.q	¿Cuántos litros hay en 1 m³?
+ma-units.q0.o0	100
+ma-units.q0.o1	1000
+ma-units.q0.o2	10.000
+ma-units.q0.x	1 m³ = 1000 litros.
+ma-units.q1.q	¿Por qué se perdió la Mars Climate Orbiter en 1999?
+ma-units.q1.o0	Un meteorito
+ma-units.q1.o1	Una confusión entre unidades imperiales y métricas
+ma-units.q1.o2	Un virus informático
+ma-units.q1.x	Libras-fuerza frente a newtons.
+ma-units.c0.title	El sistema métrico
+ma-units.c0.text	Nacido en la Francia revolucionaria en la década de 1790, el sistema métrico usa potencias de 10, así que convertir es solo cuestión de mover la coma decimal. Portugal lo adoptó en 1852.
+ma-units.c0.viz.items.0.a	kilo
+ma-units.c0.viz.items.1.a	centi
+ma-units.c0.viz.items.2.a	mili
+ma-units.c0.viz.items.3.a	micro
+ma-units.c0.viz.items.3.b	÷ 1 millón
+ma-units.c1.title	Siete unidades básicas
+ma-units.c1.text	Todas las medidas se construyen a partir de siete unidades básicas del SI. Desde 2019, todas se definen mediante constantes fijas de la naturaleza, no mediante objetos físicos.
+ma-units.c1.viz.items.0	Metro: longitud
+ma-units.c1.viz.items.1	Kilogramo: masa
+ma-units.c1.viz.items.2	Segundo: tiempo
+ma-units.c1.viz.items.3	Amperio: corriente
+ma-units.c1.viz.items.4	Kelvin: temperatura
+ma-units.c1.viz.items.5	Mol: cantidad
+ma-units.c1.viz.items.6	Candela: luz
+ma-units.c2.title	Adiós, Le Grand K
+ma-units.c2.text	Durante 130 años, el kilogramo fue un cilindro de metal guardado en una cámara cerca de París. En 2019 se redefinió mediante la constante de Planck.
+ma-units.c2.viz.events.0.l	kilogramo de metal
+ma-units.c2.viz.events.1.l	se decide redefinirlo
+ma-units.c2.viz.events.2.l	definido por la constante de Planck
+ma-units.c3.title	Unidades de área y volumen
+ma-units.c3.text	1 m² son 10.000 cm², no 100. 1 m³ son 1000 litros. Las unidades se elevan al cuadrado y al cubo junto con las longitudes.
+ma-units.c3.viz.items.0.a	1 m
+ma-units.c3.viz.items.0.b	100 cm
+ma-units.c3.viz.items.1.a	1 m²
+ma-units.c3.viz.items.1.b	10.000 cm²
+ma-units.c3.viz.items.2.a	1 m³
+ma-units.c3.viz.items.2.b	1.000.000 cm³ = 1000 litros
+ma-units.c4.title	Hectáreas
+ma-units.c4.text	Una hectárea son 100 m × 100 m = 10.000 m², aproximadamente un campo de fútbol y medio. Las fincas y los bosques se miden en hectáreas.
+ma-units.c4.viz.items.0.v	10.000 m²
+ma-units.c4.viz.items.0.l	una hectárea
+ma-units.c4.viz.items.1.v	100 ha
+ma-units.c4.viz.items.1.l	un km²
+ma-units.c4.viz.items.2.l	campos de fútbol
+ma-units.c5.title	Unidades imperiales
+ma-units.c5.text	El Reino Unido y EE. UU. siguen usando millas, libras y grados Fahrenheit. Conversiones rápidas: 1 milla ≈ 1,6 km, 1 kg ≈ 2,2 lb, 1 pulgada = 2,54 cm.
+ma-units.c5.viz.items.0.a	1 milla
+ma-units.c5.viz.items.0.b	1,609 km
+ma-units.c5.viz.items.1.a	1 kg
+ma-units.c5.viz.items.1.b	2,205 lb
+ma-units.c5.viz.items.2.a	1 pulgada
+ma-units.c5.viz.items.2.b	2,54 cm
+ma-units.c5.viz.items.3.a	1 galón EE. UU.
+ma-units.c5.viz.items.3.b	3,79 litros
+ma-units.c6.title	La Mars Climate Orbiter
+ma-units.c6.text	En 1999, una sonda de la NASA se perdió en Marte porque un equipo usaba libras-fuerza y otro, newtons. El error de 125 millones de $ fue una confusión de unidades.
+ma-units.c6.viz.steps.0	Equipo A: unidades imperiales
+ma-units.c6.viz.steps.1	Equipo B: métricas
+ma-units.c6.viz.steps.2	Datos de propulsión erróneos
+ma-units.c6.viz.steps.3	Sonda perdida en Marte
+ma-units.c7.title	Cifras significativas
+ma-units.c7.text	La precisión debe corresponderse con la medida. Una habitación medida como 4,2 m de lado no tiene un área de 17,64 m² exactos; di unos 17,6 m².
+ma-units.c7.viz.items.0.w	17,6400 m²
+ma-units.c7.viz.items.0.r	unos 17,6 m²
+ma-units.c8.title	Unidades de velocidad
+ma-units.c8.text	Divide los km/h entre 3,6 para obtener metros por segundo. 120 km/h son unos 33 m/s: un coche recorre un campo de fútbol cada tres segundos.
+ma-units.c8.viz.f	m/s = km/h ÷ 3,6
+ma-units.c8.viz.items.0.s	km/h
+ma-units.c8.viz.items.0.m	kilómetros por hora
+ma-units.c8.viz.items.1.s	m/s
+ma-units.c8.viz.items.1.m	metros por segundo
+ma-units.c9.title	Unidades de energía
+ma-units.c9.text	Un kilovatio hora hace funcionar una estufa de 1000 W durante una hora. Una Caloría alimentaria son 1000 calorías, unos 4,2 kJ. Una ducha caliente gasta unos 2–3 kWh.
+ma-units.c9.viz.items.0.a	1 kWh
+ma-units.c9.viz.items.0.b	3,6 millones de julios
+ma-units.c9.viz.items.1.a	1 kcal
+ma-units.c9.viz.items.1.b	4,18 kJ
+ma-units.c9.viz.items.2.a	Ducha caliente
+ma-units.c9.viz.items.2.b	unos 2–3 kWh
+ma-puzzles.title	Acertijos famosos
+ma-puzzles.summary	Rompecabezas con matemáticas profundas.
+ma-puzzles.q0.q	¿Cuántos apretones de manos hay si 10 personas se saludan todas una vez?
+ma-puzzles.q0.o0	90
+ma-puzzles.q0.o1	45
+ma-puzzles.q0.o2	100
+ma-puzzles.q0.x	10 × 9 ÷ 2.
+ma-puzzles.q1.q	¿Es 0,999… periódico igual a 1?
+ma-puzzles.q1.o0	No, es un poco menor
+ma-puzzles.q1.o1	Sí, exactamente
+ma-puzzles.q1.o2	Solo aproximadamente
+ma-puzzles.q1.x	3 × 0,333… = 0,999… = 1.
+ma-puzzles.c0.title	La torre de Hanói
+ma-puzzles.c0.text	Mueve una pila de discos a otra varilla, de uno en uno, sin poner nunca un disco grande sobre uno más pequeño. Con n discos hacen falta 2ⁿ − 1 movimientos.
+ma-puzzles.c0.viz.unit	movimientos mínimos
+ma-puzzles.c0.viz.items.0.l	3 discos
+ma-puzzles.c0.viz.items.1.l	5 discos
+ma-puzzles.c0.viz.items.2.l	7 discos
+ma-puzzles.c0.viz.items.3.l	10 discos
+ma-puzzles.c1.title	El cuadrado perdido
+ma-puzzles.c1.text	Al recolocar cuatro piezas de un triángulo parece aparecer un hueco. El truco: las «hipotenusas» no son líneas rectas, así que las figuras son ligeramente distintas.
+ma-puzzles.c1.viz.items.0.w	El área desaparece
+ma-puzzles.c1.viz.items.0.r	Los bordes están algo doblados: las figuras no son iguales
+ma-puzzles.c2.title	El problema de los apretones de manos
+ma-puzzles.c2.text	Si 10 personas se dan la mano todas una vez, ¿cuántos apretones hay? Cada una estrecha 9 manos, pero en cada apretón participan dos: 10 × 9 ÷ 2 = 45.
+ma-puzzles.c2.example.0	10 personas × 9 más = 90
+ma-puzzles.c2.example.1	Cada uno contado dos veces
+ma-puzzles.c2.example.2	90 ÷ 2 = 45
+ma-puzzles.c2.viz.f	apretones = n(n − 1) ÷ 2
+ma-puzzles.c2.viz.items.0.s	n
+ma-puzzles.c2.viz.items.0.m	número de personas
+ma-puzzles.c2.viz.items.1.s	10 personas
+ma-puzzles.c3.title	El principio del palomar
+ma-puzzles.c3.text	Si metes 13 calcetines en 12 cajones, al menos un cajón tendrá dos. Sencillo pero potente: en Lisboa, al menos dos personas tienen exactamente el mismo número de pelos en la cabeza.
+ma-puzzles.c3.viz.steps.0	Más objetos que cajas
+ma-puzzles.c3.viz.steps.1	Una caja tiene al menos dos
+ma-puzzles.c4.title	El acertijo del 0,999…
+ma-puzzles.c4.text	0,999…, con nueves que se repiten sin fin, es exactamente igual a 1. Una demostración: 1/3 = 0,333…, así que 3 × 1/3 = 0,999… = 1.
+ma-puzzles.c4.example.0	1/3 = 0,333…
+ma-puzzles.c4.example.1	× 3
+ma-puzzles.c4.example.2	0,999… = 1
+ma-puzzles.c5.title	El hotel de Hilbert
+ma-puzzles.c5.text	Un hotel con infinitas habitaciones está lleno. Llega un nuevo huésped: pasa a cada cliente de la habitación n a la n + 1, y la habitación 1 queda libre. El infinito se comporta de forma extraña.
+ma-puzzles.c5.viz.steps.0	Hotel lleno
+ma-puzzles.c5.viz.steps.1	Todos suben una habitación
+ma-puzzles.c5.viz.steps.2	Habitación 1 libre
+ma-puzzles.c5.viz.steps.3	Entra el nuevo huésped
+ma-puzzles.c6.title	Veraces y mentirosos
+ma-puzzles.c6.text	En una isla, los caballeros siempre dicen la verdad y los bribones siempre mienten. Pregunta a cualquiera «¿qué diría el otro?» e invierte la respuesta para dar con la verdad.
+ma-puzzles.c6.viz.items.0.a	Caballero
+ma-puzzles.c6.viz.items.0.b	siempre dice la verdad
+ma-puzzles.c6.viz.items.1.a	Bribón
+ma-puzzles.c6.viz.items.1.b	siempre miente
+ma-puzzles.c6.viz.items.2.a	Truco
+ma-puzzles.c6.viz.items.2.b	pregunta por la respuesta del otro
+ma-puzzles.c7.title	El sudoku es lógica
+ma-puzzles.c7.text	El sudoku no requiere aritmética, solo lógica: cada fila, columna y caja contiene del 1 al 9 una vez. Un sudoku bien hecho tiene exactamente una solución.
+ma-puzzles.c7.viz.items.0	Cada fila: 1–9
+ma-puzzles.c7.viz.items.1	Cada columna: 1–9
+ma-puzzles.c7.viz.items.2	Cada caja 3×3: 1–9
+ma-puzzles.c7.viz.items.3	Una única solución
+ma-puzzles.c8.title	Los siete puentes hoy
+ma-puzzles.c8.text	La idea de Euler se usa en la recogida de basuras y en las rutas de reparto postal: planificar recorridos que pasen por cada calle una vez, repitiendo tramos lo menos posible.
+ma-puzzles.c8.viz.steps.0	Mapa de calles
+ma-puzzles.c8.viz.steps.1	Busca cruces impares
+ma-puzzles.c8.viz.steps.2	Añade repeticiones mínimas
+ma-puzzles.c8.viz.steps.3	Ruta eficiente
+ma-puzzles.c9.title	El lobo, la cabra y la col, resuelto
+ma-puzzles.c9.text	La clave era llevar algo de vuelta. Muchos acertijos necesitan un paso que parece ir hacia atrás, una lección también para resolver problemas reales.
+ma-puzzles.c9.viz.steps.0	Cruza la cabra
+ma-puzzles.c9.viz.steps.1	Cruza el lobo
+ma-puzzles.c9.viz.steps.2	Vuelve la cabra
+ma-puzzles.c9.viz.steps.3	Cruza la col
+ma-puzzles.c9.viz.steps.4	Cruza la cabra

@@ -892,7 +892,7 @@ el-earthing.c2.viz.r.items.0	cortocircuitos
 el-earthing.c2.viz.r.items.1	milisegundos
 el-earthing.c3.title	Curvas de los magnetotérmicos
 el-earthing.c3.text	El tipo B dispara magnéticamente a 3–5 veces su calibre, adecuado para viviendas. El tipo C, a 5–10 veces, para motores e iluminación con gran corriente de arranque. El tipo D, a 10–20 veces, para motores industriales pesados.
-el-earthing.c3.viz.unit	disparo magnético (× corriente nominal, límite superior)
+el-earthing.c3.viz.unit	disparo (× corriente nominal)
 el-earthing.c3.viz.items.0.l	B
 el-earthing.c3.viz.items.1.l	C
 el-earthing.c3.viz.items.2.l	D
@@ -972,7 +972,7 @@ el-3phase.c1.viz.items.2.m	fase a fase
 el-3phase.c2.title	Potencia trifásica
 el-3phase.c2.text	La trifásica transporta unas tres veces la potencia de una sola fase con la misma corriente por hilo.
 el-3phase.c2.example.0	16 A por fase a 400 V, cos φ = 1
-el-3phase.c2.example.1	1,732 × 400 × 16
+el-3phase.c2.example.1	1732 × 400 × 16
 el-3phase.c2.example.2	≈ 11 kW
 el-3phase.c2.viz.f	P = √3 × V × I × cos φ
 el-3phase.c2.viz.items.0.s	V
@@ -1433,7 +1433,7 @@ el-heat.c4.viz.items.0.s	1 L
 el-heat.c4.viz.items.0.m	agua
 el-heat.c4.viz.items.1.s	80 °C
 el-heat.c4.viz.items.1.m	subida de temperatura
-el-heat.c4.viz.items.2.s	≈ 0,093 kWh
+el-heat.c4.viz.items.2.s	≈ 0093 kWh
 el-heat.c4.viz.items.2.m	energía
 el-heat.c5.title	Inducción frente a vitrocerámica frente a gas
 el-heat.c5.text	La inducción calienta la sartén directamente y tiene una eficiencia de un 85–90 %. Las vitrocerámicas (radiantes) rondan el 70 %, y los quemadores de gas, el 40–55 %. La inducción además es más rápida y fácil de controlar.
@@ -1498,3 +1498,302 @@ el-static.c2.text	Las descargas electrostáticas pueden destruir chips con tensi
 el-static.c2.viz.items.0	Lleva una pulsera antiestática
 el-static.c2.viz.items.1	Usa alfombrillas y bolsas antiestáticas
 el-static.c2.viz.items.2	Toca primero metal con toma de tierra
+el-static.c2.viz.items.3	Evita ropa sintética seca
+el-static.c3.title	Cómo se forma un rayo
+el-static.c3.text	Dentro de las nubes de tormenta, los cristales de hielo y el granizo blando chocan en fuertes corrientes ascendentes y separan las cargas. La parte superior de la nube queda positiva y la inferior negativa, hasta que el aire se rompe en una chispa gigante.
+el-static.c3.viz.steps.0	Aire ascendente
+el-static.c3.viz.steps.1	Chocan partículas de hielo
+el-static.c3.viz.steps.2	Se separan cargas en la nube
+el-static.c3.viz.steps.3	El aire se rompe: rayo
+el-static.c4.title	El rayo en cifras
+el-static.c4.text	Un rayo típico lleva unos 30 000 amperios, a cientos de millones de voltios, durante unos pocos microsegundos, y calienta el aire a unos 30 000 °C, unas cinco veces más que la superficie del Sol.
+el-static.c4.viz.items.0.v	30 000 A
+el-static.c4.viz.items.0.l	corriente típica
+el-static.c4.viz.items.1.v	~30 000 °C
+el-static.c4.viz.items.1.l	temperatura del aire
+el-static.c4.viz.items.2.l	rayos por segundo en el mundo
+el-static.c5.title	Pararrayos
+el-static.c5.text	Un pararrayos ofrece un camino fácil a tierra, así que la descarga baja con seguridad por un conductor en lugar de atravesar el edificio. Benjamin Franklin los popularizó en la década de 1750.
+el-static.c5.viz.steps.0	El rayo cae en la punta
+el-static.c5.viz.steps.1	Conductor de bajada
+el-static.c5.viz.steps.2	Electrodo de tierra
+el-static.c5.viz.steps.3	Edificio a salvo
+el-static.c6.title	A salvo en el coche
+el-static.c6.text	La carrocería metálica de un coche actúa como una jaula de Faraday: la corriente circula por el exterior de la carcasa metálica, no a través de las personas de dentro. Lo que te protege es el metal, no los neumáticos de goma.
+el-static.c6.viz.items.0.w	los neumáticos de goma te protegen
+el-static.c6.viz.items.0.r	la carrocería metálica lleva la corriente a tu alrededor
+el-static.c7.title	Seguridad al aire libre
+el-static.c7.text	Si oyes truenos, estás al alcance de un rayo. Entra en un edificio o en un coche, aléjate de árboles altos aislados, cimas y agua, y espera 30 minutos después del último trueno.
+el-static.c7.viz.items.0	¿Oyes truenos? A cubierto
+el-static.c7.viz.items.1	Evita árboles aislados y cimas
+el-static.c7.viz.items.2	Sal del agua
+el-static.c7.viz.items.3	Espera 30 minutos tras el último trueno
+el-static.c8.title	Sobretensiones en casa
+el-static.c8.text	Un rayo cercano puede inducir sobretensiones en las líneas eléctricas y telefónicas que dañan la electrónica. Ayudan los protectores contra sobretensiones en el cuadro y en los equipos sensibles.
+el-static.c8.viz.steps.0	Rayo cercano
+el-static.c8.viz.steps.1	Sobretensión en las líneas
+el-static.c8.viz.steps.2	El SPD la desvía a tierra
+el-static.c8.viz.steps.3	Aparatos protegidos
+el-static.c9.title	La estática en la industria
+el-static.c9.text	El combustible en movimiento, los polvos y las láminas de plástico pueden acumular una estática peligrosa. Las gasolineras, los silos de grano y los talleres de pintura usan puesta a tierra y conexiones equipotenciales para evitar chispas que puedan inflamar vapores o polvo.
+el-static.c9.viz.items.0	Conecta a tierra las cisternas antes de descargar
+el-static.c9.viz.items.1	Une tuberías y contenedores
+el-static.c9.viz.items.2	Controla la humedad
+el-static.c9.viz.items.3	Usa materiales antiestáticos
+el-safety.title	Seguridad eléctrica
+el-safety.summary	Normas que mantienen a salvo a las personas y las casas.
+el-safety.q0.q	¿Qué debes hacer primero si alguien se ha quedado pegado a un aparato con tensión?
+el-safety.q0.o0	Tirarle del brazo
+el-safety.q0.o1	Cortar la corriente o separarlo con algo seco y no conductor
+el-safety.q0.o2	Echarle agua
+el-safety.q0.x	Nunca lo toques mientras esté en tensión.
+el-safety.q1.q	¿Por qué son peligrosas las conexiones flojas?
+el-safety.q1.o0	Desperdician agua
+el-safety.q1.o1	Su mayor resistencia hace que se calienten y pueden provocar incendios
+el-safety.q1.o2	Bajan la tensión a cero
+el-safety.q1.x	El calor y la oxidación las empeoran.
+el-safety.q2.q	¿Qué trabajo debe dejarse a un electricista cualificado?
+el-safety.q2.o0	Cambiar una bombilla
+el-safety.q2.o1	Añadir un circuito nuevo al cuadro
+el-safety.q2.o2	Rearmar un automático
+el-safety.q2.x	Los trabajos en la instalación fija requieren un profesional.
+el-safety.c0.title	Tres peligros
+el-safety.c0.text	La electricidad hace daño de tres formas: descarga eléctrica (corriente a través del cuerpo), quemaduras (por arcos o superficies calientes) e incendio (por cables o conexiones sobrecalentados).
+el-safety.c0.viz.root	Peligros
+el-safety.c0.viz.items.0	Descarga
+el-safety.c0.viz.items.1	Quemaduras y arcos
+el-safety.c0.viz.items.2	Incendio
+el-safety.c1.title	El recorrido de la corriente importa
+el-safety.c1.text	La corriente de mano a mano o de mano a pie atraviesa el pecho y el corazón, los recorridos más peligrosos. La piel mojada tiene mucha menos resistencia y deja pasar más corriente con la misma tensión.
+el-safety.c1.viz.l.t	Piel seca
+el-safety.c1.viz.l.items.0	más resistencia
+el-safety.c1.viz.l.items.1	menos corriente
+el-safety.c1.viz.r.t	Piel mojada
+el-safety.c1.viz.r.items.0	mucha menos resistencia
+el-safety.c1.viz.r.items.1	mucha más corriente
+el-safety.c2.title	Agua y electricidad
+el-safety.c2.text	Los baños y las cocinas tienen normas especiales: unas zonas alrededor de bañeras y duchas limitan qué equipos pueden ir en cada sitio, y todos los circuitos deben estar protegidos por un diferencial de 30 mA.
+el-safety.c2.viz.items.0	Sin enchufes normales cerca de la bañera
+el-safety.c2.viz.items.1	Equipos con grado IP en zonas húmedas
+el-safety.c2.viz.items.2	Protección diferencial de 30 mA
+el-safety.c2.viz.items.3	Nunca uses aparatos de red en la bañera
+el-safety.c3.title	Conexiones flojas
+el-safety.c3.text	Un borne de tornillo flojo tiene poca superficie de contacto y más resistencia, así que se calienta, se oxida y se calienta aún más. Muchos incendios eléctricos empiezan en una conexión, no en mitad de un cable.
+el-safety.c3.viz.steps.0	Borne flojo
+el-safety.c3.viz.steps.1	Más resistencia
+el-safety.c3.viz.steps.2	Calor y oxidación
+el-safety.c3.viz.steps.3	Contacto aún peor
+el-safety.c4.title	Señales de alarma
+el-safety.c4.text	Llama a un electricista si ves marcas de quemado, hueles a plástico quemado, oyes chisporroteos, notas enchufes o interruptores calientes, o si los automáticos saltan una y otra vez.
+el-safety.c4.viz.items.0	Marcas de quemado
+el-safety.c4.viz.items.1	Olor a quemado
+el-safety.c4.viz.items.2	Chisporroteo o zumbido
+el-safety.c4.viz.items.3	Enchufes o clavijas calientes
+el-safety.c4.viz.items.4	Disparos repetidos
+el-safety.c5.title	Si alguien está recibiendo una descarga
+el-safety.c5.text	No lo toques mientras esté en contacto con la fuente. Corta la corriente o sepáralo con algo seco y no conductor, llama al 112 y empieza la RCP si hace falta.
+el-safety.c5.viz.steps.0	No lo toques
+el-safety.c5.viz.steps.1	Corta la corriente
+el-safety.c5.viz.steps.2	Llama al 112
+el-safety.c5.viz.steps.3	Comprueba la respiración, inicia RCP
+el-safety.c6.title	Límites del bricolaje
+el-safety.c6.text	Cambiar una bombilla o enchufar aparatos no tiene problema. Los circuitos nuevos, los trabajos en el cuadro y todo lo que sea instalación fija debe hacerlo un electricista cualificado, y en Portugal las instalaciones nuevas necesitan certificación.
+el-safety.c6.viz.l.t	Hazlo tú
+el-safety.c6.viz.l.items.0	bombillas
+el-safety.c6.viz.l.items.1	clavijas de aparatos
+el-safety.c6.viz.l.items.2	rearmar automáticos
+el-safety.c6.viz.r.t	Electricista
+el-safety.c6.viz.r.items.0	circuitos nuevos
+el-safety.c6.viz.r.items.1	cuadro eléctrico
+el-safety.c6.viz.r.items.2	cargadores VE, solar
+el-safety.c7.title	Regletas sobrecargadas
+el-safety.c7.text	Enchufar varios aparatos de alta potencia en una misma regleta puede sobrecargarla, y también el enchufe de la pared. Los calefactores, hervidores y planchas deben tener cada uno su propio enchufe de pared.
+el-safety.c7.viz.items.0.w	calefactor + hervidor en una regleta
+el-safety.c7.viz.items.0.r	un aparato potente por enchufe de pared
+el-safety.c8.title	Líneas aéreas
+el-safety.c8.text	Nunca vueles drones o cometas, ni levantes escaleras o mástiles de barco, cerca de líneas eléctricas aéreas. La alta tensión puede saltar en arco por el aire sin que haya contacto.
+el-safety.c8.viz.items.0	Escaleras bien lejos
+el-safety.c8.viz.items.1	Ni cometas ni drones cerca de líneas
+el-safety.c8.viz.items.2	Ojo con mástiles y grúas
+el-safety.c8.viz.items.3	Avisa de cables caídos, no te acerques
+el-safety.c9.title	El mito de los 230 V
+el-safety.c9.text	«Solo 230 V» bastan para matar. Lo que importa es la corriente que atraviesa el cuerpo, y a 230 V un recorrido de mano a mano con la piel mojada puede dejar pasar fácilmente más de los 30–50 mA que pueden alterar el corazón.
+el-safety.c9.viz.f	I = V ÷ R
+el-safety.c9.viz.items.0.s	230 V
+el-safety.c9.viz.items.0.m	red
+el-safety.c9.viz.items.1.s	~1000 Ω
+el-safety.c9.viz.items.1.m	cuerpo mojado
+el-safety.c9.viz.items.2.s	≈ 230 mA
+el-safety.c9.viz.items.2.m	corriente peligrosa
+el-backup.title	Baterías domésticas y respaldo
+el-backup.summary	Almacenar energía solar y mantener la luz encendida.
+el-backup.q0.q	¿Por qué muchas instalaciones solares se apagan durante un apagón?
+el-backup.q0.o0	Para proteger los paneles
+el-backup.q0.o1	Para no inyectar energía en líneas que los operarios creen sin tensión
+el-backup.q0.o2	Porque se pone el sol
+el-backup.q0.x	La protección anti-isla protege a los operarios de la red.
+el-backup.q1.q	¿Cómo debes dimensionar una batería doméstica?
+el-backup.q1.o0	Igual que la potencia de los paneles
+el-backup.q1.o1	Según tu consumo de tarde-noche y de noche
+el-backup.q1.o2	Siempre lo más grande posible
+el-backup.q1.x	Almacena lo que, si no, comprarías tras la puesta de sol.
+el-backup.q2.q	¿Dónde debe funcionar un generador de gasolina?
+el-backup.q2.o0	En el garaje
+el-backup.q2.o1	Al aire libre, lejos de las ventanas
+el-backup.q2.o2	En la cocina
+el-backup.q2.x	El monóxido de carbono es mortal.
+el-backup.c0.title	¿Por qué una batería en casa?
+el-backup.c0.text	Una batería guarda el excedente solar del mediodía para la noche, aumentando el autoconsumo, y puede trasladar la energía barata de la noche a las horas caras. Algunos sistemas también dan respaldo durante los cortes.
+el-backup.c0.viz.steps.0	Excedente solar a mediodía
+el-backup.c0.viz.steps.1	Carga la batería
+el-backup.c0.viz.steps.2	Uso por la noche
+el-backup.c0.viz.steps.3	Menos compra a la red
+el-backup.c1.title	Dimensionar una batería
+el-backup.c1.text	Dimensiona la batería según tu consumo de tarde-noche y de noche, no el de todo el día. Muchas casas consumen 5–10 kWh entre la puesta y la salida del sol.
+el-backup.c1.viz.f	kWh ≈ uso nocturno ÷ profundidad útil
+el-backup.c1.viz.items.0.s	6 kWh
+el-backup.c1.viz.items.0.m	uso nocturno
+el-backup.c1.viz.items.1.m	profundidad útil
+el-backup.c1.viz.items.2.s	≈ 6,7 kWh
+el-backup.c1.viz.items.2.m	tamaño de batería
+el-backup.c2.title	Inversores híbridos
+el-backup.c2.text	Un inversor híbrido conecta paneles, batería, casa y red, y decide hacia dónde va la energía: primero a la casa, luego a la batería y después a la red.
+el-backup.c2.viz.steps.0	Paneles
+el-backup.c2.viz.steps.1	Inversor híbrido
+el-backup.c2.viz.steps.2	Primero la casa
+el-backup.c2.viz.steps.3	Luego la batería
+el-backup.c2.viz.steps.4	Luego la red
+el-backup.c3.title	El respaldo no es automático
+el-backup.c3.text	Muchas instalaciones solares conectadas a red se apagan durante un apagón por seguridad, para que los operarios no sufran daños por energía devuelta a la línea. El respaldo necesita un inversor con conmutación en isla y un circuito de respaldo.
+el-backup.c3.viz.l.t	Solo conexión a red
+el-backup.c3.viz.l.items.0	se apaga en un apagón
+el-backup.c3.viz.l.items.1	sin respaldo
+el-backup.c3.viz.r.t	Híbrido con respaldo
+el-backup.c3.viz.r.items.0	se aísla de la red
+el-backup.c3.viz.r.items.1	alimenta lo esencial
+el-backup.c4.title	Cargas esenciales
+el-backup.c4.text	En lugar de dar respaldo a toda la casa, muchos sistemas alimentan un cuadro de «cargas esenciales»: nevera, luces, router, control de la caldera y algunos enchufes.
+el-backup.c4.viz.items.0	Nevera y congelador
+el-backup.c4.viz.items.1	Luces
+el-backup.c4.viz.items.2	Router y red
+el-backup.c4.viz.items.3	Control de calefacción
+el-backup.c4.viz.items.4	Algunos enchufes
+el-backup.c5.title	SAI para la electrónica
+el-backup.c5.text	Un sistema de alimentación ininterrumpida (SAI) mantiene funcionando un ordenador, un NAS o la red durante minutos en un corte y permite un apagado ordenado. Se especifica en VA y en autonomía con una carga dada.
+el-backup.c5.viz.steps.0	Falla la red
+el-backup.c5.viz.steps.1	La batería del SAI entra en milisegundos
+el-backup.c5.viz.steps.2	Minutos de autonomía
+el-backup.c5.viz.steps.3	Apagado ordenado
+el-backup.c6.title	Generadores
+el-backup.c6.text	Los generadores portátiles de gasolina dan respaldo, pero nunca deben funcionar en interiores (monóxido de carbono). Conectar uno a la casa requiere un conmutador adecuado para que no pueda inyectar energía en la red.
+el-backup.c6.viz.items.0.w	alargador al cuadro
+el-backup.c6.viz.items.0.r	conmutador instalado por un electricista
+el-backup.c6.viz.items.1.w	ponerlo en el garaje
+el-backup.c6.viz.items.1.r	ponerlo fuera, lejos de las ventanas
+el-backup.c7.title	Del vehículo a la casa
+el-backup.c7.text	Algunos VE pueden alimentar una casa mediante carga bidireccional (V2H) o dar corriente a aparatos a través de un enchufe (V2L). Una batería de VE de 70 kWh podría abastecer una casa típica durante días.
+el-backup.c7.viz.items.0.a	V2L
+el-backup.c7.viz.items.0.b	enchufes desde el coche
+el-backup.c7.viz.items.1.a	V2H
+el-backup.c7.viz.items.1.b	alimenta la casa
+el-backup.c7.viz.items.2.a	V2G
+el-backup.c7.viz.items.2.b	inyecta a la red
+el-backup.c8.title	Economía
+el-backup.c8.text	Las baterías domésticas no siempre se amortizan solo con el ahorro. Salen más a cuenta con un gran consumo de tarde-noche, tarifas con discriminación horaria, precios bajos por la energía vertida o una gran necesidad de respaldo.
+el-backup.c8.viz.items.0	Mucho consumo por la noche
+el-backup.c8.viz.items.1	Gran diferencia entre punta y valle
+el-backup.c8.viz.items.2	Poco pago por la solar vertida
+el-backup.c8.viz.items.3	Cortes frecuentes
+el-backup.c9.title	Seguridad y ubicación
+el-backup.c9.text	Instala las baterías en un lugar ventilado, fresco y seco, lejos de dormitorios y salidas, con las distancias que indique el fabricante. Para casas se prefiere la química LFP porque es más estable térmicamente.
+el-backup.c9.viz.items.0	Fresco, seco, ventilado
+el-backup.c9.viz.items.1	Sin bloquear salidas
+el-backup.c9.viz.items.2	Distancias del fabricante
+el-backup.c9.viz.items.3	Mejor química LFP
+el-history.title	Una historia de la electricidad
+el-history.summary	Del ámbar a la red inteligente.
+el-history.q0.q	El voltio debe su nombre a…
+el-history.q0.o0	James Watt
+el-history.q0.o1	Alessandro Volta
+el-history.q0.o2	Michael Faraday
+el-history.q0.x	Volta construyó la primera pila en 1800.
+el-history.q1.q	¿Quién descubrió la inducción electromagnética en 1831?
+el-history.q1.o0	Edison
+el-history.q1.o1	Faraday
+el-history.q1.o2	Maxwell
+el-history.q1.x	Faraday demostró que los imanes en movimiento inducen corriente.
+el-history.q2.q	¿Qué sustituyó el transistor de 1947?
+el-history.q2.o0	Las pilas
+el-history.q2.o1	Las válvulas de vacío
+el-history.q2.o2	Los cables de cobre
+el-history.q2.x	Los transistores hicieron la electrónica pequeña y fiable.
+el-history.c0.title	El ámbar y la palabra «eléctrico»
+el-history.c0.text	Los antiguos griegos observaron que el ámbar frotado atraía plumas. La palabra griega para el ámbar, «elektron», nos dio «electricidad», un término acuñado por William Gilbert hacia 1600.
+el-history.c0.viz.events.0.y	~600 a. C.
+el-history.c0.viz.events.0.l	Tales y el ámbar
+el-history.c0.viz.events.1.l	Gilbert acuña «electricus»
+el-history.c0.viz.events.2.l	La cometa de Franklin
+el-history.c0.viz.events.3.l	La pila de Volta
+el-history.c1.title	La pila de Volta, 1800
+el-history.c1.text	Alessandro Volta apiló discos de zinc y cobre separados por paños empapados en salmuera: la primera pila que daba una corriente estable. El voltio lleva su nombre.
+el-history.c1.viz.steps.0	Disco de zinc
+el-history.c1.viz.steps.1	Paño con salmuera
+el-history.c1.viz.steps.2	Disco de cobre
+el-history.c1.viz.steps.3	Repetir: corriente estable
+el-history.c2.title	Los descubrimientos de Faraday
+el-history.c2.text	En 1831, Michael Faraday demostró que los imanes en movimiento inducen corrientes, la base de todo generador y transformador. Apenas tuvo educación formal y se convirtió en uno de los mayores experimentadores de la historia.
+el-history.c2.viz.items.0.l	inducción electromagnética
+el-history.c2.viz.items.1.l	descubrimiento tras todo generador
+el-history.c3.title	Las ecuaciones de Maxwell
+el-history.c3.text	En la década de 1860, James Clerk Maxwell escribió cuatro ecuaciones que unificaban la electricidad, el magnetismo y la luz. Predijeron las ondas de radio, que Hertz demostró en 1887.
+el-history.c3.viz.events.0.l	Teoría de Maxwell
+el-history.c3.viz.events.1.l	Hertz crea ondas de radio
+el-history.c3.viz.events.2.l	La radio de Marconi
+el-history.c4.title	Las bombillas
+el-history.c4.text	Muchos inventores trabajaron en la luz eléctrica. En 1879, Edison y, en Gran Bretaña, Swan produjeron bombillas prácticas y duraderas de filamento de carbono. Edison también construyó las centrales y la red para vender electricidad.
+el-history.c4.viz.events.0.l	bombillas incandescentes prácticas
+el-history.c4.viz.events.1.l	central de Pearl Street, Nueva York
+el-history.c4.viz.events.2.y	años 20
+el-history.c4.viz.events.2.l	electrificación general de hogares en EE. UU.
+el-history.c5.title	La electricidad en Portugal
+el-history.c5.text	Las primeras luces eléctricas de Portugal se encendieron en Cascais en 1878. Las grandes presas hidroeléctricas construidas desde la década de 1950 en ríos como el Zêzere y el Duero impulsaron la electrificación del país.
+el-history.c5.viz.events.0.l	primeras luces eléctricas, Cascais
+el-history.c5.viz.events.1.l	Presa de Castelo do Bode
+el-history.c5.viz.events.2.y	años 60–70
+el-history.c5.viz.events.2.l	presas del Duero
+el-history.c5.viz.events.3.y	años 2000
+el-history.c5.viz.events.3.l	auge eólico
+el-history.c6.title	El transistor, 1947
+el-history.c6.text	En los Bell Labs, Bardeen, Brattain y Shockley construyeron el primer transistor. Sustituyó a las voluminosas válvulas de vacío e hizo posibles la electrónica moderna, los ordenadores y los móviles.
+el-history.c6.viz.steps.0	Válvulas de vacío
+el-history.c6.viz.steps.1	Transistor 1947
+el-history.c6.viz.steps.2	Circuito integrado 1958
+el-history.c6.viz.steps.3	Miles de millones por chip hoy
+el-history.c7.title	Nuclear y renovables
+el-history.c7.text	Las primeras centrales nucleares aparecieron en la década de 1950. Desde los años 2000, la eólica y después la solar crecieron rápidamente a medida que bajaban los costes; el precio de los módulos solares cayó alrededor de un 90 % en la década de 2010.
+el-history.c7.viz.events.0.l	primera nuclear conectada a red (Óbninsk)
+el-history.c7.viz.events.1.y	años 80
+el-history.c7.viz.events.1.l	primeros parques eólicos
+el-history.c7.viz.events.2.y	años 2010
+el-history.c7.viz.events.2.l	la solar se abarata ~90 %
+el-history.c7.viz.events.3.y	años 2020
+el-history.c7.viz.events.3.l	las renovables lideran la nueva potencia
+el-history.c8.title	Unidades con nombre de persona
+el-history.c8.text	Muchas unidades honran a científicos: voltio (Volta), amperio (Ampère), ohmio (Ohm), vatio (Watt), hercio (Hertz), culombio (Coulomb), tesla (Tesla).
+el-history.c8.viz.items.0.a	voltio
+el-history.c8.viz.items.0.b	Alessandro Volta
+el-history.c8.viz.items.1.a	amperio
+el-history.c8.viz.items.1.b	André-Marie Ampère
+el-history.c8.viz.items.2.a	ohmio
+el-history.c8.viz.items.2.b	Georg Ohm
+el-history.c8.viz.items.3.a	vatio
+el-history.c8.viz.items.3.b	James Watt
+el-history.c8.viz.items.4.a	hercio
+el-history.c8.viz.items.4.b	Heinrich Hertz
+el-history.c9.title	Lo que viene
+el-history.c9.text	La electricidad está asumiendo una parte cada vez mayor del uso de energía: coches, calefacción, industria. Los retos ahora son el almacenamiento, la ampliación de la red y casar la oferta renovable variable con la demanda.
+el-history.c9.viz.items.0	Transporte eléctrico
+el-history.c9.viz.items.1	Bombas de calor
+el-history.c9.viz.items.2	Almacenamiento en red
+el-history.c9.viz.items.3	Redes más grandes e inteligentes
+el-history.c9.viz.items.4	Hidrógeno verde para la industria

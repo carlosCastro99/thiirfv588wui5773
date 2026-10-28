@@ -1198,3 +1198,313 @@ me-thermo.c8.viz.items.2.m	interior menos exterior
 me-thermo.c9.title	Cambios de fase
 me-thermo.c9.text	Fundir hielo y hervir agua absorben grandes cantidades de energía sin que cambie la temperatura. Convertir 1 kg de agua a 100 °C en vapor requiere unos 2,26 MJ, más de cinco veces la energía necesaria para calentarla de 0 a 100 °C.
 me-thermo.c9.viz.unit	kJ por kg de agua
+me-thermo.c9.viz.items.0.l	Calentar 0→100 °C
+me-thermo.c9.viz.items.1.l	Hervir a 100 °C
+me-wood.title	Madera y carpintería
+me-wood.summary	Veta, humedad, uniones y madera en la construcción.
+me-wood.q0.q	¿Por qué hay que dejar holgura para que la madera se mueva en un suelo?
+me-wood.q0.o0	Para ahorrar madera
+me-wood.q0.o1	La madera se contrae y se hincha con la humedad
+me-wood.q0.o2	Para los cables
+me-wood.q0.x	La humedad cambia su tamaño.
+me-wood.q1.q	La madera de interior debe secarse hasta aproximadamente…
+me-wood.q1.o0	50 % de humedad
+me-wood.q1.o1	8–12 % de humedad
+me-wood.q1.o2	0 % de humedad
+me-wood.q1.x	Debe estar en equilibrio con el aire interior.
+me-wood.q2.q	¿Qué país es el mayor productor de corcho del mundo?
+me-wood.q2.o0	España
+me-wood.q2.o1	Portugal
+me-wood.q2.o2	Francia
+me-wood.q2.x	Portugal produce aproximadamente la mitad del corcho del mundo.
+me-wood.c0.title	Maderas duras y blandas
+me-wood.c0.text	Las maderas blandas proceden de coníferas (pino, abeto): crecen rápido, son ligeras y se usan en estructuras. Las maderas duras proceden de frondosas (roble, castaño, eucalipto): suelen ser más densas y duraderas.
+me-wood.c0.viz.l.t	Madera blanda
+me-wood.c0.viz.l.items.0	pino, abeto
+me-wood.c0.viz.l.items.1	ligera
+me-wood.c0.viz.l.items.2	estructuras y tejados
+me-wood.c0.viz.r.t	Madera dura
+me-wood.c0.viz.r.items.0	roble, castaño
+me-wood.c0.viz.r.items.1	densa
+me-wood.c0.viz.r.items.2	suelos, muebles, vigas
+me-wood.c1.title	Contenido de humedad
+me-wood.c1.text	La madera recién cortada puede tener más del 50 % de agua en peso. Encoge al secarse hasta equilibrarse con la humedad del aire. La madera de interior debe secarse hasta un 8–12 % aproximadamente antes de usarla.
+me-wood.c1.viz.items.0.l	muebles de interior
+me-wood.c1.viz.items.1.l	madera de exterior
+me-wood.c1.viz.items.2.l	madera verde
+me-wood.c2.title	La madera se mueve
+me-wood.c2.text	La madera se contrae y se hincha mucho más en perpendicular a la fibra que en su sentido. Las puertas se atascan con la humedad del invierno y los suelos se abren en los veranos secos. Una buena carpintería deja margen para el movimiento.
+me-wood.c2.viz.unit	% de contracción de verde a seca (aprox.)
+me-wood.c2.viz.items.0.l	Sentido de la fibra
+me-wood.c2.viz.items.1.l	Radial
+me-wood.c2.viz.items.2.l	Tangencial
+me-wood.c3.title	Uniones
+me-wood.c3.text	Las uniones tradicionales encajan las piezas para que la propia madera soporte la carga: caja y espiga, cola de milano, media madera. El trabajo moderno también usa tornillos, espigas de madera, galletas y conectores metálicos.
+me-wood.c3.viz.items.0.a	caja y espiga
+me-wood.c3.viz.items.0.b	marcos, vigas
+me-wood.c3.viz.items.1.a	cola de milano
+me-wood.c3.viz.items.1.b	cajones, resiste tirones
+me-wood.c3.viz.items.2.a	media madera
+me-wood.c3.viz.items.2.b	cruces
+me-wood.c3.viz.items.3.a	espigas
+me-wood.c3.viz.items.3.b	alineación oculta
+me-wood.c4.title	Leer la veta
+me-wood.c4.text	Cepilla y trabaja con el formón a favor de la veta, como cuando acaricias a un gato, para evitar desgarros. Los nudos son puntos débiles y pueden saltar de las tablas finas.
+me-wood.c4.viz.items.0.w	cepillar contra la veta
+me-wood.c4.viz.items.0.r	gira la tabla, cepilla a favor
+me-wood.c4.viz.items.1.w	nudo en la unión
+me-wood.c4.viz.items.1.r	mueve la unión
+me-wood.c5.title	Glulam y CLT
+me-wood.c5.text	La madera técnica pega capas entre sí. La madera laminada encolada (glulam) permite vigas largas y resistentes; los paneles de madera contralaminada (CLT) tienen capas cruzadas en ángulo recto y pueden formar muros y forjados de edificios de varias plantas.
+me-wood.c5.viz.l.t	Glulam
+me-wood.c5.viz.l.items.0	capas en una dirección
+me-wood.c5.viz.l.items.1	vigas largas y arcos
+me-wood.c5.viz.r.t	CLT
+me-wood.c5.viz.r.items.0	capas cruzadas
+me-wood.c5.viz.r.items.1	paneles de muro y forjado
+me-wood.c5.viz.r.items.2	edificios altos de madera
+me-wood.c6.title	Proteger la madera
+me-wood.c6.text	La pudrición necesita humedad. Mantén la madera seca, ventilada y separada del suelo; en exterior, usa especies naturalmente duraderas o madera tratada. La carcoma y las termitas se controlan con tratamiento e inspección.
+me-wood.c6.viz.items.0	Mantenerla seca
+me-wood.c6.viz.items.1	Ventilar
+me-wood.c6.viz.items.2	Separarla del suelo
+me-wood.c6.viz.items.3	Tratar o elegir especies duraderas
+me-wood.c6.viz.items.4	Inspeccionar a menudo
+me-wood.c7.title	La madera en un incendio
+me-wood.c7.text	La madera gruesa se carboniza por fuera, y la capa carbonizada aísla el núcleo, así que las vigas grandes conservan su resistencia sorprendentemente bien durante un incendio. Los ingenieros incluyen un margen de carbonización en las secciones.
+me-wood.c7.viz.steps.0	Fuego
+me-wood.c7.viz.steps.1	La capa exterior se carboniza
+me-wood.c7.viz.steps.2	El carbón aísla el núcleo
+me-wood.c7.viz.steps.3	La viga sigue soportando
+me-wood.c8.title	Estructuras de tejado
+me-wood.c8.text	Los tejados tradicionales portugueses usan cabios y rastreles de madera bajo tejas cerámicas. Las cerchas reparten la carga del tejado hacia los muros; una buena ventilación evita la pudrición por condensación.
+me-wood.c8.viz.steps.0	Tejas
+me-wood.c8.viz.steps.1	Rastreles
+me-wood.c8.viz.steps.2	Cabios o cerchas
+me-wood.c8.viz.steps.3	Durmientes
+me-wood.c8.viz.steps.4	Muros
+me-wood.c9.title	Los bosques de Portugal
+me-wood.c9.text	El eucalipto, el pino marítimo y el alcornoque son los árboles forestales más comunes de Portugal. Portugal es el mayor productor de corcho del mundo y suministra aproximadamente la mitad del corcho mundial.
+me-wood.c9.viz.unit	% de la superficie forestal (aprox.)
+me-wood.c9.viz.items.0.l	Eucalipto
+me-wood.c9.viz.items.1.l	Alcornoque
+me-wood.c9.viz.items.2.l	Pino marítimo
+me-wood.c9.viz.items.3.l	Encina
+me-wood.c9.viz.items.4.l	Otros
+me-construction.title	Construir una casa confortable
+me-construction.summary	Aislamiento, ventanas, puentes térmicos y ventilación.
+me-construction.q0.q	¿Por dónde suele perder una casa sin aislar gran parte de su calor, y es barato arreglarlo primero?
+me-construction.q0.o0	Las puertas
+me-construction.q0.o1	El tejado
+me-construction.q0.o2	La chimenea
+me-construction.q0.x	Aislar el tejado suele ser el mejor primer paso.
+me-construction.q1.q	¿Qué es un puente térmico?
+me-construction.q1.o0	Un puente de madera
+me-construction.q1.o1	Un punto débil por donde el calor esquiva el aislamiento
+me-construction.q1.o2	Un tipo de ventana
+me-construction.q1.x	Provocan puntos fríos y moho.
+me-construction.q2.q	¿Qué hace la VMC con recuperación de calor?
+me-construction.q2.o0	Calienta el agua
+me-construction.q2.o1	Ventila mientras recupera el calor del aire que sale
+me-construction.q2.o2	Enfría el tejado
+me-construction.q2.x	Ventilación mecánica con recuperación de calor.
+me-construction.c0.title	La envolvente del edificio
+me-construction.c0.text	Muros, tejado, suelo y ventanas forman la envolvente que separa el interior del exterior. Su aislamiento, su hermeticidad y su protección solar deciden cuánta energía necesita la vivienda.
+me-construction.c0.viz.root	Envolvente
+me-construction.c0.viz.items.0	Tejado
+me-construction.c0.viz.items.1	Muros
+me-construction.c0.viz.items.2	Ventanas y puertas
+me-construction.c0.viz.items.3	Suelo
+me-construction.c1.title	Por dónde se escapa el calor
+me-construction.c1.text	En una casa sin aislar, el tejado suele ser lo que más calor pierde, seguido de los muros, las ventanas y las corrientes de aire. Aislar primero el tejado suele ser lo más rentable.
+me-construction.c1.viz.unit	% de pérdidas de calor (casa típica sin aislar)
+me-construction.c1.viz.items.0.l	Tejado
+me-construction.c1.viz.items.1.l	Muros
+me-construction.c1.viz.items.2.l	Ventanas
+me-construction.c1.viz.items.3.l	Suelo
+me-construction.c1.viz.items.4.l	Corrientes
+me-construction.c2.title	Aislamiento por el exterior (SATE)
+me-construction.c2.text	Las placas aislantes fijadas por fuera de los muros y revocadas encima (el sistema «capoto» en Portugal, SATE en España) envuelven la casa en una capa continua y mantienen caliente la mampostería, lo que reduce los puentes térmicos.
+me-construction.c2.viz.l.t	Exterior (SATE/capoto)
+me-construction.c2.viz.l.items.0	capa continua
+me-construction.c2.viz.l.items.1	no resta superficie
+me-construction.c2.viz.l.items.2	menos puentes térmicos
+me-construction.c2.viz.r.t	Interior
+me-construction.c2.viz.r.items.0	más barato por estancia
+me-construction.c2.viz.r.items.1	resta espacio
+me-construction.c2.viz.r.items.2	difícil en encuentros
+me-construction.c3.title	Puentes térmicos
+me-construction.c3.text	Un puente térmico es un punto débil por donde el calor esquiva el aislamiento: vigas de hormigón, losas de balcón, jambas de ventana. Provocan puntos fríos, condensación y moho.
+me-construction.c3.viz.items.0	Losas de balcón
+me-construction.c3.viz.items.1	Vigas y pilares de hormigón
+me-construction.c3.viz.items.2	Jambas de puertas y ventanas
+me-construction.c3.viz.items.3	Encuentros muro–tejado
+me-construction.c4.title	Ventanas
+me-construction.c4.text	El doble acristalamiento con capa de baja emisividad y un marco con rotura de puente térmico pierde mucho menos calor que el vidrio simple. La protección solar exterior frena el sol de verano antes de que caliente la habitación.
+me-construction.c4.viz.unit	Valor U W/m²K (aprox.)
+me-construction.c4.viz.items.0.l	Vidrio simple
+me-construction.c4.viz.items.1.l	Doble vidrio
+me-construction.c4.viz.items.2.l	Doble bajo emisivo
+me-construction.c4.viz.items.3.l	Triple
+me-construction.c5.title	Hermeticidad
+me-construction.c5.text	Las corrientes de aire descontroladas desperdician calor y llevan humedad al interior de los muros. Sellar las rendijas alrededor de ventanas, tuberías y encuentros con el tejado es barato y eficaz.
+me-construction.c5.viz.items.0	Sellar marcos de ventana
+me-construction.c5.viz.items.1	Sellar pasos de tubos y cables
+me-construction.c5.viz.items.2	Encintar membranas en juntas
+me-construction.c5.viz.items.3	Ensayo con puerta soplante
+me-construction.c6.title	Ventilación
+me-construction.c6.text	Una casa hermética necesita ventilación controlada para eliminar la humedad y el aire viciado. La ventilación mecánica con recuperación de calor recupera la mayor parte del calor del aire que sale.
+me-construction.c6.viz.steps.0	Sale aire cálido viciado
+me-construction.c6.viz.steps.1	Intercambiador de calor
+me-construction.c6.viz.steps.2	Aire fresco calentado
+me-construction.c6.viz.steps.3	Hacia las estancias
+me-construction.c7.title	Condensación y moho
+me-construction.c7.text	El aire interior cálido lleva humedad; cuando toca una superficie fría, se condensa. La ventilación, el aislamiento y evitar los puntos fríos previenen el moho.
+me-construction.c7.viz.steps.0	Aire cálido y húmedo
+me-construction.c7.viz.steps.1	Muro o ventana fríos
+me-construction.c7.viz.steps.2	Condensación
+me-construction.c7.viz.steps.3	Moho
+me-construction.c8.title	Confort en verano
+me-construction.c8.text	En Portugal también importa mantenerse fresco: persianas exteriores, sombreamiento, inercia térmica, colores claros y ventilación nocturna a menudo superan al aire acondicionado.
+me-construction.c8.viz.items.0	Persianas exteriores
+me-construction.c8.viz.items.1	Aleros y sombreamiento
+me-construction.c8.viz.items.2	Inercia térmica
+me-construction.c8.viz.items.3	Ventilación nocturna
+me-construction.c8.viz.items.4	Cubiertas de color claro
+me-construction.c9.title	Certificados energéticos
+me-construction.c9.text	En Portugal, las viviendas en venta o alquiler necesitan un certificado energético (de A+ a F), emitido a través de ADENE. También recomienda mejoras.
+me-construction.c9.viz.items.0	A+ / A: muy eficiente
+me-construction.c9.viz.items.1	B / B−: buena
+me-construction.c9.viz.items.2	C / D: media
+me-construction.c9.viz.items.3	E / F: ineficiente
+me-water.title	El agua en los edificios
+me-water.summary	Presión, bombas, tuberías y saneamiento.
+me-water.q0.q	¿Aproximadamente qué presión equivalen 10 m de columna de agua?
+me-water.q0.o0	0,1 bar
+me-water.q0.o1	1 bar
+me-water.q0.o2	10 bar
+me-water.q0.x	10 m ≈ 1 bar.
+me-water.q1.q	¿Qué provoca el golpe de ariete?
+me-water.q1.o0	El agua caliente
+me-water.q1.o1	El cierre brusco de una válvula que detiene el agua en movimiento
+me-water.q1.o2	La baja presión
+me-water.q1.x	La inercia del agua crea un pico de presión.
+me-water.q2.q	¿Por qué los depósitos de agua caliente deben llegar a unos 60 °C de vez en cuando?
+me-water.q2.o0	Para ahorrar energía
+me-water.q2.o1	Para matar la bacteria Legionella
+me-water.q2.o2	Para aumentar la presión
+me-water.q2.x	Las bacterias proliferan entre 25 y 45 °C.
+me-water.c0.title	La presión del agua en casa
+me-water.c0.text	El agua de la red suele llegar a unos 2–5 bar. Si es demasiado baja, las duchas gotean; si es demasiado alta, los grifos dan golpes y los electrodomésticos se desgastan. Una válvula reductora de presión soluciona el exceso.
+me-water.c0.viz.unit	bar
+me-water.c0.viz.items.0.l	muy baja
+me-water.c0.viz.items.1.l	cómoda
+me-water.c0.viz.items.2.l	muy alta
+me-water.c1.title	Dimensionar tuberías
+me-water.c1.text	Las tuberías más gruesas llevan más caudal con menos pérdida de presión. Un recorrido largo hasta una ducha en la planta de arriba necesita más diámetro que un tramo corto hasta un lavabo.
+me-water.c1.viz.unit	caudal con igual pérdida de presión (relativo)
+me-water.c1.viz.items.0.l	16 mm
+me-water.c1.viz.items.1.l	20 mm
+me-water.c1.viz.items.2.l	26 mm
+me-water.c2.title	Bombas
+me-water.c2.text	Las bombas centrífugas hacen girar un rodete para impulsar el agua. Cada una tiene una curva: más caudal significa menos presión (altura). Elige la bomba cuya curva se cruce con las necesidades de tu instalación.
+me-water.c2.viz.l.t	Más caudal
+me-water.c2.viz.l.items.0	menos altura
+me-water.c2.viz.r.t	Más altura
+me-water.c2.viz.r.items.0	menos caudal
+me-water.c3.title	Altura y presión
+me-water.c3.text	La «altura» de una bomba es la altura a la que puede elevar el agua. 10 m de altura equivalen a 1 bar aproximadamente.
+me-water.c3.viz.f	10 m de altura ≈ 1 bar
+me-water.c3.viz.items.0.s	elevar a un depósito a 20 m
+me-water.c3.viz.items.0.m	≈ 2 bar más pérdidas
+me-water.c4.title	Golpe de ariete
+me-water.c4.text	Cerrar una válvula de golpe detiene el flujo, y la inercia del agua en movimiento crea un pico de presión que hace golpear las tuberías. Los amortiguadores de golpe de ariete y las válvulas de cierre más lento lo solucionan.
+me-water.c4.viz.steps.0	Una válvula rápida se cierra
+me-water.c4.viz.steps.1	El agua se detiene de golpe
+me-water.c4.viz.steps.2	Pico de presión
+me-water.c4.viz.steps.3	Golpe en las tuberías
+me-water.c5.title	Sistemas de agua caliente
+me-water.c5.text	Los calentadores guardan el agua caliente en un depósito (termoacumulador) o la calientan al instante (calentadores instantáneos de gas o eléctricos). Los paneles solares térmicos y las bombas de calor pueden cubrir la mayor parte del agua caliente en Portugal.
+me-water.c5.viz.items.0.a	termoacumulador
+me-water.c5.viz.items.0.b	suministro estable, pérdidas en reposo
+me-water.c5.viz.items.1.a	instantáneo
+me-water.c5.viz.items.1.b	sin depósito, mucha potencia
+me-water.c5.viz.items.2.a	solar térmica
+me-water.c5.viz.items.2.b	calor gratis, necesita apoyo
+me-water.c5.viz.items.3.a	bomba de calor
+me-water.c5.viz.items.3.b	3× eficiente
+me-water.c6.title	Legionella
+me-water.c6.text	Las bacterias pueden crecer en agua almacenada entre 25 y 45 °C. Los depósitos deben llegar a unos 60 °C de vez en cuando, y los grifos deben dar el agua por debajo de la temperatura de quemadura gracias a válvulas mezcladoras.
+me-water.c6.viz.unit	°C
+me-water.c6.viz.items.0.l	proliferación
+me-water.c6.viz.items.1.l	almacenar a
+me-water.c6.viz.items.2.l	riesgo de quemadura
+me-water.c7.title	Saneamiento
+me-water.c7.text	Los desagües funcionan por gravedad, así que las tuberías necesitan una pendiente de alrededor del 1–2 %. Los sifones retienen agua para bloquear los olores de la red de saneamiento, y la ventilación evita que se vacíen por succión.
+me-water.c7.viz.items.0	Pendiente de un 1–2 %
+me-water.c7.viz.items.1	Sifón en cada aparato
+me-water.c7.viz.items.2	Tubos de ventilación
+me-water.c7.viz.items.3	Registros para limpieza
+me-water.c8.title	Aprovechamiento de agua de lluvia
+me-water.c8.text	Recoger el agua de lluvia del tejado para cisternas, riego y lavadoras ahorra agua de la red. Un filtro, un depósito y una pequeña bomba son las piezas principales.
+me-water.c8.viz.steps.0	Tejado
+me-water.c8.viz.steps.1	Canalones y filtro
+me-water.c8.viz.steps.2	Depósito
+me-water.c8.viz.steps.3	Bomba
+me-water.c8.viz.steps.4	Cisternas y jardín
+me-water.c9.title	Medir niveles de agua
+me-water.c9.text	Los depósitos y los pozos se vigilan con interruptores de flotador, sensores de presión o sensores ultrasónicos como el JSN-SR04T, que envían los niveles a un panel, incluso por LoRa desde lugares remotos.
+me-water.c9.viz.steps.0	Sensor ultrasónico en la tapa del depósito
+me-water.c9.viz.steps.1	Mide la distancia
+me-water.c9.viz.steps.2	Convierte a nivel y litros
+me-water.c9.viz.steps.3	Envía por LoRa
+me-making.title	Cómo se fabrican las cosas
+me-making.summary	Fundición, mecanizado, conformado, soldadura e impresión 3D.
+me-making.q0.q	¿Qué proceso es el más barato por pieza para volúmenes muy grandes de piezas de plástico?
+me-making.q0.o0	Impresión 3D
+me-making.q0.o1	Moldeo por inyección
+me-making.q0.o2	Tallado a mano
+me-making.q0.x	Los moldes son caros, pero cada pieza sale barata.
+me-making.q1.q	¿Qué fabrica un torno?
+me-making.q1.o0	Chapas planas
+me-making.q1.o1	Piezas redondas, haciendo girar la pieza
+me-making.q1.o2	Soldaduras
+me-making.q1.x	La pieza gira contra la herramienta.
+me-making.q2.q	La forja produce piezas que son…
+me-making.q2.o0	Débiles y ligeras
+me-making.q2.o1	Muy resistentes
+me-making.q2.o2	Transparentes
+me-making.q2.x	El martilleo afina la estructura del metal.
+me-making.c0.title	Cuatro familias de procesos
+me-making.c0.text	Casi toda la fabricación quita material (mecanizado), le da forma (forja, plegado, fundición), lo une (soldadura, atornillado) o lo añade capa a capa (impresión 3D).
+me-making.c0.viz.root	Fabricar
+me-making.c0.viz.items.0	Quitar: mecanizado
+me-making.c0.viz.items.1	Formar: fundición, forja
+me-making.c0.viz.items.2	Unir: soldadura, pegado
+me-making.c0.viz.items.3	Añadir: impresión 3D
+me-making.c1.title	Fundición
+me-making.c1.text	El metal fundido se vierte en un molde y se solidifica con su forma. Los bloques de motor, las carcasas de bomba y los bronces artísticos se funden. La fundición a presión inyecta el metal en moldes de acero para la producción en serie.
+me-making.c1.viz.steps.0	Fundir el metal
+me-making.c1.viz.steps.1	Verter en un molde
+me-making.c1.viz.steps.2	Enfriar y solidificar
+me-making.c1.viz.steps.3	Desmoldar y acabar
+me-making.c2.title	Mecanizado
+me-making.c2.text	Los tornos, las fresadoras y los taladros eliminan material hasta lograr formas precisas. Las máquinas CNC siguen trayectorias programadas y pueden mantener tolerancias de unas pocas centésimas de milímetro.
+me-making.c2.viz.items.0.a	torno
+me-making.c2.viz.items.0.b	piezas redondas, la pieza gira
+me-making.c2.viz.items.1.a	fresadora
+me-making.c2.viz.items.1.b	superficies planas y cajeras
+me-making.c2.viz.items.2.a	taladro
+me-making.c2.viz.items.2.b	agujeros
+me-making.c2.viz.items.3.a	CNC
+me-making.c2.viz.items.3.b	control numérico
+me-making.c3.title	Conformado
+me-making.c3.text	La chapa se dobla, se estampa y se prensa hasta darle forma: carrocerías, latas, envolventes. La forja martillea el metal caliente para darle forma y produce piezas muy resistentes, como los cigüeñales.
+me-making.c3.viz.l.t	Estampado
+me-making.c3.viz.l.items.0	chapa metálica
+me-making.c3.viz.l.items.1	rápido
+me-making.c3.viz.l.items.2	paneles de coche
+me-making.c3.viz.r.t	Forja
+me-making.c3.viz.r.items.0	metal caliente martilleado
+me-making.c3.viz.r.items.1	muy resistente
+me-making.c3.viz.r.items.2	cigüeñales, herramientas

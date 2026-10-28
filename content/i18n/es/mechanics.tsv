@@ -1379,7 +1379,7 @@ me-construction.c9.viz.items.2	C / D: media
 me-construction.c9.viz.items.3	E / F: ineficiente
 me-water.title	El agua en los edificios
 me-water.summary	Presión, bombas, tuberías y saneamiento.
-me-water.q0.q	¿Aproximadamente qué presión equivalen 10 m de columna de agua?
+me-water.q0.q	¿A qué presión equivalen aproximadamente 10 m de columna de agua?
 me-water.q0.o0	0,1 bar
 me-water.q0.o1	1 bar
 me-water.q0.o2	10 bar
@@ -1508,3 +1508,308 @@ me-making.c3.viz.r.t	Forja
 me-making.c3.viz.r.items.0	metal caliente martilleado
 me-making.c3.viz.r.items.1	muy resistente
 me-making.c3.viz.r.items.2	cigüeñales, herramientas
+me-making.c4.title	Moldeo por inyección
+me-making.c4.text	El plástico fundido se inyecta en un molde de acero y se enfría en segundos. Los moldes son caros, pero después cada pieza cuesta céntimos. La mayoría de los objetos de plástico que te rodean se fabricaron así.
+me-making.c4.viz.unit	coste por pieza, € (ilustrativo)
+me-making.c4.viz.items.0.l	Impresión 3D
+me-making.c4.viz.items.1.l	Mecanizado
+me-making.c4.viz.items.2.l	Inyectado
+me-making.c5.title	Soldadura
+me-making.c5.text	La soldadura funde los bordes de dos piezas metálicas para que se unan. La MIG es rápida y sencilla; la TIG, precisa y limpia; la de electrodo funciona al aire libre. Una buena soldadura necesita metal limpio y el calor adecuado.
+me-making.c5.viz.items.0.a	MIG
+me-making.c5.viz.items.0.b	hilo continuo, rápida
+me-making.c5.viz.items.1.a	TIG
+me-making.c5.viz.items.1.b	precisa, metales finos
+me-making.c5.viz.items.2.a	electrodo (MMA)
+me-making.c5.viz.items.2.b	sencilla, al aire libre
+me-making.c5.viz.items.3.a	por puntos
+me-making.c5.viz.items.3.b	carrocerías
+me-making.c6.title	Impresión 3D
+me-making.c6.text	La fabricación aditiva construye las piezas capa a capa. Las impresoras FDM funden un filamento de plástico; las de resina curan un líquido con luz; las de metal funden polvo con láseres.
+me-making.c6.viz.l.t	FDM
+me-making.c6.viz.l.items.0	barata
+me-making.c6.viz.l.items.1	vale para soportes
+me-making.c6.viz.l.items.2	capas visibles
+me-making.c6.viz.r.t	Resina
+me-making.c6.viz.r.items.0	detalle fino
+me-making.c6.viz.r.items.1	frágil
+me-making.c6.viz.r.items.2	posprocesado engorroso
+me-making.c7.title	Diseño para la fabricación
+me-making.c7.text	Una pieza fácil de diseñar puede ser difícil de fabricar. Los ingenieros adaptan los diseños al proceso: ángulos de desmoldeo para el moldeo, diámetros de broca estándar, radios mínimos de plegado para la chapa.
+me-making.c7.viz.items.0	Medidas y fijaciones estándar
+me-making.c7.viz.items.1	Ángulos de desmoldeo
+me-making.c7.viz.items.2	Evitar esquinas interiores vivas
+me-making.c7.viz.items.3	Menos piezas
+me-making.c8.title	Producción en serie
+me-making.c8.text	La cadena de montaje móvil de Henry Ford (1913) redujo el tiempo para montar el chasis de un Model T de unas 12 horas a alrededor de 1,5. Las fábricas actuales añaden robots, sensores y software.
+me-making.c8.viz.unit	horas por chasis de Model T (aprox.)
+me-making.c8.viz.items.0.l	Antes de 1913
+me-making.c8.viz.items.1.l	Cadena de montaje
+me-making.c9.title	Control de calidad
+me-making.c9.text	Las fábricas miden las piezas con galgas, máquinas de medición por coordenadas y cámaras. El control estadístico de procesos detecta las desviaciones antes de que las piezas se salgan de tolerancia.
+me-making.c9.viz.steps.0	Fabricar piezas
+me-making.c9.viz.steps.1	Medir muestras
+me-making.c9.viz.steps.2	Graficar resultados
+me-making.c9.viz.steps.3	Corregir a tiempo
+me-measure.title	Medición y tolerancias
+me-measure.summary	Unidades, precisión y piezas que encajan.
+me-measure.q0.q	Una herramienta es constante, pero siempre marca 2 mm de más. Es…
+me-measure.q0.o0	Exacta pero no precisa
+me-measure.q0.o1	Precisa pero no exacta
+me-measure.q0.o2	Ambas
+me-measure.q0.x	Es constante, pero está desviada del valor real.
+me-measure.q1.q	¿Qué es un ajuste con apriete?
+me-measure.q1.o0	Un ajuste holgado que desliza
+me-measure.q1.o1	Una pieza metida a presión en un agujero algo más pequeño
+me-measure.q1.o2	Una junta pintada
+me-measure.q1.x	El eje es ligeramente mayor que el agujero.
+me-measure.q2.q	Una pulgada equivale exactamente a…
+me-measure.q2.o0	2,5 cm
+me-measure.q2.o1	25,4 mm
+me-measure.q2.o2	30 mm
+me-measure.q2.x	Se define como 25,4 mm.
+me-measure.c0.title	El Sistema Internacional
+me-measure.c0.text	La ingeniería usa las unidades del SI: metro, kilogramo, segundo, amperio, kelvin. Las unidades derivadas se basan en ellas: newton, pascal, julio, vatio. Mezclar unidades provoca errores carísimos.
+me-measure.c0.viz.items.0.a	metro
+me-measure.c0.viz.items.0.b	longitud
+me-measure.c0.viz.items.1.a	kilogramo
+me-measure.c0.viz.items.1.b	masa
+me-measure.c0.viz.items.2.a	segundo
+me-measure.c0.viz.items.2.b	tiempo
+me-measure.c0.viz.items.3.a	newton
+me-measure.c0.viz.items.3.b	fuerza
+me-measure.c0.viz.items.4.a	pascal
+me-measure.c0.viz.items.4.b	presión
+me-measure.c1.title	La Mars Climate Orbiter
+me-measure.c1.text	En 1999, la NASA perdió una sonda de más de 100 millones de € porque un equipo usó libras-fuerza por segundo y otro esperaba newtons por segundo. La nave entró demasiado baja en la atmósfera de Marte.
+me-measure.c1.viz.items.0.w	un equipo en imperiales, otro en métricas
+me-measure.c1.viz.items.0.r	acordar unidades y revisar interfaces
+me-measure.c2.title	Exactitud frente a precisión
+me-measure.c2.text	La exactitud es lo cerca que estás del valor real; la precisión, lo coherentes que son las mediciones repetidas. Una herramienta puede ser precisa pero errónea si no está calibrada.
+me-measure.c2.viz.l.t	Exacto
+me-measure.c2.viz.l.items.0	cerca del valor real
+me-measure.c2.viz.r.t	Preciso
+me-measure.c2.viz.r.items.0	lecturas parecidas entre sí
+me-measure.c3.title	Tolerancias
+me-measure.c3.text	Ninguna pieza sale exactamente a medida. Una tolerancia indica el intervalo aceptable, por ejemplo 20,00 ± 0,05 mm. Las tolerancias más estrechas cuestan más, así que úsalas solo donde hagan falta.
+me-measure.c3.viz.unit	mm
+me-measure.c3.viz.items.0.l	mínimo
+me-measure.c3.viz.items.1.l	nominal
+me-measure.c3.viz.items.2.l	máximo
+me-measure.c4.title	Ajustes
+me-measure.c4.text	Ejes y agujeros se combinan según el ajuste: con juego (desliza libremente), indeterminado (justo) o con apriete (a presión). Los sistemas normalizados de ajustes como ISO 286 los definen, por ejemplo H7/g6.
+me-measure.c4.viz.items.0.a	ajuste con juego
+me-measure.c4.viz.items.0.b	desliza
+me-measure.c4.viz.items.1.a	ajuste indeterminado
+me-measure.c4.viz.items.1.b	justo, posiciona
+me-measure.c4.viz.items.2.a	ajuste con apriete
+me-measure.c4.viz.items.2.b	a presión o en caliente
+me-measure.c5.title	Instrumentos de medida
+me-measure.c5.text	Una cinta métrica mide hasta un milímetro, más o menos; un pie de rey, hasta 0,02 mm; un micrómetro, hasta 0,001 mm. Elige un instrumento al menos diez veces más fino que la tolerancia que compruebas.
+me-measure.c5.viz.unit	resolución (mm)
+me-measure.c5.viz.items.0.l	Cinta métrica
+me-measure.c5.viz.items.1.l	Pie de rey
+me-measure.c5.viz.items.2.l	Micrómetro
+me-measure.c6.title	Cifras significativas
+me-measure.c6.text	«2 m» y «2,000 m» indican precisiones distintas. No des más cifras de las que permite tu medición; que una calculadora muestre 3,14159 no hace precisa una medición aproximada.
+me-measure.c6.viz.items.0.w	2,3456 m con cinta métrica
+me-measure.c6.viz.items.0.r	2,35 m
+me-measure.c6.viz.items.1.w	9,8762 kN con estimaciones a ojo
+me-measure.c6.viz.items.1.r	unos 10 kN
+me-measure.c7.title	Calibración
+me-measure.c7.text	Los instrumentos se desvían con el tiempo. La calibración los compara con un patrón de referencia y los corrige. En la industria, las llaves dinamométricas, las básculas y los manómetros se calibran según un calendario.
+me-measure.c7.viz.steps.0	Usar el instrumento
+me-measure.c7.viz.steps.1	Comparar con un patrón
+me-measure.c7.viz.steps.2	Ajustar o anotar el error
+me-measure.c7.viz.steps.3	Programar la próxima revisión
+me-measure.c8.title	Los errores se suman
+me-measure.c8.text	Cuando las piezas se apilan, sus tolerancias se suman. Diez piezas de ±0,1 mm cada una podrían, en el peor caso, desviarse ±1 mm en conjunto. El cálculo estadístico de tolerancias estima la dispersión realista.
+me-measure.c8.viz.f	peor caso = n × tolerancia
+me-measure.c8.viz.items.0.s	10 piezas × ±0,1 mm
+me-measure.c8.viz.items.0.m	±1,0 mm
+me-measure.c8.viz.items.1.s	estadístico (√10 × 0,1)
+me-measure.c8.viz.items.1.m	≈ ±0,32 mm
+me-measure.c9.title	Unidades imperiales que siguen vivas
+me-measure.c9.text	Las tuberías, los neumáticos, las pantallas y algunos tornillos siguen usando pulgadas; la aviación usa pies y nudos. Una pulgada son exactamente 25,4 mm.
+me-measure.c9.viz.items.0.a	1 pulgada
+me-measure.c9.viz.items.0.b	25,4 mm
+me-measure.c9.viz.items.1.a	1 pie
+me-measure.c9.viz.items.1.b	0,3048 m
+me-measure.c9.viz.items.2.a	1 psi
+me-measure.c9.viz.items.2.b	0,069 bar
+me-measure.c9.viz.items.3.a	1 nudo
+me-measure.c9.viz.items.3.b	1,852 km/h
+me-failure.title	Cuando las cosas fallan
+me-failure.summary	Fatiga, corrosión, fluencia y lecciones famosas.
+me-failure.q0.q	¿Qué causa la mayoría de los fallos mecánicos en máquinas y aviones?
+me-failure.q0.o0	La sobrecarga
+me-failure.q0.o1	La fatiga por cargas repetidas
+me-failure.q0.o2	La fusión
+me-failure.q0.x	Las grietas crecen con cada ciclo.
+me-failure.q1.q	¿Por qué los accidentes del avión Comet llevaron a las ventanillas redondeadas?
+me-failure.q1.o0	Quedan más bonitas
+me-failure.q1.o1	Las esquinas cuadradas concentraban tensiones e iniciaban grietas por fatiga
+me-failure.q1.o2	El vidrio redondeado es más barato
+me-failure.q1.x	Concentraciones de tensión en las esquinas.
+me-failure.q2.q	¿Qué es la fluencia?
+me-failure.q2.o0	El óxido
+me-failure.q2.o1	Un estiramiento lento y permanente bajo carga constante, sobre todo en caliente
+me-failure.q2.o2	Una grieta rápida
+me-failure.q2.x	Aumenta con el tiempo.
+me-failure.c0.title	Sobrecarga
+me-failure.c0.text	El fallo más sencillo: la carga supera lo que la pieza puede soportar. Los factores de seguridad, unas buenas estimaciones de carga y vigilar el mal uso evitan la mayoría de estos fallos.
+me-failure.c0.viz.steps.0	La carga supera el diseño
+me-failure.c0.viz.steps.1	La tensión supera la resistencia
+me-failure.c0.viz.steps.2	Cedencia o rotura
+me-failure.c1.title	Fatiga
+me-failure.c1.text	Las cargas repetidas, incluso muy por debajo de la resistencia a rotura, pueden hacer crecer grietas diminutas hasta que una pieza se parte. La fatiga causa la mayoría de los fallos mecánicos en máquinas, aviones y puentes.
+me-failure.c1.viz.steps.0	Cargas repetidas
+me-failure.c1.viz.steps.1	Grieta diminuta en un punto de tensión
+me-failure.c1.viz.steps.2	La grieta crece en cada ciclo
+me-failure.c1.viz.steps.3	Rotura repentina
+me-failure.c2.title	Marcas de playa
+me-failure.c2.text	Las roturas por fatiga suelen mostrar en la superficie rota unas «marcas de playa» curvas, que registran cómo avanzó la grieta, y una zona final más rugosa donde por fin se partió.
+me-failure.c2.viz.l.t	Zona de fatiga
+me-failure.c2.viz.l.items.0	lisa con marcas de playa
+me-failure.c2.viz.l.items.1	crecimiento lento
+me-failure.c2.viz.r.t	Rotura final
+me-failure.c2.viz.r.items.0	rugosa
+me-failure.c2.viz.r.items.1	repentina
+me-failure.c3.title	Corrosión
+me-failure.c3.text	La corrosión se come el metal, reduce su sección y crea concentraciones de tensión. La sal, el agua y el contacto entre metales distintos la aceleran.
+me-failure.c3.viz.items.0	Sal y humedad
+me-failure.c3.viz.items.1	Agua estancada
+me-failure.c3.viz.items.2	Metales distintos (galvánica)
+me-failure.c3.viz.items.3	Recubrimientos dañados
+me-failure.c4.title	Fluencia
+me-failure.c4.text	Bajo carga constante y a alta temperatura, los metales se estiran lentamente con el tiempo. Los álabes de turbina y los tubos de caldera se diseñan teniendo en cuenta la fluencia; incluso las tuberías de plomo y las baldas de plástico fluyen a temperatura ambiente.
+me-failure.c4.viz.events.0.y	año 0
+me-failure.c4.viz.events.0.l	instalado
+me-failure.c4.viz.events.1.y	año 5
+me-failure.c4.viz.events.1.l	ligero estiramiento
+me-failure.c4.viz.events.2.y	año 15
+me-failure.c4.viz.events.2.l	flecha visible
+me-failure.c4.viz.events.3.y	año 25
+me-failure.c4.viz.events.3.l	sustituir
+me-failure.c5.title	El avión Comet
+me-failure.c5.text	El de Havilland Comet, el primer avión comercial a reacción, sufrió accidentes mortales en 1954 causados por la fatiga del metal, que se iniciaba en las esquinas de las aberturas cuadradas de su cabina presurizada. Las ventanillas redondeadas pasaron a ser la norma.
+me-failure.c5.viz.items.0.w	aberturas cuadradas en la cabina
+me-failure.c5.viz.items.0.r	ventanillas redondeadas y marcos más fuertes
+me-failure.c6.title	El derrumbe del puente de Entre-os-Rios en 2001
+me-failure.c6.text	En marzo de 2001 se derrumbó una pila del puente Hintze Ribeiro sobre el Duero y murieron 59 personas. Años de erosión del lecho, agravada por la extracción de arena, habían descalzado su cimentación. Después, Portugal endureció las inspecciones de puentes.
+me-failure.c6.viz.steps.0	Extracción de arena y crecidas
+me-failure.c6.viz.steps.1	Lecho erosionado junto a la pila
+me-failure.c6.viz.steps.2	Cimentación descalzada
+me-failure.c6.viz.steps.3	Derrumbe, 2001
+me-failure.c7.title	Factores humanos y organizativos
+me-failure.c7.text	Muchos fallos vienen de errores de diseño, mal mantenimiento, inspecciones omitidas o avisos ignorados, no solo de los materiales. La buena ingeniería incluye revisar y aprender de los casi accidentes.
+me-failure.c7.viz.items.0	Revisión del diseño por otro ingeniero
+me-failure.c7.viz.items.1	Mantenimiento hecho y registrado
+me-failure.c7.viz.items.2	Actuar ante los avisos
+me-failure.c7.viz.items.3	Aprender de los casi accidentes
+me-failure.c8.title	Redundancia
+me-failure.c8.text	Los sistemas críticos tienen respaldos para que un solo fallo no cause un desastre: varios cables en un puente, dos motores en los aviones comerciales, tornillos de más en una unión.
+me-failure.c8.viz.l.t	Un solo recorrido de carga
+me-failure.c8.viz.l.items.0	un fallo, colapso
+me-failure.c8.viz.r.t	Redundante
+me-failure.c8.viz.r.items.0	otros toman el relevo
+me-failure.c8.viz.r.items.1	tiempo para reparar
+me-failure.c9.title	Análisis de causa raíz
+me-failure.c9.text	Tras un fallo, los ingenieros preguntan «¿por qué?» una y otra vez hasta llegar a la causa de fondo, no solo a la pieza rota. Arreglar solo el síntoma hace que vuelva a ocurrir.
+me-failure.c9.viz.steps.0	Falló la bomba
+me-failure.c9.viz.steps.1	¿Por qué? Rodamiento gripado
+me-failure.c9.viz.steps.2	¿Por qué? Sin lubricación
+me-failure.c9.viz.steps.3	¿Por qué? Sin plan de mantenimiento
+me-failure.c9.viz.steps.4	Corregir el plan
+me-design.title	El proceso de diseño en ingeniería
+me-design.summary	Del problema al producto que funciona.
+me-design.q0.q	¿Cuándo es más barato corregir un problema de diseño?
+me-design.q0.o0	En producción
+me-design.q0.o1	En la fase de concepto
+me-design.q0.o2	Tras las quejas de los clientes
+me-design.q0.x	Los costes se multiplican en cada fase posterior.
+me-design.q1.q	¿Para qué sirve una matriz de decisión?
+me-design.q1.o0	Para dibujar piezas
+me-design.q1.o1	Para comparar conceptos de diseño según criterios ponderados
+me-design.q1.o2	Para ensayar materiales
+me-design.q1.x	Estructura la selección de conceptos.
+me-design.q2.q	¿Qué indica el marcado CE?
+me-design.q2.o0	Fabricado en Europa
+me-design.q2.o1	Conformidad con los requisitos de seguridad y otros de la UE
+me-design.q2.o2	Ingeniero certificado
+me-design.q2.x	Es el marcado de conformidad de la UE.
+me-design.c0.title	Empieza por el problema
+me-design.c0.text	Un buen diseño empieza por definir con claridad el problema y los requisitos: ¿qué debe hacer, en qué condiciones, con qué coste, para cuándo? Una gran solución al problema equivocado no vale nada.
+me-design.c0.viz.items.0	¿Qué debe hacer?
+me-design.c0.viz.items.1	¿En qué condiciones?
+me-design.c0.viz.items.2	¿Presupuesto y plazo?
+me-design.c0.viz.items.3	¿Quién lo usará y mantendrá?
+me-design.c1.title	El ciclo de diseño
+me-design.c1.text	El diseño es iterativo: definir, generar ideas, elegir, construir un prototipo, probar, aprender, mejorar. Es normal dar varias vueltas.
+me-design.c1.viz.steps.0	Definir
+me-design.c1.viz.steps.1	Idear
+me-design.c1.viz.steps.2	Prototipo
+me-design.c1.viz.steps.3	Probar y aprender
+me-design.c2.title	Requisitos: imprescindibles y deseables
+me-design.c2.text	Separa lo imprescindible de lo deseable. Una lista clara ayuda a elegir entre opciones y evita que el alcance se desborde.
+me-design.c2.viz.l.t	Imprescindible
+me-design.c2.viz.l.items.0	seguridad
+me-design.c2.viz.l.items.1	función principal
+me-design.c2.viz.l.items.2	cumplir la ley
+me-design.c2.viz.r.t	Deseable
+me-design.c2.viz.r.items.0	funciones extra
+me-design.c2.viz.r.items.1	acabados
+me-design.c2.viz.r.items.2	opciones futuras
+me-design.c3.title	Selección de conceptos
+me-design.c3.text	Los ingenieros comparan las opciones con una matriz de decisión: puntúan cada concepto según criterios ponderados como coste, peso, fiabilidad y facilidad de fabricación.
+me-design.c3.viz.unit	puntuación ponderada
+me-design.c3.viz.items.0.l	Concepto A
+me-design.c3.viz.items.1.l	Concepto B
+me-design.c3.viz.items.2.l	Concepto C
+me-design.c4.title	Prototipos
+me-design.c4.text	Construye prototipos rápidos y baratos para aprender pronto: cartón, impresiones 3D, placas de pruebas. Fallar pronto cuesta poco; fallar después de producir cuesta mucho.
+me-design.c4.viz.unit	coste relativo de corregir un problema (ilustrativo)
+me-design.c4.viz.items.0.l	Concepto
+me-design.c4.viz.items.1.l	Diseño
+me-design.c4.viz.items.2.l	Prototipo
+me-design.c4.viz.items.3.l	Producción
+me-design.c5.title	Ensayos
+me-design.c5.text	Los ensayos comprueban que el diseño cumple sus requisitos, también en condiciones extremas: calor, frío, vibración, agua, mal uso. Muchos productos se ensayan hasta romperlos para conocer sus límites reales.
+me-design.c5.viz.items.0	Ensayos funcionales
+me-design.c5.viz.items.1	Ensayos ambientales
+me-design.c5.viz.items.2	Durabilidad y fatiga
+me-design.c5.viz.items.3	Mal uso y seguridad
+me-design.c5.viz.items.4	Pruebas con usuarios
+me-design.c6.title	Compromisos
+me-design.c6.text	Todo diseño equilibra objetivos que compiten: más ligero suele significar más caro; más resistente, más pesado; más barato puede significar una vida más corta. El trabajo del ingeniero es encontrar el mejor equilibrio para el uso previsto.
+me-design.c6.viz.items.0.a	más ligero
+me-design.c6.viz.items.0.b	materiales más caros
+me-design.c6.viz.items.1.a	más fuerte
+me-design.c6.viz.items.1.b	más pesado
+me-design.c6.viz.items.2.a	más barato
+me-design.c6.viz.items.2.b	vida más corta
+me-design.c6.viz.items.3.a	lanzar antes
+me-design.c6.viz.items.3.b	menos ensayos
+me-design.c7.title	Normas y códigos
+me-design.c7.text	Las normas (EN, ISO, IEC) recogen décadas de lecciones. Seguirlas hace que los productos sean más seguros, compatibles y legalmente vendibles, como con el marcado CE en Europa.
+me-design.c7.viz.items.0.a	EN
+me-design.c7.viz.items.0.b	normas europeas
+me-design.c7.viz.items.1.a	ISO
+me-design.c7.viz.items.1.b	normas internacionales
+me-design.c7.viz.items.2.a	IEC
+me-design.c7.viz.items.2.b	normas eléctricas
+me-design.c7.viz.items.3.a	CE
+me-design.c7.viz.items.3.b	marcado de conformidad UE
+me-design.c8.title	Documentación
+me-design.c8.text	Los planos, los cálculos, los informes de ensayo y las decisiones deben quedar registrados para que otros puedan fabricar, revisar, mantener y mejorar el diseño más adelante.
+me-design.c8.viz.items.0	Planos y modelos
+me-design.c8.viz.items.1	Cálculos
+me-design.c8.viz.items.2	Resultados de ensayos
+me-design.c8.viz.items.3	Registro de decisiones
+me-design.c8.viz.items.4	Instrucciones de mantenimiento
+me-design.c9.title	Pensamiento sistémico
+me-design.c9.text	Un producto es un sistema de piezas que interactúan. Cambiar una pieza, como poner un motor más grande, puede afectar a la alimentación, el calor, el peso y el coste en otras partes. La ingeniería de sistemas mantiene a la vista el conjunto.
+me-design.c9.viz.steps.0	Motor más grande
+me-design.c9.viz.steps.1	Necesita más corriente
+me-design.c9.viz.steps.2	Cables y batería mayores
+me-design.c9.viz.steps.3	Más peso y coste

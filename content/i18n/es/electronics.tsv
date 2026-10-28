@@ -1537,3 +1537,236 @@ tr-noise.c1.viz.l.items.1	picos rápidos
 tr-noise.c1.viz.r.t	Reserva 10–470 µF
 tr-noise.c1.viz.r.items.0	en la entrada de alimentación
 tr-noise.c1.viz.r.items.1	caídas más lentas
+tr-noise.c2.title	Bucles de masa
+tr-noise.c2.text	Si dos partes de un sistema están conectadas a masa en puntos distintos con potenciales diferentes, circula corriente por los cables de masa, lo que provoca zumbidos en el audio o errores en los sensores.
+tr-noise.c2.viz.items.0.w	masa en dos puntos alejados
+tr-noise.c2.viz.items.0.r	un único punto de masa
+tr-noise.c2.viz.items.1.w	zumbido de audio
+tr-noise.c2.viz.items.1.r	rompe el bucle con aislamiento
+tr-noise.c3.title	Masa en estrella
+tr-noise.c3.text	Lleva por separado las masas de las partes ruidosas (motores, potencia) y de las sensibles (sensores) a un único punto, para que las corrientes ruidosas no circulen por los caminos de masa sensibles.
+tr-noise.c3.viz.root	Punto de masa en estrella
+tr-noise.c3.viz.items.0	Masa del driver del motor
+tr-noise.c3.viz.items.1	Masa del microcontrolador
+tr-noise.c3.viz.items.2	Masa del sensor
+tr-noise.c4.title	Cables de sensor largos
+tr-noise.c4.text	Los cables largos actúan como antenas. Para tiradas largas usa pares trenzados, cable apantallado, señales de menor impedancia o señales digitales y diferenciales.
+tr-noise.c4.viz.items.0	Par trenzado
+tr-noise.c4.viz.items.1	Cable apantallado, pantalla a masa en un extremo
+tr-noise.c4.viz.items.2	Señales digitales o diferenciales
+tr-noise.c4.viz.items.3	Filtro en la entrada
+tr-noise.c5.title	Pull-ups y entradas flotantes
+tr-noise.c5.text	Una entrada sin conectar capta ruido y lee valores aleatorios, e incluso puede aumentar el consumo. Define siempre su nivel con una pull-up o una pull-down.
+tr-noise.c5.viz.items.0.w	entrada sin usar flotando
+tr-noise.c5.viz.items.0.r	activa pull-up o pull-down
+tr-noise.c5.viz.items.1.w	entrada de botón aleatoria
+tr-noise.c5.viz.items.1.r	añade pull-up
+tr-noise.c6.title	Filtrado por software
+tr-noise.c6.text	Incluso con un buen hardware, las lecturas pueden oscilar. Los filtros de mediana eliminan picos; las medias móviles suavizan el ruido; la histéresis evita que los umbrales parpadeen.
+tr-noise.c6.viz.items.0.a	mediana
+tr-noise.c6.viz.items.0.b	quita picos
+tr-noise.c6.viz.items.1.a	media móvil
+tr-noise.c6.viz.items.1.b	suaviza el ruido
+tr-noise.c6.viz.items.2.a	histéresis
+tr-noise.c6.viz.items.2.b	umbrales on/off estables
+tr-noise.c7.title	Histéresis
+tr-noise.c7.text	Un termostato ajustado a 20 °C se encendería y apagaría constantemente en torno a 20. Con histéresis, se enciende a 19,5 y se apaga a 20,5. Los termostatos de ESPHome y Home Assistant lo admiten.
+tr-noise.c7.viz.unit	°C
+tr-noise.c7.viz.items.0.l	enciende
+tr-noise.c7.viz.items.1.l	apaga
+tr-noise.c8.title	Ruido de conmutación
+tr-noise.c8.text	Los convertidores buck y los motores generan flancos rápidos que irradian ruido. Mantén sus bucles pequeños, coloca cerca los condensadores de entrada y sepáralos de los circuitos analógicos.
+tr-noise.c8.viz.items.0	Bucles de conmutación pequeños
+tr-noise.c8.viz.items.1	Condensadores de entrada cerca
+tr-noise.c8.viz.items.2	Circuitos analógicos lejos
+tr-noise.c8.viz.items.3	Plano de masa continuo
+tr-noise.c9.title	CEM
+tr-noise.c9.text	Los productos comerciales deben superar ensayos de compatibilidad electromagnética (CEM): no deben emitir demasiadas interferencias ni verse alterados por ellas. En Europa, el marcado CE lo cubre.
+tr-noise.c9.viz.l.t	Emisiones
+tr-noise.c9.viz.l.items.0	no molestar a otros
+tr-noise.c9.viz.l.items.1	radio, TV
+tr-noise.c9.viz.r.t	Inmunidad
+tr-noise.c9.viz.r.items.0	resistir interferencias
+tr-noise.c9.viz.r.items.1	estática, sobretensiones, radios cercanas
+tr-displays.title	Pantallas y LED
+tr-displays.summary	Iluminar cosas, desde un LED hasta una pantalla.
+tr-displays.q0.q	¿Cuánta corriente pueden consumir 100 LED WS2812B en blanco total?
+tr-displays.q0.o0	0,6 A
+tr-displays.q0.o1	6 A
+tr-displays.q0.o2	60 A
+tr-displays.q0.x	100 × 60 mA = 6 A.
+tr-displays.q1.q	¿Qué pantalla conserva la imagen sin alimentación?
+tr-displays.q1.o0	OLED
+tr-displays.q1.o1	LCD
+tr-displays.q1.o2	Tinta electrónica
+tr-displays.q1.x	La tinta electrónica es biestable.
+tr-displays.q2.q	Luz roja más luz verde se ve…
+tr-displays.q2.o0	Azul
+tr-displays.q2.o1	Amarilla
+tr-displays.q2.o2	Blanca
+tr-displays.q2.x	Mezcla aditiva de colores.
+tr-displays.c0.title	Brillo y corriente de un LED
+tr-displays.c0.text	El brillo de un LED depende de la corriente, así que los LED se controlan con una resistencia o un driver de corriente constante, nunca directamente desde una fuente de tensión.
+tr-displays.c0.viz.steps.0	Tensión de alimentación
+tr-displays.c0.viz.steps.1	Resistencia o driver de corriente
+tr-displays.c0.viz.steps.2	LED a su corriente nominal
+tr-displays.c0.viz.steps.3	Brillo estable
+tr-displays.c1.title	LED direccionables
+tr-displays.c1.text	Las tiras WS2812B («NeoPixel») llevan un diminuto controlador en cada LED. Un único cable de datos fija el color de cada LED por separado, perfecto para efectos controlados por un ESP32.
+tr-displays.c1.viz.steps.0	Pin de datos del ESP32
+tr-displays.c1.viz.steps.1	El LED 1 toma su color
+tr-displays.c1.viz.steps.2	Pasa el resto
+tr-displays.c1.viz.steps.3	LED 2, LED 3…
+tr-displays.c2.title	Alimentar tiras de LED
+tr-displays.c2.text	Cada WS2812B puede consumir unos 60 mA en blanco total. Las tiras largas necesitan cables gruesos y alimentación inyectada en varios puntos.
+tr-displays.c2.example.0	5 m × 60 LED/m
+tr-displays.c2.example.1	300 × 0,06
+tr-displays.c2.example.2	≈ 18 A en blanco total: fuente de 5 V grande
+tr-displays.c2.viz.f	I ≈ LED × 60 mA
+tr-displays.c2.viz.items.0.s	60 LED
+tr-displays.c2.viz.items.0.m	un metro
+tr-displays.c2.viz.items.1.s	≈ 3,6 A
+tr-displays.c2.viz.items.1.m	en blanco total, 5 V
+tr-displays.c3.title	Adaptar el nivel de los datos
+tr-displays.c3.text	Las tiras WS2812B a 5 V pueden no leer de forma fiable una señal de datos de 3,3 V de un ESP32. Un adaptador de nivel sencillo (como un 74AHCT125) o un primer LED de sacrificio acaba con el parpadeo.
+tr-displays.c3.viz.items.0.w	colores aleatorios y parpadeo
+tr-displays.c3.viz.items.0.r	adaptador de nivel en la línea de datos
+tr-displays.c3.viz.items.1.w	cable de datos largo
+tr-displays.c3.viz.items.1.r	pon una resistencia de 330 Ω y acórtalo
+tr-displays.c4.title	LCD de caracteres
+tr-displays.c4.text	La clásica LCD de 16×2 muestra dos líneas de texto. Con un módulo I²C trasero solo necesita cuatro cables.
+tr-displays.c4.viz.items.0.a	LCD 16×2
+tr-displays.c4.viz.items.0.b	2 líneas de 16 caracteres
+tr-displays.c4.viz.items.1.a	módulo I²C
+tr-displays.c4.viz.items.1.b	4 cables
+tr-displays.c4.viz.items.2.a	retroiluminación
+tr-displays.c4.viz.items.2.b	regulable
+tr-displays.c5.title	Pantallas OLED
+tr-displays.c5.text	Las pequeñas pantallas OLED (como la SSD1306 de 0,96", 128×64) dan gráficos nítidos sin retroiluminación. Cada píxel emite luz, así que el negro no consume. Las imágenes estáticas pueden quedarse marcadas con el tiempo.
+tr-displays.c5.viz.l.t	OLED
+tr-displays.c5.viz.l.items.0	negros profundos
+tr-displays.c5.viz.l.items.1	pequeña
+tr-displays.c5.viz.l.items.2	puede marcarse
+tr-displays.c5.viz.r.t	LCD/TFT
+tr-displays.c5.viz.r.items.0	retroiluminada
+tr-displays.c5.viz.r.items.1	más grande y barata
+tr-displays.c5.viz.r.items.2	color
+tr-displays.c6.title	Tinta electrónica
+tr-displays.c6.text	Las pantallas de tinta electrónica conservan la imagen sin consumir nada, como un Kindle. Se refrescan despacio, pero son perfectas para paneles con batería que se actualizan cada pocos minutos.
+tr-displays.c6.viz.l.t	E-paper
+tr-displays.c6.viz.l.items.0	no gasta para mantener imagen
+tr-displays.c6.viz.l.items.1	refresco lento
+tr-displays.c6.viz.l.items.2	legible al sol
+tr-displays.c6.viz.r.t	TFT
+tr-displays.c6.viz.r.items.0	rápida y colorida
+tr-displays.c6.viz.r.items.1	necesita energía siempre
+tr-displays.c7.title	Multiplexación
+tr-displays.c7.text	Para controlar muchos LED con pocos pines, se encienden por filas, una tras otra, muy deprisa. La persistencia de la visión hace que la pantalla parezca estable.
+tr-displays.c7.viz.steps.0	Enciende la fila 1
+tr-displays.c7.viz.steps.1	Fila 2
+tr-displays.c7.viz.steps.2	Fila 3
+tr-displays.c7.viz.steps.3	Repite cientos de veces por segundo
+tr-displays.c8.title	Mezcla de colores
+tr-displays.c8.text	Los LED RGB mezclan luz roja, verde y azul. Rojo + verde al máximo se ve amarillo; los tres al máximo dan blanco.
+tr-displays.c8.viz.items.0.a	rojo + verde
+tr-displays.c8.viz.items.0.b	amarillo
+tr-displays.c8.viz.items.1.a	verde + azul
+tr-displays.c8.viz.items.1.b	cian
+tr-displays.c8.viz.items.2.a	rojo + azul
+tr-displays.c8.viz.items.2.b	magenta
+tr-displays.c8.viz.items.3.a	los tres
+tr-displays.c8.viz.items.3.b	blanco
+tr-displays.c9.title	Pantallas en ESPHome
+tr-displays.c9.text	ESPHome admite muchas pantallas: muestra temperaturas, relojes o estados de Home Assistant con unas pocas líneas de configuración y una lambda para dibujar.
+tr-displays.c9.viz.items.0	OLED SSD1306
+tr-displays.c9.viz.items.1	TFT ILI9341
+tr-displays.c9.viz.items.2	Tinta electrónica Waveshare
+tr-displays.c9.viz.items.3	Tiras WS2812 con el componente light
+tr-computer.title	Cómo funciona un ordenador
+tr-computer.summary	De los transistores a los programas en marcha.
+tr-computer.q0.q	¿Cuáles son los pasos del ciclo de la CPU?
+tr-computer.q0.o0	Cargar, guardar, salir
+tr-computer.q0.o1	Buscar, decodificar, ejecutar
+tr-computer.q0.o2	Leer, escribir, imprimir
+tr-computer.q0.x	Es el bucle básico de todo procesador.
+tr-computer.q1.q	¿Por qué tienen caché las CPU?
+tr-computer.q1.o0	Para guardar archivos
+tr-computer.q1.o1	Para tener los datos de uso frecuente cerca y a mano rápido
+tr-computer.q1.o2	Para refrigerar el chip
+tr-computer.q1.x	La RAM es lenta comparada con la CPU.
+tr-computer.q2.q	¿Qué juego de instrucciones es abierto y se usa en el ESP32-C3?
+tr-computer.q2.o0	x86
+tr-computer.q2.o1	ARM
+tr-computer.q2.o2	RISC-V
+tr-computer.q2.x	RISC-V es de código abierto.
+tr-computer.c0.title	El bucle de la CPU
+tr-computer.c0.text	Un procesador repite un ciclo miles de millones de veces por segundo: busca una instrucción en la memoria, la decodifica, la ejecuta y pasa a la siguiente.
+tr-computer.c0.viz.steps.0	Buscar la instrucción
+tr-computer.c0.viz.steps.1	Decodificarla
+tr-computer.c0.viz.steps.2	Ejecutarla
+tr-computer.c0.viz.steps.3	Siguiente instrucción
+tr-computer.c1.title	Las instrucciones son simples
+tr-computer.c1.text	Cada instrucción hace algo diminuto: sumar dos números, compararlos, cargar de la memoria, saltar a otra instrucción. Todo lo complejo se construye con millones de ellas.
+tr-computer.c1.viz.items.0	Cargar de memoria
+tr-computer.c1.viz.items.1	Sumar o multiplicar
+tr-computer.c1.viz.items.2	Comparar
+tr-computer.c1.viz.items.3	Saltar si se cumple
+tr-computer.c1.viz.items.4	Guardar en memoria
+tr-computer.c2.title	Registros y ALU
+tr-computer.c2.text	Los registros son huecos de almacenamiento diminutos y ultrarrápidos dentro de la CPU. La unidad aritmético-lógica (ALU) hace sobre ellos las operaciones matemáticas y lógicas.
+tr-computer.c2.viz.steps.0	Cargar valores en registros
+tr-computer.c2.viz.steps.1	La ALU los suma
+tr-computer.c2.viz.steps.2	Resultado en un registro
+tr-computer.c2.viz.steps.3	Guardar en memoria
+tr-computer.c3.title	Compiladores
+tr-computer.c3.text	Escribes código en un lenguaje como C++ o Python; un compilador o un intérprete lo convierte en instrucciones máquina que la CPU entiende.
+tr-computer.c3.viz.steps.0	Código fuente
+tr-computer.c3.viz.steps.1	Compilador
+tr-computer.c3.viz.steps.2	Código máquina
+tr-computer.c3.viz.steps.3	La CPU lo ejecuta
+tr-computer.c4.title	Núcleos e hilos
+tr-computer.c4.text	Los chips modernos tienen varios núcleos, cada uno un procesador completo, que ejecutan tareas distintas al mismo tiempo. El ESP32 tiene dos; los portátiles, 8 o más.
+tr-computer.c4.viz.unit	núcleos (típico)
+tr-computer.c4.viz.items.0.l	Arduino Uno
+tr-computer.c4.viz.items.1.l	ESP32
+tr-computer.c4.viz.items.2.l	Móvil
+tr-computer.c4.viz.items.3.l	Portátil
+tr-computer.c4.viz.items.4.l	Servidor
+tr-computer.c5.title	La frecuencia de reloj no lo es todo
+tr-computer.c5.text	El rendimiento depende de las instrucciones por ciclo, el tamaño de la caché, la velocidad de la memoria y el paralelismo, no solo de los GHz. Un chip moderno a 3 GHz puede ser mucho más rápido que uno antiguo a 4 GHz.
+tr-computer.c5.viz.items.0	Instrucciones por ciclo
+tr-computer.c5.viz.items.1	Tamaño de la caché
+tr-computer.c5.viz.items.2	Ancho de banda de memoria
+tr-computer.c5.viz.items.3	Número de núcleos
+tr-computer.c5.viz.items.4	Frecuencia de reloj
+tr-computer.c6.title	Cachés
+tr-computer.c6.text	Traer datos de la RAM lleva mucho tiempo para lo que es una CPU. Las cachés guardan los datos usados recientemente cerca del núcleo. La mayoría de los programas reutilizan datos, así que la caché acierta casi siempre.
+tr-computer.c6.viz.unit	tiempo de acceso aprox. (ns)
+tr-computer.c6.viz.items.0.l	Caché L1
+tr-computer.c6.viz.items.1.l	Caché L2
+tr-computer.c6.viz.items.2.l	RAM
+tr-computer.c6.viz.items.3.l	SSD
+tr-computer.c7.title	Sistemas operativos
+tr-computer.c7.text	Un sistema operativo reparte la CPU, la memoria y los dispositivos entre muchos programas, alternando entre ellos miles de veces por segundo para que cada uno parezca ejecutarse sin parar.
+tr-computer.c7.viz.root	Sistema operativo
+tr-computer.c7.viz.items.0	Planifica programas
+tr-computer.c7.viz.items.1	Gestiona la memoria
+tr-computer.c7.viz.items.2	Controla dispositivos
+tr-computer.c7.viz.items.3	Gestiona archivos y red
+tr-computer.c8.title	Arquitecturas
+tr-computer.c8.text	x86 domina en PC y servidores; ARM domina en móviles y se extiende a portátiles y centros de datos; RISC-V es un juego de instrucciones abierto que crece en microcontroladores, como el ESP32-C3.
+tr-computer.c8.viz.items.0.a	x86
+tr-computer.c8.viz.items.0.b	PC y servidores
+tr-computer.c8.viz.items.1.a	ARM
+tr-computer.c8.viz.items.1.b	móviles, Mac de Apple, servidores
+tr-computer.c8.viz.items.2.a	RISC-V
+tr-computer.c8.viz.items.2.b	abierta, microcontroladores
+tr-computer.c8.viz.items.3.a	Xtensa
+tr-computer.c8.viz.items.3.b	ESP32 original
+tr-computer.c9.title	La ley de Moore
+tr-computer.c9.text	En 1965, Gordon Moore observó que el número de transistores de un chip se duplicaba aproximadamente cada dos años. La tendencia se mantuvo durante décadas, aunque se ha frenado a medida que los transistores se acercan al tamaño atómico.
+tr-computer.c9.viz.events.0.l	Intel 4004, 2300 transistores
+tr-computer.c9.viz.events.1.l	Pentium, 3 millones
+tr-computer.c9.viz.events.2.l	~1000 millones
+tr-computer.c9.viz.events.3.y	años 2020
+tr-computer.c9.viz.events.3.l	50 000 millones+

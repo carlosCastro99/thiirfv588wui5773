@@ -1,0 +1,300 @@
+P.title	IA générative
+P.blurb	Comment fonctionnent les modèles qui écrivent, dessinent et parlent, et comment bien les utiliser.
+gen-what.title	Qu'est-ce que l'IA générative ?
+gen-what.summary	Des modèles qui créent du texte, des images, du son et du code.
+gen-what.q0.q	Qu'est-ce qui rend une IA « générative » ?
+gen-what.q0.o0	Elle est très grande
+gen-what.q0.o1	Elle crée du contenu nouveau au lieu de seulement classer
+gen-what.q0.o2	Elle tourne dans le cloud
+gen-what.q0.x	Elle génère du texte, des images, du code ou du son.
+gen-what.q1.q	Un modèle adapté à de nombreuses tâches après un entraînement large s'appelle…
+gen-what.q1.o0	Un moteur de règles
+gen-what.q1.o1	Un modèle de fondation
+gen-what.q1.o2	Un tableur
+gen-what.q1.x	Un seul modèle, de nombreux usages.
+gen-what.q2.q	Laquelle de ces choses est une faiblesse de l'IA générative ?
+gen-what.q2.o0	Rédiger un brouillon
+gen-what.q2.o1	Des faits exacts sans sources
+gen-what.q2.o2	Résumer
+gen-what.q2.x	Elle peut se tromper avec assurance.
+gen-what.c0.title	De la reconnaissance à la création
+gen-what.c0.text	L'IA classique sert surtout à classer et à prédire : est-ce un spam, quelle sera la demande ? L'IA générative crée du contenu nouveau : un paragraphe, une image, une mélodie, un bout de code, à partir de motifs appris sur d'énormes quantités d'exemples.
+gen-what.c0.viz.l.t	IA prédictive
+gen-what.c0.viz.l.items.0	classe, note, prévoit
+gen-what.c0.viz.l.items.1	filtre anti-spam, prévision
+gen-what.c0.viz.r.t	IA générative
+gen-what.c0.viz.r.items.0	crée du contenu nouveau
+gen-what.c0.viz.r.items.1	texte, images, code, audio
+gen-what.c1.title	Une seule idée de fond
+gen-what.c1.text	La plupart des modèles génératifs apprennent la probabilité des données : quel mot suit généralement tel autre, quels pixels ressemblent à un chat. Générer, c'est tirer un échantillon de cette distribution apprise, morceau par morceau.
+gen-what.c1.viz.steps.0	Apprendre des exemples
+gen-what.c1.viz.steps.1	Modèle du probable
+gen-what.c1.viz.steps.2	Tirer du nouveau
+gen-what.c1.viz.steps.3	Texte, image ou son
+gen-what.c2.title	Modèles de fondation
+gen-what.c2.text	Les grands modèles entraînés sur des données variées, puis adaptés à de nombreuses tâches, s'appellent des modèles de fondation. Un même modèle peut résumer, traduire, écrire du code et répondre à des questions sans être réentraîné pour chaque tâche.
+gen-what.c2.viz.root	Modèle de fondation
+gen-what.c2.viz.items.0	Résumer
+gen-what.c2.viz.items.1	Traduire
+gen-what.c2.viz.items.2	Écrire du code
+gen-what.c2.viz.items.3	Répondre
+gen-what.c3.title	Grandes familles
+gen-what.c3.text	Les grands modèles de langage génèrent du texte et du code. Les modèles de diffusion génèrent des images et des vidéos. D'autres modèles génèrent de la parole, de la musique et de la 3D. De plus en plus, un seul modèle multimodal en gère plusieurs.
+gen-what.c3.viz.items.0.a	LLM
+gen-what.c3.viz.items.0.b	texte et code
+gen-what.c3.viz.items.1.a	diffusion
+gen-what.c3.viz.items.1.b	images et vidéo
+gen-what.c3.viz.items.2.a	synthèse vocale
+gen-what.c3.viz.items.2.b	parole
+gen-what.c3.viz.items.3.a	multimodaux
+gen-what.c3.viz.items.3.b	un peu de tout
+gen-what.c4.title	Le tournant de 2022
+gen-what.c4.text	Les générateurs d'images (DALL·E 2, Midjourney, Stable Diffusion) et ChatGPT ont tous percé en 2022. En quelques mois, des centaines de millions de personnes utilisaient l'IA générative.
+gen-what.c4.viz.events.0.y	avr. 2022
+gen-what.c4.viz.events.0.l	DALL·E 2
+gen-what.c4.viz.events.1.y	août 2022
+gen-what.c4.viz.events.1.l	Stable Diffusion
+gen-what.c4.viz.events.2.y	nov. 2022
+gen-what.c4.viz.events.2.l	ChatGPT
+gen-what.c4.viz.events.3.l	GPT-4, Claude, Llama
+gen-what.c5.title	Ce qu'elle fait bien
+gen-what.c5.text	L'IA générative excelle pour les premiers jets, les résumés, la reformulation, la traduction, le brainstorming, les explications, l'extraction d'informations de documents désordonnés et l'écriture de code courant.
+gen-what.c5.viz.items.0	Premiers jets
+gen-what.c5.viz.items.1	Résumés
+gen-what.c5.viz.items.2	Traduction et reformulation
+gen-what.c5.viz.items.3	Extraire des données de documents
+gen-what.c5.viz.items.4	Code courant
+gen-what.c6.title	Ce qu'elle n'est pas
+gen-what.c6.text	Ce n'est ni une base de données de faits ni une calculatrice. Elle peut se tromper avec assurance, a une date limite de connaissances et ne connaît pas vos données privées, sauf si vous les lui fournissez.
+gen-what.c6.viz.l.t	Forte
+gen-what.c6.viz.l.items.0	langage et motifs
+gen-what.c6.viz.l.items.1	rédaction
+gen-what.c6.viz.l.items.2	explication
+gen-what.c6.viz.r.t	Faible
+gen-what.c6.viz.r.items.0	faits exacts sans sources
+gen-what.c6.viz.r.items.1	calcul précis
+gen-what.c6.viz.r.items.2	vos données privées
+gen-what.c7.title	Assistants et modèles
+gen-what.c7.text	Une application de chatbot (ChatGPT, Claude, Gemini, Copilot) est un produit construit autour d'un modèle, avec une interface de chat, des couches de sécurité, une mémoire, des outils et la gestion de fichiers. Un même modèle peut alimenter de nombreux produits différents.
+gen-what.c7.viz.steps.0	Modèle
+gen-what.c7.viz.steps.1	Sécurité et instructions système
+gen-what.c7.viz.steps.2	Outils, fichiers, mémoire
+gen-what.c7.viz.steps.3	Assistant de chat
+gen-what.c8.title	L'humain dans la boucle
+gen-what.c8.text	L'usage le plus efficace associe la rapidité de l'IA au jugement humain : l'IA rédige, une personne vérifie les faits, ajoute du contexte et décide. Vous restez responsable du résultat.
+gen-what.c8.viz.steps.0	L'IA rédige
+gen-what.c8.viz.steps.1	L'humain relit
+gen-what.c8.viz.steps.2	L'humain corrige et décide
+gen-what.c8.viz.steps.3	L'IA affine
+gen-what.c9.title	Pourquoi c'est important
+gen-what.c9.text	L'IA générative transforme le travail intellectuel comme les tableurs ont transformé la comptabilité : beaucoup de tâches s'accélèrent, de nouvelles apparaissent, et des compétences comme le jugement et la clarté de pensée prennent de la valeur.
+gen-what.c9.viz.l.t	S'accélère
+gen-what.c9.viz.l.items.0	rédaction
+gen-what.c9.viz.l.items.1	résumés
+gen-what.c9.viz.l.items.2	code répétitif
+gen-what.c9.viz.r.t	Prend de la valeur
+gen-what.c9.viz.r.items.0	jugement
+gen-what.c9.viz.r.items.1	vérification
+gen-what.c9.viz.r.items.2	bien poser les questions
+gen-llm.title	Comment on entraîne les LLM
+gen-llm.summary	Tokens, pré-entraînement, mise à l'échelle et affinage.
+gen-llm.q0.q	À quoi un LLM est-il entraîné pendant le pré-entraînement ?
+gen-llm.q0.o0	Répondre à des questions
+gen-llm.q0.o1	Prédire le token suivant
+gen-llm.q0.o2	Chercher sur le web
+gen-llm.q0.x	La prédiction du token suivant à très grande échelle.
+gen-llm.q1.q	Qu'est-ce qui transforme un modèle de base en assistant ?
+gen-llm.q1.o0	Plus de GPU
+gen-llm.q1.o1	L'ajustement aux instructions et l'entraînement sur les préférences
+gen-llm.q1.o2	Une fenêtre de contexte plus grande
+gen-llm.q1.x	L'affinage façonne son comportement.
+gen-llm.q2.q	Environ combien de mots anglais y a-t-il dans 1 000 tokens ?
+gen-llm.q2.o0	250
+gen-llm.q2.o1	750
+gen-llm.q2.o2	4 000
+gen-llm.q2.x	À peu près ¾ de mot par token.
+gen-llm.c0.title	Prédire le token suivant
+gen-llm.c0.text	Un LLM est entraîné sur une seule tâche : prédire le token suivant d'un texte. Répétée sur des milliers de milliards de tokens, cette tâche oblige le modèle à assimiler la grammaire, des faits, des schémas de raisonnement et des styles.
+gen-llm.c0.viz.steps.0	Texte jusqu'ici
+gen-llm.c0.viz.steps.1	Prédire le token suivant
+gen-llm.c0.viz.steps.2	Comparer avec le vrai
+gen-llm.c0.viz.steps.3	Ajuster des milliards de poids
+gen-llm.c1.title	Tokens
+gen-llm.c1.text	Le texte est découpé en tokens, environ ¾ d'un mot anglais chacun. Les modèles lisent et produisent des tokens, et l'usage est facturé et limité en tokens. Le portugais demande généralement un peu plus de tokens que l'anglais pour le même contenu.
+gen-llm.c1.viz.items.0.a	"learning"
+gen-llm.c1.viz.items.0.b	1 token
+gen-llm.c1.viz.items.1.a	"aprendizagem"
+gen-llm.c1.viz.items.1.b	plusieurs tokens
+gen-llm.c1.viz.items.2.a	1 000 tokens
+gen-llm.c1.viz.items.2.b	~750 mots anglais
+gen-llm.c2.title	Données de pré-entraînement
+gen-llm.c2.text	Le pré-entraînement utilise d'immenses jeux de données : pages web, livres, code, articles scientifiques et plus encore, filtrés selon leur qualité. Les modèles de pointe s'entraînent sur de nombreux milliers de milliards de tokens.
+gen-llm.c2.viz.items.0	Texte web filtré
+gen-llm.c2.viz.items.1	Livres et articles
+gen-llm.c2.viz.items.2	Dépôts de code
+gen-llm.c2.viz.items.3	Articles scientifiques
+gen-llm.c2.viz.items.4	Sources multilingues
+gen-llm.c3.title	Puissance de calcul
+gen-llm.c3.text	Entraîner un modèle de pointe mobilise des milliers de GPU pendant des semaines ou des mois et coûte de dizaines à centaines de millions de dollars. C'est pourquoi seule une poignée de laboratoires entraînent les plus grands modèles.
+gen-llm.c3.viz.steps.0	Des milliers de GPU
+gen-llm.c3.viz.steps.1	Des semaines d'entraînement
+gen-llm.c3.viz.steps.2	Des milliers de milliards de tokens
+gen-llm.c3.viz.steps.3	Un modèle de base
+gen-llm.c4.title	Lois d'échelle
+gen-llm.c4.text	Les chercheurs ont constaté que l'erreur (la « loss ») diminue de façon prévisible quand on augmente ensemble les paramètres, les données et le calcul. Cela a donné aux laboratoires la confiance nécessaire pour construire des modèles toujours plus grands.
+gen-llm.c4.viz.steps.0	Plus de paramètres
+gen-llm.c4.viz.steps.1	Plus de données
+gen-llm.c4.viz.steps.2	Plus de calcul
+gen-llm.c4.viz.steps.3	Modèle meilleur, comme prévu
+gen-llm.c5.title	Modèle de base ou assistant
+gen-llm.c5.text	Un modèle de base se contente de prolonger le texte ; posez-lui une question et il risque d'écrire d'autres questions. L'ajustement aux instructions et l'entraînement sur les préférences en font un assistant utile qui suit les demandes.
+gen-llm.c5.viz.l.t	Modèle de base
+gen-llm.c5.viz.l.items.0	prolonge tout texte
+gen-llm.c5.viz.l.items.1	imprévisible
+gen-llm.c5.viz.r.t	Assistant
+gen-llm.c5.viz.r.items.0	suit les instructions
+gen-llm.c5.viz.r.items.1	utile et plus sûr
+gen-llm.c6.title	Ajustement aux instructions
+gen-llm.c6.text	Le modèle de base est affiné sur de nombreux exemples d'instructions associées à de bonnes réponses : « Résume ceci », « Écris un e-mail », « Explique comme si j'avais 10 ans ».
+gen-llm.c6.viz.steps.0	Modèle de base
+gen-llm.c6.viz.steps.1	Exemples : instruction + réponse idéale
+gen-llm.c6.viz.steps.2	Affinage
+gen-llm.c6.viz.steps.3	Suit les instructions
+gen-llm.c7.title	Apprendre des préférences
+gen-llm.c7.text	Des personnes (et des critiques IA) comparent des paires de réponses et choisissent la meilleure. Un modèle de récompense apprend ces préférences, et l'assistant est entraîné à obtenir un bon score : c'est le RLHF, ou des méthodes proches comme le RLAIF et le DPO.
+gen-llm.c7.viz.steps.0	Deux réponses
+gen-llm.c7.viz.steps.1	Préférence choisie
+gen-llm.c7.viz.steps.2	Le modèle de récompense apprend
+gen-llm.c7.viz.steps.3	L'assistant s'améliore
+gen-llm.c8.title	Modèles de raisonnement
+gen-llm.c8.text	Les modèles plus récents sont entraînés à réfléchir étape par étape avant de répondre, en consacrant plus de calcul aux problèmes difficiles. Ce « calcul au moment de l'inférence » améliore les maths, le code et la planification.
+gen-llm.c8.viz.l.t	Réponse rapide
+gen-llm.c8.viz.l.items.0	peu de réflexion
+gen-llm.c8.viz.l.items.1	bien pour le simple
+gen-llm.c8.viz.r.t	Mode raisonnement
+gen-llm.c8.viz.r.items.0	réfléchit plus longtemps
+gen-llm.c8.viz.r.items.1	meilleur sur le difficile
+gen-llm.c8.viz.r.items.2	plus lent et plus cher
+gen-llm.c9.title	Date limite des connaissances
+gen-llm.c9.text	Les connaissances d'un modèle s'arrêtent à la fin de ses données d'entraînement. Il ne connaîtra pas les événements ultérieurs, sauf si on lui donne des outils comme la recherche web ou des documents que vous fournissez.
+gen-llm.c9.viz.events.0.y	fin des données
+gen-llm.c9.viz.events.0.l	date limite
+gen-llm.c9.viz.events.1.y	mois plus tard
+gen-llm.c9.viz.events.1.l	modèle publié
+gen-llm.c9.viz.events.2.y	ensuite
+gen-llm.c9.viz.events.2.l	outils requis pour l'actu
+gen-transformer.title	Transformers et attention
+gen-transformer.summary	L'architecture derrière l'IA moderne.
+gen-transformer.q0.q	Que permet l'attention à un token ?
+gen-transformer.q0.o0	Sauter la phrase
+gen-transformer.q0.o1	Évaluer à quel point chaque autre token compte pour son sens
+gen-transformer.q0.o2	Compter les mots
+gen-transformer.q0.x	Il combine les informations des tokens pertinents.
+gen-transformer.q1.q	Pourquoi les Transformers conviennent-ils aux GPU ?
+gen-transformer.q1.o0	Ils sont plus petits
+gen-transformer.q1.o1	Ils traitent les tokens en parallèle
+gen-transformer.q1.o2	Ils n'ont pas besoin de mémoire
+gen-transformer.q1.x	Le parallélisme correspond à la conception des GPU.
+gen-transformer.q2.q	Comment le coût de l'attention augmente-t-il avec la longueur de contexte n ?
+gen-transformer.q2.o0	Linéairement
+gen-transformer.q2.o1	Avec n au carré
+gen-transformer.q2.o2	Il n'augmente pas
+gen-transformer.q2.x	Chaque token se compare à tous les autres.
+gen-transformer.c0.title	Avant les Transformers
+gen-transformer.c0.text	Les modèles de langage antérieurs (RNN, LSTM) lisaient le texte un mot à la fois, en transmettant une mémoire. Ils avaient du mal avec les textes longs et ne pouvaient pas être entraînés efficacement en parallèle.
+gen-transformer.c0.viz.l.t	RNN
+gen-transformer.c0.viz.l.items.0	mot par mot
+gen-transformer.c0.viz.l.items.1	oublient le contexte
+gen-transformer.c0.viz.l.items.2	lents à entraîner
+gen-transformer.c0.viz.r.t	Transformers
+gen-transformer.c0.viz.r.items.0	toute la séquence à la fois
+gen-transformer.c0.viz.r.items.1	contexte long
+gen-transformer.c0.viz.r.items.2	entraînement parallèle
+gen-transformer.c1.title	L'attention
+gen-transformer.c1.text	L'attention permet à chaque token de regarder tous les autres et de décider lesquels comptent pour son sens. Dans « The bank raised rates », « bank » prête attention à « rates » et désigne une banque, pas une rive.
+gen-transformer.c1.viz.steps.0	Chaque token pose une requête
+gen-transformer.c1.viz.steps.1	La compare aux clés des autres
+gen-transformer.c1.viz.steps.2	Pondère les plus pertinents
+gen-transformer.c1.viz.steps.3	Combine leurs valeurs
+gen-transformer.c2.title	Requête, clé, valeur
+gen-transformer.c2.text	Chaque token produit trois vecteurs : une requête (que est-ce que je cherche ?), une clé (qu'est-ce que j'offre ?) et une valeur (mon information). L'appariement des requêtes et des clés détermine quelle part de chaque valeur prendre.
+gen-transformer.c2.viz.items.0.a	requête
+gen-transformer.c2.viz.items.0.b	ce que je cherche
+gen-transformer.c2.viz.items.1.a	clé
+gen-transformer.c2.viz.items.1.b	ce que je contiens
+gen-transformer.c2.viz.items.2.a	valeur
+gen-transformer.c2.viz.items.2.b	information transmise
+gen-transformer.c3.title	Attention multi-têtes
+gen-transformer.c3.text	Les modèles font tourner de nombreuses « têtes » d'attention en parallèle. Différentes têtes apprennent à suivre différentes relations : la grammaire, qui a fait quoi, les renvois à des noms cités plus tôt, la mise en forme.
+gen-transformer.c3.viz.root	Têtes d'attention
+gen-transformer.c3.viz.items.0	Liens grammaticaux
+gen-transformer.c3.viz.items.1	Coréférence (il → Carlos)
+gen-transformer.c3.viz.items.2	Thèmes à longue portée
+gen-transformer.c3.viz.items.3	Motifs de mise en forme
+gen-transformer.c4.title	Des couches empilées
+gen-transformer.c4.text	Un Transformer empile des dizaines de couches, chacune avec de l'attention et un réseau feed-forward. Les premières couches traitent les motifs de surface ; les couches profondes construisent un sens abstrait.
+gen-transformer.c4.viz.items.0	Couches profondes : sens abstrait
+gen-transformer.c4.viz.items.1	Couches médianes : phrases, relations
+gen-transformer.c4.viz.items.2	Premières couches : mots, syntaxe
+gen-transformer.c4.viz.items.3	Embeddings : tokens en vecteurs
+gen-transformer.c5.title	Information de position
+gen-transformer.c5.text	L'attention seule ne connaît pas l'ordre des mots. Une information de position est ajoutée à chaque token pour que « le chien mord l'homme » diffère de « l'homme mord le chien ».
+gen-transformer.c5.viz.l.t	Sans position
+gen-transformer.c5.viz.l.items.0	chien mord homme = homme mord chien
+gen-transformer.c5.viz.r.t	Avec position
+gen-transformer.c5.viz.r.items.0	l'ordre change le sens
+gen-transformer.c6.title	Pourquoi ça a passé à l'échelle
+gen-transformer.c6.text	Les Transformers traitent tous les tokens en parallèle, ce qui convient parfaitement aux GPU. Il est ainsi devenu possible d'entraîner sur beaucoup plus de données, la clé des capacités actuelles.
+gen-transformer.c6.viz.steps.0	Traitement parallèle
+gen-transformer.c6.viz.steps.1	GPU pleinement utilisés
+gen-transformer.c6.viz.steps.2	Entraîner sur d'énormes données
+gen-transformer.c6.viz.steps.3	Modèles bien plus capables
+gen-transformer.c7.title	Le coût de l'attention
+gen-transformer.c7.text	L'attention standard compare chaque token à tous les autres, donc le coût croît avec le carré de la longueur du contexte. Des astuces d'ingénierie et de nouvelles architectures le réduisent pour permettre des contextes très longs.
+gen-transformer.c7.viz.f	coût ∝ n²
+gen-transformer.c7.viz.items.0.s	n
+gen-transformer.c7.viz.items.0.m	tokens en contexte
+gen-transformer.c7.viz.items.1.s	2× plus long
+gen-transformer.c7.viz.items.1.m	4× plus d'attention
+gen-transformer.c8.title	Générer du texte
+gen-transformer.c8.text	À l'inférence, le modèle produit un token à la fois, l'ajoute à l'entrée et recommence. Mettre en cache les calculs précédents (le cache KV) rend cela beaucoup plus rapide.
+gen-transformer.c8.viz.steps.0	Lire le contexte
+gen-transformer.c8.viz.steps.1	Prédire le token suivant
+gen-transformer.c8.viz.steps.2	L'ajouter
+gen-transformer.c8.viz.steps.3	Répéter jusqu'à la fin
+gen-transformer.c9.title	Une architecture, de nombreux usages
+gen-transformer.c9.text	Les Transformers alimentent désormais des modèles de texte, d'image, d'audio, de vidéo et de protéines. Les Vision Transformers traitent des fragments d'image comme des tokens ; AlphaFold utilise l'attention pour les structures des protéines.
+gen-transformer.c9.viz.items.0.a	texte
+gen-transformer.c9.viz.items.0.b	LLM
+gen-transformer.c9.viz.items.1.a	images
+gen-transformer.c9.viz.items.1.b	Vision Transformers
+gen-transformer.c9.viz.items.2.a	audio
+gen-transformer.c9.viz.items.2.b	modèles vocaux
+gen-transformer.c9.viz.items.3.a	protéines
+gen-transformer.c9.viz.items.3.b	AlphaFold
+gen-prompt.title	Bases du prompting
+gen-prompt.summary	Obtenir de bonnes réponses d'un modèle de langage.
+gen-prompt.q0.q	Qu'est-ce qui améliore le plus un prompt, en général ?
+gen-prompt.q0.o0	Écrire en majuscules
+gen-prompt.q0.o1	Donner un contexte pertinent sur la situation et l'objectif
+gen-prompt.q0.o2	Ajouter « s'il te plaît »
+gen-prompt.q0.x	Le modèle ne sait que ce que vous lui dites.
+gen-prompt.q1.q	Qu'est-ce que le few-shot prompting ?
+gen-prompt.q1.o0	Des prompts courts
+gen-prompt.q1.o1	Inclure quelques exemples du résultat voulu
+gen-prompt.q1.o2	Demander plusieurs fois
+gen-prompt.q1.x	Les exemples montrent le schéma.
+gen-prompt.q2.q	Pourquoi coller le document source au lieu de demander de mémoire ?
+gen-prompt.q2.o0	C'est plus court
+gen-prompt.q2.o1	Les réponses sont ancrées et vérifiables
+gen-prompt.q2.o2	Les modèles ne savent pas lire
+gen-prompt.q2.x	L'ancrage réduit les détails inventés.
+gen-prompt.c0.title	Le contexte, c'est tout
+gen-prompt.c0.text	Le modèle ne sait rien de votre situation si vous ne la lui décrivez pas. La plus grande amélioration consiste à donner du contexte : qui vous êtes, à qui c'est destiné, pourquoi vous en avez besoin.
+gen-prompt.c0.viz.items.0.w	« écris un e-mail au fournisseur »
+gen-prompt.c0.viz.items.0.r	« écris un e-mail ferme mais poli à notre fournisseur de soja au sujet d'un retard de 5 jours, pour préserver la relation »
+gen-prompt.c1.title	Précisez la tâche
+gen-prompt.c1.text	Dites exactement ce que vous voulez : le format, la longueur, le public et le ton. « Résume en 5 puces pour un DAF » vaut mieux que « résume ceci ».
+gen-prompt.c1.viz.items.0	Quoi : la tâche
+gen-prompt.c1.viz.items.1	Qui : le public
+gen-prompt.c1.viz.items.2	Comment : format et longueur

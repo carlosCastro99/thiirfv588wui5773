@@ -716,7 +716,7 @@ ps-personality.c8.viz.items.2	Psicopatía: insensibilidad
 ps-personality.c9.title	Conoce tu estilo
 ps-personality.c9.text	Si puntúas bajo en responsabilidad, apóyate en sistemas: calendarios, listas de comprobación, ahorro automático. Diseña tu entorno a partir de tu personalidad en lugar de luchar contra ella.
 ps-personality.c9.viz.items.0	Recordatorios en el calendario
-ps-personality.c9.viz.items.1	Listas de comprobación
+ps-personality.c9.viz.items.1	Listas de tareas
 ps-personality.c9.viz.items.2	Pagos automáticos
 ps-personality.c9.viz.items.3	Alguien que te pida cuentas
 ps-learning.title	Cómo aprendemos
@@ -765,7 +765,7 @@ ps-learning.c4.viz.l.items.0	repetir lo que sabes
 ps-learning.c4.viz.l.items.1	cómoda
 ps-learning.c4.viz.r.t	Práctica deliberada
 ps-learning.c4.viz.r.items.0	atacar puntos débiles
-ps-learning.c4.viz.r.items.1	retroalimentación
+ps-learning.c4.viz.r.items.1	correcciones
 ps-learning.c4.viz.r.items.2	exigente
 ps-learning.c5.title	Práctica intercalada
 ps-learning.c5.text	Mezclar distintos tipos de problemas en una sesión, en lugar de practicar un tipo cada vez, parece más difícil pero produce un mejor aprendizaje a largo plazo.
@@ -841,7 +841,7 @@ ps-attention.c3.viz.r.items.1	más lento
 ps-attention.c3.viz.r.items.2	más errores
 ps-attention.c4.title	El coste de cambiar
 ps-attention.c4.text	Tras una interrupción, puedes tardar muchos minutos en volver del todo al trabajo profundo. Los estudios con oficinistas encontraron una media de más de 20 minutos.
-ps-attention.c4.viz.steps.0	Concentración profunda
+ps-attention.c4.viz.steps.0	Foco profundo
 ps-attention.c4.viz.steps.1	Notificación
 ps-attention.c4.viz.steps.2	Miras el móvil
 ps-attention.c4.viz.steps.3	Largo camino de vuelta
@@ -873,7 +873,7 @@ ps-attention.c9.text	Según la investigación sobre la restauración de la atenc
 ps-attention.c9.viz.l.t	Paseo urbano
 ps-attention.c9.viz.l.items.0	alertas constantes
 ps-attention.c9.viz.l.items.1	agotador
-ps-attention.c9.viz.r.t	Paseo por el parque
+ps-attention.c9.viz.r.t	Paseo en el parque
 ps-attention.c9.viz.r.items.0	fascinación suave
 ps-attention.c9.viz.r.items.1	reparador
 ps-stress.title	Estrés, ansiedad y resiliencia
@@ -903,7 +903,7 @@ ps-stress.c1.text	La ansiedad es preocupación por lo que podría pasar. Es una 
 ps-stress.c1.viz.steps.0	Futuro incierto
 ps-stress.c1.viz.steps.1	La mente imagina amenazas
 ps-stress.c1.viz.steps.2	El cuerpo reacciona
-ps-stress.c1.viz.steps.3	Bucle de preocupación
+ps-stress.c1.viz.steps.3	Bucle de inquietud
 ps-stress.c2.title	Evitar alimenta el miedo
 ps-stress.c2.text	Evitar lo que tememos trae un alivio rápido, pero hace que el miedo sea más fuerte la próxima vez. Afrontarlo poco a poco, lo que se llama exposición, lo reduce.
 ps-stress.c2.viz.l.t	Evitar
@@ -986,3 +986,293 @@ ps-relationships.c2.text	John Gottman descubrió que las parejas estables tienen
 ps-relationships.c2.viz.unit	interacciones
 ps-relationships.c2.viz.items.0.l	Positivas
 ps-relationships.c2.viz.items.1.l	Negativas
+ps-relationships.c3.title	Los cuatro jinetes
+ps-relationships.c3.text	Gottman identificó cuatro patrones de comunicación que predicen las rupturas: la crítica, el desprecio, la actitud defensiva y la evasión. El desprecio es el más tóxico.
+ps-relationships.c3.viz.items.0.a	Crítica
+ps-relationships.c3.viz.items.0.b	atacar a la persona
+ps-relationships.c3.viz.items.1.a	Desprecio
+ps-relationships.c3.viz.items.1.b	burlas, poner los ojos en blanco
+ps-relationships.c3.viz.items.2.a	Actitud defensiva
+ps-relationships.c3.viz.items.2.b	echar balones fuera
+ps-relationships.c3.viz.items.3.a	Evasión
+ps-relationships.c3.viz.items.3.b	cerrarse en banda
+ps-relationships.c4.title	Acercarse al otro
+ps-relationships.c4.text	Los pequeños momentos importan: cuando tu pareja dice «mira ese pájaro», responder con interés crea conexión. Las parejas que siguieron juntas se acercaban la una a la otra mucho más a menudo.
+ps-relationships.c4.viz.l.t	Acercarse
+ps-relationships.c4.viz.l.items.0	responder con interés
+ps-relationships.c4.viz.l.items.1	crea confianza
+ps-relationships.c4.viz.r.t	Alejarse
+ps-relationships.c4.viz.r.items.0	ignorar
+ps-relationships.c4.viz.r.items.1	erosiona la confianza
+ps-relationships.c5.title	Proximidad y familiaridad
+ps-relationships.c5.text	Solemos hacernos amigos de quienes vemos a menudo: vecinos, compañeros de clase, colegas. La exposición repetida genera simpatía.
+ps-relationships.c5.viz.steps.0	Ver a menudo
+ps-relationships.c5.viz.steps.1	Resultar familiar
+ps-relationships.c5.viz.steps.2	Sentirse más a gusto
+ps-relationships.c5.viz.steps.3	Amistad
+ps-relationships.c6.title	¿Cuántos amigos?
+ps-relationships.c6.text	El antropólogo Robin Dunbar propuso que los humanos podemos mantener unas 150 relaciones estables, con círculos internos más pequeños de unas 5 y 15 personas.
+ps-relationships.c6.viz.items.0	5: los más íntimos
+ps-relationships.c6.viz.items.1	15: buenos amigos
+ps-relationships.c6.viz.items.2	50: amigos
+ps-relationships.c6.viz.items.3	150: contactos significativos
+ps-relationships.c7.title	Hacer amigos de adulto
+ps-relationships.c7.text	Las investigaciones sugieren que hacen falta unas 50 horas juntos para pasar de conocido a amigo ocasional y unas 200 horas para convertirse en amigos íntimos.
+ps-relationships.c7.viz.unit	horas juntos (aprox.)
+ps-relationships.c7.viz.items.0.l	Amigo ocasional
+ps-relationships.c7.viz.items.1.l	Amigo
+ps-relationships.c7.viz.items.2.l	Amigo íntimo
+ps-relationships.c8.title	Escucha activa
+ps-relationships.c8.text	Escucha para entender, no para responder. Devuelve lo que has oído con tus palabras, haz preguntas y resiste la tentación de lanzarte a dar consejos.
+ps-relationships.c8.viz.items.0	Atención plena
+ps-relationships.c8.viz.items.1	Devuelve lo que oyes
+ps-relationships.c8.viz.items.2	Haz preguntas abiertas
+ps-relationships.c8.viz.items.3	Guárdate los consejos
+ps-relationships.c9.title	Reparar tras un conflicto
+ps-relationships.c9.text	Las parejas que funcionan no son las que nunca discuten, sino las que reparan: una broma, una disculpa, una caricia. Los intentos de reparación calman el conflicto antes de que se agrave.
+ps-relationships.c9.viz.steps.0	Conflicto
+ps-relationships.c9.viz.steps.1	Intento de reparar
+ps-relationships.c9.viz.steps.2	Aceptado
+ps-relationships.c9.viz.steps.3	Conexión restablecida
+ps-perception.title	Percepción e ilusiones
+ps-perception.summary	Tu cerebro construye lo que ves.
+ps-perception.q0.q	¿Por qué no notamos nuestro punto ciego?
+ps-perception.q0.o0	Es muy pequeño
+ps-perception.q0.o1	El cerebro rellena el hueco
+ps-perception.q0.o2	Tenemos dos puntos ciegos que se anulan
+ps-perception.q0.x	La predicción en acción.
+ps-perception.q1.q	¿Qué causa el efecto McGurk?
+ps-perception.q1.o0	Oír mal
+ps-perception.q1.o1	Lo que vemos cambia lo que oímos
+ps-perception.q1.o2	El ruido fuerte
+ps-perception.q1.x	La vista y el oído se mezclan.
+ps-perception.c0.title	El cerebro predice
+ps-perception.c0.text	La percepción no es la imagen de una cámara. El cerebro predice constantemente lo que hay ahí fuera y usa los sentidos para corregir sus suposiciones.
+ps-perception.c0.viz.steps.0	El cerebro predice
+ps-perception.c0.viz.steps.1	Los sentidos comprueban
+ps-perception.c0.viz.steps.2	Error corregido
+ps-perception.c0.viz.steps.3	Predicción actualizada
+ps-perception.c1.title	El punto ciego
+ps-perception.c1.text	Cada ojo tiene un punto ciego donde el nervio óptico sale de la retina. No lo notas porque el cerebro rellena el hueco.
+ps-perception.c1.viz.steps.0	Hueco en la visión
+ps-perception.c1.viz.steps.1	El cerebro lo rellena
+ps-perception.c1.viz.steps.2	Imagen sin cortes
+ps-perception.c2.title	Ilusiones ópticas
+ps-perception.c2.text	En la ilusión de Müller-Lyer, dos líneas iguales parecen distintas por las flechas de sus extremos. El cerebro las interpreta como esquinas en 3D.
+ps-perception.c2.viz.l.t	Flechas fuera
+ps-perception.c2.viz.l.items.0	parece más larga
+ps-perception.c2.viz.r.t	Flechas dentro
+ps-perception.c2.viz.r.items.0	parece más corta
+ps-perception.c3.title	El vestido
+ps-perception.c3.text	En 2015, la foto de un vestido dividió internet: ¿azul y negro o blanco y dorado? El cerebro de cada persona hacía suposiciones distintas sobre la iluminación.
+ps-perception.c3.viz.l.t	Supone sombra
+ps-perception.c3.viz.l.items.0	lo ve blanco y dorado
+ps-perception.c3.viz.r.t	Supone luz intensa
+ps-perception.c3.viz.r.items.0	lo ve azul y negro
+ps-perception.c4.title	Ver caras
+ps-perception.c4.text	Vemos caras en las nubes, en los enchufes y en la parte delantera de los coches. Esta tendencia, la pareidolia, se debe a un cerebro afinado para detectar caras rápidamente.
+ps-perception.c4.viz.items.0	Nubes
+ps-perception.c4.viz.items.1	Enchufes
+ps-perception.c4.viz.items.2	Frontales de coche
+ps-perception.c4.viz.items.3	La Luna
+ps-perception.c5.title	El efecto McGurk
+ps-perception.c5.text	Si ves unos labios que dicen «ga» mientras oyes «ba», puede que oigas «da». Lo que vemos cambia lo que oímos.
+ps-perception.c5.viz.steps.0	Oyes «ba»
+ps-perception.c5.viz.steps.1	Ves labios decir «ga»
+ps-perception.c5.viz.steps.2	El cerebro mezcla
+ps-perception.c5.viz.steps.3	Percibes «da»
+ps-perception.c6.title	Ceguera al cambio
+ps-perception.c6.text	A menudo no vemos grandes cambios en una escena si ocurren durante un parpadeo o un corte. En un estudio, muchos no se dieron cuenta de que habían cambiado a la persona con la que hablaban.
+ps-perception.c6.viz.steps.0	Hablas con un desconocido
+ps-perception.c6.viz.steps.1	Breve interrupción
+ps-perception.c6.viz.steps.2	Lo cambian por otro
+ps-perception.c6.viz.steps.3	Muchos no lo notan
+ps-perception.c7.title	Procesamiento descendente
+ps-perception.c7.text	Las expectativas moldean la percepción. En «Bread» y «B13», el mismo símbolo central se ve distinto según el contexto: letras o números.
+ps-perception.c7.viz.items.0.a	A 13 C
+ps-perception.c7.viz.items.0.b	se lee como letra, B
+ps-perception.c7.viz.items.1.b	se lee como número, 13
+ps-perception.c7.viz.items.2.a	Contexto
+ps-perception.c7.viz.items.2.b	decide
+ps-perception.c8.title	Sabor y expectativas
+ps-perception.c8.text	En un estudio de 2001, estudiantes de enología describieron un vino blanco teñido de rojo con palabras propias del vino tinto. Las etiquetas, los precios y los colores cambian el sabor de la comida.
+ps-perception.c8.viz.steps.0	Tiñes de rojo un blanco
+ps-perception.c8.viz.steps.1	Los alumnos lo catan
+ps-perception.c8.viz.steps.2	Lo describen como tinto
+ps-perception.c9.title	Percepción del tiempo
+ps-perception.c9.text	El tiempo parece ir más lento cuando tenemos miedo y más rápido cuando estamos absortos. Las vacaciones parecen largas en el recuerdo por todas las experiencias nuevas.
+ps-perception.c9.viz.l.t	Durante
+ps-perception.c9.viz.l.items.0	ocupado, el tiempo vuela
+ps-perception.c9.viz.r.t	En el recuerdo
+ps-perception.c9.viz.r.items.0	lo nuevo parece largo
+ps-creativity.title	Creatividad
+ps-creativity.summary	De dónde salen las ideas.
+ps-creativity.q0.q	La creatividad requiere ideas que sean…
+ps-creativity.q0.o0	caras
+ps-creativity.q0.o1	originales y útiles
+ps-creativity.q0.o2	aleatorias
+ps-creativity.q0.x	Las dos partes importan.
+ps-creativity.q1.q	¿Qué descubrió el estudio de Stanford sobre caminar?
+ps-creativity.q1.o0	Que caminar cansa
+ps-creativity.q1.o1	Que caminar estimula las ideas creativas
+ps-creativity.q1.o2	Que no tiene efecto
+ps-creativity.q1.x	La producción aumentó en torno a un 60 %.
+ps-creativity.c0.title	Qué es la creatividad
+ps-creativity.c0.text	Los psicólogos definen la creatividad como la producción de ideas a la vez originales y útiles. Las dos partes importan: lo aleatorio no es creativo.
+ps-creativity.c0.viz.l.t	Original
+ps-creativity.c0.viz.l.items.0	nueva
+ps-creativity.c0.viz.l.items.1	sorprendente
+ps-creativity.c0.viz.r.t	Útil
+ps-creativity.c0.viz.r.items.0	funciona
+ps-creativity.c0.viz.r.items.1	tiene valor
+ps-creativity.c1.title	Divergente y convergente
+ps-creativity.c1.text	La creatividad necesita dos modos: el pensamiento divergente genera muchas ideas; el convergente elige las mejores y las pule.
+ps-creativity.c1.viz.steps.0	Diverge: muchas ideas
+ps-creativity.c1.viz.steps.1	Converge: elige la mejor
+ps-creativity.c1.viz.steps.2	Pule
+ps-creativity.c1.viz.steps.3	Prueba
+ps-creativity.c2.title	La cantidad genera calidad
+ps-creativity.c2.text	Los creadores prolíficos producen más éxitos y más fracasos. Picasso hizo decenas de miles de obras. Generar muchas ideas hace más probable que surjan buenas.
+ps-creativity.c2.viz.steps.0	Muchas ideas
+ps-creativity.c2.viz.steps.1	Muchos fallos
+ps-creativity.c2.viz.steps.2	Unas pocas geniales
+ps-creativity.c3.title	Incubación
+ps-creativity.c3.text	Alejarse de un problema suele ayudar. Las ideas pueden surgir en la ducha o en un paseo, después de que la mente haya trabajado en segundo plano.
+ps-creativity.c3.viz.steps.0	Trabajas a fondo en un problema
+ps-creativity.c3.viz.steps.1	Te alejas
+ps-creativity.c3.viz.steps.2	La mente sigue trabajando
+ps-creativity.c3.viz.steps.3	Idea repentina
+ps-creativity.c4.title	Caminar estimula las ideas
+ps-creativity.c4.text	Investigadores de Stanford descubrieron que la gente producía más ideas creativas caminando que sentada. Muchos pensadores famosos daban paseos a diario.
+ps-creativity.c4.viz.unit	producción creativa (relativa)
+ps-creativity.c4.viz.items.0.l	Sentado
+ps-creativity.c4.viz.items.1.l	Caminando
+ps-creativity.c5.title	Los límites ayudan
+ps-creativity.c5.text	Las restricciones pueden despertar la creatividad: el Dr. Seuss escribió *Huevos verdes con jamón* usando solo 50 palabras distintas, por una apuesta.
+ps-creativity.c5.viz.items.0.l	palabras distintas usadas
+ps-creativity.c5.viz.items.1.l	publicado
+ps-creativity.c5.viz.items.2.l	apuesta ganada
+ps-creativity.c6.title	Combinar ideas
+ps-creativity.c6.text	Muchas innovaciones combinan ideas existentes de formas nuevas: Gutenberg combinó una prensa de vino con los tipos móviles. Las experiencias diversas dan más material para combinar.
+ps-creativity.c6.viz.steps.0	Idea A: prensa de vino
+ps-creativity.c6.viz.steps.1	Idea B: tipos móviles
+ps-creativity.c6.viz.steps.2	Juntas: la imprenta
+ps-creativity.c7.title	Miedo a ser juzgado
+ps-creativity.c7.text	La lluvia de ideas en grupo suele producir menos ideas que las personas trabajando por separado, porque la gente se corta. Primero escribe las ideas en silencio y luego compártelas.
+ps-creativity.c7.viz.l.t	Lluvia de ideas abierta
+ps-creativity.c7.viz.l.items.0	la gente se corta
+ps-creativity.c7.viz.l.items.1	menos ideas
+ps-creativity.c7.viz.r.t	En silencio y luego compartir
+ps-creativity.c7.viz.r.items.0	más ideas
+ps-creativity.c8.title	El estado de ánimo importa
+ps-creativity.c8.text	Un estado de ánimo positivo y relajado amplía el pensamiento y ayuda a generar ideas; uno ligeramente crítico ayuda a evaluarlas.
+ps-creativity.c8.viz.l.t	Ánimo relajado
+ps-creativity.c8.viz.l.items.0	generar ideas
+ps-creativity.c8.viz.r.t	Ánimo crítico
+ps-creativity.c8.viz.r.items.0	evaluar ideas
+ps-creativity.c9.title	La prueba de los 30 círculos
+ps-creativity.c9.text	Dibuja 30 círculos y, en tres minutos, convierte el mayor número posible en objetos: un reloj, una pelota, una cara. La mayoría de la gente deja de juzgarse y va cada vez más rápido.
+ps-creativity.c9.viz.items.0	Reloj
+ps-creativity.c9.viz.items.1	Pelota
+ps-creativity.c9.viz.items.2	Planeta
+ps-creativity.c9.viz.items.3	Cara
+ps-creativity.c9.viz.items.4	Pizza
+ps-creativity.c9.viz.items.5	Rueda
+ps-experiments.title	Experimentos famosos
+ps-experiments.summary	Estudios que cambiaron cómo nos vemos.
+ps-experiments.q0.q	¿Qué mostraron los estudios de Harlow con monos?
+ps-experiments.q0.o0	Que solo importa la comida
+ps-experiments.q0.o1	Que el consuelo y el contacto importan
+ps-experiments.q0.o2	Que los monos prefieren el alambre
+ps-experiments.q0.x	Se aferraban a la madre de tela.
+ps-experiments.q1.q	¿Por qué se cuestiona hoy el experimento de la cárcel de Stanford?
+ps-experiments.q1.o0	Fue demasiado corto
+ps-experiments.q1.o1	Se aleccionó a los guardias y los métodos eran débiles
+ps-experiments.q1.o2	Nunca se llegó a hacer
+ps-experiments.q1.x	Sus conclusiones están en entredicho.
+ps-experiments.q2.q	¿Qué proporción aproximada de 100 estudios de psicología se replicó en 2015?
+ps-experiments.q2.o0	90 %
+ps-experiments.q2.o1	Entre el 36 y el 40 %
+ps-experiments.q2.o2	5 %
+ps-experiments.q2.x	Lo que llevó a mejores métodos.
+ps-experiments.c0.title	El experimento de la cárcel de Stanford
+ps-experiments.c0.text	En 1971, unos estudiantes hicieron de guardias y presos; el experimento se detuvo a los seis días porque los guardias se volvieron abusivos. Revisiones posteriores revelaron que a los guardias se les había aleccionado, así que hoy sus conclusiones están muy cuestionadas.
+ps-experiments.c0.viz.l.t	Versión popular
+ps-experiments.c0.viz.l.items.0	los roles corrompen solos
+ps-experiments.c0.viz.r.t	Crítica posterior
+ps-experiments.c0.viz.r.items.0	guardias aleccionados
+ps-experiments.c0.viz.r.items.1	ciencia débil
+ps-experiments.c1.title	El test de la golosina, revisado
+ps-experiments.c1.text	El estudio de los años setenta sugería que los niños que esperaban para recibir una segunda golosina tenían más éxito en la vida. Una replicación mayor, de 2018, halló una relación mucho más débil al tener en cuenta el entorno familiar.
+ps-experiments.c1.viz.l.t	Original
+ps-experiments.c1.viz.l.items.0	la fuerza de voluntad predice el éxito
+ps-experiments.c1.viz.r.t	Replicación de 2018
+ps-experiments.c1.viz.r.items.0	el entorno familiar explica mucho
+ps-experiments.c2.title	El pequeño Albert
+ps-experiments.c2.text	En 1920, John Watson condicionó a un bebé para que temiera a una rata blanca asociándola con ruidos fuertes. Demostró que los miedos se pueden aprender, y hoy nunca superaría una revisión ética.
+ps-experiments.c2.viz.steps.0	Rata blanca + ruido fuerte
+ps-experiments.c2.viz.steps.1	Se repite
+ps-experiments.c2.viz.steps.2	Solo la rata
+ps-experiments.c2.viz.steps.3	El bebé tiene miedo
+ps-experiments.c3.title	Los monos de Harlow
+ps-experiments.c3.text	En los años cincuenta, Harry Harlow descubrió que las crías de mono preferían una «madre» de tela suave a una de alambre que les daba leche. El consuelo y el contacto importan, no solo la comida.
+ps-experiments.c3.viz.l.t	Madre de alambre
+ps-experiments.c3.viz.l.items.0	daba leche
+ps-experiments.c3.viz.l.items.1	visitas breves
+ps-experiments.c3.viz.r.t	Madre de tela
+ps-experiments.c3.viz.r.items.0	sin leche
+ps-experiments.c3.viz.r.items.1	se aferraban a ella
+ps-experiments.c4.title	La cueva de los ladrones
+ps-experiments.c4.text	En 1954, Muzafer Sherif dividió en dos grupos a los chicos de un campamento de verano. La competición generó hostilidad; las metas compartidas, como arreglar juntos el suministro de agua, la redujeron.
+ps-experiments.c4.viz.steps.0	Dos grupos
+ps-experiments.c4.viz.steps.1	Competición
+ps-experiments.c4.viz.steps.2	Hostilidad
+ps-experiments.c4.viz.steps.3	Metas comunes
+ps-experiments.c4.viz.steps.4	Cooperación
+ps-experiments.c5.title	El efecto Pigmalión
+ps-experiments.c5.text	A unos profesores se les dijo que ciertos alumnos, elegidos al azar, iban a «florecer»; los trataron de otra manera y las notas de esos alumnos subieron. Las expectativas pueden moldear los resultados.
+ps-experiments.c5.viz.steps.0	El profesor espera más
+ps-experiments.c5.viz.steps.1	Presta más atención
+ps-experiments.c5.viz.steps.2	El alumno mejora
+ps-experiments.c6.title	El estudio del buen samaritano
+ps-experiments.c6.text	Seminaristas que iban con prisa a dar una charla, incluso una sobre el buen samaritano, a menudo pasaban de largo ante un hombre en apuros. La presión del tiempo pesó más que los valores.
+ps-experiments.c6.viz.unit	% que se paró a ayudar
+ps-experiments.c6.viz.items.0.l	Sin prisa
+ps-experiments.c6.viz.items.1.l	Con prisa
+ps-experiments.c7.title	La crisis de replicación
+ps-experiments.c7.text	En 2015, un proyecto intentó repetir 100 estudios de psicología y solo logró replicar entre el 36 y el 40 % aproximadamente. Como consecuencia, la ciencia mejoró sus métodos.
+ps-experiments.c7.viz.unit	% de estudios (aprox.)
+ps-experiments.c7.viz.items.0.l	Replicados
+ps-experiments.c7.viz.items.1.l	No replicados
+ps-experiments.c8.title	Mejor ciencia
+ps-experiments.c8.text	La psicología fomenta hoy muestras más grandes, registrar los planes antes de recoger datos y compartir los datos abiertamente, lo que hace los hallazgos más fiables.
+ps-experiments.c8.viz.items.0	Muestras más grandes
+ps-experiments.c8.viz.items.1	Prerregistro
+ps-experiments.c8.viz.items.2	Datos abiertos
+ps-experiments.c8.viz.items.3	Estudios de replicación
+ps-experiments.c9.title	La ética hoy
+ps-experiments.c9.text	Tras experimentos polémicos, los comités de ética de la investigación exigen ahora consentimiento informado, derecho a retirarse, daño mínimo y una explicación final a los participantes.
+ps-experiments.c9.viz.items.0	Consentimiento informado
+ps-experiments.c9.viz.items.1	Derecho a retirarse
+ps-experiments.c9.viz.items.2	Daño mínimo
+ps-experiments.c9.viz.items.3	Explicación final
+ps-communication.title	Comunicación y conflicto
+ps-communication.summary	Decir las cosas para que lleguen.
+ps-communication.q0.q	¿Qué frase es un mensaje en primera persona («yo»)?
+ps-communication.q0.o0	«Siempre me ignoras»
+ps-communication.q0.o1	«Me siento ignorado cuando los planes cambian a última hora»
+ps-communication.q0.o2	«¿Por qué no escuchas?»
+ps-communication.q0.x	Describe tu experiencia.
+ps-communication.q1.q	En una negociación, ¿en qué deberías centrarte?
+ps-communication.q1.o0	En las posiciones
+ps-communication.q1.o1	En los intereses
+ps-communication.q1.o2	En ganar
+ps-communication.q1.x	La naranja: el zumo frente a la cáscara.
+ps-communication.c0.title	La mayor parte del significado no está en las palabras
+ps-communication.c0.text	El tono, la expresión facial y la postura transmiten mucho significado, sobre todo en lo emocional. La cifra tan citada del «93 % no verbal» es una mala interpretación de un estudio muy limitado.
+ps-communication.c0.viz.items.0.w	«El 93 % de la comunicación es no verbal»
+ps-communication.c0.viz.items.0.r	Lo no verbal importa mucho, pero las palabras también
+ps-communication.c1.title	Mensajes en primera persona
+ps-communication.c1.text	«¡Nunca escuchas!» provoca una actitud defensiva. «Me siento ignorado cuando me interrumpes» describe tu experiencia e invita a buscar una solución.
+ps-communication.c1.viz.items.0.w	«¡Nunca escuchas!»
+ps-communication.c1.viz.items.0.r	«Me siento ignorado cuando me interrumpes»

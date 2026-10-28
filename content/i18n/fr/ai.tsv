@@ -1,0 +1,250 @@
+P.title	Intelligence artificielle
+P.blurb	Comment les machines apprennent et ce qu'il y a vraiment dans un chatbot, expliqué sans devoirs de maths.
+ai-learn.title	Comment les machines apprennent
+ai-learn.summary	Pas de magie : des exemples, beaucoup de maths simples et des millions de petites corrections.
+ai-learn.q0.q	À partir de quoi un modèle d'apprentissage automatique apprend-il ?
+ai-learn.q0.o0	Des règles écrites par un programmeur
+ai-learn.q0.o1	Beaucoup d'exemples
+ai-learn.q0.o2	Les résultats de recherche d'Internet au moment de l'exécution
+ai-learn.q0.x	Il trouve des régularités dans des données d'exemple. Personne n'écrit les règles à la main.
+ai-learn.q1.q	Ensoleillé (+3) et pluie (−4), pas le week-end, biais −2. Le neurone « plage » s'active-t-il ?
+ai-learn.q1.o0	Oui
+ai-learn.q1.o1	Non
+ai-learn.q1.x	3 − 4 − 2 = −3, c'est inférieur à zéro, donc non.
+ai-learn.q2.q	Un modèle obtient 100 % sur ses données d'entraînement mais de mauvais résultats sur de nouvelles données. C'est…
+ai-learn.q2.o0	Du surapprentissage
+ai-learn.q2.o1	Un entraînement parfait
+ai-learn.q2.o2	Un petit modèle
+ai-learn.q2.x	Il a mémorisé les exemples au lieu de la régularité générale.
+ai-learn.q3.q	À quoi sert le jeu de test ?
+ai-learn.q3.o0	À entraîner le modèle
+ai-learn.q3.o1	À régler les paramètres
+ai-learn.q3.o2	À une vérification finale et honnête sur des données jamais vues
+ai-learn.q3.x	Il est mis de côté et utilisé une seule fois, donc le score reflète de nouvelles données.
+ai-learn.c0.title	Apprendre par l'exemple, pas par des règles
+ai-learn.c0.text	Essayez d'écrire des règles pour reconnaître un chat : oreilles pointues, moustaches… mais les renards en ont aussi, et certains chats cachent leurs oreilles. Vous n'en finiriez jamais.\n\nL'apprentissage automatique inverse la démarche. Vous montrez à l'ordinateur des milliers de photos étiquetées et le laissez trouver les régularités lui-même. Le résultat s'appelle un modèle.
+ai-learn.c0.sketch.0	si oreilles pointues…
+ai-learn.c0.sketch.1	et moustaches…
+ai-learn.c0.sketch.2	mais pas renard…
+ai-learn.c0.sketch.3	modèle
+ai-learn.c0.sketch.4	« chat ! »
+ai-learn.c0.sketch.5	règles écrites à la main
+ai-learn.c0.sketch.6	apprendre par l'exemple
+ai-learn.c1.title	Un neurone est un vote pondéré
+ai-learn.c1.text	La brique de base d'un réseau de neurones est minuscule. Il prend quelques entrées, multiplie chacune par un poids (son importance), les additionne et dit oui si le total est assez élevé.\n\nFaut-il aller à la plage ? Le soleil compte +3, le week-end +2, la pluie −4. Empilez des millions de ces petits votes en couches et vous obtenez un réseau capable de reconnaître des visages ou d'écrire du texte.
+ai-learn.c1.sketch.0	soleil
+ai-learn.c1.sketch.1	week-end
+ai-learn.c1.sketch.2	pluie
+ai-learn.c1.sketch.6	Σ
+ai-learn.c1.sketch.7	go ?
+ai-learn.c1.sketch.8	additionnez les votes : positif = oui
+ai-learn.c2.title	À vous : soyez le neurone
+ai-learn.c2.text	Activez et désactivez les entrées. Le neurone additionne entrée × poids, plus un petit biais de −2 (il lui faut une raison d'y aller), et s'active quand le total dépasse zéro.
+ai-learn.c3.title	S'entraîner, c'est ajuster petit à petit
+ai-learn.c3.text	Un nouveau réseau démarre avec des poids aléatoires et fait des prédictions catastrophiques. L'entraînement répète une boucle simple : faire une prédiction, mesurer l'erreur, puis ajuster très légèrement chaque poids dans le sens qui réduit l'erreur.\n\nImaginez une balle qui dévale une pente jusqu'à la vallée de l'erreur la plus basse. Les grands modèles répètent cela des milliards de fois.
+ai-learn.c3.sketch.0	1re prédiction : très fausse
+ai-learn.c3.sketch.1	erreur minimale = meilleurs poids
+ai-learn.c3.sketch.2	erreur
+ai-learn.c3.sketch.3	poids
+ai-learn.c4.title	Mémoriser n'est pas apprendre
+ai-learn.c4.text	Un modèle peut coller parfaitement à ses exemples d'entraînement et rester inutile, comme un élève qui a appris par cœur les réponses de l'examen de l'an dernier. C'est ce qu'on appelle le surapprentissage.\n\nLa solution consiste à tester sur des exemples que le modèle n'a jamais vus. S'il s'en sort bien là aussi, il a appris la vraie régularité plutôt que le bruit.
+ai-learn.c4.sketch.0	mémorise chaque point
+ai-learn.c4.sketch.1	apprend la tendance
+ai-learn.c4.sketch.2	les nouvelles données suivent la ligne bleue
+ai-learn.c5.title	Les caractéristiques : ce que regarde le modèle
+ai-learn.c5.text	Un modèle ne voit jamais « une maison ». Il voit des nombres qui la décrivent, appelés caractéristiques (features) : surface, nombre de chambres, distance à la côte, année de construction.\n\nChoisir de bonnes caractéristiques représentait autrefois l'essentiel du travail. L'apprentissage profond en apprend beaucoup tout seul, mais l'idée reste la même : le modèle ne peut utiliser que ce que vous lui donnez.
+ai-learn.c5.viz.steps.0	120 m², 3 chambres, à 2 km de la côte
+ai-learn.c5.viz.steps.1	Modèle
+ai-learn.c5.viz.steps.2	Prix estimé 310 000 €
+ai-learn.c6.title	Entraîner, valider, tester
+ai-learn.c6.text	On divise les données avant l'entraînement. Le modèle apprend sur le jeu d'entraînement, on règle les paramètres sur le jeu de validation, et le jeu de test reste sous clé jusqu'à la toute fin.\n\nSi vous jetez un œil au jeu de test pendant la construction du modèle, votre score final sera trop optimiste.
+ai-learn.c6.viz.unit	% des données
+ai-learn.c6.viz.items.0.l	Entraînement
+ai-learn.c6.viz.items.1.l	Validation
+ai-learn.c6.viz.items.2.l	Test
+ai-learn.c7.title	Le modèle le plus simple : une droite
+ai-learn.c7.text	Avec une seule caractéristique, un modèle peut être une droite. Il multiplie l'entrée par un poids et ajoute un biais. L'entraînement trouve le poids et le biais qui ajustent le mieux la droite aux données.\n\nLes réseaux de neurones sont des millions de ces petites sommes empilées, avec une petite touche ajoutée entre elles.
+ai-learn.c7.viz.f	y = w·x + b
+ai-learn.c7.viz.items.0.s	y
+ai-learn.c7.viz.items.0.m	prédiction
+ai-learn.c7.viz.items.1.s	x
+ai-learn.c7.viz.items.1.m	caractéristique d'entrée
+ai-learn.c7.viz.items.2.s	w
+ai-learn.c7.viz.items.2.m	poids (pente)
+ai-learn.c7.viz.items.3.s	b
+ai-learn.c7.viz.items.3.m	biais (décalage)
+ai-learn.c8.title	Plus de données bat souvent un algorithme plus malin
+ai-learn.c8.text	Dans beaucoup de problèmes réels, un modèle simple entraîné sur beaucoup de bonnes données surpasse un modèle sophistiqué entraîné sur peu. Des chercheurs de Google ont appelé cela « l'efficacité déraisonnable des données » en 2009.\n\nLa qualité compte autant que la quantité : un million d'exemples mal étiquetés enseignent la mauvaise leçon avec beaucoup d'assurance.
+ai-learn.c8.viz.l.t	Petit jeu de données
+ai-learn.c8.viz.l.items.0	exige des features malines
+ai-learn.c8.viz.l.items.1	surapprend facilement
+ai-learn.c8.viz.l.items.2	peu coûteux à collecter
+ai-learn.c8.viz.r.t	Grand jeu de données
+ai-learn.c8.viz.r.items.0	les modèles simples marchent
+ai-learn.c8.viz.r.items.1	les régularités se généralisent
+ai-learn.c8.viz.r.items.2	doit être propre
+ai-learn.c9.title	Un filtre anti-spam, étape par étape
+ai-learn.c9.text	Chaque e-mail entrant est transformé en caractéristiques : mots utilisés, réputation de l'expéditeur, nombre de liens. Le modèle produit un score entre 0 et 1. Au-dessus d'un seuil, disons 0,9, il part dans les spams.\n\nChoisir ce seuil est une décision métier : abaissez-le et vous attrapez plus de spams, mais vous perdez plus de vrais e-mails.
+ai-learn.c9.viz.steps.0	Un e-mail arrive
+ai-learn.c9.viz.steps.1	Le transformer en features
+ai-learn.c9.viz.steps.2	Le modèle donne un score 0–1
+ai-learn.c9.viz.steps.3	Au-dessus de 0,9 : dossier spam
+ai-chat.title	Comment fonctionnent les chatbots
+ai-chat.summary	Ce qui se passe vraiment dans ChatGPT, Claude et compagnie.
+ai-chat.q0.q	Que fait réellement un modèle de langage à chaque étape ?
+ai-chat.q0.o0	Il cherche la réponse dans une base de données
+ai-chat.q0.o1	Il prédit le token suivant le plus probable
+ai-chat.q0.o2	Il copie une page web correspondante
+ai-chat.q0.x	Il estime les probabilités du token suivant, en choisit un, et recommence.
+ai-chat.q1.q	Environ combien de mots anglais tiennent dans 1 000 tokens ?
+ai-chat.q1.o0	Environ 250
+ai-chat.q1.o1	Environ 750
+ai-chat.q1.o2	Environ 4 000
+ai-chat.q1.x	En anglais, un token correspond en moyenne à environ ¾ de mot.
+ai-chat.q2.q	Vous voulez des réponses cohérentes et prévisibles. Quelle température ?
+ai-chat.q2.o0	Basse
+ai-chat.q2.o1	Élevée
+ai-chat.q2.x	Une température basse concentre les probabilités sur les tokens les plus probables.
+ai-chat.q3.q	Pourquoi un chatbot pourrait-il ignorer l'actualité d'hier ?
+ai-chat.q3.o0	Il est en panne
+ai-chat.q3.o1	Ses connaissances s'arrêtent à une date limite d'entraînement, sauf s'il dispose d'un outil de recherche
+ai-chat.q3.o2	Il ignore l'actualité exprès
+ai-chat.q3.x	Sans outils, un modèle ne connaît que ce qui figurait dans ses données d'entraînement.
+ai-chat.c0.title	Le texte devient des tokens
+ai-chat.c0.text	Les modèles de langage ne lisent ni des lettres ni des mots entiers. Le texte est découpé en tokens : les mots courants restent entiers, les plus rares sont coupés en morceaux. Pour le modèle, chaque token n'est qu'un nombre.\n\nEn anglais, un token correspond en moyenne à environ ¾ de mot, c'est pourquoi les services d'IA facturent et limitent l'usage en tokens.
+ai-chat.c0.sketch.0	unbelievable
+ai-chat.c0.sketch.1	un
+ai-chat.c0.sketch.2	believ
+ai-chat.c0.sketch.3	able
+ai-chat.c0.sketch.7	numéros de tokens inventés pour l'exemple
+ai-chat.c1.title	Il prédit le mot suivant
+ai-chat.c1.text	Au fond, un modèle de langage fait une seule chose : à partir du texte déjà écrit, il estime la probabilité de chaque token suivant possible. Il en choisit un, l'ajoute au texte et recommence.\n\nEntraînée sur une immense quantité d'écrits, cette astuce simple finit par capturer la grammaire, des faits, des styles et une part surprenante de raisonnement.
+ai-chat.c1.sketch.0	« Le chat s'assit sur le … »
+ai-chat.c1.sketch.1	tapis
+ai-chat.c1.sketch.3	canapé
+ai-chat.c1.sketch.5	sol
+ai-chat.c1.sketch.7	toit
+ai-chat.c1.sketch.9	il tire parmi ces probabilités, un mot à la fois
+ai-chat.c2.title	À vous : montez la température
+ai-chat.c2.text	La température règle l'audace du modèle. À basse température, il choisit presque toujours le mot en tête ; à haute température, les probabilités s'étalent et les mots plus rares ont leur chance. Appuyez plusieurs fois sur Générer à chaque réglage.
+ai-chat.c3.title	Le sens comme une carte
+ai-chat.c3.text	À l'intérieur du modèle, chaque token devient une liste de nombres appelée embedding (plongement), comme des coordonnées sur une carte du sens. Les idées proches se retrouvent côte à côte : chat près de chien, Lisbonne près de Porto.\n\nLes directions ont aussi un sens. Le pas de « homme » à « femme » est à peu près le même que celui de « roi » à « reine ».
+ai-chat.c3.sketch.0	homme
+ai-chat.c3.sketch.1	femme
+ai-chat.c3.sketch.2	roi
+ai-chat.c3.sketch.3	reine
+ai-chat.c3.sketch.4	chat
+ai-chat.c3.sketch.5	chien
+ai-chat.c3.sketch.6	chiot
+ai-chat.c3.sketch.7	roi − homme + femme ≈ reine
+ai-chat.c4.title	Fluide ne veut pas dire vrai
+ai-chat.c4.text	Comme un modèle prédit du texte plausible, il peut produire des phrases assurées qui sont tout simplement fausses. On appelle cela une hallucination. C'est surtout le cas pour les chiffres exacts, les dates, les citations et les faits pointus.\n\nUtilisez l'IA pour rédiger, expliquer et trouver des idées, et vérifiez tout ce qui est important auprès d'une source fiable. (La tour Eiffel a été achevée en 1889.)
+ai-chat.c4.sketch.0	La tour Eiffel a été
+ai-chat.c4.sketch.1	achevée en 1901.
+ai-chat.c4.sketch.3	sûr de lui, mais faux : vérifiez les faits clés
+ai-chat.c5.title	La fenêtre de contexte
+ai-chat.c5.text	Un modèle ne peut « voir » qu'une quantité limitée de texte à la fois, mesurée en tokens. C'est sa fenêtre de contexte : votre question, la conversation jusqu'ici et tous les documents que vous avez collés.\n\nQuand une conversation dépasse la limite, les parties les plus anciennes sont supprimées ou résumées. Les fenêtres se sont énormément agrandies depuis 2022.
+ai-chat.c5.viz.unit	milliers de tokens
+ai-chat.c5.viz.items.0.l	GPT-3.5 (2022)
+ai-chat.c5.viz.items.1.l	GPT-4 32K (2023)
+ai-chat.c5.viz.items.2.l	Claude 2.1 (2023)
+ai-chat.c5.viz.items.3.l	Gemini 1.5 (2024)
+ai-chat.c6.title	Pré-entraînement, puis affinage
+ai-chat.c6.text	D'abord, le modèle lit une immense quantité de texte et apprend à prédire le token suivant. Cela le rend savant, mais pas encore utile.\n\nEnsuite, il est affiné (fine-tuning) sur des exemples de bonnes réponses, puis entraîné davantage grâce aux retours d'humains (et d'IA) sur les réponses les meilleures. C'est ce qui transforme un prédicteur de texte en assistant.
+ai-chat.c6.viz.steps.0	Lire énormément, prédire le token suivant
+ai-chat.c6.viz.steps.1	Affiner sur de bonnes réponses
+ai-chat.c6.viz.steps.2	Apprendre des retours
+ai-chat.c6.viz.steps.3	Assistant utile
+ai-chat.c7.title	Meilleurs prompts, meilleures réponses
+ai-chat.c7.text	Le modèle ne sait que ce que vous lui dites. Dites qui vous êtes, ce dont vous avez besoin, à quoi ressemble un bon résultat et sous quel format. Collez les données pertinentes au lieu de les décrire. Si la première réponse ne convient pas, dites ce qu'il faut changer.
+ai-chat.c7.viz.items.0	Donnez du contexte : pour qui et pourquoi
+ai-chat.c7.viz.items.1	Précisez bien la tâche
+ai-chat.c7.viz.items.2	Collez des exemples ou des sources
+ai-chat.c7.viz.items.3	Demandez un format : tableau, puces, longueur
+ai-chat.c7.viz.items.4	Itérez : dites quoi changer
+ai-chat.c8.title	Les modèles ne cherchent pas d'eux-mêmes
+ai-chat.c8.text	Un modèle de langage seul répond à partir de ce qu'il a appris pendant l'entraînement, qui s'arrête à une date limite. Il ne connaît ni l'actualité du jour ni vos fichiers.\n\nLes assistants modernes reçoivent des outils : recherche web, accès aux documents, exécution de code. Avec ces outils, ils peuvent aller chercher des faits récents au lieu de deviner.
+ai-chat.c8.viz.l.t	Modèle seul
+ai-chat.c8.viz.l.items.0	savoir figé à une date limite
+ai-chat.c8.viz.l.items.1	ne voit pas vos fichiers
+ai-chat.c8.viz.l.items.2	peut deviner
+ai-chat.c8.viz.r.t	Avec outils
+ai-chat.c8.viz.r.items.0	cherche sur le web
+ai-chat.c8.viz.r.items.1	lit vos documents
+ai-chat.c8.viz.r.items.2	exécute du code pour les calculs
+ai-chat.c9.title	Ce que signifie « 70B »
+ai-chat.c9.text	La taille d'un modèle se compte en paramètres, les poids appris. Un modèle 70B en a 70 milliards. Stocké au format 16 bits, chaque poids occupe 2 octets, donc le modèle seul a besoin d'environ 140 Go de mémoire.\n\nC'est pourquoi les grands modèles tournent dans des centres de données, et pourquoi des modèles plus petits ou compressés (quantifiés) tournent sur des ordinateurs portables.
+ai-chat.c9.example.0	Modèle 8B en 4 bits (0,5 octet chacun)
+ai-chat.c9.example.1	8 × 0,5
+ai-chat.c9.example.2	≈ 4 Go : tient sur un portable
+ai-chat.c9.viz.f	mémoire ≈ paramètres × octets
+ai-chat.c9.viz.items.0.s	70 B
+ai-chat.c9.viz.items.0.m	paramètres
+ai-chat.c9.viz.items.1.s	2 octets
+ai-chat.c9.viz.items.1.m	par poids en 16 bits
+ai-chat.c9.viz.items.2.s	≈ 140 Go
+ai-chat.c9.viz.items.2.m	mémoire nécessaire
+ai-types.title	Trois façons d'apprendre pour une machine
+ai-types.summary	Apprentissage supervisé, non supervisé et par renforcement, et quand utiliser chacun.
+ai-types.q0.q	Prédire la demande d'électricité de demain en kWh, c'est…
+ai-types.q0.o0	De la classification
+ai-types.q0.o1	De la régression
+ai-types.q0.o2	Du clustering
+ai-types.q0.x	On prédit un nombre, donc c'est de la régression.
+ai-types.q1.q	Une IA qui apprend les échecs en jouant des millions de parties contre elle-même utilise…
+ai-types.q1.o0	L'apprentissage supervisé
+ai-types.q1.o1	L'apprentissage non supervisé
+ai-types.q1.o2	L'apprentissage par renforcement
+ai-types.q1.x	Elle apprend de ses victoires et défaites, qui sont des récompenses.
+ai-types.q2.q	Cacher un mot dans une phrase et demander au modèle de le deviner, c'est…
+ai-types.q2.o0	De l'apprentissage auto-supervisé
+ai-types.q2.o1	De l'apprentissage par renforcement
+ai-types.q2.o2	De l'étiquetage manuel
+ai-types.q2.x	Les données fournissent leurs propres étiquettes.
+ai-types.c0.title	L'apprentissage supervisé
+ai-types.c0.text	Vous donnez au modèle des exemples accompagnés des bonnes réponses : des photos étiquetées « chat » ou « chien », des maisons avec leur prix de vente. Il apprend à associer les entrées aux réponses.\n\nC'est le type d'apprentissage automatique le plus courant en entreprise : prévisions, détection de fraude, classement de documents.
+ai-types.c0.viz.steps.0	Exemples étiquetés
+ai-types.c0.viz.steps.1	Apprendre la correspondance
+ai-types.c0.viz.steps.2	Prédire les étiquettes de nouvelles données
+ai-types.c1.title	Classification ou régression
+ai-types.c1.text	Les problèmes supervisés se déclinent en deux variantes. La classification choisit une catégorie : spam ou non, quel type de produit, quelle maladie. La régression prédit un nombre : le prix de demain, le délai de livraison, la demande d'énergie.
+ai-types.c1.viz.l.t	Classification
+ai-types.c1.viz.l.items.0	choisit une catégorie
+ai-types.c1.viz.l.items.1	spam ou non
+ai-types.c1.viz.l.items.2	fraude ou légitime
+ai-types.c1.viz.r.t	Régression
+ai-types.c1.viz.r.items.0	prédit un nombre
+ai-types.c1.viz.r.items.1	prix d'une maison
+ai-types.c1.viz.r.items.2	kWh demain
+ai-types.c2.title	L'apprentissage non supervisé
+ai-types.c2.text	Ici, il n'y a pas d'étiquettes. Le modèle cherche une structure par lui-même : groupes de clients similaires, transactions inhabituelles, thèmes dans une pile de documents.\n\nC'est utile quand on ne sait pas encore ce qu'on cherche, ou quand l'étiquetage coûterait trop cher.
+ai-types.c2.viz.root	Non supervisé
+ai-types.c2.viz.items.0	Clustering (groupes)
+ai-types.c2.viz.items.1	Détection d'anomalies
+ai-types.c2.viz.items.2	Découverte de thèmes
+ai-types.c2.viz.items.3	Compression
+ai-types.c3.title	Regrouper les clients
+ai-types.c3.text	Donnez à un algorithme de clustering l'historique d'achats de 100 000 clients et demandez-lui cinq groupes. Il pourrait trouver les chasseurs de bonnes affaires, les acheteurs du week-end, les gros acheteurs occasionnels, etc.\n\nL'algorithme trouve les groupes ; un humain doit encore les examiner et décider de ce qu'ils signifient.
+ai-types.c3.viz.steps.0	Historique d'achats
+ai-types.c3.viz.steps.1	L'algorithme regroupe les clients similaires
+ai-types.c3.viz.steps.2	5 segments
+ai-types.c3.viz.steps.3	Des humains les nomment et agissent
+ai-types.c4.title	L'apprentissage par renforcement
+ai-types.c4.text	Un agent apprend par essais et erreurs. Il effectue une action, l'environnement réagit, et il reçoit une récompense ou une pénalité. Sur des millions de tentatives, il apprend quelles actions rapportent le plus.\n\nC'est ainsi que les ordinateurs ont appris à jouer au go, aux échecs et aux jeux vidéo mieux que les humains.
+ai-types.c4.viz.steps.0	Observer la situation
+ai-types.c4.viz.steps.1	Agir
+ai-types.c4.viz.steps.2	Recevoir récompense ou pénalité
+ai-types.c4.viz.steps.3	Ajuster la stratégie
+ai-types.c5.title	L'apprentissage auto-supervisé
+ai-types.c5.text	Une astuce ingénieuse : créer les étiquettes à partir des données elles-mêmes. Cachez un mot dans une phrase et demandez au modèle de le deviner. Cachez une partie d'une image et demandez-lui de combler le trou.\n\nAucun humain n'a besoin d'étiqueter quoi que ce soit, donc on peut entraîner sur des milliards d'exemples. Les grands modèles de langage sont entraînés ainsi.
+ai-types.c5.viz.items.0.a	« Le chat s'assit sur le ___ »
+ai-types.c5.viz.items.0.b	deviner « tapis »
+ai-types.c5.viz.items.1.a	Morceau d'image caché
+ai-types.c5.viz.items.1.b	le reconstruire
+ai-types.c5.viz.items.2.a	Image suivante d'une vidéo
+ai-types.c5.viz.items.2.b	la prédire
+ai-types.c6.title	Les étiquettes coûtent cher
+ai-types.c6.text	L'apprentissage supervisé a besoin de données étiquetées, et l'étiquetage est un travail humain lent. Les images médicales demandent des médecins ; les documents juridiques, des juristes.\n\nC'est ce coût qui a rendu le pré-entraînement auto-supervisé si important : acquérir des connaissances générales sur des données non étiquetées d'abord, puis affiner avec un petit jeu étiqueté.
+ai-types.c6.viz.l.t	Données non étiquetées
+ai-types.c6.viz.l.items.0	bon marché et abondantes
+ai-types.c6.viz.l.items.1	textes web, photos, logs

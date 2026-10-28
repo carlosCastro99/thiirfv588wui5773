@@ -892,7 +892,7 @@ el-earthing.c2.viz.r.items.0	courts-circuits
 el-earthing.c2.viz.r.items.1	millisecondes
 el-earthing.c3.title	Courbes de disjoncteurs
 el-earthing.c3.text	Le type B déclenche magnétiquement à 3–5 fois son calibre, adapté aux logements. Le type C à 5–10 fois, pour les moteurs et l'éclairage à fort courant d'appel. Le type D à 10–20 fois, pour les gros moteurs industriels.
-el-earthing.c3.viz.unit	déclenchement magnétique (× courant nominal, borne haute)
+el-earthing.c3.viz.unit	décl. magnétique (× I nominal)
 el-earthing.c3.viz.items.0.l	B
 el-earthing.c3.viz.items.1.l	C
 el-earthing.c3.viz.items.2.l	D
@@ -972,7 +972,7 @@ el-3phase.c1.viz.items.2.m	phase-phase
 el-3phase.c2.title	Puissance triphasée
 el-3phase.c2.text	Le triphasé transporte environ trois fois la puissance du monophasé, avec le même courant par fil.
 el-3phase.c2.example.0	16 A par phase sous 400 V, cos φ = 1
-el-3phase.c2.example.1	1,732 × 400 × 16
+el-3phase.c2.example.1	1732 × 400 × 16
 el-3phase.c2.example.2	≈ 11 kW
 el-3phase.c2.viz.f	P = √3 × U × I × cos φ
 el-3phase.c2.viz.items.0.s	U
@@ -1112,9 +1112,9 @@ el-pf.c8.title	Facteur de puissance des appareils
 el-pf.c8.text	Les charges résistives comme les bouilloires et les radiateurs ont un facteur de puissance de 1. Les moteurs tournent autour de 0,8–0,9 à pleine charge et bien plus bas à faible charge.
 el-pf.c8.viz.unit	facteur de puissance type
 el-pf.c8.viz.items.0.l	Bouilloire
-el-pf.c8.viz.items.1.l	Moteur asynchrone (pleine charge)
-el-pf.c8.viz.items.2.l	Moteur (faible charge)
-el-pf.c8.viz.items.3.l	Ancienne fluorescente
+el-pf.c8.viz.items.1.l	Moteur (charge max)
+el-pf.c8.viz.items.2.l	Moteur (à vide)
+el-pf.c8.viz.items.3.l	Vieux néon
 el-pf.c9.title	Correction du facteur de puissance dans les chargeurs
 el-pf.c9.text	Les alimentations électroniques plus puissantes, dont les chargeurs d'ordinateurs portables et de VE, contiennent des circuits de correction du facteur de puissance qui font suivre à l'intensité l'onde de tension, comme l'exigent les règles de l'UE.
 el-pf.c9.viz.steps.0	Le redresseur brut déforme le courant
@@ -1433,7 +1433,7 @@ el-heat.c4.viz.items.0.s	1 L
 el-heat.c4.viz.items.0.m	eau
 el-heat.c4.viz.items.1.s	80 °C
 el-heat.c4.viz.items.1.m	élévation de température
-el-heat.c4.viz.items.2.s	≈ 0,093 kWh
+el-heat.c4.viz.items.2.s	≈ 0093 kWh
 el-heat.c4.viz.items.2.m	énergie
 el-heat.c5.title	Induction, vitrocéramique ou gaz
 el-heat.c5.text	L'induction chauffe directement la casserole et a un rendement d'environ 85–90 %. Les plaques vitrocéramiques (radiantes) tournent autour de 70 %, les brûleurs à gaz autour de 40–55 %. L'induction est aussi plus rapide et plus facile à régler.

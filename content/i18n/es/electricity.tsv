@@ -898,3 +898,303 @@ el-earthing.c3.viz.items.1.l	C
 el-earthing.c3.viz.items.2.l	D
 el-earthing.c4.title	Tipos de diferencial
 el-earthing.c4.text	El tipo AC solo detecta fugas de CA. El tipo A detecta también la CC pulsante de la electrónica. El tipo B detecta además la CC lisa, y a menudo se exige para cargadores de VE y algunos inversores solares (o un tipo A con un dispositivo de detección de CC).
+el-earthing.c4.viz.items.0	Tipo B: también CC lisa
+el-earthing.c4.viz.items.1	Tipo A: CA y CC pulsante
+el-earthing.c4.viz.items.2	Tipo AC: solo CA
+el-earthing.c5.title	RCBO
+el-earthing.c5.text	Un RCBO combina un magnetotérmico y un diferencial en un solo aparato, así que un fallo en un circuito solo hace saltar ese circuito en lugar de toda la casa.
+el-earthing.c5.viz.l.t	Un diferencial para varios circuitos
+el-earthing.c5.viz.l.items.0	más barato
+el-earthing.c5.viz.l.items.1	un fallo lo corta todo
+el-earthing.c5.viz.r.t	RCBO por circuito
+el-earthing.c5.viz.r.items.0	más caro
+el-earthing.c5.viz.r.items.1	solo salta el circuito averiado
+el-earthing.c6.title	Protección contra sobretensiones
+el-earthing.c6.text	Los rayos y las maniobras en la red pueden causar picos de tensión de miles de voltios durante microsegundos. Un protector contra sobretensiones (SPD) en el cuadro los desvía a tierra y protege la electrónica.
+el-earthing.c6.viz.steps.0	Pico en la línea
+el-earthing.c6.viz.steps.1	El SPD conduce
+el-earthing.c6.viz.steps.2	Desviado a tierra
+el-earthing.c6.viz.steps.3	Electrónica protegida
+el-earthing.c7.title	Prueba tu diferencial
+el-earthing.c7.text	Los diferenciales tienen un botón de prueba que simula una fuga. Pulsarlo cada pocos meses comprueba que el mecanismo no se ha quedado agarrotado. Si no salta, llama a un electricista.
+el-earthing.c7.viz.items.0	Pulsa el botón T
+el-earthing.c7.viz.items.1	Debe saltar al instante
+el-earthing.c7.viz.items.2	Vuelve a subirlo
+el-earthing.c7.viz.items.3	Repite cada pocos meses
+el-earthing.c8.title	Doble aislamiento
+el-earthing.c8.text	Algunos aparatos no tienen cable de tierra: tienen doble aislamiento, indicado con un cuadrado dentro de otro. Dos capas de aislamiento te protegen en lugar de una conexión a tierra.
+el-earthing.c8.viz.items.0.a	símbolo ⊡
+el-earthing.c8.viz.items.0.b	doble aislamiento
+el-earthing.c8.viz.items.1.a	sin toma de tierra
+el-earthing.c8.viz.items.1.b	seguro por diseño
+el-earthing.c8.viz.items.2.a	secador, taladro
+el-earthing.c8.viz.items.2.b	ejemplos típicos
+el-earthing.c9.title	Fusibles
+el-earthing.c9.text	Un fusible es un hilo fino que se funde cuando circula demasiada corriente. Solo funciona una vez y debe sustituirse por otro del mismo calibre. Las instalaciones portuguesas antiguas aún pueden tenerlos; los cuadros modernos usan automáticos.
+el-earthing.c9.viz.l.t	Fusible
+el-earthing.c9.viz.l.items.0	se funde una vez
+el-earthing.c9.viz.l.items.1	hay que cambiarlo
+el-earthing.c9.viz.l.items.2	cuadros antiguos
+el-earthing.c9.viz.r.t	Automático
+el-earthing.c9.viz.r.items.0	se rearma
+el-earthing.c9.viz.r.items.1	reutilizable
+el-earthing.c9.viz.r.items.2	cuadros modernos
+el-3phase.title	Corriente trifásica
+el-3phase.summary	Por qué la industria, las grandes bombas de calor y los cargadores rápidos usan tres hilos.
+el-3phase.q0.q	La tensión entre dos fases de una red trifásica europea es de unos…
+el-3phase.q0.o0	230 V
+el-3phase.q0.o1	400 V
+el-3phase.q0.o2	690 V
+el-3phase.q0.x	230 × √3 ≈ 400 V.
+el-3phase.q1.q	¿Cómo inviertes el giro de un motor trifásico?
+el-3phase.q1.o0	Intercambiando neutro y tierra
+el-3phase.q1.o1	Intercambiando dos fases cualesquiera
+el-3phase.q1.o2	Bajando la tensión
+el-3phase.q1.x	Cambiar el orden de las fases invierte el campo giratorio.
+el-3phase.q2.q	¿Aproximadamente cuánta potencia dan 16 A por fase a 400 V?
+el-3phase.q2.o0	3,7 kW
+el-3phase.q2.o1	11 kW
+el-3phase.q2.o2	22 kW
+el-3phase.q2.x	√3 × 400 × 16 ≈ 11 kW.
+el-3phase.c0.title	Tres ondas desfasadas
+el-3phase.c0.text	La alimentación trifásica tiene tres conductores de fase, cada uno con una onda de CA desplazada un tercio de ciclo (120°). En cada momento al menos una fase está cerca de su pico, así que la potencia fluye de forma suave.
+el-3phase.c0.viz.steps.0	Fase L1
+el-3phase.c0.viz.steps.1	Fase L2 (+120°)
+el-3phase.c0.viz.steps.2	Fase L3 (+240°)
+el-3phase.c0.viz.steps.3	vuelta a L1
+el-3phase.c1.title	230 V y 400 V
+el-3phase.c1.text	Entre cualquier fase y el neutro hay 230 V; entre dos fases hay 400 V. Las casas con suministro trifásico siguen usando 230 V en los enchufes normales.
+el-3phase.c1.viz.f	V línea = V fase × √3
+el-3phase.c1.viz.items.0.s	230 V
+el-3phase.c1.viz.items.0.m	fase a neutro
+el-3phase.c1.viz.items.2.s	≈ 400 V
+el-3phase.c1.viz.items.2.m	fase a fase
+el-3phase.c2.title	Potencia trifásica
+el-3phase.c2.text	La trifásica transporta unas tres veces la potencia de una sola fase con la misma corriente por hilo.
+el-3phase.c2.example.0	16 A por fase a 400 V, cos φ = 1
+el-3phase.c2.example.1	1,732 × 400 × 16
+el-3phase.c2.example.2	≈ 11 kW
+el-3phase.c2.viz.f	P = √3 × V × I × cos φ
+el-3phase.c2.viz.items.0.s	V
+el-3phase.c2.viz.items.0.m	tensión de línea 400 V
+el-3phase.c2.viz.items.1.s	I
+el-3phase.c2.viz.items.1.m	corriente por fase
+el-3phase.c2.viz.items.2.s	cos φ
+el-3phase.c2.viz.items.2.m	factor de potencia
+el-3phase.c3.title	Por qué le encanta a la industria
+el-3phase.c3.text	Los motores trifásicos son más simples, más pequeños y arrancan solos, y el transporte necesita menos cobre para la misma potencia. Casi toda la generación, el transporte y las cargas industriales son trifásicos.
+el-3phase.c3.viz.items.0	Entrega de potencia suave
+el-3phase.c3.viz.items.1	Motores con arranque propio
+el-3phase.c3.viz.items.2	Menos cobre por kW
+el-3phase.c3.viz.items.3	Más potencia por edificio
+el-3phase.c4.title	Trifásica en casa
+el-3phase.c4.text	Las viviendas más grandes en Portugal pueden tener suministro trifásico. Permite más potencia contratada, carga de VE a 11 kW o 22 kW y grandes bombas de calor, con los circuitos repartidos entre las fases.
+el-3phase.c4.viz.l.t	Monofásica
+el-3phase.c4.viz.l.items.0	230 V
+el-3phase.c4.viz.l.items.1	carga hasta ~7,4 kW
+el-3phase.c4.viz.l.items.2	la mayoría de casas
+el-3phase.c4.viz.r.t	Trifásica
+el-3phase.c4.viz.r.items.0	400 V
+el-3phase.c4.viz.r.items.1	carga de 11–22 kW
+el-3phase.c4.viz.r.items.2	cargas mayores
+el-3phase.c5.title	Equilibrar las fases
+el-3phase.c5.text	Las cargas deben repartirse por igual entre las tres fases. Si una fase lleva la mayor parte de la carga, puede saltar mientras las otras van poco cargadas, y el neutro lleva corriente adicional.
+el-3phase.c5.viz.unit	kW por fase
+el-3phase.c5.viz.items.0.l	L1
+el-3phase.c5.viz.items.1.l	L2
+el-3phase.c5.viz.items.2.l	L3
+el-3phase.c6.title	Secuencia de fases
+el-3phase.c6.text	El orden en que las fases alcanzan su pico (L1, L2, L3) fija el sentido de giro de un motor trifásico. Intercambia dos fases cualesquiera y el motor gira al revés: una comprobación clásica en la puesta en marcha.
+el-3phase.c6.viz.items.0.w	el motor gira al revés
+el-3phase.c6.viz.items.0.r	intercambia dos fases
+el-3phase.c6.viz.items.1.w	L1-L2-L3
+el-3phase.c6.viz.items.1.r	L2-L1-L3
+el-3phase.c7.title	Estrella y triángulo
+el-3phase.c7.text	Los devanados trifásicos se pueden conectar en estrella (Y), con un punto neutro común, o en triángulo (Δ). Los motores grandes suelen arrancar en estrella para limitar la corriente y luego pasan a triángulo.
+el-3phase.c7.viz.l.t	Estrella (Y)
+el-3phase.c7.viz.l.items.0	punto neutro común
+el-3phase.c7.viz.l.items.1	menos tensión por devanado
+el-3phase.c7.viz.l.items.2	arranque suave
+el-3phase.c7.viz.r.t	Triángulo (Δ)
+el-3phase.c7.viz.r.items.0	triángulo
+el-3phase.c7.viz.r.items.1	tensión de línea en cada devanado
+el-3phase.c7.viz.r.items.2	potencia plena
+el-3phase.c8.title	Las redes son trifásicas en todo el mundo
+el-3phase.c8.text	Desde el generador hasta el transformador de distribución de tu calle, la energía viaja en trifásica. Cada casa con suministro monofásico está conectada a una de las tres fases.
+el-3phase.c8.viz.steps.0	Generador trifásico
+el-3phase.c8.viz.steps.1	Transporte trifásico
+el-3phase.c8.viz.steps.2	Transformador de calle
+el-3phase.c8.viz.steps.3	Casas repartidas en L1, L2, L3
+el-3phase.c9.title	Cómo reconocerla
+el-3phase.c9.text	Un cuadro trifásico tiene automáticos de tres o cuatro polos y, a menudo, una toma CEE roja (5 polos) para máquinas. Los contadores trifásicos muestran tres lecturas.
+el-3phase.c9.viz.items.0	General de cuatro polos
+el-3phase.c9.viz.items.1	Toma CEE roja de 5 polos
+el-3phase.c9.viz.items.2	Tres lecturas de tensión en el contador
+el-3phase.c9.viz.items.3	Fases en marrón, negro y gris
+el-pf.title	Factor de potencia
+el-pf.summary	Potencia activa, potencia reactiva y por qué le importan a la red.
+el-pf.q0.q	Una carga consume 1000 VA con un factor de potencia de 0,8. Su potencia activa es…
+el-pf.q0.o0	1000 W
+el-pf.q0.o1	800 W
+el-pf.q0.o2	1250 W
+el-pf.q0.x	W = VA × cos φ = 800 W.
+el-pf.q1.q	¿Qué corrige un factor de potencia inductivo en una fábrica?
+el-pf.q1.o0	Fusibles más grandes
+el-pf.q1.o1	Baterías de condensadores
+el-pf.q1.o2	Cables más gruesos
+el-pf.q1.x	Los condensadores compensan la corriente retrasada.
+el-pf.q2.q	¿Qué aparato tiene un factor de potencia de aproximadamente 1?
+el-pf.q2.o0	Un motor en vacío
+el-pf.q2.o1	Un hervidor eléctrico
+el-pf.q2.o2	Un fluorescente antiguo
+el-pf.q2.x	Una resistencia pura mantiene la corriente en fase con la tensión.
+el-pf.c0.title	Potencia activa y aparente
+el-pf.c0.text	Con algunas cargas, la corriente y la tensión no alcanzan su pico a la vez. Entonces voltios × amperios (potencia aparente, en VA) es mayor que la potencia útil que de verdad hace trabajo (potencia activa, en W).
+el-pf.c0.viz.f	W = VA × cos φ
+el-pf.c0.viz.items.0.s	W
+el-pf.c0.viz.items.0.m	potencia activa
+el-pf.c0.viz.items.1.s	VA
+el-pf.c0.viz.items.1.m	potencia aparente
+el-pf.c0.viz.items.2.s	cos φ
+el-pf.c0.viz.items.2.m	factor de potencia 0–1
+el-pf.c1.title	La analogía de la cerveza
+el-pf.c1.text	Imagina un vaso de cerveza: el líquido es la potencia activa, que quita la sed; la espuma es la potencia reactiva, que ocupa sitio pero no hace trabajo. El vaso entero es la potencia aparente.
+el-pf.c1.viz.items.0	Espuma: potencia reactiva (var)
+el-pf.c1.viz.items.1	Cerveza: potencia activa (W)
+el-pf.c1.viz.items.2	Vaso entero: potencia aparente (VA)
+el-pf.c2.title	Qué lo causa
+el-pf.c2.text	Los motores, los transformadores y las reactancias de los fluorescentes almacenan energía en campos magnéticos en cada ciclo y la devuelven, así que su corriente va retrasada respecto a la tensión. La electrónica barata distorsiona la onda de corriente.
+el-pf.c2.viz.l.t	Cargas inductivas
+el-pf.c2.viz.l.items.0	motores
+el-pf.c2.viz.l.items.1	transformadores
+el-pf.c2.viz.l.items.2	reactancias viejas
+el-pf.c2.viz.r.t	Cargas distorsionantes
+el-pf.c2.viz.r.items.0	fuentes baratas
+el-pf.c2.viz.r.items.1	drivers LED antiguos
+el-pf.c3.title	Por qué importa
+el-pf.c3.text	Un factor de potencia bajo significa más corriente para el mismo trabajo útil: cables más gruesos, más pérdidas, transformadores más grandes. Las compañías cobran la energía reactiva a los clientes industriales.
+el-pf.c3.viz.unit	amperios para 10 kW a 230 V
+el-pf.c3.viz.items.0.l	cos φ 1,0
+el-pf.c3.viz.items.1.l	cos φ 0,9
+el-pf.c3.viz.items.2.l	cos φ 0,7
+el-pf.c4.title	Corrección con condensadores
+el-pf.c4.text	Los condensadores consumen una corriente adelantada respecto a la tensión, que compensa la corriente retrasada de un motor. Las fábricas instalan baterías de condensadores para acercar el factor de potencia a 1.
+el-pf.c4.viz.steps.0	La corriente del motor se retrasa
+el-pf.c4.viz.steps.1	Añadir condensadores
+el-pf.c4.viz.steps.2	La corriente adelantada compensa
+el-pf.c4.viz.steps.3	cos φ ≈ 1
+el-pf.c5.title	Unidades: W, VA, var
+el-pf.c5.text	La potencia activa se mide en vatios (W), la reactiva en voltamperios reactivos (var) y la aparente en voltamperios (VA). Los SAI y los generadores se especifican en VA porque su cableado debe soportar toda la corriente.
+el-pf.c5.viz.items.0.a	W
+el-pf.c5.viz.items.0.b	activa, potencia útil
+el-pf.c5.viz.items.1.a	var
+el-pf.c5.viz.items.1.b	reactiva, va y viene
+el-pf.c5.viz.items.2.a	VA
+el-pf.c5.viz.items.2.b	aparente, la que llevan los cables
+el-pf.c6.title	El triángulo de potencias
+el-pf.c6.text	La potencia activa y la reactiva forman un ángulo recto, así que la aparente es la hipotenusa: VA² = W² + var². El ángulo entre ellas es φ.
+el-pf.c6.viz.f	VA² = W² + var²
+el-pf.c6.viz.items.0.s	W
+el-pf.c6.viz.items.0.m	potencia activa
+el-pf.c6.viz.items.1.s	var
+el-pf.c6.viz.items.1.m	potencia reactiva
+el-pf.c6.viz.items.2.s	VA
+el-pf.c6.viz.items.2.m	potencia aparente
+el-pf.c7.title	Tu factura doméstica
+el-pf.c7.text	Los hogares en Portugal pagan solo la energía activa (kWh); los cargos por energía reactiva se aplican a clientes comerciales e industriales más grandes. Eso sí, tu potencia contratada está en kVA.
+el-pf.c7.viz.l.t	Hogar
+el-pf.c7.viz.l.items.0	paga kWh
+el-pf.c7.viz.l.items.1	kVA contratados
+el-pf.c7.viz.r.t	Industria
+el-pf.c7.viz.r.items.0	paga kWh
+el-pf.c7.viz.r.items.1	más energía reactiva (kvarh)
+el-pf.c8.title	Factor de potencia de los aparatos
+el-pf.c8.text	Las cargas resistivas, como hervidores y calefactores, tienen un factor de potencia de 1. Los motores rondan 0,8–0,9 a plena carga y mucho menos cuando van poco cargados.
+el-pf.c8.viz.unit	factor de potencia típico
+el-pf.c8.viz.items.0.l	Hervidor
+el-pf.c8.viz.items.1.l	Motor de inducción (plena carga)
+el-pf.c8.viz.items.2.l	Motor (poca carga)
+el-pf.c8.viz.items.3.l	Fluorescente antiguo
+el-pf.c9.title	PFC en los cargadores
+el-pf.c9.text	Las fuentes de alimentación electrónicas más grandes, incluidos los cargadores de portátil y de VE, llevan circuitos de corrección del factor de potencia que hacen que la corriente siga la onda de tensión, como exige la normativa de la UE.
+el-pf.c9.viz.steps.0	El rectificador distorsiona la corriente
+el-pf.c9.viz.steps.1	El circuito PFC la moldea
+el-pf.c9.viz.steps.2	La corriente sigue a la tensión
+el-pf.c9.viz.steps.3	cos φ ≈ 0,99
+el-meter.title	Usar un polímetro
+el-meter.summary	Medir voltios, amperios, ohmios y continuidad con seguridad.
+el-meter.q0.q	Para medir corriente, el polímetro debe estar…
+el-meter.q0.o0	En los extremos de la carga, en paralelo
+el-meter.q0.o1	En serie, para que la corriente pase por él
+el-meter.q0.o2	Desconectado
+el-meter.q0.x	La corriente se mide en serie.
+el-meter.q1.q	¿Por qué son útiles las pinzas amperimétricas?
+el-meter.q1.o0	Miden resistencia
+el-meter.q1.o1	Miden corriente sin abrir el circuito
+el-meter.q1.o2	Son más baratas
+el-meter.q1.x	Detectan el campo magnético alrededor de un conductor.
+el-meter.q2.q	¿Qué debes hacer antes de trabajar en un circuito que has desconectado?
+el-meter.q2.o0	Fiarte de la etiqueta
+el-meter.q2.o1	Comprobar que no hay tensión con un comprobador que has verificado en una fuente con tensión
+el-meter.q2.o2	Tocarlo rápido
+el-meter.q2.x	Comprueba la ausencia de tensión y que el comprobador funciona.
+el-meter.c0.title	Una herramienta, muchos medidores
+el-meter.c0.text	Un polímetro mide tensión, corriente y resistencia, y normalmente continuidad, diodos y a veces capacidad y temperatura. Un selector giratorio elige la función y el rango.
+el-meter.c0.viz.root	Polímetro
+el-meter.c0.viz.items.0	Voltios (V)
+el-meter.c0.viz.items.1	Amperios (A)
+el-meter.c0.viz.items.2	Ohmios (Ω)
+el-meter.c0.viz.items.3	Pitido de continuidad
+el-meter.c1.title	Medir tensión
+el-meter.c1.text	Pon el selector en V (CA ~ o CC ⎓) y coloca las puntas en los dos puntos, en paralelo. El polímetro tiene una resistencia muy alta, así que apenas altera el circuito.
+el-meter.c1.viz.steps.0	Selector en V~ o V⎓
+el-meter.c1.viz.steps.1	Punta negra a COM
+el-meter.c1.viz.steps.2	Punta roja a V
+el-meter.c1.viz.steps.3	Toca ambos puntos
+el-meter.c2.title	Medir corriente
+el-meter.c2.text	La corriente debe pasar por el polímetro, en serie: abre el circuito e intercala el polímetro. Pasa el cable rojo a la entrada A o mA. Olvidarte de volver a ponerlo en su sitio es la forma clásica de fundir el fusible del polímetro.
+el-meter.c2.viz.l.t	Tensión
+el-meter.c2.viz.l.items.0	en la carga
+el-meter.c2.viz.l.items.1	paralelo
+el-meter.c2.viz.l.items.2	rojo en V
+el-meter.c2.viz.r.t	Corriente
+el-meter.c2.viz.r.items.0	por el polímetro
+el-meter.c2.viz.r.items.1	serie
+el-meter.c2.viz.r.items.2	rojo en A o mA
+el-meter.c3.title	Resistencia y continuidad
+el-meter.c3.text	Mide la resistencia solo en circuitos sin tensión. El modo continuidad pita cuando la resistencia es muy baja: perfecto para encontrar cables rotos o averiguar qué cable es cuál.
+el-meter.c3.viz.items.0	Primero, sin tensión
+el-meter.c3.viz.items.1	Selector en Ω o pitido
+el-meter.c3.viz.items.2	Toca ambos extremos
+el-meter.c3.viz.items.3	Pitido = conectado
+el-meter.c4.title	Categorías CAT
+el-meter.c4.text	Los polímetros llevan una categoría que indica dónde es seguro usarlos. CAT II cubre los aparatos enchufados, CAT III la instalación fija y los cuadros, CAT IV el origen del suministro. En la instalación de una casa usa como mínimo CAT III 600 V.
+el-meter.c4.viz.items.0	CAT IV: origen, acometida
+el-meter.c4.viz.items.1	CAT III: cuadros, instalación fija
+el-meter.c4.viz.items.2	CAT II: enchufes y aparatos
+el-meter.c4.viz.items.3	CAT I: electrónica protegida
+el-meter.c5.title	Pinzas amperimétricas
+el-meter.c5.text	Una pinza amperimétrica mide la corriente sin abrir el circuito: la cierras alrededor de un solo conductor y lee el campo magnético. Si rodeas el cable entero, la fase y el neutro se anulan.
+el-meter.c5.viz.items.0.w	pinza en el cable entero
+el-meter.c5.viz.items.0.r	pinza en un solo conductor
+el-meter.c5.viz.items.1.w	marca 0 A
+el-meter.c5.viz.items.1.r	separa fase y neutro
+el-meter.c6.title	Autorrango y True RMS
+el-meter.c6.text	Los polímetros con autorrango eligen el rango por ti. Los True RMS miden correctamente formas de onda no senoidales (de inversores, drivers LED, variadores); los más baratos pueden equivocarse bastante con ellas.
+el-meter.c6.viz.l.t	De valor medio
+el-meter.c6.viz.l.items.0	bien con senoides puras
+el-meter.c6.viz.l.items.1	más barato
+el-meter.c6.viz.r.t	True RMS
+el-meter.c6.viz.r.items.0	exacto con ondas distorsionadas
+el-meter.c6.viz.r.items.1	recomendado
+el-meter.c7.title	Comprobar un enchufe
+el-meter.c7.text	Para comprobar que un enchufe tiene tensión, mide entre fase y neutro (unos 230 V), fase y tierra (unos 230 V) y neutro y tierra (cerca de 0 V). Los comprobadores de enchufes de verdad también comprueban la tierra y el diferencial.
+el-meter.c7.viz.items.0.a	fase–neutro
+el-meter.c7.viz.items.0.b	≈ 230 V
+el-meter.c7.viz.items.1.a	fase–tierra
+el-meter.c7.viz.items.1.b	≈ 230 V
+el-meter.c7.viz.items.2.a	neutro–tierra
+el-meter.c7.viz.items.2.b	≈ 0 V
+el-meter.c8.title	Comprueba la ausencia de tensión antes de tocar
+el-meter.c8.text	Antes de trabajar en cualquier circuito: aíslalo, bloquéalo, comprueba que no tiene tensión con un comprobador fiable y vuelve a verificar el comprobador en una fuente con tensión conocida. Nunca te fíes solo de un interruptor o de una etiqueta.
+el-meter.c8.viz.steps.0	Desconecta y bloquea

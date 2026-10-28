@@ -486,9 +486,9 @@ ma-fractions.c3.title	Multiplicar fracciones
 ma-fractions.c3.text	Multiplica los numeradores entre sí y los denominadores entre sí. La mitad de tres cuartos es 1/2 × 3/4 = 3/8. «De» significa multiplicar.
 ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
 ma-fractions.c3.viz.items.0.s	a, c
-ma-fractions.c3.viz.items.0.m	numeradores
+ma-fractions.c3.viz.items.0.m	arriba
 ma-fractions.c3.viz.items.1.s	b, d
-ma-fractions.c3.viz.items.1.m	denominadores
+ma-fractions.c3.viz.items.1.m	abajo
 ma-fractions.c4.title	Dividir entre una fracción
 ma-fractions.c4.text	Dividir entre una fracción equivale a multiplicar por su inversa. 3 ÷ 1/2 = 6: ¿cuántas mitades caben en 3? Seis.
 ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1,5
@@ -498,3 +498,262 @@ ma-fractions.c5.text	Una razón compara cantidades. Una mezcla de cemento y aren
 ma-fractions.c5.viz.unit	partes
 ma-fractions.c5.viz.items.0.l	Cemento
 ma-fractions.c5.viz.items.1.l	Arena
+ma-fractions.c6.title	Adaptar recetas
+ma-fractions.c6.text	Una receta para 4 lleva 300 g de harina. Para 6 personas, multiplica por 6/4 = 1,5: 450 g.
+ma-fractions.c6.example.0	Factor de escala = 6 ÷ 4 = 1,5
+ma-fractions.c6.example.1	300 g × 1,5 = 450 g
+ma-fractions.c6.viz.steps.0	Halla el factor de escala
+ma-fractions.c6.viz.steps.1	Multiplica cada ingrediente
+ma-fractions.c6.viz.steps.2	Cocina
+ma-fractions.c7.title	Precio por unidad
+ma-fractions.c7.text	Compara ofertas por el precio por unidad. 500 g por 2,40 € son 4,80 €/kg; 750 g por 3,30 € son 4,40 €/kg. Aquí el paquete grande sale más barato, pero no siempre es así.
+ma-fractions.c7.viz.unit	€ por kg
+ma-fractions.c7.viz.items.0.l	paquete de 500 g
+ma-fractions.c7.viz.items.1.l	paquete de 750 g
+ma-fractions.c8.title	Escalas de los mapas
+ma-fractions.c8.text	En un mapa a escala 1:25.000, 1 cm equivale a 25.000 cm, es decir, 250 m sobre el terreno. Los mapas de senderismo suelen usar esta escala.
+ma-fractions.c8.viz.items.0.a	1 cm en el mapa
+ma-fractions.c8.viz.items.0.b	250 m en el terreno
+ma-fractions.c8.viz.items.1.a	4 cm en el mapa
+ma-fractions.c8.viz.items.1.b	1 km
+ma-fractions.c8.viz.items.2.a	Escala
+ma-fractions.c9.title	Proporcionalidad directa e inversa
+ma-fractions.c9.text	El doble de horas con el mismo sueldo por hora supone el doble de dinero: proporcionalidad directa. El doble de trabajadores en una tarea supone la mitad de tiempo: proporcionalidad inversa, más o menos.
+ma-fractions.c9.viz.l.t	Directa
+ma-fractions.c9.viz.l.items.0	uno se duplica, el otro también
+ma-fractions.c9.viz.l.items.1	horas y sueldo
+ma-fractions.c9.viz.r.t	Inversa
+ma-fractions.c9.viz.r.items.0	uno se duplica, el otro se reduce a la mitad
+ma-fractions.c9.viz.r.items.1	trabajadores y tiempo
+ma-mental.title	Trucos de cálculo mental
+ma-mental.summary	Cuentas más rápidas de cabeza.
+ma-mental.q0.q	¿Cuánto es 11 × 43?
+ma-mental.q0.o0	443
+ma-mental.q0.o1	473
+ma-mental.q0.o2	4343
+ma-mental.q0.x	4 _ 3, con 4 + 3 = 7 en medio.
+ma-mental.q1.q	¿Cuánto es 45²?
+ma-mental.q1.o0	1625
+ma-mental.q1.o1	2025
+ma-mental.q1.o2	2045
+ma-mental.q1.x	4 × 5 = 20, y luego 25.
+ma-mental.c0.title	Redondea y ajusta
+ma-mental.c0.text	Para sumar 298 + 157, suma 300 y resta 2: 457 − 2 = 455. Redondear a números cómodos facilita muchas cuentas.
+ma-mental.c0.viz.steps.2	Resta 2
+ma-mental.c1.title	Multiplicar por 5
+ma-mental.c1.text	Para multiplicar por 5, multiplica por 10 y divide entre dos. 5 × 48 = 480 ÷ 2 = 240.
+ma-mental.c1.example.0	48 × 10 = 480
+ma-mental.c1.example.1	480 ÷ 2 = 240
+ma-mental.c1.viz.items.0.b	× 10 y luego la mitad
+ma-mental.c1.viz.items.1.b	× 100 y luego ÷ 4
+ma-mental.c1.viz.items.2.b	× 100 y luego la mitad
+ma-mental.c2.title	Multiplicar por 11
+ma-mental.c2.text	Con un número de dos cifras, suma las cifras y pon el resultado en medio: 11 × 36 = 3(3+6)6 = 396. Si la suma es 10 o más, llévate una.
+ma-mental.c2.example.0	11 × 36 → 3 _ 6
+ma-mental.c2.example.1	3 + 6 = 9
+ma-mental.c2.example.2	396
+ma-mental.c2.viz.steps.1	Separa: 3 _ 6
+ma-mental.c2.viz.steps.2	En medio: 3 + 6 = 9
+ma-mental.c3.title	Cuadrados que acaban en 5
+ma-mental.c3.text	Para elevar al cuadrado un número que acaba en 5, multiplica la primera parte por el número siguiente y añade 25 al final: 35² = (3 × 4) y luego 25 = 1225.
+ma-mental.c3.example.0	35²: 3 × 4 = 12
+ma-mental.c3.example.1	añade 25
+ma-mental.c3.example.2	1225
+ma-mental.c3.viz.items.0.a	25²
+ma-mental.c3.viz.items.1.a	45²
+ma-mental.c3.viz.items.2.a	65²
+ma-mental.c3.viz.items.3.a	85²
+ma-mental.c4.title	Doblar y dividir a la mitad
+ma-mental.c4.text	Divide un número a la mitad y duplica el otro: el producto no cambia. 16 × 25 = 8 × 50 = 4 × 100 = 400.
+ma-mental.c5.title	Descomponer
+ma-mental.c5.text	Divide las multiplicaciones incómodas: 7 × 48 = 7 × 50 − 7 × 2 = 350 − 14 = 336.
+ma-mental.c5.example.0	7 × 50 = 350
+ma-mental.c5.example.1	7 × 2 = 14
+ma-mental.c5.example.2	350 − 14 = 336
+ma-mental.c6.title	Criterios de divisibilidad
+ma-mental.c6.text	Un número es divisible entre 3 si sus cifras suman un múltiplo de 3; entre 9 si suman un múltiplo de 9; entre 4 si lo son sus dos últimas cifras.
+ma-mental.c6.viz.items.0.b	última cifra par
+ma-mental.c6.viz.items.1.b	cifras suman múltiplo de 3
+ma-mental.c6.viz.items.2.b	acaba en 0 o 5
+ma-mental.c6.viz.items.3.b	cifras suman múltiplo de 9
+ma-mental.c7.title	Primero, estima
+ma-mental.c7.text	Antes de calcular, haz una estimación. 49 × 21 es aproximadamente 50 × 20 = 1000; si te sale 10.290, algo ha ido mal.
+ma-mental.c7.viz.steps.0	Redondea los números
+ma-mental.c7.viz.steps.1	Estimación rápida
+ma-mental.c7.viz.steps.2	Calcula
+ma-mental.c7.viz.steps.3	Compara
+ma-mental.c8.title	Contar hacia arriba para dar el cambio
+ma-mental.c8.text	Los tenderos dan el cambio contando hacia arriba. Pagas 20 € por 13,65 €: hasta 14 € van 35 céntimos y hasta 20 €, 6 €; en total, 6,35 €.
+ma-mental.c8.viz.steps.3	Cambio: 6,35 €
+ma-mental.c9.title	Convertir temperaturas
+ma-mental.c9.text	De Celsius a Fahrenheit, aproximadamente: duplica y suma 30. 20 °C ≈ 70 °F (exactamente 68). Para el valor exacto, multiplica por 1,8 y suma 32.
+ma-mental.c9.viz.f	°F = °C × 1,8 + 32
+ma-mental.c9.viz.items.0.s	°C
+ma-mental.c9.viz.items.0.m	Celsius
+ma-mental.c9.viz.items.1.s	°F
+ma-mental.c9.viz.items.1.m	Fahrenheit
+ma-mental.c9.viz.items.2.s	versión rápida
+ma-mental.c9.viz.items.2.m	duplica, suma 30
+ma-algebra.title	Álgebra sin miedo
+ma-algebra.summary	Las letras son solo números desconocidos.
+ma-algebra.q0.q	Resuelve 3x + 4 = 19.
+ma-algebra.q0.o0	x = 3
+ma-algebra.q0.o1	x = 5
+ma-algebra.q0.o2	x = 7
+ma-algebra.q0.x	Resta 4 y luego divide entre 3.
+ma-algebra.q1.q	¿Cuánto es 5 − (−3)?
+ma-algebra.q1.o0	2
+ma-algebra.q1.o1	8
+ma-algebra.q1.o2	−8
+ma-algebra.q1.x	Restar un negativo es sumar.
+ma-algebra.c0.title	Qué es el álgebra
+ma-algebra.c0.text	El álgebra usa letras para los números que aún no conocemos. «Un número más 5 es 12» se convierte en x + 5 = 12, así que x = 7.
+ma-algebra.c0.viz.steps.0	Palabras
+ma-algebra.c0.viz.steps.1	Ecuación
+ma-algebra.c0.viz.steps.2	Resolver
+ma-algebra.c0.viz.steps.3	x = 7
+ma-algebra.c1.title	Mantén el equilibrio
+ma-algebra.c1.text	Una ecuación es una balanza: lo que hagas en un lado, hazlo también en el otro. Resta 5 a ambos lados de x + 5 = 12 y obtendrás x = 7.
+ma-algebra.c1.example.0	x + 5 = 12
+ma-algebra.c1.example.1	x + 5 − 5 = 12 − 5
+ma-algebra.c1.example.2	x = 7
+ma-algebra.c1.viz.l.t	Lado izquierdo
+ma-algebra.c1.viz.l.items.0	x + 5
+ma-algebra.c1.viz.r.t	Lado derecho
+ma-algebra.c2.title	Ecuaciones de dos pasos
+ma-algebra.c2.text	3x + 4 = 19: resta 4 a ambos lados (3x = 15) y luego divide ambos entre 3 (x = 5). Deshaz las operaciones en orden inverso.
+ma-algebra.c2.example.0	3x + 4 = 19
+ma-algebra.c2.example.1	3x = 15
+ma-algebra.c2.example.2	x = 5
+ma-algebra.c2.viz.steps.0	3x + 4 = 19
+ma-algebra.c2.viz.steps.1	Resta 4
+ma-algebra.c2.viz.steps.2	Divide entre 3
+ma-algebra.c2.viz.steps.3	x = 5
+ma-algebra.c3.title	De dónde viene
+ma-algebra.c3.text	La palabra «álgebra» viene de *al-jabr*, «restauración», en el título del libro que al-Juarismi escribió en Bagdad en el siglo IX. Las letras para las incógnitas llegaron después, con François Viète en la década de 1590.
+ma-algebra.c3.viz.events.0.y	~820 d. C.
+ma-algebra.c3.viz.events.0.l	Libro de al-Juarismi
+ma-algebra.c3.viz.events.1.l	Viète usa letras
+ma-algebra.c3.viz.events.2.l	x, y, z de Descartes
+ma-algebra.c4.title	Las fórmulas son álgebra
+ma-algebra.c4.text	Toda fórmula es álgebra: área = largo × ancho, velocidad = distancia ÷ tiempo. Despejar te permite hallar cualquier dato que falte.
+ma-algebra.c4.viz.f	d = v × t
+ma-algebra.c4.viz.items.0.s	d
+ma-algebra.c4.viz.items.0.m	distancia
+ma-algebra.c4.viz.items.1.s	v
+ma-algebra.c4.viz.items.1.m	velocidad
+ma-algebra.c4.viz.items.2.s	t
+ma-algebra.c4.viz.items.2.m	tiempo
+ma-algebra.c4.viz.items.3.m	así que v = d ÷ t
+ma-algebra.c5.title	Quitar paréntesis
+ma-algebra.c5.text	Multiplica todo lo de dentro por lo de fuera: 3(x + 4) = 3x + 12. También es útil para el cálculo mental: 3 × 104 = 300 + 12.
+ma-algebra.c5.example.0	3(x + 4)
+ma-algebra.c5.example.1	= 3 × x + 3 × 4
+ma-algebra.c5.example.2	= 3x + 12
+ma-algebra.c5.viz.items.0.a	3 × x
+ma-algebra.c5.viz.items.0.b	3x
+ma-algebra.c5.viz.items.2.a	3(x + 4)
+ma-algebra.c5.viz.items.2.b	3x + 12
+ma-algebra.c6.title	Dos incógnitas
+ma-algebra.c6.text	Dos cafés y un pastel cuestan 5 €; un café y un pastel, 3,50 €. Resta: un café cuesta 1,50 €, así que el pastel cuesta 2 €. Eso es un sistema de ecuaciones.
+ma-algebra.c6.example.0	2c + k = 5
+ma-algebra.c6.example.1	c + k = 3,5
+ma-algebra.c6.example.2	c = 1,5, así que k = 2
+ma-algebra.c6.viz.l.t	Dos cafés y un pastel
+ma-algebra.c6.viz.r.t	Un café y un pastel
+ma-algebra.c7.title	Signos negativos
+ma-algebra.c7.text	Restar un negativo es sumar: 5 − (−3) = 8. Multiplicar dos negativos da un positivo: (−2) × (−3) = 6.
+ma-algebra.c8.title	Sucesiones como fórmulas
+ma-algebra.c8.text	En 3, 5, 7, 9…, cada término es 2n + 1. Halla el término 100 sin escribir la lista: 2 × 100 + 1 = 201.
+ma-algebra.c8.viz.f	término = 2n + 1
+ma-algebra.c8.viz.items.0.s	n
+ma-algebra.c8.viz.items.0.m	posición en la sucesión
+ma-algebra.c8.viz.items.1.s	término 100
+ma-algebra.c9.title	Un problema real
+ma-algebra.c9.text	Una tarifa de móvil cuesta 10 € al mes más 0,05 € por MB. Con 15 € al mes, ¿cuántos MB puedes usar? 10 + 0,05m = 15, así que m = 100 MB.
+ma-algebra.c9.example.0	10 + 0,05m = 15
+ma-algebra.c9.example.1	0,05m = 5
+ma-algebra.c9.example.2	m = 100
+ma-algebra.c9.viz.unit	factura mensual, €
+ma-algebra.c9.viz.items.0.l	0 MB
+ma-algebra.c9.viz.items.1.l	50 MB
+ma-algebra.c9.viz.items.2.l	100 MB
+ma-growth.title	Crecimiento exponencial
+ma-growth.summary	Duplicaciones, virus y logaritmos.
+ma-growth.q0.q	Un estanque queda totalmente cubierto el día 30, y la cobertura se duplica cada día. ¿Cuándo estaba cubierto a medias?
+ma-growth.q0.o0	El día 15
+ma-growth.q0.o1	El día 29
+ma-growth.q0.o2	El día 20
+ma-growth.q0.x	Una duplicación antes del final.
+ma-growth.q1.q	¿Cuánto es log₁₀ 1000?
+ma-growth.q1.o0	10
+ma-growth.q1.o1	100
+ma-growth.q1.o2	3
+ma-growth.q1.x	10³ = 1000.
+ma-growth.c0.title	Lineal frente a exponencial
+ma-growth.c0.text	El crecimiento lineal suma la misma cantidad en cada paso; el exponencial multiplica. El exponencial empieza despacio y luego se dispara.
+ma-growth.c0.viz.l.t	Lineal
+ma-growth.c0.viz.l.items.0	+2 cada paso
+ma-growth.c0.viz.r.t	Exponencial
+ma-growth.c0.viz.r.items.0	×2 cada paso
+ma-growth.c1.title	La leyenda del tablero de ajedrez
+ma-growth.c1.text	Pon 1 grano de arroz en la primera casilla, 2 en la siguiente, 4, 8… Al llegar a la casilla 64 necesitarías unos 18 trillones de granos, mucho más que todo el arroz cultivado en la historia.
+ma-growth.c1.viz.unit	granos en la casilla n
+ma-growth.c1.viz.items.0.l	Casilla 5
+ma-growth.c1.viz.items.1.l	Casilla 10
+ma-growth.c1.viz.items.2.l	Casilla 15
+ma-growth.c2.title	El estanque de nenúfares
+ma-growth.c2.text	Los nenúfares se duplican cada día y cubren un estanque el día 30. ¿Cuándo estaba cubierto a medias? El día 29. Los problemas exponenciales parecen pequeños hasta el último momento.
+ma-growth.c2.viz.events.0.y	Día 25
+ma-growth.c2.viz.events.0.l	3 % cubierto
+ma-growth.c2.viz.events.1.y	Día 28
+ma-growth.c2.viz.events.2.y	Día 29
+ma-growth.c2.viz.events.3.y	Día 30
+ma-growth.c3.title	Potencias
+ma-growth.c3.text	2⁵ significa 2 × 2 × 2 × 2 × 2 = 32. Las potencias son una forma abreviada de escribir multiplicaciones repetidas. Cualquier número elevado a 0 es 1.
+ma-growth.c3.viz.items.0.a	2¹
+ma-growth.c3.viz.items.1.a	2⁵
+ma-growth.c3.viz.items.2.a	2¹⁰
+ma-growth.c3.viz.items.3.a	10⁶
+ma-growth.c3.viz.items.3.b	1 millón
+ma-growth.c4.title	Logaritmos
+ma-growth.c4.text	Un logaritmo pregunta: «¿qué potencia?». log₁₀ 1000 = 3, porque 10³ = 1000. Los logaritmos convierten multiplicaciones enormes en sumas sencillas.
+ma-growth.c4.viz.f	log₁₀ 1000 = 3
+ma-growth.c4.viz.items.0.s	porque
+ma-growth.c4.viz.items.0.m	10³ = 1000
+ma-growth.c4.viz.items.1.s	log pregunta
+ma-growth.c4.viz.items.1.m	¿qué potencia?
+ma-growth.c5.title	Escalas logarítmicas a nuestro alrededor
+ma-growth.c5.text	La escala de terremotos de tipo Richter, los decibelios y el pH usan logaritmos. Cada grado más de magnitud supone liberar unas 32 veces más energía.
+ma-growth.c5.viz.items.0.a	Magnitud +1
+ma-growth.c5.viz.items.0.b	~32× energía
+ma-growth.c5.viz.items.1.a	+10 dB
+ma-growth.c5.viz.items.1.b	10× intensidad sonora
+ma-growth.c5.viz.items.2.a	pH −1
+ma-growth.c5.viz.items.2.b	10× más ácido
+ma-growth.c6.title	Cómo se propagan los virus
+ma-growth.c6.text	Si cada persona infectada contagia a otras 2 cada pocos días, los casos se duplican. Bajar ese número por debajo de 1 hace que una epidemia remita.
+ma-growth.c6.viz.l.t	R mayor que 1
+ma-growth.c6.viz.l.items.0	los casos crecen
+ma-growth.c6.viz.l.items.1	exponencial
+ma-growth.c6.viz.r.t	R menor que 1
+ma-growth.c6.viz.r.items.0	los casos bajan
+ma-growth.c6.viz.r.items.1	se extingue
+ma-growth.c7.title	La ley de Moore
+ma-growth.c7.text	En 1965, Gordon Moore observó que el número de transistores de los chips se duplicaba aproximadamente cada dos años. Se cumplió durante décadas e impulsó la revolución digital.
+ma-growth.c7.viz.unit	transistores
+ma-growth.c7.viz.items.0.l	Intel 4004 (1971)
+ma-growth.c7.viz.items.1.l	Pentium (1993)
+ma-growth.c7.viz.items.2.l	Apple serie M (años 2020)
+ma-growth.c8.title	Semivida
+ma-growth.c8.text	Las sustancias radiactivas se desintegran de forma exponencial. Tras una semivida queda la mitad; tras dos, una cuarta parte. La semivida de 5730 años del carbono 14 nos permite datar restos antiguos.
+ma-growth.c8.viz.unit	% restante
+ma-growth.c8.viz.items.1.l	1 semivida
+ma-growth.c9.title	Doblar papel
+ma-growth.c9.text	Una hoja de papel de unos 0,1 mm de grosor doblada 42 veces tendría más de 400.000 km de grosor, más allá de la Luna. En la práctica, no se puede doblar un papel a mano más de unas 7 veces.
+ma-growth.c9.viz.items.0.v	0,1 mm
+ma-growth.c9.viz.items.0.l	papel
+ma-growth.c9.viz.items.1.v	10 dobleces
+ma-growth.c9.viz.items.1.l	~10 cm
+ma-growth.c9.viz.items.2.v	42 dobleces
+ma-growth.c9.viz.items.2.l	más allá de la Luna

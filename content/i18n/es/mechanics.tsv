@@ -648,3 +648,253 @@ me-fluids.c6.viz.f	Q = v × A
 me-fluids.c6.viz.items.0.s	Q
 me-fluids.c6.viz.items.0.m	caudal
 me-fluids.c6.viz.items.1.s	v
+me-fluids.c6.viz.items.1.m	velocidad
+me-fluids.c6.viz.items.2.s	A
+me-fluids.c6.viz.items.2.m	área de la sección
+me-fluids.c7.title	Bernoulli
+me-fluids.c7.text	Donde un fluido se mueve más rápido, su presión baja. Esto ayuda a explicar los carburadores, los atomizadores y parte de cómo las alas y las velas generan sustentación.
+me-fluids.c7.viz.l.t	Fluido lento
+me-fluids.c7.viz.l.items.0	más presión
+me-fluids.c7.viz.r.t	Fluido rápido
+me-fluids.c7.viz.r.items.0	menos presión
+me-fluids.c8.title	Sifones
+me-fluids.c8.text	Un sifón hace subir un líquido por encima de un obstáculo y bajarlo hasta un punto más bajo sin bomba, siempre que la salida esté por debajo del origen y el tubo empiece lleno.
+me-fluids.c8.viz.steps.0	Tubo lleno de líquido
+me-fluids.c8.viz.steps.1	Salida por debajo del origen
+me-fluids.c8.viz.steps.2	La gravedad tira del lado largo
+me-fluids.c8.viz.steps.3	El flujo continúa
+me-fluids.c9.title	Viscosidad
+me-fluids.c9.text	La viscosidad es lo espeso que es un fluido: la miel es viscosa, el agua no. Los grados de aceite como 5W-30 describen cómo se comporta la viscosidad en frío (5W) y en caliente (30).
+me-fluids.c9.viz.items.0.a	agua
+me-fluids.c9.viz.items.0.b	baja viscosidad
+me-fluids.c9.viz.items.1.a	aceite motor
+me-fluids.c9.viz.items.1.b	media
+me-fluids.c9.viz.items.2.a	miel
+me-fluids.c9.viz.items.2.b	alta
+me-fluids.c9.viz.items.3.a	5W-30
+me-fluids.c9.viz.items.3.b	grado en frío / en caliente
+me-flight.title	Cómo vuelan los aviones
+me-flight.summary	Sustentación, resistencia, empuje y peso.
+me-flight.q0.q	¿Qué ocurre en una pérdida?
+me-flight.q0.o0	Se para el motor
+me-flight.q0.o1	El flujo de aire se separa del ala y la sustentación cae bruscamente
+me-flight.q0.o2	El avión acelera
+me-flight.q0.x	Un ángulo de ataque demasiado alto.
+me-flight.q1.q	Duplicar la velocidad multiplica la resistencia por un factor de aproximadamente…
+me-flight.q1.o0	2
+me-flight.q1.o1	4
+me-flight.q1.o2	8
+me-flight.q1.x	La resistencia crece con el cuadrado de la velocidad.
+me-flight.q2.q	¿Qué superficie de mando hace alabear el avión?
+me-flight.q2.o0	Timón de dirección
+me-flight.q2.o1	Timón de profundidad
+me-flight.q2.o2	Alerones
+me-flight.q2.x	Los alerones se mueven en sentidos opuestos en cada ala.
+me-flight.c0.title	Cuatro fuerzas
+me-flight.c0.text	En vuelo estable, la sustentación equilibra el peso y el empuje equilibra la resistencia. Para subir, la sustentación supera al peso; para acelerar, el empuje supera a la resistencia.
+me-flight.c0.viz.l.t	Arriba y abajo
+me-flight.c0.viz.l.items.0	sustentación vs peso
+me-flight.c0.viz.r.t	Adelante y atrás
+me-flight.c0.viz.r.items.0	empuje vs resistencia
+me-flight.c1.title	Cómo generan sustentación las alas
+me-flight.c1.text	Un ala tiene una forma y una inclinación (ángulo de ataque) que desvían el aire hacia abajo. Empujar el aire hacia abajo empuja el ala hacia arriba (tercera ley de Newton), con menos presión por encima del ala y más por debajo.
+me-flight.c1.viz.steps.0	Ala inclinada frente al aire
+me-flight.c1.viz.steps.1	Aire desviado hacia abajo
+me-flight.c1.viz.steps.2	Menos presión arriba
+me-flight.c1.viz.steps.3	Sustentación arriba
+me-flight.c2.title	La ecuación de la sustentación
+me-flight.c2.text	La sustentación crece con la densidad del aire, la superficie alar y el cuadrado de la velocidad. Por eso los aviones necesitan pistas largas en aeropuertos altos y calurosos, donde el aire está enrarecido.
+me-flight.c2.viz.f	L = ½ × ρ × v² × S × CL
+me-flight.c2.viz.items.0.s	ρ
+me-flight.c2.viz.items.0.m	densidad del aire
+me-flight.c2.viz.items.1.s	v
+me-flight.c2.viz.items.1.m	velocidad
+me-flight.c2.viz.items.2.s	S
+me-flight.c2.viz.items.2.m	superficie alar
+me-flight.c2.viz.items.3.s	CL
+me-flight.c2.viz.items.3.m	coef. de sustentación
+me-flight.c3.title	Pérdida
+me-flight.c3.text	Si aumentas demasiado el ángulo de ataque, el flujo de aire se separa de la superficie superior. La sustentación se desploma de repente: es la entrada en pérdida. Los pilotos entrenan para reconocerla y recuperarse.
+me-flight.c3.viz.steps.0	Ángulo de ataque excesivo
+me-flight.c3.viz.steps.1	El flujo se separa
+me-flight.c3.viz.steps.2	La sustentación cae
+me-flight.c3.viz.steps.3	Bajar el morro para recuperar
+me-flight.c4.title	Flaps y slats
+me-flight.c4.text	Para el despegue y el aterrizaje, los flaps y los slats se extienden desde el ala para aumentar su superficie y su curvatura, lo que da más sustentación a baja velocidad.
+me-flight.c4.viz.l.t	Crucero
+me-flight.c4.viz.l.items.0	ala limpia
+me-flight.c4.viz.l.items.1	poca resistencia
+me-flight.c4.viz.l.items.2	alta velocidad
+me-flight.c4.viz.r.t	Aterrizaje
+me-flight.c4.viz.r.items.0	flaps y slats fuera
+me-flight.c4.viz.r.items.1	más sustentación
+me-flight.c4.viz.r.items.2	aproximación lenta
+me-flight.c5.title	Resistencia aerodinámica
+me-flight.c5.text	La resistencia procede del rozamiento con el aire y de la diferencia de presión detrás del objeto. Crece con el cuadrado de la velocidad, así que ir más rápido cuesta mucho más combustible.
+me-flight.c5.viz.unit	resistencia relativa
+me-flight.c5.viz.items.0.l	100 km/h
+me-flight.c5.viz.items.1.l	200 km/h
+me-flight.c5.viz.items.2.l	300 km/h
+me-flight.c6.title	Motores a reacción
+me-flight.c6.text	Un turbofán aspira aire, lo comprime, quema combustible en él y expulsa el gas caliente por detrás. En los aviones de pasajeros, la mayor parte del empuje viene del gran ventilador que impulsa el aire alrededor del núcleo.
+me-flight.c6.viz.steps.0	El ventilador aspira aire
+me-flight.c6.viz.steps.1	El compresor lo comprime
+me-flight.c6.viz.steps.2	Combustión
+me-flight.c6.viz.steps.3	La turbina y la tobera empujan el avión
+me-flight.c7.title	Por qué los aviones vuelan tan alto
+me-flight.c7.text	A unos 10–12 km de altitud el aire está enrarecido, así que la resistencia es mucho menor y los motores a reacción son más eficientes. Las cabinas se presurizan al equivalente de unos 2000 m.
+me-flight.c7.viz.items.0.v	11 km
+me-flight.c7.viz.items.0.l	altitud de crucero típica
+me-flight.c7.viz.items.1.v	−55 °C
+me-flight.c7.viz.items.1.l	aire exterior
+me-flight.c7.viz.items.2.v	~2000 m
+me-flight.c7.viz.items.2.l	altitud equivalente en cabina
+me-flight.c8.title	Superficies de mando
+me-flight.c8.text	Los alerones de las alas hacen alabear el avión, el timón de profundidad de la cola lo hace cabecear arriba y abajo, y el timón de dirección lo hace guiñar a izquierda y derecha.
+me-flight.c8.viz.items.0.a	alerones
+me-flight.c8.viz.items.0.b	alabeo
+me-flight.c8.viz.items.1.a	timón de prof.
+me-flight.c8.viz.items.1.b	cabeceo
+me-flight.c8.viz.items.2.a	timón
+me-flight.c8.viz.items.2.b	guiñada
+me-flight.c8.viz.items.3.a	flaps
+me-flight.c8.viz.items.3.b	más sustentación
+me-flight.c9.title	Drones
+me-flight.c9.text	Los drones multirrotor no tienen alas; generan sustentación haciendo girar hélices. Se dirigen acelerando unos motores y frenando otros, con una controladora de vuelo que hace ajustes cientos de veces por segundo.
+me-flight.c9.viz.steps.0	Giroscopio y acelerómetro
+me-flight.c9.viz.steps.1	Controladora de vuelo
+me-flight.c9.viz.steps.2	Ajusta cada motor
+me-flight.c9.viz.steps.3	Vuelo estacionario estable
+me-bridges.title	Puentes
+me-bridges.summary	De viga, de arco, colgantes y atirantados.
+me-bridges.q0.q	¿Qué tipo de puente soporta las cargas principalmente a compresión?
+me-bridges.q0.o0	Colgante
+me-bridges.q0.o1	De arco
+me-bridges.q0.o2	Atirantado
+me-bridges.q0.x	Los arcos llevan las cargas a los estribos.
+me-bridges.q1.q	El puente 25 de Abril de Lisboa es un…
+me-bridges.q1.o0	Puente de viga
+me-bridges.q1.o1	Puente de arco
+me-bridges.q1.o2	Puente colgante
+me-bridges.q1.x	Los cables principales cuelgan de las torres.
+me-bridges.q2.q	¿Qué destruyó el puente de Tacoma Narrows en 1940?
+me-bridges.q2.o0	Un terremoto
+me-bridges.q2.o1	Oscilaciones de torsión provocadas por el viento
+me-bridges.q2.o2	El choque de un barco
+me-bridges.q2.x	Inestabilidad aerodinámica.
+me-bridges.c0.title	Los principales tipos de puente
+me-bridges.c0.text	Los puentes soportan las cargas de forma distinta: las vigas se flexionan, los arcos se comprimen, los cables de los puentes colgantes tiran, y las torres de los atirantados sostienen el tablero con cables rectos.
+me-bridges.c0.viz.root	Puentes
+me-bridges.c0.viz.items.0	Viga
+me-bridges.c0.viz.items.1	Arco
+me-bridges.c0.viz.items.2	Colgante
+me-bridges.c0.viz.items.3	Atirantado
+me-bridges.c1.title	Puentes de viga
+me-bridges.c1.text	El puente más sencillo: una viga sobre apoyos. Barato y rápido para luces cortas, pero a medida que crece la luz hacen falta vigas de mucho canto, así que a menudo son continuos sobre muchas pilas.
+me-bridges.c1.viz.items.0.a	luz
+me-bridges.c1.viz.items.0.b	hasta ~250 m (grandes vigas)
+me-bridges.c1.viz.items.1.a	ideal para
+me-bridges.c1.viz.items.1.b	pasos sobre autovías
+me-bridges.c1.viz.items.2.a	estructura
+me-bridges.c1.viz.items.2.b	flexión
+me-bridges.c2.title	Puentes de arco
+me-bridges.c2.text	Los arcos llevan las cargas a compresión hasta estribos sólidos. Hay arcos de piedra que han durado 2000 años. El puente Dom Luís I de Oporto (1886) es un arco de hierro de dos tableros sobre el Duero.
+me-bridges.c2.viz.items.0.a	funciona a
+me-bridges.c2.viz.items.0.b	compresión
+me-bridges.c2.viz.items.1.a	necesita
+me-bridges.c2.viz.items.1.b	estribos sólidos
+me-bridges.c2.viz.items.2.a	ejemplo
+me-bridges.c2.viz.items.2.b	Dom Luís I, Oporto
+me-bridges.c3.title	Puentes colgantes
+me-bridges.c3.text	Los cables principales cuelgan de torres altas y se anclan en cada extremo; unas péndolas verticales sostienen el tablero. Son los que alcanzan las mayores luces. El puente 25 de Abril de Lisboa (1966) es uno de ellos.
+me-bridges.c3.viz.steps.0	Carga del tablero
+me-bridges.c3.viz.steps.1	Péndolas verticales
+me-bridges.c3.viz.steps.2	Cables principales
+me-bridges.c3.viz.steps.3	Torres y anclajes
+me-bridges.c4.title	Puentes atirantados
+me-bridges.c4.text	Cables rectos van directamente de las torres al tablero en forma de abanico o de arpa. Son eficientes para luces medias y largas y rápidos de construir. El puente Vasco da Gama de Lisboa tiene un vano principal atirantado.
+me-bridges.c4.viz.l.t	Colgante
+me-bridges.c4.viz.l.items.0	cables cuelgan entre torres
+me-bridges.c4.viz.l.items.1	luces más largas
+me-bridges.c4.viz.r.t	Atirantado
+me-bridges.c4.viz.r.items.0	cables rectos al tablero
+me-bridges.c4.viz.r.items.1	luces medias-largas
+me-bridges.c5.title	Puentes portugueses
+me-bridges.c5.text	Portugal tiene algunos puentes extraordinarios, entre ellos varios de la empresa de Gustave Eiffel y de Edgar Cardoso.
+me-bridges.c5.viz.events.0.l	María Pía (Eiffel), Oporto
+me-bridges.c5.viz.events.1.l	Dom Luís I, Oporto
+me-bridges.c5.viz.events.2.l	25 de Abril, Lisboa
+me-bridges.c5.viz.events.3.l	Vasco da Gama, Lisboa (17 km)
+me-bridges.c6.title	El viento y Tacoma Narrows
+me-bridges.c6.text	En 1940, el puente colgante de Tacoma Narrows, en EE. UU., se retorció hasta destruirse con un viento moderado debido a la inestabilidad aerodinámica. Desde entonces, los tableros se ensayan en túnel de viento y se diseñan para evitarlo.
+me-bridges.c6.viz.steps.0	Viento sobre un tablero flexible
+me-bridges.c6.viz.steps.1	Crece la oscilación de torsión
+me-bridges.c6.viz.steps.2	Colapso (1940)
+me-bridges.c6.viz.steps.3	Desde entonces, túnel de viento
+me-bridges.c7.title	Juntas de dilatación
+me-bridges.c7.text	Los puentes se alargan y se acortan con la temperatura. Las juntas de dilatación (los dientes metálicos por los que pasas con el coche) y los apoyos deslizantes les permiten moverse sin agrietarse.
+me-bridges.c7.viz.items.0	Juntas de dilatación
+me-bridges.c7.viz.items.1	Apoyos deslizantes
+me-bridges.c7.viz.items.2	Prever la temperatura
+me-bridges.c7.viz.items.3	Inspeccionar a menudo
+me-bridges.c8.title	Cimentaciones en ríos
+me-bridges.c8.text	Las pilas en los ríos deben resistir la socavación: el agua rápida que excava el lecho a su alrededor. Muchos fallos de puentes se deben a la socavación durante las crecidas, no a la propia estructura.
+me-bridges.c8.viz.steps.0	La crecida acelera junto a la pila
+me-bridges.c8.viz.steps.1	Lecho erosionado
+me-bridges.c8.viz.steps.2	Cimentación descalzada
+me-bridges.c8.viz.steps.3	Riesgo de colapso
+me-bridges.c9.title	Inspección y mantenimiento
+me-bridges.c9.text	Los puentes se inspeccionan con regularidad en busca de grietas, corrosión, desgaste de los apoyos y socavación. Cada vez más, unos sensores vigilan en tiempo real las deformaciones, las vibraciones y los movimientos.
+me-bridges.c9.viz.items.0	Inspecciones visuales
+me-bridges.c9.viz.items.1	Control de corrosión en cables y armaduras
+me-bridges.c9.viz.items.2	Revisión subacuática de socavación
+me-bridges.c9.viz.items.3	Sensores de monitorización estructural
+me-buildings.title	Edificios y cimentaciones
+me-buildings.summary	Desde el suelo hacia arriba.
+me-buildings.q0.q	¿Qué es el asiento diferencial?
+me-buildings.q0.o0	Que todas las partes se hundan por igual
+me-buildings.q0.o1	Que una parte del edificio se hunda más que otra
+me-buildings.q0.o2	El asentamiento tras la lluvia
+me-buildings.q0.x	Provoca grietas.
+me-buildings.q1.q	¿Qué era la gaiola pombalina?
+me-buildings.q1.o0	Una cárcel
+me-buildings.q1.o1	Un entramado de madera dentro de los muros para resistir terremotos
+me-buildings.q1.o2	Un tipo de teja
+me-buildings.q1.x	Se usó en la reconstrucción de Lisboa tras 1755.
+me-buildings.q2.q	¿Cuándo se usan pilotes?
+me-buildings.q2.o0	Sobre roca sólida cerca de la superficie
+me-buildings.q2.o1	En terreno blando, para llegar a capas más firmes
+me-buildings.q2.o2	Solo en puentes
+me-buildings.q2.x	Transmiten las cargas a estratos más profundos.
+me-buildings.c0.title	¿Para qué sirven las cimentaciones?
+me-buildings.c0.text	Las cimentaciones reparten el peso de un edificio sobre un suelo capaz de soportarlo sin hundirse de forma desigual. Cuanto más débil es el suelo, más grandes o profundas son las cimentaciones.
+me-buildings.c0.viz.steps.0	Peso del edificio
+me-buildings.c0.viz.steps.1	La cimentación lo reparte
+me-buildings.c0.viz.steps.2	El suelo lo soporta
+me-buildings.c0.viz.steps.3	Sin asientos desiguales
+me-buildings.c1.title	Cimentaciones superficiales
+me-buildings.c1.text	Las zapatas corridas y aisladas, o una losa de cimentación, funcionan donde hay suelo firme o roca cerca de la superficie. Son habituales en viviendas.
+me-buildings.c1.viz.items.0.a	zapata corrida
+me-buildings.c1.viz.items.0.b	bajo muros
+me-buildings.c1.viz.items.1.a	zapata aislada
+me-buildings.c1.viz.items.1.b	bajo pilares
+me-buildings.c1.viz.items.2.a	losa
+me-buildings.c1.viz.items.2.b	losa entera, suelos débiles
+me-buildings.c2.title	Cimentaciones profundas
+me-buildings.c2.text	En terreno blando, los pilotes se hincan o se perforan hasta capas más firmes y soportan las cargas por la punta y por el rozamiento lateral. La Baixa de Lisboa se reconstruyó después de 1755 sobre pilotes de madera.
+me-buildings.c2.viz.l.t	Superficial
+me-buildings.c2.viz.l.items.0	suelo firme cerca
+me-buildings.c2.viz.l.items.1	barata
+me-buildings.c2.viz.l.items.2	viviendas
+me-buildings.c2.viz.r.t	Pilotes
+me-buildings.c2.viz.r.items.0	terreno blando
+me-buildings.c2.viz.r.items.1	llegan a capas hondas
+me-buildings.c2.viz.r.items.2	torres, puentes
+me-buildings.c3.title	Asientos
+me-buildings.c3.text	Todos los edificios se asientan un poco. Los problemas vienen del asiento diferencial, cuando una parte se hunde más que otra, lo que agrieta muros y atasca puertas.
+me-buildings.c3.viz.items.0.w	una esquina sobre relleno blando
+me-buildings.c3.viz.items.0.r	cimentar más hondo allí
+me-buildings.c3.viz.items.1.w	grietas que se abren
+me-buildings.c3.viz.items.1.r	vigilar e investigar
+me-buildings.c4.title	Muros y estructuras
+me-buildings.c4.text	Los edificios tradicionales tienen muros de carga de piedra o ladrillo. Los modernos usan estructuras de pilares y vigas de hormigón o acero, y los muros solo rellenan los huecos.

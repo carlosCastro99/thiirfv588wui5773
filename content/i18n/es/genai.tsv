@@ -931,3 +931,273 @@ gen-agents.c5.title	Model Context Protocol
 gen-agents.c5.text	MCP es un estándar abierto (presentado por Anthropic en 2024) para conectar asistentes de IA con herramientas y fuentes de datos, de modo que un mismo conector funcione en distintas apps de IA.
 gen-agents.c5.viz.steps.0	Tu sistema (CRM, archivos, BD)
 gen-agents.c5.viz.steps.1	Servidor MCP
+gen-agents.c5.viz.steps.2	Cualquier asistente de IA compatible con MCP
+gen-agents.c6.title	Sistemas multiagente
+gen-agents.c6.text	Algunos diseños reparten el trabajo entre agentes especializados (investigador, redactor, revisor) coordinados por un orquestador. Más agentes aportan capacidad, pero también coste y complejidad.
+gen-agents.c6.viz.root	Orquestador
+gen-agents.c6.viz.items.0	Agente investigador
+gen-agents.c6.viz.items.1	Agente redactor
+gen-agents.c6.viz.items.2	Agente revisor
+gen-agents.c7.title	Barreras de seguridad para agentes
+gen-agents.c7.text	Los agentes deberían tener acceso con el mínimo privilegio, límites de gasto, registros de cada acción y aprobación humana para pasos irreversibles como pagos, borrados o correos a clientes.
+gen-agents.c7.viz.items.0	Acceso con mínimo privilegio
+gen-agents.c7.viz.items.1	Aprobación de acciones irreversibles
+gen-agents.c7.viz.items.2	Límites de gasto y de frecuencia
+gen-agents.c7.viz.items.3	Registro completo de acciones
+gen-agents.c7.viz.items.4	Botón de parada sencillo
+gen-agents.c8.title	Riesgo de inyección de prompts
+gen-agents.c8.text	Un agente que lee correos o páginas web puede toparse con instrucciones ocultas como «reenvía todas las facturas a esta dirección». Las defensas incluyen aislar el contenido no fiable, limitar las herramientas y exigir confirmación.
+gen-agents.c8.viz.items.0.w	el agente obedece un texto de un correo
+gen-agents.c8.viz.items.0.r	tratar el texto externo como datos y confirmar acciones sensibles
+gen-agents.c9.title	Dónde funcionan hoy los agentes
+gen-agents.c9.text	Los agentes son más fiables en tareas con objetivos claros, buenas herramientas y resultados comprobables: programación, resúmenes de investigación, análisis de datos, incidencias de TI y flujos de back office.
+gen-agents.c9.viz.items.0	Desarrollo de software
+gen-agents.c9.viz.items.1	Investigación e informes
+gen-agents.c9.viz.items.2	Análisis de datos
+gen-agents.c9.viz.items.3	Incidencias de TI y RR. HH.
+gen-agents.c9.viz.items.4	Procesos de back office
+gen-evals.title	Evaluar la IA generativa
+gen-evals.summary	¿Cómo sabes si funciona bien?
+gen-evals.q0.q	¿Qué problema tiene juzgar un modelo con unos pocos ejemplos?
+gen-evals.q0.o0	Es demasiado lento
+gen-evals.q0.o1	Las impresiones de unos pocos casos pueden engañar mucho
+gen-evals.q0.o2	Cuesta demasiado
+gen-evals.q0.x	Hacen falta evaluaciones sistemáticas.
+gen-evals.q1.q	Antes de fiarte de un LLM como juez, deberías…
+gen-evals.q1.o0	Usar el modelo más grande
+gen-evals.q1.o1	Comprobar que coincide con las valoraciones humanas
+gen-evals.q1.o2	Desactivar los registros
+gen-evals.q1.x	Calibra al juez.
+gen-evals.q2.q	¿Por qué repetir las evaluaciones al actualizar un modelo?
+gen-evals.q2.o0	Lo exige la ley
+gen-evals.q2.o1	Para detectar regresiones en las que los resultados empeoraron
+gen-evals.q2.o2	Para gastar más tokens
+gen-evals.q2.x	Los modelos nuevos pueden cambiar de comportamiento.
+gen-evals.c0.title	Por qué importan las evaluaciones
+gen-evals.c0.text	Los resultados generativos varían y los modelos cambian. Sin una evaluación sistemática, dependes de impresiones sacadas de unos pocos ejemplos, que pueden engañar mucho.
+gen-evals.c0.viz.l.t	A ojo
+gen-evals.c0.viz.l.items.0	pocos ejemplos
+gen-evals.c0.viz.l.items.1	impresiones
+gen-evals.c0.viz.l.items.2	engañoso
+gen-evals.c0.viz.r.t	Evaluaciones
+gen-evals.c0.viz.r.items.0	muchos ejemplos reales
+gen-evals.c0.viz.r.items.1	puntuadas
+gen-evals.c0.viz.r.items.2	repetibles
+gen-evals.c1.title	Crea un conjunto de prueba
+gen-evals.c1.text	Reúne entradas reales de tu caso de uso, con respuestas esperadas o criterios claros. Incluye casos fáciles, difíciles y extremos. Con 50–200 ejemplos bien elegidos se llega muy lejos.
+gen-evals.c1.viz.items.0	Entradas reales de usuarios
+gen-evals.c1.viz.items.1	Respuestas esperadas o criterios
+gen-evals.c1.viz.items.2	Casos difíciles y extremos
+gen-evals.c1.viz.items.3	Ejemplos de fallos conocidos
+gen-evals.c1.viz.items.4	Separado de los prompts
+gen-evals.c2.title	Métricas exactas
+gen-evals.c2.text	En extracción y clasificación, compara los resultados con las respuestas correctas: exactitud, precisión, exhaustividad, coincidencia exacta de campos.
+gen-evals.c2.viz.items.0.a	extracción
+gen-evals.c2.viz.items.0.b	exactitud por campo
+gen-evals.c2.viz.items.1.a	clasificación
+gen-evals.c2.viz.items.1.b	precisión y exhaustividad
+gen-evals.c2.viz.items.2.a	salida estructurada
+gen-evals.c2.viz.items.2.b	validez del esquema
+gen-evals.c2.viz.items.3.a	código
+gen-evals.c2.viz.items.3.b	pruebas superadas
+gen-evals.c3.title	Un LLM como juez
+gen-evals.c3.text	Para texto abierto, otro modelo puede calificar los resultados según una rúbrica («¿Es fiel a la fuente? ¿El tono es el adecuado?»). Calibra antes al juez con valoraciones humanas.
+gen-evals.c3.viz.steps.0	Resultado + rúbrica
+gen-evals.c3.viz.steps.1	El modelo juez puntúa
+gen-evals.c3.viz.steps.2	Compara con las valoraciones humanas
+gen-evals.c3.viz.steps.3	Confía cuando coincidan
+gen-evals.c4.title	Revisión humana
+gen-evals.c4.text	Que expertos valoren una muestra de resultados sigue siendo el método de referencia para medir la calidad, sobre todo en ámbitos de alto riesgo. Usa rúbricas claras para que las valoraciones sean coherentes.
+gen-evals.c4.viz.items.0	Rúbrica clara
+gen-evals.c4.viz.items.1	Varios revisores
+gen-evals.c4.viz.items.2	Comparaciones a ciegas
+gen-evals.c4.viz.items.3	Mide el grado de acuerdo
+gen-evals.c4.viz.items.4	Aprovecha los resultados
+gen-evals.c5.title	Pruebas A/B
+gen-evals.c5.text	En producción, compara dos versiones (prompts o modelos) con tráfico real: valoraciones de usuarios, tareas completadas, ediciones necesarias, escalados.
+gen-evals.c5.viz.steps.0	Versión A frente a B
+gen-evals.c5.viz.steps.1	Divide a usuarios reales
+gen-evals.c5.viz.steps.2	Mide los resultados
+gen-evals.c5.viz.steps.3	Quédate con la ganadora
+gen-evals.c6.title	Pruebas de regresión
+gen-evals.c6.text	Cuando cambies un prompt o actualices un modelo, vuelve a ejecutar el conjunto de evaluación para detectar lo que haya empeorado. Trata los prompts como código con pruebas automáticas.
+gen-evals.c6.viz.steps.0	Cambia prompt o modelo
+gen-evals.c6.viz.steps.1	Ejecuta las evaluaciones
+gen-evals.c6.viz.steps.2	Compara puntuaciones
+gen-evals.c6.viz.steps.3	Publica solo si no empeora
+gen-evals.c7.title	Mide lo que importa
+gen-evals.c7.text	La exactitud por sí sola no basta: mide también la latencia, el coste por tarea, los problemas de seguridad, la satisfacción de los usuarios y la frecuencia con la que una persona debe corregir los resultados.
+gen-evals.c7.viz.items.0	Puntuación de calidad
+gen-evals.c7.viz.items.1	Latencia
+gen-evals.c7.viz.items.2	Coste por tarea
+gen-evals.c7.viz.items.3	Incidentes de seguridad
+gen-evals.c7.viz.items.4	Tasa de corrección humana
+gen-evals.c8.title	Benchmarks frente a tu tarea
+gen-evals.c8.text	Los benchmarks públicos (MMLU, pruebas de programación) comparan modelos en general, pero tu tarea puede ser distinta. Un modelo que gana benchmarks no siempre es el mejor para tus documentos y tus usuarios.
+gen-evals.c8.viz.l.t	Benchmarks públicos
+gen-evals.c8.viz.l.items.0	capacidad general
+gen-evals.c8.viz.l.items.1	fácil comparar
+gen-evals.c8.viz.l.items.2	pueden estar contaminados
+gen-evals.c8.viz.r.t	Tus evaluaciones
+gen-evals.c8.viz.r.items.0	tus datos
+gen-evals.c8.viz.r.items.1	tus criterios
+gen-evals.c8.viz.r.items.2	lo que importa de verdad
+gen-evals.c9.title	Supervisión en producción
+gen-evals.c9.text	Registra entradas y salidas (respetando la privacidad), revisa muestras, vigila la deriva y recoge la opinión de los usuarios (pulgar arriba/abajo) para ampliar tu conjunto de prueba.
+gen-evals.c9.viz.steps.0	Registra interacciones
+gen-evals.c9.viz.steps.1	Muestrea y revisa
+gen-evals.c9.viz.steps.2	Encuentra patrones de fallo
+gen-evals.c9.viz.steps.3	Añádelos a las pruebas
+gen-halluc.title	Alucinaciones y fundamentación
+gen-halluc.summary	Por qué los modelos se inventan cosas y cómo reducirlo.
+gen-halluc.q0.q	¿Por qué alucinan los LLM?
+gen-halluc.q0.o0	Son vagos
+gen-halluc.q0.o1	Generan texto plausible, no hechos verificados
+gen-halluc.q0.o2	Les falta electricidad
+gen-halluc.q0.x	Fluidez no es lo mismo que verdad.
+gen-halluc.q1.q	¿Qué instrucción reduce las alucinaciones al preguntar sobre documentos?
+gen-halluc.q1.o0	«Sé creativo»
+gen-halluc.q1.o1	«Responde solo a partir de los documentos; di si no está ahí»
+gen-halluc.q1.o2	«Sé breve»
+gen-halluc.q1.x	Fundamentación más permiso para decir «No lo sé».
+gen-halluc.q2.q	¿Cómo deberían hacerse los cálculos exactos?
+gen-halluc.q2.o0	Confiar en el modelo
+gen-halluc.q2.o1	Usar una herramienta de código o una calculadora
+gen-halluc.q2.o2	Preguntar dos veces
+gen-halluc.q2.x	Las herramientas son fiables para la aritmética.
+gen-halluc.c0.title	Qué es una alucinación
+gen-halluc.c0.text	Una alucinación es un resultado fluido y seguro de sí mismo, pero falso o sin respaldo: citas inventadas, cifras erróneas, cláusulas inexistentes. Ocurre porque el modelo genera texto plausible, no hechos verificados.
+gen-halluc.c0.viz.steps.0	Pregunta
+gen-halluc.c0.viz.steps.1	El modelo genera texto plausible
+gen-halluc.c0.viz.steps.2	No hay fuente con la que contrastar
+gen-halluc.c0.viz.steps.3	Respuesta segura pero falsa
+gen-halluc.c1.title	Cuándo es más probable
+gen-halluc.c1.text	Las alucinaciones aumentan con temas poco conocidos, cifras y fechas exactas, listas largas, peticiones de citas, hechos recientes posteriores a la fecha de corte y preguntas con premisas falsas.
+gen-halluc.c1.viz.items.0	Datos muy específicos
+gen-halluc.c1.viz.items.1	Cifras y fechas exactas
+gen-halluc.c1.viz.items.2	Citas y referencias
+gen-halluc.c1.viz.items.3	Hechos recientes
+gen-halluc.c1.viz.items.4	Premisas falsas en la pregunta
+gen-halluc.c2.title	Fundamentación
+gen-halluc.c2.text	Dale al modelo el material de origen e indícale que responda solo a partir de él. Las respuestas fundamentadas alucinan mucho menos y se pueden comprobar.
+gen-halluc.c2.viz.l.t	Sin fundamentar
+gen-halluc.c2.viz.l.items.0	responde de memoria
+gen-halluc.c2.viz.l.items.1	difícil de verificar
+gen-halluc.c2.viz.r.t	Fundamentada
+gen-halluc.c2.viz.r.items.0	responde con las fuentes dadas
+gen-halluc.c2.viz.r.items.1	comprobable
+gen-halluc.c3.title	Permite el «No lo sé»
+gen-halluc.c3.text	Dile explícitamente al modelo que puede decir que no lo sabe o que la respuesta no está en los documentos. Si no, puede sentirse obligado a producir algo.
+gen-halluc.c3.viz.items.0.w	«responde a la pregunta»
+gen-halluc.c3.viz.items.0.r	«responde solo con los documentos; si no está ahí, dilo»
+gen-halluc.c4.title	Citas y fragmentos literales
+gen-halluc.c4.text	Pide citas o fragmentos literales para cada afirmación. Luego verifica una muestra: los modelos también pueden inventar citas, así que comprueba que el texto citado existe de verdad.
+gen-halluc.c4.viz.items.0	Pide citas que lo respalden
+gen-halluc.c4.viz.items.1	Enlaza a las páginas fuente
+gen-halluc.c4.viz.items.2	Revisa citas al azar
+gen-halluc.c4.viz.items.3	Rechaza respuestas sin respaldo
+gen-halluc.c5.title	Herramientas para los datos
+gen-halluc.c5.text	Para cálculos, usa una herramienta de código o una calculadora. Para datos en vivo, usa la búsqueda o una API. Deja que el modelo coordine y explique, no que memorice.
+gen-halluc.c5.viz.items.0.a	aritmética
+gen-halluc.c5.viz.items.0.b	intérprete de código
+gen-halluc.c5.viz.items.1.a	precios actuales
+gen-halluc.c5.viz.items.1.b	API o búsqueda
+gen-halluc.c5.viz.items.2.a	datos de la empresa
+gen-halluc.c5.viz.items.2.b	consulta a base de datos
+gen-halluc.c5.viz.items.3.a	definiciones
+gen-halluc.c5.viz.items.3.b	documentos vía RAG
+gen-halluc.c6.title	Razonar ayuda, en parte
+gen-halluc.c6.text	El razonamiento paso a paso y la autocomprobación reducen algunos errores, sobre todo de lógica y matemáticas, pero no eliminan las alucinaciones sobre hechos.
+gen-halluc.c6.viz.l.t	Ayuda
+gen-halluc.c6.viz.l.items.0	lógica
+gen-halluc.c6.viz.l.items.1	matemáticas
+gen-halluc.c6.viz.l.items.2	tareas de varios pasos
+gen-halluc.c6.viz.r.t	No arregla
+gen-halluc.c6.viz.r.items.0	falta de conocimiento
+gen-halluc.c6.viz.r.items.1	fuentes falsas
+gen-halluc.c7.title	Diseña para verificar
+gen-halluc.c7.text	En usos de alto riesgo, diseña el flujo de trabajo para que una persona compruebe los datos clave antes de usarlos: muestra los valores extraídos junto a la fuente y señala los de baja confianza.
+gen-halluc.c7.viz.steps.0	La IA extrae valores
+gen-halluc.c7.viz.steps.1	Se muestran junto al texto fuente
+gen-halluc.c7.viz.steps.2	Una persona confirma
+gen-halluc.c7.viz.steps.3	Se guardan los datos
+gen-halluc.c8.title	Consecuencias reales
+gen-halluc.c8.text	En EE. UU. y otros países se ha sancionado a abogados por presentar escritos judiciales con citas de casos inventadas por la IA. Compruébalo siempre antes de basarte en resultados de IA en tu trabajo.
+gen-halluc.c8.viz.items.0.w	citar casos sugeridos por la IA
+gen-halluc.c8.viz.items.0.r	verificar cada caso en una base de datos oficial
+gen-halluc.c9.title	Las alucinaciones mejoran, pero no están resueltas
+gen-halluc.c9.text	Los modelos más nuevos alucinan menos, y la fundamentación y las herramientas lo reducen aún más, pero ningún modelo actual está libre de ello. Trata los resultados de la IA como un buen borrador, no como un hecho verificado.
+gen-halluc.c9.viz.items.0	Riesgo mínimo: fuentes + revisión humana
+gen-halluc.c9.viz.items.1	Menor: basado en fuentes
+gen-halluc.c9.viz.items.2	Máximo: datos específicos sin fuentes
+gen-context.title	Contexto, memoria y documentos largos
+gen-context.summary	Qué puede ver el modelo y durante cuánto tiempo.
+gen-context.q0.q	¿Dónde deberías poner la pregunta clave en un prompt largo?
+gen-context.q0.o0	Solo al principio del todo
+gen-context.q0.o1	Cerca del final, después de los documentos largos
+gen-context.q0.o2	En ningún sitio
+gen-context.q0.x	Los modelos prestan buena atención al final.
+gen-context.q1.q	¿Qué ahorra la caché de prompts?
+gen-context.q1.o0	Espacio en disco
+gen-context.q1.o1	Coste y latencia en prefijos largos que se repiten
+gen-context.q1.o2	Tiempo de entrenamiento
+gen-context.q1.x	Los prefijos reutilizados se guardan en caché.
+gen-context.q2.q	¿Cómo puedes resumir un documento demasiado largo para la ventana de contexto?
+gen-context.q2.o0	No se puede
+gen-context.q2.o1	Resume las secciones y luego combina los resúmenes
+gen-context.q2.o2	Con una letra más grande
+gen-context.q2.x	Resumen tipo map-reduce.
+gen-context.c0.title	La ventana de contexto
+gen-context.c0.text	Todo lo que el modelo tiene en cuenta a la vez (prompt de sistema, conversación, documentos, resultados de herramientas) debe caber en su ventana de contexto, medida en tokens. Las ventanas actuales van de decenas de miles a más de un millón de tokens.
+gen-context.c0.viz.items.0	Instrucciones de sistema
+gen-context.c0.viz.items.1	Historial de la conversación
+gen-context.c0.viz.items.2	Documentos y resultados de herramientas
+gen-context.c0.viz.items.3	La nueva pregunta
+gen-context.c1.title	Más grande no siempre es mejor
+gen-context.c1.text	Los contextos muy largos cuestan más, tardan más y los modelos pueden pasar por alto detalles enterrados en el medio. Recuperar solo las partes relevantes suele dar respuestas mejores y más baratas.
+gen-context.c1.viz.l.t	Meterlo todo
+gen-context.c1.viz.l.items.0	sencillo
+gen-context.c1.viz.l.items.1	caro
+gen-context.c1.viz.l.items.2	se pierden detalles
+gen-context.c1.viz.r.t	Recuperar lo relevante
+gen-context.c1.viz.r.items.0	más barato
+gen-context.c1.viz.r.items.1	centrado
+gen-context.c1.viz.r.items.2	requiere buena búsqueda
+gen-context.c2.title	Perdido en el medio
+gen-context.c2.text	Varios estudios observaron que los modelos recuerdan mejor la información del principio y del final de los contextos largos que la del medio. Pon las instrucciones clave y la pregunta cerca del final, después de los documentos largos.
+gen-context.c2.viz.steps.0	Primero los documentos largos
+gen-context.c2.viz.steps.1	Instrucciones clave
+gen-context.c2.viz.steps.2	La pregunta al final
+gen-context.c3.title	Memoria de la conversación
+gen-context.c3.text	Las apps de chat reenvían los mensajes anteriores al modelo en cada turno. Cuando un chat se alarga mucho, las partes antiguas se resumen o se descartan, así que los primeros detalles pueden olvidarse.
+gen-context.c3.viz.steps.0	Turno 1
+gen-context.c3.viz.steps.1	El turno 2 reenvía el 1
+gen-context.c3.viz.steps.3	Turnos antiguos resumidos para caber
+gen-context.c4.title	Memoria a largo plazo
+gen-context.c4.text	Algunos asistentes guardan datos entre conversaciones, como tus preferencias o proyectos, y los recuperan más tarde. Deberías poder ver y borrar lo que recuerdan.
+gen-context.c4.viz.items.0	Preferencias guardadas
+gen-context.c4.viz.items.1	Contexto de proyectos
+gen-context.c4.viz.items.2	Se recupera cuando es relevante
+gen-context.c4.viz.items.3	Se puede ver y borrar
+gen-context.c5.title	Caché de prompts
+gen-context.c5.text	Si muchas peticiones comparten el mismo prefijo largo (instrucciones, un documento grande), los proveedores pueden guardarlo en caché, lo que reduce el coste y la latencia de las llamadas repetidas.
+gen-context.c5.viz.unit	coste relativo de un prompt largo
+gen-context.c5.viz.items.0.l	Sin caché
+gen-context.c5.viz.items.1.l	Con prefijo en caché
+gen-context.c6.title	Resumir y map-reduce
+gen-context.c6.text	Para documentos demasiado largos para una sola llamada, resume las secciones por separado y luego combina los resúmenes: es el patrón «map-reduce».
+gen-context.c6.viz.steps.0	Divide un informe de 500 páginas
+gen-context.c6.viz.steps.1	Resume cada capítulo
+gen-context.c6.viz.steps.2	Combina los resúmenes
+gen-context.c6.viz.steps.3	Visión general final
+gen-context.c7.title	Ingeniería de contexto
+gen-context.c7.text	Crear buenas apps de IA consiste en gran parte en decidir qué entra en el contexto: qué instrucciones, qué pasajes recuperados, qué resultados de herramientas, en qué orden y formato.
+gen-context.c7.viz.items.0	Instrucciones claras
+gen-context.c7.viz.items.1	Pasajes recuperados relevantes
+gen-context.c7.viz.items.2	Conversación reciente
+gen-context.c7.viz.items.3	Salida de herramientas
+gen-context.c7.viz.items.4	Formato de salida
+gen-context.c8.title	Presupuesto de tokens
+gen-context.c8.text	Cada token de entrada cuesta dinero y tiempo. Elimina el texto de relleno, quita duplicados de los pasajes recuperados y mantén las instrucciones concisas sin perder claridad.
+gen-context.c8.viz.items.0.w	pegar el manual entero de 200 páginas cada vez
+gen-context.c8.viz.items.0.r	recuperar las 3 secciones relevantes

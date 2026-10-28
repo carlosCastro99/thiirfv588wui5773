@@ -797,3 +797,243 @@ tr-wireless.c5.viz.l.items.1	sencillo
 tr-wireless.c5.viz.l.items.2	sin red
 tr-wireless.c5.viz.r.t	LoRaWAN
 tr-wireless.c5.viz.r.items.0	gateways y servidores
+tr-wireless.c5.viz.r.items.1	muchos dispositivos
+tr-wireless.c5.viz.r.items.2	redes compartidas
+tr-wireless.c6.title	Frecuencias en Europa
+tr-wireless.c6.text	En Europa, LoRa usa la banda libre de 868 MHz, con límites de ciclo de trabajo (a menudo del 1 %), así que cada dispositivo solo puede transmitir una pequeña parte del tiempo.
+tr-wireless.c6.viz.items.0.v	868 MHz
+tr-wireless.c6.viz.items.0.l	banda LoRa de la UE
+tr-wireless.c6.viz.items.1.l	límite típico de ciclo de trabajo
+tr-wireless.c6.viz.items.2.v	25 mW
+tr-wireless.c6.viz.items.2.l	potencia máx. típica
+tr-wireless.c7.title	La antena importa
+tr-wireless.c7.text	Una buena antena, montada en alto y lejos del metal, a menudo duplica el alcance de forma más barata que subir la potencia. Nunca transmitas sin una antena conectada: puede dañar la radio.
+tr-wireless.c7.viz.items.0	Móntala en alto
+tr-wireless.c7.viz.items.1	Lejos del metal
+tr-wireless.c7.viz.items.2	Ajusta la banda de frecuencia
+tr-wireless.c7.viz.items.3	Nunca transmitas sin antena
+tr-wireless.c8.title	Línea de visión
+tr-wireless.c8.text	A estas frecuencias, las ondas de radio quedan bloqueadas por colinas, edificios y agua. En el campo, subir la antena unos metros puede convertir la falta de señal en un enlace sólido.
+tr-wireless.c8.viz.steps.0	Antena en un muro bajo
+tr-wireless.c8.viz.steps.1	Una colina bloquea el camino
+tr-wireless.c8.viz.steps.2	Sube la antena a un mástil
+tr-wireless.c8.viz.steps.3	Línea de visión despejada
+tr-wireless.c9.title	IoT celular
+tr-wireless.c9.text	Donde no hay wifi ni gateway, los módulos LTE-M y NB-IoT envían pequeñas cantidades de datos por la red móvil con bajo consumo, a cambio de una cuota mensual de SIM.
+tr-wireless.c9.viz.items.0.a	LTE-M
+tr-wireless.c9.viz.items.0.b	móvil, datos moderados
+tr-wireless.c9.viz.items.1.a	NB-IoT
+tr-wireless.c9.viz.items.1.b	cobertura profunda, datos mínimos
+tr-wireless.c9.viz.items.2.a	SIM
+tr-wireless.c9.viz.items.2.b	coste mensual
+tr-esphome.title	ESP32 y ESPHome
+tr-esphome.summary	Crear dispositivos domóticos sin escribir mucho código.
+tr-esphome.q0.q	¿Qué usa ESPHome para describir un dispositivo?
+tr-esphome.q0.o0	Una hoja de cálculo
+tr-esphome.q0.o1	Un archivo de configuración YAML
+tr-esphome.q0.o2	Una fotografía
+tr-esphome.q0.x	Declaras los componentes en YAML.
+tr-esphome.q1.q	¿Por qué evitar los pines ADC2 para lecturas analógicas en un ESP32?
+tr-esphome.q1.o0	Son solo digitales
+tr-esphome.q1.o1	No se pueden leer mientras el wifi está activo
+tr-esphome.q1.o2	Son de 5 V
+tr-esphome.q1.x	El wifi usa el ADC2 internamente.
+tr-esphome.q2.q	¿Qué aporta el deep sleep a un dispositivo con batería?
+tr-esphome.q2.o0	Wifi más rápido
+tr-esphome.q2.o1	Consumo de microamperios entre lecturas
+tr-esphome.q2.o2	Más pines GPIO
+tr-esphome.q2.x	El chip se apaga casi por completo.
+tr-esphome.c0.title	El ESP32
+tr-esphome.c0.text	Un microcontrolador barato con wifi y Bluetooth integrados, dos núcleos de hasta 240 MHz y decenas de pines GPIO. Es el corazón de innumerables dispositivos domóticos caseros.
+tr-esphome.c0.viz.items.0.v	240 MHz
+tr-esphome.c0.viz.items.0.l	CPU de doble núcleo
+tr-esphome.c0.viz.items.1.v	Wifi + BLE
+tr-esphome.c0.viz.items.1.l	integrados
+tr-esphome.c0.viz.items.2.l	placa típica
+tr-esphome.c1.title	ESPHome en una idea
+tr-esphome.c1.text	En lugar de escribir código C++, describes tu dispositivo en un archivo YAML: qué placa, qué sensores y en qué pines. ESPHome genera el firmware y lo conecta a Home Assistant.
+tr-esphome.c1.viz.steps.0	Archivo YAML
+tr-esphome.c1.viz.steps.1	ESPHome compila
+tr-esphome.c1.viz.steps.2	Grabas la placa
+tr-esphome.c1.viz.steps.3	Aparece en Home Assistant
+tr-esphome.c2.title	Un sensor de temperatura en YAML
+tr-esphome.c2.text	Unas pocas líneas describen la placa, el wifi y un sensor: platform dht, pin GPIO4, name "Temperatura del salón", intervalo de actualización 60 s. Ese es todo el programa.
+tr-esphome.c2.viz.items.0	esphome: nombre
+tr-esphome.c2.viz.items.1	esp32: placa
+tr-esphome.c2.viz.items.2	wifi: credenciales
+tr-esphome.c2.viz.items.3	sensor: plataforma y pin
+tr-esphome.c2.viz.items.4	update_interval: 60s
+tr-esphome.c3.title	Actualizaciones inalámbricas (OTA)
+tr-esphome.c3.text	Tras la primera grabación por USB, ESPHome actualiza los dispositivos por wifi. Cambia el YAML, pulsa instalar y el dispositivo del techo se actualiza solo.
+tr-esphome.c3.viz.steps.0	Edita el YAML
+tr-esphome.c3.viz.steps.1	Compilar
+tr-esphome.c3.viz.steps.2	Subir por wifi
+tr-esphome.c3.viz.steps.3	Se reinicia con el nuevo firmware
+tr-esphome.c4.title	API nativa
+tr-esphome.c4.text	Los dispositivos ESPHome se comunican con Home Assistant mediante una API nativa rápida y cifrada. Las entidades aparecen automáticamente, y las automatizaciones pueden ejecutarse en el propio dispositivo aunque Home Assistant esté caído.
+tr-esphome.c4.viz.l.t	API nativa
+tr-esphome.c4.viz.l.items.0	autodescubrimiento
+tr-esphome.c4.viz.l.items.1	cifrada
+tr-esphome.c4.viz.l.items.2	baja latencia
+tr-esphome.c4.viz.r.t	MQTT
+tr-esphome.c4.viz.r.items.0	funciona con cualquier broker
+tr-esphome.c4.viz.r.items.1	más configuración
+tr-esphome.c5.title	Dispositivos UART: el ejemplo del aire acondicionado
+tr-esphome.c5.text	ESPHome puede comunicarse con electrodomésticos por UART. Proyectos como MitsubishiCN105ESPHome conectan un ESP32 al puerto CN105 de un aire acondicionado Mitsubishi para controlarlo en local, sin la nube.
+tr-esphome.c5.viz.steps.0	ESP32
+tr-esphome.c5.viz.steps.1	UART al puerto CN105
+tr-esphome.c5.viz.steps.2	Componente ESPHome
+tr-esphome.c5.viz.steps.3	Control local en Home Assistant
+tr-esphome.c6.title	Elige bien los pines
+tr-esphome.c6.text	Algunos pines del ESP32 son solo de entrada (34–39), otros afectan al arranque (0, 2, 12, 15), y los pines ADC2 no sirven para lecturas analógicas con el wifi activado. Consulta un diagrama de pines antes de cablear.
+tr-esphome.c6.viz.items.0.w	sensor analógico en un pin ADC2
+tr-esphome.c6.viz.items.0.r	usa un pin ADC1 (32–39)
+tr-esphome.c6.viz.items.1.w	un botón en GPIO12 impide el arranque
+tr-esphome.c6.viz.items.1.r	muévelo a un pin seguro
+tr-esphome.c7.title	Deep sleep en ESPHome
+tr-esphome.c7.text	Los dispositivos con batería pueden despertarse, tomar una lectura, enviarla y volver al sueño profundo durante minutos. Un ESP32 en deep sleep consume microamperios en lugar de decenas de miliamperios.
+tr-esphome.c7.viz.steps.0	Despertar
+tr-esphome.c7.viz.steps.1	Leer sensor
+tr-esphome.c7.viz.steps.2	Enviar por wifi
+tr-esphome.c7.viz.steps.3	Deep sleep 10 min
+tr-esphome.c8.title	Variantes del ESP32
+tr-esphome.c8.text	La familia no deja de crecer: el ESP32-S3 añade instrucciones de IA y USB, el ESP32-C3 es una versión RISC-V de bajo coste y el ESP32-C6 añade wifi 6 y radio Thread/Zigbee.
+tr-esphome.c8.viz.items.0.a	ESP32
+tr-esphome.c8.viz.items.0.b	doble núcleo clásico
+tr-esphome.c8.viz.items.1.a	S3
+tr-esphome.c8.viz.items.1.b	USB, cámara, IA
+tr-esphome.c8.viz.items.2.a	C3
+tr-esphome.c8.viz.items.2.b	RISC-V barato
+tr-esphome.c8.viz.items.3.a	C6
+tr-esphome.c8.viz.items.3.b	Wifi 6, Thread, Zigbee
+tr-esphome.c9.title	Local y privado
+tr-esphome.c9.text	Los dispositivos ESPHome funcionan íntegramente en tu red, sin cuenta en la nube. Si se cae internet, tus sensores e interruptores siguen funcionando.
+tr-esphome.c9.viz.items.0	Sin depender de la nube
+tr-esphome.c9.viz.items.1	Los datos se quedan en casa
+tr-esphome.c9.viz.items.2	Funciona sin internet
+tr-esphome.c9.viz.items.3	Firmware de código abierto
+tr-proto.title	De la protoboard a la PCB
+tr-proto.summary	Prototipos, soldadura y cómo hacerlo permanente.
+tr-proto.q0.q	¿Dónde debes aportar el estaño?
+tr-proto.q0.o0	En la punta del soldador
+tr-proto.q0.o1	En la unión ya caliente
+tr-proto.q0.o2	Antes de calentar nada
+tr-proto.q0.x	La unión debe estar lo bastante caliente para fundirlo.
+tr-proto.q1.q	Una soldadura mate y con grumos suele ser…
+tr-proto.q1.o0	Perfecta
+tr-proto.q1.o1	Una soldadura fría
+tr-proto.q1.o2	Un puente
+tr-proto.q1.x	No se calentó lo suficiente.
+tr-proto.q2.q	¿Qué herramienta gratuita sirve para diseñar PCB?
+tr-proto.q2.o0	Excel
+tr-proto.q2.o1	KiCad
+tr-proto.q2.o2	Photoshop
+tr-proto.q2.x	KiCad se encarga del esquema y del diseño de la placa.
+tr-proto.c0.title	Protoboards
+tr-proto.c0.text	Una protoboard te permite montar circuitos sin soldar. Los orificios de cada fila corta de cinco están conectados; los raíles largos de los laterales llevan la alimentación y la masa.
+tr-proto.c0.viz.items.0.a	filas cortas
+tr-proto.c0.viz.items.0.b	5 orificios unidos
+tr-proto.c0.viz.items.1.a	raíles laterales
+tr-proto.c0.viz.items.1.b	alimentación y masa
+tr-proto.c0.viz.items.2.a	canal central
+tr-proto.c0.viz.items.2.b	para chips
+tr-proto.c1.title	Cables de puente y falsos contactos
+tr-proto.c1.text	Las protoboards son geniales para probar, pero los contactos se aflojan y añaden resistencia. Si un circuito se comporta de forma extraña, vuelve a meter bien los cables antes de reescribir tu código.
+tr-proto.c1.viz.items.0	Comprueba que cada cable esté bien metido
+tr-proto.c1.viz.items.1	Usa cables cortos
+tr-proto.c1.viz.items.2	Usa los raíles para alimentar
+tr-proto.c1.viz.items.3	No pases corrientes altas
+tr-proto.c2.title	Nociones de soldadura
+tr-proto.c2.text	Calienta la unión (pad y cable a la vez) con el soldador y luego aporta estaño a la unión, no al soldador. Una buena soldadura es brillante y tiene forma de pequeño volcán.
+tr-proto.c2.viz.steps.0	Punta limpia
+tr-proto.c2.viz.steps.1	Calienta pad y patilla juntos
+tr-proto.c2.viz.steps.2	Aporta estaño a la unión
+tr-proto.c2.viz.steps.3	Retira el estaño y luego el soldador
+tr-proto.c3.title	Temperatura del soldador
+tr-proto.c3.text	Para el estaño sin plomo habitual, unos 330–370 °C funcionan bien; el estaño con plomo funde a menos temperatura. Demasiado frío da soldaduras mates y granulosas; demasiado caliente quema los pads y el flux.
+tr-proto.c3.viz.unit	°C
+tr-proto.c3.viz.items.0.l	estaño con plomo
+tr-proto.c3.viz.items.1.l	sin plomo
+tr-proto.c3.viz.items.2.l	excesiva
+tr-proto.c4.title	Soldaduras defectuosas
+tr-proto.c4.text	Una soldadura fría se ve mate y con grumos, y puede agrietarse. Un puente une dos pads por accidente. Con muy poco estaño, la unión queda débil. La malla desoldadora o un desoldador de succión arreglan la mayoría de errores.
+tr-proto.c4.viz.items.0.a	soldadura fría
+tr-proto.c4.viz.items.0.b	mate, con grumos
+tr-proto.c4.viz.items.1.a	puente
+tr-proto.c4.viz.items.1.b	dos pads en corto
+tr-proto.c4.viz.items.2.a	soldadura seca
+tr-proto.c4.viz.items.2.b	falta estaño
+tr-proto.c4.viz.items.3.a	arreglo
+tr-proto.c4.viz.items.3.b	malla o succión
+tr-proto.c5.title	Placa perforada
+tr-proto.c5.text	La placa perforada (o de tiras) hace permanente un proyecto sin diseñar una PCB: los componentes se sueldan en una cuadrícula y se conectan con cable o con tiras de cobre.
+tr-proto.c5.viz.l.t	Protoboard
+tr-proto.c5.viz.l.items.0	sin soldar
+tr-proto.c5.viz.l.items.1	cambios rápidos
+tr-proto.c5.viz.l.items.2	poco fiable a la larga
+tr-proto.c5.viz.r.t	Placa perforada
+tr-proto.c5.viz.r.items.0	soldada
+tr-proto.c5.viz.r.items.1	permanente
+tr-proto.c5.viz.r.items.2	montajes únicos
+tr-proto.c6.title	Diseñar una PCB
+tr-proto.c6.text	Herramientas gratuitas como KiCad te permiten dibujar el esquema y después el diseño de la placa. Sube los archivos a un fabricante de PCB y las placas llegan en una semana más o menos por unos pocos euros.
+tr-proto.c6.viz.steps.0	Esquema en KiCad
+tr-proto.c6.viz.steps.1	Diseño de la placa
+tr-proto.c6.viz.steps.2	Archivos Gerber
+tr-proto.c6.viz.steps.3	PCB fabricada
+tr-proto.c7.title	Componentes de montaje superficial
+tr-proto.c7.text	La mayoría de los componentes modernos son de montaje superficial (SMD): diminutos y soldados sobre pads en lugar de atravesar orificios. Tamaños como 0805 se pueden soldar a mano; los más pequeños requieren aire caliente o un horno de reflujo.
+tr-proto.c7.viz.unit	tamaño (mm, longitud)
+tr-proto.c8.title	Cajas
+tr-proto.c8.text	Los proyectos necesitan una caja: cajas con grado IP para exteriores, carcasas impresas en 3D para ajustes a medida. Prevé prensaestopas, ventilación y la colocación de la antena fuera de las cajas metálicas.
+tr-proto.c8.viz.items.0	IP65+ para exteriores
+tr-proto.c8.viz.items.1	Prensaestopas
+tr-proto.c8.viz.items.2	Ventilación para el calor
+tr-proto.c8.viz.items.3	Antena fuera del metal
+tr-proto.c9.title	Seguridad al soldar
+tr-proto.c9.text	Usa un soporte para el soldador, ventila o usa un extractor de humos (los humos del flux irritan los pulmones), lávate las manos después de manipular estaño y protégete los ojos al cortar patillas.
+tr-proto.c9.viz.items.0	Soldador en su soporte
+tr-proto.c9.viz.items.1	Extractor o ventana abierta
+tr-proto.c9.viz.items.2	Lávate las manos
+tr-proto.c9.viz.items.3	Gafas al cortar patillas
+tr-logic.title	Lógica y binario
+tr-logic.summary	Bits, puertas lógicas y cómo deciden los chips.
+tr-logic.q0.q	¿Cuánto es el binario 1101 en decimal?
+tr-logic.q0.o0	11
+tr-logic.q0.o1	13
+tr-logic.q0.o2	1 101
+tr-logic.q0.x	8 + 4 + 0 + 1 = 13.
+tr-logic.q1.q	Una puerta AND con entradas 1 y 0 da como salida…
+tr-logic.q1.o0	1
+tr-logic.q1.o1	0
+tr-logic.q1.x	AND necesita todas las entradas a 1.
+tr-logic.q2.q	0xFF en decimal es…
+tr-logic.q2.o0	15
+tr-logic.q2.o1	255
+tr-logic.q2.o2	256
+tr-logic.q2.x	Dos F hexadecimales son ocho bits a 1 = 255.
+tr-logic.c0.title	Bits
+tr-logic.c0.text	La electrónica digital lo representa todo con bits: 0 o 1, tensión baja o alta. Ocho bits forman un byte, que puede contener 256 valores distintos.
+tr-logic.c0.viz.items.0.v	1 bit
+tr-logic.c0.viz.items.0.l	0 o 1
+tr-logic.c0.viz.items.1.v	8 bits
+tr-logic.c0.viz.items.1.l	1 byte
+tr-logic.c0.viz.items.2.l	valores en un byte
+tr-logic.c1.title	Números binarios
+tr-logic.c1.text	Cada posición binaria vale el doble que la de su derecha: 1, 2, 4, 8, 16… El número 1011 es 8 + 0 + 2 + 1 = 11.
+tr-logic.c1.viz.items.0.m	posición del 8
+tr-logic.c1.viz.items.1.m	sin cuatros
+tr-logic.c1.viz.items.2.m	posición del 2
+tr-logic.c1.viz.items.3.m	posición del 1
+tr-logic.c2.title	Hexadecimal
+tr-logic.c2.text	El hexadecimal agrupa cuatro bits en una cifra, 0–9 y luego A–F. Un byte son exactamente dos cifras hexadecimales: 0xFF = 255. Las direcciones y los colores (#FF8800) usan hexadecimal.
+tr-logic.c2.viz.items.0.a	0x0
+tr-logic.c2.viz.items.1.a	0x9
+tr-logic.c2.viz.items.2.a	0xA
+tr-logic.c2.viz.items.3.a	0xF
+tr-logic.c2.viz.items.4.a	0xFF
+tr-logic.c3.title	AND, OR, NOT
+tr-logic.c3.text	Las puertas básicas: AND da 1 solo si todas las entradas son 1; OR da 1 si alguna entrada es 1; NOT invierte la entrada.
+tr-logic.c3.viz.l.t	AND
+tr-logic.c3.viz.l.items.0	las dos deben ser 1
+tr-logic.c3.viz.l.items.1	puerta abierta Y alarma activada → sirena

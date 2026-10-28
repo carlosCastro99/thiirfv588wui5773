@@ -1,0 +1,250 @@
+P.title	Physique
+P.blurb	L'énergie, la chaleur et les ondes dans la vie quotidienne.
+ph-energy.title	Énergie et chaleur
+ph-energy.summary	Où va l'énergie, comment circule la chaleur et pourquoi les pompes à chaleur battent les radiateurs.
+ph-energy.q0.q	Par quel mode la chaleur du Soleil vous parvient-elle principalement ?
+ph-energy.q0.o0	Conduction
+ph-energy.q0.o1	Convection
+ph-energy.q0.o2	Rayonnement
+ph-energy.q0.x	L'espace est presque vide : seul le rayonnement peut le traverser.
+ph-energy.q1.q	Une pompe à chaleur de COP 3 consomme 2 kWh d'électricité. Quelle chaleur fournit-elle ?
+ph-energy.q1.o0	0,67 kWh
+ph-energy.q1.o1	2 kWh
+ph-energy.q1.o2	6 kWh
+ph-energy.q1.x	Chaleur produite = COP × électricité consommée = 3 × 2 = 6 kWh.
+ph-energy.q2.q	Chauffer 2 kg d'eau de 10 °C demande environ…
+ph-energy.q2.o0	84 kJ
+ph-energy.q2.o1	8,4 kJ
+ph-energy.q2.o2	840 kJ
+ph-energy.q2.x	Q = 2 × 4186 × 10 ≈ 83,7 kJ.
+ph-energy.q3.q	Pourquoi la glace flotte-t-elle ?
+ph-energy.q3.o0	Elle est plus froide
+ph-energy.q3.o1	L'eau se dilate en gelant, donc la glace est moins dense
+ph-energy.q3.o2	À cause des bulles d'air uniquement
+ph-energy.q3.x	La glace est environ 9 % moins dense que l'eau.
+ph-energy.q4.q	Comment la transpiration vous rafraîchit-elle ?
+ph-energy.q4.o0	L'eau est froide
+ph-energy.q4.o1	L'évaporation emporte de l'énergie loin de la peau
+ph-energy.q4.o2	Le sel absorbe la chaleur
+ph-energy.q4.x	Les molécules les plus rapides s'échappent et emportent la chaleur.
+ph-energy.c0.title	L'énergie change de forme
+ph-energy.c0.text	L'énergie n'est jamais créée ni détruite, seulement convertie. L'énergie chimique d'une pile devient de l'énergie électrique, qu'une ampoule transforme en lumière et en chaleur.\n\nLe rendement est la part utile. Une ancienne ampoule à filament transformait environ 5 % en lumière ; une LED fait plusieurs fois mieux, donc elle chauffe moins pour la même luminosité.
+ph-energy.c0.sketch.0	chimique
+ph-energy.c0.sketch.1	électrique
+ph-energy.c0.sketch.2	lumière
+ph-energy.c0.sketch.3	chaleur
+ph-energy.c0.sketch.4	total entrant = total sortant
+ph-energy.c1.title	Trois façons de transmettre la chaleur
+ph-energy.c1.text	Conduction : la chaleur traverse la matière en contact, du brûleur jusqu'au fond de la casserole.\nConvection : le fluide chaud monte et le fluide froid descend, formant des boucles qui brassent l'eau.\nRayonnement : la lumière infrarouge traverse le vide sans aucune matière, comme la chaleur que l'on sent près d'un feu.
+ph-energy.c1.sketch.0	conduction
+ph-energy.c1.sketch.1	convection
+ph-energy.c1.sketch.2	rayonnement
+ph-energy.c2.title	Les pompes à chaleur déplacent la chaleur
+ph-energy.c2.text	Une pompe à chaleur ne fabrique pas de chaleur : elle la déplace. Un fluide frigorigène absorbe la chaleur de l'air extérieur (même l'air froid en contient), le compresseur le comprime pour le réchauffer, et il restitue cette chaleur à l'intérieur.\n\nComme l'essentiel de la chaleur vient de l'extérieur, 1 kWh d'électricité peut fournir 3 à 4 kWh de chaleur. Ce rapport est le COP.
+ph-energy.c2.sketch.0	compresseur
+ph-energy.c2.sketch.1	dehors : absorbe
+ph-energy.c2.sketch.2	dedans : restitue
+ph-energy.c2.sketch.3	1 kWh entrant
+ph-energy.c2.sketch.4	3–4 kWh de chaleur
+ph-energy.c3.title	Capacité thermique massique
+ph-energy.c3.text	L'énergie nécessaire pour chauffer un corps est égale à la masse × la capacité thermique massique × l'élévation de température. Celle de l'eau est élevée, environ 4186 J par kg et par °C : c'est pourquoi l'eau met du temps à bouillir et stocke si bien la chaleur.
+ph-energy.c3.formula	Q = m × c × ΔT
+ph-energy.c3.example.0	1 L d'eau de 20 à 100 °C
+ph-energy.c3.example.1	1 × 4186 × 80 = 335 kJ
+ph-energy.c3.example.2	≈ 0,093 kWh, environ 2 centimes
+ph-energy.c3.sketch.0	1 L d'eau
+ph-energy.c3.sketch.1	20 → 100 °C
+ph-energy.c3.sketch.2	Q = 1 × 4186 × 80 ≈ 335 kJ
+ph-energy.c4.title	Les formes d'énergie
+ph-energy.c4.text	L'énergie prend de nombreuses formes : cinétique (mouvement), potentielle (hauteur, ressorts), thermique (chaleur), chimique (carburant, aliments), électrique, rayonnante (lumière) et nucléaire. La physique suit ses transformations de l'une à l'autre.
+ph-energy.c4.viz.root	Énergie
+ph-energy.c4.viz.items.0	Cinétique et potentielle
+ph-energy.c4.viz.items.1	Thermique
+ph-energy.c4.viz.items.2	Chimique
+ph-energy.c4.viz.items.3	Électrique et rayonnante
+ph-energy.c4.viz.items.4	Nucléaire
+ph-energy.c5.title	L'énergie des aliments
+ph-energy.c5.text	L'énergie des aliments se compte en kilocalories (kcal), indiquées sur les étiquettes sous le nom de « Calories ». Une kcal vaut environ 4,2 kJ. Une alimentation de 2 000 kcal par jour représente environ 2,3 kWh, soit à peu près une ampoule de 100 W allumée toute la journée.
+ph-energy.c5.viz.f	1 kcal ≈ 4,184 kJ
+ph-energy.c5.viz.items.0.s	2 000 kcal
+ph-energy.c5.viz.items.0.m	≈ 8,4 MJ
+ph-energy.c5.viz.items.1.s	8,4 MJ
+ph-energy.c5.viz.items.1.m	≈ 2,3 kWh
+ph-energy.c5.viz.items.2.s	puissance moyenne du corps
+ph-energy.c5.viz.items.2.m	≈ 100 W
+ph-energy.c6.title	La dilatation thermique au quotidien
+ph-energy.c6.text	La plupart des matériaux se dilatent quand on les chauffe : les rails ont des espaces entre eux, les lignes électriques s'affaissent en été, un couvercle de bocal coincé se desserre sous l'eau chaude. L'eau est singulière : elle se dilate en gelant, ce qui explique que la glace flotte et que les canalisations éclatent.
+ph-energy.c6.viz.items.0	Rails et ponts ont besoin de jeu
+ph-energy.c6.viz.items.1	Les lignes s'affaissent en été
+ph-energy.c6.viz.items.2	L'eau chaude desserre les couvercles
+ph-energy.c6.viz.items.3	L'eau qui gèle fait éclater les tuyaux
+ph-energy.c7.title	L'isolation et la bouteille Thermos
+ph-energy.c7.text	Une bouteille isotherme bloque les trois modes de transfert de chaleur : le vide arrête la conduction et la convection, et les parois argentées réfléchissent le rayonnement. C'est pourquoi elle garde le café chaud ou les boissons fraîches pendant des heures.
+ph-energy.c7.viz.items.0.a	vide
+ph-energy.c7.viz.items.0.b	ni conduction ni convection
+ph-energy.c7.viz.items.1.a	paroi argentée
+ph-energy.c7.viz.items.1.b	réfléchit le rayonnement
+ph-energy.c7.viz.items.2.a	bouchon
+ph-energy.c7.viz.items.2.b	bloque l'évaporation
+ph-energy.c8.title	L'évaporation rafraîchit
+ph-energy.c8.text	Quand l'eau s'évapore, les molécules les plus rapides s'échappent en emportant de l'énergie, si bien que ce qui reste se refroidit. La transpiration, les cruches en argile et les tours de refroidissement en tirent parti.
+ph-energy.c8.viz.steps.0	Sueur sur la peau
+ph-energy.c8.viz.steps.1	Les molécules rapides s'évaporent
+ph-energy.c8.viz.steps.2	Elles emportent la chaleur
+ph-energy.c8.viz.steps.3	La peau se rafraîchit
+ph-energy.c9.title	D'où vient l'énergie de la Terre
+ph-energy.c9.text	Presque toute l'énergie que nous utilisons vient du Soleil : nourriture, vent, hydraulique, solaire et même combustibles fossiles (lumière solaire ancienne stockée par les plantes). Les exceptions sont l'énergie nucléaire, géothermique et marémotrice.
+ph-energy.c9.viz.l.t	Vient du Soleil
+ph-energy.c9.viz.l.items.0	nourriture
+ph-energy.c9.viz.l.items.1	vent, eau, soleil
+ph-energy.c9.viz.l.items.2	combustibles fossiles
+ph-energy.c9.viz.r.t	Ne vient pas du Soleil
+ph-energy.c9.viz.r.items.0	nucléaire
+ph-energy.c9.viz.r.items.1	géothermie
+ph-energy.c9.viz.r.items.2	marées (Lune)
+ph-waves.title	Ondes, son et lumière
+ph-waves.summary	Une seule équation pour les cordes de guitare, le Wi-Fi et les orages.
+ph-waves.q0.q	Un son de 343 Hz dans l'air (343 m/s) a une longueur d'onde de…
+ph-waves.q0.o0	1 m
+ph-waves.q0.o1	343 m
+ph-waves.q0.o2	1 cm
+ph-waves.q0.x	λ = v ÷ f = 343 ÷ 343 = 1 m.
+ph-waves.q1.q	Le tonnerre arrive 9 secondes après l'éclair. À quelle distance la foudre est-elle tombée ?
+ph-waves.q1.o0	Environ 9 km
+ph-waves.q1.o1	Environ 3 km
+ph-waves.q1.o2	Environ 1 km
+ph-waves.q1.x	Le son parcourt environ 1 km en 3 s, donc 9 s ≈ 3 km.
+ph-waves.q2.q	Quel rayonnement porte le plus d'énergie par photon ?
+ph-waves.q2.o0	Les ondes radio
+ph-waves.q2.o1	La lumière visible
+ph-waves.q2.o2	Les rayons X
+ph-waves.q2.x	Une longueur d'onde plus courte signifie une fréquence plus élevée et plus d'énergie par photon.
+ph-waves.q3.q	Les casques à réduction de bruit fonctionnent en…
+ph-waves.q3.o0	Bloquant tout l'air
+ph-waves.q3.o1	Émettant un son qui interfère de façon destructive avec le bruit
+ph-waves.q3.o2	Baissant le volume
+ph-waves.q3.x	Des ondes inversées s'annulent.
+ph-waves.q4.q	Pourquoi une sirène semble-t-elle plus aiguë quand elle s'approche ?
+ph-waves.q4.o0	Elle devient plus forte
+ph-waves.q4.o1	Ses ondes sont comprimées (effet Doppler)
+ph-waves.q4.o2	Le conducteur la modifie
+ph-waves.q4.x	Une longueur d'onde plus courte donne un son plus aigu.
+ph-waves.c0.title	Anatomie d'une onde
+ph-waves.c0.text	Une onde transporte de l'énergie sans transporter de matière. Sa longueur d'onde (λ) est la distance entre deux crêtes successives. Son amplitude est sa hauteur, qui détermine l'intensité sonore ou la luminosité. Sa fréquence est le nombre de crêtes qui passent chaque seconde, en hertz (Hz).
+ph-waves.c0.sketch.0	longueur d'onde λ
+ph-waves.c0.sketch.1	amplitude ↕
+ph-waves.c0.sketch.2	fréquence = ondes par seconde (Hz)
+ph-waves.c1.title	À vous : quelle est la longueur d'un son ?
+ph-waves.c1.text	La vitesse est égale à la fréquence multipliée par la longueur d'onde. Le son se propage à environ 343 m/s dans l'air : les notes graves ont donc de longues ondes et les notes aiguës de courtes.
+ph-waves.c1.formula	v = f × λ
+ph-waves.c2.title	À quelle distance est l'orage ?
+ph-waves.c2.text	La lumière de l'éclair vous parvient presque instantanément ; elle parcourt environ 300 000 km chaque seconde. Le son avance lentement, à environ 343 m/s, soit à peu près 1 km toutes les 3 secondes.\n\nComptez les secondes entre l'éclair et le tonnerre, puis divisez par 3 pour obtenir la distance en kilomètres.
+ph-waves.c2.sketch.0	lumière ≈ instantanée
+ph-waves.c2.sketch.1	son : 1 km / 3 s
+ph-waves.c2.sketch.2	secondes ÷ 3 = km
+ph-waves.c3.title	Le spectre électromagnétique
+ph-waves.c3.text	Les ondes radio, micro-ondes, infrarouges, la lumière visible, les ultraviolets et les rayons X sont une seule et même chose : des ondes électromagnétiques, toutes à la vitesse de la lumière. Seule la longueur d'onde diffère.\n\nLes ondes plus courtes portent plus d'énergie par photon. C'est pourquoi les UV peuvent brûler la peau et les rayons X la traversent, alors que les ondes radio sont inoffensives. Le Wi-Fi à 2,4 GHz a une longueur d'onde d'environ 12,5 cm.
+ph-waves.c3.sketch.0	radio
+ph-waves.c3.sketch.1	micro-ondes
+ph-waves.c3.sketch.2	IR
+ph-waves.c3.sketch.3	lumière
+ph-waves.c3.sketch.4	UV
+ph-waves.c3.sketch.5	rayons X
+ph-waves.c3.sketch.6	gamma
+ph-waves.c3.sketch.7	Wi-Fi 2,4 GHz ≈ 12,5 cm
+ph-waves.c3.sketch.8	ondes plus longues
+ph-waves.c3.sketch.9	plus d'énergie
+ph-waves.c4.title	Transversales et longitudinales
+ph-waves.c4.text	Dans les ondes transversales, le milieu se déplace perpendiculairement à l'onde (rides, lumière). Dans les ondes longitudinales, il va et vient dans la direction de propagation (son).
+ph-waves.c4.viz.l.t	Transversale
+ph-waves.c4.viz.l.items.0	de côté
+ph-waves.c4.viz.l.items.1	lumière
+ph-waves.c4.viz.l.items.2	ondes sur une corde
+ph-waves.c4.viz.r.t	Longitudinale
+ph-waves.c4.viz.r.items.0	compresse et étire
+ph-waves.c4.viz.r.items.1	son
+ph-waves.c4.viz.r.items.2	poussées d'un ressort
+ph-waves.c5.title	Réflexion et échos
+ph-waves.c5.text	Les ondes rebondissent sur les surfaces. Un écho est un son réfléchi ; le sonar et l'échographie mesurent le temps des échos pour évaluer des distances et voir à l'intérieur des choses.
+ph-waves.c5.viz.steps.0	Impulsion émise
+ph-waves.c5.viz.steps.1	Rebond sur une surface
+ph-waves.c5.viz.steps.2	L'écho revient
+ph-waves.c5.viz.steps.3	On chronomètre pour trouver la distance
+ph-waves.c6.title	Interférences
+ph-waves.c6.text	Quand deux ondes se rencontrent, elles s'additionnent : crête sur crête donne une onde plus grande, crête sur creux s'annule. Les casques à réduction de bruit émettent une copie inversée du bruit extérieur pour l'annuler.
+ph-waves.c6.viz.l.t	Constructives
+ph-waves.c6.viz.l.items.0	en phase
+ph-waves.c6.viz.l.items.1	les ondes s'additionnent
+ph-waves.c6.viz.l.items.2	plus fort
+ph-waves.c6.viz.r.t	Destructives
+ph-waves.c6.viz.r.items.0	en opposition
+ph-waves.c6.viz.r.items.1	les ondes s'annulent
+ph-waves.c6.viz.r.items.2	plus faible
+ph-waves.c7.title	Diffraction
+ph-waves.c7.text	Les ondes contournent les obstacles et s'étalent à travers des ouvertures comparables à leur longueur d'onde. C'est pourquoi on peut entendre quelqu'un derrière un angle de mur sans le voir : les ondes sonores mesurent des mètres, les ondes lumineuses moins d'un micromètre.
+ph-waves.c7.viz.items.0.a	longueur d'onde du son
+ph-waves.c7.viz.items.0.b	~0,02–17 m, contourne les angles
+ph-waves.c7.viz.items.1.a	longueur d'onde de la lumière
+ph-waves.c7.viz.items.1.b	~0,0005 mm, se courbe à peine
+ph-waves.c8.title	Résonance
+ph-waves.c8.text	Chaque objet possède des fréquences propres. Poussez-le au bon rythme et la vibration s'amplifie, comme sur une balançoire. Les instruments de musique exploitent la résonance ; les ingénieurs l'évitent dans les ponts et les machines.
+ph-waves.c8.viz.items.0	Balançoires et pendules
+ph-waves.c8.viz.items.1	Caisses de guitare
+ph-waves.c8.viz.items.2	Verre brisé par une voix
+ph-waves.c8.viz.items.3	À éviter dans ponts et machines
+ph-waves.c9.title	L'effet Doppler
+ph-waves.c9.text	Une source en mouvement comprime les ondes devant elle et les étire derrière. La sirène d'une ambulance paraît plus aiguë à l'approche et plus grave à l'éloignement. Le radar routier et le radar météo utilisent le même effet.
+ph-waves.c9.viz.l.t	Qui s'approche
+ph-waves.c9.viz.l.items.0	ondes comprimées
+ph-waves.c9.viz.l.items.1	son plus aigu
+ph-waves.c9.viz.r.t	Qui s'éloigne
+ph-waves.c9.viz.r.items.0	ondes étirées
+ph-waves.c9.viz.r.items.1	son plus grave
+ph-motion.title	Décrire le mouvement
+ph-motion.summary	Vitesse, vecteur vitesse et accélération.
+ph-motion.q0.q	90 km/h en m/s font…
+ph-motion.q0.o0	9 m/s
+ph-motion.q0.o1	25 m/s
+ph-motion.q0.o2	324 m/s
+ph-motion.q0.x	90 ÷ 3,6 = 25 m/s.
+ph-motion.q1.q	Si vous doublez votre vitesse, la distance de freinage devient environ…
+ph-motion.q1.o0	Double
+ph-motion.q1.o1	Quadruple
+ph-motion.q1.o2	Identique
+ph-motion.q1.x	Elle croît avec le carré de la vitesse.
+ph-motion.q2.q	Sans air, un marteau et une plume tombent…
+ph-motion.q2.o0	Le marteau d'abord
+ph-motion.q2.o1	Au même rythme
+ph-motion.q2.o2	La plume d'abord
+ph-motion.q2.x	Démontré sur la Lune en 1971.
+ph-motion.c0.title	La vitesse
+ph-motion.c0.text	La vitesse est la distance divisée par le temps. Une voiture qui parcourt 120 km en 1,5 heure roule en moyenne à 80 km/h. Pour convertir des km/h en m/s, divisez par 3,6.
+ph-motion.c0.viz.f	v = d ÷ t
+ph-motion.c0.viz.items.0.s	d
+ph-motion.c0.viz.items.0.m	distance
+ph-motion.c0.viz.items.1.s	t
+ph-motion.c0.viz.items.1.m	temps
+ph-motion.c0.viz.items.2.s	km/h ÷ 3,6
+ph-motion.c0.viz.items.2.m	= m/s
+ph-motion.c1.title	Vitesse et vecteur vitesse
+ph-motion.c1.text	Le vecteur vitesse, c'est la vitesse avec une direction. Une voiture qui tourne dans un rond-point à vitesse constante a un vecteur vitesse changeant, car sa direction ne cesse de varier.
+ph-motion.c1.viz.l.t	Vitesse
+ph-motion.c1.viz.l.items.0	à quelle allure
+ph-motion.c1.viz.l.items.1	50 km/h
+ph-motion.c1.viz.r.t	Vecteur vitesse
+ph-motion.c1.viz.r.items.0	allure et direction
+ph-motion.c1.viz.r.items.1	50 km/h vers le nord
+ph-motion.c2.title	L'accélération
+ph-motion.c2.text	L'accélération mesure la rapidité avec laquelle la vitesse change. Une voiture qui passe de 0 à 100 km/h (27,8 m/s) en 8 secondes accélère d'environ 3,5 m/s².
+ph-motion.c2.example.0	De 0 à 27,8 m/s en 8 s
+ph-motion.c2.example.1	27,8 ÷ 8
+ph-motion.c2.example.2	≈ 3,5 m/s²
+ph-motion.c2.viz.f	a = Δv ÷ t
+ph-motion.c2.viz.items.0.s	Δv
+ph-motion.c2.viz.items.0.m	variation de vitesse
+ph-motion.c2.viz.items.1.s	t
+ph-motion.c2.viz.items.1.m	durée
+ph-motion.c3.title	La chute libre
+ph-motion.c3.text	Près de la surface de la Terre, les objets en chute gagnent environ 9,81 m/s de vitesse chaque seconde, si la résistance de l'air est négligeable. Après 1 s, vous tombez à environ 35 km/h ; après 3 s, à plus de 100 km/h.
+ph-motion.c3.viz.unit	vitesse en km/h
+ph-motion.c3.viz.items.0.l	1 s

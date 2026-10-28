@@ -7,7 +7,7 @@ tr-parts.q0.o0	90 Ω
 tr-parts.q0.o1	300 Ω
 tr-parts.q0.o2	900 Ω
 tr-parts.q0.o3	1,2 kΩ
-tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. On prendrait la valeur normalisée supérieure, 1 kΩ.
+tr-parts.q0.x	R = (12 − 3) ÷ 0010 = 900 Ω. On prendrait la valeur normalisée supérieure, 1 kΩ.
 tr-parts.q1.q	Bagues marron, noir, orange. Quelle est la valeur ?
 tr-parts.q1.o0	10 Ω
 tr-parts.q1.o1	1 kΩ
@@ -36,7 +36,7 @@ tr-parts.c1.title	Chaque LED a besoin d'une résistance
 tr-parts.c1.text	Une LED présente une tension directe fixe (Vf, environ 2 V pour le rouge, 3 V pour le blanc ou le bleu) et appelle tout le courant qu'elle peut, jusqu'à griller. Une résistance en série absorbe la tension restante et fixe le courant.
 tr-parts.c1.formula	R = (Vs − Vf) ÷ I
 tr-parts.c1.example.0	Alimentation 5 V, LED rouge (2 V), 20 mA
-tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0020
 tr-parts.c1.example.2	= 150 Ω
 tr-parts.c1.sketch.0	150 Ω
 tr-parts.c1.sketch.1	5 V
@@ -241,7 +241,7 @@ tr-diodes.c2.viz.steps.1	La diode bloque
 tr-diodes.c2.viz.steps.2	Circuit protégé
 tr-diodes.c3.title	Redresseurs
 tr-diodes.c3.text	Quatre diodes en pont transforment l'alternatif en continu pulsé : les deux alternances de l'onde ressortent positives. Ajoutez un gros condensateur et le signal se lisse en continu quasi stable.
-tr-diodes.c3.viz.steps.0	Entrée alternatif
+tr-diodes.c3.viz.steps.0	Alternatif
 tr-diodes.c3.viz.steps.1	Pont de 4 diodes
 tr-diodes.c3.viz.steps.2	Continu pulsé
 tr-diodes.c3.viz.steps.3	Le condensateur le lisse
@@ -349,7 +349,7 @@ tr-transistors.c6.viz.l.items.1	peu de chaleur
 tr-transistors.c6.viz.r.t	Amplificateur
 tr-transistors.c6.viz.r.items.0	entre les deux
 tr-transistors.c6.viz.r.items.1	copie le signal en plus grand
-tr-transistors.c6.viz.r.items.2	produit de la chaleur
+tr-transistors.c6.viz.r.items.2	chauffe
 tr-transistors.c7.title	Chaleur dans les interrupteurs
 tr-transistors.c7.text	La puissance perdue dans un MOSFET en commutation est I² × R(on). Un MOSFET de 20 mΩ traversé par 10 A dissipe 2 W, ce qui demande un petit dissipateur. La rapidité de commutation compte aussi, car de la puissance se perd à chaque transition.
 tr-transistors.c7.example.0	10 A dans 20 mΩ
@@ -359,7 +359,7 @@ tr-transistors.c7.viz.f	P = I² × R(on)
 tr-transistors.c7.viz.items.0.s	I
 tr-transistors.c7.viz.items.0.m	courant de charge
 tr-transistors.c7.viz.items.1.s	R(on)
-tr-transistors.c7.viz.items.1.m	résistance à l'état passant
+tr-transistors.c7.viz.items.1.m	résistance passante
 tr-transistors.c8.title	Optocoupleurs et relais statiques
 tr-transistors.c8.text	Un optocoupleur transmet un signal par la lumière à l'intérieur d'une puce scellée, ce qui isole électriquement deux circuits. Les relais statiques reprennent la même idée pour commuter des charges secteur en silence, sans pièce mobile.
 tr-transistors.c8.viz.steps.0	La broche allume une LED interne
@@ -547,7 +547,7 @@ tr-psu.c8.viz.items.3.l	USB-C PD
 tr-psu.c9.title	Chutes de tension
 tr-psu.c9.text	Si l'alimentation tombe sous ce dont une puce a besoin, elle peut mal se comporter ou se réinitialiser. Les ESP32 sont connus pour redémarrer lors des émissions Wi-Fi avec une alimentation faible. Un bon régulateur et un gros condensateur près de la carte règlent le problème.
 tr-psu.c9.viz.items.0.w	l'ESP32 redémarre quand le Wi-Fi démarre
-tr-psu.c9.viz.items.0.r	alimentation 3,3 V plus robuste et condensateur de 470 µF près de la carte
+tr-psu.c9.viz.items.0.r	alim. 3,3 V plus robuste + condensateur 470 µF
 tr-sensors.title	Capteurs
 tr-sensors.summary	Mesurer la température, la distance, le mouvement et plus encore.
 tr-sensors.q0.q	Un écho ultrasonore revient après 2,9 ms. La distance est d'environ…
@@ -641,7 +641,7 @@ tr-sensors.c9.text	Prenez plusieurs mesures et faites-en la moyenne, ou utilisez
 tr-sensors.c9.viz.items.0	La médiane de 5 supprime les pics
 tr-sensors.c9.viz.items.1	La moyenne mobile lisse le bruit
 tr-sensors.c9.viz.items.2	Échantillonner seulement au besoin
-tr-sensors.c9.viz.items.3	Enregistrer les données brutes pendant les tests
+tr-sensors.c9.viz.items.3	Brutes en test
 tr-buses.title	Faire dialoguer les puces
 tr-buses.summary	UART, I²C et SPI expliqués.
 tr-buses.q0.q	Quel bus utilise les lignes SDA et SCL ?
@@ -712,7 +712,7 @@ tr-buses.c6.title	Scanner I²C
 tr-buses.c6.text	Quand un périphérique I²C ne répond pas, lancez un programme de scan qui essaie chaque adresse et liste ce qui répond. Pas de réponse signifie généralement un problème de câblage, d'alimentation ou de résistances de rappel manquantes.
 tr-buses.c6.viz.items.0	Vérifier l'alimentation et la masse
 tr-buses.c6.viz.items.1	SDA et SCL inversés ?
-tr-buses.c6.viz.items.2	Résistances de rappel présentes ?
+tr-buses.c6.viz.items.2	Rappels ?
 tr-buses.c6.viz.items.3	Lancer un scan
 tr-buses.c7.title	Longueur de câble
 tr-buses.c7.text	L'I²C a été conçu pour de courtes liaisons sur une même carte ; au-delà d'un mètre environ, il devient peu fiable. Pour de plus longues distances, utilisez le RS-485, le CAN ou un prolongateur de bus différentiel.
@@ -780,7 +780,7 @@ tr-wireless.c3.title	Zigbee et Thread
 tr-wireless.c3.text	Des réseaux maillés pour la maison connectée : chaque appareil sur secteur relaie les messages et étend la portée. Ils nécessitent une passerelle ou un coordinateur, et les capteurs sur pile durent des années.
 tr-wireless.c3.viz.steps.0	Capteur sur pile
 tr-wireless.c3.viz.steps.1	L'appareil secteur le plus proche relaie
-tr-wireless.c3.viz.steps.2	Sauts dans le maillage
+tr-wireless.c3.viz.steps.2	Sauts
 tr-wireless.c3.viz.steps.3	Passerelle ou coordinateur
 tr-wireless.c4.title	LoRa
 tr-wireless.c4.text	LoRa utilise un signal spécial en « chirp » pour atteindre plusieurs kilomètres avec une puissance minuscule. Les débits ne sont que de quelques centaines de bits à quelques kilobits par seconde : parfait pour des mesures occasionnelles de capteurs sur des sites isolés.
@@ -877,7 +877,7 @@ tr-esphome.c4.viz.l.items.1	chiffrée
 tr-esphome.c4.viz.l.items.2	faible latence
 tr-esphome.c4.viz.r.t	MQTT
 tr-esphome.c4.viz.r.items.0	fonctionne avec tout broker
-tr-esphome.c4.viz.r.items.1	plus de configuration
+tr-esphome.c4.viz.r.items.1	à configurer
 tr-esphome.c5.title	Appareils UART : l'exemple du climatiseur
 tr-esphome.c5.text	ESPHome peut dialoguer avec des appareils électroménagers par UART. Des projets comme MitsubishiCN105ESPHome relient un ESP32 au port CN105 d'un climatiseur Mitsubishi pour un contrôle local, sans le cloud.
 tr-esphome.c5.viz.steps.0	ESP32
@@ -960,7 +960,7 @@ tr-proto.c4.text	Une soudure froide est terne, grumeleuse et peut se fissurer. U
 tr-proto.c4.viz.items.0.a	soudure froide
 tr-proto.c4.viz.items.0.b	terne, grumeleuse
 tr-proto.c4.viz.items.1.a	pont
-tr-proto.c4.viz.items.1.b	deux pastilles en court-circuit
+tr-proto.c4.viz.items.1.b	2 pastilles reliées
 tr-proto.c4.viz.items.2.a	soudure sèche
 tr-proto.c4.viz.items.2.b	pas assez de soudure
 tr-proto.c4.viz.items.3.a	remède
@@ -1038,7 +1038,7 @@ tr-logic.c3.viz.l.t	ET
 tr-logic.c3.viz.l.items.0	les deux doivent valoir 1
 tr-logic.c3.viz.l.items.1	porte ouverte ET alarme armée → sirène
 tr-logic.c3.viz.r.t	OU
-tr-logic.c3.viz.r.items.0	l'une ou l'autre vaut 1
+tr-logic.c3.viz.r.items.0	l'une ou l'autre
 tr-logic.c3.viz.r.items.1	bouton A OU bouton B → lumière
 tr-logic.c4.title	NON-ET : la porte universelle
 tr-logic.c4.text	Tout circuit logique, même un processeur entier, peut être construit avec des portes NON-ET seules (un ET suivi d'un NON). Elle est peu coûteuse à fabriquer dans le silicium, donc on la trouve partout.
@@ -1115,7 +1115,7 @@ tr-memory.c1.viz.items.0.a	SRAM
 tr-memory.c1.viz.items.0.b	bascules, rapide, caches
 tr-memory.c1.viz.items.1.a	DRAM
 tr-memory.c1.viz.items.1.b	condensateurs, dense, mémoire de PC
-tr-memory.c1.viz.items.2.a	rafraîchissement
+tr-memory.c1.viz.items.2.a	refresh
 tr-memory.c1.viz.items.2.b	la DRAM se réécrit des milliers de fois par seconde
 tr-memory.c2.title	Mémoire flash
 tr-memory.c2.text	La flash conserve les données sans alimentation en piégeant des charges dans des cellules isolées. Le programme de votre microcontrôleur, les SSD, les cartes SD et les clés USB l'utilisent tous.
@@ -1156,7 +1156,7 @@ tr-memory.c6.viz.r.items.2	à surveiller sur les petites puces
 tr-memory.c7.title	Hiérarchie de stockage
 tr-memory.c7.text	Les ordinateurs jonglent entre vitesse et taille : registres et caches minuscules et ultra-rapides près du processeur, puis la RAM, puis les SSD, puis les disques durs ou le cloud.
 tr-memory.c7.viz.items.0	Registres
-tr-memory.c7.viz.items.1	Cache du processeur
+tr-memory.c7.viz.items.1	Cache CPU
 tr-memory.c7.viz.items.2	RAM
 tr-memory.c7.viz.items.3	SSD
 tr-memory.c7.viz.items.4	Disque dur et cloud
@@ -1208,10 +1208,10 @@ tr-motors.c1.viz.r.items.1	arrière
 tr-motors.c2.title	Vitesse par PWM
 tr-motors.c2.text	Envoyez une PWM au driver du moteur et celui-ci tourne à une vitesse fixée par le rapport cyclique. Des fréquences de plusieurs kHz à plus de 20 kHz évitent les sifflements audibles.
 tr-motors.c2.viz.unit	% de vitesse (approx.)
-tr-motors.c2.viz.items.0.l	25 % de rapport cyclique
-tr-motors.c2.viz.items.1.l	50 % de rapport cyclique
-tr-motors.c2.viz.items.2.l	75 % de rapport cyclique
-tr-motors.c2.viz.items.3.l	100 % de rapport cyclique
+tr-motors.c2.viz.items.0.l	25 %
+tr-motors.c2.viz.items.1.l	50 %
+tr-motors.c2.viz.items.2.l	75 %
+tr-motors.c2.viz.items.3.l	100 %
 tr-motors.c3.title	Courant de calage
 tr-motors.c3.text	Quand un moteur est bloqué ou démarre, il appelle son courant de calage, souvent 5 à 10 fois le courant en marche. Dimensionnez le driver et l'alimentation en conséquence.
 tr-motors.c3.viz.unit	ampères (exemple de petit moteur)
@@ -1382,7 +1382,7 @@ tr-datasheets.c3.title	Brochages
 tr-datasheets.c3.text	Le schéma de brochage montre le rôle de chaque broche, vu de dessus (en général). La broche 1 est repérée par un point ou une encoche. Les erreurs ici sont la cause la plus fréquente de cartes mortes.
 tr-datasheets.c3.viz.items.0	Repérer la broche 1
 tr-datasheets.c3.viz.items.1	Vérifier vue de dessus ou de dessous
-tr-datasheets.c3.viz.items.2	Faire correspondre alimentation et masse
+tr-datasheets.c3.viz.items.2	Alim. et masse
 tr-datasheets.c3.viz.items.3	Vérifier chaque nom de signal
 tr-datasheets.c4.title	Circuit d'application
 tr-datasheets.c4.text	La plupart des fiches techniques montrent un circuit d'application typique avec les condensateurs et résistances exacts à utiliser. Copiez-le fidèlement, surtout pour les régulateurs et les radios.
@@ -1398,7 +1398,7 @@ tr-datasheets.c5.viz.items.1.b	condensateur
 tr-datasheets.c5.viz.items.2.a	triangle + barre
 tr-datasheets.c5.viz.items.2.b	diode
 tr-datasheets.c5.viz.items.3.b	masse
-tr-datasheets.c5.viz.items.4.a	flèche vers le haut
+tr-datasheets.c5.viz.items.4.a	flèche haut
 tr-datasheets.c5.viz.items.4.b	alimentation
 tr-datasheets.c6.title	Étiquettes de réseau
 tr-datasheets.c6.text	Les grands schémas ne tracent pas chaque fil ; ils donnent des noms aux fils. Deux points étiquetés « SDA » sont reliés même si aucun trait ne les joint.
@@ -1408,8 +1408,8 @@ tr-datasheets.c6.viz.steps.2	Ils sont reliés
 tr-datasheets.c7.title	Les courbes disent la vérité
 tr-datasheets.c7.text	Les courbes montrent comment les paramètres varient avec la température, la tension ou la charge. Un capteur précis à 25 °C peut dériver à −10 °C ; un régulateur peut fléchir à fort courant.
 tr-datasheets.c7.viz.items.0	Précision en fonction de la température
-tr-datasheets.c7.viz.items.1	Courant en fonction de la tension
-tr-datasheets.c7.viz.items.2	Rendement en fonction de la charge
+tr-datasheets.c7.viz.items.1	I en fonction de V
+tr-datasheets.c7.viz.items.2	Rendement/charge
 tr-datasheets.c7.viz.items.3	Réponse en fonction de la fréquence
 tr-datasheets.c8.title	Errata
 tr-datasheets.c8.text	Les puces peuvent avoir des bogues connus, publiés dans un document d'errata. Si une fonction se comporte mal malgré un code correct, consultez d'abord l'errata.
@@ -1478,7 +1478,7 @@ tr-scope.c4.viz.items.1.w	masse sur un nœud qui n'est pas à la masse
 tr-scope.c4.viz.items.1.r	court-circuit
 tr-scope.c5.title	Méthode de débogage
 tr-scope.c5.text	Procédez depuis l'alimentation vers l'extérieur : vérifiez les tensions d'alimentation, puis les horloges, puis les signaux. Ne changez qu'une chose à la fois et notez les résultats.
-tr-scope.c5.viz.steps.0	Vérifier les rails d'alimentation
+tr-scope.c5.viz.steps.0	Rails d'alim.
 tr-scope.c5.viz.steps.1	Vérifier les horloges
 tr-scope.c5.viz.steps.2	Vérifier les signaux
 tr-scope.c5.viz.steps.3	Changer une chose à la fois
@@ -1499,7 +1499,7 @@ tr-scope.c8.viz.items.0	Masse commune ?
 tr-scope.c8.viz.items.1	TX/RX inversés ?
 tr-scope.c8.viz.items.2	Bonne tension ?
 tr-scope.c8.viz.items.3	Fil desserré ?
-tr-scope.c8.viz.items.4	Résistances de rappel présentes ?
+tr-scope.c8.viz.items.4	Rappels ?
 tr-scope.c9.title	Des outils bon marché vont loin
 tr-scope.c9.text	Un analyseur logique à 10 €, un multimètre de base et un oscilloscope USB ou un oscilloscope d'établi d'occasion couvrent la plupart des besoins de débogage en loisir.
 tr-scope.c9.viz.items.0	Multimètre
@@ -1613,7 +1613,7 @@ tr-displays.c0.viz.steps.2	LED à son courant nominal
 tr-displays.c0.viz.steps.3	Luminosité stable
 tr-displays.c1.title	LED adressables
 tr-displays.c1.text	Les rubans WS2812B (« NeoPixel ») contiennent un minuscule contrôleur dans chaque LED. Un seul fil de données fixe la couleur de chaque LED individuellement, parfait pour des effets commandés par un ESP32.
-tr-displays.c1.viz.steps.0	Broche de données de l'ESP32
+tr-displays.c1.viz.steps.0	Broche ESP32
 tr-displays.c1.viz.steps.1	La LED 1 prend sa couleur
 tr-displays.c1.viz.steps.2	Transmet le reste
 tr-displays.c1.viz.steps.3	LED 2, LED 3…
@@ -1653,7 +1653,7 @@ tr-displays.c5.viz.r.items.1	plus grand et moins cher
 tr-displays.c5.viz.r.items.2	couleur
 tr-displays.c6.title	Papier électronique
 tr-displays.c6.text	Les écrans à papier électronique conservent leur image sans aucune énergie, comme une liseuse Kindle. Ils se rafraîchissent lentement, mais conviennent parfaitement aux tableaux de bord sur batterie mis à jour toutes les quelques minutes.
-tr-displays.c6.viz.l.t	Papier électronique
+tr-displays.c6.viz.l.t	E-paper
 tr-displays.c6.viz.l.items.0	aucune énergie pour garder l'image
 tr-displays.c6.viz.l.items.1	rafraîchissement lent
 tr-displays.c6.viz.l.items.2	lisible au soleil
@@ -1723,7 +1723,7 @@ tr-computer.c3.text	Vous écrivez du code dans un langage comme C++ ou Python ; 
 tr-computer.c3.viz.steps.0	Code source
 tr-computer.c3.viz.steps.1	Compilateur
 tr-computer.c3.viz.steps.2	Code machine
-tr-computer.c3.viz.steps.3	Le processeur l'exécute
+tr-computer.c3.viz.steps.3	Le CPU l'exécute
 tr-computer.c4.title	Cœurs et threads
 tr-computer.c4.text	Les puces modernes ont plusieurs cœurs, chacun un processeur complet, qui exécutent des tâches distinctes en même temps. L'ESP32 en a deux ; les portables en ont 8 ou plus.
 tr-computer.c4.viz.unit	cœurs (typique)

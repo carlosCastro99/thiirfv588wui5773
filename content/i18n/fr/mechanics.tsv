@@ -1,0 +1,300 @@
+P.title	Ingénierie
+P.blurb	Les forces, les machines et les formes qui font tenir les structures debout.
+me-forces.title	Forces, leviers et engrenages
+me-forces.summary	Pourquoi une clé longue est efficace, et comment les machines échangent force contre distance.
+me-forces.q0.q	Une personne de 50 kg se tient sur une balance. Son poids est d'environ…
+me-forces.q0.o0	50 N
+me-forces.q0.o1	490 N
+me-forces.q0.o2	5 N
+me-forces.q0.o3	5 000 N
+me-forces.q0.x	P = m × g = 50 × 9,81 ≈ 490 N.
+me-forces.q1.q	Une masse de 4 kg est à 1,5 m du pivot. À quelle distance du pivot faut-il placer 2 kg pour équilibrer ?
+me-forces.q1.o0	0,75 m
+me-forces.q1.o1	1,5 m
+me-forces.q1.o2	3 m
+me-forces.q1.o3	6 m
+me-forces.q1.x	4 × 1,5 = 6, donc 2 × d = 6 → d = 3 m.
+me-forces.q2.q	Un engrenage de 12 dents entraîne un engrenage de 36 dents. La sortie tourne…
+me-forces.q2.o0	3 fois plus vite
+me-forces.q2.o1	à la même vitesse
+me-forces.q2.o2	3 fois plus lentement, avec 3 fois plus de couple
+me-forces.q2.x	Le rapport est de 36 ÷ 12 = 3 : un tiers de la vitesse, trois fois le couple.
+me-forces.q3.q	Pour soulever 200 kg sur 1 m avec une rampe de 5 m (sans frottement), il faut environ…
+me-forces.q3.o0	1 962 N
+me-forces.q3.o1	392 N
+me-forces.q3.o2	40 N
+me-forces.q3.x	1 962 × 1 ÷ 5 ≈ 392 N.
+me-forces.q4.q	Une clé dynamométrique réglée sur 120 N·m avec un manche de 0,4 m demande une force de…
+me-forces.q4.o0	48 N
+me-forces.q4.o1	300 N
+me-forces.q4.o2	120 N
+me-forces.q4.x	120 ÷ 0,4 = 300 N.
+me-forces.c0.title	Force, masse et poids
+me-forces.c0.text	Une force fait accélérer une masse. Le poids n'est que la force de gravité exercée sur une masse : P = m × g, avec g ≈ 9,81 m/s² sur Terre. La masse se mesure en kg ; la force et le poids en newtons (N).
+me-forces.c0.formula	F = m × a
+me-forces.c0.example.0	Une caisse de 10 kg
+me-forces.c0.example.1	P = 10 × 9,81
+me-forces.c0.example.2	≈ 98 N
+me-forces.c0.sketch.0	10 kg
+me-forces.c0.sketch.1	P = m·g
+me-forces.c0.sketch.2	≈ 98 N
+me-forces.c0.sketch.3	F = m·a
+me-forces.c1.title	Les leviers multiplient la force
+me-forces.c1.text	L'effet de rotation, ou couple, est la force × la distance au pivot. Une petite force éloignée du pivot équilibre une grande force proche de celui-ci.\n\nC'est pourquoi une clé longue desserre un boulon grippé, et pourquoi les poignées de porte sont loin des gonds.
+me-forces.c1.formula	couple = F × d
+me-forces.c1.sketch.0	2 kg
+me-forces.c1.sketch.1	6 kg
+me-forces.c1.sketch.2	3 m
+me-forces.c1.sketch.3	1 m
+me-forces.c1.sketch.4	2 × 3 = 6 × 1 → équilibré
+me-forces.c2.title	À vous de jouer : équilibrez la balançoire
+me-forces.c2.text	Le côté droit porte 6 kg à 1 m du pivot. Modifiez la masse et la distance à gauche jusqu'à ce que la poutre soit à l'horizontale.
+me-forces.c3.title	Les poulies échangent distance contre force
+me-forces.c3.text	Avec une poulie mobile, la charge est suspendue à deux brins de corde, et chaque brin porte la moitié du poids. Vous tirez avec la moitié de la force, mais vous devez tirer deux fois plus de corde.\n\nLe travail que vous fournissez, force × distance, reste le même. Les machines ne donnent jamais d'énergie gratuitement ; elles vous laissent choisir comment la dépenser.
+me-forces.c3.sketch.0	tirer 1 m
+me-forces.c3.sketch.1	charge : +½ m
+me-forces.c4.title	Engrenages : vitesse ou couple
+me-forces.c4.text	Quand un petit engrenage entraîne un grand, le grand tourne plus lentement mais avec plus de couple. Le rapport est donné par le nombre de dents : 10 dents qui entraînent 20 dents donnent la moitié de la vitesse et le double du couple.\n\nLa petite vitesse d'un vélo, le réducteur d'une perceuse et la première d'une voiture reposent tous sur cet échange.
+me-forces.c4.sketch.0	10 dents (moteur)
+me-forces.c4.sketch.1	20 dents : ½ vitesse, 2× couple
+me-forces.c5.title	Forces équilibrées et déséquilibrées
+me-forces.c5.text	Quand les forces qui s'exercent sur un objet s'équilibrent, il reste immobile ou garde une vitesse constante. Sinon, il accélère dans la direction de la force résultante.
+me-forces.c5.viz.l.t	Équilibrées
+me-forces.c5.viz.l.items.0	pas d'accélération
+me-forces.c5.viz.l.items.1	livre sur une table
+me-forces.c5.viz.l.items.2	voiture à vitesse constante
+me-forces.c5.viz.r.t	Déséquilibrées
+me-forces.c5.viz.r.items.0	accélère ou ralentit
+me-forces.c5.viz.r.items.1	freinage
+me-forces.c5.viz.r.items.2	décollage
+me-forces.c6.title	Plans inclinés
+me-forces.c6.text	Une rampe permet de soulever une charge avec moins de force, en la poussant sur une plus grande distance. La force nécessaire vaut à peu près le poids multiplié par la hauteur et divisé par la longueur.
+me-forces.c6.example.0	Soulever 100 kg sur 1 m avec une rampe de 4 m
+me-forces.c6.example.1	981 × 1 ÷ 4
+me-forces.c6.example.2	≈ 245 N (frottement négligé)
+me-forces.c6.viz.f	F ≈ P × h ÷ L
+me-forces.c6.viz.items.0.s	P
+me-forces.c6.viz.items.0.m	poids
+me-forces.c6.viz.items.1.s	h
+me-forces.c6.viz.items.1.m	hauteur gagnée
+me-forces.c6.viz.items.2.s	L
+me-forces.c6.viz.items.2.m	longueur de la rampe
+me-forces.c7.title	Vis et coins
+me-forces.c7.text	Une vis est une rampe enroulée autour d'un cylindre : chaque tour la fait avancer un peu, avec une grande force. Un coin (une hache, un ciseau) transforme une poussée en force de fendage latérale.
+me-forces.c7.viz.items.0.a	vis
+me-forces.c7.viz.items.0.b	rampe enroulée sur un axe
+me-forces.c7.viz.items.1.a	coin
+me-forces.c7.viz.items.1.b	deux rampes dos à dos
+me-forces.c7.viz.items.2.a	cric
+me-forces.c7.viz.items.2.b	vis pour soulever des tonnes
+me-forces.c8.title	Avantage mécanique
+me-forces.c8.text	L'avantage mécanique est la force de sortie divisée par la force d'entrée. Un levier d'AM = 5 permet de soulever 5 fois ce que vous poussez, mais vous parcourez une distance 5 fois plus grande.
+me-forces.c8.viz.f	AM = force de sortie ÷ force d'entrée
+me-forces.c8.viz.items.0.s	AM 5
+me-forces.c8.viz.items.0.m	500 N avec 100 N
+me-forces.c8.viz.items.1.s	mais
+me-forces.c8.viz.items.1.m	distance ×5
+me-forces.c9.title	Le couple en pratique
+me-forces.c9.text	Les boulons sont serrés à un couple précis, en newtons-mètres. L'écrou de roue d'une voiture se serre souvent autour de 100 à 140 N·m : 400 N sur une clé de 30 cm donnent 120 N·m.
+me-forces.c9.viz.f	couple = F × r
+me-forces.c9.viz.items.0.s	F
+me-forces.c9.viz.items.0.m	poussée de 400 N
+me-forces.c9.viz.items.1.s	r
+me-forces.c9.viz.items.1.m	clé de 0,3 m
+me-forces.c9.viz.items.2.m	= 120 N·m
+me-structures.title	Comment tiennent les structures
+me-structures.summary	Traction, compression et les formes qu'utilisent les ingénieurs pour les maîtriser.
+me-structures.q0.q	Une poutre sur deux appuis porte une charge en son milieu. Où est-elle en traction ?
+me-structures.q0.o0	Face supérieure
+me-structures.q0.o1	Face inférieure
+me-structures.q0.o2	Exactement au milieu
+me-structures.q0.x	Elle fléchit : le bas s'étire (traction) et le haut se comprime (compression).
+me-structures.q1.q	Pourquoi les treillis sont-ils faits de triangles ?
+me-structures.q1.o0	Ils utilisent moins d'acier que les carrés
+me-structures.q1.o1	Un triangle ne peut pas se déformer sans qu'un côté change de longueur
+me-structures.q1.o2	Ils sont plus beaux
+me-structures.q1.x	Des côtés de longueur fixe bloquent les angles du triangle : de simples articulations suffisent à le rendre rigide.
+me-structures.q2.q	Une corde a une charge de rupture de 600 kg et s'utilise avec un coefficient de sécurité de 5. Quelle est la charge de service maximale ?
+me-structures.q2.o0	3 000 kg
+me-structures.q2.o1	120 kg
+me-structures.q2.o2	595 kg
+me-structures.q2.x	Charge de service = charge de rupture ÷ CS = 600 ÷ 5 = 120 kg.
+me-structures.q3.q	Un balcon fixé uniquement au mur est un…
+me-structures.q3.o0	Arc
+me-structures.q3.o1	Porte-à-faux
+me-structures.q3.o2	Treillis
+me-structures.q3.x	Il est soutenu à une seule extrémité.
+me-structures.q4.q	Qu'est-ce qui fait généralement céder une colonne haute et élancée ?
+me-structures.q4.o0	L'écrasement
+me-structures.q4.o1	Le flambement latéral
+me-structures.q4.o2	La fusion
+me-structures.q4.x	Les colonnes élancées flambent avant de s'écraser.
+me-structures.c0.title	Traction et compression
+me-structures.c0.text	Chargez une poutre en son milieu et elle fléchit. Le haut est comprimé (compression) et le bas est étiré (traction). Quelque part entre les deux se trouve une ligne neutre qui ne subit ni l'une ni l'autre.\n\nLe béton résiste bien à la compression mais mal à la traction, c'est pourquoi les poutres contiennent des barres d'acier près du bas.
+me-structures.c0.sketch.0	charge
+me-structures.c0.sketch.1	compression
+me-structures.c0.sketch.2	compression
+me-structures.c0.sketch.3	traction
+me-structures.c1.title	Pourquoi les ingénieurs adorent les triangles
+me-structures.c1.text	Poussez le coin d'un cadre carré et il se couche en parallélogramme : les articulations ne font que tourner. Un triangle ne peut pas changer de forme sans qu'un côté change de longueur.\n\nC'est pourquoi les grues, les charpentes, les pylônes et les cadres de vélo sont faits de triangles.
+me-structures.c1.sketch.0	le carré se plie
+me-structures.c1.sketch.1	le triangle tient
+me-structures.c2.title	Les arcs poussent vers l'extérieur
+me-structures.c2.text	Un arc transforme une charge verticale en compression qui suit sa courbe jusqu'au sol. La pierre, qui résiste bien à la compression, lui convient parfaitement.\n\nLe hic, c'est que les pieds poussent vers l'extérieur. Sans culées solides ni tirant entre les pieds, l'arc s'écarte et s'effondre.
+me-structures.c2.sketch.0	charge
+me-structures.c2.sketch.1	les pieds poussent vers l'extérieur
+me-structures.c3.title	La poutre en I
+me-structures.c3.text	Quand une poutre fléchit, la contrainte est maximale sur les faces supérieure et inférieure, et très faible au milieu. Une poutre en I place l'essentiel de son acier dans les semelles du haut et du bas, reliées par une âme mince.\n\nVous obtenez presque la rigidité d'un bloc plein pour une fraction du poids.
+me-structures.c3.sketch.0	forte contrainte
+me-structures.c3.sketch.1	forte contrainte
+me-structures.c3.sketch.2	faible contrainte
+me-structures.c3.sketch.3	semelle
+me-structures.c3.sketch.4	âme
+me-structures.c3.sketch.5	semelle
+me-structures.c4.title	Coefficient de sécurité
+me-structures.c4.text	Les ingénieurs ne dimensionnent jamais au ras de la rupture. Les matériaux varient, les charges sont sous-estimées et les pièces s'usent. Le coefficient de sécurité indique de combien un élément est plus résistant que nécessaire.\n\nLes appareils de levage utilisent souvent 4 ou 5 ; les structures d'avion environ 1,5, car chaque kilo de plus coûte du carburant et chaque pièce est testée de près.
+me-structures.c4.formula	CS = charge de rupture ÷ charge de service
+me-structures.c4.example.0	Crochet prévu pour 1 t, rupture à 4 t
+me-structures.c4.example.1	4 ÷ 1
+me-structures.c4.example.2	coefficient de sécurité = 4
+me-structures.c4.sketch.0	prévu : 1 t
+me-structures.c4.sketch.1	rupture : 4 t
+me-structures.c4.sketch.2	4 ÷ 1 = coefficient 4
+me-structures.c5.title	Porte-à-faux
+me-structures.c5.text	Un porte-à-faux n'est soutenu qu'à une extrémité : balcons, plongeoirs, équerres d'étagère. Le haut est en traction et le bas en compression, l'inverse d'une poutre sur deux appuis.
+me-structures.c5.viz.l.t	Poutre sur deux appuis
+me-structures.c5.viz.l.items.0	bas en traction
+me-structures.c5.viz.l.items.1	appuyée aux deux bouts
+me-structures.c5.viz.r.t	Porte-à-faux
+me-structures.c5.viz.r.items.0	haut en traction
+me-structures.c5.viz.r.items.1	fixé à un bout
+me-structures.c6.title	Colonnes et flambement
+me-structures.c6.text	Une colonne haute et élancée ne s'écrase pas : elle flambe d'abord latéralement. Doubler sa longueur peut réduire sa charge de flambement au quart, d'où l'usage de contreventements.
+me-structures.c6.viz.f	charge ∝ 1 ÷ longueur²
+me-structures.c6.viz.items.0.s	2× plus longue
+me-structures.c6.viz.items.0.m	¼ de la charge de flambement
+me-structures.c6.viz.items.1.s	contreventement
+me-structures.c6.viz.items.1.m	réduit la longueur libre
+me-structures.c7.title	Coques et dômes
+me-structures.c7.text	Les coques courbes répartissent les charges dans leur surface, comme une coquille d'œuf. Des dômes, du Panthéon de Rome aux stades modernes, couvrent de vastes espaces avec peu de matière.
+me-structures.c7.viz.items.0	Coquille d'œuf : fine mais solide
+me-structures.c7.viz.items.1	Dôme du Panthéon (Rome) : béton non armé
+me-structures.c7.viz.items.2	Coques modernes : stades et halls
+me-structures.c8.title	Chemins de charge
+me-structures.c8.text	Chaque charge doit descendre à travers la structure jusqu'au sol : du plancher aux poutres, des poutres aux colonnes, des colonnes aux fondations. S'il manque un maillon, quelque chose cède.
+me-structures.c8.viz.steps.0	Charge du plancher
+me-structures.c8.viz.steps.1	Poutres
+me-structures.c8.viz.steps.2	Colonnes ou murs
+me-structures.c8.viz.steps.3	Fondations
+me-structures.c8.viz.steps.4	Sol
+me-structures.c9.title	Charges permanentes, d'exploitation et environnementales
+me-structures.c9.text	Les ingénieurs dimensionnent pour les charges permanentes (le poids propre de la structure), les charges d'exploitation (personnes, mobilier, neige) et les charges environnementales comme le vent et les séismes, puis ajoutent des coefficients de sécurité.
+me-structures.c9.viz.root	Charges
+me-structures.c9.viz.items.0	Permanentes : poids propre
+me-structures.c9.viz.items.1	Exploitation : personnes, mobilier
+me-structures.c9.viz.items.2	Vent et neige
+me-structures.c9.viz.items.3	Séismes
+me-materials.title	Matériaux d'ingénierie
+me-materials.summary	Acier, béton, bois, aluminium et plastiques.
+me-materials.q0.q	Pourquoi le béton armé contient-il des barres d'acier ?
+me-materials.q0.o0	Pour l'alourdir
+me-materials.q0.o1	Le béton résiste mal à la traction, donc l'acier reprend les efforts de traction
+me-materials.q0.o2	Pour conduire l'électricité
+me-materials.q0.x	Les armatures reprennent la traction.
+me-materials.q1.q	Le bois est le plus résistant…
+me-materials.q1.o0	Perpendiculairement aux fibres
+me-materials.q1.o1	Dans le sens des fibres
+me-materials.q1.o2	Quand il est mouillé
+me-materials.q1.x	Les fibres suivent le sens du fil.
+me-materials.q2.q	Lequel est le plus léger à volume égal ?
+me-materials.q2.o0	L'acier
+me-materials.q2.o1	L'aluminium
+me-materials.q2.o2	Le béton
+me-materials.q2.x	L'aluminium a environ le tiers de la masse volumique de l'acier.
+me-materials.c0.title	Résistance et rigidité sont différentes
+me-materials.c0.text	La résistance est la contrainte qu'un matériau supporte avant de rompre ou de céder. La rigidité est sa capacité à résister à la flexion ou à l'allongement. Le caoutchouc est peu résistant et souple ; le verre est rigide mais fragile.
+me-materials.c0.viz.l.t	Résistance
+me-materials.c0.viz.l.items.0	charge avant rupture
+me-materials.c0.viz.l.items.1	acier élevée, bois moyenne
+me-materials.c0.viz.r.t	Rigidité
+me-materials.c0.viz.r.items.0	résistance à l'allongement
+me-materials.c0.viz.r.items.1	acier rigide, aluminium 3× moins
+me-materials.c1.title	L'acier
+me-materials.c1.text	L'acier est du fer avec un peu de carbone. Il résiste bien à la traction comme à la compression, il est ductile (il se déforme avant de rompre) et recyclable, mais il est lourd et rouille sans protection.
+me-materials.c1.viz.items.0	Résiste en traction et en compression
+me-materials.c1.viz.items.1	Ductile
+me-materials.c1.viz.items.2	Recyclable
+me-materials.c1.viz.items.3	Rouille sans protection
+me-materials.c1.viz.items.4	Perd de sa résistance au feu
+me-materials.c2.title	Le béton
+me-materials.c2.text	Le béton est un mélange de ciment, d'eau, de sable et de gravier. Il est bon marché et très résistant à la compression, mais peu à la traction ; on ajoute donc des barres d'acier (armatures) là où s'exerce la traction.
+me-materials.c2.viz.l.t	Béton non armé
+me-materials.c2.viz.l.items.0	excellent en compression
+me-materials.c2.viz.l.items.1	se fissure en traction
+me-materials.c2.viz.r.t	Béton armé
+me-materials.c2.viz.r.items.0	l'acier reprend la traction
+me-materials.c2.viz.r.items.1	poutres, dalles, poteaux
+me-materials.c3.title	Le bois
+me-materials.c3.text	Le bois est résistant dans le sens des fibres et faible en travers. Pour son poids, il est remarquablement résistant, il stocke du carbone et se travaille facilement, mais il faut maîtriser l'humidité, le feu et les insectes.
+me-materials.c3.viz.l.t	Dans le sens des fibres
+me-materials.c3.viz.l.items.0	résistant
+me-materials.c3.viz.l.items.1	rigide
+me-materials.c3.viz.r.t	En travers des fibres
+me-materials.c3.viz.r.items.0	se fend facilement
+me-materials.c3.viz.r.items.1	gonfle avec l'humidité
+me-materials.c4.title	L'aluminium
+me-materials.c4.text	L'aluminium pèse environ le tiers de l'acier et ne rouille pas (une fine couche d'oxyde le protège). Il est moins rigide, donc les pièces sont plus épaisses ou astucieusement profilées. On l'utilise dans les avions, les cadres de fenêtres, les voitures.
+me-materials.c4.viz.unit	masse volumique (g/cm³)
+me-materials.c4.viz.items.0.l	Bois (pin)
+me-materials.c4.viz.items.1.l	Aluminium
+me-materials.c4.viz.items.2.l	Acier
+me-materials.c4.viz.items.3.l	Béton
+me-materials.c5.title	Plastiques et composites
+me-materials.c5.text	Les plastiques sont légers, bon marché et moulables. Les composites comme la fibre de carbone noient des fibres résistantes dans une résine, ce qui donne une très grande résistance et rigidité pour le poids : vélos, avions, voitures de course.
+me-materials.c5.viz.items.0.a	PVC
+me-materials.c5.viz.items.0.b	tuyaux, cadres de fenêtres
+me-materials.c5.viz.items.1.a	nylon
+me-materials.c5.viz.items.1.b	engrenages, paliers
+me-materials.c5.viz.items.2.a	fibre de carbone
+me-materials.c5.viz.items.2.b	haut de gamme, légère et rigide
+me-materials.c5.viz.items.3.a	fibre de verre
+me-materials.c5.viz.items.3.b	bateaux, cuves
+me-materials.c6.title	Choisir un matériau
+me-materials.c6.text	Les ingénieurs pèsent la résistance, la rigidité, le poids, le coût, la durabilité, la facilité de fabrication et l'impact environnemental. Il n'existe jamais de matériau parfait, seulement le meilleur compromis.
+me-materials.c6.viz.items.0	Résistance et rigidité
+me-materials.c6.viz.items.1	Poids
+me-materials.c6.viz.items.2	Coût
+me-materials.c6.viz.items.3	Corrosion et durabilité
+me-materials.c6.viz.items.4	Fabrication
+me-materials.c6.viz.items.5	Empreinte carbone
+me-materials.c7.title	Carbone intrinsèque
+me-materials.c7.text	La fabrication du ciment libère beaucoup de CO₂, environ 8 % des émissions mondiales selon de nombreuses estimations. La production d'acier est elle aussi très émettrice. D'où l'intérêt pour les bâtiments en bois et les ciments bas carbone.
+me-materials.c7.viz.items.0.l	CO₂ mondial dû au ciment
+me-materials.c7.viz.items.1.l	dû à l'acier (approx.)
+me-materials.c8.title	La corrosion
+me-materials.c8.text	L'acier rouille au contact de l'oxygène et de l'eau, surtout en présence de sel. Pour le protéger : peinture, galvanisation (revêtement de zinc), alliages inoxydables et enrobage de béton suffisant sur les armatures.
+me-materials.c8.viz.items.0	Peintures et revêtements
+me-materials.c8.viz.items.1	Galvanisation au zinc
+me-materials.c8.viz.items.2	Acier inoxydable
+me-materials.c8.viz.items.3	Enrobage de béton suffisant
+me-materials.c8.viz.items.4	Éviter l'eau stagnante
+me-materials.c9.title	Le verre
+me-materials.c9.text	Le verre résiste très bien à la compression mais il est fragile : une minuscule rayure peut amorcer une fissure. Le verre trempé subit un traitement thermique qui le rend bien plus résistant et le fait éclater en petits morceaux émoussés ; le verre feuilleté reste d'un seul tenant.
+me-materials.c9.viz.l.t	Trempé
+me-materials.c9.viz.l.items.0	4 à 5× plus résistant
+me-materials.c9.viz.l.items.1	éclate en petits cubes
+me-materials.c9.viz.l.items.2	vitres latérales de voiture
+me-materials.c9.viz.r.t	Feuilleté
+me-materials.c9.viz.r.items.0	intercalaire plastique
+me-materials.c9.viz.r.items.1	reste en place
+me-materials.c9.viz.r.items.2	pare-brise
+me-stress.title	Contrainte et déformation
+me-stress.summary	Comment les matériaux s'étirent, fléchissent et rompent.
+me-stress.q0.q	20 kN sur une barre de 400 mm² donnent une contrainte de…
+me-stress.q0.o0	5 MPa
+me-stress.q0.o1	50 MPa
+me-stress.q0.o2	8 000 MPa
+me-stress.q0.x	20 000 ÷ 400 = 50 MPa.
+me-stress.q1.q	Poser une planche sur chant la rend beaucoup plus rigide parce que…
+me-stress.q1.o0	Elle est plus lourde
+me-stress.q1.o1	La rigidité en flexion augmente avec le cube de la hauteur

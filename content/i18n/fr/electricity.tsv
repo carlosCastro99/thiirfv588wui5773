@@ -55,7 +55,7 @@ el-basics.c4.title	C'est le courant qui fait mal
 el-basics.c4.text	Votre corps est aussi une résistance. Pour la sécurité, ce qui compte, c'est l'intensité du courant qui le traverse, et son trajet.\nÀ environ 1 mA, on ressent un picotement. Vers 10 mA, les muscles peuvent se crisper et vous pouvez ne plus réussir à lâcher prise. À partir de 50–100 mA environ à travers la poitrine, le cœur peut entrer en fibrillation.\n\nC'est pourquoi les disjoncteurs différentiels domestiques se déclenchent à 30 mA : bien avant la zone dangereuse.
 el-basics.c4.sketch.0	on le sent
 el-basics.c4.sketch.1	impossible de lâcher
-el-basics.c4.sketch.2	le différentiel coupe
+el-basics.c4.sketch.2	déclenche
 el-basics.c4.sketch.3	risque cardiaque
 el-basics.c4.sketch.4	1 mA
 el-basics.c4.sketch.5	10 mA
@@ -234,11 +234,11 @@ el-acdc.q2.o2	le continu en continu de tension plus élevée
 el-acdc.q2.x	Les panneaux produisent du continu ; la maison utilise de l'alternatif.
 el-acdc.c0.title	Courant continu
 el-acdc.c0.text	En courant continu, le courant circule dans un seul sens sous une tension constante. Les piles, les panneaux solaires et les chargeurs USB fournissent du continu, et tout circuit électronique fonctionne avec en interne.
-el-acdc.c0.viz.l.t	Continu
+el-acdc.c0.viz.l.t	CC
 el-acdc.c0.viz.l.items.0	un seul sens
 el-acdc.c0.viz.l.items.1	tension stable
 el-acdc.c0.viz.l.items.2	piles, solaire, USB
-el-acdc.c0.viz.r.t	Alternatif
+el-acdc.c0.viz.r.t	CA
 el-acdc.c0.viz.r.items.0	change de sens
 el-acdc.c0.viz.r.items.1	tension oscillante
 el-acdc.c0.viz.r.items.2	prises secteur
@@ -258,8 +258,8 @@ el-acdc.c2.viz.items.2.m	crête
 el-acdc.c3.title	La guerre des courants
 el-acdc.c3.text	Dans les années 1880, Edison défendait le courant continu ; Westinghouse et Tesla soutenaient l'alternatif. Le courant alternatif l'a emporté pour les réseaux électriques parce que les transformateurs pouvaient facilement élever sa tension pour le transport sur de longues distances, puis l'abaisser pour les foyers.
 el-acdc.c3.viz.events.0.l	Centrale à courant continu d'Edison à New York
-el-acdc.c3.viz.events.1.l	Brevets de Tesla sur le moteur à courant alternatif
-el-acdc.c3.viz.events.2.l	Le courant alternatif éclaire l'Exposition universelle de Chicago
+el-acdc.c3.viz.events.1.l	Brevets Tesla : moteur CA
+el-acdc.c3.viz.events.2.l	Le CA éclaire l'Expo de Chicago
 el-acdc.c3.viz.events.3.l	L'électricité alternative de Niagara atteint Buffalo
 el-acdc.c4.title	Pourquoi l'alternatif pour le réseau ?
 el-acdc.c4.text	Les pertes dans les câbles dépendent du carré du courant. Les transformateurs élèvent la tension afin que la même puissance circule avec beaucoup moins de courant, et les pertes chutent fortement. Les transformateurs ne fonctionnent qu'en alternatif.
@@ -274,7 +274,7 @@ el-acdc.c5.viz.l.items.0	alt. → cont.
 el-acdc.c5.viz.l.items.1	téléphone, portable, driver LED
 el-acdc.c5.viz.r.t	Onduleur
 el-acdc.c5.viz.r.items.0	cont. → alt.
-el-acdc.c5.viz.r.items.1	solaire, batteries, onduleur de secours
+el-acdc.c5.viz.r.items.1	solaire, batteries, UPS
 el-acdc.c6.title	Le continu revient
 el-acdc.c6.text	L'électronique moderne sait convertir efficacement les tensions continues, si bien que les très longues liaisons sous-marines et terrestres utilisent désormais le courant continu haute tension (HVDC). Les centres de données et les véhicules électriques fonctionnent eux aussi en grande partie en continu.
 el-acdc.c6.viz.items.0	Câbles sous-marins HVDC
@@ -301,7 +301,7 @@ el-acdc.c9.text	La plus grande partie du monde utilise 220–240 V à 50 Hz. L'A
 el-acdc.c9.viz.unit	volts
 el-acdc.c9.viz.items.0.l	Europe
 el-acdc.c9.viz.items.1.l	R.-U.
-el-acdc.c9.viz.items.2.l	États-Unis
+el-acdc.c9.viz.items.2.l	USA
 el-acdc.c9.viz.items.3.l	Japon
 el-acdc.c9.viz.items.4.l	Brésil
 el-magnet.title	Magnétisme et électroaimants
@@ -368,7 +368,7 @@ el-magnet.c6.viz.steps.2	Tension induite
 el-magnet.c6.viz.steps.3	Le courant circule
 el-magnet.c7.title	Plaques à induction
 el-magnet.c7.text	Une plaque à induction fait passer un courant alternatif haute fréquence dans une bobine située sous la vitre. Le champ variable induit des courants directement dans la casserole en fer, qui chauffe. La vitre reste relativement froide, et les casseroles non magnétiques ne fonctionnent pas.
-el-magnet.c7.viz.steps.0	Courant alternatif dans la bobine
+el-magnet.c7.viz.steps.0	CA dans la bobine
 el-magnet.c7.viz.steps.1	Champ magnétique variable
 el-magnet.c7.viz.steps.2	Courants induits dans la casserole
 el-magnet.c7.viz.steps.3	La casserole chauffe
@@ -419,7 +419,7 @@ el-motors.c1.viz.l.items.1	les balais s'usent
 el-motors.c1.viz.l.items.2	jouets, essuie-glaces
 el-motors.c1.viz.r.t	CC sans balais
 el-motors.c1.viz.r.items.0	commutation électronique
-el-motors.c1.viz.r.items.1	longue durée de vie
+el-motors.c1.viz.r.items.1	longévité
 el-motors.c1.viz.r.items.2	drones, ventilateurs
 el-motors.c2.title	Générateurs
 el-motors.c2.text	Un générateur est un moteur à l'envers : faites tourner une bobine dans un champ magnétique (ou un aimant à l'intérieur de bobines) et une tension est induite. Des turbines entraînées par la vapeur, l'eau ou le vent font tourner des générateurs pour produire presque toute notre électricité.
@@ -429,7 +429,7 @@ el-motors.c2.viz.steps.2	Entraîne le générateur
 el-motors.c2.viz.steps.3	Électricité
 el-motors.c3.title	Moteurs asynchrones
 el-motors.c3.text	La plupart des moteurs industriels, des pompes et des ventilateurs sont des moteurs asynchrones à courant alternatif. Le stator crée un champ magnétique tournant ; celui-ci induit des courants dans le rotor, qui court après le champ. Simple, robuste, sans balais.
-el-motors.c3.viz.steps.0	Courant alternatif dans le stator
+el-motors.c3.viz.steps.0	CA dans les bobines du stator
 el-motors.c3.viz.steps.1	Champ magnétique tournant
 el-motors.c3.viz.steps.2	Courants induits dans le rotor
 el-motors.c3.viz.steps.3	Le rotor suit le champ
@@ -554,7 +554,7 @@ el-grid.c7.viz.events.1.l	une cascade déconnecte des centrales
 el-grid.c7.viz.events.2.y	soir
 el-grid.c7.viz.events.2.l	courant rétabli progressivement
 el-grid.c7.viz.events.3.y	lendemain
-el-grid.c7.viz.events.3.l	l'essentiel de l'alimentation revient
+el-grid.c7.viz.events.3.l	l'essentiel revient
 el-grid.c8.title	Le stockage sur le réseau
 el-grid.c8.text	Le pompage-turbinage stocke de l'énergie en pompant de l'eau vers le haut quand l'électricité est bon marché, puis en la relâchant dans des turbines au besoin. De grandes batteries réagissent désormais en quelques millisecondes pour stabiliser la fréquence.
 el-grid.c8.viz.l.t	Pompage-turbinage
@@ -655,11 +655,11 @@ el-batteries.c8.viz.steps.3	Se propage aux voisines
 el-batteries.c9.title	Batteries en série et en parallèle
 el-batteries.c9.text	Des cellules en série additionnent la tension ; des cellules en parallèle additionnent la capacité. Une batterie de VE peut combiner une centaine de groupes en série pour atteindre environ 400 V.
 el-batteries.c9.viz.l.t	Série
-el-batteries.c9.viz.l.items.0	les tensions s'additionnent
+el-batteries.c9.viz.l.items.0	tensions cumulées
 el-batteries.c9.viz.l.items.1	4 × 3,7 V = 14,8 V
 el-batteries.c9.viz.l.items.2	mêmes Ah
 el-batteries.c9.viz.r.t	Parallèle
-el-batteries.c9.viz.r.items.0	les capacités s'additionnent
+el-batteries.c9.viz.r.items.0	capacités cumulées
 el-batteries.c9.viz.r.items.1	même tension
 el-batteries.c9.viz.r.items.2	4 × 5 Ah = 20 Ah
 el-solar.title	Énergie solaire
@@ -839,7 +839,7 @@ el-cables.c7.viz.r.items.1	cordons et rallonges
 el-cables.c7.viz.r.items.2	supporte les flexions
 el-cables.c8.title	Rallonges
 el-cables.c8.text	Un enrouleur doit être complètement déroulé pour les fortes charges, sinon le câble enroulé emprisonne la chaleur et peut fondre. N'enchaînez jamais des multiprises pour des radiateurs ou des bouilloires.
-el-cables.c8.viz.items.0	Dérouler complètement les enrouleurs
+el-cables.c8.viz.items.0	Dérouler les enrouleurs
 el-cables.c8.viz.items.1	Vérifier les watts max. sur l'étiquette
 el-cables.c8.viz.items.2	Pas de multiprises en cascade
 el-cables.c8.viz.items.3	Pas pour des radiateurs permanents
@@ -900,7 +900,7 @@ el-earthing.c4.title	Types de différentiels
 el-earthing.c4.text	Le type AC ne détecte que les fuites en alternatif. Le type A détecte aussi le courant continu pulsé issu de l'électronique. Le type B détecte aussi le continu lisse, souvent exigé pour les bornes de VE et certains onduleurs solaires (ou un type A avec un dispositif de détection de courant continu).
 el-earthing.c4.viz.items.0	Type B : aussi le continu lisse
 el-earthing.c4.viz.items.1	Type A : alternatif et continu pulsé
-el-earthing.c4.viz.items.2	Type AC : alternatif seulement
+el-earthing.c4.viz.items.2	Type AC : alt. seul
 el-earthing.c5.title	Disjoncteurs différentiels RCBO
 el-earthing.c5.text	Un RCBO combine un disjoncteur et un différentiel en un seul appareil : un défaut sur un circuit ne fait déclencher que ce circuit, et non toute la maison.
 el-earthing.c5.viz.l.t	Un différentiel pour plusieurs circuits
@@ -992,7 +992,7 @@ el-3phase.c4.text	Les grands logements au Portugal peuvent avoir une alimentatio
 el-3phase.c4.viz.l.t	Monophasé
 el-3phase.c4.viz.l.items.0	230 V
 el-3phase.c4.viz.l.items.1	recharge jusqu'à ~7,4 kW
-el-3phase.c4.viz.l.items.2	la plupart des logements
+el-3phase.c4.viz.l.items.2	logements courants
 el-3phase.c4.viz.r.t	Triphasé
 el-3phase.c4.viz.r.items.0	400 V
 el-3phase.c4.viz.r.items.1	recharge 11–22 kW
@@ -1079,7 +1079,7 @@ el-pf.c3.viz.items.1.l	cos φ 0,9
 el-pf.c3.viz.items.2.l	cos φ 0,7
 el-pf.c4.title	Correction par condensateurs
 el-pf.c4.text	Les condensateurs appellent un courant en avance sur la tension, ce qui annule le courant en retard d'un moteur. Les usines installent des batteries de condensateurs pour ramener le facteur de puissance près de 1.
-el-pf.c4.viz.steps.0	Le courant du moteur est en retard
+el-pf.c4.viz.steps.0	Courant moteur en retard
 el-pf.c4.viz.steps.1	Ajout de condensateurs
 el-pf.c4.viz.steps.2	Le courant en avance annule le retard
 el-pf.c4.viz.steps.3	cos φ ≈ 1
@@ -1230,11 +1230,11 @@ el-ev.c0.viz.steps.1	Chargeur embarqué dans la voiture
 el-ev.c0.viz.steps.2	Continu vers la batterie
 el-ev.c1.title	Recharge rapide en continu
 el-ev.c1.text	Les chargeurs rapides convertissent l'alternatif en continu dans la borne et alimentent directement la batterie, en contournant le chargeur de la voiture. Les puissances vont de 50 kW à 350 kW.
-el-ev.c1.viz.l.t	Recharge en alternatif
+el-ev.c1.viz.l.t	Recharge en CA
 el-ev.c1.viz.l.items.0	la voiture convertit en continu
 el-ev.c1.viz.l.items.1	3,7–22 kW
 el-ev.c1.viz.l.items.2	logements et bureaux
-el-ev.c1.viz.r.t	Recharge en continu
+el-ev.c1.viz.r.t	Recharge en CC
 el-ev.c1.viz.r.items.0	la borne convertit
 el-ev.c1.viz.r.items.1	50–350 kW
 el-ev.c1.viz.r.items.2	autoroutes
@@ -1359,7 +1359,7 @@ el-tariffs.c6.text	Les ampoules LED consomment environ 80–90 % d'électricité
 el-tariffs.c6.viz.unit	watts pour ~800 lumens
 el-tariffs.c6.viz.items.0.l	Incandescence
 el-tariffs.c6.viz.items.1.l	Halogène
-el-tariffs.c6.viz.items.2.l	Fluocompacte
+el-tariffs.c6.viz.items.2.l	CFL
 el-tariffs.c6.viz.items.3.l	LED
 el-tariffs.c7.title	Chauffe-eau
 el-tariffs.c7.text	Un chauffe-eau électrique (termoacumulador) est souvent l'une des plus grosses charges isolées. Une minuterie pour les heures creuses, un réglage plus bas du thermostat (autour de 50–55 °C) et une bonne isolation réduisent les coûts. Les chauffe-eau thermodynamiques consomment environ un tiers de l'énergie.
@@ -1371,7 +1371,7 @@ el-tariffs.c8.text	Les compteurs intelligents et les moniteurs à pince (par exe
 el-tariffs.c8.viz.steps.0	Pince sur le câble principal
 el-tariffs.c8.viz.steps.1	Moniteur ou Home Assistant
 el-tariffs.c8.viz.steps.2	Voir les watts en direct
-el-tariffs.c8.viz.steps.3	Repérer le gaspillage
+el-tariffs.c8.viz.steps.3	Traquer le gaspi
 el-tariffs.c9.title	Communautés d'autoconsommation
 el-tariffs.c9.text	Au Portugal, voisins, entreprises et communes peuvent former des communautés d'énergie renouvelable et partager la production solaire via le réseau, en payant des frais de réseau sur l'énergie partagée.
 el-tariffs.c9.viz.steps.0	Solaire sur un toit
@@ -1445,7 +1445,7 @@ el-heat.c6.title	Fours et friteuses à air chaud
 el-heat.c6.text	Chauffer la cavité d'un grand four demande de l'énergie avant même que la cuisson commence. Les petits appareils comme les friteuses à air chaud et les micro-ondes chauffent un volume moindre et consomment souvent bien moins pour de petites portions.
 el-heat.c6.viz.unit	kWh pour un petit repas (approx.)
 el-heat.c6.viz.items.0.l	Four électrique
-el-heat.c6.viz.items.1.l	Friteuse à air chaud
+el-heat.c6.viz.items.1.l	Air fryer
 el-heat.c6.viz.items.2.l	Micro-ondes
 el-heat.c7.title	Thermostats et minuteries
 el-heat.c7.text	Chaque degré de moins au thermostat économise environ 5–10 % de l'énergie de chauffage. Les minuteries et thermostats intelligents ne chauffent les pièces que lorsqu'elles sont utilisées.
@@ -1473,3 +1473,327 @@ el-static.q0.o2	Les voitures sont trop basses pour être frappées
 el-static.q0.x	Elle fait office de cage de Faraday.
 el-static.q1.q	Les décharges d'électricité statique sont plus fréquentes quand…
 el-static.q1.o0	Il fait humide
+el-static.q1.o1	L'air est sec
+el-static.q1.o2	Il pleut
+el-static.q1.x	L'air sec laisse la charge s'accumuler.
+el-static.q2.q	Un courant de foudre typique est d'environ…
+el-static.q2.o0	30 A
+el-static.q2.o1	30 000 A
+el-static.q2.o2	30 mA
+el-static.q2.x	Des dizaines de milliers d'ampères pendant quelques microsecondes.
+el-static.c0.title	Charge statique
+el-static.c0.text	Frotter deux matériaux l'un contre l'autre transfère des électrons de l'un à l'autre. L'un se charge négativement, l'autre positivement. La charge reste en place (« statique ») jusqu'à ce qu'elle trouve un chemin.
+el-static.c0.viz.steps.0	Frottement des matériaux
+el-static.c0.viz.steps.1	Des électrons passent
+el-static.c0.viz.steps.2	Un côté + , un côté −
+el-static.c0.viz.steps.3	Étincelle quand un chemin apparaît
+el-static.c1.title	Pourquoi vous recevez des décharges
+el-static.c1.text	Marcher sur une moquette par temps sec accumule de la charge sur votre corps, parfois des milliers de volts. Touchez une poignée de porte métallique et elle se décharge en une minuscule étincelle. Sans danger pour vous, mais fatale pour l'électronique.
+el-static.c1.viz.items.0.v	3 000 V
+el-static.c1.viz.items.0.l	environ le seuil où on le sent
+el-static.c1.viz.items.1.v	10 000+ V
+el-static.c1.viz.items.1.l	possible par temps sec
+el-static.c2.title	Décharges électrostatiques et électronique
+el-static.c2.text	Une décharge électrostatique peut détruire des puces avec des tensions trop faibles pour être senties. C'est pourquoi les cartes sont livrées dans des sachets antistatiques et que les techniciens portent des bracelets.
+el-static.c2.viz.items.0	Porter un bracelet antistatique
+el-static.c2.viz.items.1	Utiliser tapis et sachets antistatiques
+el-static.c2.viz.items.2	Toucher d'abord un métal relié à la terre
+el-static.c2.viz.items.3	Éviter les vêtements synthétiques secs
+el-static.c3.title	Comment se forme la foudre
+el-static.c3.text	Dans les nuages d'orage, des cristaux de glace et du grésil se heurtent dans de forts courants ascendants, ce qui sépare les charges. Le haut du nuage devient positif et le bas négatif, jusqu'à ce que l'air cède dans une gigantesque étincelle.
+el-static.c3.viz.steps.0	Ascendances
+el-static.c3.viz.steps.1	Les particules de glace se heurtent
+el-static.c3.viz.steps.2	Les charges se séparent dans le nuage
+el-static.c3.viz.steps.3	L'air cède : la foudre
+el-static.c4.title	La foudre en chiffres
+el-static.c4.text	Un éclair typique transporte environ 30 000 ampères, sous des centaines de millions de volts, pendant quelques microsecondes, et chauffe l'air à environ 30 000 °C, soit environ cinq fois plus que la surface du Soleil.
+el-static.c4.viz.items.0.v	30 000 A
+el-static.c4.viz.items.0.l	courant typique
+el-static.c4.viz.items.1.v	~30 000 °C
+el-static.c4.viz.items.1.l	température de l'air
+el-static.c4.viz.items.2.l	éclairs par seconde dans le monde
+el-static.c5.title	Paratonnerres
+el-static.c5.text	Un paratonnerre offre un chemin facile vers la terre, si bien qu'un impact s'écoule sans danger le long d'un conducteur plutôt qu'à travers le bâtiment. Benjamin Franklin les a popularisés dans les années 1750.
+el-static.c5.viz.steps.0	La foudre frappe la tige
+el-static.c5.viz.steps.1	Conducteur de descente
+el-static.c5.viz.steps.2	Prise de terre
+el-static.c5.viz.steps.3	Bâtiment épargné
+el-static.c6.title	À l'abri dans une voiture
+el-static.c6.text	Une carrosserie métallique fait office de cage de Faraday : le courant circule autour de la coque métallique, pas à travers les personnes à l'intérieur. C'est le métal, et non les pneus en caoutchouc, qui vous protège.
+el-static.c6.viz.items.0.w	les pneus en caoutchouc vous protègent
+el-static.c6.viz.items.0.r	la carrosserie métallique fait passer le courant autour de vous
+el-static.c7.title	Sécurité en extérieur
+el-static.c7.text	Si l'on entend le tonnerre, on est à portée de la foudre. Mettez-vous à l'abri dans un bâtiment ou une voiture, restez loin des grands arbres isolés, des sommets et de l'eau, et attendez 30 minutes après le dernier coup de tonnerre.
+el-static.c7.viz.items.0	Du tonnerre ? Rentrez
+el-static.c7.viz.items.1	Éviter arbres isolés et sommets
+el-static.c7.viz.items.2	Sortir de l'eau
+el-static.c7.viz.items.3	Attendre 30 minutes après le dernier tonnerre
+el-static.c8.title	Surtensions dans les logements
+el-static.c8.text	Un impact proche peut induire des surtensions dans les lignes électriques et téléphoniques, qui abîment l'électronique. Des parafoudres au tableau et sur les équipements sensibles aident.
+el-static.c8.viz.steps.0	Impact proche
+el-static.c8.viz.steps.1	Surtension sur les lignes entrantes
+el-static.c8.viz.steps.2	Le parafoudre la dévie à la terre
+el-static.c8.viz.steps.3	Appareils protégés
+el-static.c9.title	L'électricité statique dans l'industrie
+el-static.c9.text	Les carburants, poudres et films plastiques en mouvement peuvent accumuler une statique dangereuse. Les stations-service, silos à grain et ateliers de peinture utilisent mise à la terre et liaisons équipotentielles pour éviter les étincelles qui pourraient enflammer vapeurs ou poussières.
+el-static.c9.viz.items.0	Mettre les citernes à la terre avant de décharger
+el-static.c9.viz.items.1	Relier tuyaux et récipients
+el-static.c9.viz.items.2	Contrôler l'humidité
+el-static.c9.viz.items.3	Utiliser des matériaux antistatiques
+el-safety.title	Sécurité électrique
+el-safety.summary	Les règles qui protègent les personnes et les logements.
+el-safety.q0.q	Que faut-il faire en premier si quelqu'un reste collé à un appareil sous tension ?
+el-safety.q0.o0	Le tirer par le bras
+el-safety.q0.o1	Couper le courant ou les séparer avec un objet sec et non conducteur
+el-safety.q0.o2	Lui jeter de l'eau
+el-safety.q0.x	Ne le touchez jamais tant qu'il est sous tension.
+el-safety.q1.q	Pourquoi les connexions desserrées sont-elles dangereuses ?
+el-safety.q1.o0	Elles gaspillent l'eau
+el-safety.q1.o1	Une résistance plus élevée les fait chauffer et peut déclencher des incendies
+el-safety.q1.o2	Elles font tomber la tension à zéro
+el-safety.q1.x	La chaleur et l'oxydation les aggravent.
+el-safety.q2.q	Quel travail faut-il laisser à un électricien qualifié ?
+el-safety.q2.o0	Changer une ampoule
+el-safety.q2.o1	Ajouter un nouveau circuit au tableau
+el-safety.q2.o2	Réarmer un disjoncteur
+el-safety.q2.x	Les travaux sur l'installation fixe demandent un professionnel.
+el-safety.c0.title	Trois dangers
+el-safety.c0.text	L'électricité fait mal de trois façons : l'électrisation (courant à travers le corps), les brûlures (arcs ou surfaces chaudes) et l'incendie (câbles ou connexions qui surchauffent).
+el-safety.c0.viz.root	Dangers
+el-safety.c0.viz.items.0	Choc
+el-safety.c0.viz.items.1	Brûlures et arcs
+el-safety.c0.viz.items.2	Incendie
+el-safety.c1.title	Le trajet du courant compte
+el-safety.c1.text	Un courant de main à main ou de main à pied traverse la poitrine et le cœur, les trajets les plus dangereux. Une peau mouillée a une résistance bien plus faible et laisse passer davantage de courant sous la même tension.
+el-safety.c1.viz.l.t	Peau sèche
+el-safety.c1.viz.l.items.0	résistance plus élevée
+el-safety.c1.viz.l.items.1	moins de courant
+el-safety.c1.viz.r.t	Peau mouillée
+el-safety.c1.viz.r.items.0	résistance bien plus faible
+el-safety.c1.viz.r.items.1	bien plus de courant
+el-safety.c2.title	Eau et électricité
+el-safety.c2.text	Les salles de bains et les cuisines obéissent à des règles spéciales : des zones autour des baignoires et des douches limitent les équipements autorisés, et tous les circuits doivent être protégés par un différentiel 30 mA.
+el-safety.c2.viz.items.0	Pas de prises standard près des baignoires
+el-safety.c2.viz.items.1	Appareillage IP dans les zones humides
+el-safety.c2.viz.items.2	Protection par différentiel 30 mA
+el-safety.c2.viz.items.3	Jamais d'appareil secteur dans le bain
+el-safety.c3.title	Connexions desserrées
+el-safety.c3.text	Une borne à vis desserrée a une petite surface de contact et une résistance plus élevée : elle chauffe, s'oxyde et chauffe encore plus. De nombreux incendies électriques démarrent à une connexion, et non au milieu d'un câble.
+el-safety.c3.viz.steps.0	Borne desserrée
+el-safety.c3.viz.steps.1	Résistance plus élevée
+el-safety.c3.viz.steps.2	Chaleur et oxydation
+el-safety.c3.viz.steps.3	Contact encore pire
+el-safety.c4.title	Signes d'alerte
+el-safety.c4.text	Appelez un électricien si vous voyez des traces de brûlure, sentez du plastique brûlé, entendez des crépitements, sentez des prises ou interrupteurs chauds, ou si des disjoncteurs déclenchent à répétition.
+el-safety.c4.viz.items.0	Traces de brûlure
+el-safety.c4.viz.items.1	Odeur de brûlé
+el-safety.c4.viz.items.2	Crépitements ou bourdonnements
+el-safety.c4.viz.items.3	Prises ou fiches chaudes
+el-safety.c4.viz.items.4	Déclenchements répétés
+el-safety.c5.title	Si quelqu'un est électrisé
+el-safety.c5.text	Ne le touchez pas tant qu'il est en contact avec la source. Coupez le courant ou séparez-le avec un objet sec et non conducteur, appelez le 112 et commencez la réanimation cardio-pulmonaire si nécessaire.
+el-safety.c5.viz.steps.0	Ne pas le toucher
+el-safety.c5.viz.steps.1	Couper le courant
+el-safety.c5.viz.steps.2	Appeler le 112
+el-safety.c5.viz.steps.3	Vérifier la respiration, démarrer la RCP
+el-safety.c6.title	Les limites du bricolage
+el-safety.c6.text	Changer une ampoule ou brancher des appareils ne pose pas de problème. Les nouveaux circuits, les travaux sur le tableau et tout ce qui touche à l'installation fixe doivent être faits par un électricien qualifié, et au Portugal les nouvelles installations exigent une certification.
+el-safety.c6.viz.l.t	Bricolage OK
+el-safety.c6.viz.l.items.0	ampoules
+el-safety.c6.viz.l.items.1	fiches d'appareils
+el-safety.c6.viz.l.items.2	réarmer les disjoncteurs
+el-safety.c6.viz.r.t	Électricien
+el-safety.c6.viz.r.items.0	nouveaux circuits
+el-safety.c6.viz.r.items.1	tableau
+el-safety.c6.viz.r.items.2	bornes VE, solaire
+el-safety.c7.title	Multiprises surchargées
+el-safety.c7.text	Brancher plusieurs appareils de forte puissance sur une même multiprise peut la surcharger, ainsi que la prise murale derrière. Radiateurs, bouilloires et fers à repasser doivent chacun avoir leur propre prise murale.
+el-safety.c7.viz.items.0.w	radiateur + bouilloire sur une multiprise
+el-safety.c7.viz.items.0.r	un appareil de forte puissance par prise murale
+el-safety.c8.title	Lignes aériennes
+el-safety.c8.text	Ne faites jamais voler de drones ni de cerfs-volants, ne dressez jamais d'échelles ni de mâts de bateau près de lignes électriques aériennes. La haute tension peut amorcer un arc à travers l'air sans contact.
+el-safety.c8.viz.items.0	Tenir les échelles bien à l'écart
+el-safety.c8.viz.items.1	Pas de cerfs-volants ni de drones près des lignes
+el-safety.c8.viz.items.2	Surveiller mâts et grues
+el-safety.c8.viz.items.3	Signaler les lignes tombées, ne pas s'approcher
+el-safety.c9.title	Le mythe des 230 V
+el-safety.c9.text	« Seulement 230 V » suffisent pour tuer. Ce qui compte, c'est le courant à travers le corps, et sous 230 V un trajet main à main mouillé peut facilement laisser passer plus que les 30–50 mA qui peuvent perturber le cœur.
+el-safety.c9.viz.f	I = U ÷ R
+el-safety.c9.viz.items.0.s	230 V
+el-safety.c9.viz.items.0.m	secteur
+el-safety.c9.viz.items.1.s	~1 000 Ω
+el-safety.c9.viz.items.1.m	trajet corporel mouillé
+el-safety.c9.viz.items.2.s	≈ 230 mA
+el-safety.c9.viz.items.2.m	courant dangereux
+el-backup.title	Batteries domestiques et secours
+el-backup.summary	Stocker l'énergie solaire et garder la lumière allumée.
+el-backup.q0.q	Pourquoi de nombreuses installations solaires s'arrêtent-elles pendant une panne de courant ?
+el-backup.q0.o0	Pour ménager les panneaux
+el-backup.q0.o1	Pour éviter d'injecter du courant dans des lignes que les agents croient hors tension
+el-backup.q0.o2	Parce que le soleil se couche
+el-backup.q0.x	La protection anti-îlotage protège les agents qui interviennent sur les lignes.
+el-backup.q1.q	Comment dimensionner une batterie domestique ?
+el-backup.q1.o0	Égale à la taille des panneaux
+el-backup.q1.o1	Autour de votre consommation du soir et de la nuit
+el-backup.q1.o2	La plus grosse possible, toujours
+el-backup.q1.x	Stockez ce que vous achèteriez sinon après le coucher du soleil.
+el-backup.q2.q	Où doit fonctionner un groupe électrogène à essence ?
+el-backup.q2.o0	Dans le garage
+el-backup.q2.o1	À l'extérieur, loin des fenêtres
+el-backup.q2.o2	Dans la cuisine
+el-backup.q2.x	Le monoxyde de carbone est mortel.
+el-backup.c0.title	Pourquoi une batterie domestique ?
+el-backup.c0.text	Une batterie stocke le surplus solaire de midi pour le soir, ce qui augmente l'autoconsommation, et peut décaler l'énergie bon marché de la nuit vers les heures chères. Certains systèmes assurent aussi un secours en cas de coupure.
+el-backup.c0.viz.steps.0	Surplus solaire à midi
+el-backup.c0.viz.steps.1	Charger la batterie
+el-backup.c0.viz.steps.2	Usage du soir
+el-backup.c0.viz.steps.3	Moins d'achats sur le réseau
+el-backup.c1.title	Dimensionner une batterie
+el-backup.c1.text	Dimensionnez la batterie sur votre consommation du soir et de la nuit, pas sur toute votre journée. De nombreux logements consomment 5–10 kWh entre le coucher et le lever du soleil.
+el-backup.c1.viz.f	kWh ≈ usage du soir ÷ profondeur utile
+el-backup.c1.viz.items.0.s	6 kWh
+el-backup.c1.viz.items.0.m	usage du soir
+el-backup.c1.viz.items.1.m	profondeur utile
+el-backup.c1.viz.items.2.s	≈ 6,7 kWh
+el-backup.c1.viz.items.2.m	taille de batterie
+el-backup.c2.title	Onduleurs hybrides
+el-backup.c2.text	Un onduleur hybride relie panneaux, batterie, maison et réseau, et décide où va l'énergie : d'abord à la maison, puis à la batterie, puis à l'export.
+el-backup.c2.viz.steps.0	Panneaux
+el-backup.c2.viz.steps.1	Onduleur hybride
+el-backup.c2.viz.steps.2	D'abord la maison
+el-backup.c2.viz.steps.3	Puis la batterie
+el-backup.c2.viz.steps.4	Puis le réseau
+el-backup.c3.title	Le secours n'est pas automatique
+el-backup.c3.text	De nombreuses installations solaires raccordées au réseau s'arrêtent pendant une panne par sécurité, afin que les agents de ligne ne soient pas blessés par un courant réinjecté. Le secours exige un onduleur avec commutateur d'îlotage et un circuit de secours.
+el-backup.c3.viz.l.t	Réseau seul
+el-backup.c3.viz.l.items.0	s'arrête en cas de panne
+el-backup.c3.viz.l.items.1	pas de secours
+el-backup.c3.viz.r.t	Hybride avec secours
+el-backup.c3.viz.r.items.0	s'isole du réseau
+el-backup.c3.viz.r.items.1	alimente l'essentiel
+el-backup.c4.title	Charges essentielles
+el-backup.c4.text	Plutôt que de sécuriser toute la maison, de nombreux systèmes alimentent un tableau de « charges essentielles » : réfrigérateur, éclairage, box, commande de la chaudière, quelques prises.
+el-backup.c4.viz.items.0	Réfrigérateur et congélateur
+el-backup.c4.viz.items.1	Éclairage
+el-backup.c4.viz.items.2	Box et réseau
+el-backup.c4.viz.items.3	Commandes de chauffage
+el-backup.c4.viz.items.4	Quelques prises
+el-backup.c5.title	Onduleur de secours pour l'électronique
+el-backup.c5.text	Une alimentation sans interruption (onduleur) maintient un ordinateur, un NAS ou le réseau en marche pendant quelques minutes lors d'une coupure et permet un arrêt propre. Elle est caractérisée en VA et en autonomie à une charge donnée.
+el-backup.c5.viz.steps.0	Le réseau tombe
+el-backup.c5.viz.steps.1	La batterie de l'onduleur prend le relais en millisecondes
+el-backup.c5.viz.steps.2	Quelques minutes d'autonomie
+el-backup.c5.viz.steps.3	Arrêt propre
+el-backup.c6.title	Groupes électrogènes
+el-backup.c6.text	Les groupes électrogènes portables à essence assurent un secours, mais ne doivent jamais fonctionner à l'intérieur (monoxyde de carbone). Le raccorder à la maison exige un inverseur de source adapté, pour qu'il ne puisse pas alimenter le réseau.
+el-backup.c6.viz.items.0.w	rallonge branchée dans le tableau
+el-backup.c6.viz.items.0.r	inverseur posé par un électricien
+el-backup.c6.viz.items.1.w	le faire tourner au garage
+el-backup.c6.viz.items.1.r	le faire tourner dehors, loin des fenêtres
+el-backup.c7.title	Du véhicule à la maison
+el-backup.c7.text	Certains VE peuvent alimenter une maison grâce à la recharge bidirectionnelle (V2H) ou alimenter des appareils via une prise (V2L). Une batterie de VE de 70 kWh pourrait alimenter un logement type pendant des jours.
+el-backup.c7.viz.items.0.a	V2L
+el-backup.c7.viz.items.0.b	prises depuis la voiture
+el-backup.c7.viz.items.1.a	V2H
+el-backup.c7.viz.items.1.b	alimente la maison
+el-backup.c7.viz.items.2.a	V2G
+el-backup.c7.viz.items.2.b	alimente le réseau
+el-backup.c8.title	Rentabilité
+el-backup.c8.text	Les batteries domestiques ne se rentabilisent pas toujours par les seules économies. Le dossier s'améliore avec une forte consommation du soir, des tarifs horaires, de faibles prix de rachat, ou un fort besoin de secours.
+el-backup.c8.viz.items.0	Forte consommation le soir
+el-backup.c8.viz.items.1	Gros écart de prix entre heures pleines et creuses
+el-backup.c8.viz.items.2	Faible rémunération du solaire exporté
+el-backup.c8.viz.items.3	Coupures fréquentes
+el-backup.c9.title	Sécurité et emplacement
+el-backup.c9.text	Installez les batteries dans un endroit ventilé, frais et sec, à l'écart des chambres et des issues, avec les dégagements indiqués par le fabricant. La chimie LFP est préférée pour les logements car elle est plus stable thermiquement.
+el-backup.c9.viz.items.0	Frais, sec, ventilé
+el-backup.c9.viz.items.1	Sans bloquer les issues
+el-backup.c9.viz.items.2	Dégagements du fabricant
+el-backup.c9.viz.items.3	Préférer la chimie LFP
+el-history.title	Une histoire de l'électricité
+el-history.summary	De l'ambre au réseau intelligent.
+el-history.q0.q	Le volt tire son nom de…
+el-history.q0.o0	James Watt
+el-history.q0.o1	Alessandro Volta
+el-history.q0.o2	Michael Faraday
+el-history.q0.x	Volta a construit la première pile en 1800.
+el-history.q1.q	Qui a découvert l'induction électromagnétique en 1831 ?
+el-history.q1.o0	Edison
+el-history.q1.o1	Faraday
+el-history.q1.o2	Maxwell
+el-history.q1.x	Faraday a montré que des aimants en mouvement induisent un courant.
+el-history.q2.q	Qu'a remplacé le transistor en 1947 ?
+el-history.q2.o0	Les piles
+el-history.q2.o1	Les tubes à vide
+el-history.q2.o2	Les fils de cuivre
+el-history.q2.x	Les transistors ont rendu l'électronique petite et fiable.
+el-history.c0.title	L'ambre et le mot « électrique »
+el-history.c0.text	Les Grecs de l'Antiquité avaient remarqué que l'ambre frotté attirait les plumes. Le mot grec pour l'ambre, « elektron », nous a donné « électricité », un terme forgé par William Gilbert vers 1600.
+el-history.c0.viz.events.0.y	~600 av. J.-C.
+el-history.c0.viz.events.0.l	Thalès et l'ambre
+el-history.c0.viz.events.1.l	Gilbert invente « electricus »
+el-history.c0.viz.events.2.l	Le cerf-volant de Franklin
+el-history.c0.viz.events.3.l	La pile de Volta
+el-history.c1.title	La pile de Volta, 1800
+el-history.c1.text	Alessandro Volta a empilé des disques de zinc et de cuivre séparés par du tissu imbibé de saumure : la première pile à donner un courant régulier. Le volt porte son nom.
+el-history.c1.viz.steps.0	Disque de zinc
+el-history.c1.viz.steps.1	Tissu imbibé de saumure
+el-history.c1.viz.steps.2	Disque de cuivre
+el-history.c1.viz.steps.3	On répète : courant régulier
+el-history.c2.title	Les découvertes de Faraday
+el-history.c2.text	En 1831, Michael Faraday a montré que des aimants en mouvement induisent des courants, principe de tout générateur et de tout transformateur. Il avait peu d'instruction formelle et est devenu l'un des plus grands expérimentateurs de tous les temps.
+el-history.c2.viz.items.0.l	induction électromagnétique
+el-history.c2.viz.items.1.l	découverte à la base de tous les générateurs
+el-history.c3.title	Les équations de Maxwell
+el-history.c3.text	Dans les années 1860, James Clerk Maxwell a écrit quatre équations unifiant électricité, magnétisme et lumière. Elles prédisaient les ondes radio, que Hertz a démontrées en 1887.
+el-history.c3.viz.events.0.l	La théorie de Maxwell
+el-history.c3.viz.events.1.l	Hertz produit des ondes radio
+el-history.c3.viz.events.2.l	La radio de Marconi
+el-history.c4.title	Ampoules électriques
+el-history.c4.text	De nombreux inventeurs ont travaillé sur l'éclairage électrique. En 1879, Edison et, en Grande-Bretagne, Swan ont produit des ampoules à filament de carbone pratiques et durables. Edison a aussi construit les centrales et le réseau pour vendre l'électricité.
+el-history.c4.viz.events.0.l	ampoules à incandescence pratiques
+el-history.c4.viz.events.1.l	Centrale de Pearl Street, New York
+el-history.c4.viz.events.2.y	années 1920
+el-history.c4.viz.events.2.l	logements largement électrifiés aux États-Unis
+el-history.c5.title	L'électricité au Portugal
+el-history.c5.text	Les premières lumières électriques du Portugal ont été allumées à Cascais en 1878. De grands barrages hydroélectriques à partir des années 1950, sur des fleuves comme le Zêzere et le Douro, ont porté l'électrification du pays.
+el-history.c5.viz.events.0.l	premières lumières électriques, Cascais
+el-history.c5.viz.events.1.l	Barrage de Castelo do Bode
+el-history.c5.viz.events.2.y	années 1960–70
+el-history.c5.viz.events.2.l	Barrages du Douro
+el-history.c5.viz.events.3.y	années 2000
+el-history.c5.viz.events.3.l	boom éolien
+el-history.c6.title	Le transistor, 1947
+el-history.c6.text	Aux laboratoires Bell, Bardeen, Brattain et Shockley ont construit le premier transistor. Il a remplacé les encombrants tubes à vide et rendu possibles l'électronique moderne, les ordinateurs et les téléphones.
+el-history.c6.viz.steps.0	Tubes à vide
+el-history.c6.viz.steps.1	Transistor 1947
+el-history.c6.viz.steps.2	Circuit intégré 1958
+el-history.c6.viz.steps.3	Des milliards par puce aujourd'hui
+el-history.c7.title	Nucléaire et renouvelables
+el-history.c7.text	Les premières centrales nucléaires sont apparues dans les années 1950. À partir des années 2000, l'éolien puis le solaire se sont développés rapidement à mesure que les coûts baissaient ; le prix des modules solaires a chuté d'environ 90 % dans les années 2010.
+el-history.c7.viz.events.0.l	première centrale nucléaire sur réseau (Obninsk)
+el-history.c7.viz.events.1.y	années 1980
+el-history.c7.viz.events.1.l	premiers parcs éoliens
+el-history.c7.viz.events.2.y	années 2010
+el-history.c7.viz.events.2.l	coût du solaire en baisse de ~90 %
+el-history.c7.viz.events.3.y	années 2020
+el-history.c7.viz.events.3.l	les renouvelables en tête
+el-history.c8.title	Des unités qui portent des noms de personnes
+el-history.c8.text	De nombreuses unités honorent des scientifiques : volt (Volta), ampère (Ampère), ohm (Ohm), watt (Watt), hertz (Hertz), coulomb (Coulomb), tesla (Tesla).
+el-history.c8.viz.items.0.a	volt
+el-history.c8.viz.items.0.b	Alessandro Volta
+el-history.c8.viz.items.1.a	ampère
+el-history.c8.viz.items.1.b	André-Marie Ampère
+el-history.c8.viz.items.2.a	ohm
+el-history.c8.viz.items.2.b	Georg Ohm
+el-history.c8.viz.items.3.a	watt
+el-history.c8.viz.items.3.b	James Watt
+el-history.c8.viz.items.4.a	hertz
+el-history.c8.viz.items.4.b	Heinrich Hertz
+el-history.c9.title	Et ensuite ?
+el-history.c9.text	L'électricité prend en charge une part croissante de l'énergie utilisée : voitures, chauffage, industrie. Les défis sont désormais le stockage, l'extension du réseau et l'ajustement d'une offre renouvelable variable à la demande.
+el-history.c9.viz.items.0	Transport électrique
+el-history.c9.viz.items.1	Pompes à chaleur
+el-history.c9.viz.items.2	Stockage sur le réseau
+el-history.c9.viz.items.3	Réseaux plus vastes et intelligents
+el-history.c9.viz.items.4	Hydrogène vert pour l'industrie

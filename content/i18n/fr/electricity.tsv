@@ -1,0 +1,250 @@
+P.title	Électricité
+P.blurb	De la loi d'Ohm au tableau électrique de votre couloir.
+el-basics.title	Tension, courant et résistance
+el-basics.summary	Les trois grandeurs à la base de tout circuit, et la loi qui les relie.
+el-basics.q0.q	Une pile de 9 V fait circuler un courant dans une résistance de 450 Ω. Quelle est l'intensité du courant ?
+el-basics.q0.o0	20 mA
+el-basics.q0.o1	2 A
+el-basics.q0.o2	4 mA
+el-basics.q0.o3	50 mA
+el-basics.q0.x	I = U ÷ R = 9 ÷ 450 = 0,02 A, soit 20 mA.
+el-basics.q1.q	Dans l'analogie de l'eau, qu'est-ce qui joue le rôle de la tension ?
+el-basics.q1.o0	La vitesse d'écoulement de l'eau
+el-basics.q1.o1	La pression de l'eau (hauteur du réservoir)
+el-basics.q1.o2	La largeur du tuyau
+el-basics.q1.x	La tension est la poussée, comme la pression. Le débit est le courant ; l'étroitesse du tuyau est la résistance.
+el-basics.q2.q	Vous doublez la résistance en gardant la même tension. Le courant…
+el-basics.q2.o0	double
+el-basics.q2.o1	reste le même
+el-basics.q2.o2	est divisé par deux
+el-basics.q2.x	I = U ÷ R. Avec R deux fois plus grand et la même U, le courant est deux fois plus faible.
+el-basics.q3.q	Pourquoi les longues liaisons demandent-elles des câbles plus épais ?
+el-basics.q3.o0	Les câbles épais sont plus jolis
+el-basics.q3.o1	La résistance augmente avec la longueur, donc une section plus grande compense
+el-basics.q3.o2	Les câbles longs transportent moins de tension
+el-basics.q3.x	R = ρ × L ÷ S : plus de section compense plus de longueur.
+el-basics.q4.q	À quoi sert un interrupteur ?
+el-basics.q4.o0	Il change la tension
+el-basics.q4.o1	Il ouvre ou ferme le circuit
+el-basics.q4.o2	Il stocke de l'énergie
+el-basics.q4.x	Éteint = boucle ouverte, allumé = boucle fermée.
+el-basics.c0.title	L'électricité, c'est de la charge en mouvement
+el-basics.c0.text	Un courant est un flux de charge électrique. Dans un fil métallique, ce sont des électrons qui se poussent les uns les autres. Chaque électron avance lentement, mais la poussée traverse le fil presque instantanément, comme l'eau qui remplit déjà un tuyau d'arrosage.\n\nPar convention, le courant est dessiné de + vers −, à l'opposé du sens des électrons. Tous les schémas de circuits suivent cette convention.
+el-basics.c0.sketch.5	les électrons dérivent ainsi
+el-basics.c0.sketch.6	courant, par convention
+el-basics.c1.title	L'analogie de l'eau
+el-basics.c1.text	Imaginez un réservoir qui alimente un tuyau.\n• La tension est la pression, déterminée par la hauteur de l'eau.\n• Le courant est la quantité d'eau qui s'écoule par seconde.\n• La résistance est un rétrécissement du tuyau qui limite le débit.\n\nPlus de pression pousse plus de débit ; un tuyau plus étroit en laisse passer moins. C'est toute l'idée de la loi d'Ohm.
+el-basics.c1.sketch.0	hauteur ≈ tension
+el-basics.c1.sketch.1	débit ≈ courant
+el-basics.c1.sketch.2	étroit ≈ résistance
+el-basics.c2.title	La loi d'Ohm
+el-basics.c2.text	La tension (volts, V) est égale à l'intensité (ampères, A) multipliée par la résistance (ohms, Ω). Dans le triangle, masquez la grandeur recherchée : les deux autres vous indiquent comment l'obtenir.
+el-basics.c2.formula	U = I × R
+el-basics.c2.example.0	Batterie de 12 V aux bornes d'un radiateur de 4 Ω
+el-basics.c2.example.1	I = U ÷ R = 12 ÷ 4
+el-basics.c2.example.2	= 3 A
+el-basics.c2.sketch.0	U
+el-basics.c2.sketch.1	I
+el-basics.c2.sketch.2	R
+el-basics.c2.sketch.3	U = I × R
+el-basics.c2.sketch.4	I = U ÷ R
+el-basics.c2.sketch.5	R = U ÷ I
+el-basics.c3.title	À vous : atténuer l'ampoule
+el-basics.c3.text	Modifiez la tension et la résistance. Observez le courant et la puissance que l'ampoule transforme en lumière et en chaleur.
+el-basics.c4.title	C'est le courant qui fait mal
+el-basics.c4.text	Votre corps est aussi une résistance. Pour la sécurité, ce qui compte, c'est l'intensité du courant qui le traverse, et son trajet.\nÀ environ 1 mA, on ressent un picotement. Vers 10 mA, les muscles peuvent se crisper et vous pouvez ne plus réussir à lâcher prise. À partir de 50–100 mA environ à travers la poitrine, le cœur peut entrer en fibrillation.\n\nC'est pourquoi les disjoncteurs différentiels domestiques se déclenchent à 30 mA : bien avant la zone dangereuse.
+el-basics.c4.sketch.0	on le sent
+el-basics.c4.sketch.1	impossible de lâcher
+el-basics.c4.sketch.2	le différentiel coupe
+el-basics.c4.sketch.3	risque cardiaque
+el-basics.c4.sketch.4	1 mA
+el-basics.c4.sketch.5	10 mA
+el-basics.c4.sketch.6	30 mA
+el-basics.c4.sketch.7	100 mA
+el-basics.c4.sketch.8	courant dans le corps (échelle log)
+el-basics.c5.title	Conducteurs et isolants
+el-basics.c5.text	Dans les métaux, certains électrons sont libres de se déplacer, si bien que le courant circule facilement : cuivre, aluminium, argent. Dans les isolants comme le plastique, le caoutchouc, le verre et le bois sec, les électrons sont fortement retenus et presque aucun courant ne passe.\n\nLes câbles associent les deux : une âme en cuivre dans une gaine en plastique.
+el-basics.c5.viz.l.t	Conducteurs
+el-basics.c5.viz.l.items.0	cuivre
+el-basics.c5.viz.l.items.1	aluminium
+el-basics.c5.viz.l.items.2	eau salée
+el-basics.c5.viz.r.t	Isolants
+el-basics.c5.viz.r.items.0	PVC
+el-basics.c5.viz.r.items.1	caoutchouc
+el-basics.c5.viz.r.items.2	verre
+el-basics.c6.title	Résistance d'un fil
+el-basics.c6.text	La résistance d'un fil augmente avec sa longueur et diminue avec sa section. C'est pourquoi les longues liaisons demandent des câbles plus épais, et pourquoi les rallonges fines chauffent.
+el-basics.c6.example.0	100 m de cuivre de 2,5 mm² (ρ ≈ 0,0175)
+el-basics.c6.example.1	0,0175 × 100 ÷ 2,5
+el-basics.c6.example.2	≈ 0,7 Ω
+el-basics.c6.viz.f	R = ρ × L ÷ S
+el-basics.c6.viz.items.0.s	ρ
+el-basics.c6.viz.items.0.m	résistivité du métal
+el-basics.c6.viz.items.1.s	L
+el-basics.c6.viz.items.1.m	longueur
+el-basics.c6.viz.items.2.s	S
+el-basics.c6.viz.items.2.m	section
+el-basics.c7.title	Mesurer avec des unités
+el-basics.c7.text	Les préfixes rendent les nombres maniables. Un chargeur de téléphone fournit environ 2 A, un capteur consomme quelques milliampères, et le réseau national transporte des kilovolts.
+el-basics.c7.viz.items.0.a	milli (m)
+el-basics.c7.viz.items.0.b	un millième
+el-basics.c7.viz.items.1.a	kilo (k)
+el-basics.c7.viz.items.1.b	mille
+el-basics.c7.viz.items.2.a	méga (M)
+el-basics.c7.viz.items.2.b	un million
+el-basics.c7.viz.items.3.a	micro (µ)
+el-basics.c7.viz.items.3.b	un millionième
+el-basics.c8.title	Courts-circuits
+el-basics.c8.text	Un court-circuit est un chemin presque sans résistance entre la phase et le neutre. D'après la loi d'Ohm, le courant devient énorme et échauffe les câbles en une fraction de seconde. Les fusibles et les disjoncteurs existent pour le couper avant qu'un incendie ne se déclare.
+el-basics.c8.viz.steps.0	L'isolant lâche
+el-basics.c8.viz.steps.1	Phase touche neutre
+el-basics.c8.viz.steps.2	Courant énorme
+el-basics.c8.viz.steps.3	Le disjoncteur coupe en millisecondes
+el-basics.c9.title	Circuits ouverts et fermés
+el-basics.c9.text	Le courant ne circule que dans une boucle complète. Un interrupteur ouvre simplement la boucle (éteint) ou la ferme (allumé). Un fil cassé, un fusible grillé ou une borne desserrée ouvrent tous le circuit.
+el-basics.c9.viz.l.t	Circuit fermé
+el-basics.c9.viz.l.items.0	boucle complète
+el-basics.c9.viz.l.items.1	le courant passe
+el-basics.c9.viz.l.items.2	lampe allumée
+el-basics.c9.viz.r.t	Circuit ouvert
+el-basics.c9.viz.r.items.0	coupure dans la boucle
+el-basics.c9.viz.r.items.1	pas de courant
+el-basics.c9.viz.r.items.2	lampe éteinte
+el-home.title	Les circuits à la maison
+el-home.summary	Série ou parallèle, puissance, et ce que font vraiment les disjoncteurs de votre tableau.
+el-home.q0.q	Pourquoi chaque prise d'une maison reçoit-elle la totalité des 230 V ?
+el-home.q0.o0	Elles sont câblées en série
+el-home.q0.o1	Elles sont câblées en parallèle
+el-home.q0.o2	Chaque prise a son propre transformateur
+el-home.q0.x	En parallèle, chaque charge est branchée directement entre la phase et le neutre, donc chacune reçoit toute la tension d'alimentation.
+el-home.q1.q	Un radiateur de 1150 W fonctionne sous 230 V. Quel courant absorbe-t-il ?
+el-home.q1.o0	0,2 A
+el-home.q1.o1	5 A
+el-home.q1.o2	50 A
+el-home.q1.o3	23 A
+el-home.q1.x	I = P ÷ U = 1150 ÷ 230 = 5 A.
+el-home.q2.q	Qu'est-ce qui fait déclencher un différentiel ?
+el-home.q2.o0	Un courant total supérieur à son calibre
+el-home.q2.o1	Le courant qui part par la phase ne revient pas en totalité par le neutre
+el-home.q2.o2	La tension tombe sous 200 V
+el-home.q2.x	Un différentiel mesure le déséquilibre entre la phase et le neutre. La surintensité, c'est le travail du disjoncteur.
+el-home.q3.q	Un four de 1,5 kW fonctionne 4 heures. Quelle énergie cela représente-t-il ?
+el-home.q3.o0	6 kWh
+el-home.q3.o1	1,5 kWh
+el-home.q3.o2	375 Wh
+el-home.q3.x	1,5 kW × 4 h = 6 kWh.
+el-home.q4.q	Un contrat de 6,9 kVA autorise à peu près quel courant sous 230 V ?
+el-home.q4.o0	6,9 A
+el-home.q4.o1	30 A
+el-home.q4.o2	230 A
+el-home.q4.x	6 900 ÷ 230 ≈ 30 A.
+el-home.q5.q	20 W en veille, toute l'année, consomment environ…
+el-home.q5.o0	20 kWh
+el-home.q5.o1	175 kWh
+el-home.q5.o2	1 750 kWh
+el-home.q5.x	20 × 8 760 ÷ 1 000 ≈ 175 kWh.
+el-home.c0.title	Série ou parallèle
+el-home.c0.text	En série, les composants partagent une seule boucle. Le même courant les traverse tous et la tension se répartit entre eux. Une seule coupure arrête tout, comme dans les anciennes guirlandes de Noël.\n\nEn parallèle, chaque composant a son propre chemin vers l'alimentation. Chacun reçoit toute la tension et peut être allumé ou éteint indépendamment.
+el-home.c0.sketch.0	série
+el-home.c0.sketch.1	un seul chemin partagé
+el-home.c0.sketch.2	parallèle
+el-home.c0.sketch.3	un chemin chacun
+el-home.c1.title	Votre maison est câblée en parallèle
+el-home.c1.text	Chaque prise et chaque lumière est branchée entre les conducteurs de phase (L) et de neutre (N). C'est pourquoi chaque appareil reçoit les 230 V complets, et pourquoi éteindre la bouilloire n'éteint pas le réfrigérateur.\n\nPlus vous branchez d'appareils, plus le courant total augmente dans le fil de phase. C'est ce total que surveillent les disjoncteurs.
+el-home.c1.sketch.0	L  230 V
+el-home.c1.sketch.1	N
+el-home.c1.sketch.2	bouilloire
+el-home.c1.sketch.3	lampe
+el-home.c1.sketch.4	frigo
+el-home.c2.title	Puissance
+el-home.c2.text	La puissance (watts) indique la vitesse à laquelle l'énergie est utilisée. Multipliez la tension par le courant. Réarrangée, I = P ÷ U indique quel courant un appareil absorbe.
+el-home.c2.formula	P = U × I
+el-home.c2.example.0	Bouilloire de 2300 W sous 230 V
+el-home.c2.example.1	I = 2300 ÷ 230
+el-home.c2.example.2	= 10 A
+el-home.c2.sketch.0	2300 W
+el-home.c2.sketch.1	÷ 230 V
+el-home.c2.sketch.2	= 10 A
+el-home.c3.title	Disjoncteurs et différentiels
+el-home.c3.text	Un disjoncteur protège le câble. Si le courant est trop élevé, le fil surchaufferait, donc il se déclenche. Un disjoncteur de 16 A sur un circuit de prises est courant.\n\nUn différentiel protège les personnes. Il compare le courant qui part par la phase à celui qui revient par le neutre. S'il en manque environ 30 mA, c'est qu'il y a une fuite quelque part, peut-être à travers une personne, et il coupe en une fraction de seconde.
+el-home.c3.sketch.0	10,00 A à l'aller
+el-home.c3.sketch.1	9,97 A au retour
+el-home.c3.sketch.2	charge
+el-home.c3.sketch.3	30 mA manquent → déclenchement !
+el-home.c4.title	Lire sa facture : le kWh
+el-home.c4.text	Vous payez de l'énergie, pas de la puissance. Énergie = puissance × temps, mesurée en kilowattheures (kWh). Un kWh correspond à 1 kW qui fonctionne pendant une heure.
+el-home.c4.example.0	Radiateur de 2 kW pendant 3 heures
+el-home.c4.example.1	2 kW × 3 h = 6 kWh
+el-home.c4.example.2	à 0,20 € le kWh → 1,20 €
+el-home.c4.sketch.1	kWh
+el-home.c4.sketch.2	énergie = puissance × temps
+el-home.c5.title	Circuits domestiques types
+el-home.c5.text	Au Portugal et dans une grande partie de l'Europe, les logements sont divisés en circuits, chacun avec son propre disjoncteur : éclairage, prises générales, cuisine, et gros appareils comme le four ou le chauffe-eau.
+el-home.c5.viz.unit	ampères (disjoncteur type)
+el-home.c5.viz.items.0.l	Éclairage
+el-home.c5.viz.items.1.l	Prises
+el-home.c5.viz.items.2.l	Lave-linge
+el-home.c5.viz.items.3.l	Four
+el-home.c5.viz.items.4.l	Borne VE
+el-home.c6.title	Consommation en veille
+el-home.c6.text	De nombreux appareils consomment même lorsqu'ils sont « éteints » : téléviseur, box, chargeurs, machine à café. Chacun n'utilise peut-être que quelques watts, mais en fonctionnant toute l'année, cela s'additionne.
+el-home.c6.example.0	30 W de veille au total
+el-home.c6.example.1	30 × 8760 ÷ 1000
+el-home.c6.example.2	≈ 263 kWh par an
+el-home.c6.viz.f	kWh/an = W × 8760 ÷ 1000
+el-home.c6.viz.items.0.s	W
+el-home.c6.viz.items.0.m	watts en veille
+el-home.c6.viz.items.1.m	heures dans une année
+el-home.c7.title	Puissance souscrite
+el-home.c7.text	Au Portugal, vous souscrivez auprès de votre fournisseur une puissance maximale, par exemple 6,9 kVA. Si vous allumez trop d'appareils en même temps, le disjoncteur général (ICP) se déclenche. Une puissance souscrite plus élevée entraîne un abonnement journalier plus cher.
+el-home.c7.viz.unit	kVA (options courantes)
+el-home.c8.title	Ça va disjoncter ?
+el-home.c8.text	Puissance souscrite 6,9 kVA ≈ 30 A sous 230 V. Four (2 kW), bouilloire (2,2 kW) et chauffe du lave-linge (2 kW) font ensemble 6,2 kW : proche de la limite. Ajoutez un radiateur de 2 kW et le disjoncteur général se déclenche.
+el-home.c8.viz.unit	kW en service
+el-home.c8.viz.items.0.l	Four
+el-home.c8.viz.items.1.l	Bouilloire
+el-home.c8.viz.items.2.l	Lave-linge
+el-home.c8.viz.items.3.l	Radiateur
+el-home.c9.title	Fiches et prises
+el-home.c9.text	Le Portugal utilise la prise de type Schuko (type F) avec des clips de terre sur les côtés. Le Royaume-Uni utilise le type G, avec trois broches rectangulaires et un fusible dans la fiche.
+el-home.c9.viz.l.t	Portugal (type F)
+el-home.c9.viz.l.items.0	deux broches rondes
+el-home.c9.viz.l.items.1	clips de terre latéraux
+el-home.c9.viz.l.items.2	16 A
+el-home.c9.viz.r.t	Royaume-Uni (type G)
+el-home.c9.viz.r.items.0	trois broches plates
+el-home.c9.viz.r.items.1	fusible dans la fiche
+el-home.c9.viz.r.items.2	13 A
+el-acdc.title	Courant alternatif et continu
+el-acdc.summary	Pourquoi la prise alterne et pas la pile.
+el-acdc.q0.q	Que signifie 50 Hz ?
+el-acdc.q0.o0	50 volts
+el-acdc.q0.o1	Le courant s'inverse 50 fois par seconde (50 cycles)
+el-acdc.q0.o2	50 ampères
+el-acdc.q0.x	Le hertz compte les cycles par seconde.
+el-acdc.q1.q	Pourquoi le courant alternatif l'a-t-il emporté sur les réseaux électriques ?
+el-acdc.q1.o0	Il est plus sûr à toucher
+el-acdc.q1.o1	Les transformateurs peuvent facilement élever et abaisser sa tension
+el-acdc.q1.o2	Il est moins cher à produire
+el-acdc.q1.x	La haute tension réduit les pertes en transport.
+el-acdc.q2.q	Un onduleur solaire convertit…
+el-acdc.q2.o0	l'alternatif en continu
+el-acdc.q2.o1	le continu en alternatif
+el-acdc.q2.o2	le continu en continu de tension plus élevée
+el-acdc.q2.x	Les panneaux produisent du continu ; la maison utilise de l'alternatif.
+el-acdc.c0.title	Courant continu
+el-acdc.c0.text	En courant continu, le courant circule dans un seul sens sous une tension constante. Les piles, les panneaux solaires et les chargeurs USB fournissent du continu, et tout circuit électronique fonctionne avec en interne.
+el-acdc.c0.viz.l.t	Continu
+el-acdc.c0.viz.l.items.0	un seul sens
+el-acdc.c0.viz.l.items.1	tension stable
+el-acdc.c0.viz.l.items.2	piles, solaire, USB
+el-acdc.c0.viz.r.t	Alternatif
+el-acdc.c0.viz.r.items.0	change de sens
+el-acdc.c0.viz.r.items.1	tension oscillante
+el-acdc.c0.viz.r.items.2	prises secteur
+el-acdc.c1.title	Courant alternatif
+el-acdc.c1.text	En courant alternatif, la tension oscille entre positif et négatif selon une onde régulière, en changeant de sens plusieurs fois par seconde. Le secteur européen change de sens 50 fois par seconde : 50 hertz.
+el-acdc.c1.viz.items.0.v	50 Hz
+el-acdc.c1.viz.items.0.l	Europe
+el-acdc.c1.viz.items.1.v	60 Hz
+el-acdc.c1.viz.items.1.l	États-Unis et une partie du Brésil

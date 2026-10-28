@@ -248,3 +248,273 @@ ai-types.c6.text	L'apprentissage supervisé a besoin de données étiquetées, e
 ai-types.c6.viz.l.t	Données non étiquetées
 ai-types.c6.viz.l.items.0	bon marché et abondantes
 ai-types.c6.viz.l.items.1	textes web, photos, logs
+ai-types.c6.viz.r.t	Données étiquetées
+ai-types.c6.viz.r.items.0	lentes et coûteuses
+ai-types.c6.viz.r.items.1	exigent des experts
+ai-types.c6.viz.r.items.2	à vérifier
+ai-types.c7.title	Semi-supervisé : un petit coup de pouce va loin
+ai-types.c7.text	Souvent, vous avez quelques exemples étiquetés et une montagne d'exemples non étiquetés. Les méthodes semi-supervisées utilisent les premiers pour démarrer, puis laissent le modèle étiqueter le reste, en ne gardant que les prédictions dont il est sûr.
+ai-types.c7.viz.steps.0	1 000 exemples étiquetés
+ai-types.c7.viz.steps.1	Entraîner un premier modèle
+ai-types.c7.viz.steps.2	En étiqueter 100 000 de plus automatiquement
+ai-types.c7.viz.steps.3	Réentraîner sur le tout
+ai-types.c8.title	Quelle approche choisir ?
+ai-types.c8.text	Vous avez des exemples passés dont on connaît le résultat ? Supervisé. Vous voulez découvrir une structure ? Non supervisé. Il s'agit d'une suite de décisions avec un objectif, comme un jeu ou un robot ? Renforcement.
+ai-types.c8.viz.root	Avez-vous les bonnes réponses ?
+ai-types.c8.viz.items.0	Oui : supervisé
+ai-types.c8.viz.items.1	Non, chercher des motifs : non supervisé
+ai-types.c8.viz.items.2	Objectif et récompenses : renforcement
+ai-types.c9.title	La plupart de l'IA en entreprise est supervisée
+ai-types.c9.text	Malgré les gros titres sur les jeux et les chatbots, la plupart de l'apprentissage automatique déployé en entreprise reste supervisé : prédire le départ de clients, la demande, les défauts de paiement ou les retards à partir de données historiques.
+ai-types.c9.viz.items.0	Prévision de la demande
+ai-types.c9.viz.items.1	Scoring de fraude et d'anomalies
+ai-types.c9.viz.items.2	Prédiction du départ de clients
+ai-types.c9.viz.items.3	Classement de documents
+ai-types.c9.viz.items.4	Maintenance prédictive
+ai-data.title	Les données : le carburant
+ai-data.summary	D'où viennent les données d'entraînement et comment elles tournent mal.
+ai-data.q0.q	Un modèle est parfait en test mais échoue en production. Une cause probable est…
+ai-data.q0.o0	Trop de données
+ai-data.q0.o1	Une fuite de données
+ai-data.q0.o2	L'utilisation d'un GPU
+ai-data.q0.x	La fuite donne au modèle, pendant l'entraînement, des informations qu'il n'aura pas en usage réel.
+ai-data.q1.q	Qu'est-ce que la dérive des données ?
+ai-data.q1.o0	Des données supprimées
+ai-data.q1.o1	Le monde réel qui change, si bien que les anciennes données d'entraînement ne correspondent plus
+ai-data.q1.o2	Une panne matérielle
+ai-data.q1.x	Les régularités évoluent avec le temps, donc les modèles doivent être surveillés et réentraînés.
+ai-data.q2.q	Quelle est la donnée non structurée ?
+ai-data.q2.o0	Un tableau de ventes
+ai-data.q2.o1	Des contrats scannés
+ai-data.q2.o2	Des relevés de capteurs dans une base de données
+ai-data.q2.x	Le texte, les images et l'audio ne rentrent pas proprement dans des lignes et des colonnes.
+ai-data.c0.title	Garbage in, garbage out
+ai-data.c0.text	Un modèle est un résumé de ses données d'entraînement. Si elles sont fausses, incomplètes ou biaisées, le modèle le sera aussi, et il se trompera avec beaucoup d'aplomb.\n\nDans les projets réels, préparer les données prend généralement plus de temps que construire le modèle.
+ai-data.c0.viz.steps.0	Données en désordre
+ai-data.c0.viz.steps.1	Le modèle apprend le désordre
+ai-data.c0.viz.steps.2	Mauvaises réponses assurées
+ai-data.c1.title	Le travail sur les données domine les projets
+ai-data.c1.text	Les enquêtes auprès des data scientists constatent systématiquement que collecter, nettoyer et organiser les données prend la plus grande part de leur temps. Entraîner le modèle est souvent la partie rapide.
+ai-data.c1.viz.items.0	Trouver les données et y accéder
+ai-data.c1.viz.items.1	Corriger valeurs manquantes et erronées
+ai-data.c1.viz.items.2	Joindre des tables de systèmes différents
+ai-data.c1.viz.items.3	Étiqueter les exemples
+ai-data.c1.viz.items.4	Vérifier biais et fuites
+ai-data.c2.title	Données structurées et non structurées
+ai-data.c2.text	Les données structurées tiennent dans des tables : transactions, relevés de capteurs, enregistrements ERP. Les données non structurées, c'est tout le reste : e-mails, contrats, photos, audio.\n\nL'apprentissage automatique classique adore les tables. L'apprentissage profond a rendu les données non structurées exploitables à grande échelle.
+ai-data.c2.viz.l.t	Structurées
+ai-data.c2.viz.l.items.0	lignes et colonnes
+ai-data.c2.viz.l.items.1	ERP, capteurs, ventes
+ai-data.c2.viz.l.items.2	ML classique
+ai-data.c2.viz.r.t	Non structurées
+ai-data.c2.viz.r.items.0	texte, images, audio
+ai-data.c2.viz.r.items.1	contrats, e-mails
+ai-data.c2.viz.r.items.2	apprentissage profond
+ai-data.c3.title	Valeurs manquantes
+ai-data.c3.text	Les données réelles ont des trous : un capteur est tombé hors ligne, un champ est resté vide. On peut supprimer ces lignes, les remplir avec une moyenne, ou laisser le modèle traiter « manquant » comme une information en soi.\n\nParfois, le fait qu'une valeur manque est révélateur, comme un client qui n'a jamais donné son numéro de téléphone.
+ai-data.c3.viz.items.0.a	Supprimer la ligne
+ai-data.c3.viz.items.0.b	simple, perd des données
+ai-data.c3.viz.items.1.a	Remplir par la moyenne
+ai-data.c3.viz.items.1.b	garde les lignes, brouille le détail
+ai-data.c3.viz.items.2.a	Marquer comme manquant
+ai-data.c3.viz.items.2.b	le trou devient un signal
+ai-data.c4.title	La fuite de données
+ai-data.c4.text	Il y a fuite quand les données d'entraînement contiennent des informations que le modèle n'aura pas en usage réel. Un modèle de départ de clients entraîné avec une colonne « date de résiliation » paraîtra brillant en test et échouera en production.\n\nDemandez-vous toujours : connaîtrais-je cette valeur au moment de faire la prédiction ?
+ai-data.c4.viz.items.0.w	utiliser la date de résiliation
+ai-data.c4.viz.items.0.r	n'utiliser que des données connues avant la décision
+ai-data.c4.viz.items.1.w	mélanger une série temporelle au hasard
+ai-data.c4.viz.items.1.r	séparer par date : le passé entraîne, le futur teste
+ai-data.c5.title	Le biais d'échantillonnage
+ai-data.c5.text	Si vos données ne représentent pas les personnes ou les situations que le modèle rencontrera, il échouera sur celles qu'il n'a jamais vues. Un détecteur de visages entraîné surtout sur un groupe est moins performant sur les autres.
+ai-data.c5.viz.l.t	Données d'entraînement
+ai-data.c5.viz.l.items.0	surtout des photos de jour
+ai-data.c5.viz.l.items.1	une seule région
+ai-data.c5.viz.l.items.2	une seule saison
+ai-data.c5.viz.r.t	Monde réel
+ai-data.c5.viz.r.items.0	nuit et pluie
+ai-data.c5.viz.r.items.1	toutes les régions
+ai-data.c5.viz.r.items.2	toute l'année
+ai-data.c6.title	La dérive des données
+ai-data.c6.text	Le monde change et les modèles entraînés sur les données de l'an dernier deviennent peu à peu obsolètes. Le comportement des clients évolue, les prix changent, un nouveau produit apparaît.\n\nC'est pourquoi les modèles déployés doivent être surveillés et réentraînés périodiquement.
+ai-data.c6.viz.events.0.y	Janv.
+ai-data.c6.viz.events.0.l	modèle entraîné
+ai-data.c6.viz.events.1.y	Avr.
+ai-data.c6.viz.events.1.l	toujours précis
+ai-data.c6.viz.events.2.y	Août
+ai-data.c6.viz.events.2.l	comportements en évolution
+ai-data.c6.viz.events.3.y	Nov.
+ai-data.c6.viz.events.3.l	la précision chute
+ai-data.c6.viz.events.4.y	Déc.
+ai-data.c6.viz.events.4.l	réentraîné
+ai-data.c7.title	Les données synthétiques
+ai-data.c7.text	Quand les données réelles sont rares ou privées, on peut générer des exemples artificiels : pannes de capteurs simulées, factures fausses mais réalistes, images de synthèse.\n\nC'est utile, mais les données synthétiques ne contiennent que les régularités qu'on y a mises. Testez toujours sur des données réelles.
+ai-data.c7.viz.l.t	Atouts
+ai-data.c7.viz.l.items.0	aucun souci de vie privée
+ai-data.c7.viz.l.items.1	cas rares à la demande
+ai-data.c7.viz.l.items.2	peu coûteuses à étendre
+ai-data.c7.viz.r.t	Risques
+ai-data.c7.viz.r.items.0	oublie les subtilités du réel
+ai-data.c7.viz.r.items.1	peut figer des hypothèses
+ai-data.c7.viz.r.items.2	à tester sur du réel
+ai-data.c8.title	Données et vie privée
+ai-data.c8.text	Les données personnelles utilisées pour l'entraînement relèvent de lois comme le RGPD de l'UE. Il faut une base légale, ne collecter que le nécessaire, et les protéger.\n\nAnonymiser est plus difficile qu'il n'y paraît : combiner quelques champs comme le code postal, la date de naissance et le sexe peut permettre d'identifier beaucoup de personnes.
+ai-data.c8.viz.items.0	Ne collecter que le nécessaire
+ai-data.c8.viz.items.1	Connaître sa base légale
+ai-data.c8.viz.items.2	Supprimer ou masquer les identifiants
+ai-data.c8.viz.items.3	Contrôler qui y accède
+ai-data.c8.viz.items.4	Garder trace de leur origine
+ai-data.c9.title	La qualité de l'étiquetage
+ai-data.c9.text	Les étiquettes sont créées par des personnes, et les gens ne sont pas toujours d'accord ou se trompent. Les bons projets rédigent des consignes d'étiquetage claires, font étiqueter les mêmes exemples par plusieurs personnes et mesurent la fréquence de leur accord.
+ai-data.c9.viz.steps.0	Rédiger des consignes claires
+ai-data.c9.viz.steps.1	Plusieurs annotateurs par élément
+ai-data.c9.viz.steps.2	Mesurer l'accord
+ai-data.c9.viz.steps.3	Corriger les cas ambigus
+ai-algos.title	Les algorithmes classiques
+ai-algos.summary	Les bêtes de somme qui font encore tourner une bonne partie de l'IA en entreprise.
+ai-algos.q0.q	Quelle méthode construit des arbres l'un après l'autre, chacun corrigeant les erreurs des précédents ?
+ai-algos.q0.o0	La forêt aléatoire
+ai-algos.q0.o1	Le gradient boosting
+ai-algos.q0.o2	k-means
+ai-algos.q0.x	Le boosting est séquentiel ; les forêts aléatoires sont des arbres indépendants qui votent.
+ai-algos.q1.q	La régression logistique sert principalement à…
+ai-algos.q1.o0	Prédire des prix
+ai-algos.q1.o1	Classer avec des probabilités
+ai-algos.q1.o2	Regrouper (clustering)
+ai-algos.q1.x	Elle donne une probabilité pour un résultat oui/non.
+ai-algos.q2.q	Pour une table de données de ventes, un bon premier choix est souvent…
+ai-algos.q2.o0	Un énorme réseau de neurones
+ai-algos.q2.o1	Des arbres à gradient boosting
+ai-algos.q2.o2	Un modèle d'image
+ai-algos.q2.x	Les arbres boostés sont rapides et précis sur les données tabulaires.
+ai-algos.c0.title	La régression linéaire
+ai-algos.c0.text	La plus ancienne astuce : tracer la meilleure droite à travers les données. Elle prédit un nombre à partir d'une somme pondérée des entrées.\n\nElle est rapide, facile à expliquer (« chaque m² supplémentaire ajoute 2 500 € ») et souvent une solide référence avant d'essayer quelque chose de plus sophistiqué.
+ai-algos.c0.viz.f	prix = w₁·surface + w₂·pièces + b
+ai-algos.c0.viz.items.0.s	w₁, w₂
+ai-algos.c0.viz.items.0.m	poids appris
+ai-algos.c0.viz.items.1.s	b
+ai-algos.c0.viz.items.1.m	prix de base
+ai-algos.c0.viz.items.2.s	surface, pièces
+ai-algos.c0.viz.items.2.m	features
+ai-algos.c1.title	La régression logistique
+ai-algos.c1.text	Malgré son nom, elle sert à la classification. Elle écrase une somme pondérée en une probabilité entre 0 et 1 grâce à une courbe en S. Au-dessus de 0,5, c'est « oui ».\n\nLes banques l'utilisent depuis des décennies pour le scoring de crédit, car chaque poids peut être expliqué.
+ai-algos.c1.viz.steps.0	Somme pondérée des features
+ai-algos.c1.viz.steps.1	La courbe en S la ramène à 0–1
+ai-algos.c1.viz.steps.2	0,83 → probablement oui
+ai-algos.c2.title	Les arbres de décision
+ai-algos.c2.text	Un arbre pose une série de questions oui/non : le revenu dépasse-t-il 30 k€ ? Le client a-t-il manqué un paiement ? Chaque chemin se termine par une prédiction.\n\nLes arbres sont faciles à lire et à expliquer, mais un arbre seul tend à surapprendre.
+ai-algos.c2.viz.root	Paiement manqué ?
+ai-algos.c2.viz.items.0	Oui → risque élevé
+ai-algos.c2.viz.items.1	Non, revenu < 30 k€ → moyen
+ai-algos.c2.viz.items.2	Non, revenu ≥ 30 k€ → faible
+ai-algos.c3.title	Les forêts aléatoires
+ai-algos.c3.text	Entraînez des centaines d'arbres de décision légèrement différents sur des tranches aléatoires des données, puis faites-les voter. La foule est bien plus précise et stable qu'un arbre seul.
+ai-algos.c3.viz.steps.0	Beaucoup d'arbres sur des échantillons aléatoires
+ai-algos.c3.viz.steps.1	Chaque arbre vote
+ai-algos.c3.viz.steps.2	La majorité l'emporte
+ai-algos.c4.title	Le gradient boosting
+ai-algos.c4.text	Au lieu de faire voter des arbres indépendants, le boosting les construit en séquence. Chaque nouvel arbre se concentre sur les erreurs des précédents.\n\nDes bibliothèques comme XGBoost et LightGBM remportent de nombreux concours sur les données tabulaires et sont très utilisées dans l'industrie.
+ai-algos.c4.viz.steps.0	L'arbre 1 fait des erreurs
+ai-algos.c4.viz.steps.1	L'arbre 2 les corrige
+ai-algos.c4.viz.steps.2	L'arbre 3 corrige le reste
+ai-algos.c4.viz.steps.3	Somme de tous les arbres
+ai-algos.c5.title	Les k plus proches voisins
+ai-algos.c5.text	Pour classer un nouvel élément, on cherche les k exemples connus les plus semblables et on fait voter. Une nouvelle maison est évaluée comme ses cinq voisines les plus semblables.\n\nSimple et intuitif, mais lent quand le jeu de données est énorme.
+ai-algos.c5.viz.l.t	Atouts
+ai-algos.c5.viz.l.items.0	aucune phase d'entraînement
+ai-algos.c5.viz.l.items.1	facile à expliquer
+ai-algos.c5.viz.l.items.2	marche avec peu de features
+ai-algos.c5.viz.r.t	Faiblesses
+ai-algos.c5.viz.r.items.0	lent sur gros volumes
+ai-algos.c5.viz.r.items.1	sensible à l'échelle
+ai-algos.c5.viz.r.items.2	peine avec beaucoup de features
+ai-algos.c6.title	Le clustering k-means
+ai-algos.c6.text	Un classique non supervisé. On choisit k points centraux, on affecte chaque élément au centre le plus proche, on déplace chaque centre au milieu de son groupe, et on recommence jusqu'à ce que plus rien ne change.
+ai-algos.c6.viz.steps.0	Placer k centres
+ai-algos.c6.viz.steps.1	Affecter chaque point au plus proche
+ai-algos.c6.viz.steps.2	Déplacer les centres au milieu
+ai-algos.c6.viz.steps.3	Répéter jusqu'à stabilité
+ai-algos.c7.title	L'apprentissage profond n'est pas toujours le meilleur
+ai-algos.c7.text	Pour des tables de nombres, comme des ventes, des prix ou des journaux de capteurs, les arbres à gradient boosting égalent ou battent souvent les réseaux de neurones, s'entraînent plus vite et sont plus faciles à expliquer.\n\nLes réseaux de neurones brillent avec les images, l'audio et le texte.
+ai-algos.c7.viz.l.t	Données tabulaires
+ai-algos.c7.viz.l.items.0	les arbres boostés gagnent souvent
+ai-algos.c7.viz.l.items.1	rapide
+ai-algos.c7.viz.l.items.2	explicable
+ai-algos.c7.viz.r.t	Images, audio, texte
+ai-algos.c7.viz.r.items.0	les réseaux de neurones gagnent
+ai-algos.c7.viz.r.items.1	exigent beaucoup de données
+ai-algos.c7.viz.r.items.2	exigent des GPU
+ai-algos.c8.title	Commencez par une référence
+ai-algos.c8.text	Avant de construire quoi que ce soit de complexe, mesurez une référence simpliste : « prédire la moyenne » ou « comme la semaine dernière ». Si votre modèle astucieux la bat à peine, il ne vaut pas la peine d'être déployé.
+ai-algos.c8.viz.unit	% d'erreur
+ai-algos.c8.viz.items.0.l	Comme la semaine dernière
+ai-algos.c8.viz.items.1.l	Modèle linéaire
+ai-algos.c8.viz.items.2.l	Arbres boostés
+ai-algos.c9.title	Choisir un algorithme
+ai-algos.c9.text	Pensez au type de données, à leur volume, à la nécessité d'expliquer les décisions et à la rapidité requise des prédictions. En pratique, les équipes en essaient plusieurs et choisissent d'après les résultats mesurés.
+ai-algos.c9.viz.items.0	Quel type de données : table, texte, image ?
+ai-algos.c9.viz.items.1	Combien d'exemples ?
+ai-algos.c9.viz.items.2	Faut-il expliquer les décisions ?
+ai-algos.c9.viz.items.3	Quelle rapidité de prédiction ?
+ai-algos.c9.viz.items.4	Comparer à une référence
+ai-nets.title	Dans un réseau de neurones
+ai-nets.summary	Les couches, les activations et la façon dont le réseau apprend de ses erreurs.
+ai-nets.q0.q	Que fait la rétropropagation ?
+ai-nets.q0.o0	Elle collecte plus de données
+ai-nets.q0.o1	Elle calcule la contribution de chaque poids à l'erreur
+ai-nets.q0.o2	Elle dessine le réseau
+ai-nets.q0.x	Elle renvoie l'erreur en arrière pour que chaque poids puisse être ajusté.
+ai-nets.q1.q	Un taux d'apprentissage trop élevé provoque…
+ai-nets.q1.o0	Un entraînement qui saute dans tous les sens et risque de ne jamais se stabiliser
+ai-nets.q1.o1	Un entraînement trop lent
+ai-nets.q1.o2	Davantage de données
+ai-nets.q1.x	De grands pas dépassent le minimum.
+ai-nets.q2.q	Un passage complet sur les données d'entraînement s'appelle…
+ai-nets.q2.o0	Un lot (batch)
+ai-nets.q2.o1	Une époque (epoch)
+ai-nets.q2.o2	Une couche
+ai-nets.q2.x	Une époque est un passage complet ; les lots sont les petits morceaux qu'elle contient.
+ai-nets.c0.title	Les couches
+ai-nets.c0.text	Un réseau de neurones est organisé en couches. La couche d'entrée reçoit les données, les couches cachées les transforment pas à pas, et la couche de sortie donne la réponse.\n\nL'apprentissage « profond » signifie simplement beaucoup de couches cachées.
+ai-nets.c0.viz.steps.0	Entrée : pixels
+ai-nets.c0.viz.steps.1	Couches cachées : bords, formes, parties
+ai-nets.c0.viz.steps.2	Sortie : « chat 94 % »
+ai-nets.c1.title	Chaque couche apprend des caractéristiques plus abstraites
+ai-nets.c1.text	Dans un réseau d'images, les premières couches détectent les contours et les couleurs. Les couches intermédiaires les combinent en textures et en formes. Les dernières reconnaissent des yeux, des roues ou des visages.\n\nPersonne ne programme ces caractéristiques ; elles émergent de l'entraînement.
+ai-nets.c1.viz.items.0	Objets : visage, voiture
+ai-nets.c1.viz.items.1	Parties : œil, roue
+ai-nets.c1.viz.items.2	Formes et textures
+ai-nets.c1.viz.items.3	Contours et couleurs
+ai-nets.c2.title	Les fonctions d'activation
+ai-nets.c2.text	Entre les couches, chaque neurone fait passer sa somme par une fonction d'activation. La plus courante, ReLU, met simplement à zéro les valeurs négatives.\n\nSans cette étape non linéaire, empiler des couches reviendrait à un seul grand modèle linéaire.
+ai-nets.c2.viz.items.0.a	ReLU
+ai-nets.c2.viz.items.0.b	négatif → 0, positif inchangé
+ai-nets.c2.viz.items.1.a	Sigmoïde
+ai-nets.c2.viz.items.1.b	écrase vers 0–1
+ai-nets.c2.viz.items.2.a	Softmax
+ai-nets.c2.viz.items.2.b	transforme des scores en probabilités
+ai-nets.c3.title	La fonction de perte
+ai-nets.c3.text	Pour apprendre, le réseau a besoin d'un score de son erreur. C'est la perte (loss). Pour une prédiction de prix, ce peut être l'erreur quadratique moyenne ; pour la classification, le peu de probabilité accordée à la bonne réponse.\n\nL'entraînement est la recherche des poids qui rendent la perte la plus petite possible.
+ai-nets.c3.viz.steps.0	Prédiction
+ai-nets.c3.viz.steps.1	Comparer à la bonne réponse
+ai-nets.c3.viz.steps.2	Perte : quelle erreur ?
+ai-nets.c3.viz.steps.3	Ajuster les poids
+ai-nets.c4.title	La rétropropagation
+ai-nets.c4.text	Après une mauvaise prédiction, l'erreur est renvoyée en arrière dans le réseau. Grâce au calcul différentiel, chaque poids apprend sa part dans l'erreur et dans quel sens se déplacer.\n\nCet algorithme, popularisé en 1986, sert aujourd'hui à entraîner pratiquement tous les réseaux de neurones.
+ai-nets.c4.viz.steps.0	Aller : faire une prédiction
+ai-nets.c4.viz.steps.1	Mesurer l'erreur
+ai-nets.c4.viz.steps.2	Retour : imputer à chaque poids
+ai-nets.c4.viz.steps.3	Ajuster un peu chaque poids
+ai-nets.c5.title	Le taux d'apprentissage
+ai-nets.c5.text	Quelle doit être la taille de chaque ajustement ? C'est le taux d'apprentissage. Trop petit, l'entraînement n'en finit pas. Trop grand, le modèle dépasse la vallée et ne se stabilise jamais.
+ai-nets.c5.viz.l.t	Trop petit
+ai-nets.c5.viz.l.items.0	minuscules pas
+ai-nets.c5.viz.l.items.1	entraînement qui rampe
+ai-nets.c5.viz.l.items.2	risque de blocage
+ai-nets.c5.viz.r.t	Trop grand
+ai-nets.c5.viz.r.items.0	dépasse la cible
+ai-nets.c5.viz.r.items.1	l'erreur saute partout
+ai-nets.c5.viz.r.items.2	risque de ne jamais converger
+ai-nets.c6.title	Lots et époques
+ai-nets.c6.text	Les données d'entraînement sont fournies en petits lots, disons 32 exemples à la fois, et les poids sont mis à jour après chaque lot. Un passage complet sur toutes les données est une époque. Les réseaux s'entraînent souvent sur de nombreuses époques.
+ai-nets.c6.viz.f	mises à jour = (exemples ÷ taille du lot) × époques
+ai-nets.c6.viz.items.0.m	exemples

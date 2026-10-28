@@ -7,7 +7,7 @@ tr-parts.q0.o0	90 Ω
 tr-parts.q0.o1	300 Ω
 tr-parts.q0.o2	900 Ω
 tr-parts.q0.o3	1,2 kΩ
-tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. Elegirías el siguiente valor estándar por encima, 1 kΩ.
+tr-parts.q0.x	R = (12 − 3) ÷ 0010 = 900 Ω. Elegirías el siguiente valor estándar por encima, 1 kΩ.
 tr-parts.q1.q	Bandas marrón, negro, naranja. ¿Qué valor tiene?
 tr-parts.q1.o0	10 Ω
 tr-parts.q1.o1	1 kΩ
@@ -36,7 +36,7 @@ tr-parts.c1.title	Todo LED necesita una resistencia
 tr-parts.c1.text	Un LED provoca una caída de tensión directa fija (Vf, unos 2 V en los rojos y 3 V en los blancos o azules) y consume toda la corriente que pueda, hasta quemarse. Una resistencia en serie absorbe la tensión sobrante y fija la corriente.
 tr-parts.c1.formula	R = (Vs − Vf) ÷ I
 tr-parts.c1.example.0	Alimentación de 5 V, LED rojo (2 V), 20 mA
-tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0020
 tr-parts.c1.example.2	= 150 Ω
 tr-parts.c1.sketch.0	150 Ω
 tr-parts.c1.sketch.1	5 V
@@ -547,7 +547,7 @@ tr-psu.c8.viz.items.3.l	USB-C PD
 tr-psu.c9.title	Caídas de tensión (brown-outs)
 tr-psu.c9.text	Si la alimentación baja de lo que necesita un chip, puede comportarse mal o reiniciarse. Los ESP32 son famosos por reiniciarse con los picos de transmisión wifi cuando la fuente es débil. Un buen regulador y un condensador grande cerca de la placa lo solucionan.
 tr-psu.c9.viz.items.0.w	el ESP32 se reinicia al arrancar el wifi
-tr-psu.c9.viz.items.0.r	fuente de 3,3 V más potente y un condensador de 470 µF cerca de la placa
+tr-psu.c9.viz.items.0.r	fuente de 3,3 V más potente y un condensador de 470 µF
 tr-sensors.title	Sensores
 tr-sensors.summary	Medir temperatura, distancia, movimiento y más.
 tr-sensors.q0.q	Un eco ultrasónico vuelve tras 2,9 ms. La distancia es de aproximadamente…
@@ -1283,7 +1283,7 @@ tr-power.c1.text	Pondera cada estado por lo que dura.
 tr-power.c1.example.0	2 s a 120 mA, 598 s a 10 µA, cada 600 s
 tr-power.c1.example.1	(240 + 6) ÷ 600
 tr-power.c1.example.2	≈ 0,41 mA → 3000 mAh duran ~300 días
-tr-power.c1.viz.f	I media = (I despierto × t despierto + I reposo × t reposo) ÷ t total
+tr-power.c1.viz.f	I media = (I act × t act + I rep × t rep) ÷ t total
 tr-power.c1.viz.items.0.s	despierto
 tr-power.c1.viz.items.0.m	120 mA durante 2 s
 tr-power.c1.viz.items.1.s	dormido

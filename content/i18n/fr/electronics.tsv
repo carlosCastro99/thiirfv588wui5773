@@ -1,0 +1,249 @@
+P.title	Électronique
+P.blurb	Composants et signaux pour bricoler avec des microcontrôleurs.
+tr-parts.title	Les composants que l'on rencontre en premier
+tr-parts.summary	Résistances, LED, condensateurs et pont diviseur de tension : les pièces de tout kit de bricoleur.
+tr-parts.q0.q	Une LED blanche (Vf 3 V) fonctionne sous 12 V à 10 mA. Quelle résistance choisir ?
+tr-parts.q0.o0	90 Ω
+tr-parts.q0.o1	300 Ω
+tr-parts.q0.o2	900 Ω
+tr-parts.q0.o3	1,2 kΩ
+tr-parts.q0.x	R = (12 − 3) ÷ 0,010 = 900 Ω. On prendrait la valeur normalisée supérieure, 1 kΩ.
+tr-parts.q1.q	Bagues marron, noir, orange. Quelle est la valeur ?
+tr-parts.q1.o0	10 Ω
+tr-parts.q1.o1	1 kΩ
+tr-parts.q1.o2	10 kΩ
+tr-parts.q1.o3	103 Ω
+tr-parts.q1.x	Marron 1, noir 0, orange ×1000 → 10 × 1000 = 10 kΩ.
+tr-parts.q2.q	Dans un pont diviseur avec R1 = R2 et Vin = 10 V, Vout vaut…
+tr-parts.q2.o0	10 V
+tr-parts.q2.o1	5 V
+tr-parts.q2.o2	2,5 V
+tr-parts.q2.x	Deux résistances égales partagent la tension en deux.
+tr-parts.q3.q	Deux résistances de 1 kΩ en parallèle donnent…
+tr-parts.q3.o0	2 kΩ
+tr-parts.q3.o1	500 Ω
+tr-parts.q3.o2	1 kΩ
+tr-parts.q3.x	Deux résistances égales en parallèle divisent la valeur par deux.
+tr-parts.q4.q	Que se passe-t-il si l'on branche un condensateur électrolytique à l'envers ?
+tr-parts.q4.o0	Rien
+tr-parts.q4.o1	Il peut surchauffer et éclater
+tr-parts.q4.o2	Il stocke plus d'énergie
+tr-parts.q4.x	Ils sont polarisés.
+tr-parts.c0.title	Lire une résistance
+tr-parts.c0.text	Les résistances sont repérées par des bagues de couleur. Les deux premières donnent les chiffres, la troisième est un multiplicateur, et une bague or ou argent à l'extrémité indique la tolérance.\n\nNoir 0, marron 1, rouge 2, orange 3, jaune 4, vert 5, bleu 6, violet 7, gris 8, blanc 9.
+tr-parts.c0.sketch.4	= 1 000 Ω = 1 kΩ
+tr-parts.c1.title	Chaque LED a besoin d'une résistance
+tr-parts.c1.text	Une LED présente une tension directe fixe (Vf, environ 2 V pour le rouge, 3 V pour le blanc ou le bleu) et appelle tout le courant qu'elle peut, jusqu'à griller. Une résistance en série absorbe la tension restante et fixe le courant.
+tr-parts.c1.formula	R = (Vs − Vf) ÷ I
+tr-parts.c1.example.0	Alimentation 5 V, LED rouge (2 V), 20 mA
+tr-parts.c1.example.1	R = (5 − 2) ÷ 0,020
+tr-parts.c1.example.2	= 150 Ω
+tr-parts.c1.sketch.0	150 Ω
+tr-parts.c1.sketch.1	5 V
+tr-parts.c1.sketch.2	LED 2 V
+tr-parts.c1.sketch.3	20 mA
+tr-parts.c2.title	Les condensateurs stockent la charge
+tr-parts.c2.text	Un condensateur est formé de deux plaques séparées par un isolant. Branchez-le à une tension : la charge s'accumule sur les plaques jusqu'à égaler celle de l'alimentation. Il se charge vite au début, puis de plus en plus lentement.\n\nEn pratique, ils lissent les ondulations d'un rail d'alimentation et fournissent de brèves pointes de courant, c'est pourquoi on en voit un près de presque chaque puce.
+tr-parts.c2.sketch.2	1 RC
+tr-parts.c2.sketch.4	temps
+tr-parts.c2.sketch.5	tension
+tr-parts.c3.title	À essayer : le pont diviseur de tension
+tr-parts.c3.text	Deux résistances en série se partagent une tension proportionnellement à leurs valeurs. C'est la méthode classique pour ramener un signal de 5 V ou 12 V aux 3,3 V que supporte une broche d'ESP32.
+tr-parts.c3.formula	Vout = Vin × R2 ÷ (R1 + R2)
+tr-parts.c4.title	Valeurs normalisées des résistances
+tr-parts.c4.text	Les résistances existent en séries normalisées, et non dans toutes les valeurs. La série E12 compte 12 valeurs par décade : 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82. Choisissez la valeur normalisée la plus proche de votre calcul.
+tr-parts.c4.viz.items.3	× 1, 10, 100, 1k, 10k…
+tr-parts.c5.title	Puissance admissible d'une résistance
+tr-parts.c5.text	Les résistances transforment la puissance en chaleur et ont un maximum admissible : les modèles traversants courants supportent ¼ W. Calculez P = I² × R et choisissez une résistance dont la valeur nominale est largement supérieure.
+tr-parts.c5.example.0	20 mA dans 150 Ω
+tr-parts.c5.example.1	0,02² × 150
+tr-parts.c5.example.2	= 0,06 W : une pièce de ¼ W suffit
+tr-parts.c5.viz.f	P = I² × R
+tr-parts.c5.viz.items.0.s	I
+tr-parts.c5.viz.items.0.m	courant qui la traverse
+tr-parts.c5.viz.items.1.s	R
+tr-parts.c5.viz.items.1.m	résistance
+tr-parts.c6.title	Résistances en série et en parallèle
+tr-parts.c6.text	En série, les résistances s'additionnent. En parallèle, le total est inférieur à la plus petite ; deux résistances égales en parallèle donnent la moitié de la valeur.
+tr-parts.c6.viz.l.t	Série
+tr-parts.c6.viz.l.items.0	R = R1 + R2
+tr-parts.c6.viz.l.items.1	1k + 1k = 2k
+tr-parts.c6.viz.r.t	Parallèle
+tr-parts.c6.viz.r.items.0	1/R = 1/R1 + 1/R2
+tr-parts.c6.viz.r.items.1	1k ∥ 1k = 500 Ω
+tr-parts.c7.title	Types de condensateurs
+tr-parts.c7.text	Les condensateurs céramiques sont petits et bon marché, utilisés pour le découplage (typiquement 100 nF). Les condensateurs électrolytiques stockent davantage (de µF à mF) mais sont polarisés : branchés à l'envers, ils peuvent éclater.
+tr-parts.c7.viz.l.t	Céramique
+tr-parts.c7.viz.l.items.0	petites valeurs
+tr-parts.c7.viz.l.items.1	non polarisé
+tr-parts.c7.viz.l.items.2	découplage 100 nF
+tr-parts.c7.viz.r.t	Électrolytique
+tr-parts.c7.viz.r.items.0	grandes valeurs
+tr-parts.c7.viz.r.items.1	polarisé (+/−)
+tr-parts.c7.viz.r.items.2	lissage d'alimentation
+tr-parts.c8.title	Constante de temps RC
+tr-parts.c8.text	Une résistance qui charge un condensateur met un temps prévisible. Après une constante de temps (R × C), le condensateur atteint environ 63 % de la tension d'alimentation ; après cinq, il est pratiquement plein.
+tr-parts.c8.example.0	10 kΩ et 100 µF
+tr-parts.c8.example.1	10 000 × 0,0001
+tr-parts.c8.example.2	τ = 1 seconde
+tr-parts.c8.viz.f	τ = R × C
+tr-parts.c8.viz.items.0.s	R
+tr-parts.c8.viz.items.0.m	ohms
+tr-parts.c8.viz.items.1.s	C
+tr-parts.c8.viz.items.1.m	farads
+tr-parts.c8.viz.items.2.s	τ
+tr-parts.c8.viz.items.2.m	secondes
+tr-parts.c9.title	Inductances
+tr-parts.c9.text	Une inductance est une bobine qui s'oppose aux variations de courant en stockant de l'énergie dans son champ magnétique. Elles sont essentielles dans les alimentations à découpage et les filtres.
+tr-parts.c9.viz.items.0.a	résistance
+tr-parts.c9.viz.items.0.b	s'oppose au courant
+tr-parts.c9.viz.items.1.a	condensateur
+tr-parts.c9.viz.items.1.b	s'oppose aux variations de tension
+tr-parts.c9.viz.items.2.a	inductance
+tr-parts.c9.viz.items.2.b	s'oppose aux variations de courant
+tr-mcu.title	Signaux et microcontrôleurs
+tr-mcu.summary	Comment une puce comme l'ESP32 lit et pilote le monde réel.
+tr-mcu.q0.q	Un moteur 12 V reçoit un signal PWM à 50 % de rapport cyclique. Il se comporte à peu près comme s'il recevait…
+tr-mcu.q0.o0	12 V
+tr-mcu.q0.o1	6 V
+tr-mcu.q0.o2	0,5 V
+tr-mcu.q0.o3	24 V
+tr-mcu.q0.x	La moyenne de 12 V pendant la moitié du temps est 6 V.
+tr-mcu.q1.q	Que fait une entrée « flottante » ?
+tr-mcu.q1.o0	Elle lit toujours 1
+tr-mcu.q1.o1	Elle lit toujours 0
+tr-mcu.q1.o2	Elle lit au hasard, car elle capte du bruit
+tr-mcu.q1.x	Sans niveau défini, la broche capte des charges parasites. Une résistance de rappel (pull-up ou pull-down) règle le problème.
+tr-mcu.q2.q	Combien de pas compte un CAN de 10 bits ?
+tr-mcu.q2.o0	10
+tr-mcu.q2.o1	100
+tr-mcu.q2.o2	1024
+tr-mcu.q2.o3	4096
+tr-mcu.q2.x	2¹⁰ = 1024.
+tr-mcu.q3.q	Pourquoi filtrer les rebonds d'un bouton ?
+tr-mcu.q3.o0	Pour le rendre plus bruyant
+tr-mcu.q3.o1	Parce que les contacts rebondissent et créent plusieurs fausses pressions
+tr-mcu.q3.o2	Pour économiser de l'énergie
+tr-mcu.q3.x	Les rebonds des contacts provoquent plusieurs impulsions.
+tr-mcu.q4.q	Quel risque y a-t-il à appliquer 5 V sur une broche d'entrée d'ESP32 ?
+tr-mcu.q4.o0	Aucun
+tr-mcu.q4.o1	Cela peut endommager la broche 3,3 V
+tr-mcu.q4.o2	Il fonctionne plus vite
+tr-mcu.q4.x	Les broches de l'ESP32 sont uniquement en 3,3 V.
+tr-mcu.c0.title	Numérique et analogique
+tr-mcu.c0.text	Un signal numérique a deux états : bas (0) ou haut (1, souvent 3,3 V). Un signal analogique peut prendre n'importe quelle valeur dans une plage, comme la sortie d'un capteur de température.\n\nLes microcontrôleurs sont numériques par nature. Pour traiter de l'analogique, ils utilisent un CAN pour lire et la PWM pour simuler une sortie.
+tr-mcu.c0.sketch.0	numérique : 0 ou 1
+tr-mcu.c0.sketch.1	analogique : toute valeur
+tr-mcu.c1.title	PWM : varier l'intensité en clignotant
+tr-mcu.c1.text	La modulation de largeur d'impulsion (PWM) commute une broche entièrement allumée puis éteinte, très rapidement. La fraction de temps à l'état haut est le rapport cyclique. Une LED ou un moteur réagit à la moyenne : 25 % de rapport cyclique sur une alimentation de 12 V équivaut à peu près à 3 V.\n\nC'est efficace, car l'interrupteur est toujours soit entièrement fermé, soit entièrement ouvert : peu d'énergie est perdue en chaleur.
+tr-mcu.c1.sketch.0	25 % → faible
+tr-mcu.c1.sketch.1	75 % → fort
+tr-mcu.c1.sketch.2	pointillés = moyenne
+tr-mcu.c2.title	Résistances de rappel (pull-up)
+tr-mcu.c2.text	Une broche d'entrée reliée à rien « flotte » et capte du bruit : elle lit 0 ou 1 au hasard. Une résistance de rappel la relie doucement au 3,3 V pour qu'elle lise 1 par défaut. Appuyez sur le bouton, et la broche se connecte à la masse : elle lit 0.\n\nLa plupart des microcontrôleurs disposent de résistances de rappel internes que l'on active dans le code.
+tr-mcu.c2.sketch.0	3,3 V
+tr-mcu.c2.sketch.1	10 kΩ
+tr-mcu.c2.sketch.2	GPIO
+tr-mcu.c2.sketch.3	bouton
+tr-mcu.c2.sketch.4	repos = 1
+tr-mcu.c2.sketch.5	appui = 0
+tr-mcu.c3.title	Résolution du CAN
+tr-mcu.c3.text	Un convertisseur analogique-numérique transforme une tension en nombre. Un CAN de n bits a 2ⁿ pas. Le CAN 12 bits de l'ESP32 offre 4096 pas sur environ 3,3 V.\n\nSes mesures sont moins précises près de 0 V et près du haut de la plage ; gardez donc vos signaux au milieu autant que possible.
+tr-mcu.c3.formula	pas = Vref ÷ 2ⁿ
+tr-mcu.c3.example.0	CAN 12 bits, référence 3,3 V
+tr-mcu.c3.example.1	3,3 ÷ 4096
+tr-mcu.c3.example.2	≈ 0,8 mV par pas
+tr-mcu.c3.sketch.0	tension d'entrée
+tr-mcu.c3.sketch.1	valeur lue
+tr-mcu.c3.sketch.2	chaque pas = 1 code
+tr-mcu.c4.title	Broches GPIO
+tr-mcu.c4.text	Les broches d'entrée/sortie à usage général peuvent être configurées en entrées (lire un bouton) ou en sorties (piloter une LED). Sur un ESP32, elles fonctionnent en 3,3 V et ne peuvent fournir sans risque que quelques milliampères chacune.
+tr-mcu.c4.viz.l.t	Entrée
+tr-mcu.c4.viz.l.items.0	lit 0 ou 1
+tr-mcu.c4.viz.l.items.1	boutons, capteurs
+tr-mcu.c4.viz.r.t	Sortie
+tr-mcu.c4.viz.r.items.0	fixe 0 ou 3,3 V
+tr-mcu.c4.viz.r.items.1	LED, relais via un driver
+tr-mcu.c5.title	Logique 3,3 V ou 5 V
+tr-mcu.c5.text	Beaucoup de puces modernes (ESP32, Raspberry Pi) utilisent une logique 3,3 V ; l'Arduino Uno utilise du 5 V. Envoyer 5 V sur une broche 3,3 V peut l'endommager. Utilisez un pont diviseur ou un adaptateur de niveau entre les deux.
+tr-mcu.c5.viz.items.0.w	capteur 5 V directement sur l'ESP32
+tr-mcu.c5.viz.items.0.r	diviseur ou adaptateur de niveau
+tr-mcu.c5.viz.items.1.w	broche 3,3 V pilote une bobine de relais 5 V
+tr-mcu.c5.viz.items.1.r	utiliser un transistor driver
+tr-mcu.c6.title	Interruptions
+tr-mcu.c6.text	Au lieu de vérifier un bouton des milliers de fois par seconde (scrutation), une interruption fait sauter la puce vers votre code dès que la broche change. Cela économise de l'énergie et ne rate jamais un événement bref.
+tr-mcu.c6.viz.l.t	Scrutation
+tr-mcu.c6.viz.l.items.0	vérifier sans cesse
+tr-mcu.c6.viz.l.items.1	perd du temps
+tr-mcu.c6.viz.l.items.2	peut rater les événements brefs
+tr-mcu.c6.viz.r.t	Interruption
+tr-mcu.c6.viz.r.items.0	le matériel vous prévient
+tr-mcu.c6.viz.r.items.1	instantané
+tr-mcu.c6.viz.r.items.2	efficace
+tr-mcu.c7.title	Anti-rebond
+tr-mcu.c7.text	Les boutons mécaniques rebondissent : un seul appui produit plusieurs impulsions rapides en quelques millisecondes. Le logiciel ignore les changements pendant ~20–50 ms après le premier, ou bien un petit condensateur les lisse.
+tr-mcu.c7.viz.steps.0	Appui
+tr-mcu.c7.viz.steps.1	Les contacts rebondissent quelques ms
+tr-mcu.c7.viz.steps.2	Ignorer les changements ~30 ms
+tr-mcu.c7.viz.steps.3	Un seul appui net
+tr-mcu.c8.title	Temporisations et millis()
+tr-mcu.c8.text	Plutôt que de figer le programme avec delay(), un bon code vérifie le temps écoulé et fait autre chose entre-temps. Capteurs, Wi-Fi et écrans restent ainsi réactifs.
+tr-mcu.c8.viz.items.0.w	delay(1000) bloque tout
+tr-mcu.c8.viz.items.0.r	vérifier le temps écoulé et continuer la boucle
+tr-mcu.c9.title	Microcontrôleur ou ordinateur
+tr-mcu.c9.text	Un microcontrôleur (ESP32, Arduino) exécute un seul programme directement sur le matériel, démarre instantanément et consomme des milliwatts. Un ordinateur monocarte (Raspberry Pi) fait tourner Linux, avec plus de puissance et de complexité.
+tr-mcu.c9.viz.l.t	Microcontrôleur
+tr-mcu.c9.viz.l.items.0	pas d'OS
+tr-mcu.c9.viz.l.items.1	démarrage instantané
+tr-mcu.c9.viz.l.items.2	milliwatts
+tr-mcu.c9.viz.l.items.3	capteurs et commande
+tr-mcu.c9.viz.r.t	Ordinateur monocarte
+tr-mcu.c9.viz.r.items.0	Linux
+tr-mcu.c9.viz.r.items.1	secondes de démarrage
+tr-mcu.c9.viz.r.items.2	watts
+tr-mcu.c9.viz.r.items.3	caméras, serveurs
+tr-diodes.title	Diodes
+tr-diodes.summary	Des clapets antiretour pour le courant, et leurs nombreux usages.
+tr-diodes.q0.q	Que repère la bague sur une diode ?
+tr-diodes.q0.o0	L'anode
+tr-diodes.q0.o1	La cathode
+tr-diodes.q0.o2	La tension
+tr-diodes.q0.x	Le courant circule vers la bague.
+tr-diodes.q1.q	Pourquoi placer une diode aux bornes d'une bobine de relais ?
+tr-diodes.q1.o0	Pour qu'il soit plus lumineux
+tr-diodes.q1.o1	Pour absorber la pointe de tension à la coupure
+tr-diodes.q1.o2	Pour doubler la tension
+tr-diodes.q1.x	La diode de roue libre protège le driver.
+tr-diodes.q2.q	Quelle chute de tension une diode au silicium présente-t-elle approximativement en conduction ?
+tr-diodes.q2.o0	3 V
+tr-diodes.q2.o1	0,7 V
+tr-diodes.q2.o2	0 V
+tr-diodes.q2.x	Environ 0,6–0,7 V.
+tr-diodes.c0.title	Un clapet antiretour
+tr-diodes.c0.text	Une diode laisse passer le courant dans un seul sens (de l'anode vers la cathode) et le bloque dans l'autre. La bague sur le boîtier repère la cathode.
+tr-diodes.c0.viz.l.t	Sens direct
+tr-diodes.c0.viz.l.items.0	le courant passe
+tr-diodes.c0.viz.l.items.1	chute d'environ 0,7 V (silicium)
+tr-diodes.c0.viz.r.t	Sens inverse
+tr-diodes.c0.viz.r.items.0	bloqué
+tr-diodes.c0.viz.r.items.1	faible fuite seulement
+tr-diodes.c1.title	Tension directe
+tr-diodes.c1.text	Une diode au silicium chute d'environ 0,6–0,7 V en conduction ; une diode Schottky seulement 0,2–0,4 V, ce qui gaspille moins de puissance. Les LED chutent davantage : 2 V pour le rouge, environ 3 V pour le bleu et le blanc.
+tr-diodes.c1.viz.unit	volts (approx.)
+tr-diodes.c1.viz.items.0.l	Schottky
+tr-diodes.c1.viz.items.1.l	Silicium
+tr-diodes.c1.viz.items.2.l	LED rouge
+tr-diodes.c1.viz.items.3.l	LED bleue/blanche
+tr-diodes.c2.title	Protection contre l'inversion de polarité
+tr-diodes.c2.text	Une diode en série avec l'entrée d'alimentation évite les dégâts si quelqu'un branche la batterie à l'envers. Elle coûte un peu de tension ; un MOSFET fait la même chose avec presque aucune perte.
+tr-diodes.c2.viz.steps.0	Batterie branchée à l'envers
+tr-diodes.c2.viz.steps.1	La diode bloque
+tr-diodes.c2.viz.steps.2	Circuit protégé
+tr-diodes.c3.title	Redresseurs
+tr-diodes.c3.text	Quatre diodes en pont transforment l'alternatif en continu pulsé : les deux alternances de l'onde ressortent positives. Ajoutez un gros condensateur et le signal se lisse en continu quasi stable.
+tr-diodes.c3.viz.steps.0	Entrée alternatif
+tr-diodes.c3.viz.steps.1	Pont de 4 diodes
+tr-diodes.c3.viz.steps.2	Continu pulsé
+tr-diodes.c3.viz.steps.3	Le condensateur le lisse
+tr-diodes.c4.title	Diodes de roue libre
+tr-diodes.c4.text	Quand vous coupez une bobine de relais ou de moteur, son champ magnétique s'effondre et crée une pointe de tension capable de détruire le transistor qui la pilote. Une diode aux bornes de la bobine absorbe cette pointe sans danger.

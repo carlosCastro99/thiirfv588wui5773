@@ -51,7 +51,7 @@ ph-energy.c3.text	La energía para calentar algo es masa × calor específico ×
 ph-energy.c3.formula	Q = m × c × ΔT
 ph-energy.c3.example.0	1 L de agua de 20 a 100 °C
 ph-energy.c3.example.1	1 × 4186 × 80 = 335 kJ
-ph-energy.c3.example.2	≈ 0,093 kWh, unos 2 céntimos
+ph-energy.c3.example.2	≈ 0093 kWh, unos 2 céntimos
 ph-energy.c3.sketch.0	1 L de agua
 ph-energy.c3.sketch.1	20 → 100 °C
 ph-energy.c3.sketch.2	Q = 1 × 4186 × 80 ≈ 335 kJ
@@ -65,7 +65,7 @@ ph-energy.c4.viz.items.3	Eléctrica y radiante
 ph-energy.c4.viz.items.4	Nuclear
 ph-energy.c5.title	La energía de los alimentos
 ph-energy.c5.text	La energía de los alimentos se mide en kilocalorías (kcal), que en las etiquetas aparecen como «Calorías». Una kcal equivale a unos 4,2 kJ. Una dieta diaria de 2000 kcal son unos 2,3 kWh, más o menos una bombilla de 100 W encendida todo el día.
-ph-energy.c5.viz.f	1 kcal ≈ 4,184 kJ
+ph-energy.c5.viz.f	1 kcal ≈ 4184 kJ
 ph-energy.c5.viz.items.0.s	2000 kcal
 ph-energy.c5.viz.items.0.m	≈ 8,4 MJ
 ph-energy.c5.viz.items.1.s	8,4 MJ
@@ -597,7 +597,7 @@ ph-gases.c3.viz.f	p × V = n × R × T
 ph-gases.c3.viz.items.0.s	n
 ph-gases.c3.viz.items.0.m	cantidad de gas (moles)
 ph-gases.c3.viz.items.1.s	R
-ph-gases.c3.viz.items.1.m	8,314 J/mol·K
+ph-gases.c3.viz.items.1.m	8314 J/mol·K
 ph-gases.c3.viz.items.2.s	T
 ph-gases.c3.viz.items.2.m	kelvin
 ph-gases.c4.title	Presión atmosférica y altitud
@@ -1518,3 +1518,243 @@ ph-cosmos.q0.o2	1 billón de años
 ph-cosmos.q0.x	Se mide a partir de la expansión y del fondo cósmico.
 ph-cosmos.q1.q	¿De qué está hecha la mayor parte del universo?
 ph-cosmos.q1.o0	Materia ordinaria
+ph-cosmos.q1.o1	Materia oscura
+ph-cosmos.q1.o2	Energía oscura
+ph-cosmos.q1.x	Alrededor del 68 %.
+ph-cosmos.q2.q	En 1929, Hubble descubrió que…
+ph-cosmos.q2.o0	El Sol es una estrella
+ph-cosmos.q2.o1	Las galaxias lejanas se alejan, así que el espacio se expande
+ph-cosmos.q2.o2	Marte tiene agua
+ph-cosmos.q2.x	La expansión del universo.
+ph-cosmos.c0.title	Un universo en expansión
+ph-cosmos.c0.text	En 1929, Edwin Hubble descubrió que las galaxias lejanas se alejan de nosotros, más deprisa cuanto más lejos están. El propio espacio se expande, como los puntos de un globo que se infla.
+ph-cosmos.c0.viz.steps.0	Galaxias lejanas
+ph-cosmos.c0.viz.steps.1	Luz estirada hacia el rojo
+ph-cosmos.c0.viz.steps.2	Más rápidas cuanto más lejos
+ph-cosmos.c0.viz.steps.3	El espacio se expande
+ph-cosmos.c1.title	El Big Bang
+ph-cosmos.c1.text	Si rebobinamos la expansión, el universo fue en su día extremadamente caliente y denso, hace unos 13 800 millones de años. El Big Bang no fue una explosión en el espacio, sino la expansión del propio espacio.
+ph-cosmos.c1.viz.events.0.y	hace 13 800 M años
+ph-cosmos.c1.viz.events.0.l	Big Bang
+ph-cosmos.c1.viz.events.1.y	3 minutos
+ph-cosmos.c1.viz.events.1.l	primeros núcleos
+ph-cosmos.c1.viz.events.2.y	380 000 años
+ph-cosmos.c1.viz.events.2.l	primeros átomos, la luz se libera
+ph-cosmos.c1.viz.events.3.y	200 M años
+ph-cosmos.c1.viz.events.3.l	primeras estrellas
+ph-cosmos.c2.title	El fondo cósmico de microondas
+ph-cosmos.c2.text	Cuando el universo se enfrió lo suficiente para que se formaran átomos, la luz pudo viajar libremente. Esa luz, estirada hasta convertirse en microondas, aún llena el cielo a 2,7 K. Se descubrió por casualidad en 1965.
+ph-cosmos.c2.viz.items.0.v	2,7 K
+ph-cosmos.c2.viz.items.0.l	temperatura del fondo
+ph-cosmos.c2.viz.items.1.l	descubierto
+ph-cosmos.c2.viz.items.2.v	380 000 años
+ph-cosmos.c2.viz.items.2.l	tras el Big Bang
+ph-cosmos.c3.title	Materia oscura
+ph-cosmos.c3.text	Las galaxias giran demasiado deprisa para que la materia visible las mantenga unidas. Algo invisible aporta gravedad extra: la materia oscura. Aún nadie sabe qué es.
+ph-cosmos.c3.viz.steps.0	Las galaxias giran rápido
+ph-cosmos.c3.viz.steps.1	La masa visible es insuficiente
+ph-cosmos.c3.viz.steps.2	Falta masa invisible
+ph-cosmos.c3.viz.steps.3	Materia oscura
+ph-cosmos.c4.title	Energía oscura
+ph-cosmos.c4.text	En 1998, los astrónomos descubrieron que la expansión se está acelerando. Lo que la impulsa se llama energía oscura. Constituye la mayor parte del contenido energético del universo.
+ph-cosmos.c4.viz.unit	% del contenido del universo (aprox.)
+ph-cosmos.c4.viz.items.0.l	Materia ordinaria
+ph-cosmos.c4.viz.items.1.l	Materia oscura
+ph-cosmos.c4.viz.items.2.l	Energía oscura
+ph-cosmos.c5.title	¿Cómo de grande es?
+ph-cosmos.c5.text	El universo observable mide unos 93 000 millones de años luz de diámetro, más que 13 800 millones × 2 porque el espacio se expandió mientras la luz viajaba. Más allá, el universo podría ser infinito.
+ph-cosmos.c5.viz.items.0.v	93 mil M a. l.
+ph-cosmos.c5.viz.items.0.l	diámetro del universo observable
+ph-cosmos.c5.viz.items.1.v	13 800 M años
+ph-cosmos.c5.viz.items.1.l	edad
+ph-cosmos.c6.title	Telescopios como máquinas del tiempo
+ph-cosmos.c6.text	El telescopio espacial James Webb, lanzado en 2021, ve luz infrarroja de galaxias formadas apenas unos cientos de millones de años después del Big Bang.
+ph-cosmos.c6.viz.events.0.l	Lanzamiento del Hubble
+ph-cosmos.c6.viz.events.1.l	Lanzamiento del James Webb
+ph-cosmos.c6.viz.events.2.l	primeras imágenes del Webb
+ph-cosmos.c7.title	Elementos del universo primitivo
+ph-cosmos.c7.text	El Big Bang produjo sobre todo hidrógeno y helio, con una traza de litio. Todo lo más pesado vino después, de las estrellas, así que el universo sigue siendo en masa un 74 % de hidrógeno y un 24 % de helio.
+ph-cosmos.c7.viz.unit	% de la materia ordinaria en masa
+ph-cosmos.c7.viz.items.0.l	Hidrógeno
+ph-cosmos.c7.viz.items.1.l	Helio
+ph-cosmos.c7.viz.items.2.l	Todo lo demás
+ph-cosmos.c8.title	Preguntas abiertas
+ph-cosmos.c8.text	Los físicos aún no saben qué son la materia oscura y la energía oscura, por qué hay más materia que antimateria ni cómo combinar la mecánica cuántica con la gravedad.
+ph-cosmos.c8.viz.items.0	¿Qué es la materia oscura?
+ph-cosmos.c8.viz.items.1	¿Qué es la energía oscura?
+ph-cosmos.c8.viz.items.2	¿Por qué más materia que antimateria?
+ph-cosmos.c8.viz.items.3	¿Cómo funciona la gravedad cuántica?
+ph-cosmos.c9.title	Nuestra dirección cósmica
+ph-cosmos.c9.text	La Tierra, el sistema solar, el brazo de Orión, la Vía Láctea, el Grupo Local, el Supercúmulo de Virgo, el Supercúmulo Laniakea, el universo observable.
+ph-cosmos.c9.viz.items.0	Universo observable
+ph-cosmos.c9.viz.items.1	Supercúmulo Laniakea
+ph-cosmos.c9.viz.items.2	Grupo Local
+ph-cosmos.c9.viz.items.3	Vía Láctea
+ph-cosmos.c9.viz.items.4	Sistema solar
+ph-cosmos.c9.viz.items.5	Tierra
+ph-weather.title	La física del tiempo atmosférico
+ph-weather.summary	Viento, nubes, lluvia y tormentas.
+ph-weather.q0.q	¿Por qué el aire que sube forma nubes?
+ph-weather.q0.o0	Se calienta
+ph-weather.q0.o1	Se expande y se enfría hasta su punto de rocío, y el vapor se condensa
+ph-weather.q0.o2	El viento empuja el agua hacia arriba
+ph-weather.q0.x	El enfriamiento provoca la condensación.
+ph-weather.q1.q	En el hemisferio norte, los vientos giran alrededor de las bajas presiones…
+ph-weather.q1.o0	En sentido horario
+ph-weather.q1.o1	En sentido antihorario
+ph-weather.q1.o2	No giran
+ph-weather.q1.x	Por el efecto Coriolis.
+ph-weather.q2.q	¿Qué causa la brisa marina diurna?
+ph-weather.q2.o0	Las mareas
+ph-weather.q2.o1	Que la tierra se calienta más rápido que el mar
+ph-weather.q2.o2	La Luna
+ph-weather.q2.x	El aire cálido sube sobre la tierra y el aire del mar lo reemplaza.
+ph-weather.c0.title	El Sol mueve el tiempo
+ph-weather.c0.text	El Sol calienta más el ecuador que los polos y más la tierra que el mar. La atmósfera y los océanos reparten sin parar el calor para igualarlo, y ese movimiento es el tiempo atmosférico.
+ph-weather.c0.viz.steps.0	Calentamiento desigual
+ph-weather.c0.viz.steps.1	El aire cálido sube, el frío baja
+ph-weather.c0.viz.steps.2	Diferencias de presión
+ph-weather.c0.viz.steps.3	Viento y tiempo
+ph-weather.c1.title	El viento
+ph-weather.c1.text	El aire fluye de las altas presiones a las bajas. La rotación de la Tierra lo desvía (efecto Coriolis), así que los vientos giran en espiral alrededor de las bajas presiones: en sentido antihorario en el hemisferio norte.
+ph-weather.c1.viz.steps.0	Alta presión
+ph-weather.c1.viz.steps.1	El aire fluye hacia fuera
+ph-weather.c1.viz.steps.2	La rotación terrestre lo desvía
+ph-weather.c1.viz.steps.3	Entra en espiral a la baja presión
+ph-weather.c2.title	Las nubes
+ph-weather.c2.text	El aire que asciende se expande y se enfría. Cuando llega a su punto de rocío, el vapor de agua se condensa sobre el polvo en gotitas: una nube. Cada tipo de nube dice algo sobre el aire.
+ph-weather.c2.viz.steps.0	El aire sube
+ph-weather.c2.viz.steps.1	Se expande y se enfría
+ph-weather.c2.viz.steps.2	Llega al punto de rocío
+ph-weather.c2.viz.steps.3	El agua se condensa: nube
+ph-weather.c3.title	La lluvia
+ph-weather.c3.text	Las gotitas de las nubes son diminutas. La lluvia se forma cuando las gotitas chocan y se unen, o cuando crecen cristales de hielo en nubes frías y se funden al caer. Una gota de lluvia contiene alrededor de un millón de gotitas de nube.
+ph-weather.c3.viz.items.0	Las gotitas chocan y se unen
+ph-weather.c3.viz.items.1	Crecen cristales de hielo en nubes frías
+ph-weather.c3.viz.items.2	Se funden en lluvia al caer
+ph-weather.c3.viz.items.3	O llegan como nieve o granizo
+ph-weather.c4.title	Humedad y rocío
+ph-weather.c4.text	El aire cálido retiene más vapor de agua que el frío. Por la noche, el aire se enfría hasta que no puede retener su vapor, que se condensa en forma de rocío o niebla. La humedad relativa compara el vapor real con el máximo posible.
+ph-weather.c4.viz.unit	g de agua por m³ de aire (máx., aprox.)
+ph-weather.c4.viz.items.0.l	0 °C
+ph-weather.c4.viz.items.1.l	10 °C
+ph-weather.c4.viz.items.2.l	20 °C
+ph-weather.c4.viz.items.3.l	30 °C
+ph-weather.c5.title	Frentes
+ph-weather.c5.text	Donde se encuentran masas de aire cálido y frío, el cálido sube sobre el frío y forma nubes y lluvia. Los frentes atlánticos traen gran parte de la lluvia invernal de Portugal, sobre todo al Miño.
+ph-weather.c5.viz.l.t	Frente frío
+ph-weather.c5.viz.l.items.0	chubascos fuertes y breves
+ph-weather.c5.viz.l.items.1	baja la temperatura
+ph-weather.c5.viz.r.t	Frente cálido
+ph-weather.c5.viz.r.items.0	gradual
+ph-weather.c5.viz.r.items.1	lluvia larga y constante
+ph-weather.c5.viz.r.items.2	llovizna
+ph-weather.c6.title	Tormentas
+ph-weather.c6.text	Las fuertes corrientes ascendentes en aire cálido, húmedo e inestable forman imponentes cumulonimbos de hasta 12 km o más. Las cargas se separan y producen rayos, truenos, lluvia intensa y a veces granizo.
+ph-weather.c6.viz.steps.0	Aire cálido y húmedo
+ph-weather.c6.viz.steps.1	Fuerte ascenso de aire
+ph-weather.c6.viz.steps.2	Cumulonimbo imponente
+ph-weather.c6.viz.steps.3	Rayos, lluvia intensa, granizo
+ph-weather.c7.title	Brisas marinas
+ph-weather.c7.text	En días soleados, la tierra se calienta más rápido que el mar. El aire sube sobre la tierra y entra aire más fresco del mar: una brisa marina. De noche se invierte y se convierte en brisa terrestre. La Nortada de la costa portuguesa es un viento de verano ligado a estos patrones de presión.
+ph-weather.c7.viz.l.t	Día
+ph-weather.c7.viz.l.items.0	tierra más cálida
+ph-weather.c7.viz.l.items.1	la brisa sopla hacia tierra
+ph-weather.c7.viz.r.t	Noche
+ph-weather.c7.viz.r.items.0	tierra más fría
+ph-weather.c7.viz.r.items.1	la brisa sopla hacia el mar
+ph-weather.c8.title	Predicción
+ph-weather.c8.text	Las predicciones salen de superordenadores que resuelven las ecuaciones físicas de la atmósfera en una malla 3D, a partir de millones de observaciones. La precisión actual a 5 días es más o menos la que tenían las predicciones a 1 día en los años 80.
+ph-weather.c8.viz.steps.0	Satélites, globos, estaciones
+ph-weather.c8.viz.steps.1	Estado inicial de la atmósfera
+ph-weather.c8.viz.steps.2	Simulación en superordenador
+ph-weather.c8.viz.steps.3	Predicción
+ph-weather.c9.title	Avisos del IPMA
+ph-weather.c9.text	En Portugal, el IPMA emite avisos meteorológicos amarillos, naranjas y rojos por lluvia, viento, calor, frío, oleaje y más, por distrito.
+ph-weather.c9.viz.items.0	Rojo: riesgo extremo
+ph-weather.c9.viz.items.1	Naranja: riesgo moderado a alto
+ph-weather.c9.viz.items.2	Amarillo: atención
+ph-weather.c9.viz.items.3	Verde: sin aviso
+ph-greats.title	Grandes físicos
+ph-greats.summary	Las personas que dieron forma a nuestra comprensión del mundo.
+ph-greats.q0.q	¿Quién descubrió la inducción electromagnética?
+ph-greats.q0.o0	Newton
+ph-greats.q0.o1	Faraday
+ph-greats.q0.o2	Einstein
+ph-greats.q0.x	Faraday, en 1831.
+ph-greats.q1.q	¿Quién unió electricidad, magnetismo y luz en cuatro ecuaciones?
+ph-greats.q1.o0	Galileo
+ph-greats.q1.o1	Maxwell
+ph-greats.q1.o2	Bohr
+ph-greats.q1.x	Las ecuaciones de Maxwell, década de 1860.
+ph-greats.q2.q	¿Quién descubrió las cuatro lunas más grandes de Júpiter?
+ph-greats.q2.o0	Newton
+ph-greats.q2.o1	Galileo
+ph-greats.q2.o2	Curie
+ph-greats.q2.x	En 1610, con su telescopio.
+ph-greats.c0.title	Arquímedes (c. 287–212 a. C.)
+ph-greats.c0.text	El matemático griego de Siracusa descubrió el principio de la flotación y la ley de la palanca («Dadme un punto de apoyo y moveré la Tierra») y estimó π.
+ph-greats.c0.viz.items.0.a	flotación
+ph-greats.c0.viz.items.0.b	principio de Arquímedes
+ph-greats.c0.viz.items.1.a	palancas
+ph-greats.c0.viz.items.1.b	ley de la palanca
+ph-greats.c0.viz.items.2.a	π
+ph-greats.c0.viz.items.2.b	estimado entre 3 10/71 y 3 1/7
+ph-greats.c1.title	Galileo Galilei (1564–1642)
+ph-greats.c1.text	Galileo usó experimentos y telescopios para estudiar el movimiento y el cielo. Descubrió las cuatro grandes lunas de Júpiter y las fases de Venus, lo que respaldaba la idea de que la Tierra gira alrededor del Sol.
+ph-greats.c1.viz.events.0.l	construye su telescopio
+ph-greats.c1.viz.events.1.l	Lunas de Júpiter
+ph-greats.c1.viz.events.2.l	Diálogo
+ph-greats.c1.viz.events.3.l	Dos nuevas ciencias
+ph-greats.c2.title	Isaac Newton (1643–1727)
+ph-greats.c2.text	Newton nos dio las leyes del movimiento, la gravitación universal, el cálculo (junto con Leibniz) y buena parte de la óptica, al demostrar que la luz blanca contiene todos los colores.
+ph-greats.c2.viz.items.0	Leyes del movimiento
+ph-greats.c2.viz.items.1	Gravitación universal
+ph-greats.c2.viz.items.2	Cálculo
+ph-greats.c2.viz.items.3	Óptica y el prisma
+ph-greats.c2.viz.items.4	Telescopio reflector
+ph-greats.c3.title	Michael Faraday (1791–1867)
+ph-greats.c3.text	Faraday, en gran parte autodidacta, descubrió la inducción electromagnética, inventó el primer motor eléctrico y la dinamo, e introdujo la idea de campo.
+ph-greats.c3.viz.items.0	Inducción electromagnética
+ph-greats.c3.viz.items.1	Motor eléctrico
+ph-greats.c3.viz.items.2	Dinamo
+ph-greats.c3.viz.items.3	Líneas de campo
+ph-greats.c3.viz.items.4	Jaula de Faraday
+ph-greats.c4.title	James Clerk Maxwell (1831–1879)
+ph-greats.c4.text	Maxwell unió electricidad, magnetismo y luz en cuatro ecuaciones y predijo las ondas electromagnéticas, abriendo el camino a la radio, la televisión y el wifi.
+ph-greats.c4.viz.steps.0	Electricidad + magnetismo
+ph-greats.c4.viz.steps.1	Ecuaciones de Maxwell
+ph-greats.c4.viz.steps.2	La luz es una onda electromagnética
+ph-greats.c4.viz.steps.3	Radio, TV, wifi
+ph-greats.c5.title	Marie Curie (1867–1934)
+ph-greats.c5.text	Pionera de la radiactividad, descubridora del polonio y el radio, la primera mujer en ganar un Nobel y la única persona que lo ha ganado en dos ciencias distintas.
+ph-greats.c5.viz.items.0.l	premios Nobel en ciencias distintas
+ph-greats.c5.viz.items.1.l	Física
+ph-greats.c5.viz.items.2.l	Química
+ph-greats.c6.title	Albert Einstein (1879–1955)
+ph-greats.c6.text	Solo en 1905 explicó el efecto fotoeléctrico, el movimiento browniano y la relatividad especial, con E = mc² incluida. En 1915 publicó la relatividad general.
+ph-greats.c6.viz.events.0.l	«año milagroso»
+ph-greats.c6.viz.events.1.l	relatividad general
+ph-greats.c6.viz.events.2.l	un eclipse la confirma
+ph-greats.c6.viz.events.3.l	Premio Nobel
+ph-greats.c7.title	Niels Bohr y Werner Heisenberg
+ph-greats.c7.text	El modelo de Bohr de 1913 situó los electrones en niveles de energía fijos; el principio de incertidumbre de Heisenberg (1927) y su mecánica matricial ayudaron a construir la teoría cuántica. Sus debates con Einstein marcaron la física moderna.
+ph-greats.c7.viz.items.0.a	Bohr
+ph-greats.c7.viz.items.0.b	modelo atómico, complementariedad
+ph-greats.c7.viz.items.1.a	Heisenberg
+ph-greats.c7.viz.items.1.b	principio de incertidumbre
+ph-greats.c7.viz.items.2.a	Schrödinger
+ph-greats.c7.viz.items.2.b	ecuación de onda
+ph-greats.c7.viz.items.3.a	Dirac
+ph-greats.c7.viz.items.3.b	predicción de la antimateria
+ph-greats.c8.title	Richard Feynman (1918–1988)
+ph-greats.c8.text	Feynman ayudó a desarrollar la electrodinámica cuántica, famosa por su precisión, y fue un profesor célebre. Mostró la causa del desastre del transbordador Challenger con un vaso de agua con hielo y una junta tórica.
+ph-greats.c8.viz.items.0	Electrodinámica cuántica
+ph-greats.c8.viz.items.1	Diagramas de Feynman
+ph-greats.c8.viz.items.2	Gran profesor
+ph-greats.c8.viz.items.3	Investigación del Challenger
+ph-greats.c9.title	La ciencia es un trabajo en equipo
+ph-greats.c9.text	Los nombres famosos se apoyan en el trabajo de muchos otros: experimentadores, fabricantes de instrumentos, matemáticos y estudiantes. Los descubrimientos de hoy, como el bosón de Higgs en 2012, involucran a miles de científicos.
+ph-greats.c9.viz.items.0.l	bosón de Higgs descubierto en el CERN
+ph-greats.c9.viz.items.1.v	miles
+ph-greats.c9.viz.items.1.l	científicos implicados

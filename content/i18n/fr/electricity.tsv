@@ -248,3 +248,303 @@ el-acdc.c1.viz.items.0.v	50 Hz
 el-acdc.c1.viz.items.0.l	Europe
 el-acdc.c1.viz.items.1.v	60 Hz
 el-acdc.c1.viz.items.1.l	États-Unis et une partie du Brésil
+el-acdc.c2.title	Pourquoi 230 V n'est pas la crête
+el-acdc.c2.text	Le secteur est annoncé à 230 V, mais il s'agit de la valeur efficace : la tension continue qui fournirait la même puissance de chauffe. Les crêtes réelles atteignent environ 325 V.
+el-acdc.c2.viz.f	U crête = U eff × √2
+el-acdc.c2.viz.items.0.s	230 V
+el-acdc.c2.viz.items.0.m	efficace (annoncée)
+el-acdc.c2.viz.items.2.s	≈ 325 V
+el-acdc.c2.viz.items.2.m	crête
+el-acdc.c3.title	La guerre des courants
+el-acdc.c3.text	Dans les années 1880, Edison défendait le courant continu ; Westinghouse et Tesla soutenaient l'alternatif. Le courant alternatif l'a emporté pour les réseaux électriques parce que les transformateurs pouvaient facilement élever sa tension pour le transport sur de longues distances, puis l'abaisser pour les foyers.
+el-acdc.c3.viz.events.0.l	Centrale à courant continu d'Edison à New York
+el-acdc.c3.viz.events.1.l	Brevets de Tesla sur le moteur à courant alternatif
+el-acdc.c3.viz.events.2.l	Le courant alternatif éclaire l'Exposition universelle de Chicago
+el-acdc.c3.viz.events.3.l	L'électricité alternative de Niagara atteint Buffalo
+el-acdc.c4.title	Pourquoi l'alternatif pour le réseau ?
+el-acdc.c4.text	Les pertes dans les câbles dépendent du carré du courant. Les transformateurs élèvent la tension afin que la même puissance circule avec beaucoup moins de courant, et les pertes chutent fortement. Les transformateurs ne fonctionnent qu'en alternatif.
+el-acdc.c4.viz.steps.0	Centrale 20 kV
+el-acdc.c4.viz.steps.1	Élévation à 400 kV
+el-acdc.c4.viz.steps.2	Lignes longue distance
+el-acdc.c4.viz.steps.3	Abaissement à 230 V
+el-acdc.c5.title	Des convertisseurs partout
+el-acdc.c5.text	Le chargeur de votre ordinateur portable transforme l'alternatif en continu (un redresseur plus un régulateur). Un onduleur solaire fait l'inverse : il transforme le continu des panneaux en alternatif pour la maison.
+el-acdc.c5.viz.l.t	Redresseur / chargeur
+el-acdc.c5.viz.l.items.0	alt. → cont.
+el-acdc.c5.viz.l.items.1	téléphone, portable, driver LED
+el-acdc.c5.viz.r.t	Onduleur
+el-acdc.c5.viz.r.items.0	cont. → alt.
+el-acdc.c5.viz.r.items.1	solaire, batteries, onduleur de secours
+el-acdc.c6.title	Le continu revient
+el-acdc.c6.text	L'électronique moderne sait convertir efficacement les tensions continues, si bien que les très longues liaisons sous-marines et terrestres utilisent désormais le courant continu haute tension (HVDC). Les centres de données et les véhicules électriques fonctionnent eux aussi en grande partie en continu.
+el-acdc.c6.viz.items.0	Câbles sous-marins HVDC
+el-acdc.c6.viz.items.1	Solaire et batteries
+el-acdc.c6.viz.items.2	Batteries de VE
+el-acdc.c6.viz.items.3	Alimentation de data center
+el-acdc.c6.viz.items.4	USB-C Power Delivery
+el-acdc.c7.title	La fréquence est partagée
+el-acdc.c7.text	Tous les générateurs d'un réseau tournent en synchronisme. Si la demande dépasse soudain l'offre, la fréquence descend légèrement sous 50 Hz, et les opérateurs doivent ajouter de la puissance en quelques secondes pour la rétablir.
+el-acdc.c7.viz.unit	Hz
+el-acdc.c7.viz.items.0.l	normale
+el-acdc.c7.viz.items.1.l	alarmes de sous-fréquence
+el-acdc.c7.viz.items.2.l	excès d'offre
+el-acdc.c8.title	L'onde sinusoïdale
+el-acdc.c8.text	Les générateurs produisent naturellement une onde sinusoïdale, parce que leurs bobines tournent dans un champ magnétique. Un tour complet d'un générateur à deux pôles fait un cycle ; à 3 000 tr/min, cela donne 50 cycles par seconde.
+el-acdc.c8.viz.f	f = tr/min × paires de pôles ÷ 60
+el-acdc.c8.viz.items.0.s	3 000 tr/min
+el-acdc.c8.viz.items.0.m	vitesse
+el-acdc.c8.viz.items.1.m	paire de pôles
+el-acdc.c8.viz.items.2.s	50 Hz
+el-acdc.c8.viz.items.2.m	fréquence
+el-acdc.c9.title	Selon les pays, des secteurs différents
+el-acdc.c9.text	La plus grande partie du monde utilise 220–240 V à 50 Hz. L'Amérique du Nord utilise 120 V à 60 Hz, et le Japon est partagé : 50 Hz à l'est, 60 Hz à l'ouest.
+el-acdc.c9.viz.unit	volts
+el-acdc.c9.viz.items.0.l	Europe
+el-acdc.c9.viz.items.1.l	R.-U.
+el-acdc.c9.viz.items.2.l	États-Unis
+el-acdc.c9.viz.items.3.l	Japon
+el-acdc.c9.viz.items.4.l	Brésil
+el-magnet.title	Magnétisme et électroaimants
+el-magnet.summary	Comment le courant crée des champs magnétiques, et inversement.
+el-magnet.q0.q	Qu'a découvert Ørsted en 1820 ?
+el-magnet.q0.o0	Les piles
+el-magnet.q0.o1	Un courant électrique crée un champ magnétique
+el-magnet.q0.o2	Le courant alternatif
+el-magnet.q0.x	L'aiguille d'une boussole a bougé à proximité d'un courant.
+el-magnet.q1.q	Pourquoi une casserole en aluminium ne fonctionne-t-elle pas sur une plaque à induction ?
+el-magnet.q1.o0	Elle est trop légère
+el-magnet.q1.o1	Elle n'est pas assez magnétique pour que le champ la chauffe efficacement
+el-magnet.q1.o2	L'aluminium fond
+el-magnet.q1.x	L'induction exige un fond ferromagnétique.
+el-magnet.q2.q	Un relais permet à un faible courant de…
+el-magnet.q2.o0	stocker de l'énergie
+el-magnet.q2.o1	commander un circuit beaucoup plus puissant
+el-magnet.q2.o2	convertir l'alternatif en continu
+el-magnet.q2.x	La bobine attire un contact distinct pour le fermer.
+el-magnet.c0.title	Champs magnétiques
+el-magnet.c0.text	Un aimant possède un pôle nord et un pôle sud. Les pôles opposés s'attirent ; les pôles identiques se repoussent. La région invisible où il agit est son champ magnétique, que la limaille de fer rend visible sous forme de lignes courbes.
+el-magnet.c0.viz.l.t	Attraction
+el-magnet.c0.viz.l.items.0	nord + sud
+el-magnet.c0.viz.l.items.1	pôles opposés
+el-magnet.c0.viz.r.t	Répulsion
+el-magnet.c0.viz.r.items.0	nord + nord
+el-magnet.c0.viz.r.items.1	sud + sud
+el-magnet.c1.title	La Terre est un aimant
+el-magnet.c1.text	Le noyau de fer en fusion de la Terre crée un champ magnétique. L'aiguille d'une boussole est un minuscule aimant qui s'aligne sur lui. Le nord magnétique dérive lentement et ne coïncide pas exactement avec le pôle Nord géographique.
+el-magnet.c1.viz.steps.0	Le fer en fusion circule dans le noyau
+el-magnet.c1.viz.steps.1	Courants électriques
+el-magnet.c1.viz.steps.2	Champ magnétique terrestre
+el-magnet.c1.viz.steps.3	La boussole indique le nord
+el-magnet.c2.title	Le courant crée un champ
+el-magnet.c2.text	En 1820, Ørsted a remarqué que l'aiguille d'une boussole sursautait près d'un fil parcouru par un courant. Tout courant crée un champ magnétique qui l'entoure. Cela relie l'électricité et le magnétisme.
+el-magnet.c2.viz.events.0.l	Ørsted voit bouger la boussole
+el-magnet.c2.viz.events.1.l	L'électroaimant de Sturgeon
+el-magnet.c2.viz.events.2.l	L'induction de Faraday
+el-magnet.c2.viz.events.3.l	Maxwell unifie la théorie
+el-magnet.c3.title	Électroaimants
+el-magnet.c3.text	Enroulez un fil en bobine et les champs s'additionnent. Placez un noyau de fer à l'intérieur et le champ devient bien plus fort. Coupez le courant et l'aimant s'éteint aussi.
+el-magnet.c3.viz.items.0	Plus de spires de fil
+el-magnet.c3.viz.items.1	Plus de courant
+el-magnet.c3.viz.items.2	Un noyau de fer
+el-magnet.c3.viz.items.3	= un aimant plus fort
+el-magnet.c4.title	Où fonctionnent les électroaimants
+el-magnet.c4.text	Relais, serrures de porte, haut-parleurs, appareils d'IRM, grues de ferrailleurs et contacteurs de votre tableau électrique utilisent tous des électroaimants.
+el-magnet.c4.viz.root	Électroaimants
+el-magnet.c4.viz.items.0	Relais et contacteurs
+el-magnet.c4.viz.items.1	Haut-parleurs
+el-magnet.c4.viz.items.2	Serrures de porte
+el-magnet.c4.viz.items.3	Appareils d'IRM
+el-magnet.c5.title	Relais
+el-magnet.c5.text	Un relais utilise un faible courant dans une bobine pour fermer un interrupteur. Cela permet à un microcontrôleur de 3,3 V de commander en toute sécurité un radiateur de 230 V.
+el-magnet.c5.viz.steps.0	Faible courant de commande
+el-magnet.c5.viz.steps.1	La bobine devient un aimant
+el-magnet.c5.viz.steps.2	Elle ferme le contact
+el-magnet.c5.viz.steps.3	Forte charge enclenchée
+el-magnet.c6.title	Induction
+el-magnet.c6.text	Faraday a découvert l'inverse en 1831 : un champ magnétique variable pousse un courant dans un fil voisin. Déplacez un aimant dans une bobine, puis hors de celle-ci, et un courant circule. C'est ainsi que fonctionnent les générateurs et les transformateurs.
+el-magnet.c6.viz.steps.0	Aimant en mouvement
+el-magnet.c6.viz.steps.1	Champ variable dans la bobine
+el-magnet.c6.viz.steps.2	Tension induite
+el-magnet.c6.viz.steps.3	Le courant circule
+el-magnet.c7.title	Plaques à induction
+el-magnet.c7.text	Une plaque à induction fait passer un courant alternatif haute fréquence dans une bobine située sous la vitre. Le champ variable induit des courants directement dans la casserole en fer, qui chauffe. La vitre reste relativement froide, et les casseroles non magnétiques ne fonctionnent pas.
+el-magnet.c7.viz.steps.0	Courant alternatif dans la bobine
+el-magnet.c7.viz.steps.1	Champ magnétique variable
+el-magnet.c7.viz.steps.2	Courants induits dans la casserole
+el-magnet.c7.viz.steps.3	La casserole chauffe
+el-magnet.c8.title	Recharge sans fil
+el-magnet.c8.text	Les chargeurs de téléphone reprennent la même idée : une bobine dans le socle crée un champ variable, et une bobine dans le téléphone le capte. C'est pratique mais moins efficace qu'un câble, et cela demande un bon alignement.
+el-magnet.c8.viz.l.t	Câble
+el-magnet.c8.viz.l.items.0	le plus efficace
+el-magnet.c8.viz.l.items.1	plus rapide
+el-magnet.c8.viz.r.t	Socle sans fil
+el-magnet.c8.viz.r.items.0	pratique
+el-magnet.c8.viz.r.items.1	un peu d'énergie perdue en chaleur
+el-magnet.c9.title	Stockage magnétique
+el-magnet.c9.text	Les disques durs stockent des bits sous forme de minuscules zones aimantées dans un sens ou dans l'autre. Les bandes des cartes bancaires et les anciennes cassettes audio reposent sur le même principe.
+el-magnet.c9.viz.items.0.a	Disque dur
+el-magnet.c9.viz.items.0.b	zones aimantées
+el-magnet.c9.viz.items.1.a	Piste magnétique
+el-magnet.c9.viz.items.1.b	motif magnétique
+el-magnet.c9.viz.items.2.a	Cassette audio
+el-magnet.c9.viz.items.2.b	revêtement aimanté
+el-motors.title	Moteurs et générateurs
+el-motors.summary	Transformer l'électricité en mouvement, et inversement.
+el-motors.q0.q	Un générateur est essentiellement…
+el-motors.q0.o0	Une pile
+el-motors.q0.o1	Un moteur qui fonctionne à l'envers
+el-motors.q0.o2	Un transformateur
+el-motors.q0.x	Le faire tourner induit une tension.
+el-motors.q1.q	Pourquoi les variateurs de vitesse économisent-ils autant d'énergie sur les ventilateurs ?
+el-motors.q1.o0	Ils utilisent du courant continu
+el-motors.q1.o1	La puissance d'un ventilateur varie à peu près comme le cube de la vitesse
+el-motors.q1.o2	Ils suppriment les frottements
+el-motors.q1.x	Une petite baisse de vitesse donne une grosse baisse de puissance.
+el-motors.q2.q	Le freinage régénératif…
+el-motors.q2.o0	Sollicite davantage les plaquettes de frein
+el-motors.q2.o1	Transforme le moteur en générateur pour recharger la batterie
+el-motors.q2.o2	Déconnecte la batterie
+el-motors.q2.x	L'énergie cinétique devient de l'électricité.
+el-motors.c0.title	L'effet moteur
+el-motors.c0.text	Un fil parcouru par un courant et placé dans un champ magnétique subit une force. Courbez le fil en une boucle montée sur un axe : les forces sur chaque côté poussent en sens opposés, et la boucle tourne.
+el-motors.c0.viz.steps.0	Courant dans une bobine
+el-motors.c0.viz.steps.1	Dans un champ magnétique
+el-motors.c0.viz.steps.2	Une force sur chaque côté
+el-motors.c0.viz.steps.3	La bobine tourne
+el-motors.c1.title	Moteurs à courant continu
+el-motors.c1.text	Les petits moteurs à courant continu utilisent un collecteur, une bague fendue qui inverse le courant à chaque demi-tour pour que la bobine continue de tourner dans le même sens. Des balais frottent dessus, ce qui provoque de l'usure.
+el-motors.c1.viz.l.t	CC à balais
+el-motors.c1.viz.l.items.0	simple et peu cher
+el-motors.c1.viz.l.items.1	les balais s'usent
+el-motors.c1.viz.l.items.2	jouets, essuie-glaces
+el-motors.c1.viz.r.t	CC sans balais
+el-motors.c1.viz.r.items.0	commutation électronique
+el-motors.c1.viz.r.items.1	longue durée de vie
+el-motors.c1.viz.r.items.2	drones, ventilateurs
+el-motors.c2.title	Générateurs
+el-motors.c2.text	Un générateur est un moteur à l'envers : faites tourner une bobine dans un champ magnétique (ou un aimant à l'intérieur de bobines) et une tension est induite. Des turbines entraînées par la vapeur, l'eau ou le vent font tourner des générateurs pour produire presque toute notre électricité.
+el-motors.c2.viz.steps.0	Vapeur, eau ou vent
+el-motors.c2.viz.steps.1	Fait tourner une turbine
+el-motors.c2.viz.steps.2	Entraîne le générateur
+el-motors.c2.viz.steps.3	Électricité
+el-motors.c3.title	Moteurs asynchrones
+el-motors.c3.text	La plupart des moteurs industriels, des pompes et des ventilateurs sont des moteurs asynchrones à courant alternatif. Le stator crée un champ magnétique tournant ; celui-ci induit des courants dans le rotor, qui court après le champ. Simple, robuste, sans balais.
+el-motors.c3.viz.steps.0	Courant alternatif dans le stator
+el-motors.c3.viz.steps.1	Champ magnétique tournant
+el-motors.c3.viz.steps.2	Courants induits dans le rotor
+el-motors.c3.viz.steps.3	Le rotor suit le champ
+el-motors.c4.title	Les moteurs consomment beaucoup d'électricité
+el-motors.c4.text	Les moteurs électriques représentent environ 40–45 % de la consommation mondiale d'électricité, selon l'AIE, surtout dans l'industrie : pompes, compresseurs et ventilateurs. Des moteurs plus efficaces et la régulation de vitesse font économiser d'énormes quantités d'énergie.
+el-motors.c4.viz.items.0.l	de l'électricité mondiale alimente des moteurs (estimation AIE)
+el-motors.c5.title	Variateurs de vitesse
+el-motors.c5.text	Un variateur de fréquence (VFD) modifie la fréquence envoyée à un moteur à courant alternatif pour contrôler sa vitesse. Comme la puissance d'un ventilateur ou d'une pompe chute fortement avec la vitesse, un fonctionnement à 80 % de la vitesse peut ne consommer qu'environ la moitié de la puissance.
+el-motors.c5.viz.f	P ∝ vitesse³
+el-motors.c5.viz.items.0.s	vitesse 80 %
+el-motors.c5.viz.items.1.s	0,8³
+el-motors.c5.viz.items.2.s	puissance
+el-motors.c5.viz.items.2.m	environ moitié
+el-motors.c6.title	Moteurs de véhicules électriques
+el-motors.c6.text	Les voitures électriques utilisent des moteurs à aimants permanents ou asynchrones, souvent efficaces à plus de 90 %, contre environ 20–35 % pour les moteurs à essence. Ils délivrent le couple maximal dès l'arrêt.
+el-motors.c6.viz.unit	% de rendement (typique)
+el-motors.c6.viz.items.0.l	Moteur essence
+el-motors.c6.viz.items.1.l	Moteur diesel
+el-motors.c6.viz.items.2.l	Moteur VE
+el-motors.c7.title	Freinage régénératif
+el-motors.c7.text	Quand un véhicule électrique ralentit, son moteur fonctionne comme un générateur et retransforme le mouvement en électricité pour recharger la batterie. C'est pourquoi la conduite à une pédale prolonge l'autonomie en circulation urbaine.
+el-motors.c7.viz.steps.0	Accélération : la batterie alimente le moteur
+el-motors.c7.viz.steps.1	Freinage : le moteur devient générateur
+el-motors.c7.viz.steps.2	L'énergie retourne à la batterie
+el-motors.c7.viz.steps.3	Nouvelle accélération
+el-motors.c8.title	Moteurs pas à pas et servomoteurs
+el-motors.c8.text	Les moteurs pas à pas avancent par pas précis (imprimantes 3D, machines CNC). Les servomoteurs utilisent un retour d'information pour tenir un angle précis (bras de robot, avions radiocommandés). Dans les deux cas, le mouvement se contrôle avec précision.
+el-motors.c8.viz.l.t	Pas à pas
+el-motors.c8.viz.l.items.0	pas fixes
+el-motors.c8.viz.l.items.1	sans retour d'info
+el-motors.c8.viz.l.items.2	imprimantes 3D
+el-motors.c8.viz.r.t	Servomoteur
+el-motors.c8.viz.r.items.0	boucle de retour
+el-motors.c8.viz.r.items.1	angle précis
+el-motors.c8.viz.r.items.2	articulations de robot
+el-motors.c9.title	Plaques signalétiques de moteurs
+el-motors.c9.text	Chaque moteur porte une plaque signalétique : puissance nominale (kW), tension, courant, vitesse (tr/min) et classe de rendement (IE1 à IE5). Elle vous indique l'alimentation et la protection nécessaires.
+el-motors.c9.viz.items.0.a	kW
+el-motors.c9.viz.items.0.b	puissance mécanique
+el-motors.c9.viz.items.1.a	tr/min
+el-motors.c9.viz.items.1.b	vitesse nominale
+el-motors.c9.viz.items.2.a	IE3
+el-motors.c9.viz.items.2.b	classe de rendement
+el-motors.c9.viz.items.3.a	cos φ
+el-motors.c9.viz.items.3.b	facteur de puissance
+el-grid.title	Le réseau électrique
+el-grid.summary	De la centrale à votre prise.
+el-grid.q0.q	Pourquoi l'électricité est-elle transportée à très haute tension ?
+el-grid.q0.o0	C'est plus rapide
+el-grid.q0.o1	Il faut moins de courant, donc les pertes dans les câbles sont bien plus faibles
+el-grid.q0.o2	Les foyers ont besoin de 400 kV
+el-grid.q0.x	Les pertes varient comme le carré du courant.
+el-grid.q1.q	Un transformateur fonctionne parce que…
+el-grid.q1.o0	Le cuivre est magnétique
+el-grid.q1.o1	Un champ magnétique variable induit une tension dans la seconde bobine
+el-grid.q1.o2	Il stocke de la charge
+el-grid.q1.x	Il repose sur l'induction en courant alternatif.
+el-grid.q2.q	Le stockage par pompage-turbinage…
+el-grid.q2.o0	Brûle de l'eau
+el-grid.q2.o1	Pompe l'eau vers le haut quand l'électricité est bon marché et produit plus tard
+el-grid.q2.o2	Ne fonctionne que la nuit
+el-grid.q2.x	Il stocke l'énergie sous forme de hauteur.
+el-grid.c0.title	Production, transport, distribution
+el-grid.c0.text	L'électricité est produite dans des centrales et des parcs éoliens ou solaires, acheminée sur de longues distances par des lignes de transport à haute tension, puis distribuée à plus basse tension aux villes et aux foyers.
+el-grid.c0.viz.steps.0	Production
+el-grid.c0.viz.steps.1	Transformateur élévateur
+el-grid.c0.viz.steps.2	Transport 400 kV
+el-grid.c0.viz.steps.3	Distribution 15 kV
+el-grid.c0.viz.steps.4	Votre foyer 230 V
+el-grid.c1.title	Transformateurs
+el-grid.c1.text	Un transformateur comporte deux bobines autour d'un noyau de fer. Le courant alternatif dans la première bobine crée un champ variable qui induit une tension dans la seconde. Le rapport du nombre de spires fixe le rapport des tensions.
+el-grid.c1.example.0	De 15 000 V à 400 V
+el-grid.c1.example.1	rapport de spires 15 000 ÷ 400
+el-grid.c1.example.2	= 37,5 : 1
+el-grid.c1.viz.f	U₂ ÷ U₁ = N₂ ÷ N₁
+el-grid.c1.viz.items.0.s	U
+el-grid.c1.viz.items.0.m	tension
+el-grid.c1.viz.items.1.s	N
+el-grid.c1.viz.items.1.m	nombre de spires
+el-grid.c2.title	Pourquoi la haute tension ?
+el-grid.c2.text	Les pertes dans un câble valent I² × R. Doubler la tension divise le courant par deux pour la même puissance, ce qui réduit les pertes au quart.
+el-grid.c2.example.0	10 MW à 10 kV contre 400 kV
+el-grid.c2.example.1	courant 1 000 A contre 25 A
+el-grid.c2.example.2	pertes 1 600 fois plus faibles
+el-grid.c2.viz.f	pertes = I² × R
+el-grid.c2.viz.items.0.s	I
+el-grid.c2.viz.items.0.m	courant dans la ligne
+el-grid.c2.viz.items.1.s	R
+el-grid.c2.viz.items.1.m	résistance de la ligne
+el-grid.c3.title	Équilibrer l'offre et la demande
+el-grid.c3.text	L'électricité se stocke difficilement en grande quantité, donc l'offre doit égaler la demande à chaque seconde. Les gestionnaires de réseau prévoient la demande et mobilisent centrales, importations, stockage et effacement de la demande pour maintenir l'équilibre.
+el-grid.c3.viz.steps.0	Prévoir la demande
+el-grid.c3.viz.steps.1	Planifier la production
+el-grid.c3.viz.steps.2	Surveiller la fréquence
+el-grid.c3.viz.steps.3	Ajuster en quelques secondes
+el-grid.c4.title	La courbe de demande quotidienne
+el-grid.c4.text	La demande est faible la nuit, monte le matin et culmine le soir, quand on cuisine et on chauffe les logements. La production solaire culmine à midi, ce qui déplace le moment où l'électricité est la moins chère.
+el-grid.c4.viz.events.0.l	creux nocturne
+el-grid.c4.viz.events.1.l	hausse du matin
+el-grid.c4.viz.events.2.l	pic solaire
+el-grid.c4.viz.events.3.l	pic du soir
+el-grid.c4.viz.events.4.l	baisse
+el-grid.c5.title	Le mix renouvelable du Portugal
+el-grid.c5.text	Les énergies renouvelables (hydraulique, éolien, solaire et biomasse) fournissent la majorité de l'électricité du Portugal une année type, environ 60–70 % ces dernières années selon les pluies et le vent. En 2016, le pays a fonctionné quatre jours d'affilée avec les seules énergies renouvelables.
+el-grid.c5.viz.unit	% de l'électricité portugaise (approx., année récente)
+el-grid.c5.viz.items.0.l	Éolien
+el-grid.c5.viz.items.1.l	Hydraulique
+el-grid.c5.viz.items.2.l	Solaire
+el-grid.c5.viz.items.3.l	Gaz
+el-grid.c5.viz.items.4.l	Imports et autres
+el-grid.c6.title	Interconnexions
+el-grid.c6.text	Le réseau portugais est relié à celui de l'Espagne, et celui de l'Espagne à celui de la France. Les interconnexions permettent aux pays de partager les surplus d'éolien ou de solaire, mais les liaisons de la péninsule Ibérique avec le reste de l'Europe sont relativement limitées.
+el-grid.c6.viz.steps.0	Portugal
+el-grid.c6.viz.steps.1	Espagne
+el-grid.c6.viz.steps.2	France
+el-grid.c6.viz.steps.3	Reste de l'Europe
+el-grid.c7.title	La panne géante d'avril 2025
+el-grid.c7.text	Le 28 avril 2025, une perte soudaine de production a déclenché une cascade qui a plongé presque toute l'Espagne continentale et le Portugal dans le noir pendant de longues heures. Redémarrer un réseau à partir de zéro (« black start ») est lent et délicat.

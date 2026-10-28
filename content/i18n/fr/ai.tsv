@@ -408,7 +408,7 @@ ai-algos.c2.viz.items.1	Non, revenu < 30 k€ → moyen
 ai-algos.c2.viz.items.2	Non, revenu ≥ 30 k€ → faible
 ai-algos.c3.title	Les forêts aléatoires
 ai-algos.c3.text	Entraînez des centaines d'arbres de décision légèrement différents sur des tranches aléatoires des données, puis faites-les voter. La foule est bien plus précise et stable qu'un arbre seul.
-ai-algos.c3.viz.steps.0	Beaucoup d'arbres sur des échantillons aléatoires
+ai-algos.c3.viz.steps.0	Arbres sur échantillons aléatoires
 ai-algos.c3.viz.steps.1	Chaque arbre vote
 ai-algos.c3.viz.steps.2	La majorité l'emporte
 ai-algos.c4.title	Le gradient boosting
@@ -518,3 +518,283 @@ ai-nets.c6.title	Lots et époques
 ai-nets.c6.text	Les données d'entraînement sont fournies en petits lots, disons 32 exemples à la fois, et les poids sont mis à jour après chaque lot. Un passage complet sur toutes les données est une époque. Les réseaux s'entraînent souvent sur de nombreuses époques.
 ai-nets.c6.viz.f	mises à jour = (exemples ÷ taille du lot) × époques
 ai-nets.c6.viz.items.0.m	exemples
+ai-nets.c6.viz.items.1.m	taille du lot
+ai-nets.c6.viz.items.2.m	époques → ≈ 15 600 mises à jour
+ai-nets.c7.title	Dropout et régularisation
+ai-nets.c7.text	Pour empêcher un réseau de mémoriser, on peut désactiver au hasard certains neurones pendant l'entraînement (dropout) ou pénaliser les poids très élevés. Le réseau est forcé d'apprendre des régularités robustes, pas des raccourcis fragiles.
+ai-nets.c7.viz.items.0	Dropout : couper des neurones au hasard
+ai-nets.c7.viz.items.1	Weight decay : pénaliser les gros poids
+ai-nets.c7.viz.items.2	Arrêt précoce : stop quand la validation ne progresse plus
+ai-nets.c7.viz.items.3	Plus de données : le meilleur régularisateur
+ai-nets.c8.title	Les convolutions en une image
+ai-nets.c8.text	Une couche convolutive fait glisser un petit filtre, disons de 3×3 pixels, sur l'image, en cherchant partout le même motif : un contour, une courbe, une texture. C'est pourquoi les réseaux d'images reconnaissent un chat dans n'importe quel coin de la photo.
+ai-nets.c8.viz.steps.0	Filtre 3×3
+ai-nets.c8.viz.steps.1	Glisse sur toute l'image
+ai-nets.c8.viz.steps.2	Carte des endroits où le motif apparaît
+ai-nets.c9.title	Pourquoi des GPU ?
+ai-nets.c9.text	L'entraînement consiste à multiplier d'énormes grilles de nombres, encore et encore. Les cartes graphiques ont été conçues pour effectuer des milliers de calculs simples en parallèle pour les jeux vidéo, ce qui s'est avéré être exactement ce dont les réseaux de neurones ont besoin.
+ai-nets.c9.viz.l.t	CPU
+ai-nets.c9.viz.l.items.0	quelques cœurs puissants
+ai-nets.c9.viz.l.items.1	excellent pour des tâches variées
+ai-nets.c9.viz.l.items.2	lent pour les grosses matrices
+ai-nets.c9.viz.r.t	GPU
+ai-nets.c9.viz.r.items.0	des milliers de petits cœurs
+ai-nets.c9.viz.r.items.1	même calcul sur beaucoup de données
+ai-nets.c9.viz.r.items.2	idéal pour l'entraînement
+ai-metrics.title	Le modèle est-il bon ?
+ai-metrics.summary	Exactitude, précision, rappel, et pourquoi un seul chiffre ne suffit jamais.
+ai-metrics.q0.q	Il existe 50 vrais cas de fraude ; le modèle en détecte 40. Le rappel est de…
+ai-metrics.q0.o0	40 %
+ai-metrics.q0.o1	80 %
+ai-metrics.q0.o2	125 %
+ai-metrics.q0.x	Rappel = 40 ÷ 50 = 80 %.
+ai-metrics.q1.q	Quelle métrique répond à « parmi les alertes levées, combien étaient réelles ? »
+ai-metrics.q1.o0	Le rappel
+ai-metrics.q1.o1	La précision
+ai-metrics.q1.o2	La MAE
+ai-metrics.q1.x	La précision mesure la fiabilité des alertes.
+ai-metrics.q2.q	Pourquoi une exactitude de 99 % peut-elle être trompeuse ?
+ai-metrics.q2.o0	Elle est toujours truquée
+ai-metrics.q2.o1	Quand la classe positive est rare, répondre toujours « non » donne un score élevé
+ai-metrics.q2.o2	L'exactitude ne marche que pour les images
+ai-metrics.q2.x	Avec 1 % de fraude, un modèle qui ne fait rien est exact à 99 %.
+ai-metrics.c0.title	L'exactitude peut mentir
+ai-metrics.c0.text	Si 1 % des transactions sont frauduleuses, un modèle qui répond toujours « pas de fraude » est exact à 99 % et complètement inutile.\n\nQuand un résultat est rare, l'exactitude cache les échecs qui comptent le plus.
+ai-metrics.c0.viz.items.0.l	exactitude
+ai-metrics.c0.viz.items.1.l	fraudes détectées
+ai-metrics.c0.viz.items.2.l	des cas sont des fraudes
+ai-metrics.c1.title	La matrice de confusion
+ai-metrics.c1.text	Chaque prédiction tombe dans l'une de quatre cases : vrais positifs (détectés), faux positifs (fausses alertes), faux négatifs (manqués) et vrais négatifs (correctement ignorés).\n\nLa plupart des métriques utiles se construisent à partir de ces quatre effectifs.
+ai-metrics.c1.viz.l.t	Fraude prédite
+ai-metrics.c1.viz.l.items.0	vrai positif (détecté)
+ai-metrics.c1.viz.l.items.1	faux positif (fausse alerte)
+ai-metrics.c1.viz.r.t	OK prédit
+ai-metrics.c1.viz.r.items.0	faux négatif (manqué)
+ai-metrics.c1.viz.r.items.1	vrai négatif (normal)
+ai-metrics.c2.title	La précision
+ai-metrics.c2.text	Parmi tout ce que le modèle a signalé, quelle part était juste ? Une précision élevée signifie peu de fausses alertes.
+ai-metrics.c2.example.0	40 signalées, 30 vraies fraudes
+ai-metrics.c2.example.1	30 ÷ 40
+ai-metrics.c2.example.2	= 75 % de précision
+ai-metrics.c2.viz.f	précision = VP ÷ (VP + FP)
+ai-metrics.c2.viz.items.0.s	VP
+ai-metrics.c2.viz.items.0.m	bien signalés
+ai-metrics.c2.viz.items.1.s	FP
+ai-metrics.c2.viz.items.1.m	fausses alertes
+ai-metrics.c3.title	Le rappel
+ai-metrics.c3.text	Parmi tous les cas réels, combien le modèle en a-t-il détectés ? Un rappel élevé signifie peu de cas manqués.
+ai-metrics.c3.example.0	50 vraies fraudes, 30 détectées
+ai-metrics.c3.example.1	30 ÷ 50
+ai-metrics.c3.example.2	= 60 % de rappel
+ai-metrics.c3.viz.f	rappel = VP ÷ (VP + FN)
+ai-metrics.c3.viz.items.0.s	VP
+ai-metrics.c3.viz.items.0.m	détectés
+ai-metrics.c3.viz.items.1.s	FN
+ai-metrics.c3.viz.items.1.m	manqués
+ai-metrics.c4.title	Le compromis précision–rappel
+ai-metrics.c4.text	Abaissez le seuil d'alarme et vous détectez plus de cas (rappel en hausse) mais levez plus de fausses alertes (précision en baisse). Relevez-le et c'est l'inverse. Où le placer est un choix métier.
+ai-metrics.c4.viz.l.t	Dépistage du cancer
+ai-metrics.c4.viz.l.items.0	privilégier le rappel
+ai-metrics.c4.viz.l.items.1	un cas manqué coûte très cher
+ai-metrics.c4.viz.l.items.2	les fausses alertes sont recontrôlées
+ai-metrics.c4.viz.r.t	Filtre anti-spam
+ai-metrics.c4.viz.r.items.0	privilégier la précision
+ai-metrics.c4.viz.r.items.1	perdre un vrai e-mail fait mal
+ai-metrics.c4.viz.r.items.2	un peu de spam passe
+ai-metrics.c5.title	Le score F1
+ai-metrics.c5.text	Le F1 combine précision et rappel en un seul nombre, leur moyenne harmonique. Il n'est élevé que si les deux le sont.
+ai-metrics.c5.example.0	P = 0,75, R = 0,60
+ai-metrics.c5.example.1	2 × 0,75 × 0,60 ÷ 1,35
+ai-metrics.c5.example.2	F1 ≈ 0,67
+ai-metrics.c5.viz.f	F1 = 2·P·R ÷ (P + R)
+ai-metrics.c5.viz.items.0.s	P
+ai-metrics.c5.viz.items.0.m	précision
+ai-metrics.c5.viz.items.1.s	R
+ai-metrics.c5.viz.items.1.m	rappel
+ai-metrics.c6.title	Les erreurs pour les nombres
+ai-metrics.c6.text	En régression, on mesure l'écart entre les prédictions et la réalité. La MAE est l'erreur absolue moyenne (« à côté de 8 000 € en moyenne »). La RMSE punit davantage les grosses erreurs. La MAPE exprime l'erreur en pourcentage.
+ai-metrics.c6.viz.items.0.a	MAE
+ai-metrics.c6.viz.items.0.b	taille moyenne de l'erreur
+ai-metrics.c6.viz.items.1.a	RMSE
+ai-metrics.c6.viz.items.1.b	punit davantage les grosses erreurs
+ai-metrics.c6.viz.items.2.a	MAPE
+ai-metrics.c6.viz.items.2.b	erreur en % de la vraie valeur
+ai-metrics.c7.title	Comparer à une référence
+ai-metrics.c7.text	Une prévision avec 10 % d'erreur semble bonne, jusqu'à ce qu'on apprenne que « comme la semaine dernière » obtient 11 %. Présentez toujours votre modèle à côté d'une référence simple et du processus humain actuel.
+ai-metrics.c7.viz.unit	% d'erreur
+ai-metrics.c7.viz.items.0.l	Comme l'an dernier
+ai-metrics.c7.viz.items.1.l	Prévision d'analyste
+ai-metrics.c7.viz.items.2.l	Modèle de ML
+ai-metrics.c8.title	Tester comme il sera utilisé
+ai-metrics.c8.text	Évaluez sur des données qui ressemblent au futur : dates ultérieures, nouveaux clients, autres régions. Continuez ensuite à surveiller après le lancement, car le vrai test commence dès le premier jour en production.
+ai-metrics.c8.viz.steps.0	Entraîner sur le passé
+ai-metrics.c8.viz.steps.1	Tester sur des données plus récentes
+ai-metrics.c8.viz.steps.2	Lancer
+ai-metrics.c8.viz.steps.3	Surveiller chaque semaine
+ai-metrics.c9.title	Mesurer ce qui compte pour l'entreprise
+ai-metrics.c9.text	Un modèle plus exact de 2 % mais qui met 10 secondes par prédiction, ou qu'on ne peut pas expliquer à un régulateur, peut être pire. Traduisez les erreurs en argent, en temps ou en risque.
+ai-metrics.c9.viz.items.0	Coût d'une fausse alerte
+ai-metrics.c9.viz.items.1	Coût d'un cas manqué
+ai-metrics.c9.viz.items.2	Vitesse par prédiction
+ai-metrics.c9.viz.items.3	Explicabilité requise ?
+ai-metrics.c9.viz.items.4	Effort de maintenance
+ai-vision.title	La vision par ordinateur
+ai-vision.summary	Comment les machines voient : pixels, convolutions et détection d'objets.
+ai-vision.q0.q	Dessiner des cadres étiquetés autour de chaque personne et de chaque voiture d'une image, c'est…
+ai-vision.q0.o0	De la classification
+ai-vision.q0.o1	De la détection d'objets
+ai-vision.q0.o2	De l'OCR
+ai-vision.q0.x	La détection localise chaque objet avec un cadre.
+ai-vision.q1.q	Affiner un modèle pré-entraîné sur des millions d'images avec vos quelques centaines de photos s'appelle…
+ai-vision.q1.o0	L'apprentissage par transfert
+ai-vision.q1.o1	La dérive des données
+ai-vision.q1.o2	Le clustering
+ai-vision.q1.x	Vous transférez à votre tâche ce qu'il a déjà appris.
+ai-vision.q2.q	Que s'est-il passé avec AlexNet en 2012 ?
+ai-vision.q2.o0	Il a inventé le pixel
+ai-vision.q2.o1	Il a remporté ImageNet avec une large avance et déclenché l'essor de l'apprentissage profond
+ai-vision.q2.o2	Il a reconnu des visages pour la première fois
+ai-vision.q2.x	Son taux d'erreur était bien inférieur à celui des méthodes précédentes.
+ai-vision.c0.title	Une image est une grille de nombres
+ai-vision.c0.text	Pour un ordinateur, une photo est une grille de pixels, chacun stocké sous forme de trois nombres pour le rouge, le vert et le bleu, de 0 à 255. Une photo de téléphone de 12 mégapixels représente environ 36 millions de nombres.
+ai-vision.c0.viz.f	pixel = (R, V, B)
+ai-vision.c0.viz.items.0.s	R
+ai-vision.c0.viz.items.0.m	rouge 0–255
+ai-vision.c0.viz.items.1.s	V
+ai-vision.c0.viz.items.1.m	vert 0–255
+ai-vision.c0.viz.items.2.s	B
+ai-vision.c0.viz.items.2.m	bleu 0–255
+ai-vision.c1.title	La classification
+ai-vision.c1.text	La tâche de vision la plus simple : qu'y a-t-il sur cette image ? Le réseau donne une probabilité pour chaque catégorie qu'il connaît.
+ai-vision.c1.viz.items.0.l	Chat
+ai-vision.c1.viz.items.1.l	Chien
+ai-vision.c1.viz.items.2.l	Renard
+ai-vision.c1.viz.items.3.l	Lapin
+ai-vision.c2.title	La détection d'objets
+ai-vision.c2.text	La détection va plus loin : elle trouve chaque objet et trace un cadre autour de chacun, avec une étiquette et un score de confiance. C'est ce qu'utilisent les systèmes de caméras de sécurité comme Frigate pour distinguer une personne d'une voiture de passage ou d'un chat.
+ai-vision.c2.viz.steps.0	Image de la caméra
+ai-vision.c2.viz.steps.1	Le détecteur trouve des objets
+ai-vision.c2.viz.steps.2	Cadre « personne 0,92 »
+ai-vision.c2.viz.steps.3	Alerte seulement pour les personnes
+ai-vision.c3.title	La segmentation
+ai-vision.c3.text	La segmentation étiquette chaque pixel : route, voiture, piéton, ciel. Les voitures autonomes et l'imagerie médicale s'en servent pour connaître les formes exactes, pas seulement des cadres.
+ai-vision.c3.viz.l.t	Détection
+ai-vision.c3.viz.l.items.0	un cadre par objet
+ai-vision.c3.viz.l.items.1	rapide
+ai-vision.c3.viz.l.items.2	bon pour compter
+ai-vision.c3.viz.r.t	Segmentation
+ai-vision.c3.viz.r.items.0	chaque pixel étiqueté
+ai-vision.c3.viz.r.items.1	contours exacts
+ai-vision.c3.viz.r.items.2	plus lourd à calculer
+ai-vision.c4.title	ImageNet a tout changé
+ai-vision.c4.text	ImageNet est un jeu de données de plus de 14 millions d'images étiquetées. En 2012, un réseau profond appelé AlexNet a remporté sa compétition annuelle avec une énorme avance, faisant passer le taux d'erreur d'environ 26 % à 15 %. Ce résultat a lancé l'essor de l'apprentissage profond.
+ai-vision.c4.viz.unit	erreur top-5 en %
+ai-vision.c4.viz.items.0.l	Meilleur 2011
+ai-vision.c4.viz.items.1.l	AlexNet 2012
+ai-vision.c4.viz.items.2.l	ResNet 2015
+ai-vision.c5.title	L'apprentissage par transfert
+ai-vision.c5.text	On entraîne rarement un modèle de vision de zéro. On prend un modèle déjà entraîné sur des millions d'images et on l'affine sur quelques centaines des vôtres, par exemple des photos de pièces défectueuses.
+ai-vision.c5.viz.steps.0	Modèle entraîné sur des millions d'images
+ai-vision.c5.viz.steps.1	Remplacer la dernière couche
+ai-vision.c5.viz.steps.2	Affiner sur 500 de vos photos
+ai-vision.c5.viz.steps.3	Votre propre détecteur
+ai-vision.c6.title	La reconnaissance optique de caractères
+ai-vision.c6.text	L'OCR transforme des images de texte en texte : factures scannées, plaques d'immatriculation, panneaux. L'OCR moderne comprend aussi la mise en page, donc il sait quel nombre est le total et lequel est la date.
+ai-vision.c6.viz.steps.0	Document scanné
+ai-vision.c6.viz.steps.1	Trouver les zones de texte
+ai-vision.c6.viz.steps.2	Lire les caractères
+ai-vision.c6.viz.steps.3	Champs : date, total, fournisseur
+ai-vision.c7.title	La vision en périphérie
+ai-vision.c7.text	De nombreuses caméras exécutent désormais la détection localement sur de petits accélérateurs au lieu d'envoyer la vidéo dans le cloud. C'est plus rapide, moins cher et cela garde les images privées.
+ai-vision.c7.viz.l.t	Cloud
+ai-vision.c7.viz.l.items.0	modèles puissants
+ai-vision.c7.viz.l.items.1	exige de la bande passante montante
+ai-vision.c7.viz.l.items.2	les images quittent la maison
+ai-vision.c7.viz.r.t	Périphérie
+ai-vision.c7.viz.r.items.0	faible latence
+ai-vision.c7.viz.r.items.1	marche hors ligne
+ai-vision.c7.viz.r.items.2	les images restent en local
+ai-vision.c8.title	Quand la vision échoue
+ai-vision.c8.text	Les modèles de vision peuvent être trompés par un éclairage inhabituel, des angles, de la pluie sur l'objectif ou des objets jamais vus à l'entraînement. Un modèle entraîné en été peut peiner avec la neige.\n\nTestez dans les conditions réelles où la caméra sera installée.
+ai-vision.c8.viz.items.0	Images de nuit et infrarouges
+ai-vision.c8.viz.items.1	Pluie, brouillard et éblouissement
+ai-vision.c8.viz.items.2	Angles inhabituels
+ai-vision.c8.viz.items.3	Objets partiellement cachés
+ai-vision.c8.viz.items.4	Choses jamais vues à l'entraînement
+ai-vision.c9.title	Les visages sont à part
+ai-vision.c9.text	La reconnaissance faciale identifie des personnes précises et est juridiquement sensible. Selon le règlement européen sur l'IA, l'identification biométrique à distance en temps réel dans les espaces publics par la police est interdite, sauf dans des cas étroits et autorisés.
+ai-vision.c9.viz.l.t	Détection de visages
+ai-vision.c9.viz.l.items.0	« il y a un visage ici »
+ai-vision.c9.viz.l.items.1	risque généralement faible
+ai-vision.c9.viz.r.t	Reconnaissance faciale
+ai-vision.c9.viz.r.items.0	« c'est Maria »
+ai-vision.c9.viz.r.items.1	données biométriques
+ai-vision.c9.viz.r.items.2	limites légales strictes
+ai-speech.title	La parole et le son
+ai-speech.summary	Comment les machines entendent, transcrivent et répondent à voix haute.
+ai-speech.q0.q	Qu'est-ce qu'un spectrogramme ?
+ai-speech.q0.o0	Un type de microphone
+ai-speech.q0.o1	Une image des fréquences fortes au fil du temps
+ai-speech.q0.o2	Une transcription de parole
+ai-speech.q0.x	Il transforme l'audio en une grille semblable à une image.
+ai-speech.q1.q	Pourquoi les enceintes connectées détectent-elles le mot d'éveil sur l'appareil ?
+ai-speech.q1.o0	Il est illégal d'utiliser le cloud
+ai-speech.q1.o1	C'est rapide, peu coûteux et cela préserve la confidentialité de l'audio quotidien
+ai-speech.q1.o2	Le cloud ne comprend pas les mots d'éveil
+ai-speech.q1.x	L'audio n'est transmis qu'après le mot d'éveil.
+ai-speech.q2.q	Quelle est la réaction la plus sûre face à une demande de paiement urgente avec la voix d'un responsable ?
+ai-speech.q2.o0	Payer vite
+ai-speech.q2.o1	Vérifier par un canal connu et distinct
+ai-speech.q2.o2	Répondre par e-mail
+ai-speech.q2.x	Les voix peuvent être clonées ; la vérification ne doit pas dépendre de l'appel lui-même.
+ai-speech.c0.title	Le son comme une image
+ai-speech.c0.text	L'audio est une onde de pression de l'air, échantillonnée des milliers de fois par seconde. Les modèles d'IA la convertissent généralement en spectrogramme : une image des fréquences fortes à chaque instant. On peut alors appliquer des techniques issues de l'image.
+ai-speech.c0.viz.steps.0	Microphone
+ai-speech.c0.viz.steps.1	Échantillons de l'onde sonore
+ai-speech.c0.viz.steps.2	Image du spectrogramme
+ai-speech.c0.viz.steps.3	Réseau de neurones
+ai-speech.c1.title	Les fréquences d'échantillonnage
+ai-speech.c1.text	Les appels téléphoniques sont généralement échantillonnés 8 000 fois par seconde, ce qui suffit pour la parole. Les CD en utilisent 44 100, assez pour capter tout ce que l'humain peut entendre (jusqu'à environ 20 kHz).
+ai-speech.c1.viz.unit	milliers d'éch./s
+ai-speech.c1.viz.items.0.l	Appel téléphonique
+ai-speech.c1.viz.items.1.l	Modèles de parole
+ai-speech.c1.viz.items.2.l	Audio CD
+ai-speech.c1.viz.items.3.l	Studio
+ai-speech.c2.title	De la parole au texte
+ai-speech.c2.text	La reconnaissance automatique de la parole (ASR) transforme la parole en mots. Les systèmes modernes sont entraînés sur des centaines de milliers d'heures d'audio et gèrent accents, bruit et plusieurs langues.\n\nLe modèle ouvert Whisper d'OpenAI, publié en 2022, a été entraîné sur 680 000 heures.
+ai-speech.c2.viz.steps.0	Audio
+ai-speech.c2.viz.steps.1	Spectrogramme
+ai-speech.c2.viz.steps.2	Le modèle prédit les mots
+ai-speech.c2.viz.steps.3	Transcription horodatée
+ai-speech.c3.title	Du texte à la parole
+ai-speech.c3.text	La synthèse vocale (TTS) fonctionne dans l'autre sens. Les voix neuronales sonnent désormais naturelles, avec respirations et accentuations. Certaines peuvent cloner une voix à partir d'un court échantillon, ce qui soulève des craintes de fraude.
+ai-speech.c3.viz.steps.0	Texte
+ai-speech.c3.viz.steps.1	Le modèle prévoit prononciation et rythme
+ai-speech.c3.viz.steps.2	Génère la forme d'onde audio
+ai-speech.c3.viz.steps.3	Voix naturelle
+ai-speech.c4.title	Les assistants vocaux : une chaîne de traitement
+ai-speech.c4.text	Un assistant vocal enchaîne plusieurs modèles : un petit modèle guette le mot d'éveil, l'ASR transcrit la demande, un modèle de langage déduit l'intention, et la synthèse vocale prononce la réponse.
+ai-speech.c4.viz.steps.0	Mot d'éveil
+ai-speech.c4.viz.steps.1	Parole en texte
+ai-speech.c4.viz.steps.2	Comprendre l'intention
+ai-speech.c4.viz.steps.3	Agir
+ai-speech.c4.viz.steps.4	Dire la réponse
+ai-speech.c5.title	Les mots d'éveil tournent en local
+ai-speech.c5.text	Votre téléphone ou enceinte connectée n'envoie pas tout dans le cloud. Un minuscule modèle sur l'appareil n'écoute que « Hey… ». Ce n'est qu'après son déclenchement que l'audio quitte l'appareil.
+ai-speech.c5.viz.l.t	Sur l'appareil
+ai-speech.c5.viz.l.items.0	détection du mot d'éveil
+ai-speech.c5.viz.l.items.1	toujours à l'écoute
+ai-speech.c5.viz.l.items.2	minuscule et privé
+ai-speech.c5.viz.r.t	Dans le cloud
+ai-speech.c5.viz.r.items.0	transcription complète
+ai-speech.c5.viz.r.items.1	compréhension
+ai-speech.c5.viz.r.items.2	génération de la réponse
+ai-speech.c6.title	La diarisation des locuteurs
+ai-speech.c6.text	Dans l'enregistrement d'une réunion, la diarisation répond à « qui a parlé quand ? ». Combinée à la transcription, elle produit un compte rendu avec les noms.
+ai-speech.c6.viz.events.0.y	0 min
+ai-speech.c6.viz.events.0.l	Ana ouvre l'ordre du jour
+ai-speech.c6.viz.events.1.y	2 min
+ai-speech.c6.viz.events.1.l	Rui présente les chiffres du T3
+ai-speech.c6.viz.events.2.y	8 min
+ai-speech.c6.viz.events.2.l	Ana confirme la décision
+ai-speech.c6.viz.events.3.y	9 min

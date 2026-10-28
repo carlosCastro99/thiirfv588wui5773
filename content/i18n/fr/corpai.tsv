@@ -248,3 +248,303 @@ corp-build.c7.viz.items.0	Licences ou usage des modèles
 corp-build.c7.viz.items.1	Intégration et travail sur les données
 corp-build.c7.viz.items.2	Conduite du changement et formation
 corp-build.c7.viz.items.3	Exploitation et supervision
+corp-build.c8.title	Partenaires
+corp-build.c8.text	Les intégrateurs de systèmes et les cabinets spécialisés apportent expérience et capacité. Gardez les connaissances essentielles en interne pour ne pas dépendre d'eux à chaque modification.
+corp-build.c8.viz.l.t	Le partenaire apporte
+corp-build.c8.viz.l.items.0	rapidité
+corp-build.c8.viz.l.items.1	expérience
+corp-build.c8.viz.l.items.2	capacité en plus
+corp-build.c8.viz.r.t	À garder en interne
+corp-build.c8.viz.r.items.0	architecture
+corp-build.c8.viz.r.items.1	connaissance des données
+corp-build.c8.viz.r.items.2	compétences clés
+corp-build.c9.title	Réexaminer régulièrement
+corp-build.c9.text	Ce que vous construisez aujourd'hui peut devenir un produit courant l'an prochain. Revoyez les décisions de construire ou d'acheter à mesure que le marché mûrit.
+corp-build.c9.viz.steps.0	Décider : construire ou acheter
+corp-build.c9.viz.steps.1	Apporter de la valeur
+corp-build.c9.viz.steps.2	Le marché mûrit
+corp-build.c9.viz.steps.3	Réévaluer
+corp-roi.title	Le dossier d'investissement
+corp-roi.summary	Estimer la valeur, le coût et le ROI.
+corp-roi.q0.q	10 000 éléments, 0,2 h économisée chacun, 50 €/h, 50 % d'adoption donnent environ…
+corp-roi.q0.o0	100 000 €
+corp-roi.q0.o1	50 000 €
+corp-roi.q0.o2	10 000 €
+corp-roi.q0.x	10 000 × 0,2 × 50 × 0,5 = 50 000 €.
+corp-roi.q1.q	Pourquoi mesurer d'abord une situation de référence ?
+corp-roi.q1.o0	La loi l'exige
+corp-roi.q1.o1	Pour prouver l'amélioration plus tard
+corp-roi.q1.o2	Pour ralentir le projet
+corp-roi.q1.x	Sans elle, on ne peut pas démontrer les gains.
+corp-roi.q2.q	Le temps économisé devient une vraie valeur lorsque…
+corp-roi.q2.o0	Il est rapporté
+corp-roi.q2.o1	Il est réaffecté à un travail utile ou réduit les coûts
+corp-roi.q2.o2	Les gens font des pauses plus longues
+corp-roi.q2.x	La valeur doit être réalisée.
+corp-roi.c0.title	Partir d'une situation de référence
+corp-roi.c0.text	Mesurez d'abord le processus actuel : temps par tâche, volume, taux d'erreur, coût, délai de traitement. Sans référence, impossible de prouver une amélioration.
+corp-roi.c0.viz.items.0	Temps par tâche
+corp-roi.c0.viz.items.1	Volume par mois
+corp-roi.c0.viz.items.2	Taux d'erreurs et de reprises
+corp-roi.c0.viz.items.3	Coût par transaction
+corp-roi.c0.viz.items.4	Délai de traitement
+corp-roi.c1.title	Valeur du temps économisé
+corp-roi.c1.text	Une estimation simple : volume × temps économisé par élément × coût horaire × taux d'adoption. Restez prudent.
+corp-roi.c1.example.0	20 000 × 0,1 h × 40 € × 0,7
+corp-roi.c1.example.1	
+corp-roi.c1.example.2	≈ 56 000 € par an
+corp-roi.c1.viz.f	valeur = volume × temps économisé × coût horaire × adoption
+corp-roi.c1.viz.items.0.m	20 000 factures/an
+corp-roi.c1.viz.items.1.m	6 min économisées
+corp-roi.c1.viz.items.2.m	40 €/h
+corp-roi.c1.viz.items.3.m	70 % d'adoption
+corp-roi.c2.title	Au-delà du temps économisé
+corp-roi.c2.text	Incluez les gains de qualité (moins d'erreurs), des délais plus courts (trésorerie encaissée plus tôt), la réduction des risques et de meilleures décisions. Cela vaut souvent plus que les heures économisées.
+corp-roi.c2.viz.items.0	Moins d'erreurs et de reprises
+corp-roi.c2.viz.items.1	Délais plus courts
+corp-roi.c2.viz.items.2	Gains de fonds de roulement
+corp-roi.c2.viz.items.3	Risques évités
+corp-roi.c2.viz.items.4	Meilleures décisions
+corp-roi.c3.title	Coûts complets
+corp-roi.c3.text	Incluez les coûts de construction, les licences ou l'usage des modèles, l'intégration, la préparation des données, la conduite du changement, la formation et les coûts d'exploitation sur plusieurs années.
+corp-roi.c3.viz.unit	répartition des coûts (% illustratifs)
+corp-roi.c3.viz.items.0.l	Construction et intégration
+corp-roi.c3.viz.items.1.l	Modèle et licences
+corp-roi.c3.viz.items.2.l	Préparation des données
+corp-roi.c3.viz.items.3.l	Changement et formation
+corp-roi.c3.viz.items.4.l	Exploitation
+corp-roi.c4.title	ROI et retour sur investissement
+corp-roi.c4.text	Le ROI compare le gain net au coût ; le délai de récupération est le temps nécessaire pour que la valeur cumulée couvre l'investissement.
+corp-roi.c4.viz.f	ROI = (valeur − coût) ÷ coût
+corp-roi.c4.viz.items.0.s	récupération
+corp-roi.c4.viz.items.0.m	mois jusqu'à valeur cumulée ≥ coût
+corp-roi.c5.title	L'adoption génère la valeur
+corp-roi.c5.text	Un outil que personne n'utilise ne rapporte rien. Modélisez la valeur avec des courbes d'adoption réalistes, croissantes sur plusieurs mois, et non 100 % dès le premier jour.
+corp-roi.c5.viz.events.0.y	Mois 1
+corp-roi.c5.viz.events.0.l	20 % d'adoption
+corp-roi.c5.viz.events.1.y	Mois 3
+corp-roi.c5.viz.events.2.y	Mois 6
+corp-roi.c5.viz.events.3.y	Mois 12
+corp-roi.c6.title	Le temps libéré doit être utilisé
+corp-roi.c6.text	Les heures économisées ne deviennent de la valeur que si elles sont réaffectées : plus de volume traité, meilleur service, nouveau travail, ou moins d'heures supplémentaires et de sous-traitance.
+corp-roi.c6.viz.steps.0	Heures économisées
+corp-roi.c6.viz.steps.1	Réaffectées à un travail utile
+corp-roi.c6.viz.steps.2	Résultat mesurable
+corp-roi.c6.viz.steps.3	Valeur réelle
+corp-roi.c7.title	Des fourchettes, pas des points
+corp-roi.c7.text	Les résultats de l'IA sont incertains. Présentez des scénarios bas, attendu et haut, ainsi que les hypothèses de chacun.
+corp-roi.c7.viz.unit	valeur annuelle (k€, illustratif)
+corp-roi.c7.viz.items.0.l	Bas
+corp-roi.c7.viz.items.1.l	Attendu
+corp-roi.c7.viz.items.2.l	Haut
+corp-roi.c8.title	Mesurer après le lancement
+corp-roi.c8.text	Suivez après le lancement les mêmes indicateurs que ceux de la référence et comparez. Rapportez les résultats réels, y compris ce qui n'a pas fonctionné.
+corp-roi.c8.viz.steps.0	Référence
+corp-roi.c8.viz.steps.1	Lancement
+corp-roi.c8.viz.steps.2	Mesurer les mêmes indicateurs
+corp-roi.c8.viz.steps.3	Rendre compte et ajuster
+corp-roi.c9.title	Valeur stratégique
+corp-roi.c9.text	Certains investissements, comme les plateformes de données ou les compétences en IA, ne se rentabilisent pas sur un seul cas d'usage mais en rendent possibles beaucoup. Financez-les comme des fondations, avec une vision de portefeuille.
+corp-roi.c9.viz.l.t	Cas d'usage
+corp-roi.c9.viz.l.items.0	ROI direct
+corp-roi.c9.viz.l.items.1	un seul processus
+corp-roi.c9.viz.r.t	Fondation
+corp-roi.c9.viz.r.items.0	en permet beaucoup
+corp-roi.c9.viz.r.items.1	ROI indirect
+corp-roi.c9.viz.r.items.2	coût partagé
+corp-data.title	Fondations de données
+corp-data.summary	Pas d'IA sans bonnes données.
+corp-data.q0.q	Quelle est souvent la partie la plus difficile de l'IA en entreprise ?
+corp-data.q0.o0	Choisir le modèle
+corp-data.q0.o1	Trouver, accéder aux bonnes données et les nettoyer
+corp-data.q0.o2	Acheter des GPU
+corp-data.q0.x	Les données sont généralement le goulot d'étranglement.
+corp-data.q1.q	Qu'est-ce que les données de référence (master data) ?
+corp-data.q1.o0	Des données sur les dirigeants
+corp-data.q1.o1	La version unique et fiable d'entités clés comme les clients et les produits
+corp-data.q1.o2	Des données de sauvegarde
+corp-data.q1.x	Un seul enregistrement pour tous les systèmes.
+corp-data.q2.q	Pourquoi classifier la sensibilité des données ?
+corp-data.q2.o0	Pour le plaisir
+corp-data.q2.o1	Pour pouvoir appliquer des règles d'accès, y compris aux outils d'IA
+corp-data.q2.o2	Pour les supprimer
+corp-data.q2.x	Les utilisateurs et l'IA ne doivent voir que ce qui est autorisé.
+corp-data.c0.title	Les données, goulot d'étranglement
+corp-data.c0.text	Pour la plupart des entreprises, le plus difficile en IA n'est pas le modèle, mais de trouver, d'atteindre, de nettoyer et de relier les bonnes données.
+corp-data.c0.viz.items.0	Cas d'usage de l'IA
+corp-data.c0.viz.items.1	Produits de données et API
+corp-data.c0.viz.items.2	Données intégrées et gouvernées
+corp-data.c0.viz.items.3	Systèmes sources : ERP, CRM, fichiers
+corp-data.c1.title	Connaître vos données
+corp-data.c1.text	Un catalogue de données recense les données existantes, où elles se trouvent, qui en est responsable, ce qu'elles signifient et leur niveau de sensibilité. Sans lui, les équipes perdent des semaines à chercher.
+corp-data.c1.viz.items.0	Quelles données existent
+corp-data.c1.viz.items.1	Où elles se trouvent
+corp-data.c1.viz.items.2	Qui en est responsable
+corp-data.c1.viz.items.3	Définitions
+corp-data.c1.viz.items.4	Niveau de sensibilité
+corp-data.c2.title	Dimensions de la qualité des données
+corp-data.c2.text	La qualité recouvre l'exactitude, l'exhaustivité, la cohérence, l'actualité et l'unicité. Un tableau de bord des scores de qualité par jeu de données clé rend les problèmes visibles.
+corp-data.c2.viz.items.0.a	exactitude
+corp-data.c2.viz.items.0.b	valeurs correctes
+corp-data.c2.viz.items.1.a	exhaustivité
+corp-data.c2.viz.items.1.b	aucun champ manquant
+corp-data.c2.viz.items.2.a	cohérence
+corp-data.c2.viz.items.2.b	identique entre systèmes
+corp-data.c2.viz.items.3.a	actualité
+corp-data.c2.viz.items.3.b	à jour
+corp-data.c2.viz.items.4.a	unicité
+corp-data.c2.viz.items.4.b	aucun doublon
+corp-data.c3.title	Données de référence
+corp-data.c3.text	Clients, fournisseurs, produits et matières doivent avoir une version fiable unique dans tous les systèmes. Des données de référence désordonnées faussent aussi bien l'analytique que l'IA.
+corp-data.c3.viz.items.0.w	« Bunge Ltd », « BUNGE », « Bunge S.A. » comptés comme trois fournisseurs
+corp-data.c3.viz.items.0.r	un seul enregistrement de référence avec des alias
+corp-data.c4.title	Données non structurées
+corp-data.c4.text	Contrats, e-mails, PDF et manuels recèlent une immense valeur pour l'IA générative, mais sont souvent dispersés entre lecteurs réseau et messageries, avec des doublons et des versions obsolètes.
+corp-data.c4.viz.items.0	Contrats et avenants
+corp-data.c4.viz.items.1	Politiques et procédures
+corp-data.c4.viz.items.2	E-mails et messages
+corp-data.c4.viz.items.3	Rapports et présentations
+corp-data.c4.viz.items.4	Documents numérisés
+corp-data.c5.title	Plateformes de données
+corp-data.c5.text	Les plateformes modernes (data lakehouses comme Databricks, Microsoft Fabric ou Snowflake) rassemblent les données de nombreux systèmes en un lieu gouverné unique pour l'analytique et l'IA.
+corp-data.c5.viz.steps.0	ERP, CRM, IoT, fichiers
+corp-data.c5.viz.steps.1	Ingestion
+corp-data.c5.viz.steps.2	Lakehouse : nettoyer et modéliser
+corp-data.c5.viz.steps.3	Analytique et IA
+corp-data.c6.title	Responsabilité des données
+corp-data.c6.text	Chaque jeu de données important a besoin d'un responsable métier garant de sa qualité et de ses règles d'accès, secondé par des data stewards.
+corp-data.c6.viz.root	Gouvernance des données
+corp-data.c6.viz.items.0	Propriétaires des données (métier)
+corp-data.c6.viz.items.1	Data stewards
+corp-data.c6.viz.items.2	Équipe plateforme (IT)
+corp-data.c6.viz.items.3	Comité de gouvernance
+corp-data.c7.title	Produits de données
+corp-data.c7.text	Traitez les jeux de données clés comme des produits : documentés, contrôlés en qualité, avec des responsables clairs et des niveaux de service, afin que de nombreuses équipes puissent les réutiliser en confiance.
+corp-data.c7.viz.items.0	Responsable clair
+corp-data.c7.viz.items.1	Documentation
+corp-data.c7.viz.items.2	Contrôles qualité
+corp-data.c7.viz.items.3	Accès via API
+corp-data.c7.viz.items.4	Niveaux de service
+corp-data.c8.title	Traçabilité (lineage)
+corp-data.c8.text	La traçabilité montre d'où viennent les données et comment elles ont été transformées. Elle est essentielle pour faire confiance aux résultats de l'IA et pour les audits.
+corp-data.c8.viz.steps.0	Table ERP
+corp-data.c8.viz.steps.1	Job de nettoyage
+corp-data.c8.viz.steps.2	Jeu de données validé
+corp-data.c8.viz.steps.3	Variable du modèle
+corp-data.c8.viz.steps.4	Prédiction
+corp-data.c9.title	Classification et accès
+corp-data.c9.text	Classez les données (publiques, internes, confidentielles, restreintes) et appliquez des règles d'accès, afin que les outils d'IA ne voient que ce que chaque utilisateur est autorisé à voir.
+corp-data.c9.viz.items.0	Restreint
+corp-data.c9.viz.items.1	Confidentiel
+corp-data.c9.viz.items.2	Interne
+corp-data.c9.viz.items.3	Public
+corp-arch.title	Architecture d'IA d'entreprise
+corp-arch.summary	Les briques d'une plateforme d'IA.
+corp-arch.q0.q	Que fournit une passerelle d'IA ?
+corp-arch.q0.o0	L'entraînement des modèles
+corp-arch.q0.o1	Routage central, authentification, journalisation, quotas et suivi des coûts
+corp-arch.q0.o2	Du mobilier de bureau
+corp-arch.q0.x	Un point de contrôle entre les applications et les modèles.
+corp-arch.q1.q	Comment les agents doivent-ils accéder à l'ERP ou au CRM ?
+corp-arch.q1.o0	Avec des droits d'administrateur complets sur la base de données
+corp-arch.q1.o1	Par des API bien définies à privilèges minimaux ou des serveurs MCP
+corp-arch.q1.o2	Avec des mots de passe partagés
+corp-arch.q1.x	Limitez le périmètre et journalisez les appels.
+corp-arch.q2.q	Que vérifient les garde-fous ?
+corp-arch.q2.o0	Seulement l'orthographe
+corp-arch.q2.o1	Les entrées et sorties : injection, données sensibles et violations de politique
+corp-arch.q2.o2	La température des GPU
+corp-arch.q2.x	Ils filtrent avant et après le modèle.
+corp-arch.c0.title	Les couches d'une plateforme d'IA
+corp-arch.c0.text	Une plateforme d'IA d'entreprise type comprend : des sources de données, une couche de données, l'accès aux modèles, une couche d'orchestration (RAG, agents), des garde-fous et des applications, avec sécurité et supervision transversales.
+corp-arch.c0.viz.items.0	Applications et copilotes
+corp-arch.c0.viz.items.1	Orchestration : RAG, agents, outils
+corp-arch.c0.viz.items.2	Accès aux modèles via la passerelle
+corp-arch.c0.viz.items.3	Couche de données et de connaissances
+corp-arch.c0.viz.items.4	Systèmes sources
+corp-arch.c1.title	La passerelle d'IA
+corp-arch.c1.text	Une passerelle centrale se place entre les applications et les modèles. Elle gère l'authentification, le routage, les quotas, la journalisation, le suivi des coûts et les filtres de contenu, et permet de changer de modèle de façon centralisée.
+corp-arch.c1.viz.steps.0	Applis
+corp-arch.c1.viz.steps.1	Passerelle IA : authentification, routage, journaux, quotas
+corp-arch.c1.viz.steps.2	Modèles approuvés
+corp-arch.c1.viz.steps.3	Réponses
+corp-arch.c2.title	Catalogue de modèles
+corp-arch.c2.text	Proposez des modèles approuvés via la passerelle : quelques modèles généralistes de tailles différentes, des modèles d'embedding et des modèles spécialisés. Documentez lequel utiliser pour quoi.
+corp-arch.c2.viz.items.0.a	grand modèle
+corp-arch.c2.viz.items.0.b	raisonnement complexe
+corp-arch.c2.viz.items.1.a	petit modèle
+corp-arch.c2.viz.items.1.b	gros volumes
+corp-arch.c2.viz.items.2.a	modèle d'embedding
+corp-arch.c2.viz.items.2.b	recherche et RAG
+corp-arch.c2.viz.items.3.a	modèle de vision
+corp-arch.c2.viz.items.3.b	documents et images
+corp-arch.c3.title	Couche de connaissances
+corp-arch.c3.text	Des services RAG partagés indexent des collections de documents approuvées avec leurs permissions, pour que chaque équipe n'ait pas à reconstruire la recherche et le découpage à partir de zéro.
+corp-arch.c3.viz.steps.0	Sources de documents
+corp-arch.c3.viz.steps.1	Ingérer et découper
+corp-arch.c3.viz.steps.2	Indexer avec les permissions
+corp-arch.c3.viz.steps.3	API de recherche partagée
+corp-arch.c4.title	Outils et intégration
+corp-arch.c4.text	Les agents et copilotes ont besoin d'un accès sûr aux systèmes : ERP, CRM, gestion de tickets. Exposez des API bien définies ou des serveurs MCP plutôt qu'un large accès aux bases de données.
+corp-arch.c4.viz.items.0	API bien définies
+corp-arch.c4.viz.items.1	Serveurs MCP
+corp-arch.c4.viz.items.2	Périmètres à privilèges minimaux
+corp-arch.c4.viz.items.3	Journaux d'audit par appel
+corp-arch.c5.title	Garde-fous
+corp-arch.c5.text	Les filtres d'entrée et de sortie détectent l'injection de prompt, les données sensibles, les contenus toxiques et les violations de politique. Des règles métier valident les résultats avant qu'ils n'atteignent les clients ou les systèmes.
+corp-arch.c5.viz.steps.0	Entrée
+corp-arch.c5.viz.steps.1	Contrôles d'injection et de PII
+corp-arch.c5.viz.steps.2	Modèle
+corp-arch.c5.viz.steps.3	Contrôles et validation de la sortie
+corp-arch.c5.viz.steps.4	Utilisateur ou système
+corp-arch.c6.title	Observabilité
+corp-arch.c6.text	Journalisez les prompts, réponses, appels d'outils, latence, coûts et retours des utilisateurs (avec des contrôles de confidentialité). Les traces aident à déboguer les échecs ; les tableaux de bord montrent l'usage et les dépenses.
+corp-arch.c6.viz.items.0	Traces de chaque requête
+corp-arch.c6.viz.items.1	Latence et erreurs
+corp-arch.c6.viz.items.2	Coût par appli et par équipe
+corp-arch.c6.viz.items.3	Retours des utilisateurs
+corp-arch.c6.viz.items.4	Évaluations de qualité
+corp-arch.c7.title	Environnements
+corp-arch.c7.text	Séparez développement, test et production, avec des étapes d'évaluation avant la mise en production, comme pour tout autre logiciel.
+corp-arch.c7.viz.steps.0	Développement
+corp-arch.c7.viz.steps.1	Évaluations automatisées
+corp-arch.c7.viz.steps.2	Test avec des utilisateurs
+corp-arch.c7.viz.steps.3	Production avec supervision
+corp-arch.c8.title	Cloud et région
+corp-arch.c8.text	Choisissez des régions d'hébergement des modèles qui respectent les règles de résidence des données (par exemple, données de l'UE dans des régions de l'UE) et des clauses contractuelles interdisant l'entraînement sur vos données.
+corp-arch.c8.viz.items.0	Données de l'UE dans des régions de l'UE
+corp-arch.c8.viz.items.1	Pas d'entraînement sur vos données
+corp-arch.c8.viz.items.2	Chiffrement au repos et en transit
+corp-arch.c8.viz.items.3	Réseau privé
+corp-arch.c8.viz.items.4	Contrôles de conservation
+corp-arch.c9.title	Architecture de référence
+corp-arch.c9.text	Documentez une architecture de référence et des modèles réutilisables afin que les équipes lancent rapidement de nouvelles applications d'IA dans le respect des garde-fous.
+corp-arch.c9.viz.steps.0	Architecture de référence
+corp-arch.c9.viz.steps.1	Modèles et SDK
+corp-arch.c9.viz.steps.2	Les équipes construisent plus vite
+corp-arch.c9.viz.steps.3	Sécurité cohérente
+corp-security.title	Sécurité et confidentialité de l'IA
+corp-security.summary	De nouveaux risques et comment les gérer.
+corp-security.q0.q	Qu'est-ce que le shadow AI ?
+corp-security.q0.o0	De l'IA dans l'ombre
+corp-security.q0.o1	Des employés qui utilisent des outils d'IA non approuvés
+corp-security.q0.o2	Un type de modèle
+corp-security.q0.x	Le meilleur remède : de bons outils approuvés.
+corp-security.q1.q	Quel principe limite les dégâts d'un agent détourné ?
+corp-security.q1.o0	Un accès maximal
+corp-security.q1.o1	Les privilèges minimaux, avec approbation pour les actions sensibles
+corp-security.q1.o2	Des modèles plus rapides
+corp-security.q1.x	Des droits minimaux limitent les dégâts.
+corp-security.q2.q	Quelle norme définit un système de management de l'IA ?
+corp-security.q2.o0	ISO 9001
+corp-security.q2.o1	ISO/IEC 42001
+corp-security.q2.o2	ISO 14001
+corp-security.q2.x	Publiée en 2023.
+corp-security.c0.title	Nouvelle surface d'attaque
+corp-security.c0.text	Les systèmes d'IA ajoutent de nouveaux risques : injection de prompt, fuite de données via les prompts ou les sorties, données d'entraînement ou de recherche empoisonnées, détournement du modèle et accès non sécurisé aux outils.
+corp-security.c0.viz.root	Risques de sécurité de l'IA
+corp-security.c0.viz.items.0	Injection de prompt
+corp-security.c0.viz.items.1	Fuite de données
+corp-security.c0.viz.items.2	Données empoisonnées
+corp-security.c0.viz.items.3	Permissions d'outils excessives
+corp-security.c1.title	Injection de prompt

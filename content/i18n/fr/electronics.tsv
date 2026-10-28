@@ -247,3 +247,302 @@ tr-diodes.c3.viz.steps.2	Continu pulsé
 tr-diodes.c3.viz.steps.3	Le condensateur le lisse
 tr-diodes.c4.title	Diodes de roue libre
 tr-diodes.c4.text	Quand vous coupez une bobine de relais ou de moteur, son champ magnétique s'effondre et crée une pointe de tension capable de détruire le transistor qui la pilote. Une diode aux bornes de la bobine absorbe cette pointe sans danger.
+tr-diodes.c4.viz.items.0.w	bobine de relais sans diode
+tr-diodes.c4.viz.items.0.r	ajouter une diode aux bornes de la bobine, bague côté +
+tr-diodes.c4.viz.items.1.w	le transistor meurt après quelques semaines
+tr-diodes.c4.viz.items.1.r	diode de roue libre posée
+tr-diodes.c5.title	Diodes Zener
+tr-diodes.c5.text	Une diode Zener conduit en sens inverse à une tension précise, comme 3,3 V ou 5,1 V. Avec une résistance, elle forme une référence de tension simple ou protège des entrées contre les surtensions.
+tr-diodes.c5.viz.steps.0	Tension plus élevée
+tr-diodes.c5.viz.steps.1	Résistance série
+tr-diodes.c5.viz.steps.2	La Zener maintient 3,3 V
+tr-diodes.c5.viz.steps.3	Entrée protégée
+tr-diodes.c6.title	Les LED sont des diodes
+tr-diodes.c6.text	Une diode électroluminescente émet de la lumière quand le courant la traverse dans le sens direct. La couleur dépend du matériau semi-conducteur. La patte longue est l'anode (+), le côté plat repère la cathode (−).
+tr-diodes.c6.viz.items.0.a	patte longue
+tr-diodes.c6.viz.items.0.b	anode (+)
+tr-diodes.c6.viz.items.1.a	patte courte / méplat
+tr-diodes.c6.viz.items.1.b	cathode (−)
+tr-diodes.c6.viz.items.2.a	couleur
+tr-diodes.c6.viz.items.2.b	fixée par le matériau
+tr-diodes.c7.title	Photodiodes et cellules solaires
+tr-diodes.c7.text	Utilisée en sens inverse, une diode peut détecter la lumière : les photons libèrent des électrons et un minuscule courant circule. Capteurs de lumière, récepteurs de télécommande et cellules solaires sont tous des photodiodes au fond.
+tr-diodes.c7.viz.items.0	Récepteurs de télécommande TV
+tr-diodes.c7.viz.items.1	Capteurs de lumière
+tr-diodes.c7.viz.items.2	Récepteurs de fibre optique
+tr-diodes.c7.viz.items.3	Cellules solaires
+tr-diodes.c8.title	Diodes TVS
+tr-diodes.c8.text	Les diodes de suppression de tensions transitoires écrêtent les pointes très rapides, comme une décharge statique sur un port USB ou une surtension sur un long câble de capteur, et protègent la puce placée derrière.
+tr-diodes.c8.viz.steps.0	La pointe arrive
+tr-diodes.c8.viz.steps.1	La TVS l'écrête en nanosecondes
+tr-diodes.c8.viz.steps.2	Excédent vers la masse
+tr-diodes.c8.viz.steps.3	La puce survit
+tr-diodes.c9.title	Diodes pour combiner deux alimentations
+tr-diodes.c9.text	Deux diodes permettent à un circuit de fonctionner sur l'alimentation la plus élevée, comme l'USB ou une batterie, sans que les deux ne s'alimentent l'une l'autre.
+tr-diodes.c9.viz.steps.0	USB 5 V via diode
+tr-diodes.c9.viz.steps.1	Batterie 3,7 V via diode
+tr-diodes.c9.viz.steps.2	La plus haute alimente le circuit
+tr-transistors.title	Les transistors comme interrupteurs
+tr-transistors.summary	Comment un minuscule signal commande une forte charge.
+tr-transistors.q0.q	Pourquoi utiliser un MOSFET « logic-level » avec un ESP32 ?
+tr-transistors.q0.o0	Il est moins cher
+tr-transistors.q0.o1	Il conduit à fond avec seulement 3,3 V sur la grille
+tr-transistors.q0.o2	Il est étanche
+tr-transistors.q0.x	Les MOSFET standard peuvent nécessiter environ 10 V.
+tr-transistors.q1.q	À quoi sert une résistance de rappel à la masse sur la grille ?
+tr-transistors.q1.o0	À accélérer le processeur
+tr-transistors.q1.o1	À garder le MOSFET bloqué quand la broche flotte
+tr-transistors.q1.o2	À limiter le courant de la charge
+tr-transistors.q1.x	Elle maintient la grille à 0 V pendant le démarrage.
+tr-transistors.q2.q	Un MOSFET de 50 mΩ laisse passer 4 A. Sa chaleur dissipée est de…
+tr-transistors.q2.o0	0,2 W
+tr-transistors.q2.o1	0,8 W
+tr-transistors.q2.o2	4 W
+tr-transistors.q2.x	4² × 0,05 = 0,8 W.
+tr-transistors.c0.title	Pourquoi en avoir besoin
+tr-transistors.c0.text	Une broche de microcontrôleur ne peut fournir que quelques milliampères. Un moteur, un ruban de LED ou un relais en demande bien plus. Un transistor permet au faible courant de la broche de commander un courant de charge bien plus important.
+tr-transistors.c0.viz.steps.0	La broche donne 1 mA
+tr-transistors.c0.viz.steps.1	Le transistor conduit
+tr-transistors.c0.viz.steps.2	La charge reçoit 500 mA
+tr-transistors.c1.title	BJT : un courant commande un courant
+tr-transistors.c1.text	Dans un transistor bipolaire (NPN), un petit courant dans la base laisse passer un courant bien plus grand du collecteur à l'émetteur. Le rapport, le gain (hFE), vaut souvent 100 ou plus.
+tr-transistors.c1.viz.f	Ic ≈ hFE × Ib
+tr-transistors.c1.viz.items.0.s	Ib
+tr-transistors.c1.viz.items.0.m	courant de base
+tr-transistors.c1.viz.items.1.s	hFE
+tr-transistors.c1.viz.items.1.m	gain
+tr-transistors.c1.viz.items.2.s	Ic
+tr-transistors.c1.viz.items.2.m	courant de collecteur
+tr-transistors.c2.title	MOSFET : une tension commande un courant
+tr-transistors.c2.text	Un MOSFET est commandé par la tension sur sa grille, avec presque aucun courant de grille. Entièrement passant, sa résistance peut n'être que de quelques milliohms : il chauffe à peine. La plupart des commutations de puissance utilisent des MOSFET.
+tr-transistors.c2.viz.l.t	BJT
+tr-transistors.c2.viz.l.items.0	commandé par le courant de base
+tr-transistors.c2.viz.l.items.1	~0,2 V de chute en conduction
+tr-transistors.c2.viz.l.items.2	petites charges
+tr-transistors.c2.viz.r.t	MOSFET
+tr-transistors.c2.viz.r.items.0	commandé par la tension de grille
+tr-transistors.c2.viz.r.items.1	milliohms en conduction
+tr-transistors.c2.viz.r.items.2	grosses charges
+tr-transistors.c3.title	Commutation côté bas
+tr-transistors.c3.text	La méthode la plus simple : placer un MOSFET à canal N entre la charge et la masse. La broche commande la grille ; à l'état haut, le chemin de la charge vers la masse se ferme.
+tr-transistors.c3.viz.steps.0	+12 V
+tr-transistors.c3.viz.steps.1	Charge
+tr-transistors.c3.viz.steps.2	MOSFET N
+tr-transistors.c3.viz.steps.3	Masse (grille pilotée par la broche)
+tr-transistors.c4.title	MOSFET « logic-level »
+tr-transistors.c4.text	Beaucoup de MOSFET exigent 10 V sur la grille pour conduire à fond. Avec un microcontrôleur en 3,3 V, choisissez un MOSFET « logic-level » spécifié pour conduire à fond à 2,5–3,3 V, comme l'AO3400 ou l'IRLZ44N.
+tr-transistors.c4.viz.items.0.w	IRF540 piloté en 3,3 V
+tr-transistors.c4.viz.items.0.r	MOSFET « logic-level »
+tr-transistors.c4.viz.items.1.w	le MOSFET chauffe
+tr-transistors.c4.viz.items.1.r	il n'est qu'à moitié passant, vérifier la tension de grille
+tr-transistors.c5.title	Résistance de grille et résistance de rappel
+tr-transistors.c5.text	Ajoutez une petite résistance (environ 100 Ω) entre la broche et la grille pour limiter les pointes de courant, et une résistance de rappel de 10 kΩ de la grille à la masse pour que le MOSFET reste bloqué pendant le démarrage du microcontrôleur.
+tr-transistors.c5.viz.items.0	Résistance de grille ~100 Ω
+tr-transistors.c5.viz.items.1	Rappel de grille 10 kΩ
+tr-transistors.c5.viz.items.2	Diode de roue libre pour les bobines
+tr-transistors.c5.viz.items.3	Composant « logic-level »
+tr-transistors.c6.title	Les transistors comme amplificateurs
+tr-transistors.c6.text	Entre le blocage complet et la conduction complète, un transistor peut amplifier : un petit signal variable à l'entrée donne une copie plus grande à la sortie. C'est ainsi que fonctionnent les radios et les amplificateurs audio.
+tr-transistors.c6.viz.l.t	Interrupteur
+tr-transistors.c6.viz.l.items.0	bloqué ou passant à fond
+tr-transistors.c6.viz.l.items.1	peu de chaleur
+tr-transistors.c6.viz.r.t	Amplificateur
+tr-transistors.c6.viz.r.items.0	entre les deux
+tr-transistors.c6.viz.r.items.1	copie le signal en plus grand
+tr-transistors.c6.viz.r.items.2	produit de la chaleur
+tr-transistors.c7.title	Chaleur dans les interrupteurs
+tr-transistors.c7.text	La puissance perdue dans un MOSFET en commutation est I² × R(on). Un MOSFET de 20 mΩ traversé par 10 A dissipe 2 W, ce qui demande un petit dissipateur. La rapidité de commutation compte aussi, car de la puissance se perd à chaque transition.
+tr-transistors.c7.example.0	10 A dans 20 mΩ
+tr-transistors.c7.example.1	10² × 0,02
+tr-transistors.c7.example.2	= 2 W de chaleur
+tr-transistors.c7.viz.f	P = I² × R(on)
+tr-transistors.c7.viz.items.0.s	I
+tr-transistors.c7.viz.items.0.m	courant de charge
+tr-transistors.c7.viz.items.1.s	R(on)
+tr-transistors.c7.viz.items.1.m	résistance à l'état passant
+tr-transistors.c8.title	Optocoupleurs et relais statiques
+tr-transistors.c8.text	Un optocoupleur transmet un signal par la lumière à l'intérieur d'une puce scellée, ce qui isole électriquement deux circuits. Les relais statiques reprennent la même idée pour commuter des charges secteur en silence, sans pièce mobile.
+tr-transistors.c8.viz.steps.0	La broche allume une LED interne
+tr-transistors.c8.viz.steps.1	La lumière franchit un intervalle
+tr-transistors.c8.viz.steps.2	Le détecteur commute l'autre côté
+tr-transistors.c8.viz.steps.3	Isolation totale
+tr-transistors.c9.title	Des milliards sur une puce
+tr-transistors.c9.text	Les processeurs modernes contiennent des dizaines de milliards de MOSFET microscopiques qui font office d'interrupteurs. Le même composant qui pilote votre ruban de LED, réduit à quelques nanomètres, réalise tous les calculs.
+tr-transistors.c9.viz.items.0.l	premier transistor
+tr-transistors.c9.viz.items.1.v	50 milliards et +
+tr-transistors.c9.viz.items.1.l	sur une puce moderne
+tr-opamps.title	Amplificateurs opérationnels
+tr-opamps.summary	Le couteau suisse de l'électronique analogique.
+tr-opamps.q0.q	Un amplificateur non inverseur avec Rf = 4 kΩ et Rg = 1 kΩ a un gain de…
+tr-opamps.q0.o0	4
+tr-opamps.q0.o1	5
+tr-opamps.q0.o2	0,25
+tr-opamps.q0.x	1 + 4/1 = 5.
+tr-opamps.q1.q	Que fait un suiveur de tension ?
+tr-opamps.q1.o0	Il double la tension
+tr-opamps.q1.o1	Il met en mémoire tampon un signal faible avec un gain de 1
+tr-opamps.q1.o2	Il convertit l'alternatif en continu
+tr-opamps.q1.x	Il isole la source de la charge.
+tr-opamps.q2.q	Sans contre-réaction, un amplificateur opérationnel se comporte comme…
+tr-opamps.q2.o0	Un filtre
+tr-opamps.q2.o1	Un comparateur
+tr-opamps.q2.o2	Une batterie
+tr-opamps.q2.x	Il indique simplement quelle entrée est la plus haute.
+tr-opamps.c0.title	Ce qu'est un amplificateur opérationnel
+tr-opamps.c0.text	Un amplificateur opérationnel est une puce à deux entrées (+ et −) et une sortie. Il amplifie la différence entre les entrées d'un facteur énorme, souvent 100 000 fois ou plus.
+tr-opamps.c0.viz.f	Vout = A × (V+ − V−)
+tr-opamps.c0.viz.items.0.s	A
+tr-opamps.c0.viz.items.0.m	gain en boucle ouverte, énorme
+tr-opamps.c0.viz.items.1.s	V+
+tr-opamps.c0.viz.items.1.m	entrée non inverseuse
+tr-opamps.c0.viz.items.2.s	V−
+tr-opamps.c0.viz.items.2.m	entrée inverseuse
+tr-opamps.c1.title	La contre-réaction le dompte
+tr-opamps.c1.text	Seul, ce gain gigantesque est inutilisable. Renvoyer une partie de la sortie vers l'entrée moins fixe un gain précis et stable, choisi par deux résistances.
+tr-opamps.c1.viz.steps.0	Énorme gain brut
+tr-opamps.c1.viz.steps.1	Renvoyer la sortie sur l'entrée −
+tr-opamps.c1.viz.steps.2	Gain fixé par les résistances
+tr-opamps.c1.viz.steps.3	Amplificateur stable et précis
+tr-opamps.c2.title	Amplificateur non inverseur
+tr-opamps.c2.text	La méthode classique pour amplifier le faible signal d'un capteur. La sortie suit l'entrée, multipliée par un gain fixé par deux résistances.
+tr-opamps.c2.example.0	Rf = 9 kΩ, Rg = 1 kΩ
+tr-opamps.c2.example.1	1 + 9
+tr-opamps.c2.example.2	gain = 10
+tr-opamps.c2.viz.f	Gain = 1 + Rf ÷ Rg
+tr-opamps.c2.viz.items.0.s	Rf
+tr-opamps.c2.viz.items.0.m	résistance de contre-réaction
+tr-opamps.c2.viz.items.1.s	Rg
+tr-opamps.c2.viz.items.1.m	résistance vers la masse
+tr-opamps.c3.title	Le suiveur de tension
+tr-opamps.c3.text	Reliez la sortie directement à l'entrée moins et le gain vaut 1. Inutile ? Non : cela isole une source faible d'une charge lourde, c'est un « tampon ».
+tr-opamps.c3.viz.steps.0	Signal faible du capteur
+tr-opamps.c3.viz.steps.1	Suiveur à ampli op (gain 1)
+tr-opamps.c3.viz.steps.2	Copie forte du signal
+tr-opamps.c3.viz.steps.3	CAN ou long câble
+tr-opamps.c4.title	Comparateurs
+tr-opamps.c4.text	Sans contre-réaction, un amplificateur opérationnel (ou une puce comparateur dédiée) indique simplement quelle entrée est la plus haute : sortie haute ou basse. Idéal pour les thermostats et les interrupteurs crépusculaires.
+tr-opamps.c4.viz.steps.0	Tension du capteur
+tr-opamps.c4.viz.steps.1	Comparer au seuil
+tr-opamps.c4.viz.steps.2	Au-dessus : sortie haute
+tr-opamps.c4.viz.steps.3	En dessous : sortie basse
+tr-opamps.c5.title	Deux règles d'or
+tr-opamps.c5.text	Avec une contre-réaction négative, analysez les montages à ampli op avec deux règles : aucun courant n'entre dans les entrées, et la sortie fait tout ce qu'il faut pour rendre les deux entrées égales.
+tr-opamps.c5.viz.items.0	Aucun courant dans les entrées
+tr-opamps.c5.viz.items.1	La sortie rend V+ égal à V−
+tr-opamps.c5.viz.items.2	Seulement avec contre-réaction négative
+tr-opamps.c6.title	Rail à rail
+tr-opamps.c6.text	Les anciens amplificateurs opérationnels ne peuvent pas amener leur sortie près des rails d'alimentation. Sur des circuits en 3,3 V ou 5 V, choisissez un ampli op rail à rail pour que le signal exploite toute la plage.
+tr-opamps.c6.viz.l.t	Ampli op classique
+tr-opamps.c6.viz.l.items.0	alimentation ±12 V requise
+tr-opamps.c6.viz.l.items.1	la sortie s'arrête avant les rails
+tr-opamps.c6.viz.r.t	Rail à rail
+tr-opamps.c6.viz.r.items.0	fonctionne dès 3,3 V
+tr-opamps.c6.viz.r.items.1	la sortie atteint presque 0 V et 3,3 V
+tr-opamps.c7.title	Filtres
+tr-opamps.c7.text	Avec des condensateurs, les amplificateurs opérationnels réalisent des filtres actifs : passe-bas pour ôter le bruit d'un capteur, passe-haut pour bloquer le continu, passe-bande pour une fréquence précise.
+tr-opamps.c7.viz.items.0.a	passe-bas
+tr-opamps.c7.viz.items.0.b	supprime le bruit rapide
+tr-opamps.c7.viz.items.1.a	passe-haut
+tr-opamps.c7.viz.items.1.b	supprime la dérive lente et le continu
+tr-opamps.c7.viz.items.2.a	passe-bande
+tr-opamps.c7.viz.items.2.b	garde une bande de fréquences
+tr-opamps.c8.title	Sommes et différences
+tr-opamps.c8.text	Les amplificateurs opérationnels peuvent additionner plusieurs signaux (tables de mixage audio) ou en soustraire un d'un autre (mesure de la faible tension aux bornes d'une résistance de mesure de courant).
+tr-opamps.c8.viz.items.0.a	sommateur
+tr-opamps.c8.viz.items.0.b	mixeur
+tr-opamps.c8.viz.items.1.a	amplificateur différentiel
+tr-opamps.c8.viz.items.1.b	soustrait deux signaux
+tr-opamps.c8.viz.items.2.a	amplificateur d'instrumentation
+tr-opamps.c8.viz.items.2.b	infimes différences, précis
+tr-opamps.c9.title	Le 741
+tr-opamps.c9.text	Le μA741, lancé en 1968, est devenu l'amplificateur opérationnel le plus célèbre jamais fabriqué et on l'enseigne encore aujourd'hui, même si les composants modernes sont bien meilleurs pour les circuits basse tension.
+tr-opamps.c9.viz.events.0.l	premier ampli op monolithique
+tr-opamps.c9.viz.events.1.l	le μA741
+tr-opamps.c9.viz.events.2.y	aujourd'hui
+tr-opamps.c9.viz.events.2.l	composants rail à rail, basse consommation
+tr-psu.title	Alimentations et régulateurs
+tr-psu.summary	Obtenir la bonne tension, proprement et efficacement.
+tr-psu.q0.q	Un régulateur linéaire abaisse 9 V à 5 V sous 0,2 A. Quelle chaleur dissipe-t-il ?
+tr-psu.q0.o0	0,2 W
+tr-psu.q0.o1	0,8 W
+tr-psu.q0.o2	1,8 W
+tr-psu.q0.x	(9 − 5) × 0,2 = 0,8 W.
+tr-psu.q1.q	Quel est le plus efficace pour passer de 24 V à 3,3 V ?
+tr-psu.q1.o0	Régulateur linéaire
+tr-psu.q1.o1	Convertisseur abaisseur (buck)
+tr-psu.q1.o2	Diode Zener
+tr-psu.q1.x	Les convertisseurs à découpage gaspillent peu de puissance.
+tr-psu.q2.q	Un adaptateur de 2 A alimente un montage qui consomme 0,5 A. Est-ce correct ?
+tr-psu.q2.o0	Oui, il ne fournit que ce qui est demandé
+tr-psu.q2.o1	Non, il va griller
+tr-psu.q2.o2	Seulement avec une résistance
+tr-psu.q2.x	La valeur indiquée est un maximum, pas un courant imposé.
+tr-psu.c0.title	Pourquoi réguler ?
+tr-psu.c0.text	Les batteries faiblissent en se déchargeant, et l'USB peut varier entre environ 4,75 et 5,25 V. Les puces veulent une tension stable : un régulateur la maintient constante quoi que fasse l'entrée.
+tr-psu.c0.viz.steps.0	Entrée variable 4,2–3,0 V
+tr-psu.c0.viz.steps.1	Régulateur
+tr-psu.c0.viz.steps.2	3,3 V stables
+tr-psu.c0.viz.steps.3	Puce heureuse
+tr-psu.c1.title	Régulateurs linéaires
+tr-psu.c1.text	Un régulateur linéaire (comme un LM7805 ou un AMS1117) dissipe en chaleur la tension en trop. Simple et silencieux, mais gaspilleur quand l'entrée est bien plus haute que la sortie.
+tr-psu.c1.example.0	12 V vers 5 V sous 0,5 A
+tr-psu.c1.example.1	(12 − 5) × 0,5
+tr-psu.c1.example.2	= 3,5 W de chaleur
+tr-psu.c1.viz.f	chaleur = (Vin − Vout) × I
+tr-psu.c1.viz.items.0.s	Vin
+tr-psu.c1.viz.items.0.m	tension d'entrée
+tr-psu.c1.viz.items.1.s	Vout
+tr-psu.c1.viz.items.1.m	sortie
+tr-psu.c1.viz.items.2.s	I
+tr-psu.c1.viz.items.2.m	courant de charge
+tr-psu.c2.title	Régulateurs LDO
+tr-psu.c2.text	Un régulateur à faible chute de tension (LDO) fonctionne avec une entrée à peine supérieure à la sortie, par exemple 3,6 V en entrée pour 3,3 V en sortie. Indispensable sur une seule cellule lithium.
+tr-psu.c2.viz.l.t	Linéaire standard
+tr-psu.c2.viz.l.items.0	besoin de ~2 V de marge
+tr-psu.c2.viz.l.items.1	p. ex. 7805
+tr-psu.c2.viz.r.t	LDO
+tr-psu.c2.viz.r.items.0	besoin de ~0,1–0,4 V
+tr-psu.c2.viz.r.items.1	idéal sur batterie
+tr-psu.c3.title	Convertisseurs abaisseurs (buck)
+tr-psu.c3.text	Un convertisseur buck abaisse la tension en commutant très rapidement à travers une inductance. Un rendement de 85–95 % signifie peu de chaleur, même de 24 V à 3,3 V.
+tr-psu.c3.viz.steps.0	12 V en entrée
+tr-psu.c3.viz.steps.1	Commutation à ~500 kHz
+tr-psu.c3.viz.steps.2	Inductance et condensateur lissent
+tr-psu.c3.viz.steps.3	5 V en sortie, rendement ~90 %
+tr-psu.c4.title	Convertisseurs élévateurs (boost)
+tr-psu.c4.text	Un convertisseur boost élève la tension, par exemple d'une batterie de 3,7 V à 5 V pour l'USB. Il tire de la batterie plus de courant qu'il n'en délivre en sortie.
+tr-psu.c4.viz.f	Iin ≈ Vout × Iout ÷ (Vin × η)
+tr-psu.c4.viz.items.0.s	Vout
+tr-psu.c4.viz.items.0.m	5 V
+tr-psu.c4.viz.items.1.s	Iout
+tr-psu.c4.viz.items.1.m	1 A
+tr-psu.c4.viz.items.2.s	Vin
+tr-psu.c4.viz.items.2.m	3,7 V
+tr-psu.c4.viz.items.3.s	η
+tr-psu.c4.viz.items.3.m	~0,9 → Iin ≈ 1,5 A
+tr-psu.c5.title	Comparaison des rendements
+tr-psu.c5.text	Pour une grande chute de tension, les régulateurs à découpage l'emportent. Pour de faibles chutes et des circuits analogiques sensibles au bruit, un LDO peut être préférable.
+tr-psu.c5.viz.unit	% de rendement, 12 V → 3,3 V
+tr-psu.c5.viz.items.0.l	Linéaire
+tr-psu.c5.viz.items.1.l	Convertisseur buck
+tr-psu.c6.title	Ondulation et bruit
+tr-psu.c6.text	Les régulateurs à découpage laissent une petite ondulation à leur fréquence de commutation. Les circuits sensibles (audio, CAN précis) utilisent un filtrage supplémentaire ou un LDO après le convertisseur buck.
+tr-psu.c6.viz.steps.0	Convertisseur buck
+tr-psu.c6.viz.steps.1	Petite ondulation
+tr-psu.c6.viz.steps.2	Filtre LC ou LDO
+tr-psu.c6.viz.steps.3	Alimentation propre
+tr-psu.c7.title	Choisir un adaptateur secteur
+tr-psu.c7.text	Respectez exactement la tension, vérifiez que le courant nominal est au moins celui dont votre montage a besoin, et contrôlez la polarité de la fiche jack. Un courant nominal plus élevé ne pose pas de problème : l'appareil ne consomme que ce dont il a besoin.
+tr-psu.c7.viz.items.0	La tension doit correspondre
+tr-psu.c7.viz.items.1	Courant nominal ≥ votre besoin
+tr-psu.c7.viz.items.2	Vérifier centre positif ou négatif
+tr-psu.c7.viz.items.3	Préférer les adaptateurs certifiés
+tr-psu.c8.title	USB Power Delivery
+tr-psu.c8.text	L'USB-C PD négocie des tensions plus élevées, 9, 15 ou 20 V, jusqu'à 100 W ou plus, mais seulement après une poignée de main numérique. Un simple câble USB-C sans négociation fournit 5 V.
+tr-psu.c8.viz.unit	watts (max., normes USB)
+tr-psu.c8.viz.items.0.l	USB 2.0
+tr-psu.c8.viz.items.1.l	USB 3.0
+tr-psu.c8.viz.items.2.l	USB-C 3 A
+tr-psu.c8.viz.items.3.l	USB-C PD
+tr-psu.c9.title	Chutes de tension
+tr-psu.c9.text	Si l'alimentation tombe sous ce dont une puce a besoin, elle peut mal se comporter ou se réinitialiser. Les ESP32 sont connus pour redémarrer lors des émissions Wi-Fi avec une alimentation faible. Un bon régulateur et un gros condensateur près de la carte règlent le problème.

@@ -368,7 +368,7 @@ ma-logic.c8.example.0	4 = 2 + 2
 ma-logic.c8.example.1	10 = 3 + 7
 ma-logic.c8.example.2	28 = 5 + 23
 ma-logic.c8.viz.items.0	Conjecture de Goldbach
-ma-logic.c8.viz.items.1	Nombres premiers jumeaux
+ma-logic.c8.viz.items.1	Premiers jumeaux
 ma-logic.c8.viz.items.2	Hypothèse de Riemann
 ma-logic.c8.viz.items.3	P contre NP
 ma-logic.c9.title	La traversée de la rivière
@@ -481,12 +481,12 @@ ma-fractions.c2.example.1	1/3 = 2/6
 ma-fractions.c2.example.2	3/6 + 2/6 = 5/6
 ma-fractions.c2.viz.steps.0	Trouver un dénominateur commun
 ma-fractions.c2.viz.steps.1	Convertir chacune
-ma-fractions.c2.viz.steps.2	Additionner les numérateurs
+ma-fractions.c2.viz.steps.2	Haut + haut
 ma-fractions.c3.title	Multiplier des fractions
 ma-fractions.c3.text	Multipliez les numérateurs entre eux et les dénominateurs entre eux. La moitié des trois quarts, c'est 1/2 × 3/4 = 3/8. « De » signifie multiplier.
 ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
 ma-fractions.c3.viz.items.0.s	a, c
-ma-fractions.c3.viz.items.0.m	numérateurs
+ma-fractions.c3.viz.items.0.m	haut
 ma-fractions.c3.viz.items.1.s	b, d
 ma-fractions.c3.viz.items.1.m	dénominateurs
 ma-fractions.c4.title	Diviser par une fraction
@@ -971,7 +971,7 @@ ma-codes.c4.viz.items.0.v	2¹²⁸
 ma-codes.c4.viz.items.0.l	clés de 128 bits possibles
 ma-codes.c4.viz.items.1.v	3,4 × 10³⁸
 ma-codes.c4.viz.items.1.l	ce nombre
-ma-codes.c4.viz.items.2.v	Des milliards d'années
+ma-codes.c4.viz.items.2.v	Éons
 ma-codes.c4.viz.items.2.l	pour toutes les essayer
 ma-codes.c5.title	La cryptographie à clé publique
 ma-codes.c5.text	Votre téléphone utilise deux clés : une publique que n'importe qui peut utiliser pour verrouiller un message, et une privée, que vous seul avez, pour le déverrouiller. Inventée dans les années 1970.
@@ -1105,7 +1105,7 @@ ma-calculus.c1.title	La vitesse instantanée
 ma-calculus.c1.text	Le compteur de votre voiture indique la vitesse à un instant donné, pas une moyenne. Le calcul infinitésimal la définit en mesurant sur des intervalles de temps de plus en plus courts.
 ma-calculus.c1.viz.steps.0	Moyenne sur 1 min
 ma-calculus.c1.viz.steps.1	Sur 1 s
-ma-calculus.c1.viz.steps.2	Sur 0,001 s
+ma-calculus.c1.viz.steps.2	Sur 0001 s
 ma-calculus.c1.viz.steps.3	Vitesse instantanée
 ma-calculus.c2.title	Pente d'une courbe
 ma-calculus.c2.text	Une dérivée est la pente d'une courbe en un point : en zoomant assez, toute courbe lisse ressemble à une droite.
@@ -1208,3 +1208,323 @@ ma-networks.c3.viz.steps.1	Explorer le plus proche non visité
 ma-networks.c3.viz.steps.2	Mettre à jour les distances
 ma-networks.c3.viz.steps.3	Répéter jusqu'à l'arrivée
 ma-networks.c4.title	Le voyageur de commerce
+ma-networks.c4.title	Le voyageur de commerce
+ma-networks.c4.text	Trouver le trajet le plus court passant une seule fois par chaque ville. Facile avec 5 villes, mais les possibilités explosent : 20 villes donnent plus de 60 quadrillions de trajets.
+ma-networks.c4.viz.unit	trajets
+ma-networks.c4.viz.items.0.l	5 villes
+ma-networks.c4.viz.items.1.l	10 villes
+ma-networks.c4.viz.items.2.l	20 villes*
+ma-networks.c5.title	Six degrés
+ma-networks.c5.text	L'expérience de Stanley Milgram en 1967 suggérait que deux Américains quelconques sont reliés par environ six connaissances. Les données de Facebook ont ensuite donné une moyenne d'environ 3,5 étapes.
+ma-networks.c5.viz.steps.0	Vous
+ma-networks.c5.viz.steps.1	Un ami
+ma-networks.c5.viz.steps.2	Son ami
+ma-networks.c5.viz.steps.4	N'importe qui, en six étapes
+ma-networks.c6.title	Les hubs
+ma-networks.c6.text	Dans beaucoup de réseaux, quelques hubs ont un nombre énorme de liens : grands aéroports, sites web populaires, influenceurs. Attaquez les hubs et le réseau se brise.
+ma-networks.c6.viz.root	Hub de l'aéroport de Lisbonne
+ma-networks.c6.viz.items.0	Porto
+ma-networks.c6.viz.items.1	Madrid
+ma-networks.c6.viz.items.2	Londres
+ma-networks.c6.viz.items.3	Paris
+ma-networks.c6.viz.items.4	São Paulo
+ma-networks.c7.title	Quatre couleurs
+ma-networks.c7.text	Toute carte peut être coloriée avec seulement quatre couleurs sans que deux régions voisines aient la même. Démontré en 1976, ce fut la première grande preuve reposant sur un ordinateur.
+ma-networks.c7.viz.events.0.l	problème posé
+ma-networks.c7.viz.events.1.l	prouvé par ordinateur
+ma-networks.c7.viz.events.2.l	revérifié par ordinateur
+ma-networks.c8.title	PageRank
+ma-networks.c8.text	L'idée originale de Google : une page est importante si des pages importantes pointent vers elle. Le web devient un gigantesque graphe de votes.
+ma-networks.c8.viz.steps.0	Les pages se citent
+ma-networks.c8.viz.steps.1	Les liens sont des votes
+ma-networks.c8.viz.steps.2	Les votes de pages importantes pèsent plus
+ma-networks.c8.viz.steps.3	Classement
+ma-networks.c9.title	Épidémies sur les réseaux
+ma-networks.c9.text	Les maladies se propagent le long des réseaux de contacts. Vacciner les hubs bien connectés, comme les soignants, protège bien plus de monde qu'une vaccination au hasard.
+ma-networks.c9.viz.l.t	Vaccination au hasard
+ma-networks.c9.viz.l.items.0	protection plus lente
+ma-networks.c9.viz.r.t	Cibler les hubs
+ma-networks.c9.viz.r.items.0	coupe les chaînes plus vite
+ma-estimate.title	Estimation
+ma-estimate.summary	Des réponses assez bonnes de tête.
+ma-estimate.q0.q	Combien dure un milliard de secondes ?
+ma-estimate.q0.o0	Environ 3 ans
+ma-estimate.q0.o1	Environ 11 jours
+ma-estimate.q0.o2	Environ 32 ans
+ma-estimate.q0.x	Un million de secondes font environ 11,5 jours.
+ma-estimate.q1.q	Qu'est-ce qu'un problème de Fermi ?
+ma-estimate.q1.o0	Un problème de maths non résolu
+ma-estimate.q1.o1	Une estimation approximative construite à partir de suppositions simples
+ma-estimate.q1.o2	Une formule de physique
+ma-estimate.q1.x	Découpez les grandes questions en parties.
+ma-estimate.c0.title	Problèmes de Fermi
+ma-estimate.c0.text	Le physicien Enrico Fermi adorait les questions comme « combien d'accordeurs de pianos y a-t-il à Chicago ? ». Découpez-les en morceaux que vous pouvez deviner, multipliez, et vous serez souvent à un facteur de quelques unités près.
+ma-estimate.c0.viz.steps.0	Grande question
+ma-estimate.c0.viz.steps.1	Découper en parties
+ma-estimate.c0.viz.steps.2	Estimer chacune
+ma-estimate.c0.viz.steps.3	Multiplier
+ma-estimate.c1.title	Stations-service au Portugal
+ma-estimate.c1.text	Environ 10 millions d'habitants, à peu près 5 millions de voitures, chacune faisant le plein chaque semaine : 5 millions de pleins par semaine. Si une station en traite environ 3000 par semaine, cela donne près de 1700 stations ; le chiffre réel est de quelques milliers.
+ma-estimate.c1.example.0	5 millions de pleins par semaine
+ma-estimate.c1.example.1	÷ 3000 par station
+ma-estimate.c1.example.2	≈ 1700 stations
+ma-estimate.c1.viz.steps.0	10 millions d'habitants
+ma-estimate.c1.viz.steps.1	~5 millions de voitures
+ma-estimate.c1.viz.steps.2	5 millions de pleins par semaine
+ma-estimate.c1.viz.steps.3	÷ 3000 par station
+ma-estimate.c2.title	Ordres de grandeur
+ma-estimate.c2.text	Souvent, la puissance de 10 compte plus que la valeur exacte. Centaines, milliers ou millions ? Commencez par trouver cela.
+ma-estimate.c2.viz.items.0.l	Une classe
+ma-estimate.c2.viz.items.1.l	Un village
+ma-estimate.c2.viz.items.2.l	Ville de Lisbonne
+ma-estimate.c2.viz.items.3.l	Portugal
+ma-estimate.c3.title	Repères utiles
+ma-estimate.c3.text	Mémorisez quelques chiffres de référence et vous pourrez estimer presque n'importe quoi.
+ma-estimate.c3.viz.items.0.a	Portugal
+ma-estimate.c3.viz.items.0.b	~10,5 millions d'habitants
+ma-estimate.c3.viz.items.1.a	Monde
+ma-estimate.c3.viz.items.1.b	~8 milliards d'habitants
+ma-estimate.c3.viz.items.2.a	Circonférence de la Terre
+ma-estimate.c3.viz.items.2.b	40 000 km
+ma-estimate.c3.viz.items.3.a	Une année
+ma-estimate.c3.viz.items.3.b	~31,5 millions de secondes
+ma-estimate.c4.title	Arrondir largement
+ma-estimate.c4.text	Arrondissez à des nombres faciles à multiplier. 47 × 213 ≈ 50 × 200 = 10 000. La vraie réponse est 10 011.
+ma-estimate.c4.viz.steps.1	Arrondir : 50 × 200
+ma-estimate.c4.viz.steps.3	Exact : 10 011
+ma-estimate.c5.title	Le trop et le pas assez s'annulent
+ma-estimate.c5.text	Dans les estimations en plusieurs étapes, les erreurs d'arrondi de sens opposés tendent à s'annuler : le résultat final est souvent meilleur que n'importe quelle estimation isolée.
+ma-estimate.c5.viz.l.t	Une estimation
+ma-estimate.c5.viz.l.items.0	souvent à un facteur 2
+ma-estimate.c5.viz.r.t	Plusieurs estimations multipliées
+ma-estimate.c5.viz.r.items.0	erreurs en partie annulées
+ma-estimate.c6.title	Vérifier la cohérence
+ma-estimate.c6.text	L'estimation détecte les erreurs. Si un tableur annonce qu'un café consomme 40 tonnes de café par jour, une estimation rapide montre que quelque chose cloche.
+ma-estimate.c6.viz.items.0.w	Croire le tableur aveuglément
+ma-estimate.c6.viz.items.0.r	Estimer d'abord, vérifier ensuite
+ma-estimate.c7.title	Estimer une foule
+ma-estimate.c7.text	Comptez les personnes sur une petite zone, puis multipliez par le nombre de zones de ce type que la foule couvre. Police et organisateurs divergent souvent d'un facteur deux.
+ma-estimate.c7.viz.steps.0	Compter les gens sur 10 m²
+ma-estimate.c7.viz.steps.1	Mesurer la surface totale
+ma-estimate.c7.viz.steps.2	Multiplier
+ma-estimate.c7.viz.steps.3	Taille de la foule
+ma-estimate.c8.title	Combien dure un milliard de secondes ?
+ma-estimate.c8.text	Un million de secondes font environ 11,5 jours. Un milliard de secondes, environ 32 ans. Les grands nombres sont très différents, même s'ils sonnent pareil.
+ma-estimate.c8.viz.unit	durée
+ma-estimate.c8.viz.items.0.l	Mille s, minutes
+ma-estimate.c8.viz.items.1.l	Million s, jours
+ma-estimate.c8.viz.items.2.l	Milliard s, années
+ma-estimate.c9.title	Fourchettes de confiance
+ma-estimate.c9.text	Les bons estimateurs donnent des fourchettes : « entre 2000 et 4000 ». Une fourchette dont vous êtes sûr à 90 % est plus honnête qu'un seul nombre d'apparence précise.
+ma-estimate.c9.viz.unit	stations-service
+ma-estimate.c9.viz.items.0.l	Estimation basse
+ma-estimate.c9.viz.items.1.l	Meilleure estimation
+ma-estimate.c9.viz.items.2.l	Estimation haute
+ma-patterns.title	Suites et motifs
+ma-patterns.summary	Repérer la règle.
+ma-patterns.q0.q	Quelle est la suite : 2, 6, 18, 54, … ?
+ma-patterns.q0.o0	108
+ma-patterns.q0.o1	162
+ma-patterns.q0.o2	72
+ma-patterns.q0.x	On multiplie par 3.
+ma-patterns.q1.q	Quel est le 4e nombre triangulaire ?
+ma-patterns.q1.o0	8
+ma-patterns.q1.o1	10
+ma-patterns.q1.o2	16
+ma-patterns.q1.x	1 + 2 + 3 + 4.
+ma-patterns.c0.title	Suites arithmétiques
+ma-patterns.c0.text	On ajoute le même nombre à chaque fois : 3, 7, 11, 15… (on ajoute 4). Le n-ième terme est facile à trouver : 4n − 1.
+ma-patterns.c1.title	Suites géométriques
+ma-patterns.c1.text	On multiplie par le même nombre à chaque fois : 2, 6, 18, 54… (×3). Elles croissent beaucoup plus vite que les suites arithmétiques.
+ma-patterns.c2.title	Nombres triangulaires
+ma-patterns.c2.text	1, 3, 6, 10, 15 : le nombre de points dans des triangles de plus en plus grands, comme les quilles d'un bowling. Le n-ième vaut n(n + 1)/2.
+ma-patterns.c2.viz.f	Tₙ = n(n + 1) / 2
+ma-patterns.c2.viz.items.0.s	n
+ma-patterns.c2.viz.items.0.m	numéro de rangée
+ma-patterns.c2.viz.items.1.s	T₄
+ma-patterns.c2.viz.items.1.m	10 quilles
+ma-patterns.c3.title	Fibonacci dans la nature
+ma-patterns.c3.text	Beaucoup de tournesols ont 34 et 55 spirales ; les pommes de pin en montrent 8 et 13. Ces nombres de Fibonacci permettent de ranger les graines efficacement.
+ma-patterns.c3.viz.items.0.a	Pomme de pin
+ma-patterns.c3.viz.items.0.b	8 et 13 spirales
+ma-patterns.c3.viz.items.1.a	Ananas
+ma-patterns.c3.viz.items.1.b	8 et 13
+ma-patterns.c3.viz.items.2.a	Tournesol
+ma-patterns.c3.viz.items.2.b	34 et 55 ou 55 et 89
+ma-patterns.c4.title	Le nombre d'or
+ma-patterns.c4.text	Divisez chaque nombre de Fibonacci par le précédent et vous vous approchez de 1618…, le nombre d'or φ.
+ma-patterns.c4.viz.unit	rapport
+ma-patterns.c5.title	Le triangle de Pascal
+ma-patterns.c5.text	Chaque nombre est la somme des deux au-dessus de lui. Le triangle cache les nombres entiers, les nombres triangulaires, les puissances de 2 et les probabilités des tirs à pile ou face.
+ma-patterns.c6.title	Les nombres premiers résistent aux motifs
+ma-patterns.c6.text	Les nombres premiers se raréfient mais ne s'arrêtent jamais, et aucune formule simple ne les produit tous. Les prévoir est l'un des plus profonds problèmes ouverts des maths.
+ma-patterns.c7.title	Suites piégeuses
+ma-patterns.c7.text	1, 2, 4, 8, 16… semble évident, mais si l'on découpe un cercle avec des droites entre des points, on obtient 1, 2, 4, 8, 16, puis 31. Les motifs demandent une preuve.
+ma-patterns.c7.viz.l.t	On s'attend à
+ma-patterns.c7.viz.l.items.0	32 régions
+ma-patterns.c7.viz.r.t	En réalité
+ma-patterns.c7.viz.r.items.0	31 régions
+ma-patterns.c8.title	Décrire à voix haute
+ma-patterns.c8.text	1, 11, 21, 1211, 111221… Chaque terme décrit le précédent à voix haute : « un 1 », « deux 1 », « un 2, un 1 ». Un motif fondé sur les mots, pas sur l'arithmétique.
+ma-patterns.c9.title	Trouver la règle
+ma-patterns.c9.text	2, 5, 10, 17, 26… Les écarts sont 3, 5, 7, 9 : les nombres impairs. La règle est n² + 1.
+ma-patterns.c9.example.0	Écarts : 3, 5, 7, 9
+ma-patterns.c9.example.1	Carrés : 1, 4, 9, 16, 25
+ma-patterns.c9.example.2	Ajouter 1 : n² + 1
+ma-units.title	Mesures et unités
+ma-units.summary	Mètres, kilos et pourquoi ils comptent.
+ma-units.q0.q	Combien de litres dans 1 m³ ?
+ma-units.q0.o0	100
+ma-units.q0.o1	1000
+ma-units.q0.o2	10 000
+ma-units.q0.x	1 m³ = 1000 litres.
+ma-units.q1.q	Pourquoi la sonde Mars Climate Orbiter a-t-elle été perdue en 1999 ?
+ma-units.q1.o0	Une météorite
+ma-units.q1.o1	Une confusion entre unités impériales et métriques
+ma-units.q1.o2	Un virus informatique
+ma-units.q1.x	Livres-force contre newtons.
+ma-units.c0.title	Le système métrique
+ma-units.c0.text	Né dans la France révolutionnaire des années 1790, le système métrique repose sur des puissances de 10 : convertir revient à déplacer la virgule. Le Portugal l'a adopté en 1852.
+ma-units.c0.viz.items.0.a	kilo
+ma-units.c0.viz.items.1.a	centi
+ma-units.c0.viz.items.2.a	milli
+ma-units.c0.viz.items.3.a	micro
+ma-units.c0.viz.items.3.b	÷ 1 million
+ma-units.c1.title	Sept unités de base
+ma-units.c1.text	Toutes les mesures sont construites à partir de sept unités de base du SI. Depuis 2019, toutes sont définies par des constantes fixes de la nature, et non par des objets physiques.
+ma-units.c1.viz.items.0	Mètre : longueur
+ma-units.c1.viz.items.1	Kilogramme : masse
+ma-units.c1.viz.items.2	Seconde : temps
+ma-units.c1.viz.items.3	Ampère : courant
+ma-units.c1.viz.items.4	Kelvin : température
+ma-units.c1.viz.items.5	Mole : quantité
+ma-units.c1.viz.items.6	Candela : lumière
+ma-units.c2.title	Adieu, Le Grand K
+ma-units.c2.text	Pendant 130 ans, le kilogramme fut un cylindre de métal gardé dans un coffre près de Paris. En 2019, il a été redéfini à partir de la constante de Planck.
+ma-units.c2.viz.events.0.l	kilogramme en métal
+ma-units.c2.viz.events.1.l	décision de redéfinir
+ma-units.c2.viz.events.2.l	définition par la constante de Planck
+ma-units.c3.title	Unités de surface et de volume
+ma-units.c3.text	1 m² vaut 10 000 cm², pas 100. 1 m³ vaut 1000 litres. Les unités se mettent au carré et au cube comme les longueurs.
+ma-units.c3.viz.items.0.a	1 m
+ma-units.c3.viz.items.0.b	100 cm
+ma-units.c3.viz.items.1.a	1 m²
+ma-units.c3.viz.items.1.b	10 000 cm²
+ma-units.c3.viz.items.2.a	1 m³
+ma-units.c3.viz.items.2.b	1 000 000 cm³ = 1000 litres
+ma-units.c4.title	Hectares
+ma-units.c4.text	Un hectare vaut 100 m × 100 m = 10 000 m², soit environ un terrain et demi de football. Fermes et forêts se mesurent en hectares.
+ma-units.c4.viz.items.0.v	10 000 m²
+ma-units.c4.viz.items.0.l	un hectare
+ma-units.c4.viz.items.1.v	100 ha
+ma-units.c4.viz.items.1.l	un km²
+ma-units.c4.viz.items.2.l	terrains de football
+ma-units.c5.title	Unités impériales
+ma-units.c5.text	Le Royaume-Uni et les États-Unis utilisent encore miles, livres et Fahrenheit. Conversions rapides : 1 mile ≈ 1,6 km, 1 kg ≈ 2,2 lb, 1 pouce = 2,54 cm.
+ma-units.c5.viz.items.0.a	1 mile
+ma-units.c5.viz.items.0.b	1609 km
+ma-units.c5.viz.items.1.a	1 kg
+ma-units.c5.viz.items.1.b	2205 lb
+ma-units.c5.viz.items.2.a	1 pouce
+ma-units.c5.viz.items.2.b	2,54 cm
+ma-units.c5.viz.items.3.a	1 gallon US
+ma-units.c5.viz.items.3.b	3,79 litres
+ma-units.c6.title	Le Mars Climate Orbiter
+ma-units.c6.text	En 1999, une sonde de la NASA a été perdue près de Mars parce qu'une équipe utilisait des livres-force et une autre des newtons. Cette erreur de 125 millions de dollars venait d'une confusion d'unités.
+ma-units.c6.viz.steps.0	Équipe A : unités impériales
+ma-units.c6.viz.steps.1	Équipe B : métrique
+ma-units.c6.viz.steps.2	Données des propulseurs fausses
+ma-units.c6.viz.steps.3	Sonde perdue près de Mars
+ma-units.c7.title	Chiffres significatifs
+ma-units.c7.text	La précision doit correspondre à la mesure. Une pièce mesurée à 4,2 m n'a pas une surface de 17,64 m² exactement ; dites environ 17,6 m².
+ma-units.c7.viz.items.0.w	17,6400 m²
+ma-units.c7.viz.items.0.r	environ 17,6 m²
+ma-units.c8.title	Unités de vitesse
+ma-units.c8.text	Divisez les km/h par 3,6 pour obtenir des mètres par seconde. 120 km/h font environ 33 m/s : une voiture parcourt un terrain de football en trois secondes.
+ma-units.c8.viz.f	m/s = km/h ÷ 3,6
+ma-units.c8.viz.items.0.s	km/h
+ma-units.c8.viz.items.0.m	kilomètres par heure
+ma-units.c8.viz.items.1.s	m/s
+ma-units.c8.viz.items.1.m	mètres par seconde
+ma-units.c9.title	Unités d'énergie
+ma-units.c9.text	Un kilowattheure fait fonctionner un radiateur de 1000 W pendant une heure. Une Calorie alimentaire vaut 1000 calories, soit environ 4,2 kJ. Une douche chaude consomme environ 2 à 3 kWh.
+ma-units.c9.viz.items.0.a	1 kWh
+ma-units.c9.viz.items.0.b	3,6 millions de joules
+ma-units.c9.viz.items.1.a	1 kcal
+ma-units.c9.viz.items.1.b	4,18 kJ
+ma-units.c9.viz.items.2.a	Douche chaude
+ma-units.c9.viz.items.2.b	environ 2–3 kWh
+ma-puzzles.title	Casse-têtes célèbres
+ma-puzzles.summary	Des énigmes aux maths profondes.
+ma-puzzles.q0.q	Combien de poignées de main quand 10 personnes se serrent toutes la main une fois ?
+ma-puzzles.q0.o0	90
+ma-puzzles.q0.o1	45
+ma-puzzles.q0.o2	100
+ma-puzzles.q0.x	10 × 9 ÷ 2.
+ma-puzzles.q1.q	0999… (répété) est-il égal à 1 ?
+ma-puzzles.q1.o0	Non, c'est un peu moins
+ma-puzzles.q1.o1	Oui, exactement
+ma-puzzles.q1.o2	Seulement approximativement
+ma-puzzles.q1.x	3 × 0333… = 0999… = 1.
+ma-puzzles.c0.title	Les tours de Hanoï
+ma-puzzles.c0.text	Déplacez une pile de disques vers une autre tige, un à la fois, sans jamais poser un grand disque sur un plus petit. Avec n disques, il faut 2ⁿ − 1 déplacements.
+ma-puzzles.c0.viz.unit	déplacements minimum
+ma-puzzles.c0.viz.items.0.l	3 disques
+ma-puzzles.c0.viz.items.1.l	5 disques
+ma-puzzles.c0.viz.items.2.l	7 disques
+ma-puzzles.c0.viz.items.3.l	10 disques
+ma-puzzles.c1.title	Le carré manquant
+ma-puzzles.c1.text	Réarranger quatre morceaux d'un triangle semble créer un trou. Le truc : les « hypoténuses » ne sont pas des droites, donc les formes diffèrent légèrement.
+ma-puzzles.c1.viz.items.0.w	Surface disparue
+ma-puzzles.c1.viz.items.0.r	Les bords sont légèrement courbés : les formes ne sont pas égales
+ma-puzzles.c2.title	Le problème des poignées de main
+ma-puzzles.c2.text	Si 10 personnes se serrent toutes la main une fois, combien de poignées de main ? Chacune en serre 9, mais chaque poignée implique deux personnes : 10 × 9 ÷ 2 = 45.
+ma-puzzles.c2.example.0	10 personnes × 9 autres = 90
+ma-puzzles.c2.example.1	Chacune comptée deux fois
+ma-puzzles.c2.example.2	90 ÷ 2 = 45
+ma-puzzles.c2.viz.f	poignées de main = n(n − 1) ÷ 2
+ma-puzzles.c2.viz.items.0.s	n
+ma-puzzles.c2.viz.items.0.m	nombre de personnes
+ma-puzzles.c2.viz.items.1.s	10 personnes
+ma-puzzles.c3.title	Principe des tiroirs
+ma-puzzles.c3.text	Si vous rangez 13 chaussettes dans 12 tiroirs, au moins un tiroir en reçoit deux. Simple mais puissant : à Lisbonne, au moins deux personnes ont exactement le même nombre de cheveux.
+ma-puzzles.c3.viz.steps.0	Plus d'objets que de boîtes
+ma-puzzles.c3.viz.steps.1	Au moins une boîte en a deux
+ma-puzzles.c4.title	L'énigme de 0999…
+ma-puzzles.c4.text	0999… répété à l'infini vaut exactement 1. Une preuve : 1/3 = 0333…, donc 3 × 1/3 = 0999… = 1.
+ma-puzzles.c4.example.0	1/3 = 0333…
+ma-puzzles.c4.example.1	× 3
+ma-puzzles.c4.example.2	0999… = 1
+ma-puzzles.c5.title	L'hôtel de Hilbert
+ma-puzzles.c5.text	Un hôtel aux chambres infiniment nombreuses est plein. Un nouveau client arrive : chacun passe de la chambre n à la chambre n + 1, et la chambre 1 est libre. L'infini se comporte étrangement.
+ma-puzzles.c5.viz.steps.0	Hôtel complet
+ma-puzzles.c5.viz.steps.1	Chacun passe à la chambre suivante
+ma-puzzles.c5.viz.steps.2	Chambre 1 libre
+ma-puzzles.c5.viz.steps.3	Le nouveau client s'installe
+ma-puzzles.c6.title	Menteurs et véridiques
+ma-puzzles.c6.text	Sur une île, les chevaliers disent toujours la vérité et les fourbes mentent toujours. Demandez à l'un ou l'autre « que dirait l'autre ? » et inversez la réponse pour trouver la vérité.
+ma-puzzles.c6.viz.items.0.a	Chevalier
+ma-puzzles.c6.viz.items.0.b	toujours sincère
+ma-puzzles.c6.viz.items.1.a	Fourbe
+ma-puzzles.c6.viz.items.1.b	ment toujours
+ma-puzzles.c6.viz.items.2.a	Astuce
+ma-puzzles.c6.viz.items.2.b	interroger sur la réponse de l'autre
+ma-puzzles.c7.title	Le sudoku est de la logique
+ma-puzzles.c7.text	Le sudoku n'exige aucune arithmétique, seulement de la logique : chaque ligne, colonne et bloc contient une fois les chiffres de 1 à 9. Une grille bien faite n'a qu'une seule solution.
+ma-puzzles.c7.viz.items.0	Chaque ligne : 1–9
+ma-puzzles.c7.viz.items.1	Chaque colonne : 1–9
+ma-puzzles.c7.viz.items.2	Chaque bloc 3×3 : 1–9
+ma-puzzles.c7.viz.items.3	Une seule solution
+ma-puzzles.c8.title	Les sept ponts aujourd'hui
+ma-puzzles.c8.text	L'idée d'Euler sert pour la collecte des déchets et les tournées postales : planifier des parcours qui couvrent chaque rue une fois, avec le moins de retours en arrière possible.
+ma-puzzles.c8.viz.steps.0	Plan des rues
+ma-puzzles.c8.viz.steps.1	Repérer les carrefours impairs
+ma-puzzles.c8.viz.steps.2	Ajouter répétitions courtes
+ma-puzzles.c8.viz.steps.3	Parcours efficace
+ma-puzzles.c9.title	Le loup, la chèvre et le chou, résolu
+ma-puzzles.c9.text	L'idée clé était de ramener quelque chose en arrière. Beaucoup d'énigmes exigent une étape qui semble reculer, une leçon valable aussi pour les vrais problèmes.
+ma-puzzles.c9.viz.steps.0	Chèvre traverse
+ma-puzzles.c9.viz.steps.1	Loup traverse
+ma-puzzles.c9.viz.steps.2	Chèvre revient
+ma-puzzles.c9.viz.steps.3	Chou traverse
+ma-puzzles.c9.viz.steps.4	Chèvre traverse

@@ -75,7 +75,7 @@ bo-heart.c7.viz.items.3	O
 bo-heart.c8.title	L'étincelle du battement
 bo-heart.c8.text	Chaque battement naît dans le nœud sinusal, le stimulateur naturel du cœur, qui envoie une impulsion électrique à travers le cœur. Un ECG enregistre cette électricité.
 bo-heart.c8.viz.steps.0	Le nœud sinusal s'active
-bo-heart.c8.viz.steps.1	Les oreillettes se contractent
+bo-heart.c8.viz.steps.1	Oreillettes
 bo-heart.c8.viz.steps.2	Bref retard du signal
 bo-heart.c8.viz.steps.3	Les ventricules se contractent
 bo-heart.c9.title	Prendre son pouls
@@ -207,7 +207,7 @@ bo-digest.c3.viz.items.0.v	~6 m
 bo-digest.c3.viz.items.0.l	longueur
 bo-digest.c3.viz.items.1.v	~30 m²
 bo-digest.c3.viz.items.1.l	surface
-bo-digest.c3.viz.items.2.v	Presque tous les nutriments
+bo-digest.c3.viz.items.2.v	Presque tout
 bo-digest.c3.viz.items.2.l	absorbés ici
 bo-digest.c4.title	Le gros intestin
 bo-digest.c4.text	Le gros intestin absorbe l'eau et le sel et abrite des milliers de milliards de bactéries intestinales qui aident à digérer les fibres et fabriquent certaines vitamines.
@@ -280,7 +280,7 @@ bo-immune.c2.viz.steps.3	Les défenseurs arrivent
 bo-immune.c3.title	Les globules blancs
 bo-immune.c3.text	Plusieurs types de globules blancs se partagent le travail : certains engloutissent les envahisseurs, d'autres fabriquent des anticorps, d'autres détruisent les cellules infectées.
 bo-immune.c3.viz.items.0.a	Phagocytes
-bo-immune.c3.viz.items.0.b	engloutissent les microbes
+bo-immune.c3.viz.items.0.b	engloutissent
 bo-immune.c3.viz.items.1.a	Lymphocytes B
 bo-immune.c3.viz.items.1.b	fabriquent des anticorps
 bo-immune.c3.viz.items.2.a	Lymphocytes T
@@ -550,7 +550,7 @@ bo-cells.c6.viz.unit	durée de vie approximative, jours
 bo-cells.c6.viz.items.0.l	Paroi intestinale
 bo-cells.c6.viz.items.1.l	Surface de la peau
 bo-cells.c6.viz.items.2.l	Globules rouges
-bo-cells.c6.viz.items.3.l	Cellules graisseuses
+bo-cells.c6.viz.items.3.l	Adipocytes
 bo-cells.c7.title	Les cellules souches
 bo-cells.c7.text	Les cellules souches peuvent devenir de nombreux autres types de cellules. Elles réparent les tissus et servent dans des traitements comme les greffes de moelle osseuse.
 bo-cells.c7.viz.root	Cellule souche
@@ -684,7 +684,7 @@ bo-skin.c3.text	La sueur vous rafraîchit en s'évaporant. Les humains ont 2 à 
 bo-skin.c3.viz.steps.0	Le corps chauffe
 bo-skin.c3.viz.steps.1	La sueur est libérée
 bo-skin.c3.viz.steps.2	S'évapore
-bo-skin.c3.viz.steps.3	La peau se rafraîchit
+bo-skin.c3.viz.steps.3	Peau fraîche
 bo-skin.c4.title	La couleur de la peau
 bo-skin.c4.text	La couleur de la peau vient de la mélanine, qui absorbe les UV. Les populations humaines ont évolué avec des quantités différentes selon l'ensoleillement des régions où vivaient leurs ancêtres.
 bo-skin.c4.viz.l.t	Plus de mélanine
@@ -797,7 +797,7 @@ bo-hormones.c8.viz.l.t	Ghréline
 bo-hormones.c8.viz.l.items.0	venue de l'estomac
 bo-hormones.c8.viz.l.items.1	« J'ai faim »
 bo-hormones.c8.viz.r.t	Leptine
-bo-hormones.c8.viz.r.items.0	venue des graisses
+bo-hormones.c8.viz.r.items.0	des graisses
 bo-hormones.c8.viz.r.items.1	« J'en ai assez »
 bo-hormones.c9.title	Les boucles de rétroaction
 bo-hormones.c9.text	La plupart des hormones fonctionnent comme un thermostat : quand un taux monte trop haut, un signal coupe la production, ce qui garde l'équilibre.
@@ -912,7 +912,7 @@ bo-muscles.c1.text	Les fibres lentes résistent à la fatigue et conviennent à 
 bo-muscles.c1.viz.l.t	Fibres lentes
 bo-muscles.c1.viz.l.items.0	endurance
 bo-muscles.c1.viz.l.items.1	marathon
-bo-muscles.c1.viz.l.items.2	se fatiguent lentement
+bo-muscles.c1.viz.l.items.2	fatigue lente
 bo-muscles.c1.viz.r.t	Fibres rapides
 bo-muscles.c1.viz.r.items.0	puissance
 bo-muscles.c1.viz.r.items.1	sprint
@@ -1193,7 +1193,7 @@ bo-teeth.c8.viz.items.3.b	broient
 bo-teeth.c9.title	Les dents racontent des histoires
 bo-teeth.c9.text	Les dents gardent la trace de votre vie : les archéologues y lisent le régime alimentaire, l'âge et même le lieu où quelqu'un a grandi, grâce aux éléments chimiques de l'émail.
 bo-teeth.c9.viz.items.0	Âge au décès
-bo-teeth.c9.viz.items.1	Régime alimentaire
+bo-teeth.c9.viz.items.1	Régime
 bo-teeth.c9.viz.items.2	Maladie d'enfance
 bo-teeth.c9.viz.items.3	Lieu de l'enfance
 bo-medicine.title	Les grandes étapes de la médecine
@@ -1247,3 +1247,343 @@ bo-medicine.c4.title	La théorie des germes
 bo-medicine.c4.text	Dans les années 1860, Louis Pasteur et Robert Koch ont montré que les microbes causent de nombreuses maladies. Cela a transformé la médecine, la sécurité alimentaire et l'hygiène.
 bo-medicine.c4.viz.steps.0	Microbes découverts
 bo-medicine.c4.viz.steps.1	Liés aux maladies
+bo-medicine.c4.viz.steps.2	Hygiène et vaccins
+bo-medicine.c4.viz.steps.3	Moins de décès
+bo-medicine.c5.title	Se laver les mains
+bo-medicine.c5.text	En 1847, Ignace Semmelweis a fait chuter spectaculairement la mortalité des jeunes mères en imposant aux médecins de se laver les mains. Ses collègues se sont moqués de lui ; on lui a donné raison après sa mort.
+bo-medicine.c5.viz.unit	mortalité des mères, %
+bo-medicine.c5.viz.items.0.l	Pire mois avant
+bo-medicine.c5.viz.items.1.l	Après le lavage des mains
+bo-medicine.c6.title	L'anesthésie
+bo-medicine.c6.text	Avant 1846, la chirurgie obligeait à endurer la douleur en pleine conscience. L'éther, puis le chloroforme, ont rendu possibles des opérations longues et soigneuses.
+bo-medicine.c6.viz.events.0.l	éther en chirurgie
+bo-medicine.c6.viz.events.1.l	chloroforme
+bo-medicine.c6.viz.events.2.l	chirurgie antiseptique
+bo-medicine.c6.viz.events.3.y	années 1900
+bo-medicine.c6.viz.events.3.l	transfusions sanguines
+bo-medicine.c7.title	La pénicilline
+bo-medicine.c7.text	En 1928, Alexander Fleming a remarqué qu'une moisissure tuait des bactéries sur une boîte de culture. Devenue médicament dans les années 1940, la pénicilline, puis les antibiotiques, ont sauvé des centaines de millions de vies.
+bo-medicine.c7.viz.steps.0	Moisissure sur une boîte, 1928
+bo-medicine.c7.viz.steps.1	Les bactéries meurent autour
+bo-medicine.c7.viz.steps.2	Purifiée, années 1940
+bo-medicine.c7.viz.steps.3	Ère des antibiotiques
+bo-medicine.c8.title	Un Nobel portugais
+bo-medicine.c8.text	Egas Moniz a reçu le premier prix Nobel du Portugal, en 1949, pour la lobotomie, aujourd'hui abandonnée et controversée. Son invention de l'angiographie cérébrale, qui visualise les vaisseaux sanguins du cerveau, a perduré.
+bo-medicine.c8.viz.l.t	Durable
+bo-medicine.c8.viz.l.items.0	angiographie cérébrale, 1927
+bo-medicine.c8.viz.r.t	Abandonnée
+bo-medicine.c8.viz.r.items.0	lobotomie, Nobel 1949
+bo-medicine.c9.title	La médecine moderne
+bo-medicine.c9.text	Les dernières décennies ont apporté l'imagerie médicale, les greffes d'organes, la chirurgie mini-invasive, les vaccins à ARNm et les médicaments ciblés contre le cancer.
+bo-medicine.c9.viz.events.0.l	rayons X
+bo-medicine.c9.viz.events.1.y	années 1970
+bo-medicine.c9.viz.events.1.l	scanner et IRM
+bo-medicine.c9.viz.events.2.l	premier bébé FIV
+bo-medicine.c9.viz.events.3.l	vaccins à ARNm
+bo-nutrition.title	Vitamines et minéraux
+bo-nutrition.summary	De petits nutriments, de grands rôles.
+bo-nutrition.q0.q	Quelle vitamine manquait aux marins atteints du scorbut ?
+bo-nutrition.q0.o0	Vitamine A
+bo-nutrition.q0.o1	Vitamine C
+bo-nutrition.q0.o2	Vitamine D
+bo-nutrition.q0.x	Les agrumes le guérissent.
+bo-nutrition.q1.q	Qu'est-ce qui réduit l'absorption du fer d'un repas ?
+bo-nutrition.q1.o0	Le jus d'orange
+bo-nutrition.q1.o1	Le thé ou le café
+bo-nutrition.q1.o2	L'eau
+bo-nutrition.q1.x	La vitamine C aide ; le thé gêne.
+bo-nutrition.c0.title	Ce que sont les vitamines
+bo-nutrition.c0.text	Les vitamines sont des composés dont le corps a besoin en minuscules quantités mais qu'il ne sait généralement pas fabriquer. Il y en a 13, réparties en liposolubles et hydrosolubles.
+bo-nutrition.c0.viz.l.t	Liposolubles
+bo-nutrition.c0.viz.l.items.0	A, D, E, K
+bo-nutrition.c0.viz.l.items.1	stockées dans le corps
+bo-nutrition.c0.viz.r.t	Hydrosolubles
+bo-nutrition.c0.viz.r.items.0	groupe B et C
+bo-nutrition.c0.viz.r.items.1	apport régulier nécessaire
+bo-nutrition.c1.title	Le scorbut et la vitamine C
+bo-nutrition.c1.text	Les marins en longue traversée attrapaient le scorbut : gencives qui saignent et faiblesse. En 1747, James Lind a montré que les agrumes le guérissaient. L'équipage de Vasco de Gama en a terriblement souffert.
+bo-nutrition.c1.viz.steps.0	Longue traversée
+bo-nutrition.c1.viz.steps.1	Pas de fruits frais
+bo-nutrition.c1.viz.steps.2	Manque de vitamine C
+bo-nutrition.c1.viz.steps.3	Scorbut
+bo-nutrition.c2.title	La vitamine D
+bo-nutrition.c2.text	Votre peau fabrique la vitamine D au soleil. Elle aide à absorber le calcium pour les os. En hiver, aux latitudes nord, beaucoup de gens en manquent.
+bo-nutrition.c2.viz.steps.0	Soleil sur la peau
+bo-nutrition.c2.viz.steps.1	Vitamine D produite
+bo-nutrition.c2.viz.steps.2	Calcium absorbé
+bo-nutrition.c2.viz.steps.3	Os solides
+bo-nutrition.c3.title	La vitamine A
+bo-nutrition.c3.text	La vitamine A est vitale pour la vision dans la pénombre et pour l'immunité. Les carottes, les patates douces et les légumes verts à feuilles en apportent sous forme de bêta-carotène.
+bo-nutrition.c3.viz.items.0.a	Vitamine A
+bo-nutrition.c3.viz.items.0.b	vision et immunité
+bo-nutrition.c3.viz.items.1.a	Vitamine K
+bo-nutrition.c3.viz.items.1.b	coagulation du sang
+bo-nutrition.c3.viz.items.2.a	Vitamine B12
+bo-nutrition.c3.viz.items.2.b	nerfs et sang
+bo-nutrition.c3.viz.items.3.a	Folates
+bo-nutrition.c3.viz.items.3.b	division cellulaire
+bo-nutrition.c4.title	La B12
+bo-nutrition.c4.text	La vitamine B12 ne se trouve presque que dans les aliments d'origine animale ; les personnes végétaliennes ont donc généralement besoin d'aliments enrichis ou de compléments.
+bo-nutrition.c4.viz.items.0	Viande et poisson
+bo-nutrition.c4.viz.items.1	Œufs
+bo-nutrition.c4.viz.items.2	Laitages
+bo-nutrition.c4.viz.items.3	Aliments enrichis
+bo-nutrition.c5.title	Le fer
+bo-nutrition.c5.text	Le fer transporte l'oxygène dans l'hémoglobine. La vitamine C aide à absorber le fer des végétaux ; le thé et le café pris pendant les repas le réduisent.
+bo-nutrition.c5.viz.l.t	Favorise l'absorption
+bo-nutrition.c5.viz.l.items.0	vitamine C
+bo-nutrition.c5.viz.l.items.1	viande avec légumes
+bo-nutrition.c5.viz.r.t	Réduit l'absorption
+bo-nutrition.c5.viz.r.items.0	thé
+bo-nutrition.c5.viz.r.items.1	café
+bo-nutrition.c5.viz.r.items.2	pendant les repas
+bo-nutrition.c6.title	Le calcium
+bo-nutrition.c6.text	Environ 99 % du calcium du corps se trouve dans les os et les dents. Les produits laitiers, les conserves de poisson avec arêtes, le tofu et les légumes verts en sont de bonnes sources.
+bo-nutrition.c6.viz.unit	% du calcium du corps
+bo-nutrition.c6.viz.items.0.l	Os et dents
+bo-nutrition.c6.viz.items.1.l	Sang et cellules
+bo-nutrition.c7.title	Le sel
+bo-nutrition.c7.text	Nous avons besoin d'un peu de sodium, mais la plupart des gens mangent bien plus que la limite de 5 g de sel par jour fixée par l'OMS. Une grande part se cache dans le pain, les charcuteries et les plats préparés.
+bo-nutrition.c7.viz.unit	grammes de sel par jour
+bo-nutrition.c7.viz.items.0.l	Limite OMS
+bo-nutrition.c7.viz.items.1.l	Apport typique, Portugal
+bo-nutrition.c8.title	Les fibres
+bo-nutrition.c8.text	Les fibres nourrissent les bactéries intestinales, régularisent la digestion et aident à contrôler la glycémie et le cholestérol. La plupart des adultes en mangent trop peu ; visez environ 25 à 30 g par jour.
+bo-nutrition.c8.viz.items.0	Céréales complètes
+bo-nutrition.c8.viz.items.1	Haricots et lentilles
+bo-nutrition.c8.viz.items.2	Légumes
+bo-nutrition.c8.viz.items.3	Fruits
+bo-nutrition.c8.viz.items.4	Noix
+bo-nutrition.c9.title	L'alimentation d'abord
+bo-nutrition.c9.text	Pour la plupart des personnes en bonne santé, une alimentation variée apporte ce qu'il faut. Les compléments aident dans des cas précis, comme la vitamine D en hiver ou l'acide folique pendant la grossesse ; plus n'est pas mieux.
+bo-nutrition.c9.viz.items.0.w	Plus de vitamines = plus de santé
+bo-nutrition.c9.viz.items.0.r	Alimentation variée d’abord ; compléments ciblés
+bo-stress.title	Le stress et le corps
+bo-stress.summary	Pourquoi le stress aide, et quand il nuit.
+bo-stress.q0.q	Que dit la loi de Yerkes-Dodson ?
+bo-stress.q0.o0	Le stress est toujours mauvais
+bo-stress.q0.o1	Une activation modérée donne la meilleure performance
+bo-stress.q0.o2	Le stress améliore la mémoire pour toujours
+bo-stress.q0.x	Trop peu ou trop nuit à la performance.
+bo-stress.q1.q	Quel système ralentit le cœur et relance la digestion ?
+bo-stress.q1.o0	Combat ou fuite
+bo-stress.q1.o1	Repos et digestion
+bo-stress.q1.o2	Le système immunitaire
+bo-stress.q1.x	Le système parasympathique.
+bo-stress.c0.title	La réaction de stress
+bo-stress.c0.text	Le stress déclenche deux systèmes : une réponse nerveuse rapide avec l'adrénaline, et une réponse hormonale plus lente avec le cortisol, qui préparent le corps et l'esprit à un défi.
+bo-stress.c0.viz.l.t	Rapide
+bo-stress.c0.viz.l.items.0	nerfs et adrénaline
+bo-stress.c0.viz.l.items.1	secondes
+bo-stress.c0.viz.r.t	Lente
+bo-stress.c0.viz.r.items.0	hormones et cortisol
+bo-stress.c0.viz.r.items.1	minutes à heures
+bo-stress.c1.title	Le bon stress
+bo-stress.c1.text	De brèves poussées de stress aiguisent la concentration et la performance : pensez à un examen ou à une course. Le problème, c'est le stress qui ne s'éteint jamais.
+bo-stress.c1.viz.l.t	À court terme
+bo-stress.c1.viz.l.items.0	concentration accrue
+bo-stress.c1.viz.l.items.1	énergie
+bo-stress.c1.viz.l.items.2	on récupère
+bo-stress.c1.viz.r.t	Chronique
+bo-stress.c1.viz.r.items.0	mauvais sommeil
+bo-stress.c1.viz.r.items.1	immunité affaiblie
+bo-stress.c1.viz.r.items.2	épuisement
+bo-stress.c2.title	La courbe de performance
+bo-stress.c2.text	La performance augmente avec l'activation jusqu'à un certain point, puis chute. Trop peu de stress ennuie ; trop submerge. Les psychologues parlent de loi de Yerkes-Dodson.
+bo-stress.c2.viz.unit	performance (illustratif)
+bo-stress.c2.viz.items.0.l	Stress faible
+bo-stress.c2.viz.items.1.l	Stress modéré
+bo-stress.c2.viz.items.2.l	Stress élevé
+bo-stress.c3.title	Le stress et le cœur
+bo-stress.c3.text	Le stress prolongé élève la tension artérielle et le risque de maladie cardiaque. Un stress soudain et extrême peut même provoquer un temporaire « syndrome des cœurs brisés ».
+bo-stress.c3.viz.steps.0	Stress chronique
+bo-stress.c3.viz.steps.1	Tension artérielle élevée
+bo-stress.c3.viz.steps.2	Vaisseaux enflammés
+bo-stress.c3.viz.steps.3	Risque cardiaque accru
+bo-stress.c4.title	Le stress et l'intestin
+bo-stress.c4.text	L'intestin et le cerveau communiquent en permanence. Le stress peut causer maux d'estomac, nausées ou troubles intestinaux ; les « papillons dans le ventre » existent vraiment.
+bo-stress.c4.viz.steps.0	Le cerveau perçoit le stress
+bo-stress.c4.viz.steps.1	Signaux vers l'intestin
+bo-stress.c4.viz.steps.2	La digestion change
+bo-stress.c4.viz.steps.3	Papillons
+bo-stress.c5.title	Le stress et l'immunité
+bo-stress.c5.text	Un stress bref mobilise les cellules immunitaires ; un stress chronique déprime l'immunité. Les étudiants attrapent plus de rhumes en période d'examens.
+bo-stress.c5.viz.l.t	Stress bref
+bo-stress.c5.viz.l.items.0	immunité stimulée
+bo-stress.c5.viz.r.t	Stress chronique
+bo-stress.c5.viz.r.items.0	immunité déprimée
+bo-stress.c6.title	Repos et digestion
+bo-stress.c6.text	Le système parasympathique est le contrepoids du combat ou fuite : il ralentit le cœur et relance la digestion. Une respiration lente l'enclenche.
+bo-stress.c6.viz.l.t	Combat ou fuite
+bo-stress.c6.viz.l.items.0	cœur rapide
+bo-stress.c6.viz.l.items.1	digestion à l'arrêt
+bo-stress.c6.viz.r.t	Repos et digestion
+bo-stress.c6.viz.r.items.0	cœur lent
+bo-stress.c6.viz.r.items.1	digestion active
+bo-stress.c7.title	Ce qui aide
+bo-stress.c7.text	Parmi les moyens éprouvés de réduire le stress : l'exercice, le sommeil, le temps passé dans la nature, parler à des amis, la respiration lente, et limiter les actualités et l'alcool.
+bo-stress.c7.viz.items.0	Exercice
+bo-stress.c7.viz.items.1	Sommeil
+bo-stress.c7.viz.items.2	Nature
+bo-stress.c7.viz.items.3	Amis
+bo-stress.c7.viz.items.4	Respiration lente
+bo-stress.c8.title	La réévaluation
+bo-stress.c8.text	Voir un cœur qui bat fort comme « mon corps se prépare » plutôt que « je panique » améliore la performance selon des études. La façon d'interpréter le stress compte.
+bo-stress.c8.viz.items.0.w	« Je suis si nerveux »
+bo-stress.c8.viz.items.0.r	« Mon corps se prépare à performer »
+bo-stress.c9.title	La respiration carrée
+bo-stress.c9.text	Utilisée par les pilotes et les sportifs : inspirez 4 secondes, retenez 4, expirez 4, retenez 4. Répétez quatre fois.
+bo-stress.c9.viz.steps.0	Inspirer 4
+bo-stress.c9.viz.steps.1	Retenir 4
+bo-stress.c9.viz.steps.2	Expirer 4
+bo-stress.c9.viz.steps.3	Retenir 4
+bo-pain.title	La douleur et les nerfs
+bo-pain.summary	Le système d'alarme de votre corps.
+bo-pain.q0.q	Pourquoi frotter un coude cogné soulage-t-il ?
+bo-pain.q0.o0	Il guérit plus vite
+bo-pain.q0.o1	Les signaux du toucher rivalisent avec ceux de la douleur
+bo-pain.q0.o2	Cela le refroidit
+bo-pain.q0.x	La théorie du portillon.
+bo-pain.q1.q	Pourquoi des problèmes cardiaques peuvent-ils causer une douleur au bras ?
+bo-pain.q1.o0	Le sang y circule
+bo-pain.q1.o1	Les nerfs partagent des voies : douleur référée
+bo-pain.q1.o2	Aucun rapport
+bo-pain.q1.x	Le cerveau se trompe sur l'origine.
+bo-pain.c0.title	La douleur protège
+bo-pain.c0.text	La douleur avertit d'une lésion. Les personnes nées incapables de ressentir la douleur se blessent souvent gravement sans s'en apercevoir.
+bo-pain.c0.viz.steps.0	Lésion détectée
+bo-pain.c0.viz.steps.1	Signal d'alarme
+bo-pain.c0.viz.steps.2	Le cerveau crée la douleur
+bo-pain.c0.viz.steps.3	Vous protégez la zone
+bo-pain.c1.title	Les nocicepteurs
+bo-pain.c1.text	Des terminaisons nerveuses spéciales appelées nocicepteurs détectent la chaleur, la pression ou les substances chimiques nocives et envoient des signaux à la moelle épinière et au cerveau.
+bo-pain.c1.viz.items.0	Chaleur nocive
+bo-pain.c1.viz.items.1	Pression écrasante
+bo-pain.c1.viz.items.2	Substances de cellules lésées
+bo-pain.c1.viz.items.3	Froid extrême
+bo-pain.c2.title	Douleur rapide et lente
+bo-pain.c2.text	Quand vous vous cognez un orteil, vous ressentez d'abord une douleur vive et rapide, puis une douleur sourde. Elles cheminent par des fibres nerveuses différentes à des vitesses différentes.
+bo-pain.c2.viz.l.t	Douleur rapide
+bo-pain.c2.viz.l.items.0	vive
+bo-pain.c2.viz.l.items.1	fibres épaisses
+bo-pain.c2.viz.l.items.2	rapide
+bo-pain.c2.viz.r.t	Douleur lente
+bo-pain.c2.viz.r.items.0	sourde
+bo-pain.c2.viz.r.items.1	fibres fines
+bo-pain.c2.viz.r.items.2	dure plus longtemps
+bo-pain.c3.title	Le cerveau décide
+bo-pain.c3.text	La douleur est fabriquée par le cerveau, pas seulement par la blessure. L'attention, la peur et le contexte peuvent l'augmenter ou la diminuer. Des soldats ont ignoré de graves blessures au combat.
+bo-pain.c3.viz.steps.0	Signal du corps
+bo-pain.c3.viz.steps.1	Le cerveau pèse le contexte
+bo-pain.c3.viz.steps.2	Douleur ressentie, plus forte ou plus faible
+bo-pain.c4.title	La théorie du portillon
+bo-pain.c4.text	Frotter un coude cogné soulage parce que les signaux du toucher rivalisent avec ceux de la douleur au niveau de « portillons » de la moelle épinière.
+bo-pain.c4.viz.steps.0	Coude cogné
+bo-pain.c4.viz.steps.1	On le frotte
+bo-pain.c4.viz.steps.2	Le toucher bloque le portillon
+bo-pain.c4.viz.steps.3	Moins de douleur
+bo-pain.c5.title	La douleur référée
+bo-pain.c5.text	La douleur peut être ressentie loin de son origine. Des problèmes cardiaques peuvent se manifester par une douleur au bras ou à la mâchoire, car les nerfs partagent des voies.
+bo-pain.c5.viz.items.0.a	Cœur
+bo-pain.c5.viz.items.0.b	bras gauche ou mâchoire
+bo-pain.c5.viz.items.1.a	Diaphragme
+bo-pain.c5.viz.items.1.b	pointe de l'épaule
+bo-pain.c5.viz.items.2.a	Appendice
+bo-pain.c5.viz.items.2.b	débute près du nombril
+bo-pain.c6.title	Les membres fantômes
+bo-pain.c6.text	Beaucoup d'amputés ressentent le membre manquant, parfois douloureusement. La thérapie par le miroir, qui trompe le cerveau avec un reflet, peut aider.
+bo-pain.c6.viz.steps.0	Membre perdu
+bo-pain.c6.viz.steps.1	La carte cérébrale reste
+bo-pain.c6.viz.steps.2	Sensations fantômes
+bo-pain.c6.viz.steps.3	Le miroir rééduque
+bo-pain.c7.title	Les antidouleurs
+bo-pain.c7.text	Le paracétamol et les anti-inflammatoires comme l'ibuprofène agissent différemment. Les anti-inflammatoires bloquent des substances qui sensibilisent les nerfs ; les opioïdes agissent sur le cerveau et la moelle épinière.
+bo-pain.c7.viz.items.0.a	Anti-inflammatoires
+bo-pain.c7.viz.items.0.b	réduisent les substances inflammatoires
+bo-pain.c7.viz.items.1.a	Paracétamol
+bo-pain.c7.viz.items.1.b	action centrale, mal comprise
+bo-pain.c7.viz.items.2.a	Opioïdes
+bo-pain.c7.viz.items.2.b	puissants, risque de dépendance
+bo-pain.c8.title	Le placebo
+bo-pain.c8.text	Une pilule de sucre peut réduire la douleur quand on s'y attend, car l'attente déclenche les substances antidouleur du cerveau lui-même. Les placebos agissent surtout sur la douleur et les nausées.
+bo-pain.c8.viz.steps.0	On attend un soulagement
+bo-pain.c8.viz.steps.1	Le cerveau libère des endorphines
+bo-pain.c8.viz.steps.2	Douleur réduite
+bo-pain.c9.title	La douleur chronique
+bo-pain.c9.text	Quand la douleur dure plus de trois mois, le système nerveux lui-même peut devenir hypersensible. Le traitement associe souvent mouvement, thérapie et médicaments.
+bo-pain.c9.viz.items.0	Mouvement progressif
+bo-pain.c9.viz.items.1	Comprendre la douleur
+bo-pain.c9.viz.items.2	Sommeil
+bo-pain.c9.viz.items.3	Médicaments si adaptés
+bo-odd.title	Les faits étranges du corps
+bo-odd.summary	Des choses surprenantes sur vous.
+bo-odd.q0.q	Qu'est-ce que le « petit os rigolo » (le nerf du coude) ?
+bo-odd.q0.o0	Un petit os
+bo-odd.q0.o1	Le nerf ulnaire
+bo-odd.q0.o2	Un tendon
+bo-odd.q0.x	Il passe près de la peau.
+bo-odd.q1.q	Pourquoi êtes-vous plus grand le matin ?
+bo-odd.q1.o0	On grandit la nuit
+bo-odd.q1.o1	Les disques vertébraux récupèrent pendant la nuit
+bo-odd.q1.o2	Les pieds gonflent
+bo-odd.q1.x	Environ 1 cm.
+bo-odd.c0.title	Pourquoi on bâille
+bo-odd.c0.text	Le bâillement pourrait refroidir le cerveau et accroître la vigilance. Il est contagieux : voir, entendre ou même lire à propos d'un bâillement peut vous faire bâiller.
+bo-odd.c0.viz.items.0	Refroidit le cerveau
+bo-odd.c0.viz.items.1	Accroît la vigilance
+bo-odd.c0.viz.items.2	Contagieux
+bo-odd.c0.viz.items.3	Même les chiens l'attrapent de nous
+bo-odd.c1.title	Le hoquet
+bo-odd.c1.text	Le hoquet est un spasme soudain du diaphragme, les cordes vocales se refermant d'un coup pour faire le « hic ». Charles Osborne a eu le hoquet pendant 68 ans.
+bo-odd.c1.viz.steps.0	Spasme du diaphragme
+bo-odd.c1.viz.steps.1	L'air s'engouffre
+bo-odd.c1.viz.steps.2	Les cordes vocales se ferment
+bo-odd.c1.viz.steps.3	« Hic ! »
+bo-odd.c2.title	La paroi de votre estomac
+bo-odd.c2.text	L'acide gastrique est assez fort pour dissoudre certains métaux ; l'estomac renouvelle donc sa paroi protectrice tous les quelques jours.
+bo-odd.c2.viz.items.0.v	pH 1,5–3,5
+bo-odd.c2.viz.items.0.l	acide gastrique
+bo-odd.c2.viz.items.1.v	qq jours
+bo-odd.c2.viz.items.1.l	paroi renouvelée
+bo-odd.c2.viz.items.2.v	~1,5 L
+bo-odd.c2.viz.items.2.l	de suc gastrique par jour
+bo-odd.c3.title	Les empreintes digitales
+bo-odd.c3.text	Les empreintes digitales se forment avant la naissance et sont uniques, même entre jumeaux identiques. Elles pourraient améliorer la prise et la sensibilité du toucher.
+bo-odd.c3.viz.items.0.a	Boucles
+bo-odd.c3.viz.items.0.b	les plus courantes
+bo-odd.c3.viz.items.1.a	Verticilles
+bo-odd.c3.viz.items.1.b	environ un tiers
+bo-odd.c3.viz.items.2.a	Arches
+bo-odd.c3.viz.items.2.b	les plus rares
+bo-odd.c4.title	Le nerf du coude
+bo-odd.c4.text	Quand vous vous cognez le « petit os rigolo », vous frappez en réalité le nerf ulnaire, qui passe près de la peau au coude. C'est pourquoi cela fourmille jusqu'au petit doigt.
+bo-odd.c4.viz.items.0.w	C'est un os
+bo-odd.c4.viz.items.0.r	C'est le nerf ulnaire
+bo-odd.c5.title	Plus grand le matin
+bo-odd.c5.text	Vous mesurez environ 1 cm de plus le matin : les disques de votre colonne se tassent pendant la journée et récupèrent la nuit.
+bo-odd.c5.viz.unit	variation de taille, cm
+bo-odd.c5.viz.items.0.l	Matin
+bo-odd.c5.viz.items.1.l	Soir
+bo-odd.c6.title	Les gargouillis d'estomac
+bo-odd.c6.text	Les borborygmes, ou gargouillis d'estomac, sont du gaz et du liquide qui se déplacent dans l'intestin. Ils sont plus forts à jeun, car il y a moins d'aliments pour les étouffer.
+bo-odd.c6.viz.steps.0	Intestin contracté
+bo-odd.c6.viz.steps.1	Gaz et liquide se déplacent
+bo-odd.c6.viz.steps.2	Gargouillis
+bo-odd.c6.viz.steps.3	Plus fort à jeun
+bo-odd.c7.title	Le « cerveau gelé »
+bo-odd.c7.text	Un aliment froid sur le palais fait se contracter puis se dilater rapidement les vaisseaux sanguins, provoquant un mal de tête vif de quelques secondes.
+bo-odd.c7.viz.steps.0	Froid sur le palais
+bo-odd.c7.viz.steps.1	Vaisseaux serrés
+bo-odd.c7.viz.steps.2	Puis se dilatent vite
+bo-odd.c7.viz.steps.3	Bref mal de tête
+bo-odd.c8.title	Le nombril
+bo-odd.c8.text	Votre nombril est une cicatrice du cordon ombilical. Il abrite des centaines d'espèces de bactéries.
+bo-odd.c8.viz.items.0	Cicatrice du cordon ombilical
+bo-odd.c8.viz.items.1	Rentrants plus courants
+bo-odd.c8.viz.items.2	Des centaines d'espèces de bactéries
+bo-odd.c9.title	Frissons en musique
+bo-odd.c9.text	Environ la moitié des gens ressentent des « frissons » devant une musique émouvante. Cela est lié à la libération de dopamine aux sommets émotionnels.
+bo-odd.c9.viz.steps.0	La musique monte
+bo-odd.c9.viz.steps.1	Surprise ou sommet
+bo-odd.c9.viz.steps.2	Libération de dopamine
+bo-odd.c9.viz.steps.3	Frissons

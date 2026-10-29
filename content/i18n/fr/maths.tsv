@@ -248,3 +248,963 @@ ma-stats.q1.q	Quelle part des valeurs se trouve à moins d'un écart type dans u
 ma-stats.q1.o0	50 %
 ma-stats.q1.o1	68 %
 ma-stats.q1.o2	95 %
+ma-stats.q1.x	95 % se trouvent à moins de deux.
+ma-stats.c0.title	Moyenne, médiane, mode
+ma-stats.c0.text	La moyenne est la valeur moyenne ; la médiane est la valeur du milieu ; le mode est la valeur la plus fréquente. Elles peuvent beaucoup différer.
+ma-stats.c0.viz.items.0.a	Moyenne
+ma-stats.c0.viz.items.0.b	somme ÷ effectif
+ma-stats.c0.viz.items.1.a	Médiane
+ma-stats.c0.viz.items.1.b	valeur centrale, une fois triées
+ma-stats.c0.viz.items.2.a	Mode
+ma-stats.c0.viz.items.2.b	valeur la plus fréquente
+ma-stats.c1.title	Quand la moyenne trompe
+ma-stats.c1.text	Si un milliardaire entre dans un café, la richesse moyenne des clients explose, mais la médiane bouge à peine. Les salaires se décrivent mieux avec la médiane.
+ma-stats.c1.viz.unit	milliers d'€ (exemple)
+ma-stats.c1.viz.items.0.l	Salaire médian
+ma-stats.c1.viz.items.1.l	Salaire moyen
+ma-stats.c2.title	La dispersion
+ma-stats.c2.text	Deux classes peuvent avoir la même moyenne mais des dispersions très différentes. L'écart type mesure de combien les valeurs s'éloignent typiquement de la moyenne.
+ma-stats.c2.viz.l.t	Classe A
+ma-stats.c2.viz.l.items.0	moyenne 14
+ma-stats.c2.viz.l.items.1	toutes entre 12 et 16
+ma-stats.c2.viz.r.t	Classe B
+ma-stats.c2.viz.r.items.0	moyenne 14
+ma-stats.c2.viz.r.items.1	de 5 à 20
+ma-stats.c3.title	La courbe en cloche
+ma-stats.c3.text	De nombreuses mesures, comme la taille, se regroupent autour d'une moyenne en forme de cloche. Environ 68 % des valeurs se trouvent à moins d'un écart type et 95 % à moins de deux.
+ma-stats.c3.viz.unit	% inclus
+ma-stats.c3.viz.items.0.l	1 ET
+ma-stats.c3.viz.items.1.l	2 ET
+ma-stats.c3.viz.items.2.l	3 ET
+ma-stats.c4.title	Les échantillons
+ma-stats.c4.text	Un échantillon aléatoire bien choisi de 1 000 personnes peut représenter des millions de gens. Un grand échantillon biaisé, non : qui vous interrogez compte plus que combien.
+ma-stats.c4.viz.l.t	Bon
+ma-stats.c4.viz.l.items.0	échantillon aléatoire
+ma-stats.c4.viz.l.items.1	1 000 personnes
+ma-stats.c4.viz.r.t	Mauvais
+ma-stats.c4.viz.r.items.0	sondage en ligne
+ma-stats.c4.viz.r.items.1	100 000 volontaires
+ma-stats.c5.title	Marge d'erreur
+ma-stats.c5.text	Les sondages indiquent une marge d'erreur. Avec environ 1 000 personnes, elle est d'environ ±3 points de pourcentage : 51 % contre 49 % peut donc être une égalité.
+ma-stats.c5.viz.items.0.l	Candidat A
+ma-stats.c5.viz.items.1.l	Candidat B
+ma-stats.c6.title	Graphiques trompeurs
+ma-stats.c6.text	Un axe vertical qui ne commence pas à zéro peut faire paraître énorme une petite différence. Vérifiez toujours l'échelle.
+ma-stats.c6.viz.items.0.w	Barre de 98 à 100 : paraît double
+ma-stats.c6.viz.items.0.r	Vérifiez l'axe : 2 % d'écart
+ma-stats.c7.title	Le paradoxe de Simpson
+ma-stats.c7.text	Une tendance présente dans chaque groupe peut s'inverser quand on les regroupe. Un traitement peut sembler meilleur dans chaque hôpital mais moins bon au total, si les patients ne sont pas les mêmes d'un hôpital à l'autre.
+ma-stats.c7.viz.steps.0	Chaque groupe : A gagne
+ma-stats.c7.viz.steps.1	Tailles de groupes différentes
+ma-stats.c7.viz.steps.2	Ensemble : B semble gagner
+ma-stats.c8.title	La régression vers la moyenne
+ma-stats.c8.text	Après un résultat extrême, le suivant tend à se rapprocher de la moyenne. La saison record d'une star du sport est souvent suivie d'une saison plus ordinaire, sans aucune malédiction.
+ma-stats.c8.viz.steps.0	Résultat extrême
+ma-stats.c8.viz.steps.1	En partie la chance
+ma-stats.c8.viz.steps.2	Ensuite : plus proche de la moyenne
+ma-stats.c9.title	Lire une statistique dans l'actualité
+ma-stats.c9.text	Posez quatre questions : comparé à quoi ? Sur combien ? Qui a été mesuré ? Qui a financé l'étude ?
+ma-stats.c9.viz.items.0	Comparé à quoi ?
+ma-stats.c9.viz.items.1	Sur combien ?
+ma-stats.c9.viz.items.2	Qui a été mesuré ?
+ma-stats.c9.viz.items.3	Qui a financé ?
+ma-logic.title	Logique et casse-tête
+ma-logic.summary	Penser clairement, des paradoxes aux ordinateurs.
+ma-logic.q0.q	Que vaut 101 en binaire, en nombre ordinaire ?
+ma-logic.q0.o0	101
+ma-logic.q0.o1	3
+ma-logic.q0.o2	5
+ma-logic.q0.x	4 + 0 + 1.
+ma-logic.q1.q	« S'il pleut, le sol est mouillé. Le sol est mouillé. » Peut-on en conclure qu'il a plu ?
+ma-logic.q1.o0	Oui
+ma-logic.q1.o1	Non
+ma-logic.q1.o2	Seulement en hiver
+ma-logic.q1.x	Autre chose a pu le mouiller.
+ma-logic.c0.title	Vrai et faux
+ma-logic.c0.text	La logique manipule des énoncés vrais ou faux et les combine avec ET, OU et NON. Toute puce électronique est construite à partir de ces opérations.
+ma-logic.c0.viz.items.0.a	ET
+ma-logic.c0.viz.items.0.b	vrai si les deux sont vrais
+ma-logic.c0.viz.items.1.a	OU
+ma-logic.c0.viz.items.1.b	vrai si au moins un est vrai
+ma-logic.c0.viz.items.2.a	NON
+ma-logic.c0.viz.items.2.b	inverse vrai et faux
+ma-logic.c1.title	Si… alors…
+ma-logic.c1.text	« S'il pleut, le sol est mouillé » ne veut pas dire « si le sol est mouillé, il a plu » : un arroseur pourrait en être la cause. Confondre les deux est une erreur de logique classique.
+ma-logic.c1.viz.items.0.w	Sol mouillé, donc il a plu
+ma-logic.c1.viz.items.0.r	Autre chose a pu le mouiller
+ma-logic.c2.title	Le raisonnement par l'absurde
+ma-logic.c2.text	On suppose le contraire de ce qu'on veut prouver et on montre que cela mène à une absurdité. Euclide a prouvé ainsi qu'il existe une infinité de nombres premiers.
+ma-logic.c2.viz.steps.0	Supposer le contraire
+ma-logic.c2.viz.steps.1	Suivre la logique
+ma-logic.c2.viz.steps.2	Aboutir à une contradiction
+ma-logic.c2.viz.steps.3	Donc l'énoncé est vrai
+ma-logic.c3.title	Le paradoxe du menteur
+ma-logic.c3.text	« Cette phrase est fausse. » Si elle est vraie, elle est fausse ; si elle est fausse, elle est vraie. Des paradoxes de ce genre ont ébranlé les fondements de la logique au XXe siècle.
+ma-logic.c3.viz.steps.0	Elle est vraie
+ma-logic.c3.viz.steps.1	Donc elle est fausse
+ma-logic.c3.viz.steps.2	Donc elle est vraie
+ma-logic.c4.title	L'incomplétude de Gödel
+ma-logic.c4.text	En 1931, Kurt Gödel a prouvé que tout système de règles cohérent, assez riche pour l'arithmétique, contient des énoncés vrais qu'il ne peut pas démontrer. Les mathématiques ne peuvent jamais être complètes.
+ma-logic.c4.viz.steps.0	Tout système cohérent
+ma-logic.c4.viz.steps.1	Assez riche pour l'arithmétique
+ma-logic.c4.viz.steps.2	Contient des vérités indémontrables
+ma-logic.c5.title	Les algorithmes
+ma-logic.c5.text	Un algorithme est une recette précise, étape par étape, pour résoudre un problème. Le mot vient du nom d'al-Khwarizmi, mathématicien de Bagdad au IXe siècle.
+ma-logic.c5.viz.steps.0	Entrée
+ma-logic.c5.viz.steps.1	Étapes claires
+ma-logic.c5.viz.steps.2	Sortie
+ma-logic.c6.title	Le binaire
+ma-logic.c6.text	Les ordinateurs comptent en base 2, avec seulement 0 et 1. Chaque position vaut le double de celle de droite : 1, 2, 4, 8, 16…
+ma-logic.c7.title	Le paradoxe de Zénon
+ma-logic.c7.text	Pour traverser une pièce, il faut d'abord en parcourir la moitié, puis la moitié du reste, à l'infini. Zénon disait qu'on n'arriverait jamais. La somme infinie 1/2 + 1/4 + 1/8 + … est en fait égale à 1.
+ma-logic.c7.viz.unit	distance parcourue
+ma-logic.c7.viz.items.0.l	Étape 1
+ma-logic.c7.viz.items.1.l	Étape 2
+ma-logic.c7.viz.items.2.l	Étape 3
+ma-logic.c7.viz.items.3.l	Étape 4
+ma-logic.c8.title	Problèmes non résolus
+ma-logic.c8.text	Certaines questions d'apparence simple restent sans réponse, comme la conjecture de Goldbach : tout nombre pair supérieur à 2 est-il la somme de deux nombres premiers ? Vérifiée jusqu'à des nombres gigantesques, jamais démontrée.
+ma-logic.c8.example.0	4 = 2 + 2
+ma-logic.c8.example.1	10 = 3 + 7
+ma-logic.c8.example.2	28 = 5 + 23
+ma-logic.c8.viz.items.0	Conjecture de Goldbach
+ma-logic.c8.viz.items.1	Nombres premiers jumeaux
+ma-logic.c8.viz.items.2	Hypothèse de Riemann
+ma-logic.c8.viz.items.3	P contre NP
+ma-logic.c9.title	La traversée de la rivière
+ma-logic.c9.text	Un fermier doit traverser une rivière avec un loup, une chèvre et un chou, un seul à la fois. Le loup ne peut pas rester avec la chèvre, ni la chèvre avec le chou. L'astuce : ramener la chèvre.
+ma-logic.c9.viz.steps.0	Passer la chèvre
+ma-logic.c9.viz.steps.1	Passer le loup
+ma-logic.c9.viz.steps.2	Ramener la chèvre
+ma-logic.c9.viz.steps.3	Passer le chou
+ma-logic.c9.viz.steps.4	Chercher la chèvre
+ma-percent.title	Les pourcentages au quotidien
+ma-percent.summary	Remises, intérêts et titres de presse.
+ma-percent.q0.q	Un article à 100 € augmente de 50 %, puis baisse de 50 %. Combien coûte-t-il ?
+ma-percent.q0.o0	100 €
+ma-percent.q0.o1	75 €
+ma-percent.q0.o2	50 €
+ma-percent.q0.x	150 € × 0,5 = 75 €.
+ma-percent.q1.q	Un prix avec 23 % de TVA est de 123 €. Quel est le prix hors TVA ?
+ma-percent.q1.o0	94,71 €
+ma-percent.q1.o1	100 €
+ma-percent.q1.o2	96 €
+ma-percent.q1.x	Divisez par 1,23.
+ma-percent.q2.q	« 30 % de remise puis 20 % » équivaut à une remise de…
+ma-percent.q2.o0	50 %
+ma-percent.q2.o1	44 %
+ma-percent.q2.o2	40 %
+ma-percent.q2.x	0,7 × 0,8 = 0,56.
+ma-percent.c0.title	Ce qu'est un pourcentage
+ma-percent.c0.text	« Pour cent » signifie « sur 100 ». 25 %, c'est 25 sur 100, soit un quart. Pour calculer un pourcentage d'un nombre, multipliez par le pourcentage et divisez par 100.
+ma-percent.c0.formula	x % de N = N × x ÷ 100
+ma-percent.c0.viz.f	x % de N = N × x ÷ 100
+ma-percent.c0.viz.items.0.s	x
+ma-percent.c0.viz.items.0.m	le pourcentage
+ma-percent.c0.viz.items.1.s	N
+ma-percent.c0.viz.items.1.m	le nombre
+ma-percent.c1.title	Astuces rapides
+ma-percent.c1.text	10 %, c'est facile : décalez la virgule d'un rang vers la gauche. À partir de là, 5 % en est la moitié et 20 % le double.
+ma-percent.c1.example.0	10 % de 84 € = 8,40 €
+ma-percent.c1.example.1	5 % = 4,20 €
+ma-percent.c1.example.2	20 % = 16,80 €
+ma-percent.c1.viz.items.0.b	décaler la virgule
+ma-percent.c1.viz.items.1.b	moitié de 10 %
+ma-percent.c1.viz.items.2.b	double de 10 %
+ma-percent.c1.viz.items.3.b	décaler deux fois
+ma-percent.c2.title	Les pourcentages s'inversent
+ma-percent.c2.text	8 % de 25 égalent 25 % de 8, car la multiplication marche dans les deux sens. Prenez le plus facile : 4 % de 75, c'est 75 % de 4, soit 3.
+ma-percent.c2.viz.items.0.a	8 % de 25
+ma-percent.c2.viz.items.0.b	25 % de 8 = 2
+ma-percent.c2.viz.items.1.a	4 % de 75
+ma-percent.c2.viz.items.1.b	75 % de 4 = 3
+ma-percent.c2.viz.items.2.a	18 % de 50
+ma-percent.c2.viz.items.2.b	50 % de 18 = 9
+ma-percent.c3.title	Monter puis descendre
+ma-percent.c3.text	Une hausse de 50 % suivie d'une baisse de 50 % ne ramène pas au point de départ. 100 € deviennent 150 €, puis 75 €.
+ma-percent.c3.viz.items.0.l	Départ
+ma-percent.c3.viz.items.1.l	Après +50 %
+ma-percent.c3.viz.items.2.l	Puis −50 %
+ma-percent.c4.title	Points de pourcentage
+ma-percent.c4.text	Si les taux d'intérêt passent de 2 % à 3 %, c'est une hausse de 1 point de pourcentage, mais une augmentation de 50 % du taux. Les titres de presse les confondent souvent.
+ma-percent.c4.viz.l.t	Points de pourcentage
+ma-percent.c4.viz.l.items.0	3 % − 2 % = 1 point
+ma-percent.c4.viz.r.t	Variation en %
+ma-percent.c5.title	Pourcentages inverses
+ma-percent.c5.text	Un prix TVA de 23 % comprise est de 123 €. Le prix hors TVA n'est pas 123 € moins 23 % ; c'est 123 € ÷ 1,23 = 100 €.
+ma-percent.c6.title	Les remises se cumulent bizarrement
+ma-percent.c6.text	« 30 % de remise, plus 20 % en plus » ne font pas 50 %. C'est 0,7 × 0,8 = 0,56 du prix : une remise de 44 %.
+ma-percent.c6.viz.unit	prix, €
+ma-percent.c6.viz.items.0.l	Initial
+ma-percent.c6.viz.items.1.l	−30 %
+ma-percent.c6.viz.items.2.l	Puis −20 %
+ma-percent.c7.title	Variation en pourcentage
+ma-percent.c7.text	Variation ÷ valeur initiale × 100. De 80 à 100, c'est une hausse de 25 % ; de 100 à 80, une baisse de 20 %. Le point de départ compte.
+ma-percent.c7.viz.f	variation % = (nouv. − anc.) ÷ anc. × 100
+ma-percent.c7.viz.items.0.s	nouv.
+ma-percent.c7.viz.items.0.m	la valeur finale
+ma-percent.c7.viz.items.1.s	anc.
+ma-percent.c7.viz.items.1.m	la valeur de départ
+ma-percent.c8.title	Pourboires et partages
+ma-percent.c8.text	Pour partager à quatre une addition de 60 € avec 10 % de pourboire : 60 € × 1,1 = 66 €, divisés par 4 = 16,50 € chacun.
+ma-percent.c8.example.0	60 € × 1,10 = 66 €
+ma-percent.c8.example.1	66 € ÷ 4 = 16,50 € chacun
+ma-percent.c8.viz.steps.0	Addition
+ma-percent.c8.viz.steps.1	Pourboire : × 1,1
+ma-percent.c8.viz.steps.2	Diviser par le nombre
+ma-percent.c8.viz.steps.3	Part de chacun
+ma-percent.c9.title	Des pourcentages trompeurs
+ma-percent.c9.text	« Ventes en hausse de 200 % ! » en passant de 1 à 3 unités paraît spectaculaire mais ne veut pas dire grand-chose. Demandez toujours les chiffres réels derrière un pourcentage.
+ma-percent.c9.viz.items.0.w	« +200 % ! »
+ma-percent.c9.viz.items.0.r	De 1 à 3 : toujours minuscule
+ma-fractions.title	Fractions, rapports et proportions
+ma-fractions.summary	Partager, changer d'échelle et cuisiner.
+ma-fractions.q0.q	Que vaut 1/2 + 1/3 ?
+ma-fractions.q0.o0	2/5
+ma-fractions.q0.o1	5/6
+ma-fractions.q0.o2	1/6
+ma-fractions.q0.x	3/6 + 2/6.
+ma-fractions.q1.q	Que vaut 3 ÷ ½ ?
+ma-fractions.q1.o0	1,5
+ma-fractions.q1.o1	6
+ma-fractions.q1.o2	3
+ma-fractions.q1.x	Combien de moitiés tiennent dans trois ?
+ma-fractions.c0.title	Les fractions sont des divisions
+ma-fractions.c0.text	3/4 signifie 3 divisé par 4 : trois parts sur quatre parts égales, soit 0,75. Le nombre du bas indique le nombre de parts ; celui du haut, combien vous en prenez.
+ma-fractions.c1.title	Fractions équivalentes
+ma-fractions.c1.text	Multiplier le haut et le bas par le même nombre ne change pas la fraction : 1/2 = 2/4 = 50/100. Pour simplifier, divisez les deux par un facteur commun.
+ma-fractions.c1.viz.steps.1	Diviser les deux par 2
+ma-fractions.c2.title	Additionner des fractions
+ma-fractions.c2.text	Pour additionner des fractions, donnez-leur d'abord le même dénominateur : 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
+ma-fractions.c2.example.0	1/2 = 3/6
+ma-fractions.c2.example.1	1/3 = 2/6
+ma-fractions.c2.example.2	3/6 + 2/6 = 5/6
+ma-fractions.c2.viz.steps.0	Trouver un dénominateur commun
+ma-fractions.c2.viz.steps.1	Convertir chacune
+ma-fractions.c2.viz.steps.2	Additionner les numérateurs
+ma-fractions.c3.title	Multiplier des fractions
+ma-fractions.c3.text	Multipliez les numérateurs entre eux et les dénominateurs entre eux. La moitié des trois quarts, c'est 1/2 × 3/4 = 3/8. « De » signifie multiplier.
+ma-fractions.c3.viz.f	a/b × c/d = (a × c) / (b × d)
+ma-fractions.c3.viz.items.0.s	a, c
+ma-fractions.c3.viz.items.0.m	numérateurs
+ma-fractions.c3.viz.items.1.s	b, d
+ma-fractions.c3.viz.items.1.m	dénominateurs
+ma-fractions.c4.title	Diviser par une fraction
+ma-fractions.c4.text	Diviser par une fraction revient à multiplier par son inverse. 3 ÷ 1/2 = 6 : combien de moitiés tiennent dans 3 ? Six.
+ma-fractions.c4.viz.items.0.w	3 ÷ ½ = 1,5
+ma-fractions.c4.viz.items.0.r	3 ÷ ½ = 6, car six moitiés font trois
+ma-fractions.c5.title	Les rapports
+ma-fractions.c5.text	Un rapport compare des quantités. Un mélange 2:3 de ciment et de sable signifie 2 parts de ciment pour 3 de sable : 2/5 du mélange est du ciment.
+ma-fractions.c5.viz.unit	parts
+ma-fractions.c5.viz.items.0.l	Ciment
+ma-fractions.c5.viz.items.1.l	Sable
+ma-fractions.c6.title	Adapter les recettes
+ma-fractions.c6.text	Une recette pour 4 demande 300 g de farine. Pour 6 personnes, multipliez par 6/4 = 1,5 : 450 g.
+ma-fractions.c6.example.0	Facteur = 6 ÷ 4 = 1,5
+ma-fractions.c6.example.1	300 g × 1,5 = 450 g
+ma-fractions.c6.viz.steps.0	Trouver le facteur
+ma-fractions.c6.viz.steps.1	Multiplier chaque ingrédient
+ma-fractions.c6.viz.steps.2	Cuisiner
+ma-fractions.c7.title	Prix unitaires
+ma-fractions.c7.text	Comparez les offres au prix par unité. 500 g à 2,40 €, c'est 4,80 €/kg ; 750 g à 3,30 €, c'est 4,40 €/kg. Le plus gros paquet est ici moins cher, mais pas toujours.
+ma-fractions.c7.viz.unit	€ par kg
+ma-fractions.c7.viz.items.0.l	Paquet de 500 g
+ma-fractions.c7.viz.items.1.l	Paquet de 750 g
+ma-fractions.c8.title	Échelles de cartes
+ma-fractions.c8.text	Sur une carte au 1/25 000, 1 cm représente 25 000 cm, soit 250 m sur le terrain. Les cartes de randonnée utilisent souvent cette échelle.
+ma-fractions.c8.viz.items.0.a	1 cm sur la carte
+ma-fractions.c8.viz.items.0.b	250 m sur le terrain
+ma-fractions.c8.viz.items.1.a	4 cm sur la carte
+ma-fractions.c8.viz.items.1.b	1 km
+ma-fractions.c8.viz.items.2.a	Échelle
+ma-fractions.c9.title	Proportionnalité directe et inverse
+ma-fractions.c9.text	Deux fois plus d'heures au même tarif, c'est deux fois plus d'argent : proportionnalité directe. Deux fois plus d'ouvriers sur un chantier, c'est à peu près deux fois moins de temps : proportionnalité inverse.
+ma-fractions.c9.viz.l.t	Directe
+ma-fractions.c9.viz.l.items.0	l'un double, l'autre double
+ma-fractions.c9.viz.l.items.1	heures et salaire
+ma-fractions.c9.viz.r.t	Inverse
+ma-fractions.c9.viz.r.items.0	l'un double, l'autre est divisé par 2
+ma-fractions.c9.viz.r.items.1	ouvriers et temps
+ma-mental.title	Astuces de calcul mental
+ma-mental.summary	Calculer plus vite de tête.
+ma-mental.q0.q	Que vaut 11 × 43 ?
+ma-mental.q0.o0	443
+ma-mental.q0.o1	473
+ma-mental.q0.o2	4 343
+ma-mental.q0.x	4 _ 3, avec 4 + 3 = 7 au milieu.
+ma-mental.q1.q	Que vaut 45² ?
+ma-mental.q1.o0	1 625
+ma-mental.q1.o1	2 025
+ma-mental.q1.o2	2 045
+ma-mental.q1.x	4 × 5 = 20, puis 25.
+ma-mental.c0.title	Arrondir et ajuster
+ma-mental.c0.text	Pour calculer 298 + 157, ajoutez 300 et retirez 2 : 457 − 2 = 455. Arrondir à des nombres ronds simplifie bien des calculs.
+ma-mental.c0.viz.steps.2	Retirer 2
+ma-mental.c1.title	Multiplier par 5
+ma-mental.c1.text	Pour multiplier par 5, multipliez par 10 et prenez la moitié. 5 × 48 = 480 ÷ 2 = 240.
+ma-mental.c1.example.0	48 × 10 = 480
+ma-mental.c1.example.1	480 ÷ 2 = 240
+ma-mental.c1.viz.items.0.b	× 10, puis moitié
+ma-mental.c1.viz.items.1.b	× 100, puis ÷ 4
+ma-mental.c1.viz.items.2.b	× 100, puis moitié
+ma-mental.c2.title	Multiplier par 11
+ma-mental.c2.text	Pour un nombre à deux chiffres, additionnez les chiffres et placez la somme au milieu : 11 × 36 = 3(3+6)6 = 396. Si la somme vaut 10 ou plus, reportez une retenue.
+ma-mental.c2.example.0	11 × 36 → 3 _ 6
+ma-mental.c2.example.1	3 + 6 = 9
+ma-mental.c2.example.2	396
+ma-mental.c2.viz.steps.1	Séparer : 3 _ 6
+ma-mental.c2.viz.steps.2	Milieu : 3 + 6 = 9
+ma-mental.c3.title	Carrés finissant par 5
+ma-mental.c3.text	Pour élever au carré un nombre finissant par 5, multipliez la première partie par le nombre suivant et ajoutez 25 à la fin : 35² = (3 × 4) puis 25 = 1 225.
+ma-mental.c3.example.0	35² : 3 × 4 = 12
+ma-mental.c3.example.1	ajouter 25
+ma-mental.c3.example.2	1 225
+ma-mental.c3.viz.items.0.a	25²
+ma-mental.c3.viz.items.1.a	45²
+ma-mental.c3.viz.items.2.a	65²
+ma-mental.c3.viz.items.3.a	85²
+ma-mental.c4.title	Doubler et diviser par deux
+ma-mental.c4.text	Prenez la moitié d'un nombre et doublez l'autre : le produit ne change pas. 16 × 25 = 8 × 50 = 4 × 100 = 400.
+ma-mental.c5.title	Décomposer
+ma-mental.c5.text	Découpez les multiplications délicates : 7 × 48 = 7 × 50 − 7 × 2 = 350 − 14 = 336.
+ma-mental.c5.example.0	7 × 50 = 350
+ma-mental.c5.example.1	7 × 2 = 14
+ma-mental.c5.example.2	350 − 14 = 336
+ma-mental.c6.title	Critères de divisibilité
+ma-mental.c6.text	Un nombre est divisible par 3 si la somme de ses chiffres l'est ; par 9 si cette somme est un multiple de 9 ; par 4 si ses deux derniers chiffres le sont.
+ma-mental.c6.viz.items.0.b	dernier chiffre pair
+ma-mental.c6.viz.items.1.b	somme des chiffres divisible par 3
+ma-mental.c6.viz.items.2.b	finit par 0 ou 5
+ma-mental.c6.viz.items.3.b	somme des chiffres divisible par 9
+ma-mental.c7.title	Estimer d'abord
+ma-mental.c7.text	Avant de calculer, estimez. 49 × 21 vaut environ 50 × 20 = 1 000 ; si vous trouvez 10 290, quelque chose cloche.
+ma-mental.c7.viz.steps.0	Arrondir les nombres
+ma-mental.c7.viz.steps.1	Estimation rapide
+ma-mental.c7.viz.steps.2	Calculer
+ma-mental.c7.viz.steps.3	Comparer
+ma-mental.c8.title	Rendre la monnaie en comptant
+ma-mental.c8.text	Les commerçants rendent la monnaie en comptant vers le haut. Pour 13,65 € payés avec 20 € : jusqu'à 14 €, 35 centimes ; jusqu'à 20 €, 6 € ; donc 6,35 €.
+ma-mental.c8.viz.steps.3	Monnaie : 6,35 €
+ma-mental.c9.title	Convertir les températures
+ma-mental.c9.text	Des Celsius aux Fahrenheit, approximativement : doublez et ajoutez 30. 20 °C ≈ 70 °F (exactement 68). Pour la valeur exacte, multipliez par 1,8 et ajoutez 32.
+ma-mental.c9.viz.f	°F = °C × 1,8 + 32
+ma-mental.c9.viz.items.0.s	°C
+ma-mental.c9.viz.items.0.m	Celsius
+ma-mental.c9.viz.items.1.s	°F
+ma-mental.c9.viz.items.1.m	Fahrenheit
+ma-mental.c9.viz.items.2.s	version rapide
+ma-mental.c9.viz.items.2.m	doubler, +30
+ma-algebra.title	L'algèbre sans crainte
+ma-algebra.summary	Les lettres ne sont que des nombres inconnus.
+ma-algebra.q0.q	Résolvez 3x + 4 = 19.
+ma-algebra.q0.o0	x = 3
+ma-algebra.q0.o1	x = 5
+ma-algebra.q0.o2	x = 7
+ma-algebra.q0.x	Soustrayez 4, puis divisez par 3.
+ma-algebra.q1.q	Que vaut 5 − (−3) ?
+ma-algebra.q1.o0	2
+ma-algebra.q1.o1	8
+ma-algebra.q1.o2	−8
+ma-algebra.q1.x	Soustraire un négatif revient à ajouter.
+ma-algebra.c0.title	Ce qu'est l'algèbre
+ma-algebra.c0.text	L'algèbre utilise des lettres pour les nombres que l'on ne connaît pas encore. « Un nombre plus 5 égale 12 » devient x + 5 = 12, donc x = 7.
+ma-algebra.c0.viz.steps.0	Mots
+ma-algebra.c0.viz.steps.1	Équation
+ma-algebra.c0.viz.steps.2	Résoudre
+ma-algebra.c0.viz.steps.3	x = 7
+ma-algebra.c1.title	Garder l'équilibre
+ma-algebra.c1.text	Une équation est une balance : ce que vous faites d'un côté, faites-le de l'autre. Soustrayez 5 des deux côtés de x + 5 = 12 pour obtenir x = 7.
+ma-algebra.c1.example.0	x + 5 = 12
+ma-algebra.c1.example.1	x + 5 − 5 = 12 − 5
+ma-algebra.c1.example.2	x = 7
+ma-algebra.c1.viz.l.t	Côté gauche
+ma-algebra.c1.viz.l.items.0	x + 5
+ma-algebra.c1.viz.r.t	Côté droit
+ma-algebra.c2.title	Équations en deux étapes
+ma-algebra.c2.text	3x + 4 = 19 : soustrayez 4 des deux côtés (3x = 15), puis divisez les deux par 3 (x = 5). Annulez les opérations dans l'ordre inverse.
+ma-algebra.c2.example.0	3x + 4 = 19
+ma-algebra.c2.example.1	3x = 15
+ma-algebra.c2.example.2	x = 5
+ma-algebra.c2.viz.steps.0	3x + 4 = 19
+ma-algebra.c2.viz.steps.1	Soustraire 4
+ma-algebra.c2.viz.steps.2	Diviser par 3
+ma-algebra.c2.viz.steps.3	x = 5
+ma-algebra.c3.title	D'où ça vient
+ma-algebra.c3.text	Le mot « algèbre » vient d'*al-jabr*, « restauration », dans le titre du livre d'al-Khwarizmi, écrit à Bagdad au IXe siècle. Les lettres pour les inconnues sont venues plus tard, avec François Viète dans les années 1590.
+ma-algebra.c3.viz.events.0.y	~820
+ma-algebra.c3.viz.events.0.l	Livre d'al-Khwarizmi
+ma-algebra.c3.viz.events.1.l	Viète utilise des lettres
+ma-algebra.c3.viz.events.2.l	x, y, z de Descartes
+ma-algebra.c4.title	Les formules, c'est de l'algèbre
+ma-algebra.c4.text	Toute formule est de l'algèbre : aire = longueur × largeur, vitesse = distance ÷ temps. En la réarrangeant, on retrouve n'importe quel élément manquant.
+ma-algebra.c4.viz.f	d = v × t
+ma-algebra.c4.viz.items.0.s	d
+ma-algebra.c4.viz.items.0.m	distance
+ma-algebra.c4.viz.items.1.s	v
+ma-algebra.c4.viz.items.1.m	vitesse
+ma-algebra.c4.viz.items.2.s	t
+ma-algebra.c4.viz.items.2.m	temps
+ma-algebra.c4.viz.items.3.m	donc v = d ÷ t
+ma-algebra.c5.title	Développer des parenthèses
+ma-algebra.c5.text	Multipliez tout ce qui est dedans par ce qui est dehors : 3(x + 4) = 3x + 12. Utile aussi en calcul mental : 3 × 104 = 300 + 12.
+ma-algebra.c5.example.0	3(x + 4)
+ma-algebra.c5.example.1	= 3 × x + 3 × 4
+ma-algebra.c5.example.2	= 3x + 12
+ma-algebra.c5.viz.items.0.a	3 × x
+ma-algebra.c5.viz.items.0.b	3x
+ma-algebra.c5.viz.items.2.a	3(x + 4)
+ma-algebra.c5.viz.items.2.b	3x + 12
+ma-algebra.c6.title	Deux inconnues
+ma-algebra.c6.text	Deux cafés et un gâteau coûtent 5 € ; un café et un gâteau coûtent 3,50 €. Soustrayez : un café coûte 1,50 €, donc le gâteau coûte 2 €. C'est un système d'équations.
+ma-algebra.c6.example.0	2c + g = 5
+ma-algebra.c6.example.1	c + g = 3,5
+ma-algebra.c6.example.2	c = 1,5, donc g = 2
+ma-algebra.c6.viz.l.t	Deux cafés et un gâteau
+ma-algebra.c6.viz.r.t	Un café et un gâteau
+ma-algebra.c7.title	Les signes négatifs
+ma-algebra.c7.text	Soustraire un négatif revient à ajouter : 5 − (−3) = 8. Multiplier deux négatifs donne un positif : (−2) × (−3) = 6.
+ma-algebra.c8.title	Les suites sous forme de formules
+ma-algebra.c8.text	Dans 3, 5, 7, 9…, chaque terme vaut 2n + 1. Trouvez le 100e terme sans tout lister : 2 × 100 + 1 = 201.
+ma-algebra.c8.viz.f	terme = 2n + 1
+ma-algebra.c8.viz.items.0.s	n
+ma-algebra.c8.viz.items.0.m	rang dans la suite
+ma-algebra.c8.viz.items.1.s	terme 100
+ma-algebra.c9.title	Un vrai problème
+ma-algebra.c9.text	Un forfait mobile coûte 10 € par mois plus 0,05 € par Mo. Avec 15 € par mois, combien de Mo ? 10 + 0,05m = 15, donc m = 100 Mo.
+ma-algebra.c9.example.0	10 + 0,05m = 15
+ma-algebra.c9.example.1	0,05m = 5
+ma-algebra.c9.example.2	m = 100
+ma-algebra.c9.viz.unit	facture mensuelle, €
+ma-algebra.c9.viz.items.0.l	0 Mo
+ma-algebra.c9.viz.items.1.l	50 Mo
+ma-algebra.c9.viz.items.2.l	100 Mo
+ma-growth.title	La croissance exponentielle
+ma-growth.summary	Doublements, virus et logarithmes.
+ma-growth.q0.q	Un étang est entièrement couvert au jour 30, la surface doublant chaque jour. Quand était-il à moitié couvert ?
+ma-growth.q0.o0	Jour 15
+ma-growth.q0.o1	Jour 29
+ma-growth.q0.o2	Jour 20
+ma-growth.q0.x	Un doublement avant la fin.
+ma-growth.q1.q	Que vaut log₁₀ 1 000 ?
+ma-growth.q1.o0	10
+ma-growth.q1.o1	100
+ma-growth.q1.o2	3
+ma-growth.q1.x	10³ = 1 000.
+ma-growth.c0.title	Linéaire contre exponentielle
+ma-growth.c0.text	La croissance linéaire ajoute la même quantité à chaque étape ; la croissance exponentielle multiplie. L'exponentielle démarre lentement, puis explose.
+ma-growth.c0.viz.l.t	Linéaire
+ma-growth.c0.viz.l.items.0	+2 à chaque étape
+ma-growth.c0.viz.r.t	Exponentielle
+ma-growth.c0.viz.r.items.0	×2 à chaque étape
+ma-growth.c1.title	La légende de l'échiquier
+ma-growth.c1.text	Posez 1 grain de riz sur la première case, 2 sur la suivante, 4, 8… À la case 64, il faudrait environ 18 trillions de grains, bien plus que tout le riz jamais récolté.
+ma-growth.c1.viz.unit	grains sur la case n
+ma-growth.c1.viz.items.0.l	Case 5
+ma-growth.c1.viz.items.1.l	Case 10
+ma-growth.c1.viz.items.2.l	Case 15
+ma-growth.c2.title	L'étang aux nénuphars
+ma-growth.c2.text	Les nénuphars doublent chaque jour et couvrent un étang au jour 30. Quand était-il à moitié couvert ? Au jour 29. Les problèmes exponentiels paraissent petits jusqu'à la toute fin.
+ma-growth.c2.viz.events.0.y	Jour 25
+ma-growth.c2.viz.events.0.l	3 % couvert
+ma-growth.c2.viz.events.1.y	Jour 28
+ma-growth.c2.viz.events.2.y	Jour 29
+ma-growth.c2.viz.events.3.y	Jour 30
+ma-growth.c3.title	Les puissances
+ma-growth.c3.text	2⁵ signifie 2 × 2 × 2 × 2 × 2 = 32. Les puissances abrègent les multiplications répétées. Tout nombre à la puissance 0 vaut 1.
+ma-growth.c3.viz.items.0.a	2¹
+ma-growth.c3.viz.items.1.a	2⁵
+ma-growth.c3.viz.items.2.a	2¹⁰
+ma-growth.c3.viz.items.3.a	10⁶
+ma-growth.c3.viz.items.3.b	1 million
+ma-growth.c4.title	Les logarithmes
+ma-growth.c4.text	Un logarithme demande : « quelle puissance ? » log₁₀ 1 000 = 3, car 10³ = 1 000. Les logarithmes transforment d'énormes multiplications en simples additions.
+ma-growth.c4.viz.f	log₁₀ 1000 = 3
+ma-growth.c4.viz.items.0.s	car
+ma-growth.c4.viz.items.0.m	10³ = 1000
+ma-growth.c4.viz.items.1.s	le log demande
+ma-growth.c4.viz.items.1.m	quelle puissance ?
+ma-growth.c5.title	Les échelles logarithmiques autour de nous
+ma-growth.c5.text	L'échelle de Richter pour les séismes, les décibels et le pH utilisent tous des logarithmes. Chaque degré de magnitude en plus correspond à environ 32 fois plus d'énergie libérée.
+ma-growth.c5.viz.items.0.a	Magnitude +1
+ma-growth.c5.viz.items.0.b	~32× d'énergie
+ma-growth.c5.viz.items.1.a	+10 dB
+ma-growth.c5.viz.items.1.b	intensité sonore ×10
+ma-growth.c5.viz.items.2.a	pH −1
+ma-growth.c5.viz.items.2.b	10× plus acide
+ma-growth.c6.title	La propagation des virus
+ma-growth.c6.text	Si chaque personne infectée en contamine 2 autres tous les quelques jours, les cas doublent. Ramener ce nombre sous 1 fait reculer l'épidémie.
+ma-growth.c6.viz.l.t	R supérieur à 1
+ma-growth.c6.viz.l.items.0	les cas augmentent
+ma-growth.c6.viz.l.items.1	exponentiel
+ma-growth.c6.viz.r.t	R inférieur à 1
+ma-growth.c6.viz.r.items.0	les cas diminuent
+ma-growth.c6.viz.r.items.1	s'éteint
+ma-growth.c7.title	La loi de Moore
+ma-growth.c7.text	Gordon Moore a remarqué en 1965 que le nombre de transistors sur les puces doublait environ tous les deux ans. Cela a tenu pendant des décennies et alimenté la révolution numérique.
+ma-growth.c7.viz.unit	transistors
+ma-growth.c7.viz.items.0.l	Intel 4004 (1971)
+ma-growth.c7.viz.items.1.l	Pentium (1993)
+ma-growth.c7.viz.items.2.l	Apple série M (années 2020)
+ma-growth.c8.title	La demi-vie
+ma-growth.c8.text	Les substances radioactives se désintègrent de façon exponentielle. Après une demi-vie, il en reste la moitié ; après deux, un quart. La demi-vie du carbone 14, de 5 730 ans, permet de dater des vestiges anciens.
+ma-growth.c8.viz.unit	% restant
+ma-growth.c8.viz.items.1.l	1 demi-vie
+ma-growth.c9.title	Plier une feuille
+ma-growth.c9.text	Une feuille de papier d'environ 0,1 mm d'épaisseur pliée 42 fois ferait plus de 400 000 km d'épaisseur, au-delà de la Lune. En pratique, on ne peut pas plier une feuille plus de 7 fois à la main.
+ma-growth.c9.viz.items.0.v	0,1 mm
+ma-growth.c9.viz.items.0.l	papier
+ma-growth.c9.viz.items.1.v	10 pliages
+ma-growth.c9.viz.items.1.l	~10 cm
+ma-growth.c9.viz.items.2.v	42 pliages
+ma-growth.c9.viz.items.2.l	au-delà de la Lune
+ma-functions.title	Graphiques et fonctions
+ma-functions.summary	Voir les relations d'un coup d'œil.
+ma-functions.q0.q	Dans y = mx + c, que vous indique m ?
+ma-functions.q0.o0	Où la droite commence
+ma-functions.q0.o1	Sa pente
+ma-functions.q0.o2	La valeur de y
+ma-functions.q0.x	La pente.
+ma-functions.q1.q	Quelle forme dessine y = x² ?
+ma-functions.q1.o0	Une droite
+ma-functions.q1.o1	Une parabole en U
+ma-functions.q1.o2	Un cercle
+ma-functions.q1.x	Les balles lancées en suivent une.
+ma-functions.q2.q	Sur un graphique distance-temps, la pente indique…
+ma-functions.q2.o0	la distance
+ma-functions.q2.o1	la vitesse
+ma-functions.q2.o2	le temps
+ma-functions.q2.x	La distance par unité de temps.
+ma-functions.c0.title	Ce qu'est une fonction
+ma-functions.c0.text	Une fonction est une règle qui transforme chaque entrée en exactement une sortie, comme une machine : on entre 3, la règle « doubler » donne 6.
+ma-functions.c0.viz.steps.0	Entrée : 3
+ma-functions.c0.viz.steps.1	Règle : × 2
+ma-functions.c0.viz.steps.2	Sortie : 6
+ma-functions.c1.title	Les coordonnées
+ma-functions.c1.text	L'idée de Descartes : décrire n'importe quel point par deux nombres, (x, y) : la distance horizontale et la hauteur. Elle a réuni algèbre et géométrie.
+ma-functions.c1.viz.items.0.a	x
+ma-functions.c1.viz.items.0.b	horizontal
+ma-functions.c1.viz.items.1.a	y
+ma-functions.c1.viz.items.1.b	vertical
+ma-functions.c1.viz.items.2.b	l'origine
+ma-functions.c1.viz.items.3.b	3 à droite, 2 en haut
+ma-functions.c2.title	Les droites
+ma-functions.c2.text	y = mx + c trace une droite : m est la pente (son inclinaison), c l'endroit où elle coupe l'axe des y.
+ma-functions.c2.formula	y = mx + c
+ma-functions.c2.viz.f	y = mx + c
+ma-functions.c2.viz.items.0.s	m
+ma-functions.c2.viz.items.0.m	pente
+ma-functions.c2.viz.items.1.s	c
+ma-functions.c2.viz.items.1.m	coupe l'axe des y
+ma-functions.c2.viz.items.2.s	x
+ma-functions.c2.viz.items.2.m	entrée
+ma-functions.c3.title	Une course en taxi
+ma-functions.c3.text	Un taxi facture 3,50 € de prise en charge plus 1,20 € par km. Prix = 1,2 × km + 3,5 : une droite. 10 km coûtent 15,50 €.
+ma-functions.c3.viz.unit	prix, €
+ma-functions.c3.viz.items.0.l	0 km
+ma-functions.c3.viz.items.1.l	5 km
+ma-functions.c3.viz.items.2.l	10 km
+ma-functions.c4.title	La pente est un taux
+ma-functions.c4.text	La pente est un taux de variation : euros par km, km par heure, degrés par minute. Plus la droite est raide, plus le changement est rapide.
+ma-functions.c4.viz.items.0.a	Pente distance-temps
+ma-functions.c4.viz.items.0.b	vitesse
+ma-functions.c4.viz.items.1.a	Pente coût-quantité
+ma-functions.c4.viz.items.1.b	prix par article
+ma-functions.c4.viz.items.2.a	Pente température-temps
+ma-functions.c4.viz.items.2.b	vitesse de chauffe
+ma-functions.c5.title	Les courbes
+ma-functions.c5.text	y = x² trace une courbe en U appelée parabole. Une balle lancée en l'air en suit une, et les antennes paraboliques utilisent cette forme pour concentrer les signaux.
+ma-functions.c5.viz.unit	y = x²
+ma-functions.c5.viz.items.0.l	x = 0
+ma-functions.c5.viz.items.1.l	x = 1
+ma-functions.c5.viz.items.2.l	x = 2
+ma-functions.c5.viz.items.3.l	x = 3
+ma-functions.c6.title	Lire les graphiques
+ma-functions.c6.text	Avant de lire un graphique, vérifiez ce que montre chaque axe, les unités et l'échelle. Observez ensuite la forme générale avant les détails.
+ma-functions.c6.viz.items.0	Qu'y a-t-il sur chaque axe ?
+ma-functions.c6.viz.items.1	Quelles unités ?
+ma-functions.c6.viz.items.2	L'axe commence-t-il à zéro ?
+ma-functions.c6.viz.items.3	Quelle tendance générale ?
+ma-functions.c7.title	Formes de variation
+ma-functions.c7.text	Les droites montrent un changement régulier ; les courbes qui montent, une accélération ; celles qui s'aplatissent, une saturation, comme la batterie d'un téléphone en charge.
+ma-functions.c7.viz.root	Formes de variation
+ma-functions.c7.viz.items.0	Droite : régulier
+ma-functions.c7.viz.items.1	Courbe montante : accélère
+ma-functions.c7.viz.items.2	Qui s'aplatit : sature
+ma-functions.c8.title	Relations inverses
+ma-functions.c8.text	Certaines grandeurs évoluent en sens opposé : le temps de trajet diminue quand la vitesse augmente. La courbe descend sans jamais atteindre zéro.
+ma-functions.c8.viz.unit	heures pour 120 km
+ma-functions.c8.viz.items.0.l	30 km/h
+ma-functions.c8.viz.items.1.l	60 km/h
+ma-functions.c8.viz.items.2.l	120 km/h
+ma-functions.c9.title	Les fonctions en code
+ma-functions.c9.text	Les tableurs et les programmes regorgent de fonctions : =SOMME(), =MOYENNE(). Chacune prend des entrées et renvoie une sortie, exactement comme en mathématiques.
+ma-functions.c9.viz.steps.0	Cellules A1 à A10
+ma-functions.c9.viz.steps.1	Fonction SOMME
+ma-functions.c9.viz.steps.2	Un total
+ma-games.title	Théorie des jeux
+ma-games.summary	Les mathématiques de la stratégie.
+ma-games.q0.q	Dans le dilemme du prisonnier, que se passe-t-il généralement ?
+ma-games.q0.o0	Les deux se taisent
+ma-games.q0.o1	Les deux trahissent et s'en sortent moins bien
+ma-games.q0.o2	L'un est libéré
+ma-games.q0.x	La logique individuelle l'emporte sur le bien collectif.
+ma-games.q1.q	Quelle stratégie a bien marché dans les tournois d'Axelrod ?
+ma-games.q1.o0	Toujours trahir
+ma-games.q1.o1	Donnant, donnant
+ma-games.q1.o2	Au hasard
+ma-games.q1.x	Coopérer d'abord, puis copier.
+ma-games.c0.title	Ce qu'étudie la théorie des jeux
+ma-games.c0.text	La théorie des jeux étudie les décisions où votre meilleur choix dépend de ce que font les autres : affaires, politique, biologie, et même traverser la rue.
+ma-games.c0.viz.items.0	Prix des entreprises
+ma-games.c0.viz.items.1	Négociations
+ma-games.c0.viz.items.2	Élections
+ma-games.c0.viz.items.3	Comportement animal
+ma-games.c0.viz.items.4	Circulation
+ma-games.c1.title	Le dilemme du prisonnier
+ma-games.c1.text	Deux suspects peuvent se taire ou se trahir. Trahir est préférable pour chacun individuellement, pourtant si les deux trahissent, ils s'en sortent tous deux moins bien que s'ils s'étaient tus.
+ma-games.c1.viz.l.t	Les deux se taisent
+ma-games.c1.viz.l.items.0	1 an chacun
+ma-games.c1.viz.l.items.1	le mieux ensemble
+ma-games.c1.viz.r.t	Les deux trahissent
+ma-games.c1.viz.r.items.0	5 ans chacun
+ma-games.c1.viz.r.items.1	le cas habituel
+ma-games.c2.title	L'équilibre de Nash
+ma-games.c2.text	Un équilibre de Nash est une situation où personne ne gagne à changer seul de choix. John Nash, sujet du film *Un homme d'exception*, l'a défini en 1950.
+ma-games.c2.viz.steps.0	Chacun choisit une stratégie
+ma-games.c2.viz.steps.1	Nul ne peut s'améliorer seul
+ma-games.c2.viz.steps.2	Équilibre
+ma-games.c3.title	Les jeux répétés
+ma-games.c3.text	Quand le jeu se répète, la coopération peut l'emporter. Dans les tournois informatiques de Robert Axelrod, dans les années 1980, « donnant, donnant » (coopérer d'abord, puis copier l'autre) a obtenu d'excellents résultats.
+ma-games.c3.viz.steps.0	Coopérer d'abord
+ma-games.c3.viz.steps.1	Copier son dernier coup
+ma-games.c3.viz.steps.2	Pardonner vite
+ma-games.c3.viz.steps.3	La coopération se répand
+ma-games.c4.title	Jeux à somme nulle
+ma-games.c4.text	Dans les jeux à somme nulle, le gain d'un joueur est exactement la perte de l'autre, comme au poker ou aux échecs. La plupart des situations, dont le commerce, ne sont pas à somme nulle : les deux camps peuvent gagner.
+ma-games.c4.viz.l.t	Somme nulle
+ma-games.c4.viz.l.items.0	poker
+ma-games.c4.viz.l.items.1	échecs
+ma-games.c4.viz.l.items.2	un gagne, un perd
+ma-games.c4.viz.r.t	Somme positive
+ma-games.c4.viz.r.items.0	commerce
+ma-games.c4.viz.r.items.1	travail d'équipe
+ma-games.c4.viz.r.items.2	les deux gagnent
+ma-games.c5.title	Le jeu de la poule mouillée
+ma-games.c5.text	Deux conducteurs foncent l'un vers l'autre ; celui qui dévie perd la face, mais si aucun ne dévie, les deux s'écrasent. Ce jeu modélise les bras de fer entre pays ou entreprises.
+ma-games.c5.viz.items.0.a	Les deux dévient
+ma-games.c5.viz.items.0.b	tous saufs
+ma-games.c5.viz.items.1.a	Un dévie
+ma-games.c5.viz.items.1.b	l'autre gagne
+ma-games.c5.viz.items.2.a	Aucun ne dévie
+ma-games.c5.viz.items.2.b	catastrophe
+ma-games.c6.title	L'avantage du premier
+ma-games.c6.text	Dans certains jeux, jouer en premier permet de s'engager et d'orienter le résultat. Dans d'autres, attendre permet d'apprendre des erreurs du meneur.
+ma-games.c6.viz.l.t	Jouer d'abord
+ma-games.c6.viz.l.items.0	fixer la norme
+ma-games.c6.viz.l.items.1	prendre position
+ma-games.c6.viz.r.t	Attendre
+ma-games.c6.viz.r.items.0	apprendre des autres
+ma-games.c6.viz.r.items.1	éviter les erreurs coûteuses
+ma-games.c7.title	Les enchères
+ma-games.c7.text	La théorie des jeux conçoit des enchères pour des fréquences radio valant des milliards. Dans une enchère scellée au second prix, la meilleure stratégie est d'offrir exactement ce que le bien vaut pour vous.
+ma-games.c7.viz.steps.0	Chacun enchérit en secret
+ma-games.c7.viz.steps.1	Le plus offrant gagne
+ma-games.c7.viz.steps.2	Paie la deuxième meilleure offre
+ma-games.c8.title	L'évolution comme un jeu
+ma-games.c8.text	Les animaux « jouent » des stratégies façonnées par l'évolution : les faucons se battent, les colombes partagent. Un mélange des deux peut être stable dans une population.
+ma-games.c8.viz.items.0.a	Faucon
+ma-games.c8.viz.items.0.b	se bat toujours
+ma-games.c8.viz.items.1.a	Colombe
+ma-games.c8.viz.items.1.b	partage, se retire
+ma-games.c8.viz.items.2.a	Stable
+ma-games.c8.viz.items.2.b	un mélange des deux
+ma-games.c9.title	Partager l'addition
+ma-games.c9.text	Quand un groupe partage l'addition du restaurant à parts égales, chacun est tenté de commander plus, puisque les autres paient aussi. Au final, tout le monde paie davantage : une petite tragédie des biens communs.
+ma-games.c9.viz.steps.0	Partage égal
+ma-games.c9.viz.steps.1	Chacun commande en plus
+ma-games.c9.viz.steps.2	L'addition grimpe
+ma-games.c9.viz.steps.3	Tous paient plus
+ma-codes.title	Codes et cryptographie
+ma-codes.summary	Des messages secrets, de César à votre téléphone.
+ma-codes.q0.q	Qu'est-ce qui casse les chiffrements par substitution simples ?
+ma-codes.q0.o0	La force brute
+ma-codes.q0.o1	L'analyse de fréquence des lettres
+ma-codes.q0.o2	Les ordinateurs quantiques
+ma-codes.q0.x	Le E est la lettre la plus courante en anglais.
+ma-codes.q1.q	En cryptographie à clé publique, quelle clé gardez-vous secrète ?
+ma-codes.q1.o0	La clé publique
+ma-codes.q1.o1	La clé privée
+ma-codes.q1.o2	Les deux
+ma-codes.q1.x	La clé publique est partagée.
+ma-codes.c0.title	Le chiffre de César
+ma-codes.c0.text	Jules César décalait chaque lettre de trois rangs : A devient D, B devient E. Facile à utiliser, et facile à casser.
+ma-codes.c0.viz.items.0.a	A
+ma-codes.c0.viz.items.0.b	D
+ma-codes.c0.viz.items.1.a	B
+ma-codes.c0.viz.items.1.b	E
+ma-codes.c0.viz.items.2.a	HELLO
+ma-codes.c0.viz.items.2.b	KHOOR
+ma-codes.c0.viz.items.3.a	Décalage
+ma-codes.c0.viz.items.3.b	3 lettres
+ma-codes.c1.title	Casser les codes par la fréquence
+ma-codes.c1.text	En anglais, le E est la lettre la plus courante, suivie du T et du A. Comptez les lettres d'un message codé et vous pouvez deviner la substitution. Al-Kindi l'a décrit au IXe siècle.
+ma-codes.c1.viz.unit	% des lettres en anglais
+ma-codes.c1.viz.items.0.l	E
+ma-codes.c1.viz.items.1.l	T
+ma-codes.c1.viz.items.2.l	A
+ma-codes.c1.viz.items.3.l	O
+ma-codes.c1.viz.items.4.l	Z
+ma-codes.c2.title	Vigenère
+ma-codes.c2.text	Le chiffre de Vigenère utilise un mot-clé pour décaler chaque lettre d'une valeur différente, ce qui déjoue les comptages de fréquence simples. On l'a appelé « le chiffre indéchiffrable » pendant 300 ans.
+ma-codes.c2.viz.steps.0	Mot-clé : LEMON
+ma-codes.c2.viz.steps.1	Chaque lettre se décale différemment
+ma-codes.c2.viz.steps.2	Fréquence masquée
+ma-codes.c3.title	Enigma
+ma-codes.c3.text	La machine allemande Enigma utilisait des rotors qui changeaient le chiffrement à chaque frappe. Des mathématiciens polonais l'ont d'abord percée ; l'équipe d'Alan Turing à Bletchley Park l'a cassée à grande échelle.
+ma-codes.c3.viz.events.0.l	Les Polonais percent Enigma
+ma-codes.c3.viz.events.1.l	partagé avec la Grande-Bretagne
+ma-codes.c3.viz.events.2.l	La bombe de Turing
+ma-codes.c3.viz.events.3.l	fin de la guerre
+ma-codes.c4.title	Les clés
+ma-codes.c4.text	Le chiffrement moderne est public : la méthode est connue, et la sécurité vient entièrement d'une clé secrète. Une clé de 128 bits a des milliers de milliards de fois plus de combinaisons qu'il n'y a de grains de sable sur Terre.
+ma-codes.c4.viz.items.0.v	2¹²⁸
+ma-codes.c4.viz.items.0.l	clés de 128 bits possibles
+ma-codes.c4.viz.items.1.v	3,4 × 10³⁸
+ma-codes.c4.viz.items.1.l	ce nombre
+ma-codes.c4.viz.items.2.v	Des milliards d'années
+ma-codes.c4.viz.items.2.l	pour toutes les essayer
+ma-codes.c5.title	La cryptographie à clé publique
+ma-codes.c5.text	Votre téléphone utilise deux clés : une publique que n'importe qui peut utiliser pour verrouiller un message, et une privée, que vous seul avez, pour le déverrouiller. Inventée dans les années 1970.
+ma-codes.c5.viz.l.t	Clé publique
+ma-codes.c5.viz.l.items.0	partagée avec tous
+ma-codes.c5.viz.l.items.1	verrouille
+ma-codes.c5.viz.r.t	Clé privée
+ma-codes.c5.viz.r.items.0	gardée secrète
+ma-codes.c5.viz.r.items.1	déverrouille
+ma-codes.c6.title	L'analogie du cadenas
+ma-codes.c6.text	Envoyez à quelqu'un un cadenas ouvert : il verrouille une boîte avec, et vous seul avez la clé. Personne n'a eu besoin de partager un secret au préalable.
+ma-codes.c6.viz.steps.0	Envoyer le cadenas ouvert
+ma-codes.c6.viz.steps.1	Il verrouille la boîte
+ma-codes.c6.viz.steps.2	Il la renvoie
+ma-codes.c6.viz.steps.3	Vous seul pouvez l'ouvrir
+ma-codes.c7.title	Les hachages
+ma-codes.c7.text	Un hachage transforme n'importe quelle donnée en une empreinte de longueur fixe. Changez une lettre et le hachage change complètement. Les sites stockent des hachages de mots de passe, pas les mots de passe.
+ma-codes.c7.viz.steps.0	Mot de passe
+ma-codes.c7.viz.steps.1	Fonction de hachage
+ma-codes.c7.viz.steps.2	Empreinte stockée
+ma-codes.c7.viz.steps.3	Comparée à la connexion
+ma-codes.c8.title	Des mots de passe solides
+ma-codes.c8.text	La longueur l'emporte sur la complexité. Quatre mots au hasard sont plus faciles à retenir et plus durs à craquer que « P@ssw0rd1 ». Utilisez un gestionnaire de mots de passe et l'authentification à deux facteurs.
+ma-codes.c8.viz.items.0.w	P@ssw0rd1
+ma-codes.c8.viz.items.0.r	quatre mots au hasard, plus un gestionnaire
+ma-codes.c9.title	La menace quantique
+ma-codes.c9.text	De grands ordinateurs quantiques pourraient un jour casser les systèmes à clé publique actuels. De nouveaux algorithmes « post-quantiques » ont été normalisés en 2024 pour s'y préparer.
+ma-codes.c9.viz.events.0.l	RSA
+ma-codes.c9.viz.events.1.l	Algorithme quantique de Shor
+ma-codes.c9.viz.events.2.l	normes post-quantiques
+ma-greats.title	Grands mathématiciens
+ma-greats.summary	Les personnes derrière les idées.
+ma-greats.q0.q	Comment le jeune Gauss a-t-il additionné de 1 à 100 ?
+ma-greats.q0.o0	En comptant
+ma-greats.q0.o1	En formant 50 paires de 101
+ma-greats.q0.o2	Avec une calculatrice
+ma-greats.q0.x	5 050.
+ma-greats.q1.q	Qui a écrit le premier programme informatique publié ?
+ma-greats.q1.o0	Alan Turing
+ma-greats.q1.o1	Ada Lovelace
+ma-greats.q1.o2	Charles Babbage
+ma-greats.q1.x	En 1843.
+ma-greats.c0.title	Euclide
+ma-greats.c0.text	Vers 300 av. J.-C., Euclide écrit les *Éléments*, qui bâtissent la géométrie à partir de quelques axiomes de base. Ce livre a servi de manuel pendant plus de 2 000 ans.
+ma-greats.c0.viz.steps.0	Peu d'axiomes
+ma-greats.c0.viz.steps.1	Preuves logiques
+ma-greats.c0.viz.steps.2	Des centaines de théorèmes
+ma-greats.c1.title	Archimède
+ma-greats.c1.text	Archimède a estimé π, calculé des volumes de sphères, expliqué leviers et flottabilité, et se serait écrié « Eurêka ! » dans son bain.
+ma-greats.c1.viz.items.0	Estime π
+ma-greats.c1.viz.items.1	Volume de la sphère
+ma-greats.c1.viz.items.2	Loi du levier
+ma-greats.c1.viz.items.3	Flottabilité
+ma-greats.c2.title	Hypatie
+ma-greats.c2.text	Hypatie d'Alexandrie (v. 360–415) était mathématicienne, astronome et enseignante, l'une des premières femmes des mathématiques que nous connaissions par leur nom.
+ma-greats.c2.viz.events.0.y	~360
+ma-greats.c2.viz.events.0.l	naissance
+ma-greats.c2.viz.events.1.l	dirige son école
+ma-greats.c2.viz.events.2.l	tuée par une foule
+ma-greats.c3.title	Fibonacci
+ma-greats.c3.text	Léonard de Pise, dit Fibonacci, a popularisé les chiffres indo-arabes en Europe en 1202 avec son *Liber Abaci*, un livre pour les marchands.
+ma-greats.c3.viz.l.t	Romains
+ma-greats.c3.viz.l.items.0	XLVIII × XII
+ma-greats.c3.viz.l.items.1	lent
+ma-greats.c3.viz.r.t	Indo-arabes
+ma-greats.c3.viz.r.items.1	rapide
+ma-greats.c4.title	Descartes et Fermat
+ma-greats.c4.text	Au XVIIe siècle, tous deux ont relié algèbre et géométrie grâce aux coordonnées. Fermat a aussi laissé un célèbre « dernier théorème », resté sans preuve pendant 358 ans.
+ma-greats.c4.viz.events.0.l	Note de Fermat
+ma-greats.c4.viz.events.1.l	Géométrie de Descartes
+ma-greats.c4.viz.events.2.l	Preuve de Wiles publiée
+ma-greats.c5.title	Newton et Leibniz
+ma-greats.c5.text	Tous deux ont inventé le calcul infinitésimal indépendamment à la fin du XVIIe siècle et se sont âprement disputé la priorité. Nous utilisons aujourd'hui la notation de Leibniz.
+ma-greats.c5.viz.l.t	Newton
+ma-greats.c5.viz.l.items.0	motivation physique
+ma-greats.c5.viz.l.items.1	points pour les taux
+ma-greats.c5.viz.r.t	Leibniz
+ma-greats.c5.viz.r.items.0	publie en premier
+ma-greats.c5.viz.r.items.1	notation dx et ∫
+ma-greats.c6.title	Euler
+ma-greats.c6.text	Leonhard Euler fut le mathématicien le plus prolifique de tous les temps, avec plus de 800 articles, même devenu aveugle. Son identité e^iπ + 1 = 0 relie cinq nombres clés.
+ma-greats.c6.viz.f	e^iπ + 1 = 0
+ma-greats.c6.viz.items.0.s	e
+ma-greats.c6.viz.items.0.m	constante de croissance
+ma-greats.c6.viz.items.1.s	i
+ma-greats.c6.viz.items.1.m	unité imaginaire
+ma-greats.c6.viz.items.2.s	π
+ma-greats.c6.viz.items.2.m	constante du cercle
+ma-greats.c6.viz.items.3.m	1 et 0
+ma-greats.c7.title	Gauss
+ma-greats.c7.text	Enfant, Gauss aurait additionné de 1 à 100 en quelques secondes : il a associé 1+100, 2+99… en 50 paires de 101, soit 5 050.
+ma-greats.c7.example.0	1 + 100 = 101
+ma-greats.c7.example.1	50 paires
+ma-greats.c7.example.2	50 × 101 = 5 050
+ma-greats.c7.viz.items.3.a	50 paires
+ma-greats.c8.title	Ada Lovelace
+ma-greats.c8.text	En 1843, Ada Lovelace a écrit ce qui est considéré comme le premier programme informatique, pour la machine analytique de Babbage, et a prévu que les ordinateurs composeraient de la musique.
+ma-greats.c8.viz.events.0.l	Machine analytique conçue
+ma-greats.c8.viz.events.1.l	Notes de Lovelace
+ma-greats.c8.viz.events.2.y	Années 1940
+ma-greats.c8.viz.events.2.l	premiers ordinateurs
+ma-greats.c9.title	Les grands modernes
+ma-greats.c9.text	Emmy Noether a relié symétrie et lois de conservation ; Ramanujan a trouvé des formules stupéfiantes avec peu de formation formelle ; Maryam Mirzakhani fut la première femme à recevoir la médaille Fields, en 2014.
+ma-greats.c9.viz.items.0.a	Emmy Noether
+ma-greats.c9.viz.items.0.b	symétrie et physique
+ma-greats.c9.viz.items.1.a	Ramanujan
+ma-greats.c9.viz.items.1.b	séries infinies
+ma-greats.c9.viz.items.2.a	Maryam Mirzakhani
+ma-greats.c9.viz.items.2.b	médaille Fields 2014
+ma-calculus.title	L'intuition du calcul infinitésimal
+ma-calculus.summary	Les mathématiques du changement.
+ma-calculus.q0.q	Sur un graphique vitesse-temps, que donne l'aire sous la courbe ?
+ma-calculus.q0.o0	L'accélération
+ma-calculus.q0.o1	La distance parcourue
+ma-calculus.q0.o2	Le temps
+ma-calculus.q0.x	Les intégrales accumulent.
+ma-calculus.q1.q	Au sommet d'une courbe lisse, la pente est…
+ma-calculus.q1.o0	infinie
+ma-calculus.q1.o1	nulle
+ma-calculus.q1.o2	négative
+ma-calculus.q1.x	Les sommets et les creux ont une pente nulle.
+ma-calculus.c0.title	Deux grandes questions
+ma-calculus.c0.text	Le calcul infinitésimal répond à deux questions : à quelle vitesse quelque chose change-t-il en ce moment (dérivées), et combien s'est accumulé au fil du temps (intégrales).
+ma-calculus.c0.viz.l.t	Dérivées
+ma-calculus.c0.viz.l.items.0	taux de variation
+ma-calculus.c0.viz.l.items.1	vitesse depuis la distance
+ma-calculus.c0.viz.r.t	Intégrales
+ma-calculus.c0.viz.r.items.0	accumulation
+ma-calculus.c0.viz.r.items.1	distance depuis la vitesse
+ma-calculus.c1.title	La vitesse instantanée
+ma-calculus.c1.text	Le compteur de votre voiture indique la vitesse à un instant donné, pas une moyenne. Le calcul infinitésimal la définit en mesurant sur des intervalles de temps de plus en plus courts.
+ma-calculus.c1.viz.steps.0	Moyenne sur 1 min
+ma-calculus.c1.viz.steps.1	Sur 1 s
+ma-calculus.c1.viz.steps.2	Sur 0,001 s
+ma-calculus.c1.viz.steps.3	Vitesse instantanée
+ma-calculus.c2.title	Pente d'une courbe
+ma-calculus.c2.text	Une dérivée est la pente d'une courbe en un point : en zoomant assez, toute courbe lisse ressemble à une droite.
+ma-calculus.c2.viz.steps.0	Courbe
+ma-calculus.c2.viz.steps.1	Zoomer
+ma-calculus.c2.viz.steps.2	Paraît droite
+ma-calculus.c2.viz.steps.3	Sa pente est la dérivée
+ma-calculus.c3.title	Aire sous une courbe
+ma-calculus.c3.text	Une intégrale additionne de minuscules tranches. Sur un graphique vitesse-temps, l'aire sous la courbe est la distance parcourue.
+ma-calculus.c3.viz.steps.0	Graphique de vitesse
+ma-calculus.c3.viz.steps.1	Découper en fines bandes
+ma-calculus.c3.viz.steps.2	Additionner leurs aires
+ma-calculus.c3.viz.steps.3	Distance totale
+ma-calculus.c4.title	Des opposés
+ma-calculus.c4.text	Dériver et intégrer s'annulent mutuellement : c'est le théorème fondamental du calcul. Distance → vitesse → accélération, et retour.
+ma-calculus.c4.viz.steps.0	Distance
+ma-calculus.c4.viz.steps.1	Dériver : vitesse
+ma-calculus.c4.viz.steps.2	Dériver : accélération
+ma-calculus.c4.viz.steps.3	Intégrer en sens inverse
+ma-calculus.c5.title	Maxima et minima
+ma-calculus.c5.text	Là où une courbe atteint un sommet ou un creux, sa pente est nulle. C'est ainsi que les ingénieurs trouvent la poutre la plus solide ou la conception la moins chère.
+ma-calculus.c5.viz.items.0.a	Pente nulle
+ma-calculus.c5.viz.items.0.b	sommet ou creux
+ma-calculus.c5.viz.items.1.a	Sommet
+ma-calculus.c5.viz.items.1.b	maximum
+ma-calculus.c5.viz.items.2.a	Creux
+ma-calculus.c5.viz.items.2.b	minimum
+ma-calculus.c6.title	La plus grande boîte
+ma-calculus.c6.text	Découpez des carrés aux coins d'un carton de 30 cm et pliez une boîte. Le calcul montre que des carrés de 5 cm donnent le plus grand volume : 2 000 cm³.
+ma-calculus.c6.viz.unit	volume, cm³
+ma-calculus.c6.viz.items.0.l	Coupe 3 cm
+ma-calculus.c6.viz.items.1.l	Coupe 5 cm
+ma-calculus.c6.viz.items.2.l	Coupe 7 cm
+ma-calculus.c7.title	Le changement partout
+ma-calculus.c7.text	Le calcul infinitésimal modélise la croissance des populations, le chauffage et le refroidissement, les intérêts, les trajectoires de fusées et l'apprentissage automatique, qui utilise des dérivées pour ajuster ses poids.
+ma-calculus.c7.viz.items.0	Physique et ingénierie
+ma-calculus.c7.viz.items.1	Économie
+ma-calculus.c7.viz.items.2	Dosage des médicaments
+ma-calculus.c7.viz.items.3	Apprentissage automatique
+ma-calculus.c8.title	Les limites
+ma-calculus.c8.text	Le calcul infinitésimal repose sur les limites : la valeur dont on s'approche quand quelque chose devient très petit. 1/2 + 1/4 + 1/8… tend vers 1, bien qu'aucune étape ne l'atteigne.
+ma-calculus.c8.viz.unit	total cumulé
+ma-calculus.c8.viz.items.0.l	1 terme
+ma-calculus.c8.viz.items.1.l	2 termes
+ma-calculus.c8.viz.items.2.l	3 termes
+ma-calculus.c8.viz.items.3.l	5 termes
+ma-calculus.c9.title	Qui l'a inventé ?
+ma-calculus.c9.text	Newton et Leibniz ont développé le calcul infinitésimal indépendamment entre 1660 et 1680, même si Archimède et d'autres avaient utilisé des idées semblables des siècles plus tôt.
+ma-calculus.c9.viz.events.0.y	~250 av. J.-C.
+ma-calculus.c9.viz.events.0.l	Tranches d'Archimède
+ma-calculus.c9.viz.events.1.l	Méthodes de Newton
+ma-calculus.c9.viz.events.2.l	Leibniz publie
+ma-calculus.c9.viz.events.3.y	Années 1820
+ma-calculus.c9.viz.events.3.l	limites rendues rigoureuses
+ma-networks.title	Réseaux et graphes
+ma-networks.summary	Ponts, cartes et réseaux sociaux.
+ma-networks.q0.q	Qui a fondé la théorie des graphes avec les ponts de Königsberg ?
+ma-networks.q0.o0	Newton
+ma-networks.q0.o1	Euler
+ma-networks.q0.o2	Gauss
+ma-networks.q0.x	En 1736.
+ma-networks.q1.q	Combien de couleurs suffisent pour colorier n'importe quelle carte ?
+ma-networks.q1.o0	3
+ma-networks.q1.o1	4
+ma-networks.q1.o2	5
+ma-networks.q1.x	Démontré en 1976.
+ma-networks.q2.q	Qu'est-ce qui faisait fonctionner le PageRank de Google ?
+ma-networks.q2.o0	Le nombre de mots-clés
+ma-networks.q2.o1	Les liens traités comme des votes
+ma-networks.q2.o2	La longueur de la page
+ma-networks.q2.x	Les liens de pages importantes comptent davantage.
+ma-networks.c0.title	Les ponts de Königsberg
+ma-networks.c0.text	En 1736, Euler a prouvé qu'on ne pouvait pas traverser une seule fois chacun des sept ponts de Königsberg. Pour le résoudre, il a réduit la ville à des points et des lignes : la théorie des graphes était née.
+ma-networks.c0.viz.steps.0	Plan de la ville
+ma-networks.c0.viz.steps.1	Les terres deviennent des points
+ma-networks.c0.viz.steps.2	Les ponts deviennent des lignes
+ma-networks.c0.viz.steps.3	Compter les lignes à chaque point
+ma-networks.c1.title	Nœuds et arêtes
+ma-networks.c1.text	Un graphe est un ensemble de nœuds (points) reliés par des arêtes (lignes). Villes et routes, personnes et amitiés, pages web et liens sont tous des graphes.
+ma-networks.c1.viz.items.0.a	Villes
+ma-networks.c1.viz.items.0.b	nœuds
+ma-networks.c1.viz.items.1.a	Routes
+ma-networks.c1.viz.items.1.b	arêtes
+ma-networks.c1.viz.items.2.a	Personnes
+ma-networks.c1.viz.items.2.b	nœuds
+ma-networks.c1.viz.items.3.a	Amitiés
+ma-networks.c1.viz.items.3.b	arêtes
+ma-networks.c2.title	La règle d'Euler
+ma-networks.c2.text	On peut parcourir un réseau en utilisant chaque arête une seule fois uniquement si zéro ou deux nœuds ont un nombre impair d'arêtes. Königsberg avait quatre nœuds impairs.
+ma-networks.c2.viz.items.0.a	0 nœud impair
+ma-networks.c2.viz.items.0.b	possible, retour au départ
+ma-networks.c2.viz.items.1.a	2 nœuds impairs
+ma-networks.c2.viz.items.1.b	possible, départ à l'un
+ma-networks.c2.viz.items.2.a	4 nœuds impairs
+ma-networks.c2.viz.items.2.b	impossible
+ma-networks.c3.title	Plus courts chemins
+ma-networks.c3.text	Votre application de cartes trouve l'itinéraire le plus rapide avec des algorithmes comme celui de Dijkstra (1956), qui explore à partir du départ en prolongeant toujours le plus court chemin trouvé jusque-là.
+ma-networks.c3.viz.steps.0	Départ
+ma-networks.c3.viz.steps.1	Explorer le plus proche non visité
+ma-networks.c3.viz.steps.2	Mettre à jour les distances
+ma-networks.c3.viz.steps.3	Répéter jusqu'à l'arrivée
+ma-networks.c4.title	Le voyageur de commerce

@@ -91,7 +91,7 @@ ph-energy.c8.text	Quand l'eau s'évapore, les molécules les plus rapides s'éch
 ph-energy.c8.viz.steps.0	Sueur sur la peau
 ph-energy.c8.viz.steps.1	Les molécules rapides s'évaporent
 ph-energy.c8.viz.steps.2	Elles emportent la chaleur
-ph-energy.c8.viz.steps.3	La peau se rafraîchit
+ph-energy.c8.viz.steps.3	Peau fraîche
 ph-energy.c9.title	D'où vient l'énergie de la Terre
 ph-energy.c9.text	Presque toute l'énergie que nous utilisons vient du Soleil : nourriture, vent, hydraulique, solaire et même combustibles fossiles (lumière solaire ancienne stockée par les plantes). Les exceptions sont l'énergie nucléaire, géothermique et marémotrice.
 ph-energy.c9.viz.l.t	Vient du Soleil
@@ -174,7 +174,7 @@ ph-waves.c6.title	Interférences
 ph-waves.c6.text	Quand deux ondes se rencontrent, elles s'additionnent : crête sur crête donne une onde plus grande, crête sur creux s'annule. Les casques à réduction de bruit émettent une copie inversée du bruit extérieur pour l'annuler.
 ph-waves.c6.viz.l.t	Constructives
 ph-waves.c6.viz.l.items.0	en phase
-ph-waves.c6.viz.l.items.1	les ondes s'additionnent
+ph-waves.c6.viz.l.items.1	ondes additionnées
 ph-waves.c6.viz.l.items.2	plus fort
 ph-waves.c6.viz.r.t	Destructives
 ph-waves.c6.viz.r.items.0	en opposition
@@ -248,3 +248,603 @@ ph-motion.c3.title	La chute libre
 ph-motion.c3.text	Près de la surface de la Terre, les objets en chute gagnent environ 9,81 m/s de vitesse chaque seconde, si la résistance de l'air est négligeable. Après 1 s, vous tombez à environ 35 km/h ; après 3 s, à plus de 100 km/h.
 ph-motion.c3.viz.unit	vitesse en km/h
 ph-motion.c3.viz.items.0.l	1 s
+ph-motion.c3.viz.items.1.l	2 s
+ph-motion.c3.viz.items.2.l	3 s
+ph-motion.c4.title	L'intuition de Galilée
+ph-motion.c4.text	Sans résistance de l'air, les objets lourds et légers tombent à la même vitesse. Les astronautes sur la Lune l'ont montré en 1971 en lâchant un marteau et une plume : ils ont touché le sol ensemble.
+ph-motion.c4.viz.l.t	Avec l'air
+ph-motion.c4.viz.l.items.0	la plume flotte
+ph-motion.c4.viz.l.items.1	l'air domine
+ph-motion.c4.viz.r.t	Dans le vide
+ph-motion.c4.viz.r.items.0	marteau et plume tombent ensemble
+ph-motion.c5.title	La vitesse limite
+ph-motion.c5.text	Quand un objet en chute accélère, la résistance de l'air augmente jusqu'à égaler le poids. Il cesse alors d'accélérer. Un parachutiste atteint environ 200 km/h à plat ventre ; un parachute la ramène à environ 20 km/h.
+ph-motion.c5.viz.unit	km/h (approx.)
+ph-motion.c5.viz.items.0.l	Goutte de pluie
+ph-motion.c5.viz.items.1.l	Parachute
+ph-motion.c5.viz.items.2.l	Parachutiste à plat
+ph-motion.c5.viz.items.3.l	Parachutiste tête en bas
+ph-motion.c6.title	Distance d'arrêt
+ph-motion.c6.text	La distance d'arrêt est la distance de réaction plus la distance de freinage. La distance de freinage croît avec le carré de la vitesse : si la vitesse double, elle est multipliée par quatre.
+ph-motion.c6.example.0	50 km/h contre 100 km/h
+ph-motion.c6.example.1	13,9² ÷ 14 contre 27,8² ÷ 14
+ph-motion.c6.example.2	≈ 14 m contre 55 m de freinage
+ph-motion.c6.viz.f	d freinage = v² ÷ (2 × a)
+ph-motion.c6.viz.items.0.s	v
+ph-motion.c6.viz.items.0.m	vitesse (m/s)
+ph-motion.c6.viz.items.1.s	a
+ph-motion.c6.viz.items.1.m	décélération (~7 m/s² route sèche)
+ph-motion.c7.title	Temps de réaction
+ph-motion.c7.text	Un conducteur moyen met environ 1 seconde à réagir. À 120 km/h, la voiture parcourt plus de 33 m avant même que les freins ne commencent à agir. Le téléphone au volant allonge beaucoup ce délai.
+ph-motion.c7.viz.unit	mètres avant le freinage (réaction 1 s)
+ph-motion.c7.viz.items.0.l	50 km/h
+ph-motion.c7.viz.items.1.l	90 km/h
+ph-motion.c7.viz.items.2.l	120 km/h
+ph-motion.c8.title	Mouvement relatif
+ph-motion.c8.text	Le mouvement dépend de l'observateur. Dans un train à 200 km/h, une tasse de café est immobile par rapport à vous, mais file à toute vitesse par rapport au sol. Il n'existe pas d'immobilité absolue.
+ph-motion.c8.viz.items.0.a	tasse / passager
+ph-motion.c8.viz.items.0.b	0 km/h
+ph-motion.c8.viz.items.1.a	tasse / sol
+ph-motion.c8.viz.items.1.b	200 km/h
+ph-motion.c8.viz.items.2.a	Terre / Soleil
+ph-motion.c8.viz.items.2.b	~107 000 km/h
+ph-motion.c9.title	Graphiques du mouvement
+ph-motion.c9.text	Sur un graphique distance–temps, la pente est la vitesse. Sur un graphique vitesse–temps, la pente est l'accélération et l'aire sous la courbe est la distance parcourue.
+ph-motion.c9.viz.items.0.a	pente distance–temps
+ph-motion.c9.viz.items.0.b	vitesse
+ph-motion.c9.viz.items.1.a	pente vitesse–temps
+ph-motion.c9.viz.items.1.b	accélération
+ph-motion.c9.viz.items.2.a	aire sous v–t
+ph-motion.c9.viz.items.2.b	distance
+ph-newton.title	Les lois de Newton
+ph-newton.summary	Les trois règles derrière chaque poussée et chaque traction.
+ph-newton.q0.q	Une voiture de 1 000 kg soumise à une force nette de 2 000 N accélère de…
+ph-newton.q0.o0	0,5 m/s²
+ph-newton.q0.o1	2 m/s²
+ph-newton.q0.o2	2 000 m/s²
+ph-newton.q0.x	a = F ÷ m.
+ph-newton.q1.q	Pourquoi les airbags réduisent-ils les blessures ?
+ph-newton.q1.o0	Ils sont mous
+ph-newton.q1.o1	Ils étalent l'arrêt sur plus de temps, ce qui réduit la force maximale
+ph-newton.q1.o2	Ils ajoutent de la masse
+ph-newton.q1.x	Un temps d'arrêt plus long signifie une force plus faible.
+ph-newton.q2.q	Quelle loi explique la propulsion d'une fusée ?
+ph-newton.q2.o0	La première
+ph-newton.q2.o1	La deuxième
+ph-newton.q2.o2	La troisième
+ph-newton.q2.x	Action et réaction.
+ph-newton.c0.title	Première loi : l'inertie
+ph-newton.c0.text	Un objet continue de faire ce qu'il fait, rester immobile ou se déplacer en ligne droite à vitesse constante, tant qu'aucune force nette ne s'exerce sur lui. C'est pourquoi les passagers sont projetés en avant quand un bus freine.
+ph-newton.c0.viz.steps.0	Le bus freine
+ph-newton.c0.viz.steps.1	Votre corps continue d'avancer
+ph-newton.c0.viz.steps.2	La ceinture exerce la force
+ph-newton.c0.viz.steps.3	Vous vous arrêtez avec le bus
+ph-newton.c1.title	Deuxième loi : F = m × a
+ph-newton.c1.text	L'accélération d'un objet est proportionnelle à la force qui s'exerce sur lui et inversement proportionnelle à sa masse. Poussez deux fois plus fort, il accélère deux fois plus vite ; doublez la masse, l'accélération est divisée par deux.
+ph-newton.c1.example.0	Voiture de 1 500 kg, force nette de 3 000 N
+ph-newton.c1.example.1	3 000 ÷ 1 500
+ph-newton.c1.example.2	a = 2 m/s²
+ph-newton.c1.viz.f	F = m × a
+ph-newton.c1.viz.items.0.s	F
+ph-newton.c1.viz.items.0.m	force nette (N)
+ph-newton.c1.viz.items.1.s	m
+ph-newton.c1.viz.items.1.m	masse (kg)
+ph-newton.c1.viz.items.2.s	a
+ph-newton.c1.viz.items.2.m	accélération (m/s²)
+ph-newton.c2.title	Troisième loi : action et réaction
+ph-newton.c2.text	Chaque force a une partenaire égale et opposée. Quand vous poussez un mur, le mur vous repousse. Les fusées projettent des gaz vers l'arrière ; les gaz poussent la fusée vers l'avant.
+ph-newton.c2.viz.l.t	La fusée pousse les gaz
+ph-newton.c2.viz.l.items.0	vers le bas et l'arrière
+ph-newton.c2.viz.r.t	Les gaz poussent la fusée
+ph-newton.c2.viz.r.items.0	vers le haut et l'avant
+ph-newton.c3.title	Encore masse et poids
+ph-newton.c3.text	La masse (kg) est la quantité de matière et ne change pas. Le poids est la force de gravité qui s'exerce sur elle et dépend de l'endroit où vous êtes : sur la Lune, vous pèseriez environ six fois moins.
+ph-newton.c3.viz.unit	poids d'une personne de 70 kg (N)
+ph-newton.c3.viz.items.0.l	Lune
+ph-newton.c3.viz.items.1.l	Mars
+ph-newton.c3.viz.items.2.l	Terre
+ph-newton.c3.viz.items.3.l	Jupiter
+ph-newton.c4.title	Ceintures de sécurité et airbags
+ph-newton.c4.text	Dans un choc, votre corps doit perdre sa vitesse. Étaler cela sur plus de temps et de distance donne une force plus faible. Les ceintures s'étirent un peu et les airbags amortissent, ce qui réduit considérablement la force maximale.
+ph-newton.c4.viz.f	F = m × Δv ÷ t
+ph-newton.c4.viz.items.0.s	arrêt plus long t
+ph-newton.c4.viz.items.0.m	force F plus faible
+ph-newton.c5.title	Mouvement circulaire
+ph-newton.c5.text	Se déplacer en cercle exige une force dirigée vers le centre (force centripète). Dans un rond-point, elle vient de l'adhérence des pneus ; pour la Lune, de la gravité terrestre. Sans elle, les objets partent en ligne droite.
+ph-newton.c5.viz.f	F = m × v² ÷ r
+ph-newton.c5.viz.items.0.s	m
+ph-newton.c5.viz.items.0.m	masse
+ph-newton.c5.viz.items.1.s	v
+ph-newton.c5.viz.items.1.m	vitesse
+ph-newton.c5.viz.items.2.s	r
+ph-newton.c5.viz.items.2.m	rayon du virage
+ph-newton.c6.title	La « force centrifuge »
+ph-newton.c6.text	Dans une voiture qui tourne, vous vous sentez poussé vers l'extérieur. En réalité, votre corps cherche à aller tout droit (inertie) pendant que la voiture tourne sous vous. La « force centrifuge » est la façon dont on le ressent depuis l'intérieur du référentiel en rotation.
+ph-newton.c6.viz.items.0.w	une force vous projette vers l'extérieur
+ph-newton.c6.viz.items.0.r	votre corps continue tout droit pendant que la voiture tourne
+ph-newton.c7.title	Frottements et Newton
+ph-newton.c7.text	Sur Terre, les choses ralentissent à cause des frottements et de la résistance de l'air, et non parce que le mouvement s'arrête naturellement. Dans l'espace, un objet qu'on pousse dérive indéfiniment.
+ph-newton.c7.viz.l.t	Sur Terre
+ph-newton.c7.viz.l.items.0	frottements et air freinent
+ph-newton.c7.viz.l.items.1	le mouvement semble exiger une poussée
+ph-newton.c7.viz.r.t	Dans l'espace
+ph-newton.c7.viz.r.items.0	presque pas de frottements
+ph-newton.c7.viz.r.items.1	le mouvement continue
+ph-newton.c8.title	Les lois de Newton dans le sport
+ph-newton.c8.text	Les footballeurs poussent le sol vers l'arrière pour accélérer vers l'avant ; les joueurs plus lourds sont plus difficiles à arrêter ; un tir bien synchronisé transmet plus de force grâce à un contact plus long.
+ph-newton.c8.viz.items.0	Pousser le sol pour courir
+ph-newton.c8.viz.items.1	Corps plus lourd, plus d'inertie
+ph-newton.c8.viz.items.2	Le geste prolongé allonge le contact
+ph-newton.c8.viz.items.3	Genoux fléchis à la réception, moins de force
+ph-newton.c9.title	Principia, 1687
+ph-newton.c9.text	Isaac Newton a publié ses lois du mouvement et de la gravitation universelle dans les « Principia Mathematica » en 1687. Elles expliquaient la chute des pommes et les orbites des planètes avec les mêmes règles.
+ph-newton.c9.viz.events.0.l	Lois de Kepler
+ph-newton.c9.viz.events.1.l	Galilée et le mouvement
+ph-newton.c9.viz.events.2.l	Principia de Newton
+ph-newton.c9.viz.events.3.l	Relativité d'Einstein
+ph-gravity.title	Gravité et orbites
+ph-gravity.summary	Pourquoi la Lune ne tombe pas (en fait si, mais elle rate la Terre).
+ph-gravity.q0.q	Pourquoi les astronautes flottent-ils dans l'ISS ?
+ph-gravity.q0.o0	Il n'y a pas de gravité
+ph-gravity.q0.o1	Eux et la station sont en chute libre continue ensemble
+ph-gravity.q0.o2	Ils sont trop haut
+ph-gravity.q0.x	La gravité est encore présente à environ 90 %.
+ph-gravity.q1.q	Si l'on double la distance entre deux masses, leur attraction gravitationnelle devient…
+ph-gravity.q1.o0	Moitié
+ph-gravity.q1.o1	Un quart
+ph-gravity.q1.o2	Double
+ph-gravity.q1.x	Loi en inverse du carré.
+ph-gravity.q2.q	Qu'est-ce qui cause les marées ?
+ph-gravity.q2.o0	Le vent
+ph-gravity.q2.o1	L'attraction inégale de la Lune (et du Soleil) sur la Terre
+ph-gravity.q2.o2	La seule rotation de la Terre
+ph-gravity.q2.x	La gravité différentielle crée deux renflements.
+ph-gravity.c0.title	La gravitation universelle
+ph-gravity.c0.text	Toute masse attire toute autre masse. La force croît avec les deux masses et diminue avec le carré de la distance : si la distance double, la force est divisée par quatre.
+ph-gravity.c0.viz.f	F = G × m₁ × m₂ ÷ r²
+ph-gravity.c0.viz.items.0.s	G
+ph-gravity.c0.viz.items.0.m	constante gravitationnelle
+ph-gravity.c0.viz.items.1.s	m
+ph-gravity.c0.viz.items.1.m	masses
+ph-gravity.c0.viz.items.2.s	r
+ph-gravity.c0.viz.items.2.m	distance entre centres
+ph-gravity.c1.title	Les orbites sont des chutes
+ph-gravity.c1.text	Un satellite en orbite tombe en permanence vers la Terre, mais il se déplace latéralement si vite que le sol se dérobe sous lui en s'incurvant. Newton imaginait un canon au sommet d'une montagne tirant de plus en plus fort.
+ph-gravity.c1.viz.steps.0	Tir lent : tombe tout près
+ph-gravity.c1.viz.steps.1	Plus vite : tombe plus loin
+ph-gravity.c1.viz.steps.2	Assez vite : la Terre s'incurve
+ph-gravity.c1.viz.steps.3	Orbite
+ph-gravity.c2.title	Vitesses orbitales
+ph-gravity.c2.text	La Station spatiale internationale orbite à environ 400 km d'altitude, à environ 28 000 km/h, et fait le tour de la Terre en 90 minutes environ. Son équipage voit environ 16 levers de soleil par jour.
+ph-gravity.c2.viz.items.0.v	400 km
+ph-gravity.c2.viz.items.0.l	altitude de l'ISS
+ph-gravity.c2.viz.items.1.v	28 000 km/h
+ph-gravity.c2.viz.items.1.l	vitesse
+ph-gravity.c2.viz.items.2.v	90 min
+ph-gravity.c2.viz.items.2.l	une orbite
+ph-gravity.c3.title	L'apesanteur
+ph-gravity.c3.text	Les astronautes en orbite ne sont pas hors de la gravité : à l'altitude de l'ISS, elle est d'environ 90 % de celle du sol. Ils flottent parce qu'eux et la station tombent ensemble.
+ph-gravity.c3.viz.l.t	Idée reçue
+ph-gravity.c3.viz.l.items.0	pas de gravité dans l'espace
+ph-gravity.c3.viz.r.t	Réalité
+ph-gravity.c3.viz.r.items.0	90 % de gravité
+ph-gravity.c3.viz.r.items.1	tout tombe ensemble
+ph-gravity.c4.title	L'orbite géostationnaire
+ph-gravity.c4.text	À environ 35 786 km au-dessus de l'équateur, un satellite met exactement un jour pour orbiter, donc il reste au-dessus du même point. Les satellites de télévision et de météo l'utilisent.
+ph-gravity.c4.viz.unit	altitude (km)
+ph-gravity.c4.viz.items.0.l	ISS
+ph-gravity.c4.viz.items.1.l	Satellites GPS
+ph-gravity.c4.viz.items.2.l	Géostationnaire
+ph-gravity.c5.title	Les marées
+ph-gravity.c5.text	La gravité de la Lune attire plus fortement le côté proche de la Terre que le côté opposé, ce qui étire les océans en deux renflements. Comme la Terre tourne, la plupart des côtes connaissent deux marées hautes par jour.
+ph-gravity.c5.viz.steps.0	La Lune tire plus le côté proche
+ph-gravity.c5.viz.steps.1	Deux renflements océaniques
+ph-gravity.c5.viz.steps.2	La Terre tourne dessous
+ph-gravity.c5.viz.steps.3	Deux marées hautes par jour
+ph-gravity.c6.title	Vitesse de libération
+ph-gravity.c6.text	Pour quitter la Terre sans poussée supplémentaire, il faudrait environ 11,2 km/s (40 300 km/h). Les fusées ne l'atteignent pas instantanément ; elles brûlent pendant des minutes, en montant et en accélérant.
+ph-gravity.c6.viz.unit	vitesse de libération (km/s)
+ph-gravity.c6.viz.items.0.l	Lune
+ph-gravity.c6.viz.items.1.l	Mars
+ph-gravity.c6.viz.items.2.l	Terre
+ph-gravity.c6.viz.items.3.l	Jupiter
+ph-gravity.c7.title	Les lois de Kepler
+ph-gravity.c7.text	Les planètes décrivent des ellipses dont le Soleil occupe un foyer ; elles accélèrent à l'approche du Soleil ; et plus une planète est lointaine, plus son année est longue, selon une règle précise.
+ph-gravity.c7.viz.items.0	Orbites en ellipses
+ph-gravity.c7.viz.items.1	Plus rapide près du Soleil
+ph-gravity.c7.viz.items.2	Années plus longues au loin
+ph-gravity.c7.viz.items.3	T² ∝ r³
+ph-gravity.c8.title	Assistance gravitationnelle
+ph-gravity.c8.text	Les sondes spatiales frôlent les planètes pour gagner de la vitesse, comme une balle qui rebondit sur un train en marche. Voyager a utilisé Jupiter et Saturne pour atteindre les confins du Système solaire.
+ph-gravity.c8.viz.steps.0	Approche d'une planète
+ph-gravity.c8.viz.steps.1	Virage autour d'elle
+ph-gravity.c8.viz.steps.2	Elle cède un peu d'énergie orbitale
+ph-gravity.c8.viz.steps.3	Départ plus rapide
+ph-gravity.c9.title	Les ondes gravitationnelles
+ph-gravity.c9.text	Einstein a prédit que les masses en accélération font onduler l'espace-temps. En 2015, les détecteurs LIGO ont mesuré pour la première fois ces ondes, issues de la fusion de deux trous noirs à plus d'un milliard d'années-lumière.
+ph-gravity.c9.viz.events.0.l	Prédites par Einstein
+ph-gravity.c9.viz.events.1.l	preuve indirecte : un couple de pulsars
+ph-gravity.c9.viz.events.2.l	LIGO les détecte directement
+ph-gravity.c9.viz.events.3.l	Prix Nobel
+ph-momentum.title	Quantité de mouvement et collisions
+ph-momentum.summary	Pourquoi ce qui est lourd et rapide est difficile à arrêter.
+ph-momentum.q0.q	Une balle de 0,5 kg à 10 m/s a une quantité de mouvement de…
+ph-momentum.q0.o0	20 kg·m/s
+ph-momentum.q0.o1	5 kg·m/s
+ph-momentum.q0.o2	0,05 kg·m/s
+ph-momentum.q0.x	0,5 × 10 = 5.
+ph-momentum.q1.q	Pourquoi les patineurs tournent-ils plus vite quand ils rentrent les bras ?
+ph-momentum.q1.o0	Moins de frottements
+ph-momentum.q1.o1	Le moment cinétique se conserve alors que leur forme devient plus compacte
+ph-momentum.q1.o2	Ils poussent plus fort
+ph-momentum.q1.x	Rayon plus petit, rotation plus rapide.
+ph-momentum.q2.q	À quoi servent les zones de déformation ?
+ph-momentum.q2.o0	À alléger les voitures
+ph-momentum.q2.o1	À allonger la durée du choc pour réduire les forces
+ph-momentum.q2.o2	À écarter les voitures par rebond
+ph-momentum.q2.x	Même variation de quantité de mouvement, force plus faible.
+ph-momentum.c0.title	Quantité de mouvement
+ph-momentum.c0.text	La quantité de mouvement est la masse multipliée par la vitesse. Un camion lent et une balle rapide peuvent avoir tous deux une grande quantité de mouvement.
+ph-momentum.c0.example.0	Voiture de 1 500 kg à 20 m/s
+ph-momentum.c0.example.1	1 500 × 20
+ph-momentum.c0.example.2	= 30 000 kg·m/s
+ph-momentum.c0.viz.f	p = m × v
+ph-momentum.c0.viz.items.0.s	p
+ph-momentum.c0.viz.items.0.m	quantité de mvt (kg·m/s)
+ph-momentum.c0.viz.items.1.s	m
+ph-momentum.c0.viz.items.1.m	masse
+ph-momentum.c0.viz.items.2.s	v
+ph-momentum.c0.viz.items.2.m	vitesse
+ph-momentum.c1.title	Conservation de la quantité de mouvement
+ph-momentum.c1.text	Dans une collision sans force extérieure, la quantité de mouvement totale avant est égale à celle après. C'est ainsi que les enquêteurs reconstituent les accidents.
+ph-momentum.c1.viz.steps.0	Quantité de mvt avant
+ph-momentum.c1.viz.steps.1	Collision
+ph-momentum.c1.viz.steps.2	Quantité de mvt après
+ph-momentum.c1.viz.steps.3	Même total
+ph-momentum.c2.title	Élastique et inélastique
+ph-momentum.c2.text	Dans les collisions élastiques, les objets rebondissent et l'énergie cinétique se conserve (les boules de billard, presque). Dans les collisions inélastiques, ils se déforment ou restent collés et l'énergie se transforme en chaleur et en son (accidents de voiture).
+ph-momentum.c2.viz.l.t	Élastique
+ph-momentum.c2.viz.l.items.0	rebondissent
+ph-momentum.c2.viz.l.items.1	peu d'énergie perdue
+ph-momentum.c2.viz.l.items.2	boules de billard
+ph-momentum.c2.viz.r.t	Inélastique
+ph-momentum.c2.viz.r.items.0	se déforment ou collent
+ph-momentum.c2.viz.r.items.1	énergie en chaleur et dégâts
+ph-momentum.c2.viz.r.items.2	accidents de voiture
+ph-momentum.c3.title	L'impulsion
+ph-momentum.c3.text	Changer la quantité de mouvement demande une force appliquée pendant un certain temps : c'est l'impulsion. Le même changement peut venir d'une grande force sur un temps court ou d'une petite force sur un temps long.
+ph-momentum.c3.viz.f	F × t = Δp
+ph-momentum.c3.viz.items.0.s	F
+ph-momentum.c3.viz.items.0.m	force
+ph-momentum.c3.viz.items.1.s	t
+ph-momentum.c3.viz.items.1.m	durée
+ph-momentum.c3.viz.items.2.s	Δp
+ph-momentum.c3.viz.items.2.m	variation de qté de mvt
+ph-momentum.c4.title	Zones de déformation
+ph-momentum.c4.text	Les avants de voiture sont conçus pour se déformer, ce qui allonge la durée du choc de quelques millisecondes à environ un dixième de seconde et réduit la force subie par les passagers.
+ph-momentum.c4.viz.steps.0	Impact
+ph-momentum.c4.viz.steps.1	La zone se déforme
+ph-momentum.c4.viz.steps.2	L'arrêt dure plus
+ph-momentum.c4.viz.steps.3	Forces réduites sur les gens
+ph-momentum.c5.title	Le recul
+ph-momentum.c5.text	Tirer un coup de canon pousse le canon vers l'arrière : la quantité de mouvement vers l'avant de l'obus est compensée par celle du canon vers l'arrière. Le canon, plus lourd, se déplace bien plus lentement.
+ph-momentum.c5.viz.l.t	Obus
+ph-momentum.c5.viz.l.items.0	petite masse
+ph-momentum.c5.viz.l.items.1	grande vitesse vers l'avant
+ph-momentum.c5.viz.r.t	Canon
+ph-momentum.c5.viz.r.items.0	grande masse
+ph-momentum.c5.viz.r.items.1	faible vitesse vers l'arrière
+ph-momentum.c6.title	Le pendule de Newton
+ph-momentum.c6.text	Soulevez une bille, lâchez-la, et une bille jaillit de l'autre côté. La quantité de mouvement et l'énergie traversent les billes immobiles presque parfaitement.
+ph-momentum.c6.viz.steps.0	Une bille arrive
+ph-momentum.c6.viz.steps.1	L'élan traverse la ligne
+ph-momentum.c6.viz.steps.2	Une bille repart
+ph-momentum.c7.title	Le moment cinétique
+ph-momentum.c7.text	Les objets en rotation ont un moment cinétique. Une patineuse qui rentre les bras tourne plus vite, car le moment cinétique se conserve alors que sa forme devient plus compacte.
+ph-momentum.c7.viz.l.t	Bras écartés
+ph-momentum.c7.viz.l.items.0	rotation plus lente
+ph-momentum.c7.viz.r.t	Bras rentrés
+ph-momentum.c7.viz.r.items.0	rotation plus rapide
+ph-momentum.c8.title	Les gyroscopes
+ph-momentum.c8.text	Les roues en rotation résistent aux changements de leur axe. Les vélos sont en partie stabilisés ainsi ; les gyroscopes guident navires, avions et téléphones (sous forme de minuscules capteurs vibrants).
+ph-momentum.c8.viz.items.0	Roues de vélo
+ph-momentum.c8.viz.items.1	Navigation des navires et avions
+ph-momentum.c8.viz.items.2	Capteurs d'orientation des téléphones
+ph-momentum.c8.viz.items.3	Contrôle d'attitude des engins spatiaux
+ph-momentum.c9.title	Les fusées dans l'espace
+ph-momentum.c9.text	Les fusées n'ont pas besoin d'air sur lequel s'appuyer : elles projettent des gaz vers l'arrière et gagnent une quantité de mouvement égale vers l'avant. C'est pourquoi elles fonctionnent encore mieux dans le vide spatial.
+ph-momentum.c9.viz.steps.0	Brûler le carburant
+ph-momentum.c9.viz.steps.1	Éjecter vite les gaz vers l'arrière
+ph-momentum.c9.viz.steps.2	Même élan vers l'avant
+ph-momentum.c9.viz.steps.3	La fusée accélère
+ph-gases.title	Gaz et pression
+ph-gases.summary	Pourquoi les pneus, les ballons et la météo se comportent ainsi.
+ph-gases.q0.q	Pourquoi l'eau bout-elle en dessous de 100 °C en montagne ?
+ph-gases.q0.o0	Il fait plus froid
+ph-gases.q0.o1	Une pression de l'air plus basse fait bouillir à une température plus basse
+ph-gases.q0.o2	L'eau est plus pure
+ph-gases.q0.x	L'ébullition dépend de la pression environnante.
+ph-gases.q1.q	Si l'on divise par deux le volume d'un gaz à température constante, sa pression…
+ph-gases.q1.o0	Est divisée par deux
+ph-gases.q1.o1	Double
+ph-gases.q1.o2	Reste la même
+ph-gases.q1.x	Loi de Boyle : p × V constant.
+ph-gases.q2.q	Qu'est-ce qui fait monter votre boisson dans une paille ?
+ph-gases.q2.o0	Votre aspiration qui tire
+ph-gases.q2.o1	La pression atmosphérique sur la surface de la boisson
+ph-gases.q2.o2	La capillarité
+ph-gases.q2.x	Vous abaissez la pression, c'est l'air qui pousse.
+ph-gases.c0.title	Des molécules en mouvement
+ph-gases.c0.text	Un gaz est composé de milliards de molécules qui volent à des centaines de mètres par seconde, en rebondissant les unes sur les autres et sur les parois. Leurs impacts sur les parois constituent la pression.
+ph-gases.c0.viz.steps.0	Les molécules vont vite
+ph-gases.c0.viz.steps.1	Chocs sur les parois
+ph-gases.c0.viz.steps.2	Mille petites poussées
+ph-gases.c0.viz.steps.3	Pression
+ph-gases.c1.title	Température et pression
+ph-gases.c1.text	Chauffez un gaz enfermé et ses molécules vont plus vite, frappent les parois plus fort et plus souvent : la pression monte. C'est pourquoi la pression des pneus augmente après un long trajet.
+ph-gases.c1.viz.f	p ÷ T = constante (volume fixe)
+ph-gases.c1.viz.items.0.m	T en kelvins
+ph-gases.c1.viz.items.1.s	20 °C → 50 °C
+ph-gases.c1.viz.items.1.m	≈ +10 % de pression
+ph-gases.c2.title	La loi de Boyle
+ph-gases.c2.text	À température constante, comprimer un gaz de moitié double sa pression. Les pompes à vélo et les seringues le montrent.
+ph-gases.c2.viz.f	p × V = constante
+ph-gases.c2.viz.items.0.s	volume divisé par deux
+ph-gases.c2.viz.items.0.m	pression doublée
+ph-gases.c3.title	La loi des gaz parfaits
+ph-gases.c3.text	Pression, volume et température sont liés par une seule équation pour la plupart des gaz dans les conditions courantes.
+ph-gases.c3.viz.f	p × V = n × R × T
+ph-gases.c3.viz.items.0.s	n
+ph-gases.c3.viz.items.0.m	quantité de gaz (moles)
+ph-gases.c3.viz.items.1.s	R
+ph-gases.c3.viz.items.1.m	8,314 J/mol·K
+ph-gases.c3.viz.items.2.s	T
+ph-gases.c3.viz.items.2.m	kelvins
+ph-gases.c4.title	Pression de l'air et altitude
+ph-gases.c4.text	La pression de l'air est divisée par deux environ tous les 5,5 km d'altitude. Au sommet de la Serra da Estrela (1 993 m), elle vaut environ 80 % de celle du niveau de la mer ; sur l'Everest, environ un tiers.
+ph-gases.c4.viz.unit	% de la pression au niveau de la mer
+ph-gases.c4.viz.items.0.l	Niveau de la mer
+ph-gases.c4.viz.items.1.l	Serra da Estrela
+ph-gases.c4.viz.items.2.l	Mont Blanc
+ph-gases.c4.viz.items.3.l	Everest
+ph-gases.c5.title	Ébullition et altitude
+ph-gases.c5.text	L'eau bout quand sa pression de vapeur égale la pression de l'air. En montagne, la pression de l'air est plus faible : l'eau bout donc en dessous de 100 °C et les pâtes cuisent plus lentement. Les autocuiseurs font l'inverse.
+ph-gases.c5.viz.unit	point d'ébullition °C
+ph-gases.c5.viz.items.0.l	Everest
+ph-gases.c5.viz.items.1.l	La Paz
+ph-gases.c5.viz.items.2.l	Niveau de la mer
+ph-gases.c5.viz.items.3.l	Autocuiseur
+ph-gases.c6.title	Ballons et densité
+ph-gases.c6.text	L'air chaud est moins dense que l'air froid, c'est pourquoi une montgolfière s'élève. L'hélium est plus léger que l'air, donc les ballons à l'hélium flottent. Un sous-marin modifie sa densité avec des ballasts.
+ph-gases.c6.viz.l.t	Monte
+ph-gases.c6.viz.l.items.0	air chaud
+ph-gases.c6.viz.l.items.1	hélium
+ph-gases.c6.viz.l.items.2	moins dense que l'environnement
+ph-gases.c6.viz.r.t	Descend
+ph-gases.c6.viz.r.items.0	air froid
+ph-gases.c6.viz.r.items.1	dioxyde de carbone
+ph-gases.c6.viz.r.items.2	plus dense que l'environnement
+ph-gases.c7.title	L'aspiration ne tire pas
+ph-gases.c7.text	Une paille ne « tire » pas la boisson vers le haut. Vous abaissez la pression dans votre bouche et l'atmosphère pousse le liquide dans la paille. C'est pourquoi une paille ne peut pas faire monter l'eau de plus de 10 m environ.
+ph-gases.c7.viz.steps.0	Pression plus basse dans la bouche
+ph-gases.c7.viz.steps.1	L'air pousse sur la boisson
+ph-gases.c7.viz.steps.2	Le liquide monte dans la paille
+ph-gases.c8.title	L'air comprimé
+ph-gases.c8.text	Comprimer l'air le réchauffe (le corps d'une pompe à vélo chauffe) ; le laisser se détendre le refroidit (les bombes aérosols deviennent froides). Les réfrigérateurs et les pompes à chaleur s'en servent avec des fluides frigorigènes spéciaux.
+ph-gases.c8.viz.l.t	Compression
+ph-gases.c8.viz.l.items.0	se réchauffe
+ph-gases.c8.viz.l.items.1	la pompe chauffe
+ph-gases.c8.viz.r.t	Détente
+ph-gases.c8.viz.r.items.0	se refroidit
+ph-gases.c8.viz.r.items.1	l'aérosol givre
+ph-gases.c9.title	Météo et pression
+ph-gases.c9.text	Les zones de haute pression apportent un air descendant et généralement un temps stable ; les zones de basse pression apportent un air ascendant, des nuages et de la pluie. Les baromètres la mesurent, souvent en hectopascals (hPa).
+ph-gases.c9.viz.unit	hPa
+ph-gases.c9.viz.items.0.l	tempête
+ph-gases.c9.viz.items.1.l	moyenne
+ph-gases.c9.viz.items.2.l	anticyclone
+ph-light.title	Lumière et optique
+ph-light.summary	Réflexion, réfraction, lentilles et œil.
+ph-light.q0.q	Pourquoi une paille semble-t-elle brisée dans l'eau ?
+ph-light.q0.o0	La paille se plie
+ph-light.q0.o1	La lumière est réfractée en passant entre l'eau et l'air
+ph-light.q0.o2	À cause de la réflexion
+ph-light.q0.x	La lumière change de vitesse et de direction.
+ph-light.q1.q	Qu'est-ce qui transporte les données d'Internet à travers les océans grâce à la lumière ?
+ph-light.q1.o0	Les câbles en cuivre
+ph-light.q1.o1	Les fibres optiques, par réflexion totale interne
+ph-light.q1.o2	Les antennes radio
+ph-light.q1.x	La lumière reste piégée dans le verre.
+ph-light.q2.q	La myopie se corrige avec…
+ph-light.q2.o0	Des lentilles convexes
+ph-light.q2.o1	Des lentilles concaves
+ph-light.q2.o2	Des miroirs
+ph-light.q2.x	Les lentilles concaves écartent la lumière, qui se focalise ainsi plus loin.
+ph-light.c0.title	La lumière va vite et en ligne droite
+ph-light.c0.text	La lumière se propage à environ 300 000 km/s dans le vide, en ligne droite (rayons). Elle met environ 8 minutes 20 secondes à nous parvenir depuis le Soleil.
+ph-light.c0.viz.items.0.v	300 000 km/s
+ph-light.c0.viz.items.0.l	vitesse de la lumière
+ph-light.c0.viz.items.1.v	8 min 20 s
+ph-light.c0.viz.items.1.l	depuis le Soleil
+ph-light.c0.viz.items.2.v	1,3 s
+ph-light.c0.viz.items.2.l	depuis la Lune
+ph-light.c1.title	La réflexion
+ph-light.c1.text	La lumière rebondit sur un miroir avec le même angle que celui avec lequel elle l'atteint : l'angle d'incidence est égal à l'angle de réflexion. Les surfaces rugueuses diffusent la lumière dans toutes les directions, c'est pourquoi le papier n'est pas un miroir.
+ph-light.c1.viz.l.t	Miroir lisse
+ph-light.c1.viz.l.items.0	angles égaux
+ph-light.c1.viz.l.items.1	image nette
+ph-light.c1.viz.r.t	Papier rugueux
+ph-light.c1.viz.r.items.0	diffuse partout
+ph-light.c1.viz.r.items.1	pas d'image
+ph-light.c2.title	La réfraction
+ph-light.c2.text	La lumière ralentit dans l'eau ou le verre et se courbe quand elle y entre en biais. C'est pourquoi une paille semble brisée dans un verre et les piscines paraissent moins profondes qu'elles ne le sont.
+ph-light.c2.viz.steps.0	La lumière entre dans l'eau en biais
+ph-light.c2.viz.steps.1	Elle ralentit
+ph-light.c2.viz.steps.2	Elle se rapproche de la normale
+ph-light.c2.viz.steps.3	Les objets paraissent moins profonds
+ph-light.c3.title	Réflexion totale interne
+ph-light.c3.text	À l'intérieur du verre, une lumière qui atteint la surface sous un angle assez rasant est entièrement réfléchie. Les fibres optiques piègent ainsi la lumière et transportent les données d'Internet à travers les océans.
+ph-light.c3.viz.steps.0	La lumière entre dans la fibre
+ph-light.c3.viz.steps.1	Touche la paroi en angle rasant
+ph-light.c3.viz.steps.2	Réfléchie totalement
+ph-light.c3.viz.steps.3	Parcourt des kilomètres
+ph-light.c4.title	Les lentilles
+ph-light.c4.text	Les lentilles convexes courbent la lumière vers un foyer : loupes, appareils photo, œil. Les lentilles concaves l'écartent et servent à corriger la myopie.
+ph-light.c4.viz.l.t	Convexe
+ph-light.c4.viz.l.items.0	convergente
+ph-light.c4.viz.l.items.1	loupes, appareils photo
+ph-light.c4.viz.l.items.2	corrige l'hypermétropie
+ph-light.c4.viz.r.t	Concave
+ph-light.c4.viz.r.items.0	divergente
+ph-light.c4.viz.r.items.1	corrige la myopie
+ph-light.c5.title	L'œil
+ph-light.c5.text	La cornée et le cristallin focalisent la lumière sur la rétine, où les bâtonnets (lumière faible, sans couleur) et les cônes (couleur) la transforment en signaux nerveux. Le cerveau remet l'image à l'endroit.
+ph-light.c5.viz.steps.0	Cornée et cristallin focalisent
+ph-light.c5.viz.steps.1	Image sur la rétine
+ph-light.c5.viz.steps.2	Bâtonnets et cônes
+ph-light.c5.viz.steps.3	Le cerveau interprète
+ph-light.c6.title	Myopie et hypermétropie
+ph-light.c6.text	Les yeux myopes focalisent les objets lointains devant la rétine ; les lentilles concaves corrigent cela. Les yeux hypermétropes focalisent derrière ; les lentilles convexes corrigent cela.
+ph-light.c6.viz.items.0.a	myopie
+ph-light.c6.viz.items.0.b	lentille concave
+ph-light.c6.viz.items.1.a	hypermétropie
+ph-light.c6.viz.items.1.b	lentille convexe
+ph-light.c6.viz.items.2.a	presbytie
+ph-light.c6.viz.items.2.b	lunettes de lecture avec l'âge
+ph-light.c7.title	Les appareils photo
+ph-light.c7.text	Un appareil photo fonctionne comme un œil : un objectif focalise la lumière sur un capteur de millions de pixels. L'ouverture contrôle la quantité de lumière qui entre ; la vitesse d'obturation, la durée.
+ph-light.c7.viz.items.0.a	ouverture
+ph-light.c7.viz.items.0.b	largeur de l'orifice
+ph-light.c7.viz.items.1.a	vitesse d'obturation
+ph-light.c7.viz.items.1.b	durée d'ouverture
+ph-light.c7.viz.items.2.a	ISO
+ph-light.c7.viz.items.2.b	sensibilité du capteur
+ph-light.c8.title	Les arcs-en-ciel
+ph-light.c8.text	La lumière du Soleil qui entre dans les gouttes de pluie est réfractée, réfléchie à l'intérieur puis réfractée de nouveau à la sortie. Chaque couleur est déviée d'un angle légèrement différent, ce qui étale la lumière blanche en un spectre.
+ph-light.c8.viz.steps.0	La lumière entre dans la goutte
+ph-light.c8.viz.steps.1	Se courbe et se sépare par couleur
+ph-light.c8.viz.steps.2	Se réfléchit à l'intérieur
+ph-light.c8.viz.steps.3	Sort en arc-en-ciel
+ph-light.c9.title	Les lasers
+ph-light.c9.text	Un laser produit une lumière d'une seule couleur, en phase et en faisceau étroit. On l'utilise dans les lecteurs de codes-barres, les fibres optiques, la chirurgie, la découpe des métaux et la mesure de distance (lidar).
+ph-light.c9.viz.items.0	Internet par fibre optique
+ph-light.c9.viz.items.1	Lecteurs de codes-barres
+ph-light.c9.viz.items.2	Chirurgie de l'œil
+ph-light.c9.viz.items.3	Découpe de métaux
+ph-light.c9.viz.items.4	Mesure de distance
+ph-colour.title	La couleur
+ph-colour.summary	Pourquoi le ciel est bleu et les feuilles sont vertes.
+ph-colour.q0.q	Pourquoi les feuilles paraissent-elles vertes ?
+ph-colour.q0.o0	Elles émettent de la lumière verte
+ph-colour.q0.o1	Elles réfléchissent le vert et absorbent le rouge et le bleu
+ph-colour.q0.o2	Elles sont froides
+ph-colour.q0.x	La chlorophylle absorbe le rouge et le bleu.
+ph-colour.q1.q	Pourquoi le ciel est-il bleu ?
+ph-colour.q1.o0	Il reflète la mer
+ph-colour.q1.o1	L'air diffuse davantage la lumière bleue que la rouge
+ph-colour.q1.o2	L'ozone est bleu
+ph-colour.q1.x	La diffusion de Rayleigh.
+ph-colour.q2.q	Mélanger de la lumière rouge, verte et bleue donne…
+ph-colour.q2.o0	Du noir
+ph-colour.q2.o1	Du blanc
+ph-colour.q2.o2	Du marron
+ph-colour.q2.x	Le mélange additif.
+ph-colour.c0.title	La lumière blanche est un mélange
+ph-colour.c0.text	Newton a montré avec un prisme que la lumière blanche contient toutes les couleurs. Chaque couleur est une lumière de longueur d'onde différente, du rouge (environ 700 nm) au violet (environ 400 nm).
+ph-colour.c0.viz.unit	longueur d'onde (nm, approx.)
+ph-colour.c0.viz.items.0.l	Violet
+ph-colour.c0.viz.items.1.l	Bleu
+ph-colour.c0.viz.items.2.l	Vert
+ph-colour.c0.viz.items.3.l	Jaune
+ph-colour.c0.viz.items.4.l	Rouge
+ph-colour.c1.title	Les objets absorbent et réfléchissent
+ph-colour.c1.text	Une feuille paraît verte parce que la chlorophylle absorbe la lumière rouge et bleue et réfléchit la verte. Un T-shirt noir absorbe l'essentiel de la lumière (et chauffe au soleil) ; un blanc en réfléchit la plus grande partie.
+ph-colour.c1.viz.l.t	Noir
+ph-colour.c1.viz.l.items.0	absorbe presque tout
+ph-colour.c1.viz.l.items.1	chauffe
+ph-colour.c1.viz.r.t	Blanc
+ph-colour.c1.viz.r.items.0	réfléchit presque tout
+ph-colour.c1.viz.r.items.1	reste plus frais
+ph-colour.c2.title	Mélanger la lumière et mélanger la peinture
+ph-colour.c2.text	La lumière se mélange de façon additive : rouge + vert + bleu donnent du blanc (écrans). La peinture se mélange de façon soustractive : chaque pigment absorbe certaines couleurs, donc en mélanger beaucoup donne une couleur sombre et boueuse (les imprimantes utilisent cyan, magenta, jaune, noir).
+ph-colour.c2.viz.l.t	Lumière (additif)
+ph-colour.c2.viz.l.items.0	RVB
+ph-colour.c2.viz.l.items.1	s'additionne en blanc
+ph-colour.c2.viz.l.items.2	écrans
+ph-colour.c2.viz.r.t	Pigment (soustractif)
+ph-colour.c2.viz.r.items.0	CMJN
+ph-colour.c2.viz.r.items.1	donne du sombre
+ph-colour.c2.viz.r.items.2	impression
+ph-colour.c3.title	Pourquoi le ciel est bleu
+ph-colour.c3.text	Les molécules de l'air diffusent beaucoup plus les courtes longueurs d'onde bleues que les rouges (diffusion de Rayleigh). La lumière bleue diffusée atteint vos yeux depuis toutes les directions du ciel.
+ph-colour.c3.viz.steps.0	La lumière entre dans l'atmosphère
+ph-colour.c3.viz.steps.1	Le bleu est le plus diffusé
+ph-colour.c3.viz.steps.2	Le bleu vient de tout le ciel
+ph-colour.c4.title	Les couchers de soleil rouges
+ph-colour.c4.text	Au coucher du soleil, la lumière traverse beaucoup plus d'atmosphère. La plus grande partie du bleu est diffusée avant de vous atteindre, ne laissant que les rouges et les oranges.
+ph-colour.c4.viz.l.t	Midi
+ph-colour.c4.viz.l.items.0	trajet court
+ph-colour.c4.viz.l.items.1	ciel bleu
+ph-colour.c4.viz.r.t	Coucher du soleil
+ph-colour.c4.viz.r.items.0	trajet long
+ph-colour.c4.viz.r.items.1	bleu diffusé ailleurs
+ph-colour.c4.viz.r.items.2	ciel rouge
+ph-colour.c5.title	Voir les couleurs
+ph-colour.c5.text	Votre œil possède trois types de cônes, sensibles surtout à peu près à la lumière rouge, verte et bleue. Chaque couleur que vous voyez résulte de la comparaison de leurs signaux par votre cerveau.
+ph-colour.c5.viz.items.0.a	cônes L
+ph-colour.c5.viz.items.0.b	grandes longueurs d'onde (rouge)
+ph-colour.c5.viz.items.1.a	cônes M
+ph-colour.c5.viz.items.1.b	moyennes (vert)
+ph-colour.c5.viz.items.2.a	cônes S
+ph-colour.c5.viz.items.2.b	courtes (bleu)
+ph-colour.c6.title	Le daltonisme
+ph-colour.c6.text	Environ 8 % des hommes et 0,5 % des femmes d'ascendance nord-européenne présentent une déficience de la vision des couleurs rouge–vert, généralement héréditaire. Un bon design ne repose jamais sur la couleur seule.
+ph-colour.c6.viz.items.0.l	des hommes
+ph-colour.c6.viz.items.1.l	des femmes
+ph-colour.c7.title	Infrarouge et ultraviolet
+ph-colour.c7.text	Au-delà du rouge se trouve l'infrarouge, que nous ressentons comme de la chaleur et que voient les caméras de nuit. Au-delà du violet se trouve l'ultraviolet, qui provoque les coups de soleil et fait briller certaines matières.
+ph-colour.c7.viz.items.0.a	infrarouge
+ph-colour.c7.viz.items.0.b	chaleur, télécommandes, vision nocturne
+ph-colour.c7.viz.items.1.a	visible
+ph-colour.c7.viz.items.1.b	400–700 nm
+ph-colour.c7.viz.items.2.a	ultraviolet
+ph-colour.c7.viz.items.2.b	coups de soleil, stérilisation
+ph-colour.c8.title	La température de couleur
+ph-colour.c8.text	Les ampoules se décrivent en kelvins : blanc chaud autour de 2 700 K (jaunâtre), lumière du jour autour de 5 000–6 500 K (bleutée). La lumière chaude paraît plus douillette le soir.
+ph-colour.c8.viz.unit	K
+ph-colour.c8.viz.items.0.l	bougie
+ph-colour.c8.viz.items.1.l	blanc chaud
+ph-colour.c8.viz.items.2.l	neutre
+ph-colour.c8.viz.items.3.l	lumière du jour
+ph-colour.c9.title	Les écrans
+ph-colour.c9.text	Chaque pixel d'un écran possède des sous-pixels rouge, vert et bleu. En faisant varier leur luminosité, on crée des millions de couleurs. Observez un écran avec une loupe et vous les verrez.
+ph-colour.c9.viz.steps.0	Sous-pixels rouge, vert, bleu
+ph-colour.c9.viz.steps.1	Chacun réglé en luminosité
+ph-colour.c9.viz.steps.2	Votre œil les mélange
+ph-colour.c9.viz.steps.3	Des millions de couleurs
+ph-sound.title	Le son
+ph-sound.summary	Volume, hauteur et comment nous entendons.
+ph-sound.q0.q	Chaque tranche de +10 dB signifie que l'intensité sonore est…
+ph-sound.q0.o0	Doublée
+ph-sound.q0.o1	Multipliée par dix
+ph-sound.q0.o2	Identique
+ph-sound.q0.x	Les décibels sont logarithmiques.
+ph-sound.q1.q	Le son se propage le plus vite dans…
+ph-sound.q1.o0	L'air
+ph-sound.q1.o1	L'eau
+ph-sound.q1.o2	L'acier
+ph-sound.q1.x	Les matériaux plus rigides transmettent le son plus vite.
+ph-sound.q2.q	Qu'est-ce qui distingue un violon d'une flûte sur la même note ?
+ph-sound.q2.o0	L'intensité
+ph-sound.q2.o1	Des mélanges différents d'harmoniques (timbre)
+ph-sound.q2.o2	La vitesse du son
+ph-sound.q2.x	Le timbre vient des harmoniques.
+ph-sound.c0.title	Ce qu'est le son
+ph-sound.c0.text	Le son est une onde de pression : un objet qui vibre pousse et tire l'air, créant des compressions et des raréfactions qui se propagent jusqu'à votre oreille.
+ph-sound.c0.viz.steps.0	L'objet vibre
+ph-sound.c0.viz.steps.1	Air comprimé puis étiré
+ph-sound.c0.viz.steps.2	L'onde se propage
+ph-sound.c0.viz.steps.3	Le tympan vibre
+ph-sound.c1.title	Hauteur et fréquence
+ph-sound.c1.text	La hauteur d'un son, aiguë ou grave, est déterminée par la fréquence. Les humains entendent à peu près de 20 Hz à 20 000 Hz ; la limite supérieure baisse avec l'âge.
+ph-sound.c1.viz.unit	Hz (approx.)

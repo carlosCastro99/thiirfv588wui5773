@@ -298,3 +298,903 @@ me-stress.q0.x	20 000 ÷ 400 = 50 MPa.
 me-stress.q1.q	Poser une planche sur chant la rend beaucoup plus rigide parce que…
 me-stress.q1.o0	Elle est plus lourde
 me-stress.q1.o1	La rigidité en flexion augmente avec le cube de la hauteur
+me-stress.q1.o2	Le bois aime la verticale
+me-stress.q1.x	I = b × h³ ÷ 12.
+me-stress.q2.q	Quel matériau prévient avant de rompre ?
+me-stress.q2.o0	Le verre
+me-stress.q2.o1	L'acier doux
+me-stress.q2.o2	La fonte
+me-stress.q2.x	L'acier ductile s'étire d'abord.
+me-stress.c0.title	La contrainte
+me-stress.c0.text	La contrainte est la force divisée par la surface qui la supporte. La même force sur une barre plus fine crée plus de contrainte. Unités : pascals (N/m²), le plus souvent mégapascals (MPa).
+me-stress.c0.example.0	10 kN sur une barre d'acier de 100 mm²
+me-stress.c0.example.1	10 000 ÷ 100
+me-stress.c0.example.2	= 100 MPa
+me-stress.c0.viz.f	σ = F ÷ A
+me-stress.c0.viz.items.0.s	σ
+me-stress.c0.viz.items.0.m	contrainte (MPa)
+me-stress.c0.viz.items.1.s	F
+me-stress.c0.viz.items.1.m	force (N)
+me-stress.c0.viz.items.2.s	A
+me-stress.c0.viz.items.2.m	section (mm²)
+me-stress.c1.title	La déformation
+me-stress.c1.text	La déformation est l'allongement d'un matériau par rapport à sa longueur initiale. Elle n'a pas d'unité et est généralement minuscule.
+me-stress.c1.example.0	Une barre de 2 m s'allonge de 1 mm
+me-stress.c1.example.1	1 ÷ 2 000
+me-stress.c1.example.2	ε = 0,0005
+me-stress.c1.viz.f	ε = ΔL ÷ L
+me-stress.c1.viz.items.0.s	ΔL
+me-stress.c1.viz.items.0.m	variation de longueur
+me-stress.c1.viz.items.1.s	L
+me-stress.c1.viz.items.1.m	longueur initiale
+me-stress.c2.title	Module d'Young
+me-stress.c2.text	La rigidité se mesure par le module d'Young : la contrainte divisée par la déformation. L'acier vaut environ 200 GPa, l'aluminium environ 70, le bois environ 10 dans le sens des fibres.
+me-stress.c2.viz.unit	GPa
+me-stress.c2.viz.items.0.l	Caoutchouc
+me-stress.c2.viz.items.1.l	Bois
+me-stress.c2.viz.items.2.l	Béton
+me-stress.c2.viz.items.3.l	Aluminium
+me-stress.c2.viz.items.4.l	Acier
+me-stress.c3.title	Élastique et plastique
+me-stress.c3.text	Dans le domaine élastique, un matériau reprend sa forme une fois déchargé. Au-delà de la limite d'élasticité, il se déforme de façon permanente (plastique). Les ingénieurs conçoivent les structures pour qu'elles restent élastiques en usage normal.
+me-stress.c3.viz.steps.0	La charge augmente
+me-stress.c3.viz.steps.1	Élastique : retour à la forme
+me-stress.c3.viz.steps.2	Limite d'élasticité
+me-stress.c3.viz.steps.3	Plastique : déformation permanente
+me-stress.c3.viz.steps.4	Rupture
+me-stress.c4.title	La courbe contrainte-déformation
+me-stress.c4.text	Tester une barre d'acier dans une machine trace une courbe : une droite élastique, une limite d'élasticité, puis un étirement plastique jusqu'à la résistance maximale, et enfin la rupture.
+me-stress.c4.viz.events.0.y	début
+me-stress.c4.viz.events.0.l	droite élastique
+me-stress.c4.viz.events.1.y	limite
+me-stress.c4.viz.events.1.l	déformation permanente
+me-stress.c4.viz.events.2.y	maximum
+me-stress.c4.viz.events.2.l	contrainte max.
+me-stress.c4.viz.events.3.y	striction
+me-stress.c4.viz.events.3.l	la barre s'amincit
+me-stress.c4.viz.events.4.y	rupture
+me-stress.c4.viz.events.4.l	elle casse
+me-stress.c5.title	Ductile ou fragile
+me-stress.c5.text	Les matériaux ductiles (acier, cuivre) s'étirent beaucoup avant de rompre, ce qui prévient. Les fragiles (verre, fonte, béton) cassent d'un coup. La ductilité rend les structures plus sûres.
+me-stress.c5.viz.l.t	Ductile
+me-stress.c5.viz.l.items.0	plie et s'étire
+me-stress.c5.viz.l.items.1	prévient avant de rompre
+me-stress.c5.viz.l.items.2	acier, cuivre
+me-stress.c5.viz.r.t	Fragile
+me-stress.c5.viz.r.items.0	casse d'un coup
+me-stress.c5.viz.r.items.1	peu de signes avant-coureurs
+me-stress.c5.viz.r.items.2	verre, fonte
+me-stress.c6.title	Contrainte de flexion
+me-stress.c6.text	Quand une poutre fléchit, la contrainte est nulle au milieu (axe neutre) et maximale sur les surfaces du haut et du bas. C'est pourquoi les poutres en I placent la matière loin du milieu.
+me-stress.c6.viz.f	σ = M × y ÷ I
+me-stress.c6.viz.items.0.s	M
+me-stress.c6.viz.items.0.m	moment fléchissant
+me-stress.c6.viz.items.1.s	y
+me-stress.c6.viz.items.1.m	distance à l'axe neutre
+me-stress.c6.viz.items.2.s	I
+me-stress.c6.viz.items.2.m	moment quadratique
+me-stress.c7.title	Moment quadratique
+me-stress.c7.text	La résistance d'une poutre à la flexion dépend énormément de sa hauteur. Pour un rectangle, doubler la hauteur la rend huit fois plus rigide. C'est pourquoi les solives sont posées sur chant.
+me-stress.c7.viz.f	I = b × h³ ÷ 12
+me-stress.c7.viz.items.0.s	b
+me-stress.c7.viz.items.0.m	largeur
+me-stress.c7.viz.items.1.s	h
+me-stress.c7.viz.items.1.m	hauteur
+me-stress.c7.viz.items.2.s	2× plus haute
+me-stress.c7.viz.items.2.m	8× plus rigide
+me-stress.c8.title	Dilatation thermique
+me-stress.c8.text	Les matériaux se dilatent quand on les chauffe. Un pont en acier de 100 m peut s'allonger d'environ 4 cm entre l'hiver et l'été, d'où les joints de dilatation. Les rails, les tuyaux et les dalles de béton ont aussi besoin de place pour bouger.
+me-stress.c8.viz.f	ΔL = α × L × ΔT
+me-stress.c8.viz.items.0.s	α
+me-stress.c8.viz.items.0.m	~12 × 10⁻⁶ /°C pour l'acier
+me-stress.c8.viz.items.1.s	L
+me-stress.c8.viz.items.1.m	100 m
+me-stress.c8.viz.items.2.s	ΔT
+me-stress.c8.viz.items.2.m	35 °C → ≈ 4 cm
+me-stress.c9.title	Concentrations de contrainte
+me-stress.c9.text	Les angles vifs, les trous et les entailles concentrent la contrainte, parfois jusqu'à trois fois la moyenne. Les angles arrondis (congés) la répartissent. Les hublots d'avion sont arrondis pour cette raison.
+me-stress.c9.viz.items.0.w	angle interne vif
+me-stress.c9.viz.items.0.r	congé arrondi
+me-stress.c9.viz.items.1.w	fenêtre carrée en cabine pressurisée
+me-stress.c9.viz.items.1.r	fenêtre arrondie
+me-friction.title	Le frottement
+me-friction.summary	La force qui accroche, ralentit et use les choses.
+me-friction.q0.q	Une caisse de 50 kg (≈490 N) sur un sol avec μ = 0,4 demande environ quelle force pour glisser ?
+me-friction.q0.o0	49 N
+me-friction.q0.o1	196 N
+me-friction.q0.o2	490 N
+me-friction.q0.x	0,4 × 490 ≈ 196 N.
+me-friction.q1.q	Pourquoi est-il plus difficile de commencer à pousser une caisse que de la maintenir en mouvement ?
+me-friction.q1.o0	La gravité change
+me-friction.q1.o1	Le frottement statique est supérieur au frottement cinétique
+me-friction.q1.o2	La résistance de l'air
+me-friction.q1.x	Pour démarrer, il faut vaincre le frottement statique.
+me-friction.q2.q	À quoi servent les roulements à billes ?
+me-friction.q2.o0	À augmenter l'adhérence
+me-friction.q2.o1	À remplacer le glissement par un roulement à faible frottement
+me-friction.q2.o2	À ajouter de la lubrification
+me-friction.q2.x	Le roulement résiste beaucoup moins que le glissement.
+me-friction.c0.title	Ce qu'est le frottement
+me-friction.c0.text	Le frottement s'oppose au glissement entre des surfaces. À l'échelle microscopique, même les surfaces lisses sont rugueuses, et les aspérités s'accrochent et adhèrent brièvement.
+me-friction.c0.viz.steps.0	Deux surfaces en contact
+me-friction.c0.viz.steps.1	Les aspérités s'imbriquent
+me-friction.c0.viz.steps.2	Résistance au glissement
+me-friction.c0.viz.steps.3	Chaleur et usure
+me-friction.c1.title	Coefficient de frottement
+me-friction.c1.text	La force de frottement vaut à peu près la force normale (la force avec laquelle les surfaces s'appuient l'une sur l'autre) multipliée par un coefficient μ qui dépend des matériaux.
+me-friction.c1.viz.unit	μ (approx.)
+me-friction.c1.viz.items.0.l	Glace sur glace
+me-friction.c1.viz.items.1.l	Acier sur acier (huilé)
+me-friction.c1.viz.items.2.l	Bois sur bois
+me-friction.c1.viz.items.3.l	Pneu sur route sèche
+me-friction.c2.title	Statique ou cinétique
+me-friction.c2.text	Il faut plus de force pour mettre quelque chose en glissement que pour l'y maintenir. Le frottement statique est supérieur au frottement cinétique (de glissement). C'est pourquoi l'ABS empêche les roues de se bloquer.
+me-friction.c2.viz.l.t	Statique
+me-friction.c2.viz.l.items.0	avant le mouvement
+me-friction.c2.viz.l.items.1	plus élevé
+me-friction.c2.viz.r.t	Cinétique
+me-friction.c2.viz.r.items.0	pendant le glissement
+me-friction.c2.viz.r.items.1	plus faible
+me-friction.c3.title	Les freins
+me-friction.c3.text	Les freins transforment le mouvement en chaleur par le frottement entre plaquettes et disques. Dans une longue descente, les freins peuvent surchauffer et faiblir ; le frein moteur ou la récupération d'énergie des véhicules électriques aident.
+me-friction.c3.viz.steps.0	Les plaquettes serrent le disque
+me-friction.c3.viz.steps.1	Frottement
+me-friction.c3.viz.steps.2	L'énergie cinétique devient chaleur
+me-friction.c3.viz.steps.3	La voiture ralentit
+me-friction.c4.title	Pneus et adhérence
+me-friction.c4.text	Les pneus adhèrent grâce au frottement et à une légère déformation de la gomme. Sur route mouillée, les rainures de la bande de roulement évacuent l'eau ; sans elles, le pneu peut faire de l'aquaplaning sur un film d'eau.
+me-friction.c4.viz.items.0	Profondeur des sculptures
+me-friction.c4.viz.items.1	Pression des pneus
+me-friction.c4.viz.items.2	Mélange de gomme
+me-friction.c4.viz.items.3	Revêtement routier
+me-friction.c4.viz.items.4	Vitesse sous la pluie
+me-friction.c5.title	La lubrification
+me-friction.c5.text	L'huile et la graisse séparent les surfaces par un film mince, ce qui réduit considérablement le frottement et l'usure. Les moteurs, les paliers et les boîtes de vitesses en dépendent.
+me-friction.c5.viz.l.t	Contact à sec
+me-friction.c5.viz.l.items.0	frottement élevé
+me-friction.c5.viz.l.items.1	usure rapide
+me-friction.c5.viz.l.items.2	chaleur
+me-friction.c5.viz.r.t	Lubrifié
+me-friction.c5.viz.r.items.0	frottement faible
+me-friction.c5.viz.r.items.1	longue durée de vie
+me-friction.c5.viz.r.items.2	plus frais
+me-friction.c6.title	Les roulements
+me-friction.c6.text	Les roulements à billes et à rouleaux remplacent le glissement par le roulement, qui frotte bien moins. On en trouve dans les roues, les moteurs, les ventilateurs et les disques durs.
+me-friction.c6.viz.unit	frottement relatif
+me-friction.c6.viz.items.0.l	Glissement
+me-friction.c6.viz.items.1.l	Palier lisse (huilé)
+me-friction.c6.viz.items.2.l	Roulement à billes
+me-friction.c7.title	Le frottement utile
+me-friction.c7.text	Sans frottement, vous ne pourriez ni marcher, ni conduire, ni tenir un stylo, ni garder un écrou serré sur un boulon. Les ingénieurs ajoutent souvent du frottement exprès : disques d'embrayage, courroies, sols antidérapants.
+me-friction.c7.viz.items.0	Marcher et conduire
+me-friction.c7.viz.items.1	Embrayages et courroies
+me-friction.c7.viz.items.2	Écrous et boulons qui restent serrés
+me-friction.c7.viz.items.3	Sols antidérapants
+me-friction.c8.title	Résistance au roulement
+me-friction.c8.text	Même un pneu qui roule perd de l'énergie, car la gomme se déforme. Les pneus à faible résistance au roulement et la bonne pression économisent du carburant ou de l'autonomie électrique.
+me-friction.c8.viz.unit	perte d'énergie relative
+me-friction.c8.viz.items.0.l	Pneu sous-gonflé
+me-friction.c8.viz.items.1.l	Bonne pression
+me-friction.c8.viz.items.2.l	Pneu à faible résistance
+me-friction.c9.title	Le coût de l'usure
+me-friction.c9.text	Selon des études de tribologie, le frottement et l'usure consommeraient environ un cinquième de l'énergie mondiale et causeraient d'importantes pertes par les pièces usées. De meilleurs lubrifiants et matériaux font économiser beaucoup.
+me-friction.c9.viz.items.0.l	de l'énergie mondiale sert à vaincre le frottement (estimation)
+me-energy.title	Travail, énergie et puissance
+me-energy.summary	Soulever, déplacer, et à quelle vitesse.
+me-energy.q0.q	L'énergie cinétique à 100 km/h comparée à celle à 50 km/h est…
+me-energy.q0.o0	Double
+me-energy.q0.o1	Quadruple
+me-energy.q0.o2	Identique
+me-energy.q0.x	L'énergie croît avec le carré de la vitesse.
+me-energy.q1.q	Soulever 20 kg sur 2 m demande environ quel travail ?
+me-energy.q1.o0	40 J
+me-energy.q1.o1	392 J
+me-energy.q1.o2	2 000 J
+me-energy.q1.x	20 × 9,81 × 2 ≈ 392 J.
+me-energy.q2.q	1 kWh équivaut à…
+me-energy.q2.o0	1 000 J
+me-energy.q2.o1	3,6 MJ
+me-energy.q2.o2	60 J
+me-energy.q2.x	1 000 W × 3 600 s.
+me-energy.c0.title	Le travail
+me-energy.c0.text	Il y a travail quand une force déplace quelque chose : force fois distance. Soulevez un sac de 10 kg sur 1 m et vous fournissez environ 98 J de travail.
+me-energy.c0.viz.f	W = F × d
+me-energy.c0.viz.items.0.s	F
+me-energy.c0.viz.items.0.m	force (N)
+me-energy.c0.viz.items.1.s	d
+me-energy.c0.viz.items.1.m	distance (m)
+me-energy.c0.viz.items.2.s	W
+me-energy.c0.viz.items.2.m	joules (J)
+me-energy.c1.title	L'énergie potentielle
+me-energy.c1.text	Élever quelque chose stocke de l'énergie qui peut être libérée à la chute. Les barrages hydroélectriques l'exploitent avec des millions de tonnes d'eau.
+me-energy.c1.example.0	1 tonne d'eau tombant de 100 m
+me-energy.c1.example.1	1 000 × 9,81 × 100
+me-energy.c1.example.2	≈ 0,98 MJ ≈ 0,27 kWh
+me-energy.c1.viz.f	E = m × g × h
+me-energy.c1.viz.items.0.s	m
+me-energy.c1.viz.items.0.m	masse (kg)
+me-energy.c1.viz.items.1.s	g
+me-energy.c1.viz.items.1.m	9,81 m/s²
+me-energy.c1.viz.items.2.s	h
+me-energy.c1.viz.items.2.m	hauteur (m)
+me-energy.c2.title	L'énergie cinétique
+me-energy.c2.text	Les objets en mouvement portent une énergie qui croît avec le carré de la vitesse. Doublez la vitesse et l'énergie est multipliée par quatre, d'où l'importance de la vitesse dans les accidents.
+me-energy.c2.example.0	Voiture de 1 500 kg à 50 km/h contre 100 km/h
+me-energy.c2.example.1	145 kJ contre 579 kJ
+me-energy.c2.example.2	4× l'énergie
+me-energy.c2.viz.f	E = ½ × m × v²
+me-energy.c2.viz.items.0.s	m
+me-energy.c2.viz.items.0.m	masse
+me-energy.c2.viz.items.1.s	v
+me-energy.c2.viz.items.1.m	vitesse (m/s)
+me-energy.c3.title	La puissance
+me-energy.c3.text	La puissance est la vitesse à laquelle le travail est fourni : des joules par seconde, ou watts. Un cycliste costaud soutient environ 200 à 300 W ; un moteur de voiture délivre de quelques dizaines à plusieurs centaines de kW.
+me-energy.c3.viz.unit	watts (soutenus, approx.)
+me-energy.c3.viz.items.0.l	Personne qui marche
+me-energy.c3.viz.items.1.l	Cycliste en forme
+me-energy.c3.viz.items.2.l	Cheval
+me-energy.c3.viz.items.3.l	Petite voiture
+me-energy.c4.title	Le cheval-vapeur
+me-energy.c4.text	James Watt a défini le cheval-vapeur pour vendre des machines à vapeur : environ 746 W dans la version impériale. Le cheval-vapeur métrique (ch en France) vaut environ 735 W.
+me-energy.c4.viz.items.0.a	1 hp
+me-energy.c4.viz.items.0.b	746 W
+me-energy.c4.viz.items.1.a	1 ch (métrique)
+me-energy.c4.viz.items.1.b	735 W
+me-energy.c4.viz.items.2.a	100 kW
+me-energy.c4.viz.items.2.b	environ 136 ch
+me-energy.c5.title	Le rendement
+me-energy.c5.text	Aucune machine ne convertit toute l'énergie reçue en sortie utile ; une partie devient chaleur ou bruit. Le rendement est la sortie utile divisée par l'entrée.
+me-energy.c5.viz.unit	% de rendement (typique)
+me-energy.c5.viz.items.0.l	Ampoule à incandescence
+me-energy.c5.viz.items.1.l	Moteur essence
+me-energy.c5.viz.items.2.l	Moteur électrique
+me-energy.c5.viz.items.3.l	Gros transformateur
+me-energy.c6.title	L'énergie se conserve
+me-energy.c6.text	L'énergie change de forme, mais le total reste le même. Des montagnes russes en chute transforment l'énergie potentielle en énergie cinétique, puis l'inverse, moins les pertes par frottement.
+me-energy.c6.viz.steps.0	Sommet : énergie potentielle
+me-energy.c6.viz.steps.1	Chute : énergie cinétique
+me-energy.c6.viz.steps.2	Montée : retour au potentiel
+me-energy.c6.viz.steps.3	Le frottement en convertit en chaleur
+me-energy.c7.title	Joules et kWh
+me-energy.c7.text	Les ingénieurs utilisent les joules ; les factures d'électricité, les kWh. Un kWh vaut 3,6 millions de joules, l'énergie d'un radiateur de 1 kW qui fonctionne pendant une heure.
+me-energy.c7.viz.f	1 kWh = 3,6 MJ
+me-energy.c7.viz.items.0.s	1 kW
+me-energy.c7.viz.items.0.m	puissance
+me-energy.c7.viz.items.1.s	1 h
+me-energy.c7.viz.items.1.m	3 600 s
+me-energy.c8.title	L'énergie des carburants
+me-energy.c8.text	Un litre d'essence contient environ 9 kWh d'énergie chimique, ce qui explique pourquoi les carburants liquides ont été si difficiles à battre. Les batteries au lithium en contiennent bien moins par kilo, mais les motorisations électriques utilisent l'énergie bien plus efficacement.
+me-energy.c8.viz.unit	kWh par kg (approx.)
+me-energy.c8.viz.items.0.l	Batterie Li-ion
+me-energy.c8.viz.items.1.l	Bois
+me-energy.c8.viz.items.2.l	Essence
+me-energy.c8.viz.items.3.l	Hydrogène
+me-energy.c9.title	Les ressorts
+me-energy.c9.text	Un ressort stocke de l'énergie quand on l'étire ou le comprime. Sa force est proportionnelle à son déplacement (loi de Hooke), ce qu'on exploite dans les suspensions, les balances et les horloges.
+me-energy.c9.viz.f	F = k × x
+me-energy.c9.viz.items.0.s	k
+me-energy.c9.viz.items.0.m	raideur du ressort (N/m)
+me-energy.c9.viz.items.1.s	x
+me-energy.c9.viz.items.1.m	déplacement (m)
+me-fluids.title	Fluides et hydraulique
+me-fluids.summary	La pression, la flottabilité et la puissance des liquides.
+me-fluids.q0.q	De combien la pression augmente-t-elle environ par tranche de 10 m de profondeur d'eau ?
+me-fluids.q0.o0	0,1 bar
+me-fluids.q0.o1	1 bar
+me-fluids.q0.o2	10 bar
+me-fluids.q0.x	Environ 1 bar tous les 10 m.
+me-fluids.q1.q	Un cric hydraulique avec un rapport de surfaces de 20 transforme 50 N en…
+me-fluids.q1.o0	70 N
+me-fluids.q1.o1	1 000 N
+me-fluids.q1.o2	2,5 N
+me-fluids.q1.x	50 × 20 = 1 000 N.
+me-fluids.q2.q	Pourquoi un navire en acier flotte-t-il ?
+me-fluids.q2.o0	L'acier est léger
+me-fluids.q2.o1	Sa forme déplace un poids d'eau supérieur au sien
+me-fluids.q2.o2	L'air le pousse vers le haut
+me-fluids.q2.x	Principe d'Archimède.
+me-fluids.c0.title	La pression
+me-fluids.c0.text	La pression est une force répartie sur une surface. Un talon aiguille appuie bien plus fort sur le sol que le pied d'un éléphant, car sa surface est minuscule.
+me-fluids.c0.viz.f	p = F ÷ A
+me-fluids.c0.viz.items.0.s	p
+me-fluids.c0.viz.items.0.m	pascals (N/m²)
+me-fluids.c0.viz.items.1.s	F
+me-fluids.c0.viz.items.1.m	force
+me-fluids.c0.viz.items.2.s	A
+me-fluids.c0.viz.items.2.m	surface
+me-fluids.c1.title	La pression dans l'eau
+me-fluids.c1.text	La pression de l'eau augmente avec la profondeur, d'environ 1 bar tous les 10 mètres. Les plongeurs la sentent dans leurs oreilles ; les barrages sont plus épais à la base pour la même raison.
+me-fluids.c1.viz.f	p = ρ × g × h
+me-fluids.c1.viz.items.0.s	ρ
+me-fluids.c1.viz.items.0.m	1 000 kg/m³
+me-fluids.c1.viz.items.1.s	g
+me-fluids.c1.viz.items.2.s	h
+me-fluids.c1.viz.items.2.m	profondeur → 10 m ≈ 1 bar
+me-fluids.c2.title	La pression atmosphérique
+me-fluids.c2.text	L'air au-dessus de nous appuie avec environ 1 bar (101 kPa) au niveau de la mer, soit à peu près 10 tonnes sur chaque mètre carré. Nous ne le remarquons pas, car il pousse également de tous les côtés.
+me-fluids.c2.viz.unit	bar (approx.)
+me-fluids.c2.viz.items.0.l	Sommet de l'Everest
+me-fluids.c2.viz.items.1.l	Lisbonne
+me-fluids.c2.viz.items.2.l	10 m sous l'eau
+me-fluids.c2.viz.items.3.l	Pneu de voiture
+me-fluids.c3.title	Le principe de Pascal
+me-fluids.c3.text	La pression dans un liquide fermé se transmet également dans toutes les directions. Poussez un petit piston et un grand piston subit la même pression sur une plus grande surface, ce qui donne une force plus grande.
+me-fluids.c3.example.0	100 N sur 1 cm², sortie de 50 cm²
+me-fluids.c3.example.1	100 × 50
+me-fluids.c3.example.2	= 5 000 N soulevés
+me-fluids.c3.viz.f	F₂ = F₁ × A₂ ÷ A₁
+me-fluids.c3.viz.items.0.s	F₁
+me-fluids.c3.viz.items.0.m	petite poussée
+me-fluids.c3.viz.items.1.s	A₂ ÷ A₁
+me-fluids.c3.viz.items.1.m	rapport des surfaces
+me-fluids.c3.viz.items.2.s	F₂
+me-fluids.c3.viz.items.2.m	grande force
+me-fluids.c4.title	L'hydraulique partout
+me-fluids.c4.text	Les freins de voiture, les pelleteuses, les élévateurs et les presses utilisent un fluide hydraulique pour multiplier la force et la transmettre par des flexibles.
+me-fluids.c4.viz.items.0	Freins de voiture
+me-fluids.c4.viz.items.1	Bras de pelleteuse
+me-fluids.c4.viz.items.2	Ponts élévateurs de garage
+me-fluids.c4.viz.items.3	Presses hydrauliques
+me-fluids.c4.viz.items.4	Commandes d'avion
+me-fluids.c5.title	La flottabilité
+me-fluids.c5.text	Un objet dans un fluide est poussé vers le haut par une force égale au poids du fluide qu'il déplace (Archimède). Si elle dépasse son propre poids, il flotte. Les navires en acier flottent parce que leur forme déplace beaucoup d'eau.
+me-fluids.c5.viz.steps.0	L'objet déplace de l'eau
+me-fluids.c5.viz.steps.1	Poussée = poids de l'eau déplacée
+me-fluids.c5.viz.steps.2	Poussée
+me-fluids.c5.viz.steps.3	poids : il flotte
+me-fluids.c6.title	L'écoulement dans les tuyaux
+me-fluids.c6.text	Le débit est égal à la vitesse multipliée par la section du tuyau. Pincez un tuyau d'arrosage et l'eau accélère. Les tuyaux étroits demandent plus de pression pour le même débit, à cause du frottement.
+me-fluids.c6.viz.f	Q = v × A
+me-fluids.c6.viz.items.0.s	Q
+me-fluids.c6.viz.items.0.m	débit
+me-fluids.c6.viz.items.1.s	v
+me-fluids.c6.viz.items.1.m	vitesse
+me-fluids.c6.viz.items.2.s	A
+me-fluids.c6.viz.items.2.m	section
+me-fluids.c7.title	Bernoulli
+me-fluids.c7.text	Là où un fluide va plus vite, sa pression baisse. Cela aide à expliquer les carburateurs, les atomiseurs et une partie de la portance des ailes et des voiles.
+me-fluids.c7.viz.l.t	Fluide lent
+me-fluids.c7.viz.l.items.0	pression plus élevée
+me-fluids.c7.viz.r.t	Fluide rapide
+me-fluids.c7.viz.r.items.0	pression plus basse
+me-fluids.c8.title	Les siphons
+me-fluids.c8.text	Un siphon fait passer un liquide par-dessus un obstacle puis vers un point plus bas sans pompe, à condition que la sortie soit sous la source et que le tube soit plein au départ.
+me-fluids.c8.viz.steps.0	Tube rempli de liquide
+me-fluids.c8.viz.steps.1	Sortie sous la source
+me-fluids.c8.viz.steps.2	La gravité tire le côté long
+me-fluids.c8.viz.steps.3	L'écoulement continue
+me-fluids.c9.title	La viscosité
+me-fluids.c9.text	La viscosité est l'épaisseur d'un fluide : le miel est visqueux, l'eau non. Les grades d'huile comme 5W-30 décrivent la viscosité à froid (5W) et à chaud (30).
+me-fluids.c9.viz.items.0.a	eau
+me-fluids.c9.viz.items.0.b	faible viscosité
+me-fluids.c9.viz.items.1.a	huile moteur
+me-fluids.c9.viz.items.1.b	moyenne
+me-fluids.c9.viz.items.2.a	miel
+me-fluids.c9.viz.items.2.b	élevée
+me-fluids.c9.viz.items.3.a	5W-30
+me-fluids.c9.viz.items.3.b	indice à froid / à chaud
+me-flight.title	Comment volent les avions
+me-flight.summary	Portance, traînée, poussée et poids.
+me-flight.q0.q	Que se passe-t-il lors d'un décrochage ?
+me-flight.q0.o0	Le moteur s'arrête
+me-flight.q0.o1	L'écoulement d'air se décolle de l'aile et la portance chute brutalement
+me-flight.q0.o2	L'avion accélère
+me-flight.q0.x	Angle d'attaque trop élevé.
+me-flight.q1.q	Doubler la vitesse change la traînée d'un facteur d'environ…
+me-flight.q1.o0	2
+me-flight.q1.o1	4
+me-flight.q1.o2	8
+me-flight.q1.x	La traînée croît avec le carré de la vitesse.
+me-flight.q2.q	Quelle gouverne fait rouler l'avion ?
+me-flight.q2.o0	La dérive (gouverne de direction)
+me-flight.q2.o1	La gouverne de profondeur
+me-flight.q2.o2	Les ailerons
+me-flight.q2.x	Les ailerons se déplacent en sens opposés sur chaque aile.
+me-flight.c0.title	Les quatre forces
+me-flight.c0.text	En vol stabilisé, la portance équilibre le poids et la poussée équilibre la traînée. Pour monter, la portance dépasse le poids ; pour accélérer, la poussée dépasse la traînée.
+me-flight.c0.viz.l.t	Haut et bas
+me-flight.c0.viz.l.items.0	portance contre poids
+me-flight.c0.viz.r.t	Avant et arrière
+me-flight.c0.viz.r.items.0	poussée contre traînée
+me-flight.c1.title	Comment les ailes créent la portance
+me-flight.c1.text	Une aile est profilée et inclinée (angle d'attaque) pour dévier l'air vers le bas. Pousser l'air vers le bas pousse l'aile vers le haut (troisième loi de Newton), avec une pression plus basse au-dessus de l'aile et plus haute en dessous.
+me-flight.c1.viz.steps.0	Aile inclinée face au vent relatif
+me-flight.c1.viz.steps.1	Air dévié vers le bas
+me-flight.c1.viz.steps.2	Pression plus basse au-dessus
+me-flight.c1.viz.steps.3	Portance vers le haut
+me-flight.c2.title	L'équation de la portance
+me-flight.c2.text	La portance croît avec la densité de l'air, la surface de l'aile et le carré de la vitesse. C'est pourquoi les avions ont besoin de longues pistes dans les aéroports chauds et en altitude, où l'air est moins dense.
+me-flight.c2.viz.f	L = ½ × ρ × v² × S × CL
+me-flight.c2.viz.items.0.s	ρ
+me-flight.c2.viz.items.0.m	densité de l'air
+me-flight.c2.viz.items.1.s	v
+me-flight.c2.viz.items.1.m	vitesse
+me-flight.c2.viz.items.2.s	S
+me-flight.c2.viz.items.2.m	surface alaire
+me-flight.c2.viz.items.3.s	CL
+me-flight.c2.viz.items.3.m	coefficient de portance
+me-flight.c3.title	Le décrochage
+me-flight.c3.text	Augmentez trop l'angle d'attaque et l'écoulement d'air se décolle de la surface supérieure. La portance s'effondre soudainement : c'est un décrochage. Les pilotes s'entraînent à le reconnaître et à le récupérer.
+me-flight.c3.viz.steps.0	Angle d'attaque trop élevé
+me-flight.c3.viz.steps.1	L'écoulement se décolle
+me-flight.c3.viz.steps.2	La portance chute
+me-flight.c3.viz.steps.3	Piquer pour récupérer
+me-flight.c4.title	Volets et becs
+me-flight.c4.text	Au décollage et à l'atterrissage, des volets et des becs sortent de l'aile pour augmenter sa surface et sa courbure, ce qui donne plus de portance à basse vitesse.
+me-flight.c4.viz.l.t	Croisière
+me-flight.c4.viz.l.items.0	aile lisse
+me-flight.c4.viz.l.items.1	faible traînée
+me-flight.c4.viz.l.items.2	grande vitesse
+me-flight.c4.viz.r.t	Atterrissage
+me-flight.c4.viz.r.items.0	volets et becs sortis
+me-flight.c4.viz.r.items.1	plus de portance
+me-flight.c4.viz.r.items.2	approche lente
+me-flight.c5.title	La traînée
+me-flight.c5.text	La traînée vient du frottement avec l'air et de la différence de pression derrière l'objet. Elle croît avec le carré de la vitesse : aller plus vite coûte beaucoup plus de carburant.
+me-flight.c5.viz.unit	traînée relative
+me-flight.c5.viz.items.0.l	100 km/h
+me-flight.c5.viz.items.1.l	200 km/h
+me-flight.c5.viz.items.2.l	300 km/h
+me-flight.c6.title	Les réacteurs
+me-flight.c6.text	Un turboréacteur à double flux aspire l'air, le comprime, y brûle du carburant et expulse les gaz chauds vers l'arrière. Sur les avions de ligne, l'essentiel de la poussée vient de la grande soufflante qui propulse l'air autour du cœur.
+me-flight.c6.viz.steps.0	La soufflante aspire l'air
+me-flight.c6.viz.steps.1	Le compresseur le comprime
+me-flight.c6.viz.steps.2	Combustion
+me-flight.c6.viz.steps.3	Turbine et échappement poussent l'avion
+me-flight.c7.title	Pourquoi les avions de ligne croisent haut
+me-flight.c7.text	À environ 10 à 12 km d'altitude, l'air est ténu : la traînée est bien plus faible et les réacteurs plus efficaces. Les cabines sont pressurisées à l'équivalent d'environ 2 000 m.
+me-flight.c7.viz.items.0.v	11 km
+me-flight.c7.viz.items.0.l	altitude de croisière typique
+me-flight.c7.viz.items.1.v	−55 °C
+me-flight.c7.viz.items.1.l	air extérieur
+me-flight.c7.viz.items.2.v	~2 000 m
+me-flight.c7.viz.items.2.l	altitude-cabine
+me-flight.c8.title	Les gouvernes
+me-flight.c8.text	Les ailerons, sur les ailes, font rouler l'avion ; la gouverne de profondeur, sur l'empennage, le fait cabrer ou piquer ; et la gouverne de direction le fait pivoter à gauche ou à droite (lacet).
+me-flight.c8.viz.items.0.a	ailerons
+me-flight.c8.viz.items.0.b	roulis
+me-flight.c8.viz.items.1.a	profondeur
+me-flight.c8.viz.items.1.b	tangage
+me-flight.c8.viz.items.2.a	direction
+me-flight.c8.viz.items.2.b	lacet
+me-flight.c8.viz.items.3.a	volets
+me-flight.c8.viz.items.3.b	portance en plus
+me-flight.c9.title	Les drones
+me-flight.c9.text	Les drones multirotors n'ont pas d'ailes ; ils créent la portance avec des hélices qui tournent. Ils se dirigent en accélérant certains moteurs et en ralentissant d'autres, un contrôleur de vol ajustant des centaines de fois par seconde.
+me-flight.c9.viz.steps.0	Gyroscope et accéléromètre
+me-flight.c9.viz.steps.1	Contrôleur de vol
+me-flight.c9.viz.steps.2	Réglage de chaque moteur
+me-flight.c9.viz.steps.3	Vol stationnaire stable
+me-bridges.title	Les ponts
+me-bridges.summary	Poutre, arc, suspendu et à haubans.
+me-bridges.q0.q	Quel type de pont supporte les charges principalement en compression ?
+me-bridges.q0.o0	Suspendu
+me-bridges.q0.o1	En arc
+me-bridges.q0.o2	À haubans
+me-bridges.q0.x	Les arcs poussent les charges vers les culées.
+me-bridges.q1.q	Le pont du 25 avril à Lisbonne est un…
+me-bridges.q1.o0	Pont à poutres
+me-bridges.q1.o1	Pont en arc
+me-bridges.q1.o2	Pont suspendu
+me-bridges.q1.x	Les câbles principaux sont suspendus à des pylônes.
+me-bridges.q2.q	Qu'est-ce qui a détruit le pont de Tacoma Narrows en 1940 ?
+me-bridges.q2.o0	Un séisme
+me-bridges.q2.o1	Des oscillations de torsion provoquées par le vent
+me-bridges.q2.o2	La collision d'un navire
+me-bridges.q2.x	Une instabilité aérodynamique.
+me-bridges.c0.title	Les principaux types de ponts
+me-bridges.c0.text	Les ponts gèrent les charges de façons différentes : les poutres fléchissent, les arcs se compriment, les câbles des ponts suspendus tirent, et les pylônes des ponts à haubans retiennent le tablier avec des câbles droits.
+me-bridges.c0.viz.root	Ponts
+me-bridges.c0.viz.items.0	Poutre
+me-bridges.c0.viz.items.1	Arc
+me-bridges.c0.viz.items.2	Suspendu
+me-bridges.c0.viz.items.3	À haubans
+me-bridges.c1.title	Les ponts à poutres
+me-bridges.c1.text	Le pont le plus simple : une poutre sur des appuis. Économique et rapide pour de courtes portées, mais il faut des poutres de plus en plus hautes quand la portée augmente ; on les rend donc souvent continues sur de nombreuses piles.
+me-bridges.c1.viz.items.0.a	portée
+me-bridges.c1.viz.items.0.b	jusqu'à ~250 m (grandes poutres)
+me-bridges.c1.viz.items.1.a	idéal pour
+me-bridges.c1.viz.items.1.b	passages supérieurs d'autoroute
+me-bridges.c1.viz.items.2.a	structure
+me-bridges.c1.viz.items.2.b	flexion
+me-bridges.c2.title	Les ponts en arc
+me-bridges.c2.text	Les arcs transmettent les charges par compression à de solides culées. Des arcs de pierre tiennent depuis 2 000 ans. Le pont Dom Luís I de Porto (1886) est un arc en fer à deux tabliers au-dessus du Douro.
+me-bridges.c2.viz.items.0.a	fonctionne par
+me-bridges.c2.viz.items.0.b	compression
+me-bridges.c2.viz.items.1.a	exige
+me-bridges.c2.viz.items.1.b	de solides culées
+me-bridges.c2.viz.items.2.a	exemple
+me-bridges.c2.viz.items.2.b	Dom Luís I, Porto
+me-bridges.c3.title	Les ponts suspendus
+me-bridges.c3.text	Les câbles principaux pendent de hauts pylônes et sont ancrés à chaque extrémité ; des suspentes verticales retiennent le tablier. Ils atteignent les plus longues portées. Le pont du 25 avril à Lisbonne (1966) en est un.
+me-bridges.c3.viz.steps.0	Charge du tablier
+me-bridges.c3.viz.steps.1	Suspentes verticales
+me-bridges.c3.viz.steps.2	Câbles principaux
+me-bridges.c3.viz.steps.3	Pylônes et ancrages
+me-bridges.c4.title	Les ponts à haubans
+me-bridges.c4.text	Des câbles droits vont directement des pylônes au tablier, en éventail ou en harpe. Efficaces pour des portées moyennes à longues et rapides à construire. Le pont Vasco da Gama, à Lisbonne, a une travée principale à haubans.
+me-bridges.c4.viz.l.t	Suspendu
+me-bridges.c4.viz.l.items.0	câbles tendus entre les pylônes
+me-bridges.c4.viz.l.items.1	plus longues portées
+me-bridges.c4.viz.r.t	À haubans
+me-bridges.c4.viz.r.items.0	câbles droits vers le tablier
+me-bridges.c4.viz.r.items.1	portées moyennes à longues
+me-bridges.c5.title	Les ponts portugais
+me-bridges.c5.text	Le Portugal compte des ponts remarquables, dont plusieurs de l'entreprise de Gustave Eiffel et d'Edgar Cardoso.
+me-bridges.c5.viz.events.0.l	Maria Pia (Eiffel), Porto
+me-bridges.c5.viz.events.1.l	Dom Luís I, Porto
+me-bridges.c5.viz.events.2.l	25 avril, Lisbonne
+me-bridges.c5.viz.events.3.l	Vasco da Gama, Lisbonne (17 km)
+me-bridges.c6.title	Le vent et Tacoma Narrows
+me-bridges.c6.text	En 1940, le pont suspendu de Tacoma Narrows, aux États-Unis, s'est disloqué en se tordant sous un vent modéré, à cause d'une instabilité aérodynamique. Depuis, les tabliers sont testés en soufflerie et profilés pour l'éviter.
+me-bridges.c6.viz.steps.0	Vent sur un tablier souple
+me-bridges.c6.viz.steps.1	La torsion s'amplifie
+me-bridges.c6.viz.steps.2	Effondrement (1940)
+me-bridges.c6.viz.steps.3	Essais en soufflerie depuis
+me-bridges.c7.title	Les joints de dilatation
+me-bridges.c7.text	Les ponts se dilatent et se contractent avec la température. Les joints de dilatation (les dents métalliques que l'on franchit en voiture) et les appuis glissants leur permettent de bouger sans se fissurer.
+me-bridges.c7.viz.items.0	Joints de dilatation
+me-bridges.c7.viz.items.1	Appuis glissants
+me-bridges.c7.viz.items.2	Prévoir la température
+me-bridges.c7.viz.items.3	Inspecter régulièrement
+me-bridges.c8.title	Fondations en rivière
+me-bridges.c8.text	Les piles en rivière doivent résister à l'affouillement : l'eau rapide qui creuse le lit autour d'elles. Beaucoup de ruines de ponts viennent de l'affouillement pendant les crues, pas de la structure elle-même.
+me-bridges.c8.viz.steps.0	La crue accélère autour de la pile
+me-bridges.c8.viz.steps.1	Lit érodé
+me-bridges.c8.viz.steps.2	Fondation sapée
+me-bridges.c8.viz.steps.3	Risque d'effondrement
+me-bridges.c9.title	Inspection et entretien
+me-bridges.c9.text	Les ponts sont inspectés régulièrement pour détecter fissures, corrosion, usure des appuis et affouillement. Des capteurs surveillent de plus en plus les déformations, les vibrations et les mouvements en temps réel.
+me-bridges.c9.viz.items.0	Inspections visuelles
+me-bridges.c9.viz.items.1	Contrôle de la corrosion des câbles et armatures
+me-bridges.c9.viz.items.2	Relevés d'affouillement sous l'eau
+me-bridges.c9.viz.items.3	Capteurs de surveillance structurelle
+me-buildings.title	Bâtiments et fondations
+me-buildings.summary	Du sol vers le haut.
+me-buildings.q0.q	Qu'est-ce que le tassement différentiel ?
+me-buildings.q0.o0	Toutes les parties s'enfoncent uniformément
+me-buildings.q0.o1	Une partie du bâtiment s'enfonce plus qu'une autre
+me-buildings.q0.o2	Le tassement après la pluie
+me-buildings.q0.x	Il provoque des fissures.
+me-buildings.q1.q	Qu'était la gaiola pombalina ?
+me-buildings.q1.o0	Une prison
+me-buildings.q1.o1	Une ossature de bois dans les murs pour résister aux séismes
+me-buildings.q1.o2	Un type de tuile
+me-buildings.q1.x	Utilisée dans la reconstruction de Lisbonne après 1755.
+me-buildings.q2.q	Quand utilise-t-on des pieux ?
+me-buildings.q2.o0	Sur du roc solide proche de la surface
+me-buildings.q2.o1	Sur sol meuble, pour atteindre des couches plus fermes
+me-buildings.q2.o2	Seulement pour les ponts
+me-buildings.q2.x	Ils transfèrent les charges vers des couches plus profondes.
+me-buildings.c0.title	Pourquoi des fondations ?
+me-buildings.c0.text	Les fondations répartissent le poids d'un bâtiment sur un sol capable de le porter sans s'enfoncer de façon inégale. Plus le sol est faible, plus les fondations sont larges ou profondes.
+me-buildings.c0.viz.steps.0	Poids du bâtiment
+me-buildings.c0.viz.steps.1	Les fondations le répartissent
+me-buildings.c0.viz.steps.2	Le sol le porte
+me-buildings.c0.viz.steps.3	Pas de tassement inégal
+me-buildings.c1.title	Fondations superficielles
+me-buildings.c1.text	Semelles filantes et isolées, ou radier, conviennent quand un sol ferme ou du roc est proche de la surface. Elles sont courantes pour les maisons.
+me-buildings.c1.viz.items.0.a	semelle filante
+me-buildings.c1.viz.items.0.b	sous les murs
+me-buildings.c1.viz.items.1.a	semelle isolée
+me-buildings.c1.viz.items.1.b	sous les poteaux
+me-buildings.c1.viz.items.2.a	radier
+me-buildings.c1.viz.items.2.b	dalle entière, sols faibles
+me-buildings.c2.title	Fondations profondes
+me-buildings.c2.text	Sur sol meuble, des pieux sont enfoncés ou forés jusqu'à des couches plus fermes et portent les charges par pointe et par frottement le long de leurs côtés. La Baixa de Lisbonne a été reconstruite après 1755 sur des pieux de bois.
+me-buildings.c2.viz.l.t	Superficielles
+me-buildings.c2.viz.l.items.0	sol ferme en surface
+me-buildings.c2.viz.l.items.1	économiques
+me-buildings.c2.viz.l.items.2	maisons
+me-buildings.c2.viz.r.t	Pieux
+me-buildings.c2.viz.r.items.0	sol meuble
+me-buildings.c2.viz.r.items.1	atteignent les couches profondes
+me-buildings.c2.viz.r.items.2	tours, ponts
+me-buildings.c3.title	Le tassement
+me-buildings.c3.text	Tous les bâtiments se tassent un peu. Les problèmes viennent du tassement différentiel, quand une partie s'enfonce plus qu'une autre, fissurant les murs et coinçant les portes.
+me-buildings.c3.viz.items.0.w	un angle sur remblai meuble
+me-buildings.c3.viz.items.0.r	fondations plus profondes ici
+me-buildings.c3.viz.items.1.w	fissures qui s'élargissent
+me-buildings.c3.viz.items.1.r	surveiller et enquêter
+me-buildings.c4.title	Murs et ossatures
+me-buildings.c4.text	Les bâtiments traditionnels ont des murs porteurs en pierre ou en brique. Les bâtiments modernes utilisent des ossatures de poteaux et de poutres en béton ou en acier, les murs ne faisant que combler les vides.
+me-buildings.c4.viz.l.t	Murs porteurs
+me-buildings.c4.viz.l.items.0	les murs portent les planchers
+me-buildings.c4.viz.l.items.1	peu d'ouvertures
+me-buildings.c4.viz.r.t	Ossature
+me-buildings.c4.viz.r.items.0	poteaux et poutres portent les charges
+me-buildings.c4.viz.r.items.1	murs de simple clôture
+me-buildings.c5.title	La cage pombaline
+me-buildings.c5.text	Après le séisme de 1755, Lisbonne a été reconstruite avec la « gaiola pombalina » : un treillis de bois de croix de Saint-André à l'intérieur de murs en maçonnerie, l'un des premiers systèmes de construction parasismique d'Europe.
+me-buildings.c5.viz.steps.0	Séisme de 1755
+me-buildings.c5.viz.steps.1	Reconstruction de la Baixa
+me-buildings.c5.viz.steps.2	Cage de bois dans les murs
+me-buildings.c5.viz.steps.3	Meilleure tenue aux séismes
+me-buildings.c6.title	Conception parasismique
+me-buildings.c6.text	Les normes sismiques exigent que les bâtiments oscillent sans s'effondrer : assemblages ductiles, contreventements, murs de refend, formes régulières. Certains utilisent des isolateurs à la base qui laissent le sol bouger sous eux.
+me-buildings.c6.viz.items.0	Ossatures ductiles
+me-buildings.c6.viz.items.1	Murs de refend et contreventements
+me-buildings.c6.viz.items.2	Plan régulier et symétrique
+me-buildings.c6.viz.items.3	Isolation à la base des bâtiments clés
+me-buildings.c7.title	Le vent sur les grands immeubles
+me-buildings.c7.text	Le vent pousse sur les grands immeubles et les fait osciller. Les ingénieurs les rigidifient avec des noyaux et des outriggers, et certains gratte-ciel utilisent d'immenses amortisseurs à masse accordée pour annuler le mouvement.
+me-buildings.c7.viz.steps.0	Le vent pousse la tour
+me-buildings.c7.viz.steps.1	Elle oscille
+me-buildings.c7.viz.steps.2	L'amortisseur va en sens inverse
+me-buildings.c7.viz.steps.3	Mouvement réduit
+me-buildings.c8.title	Humidité et infiltrations
+me-buildings.c8.text	L'eau est l'ennemie des bâtiments : remontées capillaires, fuites et condensation provoquent pourriture, moisissures et corrosion. Coupures de capillarité, bonnes toitures, gouttières et ventilation la tiennent à distance.
+me-buildings.c8.viz.items.0	Coupure de capillarité
+me-buildings.c8.viz.items.1	Toit sain et solins
+me-buildings.c8.viz.items.2	Gouttières et drainage
+me-buildings.c8.viz.items.3	Ventilation
+me-buildings.c8.viz.items.4	Pare-vapeur
+me-buildings.c9.title	Burj Khalifa
+me-buildings.c9.text	Le plus haut bâtiment du monde, à Dubaï, mesure 828 m. Son plan en Y et ses retraits déroutent le vent, et ses fondations comptent 192 pieux d'environ 50 m de long.
+me-buildings.c9.viz.items.0.v	828 m
+me-buildings.c9.viz.items.0.l	hauteur
+me-buildings.c9.viz.items.1.l	étages
+me-buildings.c9.viz.items.2.l	pieux (approx.)
+me-engines.title	Les moteurs
+me-engines.summary	Comment les moteurs essence et diesel transforment le carburant en mouvement.
+me-engines.q0.q	Qu'est-ce qui enflamme le carburant dans un moteur diesel ?
+me-engines.q0.o0	Une bougie
+me-engines.q0.o1	La chaleur d'un air fortement comprimé
+me-engines.q0.o2	La batterie
+me-engines.q0.x	Allumage par compression.
+me-engines.q1.q	Qu'utilise un turbocompresseur pour comprimer l'air d'admission ?
+me-engines.q1.o0	L'électricité
+me-engines.q1.o1	L'énergie des gaz d'échappement
+me-engines.q1.o2	Le liquide de refroidissement
+me-engines.q1.x	L'échappement fait tourner la turbine.
+me-engines.q2.q	Quelle part de l'énergie du carburant devient du travail utile dans un moteur de voiture à essence ?
+me-engines.q2.o0	90 %
+me-engines.q2.o1	Environ 30 %
+me-engines.q2.o2	5 %
+me-engines.q2.x	Le reste est perdu en chaleur.
+me-engines.c0.title	Le cycle à quatre temps
+me-engines.c0.text	La plupart des moteurs de voiture répètent quatre temps : aspirer l'air et le carburant, les comprimer, les enflammer pour qu'ils poussent le piston, puis chasser les gaz d'échappement. « Admission, compression, explosion, échappement. »
+me-engines.c0.viz.steps.0	Admission
+me-engines.c0.viz.steps.1	Compression
+me-engines.c0.viz.steps.2	Explosion
+me-engines.c0.viz.steps.3	Échappement
+me-engines.c1.title	Le vilebrequin
+me-engines.c1.text	Les pistons montent et descendent ; le vilebrequin transforme ce mouvement en rotation, comme des jambes qui poussent les pédales d'un vélo. Un volant d'inertie lisse les à-coups.
+me-engines.c1.viz.steps.0	Le piston est poussé vers le bas
+me-engines.c1.viz.steps.1	Bielle
+me-engines.c1.viz.steps.2	Le vilebrequin tourne
+me-engines.c1.viz.steps.3	Boîte de vitesses et roues
+me-engines.c2.title	Essence ou diesel
+me-engines.c2.text	Les moteurs à essence utilisent une étincelle pour enflammer le mélange. Les diesels compriment l'air au point qu'il devient assez chaud pour enflammer le carburant injecté. Les diesels sont plus efficaces mais plus lourds et produisent plus de NOx et de particules.
+me-engines.c2.viz.l.t	Essence
+me-engines.c2.viz.l.items.0	allumage par étincelle
+me-engines.c2.viz.l.items.1	plus léger
+me-engines.c2.viz.l.items.2	monte plus haut en régime
+me-engines.c2.viz.r.t	Diesel
+me-engines.c2.viz.r.items.0	allumage par compression
+me-engines.c2.viz.r.items.1	plus efficace
+me-engines.c2.viz.r.items.2	plus de couple
+me-engines.c3.title	Rapport de compression
+me-engines.c3.text	Une compression plus élevée extrait plus d'énergie du carburant. Les moteurs à essence tournent autour de 10:1, les diesels autour de 15 à 20:1. Trop élevée dans un moteur à essence, elle provoque du cliquetis.
+me-engines.c3.viz.unit	rapport de compression (typique)
+me-engines.c3.viz.items.0.l	Essence
+me-engines.c3.viz.items.1.l	Essence récent (injection directe)
+me-engines.c3.viz.items.2.l	Diesel
+me-engines.c4.title	Les turbocompresseurs
+me-engines.c4.text	Un turbo utilise les gaz d'échappement pour faire tourner une turbine qui comprime l'air d'admission, ce qui force plus d'air et de carburant dans les cylindres. De petits moteurs peuvent produire une grande puissance.
+me-engines.c4.viz.steps.0	L'échappement fait tourner la turbine
+me-engines.c4.viz.steps.1	Le compresseur force l'air
+me-engines.c4.viz.steps.2	Plus de carburant brûlé
+me-engines.c4.viz.steps.3	Plus de puissance
+me-engines.c5.title	Couple et puissance
+me-engines.c5.text	Le couple est la force de torsion ; la puissance est le couple multiplié par la vitesse de rotation. Les diesels délivrent un fort couple à bas régime ; les moteurs à essence atteignent souvent leur puissance maximale à haut régime.
+me-engines.c5.viz.f	P = couple × ω
+me-engines.c5.viz.items.0.m	ω = tr/min × 2π ÷ 60
+me-engines.c5.viz.items.1.s	300 N·m à 3 000 tr/min
+me-engines.c5.viz.items.1.m	≈ 94 kW
+me-engines.c6.title	Les boîtes de vitesses
+me-engines.c6.text	Les moteurs travaillent mieux dans une plage de vitesse étroite. Les rapports permettent au moteur d'y rester, que la voiture avance au pas ou file en croisière. Les moteurs électriques tournent dans une plage si large qu'ils n'ont généralement besoin que d'un seul rapport.
+me-engines.c6.viz.l.t	Voiture thermique
+me-engines.c6.viz.l.items.0	5 à 10 rapports
+me-engines.c6.viz.l.items.1	garde le moteur dans sa plage idéale
+me-engines.c6.viz.r.t	Électrique
+me-engines.c6.viz.r.items.0	généralement un seul rapport
+me-engines.c6.viz.r.items.1	moteur utilisable de 0 à ~15 000 tr/min
+me-engines.c7.title	Le refroidissement
+me-engines.c7.text	Environ un tiers de l'énergie du carburant part en chaleur par le système de refroidissement, et un autre tiers par l'échappement. Le radiateur, le liquide de refroidissement et le thermostat maintiennent le moteur à sa température idéale.
+me-engines.c7.viz.unit	% de l'énergie du carburant (approx.)
+me-engines.c7.viz.items.0.l	Travail utile
+me-engines.c7.viz.items.1.l	Chaleur d'échappement
+me-engines.c7.viz.items.2.l	Refroidissement
+me-engines.c7.viz.items.3.l	Frottements, etc.
+me-engines.c8.title	Contrôle des émissions
+me-engines.c8.text	Les pots catalytiques transforment le monoxyde de carbone, le carburant imbrûlé et les NOx en gaz moins nocifs. Les filtres à particules piègent la suie ; l'AdBlue réduit les NOx des diesels.
+me-engines.c8.viz.items.0.a	pot catalytique
+me-engines.c8.viz.items.0.b	traite CO, HC, NOx
+me-engines.c8.viz.items.1.a	filtre à particules
+me-engines.c8.viz.items.1.b	piège la suie
+me-engines.c8.viz.items.2.a	AdBlue (SCR)
+me-engines.c8.viz.items.2.b	réduit les NOx du diesel
+me-engines.c9.title	Les hybrides
+me-engines.c9.text	Les hybrides associent un moteur thermique à un moteur électrique et une batterie, récupèrent l'énergie de freinage et aident le moteur à travailler efficacement. Les hybrides rechargeables peuvent rouler des dizaines de kilomètres en tout électrique.
+me-engines.c9.viz.l.t	Hybride complet
+me-engines.c9.viz.l.items.0	se recharge seul
+me-engines.c9.viz.l.items.1	petite batterie
+me-engines.c9.viz.r.t	Hybride rechargeable
+me-engines.c9.viz.r.items.0	recharge sur le réseau
+me-engines.c9.viz.r.items.1	40 à 80 km en électrique
+me-ev.title	Concevoir une voiture électrique
+me-ev.summary	Batterie, moteur, onduleur et gestion thermique.
+me-ev.q0.q	Quelle pièce convertit le courant continu de la batterie en courant alternatif pour le moteur ?
+me-ev.q0.o0	La boîte de vitesses
+me-ev.q0.o1	L'onduleur
+me-ev.q0.o2	La prise de recharge
+me-ev.q0.x	L'onduleur pilote le moteur.
+me-ev.q1.q	Pourquoi les véhicules électriques perdent-ils de l'autonomie en hiver ?
+me-ev.q1.o0	Les pneus rétrécissent
+me-ev.q1.o1	Les batteries froides sont moins efficaces et le chauffage consomme de l'énergie
+me-ev.q1.o2	Le moteur gèle
+me-ev.q1.x	La chimie et le chauffage de l'habitacle comptent tous deux.
+me-ev.q2.q	Quel est le coefficient de traînée typique d'un véhicule électrique efficace ?
+me-ev.q2.o0	0,8
+me-ev.q2.o1	Environ 0,2
+me-ev.q2.o2	2,0
+me-ev.q2.x	Les formes lisses donnent un Cx proche de 0,2.
+me-ev.c0.title	La chaîne de traction
+me-ev.c0.text	Un véhicule électrique a bien moins de pièces mobiles qu'une voiture thermique : un pack de batterie, un onduleur qui transforme le courant continu en alternatif triphasé, un moteur électrique et un réducteur à un seul rapport.
+me-ev.c0.viz.steps.0	Pack batterie (DC)
+me-ev.c0.viz.steps.1	Onduleur
+me-ev.c0.viz.steps.2	Moteur (AC triphasé)
+me-ev.c0.viz.steps.3	Réducteur
+me-ev.c0.viz.steps.4	Roues
+me-ev.c1.title	La plateforme « skateboard »
+me-ev.c1.text	La plupart des véhicules électriques installent la batterie à plat sous le plancher, entre les essieux. Cela abaisse le centre de gravité, libère de l'espace dans l'habitacle et rigidifie la caisse.
+me-ev.c1.viz.items.0	Batterie sous le plancher
+me-ev.c1.viz.items.1	Centre de gravité bas
+me-ev.c1.viz.items.2	Plancher plat
+me-ev.c1.viz.items.3	Moteurs sur les essieux
+me-ev.c2.title	Les onduleurs
+me-ev.c2.text	L'onduleur commute le courant continu de la batterie des milliers de fois par seconde avec des transistors en silicium ou en carbure de silicium, pour créer du courant alternatif à la fréquence dont le moteur a besoin. Le carbure de silicium réduit les pertes, surtout sur les voitures en 800 V.
+me-ev.c2.viz.l.t	IGBT silicium
+me-ev.c2.viz.l.items.0	éprouvé
+me-ev.c2.viz.l.items.1	moins cher
+me-ev.c2.viz.r.t	Carbure de silicium (SiC)
+me-ev.c2.viz.r.items.0	pertes plus faibles
+me-ev.c2.viz.r.items.1	tension plus élevée
+me-ev.c2.viz.r.items.2	plateformes 800 V
+me-ev.c3.title	Gestion thermique
+me-ev.c3.text	Les batteries aiment environ 20 à 40 °C. Des plaques de refroidissement liquide, des pompes à chaleur et le préconditionnement les y maintiennent pour une charge rapide et une longue durée de vie, et réutilisent la chaleur perdue pour chauffer l'habitacle.
+me-ev.c3.viz.unit	°C
+me-ev.c3.viz.items.0.l	charge lente
+me-ev.c3.viz.items.1.l	idéal
+me-ev.c3.viz.items.2.l	puissance réduite
+me-ev.c4.title	Efficacité en kWh/100 km
+me-ev.c4.text	La consommation d'un véhicule électrique se mesure en kWh pour 100 km. Une compacte peut consommer 14 à 16 ; un grand SUV 20 à 24. La vitesse, le froid et le vent l'augmentent beaucoup.
+me-ev.c4.viz.unit	kWh/100 km (typique)
+me-ev.c4.viz.items.0.l	Compacte
+me-ev.c4.viz.items.1.l	Berline moyenne
+me-ev.c4.viz.items.2.l	Grand SUV
+me-ev.c4.viz.items.3.l	Autoroute 130 km/h
+me-ev.c5.title	Pourquoi l'autonomie baisse en hiver
+me-ev.c5.text	Les batteries froides ont une résistance interne plus élevée, et chauffer l'habitacle consomme de l'énergie. L'autonomie peut baisser de 20 à 30 % par temps glacial ; les pompes à chaleur réduisent la perte.
+me-ev.c5.viz.items.0	La chimie de la batterie ralentit au froid
+me-ev.c5.viz.items.1	Chauffage de l'habitacle
+me-ev.c5.viz.items.2	Air plus dense, plus de traînée
+me-ev.c5.viz.items.3	Pneus hiver
+me-ev.c6.title	Aérodynamique
+me-ev.c6.text	À vitesse d'autoroute, l'essentiel de l'énergie sert à repousser l'air. Les véhicules électriques ont des dessous lisses, des poignées affleurantes et de faibles coefficients de traînée (Cx autour de 0,2 à 0,3).
+me-ev.c6.viz.unit	Cx (approx.)
+me-ev.c6.viz.items.0.l	SUV anguleux
+me-ev.c6.viz.items.1.l	Voiture typique
+me-ev.c6.viz.items.2.l	VE efficace
+me-ev.c7.title	Freinage régénératif
+me-ev.c7.text	Le moteur joue le rôle de générateur au ralentissement et récupère une partie de l'énergie. Les freins à friction sont toujours là pour les freinages appuyés et servent moins, donc durent bien plus longtemps.
+me-ev.c7.viz.steps.0	Lever le pied
+me-ev.c7.viz.steps.1	Le moteur devient générateur
+me-ev.c7.viz.steps.2	La batterie se recharge
+me-ev.c7.viz.steps.3	Plaquettes presque inutilisées
+me-ev.c8.title	Moins de pièces, moins d'entretien
+me-ev.c8.text	Pas de vidanges, de bougies, d'embrayage, d'échappement ni de courroie de distribution. L'entretien porte surtout sur les pneus, le liquide de frein, les filtres d'habitacle et le liquide de refroidissement.
+me-ev.c8.viz.l.t	Voiture thermique
+me-ev.c8.viz.l.items.0	huile, filtres, courroies, échappement, embrayage
+me-ev.c8.viz.r.t	Électrique
+me-ev.c8.viz.r.items.0	pneus, liquide de frein, filtre d'habitacle, liquide de refroidissement
+me-ev.c9.title	Garanties de batterie
+me-ev.c9.text	La plupart des constructeurs garantissent les batteries pendant environ 8 ans ou 160 000 km, généralement jusqu'à au moins 70 % de capacité. Les données réelles montrent que la plupart des packs se dégradent lentement.
+me-ev.c9.viz.items.0.v	8 ans
+me-ev.c9.viz.items.0.l	garantie typique
+me-ev.c9.viz.items.1.v	160 000 km
+me-ev.c9.viz.items.1.l	ou cette distance
+me-ev.c9.viz.items.2.l	capacité garantie
+me-thermo.title	Thermodynamique
+me-thermo.summary	La chaleur, les moteurs et pourquoi rien n'a un rendement de 100 %.
+me-thermo.q0.q	Quelle est la température la plus basse possible ?
+me-thermo.q0.o0	−100 °C
+me-thermo.q0.o1	−273,15 °C (0 K)
+me-thermo.q0.o2	0 °C
+me-thermo.q0.x	Le zéro absolu.
+me-thermo.q1.q	Une pompe à chaleur utilise du travail pour…
+me-thermo.q1.o0	Détruire de la chaleur
+me-thermo.q1.o1	Déplacer de la chaleur d'un endroit plus froid vers un endroit plus chaud
+me-thermo.q1.o2	Créer de l'énergie
+me-thermo.q1.x	Elle fait fonctionner le cycle frigorifique.
+me-thermo.q2.q	Un mur avec un coefficient U plus faible…
+me-thermo.q2.o0	Perd plus de chaleur
+me-thermo.q2.o1	Perd moins de chaleur
+me-thermo.q2.o2	Est toujours plus mince
+me-thermo.q2.x	Le coefficient U mesure le taux de déperdition de chaleur.
+me-thermo.c0.title	Température et chaleur
+me-thermo.c0.text	La température mesure la vitesse d'agitation des molécules. La chaleur est de l'énergie qui circule du plus chaud vers le plus froid à cause d'une différence de température.
+me-thermo.c0.viz.l.t	Température
+me-thermo.c0.viz.l.items.0	à quel point c'est chaud
+me-thermo.c0.viz.l.items.1	°C ou K
+me-thermo.c0.viz.r.t	Chaleur
+me-thermo.c0.viz.r.items.0	énergie en transit
+me-thermo.c0.viz.r.items.1	joules
+me-thermo.c1.title	Le zéro absolu
+me-thermo.c1.text	Rien ne peut être plus froid que −273,15 °C, le zéro absolu, où l'agitation moléculaire est minimale. L'échelle kelvin commence là : 0 K.
+me-thermo.c1.viz.items.0.a	0 K
+me-thermo.c1.viz.items.0.b	−273,15 °C
+me-thermo.c1.viz.items.1.a	273,15 K
+me-thermo.c1.viz.items.1.b	0 °C
+me-thermo.c1.viz.items.2.a	373,15 K
+me-thermo.c1.viz.items.2.b	100 °C
+me-thermo.c2.title	Premier principe
+me-thermo.c2.text	L'énergie ne peut être ni créée ni détruite. La chaleur apportée à un système sert à élever son énergie interne ou à produire du travail.
+me-thermo.c2.viz.f	ΔU = Q − W
+me-thermo.c2.viz.items.0.s	ΔU
+me-thermo.c2.viz.items.0.m	variation d'énergie interne
+me-thermo.c2.viz.items.1.s	Q
+me-thermo.c2.viz.items.1.m	chaleur reçue
+me-thermo.c2.viz.items.2.s	W
+me-thermo.c2.viz.items.2.m	travail fourni par le système
+me-thermo.c3.title	Second principe
+me-thermo.c3.text	La chaleur circule naturellement du chaud vers le froid, jamais l'inverse spontanément. Tout processus réel crée du désordre (entropie), ce qui explique qu'aucun moteur ne puisse transformer toute la chaleur en travail.
+me-thermo.c3.viz.steps.0	Source chaude
+me-thermo.c3.viz.steps.1	Le moteur fournit du travail
+me-thermo.c3.viz.steps.2	Le reste de la chaleur est rejeté
+me-thermo.c3.viz.steps.3	Source froide
+me-thermo.c4.title	Rendement de Carnot
+me-thermo.c4.text	Le rendement maximal possible d'un moteur thermique ne dépend que de ses températures chaude et froide, en kelvins.
+me-thermo.c4.example.0	Vapeur à 550 °C (823 K), rivière à 20 °C (293 K)
+me-thermo.c4.example.1	1 − 293 ÷ 823
+me-thermo.c4.example.2	≈ 64 % maximum
+me-thermo.c4.viz.f	η max = 1 − T froide ÷ T chaude
+me-thermo.c4.viz.items.0.s	T
+me-thermo.c4.viz.items.0.m	températures absolues (K)
+me-thermo.c5.title	Moteurs thermiques et pompes à chaleur
+me-thermo.c5.text	Un moteur thermique utilise un flux de chaleur pour produire du travail. Une pompe à chaleur fait l'inverse : elle utilise du travail pour déplacer la chaleur du froid vers le chaud. Même physique, sens opposé.
+me-thermo.c5.viz.l.t	Moteur thermique
+me-thermo.c5.viz.l.items.0	chaleur en entrée, travail en sortie
+me-thermo.c5.viz.l.items.1	moteur de voiture, centrale
+me-thermo.c5.viz.r.t	Pompe à chaleur
+me-thermo.c5.viz.r.items.0	travail en entrée, chaleur déplacée
+me-thermo.c5.viz.r.items.1	frigo, climatiseur
+me-thermo.c6.title	Le cycle frigorifique
+me-thermo.c6.text	Un fluide frigorigène s'évapore côté froid (il absorbe de la chaleur), est comprimé (il chauffe), se condense côté chaud (il libère de la chaleur) puis se détend. Les réfrigérateurs et les pompes à chaleur utilisent cette boucle.
+me-thermo.c6.viz.steps.0	Évaporation : absorbe la chaleur
+me-thermo.c6.viz.steps.1	Compression : chauffe
+me-thermo.c6.viz.steps.2	Condensation : libère la chaleur
+me-thermo.c6.viz.steps.3	Détente : refroidit
+me-thermo.c7.title	Chaleur massique et stockage
+me-thermo.c7.text	L'eau stocke beaucoup de chaleur par kilo, ce qui la rend idéale pour les systèmes de chauffage et les ballons de stockage thermique. La pierre et le béton stockent aussi la chaleur : l'inertie thermique garde les vieilles maisons fraîches en été.
+me-thermo.c7.viz.unit	J par kg par °C
+me-thermo.c7.viz.items.0.l	Acier
+me-thermo.c7.viz.items.1.l	Béton
+me-thermo.c7.viz.items.2.l	Air
+me-thermo.c7.viz.items.3.l	Eau
+me-thermo.c8.title	Isolation et coefficients U
+me-thermo.c8.text	Les déperditions par les murs se mesurent avec le coefficient U : les watts perdus par m² et par degré d'écart. Plus il est bas, mieux c'est. Un mur moderne bien isolé peut être sous 0,3 ; un ancien mur plein peut dépasser 1,5.
+me-thermo.c8.example.0	Mur de 50 m², U = 1,5, écart de 15 °C
+me-thermo.c8.example.1	1,5 × 50 × 15
+me-thermo.c8.example.2	= 1 125 W perdus
+me-thermo.c8.viz.f	Q = U × A × ΔT
+me-thermo.c8.viz.items.0.s	U
+me-thermo.c8.viz.items.0.m	W/m²·K
+me-thermo.c8.viz.items.1.s	A
+me-thermo.c8.viz.items.1.m	surface
+me-thermo.c8.viz.items.2.s	ΔT
+me-thermo.c8.viz.items.2.m	intérieur moins extérieur
+me-thermo.c9.title	Changements d'état
+me-thermo.c9.text	La fusion de la glace et l'ébullition de l'eau absorbent de grandes quantités d'énergie sans changer de température. Transformer 1 kg d'eau à 100 °C en vapeur demande environ 2,26 MJ, plus de cinq fois l'énergie nécessaire pour la chauffer de 0 à 100 °C.
+me-thermo.c9.viz.unit	kJ par kg d'eau

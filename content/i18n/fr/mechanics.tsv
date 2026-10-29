@@ -1198,3 +1198,618 @@ me-thermo.c8.viz.items.2.m	intérieur moins extérieur
 me-thermo.c9.title	Changements d'état
 me-thermo.c9.text	La fusion de la glace et l'ébullition de l'eau absorbent de grandes quantités d'énergie sans changer de température. Transformer 1 kg d'eau à 100 °C en vapeur demande environ 2,26 MJ, plus de cinq fois l'énergie nécessaire pour la chauffer de 0 à 100 °C.
 me-thermo.c9.viz.unit	kJ par kg d'eau
+me-thermo.c9.viz.items.0.l	Chauffer 0→100 °C
+me-thermo.c9.viz.items.1.l	Bouillir à 100 °C
+me-wood.title	Le bois et la menuiserie
+me-wood.summary	Fil, humidité, assemblages et bois de construction.
+me-wood.q0.q	Pourquoi laisser du jeu au bois dans un plancher ?
+me-wood.q0.o0	Pour économiser du bois
+me-wood.q0.o1	Le bois se rétracte et gonfle avec l'humidité
+me-wood.q0.o2	Pour les câbles
+me-wood.q0.x	L'humidité change ses dimensions.
+me-wood.q1.q	Le bois d'intérieur doit être séché à environ…
+me-wood.q1.o0	50 % d'humidité
+me-wood.q1.o1	8–12 % d'humidité
+me-wood.q1.o2	0 % d'humidité
+me-wood.q1.x	Il doit s'accorder à l'air intérieur.
+me-wood.q2.q	Quel pays est le premier producteur mondial de liège ?
+me-wood.q2.o0	L'Espagne
+me-wood.q2.o1	Le Portugal
+me-wood.q2.o2	La France
+me-wood.q2.x	Le Portugal fournit environ la moitié du liège mondial.
+me-wood.c0.title	Bois durs et bois tendres
+me-wood.c0.text	Les bois tendres viennent des conifères (pin, épicéa) : croissance rapide, légers, utilisés en structure. Les bois durs viennent des feuillus (chêne, châtaignier, eucalyptus) : en général plus denses et plus durables.
+me-wood.c0.viz.l.t	Bois tendre
+me-wood.c0.viz.l.items.0	pin, épicéa
+me-wood.c0.viz.l.items.1	léger
+me-wood.c0.viz.l.items.2	charpentes et toits
+me-wood.c0.viz.r.t	Bois dur
+me-wood.c0.viz.r.items.0	chêne, châtaignier
+me-wood.c0.viz.r.items.1	dense
+me-wood.c0.viz.r.items.2	sols, meubles, poutres
+me-wood.c1.title	Taux d'humidité
+me-wood.c1.text	Un bois fraîchement coupé peut contenir plus de 50 % d'eau en poids. Il se rétracte en séchant jusqu'à s'équilibrer avec l'humidité de l'air. Le bois d'intérieur doit être séché à environ 8–12 % avant usage.
+me-wood.c1.viz.items.0.l	meubles d'intérieur
+me-wood.c1.viz.items.1.l	bois d'extérieur
+me-wood.c1.viz.items.2.l	bois vert
+me-wood.c2.title	Le bois travaille
+me-wood.c2.text	Le bois se rétracte et gonfle bien plus en travers du fil que dans le sens du fil. Les portes coincent dans l'humidité de l'hiver, les planchers s'écartent pendant les étés secs. Une bonne menuiserie laisse de la place au mouvement.
+me-wood.c2.viz.unit	% de retrait, vert à sec (approx.)
+me-wood.c2.viz.items.0.l	Dans le fil
+me-wood.c2.viz.items.1.l	Radial
+me-wood.c2.viz.items.2.l	Tangentiel
+me-wood.c3.title	Assemblages
+me-wood.c3.text	Les assemblages traditionnels emboîtent les pièces pour que le bois porte la charge : tenon-mortaise, queue d'aronde, mi-bois. Les ouvrages modernes utilisent aussi vis, tourillons, lamelles et connecteurs métalliques.
+me-wood.c3.viz.items.0.a	tenon-mortaise
+me-wood.c3.viz.items.0.b	cadres, poutres
+me-wood.c3.viz.items.1.a	queue d'aronde
+me-wood.c3.viz.items.1.b	tiroirs, résiste à la traction
+me-wood.c3.viz.items.2.a	mi-bois
+me-wood.c3.viz.items.2.b	croisements
+me-wood.c3.viz.items.3.a	tourillons
+me-wood.c3.viz.items.3.b	alignement caché
+me-wood.c4.title	Lire le fil du bois
+me-wood.c4.text	Rabotez et ciselez dans le sens du fil, comme on caresse un chat, pour éviter l'arrachement. Les nœuds sont des points faibles et peuvent tomber des planches minces.
+me-wood.c4.viz.items.0.w	raboter à contre-fil
+me-wood.c4.viz.items.0.r	retourner la planche, raboter en descente
+me-wood.c4.viz.items.1.w	nœud dans l'assemblage
+me-wood.c4.viz.items.1.r	déplacer l'assemblage
+me-wood.c5.title	Lamellé-collé et CLT
+me-wood.c5.text	Le bois d'ingénierie colle des couches ensemble. Le lamellé-collé donne de longues poutres solides ; les panneaux de bois lamellé croisé (CLT) ont des couches à angle droit et peuvent former les murs et planchers d'immeubles à plusieurs étages.
+me-wood.c5.viz.l.t	Lamellé-collé
+me-wood.c5.viz.l.items.0	couches dans un sens
+me-wood.c5.viz.l.items.1	longues poutres et arcs
+me-wood.c5.viz.r.t	CLT
+me-wood.c5.viz.r.items.0	couches croisées
+me-wood.c5.viz.r.items.1	panneaux de murs et planchers
+me-wood.c5.viz.r.items.2	immeubles en bois de grande hauteur
+me-wood.c6.title	Protéger le bois
+me-wood.c6.text	La pourriture a besoin d'humidité. Gardez le bois sec, ventilé et décollé du sol ; utilisez des essences naturellement durables ou du bois traité en extérieur. Vrillettes et termites se gèrent par traitement et inspection.
+me-wood.c6.viz.items.0	Le garder sec
+me-wood.c6.viz.items.1	Ventiler
+me-wood.c6.viz.items.2	Le décoller du sol
+me-wood.c6.viz.items.3	Traiter ou choisir une essence durable
+me-wood.c6.viz.items.4	Inspecter régulièrement
+me-wood.c7.title	Le bois dans un incendie
+me-wood.c7.text	Un bois épais se carbonise à l'extérieur, et la couche de charbon isole le cœur : les grosses poutres gardent donc leur résistance étonnamment longtemps dans un incendie. Les ingénieurs prévoient une marge de carbonisation dans les sections.
+me-wood.c7.viz.steps.0	Incendie
+me-wood.c7.viz.steps.1	La couche externe se carbonise
+me-wood.c7.viz.steps.2	Le charbon isole le cœur
+me-wood.c7.viz.steps.3	La poutre porte encore
+me-wood.c8.title	Structures de toit
+me-wood.c8.text	Les toits portugais traditionnels utilisent chevrons et liteaux en bois sous des tuiles en céramique. Les fermes répartissent la charge du toit sur les murs ; une bonne ventilation évite la pourriture par condensation.
+me-wood.c8.viz.steps.0	Tuiles
+me-wood.c8.viz.steps.1	Liteaux
+me-wood.c8.viz.steps.2	Chevrons ou fermes
+me-wood.c8.viz.steps.3	Sablières
+me-wood.c8.viz.steps.4	Murs
+me-wood.c9.title	Les forêts du Portugal
+me-wood.c9.text	L'eucalyptus, le pin maritime et le chêne-liège sont les arbres forestiers les plus courants du Portugal. Le Portugal est le premier producteur mondial de liège, avec environ la moitié du liège mondial.
+me-wood.c9.viz.unit	% de la surface forestière (approx.)
+me-wood.c9.viz.items.0.l	Eucalyptus
+me-wood.c9.viz.items.1.l	Chêne-liège
+me-wood.c9.viz.items.2.l	Pin maritime
+me-wood.c9.viz.items.3.l	Chêne vert
+me-wood.c9.viz.items.4.l	Autres
+me-construction.title	Construire une maison confortable
+me-construction.summary	Isolation, fenêtres, ponts thermiques et ventilation.
+me-construction.q0.q	Où une maison non isolée perd-elle souvent une grande part de sa chaleur, et c'est le plus économique à corriger en premier ?
+me-construction.q0.o0	Les portes
+me-construction.q0.o1	Le toit
+me-construction.q0.o2	La cheminée
+me-construction.q0.x	Isoler le toit est généralement la meilleure première étape.
+me-construction.q1.q	Qu'est-ce qu'un pont thermique ?
+me-construction.q1.o0	Un pont en bois
+me-construction.q1.o1	Un point faible par où la chaleur contourne l'isolation
+me-construction.q1.o2	Un type de fenêtre
+me-construction.q1.x	Ils créent des zones froides et de la moisissure.
+me-construction.q2.q	Que fait une VMC double flux ?
+me-construction.q2.o0	Elle chauffe l'eau
+me-construction.q2.o1	Elle ventile en récupérant la chaleur de l'air sortant
+me-construction.q2.o2	Elle refroidit le toit
+me-construction.q2.x	Ventilation mécanique avec récupération de chaleur.
+me-construction.c0.title	L'enveloppe du bâtiment
+me-construction.c0.text	Murs, toit, sol et fenêtres forment l'enveloppe qui sépare l'intérieur de l'extérieur. Son isolation, son étanchéité à l'air et son ombrage déterminent l'énergie dont la maison a besoin.
+me-construction.c0.viz.root	Enveloppe
+me-construction.c0.viz.items.0	Toit
+me-construction.c0.viz.items.1	Murs
+me-construction.c0.viz.items.2	Fenêtres et portes
+me-construction.c0.viz.items.3	Sol
+me-construction.c1.title	Par où la chaleur s'échappe
+me-construction.c1.text	Dans une maison non isolée, le toit perd souvent le plus de chaleur, suivi des murs, des fenêtres et des courants d'air. Isoler d'abord le toit offre généralement le meilleur rapport qualité-prix.
+me-construction.c1.viz.unit	% des pertes de chaleur (maison non isolée type)
+me-construction.c1.viz.items.0.l	Toit
+me-construction.c1.viz.items.1.l	Murs
+me-construction.c1.viz.items.2.l	Fenêtres
+me-construction.c1.viz.items.3.l	Sol
+me-construction.c1.viz.items.4.l	Courants d'air
+me-construction.c2.title	Isolation par l'extérieur (ITE)
+me-construction.c2.text	Des panneaux isolants fixés à l'extérieur des murs puis enduits (le système « capoto » au Portugal) enveloppent la maison d'une couche continue et gardent la maçonnerie au chaud, ce qui réduit les ponts thermiques.
+me-construction.c2.viz.l.t	Extérieure (ITE/capoto)
+me-construction.c2.viz.l.items.0	couche continue
+me-construction.c2.viz.l.items.1	pas de surface perdue
+me-construction.c2.viz.l.items.2	moins de ponts thermiques
+me-construction.c2.viz.r.t	Intérieure
+me-construction.c2.viz.r.items.0	moins chère par pièce
+me-construction.c2.viz.r.items.1	perd de la place
+me-construction.c2.viz.r.items.2	plus difficile aux jonctions
+me-construction.c3.title	Ponts thermiques
+me-construction.c3.text	Un pont thermique est un point faible par où la chaleur contourne l'isolation : poutres en béton, dalles de balcon, embrasures de fenêtres. Ils causent des zones froides, de la condensation et de la moisissure.
+me-construction.c3.viz.items.0	Dalles de balcon
+me-construction.c3.viz.items.1	Poutres et poteaux en béton
+me-construction.c3.viz.items.2	Embrasures de fenêtres et portes
+me-construction.c3.viz.items.3	Jonctions mur–toit
+me-construction.c4.title	Fenêtres
+me-construction.c4.text	Un double vitrage à couche à faible émissivité avec un cadre à rupture de pont thermique perd bien moins de chaleur qu'un simple vitrage. Un ombrage extérieur arrête le soleil d'été avant qu'il ne chauffe la pièce.
+me-construction.c4.viz.unit	valeur U W/m²K (approx.)
+me-construction.c4.viz.items.0.l	Simple vitrage
+me-construction.c4.viz.items.1.l	Double vitrage
+me-construction.c4.viz.items.2.l	Double bas-émissif
+me-construction.c4.viz.items.3.l	Triple
+me-construction.c5.title	Étanchéité à l'air
+me-construction.c5.text	Les courants d'air incontrôlés gaspillent la chaleur et amènent l'humidité dans les murs. Colmater les jours autour des fenêtres, des tuyaux et des jonctions de toit est peu coûteux et efficace.
+me-construction.c5.viz.items.0	Calfeutrer les cadres de fenêtres
+me-construction.c5.viz.items.1	Colmater passages de tuyaux et câbles
+me-construction.c5.viz.items.2	Adhésiver les membranes aux joints
+me-construction.c5.viz.items.3	Tester avec une porte soufflante
+me-construction.c6.title	Ventilation
+me-construction.c6.text	Une maison étanche a besoin d'une ventilation contrôlée pour évacuer l'humidité et l'air vicié. La ventilation mécanique avec récupération de chaleur (VMC double flux) récupère l'essentiel de la chaleur de l'air sortant.
+me-construction.c6.viz.steps.0	Air vicié chaud évacué
+me-construction.c6.viz.steps.1	Échangeur de chaleur
+me-construction.c6.viz.steps.2	Air frais réchauffé
+me-construction.c6.viz.steps.3	Vers les pièces de vie
+me-construction.c7.title	Condensation et moisissure
+me-construction.c7.text	L'air chaud intérieur transporte de l'humidité ; au contact d'une surface froide, elle se condense. Ventilation, isolation et suppression des zones froides évitent la moisissure.
+me-construction.c7.viz.steps.0	Air chaud et humide
+me-construction.c7.viz.steps.1	Mur ou fenêtre froid
+me-construction.c7.viz.steps.2	Condensation
+me-construction.c7.viz.steps.3	Moisissure
+me-construction.c8.title	Confort d'été
+me-construction.c8.text	Au Portugal, rester au frais compte aussi : volets extérieurs, ombrage, inertie thermique, couleurs claires et ventilation nocturne valent souvent mieux que la climatisation.
+me-construction.c8.viz.items.0	Volets extérieurs
+me-construction.c8.viz.items.1	Débords et ombrage
+me-construction.c8.viz.items.2	Inertie thermique
+me-construction.c8.viz.items.3	Ventilation nocturne
+me-construction.c8.viz.items.4	Toits de couleur claire
+me-construction.c9.title	Certificats énergétiques
+me-construction.c9.text	Au Portugal, les logements à vendre ou à louer doivent avoir un certificat énergétique (de A+ à F), délivré par l'ADENE. Il recommande aussi des améliorations.
+me-construction.c9.viz.items.0	A+ / A : très efficace
+me-construction.c9.viz.items.1	B / B− : bon
+me-construction.c9.viz.items.2	C / D : moyen
+me-construction.c9.viz.items.3	E / F : inefficace
+me-water.title	L'eau dans les bâtiments
+me-water.summary	Pression, pompes, tuyaux et évacuation.
+me-water.q0.q	Quelle pression représentent environ 10 m de hauteur d'eau ?
+me-water.q0.o0	0.1 bar
+me-water.q0.o1	1 bar
+me-water.q0.o2	10 bar
+me-water.q0.x	10 m ≈ 1 bar.
+me-water.q1.q	Qu'est-ce qui cause le coup de bélier ?
+me-water.q1.o0	L'eau chaude
+me-water.q1.o1	Une fermeture brusque de vanne qui arrête l'eau en mouvement
+me-water.q1.o2	Une basse pression
+me-water.q1.x	L'inertie crée un pic de pression.
+me-water.q2.q	Pourquoi un ballon d'eau chaude doit-il atteindre périodiquement environ 60 °C ?
+me-water.q2.o0	Pour économiser l'énergie
+me-water.q2.o1	Pour tuer les bactéries Legionella
+me-water.q2.o2	Pour augmenter la pression
+me-water.q2.x	Les bactéries prospèrent entre 25 et 45 °C.
+me-water.c0.title	La pression de l'eau à la maison
+me-water.c0.text	L'eau du réseau arrive généralement à environ 2–5 bar. Trop basse, la douche goutte ; trop haute, les robinets cognent et les appareils s'usent. Un réducteur de pression règle une pression trop élevée.
+me-water.c0.viz.unit	bar
+me-water.c0.viz.items.0.l	trop basse
+me-water.c0.viz.items.1.l	confortable
+me-water.c0.viz.items.2.l	trop haute
+me-water.c1.title	Dimensionner les tuyaux
+me-water.c1.text	Les gros tuyaux transportent plus de débit avec moins de perte de charge. Un long trajet vers une douche à l'étage exige de plus grands diamètres qu'un court trajet vers un lavabo.
+me-water.c1.viz.unit	débit à même perte de charge (relatif)
+me-water.c1.viz.items.0.l	16 mm
+me-water.c1.viz.items.1.l	20 mm
+me-water.c1.viz.items.2.l	26 mm
+me-water.c2.title	Pompes
+me-water.c2.text	Les pompes centrifuges font tourner une roue pour pousser l'eau. Chacune a une courbe : plus de débit, moins de pression (hauteur manométrique). Choisissez la pompe dont la courbe croise les besoins de votre installation.
+me-water.c2.viz.l.t	Plus de débit
+me-water.c2.viz.l.items.0	moins de hauteur
+me-water.c2.viz.r.t	Plus de hauteur
+me-water.c2.viz.r.items.0	moins de débit
+me-water.c3.title	Hauteur et pression
+me-water.c3.text	La « hauteur manométrique » d'une pompe est la hauteur à laquelle elle peut élever l'eau. 10 m de hauteur valent environ 1 bar.
+me-water.c3.viz.f	10 m de hauteur ≈ 1 bar
+me-water.c3.viz.items.0.s	monter à un réservoir à 20 m
+me-water.c3.viz.items.0.m	≈ 2 bar plus pertes
+me-water.c4.title	Le coup de bélier
+me-water.c4.text	Fermer brusquement une vanne arrête l'écoulement, et l'inertie de l'eau en mouvement crée un pic de pression qui fait cogner les tuyaux. Des antibéliers et des vannes à fermeture lente règlent le problème.
+me-water.c4.viz.steps.0	Une vanne se ferme vite
+me-water.c4.viz.steps.1	L'eau s'arrête net
+me-water.c4.viz.steps.2	Pic de pression
+me-water.c4.viz.steps.3	Coup dans les tuyaux
+me-water.c5.title	Production d'eau chaude
+me-water.c5.text	Les chauffe-eau stockent l'eau chaude dans un ballon (termoacumulador) ou la chauffent à la demande (gaz ou électrique instantané). Panneaux solaires thermiques et pompes à chaleur peuvent fournir l'essentiel de l'eau chaude au Portugal.
+me-water.c5.viz.items.0.a	ballon de stockage
+me-water.c5.viz.items.0.b	apport stable, pertes à l'arrêt
+me-water.c5.viz.items.1.a	instantané
+me-water.c5.viz.items.1.b	sans ballon, grosse puissance
+me-water.c5.viz.items.2.a	solaire thermique
+me-water.c5.viz.items.2.b	chaleur gratuite, appoint requis
+me-water.c5.viz.items.3.a	pompe à chaleur
+me-water.c5.viz.items.3.b	3× plus efficace
+me-water.c6.title	Legionella
+me-water.c6.text	Les bactéries peuvent proliférer dans l'eau stockée entre 25 et 45 °C. Les ballons doivent atteindre périodiquement environ 60 °C, et les robinets doivent délivrer une eau sous la température de brûlure grâce à des mitigeurs.
+me-water.c6.viz.unit	°C
+me-water.c6.viz.items.0.l	risque de prolifération
+me-water.c6.viz.items.1.l	stocker à
+me-water.c6.viz.items.2.l	risque de brûlure
+me-water.c7.title	Évacuation
+me-water.c7.text	Les évacuations fonctionnent par gravité : les tuyaux ont besoin d'une pente d'environ 1–2 %. Les siphons (coudes en U) retiennent de l'eau pour bloquer les odeurs d'égout, et les ventilations les empêchent d'être vidés par aspiration.
+me-water.c7.viz.items.0	Pente d'environ 1–2 %
+me-water.c7.viz.items.1	Siphons sous chaque appareil
+me-water.c7.viz.items.2	Tuyaux de ventilation
+me-water.c7.viz.items.3	Accès pour le nettoyage
+me-water.c8.title	Récupération d'eau de pluie
+me-water.c8.text	Récupérer l'eau de pluie du toit pour les toilettes, le jardin et le lave-linge économise l'eau du réseau. Un filtre, une cuve et une petite pompe en sont les éléments principaux.
+me-water.c8.viz.steps.0	Toit
+me-water.c8.viz.steps.1	Gouttières et filtre
+me-water.c8.viz.steps.2	Cuve
+me-water.c8.viz.steps.3	Pompe
+me-water.c8.viz.steps.4	Toilettes et jardin
+me-water.c9.title	Mesurer les niveaux d'eau
+me-water.c9.text	Cuves et puits sont surveillés par des flotteurs, des capteurs de pression ou des capteurs à ultrasons comme le JSN-SR04T, qui envoient les niveaux à un tableau de bord, même par LoRa depuis des sites isolés.
+me-water.c9.viz.steps.0	Capteur à ultrasons sur le couvercle
+me-water.c9.viz.steps.1	Mesurer la distance
+me-water.c9.viz.steps.2	Convertir en niveau et litres
+me-water.c9.viz.steps.3	Envoyer par LoRa
+me-making.title	Comment les choses sont fabriquées
+me-making.summary	Fonderie, usinage, formage, soudage et impression 3D.
+me-making.q0.q	Quel procédé est le moins cher par pièce pour de très gros volumes de pièces en plastique ?
+me-making.q0.o0	L'impression 3D
+me-making.q0.o1	Le moulage par injection
+me-making.q0.o2	La sculpture à la main
+me-making.q0.x	Les moules coûtent cher, mais chaque pièce coûte peu.
+me-making.q1.q	Que fabrique un tour ?
+me-making.q1.o0	Des tôles planes
+me-making.q1.o1	Des pièces rondes, en faisant tourner la pièce
+me-making.q1.o2	Des soudures
+me-making.q1.x	La pièce tourne contre l'outil.
+me-making.q2.q	Le forgeage produit des pièces…
+me-making.q2.o0	Faibles et légères
+me-making.q2.o1	Très résistantes
+me-making.q2.o2	Transparentes
+me-making.q2.x	Le martelage affine la structure du métal.
+me-making.c0.title	Quatre familles de procédés
+me-making.c0.text	La plupart des fabrications retirent de la matière (usinage), la façonnent (forgeage, pliage, fonderie), l'assemblent (soudage, boulonnage) ou l'ajoutent couche par couche (impression 3D).
+me-making.c0.viz.root	Fabriquer
+me-making.c0.viz.items.0	Retirer : usinage
+me-making.c0.viz.items.1	Façonner : fonderie, forge
+me-making.c0.viz.items.2	Assembler : soudage, collage
+me-making.c0.viz.items.3	Ajouter : impression 3D
+me-making.c1.title	La fonderie
+me-making.c1.text	On coule du métal fondu dans un moule, où il se solidifie à sa forme. Blocs moteurs, corps de pompes et bronzes d'art sont coulés. La coulée sous pression force le métal dans des moules d'acier pour la production de masse.
+me-making.c1.viz.steps.0	Fondre le métal
+me-making.c1.viz.steps.1	Couler dans un moule
+me-making.c1.viz.steps.2	Refroidir et solidifier
+me-making.c1.viz.steps.3	Démouler et finir
+me-making.c2.title	L'usinage
+me-making.c2.text	Tours, fraiseuses et perceuses enlèvent de la matière pour obtenir des formes précises. Les machines à commande numérique suivent des trajectoires programmées et tiennent des tolérances de quelques centièmes de millimètre.
+me-making.c2.viz.items.0.a	tour
+me-making.c2.viz.items.0.b	pièces rondes, pièce en rotation
+me-making.c2.viz.items.1.a	fraiseuse
+me-making.c2.viz.items.1.b	surfaces planes et poches
+me-making.c2.viz.items.2.a	perceuse
+me-making.c2.viz.items.2.b	trous
+me-making.c2.viz.items.3.a	CNC
+me-making.c2.viz.items.3.b	piloté par ordinateur
+me-making.c3.title	Le formage
+me-making.c3.text	La tôle est pliée, estampée et pressée : carrosseries, canettes, boîtiers. Le forgeage martèle le métal chaud pour lui donner forme, d'où des pièces très résistantes comme les vilebrequins.
+me-making.c3.viz.l.t	Estampage
+me-making.c3.viz.l.items.0	tôle
+me-making.c3.viz.l.items.1	rapide
+me-making.c3.viz.l.items.2	panneaux de voiture
+me-making.c3.viz.r.t	Forgeage
+me-making.c3.viz.r.items.0	métal chaud martelé
+me-making.c3.viz.r.items.1	très résistant
+me-making.c3.viz.r.items.2	vilebrequins, outils
+me-making.c4.title	Moulage par injection
+me-making.c4.text	Du plastique fondu est injecté dans un moule d'acier et refroidit en quelques secondes. Les moules sont chers, mais chaque pièce coûte alors quelques centimes. La plupart des objets en plastique autour de vous sont faits ainsi.
+me-making.c4.viz.unit	coût par pièce, € (illustratif)
+me-making.c4.viz.items.0.l	Impression 3D
+me-making.c4.viz.items.1.l	Usiné
+me-making.c4.viz.items.2.l	Moulé par injection
+me-making.c5.title	Le soudage
+me-making.c5.text	Le soudage fait fondre les bords de deux pièces métalliques pour qu'elles fusionnent. Le MIG est rapide et facile ; le TIG, précis et propre ; le soudage à l'électrode fonctionne en extérieur. De bonnes soudures demandent du métal propre et la bonne chaleur.
+me-making.c5.viz.items.0.a	MIG
+me-making.c5.viz.items.0.b	fil continu, rapide
+me-making.c5.viz.items.1.a	TIG
+me-making.c5.viz.items.1.b	précis, métaux minces
+me-making.c5.viz.items.2.a	électrode (MMA)
+me-making.c5.viz.items.2.b	simple, en extérieur
+me-making.c5.viz.items.3.a	soudage par points
+me-making.c5.viz.items.3.b	carrosseries
+me-making.c6.title	Impression 3D
+me-making.c6.text	La fabrication additive construit les pièces couche par couche. Les imprimantes FDM fondent un filament plastique ; les imprimantes à résine durcissent un liquide à la lumière ; les imprimantes métal fusionnent de la poudre au laser.
+me-making.c6.viz.l.t	FDM
+me-making.c6.viz.l.items.0	bon marché
+me-making.c6.viz.l.items.1	assez solide pour des supports
+me-making.c6.viz.l.items.2	couches visibles
+me-making.c6.viz.r.t	Résine
+me-making.c6.viz.r.items.0	détails fins
+me-making.c6.viz.r.items.1	cassante
+me-making.c6.viz.r.items.2	post-traitement salissant
+me-making.c7.title	Conception pour la fabrication
+me-making.c7.text	Une pièce facile à dessiner peut être difficile à fabriquer. Les ingénieurs adaptent les conceptions au procédé : angles de dépouille pour le moulage, diamètres de perçage standard, rayons de pliage minimaux pour la tôle.
+me-making.c7.viz.items.0	Tailles et fixations standard
+me-making.c7.viz.items.1	Angles de dépouille
+me-making.c7.viz.items.2	Éviter les angles internes vifs
+me-making.c7.viz.items.3	Moins de pièces
+me-making.c8.title	Production de masse
+me-making.c8.text	La chaîne de montage mobile de Henry Ford (1913) a fait passer le temps de montage d'un châssis de Ford T d'environ 12 heures à environ 1.5. Les usines d'aujourd'hui ajoutent robots, capteurs et logiciels.
+me-making.c8.viz.unit	heures par châssis de Ford T (approx.)
+me-making.c8.viz.items.0.l	Avant 1913
+me-making.c8.viz.items.1.l	Chaîne de montage
+me-making.c9.title	Contrôle qualité
+me-making.c9.text	Les usines mesurent les pièces avec des calibres, des machines à mesurer tridimensionnelles et des caméras. La maîtrise statistique des procédés repère les dérives avant que les pièces sortent des tolérances.
+me-making.c9.viz.steps.0	Fabriquer les pièces
+me-making.c9.viz.steps.1	Mesurer des échantillons
+me-making.c9.viz.steps.2	Tracer les résultats
+me-making.c9.viz.steps.3	Corriger tôt la dérive
+me-measure.title	Mesure et tolérances
+me-measure.summary	Unités, précision et pièces qui s'ajustent.
+me-measure.q0.q	Un outil est constant mais indique toujours 2 mm de trop. Il est…
+me-measure.q0.o0	Juste mais pas fidèle
+me-measure.q0.o1	Fidèle mais pas juste
+me-measure.q0.o2	Les deux
+me-measure.q0.x	Constant, mais décalé par rapport à la vérité.
+me-measure.q1.q	Qu'est-ce qu'un ajustement serré ?
+me-measure.q1.o0	Un ajustement glissant et libre
+me-measure.q1.o1	Une pièce enfoncée dans un trou légèrement plus petit
+me-measure.q1.o2	Un joint peint
+me-measure.q1.x	L'arbre est légèrement plus grand que le trou.
+me-measure.q2.q	Un pouce vaut exactement…
+me-measure.q2.o0	2.5 cm
+me-measure.q2.o1	25.4 mm
+me-measure.q2.o2	30 mm
+me-measure.q2.x	Défini comme 25.4 mm.
+me-measure.c0.title	Le système SI
+me-measure.c0.text	L'ingénierie utilise les unités du SI : mètre, kilogramme, seconde, ampère, kelvin. Les unités dérivées s'appuient dessus : newton, pascal, joule, watt. Mélanger les unités provoque des erreurs coûteuses.
+me-measure.c0.viz.items.0.a	mètre
+me-measure.c0.viz.items.0.b	longueur
+me-measure.c0.viz.items.1.a	kilogramme
+me-measure.c0.viz.items.1.b	masse
+me-measure.c0.viz.items.2.a	seconde
+me-measure.c0.viz.items.2.b	temps
+me-measure.c0.viz.items.3.a	newton
+me-measure.c0.viz.items.3.b	force
+me-measure.c0.viz.items.4.a	pascal
+me-measure.c0.viz.items.4.b	pression
+me-measure.c1.title	Le Mars Climate Orbiter
+me-measure.c1.text	En 1999, la NASA a perdu une sonde de plus de 100 millions d'euros parce qu'une équipe utilisait des livres-force secondes et une autre attendait des newtons-secondes. Le vaisseau est entré trop bas dans l'atmosphère de Mars.
+me-measure.c1.viz.items.0.w	une équipe en impérial, une en métrique
+me-measure.c1.viz.items.0.r	convenir des unités et vérifier les interfaces
+me-measure.c2.title	Justesse et fidélité
+me-measure.c2.text	La justesse mesure la proximité avec la valeur vraie ; la fidélité, la constance de mesures répétées. Un outil peut être fidèle mais faux s'il n'est pas étalonné.
+me-measure.c2.viz.l.t	Juste
+me-measure.c2.viz.l.items.0	proche de la valeur vraie
+me-measure.c2.viz.r.t	Fidèle
+me-measure.c2.viz.r.items.0	mesures proches entre elles
+me-measure.c3.title	Tolérances
+me-measure.c3.text	Aucune pièce n'est faite exactement à la cote. Une tolérance indique l'intervalle acceptable, par exemple 20.00 ± 0.05 mm. Des tolérances plus serrées coûtent plus cher : ne les utilisez que là où c'est nécessaire.
+me-measure.c3.viz.unit	mm
+me-measure.c3.viz.items.0.l	minimum
+me-measure.c3.viz.items.1.l	nominal
+me-measure.c3.viz.items.2.l	maximum
+me-measure.c4.title	Ajustements
+me-measure.c4.text	Arbres et alésages s'associent par ajustement : avec jeu (glisse librement), incertain (serré légèrement) ou serré (emmanché de force). Des systèmes normalisés comme l'ISO 286 les définissent, par exemple H7/g6.
+me-measure.c4.viz.items.0.a	ajustement avec jeu
+me-measure.c4.viz.items.0.b	glisse
+me-measure.c4.viz.items.1.a	ajustement incertain
+me-measure.c4.viz.items.1.b	serré, positionne
+me-measure.c4.viz.items.2.a	ajustement serré
+me-measure.c4.viz.items.2.b	emmanché ou fretté
+me-measure.c5.title	Outils de mesure
+me-measure.c5.text	Un mètre ruban mesure à environ un millimètre ; un pied à coulisse à 0.02 mm ; un micromètre à 0.001 mm. Choisissez un outil au moins dix fois plus fin que la tolérance à vérifier.
+me-measure.c5.viz.unit	résolution (mm)
+me-measure.c5.viz.items.0.l	Mètre ruban
+me-measure.c5.viz.items.1.l	Pied à coulisse
+me-measure.c5.viz.items.2.l	Micromètre
+me-measure.c6.title	Chiffres significatifs
+me-measure.c6.text	« 2 m » et « 2.000 m » n'ont pas la même précision. Ne donnez pas plus de chiffres que votre mesure n'en justifie ; une calculatrice qui affiche 3.14159 ne rend pas précise une mesure approximative.
+me-measure.c6.viz.items.0.w	2.3456 m avec un mètre ruban
+me-measure.c6.viz.items.0.r	2.35 m
+me-measure.c6.viz.items.1.w	9.8762 kN à partir d'estimations grossières
+me-measure.c6.viz.items.1.r	environ 10 kN
+me-measure.c7.title	Étalonnage
+me-measure.c7.text	Les instruments dérivent. L'étalonnage les compare à une référence et les corrige. Clés dynamométriques, balances et manomètres industriels sont étalonnés selon un calendrier.
+me-measure.c7.viz.steps.0	Utiliser l'instrument
+me-measure.c7.viz.steps.1	Comparer à une référence
+me-measure.c7.viz.steps.2	Régler ou noter l'erreur
+me-measure.c7.viz.steps.3	Planifier le contrôle suivant
+me-measure.c8.title	Les erreurs s'additionnent
+me-measure.c8.text	Quand des pièces s'empilent, leurs tolérances s'additionnent. Dix pièces à ±0.1 mm chacune pourraient, dans le pire des cas, dévier ensemble de ±1 mm. Le tolérancement statistique estime la dispersion réaliste.
+me-measure.c8.viz.f	pire cas = n × tolérance
+me-measure.c8.viz.items.0.s	10 pièces × ±0.1 mm
+me-measure.c8.viz.items.0.m	±1.0 mm
+me-measure.c8.viz.items.1.s	statistique (√10 × 0.1)
+me-measure.c8.viz.items.1.m	≈ ±0.32 mm
+me-measure.c9.title	Les unités impériales sont toujours là
+me-measure.c9.text	Tuyaux, pneus, écrans et certains boulons utilisent encore les pouces ; l'aviation utilise pieds et nœuds. Un pouce vaut exactement 25.4 mm.
+me-measure.c9.viz.items.0.a	1 pouce
+me-measure.c9.viz.items.0.b	25.4 mm
+me-measure.c9.viz.items.1.a	1 pied
+me-measure.c9.viz.items.1.b	0.3048 m
+me-measure.c9.viz.items.2.a	1 psi
+me-measure.c9.viz.items.2.b	0.069 bar
+me-measure.c9.viz.items.3.a	1 nœud
+me-measure.c9.viz.items.3.b	1.852 km/h
+me-failure.title	Quand les choses cassent
+me-failure.summary	Fatigue, corrosion, fluage et leçons célèbres.
+me-failure.q0.q	Qu'est-ce qui cause la plupart des défaillances mécaniques des machines et des avions ?
+me-failure.q0.o0	La surcharge
+me-failure.q0.o1	La fatigue due aux charges répétées
+me-failure.q0.o2	La fusion
+me-failure.q0.x	Les fissures grandissent à chaque cycle.
+me-failure.q1.q	Pourquoi les accidents du Comet ont-ils conduit à des hublots arrondis ?
+me-failure.q1.o0	Ils sont plus beaux
+me-failure.q1.o1	Les angles vifs concentraient les contraintes et amorçaient des fissures de fatigue
+me-failure.q1.o2	Le verre arrondi coûte moins cher
+me-failure.q1.x	Concentrations de contraintes aux angles.
+me-failure.q2.q	Qu'est-ce que le fluage ?
+me-failure.q2.o0	La rouille
+me-failure.q2.o1	Un étirement permanent lent sous charge constante, surtout à chaud
+me-failure.q2.o2	Une fissure rapide
+me-failure.q2.x	Il s'accroît avec le temps.
+me-failure.c0.title	La surcharge
+me-failure.c0.text	La défaillance la plus simple : la charge dépasse ce que la pièce peut porter. Coefficients de sécurité, bonnes estimations des charges et contrôle des mauvais usages en préviennent la plupart.
+me-failure.c0.viz.steps.0	La charge dépasse la conception
+me-failure.c0.viz.steps.1	La contrainte dépasse la résistance
+me-failure.c0.viz.steps.2	Déformation ou rupture
+me-failure.c1.title	La fatigue
+me-failure.c1.text	Des charges répétées, même bien en dessous de la résistance à la rupture, peuvent faire grandir de minuscules fissures jusqu'à ce qu'une pièce casse. La fatigue cause la plupart des défaillances mécaniques des machines, avions et ponts.
+me-failure.c1.viz.steps.0	Charges répétées
+me-failure.c1.viz.steps.1	Minuscule fissure en un point de contrainte
+me-failure.c1.viz.steps.2	La fissure grandit à chaque cycle
+me-failure.c1.viz.steps.3	Rupture brutale
+me-failure.c2.title	Stries de fatigue
+me-failure.c2.text	Les ruptures de fatigue montrent souvent des « stries » courbes sur la surface cassée, qui enregistrent la progression de la fissure, et une zone finale plus rugueuse où la pièce a fini par céder.
+me-failure.c2.viz.l.t	Zone de fatigue
+me-failure.c2.viz.l.items.0	lisse, avec des stries
+me-failure.c2.viz.l.items.1	croissance lente
+me-failure.c2.viz.r.t	Rupture finale
+me-failure.c2.viz.r.items.0	rugueuse
+me-failure.c2.viz.r.items.1	brutale
+me-failure.c3.title	La corrosion
+me-failure.c3.text	La corrosion ronge le métal, réduit sa section et crée des concentrations de contraintes. Sel, eau et métaux dissemblables en contact l'accélèrent.
+me-failure.c3.viz.items.0	Sel et humidité
+me-failure.c3.viz.items.1	Eau piégée
+me-failure.c3.viz.items.2	Métaux dissemblables (galvanique)
+me-failure.c3.viz.items.3	Revêtements abîmés
+me-failure.c4.title	Le fluage
+me-failure.c4.text	Sous charge constante à haute température, les métaux s'étirent lentement avec le temps. Aubes de turbines et tubes de chaudières sont conçus pour le fluage ; même les tuyaux de plomb et les étagères en plastique fluent à température ambiante.
+me-failure.c4.viz.events.0.y	année 0
+me-failure.c4.viz.events.0.l	installé
+me-failure.c4.viz.events.1.y	année 5
+me-failure.c4.viz.events.1.l	léger étirement
+me-failure.c4.viz.events.2.y	année 15
+me-failure.c4.viz.events.2.l	affaissement visible
+me-failure.c4.viz.events.3.y	année 25
+me-failure.c4.viz.events.3.l	remplacer
+me-failure.c5.title	Le Comet
+me-failure.c5.text	Le de Havilland Comet, premier avion de ligne à réaction, a subi des accidents mortels en 1954, causés par la fatigue du métal aux angles des ouvertures carrées de sa cabine pressurisée. Les hublots arrondis sont devenus la norme.
+me-failure.c5.viz.items.0.w	ouvertures de cabine carrées
+me-failure.c5.viz.items.0.r	hublots arrondis et cadres renforcés
+me-failure.c6.title	L'effondrement du pont d'Entre-os-Rios, 2001
+me-failure.c6.text	En mars 2001, un pilier du pont Hintze Ribeiro sur le Douro s'est effondré, faisant 59 morts. Des années d'érosion du lit du fleuve, aggravées par l'extraction de sable, avaient sapé ses fondations. Le Portugal a ensuite renforcé l'inspection des ponts.
+me-failure.c6.viz.steps.0	Extraction de sable et crues
+me-failure.c6.viz.steps.1	Lit érodé autour du pilier
+me-failure.c6.viz.steps.2	Fondations sapées
+me-failure.c6.viz.steps.3	Effondrement, 2001
+me-failure.c7.title	Facteurs humains et organisationnels
+me-failure.c7.text	Beaucoup de défaillances viennent d'erreurs de conception, d'une maintenance médiocre, d'inspections sautées ou d'alertes ignorées, pas seulement des matériaux. Une bonne ingénierie inclut la vérification et l'apprentissage des quasi-accidents.
+me-failure.c7.viz.items.0	Vérification par un second ingénieur
+me-failure.c7.viz.items.1	Maintenance faite et consignée
+me-failure.c7.viz.items.2	Alertes prises en compte
+me-failure.c7.viz.items.3	Apprendre des quasi-accidents
+me-failure.c8.title	La redondance
+me-failure.c8.text	Les systèmes critiques ont des secours pour qu'une défaillance ne provoque pas de catastrophe : plusieurs câbles sur un pont, deux moteurs sur les avions de ligne, des boulons supplémentaires dans un assemblage.
+me-failure.c8.viz.l.t	Un seul chemin de charge
+me-failure.c8.viz.l.items.0	une défaillance, effondrement
+me-failure.c8.viz.r.t	Redondant
+me-failure.c8.viz.r.items.0	les autres prennent le relais
+me-failure.c8.viz.r.items.1	temps de réparer
+me-failure.c9.title	Analyse des causes profondes
+me-failure.c9.text	Après une défaillance, les ingénieurs demandent « pourquoi ? » à répétition pour atteindre la cause sous-jacente, pas seulement la pièce cassée. Corriger seulement le symptôme laisse le problème se reproduire.
+me-failure.c9.viz.steps.0	La pompe est tombée en panne
+me-failure.c9.viz.steps.1	Pourquoi ? Roulement grippé
+me-failure.c9.viz.steps.2	Pourquoi ? Pas de lubrification
+me-failure.c9.viz.steps.3	Pourquoi ? Pas de plan d'entretien
+me-failure.c9.viz.steps.4	Corriger le plan
+me-design.title	Le processus de conception en ingénierie
+me-design.summary	Du problème au produit qui fonctionne.
+me-design.q0.q	Quand corriger un problème de conception coûte-t-il le moins ?
+me-design.q0.o0	En production
+me-design.q0.o1	Au stade du concept
+me-design.q0.o2	Après les plaintes des clients
+me-design.q0.x	Les coûts se multiplient à chaque étape suivante.
+me-design.q1.q	À quoi sert une matrice de décision ?
+me-design.q1.o0	À dessiner des pièces
+me-design.q1.o1	À comparer des concepts selon des critères pondérés
+me-design.q1.o2	À tester des matériaux
+me-design.q1.x	Elle structure le choix du concept.
+me-design.q2.q	Qu'indique le marquage CE ?
+me-design.q2.o0	Fabriqué en Europe
+me-design.q2.o1	La conformité aux exigences de sécurité et autres de l'UE
+me-design.q2.o2	Ingénieur certifié
+me-design.q2.x	C'est la marque de conformité de l'UE.
+me-design.c0.title	Commencer par le problème
+me-design.c0.text	Une bonne conception commence par définir clairement le problème et les exigences : que doit-il faire, dans quelles conditions, à quel coût, pour quand ? Une excellente solution au mauvais problème ne vaut rien.
+me-design.c0.viz.items.0	Que doit-il faire ?
+me-design.c0.viz.items.1	Dans quelles conditions ?
+me-design.c0.viz.items.2	Budget et délai ?
+me-design.c0.viz.items.3	Qui l'utilisera et l'entretiendra ?
+me-design.c1.title	Le cycle de conception
+me-design.c1.text	La conception est itérative : définir, générer des idées, choisir, construire un prototype, tester, apprendre, améliorer. Plusieurs boucles sont normales.
+me-design.c1.viz.steps.0	Définir
+me-design.c1.viz.steps.1	Imaginer
+me-design.c1.viz.steps.2	Prototyper
+me-design.c1.viz.steps.3	Tester et apprendre
+me-design.c2.title	Exigences : indispensable ou souhaitable
+me-design.c2.text	Séparez l'indispensable du souhaitable. Une liste claire aide à choisir entre les options et évite la dérive du périmètre.
+me-design.c2.viz.l.t	Indispensable
+me-design.c2.viz.l.items.0	sécurité
+me-design.c2.viz.l.items.1	fonction principale
+me-design.c2.viz.l.items.2	conformité légale
+me-design.c2.viz.r.t	Souhaitable
+me-design.c2.viz.r.items.0	fonctions en plus
+me-design.c2.viz.r.items.1	finitions
+me-design.c2.viz.r.items.2	options futures
+me-design.c3.title	Choix du concept
+me-design.c3.text	Les ingénieurs comparent les options avec une matrice de décision : noter chaque concept selon des critères pondérés comme le coût, le poids, la fiabilité et la facilité de fabrication.
+me-design.c3.viz.unit	score pondéré
+me-design.c3.viz.items.0.l	Concept A
+me-design.c3.viz.items.1.l	Concept B
+me-design.c3.viz.items.2.l	Concept C
+me-design.c4.title	Le prototypage
+me-design.c4.text	Construisez des prototypes rapides et peu chers pour apprendre tôt : carton, impressions 3D, platines d'essai. Échouer tôt coûte peu ; échouer après la production coûte cher.
+me-design.c4.viz.unit	coût relatif pour corriger un problème (illustratif)
+me-design.c4.viz.items.0.l	Concept
+me-design.c4.viz.items.1.l	Conception
+me-design.c4.viz.items.2.l	Prototype
+me-design.c4.viz.items.3.l	Production
+me-design.c5.title	Les essais
+me-design.c5.text	Les essais vérifient que la conception répond aux exigences, y compris aux extrêmes : chaleur, froid, vibrations, eau, mauvais usage. Beaucoup de produits sont testés jusqu'à la rupture pour connaître leurs vraies limites.
+me-design.c5.viz.items.0	Essais fonctionnels
+me-design.c5.viz.items.1	Essais d'environnement
+me-design.c5.viz.items.2	Durabilité et fatigue
+me-design.c5.viz.items.3	Mauvais usage et sécurité
+me-design.c5.viz.items.4	Essais utilisateurs
+me-design.c6.title	Compromis
+me-design.c6.text	Toute conception équilibre des objectifs concurrents : plus léger veut souvent dire plus cher ; plus solide, souvent plus lourd ; moins cher, peut-être moins durable. Le travail de l'ingénieur est de trouver le meilleur équilibre pour l'usage.
+me-design.c6.viz.items.0.a	plus léger
+me-design.c6.viz.items.0.b	matériaux plus chers
+me-design.c6.viz.items.1.a	plus solide
+me-design.c6.viz.items.1.b	plus lourd
+me-design.c6.viz.items.2.a	moins cher
+me-design.c6.viz.items.2.b	durée de vie plus courte
+me-design.c6.viz.items.3.a	plus vite sur le marché
+me-design.c6.viz.items.3.b	moins d'essais
+me-design.c7.title	Normes et codes
+me-design.c7.text	Les normes (EN, ISO, CEI) condensent des décennies de leçons. Les suivre rend les produits plus sûrs, compatibles et légalement commercialisables, comme le marquage CE en Europe.
+me-design.c7.viz.items.0.a	EN
+me-design.c7.viz.items.0.b	normes européennes
+me-design.c7.viz.items.1.a	ISO
+me-design.c7.viz.items.1.b	normes internationales
+me-design.c7.viz.items.2.a	CEI
+me-design.c7.viz.items.2.b	normes électriques
+me-design.c7.viz.items.3.a	CE
+me-design.c7.viz.items.3.b	marque de conformité UE
+me-design.c8.title	Documentation
+me-design.c8.text	Plans, calculs, rapports d'essai et décisions doivent être consignés pour que d'autres puissent construire, vérifier, entretenir et améliorer la conception plus tard.
+me-design.c8.viz.items.0	Plans et modèles
+me-design.c8.viz.items.1	Calculs
+me-design.c8.viz.items.2	Résultats d'essais
+me-design.c8.viz.items.3	Journal des décisions
+me-design.c8.viz.items.4	Consignes d'entretien
+me-design.c9.title	La pensée systémique
+me-design.c9.text	Un produit est un système de pièces qui interagissent. Changer une pièce, comme un moteur plus gros, peut affecter ailleurs l'alimentation, la chaleur, le poids et le coût. L'ingénierie des systèmes garde le tout en vue.
+me-design.c9.viz.steps.0	Moteur plus gros
+me-design.c9.viz.steps.1	Besoin de plus de courant
+me-design.c9.viz.steps.2	Câbles et batterie plus gros
+me-design.c9.viz.steps.3	Plus de poids et de coût

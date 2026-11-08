@@ -300,6 +300,9 @@ body.feedmode{overflow:hidden}
 .fine{font-size:11px;line-height:1.4;text-align:center}
 .pwbox{position:relative;background:var(--paper);width:100%;max-width:520px;max-height:92vh;overflow:auto;border-radius:22px 22px 0 0;padding:20px 16px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px}
 @media (min-width:600px){.paywall{align-items:center}.pwbox{border-radius:22px}}
+.pwcoffee{display:block;width:100%;text-align:center;text-decoration:none}
+.coffeebox h2{margin:0;padding-right:36px}
+.coffeebox .btn{display:block;width:100%;text-align:center;text-decoration:none}
 .pwclose{position:absolute;top:12px;right:12px;z-index:1}
 .pwbox h2{font-size:24px}
 .pwstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border:1px solid var(--line);border-radius:16px;padding:18px 8px;text-align:center;margin-top:28px}
@@ -330,6 +333,7 @@ body.feedmode{overflow:hidden}
 <div id="reader" class="reader" hidden></div>
 <div id="deep" class="deep" hidden></div>
 <div id="paywall" class="paywall" hidden></div>
+<div id="coffee" class="paywall" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 <input type="file" id="filein" accept=".json,application/json" hidden>
 
@@ -359,6 +363,8 @@ STR.en={
   tabToday:"Today",tabFeed:"Feed",tabLearn:"Learn",tabFav:"Favourites",tabYou:"You",online:"Online",offline:"Offline",
   pickTitle:"Pick topics to download",pickSub:"Each topic is a pack of illustrated lessons and quizzes, saved on this device so it works without a connection.",downloadN:{one:"Download {n} topic",other:"Download {n} topics"},nLessons:{one:"{n} lesson",other:"{n} lessons"},
   morning:"Good morning",afternoon:"Good afternoon",evening:"Good evening",continue:"Continue",upNext:"Up next",lessonN:"Lesson {n}",cardsOf:"{a}/{b} cards",allDone:"You've finished every downloaded lesson. Download another topic in Learn, or review your saved cards.",cardsToday:"CARDS TODAY",streakDays:"{n}-day streak",goalDone:"Daily goal done. Anything more is a bonus.",moreToGoal:"{n} more to reach today's goal",toReview:"Questions to review",toReviewSub:"You missed these before. A quick retry makes them stick.",seeAll:"See all {n}",sketchOfDay:"Sketch of the day",yourTopics:"Your topics",
+  premiumGet:"Activate Premium",premiumWord:"Premium",premiumActive:"Premium is active",premiumTitle:"Activate Premium for free",premiumFree:"No payment and no account. One tap unlocks every lesson on this device.",premiumSub:"{n} topics and {c} illustrated cards with deep dives and quizzes. Free to activate.",premiumBtn:"Activate for free",premiumOn:"Premium is active. Enjoy!",premiumCoffee:"Premium costs nothing. If you enjoy learning here, a coffee helps me keep making more lessons.",
+  coffeeTitle:"Enjoying Spark Notebook?",coffeeText:"It's free, with no ads. A coffee helps me keep adding new lessons and translations. Your download goes ahead either way.",coffeeGo:"Buy me a coffee",coffeeSkip:"Continue download",
   allTopics:"‹ All topics",keepCopy:"Keep a copy",keepCopySub:"Save this topic as a single page with every sketch and answer, to read or print anywhere.",saveAsFile:"Save as file",removeDevice:"Remove from device",keep:"Keep",nCards:{one:"{n} card",other:"{n} cards"},noMatch:"Nothing matches “{q}” in your downloaded topics.",allDownloaded:"All topics downloaded",downloadAll:"Download all ({n})",importTopic:"Import topic file",onDevice:"On device",facts:"{l} LESSONS · {c} CARDS · {q} QUESTIONS · {kb} KB",open:"Open",update:"Update",downloading:"Downloading…",download:"Download",searchPh:"Search: ohm, gears, PWM…",searchCards:"Search cards",usage:"Using {kb} KB on this device",usageProt:" · protected from automatic clearing",notTranslated:"Not translated yet: shown in English",countryTitle:"Your country",countrySub:"History, nature and culture of where you are.",otherCountries:"Other countries",topicsTitle:"Topics",
   favSub:"Tap the star on any card or lesson to keep it here.",noFavLong:"No favourites yet. Open a lesson and tap the star under a card, or the star next to a lesson.",searchFav:"Search your favourites",all:"All",noFavMatch:"Nothing in your favourites matches “{q}”.",lessons:"Lessons",cards:"Cards",readAll:"Read all {n}",favLessonAdd:"Add lesson to favourites",favLessonRemove:"Remove lesson from favourites",
   installNote:"Install Spark so it opens like an app and works offline.",install:"Install",iosInstall:"To install: in Safari tap Share, then <b>Add to Home Screen</b>. Installed, it works offline and keeps your history.",cardsLearned:"Cards learned",lessonsFinished:"Lessons finished",dayStreakBest:"Day streak · best {n}",quizAcc:"Quiz accuracy",last14:"Last 14 days",goalPerDay:"goal {n}/day",twoWeeksAgo:"2 weeks ago",todayLow:"today",dailyGoal:"Daily goal",history:"History",showAll:"Show all",histEmpty:"Cards you read appear here, newest first.",backup:"Backup",backupSub:"Progress, history and saved cards live only on this device. Save a backup file to keep them safe or move them to another device.",saveBackup:"Save backup file",restoreFile:"Restore from file",today:"Today",language:"Language",country:"Country",countryHelp:"Used to suggest your country's pack. Nothing leaves this device.",countryNone:"Other / none",
@@ -379,6 +385,8 @@ STR["pt-PT"]={
   tabToday:"Hoje",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Eu",online:"Online",offline:"Offline",
   pickTitle:"Escolhe os temas a descarregar",pickSub:"Cada tema é um pack de lições ilustradas e quizzes, guardado neste dispositivo para funcionar sem ligação.",downloadN:{one:"Descarregar {n} tema",other:"Descarregar {n} temas"},nLessons:{one:"{n} lição",other:"{n} lições"},
   morning:"Bom dia",afternoon:"Boa tarde",evening:"Boa noite",continue:"Continuar",upNext:"A seguir",lessonN:"Lição {n}",cardsOf:"{a}/{b} cartões",allDone:"Terminaste todas as lições descarregadas. Descarrega outro tema em Aprender ou revê os cartões guardados.",cardsToday:"CARTÕES HOJE",streakDays:"{n} dias seguidos",goalDone:"Objetivo diário cumprido. O resto é bónus.",moreToGoal:"Faltam {n} para o objetivo de hoje",toReview:"Perguntas para rever",toReviewSub:"Erraste estas antes. Tentar outra vez ajuda a fixar.",seeAll:"Ver todos ({n})",sketchOfDay:"Esboço do dia",yourTopics:"Os teus temas",
+  premiumGet:"Ativar Premium",premiumWord:"Premium",premiumActive:"O Premium está ativo",premiumTitle:"Ativa o Premium gratuitamente",premiumFree:"Sem pagamento nem conta. Um toque desbloqueia todas as lições neste dispositivo.",premiumSub:"{n} temas e {c} cartões ilustrados com aprofundamentos e quizzes. Ativação gratuita.",premiumBtn:"Ativar gratuitamente",premiumOn:"O Premium está ativo. Aproveita!",premiumCoffee:"O Premium não custa nada. Se gostas de aprender aqui, um café ajuda-me a criar mais lições.",
+  coffeeTitle:"Estás a gostar do Spark Notebook?",coffeeText:"É gratuito e sem anúncios. Um café ajuda-me a continuar a criar novas lições e traduções. A transferência continua de qualquer forma.",coffeeGo:"Paga-me um café",coffeeSkip:"Continuar a descarregar",
   allTopics:"‹ Todos os temas",keepCopy:"Guardar uma cópia",keepCopySub:"Guarda este tema numa só página, com todos os esboços e respostas, para ler ou imprimir onde quiseres.",saveAsFile:"Guardar ficheiro",removeDevice:"Remover do dispositivo",keep:"Manter",nCards:{one:"{n} cartão",other:"{n} cartões"},noMatch:"Nada corresponde a “{q}” nos temas descarregados.",allDownloaded:"Todos os temas descarregados",downloadAll:"Descarregar todos ({n})",importTopic:"Importar ficheiro de tema",onDevice:"No dispositivo",facts:"{l} LIÇÕES · {c} CARTÕES · {q} PERGUNTAS · {kb} KB",open:"Abrir",update:"Atualizar",downloading:"A descarregar…",download:"Descarregar",searchPh:"Pesquisar: ohm, engrenagens, PWM…",searchCards:"Pesquisar cartões",usage:"A usar {kb} KB neste dispositivo",usageProt:" · protegido contra limpeza automática",notTranslated:"Ainda sem tradução: mostrado em inglês",countryTitle:"O teu país",countrySub:"História, natureza e cultura de onde estás.",otherCountries:"Outros países",topicsTitle:"Temas",
   favSub:"Toca na estrela de qualquer cartão ou lição para o guardares aqui.",noFavLong:"Ainda sem favoritos. Abre uma lição e toca na estrela por baixo de um cartão, ou na estrela ao lado de uma lição.",searchFav:"Pesquisar nos favoritos",all:"Todos",noFavMatch:"Nada nos favoritos corresponde a “{q}”.",lessons:"Lições",cards:"Cartões",readAll:"Ler os {n}",favLessonAdd:"Adicionar lição aos favoritos",favLessonRemove:"Remover lição dos favoritos",
   installNote:"Instala o Spark para abrir como uma app e funcionar offline.",install:"Instalar",iosInstall:"Para instalar: no Safari toca em Partilhar e depois em <b>Adicionar ao ecrã principal</b>. Instalado, funciona offline e guarda o teu histórico.",cardsLearned:"Cartões aprendidos",lessonsFinished:"Lições terminadas",dayStreakBest:"Dias seguidos · máximo {n}",quizAcc:"Acerto nos quizzes",last14:"Últimos 14 dias",goalPerDay:"objetivo {n}/dia",twoWeeksAgo:"há 2 semanas",todayLow:"hoje",dailyGoal:"Objetivo diário",history:"Histórico",showAll:"Mostrar tudo",histEmpty:"Os cartões que leres aparecem aqui, do mais recente para o mais antigo.",backup:"Cópia de segurança",backupSub:"O progresso, o histórico e os cartões guardados ficam só neste dispositivo. Guarda uma cópia para não os perderes ou para os passares para outro dispositivo.",saveBackup:"Guardar cópia",restoreFile:"Restaurar de ficheiro",today:"Hoje",language:"Língua",country:"País",countryHelp:"Serve para sugerir o pack do teu país. Nada sai deste dispositivo.",countryNone:"Outro / nenhum",
@@ -399,6 +407,8 @@ STR["pt-BR"]={
   tabToday:"Hoje",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Você",online:"Online",offline:"Offline",
   pickTitle:"Escolha os temas para baixar",pickSub:"Cada tema é um pacote de lições ilustradas e quizzes, salvo neste aparelho para funcionar sem conexão.",downloadN:{one:"Baixar {n} tema",other:"Baixar {n} temas"},nLessons:{one:"{n} lição",other:"{n} lições"},
   morning:"Bom dia",afternoon:"Boa tarde",evening:"Boa noite",continue:"Continuar",upNext:"A seguir",lessonN:"Lição {n}",cardsOf:"{a}/{b} cartões",allDone:"Você terminou todas as lições baixadas. Baixe outro tema em Aprender ou revise os cartões salvos.",cardsToday:"CARTÕES HOJE",streakDays:"{n} dias seguidos",goalDone:"Meta diária cumprida. O resto é bônus.",moreToGoal:"Faltam {n} para a meta de hoje",toReview:"Perguntas para revisar",toReviewSub:"Você errou estas antes. Tentar de novo ajuda a fixar.",seeAll:"Ver todos ({n})",sketchOfDay:"Desenho do dia",yourTopics:"Seus temas",
+  premiumGet:"Ativar Premium",premiumWord:"Premium",premiumActive:"O Premium está ativo",premiumTitle:"Ative o Premium de graça",premiumFree:"Sem pagamento nem conta. Um toque desbloqueia todas as lições neste dispositivo.",premiumSub:"{n} temas e {c} cartões ilustrados com aprofundamentos e quizzes. Ativação gratuita.",premiumBtn:"Ativar de graça",premiumOn:"O Premium está ativo. Aproveite!",premiumCoffee:"O Premium não custa nada. Se você gosta de aprender aqui, um café me ajuda a criar mais lições.",
+  coffeeTitle:"Está gostando do Spark Notebook?",coffeeText:"É gratuito e sem anúncios. Um café me ajuda a continuar criando novas lições e traduções. O download continua de qualquer forma.",coffeeGo:"Me pague um café",coffeeSkip:"Continuar o download",
   allTopics:"‹ Todos os temas",keepCopy:"Guardar uma cópia",keepCopySub:"Salve este tema em uma única página, com todos os desenhos e respostas, para ler ou imprimir onde quiser.",saveAsFile:"Salvar arquivo",removeDevice:"Remover do aparelho",keep:"Manter",nCards:{one:"{n} cartão",other:"{n} cartões"},noMatch:"Nada corresponde a “{q}” nos temas baixados.",allDownloaded:"Todos os temas baixados",downloadAll:"Baixar todos ({n})",importTopic:"Importar arquivo de tema",onDevice:"No aparelho",facts:"{l} LIÇÕES · {c} CARTÕES · {q} PERGUNTAS · {kb} KB",open:"Abrir",update:"Atualizar",downloading:"Baixando…",download:"Baixar",searchPh:"Buscar: ohm, engrenagens, PWM…",searchCards:"Buscar cartões",usage:"Usando {kb} KB neste aparelho",usageProt:" · protegido contra limpeza automática",notTranslated:"Ainda sem tradução: exibido em inglês",countryTitle:"Seu país",countrySub:"História, natureza e cultura de onde você está.",otherCountries:"Outros países",topicsTitle:"Temas",
   favSub:"Toque na estrela de qualquer cartão ou lição para guardá-lo aqui.",noFavLong:"Nenhum favorito ainda. Abra uma lição e toque na estrela embaixo de um cartão, ou na estrela ao lado de uma lição.",searchFav:"Buscar nos favoritos",all:"Todos",noFavMatch:"Nada nos favoritos corresponde a “{q}”.",lessons:"Lições",cards:"Cartões",readAll:"Ler os {n}",favLessonAdd:"Adicionar lição aos favoritos",favLessonRemove:"Remover lição dos favoritos",
   installNote:"Instale o Spark para abrir como um app e funcionar offline.",install:"Instalar",iosInstall:"Para instalar: no Safari toque em Compartilhar e depois em <b>Adicionar à Tela de Início</b>. Instalado, funciona offline e guarda seu histórico.",cardsLearned:"Cartões aprendidos",lessonsFinished:"Lições concluídas",dayStreakBest:"Dias seguidos · recorde {n}",quizAcc:"Acertos nos quizzes",last14:"Últimos 14 dias",goalPerDay:"meta {n}/dia",twoWeeksAgo:"2 semanas atrás",todayLow:"hoje",dailyGoal:"Meta diária",history:"Histórico",showAll:"Mostrar tudo",histEmpty:"Os cartões que você ler aparecem aqui, do mais recente para o mais antigo.",backup:"Backup",backupSub:"O progresso, o histórico e os cartões salvos ficam só neste aparelho. Salve um arquivo de backup para não perdê-los ou para levá-los a outro aparelho.",saveBackup:"Salvar backup",restoreFile:"Restaurar de arquivo",today:"Hoje",language:"Idioma",country:"País",countryHelp:"Usado para sugerir o pacote do seu país. Nada sai deste aparelho.",countryNone:"Outro / nenhum",
@@ -419,6 +429,8 @@ STR.es={
   tabToday:"Hoy",tabFeed:"Feed",tabLearn:"Aprender",tabFav:"Favoritos",tabYou:"Tú",online:"En línea",offline:"Sin conexión",
   pickTitle:"Elige los temas que quieres descargar",pickSub:"Cada tema es un paquete de lecciones ilustradas y quizzes, guardado en este dispositivo para que funcione sin conexión.",downloadN:{one:"Descargar {n} tema",other:"Descargar {n} temas"},nLessons:{one:"{n} lección",other:"{n} lecciones"},
   morning:"Buenos días",afternoon:"Buenas tardes",evening:"Buenas noches",continue:"Continuar",upNext:"A continuación",lessonN:"Lección {n}",cardsOf:"{a}/{b} tarjetas",allDone:"Has terminado todas las lecciones descargadas. Descarga otro tema en Aprender o repasa tus tarjetas guardadas.",cardsToday:"TARJETAS HOY",streakDays:"Racha de {n} días",goalDone:"Objetivo diario cumplido. Lo demás es extra.",moreToGoal:"Te faltan {n} para el objetivo de hoy",toReview:"Preguntas para repasar",toReviewSub:"Fallaste estas antes. Repetirlas ayuda a fijarlas.",seeAll:"Ver todo ({n})",sketchOfDay:"Dibujo del día",yourTopics:"Tus temas",
+  premiumGet:"Activar Premium",premiumWord:"Premium",premiumActive:"Premium está activo",premiumTitle:"Activa Premium gratis",premiumFree:"Sin pago ni cuenta. Un toque desbloquea todas las lecciones en este dispositivo.",premiumSub:"{n} temas y {c} tarjetas ilustradas con profundizaciones y cuestionarios. Activación gratuita.",premiumBtn:"Activar gratis",premiumOn:"Premium está activo. ¡Disfrútalo!",premiumCoffee:"Premium no cuesta nada. Si te gusta aprender aquí, un café me ayuda a crear más lecciones.",
+  coffeeTitle:"¿Te gusta Spark Notebook?",coffeeText:"Es gratis y sin anuncios. Un café me ayuda a seguir creando nuevas lecciones y traducciones. La descarga continúa en cualquier caso.",coffeeGo:"Invítame a un café",coffeeSkip:"Continuar la descarga",
   allTopics:"‹ Todos los temas",keepCopy:"Guardar una copia",keepCopySub:"Guarda este tema en una sola página, con todos los dibujos y respuestas, para leer o imprimir donde quieras.",saveAsFile:"Guardar archivo",removeDevice:"Quitar del dispositivo",keep:"Mantener",nCards:{one:"{n} tarjeta",other:"{n} tarjetas"},noMatch:"Nada coincide con «{q}» en los temas descargados.",allDownloaded:"Todos los temas descargados",downloadAll:"Descargar todos ({n})",importTopic:"Importar archivo de tema",onDevice:"En el dispositivo",facts:"{l} LECCIONES · {c} TARJETAS · {q} PREGUNTAS · {kb} KB",open:"Abrir",update:"Actualizar",downloading:"Descargando…",download:"Descargar",searchPh:"Buscar: ohmio, engranajes, PWM…",searchCards:"Buscar tarjetas",usage:"Usando {kb} KB en este dispositivo",usageProt:" · protegido contra el borrado automático",notTranslated:"Aún sin traducir: se muestra en inglés",countryTitle:"Tu país",countrySub:"Historia, naturaleza y cultura de donde estás.",otherCountries:"Otros países",topicsTitle:"Temas",
   favSub:"Toca la estrella de cualquier tarjeta o lección para guardarla aquí.",noFavLong:"Aún no hay favoritos. Abre una lección y toca la estrella bajo una tarjeta, o la estrella junto a una lección.",searchFav:"Buscar en favoritos",all:"Todo",noFavMatch:"Nada en tus favoritos coincide con «{q}».",lessons:"Lecciones",cards:"Tarjetas",readAll:"Leer las {n}",favLessonAdd:"Añadir lección a favoritos",favLessonRemove:"Quitar lección de favoritos",
   installNote:"Instala Spark para que se abra como una app y funcione sin conexión.",install:"Instalar",iosInstall:"Para instalar: en Safari toca Compartir y luego <b>Añadir a pantalla de inicio</b>. Instalado, funciona sin conexión y guarda tu historial.",cardsLearned:"Tarjetas aprendidas",lessonsFinished:"Lecciones terminadas",dayStreakBest:"Racha de días · récord {n}",quizAcc:"Aciertos en quizzes",last14:"Últimos 14 días",goalPerDay:"objetivo {n}/día",twoWeeksAgo:"hace 2 semanas",todayLow:"hoy",dailyGoal:"Objetivo diario",history:"Historial",showAll:"Ver todo",histEmpty:"Las tarjetas que leas aparecen aquí, de la más reciente a la más antigua.",backup:"Copia de seguridad",backupSub:"El progreso, el historial y las tarjetas guardadas solo están en este dispositivo. Guarda una copia para no perderlos o llevarlos a otro dispositivo.",saveBackup:"Guardar copia",restoreFile:"Restaurar desde archivo",today:"Hoy",language:"Idioma",country:"País",countryHelp:"Sirve para sugerirte el paquete de tu país. Nada sale de este dispositivo.",countryNone:"Otro / ninguno",
@@ -439,6 +451,8 @@ STR.fr={
   tabToday:"Aujourd'hui",tabFeed:"Feed",tabLearn:"Apprendre",tabFav:"Favoris",tabYou:"Moi",online:"En ligne",offline:"Hors ligne",
   pickTitle:"Choisissez les thèmes à télécharger",pickSub:"Chaque thème est un pack de leçons illustrées et de quiz, enregistré sur cet appareil pour fonctionner sans connexion.",downloadN:{one:"Télécharger {n} thème",other:"Télécharger {n} thèmes"},nLessons:{one:"{n} leçon",other:"{n} leçons"},
   morning:"Bonjour",afternoon:"Bon après-midi",evening:"Bonsoir",continue:"Continuer",upNext:"À suivre",lessonN:"Leçon {n}",cardsOf:"{a}/{b} cartes",allDone:"Vous avez terminé toutes les leçons téléchargées. Téléchargez un autre thème dans Apprendre ou revoyez vos cartes gardées.",cardsToday:"CARTES AUJOURD'HUI",streakDays:"{n} jours d'affilée",goalDone:"Objectif du jour atteint. Le reste est un bonus.",moreToGoal:"Encore {n} pour l'objectif du jour",toReview:"Questions à revoir",toReviewSub:"Vous les aviez manquées. Réessayer aide à retenir.",seeAll:"Tout voir ({n})",sketchOfDay:"Croquis du jour",yourTopics:"Vos thèmes",
+  premiumGet:"Activer Premium",premiumWord:"Premium",premiumActive:"Premium est actif",premiumTitle:"Activez Premium gratuitement",premiumFree:"Sans paiement ni compte. Un geste débloque toutes les leçons sur cet appareil.",premiumSub:"{n} thèmes et {c} cartes illustrées avec approfondissements et quiz. Activation gratuite.",premiumBtn:"Activer gratuitement",premiumOn:"Premium est actif. Bonne lecture !",premiumCoffee:"Premium ne coûte rien. Si vous aimez apprendre ici, un café m'aide à créer d'autres leçons.",
+  coffeeTitle:"Vous aimez Spark Notebook ?",coffeeText:"C'est gratuit et sans publicité. Un café m'aide à continuer de créer de nouvelles leçons et traductions. Le téléchargement continue dans tous les cas.",coffeeGo:"Offrez-moi un café",coffeeSkip:"Continuer le téléchargement",
   allTopics:"‹ Tous les thèmes",keepCopy:"Garder une copie",keepCopySub:"Enregistrez ce thème en une seule page, avec tous les croquis et réponses, à lire ou imprimer n'importe où.",saveAsFile:"Enregistrer le fichier",removeDevice:"Retirer de l'appareil",keep:"Garder",nCards:{one:"{n} carte",other:"{n} cartes"},noMatch:"Aucun résultat pour « {q} » dans vos thèmes téléchargés.",allDownloaded:"Tous les thèmes téléchargés",downloadAll:"Tout télécharger ({n})",importTopic:"Importer un fichier de thème",onDevice:"Sur l'appareil",facts:"{l} LEÇONS · {c} CARTES · {q} QUESTIONS · {kb} KO",open:"Ouvrir",update:"Mettre à jour",downloading:"Téléchargement…",download:"Télécharger",searchPh:"Rechercher : ohm, engrenages, PWM…",searchCards:"Rechercher des cartes",usage:"{kb} Ko utilisés sur cet appareil",usageProt:" · protégé contre l'effacement automatique",notTranslated:"Pas encore traduit : affiché en anglais",countryTitle:"Votre pays",countrySub:"Histoire, nature et culture de là où vous êtes.",otherCountries:"Autres pays",topicsTitle:"Thèmes",
   favSub:"Touchez l'étoile d'une carte ou d'une leçon pour la garder ici.",noFavLong:"Pas encore de favoris. Ouvrez une leçon et touchez l'étoile sous une carte, ou celle à côté d'une leçon.",searchFav:"Rechercher dans vos favoris",all:"Tout",noFavMatch:"Rien dans vos favoris ne correspond à « {q} ».",lessons:"Leçons",cards:"Cartes",readAll:"Lire les {n}",favLessonAdd:"Ajouter la leçon aux favoris",favLessonRemove:"Retirer la leçon des favoris",
   installNote:"Installez Spark pour l'ouvrir comme une app et l'utiliser hors ligne.",install:"Installer",iosInstall:"Pour installer : dans Safari, touchez Partager puis <b>Sur l'écran d'accueil</b>. Installée, l'app fonctionne hors ligne et garde votre historique.",cardsLearned:"Cartes apprises",lessonsFinished:"Leçons terminées",dayStreakBest:"Jours d'affilée · record {n}",quizAcc:"Réussite aux quiz",last14:"14 derniers jours",goalPerDay:"objectif {n}/jour",twoWeeksAgo:"il y a 2 semaines",todayLow:"aujourd'hui",dailyGoal:"Objectif quotidien",history:"Historique",showAll:"Tout afficher",histEmpty:"Les cartes que vous lisez apparaissent ici, de la plus récente à la plus ancienne.",backup:"Sauvegarde",backupSub:"La progression, l'historique et les cartes gardées restent sur cet appareil. Enregistrez une sauvegarde pour les protéger ou les transférer vers un autre appareil.",saveBackup:"Enregistrer une sauvegarde",restoreFile:"Restaurer depuis un fichier",today:"Aujourd'hui",language:"Langue",country:"Pays",countryHelp:"Sert à vous proposer le pack de votre pays. Rien ne quitte cet appareil.",countryNone:"Autre / aucun",
@@ -459,6 +473,8 @@ STR.zh={
   tabToday:"今天",tabFeed:"信息流",tabLearn:"学习",tabFav:"收藏",tabYou:"我的",online:"在线",offline:"离线",
   pickTitle:"选择要下载的主题",pickSub:"每个主题都是一组图解课程和测验，保存在本设备上，没有网络也能用。",downloadN:{other:"下载 {n} 个主题"},nLessons:{other:"{n} 节课"},
   morning:"早上好",afternoon:"下午好",evening:"晚上好",continue:"继续",upNext:"接下来",lessonN:"第 {n} 课",cardsOf:"{a}/{b} 张卡片",allDone:"已下载的课程全部学完了。去“学习”下载新主题，或复习你收藏的卡片。",cardsToday:"今日卡片",streakDays:"连续 {n} 天",goalDone:"今日目标已完成，多学都是额外收获。",moreToGoal:"还差 {n} 张完成今日目标",toReview:"待复习的题目",toReviewSub:"这些题你之前答错了，再做一次能记得更牢。",seeAll:"查看全部（{n}）",sketchOfDay:"每日一图",yourTopics:"你的主题",
+  premiumGet:"激活 Premium",premiumWord:"Premium",premiumActive:"Premium 已激活",premiumTitle:"免费激活 Premium",premiumFree:"无需付款，无需账户。轻点一下即可在此设备上解锁所有课程。",premiumSub:"{n} 个主题、{c} 张图解卡片，附深入内容和测验。免费激活。",premiumBtn:"免费激活",premiumOn:"Premium 已激活，祝你学习愉快！",premiumCoffee:"Premium 完全免费。如果你喜欢在这里学习，一杯咖啡能帮助我制作更多课程。",
+  coffeeTitle:"喜欢 Spark Notebook 吗？",coffeeText:"它免费且没有广告。一杯咖啡能帮助我继续添加新课程和翻译。无论如何，下载都会继续。",coffeeGo:"请我喝杯咖啡",coffeeSkip:"继续下载",
   allTopics:"‹ 全部主题",keepCopy:"保存副本",keepCopySub:"把这个主题保存成一个包含所有图示和答案的网页，随时阅读或打印。",saveAsFile:"保存为文件",removeDevice:"从设备中删除",keep:"保留",nCards:{other:"{n} 张卡片"},noMatch:"已下载的主题中没有与“{q}”匹配的内容。",allDownloaded:"所有主题都已下载",downloadAll:"全部下载（{n}）",importTopic:"导入主题文件",onDevice:"已在设备上",facts:"{l} 节课 · {c} 张卡片 · {q} 道题 · {kb} KB",open:"打开",update:"更新",downloading:"下载中…",download:"下载",searchPh:"搜索：欧姆、齿轮、PWM…",searchCards:"搜索卡片",usage:"本设备已使用 {kb} KB",usageProt:" · 不会被自动清理",notTranslated:"尚未翻译：以英文显示",countryTitle:"你所在的国家",countrySub:"你所在地的历史、自然与文化。",otherCountries:"其他国家",topicsTitle:"主题",
   favSub:"点任意卡片或课程上的星标，就能收藏到这里。",noFavLong:"还没有收藏。打开一节课，点卡片下方或课程旁边的星标即可。",searchFav:"搜索收藏",all:"全部",noFavMatch:"收藏中没有与“{q}”匹配的内容。",lessons:"课程",cards:"卡片",readAll:"阅读全部 {n} 张",favLessonAdd:"收藏这节课",favLessonRemove:"取消收藏这节课",
   installNote:"安装 Spark，像应用一样打开，并可离线使用。",install:"安装",iosInstall:"安装方法：在 Safari 中点“分享”，再点<b>添加到主屏幕</b>。安装后可离线使用，并保留你的学习记录。",cardsLearned:"已学卡片",lessonsFinished:"已完成课程",dayStreakBest:"连续天数 · 最长 {n} 天",quizAcc:"测验正确率",last14:"最近 14 天",goalPerDay:"目标 {n} 张/天",twoWeeksAgo:"2 周前",todayLow:"今天",dailyGoal:"每日目标",history:"学习记录",showAll:"显示全部",histEmpty:"你读过的卡片会按时间倒序显示在这里。",backup:"备份",backupSub:"进度、学习记录和收藏只保存在本设备上。保存一个备份文件，防止丢失，或转移到其他设备。",saveBackup:"保存备份文件",restoreFile:"从文件恢复",today:"今天",language:"语言",country:"国家/地区",countryHelp:"用于推荐你所在国家的主题包。所有数据都留在本设备。",countryNone:"其他 / 不选择",
@@ -517,10 +533,16 @@ const catBlurb=c=>(c.i18n&&c.i18n[LANG]&&c.i18n[LANG].blurb)||c.blurb;
 const catVersion=(c,lang)=>(c.vers&&c.vers[lang])||c.version;
 const catFree=c=>c.free||1;
 
-/* ---------- entitlements (StoreKit in the iOS app; simulated in web preview) ---------- */
+/* ---------- entitlements (StoreKit in the iOS app; free one-tap activation on the web) ---------- */
 const NATIVE=window.SparkStore||null;
-const GATING=!!NATIVE||(()=>{try{const q=new URLSearchParams(location.search);if(q.has("store"))sessionStorage.setItem("spark-store",q.get("store")||"1");return !!sessionStorage.getItem("spark-store")}catch(e){return false}})();
+const GATING=true;
 const PRICES={plus_y:"€29,99",plus_m:"€4,99",pack:"€4,99"};
+/* install count: one download per device of a GitHub release file, read back by tools/installs.py */
+const INSTALL_PING="https://github.com/carlosCastro99/thiirfv588wui5773/releases/download/stats/install.txt";
+function countInstall(){
+  if(NATIVE||S.installCounted||location.hostname!=="carloscastro99.github.io"||!navigator.onLine||navigator.globalPrivacyControl)return;
+  fetch(INSTALL_PING,{mode:"no-cors",cache:"no-store",credentials:"omit",referrerPolicy:"no-referrer"}).then(()=>{S.installCounted=1;save()}).catch(()=>{});
+}
 function ownsPack(id){return !GATING||S.ent.plus||S.ent.packs.includes(id)}
 function lessonFree(L){if(!L)return true;const c=catOf(L.pack);return L.n<=catFree(c||{})}
 function lessonOpen(L){return !L||lessonFree(L)||ownsPack(L.pack)}
@@ -544,10 +566,20 @@ function indexPacks(){
 }
 async function loadPacks(){const list=await DB.all();PACKS={};(list||[]).forEach(p=>PACKS[p.id]=p);indexPacks()}
 const validPack=p=>p&&typeof p.id==="string"&&TOPICS[p.topic]&&Array.isArray(p.lessons)&&p.lessons.every(l=>l.id&&Array.isArray(l.cards));
+/* published packs are encrypted by tools/publish.py: "SPK1", 12-byte IV, AES-GCM of gzipped JSON */
+const PK_A="315ebd5fb93791622d187e22cb035d72b576d2c10c9713f2ec54cefdc1bd7eb3",PK_B="3e10ffe194b76da7113757c28a84f85243a33ffc44e7c9d3c09c189b40d8ee87";
+async function readPack(r){
+  const u=new Uint8Array(await r.arrayBuffer());
+  if(!(u[0]===0x53&&u[1]===0x50&&u[2]===0x4b&&u[3]===0x31))return JSON.parse(new TextDecoder().decode(u));
+  const hex=x=>Uint8Array.from(x.match(/../g),h=>parseInt(h,16)),b=hex(PK_B);
+  const key=await crypto.subtle.importKey("raw",hex(PK_A).map((x,i)=>x^b[i]),"AES-GCM",false,["decrypt"]);
+  const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:u.subarray(4,16)},key,u.subarray(16));
+  return new Response(new Blob([plain]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
+}
 async function downloadPack(id){
   const c=catOf(id),base=(c&&c.base)||"en",lang=packLang(c);let pk=null,got=lang;
-  try{const r=await fetch(packURL(id,lang),{cache:"no-cache"});if(r.ok)pk=await r.json()}catch(e){}
-  if(!validPack(pk)&&lang!==base){got=base;try{const r=await fetch(packURL(id,base),{cache:"no-cache"});if(r.ok)pk=await r.json()}catch(e){}}
+  try{const r=await fetch(packURL(id,lang),{cache:"no-cache"});if(r.ok)pk=await readPack(r)}catch(e){}
+  if(!validPack(pk)&&lang!==base){got=base;try{const r=await fetch(packURL(id,base),{cache:"no-cache"});if(r.ok)pk=await readPack(r)}catch(e){}}
   if(!validPack(pk))pk=BUNDLE[id];
   if(!validPack(pk))throw new Error("unavailable");
   pk.lang=pk.lang||got;pk.downloadedAt=new Date().toISOString();await DB.put(pk);PACKS[pk.id]=pk;indexPacks();
@@ -897,8 +929,8 @@ function vLearn(){
     return `<button class="link" data-tab-go="learn">${t("allTopics")}</button><div data-t="${pk.topic}" style="margin-top:6px"><span class="tlabel"><span class="tdot"></span>${TOPICS[pk.topic]}</span><h1 style="margin-top:4px">${esc(pk.title)}</h1><p class="muted" style="margin-top:6px">${esc(pk.blurb)}</p></div>
     ${nLocked?`<div class="note row" style="margin-top:14px"><span style="flex:1;min-width:0">${t("lockedLessons",{n:pk.lessons.length})}</span><button class="btn s" data-paywall="${pk.id}">${I.lock} ${t("unlock")}</button></div>`:""}
     <div class="section">${pk.lessons.map(l=>lessonRow(LESSONS[l.id])).join("")}</div>
-    <div class="section"><h2>${t("keepCopy")}</h2><p class="muted sm">${t("keepCopySub")}</p>
-    <div class="row">${ownsPack(pk.id)?`<button class="btn s" data-export="${pk.id}">${t("saveAsFile")}</button>`:""}${view.confirmDel===pk.id?`<button class="btn s danger" data-rm="${pk.id}">${t("removeDevice")}</button><button class="btn s ghost" data-cancelrm>${t("keep")}</button>`:`<button class="btn s ghost" data-askrm="${pk.id}">${t("removeDevice")}</button>`}</div></div>`;
+    <div class="section">
+    <div class="row">${view.confirmDel===pk.id?`<button class="btn s danger" data-rm="${pk.id}">${t("removeDevice")}</button><button class="btn s ghost" data-cancelrm>${t("keep")}</button>`:`<button class="btn s ghost" data-askrm="${pk.id}">${t("removeDevice")}</button>`}</div></div>`;
   }
   const q=(view.q||"").trim().toLowerCase();
   let body;
@@ -908,7 +940,7 @@ function vLearn(){
   }else{
     const vis=visibleCat(),topics=vis.filter(c=>!isCountry(c)),countries=vis.filter(isCountry),mine=countries.filter(c=>c.country===S.region),others=countries.filter(c=>c.country!==S.region);
     const down=topics.filter(c=>PACKS[c.id]).length;
-    body=`${GATING&&!S.ent.plus?`<button class="plusbanner" data-paywall=""><b>${t("getPlus")}</b><span>${t("paywallSub",{n:topics.length,c:topics.reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`:""}
+    body=`${GATING&&!S.ent.plus?`<button class="plusbanner" data-paywall=""><b>${t(NATIVE?"getPlus":"premiumGet")}</b><span>${t(NATIVE?"paywallSub":"premiumSub",{n:topics.length,c:topics.reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`:""}
     ${mine.length?`<h2>${t("countryTitle")}</h2><p class="muted sm" style="margin-top:-6px">${t("countrySub")}</p>${mine.map(packCard).join("")}`:""}
     <h2>${t("topicsTitle")}</h2><div class="row"><button class="btn s" data-dlall ${down===topics.length?"disabled":""}>${down===topics.length?t("allDownloaded"):t("downloadAll",{n:topics.length-down})}</button><button class="btn s ghost" data-import>${t("importTopic")}</button></div><p class="muted sm" id="usage"></p>`+
     topics.map(packCard).join("")+(others.length?`<h2>${t("otherCountries")}</h2>`+others.map(packCard).join(""):"");
@@ -942,7 +974,7 @@ function vYou(){
   const items=[...S.log].reverse().filter(x=>CARDS[x.id]).slice(0,view.allHist?3000:12);let hist="",last="";
   for(const x of items){const d=dayStr(new Date(x.t));if(d!==last){last=d;hist+=`<div class="day">${d===today()?t("today"):fmtDate(new Date(x.t),{weekday:"short",day:"numeric",month:"short"})}</div>`}
     const c=CARDS[x.id];hist+=`<button class="hrow" data-t="${c.topic}" data-card="${c.id}"><span class="tdot"></span><span class="meta"><h3>${esc(c.title)}</h3><span class="muted sm">${esc(LESSONS[c.lesson].title)}</span></span><span class="eyebrow">${new Date(x.t).toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}</span></button>`}
-  const sub=GATING?`<div class="section"><h2>${t("subscription")}</h2>${S.ent.plus?`<div class="note"><b>${t("plusActive")}</b><br><span class="muted sm">${t("plusSub")}</span></div>`:`<button class="plusbanner" data-paywall=""><b>${t("getPlus")}</b><span>${t("paywallSub",{n:visibleCat().filter(c=>!isCountry(c)).length,c:visibleCat().filter(c=>!isCountry(c)).reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`}<div class="row"><button class="btn s ghost" data-restore>${t("restore")}</button></div></div>`:"";
+  const sub=GATING?`<div class="section"><h2>${t(NATIVE?"subscription":"premiumWord")}</h2>${S.ent.plus?`<div class="note"><b>${t(NATIVE?"plusActive":"premiumActive")}</b><br><span class="muted sm">${t("plusSub")}</span></div>`:`<button class="plusbanner" data-paywall=""><b>${t(NATIVE?"getPlus":"premiumGet")}</b><span>${t(NATIVE?"paywallSub":"premiumSub",{n:visibleCat().filter(c=>!isCountry(c)).length,c:visibleCat().filter(c=>!isCountry(c)).reduce((a,c)=>a+c.cards,0).toLocaleString(loc())})}</span></button>`}${NATIVE?`<div class="row"><button class="btn s ghost" data-restore>${t("restore")}</button></div>`:""}</div>`:"";
   return `<h1>${t("tabYou")}</h1>${install?`<div style="margin-top:14px">${install}</div>`:""}
   <div class="stats" style="margin-top:16px"><div class="stat"><b>${learned}</b><span class="muted">${t("cardsLearned")}</span></div><div class="stat"><b>${lessons}</b><span class="muted">${t("lessonsFinished")}</span></div>
   <div class="stat"><b style="color:var(--flame)">${streak()}</b><span class="muted">${t("dayStreakBest",{n:Math.max(S.best,streak())})}</span></div><div class="stat"><b>${qs.length?acc+"%":"–"}</b><span class="muted">${t("quizAcc")}</span></div></div>
@@ -960,6 +992,13 @@ function vYou(){
 function openPaywall(packId){
   const el=document.getElementById("paywall"),c=packId?catOf(packId):null,tops=visibleCat().filter(x=>!isCountry(x));
   const pr=k=>(NATIVE&&NATIVE.price&&NATIVE.price(k))||PRICES[k];
+  if(!NATIVE){
+    el.dataset.pack=packId||"";
+    el.innerHTML=`<div class="pwbox" role="dialog" aria-modal="true" aria-label="${esc(t("premiumTitle"))}"><button class="iconbtn pwclose" data-pwclose aria-label="${esc(t("close"))}">${I.close}</button>
+    <div class="pwstats paper"><span><b>${tops.length}</b>${t("topicsTitle")}</span><span><b>${tops.reduce((a,x)=>a+x.lessons,0)}</b>${t("lessons")}</span><span><b>${tops.reduce((a,x)=>a+x.cards,0).toLocaleString(loc())}</b>${t("cards")}</span></div>
+    <h2>${t("premiumTitle")}</h2><p class="muted">${t("premiumFree")}</p><button class="btn pwbuy" data-activate>${t("premiumBtn")}</button><p class="muted">${t("premiumCoffee")}</p><a class="btn ghost pwcoffee" href="${COFFEE_URL}" target="_blank" rel="noopener">☕ ${t("coffeeGo")}</a></div>`;
+    el.hidden=false;return;
+  }
   view.plan=view.plan||"plus_y";
   const plan=(k,title,note,badge)=>`<button class="plan ${view.plan===k?"on":""}" data-plan="${k}" aria-pressed="${view.plan===k}"><span class="pt"><b>${title}</b>${badge?`<span class="badge ok">${badge}</span>`:""}</span><span class="muted sm">${note}</span></button>`;
   el.dataset.pack=packId||"";
@@ -973,6 +1012,7 @@ function openPaywall(packId){
   <div class="row" style="justify-content:center"><button class="link" data-restore>${t("restore")}</button><a class="link" href="legal/terms.html" target="_blank" rel="noopener">${t("terms")}</a><a class="link" href="legal/privacy.html" target="_blank" rel="noopener">${t("privacy")}</a></div></div>`;
   el.hidden=false;
 }
+function activatePremium(){S.ent.plus=true;save();closePaywall();indexPacks();toast(t("premiumOn"));if(R)drawReader();else render()}
 function closePaywall(){const el=document.getElementById("paywall");if(el)el.hidden=true}
 async function buy(plan){
   try{
@@ -989,8 +1029,9 @@ async function restorePurchases(){
   try{const ent=NATIVE?await NATIVE.restore():S.ent;if(ent){S.ent={plus:!!ent.plus,packs:ent.packs||[]};save()}
     toast(S.ent.plus||S.ent.packs.length?t("restored"):t("nothingRestore"));indexPacks();render()}catch(e){toast(t("purchaseFailed"))}
 }
-document.addEventListener("click",e=>{const tg=e.target.closest("[data-paywall],[data-pwclose],[data-plan],[data-pwbuy],[data-restore]");if(!tg)return;const d=tg.dataset;
+document.addEventListener("click",e=>{const tg=e.target.closest("[data-paywall],[data-pwclose],[data-plan],[data-pwbuy],[data-restore],[data-activate]");if(!tg)return;const d=tg.dataset;
   if(d.paywall!==undefined){e.stopPropagation();return openPaywall(d.paywall)}
+  if("activate" in d)return activatePremium();
   if("pwclose" in d)return closePaywall();
   if(d.plan){view.plan=d.plan;return openPaywall(document.getElementById("paywall").dataset.pack)}
   if("pwbuy" in d)return buy(view.plan);
@@ -1003,6 +1044,31 @@ async function doDownload(ids){
   let ok=0,fail=0;for(const id of ids){view.busy=id;render();try{await downloadPack(id);ok++}catch(e){fail++}}
   view.busy=null;render();toast(fail?t("dlResult",{ok,fail}):t("topicsReady",{n:ok}));
 }
+/* optional tip prompt: at most once per session, before a new topic download, never in the native app (store rules) */
+const COFFEE_URL="https://ko-fi.com/mxsystems";
+let coffeeAsked=false,coffeeIds=null;
+function coffeeDue(ids){
+  if(NATIVE||coffeeAsked||!navigator.onLine||!ids.some(id=>!PACKS[id]))return false;
+  try{return !sessionStorage.getItem("spark-coffee")}catch(e){return true}
+}
+function closeCoffee(){const el=document.getElementById("coffee");el.hidden=true;el.innerHTML="";coffeeIds=null}
+function getPacks(ids){
+  if(!coffeeDue(ids))return doDownload(ids);
+  coffeeAsked=true;try{sessionStorage.setItem("spark-coffee","1")}catch(e){}
+  coffeeIds=ids;
+  const el=document.getElementById("coffee");
+  el.innerHTML=`<div class="pwbox coffeebox" role="dialog" aria-modal="true" aria-labelledby="coffeeTitle"><button class="iconbtn pwclose" data-coffeeclose aria-label="${esc(t("close"))}">${I.close}</button>
+  <h2 id="coffeeTitle">${t("coffeeTitle")}</h2><p class="muted">${t("coffeeText")}</p>
+  <a class="btn" data-coffeego href="${COFFEE_URL}" target="_blank" rel="noopener">☕ ${t("coffeeGo")}</a>
+  <button class="btn ghost" data-coffeeskip>${t("coffeeSkip")}</button></div>`;
+  el.hidden=false;el.querySelector("[data-coffeeskip]").focus();
+}
+document.getElementById("coffee").addEventListener("click",e=>{
+  const tg=e.target.closest("[data-coffeeclose],[data-coffeego],[data-coffeeskip]");if(!tg)return;
+  if("coffeeclose" in tg.dataset)return closeCoffee();
+  const ids=coffeeIds;closeCoffee();doDownload(ids);
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!document.getElementById("coffee").hidden)closeCoffee()});
 function startLesson(lid){
   const L=LESSONS[lid],p=lessonProgress(L);if(!lessonOpen(L))return openPaywall(L.pack);
   const items=[...L.cardIds.map(id=>({k:"c",id})),...L.quizIds.map(id=>({k:"q",id}))];
@@ -1022,14 +1088,13 @@ document.getElementById("app").addEventListener("click",async e=>{
   if(d.tabGo)return go({tab:d.tabGo});
   if(d.pick){const sel=view.pick||[...(CATALOG.find(c=>c.country===S.region)?[CATALOG.find(c=>c.country===S.region).id]:[]),...visibleCat().filter(c=>!isCountry(c)).map(c=>c.id)];view.pick=sel.includes(d.pick)?sel.filter(x=>x!==d.pick):[...sel,d.pick];return render()}
   if("dlpicked" in d)return doDownload(view.pick||[...(CATALOG.find(c=>c.country===S.region)?[CATALOG.find(c=>c.country===S.region).id]:[]),...visibleCat().filter(c=>!isCountry(c)).map(c=>c.id)]);
-  if(d.dl)return doDownload([d.dl]);
-  if("dlall" in d)return doDownload(visibleCat().filter(c=>!isCountry(c)&&!PACKS[c.id]).map(c=>c.id));
+  if(d.dl)return getPacks([d.dl]);
+  if("dlall" in d)return getPacks(visibleCat().filter(c=>!isCountry(c)&&!PACKS[c.id]).map(c=>c.id));
   if(d.askrm){view.confirmDel=d.askrm;return render()}
   if("cancelrm" in d){view.confirmDel=null;return render()}
   if(d.rm){await removePack(d.rm);toast(t("topicRemoved"));return go({tab:"learn"})}
-  if(d.export){const pk=PACKS[d.export];return saveFile(`spark-${pk.id}.html`,packHTML(pk),"text/html")}
   if("import" in d)return document.getElementById("filein").click();
-  if("backup" in d)return saveFile(`spark-backup-${today()}.json`,JSON.stringify({kind:"spark-backup",state:S,packs:Object.values(PACKS)}),"application/json");
+  if("backup" in d)return saveFile(`spark-backup-${today()}.json`,JSON.stringify({kind:"spark-backup",state:S}),"application/json");
   if(d.unsave){toggleFav(d.unsave,"c");return render()}
   if(d.favl){toggleFav(d.favl,"l");return render()}
   if(d.ft){view.ft=d.ft;return render()}
@@ -1185,16 +1250,6 @@ function swipe(card){
   card.addEventListener("pointerup",end);card.addEventListener("pointercancel",end);
 }
 
-/* ---------- export a topic as a standalone page ---------- */
-function packHTML(pk){
-  const css=[...document.styleSheets[0].cssRules].map(r=>r.cssText).join("\n");
-  const body=pk.lessons.map((l,li)=>`<section><p class="eyebrow">${t("lessonN",{n:li+1})}</p><h2 class="lt">${esc(l.title)}</h2><p class="muted">${esc(l.summary)}</p>
-   ${l.cards.map(c=>`<article class="card xc" data-t="${pk.topic}"><span class="ctype">${esc(c.tag||TYPES[c.type])}</span><h2>${esc(c.title)}</h2>${(c.sketch||c.viz)?sketch(c):c.widget?`<div class="sk paper">${WSK()[c.widget]}</div>`:""}${c.formula?`<div class="formula">${esc(c.formula)}</div>`:""}<div class="text">${fmt(c.text)}</div>${c.items?`<div class="text"><ul>${c.items.map(([en,pt,note,ex])=>`<li><b>${esc(en)}</b> = ${esc(pt)}${note?` <span class="muted">(${esc(note)})</span>`:""}${ex?`<br><em>${esc(ex)}</em>`:""}</li>`).join("")}</ul></div>`:""}${c.example?`<div class="ex"><span class="eyebrow">${TYPES.example}</span>${c.example.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}</article>`).join("")}
-   ${(l.quiz||[]).length?`<article class="card xc" data-t="${pk.topic}"><span class="ctype">${t("quiz")}</span>${l.quiz.map((q,k)=>`<p><b>${k+1}. ${esc(q.q)}</b></p><ul>${q.options.map((o,j)=>`<li>${j===q.answer?"<b>✓ "+esc(o)+"</b>":esc(o)}</li>`).join("")}</ul><p class="muted sm">${esc(q.explain)}</p>`).join("")}</article>`:""}</section>`).join("");
-  return `<!doctype html><html lang="${loc()}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(pk.title)} · Spark</title><style>${css}
-  body{padding:24px 16px} main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px} section{display:flex;flex-direction:column;gap:14px} .card.xc{height:auto;overflow:visible} .lt{font-size:26px}</style></head>
-  <body>${document.querySelector('svg[aria-hidden]').outerHTML}<main><header data-t="${pk.topic}"><span class="tlabel"><span class="tdot"></span>${TOPICS[pk.topic]}</span><h1>${esc(pk.title)}</h1><p class="muted">${esc(pk.blurb)}</p></header>${body}</main></body></html>`;
-}
 
 /* ---------- utils ---------- */
 let tt;function toast(m){const el=document.getElementById("toast");el.textContent=m;el.hidden=false;clearTimeout(tt);tt=setTimeout(()=>el.hidden=true,2600)}
@@ -1205,7 +1260,7 @@ async function saveFile(name,text,type){
 }
 let deferredInstall=null;
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstall=e;if(view.tab==="you")render()});
-addEventListener("online",()=>{if(!R)render()});addEventListener("offline",()=>{if(!R)render()});
+addEventListener("online",()=>{countInstall();if(!R)render()});addEventListener("offline",()=>{if(!R)render()});
 (async()=>{
   try{await loadPacks()}catch(e){}
   if(NATIVE&&NATIVE.onChange)NATIVE.onChange(ent=>{S.ent={plus:!!ent.plus,packs:ent.packs||[]};save();indexPacks();if(!R)render()});
@@ -1213,6 +1268,7 @@ addEventListener("online",()=>{if(!R)render()});addEventListener("offline",()=>{
   if(navigator.onLine){const stale=stalePacks();
     if(stale.length)(async()=>{for(const id of stale){try{await downloadPack(id)}catch(e){}}if(!R)render();toast(t("updated",{n:stale.length}))})()}
   try{navigator.storage?.persist?.()}catch(e){}
+  countInstall();
   if("serviceWorker" in navigator&&(location.protocol==="https:"||["localhost","127.0.0.1"].includes(location.hostname)))navigator.serviceWorker.register("sw.js").catch(()=>{});
   render();
 })();
